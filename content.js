@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 25 2026",
+            "headline": "Lantronix Converter Flaw Exploited—Patch CVE-2025-67038 Now",
+            "title": "Lantronix Serial-to-IP Converter Vulnerability Exploited in Active Attacks",
+            "content": "A critical flaw in Lantronix Serial-to-IP converters, identified as CVE-2025-67038, is being actively exploited following its disclosure in April through the BRIDGE:BREAK research project. This vulnerability allows attackers to compromise operational technology (OT) environments, posing significant risks to industrial control systems. The flaw affects devices that convert serial data to IP, a common setup in industrial networks. Organizations using these converters should prioritize patching to mitigate potential disruptions. The exploitation of this vulnerability underscores the increasing targeting of OT systems by cyber adversaries.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Curl's 25-Year-Old Vulnerability Patched—Update to Secure Data Transfers",
+            "title": "Curl Patches 25-Year-Old Vulnerability in Latest Update",
+            "content": "The open-source data transfer tool Curl has patched a 25-year-old vulnerability in its latest release, addressing 18 medium and low-severity issues. This longstanding flaw could have potentially allowed attackers to manipulate data transfers, affecting a wide range of applications that rely on Curl for HTTP requests. The update is crucial for developers and system administrators to ensure secure data handling across their systems. The patch highlights the importance of maintaining and updating legacy software components to protect against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/25-year-old-vulnerability-patched-in-curl/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Gaslight Malware Targets macOS—Disrupts AI Analysis with Prompt Injection",
+            "title": "Gaslight macOS Malware Uses Prompt Injection to Evade AI Analysis",
+            "content": "A new macOS malware, codenamed Gaslight, has been discovered using prompt injection techniques to disrupt AI-assisted malware analysis. This Rust-based implant and information stealer embeds payloads that trick AI tools into aborting analysis, posing a challenge for cybersecurity professionals relying on automated systems. The malware's ability to evade detection highlights the evolving tactics of threat actors targeting macOS environments. Security teams should enhance their detection capabilities and consider manual analysis to counteract such sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Chrome 149 Fixes 18 Severe Bugs—Update to Prevent RCE",
+            "title": "Chrome 149 Update Resolves Multiple Severe Vulnerabilities",
+            "content": "Google's latest Chrome update, version 149, addresses 18 severe vulnerabilities, including numerous use-after-free defects that could lead to remote code execution (RCE). These vulnerabilities pose significant risks, allowing attackers to execute arbitrary code on affected systems. Users are urged to update their browsers immediately to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from sophisticated cyber threats. Regular updates remain crucial in maintaining secure browsing environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-149-update-resolves-18-severe-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Cisco SD-WAN Zero-Day Exploited—Months Before Patch Release",
+            "title": "Cisco SD-WAN Zero-Day Exploited Months Before Patch Release",
+            "content": "A zero-day vulnerability in Cisco SD-WAN, tracked as CVE-2026-20245, was exploited by threat actors months before its public disclosure and patching. This marks the seventh Cisco SD-WAN vulnerability exploited in 2026, highlighting the persistent targeting of Cisco's network solutions. The flaw allowed attackers to gain unauthorized access, posing risks to enterprise networks relying on SD-WAN for secure connectivity. Organizations using Cisco SD-WAN should apply the latest patches and review their network security measures to mitigate potential threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "Xolis Data Breach—1.4M Affected in Phishing Attack",
+            "title": "Xolis Data Breach Compromises 1.4 Million Individuals' Data",
+            "content": "Healthcare technology firm Xolis has suffered a data breach impacting 1.4 million individuals, following a successful phishing attack that granted attackers network access. The breach exposed sensitive personal and medical information, raising concerns over data privacy and security in the healthcare sector. Xolis is working with cybersecurity experts to investigate the breach and enhance its security measures. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Critical Chrome Flaws Patched—Sandbox Escape Risks Mitigated",
+            "title": "Chrome Update Patches Critical Security Flaws Including Sandbox Escapes",
+            "content": "Google has released a Chrome update addressing 18 vulnerabilities, including four critical flaws that could allow attackers to escape the browser's security sandbox. Two of these vulnerabilities involve WebGL, a graphics API used in rendering web content, posing risks of remote code execution. Users should update their Chrome browsers immediately to protect against potential exploits. This update underscores the importance of regular browser maintenance to safeguard against emerging cyber threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/update-chrome-to-patch-critical-browser-security-flaws",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Ransomware Targets Europe—EU Organizations Under Siege",
+            "title": "Ransomware Gangs Shift Focus to European Organizations",
+            "content": "Ransomware groups are increasingly targeting European Union organizations and their suppliers, marking a shift in focus after a global decline in attacks. This trend highlights the region's vulnerability due to its complex supply chains and valuable data assets. Security professionals in the EU are urged to strengthen their defenses and implement comprehensive incident response plans. The resurgence of ransomware in Europe underscores the need for cross-border collaboration and information sharing to combat these persistent threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Bluekit Phishing Kit Evolves—Browser-in-the-Middle Tactics Detected",
+            "title": "Bluekit Phishing Kit Adopts Browser-in-the-Middle for Enhanced Theft",
+            "content": "The Bluekit phishing-as-a-service platform has introduced browser-in-the-middle capabilities, enhancing its ability to steal login credentials. Nearly 70 new hostnames have been identified, indicating rapid expansion and adaptation by threat actors. This evolution allows attackers to intercept and manipulate web traffic, posing significant risks to online security. Organizations should educate employees on phishing tactics and implement multi-factor authentication to mitigate potential compromises. The continuous development of phishing kits highlights the need for proactive cybersecurity measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bluekit-phishing-kit-adopts-browser-in-the-middle-for-login-theft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Chrome Ad Blocker Exploit—10M Users at Risk from Script Injection",
+            "title": "Popular Chrome Ad Blocker Found with Script Injection Capability",
+            "content": "A popular Chrome ad blocker extension for YouTube, with over 10 million installs, has been found to contain dormant script injection capabilities. This vulnerability allows the execution of arbitrary JavaScript code, potentially compromising user data and privacy. The extension, named Adblock for YouTube, carries a Featured badge, raising concerns over the vetting process for Chrome extensions. Users are advised to review installed extensions and remove those with suspicious behavior. This discovery underscores the importance of vigilance in managing browser extensions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 24 2026",
             "headline": "Cisco SD-WAN Zero-Day—Hackers Gain Root Access",
             "title": "Mandiant Unveils Exploitation of Cisco SD-WAN Zero-Day CVE-2026-20245",
@@ -28,24 +118,6 @@ const websiteContent = {
             "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about the active exploitation of a critical vulnerability in Lantronix EDS5000 Series devices. The flaw, which allows unauthorized access, is being targeted by attackers, prompting CISA to urge Federal Civilian Executive Branch agencies to apply patches by June 26, 2026. This vulnerability poses significant risks to network security, especially for organizations relying on these devices for data communication. Immediate action is recommended to secure affected systems and prevent potential breaches.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Supply Chain Attack—WordPress Plugins Backdoored",
-            "title": "ShapedPlugin WordPress Pro Plugins Compromised in Supply Chain Attack",
-            "content": "A supply chain attack has compromised multiple WordPress plugins from ShapedPlugin, with attackers injecting backdoor code into official release channels. This breach affects the vendor's build and distribution pipeline, posing a significant threat to websites using these plugins. The attack highlights vulnerabilities in software supply chains, emphasizing the need for robust security measures in plugin development and distribution. Website administrators should verify plugin integrity and apply updates from trusted sources to mitigate risks. This incident underscores the growing threat of supply chain attacks in the software industry.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 18 2026",
-            "headline": "Popa Botnet—Linked to Israeli Firm",
-            "title": "‘Popa’ Botnet Tied to Publicly-Traded Israeli Company",
-            "content": "Researchers have linked the Android-based 'Popa' botnet to a publicly-traded Israeli firm, revealing its role in advertising fraud, account takeovers, and data-scraping. Over four years, Popa has hijacked millions of consumer TV boxes, using them to relay malicious internet traffic. This discovery highlights the complex nature of modern botnet operations and their ties to legitimate businesses. Security professionals should monitor network traffic for signs of botnet activity and implement measures to protect IoT devices from exploitation. The case underscores the persistent threat of botnets in the digital landscape.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
             "relatedResources": []
         },
         {
@@ -110,81 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Ubiquiti Flaws Allow Remote System Access—Patch Urgently",
-            "title": "Critical Ubiquiti Vulnerabilities in Attackers’ Crosshairs",
-            "content": "Security researchers have identified critical vulnerabilities in Ubiquiti devices that could allow remote, unauthenticated attackers to make unauthorized system changes, access underlying accounts, and inject commands. These flaws pose a significant risk to Ubiquiti users, particularly in enterprise environments where such devices are commonly deployed. The vulnerabilities are actively being targeted by threat actors, prompting urgent calls for users to apply available patches immediately. This incident underscores the importance of maintaining up-to-date security measures to protect against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Mistic RAT Facilitates Ransomware Infiltration",
-            "title": "New ‘Mistic’ RAT Opens Door to Several Ransomware Families",
-            "content": "The emergence of the Mistic Remote Access Trojan (RAT) has been linked to multiple ransomware families, including Qilin, Interlock, Rhysida, Akira, 8Base, and Black Basta. Mistic is utilized by Woodgnat, an initial access broker, to facilitate ransomware attacks by providing unauthorized access to targeted systems. This development highlights the evolving tactics of cybercriminals who increasingly rely on RATs to breach networks and deploy ransomware. Organizations are advised to enhance their network monitoring and implement robust security measures to detect and mitigate such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-mistic-rat-opens-door-to-several-ransomware-families/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Millions of Repositories at Risk from CI/CD Flaws",
-            "title": "Exploitable CI/CD Vulnerabilities Expose Millions of Repositories to Hijacking",
-            "content": "Security defects in CI/CD systems have been found to expose millions of open-source repositories to potential hijacking. These vulnerabilities allow unauthenticated users to take control of the software supply chain, posing a significant threat to developers and organizations relying on these systems. The widespread nature of these flaws underscores the critical need for robust security practices in managing CI/CD pipelines. Affected parties should conduct thorough security audits and apply necessary patches to safeguard against unauthorized access and code tampering.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploitable-ci-cd-vulnerabilities-expose-millions-of-repositories-to-hijacking/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Mistic Backdoor Targets Multiple Sectors—Linked to KongTuke",
-            "title": "Stealthy Mistic Backdoor Linked to Ransomware Access Broker KongTuke",
-            "content": "A new backdoor named Mistic has been identified in attacks targeting organizations across the insurance, education, IT, and professional services sectors. This backdoor is linked to KongTuke, a known ransomware access broker, and is used to facilitate unauthorized access for financially motivated attacks. The discovery of Mistic highlights the ongoing threat posed by sophisticated cybercriminal networks that leverage backdoors to infiltrate and exploit vulnerable systems. Organizations in the affected sectors should prioritize security assessments and implement advanced threat detection solutions to mitigate risks.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Klue-Salesforce Breach Affects BeyondTrust, LastPass",
-            "title": "BeyondTrust, LastPass Impacted by Klue-Salesforce Incident",
-            "content": "A cybersecurity incident involving Klue has resulted in data theft from Salesforce instances affecting over a dozen customers, including BeyondTrust and LastPass. Hackers exploited vulnerabilities in Klue's integration with Salesforce to access sensitive customer data. This breach underscores the risks associated with third-party integrations and the potential for data exposure through interconnected platforms. Organizations using similar integrations should review their security configurations and consider implementing additional safeguards to protect against unauthorized data access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/beyondtrust-lastpass-impacted-by-klue-salesforce-incident/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cisco Unified CM Flaw Exploited—Root Access at Risk",
-            "title": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
-            "content": "Threat actors have begun exploiting a critical vulnerability in Cisco Unified Communications Manager (Unified CM) and its Session Management Edition (SME), tracked as CVE-2026-20230 with a CVSS score of 8.6. This flaw allows attackers to gain root access by exploiting a file-write path vulnerability. The exploitation follows the release of a proof-of-concept (PoC) that demonstrated the vulnerability's potential impact. Organizations using affected Cisco systems should apply the latest patches immediately to prevent unauthorized access and potential system compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "CISA Alerts on Ubiquiti Flaws—Exploitation in Progress",
-            "title": "CISA Warns of Max Severity Ubiquiti Flaws Exploited in Attacks",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued an alert regarding active exploitation of critical vulnerabilities in Ubiquiti UniFi OS and Lantronix serial-to-ethernet servers. These flaws, if left unpatched, could allow attackers to execute arbitrary code and gain unauthorized access to affected systems. The vulnerabilities are being actively targeted, emphasizing the need for immediate action by organizations using these products. CISA recommends applying available patches and enhancing monitoring to detect and respond to potential exploitation attempts.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "AIVEX Model Aims to Mitigate Supply Chain Risks",
-            "title": "Exclusive: Meet AIVEX, a New Triage Model Built to Reduce Supply Chain Threat and Risk",
-            "content": "AIVEX, a new triage model, has been introduced to help security teams identify and prioritize software supply chain vulnerabilities that pose the greatest operational, safety, and business risks in AI-driven environments. This framework aims to streamline the vulnerability management process by focusing on the most critical threats, thereby reducing potential impacts on organizations. As supply chain attacks become increasingly sophisticated, tools like AIVEX are essential for enhancing security postures and mitigating risks associated with third-party software dependencies. Security professionals are encouraged to integrate such models into their risk management strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exclusive-meet-aivex-a-new-triage-model-built-to-reduce-supply-chain-threat-and-risk/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 22 2026",
+            "headline": "OpenAI's Patch the Planet Aids Open Source Security",
+            "title": "OpenAI Launches Patch the Planet to Support Open Source Maintainers",
+            "content": "OpenAI has introduced \"Patch the Planet,\" a Daybreak initiative aimed at assisting open-source maintainers in identifying, validating, and fixing vulnerabilities. This initiative leverages AI technology alongside expert reviews to enhance the security of open-source projects. The program addresses the growing concern over the security of open-source software, which forms the backbone of much of today's digital infrastructure. By providing tools and resources, OpenAI aims to mitigate risks associated with unpatched vulnerabilities that could be exploited by malicious actors. This effort underscores the importance of collaborative security measures in the open-source community.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Adobe Acquires Topaz Labs—Enhances Creative Suite",
+            "title": "Adobe Acquires Topaz Labs to Integrate Image and Video Tools",
+            "content": "Adobe has announced the acquisition of Topaz Labs, a company known for its advanced image and video enhancement tools. Adobe plans to integrate these tools across its suite of creative applications, potentially enhancing capabilities in areas such as photo editing and video production. This acquisition is part of Adobe's strategy to bolster its offerings in AI-driven creative solutions, catering to the growing demand for sophisticated media editing tools. The integration is expected to provide users with more powerful features, improving workflow efficiency and creative output.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Amazon Invests $13B in India's AI Infrastructure",
+            "title": "Amazon Commits $13B to Expand AI Infrastructure in India",
+            "content": "Amazon has announced a substantial $13 billion investment to expand its AI infrastructure in India. This move is part of a broader trend among global tech companies to enhance their AI capabilities in the region, which is seen as a burgeoning market for technology development. The investment will focus on building data centers and enhancing cloud services, aiming to support local businesses and startups in leveraging AI technologies. This initiative is expected to create numerous jobs and foster innovation, positioning India as a key player in the global AI landscape.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Ford Rehires Engineers to Correct Automation Errors",
+            "title": "Ford Rehires Former Engineers to Address Automated System Flaws",
+            "content": "Ford has rehired former engineers to rectify issues caused by its automated systems in production and design. Despite achieving the top spot in JD Power's initial quality ranking among mainstream automakers, Ford faced challenges due to errors from these systems. The company acknowledged that automation, while beneficial, introduced complexities that required human expertise to resolve. This move highlights the ongoing balance between automation and skilled human intervention in manufacturing processes. It serves as a reminder of the importance of human oversight in automated environments.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "IBM Unveils World's First Sub-1nm Chip Technology",
+            "title": "IBM Develops World's First Sub-1 Nanometer Chip Technology",
+            "content": "IBM has announced the development of the world's first sub-1 nanometer chip technology, utilizing nanostack transistors. This breakthrough could significantly enhance chip performance and energy efficiency, marking a pivotal advancement in semiconductor technology. The new technology promises to drive innovations in computing power and battery life across various devices. IBM's achievement underscores the competitive race in the semiconductor industry to produce smaller, more efficient chips, which are crucial for the next generation of computing and AI applications.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Facebook Creator Studio Revived as AI Companion App",
+            "title": "Meta Revives Facebook Creator Studio as AI Companion App",
+            "content": "Meta has relaunched the Facebook Creator Studio as a standalone AI companion app, designed to help creators better engage with their audiences. The app, now equipped with AI capabilities, aims to provide insights and strategies for growth on Facebook. This move is part of Meta's broader strategy to integrate AI into its platforms, enhancing user experience and content management. By offering personalized recommendations, the app seeks to empower creators to optimize their content and reach.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "US Company Profits Soar Amid Memory Chip Crunch",
+            "title": "Memory Chip Shortage Boosts US Company's Revenue and Profit",
+            "content": "A US-based company has reported a significant financial upturn, with revenue quadrupling to $41.45 billion and profit soaring from $1.88 billion to $28.2 billion year-over-year. This growth is attributed to the ongoing memory chip shortage, which has increased demand and pricing for semiconductor products. The company's success highlights the broader impact of supply chain constraints in the tech industry, where shortages have driven up costs but also provided opportunities for substantial profit margins.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "$27M AI Proxy War Over Alex Bores Ends in Draw",
+            "title": "Anthropic vs. OpenAI: $27M Proxy War Over Alex Bores Concludes",
+            "content": "The $27 million political proxy war between AI giants Anthropic and OpenAI concluded without a decisive victory, as Alex Bores narrowly lost the Democratic primary for New York's 12th Congressional district. This high-stakes battle saw significant financial backing from pro-AI super PACs, reflecting the increasing influence of AI companies in political arenas. The outcome underscores the complex interplay between technology and politics, as AI entities seek to shape policy and public perception.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Agility Robotics to Go Public in $2.5B SPAC Deal",
+            "title": "Agility Robotics Plans Public Listing via $2.5B SPAC Merger",
+            "content": "Agility Robotics, a leading humanoid robotics startup, has announced plans to go public through a Special Purpose Acquisition Company (SPAC) in a deal valued at $2.5 billion. The company, which originated from Oregon State University, expects to generate $620 million in proceeds from the merger. This move is part of a growing trend of robotics companies seeking public funding to accelerate development and commercialization. Agility Robotics aims to expand its market presence and enhance its product offerings in the rapidly evolving robotics industry.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Figma Adds AI Motion Graphics and Shader Tools",
+            "title": "Figma Introduces AI-Powered Motion Graphics and Shader Tools",
+            "content": "Figma has unveiled new AI-driven motion graphics and shader tools at its annual Config conference, designed to enhance creative workflows. These updates aim to automate repetitive tasks and provide designers with more powerful tools for creating dynamic content. The enhancements are part of Figma's strategy to integrate AI into its platform, offering users a reimagined canvas optimized for full-stack development. By leveraging AI, Figma seeks to empower creatives to push their ideas further and streamline the design process.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
+            "relatedResources": []
+        },
         {
             "date": "Jun 24 2026",
             "headline": "Mindstone's Rebel AI OS Launches—Optimizes Model Tasking",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Figma's latest update introduces AI-driven features, including code layers, motion graphics, and shader support, aimed at empowering designers. The new capabilities allow for the creation of custom plug-ins and more dynamic design elements, enhancing the platform's versatility. These updates reflect Figma's commitment to integrating AI into design workflows, offering tools that automate repetitive tasks and foster creativity. Designers and developers should explore these features to optimize their design processes. The update positions Figma as a leader in AI-enhanced design solutions.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Google Home Speaker—Great Sound, But Finicky Performance",
-            "title": "Google Home Speaker Impresses with Sound, Struggles with Consistency",
-            "content": "The latest Google Home Speaker delivers impressive audio quality, maintaining clarity even at full volume. However, users report inconsistent performance, particularly with voice recognition. Despite having three microphones, the device occasionally struggles to respond to the \"Hey, Google\" command, raising concerns about its reliability in noisy environments. This issue could affect users who rely heavily on voice commands for smart home integration. Google's ongoing updates may address these concerns, but users should be aware of potential limitations in high-noise settings.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "OpenAI Targets Open Source Bugs with AI Initiative",
-            "title": "OpenAI Launches Initiative to Enhance Open Source Security",
-            "content": "OpenAI has announced a new initiative aimed at bolstering the security of open-source software by identifying and patching vulnerabilities. Leveraging AI, this effort seeks to assist developers in safeguarding their projects against potential exploits. The initiative underscores the growing importance of AI in cybersecurity, particularly as open-source software becomes increasingly integral to various industries. Developers are encouraged to participate and integrate these tools to enhance their security posture. This move positions OpenAI as a key player in the intersection of AI and cybersecurity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "OpenAI's Jalapeño Chip—A New Era for AI Inference",
-            "title": "OpenAI Unveils Jalapeño, Its First Custom AI Inference Chip",
-            "content": "OpenAI has introduced Jalapeño, a custom AI processor developed in collaboration with Broadcom. Designed specifically for AI inference tasks, Jalapeño aims to enhance the performance and efficiency of OpenAI's large language models. This development marks a significant step in OpenAI's hardware strategy, allowing for more optimized and scalable AI systems. The chip's introduction could lead to faster and more efficient AI applications, benefiting industries reliant on AI-driven insights. Professionals should monitor this development for potential impacts on AI infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "OpenAI and Broadcom Debut LLM-Optimized Chip",
-            "title": "OpenAI and Broadcom Launch Jalapeño for Enhanced LLM Performance",
-            "content": "OpenAI, in partnership with Broadcom, has launched Jalapeño, a custom chip designed to optimize large language model (LLM) inference. This chip promises to improve performance, efficiency, and scalability across AI systems, addressing the growing computational demands of modern AI applications. By enhancing LLM capabilities, Jalapeño could significantly impact industries that rely on AI for data analysis and decision-making. Organizations utilizing LLMs should consider the potential benefits of integrating this advanced hardware into their systems.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Hollywood Hesitates on OpenAI Biopic 'Artificial'",
-            "title": "Hollywood Studios Reluctant to Distribute OpenAI Biopic 'Artificial'",
-            "content": "Several major Hollywood studios, including Netflix and Warner Bros.' Clockwork, have opted not to distribute 'Artificial,' a biographical drama about OpenAI cofounder and CEO Sam Altman. Directed by Luca Guadagnino, the film's distribution remains uncertain, though Neon and Mubi have shown interest. This hesitation reflects the complex relationship between AI advancements and cultural narratives, as well as the challenges of portraying tech leaders in cinema. Industry professionals should watch for how this film's distribution unfolds, as it may influence future tech-related storytelling.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Fika Jobs Raises $4M for AI-Powered Hiring Platform",
-            "title": "Fika Jobs Secures Funding to Develop AI-Driven Video Hiring Platform",
-            "content": "Stockholm-based startup Fika Jobs has raised $4 million to develop a video-first hiring platform that utilizes AI agents for interviewing candidates. This innovative platform combines AI-driven interviews with short-form video profiles, offering a unique blend of LinkedIn and TikTok features. By leveraging AI, Fika Jobs aims to streamline the recruitment process, making it more efficient and engaging for both employers and candidates. This development reflects the growing trend of integrating AI into HR technologies, potentially transforming traditional hiring practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Fitbit Air—AI Health Coach's New Approach to Wellness",
-            "title": "Fitbit Air Introduces AI Health Coach for Improved Wellness Tracking",
-            "content": "The Fitbit Air has launched with an AI-powered health coach designed to provide personalized wellness insights. This feature evaluates users' sleep patterns, heart rate variability, and environmental factors to deliver tailored health recommendations. Despite its advanced capabilities, some users report concerns over the AI's interpretation of data, suggesting a need for further refinement. As wearable technology continues to evolve, the integration of AI offers promising potential for enhancing personal health management. Users should explore these features to optimize their wellness routines.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "MoEngage Acquires AI Tech for Personalized Marketing Agents",
-            "title": "MoEngage Invests in AI Agents for Customer-Centric Marketing Strategy",
-            "content": "India's MoEngage has acquired technology that enables the deployment of AI agents tailored to individual customers, marking a strategic shift towards hyper-personalized marketing. This all-cash deal allows MoEngage to enhance customer engagement by assigning AI agents to interact with users based on their unique preferences and behaviors. The move reflects a broader trend in marketing towards leveraging AI for more personalized consumer experiences. Companies adopting such technologies could see improved customer satisfaction and retention rates. As AI continues to evolve, businesses must consider integrating similar solutions to stay competitive.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Google Home Enhances Facial Recognition for Better Security",
-            "title": "Google Home Update Boosts Facial Recognition Accuracy in Smart Cameras",
-            "content": "Google Home is rolling out an update to improve its facial recognition capabilities, reducing the likelihood of misidentifying individuals in smart home camera feeds. This enhancement, effective from June 23rd, extends the functionality of the Familiar Faces library, allowing users to tag and recognize individuals more accurately. The update aims to enhance security and user experience by minimizing false alerts and ensuring that users are correctly identified even when not facing the camera. This development underscores the growing importance of AI in home security systems. Users should ensure their devices are updated to benefit from these improvements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/955385/google-home-familiar-faces-clothing",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Anthropic's Claude Tag Transforms Slack with AI Integration",
-            "title": "Claude Tag by Anthropic Brings AI to Slack for Enhanced Productivity",
-            "content": "Anthropic has introduced Claude Tag, an AI-powered feature for Slack that acts as an always-on digital teammate. This integration aims to capture and utilize organizational context and institutional knowledge, streamlining enterprise workflows. By learning from Slack messages, Claude Tag can assist in task management and decision-making processes, offering a strategic advantage to businesses. This development highlights the increasing role of AI in workplace productivity tools. Organizations using Slack should consider integrating Claude Tag to leverage AI for improved operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
             "relatedResources": []
         }
     ],
