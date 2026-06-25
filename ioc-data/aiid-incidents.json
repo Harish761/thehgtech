@@ -9,6 +9,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1555",
+      "incident_id": 1555,
+      "title": "Reportedly AI-Assisted Boies Schiller Brief in Bixler v. Church of Scientology Allegedly Contained M",
+      "date": "2026-06-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1556",
+      "incident_id": 1556,
+      "title": "X User Reportedly Used Morse Code Prompt to Induce Grok-Linked Trading Bot to Transfer $200,000 in T",
+      "date": "2026-06-25",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1557",
+      "incident_id": 1557,
+      "title": "Former New York City Council Candidate Jonathan Rinaldi Allegedly Used AI to Create False Endorsemen",
+      "date": "2026-06-25",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-43",
       "incident_id": 43,
       "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
@@ -2538,9 +2562,9 @@
     }
   ],
   "stats": {
-    "total": 317,
-    "last7Days": 33,
-    "last30Days": 183
+    "total": 320,
+    "last7Days": 25,
+    "last30Days": 186
   },
-  "lastUpdated": "2026-06-25T23:52:22.790743+05:30"
+  "lastUpdated": "2026-06-26T02:02:09.567258+05:30"
 }
