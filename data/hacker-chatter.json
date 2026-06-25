@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-06-25T06:31:28.337170",
-  "total_incidents": 28971,
+  "last_updated": "2026-06-25T16:40:35.321101",
+  "total_incidents": 28978,
   "incidents": [
+    {
+      "id": "interlock_clearview_eye_centre",
+      "victim_name": "Clearview Eye Centre",
+      "threat_actor": "interlock",
+      "date_discovered": "2026-06-25T15:48:47.463417+00:00",
+      "industry": "Healthcare",
+      "website": "clearvieweyecentre.com",
+      "claim": "Clearview Eye Centre is a state-of-the-art ophthalmology clinic run by doctors Faisal Adatia and Ryan Yau in Calgary, Alberta. They disregard security regulations and medical confidentiality, show no respect for their clients' privacy, and make no attempt to protect the information stored in their databases. Their practices are extremely lax, resulting in client information including medical records, personal data, incident reports, and financial and tax information being exposed to you.",
+      "screenshot": "https://images.ransomware.live/victims/b9d8405068b2d62fd9cb8b11fac8de02.png",
+      "url": "http://xyaaupqnht5foymeilb67uv5ljjod5o3uyq62llldv4r4jiqxj2nhoqd.onion/index.php?p=",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_roofdepot.com",
+      "victim_name": "roofdepot.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-06-25T15:46:31.165632+00:00",
+      "industry": "Construction",
+      "website": "www.zoominfo.com/c/roof-depot-inc/348637856",
+      "claim": "Founded in 1998 and headquartered in Alpharetta, GA, Roof Depot is a roofing manufacturer that specializes in roof installation, repairs & replacement",
+      "screenshot": "https://images.ransomware.live/victims/9a5a8f0a2b85a0c8c4cc9f857f63a219.png",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/uLzP0TsDiuseR83BjARDFmCrKPkiFuuX",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "insomnia_*************",
+      "victim_name": "*************",
+      "threat_actor": "insomnia",
+      "date_discovered": "2026-06-25T14:54:32.274882+00:00",
+      "industry": "Not Found",
+      "website": "www.********.com",
+      "claim": "Law firm provide legal services to individuals, businesses, and organizations. Their attorneys handle advice, court representation, contracts, and dispute resolution across areas like corporate, family, real estate, and estate law.",
+      "screenshot": "https://images.ransomware.live/victims/cd59760fb56bde922682be65becda5ca.png",
+      "url": "http://i62huw7ve22rpyw6lnq3kmfump2dmsg4xpveec3ere73njwatrz74gad.onion/Company/Announce/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_sansilvestre.edu.pe",
+      "victim_name": "sansilvestre.edu.pe",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-25T12:25:02.604127+00:00",
+      "industry": "Education",
+      "website": "sansilvestre.edu.pe",
+      "claim": "San Silvestre School (Asociación Civil) is one of Peru's most prestigious private all-girls British schools, founded in...",
+      "screenshot": "https://images.ransomware.live/victims/de1149024c2488206387549c8ad7e1f1.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/69b67084deca6738eeee5ddfbfe8a86e93a924dfeacede1dbdc07c797530feb9/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_jms_southeast",
+      "victim_name": "JMS Southeast",
+      "threat_actor": "akira",
+      "date_discovered": "2026-06-25T12:20:23.220911+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "JMS Southeast, Inc. specializes in high-quality temperature measurement and control products, i\nncluding thermocouples, RTDs, thermowells, and transmitters, catering to various industries suc\nh as aerospace, pharmaceuticals, and oil and gas.\n\nWe will upload 25gb of corporate data soon. Employee personal information (name, addresses and \nso on), payment details, NDAs, projects, contracts and agreements, agreements with government, \ncustomer information and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_padget_technologies",
+      "victim_name": "Padget Technologies",
+      "threat_actor": "akira",
+      "date_discovered": "2026-06-25T11:50:30.612587+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Padget Technologies specializes in advanced robotics and automation solutions tailored for effi\ncient and cost-effective production. Their services include designing and fabricating custom ma\nchinery, assembly systems, and pre-engineered robotic palletizing cells.\n\nWe will upload corporate data soon. Employee personal docs (DLs, SSNs, w9s and other sensitive \ndocs), payment details, lot of NDAs, projects, contracts and agreements, client information, et\nc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "morpheus_delegal_poindexter_&_underkofler,_p.a.",
+      "victim_name": "Delegal Poindexter & Underkofler, P.A.",
+      "threat_actor": "morpheus",
+      "date_discovered": "2026-06-25T08:22:52.636708+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "**Website**: protectingcareers.com\n\n**Revenue**: $5 Million\n\nDelegal Poindexter & Underkofler provides highly specialized legal services to employees with employment law concerns.They represent profes",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_isoplus",
       "victim_name": "ISOPLUS",
