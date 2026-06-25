@@ -1413,31 +1413,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="mobile-nav.css">
 </head>
@@ -1833,16 +1823,14 @@
                     <ul style="list-style: none; padding: 0;">
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/stryker-wiper-attack-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Stryker Wiper Deep-Dive: Handala's Abuse of Microsoft Intune to Remote-Wipe 80,000 Devices</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">80,000 devices wiped via Intune. No malware. Just abused cloud features. Here is the full 7,500-word deep-dive into the LotC (Living-off-the-Cloud) tactics used by the Handala group and how to stop them.</p>
                             <small style="color: var(--text-muted);">March 31, 2026 | Active Threat</small>
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/microsoft-patch-tuesday-february-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Microsoft Patch Tuesday
                                     February 2026: 6 Zero-Days Under Active Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Microsoft patches 59 flaws, with
@@ -1852,8 +1840,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/apple-dyld-zero-day-cve-2026-20700.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Apple dyld Zero-Day
                                     (CVE-2026-20700): Memory Corruption Exploit Chain Used in Sophisticated Spyware
                                     Attacks</a></h3>
@@ -1865,8 +1852,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/windows-notepad-rce-cve-2026-20841.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Windows Notepad RCE
                                     (CVE-2026-20841): Markdown Link Injection Turns Text Editor into Attack Vector</a>
                             </h3>
@@ -1878,7 +1864,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260209"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     February 09, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -1887,7 +1873,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/langflow-ai-rce-cve-2025-3248.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Langflow AI RCE
                                     (CVE-2025-3248): Unauthenticated Code Execution in AI Pipeline Platform</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical vulnerability in
@@ -1897,8 +1883,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/fortinet-auth-bypass-cve-2026-24858.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Critical Fortinet Auth
                                     Bypass (CVE-2026-24858): FortiCloud SSO Exploitation Under Active Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">CVSS 9.4 authentication bypass
@@ -1908,7 +1893,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/harvard-shinyhunters-breach-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Harvard Breach:
                                     ShinyHunters Expose 115,000 Donor Records via Vishing Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">ShinyHunters breach Harvard
@@ -1918,7 +1903,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/notepad-supply-chain-apt31-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Notepad++ Hijacked: APT31
                                     Deploys Chrysalis Backdoor via 6-Month Supply Chain Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Chinese state-sponsored hackers
@@ -1929,7 +1914,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/purerat-ai-malware-vietnam-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">PureRAT: Vietnamese Threat
                                     Actor Deploys AI-Generated Malware in Phishing Campaign</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Vietnamese hackers leverage AI
@@ -1939,8 +1924,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/glassworm-openvsx-supply-chain-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">GlassWorm Returns: Open
                                     VSX Extensions Compromised in Second Wave Supply Chain Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Self-propagating GlassWorm
@@ -1950,7 +1934,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260202"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     February 02, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -1959,7 +1943,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/ivanti-epmm-zeroday-cve-2026-1281.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Ivanti EPMM Zero-Days
                                     CVE-2026-1281: Critical RCE Exploited in Wild</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Active exploitation of two new
@@ -1969,7 +1953,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/nike-data-breach-1tb-stolen-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Nike Data Breach: 1.4TB of
                                     Internal Designs & Employee Data Stolen</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Hackers claim theft of 1.4TB
@@ -1979,8 +1963,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/vscode-malicious-extensions-supply-chain-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Malicious VS Code
                                     Extensions Steal Source Code: 'MaliciousCorgi' Campaign</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Thousands of developers
@@ -1990,8 +1973,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/microsoft-teams-phishing-guest-exploit-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Microsoft Teams Phishing:
                                     Hackers Exploit Guest Feature for Credential Theft</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Sophisticated phishing campaign
@@ -2001,7 +1983,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/ms-office-zero-day-cve-2026-21509.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Microsoft Office Zero-Day
                                     CVE-2026-21509 Actively Exploited - Emergency Patch Released</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Microsoft releases emergency
@@ -2011,7 +1993,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/infostealer-mfa-bypass-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Infostealer Malware: Why
                                     Your MFA Is Already Compromised</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Infostealers don't steal your
@@ -2021,7 +2003,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/oauth-worms-saas-attack-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">OAuth Worms: The Silent
                                     SaaS-to-SaaS Attack Vector Nobody's Watching</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">OAuth worms spread across M365,
@@ -2031,7 +2013,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/prompt-injection-physical-ai-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Prompt Injection Goes
                                     Physical: Hacking Self-Driving Cars and Drones with Text</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">UC Santa Cruz reveals CHAI
@@ -2041,8 +2023,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/shinyhunters-vishing-mfa-bypass-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">ShinyHunters Voice
                                     Phishing: How Hackers Are Bypassing MFA in Real-Time</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">ShinyHunters' vishing campaign
@@ -2052,7 +2033,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260126"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     January 26, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2061,7 +2042,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/luxshare-apple-breach-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Luxshare Ransomware
                                     Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">RansomHub claims breach of Apple
@@ -2071,7 +2052,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/lastpass-vault-cracks-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">LastPass Vault Cracks
                                     Continue: 2022 Breach Still Draining Crypto Wallets in 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Three years later, the LastPass
@@ -2081,8 +2062,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/dragonforce-ransomware-cartel-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">DragonForce: The New
                                     Ransomware Cartel Built on LockBit and Conti DNA</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">From hacktivists to criminal
@@ -2092,7 +2072,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/ai-agents-attack-vectors-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">AI Agents Will Be the
                                     Primary Attack Vector in 2026: A Deep Security Analysis</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">With 91,000+ attack sessions
@@ -2103,7 +2083,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260119"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     January 19, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2112,8 +2092,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/crowdstrike-seraphic-browser-security-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">CrowdStrike Acquires
                                     Seraphic Security for $420M: Securing the Browser Battlefield</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Five days after the $740M SGNL
@@ -2123,8 +2102,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/microsoft-patch-tuesday-january-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Microsoft Patch Tuesday
                                     January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Microsoft's January 2026 Patch
@@ -2134,7 +2112,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/totalenergies-data-breach-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">TotalEnergies Breach: 183
                                     Million Customer Records Allegedly Stolen</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">French energy giant
@@ -2144,7 +2122,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/llm-attack-reconnaissance-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">91,000 LLM Attack
                                     Sessions: Massive AI Reconnaissance Campaign</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Security researchers detect
@@ -2154,7 +2132,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/microsoft-365-gov-breach-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Microsoft 365 US
                                     Government Breach: Cloud Espionage Campaign</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Sophisticated cyber espionage
@@ -2164,7 +2142,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260112"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     January 12, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2173,8 +2151,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/crowdstrike-sgnl-acquisition-identity-security-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">CrowdStrike Acquires SGNL
                                     for $740M: The Future of Identity Security in the AI Agent Era</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">CrowdStrike's $740M acquisition
@@ -2184,8 +2161,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/ledger-global-e-supply-chain-breach-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Ledger Customers Exposed
                                     in Global-e Supply Chain Attack: What You Need to Know</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Ledger hardware wallet customers
@@ -2195,8 +2171,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/n8n-ni8mare-critical-vulnerability-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Ni8mare: Two CVSS 10.0
                                     Vulnerabilities Put 100K n8n Automation Servers at Risk</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical CVE-2026-21858
@@ -2206,7 +2181,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20260105"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     January 05, 2026</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2215,7 +2190,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/agentic-ai-insider-threat-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Agentic AI: The New
                                     Insider Threat You Didn't Hire</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">As enterprises deploy autonomous
@@ -2226,8 +2201,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/deepfake-as-a-service-explosion-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Deepfake-as-a-Service:
                                     When AI Identity Theft Costs Less Than a Pizza</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Criminal marketplaces now offer
@@ -2237,8 +2211,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/claude-ai-vulnerability-inverseprompt-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Claude AI Used to Hack
                                     Itself: Critical CVE-2025-54794 and CVE-2025-54795 Discovered</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Researchers used Claude to
@@ -2248,8 +2221,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/sedgwick-tridentlocker-ransomware-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Sedgwick Government
                                     Solutions Hit by TridentLocker: New Ransomware Gang Claims 3.4GB Theft</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">New ransomware group
@@ -2259,8 +2231,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/taiwan-263-million-daily-chinese-cyberattacks-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Taiwan Reports 2.63
                                     Million Daily Chinese Cyberattacks: Energy Infrastructure Under Siege</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Taiwan's National Security
@@ -2270,8 +2241,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/esa-cyberattack-200gb-data-theft-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">European Space Agency
                                     Cyberattack: Threat Actor '888' Claims 200GB Data Theft</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Threat actor '888' claims
@@ -2281,7 +2251,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/ibm-api-connect-cve-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">IBM API Connect
                                     CVE-2025-13915: Critical Enterprise Gateway Flaw</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">CVSS 9.8 vulnerability in IBM
@@ -2291,7 +2261,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/clickfix-social-engineering-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">ClickFix Surge: 517%
                                     Increase in Fake CAPTCHA Attacks</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">ClickFix attacks explode 517% in
@@ -2301,7 +2271,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/managemyhealth-nz-breach-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">ManageMyHealth NZ Breach:
                                     $60,000 Ransom Deadline for Patient Data</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">New Zealand healthcare platform
@@ -2311,8 +2281,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/covenant-health-qilin-ransomware-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Covenant Health
                                     Ransomware: Qilin Steals 850GB from 478,000 Patients</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Qilin ransomware exfiltrates 1.3
@@ -2322,8 +2291,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/wheelchair-bluetooth-hack-cve-2025-14346.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Electric Wheelchair
                                     Bluetooth Hack CVE-2025-14346: When Mobility Becomes a Target</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical Bluetooth vulnerability
@@ -2333,7 +2301,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20251229"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     December 29, 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2342,7 +2310,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/mongodb-mongobleed-cve-2025-14847.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">MongoBleed CVE-2025-14847:
                                     When Your Database Becomes a Credential Vending Machine</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical memory leak in MongoDB
@@ -2352,8 +2320,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/scattered-spider-teen-hacker-115-million.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The $115 Million Teenager:
                                     Inside Scattered Spider's Corporate Rampage</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">19-year-old London teen
@@ -2363,8 +2330,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/react2shell-cve-2025-55182-react-vulnerability.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">React2Shell
                                     CVE-2025-55182: The CVSS 10.0 Vulnerability That Turned React Into a Weapon</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Maximum severity RCE in React 19
@@ -2374,8 +2340,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/trustwallet-chrome-extension-hack-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">TrustWallet Chrome
                                     Extension Hack: Millions Lost in Browser Extension Trust Crisis</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">TrustWallet Chrome extension
@@ -2385,8 +2350,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/langchain-cve-2025-68664-ai-vulnerability.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">LangChain CVE-2025-68664:
                                     Your AI Agent Just Got Weaponized</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical CVSS 9.3 serialization
@@ -2396,7 +2360,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/operation-pcpcat-nextjs-hack-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Operation PCPcat: 59,000
                                     Next.js Servers Hacked in 48 Hours</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Massive credential-theft
@@ -2406,8 +2370,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/romania-water-ransomware-bitlocker-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Romania Water Authority
                                     Ransomware Attack: 1,000 Systems Encrypted Using BitLocker</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Romanian national water
@@ -2417,8 +2380,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/n8n-rce-vulnerability-cve-2025-68613.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">n8n RCE Vulnerability
                                     CVE-2025-68613: Why Automation Platforms Are Your Biggest Blind Spot</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical CVSS 9.8 RCE in n8n
@@ -2428,7 +2390,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/nissan-redhat-breach-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Nissan Customer Data
                                     Breach: Red Hat Consulting GitLab Compromise Exposes 21,000 Customers</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Crimson Collective breached Red
@@ -2438,7 +2400,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/watchguard-firebox-zero-day-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">WatchGuard Firebox
                                     Zero-Day CVE-2025-14733 Under Active Exploitation</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Critical CVSS 9.3 zero-day in
@@ -2448,7 +2410,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/doj-atm-jackpotting-ploutus-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">DOJ Charges 54 in Massive
                                     ATM Jackpotting Scheme Using Ploutus Malware</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Venezuelan gang Tren de Aragua
@@ -2458,7 +2420,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/north-korea-crypto-theft-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">North Korea Stole $2.02
                                     Billion in Cryptocurrency in 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">DPRK hackers lead global crypto
@@ -2468,7 +2430,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/700credit-breach-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">700Credit Data Breach
                                     Exposes 5.6 Million SSNs: Automotive Industry Supply Chain Attack</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">A compromised third-party API
@@ -2478,7 +2440,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/dxs-nhs-ransomware-breach-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">DXS International NHS
                                     Breach: DevMan Ransomware Claims 300GB from UK Healthcare Provider</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">NHS GP software provider serving
@@ -2488,8 +2450,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/cybersecurity-pros-guilty-alphv-ransomware-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Former Cybersecurity
                                     Professionals Plead Guilty to ALPHV BlackCat Ransomware Attacks</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Incident response manager and
@@ -2499,8 +2460,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/nefilim-ransomware-operator-guilty-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Nefilim Ransomware
                                     Operator Pleads Guilty: Ukrainian National Faces 10 Years</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Ukrainian national Artem
@@ -2510,8 +2470,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/french-ministry-interior-hack-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">French Ministry of
                                     Interior Hacked: 22-Year-Old Arrested</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">UPDATED: Data extraction
@@ -2522,7 +2481,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/kimwolf-botnet-android-ddos-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Kimwolf Botnet Hijacks 1.8
                                     Million Android Devices for DDoS Attacks</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">New hyper-scale botnet infects
@@ -2532,8 +2491,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/fortinet-fortigate-critical-exploit-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Fortinet FortiGate
                                     Critical Vulnerabilities Under Active Exploitation</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Two CVSS 9.8 authentication
@@ -2542,8 +2500,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/redhat-chatterbox-ai-safety-acquisition-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Red Hat Acquires
                                     Chatterbox Labs: A New Era of Enterprise AI Safety and Responsible Deployment</a>
                             </h3>
@@ -2554,8 +2511,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/99-percent-ai-systems-attacked-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">99% of Organizations Had
                                     Their AI Systems Attacked in 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Palo Alto Networks' State of
@@ -2565,7 +2521,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles/cybersecurity-predictions-2026.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">6 Cybersecurity
                                     Predictions for 2026: The AI Economy's New Rules</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Palo Alto Networks forecasts a
@@ -2575,8 +2531,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/harvard-phone-phishing-breach-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">How a Single Phone Call
                                     Breached Harvard: The Rise of AI-Assisted Vishing</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Harvard University's donor
@@ -2586,8 +2541,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles/salesforce-billion-record-extortion-2025.html"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The Billion-Record Heist:
                                     Salesforce Data Extortion Threatens Enterprise Cloud Security</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">UPDATED: Lawsuits underway,
@@ -2598,8 +2552,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-gentlemen-ransomware-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Gentlemen Ransomware: The
                                     'Polite' Threat Ripping Through Corporate Networks</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">UPDATED: Linux/ESXi support
@@ -2609,7 +2562,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20251215"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     December 15, 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2618,8 +2571,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-anonymous-russia-military-database-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Anonymous Hackers Breach
                                     Russia's Military Draft Database: 30 Million Records Exposed</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">In their largest operation
@@ -2630,7 +2582,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-lastpass-uk-fine-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">LastPass Fined £1.2
                                     Million by UK Regulator: A Reckoning Three Years in the Making</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">The UK's privacy regulator fines
@@ -2641,7 +2593,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=7zip-critical-vulnerability"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Critical 7-Zip
                                     Vulnerability: What You Need to Know Right Now</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">CVE-2025-11001 is being actively
@@ -2651,7 +2603,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20251208"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     December 08, 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2660,8 +2612,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-coupang-breach-33m-users"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Coupang's 33.7 Million
                                     User Breach: When Insider Threats Meet Inadequate Access Controls</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">South Korea's largest e-commerce
@@ -2672,8 +2623,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-barts-health-nhs-clop-breach"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Barts Health NHS Breach:
                                     When Healthcare Meets Zero-Day Ransomware Attacks</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Barts Health NHS Trust confirms
@@ -2684,8 +2634,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-apache-tika-xxe-cve-2025-66516"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Apache Tika CVSS 10.0 XXE
                                     Vulnerability: Critical RCE Flaw in Widely-Used Document Parser (CVE-2025-66516)</a>
                             </h3>
@@ -2697,8 +2646,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-shadypanda-browser-extension-campaign"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">ShadyPanda: 7-Year Browser
                                     Extension Campaign Compromises 4.3 Million Chrome & Edge Users</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">A sophisticated 7-year-long
@@ -2709,8 +2657,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-brickstorm-prc-espionage-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">CISA Warns: PRC
                                     State-Sponsored 'Brickstorm' Malware Lurks in Networks for Over a Year, Targeting
                                     U.S. Critical Infrastructure</a></h3>
@@ -2722,7 +2669,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-react-nextjs-rce-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Critical 10.0 CVSS Flaw in
                                     React & Next.js: 40% of Cloud Environments at Risk of Unauthenticated RCE</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Security researchers disclose
@@ -2733,8 +2680,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-android-zero-days-dec-2025"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Google Patches 100+
                                     Android Vulnerabilities, Including Two Actively Exploited Zero-Days Added to CISA
                                     KEV</a></h3>
@@ -2746,8 +2692,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a
-                                    href="articles.html?id=article-onsolve-codered-ransomware"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Emergency Alert System
                                     Down: INC Ransom Cripples OnSolve CodeRED, Disrupting Public Safety Across U.S.</a>
                             </h3>
@@ -2759,7 +2704,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-coupang-breach"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The Coupang Catastrophe:
                                     How 33.7 Million Customers Were Exposed in South Korea's Largest Data Breach</a>
                             </h3>
@@ -2770,7 +2715,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-olympia-takedown"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Operation Olympia: How
                                     Europol Dismantled the €1.3 Billion Cryptomixer Laundromat</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Europol seizes Cryptomixer.io,
@@ -2780,7 +2725,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-bpost-ransomware"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Tridentlocker Ransomware
                                     Claims Belgian Postal Giant bpost</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Tridentlocker group lists bpost
@@ -2789,7 +2734,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20251201"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     December 01, 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2798,7 +2743,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-asahi-qilin-breach"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The Asahi Breach: How
                                     Qilin Ransomware Crippled Japan's Beer Giant and Exposed 2 Million Records</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Qilin ransomware group
@@ -2808,7 +2753,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-korean-msp-breach"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Korean Leaks: The MSP
                                     Breach That Exposed 28 Financial Firms and 2TB of Data</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Qilin ransomware exploits a
@@ -2818,7 +2763,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-deepfake-heist"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The $200M Face: How
                                     Real-Time Deepfake Injection Bypassed Biometric Auth</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">A Hong Kong bank loses $200M to
@@ -2828,7 +2773,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-nvidia-vuln"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Critical 'Tenant Escape'
                                     Flaw in H200 Clusters Forces Emergency Cloud Patching</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">A virtualization vulnerability
@@ -2838,7 +2783,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article-echo-worm"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The 'Echo' Effect: First
                                     Self-Replicating AI Worm Found Poisoning Enterprise Knowledge Bases</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Researchers demonstrate 'Echo',
@@ -2848,7 +2793,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=report-20251127"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Weekly Threat Report:
                                     November 27, 2025</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Weekly analysis of top malware
@@ -2857,7 +2802,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article1"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">When a 15.72-Tbps DDoS Hit
                                     Microsoft Azure: What the Record Attack Reveals About Cloud Fragility</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Azure mitigated the largest DDoS
@@ -2866,7 +2811,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article2"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Amazon's $50 Billion AI
                                     Bet: How AWS Is Building the Intelligence Infrastructure for U.S. National
                                     Security</a></h3>
@@ -2876,7 +2821,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article3"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Palo Alto Networks
                                     Acquires Chronosphere for $3.35 Billion: A New Era of Security + Observability</a>
                             </h3>
@@ -2886,7 +2831,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article4"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">FCC Repeals U.S. Telecom
                                     Cybersecurity Mandates: National Risk Implications</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">FCC reverses cybersecurity
@@ -2895,7 +2840,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article6"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">The Hidden Breach: How
                                     Third-Party Cloud Risks Shattered Trust at Western Sydney University</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Western Sydney University’s
@@ -2907,7 +2852,7 @@
                         </li>
                         <li
                             style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;">
-                            <h3 style="margin-bottom: 0.5rem;"><a href="articles.html?id=article5"
+                            <h3 style="margin-bottom: 0.5rem;"><a data-removed-broken-link="true"
                                     style="color: var(--accent-cyan); text-decoration: none;">Gemini Inside: Can Apple
                                     Keep Its Privacy Promise with Google’s Brain?</a></h3>
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">Apple’s decision to integrate

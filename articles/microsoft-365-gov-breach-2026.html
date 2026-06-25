@@ -355,31 +355,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
 
 
@@ -902,11 +892,11 @@
 
             <h2><i class="fas fa-link"></i> Related Resources</h2>
             <ul>
-                <li><a href="/guides/cloud-security-best-practices.html" style="color: var(--accent-cyan);">Cloud
+                <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">Cloud
                         Security Best Practices Guide</a></li>
-                <li><a href="/guides/microsoft-365-security-hardening.html" style="color: var(--accent-cyan);">Microsoft
+                <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">Microsoft
                         365 Security Hardening Guide</a></li>
-                <li><a href="/guides/zero-trust-architecture.html" style="color: var(--accent-cyan);">Zero Trust
+                <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">Zero Trust
                         Architecture Implementation</a></li>
                 <li><a href="/guides/incident-response-automation.html" style="color: var(--accent-cyan);">Incident
                         Response Automation</a></li>

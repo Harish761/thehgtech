@@ -91,26 +91,19 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//t.fullres.net">
 
-    <!-- ========== GOOGLE ANALYTICS 4 (Deferred for Performance) ========== -->
-    <!-- GA loads after page becomes interactive to improve LCP/FCP -->
+            <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        // Defer GA loading until after window.onload for better PageSpeed
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100); // Small delay after load event
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
     </script>
 
     <!-- Preload critical resources for mobile -->
@@ -736,7 +729,7 @@
                 </ul>
 
                 <p style="margin-top: 2rem;">
-                    <a href="threat-intel.html"
+                    <a data-removed-broken-link="true"
                         style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #00D9FF, #3B82F6); color: white; text-decoration: none; border-radius: 8px; font-weight: 600;">
                         View Full Threat Intelligence Dashboard →
                     </a>
@@ -758,7 +751,7 @@
                     <li>Priority scoring and risk assessment</li>
                 </ul>
                 <p style="margin-top: 1.5rem;">
-                    <a href="cve-tracker.html" style="color: #00D9FF; text-decoration: none; font-weight: 600;">View CVE
+                    <a data-removed-broken-link="true" style="color: #00D9FF; text-decoration: none; font-weight: 600;">View CVE
                         Dashboard
                         →</a>
                 </p>
@@ -2799,7 +2792,7 @@
                     style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
 
                     <!-- IOC Intelligence -->
-                    <a href="threat-intel.html" class="solution-card"
+                    <a data-removed-broken-link="true" class="solution-card"
                         style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
                         <div
                             style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(0, 217, 255, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
@@ -2815,7 +2808,7 @@
                     </a>
 
                     <!-- CVE Tracker -->
-                    <a href="cve-tracker.html" class="solution-card"
+                    <a data-removed-broken-link="true" class="solution-card"
                         style="text-decoration: none; background: rgba(255, 61, 61, 0.03); border: 1px solid rgba(255, 61, 61, 0.2); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
                         <div
                             style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(255, 61, 61, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
@@ -2860,7 +2853,7 @@
                     </a>
 
                     <!-- Ransomware Tracker -->
-                    <a href="ransomware-tracker.html" class="solution-card"
+                    <a data-removed-broken-link="true" class="solution-card"
                         style="text-decoration: none; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
                         <div
                             style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
@@ -2875,7 +2868,7 @@
                     </a>
 
                     <!-- Hacker Chatter -->
-                    <a href="hacker-chatter.html" class="solution-card"
+                    <a data-removed-broken-link="true" class="solution-card"
                         style="text-decoration: none; background: rgba(138, 43, 226, 0.03); border: 1px solid rgba(138, 43, 226, 0.2); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; display: block;">
                         <div
                             style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(138, 43, 226, 0.05)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
@@ -3191,7 +3184,7 @@
                                 Zero-Day</div>
                         </div>
                     </div>
-                    <a href="cve-tracker.html"
+                    <a data-removed-broken-link="true"
                         style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: linear-gradient(135deg, #FF3D3D, #C41E3A); color: #fff; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1rem; transition: all 0.3s ease;">
                         <i class="fas fa-arrow-right"></i>
                         View CVE Tracker
@@ -3402,8 +3395,8 @@
                     <h4>Navigation</h4>
                     <ul class="footer-links">
                         <li><a href="#news">News</a></li>
-                        <li><a href="cve-tracker.html">CVE Alerts</a></li>
-                        <li><a href="articles.html">Articles</a></li>
+                        <li><a data-removed-broken-link="true">CVE Alerts</a></li>
+                        <li><a data-removed-broken-link="true">Articles</a></li>
                         <li><a href="guides/">Guides</a></li>
                         <li><a href="/comparisons/">Tool Comparisons</a></li>
                         <li><a href="/about.html">About</a></li>
@@ -3427,11 +3420,11 @@
                 <div>
                     <h4>Categories</h4>
                     <ul class="footer-links">
-                        <li><a href="threat-intel.html">Threat Intelligence</a></li>
-                        <li><a href="articles.html">Cybersecurity</a></li>
-                        <li><a href="articles.html">AI & Machine Learning</a></li>
-                        <li><a href="cve-tracker.html">Vulnerabilities</a></li>
-                        <li><a href="articles.html">Analysis</a></li>
+                        <li><a data-removed-broken-link="true">Threat Intelligence</a></li>
+                        <li><a data-removed-broken-link="true">Cybersecurity</a></li>
+                        <li><a data-removed-broken-link="true">AI & Machine Learning</a></li>
+                        <li><a data-removed-broken-link="true">Vulnerabilities</a></li>
+                        <li><a data-removed-broken-link="true">Analysis</a></li>
                     </ul>
                 </div>
             </div>
@@ -3446,7 +3439,7 @@
                     </h4>
                 </div>
                 <p style="margin: 0.5rem 0 0; color: var(--text-secondary); font-size: 0.95rem;">
-                    Automated data collection every 4 hours. View the full dashboard at <a href="threat-intel.html"
+                    Automated data collection every 4 hours. View the full dashboard at <a data-removed-broken-link="true"
                         style="color: var(--accent-cyan); text-decoration: none; font-weight: 600;">TheHGTech.com/threat-intel</a>
                 </p>
             </div>
@@ -5454,7 +5447,7 @@
 
             // Render cards
             container.innerHTML = cards.map(card => `
-                <a href="threat-intel.html" style="text-decoration: none; color: inherit;">
+                <a data-removed-broken-link="true" style="text-decoration: none; color: inherit;">
                     <div class="snapshot-card" style="
                         background: var(--glass);
                         border: 1px solid var(--border);
@@ -5490,7 +5483,7 @@
                 console.error('Failed to load threat-intel.js');
                 const container = document.getElementById('snapshotCards');
                 if (container) {
-                    container.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-muted);">Snapshot metrics unavailable. <a href="threat-intel.html" style="color: var(--accent-cyan);">View full dashboard</a></div>';
+                    container.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-muted);">Snapshot metrics unavailable. <a data-removed-broken-link="true" style="color: var(--accent-cyan);">View full dashboard</a></div>';
                 }
             };
             document.head.appendChild(script);

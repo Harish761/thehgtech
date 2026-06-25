@@ -429,31 +429,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 
@@ -1138,9 +1128,9 @@
                 <div class="related-articles" style="margin-top: 2rem;">
                     <h3>Related Articles</h3>
                     <ul>
-                        <li><a href="coupang-breach-2025.html" style="color: var(--accent-cyan);">Coupang's 33.7 Million
+                        <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">Coupang's 33.7 Million
                                 User Breach</a></li>
-                        <li><a href="salesforce-billion-record-heist-2025.html" style="color: var(--accent-cyan);">The
+                        <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">The
                                 Billion-Record Salesforce Data Extortion</a></li>
                     </ul>
                 </div>

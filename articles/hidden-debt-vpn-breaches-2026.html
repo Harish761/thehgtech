@@ -6,6 +6,7 @@
     <title>The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches | TheHGTech</title>
     <meta name="description" content="An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence.">
     <link rel="canonical" href="https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html">
+    <meta property="og:url" content="https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html">
     
     <!-- Open Graph & Twitter Cards -->
     <meta property="og:title" content="The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches">
@@ -351,30 +352,20 @@
     <script src="/m-app.js?v=4.3" defer></script>
     
     <!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <script>
-        window.addEventListener('load', function () {
+        <script>
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
 
     <script src="/theme-toggle.js" defer></script>

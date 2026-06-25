@@ -519,31 +519,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 
@@ -1263,9 +1253,8 @@
 
             <div class="info-box">
                 <strong><i class="fas fa-book-reader"></i> Related Reading:</strong> For technical vulnerability
-                context, see our coverage of <a href="mongodb-mongobleed-cve-2025-14847.html"
-                    style="color: var(--accent-spider);">MongoDB MongoBleed</a> and <a
-                    href="react2shell-cve-2025-55182-react-vulnerability.html"
+                context, see our coverage of <a data-removed-broken-link="true"
+                    style="color: var(--accent-spider);">MongoDB MongoBleed</a> and <a data-removed-broken-link="true"
                     style="color: var(--accent-spider);">React2Shell CVE-2025-55182</a>, which could
                 be
                 chained with social engineering access for devastating impact.
@@ -1296,12 +1285,12 @@
                 <div class="related-articles" style="margin-top: 2rem;">
                     <h3>Related Articles</h3>
                     <ul>
-                        <li><a href="mongodb-mongobleed-cve-2025-14847.html"
+                        <li><a data-removed-broken-link="true"
                                 style="color: var(--accent-spider);">MongoDB
                                 MongoBleed: The Database That Leaks Your Secrets</a></li>
-                        <li><a href="trustwallet-chrome-extension-hack-2025.html"
+                        <li><a data-removed-broken-link="true"
                                 style="color: var(--accent-spider);">TrustWallet Chrome Extension Hack</a></li>
-                        <li><a href="operation-pcpcat-nextjs-hack-2025.html"
+                        <li><a data-removed-broken-link="true"
                                 style="color: var(--accent-spider);">Operation
                                 PCPcat: 59,000 Next.js Servers Hacked</a></li>
                     </ul>

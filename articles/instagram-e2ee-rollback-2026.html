@@ -265,33 +265,23 @@
     </style>
 
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
 
     <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
@@ -715,7 +705,7 @@ async function sendDM(recipientId, plaintext) {
                         <li><strong>Meta Newsroom (Official):</strong> <a href="https://about.fb.com/news/2023/12/default-end-to-end-encryption-on-messenger/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">The Road to Default Encryption (Historical Context)</a></li>
                         <li><strong>UK Government:</strong> <a href="https://www.gov.uk/government/publications/online-safety-bill-supporting-documents/online-safety-bill-factsheet" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">Online Safety Act: Technical Requirements for Platform Operators</a></li>
                         <li><strong>NCSC Technical Report:</strong> <a href="https://www.ncsc.gov.uk/report/assessment-of-e2ee-technologies" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan);">Security Analysis of E2EE Implementations in Social Apps</a></li>
-                        <li><strong>TheHGTech Technical Deep-Dive:</strong> <a href="/guides/signal-protocol-explained.html">Understanding the Signal Protocol</a></li>
+                        <li><strong>TheHGTech Technical Deep-Dive:</strong> <a data-removed-broken-link="true">Understanding the Signal Protocol</a></li>
                     </ul>
                     <p><strong>Author:</strong> Harish G | <strong>Published:</strong> March 23, 2026 | <strong>Status:</strong> Technical Review Passed</p>
                 </div>

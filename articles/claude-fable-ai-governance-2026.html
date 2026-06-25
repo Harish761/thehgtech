@@ -6,6 +6,8 @@
     <title>Deep Dive: The Fable Era - Why AI Governance Replaced the Model | TheHGTech</title>
     <meta name="description" content="Technical analysis of Anthropic's Claude Fable release and the cybersecurity industry shift from capability restriction to control-based access for frontier AI.">
     <link rel="canonical" href="https://thehgtech.com/articles/claude-fable-ai-governance-2026.html">
+    <meta property="og:url" content="https://thehgtech.com/articles/claude-fable-ai-governance-2026.html">
+    <meta property="og:title" content="Deep Dive: The Fable Era - Why AI Governance Replaced the Model | TheHGTech">
     
     <!-- Open Graph & Twitter Cards Required -->
     <meta property="og:type" content="article" />
@@ -236,30 +238,20 @@
     <script src="/interaction-bar.min.js" defer></script>
 
     <!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <script>
-        window.addEventListener('load', function () {
+        <script>
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     
     <!-- Mermaid JS for diagrams -->

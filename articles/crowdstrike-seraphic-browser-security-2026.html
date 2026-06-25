@@ -514,31 +514,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
 
     <!-- Advanced Rich Snippet Injection -->
@@ -1300,9 +1290,9 @@
             <ul>
                 <li><a href="/articles/crowdstrike-sgnl-acquisition-identity-security-2026.html">CrowdStrike Acquires
                         SGNL for $740M: The Future of Identity Security</a></li>
-                <li><a href="/comparisons/crowdstrike-vs-sentinel-one.html">CrowdStrike vs SentinelOne: EDR
+                <li><a data-removed-broken-link="true">CrowdStrike vs SentinelOne: EDR
                         Comparison</a></li>
-                <li><a href="/guides/zero-trust-architecture-implementation-guide.html">Zero Trust Architecture
+                <li><a data-removed-broken-link="true">Zero Trust Architecture
                         Implementation Guide</a></li>
             </ul>
 

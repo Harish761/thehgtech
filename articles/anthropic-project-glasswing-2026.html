@@ -466,31 +466,21 @@
     </script>
 
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="/mobile-nav.css">
 
@@ -929,7 +919,7 @@ def analyze_logical_flaws(repo_context, api_client):
                 <ul>
                     <li><strong>Bolster Patch Management:</strong> Anticipate a potential increase in CVE disclosures as major open-source projects undergo rigorous AI-assisted review. Review your organization's <a href="/guides/cve-prioritization-patch-management.html">CVE Prioritization & Patch Management</a> workflows to ensure critical foundational library updates can be deployed rapidly.</li>
                     <li><strong>Secure Internal AI Implementations:</strong> Evaluate the internal deployment of LLMs and enterprise agents. The rise of agentic coding requires strict scrutiny and adherence to frameworks like the <a href="/guides/owasp-llm-top-10.html">OWASP LLM Top 10</a> and robust <a href="/guides/llm-jailbreaking-defense-advanced.html">LLM Jailbreaking Defenses</a>.</li>
-                    <li><strong>Refine Threat Intelligence:</strong> Connect with reputable <a href="/guides/threat-intelligence-for-soc.html">Threat Intelligence</a> feeds that track automated exploitation trends to monitor if threat actor methodology shifts in response to newly patched vulnerabilities.</li>
+                    <li><strong>Refine Threat Intelligence:</strong> Connect with reputable <a data-removed-broken-link="true">Threat Intelligence</a> feeds that track automated exploitation trends to monitor if threat actor methodology shifts in response to newly patched vulnerabilities.</li>
                     <li><strong>Adopt AI-Assisted Defenses:</strong> Explore secure ways of integrating AI into your internal AppSec pipelines, ensuring you understand the principles of <a href="/guides/securing-ai-ml-pipelines.html">Securing AI/ML Pipelines</a>.</li>
                 </ul>
             </div>

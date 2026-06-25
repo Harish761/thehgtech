@@ -444,31 +444,21 @@
         })();
     </script>
     <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
     </script>
-    <!-- Fullres Analytics -->
+        <!-- Fullres Analytics -->
     <script>
-        window.addEventListener('load', function () {
+        (function () {
             var fullres = document.createElement('script');
             fullres.async = true;
             fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
-        });
+        })();
     </script>
     <link rel="stylesheet" href="../mobile-nav.css">
 
@@ -1371,12 +1361,12 @@ netstat -ano > connections.txt</code></pre>
         <div class="related-guides">
             <h3><i class="fas fa-link"></i> Related Guides</h3>
             <ul>
-                <li><a href="/guides/incident-response-fundamentals.html">Incident Response Fundamentals</a></li>
+                <li><a data-removed-broken-link="true">Incident Response Fundamentals</a></li>
                 <li><a href="/guides/digital-forensics-fundamentals.html">Digital Forensics Fundamentals</a> (Coming
                     Soon)</li>
-                <li><a href="/guides/tabletop-exercises.html">Incident Response Tabletop Exercises</a> (Coming Soon)
+                <li><a data-removed-broken-link="true">Incident Response Tabletop Exercises</a> (Coming Soon)
                 </li>
-                <li><a href="/guides/backup-security.html">Backup Security Best Practices</a> (Coming Soon)</li>
+                <li><a data-removed-broken-link="true">Backup Security Best Practices</a> (Coming Soon)</li>
             </ul>
         </div>
 

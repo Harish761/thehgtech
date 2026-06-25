@@ -807,7 +807,7 @@
         
         <div class="success-box">
             <h3><i class="fas fa-shield-alt"></i> Actionable Next Steps</h3>
-            <p>Evaluating your organization's resilience against these attack paths requires objective measurement. Security leaders can utilize our <a href="/guides/grc-assessment-tool.html" style="color: var(--accent-cyan); text-decoration: underline;">GRC Assessment Tool</a> to benchmark their current posture, or review the latest critical flaws via our <a href="/cve-tracker.html" style="color: var(--accent-cyan); text-decoration: underline;">CVE Tracker</a>.</p>
+            <p>Evaluating your organization's resilience against these attack paths requires objective measurement. Security leaders can utilize our <a data-removed-broken-link="true" style="color: var(--accent-cyan); text-decoration: underline;">GRC Assessment Tool</a> to benchmark their current posture, or review the latest critical flaws via our <a href="/cve-tracker.html" style="color: var(--accent-cyan); text-decoration: underline;">CVE Tracker</a>.</p>
         </div>
 
         <h2>8. What This Means for Indian Enterprises</h2>
@@ -873,31 +873,21 @@
 <script src="/interaction-bar.min.js?v=20260623"></script>
 
 <!-- Analytics Snippets -->
-<script>
-    window.addEventListener('load', function () {
-        setTimeout(function () {
-            var gtmScript = document.createElement('script');
-            gtmScript.async = true;
-            gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-            document.head.appendChild(gtmScript);
-            gtmScript.onload = function () {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                window.gtag = gtag;
-                gtag('js', new Date());
-                gtag('config', 'G-XL6RCXZJE2');
-            };
-        }, 100);
-    });
-</script>
-<script>
-    window.addEventListener('load', function () {
-        var fullres = document.createElement('script');
-        fullres.async = true;
-        fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-        document.head.appendChild(fullres);
-    });
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
+    </script>
+    <script>
+        (function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
 
 </body>
 </html>
