@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 24 2026",
+            "headline": "Cisco SD-WAN Zero-Day—Hackers Gain Root Access",
+            "title": "Mandiant Unveils Exploitation of Cisco SD-WAN Zero-Day CVE-2026-20245",
+            "content": "Mandiant has disclosed details of a zero-day vulnerability, CVE-2026-20245, in Cisco Catalyst SD-WAN devices that hackers exploited to create unauthorized root accounts. This critical flaw allowed attackers to bypass security measures and gain full control over affected systems. The vulnerability impacts specific versions of Cisco's SD-WAN software, posing significant risks to enterprises relying on these devices for secure network management. Organizations using Cisco Catalyst SD-WAN should prioritize patching to mitigate potential breaches. This incident underscores the ongoing threat of zero-day vulnerabilities in critical infrastructure.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Edgecution Extension—Ransomware Attack via Native Messaging",
+            "title": "Malicious Edge Extension 'Edgecution' Abuses Native Messaging for Malware Deployment",
+            "content": "A malicious Microsoft Edge extension named 'Edgecution' has been identified as a tool in a ransomware attack, leveraging Native Messaging to bypass browser sandboxing. This technique allowed attackers to deploy a Python-based backdoor, compromising system security. The extension's misuse highlights vulnerabilities in browser extension ecosystems, particularly in how they interact with native applications. Security professionals should review and restrict browser extension permissions to prevent similar exploits. This incident emphasizes the need for heightened vigilance in managing browser-based threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "CISA Alerts—Lantronix EDS5000 Flaw Actively Exploited",
+            "title": "CISA Warns of Active Exploitation of Lantronix EDS5000 Vulnerability",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about the active exploitation of a critical vulnerability in Lantronix EDS5000 Series devices. The flaw, which allows unauthorized access, is being targeted by attackers, prompting CISA to urge Federal Civilian Executive Branch agencies to apply patches by June 26, 2026. This vulnerability poses significant risks to network security, especially for organizations relying on these devices for data communication. Immediate action is recommended to secure affected systems and prevent potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 22 2026",
+            "headline": "Supply Chain Attack—WordPress Plugins Backdoored",
+            "title": "ShapedPlugin WordPress Pro Plugins Compromised in Supply Chain Attack",
+            "content": "A supply chain attack has compromised multiple WordPress plugins from ShapedPlugin, with attackers injecting backdoor code into official release channels. This breach affects the vendor's build and distribution pipeline, posing a significant threat to websites using these plugins. The attack highlights vulnerabilities in software supply chains, emphasizing the need for robust security measures in plugin development and distribution. Website administrators should verify plugin integrity and apply updates from trusted sources to mitigate risks. This incident underscores the growing threat of supply chain attacks in the software industry.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 18 2026",
+            "headline": "Popa Botnet—Linked to Israeli Firm",
+            "title": "‘Popa’ Botnet Tied to Publicly-Traded Israeli Company",
+            "content": "Researchers have linked the Android-based 'Popa' botnet to a publicly-traded Israeli firm, revealing its role in advertising fraud, account takeovers, and data-scraping. Over four years, Popa has hijacked millions of consumer TV boxes, using them to relay malicious internet traffic. This discovery highlights the complex nature of modern botnet operations and their ties to legitimate businesses. Security professionals should monitor network traffic for signs of botnet activity and implement measures to protect IoT devices from exploitation. The case underscores the persistent threat of botnets in the digital landscape.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mistic Backdoor—Ransomware Broker's New Tool",
+            "title": "Mistic Backdoor Linked to Ransomware Broker's Network Intrusions",
+            "content": "Symantec researchers have uncovered a new backdoor, dubbed Mistic, used by an initial access broker to facilitate ransomware attacks. Active since April, Mistic has been deployed in enterprise networks, providing footholds for ransomware gangs. This discovery highlights the evolving tactics of cybercriminals, who increasingly rely on specialized tools to breach corporate defenses. Organizations should enhance their network monitoring and incident response capabilities to detect and mitigate such threats. The emergence of Mistic underscores the growing sophistication of ransomware operations.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4189132/be-on-the-lookout-for-mistic-a-new-backdoor-used-by-ransomware-broker.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "PixelSmash Flaw—Video Files as Attack Vectors",
+            "title": "Critical FFmpeg Vulnerability Allows Video Files to Compromise Systems",
+            "content": "Researchers have identified a critical vulnerability in FFmpeg, a widely-used multimedia framework, that allows attackers to exploit malicious video files to compromise systems. This flaw, known as PixelSmash, poses a significant risk to applications relying on FFmpeg for video processing. The vulnerability could be leveraged to execute arbitrary code, highlighting the importance of securing multimedia processing pipelines. Developers and system administrators should prioritize patching affected systems and consider implementing additional security measures to protect against such exploits.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/pixelsmash-flaw-turns-video-files-into-attack-tools",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Amadey, StealC Networks Disrupted—27M Credentials Recovered",
+            "title": "Law Enforcement Operation Disrupts Amadey and StealC Malware Networks",
+            "content": "A coordinated effort by law enforcement and private sector partners, including Bitdefender and Microsoft, has dismantled the infrastructure behind the Amadey and StealC malware operations. This operation, part of a broader initiative to combat cybercrime, resulted in the recovery of 27 million stolen credentials. The takedown disrupts the 'assembly lines' of cybercriminals, significantly impacting their ability to conduct malicious activities. Organizations should remain vigilant and ensure their systems are protected against similar threats. This success demonstrates the power of collaboration in combating cybercrime.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Google Enhances Privacy—New Controls for Search and Play",
+            "title": "Google Introduces New Privacy Controls for Search and Google Play",
+            "content": "Google has announced new privacy controls for its Search services and Google Play, providing users with greater control over their saved history and personalized recommendations. These enhancements aim to improve user privacy by allowing more granular management of activity data. The update reflects Google's ongoing commitment to privacy and data protection, addressing growing concerns over user data handling. Users are encouraged to review and adjust their privacy settings to take advantage of these new controls. This development highlights the tech industry's focus on enhancing user privacy.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-releases-new-privacy-controls-for-activity-history-personalization/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "DraftKings Hacker 'Snoopy'—18-Month Prison Sentence",
+            "title": "DraftKings Hacker 'Snoopy' Sentenced for 2022 Cyberattack",
+            "content": "A 21-year-old hacker, known by the alias \"Snoopy,\" has been sentenced to 18 months in prison for his involvement in hacking DraftKings accounts during a November 2022 cyberattack. The attack compromised numerous user accounts, leading to unauthorized transactions and significant financial losses. This sentencing serves as a warning to cybercriminals about the legal consequences of such activities. Organizations should continue to enhance their security measures to protect against account takeovers. The case underscores the importance of robust cybersecurity practices in safeguarding user data.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
             "headline": "Microsoft, Europol Dismantle Amadey, StealC Malware Networks",
             "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
             "content": "In a significant cybersecurity operation, Microsoft, Europol, and other international partners have dismantled the command-and-control (C&C) infrastructure of the Amadey and StealC malware networks. This collaborative effort disrupted hundreds of C&C servers, significantly impairing the operational capabilities of these malware families. Amadey and StealC have been notorious for facilitating cybercriminal activities, including data theft and ransomware distribution. The operation, part of a broader initiative to combat cybercrime, underscores the importance of international cooperation in tackling complex cyber threats. Organizations are advised to review their security postures and ensure systems are updated to mitigate potential risks from similar threats.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/exclusive-meet-aivex-a-new-triage-model-built-to-reduce-supply-chain-threat-and-risk/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Cisco CVE-2026-20230 Exploited—Update Unified CM Now",
-            "title": "Cisco Unified Communications Manager Vulnerability CVE-2026-20230 Exploited in Attacks",
-            "content": "A high-severity server-side request forgery (SSRF) vulnerability, identified as CVE-2026-20230, in Cisco Unified Communications Manager (CM) Server is now being actively exploited in the wild. This flaw allows attackers to send unauthorized requests from the server, potentially leading to data breaches or further system compromises. Organizations using affected versions of Cisco Unified CM should prioritize patching to mitigate the risk of exploitation. The vulnerability underscores the critical need for regular security updates and monitoring of network traffic for suspicious activities. Cisco has released patches and advisories to address this issue.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Xolis Data Breach: 1.4M Affected in Phishing Attack",
-            "title": "Xolis Data Breach Compromises 1.4 Million Individuals' Sensitive Information",
-            "content": "Healthcare technology firm Xolis has disclosed a data breach affecting approximately 1.4 million individuals following a successful phishing attack. The breach allowed attackers to access sensitive personal data, raising concerns about the security of healthcare networks. Xolis is currently working with cybersecurity experts to assess the full impact and prevent future incidents. This breach highlights the ongoing threat of phishing attacks in the healthcare sector, where personal data is highly valuable. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "FFmpeg Flaw Risks RCE—Media Servers at Risk",
-            "title": "Critical Vulnerability in FFmpeg Codec Could Enable Remote Code Execution",
-            "content": "A critical vulnerability in the FFmpeg media processing framework has been discovered, posing risks of remote code execution (RCE) and server crashes. FFmpeg is widely used in both open-source and commercial applications, making this flaw particularly concerning for media server operators. Security officers are advised to review their software supply chains and demand timely updates from vendors. This incident highlights the persistent challenge of managing software vulnerabilities in widely adopted frameworks. Immediate patching and network segmentation are recommended to mitigate potential exploitation.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4188531/hole-in-widely-used-ffmpeg-codec-could-crash-media-servers-or-enable-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Salesforce Data Breach Expands—OAuth Tokens Exploited",
-            "title": "Salesforce Data Breach Widens as Attackers Exploit OAuth Tokens",
-            "content": "The scope of a data breach involving Salesforce has expanded, following the compromise of application vendor Klue's OAuth tokens. Attackers used these tokens to access and steal customer data from Salesforce accounts. This breach highlights the vulnerabilities associated with third-party integrations and the need for stringent access controls. Organizations using Salesforce should review their OAuth token usage and implement additional security measures. The incident serves as a reminder of the importance of securing API connections and monitoring for unauthorized access.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/scope-salesforce-attacks-expands-icarus-leaks-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Mythos Model Finds US Gov't Vulnerabilities—Anthropic's AI in Action",
-            "title": "Anthropic’s Mythos Model Identifies Vulnerabilities in US Government Systems",
-            "content": "Anthropic's Mythos AI model has uncovered vulnerabilities in classified US government systems within hours of deployment, according to officials. While the model identified these flaws quickly, it did not exploit them, emphasizing its role in proactive cybersecurity. This development showcases the potential of AI in enhancing threat detection and vulnerability management. Government agencies are encouraged to integrate AI-driven tools into their cybersecurity strategies to stay ahead of evolving threats. The findings highlight the increasing reliance on AI for securing critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Tata Electronics Confirms Cyberattack—Data Leaked",
-            "title": "Tata Electronics Confirms Cyberattack with Data Leak Impacting IT Infrastructure",
-            "content": "Tata Electronics has confirmed a cyberattack that compromised parts of its IT infrastructure, resulting in a data leak. The company is working with cybersecurity experts to assess the damage and secure its systems. This incident highlights the ongoing threat of cyberattacks targeting large enterprises and the importance of robust security measures. Tata Electronics is advising customers and partners to remain vigilant and monitor for any signs of data misuse. The attack underscores the need for continuous security assessments and incident response planning.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "macOS ClickFix Attack—Silent Infostealer Deployment",
-            "title": "New macOS ClickFix Attack Deploys Infostealer via Malicious DMGs",
-            "content": "A new macOS campaign, dubbed ClickFix, is using Terminal commands to silently download and execute info-stealing malware from malicious disk image (DMG) files. This attack vector bypasses traditional security measures, posing a significant threat to macOS users. Security professionals are urged to educate users on the risks of downloading untrusted files and to implement endpoint protection solutions. The campaign highlights the evolving tactics of threat actors targeting macOS environments. Regular updates and vigilance are key to mitigating such threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "FortiBleed Harvests 110M Credentials—FortiGate Firewalls Targeted",
-            "title": "FortiBleed Campaign Targets FortiGate Firewalls in Credential Harvesting Operation",
-            "content": "The FortiBleed campaign, orchestrated by a Russian-speaking initial access broker, has targeted over 430,000 FortiGate firewalls globally, harvesting 110 million credentials. Active since February 2026, this operation underscores the financial motivations driving large-scale cyberattacks. Organizations using FortiGate firewalls should immediately review their security configurations and apply available patches. The campaign highlights the critical need for robust firewall management and monitoring to prevent unauthorized access. Security teams are advised to enhance their threat detection capabilities to counter such sophisticated attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Dragos Launches EmberAI—Boosting OT Security with AI",
-            "title": "Dragos Introduces EmberAI to Enhance Operational Technology Security",
-            "content": "Dragos has unveiled EmberAI, a new artificial intelligence capability designed to bolster security for operational technology (OT) environments. Built on Dragos' extensive OT cybersecurity dataset, EmberAI aims to improve threat detection and response times. This development reflects the growing trend of integrating AI into cybersecurity strategies to address the unique challenges of securing critical infrastructure. OT security professionals are encouraged to explore AI-driven solutions to enhance their defenses against increasingly sophisticated threats. The launch of EmberAI marks a significant advancement in OT cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/dragos-unveils-ai-for-ot-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Dify AI Platform Vulnerabilities Expose 1M Apps to Data Breaches",
-            "title": "Data Exposure Flaws Threaten Dify AI Platform Used by 1 Million Apps",
-            "content": "Security researchers have discovered critical vulnerabilities in the Dify AI platform, which could allow attackers to access private chats, preview documents, and interact with internal APIs. These flaws affect the platform's multi-tenant cloud service, used by over one million applications. The potential for unauthorized data access poses a significant risk to businesses and developers relying on Dify for AI-driven solutions. Immediate action is required to patch these vulnerabilities and secure sensitive data. This incident underscores the importance of rigorous security assessments in cloud-based AI platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/data-exposure-flaws-threaten-dify-ai-platform-powering-over-1-million-apps/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mindstone's Rebel AI OS Launches—Optimizes Model Tasking",
+            "title": "Mindstone's Rebel AI OS Automates Model Selection for Enterprise Tasks",
+            "content": "Mindstone, a London-based AI transformation startup, has launched Rebel, an AI operating system designed to optimize model selection for specific enterprise tasks. This local-first, agentic AI platform automatically remembers which AI model is best suited for each task, enhancing operational efficiency. The system aims to streamline AI agent orchestration, a growing trend in enterprise AI management. By automating model selection, Rebel reduces the need for manual intervention, allowing businesses to leverage AI more effectively. Enterprises should consider integrating such systems to enhance their AI-driven processes.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/your-enterprise-ai-agents-should-automatically-remember-which-model-is-right-for-which-task-mindstone-built-the-capability-with-rebel",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Europe Pushes Back—Limits on Chip Sales to China",
+            "title": "Europe Challenges U.S. Chip Export Restrictions to China",
+            "content": "Europe is resisting U.S. efforts to restrict chip sales to China, as highlighted by ASML CEO Christophe Fouquet. The MATCH Act aims to limit China's access to older-generation deep ultraviolet (DUV) lithography tools, which are crucial for semiconductor manufacturing. These tools, first shipped a decade ago, are now at the center of geopolitical tensions between the U.S. and Europe. European companies argue that such restrictions could harm their business interests and global competitiveness. Tech leaders should monitor this situation closely as it may impact supply chains and international collaborations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Ex-Infosys Chief Launches Startup—Targets IT Services Market",
+            "title": "Vishal Sikka's New Venture Aims to Disrupt IT Services Industry",
+            "content": "Vishal Sikka, former CEO of Infosys, has launched a new startup backed by Mayfield and Aramco Ventures, aiming to challenge the traditional IT services sector. The venture brings together industry veterans from SAP, Infosys, and VianAI, leveraging their expertise to innovate in the IT services domain. This move signifies a potential shift in how IT services are delivered, focusing on integrating advanced AI and machine learning capabilities. IT professionals should watch this development as it could redefine service delivery models and competitive dynamics in the industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cerebras Stock Dips—Earnings Report Misunderstood",
+            "title": "Cerebras Stock Falls After Misinterpreted Margin Forecast in Earnings Report",
+            "content": "Cerebras, an AI chipmaker, experienced a stock decline following its first earnings report post-IPO, due to a misunderstood margin outlook. The company projected a narrower gross margin in its core business, causing investor concern. Despite the initial negative reaction, Cerebras remains a key player in the AI hardware market, known for its cutting-edge chip designs. Investors and tech leaders should consider the long-term potential of Cerebras' technology, despite short-term market fluctuations. Understanding the nuances of financial forecasts is crucial in evaluating tech stocks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Engineering Jobs Thrive Despite AI Layoff Fears",
+            "title": "Engineering Roles Prove Resilient Amid AI-Driven Layoff Trends",
+            "content": "Contrary to fears that AI would eliminate engineering jobs, new data from SignalFire indicates that engineers are increasingly in demand. Despite widespread narratives of AI-induced layoffs, engineers are securing a larger share of new hires. This trend suggests that engineering skills remain crucial in the evolving tech landscape, particularly as companies integrate AI into their operations. Tech professionals should focus on enhancing their engineering competencies to remain competitive in the job market. The data underscores the resilience of technical roles in the face of automation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Google Loses Top AI Talent to Anthropic",
+            "title": "Google Faces AI Talent Exodus as Researchers Move to Anthropic",
+            "content": "Google continues to lose top AI researchers, with Jonas Adler and Alexander Pritzel departing for Anthropic. This follows previous exits by notable scientists Noam Shazeer and John Jumper. The trend highlights a competitive landscape for AI talent, as companies like Anthropic attract experts with innovative projects and research opportunities. Google's challenge in retaining talent may impact its AI research capabilities. Organizations should prioritize talent retention strategies to maintain competitive advantage in AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Companies Curb AI Budget Overuse—Token Rationing Begins",
+            "title": "Businesses Implement AI Budget Controls to Prevent Token Overuse",
+            "content": "Organizations are increasingly implementing measures to prevent employees from exhausting AI budgets on minor tasks, marking a shift from tokenmaxxing to token rationing. As AI tools become integral to business operations, managing costs associated with AI usage is crucial. Companies are developing strategies to allocate AI resources more efficiently, ensuring that budgets are used for high-impact projects. Tech leaders should evaluate their AI spending practices to optimize resource allocation and prevent budget overruns. This trend reflects the growing need for cost-effective AI management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Congresswoman Clarifies AI Use in Defense Bill Amendment",
+            "title": "Rep. Luna Denies AI Drafting of Defense Funding Amendment",
+            "content": "Rep. Anna Paulina Luna (R-FL) clarified that AI was used only for spellchecking in an amendment summary for a defense funding bill, not for drafting the bill itself. This statement came after social media speculation suggested AI involvement in legislative drafting. Luna emphasized that no legislation is ever drafted with AI, addressing concerns about AI's role in government processes. Lawmakers and tech professionals should be aware of the boundaries of AI use in legislative contexts to maintain transparency and trust.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Facebook Tests AI App for Content Creators",
+            "title": "Facebook Launches AI Companion App for Enhanced Creator Experience",
+            "content": "Facebook has introduced a new AI companion app for content creators, currently in testing with select users. The app integrates Facebook's AI creator assistant, offering tools to streamline content production and enhance creative workflows. This development aligns with Facebook's strategy to support creators with advanced AI tools, potentially increasing engagement and content quality. Creators and tech professionals should explore the app's capabilities to leverage AI in content creation. The move underscores the growing role of AI in social media platforms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Figma Update Adds AI, Motion Graphics, and Code Layers",
+            "title": "Figma Enhances Design Platform with AI, Animation, and Coding Features",
+            "content": "Figma's latest update introduces AI-driven features, including code layers, motion graphics, and shader support, aimed at empowering designers. The new capabilities allow for the creation of custom plug-ins and more dynamic design elements, enhancing the platform's versatility. These updates reflect Figma's commitment to integrating AI into design workflows, offering tools that automate repetitive tasks and foster creativity. Designers and developers should explore these features to optimize their design processes. The update positions Figma as a leader in AI-enhanced design solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 24 2026",
             "headline": "Google Home Speaker—Great Sound, But Finicky Performance",
@@ -201,15 +291,6 @@ const websiteContent = {
             "content": "OpenAI has announced a new initiative aimed at bolstering the security of open-source software by identifying and patching vulnerabilities. Leveraging AI, this effort seeks to assist developers in safeguarding their projects against potential exploits. The initiative underscores the growing importance of AI in cybersecurity, particularly as open-source software becomes increasingly integral to various industries. Developers are encouraged to participate and integrate these tools to enhance their security posture. This move positions OpenAI as a key player in the intersection of AI and cybersecurity.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "SpaceX and Reflection AI Ink $150M Monthly Deal",
-            "title": "SpaceX Partners with Reflection AI for Advanced AI Chip Access",
-            "content": "SpaceX has secured a lucrative deal with Reflection AI, an open-source AI lab, to provide access to Nvidia's latest GB300 AI chips. Starting July 1, 2026, Reflection AI will pay $150 million monthly for access to these cutting-edge chips housed in SpaceX's Colossus 2 data center in Tennessee. This partnership highlights the increasing demand for high-performance computing resources as AI applications continue to expand. Companies leveraging such technology can expect significant advancements in AI model training and deployment capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/",
             "relatedResources": []
         },
         {
@@ -240,15 +321,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI's Daybreak Initiative—Supporting Open Source Security",
-            "title": "OpenAI's Daybreak Initiative Aims to Secure Open Source Projects",
-            "content": "OpenAI has launched the Daybreak initiative, known as \"Patch the Planet,\" to support open-source maintainers in identifying and fixing software vulnerabilities. This initiative combines AI tools with expert reviews to enhance the security of open-source projects, which are crucial to many technological infrastructures. By addressing vulnerabilities proactively, OpenAI aims to mitigate potential security risks that could impact a wide range of industries. Open-source developers are encouraged to engage with this initiative to strengthen their security measures.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/patch-the-planet",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 23 2026",
             "headline": "Fika Jobs Raises $4M for AI-Powered Hiring Platform",
             "title": "Fika Jobs Secures Funding to Develop AI-Driven Video Hiring Platform",
@@ -264,15 +336,6 @@ const websiteContent = {
             "content": "The Fitbit Air has launched with an AI-powered health coach designed to provide personalized wellness insights. This feature evaluates users' sleep patterns, heart rate variability, and environmental factors to deliver tailored health recommendations. Despite its advanced capabilities, some users report concerns over the AI's interpretation of data, suggesting a need for further refinement. As wearable technology continues to evolve, the integration of AI offers promising potential for enhancing personal health management. Users should explore these features to optimize their wellness routines.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/tech/954768/google-fitbit-air-review-fitness-tracker-wearable-ai-health-coach",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI's GPT-5.5-Cyber—A New Era in Cybersecurity",
-            "title": "OpenAI Enhances Cybersecurity with GPT-5.5-Cyber and Patch Initiative",
-            "content": "OpenAI has unveiled GPT-5.5-Cyber, an advanced AI model focused on cybersecurity, alongside its \"Patch the Planet\" initiative. This effort aims to address vulnerabilities in open-source software, enhancing security measures across the board. By leveraging AI, OpenAI seeks to improve the identification and resolution of software bugs, a critical step in safeguarding digital infrastructures. Organizations relying on open-source solutions should consider integrating these tools to bolster their cybersecurity defenses. This development highlights the increasing role of AI in maintaining secure systems.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
             "relatedResources": []
         },
         {
@@ -300,69 +363,6 @@ const websiteContent = {
             "content": "Anthropic has introduced Claude Tag, an AI-powered feature for Slack that acts as an always-on digital teammate. This integration aims to capture and utilize organizational context and institutional knowledge, streamlining enterprise workflows. By learning from Slack messages, Claude Tag can assist in task management and decision-making processes, offering a strategic advantage to businesses. This development highlights the increasing role of AI in workplace productivity tools. Organizations using Slack should consider integrating Claude Tag to leverage AI for improved operational efficiency.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "GPT-5 Solves Immunology Mystery, Aids Cancer Research",
-            "title": "GPT-5 Pro Breakthrough in T Cell Behavior Advances Medical Research",
-            "content": "GPT-5 Pro has been instrumental in resolving a three-year-old immunology mystery, providing critical insights into T cell behavior. This breakthrough has significant implications for cancer and autoimmune disease research, potentially accelerating the development of new treatments. The advanced capabilities of GPT-5 Pro demonstrate the transformative potential of AI in scientific research, particularly in complex fields like immunology. Researchers and medical professionals should explore AI tools like GPT-5 Pro to enhance their investigative processes and uncover new medical insights.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-immunology-mystery",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "OpenAI Pushes for Global AI Standards with Appia Foundation",
-            "title": "OpenAI Collaborates on Shared Standards for Advanced AI Development",
-            "content": "OpenAI is actively contributing to the establishment of shared standards for advanced AI through its collaboration with the Appia Foundation. This initiative focuses on creating evaluation frameworks, safety practices, and fostering global cooperation in AI development. By promoting standardized practices, OpenAI aims to ensure the safe and ethical advancement of AI technologies. This effort is crucial as AI systems become more integrated into various sectors, necessitating consistent guidelines to mitigate risks. Stakeholders in AI development should engage with these standards to align with best practices and ensure responsible innovation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Nvidia's Hotter Data Centers Slash Water Use",
-            "title": "Nvidia's Liquid-Cooled Data Centers Reduce Water and Power Consumption",
-            "content": "Nvidia has unveiled a new data center design, the Rubin generation, which employs full liquid cooling to significantly reduce water and power usage. This innovation addresses public concerns about the environmental impact of data centers, particularly their high resource consumption. By eliminating substantial water use, Nvidia's design sets a new benchmark for sustainable data center operations. However, the broader challenge of AI's water consumption, especially from fossil fuel power plants, remains unresolved. Data center operators should consider adopting similar technologies to enhance sustainability.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/954139/nvidia-data-centers-rubin-liquid-cooling",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Groq Secures $650M Post-Nvidia Deal, Expands Neocloud Business",
-            "title": "Groq Raises $650M, Rebuilds After Nvidia's Not-Acqui-Hire Deal",
-            "content": "AI chipmaker Groq has confirmed a $650 million funding round following Nvidia's decision not to acquire the company. This capital injection will support Groq's expansion into its neocloud business and the hiring of new executives. The move signifies Groq's resilience and strategic pivot in the competitive AI hardware market. As the demand for specialized AI chips grows, Groq's focus on neocloud solutions positions it to capitalize on emerging opportunities. Industry professionals should monitor Groq's developments as it navigates this new phase of growth.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "Nvidia's Cooling System Cuts Data Center Water Use",
-            "title": "Nvidia Introduces Cooling System to Reduce Data Center Water Consumption",
-            "content": "Nvidia has announced a new cooling system designed to decrease water usage within data centers. While this innovation addresses internal water consumption, it does not tackle the larger issue of water use by fossil fuel power plants that supply energy to these centers. Nvidia's initiative highlights the ongoing efforts to improve the sustainability of AI infrastructure. However, comprehensive solutions are needed to address the broader environmental impact of AI technologies. Stakeholders should consider holistic approaches to sustainability in AI operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "AI Misleads Renters with Unrealistic Housing Promises",
-            "title": "AI-Driven Housing Searches Frustrate Renters with Unrealistic Expectations",
-            "content": "AI algorithms in real estate platforms are creating challenges for renters by presenting misleading housing options. In New York City, renters like Joyce are finding it difficult to secure affordable apartments due to AI-generated listings that promise ideal homes but fail to meet realistic expectations. This issue underscores the need for improved accuracy and transparency in AI-driven real estate tools. Renters should approach AI-generated listings with caution and verify details through traditional methods. Real estate platforms must enhance their algorithms to provide more reliable information.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/953888/ai-virtual-staging-real-estate-apartment-listings",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 22 2026",
-            "headline": "TechCrunch Founder Summit Pass Rates Rise June 26",
-            "title": "Last Chance for Discounted Passes to TechCrunch Founder Summit 2026",
-            "content": "TechCrunch is offering discounted passes to its Founder Summit 2026, with rates increasing after June 26th. The event, scheduled for November 4th in Boston, is designed to support founders with growth-focused sessions and networking opportunities. Attendees can save up to $190 by securing their passes before the deadline. This summit represents a valuable opportunity for tech entrepreneurs to gain insights and connect with industry leaders. Founders should register promptly to take advantage of the reduced rates and ensure their participation in this influential event.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/22/the-founder-conference-built-for-growth-techcrunch-founder-summit-pass-rates-increase-june-26/",
             "relatedResources": []
         }
     ],
@@ -490,17 +490,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20253",
-            "dateAdded": "Jun 18, 2026",
-            "vendor": "Splunk Enterprise",
-            "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar ser",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20253",
             "isZeroDay": false
         }
     ],
