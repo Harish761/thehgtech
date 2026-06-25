@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1554",
+      "incident_id": 1554,
+      "title": "NewsBreak Reportedly Published AI-Assisted Articles Containing Purportedly False Local and Community",
+      "date": "2026-06-25",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-43",
       "incident_id": 43,
       "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
@@ -2530,9 +2538,9 @@
     }
   ],
   "stats": {
-    "total": 316,
-    "last7Days": 32,
-    "last30Days": 182
+    "total": 317,
+    "last7Days": 33,
+    "last30Days": 183
   },
-  "lastUpdated": "2026-06-25T20:20:28.293382+05:30"
+  "lastUpdated": "2026-06-25T23:52:22.790743+05:30"
 }
