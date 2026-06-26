@@ -2529,14 +2529,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1432",
-      "incident_id": 1432,
-      "title": "Purported Pornographic Deepfakes and Fake Accounts Reportedly Impersonated German TV Presenter and A",
-      "date": "2026-03-28",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1433",
       "incident_id": 1433,
       "title": "Google Antigravity Reportedly Deleted User's Entire D: Drive While Clearing Project Cache",
@@ -2546,9 +2538,9 @@
     }
   ],
   "stats": {
-    "total": 318,
+    "total": 317,
     "last7Days": 25,
     "last30Days": 186
   },
-  "lastUpdated": "2026-06-26T16:42:20.997272+05:30"
+  "lastUpdated": "2026-06-26T20:12:13.836584+05:30"
 }
