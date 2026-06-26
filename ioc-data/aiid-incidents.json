@@ -2529,22 +2529,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1430",
-      "incident_id": 1430,
-      "title": "Anthropic's Claude Was Reportedly Jailbroken To Allegedly Help Steal Sensitive Mexican Government Da",
-      "date": "2026-03-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1431",
-      "incident_id": 1431,
-      "title": "Google Gemini Reportedly Reinforced Delusions,  Allegedly Contributing to Florida User's Near-Harm E",
-      "date": "2026-03-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1432",
       "incident_id": 1432,
       "title": "Purported Pornographic Deepfakes and Fake Accounts Reportedly Impersonated German TV Presenter and A",
@@ -2562,9 +2546,9 @@
     }
   ],
   "stats": {
-    "total": 320,
+    "total": 318,
     "last7Days": 25,
     "last30Days": 186
   },
-  "lastUpdated": "2026-06-26T03:20:51.481625+05:30"
+  "lastUpdated": "2026-06-26T10:05:59.882334+05:30"
 }
