@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1558",
+      "incident_id": 1558,
+      "title": "Sullivan & Cromwell Reportedly Filed Emergency Bankruptcy Motion Containing AI-Generated Legal Error",
+      "date": "2026-06-26",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1554",
       "incident_id": 1554,
       "title": "NewsBreak Reportedly Published AI-Assisted Articles Containing Purportedly False Local and Community",
@@ -2530,9 +2538,9 @@
     }
   ],
   "stats": {
-    "total": 316,
-    "last7Days": 25,
-    "last30Days": 186
+    "total": 317,
+    "last7Days": 12,
+    "last30Days": 187
   },
-  "lastUpdated": "2026-06-26T23:30:40.241087+05:30"
+  "lastUpdated": "2026-06-27T01:48:12.201871+05:30"
 }
