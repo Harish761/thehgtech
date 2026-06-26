@@ -895,6 +895,25 @@
       "Description": "In May 2022, the Australian retailer <a href=\"https://www.ozbargain.com.au/node/701231\" target=\"_blank\" rel=\"noopener\">Amart Furniture advised that their warranty claims database hosted on Amazon Web Services had been the target of a cyber attack</a>. Over 100k records containing email and physical address, names, phone numbers and passwords stored as bcrypt hashes were exposed and shared online by the attacker."
     }
   ],
+  "americantower.com": [
+    {
+      "Name": "AmericanTower",
+      "Title": "American Tower",
+      "BreachDate": "2026-06-12",
+      "AddedDate": "2026-06-26T07:17:23Z",
+      "PwnCount": 216601,
+      "DataClasses": [
+        "Email addresses",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, telecommunications tower infrastructure company <a href=\"https://x.com/H4ckmanac/status/2065383723739046213\" target=\"_blank\" rel=\"noopener\">American Tower was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data allegedly taken from the company containing more than 200k unique email addresses belonging to employees, contractors, customers, and leads. Exposed data also included names, addresses, and phone numbers."
+    }
+  ],
   "ameriprise.com": [
     {
       "Name": "Ameriprise",
