@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-06-25T16:40:35.321101",
-  "total_incidents": 28978,
+  "last_updated": "2026-06-26T06:34:42.029313",
+  "total_incidents": 28983,
   "incidents": [
+    {
+      "id": "prinzeugen_prinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion_[new_leak_posted_on_our_new...",
+      "victim_name": "prinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion [NEW LEAK POSTED ON OUR NEW...",
+      "threat_actor": "PrinzEugen",
+      "date_discovered": "2026-06-26T03:20:50.471732+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "VISIT THE NEW SITE! \n\nprinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion\nprinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion\nprinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion\nprinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid.onion",
+      "screenshot": "",
+      "url": "http://prinzfkbjiazbrur4mjje6mntjc4vydx3iatkkzycufoylqcoo4y7pqd.onion/prinzkpn6d3itrgcytmsmlcpt5mgwn3ihpck2hsed5cezlbtbi3wklid-onion-new-leak-posted-on-our-new-site",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_life_bridges",
+      "victim_name": "Life Bridges",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-06-25T23:23:37.065565+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Life Bridges is a non-profit organization dedicated to supporting individuals with intellectual and developmental disabilities, providing a range of services including residential support, healthcare, and community living services. Established in 1973, the organization focuses on promoting independence and dignity for its clients through tailored support and therapeutic services. Their intended clients include individuals with various developmental disabilities, as well as their families, ensuring a holistic approach to care and community involvement. Life Bridges is committed to bridging the gap between abilities and disabilities, fostering an inclusive environment where all individuals can thrive.",
+      "screenshot": "https://images.ransomware.live/victims/f0b6bc1e2c1ae1f92ff1be3a3b7eb8d2.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a3db3e25ae71db30ca592ca",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_gsp_crop_science_pvt",
+      "victim_name": "GSP Crop Science Pvt",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-06-25T23:23:07.037290+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "GSP Crop Science Limited is a leader in agricultural innovation, specializing in crop science and sustainable farming solutions. The company offers a wide range of products including pesticides, herbicides, fungicides, and plant growth regulators, designed to enhance crop productivity while minimizing environmental impact. Their target clients include farmers and agricultural businesses seeking effective and reliable crop protection solutions. With a strong commitment to research and development, GSP aims to revolutionize agriculture and support farmers in achieving high-quality, healthy crops.",
+      "screenshot": "https://images.ransomware.live/victims/16bfcecda3cf8698c148c6efa5c862a2.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a3db5855ae71db30ca5c454",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_politur.gob.do",
+      "victim_name": "politur.gob.do",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-06-25T20:55:07.262015+00:00",
+      "industry": "Public Sector",
+      "website": "politur.gob.do",
+      "claim": "POLITUR (Dirección Central de Policía de Turismo / Central Directorate of Tourism Police), now also known as CESTUR (C...",
+      "screenshot": "https://images.ransomware.live/victims/571177e9a2f05d49645e66c3347f7d7b.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/d88d515b44dfd3f7981c18c8e141afa24f9a2f386fdaf5a037537972b13471fb/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_nachlass_nord",
+      "victim_name": "Nachlass Nord",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-06-25T17:50:46.039899+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Inheritance lawyers expose IDs, estate records, and client data.",
+      "screenshot": "https://images.ransomware.live/victims/c3dd17dbe99479ab91d4ce773e3ae9da.png",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/LV3JnAvP7UF858HMgd4nhEO2w6rZhz9w5DmLG5ET97jvSkg6153agbooFxgyRTuRERaXSA7N2z750z7VTC9T0dTWW9rMDds",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "interlock_clearview_eye_centre",
       "victim_name": "Clearview Eye Centre",
