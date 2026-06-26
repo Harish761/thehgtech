@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 25 2026",
+            "headline": "Gaslight Malware Targets AI—Confuses Analysis Tools",
+            "title": "New macOS Malware \"Gaslight\" Embeds Fake Errors to Mislead AI",
+            "content": "A newly identified macOS malware, dubbed \"Gaslight,\" is specifically designed to thwart AI-assisted malware analysis tools. By embedding prompt injection strings and fake debugging data within its executable, Gaslight aims to mislead and confuse automated analysis systems. This sophisticated tactic could lead to delayed detection and increased risk for macOS users. Security professionals should be aware of this evolving threat and ensure that their analysis tools are updated to recognize such deceptive techniques. The emergence of Gaslight highlights the growing trend of malware developers targeting AI systems directly.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Cisco SD-WAN Zero-Day Exploited—Root Access Gained",
+            "title": "Cisco Catalyst SD-WAN Zero-Day CVE-2026-20245 Exploited for Root Access",
+            "content": "A critical zero-day vulnerability in Cisco Catalyst SD-WAN, tracked as CVE-2026-20245, has been exploited by an unknown threat actor to gain root access. This high-severity flaw, with a CVSS score of 7.8, was used in attacks at least two months before its public disclosure. The vulnerability affects systems running specific versions of Cisco Catalyst SD-WAN, posing significant risks to enterprises relying on this technology for secure network management. Organizations using affected versions should prioritize patching to mitigate potential exploitation. This incident underscores the importance of timely vulnerability management in network infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "AI Agent Traps—New Attack Surface Exploited",
+            "title": "Understanding AI Agent Traps as Information Becomes the Attack Surface",
+            "content": "Attackers are increasingly turning trusted data sources into traps for autonomous AI systems, employing tactics such as hidden content injections and cognitive state poisoning. These AI agent traps exploit the reliance of AI on data integrity, potentially leading to compromised decision-making processes. As AI systems become more integrated into critical operations, understanding these vulnerabilities becomes crucial for security professionals. Organizations should enhance their data validation processes and monitor for unusual AI behavior to mitigate these risks. This trend highlights the evolving nature of threats in the AI landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/when-information-becomes-the-attack-surface-understanding-ai-agent-traps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cisco Unified CM Flaw—Path to Root Exploited",
+            "title": "Cisco Unified CM Vulnerability CVE-2026-20230 Exploited for Root Access",
+            "content": "Threat actors are exploiting a critical vulnerability in Cisco Unified Communications Manager (Unified CM) and its Session Management Edition (Unified CM SME), identified as CVE-2026-20230. This flaw, with a CVSS score of 8.6, allows attackers to write files to paths that lead to root access. The exploitation follows the release of a proof-of-concept (PoC) that detailed the vulnerability. Organizations using these Cisco systems should apply patches immediately to prevent unauthorized access and potential data breaches. This incident highlights the critical need for rapid response to disclosed vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Police Collusion Hampers Asian Scam Center Crackdown",
+            "title": "Local Police Collusion Impedes Efforts Against Asian Scam Centers",
+            "content": "Efforts to dismantle scam centers in Asia are being undermined by local police collusion, despite international and law enforcement initiatives. These centers are responsible for funneling tens of billions of dollars into regional economies through cybercrime activities. The complicity of local authorities presents a significant challenge to global cybersecurity efforts, allowing these operations to continue thriving. This situation calls for increased international cooperation and pressure to address corruption and enhance enforcement actions. The persistence of these scam centers underscores the complexity of combating cybercrime on a global scale.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/police-collusion-crackdown-asian-scam-centers",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Parcel Mule Scams—Beware Fake Job Offers",
+            "title": "\"Parcel Expert\" Job Offers Are Fronts for Parcel Mule Scams",
+            "content": "Scammers are luring victims with fake job offers for \"Parcel Expert\" positions, which are actually fronts for parcel mule scams. These scams trick individuals into handling and forwarding stolen goods, often under the guise of legitimate employment. Victims may unknowingly become part of criminal operations, facing legal consequences. To protect against such schemes, individuals should verify the legitimacy of job offers and be cautious of roles involving package handling. This trend highlights the need for increased awareness and vigilance against evolving scam tactics.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/06/beware-of-parcel-expert-job-offers-theyre-parcel-mule-scams",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Shop App Misused—Phishing Attacks on the Rise",
+            "title": "Order-Tracking App Shop Abused for Callback Phishing Attacks",
+            "content": "Threat actors are exploiting the Shop order-tracking app from Shopify to conduct callback phishing attacks. By inserting fake purchase receipts into users' order histories, attackers trick victims into divulging sensitive information or installing remote access software. This misuse of a trusted app highlights the growing sophistication of phishing tactics and the importance of scrutinizing unexpected order notifications. Users should verify purchase details directly through official channels and be wary of unsolicited communications. This incident underscores the need for enhanced security measures in e-commerce platforms.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Windows 10 ESU Extended to 2027—Free Support Continues",
+            "title": "Microsoft Extends Free Windows 10 ESU Support to October 2027",
+            "content": "Microsoft has quietly extended its free Windows 10 Extended Security Updates (ESU) program until October 12, 2027. This extension allows enrolled devices to continue receiving critical security updates, providing an additional year of support beyond the original end date. The move benefits consumers and businesses relying on Windows 10, ensuring ongoing protection against vulnerabilities. Users should ensure their devices are enrolled in the ESU program to receive these updates. This extension reflects Microsoft's commitment to maintaining security for its user base amid ongoing threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-quietly-extends-free-windows-10-esu-support-to-october-2027/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Operation Endgame Disrupts Amadey, StealC Malware",
+            "title": "Amadey and StealC Malware Operations Disrupted in Global Crackdown",
+            "content": "In a coordinated effort, Microsoft, Europol, and international partners have disrupted the infrastructure supporting the Amadey and StealC malware operations. This action, part of Operation Endgame, targets cybercriminal services and ransomware gangs, aiming to dismantle their networks. The disruption of these operations marks a significant victory in the fight against cybercrime, impacting the distribution of malware and ransomware globally. Organizations should remain vigilant and update their security measures to protect against potential resurgence. This operation highlights the effectiveness of international collaboration in combating cyber threats.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Cal Water Confirms No Breach in Handala Cyberattack",
+            "title": "Cal Water Reports No OT Systems Breached in Handala Cyberattack",
+            "content": "California water utility Cal Water has confirmed that its operational technology (OT) systems were not breached during a cyberattack by the Iranian hacker group Handala. Mandiant assisted in the investigation, ensuring that critical infrastructure remained secure. This reassurance comes amid growing concerns over cyber threats targeting essential services. Organizations in the utility sector should continue to strengthen their cybersecurity defenses to prevent potential breaches. The incident underscores the importance of robust security measures and timely incident response in protecting critical infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cal-water-finds-no-evidence-of-ot-activity-after-hackers-claimed-they-could-disrupt-water-supply/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
             "headline": "Lantronix Converter Flaw Exploited—Patch CVE-2025-67038 Now",
             "title": "Lantronix Serial-to-IP Converter Vulnerability Exploited in Active Attacks",
             "content": "A critical flaw in Lantronix Serial-to-IP converters, identified as CVE-2025-67038, is being actively exploited following its disclosure in April through the BRIDGE:BREAK research project. This vulnerability allows attackers to compromise operational technology (OT) environments, posing significant risks to industrial control systems. The flaw affects devices that convert serial data to IP, a common setup in industrial networks. Organizations using these converters should prioritize patching to mitigate potential disruptions. The exploitation of this vulnerability underscores the increasing targeting of OT systems by cyber adversaries.",
@@ -46,15 +136,6 @@ const websiteContent = {
             "content": "A zero-day vulnerability in Cisco SD-WAN, tracked as CVE-2026-20245, was exploited by threat actors months before its public disclosure and patching. This marks the seventh Cisco SD-WAN vulnerability exploited in 2026, highlighting the persistent targeting of Cisco's network solutions. The flaw allowed attackers to gain unauthorized access, posing risks to enterprise networks relying on SD-WAN for secure connectivity. Organizations using Cisco SD-WAN should apply the latest patches and review their network security measures to mitigate potential threats.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 23 2026",
-            "headline": "Xolis Data Breach—1.4M Affected in Phishing Attack",
-            "title": "Xolis Data Breach Compromises 1.4 Million Individuals' Data",
-            "content": "Healthcare technology firm Xolis has suffered a data breach impacting 1.4 million individuals, following a successful phishing attack that granted attackers network access. The breach exposed sensitive personal and medical information, raising concerns over data privacy and security in the healthcare sector. Xolis is working with cybersecurity experts to investigate the breach and enhance its security measures. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity protection services.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
             "relatedResources": []
         },
         {
@@ -101,97 +182,97 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Edgecution Extension—Ransomware Attack via Native Messaging",
-            "title": "Malicious Edge Extension 'Edgecution' Abuses Native Messaging for Malware Deployment",
-            "content": "A malicious Microsoft Edge extension named 'Edgecution' has been identified as a tool in a ransomware attack, leveraging Native Messaging to bypass browser sandboxing. This technique allowed attackers to deploy a Python-based backdoor, compromising system security. The extension's misuse highlights vulnerabilities in browser extension ecosystems, particularly in how they interact with native applications. Security professionals should review and restrict browser extension permissions to prevent similar exploits. This incident emphasizes the need for heightened vigilance in managing browser-based threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "CISA Alerts—Lantronix EDS5000 Flaw Actively Exploited",
-            "title": "CISA Warns of Active Exploitation of Lantronix EDS5000 Vulnerability",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued a warning about the active exploitation of a critical vulnerability in Lantronix EDS5000 Series devices. The flaw, which allows unauthorized access, is being targeted by attackers, prompting CISA to urge Federal Civilian Executive Branch agencies to apply patches by June 26, 2026. This vulnerability poses significant risks to network security, especially for organizations relying on these devices for data communication. Immediate action is recommended to secure affected systems and prevent potential breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Mistic Backdoor—Ransomware Broker's New Tool",
-            "title": "Mistic Backdoor Linked to Ransomware Broker's Network Intrusions",
-            "content": "Symantec researchers have uncovered a new backdoor, dubbed Mistic, used by an initial access broker to facilitate ransomware attacks. Active since April, Mistic has been deployed in enterprise networks, providing footholds for ransomware gangs. This discovery highlights the evolving tactics of cybercriminals, who increasingly rely on specialized tools to breach corporate defenses. Organizations should enhance their network monitoring and incident response capabilities to detect and mitigate such threats. The emergence of Mistic underscores the growing sophistication of ransomware operations.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4189132/be-on-the-lookout-for-mistic-a-new-backdoor-used-by-ransomware-broker.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "PixelSmash Flaw—Video Files as Attack Vectors",
-            "title": "Critical FFmpeg Vulnerability Allows Video Files to Compromise Systems",
-            "content": "Researchers have identified a critical vulnerability in FFmpeg, a widely-used multimedia framework, that allows attackers to exploit malicious video files to compromise systems. This flaw, known as PixelSmash, poses a significant risk to applications relying on FFmpeg for video processing. The vulnerability could be leveraged to execute arbitrary code, highlighting the importance of securing multimedia processing pipelines. Developers and system administrators should prioritize patching affected systems and consider implementing additional security measures to protect against such exploits.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/pixelsmash-flaw-turns-video-files-into-attack-tools",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Amadey, StealC Networks Disrupted—27M Credentials Recovered",
-            "title": "Law Enforcement Operation Disrupts Amadey and StealC Malware Networks",
-            "content": "A coordinated effort by law enforcement and private sector partners, including Bitdefender and Microsoft, has dismantled the infrastructure behind the Amadey and StealC malware operations. This operation, part of a broader initiative to combat cybercrime, resulted in the recovery of 27 million stolen credentials. The takedown disrupts the 'assembly lines' of cybercriminals, significantly impacting their ability to conduct malicious activities. Organizations should remain vigilant and ensure their systems are protected against similar threats. This success demonstrates the power of collaboration in combating cybercrime.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Google Enhances Privacy—New Controls for Search and Play",
-            "title": "Google Introduces New Privacy Controls for Search and Google Play",
-            "content": "Google has announced new privacy controls for its Search services and Google Play, providing users with greater control over their saved history and personalized recommendations. These enhancements aim to improve user privacy by allowing more granular management of activity data. The update reflects Google's ongoing commitment to privacy and data protection, addressing growing concerns over user data handling. Users are encouraged to review and adjust their privacy settings to take advantage of these new controls. This development highlights the tech industry's focus on enhancing user privacy.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/google/google-releases-new-privacy-controls-for-activity-history-personalization/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "DraftKings Hacker 'Snoopy'—18-Month Prison Sentence",
-            "title": "DraftKings Hacker 'Snoopy' Sentenced for 2022 Cyberattack",
-            "content": "A 21-year-old hacker, known by the alias \"Snoopy,\" has been sentenced to 18 months in prison for his involvement in hacking DraftKings accounts during a November 2022 cyberattack. The attack compromised numerous user accounts, leading to unauthorized transactions and significant financial losses. This sentencing serves as a warning to cybercriminals about the legal consequences of such activities. Organizations should continue to enhance their security measures to protect against account takeovers. The case underscores the importance of robust cybersecurity practices in safeguarding user data.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Microsoft, Europol Dismantle Amadey, StealC Malware Networks",
-            "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
-            "content": "In a significant cybersecurity operation, Microsoft, Europol, and other international partners have dismantled the command-and-control (C&C) infrastructure of the Amadey and StealC malware networks. This collaborative effort disrupted hundreds of C&C servers, significantly impairing the operational capabilities of these malware families. Amadey and StealC have been notorious for facilitating cybercriminal activities, including data theft and ransomware distribution. The operation, part of a broader initiative to combat cybercrime, underscores the importance of international cooperation in tackling complex cyber threats. Organizations are advised to review their security postures and ensure systems are updated to mitigate potential risks from similar threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cordyceps Flaws Threaten 300+ GitHub Repositories",
-            "title": "Cordyceps CI/CD Flaws Expose 300+ GitHub Repositories to Supply-Chain Attacks",
-            "content": "A newly identified class of CI/CD workflow vulnerabilities, dubbed \"Cordyceps\" by Novee Security, has exposed over 300 GitHub repositories to potential supply-chain attacks. These critical flaws allow attackers to hijack workflows, granting them full control over repositories and the ability to inject malicious code. The vulnerabilities highlight ongoing risks in open-source software supply chains, where even minor flaws can have widespread impacts. Developers and organizations using affected repositories are urged to audit their CI/CD configurations and implement recommended security patches to prevent exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI's Patch the Planet Aids Open Source Security",
-            "title": "OpenAI Launches Patch the Planet to Support Open Source Maintainers",
-            "content": "OpenAI has introduced \"Patch the Planet,\" a Daybreak initiative aimed at assisting open-source maintainers in identifying, validating, and fixing vulnerabilities. This initiative leverages AI technology alongside expert reviews to enhance the security of open-source projects. The program addresses the growing concern over the security of open-source software, which forms the backbone of much of today's digital infrastructure. By providing tools and resources, OpenAI aims to mitigate risks associated with unpatched vulnerabilities that could be exploited by malicious actors. This effort underscores the importance of collaborative security measures in the open-source community.",
+            "date": "Jun 24 2026",
+            "headline": "Google Home Speaker: Great Sound, Finicky Performance",
+            "title": "Google Home Speaker Delivers Quality Sound but Faces Usability Challenges",
+            "content": "The new Google Home Speaker impresses with its sound quality and sleek design, but users report finicky performance in real-world use. Despite its ability to quickly respond to voice commands even at maximum volume, the device's three microphones occasionally struggle with ambient noise. This issue could affect user satisfaction, especially in noisy environments. The speaker's design and audio capabilities stand out, but Google may need to address these performance inconsistencies in future updates. Users are advised to consider their environment before purchasing to ensure optimal functionality.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Trump Administration Delays OpenAI's GPT-5.6 Release",
+            "title": "OpenAI Postpones GPT-5.6 Launch Following Government Request",
+            "content": "OpenAI has postponed the release of its anticipated GPT-5.6 model after a request from the Trump administration, citing potential security concerns. CEO Sam Altman informed employees that the model would initially be available only to select partners. This decision reflects growing governmental scrutiny over AI advancements and their implications for national security. The delay underscores the balancing act between innovation and regulation in AI development. Stakeholders should monitor further announcements from OpenAI regarding the model's availability and potential impact on AI applications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Patronus AI Secures $50M to Test AI Agents in Digital Worlds",
+            "title": "Patronus AI Raises $50M to Develop AI Agent Stress-Testing Platforms",
+            "content": "Patronus AI, a startup focused on testing AI agents in simulated digital environments, has secured $50 million in funding. Founded by former Meta AI researchers, the company aims to meet the increasing demand for robust AI agent testing. These digital worlds allow for comprehensive stress-testing, ensuring AI systems can handle complex real-world scenarios. Investors are optimistic about the potential applications in various industries, from autonomous vehicles to virtual assistants. Companies developing AI agents should consider integrating such testing to enhance reliability and performance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Anthropic Demands Penalties for Alibaba's Claude Cloning Attack",
+            "title": "Anthropic Accuses Alibaba of Massive Claude Cloning Operation",
+            "content": "Anthropic has accused Alibaba of conducting the largest known attack on its Claude AI model, using 25,000 accounts to mine data from 28.8 million exchanges. This alleged cloning effort raises significant intellectual property and security concerns. Anthropic is calling for punitive measures against Alibaba to deter future incidents. The attack highlights vulnerabilities in AI model protection and the need for stronger safeguards. Companies utilizing AI models should review their security measures to prevent unauthorized data extraction and cloning.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Anthropic's Claude Gains Ground on ChatGPT in Paid Market",
+            "title": "Claude AI Surges in Popularity Among Paying Consumers",
+            "content": "Anthropic's Claude AI is gaining traction among paying consumers, challenging ChatGPT's dominance in the AI market. Recent data indicates a shift in consumer preference, with more users opting for Claude's capabilities. This trend suggests a growing demand for diverse AI solutions tailored to specific needs. As competition intensifies, developers and businesses should evaluate the strengths of different AI models to optimize their offerings. The rise of Claude underscores the importance of innovation and differentiation in the AI landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "General Intuition Invests $2.3B in AI Training via Video Games",
+            "title": "General Intuition Raises $320M to Train AI with Gameplay Data",
+            "content": "General Intuition has raised $320 million to advance its AI training initiatives using video game data, part of a broader $2.3 billion investment strategy. By leveraging millions of hours of gameplay, the company aims to develop AI systems with enhanced human-like intuition. This approach could revolutionize AI training, offering more nuanced and adaptable models. The gaming industry and AI developers alike should watch for breakthroughs that could influence AI training methodologies. This investment highlights the potential of unconventional data sources in AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Former Databricks AI Chief Aims to Slash AI Power Use by 1,000x",
+            "title": "Un-0 Tool Promises Drastic Reduction in AI Energy Consumption",
+            "content": "A former AI chief from Databricks has unveiled Un-0, a tool designed to cut AI energy consumption by up to 1,000 times. This image-generation system demonstrates how the company's technology can replicate traditional AI systems with significantly lower power requirements. If successful, this innovation could lead to more sustainable AI operations, reducing environmental impact and operational costs. AI developers and enterprises should explore integrating such energy-efficient solutions to enhance sustainability. The move aligns with growing industry emphasis on eco-friendly technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "White House Urges Caution on OpenAI's GPT-5.6 Rollout",
+            "title": "OpenAI to Limit GPT-5.6 Release Amid Safety Concerns",
+            "content": "The White House has advised OpenAI to slow the release of its GPT-5.6 model due to safety concerns, prompting the company to restrict initial access to select partners. This cautious approach reflects heightened awareness of AI's potential risks and the need for responsible deployment. The decision may influence other AI developers to adopt similar measures, balancing innovation with safety. Stakeholders should remain informed about regulatory developments affecting AI model releases. This situation underscores the critical role of governance in AI advancement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "AI Agents Revolutionize Workflows, Boosting Productivity",
+            "title": "OpenAI Study Highlights AI Agents' Impact on Work Transformation",
+            "content": "A recent OpenAI research paper reveals how AI agents are transforming workplace productivity by enabling longer and more complex tasks. These agents enhance efficiency across various roles, allowing for more sophisticated task management. The findings suggest significant potential for AI to reshape traditional workflows, offering competitive advantages to early adopters. Businesses should consider integrating AI agents to optimize operations and remain competitive. This development highlights the ongoing evolution of AI's role in professional environments.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "sourceUrl": "https://openai.com/index/how-agents-are-transforming-work",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "OpenAI and Broadcom Debut LLM-Optimized Chip for AI Inference",
+            "title": "Jalapeño Chip Enhances AI Inference Performance and Efficiency",
+            "content": "OpenAI and Broadcom have introduced Jalapeño, a custom chip designed to optimize large language model (LLM) inference. This chip aims to improve performance, efficiency, and scalability across AI systems, addressing key challenges in AI deployment. By enhancing inference capabilities, Jalapeño could significantly reduce operational costs and improve AI application responsiveness. AI developers and enterprises should evaluate the potential benefits of integrating this chip into their infrastructure. This collaboration underscores the importance of hardware innovation in advancing AI technology.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
             "relatedResources": []
         },
         {
@@ -283,87 +364,6 @@ const websiteContent = {
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/your-enterprise-ai-agents-should-automatically-remember-which-model-is-right-for-which-task-mindstone-built-the-capability-with-rebel",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Europe Pushes Back—Limits on Chip Sales to China",
-            "title": "Europe Challenges U.S. Chip Export Restrictions to China",
-            "content": "Europe is resisting U.S. efforts to restrict chip sales to China, as highlighted by ASML CEO Christophe Fouquet. The MATCH Act aims to limit China's access to older-generation deep ultraviolet (DUV) lithography tools, which are crucial for semiconductor manufacturing. These tools, first shipped a decade ago, are now at the center of geopolitical tensions between the U.S. and Europe. European companies argue that such restrictions could harm their business interests and global competitiveness. Tech leaders should monitor this situation closely as it may impact supply chains and international collaborations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Ex-Infosys Chief Launches Startup—Targets IT Services Market",
-            "title": "Vishal Sikka's New Venture Aims to Disrupt IT Services Industry",
-            "content": "Vishal Sikka, former CEO of Infosys, has launched a new startup backed by Mayfield and Aramco Ventures, aiming to challenge the traditional IT services sector. The venture brings together industry veterans from SAP, Infosys, and VianAI, leveraging their expertise to innovate in the IT services domain. This move signifies a potential shift in how IT services are delivered, focusing on integrating advanced AI and machine learning capabilities. IT professionals should watch this development as it could redefine service delivery models and competitive dynamics in the industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cerebras Stock Dips—Earnings Report Misunderstood",
-            "title": "Cerebras Stock Falls After Misinterpreted Margin Forecast in Earnings Report",
-            "content": "Cerebras, an AI chipmaker, experienced a stock decline following its first earnings report post-IPO, due to a misunderstood margin outlook. The company projected a narrower gross margin in its core business, causing investor concern. Despite the initial negative reaction, Cerebras remains a key player in the AI hardware market, known for its cutting-edge chip designs. Investors and tech leaders should consider the long-term potential of Cerebras' technology, despite short-term market fluctuations. Understanding the nuances of financial forecasts is crucial in evaluating tech stocks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Engineering Jobs Thrive Despite AI Layoff Fears",
-            "title": "Engineering Roles Prove Resilient Amid AI-Driven Layoff Trends",
-            "content": "Contrary to fears that AI would eliminate engineering jobs, new data from SignalFire indicates that engineers are increasingly in demand. Despite widespread narratives of AI-induced layoffs, engineers are securing a larger share of new hires. This trend suggests that engineering skills remain crucial in the evolving tech landscape, particularly as companies integrate AI into their operations. Tech professionals should focus on enhancing their engineering competencies to remain competitive in the job market. The data underscores the resilience of technical roles in the face of automation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Google Loses Top AI Talent to Anthropic",
-            "title": "Google Faces AI Talent Exodus as Researchers Move to Anthropic",
-            "content": "Google continues to lose top AI researchers, with Jonas Adler and Alexander Pritzel departing for Anthropic. This follows previous exits by notable scientists Noam Shazeer and John Jumper. The trend highlights a competitive landscape for AI talent, as companies like Anthropic attract experts with innovative projects and research opportunities. Google's challenge in retaining talent may impact its AI research capabilities. Organizations should prioritize talent retention strategies to maintain competitive advantage in AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Companies Curb AI Budget Overuse—Token Rationing Begins",
-            "title": "Businesses Implement AI Budget Controls to Prevent Token Overuse",
-            "content": "Organizations are increasingly implementing measures to prevent employees from exhausting AI budgets on minor tasks, marking a shift from tokenmaxxing to token rationing. As AI tools become integral to business operations, managing costs associated with AI usage is crucial. Companies are developing strategies to allocate AI resources more efficiently, ensuring that budgets are used for high-impact projects. Tech leaders should evaluate their AI spending practices to optimize resource allocation and prevent budget overruns. This trend reflects the growing need for cost-effective AI management.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Congresswoman Clarifies AI Use in Defense Bill Amendment",
-            "title": "Rep. Luna Denies AI Drafting of Defense Funding Amendment",
-            "content": "Rep. Anna Paulina Luna (R-FL) clarified that AI was used only for spellchecking in an amendment summary for a defense funding bill, not for drafting the bill itself. This statement came after social media speculation suggested AI involvement in legislative drafting. Luna emphasized that no legislation is ever drafted with AI, addressing concerns about AI's role in government processes. Lawmakers and tech professionals should be aware of the boundaries of AI use in legislative contexts to maintain transparency and trust.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Facebook Tests AI App for Content Creators",
-            "title": "Facebook Launches AI Companion App for Enhanced Creator Experience",
-            "content": "Facebook has introduced a new AI companion app for content creators, currently in testing with select users. The app integrates Facebook's AI creator assistant, offering tools to streamline content production and enhance creative workflows. This development aligns with Facebook's strategy to support creators with advanced AI tools, potentially increasing engagement and content quality. Creators and tech professionals should explore the app's capabilities to leverage AI in content creation. The move underscores the growing role of AI in social media platforms.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Figma Update Adds AI, Motion Graphics, and Code Layers",
-            "title": "Figma Enhances Design Platform with AI, Animation, and Coding Features",
-            "content": "Figma's latest update introduces AI-driven features, including code layers, motion graphics, and shader support, aimed at empowering designers. The new capabilities allow for the creation of custom plug-ins and more dynamic design elements, enhancing the platform's versatility. These updates reflect Figma's commitment to integrating AI into design workflows, offering tools that automate repetitive tasks and foster creativity. Designers and developers should explore these features to optimize their design processes. The update positions Figma as a leader in AI-enhanced design solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-12569",
+            "dateAdded": "Jun 25, 2026",
+            "vendor": "PTC Windchill and FlexPLM",
+            "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-12569",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20230",
+            "dateAdded": "Jun 25, 2026",
+            "vendor": "Cisco Unified Communications Manager",
+            "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that c",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-67038",
             "dateAdded": "Jun 23, 2026",
