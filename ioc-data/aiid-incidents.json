@@ -2527,20 +2527,12 @@
       "date": "2026-03-29",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1433",
-      "incident_id": 1433,
-      "title": "Google Antigravity Reportedly Deleted User's Entire D: Drive While Clearing Project Cache",
-      "date": "2026-03-28",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 317,
+    "total": 316,
     "last7Days": 25,
     "last30Days": 186
   },
-  "lastUpdated": "2026-06-26T20:12:13.836584+05:30"
+  "lastUpdated": "2026-06-26T23:30:40.241087+05:30"
 }
