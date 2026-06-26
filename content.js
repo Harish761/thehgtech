@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 26 2026",
+            "headline": "Klue Breach Expands—Hackers' Data Compromised",
+            "title": "More Klue Breach Victims Identified as Hackers Get Hacked",
+            "content": "The Klue-Salesforce data breach has widened, affecting approximately two dozen companies that have now alerted their customers. This incident has taken an ironic twist as the hackers themselves have been compromised, leading to the exposure of their data. The breach underscores the vulnerability of even those who perpetrate cyberattacks. Companies impacted by this breach are advised to review their security protocols and notify affected customers promptly. This incident highlights the ongoing challenges in securing customer data against increasingly sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/more-klue-breach-victims-identified-as-hackers-get-hacked/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Linux Kernel Flaw 'pedit COW' Enables Root Access",
+            "title": "New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries",
+            "content": "A critical vulnerability in the Linux kernel's traffic-control subsystem, CVE-2026-46331, known as \"pedit COW,\" has been identified. This flaw allows local unprivileged users to gain root access by corrupting shared page-cache memory through an out-of-bounds write in the packet-editing action. The exploit has been publicly demonstrated, posing a significant risk to affected systems. Administrators are urged to apply patches immediately to mitigate potential security breaches. This vulnerability adds to the growing list of kernel-level exploits targeting Linux systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Amazon Q Flaw Lets Malicious Repos Steal Cloud Credentials",
+            "title": "Amazon Q Developer Flaw Could Let Malicious Repos Run Code via MCP Configs",
+            "content": "A high-severity flaw in Amazon Q Developer, tracked as CVE-2026-12957, has been patched after allowing malicious repositories to execute commands and steal cloud credentials. The vulnerability, rated 8.5 on the CVSS scale, was exploitable when developers opened and trusted compromised repositories. Amazon has since addressed the issue, but developers are encouraged to review their repository trust practices. This incident highlights the critical need for vigilance in managing third-party code integrations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "CISA Flags PTC Windchill RCE Flaw Amid Web Shell Attacks",
+            "title": "CISA Adds Exploited PTC Windchill RCE Flaw to KEV as Web Shell Attacks Continue",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical remote code execution (RCE) vulnerability in PTC Windchill and PTC FlexPLM software to its Known Exploited Vulnerabilities catalog. This vulnerability has been actively exploited in web shell attacks, posing a significant threat to enterprise systems. Organizations using these platforms should prioritize patching to prevent unauthorized access and potential data breaches. The inclusion in the KEV catalog underscores the severity and active exploitation of this flaw.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "DirtyClone Linux Flaw Allows Root Access via Cloned Packets",
+            "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
+            "content": "A newly discovered Linux kernel vulnerability, CVE-2026-43503, dubbed \"DirtyClone,\" allows local users to escalate privileges to root by corrupting file-backed memory through cloned packets. This flaw, part of the DirtyFrag family, has been publicly demonstrated by JFrog Security Research. With a CVSS score of 8.8, it presents a serious risk to affected systems. Administrators should apply the latest patches to protect against potential exploitation. This vulnerability further emphasizes the need for robust security measures in Linux environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Linux Foundation Launches Akrites for Open Source Security",
+            "title": "Linux Foundation Unveils New Open Source Security Project Akrites",
+            "content": "The Linux Foundation has announced the launch of Akrites, a new open-source security project aimed at improving vulnerability management in open-source software. Akrites will provide tools and channels for reporting, patching, and disclosing vulnerabilities, enhancing the security posture of open-source projects. This initiative comes as open-source software continues to be a critical component of modern technology stacks, necessitating improved security measures. Developers and organizations are encouraged to participate in the project to bolster open-source security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/linux-foundation-unveils-new-open-source-security-project-akrites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Miasma Malware Targets npm and GitHub in Supply Chain Attack",
+            "title": "Miasma Malware Targets npm Packages and GitHub Actions in Supply Chain Attack",
+            "content": "The Miasma malware, part of the Mini Shai-Hulud and Hades family, has been identified in a new supply chain attack targeting npm packages and GitHub Actions. This evolution of the malware has also spread to the Go ecosystem, compromising additional software packages. Developers using npm and GitHub should review their dependencies and implement security measures to prevent compromise. This attack highlights the persistent threat of supply chain vulnerabilities in software development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "New MCP Specification Shifts Security to Developers",
+            "title": "New Enterprise-Ready MCP Specification Brings New Security Challenges",
+            "content": "The Model Context Protocol (MCP) has undergone a significant overhaul, shifting critical security responsibilities from the protocol itself to developers and platform operators. This change introduces new security challenges as developers must now ensure the integrity and security of their implementations. Organizations adopting the new MCP specification should invest in security training and tools to address these challenges. The update reflects a broader trend towards decentralizing security responsibilities in modern software architectures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-enterprise-ready-mcp-specification-brings-new-security-challenges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Edgecution Extension Used in Ransomware Attack via Native Messaging",
+            "title": "Malicious Edge Extension Abuses Native Messaging as Bridge to Malware",
+            "content": "A malicious Microsoft Edge extension, known as 'Edgecution,' has been implicated in a ransomware attack by leveraging Native Messaging to bypass the browser sandbox. This technique allowed the deployment of a Python-based backdoor, posing a significant threat to users. Security professionals are advised to review and restrict browser extensions to prevent similar attacks. This incident underscores the evolving tactics of threat actors in exploiting browser vulnerabilities for malicious purposes.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Proposed US Law Mandates AI Risk Reporting",
+            "title": "Proposed US Law Would Make AI Risk Reporting a Legal Obligation",
+            "content": "US lawmakers have introduced a bill that would require developers of advanced artificial intelligence (AI) models to report major safety and security incidents to the Commerce Department. The AI Incident Reporting Act aims to establish a federal oversight framework for high-risk AI systems, ensuring transparency and accountability. Developers should prepare for potential compliance requirements if the bill passes. This legislative move reflects growing concerns about the risks associated with AI technologies and the need for regulatory oversight.",
+            "source": "Cyberattacks pose a ‘threat to life’ in Australia | CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4189908/proposed-us-law-would-make-ai-risk-reporting-a-legal-obligation.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 25 2026",
             "headline": "Gaslight Malware Targets AI—Confuses Analysis Tools",
             "title": "New macOS Malware \"Gaslight\" Embeds Fake Errors to Mislead AI",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/cal-water-finds-no-evidence-of-ot-activity-after-hackers-claimed-they-could-disrupt-water-supply/",
             "relatedResources": []
+        }
+    ],
+    "aiShorts": [
+        {
+            "date": "Jun 22 2026",
+            "headline": "OpenAI Launches 'Patch the Planet' for Open Source Security",
+            "title": "OpenAI's Daybreak Initiative Aims to Secure Open Source Projects",
+            "content": "OpenAI has unveiled \"Patch the Planet,\" a new initiative under its Daybreak program designed to bolster security for open-source software maintainers. The initiative leverages artificial intelligence alongside expert reviews to identify, validate, and remediate vulnerabilities in open-source projects. This move addresses the growing concern over open-source security, as these projects often lack the resources for thorough vulnerability management. By providing AI-driven tools and expert support, OpenAI aims to enhance the resilience of critical open-source infrastructure, which is foundational to many enterprise and consumer technologies. Open-source maintainers are encouraged to participate and utilize these resources to safeguard their projects.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Lantronix Converter Flaw Exploited—Patch CVE-2025-67038 Now",
-            "title": "Lantronix Serial-to-IP Converter Vulnerability Exploited in Active Attacks",
-            "content": "A critical flaw in Lantronix Serial-to-IP converters, identified as CVE-2025-67038, is being actively exploited following its disclosure in April through the BRIDGE:BREAK research project. This vulnerability allows attackers to compromise operational technology (OT) environments, posing significant risks to industrial control systems. The flaw affects devices that convert serial data to IP, a common setup in industrial networks. Organizations using these converters should prioritize patching to mitigate potential disruptions. The exploitation of this vulnerability underscores the increasing targeting of OT systems by cyber adversaries.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/",
+            "date": "Jun 26 2026",
+            "headline": "Anthropic's Mythos Models Offline Amid U.S. Government Tensions",
+            "title": "Anthropic Faces Challenges with Mythos Models After U.S. Ultimatum",
+            "content": "Anthropic's Mythos-class AI models remain offline following a directive from the Trump administration two weeks ago, demanding compliance with unspecified regulations. The company responded swiftly by dispatching executives to Washington, D.C., yet updates on the situation have been sparse. The lack of resolution raises concerns about the operational continuity of these models, which are integral to various AI applications. This incident highlights the increasing intersection of AI technology with geopolitical considerations, as governments scrutinize AI capabilities and their implications. Stakeholders in AI development should monitor this situation closely for potential policy shifts affecting AI deployment.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
             "relatedResources": []
         },
         {
             "date": "Jun 25 2026",
-            "headline": "Curl's 25-Year-Old Vulnerability Patched—Update to Secure Data Transfers",
-            "title": "Curl Patches 25-Year-Old Vulnerability in Latest Update",
-            "content": "The open-source data transfer tool Curl has patched a 25-year-old vulnerability in its latest release, addressing 18 medium and low-severity issues. This longstanding flaw could have potentially allowed attackers to manipulate data transfers, affecting a wide range of applications that rely on Curl for HTTP requests. The update is crucial for developers and system administrators to ensure secure data handling across their systems. The patch highlights the importance of maintaining and updating legacy software components to protect against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/25-year-old-vulnerability-patched-in-curl/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Gaslight Malware Targets macOS—Disrupts AI Analysis with Prompt Injection",
-            "title": "Gaslight macOS Malware Uses Prompt Injection to Evade AI Analysis",
-            "content": "A new macOS malware, codenamed Gaslight, has been discovered using prompt injection techniques to disrupt AI-assisted malware analysis. This Rust-based implant and information stealer embeds payloads that trick AI tools into aborting analysis, posing a challenge for cybersecurity professionals relying on automated systems. The malware's ability to evade detection highlights the evolving tactics of threat actors targeting macOS environments. Security teams should enhance their detection capabilities and consider manual analysis to counteract such sophisticated threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Chrome 149 Fixes 18 Severe Bugs—Update to Prevent RCE",
-            "title": "Chrome 149 Update Resolves Multiple Severe Vulnerabilities",
-            "content": "Google's latest Chrome update, version 149, addresses 18 severe vulnerabilities, including numerous use-after-free defects that could lead to remote code execution (RCE). These vulnerabilities pose significant risks, allowing attackers to execute arbitrary code on affected systems. Users are urged to update their browsers immediately to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from sophisticated cyber threats. Regular updates remain crucial in maintaining secure browsing environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-149-update-resolves-18-severe-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Cisco SD-WAN Zero-Day Exploited—Months Before Patch Release",
-            "title": "Cisco SD-WAN Zero-Day Exploited Months Before Patch Release",
-            "content": "A zero-day vulnerability in Cisco SD-WAN, tracked as CVE-2026-20245, was exploited by threat actors months before its public disclosure and patching. This marks the seventh Cisco SD-WAN vulnerability exploited in 2026, highlighting the persistent targeting of Cisco's network solutions. The flaw allowed attackers to gain unauthorized access, posing risks to enterprise networks relying on SD-WAN for secure connectivity. Organizations using Cisco SD-WAN should apply the latest patches and review their network security measures to mitigate potential threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Critical Chrome Flaws Patched—Sandbox Escape Risks Mitigated",
-            "title": "Chrome Update Patches Critical Security Flaws Including Sandbox Escapes",
-            "content": "Google has released a Chrome update addressing 18 vulnerabilities, including four critical flaws that could allow attackers to escape the browser's security sandbox. Two of these vulnerabilities involve WebGL, a graphics API used in rendering web content, posing risks of remote code execution. Users should update their Chrome browsers immediately to protect against potential exploits. This update underscores the importance of regular browser maintenance to safeguard against emerging cyber threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/update-chrome-to-patch-critical-browser-security-flaws",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Ransomware Targets Europe—EU Organizations Under Siege",
-            "title": "Ransomware Gangs Shift Focus to European Organizations",
-            "content": "Ransomware groups are increasingly targeting European Union organizations and their suppliers, marking a shift in focus after a global decline in attacks. This trend highlights the region's vulnerability due to its complex supply chains and valuable data assets. Security professionals in the EU are urged to strengthen their defenses and implement comprehensive incident response plans. The resurgence of ransomware in Europe underscores the need for cross-border collaboration and information sharing to combat these persistent threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Bluekit Phishing Kit Evolves—Browser-in-the-Middle Tactics Detected",
-            "title": "Bluekit Phishing Kit Adopts Browser-in-the-Middle for Enhanced Theft",
-            "content": "The Bluekit phishing-as-a-service platform has introduced browser-in-the-middle capabilities, enhancing its ability to steal login credentials. Nearly 70 new hostnames have been identified, indicating rapid expansion and adaptation by threat actors. This evolution allows attackers to intercept and manipulate web traffic, posing significant risks to online security. Organizations should educate employees on phishing tactics and implement multi-factor authentication to mitigate potential compromises. The continuous development of phishing kits highlights the need for proactive cybersecurity measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/bluekit-phishing-kit-adopts-browser-in-the-middle-for-login-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Chrome Ad Blocker Exploit—10M Users at Risk from Script Injection",
-            "title": "Popular Chrome Ad Blocker Found with Script Injection Capability",
-            "content": "A popular Chrome ad blocker extension for YouTube, with over 10 million installs, has been found to contain dormant script injection capabilities. This vulnerability allows the execution of arbitrary JavaScript code, potentially compromising user data and privacy. The extension, named Adblock for YouTube, carries a Featured badge, raising concerns over the vetting process for Chrome extensions. Users are advised to review installed extensions and remove those with suspicious behavior. This discovery underscores the importance of vigilance in managing browser extensions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html",
+            "headline": "Europe Challenges U.S. Over Chip Export Restrictions",
+            "title": "European Pushback on U.S. Chip Export Controls Intensifies",
+            "content": "European leaders are expressing growing resistance to U.S. efforts to restrict semiconductor exports to China, particularly concerning older-generation deep ultraviolet (DUV) lithography tools. ASML CEO Christophe Fouquet highlighted that these tools, which have been available for a decade, are now targeted by the MATCH Act, potentially limiting sales to China. This development underscores the geopolitical tensions surrounding technology trade and the strategic importance of semiconductor manufacturing. European stakeholders argue that such restrictions could disrupt global supply chains and hinder technological collaboration. Industry professionals should prepare for potential impacts on international partnerships and supply chain dynamics.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
             "relatedResources": []
         },
         {
             "date": "Jun 24 2026",
-            "headline": "Cisco SD-WAN Zero-Day—Hackers Gain Root Access",
-            "title": "Mandiant Unveils Exploitation of Cisco SD-WAN Zero-Day CVE-2026-20245",
-            "content": "Mandiant has disclosed details of a zero-day vulnerability, CVE-2026-20245, in Cisco Catalyst SD-WAN devices that hackers exploited to create unauthorized root accounts. This critical flaw allowed attackers to bypass security measures and gain full control over affected systems. The vulnerability impacts specific versions of Cisco's SD-WAN software, posing significant risks to enterprises relying on these devices for secure network management. Organizations using Cisco Catalyst SD-WAN should prioritize patching to mitigate potential breaches. This incident underscores the ongoing threat of zero-day vulnerabilities in critical infrastructure.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+            "headline": "Ex-Infosys CEO Launches Startup to Disrupt IT Services",
+            "title": "Vishal Sikka's New Venture Aims to Transform IT Services Industry",
+            "content": "Former Infosys CEO Vishal Sikka has launched a new startup, backed by Mayfield and Aramco Ventures, to challenge the traditional IT services sector. The venture brings together industry veterans from SAP, Infosys, and VianAI, aiming to innovate service delivery and operational efficiency. This initiative reflects a broader trend of seasoned executives leveraging their expertise to drive change in established industries. The startup's approach could potentially redefine service models and competitive dynamics in the IT services market. Industry observers should watch for emerging technologies and methodologies that may arise from this venture.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
             "relatedResources": []
-        }
-    ],
-    "aiShorts": [
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cerebras Shares Plummet After Earnings Report",
+            "title": "Cerebras Stock Drops as CEO Clarifies Margin Misunderstanding",
+            "content": "Cerebras Systems experienced a significant stock decline following its first earnings report since going public, as investors reacted to a narrower-than-expected gross margin forecast. The AI chipmaker's CEO attributed the market's response to a misunderstanding of the company's margin outlook in its core business. This incident highlights the volatility and investor sensitivity in the AI hardware sector, where financial projections can heavily influence market perception. Stakeholders should consider the implications of financial communications and investor relations strategies in maintaining market confidence.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Engineering Jobs Thrive Despite AI Layoff Trends",
+            "title": "New Data Shows Engineering Jobs Resilient Amid AI Disruptions",
+            "content": "Contrary to fears of AI-induced job losses, engineering roles are proving resilient, with engineers comprising a growing share of new hires according to SignalFire data. This trend suggests that while AI technologies automate certain tasks, they also create demand for skilled professionals to develop, implement, and maintain these systems. The data challenges the narrative of widespread job displacement in technical fields, highlighting the evolving nature of work in the AI era. Employers and job seekers in the tech industry should focus on upskilling and adapting to the changing landscape to capitalize on emerging opportunities.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Top AI Researchers Depart Google for Anthropic",
+            "title": "Google Loses Key AI Talent to Competitor Anthropic",
+            "content": "In a notable talent shift, AI researchers Jonas Adler and Alexander Pritzel have left Google to join Anthropic, following the departures of other prominent scientists like Noam Shazeer and John Jumper. This trend of high-profile exits underscores the competitive landscape for AI expertise, as companies vie for top talent to advance their AI capabilities. The movement of researchers between leading AI firms reflects the dynamic nature of the industry and the strategic importance of human capital in driving innovation. Organizations should prioritize talent retention and development strategies to maintain a competitive edge.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Congresswoman Denies AI Use in Defense Bill Drafting",
+            "title": "Rep. Luna Clarifies AI Role in Defense Amendment Process",
+            "content": "Rep. Anna Paulina Luna (R-FL) has clarified that her staff utilized AI solely for spellchecking in the summary of a defense funding amendment, denying its use in drafting the bill text itself. This statement comes after social media speculation about AI's role in legislative processes, highlighting the growing scrutiny of AI's integration into government functions. Luna emphasized that no legislation is drafted with AI, addressing concerns about the potential influence of AI on policy-making. Lawmakers and government officials should remain transparent about AI's role to maintain public trust and ensure accountability.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "NVIDIA NeMo AutoModel Boosts Transformer Fine-Tuning Speed",
+            "title": "Accelerating Transformer Fine-Tuning with NVIDIA NeMo AutoModel",
+            "content": "Hugging Face has introduced a new method to accelerate the fine-tuning of transformer models using NVIDIA's NeMo AutoModel. This approach significantly reduces the time required for model optimization, enhancing efficiency for developers working with large language models. By leveraging NVIDIA's advanced hardware capabilities, the process streamlines the deployment of AI applications across various domains. This development is particularly relevant for organizations seeking to optimize their AI workflows and reduce time-to-market for AI-driven solutions. Technical teams should explore integrating these tools to enhance their model training processes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "New FFASR Leaderboard Benchmarks Real-World ASR Performance",
+            "title": "Introducing the FFASR Leaderboard for Real-World ASR Benchmarking",
+            "content": "Hugging Face has launched the FFASR Leaderboard, a new benchmarking tool for assessing automatic speech recognition (ASR) systems in real-world scenarios. This leaderboard provides a standardized framework for evaluating ASR performance across diverse datasets, offering insights into system accuracy and robustness. As ASR technology becomes increasingly integral to applications like virtual assistants and transcription services, reliable benchmarking is essential for developers to gauge system capabilities and improvements. Industry professionals should utilize this resource to enhance their ASR solutions and remain competitive in the evolving speech technology landscape.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ffasr-leaderboard",
+            "relatedResources": []
+        },
         {
             "date": "Jun 24 2026",
             "headline": "Google Home Speaker: Great Sound, Finicky Performance",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "OpenAI and Broadcom have introduced Jalapeño, a custom chip designed to optimize large language model (LLM) inference. This chip aims to improve performance, efficiency, and scalability across AI systems, addressing key challenges in AI deployment. By enhancing inference capabilities, Jalapeño could significantly reduce operational costs and improve AI application responsiveness. AI developers and enterprises should evaluate the potential benefits of integrating this chip into their infrastructure. This collaboration underscores the importance of hardware innovation in advancing AI technology.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Adobe Acquires Topaz Labs—Enhances Creative Suite",
-            "title": "Adobe Acquires Topaz Labs to Integrate Image and Video Tools",
-            "content": "Adobe has announced the acquisition of Topaz Labs, a company known for its advanced image and video enhancement tools. Adobe plans to integrate these tools across its suite of creative applications, potentially enhancing capabilities in areas such as photo editing and video production. This acquisition is part of Adobe's strategy to bolster its offerings in AI-driven creative solutions, catering to the growing demand for sophisticated media editing tools. The integration is expected to provide users with more powerful features, improving workflow efficiency and creative output.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Amazon Invests $13B in India's AI Infrastructure",
-            "title": "Amazon Commits $13B to Expand AI Infrastructure in India",
-            "content": "Amazon has announced a substantial $13 billion investment to expand its AI infrastructure in India. This move is part of a broader trend among global tech companies to enhance their AI capabilities in the region, which is seen as a burgeoning market for technology development. The investment will focus on building data centers and enhancing cloud services, aiming to support local businesses and startups in leveraging AI technologies. This initiative is expected to create numerous jobs and foster innovation, positioning India as a key player in the global AI landscape.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Ford Rehires Engineers to Correct Automation Errors",
-            "title": "Ford Rehires Former Engineers to Address Automated System Flaws",
-            "content": "Ford has rehired former engineers to rectify issues caused by its automated systems in production and design. Despite achieving the top spot in JD Power's initial quality ranking among mainstream automakers, Ford faced challenges due to errors from these systems. The company acknowledged that automation, while beneficial, introduced complexities that required human expertise to resolve. This move highlights the ongoing balance between automation and skilled human intervention in manufacturing processes. It serves as a reminder of the importance of human oversight in automated environments.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "IBM Unveils World's First Sub-1nm Chip Technology",
-            "title": "IBM Develops World's First Sub-1 Nanometer Chip Technology",
-            "content": "IBM has announced the development of the world's first sub-1 nanometer chip technology, utilizing nanostack transistors. This breakthrough could significantly enhance chip performance and energy efficiency, marking a pivotal advancement in semiconductor technology. The new technology promises to drive innovations in computing power and battery life across various devices. IBM's achievement underscores the competitive race in the semiconductor industry to produce smaller, more efficient chips, which are crucial for the next generation of computing and AI applications.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Facebook Creator Studio Revived as AI Companion App",
-            "title": "Meta Revives Facebook Creator Studio as AI Companion App",
-            "content": "Meta has relaunched the Facebook Creator Studio as a standalone AI companion app, designed to help creators better engage with their audiences. The app, now equipped with AI capabilities, aims to provide insights and strategies for growth on Facebook. This move is part of Meta's broader strategy to integrate AI into its platforms, enhancing user experience and content management. By offering personalized recommendations, the app seeks to empower creators to optimize their content and reach.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "US Company Profits Soar Amid Memory Chip Crunch",
-            "title": "Memory Chip Shortage Boosts US Company's Revenue and Profit",
-            "content": "A US-based company has reported a significant financial upturn, with revenue quadrupling to $41.45 billion and profit soaring from $1.88 billion to $28.2 billion year-over-year. This growth is attributed to the ongoing memory chip shortage, which has increased demand and pricing for semiconductor products. The company's success highlights the broader impact of supply chain constraints in the tech industry, where shortages have driven up costs but also provided opportunities for substantial profit margins.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "$27M AI Proxy War Over Alex Bores Ends in Draw",
-            "title": "Anthropic vs. OpenAI: $27M Proxy War Over Alex Bores Concludes",
-            "content": "The $27 million political proxy war between AI giants Anthropic and OpenAI concluded without a decisive victory, as Alex Bores narrowly lost the Democratic primary for New York's 12th Congressional district. This high-stakes battle saw significant financial backing from pro-AI super PACs, reflecting the increasing influence of AI companies in political arenas. The outcome underscores the complex interplay between technology and politics, as AI entities seek to shape policy and public perception.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Agility Robotics to Go Public in $2.5B SPAC Deal",
-            "title": "Agility Robotics Plans Public Listing via $2.5B SPAC Merger",
-            "content": "Agility Robotics, a leading humanoid robotics startup, has announced plans to go public through a Special Purpose Acquisition Company (SPAC) in a deal valued at $2.5 billion. The company, which originated from Oregon State University, expects to generate $620 million in proceeds from the merger. This move is part of a growing trend of robotics companies seeking public funding to accelerate development and commercialization. Agility Robotics aims to expand its market presence and enhance its product offerings in the rapidly evolving robotics industry.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Figma Adds AI Motion Graphics and Shader Tools",
-            "title": "Figma Introduces AI-Powered Motion Graphics and Shader Tools",
-            "content": "Figma has unveiled new AI-driven motion graphics and shader tools at its annual Config conference, designed to enhance creative workflows. These updates aim to automate repetitive tasks and provide designers with more powerful tools for creating dynamic content. The enhancements are part of Figma's strategy to integrate AI into its platform, offering users a reimagined canvas optimized for full-stack development. By leveraging AI, Figma seeks to empower creatives to push their ideas further and streamline the design process.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Mindstone's Rebel AI OS Launches—Optimizes Model Tasking",
-            "title": "Mindstone's Rebel AI OS Automates Model Selection for Enterprise Tasks",
-            "content": "Mindstone, a London-based AI transformation startup, has launched Rebel, an AI operating system designed to optimize model selection for specific enterprise tasks. This local-first, agentic AI platform automatically remembers which AI model is best suited for each task, enhancing operational efficiency. The system aims to streamline AI agent orchestration, a growing trend in enterprise AI management. By automating model selection, Rebel reduces the need for manual intervention, allowing businesses to leverage AI more effectively. Enterprises should consider integrating such systems to enhance their AI-driven processes.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/your-enterprise-ai-agents-should-automatically-remember-which-model-is-right-for-which-task-mindstone-built-the-capability-with-rebel",
             "relatedResources": []
         }
     ],
