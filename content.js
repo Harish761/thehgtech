@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 26 2026",
+            "headline": "CISA Demands Immediate Cisco Patch—Active Exploits Detected",
+            "title": "CISA Sets Urgent Deadline for Cisco Unified Communications Manager Patch",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for federal agencies to patch a critical vulnerability in Cisco Unified Communications Manager Server by Sunday. The flaw is actively exploited, posing significant risks to unpatched systems. Identified as a critical security gap, this vulnerability allows attackers to execute arbitrary code, potentially compromising sensitive communications infrastructure. CISA's directive underscores the importance of immediate action to protect against ongoing threats. Organizations using affected Cisco systems should prioritize this patch to mitigate potential breaches.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "TinyRCT Backdoor Targets Southeast Asia—Chinese APT Suspected",
+            "title": "Chinese-Speaking APT Deploys TinyRCT Backdoor in Southeast Asia Attacks",
+            "content": "A Chinese-speaking advanced persistent threat (APT) group has been linked to deploying a new backdoor, TinyRCT, in cyber attacks targeting government and critical infrastructure in Southeast Asia. The campaign focuses on state-owned enterprises in the energy and government sectors, leveraging this custom malware to gain persistent access. TinyRCT enables attackers to execute commands and exfiltrate sensitive data, posing a severe threat to national security and operational integrity. Security professionals in affected regions should enhance monitoring and implement robust defenses against this evolving threat.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "First PTC Windchill Exploit in the Wild—CVE-2026-12569",
+            "title": "First-Ever Exploitation of PTC Windchill Vulnerability Discovered in the Wild",
+            "content": "The remote code execution vulnerability CVE-2026-12569 in PTC Windchill has been exploited in the wild for the first time, prompting its addition to CISA's Known Exploited Vulnerabilities catalog. This flaw affects PTC's product lifecycle management software, widely used across industries such as defense and aerospace. The exploitation allows attackers to execute arbitrary code remotely, potentially leading to data breaches and operational disruptions. Organizations using PTC Windchill should urgently apply available patches to safeguard their systems against this active threat.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/first-ever-exploitation-of-ptc-windchill-vulnerability-discovered-in-the-wild/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Russian Hackers Steal Signal Keys—FBI Issues Warning",
+            "title": "FBI: Russian Hackers Now Target Signal Backup Recovery Keys",
+            "content": "The FBI and CISA have issued a warning about a phishing campaign linked to Russian intelligence services targeting Signal users. Attackers are now focusing on stealing Signal Backup Recovery Keys, enabling them to access victims' historical messages. This evolution in tactics poses a significant privacy threat to Signal users, as compromised keys can lead to unauthorized access to sensitive communications. Users are advised to remain vigilant against phishing attempts and secure their accounts with robust authentication measures.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "SharkLoader Malware Deploys Cobalt Strike—StrikeShark Campaign Unveiled",
+            "title": "New SharkLoader Malware Deploys Cobalt Strike in StrikeShark Cyberattacks",
+            "content": "A new malware family, SharkLoader, has been identified in a cyber attack campaign known as StrikeShark, delivering Cobalt Strike Beacon on compromised systems. This loader facilitates the deployment of Cobalt Strike, a tool often used for post-exploitation activities. Kaspersky's analysis reveals that the campaign targets a range of industries, emphasizing the need for enhanced security measures. Organizations should update their defenses and monitor for indicators of compromise associated with SharkLoader and Cobalt Strike.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Polymarket Supply-Chain Attack—$3M Customer Losses Reimbursed",
+            "title": "Polymarket Customers Lose $3 Million in Supply-Chain Attack",
+            "content": "Polymarket has announced plans to fully reimburse customers who collectively lost $3 million due to a supply-chain attack. Hackers injected a malicious script into the platform's frontend following a breach at a third-party vendor, compromising user transactions. This incident highlights the vulnerabilities in supply-chain security and the potential financial impact of such breaches. Affected customers should monitor their accounts for suspicious activity, while organizations are urged to strengthen their supply-chain security protocols.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Fraudulent OpenAI Invites Target Cybersecurity Firms—Data at Risk",
+            "title": "Cybersecurity Firms Targeted by Fraudulent OpenAI Organization Invites",
+            "content": "Cybersecurity firms are being targeted by threat actors creating fake OpenAI tenants to impersonate legitimate companies. These actors invite employees to join these fake organizations, aiming to trick them into sharing sensitive company information. This tactic poses a significant risk to corporate data security, as employees may unknowingly disclose confidential information. Companies should educate employees about such phishing tactics and implement strict verification processes for organizational invites.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "New Initiative Secures Aging Open Source Software—Compliance Focus",
+            "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
+            "content": "The Open Source Sustainability Initiative has launched to help enterprises manage and secure aging open source projects while ensuring regulatory compliance. As many open source projects reach end-of-life, they pose security risks due to lack of updates and support. This initiative aims to provide resources and strategies for maintaining security and compliance in legacy systems. Organizations relying on open source software should engage with this initiative to mitigate risks associated with outdated software.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Amazon Q Flaw Patched—Cloud Credential Theft Risk Mitigated",
+            "title": "Amazon Q Flaw Enabled Cloud Credential Theft via Malicious Repositories",
+            "content": "AWS has patched a vulnerability known as the Amazon Q Flaw, which allowed attackers to steal cloud credentials through malicious repositories. This flaw posed a significant risk to AWS customers, potentially leading to unauthorized access to cloud resources. AWS has issued an advisory detailing the vulnerability and its impact, urging customers to review their security configurations. Organizations using AWS should apply the patch and follow recommended security practices to protect their cloud environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/amazon-q-flaw-enabled-cloud-credential-theft-via-malicious-repositories/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Cellebrite Used in Russian Hacks—Five Eyes Warn on AI Threats",
+            "title": "In Other News: Chinese Mythos-Like AI, Tata Electronics Breach, Snyk Layoffs",
+            "content": "Recent developments in cybersecurity include Russia's use of Cellebrite technology to hack activists' phones, highlighting the ongoing threat of state-sponsored cyber activities. Additionally, the Five Eyes alliance has issued an urgent warning about AI-related threats, emphasizing the need for international cooperation in addressing AI security challenges. Other notable incidents include a breach at Tata Electronics and layoffs at Snyk, reflecting broader trends in the cybersecurity landscape. Professionals should remain informed about these evolving threats and adjust their strategies accordingly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-chinese-mythos-like-ai-tata-electronics-breach-snyk-layoffs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
             "headline": "Klue Breach Expands—Hackers' Data Compromised",
             "title": "More Klue Breach Victims Identified as Hackers Get Hacked",
             "content": "The Klue-Salesforce data breach has widened, affecting approximately two dozen companies that have now alerted their customers. This incident has taken an ironic twist as the hackers themselves have been compromised, leading to the exposure of their data. The breach underscores the vulnerability of even those who perpetrate cyberattacks. Companies impacted by this breach are advised to review their security protocols and notify affected customers promptly. This incident highlights the ongoing challenges in securing customer data against increasingly sophisticated cyber threats.",
@@ -76,15 +166,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 24 2026",
-            "headline": "Edgecution Extension Used in Ransomware Attack via Native Messaging",
-            "title": "Malicious Edge Extension Abuses Native Messaging as Bridge to Malware",
-            "content": "A malicious Microsoft Edge extension, known as 'Edgecution,' has been implicated in a ransomware attack by leveraging Native Messaging to bypass the browser sandbox. This technique allowed the deployment of a Python-based backdoor, posing a significant threat to users. Security professionals are advised to review and restrict browser extensions to prevent similar attacks. This incident underscores the evolving tactics of threat actors in exploiting browser vulnerabilities for malicious purposes.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 26 2026",
             "headline": "Proposed US Law Mandates AI Risk Reporting",
             "title": "Proposed US Law Would Make AI Risk Reporting a Legal Obligation",
@@ -101,97 +182,97 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Cisco SD-WAN Zero-Day Exploited—Root Access Gained",
-            "title": "Cisco Catalyst SD-WAN Zero-Day CVE-2026-20245 Exploited for Root Access",
-            "content": "A critical zero-day vulnerability in Cisco Catalyst SD-WAN, tracked as CVE-2026-20245, has been exploited by an unknown threat actor to gain root access. This high-severity flaw, with a CVSS score of 7.8, was used in attacks at least two months before its public disclosure. The vulnerability affects systems running specific versions of Cisco Catalyst SD-WAN, posing significant risks to enterprises relying on this technology for secure network management. Organizations using affected versions should prioritize patching to mitigate potential exploitation. This incident underscores the importance of timely vulnerability management in network infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "AI Agent Traps—New Attack Surface Exploited",
-            "title": "Understanding AI Agent Traps as Information Becomes the Attack Surface",
-            "content": "Attackers are increasingly turning trusted data sources into traps for autonomous AI systems, employing tactics such as hidden content injections and cognitive state poisoning. These AI agent traps exploit the reliance of AI on data integrity, potentially leading to compromised decision-making processes. As AI systems become more integrated into critical operations, understanding these vulnerabilities becomes crucial for security professionals. Organizations should enhance their data validation processes and monitor for unusual AI behavior to mitigate these risks. This trend highlights the evolving nature of threats in the AI landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/when-information-becomes-the-attack-surface-understanding-ai-agent-traps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cisco Unified CM Flaw—Path to Root Exploited",
-            "title": "Cisco Unified CM Vulnerability CVE-2026-20230 Exploited for Root Access",
-            "content": "Threat actors are exploiting a critical vulnerability in Cisco Unified Communications Manager (Unified CM) and its Session Management Edition (Unified CM SME), identified as CVE-2026-20230. This flaw, with a CVSS score of 8.6, allows attackers to write files to paths that lead to root access. The exploitation follows the release of a proof-of-concept (PoC) that detailed the vulnerability. Organizations using these Cisco systems should apply patches immediately to prevent unauthorized access and potential data breaches. This incident highlights the critical need for rapid response to disclosed vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Police Collusion Hampers Asian Scam Center Crackdown",
-            "title": "Local Police Collusion Impedes Efforts Against Asian Scam Centers",
-            "content": "Efforts to dismantle scam centers in Asia are being undermined by local police collusion, despite international and law enforcement initiatives. These centers are responsible for funneling tens of billions of dollars into regional economies through cybercrime activities. The complicity of local authorities presents a significant challenge to global cybersecurity efforts, allowing these operations to continue thriving. This situation calls for increased international cooperation and pressure to address corruption and enhance enforcement actions. The persistence of these scam centers underscores the complexity of combating cybercrime on a global scale.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/police-collusion-crackdown-asian-scam-centers",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Parcel Mule Scams—Beware Fake Job Offers",
-            "title": "\"Parcel Expert\" Job Offers Are Fronts for Parcel Mule Scams",
-            "content": "Scammers are luring victims with fake job offers for \"Parcel Expert\" positions, which are actually fronts for parcel mule scams. These scams trick individuals into handling and forwarding stolen goods, often under the guise of legitimate employment. Victims may unknowingly become part of criminal operations, facing legal consequences. To protect against such schemes, individuals should verify the legitimacy of job offers and be cautious of roles involving package handling. This trend highlights the need for increased awareness and vigilance against evolving scam tactics.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/06/beware-of-parcel-expert-job-offers-theyre-parcel-mule-scams",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Shop App Misused—Phishing Attacks on the Rise",
-            "title": "Order-Tracking App Shop Abused for Callback Phishing Attacks",
-            "content": "Threat actors are exploiting the Shop order-tracking app from Shopify to conduct callback phishing attacks. By inserting fake purchase receipts into users' order histories, attackers trick victims into divulging sensitive information or installing remote access software. This misuse of a trusted app highlights the growing sophistication of phishing tactics and the importance of scrutinizing unexpected order notifications. Users should verify purchase details directly through official channels and be wary of unsolicited communications. This incident underscores the need for enhanced security measures in e-commerce platforms.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Windows 10 ESU Extended to 2027—Free Support Continues",
-            "title": "Microsoft Extends Free Windows 10 ESU Support to October 2027",
-            "content": "Microsoft has quietly extended its free Windows 10 Extended Security Updates (ESU) program until October 12, 2027. This extension allows enrolled devices to continue receiving critical security updates, providing an additional year of support beyond the original end date. The move benefits consumers and businesses relying on Windows 10, ensuring ongoing protection against vulnerabilities. Users should ensure their devices are enrolled in the ESU program to receive these updates. This extension reflects Microsoft's commitment to maintaining security for its user base amid ongoing threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/microsoft/microsoft-quietly-extends-free-windows-10-esu-support-to-october-2027/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Operation Endgame Disrupts Amadey, StealC Malware",
-            "title": "Amadey and StealC Malware Operations Disrupted in Global Crackdown",
-            "content": "In a coordinated effort, Microsoft, Europol, and international partners have disrupted the infrastructure supporting the Amadey and StealC malware operations. This action, part of Operation Endgame, targets cybercriminal services and ransomware gangs, aiming to dismantle their networks. The disruption of these operations marks a significant victory in the fight against cybercrime, impacting the distribution of malware and ransomware globally. Organizations should remain vigilant and update their security measures to protect against potential resurgence. This operation highlights the effectiveness of international collaboration in combating cyber threats.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Cal Water Confirms No Breach in Handala Cyberattack",
-            "title": "Cal Water Reports No OT Systems Breached in Handala Cyberattack",
-            "content": "California water utility Cal Water has confirmed that its operational technology (OT) systems were not breached during a cyberattack by the Iranian hacker group Handala. Mandiant assisted in the investigation, ensuring that critical infrastructure remained secure. This reassurance comes amid growing concerns over cyber threats targeting essential services. Organizations in the utility sector should continue to strengthen their cybersecurity defenses to prevent potential breaches. The incident underscores the importance of robust security measures and timely incident response in protecting critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cal-water-finds-no-evidence-of-ot-activity-after-hackers-claimed-they-could-disrupt-water-supply/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI Launches 'Patch the Planet' for Open Source Security",
-            "title": "OpenAI's Daybreak Initiative Aims to Secure Open Source Projects",
-            "content": "OpenAI has unveiled \"Patch the Planet,\" a new initiative under its Daybreak program designed to bolster security for open-source software maintainers. The initiative leverages artificial intelligence alongside expert reviews to identify, validate, and remediate vulnerabilities in open-source projects. This move addresses the growing concern over open-source security, as these projects often lack the resources for thorough vulnerability management. By providing AI-driven tools and expert support, OpenAI aims to enhance the resilience of critical open-source infrastructure, which is foundational to many enterprise and consumer technologies. Open-source maintainers are encouraged to participate and utilize these resources to safeguard their projects.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "date": "Jun 27 2026",
+            "headline": "100+ Entities Gain Access to Anthropic's Mythos 5",
+            "title": "Trump Administration Authorizes Anthropic's Mythos 5 for Broad Use",
+            "content": "The Trump administration has granted over 100 companies and government agencies access to Anthropic's Mythos 5, including authorization for non-American employees. This decision follows a two-week negotiation process, marking a significant expansion of AI capabilities across various sectors. Mythos 5 is known for its advanced machine learning capabilities, which could enhance operational efficiencies and decision-making processes. The move is expected to accelerate AI integration in both private and public sectors, though it raises questions about data security and international collaboration. Organizations should prepare for potential regulatory changes and ensure compliance with data protection standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "NYT Criticizes Microsoft Over OpenAI Supercomputer",
+            "title": "NYT Accuses Microsoft of Copyright Infringement in OpenAI Project",
+            "content": "The New York Times has criticized Microsoft for allegedly building a supercomputer for OpenAI that infringes on copyright laws. This comes after a Supreme Court ruling against Sony, which has shifted the focus onto Microsoft's practices. The supercomputer in question is part of OpenAI's infrastructure for training advanced AI models, raising concerns about intellectual property rights in AI development. The implications could affect partnerships and future collaborations in the AI industry. Companies involved in AI development should review their compliance with copyright laws to avoid similar disputes.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI's Jalapeño Chip Challenges Nvidia's Dominance",
+            "title": "OpenAI Develops Jalapeño Chip to Reduce Nvidia Dependency",
+            "content": "OpenAI has unveiled its custom inference chip, Jalapeño, developed in collaboration with Broadcom, marking a strategic move to reduce reliance on Nvidia's AI chips. This development aligns OpenAI with other tech giants like Google, Apple, and SpaceX, who are also pursuing custom chip solutions. The Jalapeño chip promises enhanced performance for AI workloads, potentially lowering costs and increasing efficiency. This shift could significantly impact Nvidia's market share and influence future AI hardware development trends. Organizations should monitor these developments to assess potential impacts on their AI infrastructure strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI Launches GPT-5.6 Amid Regulatory Challenges",
+            "title": "OpenAI Releases GPT-5.6 Following Government Stipulations",
+            "content": "OpenAI has launched GPT-5.6, a new model suite including Sol and Terra, despite regulatory pressures from the Trump administration. The release was staggered to comply with government requests, highlighting ongoing tensions between AI innovation and regulatory oversight. GPT-5.6 introduces enhanced capabilities in coding, science, and cybersecurity, supported by an advanced safety stack. This release is crucial for developers and enterprises seeking cutting-edge AI tools, though it underscores the need for balanced regulation that does not stifle technological advancement. Stakeholders should stay informed on regulatory developments affecting AI deployment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "AI's Political Impact Demands Collective Action",
+            "title": "Political Consequences of AI Models Require Unified Response",
+            "content": "The increasing political implications of AI models like those from Anthropic and OpenAI necessitate collective action to manage their societal impact. As AI capabilities advance, they influence political dynamics and decision-making processes, raising ethical and governance challenges. This trend highlights the need for international cooperation and robust policy frameworks to guide AI development and deployment. Stakeholders across industries must engage in dialogue and collaboration to address these challenges effectively. Understanding the broader implications of AI technologies is essential for informed decision-making and strategic planning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI Criticizes Government's AI Access Restrictions",
+            "title": "OpenAI Opposes Long-Term Government Access to AI Models",
+            "content": "OpenAI has expressed concerns over the government's request to limit the rollout of GPT-5.6, arguing that such restrictions should not become standard practice. The company emphasizes that these limitations hinder access to advanced AI tools for users, developers, and enterprises globally. OpenAI's stance highlights the tension between regulatory oversight and technological progress, as well as the need for policies that balance security with innovation. Organizations should advocate for transparent and fair regulatory frameworks to ensure continued access to AI advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI Expands in India, Hires Uber India Chief",
+            "title": "OpenAI Strengthens Indian Operations with Key Executive Hire",
+            "content": "OpenAI has appointed the former head of Uber India to lead its operations in the country, marking a significant expansion into one of its largest markets outside the United States. This strategic move includes opening new offices, forming partnerships, and increasing local hiring. India's growing tech ecosystem presents vast opportunities for AI integration, and OpenAI aims to capitalize on this by enhancing its presence and influence in the region. Companies operating in India should anticipate increased competition and collaboration opportunities as AI adoption accelerates.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mindstone's Rebel Enhances AI Agent Orchestration",
+            "title": "Mindstone Launches Rebel for Improved AI Agent Management",
+            "content": "London-based startup Mindstone has launched Rebel, a local-first AI operating system designed to optimize AI agent orchestration. Rebel enables enterprise AI agents to automatically remember which models are best suited for specific tasks, enhancing efficiency and performance. This innovation addresses the growing complexity of managing multiple AI models and their applications. As AI adoption increases, tools like Rebel will be crucial for organizations seeking to streamline operations and maximize the value of their AI investments. Companies should explore integrating such systems to improve AI management and deployment.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/your-enterprise-ai-agents-should-automatically-remember-which-model-is-right-for-which-task-mindstone-built-the-capability-with-rebel",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Adobe Acquires Topaz Labs for Enhanced Media Tools",
+            "title": "Adobe Integrates Topaz Labs' Enhancement Tools Across Its Apps",
+            "content": "Adobe has announced the acquisition of Topaz Labs, a company known for its image and video enhancement tools. This acquisition will see Topaz Labs' technology integrated into Adobe's suite of applications, potentially offering users improved media editing capabilities. The move underscores Adobe's commitment to expanding its AI-driven features and maintaining its competitive edge in the creative software market. Users of Adobe products can anticipate enhanced functionality and new tools that leverage Topaz Labs' expertise in media enhancement. Organizations should prepare for updates and training to utilize these new capabilities effectively.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Last Chance for TechCrunch Founder Summit Early Bird Rates",
+            "title": "TechCrunch Founder Summit 2026 Early Bird Registration Ends Soon",
+            "content": "TechCrunch Founder Summit 2026 is approaching, with only two days left to secure early bird registration rates, saving attendees up to $190. The summit will gather over 1,000 founders and investors, providing a platform for networking, learning, and collaboration. This event is an opportunity for tech leaders to gain insights into industry trends and innovations. Interested participants should register before the deadline to take advantage of the discounted rates. Attending the summit could be pivotal for professionals seeking to expand their networks and stay ahead in the tech industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/2-days-left-to-save-up-to-190-join-1000-founders-and-investors-at-techcrunch-founder-summit/",
             "relatedResources": []
         },
         {
@@ -210,78 +291,6 @@ const websiteContent = {
             "content": "European leaders are expressing growing resistance to U.S. efforts to restrict semiconductor exports to China, particularly concerning older-generation deep ultraviolet (DUV) lithography tools. ASML CEO Christophe Fouquet highlighted that these tools, which have been available for a decade, are now targeted by the MATCH Act, potentially limiting sales to China. This development underscores the geopolitical tensions surrounding technology trade and the strategic importance of semiconductor manufacturing. European stakeholders argue that such restrictions could disrupt global supply chains and hinder technological collaboration. Industry professionals should prepare for potential impacts on international partnerships and supply chain dynamics.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Ex-Infosys CEO Launches Startup to Disrupt IT Services",
-            "title": "Vishal Sikka's New Venture Aims to Transform IT Services Industry",
-            "content": "Former Infosys CEO Vishal Sikka has launched a new startup, backed by Mayfield and Aramco Ventures, to challenge the traditional IT services sector. The venture brings together industry veterans from SAP, Infosys, and VianAI, aiming to innovate service delivery and operational efficiency. This initiative reflects a broader trend of seasoned executives leveraging their expertise to drive change in established industries. The startup's approach could potentially redefine service models and competitive dynamics in the IT services market. Industry observers should watch for emerging technologies and methodologies that may arise from this venture.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cerebras Shares Plummet After Earnings Report",
-            "title": "Cerebras Stock Drops as CEO Clarifies Margin Misunderstanding",
-            "content": "Cerebras Systems experienced a significant stock decline following its first earnings report since going public, as investors reacted to a narrower-than-expected gross margin forecast. The AI chipmaker's CEO attributed the market's response to a misunderstanding of the company's margin outlook in its core business. This incident highlights the volatility and investor sensitivity in the AI hardware sector, where financial projections can heavily influence market perception. Stakeholders should consider the implications of financial communications and investor relations strategies in maintaining market confidence.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Engineering Jobs Thrive Despite AI Layoff Trends",
-            "title": "New Data Shows Engineering Jobs Resilient Amid AI Disruptions",
-            "content": "Contrary to fears of AI-induced job losses, engineering roles are proving resilient, with engineers comprising a growing share of new hires according to SignalFire data. This trend suggests that while AI technologies automate certain tasks, they also create demand for skilled professionals to develop, implement, and maintain these systems. The data challenges the narrative of widespread job displacement in technical fields, highlighting the evolving nature of work in the AI era. Employers and job seekers in the tech industry should focus on upskilling and adapting to the changing landscape to capitalize on emerging opportunities.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Top AI Researchers Depart Google for Anthropic",
-            "title": "Google Loses Key AI Talent to Competitor Anthropic",
-            "content": "In a notable talent shift, AI researchers Jonas Adler and Alexander Pritzel have left Google to join Anthropic, following the departures of other prominent scientists like Noam Shazeer and John Jumper. This trend of high-profile exits underscores the competitive landscape for AI expertise, as companies vie for top talent to advance their AI capabilities. The movement of researchers between leading AI firms reflects the dynamic nature of the industry and the strategic importance of human capital in driving innovation. Organizations should prioritize talent retention and development strategies to maintain a competitive edge.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Congresswoman Denies AI Use in Defense Bill Drafting",
-            "title": "Rep. Luna Clarifies AI Role in Defense Amendment Process",
-            "content": "Rep. Anna Paulina Luna (R-FL) has clarified that her staff utilized AI solely for spellchecking in the summary of a defense funding amendment, denying its use in drafting the bill text itself. This statement comes after social media speculation about AI's role in legislative processes, highlighting the growing scrutiny of AI's integration into government functions. Luna emphasized that no legislation is drafted with AI, addressing concerns about the potential influence of AI on policy-making. Lawmakers and government officials should remain transparent about AI's role to maintain public trust and ensure accountability.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "NVIDIA NeMo AutoModel Boosts Transformer Fine-Tuning Speed",
-            "title": "Accelerating Transformer Fine-Tuning with NVIDIA NeMo AutoModel",
-            "content": "Hugging Face has introduced a new method to accelerate the fine-tuning of transformer models using NVIDIA's NeMo AutoModel. This approach significantly reduces the time required for model optimization, enhancing efficiency for developers working with large language models. By leveraging NVIDIA's advanced hardware capabilities, the process streamlines the deployment of AI applications across various domains. This development is particularly relevant for organizations seeking to optimize their AI workflows and reduce time-to-market for AI-driven solutions. Technical teams should explore integrating these tools to enhance their model training processes.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "New FFASR Leaderboard Benchmarks Real-World ASR Performance",
-            "title": "Introducing the FFASR Leaderboard for Real-World ASR Benchmarking",
-            "content": "Hugging Face has launched the FFASR Leaderboard, a new benchmarking tool for assessing automatic speech recognition (ASR) systems in real-world scenarios. This leaderboard provides a standardized framework for evaluating ASR performance across diverse datasets, offering insights into system accuracy and robustness. As ASR technology becomes increasingly integral to applications like virtual assistants and transcription services, reliable benchmarking is essential for developers to gauge system capabilities and improvements. Industry professionals should utilize this resource to enhance their ASR solutions and remain competitive in the evolving speech technology landscape.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ffasr-leaderboard",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Google Home Speaker: Great Sound, Finicky Performance",
-            "title": "Google Home Speaker Delivers Quality Sound but Faces Usability Challenges",
-            "content": "The new Google Home Speaker impresses with its sound quality and sleek design, but users report finicky performance in real-world use. Despite its ability to quickly respond to voice commands even at maximum volume, the device's three microphones occasionally struggle with ambient noise. This issue could affect user satisfaction, especially in noisy environments. The speaker's design and audio capabilities stand out, but Google may need to address these performance inconsistencies in future updates. Users are advised to consider their environment before purchasing to ensure optimal functionality.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/gadgets/955537/google-home-smart-speaker-hands-on",
             "relatedResources": []
         },
         {
@@ -354,15 +363,6 @@ const websiteContent = {
             "content": "A recent OpenAI research paper reveals how AI agents are transforming workplace productivity by enabling longer and more complex tasks. These agents enhance efficiency across various roles, allowing for more sophisticated task management. The findings suggest significant potential for AI to reshape traditional workflows, offering competitive advantages to early adopters. Businesses should consider integrating AI agents to optimize operations and remain competitive. This development highlights the ongoing evolution of AI's role in professional environments.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/how-agents-are-transforming-work",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "OpenAI and Broadcom Debut LLM-Optimized Chip for AI Inference",
-            "title": "Jalapeño Chip Enhances AI Inference Performance and Efficiency",
-            "content": "OpenAI and Broadcom have introduced Jalapeño, a custom chip designed to optimize large language model (LLM) inference. This chip aims to improve performance, efficiency, and scalability across AI systems, addressing key challenges in AI deployment. By enhancing inference capabilities, Jalapeño could significantly reduce operational costs and improve AI application responsiveness. AI developers and enterprises should evaluate the potential benefits of integrating this chip into their infrastructure. This collaboration underscores the importance of hardware innovation in advancing AI technology.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
             "relatedResources": []
         }
     ],
