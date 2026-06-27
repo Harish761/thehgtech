@@ -1,94 +1,9 @@
 {
-  "last_updated": "2026-06-27T03:30:01.032826",
+  "last_updated": "2026-06-27T13:43:34.438025",
   "period": "Last 7 days",
-  "total_groups": 31,
-  "total_victims": 245,
+  "total_groups": 29,
+  "total_victims": 195,
   "groups": [
-    {
-      "name": "Lockbit5",
-      "count": 33,
-      "victims": [
-        {
-          "name": "probat.ag",
-          "date": "2026-06-20T09:33:51+00:00",
-          "url": "https://www.ransomware.live/id/cHJvYmF0LmFnQGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:33:51+00:00"
-        },
-        {
-          "name": "eternal.hk",
-          "date": "2026-06-20T09:33:20+00:00",
-          "url": "https://www.ransomware.live/id/ZXRlcm5hbC5oa0Bsb2NrYml0NQ==",
-          "discovered_date": "2026-06-20T09:33:20+00:00"
-        },
-        {
-          "name": "5deagosto.com.br",
-          "date": "2026-06-20T09:32:48+00:00",
-          "url": "https://www.ransomware.live/id/NWRlYWdvc3RvLmNvbS5ickBsb2NrYml0NQ==",
-          "discovered_date": "2026-06-20T09:32:48+00:00"
-        },
-        {
-          "name": "abandw.com",
-          "date": "2026-06-20T09:32:17+00:00",
-          "url": "https://www.ransomware.live/id/YWJhbmR3LmNvbUBsb2NrYml0NQ==",
-          "discovered_date": "2026-06-20T09:32:17+00:00"
-        },
-        {
-          "name": "ag-360.ca",
-          "date": "2026-06-20T09:31:47+00:00",
-          "url": "https://www.ransomware.live/id/YWctMzYwLmNhQGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:31:47+00:00"
-        },
-        {
-          "name": "elematic.com",
-          "date": "2026-06-20T09:31:16+00:00",
-          "url": "https://www.ransomware.live/id/ZWxlbWF0aWMuY29tQGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:31:16+00:00"
-        },
-        {
-          "name": "amc.co.th",
-          "date": "2026-06-20T09:30:46+00:00",
-          "url": "https://www.ransomware.live/id/YW1jLmNvLnRoQGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:30:46+00:00"
-        },
-        {
-          "name": "casaandina.com.co",
-          "date": "2026-06-20T09:30:15+00:00",
-          "url": "https://www.ransomware.live/id/Y2FzYWFuZGluYS5jb20uY29AbG9ja2JpdDU=",
-          "discovered_date": "2026-06-20T09:30:15+00:00"
-        },
-        {
-          "name": "bvi.co.bw",
-          "date": "2026-06-20T09:29:44+00:00",
-          "url": "https://www.ransomware.live/id/YnZpLmNvLmJ3QGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:29:44+00:00"
-        },
-        {
-          "name": "comta.com.tw",
-          "date": "2026-06-20T09:29:14+00:00",
-          "url": "https://www.ransomware.live/id/Y29tdGEuY29tLnR3QGxvY2tiaXQ1",
-          "discovered_date": "2026-06-20T09:29:14+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "AT",
-        "BR",
-        "BW",
-        "CA",
-        "CN"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
     {
       "name": "Nova",
       "count": 32,
@@ -449,96 +364,6 @@
       ]
     },
     {
-      "name": "Cmdorganization",
-      "count": 14,
-      "victims": [
-        {
-          "name": "Kohinoor Mills",
-          "date": "2026-06-26T07:51:01.493213+00:00",
-          "url": "",
-          "discovered_date": "2026-06-26T07:51:01.493213+00:00"
-        },
-        {
-          "name": "Coldstat Refrigeration",
-          "date": "2026-06-23T19:20:24.570382+00:00",
-          "url": "",
-          "discovered_date": "2026-06-23T19:20:24.570382+00:00"
-        },
-        {
-          "name": "EON Meditech Pvt",
-          "date": "2026-06-22T20:50:15.598300+00:00",
-          "url": "",
-          "discovered_date": "2026-06-22T20:50:15.598300+00:00"
-        },
-        {
-          "name": "Union Tractor",
-          "date": "2026-06-22T10:50:19.390654+00:00",
-          "url": "",
-          "discovered_date": "2026-06-22T10:50:19.390654+00:00"
-        },
-        {
-          "name": "Wall ISD",
-          "date": "2026-06-21T17:50:17.697339+00:00",
-          "url": "",
-          "discovered_date": "2026-06-21T17:50:17.697339+00:00"
-        },
-        {
-          "name": "Pinnacle Re-Tec",
-          "date": "2026-06-20T10:50:16.663547+00:00",
-          "url": "",
-          "discovered_date": "2026-06-20T10:50:16.663547+00:00"
-        },
-        {
-          "name": "Southern design RV",
-          "date": "2026-06-20T08:50:12.955694+00:00",
-          "url": "",
-          "discovered_date": "2026-06-20T08:50:12.955694+00:00"
-        },
-        {
-          "name": "Kohinoor Mills",
-          "date": "2026-06-26T07:51:01+00:00",
-          "url": "https://www.ransomware.live/id/S29oaW5vb3IgTWlsbHNAY21kb3JnYW5pemF0aW9u",
-          "discovered_date": "2026-06-26T07:51:01+00:00"
-        },
-        {
-          "name": "Coldstat Refrigeration",
-          "date": "2026-06-23T19:20:24+00:00",
-          "url": "https://www.ransomware.live/id/Q29sZHN0YXQgUmVmcmlnZXJhdGlvbkBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-23T19:20:24+00:00"
-        },
-        {
-          "name": "EON Meditech Pvt",
-          "date": "2026-06-22T20:50:15+00:00",
-          "url": "https://www.ransomware.live/id/RU9OIE1lZGl0ZWNoIFB2dEBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-22T20:50:15+00:00"
-        }
-      ],
-      "industries": [
-        "Agriculture and Food Production",
-        "Business Services",
-        "Consumer Services",
-        "Education",
-        "Healthcare"
-      ],
-      "countries": [
-        "AU",
-        "GB",
-        "IN",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        2,
-        4,
-        2,
-        0,
-        0,
-        2,
-        0
-      ]
-    },
-    {
       "name": "Payload",
       "count": 13,
       "victims": [
@@ -630,87 +455,90 @@
       ]
     },
     {
-      "name": "Thegentlemen",
-      "count": 13,
+      "name": "Cmdorganization",
+      "count": 10,
       "victims": [
         {
-          "name": "hiddenn",
-          "date": "2026-06-20T08:54:23+00:00",
-          "url": "https://www.ransomware.live/id/aGlkZGVubkB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:54:23+00:00"
+          "name": "Kohinoor Mills",
+          "date": "2026-06-26T07:51:01.493213+00:00",
+          "url": "",
+          "discovered_date": "2026-06-26T07:51:01.493213+00:00"
         },
         {
-          "name": "Vera Chimie Management",
-          "date": "2026-06-20T08:54:02+00:00",
-          "url": "https://www.ransomware.live/id/VmVyYSBDaGltaWUgTWFuYWdlbWVudEB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:54:02+00:00"
+          "name": "Coldstat Refrigeration",
+          "date": "2026-06-23T19:20:24.570382+00:00",
+          "url": "",
+          "discovered_date": "2026-06-23T19:20:24.570382+00:00"
         },
         {
-          "name": "Alexander Buch Bilanzbuchhalter",
-          "date": "2026-06-20T08:53:41+00:00",
-          "url": "https://www.ransomware.live/id/QWxleGFuZGVyIEJ1Y2ggQmlsYW56YnVjaGhhbHRlckB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:53:41+00:00"
+          "name": "EON Meditech Pvt",
+          "date": "2026-06-22T20:50:15.598300+00:00",
+          "url": "",
+          "discovered_date": "2026-06-22T20:50:15.598300+00:00"
         },
         {
-          "name": "SGS Malaysia",
-          "date": "2026-06-20T08:53:17+00:00",
-          "url": "https://www.ransomware.live/id/U0dTIE1hbGF5c2lhQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-06-20T08:53:17+00:00"
+          "name": "Union Tractor",
+          "date": "2026-06-22T10:50:19.390654+00:00",
+          "url": "",
+          "discovered_date": "2026-06-22T10:50:19.390654+00:00"
         },
         {
-          "name": "TERRIO Therapy Fitness",
-          "date": "2026-06-20T08:52:57+00:00",
-          "url": "https://www.ransomware.live/id/VEVSUklPIFRoZXJhcHkgRml0bmVzc0B0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:52:57+00:00"
+          "name": "Wall ISD",
+          "date": "2026-06-21T17:50:17.697339+00:00",
+          "url": "",
+          "discovered_date": "2026-06-21T17:50:17.697339+00:00"
         },
         {
-          "name": "Ty Thac Co",
-          "date": "2026-06-20T08:52:36+00:00",
-          "url": "https://www.ransomware.live/id/VHkgVGhhYyBDb0B0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:52:36+00:00"
+          "name": "Kohinoor Mills",
+          "date": "2026-06-26T07:51:01+00:00",
+          "url": "https://www.ransomware.live/id/S29oaW5vb3IgTWlsbHNAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-06-26T07:51:01+00:00"
         },
         {
-          "name": "Amigest",
-          "date": "2026-06-20T08:52:16+00:00",
-          "url": "https://www.ransomware.live/id/QW1pZ2VzdEB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-06-20T08:52:16+00:00"
+          "name": "Coldstat Refrigeration",
+          "date": "2026-06-23T19:20:24+00:00",
+          "url": "https://www.ransomware.live/id/Q29sZHN0YXQgUmVmcmlnZXJhdGlvbkBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-23T19:20:24+00:00"
         },
         {
-          "name": "Yudu Technology",
-          "date": "2026-06-20T08:51:55+00:00",
-          "url": "https://www.ransomware.live/id/WXVkdSBUZWNobm9sb2d5QHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-06-20T08:51:55+00:00"
+          "name": "EON Meditech Pvt",
+          "date": "2026-06-22T20:50:15+00:00",
+          "url": "https://www.ransomware.live/id/RU9OIE1lZGl0ZWNoIFB2dEBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-22T20:50:15+00:00"
         },
         {
-          "name": "Burris MacOmber",
-          "date": "2026-06-20T08:51:35+00:00",
-          "url": "https://www.ransomware.live/id/QnVycmlzIE1hY09tYmVyQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-06-20T08:51:35+00:00"
+          "name": "Union Tractor",
+          "date": "2026-06-22T10:50:19+00:00",
+          "url": "https://www.ransomware.live/id/VW5pb24gVHJhY3RvckBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-22T10:50:19+00:00"
         },
         {
-          "name": "Sertrans",
-          "date": "2026-06-20T08:51:14+00:00",
-          "url": "https://www.ransomware.live/id/U2VydHJhbnNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-06-20T08:51:14+00:00"
+          "name": "Wall ISD",
+          "date": "2026-06-21T17:50:17+00:00",
+          "url": "https://www.ransomware.live/id/V2FsbCBJU0RAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-06-21T17:50:17+00:00"
         }
       ],
-      "industries": [],
-      "countries": [
-        "AE",
-        "DE",
-        "ES",
-        "FR",
-        "MX"
+      "industries": [
+        "Agriculture and Food Production",
+        "Education",
+        "Healthcare",
+        "Manufacturing"
       ],
-      "trend": "up",
-      "trend_percentage": 15,
+      "countries": [
+        "GB",
+        "IN",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
       "daily_counts": [
+        2,
+        4,
+        2,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
+        2,
         0
       ]
     },
