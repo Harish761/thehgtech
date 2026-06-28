@@ -92,22 +92,36 @@
     <link rel="dns-prefetch" href="//t.fullres.net">
 
             <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag("js", new Date());
-        gtag("config", "G-XL6RCXZJE2");
+        function loadGA() {
+            var script = document.createElement('script');
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2";
+            script.async = true;
+            document.head.appendChild(script);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag("js", new Date());
+            gtag("config", "G-XL6RCXZJE2");
+        }
+        
+        // Delay GA until interaction or 3.5 seconds
+        var gaLoaded = false;
+        function initGA() {
+            if (!gaLoaded) {
+                gaLoaded = true;
+                loadGA();
+                ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => window.removeEventListener(e, initGA));
+            }
+        }
+        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => window.addEventListener(e, initGA, {passive: true}));
+        setTimeout(initGA, 3500);
     </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag("js", new Date());
-        gtag("config", "G-XL6RCXZJE2");
-    </script>
+
 
     <!-- Preload critical resources for mobile -->
     <link rel="preload" href="logo-dark.png" as="image" media="(max-width: 768px)">
+    <!-- Preload critical resources for desktop -->
+    <link rel="preload" href="logo-dark.png" as="image" media="(min-width: 769px)">
 
     <!-- Critical CSS - Inline for faster FCP -->
     <style>
@@ -343,7 +357,7 @@
     </style>
 
     <!-- Enterprise Design System (Core tokens and base styles) -->
-    <link rel="stylesheet" href="design-system.min.css?v=20260528">
+    <link rel="stylesheet" href="design-system.min.css?v=20260528" media="print" onload="this.media='all'">
 
     <!-- Non-critical CSS - Load async -->
     <link rel="stylesheet" href="rotating-text.min.css?v=2" media="print" onload="this.media='all'">
@@ -378,10 +392,10 @@
     <link rel="preload" href="m-layout.min.css?v=3.4" as="style" media="(max-width: 768px)">
     <link rel="preload" href="m-components.min.css?v=20260203" as="style" media="(max-width: 768px)">
     <!-- Mobile CSS - Sync load required to prevent CLS (layout shifts) -->
-    <link rel="stylesheet" href="m-core.min.css?v=20260203" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-layout.min.css?v=3.4" media="(max-width: 768px)">
-    <link rel="stylesheet" href="m-components.min.css?v=20260203" media="(max-width: 768px)">
-    <link rel="stylesheet" href="theme-toggle.css">
+    <link rel="stylesheet" href="m-core.min.css?v=20260203" media="print" onload="this.media=\'all\'">
+    <link rel="stylesheet" href="m-layout.min.css?v=3.4" media="print" onload="this.media=\'all\'">
+    <link rel="stylesheet" href="m-components.min.css?v=20260203" media="print" onload="this.media=\'all\'">
+    <link rel="stylesheet" href="theme-toggle.css" media="print" onload="this.media=\'all\'">
     <script src="m-app.min.js?v=20260528_coffee" defer></script>
     <script src="theme-toggle.js" defer></script>
     <!-- Light Mode (Premium Theme Addition) -->
@@ -399,7 +413,7 @@
       "url": "https://thehgtech.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://thehgtech.com/logo.png",
+        "url": "https://thehgtech.com/images/logo-dark.png",
         "width": 600,
         "height": 60
       },
@@ -490,14 +504,6 @@
       "publisher": {
         "@type": "Organization",
         "name": "TheHGTech"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://thehgtech.com/?search={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
       }
     }
     </script>
@@ -579,7 +585,6 @@
     <!-- Extracted Critical/Homepage Styles (Async) -->
     <link rel="stylesheet" href="homepage-styles.css?v=1.2" media="print" onload="this.media='all'">
     <noscript>
-        <link rel="stylesheet" href="homepage-styles.css?v=1.2">
     </noscript>
 
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
@@ -593,56 +598,7 @@
             }
         })();
     </script>
-    <link rel="stylesheet" href="mobile-nav.css">
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "TheHGTech",
-  "url": "https://thehgtech.com",
-  "logo": "https://thehgtech.com/images/logo-dark.png",
-  "sameAs": [
-    "https://twitter.com/thehgtech",
-    "https://www.linkedin.com/company/thehgtech"
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "url": "https://thehgtech.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://thehgtech.com/search?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is TheHGTech?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "TheHGTech is a cybersecurity intelligence hub targeting SOC analysts and security professionals, providing live threat intel, CVE tracking, and expert cyber security news."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are the cybersecurity tools on TheHGTech free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, TheHGTech provides free open-source security tools, including a live threat intel dashboard and real-time CVE tracker."
-      }
-    }
-  ]
-}
-    </script>
+    <link rel="stylesheet" href="mobile-nav.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -840,7 +796,7 @@
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
                     <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
                     <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
                     <span class="logo-text">TheHGTech</span>
@@ -848,7 +804,7 @@
             </div>
 
             <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+                <a href="/#news">News</a>
 
                 <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
@@ -1676,7 +1632,7 @@
                 <!-- Stats Bar -->
                 <div class="hero-stats-bar"
                     style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; padding: 1.5rem 2rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border); border-radius: 16px; backdrop-filter: blur(10px); margin-bottom: 2rem;">
-                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                    <div class="stat-item" style="text-align: center; min-width: 100px; min-height: 55px;">
                         <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);"><span
                                 id="heroIocCountDynamic">52K+</span></div>
                         <div
@@ -1684,14 +1640,14 @@
                             Live IOCs</div>
                     </div>
                     <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
-                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                    <div class="stat-item" style="text-align: center; min-width: 100px; min-height: 55px;">
                         <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);">9</div>
                         <div
                             style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
                             Threat Feeds</div>
                     </div>
                     <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
-                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                    <div class="stat-item" style="text-align: center; min-width: 100px; min-height: 55px;">
                         <div style="font-size: 2rem; font-weight: 800; color: #FF3D3D;"><span
                                 id="heroCveCountDynamic">50</span></div>
                         <div
@@ -1699,7 +1655,7 @@
                             Critical CVEs</div>
                     </div>
                     <div class="stat-divider" style="width: 1px; height: 50px; background: var(--border);"></div>
-                    <div class="stat-item" style="text-align: center; min-width: 100px;">
+                    <div class="stat-item" style="text-align: center; min-width: 100px; min-height: 55px;">
                         <div style="font-size: 2rem; font-weight: 800; color: var(--accent-cyan);">4hr</div>
                         <div
                             style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">
@@ -2798,7 +2754,21 @@
                     </script>
 
                     <!-- reCAPTCHA: explicit render so it works even when loaded after DOM -->
-                    <script src="https://www.google.com/recaptcha/api.js?onload=_hgHomeCaptcha&render=explicit&hl=en" async defer></script>
+                    <script>
+        var recaptchaLoaded = false;
+        function initRecaptcha() {
+            if (!recaptchaLoaded) {
+                recaptchaLoaded = true;
+                var s = document.createElement('script');
+                s.src = "https://www.google.com/recaptcha/api.js?onload=_hgHomeCaptcha&render=explicit&hl=en";
+                s.async = true; s.defer = true;
+                document.body.appendChild(s);
+                ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => window.removeEventListener(e, initRecaptcha));
+            }
+        }
+        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => window.addEventListener(e, initRecaptcha, {passive: true}));
+        setTimeout(initRecaptcha, 4000);
+</script>
                 </div>
 
 
@@ -3065,6 +3035,159 @@
                             <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
                                 <i class="fas fa-spinner fa-spin"></i> Loading articles...
                             </div>
+<noscript>
+<div style='display:flex; flex-direction:column; gap:1rem;'>
+    <a href="/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/beyond-klue-hero-new.jpg" alt="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 25, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/tata-electronics-ransomware-analysis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/tata-electronics-ransomware-analysis-2026.png" alt="Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 23, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/hidden-debt-vpn-breaches-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/hidden-debt-vpn-breaches-2026.png" alt="The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 22, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 22, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 15, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 15, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 15, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/copilot-vs-apple-intelligence-security-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/copilot-vs-apple-intelligence-security-2026.jpg" alt="Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 11, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)</h3>
+        </div>
+    </a>
+    </div>
+</noscript>
+<noscript>
+<div style='display:flex; flex-direction:column; gap:1rem;'>
+    <a href="/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/beyond-klue-hero-new.jpg" alt="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 25, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/tata-electronics-ransomware-analysis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/tata-electronics-ransomware-analysis-2026.png" alt="Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 23, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/hidden-debt-vpn-breaches-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/hidden-debt-vpn-breaches-2026.png" alt="The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 22, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 22, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 15, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 15, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 15, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/copilot-vs-apple-intelligence-security-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/copilot-vs-apple-intelligence-security-2026.jpg" alt="Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 11, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)</h3>
+        </div>
+    </a>
+    </div>
+</noscript>
+<noscript>
+<div style='display:flex; flex-direction:column; gap:1rem;'>
+    <a href="/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/beyond-klue-hero-new.jpg" alt="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 25, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/tata-electronics-ransomware-analysis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/tata-electronics-ransomware-analysis-2026.png" alt="Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 23, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/hidden-debt-vpn-breaches-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/hidden-debt-vpn-breaches-2026.png" alt="The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 22, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 22, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 22, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/#" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/weekly-threat-report-generic.png" alt="Weekly Threat Report: June 15, 2026" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 15, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Weekly Threat Report: June 15, 2026</h3>
+        </div>
+    </a>
+    
+    <a href="/articles/copilot-vs-apple-intelligence-security-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
+        <img src="/images/articles/copilot-vs-apple-intelligence-security-2026.jpg" alt="Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <div>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">June 11, 2026</div>
+            <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)</h3>
+        </div>
+    </a>
+    </div>
+</noscript>
 <noscript>
 <div style='display:flex; flex-direction:column; gap:1rem;'>
     <a href="/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
@@ -5572,8 +5695,9 @@
         }
 
         // Try to load snapshot metrics when page loads
-        // First, check if threat-intel.js script exists, if not add it
-        if (!document.querySelector('script[src="threat-intel.js"]')) {
+        // Script already loaded via defer in <head> — just call loadSnapshotMetrics directly
+        // (The dynamic injection below is a safety net only if the defer script is missing)
+        if (!document.querySelector('script[src*="threat-intel.js"]')) {
             const script = document.createElement('script');
             script.src = 'threat-intel.js';
             script.onload = function () {
@@ -5581,9 +5705,8 @@
             };
             script.onerror = function () {
                 console.error('Failed to load threat-intel.js');
-                const container = document.getElementById('snapshotCards');
                 if (container) {
-                    container.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-muted);">Snapshot metrics unavailable. <a data-removed-broken-link="true" style="color: var(--accent-cyan);">View full dashboard</a></div>';
+                    container.innerHTML = '<div style="text-align: center; padding: 2rem; color: var(--text-muted);">Snapshot metrics unavailable. <a href="/threat-intel.html" style="color: var(--accent-cyan);">View full dashboard</a></div>';
                 }
             };
             document.head.appendChild(script);

@@ -1,15 +1,18 @@
 # TheHGTech Robots.txt - Optimized for Maximum Crawl Coverage
-# Last Updated: 2025-12-17
+# Last Updated: 2026-06-28
 
 User-agent: *
 Allow: /
 Disallow: /*.py$
-Disallow: /*.md$
 Disallow: /venv/
 Disallow: /__pycache__/
 Disallow: /*.backup
-Disallow: /*.json$
 Disallow: /admin-articles.html
+Disallow: /mobile_backup/
+Disallow: /.git/
+# Block dev-only JSON data files (not the live data feeds)
+Disallow: /geo_analysis_results.json
+Disallow: /extracted_articles.json
 
 # Sitemaps
 Sitemap: https://thehgtech.com/sitemap.xml

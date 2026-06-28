@@ -351,9 +351,48 @@
   ]
 }
     </script>
+
+    <!-- SEO: NewsArticle Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Malware Analysis: inside the 'MaliciousCorgi' VS Code Attack",
+      "description": 'Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.',
+      "image": ['https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png'],
+      "datePublished": '2026-01-01T12:00:00+00:00',
+      "dateModified": '2026-01-01T12:00:00+00:00',
+      "author": [{
+        "@type": "Person",
+        "name": 'TheHGTech Security Team',
+        "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+      }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/images/logo-dark.png"
+        }
+      },
+      "mainEntityOfPage": 'https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html',
+      "articleSection": 'AI Security'
+    }
+    </script>
 </head>
 
 <body>
+    <!-- SEO Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
+      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
+        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li style="color:#ffffff;" aria-current="page">Malware Analysis: inside the 'MaliciousCorgi' VS C…</li>
+      </ol>
+    </nav>
     <!-- Mobile Header -->
 
 

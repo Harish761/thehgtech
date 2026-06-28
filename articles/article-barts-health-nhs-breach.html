@@ -32,12 +32,12 @@
     <meta name="twitter:image" content="https://thehgtech.com/images/nhs-healthcare-breach.png">
 
     <!-- Mobile Navigation CSS -->
-    <link rel="stylesheet" href="m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="light-mode.css">
-    <script src="m-app.min.js?v=20260528_coffee" defer></script>
+    <link rel="stylesheet" href="/light-mode.css">
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
     <style>
         :root {
             --bg-primary: #0a0a0a;
@@ -122,7 +122,7 @@
             -webkit-background-clip: text;
         }
     </style>
-<link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
+<link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
 
     <!-- ========== GLOBAL THEME SCRIPT ========== -->
     <script>
@@ -181,7 +181,7 @@
         }
     }
     </script>
-    <link rel="stylesheet" href="mobile-nav.css">
+    <link rel="stylesheet" href="/mobile-nav.css">
 
     <script src="/theme-toggle.js" defer></script>
     <script type="application/ld+json">
@@ -233,9 +233,48 @@
   ]
 }
     </script>
+
+    <!-- SEO: NewsArticle Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": 'Barts Health NHS Breach: When Healthcare Meets Zero-Day Ransomware Attacks',
+      "description": 'Analysis of the Barts Health NHS Trust data breach involving Clop ransomware exploiting an Oracle E-Business Suite zero-day vulnerability (CVE-2025-61882) affecting patient and employee data.',
+      "image": ['https://thehgtech.com/images/nhs-healthcare-breach.png'],
+      "datePublished": '2026-01-01T12:00:00+00:00',
+      "dateModified": '2026-01-01T12:00:00+00:00',
+      "author": [{
+        "@type": "Person",
+        "name": 'TheHGTech',
+        "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+      }],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/images/logo-dark.png"
+        }
+      },
+      "mainEntityOfPage": 'https://thehgtech.com/articles/article-barts-health-nhs-breach.html',
+      "articleSection": 'Ransomware'
+    }
+    </script>
 </head>
 
 <body>
+    <!-- SEO Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
+      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
+        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li style="color:#ffffff;" aria-current="page">Barts Health NHS Breach: When Healthcare Meets Zer…</li>
+      </ol>
+    </nav>
     <!-- Mobile Header -->
 
 
@@ -663,10 +702,10 @@
             </div>
 
         </article>
-<script src="ui-enhancements.js?v=20260517" defer></script>
+<script src="/ui-enhancements.js?v=20260517" defer></script>
 
     <script src="/command-palette.js" defer></script>
-    <script src="mobile-nav.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
 </body>
 

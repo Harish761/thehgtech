@@ -129,7 +129,7 @@ new_content = """<article>
 | spath input=requestParameters.parameters.commands{} output=Commands
 | mvexpand Commands
 | search Commands IN ("*curl*", "*wget*", "*chmod +x*", "*nohup*")
-| eval is_suspicious=if(match(Commands, "(?i)(/tmp/.*|nohup.*&|\.pem)"), "True", "False")
+| eval is_suspicious=if(match(Commands, r"(?i)(/tmp/.*|nohup.*&|\.pem)"), "True", "False")
 | where is_suspicious="True"
 | stats count by userName, src_ip, Commands, awsRegion
 | sort - count</code></pre>

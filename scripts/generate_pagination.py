@@ -20,12 +20,12 @@ with open(articles_html_path, 'r') as f:
 def make_absolute(match):
     attr = match.group(1)
     val = match.group(2)
-    if val.startswith('/') or val.startswith('http') or val.startswith('data:') or val.startswith('#'):
+    if val.startswith('/') or val.startswith('http') or val.startswith('data:') or val.startswith('#') or val.startswith('mailto:') or val.startswith('javascript:'):
         return match.group(0)
     return f'{attr}="/{val}"'
 
 template_abs = re.sub(r'(href)="([^"]+)"', make_absolute, template)
-template_abs = re.sub(r'(src)="([^"]+)"', make_absolute, template)
+template_abs = re.sub(r'(src)="([^"]+)"', make_absolute, template_abs)
 
 ITEMS_PER_PAGE = 12
 total_pages = (len(articles) + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
@@ -39,11 +39,14 @@ def generate_article_html(article):
     url = article.get('externalUrl', '#')
     if not url.startswith('/') and not url.startswith('http'):
         url = '/' + url
+    image_url = article.get('image', '')
+    if image_url and not image_url.startswith('/') and not image_url.startswith('http'):
+        image_url = '/' + image_url
     return f"""
     <article class="article-card" style="display:block;">
         <a href="{url}" style="text-decoration:none; color:inherit;">
             <div class="article-image">
-                <img src="{article.get('image', '')}" alt="{article.get('title', '')}" loading="lazy">
+                <img src="{image_url}" alt="{article.get('title', '')}" loading="lazy">
                 <div class="article-category">{article.get('category', 'Article')}</div>
             </div>
             <div class="article-content">
@@ -129,9 +132,12 @@ for article in articles[:6]: # Index usually shows fewer articles
     url = article.get('externalUrl', '#')
     if not url.startswith('/') and not url.startswith('http'):
         url = '/' + url
+    image_url = article.get('image', '')
+    if image_url and not image_url.startswith('/') and not image_url.startswith('http'):
+        image_url = '/' + image_url
     index_articles_html += f"""
     <a href="{url}" class="featured-card" style="display:flex; gap:1.5rem; text-decoration:none; background:var(--bg-card); padding:1.5rem; border-radius:12px; border:1px solid var(--border);">
-        <img src="{article.get('image', '')}" alt="{article.get('title', '')}" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
+        <img src="{image_url}" alt="{article.get('title', '')}" style="width:120px; height:80px; object-fit:cover; border-radius:8px;" loading="lazy">
         <div>
             <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:0.5rem;">{article.get('date', '')}</div>
             <h3 style="font-size:1.1rem; color:var(--text-primary); margin-bottom:0.5rem;">{article.get('title', '')}</h3>

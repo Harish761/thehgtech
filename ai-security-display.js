@@ -410,7 +410,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
         // Add top AI incidents
         if (aiData.aiid?.incidents) {
             aiData.aiid.incidents.slice(0, 3).forEach(incident => {
-                const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
+                const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS.other;
                 threats.push({
                     type: 'ai_incident',
                     name: incident.title,
@@ -632,7 +632,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
         const html = `
             <div class="incidents-list">
                 ${incidents.slice(0, 15).map(incident => {
-            const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS['other'];
+            const categoryIcon = CATEGORY_ICONS[incident.category] || CATEGORY_ICONS.other;
             return `
                     <div class="incident-card clickable" data-type="incident" data-id="${incident.id}"
                          onclick="window.showAIModal('incident', window._incidentData['${incident.id}'])">
@@ -650,7 +650,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
                         </div>
                         <span class="incident-arrow"><i class="fas fa-expand"></i></span>
                     </div>
-                `}).join('')}
+                `;}).join('')}
             </div>
             <div class="view-all-link">
                 <a href="https://incidentdatabase.ai/apps/discover/" target="_blank" rel="noopener" style="color: #ff9500; background: rgba(255, 149, 0, 0.1); border-color: rgba(255, 149, 0, 0.2);">
@@ -707,7 +707,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
                             <span class="owasp-link"><i class="fas fa-expand"></i> View Details</span>
                         </div>
                     </div>
-                `}).join('')}
+                `;}).join('')}
             </div>
             <div class="view-all-link owasp-link-color">
                 <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/" target="_blank" rel="noopener">
