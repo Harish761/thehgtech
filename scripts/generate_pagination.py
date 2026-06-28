@@ -2,10 +2,20 @@ import os
 import json
 import re
 
-articles_json_path = '/Volumes/Data-Personal/Webpage/thehgtech/ioc-data/articles.json'
-articles_html_path = '/Volumes/Data-Personal/Webpage/thehgtech/articles.html'
-index_html_path = '/Volumes/Data-Personal/Webpage/thehgtech/index.html'
-pages_dir = '/Volumes/Data-Personal/Webpage/thehgtech/articles/page'
+import sys
+
+# Get the repo root based on the script location (assuming it's in scripts/ or a subdirectory)
+script_dir = os.path.dirname(os.path.abspath(__file__))
+# Check if we are inside scripts/ or root
+if os.path.basename(script_dir) == 'scripts':
+    repo_root = os.path.dirname(script_dir)
+else:
+    repo_root = os.getcwd()
+
+articles_json_path = os.path.join(repo_root, 'ioc-data', 'articles.json')
+articles_html_path = os.path.join(repo_root, 'articles.html')
+index_html_path = os.path.join(repo_root, 'index.html')
+pages_dir = os.path.join(repo_root, 'articles', 'page')
 
 if not os.path.exists(pages_dir):
     os.makedirs(pages_dir)
