@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-27T15:48:10.843177",
-  "total_incidents": 28998,
+  "last_updated": "2026-06-28T06:42:42.964853",
+  "total_incidents": 29001,
   "incidents": [
+    {
+      "id": "safepay_hellmold-plank.de",
+      "victim_name": "hellmold-plank.de",
+      "threat_actor": "safepay",
+      "date_discovered": "2026-06-27T18:28:27.757290+00:00",
+      "industry": "Manufacturing",
+      "website": "hellmold-plank.de",
+      "claim": "Founded in 1904 by Heinrich Hellmold and Heinrich Plank, the company has evolved from a local cartage business into a …",
+      "screenshot": "https://images.ransomware.live/victims/d7b7dbcdbab4f828b67ab12bcc4074c2.png",
+      "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/hellmold-plankde/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "play_j&j_gaming",
+      "victim_name": "J&J Gaming",
+      "threat_actor": "play",
+      "date_discovered": "2026-06-27T18:27:41.070367+00:00",
+      "industry": "Consumer Services",
+      "website": "www.jjgaming.com",
+      "claim": "United States",
+      "screenshot": "https://images.ransomware.live/victims/32ced3ad919c732b29ffc35b6c05ec9e.png",
+      "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=4w1k2am8Ci4C3d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "play_kuhnline",
+      "victim_name": "Kuhnline",
+      "threat_actor": "play",
+      "date_discovered": "2026-06-27T18:27:04.353820+00:00",
+      "industry": "Not Found",
+      "website": "www.kuhnline.com",
+      "claim": "United States",
+      "screenshot": "https://images.ransomware.live/victims/92d3842a4daea0c589492102f19014c5.png",
+      "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=PpzPwMHniRvNIx",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_aptora",
       "victim_name": "Aptora",
