@@ -86,9 +86,9 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -470,6 +470,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Securing Autonomous AI Agents: Architecture Guide 2026",
+        "description": "Enterprise security architecture for autonomous AI agents. Permission scoping, HITL enforcement, sandboxing, and defense strategies for LangChain, AutoGPT, and custom agent frameworks.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. The Agent Paradigm Shift", "text": "Refer to the section '1. The Agent Paradigm Shift' in the guide."},
+        {"@type": "HowToStep", "name": "2. Threat Model & Attack Surface", "text": "Refer to the section '2. Threat Model & Attack Surface' in the guide."},
+        {"@type": "HowToStep", "name": "3. Attack Vector Analysis", "text": "Refer to the section '3. Attack Vector Analysis' in the guide."},
+        {"@type": "HowToStep", "name": "4. Real-World Incidents (2024-2026)", "text": "Refer to the section '4. Real-World Incidents (2024-2026)' in the guide."},
+        {"@type": "HowToStep", "name": "5. Defense Architecture", "text": "Refer to the section '5. Defense Architecture' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Securing Autonomous AI Agents: Architecture G\u2026", "item": "https://thehgtech.com/guides/ai-agent-security.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

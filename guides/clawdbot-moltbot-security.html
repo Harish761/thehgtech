@@ -127,9 +127,9 @@
     </script>
 
     <!-- CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -676,6 +676,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Clawdbot/Moltbot Security Guide 2026",
+        "description": "Complete security guide for Clawdbot (now Moltbot) AI assistant. Learn the critical risks: exposed instances, root access vulnerabilities, prompt injection, and how to secure your installation.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "What is Clawdbot/Moltbot?", "text": "Refer to the section 'What is Clawdbot/Moltbot?' in the guide."},
+        {"@type": "HowToStep", "name": "Timeline of Events", "text": "Refer to the section 'Timeline of Events' in the guide."},
+        {"@type": "HowToStep", "name": "Capabilities & Features", "text": "Refer to the section 'Capabilities & Features' in the guide."},
+        {"@type": "HowToStep", "name": "Critical Security Risks", "text": "Refer to the section 'Critical Security Risks' in the guide."},
+        {"@type": "HowToStep", "name": "Real-World Attacks Documented", "text": "Refer to the section 'Real-World Attacks Documented' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Clawdbot/Moltbot Security Guide 2026", "item": "https://thehgtech.com/guides/clawdbot-moltbot-security.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

@@ -123,10 +123,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -540,6 +539,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Cloud Security Hardening: AWS, Azure & GCP Checklist [2025]",
+        "description": "\u2601\ufe0f Multi-cloud security hardening for AWS, Azure & GCP. IAM, network security, encryption & logging. Comparison tables + CLI commands included.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Identity and Access Management (IAM)", "text": "Refer to the section '1. Identity and Access Management (IAM)' in the guide."},
+        {"@type": "HowToStep", "name": "2. Network Security", "text": "Refer to the section '2. Network Security' in the guide."},
+        {"@type": "HowToStep", "name": "3. Data Encryption", "text": "Refer to the section '3. Data Encryption' in the guide."},
+        {"@type": "HowToStep", "name": "4. Logging, Monitoring & Detection", "text": "Refer to the section '4. Logging, Monitoring & Detection' in the guide."},
+        {"@type": "HowToStep", "name": "5. Compliance & Security Posture Management", "text": "Refer to the section '5. Compliance & Security Posture Management' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Cloud Security Hardening: AWS, Azure & GCP Ch\u2026", "item": "https://thehgtech.com/guides/cloud-security-hardening.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

@@ -84,7 +84,8 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
@@ -230,6 +231,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "SBOM & Software Supply Chain Security: Complete Implementation Guide 2026",
+        "description": "Complete technical guide to Software Bill of Materials (SBOM) and supply chain security. Covers CycloneDX, SPDX, Syft, SLSA framework, VEX documents, CI/CD integration, and regulatory compliance (EO 14028, EU CRA).",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Threat Landscape: Supply Chain Attacks in 2026", "text": "Refer to the section '1. Threat Landscape: Supply Chain Attacks in 2026' in the guide."},
+        {"@type": "HowToStep", "name": "2. SBOM Fundamentals", "text": "Refer to the section '2. SBOM Fundamentals' in the guide."},
+        {"@type": "HowToStep", "name": "3. CycloneDX vs SPDX: Deep Comparison", "text": "Refer to the section '3. CycloneDX vs SPDX: Deep Comparison' in the guide."},
+        {"@type": "HowToStep", "name": "4. SBOM Generation: Syft, Trivy, cdxgen", "text": "Refer to the section '4. SBOM Generation: Syft, Trivy, cdxgen' in the guide."},
+        {"@type": "HowToStep", "name": "5. SLSA Framework: Build Integrity Levels", "text": "Refer to the section '5. SLSA Framework: Build Integrity Levels' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "SBOM & Software Supply Chain Security: Comple\u2026", "item": "https://thehgtech.com/guides/sbom-software-supply-chain-security.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 <body>

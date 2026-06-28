@@ -34,10 +34,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!-- Fonts & Icons -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Style System -->
     <link rel="stylesheet" href="/m-core.min.css?v=4.2">
@@ -372,6 +371,31 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "OWASP LLM Top 10: Exploitation & Defense Guide (2026 Edition)",
+        "description": "A research-grade analysis of the OWASP LLM Top 10 vulnerabilities. Includes live Python exploit payloads, LangChain defense patterns, and real-world attack case studies.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "Essential Tooling for Red Teamers", "text": "Refer to the section 'Essential Tooling for Red Teamers' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "OWASP LLM Top 10: Exploitation & Defense Guid\u2026", "item": "https://thehgtech.com/guides/owasp-llm-top-10.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

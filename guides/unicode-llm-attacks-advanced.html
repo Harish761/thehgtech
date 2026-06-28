@@ -95,9 +95,9 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -565,6 +565,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Advanced Unicode LLM Attacks: Variation Selector Exploitation & Defense Architecture [2026]",
+        "description": "Technical analysis of advanced Unicode attack vectors: variation selector exploitation, imperceptible adversarial suffixes, ASCII smuggling (CVE-2025-32711), and enterprise-scale defense implementations. Research-based coverage with experimental conditions.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Advanced Threat Model", "text": "Refer to the section '1. Advanced Threat Model' in the guide."},
+        {"@type": "HowToStep", "name": "2. Variation Selector Exploitation", "text": "Refer to the section '2. Variation Selector Exploitation' in the guide."},
+        {"@type": "HowToStep", "name": "3. Imperceptible Jailbreaks (2025-2026)", "text": "Refer to the section '3. Imperceptible Jailbreaks (2025-2026)' in the guide."},
+        {"@type": "HowToStep", "name": "4. ASCII Smuggling & EchoLeak Analysis", "text": "Refer to the section '4. ASCII Smuggling & EchoLeak Analysis' in the guide."},
+        {"@type": "HowToStep", "name": "5. Advanced Homoglyph Vectors", "text": "Refer to the section '5. Advanced Homoglyph Vectors' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Advanced Unicode LLM Attacks: Variation Selec\u2026", "item": "https://thehgtech.com/guides/unicode-llm-attacks-advanced.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

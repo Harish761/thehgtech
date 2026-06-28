@@ -147,16 +147,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- ========== PERFORMANCE OPTIMIZATION ========== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Chart.js (Loaded at bottom for performance) -->
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<!-- Chart.js (Loaded at bottom for performance) -->
 
     <!-- Dashboard Integration -->
     <link rel="stylesheet" href="threat-intel-tabs.css">
@@ -1619,6 +1615,20 @@
 
     <!-- Main Content -->
     <main class="main">
+    <!-- SEO Static Intro — Always Visible, Pre-JS -->
+    <section class="threat-intro" style="padding: 2rem; max-width: 900px; margin: 0 auto; margin-top: 100px;">
+      <h2>Live Threat Intelligence Dashboard</h2>
+      <p>TheHGTech Threat Intelligence Platform provides real-time monitoring of malicious indicators of compromise (IOCs) across multiple trusted feeds. Updated every 4 hours.</p>
+      <p>Track active ransomware campaigns, malicious IPs, phishing domains, and emerging malware hashes before they breach your network perimeter.</p>
+    </section>
+
+    <noscript>
+    <section style="padding: 2rem; max-width: 900px; margin: 0 auto;">
+      <h3>Threat Landscape Overview</h3>
+      <p>This page displays live threat indicators. Please enable JavaScript to access the full interactive dashboard, including real-time charts and exportable threat data.</p>
+      <p>Read our latest threat analysis: <a href="/articles.html">Security Articles & Threat Reports</a></p>
+    </section>
+    </noscript>
         <div class="container">
             <!-- Dashboard Controls -->
             <div class="dashboard-controls">

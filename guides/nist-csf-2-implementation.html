@@ -56,9 +56,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts & Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
@@ -521,6 +521,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "NIST CSF 2.0: Complete Implementation Guide [2025]",
+        "description": "Complete NIST Cybersecurity Framework 2.0 implementation guide. Learn the 6 functions: Govern, Identify, Protect, Detect, Respond, Recover. Step-by-step roadmap for organizations.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. What is NIST CSF 2.0?", "text": "Refer to the section '1. What is NIST CSF 2.0?' in the guide."},
+        {"@type": "HowToStep", "name": "2. Key Changes from CSF 1.1", "text": "Refer to the section '2. Key Changes from CSF 1.1' in the guide."},
+        {"@type": "HowToStep", "name": "3. Framework Structure", "text": "Refer to the section '3. Framework Structure' in the guide."},
+        {"@type": "HowToStep", "name": "4. GOVERN Function (New)", "text": "Refer to the section '4. GOVERN Function (New)' in the guide."},
+        {"@type": "HowToStep", "name": "5. IDENTIFY Function", "text": "Refer to the section '5. IDENTIFY Function' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "NIST CSF 2.0: Complete Implementation Guide [\u2026", "item": "https://thehgtech.com/guides/nist-csf-2-implementation.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

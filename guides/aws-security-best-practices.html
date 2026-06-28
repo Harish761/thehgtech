@@ -88,10 +88,9 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -490,6 +489,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "AWS Security Best Practices Guide 2026",
+        "description": "Secure your AWS environment with this comprehensive guide. Learn IAM policies, S3 bucket security, VPC configuration, CloudTrail logging, and GuardDuty setup.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Account Security Fundamentals", "text": "Refer to the section '1. Account Security Fundamentals' in the guide."},
+        {"@type": "HowToStep", "name": "2. IAM Best Practices", "text": "Refer to the section '2. IAM Best Practices' in the guide."},
+        {"@type": "HowToStep", "name": "3. S3 Bucket Security", "text": "Refer to the section '3. S3 Bucket Security' in the guide."},
+        {"@type": "HowToStep", "name": "4. VPC and Network Security", "text": "Refer to the section '4. VPC and Network Security' in the guide."},
+        {"@type": "HowToStep", "name": "5. Logging and Monitoring", "text": "Refer to the section '5. Logging and Monitoring' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "AWS Security Best Practices Guide 2026", "item": "https://thehgtech.com/guides/aws-security-best-practices.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

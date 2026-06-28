@@ -121,10 +121,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -558,6 +557,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Threat Hunting: MITRE ATT&CK Techniques & Queries [2025]",
+        "description": "\ud83c\udfaf Go beyond reactive alerts. Hypothesis-driven threat hunting with MITRE ATT&CK mapping. Splunk queries, KQL examples & hunt playbooks included.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. The Threat Hunting Process", "text": "Refer to the section '1. The Threat Hunting Process' in the guide."},
+        {"@type": "HowToStep", "name": "2. Hypothesis Generation Sources", "text": "Refer to the section '2. Hypothesis Generation Sources' in the guide."},
+        {"@type": "HowToStep", "name": "3. Hunting Techniques", "text": "Refer to the section '3. Hunting Techniques' in the guide."},
+        {"@type": "HowToStep", "name": "4. High-Value Hunting Areas", "text": "Refer to the section '4. High-Value Hunting Areas' in the guide."},
+        {"@type": "HowToStep", "name": "5. Building a Hunting Program", "text": "Refer to the section '5. Building a Hunting Program' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Threat Hunting: MITRE ATT&CK Techniques & Que\u2026", "item": "https://thehgtech.com/guides/threat-hunting-techniques.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

@@ -25,9 +25,9 @@
     <meta property="og:image" content="https://thehgtech.com/images/guides/threat-intelligence-feeds-integration.png">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
@@ -382,6 +382,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Threat Intelligence Feeds: Complete Integration Guide [2025]",
+        "description": "Complete guide to integrating threat intelligence feeds. Learn IOC types, STIX/TAXII, feed sources, SIEM integration, and threat intelligence platform deployment.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. What is Threat Intelligence?", "text": "Refer to the section '1. What is Threat Intelligence?' in the guide."},
+        {"@type": "HowToStep", "name": "2. IOC Types & Categories", "text": "Refer to the section '2. IOC Types & Categories' in the guide."},
+        {"@type": "HowToStep", "name": "3. Free & Commercial Feed Sources", "text": "Refer to the section '3. Free & Commercial Feed Sources' in the guide."},
+        {"@type": "HowToStep", "name": "4. STIX/TAXII Standards", "text": "Refer to the section '4. STIX/TAXII Standards' in the guide."},
+        {"@type": "HowToStep", "name": "5. SIEM & Security Tool Integration", "text": "Refer to the section '5. SIEM & Security Tool Integration' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Threat Intelligence Feeds: Complete Integrati\u2026", "item": "https://thehgtech.com/guides/threat-intelligence-feeds-integration.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

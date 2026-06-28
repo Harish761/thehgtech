@@ -88,10 +88,9 @@
     }
     </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -469,6 +468,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Dark Web Monitoring for Security Teams: A Practitioner's Guide 2026",
+        "description": "Complete guide to dark web monitoring for security analysts and SOC teams. Legal frameworks, Tor network fundamentals, threat intelligence tools (Recorded Future, Flare, HIBP), credential leak monitoring, and operational security best practices.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. What Is the Dark Web? (Separating Fact from Fiction)", "text": "Refer to the section '1. What Is the Dark Web? (Separating Fact from Fiction)' in the guide."},
+        {"@type": "HowToStep", "name": "2. Surface Web vs Deep Web vs Dark Web", "text": "Refer to the section '2. Surface Web vs Deep Web vs Dark Web' in the guide."},
+        {"@type": "HowToStep", "name": "3. How Tor Works: The Technical Fundamentals", "text": "Refer to the section '3. How Tor Works: The Technical Fundamentals' in the guide."},
+        {"@type": "HowToStep", "name": "4. Legal Framework: What Security Teams Can and Cannot Do", "text": "Refer to the section '4. Legal Framework: What Security Teams Can and Cannot Do' in the guide."},
+        {"@type": "HowToStep", "name": "5. Why Monitor the Dark Web? The Security Value", "text": "Refer to the section '5. Why Monitor the Dark Web? The Security Value' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Dark Web Monitoring for Security Teams: A Pra\u2026", "item": "https://thehgtech.com/guides/dark-web-monitoring-security-teams.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

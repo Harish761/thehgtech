@@ -124,10 +124,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -536,6 +535,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Email Security: SPF, DKIM & DMARC Complete Guide 2026",
+        "description": "Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing. Complete setup guide with DNS records and troubleshooting.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Why Email Authentication Matters", "text": "Refer to the section '1. Why Email Authentication Matters' in the guide."},
+        {"@type": "HowToStep", "name": "2. SPF: Sender Policy Framework", "text": "Refer to the section '2. SPF: Sender Policy Framework' in the guide."},
+        {"@type": "HowToStep", "name": "3. DKIM: DomainKeys Identified Mail", "text": "Refer to the section '3. DKIM: DomainKeys Identified Mail' in the guide."},
+        {"@type": "HowToStep", "name": "4. DMARC: Tying It All Together", "text": "Refer to the section '4. DMARC: Tying It All Together' in the guide."},
+        {"@type": "HowToStep", "name": "5. Implementation Roadmap", "text": "Refer to the section '5. Implementation Roadmap' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Email Security: SPF, DKIM & DMARC Complete Gu\u2026", "item": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

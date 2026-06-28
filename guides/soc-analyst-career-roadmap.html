@@ -86,9 +86,9 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -560,6 +560,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "SOC Analyst Career Roadmap 2026: From Tier 1 to Security Architect",
+        "description": "Complete SOC analyst career roadmap for 2026. Tier 1-3 progression, required skills, certifications (Security+, CySA+, GSOC), salary expectations ($60K-$150K+), and hands-on lab scenarios.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. The SOC Landscape in 2026", "text": "Refer to the section '1. The SOC Landscape in 2026' in the guide."},
+        {"@type": "HowToStep", "name": "2. The Tier System Explained", "text": "Refer to the section '2. The Tier System Explained' in the guide."},
+        {"@type": "HowToStep", "name": "3. Tier 1: Alert Triage & Monitoring", "text": "Refer to the section '3. Tier 1: Alert Triage & Monitoring' in the guide."},
+        {"@type": "HowToStep", "name": "4. Tier 2: Incident Response & Investigation", "text": "Refer to the section '4. Tier 2: Incident Response & Investigation' in the guide."},
+        {"@type": "HowToStep", "name": "5. Tier 3: Threat Hunting & Architecture", "text": "Refer to the section '5. Tier 3: Threat Hunting & Architecture' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "SOC Analyst Career Roadmap 2026: From Tier 1 \u2026", "item": "https://thehgtech.com/guides/soc-analyst-career-roadmap.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

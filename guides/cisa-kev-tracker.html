@@ -146,10 +146,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <style>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -536,6 +535,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "CISA KEV Tracker: Actively Exploited Vulnerabilities Guide [2025]",
+        "description": "&#128648; Track CISA Known Exploited Vulnerabilities in real-time. Prioritize patches for CVEs being actively exploited. Free monitoring + remediation workflow included.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "What is the CISA KEV Catalog?", "text": "Refer to the section 'What is the CISA KEV Catalog?' in the guide."},
+        {"@type": "HowToStep", "name": "How to Track CISA KEV Vulnerabilities", "text": "Refer to the section 'How to Track CISA KEV Vulnerabilities' in the guide."},
+        {"@type": "HowToStep", "name": "Vulnerability Management Best Practices", "text": "Refer to the section 'Vulnerability Management Best Practices' in the guide."},
+        {"@type": "HowToStep", "name": "Best Practices", "text": "Refer to the section 'Best Practices' in the guide."},
+        {"@type": "HowToStep", "name": "Common Challenges and Solutions", "text": "Refer to the section 'Common Challenges and Solutions' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "CISA KEV Tracker: Actively Exploited Vulnerab\u2026", "item": "https://thehgtech.com/guides/cisa-kev-tracker.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

@@ -110,9 +110,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -732,6 +732,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "ISO 27001 Certification: Complete Roadmap & Timeline [2025]",
+        "description": "From Implementation to Audit Success",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. The Certification Journey Overview", "text": "Refer to the section '1. The Certification Journey Overview' in the guide."},
+        {"@type": "HowToStep", "name": "2. Realistic Timeline: 12-18 Months", "text": "Refer to the section '2. Realistic Timeline: 12-18 Months' in the guide."},
+        {"@type": "HowToStep", "name": "3. Phase 1: Foundation (Months 1-3)", "text": "Refer to the section '3. Phase 1: Foundation (Months 1-3)' in the guide."},
+        {"@type": "HowToStep", "name": "4. Phase 2: Implementation (Months 4-8)", "text": "Refer to the section '4. Phase 2: Implementation (Months 4-8)' in the guide."},
+        {"@type": "HowToStep", "name": "5. Phase 3: Internal Audit (Months 9-10)", "text": "Refer to the section '5. Phase 3: Internal Audit (Months 9-10)' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "ISO 27001 Certification: Complete Roadmap & T\u2026", "item": "https://thehgtech.com/guides/iso-27001-certification-roadmap.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

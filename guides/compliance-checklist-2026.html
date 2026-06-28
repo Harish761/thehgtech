@@ -33,9 +33,9 @@
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://thehgtech.com"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://thehgtech.com/guides/"},{"@type":"ListItem","position":3,"name":"2026 Compliance Checklist","item":"https://thehgtech.com/guides/compliance-checklist-2026.html"}]}
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -430,6 +430,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "2026 Compliance Checklist: DORA, EU AI Act & NIST Mastery",
+        "description": "Comprehensive compliance checklist for 2026 regulatory requirements. DORA implementation, EU AI Act obligations, NIST CSF 2.0 controls, and audit preparation guidance.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. 2026 Regulatory Landscape Overview", "text": "Refer to the section '1. 2026 Regulatory Landscape Overview' in the guide."},
+        {"@type": "HowToStep", "name": "2. DORA Compliance Checklist", "text": "Refer to the section '2. DORA Compliance Checklist' in the guide."},
+        {"@type": "HowToStep", "name": "3. EU AI Act Compliance Checklist", "text": "Refer to the section '3. EU AI Act Compliance Checklist' in the guide."},
+        {"@type": "HowToStep", "name": "4. NIST CSF 2.0 Quick Reference", "text": "Refer to the section '4. NIST CSF 2.0 Quick Reference' in the guide."},
+        {"@type": "HowToStep", "name": "5. Control Mapping: One Effort, Three Frameworks", "text": "Refer to the section '5. Control Mapping: One Effort, Three Frameworks' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "2026 Compliance Checklist: DORA, EU AI Act & \u2026", "item": "https://thehgtech.com/guides/compliance-checklist-2026.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 

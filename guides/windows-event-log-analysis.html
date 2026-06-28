@@ -100,9 +100,9 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
@@ -494,6 +494,35 @@
     }
   ]
 }
+    </script>
+
+    <!-- SEO: HowTo & Breadcrumb Schema -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025]",
+        "description": "\ud83d\udd0d Master Windows Security logs for threat detection. Event ID 4624, 4625, 4688 explained. PowerShell queries + downloadable cheat sheet included.",
+        "totalTime": "PT30M",
+        "step": [
+          {"@type": "HowToStep", "name": "1. Event Log Fundamentals", "text": "Refer to the section '1. Event Log Fundamentals' in the guide."},
+        {"@type": "HowToStep", "name": "2. Critical Security Event IDs", "text": "Refer to the section '2. Critical Security Event IDs' in the guide."},
+        {"@type": "HowToStep", "name": "3. Authentication Analysis", "text": "Refer to the section '3. Authentication Analysis' in the guide."},
+        {"@type": "HowToStep", "name": "4. Process Execution Monitoring", "text": "Refer to the section '4. Process Execution Monitoring' in the guide."},
+        {"@type": "HowToStep", "name": "5. Lateral Movement Detection", "text": "Refer to the section '5. Lateral Movement Detection' in the guide."}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
+          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
+          {"@type": "ListItem", "position": 3, "name": "Windows Event Log Analysis: Critical Event ID\u2026", "item": "https://thehgtech.com/guides/windows-event-log-analysis.html"}
+        ]
+      }
+    ]
     </script>
 </head>
 
