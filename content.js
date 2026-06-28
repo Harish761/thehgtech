@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 26 2026",
+            "headline": "Klue Breach Expands—Hackers' Data Compromised",
+            "title": "Klue-Salesforce Breach Widens as Hackers' Data Gets Exposed",
+            "content": "The Klue-Salesforce data breach has expanded, with approximately two dozen companies now notifying customers of the incident's impact. This breach, initially targeting Klue, has turned tables as hackers themselves have been compromised, revealing sensitive information. The breach affects companies relying on Klue's competitive intelligence platform integrated with Salesforce. Organizations are urged to review their security protocols and notify affected clients promptly. This incident underscores the vulnerabilities in interconnected systems and the potential for cascading security failures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/more-klue-breach-victims-identified-as-hackers-get-hacked/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Linux Kernel Flaw—Local Users Gain Root Access",
+            "title": "Linux Kernel pedit COW Exploit Allows Root Access via Cached Binaries",
+            "content": "A critical flaw in the Linux kernel's traffic-control subsystem, identified as CVE-2026-46331, allows local unprivileged users to gain root access. Dubbed \"pedit COW,\" this vulnerability involves an out-of-bounds write in the packet-editing action, corrupting shared page-cache memory. The exploit, now publicly available, affects systems running vulnerable Linux kernel versions. Administrators should apply patches immediately to prevent unauthorized access. This flaw highlights ongoing security challenges within Linux kernel components, emphasizing the need for robust patch management practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Amazon Q Developer Flaw—Malicious Code Execution Risk",
+            "title": "High-Severity Flaw in Amazon Q Developer Allows Malicious Code Execution",
+            "content": "A high-severity vulnerability in Amazon Q Developer, tracked as CVE-2026-12957, has been patched after allowing malicious repositories to execute code and steal cloud credentials. The flaw, with a CVSS score of 8.5, was exploited when developers opened and trusted compromised repositories. Amazon has released a patch, and developers are advised to update their systems and review repository trust policies. This incident highlights the risks associated with third-party code and the importance of stringent security measures in development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "CISA Flags PTC Windchill RCE—Web Shell Attacks Persist",
+            "title": "CISA Adds PTC Windchill RCE Vulnerability to Known Exploited List",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical remote code execution (RCE) vulnerability in PTC Windchill and FlexPLM software to its Known Exploited Vulnerabilities catalog. This flaw is actively exploited in web shell attacks, posing significant risks to enterprise Product Data Management and Product Lifecycle Management systems. Organizations using these platforms should prioritize patching to mitigate potential intrusions. The inclusion in CISA's list underscores the persistent threat of RCE vulnerabilities in enterprise software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "DirtyClone Linux Flaw—Local Root Access Threat",
+            "title": "DirtyClone Linux Kernel Vulnerability Enables Local Root Privilege Escalation",
+            "content": "A new Linux kernel vulnerability, known as DirtyClone and tracked as CVE-2026-43503, has been disclosed, allowing local users to gain root access through cloned packets. This flaw, part of the DirtyFrag family, involves file-backed memory corruption, with a CVSS score of 8.8. JFrog Security Research has published a detailed exploit walkthrough, urging system administrators to apply patches immediately. This vulnerability highlights the ongoing security challenges within Linux kernel components and the need for vigilant patch management.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Linux Foundation Launches Akrites—Open Source Security Project",
+            "title": "Linux Foundation Introduces Akrites for Open Source Vulnerability Management",
+            "content": "The Linux Foundation has announced Akrites, a new open source security project aimed at improving vulnerability management in open source software. Akrites will provide tools and channels for reporting, patching, and disclosing vulnerabilities, enhancing the security posture of open source projects. This initiative addresses the growing need for structured vulnerability management in the open source community, promoting collaboration and transparency. Developers and organizations are encouraged to participate in Akrites to strengthen their security frameworks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/linux-foundation-unveils-new-open-source-security-project-akrites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Miasma Malware Targets npm—Supply Chain Attack Alert",
+            "title": "Miasma Malware Compromises npm Packages in Latest Supply Chain Attack",
+            "content": "The Miasma malware, part of the Mini Shai-Hulud family, has been detected targeting npm packages and GitHub Actions in a new supply chain attack. This campaign has also extended to the Go ecosystem, with malicious npm releases being flagged by cybersecurity researchers. Developers using npm and Go are advised to review their dependencies and implement security measures to prevent compromise. This incident highlights the persistent threat of supply chain attacks in software development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Gaslight Malware Confuses AI—macOS Analysis Tools Tricked",
+            "title": "Gaslight macOS Malware Evades AI Analysis with Fake Errors",
+            "content": "A newly discovered macOS malware, dubbed \"Gaslight,\" is designed to evade AI-assisted malware analysis tools by embedding fake error messages and debugging data within its executable. This tactic confuses AI models, making it difficult to accurately assess the malware's behavior. Security professionals are advised to enhance their analysis techniques to detect such deceptive strategies. The emergence of Gaslight underscores the evolving sophistication of malware designed to bypass advanced security technologies.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Russian Intelligence Hacks—Fake Texts Steal Credentials",
+            "title": "Ukraine Uncovers Russian Intelligence Credential Theft via Fake Support Texts",
+            "content": "The Security Service of Ukraine (SSU), in collaboration with the U.S. Federal Bureau of Investigation (FBI), has uncovered a campaign by Russian intelligence to steal messaging credentials using fake support texts. This operation targeted government officials, military personnel, politicians, and activists, aiming to access sensitive communications. The SSU advises potential targets to verify the authenticity of support messages and implement multi-factor authentication. This incident highlights the ongoing cyber threats posed by state-sponsored actors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "AI Coding Agents Tricked—Malware Hides in Clean Repos",
+            "title": "Clean GitHub Repositories Exploit AI Coding Agents to Deploy Malware",
+            "content": "A new threat has emerged where AI coding agents, tasked with cloning and setting up GitHub repositories, are tricked into executing hidden malware. These repositories appear benign to security scanners and human reviewers, allowing malicious payloads to remain undetected. Developers using AI coding tools should exercise caution and conduct thorough security reviews of repositories. This incident underscores the need for enhanced scrutiny and security measures in AI-assisted development environments.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 27 2026",
             "headline": "Third-Party Breaches Cost Education Sector Millions",
             "title": "Education Sector Faces Rising Vendor Risk Amid Third-Party Breaches",
@@ -58,42 +148,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Police Corruption Hinders Asian Scam Center Crackdown",
-            "title": "Local Police Corruption Impedes Efforts to Shut Down Asian Scam Centers",
-            "content": "Efforts to dismantle scam centers in Asia are being thwarted by local police collusion, despite international law enforcement initiatives. These centers, responsible for billions in cybercrime revenue, continue to operate with impunity. The involvement of local authorities complicates international efforts to curb these operations. Security professionals and policymakers are urged to address corruption and strengthen cross-border collaboration to effectively combat cybercrime. The persistence of these scam centers highlights the need for comprehensive anti-corruption measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/police-collusion-crackdown-asian-scam-centers",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Critical Chrome Flaws Patched—Update Now",
-            "title": "Google Patches 18 Vulnerabilities in Chrome, Including Critical Flaws",
-            "content": "Google has released a security update for Chrome, addressing 18 vulnerabilities, four of which are critical. Notably, two WebGL bugs could enable attackers to escape the browser's security sandbox, posing a significant risk to users. Chrome users are strongly advised to update their browsers immediately to protect against potential exploits. This update underscores the importance of regular software updates to maintain security and prevent unauthorized access.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/update-chrome-to-patch-critical-browser-security-flaws",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Ransomware Gangs Target Europe—New Hotspot for Cyberattacks",
-            "title": "Europe Emerges as Prime Target for Ransomware Attacks",
-            "content": "Ransomware gangs are increasingly focusing their efforts on European organizations, exploiting a rich target environment. Following a global decline in ransomware activity, Europe has become a favored region for cybercriminals, with attacks on both organizations and their supply chains. This shift highlights the need for enhanced cybersecurity measures across the continent. Businesses are urged to strengthen their defenses and prepare for potential ransomware incidents. The trend underscores the evolving tactics of ransomware operators.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Cisco Zero-Day Exploited for High-Level Access",
-            "title": "Malicious Actors Exploit Cisco Zero-Day for Elevated Access at Service Provider",
-            "content": "A zero-day vulnerability in Cisco systems has been exploited by malicious hackers to gain the highest level of access at a communications service provider. The incident, detailed by Mandiant, raises concerns about the potential for broad visibility into the victim's internal traffic. Organizations using Cisco products are advised to monitor for unusual activity and apply any available patches. This exploitation highlights the critical need for vigilance and rapid response to zero-day threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cisco-sd-wan-zero-day-exploit-communications-provider/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 26 2026",
             "headline": "CISA Demands Immediate Cisco Patch—Active Exploits Detected",
             "title": "CISA Sets Urgent Deadline for Cisco Unified Communications Manager Patch",
@@ -128,70 +182,97 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "SharkLoader Malware Deploys Cobalt Strike—StrikeShark Campaign Unveiled",
-            "title": "New SharkLoader Malware Deploys Cobalt Strike in StrikeShark Cyberattacks",
-            "content": "A new malware family, SharkLoader, has been identified in a cyber attack campaign known as StrikeShark, delivering Cobalt Strike Beacon on compromised systems. This loader facilitates the deployment of Cobalt Strike, a tool often used for post-exploitation activities. Kaspersky's analysis reveals that the campaign targets a range of industries, emphasizing the need for enhanced security measures. Organizations should update their defenses and monitor for indicators of compromise associated with SharkLoader and Cobalt Strike.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Polymarket Supply-Chain Attack—$3M Customer Losses Reimbursed",
-            "title": "Polymarket Customers Lose $3 Million in Supply-Chain Attack",
-            "content": "Polymarket has announced plans to fully reimburse customers who collectively lost $3 million due to a supply-chain attack. Hackers injected a malicious script into the platform's frontend following a breach at a third-party vendor, compromising user transactions. This incident highlights the vulnerabilities in supply-chain security and the potential financial impact of such breaches. Affected customers should monitor their accounts for suspicious activity, while organizations are urged to strengthen their supply-chain security protocols.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Fraudulent OpenAI Invites Target Cybersecurity Firms—Data at Risk",
-            "title": "Cybersecurity Firms Targeted by Fraudulent OpenAI Organization Invites",
-            "content": "Cybersecurity firms are being targeted by threat actors creating fake OpenAI tenants to impersonate legitimate companies. These actors invite employees to join these fake organizations, aiming to trick them into sharing sensitive company information. This tactic poses a significant risk to corporate data security, as employees may unknowingly disclose confidential information. Companies should educate employees about such phishing tactics and implement strict verification processes for organizational invites.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "New Initiative Secures Aging Open Source Software—Compliance Focus",
-            "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
-            "content": "The Open Source Sustainability Initiative has launched to help enterprises manage and secure aging open source projects while ensuring regulatory compliance. As many open source projects reach end-of-life, they pose security risks due to lack of updates and support. This initiative aims to provide resources and strategies for maintaining security and compliance in legacy systems. Organizations relying on open source software should engage with this initiative to mitigate risks associated with outdated software.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Amazon Q Flaw Patched—Cloud Credential Theft Risk Mitigated",
-            "title": "Amazon Q Flaw Enabled Cloud Credential Theft via Malicious Repositories",
-            "content": "AWS has patched a vulnerability known as the Amazon Q Flaw, which allowed attackers to steal cloud credentials through malicious repositories. This flaw posed a significant risk to AWS customers, potentially leading to unauthorized access to cloud resources. AWS has issued an advisory detailing the vulnerability and its impact, urging customers to review their security configurations. Organizations using AWS should apply the patch and follow recommended security practices to protect their cloud environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/amazon-q-flaw-enabled-cloud-credential-theft-via-malicious-repositories/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Cellebrite Used in Russian Hacks—Five Eyes Warn on AI Threats",
-            "title": "In Other News: Chinese Mythos-Like AI, Tata Electronics Breach, Snyk Layoffs",
-            "content": "Recent developments in cybersecurity include Russia's use of Cellebrite technology to hack activists' phones, highlighting the ongoing threat of state-sponsored cyber activities. Additionally, the Five Eyes alliance has issued an urgent warning about AI-related threats, emphasizing the need for international cooperation in addressing AI security challenges. Other notable incidents include a breach at Tata Electronics and layoffs at Snyk, reflecting broader trends in the cybersecurity landscape. Professionals should remain informed about these evolving threats and adjust their strategies accordingly.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-chinese-mythos-like-ai-tata-electronics-breach-snyk-layoffs/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 22 2026",
-            "headline": "OpenAI's Daybreak Initiative Aids Open Source Security",
-            "title": "Patch the Planet: OpenAI's Daybreak Initiative for Open Source Security",
-            "content": "OpenAI has launched \"Patch the Planet,\" a new initiative under its Daybreak program aimed at enhancing the security of open-source projects. This initiative will assist maintainers in identifying, validating, and fixing vulnerabilities using advanced AI tools and expert reviews. The program targets critical open-source software that underpins much of the internet's infrastructure, addressing a significant gap in cybersecurity resources for these projects. By leveraging AI, OpenAI aims to streamline vulnerability management and improve the overall security posture of open-source ecosystems. Developers and maintainers are encouraged to engage with the initiative to bolster their security efforts.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "date": "Jun 27 2026",
+            "headline": "Musk's Orbital Data Centers—Skepticism Grows Among Tech Leaders",
+            "title": "SoftBank CEO Questions Viability of Musk's Orbital Data Centers",
+            "content": "Elon Musk's ambitious plan to deploy orbital data centers has met with skepticism from industry leaders, including SoftBank's CEO. The concept involves placing data centers in orbit to leverage space's cooling benefits and energy efficiency. However, critics question the feasibility and cost-effectiveness of such a venture, citing potential technical challenges and high operational costs. The skepticism highlights ongoing debates about the practicality of space-based infrastructure in the tech industry. Stakeholders are advised to closely monitor developments and assess the potential impact on global data infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Atwood Critiques AI—Warns of 'Garbage In, Garbage Out'",
+            "title": "Margaret Atwood Highlights AI's Dependence on Data Quality",
+            "content": "During the Babell Literary and Cultural Festival in Porto, Portugal, renowned author Margaret Atwood expressed concerns about AI's reliance on data quality. Atwood emphasized the \"garbage in, garbage out\" principle, warning that AI systems are only as good as the data they are trained on. Her comments underscore the importance of ensuring high-quality, unbiased data in AI development to avoid perpetuating existing biases and inaccuracies. This perspective is crucial for developers and policymakers focused on ethical AI deployment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Apple Vision Pro Exec Joins OpenAI's Hardware Team",
+            "title": "Paul Meade Leaves Apple for OpenAI's Hardware Ambitions",
+            "content": "Paul Meade, the vice president overseeing Apple's Vision Pro headset, is reportedly transitioning to OpenAI to bolster its hardware initiatives. This move signifies OpenAI's strategic expansion into hardware, potentially enhancing its AI capabilities with new device integrations. Meade's departure from Apple highlights the competitive landscape for top talent in the AI and tech sectors. Industry professionals should watch for potential collaborations or product developments resulting from this high-profile recruitment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "GPT-5.6 Release Delayed—Trump Administration Cites Security Concerns",
+            "title": "OpenAI Postpones GPT-5.6 Launch Following Government Request",
+            "content": "OpenAI has announced a delay in the release of its anticipated GPT-5.6 model following a request from the Trump administration. Concerns over potential security vulnerabilities prompted the administration to urge a staggered release, allowing for limited previews before full deployment. This decision reflects ongoing governmental scrutiny over AI advancements and their implications for national security. AI developers and users should prepare for potential adjustments in deployment timelines and assess the impact on their projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Patronus AI Secures $50M—Focus on AI Stress-Testing",
+            "title": "Patronus AI Raises $50M to Enhance AI Agent Stress-Testing",
+            "content": "Patronus AI, a startup specializing in AI agent stress-testing, has secured $50 million in funding. Founded by former Meta AI researchers, the company aims to develop digital environments that rigorously test AI agents' capabilities and resilience. The funding will accelerate the creation of these virtual worlds, addressing the growing demand for robust AI validation tools. This investment highlights the increasing importance of stress-testing in ensuring AI reliability and safety in real-world applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Anthropic Accuses Alibaba of Claude Cloning Attack",
+            "title": "Anthropic Demands Sanctions Against Alibaba for Claude Exploitation",
+            "content": "Anthropic has accused Alibaba of orchestrating the largest known cloning attack on its AI model, Claude. Allegedly, Alibaba utilized 25,000 accounts to conduct over 28.8 million exchanges with Claude, effectively mining its capabilities. This incident raises significant concerns about intellectual property theft and AI model security. Anthropic is calling for punitive measures against Alibaba, emphasizing the need for stricter regulations and protections for AI technologies. Industry stakeholders should consider the implications for AI development and competitive practices.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Claude Gains Ground—Challenges ChatGPT's Market Dominance",
+            "title": "Anthropic's Claude Attracts Paying Users Amid ChatGPT Competition",
+            "content": "Anthropic's AI model, Claude, is gaining traction among paying consumers, challenging ChatGPT's market dominance. Despite ChatGPT's established lead, data indicates a growing preference for Claude due to its unique features and performance. This shift highlights the competitive dynamics in the AI market, where innovation and user satisfaction drive consumer choices. AI developers and businesses should analyze these trends to inform their strategic positioning and product offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "$2.3B Bet on Gaming—Training AI for Real-World Tasks",
+            "title": "General Intuition Invests $2.3B in AI Training via Video Games",
+            "content": "General Intuition has raised $320 million as part of a $2.3 billion initiative to train AI agents using video games. By leveraging millions of hours of gameplay, the company aims to develop AI with enhanced decision-making and problem-solving skills akin to human intuition. This approach reflects a growing trend of using simulated environments to refine AI capabilities for real-world applications. Stakeholders should consider the potential of gaming data in advancing AI training methodologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "AI Use in Legislation—Congresswoman Clarifies Staff's Role",
+            "title": "Rep. Luna Denies AI Drafting of Defense Bill Amendment",
+            "content": "Rep. Anna Paulina Luna (R-FL) has clarified that her staff used AI solely for spellchecking in an amendment summary for a defense funding bill, not for drafting the text itself. This statement comes after speculation arose on social media about AI's role in legislative processes. Luna emphasized that no legislation is drafted with AI, addressing concerns about the integrity and transparency of legislative work. This incident underscores the growing scrutiny of AI's role in government operations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "NVIDIA NeMo AutoModel—Boosting Transformers Fine-Tuning Speed",
+            "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+            "content": "Hugging Face has highlighted the capabilities of NVIDIA's NeMo AutoModel in expediting the fine-tuning process for transformer models. This technology leverages NVIDIA's advanced hardware to significantly reduce the time required for model training, enhancing efficiency for developers. The integration of NeMo AutoModel into existing workflows promises to streamline AI development, particularly for applications requiring rapid iteration and deployment. AI practitioners should explore this tool to optimize their model training processes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
             "relatedResources": []
         },
         {
@@ -240,42 +321,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Ford Rehires Engineers to Correct Automation Errors",
-            "title": "Ford Rehires Engineers to Address Automated System Flaws",
-            "content": "Ford has rehired former engineers to rectify issues caused by its automated systems, which have impacted production and design processes. Despite achieving the top spot in JD Power's initial quality ranking, Ford acknowledges the challenges posed by its reliance on automation. The decision to bring back experienced engineers highlights the limitations of current automated systems and the need for human oversight in complex manufacturing environments. This move serves as a reminder of the balance required between automation and human expertise in the automotive industry.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "IBM Unveils World's First Sub-1nm Chip Technology",
-            "title": "IBM Announces Breakthrough in Sub-1 Nanometer Chip Technology",
-            "content": "IBM has claimed a significant breakthrough with the development of the world's first sub-1 nanometer chip technology. These nanostack transistors are expected to dramatically enhance chip performance and energy efficiency, potentially revolutionizing the semiconductor industry. This advancement positions IBM at the forefront of chip innovation, challenging existing manufacturing paradigms. The new technology could lead to faster, more efficient computing solutions, impacting a wide range of industries reliant on high-performance chips. Stakeholders in tech and manufacturing should prepare for the implications of this technological leap.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Meta Revives Creator Studio as AI Companion App",
-            "title": "Meta Launches AI-Enhanced Facebook Creator Studio App",
-            "content": "Meta has reintroduced the Facebook Creator Studio as a standalone AI companion app, aiming to enhance creators' ability to engage with their audiences. The revamped app offers tools to help creators grow their presence on Facebook, supported by Meta's AI Creator Assistant. This development reflects Meta's ongoing investment in AI to support content creators and improve user engagement on its platform. Creators are encouraged to explore the new app's features to optimize their content strategies and audience interactions.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "$27M AI Proxy War Over Alex Bores Ends in Draw",
-            "title": "Anthropic and OpenAI's $27M Proxy War Over Alex Bores Concludes",
-            "content": "The high-stakes $27 million proxy war between Anthropic and OpenAI has ended in a draw, with Alex Bores narrowly losing the Democratic primary for New York's 12th Congressional District. The political battle, fueled by pro-AI super PACs, highlighted the increasing influence of AI companies in political arenas. Despite the financial investment, the outcome underscores the unpredictable nature of political campaigns and the challenges of leveraging AI influence. This event serves as a case study for the intersection of AI, politics, and public perception.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 27 2026",
             "headline": "100+ Entities Gain Access to Anthropic's Mythos 5",
             "title": "Trump Administration Authorizes Anthropic's Mythos 5 for Broad Use",
@@ -318,51 +363,6 @@ const websiteContent = {
             "content": "The increasing political implications of AI models like those from Anthropic and OpenAI necessitate collective action to manage their societal impact. As AI capabilities advance, they influence political dynamics and decision-making processes, raising ethical and governance challenges. This trend highlights the need for international cooperation and robust policy frameworks to guide AI development and deployment. Stakeholders across industries must engage in dialogue and collaboration to address these challenges effectively. Understanding the broader implications of AI technologies is essential for informed decision-making and strategic planning.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Criticizes Government's AI Access Restrictions",
-            "title": "OpenAI Opposes Long-Term Government Access to AI Models",
-            "content": "OpenAI has expressed concerns over the government's request to limit the rollout of GPT-5.6, arguing that such restrictions should not become standard practice. The company emphasizes that these limitations hinder access to advanced AI tools for users, developers, and enterprises globally. OpenAI's stance highlights the tension between regulatory oversight and technological progress, as well as the need for policies that balance security with innovation. Organizations should advocate for transparent and fair regulatory frameworks to ensure continued access to AI advancements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Expands in India, Hires Uber India Chief",
-            "title": "OpenAI Strengthens Indian Operations with Key Executive Hire",
-            "content": "OpenAI has appointed the former head of Uber India to lead its operations in the country, marking a significant expansion into one of its largest markets outside the United States. This strategic move includes opening new offices, forming partnerships, and increasing local hiring. India's growing tech ecosystem presents vast opportunities for AI integration, and OpenAI aims to capitalize on this by enhancing its presence and influence in the region. Companies operating in India should anticipate increased competition and collaboration opportunities as AI adoption accelerates.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Adobe Acquires Topaz Labs for Enhanced Media Tools",
-            "title": "Adobe Integrates Topaz Labs' Enhancement Tools Across Its Apps",
-            "content": "Adobe has announced the acquisition of Topaz Labs, a company known for its image and video enhancement tools. This acquisition will see Topaz Labs' technology integrated into Adobe's suite of applications, potentially offering users improved media editing capabilities. The move underscores Adobe's commitment to expanding its AI-driven features and maintaining its competitive edge in the creative software market. Users of Adobe products can anticipate enhanced functionality and new tools that leverage Topaz Labs' expertise in media enhancement. Organizations should prepare for updates and training to utilize these new capabilities effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Last Chance for TechCrunch Founder Summit Early Bird Rates",
-            "title": "TechCrunch Founder Summit 2026 Early Bird Registration Ends Soon",
-            "content": "TechCrunch Founder Summit 2026 is approaching, with only two days left to secure early bird registration rates, saving attendees up to $190. The summit will gather over 1,000 founders and investors, providing a platform for networking, learning, and collaboration. This event is an opportunity for tech leaders to gain insights into industry trends and innovations. Interested participants should register before the deadline to take advantage of the discounted rates. Attending the summit could be pivotal for professionals seeking to expand their networks and stay ahead in the tech industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/2-days-left-to-save-up-to-190-join-1000-founders-and-investors-at-techcrunch-founder-summit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Anthropic's Mythos Models Offline Amid U.S. Government Tensions",
-            "title": "Anthropic Faces Challenges with Mythos Models After U.S. Ultimatum",
-            "content": "Anthropic's Mythos-class AI models remain offline following a directive from the Trump administration two weeks ago, demanding compliance with unspecified regulations. The company responded swiftly by dispatching executives to Washington, D.C., yet updates on the situation have been sparse. The lack of resolution raises concerns about the operational continuity of these models, which are integral to various AI applications. This incident highlights the increasing intersection of AI technology with geopolitical considerations, as governments scrutinize AI capabilities and their implications. Stakeholders in AI development should monitor this situation closely for potential policy shifts affecting AI deployment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
             "relatedResources": []
         }
     ],
