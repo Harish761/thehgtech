@@ -24,7 +24,7 @@ jobs:
         
     - name: Run Report Generator
       run: |
-        python3 generate_weekly_report.py
+        python3 scripts/legacy_tasks/generate_weekly_report.py
         
     - name: Commit and Push Report
       run: |

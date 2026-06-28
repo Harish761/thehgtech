@@ -24,7 +24,7 @@ jobs:
       - name: Run Breach Generator
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python test_breach_generator.py
+        run: python scripts/legacy_tasks/test_breach_generator.py
 
       - name: Commit Generated Article
         run: |

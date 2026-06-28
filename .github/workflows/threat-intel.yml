@@ -27,10 +27,10 @@ jobs:
       - name: Run RSS Threat Intel Fetcher
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python fetch_threat_intel.py --both
+        run: python scripts/legacy_tasks/fetch_threat_intel.py --both
 
       - name: Run AI Security Data Fetcher
-        run: python fetch_ai_security.py --output ioc-data
+        run: python scripts/legacy_tasks/fetch_ai_security.py --output ioc-data
 
       - name: Prepare IOC files
         run: |
@@ -43,14 +43,14 @@ jobs:
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python enrich_cve_dual_source.py
+        run: python scripts/legacy_tasks/enrich_cve_dual_source.py
 
       # NEW: EPSS Enrichment - adds exploit prediction scores
       - name: Enrich CVE Data with EPSS Scores
         continue-on-error: true  # Non-blocking - workflow continues if EPSS API fails
         run: |
           echo "📊 Adding EPSS (Exploit Prediction) scores..."
-          python enrich_epss.py
+          python scripts/legacy_tasks/enrich_epss.py
 
       # NEW: Log workflow usage for monitoring
       - name: Log Usage Statistics

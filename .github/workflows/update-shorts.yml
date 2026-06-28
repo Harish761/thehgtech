@@ -38,7 +38,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python update_shorts.py
+          python scripts/legacy_tasks/update_shorts.py
       
       - name: Commit and push changes
         run: |
