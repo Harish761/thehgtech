@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 28 2026",
+            "headline": "14.2M Email Logins Exposed in Japanese ISP Breach",
+            "title": "KDDI Corporation Data Breach Affects Multiple Japanese ISPs",
+            "content": "Japanese telecommunications operator KDDI Corporation has disclosed a data breach that exposed up to 14.2 million email logins. The breach involved unauthorized access to an email system shared by KDDI and five other internet service providers in Japan. The compromised data includes email addresses and passwords, posing a significant risk of further cyberattacks such as phishing and credential stuffing. This incident highlights the vulnerabilities in shared infrastructure and the importance of robust security measures. Affected users are advised to change their passwords immediately and monitor their accounts for suspicious activity.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "MCP Spec Update Shifts Security Burden to Developers",
+            "title": "New MCP Specification Introduces Security Challenges for Developers",
+            "content": "The latest update to the Model Context Protocol (MCP) has shifted critical security responsibilities from the protocol itself to developers and platform operators. This change requires developers to implement robust security measures within their applications, as the protocol no longer handles certain security functions. The update aims to enhance flexibility and performance but raises concerns about increased risks of misconfiguration and vulnerabilities. Organizations using MCP should review their security practices and ensure their development teams are equipped to handle the new responsibilities. This shift underscores the growing trend of decentralizing security in software development.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-enterprise-ready-mcp-specification-brings-new-security-challenges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "US Lawmakers Push for Mandatory AI Risk Reporting",
+            "title": "Proposed US Law Mandates AI Risk Reporting to Commerce Department",
+            "content": "US lawmakers have introduced the AI Incident Reporting Act, a bill that would require developers of advanced AI models to report major safety and security incidents to the Commerce Department. This legislation aims to establish a federal oversight framework for high-risk AI systems, ensuring transparency and accountability. The proposed law reflects growing concerns about the potential risks posed by AI technologies, including bias, privacy violations, and security threats. Developers and organizations working with AI are encouraged to prepare for potential compliance requirements and consider implementing robust risk management strategies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4189908/proposed-us-law-would-make-ai-risk-reporting-a-legal-obligation.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Critical Chrome Flaws Patched—Update to Secure Browsing",
+            "title": "Google Patches 18 Vulnerabilities in Chrome, Including Critical Flaws",
+            "content": "Google has released an update for Chrome, addressing 18 vulnerabilities, four of which are classified as critical. Among these are two WebGL bugs that could allow attackers to escape the browser's security sandbox, posing a significant risk of remote code execution. Users are urged to update to the latest version of Chrome to protect against potential exploits. This update underscores the importance of regular software maintenance and vigilance in cybersecurity practices. Organizations should ensure that all systems are running the latest browser versions to mitigate security risks.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/update-chrome-to-patch-critical-browser-security-flaws",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Mexico's Cybersecurity Plan Tackles Ransomware, AI Threats",
+            "title": "Analysis of Mexico’s 2025–2030 National Cybersecurity Plan",
+            "content": "Mexico's 2025–2030 National Cybersecurity Plan outlines strategies to combat critical threats such as ransomware, organized crime, and AI-driven attacks. The plan aims to strengthen the country's digital infrastructure in preparation for the 2026 FIFA World Cup and beyond. Key initiatives include enhancing public-private partnerships, increasing investment in cybersecurity technologies, and improving incident response capabilities. This comprehensive approach reflects Mexico's commitment to addressing evolving cyber threats and safeguarding its digital landscape. Stakeholders are encouraged to collaborate and support the implementation of the plan's objectives.",
+            "source": "Recorded Future",
+            "sourceUrl": "https://www.recordedfuture.com/research/mexico-new-cybersecurity-plan-evaluation",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Mistic Backdoor Targets Enterprises—Linked to Ransomware Broker",
+            "title": "New Mistic Backdoor Identified in Enterprise Intrusions",
+            "content": "Researchers have discovered a new backdoor program named Mistic, used in enterprise intrusions since April. The malware is linked to an initial access broker that sells network footholds to ransomware gangs. Mistic has been deployed on networks to facilitate unauthorized access and data exfiltration. Organizations are advised to enhance their network monitoring and implement robust access controls to detect and prevent such intrusions. This finding highlights the persistent threat posed by sophisticated cybercriminal networks and the importance of proactive cybersecurity measures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4189132/be-on-the-lookout-for-mistic-a-new-backdoor-used-by-ransomware-broker.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cisco Zero-Day Exploited for High-Level Access—Investigate Now",
+            "title": "Hackers Exploit Cisco Zero-Day for Highest Access at Service Provider",
+            "content": "A zero-day vulnerability in Cisco systems has been exploited by malicious hackers to gain the highest level of access at a communications service provider. Mandiant detailed the incident, noting the attackers' potential to monitor internal traffic. While the identity of the hackers remains unknown, the breach underscores the critical need for timely patching and vigilant network monitoring. Organizations using Cisco products should review their security protocols and ensure all patches are applied promptly. This incident highlights the ongoing risks associated with unpatched vulnerabilities in critical infrastructure.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/cisco-sd-wan-zero-day-exploit-communications-provider/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "PixelSmash Flaw Turns Videos into Attack Vectors",
+            "title": "Critical FFmpeg Flaw Allows Malicious Video File Exploits",
+            "content": "Researchers have identified a critical vulnerability in FFmpeg, dubbed PixelSmash, that enables attackers to use malicious video files to compromise vulnerable systems. The flaw affects systems using FFmpeg for video processing, potentially allowing remote code execution. Organizations relying on FFmpeg should update to the latest version to mitigate this risk. This discovery highlights the importance of securing multimedia processing tools and the potential for unconventional attack vectors. Security teams are advised to review their media handling practices and apply necessary patches.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/06/pixelsmash-flaw-turns-video-files-into-attack-tools",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "Cisco Unified CM Flaw Exploited—Patch Immediately",
+            "title": "Active Exploitation of Cisco Unified CM Vulnerability Detected",
+            "content": "A critical vulnerability in Cisco Unified Communications Manager (CM) is under active exploitation, weeks after Cisco released patches. The flaw allows attackers to gain root access, posing a severe threat to affected systems. Threat intelligence firm Defused reported observing exploit activity over the weekend. Organizations using Cisco Unified CM should prioritize applying the latest security updates to protect against potential breaches. This incident emphasizes the urgency of timely patch management in maintaining secure communications infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4188867/attackers-exploit-cisco-unified-cm-flaw-weeks-after-patch-release.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Polymarket Breach Costs Customers $3M—Reimbursement Promised",
+            "title": "Polymarket Customers Lose $3 Million in Supply-Chain Attack",
+            "content": "Polymarket has announced it will fully reimburse customers who lost approximately $3 million due to a supply-chain attack. Hackers injected a malicious script into the platform's frontend following a breach at a third-party vendor. This incident highlights the vulnerabilities in supply-chain security and the potential financial impact on digital platforms. Customers are advised to monitor their accounts for unusual activity and follow security updates from Polymarket. The breach underscores the importance of securing third-party integrations and maintaining robust incident response plans.",
+            "source": "BleepingComputer",
+            "sourceUrl": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 26 2026",
             "headline": "Klue Breach Expands—Hackers' Data Compromised",
             "title": "Klue-Salesforce Breach Widens as Hackers' Data Gets Exposed",
@@ -67,15 +157,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Gaslight Malware Confuses AI—macOS Analysis Tools Tricked",
-            "title": "Gaslight macOS Malware Evades AI Analysis with Fake Errors",
-            "content": "A newly discovered macOS malware, dubbed \"Gaslight,\" is designed to evade AI-assisted malware analysis tools by embedding fake error messages and debugging data within its executable. This tactic confuses AI models, making it difficult to accurately assess the malware's behavior. Security professionals are advised to enhance their analysis techniques to detect such deceptive strategies. The emergence of Gaslight underscores the evolving sophistication of malware designed to bypass advanced security technologies.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 27 2026",
             "headline": "Russian Intelligence Hacks—Fake Texts Steal Credentials",
             "title": "Ukraine Uncovers Russian Intelligence Credential Theft via Fake Support Texts",
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "darkreading",
             "sourceUrl": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "OpenAI's GPT-5.6 Sol Debuts with Enhanced Cybersecurity",
-            "title": "OpenAI Previews GPT-5.6 Sol with Stronger Cyber Safeguards",
-            "content": "OpenAI has unveiled three versions of its latest language model, GPT-5.6, named Sol, Terra, and Luna, as part of a limited preview. Sol, the flagship model, offers enhanced capabilities and stronger cybersecurity measures, reflecting OpenAI's ongoing collaboration with the U.S. government. Terra balances efficiency and performance, while Luna is tailored for specific applications. These models incorporate advanced safeguards to prevent misuse and ensure compliance with regulatory standards. Organizations granted access are encouraged to evaluate the models' security features and provide feedback to OpenAI.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "200,000 Scam Sites Powered by Chinese Framework",
-            "title": "Chinese Framework Fuels 200,000 Investment Scam Sites",
-            "content": "A legitimate Chinese development toolkit, DCloud Uni-App, is being exploited by threat actors to create over 200,000 scam sites. These sites are primarily used for investment scams, deceiving users into fraudulent schemes. The widespread use of this framework underscores the challenge of controlling legitimate tools that can be repurposed for malicious activities. Security professionals are urged to monitor for signs of these scams and educate users on recognizing fraudulent sites. The incident highlights the need for vigilance in the use of development tools.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-framework-powers-200000-scam-sites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Hackers Exploit Critical Flaw in PTC Windchill Software",
-            "title": "Critical Vulnerability in PTC Windchill PLM Software Exploited by Hackers",
-            "content": "A critical vulnerability in PTC's Windchill and FlexPLM software has been actively exploited by hackers, affecting industries such as defense, aerospace, and automotive. The flaw, recently patched, allows attackers to gain unauthorized access to sensitive product lifecycle management data. Organizations using these solutions are advised to apply the patch immediately to mitigate potential breaches. This incident highlights the importance of timely updates and vulnerability management in protecting critical infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4190154/hackers-exploit-critical-ptc-windchill-plm-software-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Russian Hackers Target Signal Backup Keys—FBI Warns",
-            "title": "FBI Alerts on Russian Hackers Targeting Signal Backup Recovery Keys",
-            "content": "The FBI and CISA have issued an updated warning about Russian intelligence operatives targeting Signal users. The attackers are now phishing for Signal Backup Recovery Keys, which would allow them to restore account backups and access private communications. This escalation in tactics poses a significant threat to user privacy and security. Signal users are urged to safeguard their recovery keys and remain vigilant against phishing attempts. The advisory underscores the ongoing risks posed by state-sponsored cyber actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "GDPR at 10: Balancing Data Protection and Business Burden",
-            "title": "GDPR's Decade: Data Protection Milestones and Business Challenges",
-            "content": "As the General Data Protection Regulation (GDPR) marks its tenth anniversary, its impact on data protection is evident, yet businesses continue to grapple with compliance challenges. While GDPR has strengthened data privacy across Europe and beyond, companies criticize the regulation for its complexity and the financial burden of compliance. The regulation's influence extends globally, prompting organizations to enhance their data protection frameworks. Businesses must navigate these challenges while maintaining compliance to avoid hefty fines.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4180915/10-years-of-the-gdpr-a-summary.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "CISA Demands Immediate Cisco Patch—Active Exploits Detected",
-            "title": "CISA Sets Urgent Deadline for Cisco Unified Communications Manager Patch",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent directive for federal agencies to patch a critical vulnerability in Cisco Unified Communications Manager Server by Sunday. The flaw is actively exploited, posing significant risks to unpatched systems. Identified as a critical security gap, this vulnerability allows attackers to execute arbitrary code, potentially compromising sensitive communications infrastructure. CISA's directive underscores the importance of immediate action to protect against ongoing threats. Organizations using affected Cisco systems should prioritize this patch to mitigate potential breaches.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "TinyRCT Backdoor Targets Southeast Asia—Chinese APT Suspected",
-            "title": "Chinese-Speaking APT Deploys TinyRCT Backdoor in Southeast Asia Attacks",
-            "content": "A Chinese-speaking advanced persistent threat (APT) group has been linked to deploying a new backdoor, TinyRCT, in cyber attacks targeting government and critical infrastructure in Southeast Asia. The campaign focuses on state-owned enterprises in the energy and government sectors, leveraging this custom malware to gain persistent access. TinyRCT enables attackers to execute commands and exfiltrate sensitive data, posing a severe threat to national security and operational integrity. Security professionals in affected regions should enhance monitoring and implement robust defenses against this evolving threat.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "First PTC Windchill Exploit in the Wild—CVE-2026-12569",
-            "title": "First-Ever Exploitation of PTC Windchill Vulnerability Discovered in the Wild",
-            "content": "The remote code execution vulnerability CVE-2026-12569 in PTC Windchill has been exploited in the wild for the first time, prompting its addition to CISA's Known Exploited Vulnerabilities catalog. This flaw affects PTC's product lifecycle management software, widely used across industries such as defense and aerospace. The exploitation allows attackers to execute arbitrary code remotely, potentially leading to data breaches and operational disruptions. Organizations using PTC Windchill should urgently apply available patches to safeguard their systems against this active threat.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/first-ever-exploitation-of-ptc-windchill-vulnerability-discovered-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Russian Hackers Steal Signal Keys—FBI Issues Warning",
-            "title": "FBI: Russian Hackers Now Target Signal Backup Recovery Keys",
-            "content": "The FBI and CISA have issued a warning about a phishing campaign linked to Russian intelligence services targeting Signal users. Attackers are now focusing on stealing Signal Backup Recovery Keys, enabling them to access victims' historical messages. This evolution in tactics poses a significant privacy threat to Signal users, as compromised keys can lead to unauthorized access to sensitive communications. Users are advised to remain vigilant against phishing attempts and secure their accounts with robust authentication measures.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 22 2026",
+            "headline": "OpenAI Launches 'Patch the Planet' for Open Source Security",
+            "title": "OpenAI's Daybreak Initiative Aims to Secure Open Source Projects",
+            "content": "OpenAI has announced \"Patch the Planet,\" a new initiative under its Daybreak program designed to bolster the security of open-source projects. This initiative will leverage AI tools and expert reviews to help maintainers identify, validate, and fix vulnerabilities in their codebases. Open-source projects are often under-resourced, making them susceptible to security risks that can have widespread implications. By providing these tools, OpenAI aims to enhance the resilience of open-source software, which forms the backbone of many critical systems. Developers and maintainers are encouraged to participate in the initiative to improve their project's security posture.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/patch-the-planet",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 28 2026",
+            "headline": "ChatGPT Logs Used in Landmark Arson Trial",
+            "title": "ChatGPT Logs Become Key Evidence in Palisades Fire Arson Case",
+            "content": "In a groundbreaking legal development, prosecutors in the Palisades fire trial have used ChatGPT logs as evidence against Jonathan Rinderknecht, accused of starting one of LA's deadliest wildfires. Alongside traditional evidence like iPhone location data and security footage, the AI-generated logs provided insights into the defendant's actions and intentions. This case marks a significant precedent for the use of AI-generated data in legal proceedings, highlighting the increasing role of AI in forensic investigations. Legal experts suggest this could pave the way for broader acceptance of AI evidence in courtrooms.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "AI Aids Cancer Battle for Tech Founder",
+            "title": "AI Empowers Cancer Patient Connor Christou in Health Management",
+            "content": "Connor Christou, a tech founder diagnosed with cancer, has turned to AI to manage his health journey. By inputting comprehensive data from blood results, scans, wearable devices, and personal journals into the AI model Claude, Christou gained actionable insights to tailor his treatment and lifestyle. This personalized approach underscores AI's potential to revolutionize healthcare by providing patients with data-driven strategies for disease management. The case exemplifies how AI can empower individuals with chronic conditions to take control of their health outcomes.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "Anthropic's Mythos Models Offline Amidst U.S. Government Standoff",
+            "title": "Anthropic Faces Challenges as Mythos-Class Models Remain Offline",
+            "content": "Anthropic's Mythos-class AI models have been offline for two weeks following an ultimatum from the Trump administration. The company has been actively engaging with government officials in Washington, D.C., but no resolution has been reached. The standoff highlights the complex interplay between AI companies and government regulations, particularly concerning national security and ethical considerations. The lack of updates has raised concerns among stakeholders relying on these models for critical applications. Observers are closely watching for developments that could impact the AI landscape.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957327/anthropic-mythos-fable-ai-trump-administration-negotiations",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Ford Rehires Engineers to Correct Automation Errors",
+            "title": "Ford Addresses Automated System Errors with Former Engineers",
+            "content": "Ford Motor Company has rehired former engineers to rectify errors introduced by its automated systems in production and design. Despite achieving the top spot in JD Power's initial quality ranking, Ford acknowledged that automation led to significant production challenges. The decision to bring back experienced engineers underscores the limitations of current automated technologies and the ongoing need for human expertise in complex manufacturing processes. This move reflects a broader industry trend of balancing automation with human oversight to ensure quality and reliability.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "IBM Unveils Sub-1nm Chip Technology—A Game Changer",
+            "title": "IBM's Sub-1 Nanometer Chip Technology Promises Performance Boosts",
+            "content": "IBM has announced the development of the world's first sub-1 nanometer chip technology, featuring nanostack transistors that could significantly enhance chip performance and energy efficiency. This breakthrough positions IBM at the forefront of semiconductor innovation, potentially transforming industries reliant on high-performance computing. The technology promises to deliver faster processing speeds and lower power consumption, critical for advancing AI, cloud computing, and IoT applications. IBM's achievement marks a pivotal moment in the ongoing race to miniaturize and optimize chip technology.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Facebook Creator Studio Returns as AI Companion App",
+            "title": "Meta Revives Facebook Creator Studio with AI Enhancements",
+            "content": "Meta has relaunched the Facebook Creator Studio as an AI-powered companion app, designed to help content creators better engage with their audiences. The revamped app offers tools to optimize content strategies and grow presence on Facebook, leveraging AI to provide personalized insights and recommendations. This move reflects Meta's commitment to supporting creators in a competitive digital landscape, where data-driven approaches are increasingly vital. The AI Creator Assistant aims to streamline content management and enhance creator-audience interactions.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 24 2026",
+            "headline": "OpenAI and Broadcom Debut Jalapeño AI Chip",
+            "title": "Jalapeño: OpenAI and Broadcom's LLM-Optimized Inference Chip",
+            "content": "OpenAI and Broadcom have unveiled Jalapeño, a custom chip designed to optimize inference for large language models (LLMs). This chip aims to enhance performance, efficiency, and scalability across AI systems, addressing the growing demand for high-performance AI processing. Jalapeño's introduction signifies a strategic collaboration between AI and semiconductor industries to meet the computational needs of advanced AI applications. The chip is expected to support a wide range of AI workloads, offering improved speed and energy efficiency.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "GPT-5 Solves Immunology Mystery—A Breakthrough for Research",
+            "title": "GPT-5 Pro Assists in Solving Complex Immunology Challenge",
+            "content": "GPT-5 Pro has played a crucial role in resolving a three-year-old immunology puzzle, providing new insights into T cell behavior. This breakthrough has significant implications for cancer and autoimmune disease research, offering potential pathways for developing novel treatments. The use of advanced AI models like GPT-5 in scientific research highlights the transformative potential of AI in accelerating discovery and innovation. Researchers are optimistic about the continued integration of AI tools in complex problem-solving across various scientific domains.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-immunology-mystery",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 23 2026",
+            "headline": "OpenAI Pushes for Global AI Standards with Appia Foundation",
+            "title": "OpenAI Collaborates on Shared Standards for Advanced AI Safety",
+            "content": "OpenAI is working with the Appia Foundation to develop shared standards for advanced AI systems, focusing on evaluation frameworks, safety practices, and international cooperation. This initiative aims to establish robust guidelines that ensure the safe and ethical deployment of AI technologies worldwide. By fostering collaboration among stakeholders, OpenAI seeks to address the challenges posed by rapidly advancing AI capabilities. The effort underscores the importance of global cooperation in setting standards that protect users and promote responsible AI innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+            "relatedResources": []
+        },
         {
             "date": "Jun 27 2026",
             "headline": "Musk's Orbital Data Centers—Skepticism Grows Among Tech Leaders",
@@ -210,69 +300,6 @@ const websiteContent = {
             "content": "Paul Meade, the vice president overseeing Apple's Vision Pro headset, is reportedly transitioning to OpenAI to bolster its hardware initiatives. This move signifies OpenAI's strategic expansion into hardware, potentially enhancing its AI capabilities with new device integrations. Meade's departure from Apple highlights the competitive landscape for top talent in the AI and tech sectors. Industry professionals should watch for potential collaborations or product developments resulting from this high-profile recruitment.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "GPT-5.6 Release Delayed—Trump Administration Cites Security Concerns",
-            "title": "OpenAI Postpones GPT-5.6 Launch Following Government Request",
-            "content": "OpenAI has announced a delay in the release of its anticipated GPT-5.6 model following a request from the Trump administration. Concerns over potential security vulnerabilities prompted the administration to urge a staggered release, allowing for limited previews before full deployment. This decision reflects ongoing governmental scrutiny over AI advancements and their implications for national security. AI developers and users should prepare for potential adjustments in deployment timelines and assess the impact on their projects.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Patronus AI Secures $50M—Focus on AI Stress-Testing",
-            "title": "Patronus AI Raises $50M to Enhance AI Agent Stress-Testing",
-            "content": "Patronus AI, a startup specializing in AI agent stress-testing, has secured $50 million in funding. Founded by former Meta AI researchers, the company aims to develop digital environments that rigorously test AI agents' capabilities and resilience. The funding will accelerate the creation of these virtual worlds, addressing the growing demand for robust AI validation tools. This investment highlights the increasing importance of stress-testing in ensuring AI reliability and safety in real-world applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Anthropic Accuses Alibaba of Claude Cloning Attack",
-            "title": "Anthropic Demands Sanctions Against Alibaba for Claude Exploitation",
-            "content": "Anthropic has accused Alibaba of orchestrating the largest known cloning attack on its AI model, Claude. Allegedly, Alibaba utilized 25,000 accounts to conduct over 28.8 million exchanges with Claude, effectively mining its capabilities. This incident raises significant concerns about intellectual property theft and AI model security. Anthropic is calling for punitive measures against Alibaba, emphasizing the need for stricter regulations and protections for AI technologies. Industry stakeholders should consider the implications for AI development and competitive practices.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Claude Gains Ground—Challenges ChatGPT's Market Dominance",
-            "title": "Anthropic's Claude Attracts Paying Users Amid ChatGPT Competition",
-            "content": "Anthropic's AI model, Claude, is gaining traction among paying consumers, challenging ChatGPT's market dominance. Despite ChatGPT's established lead, data indicates a growing preference for Claude due to its unique features and performance. This shift highlights the competitive dynamics in the AI market, where innovation and user satisfaction drive consumer choices. AI developers and businesses should analyze these trends to inform their strategic positioning and product offerings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "$2.3B Bet on Gaming—Training AI for Real-World Tasks",
-            "title": "General Intuition Invests $2.3B in AI Training via Video Games",
-            "content": "General Intuition has raised $320 million as part of a $2.3 billion initiative to train AI agents using video games. By leveraging millions of hours of gameplay, the company aims to develop AI with enhanced decision-making and problem-solving skills akin to human intuition. This approach reflects a growing trend of using simulated environments to refine AI capabilities for real-world applications. Stakeholders should consider the potential of gaming data in advancing AI training methodologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "AI Use in Legislation—Congresswoman Clarifies Staff's Role",
-            "title": "Rep. Luna Denies AI Drafting of Defense Bill Amendment",
-            "content": "Rep. Anna Paulina Luna (R-FL) has clarified that her staff used AI solely for spellchecking in an amendment summary for a defense funding bill, not for drafting the text itself. This statement comes after speculation arose on social media about AI's role in legislative processes. Luna emphasized that no legislation is drafted with AI, addressing concerns about the integrity and transparency of legislative work. This incident underscores the growing scrutiny of AI's role in government operations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "NVIDIA NeMo AutoModel—Boosting Transformers Fine-Tuning Speed",
-            "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
-            "content": "Hugging Face has highlighted the capabilities of NVIDIA's NeMo AutoModel in expediting the fine-tuning process for transformer models. This technology leverages NVIDIA's advanced hardware to significantly reduce the time required for model training, enhancing efficiency for developers. The integration of NeMo AutoModel into existing workflows promises to streamline AI development, particularly for applications requiring rapid iteration and deployment. AI practitioners should explore this tool to optimize their model training processes.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
             "relatedResources": []
         },
         {
@@ -336,33 +363,6 @@ const websiteContent = {
             "content": "The New York Times has criticized Microsoft for allegedly building a supercomputer for OpenAI that infringes on copyright laws. This comes after a Supreme Court ruling against Sony, which has shifted the focus onto Microsoft's practices. The supercomputer in question is part of OpenAI's infrastructure for training advanced AI models, raising concerns about intellectual property rights in AI development. The implications could affect partnerships and future collaborations in the AI industry. Companies involved in AI development should review their compliance with copyright laws to avoid similar disputes.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI's Jalapeño Chip Challenges Nvidia's Dominance",
-            "title": "OpenAI Develops Jalapeño Chip to Reduce Nvidia Dependency",
-            "content": "OpenAI has unveiled its custom inference chip, Jalapeño, developed in collaboration with Broadcom, marking a strategic move to reduce reliance on Nvidia's AI chips. This development aligns OpenAI with other tech giants like Google, Apple, and SpaceX, who are also pursuing custom chip solutions. The Jalapeño chip promises enhanced performance for AI workloads, potentially lowering costs and increasing efficiency. This shift could significantly impact Nvidia's market share and influence future AI hardware development trends. Organizations should monitor these developments to assess potential impacts on their AI infrastructure strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Launches GPT-5.6 Amid Regulatory Challenges",
-            "title": "OpenAI Releases GPT-5.6 Following Government Stipulations",
-            "content": "OpenAI has launched GPT-5.6, a new model suite including Sol and Terra, despite regulatory pressures from the Trump administration. The release was staggered to comply with government requests, highlighting ongoing tensions between AI innovation and regulatory oversight. GPT-5.6 introduces enhanced capabilities in coding, science, and cybersecurity, supported by an advanced safety stack. This release is crucial for developers and enterprises seeking cutting-edge AI tools, though it underscores the need for balanced regulation that does not stifle technological advancement. Stakeholders should stay informed on regulatory developments affecting AI deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "AI's Political Impact Demands Collective Action",
-            "title": "Political Consequences of AI Models Require Unified Response",
-            "content": "The increasing political implications of AI models like those from Anthropic and OpenAI necessitate collective action to manage their societal impact. As AI capabilities advance, they influence political dynamics and decision-making processes, raising ethical and governance challenges. This trend highlights the need for international cooperation and robust policy frameworks to guide AI development and deployment. Stakeholders across industries must engage in dialogue and collaboration to address these challenges effectively. Understanding the broader implications of AI technologies is essential for informed decision-making and strategic planning.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
             "relatedResources": []
         }
     ],
