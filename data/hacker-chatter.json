@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-06-28T06:42:42.964853",
-  "total_incidents": 29001,
+  "last_updated": "2026-06-28T15:48:35.342122",
+  "total_incidents": 29004,
   "incidents": [
+    {
+      "id": "cmdorganization_fidelity_security_group",
+      "victim_name": "Fidelity Security Group",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-06-28T13:55:00.070820+00:00",
+      "industry": "Financial Services",
+      "website": "www.fidelitysecurity.co",
+      "claim": "Excellence in service delivery and implementation are fundamental to our impressive track record. By keeping abreast of the latest trends and technological developments globally, and continuously evolving and innovating, the Group remains a front-runner in the security solutions market. Through a bouquet of services and related products the Group can tailor make a solution for any requirement.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "redact_hologic",
+      "victim_name": "Hologic",
+      "threat_actor": "Redact",
+      "date_discovered": "2026-06-28T08:38:15.410881+00:00",
+      "industry": "Healthcare",
+      "website": "hologic.com",
+      "claim": "Sector: Medical Supplies | Revenue: $4B USD",
+      "screenshot": "https://images.ransomware.live/victims/d70284ae841853ea198d6d698cbe9a68.png",
+      "url": "http://ursba4dbibo27dtwtgy3l2pc3ekut7helebvmy7ny3b2s3mbzph4qdad.onion/hologic/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "redact_fcci_insurance_group",
+      "victim_name": "FCCI Insurance Group",
+      "threat_actor": "Redact",
+      "date_discovered": "2026-06-28T08:37:44.886625+00:00",
+      "industry": "Financial Services",
+      "website": "fcci-group.com",
+      "claim": "Sector: Insurance",
+      "screenshot": "https://images.ransomware.live/victims/787973d5e6d39b7c41aa580e5bfa6d0b.png",
+      "url": "http://ursba4dbibo27dtwtgy3l2pc3ekut7helebvmy7ny3b2s3mbzph4qdad.onion/fcci/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "safepay_hellmold-plank.de",
       "victim_name": "hellmold-plank.de",
