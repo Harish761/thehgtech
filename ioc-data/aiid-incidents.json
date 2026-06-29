@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1561",
+      "incident_id": 1561,
+      "title": "U.S. Navy Unmanned Vessel Reportedly Capsized Support Boat After Receiving Inadvertent Command",
+      "date": "2026-06-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1558",
       "incident_id": 1558,
       "title": "Sullivan & Cromwell Reportedly Filed Emergency Bankruptcy Motion Containing AI-Generated Legal Error",
@@ -2538,9 +2546,9 @@
     }
   ],
   "stats": {
-    "total": 317,
-    "last7Days": 13,
-    "last30Days": 127
+    "total": 318,
+    "last7Days": 14,
+    "last30Days": 128
   },
-  "lastUpdated": "2026-06-30T01:56:16.866556+05:30"
+  "lastUpdated": "2026-06-30T03:11:55.186862+05:30"
 }
