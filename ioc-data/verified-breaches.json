@@ -15092,6 +15092,28 @@
       "Description": "In June 2020, the Egyptian bus operator <a href=\"https://portswigger.net/daily-swig/egyptian-bus-operator-swvl-hit-by-data-breach\" target=\"_blank\" rel=\"noopener\">Swvl suffered a data breach</a> which impacted over 4 million members of the service. The exposed data included names, email addresses, phone numbers, profile photos, partial credit card data (type and last 4 digits) and passwords stored as bcrypt hashes, all of which was subsequently shared extensively throughout online hacking communities. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
     }
   ],
+  "sysco.com": [
+    {
+      "Name": "Sysco",
+      "Title": "Sysco",
+      "BreachDate": "2026-06-15",
+      "AddedDate": "2026-06-28T15:57:29Z",
+      "PwnCount": 2691852,
+      "DataClasses": [
+        "Customer feedback",
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, the food distribution company <a href=\"https://cybernews.com/news/sysco-shinyhunters-61-million-salesforce-records/\" target=\"_blank\" rel=\"noopener\">Sysco was targeted by a ShinyHunters \"pay or leak\" extortion campaign</a>. Data was subsequently published containing 2.7M unique email addresses belonging to staff and customers. The data also contained largely corporate contact information including names, phone numbers, physical addresses, internal job titles, and customer feedback."
+    }
+  ],
   "t2tea.com": [
     {
       "Name": "T2",
