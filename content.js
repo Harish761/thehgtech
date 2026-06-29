@@ -4,75 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jun 26 2026",
-            "headline": "TinyRCT Backdoor Targets Southeast Asia—Chinese APT Involved",
-            "title": "Chinese APT Deploys TinyRCT Backdoor in Southeast Asia Cyber Attacks",
-            "content": "A Chinese-speaking advanced persistent threat (APT) group has been identified deploying a new custom backdoor named TinyRCT in cyber attacks targeting government entities and critical infrastructure in Southeast Asia. This campaign primarily focuses on state-owned enterprises in the energy and government sectors. TinyRCT enables remote control of compromised systems, posing significant risks to national security and operational continuity. The emergence of this backdoor underscores the persistent threat posed by state-sponsored actors in the region. Organizations are advised to enhance monitoring and incident response capabilities to detect and mitigate such threats.",
+            "date": "Jun 29 2026",
+            "headline": "236,000 DCloud Sites Exploit Crypto Scams—Users Beware",
+            "title": "DCloud Uni-App Framework Abused in Massive Crypto Scam Campaign",
+            "content": "Infoblox has discovered over 236,000 websites using DCloud Uni-App, a legitimate Chinese open-source framework, to facilitate cryptocurrency scams and phishing attacks. These sites mimic investment platforms and cryptocurrency exchanges, luring users into fraudulent schemes. The exploitation of DCloud Uni-App underscores the increasing trend of leveraging legitimate tools for malicious purposes. Users are advised to verify the authenticity of cryptocurrency platforms and remain cautious of unsolicited investment opportunities. This incident highlights the need for enhanced scrutiny of open-source frameworks to prevent misuse.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
+            "sourceUrl": "https://thehackernews.com/2026/06/236000-dcloud-uni-app-sites-used-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Critical libssh2 Flaw—PoC Released, Update Now",
+            "title": "Public PoC for libssh2 CVE-2026-55200 Allows Client-Side Exploits",
+            "content": "A critical vulnerability, CVE-2026-55200, in libssh2 has been publicly disclosed with a proof-of-concept exploit, enabling attackers to cause memory corruption on client systems. This flaw affects all versions up to 1.10.0 and can lead to arbitrary code execution without user interaction. The vulnerability poses a significant risk to systems relying on libssh2 for secure communications. Administrators should prioritize updating to the latest patched version to mitigate potential exploitation. This development highlights the ongoing challenges in securing widely-used open-source libraries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
             "relatedResources": []
         },
         {
             "date": "Jun 26 2026",
-            "headline": "PTC Windchill Flaw Exploited—CISA Adds to Vulnerability List",
-            "title": "First-Ever Exploitation of PTC Windchill Vulnerability Discovered in the Wild",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has added CVE-2026-12569, a remote code execution vulnerability in PTC Windchill, to its Known Exploited Vulnerabilities catalog. This marks the first known exploitation of this flaw in the wild, affecting organizations using PTC’s product lifecycle management software. The vulnerability allows attackers to execute arbitrary code, potentially leading to data breaches and operational disruptions. Organizations using PTC Windchill should prioritize applying the latest patches and review their security configurations to prevent exploitation.",
+            "headline": "Linux Kernel Exploit—Root Access via pedit COW",
+            "title": "Linux Kernel's pedit COW Exploit Grants Root Access on Vulnerable Systems",
+            "content": "A newly identified flaw in the Linux kernel's traffic-control subsystem, CVE-2026-46331, known as \"pedit COW,\" allows local unprivileged users to gain root access. This vulnerability involves an out-of-bounds write in the packet-editing action, corrupting shared page-cache memory. A public exploit is available, increasing the urgency for system administrators to apply patches. The flaw affects multiple Linux distributions, emphasizing the need for prompt action to secure affected systems. This incident underscores the critical nature of kernel vulnerabilities in maintaining system integrity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "WhatsApp Introduces Usernames—Enhances Privacy for 3B Users",
+            "title": "WhatsApp Launches Username Feature to Protect User Privacy",
+            "content": "WhatsApp has announced the introduction of usernames, allowing users to connect without sharing phone numbers. This optional feature aims to enhance privacy for its over three billion users globally. By enabling connections through usernames, WhatsApp reduces the risk of phone number exposure, a common privacy concern. Users are encouraged to reserve their usernames to take advantage of this new privacy layer. This move aligns with broader industry trends towards enhancing user privacy and security in digital communications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Mustang Panda Exploits Zoho—Targets Indian Government",
+            "title": "Mustang Panda Uses Zoho WorkDrive in Indian Government Cyberattacks",
+            "content": "The espionage group Mustang Panda has been identified using Zoho WorkDrive as a command channel in attacks against the Indian government and hydropower sectors. Acronis Threat Research Unit discovered the group's deployment of new malware variants, leveraging legitimate cloud services to evade detection. These campaigns highlight the sophisticated tactics employed by state-aligned actors to infiltrate critical infrastructure. Organizations are advised to monitor cloud service usage and implement robust security measures to detect and mitigate such threats.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/first-ever-exploitation-of-ptc-windchill-vulnerability-discovered-in-the-wild/",
+            "sourceUrl": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
             "relatedResources": []
         },
         {
-            "date": "Jun 26 2026",
-            "headline": "Cisco Expands Security Stack with Astrix, WideField Acquisitions",
-            "title": "Cisco Adds NHI to Security Stack With Astrix, WideField Acquisitions",
-            "content": "Cisco has announced the acquisition of Astrix and WideField, aiming to enhance its security offerings by integrating network-hosted identity (NHI) solutions. This move aligns with the industry's shift towards identity as the primary control plane for securing the agentic workforce. By incorporating NHI, Cisco seeks to provide comprehensive security solutions that address identity management challenges in modern enterprises. This strategic expansion highlights the growing importance of identity-centric security in protecting against evolving cyber threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/cisco-adds-nhi-security-stack-with-astrix-widefield",
+            "date": "Jun 29 2026",
+            "headline": "Claude Code Attack—Hijacks Developer Machines via Repos",
+            "title": "Researchers Unveil Claude Code Attack Using Malicious Repositories",
+            "content": "Security researchers have demonstrated a new attack vector, dubbed the Claude Code attack, which uses seemingly harmless repositories to compromise developer machines. By embedding indirect prompts, attackers can spawn a reverse shell, gaining unauthorized access. This technique poses a significant threat to developers who rely on open-source repositories, emphasizing the need for vigilance and code review. The attack highlights the evolving landscape of supply chain threats targeting development environments. Developers should scrutinize repository sources and implement security checks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-attack-abuses-claude-code-and-harmless-looking-repositories-to-hijack-developer-machines/",
             "relatedResources": []
         },
         {
-            "date": "Jun 26 2026",
-            "headline": "New Initiative Secures Aging Open Source Software",
-            "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
-            "content": "The Open Source Sustainability Initiative has been launched to assist enterprises in managing and securing aging open source projects. As many open source software (OSS) projects reach end-of-life, they pose significant security and compliance risks. This initiative aims to provide resources and support for maintaining these projects while ensuring regulatory compliance. It addresses a critical gap in the open source ecosystem, where outdated software often becomes a target for cyber attacks. Organizations are encouraged to participate in this initiative to safeguard their OSS dependencies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
+            "date": "Jun 29 2026",
+            "headline": "Straiker Secures $64M—Boosts AI Security Platform",
+            "title": "Straiker Raises $64 Million to Enhance AI Security Capabilities",
+            "content": "AI security startup Straiker has successfully raised $64 million to advance its platform, which provides visibility into AI agent access, behavior, and risks. This funding round underscores the growing demand for robust AI security solutions as organizations increasingly adopt AI technologies. Straiker's platform aims to address the unique security challenges posed by AI systems, offering tools to identify and mitigate potential threats. Investors' confidence in Straiker reflects the critical importance of securing AI environments in today's digital landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/straiker-raises-64-million-for-ai-security-platform/",
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Police Collusion Hinders Asian Scam Center Crackdowns",
-            "title": "Local Police Collusion Hampers Crackdown on Asian Scam Centers",
-            "content": "Efforts to dismantle scam centers in Asia are being undermined by local police collusion, despite international and law enforcement initiatives. These centers, responsible for billions of dollars in cybercrime, continue to thrive, exploiting regional economic vulnerabilities. The involvement of local authorities complicates international efforts to curb these operations, highlighting the need for stronger global cooperation and oversight. Security professionals and policymakers must address these challenges to effectively combat the growing threat of organized cybercrime in the region.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/police-collusion-crackdown-asian-scam-centers",
+            "date": "Jun 29 2026",
+            "headline": "NAIC Breach—3.1 TB Data Stolen in Oracle Hack",
+            "title": "ShinyHunters Breach NAIC, Steal 3.1 TB of Sensitive Data",
+            "content": "The ShinyHunters extortion group has claimed responsibility for a significant data breach at the National Association of Insurance Commissioners (NAIC), exploiting vulnerabilities in Oracle PeopleSoft. The attackers reportedly exfiltrated 3.1 terabytes of sensitive data, posing a severe risk to the organization's operations and data privacy. This breach highlights the persistent threat of sophisticated cybercriminal groups targeting critical infrastructure. Organizations using Oracle PeopleSoft are urged to review their security posture and apply necessary patches to prevent similar incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/insurance-regulators-group-naic-hit-in-oracle-peoplesoft-hack/",
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "\"Parcel Expert\" Job Offers—A Front for Mule Scams",
-            "title": "Beware of “Parcel Expert” Job Offers: They’re Parcel Mule Scams",
-            "content": "A surge in parcel mule scams is being reported, with fraudsters luring victims through fake job offers for \"Parcel Expert\" positions. These scams trick individuals into handling stolen goods, making them unwitting accomplices in criminal activities. Victims often receive packages and are instructed to re-ship them, unknowingly participating in illegal operations. This trend highlights the need for increased awareness and vigilance among job seekers. Individuals should verify the legitimacy of job offers and report suspicious activities to authorities.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/scams/2026/06/beware-of-parcel-expert-job-offers-theyre-parcel-mule-scams",
+            "date": "Jun 29 2026",
+            "headline": "Gamaredon Expands Ukraine Attacks—35 New Campaigns",
+            "title": "Gamaredon Intensifies Cyber Attacks on Ukraine with New Malware",
+            "content": "The Russian APT group Gamaredon has expanded its cyber operations against Ukraine, launching 35 spear-phishing campaigns in 2025. Slovakian cybersecurity firm ESET reports that Gamaredon has developed new malware variants and is abusing cloud services to enhance its attack capabilities. This escalation reflects the ongoing cyber conflict between Russia and Ukraine, with critical infrastructure and government entities as primary targets. Organizations in the region should bolster their defenses and remain vigilant against evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html",
             "relatedResources": []
         },
         {
-            "date": "Jun 25 2026",
-            "headline": "Ransomware Gangs Target EU—Europe Becomes Prime Region",
-            "title": "Europe Evolves Into Ransomware's Favorite Region",
-            "content": "Ransomware gangs are increasingly targeting European Union (EU) organizations and their suppliers, marking a shift in focus to this lucrative region. Following a global decline in ransomware incidents, attackers are now exploiting vulnerabilities in EU supply chains, posing significant risks to businesses and critical infrastructure. This trend underscores the need for robust cybersecurity measures and collaboration among EU member states to combat the growing ransomware threat. Organizations should enhance their defenses and incident response strategies to mitigate potential impacts.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Open-Source Security Challenges—Governments Struggle to Respond",
-            "title": "Open-source security is posing challenges governments can’t easily solve",
-            "content": "Governments worldwide are grappling with the complexities of securing open-source software (OSS), which presents a diffuse landscape of vulnerabilities and targets. The lack of centralized oversight and the rapid evolution of OSS projects complicate efforts to implement effective security measures. Additionally, the influence of artificial intelligence (AI) and insufficient corporate responsibility exacerbate these challenges. This situation calls for a coordinated global response and increased investment in OSS security to protect critical infrastructure and sensitive data.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/open-source-software-security-crisis/",
+            "date": "Jun 29 2026",
+            "headline": "$10M Bounty for Russian Hackers—US Targets Messaging Attacks",
+            "title": "US Offers $10 Million Reward for Russian State Hackers",
+            "content": "The United States has announced a $10 million bounty for information leading to the identification or location of Russian state-affiliated hackers UNC5792 and UNC4221. These groups have been implicated in attacks targeting US government officials and military personnel, exploiting messaging app vulnerabilities. This reward underscores the seriousness with which the US government views these cyber threats and its commitment to countering state-sponsored cyber activities. Individuals with information are encouraged to come forward to aid in disrupting these malicious operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-offers-10-million-bounty-for-russian-state-hackers-as-messaging-app-attacks-evolve/",
             "relatedResources": []
         },
         {
@@ -132,6 +150,96 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Jun 29 2026",
+            "headline": "EU Jobs—AI Report Maps Automation Impact",
+            "title": "OpenAI Report Highlights AI's Impact on EU Workforce",
+            "content": "A new report from OpenAI outlines how artificial intelligence could transform the job landscape across the European Union. The study identifies occupations likely to experience automation, growth, or significant workflow changes due to AI advancements. Key sectors such as manufacturing, logistics, and customer service are highlighted as areas where AI could lead to substantial shifts in employment patterns. The report emphasizes the need for strategic workforce planning and retraining initiatives to mitigate potential job displacement. Policymakers and industry leaders are urged to consider these findings to prepare for the evolving job market.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Lawmakers Push to Ban AI Health Data Sales",
+            "title": "Proposed Legislation Aims to Ban Sale of AI-Derived Health Data",
+            "content": "Senator Elizabeth Warren (D-MA) and Representative Mary Gay Scanlon (D-PA) are set to introduce legislation prohibiting the sale of health and location data collected by AI systems. This proposal targets data brokers who profit from sensitive information, including details disclosed to AI chatbots like ChatGPT and Claude. The move reflects growing concerns over privacy and data security in the AI sector. If passed, the legislation would mark a significant step in protecting consumer data from commercial exploitation. Stakeholders in AI development and data privacy are advised to monitor the progress of this bill closely.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Proception Settles Tesla Suit, Raises $11M",
+            "title": "Proception Settles Trade Secret Dispute with Tesla, Secures Funding",
+            "content": "Proception, a robotics startup specializing in robotic hands, has settled a trade secret lawsuit with Tesla and announced an $11 million funding round. The company is pioneering innovative methods for collecting training data to address complex challenges in robotics. This settlement and funding will enable Proception to accelerate its research and development efforts. The resolution of the lawsuit removes a significant legal hurdle, allowing the company to focus on advancing its technology. Investors and industry observers are keenly watching Proception's next steps in the competitive robotics market.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Omen AI Raises $31M for Data Center Safety",
+            "title": "Omen AI Secures $31M to Enhance Data Center Safety with AI",
+            "content": "Omen AI has raised $31 million in a Series A funding round to develop AI solutions for monitoring chip coolant systems and preventing bacterial outbreaks in data centers. The company's technology aims to optimize data center operations by ensuring the cleanliness and efficiency of cooling systems, which are critical for maintaining optimal performance. This funding will support the deployment of Omen AI's solutions across various data centers, enhancing operational safety and reliability. Data center operators and IT professionals should consider integrating such technologies to mitigate risks associated with cooling system failures.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI's Jalapeño Chip Challenges Nvidia's Dominance",
+            "title": "OpenAI Unveils Jalapeño Chip, Reducing Dependence on Nvidia",
+            "content": "OpenAI has announced Jalapeño, a custom inference chip developed in collaboration with Broadcom, marking a strategic shift away from Nvidia's dominance in the AI chip market. This move aligns OpenAI with other tech giants like Google, Apple, and SpaceX, who are also developing proprietary hardware solutions. Jalapeño is designed to enhance AI processing efficiency and reduce costs, potentially reshaping the competitive landscape of AI hardware. Organizations relying on AI technologies should evaluate the implications of this development for their infrastructure strategies.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/openais-jalapeno-chip-is-big-techs-spiciest-move-away-from-nvidia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI Previews GPT-5.6 Sol—Advanced Capabilities Unveiled",
+            "title": "OpenAI Introduces GPT-5.6 Sol with Enhanced Features",
+            "content": "OpenAI has previewed GPT-5.6 Sol, a next-generation AI model boasting improved capabilities in coding, science, and cybersecurity. This model is equipped with the most advanced safety stack to date, aiming to address previous concerns about AI safety and ethical use. GPT-5.6 Sol represents a significant leap in AI technology, offering enhanced performance and reliability for complex tasks. Developers and cybersecurity professionals are encouraged to explore the potential applications of this model in their respective fields. The release underscores OpenAI's commitment to advancing AI while prioritizing safety.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "IBM Unveils World's First Sub-1nm Chip Technology",
+            "title": "IBM Announces Breakthrough in Sub-1 Nanometer Chip Technology",
+            "content": "IBM has announced a groundbreaking advancement in chip technology with the development of sub-1 nanometer transistors. This innovation promises to significantly boost chip performance and energy efficiency, potentially transforming the semiconductor industry. IBM's nanostack transistors could lead to smaller, more powerful, and energy-efficient devices, impacting various sectors from consumer electronics to data centers. Industry leaders and tech developers should closely monitor IBM's progress as it could set new standards in chip manufacturing and design.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 25 2026",
+            "headline": "Trump Administration Delays OpenAI's GPT-5.6 Release",
+            "title": "OpenAI Delays GPT-5.6 Release Following Government Request",
+            "content": "The Trump administration has requested OpenAI to delay the release of its upcoming model, GPT-5.6, due to security concerns. OpenAI CEO Sam Altman informed employees that the model would be released in limited preview instead of a full launch. This decision reflects heightened governmental scrutiny over AI technologies and their potential implications for national security. Organizations and developers anticipating GPT-5.6 should prepare for a staggered rollout and adjust their plans accordingly. The delay highlights the growing intersection of AI development and regulatory oversight.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "AI Models' Political Impact Demands Collective Action",
+            "title": "Political Consequences of Advanced AI Models Require Unified Response",
+            "content": "The rapid advancement of AI models has reached a point where their capabilities are influencing political landscapes. This development necessitates collective action from governments, tech companies, and civil society to address the resulting challenges. The debate is no longer limited to competition between companies like Anthropic and OpenAI but extends to broader societal impacts. Stakeholders are urged to collaborate on frameworks that ensure AI technologies are developed and deployed responsibly. This call to action highlights the need for comprehensive policies governing AI's role in society.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "NYT Criticizes Microsoft for Copyright Issues with OpenAI",
+            "title": "NYT Accuses Microsoft of Copyright Infringement in OpenAI Partnership",
+            "content": "The New York Times has criticized Microsoft for allegedly building a supercomputer for OpenAI that infringes on copyright laws. This accusation follows a Supreme Court ruling against Sony, which has shifted the focus onto Microsoft's practices. The controversy underscores the ongoing legal and ethical challenges in AI development, particularly concerning intellectual property rights. Legal experts and tech companies should pay close attention to this case as it may influence future AI collaborations and copyright enforcement. The situation highlights the complex interplay between technology innovation and legal frameworks.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 28 2026",
             "headline": "Prompt Injection Exploits AI—Targeting RAG Pipelines",
             "title": "Prompt Injection Exploits AI Design Flaws in Enterprises",
@@ -165,60 +273,6 @@ const websiteContent = {
             "content": "Wall Street investors are increasingly optimistic about Micron Technology, viewing it as a potential successor to Nvidia in the AI sector. As investors seek new opportunities in AI-related companies, Micron's advancements in memory technology position it as a promising contender. The company's focus on AI-driven memory solutions could lead to significant market growth, attracting substantial investor interest. This trend reflects the broader search for emerging leaders in the AI industry, as Nvidia's dominance prompts investors to diversify their portfolios.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Joins Custom Chip Race—Meet Jalapeño",
-            "title": "OpenAI Develops Jalapeño Chip Amidst AI Chip Race",
-            "content": "OpenAI has announced its custom inference chip, Jalapeño, developed in collaboration with Broadcom, marking its entry into the competitive AI chip market. This move aligns OpenAI with tech giants like Google, Apple, and SpaceX, who are also building proprietary chips to reduce reliance on Nvidia. The Jalapeño chip aims to enhance AI processing efficiency, potentially lowering operational costs and increasing performance. This trend signifies a shift towards self-sufficiency in AI hardware, as companies seek to optimize their AI infrastructures.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Releases GPT-5.6 Amid Regulatory Delays",
-            "title": "OpenAI Launches GPT-5.6 Following Regulatory Stipulations",
-            "content": "OpenAI has unveiled GPT-5.6, its latest model suite, after agreeing to stagger its release at the request of the Trump administration. The suite includes Sol, the flagship model, and Terra, a medium-tier model designed for high-value tasks. This release comes amid regulatory concerns over AI's potential security implications. The staggered rollout reflects the growing influence of government oversight in AI development, highlighting the need for compliance with regulatory frameworks. Organizations should stay informed about regulatory changes affecting AI deployment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Patronus AI Secures $50M for AI Stress-Testing",
-            "title": "Patronus AI Raises $50M to Enhance AI Agent Testing",
-            "content": "Patronus AI, an agent-testing startup founded by former Meta AI researchers, has secured $50 million in funding to develop digital worlds for stress-testing AI agents. The company aims to meet the growing demand for robust AI testing environments, ensuring agents perform reliably under various conditions. This funding round underscores the increasing importance of comprehensive testing in AI development, as organizations seek to deploy more sophisticated and reliable AI systems. Investors recognize the potential of Patronus AI's approach in enhancing AI reliability and performance.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Anthropic Demands Sanctions for Alibaba's Claude Clone",
-            "title": "Anthropic Calls for Punishment Over Alibaba's Claude Cloning",
-            "content": "Anthropic has accused Alibaba of conducting the largest Claude cloning attack, using 25,000 accounts to mine data over 28.8 million exchanges. The alleged cloning operation has raised significant ethical and legal concerns within the AI community. Anthropic is calling for punitive measures against Alibaba to deter similar actions and protect intellectual property rights. This incident highlights the challenges of safeguarding AI models from unauthorized replication, emphasizing the need for stronger regulatory frameworks and industry standards.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "AI Agents Revolutionize Work—Boosting Productivity",
-            "title": "OpenAI Study Highlights AI Agents' Impact on Work Productivity",
-            "content": "A recent OpenAI research paper reveals how AI agents are transforming work by enabling longer, more complex tasks and enhancing productivity across various roles. The study demonstrates that AI agents can handle intricate workflows, allowing human workers to focus on strategic decision-making. This shift is poised to redefine job roles, as AI agents take on routine and repetitive tasks. Organizations should consider integrating AI agents to optimize operations and improve efficiency, leveraging their capabilities to drive innovation and growth.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/how-agents-are-transforming-work",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 24 2026",
-            "headline": "Gemini 3.5 Flash Integrates Computer Use",
-            "title": "Google DeepMind Introduces Computer Use in Gemini 3.5 Flash",
-            "content": "Google DeepMind has announced the integration of computer use capabilities in its Gemini 3.5 Flash model, enhancing its functionality and versatility. This update allows the model to perform tasks requiring computer interactions, broadening its application scope. The integration signifies a step forward in AI model development, enabling more complex and dynamic task execution. Organizations can leverage this capability to automate processes that involve computer-based operations, improving efficiency and reducing manual intervention. This development reflects ongoing advancements in AI model capabilities.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/",
             "relatedResources": []
         },
         {
@@ -273,33 +327,6 @@ const websiteContent = {
             "content": "Apple CEO Tim Cook has announced unavoidable price increases across several of the company's flagship products, attributing the hikes to the company's ongoing investments in AI technology. The 16-inch MacBook Pro now costs $300 more, while the 11-inch iPad Air's price has risen from $599 to $749. Even the HomePod Mini has seen a $30 increase. Cook described the previous pricing model as unsustainable, pointing to the need for continued innovation in AI as a driving factor. Consumers and businesses relying on Apple's ecosystem should prepare for these adjustments as the company prioritizes its AI initiatives.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Asian Startups Launch Mythos-Like AI Models Amid U.S. Export Ban",
-            "title": "Asian AI Startups Introduce Mythos-Like Models Amid Anthropic Export Ban",
-            "content": "In response to the ongoing export ban affecting Anthropic's AI models, several Asian startups have launched their own Mythos-like AI models. These new models promise similar capabilities without the constraints of U.S. export restrictions, potentially reshaping the competitive landscape in AI technology. The export ban has left a significant market gap, which these startups are keen to fill, offering alternatives to businesses and developers in the region. The move underscores the growing innovation and self-reliance in the Asian AI sector, challenging U.S. dominance in the field.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Anthropic's Mythos 5 Partially Restored Post-Negotiations",
-            "title": "Anthropic's Mythos 5 Returns After U.S. Government Negotiations",
-            "content": "Following extensive negotiations with the Trump administration, Anthropic's Mythos 5 AI model is partially back in operation. The model is now available to a select group of organizations, as detailed in a government letter reviewed by The Verge. The negotiations, which lasted two weeks, highlight the complexities of AI export regulations and their impact on AI deployment. Organizations with access to Mythos 5 can resume leveraging its advanced capabilities, though broader availability remains restricted. This development marks a critical moment in the ongoing dialogue between AI companies and regulatory bodies.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "100+ Entities Gain Access to Anthropic's Mythos 5",
-            "title": "Trump Administration Authorizes Anthropic's Mythos 5 for Broad Use",
-            "content": "The Trump administration has granted over 100 companies and government agencies access to Anthropic's Mythos 5, including authorization for non-American employees. This decision follows a two-week negotiation process, marking a significant expansion of AI capabilities across various sectors. Mythos 5 is known for its advanced machine learning capabilities, which could enhance operational efficiencies and decision-making processes. The move is expected to accelerate AI integration in both private and public sectors, though it raises questions about data security and international collaboration. Organizations should prepare for potential regulatory changes and ensure compliance with data protection standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
             "relatedResources": []
         }
     ],
