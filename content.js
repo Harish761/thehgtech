@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jun 29 2026",
+            "headline": "Malicious Chrome Extension Logs Searches—Check Your Browser",
+            "title": "Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input",
+            "content": "Microsoft has identified a malicious Chrome extension masquerading as the AI search engine Perplexity, which intercepted user searches and address bar inputs. The extension routed every query and character typed into the address bar through an attacker-controlled server before redirecting users to legitimate search results. This breach potentially exposed sensitive search data to attackers, affecting users who installed the extension. Microsoft advises users to review their installed extensions and remove any suspicious ones immediately. This incident underscores the importance of scrutinizing browser extensions for potential security risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "TinyRCT Backdoor Targets Southeast Asia—Government Systems at Risk",
+            "title": "Chinese-Speaking APT Deploys New TinyRCT Backdoor in Southeast Asia Campaign",
+            "content": "A Chinese-speaking advanced persistent threat (APT) group has been linked to a new backdoor named TinyRCT, targeting government entities and critical infrastructure in Southeast Asia. The campaign primarily focuses on state-owned enterprises in the energy and government sectors. TinyRCT enables attackers to maintain persistent access and exfiltrate sensitive data. This development highlights the ongoing cyber threat landscape in the region, where state-sponsored actors continue to exploit vulnerabilities in critical sectors. Organizations are urged to enhance their cybersecurity measures and monitor for unusual network activities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Djinn Stealer Exploits CVE-2026-48558—Cloud Credentials at Risk",
+            "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
+            "content": "The Djinn infostealer is exploiting CVE-2026-48558, a critical authentication bypass vulnerability in SimpleHelp, to target cloud and AI credentials. This vulnerability allows attackers to access development and admin environments, potentially compromising enterprise systems. The attack highlights the risks associated with unpatched software and the importance of securing cloud-based credentials. Organizations using SimpleHelp should apply the latest patches and review their security configurations to mitigate potential breaches. This incident emphasizes the need for continuous vulnerability management and credential protection.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "WhatsApp Introduces Usernames—Enhances Privacy Protection",
+            "title": "WhatsApp Rolling Out Username Feature to Bolster Phone Number Privacy",
+            "content": "WhatsApp is rolling out an optional 'username key' feature to enhance user privacy by requiring a secondary credential before messaging. This new feature aims to protect phone numbers from being exposed, adding an extra layer of security for users. The introduction of usernames aligns with growing concerns over privacy and data protection in messaging platforms. Users are encouraged to enable this feature to safeguard their personal information from unauthorized access. This move reflects WhatsApp's ongoing efforts to enhance user security and privacy.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/whatsapp-rolling-out-username-feature-to-bolster-phone-number-privacy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Weekly Recap—Linux Flaws, AI Malware, Infostealers",
+            "title": "Weekly Recap: Linux Kernel Flaws, AI Malware Tricks, Turla Backdoor, Infostealers and More",
+            "content": "This week's cybersecurity landscape highlights the persistent threat of small vulnerabilities leading to significant breaches. Linux kernel flaws, AI malware tricks, and infostealers were prominent, with attackers exploiting overlooked vulnerabilities and unpatched systems. Forums buzzed with discussions on easy-to-exploit cracks, emphasizing the need for vigilant patch management. Security professionals are advised to stay updated on the latest threats and ensure all systems are patched promptly. This recap serves as a reminder of the continuous challenges in maintaining robust cybersecurity defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-linux-kernel-flaws-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "DirtyClone Vulnerability—Linux Users Risk Root Access Exploit",
+            "title": "‘DirtyClone’ Linux Kernel Vulnerability Leads to Root Access",
+            "content": "A new Linux kernel vulnerability, dubbed 'DirtyClone', allows unprivileged local users to manipulate the Linux page cache and gain root privileges. This flaw, a variant of DirtyFrag, poses a significant risk to Linux systems, potentially allowing attackers to execute arbitrary code with elevated privileges. System administrators should prioritize patching affected systems to prevent exploitation. This vulnerability underscores the importance of regular security audits and updates to protect against privilege escalation attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/dirtyclone-linux-kernel-vulnerability-leads-to-root-access/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Microsoft Removes 119 Malicious Edge Extensions—Check Your Browser",
+            "title": "Microsoft Removes 119 Edge Extensions That Hid Malware in Images and Fonts",
+            "content": "Microsoft has removed 119 malicious extensions from the Edge Add-ons store, which hid malware in images and fonts. Known as StegoAd, this operation used steganography to conceal its payloads, which activated days after installation to steal credentials and conduct ad fraud. Users who installed these extensions are advised to review their browser add-ons and remove any suspicious ones. This incident highlights the ongoing threat of malicious browser extensions and the need for vigilant monitoring of installed software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "OpenAI Unveils GPT-5.6 Sol—Advanced Cybersecurity AI Launched",
+            "title": "OpenAI Unveils GPT-5.6 Sol as Its Most Advanced Cybersecurity AI",
+            "content": "OpenAI has launched GPT-5.6 Sol, its most advanced cybersecurity AI model, which matches competing systems like Mythos Preview while using only a third of the output tokens. This new model aims to enhance cybersecurity defenses by providing more efficient and effective threat detection and response capabilities. Organizations are encouraged to explore the integration of GPT-5.6 Sol into their security operations to leverage its advanced capabilities. This release marks a significant step forward in AI-driven cybersecurity solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-unveils-gpt-5-6-sol-as-its-most-advanced-cybersecurity-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Hijacked npm, Go Packages Deploy Python Infostealer—Cross-Platform Threat",
+            "title": "Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer",
+            "content": "Cybersecurity researchers have discovered hijacked npm and Go packages designed to deploy a Python-based information stealer on compromised systems, including Windows, Linux, and macOS. These packages utilize VS Code tasks to bypass common npm execution paths, making detection more challenging. Developers using npm and Go are advised to verify package integrity and monitor for unusual activities in their development environments. This attack highlights the risks associated with third-party packages and the need for stringent supply chain security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "New Initiative Secures Aging Open Source Software—Compliance Focus",
+            "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
+            "content": "The Open Source Sustainability Initiative aims to help enterprises manage and secure aging open source projects while maintaining regulatory compliance. As many organizations rely on open source software, ensuring the security of end-of-life projects is critical to prevent vulnerabilities and compliance issues. This initiative provides resources and guidance for managing legacy software, emphasizing the importance of proactive security measures. Enterprises are encouraged to participate and contribute to the initiative to enhance the security of their open source dependencies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
             "headline": "236,000 DCloud Sites Exploit Crypto Scams—Users Beware",
             "title": "DCloud Uni-App Framework Abused in Massive Crypto Scam Campaign",
             "content": "Infoblox has discovered over 236,000 websites using DCloud Uni-App, a legitimate Chinese open-source framework, to facilitate cryptocurrency scams and phishing attacks. These sites mimic investment platforms and cryptocurrency exchanges, luring users into fraudulent schemes. The exploitation of DCloud Uni-App underscores the increasing trend of leveraging legitimate tools for malicious purposes. Users are advised to verify the authenticity of cryptocurrency platforms and remain cautious of unsolicited investment opportunities. This incident highlights the need for enhanced scrutiny of open-source frameworks to prevent misuse.",
@@ -19,15 +109,6 @@ const websiteContent = {
             "content": "A critical vulnerability, CVE-2026-55200, in libssh2 has been publicly disclosed with a proof-of-concept exploit, enabling attackers to cause memory corruption on client systems. This flaw affects all versions up to 1.10.0 and can lead to arbitrary code execution without user interaction. The vulnerability poses a significant risk to systems relying on libssh2 for secure communications. Administrators should prioritize updating to the latest patched version to mitigate potential exploitation. This development highlights the ongoing challenges in securing widely-used open-source libraries.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "Linux Kernel Exploit—Root Access via pedit COW",
-            "title": "Linux Kernel's pedit COW Exploit Grants Root Access on Vulnerable Systems",
-            "content": "A newly identified flaw in the Linux kernel's traffic-control subsystem, CVE-2026-46331, known as \"pedit COW,\" allows local unprivileged users to gain root access. This vulnerability involves an out-of-bounds write in the packet-editing action, corrupting shared page-cache memory. A public exploit is available, increasing the urgency for system administrators to apply patches. The flaw affects multiple Linux distributions, emphasizing the need for prompt action to secure affected systems. This incident underscores the critical nature of kernel vulnerabilities in maintaining system integrity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
             "relatedResources": []
         },
         {
@@ -94,24 +175,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 27 2026",
-            "headline": "OpenAI Previews GPT-5.6 Sol—Enhanced Cyber Safeguards Included",
-            "title": "OpenAI Previews GPT-5.6 Sol With Restricted Access and Stronger Cyber Safeguards",
-            "content": "OpenAI has released a limited preview of GPT-5.6, featuring three versions: Sol, Terra, and Luna, to select companies as part of an engagement with the U.S. government. Sol, the flagship model, offers enhanced capabilities, while Terra balances efficiency and performance. These models incorporate stronger cybersecurity measures to prevent misuse and unauthorized access. This release highlights OpenAI's commitment to responsible AI development and collaboration with government entities to ensure AI technologies are secure and beneficial.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Chinese Framework Fuels 200,000 Scam Sites—DCloud Uni-App Misused",
-            "title": "Chinese Framework Powers 200,000 Scam Sites",
-            "content": "Threat actors are exploiting the legitimate DCloud Uni-App toolkit to create and sell investment scam templates, resulting in over 200,000 scam sites. This misuse of a legitimate framework highlights the challenges in distinguishing between legitimate and malicious uses of technology. The proliferation of these scam sites poses significant risks to individuals and businesses, emphasizing the need for enhanced scrutiny and regulatory measures. Security professionals should monitor for such threats and implement robust defenses to protect against fraudulent activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-framework-powers-200000-scam-sites/",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 28 2026",
             "headline": "14.2M Email Logins Exposed in Japanese ISP Breach",
             "title": "KDDI Corporation Data Breach Affects Multiple Japanese ISPs",
@@ -119,36 +182,99 @@ const websiteContent = {
             "source": "BleepingComputer",
             "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Russian Intelligence Hacks—Fake Texts Steal Credentials",
-            "title": "Ukraine Uncovers Russian Intelligence Credential Theft via Fake Support Texts",
-            "content": "The Security Service of Ukraine (SSU), in collaboration with the U.S. Federal Bureau of Investigation (FBI), has uncovered a campaign by Russian intelligence to steal messaging credentials using fake support texts. This operation targeted government officials, military personnel, politicians, and activists, aiming to access sensitive communications. The SSU advises potential targets to verify the authenticity of support messages and implement multi-factor authentication. This incident highlights the ongoing cyber threats posed by state-sponsored actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "AI Coding Agents Tricked—Malware Hides in Clean Repos",
-            "title": "Clean GitHub Repositories Exploit AI Coding Agents to Deploy Malware",
-            "content": "A new threat has emerged where AI coding agents, tasked with cloning and setting up GitHub repositories, are tricked into executing hidden malware. These repositories appear benign to security scanners and human reviewers, allowing malicious payloads to remain undetected. Developers using AI coding tools should exercise caution and conduct thorough security reviews of repositories. This incident underscores the need for enhanced scrutiny and security measures in AI-assisted development environments.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Third-Party Breaches Cost Education Sector Millions",
-            "title": "Education Sector Faces Rising Vendor Risk Amid Third-Party Breaches",
-            "content": "Educational institutions are increasingly vulnerable to third-party breaches, with ransomware and other cyberattacks targeting student data. The rise in threats from external vendors has forced schools to bolster their defenses, emphasizing the need for robust vendor risk management strategies. This trend highlights the critical importance of securing third-party relationships to protect sensitive information. Institutions are advised to conduct thorough assessments of vendor security practices and implement stringent access controls. The financial and reputational costs of such breaches underscore the urgency for the education sector to prioritize cybersecurity measures.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 29 2026",
+            "headline": "Tidal Labels AI Music—Royalties Cut Off",
+            "title": "Tidal Introduces AI Music Labeling, Ends Royalties for AI-Generated Tracks",
+            "content": "Tidal has announced a new policy to address the rise of AI-generated music on its platform. Starting July 15th, tracks identified as 100% AI-generated will be labeled with a specific icon, allowing listeners to differentiate them from human-created music. The platform will not ban AI music outright but will cease paying royalties on these tracks. This move aims to protect artists and maintain transparency with users. The decision comes amid growing concerns about the authenticity and monetization of AI-generated content in the music industry. Artists and producers should be aware of these changes and consider their implications for revenue streams.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "DeepSeek's DSpark Boosts LLM Inference by 85%",
+            "title": "DeepSeek Releases DSpark Framework to Accelerate LLM Inference by 85%",
+            "content": "Chinese open-source leader DeepSeek has unveiled DSpark, a new framework designed to enhance large language model (LLM) inference speeds by up to 85%. This release comes amid heightened geopolitical tensions surrounding AI advancements, particularly with U.S. restrictions on AI models from companies like Anthropic and OpenAI. DSpark promises to significantly reduce the computational resources needed for LLM operations, potentially reshaping AI development strategies globally. Developers and AI researchers should explore DSpark to leverage its performance benefits and stay competitive in the rapidly evolving AI landscape.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/deepseek-open-sources-dspark-a-new-framework-to-speed-up-llm-inference-by-up-to-85",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "AI Adoption Spurs 10% Job Growth—Report",
+            "title": "Report Shows AI Adoption Correlates with 10% Increase in Workforce",
+            "content": "A recent report highlights that companies identified as \"high-intensity AI adopters\" have experienced a 10.2% increase in headcount. Notably, entry-level positions within these organizations have risen by 12%, challenging the narrative that AI eliminates junior roles. This data suggests that AI integration can lead to job creation rather than displacement, particularly in sectors that embrace AI-driven efficiencies. Businesses should consider the potential for AI to augment their workforce and drive growth, rather than solely focusing on automation's potential to reduce labor costs.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/the-ai-jobs-debate-just-got-messier/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Base44 Launches Proprietary AI Model",
+            "title": "Base44 Unveils Proprietary AI Model to Enhance Vibe Coding Platform",
+            "content": "Base44, a vibe coding platform owned by Wix, has launched its own AI model, aiming to outperform existing frontier models. This strategic move is part of a broader trend among AI startups seeking to establish defensibility through proprietary technology. By developing its own model, Base44 hopes to offer unique capabilities and improve user experience on its platform. This development underscores the competitive nature of the AI industry, where differentiation and innovation are key to maintaining a competitive edge. Developers using Base44 should anticipate enhanced features and performance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Gemini's AI Image Generation Free for US Users",
+            "title": "Google Expands Free Access to Gemini's AI Image Generation in the US",
+            "content": "Google has announced that its Gemini AI image generation tool is now available for free to eligible users in the United States. This tool allows users to create personalized images based on their interests and data from connected Google apps. The expansion of Gemini's accessibility is part of Google's broader strategy to integrate AI capabilities into everyday user experiences. This move could enhance user engagement and provide valuable insights into consumer preferences. US users should explore Gemini to leverage its creative potential and enhance their digital content.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "OpenAI Teases Codex Hardware—Launch July 15",
+            "title": "OpenAI Hints at New Hardware for Codex AI Tool Launching July 15",
+            "content": "OpenAI has released a teaser for a new hardware device related to its Codex AI-powered coding tool, set to launch on July 15th. The teaser video features a square-shaped device with several buttons, suggesting an upgrade to Codex's functionality. This development indicates OpenAI's commitment to enhancing its AI offerings with dedicated hardware solutions, potentially improving user interaction and efficiency. Developers using Codex should stay tuned for further details and consider how this new hardware could integrate into their coding workflows.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Anthropic, California Strike Claude Deal—50% Discount",
+            "title": "Anthropic and California Government Agree on Claude AI Tool Discount",
+            "content": "Anthropic has reached an agreement with California Governor Gavin Newsom to provide the state's government with access to its Claude AI tool at a 50% discount. This deal strengthens Anthropic's ties with California while the federal government remains at odds with the company. The Claude AI tool is expected to enhance the state's operational efficiency and decision-making processes. This partnership highlights the growing interest in AI solutions within government operations and the potential for cost savings through strategic collaborations. Other states may look to similar agreements to leverage AI capabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "South Korea Invests $550B to Combat 'RAMageddon'",
+            "title": "South Korean Tech Giants Pledge $550B to Address Memory Chip Shortage",
+            "content": "South Korea's leading memory chip manufacturers have committed over $550 billion to build additional memory fabrication facilities, aiming to alleviate the ongoing \"RAMageddon\" crisis. This substantial investment positions South Korea as a key player in the global AI technology landscape, ensuring a steady supply of critical components for AI and other tech industries. The initiative reflects the country's strategic focus on becoming a powerhouse in technology innovation and supply chain resilience. Industry stakeholders should monitor these developments as they could impact global memory chip availability and pricing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Arena's AI Leaderboard Hits $100M Milestone",
+            "title": "Arena AI Leaderboard Reaches $100M Valuation with Commercial Success",
+            "content": "Arena, the startup behind a widely-used AI leaderboard, has achieved a $100 million valuation following the launch of its commercial services last September. The platform, initially popular as a free resource, now offers paid services that have significantly contributed to its financial success. Arena's growth underscores the increasing demand for AI benchmarking tools that provide valuable insights into model performance and capabilities. AI developers and companies should consider leveraging Arena's services to gain competitive advantages and optimize their AI models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Cursor Launches Mobile App for Coding Oversight",
+            "title": "Cursor Introduces Mobile App for Remote Coding Agent Management",
+            "content": "Cursor has released a mobile application designed to provide users with remote oversight of their coding agents. This new app allows developers to manage and guide coding processes on the go, enhancing flexibility and productivity. The launch of this mobile solution reflects the growing trend towards mobile-first development tools that cater to the needs of modern developers. Users of Cursor's platform should explore the app to take advantage of its capabilities and streamline their coding workflows.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 29 2026",
             "headline": "EU Jobs—AI Report Maps Automation Impact",
@@ -183,60 +309,6 @@ const websiteContent = {
             "content": "Omen AI has raised $31 million in a Series A funding round to develop AI solutions for monitoring chip coolant systems and preventing bacterial outbreaks in data centers. The company's technology aims to optimize data center operations by ensuring the cleanliness and efficiency of cooling systems, which are critical for maintaining optimal performance. This funding will support the deployment of Omen AI's solutions across various data centers, enhancing operational safety and reliability. Data center operators and IT professionals should consider integrating such technologies to mitigate risks associated with cooling system failures.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI's Jalapeño Chip Challenges Nvidia's Dominance",
-            "title": "OpenAI Unveils Jalapeño Chip, Reducing Dependence on Nvidia",
-            "content": "OpenAI has announced Jalapeño, a custom inference chip developed in collaboration with Broadcom, marking a strategic shift away from Nvidia's dominance in the AI chip market. This move aligns OpenAI with other tech giants like Google, Apple, and SpaceX, who are also developing proprietary hardware solutions. Jalapeño is designed to enhance AI processing efficiency and reduce costs, potentially reshaping the competitive landscape of AI hardware. Organizations relying on AI technologies should evaluate the implications of this development for their infrastructure strategies.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/openais-jalapeno-chip-is-big-techs-spiciest-move-away-from-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Previews GPT-5.6 Sol—Advanced Capabilities Unveiled",
-            "title": "OpenAI Introduces GPT-5.6 Sol with Enhanced Features",
-            "content": "OpenAI has previewed GPT-5.6 Sol, a next-generation AI model boasting improved capabilities in coding, science, and cybersecurity. This model is equipped with the most advanced safety stack to date, aiming to address previous concerns about AI safety and ethical use. GPT-5.6 Sol represents a significant leap in AI technology, offering enhanced performance and reliability for complex tasks. Developers and cybersecurity professionals are encouraged to explore the potential applications of this model in their respective fields. The release underscores OpenAI's commitment to advancing AI while prioritizing safety.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "IBM Unveils World's First Sub-1nm Chip Technology",
-            "title": "IBM Announces Breakthrough in Sub-1 Nanometer Chip Technology",
-            "content": "IBM has announced a groundbreaking advancement in chip technology with the development of sub-1 nanometer transistors. This innovation promises to significantly boost chip performance and energy efficiency, potentially transforming the semiconductor industry. IBM's nanostack transistors could lead to smaller, more powerful, and energy-efficient devices, impacting various sectors from consumer electronics to data centers. Industry leaders and tech developers should closely monitor IBM's progress as it could set new standards in chip manufacturing and design.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 25 2026",
-            "headline": "Trump Administration Delays OpenAI's GPT-5.6 Release",
-            "title": "OpenAI Delays GPT-5.6 Release Following Government Request",
-            "content": "The Trump administration has requested OpenAI to delay the release of its upcoming model, GPT-5.6, due to security concerns. OpenAI CEO Sam Altman informed employees that the model would be released in limited preview instead of a full launch. This decision reflects heightened governmental scrutiny over AI technologies and their potential implications for national security. Organizations and developers anticipating GPT-5.6 should prepare for a staggered rollout and adjust their plans accordingly. The delay highlights the growing intersection of AI development and regulatory oversight.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "AI Models' Political Impact Demands Collective Action",
-            "title": "Political Consequences of Advanced AI Models Require Unified Response",
-            "content": "The rapid advancement of AI models has reached a point where their capabilities are influencing political landscapes. This development necessitates collective action from governments, tech companies, and civil society to address the resulting challenges. The debate is no longer limited to competition between companies like Anthropic and OpenAI but extends to broader societal impacts. Stakeholders are urged to collaborate on frameworks that ensure AI technologies are developed and deployed responsibly. This call to action highlights the need for comprehensive policies governing AI's role in society.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/26/its-not-about-anthropic-vs-openai-anymore/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "NYT Criticizes Microsoft for Copyright Issues with OpenAI",
-            "title": "NYT Accuses Microsoft of Copyright Infringement in OpenAI Partnership",
-            "content": "The New York Times has criticized Microsoft for allegedly building a supercomputer for OpenAI that infringes on copyright laws. This accusation follows a Supreme Court ruling against Sony, which has shifted the focus onto Microsoft's practices. The controversy underscores the ongoing legal and ethical challenges in AI development, particularly concerning intellectual property rights. Legal experts and tech companies should pay close attention to this case as it may influence future AI collaborations and copyright enforcement. The situation highlights the complex interplay between technology innovation and legal frameworks.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
             "relatedResources": []
         },
         {
@@ -282,51 +354,6 @@ const websiteContent = {
             "content": "In a groundbreaking legal development, prosecutors in the Palisades fire trial have used ChatGPT logs as evidence against Jonathan Rinderknecht, accused of starting one of LA's deadliest wildfires. Alongside traditional evidence like iPhone location data and security footage, the AI-generated logs provided insights into the defendant's actions and intentions. This case marks a significant precedent for the use of AI-generated data in legal proceedings, highlighting the increasing role of AI in forensic investigations. Legal experts suggest this could pave the way for broader acceptance of AI evidence in courtrooms.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "AI Aids Cancer Battle for Tech Founder",
-            "title": "AI Empowers Cancer Patient Connor Christou in Health Management",
-            "content": "Connor Christou, a tech founder diagnosed with cancer, has turned to AI to manage his health journey. By inputting comprehensive data from blood results, scans, wearable devices, and personal journals into the AI model Claude, Christou gained actionable insights to tailor his treatment and lifestyle. This personalized approach underscores AI's potential to revolutionize healthcare by providing patients with data-driven strategies for disease management. The case exemplifies how AI can empower individuals with chronic conditions to take control of their health outcomes.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Musk's Orbital Data Centers—Skepticism Grows Among Tech Leaders",
-            "title": "SoftBank CEO Questions Viability of Musk's Orbital Data Centers",
-            "content": "Elon Musk's ambitious plan to deploy orbital data centers has met with skepticism from industry leaders, including SoftBank's CEO. The concept involves placing data centers in orbit to leverage space's cooling benefits and energy efficiency. However, critics question the feasibility and cost-effectiveness of such a venture, citing potential technical challenges and high operational costs. The skepticism highlights ongoing debates about the practicality of space-based infrastructure in the tech industry. Stakeholders are advised to closely monitor developments and assess the potential impact on global data infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/27/softbanks-ceo-isnt-the-only-one-with-questions-about-elon-musks-orbital-data-center-hype/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Atwood Critiques AI—Warns of 'Garbage In, Garbage Out'",
-            "title": "Margaret Atwood Highlights AI's Dependence on Data Quality",
-            "content": "During the Babell Literary and Cultural Festival in Porto, Portugal, renowned author Margaret Atwood expressed concerns about AI's reliance on data quality. Atwood emphasized the \"garbage in, garbage out\" principle, warning that AI systems are only as good as the data they are trained on. Her comments underscore the importance of ensuring high-quality, unbiased data in AI development to avoid perpetuating existing biases and inaccuracies. This perspective is crucial for developers and policymakers focused on ethical AI deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Apple Vision Pro Exec Joins OpenAI's Hardware Team",
-            "title": "Paul Meade Leaves Apple for OpenAI's Hardware Ambitions",
-            "content": "Paul Meade, the vice president overseeing Apple's Vision Pro headset, is reportedly transitioning to OpenAI to bolster its hardware initiatives. This move signifies OpenAI's strategic expansion into hardware, potentially enhancing its AI capabilities with new device integrations. Meade's departure from Apple highlights the competitive landscape for top talent in the AI and tech sectors. Industry professionals should watch for potential collaborations or product developments resulting from this high-profile recruitment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Apple's AI Push Drives Price Hikes—MacBook Up $300",
-            "title": "Apple's AI Investments Lead to Significant Price Increases Across Products",
-            "content": "Apple CEO Tim Cook has announced unavoidable price increases across several of the company's flagship products, attributing the hikes to the company's ongoing investments in AI technology. The 16-inch MacBook Pro now costs $300 more, while the 11-inch iPad Air's price has risen from $599 to $749. Even the HomePod Mini has seen a $30 increase. Cook described the previous pricing model as unsustainable, pointing to the need for continued innovation in AI as a driving factor. Consumers and businesses relying on Apple's ecosystem should prepare for these adjustments as the company prioritizes its AI initiatives.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
             "relatedResources": []
         }
     ],
@@ -413,6 +440,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-48558",
+            "dateAdded": "Jun 29, 2026",
+            "vendor": "SimpleHelp SimpleHelp",
+            "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifyin",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-12569",
             "dateAdded": "Jun 25, 2026",
             "vendor": "PTC Windchill and FlexPLM",
@@ -432,50 +470,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20230",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-67038",
-            "dateAdded": "Jun 23, 2026",
-            "vendor": "Lantronix EDS5000",
-            "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-67038",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34910",
-            "dateAdded": "Jun 23, 2026",
-            "vendor": "Ubiquiti UniFi OS",
-            "description": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34910",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34909",
-            "dateAdded": "Jun 23, 2026",
-            "vendor": "Ubiquiti UniFi OS",
-            "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34909",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-34908",
-            "dateAdded": "Jun 23, 2026",
-            "vendor": "Ubiquiti UniFi OS",
-            "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34908",
             "isZeroDay": false
         }
     ],
