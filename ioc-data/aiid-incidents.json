@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1563",
+      "incident_id": 1563,
+      "title": "KPMG Report Allegedly Included Hallucinated Citations and Inaccurate Agentic AI Case Studies",
+      "date": "2026-06-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1561",
       "incident_id": 1561,
       "title": "U.S. Navy Unmanned Vessel Reportedly Capsized Support Boat After Receiving Inadvertent Command",
@@ -2554,9 +2562,9 @@
     }
   ],
   "stats": {
-    "total": 319,
-    "last7Days": 15,
-    "last30Days": 129
+    "total": 320,
+    "last7Days": 13,
+    "last30Days": 127
   },
-  "lastUpdated": "2026-06-30T23:37:23.423886+05:30"
+  "lastUpdated": "2026-07-01T02:00:19.432034+05:30"
 }
