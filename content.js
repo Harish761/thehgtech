@@ -4,21 +4,102 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jun 30 2026",
+            "headline": "GuardFall Flaw Exposes AI Agents to Shell Injection",
+            "title": "GuardFall Exploit Bypasses AI Coding Agent Safeguards with Shell Tricks",
+            "content": "Adversa AI has uncovered a vulnerability named GuardFall that exploits decades-old shell injection techniques to bypass safety checks in open-source AI coding agents. This flaw affects ten out of eleven popular AI coding platforms, allowing malicious commands to be executed. The vulnerability highlights the risk of supply chain attacks, where compromised repositories could be leveraged to infiltrate systems. Developers using these AI tools should review and enhance input validation processes to mitigate potential threats. This discovery underscores the ongoing challenge of securing AI systems against legacy vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "BlueHammer Zero-Day Exploited—Patch Microsoft Defender Now",
+            "title": "BlueHammer Vulnerability CVE-2026-33825 Exploited in Ransomware Attacks",
+            "content": "A critical zero-day vulnerability in Microsoft Defender, identified as CVE-2026-33825, has been actively exploited in ransomware attacks before patches were available. This vulnerability, dubbed BlueHammer, allows attackers to bypass security protections and execute malicious code. Organizations using Microsoft Defender are at risk, with potential impacts on data integrity and system availability. Security teams are urged to apply the latest patches immediately and review their incident response plans. This incident highlights the importance of timely patch management in defending against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/bluehammer-vulnerability-exploited-in-ransomware-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Aflac Japan Breach Exposes 4.38M Policyholders",
+            "title": "Aflac Japan Data Breach Compromises Millions of Policyholder Records",
+            "content": "Aflac Japan has suffered a significant data breach, affecting 4.38 million policyholders. Hackers accessed the insurance company's policyholder portal multiple times between June 15 and June 25, compromising sensitive customer information. The breach raises concerns about the security of customer data and the potential for identity theft. Aflac is currently investigating the incident and has notified affected individuals. Customers are advised to monitor their accounts for suspicious activity and consider identity protection services. This breach underscores the critical need for robust cybersecurity measures in the insurance sector.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/aflac-japan-data-breach-impacts-4-38-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Oracle E-Business Suite Flaw Exploited—Takeover Risk",
+            "title": "Exploitation of Oracle E-Business Suite Vulnerability CVE-2026-46817 Begins",
+            "content": "A critical vulnerability in Oracle's E-Business Suite, identified as CVE-2026-46817, is being actively exploited by attackers. This flaw allows unauthenticated users to take control of the Payments product, posing a severe risk to organizations using the suite. The vulnerability is linked to improper privilege management and authentication processes. Oracle has released patches, and users are strongly advised to update their systems immediately. This exploitation highlights the ongoing threat of unpatched software vulnerabilities in enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploitation-of-recent-oracle-e-business-suite-vulnerability-begins/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "SimpleHelp Flaw Exploited to Deploy New Malware",
+            "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deliver TaskWeaver, Djinn Stealer",
+            "content": "A critical security flaw in SimpleHelp, tracked as CVE-2026-48558, is being exploited by an unknown threat actor to deploy two new malware families: TaskWeaver and Djinn Stealer. This vulnerability, with a CVSS score of 10.0, allows attackers to bypass authentication and execute malicious activities. The malware targets sensitive information, including credentials and financial data. Organizations using SimpleHelp should apply security patches immediately and monitor for unusual activity. This incident highlights the importance of securing remote support tools against exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Progress Kemp LoadMaster Flaw Allows Root Command Execution",
+            "title": "Critical Vulnerability in Progress Kemp LoadMaster CVE-2026-8037 Discovered",
+            "content": "A critical vulnerability in Progress Kemp LoadMaster, identified as CVE-2026-8037, allows unauthenticated attackers to execute arbitrary commands as root by sending crafted requests to its API. The flaw carries a CVSS score of 9.8 and poses a significant risk to systems running the affected versions. A patch has been released, and users are urged to update their systems immediately to prevent potential exploits. This vulnerability underscores the critical need for regular security assessments and timely patching in network appliances.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "Apple Patches 30+ Flaws—AI Tools Discover WebKit Bugs",
+            "title": "Apple Releases Security Updates for iOS, macOS, Safari to Fix 30+ Vulnerabilities",
+            "content": "Apple has issued security updates for iOS, macOS, and Safari, addressing over 30 vulnerabilities, including four critical WebKit flaws discovered using AI tools like Anthropic Claude and OpenAI Codex Security. These WebKit vulnerabilities could allow attackers to execute arbitrary code on affected devices. Users are advised to update their devices to the latest versions to mitigate potential risks. This update highlights the growing role of AI in identifying and addressing security vulnerabilities across major platforms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/apple-patches-30-ios-macos-safari-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Malicious Extension Spoofs Perplexity AI—Hijacks Searches",
+            "title": "Malicious Chromium Extension Impersonates Perplexity AI to Redirect Search Traffic",
+            "content": "A malicious Chromium browser extension posing as Perplexity AI has been removed by Google after it was found intercepting and redirecting users' search queries through attacker-controlled servers. Microsoft researchers discovered the extension's activity, which involved routing queries before forwarding them to legitimate search engines. Users who installed the extension may have had their search data compromised. It's recommended to review installed extensions and remove any suspicious ones. This incident underscores the need for vigilance in monitoring browser extensions for malicious behavior.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4191060/malicious-chromium-extension-spoofs-perplexity-ai-to-hijack-browser-searches.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Ransomware Syndicates Mimic Corporations—A New Threat Model",
+            "title": "How Ransomware Syndicates Operate Like Corporate Entities",
+            "content": "Ransomware syndicates are increasingly adopting corporate-style structures, utilizing outsourced labor and tiered pricing models to enhance their operations. This approach allows them to scale attacks more efficiently and target a broader range of victims. The corporate-like organization of these groups poses a significant challenge to traditional cybersecurity defenses. Security professionals must adapt to this evolving threat landscape by implementing comprehensive threat intelligence and response strategies. This trend highlights the need for innovative approaches to combatting sophisticated cybercriminal organizations.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ransomware-syndicates-corporate-organization-op-ed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "282 iOS AI Apps Leak API Keys—Security Risk",
+            "title": "Network Traffic Study Reveals API Key Exposure in iOS AI Apps",
+            "content": "A study of 444 AI chatbot apps for iPhone has revealed that 282 of them exposed sensitive API keys and access tokens through network traffic. This exposure allows unauthorized access to paid AI services, posing a significant security risk. Developers are urged to implement secure coding practices and encrypt sensitive data to prevent such leaks. This finding highlights the importance of rigorous security testing in app development to protect user data and maintain service integrity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 29 2026",
             "headline": "Malicious Chrome Extension Logs Searches—Check Your Browser",
             "title": "Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input",
             "content": "Microsoft has identified a malicious Chrome extension masquerading as the AI search engine Perplexity, which intercepted user searches and address bar inputs. The extension routed every query and character typed into the address bar through an attacker-controlled server before redirecting users to legitimate search results. This breach potentially exposed sensitive search data to attackers, affecting users who installed the extension. Microsoft advises users to review their installed extensions and remove any suspicious ones immediately. This incident underscores the importance of scrutinizing browser extensions for potential security risks.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "TinyRCT Backdoor Targets Southeast Asia—Government Systems at Risk",
-            "title": "Chinese-Speaking APT Deploys New TinyRCT Backdoor in Southeast Asia Campaign",
-            "content": "A Chinese-speaking advanced persistent threat (APT) group has been linked to a new backdoor named TinyRCT, targeting government entities and critical infrastructure in Southeast Asia. The campaign primarily focuses on state-owned enterprises in the energy and government sectors. TinyRCT enables attackers to maintain persistent access and exfiltrate sensitive data. This development highlights the ongoing cyber threat landscape in the region, where state-sponsored actors continue to exploit vulnerabilities in critical sectors. Organizations are urged to enhance their cybersecurity measures and monitor for unusual network activities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
             "relatedResources": []
         },
         {
@@ -85,15 +166,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 26 2026",
-            "headline": "New Initiative Secures Aging Open Source Software—Compliance Focus",
-            "title": "New Initiative Tackles Security for End-of-Life Open Source Software",
-            "content": "The Open Source Sustainability Initiative aims to help enterprises manage and secure aging open source projects while maintaining regulatory compliance. As many organizations rely on open source software, ensuring the security of end-of-life projects is critical to prevent vulnerabilities and compliance issues. This initiative provides resources and guidance for managing legacy software, emphasizing the importance of proactive security measures. Enterprises are encouraged to participate and contribute to the initiative to enhance the security of their open source dependencies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 29 2026",
             "headline": "236,000 DCloud Sites Exploit Crypto Scams—Users Beware",
             "title": "DCloud Uni-App Framework Abused in Massive Crypto Scam Campaign",
@@ -110,81 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
             "relatedResources": []
+        }
+    ],
+    "aiShorts": [
+        {
+            "date": "Jun 30 2026",
+            "headline": "Meituan Unveils LongCat-2.0—1.6T Model on Chinese Chips",
+            "title": "Meituan Open Sources LongCat-2.0, Leading Agentic Coding Model",
+            "content": "Meituan has officially open-sourced LongCat-2.0, a groundbreaking 1.6 trillion parameter agentic coding model, trained entirely on Chinese chips. This model, previously operating under the alias \"Owl Alpha,\" has been at the forefront of global developer charts for the past two months. LongCat-2.0 is now accessible on GitHub, Hugging Face, and Meituan's platform, offering developers a powerful tool for advanced coding tasks. The move underscores China's growing capabilities in AI development, particularly in leveraging domestic hardware for high-performance AI models. Developers worldwide can now explore LongCat-2.0's capabilities and contribute to its evolution.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips",
+            "relatedResources": []
         },
         {
-            "date": "Jun 29 2026",
-            "headline": "WhatsApp Introduces Usernames—Enhances Privacy for 3B Users",
-            "title": "WhatsApp Launches Username Feature to Protect User Privacy",
-            "content": "WhatsApp has announced the introduction of usernames, allowing users to connect without sharing phone numbers. This optional feature aims to enhance privacy for its over three billion users globally. By enabling connections through usernames, WhatsApp reduces the risk of phone number exposure, a common privacy concern. Users are encouraged to reserve their usernames to take advantage of this new privacy layer. This move aligns with broader industry trends towards enhancing user privacy and security in digital communications.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html",
+            "date": "Jun 30 2026",
+            "headline": "Amazon Invests $1B in FDE Org for AI Deployment",
+            "title": "Amazon Launches $1 Billion FDE Organization for AI Agents",
+            "content": "Amazon has announced the creation of a $1 billion Frontier Development and Engineering (FDE) organization, aimed at deploying purpose-built AI agents within companies. This initiative follows similar moves by OpenAI and Anthropic, focusing on rapid deployment and ensuring customer self-sufficiency. Engineers from the FDE team will integrate directly into client environments to tailor AI solutions, enhancing operational efficiency and innovation. This strategic investment highlights Amazon's commitment to advancing AI capabilities and supporting businesses in leveraging AI for competitive advantage. Companies interested in adopting AI solutions can expect accelerated deployment timelines and customized support.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Proton's Lumo 2.0—Enhanced Privacy AI Chatbot Released",
+            "title": "Lumo 2.0: Proton's Upgraded Privacy-Focused AI Chatbot Launches",
+            "content": "Proton has released Lumo 2.0, an upgraded version of its privacy-centric AI chatbot, offering users an expanded range of capabilities. The new version enhances user privacy while providing more robust conversational features, aligning with Proton's commitment to secure digital communication. Lumo 2.0 is designed to cater to users seeking privacy without compromising on functionality, making it a compelling option in the competitive AI chatbot market. This update reflects the growing demand for privacy-focused AI solutions as users become increasingly aware of data security issues. Users can explore Lumo 2.0's features by accessing Proton's platform.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/lumo-protons-privacy-focused-ai-chatbot-gets-an-upgrade/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "OKX Develops AI Marketplace for Autonomous Agent Transactions",
+            "title": "OKX Introduces AI Agent Marketplace for Hiring and Payments",
+            "content": "Crypto exchange OKX is pioneering a marketplace that integrates payments, identity, and reputation for AI agents to autonomously hire and pay each other. This innovative platform aims to streamline interactions between AI entities, potentially revolutionizing how AI agents collaborate and transact. By leveraging blockchain technology, OKX ensures secure and transparent transactions, fostering trust in AI-driven marketplaces. This development could significantly impact industries relying on AI for automation, offering a new paradigm for agent-based systems. Stakeholders in AI and blockchain sectors should monitor this initiative for emerging opportunities and challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/crypto-exchange-okx-wants-ai-agents-to-hire-and-pay-each-other/",
             "relatedResources": []
         },
         {
             "date": "Jun 29 2026",
-            "headline": "Mustang Panda Exploits Zoho—Targets Indian Government",
-            "title": "Mustang Panda Uses Zoho WorkDrive in Indian Government Cyberattacks",
-            "content": "The espionage group Mustang Panda has been identified using Zoho WorkDrive as a command channel in attacks against the Indian government and hydropower sectors. Acronis Threat Research Unit discovered the group's deployment of new malware variants, leveraging legitimate cloud services to evade detection. These campaigns highlight the sophisticated tactics employed by state-aligned actors to infiltrate critical infrastructure. Organizations are advised to monitor cloud service usage and implement robust security measures to detect and mitigate such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Claude Code Attack—Hijacks Developer Machines via Repos",
-            "title": "Researchers Unveil Claude Code Attack Using Malicious Repositories",
-            "content": "Security researchers have demonstrated a new attack vector, dubbed the Claude Code attack, which uses seemingly harmless repositories to compromise developer machines. By embedding indirect prompts, attackers can spawn a reverse shell, gaining unauthorized access. This technique poses a significant threat to developers who rely on open-source repositories, emphasizing the need for vigilance and code review. The attack highlights the evolving landscape of supply chain threats targeting development environments. Developers should scrutinize repository sources and implement security checks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-attack-abuses-claude-code-and-harmless-looking-repositories-to-hijack-developer-machines/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Straiker Secures $64M—Boosts AI Security Platform",
-            "title": "Straiker Raises $64 Million to Enhance AI Security Capabilities",
-            "content": "AI security startup Straiker has successfully raised $64 million to advance its platform, which provides visibility into AI agent access, behavior, and risks. This funding round underscores the growing demand for robust AI security solutions as organizations increasingly adopt AI technologies. Straiker's platform aims to address the unique security challenges posed by AI systems, offering tools to identify and mitigate potential threats. Investors' confidence in Straiker reflects the critical importance of securing AI environments in today's digital landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/straiker-raises-64-million-for-ai-security-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "NAIC Breach—3.1 TB Data Stolen in Oracle Hack",
-            "title": "ShinyHunters Breach NAIC, Steal 3.1 TB of Sensitive Data",
-            "content": "The ShinyHunters extortion group has claimed responsibility for a significant data breach at the National Association of Insurance Commissioners (NAIC), exploiting vulnerabilities in Oracle PeopleSoft. The attackers reportedly exfiltrated 3.1 terabytes of sensitive data, posing a severe risk to the organization's operations and data privacy. This breach highlights the persistent threat of sophisticated cybercriminal groups targeting critical infrastructure. Organizations using Oracle PeopleSoft are urged to review their security posture and apply necessary patches to prevent similar incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/insurance-regulators-group-naic-hit-in-oracle-peoplesoft-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Gamaredon Expands Ukraine Attacks—35 New Campaigns",
-            "title": "Gamaredon Intensifies Cyber Attacks on Ukraine with New Malware",
-            "content": "The Russian APT group Gamaredon has expanded its cyber operations against Ukraine, launching 35 spear-phishing campaigns in 2025. Slovakian cybersecurity firm ESET reports that Gamaredon has developed new malware variants and is abusing cloud services to enhance its attack capabilities. This escalation reflects the ongoing cyber conflict between Russia and Ukraine, with critical infrastructure and government entities as primary targets. Organizations in the region should bolster their defenses and remain vigilant against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "$10M Bounty for Russian Hackers—US Targets Messaging Attacks",
-            "title": "US Offers $10 Million Reward for Russian State Hackers",
-            "content": "The United States has announced a $10 million bounty for information leading to the identification or location of Russian state-affiliated hackers UNC5792 and UNC4221. These groups have been implicated in attacks targeting US government officials and military personnel, exploiting messaging app vulnerabilities. This reward underscores the seriousness with which the US government views these cyber threats and its commitment to countering state-sponsored cyber activities. Individuals with information are encouraged to come forward to aid in disrupting these malicious operations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-offers-10-million-bounty-for-russian-state-hackers-as-messaging-app-attacks-evolve/",
+            "headline": "TIDAL Blocks AI Music Monetization—Protects Artists' Rights",
+            "title": "TIDAL Enforces New Policies Against AI-Generated Music Monetization",
+            "content": "TIDAL has implemented strict measures to prevent the monetization of AI-generated music, aiming to protect artists' rights and maintain platform integrity. The company will use automated tools to identify and remove AI-generated tracks that impersonate real artists or groups. This move addresses growing concerns over AI's impact on the music industry, particularly regarding copyright infringement and artist impersonation. By taking a firm stance, TIDAL reinforces its commitment to supporting genuine artistic expression. Musicians and industry stakeholders should be aware of these changes and consider their implications for AI-generated content.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/",
             "relatedResources": []
         },
         {
             "date": "Jun 28 2026",
-            "headline": "14.2M Email Logins Exposed in Japanese ISP Breach",
-            "title": "KDDI Corporation Data Breach Affects Multiple Japanese ISPs",
-            "content": "Japanese telecommunications operator KDDI Corporation has disclosed a data breach that exposed up to 14.2 million email logins. The breach involved unauthorized access to an email system shared by KDDI and five other internet service providers in Japan. The compromised data includes email addresses and passwords, posing a significant risk of further cyberattacks such as phishing and credential stuffing. This incident highlights the vulnerabilities in shared infrastructure and the importance of robust security measures. Affected users are advised to change their passwords immediately and monitor their accounts for suspicious activity.",
-            "source": "BleepingComputer",
-            "sourceUrl": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
+            "headline": "Suno's Spark Incubator—Empowering Independent Artists with AI",
+            "title": "Suno Launches Spark Incubator for Independent Artists and AI Integration",
+            "content": "Suno has introduced the Spark incubator program, designed to support independent artists by integrating them into its AI-driven platform. The program offers grants, mentorship, and marketing support to unsigned singers and musicians, aiming to transform Suno into a streaming destination and a launchpad for new talent. This initiative reflects Suno's ambition to move beyond AI-generated content and foster genuine artistic growth. Independent artists seeking to leverage AI for creative and promotional purposes are encouraged to apply, potentially gaining significant exposure and resources.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
             "relatedResources": []
-        }
-    ],
-    "aiShorts": [
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Margaret Atwood Critiques AI—Warns of Data Quality Risks",
+            "title": "Margaret Atwood Highlights 'Garbage In, Garbage Out' AI Problem",
+            "content": "Renowned author Margaret Atwood has voiced concerns about artificial intelligence, emphasizing the \"garbage in, garbage out\" problem during an interview at the Babell Literary and Cultural Festival. Atwood stressed that AI systems are only as good as the data they are trained on, warning of the potential consequences of poor data quality. Her remarks underscore ongoing debates about data ethics and the importance of robust data curation in AI development. Professionals in AI and data science should heed these warnings, ensuring high-quality data inputs to achieve reliable AI outputs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Apple's Price Hikes—AI Development Costs Blamed",
+            "title": "Apple Increases Prices Amid AI Development Cost Pressures",
+            "content": "Apple has announced significant price increases across its product line, attributing the hikes to the rising costs of AI development. The 16-inch MacBook Pro now costs $300 more, while the 11-inch iPad Air has seen a $150 increase. CEO Tim Cook described these adjustments as \"unavoidable,\" citing the unsustainable nature of current pricing structures. This development highlights the financial pressures tech companies face as they invest heavily in AI research and development. Consumers and industry analysts should consider the broader implications of these cost increases on the tech market.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 27 2026",
+            "headline": "Anthropic's Mythos 5 Returns—Limited Access After Negotiations",
+            "title": "Anthropic's Mythos 5 Resumes Operations Post-Government Negotiations",
+            "content": "After protracted negotiations with the Trump administration, Anthropic's Mythos 5 AI model is back online, albeit with limited access for select organizations. This resolution follows a two-week standoff, highlighting the complexities of AI deployment amid regulatory scrutiny. Mythos 5's return is a relief for entities relying on its advanced capabilities, though access remains restricted. The situation underscores the challenges AI companies face in navigating government regulations while maintaining operational continuity. Organizations using Mythos 5 should stay informed about access conditions and potential regulatory impacts.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 26 2026",
+            "headline": "OpenAI Previews GPT-5.6 Sol—Enhanced Coding and Security Features",
+            "title": "OpenAI Introduces GPT-5.6 Sol with Advanced Capabilities",
+            "content": "OpenAI has unveiled GPT-5.6 Sol, its next-generation AI model featuring enhanced capabilities in coding, science, and cybersecurity. This model incorporates OpenAI's most advanced safety stack to date, aiming to mitigate risks associated with AI deployment. GPT-5.6 Sol promises significant improvements in performance and reliability, catering to the needs of developers and security professionals. The preview marks a pivotal step in AI evolution, as OpenAI continues to push the boundaries of what AI can achieve. Stakeholders should evaluate the model's potential applications and implications for their fields.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol",
+            "relatedResources": []
+        },
         {
             "date": "Jun 29 2026",
             "headline": "Tidal Labels AI Music—Royalties Cut Off",
@@ -273,87 +363,6 @@ const websiteContent = {
             "content": "Cursor has released a mobile application designed to provide users with remote oversight of their coding agents. This new app allows developers to manage and guide coding processes on the go, enhancing flexibility and productivity. The launch of this mobile solution reflects the growing trend towards mobile-first development tools that cater to the needs of modern developers. Users of Cursor's platform should explore the app to take advantage of its capabilities and streamline their coding workflows.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "EU Jobs—AI Report Maps Automation Impact",
-            "title": "OpenAI Report Highlights AI's Impact on EU Workforce",
-            "content": "A new report from OpenAI outlines how artificial intelligence could transform the job landscape across the European Union. The study identifies occupations likely to experience automation, growth, or significant workflow changes due to AI advancements. Key sectors such as manufacturing, logistics, and customer service are highlighted as areas where AI could lead to substantial shifts in employment patterns. The report emphasizes the need for strategic workforce planning and retraining initiatives to mitigate potential job displacement. Policymakers and industry leaders are urged to consider these findings to prepare for the evolving job market.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Lawmakers Push to Ban AI Health Data Sales",
-            "title": "Proposed Legislation Aims to Ban Sale of AI-Derived Health Data",
-            "content": "Senator Elizabeth Warren (D-MA) and Representative Mary Gay Scanlon (D-PA) are set to introduce legislation prohibiting the sale of health and location data collected by AI systems. This proposal targets data brokers who profit from sensitive information, including details disclosed to AI chatbots like ChatGPT and Claude. The move reflects growing concerns over privacy and data security in the AI sector. If passed, the legislation would mark a significant step in protecting consumer data from commercial exploitation. Stakeholders in AI development and data privacy are advised to monitor the progress of this bill closely.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Proception Settles Tesla Suit, Raises $11M",
-            "title": "Proception Settles Trade Secret Dispute with Tesla, Secures Funding",
-            "content": "Proception, a robotics startup specializing in robotic hands, has settled a trade secret lawsuit with Tesla and announced an $11 million funding round. The company is pioneering innovative methods for collecting training data to address complex challenges in robotics. This settlement and funding will enable Proception to accelerate its research and development efforts. The resolution of the lawsuit removes a significant legal hurdle, allowing the company to focus on advancing its technology. Investors and industry observers are keenly watching Proception's next steps in the competitive robotics market.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Omen AI Raises $31M for Data Center Safety",
-            "title": "Omen AI Secures $31M to Enhance Data Center Safety with AI",
-            "content": "Omen AI has raised $31 million in a Series A funding round to develop AI solutions for monitoring chip coolant systems and preventing bacterial outbreaks in data centers. The company's technology aims to optimize data center operations by ensuring the cleanliness and efficiency of cooling systems, which are critical for maintaining optimal performance. This funding will support the deployment of Omen AI's solutions across various data centers, enhancing operational safety and reliability. Data center operators and IT professionals should consider integrating such technologies to mitigate risks associated with cooling system failures.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 28 2026",
-            "headline": "Prompt Injection Exploits AI—Targeting RAG Pipelines",
-            "title": "Prompt Injection Exploits AI Design Flaws in Enterprises",
-            "content": "Cybercriminals are exploiting prompt injection vulnerabilities in enterprise AI systems, targeting retrieval-augmented generation (RAG) pipelines and model routers. As businesses increasingly integrate large language models (LLMs) into support and automation, these design flaws pose significant security risks. The exploitation allows attackers to manipulate AI outputs, potentially leading to data breaches and compromised decision-making processes. Organizations must reassess their AI deployment strategies, focusing on robust input validation and continuous monitoring to mitigate these threats. This trend underscores the urgent need for enhanced security measures in AI implementations.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/prompt-injection-is-exploiting-enterprise-ais-biggest-design-flaws-by-targeting-agents-rag-pipelines-and-model-routers",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 28 2026",
-            "headline": "Z.ai's GLM-5.2 Rivals Mythos in Cybersecurity",
-            "title": "China's Zhipu AI Claims Cybersecurity Parity with Mythos",
-            "content": "Zhipu AI (Z.ai) has released its open-weight GLM-5.2 model, claiming it matches the cybersecurity capabilities of the Mythos model in specific scenarios. While GLM-5.2 lags behind Anthropic and OpenAI models in general tasks, it excels in bug-finding and cybersecurity applications. This development highlights China's rapid advancements in AI technology, potentially reshaping the global cybersecurity landscape. Organizations should monitor these advancements to leverage emerging AI capabilities in threat detection and mitigation. The competitive edge in cybersecurity AI could influence international tech dynamics.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 28 2026",
-            "headline": "Ford Rehires Engineers—AI Alone Insufficient",
-            "title": "Ford Rehires Experienced Engineers as AI Falls Short",
-            "content": "Ford Motor Company is rehiring experienced engineers, known as \"gray beards,\" after realizing that AI alone cannot ensure high-quality product development. The automaker initially believed that integrating artificial intelligence would suffice, but practical challenges necessitated human expertise. This move underscores the importance of balancing AI with skilled human oversight in complex engineering tasks. Companies relying solely on AI might face setbacks without the nuanced understanding that experienced professionals bring. Ford's decision highlights a broader industry trend of integrating AI with human expertise for optimal results.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/28/ford-rehires-gray-beard-engineers-after-ai-falls-short/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 28 2026",
-            "headline": "Wall Street Bets on Micron—The Next Nvidia?",
-            "title": "Wall Street Eyes Micron as Potential Nvidia Successor",
-            "content": "Wall Street investors are increasingly optimistic about Micron Technology, viewing it as a potential successor to Nvidia in the AI sector. As investors seek new opportunities in AI-related companies, Micron's advancements in memory technology position it as a promising contender. The company's focus on AI-driven memory solutions could lead to significant market growth, attracting substantial investor interest. This trend reflects the broader search for emerging leaders in the AI industry, as Nvidia's dominance prompts investors to diversify their portfolios.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 28 2026",
-            "headline": "ChatGPT Logs Used in Landmark Arson Trial",
-            "title": "ChatGPT Logs Become Key Evidence in Palisades Fire Arson Case",
-            "content": "In a groundbreaking legal development, prosecutors in the Palisades fire trial have used ChatGPT logs as evidence against Jonathan Rinderknecht, accused of starting one of LA's deadliest wildfires. Alongside traditional evidence like iPhone location data and security footage, the AI-generated logs provided insights into the defendant's actions and intentions. This case marks a significant precedent for the use of AI-generated data in legal proceedings, highlighting the increasing role of AI in forensic investigations. Legal experts suggest this could pave the way for broader acceptance of AI evidence in courtrooms.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
             "relatedResources": []
         }
     ],
