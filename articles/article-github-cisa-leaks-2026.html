@@ -391,31 +391,40 @@
 
     <!-- SEO: NewsArticle Schema -->
     <script type="application/ld+json">
+    
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets",
+  "description": "Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.",
+  "image": [
+    "https://thehgtech.com/images/articles/github-cisa-leaks-2026.webp"
+  ],
+  "datePublished": "2026-01-01T12:00:00+00:00",
+  "dateModified": "2026-01-01T12:00:00+00:00",
+  "author": [
     {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA's Exposed Secrets",
-      "description": 'Technical analysis of the recent GitHub internal repository breach by TeamPCP and the CISA contractor Nightwing public repo leak. Includes defense strategies for security engineers.',
-      "image": ['https://thehgtech.com/images/articles/github-cisa-leaks-2026.webp'],
-      "datePublished": '2026-01-01T12:00:00+00:00',
-      "dateModified": '2026-01-01T12:00:00+00:00',
-      "author": [{
-        "@type": "Person",
-        "name": 'Harish G',
-        "url": "https://www.linkedin.com/in/harish-g-03704815a/"
-      }],
-      "publisher": {
-        "@type": "Organization",
-        "name": "TheHGTech",
-        "url": "https://thehgtech.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://thehgtech.com/images/logo-dark.png"
-        }
-      },
-      "mainEntityOfPage": 'https://thehgtech.com/articles/article-github-cisa-leaks-2026.html',
-      "articleSection": 'Data Breach'
+      "@type": "Person",
+      "name": "Harish G",
+      "url": "https://www.linkedin.com/in/harish-g-03704815a/"
     }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "url": "https://thehgtech.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/images/logo-dark.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thehgtech.com/articles/article-github-cisa-leaks-2026.html"
+  },
+  "articleSection": "Data Breach"
+}
+
     </script>
 </head>
 
