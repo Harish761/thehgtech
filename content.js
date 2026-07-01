@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 01 2026",
+            "headline": "Citrix Fixes 6 NetScaler Flaws—Patch to Prevent DoS",
+            "title": "Citrix Patches Critical NetScaler Vulnerabilities Allowing File Read and DoS",
+            "content": "Citrix has issued security updates to address six vulnerabilities in NetScaler ADC and NetScaler Gateway, which could be exploited to read arbitrary files or cause a denial-of-service (DoS) condition. These flaws, affecting versions prior to the latest patch, pose significant risks for enterprises relying on these systems for secure remote access. The vulnerabilities highlight ongoing challenges in securing network appliances against sophisticated attacks. Organizations using these Citrix products should apply the patches immediately to mitigate potential exploitation. This update underscores the importance of regular patch management in maintaining robust cybersecurity defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Langflow RCE Exploited—Monero Miner Targets AI Apps",
+            "title": "Langflow RCE Vulnerability Exploited to Deploy Monero Miner on AI Endpoints",
+            "content": "A critical remote code execution (RCE) vulnerability in Langflow, tracked as CVE-2026-33017, is being actively exploited to install Monero cryptocurrency miners on exposed AI application endpoints. With a CVSS score of 9.3, this unauthenticated flaw allows threat actors to execute arbitrary code, posing a severe risk to AI systems. The attacks demonstrate a growing trend of targeting AI platforms for cryptojacking purposes. Organizations using Langflow should prioritize patching and review their endpoint security measures to prevent unauthorized access. This incident highlights the need for vigilant monitoring of AI application security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Bash Tricks Threaten AI Agents—Supply Chain Risks",
+            "title": "Decades-Old Bash Techniques Expose AI Coding Agents to Supply Chain Attacks",
+            "content": "Security researchers have discovered that longstanding Bash shell tricks can bypass safeguards in open source AI coding agents, potentially turning malicious repositories into vectors for supply chain attacks. This vulnerability underscores the risks associated with integrating AI agents into development environments without rigorous security checks. The findings highlight the importance of securing software supply chains, especially as AI continues to be integrated into critical systems. Developers should review their use of Bash scripts and implement robust validation processes to mitigate these risks. This serves as a reminder of the persistent threats posed by legacy code practices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/decades-old-bash-tricks-expose-ai-coding-agents-to-supply-chain-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Nissan Data Breach—PeopleSoft Hack Exposes Employee Info",
+            "title": "Nissan Employee Data Compromised in Oracle PeopleSoft Breach",
+            "content": "A breach of Oracle PeopleSoft systems has led to the exposure of Nissan employee data, marking one of the few confirmed incidents among 100 targeted organizations. The attack exploited vulnerabilities in PeopleSoft, a widely used enterprise resource planning system, to access sensitive employee information. This breach highlights the critical need for organizations to secure their ERP systems against sophisticated cyber threats. Affected companies should conduct thorough security audits and enhance their data protection measures. The incident underscores the ongoing risks associated with legacy enterprise software vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nissan-employee-data-breached-in-oracle-peoplesoft-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "SimpleHelp Flaw Exploited—Malware Targets Credentials, Crypto Wallets",
+            "title": "Critical SimpleHelp Vulnerability Exploited for Credential and Crypto Theft",
+            "content": "A critical vulnerability in SimpleHelp, a remote support tool, is being exploited by threat actors to deliver malware aimed at stealing credentials, SSH keys, and cryptocurrency wallets. The attack targets development environments, posing a significant risk to organizations relying on SimpleHelp for remote support. This exploitation emphasizes the need for organizations to secure remote access tools and monitor for unusual activity. Users of SimpleHelp should apply available patches and enhance their security posture to prevent unauthorized access. This incident highlights the persistent threat of malware targeting remote support platforms.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-simplehelp-vulnerability-exploited-for-malware-delivery/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Oracle E-Business Suite Flaw—CVE-2026-46817 Exploited",
+            "title": "Oracle E-Business Suite Vulnerability CVE-2026-46817 Actively Exploited",
+            "content": "A critical vulnerability in Oracle E-Business Suite, identified as CVE-2026-46817, is under active exploitation, allowing attackers to bypass privilege management and authentication in Oracle Payments. With a CVSS score of 9.8, this flaw poses a severe threat to organizations using the suite for financial transactions. The vulnerability highlights the importance of securing enterprise applications against privilege escalation attacks. Organizations should apply Oracle's security patches immediately to protect sensitive financial data. This incident underscores the critical need for timely patch management in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "China-Linked Group Hits Southeast Asia—Critical Systems Compromised",
+            "title": "China-Linked Cyber Group Targets Southeast Asia's Critical Infrastructure",
+            "content": "A China-linked cyber group has compromised at least 10 organizations in Southeast Asia, including two state-owned entities, deploying a new backdoor to infiltrate critical systems. This campaign highlights the ongoing threat posed by state-sponsored actors targeting regional infrastructure. The attacks emphasize the need for enhanced cybersecurity measures and international cooperation to defend against sophisticated cyber threats. Organizations in the region should bolster their network defenses and conduct threat assessments to mitigate potential risks. This incident underscores the geopolitical dimensions of cyber warfare.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Poisoned MCP Tools—AI Agents Leak Data",
+            "title": "Microsoft Warns of Data Leaks via Poisoned MCP Tool Descriptions",
+            "content": "Microsoft has identified a method by which attackers can manipulate AI agents using poisoned Managed Code Project (MCP) tool descriptions, causing these agents to inadvertently leak sensitive company data. This technique exploits the AI's trust in tool descriptions, highlighting vulnerabilities in AI-driven automation systems. Organizations utilizing AI agents should scrutinize tool descriptions and implement robust validation processes to prevent data leaks. This finding underscores the need for vigilance in AI system management and the potential risks of automated decision-making processes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "RustDuck Botnet Rebuilds—Targets Routers for DDoS",
+            "title": "RustDuck Botnet Reemerges in Rust to Hijack Devices for DDoS Attacks",
+            "content": "The RustDuck botnet, rebuilt using the Rust programming language, is hijacking home routers, IP cameras, Android boxes, and poorly secured servers to conduct distributed denial-of-service (DDoS) attacks. Tracked by QiAnXin's XLab since February 2026, this malware family poses a significant threat to internet infrastructure. The botnet's resurgence highlights the evolving tactics of cybercriminals leveraging Rust for its efficiency and stealth. Organizations should secure IoT devices and monitor network traffic for signs of compromise. This development underscores the persistent threat of botnets in disrupting online services.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Silent Swap Crypto Clipper—Fake Extension Steals Wallets",
+            "title": "Silent Swap Crypto Clipper Uses Fake Extension to Steal Cryptocurrency",
+            "content": "Cybersecurity researchers have uncovered a campaign using a fake Google Notes browser extension, dubbed Silent Swap, to steal cryptocurrency by replacing wallet addresses during transactions. This clipper malware operates stealthily, posing a significant threat to cryptocurrency users. The campaign highlights the ongoing risks of malicious browser extensions and the importance of verifying extension sources. Users should exercise caution when installing extensions and regularly review their browser security settings. This incident underscores the need for heightened vigilance in protecting digital assets from cyber theft.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jun 30 2026",
             "headline": "GuardFall Flaw Exposes AI Agents to Shell Injection",
             "title": "GuardFall Exploit Bypasses AI Coding Agent Safeguards with Shell Tricks",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Malicious Chrome Extension Logs Searches—Check Your Browser",
-            "title": "Malicious Perplexity Chrome Extension Intercepted Searches and Address Bar Input",
-            "content": "Microsoft has identified a malicious Chrome extension masquerading as the AI search engine Perplexity, which intercepted user searches and address bar inputs. The extension routed every query and character typed into the address bar through an attacker-controlled server before redirecting users to legitimate search results. This breach potentially exposed sensitive search data to attackers, affecting users who installed the extension. Microsoft advises users to review their installed extensions and remove any suspicious ones immediately. This incident underscores the importance of scrutinizing browser extensions for potential security risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Djinn Stealer Exploits CVE-2026-48558—Cloud Credentials at Risk",
-            "title": "'Djinn' Stealer Targets Cloud, AI Credentials",
-            "content": "The Djinn infostealer is exploiting CVE-2026-48558, a critical authentication bypass vulnerability in SimpleHelp, to target cloud and AI credentials. This vulnerability allows attackers to access development and admin environments, potentially compromising enterprise systems. The attack highlights the risks associated with unpatched software and the importance of securing cloud-based credentials. Organizations using SimpleHelp should apply the latest patches and review their security configurations to mitigate potential breaches. This incident emphasizes the need for continuous vulnerability management and credential protection.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "WhatsApp Introduces Usernames—Enhances Privacy Protection",
-            "title": "WhatsApp Rolling Out Username Feature to Bolster Phone Number Privacy",
-            "content": "WhatsApp is rolling out an optional 'username key' feature to enhance user privacy by requiring a secondary credential before messaging. This new feature aims to protect phone numbers from being exposed, adding an extra layer of security for users. The introduction of usernames aligns with growing concerns over privacy and data protection in messaging platforms. Users are encouraged to enable this feature to safeguard their personal information from unauthorized access. This move reflects WhatsApp's ongoing efforts to enhance user security and privacy.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/whatsapp-rolling-out-username-feature-to-bolster-phone-number-privacy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Weekly Recap—Linux Flaws, AI Malware, Infostealers",
-            "title": "Weekly Recap: Linux Kernel Flaws, AI Malware Tricks, Turla Backdoor, Infostealers and More",
-            "content": "This week's cybersecurity landscape highlights the persistent threat of small vulnerabilities leading to significant breaches. Linux kernel flaws, AI malware tricks, and infostealers were prominent, with attackers exploiting overlooked vulnerabilities and unpatched systems. Forums buzzed with discussions on easy-to-exploit cracks, emphasizing the need for vigilant patch management. Security professionals are advised to stay updated on the latest threats and ensure all systems are patched promptly. This recap serves as a reminder of the continuous challenges in maintaining robust cybersecurity defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/weekly-recap-linux-kernel-flaws-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "DirtyClone Vulnerability—Linux Users Risk Root Access Exploit",
-            "title": "‘DirtyClone’ Linux Kernel Vulnerability Leads to Root Access",
-            "content": "A new Linux kernel vulnerability, dubbed 'DirtyClone', allows unprivileged local users to manipulate the Linux page cache and gain root privileges. This flaw, a variant of DirtyFrag, poses a significant risk to Linux systems, potentially allowing attackers to execute arbitrary code with elevated privileges. System administrators should prioritize patching affected systems to prevent exploitation. This vulnerability underscores the importance of regular security audits and updates to protect against privilege escalation attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/dirtyclone-linux-kernel-vulnerability-leads-to-root-access/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Microsoft Removes 119 Malicious Edge Extensions—Check Your Browser",
-            "title": "Microsoft Removes 119 Edge Extensions That Hid Malware in Images and Fonts",
-            "content": "Microsoft has removed 119 malicious extensions from the Edge Add-ons store, which hid malware in images and fonts. Known as StegoAd, this operation used steganography to conceal its payloads, which activated days after installation to steal credentials and conduct ad fraud. Users who installed these extensions are advised to review their browser add-ons and remove any suspicious ones. This incident highlights the ongoing threat of malicious browser extensions and the need for vigilant monitoring of installed software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "OpenAI Unveils GPT-5.6 Sol—Advanced Cybersecurity AI Launched",
-            "title": "OpenAI Unveils GPT-5.6 Sol as Its Most Advanced Cybersecurity AI",
-            "content": "OpenAI has launched GPT-5.6 Sol, its most advanced cybersecurity AI model, which matches competing systems like Mythos Preview while using only a third of the output tokens. This new model aims to enhance cybersecurity defenses by providing more efficient and effective threat detection and response capabilities. Organizations are encouraged to explore the integration of GPT-5.6 Sol into their security operations to leverage its advanced capabilities. This release marks a significant step forward in AI-driven cybersecurity solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-unveils-gpt-5-6-sol-as-its-most-advanced-cybersecurity-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Hijacked npm, Go Packages Deploy Python Infostealer—Cross-Platform Threat",
-            "title": "Hijacked npm and Go Packages Use VS Code Tasks to Deploy Python Infostealer",
-            "content": "Cybersecurity researchers have discovered hijacked npm and Go packages designed to deploy a Python-based information stealer on compromised systems, including Windows, Linux, and macOS. These packages utilize VS Code tasks to bypass common npm execution paths, making detection more challenging. Developers using npm and Go are advised to verify package integrity and monitor for unusual activities in their development environments. This attack highlights the risks associated with third-party packages and the need for stringent supply chain security measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "236,000 DCloud Sites Exploit Crypto Scams—Users Beware",
-            "title": "DCloud Uni-App Framework Abused in Massive Crypto Scam Campaign",
-            "content": "Infoblox has discovered over 236,000 websites using DCloud Uni-App, a legitimate Chinese open-source framework, to facilitate cryptocurrency scams and phishing attacks. These sites mimic investment platforms and cryptocurrency exchanges, luring users into fraudulent schemes. The exploitation of DCloud Uni-App underscores the increasing trend of leveraging legitimate tools for malicious purposes. Users are advised to verify the authenticity of cryptocurrency platforms and remain cautious of unsolicited investment opportunities. This incident highlights the need for enhanced scrutiny of open-source frameworks to prevent misuse.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/236000-dcloud-uni-app-sites-used-in.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Critical libssh2 Flaw—PoC Released, Update Now",
-            "title": "Public PoC for libssh2 CVE-2026-55200 Allows Client-Side Exploits",
-            "content": "A critical vulnerability, CVE-2026-55200, in libssh2 has been publicly disclosed with a proof-of-concept exploit, enabling attackers to cause memory corruption on client systems. This flaw affects all versions up to 1.10.0 and can lead to arbitrary code execution without user interaction. The vulnerability poses a significant risk to systems relying on libssh2 for secure communications. Administrators should prioritize updating to the latest patched version to mitigate potential exploitation. This development highlights the ongoing challenges in securing widely-used open-source libraries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jun 30 2026",
+            "headline": "OpenClaw Arrives on Mobile—Free Agentic Program Expands Reach",
+            "title": "OpenClaw Now Available on Android and iOS Platforms",
+            "content": "OpenClaw, the open-source agentic program, has expanded its accessibility by launching on both Android and iOS platforms. This development allows users to leverage the program's capabilities directly from their smartphones, enhancing mobile AI functionality. By integrating OpenClaw into mobile devices, developers and tech enthusiasts can now experiment with agentic AI in a more portable format. The move aligns with the growing trend of bringing advanced AI tools to consumer devices, democratizing access to sophisticated AI technology. Users can download OpenClaw for free, making it an attractive option for those looking to explore agentic AI without financial barriers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Google NotebookLM Adds TikTok-Style AI Video Summaries",
+            "title": "Google’s NotebookLM Introduces AI-Generated Video Summaries for Research",
+            "content": "Google's NotebookLM is rolling out a feature that creates 60-second vertical AI-generated video summaries of research notes, available to Google AI Ultra and Pro subscribers. This new capability allows users to quickly catch up on their research through engaging, TikTok-style clips. The feature leverages AI to condense and present information visually, catering to the growing demand for quick, digestible content formats. This innovation is part of Google's broader strategy to enhance productivity tools with AI, offering users new ways to interact with and consume information. Subscribers can start using this feature by uploading their research sources to the NotebookLM app.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 29 2026",
+            "headline": "OpenAI Maps AI's Impact on EU Workforce",
+            "title": "OpenAI Report Highlights AI's Potential to Reshape EU Jobs",
+            "content": "A recent report from OpenAI outlines the potential impact of AI on the European Union workforce, identifying which occupations may experience automation, growth, or workflow changes. The study provides a comprehensive map of how AI technologies could transform various sectors, emphasizing the need for strategic workforce planning. As AI continues to evolve, industries such as manufacturing, logistics, and customer service are likely to see significant shifts in job roles and responsibilities. Policymakers and business leaders are encouraged to consider these findings to prepare for the future of work in the EU.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Morgan Stanley Halves Reconciliation Work with AI Agents",
+            "title": "Morgan Stanley Reduces P&L Reconciliation Workload Using AI",
+            "content": "Morgan Stanley has successfully deployed AI agents to streamline its profit and loss (P&L) reconciliation process, reducing the workload by 50%. Unlike typical enterprise AI deployments focused on coding and customer service, this initiative targets one of banking's most accuracy-critical tasks. By limiting agent autonomy, Morgan Stanley has enhanced accuracy and efficiency, demonstrating a novel application of AI in financial workflows. This approach highlights the potential for AI to optimize complex, deadline-driven tasks, offering a blueprint for other financial institutions seeking similar efficiencies.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/morgan-stanley-cut-its-riskiest-reconciliation-job-in-half-by-making-its-agents-less-autonomous",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Internet Pioneer Vinton Cerf to Retire from Google",
+            "title": "Vinton Cerf, Internet Protocol Co-Creator, Retires from Google",
+            "content": "Vinton Cerf, renowned as one of the \"Fathers of the Internet,\" will retire from his role as Google's chief internet evangelist next week. Cerf's contributions to the development of TCP/IP protocols laid the foundation for modern internet architecture. His departure marks the end of an era at Google, where he has been instrumental in advocating for internet accessibility and innovation. As the tech community reflects on his legacy, Cerf's retirement underscores the ongoing evolution of internet technologies and leadership. Google has yet to announce his successor in this influential role.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Wayve Offers $85M Tender at $8.5B Valuation",
+            "title": "Wayve Launches $85 Million Employee Tender Offer Amid High Valuation",
+            "content": "Autonomous vehicle startup Wayve has initiated an $85 million employee tender offer, valuing the company at $8.5 billion. This strategic move is part of a broader trend among AI startups to use employee tenders as a tool for talent retention and attraction. By allowing employees to sell shares, Wayve aims to incentivize its workforce and maintain competitive advantage in the rapidly evolving AI and autonomous vehicle sectors. The tender offer reflects the company's robust market position and investor confidence in its technological advancements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Anthropic's Fable 5 Returns After Trump Negotiations",
+            "title": "Anthropic Restores Access to Fable 5 Following Government Talks",
+            "content": "Anthropic has announced the return of its Claude Fable 5 model after successful negotiations with the Trump administration. The model, which had been sidelined, will be re-enabled on AWS and accessible globally on Claude platforms starting Wednesday. This development follows weeks of discussions aimed at lifting restrictions on the model's deployment. The restoration of Fable 5 is expected to enhance Anthropic's AI offerings, providing users with advanced capabilities in AI-driven applications. Stakeholders are advised to monitor the rollout for any updates on accessibility and performance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Ex-DeepMind Trio's AI Lab Valued Over $500M",
+            "title": "EquiLibre Technologies Gains $500 Million Valuation for AI Innovations",
+            "content": "EquiLibre Technologies, an AI lab founded by three former DeepMind researchers, has achieved a valuation exceeding $500 million. The Prague-based company is recognized for its cutting-edge AI developments, including a poker AI that has transitioned to financial applications. This valuation underscores the growing interest in AI-driven solutions within the financial sector, particularly among quant hedge funds. EquiLibre's success highlights the potential for AI to revolutionize financial strategies and decision-making processes. Investors and industry leaders are closely watching the company's next moves.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Google Unveils Faster, Cheaper Nano Banana 2 Lite",
+            "title": "Google Launches Nano Banana 2 Lite for Efficient Image Generation",
+            "content": "Google has introduced Nano Banana 2 Lite, an updated image generation model designed to be faster and more cost-effective. This new model aims to provide creators with an efficient tool for producing AI-generated content, reducing both time and financial costs. While the images may not match the quality of more advanced models, the quick generation time makes it ideal for projects requiring rapid turnaround. This release is part of Google's ongoing efforts to democratize AI tools, making them accessible to a broader range of users.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Acti Integrates AI Agents into Smartphone Keyboards",
+            "title": "Acti Launches AI-Powered Keyboard for iOS and Android Devices",
+            "content": "Acti has launched a new keyboard for iOS and Android that integrates AI agents directly into the smartphone interface. This innovative keyboard allows users to create custom AI-powered shortcuts using natural language, enhancing productivity across various applications. By embedding AI capabilities into the keyboard, Acti aims to make AI tools more accessible and intuitive for everyday smartphone users. This development reflects the growing trend of embedding AI into consumer technology, offering users seamless interaction with intelligent systems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard/",
+            "relatedResources": []
+        },
         {
             "date": "Jun 30 2026",
             "headline": "Meituan Unveils LongCat-2.0—1.6T Model on Chinese Chips",
@@ -231,51 +321,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jun 28 2026",
-            "headline": "Suno's Spark Incubator—Empowering Independent Artists with AI",
-            "title": "Suno Launches Spark Incubator for Independent Artists and AI Integration",
-            "content": "Suno has introduced the Spark incubator program, designed to support independent artists by integrating them into its AI-driven platform. The program offers grants, mentorship, and marketing support to unsigned singers and musicians, aiming to transform Suno into a streaming destination and a launchpad for new talent. This initiative reflects Suno's ambition to move beyond AI-generated content and foster genuine artistic growth. Independent artists seeking to leverage AI for creative and promotional purposes are encouraged to apply, potentially gaining significant exposure and resources.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Margaret Atwood Critiques AI—Warns of Data Quality Risks",
-            "title": "Margaret Atwood Highlights 'Garbage In, Garbage Out' AI Problem",
-            "content": "Renowned author Margaret Atwood has voiced concerns about artificial intelligence, emphasizing the \"garbage in, garbage out\" problem during an interview at the Babell Literary and Cultural Festival. Atwood stressed that AI systems are only as good as the data they are trained on, warning of the potential consequences of poor data quality. Her remarks underscore ongoing debates about data ethics and the importance of robust data curation in AI development. Professionals in AI and data science should heed these warnings, ensuring high-quality data inputs to achieve reliable AI outputs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958715/margaret-atwood-ai-problem-garbage-in-garbage-out",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Apple's Price Hikes—AI Development Costs Blamed",
-            "title": "Apple Increases Prices Amid AI Development Cost Pressures",
-            "content": "Apple has announced significant price increases across its product line, attributing the hikes to the rising costs of AI development. The 16-inch MacBook Pro now costs $300 more, while the 11-inch iPad Air has seen a $150 increase. CEO Tim Cook described these adjustments as \"unavoidable,\" citing the unsustainable nature of current pricing structures. This development highlights the financial pressures tech companies face as they invest heavily in AI research and development. Consumers and industry analysts should consider the broader implications of these cost increases on the tech market.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/958678/apple-consumer-price-increase-ai-big-tech",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 27 2026",
-            "headline": "Anthropic's Mythos 5 Returns—Limited Access After Negotiations",
-            "title": "Anthropic's Mythos 5 Resumes Operations Post-Government Negotiations",
-            "content": "After protracted negotiations with the Trump administration, Anthropic's Mythos 5 AI model is back online, albeit with limited access for select organizations. This resolution follows a two-week standoff, highlighting the complexities of AI deployment amid regulatory scrutiny. Mythos 5's return is a relief for entities relying on its advanced capabilities, though access remains restricted. The situation underscores the challenges AI companies face in navigating government regulations while maintaining operational continuity. Organizations using Mythos 5 should stay informed about access conditions and potential regulatory impacts.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958458/anthropic-mythos-5-is-back-trump-negotiations",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 26 2026",
-            "headline": "OpenAI Previews GPT-5.6 Sol—Enhanced Coding and Security Features",
-            "title": "OpenAI Introduces GPT-5.6 Sol with Advanced Capabilities",
-            "content": "OpenAI has unveiled GPT-5.6 Sol, its next-generation AI model featuring enhanced capabilities in coding, science, and cybersecurity. This model incorporates OpenAI's most advanced safety stack to date, aiming to mitigate risks associated with AI deployment. GPT-5.6 Sol promises significant improvements in performance and reliability, catering to the needs of developers and security professionals. The preview marks a pivotal step in AI evolution, as OpenAI continues to push the boundaries of what AI can achieve. Stakeholders should evaluate the model's potential applications and implications for their fields.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/previewing-gpt-5-6-sol",
-            "relatedResources": []
-        },
-        {
             "date": "Jun 29 2026",
             "headline": "Tidal Labels AI Music—Royalties Cut Off",
             "title": "Tidal Introduces AI Music Labeling, Ends Royalties for AI-Generated Tracks",
@@ -318,51 +363,6 @@ const websiteContent = {
             "content": "Google has announced that its Gemini AI image generation tool is now available for free to eligible users in the United States. This tool allows users to create personalized images based on their interests and data from connected Google apps. The expansion of Gemini's accessibility is part of Google's broader strategy to integrate AI capabilities into everyday user experiences. This move could enhance user engagement and provide valuable insights into consumer preferences. US users should explore Gemini to leverage its creative potential and enhance their digital content.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "OpenAI Teases Codex Hardware—Launch July 15",
-            "title": "OpenAI Hints at New Hardware for Codex AI Tool Launching July 15",
-            "content": "OpenAI has released a teaser for a new hardware device related to its Codex AI-powered coding tool, set to launch on July 15th. The teaser video features a square-shaped device with several buttons, suggesting an upgrade to Codex's functionality. This development indicates OpenAI's commitment to enhancing its AI offerings with dedicated hardware solutions, potentially improving user interaction and efficiency. Developers using Codex should stay tuned for further details and consider how this new hardware could integrate into their coding workflows.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Anthropic, California Strike Claude Deal—50% Discount",
-            "title": "Anthropic and California Government Agree on Claude AI Tool Discount",
-            "content": "Anthropic has reached an agreement with California Governor Gavin Newsom to provide the state's government with access to its Claude AI tool at a 50% discount. This deal strengthens Anthropic's ties with California while the federal government remains at odds with the company. The Claude AI tool is expected to enhance the state's operational efficiency and decision-making processes. This partnership highlights the growing interest in AI solutions within government operations and the potential for cost savings through strategic collaborations. Other states may look to similar agreements to leverage AI capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "South Korea Invests $550B to Combat 'RAMageddon'",
-            "title": "South Korean Tech Giants Pledge $550B to Address Memory Chip Shortage",
-            "content": "South Korea's leading memory chip manufacturers have committed over $550 billion to build additional memory fabrication facilities, aiming to alleviate the ongoing \"RAMageddon\" crisis. This substantial investment positions South Korea as a key player in the global AI technology landscape, ensuring a steady supply of critical components for AI and other tech industries. The initiative reflects the country's strategic focus on becoming a powerhouse in technology innovation and supply chain resilience. Industry stakeholders should monitor these developments as they could impact global memory chip availability and pricing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Arena's AI Leaderboard Hits $100M Milestone",
-            "title": "Arena AI Leaderboard Reaches $100M Valuation with Commercial Success",
-            "content": "Arena, the startup behind a widely-used AI leaderboard, has achieved a $100 million valuation following the launch of its commercial services last September. The platform, initially popular as a free resource, now offers paid services that have significantly contributed to its financial success. Arena's growth underscores the increasing demand for AI benchmarking tools that provide valuable insights into model performance and capabilities. AI developers and companies should consider leveraging Arena's services to gain competitive advantages and optimize their AI models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 29 2026",
-            "headline": "Cursor Launches Mobile App for Coding Oversight",
-            "title": "Cursor Introduces Mobile App for Remote Coding Agent Management",
-            "content": "Cursor has released a mobile application designed to provide users with remote oversight of their coding agents. This new app allows developers to manage and guide coding processes on the go, enhancing flexibility and productivity. The launch of this mobile solution reflects the growing trend towards mobile-first development tools that cater to the needs of modern developers. Users of Cursor's platform should explore the app to take advantage of its capabilities and streamline their coding workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
             "relatedResources": []
         }
     ],
