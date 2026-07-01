@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-06-30T16:35:54.623996",
-  "total_incidents": 29062,
+  "last_updated": "2026-07-01T06:50:48.093903",
+  "total_incidents": 29066,
   "incidents": [
+    {
+      "id": "aurora_primed_halberstadt_medizintechnik",
+      "victim_name": "Primed Halberstadt Medizintechnik",
+      "threat_actor": "aurora",
+      "date_discovered": "2026-06-30T19:51:25.102363+00:00",
+      "industry": "Healthcare",
+      "website": "Primed Halberstadt Medizintechnik",
+      "claim": "[manufacturer] *** GmbH — a German manufacturer of medical devices founded in 1946 and now part of the PE-backed PP Medtech group (Wiesmann & Co. KG).\n\nThe exfiltration captured four entire server volumes:\n\nDaten (883 GB) — File server: 289 employee home directories (547 GB), Czech subsidiary data (66 GB), production processes (162 GB), machine configurations (81 GB)\nEE (807 GB) — Enterprise system: Apollo ERP, VBANK banking (8 accounts), complete database backup (100.6 GB, dated June 3), product images\nWINDVSW1 (344 GB) — Windows server: DATEV accounting (115+ data directories including LODAS payroll), bank transfers, DMS exports\ndmsscan (12 GB) — Scanned documents from 51+ employee DMS mailboxes\nA database backup (spiel.zip.001–010, 100.6 GB) was created on 2026-06-03",
+      "screenshot": "https://images.ransomware.live/victims/efce6e3e56e2413a3a967370b4de9eeb.png",
+      "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/primed-halberstadt-medizintechnik-b278bad0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "play_western_construction",
+      "victim_name": "Western Construction",
+      "threat_actor": "play",
+      "date_discovered": "2026-06-30T18:58:31.728236+00:00",
+      "industry": "Construction",
+      "website": "www.wciboise.com",
+      "claim": "United States",
+      "screenshot": "https://images.ransomware.live/victims/270f2b846469a67005fea87d04308d86.png",
+      "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=yXJej0EB4mGwto",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_universalplant.com",
+      "victim_name": "universalplant.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-06-30T16:54:50.260413+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "www.zoominfo.com/c/universal-plant-services-inc/353963066",
+      "claim": "FINAL NOTICE: UNIVERSAL PLANT SERVICES (UPS)\n\nWe are in possession of 315 GB of your corporate, financial, and operational data. Our analysis confirms that this archive contains highly sensitive information, including:\n\n    Financial & Accounting: Full audits, tax filings (ADP), payroll, bank transa…",
+      "screenshot": "https://images.ransomware.live/victims/7fb52b145ba3a00a75216de347d813de.png",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/iA8ZqwqvbWAadhAdslngN5Kiazx2CWrf",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "braincipher_paipharma.com",
+      "victim_name": "paipharma.com",
+      "threat_actor": "BrainCipher",
+      "date_discovered": "2026-06-30T16:50:32.430072+00:00",
+      "industry": "Healthcare",
+      "website": "paipharma.com",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/1a9d16729d9f09f8c6eb74bdb9d73783.png",
+      "url": "http://vkvsgl7lhipjirmz6j5ubp3w3bwvxgcdbpi3fsbqngfynetqtw4w5hyd.onion/n/paipharma",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "settra_petradiamonds.com",
       "victim_name": "petradiamonds.com",
@@ -1318,7 +1366,7 @@
       "industry": "Technology",
       "website": "horizoneye.com",
       "claim": "Horizon Eye Care operates as a group of independent optometric clinics and medical practices across North America. Depending on your specific location, they offer comprehensive eye examinations, surgical procedures (like LASIK and cataracts), contact lens fittings, and a wide variety of designer eyeglasses.",
-      "screenshot": "",
+      "screenshot": "https://images.ransomware.live/victims/abe9749ce7885cc50fc4d22bee403a4b.png",
       "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a3926cc5ae71db30c25aebd",
       "source": "Ransomware.live OSINT API"
     },
