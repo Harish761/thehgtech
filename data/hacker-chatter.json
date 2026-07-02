@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-07-02T06:21:58.960960",
-  "total_incidents": 29127,
+  "last_updated": "2026-07-02T16:19:10.750988",
+  "total_incidents": 29134,
   "incidents": [
+    {
+      "id": "apt73_ritavo.com",
+      "victim_name": "ritavo.com",
+      "threat_actor": "apt73",
+      "date_discovered": "2026-07-02T15:52:08.127189+00:00",
+      "industry": "Not Found",
+      "website": "ritavo.com",
+      "claim": "ritavo.com is the website of Rita Võ Group, a private multidisciplinary holding company from Vie...",
+      "screenshot": "https://images.ransomware.live/victims/be43664cd61fa5fd9057b754a6d80a98.png",
+      "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=174",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "worldleaks_service_it",
+      "victim_name": "Service IT",
+      "threat_actor": "worldleaks",
+      "date_discovered": "2026-07-02T14:01:26.350687+00:00",
+      "industry": "Business Services",
+      "website": "www.service.com.br",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/add2529fe5e562cf472be63f3ad52d7f.png",
+      "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/8620103939",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "worldleaks_treet_group_of_companies",
+      "victim_name": "Treet Group of Companies",
+      "threat_actor": "worldleaks",
+      "date_discovered": "2026-07-02T14:00:46.490630+00:00",
+      "industry": "Business Services",
+      "website": "treetcorp.com",
+      "claim": "[AI generated] Treet Group of Companies is a Pakistani conglomerate headquartered in Lahore, Pakistan. It operates across multiple industries including razor blades and personal care products, textile manufacturing, and power generation. The group is best known for producing Treet razor blades, one of the most recognized brands in Pakistan. It is publicly listed and has been a significant industrial player in Pakistan for several decades.",
+      "screenshot": "https://images.ransomware.live/victims/9364f1e417d3f3c050838124973deab7.png",
+      "url": "https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/0890882219",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_quest_healthcare_solutions",
+      "victim_name": "Quest Healthcare Solutions",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-07-02T13:21:32.374956+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Employee data, internal files, and a few unexpected discoveries.",
+      "screenshot": "https://images.ransomware.live/victims/50d09192e033a23bbac427d70f5d761c.png",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/ZxMuptij8OrXtBb4TyaPrfDFsvfmfD4otvTwmnvCXIBU5W+YfSjke0DNnrdrCPDPvRWvmCkwFFbjgtFGU3mvjEl1dFI5V3NB",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "moneymessage_x-copper_professional",
+      "victim_name": "X-Copper Professional",
+      "threat_actor": "moneymessage",
+      "date_discovered": "2026-07-02T09:55:44.685259+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "[AI generated] X-Copper Professional is a Canadian legal and paralegal services firm specializing in traffic ticket defense and driving-related legal matters. Based in Ontario, Canada, the company represents clients facing speeding tickets, careless driving charges, and other Highway Traffic Act violations. It employs licensed paralegals and lawyers to help clients reduce or dismiss charges, minimizing fines, demerit points, and insurance premium impacts.",
+      "screenshot": "https://images.ransomware.live/victims/4a3bee41e75c432dacd07bb978c8f3cb.png",
+      "url": "http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion/news.php?id=1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_pennant_hills_golf_club",
+      "victim_name": "Pennant Hills Golf Club",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-02T09:26:15.587822+00:00",
+      "industry": "Hospitality and Tourism",
+      "website": "www.pennanthillsgolfclub.com.au",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/37aa7cc3e341f09ed42106df33691744.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=58f96ce6-c718-4160-9b1e-9a4653f88936",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_tofutown",
+      "victim_name": "Tofutown",
+      "threat_actor": "payload",
+      "date_discovered": "2026-07-02T07:26:30.193038+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "TOFUTOWN is a traditional organic manufacturer specializing in plant-based foods, founded in 1981. The company offers a diverse range of products including vegan spreads, tofu, and seitan, all made from high-quality organic ingredients. With a commitment to sustainability and natural ingredients, TOFUTOWN caters to health-conscious consumers looking for convenient and delicious plant-based meal options.",
+      "screenshot": "https://images.ransomware.live/victims/3ac4135b1958efc23cc94404bcf200c5.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/f2c0075f-ac9b-426d-bbfa-1959e1305d76",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "anubis_northeast_pediatrics_&_adolescent_medicine",
       "victim_name": "Northeast Pediatrics & Adolescent Medicine",
