@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1564",
+      "incident_id": 1564,
+      "title": "Purported Deepfakes of Public Figures and Celebrities Reportedly Used to Market Honey-Based Suppleme",
+      "date": "2026-07-02",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1563",
       "incident_id": 1563,
       "title": "KPMG Report Allegedly Included Hallucinated Citations and Inaccurate Agentic AI Case Studies",
@@ -2562,9 +2570,9 @@
     }
   ],
   "stats": {
-    "total": 320,
-    "last7Days": 10,
-    "last30Days": 126
+    "total": 321,
+    "last7Days": 11,
+    "last30Days": 127
   },
-  "lastUpdated": "2026-07-02T16:19:57.523630+05:30"
+  "lastUpdated": "2026-07-02T19:55:10.552098+05:30"
 }
