@@ -10610,6 +10610,27 @@
       "Description": "In April 2021, <a href=\"https://www.opindia.com/2021/04/personal-details-of-over-seven-lakh-moneycontrol-users-up-for-sale/\" target=\"_blank\" rel=\"noopener\">hackers posted data for sale originating from the online Indian financial platform, Moneycontrol</a>. The data included 763 thousand unique email addresses (allegedly a subset of a larger 40 million account breach), alongside geographic locations, phone numbers, genders, dates of birth and plain text passwords. The date of the original breach is unclear, although the breached data indicates the file was created in September 2017 and Moneycontrol has stated that the breach is \"an old data set\"."
     }
   ],
+  "moody.edu": [
+    {
+      "Name": "MoodyBibleInstitute",
+      "Title": "Moody Bible Institute",
+      "BreachDate": "2026-06-15",
+      "AddedDate": "2026-07-03T16:03:25Z",
+      "PwnCount": 2303416,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Marital statuses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://cyberinsider.com/moody-bible-institute-investigates-potential-data-breach-incident/\" target=\"_blank\" rel=\"noopener\">Moody Bible Institute was targeted by a ShinyHunters \"pay or leak\" extortion campaign</a>. Over 2.3M unique email addresses and other personal data were later published publicly, including names, physical addresses, phone numbers, dates of birth and other information relating to donors, supporters, students and alumni. <a href=\"https://www.moodybible.org/news/2026/data-investigation/\" target=\"_blank\" rel=\"noopener\">In their disclosure notice</a>, Moody advised that they had \"engaged both internal and external cybersecurity experts to thoroughly investigate the matter\"."
+    }
+  ],
   "morele.net": [
     {
       "Name": "MoreleNet",

@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-07-03T06:08:04.613371",
-  "total_incidents": 29144,
+  "last_updated": "2026-07-03T16:06:10.642727",
+  "total_incidents": 29150,
   "incidents": [
+    {
+      "id": "blackfield_redeplastrs.com.br",
+      "victim_name": "redeplastrs.com.br",
+      "threat_actor": "Blackfield",
+      "date_discovered": "2026-07-03T14:20:33.846657+00:00",
+      "industry": "Manufacturing",
+      "website": "redeplastrs.com.br",
+      "claim": "Redeplast is a Brazilian footwear manufacturer with over 20 years of experience in the industry. The...",
+      "screenshot": "https://images.ransomware.live/victims/e4cac71ebaa83b5c8e30e6e4c11a029b.png",
+      "url": "http://2mgkz2ntx5vpgt4jj4gir77eqx7g6owapm2mkzpjswyl74fni7jgdmyd.onion/detail/e8e546c8-f6a7-4f9d-8b1a-e2a538880752",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "apt73_aydeniz.com",
+      "victim_name": "aydeniz.com",
+      "threat_actor": "apt73",
+      "date_discovered": "2026-07-03T12:22:02.886675+00:00",
+      "industry": "Not Found",
+      "website": "aydeniz.com",
+      "claim": "Aydeniz Group is a family-owned group of companies founded in 1975, operating in several key indu...",
+      "screenshot": "https://images.ransomware.live/victims/c5e7fa5f91c98add18a9eceb3a9d21dd.png",
+      "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=177",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_ac_beverage,_inc.",
+      "victim_name": "AC Beverage, Inc.",
+      "threat_actor": "pear",
+      "date_discovered": "2026-07-03T10:58:15.341474+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "acbeverage.com",
+      "claim": "Provider in the draft beer service industry, specializing in the installation of high-quality systems and beer line",
+      "screenshot": "https://images.ransomware.live/victims/0390d472241a609ce05f9b0f2473ce9c.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/acbeverage",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_cnw_electronics_pte_ltd",
+      "victim_name": "CNW Electronics Pte Ltd",
+      "threat_actor": "pear",
+      "date_discovered": "2026-07-03T10:57:31.915805+00:00",
+      "industry": "Manufacturing",
+      "website": "cnw.com.sg",
+      "claim": "Providing complete wire harness solutions, from design to manufacturing",
+      "screenshot": "https://images.ransomware.live/victims/a536cd5cc30ffc3ff69bf9308400c3ff.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/cnw",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_majuhome.com.my",
+      "victim_name": "majuhome.com.my",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-07-03T09:54:38.036607+00:00",
+      "industry": "Consumer Services",
+      "website": "majuhome.com.my",
+      "claim": "MAJUHOME Concept (Maju Home Furnishing Sdn. Bhd.) is a Malaysian leading one-stop mega furniture mall and lifestyle bran...",
+      "screenshot": "https://images.ransomware.live/victims/fbaa0204bb1bf70c23a301d594064dd0.png",
+      "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/cba113326007e55f5a42925d7f85f9edac137e1947522b425477006d0da47d78/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_duflosa.com",
+      "victim_name": "duflosa.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-07-03T09:36:16.243098+00:00",
+      "industry": "Not Found",
+      "website": "duflosa.com",
+      "claim": "DUFLO SAS (Duflo Servicios Integrales S.A.S.) is a Colombian company specializing in integrated facility management and ...",
+      "screenshot": "https://images.ransomware.live/victims/e5ed6e7dc00db0ea994d018a447dd503.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/fd765fef9902cef123bf95c1e2a5a98d9f043c02de3d477ef73afac9c1e1a84d/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_oakparkmi.gov",
       "victim_name": "oakparkmi.gov",
