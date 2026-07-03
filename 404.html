@@ -636,6 +636,22 @@
             document.body.classList.add('light-mode');
         }
 
+        // Smart redirect map for moved/renamed pages
+        const REDIRECTS = {
+            '/articles/windows-vs-macos-endpoint-security-2026.html': '/guides/windows-vs-macos-endpoint-security-2026.html',
+            '/guides/incident-response-plan.html': '/guides/incident-response-automation.html',
+            '/guides/index-new.html': '/guides/',
+            '/articles/cisa-vmware-esxi-flaw-now-exploited-in-ransomware-attacks.html': '/articles.html',
+            '/articles/critical-n8n-flaws-disclosed-along-with-public-exploits.html': '/articles/n8n-ni8mare-critical-vulnerability-2026.html',
+            '/articles/cisa-adds-actively-exploited-solarwinds-web-help-desk-rce-to-kev-catalog.html': '/articles.html',
+            '/articles/new-amaranth-dragon-cyberespionage-group-exploits-winrar-flaw.html': '/articles.html',
+        };
+
+        const currentPath = window.location.pathname;
+        if (REDIRECTS[currentPath]) {
+            window.location.replace(REDIRECTS[currentPath]);
+        }
+
         // Track 404 errors (if analytics is available)
         if (typeof gtag !== 'undefined') {
             gtag('event', '404_error', {

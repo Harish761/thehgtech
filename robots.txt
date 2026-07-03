@@ -1,5 +1,5 @@
 # TheHGTech Robots.txt - Optimized for Maximum Crawl Coverage
-# Last Updated: 2026-06-28
+# Last Updated: 2026-07-04
 
 User-agent: *
 Allow: /
@@ -13,6 +13,14 @@ Disallow: /.git/
 # Block dev-only JSON data files (not the live data feeds)
 Disallow: /geo_analysis_results.json
 Disallow: /extracted_articles.json
+
+# Block JS-generated modal/search query params (not real pages - cause canonical duplication)
+# articles.html?id=article1 etc. are created by history.pushState() on modal open
+Disallow: /*?id=
+# ?search= leftover from old Google Ads {search_term_string} placeholder
+Disallow: /*?search=
+# Block any other query-parameterized versions of pages
+Disallow: /*?t=
 
 # Sitemaps
 Sitemap: https://thehgtech.com/sitemap.xml
