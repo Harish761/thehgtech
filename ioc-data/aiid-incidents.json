@@ -2543,20 +2543,12 @@
       "date": "2026-04-05",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1438",
-      "incident_id": 1438,
-      "title": "Jiushi Autonomous Delivery Vehicle Reportedly Dragged Fallen Electric Scooter During Delivery Run in",
-      "date": "2026-04-04",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 319,
-    "last7Days": 7,
+    "total": 318,
+    "last7Days": 4,
     "last30Days": 127
   },
-  "lastUpdated": "2026-07-03T23:12:26.909870+05:30"
+  "lastUpdated": "2026-07-04T01:28:09.252517+05:30"
 }
