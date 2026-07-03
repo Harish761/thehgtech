@@ -2551,28 +2551,12 @@
       "date": "2026-04-04",
       "category": "autonomous_vehicle",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1440",
-      "incident_id": 1440,
-      "title": "Coco Robotics Delivery Robot Reportedly Became Stuck on Railroad Tracks and Was Struck by Train in M",
-      "date": "2026-04-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1441",
-      "incident_id": 1441,
-      "title": "Claude Cowork Allegedly Deleted Folder Containing 15 Years of Family Photos While Organizing User's ",
-      "date": "2026-04-04",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 321,
+    "total": 319,
     "last7Days": 7,
     "last30Days": 127
   },
-  "lastUpdated": "2026-07-03T02:49:37.915266+05:30"
+  "lastUpdated": "2026-07-03T09:32:19.228772+05:30"
 }
