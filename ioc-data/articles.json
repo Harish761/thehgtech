@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "bat-bms-security-design-failure-2026",
+      "title": "The BAT-BMS Controversy Isn't a Bluetooth Hack — It's an IoT Security Design Failure",
+      "date": "July 4, 2026",
+      "category": "IoT Security & Embedded Systems",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "Technical analysis of the BAT-BMS Bluetooth security controversy. Understand why this is an IoT security design and provisioning failure, not a protocol flaw.",
+      "image": "/images/articles/bat-bms-security-design-failure-2026.png",
+      "externalUrl": "articles/bat-bms-security-design-failure-2026.html",
+      "readTime": "18 min read",
+      "tags": [
+        "BAT-BMS",
+        "Bluetooth Security",
+        "IoT Security",
+        "Secure by Design",
+        "Embedded Security",
+        "Battery Management System Vulnerability"
+      ]
+    },
+    {
       "id": "vendor-added-ai-risk-2026",
       "title": "Your Vendor Added AI. Does Your Security Assessment Still Apply?",
       "date": "July 4, 2026",
