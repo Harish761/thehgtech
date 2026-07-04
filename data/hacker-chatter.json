@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-07-03T16:06:10.642727",
-  "total_incidents": 29150,
+  "last_updated": "2026-07-04T05:58:27.317482",
+  "total_incidents": 29155,
   "incidents": [
+    {
+      "id": "qilin_tq_financial_services",
+      "victim_name": "TQ Financial Services",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-03T18:57:07.616667+00:00",
+      "industry": "Financial Services",
+      "website": "www.tqfinancials.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/91b6c2b71adb2767e67cd47d9a9c2d21.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=abf9c42a-1ce2-43e2-a6ae-ffe1f669d054",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_md_lewis",
+      "victim_name": "Md Lewis",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-03T18:30:08.866574+00:00",
+      "industry": "Not Found",
+      "website": "www.mdlewiscpa.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/098796c2b52613d162eec3e8077134dc.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=98be2e40-0a3b-45e1-b490-65624dbc6801",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_goodwill_manasota",
+      "victim_name": "Goodwill Manasota",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-03T18:29:28.367672+00:00",
+      "industry": "Consumer Services",
+      "website": "www.experiencegoodwill.org",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/aa921a274a0ad5a6a8aa4469b1c26865.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=20de175e-9b1b-48a2-b953-827c18de8aef",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_sitmatic",
+      "victim_name": "Sitmatic",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-03T18:28:49.877074+00:00",
+      "industry": "Technology",
+      "website": "www.sitmatic.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/66f83f0216893b10ef74d8f44a720600.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=59fa35e9-0cf8-4178-b372-617f08a8b622",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_sisint",
+      "victim_name": "Sisint",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-03T18:28:10.677991+00:00",
+      "industry": "Technology",
+      "website": "www.sisint.pt",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/cc895d1463586df6c6877910d24d4a34.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=dc445be0-dece-4603-88e8-b7578daaabf5",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "blackfield_redeplastrs.com.br",
       "victim_name": "redeplastrs.com.br",
