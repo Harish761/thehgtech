@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-07-04T05:58:27.317482",
-  "total_incidents": 29155,
+  "last_updated": "2026-07-04T15:41:56.427335",
+  "total_incidents": 29158,
   "incidents": [
+    {
+      "id": "unsafe_deutsche_bank",
+      "victim_name": "Deutsche Bank",
+      "threat_actor": "unsafe",
+      "date_discovered": "2026-07-04T11:30:53.057392+00:00",
+      "industry": "Financial Services",
+      "website": "Deutsche Bank",
+      "claim": "Revenue: 30 billion",
+      "screenshot": "https://images.ransomware.live/victims/eb517bbef7d2327ac981cb3487379ae7.png",
+      "url": "http://unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd.onion/reel/6a48eb478b37a93648b56d3e?page=1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "play_locati_architects",
+      "victim_name": "Locati Architects",
+      "threat_actor": "play",
+      "date_discovered": "2026-07-04T07:56:28.947685+00:00",
+      "industry": "Construction",
+      "website": "www.locatiarchitects.com",
+      "claim": "United States",
+      "screenshot": "https://images.ransomware.live/victims/90b3e02014e58ab4a26c58a6dc9abb24.png",
+      "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=8fJN1qE5MO0ev0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "play_silvestri_&_associates_insurance",
+      "victim_name": "Silvestri & Associates Insurance",
+      "threat_actor": "play",
+      "date_discovered": "2026-07-04T07:55:54.839310+00:00",
+      "industry": "Financial Services",
+      "website": "www.silvestriandassociates.com",
+      "claim": "United States",
+      "screenshot": "https://images.ransomware.live/victims/37f9c752b5237f9fdf08f9a31b86fa1b.png",
+      "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=omRP0Z54cH0P8e",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_tq_financial_services",
       "victim_name": "TQ Financial Services",
