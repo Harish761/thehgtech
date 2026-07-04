@@ -613,21 +613,8 @@
         
         <p><strong>The first question should always be:</strong> <em>"Has the vendor's trust boundary changed?"</em></p>
 
-        <div class="mermaid">
-        flowchart TD
-            A[Vendor Announces AI Feature] --> B{Does it process Customer Data?}
-            B -- No --> C[No Reassessment Required]
-            B -- Yes --> D{Has the Trust Boundary Changed?}
-            D -- Yes --> E[Trigger Security Review]
-            D -- No --> F{Are new Subprocessors Involved?}
-            F -- Yes --> E
-            F -- No --> G{Is Data used for Model Training?}
-            G -- Yes --> H[Trigger Formal Reassessment]
-            G -- No --> I{Does AI have Autonomous Write Access?}
-            I -- Yes --> E
-            I -- No --> J[Document & Monitor]
-        </div>
-        <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);"><em>Figure 2: Material Change Decision Model.</em></p>
+        <img src="/images/articles/ai_decision_model_flowchart.jpg" alt="Material AI Change Decision Model" class="article-image">
+        <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);"><em>Figure 2: Material AI Change Decision Model.</em></p>
 
         <p>Evaluate these critical factors:</p>
         <ul>
@@ -693,29 +680,38 @@
 
         <h2>7. Practical Examples</h2>
 
-        <p><strong>Example 1: Microsoft adds AI search.</strong><br>
-        If your organization already uses Microsoft 365, and they introduce Copilot for enterprise search using existing data boundaries and Azure OpenAI (an approved subprocessor), the trust boundary has not materially shifted. A formal reassessment is likely unnecessary, though a configuration review (to ensure proper RBAC) is prudent.</p>
+        <p><strong>Example 1: Microsoft Copilot for Microsoft 365.</strong><br>
+        If your organization already uses Microsoft 365, and they introduce Copilot using existing data boundaries and Azure OpenAI (an approved subprocessor), the core trust boundary has not materially shifted externally. A formal full-vendor reassessment is likely unnecessary, though an internal configuration review (to ensure proper RBAC and data governance) is highly recommended.</p>
 
-        <p><strong>Example 2: CRM vendor starts sending prompts to a new external LLM.</strong><br>
-        Your CRM introduces an email drafting feature that sends customer data to a new third-party LLM provider. This involves a new subprocessor and a significant shift in the trust boundary. <strong>Action: Security Review Required.</strong></p>
+        <p><strong>Example 2: Salesforce Copilot Integration.</strong><br>
+        Your CRM vendor introduces an AI assistant (e.g., Salesforce Copilot) that processes customer data and potentially routes prompts through a new zero-retention agreement with OpenAI. While data retention might be zero, this involves a new subprocessor and a significant shift in the trust boundary. <strong>Action: Security Review Required.</strong></p>
+        
+        <p><strong>Example 3: Zoom AI Companion.</strong><br>
+        A unified communications platform like Zoom adds an AI Companion to summarize meetings. Since this involves processing highly sensitive internal discussions, security teams must verify whether the data is used to train third-party models and what subprocessors are handling the transcriptions. <strong>Action: Security Review Required.</strong></p>
 
-        <p><strong>Example 3: Vendor introduces an AI grammar assistant.</strong><br>
+        <p><strong>Example 4: Vendor introduces an on-device AI grammar assistant.</strong><br>
         A marketing tool introduces an on-device grammar checker that does not transmit content externally and never processes sensitive customer databases. <strong>Action: Document only.</strong></p>
 
         <h2>8. Best Practices for the Enterprise</h2>
         
+        <p>Operationalizing AI risk management requires embedding checks into existing workflows rather than creating entirely new bottlenecks.</p>
+
         <ul class="checklist">
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Monitor vendor Trust Centers</strong> and subscribe to their release notes.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Track subprocessor updates</strong> meticulously to catch unapproved AI integrations.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Review AI architecture changes</strong> specifically looking for shifts in trust boundaries.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Include AI-specific questions during QBRs.</strong> Ask directly: "Are you planning to introduce any external LLMs?"</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Update procurement playbooks</strong> to explicitly prohibit model training on customer data without prior consent.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Review material AI changes</strong> before enabling new capabilities in the administration console.</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Mandate "Zero Retention" Agreements:</strong> Ensure procurement playbooks require vendors to confirm that third-party LLMs do not retain prompts or use customer data for model training.</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Monitor vendor Trust Centers</strong> and subscribe to their release notes to catch AI feature announcements early.</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Track subprocessor updates</strong> meticulously. Set up automated alerts for changes to DPAs or subprocessor lists.</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Review AI architecture changes</strong> specifically looking for shifts in trust boundaries, such as the introduction of new vector databases.</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Include AI-specific questions during QBRs.</strong> Ask directly: "Are you planning to introduce any external LLMs in the next 6-12 months?"</li>
+            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Default to Off:</strong> Configure enterprise tenant settings to disable new AI capabilities by default until a security review is completed.</li>
         </ul>
 
         <h2>9. Recommendations for CISOs</h2>
 
-        <p>Focus on governance, not panic. Instead of mandating "Assess more vendors," the directive should be "Improve reassessment quality by prioritizing material AI changes." Ensure your team understands the distinction between a new UI feature and a fundamental architectural shift. Leverage your existing procurement and legal frameworks to enforce subprocessor notification SLA requirements.</p>
+        <p>Focus on governance, not panic. Instead of mandating "Assess more vendors," the directive should be "Improve reassessment quality by prioritizing material AI changes."</p>
+        
+        <p>Ensure your team understands the distinction between a superficial UI feature and a fundamental architectural shift. CISOs should partner closely with Procurement and Legal to standardize contract language (e.g., prohibiting unapproved model training) and enforce strict subprocessor notification SLAs.</p>
+        
+        <p>Furthermore, establish a cross-functional AI Governance Council to review borderline cases. This prevents the security team from becoming a bottleneck while ensuring business units understand the shared responsibility of adopting vendor AI safely.</p>
 
         <h2>10. Conclusion</h2>
 
