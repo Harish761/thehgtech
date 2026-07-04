@@ -1,0 +1,372 @@
+/* Ransomware Modal Styles */
+
+/* Modal Overlay (backdrop) */
+.ransomware-modal-overlay {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Modal Container (inner content) */
+.ransomware-modal {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    border: 1px solid rgba(255, 76, 76, 0.3);
+    border-radius: 16px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(255, 76, 76, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+    position: relative;
+}
+
+.ransomware-modal-content {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    border: 1px solid rgba(255, 76, 76, 0.3);
+    border-radius: 16px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(255, 76, 76, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.ransomware-modal-header {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 76, 76, 0.05);
+}
+
+.ransomware-modal-header h2 {
+    margin: 0;
+    color: #FF3D3D;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.ransomware-modal-close {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.ransomware-modal-close:hover {
+    background: rgba(255, 76, 76, 0.2);
+    color: #FF3D3D;
+    transform: rotate(90deg);
+}
+
+.ransomware-modal-body {
+    padding: 2rem;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.modal-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.modal-stat {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.modal-stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.modal-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FF3D3D;
+}
+
+/* Modal Actions Section */
+.modal-actions {
+    background: rgba(0, 217, 255, 0.05);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.action-btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #00D9FF, #0099cc);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 217, 255, 0.5);
+    background: linear-gradient(135deg, #00e5ff, #00b8d4);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+.modal-section {
+    margin-bottom: 2rem;
+}
+
+.modal-section h3,
+.modal-section h4 {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.victims-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.victim-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #FF3D3D;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.victim-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: #ff8080;
+    transform: translateX(4px);
+}
+
+.victim-name {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+.victim-date {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .ransomware-modal-overlay {
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .ransomware-modal {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .ransomware-modal-content {
+        max-height: 90vh;
+    }
+
+    .ransomware-modal-header {
+        padding: 1.5rem;
+    }
+
+    .ransomware-modal-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .ransomware-modal-body {
+        padding: 1.5rem;
+    }
+
+    .modal-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .victim-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Scrollbar styling for modal */
+.ransomware-modal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ransomware-modal-body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.ransomware-modal-body::-webkit-scrollbar-thumb {
+    background: rgba(255, 76, 76, 0.5);
+    border-radius: 4px;
+}
+
+.ransomware-modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 76, 76, 0.7);
+}
+
+/* Light mode support for modal */
+body.light-mode .ransomware-modal {
+    background: #ffffff;
+    border-color: rgba(220, 38, 38, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .ransomware-modal-content {
+    background: white;
+    border-color: rgba(220, 38, 38, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Fix inline white text from JS usually found in modal-actions */
+body.light-mode .ransomware-modal p[style*="color: rgba(255,255,255"],
+body.light-mode .modal-actions p[style] {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.light-mode .ransomware-modal h3,
+body.light-mode .ransomware-modal h2 {
+    color: #1a1a1a;
+}
+
+
+body.light-mode .ransomware-modal-header {
+    background: rgba(220, 38, 38, 0.08);
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .ransomware-modal-header h2 {
+    color: #DC2626;
+}
+
+body.light-mode .ransomware-modal-close {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .ransomware-modal-close:hover {
+    background: rgba(220, 38, 38, 0.15);
+    color: #DC2626;
+}
+
+body.light-mode .modal-stat {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .modal-stat-label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+body.light-mode .modal-stat-value {
+    color: #DC2626;
+}
+
+body.light-mode .modal-section h3,
+body.light-mode .modal-section h4 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body.light-mode .victim-item {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+    border-left-color: #DC2626;
+}
+
+body.light-mode .victim-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-left-color: #EF4444;
+}
+
+body.light-mode .victim-name {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body.light-mode .victim-date {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb {
+    background: rgba(220, 38, 38, 0.3);
+}
+
+body.light-mode .ransomware-modal-body::-webkit-scrollbar-thumb:hover {
+    background: rgba(220, 38, 38, 0.5);
+}
+
+/* Fix link visibility in light mode */
+body.light-mode .victim-link[style] {
+    color: #0088cc !important;
+}

@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "vendor-added-ai-risk-2026",
+      "title": "Your Vendor Added AI. Does Your Security Assessment Still Apply?",
+      "date": "July 4, 2026",
+      "category": "Vendor Risk Management",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "A structured, risk-based decision model to determine if a vendor's new AI capabilities require a security reassessment.",
+      "image": "/images/articles/vendor-added-ai-risk-2026.jpg",
+      "externalUrl": "articles/vendor-added-ai-risk-2026.html",
+      "readTime": "18 min read",
+      "tags": [
+        "Vendor Risk Management",
+        "AI Risk Assessment",
+        "Third-Party Risk",
+        "TPRM",
+        "Enterprise AI",
+        "Compliance"
+      ]
+    },
+    {
       "id": "report-20260629",
       "title": "Weekly Threat Report: June 29, 2026",
       "date": "June 29, 2026",

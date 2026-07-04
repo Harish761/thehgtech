@@ -1,0 +1,269 @@
+// Dashboard Main Script
+// Handles animations, chart rendering, and live updates
+
+let dashboard;
+let charts = {};
+
+// Initialize dashboard on page load
+document.addEventListener('DOMContentLoaded', async () => {
+    dashboard = new ThreatDashboard();
+
+    try {
+        const stats = await dashboard.loadAllData();
+        renderDashboard(stats);
+        initializeCharts(stats);
+
+        // Auto-refresh every 30 seconds
+        setInterval(async () => {
+            const newStats = await dashboard.loadAllData();
+            updateDashboard(newStats);
+        }, 30000);
+
+    } catch (error) {
+        console.error('Failed to load dashboard data:', error);
+    }
+});
+
+// Render initial dashboard
+function renderDashboard(stats) {
+    // Update last updated timestamp - use pre-formatted IST time
+    const timeElement = document.getElementById('lastUpdatedTime') || document.getElementById('lastUpdated');
+    if (timeElement && stats.lastUpdatedFormatted) {
+        // Use pre-formatted timestamp to avoid timezone conversion
+        timeElement.textContent = stats.lastUpdatedFormatted;
+    }
+
+    // Animate stat counters
+    animateCounter('totalIOCs', stats.totalIOCs);
+    animateCounter('totalURLs', stats.byType.url || 0);
+    animateCounter('totalHashes', stats.byType.hash || 0);
+    animateCounter('totalIPs', stats.byType.ip || 0);
+
+    // Render threat leaderboard
+    renderLeaderboard(stats.topMalware);
+
+    // Render activity feed
+    renderActivityFeed(stats.recentIOCs);
+}
+
+// Update dashboard with new data
+function updateDashboard(stats) {
+    // Update counters
+    const totalIOCs = document.getElementById('totalIOCs');
+    if (totalIOCs) {
+        totalIOCs.textContent = formatNumber(stats.totalIOCs);
+        // Also update IOC tab badge
+        if (window.updateIOCBadge) window.updateIOCBadge(stats.totalIOCs);
+    }
+
+    const totalURLs = document.getElementById('totalURLs');
+    if (totalURLs) totalURLs.textContent = formatNumber(stats.byType.url || 0);
+
+    const totalHashes = document.getElementById('totalHashes');
+    if (totalHashes) totalHashes.textContent = formatNumber(stats.byType.hash || 0);
+
+    const totalIPs = document.getElementById('totalIPs');
+    if (totalIPs) totalIPs.textContent = formatNumber(stats.byType.ip || 0);
+
+    // Update timestamp
+    const lastUpdated = new Date(stats.lastUpdated);
+    const timeElement = document.getElementById('lastUpdatedTime') || document.getElementById('lastUpdated');
+    if (timeElement) {
+        timeElement.textContent = lastUpdated.toLocaleString();
+    }
+
+    // Update charts
+    updateCharts(stats);
+}
+
+// Animate number counter
+function animateCounter(elementId, target) {
+    const element = document.getElementById(elementId);
+    if (!element) return; // Safety check
+
+    const duration = 2000;
+    const start = 0;
+    const increment = target / (duration / 16);
+    let current = start;
+
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+
+            // Update the main IOC tab badge when totalIOCs counter completes
+            if (elementId === 'totalIOCs' && window.updateIOCBadge) {
+                window.updateIOCBadge(target);
+            }
+        }
+        if (element) {
+            element.textContent = formatNumber(Math.floor(current));
+        }
+    }, 16);
+}
+
+// Format number with commas
+function formatNumber(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+// Render threat leaderboard
+function renderLeaderboard(topMalware) {
+    const container = document.getElementById('threatLeaderboard');
+
+    if (!topMalware || topMalware.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--text-muted);">No data available</p>';
+        return;
+    }
+
+    const maxCount = topMalware[0].count;
+
+    container.innerHTML = topMalware.slice(0, 10).map((item, index) => {
+        const percentage = (item.count / maxCount) * 100;
+        const severity = dashboard.getThreatScore(item.name);
+        const rankEmoji = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : '';
+
+        return `
+      <div class="leaderboard-item" style="animation-delay: ${index * 0.1}s">
+        <div class="leaderboard-rank">${rankEmoji || (index + 1)}</div>
+        <div class="leaderboard-info">
+          <div class="leaderboard-name">${escapeHtml(item.name)}</div>
+          <div class="leaderboard-bar">
+            <div class="leaderboard-bar-fill" style="width: ${percentage}%"></div>
+          </div>
+        </div>
+        <div class="leaderboard-count">${formatNumber(item.count)}</div>
+      </div>
+    `;
+    }).join('');
+}
+
+// Render activity feed
+function renderActivityFeed(recentIOCs) {
+    const container = document.getElementById('activityFeed');
+
+    if (!container) return; // Prevent crash if element doesn't exist
+
+    if (!recentIOCs || recentIOCs.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--text-muted);">No recent activity</p>';
+        return;
+    }
+
+    container.innerHTML = recentIOCs.map((ioc, index) => {
+        const timeAgo = ioc.hoursAgo === 0 ? 'Just now' :
+            ioc.hoursAgo === 1 ? '1 hour ago' :
+                `${ioc.hoursAgo} hours ago`;
+
+        return `
+      <div class="activity-item type-${ioc.type}" style="animation-delay: ${index * 0.05}s">
+        <div class="activity-header">
+          <span class="activity-type">${ioc.type.toUpperCase()}</span>
+          <span class="activity-time">${timeAgo}</span>
+        </div>
+        <div class="activity-indicator">${escapeHtml(ioc.indicator)}</div>
+      </div>
+    `;
+    }).join('');
+}
+
+// Initialize Chart.js charts
+// Initialize Chart.js charts - DISABLED (Handled by threat-intel-tabs.js)
+function initializeCharts(stats) {
+    console.log('Charts initialization skipped in dashboard.js (handled by threat-intel-tabs.js)');
+}
+
+// Update charts with new data - DISABLED (Handled by threat-intel-tabs.js)
+function updateCharts(stats) {
+    console.log('Charts update skipped in dashboard.js');
+}
+
+// Escape HTML to prevent XSS
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+// Dynamic Theme Colors (Matches threat-intel.html)
+function getThemeColors() {
+    const isLight = document.body.classList.contains('light-mode');
+    return {
+        text: '#777', // Universal gray that works in both light and dark modes
+        grid: isLight ? '#ddd' : 'rgba(255, 255, 255, 0.1)',
+        tooltipBg: isLight ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.8)',
+        tooltipText: isLight ? '#333' : 'rgba(255, 255, 255, 0.9)',
+        tooltipBorder: isLight ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)'
+    };
+}
+
+// Update charts when theme changes (Global function called by toggleTheme)
+window.updateDashboardChartsTheme = function () {
+    const colors = getThemeColors();
+
+    Object.values(charts).forEach(chart => {
+        if (!chart) return;
+
+        if (chart.options.scales.y) {
+            chart.options.scales.y.grid.color = colors.grid;
+            chart.options.scales.y.ticks.color = colors.text;
+        }
+        if (chart.options.scales.x) {
+            chart.options.scales.x.ticks.color = colors.text;
+        }
+        if (chart.options.plugins.tooltip) {
+            chart.options.plugins.tooltip.backgroundColor = colors.tooltipBg;
+            chart.options.plugins.tooltip.titleColor = colors.tooltipText;
+            chart.options.plugins.tooltip.bodyColor = colors.tooltipText;
+            chart.options.plugins.tooltip.borderColor = colors.tooltipBorder;
+        }
+        if (chart.options.plugins.legend && chart.options.plugins.legend.labels) {
+            chart.options.plugins.legend.labels.color = colors.text;
+        }
+        chart.update('none');
+    });
+};
+
+// Load Ransomware Widget Data
+window.loadRansomwareWidget = async function () {
+    try {
+        const response = await fetch('ransomware-data.json');
+        if (!response.ok) throw new Error('Failed to load ransomware data');
+
+        const data = await response.json();
+        if (!data || !data.groups) return;
+
+        // Calculate stats
+        const groups = data.groups.length;
+
+        // Count victims in last 24 hours
+        const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+        let victimsToday = 0;
+
+        data.groups.forEach(group => {
+            if (group.victims) {
+                victimsToday += group.victims.filter(victim => {
+                    const date = new Date(victim.discovered_date || victim.date);
+                    return date >= oneDayAgo;
+                }).length;
+            }
+        });
+
+        // Update DOM
+        const groupsEl = document.getElementById('rw-active-groups');
+        const victimsEl = document.getElementById('rw-victims-today');
+
+        if (groupsEl) groupsEl.textContent = groups;
+        if (victimsEl) victimsEl.textContent = victimsToday;
+
+    } catch (error) {
+        console.error('Error loading ransomware widget:', error);
+    }
+};
+
+// Call widget load when dashboard initializes
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.loadRansomwareWidget) {
+        window.loadRansomwareWidget();
+    }
+});

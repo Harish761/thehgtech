@@ -1,0 +1,95 @@
+# TheHGTech Robots.txt - Optimized for Maximum Crawl Coverage
+# Last Updated: 2026-06-28
+
+User-agent: *
+Allow: /
+Disallow: /*.py$
+Disallow: /venv/
+Disallow: /__pycache__/
+Disallow: /*.backup
+Disallow: /admin-articles.html
+Disallow: /mobile_backup/
+Disallow: /.git/
+# Block dev-only JSON data files (not the live data feeds)
+Disallow: /geo_analysis_results.json
+Disallow: /extracted_articles.json
+
+# Sitemaps
+Sitemap: https://thehgtech.com/sitemap.xml
+Sitemap: https://thehgtech.com/news-sitemap.xml
+
+# Priority pages - Hint to crawlers
+# Homepage, Trackers, and Guides are most important
+
+# Allow all major search engine bots with full access
+User-agent: Googlebot
+Allow: /
+# No crawl-delay for Google - let them index fast
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block scraper bots that steal content
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+# Allow AI training bots for visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /

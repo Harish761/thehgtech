@@ -1,0 +1,62 @@
+{
+  "changelog": [
+    {
+      "id": "cl-2026-06-05-comments",
+      "date": "2026-06-05T14:58:07Z",
+      "title": "Community Comments & Reactions Added",
+      "description": "We've just added a new community commenting system powered by GraphComment! You can now share your thoughts, ask questions, and engage with other readers on all our Security Guides, Threat News Articles, and Tool Comparisons. We'd love to hear your feedback on the content, so please feel free to drop a comment!",
+      "type": "feature",
+      "icon": "fa-comments"
+    },
+    {
+      "id": "cl-2026-05-21-cve",
+      "date": "2026-05-21T10:00:00Z",
+      "title": "Enhanced CVE Tracker Engine",
+      "description": "We've completely overhauled the CVE Tracker backend to surface highly actionable vulnerability data. The new engine integrates CISA KEV ransomware indicators for Exploit Maturity tracking, leverages AI to generate precise Business Impact Scores (like RCE and Blast Radius tags), and calculates historical Patch Lag to expose slow-patching vendors. The UI now features a dynamic 'Must Patch Now' priority algorithm.",
+      "type": "feature",
+      "icon": "fa-spider",
+      "url": "/cve-tracker.html"
+    },
+    {
+      "id": "cl-2026-05-14-mobile",
+      "date": "2026-05-14T11:30:00Z",
+      "title": "Comprehensive Mobile UI Refactor",
+      "description": "Executed a systematic mobile optimization sweep across the platform. Rigid desktop grids on the AI Threat Dashboard, GRC Assessment tool, and Security Articles hub have been refactored into fluid stacked layouts. Improved header real estate, fixed the duplicate bell icon collision, and optimized touch targets for seamless mobile navigation.",
+      "type": "enhancement",
+      "icon": "fa-mobile-screen-button"
+    },
+    {
+      "id": "cl-2026-05-14",
+      "date": "2026-05-14T10:00:00Z",
+      "title": "Command Center Launched",
+      "description": "We have successfully rolled out the new Command Center notification panel. This feature allows users to track the latest cyber intelligence articles and site updates instantly from the global navigation bar. It utilizes local browser storage to keep track of unread items and integrates a smart pulsing indicator.",
+      "type": "feature",
+      "icon": "fa-bell"
+    },
+    {
+      "id": "cl-2026-05-12",
+      "date": "2026-05-12T13:00:00Z",
+      "title": "Core Web Vitals Optimization",
+      "description": "Performed a major overhaul of the site's front-end architecture to drastically improve loading performance. We resolved high Cumulative Layout Shift (CLS) issues caused by font loading, deferred non-critical JavaScript, and implemented aggressive Cloudflare edge caching strategies to ensure sub-second response times.",
+      "type": "enhancement",
+      "icon": "fa-rocket"
+    },
+    {
+      "id": "cl-2026-04-22",
+      "date": "2026-04-22T10:00:00Z",
+      "title": "ISO 27001 GRC Engine Update",
+      "description": "The ISO 27001 GRC assessment engine has been upgraded to a professional, audit-ready compliance tool. We integrated the mandatory Management System Clauses (Domain 0) as a foundational requirement and shifted from binary scoring to a CMMI maturity scale for granular compliance insights.",
+      "type": "feature",
+      "icon": "fa-shield-halved",
+      "url": "/tools/grc-assessment/"
+    },
+    {
+      "id": "cl-2026-04-01",
+      "date": "2026-04-01T14:00:00Z",
+      "title": "Threat Feed AI Pipeline",
+      "description": "Refactored the automated news summarization pipeline. We replaced the legacy generation scripts with a robust GPT-4o implementation, ensuring highly accurate, context-aware security news summaries that sync directly into our Hacker Chatter and intelligence feeds.",
+      "type": "enhancement",
+      "icon": "fa-microchip"
+    }
+  ]
+}

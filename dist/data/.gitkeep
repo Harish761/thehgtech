@@ -1,0 +1,2 @@
+# Data directory for large JSON files
+# These files are updated frequently and should not bloat Git history

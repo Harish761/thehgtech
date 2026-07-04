@@ -1,0 +1,38 @@
+/* Rotating Text Animations */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.rotating-text-fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
+
+.rotating-text-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+.info-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 217, 255, 0.2);
+    border-color: rgba(0, 217, 255, 0.4) !important;
+}

@@ -1,0 +1,110 @@
+// Article Loader - Fetches articles from articles.json
+let articlesData = {};
+
+// Load articles from JSON file
+async function loadArticlesFromJSON() {
+    try {
+        console.log('[article-loader] Starting to load articles.json...');
+        // Use timestamp as cache buster to always get fresh data (fixes Safari mobile caching)
+        const cacheBuster = Date.now();
+        const response = await fetch(`ioc-data/articles.json?v=${cacheBuster}`, {
+            cache: 'no-store' // Force network fetch
+        });
+        const data = await response.json();
+        console.log('[article-loader] Loaded articles.json:', data.articles.length, 'articles');
+
+        // Convert array format to object format for compatibility
+        articlesData = {};
+        data.articles.forEach(article => {
+            articlesData[article.id] = article;
+        });
+
+        // Prepend articles from JSON to existing hardcoded articles
+        if (websiteContent && websiteContent.articleCards) {
+            console.log('[article-loader] contentData.articleCards found:', websiteContent.articleCards.length, 'articles');
+            const jsonArticles = data.articles.map(article => ({
+                id: article.id,
+                date: article.date,
+                category: article.category,
+                title: article.title.length > 50 ? article.title.substring(0, 47) + '...' : article.title,
+                excerpt: article.excerpt
+            }));
+
+            // Prepend JSON articles (they'll appear first)
+            websiteContent.articleCards = [...jsonArticles, ...websiteContent.articleCards];
+            console.log('[article-loader] Merged articles. Total now:', websiteContent.articleCards.length);
+
+            // Trigger re-render of article cards
+            renderArticleCards();
+            console.log('[article-loader] Articles rendered to DOM');
+        } else {
+            console.error('[article-loader] ERROR: websiteContent or articleCards not found!');
+        }
+
+        console.log('[article-loader] Articles loaded successfully from JSON');
+        return articlesData;
+    } catch (error) {
+        console.error('[article-loader] Error loading articles:', error);
+        // Fallback to hardcoded articles if JSON fails
+        return null;
+    }
+}
+
+// Function to re-render article cards
+function renderArticleCards() {
+    const container = document.querySelector('#articlesGrid');
+    if (!container || !websiteContent || !websiteContent.articleCards) return;
+
+    container.innerHTML = websiteContent.articleCards.map(article => {
+        // Get the full article data to access the image
+        const fullArticle = articlesData[article.id];
+        const imageHTML = fullArticle && fullArticle.image
+            ? `<div class="article-image" style="background-image: url('${fullArticle.image}');"></div>`
+            : '';
+
+        const badgeHTML = fullArticle && fullArticle.badge
+            ? `<div class="article-badge" style="position: absolute; top: 1rem; left: 1rem; z-index: 10; background: var(--accent-primary); color: #fff; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; box-shadow: 0 4px 15px rgba(255, 61, 61, 0.4);">${fullArticle.badge}</div>`
+            : '';
+
+        return `
+            <div class="article-card" onclick="openArticleModal('${article.id}')" style="position: relative;">
+                ${badgeHTML}
+                ${imageHTML}
+                <div class="article-content">
+                    <div class="article-category">${article.category}</div>
+                    <h3>${article.title}</h3>
+                    <p>${article.excerpt}</p>
+                    <div class="article-meta">
+                        <span>${article.date}</span>
+                        <span class="read-more">Read Full Article →</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+// Initialize articles on page load
+if (typeof window !== 'undefined') {
+    console.log('[article-loader] Script loaded');
+    // Wait for contentData to be defined (it's set by content.js)
+    function waitForContentData() {
+        if (websiteContent && websiteContent.articleCards) {
+            console.log('[article-loader] contentData found! Loading articles...');
+            loadArticlesFromJSON();
+        } else {
+            console.log('[article-loader] Waiting for contentData... (checking again in 100ms)');
+            // Check again in 100ms
+            setTimeout(waitForContentData, 100);
+        }
+    }
+
+    // Start checking after DOM is ready
+    if (document.readyState === 'loading') {
+        console.log('[article-loader] DOM still loading, waiting...');
+        document.addEventListener('DOMContentLoaded', waitForContentData);
+    } else {
+        console.log('[article-loader] DOM ready, starting wait for contentData');
+        waitForContentData();
+    }
+}
