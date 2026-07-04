@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-04T02:56:27.335049",
+  "last_updated": "2026-07-04T13:26:35.821072",
   "period": "Last 7 days",
   "total_groups": 34,
-  "total_victims": 298,
+  "total_victims": 299,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -988,72 +988,64 @@
       ]
     },
     {
-      "name": "Cmdorganization",
-      "count": 7,
+      "name": "Play",
+      "count": 6,
       "victims": [
         {
-          "name": "Medlink Georgia",
-          "date": "2026-06-30T08:20:17.704907+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T08:20:17.704907+00:00"
+          "name": "Locati Architects",
+          "date": "2026-07-04T07:56:28.947685+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=8fJN1qE5MO0ev0",
+          "discovered_date": "2026-07-04T07:56:28.947685+00:00"
         },
         {
-          "name": "Port Angeles Composite",
-          "date": "2026-06-30T06:20:16.776054+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T06:20:16.776054+00:00"
+          "name": "Silvestri & Associates Insurance",
+          "date": "2026-07-04T07:55:54.839310+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=omRP0Z54cH0P8e",
+          "discovered_date": "2026-07-04T07:55:54.839310+00:00"
         },
         {
-          "name": "Medlink Georgia",
-          "date": "2026-06-30T08:20:17+00:00",
-          "url": "https://www.ransomware.live/id/TWVkbGluayBHZW9yZ2lhQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-30T08:20:17+00:00"
+          "name": "Western Construction",
+          "date": "2026-06-30T18:58:31.728236+00:00",
+          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=yXJej0EB4mGwto",
+          "discovered_date": "2026-06-30T18:58:31.728236+00:00"
         },
         {
-          "name": "Port Angeles Composite",
-          "date": "2026-06-30T06:20:16+00:00",
-          "url": "https://www.ransomware.live/id/UG9ydCBBbmdlbGVzIENvbXBvc2l0ZUBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-30T06:20:16+00:00"
+          "name": "Locati Architects",
+          "date": "2026-07-04T07:56:28+00:00",
+          "url": "https://www.ransomware.live/id/TG9jYXRpIEFyY2hpdGVjdHNAcGxheQ==",
+          "discovered_date": "2026-07-04T07:56:28+00:00"
         },
         {
-          "name": "Lørenskog kommune",
-          "date": "2026-06-29T15:50:20+00:00",
-          "url": "https://www.ransomware.live/id/TMO4cmVuc2tvZyBrb21tdW5lQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-29T15:50:20+00:00"
+          "name": "Silvestri & Associates Insurance",
+          "date": "2026-07-04T07:55:54+00:00",
+          "url": "https://www.ransomware.live/id/U2lsdmVzdHJpICYgQXNzb2NpYXRlcyBJbnN1cmFuY2VAcGxheQ==",
+          "discovered_date": "2026-07-04T07:55:54+00:00"
         },
         {
-          "name": "METCO Services, Metco Southeast",
-          "date": "2026-06-29T12:20:22+00:00",
-          "url": "https://www.ransomware.live/id/TUVUQ08gU2VydmljZXMsIE1ldGNvIFNvdXRoZWFzdEBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-29T12:20:22+00:00"
-        },
-        {
-          "name": "Fidelity Security Group",
-          "date": "2026-06-28T13:55:00+00:00",
-          "url": "https://www.ransomware.live/id/RmlkZWxpdHkgU2VjdXJpdHkgR3JvdXBAY21kb3JnYW5pemF0aW9u",
-          "discovered_date": "2026-06-28T13:55:00+00:00"
+          "name": "Western Construction",
+          "date": "2026-06-30T18:58:31+00:00",
+          "url": "https://www.ransomware.live/id/V2VzdGVybiBDb25zdHJ1Y3Rpb25AcGxheQ==",
+          "discovered_date": "2026-06-30T18:58:31+00:00"
         }
       ],
       "industries": [
-        "Healthcare",
-        "Manufacturing"
+        "Construction",
+        "Financial Services"
       ],
       "countries": [
-        "CO",
-        "GE",
-        "NO",
+        "AU",
         "US"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        1,
+        0,
+        0,
         2,
-        4,
         0,
         0,
         0,
-        0
+        4
       ]
     },
     {
@@ -1112,6 +1104,68 @@
         0,
         0,
         6,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Cmdorganization",
+      "count": 6,
+      "victims": [
+        {
+          "name": "Medlink Georgia",
+          "date": "2026-06-30T08:20:17.704907+00:00",
+          "url": "",
+          "discovered_date": "2026-06-30T08:20:17.704907+00:00"
+        },
+        {
+          "name": "Medlink Georgia",
+          "date": "2026-06-30T08:20:17+00:00",
+          "url": "https://www.ransomware.live/id/TWVkbGluayBHZW9yZ2lhQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-30T08:20:17+00:00"
+        },
+        {
+          "name": "Port Angeles Composite",
+          "date": "2026-06-30T06:20:16+00:00",
+          "url": "https://www.ransomware.live/id/UG9ydCBBbmdlbGVzIENvbXBvc2l0ZUBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-30T06:20:16+00:00"
+        },
+        {
+          "name": "Lørenskog kommune",
+          "date": "2026-06-29T15:50:20+00:00",
+          "url": "https://www.ransomware.live/id/TMO4cmVuc2tvZyBrb21tdW5lQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-29T15:50:20+00:00"
+        },
+        {
+          "name": "METCO Services, Metco Southeast",
+          "date": "2026-06-29T12:20:22+00:00",
+          "url": "https://www.ransomware.live/id/TUVUQ08gU2VydmljZXMsIE1ldGNvIFNvdXRoZWFzdEBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-29T12:20:22+00:00"
+        },
+        {
+          "name": "Fidelity Security Group",
+          "date": "2026-06-28T13:55:00+00:00",
+          "url": "https://www.ransomware.live/id/RmlkZWxpdHkgU2VjdXJpdHkgR3JvdXBAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-06-28T13:55:00+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "CO",
+        "GE",
+        "NO",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        1,
+        2,
+        3,
         0,
         0,
         0,
@@ -1322,100 +1376,44 @@
       ]
     },
     {
-      "name": "Play",
-      "count": 4,
+      "name": "Unsafe",
+      "count": 3,
       "victims": [
         {
-          "name": "Western Construction",
-          "date": "2026-06-30T18:58:31.728236+00:00",
-          "url": "http://j75o7xvvsm4lpsjhkjvb4wl2q6ajegvabe6oswthuaubbykk4xkzgpid.onion/topic.php?id=yXJej0EB4mGwto",
-          "discovered_date": "2026-06-30T18:58:31.728236+00:00"
+          "name": "Deutsche Bank",
+          "date": "2026-07-04T11:30:53.057392+00:00",
+          "url": "http://unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd.onion/reel/6a48eb478b37a93648b56d3e?page=1",
+          "discovered_date": "2026-07-04T11:30:53.057392+00:00"
         },
         {
-          "name": "Western Construction",
-          "date": "2026-06-30T18:58:31+00:00",
-          "url": "https://www.ransomware.live/id/V2VzdGVybiBDb25zdHJ1Y3Rpb25AcGxheQ==",
-          "discovered_date": "2026-06-30T18:58:31+00:00"
+          "name": "Deutsche Bank",
+          "date": "2026-07-04T11:30:53+00:00",
+          "url": "https://www.ransomware.live/id/RGV1dHNjaGUgQmFua0B1bnNhZmU=",
+          "discovered_date": "2026-07-04T11:30:53+00:00"
         },
         {
-          "name": "J&J Gaming",
-          "date": "2026-06-27T18:27:41+00:00",
-          "url": "https://www.ransomware.live/id/SiZKIEdhbWluZ0BwbGF5",
-          "discovered_date": "2026-06-27T18:27:41+00:00"
-        },
-        {
-          "name": "Kuhnline",
-          "date": "2026-06-27T18:27:04+00:00",
-          "url": "https://www.ransomware.live/id/S3VobmxpbmVAcGxheQ==",
-          "discovered_date": "2026-06-27T18:27:04+00:00"
+          "name": "straightperformance.de",
+          "date": "2026-06-29T16:11:27+00:00",
+          "url": "https://www.ransomware.live/id/c3RyYWlnaHRwZXJmb3JtYW5jZS5kZUB1bnNhZmU=",
+          "discovered_date": "2026-06-29T16:11:27+00:00"
         }
       ],
       "industries": [
-        "Construction"
+        "Financial Services"
       ],
       "countries": [
-        "DE",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Blacknevas",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Arkin Group",
-          "date": "2026-06-30T05:51:46.011970+00:00",
-          "url": "http://ctyfftrjgtwdjzlgqh4avbd35sqrs6tde4oyam2ufbjch6oqpqtkdtid.onion/281c9c40-9afe-413a-af7e-9cf7c3fdf3c0",
-          "discovered_date": "2026-06-30T05:51:46.011970+00:00"
-        },
-        {
-          "name": "Abans Group",
-          "date": "2026-07-01T13:51:59+00:00",
-          "url": "https://www.ransomware.live/id/QWJhbnMgR3JvdXBAYmxhY2tuZXZhcw==",
-          "discovered_date": "2026-07-01T13:51:59+00:00"
-        },
-        {
-          "name": "Arkin Group",
-          "date": "2026-06-30T05:51:46+00:00",
-          "url": "https://www.ransomware.live/id/QXJraW4gR3JvdXBAYmxhY2tuZXZhcw==",
-          "discovered_date": "2026-06-30T05:51:46+00:00"
-        },
-        {
-          "name": "Abans Finserv",
-          "date": "2026-06-29T13:22:20+00:00",
-          "url": "https://www.ransomware.live/id/QWJhbnMgRmluc2VydkBibGFja25ldmFz",
-          "discovered_date": "2026-06-29T13:22:20+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services"
-      ],
-      "countries": [
-        "IN",
-        "LK",
-        "N/A"
+        "DE"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
         1,
-        2,
-        1,
         0,
         0,
-        0
+        0,
+        0,
+        2
       ]
     },
     {
@@ -1456,6 +1454,47 @@
         0,
         0,
         2,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Blacknevas",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Abans Group",
+          "date": "2026-07-01T13:51:59+00:00",
+          "url": "https://www.ransomware.live/id/QWJhbnMgR3JvdXBAYmxhY2tuZXZhcw==",
+          "discovered_date": "2026-07-01T13:51:59+00:00"
+        },
+        {
+          "name": "Arkin Group",
+          "date": "2026-06-30T05:51:46+00:00",
+          "url": "https://www.ransomware.live/id/QXJraW4gR3JvdXBAYmxhY2tuZXZhcw==",
+          "discovered_date": "2026-06-30T05:51:46+00:00"
+        },
+        {
+          "name": "Abans Finserv",
+          "date": "2026-06-29T13:22:20+00:00",
+          "url": "https://www.ransomware.live/id/QWJhbnMgRmluc2VydkBibGFja25ldmFz",
+          "discovered_date": "2026-06-29T13:22:20+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "IN",
+        "LK",
+        "N/A"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        1,
+        1,
+        0,
         0,
         0
       ]
@@ -1550,41 +1589,6 @@
       ],
       "industries": [
         "Agriculture and Food Production"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Embargo",
-      "count": 2,
-      "victims": [
-        {
-          "name": "www.maytrucking.com",
-          "date": "2026-06-30T04:54:43.475550+00:00",
-          "url": "http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/#/post/94f8b5f3-4b6f-44c8-a4d3-41fab0dd9d19",
-          "discovered_date": "2026-06-30T04:54:43.475550+00:00"
-        },
-        {
-          "name": "www.maytrucking.com",
-          "date": "2026-06-30T04:54:43+00:00",
-          "url": "https://www.ransomware.live/id/d3d3Lm1heXRydWNraW5nLmNvbUBlbWJhcmdv",
-          "discovered_date": "2026-06-30T04:54:43+00:00"
-        }
-      ],
-      "industries": [
-        "Transportation/Logistics"
       ],
       "countries": [
         "US"
@@ -1783,26 +1787,26 @@
       ]
     },
     {
-      "name": "Unsafe",
+      "name": "Embargo",
       "count": 1,
       "victims": [
         {
-          "name": "straightperformance.de",
-          "date": "2026-06-29T16:11:27+00:00",
-          "url": "https://www.ransomware.live/id/c3RyYWlnaHRwZXJmb3JtYW5jZS5kZUB1bnNhZmU=",
-          "discovered_date": "2026-06-29T16:11:27+00:00"
+          "name": "www.maytrucking.com",
+          "date": "2026-06-30T04:54:43+00:00",
+          "url": "https://www.ransomware.live/id/d3d3Lm1heXRydWNraW5nLmNvbUBlbWJhcmdv",
+          "discovered_date": "2026-06-30T04:54:43+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "DE"
+        "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        1,
         0,
+        1,
         0,
         0,
         0,

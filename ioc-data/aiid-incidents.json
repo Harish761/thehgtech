@@ -2513,14 +2513,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1416",
-      "incident_id": 1416,
-      "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Monthslong Jailing of Tennessee Woma",
-      "date": "2026-04-05",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1437",
       "incident_id": 1437,
       "title": "Grok Allegedly Generated Publicly Visible Sexist Abuse Targeting Swiss Finance Minister Karin Keller",
@@ -2530,9 +2522,9 @@
     }
   ],
   "stats": {
-    "total": 316,
+    "total": 315,
     "last7Days": 4,
     "last30Days": 127
   },
-  "lastUpdated": "2026-07-04T15:51:39.144625+05:30"
+  "lastUpdated": "2026-07-04T19:24:01.316817+05:30"
 }
