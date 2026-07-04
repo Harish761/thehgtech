@@ -17,6 +17,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1567",
+      "incident_id": 1567,
+      "title": "Serve Robotics Delivery Robot Reportedly Crashed into Chicago Bus Shelter After Failing to Detect Gl",
+      "date": "2026-07-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1568",
+      "incident_id": 1568,
+      "title": "Coco Delivery Robot Reportedly Crashed into Chicago Bus Shelter",
+      "date": "2026-07-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1569",
+      "incident_id": 1569,
+      "title": "GPT-4o Allegedly Reinforced California Man Michael Lines's Delusions Before Suicide Attempt",
+      "date": "2026-07-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1564",
       "incident_id": 1564,
       "title": "Purported Deepfakes of Public Figures and Celebrities Reportedly Used to Market Honey-Based Suppleme",
@@ -2530,9 +2554,9 @@
     }
   ],
   "stats": {
-    "total": 316,
-    "last7Days": 6,
-    "last30Days": 129
+    "total": 319,
+    "last7Days": 9,
+    "last30Days": 128
   },
-  "lastUpdated": "2026-07-04T22:46:18.284152+05:30"
+  "lastUpdated": "2026-07-05T01:15:42.656804+05:30"
 }
