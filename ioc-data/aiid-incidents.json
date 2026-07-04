@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1565",
+      "incident_id": 1565,
+      "title": "Spokane-Area Fred's Appliance and Victory Media Allegedly Used AI-Assisted Voice Editing Without Spo",
+      "date": "2026-07-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1566",
+      "incident_id": 1566,
+      "title": "Indore Resident Reportedly Lost \u20b91.83 Lakh (~$2,000) After AI-Generated Voice Impersonated Relative",
+      "date": "2026-07-04",
+      "category": "fraud",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1564",
       "incident_id": 1564,
       "title": "Purported Deepfakes of Public Figures and Celebrities Reportedly Used to Market Honey-Based Suppleme",
@@ -2511,20 +2527,12 @@
       "date": "2026-04-06",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1437",
-      "incident_id": 1437,
-      "title": "Grok Allegedly Generated Publicly Visible Sexist Abuse Targeting Swiss Finance Minister Karin Keller",
-      "date": "2026-04-05",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 315,
-    "last7Days": 4,
-    "last30Days": 127
+    "total": 316,
+    "last7Days": 6,
+    "last30Days": 129
   },
-  "lastUpdated": "2026-07-04T19:24:01.316817+05:30"
+  "lastUpdated": "2026-07-04T22:46:18.284152+05:30"
 }
