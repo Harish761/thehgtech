@@ -54,7 +54,7 @@
         "name": "How can I secure my Battery Management System?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ensure your BMS requires mandatory, unique credentials for pairing, uses LE Secure Connections with out-of-band or numeric comparison, and enforces characteristic-level authorization for safety-critical functions."
+          "text": "For Vehicle Owners: Your options are limited to changing default Bluetooth PINs (if the app allows), disabling Bluetooth when not in use, and using only official companion apps. For Manufacturers: Ensure your BMS requires mandatory, unique credentials for pairing, uses LE Secure Connections with out-of-band or numeric comparison, and enforces characteristic-level authorization for safety-critical functions."
         }
       }]
     }
@@ -385,13 +385,13 @@
             <h3><i class="fas fa-clipboard-check"></i> Executive Summary</h3>
             <ul>
                 <li><strong>BLUF (Bottom Line Up Front):</strong> The recent BAT-BMS controversy is widely mischaracterized as a "Bluetooth hack." It is fundamentally an access-control and provisioning failure resulting from insecure deployment configurations by manufacturers, not a flaw in the Bluetooth protocol itself.</li>
-                <li><strong>Confidence Level:</strong> Confirmed based on architectural analysis of affected Battery Management Systems.</li>
+                <li><strong>Confidence Level:</strong> High Confidence (based on public reporting and standard BLE/BMS architecture patterns).</li>
                 <li><strong>TLP:</strong> CLEAR</li>
                 <li><strong>Key Takeaways:</strong>
                     <ul>
                         <li>Bluetooth allows multiple security models; manufacturers opted for permissive defaults.</li>
                         <li>The lack of characteristic-level authorization in GATT services exposed safety-critical functions.</li>
-                        <li>Premium OEM architectures (e.g., proper CAN segmentation, secure ECUs) natively mitigate these risks.</li>
+                        <li>Premium OEM architectures (e.g., proper CAN segmentation, secure ECUs) employ deeper defense-in-depth measures against these specific trivial attacks.</li>
                         <li>This is a classic Secure-by-Design failure spanning the supply chain.</li>
                     </ul>
                 </li>
@@ -428,13 +428,13 @@
                                           +---------------+
         </code></pre>
         
-        <p>In the affected systems, the BLE module interfaces directly with the BMS Microcontroller Unit (MCU). When the mobile app sends a command via GATT, the BLE module forwards it to the MCU, which executes the action on the power pack.</p>
+        <p>This represents one common architecture where the BLE module interfaces directly with the BMS Microcontroller Unit (MCU). Some designs isolate the BLE radio further from MCU safety logic, while others integrate it directly. It is also important to note that many BMS designs use an independent analog front-end IC with a hardware-only secondary protection path that trips independent of firmware/MCU state.</p>
 
         <h2>4. Where the Security Design Failed</h2>
         <p>The vulnerability chain maps directly to poor engineering decisions regarding Bluetooth Low Energy (BLE) security models.</p>
 
         <h3>Pairing vs. Bonding and "Just Works"</h3>
-        <p>BLE offers several pairing methods. The affected BMS units predominantly utilized <strong>"Just Works" pairing</strong>. This method is designed for devices without a display or keyboard (like headphones) and provides <em>no</em> protection against Man-in-the-Middle (MitM) attacks or unauthorized connections. In many cases, the devices were configured to accept connections from <em>any</em> peer without pairing at all.</p>
+        <p>BLE offers several pairing methods. The affected BMS units predominantly utilized <strong>"Just Works" pairing</strong>. This method is designed for devices without a display or keyboard (like headphones) and provides <em>no</em> protection against Man-in-the-Middle (MitM) attacks or unauthorized connections. Reporting indicates that in many cases, the devices were configured to accept connections from <em>any</em> peer without pairing at all.</p>
 
         <h3>Missing Characteristic-Level Authorization</h3>
         <p>Within the GATT profile, data is organized into Services and Characteristics. A secure implementation should restrict read/write access to safety-critical characteristics (e.g., MOSFET state, parameter configuration) to bonded, authenticated peers.</p>
@@ -442,6 +442,7 @@
 
         <div class="technical-box">
             <h3><i class="fas fa-code"></i> Insecure GATT Implementation Example</h3>
+            <p><em>Note: This is an illustrative example using NimBLE API syntax, not sourced from an actual firmware extraction of the affected BAT-BMS units.</em></p>
             <pre><code class="language-c">
 // INSECURE: Characteristic allows generic Write without authentication
 static const struct ble_gatt_chr_def bms_chars[] = {
@@ -477,9 +478,9 @@ Vehicle Owner
         <h2>6. Threat Model and Real-World Impact</h2>
         <p>What are the actual capabilities of an attacker exploiting this?</p>
         <ul>
-            <li><strong>Requirements:</strong> An attacker needs physical proximity (standard Bluetooth range: 10-100 meters, though extendable with directional antennas) and a standard smartphone or BLE-enabled laptop.</li>
+            <li><strong>Requirements:</strong> An attacker needs physical proximity (the typical effective range for the BLE modules used in these devices is roughly 10-15 meters at default transmit power; range can be extended with directional/high-gain antennas, but this is not the standard case reported in the field) and a standard smartphone or BLE-enabled laptop.</li>
             <li><strong>Realistic Abuse:</strong> The most common vector is localized harassment or pranking—triggering MOSFET disconnects to strand a rider or disable a storage unit.</li>
-            <li><strong>Targeted Attacks:</strong> More sophisticated attacks could involve altering charging parameters to induce battery degradation or, theoretically, thermal events (though physical hardware safeguards <em>should</em> provide a final backstop against extreme software parameter changes).</li>
+            <li><strong>Targeted Attacks:</strong> More sophisticated attacks could involve altering charging parameters to induce battery degradation or, theoretically, thermal events. Whether an independent, hardware-only protection layer exists to backstop extreme software parameter changes depends on the specific protection IC used; low-cost packs that cut corners on BLE security may or may not also lack a hardware-only backstop — this cannot be assumed.</li>
             <li><strong>Limitations:</strong> This is not a scalable, remote, internet-wide attack. It requires proximity to the victim device.</li>
         </ul>
 
@@ -498,7 +499,7 @@ Vehicle Owner
                 <tr>
                     <td><strong>Access Control</strong></td>
                     <td>Permissive / "Just Works" BLE</td>
-                    <td>Authenticated diagnostics (UDS), Mutual TLS</td>
+                    <td>Authenticated diagnostics (UDS security access), SecOC message authentication on CAN, and TLS/DTLS in Ethernet-based zonal architectures</td>
                 </tr>
                 <tr>
                     <td><strong>Network Segmentation</strong></td>
@@ -513,7 +514,7 @@ Vehicle Owner
             </tbody>
         </table>
 
-        <p>OEMs employ Defense-in-Depth. Even if a wireless interface is compromised, an attacker must traverse a central gateway, authenticate to a specialized diagnostic session, and bypass logical segmentations to interact with the powertrain or high-voltage BMS. While not immune to zero-days, they do not suffer from the trivial provisioning failures seen in the BAT-BMS modules.</p>
+        <p>OEMs employ Defense-in-Depth. Even if a wireless interface is compromised, an attacker must traverse a central gateway, authenticate to a specialized diagnostic session, and bypass logical segmentations to interact with the powertrain or high-voltage BMS. While premium OEM platforms have their own attack surfaces (such as relay attacks on BLE/UWB phone-as-key or gateway bypass findings), they are differently mitigated and generally do not suffer from the trivial provisioning failures seen in these aftermarket BAT-BMS modules.</p>
 
         <h2>8. Mapping to Secure-by-Design</h2>
         <p>This incident perfectly illustrates the necessity of CISA and NIST's Secure-by-Design principles:</p>
@@ -528,7 +529,8 @@ Vehicle Owner
         <ul>
             <li><strong>CWE-306 (Missing Authentication for Critical Function):</strong> The BMS allows any connected peer to execute commands without verifying identity.</li>
             <li><strong>CWE-862 (Missing Authorization):</strong> The application logic does not check if the authenticated user has the necessary privileges to alter safety parameters.</li>
-            <li><strong>CWE-1188 (Insecure Default Initialization):</strong> The system boots into a permissive, highly discoverable state to facilitate easy setup.</li>
+            <li><strong>CWE-1392 (Use of Default Credentials):</strong> Devices often use shared or absent static PINs for pairing.</li>
+            <li><strong>CWE-1188 (Insecure Default Initialization of Resource):</strong> The system boots into a permissively discoverable, unauthenticated state to facilitate easy setup.</li>
         </ul>
 
         <h2>10. Engineering Lessons for IoT Architects</h2>
@@ -552,7 +554,7 @@ Vehicle Owner
             <p>No. Most premium automotive platforms employ defense-in-depth architectures, including secure ECUs, CAN segmentation, and authenticated diagnostics, making them significantly more resilient than generic aftermarket BMS solutions.</p>
             
             <h3>How can I secure my Battery Management System?</h3>
-            <p>Ensure your BMS requires mandatory, unique credentials for pairing, uses LE Secure Connections with out-of-band or numeric comparison, and enforces characteristic-level authorization for safety-critical functions.</p>
+            <p><strong>For Vehicle Owners:</strong> Your options are limited to changing default Bluetooth PINs (if the app allows), disabling Bluetooth when not in use, and using only official companion apps. <strong>For Manufacturers:</strong> Ensure your BMS requires mandatory, unique credentials for pairing, uses LE Secure Connections with out-of-band or numeric comparison, and enforces characteristic-level authorization for safety-critical functions.</p>
         </div>
 
         <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
