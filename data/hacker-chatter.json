@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-07-04T15:41:56.427335",
-  "total_incidents": 29158,
+  "last_updated": "2026-07-05T06:23:38.433032",
+  "total_incidents": 29162,
   "incidents": [
+    {
+      "id": "wallstreet_gold_standard_automotive",
+      "victim_name": "Gold Standard Automotive",
+      "threat_actor": "Wallstreet",
+      "date_discovered": "2026-07-04T20:50:52.769714+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Gold Standard Automotive Network administers vehicle service contracts sold through dealerships, offering coverage for repairs after your factory warranty ends, with claim approvals handled through the company.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "wallstreet_baraga_county_memorial_hospital",
+      "victim_name": "Baraga County Memorial Hospital",
+      "threat_actor": "Wallstreet",
+      "date_discovered": "2026-07-04T20:50:32.613367+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Baraga County Memorial Hospital is a critical access hospital serving Baraga County with emergency, surgery, imaging, rehab, and outpatient care.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "wallstreet_edgewood_police_department",
+      "victim_name": "Edgewood Police Department",
+      "threat_actor": "Wallstreet",
+      "date_discovered": "2026-07-04T18:20:51.529157+00:00",
+      "industry": "Public Sector",
+      "website": "",
+      "claim": "The Edgewood Police Department is part of the Pierce County Sheriff’s Department, providing public safety and law enforcement services for the city.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "wallstreet_asisken",
+      "victim_name": "Asisken",
+      "threat_actor": "Wallstreet",
+      "date_discovered": "2026-07-04T18:20:32.440887+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Asisken (asisken.com) is a medical assistance/health insurance company offering prepaid medical coverage and member support services, with a hospital network in Ecuador (and Colombia).",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "unsafe_deutsche_bank",
       "victim_name": "Deutsche Bank",
