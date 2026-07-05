@@ -2543,20 +2543,12 @@
       "date": "2026-04-06",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1446",
-      "incident_id": 1446,
-      "title": "KBS AI Translation Subtitles Reportedly Broadcast Profanity During Artemis II Launch Livestream",
-      "date": "2026-04-06",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 319,
+    "total": 318,
     "last7Days": 9,
     "last30Days": 128
   },
-  "lastUpdated": "2026-07-05T02:41:05.926301+05:30"
+  "lastUpdated": "2026-07-05T09:45:52.801978+05:30"
 }

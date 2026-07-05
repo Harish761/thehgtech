@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-04T13:26:35.821072",
+  "last_updated": "2026-07-05T03:26:43.889481",
   "period": "Last 7 days",
   "total_groups": 34,
-  "total_victims": 299,
+  "total_victims": 295,
   "groups": [
     {
       "name": "Thegentlemen",
@@ -86,10 +86,10 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        1,
         0,
         0,
         61,
+        0,
         0,
         0,
         0
@@ -177,12 +177,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
         9,
         4,
         12,
         2,
         10,
+        0,
         0
       ]
     },
@@ -268,12 +268,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        1,
         0,
         0,
         18,
         0,
         4,
+        0,
         0
       ]
     },
@@ -359,12 +359,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         1,
         2,
         4,
         14,
         2,
+        0,
         0
       ]
     },
@@ -444,9 +444,9 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        11,
         0,
         11,
+        0,
         0,
         0,
         0,
@@ -537,8 +537,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         20,
+        0,
         0,
         0,
         0
@@ -614,9 +614,9 @@
         0,
         0,
         0,
-        0,
         6,
         2,
+        0,
         0
       ]
     },
@@ -667,9 +667,9 @@
           "discovered_date": "2026-06-29T14:22:58+00:00"
         },
         {
-          "name": "Boston Orthotics & Prosthetics",
+          "name": "BOSTON ORTHOTICS, INC.",
           "date": "2026-06-29T14:21:48+00:00",
-          "url": "https://www.ransomware.live/id/Qm9zdG9uIE9ydGhvdGljcyAmIFByb3N0aGV0aWNzQGFudWJpcw==",
+          "url": "https://www.ransomware.live/id/Qk9TVE9OIE9SVEhPVElDUywgSU5DLkBhbnViaXM=",
           "discovered_date": "2026-06-29T14:21:48+00:00"
         }
       ],
@@ -686,12 +686,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         4,
         2,
+        0,
         0
       ]
     },
@@ -763,9 +763,9 @@
       "daily_counts": [
         0,
         0,
+        4,
+        4,
         0,
-        4,
-        4,
         0,
         0
       ]
@@ -836,9 +836,9 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         2,
         6,
+        0,
         0,
         0,
         0
@@ -910,78 +910,10 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        6,
         0,
         0,
         2,
         0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Safepay",
-      "count": 7,
-      "victims": [
-        {
-          "name": "awo-suedost.de",
-          "date": "2026-07-01T20:36:12.146865+00:00",
-          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/awo-suedostde/",
-          "discovered_date": "2026-07-01T20:36:12.146865+00:00"
-        },
-        {
-          "name": "dia179.com",
-          "date": "2026-07-01T20:35:34.203156+00:00",
-          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/dia179com/",
-          "discovered_date": "2026-07-01T20:35:34.203156+00:00"
-        },
-        {
-          "name": "eaglecrestlife.org",
-          "date": "2026-07-01T20:34:59.024194+00:00",
-          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/eaglecrestlifeorg/",
-          "discovered_date": "2026-07-01T20:34:59.024194+00:00"
-        },
-        {
-          "name": "awo-suedost.de",
-          "date": "2026-07-01T20:36:12+00:00",
-          "url": "https://www.ransomware.live/id/YXdvLXN1ZWRvc3QuZGVAc2FmZXBheQ==",
-          "discovered_date": "2026-07-01T20:36:12+00:00"
-        },
-        {
-          "name": "dia179.com",
-          "date": "2026-07-01T20:35:34+00:00",
-          "url": "https://www.ransomware.live/id/ZGlhMTc5LmNvbUBzYWZlcGF5",
-          "discovered_date": "2026-07-01T20:35:34+00:00"
-        },
-        {
-          "name": "eaglecrestlife.org",
-          "date": "2026-07-01T20:34:59+00:00",
-          "url": "https://www.ransomware.live/id/ZWFnbGVjcmVzdGxpZmUub3JnQHNhZmVwYXk=",
-          "discovered_date": "2026-07-01T20:34:59+00:00"
-        },
-        {
-          "name": "hellmold-plank.de",
-          "date": "2026-06-27T18:28:27+00:00",
-          "url": "https://www.ransomware.live/id/aGVsbG1vbGQtcGxhbmsuZGVAc2FmZXBheQ==",
-          "discovered_date": "2026-06-27T18:28:27+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Not Found",
-        "Public Sector"
-      ],
-      "countries": [
-        "DE",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        6,
         0,
         0,
         0
@@ -1040,63 +972,63 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         2,
         0,
         0,
         0,
-        4
+        4,
+        0
       ]
     },
     {
-      "name": "Gunra",
+      "name": "Safepay",
       "count": 6,
       "victims": [
         {
-          "name": "Pirámide Seguros",
-          "date": "2026-06-30T12:25:27.644861+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T12:25:27.644861+00:00"
+          "name": "awo-suedost.de",
+          "date": "2026-07-01T20:36:12.146865+00:00",
+          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/awo-suedostde/",
+          "discovered_date": "2026-07-01T20:36:12.146865+00:00"
         },
         {
-          "name": "on-us",
-          "date": "2026-06-30T12:25:04.036590+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T12:25:04.036590+00:00"
+          "name": "dia179.com",
+          "date": "2026-07-01T20:35:34.203156+00:00",
+          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/dia179com/",
+          "discovered_date": "2026-07-01T20:35:34.203156+00:00"
         },
         {
-          "name": "Yuditec S.A.",
-          "date": "2026-06-30T12:24:42.449840+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T12:24:42.449840+00:00"
+          "name": "eaglecrestlife.org",
+          "date": "2026-07-01T20:34:59.024194+00:00",
+          "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/eaglecrestlifeorg/",
+          "discovered_date": "2026-07-01T20:34:59.024194+00:00"
         },
         {
-          "name": "Pirámide Seguros",
-          "date": "2026-06-30T12:25:27+00:00",
-          "url": "https://www.ransomware.live/id/UGlyw6FtaWRlIFNlZ3Vyb3NAZ3VucmE=",
-          "discovered_date": "2026-06-30T12:25:27+00:00"
+          "name": "awo-suedost.de",
+          "date": "2026-07-01T20:36:12+00:00",
+          "url": "https://www.ransomware.live/id/YXdvLXN1ZWRvc3QuZGVAc2FmZXBheQ==",
+          "discovered_date": "2026-07-01T20:36:12+00:00"
         },
         {
-          "name": "on-us",
-          "date": "2026-06-30T12:25:04+00:00",
-          "url": "https://www.ransomware.live/id/b24tdXNAZ3VucmE=",
-          "discovered_date": "2026-06-30T12:25:04+00:00"
+          "name": "dia179.com",
+          "date": "2026-07-01T20:35:34+00:00",
+          "url": "https://www.ransomware.live/id/ZGlhMTc5LmNvbUBzYWZlcGF5",
+          "discovered_date": "2026-07-01T20:35:34+00:00"
         },
         {
-          "name": "Yuditec S.A.",
-          "date": "2026-06-30T12:24:42+00:00",
-          "url": "https://www.ransomware.live/id/WXVkaXRlYyBTLkEuQGd1bnJh",
-          "discovered_date": "2026-06-30T12:24:42+00:00"
+          "name": "eaglecrestlife.org",
+          "date": "2026-07-01T20:34:59+00:00",
+          "url": "https://www.ransomware.live/id/ZWFnbGVjcmVzdGxpZmUub3JnQHNhZmVwYXk=",
+          "discovered_date": "2026-07-01T20:34:59+00:00"
         }
       ],
       "industries": [
-        "Financial Services",
-        "Not Found"
+        "Healthcare",
+        "Not Found",
+        "Public Sector"
       ],
       "countries": [
-        "HK",
-        "UY",
-        "VE"
+        "DE",
+        "US"
       ],
       "trend": "stable",
       "trend_percentage": 0,
@@ -1104,68 +1036,6 @@
         0,
         0,
         6,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Cmdorganization",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Medlink Georgia",
-          "date": "2026-06-30T08:20:17.704907+00:00",
-          "url": "",
-          "discovered_date": "2026-06-30T08:20:17.704907+00:00"
-        },
-        {
-          "name": "Medlink Georgia",
-          "date": "2026-06-30T08:20:17+00:00",
-          "url": "https://www.ransomware.live/id/TWVkbGluayBHZW9yZ2lhQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-30T08:20:17+00:00"
-        },
-        {
-          "name": "Port Angeles Composite",
-          "date": "2026-06-30T06:20:16+00:00",
-          "url": "https://www.ransomware.live/id/UG9ydCBBbmdlbGVzIENvbXBvc2l0ZUBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-30T06:20:16+00:00"
-        },
-        {
-          "name": "Lørenskog kommune",
-          "date": "2026-06-29T15:50:20+00:00",
-          "url": "https://www.ransomware.live/id/TMO4cmVuc2tvZyBrb21tdW5lQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-06-29T15:50:20+00:00"
-        },
-        {
-          "name": "METCO Services, Metco Southeast",
-          "date": "2026-06-29T12:20:22+00:00",
-          "url": "https://www.ransomware.live/id/TUVUQ08gU2VydmljZXMsIE1ldGNvIFNvdXRoZWFzdEBjbWRvcmdhbml6YXRpb24=",
-          "discovered_date": "2026-06-29T12:20:22+00:00"
-        },
-        {
-          "name": "Fidelity Security Group",
-          "date": "2026-06-28T13:55:00+00:00",
-          "url": "https://www.ransomware.live/id/RmlkZWxpdHkgU2VjdXJpdHkgR3JvdXBAY21kb3JnYW5pemF0aW9u",
-          "discovered_date": "2026-06-28T13:55:00+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare"
-      ],
-      "countries": [
-        "CO",
-        "GE",
-        "NO",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        1,
-        2,
-        3,
         0,
         0,
         0,
@@ -1217,11 +1087,11 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         3,
         0,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1271,12 +1141,63 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         5,
         0,
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Wallstreet",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Baraga County Memorial Hospital",
+          "date": "2026-07-04T20:50:32.613367+00:00",
+          "url": "",
+          "discovered_date": "2026-07-04T20:50:32.613367+00:00"
+        },
+        {
+          "name": "Gold Standard Automotive",
+          "date": "2026-07-04T20:50:52.769714+00:00",
+          "url": "",
+          "discovered_date": "2026-07-04T20:50:52.769714+00:00"
+        },
+        {
+          "name": "Asisken",
+          "date": "2026-07-04T18:20:32.440887+00:00",
+          "url": "",
+          "discovered_date": "2026-07-04T18:20:32.440887+00:00"
+        },
+        {
+          "name": "Edgewood Police Department",
+          "date": "2026-07-04T18:20:51.529157+00:00",
+          "url": "",
+          "discovered_date": "2026-07-04T18:20:51.529157+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Public Sector"
+      ],
+      "countries": [
+        "EC",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
         0
       ]
     },
@@ -1321,8 +1242,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
+        0,
         0,
         0,
         0
@@ -1367,9 +1288,56 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
+        2,
+        2,
         0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Cmdorganization",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Medlink Georgia",
+          "date": "2026-06-30T08:20:17+00:00",
+          "url": "https://www.ransomware.live/id/TWVkbGluayBHZW9yZ2lhQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-30T08:20:17+00:00"
+        },
+        {
+          "name": "Port Angeles Composite",
+          "date": "2026-06-30T06:20:16+00:00",
+          "url": "https://www.ransomware.live/id/UG9ydCBBbmdlbGVzIENvbXBvc2l0ZUBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-30T06:20:16+00:00"
+        },
+        {
+          "name": "Lørenskog kommune",
+          "date": "2026-06-29T15:50:20+00:00",
+          "url": "https://www.ransomware.live/id/TMO4cmVuc2tvZyBrb21tdW5lQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-06-29T15:50:20+00:00"
+        },
+        {
+          "name": "METCO Services, Metco Southeast",
+          "date": "2026-06-29T12:20:22+00:00",
+          "url": "https://www.ransomware.live/id/TUVUQ08gU2VydmljZXMsIE1ldGNvIFNvdXRoZWFzdEBjbWRvcmdhbml6YXRpb24=",
+          "discovered_date": "2026-06-29T12:20:22+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "GE",
+        "NO",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
         2,
         2,
+        0,
+        0,
         0,
         0,
         0
@@ -1407,13 +1375,13 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1449,11 +1417,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1490,10 +1458,51 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Gunra",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Pirámide Seguros",
+          "date": "2026-06-30T12:25:27+00:00",
+          "url": "https://www.ransomware.live/id/UGlyw6FtaWRlIFNlZ3Vyb3NAZ3VucmE=",
+          "discovered_date": "2026-06-30T12:25:27+00:00"
+        },
+        {
+          "name": "on-us",
+          "date": "2026-06-30T12:25:04+00:00",
+          "url": "https://www.ransomware.live/id/b24tdXNAZ3VucmE=",
+          "discovered_date": "2026-06-30T12:25:04+00:00"
+        },
+        {
+          "name": "Yuditec S.A.",
+          "date": "2026-06-30T12:24:42+00:00",
+          "url": "https://www.ransomware.live/id/WXVkaXRlYyBTLkEuQGd1bnJh",
+          "discovered_date": "2026-06-30T12:24:42+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "HK",
+        "UY",
+        "VE"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        3,
+        0,
+        0,
         0,
         0,
         0
@@ -1526,12 +1535,12 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         0,
         1,
+        0,
         0
       ]
     },
@@ -1564,8 +1573,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1597,8 +1606,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1631,7 +1640,7 @@
       "trend_percentage": -5,
       "daily_counts": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1654,39 +1663,6 @@
           "date": "2026-06-29T21:32:04+00:00",
           "url": "https://www.ransomware.live/id/QyoqKipoQHBheW91dHNraW5n",
           "discovered_date": "2026-06-29T21:32:04+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Redact",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Hologic",
-          "date": "2026-06-28T08:38:15+00:00",
-          "url": "https://www.ransomware.live/id/SG9sb2dpY0BSZWRhY3Q=",
-          "discovered_date": "2026-06-28T08:38:15+00:00"
-        },
-        {
-          "name": "FCCI Insurance Group",
-          "date": "2026-06-28T08:37:44+00:00",
-          "url": "https://www.ransomware.live/id/RkNDSSBJbnN1cmFuY2UgR3JvdXBAUmVkYWN0",
-          "discovered_date": "2026-06-28T08:37:44+00:00"
         }
       ],
       "industries": [],
@@ -1726,8 +1702,8 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ]
@@ -1751,8 +1727,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1778,8 +1754,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1805,8 +1781,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1831,8 +1807,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1858,7 +1834,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
         0,
         0,
         0,
