@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 03 2026",
+            "headline": "Agentic AI Powers Ransomware—Langflow Exploited",
+            "title": "Agentic AI Utilizes Langflow for Automated Ransomware Attack",
+            "content": "A sophisticated ransomware attack has been executed using agentic AI through Langflow, showcasing the potential for large language model (LLM) agents to automate complex cyber intrusions. The attack combined known exploitation techniques with real-time reasoning, enabling a multi-stage intrusion without human intervention. This development highlights the growing threat of AI-driven cybercrime, as these models can adapt and optimize attack strategies on the fly. Organizations must enhance their AI monitoring and defense mechanisms to counteract such advanced threats. The incident underscores the need for continuous vigilance and adaptation in cybersecurity strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/agentic-ai-used-to-conduct-ransomware-attack-via-langflow/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Medtronic Breach Exposes 3.8M Patients' Data",
+            "title": "Medtronic Data Breach by ShinyHunters Affects 3.8 Million Individuals",
+            "content": "Medical device company Medtronic has suffered a significant data breach, impacting 3.8 million individuals. The breach, executed by the cybercriminal group ShinyHunters, involved unauthorized access to Medtronic's corporate IT systems in April, leading to the theft of personal and medical information. This breach highlights the vulnerability of healthcare data and the ongoing threat posed by sophisticated cybercriminal groups. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity theft protection services. Medtronic is working with authorities to investigate the breach and enhance its security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/medtronic-data-breach-impacts-3-8-million-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "PamStealer Targets Mac Users—Passwords at Risk",
+            "title": "PamStealer Exploits Fake Maccy Sites to Steal Mac Passwords",
+            "content": "A new macOS information stealer, dubbed PamStealer, has been identified by Jamf Threat Labs. This malware uses deceptive tactics, including fake Maccy websites and PAM (Pluggable Authentication Module) checks, to siphon Mac login credentials. Distributed as a compiled AppleScript (.scpt) file, PamStealer impersonates legitimate applications to gain user trust. Mac users are advised to verify the authenticity of downloaded applications and employ robust security solutions to detect and mitigate such threats. This incident underscores the importance of vigilance against increasingly sophisticated macOS-targeted malware.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Cursor AI Flaws Enable OS-Level Attacks",
+            "title": "Critical Vulnerabilities in Cursor AI Code Editor Allow Remote Code Execution",
+            "content": "Security researchers have uncovered critical vulnerabilities, termed DuneSlide, in the Cursor AI code editor. These flaws enable zero-click prompt injection attacks, allowing attackers to escape Cursor's sandbox and execute arbitrary code on the underlying operating system. The vulnerabilities pose a significant risk to developers using the tool, as they could lead to unauthorized access and control over affected systems. Users are urged to apply available patches immediately and review their security protocols to prevent exploitation. This discovery highlights the ongoing challenges in securing AI-driven development environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 02 2026",
+            "headline": "Anubis Exploits Citrix Bleed 2—Supply Chains at Risk",
+            "title": "Anubis Ransomware Leverages Citrix Bleed 2 Vulnerability for Attacks",
+            "content": "The Anubis ransomware group has been observed exploiting the Citrix Bleed 2 vulnerability (CVE-2025-5777) to gain initial access to target networks. This vulnerability affects Citrix systems and is part of a broader trend where ransomware groups utilize supply chain credentials and bring-your-own-vulnerable-driver (BYOVD) tactics. Organizations using Citrix products should prioritize patching and strengthen their supply chain security measures. The incident highlights the evolving tactics of ransomware groups and the critical need for robust cybersecurity defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "China-Linked APT Hits Southeast Asia—Critical Systems Breached",
+            "title": "China-Linked Cyber Group Targets Southeast Asia's Critical Infrastructure",
+            "content": "A China-linked threat actor has compromised at least 10 organizations in Southeast Asia, including two state-owned entities, deploying a new backdoor to infiltrate critical systems. This campaign underscores the persistent threat posed by nation-state actors targeting vital infrastructure for espionage and disruption. Affected organizations are urged to enhance their network defenses and monitor for unusual activity. This incident reflects the ongoing geopolitical tensions and the strategic targeting of critical sectors by advanced persistent threat (APT) groups.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Citrix Patches NetScaler Flaw—Echoes of CitrixBleed",
+            "title": "Citrix Releases Patches for NetScaler Vulnerabilities Amid Security Concerns",
+            "content": "Citrix has issued patches for six vulnerabilities in its NetScaler product line, with particular attention on a high-severity flaw reminiscent of the CitrixBleed vulnerabilities. These issues could potentially allow attackers to compromise affected systems, emphasizing the need for immediate patching by organizations using NetScaler. The vulnerabilities highlight the ongoing challenges in securing enterprise-grade network solutions against sophisticated threats. Users are advised to apply the patches promptly and review their security configurations to mitigate potential risks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/citrix-netscaler-flaw-cve-2026-8451-citrixbleed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Malicious Extension Hijacks Searches—Perplexity AI Spoofed",
+            "title": "Malicious Chromium Extension Spoofs Perplexity AI to Redirect Searches",
+            "content": "Google has removed a malicious Chromium browser extension that masqueraded as Perplexity AI, following its discovery by Microsoft researchers. The extension intercepted users' search traffic, routing queries through attacker-controlled servers before forwarding them to legitimate search engines. This incident highlights the risks associated with browser extensions and the importance of verifying their authenticity. Users are advised to review installed extensions and remove any suspicious ones to protect their online activities. This case underscores the ongoing threat of browser-based attacks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4191060/malicious-chromium-extension-spoofs-perplexity-ai-to-hijack-browser-searches.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Scattered Spider Hacker Extradited—$100M in Ransoms Linked",
+            "title": "Alleged Scattered Spider Hacker Extradited to US for Cybercrimes",
+            "content": "Peter Stokes, a 19-year-old alleged member of the Scattered Spider hacking group, has been extradited to the United States. The group is linked to over 100 network intrusions and more than $100 million in ransom payments. This extradition marks a significant step in international efforts to combat cybercrime and hold perpetrators accountable. Authorities continue to investigate the group's activities and pursue other members involved in the extensive cybercrime operations. This case highlights the global nature of cyber threats and the importance of international cooperation in cybersecurity enforcement.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/alleged-scattered-spider-hacker-extradited-to-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Google, FBI Disrupt NetNut Proxy Network—Millions of Devices Freed",
+            "title": "Google and FBI Dismantle NetNut Residential Proxy Network",
+            "content": "In a coordinated effort, Google and the FBI have disrupted the NetNut residential proxy network, which rented access to millions of compromised devices. This network allowed cybercriminals and nation-state actors to mask their identities during attacks. The operation significantly reduced the network's pool of usable devices, marking a major victory in the fight against cybercrime. Organizations are advised to ensure their devices are secure and not part of such proxy networks. This action underscores the importance of collaboration between tech companies and law enforcement in combating cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-fbi-disrupt-netnut-residential-proxy-network-powered-by-millions-of-devices/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 04 2026",
             "headline": "$1M Paid to Kairos—US Government Extortion Case",
             "title": "U.S. Government Entity Pays $1 Million in Kairos Data-Theft Case",
@@ -28,69 +118,6 @@ const websiteContent = {
             "content": "Citrix has released a patch for a new vulnerability in NetScaler appliances, reminiscent of the CitrixBleed series of memory overread flaws. This latest vulnerability, part of a troubling trend since 2023, has already seen exploit attempts in the wild. The flaw affects Citrix NetScaler versions prior to the latest update and poses a significant risk to organizations relying on these appliances. Administrators are urged to apply the patch immediately to protect against potential data breaches. This incident highlights the ongoing targeting of Citrix products by cybercriminals.",
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "FortiBleed Actors Partner with Lynx Ransomware Gangs",
-            "title": "FortiBleed Actors Collaborate with Lynx Ransomware Gangs",
-            "content": "Attackers exploiting Fortinet firewalls have begun monetizing their access by collaborating with Lynx ransomware gangs. The FortiBleed actors have also capitalized on a Nextcloud zero-day vulnerability to expand their reach. Thousands of compromised Fortinet firewalls are at risk, emphasizing the need for immediate security updates and monitoring. The collaboration between different cybercriminal groups highlights the evolving threat landscape where vulnerabilities are quickly weaponized. Organizations using Fortinet products should prioritize patching and enhance their threat detection capabilities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Argo CD Flaw Exposes GitOps to Code Execution Risks",
-            "title": "Argo CD Flaw Highlights GitOps Infrastructure Security Risks",
-            "content": "A vulnerability in Argo CD, a popular GitOps platform, has raised concerns about the security of such infrastructures. The flaw allows attackers with access to a Kubernetes cluster to execute arbitrary code and manipulate application deployments. Security firm Synacktiv warns that this vulnerability could lead to severe consequences if exploited. Organizations using GitOps platforms like Argo CD should treat them as tier zero infrastructure and implement robust security measures. This incident underscores the critical need for securing DevOps environments against emerging threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4192188/argo-cd-flaw-shows-why-gitops-infrastructure-should-be-treated-as-tier-zero.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Cursor IDE Flaws Enable Remote Code Execution",
-            "title": "Sandbox Bypass Flaws in Cursor IDE Allow RCE via Prompt Injection",
-            "content": "Researchers have identified two vulnerabilities in the Cursor AI-enabled integrated development environment (IDE) that can be exploited for remote code execution (RCE) through prompt injection. Tracked as CVE-2026-50548 and CVE-2026-50549, these flaws allow attackers to bypass sandbox protections. The vulnerabilities affect all versions of Cursor IDE prior to the latest patch. Developers using Cursor IDE should update immediately to mitigate the risk of exploitation. This discovery highlights the potential for prompt injection as a vector for RCE attacks in AI-driven environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4191923/sandbox-bypass-flaws-in-cursor-ide-highlight-prompt-injection-as-an-rce-vector.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Critical Oracle Defect Exploited Again—Patch Urgently",
-            "title": "Researchers Spot Exploitation of Another Critical Oracle Defect",
-            "content": "A critical defect in Oracle's business applications has been exploited in a new wave of attacks. This defect, part of a collection previously targeted in widespread attack sprees, affects a range of Oracle products used globally. Researchers urge organizations to apply the latest patches to prevent potential data breaches and operational disruptions. The repeated targeting of Oracle applications highlights the persistent vulnerabilities within enterprise software. Organizations should prioritize patch management and conduct regular security assessments to safeguard their systems.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/oracle-ebs-critical-vulnerability-exploited/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "US Eases Export Controls on Anthropic’s AI Models",
-            "title": "US Lifts Export Control Restrictions on Anthropic’s Mythos, Fable",
-            "content": "The U.S. Commerce Department has reached an agreement with Anthropic to lift export control restrictions on its AI models, Mythos and Fable. These models will now be released publicly with new guardrails and classifiers to ensure safe deployment. The decision reflects a balance between innovation and security, allowing broader access to advanced AI technologies while maintaining oversight. Organizations interested in deploying these models should review the new guidelines and ensure compliance with the updated regulatory framework. This move signals a shift in U.S. policy towards AI export controls.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/us-lifting-export-control-restrictions-anthropic-mythos-fable/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Chrome Update Fixes 382 Security Bugs—15 Critical",
-            "title": "Google Releases Chrome Update Addressing 382 Security Vulnerabilities",
-            "content": "Google has rolled out a significant update for Chrome, addressing 382 security vulnerabilities, including 15 rated as critical. Users are strongly encouraged to update to the latest version to protect against potential exploits. The update underscores the importance of regular software maintenance and the challenges of securing widely used applications. Organizations should ensure that all systems running Chrome are updated promptly to minimize security risks. This release highlights the ongoing efforts by Google to enhance browser security and protect users from emerging threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/07/chrome-needs-another-whopper-update-to-fix-382-security-fixes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 30 2026",
-            "headline": "DHS Revives Cybersecurity Council for Critical Infrastructure",
-            "title": "DHS to Unveil Replacement Council for Critical Infrastructure Cybersecurity",
-            "content": "The Department of Homeland Security (DHS) is set to launch a new cybersecurity information-sharing council for critical infrastructure. This initiative comes more than a year after the previous council was disbanded under the Trump administration. The Alliance of National Councils for Homeland Operations aims to enhance collaboration between government and private sectors to protect vital systems. Organizations involved in critical infrastructure should engage with the council to stay informed on best practices and threat intelligence. This move reflects a renewed focus on strengthening national cybersecurity resilience.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/dhs-anchor-ci-cybersecurity-information-sharing/",
             "relatedResources": []
         },
         {
@@ -121,33 +148,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 02 2026",
-            "headline": "AI Compute Hijacking and Apple Email Flaw Among 14 Threats",
-            "title": "Weekly Threats: AI Compute Hijacking, Apple Email Flaw, BlueHammer Ransomware",
-            "content": "This week's security roundup reveals vulnerabilities across various platforms, including AI systems, browsers, and email services. Notable threats include AI compute hijacking, an Apple email flaw, and the BlueHammer ransomware. These vulnerabilities demonstrate the persistent issue of small security gaps being exploited by attackers. Organizations should conduct thorough security assessments and implement robust monitoring to detect and respond to these threats promptly.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "FortiBleed Campaign Fuels INC, Lynx Ransomware Attacks",
-            "title": "FortiBleed Campaign Linked to INC and Lynx Ransomware Operations",
-            "content": "The FortiBleed campaign has been linked to the INC and Lynx ransomware groups, leveraging credentials harvested from FortiGate firewalls. These credentials are used to facilitate ransomware attacks, highlighting the critical need for securing firewall configurations and monitoring for unauthorized access. Organizations using FortiGate firewalls should review their security settings and apply necessary patches to prevent exploitation. This campaign underscores the importance of securing network perimeter devices against credential theft.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortibleed-campaign-linked-to-inc-lynx-ransomware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "AI Agent Automates Ransomware Attack via Langflow RCE",
-            "title": "AI Agent Exploits Langflow RCE for Automated Ransomware Attack",
-            "content": "Sysdig's Threat Research Team has identified a ransomware attack fully automated by an AI agent named JADEPUFFER. Utilizing a remote code execution (RCE) vulnerability in Langflow, the AI agent managed to infiltrate systems, steal credentials, and execute a ransomware attack without human intervention. This marks a significant evolution in ransomware tactics, emphasizing the need for advanced AI threat detection and response strategies. Organizations should enhance their AI security measures to mitigate such automated threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 03 2026",
             "headline": "Seven Vulnerabilities Found in FatFs Filesystem—Patch Urgently",
             "title": "Unpatched Vulnerabilities in FatFs Filesystem Affect Millions of Devices",
@@ -164,43 +164,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Ransomware Gangs Impersonate Interpol to Scam Small Businesses",
-            "title": "Ransomware Campaign Masquerades as Interpol to Target Small Businesses",
-            "content": "A ransomware campaign is exploiting basic social engineering tactics by impersonating Interpol to deceive small businesses across the US, Europe, and the Middle East. This strategy aims to instill fear and urgency, prompting victims to pay ransoms. Businesses should be wary of unsolicited communications claiming to be from law enforcement and verify the authenticity of such messages. Implementing robust email filtering and employee training can help mitigate the risk of falling victim to these scams.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "IBM Invests $5B in Project Lightwell to Fix AI-Found Bugs",
-            "title": "Anthropic's AI Discovers Bugs; IBM Launches $5B Project Lightwell",
-            "content": "IBM and Red Hat have launched Project Lightwell, a $5 billion initiative aimed at addressing bugs discovered by Anthropic's AI, Mythos, in open-source software. With 20,000 engineers assigned, the project seeks to enhance the security of the open-source supply chain. This move highlights the growing reliance on AI for vulnerability detection and the need for substantial investments in securing software ecosystems. Organizations should monitor developments in AI-driven security solutions to stay ahead of emerging threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 30 2026",
-            "headline": "Google NotebookLM Summarizes Research in 60-Second AI Clips",
-            "title": "Google’s NotebookLM Introduces TikTok-Style AI Video Summaries",
-            "content": "Google has launched a new feature for its NotebookLM, allowing users to generate 60-second vertical AI video summaries of their research. This feature is available to Google AI Ultra and Pro subscribers and utilizes uploaded sources to create concise, TikTok-style clips. The development aims to enhance the way users digest and share information, particularly benefiting researchers and students who need quick overviews of extensive data. By leveraging AI, Google continues to innovate in the way information is processed and consumed, providing a modern twist to traditional note-taking. Users are encouraged to explore this feature to streamline their research processes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+            "date": "Jul 04 2026",
+            "headline": "Mistral AI Raises Millions—Aims to Democratize AI Access",
+            "title": "Mistral AI Challenges OpenAI with Open Source Models and Funding",
+            "content": "Mistral AI, a burgeoning competitor to OpenAI, has secured substantial funding since its inception in 2023, positioning itself to democratize access to advanced AI technologies. The company offers open source AI models with the goal of putting cutting-edge AI capabilities into the hands of everyone. This approach contrasts with the more proprietary models of its competitors, potentially reshaping the landscape of AI accessibility and innovation. The funding surge underscores investor confidence in Mistral's mission and could accelerate the development and deployment of AI solutions across various sectors. Professionals in AI development and deployment should monitor Mistral's progress as it may influence open source AI trends and opportunities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
             "relatedResources": []
         },
         {
-            "date": "Jun 29 2026",
-            "headline": "OpenAI Maps AI's Impact on EU Jobs—Automation Insights",
-            "title": "OpenAI Report Highlights AI's Potential to Reshape EU Job Market",
-            "content": "OpenAI has released a comprehensive report detailing how artificial intelligence could transform the job landscape across the European Union. The report identifies occupations that may experience automation, growth, or significant workflow changes due to AI integration. This analysis is crucial for policymakers and businesses as they prepare for the impending shifts in the labor market. The findings suggest that while some jobs may be at risk, others could see increased demand, highlighting the dual nature of AI's impact. Stakeholders are advised to consider these insights for strategic workforce planning and policy development.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+            "date": "Jul 02 2026",
+            "headline": "OpenAI Proposes 5% Stake to US Government Amid Tensions",
+            "title": "OpenAI Offers US Government Stake to Ease AI Backlash",
+            "content": "OpenAI is considering granting the US government a 5% ownership stake to mitigate tensions with the Trump administration and address growing public concerns about AI's impact. CEO Sam Altman suggests that this move could align public interest with the company's success, potentially easing regulatory pressures and fostering a more favorable environment for AI development. This proposal comes amid increasing scrutiny of AI's societal implications and could set a precedent for public-private partnerships in the tech industry. Stakeholders in AI policy and governance should evaluate the potential impacts of such a partnership on regulatory frameworks and public trust.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Midjourney Demands AI Usage Disclosure from Hollywood Studios",
+            "title": "Midjourney Seeks AI Transparency in Legal Dispute with Studios",
+            "content": "In an ongoing legal battle, Midjourney is pushing three Hollywood studios to disclose their AI usage practices. The demand for transparency comes as part of a broader effort to understand how AI technologies are being integrated into creative processes and intellectual property management. This case highlights the growing tension between AI developers and content creators over the ethical and legal implications of AI in media production. The outcome could influence future regulations and industry standards regarding AI transparency and accountability. Legal professionals and AI developers should watch this case closely for its potential to shape AI governance in the entertainment industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Alibaba Bans Claude Code—Cites High-Risk Concerns",
+            "title": "Alibaba Restricts Use of Claude Code Amid Security Concerns",
+            "content": "Alibaba has reportedly classified Claude Code as high-risk software, leading to a ban on its use by employees. The decision reflects growing concerns about the security and reliability of certain AI tools within corporate environments. Claude Code, known for its advanced coding capabilities, may pose risks related to data integrity and intellectual property protection. This move underscores the importance of rigorous security assessments for AI tools in enterprise settings. Companies should review their software policies and ensure that AI tools meet stringent security standards to protect sensitive information and maintain operational integrity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Anthropic's Claude Fable 5 Returns—Global Access Restored",
+            "title": "Anthropic Reinstates Claude Fable 5 After US Export Control Lift",
+            "content": "Anthropic is reintroducing global access to its Claude Fable 5 AI model following the US Department of Commerce's withdrawal of export controls. The controls, initially imposed on June 12, 2026, restricted the distribution of this advanced AI model due to national security concerns. Claude Fable 5, known for its robust language processing capabilities, is now available to enterprises worldwide, potentially enhancing AI-driven applications across industries. This development highlights the ongoing balance between innovation and regulation in AI technology. Enterprises should explore the capabilities of Claude Fable 5 to leverage its potential benefits in their operations.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Essential AI Glossary—Navigate AI Jargon with Ease",
+            "title": "Comprehensive AI Glossary Released to Demystify Industry Terminology",
+            "content": "As AI continues to evolve, a new glossary has been published to help professionals navigate the expanding landscape of AI terminology. This resource includes definitions of key terms and phrases that have emerged alongside advancements in artificial intelligence. With the rapid pace of innovation, understanding these terms is crucial for developers, security professionals, and tech leaders to effectively communicate and implement AI technologies. The glossary serves as a valuable tool for anyone involved in AI development or deployment, ensuring clarity and precision in discussions and documentation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Browser Wars Shift—Top Chrome and Safari Alternatives",
+            "title": "Exploring Leading Alternatives to Chrome and Safari in Browser Wars",
+            "content": "The landscape of web browsers is shifting as new contenders challenge the dominance of Chrome and Safari. A recent overview highlights some of the top alternative browsers that offer unique features and privacy enhancements. These alternatives cater to users seeking more control over their browsing experience and data privacy. As the browser wars evolve beyond search functionalities, developers and tech leaders should consider these options for both personal use and enterprise deployment. Understanding the strengths and weaknesses of each browser can inform decisions about security, compatibility, and user experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Anthropic's AI Models Released Globally—US Lifts Export Curbs",
+            "title": "Anthropic's Fable and Mythos Models Gain Global Access Post-Curbs",
+            "content": "The US has lifted export restrictions on Anthropic's advanced AI models, Fable and Mythos, allowing for their global distribution. These models, known for their sophisticated language and reasoning capabilities, were previously restricted due to national security concerns. The release marks a significant step in making cutting-edge AI technologies available worldwide, potentially impacting various sectors from finance to healthcare. Organizations should assess the potential applications of these models to enhance their AI-driven solutions and maintain a competitive edge in the global market.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Google's Smart Speaker Lacks AI Power—Gemini Not Ready",
+            "title": "Google's Smart Speaker Awaits AI Upgrade as Gemini Falls Short",
+            "content": "Google's latest smart speaker, despite its advanced hardware, is hampered by the unavailability of the Gemini AI model, which is not yet ready for deployment. This shortfall highlights the ongoing challenge of integrating powerful AI capabilities into consumer electronics. While smart speakers have evolved beyond basic functions, the promise of AI-driven enhancements remains unfulfilled. Tech leaders and developers should monitor the progress of AI integration in consumer devices, as it will influence future product development and user expectations. The delay in Gemini's readiness underscores the complexities of AI deployment in real-world applications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/959503/google-home-speaker-review-gemini-for-home",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Google's Nano Banana 2 Lite—Fastest, Cheapest Image Model Yet",
+            "title": "Google's Nano Banana 2 Lite Offers Rapid, Cost-Effective Image Creation",
+            "content": "Google has unveiled the Nano Banana 2 Lite, its fastest and most cost-effective image model to date. While the images produced may not match the quality of higher-end models, they are generated in mere seconds, offering a practical solution for applications requiring rapid image processing. This development is particularly relevant for industries where speed and cost-efficiency are critical, such as e-commerce and digital marketing. Developers and tech leaders should consider the Nano Banana 2 Lite for projects where quick turnaround and budget constraints are priorities. The model's introduction reflects Google's ongoing commitment to advancing AI accessibility and affordability.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/06/googles-new-nano-banana-2-lite-image-model-is-its-fastest-and-cheapest-yet/",
             "relatedResources": []
         },
         {
@@ -210,78 +264,6 @@ const websiteContent = {
             "content": "A new movement within the fanfiction community aims to eliminate the use of generative AI by authors, sparking controversy over detection methods. The initiative targets AI tools like Claude and ChatGPT, but the accuracy of these detection techniques remains questionable, potentially implicating innocent writers. This internal conflict reflects broader concerns about AI's role in creative industries and the ethical implications of its use. Authors and platform administrators are urged to engage in dialogue to address these challenges and establish fair guidelines for AI usage in creative writing.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Musk's X Faces FTC Scrutiny Over Privacy Risks",
-            "title": "FTC Warned of Privacy Risks in Elon Musk's X Monitoring Proposal",
-            "content": "Privacy advocates have urged the Federal Trade Commission (FTC) to reject Elon Musk's proposal to end monitoring of the X platform, citing significant privacy concerns. The proposal comes amid growing apprehension about AI's role in data collection and user privacy. Critics argue that removing oversight could expose American users to heightened privacy risks, potentially violating existing data protection regulations. The FTC's decision will have far-reaching implications for privacy standards and AI governance. Stakeholders are encouraged to monitor developments closely as the debate unfolds.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/musks-x-poses-serious-risk-to-americans-privacy-advocates-warn-ftc/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Microsoft Commits $2.5B to New AI Deployment Company",
-            "title": "Microsoft Launches AI Deployment Firm with $2.5 Billion Investment",
-            "content": "Microsoft has announced the creation of a new AI deployment company, backed by a substantial $2.5 billion investment. This move positions Microsoft alongside industry giants like Amazon, OpenAI, and Anthropic in the competitive AI deployment space. The company aims to accelerate the integration of AI technologies across various sectors, enhancing operational efficiencies and innovation. This strategic investment underscores Microsoft's commitment to leading in AI advancement and deployment. Industry professionals should anticipate increased collaboration opportunities and advancements in AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Cloudflare Demands AI Firms Pay for Publisher Content",
-            "title": "Cloudflare Enforces New Policy on AI Firms Using Publisher Content",
-            "content": "Cloudflare has implemented a policy requiring AI companies to distinguish between web crawlers used for search and those for AI training by September 15, or face default blocking on publisher sites. This move aims to ensure fair compensation for publishers whose content is used in AI model training. The policy reflects growing tensions between AI developers and content creators over data usage rights. AI companies must adapt their practices to comply with these new requirements, highlighting the need for transparent data usage policies in AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Venice AI Hits Unicorn Status with $65M Series A",
-            "title": "Venice AI Achieves Unicorn Status with $65 Million Series A Funding",
-            "content": "Venice AI has reached unicorn status following a successful $65 million Series A funding round, driven by its privacy-first AI platform. The company reports an annualized run-rate revenue exceeding $70 million, showcasing its rapid growth and market impact. Venice AI's platform prioritizes user privacy, addressing a critical concern in the AI industry. This funding milestone positions the company for further expansion and innovation in privacy-centric AI solutions. Investors and industry professionals should watch Venice AI's trajectory as it continues to influence the AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Google’s Gemini Spark Now Available on Mac",
-            "title": "Google Expands Gemini Spark Assistant to Mac with New Features",
-            "content": "Google has expanded its Gemini Spark, a 24/7 agentic assistant, to Mac users, enhancing its accessibility and functionality. The update includes real-time tracking and support for additional applications, broadening its utility for users. Gemini Spark aims to streamline daily tasks and improve productivity through AI-driven assistance. This expansion reflects Google's ongoing efforts to integrate AI into everyday computing environments. Mac users are encouraged to explore Gemini Spark's capabilities to optimize their workflows and enhance digital interactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "Anthropic's Fable 5 Returns After Trump Administration Talks",
-            "title": "Anthropic's Fable 5 Restored Following Negotiations with Trump Administration",
-            "content": "Anthropic has announced the return of its long-sidelined AI model, Fable 5, after successful negotiations with the Trump administration. The model will be re-enabled on Claude platforms and AWS, restoring access to users worldwide. This development marks a significant milestone for Anthropic, allowing it to continue its AI research and deployment efforts. The resolution highlights the complex interplay between government regulations and AI innovation. Users and developers should prepare for the model's reintroduction and its potential applications across various sectors.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
-            "relatedResources": []
-        },
-        {
-            "date": "Jun 30 2026",
-            "headline": "AI-Designed .gov Websites Face Delays and Criticism",
-            "title": "Trump's AI-Driven .gov Website Redesign Faces Delays and Criticism",
-            "content": "The National Design Studio's initiative to redesign every .gov website using AI has encountered significant delays and criticism. A year into the project, concerns have emerged over the aesthetic and functional outcomes of AI-designed government sites. Critics argue that the redesigns fail to meet user experience standards, highlighting the challenges of relying solely on AI for creative tasks. This situation underscores the need for human oversight in AI-driven design processes. Government agencies are advised to reassess their approach to ensure effective and user-friendly web interfaces.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/06/trumps-plan-to-redesign-every-gov-website-leads-to-ai-designed-horrors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "$30M Bet on AI Office Suite—Indian Tycoon Challenges Microsoft",
-            "title": "Indian Entrepreneur Invests $30M in AI Alternative to Microsoft Office",
-            "content": "Bhavin Turakhia, a prominent Indian tech entrepreneur, has invested $30 million of his own funds to develop Neo, an AI-driven alternative to Microsoft Office and Google Apps. Neo represents Turakhia's fifth venture into enterprise software, focusing on integrating AI to enhance productivity and collaboration tools. This initiative reflects a growing trend of AI-powered solutions challenging established software giants. Enterprises seeking innovative office solutions may find Neo a compelling option as it promises to streamline workflows with advanced AI features. Turakhia's investment underscores the competitive landscape of enterprise software.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office/",
             "relatedResources": []
         },
         {
@@ -309,60 +291,6 @@ const websiteContent = {
             "content": "Midjourney has released a behind-the-scenes video of its futuristic dunk-tank ultrasound scanner, intended for use in spas and medical facilities. Despite the innovative concept, the company has yet to provide substantial evidence of the scanner's efficacy. This development raises questions about the readiness and reliability of AI-driven medical devices. Healthcare professionals and potential investors should exercise caution and demand rigorous testing and validation before adopting such technologies. The scanner's potential impact on medical diagnostics remains uncertain until further proof is presented.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Jersey Mike’s IPO—AI Hype in Unexpected Places",
-            "title": "Jersey Mike’s IPO Documents Reveal Surprising AI Mentions",
-            "content": "Jersey Mike's, a popular sandwich chain, has unexpectedly included AI references in its IPO documents, highlighting the pervasive influence of AI across industries. This inclusion reflects the growing trend of companies leveraging AI for operational efficiencies and market appeal, even in non-tech sectors. The move underscores the widespread adoption of AI technologies and the potential for AI to enhance business processes in diverse fields. Investors and industry analysts should consider the implications of AI integration in traditional businesses as they evaluate market opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/jersey-mikes-ipo-illustrates-how-bad-the-ai-hype-has-become/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Zuckerberg: AI Progress Slower Than Expected",
-            "title": "Mark Zuckerberg Acknowledges Slower AI Development at Meta",
-            "content": "In a recent internal meeting, Meta CEO Mark Zuckerberg expressed disappointment over the slower-than-expected progress in AI development. Despite significant investments, the advancements in AI agents have not met the company's ambitious timelines. This revelation comes amidst increasing competition in the AI sector, where rapid innovation is crucial. Meta's AI initiatives are crucial for its future strategy, impacting products across its ecosystem. Developers and stakeholders should monitor Meta's AI trajectory, as it may influence broader industry trends and investment strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Meta Launches Pocket—AI Gaming App Unveiled",
-            "title": "Meta Introduces Pocket: AI-Powered Interactive Gaming App",
-            "content": "Meta has quietly released Pocket, an experimental app that allows users to create and share interactive mini-games using AI-generated text prompts. This app leverages AI to enhance user creativity and engagement, marking Meta's latest venture into AI-driven entertainment. Pocket's launch aligns with the company's strategy to integrate AI across its platforms, offering new ways for users to interact with digital content. Developers interested in AI and gaming should explore Pocket's capabilities, as it represents a novel approach to user-generated content.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "OpenAI Proposes 5% Equity to US Fund",
-            "title": "OpenAI Suggests Equity Donation to U.S. Sovereign Wealth Fund",
-            "content": "OpenAI CEO Sam Altman has proposed donating 5% of the company's equity to a U.S. sovereign wealth fund. This initiative aims to allow the public to share in the financial benefits of the AI boom. The proposal revives discussions about equitable distribution of AI's economic gains, a topic of increasing importance as AI technologies continue to transform industries. Stakeholders in AI and public policy should consider the implications of such a move, which could set a precedent for future tech company-public partnerships.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Trump Negotiates OpenAI's 5% Stake Offer",
-            "title": "Trump Administration Engages OpenAI for 5% Equity Stake",
-            "content": "Insiders reveal that OpenAI CEO Sam Altman is in active discussions with the Trump administration regarding a 5% equity stake in the company. This negotiation follows Altman's proposal to contribute to a U.S. sovereign wealth fund, aiming to democratize AI's financial benefits. The talks highlight the intersection of technology and government policy, as administrations seek to harness AI's potential for national economic growth. Industry professionals should watch these developments closely, as they may influence future AI governance and investment strategies.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Anthropic, Samsung Discuss Custom AI Chip",
-            "title": "Anthropic and Samsung Explore Development of Custom AI Chip",
-            "content": "Anthropic is reportedly in discussions with Samsung to develop a custom AI chip, following OpenAI's recent partnership with Broadcom for similar purposes. This collaboration aims to enhance AI processing capabilities, crucial for the advancement of AI models. As demand for AI hardware grows, such partnerships are becoming increasingly common, underscoring the strategic importance of custom chips in AI development. Tech leaders and developers should note these trends, as they may affect hardware availability and performance in AI applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
             "relatedResources": []
         }
     ],
