@@ -4,147 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Jul 02 2026",
-            "headline": "AI Compute Hijacking and BlueHammer Ransomware Expose Security Gaps",
-            "title": "AI Compute Hijacking and BlueHammer Ransomware Highlight System Vulnerabilities",
-            "content": "This week's cybersecurity news underscores vulnerabilities across various systems, including browsers, bots, and AI platforms. Notably, AI compute hijacking and the BlueHammer ransomware exploit small permission gaps and weak checks to infiltrate systems. These issues highlight the importance of rigorous security testing and monitoring. Organizations must ensure robust security protocols to prevent unauthorized access and data breaches. The ongoing trend of exploiting minor vulnerabilities emphasizes the need for continuous vigilance and proactive security measures.",
+            "date": "Jul 03 2026",
+            "headline": "Avalon Malware Framework Evades Security—Deploys CrownX Ransomware",
+            "title": "Avalon Malware Framework Bypasses Security to Deploy CrownX Ransomware",
+            "content": "Cybersecurity researchers have uncovered Avalon, a new modular malware framework capable of bypassing traditional security controls. Distributed through a sophisticated multi-stage phishing chain, Avalon combines credential collection, lateral movement, remote access, and ransomware deployment, specifically the CrownX ransomware. This discovery highlights the increasing complexity of malware frameworks that can evade detection and inflict significant damage on targeted systems. Organizations are advised to enhance their phishing detection mechanisms and employ advanced threat intelligence solutions to mitigate such threats. The emergence of Avalon underscores the need for continuous vigilance and adaptation in cybersecurity strategies.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
             "relatedResources": []
         },
         {
             "date": "Jul 02 2026",
-            "headline": "FortiBleed Campaign—Credentials Fuel Ransomware Surge",
-            "title": "FortiBleed Campaign Uses Harvested Credentials for Ransomware Attacks",
-            "content": "The FortiBleed campaign has been linked to ransomware attacks by the INC and Lynx groups, leveraging credentials from hundreds of thousands of FortiGate firewalls. This campaign underscores the critical need for organizations to secure their firewall credentials and monitor for unauthorized access. The attackers exploit these credentials to facilitate ransomware attacks, posing a significant threat to affected organizations. Security experts recommend immediate review and strengthening of credential management practices to mitigate risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortibleed-campaign-linked-to-inc-lynx-ransomware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "AI Agent Automates Database Ransomware Attack via Langflow RCE",
-            "title": "AI Agent Exploits Langflow RCE for Automated Ransomware Attack",
-            "content": "Sysdig's Threat Research Team has identified a groundbreaking ransomware attack executed entirely by an AI agent named JADEPUFFER. Utilizing a large language model, the AI agent exploited a remote code execution (RCE) vulnerability in Langflow to infiltrate systems, steal credentials, and deploy ransomware. This marks a significant evolution in cyber threats, demonstrating the potential for AI to autonomously conduct complex attacks. Organizations should prioritize AI security measures and monitor for unusual AI-driven activities.",
+            "headline": "Anubis Ransomware Exploits Citrix Bleed 2 Vulnerability",
+            "title": "Anubis Ransomware Exploits Citrix Bleed 2 Vulnerability for Initial Access",
+            "content": "The Anubis ransomware group has been observed exploiting the Citrix Bleed 2 vulnerability (CVE-2025-5777) to gain initial access to targeted systems. This vulnerability affects Citrix systems and allows threat actors to leverage legitimate remote management tools for further infiltration. The exploitation of Citrix Bleed 2 highlights the persistent threat posed by ransomware groups adapting their techniques to exploit known vulnerabilities. Organizations using Citrix products should prioritize patching and monitoring for unusual activity to prevent unauthorized access. This incident underscores the importance of maintaining up-to-date security patches to protect against evolving ransomware tactics.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "FortiBleed Actors Exploit Nextcloud Zero-Day for Profit",
-            "title": "FortiBleed Actors Monetize Fortinet Access and Nextcloud Zero-Day",
-            "content": "Attackers behind the FortiBleed campaign are monetizing access to Fortinet firewalls and exploiting a Nextcloud zero-day vulnerability. This collaboration with the INC and Lynx ransomware gangs highlights the increasing sophistication of cybercriminal operations. The exploitation of these vulnerabilities poses a severe risk to organizations using these technologies. Immediate patching and enhanced monitoring are recommended to protect against potential breaches and data loss.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Ransomware Gangs Impersonate Interpol to Target Small Businesses",
-            "title": "Ransomware Campaign Uses Interpol Impersonation to Deceive Small Businesses",
-            "content": "A ransomware campaign is leveraging social engineering tactics by impersonating Interpol to deceive small businesses across the US, Europe, and the Middle East. This strategy exploits trust in law enforcement to gain access to sensitive information and deploy ransomware. Small businesses are advised to verify communications from purported authorities and implement robust security training to recognize phishing attempts. This campaign highlights the persistent threat of social engineering in cybersecurity.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "The Gentlemen Ransomware—Polite Name, Ruthless Tactics",
-            "title": "The Gentlemen Ransomware Gang: A Polite Name for Ruthless Cybercriminals",
-            "content": "Despite its name, The Gentlemen ransomware gang operates with ruthless efficiency, targeting victims with sophisticated attacks. This group exemplifies the trend of cybercriminals adopting corporate-style operations to maximize their impact. Organizations must stay vigilant and employ comprehensive security measures to defend against such threats. Understanding the tactics and motivations of ransomware groups is crucial for effective cybersecurity strategies.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.fortra.com/blog/gentlemen-ransomware-what-you-need-know",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "IBM Invests $5B in Project Lightwell to Fix AI-Found Bugs",
-            "title": "IBM and Red Hat Launch Project Lightwell to Address AI-Discovered Bugs",
-            "content": "IBM and Red Hat have committed $5 billion and 20,000 engineers to Project Lightwell, a new initiative aimed at addressing bugs identified by Anthropic's Mythos AI. This project seeks to enhance the security of the open-source software supply chain, a critical area of concern for the tech industry. The collaboration underscores the importance of integrating AI findings into practical security solutions. Organizations should monitor developments in AI-driven security enhancements and consider similar strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Cursor IDE Vulnerabilities—Prompt Injection Enables RCE",
-            "title": "Cursor IDE Sandbox Bypass Flaws Allow Remote Code Execution",
-            "content": "Researchers have identified two critical vulnerabilities, CVE-2026-50548 and CVE-2026-50549, in the Cursor AI-enabled integrated development environment (IDE). These flaws allow attackers to exploit prompt injection techniques to achieve remote code execution (RCE). The vulnerabilities highlight the risks associated with AI-driven development tools and the need for robust security measures. Developers using Cursor IDE should apply patches immediately and review their security protocols.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4191923/sandbox-bypass-flaws-in-cursor-ide-highlight-prompt-injection-as-an-rce-vector.html",
+            "sourceUrl": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
             "relatedResources": []
         },
         {
             "date": "Jul 01 2026",
-            "headline": "Oracle Defect Exploited Again—Business Apps at Risk",
-            "title": "Researchers Identify Exploitation of Critical Oracle Business Application Defect",
-            "content": "A critical defect in Oracle's business applications has been exploited in widespread attack sprees, affecting numerous organizations. This vulnerability underscores the persistent threat posed by unpatched software and the importance of timely updates. Organizations relying on Oracle's applications should prioritize patching and monitor for signs of exploitation. The recurrence of such defects highlights the need for robust vulnerability management practices.",
+            "headline": "US Eases Export Controls on Anthropic’s AI Models",
+            "title": "US Lifts Export Control Restrictions on Anthropic’s Mythos and Fable AI Models",
+            "content": "The US Commerce Department has reached an agreement with Anthropic to lift export control restrictions on its AI models, Mythos and Fable. These models will now be released publicly with enhanced guardrails and classifiers to ensure safe deployment. The decision reflects a growing trend towards balancing innovation with regulatory oversight in AI development. By easing export controls, the US aims to foster technological advancement while maintaining national security. Developers and tech leaders should stay informed about the implications of such regulatory changes on AI deployment and international collaboration.",
             "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/oracle-ebs-critical-vulnerability-exploited/",
+            "sourceUrl": "https://cyberscoop.com/us-lifting-export-control-restrictions-anthropic-mythos-fable/",
             "relatedResources": []
         },
         {
-            "date": "Jul 01 2026",
-            "headline": "Chrome Update—382 Security Fixes, 15 Critical",
-            "title": "Google Releases Chrome Update Addressing 382 Security Vulnerabilities",
-            "content": "Google has issued a substantial update for Chrome, addressing 382 security vulnerabilities, including 15 rated as critical. This update is crucial for maintaining browser security and protecting against potential exploits. Users are urged to update their Chrome installations immediately to mitigate risks. The sheer number of fixes highlights the ongoing challenges in securing widely used software and the importance of regular updates.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/07/chrome-needs-another-whopper-update-to-fix-382-security-fixes",
+            "date": "Jun 30 2026",
+            "headline": "Citrix Patches High-Severity NetScaler Flaw Amid Security Concerns",
+            "title": "Citrix Releases Patches for High-Severity NetScaler Vulnerability",
+            "content": "Citrix has issued patches for six vulnerabilities in its NetScaler products, with particular focus on a high-severity flaw reminiscent of previous CitrixBleed exploits. This vulnerability could potentially allow attackers to execute arbitrary code on affected systems. The urgency of patching is underscored by the active exploitation of similar vulnerabilities in the past. Organizations using NetScaler are urged to apply these patches immediately to mitigate potential risks. This development highlights the critical need for timely updates and vigilance in managing enterprise network security.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/citrix-netscaler-flaw-cve-2026-8451-citrixbleed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "DHS Revives Cybersecurity Council for Critical Infrastructure",
+            "title": "DHS Unveils New Cybersecurity Council for Critical Infrastructure Protection",
+            "content": "The Department of Homeland Security (DHS) is re-establishing a cybersecurity information-sharing council focused on critical infrastructure protection. This initiative comes over a year after the previous council was disbanded. The new Alliance of National Councils for Homeland Operations aims to enhance collaboration between government and private sectors to bolster cybersecurity defenses. This move reflects a strategic shift towards strengthening national resilience against cyber threats targeting essential services. Stakeholders in critical infrastructure sectors should prepare to engage with this council to optimize their cybersecurity posture.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/dhs-anchor-ci-cybersecurity-information-sharing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Malicious Extension Hijacks Searches—Google Removes Perplexity AI Spoof",
+            "title": "Malicious Chromium Extension Spoofs Perplexity AI to Hijack Searches",
+            "content": "Google has removed a malicious Chromium browser extension that masqueraded as Perplexity AI, following its discovery by Microsoft researchers. This extension intercepted users' search traffic, routing queries through attacker-controlled servers before reaching legitimate search engines. The incident highlights the ongoing threat of malicious browser extensions that compromise user privacy and security. Users are advised to regularly review and manage their browser extensions, ensuring only trusted and necessary ones are enabled. This case underscores the importance of vigilance in browser security management.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4191060/malicious-chromium-extension-spoofs-perplexity-ai-to-hijack-browser-searches.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Ransomware Syndicates Mimic Corporate Structures for Efficiency",
+            "title": "Ransomware Syndicates Operate Like Corporations with Outsourced Labor",
+            "content": "Ransomware syndicates are increasingly adopting corporate-style organizational structures, utilizing outsourced labor and tiered pricing models to enhance operational efficiency. This approach allows them to scale operations and target a wider range of victims with precision. By mimicking Fortune 500 companies, these groups can sustain prolonged campaigns and maximize profits. Security professionals should be aware of these evolving tactics and adapt their defenses accordingly. Understanding the organizational dynamics of ransomware groups can aid in developing more effective countermeasures against these sophisticated threats.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ransomware-syndicates-corporate-organization-op-ed/",
             "relatedResources": []
         },
         {
             "date": "Jul 03 2026",
-            "headline": "Agentic AI Powers Ransomware—Langflow Exploited",
-            "title": "Agentic AI Utilizes Langflow for Automated Ransomware Attack",
-            "content": "A sophisticated ransomware attack has been executed using agentic AI through Langflow, showcasing the potential for large language model (LLM) agents to automate complex cyber intrusions. The attack combined known exploitation techniques with real-time reasoning, enabling a multi-stage intrusion without human intervention. This development highlights the growing threat of AI-driven cybercrime, as these models can adapt and optimize attack strategies on the fly. Organizations must enhance their AI monitoring and defense mechanisms to counteract such advanced threats. The incident underscores the need for continuous vigilance and adaptation in cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/agentic-ai-used-to-conduct-ransomware-attack-via-langflow/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Medtronic Breach Exposes 3.8M Patients' Data",
-            "title": "Medtronic Data Breach by ShinyHunters Affects 3.8 Million Individuals",
-            "content": "Medical device company Medtronic has suffered a significant data breach, impacting 3.8 million individuals. The breach, executed by the cybercriminal group ShinyHunters, involved unauthorized access to Medtronic's corporate IT systems in April, leading to the theft of personal and medical information. This breach highlights the vulnerability of healthcare data and the ongoing threat posed by sophisticated cybercriminal groups. Affected individuals are advised to monitor their accounts for suspicious activity and consider identity theft protection services. Medtronic is working with authorities to investigate the breach and enhance its security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/medtronic-data-breach-impacts-3-8-million-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "PamStealer Targets Mac Users—Passwords at Risk",
-            "title": "PamStealer Exploits Fake Maccy Sites to Steal Mac Passwords",
-            "content": "A new macOS information stealer, dubbed PamStealer, has been identified by Jamf Threat Labs. This malware uses deceptive tactics, including fake Maccy websites and PAM (Pluggable Authentication Module) checks, to siphon Mac login credentials. Distributed as a compiled AppleScript (.scpt) file, PamStealer impersonates legitimate applications to gain user trust. Mac users are advised to verify the authenticity of downloaded applications and employ robust security solutions to detect and mitigate such threats. This incident underscores the importance of vigilance against increasingly sophisticated macOS-targeted malware.",
+            "headline": "Unpatched FatFs Flaws Threaten Millions of Embedded Devices",
+            "title": "Critical Vulnerabilities Found in FatFs Filesystem Used in Embedded Devices",
+            "content": "Security firm runZero has disclosed seven vulnerabilities in the FatFs filesystem library, which is widely used in the firmware of embedded devices like security cameras and drones. These vulnerabilities could allow attackers to execute arbitrary code or cause denial-of-service conditions. Given the pervasive use of FatFs, the impact is potentially severe, affecting millions of devices globally. Manufacturers and developers should prioritize patching these flaws to prevent exploitation. This discovery emphasizes the need for rigorous security assessments in the development of embedded systems.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
+            "sourceUrl": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
             "relatedResources": []
         },
         {
             "date": "Jul 03 2026",
-            "headline": "Cursor AI Flaws Enable OS-Level Attacks",
-            "title": "Critical Vulnerabilities in Cursor AI Code Editor Allow Remote Code Execution",
-            "content": "Security researchers have uncovered critical vulnerabilities, termed DuneSlide, in the Cursor AI code editor. These flaws enable zero-click prompt injection attacks, allowing attackers to escape Cursor's sandbox and execute arbitrary code on the underlying operating system. The vulnerabilities pose a significant risk to developers using the tool, as they could lead to unauthorized access and control over affected systems. Users are urged to apply available patches immediately and review their security protocols to prevent exploitation. This discovery highlights the ongoing challenges in securing AI-driven development environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-cursor-ai-ide-flaws-could-lead-to-os-level-remote-code-execution/",
+            "headline": "North Korean npm Packages Mimic Rollup Tools for Data Theft",
+            "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Data",
+            "content": "Threat actors linked to North Korea have been identified distributing malicious npm packages that mimic Rollup polyfill tools. These packages, named \"rollup-packages-polyfill-core\" and \"rollup-runtime-polyfill-core,\" facilitate remote access and data theft from compromised systems. This tactic highlights the ongoing threat of supply chain attacks targeting developers and their environments. Developers are urged to verify the authenticity of npm packages and monitor for suspicious activity. The incident underscores the critical importance of supply chain security in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
             "relatedResources": []
         },
         {
-            "date": "Jul 03 2026",
-            "headline": "Scattered Spider Hacker Extradited—$100M in Ransoms Linked",
-            "title": "Alleged Scattered Spider Hacker Extradited to US for Cybercrimes",
-            "content": "Peter Stokes, a 19-year-old alleged member of the Scattered Spider hacking group, has been extradited to the United States. The group is linked to over 100 network intrusions and more than $100 million in ransom payments. This extradition marks a significant step in international efforts to combat cybercrime and hold perpetrators accountable. Authorities continue to investigate the group's activities and pursue other members involved in the extensive cybercrime operations. This case highlights the global nature of cyber threats and the importance of international cooperation in cybersecurity enforcement.",
+            "date": "Jul 02 2026",
+            "headline": "CitrixBleed Exploited Immediately After Disclosure—Patch Urgently",
+            "title": "New CitrixBleed Vulnerability Exploited Immediately After Public Disclosure",
+            "content": "Hackers have begun exploiting a newly disclosed CitrixBleed vulnerability in NetScaler appliances, using publicly available proof-of-concept (PoC) code. This vulnerability allows attackers to retrieve arbitrary memory content via HTTP responses, posing a significant risk to affected systems. Organizations using NetScaler should apply the latest patches without delay to mitigate potential exploitation. The rapid exploitation of this vulnerability highlights the critical need for timely patch management and proactive security measures. This incident serves as a reminder of the persistent threat landscape facing enterprise networks.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/alleged-scattered-spider-hacker-extradited-to-us/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Google, FBI Disrupt NetNut Proxy Network—Millions of Devices Freed",
-            "title": "Google and FBI Dismantle NetNut Residential Proxy Network",
-            "content": "In a coordinated effort, Google and the FBI have disrupted the NetNut residential proxy network, which rented access to millions of compromised devices. This network allowed cybercriminals and nation-state actors to mask their identities during attacks. The operation significantly reduced the network's pool of usable devices, marking a major victory in the fight against cybercrime. Organizations are advised to ensure their devices are secure and not part of such proxy networks. This action underscores the importance of collaboration between tech companies and law enforcement in combating cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-fbi-disrupt-netnut-residential-proxy-network-powered-by-millions-of-devices/",
+            "sourceUrl": "https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/",
             "relatedResources": []
         },
         {
@@ -164,43 +110,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Citrix NetScaler Exploit Attempts—Patch Released",
-            "title": "New CitrixBleed-like NetScaler Flaw Sees Exploit Attempts",
-            "content": "Citrix has released a patch for a new vulnerability in NetScaler appliances, reminiscent of the CitrixBleed series of memory overread flaws. This latest vulnerability, part of a troubling trend since 2023, has already seen exploit attempts in the wild. The flaw affects Citrix NetScaler versions prior to the latest update and poses a significant risk to organizations relying on these appliances. Administrators are urged to apply the patch immediately to protect against potential data breaches. This incident highlights the ongoing targeting of Citrix products by cybercriminals.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4192741/new-citrixbleed-like-netscaler-flaw-sees-exploit-attempts-in-the-wild.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Bad Epoll Flaw Hits Linux and Android—Patch Immediately",
-            "title": "Bad Epoll Linux Kernel Vulnerability CVE-2026-46242 Allows Root Access",
-            "content": "A critical vulnerability known as Bad Epoll (CVE-2026-46242) has been identified in the Linux kernel, allowing unprivileged users to gain root access. This flaw affects Linux desktops, servers, and Android devices, posing a significant risk to millions of systems worldwide. The vulnerability resides in a section of the kernel code previously scrutinized by Anthropic's AI. Users are urged to apply the available patches immediately to mitigate potential exploitation. This incident underscores the ongoing challenges in securing open-source software against privilege escalation attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jun 30 2026",
-            "headline": "Google NotebookLM Adds TikTok-Style AI Video Summaries",
-            "title": "Google’s NotebookLM Introduces AI-Generated Video Summaries for Research Notes",
-            "content": "Google has launched a new feature for its NotebookLM, allowing AI-generated 60-second vertical video summaries of research notes. Available to Google AI Ultra and Pro subscribers, this feature transforms uploaded sources into concise, TikTok-style clips. This innovation aims to enhance user engagement and comprehension by leveraging AI's ability to distill complex information into easily digestible formats. The feature underscores Google's commitment to integrating AI into productivity tools, potentially transforming how professionals and researchers interact with their data. Users are encouraged to explore this feature to optimize their research workflows.",
+            "date": "Jul 02 2026",
+            "headline": "OpenAI Proposes 5% Stake to US—Eases AI Tensions",
+            "title": "OpenAI Offers 5% Ownership to US Government Amid AI Backlash",
+            "content": "OpenAI has proposed granting the US government a 5% ownership stake in the company to mitigate rising tensions with the Trump administration and address public concerns over AI's rapid advancement. CEO Sam Altman suggests that this move could align public interests with OpenAI's growth, potentially reducing regulatory pressures. This proposal comes amid increasing public scrutiny and debates over AI's societal impact. By offering a financial stake, OpenAI aims to foster a more collaborative relationship with policymakers. Stakeholders are advised to monitor developments as this proposal could influence future AI governance and regulatory frameworks.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
             "relatedResources": []
         },
         {
-            "date": "Jun 29 2026",
-            "headline": "OpenAI Maps AI's Impact on EU Jobs",
-            "title": "OpenAI Report Highlights AI's Potential to Reshape EU Workforce",
-            "content": "OpenAI has released a comprehensive report detailing the potential impact of AI on the European Union's workforce. The report identifies occupations likely to experience automation, growth, or significant workflow changes due to AI advancements. This analysis is crucial for policymakers and businesses as they navigate the evolving job landscape and prepare for future workforce transformations. The findings suggest a need for strategic planning and investment in skills development to mitigate potential job displacement. Stakeholders are advised to review the report to understand AI's implications on employment in the EU.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+            "date": "Jul 06 2026",
+            "headline": "🤗 Kernels—Hugging Face's Latest AI Update",
+            "title": "Hugging Face Unveils Major Updates to Kernels Platform",
+            "content": "Hugging Face has announced significant updates to its Kernels platform, enhancing capabilities for AI model development and deployment. These updates include improved integration with popular machine learning frameworks and expanded support for real-time collaboration among developers. The enhancements aim to streamline workflows for data scientists and AI engineers, enabling more efficient model training and deployment. As AI adoption grows, these updates position Hugging Face as a key player in providing robust tools for AI practitioners. Users are encouraged to explore the new features to leverage advanced functionalities in their AI projects.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/revamped-kernels",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 05 2026",
+            "headline": "Wealthy Turn to AI for Children's Education",
+            "title": "America's Wealthy Embrace AI for Children's Education",
+            "content": "Despite widespread skepticism about AI's capabilities, some of America's affluent families are opting for AI-driven education over traditional schooling for their children. Companies like Forge Prep are at the forefront, offering personalized learning experiences powered by advanced AI algorithms. This trend highlights a growing divide in educational approaches, as AI-based systems promise tailored instruction that adapts to individual learning styles. However, concerns remain about AI's limitations and potential biases. Education professionals should consider the implications of AI in learning environments and its impact on future educational models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 05 2026",
+            "headline": "Amazon Halts New Sign-Ups for Mechanical Turk",
+            "title": "Amazon Stops Accepting New Customers for Mechanical Turk",
+            "content": "Amazon has announced it will no longer accept new customers for its Mechanical Turk platform, signaling potential changes or a phase-out of the service. Mechanical Turk, known for its crowdsourcing capabilities, has been a staple for businesses needing human intelligence tasks. The decision may impact companies relying on the platform for data labeling and other micro-tasks. Current users should prepare for potential disruptions and explore alternative crowdsourcing solutions. This move reflects Amazon's strategic shift as it evaluates the platform's role in its broader AI and machine learning ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Anthropic's Claude Fable 5 Returns Globally",
+            "title": "Anthropic Restores Global Access to Claude Fable 5 AI Model",
+            "content": "Anthropic has resumed global access to its Claude Fable 5 AI model following the US Department of Commerce's decision to lift export controls imposed in June 2026. Claude Fable 5, known for its advanced natural language processing capabilities, is now available to enterprises worldwide. The model's return is expected to enhance AI-driven applications across various industries, from customer service to content generation. Organizations leveraging Claude Fable 5 should assess its integration potential to optimize AI-driven solutions. This development underscores the ongoing regulatory dynamics affecting AI technology distribution.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 02 2026",
+            "headline": "Trump Secures 5% OpenAI Stake—Lower Than Sanders' Goal",
+            "title": "OpenAI's 5% Stake Offer to Trump Administration Confirmed",
+            "content": "OpenAI is in active discussions with the Trump administration to finalize a 5% ownership stake, a move significantly lower than the 20% stake previously suggested by Bernie Sanders. This strategic offer aims to ease regulatory tensions and align public interests with OpenAI's objectives. The discussions reflect ongoing negotiations between tech companies and government entities over AI's societal impact. Stakeholders should monitor these developments, as the outcome may influence future AI policy and regulatory landscapes. The proposed stake could set a precedent for public-private partnerships in the tech industry.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 02 2026",
+            "headline": "Indian Tycoon Invests $30M in AI Office Rival",
+            "title": "Bhavin Turakhia Invests $30M in AI Alternative to Microsoft Office",
+            "content": "Indian entrepreneur Bhavin Turakhia is investing $30 million of his own funds to develop Neo, an AI-powered alternative to Microsoft Office and Google Apps. This marks Turakhia's fifth venture in enterprise software, aiming to capitalize on the growing demand for AI-driven productivity tools. Neo promises enhanced collaboration features and AI-assisted functionalities, challenging established market leaders. Businesses seeking innovative office solutions should watch Neo's development closely, as it may offer competitive advantages in efficiency and cost-effectiveness. Turakhia's investment underscores the increasing interest in AI's potential to transform enterprise software.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/01/indian-tech-tycoon-bets-30m-to-build-an-ai-alternative-to-microsoft-office/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Anthropic AI Models Released Globally Post-Safety Testing",
+            "title": "Anthropic's AI Models Get Global Release After Safety Testing",
+            "content": "Following comprehensive safety testing prompted by the Trump administration, Anthropic's advanced AI models, including Fable and Mythos, are now available globally. The US lifted export restrictions, allowing these models to be deployed across various industries. Known for their sophisticated natural language processing capabilities, these models can enhance applications in customer service, content creation, and more. Enterprises should evaluate the integration of Anthropic's models to leverage AI's full potential. This release highlights the importance of safety in AI development and the role of regulatory oversight in technology deployment.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 01 2026",
+            "headline": "Claude Fable 5 Returns—Anthropic Lifts US Restrictions",
+            "title": "Anthropic's Claude Fable 5 AI Model Returns After US Negotiations",
+            "content": "After extensive negotiations with the Trump administration, Anthropic is reactivating its Claude Fable 5 AI model globally. The model, known for its cutting-edge language processing capabilities, will be accessible to users on Claude platforms and AWS. This development follows the lifting of US export controls, allowing broader deployment of the model. Businesses utilizing Claude Fable 5 can expect enhanced AI-driven functionalities, improving efficiency and innovation. The model's return underscores the complex interplay between AI advancements and regulatory frameworks, highlighting the need for strategic compliance in tech deployment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+            "relatedResources": []
+        },
+        {
+            "date": "Jun 30 2026",
+            "headline": "Google's Nano Banana 2 Lite—Fastest, Cheapest Image Model Yet",
+            "title": "Google Launches Nano Banana 2 Lite—Fast, Affordable Image Model",
+            "content": "Google has unveiled the Nano Banana 2 Lite, its latest image model designed for speed and cost-effectiveness. This model generates images in seconds, offering a more accessible solution for developers and businesses requiring rapid image processing. While the images may not match the quality of higher-end models, the trade-off in speed and affordability makes it an attractive option for various applications. Organizations should consider Nano Banana 2 Lite for projects where quick image generation is prioritized over high resolution. This release reflects Google's ongoing efforts to democratize AI technology.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/06/googles-new-nano-banana-2-lite-image-model-is-its-fastest-and-cheapest-yet/",
             "relatedResources": []
         },
         {
@@ -210,69 +210,6 @@ const websiteContent = {
             "content": "In a creative new commercial, Google imagines how the Founding Fathers might have drafted the Declaration of Independence with the help of Google Workspace's AI tools. Released on the 250th anniversary of the Declaration, the ad highlights the potential of AI to assist in collaborative and creative processes. This marketing initiative underscores the growing integration of AI in everyday tools and its potential to revolutionize historical and modern workflows. The commercial invites viewers to consider the transformative impact of AI on both past and future endeavors.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Zuckerberg: AI Agents Lagging Behind Expectations",
-            "title": "Meta CEO Mark Zuckerberg Expresses Concerns Over AI Development Pace",
-            "content": "During an internal meeting, Meta CEO Mark Zuckerberg expressed disappointment over the slower-than-expected progress in AI agent development. Despite significant investments, the anticipated advancements in AI capabilities have not materialized as quickly as hoped. This revelation highlights the challenges tech giants face in pushing the boundaries of AI technology. Meta's ongoing efforts to accelerate AI development underscore the competitive landscape of the tech industry. Stakeholders and developers are encouraged to monitor Meta's strategic adjustments in response to these challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Jersey Mike’s IPO Highlights AI Hype in Business",
-            "title": "Jersey Mike’s IPO Documents Reveal Unexpected AI Mentions",
-            "content": "Jersey Mike's, a popular sandwich chain, has surprisingly included references to AI in its IPO documents, illustrating the pervasive influence of AI hype across industries. This unexpected mention raises questions about the relevance and authenticity of AI claims in sectors traditionally unrelated to technology. The inclusion of AI in the IPO highlights the pressure on companies to align with technological trends, regardless of their core business. Investors and analysts should critically assess such claims to distinguish genuine innovation from marketing strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/jersey-mikes-ipo-illustrates-how-bad-the-ai-hype-has-become/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Meta Launches Pocket—AI-Powered Gaming App",
-            "title": "Meta Introduces Pocket, an AI-Driven App for Creating Mini Games",
-            "content": "Meta has quietly launched Pocket, an innovative AI app that enables users to generate and share interactive mini games using text prompts. This experimental platform leverages AI to simplify game creation, allowing users to focus on creativity rather than technical complexity. Pocket represents Meta's continued exploration of AI's potential in entertainment and user-generated content. By democratizing game development, Meta aims to engage a broader audience and foster a community of creators. Developers and gaming enthusiasts are encouraged to explore Pocket's capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "OpenAI Offers 5% Equity to US Sovereign Wealth Fund",
-            "title": "OpenAI Proposes Equity Donation to US Sovereign Wealth Fund Amid AI Boom",
-            "content": "OpenAI CEO Sam Altman has proposed donating 5% of the company's equity to a U.S. sovereign wealth fund, aiming to share the financial benefits of the AI boom with the public. This initiative revives discussions about equitable distribution of AI-generated wealth and the role of public investment in tech companies. The proposal reflects OpenAI's commitment to aligning its growth with broader societal benefits. Policymakers and investors should consider the implications of such equity arrangements on public wealth and AI industry dynamics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Musk's X Faces Privacy Concerns—FTC Urged to Act",
-            "title": "Privacy Advocates Warn FTC About Risks of Musk’s X Amid AI Concerns",
-            "content": "Privacy advocates have urged the Federal Trade Commission (FTC) to reject Elon Musk's proposal to end monitoring of X, citing serious privacy risks to Americans. The concerns stem from potential misuse of AI technologies within the platform, which could compromise user data and privacy. This development highlights the ongoing tension between technological innovation and privacy protection. The FTC's decision will have significant implications for regulatory approaches to AI and data privacy. Stakeholders should monitor this situation closely for updates on regulatory actions.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/musks-x-poses-serious-risk-to-americans-privacy-advocates-warn-ftc/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "Microsoft Invests $2.5B in New AI Deployment Company",
-            "title": "Microsoft Launches AI Deployment Company with $2.5 Billion Investment",
-            "content": "Microsoft has announced the creation of a new AI deployment company, backed by a substantial $2.5 billion investment. This move positions Microsoft alongside Amazon, OpenAI, and Anthropic in the competitive AI deployment landscape. The new entity will focus on advancing AI technologies and expanding their applications across various sectors. Microsoft's investment underscores its commitment to leading the AI industry and driving innovation. Industry professionals should watch for developments from this new venture as it could influence AI deployment strategies globally.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 01 2026",
-            "headline": "SpaceX's AI Device Prototype Hints at Wireless Ambitions",
-            "title": "SpaceX Unveils AI Device Prototype with Mobile-Like Features",
-            "content": "SpaceX has reportedly showcased a prototype of a \"handset-like\" AI device to investors, signaling potential expansion into the wireless sector. This development suggests SpaceX's interest in integrating AI capabilities with mobile technology, possibly leveraging its Starlink network. The prototype's features remain undisclosed, but its introduction aligns with SpaceX's broader strategy to diversify its technological offerings. Investors and tech enthusiasts should monitor SpaceX's next moves, as this could mark a significant shift in the company's market positioning.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/",
             "relatedResources": []
         },
         {
@@ -303,57 +240,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 03 2026",
-            "headline": "Essential AI Glossary—Navigate AI Jargon with Ease",
-            "title": "Comprehensive AI Glossary Released to Demystify Industry Terminology",
-            "content": "As AI continues to evolve, a new glossary has been published to help professionals navigate the expanding landscape of AI terminology. This resource includes definitions of key terms and phrases that have emerged alongside advancements in artificial intelligence. With the rapid pace of innovation, understanding these terms is crucial for developers, security professionals, and tech leaders to effectively communicate and implement AI technologies. The glossary serves as a valuable tool for anyone involved in AI development or deployment, ensuring clarity and precision in discussions and documentation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/03/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Browser Wars Shift—Top Chrome and Safari Alternatives",
-            "title": "Exploring Leading Alternatives to Chrome and Safari in Browser Wars",
-            "content": "The landscape of web browsers is shifting as new contenders challenge the dominance of Chrome and Safari. A recent overview highlights some of the top alternative browsers that offer unique features and privacy enhancements. These alternatives cater to users seeking more control over their browsing experience and data privacy. As the browser wars evolve beyond search functionalities, developers and tech leaders should consider these options for both personal use and enterprise deployment. Understanding the strengths and weaknesses of each browser can inform decisions about security, compatibility, and user experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/03/as-the-browser-wars-heat-up-here-are-the-hottest-alternatives-to-chrome-and-safari-in-2026/",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 04 2026",
             "headline": "Fanfiction Community Battles AI—Detection Methods Questioned",
             "title": "Fanfiction Community Divided Over AI-Generated Content Detection",
             "content": "A new movement within the fanfiction community aims to eliminate the use of generative AI by authors, sparking controversy over detection methods. The initiative targets AI tools like Claude and ChatGPT, but the accuracy of these detection techniques remains questionable, potentially implicating innocent writers. This internal conflict reflects broader concerns about AI's role in creative industries and the ethical implications of its use. Authors and platform administrators are urged to engage in dialogue to address these challenges and establish fair guidelines for AI usage in creative writing.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Trunk Tools Slashes Document Review Time by 83%",
-            "title": "Trunk Tools' Custom AI Stack Reduces Document Review from 60 to 10 Days",
-            "content": "Trunk Tools, a construction project management company, has developed a specialized AI stack that dramatically reduces document review time from 60 days to just 10. By moving away from general-purpose models, Trunk Tools created a three-layer system tailored to handle complex, industry-specific documents and workflows. This innovation highlights the limitations of generic AI models in specialized fields and the potential of custom solutions to enhance efficiency. Construction and project management professionals should consider similar tailored approaches to optimize their document processing tasks.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/trunk-tools-stack-cut-document-review-from-60-days-to-10-by-ditching-general-purpose-models",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Anthropic Ventures into Drug Development with Claude Science",
-            "title": "Anthropic Launches Claude Science for Integrated AI-Driven Drug Development",
-            "content": "Anthropic has announced Claude Science, an AI workbench designed to streamline drug development by integrating fragmented tools and datasets. This platform aims to assist scientists in generating figures and visuals, enhancing research efficiency. Anthropic's entry into the pharmaceutical sector underscores the growing trend of AI applications in drug discovery and development. Researchers and pharmaceutical companies are encouraged to explore Claude Science for its potential to accelerate scientific breakthroughs and improve data-driven decision-making in drug development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Midjourney's Medical Scanner—Innovation or Illusion?",
-            "title": "Midjourney's Medical Scanner Raises Questions on Efficacy and Deployment",
-            "content": "Midjourney has released a behind-the-scenes video of its futuristic dunk-tank ultrasound scanner, intended for use in spas and medical facilities. Despite the innovative concept, the company has yet to provide substantial evidence of the scanner's efficacy. This development raises questions about the readiness and reliability of AI-driven medical devices. Healthcare professionals and potential investors should exercise caution and demand rigorous testing and validation before adopting such technologies. The scanner's potential impact on medical diagnostics remains uncertain until further proof is presented.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961265/midjourney-medical-ultrasound-scanner-behind-the-scenes-video",
             "relatedResources": []
         }
     ],
@@ -439,17 +331,6 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
-        {
-            "cveId": "CVE-2026-48558",
-            "dateAdded": "Jun 29, 2026",
-            "vendor": "SimpleHelp SimpleHelp",
-            "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifyin",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48558",
-            "isZeroDay": false
-        },
         {
             "cveId": "CVE-2026-45659",
             "dateAdded": "Jul 01, 2026",
