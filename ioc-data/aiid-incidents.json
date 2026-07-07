@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1571",
+      "incident_id": 1571,
+      "title": "California Immigration Attorneys Reportedly Sanctioned Over Briefs Containing Probable Hallucination",
+      "date": "2026-07-07",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1570",
+      "incident_id": 1570,
+      "title": "Purported Deepfake Impersonating Dubai Crown Prince Reportedly Used to Defraud Filipino Domestic Wor",
+      "date": "2026-07-06",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1572",
+      "incident_id": 1572,
+      "title": "Westlaw CoCounsel Reportedly Generated False Legal Quotations in United States v. Farris",
+      "date": "2026-07-06",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1565",
       "incident_id": 1565,
       "title": "Spokane-Area Fred's Appliance and Victory Media Allegedly Used AI-Assisted Voice Editing Without Spo",
@@ -2538,9 +2562,9 @@
     }
   ],
   "stats": {
-    "total": 317,
-    "last7Days": 7,
-    "last30Days": 128
+    "total": 320,
+    "last7Days": 10,
+    "last30Days": 131
   },
-  "lastUpdated": "2026-07-07T03:14:46.269686+05:30"
+  "lastUpdated": "2026-07-07T09:42:24.038662+05:30"
 }
