@@ -3,6 +3,15 @@
   "year": 2025,
   "vulnerabilities": [
     {
+      "rank": 1,
+      "id": "LLM01",
+      "name": "Prompt Injection",
+      "description": "A Prompt Injection Vulnerability occurs when user prompts alter the LLM\u2019s behavior or output in unintended ways. These inputs can affect the model even if they are imperceptible to humans, therefore prompt injections do not need to be human-visible/readable, as long as the content is parsed by the model.\n\nPrompt Injection vulnerabilities exist in how models process prompts, and how input may force the model to incorrectly pass prompt data to other parts of the model, potentially causing them to violate guidelines, generate harmful content, enable unauthorized access, or influence critical decisions. While techniques like Retrieval Augmented Generation (RAG) and fine-tuning aim to make LLM outputs more relevant and accurate, research shows that they do not fully mitigate prompt injection vulnerabilities.\n\nWhile prompt injection and jailbreaking are related concepts in LLM security, they are often used interchangeably. Prompt injection involves manipulating model responses through specific inputs to alter its behavior, which can include bypassing safety measures. Jailbreaking is a form of prompt injection where the attacker provides inputs that cause the model to disregard its safety protocols entirely. Developers can build safeguards into system prompts and input handling to help mitigate prompt injection attacks, but effective prevention of jailbreaking requires ongoing updates to the model's training and safety mechanisms.",
+      "severity": "critical",
+      "preventionStrategies": 18,
+      "sourceUrl": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/2_0_vulns/LLM01_PromptInjection.md"
+    },
+    {
       "rank": 2,
       "id": "LLM02",
       "name": "Sensitive Information Disclosure",
@@ -85,9 +94,9 @@
     }
   ],
   "stats": {
-    "total": 9,
-    "critical": 2,
+    "total": 10,
+    "critical": 3,
     "high": 3
   },
-  "lastUpdated": "2026-07-07T20:38:30.921630+05:30"
+  "lastUpdated": "2026-07-07T23:40:43.810281+05:30"
 }

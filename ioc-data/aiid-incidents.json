@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1573",
+      "incident_id": 1573,
+      "title": "National Company Law Tribunal Reportedly Relied on AI-Hallucinated Precedents in Pooja Ramesh Singh ",
+      "date": "2026-07-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1570",
       "incident_id": 1570,
       "title": "Purported Deepfake Impersonating Dubai Crown Prince Reportedly Used to Defraud Filipino Domestic Wor",
@@ -2562,9 +2570,9 @@
     }
   ],
   "stats": {
-    "total": 320,
-    "last7Days": 10,
-    "last30Days": 131
+    "total": 321,
+    "last7Days": 11,
+    "last30Days": 132
   },
-  "lastUpdated": "2026-07-07T20:38:20.239082+05:30"
+  "lastUpdated": "2026-07-07T23:40:36.197577+05:30"
 }
