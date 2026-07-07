@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 07 2026",
+            "headline": "WriteOut Flaw in Writer AI Risks Cross-Tenant Data Breach",
+            "title": "Critical Session Isolation Vulnerability in Writer AI Patched",
+            "content": "Cybersecurity researchers have identified and disclosed a critical vulnerability in the Writer AI platform, potentially allowing cross-tenant data breaches. Dubbed \"WriteOut\" by Sand Secu, this session isolation flaw could have enabled unauthorized access to session tokens across different tenants. The vulnerability, now patched, posed a significant risk to enterprises relying on Writer for generative AI tasks, potentially exposing sensitive data. Organizations using Writer AI are advised to ensure they have applied the latest updates to mitigate any risk. This incident underscores the ongoing challenges of securing AI platforms in multi-tenant environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/writer-ai-flaw-could-let-agent-previews.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "CVE-2026-48282 Exploited—Adobe ColdFusion Users Must Patch",
+            "title": "Critical Adobe ColdFusion Vulnerability Exploited in Active Attacks",
+            "content": "A critical vulnerability in Adobe ColdFusion, identified as CVE-2026-48282, is being actively exploited by attackers, despite a recent patch release. With a maximum CVSS score of 10/10, this flaw allows for remote code execution, posing a severe threat to systems running unpatched versions of ColdFusion. Security experts urge administrators to apply the patch immediately to prevent potential breaches. This exploitation highlights the importance of timely updates in maintaining the security of widely-used enterprise software. Organizations should review their patch management processes to ensure vulnerabilities are addressed promptly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-adobe-coldfusion-vulnerability-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "China-Aligned Hackers Target Universities via Roundcube Flaws",
+            "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+            "content": "A China-aligned threat group has been exploiting vulnerabilities in Roundcube webmail software to target physics and engineering departments at universities in the U.S. and Canada. The campaign leverages now-patched critical security flaws to gain unauthorized access to sensitive academic data. This activity underscores the persistent threat posed by state-aligned actors targeting educational institutions for intellectual property theft. Universities are advised to review their security measures and ensure all software is up-to-date to mitigate such risks. The incident highlights the need for heightened cybersecurity awareness in academia.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Hidden Backdoor Found in Tenda Router Firmware",
+            "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+            "content": "The CERT Coordination Center (CERT/CC) has issued a warning about an undocumented authentication backdoor in several firmware versions of Tenda routers. This backdoor could allow attackers to gain administrative access to the device's web management interface, posing a significant security risk. Users of affected Tenda routers are advised to update their firmware to the latest version and review network access controls. This discovery highlights the ongoing challenges in securing IoT devices and the importance of vendor transparency in firmware development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "BeyondTrust Patches Critical Auth Bypass Flaws",
+            "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+            "content": "BeyondTrust has released patches for two critical authentication bypass vulnerabilities affecting its Remote Support (RS) and Privileged Remote Access (PRA) products. These flaws, if exploited, could allow unauthenticated attackers to take control of vulnerable systems. The vulnerabilities are identified as CVE-2026-XXXX and CVE-2026-YYYY. Organizations using these products should apply the updates immediately to protect against potential exploitation. This incident highlights the importance of regular security assessments and timely patch management in safeguarding remote access solutions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "GitHub Workflows Vulnerable—Public Issues Can Leak Private Data",
+            "title": "Public GitHub Issue Could Trick Workflows Into Leaking Private Repo Data",
+            "content": "Researchers at Noma Security have demonstrated a vulnerability in GitHub's Agentic Workflows that could be exploited to leak private repository data. By opening a seemingly innocuous issue on a public repository, attackers can trick workflows into exposing sensitive information without needing stolen credentials. This vulnerability underscores the risks associated with automated workflows and the need for stringent security controls. GitHub users are advised to review their workflow configurations and implement additional security measures to protect sensitive data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/public-github-issue-could-trick-github.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "FBI Uses Windows Device ID to Catch Scattered Spider Hacker",
+            "title": "Court Filing Reveals Windows Device ID Helped FBI Trace Hacker",
+            "content": "A newly unsealed federal complaint reveals that U.S. prosecutors used a persistent Windows device ID to link an alleged Scattered Spider hacker to a cyber intrusion at a luxury jewelry retailer. Microsoft records tied the device ID to the account used by the attackers during the May 2025 breach. This case highlights the role of digital forensics in cybercrime investigations and the importance of device identifiers in tracing malicious activities. Organizations are reminded of the need for robust logging and monitoring to aid in incident response and forensic analysis.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Iran-Linked Hackers Use Modular Malware in Cyberattacks",
+            "title": "Iran-Linked Hackers Using Modular C&C Framework in Cyberattacks",
+            "content": "Researchers have identified an Iran-linked threat actor employing a modular command-and-control (C&C) framework in cyberattacks targeting high-value entities in Israel. This adaptable malware framework allows attackers to customize their operations and evade detection. The campaign also involved compromising IT service providers to reach their intended targets. This development underscores the evolving tactics of state-sponsored actors and the need for organizations to enhance their threat detection and response capabilities. Security teams should prioritize monitoring for unusual network activity and implement robust access controls.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/iran-linked-hackers-using-modular-cc-framework-in-cyberattacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Januscape Flaw in Linux Allows VM Escape on Intel, AMD",
+            "title": "Linux Kernel Vulnerability Allows VM Escape on Intel and AMD Systems",
+            "content": "A 16-year-old vulnerability known as the Januscape flaw has been discovered in the Linux Kernel's KVM hypervisor, allowing attackers to escape virtual machines and potentially execute code on the host system. This vulnerability affects systems running on both Intel and AMD processors. Administrators are urged to apply available patches to prevent exploitation. The discovery of such an old flaw highlights the importance of continuous security reviews and updates for legacy systems. Organizations should assess their virtual environments and ensure all components are up-to-date.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/linux-kernel-vulnerability-allows-vm-escape-on-intel-and-amd-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Keyfactor Secures $1B+ for AI, Post-Quantum Security",
+            "title": "Keyfactor Scores $1 Billion+ Investment for AI, Post-Quantum Security",
+            "content": "Keyfactor has secured over $1 billion in investment to enhance its machine identity, public key infrastructure (PKI), and cryptographic security platform. This funding will accelerate the company's efforts to address AI-driven and post-quantum security threats. As enterprises increasingly face sophisticated cyber threats, the investment underscores the growing importance of robust cryptographic solutions. Organizations are encouraged to evaluate their security strategies in light of emerging technologies and prepare for the challenges posed by quantum computing.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/keyfactor-scores-1-billion-investment-for-ai-post-quantum-security/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 06 2026",
             "headline": "Januscape Flaw—16-Year-Old Bug in Linux KVM Exposed",
             "title": "Januscape Vulnerability in Linux KVM Allows VM Escape on x86 Systems",
@@ -19,15 +109,6 @@ const websiteContent = {
             "content": "Security researchers from Sysdig have observed threat actors attempting to exploit a critical vulnerability in Gitea Docker images, identified as CVE-2026-20896. This flaw, with a CVSS score of 9.8, arises from the platform's improper trust of the \"X-WEBAUTH-USER\" header, potentially allowing unauthorized access. The vulnerability was disclosed just 13 days ago, highlighting the rapid pace at which attackers move to exploit newly discovered weaknesses. Organizations using Gitea should apply patches immediately to mitigate risks. This incident serves as a reminder of the importance of timely updates in DevOps environments.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 03 2026",
-            "headline": "Avalon Malware—New Framework with Ransomware Capabilities",
-            "title": "Avalon Malware Framework Integrates CrownX Ransomware Features",
-            "content": "Researchers have uncovered Avalon, a new modular malware framework capable of deploying CrownX ransomware. Distributed via a sophisticated phishing chain, Avalon can bypass traditional security measures and perform credential harvesting, lateral movement, and remote access. This discovery highlights the evolving complexity of malware, which now often includes multi-functional capabilities. Organizations should enhance their phishing defenses and monitor network traffic for unusual activity. The emergence of such frameworks underscores the need for comprehensive security strategies that address both initial access and lateral movement threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
             "relatedResources": []
         },
         {
@@ -101,72 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/north-korean-hackers-target-open-source-developers-in-supply-chain-attacks/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "AI Agents Tricked—Prompt Injection Leads to Crypto Payments",
-            "title": "Prompt Injection Attacks Trick AI Agents Into Making Crypto Payments",
-            "content": "Researchers have identified two campaigns leveraging indirect prompt injections on malicious websites to exploit autonomous AI agents. These attacks manipulate AI agents into executing unauthorized cryptocurrency transactions, highlighting a novel threat vector in AI security. The campaigns exploit the AI's ability to browse the web autonomously, embedding malicious prompts that lead to financial losses. Organizations utilizing AI agents for autonomous tasks should implement strict input validation and monitoring to prevent such manipulations. This development emphasizes the need for enhanced security measures in AI-driven operations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/prompt-injection-attacks-trick-ai-agents-into-making-crypto-payments/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "Agentic Ransomware—AI Speeds Up Cyber Attacks",
-            "title": "Sysdig Clocks First Documented Case of Agentic Ransomware",
-            "content": "Sysdig has documented the first known case of agentic ransomware, where an AI agent facilitated a ransomware attack. Although the AI did not complete every step, it significantly reduced complexity and increased the speed of the operation. This marks a new era in cyber threats, where AI can enhance the efficiency of malicious activities. Organizations are urged to adapt their security strategies to address the unique challenges posed by AI-driven threats. This case underscores the need for continuous monitoring and adaptive security measures.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/sysdig-judepuffer-ai-agentic-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "Armored Likho APT—Targeting Governments and Power Grids",
-            "title": "Armored Likho APT Targeting Government, Electric Power Entities",
-            "content": "The Armored Likho advanced persistent threat (APT) group is conducting cyber espionage and financially motivated attacks against government and electric power entities. Utilizing modular remote access trojans (RATs) and information stealers, the group aims to extract sensitive data and disrupt operations. These campaigns highlight the persistent threat posed by APTs to critical infrastructure and government systems. Organizations in these sectors should enhance their security posture by implementing advanced threat detection and response strategies. This activity reflects the ongoing geopolitical tensions influencing cyber operations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/armored-likho-apt-targeting-government-electric-power-entities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "Linux 'Bad Epoll' Exploit—Patch Urgently Needed",
-            "title": "Proof-of-Concept Exploit Released for Linux ‘Bad Epoll’ Root Access Vulnerability",
-            "content": "A proof-of-concept exploit for the Linux kernel vulnerability CVE-2026-46242, known as Bad Epoll, has been released, making it easier for attackers to gain root access. This development increases the urgency for organizations to apply the available patch to protect their systems. The vulnerability affects a wide range of Linux-based systems, including desktops, servers, and Android devices. Security teams should prioritize patching and monitor for any signs of exploitation. The release of this exploit underscores the critical need for timely vulnerability management.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/proof-of-concept-exploit-released-for-linux-bad-epoll-root-access-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "AI SOC Evaluation—6 Key Capabilities to Consider",
-            "title": "How to Evaluate an AI SOC Platform in 2026: 6 Capabilities That Separate Leaders from Bolt-On AI Solutions",
-            "content": "Evaluating an AI Security Operations Center (SOC) platform requires understanding the distinct capabilities that differentiate leading solutions from bolt-on AI features. Key aspects include integration with existing security information and event management (SIEM) systems, automation of detection and response, and the ability to handle complex threat scenarios. As AI continues to transform cybersecurity, organizations must assess platforms for their adaptability and scalability. This guide helps security professionals navigate the crowded AI SOC market and choose solutions that align with their operational needs.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "Operation DragonReturn—Fake Tax Utility Targets India",
-            "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
-            "content": "A cyber campaign, codenamed Operation DragonReturn, has been identified targeting Indian taxpayers and finance professionals using a fake tax filing utility. This operation, attributed to a suspected China-nexus threat group, deploys the DcRAT remote access trojan to steal sensitive data. The multi-stage attack highlights the increasing sophistication of cyber threats targeting financial and governmental sectors. Organizations are advised to verify the authenticity of software tools and implement robust security measures to prevent unauthorized access. This incident underscores the geopolitical dimensions of cyber espionage.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "Business-Aligned Risk—Transforming Security Strategies",
-            "title": "The Shift Toward Business-Aligned Risk Management",
-            "content": "Organizations are increasingly moving towards business-aligned risk management, transitioning from isolated technical data to a continuous risk lifecycle. This approach helps align security controls with actual business consequences, ensuring that cybersecurity strategies support organizational objectives. By integrating risk management into business processes, companies can better anticipate and mitigate potential threats. Security professionals are encouraged to adopt frameworks that facilitate this alignment, enhancing both security posture and business resilience. This trend reflects the evolving landscape of cybersecurity, where business and technology must work in tandem.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/the-shift-toward-business-aligned-risk-management/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 06 2026",
+            "headline": "Vercel CEO Advocates Model-Agent Separation for Efficiency",
+            "title": "Vercel CEO Guillermo Rauch Discusses Model-Agent Separation for Optimization",
+            "content": "Vercel CEO Guillermo Rauch emphasized the importance of separating AI models from agents to optimize production environments. In a discussion with TechCrunch, Rauch highlighted that focusing on price and performance is crucial for efficient AI deployment. This separation allows for more tailored and cost-effective solutions, particularly in environments where resource allocation is critical. The trend reflects a growing industry focus on modular AI systems that can be independently optimized and scaled. Developers and tech leaders should consider this approach to enhance AI system performance and cost management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Savi Raises $7M to Combat AI-Powered Scams",
+            "title": "Savi Launches App to Protect Against AI-Driven Ransom Scams",
+            "content": "Savi has secured $7 million in seed funding to launch its new app designed to protect consumers from AI-generated scams, such as fake kidnapping ransom demands. Available on both iPhone and Android, the app uses advanced algorithms to detect and alert users to potential scam attempts. As AI-generated scams become increasingly sophisticated, this tool aims to provide a critical layer of security for individuals vulnerable to such threats. The funding will support further development and expansion of Savi's capabilities to counteract evolving scam techniques.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "US Autonomous Vehicles Deployed in Ukraine Conflict",
+            "title": "Forterra Deploys Autonomous Ground Vehicles in Ukraine Conflict Zones",
+            "content": "Forterra has deployed over 100 autonomous all-terrain vehicles (ATVs) in Ukraine, marking the first use of American autonomous ground vehicles in active conflict zones. These self-driving ATVs are designed to navigate challenging terrains and deliver supplies, enhancing logistical operations in war-torn areas. The deployment underscores the growing role of autonomous technology in military applications, offering a glimpse into future warfare dynamics. Military strategists and defense contractors should monitor these developments as they could reshape operational strategies and equipment procurement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/07/the-first-american-autonomous-ground-vehicles-are-fighting-in-ukraine/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Trunk Tools Cuts Document Review Time by 83%",
+            "title": "Trunk Tools Reduces Document Review Time with Specialized AI Stack",
+            "content": "Trunk Tools has dramatically reduced document review times from 60 days to just 10 by implementing a specialized three-layer AI stack, moving away from general-purpose models. This innovation addresses the complexities of construction project management, where documents often feature proprietary schemas and implicit workflows. The company's approach highlights the limitations of generic AI models in handling industry-specific challenges and the benefits of tailored solutions. Construction firms and project managers should consider adopting specialized AI systems to improve efficiency and accuracy.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/trunk-tools-stack-cut-document-review-from-60-days-to-10-by-ditching-general-purpose-models",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Midjourney Demands AI Usage Disclosure from Studios",
+            "title": "Midjourney Seeks AI Usage Details in Legal Dispute with Studios",
+            "content": "In a legal battle with three Hollywood studios, Midjourney is pushing for transparency regarding the studios' AI usage. The company aims to compel the studios to disclose how they integrate AI into their production processes. This move is part of a broader trend towards accountability and transparency in AI applications, particularly in creative industries. The outcome of this case could set a precedent for AI usage disclosure, impacting how studios and other creative entities manage and report their AI-driven processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/midjourney-wants-hollywood-studios-to-reveal-the-details-of-their-ai-usage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Alibaba Bans High-Risk Claude Code Software",
+            "title": "Alibaba Restricts Use of Claude Code Citing High-Risk Concerns",
+            "content": "Alibaba has reportedly banned the use of Claude Code within its operations, classifying it as high-risk software. This decision reflects growing concerns over security vulnerabilities and potential data breaches associated with certain AI tools. As companies increasingly rely on AI for various functions, the need for stringent risk assessments and security protocols becomes paramount. Organizations should evaluate their software tools regularly to mitigate risks and ensure compliance with security standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Fanfiction Community Divided Over AI Usage",
+            "title": "Fanfiction Community Engages in Controversy Over AI-Generated Content",
+            "content": "The fanfiction community is embroiled in a heated debate over the use of generative AI tools like Claude and ChatGPT for content creation. A new movement aims to identify and exclude AI-generated works, but the methods employed are raising concerns about fairness and accuracy. This controversy highlights the broader challenges of integrating AI into creative fields, where authenticity and originality are highly valued. Writers and platform administrators must navigate these issues carefully to maintain community trust and integrity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/960854/ai-fanfiction-ao3-claude-detector",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 03 2026",
+            "headline": "Anthropic Ventures into Drug Development with AI",
+            "title": "Anthropic Launches Claude Science for AI-Driven Drug Discovery",
+            "content": "Anthropic has introduced Claude Science, an AI workbench designed to streamline drug discovery by integrating fragmented tools and datasets. This platform aims to enhance scientific research by generating comprehensive figures and visuals, facilitating a more efficient drug development process. As AI continues to transform the pharmaceutical industry, Claude Science represents a significant step towards more integrated and data-driven research methodologies. Researchers and pharmaceutical companies should explore such platforms to accelerate innovation and improve outcomes in drug development.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 07 2026",
+            "headline": "Solos Unveils Lighter, Camera-Free Smart Glasses",
+            "title": "Solos Introduces AirGo A6 Smart Glasses with AI Assistant",
+            "content": "Solos has launched the AirGo A6, a new version of its smart glasses that eliminates cameras for a more streamlined design, weighing only 19 grams. The device features an AI assistant that relies on voice interactions, offering a more discreet and lightweight alternative to previous models. This development reflects a shift towards minimalistic wearable technology that prioritizes user comfort and privacy. Tech enthusiasts and developers should note this trend as it may influence future design and functionality standards in the wearable tech industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/961711/solos-airgo-a6-smart-glasses-ai-assistant-privacy",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 04 2026",
+            "headline": "Google Imagines AI-Assisted Declaration of Independence",
+            "title": "Google Envisions AI in Historical Context with New Commercial",
+            "content": "Google has released a commercial imagining the impact of AI on historical events, specifically the drafting of the Declaration of Independence. This creative exploration highlights the potential of AI tools like Google Workspace in enhancing collaborative efforts and decision-making processes. As AI becomes increasingly integrated into various sectors, its role in shaping both current and historical narratives is gaining attention. Educators and historians should consider the implications of AI in reinterpreting historical events and fostering innovative educational experiences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/04/new-google-commercial-imagines-a-declaration-of-independence-written-with-help-from-ai/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 06 2026",
             "headline": "AI-Run Ransomware Needs Human Help—First Attack Details Emerge",
@@ -183,15 +291,6 @@ const websiteContent = {
             "content": "Microsoft has announced the layoff of approximately 4,800 employees, representing about 2.1% of its workforce, as part of its ongoing restructuring efforts driven by AI advancements. This follows last year's reduction of 9,100 positions, indicating a significant shift in the company's operational focus. The layoffs primarily affect Microsoft's commercial sales and marketing divisions, reflecting a strategic pivot towards AI and cloud services. This move highlights the broader trend of tech companies realigning resources to capitalize on AI technologies. Affected employees are encouraged to explore opportunities in the growing AI sector.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 02 2026",
-            "headline": "OpenAI Offers 5% Stake to US—Eases AI Tensions",
-            "title": "OpenAI Proposes 5% Stake to US Government Amid AI Backlash",
-            "content": "OpenAI has proposed granting the US government a 5% ownership stake in the company to alleviate tensions with the Trump administration and address public concerns over AI's rapid advancement. CEO Sam Altman suggests that this move could align public interests with the company's growth, potentially reducing regulatory pressures. The proposal comes amid increasing scrutiny of AI's societal impacts and the need for transparent governance. Stakeholders in the AI industry should monitor this development as it may set a precedent for public-private partnerships in tech governance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump",
             "relatedResources": []
         },
         {
@@ -249,15 +348,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 02 2026",
-            "headline": "OpenAI Offers 5% Stake to US—Trump Secures Deal",
-            "title": "OpenAI Agrees to 5% US Stake Amidst Trump Negotiations",
-            "content": "OpenAI has agreed to offer a 5% stake to the US government following negotiations with the Trump administration. This move is part of a strategy to mitigate regulatory pressures and align public interests with the company's growth. The decision comes amid heightened scrutiny of AI's societal impacts and the need for responsible governance. Industry stakeholders should watch this development closely, as it may influence future public-private partnerships in the tech sector. The agreement highlights the complex interplay between innovation, regulation, and public interest in the AI landscape.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 06 2026",
             "headline": "Microsoft Cuts 4,800 Jobs—AI Fears Rise",
             "title": "Microsoft Layoffs Hit Xbox and Commercial Sales Amid AI Concerns",
@@ -273,42 +363,6 @@ const websiteContent = {
             "content": "Station F, the Paris-based startup hub founded by Xavier Niel, is preparing for a new edition of its F/ai accelerator program. The initiative aims to bolster Europe's AI startup ecosystem by providing resources and mentorship to promising ventures. As AI continues to revolutionize industries, Station F's program offers startups a platform to scale and innovate. The accelerator is part of a broader trend of tech hubs supporting AI development, reflecting the growing demand for AI-driven solutions. Entrepreneurs are encouraged to apply and leverage this opportunity to advance their AI projects.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 05 2026",
-            "headline": "Google Ad Imagines AI-Assisted Founding Fathers",
-            "title": "Google Workspace Ad Envisions AI in Drafting the Declaration",
-            "content": "A new Google Workspace commercial humorously reimagines the founding fathers using AI tools to draft the Declaration of Independence. The ad, featuring Google's collaboration tools and Gemini AI, opens with the tagline \"Group project, but make it 1776.\" While intended to showcase the capabilities of Google's AI suite, the commercial has sparked mixed reactions, with some viewers finding it cringeworthy. This marketing approach reflects the growing trend of integrating AI into historical narratives to highlight modern technological advancements. Businesses should consider the cultural impact of AI in their marketing strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 06 2026",
-            "headline": "🤗 Kernels—Hugging Face's Latest AI Update",
-            "title": "Hugging Face Unveils Major Updates to Kernels Platform",
-            "content": "Hugging Face has announced significant updates to its Kernels platform, enhancing capabilities for AI model development and deployment. These updates include improved integration with popular machine learning frameworks and expanded support for real-time collaboration among developers. The enhancements aim to streamline workflows for data scientists and AI engineers, enabling more efficient model training and deployment. As AI adoption grows, these updates position Hugging Face as a key player in providing robust tools for AI practitioners. Users are encouraged to explore the new features to leverage advanced functionalities in their AI projects.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/revamped-kernels",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 05 2026",
-            "headline": "Wealthy Turn to AI for Children's Education",
-            "title": "America's Wealthy Embrace AI for Children's Education",
-            "content": "Despite widespread skepticism about AI's capabilities, some of America's affluent families are opting for AI-driven education over traditional schooling for their children. Companies like Forge Prep are at the forefront, offering personalized learning experiences powered by advanced AI algorithms. This trend highlights a growing divide in educational approaches, as AI-based systems promise tailored instruction that adapts to individual learning styles. However, concerns remain about AI's limitations and potential biases. Education professionals should consider the implications of AI in learning environments and its impact on future educational models.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961505/wealthy-ai-schools-alpha-forge-prep",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 05 2026",
-            "headline": "Amazon Halts New Sign-Ups for Mechanical Turk",
-            "title": "Amazon Stops Accepting New Customers for Mechanical Turk",
-            "content": "Amazon has announced it will no longer accept new customers for its Mechanical Turk platform, signaling potential changes or a phase-out of the service. Mechanical Turk, known for its crowdsourcing capabilities, has been a staple for businesses needing human intelligence tasks. The decision may impact companies relying on the platform for data labeling and other micro-tasks. Current users should prepare for potential disruptions and explore alternative crowdsourcing solutions. This move reflects Amazon's strategic shift as it evaluates the platform's role in its broader AI and machine learning ecosystem.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/05/amazon-will-stop-accepting-new-customers-for-mechanical-turk/",
             "relatedResources": []
         }
     ],
