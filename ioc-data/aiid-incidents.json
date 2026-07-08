@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1574",
+      "incident_id": 1574,
+      "title": "Purportedly AI-Generated Explicit Images of Students Allegedly Circulated at Lake Zurich High School",
+      "date": "2026-07-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1571",
       "incident_id": 1571,
       "title": "California Immigration Attorneys Reportedly Sanctioned Over Briefs Containing Probable Hallucination",
@@ -2570,9 +2578,9 @@
     }
   ],
   "stats": {
-    "total": 321,
-    "last7Days": 10,
-    "last30Days": 132
+    "total": 322,
+    "last7Days": 11,
+    "last30Days": 133
   },
-  "lastUpdated": "2026-07-08T03:07:45.686899+05:30"
+  "lastUpdated": "2026-07-08T09:07:30.430517+05:30"
 }
