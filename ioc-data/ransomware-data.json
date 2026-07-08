@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-08T02:42:39.274304",
+  "last_updated": "2026-07-08T14:07:23.128227",
   "period": "Last 7 days",
-  "total_groups": 33,
-  "total_victims": 294,
+  "total_groups": 34,
+  "total_victims": 293,
   "groups": [
     {
       "name": "Thegentlemen",
-      "count": 83,
+      "count": 82,
       "victims": [
         {
           "name": "Technical Solutions Group",
@@ -91,7 +91,7 @@
         0,
         0,
         0,
-        42,
+        41,
         0
       ]
     },
@@ -277,7 +277,7 @@
     },
     {
       "name": "Genesis",
-      "count": 18,
+      "count": 17,
       "victims": [
         {
           "name": "Apex Agro, LLC",
@@ -328,16 +328,16 @@
           "discovered_date": "2026-07-05T13:54:07.464177+00:00"
         },
         {
-          "name": "East Texas Family Medicine",
-          "date": "2026-07-05T13:53:29.894047+00:00",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/2ab3c68d011400ca76f7/",
-          "discovered_date": "2026-07-05T13:53:29.894047+00:00"
-        },
-        {
           "name": "Apex Agro, LLC",
           "date": "2026-07-05T13:59:07+00:00",
           "url": "https://www.ransomware.live/id/QXBleCBBZ3JvLCBMTENAZ2VuZXNpcw==",
           "discovered_date": "2026-07-05T13:59:07+00:00"
+        },
+        {
+          "name": "Mirage Endoscopy Center",
+          "date": "2026-07-05T13:58:29+00:00",
+          "url": "https://www.ransomware.live/id/TWlyYWdlIEVuZG9zY29weSBDZW50ZXJAZ2VuZXNpcw==",
+          "discovered_date": "2026-07-05T13:58:29+00:00"
         }
       ],
       "industries": [
@@ -356,7 +356,7 @@
         0,
         0,
         0,
-        18,
+        17,
         0,
         0,
         0
@@ -452,7 +452,7 @@
     },
     {
       "name": "Apt73",
-      "count": 15,
+      "count": 13,
       "victims": [
         {
           "name": "dgcement.com",
@@ -485,18 +485,6 @@
           "discovered_date": "2026-07-03T12:22:02.886675+00:00"
         },
         {
-          "name": "flazio.com",
-          "date": "2026-07-02T16:21:57.139761+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=176",
-          "discovered_date": "2026-07-02T16:21:57.139761+00:00"
-        },
-        {
-          "name": "holidaypalace.com",
-          "date": "2026-07-02T16:21:09.682878+00:00",
-          "url": "http://basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion/page_company.php?id=175",
-          "discovered_date": "2026-07-02T16:21:09.682878+00:00"
-        },
-        {
           "name": "dgcement.com",
           "date": "2026-07-06T13:21:22+00:00",
           "url": "https://www.ransomware.live/id/ZGdjZW1lbnQuY29tQGFwdDcz",
@@ -513,14 +501,24 @@
           "date": "2026-07-06T10:51:46+00:00",
           "url": "https://www.ransomware.live/id/dmljZW50ZXRyYXBhbmkuY29tQGFwdDcz",
           "discovered_date": "2026-07-06T10:51:46+00:00"
+        },
+        {
+          "name": "westernint.com",
+          "date": "2026-07-06T08:50:59+00:00",
+          "url": "https://www.ransomware.live/id/d2VzdGVybmludC5jb21AYXB0NzM=",
+          "discovered_date": "2026-07-06T08:50:59+00:00"
+        },
+        {
+          "name": "aydeniz.com",
+          "date": "2026-07-03T12:22:02+00:00",
+          "url": "https://www.ransomware.live/id/YXlkZW5pei5jb21AYXB0NzM=",
+          "discovered_date": "2026-07-03T12:22:02+00:00"
         }
       ],
       "industries": [
         "Business Services",
-        "Hospitality and Tourism",
         "Manufacturing",
-        "Not Found",
-        "Technology"
+        "Not Found"
       ],
       "countries": [
         "AR",
@@ -532,101 +530,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        5,
+        3,
         2,
         0,
         0,
         8,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Krybit",
-      "count": 12,
-      "victims": [
-        {
-          "name": "seprec.gob.bo",
-          "date": "2026-07-07T14:26:14.231340+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/b97dd628d06368f22daf4bf21b671c46c8b37d5ebfedeac6fc68688b5e55e943/",
-          "discovered_date": "2026-07-07T14:26:14.231340+00:00"
-        },
-        {
-          "name": "majuhome.com.my",
-          "date": "2026-07-03T09:54:38.036607+00:00",
-          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/cba113326007e55f5a42925d7f85f9edac137e1947522b425477006d0da47d78/",
-          "discovered_date": "2026-07-03T09:54:38.036607+00:00"
-        },
-        {
-          "name": "duflosa.com",
-          "date": "2026-07-03T09:36:16.243098+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/fd765fef9902cef123bf95c1e2a5a98d9f043c02de3d477ef73afac9c1e1a84d/",
-          "discovered_date": "2026-07-03T09:36:16.243098+00:00"
-        },
-        {
-          "name": "seprec.gob.bo",
-          "date": "2026-07-07T14:26:14+00:00",
-          "url": "https://www.ransomware.live/id/c2VwcmVjLmdvYi5ib0BrcnliaXQ=",
-          "discovered_date": "2026-07-07T14:26:14+00:00"
-        },
-        {
-          "name": "majuhome.com.my",
-          "date": "2026-07-03T09:54:38+00:00",
-          "url": "https://www.ransomware.live/id/bWFqdWhvbWUuY29tLm15QGtyeWJpdA==",
-          "discovered_date": "2026-07-03T09:54:38+00:00"
-        },
-        {
-          "name": "duflosa.com",
-          "date": "2026-07-03T09:36:16+00:00",
-          "url": "https://www.ransomware.live/id/ZHVmbG9zYS5jb21Aa3J5Yml0",
-          "discovered_date": "2026-07-03T09:36:16+00:00"
-        },
-        {
-          "name": "blaofood.com",
-          "date": "2026-07-01T14:00:06+00:00",
-          "url": "https://www.ransomware.live/id/Ymxhb2Zvb2QuY29tQGtyeWJpdA==",
-          "discovered_date": "2026-07-01T14:00:06+00:00"
-        },
-        {
-          "name": "jaws.com.tw",
-          "date": "2026-07-01T13:59:28+00:00",
-          "url": "https://www.ransomware.live/id/amF3cy5jb20udHdAa3J5Yml0",
-          "discovered_date": "2026-07-01T13:59:28+00:00"
-        },
-        {
-          "name": "gsp.es",
-          "date": "2026-07-01T13:58:50+00:00",
-          "url": "https://www.ransomware.live/id/Z3NwLmVzQGtyeWJpdA==",
-          "discovered_date": "2026-07-01T13:58:50+00:00"
-        },
-        {
-          "name": "www.diss.com",
-          "date": "2026-07-01T13:58:13+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmRpc3MuY29tQGtyeWJpdA==",
-          "discovered_date": "2026-07-01T13:58:13+00:00"
-        }
-      ],
-      "industries": [
-        "Consumer Services",
-        "Not Found",
-        "Public Sector"
-      ],
-      "countries": [
-        "BO",
-        "ES",
-        "ME",
-        "MX",
-        "MY"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        4,
-        0,
-        0,
-        0,
-        2,
         0
       ]
     },
@@ -715,6 +624,94 @@
         0,
         2,
         0
+      ]
+    },
+    {
+      "name": "Akira",
+      "count": 10,
+      "victims": [
+        {
+          "name": "Wade's Dairy",
+          "date": "2026-07-08T13:21:38.684354+00:00",
+          "url": "",
+          "discovered_date": "2026-07-08T13:21:38.684354+00:00"
+        },
+        {
+          "name": "RISE Architecture",
+          "date": "2026-07-07T14:21:50.486526+00:00",
+          "url": "",
+          "discovered_date": "2026-07-07T14:21:50.486526+00:00"
+        },
+        {
+          "name": "Chisholm Persson & Ball",
+          "date": "2026-07-07T13:51:34.799800+00:00",
+          "url": "",
+          "discovered_date": "2026-07-07T13:51:34.799800+00:00"
+        },
+        {
+          "name": "Excalibur Rentals",
+          "date": "2026-07-07T13:22:44.442857+00:00",
+          "url": "",
+          "discovered_date": "2026-07-07T13:22:44.442857+00:00"
+        },
+        {
+          "name": "Edge Solutions | Stone Ridge Payments",
+          "date": "2026-07-07T12:21:52.346099+00:00",
+          "url": "",
+          "discovered_date": "2026-07-07T12:21:52.346099+00:00"
+        },
+        {
+          "name": "Wade's Dairy",
+          "date": "2026-07-08T13:21:38+00:00",
+          "url": "https://www.ransomware.live/id/V2FkZSdzIERhaXJ5QGFraXJh",
+          "discovered_date": "2026-07-08T13:21:38+00:00"
+        },
+        {
+          "name": "RISE Architecture",
+          "date": "2026-07-07T14:21:50+00:00",
+          "url": "https://www.ransomware.live/id/UklTRSBBcmNoaXRlY3R1cmVAYWtpcmE=",
+          "discovered_date": "2026-07-07T14:21:50+00:00"
+        },
+        {
+          "name": "Chisholm Persson & Ball",
+          "date": "2026-07-07T13:51:34+00:00",
+          "url": "https://www.ransomware.live/id/Q2hpc2hvbG0gUGVyc3NvbiAmIEJhbGxAYWtpcmE=",
+          "discovered_date": "2026-07-07T13:51:34+00:00"
+        },
+        {
+          "name": "Excalibur Rentals",
+          "date": "2026-07-07T13:22:44+00:00",
+          "url": "https://www.ransomware.live/id/RXhjYWxpYnVyIFJlbnRhbHNAYWtpcmE=",
+          "discovered_date": "2026-07-07T13:22:44+00:00"
+        },
+        {
+          "name": "Edge Solutions | Stone Ridge Payments",
+          "date": "2026-07-07T12:21:52+00:00",
+          "url": "https://www.ransomware.live/id/RWRnZSBTb2x1dGlvbnMgfCBTdG9uZSBSaWRnZSBQYXltZW50c0Bha2lyYQ==",
+          "discovered_date": "2026-07-07T12:21:52+00:00"
+        }
+      ],
+      "industries": [
+        "Agriculture and Food Production",
+        "Business Services",
+        "Consumer Services",
+        "Financial Services"
+      ],
+      "countries": [
+        "GB",
+        "N/A",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        2
       ]
     },
     {
@@ -807,6 +804,81 @@
       ]
     },
     {
+      "name": "Chaos",
+      "count": 8,
+      "victims": [
+        {
+          "name": "opportune.com",
+          "date": "2026-07-08T07:22:55.747703+00:00",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/Z1UcbRiSKzvaVtE4I0b48cFO0jI0V0YO",
+          "discovered_date": "2026-07-08T07:22:55.747703+00:00"
+        },
+        {
+          "name": "corepharma.com",
+          "date": "2026-07-08T07:22:23.304277+00:00",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/Z6KoU0SixB9vmgLfssuHINwJEcO6uJYa",
+          "discovered_date": "2026-07-08T07:22:23.304277+00:00"
+        },
+        {
+          "name": "gisy.com",
+          "date": "2026-07-06T19:22:30.538831+00:00",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/HvNtlUrCy28pkleddtj1Ndi2vRGIEVRM",
+          "discovered_date": "2026-07-06T19:22:30.538831+00:00"
+        },
+        {
+          "name": "aircreebec.ca",
+          "date": "2026-07-06T16:51:47.571751+00:00",
+          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/GbzoPKkEKNZWucBEz8ILCyDUBnkCn0JH",
+          "discovered_date": "2026-07-06T16:51:47.571751+00:00"
+        },
+        {
+          "name": "opportune.com",
+          "date": "2026-07-08T07:22:55+00:00",
+          "url": "https://www.ransomware.live/id/b3Bwb3J0dW5lLmNvbUBjaGFvcw==",
+          "discovered_date": "2026-07-08T07:22:55+00:00"
+        },
+        {
+          "name": "corepharma.com",
+          "date": "2026-07-08T07:22:23+00:00",
+          "url": "https://www.ransomware.live/id/Y29yZXBoYXJtYS5jb21AY2hhb3M=",
+          "discovered_date": "2026-07-08T07:22:23+00:00"
+        },
+        {
+          "name": "gisy.com",
+          "date": "2026-07-06T19:22:30+00:00",
+          "url": "https://www.ransomware.live/id/Z2lzeS5jb21AY2hhb3M=",
+          "discovered_date": "2026-07-06T19:22:30+00:00"
+        },
+        {
+          "name": "aircreebec.ca",
+          "date": "2026-07-06T16:51:47+00:00",
+          "url": "https://www.ransomware.live/id/YWlyY3JlZWJlYy5jYUBjaGFvcw==",
+          "discovered_date": "2026-07-06T16:51:47+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Healthcare",
+        "Technology",
+        "Transportation/Logistics"
+      ],
+      "countries": [
+        "CA",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        4
+      ]
+    },
+    {
       "name": "Booba Project",
       "count": 8,
       "victims": [
@@ -880,76 +952,65 @@
       ]
     },
     {
-      "name": "Akira",
-      "count": 8,
+      "name": "Krybit",
+      "count": 6,
       "victims": [
         {
-          "name": "RISE Architecture",
-          "date": "2026-07-07T14:21:50.486526+00:00",
-          "url": "",
-          "discovered_date": "2026-07-07T14:21:50.486526+00:00"
+          "name": "seprec.gob.bo",
+          "date": "2026-07-07T14:26:14.231340+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/b97dd628d06368f22daf4bf21b671c46c8b37d5ebfedeac6fc68688b5e55e943/",
+          "discovered_date": "2026-07-07T14:26:14.231340+00:00"
         },
         {
-          "name": "Chisholm Persson & Ball",
-          "date": "2026-07-07T13:51:34.799800+00:00",
-          "url": "",
-          "discovered_date": "2026-07-07T13:51:34.799800+00:00"
+          "name": "majuhome.com.my",
+          "date": "2026-07-03T09:54:38.036607+00:00",
+          "url": "http://krybitxdpxohsmjooeb3gbgpmdddreh6mnflzac6bnezz74b7yje67yd.onion/blog/cba113326007e55f5a42925d7f85f9edac137e1947522b425477006d0da47d78/",
+          "discovered_date": "2026-07-03T09:54:38.036607+00:00"
         },
         {
-          "name": "Excalibur Rentals",
-          "date": "2026-07-07T13:22:44.442857+00:00",
-          "url": "",
-          "discovered_date": "2026-07-07T13:22:44.442857+00:00"
+          "name": "duflosa.com",
+          "date": "2026-07-03T09:36:16.243098+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/fd765fef9902cef123bf95c1e2a5a98d9f043c02de3d477ef73afac9c1e1a84d/",
+          "discovered_date": "2026-07-03T09:36:16.243098+00:00"
         },
         {
-          "name": "Edge Solutions | Stone Ridge Payments",
-          "date": "2026-07-07T12:21:52.346099+00:00",
-          "url": "",
-          "discovered_date": "2026-07-07T12:21:52.346099+00:00"
+          "name": "seprec.gob.bo",
+          "date": "2026-07-07T14:26:14+00:00",
+          "url": "https://www.ransomware.live/id/c2VwcmVjLmdvYi5ib0BrcnliaXQ=",
+          "discovered_date": "2026-07-07T14:26:14+00:00"
         },
         {
-          "name": "RISE Architecture",
-          "date": "2026-07-07T14:21:50+00:00",
-          "url": "https://www.ransomware.live/id/UklTRSBBcmNoaXRlY3R1cmVAYWtpcmE=",
-          "discovered_date": "2026-07-07T14:21:50+00:00"
+          "name": "majuhome.com.my",
+          "date": "2026-07-03T09:54:38+00:00",
+          "url": "https://www.ransomware.live/id/bWFqdWhvbWUuY29tLm15QGtyeWJpdA==",
+          "discovered_date": "2026-07-03T09:54:38+00:00"
         },
         {
-          "name": "Chisholm Persson & Ball",
-          "date": "2026-07-07T13:51:34+00:00",
-          "url": "https://www.ransomware.live/id/Q2hpc2hvbG0gUGVyc3NvbiAmIEJhbGxAYWtpcmE=",
-          "discovered_date": "2026-07-07T13:51:34+00:00"
-        },
-        {
-          "name": "Excalibur Rentals",
-          "date": "2026-07-07T13:22:44+00:00",
-          "url": "https://www.ransomware.live/id/RXhjYWxpYnVyIFJlbnRhbHNAYWtpcmE=",
-          "discovered_date": "2026-07-07T13:22:44+00:00"
-        },
-        {
-          "name": "Edge Solutions | Stone Ridge Payments",
-          "date": "2026-07-07T12:21:52+00:00",
-          "url": "https://www.ransomware.live/id/RWRnZSBTb2x1dGlvbnMgfCBTdG9uZSBSaWRnZSBQYXltZW50c0Bha2lyYQ==",
-          "discovered_date": "2026-07-07T12:21:52+00:00"
+          "name": "duflosa.com",
+          "date": "2026-07-03T09:36:16+00:00",
+          "url": "https://www.ransomware.live/id/ZHVmbG9zYS5jb21Aa3J5Yml0",
+          "discovered_date": "2026-07-03T09:36:16+00:00"
         }
       ],
       "industries": [
-        "Business Services",
         "Consumer Services",
-        "Financial Services"
+        "Not Found",
+        "Public Sector"
       ],
       "countries": [
-        "N/A",
-        "US"
+        "BO",
+        "MX",
+        "MY"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
         0,
+        4,
         0,
         0,
         0,
-        0,
-        8,
+        2,
         0
       ]
     },
@@ -1115,55 +1176,6 @@
       ]
     },
     {
-      "name": "Chaos",
-      "count": 4,
-      "victims": [
-        {
-          "name": "gisy.com",
-          "date": "2026-07-06T19:22:30.538831+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/HvNtlUrCy28pkleddtj1Ndi2vRGIEVRM",
-          "discovered_date": "2026-07-06T19:22:30.538831+00:00"
-        },
-        {
-          "name": "aircreebec.ca",
-          "date": "2026-07-06T16:51:47.571751+00:00",
-          "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/GbzoPKkEKNZWucBEz8ILCyDUBnkCn0JH",
-          "discovered_date": "2026-07-06T16:51:47.571751+00:00"
-        },
-        {
-          "name": "gisy.com",
-          "date": "2026-07-06T19:22:30+00:00",
-          "url": "https://www.ransomware.live/id/Z2lzeS5jb21AY2hhb3M=",
-          "discovered_date": "2026-07-06T19:22:30+00:00"
-        },
-        {
-          "name": "aircreebec.ca",
-          "date": "2026-07-06T16:51:47+00:00",
-          "url": "https://www.ransomware.live/id/YWlyY3JlZWJlYy5jYUBjaGFvcw==",
-          "discovered_date": "2026-07-06T16:51:47+00:00"
-        }
-      ],
-      "industries": [
-        "Technology",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "CA",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        4,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Dragonforce",
       "count": 4,
       "victims": [
@@ -1313,51 +1325,50 @@
       ]
     },
     {
-      "name": "Worldleaks",
+      "name": "Spacebears",
       "count": 4,
       "victims": [
         {
-          "name": "Service IT",
-          "date": "2026-07-02T14:01:26+00:00",
-          "url": "https://www.ransomware.live/id/U2VydmljZSBJVEB3b3JsZGxlYWtz",
-          "discovered_date": "2026-07-02T14:01:26+00:00"
+          "name": "Biessse",
+          "date": "2026-07-08T05:34:16+00:00",
+          "url": "https://www.ransomware.live/id/Qmllc3NzZUBzcGFjZWJlYXJz",
+          "discovered_date": "2026-07-08T05:34:16+00:00"
         },
         {
-          "name": "Treet Group of Companies",
-          "date": "2026-07-02T14:00:46+00:00",
-          "url": "https://www.ransomware.live/id/VHJlZXQgR3JvdXAgb2YgQ29tcGFuaWVzQHdvcmxkbGVha3M=",
-          "discovered_date": "2026-07-02T14:00:46+00:00"
+          "name": "Fitcrunch",
+          "date": "2026-07-07T01:32:21+00:00",
+          "url": "https://www.ransomware.live/id/Rml0Y3J1bmNoQHNwYWNlYmVhcnM=",
+          "discovered_date": "2026-07-07T01:32:21+00:00"
         },
         {
-          "name": "Starpool",
-          "date": "2026-07-01T14:07:27+00:00",
-          "url": "https://www.ransomware.live/id/U3RhcnBvb2xAd29ybGRsZWFrcw==",
-          "discovered_date": "2026-07-01T14:07:27+00:00"
+          "name": "Blenheim",
+          "date": "2026-07-06T04:32:35+00:00",
+          "url": "https://www.ransomware.live/id/QmxlbmhlaW1Ac3BhY2ViZWFycw==",
+          "discovered_date": "2026-07-06T04:32:35+00:00"
         },
         {
-          "name": "COMHAR",
-          "date": "2026-07-01T14:06:44+00:00",
-          "url": "https://www.ransomware.live/id/Q09NSEFSQHdvcmxkbGVha3M=",
-          "discovered_date": "2026-07-01T14:06:44+00:00"
+          "name": "Salters propane",
+          "date": "2026-07-02T06:33:15+00:00",
+          "url": "https://www.ransomware.live/id/U2FsdGVycyBwcm9wYW5lQHNwYWNlYmVhcnM=",
+          "discovered_date": "2026-07-02T06:33:15+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "BR",
+        "GB",
         "IT",
-        "PK",
         "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
+        1,
         0,
         0,
         0,
-        0,
-        0,
-        0
+        1,
+        1,
+        1
       ]
     },
     {
@@ -1403,42 +1414,83 @@
       ]
     },
     {
-      "name": "Spacebears",
+      "name": "Pear",
       "count": 3,
       "victims": [
         {
-          "name": "Fitcrunch",
-          "date": "2026-07-07T01:32:21+00:00",
-          "url": "https://www.ransomware.live/id/Rml0Y3J1bmNoQHNwYWNlYmVhcnM=",
-          "discovered_date": "2026-07-07T01:32:21+00:00"
+          "name": "Tostrud & Temp, S.C.",
+          "date": "2026-07-08T11:01:13+00:00",
+          "url": "https://www.ransomware.live/id/VG9zdHJ1ZCAmIFRlbXAsIFMuQy5AcGVhcg==",
+          "discovered_date": "2026-07-08T11:01:13+00:00"
         },
         {
-          "name": "Blenheim",
-          "date": "2026-07-06T04:32:35+00:00",
-          "url": "https://www.ransomware.live/id/QmxlbmhlaW1Ac3BhY2ViZWFycw==",
-          "discovered_date": "2026-07-06T04:32:35+00:00"
+          "name": "AC Beverage, Inc.",
+          "date": "2026-07-03T10:58:15+00:00",
+          "url": "https://www.ransomware.live/id/QUMgQmV2ZXJhZ2UsIEluYy5AcGVhcg==",
+          "discovered_date": "2026-07-03T10:58:15+00:00"
         },
         {
-          "name": "Salters propane",
-          "date": "2026-07-02T06:33:15+00:00",
-          "url": "https://www.ransomware.live/id/U2FsdGVycyBwcm9wYW5lQHNwYWNlYmVhcnM=",
-          "discovered_date": "2026-07-02T06:33:15+00:00"
+          "name": "CNW Electronics Pte Ltd",
+          "date": "2026-07-03T10:57:31+00:00",
+          "url": "https://www.ransomware.live/id/Q05XIEVsZWN0cm9uaWNzIFB0ZSBMdGRAcGVhcg==",
+          "discovered_date": "2026-07-03T10:57:31+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "GB",
+        "SG",
         "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
+        2,
         0,
         0,
         0,
-        1,
-        1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Worldleaks",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Service IT",
+          "date": "2026-07-02T14:01:26+00:00",
+          "url": "https://www.ransomware.live/id/U2VydmljZSBJVEB3b3JsZGxlYWtz",
+          "discovered_date": "2026-07-02T14:01:26+00:00"
+        },
+        {
+          "name": "Treet Group of Companies",
+          "date": "2026-07-02T14:00:46+00:00",
+          "url": "https://www.ransomware.live/id/VHJlZXQgR3JvdXAgb2YgQ29tcGFuaWVzQHdvcmxkbGVha3M=",
+          "discovered_date": "2026-07-02T14:00:46+00:00"
+        },
+        {
+          "name": "Starpool",
+          "date": "2026-07-01T14:07:27+00:00",
+          "url": "https://www.ransomware.live/id/U3RhcnBvb2xAd29ybGRsZWFrcw==",
+          "discovered_date": "2026-07-01T14:07:27+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BR",
+        "IT",
+        "PK"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
         0
       ]
     },
@@ -1622,6 +1674,41 @@
       ]
     },
     {
+      "name": "Nightspire",
+      "count": 2,
+      "victims": [
+        {
+          "name": "PCCC Realty LLC",
+          "date": "2026-07-08T12:29:41.306132+00:00",
+          "url": "",
+          "discovered_date": "2026-07-08T12:29:41.306132+00:00"
+        },
+        {
+          "name": "PCCC Realty LLC",
+          "date": "2026-07-08T12:29:41+00:00",
+          "url": "https://www.ransomware.live/id/UENDQyBSZWFsdHkgTExDQG5pZ2h0c3BpcmU=",
+          "discovered_date": "2026-07-08T12:29:41+00:00"
+        }
+      ],
+      "industries": [
+        "Consumer Services"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Unsafe",
       "count": 2,
       "victims": [
@@ -1650,40 +1737,6 @@
         0,
         0,
         2,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Pear",
-      "count": 2,
-      "victims": [
-        {
-          "name": "AC Beverage, Inc.",
-          "date": "2026-07-03T10:58:15+00:00",
-          "url": "https://www.ransomware.live/id/QUMgQmV2ZXJhZ2UsIEluYy5AcGVhcg==",
-          "discovered_date": "2026-07-03T10:58:15+00:00"
-        },
-        {
-          "name": "CNW Electronics Pte Ltd",
-          "date": "2026-07-03T10:57:31+00:00",
-          "url": "https://www.ransomware.live/id/Q05XIEVsZWN0cm9uaWNzIFB0ZSBMdGRAcGVhcg==",
-          "discovered_date": "2026-07-03T10:57:31+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "SG",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        2,
-        0,
         0,
         0,
         0,
