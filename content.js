@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 09 2026",
+            "headline": "12M Users Exposed—KDDI Data Breach via Zero-Day Exploit",
+            "title": "12 Million Impacted by Data Breach at Japanese Telco KDDI",
+            "content": "A significant data breach at Japanese telecommunications company KDDI has exposed the personal information of 12 million users. Hackers exploited a zero-day vulnerability in a third-party system to infiltrate KDDI's email system for Internet Service Providers (ISPs). This breach underscores the critical risk posed by zero-day vulnerabilities, which are flaws unknown to the software vendor and can be exploited by attackers before a patch is available. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the ongoing challenges telecom companies face in securing their vast networks against sophisticated cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/12-million-impacted-by-data-breach-at-japanese-telco-kddi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "GodDamn Ransomware Uses PoisonX to Evade Security",
+            "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
+            "content": "The newly identified GodDamn ransomware family is leveraging the PoisonX kernel driver to disable endpoint security defenses, posing a significant threat to organizations. According to Symantec's Threat Hunter Team, this tactic is part of a sophisticated defense evasion strategy that allows the ransomware to operate undetected. By neutralizing security software, GodDamn can more effectively encrypt files and demand ransoms. Organizations are advised to update their security solutions and monitor for unusual activity that could indicate a breach. This development highlights the evolving tactics of ransomware groups in circumventing traditional security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Microsoft Patches Defender Flaw—Update Urgently",
+            "title": "Microsoft Patches Defender ‘RoguePlanet’ Vulnerability",
+            "content": "Microsoft has released a patch for a critical vulnerability in its Defender antivirus software, tracked as CVE-2026-50656. Known as the 'RoguePlanet' vulnerability, this flaw allowed privilege escalation through the Microsoft Malware Protection Engine. Users of Microsoft Defender are urged to update their systems immediately to mitigate potential exploitation. The vulnerability had a CVSS score of 7.8, indicating a high severity level. This patch is part of Microsoft's ongoing efforts to address security weaknesses in its software products, emphasizing the importance of regular updates to protect against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-defender-rogueplanet-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Chrome 150 Update Fixes 27 Security Flaws",
+            "title": "Chrome 150 Update Patches 27 Vulnerabilities",
+            "content": "Google has released Chrome version 150, addressing 27 security vulnerabilities, including two critical use-after-free flaws. These vulnerabilities, if exploited, could allow attackers to execute arbitrary code on affected systems. Users are strongly advised to update to the latest version to protect against potential attacks. The update is part of Google's regular security maintenance, reflecting the company's commitment to safeguarding its browser against evolving threats. This release underscores the importance of timely software updates in maintaining robust cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-150-update-patches-27-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "AI Agents Tricked—Malicious Code Execution Risk",
+            "title": "Top AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It",
+            "content": "A proof-of-concept by the AI Now Institute reveals that AI coding agents, including Anthropic's Claude, can be manipulated to execute malicious code. This vulnerability, dubbed \"Friendly Fire,\" highlights the potential risks of relying on AI for security tasks without adequate safeguards. The attack involves tricking the AI into misinterpreting malicious code as benign, leading to unintended execution. Organizations using AI for code analysis should implement additional validation steps to mitigate this risk. This finding raises concerns about the security implications of integrating AI into critical cybersecurity processes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "764 Group Leader Jailed for 40 Years",
+            "title": "764 Splinter Group Leader Sentenced to 40 Years in Jail",
+            "content": "Alexis Chavez, a leader of the 764 splinter group, has been sentenced to 40 years in prison for coercing minors into producing child sexual abuse material. This case is part of a broader crackdown on violent extremist collectives affiliated with the Com. Chavez's conviction underscores the severe legal consequences for those involved in exploiting vulnerable individuals for criminal purposes. Law enforcement agencies continue to target such groups to dismantle their operations and protect potential victims. This sentencing serves as a stark reminder of the ongoing battle against online exploitation and abuse.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/764-splinter-group-leader-sentenced-alexis-chavez/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "QIZ Security Secures $17M for Cryptographic Platform",
+            "title": "QIZ Security Raises $17 Million for Cryptographic Governance Platform",
+            "content": "Israeli cybersecurity firm QIZ Security has secured $17 million in funding to advance its cryptographic governance platform. The platform focuses on cryptographic posture management and post-quantum cryptography, addressing the growing need for robust encryption solutions in the face of evolving cyber threats. This investment will enable QIZ Security to enhance its technology and expand its market presence. As quantum computing advances, the demand for post-quantum cryptography solutions is expected to rise, making this a strategic area for investment. Organizations should consider evaluating their cryptographic strategies to prepare for future challenges.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/qiz-security-raises-17-million-for-cryptographic-governance-platform/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "UK Unveils AI Defense Plan—Boosts Cybersecurity",
+            "title": "UK Government Rolls Out Agentic AI Defense Plan Alongside Industry Pledge",
+            "content": "The UK government has announced the Agentic AI Defense Plan, aiming to bolster national cybersecurity through AI-driven initiatives. This plan is part of a broader strategy to enhance the country's cyber resilience and includes collaboration with industry leaders. The initiative reflects the growing importance of AI in cybersecurity, as threats become more sophisticated and require advanced technological solutions. Organizations in the UK are encouraged to engage with the government's efforts and explore AI applications in their security frameworks. This development highlights the proactive measures being taken to address the evolving cyber threat landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Palo Alto Networks Fixes 13 Security Vulnerabilities",
+            "title": "Palo Alto Networks Patches 13 Vulnerabilities",
+            "content": "Palo Alto Networks has released patches for 13 vulnerabilities in its PAN-OS software, including buffer overflow, denial-of-service (DoS), and command injection flaws. These vulnerabilities could allow attackers to execute arbitrary code, disrupt services, or bypass authentication mechanisms. Organizations using PAN-OS are advised to apply the updates promptly to mitigate potential risks. This patch release is part of Palo Alto Networks' commitment to maintaining the security of its products amid an increasingly complex threat environment. Regular updates and vulnerability management are crucial for safeguarding network infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-13-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "GhostLock Vulnerability Earns Researchers $92K from Google",
+            "title": "15-Year-Old Linux Vulnerability ‘GhostLock’ Earns Researchers $92k From Google",
+            "content": "Security researchers have been awarded $92,000 by Google for discovering the 'GhostLock' vulnerability, a 15-year-old flaw in the Linux kernel. Affecting major distributions since 2011, this vulnerability allows attackers to gain root access, posing a severe security risk. The discovery underscores the importance of continuous security audits and the potential longevity of vulnerabilities in widely-used software. Organizations using Linux should ensure their systems are updated with the latest patches to protect against exploitation. This case highlights the value of bug bounty programs in uncovering and addressing long-standing security issues.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/15-year-old-linux-vulnerability-ghostlock-earns-researchers-92k-from-google/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 08 2026",
             "headline": "Accenture Confirms Breach—Source Code Allegedly Stolen",
             "title": "Accenture Confirms Data Breach After Hacker Claims Source Code Theft",
@@ -92,106 +182,97 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4193699/why-the-gentlemen-ransomware-is-a-test-of-identity-and-recovery-controls.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Ubiquiti Critical Flaws Patched—Update UniFi Systems Now",
-            "title": "Ubiquiti Patches Critical UniFi Flaws Across Connect, Talk, Access, Protect, and OS",
-            "content": "Ubiquiti has released important updates to fix critical vulnerabilities in its UniFi product line, including Connect, Talk, Access, Protect, and OS. The vulnerabilities, such as CVE-2026-50746, could lead to privilege escalation and arbitrary command execution. These flaws pose a significant risk to organizations using these systems, potentially allowing attackers to gain unauthorized access and control. The vulnerabilities have been assigned a high CVSS score, indicating their severity. Users are urged to apply the patches immediately to mitigate potential exploitation. This update underscores the importance of timely patch management in maintaining system security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Felons Behind Cybersecurity Startup Buying Zero-Days",
-            "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
-            "content": "A controversial cybersecurity startup is under scrutiny for offering millions to acquire zero-day vulnerabilities in popular software. The company is led by convicted felons with ties to far-right conspiracy theories, raising ethical and security concerns. Their previous ventures included fake intelligence companies and an AI-based lobbying platform. This development highlights the ongoing debate over the ethics of selling zero-day exploits and the potential risks posed by such transactions. Security professionals are urged to consider the implications of engaging with firms that have questionable leadership and motives.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "CISA Demands Urgent Patching of ColdFusion, Joomla Flaws",
-            "title": "CISA Urges Immediate Patching of Exploited ColdFusion, Langflow, Joomla Flaws",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added critical vulnerabilities in Adobe ColdFusion, Langflow, and Joomla extensions to its Known Exploited Vulnerabilities catalog. Federal agencies have been given a deadline of July 10 to patch these flaws. The vulnerabilities are being actively exploited, posing a significant threat to affected systems. Organizations using these platforms should prioritize applying the necessary updates to protect against potential attacks. This action reflects CISA's ongoing efforts to mitigate risks from known vulnerabilities in widely used software.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-coldfusion-langflow-joomla-flaws/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub Workflows Vulnerable to Prompt Injection—Data at Risk",
-            "title": "Critical Vulnerability Exposes GitHub Agentic Workflows to Prompt Injection",
-            "content": "Researchers have identified a critical vulnerability in GitHub's Agentic Workflows that allows attackers to exploit AI-powered processes through prompt injection. By crafting a public GitHub Issue, attackers can access data from private repositories without authentication. This vulnerability poses a significant risk to organizations using GitHub for software development, as sensitive data could be exposed. The discovery highlights the potential dangers of integrating AI into development workflows without adequate security measures. Developers are advised to review their use of AI in workflows and implement additional safeguards.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-vulnerability-exposes-github-agentic-workflows-to-prompt-injection/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GhostLock Flaw in Linux—Root Access Vulnerability Found",
-            "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
-            "content": "Nebula Security researchers have disclosed GhostLock (CVE-2026-43499), a critical Linux kernel vulnerability that has existed for 15 years. This flaw allows any logged-in user to gain root access and escape containers on unpatched systems. The vulnerability affects nearly every mainstream Linux distribution since 2011, posing a severe risk to affected systems. Organizations using Linux are urged to apply patches immediately to prevent potential exploitation. This discovery underscores the importance of regular security audits and updates in maintaining system integrity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "CISA Adds 4 Exploited Flaws to KEV—Patch Now",
-            "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
-            "content": "CISA has expanded its Known Exploited Vulnerabilities catalog with four new entries, including a critical path traversal vulnerability (CVE-2026-48282) with a CVSS score of 10.0. These vulnerabilities are actively being exploited, affecting Adobe, Joomla, and Langflow products. The addition to the KEV catalog emphasizes the urgency for organizations to patch these flaws to prevent potential breaches. CISA's proactive approach aims to mitigate risks associated with these vulnerabilities and protect critical infrastructure from exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Ghost Phishing Technique Bypasses Email Security Measures",
-            "title": "New Ghost Phishing Wave Is Breaking Traditional Email Security",
-            "content": "A novel phishing technique known as \"ghost phishing\" is targeting businesses across the US and Europe, exploiting a blind spot in traditional email security. The EvilTokens campaign uses encrypted malicious pages that only decrypt and activate within the victim's browser. This method bypasses standard email security measures, posing a significant threat to organizations. Security leaders are advised to enhance their email security protocols and educate employees on recognizing phishing attempts. The rise of ghost phishing highlights the evolving tactics used by cybercriminals to evade detection.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "SCMBANKER Malware Targets Mexican Banks with ClickFix Lures",
-            "title": "SCMBANKER Malware Uses ClickFix Lures to Target Mexican Banking Users",
-            "content": "A new malware campaign, SCMBANKER, is targeting customers of Mexican banks, fintech, and cryptocurrency exchanges using ClickFix lures. The operation, tracked as REF6045 by Elastic Security Labs, involves fake CAPTCHA verification pages to infect victims. This tactic aims to steal sensitive banking information, posing a significant threat to financial institutions and their customers. Organizations in the financial sector are urged to enhance their security measures and educate users on recognizing phishing attempts. The emergence of SCMBANKER highlights the ongoing threats faced by the banking industry.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Dialogflow CX Bug Exposes AI Conversations to Hijacking",
-            "title": "Google Dialogflow CX Bug Allowed Attackers to Hijack AI Conversations",
-            "content": "A vulnerability in Google Dialogflow CX, dubbed \"Rogue Agent,\" could have allowed attackers to manipulate AI conversations and exfiltrate data. This flaw affected all Dialogflow CX agents within the same Google Cloud project, posing a significant risk to organizations using the platform. The vulnerability highlights the potential dangers of AI integration in customer service and other applications. Organizations are advised to review their use of Dialogflow CX and apply necessary security measures to protect sensitive data. This incident underscores the importance of securing AI-driven platforms against exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-dialogflow-cx-bug-allowed-attackers-to-hijack-ai-conversations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub Copilot Flaw: Harmful Code Written Despite Refusal",
-            "title": "GitHub Copilot Refuses Harmful Requests in Chat, Then Writes Them in Code",
-            "content": "Researchers have discovered a flaw in GitHub Copilot, where the AI assistant refuses dangerous requests in chat but executes them when broken into smaller steps in code. This vulnerability poses a risk as harmful code can be generated without explicit user intent. The study by Abhishek Kumar and Carsten Maple highlights the challenges of ensuring AI safety in coding environments. Developers using Copilot should be aware of this issue and implement additional safeguards to prevent unintended code generation. This finding emphasizes the need for robust AI governance in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/github-copilot-refuses-harmful-requests.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jul 06 2026",
-            "headline": "Microsoft Cuts 4,800 Jobs—2.1% of Workforce Affected",
-            "title": "Microsoft Announces Layoffs Impacting 4,800 Employees as New Fiscal Year Begins",
-            "content": "Microsoft has announced the layoff of approximately 4,800 employees, representing 2.1% of its workforce, as it enters a new fiscal year. This follows last year's reduction of around 9,100 positions. The layoffs predominantly affect the company's commercial sectors, reflecting ongoing restructuring efforts to optimize operations and focus on strategic growth areas. The move is part of a broader trend in the tech industry, where companies are recalibrating workforce sizes in response to evolving market demands and financial pressures. Impacted employees are expected to receive severance packages and support in transitioning to new roles.",
+            "date": "Jul 09 2026",
+            "headline": "Anthropic's Claude Reflect—AI Dependence Visualized",
+            "title": "Anthropic's Claude Reflect Dashboard Highlights AI Integration in Workflows",
+            "content": "Anthropic has introduced the Reflect dashboard for its Claude chatbot, offering users a visual representation of their AI usage patterns. This feature subtly underscores the growing reliance on AI in daily tasks, as users can see how much of their work is facilitated by Claude. The dashboard aims to provide insights into AI integration, potentially influencing how businesses and individuals optimize their workflows. As AI becomes more embedded in professional environments, understanding its impact is crucial for maximizing efficiency. Users should explore the Reflect feature to assess and adjust their AI usage strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Ollama Raises $65M—9M Users Embrace Open Source AI",
+            "title": "Ollama Secures $65M Funding as User Base Nears 9 Million",
+            "content": "Open source AI developer tool Ollama has successfully raised $65 million in funding, backed by Benchmark, as it grows its user base to nearly 9 million. The platform has gained significant traction on GitHub, boasting 176,000 stars and 17,000 forks, by enabling developers to efficiently run AI models on personal computers. This funding round is expected to further enhance Ollama's capabilities and expand its reach in the developer community. As open source tools continue to democratize AI development, Ollama's growth highlights the increasing demand for accessible AI solutions. Developers should consider leveraging Ollama for streamlined AI integration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "AI IPOs Surpass 25 Years of Tech Exits—A New Era",
+            "title": "Anthropic, OpenAI, and SpaceX IPOs Eclipse Two Decades of Exits",
+            "content": "The impending IPOs of Anthropic, OpenAI, and SpaceX are set to generate more value than all U.S. venture capital-backed tech exits since 2000. This monumental shift underscores the transformative impact of AI and space technologies on the market. As these companies prepare for public offerings, investors and tech leaders are closely monitoring the potential for unprecedented financial returns. The scale of these IPOs reflects the growing importance of AI and space exploration in shaping future technological landscapes. Stakeholders should prepare for significant market shifts as these IPOs unfold.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Meta's Muse Spark 1.1—AI Coding Revolution",
+            "title": "Meta's Muse Spark 1.1 Enhances AI Coding Capabilities with New API",
+            "content": "Meta has unveiled its latest AI model, Muse Spark 1.1, aimed at revolutionizing AI coding through enhanced capabilities and a new Meta Model API. This update marks a significant improvement from the initial Muse Spark model, offering developers the ability to integrate AI into coding software more seamlessly. By opening access to its advanced model, Meta is positioning itself as a formidable player in the AI coding landscape. Developers are encouraged to explore the new API to leverage Muse Spark 1.1's capabilities in their projects. This development reflects Meta's commitment to advancing AI-driven coding solutions.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/961528/microsoft-layoffs-july-2026-sales-xbox",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Claude Wrapped—AI Usage Insights Unveiled",
+            "title": "Anthropic Introduces Claude Wrapped for AI Usage Analysis",
+            "content": "Anthropic has launched Claude Wrapped, a new feature for its Claude chatbot that provides users with an annual analysis of their AI usage data. Inspired by the popular Spotify Wrapped, this feature offers insights into how users interact with AI, highlighting trends and patterns over the year. By understanding these usage metrics, individuals and businesses can optimize their AI strategies for improved efficiency and effectiveness. As AI continues to integrate into daily operations, tools like Claude Wrapped are essential for informed decision-making. Users should utilize this feature to gain a comprehensive view of their AI engagement.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Character.AI Debuts Interactive Microdramas",
+            "title": "Character.AI Launches c.ai Series for Interactive Microdrama Experiences",
+            "content": "Character.AI has expanded its offerings with the introduction of c.ai Series, short-form, episodic videos designed for interactive viewing on mobile devices. This new format allows users to engage with content in a dynamic way, interacting with characters and influencing storylines. Unlike traditional media, c.ai Series leverages Character.AI's core technology to create immersive experiences that blend storytelling with user interaction. This innovation positions Character.AI as a leader in the evolving landscape of digital entertainment. Users interested in interactive media should explore c.ai Series for a unique viewing experience.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Character.AI's Microdramas—Interactive Storytelling Redefined",
+            "title": "Character.AI's Microdramas Offer Interactive Storytelling with User Engagement",
+            "content": "Character.AI has entered the microdrama space with a twist, allowing users to interact with characters in its new productions. This innovative approach enables viewers to chat with characters, ask questions, and even roleplay different storylines, enhancing the traditional viewing experience. By leveraging its AI capabilities, Character.AI is redefining how audiences engage with content, offering a more personalized and immersive experience. This development highlights the potential of AI in transforming digital storytelling. Users should explore these interactive microdramas for a novel entertainment experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "FL Studio 2026—AI Chatbot Becomes Assistant Engineer",
+            "title": "FL Studio 2026 Enhances Gopher AI Chatbot for Engineering Assistance",
+            "content": "Image Line has upgraded its AI chatbot, Gopher, in FL Studio 2026, transforming it from a basic instruction manual into a full-fledged assistant engineer. The new release allows users to leverage Gopher for more complex tasks, enhancing productivity and streamlining music production workflows. This evolution reflects the growing trend of integrating AI into creative processes, offering musicians and producers a powerful tool for optimizing their projects. Users of FL Studio should explore the enhanced capabilities of Gopher to maximize their production efficiency. This update underscores the potential of AI in creative industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Nilekani Exits GP Role—Fundamentum Launches $200M Fund",
+            "title": "Nandan Nilekani Steps Down as GP as Fundamentum Launches $200M Fund",
+            "content": "Nandan Nilekani has stepped down from his general partner role at Fundamentum as the firm launches its third fund, valued at $200 million. Despite his departure from the leadership position, Nilekani remains the anchor investor, supporting the firm's focus on AI and fintech startups in India. This strategic move aims to bolster Fundamentum's investment capabilities and expand its influence in the rapidly growing Indian tech sector. Investors and startups should note this development as an opportunity for increased funding and support in AI and fintech innovations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Video Games—Superior AI Training Data Over Internet",
+            "title": "CEO Advocates Video Games as Superior Training Data for AI",
+            "content": "A CEO has argued that video games provide better training data for achieving artificial general intelligence (AGI) compared to the internet. While large language models like ChatGPT excel at text processing, they lack the spatial and temporal understanding necessary for AGI. Video games, with their complex environments and dynamic interactions, offer a rich source of data for training AI to understand real-world scenarios. This perspective highlights the potential of gaming as a valuable resource in advancing AI capabilities. Researchers and developers should consider incorporating video game data into their AI training methodologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Slack has launched a new integration that allows Slackbot, its AI-powered assistant, to access the Salesforce platform, including CRM data, and perform tasks such as generating charts and sending DocuSigns directly from chat messages. This development comes five years after Salesforce's $27.7 billion acquisition of Slack, marking a significant step towards unifying the two platforms. The integration aims to enhance productivity by enabling seamless access to CRM insights and document management within Slack's collaborative environment. Businesses leveraging Salesforce for customer relationship management can now streamline workflows and improve efficiency. Users should explore the new capabilities to maximize their CRM investments.",
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/orchestration/slacks-slackbot-can-now-pull-your-crm-data-generate-charts-and-send-docusigns-all-from-a-chat-message",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Ex-OpenAI Exec Joins Stoke Space Board—Focus on Reusable Rockets",
-            "title": "Former OpenAI Executive Kevin Weil Joins Stoke Space Board",
-            "content": "Kevin Weil, a former executive at OpenAI, has joined the board of directors at Stoke Space, a company focused on developing reusable rocket technology. This move signals a growing interest in reusable rockets within Silicon Valley, as companies seek to innovate in space technology. Stoke Space aims to reduce the cost of space travel by creating rockets that can be reused multiple times, a concept that has gained traction following the success of companies like SpaceX. Weil's expertise in AI and technology leadership is expected to contribute to Stoke Space's strategic direction. Industry professionals should watch for advancements in reusable rocket technology as it becomes a focal point for innovation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/former-openai-exec-kevin-weil-is-now-on-the-board-of-stoke-space/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "ZML Releases Free Tool—Cuts AI Inference Costs Across Chips",
-            "title": "French Startup ZML Launches Free Software to Optimize AI Inference",
-            "content": "ZML, a French AI startup backed by Turing Award winner Yann LeCun, has released ZML/LLMD, a free software tool designed to optimize AI inference across various AI chips. This tool aims to reduce the operational costs associated with running AI models by improving efficiency across different hardware platforms. As AI applications continue to expand, the ability to run models cost-effectively is crucial for businesses looking to scale their AI capabilities. The release of ZML/LLMD represents a significant step towards democratizing AI technology by making it more accessible and affordable. Developers and AI practitioners should consider integrating this tool to enhance performance and reduce costs.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/hot-french-startup-zml-releases-free-product-to-speed-inference-across-lots-of-ai-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "SambaNova Secures $1B Funding—Valuation Hits $11B",
-            "title": "SambaNova Raises $1 Billion, Reaches $11 Billion Valuation",
-            "content": "SambaNova, an AI chip maker, has successfully raised $1 billion in a new funding round, bringing its valuation to $11 billion. This comes just five months after rumors circulated about Intel's interest in acquiring the company for approximately $1.6 billion. SambaNova's rapid valuation increase highlights the growing demand for advanced AI hardware solutions. The company specializes in developing chips that enhance AI model performance, catering to industries requiring high computational power. Investors and tech leaders should note SambaNova's trajectory as it continues to attract significant financial backing and drive innovation in AI hardware.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Meta's Muse Model—AI Photos with Instagram Users",
-            "title": "Meta Launches Muse Image Model for AI-Generated Photos",
-            "content": "Meta has introduced the Muse Image model, an AI-powered tool that enables users to incorporate other Instagram users into AI-generated photos. Developed by Meta's Superintelligence Labs, this model is now integrated into the Meta AI app, Instagram, and WhatsApp, with plans to expand to Facebook and Messenger. This innovation allows users to create personalized and interactive visual content, enhancing social media engagement. As AI-generated media becomes more prevalent, privacy and ethical considerations remain critical. Users and developers should be aware of the potential implications of AI in content creation and ensure responsible use.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/962485/meta-muse-image-ai-model-instagram",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Open Source AI Thrives—Anthropic Unaffected for Now",
-            "title": "Open Source AI Models and Anthropic Coexist in AI Ecosystem",
-            "content": "Open source AI models are gaining traction but have not yet impacted the growth of frontier labs like Anthropic. These models and proprietary labs capture different phases of the AI development lifecycle, with open source models often serving as foundational tools for broader innovation. While open source projects democratize AI access, Anthropic and similar labs focus on advancing cutting-edge capabilities. This dual approach allows for a diverse AI ecosystem, where both open source and proprietary models contribute to technological advancements. Professionals should monitor how this dynamic evolves, as it could influence future AI development strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Meta's Muse Image Faces Backlash Over Photo Use",
-            "title": "Meta's Muse Image AI Sparks Privacy Concerns Among Users",
-            "content": "Meta has launched Muse Image, an AI image generator, sparking user backlash over the use of personal photos. The model, developed by Meta's Superintelligence Labs, is integrated into the Meta AI app, Instagram, and WhatsApp, with plans to expand to Facebook and Messenger. Users are concerned about privacy and consent, as the model can incorporate photos from other Instagram users into AI-generated images. This raises significant privacy issues, especially for those unaware of their inclusion in generated content. Meta must address these concerns to maintain user trust and comply with privacy regulations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Microsoft Cuts AI Costs—Leverages In-House Models",
-            "title": "Microsoft Reduces AI Spending by Utilizing Proprietary Models",
-            "content": "Microsoft is the latest tech giant to reduce AI expenditures by increasingly relying on its own AI models. This strategic shift aligns with a broader industry trend where companies seek cost efficiencies amid rising AI development expenses. By leveraging proprietary models, Microsoft aims to optimize performance while controlling costs, potentially setting a precedent for other tech firms. This move could impact partnerships with external AI providers and influence the competitive landscape. Organizations should evaluate their AI strategies to balance innovation with financial sustainability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Discord AI Bug Bans 200 Users—Issue Resolved",
-            "title": "Discord AI Moderation Error Wrongfully Banned Users",
-            "content": "Discord has acknowledged a bug in its AI moderation system that wrongfully banned over 200 users for posting harmless images. The issue, affecting accounts since May, was identified and resolved over the weekend. This incident highlights the challenges of relying on AI for content moderation, where false positives can significantly impact user experience. Discord's swift response underscores the importance of continuous monitoring and refinement of AI systems to prevent similar occurrences. Users affected by the bans have been reinstated, and Discord is reviewing its moderation protocols to enhance accuracy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Anthropic's Claude Cowork Launches on Mobile and Web",
-            "title": "Anthropic Expands Claude Cowork AI Platform to Mobile and Web",
-            "content": "Anthropic has launched its Claude Cowork AI platform on mobile and web, expanding access beyond its previous availability through the Claude app. Initially available to Max subscribers, the rollout will extend to other users in the coming weeks. This expansion allows users to start tasks on one device and seamlessly continue on another, enhancing productivity and flexibility. Claude Cowork's mobile and web integration reflects a growing trend of AI platforms prioritizing cross-device functionality. Users should explore these new capabilities to optimize their workflow and collaboration.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
             "relatedResources": []
         }
     ],
