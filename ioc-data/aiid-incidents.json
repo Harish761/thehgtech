@@ -1,11 +1,27 @@
 {
   "incidents": [
     {
+      "id": "AIID-912",
+      "incident_id": 912,
+      "title": "Yahoo Boys and Scammers from Morocco Allegedly Target U.S. Widows and Vulnerable Individuals with 'A",
+      "date": "2026-07-09",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1576",
       "incident_id": 1576,
       "title": "Lawyers in Lexos Media IP LLC v. Overstock.com Inc. Sanctioned Over Court-Identified AI-Generated Ci",
       "date": "2026-07-09",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1579",
+      "incident_id": 1579,
+      "title": "Purportedly AI-Generated Videos Reportedly Impersonated Ghanaian President John Mahama to Solicit Mo",
+      "date": "2026-07-09",
+      "category": "fraud",
       "severity": "medium"
     },
     {
@@ -2610,9 +2626,9 @@
     }
   ],
   "stats": {
-    "total": 326,
-    "last7Days": 15,
-    "last30Days": 137
+    "total": 328,
+    "last7Days": 16,
+    "last30Days": 116
   },
-  "lastUpdated": "2026-07-09T23:36:21.782329+05:30"
+  "lastUpdated": "2026-07-10T01:51:18.181514+05:30"
 }
