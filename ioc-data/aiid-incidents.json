@@ -33,6 +33,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1578",
+      "incident_id": 1578,
+      "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
+      "date": "2026-07-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1571",
       "incident_id": 1571,
       "title": "California Immigration Attorneys Reportedly Sanctioned Over Briefs Containing Probable Hallucination",
@@ -2602,9 +2610,9 @@
     }
   ],
   "stats": {
-    "total": 325,
-    "last7Days": 14,
-    "last30Days": 136
+    "total": 326,
+    "last7Days": 15,
+    "last30Days": 137
   },
-  "lastUpdated": "2026-07-09T09:37:49.196883+05:30"
+  "lastUpdated": "2026-07-09T16:46:09.467194+05:30"
 }
