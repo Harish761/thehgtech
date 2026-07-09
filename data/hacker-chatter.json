@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-07-08T16:14:04.091285",
-  "total_incidents": 29253,
+  "last_updated": "2026-07-09T06:26:08.205550",
+  "total_incidents": 29254,
   "incidents": [
+    {
+      "id": "qilin_peligro_sports",
+      "victim_name": "Peligro Sports",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-09T05:27:52.300517+00:00",
+      "industry": "Consumer Services",
+      "website": "www.peligrosportsnyc.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/e460e1583ef257df9e71d6d5c02e886a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=55e65e6a-8abe-400a-af69-a5afda4c8eca",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_s.j._louis",
       "victim_name": "S.J. Louis",
