@@ -1,9 +1,33 @@
 {
   "incidents": [
     {
+      "id": "AIID-1576",
+      "incident_id": 1576,
+      "title": "Lawyers in Lexos Media IP LLC v. Overstock.com Inc. Sanctioned Over Court-Identified AI-Generated Ci",
+      "date": "2026-07-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1574",
       "incident_id": 1574,
       "title": "Purportedly AI-Generated Explicit Images of Students Allegedly Circulated at Lake Zurich High School",
+      "date": "2026-07-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1575",
+      "incident_id": 1575,
+      "title": "Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers",
+      "date": "2026-07-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1577",
+      "incident_id": 1577,
+      "title": "Lawyer in Amarsingh v. Frontier Airlines Sanctioned Over Court-Identified ChatGPT Citation Errors",
       "date": "2026-07-08",
       "category": "other",
       "severity": "medium"
@@ -2578,9 +2602,9 @@
     }
   ],
   "stats": {
-    "total": 322,
-    "last7Days": 11,
-    "last30Days": 133
+    "total": 325,
+    "last7Days": 14,
+    "last30Days": 136
   },
-  "lastUpdated": "2026-07-09T02:50:11.120759+05:30"
+  "lastUpdated": "2026-07-09T09:37:49.196883+05:30"
 }
