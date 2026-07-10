@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 10 2026",
+            "headline": "DHS Database Breach—7M Affected in AssuranceAmerica Hack",
+            "title": "DHS Database Compromised, AssuranceAmerica Breach Exposes 7 Million Records",
+            "content": "In a significant breach, the Department of Homeland Security (DHS) database was hacked, and AssuranceAmerica reported a data breach affecting 7 million individuals. The breach underscores vulnerabilities in critical infrastructure and the insurance sector. Meanwhile, Adobe has increased its patch release frequency to address rising security threats, and Canada has successfully disrupted ransomware operations. These developments highlight the ongoing challenges in cybersecurity, emphasizing the need for robust defenses and timely updates. Organizations are urged to review their security protocols and ensure all systems are patched promptly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-dhs-database-hacked-adobe-boosts-patch-cadence-canada-disrupts-ransomware-ops/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "70-Month Sentence for Ransomware Negotiator in BlackCat Case",
+            "title": "Former Ransomware Negotiator Sentenced for Aiding BlackCat Group",
+            "content": "Angelo Martino, a former ransomware negotiator, has been sentenced to 70 months in prison for assisting the BlackCat/Alphv ransomware group. Martino's involvement included negotiating ransoms and facilitating extortion efforts, highlighting the complex role of insiders in cybercrime. This case marks the third U.S. security expert sentenced for collaborating with ransomware gangs, underscoring the need for vigilance within the cybersecurity community. Organizations should strengthen internal controls and conduct thorough background checks to mitigate insider threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/third-us-security-expert-sentenced-to-prison-for-helping-ransomware-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "China, India Hackers Target Pakistani Police—2-Year Campaign",
+            "title": "China and India-Linked Hackers Target Balochistan Police Force",
+            "content": "Hackers linked to both China and India have been targeting the Balochistan Police force in Pakistan for over two years, according to SentinelOne. This unusual convergence of adversaries and allies highlights the geopolitical complexities in cyber warfare. The attacks have focused on intelligence gathering and disrupting law enforcement operations. The ongoing campaign emphasizes the need for enhanced cybersecurity measures in critical public sector entities. Security teams should prioritize threat intelligence sharing and cross-border collaboration to counter such sophisticated threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/china-india-linked-hackers-both-targeted-same-pakistani-police-force/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "GigaWiper Malware—Combines Wiper and Ransomware for Destruction",
+            "title": "GigaWiper Malware Combines Wiper and Ransomware for System Sabotage",
+            "content": "GigaWiper, a new malware variant, combines destructive capabilities including a standalone wiper, ransomware encryption, and a multi-pass wiping command. This sophisticated backdoor poses a significant threat to system integrity, blurring the lines between espionage and sabotage. Organizations across various sectors are at risk, particularly those with inadequate backup and recovery strategies. The emergence of GigaWiper highlights the evolving nature of malware, necessitating comprehensive security measures and incident response plans. IT teams should ensure regular data backups and conduct security audits to mitigate potential impacts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gigawiper-combines-multiple-malware-for-system-level-sabotage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "AI Hallucinations Exploited—HalluSquatting Enables Botnet Attacks",
+            "title": "HalluSquatting Exploits AI Hallucinations for Botnet Delivery Mechanism",
+            "content": "Researchers have demonstrated a novel attack method called HalluSquatting, which exploits adversarial hallucinations in AI assistants to achieve remote code execution. This technique leverages AI-generated false outputs to deliver malicious payloads, effectively turning AI systems into botnet delivery mechanisms. The attack poses significant risks to enterprises relying on AI for critical operations. As AI adoption grows, organizations must implement robust security measures to protect against such innovative threats. Security teams should conduct regular AI system audits and apply adversarial training to enhance resilience.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hallusquatting-turns-ai-hallucinations-into-botnet-delivery-mechanism/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "CrowdStrike Identifies 5 Prompt Injection Threats to AI Systems",
+            "title": "CrowdStrike Uncovers Five New Prompt Injection Threats to AI",
+            "content": "CrowdStrike has identified five new prompt injection techniques that exploit vulnerabilities in AI systems, posing risks to enterprises. These attacks manipulate large language models (LLMs) into executing unauthorized instructions, potentially leading to data breaches and system compromises. As AI integration in business processes increases, the threat landscape evolves, necessitating enhanced security measures. Organizations should prioritize securing AI applications and conduct regular vulnerability assessments to identify and mitigate prompt injection risks. Training AI models with adversarial examples can also help improve their robustness.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4195670/crowdstrike-identifies-five-new-prompt-injection-threats-to-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Windows HTTP.sys RCE Bug—Patch CVE-2026-47291 Now",
+            "title": "CVE-2026-47291: Critical RCE Vulnerability in Windows HTTP.sys Patched",
+            "content": "A critical remote code execution (RCE) vulnerability, CVE-2026-47291, in the Windows HTTP protocol stack has been patched, according to TrendAI Research Services. The flaw allows attackers to execute arbitrary code, potentially leading to denial-of-service conditions. Affected systems include those running unpatched versions of Windows HTTP.sys. Organizations are urged to apply the latest security updates to mitigate this risk. This vulnerability highlights the importance of timely patch management in maintaining system security and preventing exploitation by threat actors.",
+            "source": "Zero Day Initiative - Blog",
+            "sourceUrl": "https://www.thezdi.com/blog/2026/7/9/cve-2026-47291-remote-code-execution-in-the-windows-httpsys",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Chrome Issues Two Critical Updates in Two Days",
+            "title": "Google Releases Two Chrome Updates to Patch Critical Vulnerabilities",
+            "content": "Google has issued two Chrome updates within two days to address critical vulnerabilities affecting the browser. Users are advised to update to the latest version to protect against potential exploits. The rapid release of updates underscores the ongoing threat landscape targeting popular software platforms. Chrome users should ensure automatic updates are enabled or manually check for updates to maintain security. This incident highlights the importance of prompt patching in safeguarding against emerging threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/two-chrome-updates-in-two-days-fix-critical-vulnerabilities",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "WhatsApp-to-Host Attack Chain—3 OpenClaw Flaws Exploited",
+            "title": "Researcher Details WhatsApp-to-Host Attack Chain Using OpenClaw Flaws",
+            "content": "Security researchers have disclosed three high-severity vulnerabilities in the OpenClaw AI assistant that could enable credential theft, privilege escalation, and arbitrary code execution. The flaws, now patched, were exploited in a WhatsApp-to-host attack chain, posing significant risks to users. This incident highlights the critical need for regular security assessments and timely patching of AI systems. Organizations using OpenClaw should ensure they have applied the latest updates and review their security configurations to prevent similar attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "WP-SHELLSTORM Backdoor Exposed—1.4M WordPress Sites Targeted",
+            "title": "Exposed Hacker Server Reveals WP-SHELLSTORM Backdooring Thousands of WordPress Sites",
+            "content": "A cybercrime group inadvertently exposed its server, revealing the WP-SHELLSTORM operation targeting over 1.4 million WordPress sites. The exposed data included hacking tools, activity logs, and target lists, though fewer sites were actually compromised. This incident underscores the vulnerabilities in WordPress sites and the need for robust security measures. Website administrators should regularly update plugins and themes, conduct security audits, and implement strong access controls to protect against such threats. The exposure provides valuable insights into cybercriminal tactics and operations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 09 2026",
             "headline": "GigaWiper Backdoor Combines Disk Wiping, Ransomware, and Spyware",
             "title": "Microsoft Uncovers GigaWiper Backdoor with Triple Threat Capabilities",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/ai-coding-tools-tricked-into-hacking-developer-machine-via-decades-old-technique/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "12M Users Exposed—KDDI Data Breach via Zero-Day Exploit",
-            "title": "12 Million Impacted by Data Breach at Japanese Telco KDDI",
-            "content": "A significant data breach at Japanese telecommunications company KDDI has exposed the personal information of 12 million users. Hackers exploited a zero-day vulnerability in a third-party system to infiltrate KDDI's email system for Internet Service Providers (ISPs). This breach underscores the critical risk posed by zero-day vulnerabilities, which are flaws unknown to the software vendor and can be exploited by attackers before a patch is available. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the ongoing challenges telecom companies face in securing their vast networks against sophisticated cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/12-million-impacted-by-data-breach-at-japanese-telco-kddi/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GodDamn Ransomware Uses PoisonX to Evade Security",
-            "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
-            "content": "The newly identified GodDamn ransomware family is leveraging the PoisonX kernel driver to disable endpoint security defenses, posing a significant threat to organizations. According to Symantec's Threat Hunter Team, this tactic is part of a sophisticated defense evasion strategy that allows the ransomware to operate undetected. By neutralizing security software, GodDamn can more effectively encrypt files and demand ransoms. Organizations are advised to update their security solutions and monitor for unusual activity that could indicate a breach. This development highlights the evolving tactics of ransomware groups in circumventing traditional security measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Microsoft Patches Defender Flaw—Update Urgently",
-            "title": "Microsoft Patches Defender ‘RoguePlanet’ Vulnerability",
-            "content": "Microsoft has released a patch for a critical vulnerability in its Defender antivirus software, tracked as CVE-2026-50656. Known as the 'RoguePlanet' vulnerability, this flaw allowed privilege escalation through the Microsoft Malware Protection Engine. Users of Microsoft Defender are urged to update their systems immediately to mitigate potential exploitation. The vulnerability had a CVSS score of 7.8, indicating a high severity level. This patch is part of Microsoft's ongoing efforts to address security weaknesses in its software products, emphasizing the importance of regular updates to protect against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-defender-rogueplanet-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Chrome 150 Update Fixes 27 Security Flaws",
-            "title": "Chrome 150 Update Patches 27 Vulnerabilities",
-            "content": "Google has released Chrome version 150, addressing 27 security vulnerabilities, including two critical use-after-free flaws. These vulnerabilities, if exploited, could allow attackers to execute arbitrary code on affected systems. Users are strongly advised to update to the latest version to protect against potential attacks. The update is part of Google's regular security maintenance, reflecting the company's commitment to safeguarding its browser against evolving threats. This release underscores the importance of timely software updates in maintaining robust cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-150-update-patches-27-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "AI Agents Tricked—Malicious Code Execution Risk",
-            "title": "Top AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It",
-            "content": "A proof-of-concept by the AI Now Institute reveals that AI coding agents, including Anthropic's Claude, can be manipulated to execute malicious code. This vulnerability, dubbed \"Friendly Fire,\" highlights the potential risks of relying on AI for security tasks without adequate safeguards. The attack involves tricking the AI into misinterpreting malicious code as benign, leading to unintended execution. Organizations using AI for code analysis should implement additional validation steps to mitigate this risk. This finding raises concerns about the security implications of integrating AI into critical cybersecurity processes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "764 Group Leader Jailed for 40 Years",
-            "title": "764 Splinter Group Leader Sentenced to 40 Years in Jail",
-            "content": "Alexis Chavez, a leader of the 764 splinter group, has been sentenced to 40 years in prison for coercing minors into producing child sexual abuse material. This case is part of a broader crackdown on violent extremist collectives affiliated with the Com. Chavez's conviction underscores the severe legal consequences for those involved in exploiting vulnerable individuals for criminal purposes. Law enforcement agencies continue to target such groups to dismantle their operations and protect potential victims. This sentencing serves as a stark reminder of the ongoing battle against online exploitation and abuse.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/764-splinter-group-leader-sentenced-alexis-chavez/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "QIZ Security Secures $17M for Cryptographic Platform",
-            "title": "QIZ Security Raises $17 Million for Cryptographic Governance Platform",
-            "content": "Israeli cybersecurity firm QIZ Security has secured $17 million in funding to advance its cryptographic governance platform. The platform focuses on cryptographic posture management and post-quantum cryptography, addressing the growing need for robust encryption solutions in the face of evolving cyber threats. This investment will enable QIZ Security to enhance its technology and expand its market presence. As quantum computing advances, the demand for post-quantum cryptography solutions is expected to rise, making this a strategic area for investment. Organizations should consider evaluating their cryptographic strategies to prepare for future challenges.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/qiz-security-raises-17-million-for-cryptographic-governance-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "UK Unveils AI Defense Plan—Boosts Cybersecurity",
-            "title": "UK Government Rolls Out Agentic AI Defense Plan Alongside Industry Pledge",
-            "content": "The UK government has announced the Agentic AI Defense Plan, aiming to bolster national cybersecurity through AI-driven initiatives. This plan is part of a broader strategy to enhance the country's cyber resilience and includes collaboration with industry leaders. The initiative reflects the growing importance of AI in cybersecurity, as threats become more sophisticated and require advanced technological solutions. Organizations in the UK are encouraged to engage with the government's efforts and explore AI applications in their security frameworks. This development highlights the proactive measures being taken to address the evolving cyber threat landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/uk-government-rolls-out-agentic-ai-defense-plan-alongside-industry-pledge/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Palo Alto Networks Fixes 13 Security Vulnerabilities",
-            "title": "Palo Alto Networks Patches 13 Vulnerabilities",
-            "content": "Palo Alto Networks has released patches for 13 vulnerabilities in its PAN-OS software, including buffer overflow, denial-of-service (DoS), and command injection flaws. These vulnerabilities could allow attackers to execute arbitrary code, disrupt services, or bypass authentication mechanisms. Organizations using PAN-OS are advised to apply the updates promptly to mitigate potential risks. This patch release is part of Palo Alto Networks' commitment to maintaining the security of its products amid an increasingly complex threat environment. Regular updates and vulnerability management are crucial for safeguarding network infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-patches-13-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GhostLock Vulnerability Earns Researchers $92K from Google",
-            "title": "15-Year-Old Linux Vulnerability ‘GhostLock’ Earns Researchers $92k From Google",
-            "content": "Security researchers have been awarded $92,000 by Google for discovering the 'GhostLock' vulnerability, a 15-year-old flaw in the Linux kernel. Affecting major distributions since 2011, this vulnerability allows attackers to gain root access, posing a severe security risk. The discovery underscores the importance of continuous security audits and the potential longevity of vulnerabilities in widely-used software. Organizations using Linux should ensure their systems are updated with the latest patches to protect against exploitation. This case highlights the value of bug bounty programs in uncovering and addressing long-standing security issues.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/15-year-old-linux-vulnerability-ghostlock-earns-researchers-92k-from-google/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 10 2026",
+            "headline": "Instagram's Mosseri: Dislike AI? Remove It from Your Feed",
+            "title": "Instagram's Adam Mosseri Advocates User Control Over AI Content",
+            "content": "Adam Mosseri, head of Instagram, emphasized user autonomy regarding AI content on the platform. In a recent podcast interview, Mosseri stated that while Instagram won't filter AI-generated content, users who dislike it should opt to exclude it from their feeds. This stance highlights Instagram's commitment to user choice amidst growing debates over AI's role in social media. As AI-generated content becomes more prevalent, users are encouraged to actively manage their preferences. This approach aligns with broader trends in digital platforms offering customizable user experiences.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Sunrun Offers Home AI Data Centers—Earn by Hosting",
+            "title": "Sunrun's Pilot Program Turns Homes into Distributed AI Data Centers",
+            "content": "Sunrun, a solar and home energy storage company, is launching a pilot program to integrate AI data centers into residential homes. The initiative, termed \"distributed AI compute,\" involves placing compute units in customers' homes, effectively decentralizing data processing. Participants will be compensated for hosting these units, potentially reducing energy costs. This innovative approach could revolutionize data center infrastructure by leveraging existing residential energy systems. Homeowners interested in participating should assess their energy capacity and potential earnings.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Deutsche Telekom Transforms with AI—Enhances Telecom Services",
+            "title": "Deutsche Telekom Leverages AI to Revolutionize Telecommunications",
+            "content": "Deutsche Telekom is integrating AI to become an AI-native telecommunications provider, enhancing customer service, employee workflows, and network operations. Collaborating with OpenAI, the company aims to streamline operations and improve service delivery. This transformation reflects a broader industry trend of telecoms adopting AI to stay competitive and meet evolving customer demands. Stakeholders should monitor these developments as AI continues to reshape the telecommunications landscape.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/deutsche-telekom",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI's Fidji Simo Steps Down—Health Concerns Cited",
+            "title": "Fidji Simo Resigns from OpenAI's AGI Leadership Due to Illness",
+            "content": "Fidji Simo, formerly leading OpenAI's Artificial General Intelligence (AGI) efforts, has stepped down due to health issues. Simo announced her transition to a part-time advisory role following a medical leave for a neuroimmune condition. Her departure marks a significant change in OpenAI's leadership as the company continues to advance AGI research. Industry observers will be watching how this leadership shift impacts OpenAI's strategic direction.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Google Labels AI-Generated Ads—Transparency Boost",
+            "title": "Google to Disclose AI-Generated Content in Advertisements",
+            "content": "Google will now require all advertisements featuring AI-generated content to disclose their synthetic nature, extending a policy previously limited to election ads. This move aims to enhance transparency and prevent misleading advertising practices. As AI-generated content becomes more common in marketing, advertisers must ensure compliance with these new guidelines. This policy change reflects growing concerns about AI's role in creating deceptive digital content.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Gradium Raises $100M—Nvidia Backs AI Voice Startup",
+            "title": "Paris-Based Gradium Secures $100M Seed Funding for AI Voice Tech",
+            "content": "Gradium, an AI voice technology startup based in Paris, has raised $100 million in seed funding, with Nvidia as a key investor. The funds will support Gradium's expansion into the Bay Area, aiming to attract top talent and strengthen its position in the global AI ecosystem. This investment underscores the growing interest in AI voice technologies and Nvidia's commitment to supporting innovative startups. Industry professionals should note the competitive landscape in AI voice solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI Shuts Down ChatGPT Atlas—Focus Shifts to Work Tools",
+            "title": "OpenAI Discontinues ChatGPT Atlas Less Than a Year After Launch",
+            "content": "OpenAI has announced the discontinuation of ChatGPT Atlas, a browser tool designed to perform tasks on users' behalf. Launched in October, Atlas is being phased out as OpenAI shifts focus to ChatGPT Work, a suite of productivity tools. This decision highlights OpenAI's strategic pivot towards enterprise solutions. Users of Atlas should transition to alternative tools as the service sunsets.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963654/openai-chatgpt-atlas-ai-browser-shut-down-sunset",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Meta's AI Chips Enter Production—Modular Design Adopted",
+            "title": "Meta to Begin Production of Modular AI Chips in September",
+            "content": "Meta is set to commence production of its new AI chips in September, adopting a modular design to accommodate rapid advancements in AI technology. This approach allows Meta to adapt its hardware to evolving AI demands, ensuring long-term relevance. As AI applications expand, Meta's chips are expected to enhance performance across its platforms. Developers and tech leaders should anticipate the impact of these chips on AI-driven services.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Nvidia Faces Compute Market Pressure—Success Breeds Competition",
+            "title": "Nvidia Confronts Challenges in the Compute Marketplace It Pioneered",
+            "content": "Nvidia, a leader in the compute market, is experiencing increased competition as other companies capitalize on the demand for computing power. Despite its success, Nvidia finds itself in a crowded market, with simpler technologies gaining traction. This situation underscores the dynamic nature of the tech industry, where innovation can quickly lead to new competitive pressures. Stakeholders should consider the implications of this competitive landscape on Nvidia's market position.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Microsoft Expands Patch Tuesdays—AI Boosts Security Updates",
+            "title": "Microsoft to Increase Security Updates with AI-Enhanced Patch Tuesdays",
+            "content": "Microsoft announced plans to expand its Patch Tuesday updates for Windows 11, leveraging AI to identify security issues earlier. This enhancement aims to deliver a higher volume of security fixes in each release, improving overall system protection. As cyber threats evolve, Microsoft's use of AI in vulnerability management reflects a proactive approach to cybersecurity. IT professionals should prepare for more frequent and comprehensive updates.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963307/microsoft-patch-tuesday-ai-security-updates",
+            "relatedResources": []
+        },
         {
             "date": "Jul 10 2026",
             "headline": "Microsoft's Carbon Emissions Surge 25%—Climate Goals in Jeopardy",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "The New York Times has escalated its lawsuit against OpenAI, alleging that the company hid tools and datasets capable of identifying copyrighted journalism within ChatGPT outputs. This new motion for sanctions intensifies the legal battle over intellectual property rights in AI-generated content. The case highlights the ongoing challenges in balancing AI innovation with the protection of copyrighted material. Legal experts and content creators are closely monitoring the proceedings for implications on future AI development and copyright enforcement.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Anthropic's Claude Reflect—AI Dependence Visualized",
-            "title": "Anthropic's Claude Reflect Dashboard Highlights AI Integration in Workflows",
-            "content": "Anthropic has introduced the Reflect dashboard for its Claude chatbot, offering users a visual representation of their AI usage patterns. This feature subtly underscores the growing reliance on AI in daily tasks, as users can see how much of their work is facilitated by Claude. The dashboard aims to provide insights into AI integration, potentially influencing how businesses and individuals optimize their workflows. As AI becomes more embedded in professional environments, understanding its impact is crucial for maximizing efficiency. Users should explore the Reflect feature to assess and adjust their AI usage strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/anthropics-new-claude-feature-is-quietly-selling-you-on-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Ollama Raises $65M—9M Users Embrace Open Source AI",
-            "title": "Ollama Secures $65M Funding as User Base Nears 9 Million",
-            "content": "Open source AI developer tool Ollama has successfully raised $65 million in funding, backed by Benchmark, as it grows its user base to nearly 9 million. The platform has gained significant traction on GitHub, boasting 176,000 stars and 17,000 forks, by enabling developers to efficiently run AI models on personal computers. This funding round is expected to further enhance Ollama's capabilities and expand its reach in the developer community. As open source tools continue to democratize AI development, Ollama's growth highlights the increasing demand for accessible AI solutions. Developers should consider leveraging Ollama for streamlined AI integration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "AI IPOs Surpass 25 Years of Tech Exits—A New Era",
-            "title": "Anthropic, OpenAI, and SpaceX IPOs Eclipse Two Decades of Exits",
-            "content": "The impending IPOs of Anthropic, OpenAI, and SpaceX are set to generate more value than all U.S. venture capital-backed tech exits since 2000. This monumental shift underscores the transformative impact of AI and space technologies on the market. As these companies prepare for public offerings, investors and tech leaders are closely monitoring the potential for unprecedented financial returns. The scale of these IPOs reflects the growing importance of AI and space exploration in shaping future technological landscapes. Stakeholders should prepare for significant market shifts as these IPOs unfold.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/anthropic-openai-and-spacex-are-bigger-than-the-last-25-years-of-tech-exits/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Meta's Muse Spark 1.1—AI Coding Revolution",
-            "title": "Meta's Muse Spark 1.1 Enhances AI Coding Capabilities with New API",
-            "content": "Meta has unveiled its latest AI model, Muse Spark 1.1, aimed at revolutionizing AI coding through enhanced capabilities and a new Meta Model API. This update marks a significant improvement from the initial Muse Spark model, offering developers the ability to integrate AI into coding software more seamlessly. By opening access to its advanced model, Meta is positioning itself as a formidable player in the AI coding landscape. Developers are encouraged to explore the new API to leverage Muse Spark 1.1's capabilities in their projects. This development reflects Meta's commitment to advancing AI-driven coding solutions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963193/meta-muse-spark-model-api",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Claude Wrapped—AI Usage Insights Unveiled",
-            "title": "Anthropic Introduces Claude Wrapped for AI Usage Analysis",
-            "content": "Anthropic has launched Claude Wrapped, a new feature for its Claude chatbot that provides users with an annual analysis of their AI usage data. Inspired by the popular Spotify Wrapped, this feature offers insights into how users interact with AI, highlighting trends and patterns over the year. By understanding these usage metrics, individuals and businesses can optimize their AI strategies for improved efficiency and effectiveness. As AI continues to integrate into daily operations, tools like Claude Wrapped are essential for informed decision-making. Users should utilize this feature to gain a comprehensive view of their AI engagement.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963105/anthropic-claude-wrapped-reflection-ai-usage",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Character.AI Debuts Interactive Microdramas",
-            "title": "Character.AI Launches c.ai Series for Interactive Microdrama Experiences",
-            "content": "Character.AI has expanded its offerings with the introduction of c.ai Series, short-form, episodic videos designed for interactive viewing on mobile devices. This new format allows users to engage with content in a dynamic way, interacting with characters and influencing storylines. Unlike traditional media, c.ai Series leverages Character.AI's core technology to create immersive experiences that blend storytelling with user interaction. This innovation positions Character.AI as a leader in the evolving landscape of digital entertainment. Users interested in interactive media should explore c.ai Series for a unique viewing experience.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/962897/character-ai-series-microdrama-vertical-video",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Character.AI's Microdramas—Interactive Storytelling Redefined",
-            "title": "Character.AI's Microdramas Offer Interactive Storytelling with User Engagement",
-            "content": "Character.AI has entered the microdrama space with a twist, allowing users to interact with characters in its new productions. This innovative approach enables viewers to chat with characters, ask questions, and even roleplay different storylines, enhancing the traditional viewing experience. By leveraging its AI capabilities, Character.AI is redefining how audiences engage with content, offering a more personalized and immersive experience. This development highlights the potential of AI in transforming digital storytelling. Users should explore these interactive microdramas for a novel entertainment experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/character-ai-enters-the-microdrama-arena-with-its-own-productions-but-with-a-twist/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "FL Studio 2026—AI Chatbot Becomes Assistant Engineer",
-            "title": "FL Studio 2026 Enhances Gopher AI Chatbot for Engineering Assistance",
-            "content": "Image Line has upgraded its AI chatbot, Gopher, in FL Studio 2026, transforming it from a basic instruction manual into a full-fledged assistant engineer. The new release allows users to leverage Gopher for more complex tasks, enhancing productivity and streamlining music production workflows. This evolution reflects the growing trend of integrating AI into creative processes, offering musicians and producers a powerful tool for optimizing their projects. Users of FL Studio should explore the enhanced capabilities of Gopher to maximize their production efficiency. This update underscores the potential of AI in creative industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/963052/fl-studio-2026-music-daw-ai-chatbot",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Nilekani Exits GP Role—Fundamentum Launches $200M Fund",
-            "title": "Nandan Nilekani Steps Down as GP as Fundamentum Launches $200M Fund",
-            "content": "Nandan Nilekani has stepped down from his general partner role at Fundamentum as the firm launches its third fund, valued at $200 million. Despite his departure from the leadership position, Nilekani remains the anchor investor, supporting the firm's focus on AI and fintech startups in India. This strategic move aims to bolster Fundamentum's investment capabilities and expand its influence in the rapidly growing Indian tech sector. Investors and startups should note this development as an opportunity for increased funding and support in AI and fintech innovations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/nandan-nilekani-leaves-gp-role-at-his-vc-firm-as-it-launches-third-200m-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Video Games—Superior AI Training Data Over Internet",
-            "title": "CEO Advocates Video Games as Superior Training Data for AI",
-            "content": "A CEO has argued that video games provide better training data for achieving artificial general intelligence (AGI) compared to the internet. While large language models like ChatGPT excel at text processing, they lack the spatial and temporal understanding necessary for AGI. Video games, with their complex environments and dynamic interactions, offer a rich source of data for training AI to understand real-world scenarios. This perspective highlights the potential of gaming as a valuable resource in advancing AI capabilities. Researchers and developers should consider incorporating video game data into their AI training methodologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
             "relatedResources": []
         }
     ],
