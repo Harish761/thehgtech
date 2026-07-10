@@ -182,6 +182,7 @@ Must be placed **AFTER** `</article>` and **BEFORE** `<footer>`.
         }
     })();
 </script>
+<script src="/theme-toggle.js" defer></script>
 
 <style>
     :root {
@@ -374,10 +375,74 @@ Must be placed **AFTER** `</article>` and **BEFORE** `<footer>`.
 </script>
 ```
 
-### Required Desktop Header
-Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<main class="article-container">`.
+### Required Header System (Mobile & Desktop)
+Must be placed **AFTER** `<body>` and **BEFORE** `<main class="article-container">`. This is the FULL modern header template. Do NOT use stripped-down versions.
+
 ```html
-<!-- Desktop Header -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+        <button class="m-search-overlay__cancel">Cancel</button>
+    </div>
+    <div class="m-search-overlay__results"></div>
+</div>
+
 <header class="header" role="banner">
     <div class="header-content">
         <div class="logo">
@@ -390,7 +455,6 @@ Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<main clas
         <nav class="nav nav-modern" role="navigation">
             <a href="/index.html#news">News</a>
             
-            <!-- Intelligence Dropdown -->
             <div class="nav-dropdown">
                 <span class="nav-dropdown-trigger">
                     Intelligence
@@ -419,21 +483,34 @@ Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<main clas
                             <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                         </div>
                     </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
                 </div>
             </div>
             
-            <!-- Resources Dropdown -->
             <div class="nav-dropdown">
                 <span class="nav-dropdown-trigger">
                     Resources
                     <i class="fas fa-chevron-down dropdown-arrow"></i>
                 </span>
                 <div class="nav-dropdown-panel">
-                    <a href="/guides/" class="dropdown-item">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
                         <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
                         <div class="dropdown-item-content">
-                            <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">37+</span></div>
-                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
                         </div>
                     </a>
                     <a href="/comparisons/" class="dropdown-item">
@@ -443,27 +520,87 @@ Must be placed **AFTER** `<nav class="m-bottom-nav">` and **BEFORE** `<main clas
                             <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                         </div>
                     </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a href="/articles.html" class="dropdown-item">
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
                         <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
                         <div class="dropdown-item-content">
-                            <div class="dropdown-item-title">Articles</div>
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
                             <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
                         </div>
                     </a>
                 </div>
             </div>
             
-            <div class="theme-toggle-wrapper">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <div class="toggle-stars">
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                        <div class="star"></div>
-                    </div>
-                </button>
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
         </nav>
         
         <button class="mobile-menu-btn" aria-label="Toggle menu">
