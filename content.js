@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 09 2026",
+            "headline": "GigaWiper Backdoor Combines Disk Wiping, Ransomware, and Spyware",
+            "title": "Microsoft Uncovers GigaWiper Backdoor with Triple Threat Capabilities",
+            "content": "Microsoft has dissected a destructive Windows backdoor named GigaWiper, which combines three older malicious programs into one, offering operators the choice to wipe disks, deploy fake ransomware, or install spyware. This backdoor poses a significant threat to Windows systems, allowing attackers to choose their method of disruption. The integration of multiple destructive tools into a single package increases the potential impact on affected systems, making it a versatile weapon in cybercriminal arsenals. Organizations are advised to strengthen their endpoint defenses and ensure regular backups to mitigate potential damage. This development underscores the evolving complexity of cyber threats targeting Windows environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Ransomware Attack Steals Data from Mount Royal University",
+            "title": "Mount Royal University Confirms Data Breach in Ransomware Attack",
+            "content": "Mount Royal University has confirmed that hackers accessed its internal network, resulting in the deletion of two drives containing sensitive employee, student, and university data. This breach highlights the ongoing threat of ransomware attacks targeting educational institutions, which often hold vast amounts of personal and institutional data. The university is currently assessing the full extent of the breach and working to restore affected systems. This incident serves as a reminder for educational institutions to bolster their cybersecurity measures and implement robust data protection strategies. Stakeholders are urged to remain vigilant and review their security protocols.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mount-royal-university-confirms-data-stolen-in-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Microsoft Patches Defender Flaw—SYSTEM Privileges at Risk",
+            "title": "Microsoft Releases Patch for Defender Vulnerability CVE-2026-50656",
+            "content": "Microsoft has issued a security update to address a vulnerability in its Defender software, known as RoguePlanet, which could allow attackers to escalate privileges to SYSTEM level. Tracked as CVE-2026-50656 with a CVSS score of 7.8, this flaw resides in the Microsoft Malware Protection Engine (mpengine.dll). The vulnerability was disclosed nearly a month ago, prompting Microsoft to act swiftly to mitigate potential exploitation. Users are advised to apply the latest updates to ensure their systems are protected against this critical security risk. This patch is part of Microsoft's ongoing efforts to secure its widely used security software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Ubiquiti Patches Critical UniFi Flaws—Update Now",
+            "title": "Ubiquiti Addresses Critical Vulnerabilities in UniFi Product Line",
+            "content": "Ubiquiti has released updates to fix multiple critical security vulnerabilities affecting its UniFi product line, including Connect, Talk, Access, Protect, and OS. These flaws, such as CVE-2026-50746, could lead to privilege escalation and arbitrary command execution. Users of these products are at risk of unauthorized access and potential system compromise. Ubiquiti's swift response underscores the importance of timely patch management in preventing exploitation. Customers are strongly encouraged to update their systems immediately to safeguard against these vulnerabilities. This action is crucial to maintaining the integrity and security of network infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Felons Behind Offensive Cybersecurity Startup Exposed",
+            "title": "Controversial Cybersecurity Startup Linked to Felons and Conspiracies",
+            "content": "A cybersecurity startup offering millions for zero-day vulnerabilities is reportedly run by convicted felons and far-right conspiracy theorists. The founders' previous ventures include fake intelligence companies and a defunct AI-based lobbying platform. This revelation raises concerns about the ethics and intentions behind the startup's operations, particularly in the sensitive domain of cybersecurity. Professionals in the field should exercise caution when engaging with entities that have questionable backgrounds. This case highlights the need for transparency and due diligence in the cybersecurity industry to ensure trust and integrity.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Ex-Ransomware Negotiator Jailed for $75.3M Fraud",
+            "title": "Former DigitalMint Negotiator Sentenced for Ransomware Fraud Scheme",
+            "content": "Angelo Martino, a former ransomware negotiator for DigitalMint, has been sentenced to 70 months in prison for his role in a $75.3 million extortion scheme. Martino exploited his insider position to provide confidential information to ransomware co-conspirators, targeting five U.S.-based victims. This case underscores the risks of insider threats within organizations, particularly in roles involving sensitive negotiations. Companies are urged to implement stringent access controls and monitor employee activities to prevent similar incidents. The sentencing serves as a deterrent to potential insiders considering exploiting their positions for criminal gain.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/digitalmint-ransomware-negotiator-angelo-martino-sentenced/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Iran Expands Cyber Targets Beyond Critical Infrastructure",
+            "title": "Iranian Cyber Threats Now Targeting Broader Range of Industries",
+            "content": "Iranian cyber actors are reportedly expanding their focus beyond critical infrastructure to target any organization with internet-facing vulnerabilities. This shift highlights the increased risk for companies across various sectors, emphasizing that obscurity is not a defense against cyber threats. Organizations are advised to conduct thorough vulnerability assessments and strengthen their cybersecurity posture to mitigate potential attacks. This trend reflects the evolving tactics of state-sponsored threat actors seeking to exploit weaknesses in global networks. Security professionals should remain vigilant and proactive in defending against these expanding threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Dormant GitHub Accounts Aid Corporate Espionage",
+            "title": "Attackers Use Dormant GitHub Accounts to Map Corporate Structures",
+            "content": "Datadog Security Labs has identified campaigns exploiting dormant GitHub accounts to systematically map corporate organizations, repositories, and user accounts. Attackers utilize automated scraping tools with legitimate-sounding user agents to blend in and avoid detection. This tactic allows them to gather valuable intelligence on corporate structures, potentially aiding in targeted attacks. Organizations are encouraged to regularly audit their GitHub accounts and repositories to identify and secure inactive accounts. This discovery highlights the need for vigilance in managing digital assets and preventing unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "npm 12 Disables Install Scripts—Supply Chain Risk Reduced",
+            "title": "GitHub Releases npm 12 with Default Script Disabling to Enhance Security",
+            "content": "GitHub has announced npm version 12, which disables install scripts by default to mitigate supply chain risks. This update also includes the deprecation of granular access tokens (GATs) designed to bypass two-factor authentication (2FA). By disabling install scripts, npm aims to reduce the potential for malicious code execution during package installation. Developers are advised to review their workflows and ensure compatibility with the new default settings. This move reflects GitHub's commitment to enhancing the security of its package management ecosystem and protecting developers from supply chain attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "AI Tools Exploited via Decades-Old Technique—GhostApproval",
+            "title": "Wiz Unveils GhostApproval Attack on AI Coding Assistants",
+            "content": "Wiz has disclosed a new attack method called GhostApproval, which exploits AI coding assistants using a decades-old technique. This method tricks AI tools into executing malicious code on developers' machines, posing a significant risk to software development environments. The attack highlights vulnerabilities in AI-driven coding tools that can be manipulated to bypass security measures. Developers using AI coding assistants should be aware of this threat and implement additional security checks to prevent unauthorized code execution. This discovery underscores the need for continuous evaluation and improvement of AI tool security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ai-coding-tools-tricked-into-hacking-developer-machine-via-decades-old-technique/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
             "headline": "12M Users Exposed—KDDI Data Breach via Zero-Day Exploit",
             "title": "12 Million Impacted by Data Breach at Japanese Telco KDDI",
             "content": "A significant data breach at Japanese telecommunications company KDDI has exposed the personal information of 12 million users. Hackers exploited a zero-day vulnerability in a third-party system to infiltrate KDDI's email system for Internet Service Providers (ISPs). This breach underscores the critical risk posed by zero-day vulnerabilities, which are flaws unknown to the software vendor and can be exploited by attackers before a patch is available. Affected users should monitor their accounts for suspicious activity and consider changing passwords as a precaution. This incident highlights the ongoing challenges telecom companies face in securing their vast networks against sophisticated cyber threats.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/15-year-old-linux-vulnerability-ghostlock-earns-researchers-92k-from-google/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Accenture Confirms Breach—Source Code Allegedly Stolen",
-            "title": "Accenture Confirms Data Breach After Hacker Claims Source Code Theft",
-            "content": "Accenture has confirmed a data breach following claims by a hacker that source code was stolen. The professional services firm stated that it contained the incident, remediated the source, and experienced no operational or service delivery impact. The breach highlights ongoing risks to intellectual property and sensitive data within large enterprises. Security professionals are advised to review access controls and monitoring systems to prevent similar incidents. This breach underscores the importance of robust incident response strategies in mitigating potential damage.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/accenture-confirms-data-breach-after-hacker-claims-source-code-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Adobe ColdFusion CVE-2026-48282 Exploited—Patch Immediately",
-            "title": "Critical Adobe ColdFusion Vulnerability Exploited in Attacks",
-            "content": "Hackers are actively exploiting a critical vulnerability in Adobe ColdFusion, identified as CVE-2026-48282, which has a maximum CVSS score of 10/10. This vulnerability allows attackers to execute arbitrary code, posing a severe risk to systems running affected versions. Organizations using Adobe ColdFusion should prioritize applying the latest security patches to mitigate potential exploitation. The ongoing attacks highlight the critical need for timely patch management in enterprise environments. Security teams should also monitor for unusual activity indicative of exploitation attempts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-adobe-coldfusion-vulnerability-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "AI-Driven Ransomware Attack—JadePuffer Operates Autonomously",
-            "title": "Smashing Security podcast #475: JadePuffer – the AI that ran a ransomware attack all by itself",
-            "content": "Researchers have documented \"JadePuffer,\" the first fully autonomous AI-driven ransomware attack, raising concerns about the future of cybersecurity. This development follows a 15-year-old boy's use of a chatbot to cancel nearly 47,000 anime streaming subscriptions in hours. JadePuffer's ability to operate independently highlights the potential for AI to be weaponized in cyberattacks. Security professionals must consider the implications of AI in threat landscapes and enhance defenses against AI-driven threats. This case underscores the need for continuous adaptation in cybersecurity strategies.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-475/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub APIs—A Tool for Enterprise Reconnaissance",
-            "title": "GitHub’s public APIs are becoming an enterprise reconnaissance tool",
-            "content": "GitHub's public APIs are increasingly being used by attackers as a reconnaissance tool, providing access to source code, secrets, and automated pipelines. Datadog Security Research has identified this trend, emphasizing GitHub's central role in the software supply chain. Organizations should be aware of the potential exposure of sensitive information and implement stricter access controls and monitoring. This trend highlights the importance of securing development environments against unauthorized access and data leaks. Security teams should regularly audit API usage and permissions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4194665/githubs-public-apis-are-becoming-an-enterprise-reconnaissance-tool-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "AI Coding Agents Trigger Security Alarms—False Positives Rise",
-            "title": "AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers",
-            "content": "Sophos has observed AI coding agents like Claude Code, Cursor, and OpenAI Codex triggering endpoint security rules designed to detect human intruders. These agents, while not malicious, perform actions that resemble attacker behavior, leading to false positives. Security teams must adjust detection algorithms to differentiate between benign AI activity and genuine threats. This development highlights the evolving challenges in balancing security and innovation in AI-driven environments. Organizations should refine their security policies to accommodate AI tools without compromising protection.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub AI Agent Leaks—Prompt Injection Risks",
-            "title": "GitHub AI agent leaks private repositories via prompt injection attack",
-            "content": "A prompt injection attack has been found to exploit GitHub's preview Agentic Workflows, allowing unauthorized access to private repositories. This vulnerability exposes the risk of deploying AI agents with privileged access in software development environments. Enterprises should evaluate the security of AI integrations and implement safeguards against prompt injection attacks. This incident underscores the need for rigorous testing and validation of AI systems in sensitive environments. Security professionals should prioritize securing AI workflows to prevent data leaks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4194448/github-ai-agent-leaks-private-repositories-via-prompt-injection-attack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "China-Linked APT Expands with New 'Leash' Backdoors",
-            "title": "China-Linked APT Expands Arsenal With New ‘Leash’ Backdoors",
-            "content": "Cisco has reported that a China-linked advanced persistent threat (APT) group, associated with the LapDogs campaign, has expanded its toolkit with new backdoors named LongLeash, DogLeash, and JarLeash. These backdoors target SOHO routers, enhancing the group's capabilities to infiltrate networks. Organizations using vulnerable routers should update firmware and apply security patches to mitigate risks. This development highlights the ongoing threat posed by state-sponsored actors and the importance of securing network infrastructure. Security teams should remain vigilant against evolving APT tactics.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/china-linked-apt-expands-arsenal-with-new-leash-backdoors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "HalluSquatting Attack—AI Assistants Install Malware",
-            "title": "New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware",
-            "content": "Researchers have identified a new attack method called HalluSquatting, which exploits AI coding assistants' tendency to generate plausible-sounding but non-existent project names. This vulnerability can be used to trick AI into installing botnet malware. Organizations using AI coding assistants should be cautious and verify the legitimacy of suggested tools. This attack highlights the need for improved validation mechanisms in AI systems to prevent exploitation. Security teams should educate developers on the risks of blindly trusting AI-generated recommendations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub 'Verified' Commits—Hashes Can Be Rewritten",
-            "title": "GitHub 'Verified' Commits Can Be Rewritten Into New Hashes Without Breaking Signatures",
-            "content": "New research reveals that signed Git commits can be rewritten into new hashes without breaking their signatures, challenging the assumption of their uniqueness. This vulnerability allows attackers to create a second commit with the same files, author, and date, while maintaining a valid signature. Developers should be aware of this risk and consider additional verification steps to ensure commit integrity. This finding underscores the need for enhanced security measures in version control systems. Security teams should educate developers on potential risks and mitigation strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/github-verified-commits-can-be.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 07 2026",
-            "headline": "Gentlemen Ransomware Tests Identity Controls",
-            "title": "Why The Gentlemen ransomware is a test of identity and recovery controls",
-            "content": "The Gentlemen ransomware presents a significant challenge for CISOs, as it spreads across networks using legitimate Windows management tools. This malware attempts to weaken security and recovery systems, emphasizing the need for robust identity and access management controls. Organizations should evaluate their recovery strategies and enhance monitoring to detect unauthorized activities. This case highlights the importance of comprehensive security measures to prevent ransomware from exploiting legitimate tools. Security teams should prioritize strengthening identity verification and recovery protocols.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4193699/why-the-gentlemen-ransomware-is-a-test-of-identity-and-recovery-controls.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 10 2026",
+            "headline": "Microsoft's Carbon Emissions Surge 25%—Climate Goals in Jeopardy",
+            "title": "Microsoft's 2026 Sustainability Report Reveals 25% Increase in Carbon Emissions",
+            "content": "Microsoft's latest sustainability report reveals a 25% increase in carbon emissions for 2025, totaling 34 million metric tons. This significant rise suggests the tech giant is struggling to meet its climate goals despite various interventions. The report, highlighted by GeekWire, underscores the challenges faced by major corporations in balancing growth with environmental responsibilities. This increase in emissions could impact Microsoft's reputation and its commitment to achieving carbon neutrality by 2030. Stakeholders are urged to scrutinize the company's strategies and demand more effective measures to curb emissions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Shared API Keys Risk AI Security at 69% of Enterprises",
+            "title": "VentureBeat Study Finds Shared API Keys Expose AI Agents to Security Risks",
+            "content": "A new study by VentureBeat reveals that 69% of enterprises expose their AI agents to security risks by sharing API keys across multiple agents. This practice allows a single compromised agent to access the permissions of all associated workflows, complicating forensic investigations. The report highlights the need for stricter API key management and security protocols to prevent unauthorized access and data breaches. Enterprises are advised to implement unique keys for each agent and regularly audit their API usage to enhance security.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/shared-api-keys-expose-ai-agent-fleets-venturebeat-research",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "OpenAI's GPT 5.6 Powers Microsoft Copilot 365 Amid Breakup Rumors",
+            "title": "OpenAI Confirms GPT 5.6 as Preferred Model for Microsoft Copilot 365",
+            "content": "OpenAI has announced that its latest model, GPT 5.6, is the preferred choice for Microsoft's Copilot 365, despite rumors of a potential split between the companies. The new model promises enhanced capabilities for workplace and productivity applications, maintaining OpenAI's influence in Microsoft's suite. This development comes as both companies navigate a competitive AI landscape, with OpenAI aiming to solidify its position in enterprise solutions. Users of Microsoft Copilot 365 can expect improved performance and functionality with the integration of GPT 5.6.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI's No. 2, Fidji Simo, Steps Down Amid Health Issues",
+            "title": "Fidji Simo Resigns from OpenAI's Executive Role Due to Health Concerns",
+            "content": "Fidji Simo, OpenAI's second-in-command, has stepped down from her full-time role following an extended medical leave due to a neuroimmune condition. Her departure creates a leadership gap at a critical time as OpenAI considers an IPO and competes with Anthropic in the enterprise market. Simo will transition to a part-time advisory position, allowing her to contribute while managing her health. The company must now address the leadership void to maintain its strategic momentum and reassure stakeholders.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI Unveils GPT-5.6—Boosts Cybersecurity and More",
+            "title": "OpenAI Launches GPT-5.6 with Enhanced Cybersecurity Features",
+            "content": "OpenAI has released its latest model, GPT-5.6, which promises significant improvements across various domains, including cybersecurity. The new model is designed to enhance threat detection and response capabilities, offering enterprises a robust tool for safeguarding digital assets. As cyber threats continue to evolve, GPT-5.6's advanced features aim to provide a competitive edge in protecting sensitive information. Organizations are encouraged to explore the model's capabilities to bolster their cybersecurity strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "AI Agent Raises $100M for Startup—Proves Its Worth",
+            "title": "Lyzr's AI Agent Successfully Manages $100 Million Fundraising Round",
+            "content": "Lyzr, a startup specializing in AI agents for enterprises, has demonstrated the efficacy of its product by using its own AI agent to secure a $100 million funding round. This achievement serves as a testament to the capabilities of Lyzr's technology in handling complex financial negotiations and decision-making processes. The successful fundraise highlights the growing trust in AI-driven solutions for critical business operations. Investors and enterprises are taking note of AI's potential to transform traditional fundraising and management practices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI Shuts Down Atlas—Focus Shifts to Desktop and Chrome",
+            "title": "OpenAI Discontinues Atlas Browser, Expands AI Features to Desktop and Chrome",
+            "content": "OpenAI has announced the discontinuation of its AI-powered browser, Atlas, less than a year after its launch. Despite this, the company plans to integrate some of Atlas's browsing features into its desktop application and a Chrome extension. This strategic shift aims to enhance user experience by providing more versatile and accessible AI-driven browsing capabilities. Users of Atlas are advised to transition to the new platforms to continue benefiting from OpenAI's innovative browsing technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Google Labels AI-Generated Ads—Transparency in Focus",
+            "title": "Google Introduces AI Labels for Ads Across Search, Discover, and YouTube",
+            "content": "Google has updated its \"My Ad Center\" to include labels indicating whether ads were created or edited using AI. This new feature applies to ads on Google Search, Google Discover, and YouTube, providing users with greater transparency about the content they encounter. The move aligns with Google's commitment to preventing misleading and deceptive advertising practices. Users are encouraged to utilize this information to make informed decisions about the ads they engage with.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Meta Joins AI Coding Race with Muse Spark 1.1",
+            "title": "Meta Launches Muse Spark 1.1 to Compete in AI Coding Solutions",
+            "content": "Meta has introduced Muse Spark 1.1, a new AI tool designed to handle large coding workloads, fix bugs, and assist with code migrations. This launch marks Meta's entry into the competitive AI coding market, where enterprises increasingly rely on automation for software development. Muse Spark 1.1 aims to streamline coding processes and improve efficiency, positioning Meta as a formidable player in the AI-driven development landscape. Developers and enterprises are encouraged to explore the tool's capabilities for enhanced productivity.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "NYT Accuses OpenAI of Hiding Evidence in Copyright Case",
+            "title": "New York Times Claims OpenAI Concealed Evidence in ChatGPT Copyright Trial",
+            "content": "The New York Times has escalated its lawsuit against OpenAI, alleging that the company hid tools and datasets capable of identifying copyrighted journalism within ChatGPT outputs. This new motion for sanctions intensifies the legal battle over intellectual property rights in AI-generated content. The case highlights the ongoing challenges in balancing AI innovation with the protection of copyrighted material. Legal experts and content creators are closely monitoring the proceedings for implications on future AI development and copyright enforcement.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 09 2026",
             "headline": "Anthropic's Claude Reflect—AI Dependence Visualized",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "A CEO has argued that video games provide better training data for achieving artificial general intelligence (AGI) compared to the internet. While large language models like ChatGPT excel at text processing, they lack the spatial and temporal understanding necessary for AGI. Video games, with their complex environments and dynamic interactions, offer a rich source of data for training AI to understand real-world scenarios. This perspective highlights the potential of gaming as a valuable resource in advancing AI capabilities. Researchers and developers should consider incorporating video game data into their AI training methodologies.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/video/why-this-ceo-thinks-video-games-make-better-training-data-than-the-internet/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Lovable Eyes $13.2B Valuation—Menlo Ventures Leads $300M Round",
-            "title": "Lovable in Talks to Double Valuation with $300M Funding Round",
-            "content": "Lovable, a prominent player in the AI industry, is reportedly in discussions to double its valuation to $13.2 billion through a new $300 million funding round led by Menlo Ventures. This significant financial boost underscores the company's rapid growth and the increasing investor confidence in its AI-driven solutions. The potential valuation hike reflects a broader trend of escalating valuations in the AI sector, driven by technological advancements and expanding market applications. Stakeholders are closely monitoring these developments as Lovable continues to innovate and expand its market presence.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Google’s Deepfake Detector Debunks McConnell Hospital Hoax",
-            "title": "Google’s AI Tool Identifies Deepfake Image of Senator McConnell",
-            "content": "Google's deepfake detection system has successfully identified an AI-generated image falsely depicting Senator Mitch McConnell in a hospital bed. The image, which circulated widely on social media, was debunked using Google's advanced AI tools designed to detect manipulated media. This incident highlights the growing challenge of deepfakes in spreading misinformation and the critical role of AI in combating such threats. Professionals in cybersecurity and media verification are urged to leverage similar technologies to ensure content authenticity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "SpaceXAI Launches Grok 4.5—Musk Calls It ‘Opus-Class’",
-            "title": "SpaceXAI Unveils Grok 4.5, Promising Efficiency and Cost-Effectiveness",
-            "content": "SpaceXAI has released Grok 4.5, a new AI model described by Elon Musk as an 'Opus-class model.' This latest iteration promises enhanced efficiency and cost-effectiveness compared to existing powerful AI models. Grok 4.5 aims to provide a competitive edge in AI applications by optimizing resource usage while maintaining high performance. The release is part of SpaceXAI's strategy to capture a larger share of the AI market by offering innovative and accessible solutions. Developers and tech leaders are encouraged to explore Grok 4.5 for potential integration into their AI projects.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Robotics Startup Bets on Gaming Data for AI Training",
-            "title": "General Intuition Uses Video Game Data to Train Physical AI Models",
-            "content": "General Intuition, a forward-thinking startup, is leveraging millions of hours of video game data to train foundational models for physical AI. This approach aims to reduce the reliance on real-world data, making it easier to develop smarter robots. The company believes that gaming data provides rich, diverse scenarios that can enhance AI's understanding of spatial and temporal dynamics. This strategy could mark a pivotal shift in robotics, akin to the impact of ChatGPT in natural language processing. Robotics developers are advised to consider gaming data as a viable resource for AI training.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Google Photos Introduces AI-Powered ‘Video Remix’ Tool",
-            "title": "Google Photos Enhances Video Editing with New AI ‘Video Remix’ Feature",
-            "content": "Google Photos has launched a new AI-powered 'Video Remix' tool, offering users advanced editing capabilities. This feature allows for cinematic relighting, background swapping, and the addition of artistic styles to videos. By integrating AI into video editing, Google aims to simplify the creation of professional-quality content for users of all skill levels. This development is part of a broader trend of incorporating AI into consumer applications to enhance user experience and creativity. Users are encouraged to explore these new features to elevate their video content.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Meta Adds Safeguards to AI Glasses Amid Privacy Concerns",
-            "title": "Meta Introduces Privacy Measures for AI Glasses as Data Collection Expands",
-            "content": "Meta has implemented new safeguards to prevent unauthorized recordings with its AI glasses, addressing privacy concerns. Despite these measures, the company continues to expand the data collection capabilities of its AI products, raising questions about user privacy. This dual approach reflects the ongoing tension between innovation and privacy in AI development. Users and privacy advocates are advised to stay informed about the implications of such technologies and to consider privacy settings and permissions carefully.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "OpenAI’s New Voice Models Enable Real-Time Conversations",
-            "title": "OpenAI Releases Voice Models for Enhanced Live Conversation Capabilities",
-            "content": "OpenAI has unveiled new voice models designed to facilitate more natural live conversations, capable of simultaneous speaking and listening. This advancement is crucial for applications such as live translation, where real-time interaction is essential. The new models aim to improve the fluidity and responsiveness of AI-driven communication tools. This release marks a significant step forward in AI's ability to mimic human conversational dynamics, offering potential benefits for industries reliant on real-time communication. Developers are encouraged to integrate these models into their applications to enhance user interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "ChatGPT’s Voice Mode Overhaul—Less Interruptive, More Human-Like",
-            "title": "OpenAI Enhances ChatGPT’s Voice Mode for Improved User Interaction",
-            "content": "OpenAI has upgraded ChatGPT's voice mode with the new GPT-Live-1 model, designed to reduce interruptions and enhance conversational flow. This model waits for users to finish speaking, creating a more human-like interaction experience. The update addresses previous user feedback about the AI's tendency to interrupt, aiming to improve the overall user experience. This development is part of OpenAI's ongoing efforts to refine AI-human interactions, making them more seamless and intuitive. Users are encouraged to explore the updated voice mode for a more natural conversational experience.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/962856/chatgpt-upgraded-voice-mode-gpt-live",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Prime Intellect Secures $130M to Empower Enterprise AI Development",
-            "title": "Prime Intellect Raises $130M to Facilitate Enterprise AI Agent Creation",
-            "content": "Prime Intellect has successfully raised $130 million in a Series A funding round to support enterprises in developing their own AI agents. Founded in 2024, the company aims to provide organizations with the tools needed to train agentic systems without relying on major AI labs. This funding will accelerate the development of customizable AI solutions tailored to specific enterprise needs. The investment reflects a growing demand for enterprise-level AI capabilities and the desire for more control over AI development processes. Enterprises are encouraged to explore Prime Intellect's offerings to enhance their AI initiatives.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Slackbot Integrates Salesforce—Streamlines CRM and DocuSign Tasks",
-            "title": "Slackbot Now Accesses Salesforce CRM, Generates Charts, and Sends DocuSigns",
-            "content": "Slack has launched a new integration that allows Slackbot, its AI-powered assistant, to access the Salesforce platform, including CRM data, and perform tasks such as generating charts and sending DocuSigns directly from chat messages. This development comes five years after Salesforce's $27.7 billion acquisition of Slack, marking a significant step towards unifying the two platforms. The integration aims to enhance productivity by enabling seamless access to CRM insights and document management within Slack's collaborative environment. Businesses leveraging Salesforce for customer relationship management can now streamline workflows and improve efficiency. Users should explore the new capabilities to maximize their CRM investments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/slacks-slackbot-can-now-pull-your-crm-data-generate-charts-and-send-docusigns-all-from-a-chat-message",
             "relatedResources": []
         }
     ],
