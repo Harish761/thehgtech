@@ -2615,36 +2615,12 @@
       "date": "2026-04-18",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1447",
-      "incident_id": 1447,
-      "title": "Sixth Circuit Sanctioned Lawyers in Whiting v. City of Athens over Alleged Fake Appellate Citations ",
-      "date": "2026-04-11",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1448",
-      "incident_id": 1448,
-      "title": "Ohio Man Pleaded Guilty after Prosecutors Alleged He Used AI to Create and Distribute Nonconsensual ",
-      "date": "2026-04-11",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1449",
-      "incident_id": 1449,
-      "title": "Delaware Court Found Krafton Followed Most of ChatGPT's Recommendations in Campaign that Wrongfully ",
-      "date": "2026-04-11",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 330,
+    "total": 327,
     "last7Days": 19,
     "last30Days": 119
   },
-  "lastUpdated": "2026-07-10T20:17:46.514750+05:30"
+  "lastUpdated": "2026-07-10T23:25:59.297274+05:30"
 }
