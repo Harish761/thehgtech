@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1580",
+      "incident_id": 1580,
+      "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
+      "date": "2026-07-10",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1581",
       "incident_id": 1581,
       "title": "Storm-1516 Reportedly Spread Fabricated Narratives Targeting Firebird Data Center in Armenia",
@@ -33,9 +41,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1580",
-      "incident_id": 1580,
-      "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
+      "id": "AIID-1582",
+      "incident_id": 1582,
+      "title": "Bangladesh-Operated Facebook Pages Reportedly Shared AI-Generated Anti-Data-Center Imagery",
       "date": "2026-07-09",
       "category": "other",
       "severity": "medium"
@@ -2634,9 +2642,9 @@
     }
   ],
   "stats": {
-    "total": 329,
-    "last7Days": 18,
-    "last30Days": 118
+    "total": 330,
+    "last7Days": 19,
+    "last30Days": 119
   },
-  "lastUpdated": "2026-07-10T09:37:02.686961+05:30"
+  "lastUpdated": "2026-07-10T16:45:19.599922+05:30"
 }
