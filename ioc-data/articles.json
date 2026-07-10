@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "accenture-breach-env-file-2026",
+      "title": "The Accenture Breach Claim Isn't About Source Code — It's About .env Files",
+      "date": "July 10, 2026",
+      "category": "Threat Analysis",
+      "badge": "ANALYSIS",
+      "author": "Harish G",
+      "excerpt": "The July 2026 Accenture breach claim by threat actor '888' contains one architecturally decisive signal: .env files in the stolen set. If verified, this points to dev-workstation exfiltration, not a DevOps pipeline or repository access compromise — and changes every control priority.",
+      "image": "/images/articles/accenture-breach-env-file-2026.jpg",
+      "externalUrl": "articles/accenture-breach-env-file-2026.html",
+      "tags": [
+        "Accenture",
+        "Data Breach",
+        "Azure DevOps",
+        "Secrets Management",
+        "Developer Workstation",
+        "DLP",
+        "ISO 27001",
+        "Threat Actor 888"
+      ]
+    },
+    {
       "id": "report-20260706",
       "title": "Weekly Threat Report: July 06, 2026",
       "date": "July 06, 2026",
