@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-07-09T17:01:07.107105",
-  "total_incidents": 29270,
+  "last_updated": "2026-07-10T06:25:03.518902",
+  "total_incidents": 29274,
   "incidents": [
+    {
+      "id": "gunra_new_tiles_s.l.",
+      "victim_name": "New Tiles S.L.",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-07-10T03:24:28.917422+00:00",
+      "industry": "Manufacturing",
+      "website": "new-tiles.com",
+      "claim": "[AI generated] N/A",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_hynet",
+      "victim_name": "Hynet",
+      "threat_actor": "nova",
+      "date_discovered": "2026-07-10T02:57:59.060098+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Hynet helps businesses protect and manage their most important asset: information. With a team of skilled tech experts, they solve complex IT challenges by providing smart data storage and network security services. Their remote team works closely with clients to improve productivity and keep company data safe from growing digital threats - Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/839f654f9193503304e4b054dd3509bc.png",
+      "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/hynet",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "cmdorganization_finance_yorkshire",
+      "victim_name": "Finance Yorkshire",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-07-09T19:20:22.583117+00:00",
+      "industry": "Financial Services",
+      "website": "www.finance-yorkshire.com",
+      "claim": "Finance Yorkshire provides funding solutions for small and medium-sized enterprises (SMEs) located in or planning to relocate to Yorkshire. Their offerings include business loans ranging from £25,000 to £250,000, equity-linked investments, and seedcorn startup finance, with a focus on supporting growth and innovation. The organization aims to invest over £50 million in the region over the next five years, targeting businesses that seek to expand, create jobs, and enhance productivity. With a legacy of successful investments, Finance Yorkshire is dedicated to fostering the development of technology and knowledge-based companies.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "moneymessage_envision_unlimited",
+      "victim_name": "Envision Unlimited",
+      "threat_actor": "moneymessage",
+      "date_discovered": "2026-07-09T17:27:17.007984+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "[AI generated] Envision Unlimited is a nonprofit human services organization based in the United States, primarily operating in Illinois. Founded in Chicago, it provides support services for individuals with intellectual and developmental disabilities. Its programs include residential services, day programs, employment support, and behavioral health services, aimed at promoting independence, inclusion, and quality of life for the people it serves.",
+      "screenshot": "https://images.ransomware.live/victims/4a3bee41e75c432dacd07bb978c8f3cb.png",
+      "url": "http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion/news.php?id=1",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "braincipher_robroy.com",
       "victim_name": "robroy.com",
