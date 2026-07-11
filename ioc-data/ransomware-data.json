@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T14:26:41.234599",
+  "last_updated": "2026-07-11T02:39:28.929210",
   "period": "Last 7 days",
   "total_groups": 34,
   "total_victims": 234,
@@ -91,14 +91,20 @@
         0,
         0,
         0,
-        0,
-        65
+        65,
+        0
       ]
     },
     {
       "name": "Qilin",
-      "count": 41,
+      "count": 42,
       "victims": [
+        {
+          "name": "Eurodefi",
+          "date": "2026-07-10T15:57:41.264897+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=63fc378c-2a9e-4383-82fd-e8075df9a758",
+          "discovered_date": "2026-07-10T15:57:41.264897+00:00"
+        },
         {
           "name": "Hilo",
           "date": "2026-07-10T13:27:14.036134+00:00",
@@ -152,12 +158,6 @@
           "date": "2026-07-09T10:31:38.356664+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=09042649-52aa-4c66-9826-ca49ed5c7da0",
           "discovered_date": "2026-07-09T10:31:38.356664+00:00"
-        },
-        {
-          "name": "Sun Dolphin Boats",
-          "date": "2026-07-09T10:30:57.096495+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=d645d1da-4301-4b9b-a13f-23ca4e1a712c",
-          "discovered_date": "2026-07-09T10:30:57.096495+00:00"
         }
       ],
       "industries": [
@@ -178,12 +178,12 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         7,
         4,
-        2,
+        1,
         14,
-        14
+        16,
+        0
       ]
     },
     {
@@ -264,8 +264,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         21,
+        0,
         0,
         0,
         0
@@ -350,8 +350,8 @@
         0,
         0,
         0,
-        0,
         12,
+        0,
         0
       ]
     },
@@ -424,8 +424,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         9,
+        0,
         0,
         0,
         0,
@@ -492,11 +492,11 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         1,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -553,13 +553,13 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         0,
         2,
-        2
+        2,
+        0
       ]
     },
     {
@@ -616,12 +616,12 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         5,
         0,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -675,118 +675,59 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         5,
         1,
         0,
         0,
+        0,
         0
       ]
     },
     {
-      "name": "Krybit",
-      "count": 5,
+      "name": "Dragonforce",
+      "count": 4,
       "victims": [
         {
-          "name": "xuerong.com",
-          "date": "2026-07-08T14:55:28.464430+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/cff99e0ccf21ac4aa31288af8d0cc04b21b86ff674e9742c30e81e6261b4e256/",
-          "discovered_date": "2026-07-08T14:55:28.464430+00:00"
+          "name": "The Schuett Companies",
+          "date": "2026-07-10T21:57:26.296097+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=d08d0ea2-3184-4606-8198-38fd270460a4",
+          "discovered_date": "2026-07-10T21:57:26.296097+00:00"
         },
         {
-          "name": "shelby.com.mx",
-          "date": "2026-07-08T14:54:47.831602+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/0be5e3372189bc8227a64a038e9108059cf98bfe70a3374df244bb15e4c10ceb/",
-          "discovered_date": "2026-07-08T14:54:47.831602+00:00"
+          "name": "The Schuett Companies",
+          "date": "2026-07-10T21:57:26+00:00",
+          "url": "https://www.ransomware.live/id/VGhlIFNjaHVldHQgQ29tcGFuaWVzQGRyYWdvbmZvcmNl",
+          "discovered_date": "2026-07-10T21:57:26+00:00"
         },
         {
-          "name": "xuerong.com",
-          "date": "2026-07-08T14:55:28+00:00",
-          "url": "https://www.ransomware.live/id/eHVlcm9uZy5jb21Aa3J5Yml0",
-          "discovered_date": "2026-07-08T14:55:28+00:00"
+          "name": "hive360.com",
+          "date": "2026-07-07T07:56:48+00:00",
+          "url": "https://www.ransomware.live/id/aGl2ZTM2MC5jb21AZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-07-07T07:56:48+00:00"
         },
         {
-          "name": "shelby.com.mx",
-          "date": "2026-07-08T14:54:47+00:00",
-          "url": "https://www.ransomware.live/id/c2hlbGJ5LmNvbS5teEBrcnliaXQ=",
-          "discovered_date": "2026-07-08T14:54:47+00:00"
-        },
-        {
-          "name": "seprec.gob.bo",
-          "date": "2026-07-07T14:26:14+00:00",
-          "url": "https://www.ransomware.live/id/c2VwcmVjLmdvYi5ib0BrcnliaXQ=",
-          "discovered_date": "2026-07-07T14:26:14+00:00"
+          "name": "amplesurveyor.com",
+          "date": "2026-07-07T07:55:47+00:00",
+          "url": "https://www.ransomware.live/id/YW1wbGVzdXJ2ZXlvci5jb21AZHJhZ29uZm9yY2U=",
+          "discovered_date": "2026-07-07T07:55:47+00:00"
         }
       ],
       "industries": [
-        "Not Found",
-        "Technology"
+        "Construction"
       ],
       "countries": [
-        "BO",
-        "CN",
-        "MX"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        1,
-        4,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Genesis",
-      "count": 5,
-      "victims": [
-        {
-          "name": "Apex Agro, LLC",
-          "date": "2026-07-05T13:59:07+00:00",
-          "url": "https://www.ransomware.live/id/QXBleCBBZ3JvLCBMTENAZ2VuZXNpcw==",
-          "discovered_date": "2026-07-05T13:59:07+00:00"
-        },
-        {
-          "name": "Mirage Endoscopy Center",
-          "date": "2026-07-05T13:58:29+00:00",
-          "url": "https://www.ransomware.live/id/TWlyYWdlIEVuZG9zY29weSBDZW50ZXJAZ2VuZXNpcw==",
-          "discovered_date": "2026-07-05T13:58:29+00:00"
-        },
-        {
-          "name": "Bri-Tech, Inc",
-          "date": "2026-07-05T13:57:47+00:00",
-          "url": "https://www.ransomware.live/id/QnJpLVRlY2gsIEluY0BnZW5lc2lz",
-          "discovered_date": "2026-07-05T13:57:47+00:00"
-        },
-        {
-          "name": "SBI Software",
-          "date": "2026-07-05T13:57:09+00:00",
-          "url": "https://www.ransomware.live/id/U0JJIFNvZnR3YXJlQGdlbmVzaXM=",
-          "discovered_date": "2026-07-05T13:57:09+00:00"
-        },
-        {
-          "name": "DICON",
-          "date": "2026-07-05T13:56:30+00:00",
-          "url": "https://www.ransomware.live/id/RElDT05AZ2VuZXNpcw==",
-          "discovered_date": "2026-07-05T13:56:30+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
+        "N/A",
         "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        5,
+        0,
+        2,
         0,
         0,
-        0,
-        0,
+        2,
         0
       ]
     },
@@ -833,8 +774,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0
       ]
     },
@@ -880,10 +821,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
         0,
         2,
+        0,
         0
       ]
     },
@@ -925,10 +866,10 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -973,11 +914,52 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         4,
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Interlock",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Borger ISD",
+          "date": "2026-07-10T15:26:21.459274+00:00",
+          "url": "http://t26owzk2773mecpebt4l2eztx6lvn5642fn7annaynq7vwvb6wonkrid.onion/index.php?p=",
+          "discovered_date": "2026-07-10T15:26:21.459274+00:00"
+        },
+        {
+          "name": "Borger ISD",
+          "date": "2026-07-10T15:26:21+00:00",
+          "url": "https://www.ransomware.live/id/Qm9yZ2VyIElTREBpbnRlcmxvY2s=",
+          "discovered_date": "2026-07-10T15:26:21+00:00"
+        },
+        {
+          "name": "YMCA of Western North Carolina",
+          "date": "2026-07-07T15:27:30+00:00",
+          "url": "https://www.ransomware.live/id/WU1DQSBvZiBXZXN0ZXJuIE5vcnRoIENhcm9saW5hQGludGVybG9jaw==",
+          "discovered_date": "2026-07-07T15:27:30+00:00"
+        }
+      ],
+      "industries": [
+        "Education"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -1016,10 +998,10 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
         0,
         2,
+        0,
         0
       ]
     },
@@ -1059,8 +1041,49 @@
         0,
         0,
         0,
-        0,
         3,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Krybit",
+      "count": 3,
+      "victims": [
+        {
+          "name": "xuerong.com",
+          "date": "2026-07-08T14:55:28+00:00",
+          "url": "https://www.ransomware.live/id/eHVlcm9uZy5jb21Aa3J5Yml0",
+          "discovered_date": "2026-07-08T14:55:28+00:00"
+        },
+        {
+          "name": "shelby.com.mx",
+          "date": "2026-07-08T14:54:47+00:00",
+          "url": "https://www.ransomware.live/id/c2hlbGJ5LmNvbS5teEBrcnliaXQ=",
+          "discovered_date": "2026-07-08T14:54:47+00:00"
+        },
+        {
+          "name": "seprec.gob.bo",
+          "date": "2026-07-07T14:26:14+00:00",
+          "url": "https://www.ransomware.live/id/c2VwcmVjLmdvYi5ib0BrcnliaXQ=",
+          "discovered_date": "2026-07-07T14:26:14+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "BO",
+        "CN",
+        "MX"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
         0
       ]
     },
@@ -1097,10 +1120,10 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
+        1,
+        1,
+        1,
         0,
-        1,
-        1,
-        1,
         0,
         0
       ]
@@ -1139,8 +1162,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         3,
+        0,
         0,
         0,
         0
@@ -1179,8 +1202,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         3,
+        0,
         0,
         0,
         0
@@ -1217,8 +1240,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1252,8 +1275,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1287,8 +1310,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1321,8 +1344,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1353,42 +1376,41 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
       ]
     },
     {
-      "name": "Dragonforce",
+      "name": "Genesis",
       "count": 2,
       "victims": [
         {
-          "name": "hive360.com",
-          "date": "2026-07-07T07:56:48+00:00",
-          "url": "https://www.ransomware.live/id/aGl2ZTM2MC5jb21AZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-07-07T07:56:48+00:00"
+          "name": "Apex Agro, LLC",
+          "date": "2026-07-05T13:59:07+00:00",
+          "url": "https://www.ransomware.live/id/QXBleCBBZ3JvLCBMTENAZ2VuZXNpcw==",
+          "discovered_date": "2026-07-05T13:59:07+00:00"
         },
         {
-          "name": "amplesurveyor.com",
-          "date": "2026-07-07T07:55:47+00:00",
-          "url": "https://www.ransomware.live/id/YW1wbGVzdXJ2ZXlvci5jb21AZHJhZ29uZm9yY2U=",
-          "discovered_date": "2026-07-07T07:55:47+00:00"
+          "name": "Mirage Endoscopy Center",
+          "date": "2026-07-05T13:58:29+00:00",
+          "url": "https://www.ransomware.live/id/TWlyYWdlIEVuZG9zY29weSBDZW50ZXJAZ2VuZXNpcw==",
+          "discovered_date": "2026-07-05T13:58:29+00:00"
         }
       ],
       "industries": [],
       "countries": [
-        "N/A",
         "US"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
-        0,
-        0,
         2,
+        0,
+        0,
+        0,
         0,
         0,
         0
@@ -1415,8 +1437,8 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ]
@@ -1430,33 +1452,6 @@
           "date": "2026-07-08T11:01:13+00:00",
           "url": "https://www.ransomware.live/id/VG9zdHJ1ZCAmIFRlbXAsIFMuQy5AcGVhcg==",
           "discovered_date": "2026-07-08T11:01:13+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Interlock",
-      "count": 1,
-      "victims": [
-        {
-          "name": "YMCA of Western North Carolina",
-          "date": "2026-07-07T15:27:30+00:00",
-          "url": "https://www.ransomware.live/id/WU1DQSBvZiBXZXN0ZXJuIE5vcnRoIENhcm9saW5hQGludGVybG9jaw==",
-          "discovered_date": "2026-07-07T15:27:30+00:00"
         }
       ],
       "industries": [],
@@ -1495,8 +1490,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1522,8 +1517,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -1548,8 +1543,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1575,8 +1570,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1602,8 +1597,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
