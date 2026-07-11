@@ -6951,6 +6951,28 @@
       "Description": "In late 2023, the online jewellery store <a href=\"https://www.reddit.com/r/EngagementRings/comments/1adqinl/comment/koqzq4g/\" target=\"_blank\" rel=\"noopener\">GLAMIRA suffered a data breach they attributed to \"an unauthorised individual [who] briefly accessed one of our servers\"</a>. The data was subsequently published on a popular hacking forum and included 875k email addresses, names, phone numbers and purchases."
     }
   ],
+  "glendale.edu": [
+    {
+      "Name": "GlendaleCommunityCollege",
+      "Title": "Glendale Community College",
+      "BreachDate": "2026-06-15",
+      "AddedDate": "2026-07-11T10:40:09Z",
+      "PwnCount": 793925,
+      "DataClasses": [
+        "Academic records",
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Government issued IDs",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://x.com/DarkWebInformer/status/2066611727106715692\" target=\"_blank\" rel=\"noopener\">Glendale Community College was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. Data allegedly obtained from Glendale was later published online and included almost 800k unique email addresses along with various other data fields, including names, addresses, phone numbers, Social Security numbers and other information relating to student enrolments. <a href=\"https://glendale.edu/about-gcc/communications/update/\" target=\"_blank\" rel=\"noopener\">In its disclosure notice</a>, the college advised that \"the potentially impacted information may vary for each individual and may include all or just one of the above-listed types of information\"."
+    }
+  ],
   "glofox.com": [
     {
       "Name": "Glofox",
