@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 10 2026",
+            "headline": "Ransomware Negotiator Gets 70 Months for BlackCat Collusion",
+            "title": "Ransomware Negotiator Sentenced for Aiding BlackCat Ransomware Attacks",
+            "content": "A former ransomware negotiator has been sentenced to 70 months in a U.S. prison for conspiring with BlackCat ransomware operators. The individual collaborated with two other cybersecurity professionals to extort multiple victims, leveraging their expertise to enhance attack strategies. BlackCat, also known as ALPHV, has been responsible for numerous high-profile ransomware incidents. This sentencing highlights the severe consequences for professionals who misuse their skills to facilitate cybercrime. Organizations are urged to scrutinize their security partnerships and ensure ethical practices are upheld.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/ransomware-negotiator-gets-70-months-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Armenian National Faces 15 Years for Ryuk Ransomware",
+            "title": "Armenian National Pleads Guilty to Ryuk Ransomware Attacks",
+            "content": "Karen Vardanyan, an Armenian national, has pleaded guilty to charges related to Ryuk ransomware attacks and faces up to 15 years in federal prison. Vardanyan has also agreed to pay nearly $1.2 million in restitution to the victims. Ryuk ransomware has been a significant threat, targeting various sectors with its sophisticated encryption techniques. This case underscores the ongoing international efforts to combat ransomware and hold perpetrators accountable. Security professionals should remain vigilant against ransomware threats and ensure robust defenses are in place.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/karen-vardanyan-armenian-ryuk-ransomware-guilty/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Progress Urges ShareFile Shutdown Amid Security Threat",
+            "title": "Progress Software Advises ShareFile Users to Shut Down Servers",
+            "content": "Progress Software has advised ShareFile customers to shut down Windows servers running Storage Zone Controllers due to a credible external security threat. The company has temporarily disabled access to affected accounts as a precautionary measure. This proactive step is crucial to prevent potential data breaches and unauthorized access. ShareFile users should follow the company's guidance and stay updated on further instructions. This incident highlights the importance of swift action in response to emerging threats to protect sensitive data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Injective Labs GitHub Compromise Targets Crypto Wallets",
+            "title": "Injective Labs GitHub Compromise Leads to Malicious npm Packages",
+            "content": "Threat actors have compromised the Injective Labs SDK project's GitHub repository, using it to publish a malicious npm package aimed at stealing cryptocurrency wallet private keys. The compromised package, @injectivelabs/sdk-ts@1.20.21, contains functionality to extract sensitive wallet information. This breach poses a significant risk to cryptocurrency users relying on affected versions. Developers and users should verify package integrity and update to secure versions immediately. This incident underscores the critical need for robust security practices in open-source projects.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Six U-Boot Flaws Threaten Device Security at Boot",
+            "title": "New U-Boot Vulnerabilities Could Allow Device Crashes and Code Execution",
+            "content": "Researchers at Binarly have discovered six vulnerabilities in U-Boot, a bootloader used in various devices like routers and smart cameras. Four of these flaws can crash devices, while two allow attackers to execute code during boot. These vulnerabilities pose a risk to numerous devices, potentially affecting millions of users. Organizations should prioritize patching affected systems to mitigate these risks. This discovery highlights the importance of securing firmware components to prevent exploitation at the hardware level.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Laser Attack Resets Tangem Wallet Passwords—No Patch Available",
+            "title": "Laser Attack on Tangem Wallets Allows Unauthorized Password Resets",
+            "content": "Researchers from Ledger's Donjon security team have demonstrated a laser attack that can reset passwords on Tangem crypto wallet cards. By precisely timing a laser pulse at the chip, attackers can set the password to their choosing, gaining control over the wallet. This vulnerability is particularly concerning as affected cards cannot be patched. Tangem wallet users should be aware of this risk and consider additional security measures to protect their assets. This finding emphasizes the need for robust physical security in hardware wallet design.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "MODBEACON RAT Uses gRPC for Encrypted Command Traffic",
+            "title": "Silver Fox Group Deploys MODBEACON RAT with Encrypted C2 Communications",
+            "content": "The China-linked Silver Fox cybercrime group has been linked to a new Rust-based remote access trojan (RAT) called MODBEACON. This RAT utilizes gRPC streaming for encrypted command-and-control (C2) traffic, complicating detection efforts. Despite its low sophistication, MODBEACON's high activity level poses a threat to organizations across various sectors. Cybersecurity teams should enhance monitoring for encrypted traffic anomalies and update defenses accordingly. This development highlights the evolving tactics of cybercriminals in evading detection.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Okta Alerts on Vishing Attacks Targeting Microsoft 365 Users",
+            "title": "Okta Warns of Vishing Attacks Against Microsoft 365 Customers",
+            "content": "Okta has issued a warning about vishing attacks targeting Microsoft 365 customers. Attackers are calling victims and directing them to phishing websites that mimic Microsoft Entra ID login pages. This social engineering tactic aims to harvest credentials and gain unauthorized access to accounts. Microsoft 365 users should be cautious of unsolicited calls and verify the authenticity of login prompts. Organizations are encouraged to educate employees on recognizing phishing attempts and to implement multi-factor authentication for enhanced security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/okta-warns-of-vishing-attacks-targeting-microsoft-365-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Study Finds Traffic Leaks in 281 Free Android VPN Apps",
+            "title": "Traffic Leaks and Tracking Found in Free Android VPN Apps",
+            "content": "A study of 281 popular free VPN apps on the Google Play Store reveals significant security issues, including traffic leaks and unencrypted data. These apps, installed over 2.4 billion times, fail to provide the privacy and security users expect. The findings highlight the risks associated with free VPN services, which often prioritize monetization over user protection. Users should consider reputable, paid VPN services that offer robust encryption and privacy guarantees. This study underscores the importance of scrutinizing app permissions and privacy policies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "'Ill Bloom' Flaw Drains $5M from Crypto Wallets",
+            "title": "Cryptocurrency Wallets Exploited via 'Ill Bloom' Vulnerability",
+            "content": "Security firm Coinspect has disclosed a vulnerability dubbed 'Ill Bloom' affecting cryptocurrency wallets, leading to over $5 million in losses. The flaw involves weak randomness in generating recovery phrases, allowing attackers to predict and exploit these phrases to drain wallets. This vulnerability highlights the critical importance of secure random number generation in cryptographic applications. Wallet providers must address this issue promptly to protect users' assets. Users should ensure their wallets are updated and consider additional security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
             "headline": "DHS Database Breach—7M Affected in AssuranceAmerica Hack",
             "title": "DHS Database Compromised, AssuranceAmerica Breach Exposes 7 Million Records",
             "content": "In a significant breach, the Department of Homeland Security (DHS) database was hacked, and AssuranceAmerica reported a data breach affecting 7 million individuals. The breach underscores vulnerabilities in critical infrastructure and the insurance sector. Meanwhile, Adobe has increased its patch release frequency to address rising security threats, and Canada has successfully disrupted ransomware operations. These developments highlight the ongoing challenges in cybersecurity, emphasizing the need for robust defenses and timely updates. Organizations are urged to review their security protocols and ensure all systems are patched promptly.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
             "relatedResources": []
-        },
+        }
+    ],
+    "aiShorts": [
         {
-            "date": "Jul 09 2026",
-            "headline": "GigaWiper Backdoor Combines Disk Wiping, Ransomware, and Spyware",
-            "title": "Microsoft Uncovers GigaWiper Backdoor with Triple Threat Capabilities",
-            "content": "Microsoft has dissected a destructive Windows backdoor named GigaWiper, which combines three older malicious programs into one, offering operators the choice to wipe disks, deploy fake ransomware, or install spyware. This backdoor poses a significant threat to Windows systems, allowing attackers to choose their method of disruption. The integration of multiple destructive tools into a single package increases the potential impact on affected systems, making it a versatile weapon in cybercriminal arsenals. Organizations are advised to strengthen their endpoint defenses and ensure regular backups to mitigate potential damage. This development underscores the evolving complexity of cyber threats targeting Windows environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Ransomware Attack Steals Data from Mount Royal University",
-            "title": "Mount Royal University Confirms Data Breach in Ransomware Attack",
-            "content": "Mount Royal University has confirmed that hackers accessed its internal network, resulting in the deletion of two drives containing sensitive employee, student, and university data. This breach highlights the ongoing threat of ransomware attacks targeting educational institutions, which often hold vast amounts of personal and institutional data. The university is currently assessing the full extent of the breach and working to restore affected systems. This incident serves as a reminder for educational institutions to bolster their cybersecurity measures and implement robust data protection strategies. Stakeholders are urged to remain vigilant and review their security protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mount-royal-university-confirms-data-stolen-in-ransomware-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Microsoft Patches Defender Flaw—SYSTEM Privileges at Risk",
-            "title": "Microsoft Releases Patch for Defender Vulnerability CVE-2026-50656",
-            "content": "Microsoft has issued a security update to address a vulnerability in its Defender software, known as RoguePlanet, which could allow attackers to escalate privileges to SYSTEM level. Tracked as CVE-2026-50656 with a CVSS score of 7.8, this flaw resides in the Microsoft Malware Protection Engine (mpengine.dll). The vulnerability was disclosed nearly a month ago, prompting Microsoft to act swiftly to mitigate potential exploitation. Users are advised to apply the latest updates to ensure their systems are protected against this critical security risk. This patch is part of Microsoft's ongoing efforts to secure its widely used security software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Ubiquiti Patches Critical UniFi Flaws—Update Now",
-            "title": "Ubiquiti Addresses Critical Vulnerabilities in UniFi Product Line",
-            "content": "Ubiquiti has released updates to fix multiple critical security vulnerabilities affecting its UniFi product line, including Connect, Talk, Access, Protect, and OS. These flaws, such as CVE-2026-50746, could lead to privilege escalation and arbitrary command execution. Users of these products are at risk of unauthorized access and potential system compromise. Ubiquiti's swift response underscores the importance of timely patch management in preventing exploitation. Customers are strongly encouraged to update their systems immediately to safeguard against these vulnerabilities. This action is crucial to maintaining the integrity and security of network infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Felons Behind Offensive Cybersecurity Startup Exposed",
-            "title": "Controversial Cybersecurity Startup Linked to Felons and Conspiracies",
-            "content": "A cybersecurity startup offering millions for zero-day vulnerabilities is reportedly run by convicted felons and far-right conspiracy theorists. The founders' previous ventures include fake intelligence companies and a defunct AI-based lobbying platform. This revelation raises concerns about the ethics and intentions behind the startup's operations, particularly in the sensitive domain of cybersecurity. Professionals in the field should exercise caution when engaging with entities that have questionable backgrounds. This case highlights the need for transparency and due diligence in the cybersecurity industry to ensure trust and integrity.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+            "date": "Jul 10 2026",
+            "headline": "Open Source AI Powers Half of Fortune 500",
+            "title": "Hugging Face CEO Highlights Open Source AI's Growing Influence",
+            "content": "Hugging Face CEO Clem Delangue emphasizes the critical role of open source AI, likening the platform to a GitHub for AI. The company facilitates the sharing and downloading of open models and datasets, now utilized by approximately half of the Fortune 500 companies. This trend underscores a shift from proprietary to open AI solutions, driven by the need for transparency and collaboration. Delangue notes that open source AI accelerates innovation and democratizes access to cutting-edge technology. Companies are increasingly opting for open source to avoid vendor lock-in and foster innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
             "relatedResources": []
         },
         {
             "date": "Jul 10 2026",
-            "headline": "Ex-Ransomware Negotiator Jailed for $75.3M Fraud",
-            "title": "Former DigitalMint Negotiator Sentenced for Ransomware Fraud Scheme",
-            "content": "Angelo Martino, a former ransomware negotiator for DigitalMint, has been sentenced to 70 months in prison for his role in a $75.3 million extortion scheme. Martino exploited his insider position to provide confidential information to ransomware co-conspirators, targeting five U.S.-based victims. This case underscores the risks of insider threats within organizations, particularly in roles involving sensitive negotiations. Companies are urged to implement stringent access controls and monitor employee activities to prevent similar incidents. The sentencing serves as a deterrent to potential insiders considering exploiting their positions for criminal gain.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/digitalmint-ransomware-negotiator-angelo-martino-sentenced/",
+            "headline": "Meta Halts Instagram AI Deepfake Feature Amid Backlash",
+            "title": "Meta Disables Instagram AI Feature Allowing Deepfakes of Public Accounts",
+            "content": "Meta has disabled a controversial Instagram feature that allowed users to create AI-generated images from public account content. The feature, which required only tagging a public account, faced significant backlash for privacy concerns. Critics argued it could lead to misuse and unauthorized deepfakes, prompting Meta's swift response. The company acknowledged the feature's shortcomings and removed it to protect user privacy and maintain trust. This move reflects growing scrutiny over AI's role in content creation and privacy implications.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Apple Sues OpenAI—Claims Trade Secret Theft",
+            "title": "Apple Accuses OpenAI of Stealing Hardware Secrets in Lawsuit",
+            "content": "Apple has filed a lawsuit against OpenAI, alleging that former Apple employees now at OpenAI stole trade secrets to advance the AI startup's hardware initiatives. The complaint details a pattern of intellectual property theft, implicating OpenAI's senior leadership. This legal battle highlights the competitive tensions in the AI hardware space, where proprietary technology is a key differentiator. Apple seeks to protect its innovations and deter future intellectual property violations. The outcome could set a precedent for handling trade secret disputes in the tech industry.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "SK Hynix's $26.5B IPO—Largest Foreign US Offering",
+            "title": "SK Hynix's Record IPO Spurs Calls for US Manufacturing Expansion",
+            "content": "SK Hynix has raised $26.5 billion in the largest foreign initial public offering (IPO) in US history, driven by the booming demand for AI chips. The success of the IPO has prompted calls for the company, along with Samsung, to establish manufacturing facilities in the United States. This move could strengthen the US semiconductor supply chain and support the growing AI industry. The IPO reflects the strategic importance of AI chip manufacturing and the geopolitical considerations influencing tech investments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
             "relatedResources": []
         },
         {
             "date": "Jul 09 2026",
-            "headline": "Iran Expands Cyber Targets Beyond Critical Infrastructure",
-            "title": "Iranian Cyber Threats Now Targeting Broader Range of Industries",
-            "content": "Iranian cyber actors are reportedly expanding their focus beyond critical infrastructure to target any organization with internet-facing vulnerabilities. This shift highlights the increased risk for companies across various sectors, emphasizing that obscurity is not a defense against cyber threats. Organizations are advised to conduct thorough vulnerability assessments and strengthen their cybersecurity posture to mitigate potential attacks. This trend reflects the evolving tactics of state-sponsored threat actors seeking to exploit weaknesses in global networks. Security professionals should remain vigilant and proactive in defending against these expanding threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
+            "headline": "Elon Musk Assures Anthropic—$40B Revenue at Stake",
+            "title": "Elon Musk Pledges Support for Anthropic Amid Hosting Concerns",
+            "content": "Elon Musk has publicly assured Anthropic that he will not disrupt the hosting of its AI models, with approximately $40 billion in revenue at risk. This statement comes amid concerns about the stability and reliability of hosting services for AI companies. Musk's commitment aims to bolster confidence in Anthropic's operations and its reliance on external infrastructure. The assurance is crucial as Anthropic navigates the competitive AI landscape, where hosting reliability is a critical factor for success.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
             "relatedResources": []
         },
         {
             "date": "Jul 09 2026",
-            "headline": "Dormant GitHub Accounts Aid Corporate Espionage",
-            "title": "Attackers Use Dormant GitHub Accounts to Map Corporate Structures",
-            "content": "Datadog Security Labs has identified campaigns exploiting dormant GitHub accounts to systematically map corporate organizations, repositories, and user accounts. Attackers utilize automated scraping tools with legitimate-sounding user agents to blend in and avoid detection. This tactic allows them to gather valuable intelligence on corporate structures, potentially aiding in targeted attacks. Organizations are encouraged to regularly audit their GitHub accounts and repositories to identify and secure inactive accounts. This discovery highlights the need for vigilance in managing digital assets and preventing unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+            "headline": "GPT-5.6 Launches After Government Approval",
+            "title": "OpenAI's GPT-5.6 Receives Greenlight for Public Rollout",
+            "content": "OpenAI has launched GPT-5.6 following regulatory approval from the Trump administration, marking a significant milestone for the AI model. Initially restricted to government-approved organizations, the model is now available for public use. OpenAI CEO Sam Altman describes this as a breakthrough in AI capabilities, offering enhanced performance and broader applicability. The rollout underscores the importance of regulatory compliance in AI development and the potential for advanced models to transform industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
             "relatedResources": []
         },
         {
             "date": "Jul 09 2026",
-            "headline": "npm 12 Disables Install Scripts—Supply Chain Risk Reduced",
-            "title": "GitHub Releases npm 12 with Default Script Disabling to Enhance Security",
-            "content": "GitHub has announced npm version 12, which disables install scripts by default to mitigate supply chain risks. This update also includes the deprecation of granular access tokens (GATs) designed to bypass two-factor authentication (2FA). By disabling install scripts, npm aims to reduce the potential for malicious code execution during package installation. Developers are advised to review their workflows and ensure compatibility with the new default settings. This move reflects GitHub's commitment to enhancing the security of its package management ecosystem and protecting developers from supply chain attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
+            "headline": "GPT-5.6 Powers Microsoft 365—Boosts Productivity",
+            "title": "Microsoft 365 Copilot Integrates GPT-5.6 for Enhanced AI Functionality",
+            "content": "Microsoft has integrated OpenAI's GPT-5.6 into its Microsoft 365 Copilot, enhancing AI capabilities across applications like Word, Excel, and PowerPoint. This integration promises faster, higher-quality work by leveraging GPT-5.6's advanced natural language processing and machine learning capabilities. The move highlights the growing trend of embedding sophisticated AI models into productivity tools to improve efficiency and user experience. Users can expect more intuitive interactions and smarter automation features.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
             "relatedResources": []
         },
         {
             "date": "Jul 09 2026",
-            "headline": "AI Tools Exploited via Decades-Old Technique—GhostApproval",
-            "title": "Wiz Unveils GhostApproval Attack on AI Coding Assistants",
-            "content": "Wiz has disclosed a new attack method called GhostApproval, which exploits AI coding assistants using a decades-old technique. This method tricks AI tools into executing malicious code on developers' machines, posing a significant risk to software development environments. The attack highlights vulnerabilities in AI-driven coding tools that can be manipulated to bypass security measures. Developers using AI coding assistants should be aware of this threat and implement additional security checks to prevent unauthorized code execution. This discovery underscores the need for continuous evaluation and improvement of AI tool security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-coding-tools-tricked-into-hacking-developer-machine-via-decades-old-technique/",
+            "headline": "GPT-5.6 Offers Scalable Intelligence for Ambitious Projects",
+            "title": "GPT-5.6 Delivers Enhanced Performance and Scalability for AI Applications",
+            "content": "OpenAI's GPT-5.6 is designed to provide more intelligence per token and improved performance per dollar, catering to ambitious AI projects. The model offers on-demand capabilities, allowing users to scale AI applications according to their needs. This development reflects the increasing demand for flexible, cost-effective AI solutions that can handle complex tasks. GPT-5.6's introduction is set to influence how organizations deploy AI to achieve strategic objectives.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/gpt-5-6",
             "relatedResources": []
-        }
-    ],
-    "aiShorts": [
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI Launches GPT-5.5 Bio Bug Bounty Program",
+            "title": "OpenAI Introduces Bug Bounty for GPT-5.5 Bio Model Security",
+            "content": "OpenAI has announced a bug bounty program for its GPT-5.5 Bio model, inviting researchers to identify vulnerabilities and enhance security. This initiative aims to ensure the model's robustness and reliability, particularly in sensitive bioinformatics applications. Participants can earn rewards for discovering and reporting security flaws, contributing to the model's continuous improvement. The program underscores OpenAI's commitment to transparency and collaboration in AI development, fostering a secure environment for innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/bio-bug-bounty",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Data for Agents—Hugging Face's New Initiative",
+            "title": "Hugging Face Launches 'Data for Agents' to Enhance AI Training",
+            "content": "Hugging Face has introduced 'Data for Agents,' a new initiative aimed at improving AI training through better data curation and accessibility. This program focuses on providing high-quality datasets for training AI models, addressing the challenges of data scarcity and quality. By offering curated datasets, Hugging Face seeks to empower developers and researchers to build more accurate and efficient AI systems. The initiative highlights the critical role of data in AI development and the need for robust data management practices.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/open-data-for-agents",
+            "relatedResources": []
+        },
         {
             "date": "Jul 10 2026",
             "headline": "Instagram's Mosseri: Dislike AI? Remove It from Your Feed",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/963307/microsoft-patch-tuesday-ai-security-updates",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Microsoft's Carbon Emissions Surge 25%—Climate Goals in Jeopardy",
-            "title": "Microsoft's 2026 Sustainability Report Reveals 25% Increase in Carbon Emissions",
-            "content": "Microsoft's latest sustainability report reveals a 25% increase in carbon emissions for 2025, totaling 34 million metric tons. This significant rise suggests the tech giant is struggling to meet its climate goals despite various interventions. The report, highlighted by GeekWire, underscores the challenges faced by major corporations in balancing growth with environmental responsibilities. This increase in emissions could impact Microsoft's reputation and its commitment to achieving carbon neutrality by 2030. Stakeholders are urged to scrutinize the company's strategies and demand more effective measures to curb emissions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Shared API Keys Risk AI Security at 69% of Enterprises",
-            "title": "VentureBeat Study Finds Shared API Keys Expose AI Agents to Security Risks",
-            "content": "A new study by VentureBeat reveals that 69% of enterprises expose their AI agents to security risks by sharing API keys across multiple agents. This practice allows a single compromised agent to access the permissions of all associated workflows, complicating forensic investigations. The report highlights the need for stricter API key management and security protocols to prevent unauthorized access and data breaches. Enterprises are advised to implement unique keys for each agent and regularly audit their API usage to enhance security.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/shared-api-keys-expose-ai-agent-fleets-venturebeat-research",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "OpenAI's GPT 5.6 Powers Microsoft Copilot 365 Amid Breakup Rumors",
-            "title": "OpenAI Confirms GPT 5.6 as Preferred Model for Microsoft Copilot 365",
-            "content": "OpenAI has announced that its latest model, GPT 5.6, is the preferred choice for Microsoft's Copilot 365, despite rumors of a potential split between the companies. The new model promises enhanced capabilities for workplace and productivity applications, maintaining OpenAI's influence in Microsoft's suite. This development comes as both companies navigate a competitive AI landscape, with OpenAI aiming to solidify its position in enterprise solutions. Users of Microsoft Copilot 365 can expect improved performance and functionality with the integration of GPT 5.6.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI's No. 2, Fidji Simo, Steps Down Amid Health Issues",
-            "title": "Fidji Simo Resigns from OpenAI's Executive Role Due to Health Concerns",
-            "content": "Fidji Simo, OpenAI's second-in-command, has stepped down from her full-time role following an extended medical leave due to a neuroimmune condition. Her departure creates a leadership gap at a critical time as OpenAI considers an IPO and competes with Anthropic in the enterprise market. Simo will transition to a part-time advisory position, allowing her to contribute while managing her health. The company must now address the leadership void to maintain its strategic momentum and reassure stakeholders.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI Unveils GPT-5.6—Boosts Cybersecurity and More",
-            "title": "OpenAI Launches GPT-5.6 with Enhanced Cybersecurity Features",
-            "content": "OpenAI has released its latest model, GPT-5.6, which promises significant improvements across various domains, including cybersecurity. The new model is designed to enhance threat detection and response capabilities, offering enterprises a robust tool for safeguarding digital assets. As cyber threats continue to evolve, GPT-5.6's advanced features aim to provide a competitive edge in protecting sensitive information. Organizations are encouraged to explore the model's capabilities to bolster their cybersecurity strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "AI Agent Raises $100M for Startup—Proves Its Worth",
-            "title": "Lyzr's AI Agent Successfully Manages $100 Million Fundraising Round",
-            "content": "Lyzr, a startup specializing in AI agents for enterprises, has demonstrated the efficacy of its product by using its own AI agent to secure a $100 million funding round. This achievement serves as a testament to the capabilities of Lyzr's technology in handling complex financial negotiations and decision-making processes. The successful fundraise highlights the growing trust in AI-driven solutions for critical business operations. Investors and enterprises are taking note of AI's potential to transform traditional fundraising and management practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI Shuts Down Atlas—Focus Shifts to Desktop and Chrome",
-            "title": "OpenAI Discontinues Atlas Browser, Expands AI Features to Desktop and Chrome",
-            "content": "OpenAI has announced the discontinuation of its AI-powered browser, Atlas, less than a year after its launch. Despite this, the company plans to integrate some of Atlas's browsing features into its desktop application and a Chrome extension. This strategic shift aims to enhance user experience by providing more versatile and accessible AI-driven browsing capabilities. Users of Atlas are advised to transition to the new platforms to continue benefiting from OpenAI's innovative browsing technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Google Labels AI-Generated Ads—Transparency in Focus",
-            "title": "Google Introduces AI Labels for Ads Across Search, Discover, and YouTube",
-            "content": "Google has updated its \"My Ad Center\" to include labels indicating whether ads were created or edited using AI. This new feature applies to ads on Google Search, Google Discover, and YouTube, providing users with greater transparency about the content they encounter. The move aligns with Google's commitment to preventing misleading and deceptive advertising practices. Users are encouraged to utilize this information to make informed decisions about the ads they engage with.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Meta Joins AI Coding Race with Muse Spark 1.1",
-            "title": "Meta Launches Muse Spark 1.1 to Compete in AI Coding Solutions",
-            "content": "Meta has introduced Muse Spark 1.1, a new AI tool designed to handle large coding workloads, fix bugs, and assist with code migrations. This launch marks Meta's entry into the competitive AI coding market, where enterprises increasingly rely on automation for software development. Muse Spark 1.1 aims to streamline coding processes and improve efficiency, positioning Meta as a formidable player in the AI-driven development landscape. Developers and enterprises are encouraged to explore the tool's capabilities for enhanced productivity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "NYT Accuses OpenAI of Hiding Evidence in Copyright Case",
-            "title": "New York Times Claims OpenAI Concealed Evidence in ChatGPT Copyright Trial",
-            "content": "The New York Times has escalated its lawsuit against OpenAI, alleging that the company hid tools and datasets capable of identifying copyrighted journalism within ChatGPT outputs. This new motion for sanctions intensifies the legal battle over intellectual property rights in AI-generated content. The case highlights the ongoing challenges in balancing AI innovation with the protection of copyrighted material. Legal experts and content creators are closely monitoring the proceedings for implications on future AI development and copyright enforcement.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-56291",
+            "dateAdded": "Jul 10, 2026",
+            "vendor": "Balbooa Forms",
+            "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-48939",
+            "dateAdded": "Jul 10, 2026",
+            "vendor": "iCagenda iCagenda",
+            "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-48908",
             "dateAdded": "Jul 07, 2026",
