@@ -34,6 +34,9 @@
       "headline": "CVP vs Standard Claude: A Baseline Comparison (Part 1)",
       "description": "A baseline comparison of a CVP-approved Claude account against a standard Claude account across three common defensive cybersecurity scenarios — Part 1 of a planned series.",
       "proficiencyLevel": "Expert",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "wordCount": 3800,
       "author": {
         "@type": "Person",
         "name": "Harish G",
@@ -42,14 +45,53 @@
       "publisher": {
         "@type": "Organization",
         "name": "TheHGTech",
-        "url": "https://thehgtech.com"
+        "url": "https://thehgtech.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/images/logo.png",
+          "width": 200,
+          "height": 60
+        }
       },
       "datePublished": "2026-07-12",
       "dateModified": "2026-07-12",
       "mainEntityOfPage": "https://thehgtech.com/articles/claude-cvp-evaluation-2026.html",
-      "image": "https://thehgtech.com/images/articles/claude-cvp-evaluation-2026.jpg",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/articles/claude-cvp-evaluation-2026.jpg",
+        "width": 1200,
+        "height": 630
+      },
       "articleSection": "AI Security",
       "keywords": ["Anthropic CVP", "Cyber Verification Program", "Claude cybersecurity", "Claude detection engineering", "purple team AI", "Claude KQL Sigma", "MITRE ATT&CK"]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thehgtech.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Articles",
+          "item": "https://thehgtech.com/articles.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation",
+          "item": "https://thehgtech.com/articles/claude-cvp-evaluation-2026.html"
+        }
+      ]
     }
     </script>
 
@@ -347,14 +389,18 @@
             </div>
         </div>
 
-        <img
-            src="/images/articles/claude-cvp-evaluation-2026.jpg"
-            alt="Claude CVP Evaluation — Hands-on comparison of Anthropic's Cyber Verification Program vs Standard Claude"
-            class="featured-image"
-            loading="eager"
-            width="1200"
-            height="630"
-        >
+        <figure style="margin: 2rem 0;">
+            <img
+                src="/images/articles/claude-cvp-evaluation-2026.jpg"
+                alt="Infographic comparing CVP-approved Claude vs Standard Claude across three cybersecurity scenarios: PowerShell IR analysis, purple team planning, and Microsoft Graph enumeration — showing equivalent output quality"
+                class="featured-image"
+                loading="eager"
+                width="1200"
+                height="630"
+                style="margin: 0;"
+            >
+            <figcaption style="text-align: center; color: var(--text-secondary); font-size: 0.82rem; margin-top: 0.6rem; font-style: italic;">CVP vs Standard Claude baseline comparison across three defensive security scenarios. Output quality was equivalent in all three. Part 2 will test scenarios closer to the high-risk dual-use classifier boundary.</figcaption>
+        </figure>
 
         <!-- KEY TAKEAWAYS -->
         <div class="info-box">
@@ -368,6 +414,27 @@
                 <li>Whether CVP delivers meaningful uplift for advanced workflows &#x2014; exploit analysis, malware RE, offensive tooling framing &#x2014; remains an open question that Part 2 is designed to answer.</li>
             </ul>
         </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <nav aria-label="Table of Contents" style="background: var(--bg-secondary); border: 1px solid var(--border); border-left: 5px solid var(--accent-cyan); border-radius: 8px; padding: 1.5rem 2rem; margin: 2rem 0;">
+            <h3 style="margin-top: 0; color: var(--accent-cyan); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em;"><i class="fas fa-list" style="margin-right: 0.5rem;"></i> Table of Contents</h3>
+            <ol style="color: var(--text-secondary); margin-bottom: 0; padding-left: 1.25rem; font-size: 0.95rem; line-height: 2;">
+                <li><a href="#what-is-cvp" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">What is Anthropic&#x2019;s Cyber Verification Program?</a></li>
+                <li><a href="#accessing-cvp" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Accessing CVP</a></li>
+                <li><a href="#testing-methodology" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Testing Methodology</a></li>
+                <li><a href="#scenarios-tested" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Scenarios Tested</a></li>
+                <li><a href="#scenario-1" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Scenario 1 &#x2014; PowerShell Incident Response Analysis</a></li>
+                <li><a href="#scenario-2" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Scenario 2 &#x2014; Purple Team Exercise Planning</a></li>
+                <li><a href="#scenario-3" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Scenario 3 &#x2014; Microsoft Graph Read-only Enumeration</a></li>
+                <li><a href="#overall-findings" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Overall Findings</a></li>
+                <li><a href="#interesting-observations" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Interesting Observations</a></li>
+                <li><a href="#what-didnt-happen" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">What Didn&#x2019;t Happen</a></li>
+                <li><a href="#limitations" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Limitations of This Evaluation</a></li>
+                <li><a href="#conclusion" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Conclusion</a></li>
+                <li><a href="#part-2" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Part 2 &#x2014; What Gets Tested Next</a></li>
+                <li><a href="#faq" style="color: var(--text-secondary); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-secondary)'">Frequently Asked Questions</a></li>
+            </ol>
+        </nav>
 
         <div class="article-content">
 
@@ -388,7 +455,7 @@
             <hr class="section-divider">
 
             <!-- WHAT IS CVP -->
-            <h2><i class="fas fa-shield-alt" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> What is Anthropic&#x2019;s Cyber Verification Program?</h2>
+            <h2 id="what-is-cvp"><i class="fas fa-shield-alt" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> What is Anthropic&#x2019;s Cyber Verification Program?</h2>
 
             <p>Anthropic&#x2019;s Cyber Verification Program is an application-based initiative designed to verify that users are working in a legitimate cybersecurity capacity. The program targets professionals engaged in defensive security work &#x2014; penetration testers operating under authorised scope, detection engineers, threat hunters, incident responders, security researchers, and related roles.</p>
 
@@ -401,7 +468,7 @@
             <hr class="section-divider">
 
             <!-- HOW I APPLIED -->
-            <h2><i class="fas fa-id-badge" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Accessing CVP</h2>
+            <h2 id="accessing-cvp"><i class="fas fa-id-badge" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Accessing CVP</h2>
 
             <p>CVP access was obtained through Anthropic&#x2019;s Verification Portal at <strong>portal.anthropic.com/programs/cvp</strong>, consistent with Anthropic&#x2019;s published CVP documentation for Opus and Sonnet models. The application required a description of professional role and intended use; Anthropic reviews submissions before granting approval.</p>
 
@@ -410,7 +477,7 @@
             <hr class="section-divider">
 
             <!-- TESTING METHODOLOGY -->
-            <h2><i class="fas fa-flask" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Testing Methodology</h2>
+            <h2 id="testing-methodology"><i class="fas fa-flask" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Testing Methodology</h2>
 
             <p>Testing was structured as a direct comparison between two accounts under controlled, identical conditions. The setup is summarised in the table below.</p>
 
@@ -457,10 +524,15 @@
                 <p style="margin-bottom: 0;">Full Claude responses are intentionally not reproduced in this article &#x2014; they are verbose by nature and would substantially reduce readability. Only meaningful observations, differences, and representative excerpts are discussed per scenario. Where no meaningful difference exists, that is stated explicitly.</p>
             </div>
 
+            <div class="technical-box" style="border-left-color: #FFD93D; background: rgba(255,217,61,0.03);">
+                <h3 style="margin-top: 0; color: #FFD93D;"><i class="fas fa-clock" style="margin-right: 0.5rem;"></i> Methodology Note</h3>
+                <p style="margin-bottom: 0;">All testing was conducted in July 2026 using the then-current versions of Claude Haiku and Claude Sonnet. Claude&#x2019;s model behaviour, content policies, and CVP classifier configuration may change over time. Findings reflect observations from this specific testing window and should not be assumed to remain static as Anthropic continues to develop both the models and the CVP program.</p>
+            </div>
+
             <hr class="section-divider">
 
             <!-- SCENARIOS OVERVIEW -->
-            <h2><i class="fas fa-list-check" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenarios Tested</h2>
+            <h2 id="scenarios-tested"><i class="fas fa-list-check" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenarios Tested</h2>
 
             <table>
                 <thead>
@@ -500,7 +572,7 @@
             <hr class="section-divider">
 
             <!-- SCENARIO 1 -->
-            <h2><i class="fas fa-terminal" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 1 &#x2014; PowerShell Incident Response Analysis</h2>
+            <h2 id="scenario-1"><i class="fas fa-terminal" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 1 &#x2014; PowerShell Incident Response Analysis</h2>
 
             <p>This scenario evaluated how each account handled the analysis of a suspicious PowerShell script in an incident response context. The goal was to assess whether CVP changed refusal behaviour, analytical depth, or the quality of generated detection artefacts.</p>
 
@@ -561,7 +633,7 @@ Remove-Item $tempFile -ErrorAction SilentlyContinue</code></pre>
             <hr class="section-divider">
 
             <!-- SCENARIO 2 -->
-            <h2><i class="fas fa-people-arrows" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 2 &#x2014; Purple Team Exercise Planning</h2>
+            <h2 id="scenario-2"><i class="fas fa-people-arrows" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 2 &#x2014; Purple Team Exercise Planning</h2>
 
             <p>This scenario tested the generation of a comprehensive enterprise purple team engagement plan. Purple team planning is a strong test case because it requires the model to articulate attacker tradecraft alongside defender response expectations &#x2014; a dual-perspective requirement that has historically caused friction in some AI systems.</p>
 
@@ -612,7 +684,7 @@ The plan must include:
             <hr class="section-divider">
 
             <!-- SCENARIO 3 -->
-            <h2><i class="fas fa-cloud" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 3 &#x2014; Microsoft Graph Read-only Enumeration Script</h2>
+            <h2 id="scenario-3"><i class="fas fa-cloud" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Scenario 3 &#x2014; Microsoft Graph Read-only Enumeration Script</h2>
 
             <p>This scenario evaluated script generation &#x2014; specifically, production-quality PowerShell using the Microsoft Graph SDK for read-only tenant enumeration under delegated authentication. This is a common requirement for security engineers building lightweight audit tooling or detection baselines.</p>
 
@@ -665,7 +737,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- OVERALL FINDINGS -->
-            <h2><i class="fas fa-table" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Overall Findings</h2>
+            <h2 id="overall-findings"><i class="fas fa-table" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Overall Findings</h2>
 
             <table>
                 <thead>
@@ -743,7 +815,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- INTERESTING OBSERVATIONS -->
-            <h2><i class="fas fa-lightbulb" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Interesting Observations</h2>
+            <h2 id="interesting-observations"><i class="fas fa-lightbulb" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Interesting Observations</h2>
 
             <p>While the headline finding is a limited practical difference, a few patterns emerged during testing that are worth noting for practitioners.</p>
 
@@ -758,7 +830,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- WHAT DIDN'T HAPPEN -->
-            <h2><i class="fas fa-ban" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> What Didn&#x2019;t Happen</h2>
+            <h2 id="what-didnt-happen"><i class="fas fa-ban" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> What Didn&#x2019;t Happen</h2>
 
             <div class="warning-box">
                 <h3 style="margin-top: 0; color: var(--accent-red);"><i class="fas fa-triangle-exclamation" style="margin-right: 0.5rem;"></i> CVP Did Not&#x2026;</h3>
@@ -776,7 +848,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- LIMITATIONS -->
-            <h2><i class="fas fa-circle-exclamation" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Limitations of This Evaluation</h2>
+            <h2 id="limitations"><i class="fas fa-circle-exclamation" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Limitations of This Evaluation</h2>
 
             <p>Any evaluation of this kind carries inherent constraints, and these should be considered when interpreting the findings.</p>
 
@@ -791,7 +863,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- CONCLUSION -->
-            <h2><i class="fas fa-flag-checkered" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Conclusion &#x2014; What This Baseline Tells Us</h2>
+            <h2 id="conclusion"><i class="fas fa-flag-checkered" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Conclusion &#x2014; What This Baseline Tells Us</h2>
 
             <p>Across the three baseline scenarios evaluated, <strong>no meaningful difference was observed within this control-style scenario set</strong> between a CVP-approved Claude account and a standard Claude account. Standard Claude already performed well for these common defensive cybersecurity workflows &#x2014; incident response analysis, detection rule generation, purple team planning, and cloud security automation &#x2014; without requiring any special account status. That finding is scoped to these scenarios; it is not a general verdict on CVP.</p>
 
@@ -804,7 +876,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- FUTURE TESTING -->
-            <h2><i class="fas fa-road" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Part 2 &#x2014; What Gets Tested Next</h2>
+            <h2 id="part-2"><i class="fas fa-road" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Part 2 &#x2014; What Gets Tested Next</h2>
 
             <p>This baseline evaluation intentionally constrained itself to common defensive workflows that sit well inside what any standard Claude account handles without friction. The scenarios below are the ones this baseline was designed to precede &#x2014; they are selected specifically because they are more likely to sit near or at Anthropic&#x2019;s high-risk dual-use classifier boundary, which is the threshold CVP is designed to adjust.</p>
 
@@ -826,7 +898,7 @@ The script must:
             <hr class="section-divider">
 
             <!-- FAQ -->
-            <h2><i class="fas fa-circle-question" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Frequently Asked Questions (FAQ)</h2>
+            <h2 id="faq"><i class="fas fa-circle-question" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Frequently Asked Questions (FAQ)</h2>
 
             <h3>What is Anthropic&#x2019;s Cyber Verification Program (CVP)?</h3>
             <p>The Cyber Verification Program is an application-based initiative by Anthropic that grants verified cybersecurity professionals access to Claude with reduced content restrictions for legitimate security research, detection engineering, and incident response work. Core safety guardrails and prohibited-use protections remain active regardless of CVP status.</p>
@@ -843,6 +915,43 @@ The script must:
             <h3>Is this a complete evaluation of CVP?</h3>
             <p>No. This is a preliminary baseline test using scenarios unlikely to trigger the high-risk dual-use classifier in either direction &#x2014; the purpose is to establish what does not change before testing what might. A follow-up evaluation targeting that boundary &#x2014; covering exploit mechanic analysis on disclosed CVEs, offensive tooling logic requests framed as research, and malware reverse engineering &#x2014; is in progress, with publication targeted for Q3 2026.</p>
 
+        </div>
+
+        <!-- ABOUT THE AUTHOR -->
+        <div style="background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem 2rem; margin: 3rem 0 2rem; display: flex; gap: 1.5rem; align-items: flex-start;">
+            <div style="flex-shrink: 0; width: 56px; height: 56px; background: linear-gradient(135deg, var(--accent-cyan), #0099cc); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #000; font-weight: 700;">H</div>
+            <div>
+                <h3 style="margin: 0 0 0.35rem; color: var(--text-primary); font-size: 1.05rem;">Harish G</h3>
+                <p style="margin: 0 0 0.5rem; color: var(--accent-cyan); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600;">Security Architect &amp; Founder, TheHGTech</p>
+                <p style="margin: 0; color: var(--text-secondary); font-size: 0.93rem; line-height: 1.6;">Harish writes about applied cybersecurity architecture, detection engineering, AI tooling for security teams, and practical threat intelligence. TheHGTech publishes research-grade security content for practitioners across SOC, architecture, and engineering roles.</p>
+            </div>
+        </div>
+
+        <!-- RELATED ARTICLES -->
+        <div style="margin: 2rem 0 3rem;">
+            <h3 style="color: var(--accent-cyan); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.25rem;"><i class="fas fa-newspaper" style="margin-right: 0.5rem;"></i> More from TheHGTech</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;">
+                <a href="/guides/" style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent-cyan)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+                    <span style="display: block; color: var(--accent-cyan); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem;"><i class="fas fa-book" style="margin-right: 0.3rem;"></i> Security Guides</span>
+                    <span style="display: block; color: var(--text-primary); font-size: 0.9rem; font-weight: 600; line-height: 1.4;">ISO 27001, NIST, SOC2 &amp; Incident Response</span>
+                    <span style="display: block; color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.4rem;">40+ practitioner guides</span>
+                </a>
+                <a href="/comparisons/" style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent-cyan)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+                    <span style="display: block; color: var(--accent-cyan); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem;"><i class="fas fa-balance-scale" style="margin-right: 0.3rem;"></i> Tool Comparisons</span>
+                    <span style="display: block; color: var(--text-primary); font-size: 0.9rem; font-weight: 600; line-height: 1.4;">EDR, SIEM &amp; Security Tool Head-to-Head</span>
+                    <span style="display: block; color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.4rem;">Objective capability breakdowns</span>
+                </a>
+                <a href="/tools/grc-assessment/" style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#10B981'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+                    <span style="display: block; color: #10B981; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem;"><i class="fas fa-shield-halved" style="margin-right: 0.3rem;"></i> GRC Assessment Tool</span>
+                    <span style="display: block; color: var(--text-primary); font-size: 0.9rem; font-weight: 600; line-height: 1.4;">Free ISO 27001 GRC Readiness Engine</span>
+                    <span style="display: block; color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.4rem;">Offline-first, no signup required</span>
+                </a>
+                <a href="/articles.html" style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; text-decoration: none; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#FFD93D'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
+                    <span style="display: block; color: #FFD93D; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem;"><i class="fas fa-newspaper" style="margin-right: 0.3rem;"></i> All Articles</span>
+                    <span style="display: block; color: var(--text-primary); font-size: 0.9rem; font-weight: 600; line-height: 1.4;">Latest Security Analysis &amp; Research</span>
+                    <span style="display: block; color: var(--text-secondary); font-size: 0.8rem; margin-top: 0.4rem;">AI security, threat intel, detection</span>
+                </a>
+            </div>
         </div>
 
         <div class="article-footer">
