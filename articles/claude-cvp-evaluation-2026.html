@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation | TheHGTech</title>
-    <meta name="description" content="Hands-on evaluation comparing a CVP-approved Claude account against a standard Claude account across four cybersecurity scenarios — PowerShell analysis, detection engineering, purple teaming, and Microsoft Graph automation.">
-    <meta name="keywords" content="Anthropic Cyber Verification Program, CVP Claude, Claude cybersecurity, Claude CVP vs standard, Claude detection engineering, Claude purple team, Claude MITRE ATT&CK, Claude Sigma rules, Claude KQL, CVP evaluation, Anthropic security program">
+    <title>CVP vs Standard Claude: A Baseline Comparison (Part 1) | TheHGTech</title>
+    <meta name="description" content="A baseline comparison of a CVP-approved Claude account against a standard Claude account across three common defensive cybersecurity scenarios — the first in a planned series targeting increasingly high-risk dual-use prompts.">
+    <meta name="keywords" content="Anthropic Cyber Verification Program, CVP Claude, Claude cybersecurity, Claude CVP vs standard, Claude detection engineering, Claude purple team, Claude MITRE ATT&CK, Claude Sigma rules, Claude KQL, CVP evaluation Part 1, Anthropic security program baseline">
     <meta name="author" content="Harish G">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/articles/claude-cvp-evaluation-2026.html">
@@ -15,15 +15,15 @@
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/claude-cvp-evaluation-2026.html">
-    <meta property="og:title" content="Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation">
-    <meta property="og:description" content="Hands-on evaluation comparing a CVP-approved Claude account against a standard Claude account across four cybersecurity scenarios. What actually changes — and what doesn't.">
+    <meta property="og:title" content="CVP vs Standard Claude: A Baseline Comparison (Part 1)">
+    <meta property="og:description" content="A baseline comparison of CVP-approved vs standard Claude across three common defensive cybersecurity scenarios — the first in a planned series targeting the high-risk dual-use boundary.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/claude-cvp-evaluation-2026.jpg">
     <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation">
-    <meta name="twitter:description" content="Hands-on evaluation comparing a CVP-approved Claude account against a standard Claude account across four cybersecurity scenarios. What actually changes — and what doesn't.">
+    <meta name="twitter:title" content="CVP vs Standard Claude: A Baseline Comparison (Part 1)">
+    <meta name="twitter:description" content="A baseline comparison of CVP-approved vs standard Claude across three common defensive cybersecurity scenarios — the first in a planned series targeting the high-risk dual-use boundary.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/claude-cvp-evaluation-2026.jpg">
 
     <!-- Structured Data: TechArticle -->
@@ -31,8 +31,8 @@
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation",
-      "description": "Hands-on evaluation comparing a CVP-approved Claude account against a standard Claude account across four cybersecurity scenarios.",
+      "headline": "CVP vs Standard Claude: A Baseline Comparison (Part 1)",
+      "description": "A baseline comparison of a CVP-approved Claude account against a standard Claude account across three common defensive cybersecurity scenarios — Part 1 of a planned series.",
       "proficiencyLevel": "Expert",
       "author": {
         "@type": "Person",
@@ -72,7 +72,7 @@
           "name": "Does a CVP-approved Claude account perform meaningfully better for cybersecurity tasks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Based on hands-on testing across four scenarios, the practical difference between a CVP account and a standard Claude account was minor. Both produced comparable outputs for common defensive workflows."
+            "text": "Within this baseline scenario set — common defensive workflows such as PowerShell IR analysis, purple team planning, and cloud enumeration — no meaningful difference was observed. These scenarios were deliberately chosen as control-style prompts unlikely to trigger CVP's high-risk dual-use classifier. Part 2 testing targeting that boundary is in progress."
           }
         },
         {
@@ -88,7 +88,15 @@
           "name": "What cybersecurity scenarios were tested in this CVP evaluation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Four scenarios were tested: (1) PowerShell incident response analysis, (2) advanced PowerShell reconnaissance script analysis, (3) enterprise purple team exercise planning, and (4) Microsoft Graph read-only enumeration script generation. Both Claude Haiku and Claude Sonnet were evaluated."
+            "text": "Three scenarios were tested: (1) PowerShell incident response analysis, (2) enterprise purple team exercise planning, and (3) Microsoft Graph read-only enumeration script generation. Both Claude Haiku and Claude Sonnet were evaluated. This is Part 1 of a planned series."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this a complete evaluation of CVP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This is a preliminary baseline test using scenarios unlikely to trigger CVP's high-risk dual-use classifier in either direction. A follow-up evaluation targeting that boundary — covering exploit mechanic analysis, offensive tooling framing, and malware reverse engineering — is in progress."
           }
         }
       ]
@@ -330,7 +338,7 @@
 
     <article>
         <div class="article-header">
-            <h1>Does Anthropic&#x2019;s Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation</h1>
+            <h1>CVP vs Standard Claude: A Baseline Comparison (Part 1)</h1>
             <div class="article-meta">
                 <span><i class="fas fa-user" style="color: var(--accent-cyan); margin-right: 0.4rem;"></i> Harish G</span>
                 <span><i class="fas fa-calendar" style="color: var(--accent-cyan); margin-right: 0.4rem;"></i> July 12, 2026</span>
@@ -352,11 +360,12 @@
         <div class="info-box">
             <h3 style="margin-top: 0; color: #FFD93D;"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i> Key Takeaways</h3>
             <ul style="color: var(--text-secondary); margin-bottom: 0;">
-                <li>Across four hands-on scenarios, the practical difference between a CVP-approved Claude account and a standard Claude account was <strong>minor to negligible</strong>.</li>
-                <li>Both accounts generated comparable outputs for <strong>incident response analysis, detection engineering, purple team planning, and read-only graph automation</strong>.</li>
-                <li>CVP tended to reference specific tooling (AzureHound, BloodHound, Microsoft Graph PowerShell AppId) more explicitly, but this did not meaningfully change output quality or usability.</li>
+                <li><strong>Part 1 of a planned series.</strong> This baseline test used three deliberately benign, common defensive workflows &#x2014; scenarios unlikely to trigger CVP&#x2019;s high-risk dual-use classifier in either direction. Part 2 will target that boundary directly.</li>
+                <li>Within this baseline scenario set, the practical difference between a CVP-approved Claude account and a standard Claude account was <strong>minor to negligible</strong>.</li>
+                <li>Both accounts generated comparable outputs for <strong>incident response analysis, purple team planning, and read-only cloud automation</strong>.</li>
+                <li>CVP tended to reference specific tooling (AzureHound, BloodHound, Microsoft Graph PowerShell AppId) more explicitly, but this did not meaningfully change output quality or usability within these scenarios.</li>
                 <li>CVP did <strong>not</strong> bypass safety guardrails, generate prohibited offensive tooling, or remove content restrictions during testing.</li>
-                <li>The program&#x2019;s practical value may be more visible in advanced workflows outside this evaluation&#x2019;s scope &#x2014; such as malware reverse engineering or exploit analysis.</li>
+                <li>Whether CVP delivers meaningful uplift for advanced workflows &#x2014; exploit analysis, malware RE, offensive tooling framing &#x2014; remains an open question that Part 2 is designed to answer.</li>
             </ul>
         </div>
 
@@ -368,6 +377,13 @@
             <p>After seeing enough of these posts, the natural question became less about whether to apply and more about what changes in practice. Rather than forming an opinion based on secondhand accounts, I applied, received approval, and ran a structured comparison between a CVP-enabled account and a standard Claude account.</p>
 
             <p>The objective of this evaluation is straightforward: to determine what practical differences, if any, exist between a CVP-approved Claude account and a standard Claude account when used for legitimate defensive cybersecurity workflows. This article is not a critique of Anthropic, nor is it an endorsement of the program. It is a technical evaluation based entirely on hands-on testing, with results reported as observed &#x2014; not extrapolated.</p>
+
+            <div class="technical-box">
+                <h3 style="margin-top: 0;"><i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i> About This Evaluation &#x2014; Part 1 of a Planned Series</h3>
+                <p style="margin-bottom: 0.75rem;">The three scenarios in this article were deliberately chosen as <strong>benign, common defensive workflows</strong> &#x2014; incident response script analysis, purple team exercise planning, and read-only cloud enumeration scripting. None of these are scenarios expected to sit inside Anthropic&#x2019;s high-risk dual-use classifier category (vulnerability exploitation, offensive tooling development, malware generation).</p>
+                <p style="margin-bottom: 0.75rem;">This is intentional. This evaluation is a <strong>baseline control test</strong>: establishing what does <em>not</em> change between CVP and standard Claude before moving into territory more likely to produce a measurable difference. If CVP cannot be shown to change output for routine defensive workflows, that is a meaningful data point in itself.</p>
+                <p style="margin-bottom: 0;">Part 2 of this series &#x2014; already in planning &#x2014; will test scenarios specifically chosen to sit closer to that dual-use boundary: exploit mechanic analysis on disclosed CVEs, offensive tooling logic requests framed as research, and malware reverse engineering. Those are the scenarios where CVP&#x2019;s classifier adjustment is most likely to produce a detectable difference. Results will be published when testing is complete.</p>
+            </div>
 
             <hr class="section-divider">
 
@@ -385,11 +401,11 @@
             <hr class="section-divider">
 
             <!-- HOW I APPLIED -->
-            <h2><i class="fas fa-id-badge" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> How I Applied</h2>
+            <h2><i class="fas fa-id-badge" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Accessing CVP</h2>
 
-            <p>The application process was straightforward. I submitted an application through Anthropic&#x2019;s official Cyber Verification Program form, providing details about my professional background and the nature of my security work. The application was reviewed and subsequently approved.</p>
+            <p>CVP access was obtained through Anthropic&#x2019;s Verification Portal at <strong>portal.anthropic.com/programs/cvp</strong>, consistent with Anthropic&#x2019;s published CVP documentation for Opus and Sonnet models. The application required a description of professional role and intended use; Anthropic reviews submissions before granting approval.</p>
 
-            <p>No special access, referral, or internal contact was involved. The process was standard and accessible to any cybersecurity professional who meets Anthropic&#x2019;s stated criteria.</p>
+            <p>One aspect of CVP worth understanding is that approval is not a one-time permanent grant. Access is <strong>continuously enforced</strong>: organisations must maintain a 30-day data retention policy for the account to remain enabled, and Anthropic&#x2019;s usage monitoring and safety classifiers remain active throughout. Access is suspended if either the retention requirement lapses or usage patterns trigger a safety classifier review. This means CVP does not represent a static unlocking of capabilities &#x2014; it is an ongoing verified-access relationship with active oversight.</p>
 
             <hr class="section-divider">
 
@@ -775,35 +791,37 @@ The script must:
             <hr class="section-divider">
 
             <!-- CONCLUSION -->
-            <h2><i class="fas fa-flag-checkered" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Conclusion</h2>
+            <h2><i class="fas fa-flag-checkered" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Conclusion &#x2014; What This Baseline Tells Us</h2>
 
-            <p>Across the four scenarios evaluated, only minor differences were observed between a CVP-approved Claude account and a standard Claude account. Standard Claude already performed exceptionally well for common defensive cybersecurity workflows &#x2014; incident response analysis, detection rule generation, purple team planning, and cloud security automation &#x2014; without requiring any special account status.</p>
+            <p>Across the three baseline scenarios evaluated, <strong>no meaningful difference was observed within this control-style scenario set</strong> between a CVP-approved Claude account and a standard Claude account. Standard Claude already performed well for these common defensive cybersecurity workflows &#x2014; incident response analysis, detection rule generation, purple team planning, and cloud security automation &#x2014; without requiring any special account status. That finding is scoped to these scenarios; it is not a general verdict on CVP.</p>
 
-            <p>CVP appears to modestly increase specificity in security tooling references and attacker-perspective framing. These are real, if incremental, improvements for practitioners who want less prompt engineering overhead when working with Claude on security tasks. But they do not represent a fundamental capability uplift that changes what is achievable.</p>
+            <p>CVP appears to modestly increase specificity in security tooling references and attacker-perspective framing within baseline workflows. These are real, if incremental, differences for practitioners who want less prompt engineering overhead. They do not represent a fundamental capability change within the scenario types tested here.</p>
 
-            <p>It would be inaccurate to conclude that CVP is without value. The practical value of the program may become significantly more visible during highly specialised workflows that were outside the scope of this evaluation &#x2014; scenarios such as malware reverse engineering, live exploit code analysis, shellcode behaviour dissection, or advanced persistence mechanism research. These are precisely the areas where content friction is most likely to impede legitimate security work, and where a verified account configuration is most likely to make a meaningful difference.</p>
+            <p>What this evaluation cannot determine &#x2014; and was not designed to determine &#x2014; is whether CVP produces meaningful uplift when prompts approach the high-risk dual-use boundary: exploit mechanic analysis, offensive tooling logic, malware reverse engineering, shellcode analysis. These are the scenarios most likely to trigger content friction in a standard account, and where CVP&#x2019;s classifier adjustment is most likely to produce a detectable difference. That is what Part 2 is for.</p>
 
-            <p>For practitioners whose primary security work falls within the scenarios tested here, the evidence suggests that a standard Claude account is sufficient. For those operating at the edges of defensive security research &#x2014; where the line between analysis and simulation becomes narrower &#x2014; CVP may offer tangible utility that this evaluation was not designed to capture.</p>
+            <p>The honest summary of Part 1: for routine defensive workflows, the standard Claude account is sufficient, and CVP&#x2019;s value was not demonstrable at this level. Whether that conclusion holds at the boundary of what Claude&#x2019;s safety classifier flags as high-risk dual-use &#x2014; that question remains open and is being actively tested.</p>
 
             <hr class="section-divider">
 
             <!-- FUTURE TESTING -->
-            <h2><i class="fas fa-road" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Future Testing</h2>
+            <h2><i class="fas fa-road" style="margin-right: 0.6rem; font-size: 1.2rem;"></i> Part 2 &#x2014; What Gets Tested Next</h2>
 
-            <p>This evaluation intentionally constrained itself to common defensive workflows. Several areas remain untested, and those are the areas most likely to reveal meaningful differences between CVP and standard accounts.</p>
+            <p>This baseline evaluation intentionally constrained itself to common defensive workflows that sit well inside what any standard Claude account handles without friction. The scenarios below are the ones this baseline was designed to precede &#x2014; they are selected specifically because they are more likely to sit near or at Anthropic&#x2019;s high-risk dual-use classifier boundary, which is the threshold CVP is designed to adjust.</p>
+
+            <p><strong>Part 2 testing is in progress.</strong> The scenario set is finalised; prompt construction and structured comparison runs are underway. Publication target is Q3 2026, subject to testing completion.</p>
 
             <div class="technical-box">
-                <h3 style="margin-top: 0;"><i class="fas fa-calendar-plus" style="margin-right: 0.5rem;"></i> Planned Evaluation Scenarios</h3>
+                <h3 style="margin-top: 0;"><i class="fas fa-calendar-plus" style="margin-right: 0.5rem;"></i> Part 2 &#x2014; Planned Evaluation Scenarios</h3>
                 <ul style="color: var(--text-secondary); margin-bottom: 0;">
-                    <li><strong>Malware Reverse Engineering</strong> &#x2014; Structural analysis of decompiled malware samples, packer identification, capability extraction, and C2 protocol reconstruction.</li>
-                    <li><strong>Public Exploit Analysis</strong> &#x2014; CVE-based analysis of publicly available exploit code, vulnerability mechanic explanation, and patch gap assessment.</li>
-                    <li><strong>Memory Forensics Assistance</strong> &#x2014; Volatile memory artefact interpretation, process injection indicator identification, and rootkit detection guidance.</li>
-                    <li><strong>Shellcode Analysis</strong> &#x2014; Disassembly-level walkthrough of shellcode samples, encoding pattern identification, and evasion technique classification.</li>
-                    <li><strong>Detection Engineering Benchmarks</strong> &#x2014; Structured comparison of Sigma, KQL, and YARA rule quality across a defined set of adversary techniques, measuring accuracy, false-positive risk, and coverage completeness.</li>
+                    <li><strong>Exploit Mechanic Analysis (Disclosed CVEs)</strong> &#x2014; CVE-based analysis of publicly available exploit code, vulnerability mechanic explanation at technical depth, patch gap assessment, and PoC walkthrough. This is the scenario most likely to differ between CVP and standard accounts.</li>
+                    <li><strong>Offensive Tooling Logic Requests</strong> &#x2014; Requests framed as defensive research that involve offensive tooling logic: implant communication patterns, evasion technique implementation rationale, post-exploitation workflow explanation. Designed to probe where CVP&#x2019;s classifier adjustment becomes visible.</li>
+                    <li><strong>Malware Reverse Engineering</strong> &#x2014; Structural analysis of decompiled malware samples, packer identification, capability extraction, and C2 protocol reconstruction framed as defensive analysis.</li>
+                    <li><strong>Shellcode and Memory Forensics</strong> &#x2014; Disassembly-level shellcode analysis, encoding pattern identification, evasion technique classification, and volatile memory artefact interpretation.</li>
+                    <li><strong>Detection Engineering Benchmarks</strong> &#x2014; Structured comparison of Sigma, KQL, and YARA rule quality across adversary techniques at the edge of what standard Claude generates without friction.</li>
                 </ul>
             </div>
 
-            <p>If the CVP configuration significantly changes Claude&#x2019;s willingness to engage with these more sensitive categories, the results will be substantially different from what was observed here. Those findings will be published as a follow-up evaluation.</p>
+            <p>If CVP produces a meaningful difference in engagement quality or refusal behaviour for these categories, Part 2 will show it. If it does not, that finding will be reported with the same directness as the baseline results above.</p>
 
             <hr class="section-divider">
 
@@ -814,13 +832,16 @@ The script must:
             <p>The Cyber Verification Program is an application-based initiative by Anthropic that grants verified cybersecurity professionals access to Claude with reduced content restrictions for legitimate security research, detection engineering, and incident response work. Core safety guardrails and prohibited-use protections remain active regardless of CVP status.</p>
 
             <h3>Does a CVP-approved Claude account perform meaningfully better for cybersecurity tasks?</h3>
-            <p>Based on this evaluation, the practical difference for common defensive workflows was minor. Both accounts produced equivalent outputs for incident response analysis, detection rule generation, purple team planning, and cloud security automation. The program may deliver more visible value in advanced scenarios such as malware reverse engineering or exploit analysis, which were not evaluated here.</p>
+            <p>Within this baseline scenario set, no meaningful difference was observed. Both accounts produced equivalent outputs for incident response analysis, detection rule generation, purple team planning, and cloud security automation. These scenarios were deliberately chosen as control-style workflows unlikely to trigger CVP&#x2019;s high-risk dual-use classifier &#x2014; they establish a baseline, not a verdict. Part 2 targets scenarios closer to that boundary.</p>
 
             <h3>Did CVP bypass Claude&#x2019;s safety guardrails during testing?</h3>
-            <p>No. The CVP account did not bypass safety boundaries, generate prohibited offensive tooling, or remove content restrictions during any tested scenario. Anthropic&#x2019;s stated position &#x2014; that prohibited-use safeguards remain active under CVP &#x2014; was consistent with what was observed.</p>
+            <p>No. The CVP account did not bypass safety boundaries, generate prohibited offensive tooling, or remove content restrictions during any tested scenario. Anthropic&#x2019;s stated position &#x2014; that prohibited-use safeguards remain active under CVP &#x2014; was consistent with what was observed in this baseline set.</p>
 
             <h3>What cybersecurity scenarios were tested in this evaluation?</h3>
-            <p>Four scenarios were tested: PowerShell incident response analysis, advanced PowerShell reconnaissance script analysis, enterprise purple team exercise planning, and Microsoft Graph read-only enumeration script generation. Both Claude Haiku and Claude Sonnet were evaluated. Claude Opus was excluded because it is not available on the free Claude tier.</p>
+            <p>Three scenarios were tested: PowerShell incident response analysis, enterprise purple team exercise planning, and Microsoft Graph read-only enumeration script generation. Both Claude Haiku and Claude Sonnet were evaluated. Claude Opus was excluded because it is not available on the free Claude tier. This is Part 1 of a planned series.</p>
+
+            <h3>Is this a complete evaluation of CVP?</h3>
+            <p>No. This is a preliminary baseline test using scenarios unlikely to trigger the high-risk dual-use classifier in either direction &#x2014; the purpose is to establish what does not change before testing what might. A follow-up evaluation targeting that boundary &#x2014; covering exploit mechanic analysis on disclosed CVEs, offensive tooling logic requests framed as research, and malware reverse engineering &#x2014; is in progress, with publication targeted for Q3 2026.</p>
 
         </div>
 
