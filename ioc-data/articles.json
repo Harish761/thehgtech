@@ -1,6 +1,29 @@
 {
   "articles": [
     {
+      "id": "claude-cvp-evaluation-2026",
+      "title": "Does Anthropic's Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation",
+      "date": "July 12, 2026",
+      "category": "AI Security",
+      "badge": "EVALUATION",
+      "author": "Harish G",
+      "excerpt": "A hands-on comparison between a CVP-approved Claude account and a standard Claude account across four cybersecurity scenarios — PowerShell incident response, advanced recon script analysis, purple team planning, and Microsoft Graph automation. What actually changes, and what doesn't.",
+      "image": "/images/articles/claude-cvp-evaluation-2026.jpg",
+      "externalUrl": "articles/claude-cvp-evaluation-2026.html",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Cyber Verification Program",
+        "CVP",
+        "Detection Engineering",
+        "Purple Team",
+        "MITRE ATT&CK",
+        "Sigma",
+        "KQL",
+        "AI Security"
+      ]
+    },
+    {
       "id": "accenture-breach-env-file-2026",
       "title": "The Accenture Breach Claim Isn't About Source Code — It's About .env Files",
       "date": "July 10, 2026",
