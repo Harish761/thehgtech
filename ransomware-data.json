@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-12T02:47:14.355063",
+  "last_updated": "2026-07-12T13:19:40.525861",
   "period": "Last 7 days",
-  "total_groups": 30,
+  "total_groups": 32,
   "total_victims": 235,
   "groups": [
     {
@@ -97,7 +97,7 @@
     },
     {
       "name": "Thegentlemen",
-      "count": 56,
+      "count": 51,
       "victims": [
         {
           "name": "Dash Door Glass",
@@ -161,11 +161,11 @@
         }
       ],
       "industries": [
-        "Agriculture and Food Production",
         "Business Services",
         "Construction",
-        "Consumer Services",
-        "Energy"
+        "Healthcare",
+        "Manufacturing",
+        "Not Found"
       ],
       "countries": [
         "AR",
@@ -182,7 +182,7 @@
         0,
         0,
         0,
-        35,
+        30,
         0
       ]
     },
@@ -354,6 +354,67 @@
         0,
         9,
         0
+      ]
+    },
+    {
+      "name": "M3Rx",
+      "count": 6,
+      "victims": [
+        {
+          "name": "eclective.ie",
+          "date": "2026-07-12T13:01:24.901726+00:00",
+          "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#eclective.ie",
+          "discovered_date": "2026-07-12T13:01:24.901726+00:00"
+        },
+        {
+          "name": "foreconinc.com",
+          "date": "2026-07-12T13:01:03.536307+00:00",
+          "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#foreconinc.com",
+          "discovered_date": "2026-07-12T13:01:03.536307+00:00"
+        },
+        {
+          "name": "wrtworld.com",
+          "date": "2026-07-12T13:00:40.454781+00:00",
+          "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#wrtworld.com",
+          "discovered_date": "2026-07-12T13:00:40.454781+00:00"
+        },
+        {
+          "name": "eclective.ie",
+          "date": "2026-07-12T13:01:24+00:00",
+          "url": "https://www.ransomware.live/id/ZWNsZWN0aXZlLmllQG0zcng=",
+          "discovered_date": "2026-07-12T13:01:24+00:00"
+        },
+        {
+          "name": "foreconinc.com",
+          "date": "2026-07-12T13:01:03+00:00",
+          "url": "https://www.ransomware.live/id/Zm9yZWNvbmluYy5jb21AbTNyeA==",
+          "discovered_date": "2026-07-12T13:01:03+00:00"
+        },
+        {
+          "name": "wrtworld.com",
+          "date": "2026-07-12T13:00:40+00:00",
+          "url": "https://www.ransomware.live/id/d3J0d29ybGQuY29tQG0zcng=",
+          "discovered_date": "2026-07-12T13:00:40+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Not Found"
+      ],
+      "countries": [
+        "IE",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6
       ]
     },
     {
@@ -535,62 +596,52 @@
       ]
     },
     {
-      "name": "Safepay",
-      "count": 6,
+      "name": "Titan",
+      "count": 4,
       "victims": [
         {
-          "name": "matrixwebagency.com",
-          "date": "2026-07-06T19:43:00+00:00",
-          "url": "https://www.ransomware.live/id/bWF0cml4d2ViYWdlbmN5LmNvbUBzYWZlcGF5",
-          "discovered_date": "2026-07-06T19:43:00+00:00"
+          "name": "Cooperate service CZ s.r.o.",
+          "date": "2026-07-12T09:22:29.394967+00:00",
+          "url": "http://x4bccxlsmjsxlnnf3ocvndlshgfkagzytpqmsjnlfykceumnw6i4hkqd.onion/awaiting/post/and-other-company-heads-ixu0o85yt7",
+          "discovered_date": "2026-07-12T09:22:29.394967+00:00"
         },
         {
-          "name": "bmiprojects.de",
-          "date": "2026-07-06T19:42:23+00:00",
-          "url": "https://www.ransomware.live/id/Ym1pcHJvamVjdHMuZGVAc2FmZXBheQ==",
-          "discovered_date": "2026-07-06T19:42:23+00:00"
+          "name": "Eureka Construction INC",
+          "date": "2026-07-12T09:22:00.220767+00:00",
+          "url": "http://x4bccxlsmjsxlnnf3ocvndlshgfkagzytpqmsjnlfykceumnw6i4hkqd.onion/awaiting/post/eureka-construction-inc-6mdwho3d0m",
+          "discovered_date": "2026-07-12T09:22:00.220767+00:00"
         },
         {
-          "name": "caritas-koblenz.de",
-          "date": "2026-07-06T19:41:48+00:00",
-          "url": "https://www.ransomware.live/id/Y2FyaXRhcy1rb2JsZW56LmRlQHNhZmVwYXk=",
-          "discovered_date": "2026-07-06T19:41:48+00:00"
+          "name": "Cooperate service CZ s.r.o.",
+          "date": "2026-07-12T09:22:29+00:00",
+          "url": "https://www.ransomware.live/id/Q29vcGVyYXRlIHNlcnZpY2UgQ1ogcy5yLm8uQHRpdGFu",
+          "discovered_date": "2026-07-12T09:22:29+00:00"
         },
         {
-          "name": "knobel-bau.de",
-          "date": "2026-07-06T19:41:15+00:00",
-          "url": "https://www.ransomware.live/id/a25vYmVsLWJhdS5kZUBzYWZlcGF5",
-          "discovered_date": "2026-07-06T19:41:15+00:00"
-        },
-        {
-          "name": "rtngmbh.de",
-          "date": "2026-07-06T19:40:44+00:00",
-          "url": "https://www.ransomware.live/id/cnRuZ21iaC5kZUBzYWZlcGF5",
-          "discovered_date": "2026-07-06T19:40:44+00:00"
-        },
-        {
-          "name": "stedwardscatholicfirstschool.co.uk",
-          "date": "2026-07-06T19:40:12+00:00",
-          "url": "https://www.ransomware.live/id/c3RlZHdhcmRzY2F0aG9saWNmaXJzdHNjaG9vbC5jby51a0BzYWZlcGF5",
-          "discovered_date": "2026-07-06T19:40:12+00:00"
+          "name": "Eureka Construction INC",
+          "date": "2026-07-12T09:22:00+00:00",
+          "url": "https://www.ransomware.live/id/RXVyZWthIENvbnN0cnVjdGlvbiBJTkNAdGl0YW4=",
+          "discovered_date": "2026-07-12T09:22:00+00:00"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Business Services",
+        "Construction"
+      ],
       "countries": [
-        "DE",
-        "GB",
+        "CZ",
         "US"
       ],
-      "trend": "stable",
-      "trend_percentage": 0,
+      "trend": "down",
+      "trend_percentage": -5,
       "daily_counts": [
-        6,
         0,
         0,
         0,
         0,
         0,
-        0
+        0,
+        4
       ]
     },
     {
@@ -1342,6 +1393,33 @@
       "daily_counts": [
         0,
         1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Safepay",
+      "count": 1,
+      "victims": [
+        {
+          "name": "matrixwebagency.com",
+          "date": "2026-07-06T19:43:00+00:00",
+          "url": "https://www.ransomware.live/id/bWF0cml4d2ViYWdlbmN5LmNvbUBzYWZlcGF5",
+          "discovered_date": "2026-07-06T19:43:00+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
         0,
         0,
         0,
