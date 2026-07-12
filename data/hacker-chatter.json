@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-07-11T15:30:25.708210",
-  "total_incidents": 29375,
+  "last_updated": "2026-07-12T05:41:36.724467",
+  "total_incidents": 29376,
   "incidents": [
+    {
+      "id": "dragonforce_access_equipment_hire",
+      "victim_name": "Access Equipment Hire",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-07-11T15:25:06.066641+00:00",
+      "industry": "Construction",
+      "website": "www.accessgroup.net.au",
+      "claim": "Access Group International is a leading privately owned provider of access, material handling, power generation, and construction equipment. The company is dedicated to safety, performance, and reliability, serving Australia's demanding industries with dependable equipment and expertise. Their integrated services include maintenance, OEM manufacturing, transport, logistics, and workforce solutions, allowing for seamless project support. With a focus on adaptability and tailored solutions, Access Group International is a trusted partner for projects of all sizes.",
+      "screenshot": "https://images.ransomware.live/victims/9b64e6ace1529f1fe1b677cf1641dc48.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=71752b28-6410-4be5-b260-ffa493fdc9d3",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_century_equities",
       "victim_name": "Century Equities",
