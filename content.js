@@ -5,20 +5,101 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 11 2026",
+            "headline": "Balochistan Police Portal Hacked—Espionage by China, India",
+            "title": "Hackers Exploit Balochistan Police Portal in Espionage Campaigns",
+            "content": "Cybersecurity researchers have uncovered a prolonged cyber espionage campaign targeting Pakistani law enforcement, specifically the Balochistan Police, by threat actors suspected to be aligned with China and India. The attacks, spanning from February 2024 to April 2026, involved the compromise of critical police assets, potentially exposing sensitive operational data. This incident underscores the ongoing geopolitical tensions in the region and highlights the vulnerability of law enforcement IT infrastructure to sophisticated cyber threats. Organizations are advised to enhance their security protocols and conduct regular audits to mitigate such risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "DHS Database Breach—7M Affected in AssuranceAmerica Hack",
+            "title": "DHS Database Hacked; AssuranceAmerica Breach Exposes 7 Million Records",
+            "content": "A series of cybersecurity incidents have come to light, including a breach of the Department of Homeland Security (DHS) database and a significant data breach at AssuranceAmerica affecting 7 million individuals. Additionally, Adobe has increased its patch release frequency, and Canada has successfully disrupted a ransomware operation. These developments highlight the persistent threat landscape and the need for robust cybersecurity measures. Organizations should prioritize timely patching and enhance data protection strategies to safeguard against such breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-dhs-database-hacked-adobe-boosts-patch-cadence-canada-disrupts-ransomware-ops/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Ransomware Negotiator Sentenced—70 Months for BlackCat Aid",
+            "title": "Former Ransomware Negotiator Sentenced for Assisting BlackCat Group",
+            "content": "Angelo Martino, a former ransomware negotiator, has been sentenced to 70 months in prison for aiding the notorious BlackCat/ALPHV ransomware group. Martino's involvement included facilitating negotiations and ransom payments, significantly impacting victims' ability to recover encrypted data. This case highlights the legal risks associated with engaging in ransomware activities and underscores the importance of ethical conduct in cybersecurity professions. Organizations are urged to strengthen their defenses against ransomware and consider legal implications when handling such incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/third-us-security-expert-sentenced-to-prison-for-helping-ransomware-gang/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "GigaWiper—Multi-Malware Attack Targets System Integrity",
+            "title": "GigaWiper Malware Combines Wiper and Ransomware for System Sabotage",
+            "content": "GigaWiper, a newly identified malware, poses a significant threat by combining multiple malicious capabilities, including a standalone wiper, ransomware encryption, and a multi-pass wiping command. This sophisticated attack targets system-level integrity, potentially leading to irreversible data loss and operational disruption. The emergence of GigaWiper reflects a growing trend of multi-functional malware designed to maximize damage. Security professionals should implement comprehensive monitoring and response strategies to detect and mitigate such threats effectively.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/gigawiper-combines-multiple-malware-for-system-level-sabotage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "HalluSquatting—AI Hallucinations Exploited for Botnet Attacks",
+            "title": "HalluSquatting Exploits AI Hallucinations for Remote Code Execution",
+            "content": "Researchers have demonstrated a novel attack method known as \"HalluSquatting,\" which leverages adversarial hallucinations in AI assistants to achieve remote code execution. This technique manipulates AI-generated outputs to deliver malicious payloads, effectively turning AI hallucinations into a botnet delivery mechanism. The attack highlights the vulnerabilities inherent in AI systems and the need for robust adversarial defenses. Organizations utilizing AI technologies should prioritize security assessments and implement safeguards against such exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hallusquatting-turns-ai-hallucinations-into-botnet-delivery-mechanism/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 11 2026",
+            "headline": "jscrambler NPM Release—Rust Infostealer Hidden in Update",
+            "title": "Compromised jscrambler NPM Release Deploys Rust Infostealer",
+            "content": "The jscrambler npm package version 8.14.0 has been compromised, deploying a Rust-based infostealer during installation. This malicious version includes a preinstall hook that executes a native binary across Windows, macOS, and Linux platforms. The incident underscores the risks associated with third-party software dependencies and the importance of verifying package integrity. Developers are urged to review their npm packages and update to secure versions to prevent data theft and system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 11 2026",
+            "headline": "Ghost Accounts Exploit GitHub API—Mass Recon Campaign Unveiled",
+            "title": "Ghost Accounts Exploit GitHub API for Organizational Reconnaissance",
+            "content": "A mass reconnaissance campaign has been identified, utilizing ghost accounts to exploit GitHub's API for mapping organizational structures, including repositories and member details. This tactic poses a significant threat to the security of software supply chains, as it allows attackers to gather intelligence on potential targets. Organizations should enhance their GitHub security settings and monitor for unauthorized access to mitigate the risk of such reconnaissance activities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ghost-accounts-abuse-github-api-in-mass-recon-campaign/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Windows HTTP.sys RCE—Patch CVE-2026-47291 Now",
+            "title": "CVE-2026-47291: Critical RCE Vulnerability in Windows HTTP.sys Patched",
+            "content": "A critical remote code execution (RCE) vulnerability, CVE-2026-47291, has been patched in the Windows HTTP.sys protocol stack. Discovered by TrendAI Research, this flaw allows attackers to execute arbitrary code, potentially leading to denial-of-service conditions. The vulnerability affects all systems using the vulnerable HTTP.sys versions, necessitating immediate patching to prevent exploitation. Organizations should apply the latest updates from Microsoft to secure their systems against this critical threat.",
+            "source": "Zero Day Initiative - Blog",
+            "sourceUrl": "https://www.thezdi.com/blog/2026/7/9/cve-2026-47291-remote-code-execution-in-the-windows-httpsys",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Chrome Patches Critical Flaws—Two Updates in Two Days",
+            "title": "Google Releases Two Chrome Updates to Address Critical Vulnerabilities",
+            "content": "Google has issued two consecutive updates for Chrome, addressing critical vulnerabilities that could be exploited by attackers. Users are advised to update to the latest version to ensure protection against potential exploits. This rapid patching cadence reflects the ongoing efforts to secure Chrome against emerging threats. Security professionals should verify that their systems are running the latest browser version and encourage users to enable automatic updates for timely protection.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/two-chrome-updates-in-two-days-fix-critical-vulnerabilities",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "OpenClaw Flaws—WhatsApp-to-Host Attack Chain Exposed",
+            "title": "Researcher Unveils WhatsApp-to-Host Attack Chain via OpenClaw Flaws",
+            "content": "Three high-severity vulnerabilities in the OpenClaw AI assistant have been disclosed, enabling a WhatsApp-to-host attack chain. These flaws, now patched, could allow attackers to steal credentials, escalate privileges, and execute arbitrary code on the host system. The vulnerabilities highlight the security challenges associated with AI-driven applications and the importance of timely patching. Users of OpenClaw are urged to update to the latest version to mitigate potential exploitation risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 11 2026",
             "headline": "Zimbra Urges Patch—Critical XSS Flaw Exploits Emails",
             "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code",
             "content": "Zimbra has issued an urgent call for users to update their systems to address a critical vulnerability in its Classic Web Client. This flaw, identified as a stored cross-site scripting (XSS) vulnerability, allows attackers to execute arbitrary code through specially crafted emails. The vulnerability poses a significant risk as it can be exploited to hijack user sessions and execute malicious scripts. Organizations using Zimbra are advised to apply the latest security patches immediately to mitigate potential exploitation. This incident underscores the importance of regular updates and vigilance against email-based threats.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Felons Behind Cyber Startup Buying Zero-Days",
-            "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
-            "content": "A controversial cybersecurity startup, offering substantial sums for zero-day vulnerabilities, is operated by two convicted felons with histories in fraudulent ventures. These individuals, known for their involvement in fake intelligence firms and a defunct AI lobbying platform, are now targeting zero-day exploits in widely-used software. The startup's operations raise ethical and security concerns, as the acquisition of such vulnerabilities could potentially be misused. Security professionals are advised to exercise caution and due diligence when engaging with firms offering to purchase zero-day vulnerabilities.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
             "relatedResources": []
         },
         {
@@ -46,51 +127,6 @@ const websiteContent = {
             "content": "Recorded Future's Insikt Group has identified 60 high-impact vulnerabilities in June 2026, with 30 receiving a Very Critical Risk Score. This marks a 49% increase from the previous month, emphasizing the growing threat landscape. Security teams are urged to prioritize remediation efforts for these vulnerabilities to prevent potential exploitation. The report serves as a reminder of the importance of continuous vulnerability management and the need for organizations to stay ahead of emerging threats.",
             "source": "Recorded Future",
             "sourceUrl": "https://www.recordedfuture.com/blog/june-2026-cve-landscape",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Iran Expands Cyber Targets Beyond Infrastructure",
-            "title": "Iran's Cyber Crosshairs Focus Beyond Critical Infrastructure",
-            "content": "Iranian cyber actors are broadening their focus beyond traditional critical infrastructure targets to include any organization with internet-facing vulnerabilities. This shift highlights the increasing risk to a wider range of sectors, emphasizing that obscurity is no longer a viable defense. Organizations across all industries must assess their cyber defenses and address any exposed vulnerabilities to mitigate the risk of being targeted. The trend underscores the need for comprehensive security strategies that extend beyond critical infrastructure protection.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Microsoft Quells RoguePlanet Zero-Day Threat",
-            "title": "Microsoft Reins in RoguePlanet Zero-Day Threat",
-            "content": "Microsoft has addressed a zero-day vulnerability in Windows Defender, known as RoguePlanet, which was publicly disclosed by the researcher \"Nightmare-Eclipse.\" The vulnerability, revealed through a proof-of-concept exploit, posed a significant risk to Windows users by potentially allowing unauthorized access. Microsoft has released a patch to mitigate this threat, underscoring the importance of timely updates. Security professionals are advised to ensure their systems are updated to prevent exploitation of this and similar vulnerabilities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/microsoft-rogueplanet-zero-day-threat",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Microsoft Defender Patched—RoguePlanet Zero-Day Fixed",
-            "title": "Microsoft Fixes RoguePlanet Zero-Day in Defender",
-            "content": "Microsoft has released a crucial patch for the RoguePlanet zero-day vulnerability in Microsoft Defender, which was previously exploited in the wild. This vulnerability allowed threat actors to bypass security measures, posing a significant threat to Windows systems. Users are strongly advised to apply the latest updates to ensure their systems are protected against potential exploits. This incident highlights the critical nature of maintaining up-to-date security software to defend against emerging threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/microsoft-fixes-rogueplanet-zero-day-in-defender",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GodDamn Ransomware Exploits BYOVD to Attack US Firms",
-            "title": "'GodDamn' Ransomware Uses BYOVD to Smite US Companies",
-            "content": "The GodDamn ransomware group has been leveraging a Bring Your Own Vulnerable Driver (BYOVD) technique to disable security software in their attacks on U.S. companies. This method involves using a Microsoft-signed malicious kernel driver to bypass defenses, allowing the ransomware to execute unimpeded. Organizations are advised to review their driver policies and implement strict controls to prevent unauthorized driver installations. This attack vector highlights the need for comprehensive endpoint protection strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/goddamn-ransomware-byovd-smite-companies",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "GitHub AI Agent Leaks Private Repos via Injection",
-            "title": "GitHub AI Agent Leaks Private Repositories via Prompt Injection Attack",
-            "content": "A prompt injection attack has exposed a vulnerability in GitHub's preview Agentic Workflows, allowing unauthorized access to private repositories. This attack tricks the AI agent into retrieving and publishing sensitive content, posing a significant risk as enterprises increasingly deploy AI agents with privileged access. Organizations using GitHub are urged to review their AI deployment strategies and implement safeguards against such injection attacks. This incident underscores the broader risks associated with AI integration in software development environments.",
-            "source": "EU extends mass scanning of messages without a warrant | CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4194448/github-ai-agent-leaks-private-repositories-via-prompt-injection-attack.html",
             "relatedResources": []
         },
         {
@@ -146,45 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "MODBEACON RAT Uses gRPC for Encrypted Command Traffic",
-            "title": "Silver Fox Group Deploys MODBEACON RAT with Encrypted C2 Communications",
-            "content": "The China-linked Silver Fox cybercrime group has been linked to a new Rust-based remote access trojan (RAT) called MODBEACON. This RAT utilizes gRPC streaming for encrypted command-and-control (C2) traffic, complicating detection efforts. Despite its low sophistication, MODBEACON's high activity level poses a threat to organizations across various sectors. Cybersecurity teams should enhance monitoring for encrypted traffic anomalies and update defenses accordingly. This development highlights the evolving tactics of cybercriminals in evading detection.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Okta Alerts on Vishing Attacks Targeting Microsoft 365 Users",
-            "title": "Okta Warns of Vishing Attacks Against Microsoft 365 Customers",
-            "content": "Okta has issued a warning about vishing attacks targeting Microsoft 365 customers. Attackers are calling victims and directing them to phishing websites that mimic Microsoft Entra ID login pages. This social engineering tactic aims to harvest credentials and gain unauthorized access to accounts. Microsoft 365 users should be cautious of unsolicited calls and verify the authenticity of login prompts. Organizations are encouraged to educate employees on recognizing phishing attempts and to implement multi-factor authentication for enhanced security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/okta-warns-of-vishing-attacks-targeting-microsoft-365-customers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Study Finds Traffic Leaks in 281 Free Android VPN Apps",
-            "title": "Traffic Leaks and Tracking Found in Free Android VPN Apps",
-            "content": "A study of 281 popular free VPN apps on the Google Play Store reveals significant security issues, including traffic leaks and unencrypted data. These apps, installed over 2.4 billion times, fail to provide the privacy and security users expect. The findings highlight the risks associated with free VPN services, which often prioritize monetization over user protection. Users should consider reputable, paid VPN services that offer robust encryption and privacy guarantees. This study underscores the importance of scrutinizing app permissions and privacy policies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "'Ill Bloom' Flaw Drains $5M from Crypto Wallets",
-            "title": "Cryptocurrency Wallets Exploited via 'Ill Bloom' Vulnerability",
-            "content": "Security firm Coinspect has disclosed a vulnerability dubbed 'Ill Bloom' affecting cryptocurrency wallets, leading to over $5 million in losses. The flaw involves weak randomness in generating recovery phrases, allowing attackers to predict and exploit these phrases to drain wallets. This vulnerability highlights the critical importance of secure random number generation in cryptographic applications. Wallet providers must address this issue promptly to protect users' assets. Users should ensure their wallets are updated and consider additional security measures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 11 2026",
+            "headline": "AI Coding Tools Enable New Threat: Slopsquatting",
+            "title": "Slopsquatting Emerges as AI-Induced Software Supply Chain Threat",
+            "content": "Slopsquatting, a novel supply chain threat, is gaining traction due to AI coding tools' hallucinations. As developers increasingly depend on AI assistants, they inadvertently expose their software to cybercriminals from the outset. This threat involves exploiting AI-generated code errors to insert malicious packages into software supply chains. The impact is significant, potentially affecting any organization utilizing AI-driven development tools. Developers must be vigilant in code review processes and implement stringent security protocols to mitigate this risk. Understanding and addressing slopsquatting is crucial for maintaining software integrity in AI-enhanced environments.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 11 2026",
+            "headline": "OpenAI Targets Families with New ChatGPT Features",
+            "title": "OpenAI Expands ChatGPT to Cater to Families and Older Adults",
+            "content": "OpenAI is expanding its ChatGPT offerings to include features tailored for families, caregivers, and older adults. The company is hiring a dedicated product manager to lead this initiative, aiming to integrate AI more deeply into household dynamics. This move reflects a growing trend of AI technologies becoming integral to everyday life, beyond traditional business applications. By focusing on these demographics, OpenAI seeks to enhance user engagement and accessibility, potentially broadening its market reach. Stakeholders should monitor these developments as they may influence AI adoption patterns in domestic settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Sunrun Offers Home AI Data Center Hosting",
+            "title": "Sunrun's Pilot Program Turns Homes into AI Data Centers",
+            "content": "Sunrun, a solar and home energy storage company, is launching a pilot program to install AI compute units in customers' homes. This \"distributed AI compute\" initiative compensates homeowners for hosting parts of AI data centers, leveraging existing solar and storage infrastructure. The program aims to decentralize AI computing, potentially reducing costs and increasing efficiency. This innovative approach could disrupt traditional data center models and offers a new revenue stream for participating households. Tech leaders should consider the implications of distributed computing on infrastructure and energy consumption.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Deutsche Telekom Transforms with OpenAI Integration",
+            "title": "Deutsche Telekom Leverages OpenAI for AI-Native Telecom Services",
+            "content": "Deutsche Telekom is integrating OpenAI technologies to become an AI-native telecommunications provider. This transformation enhances customer service, streamlines employee workflows, and optimizes network operations. By adopting AI, Deutsche Telekom aims to improve service delivery and operational efficiency, setting a precedent for the telecom industry. This strategic move highlights the increasing importance of AI in modernizing legacy systems and meeting evolving consumer demands. Industry professionals should watch for similar integrations as AI continues to reshape telecommunications.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/deutsche-telekom",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Fidji Simo Steps Down from OpenAI AGI Role",
+            "title": "Fidji Simo Leaves OpenAI AGI Leadership Due to Health Issues",
+            "content": "Fidji Simo, OpenAI's AGI chief, is stepping down from her full-time role due to a neuroimmune condition. Announced on X, Simo will transition to a part-time advisory position, following her initial medical leave in April. Her departure marks a significant leadership change at OpenAI, potentially impacting its AGI development trajectory. This shift underscores the challenges of maintaining leadership continuity in high-pressure tech environments. Stakeholders should consider the implications of leadership changes on strategic initiatives and organizational stability.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "OpenAI Shuts Down Atlas, Shifts Focus to Extensions",
+            "title": "OpenAI Discontinues Atlas Browser, Enhances Desktop and Chrome Extensions",
+            "content": "OpenAI is discontinuing its AI-powered browser, Atlas, less than a year after its launch. The company plans to integrate some of Atlas's browsing features into its desktop app and a new Chrome extension. This strategic pivot aims to consolidate OpenAI's AI functionalities into more widely used platforms, potentially increasing user adoption. The decision reflects a broader trend of focusing on core competencies and optimizing resource allocation. Users should anticipate enhanced AI capabilities in OpenAI's existing applications and prepare for the transition.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Meta Launches Muse Spark 1.1 for AI Coding",
+            "title": "Meta Enters AI Coding Arena with Muse Spark 1.1 Release",
+            "content": "Meta has introduced Muse Spark 1.1, its latest AI coding tool designed to handle large agentic workloads, fix bugs, and assist with extensive code migrations. This release positions Meta in the competitive AI coding market, where enterprises increasingly seek automation solutions. Muse Spark 1.1 aims to streamline development processes, offering capabilities that appeal to large-scale operations. The tool's introduction highlights the growing demand for AI-driven coding assistance and Meta's commitment to expanding its AI portfolio. Developers and tech leaders should evaluate Muse Spark 1.1's potential to enhance productivity and efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "NYT Accuses OpenAI of Hiding ChatGPT Evidence",
+            "title": "New York Times Claims OpenAI Concealed Evidence in Copyright Case",
+            "content": "The New York Times has accused OpenAI of hiding tools and datasets that could identify copyrighted journalism in ChatGPT outputs. This allegation escalates the ongoing lawsuit, with the NYT filing a new motion for sanctions. The case underscores the legal complexities surrounding AI-generated content and intellectual property rights. If proven, these claims could have significant repercussions for AI companies and their data usage practices. Legal and compliance teams should closely monitor this case to understand its implications for AI development and content management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Microsoft Enhances Patch Tuesdays with AI",
+            "title": "Microsoft to Expand Windows 11 Security Updates Using AI",
+            "content": "Microsoft is set to increase the volume of security updates in its Patch Tuesday releases for Windows 11, leveraging AI to identify potential issues earlier. This proactive approach aims to address more security vulnerabilities in each update cycle, enhancing system protection. The use of AI in patch management reflects a broader industry trend towards automation in cybersecurity. IT administrators should prepare for more frequent updates and ensure systems are configured for timely patch application to maintain security posture.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963307/microsoft-patch-tuesday-ai-security-updates",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Google Updates Android Bench with New LLMs",
+            "title": "Google Enhances Android Bench with Latest Language Models",
+            "content": "Google has updated Android Bench with new large language models (LLMs), although its Gemini model still lags behind competitors. This update aims to improve the platform's capabilities and invites developers to participate in its evolution. The enhancements reflect Google's ongoing efforts to maintain competitiveness in the AI landscape, particularly in mobile applications. Developers should explore the updated Android Bench to leverage its new features and contribute feedback for future iterations. This development highlights the dynamic nature of AI model advancements and their integration into consumer technology.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/07/google-revamps-android-ai-dev-benchmark-adds-fable-5-and-other-agents/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 10 2026",
             "headline": "Hugging Face CEO: Open Source AI Dominates Fortune 500",
@@ -222,57 +312,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 09 2026",
-            "headline": "Shared API Keys Risk AI Agents at 69% of Enterprises",
-            "title": "VentureBeat Study: Shared API Keys Compromise AI Agents in Enterprises",
-            "content": "A recent VentureBeat study reveals that 69% of enterprises expose their AI agents to risk by sharing API keys across multiple agents. This practice allows a compromised agent to access the permissions of all associated workflows, complicating forensic investigations. The study emphasizes the need for enterprises to implement strict API key management and monitoring practices. Security professionals are advised to audit their API key usage and enforce least privilege principles to mitigate potential security breaches.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/shared-api-keys-expose-ai-agent-fleets-venturebeat-research",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 10 2026",
             "headline": "OpenAI's GPT 5.6 Powers Microsoft Copilot 365 Amid Rumors",
             "title": "OpenAI's GPT 5.6 Chosen for Microsoft Copilot 365 Amid Breakup Speculation",
             "content": "OpenAI has announced that its GPT 5.6 model will continue to power Microsoft's Copilot 365 suite, despite rumors of a potential split between the two companies. The new model offers enhanced capabilities for workplace and productivity applications, reinforcing the partnership's value. This development reassures users of Copilot 365 about the continuity and advancement of AI-driven features. Organizations relying on Microsoft's AI tools should stay informed about any changes in partnerships that could affect service delivery.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI's No. 2 Fidji Simo Steps Down—Leadership Gap Looms",
-            "title": "Fidji Simo Resigns from OpenAI's No. 2 Position Amid IPO Plans",
-            "content": "Fidji Simo, OpenAI's second-in-command, has resigned following an extended medical leave, creating a leadership gap as the company prepares for a potential IPO. Simo's departure comes at a critical time as OpenAI competes with Anthropic in the enterprise AI market. This leadership change may impact OpenAI's strategic direction and market positioning. Stakeholders should watch for announcements regarding new leadership appointments and their potential influence on OpenAI's future initiatives.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI Unveils GPT-5.6—Enhanced Cybersecurity Features",
-            "title": "OpenAI Launches GPT-5.6 with Improved Cybersecurity Capabilities",
-            "content": "OpenAI has released its latest model, GPT-5.6, promising advancements in various domains, including cybersecurity. The new model offers enhanced threat detection and mitigation features, addressing growing concerns about AI-driven security vulnerabilities. This release positions OpenAI as a leader in integrating AI with cybersecurity solutions. Organizations should consider adopting GPT-5.6 to bolster their security frameworks and stay ahead of emerging threats.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "AI Agent Raises $100M—Lyzr Proves Its Own Product",
-            "title": "Lyzr's AI Agent Successfully Manages $100M Fundraising Round",
-            "content": "Lyzr, an AI agent startup, has demonstrated the efficacy of its product by using its own AI agent to manage a $100 million fundraising round. This achievement underscores the potential of AI agents in handling complex business operations autonomously. The successful fundraise highlights the growing trust in AI-driven solutions for financial and operational tasks. Enterprises considering AI adoption should evaluate the capabilities of AI agents in streamlining and enhancing their business processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Google Labels AI-Generated Ads—Transparency Boost for Users",
-            "title": "Google Introduces AI-Generated Ad Labels for Enhanced Transparency",
-            "content": "Google has updated its \"My Ad Center\" to include labels indicating whether ads were created or edited using AI. This feature applies to ads on Google Search, Google Discover, and YouTube, providing users with greater transparency about the content they encounter. The move reflects a broader industry trend towards accountability in AI-generated content. Users are encouraged to utilize this feature to make informed decisions about the ads they engage with.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label",
             "relatedResources": []
         },
         {
@@ -309,51 +354,6 @@ const websiteContent = {
             "content": "SK Hynix has raised $26.5 billion in the largest foreign initial public offering (IPO) in US history, driven by the booming demand for AI chips. The success of the IPO has prompted calls for the company, along with Samsung, to establish manufacturing facilities in the United States. This move could strengthen the US semiconductor supply chain and support the growing AI industry. The IPO reflects the strategic importance of AI chip manufacturing and the geopolitical considerations influencing tech investments.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Elon Musk Assures Anthropic—$40B Revenue at Stake",
-            "title": "Elon Musk Pledges Support for Anthropic Amid Hosting Concerns",
-            "content": "Elon Musk has publicly assured Anthropic that he will not disrupt the hosting of its AI models, with approximately $40 billion in revenue at risk. This statement comes amid concerns about the stability and reliability of hosting services for AI companies. Musk's commitment aims to bolster confidence in Anthropic's operations and its reliance on external infrastructure. The assurance is crucial as Anthropic navigates the competitive AI landscape, where hosting reliability is a critical factor for success.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GPT-5.6 Launches After Government Approval",
-            "title": "OpenAI's GPT-5.6 Receives Greenlight for Public Rollout",
-            "content": "OpenAI has launched GPT-5.6 following regulatory approval from the Trump administration, marking a significant milestone for the AI model. Initially restricted to government-approved organizations, the model is now available for public use. OpenAI CEO Sam Altman describes this as a breakthrough in AI capabilities, offering enhanced performance and broader applicability. The rollout underscores the importance of regulatory compliance in AI development and the potential for advanced models to transform industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GPT-5.6 Powers Microsoft 365—Boosts Productivity",
-            "title": "Microsoft 365 Copilot Integrates GPT-5.6 for Enhanced AI Functionality",
-            "content": "Microsoft has integrated OpenAI's GPT-5.6 into its Microsoft 365 Copilot, enhancing AI capabilities across applications like Word, Excel, and PowerPoint. This integration promises faster, higher-quality work by leveraging GPT-5.6's advanced natural language processing and machine learning capabilities. The move highlights the growing trend of embedding sophisticated AI models into productivity tools to improve efficiency and user experience. Users can expect more intuitive interactions and smarter automation features.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "GPT-5.6 Offers Scalable Intelligence for Ambitious Projects",
-            "title": "GPT-5.6 Delivers Enhanced Performance and Scalability for AI Applications",
-            "content": "OpenAI's GPT-5.6 is designed to provide more intelligence per token and improved performance per dollar, catering to ambitious AI projects. The model offers on-demand capabilities, allowing users to scale AI applications according to their needs. This development reflects the increasing demand for flexible, cost-effective AI solutions that can handle complex tasks. GPT-5.6's introduction is set to influence how organizations deploy AI to achieve strategic objectives.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/gpt-5-6",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI Launches GPT-5.5 Bio Bug Bounty Program",
-            "title": "OpenAI Introduces Bug Bounty for GPT-5.5 Bio Model Security",
-            "content": "OpenAI has announced a bug bounty program for its GPT-5.5 Bio model, inviting researchers to identify vulnerabilities and enhance security. This initiative aims to ensure the model's robustness and reliability, particularly in sensitive bioinformatics applications. Participants can earn rewards for discovering and reporting security flaws, contributing to the model's continuous improvement. The program underscores OpenAI's commitment to transparency and collaboration in AI development, fostering a secure environment for innovation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/bio-bug-bounty",
             "relatedResources": []
         },
         {
