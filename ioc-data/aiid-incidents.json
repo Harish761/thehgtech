@@ -1,6 +1,46 @@
 {
   "incidents": [
     {
+      "id": "AIID-701",
+      "incident_id": 701,
+      "title": "American Asylum Seeker John Mark Dougan in Russia Reportedly Spreads Disinformation via AI Tools and",
+      "date": "2026-07-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-885",
+      "incident_id": 885,
+      "title": "Meta AI Characters Allegedly Exhibited Racism, Fabricated Identities, and Exploited User Trust",
+      "date": "2026-07-11",
+      "category": "misinformation",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1040",
+      "incident_id": 1040,
+      "title": "Meta User-Created AI Companions Allegedly Implicated in Facilitating Sexually Themed Conversations I",
+      "date": "2026-07-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1108",
+      "incident_id": 1108,
+      "title": "Digital Rights Groups Accuse Meta and Character.AI of Facilitating Unlicensed Therapy via Chatbots",
+      "date": "2026-07-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1418",
+      "incident_id": 1418,
+      "title": "Meta AI Smart Glasses Reportedly Exposed Intimate User Imagery and Video to Human Reviewers in Kenya",
+      "date": "2026-07-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1580",
       "incident_id": 1580,
       "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
@@ -732,14 +772,6 @@
       "id": "AIID-1356",
       "incident_id": 1356,
       "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1418",
-      "incident_id": 1418,
-      "title": "Meta AI Smart Glasses Reportedly Exposed Intimate User Imagery and Video to Human Reviewers in Kenya",
       "date": "2026-06-17",
       "category": "other",
       "severity": "medium"
@@ -2618,9 +2650,9 @@
     }
   ],
   "stats": {
-    "total": 327,
-    "last7Days": 14,
-    "last30Days": 118
+    "total": 331,
+    "last7Days": 19,
+    "last30Days": 122
   },
-  "lastUpdated": "2026-07-12T02:31:05.995742+05:30"
+  "lastUpdated": "2026-07-12T09:18:29.272376+05:30"
 }
