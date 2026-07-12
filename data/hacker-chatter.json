@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-07-12T05:41:36.724467",
-  "total_incidents": 29376,
+  "last_updated": "2026-07-12T15:32:25.198571",
+  "total_incidents": 29381,
   "incidents": [
+    {
+      "id": "m3rx_eclective.ie",
+      "victim_name": "eclective.ie",
+      "threat_actor": "m3rx",
+      "date_discovered": "2026-07-12T13:01:24.901726+00:00",
+      "industry": "Not Found",
+      "website": "eclective.ie",
+      "claim": "Ireland, 41a Pleasants Saint Kevins St, D08 KR99 ,Eclective is Ireland's largest hospitality group, renowned for creating dynamic and diverse hospitality and lifestyle brands. They offer a variety of venues suitable for different occasions, including intimate dining, social gatherings, and family-friendly environments. Their commitment to exceptional experiences highlights their understanding of what makes an outing enjoyable while fostering community connections. Eclective also provides tailored event spaces with modern amenities for corporate and private events. Stolen: 857 GB 1,683,762 Files",
+      "screenshot": "",
+      "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#eclective.ie",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "m3rx_foreconinc.com",
+      "victim_name": "foreconinc.com",
+      "threat_actor": "m3rx",
+      "date_discovered": "2026-07-12T13:01:03.536307+00:00",
+      "industry": "Business Services",
+      "website": "foreconinc.com",
+      "claim": "+1 (716) 664-5602 , FORECON Inc. specializes in custom-crafted forest management, due diligence, appraisal, analytics, and rural brokerage services across New York, Pennsylvania, and West Virginia. Established in 1954, the company focuses on balancing the needs of people and the environment through sustainable forestry practices. Their services include technical, advisory, and valuation support for forestry projects, land management, and conservation solutions. Additionally, FORECON offers a HuntLease program that connects landowners with hunters to promote wildlife management and forest health. Stolen: 860 Gb 437,048 Files",
+      "screenshot": "",
+      "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#foreconinc.com",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "m3rx_wrtworld.com",
+      "victim_name": "wrtworld.com",
+      "threat_actor": "m3rx",
+      "date_discovered": "2026-07-12T13:00:40.454781+00:00",
+      "industry": "Business Services",
+      "website": "wrtworld.com",
+      "claim": "+1 (305) 884-3700 , WRT World Enterprises is a leading provider of purchasing and logistics services tailored for major retailers in Latin America. The company specializes in streamlining supply chain management through services such as shipping, storage, purchasing, and vendor management. With a focus on innovative solutions, WRT helps its clients remain competitive by offering order purchasing technology and comprehensive logistics services. Their extensive network and established relationships with suppliers enable them to negotiate favorable prices, ensuring their clients have access to the best products in the market. Stolen: 377 GB 267,891 Files",
+      "screenshot": "",
+      "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#wrtworld.com",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "titan_cooperate_service_cz_s.r.o.",
+      "victim_name": "Cooperate service CZ s.r.o.",
+      "threat_actor": "titan",
+      "date_discovered": "2026-07-12T09:22:29.394967+00:00",
+      "industry": "Business Services",
+      "website": "ghz-shop.cz",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/6d0dd5d86e76ccaa8df71dcbea91c7e5.png",
+      "url": "http://x4bccxlsmjsxlnnf3ocvndlshgfkagzytpqmsjnlfykceumnw6i4hkqd.onion/awaiting/post/and-other-company-heads-ixu0o85yt7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "titan_eureka_construction_inc",
+      "victim_name": "Eureka Construction INC",
+      "threat_actor": "titan",
+      "date_discovered": "2026-07-12T09:22:00.220767+00:00",
+      "industry": "Construction",
+      "website": "eurekaconst.com",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/d24fd361caee8e970c8ebdf37ac59faf.png",
+      "url": "http://x4bccxlsmjsxlnnf3ocvndlshgfkagzytpqmsjnlfykceumnw6i4hkqd.onion/awaiting/post/eureka-construction-inc-6mdwho3d0m",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_access_equipment_hire",
       "victim_name": "Access Equipment Hire",
