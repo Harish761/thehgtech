@@ -4,93 +4,102 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 13 2026",
+            "headline": "AI Coding Tools—A Double-Edged Sword for Security",
+            "title": "Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks",
+            "content": "This week's cybersecurity landscape highlights the dual nature of AI coding tools, which are rapidly identifying bugs but also being leveraged by attackers to exploit vulnerabilities. Key incidents include the Citrix Bleed 2 ransomware and a significant threat to ShareFile users. The use of AI in coding is accelerating vulnerability discovery, but it also empowers attackers who do not adhere to ethical standards. Security professionals must remain vigilant and ensure robust defenses are in place to counteract these sophisticated threats. Organizations should prioritize patch management and continuous monitoring to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Zimbra Email Flaw—Critical Patch Issued",
+            "title": "Zimbra Patches Critical Code Execution Vulnerability in Email System",
+            "content": "Zimbra has released a patch for a critical code execution vulnerability that allowed malicious code embedded in crafted emails to execute upon opening. This flaw, affecting Zimbra's email platform, posed a significant risk to enterprises relying on its services for secure communications. The vulnerability could have been exploited to gain unauthorized access and potentially compromise sensitive data. Organizations using Zimbra are urged to apply the patch immediately to safeguard their systems. This incident underscores the importance of timely updates and vigilance in email security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/zimbra-patches-critical-code-execution-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "EU Sanctions Russian Cyber Spies—Infrastructure at Risk",
+            "title": "EU Targets Russian Intelligence Officers for Cyber Spying Campaign",
+            "content": "The European Union has imposed sanctions on Russian intelligence officers accused of orchestrating a prolonged cyber espionage campaign targeting government entities and critical infrastructure. This campaign involved sophisticated online spying techniques and sabotage operations, raising significant concerns about the security of sensitive governmental data. The EU's actions highlight the ongoing geopolitical tensions and the critical need for robust cybersecurity measures to protect national interests. Organizations are advised to enhance their threat detection capabilities and collaborate with international partners to counteract such threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/eu-targets-russian-intelligence-officers-accused-of-running-a-yearslong-cyber-spying-campaign/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "720GB Data Breach—540K Affected in Healthcare Hack",
+            "title": "Centers Laboratory Data Breach Affects 540,000 Individuals",
+            "content": "The WorldLeaks extortion group has claimed responsibility for a massive data breach at a healthcare testing and laboratory services provider, affecting 540,000 individuals. The attackers reportedly exfiltrated 720 GB of sensitive data, potentially exposing personal and medical information. This breach highlights the vulnerability of healthcare systems to cyberattacks and the severe implications for patient privacy and data security. Affected organizations should conduct thorough security audits and enhance their data protection protocols to prevent future incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/centers-laboratory-data-breach-affects-540000-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Joomla Zero-Days—CISA Adds to Exploited List",
+            "title": "iCagenda and Balbooa Forms Joomla Flaws Exploited as Zero-Days",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two critical security flaws in Joomla extensions, iCagenda and Balbooa Forms, to its Known Exploited Vulnerabilities catalog. These zero-day vulnerabilities allow remote code execution and have been actively exploited in the wild. Joomla users are advised to update their extensions immediately to mitigate potential threats. This development underscores the importance of maintaining up-to-date software and monitoring for emerging threats in widely used content management systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Ghostcommit Attack—AI Instructions Hidden in Images",
+            "title": "Ghostcommit Attack Hides Malicious AI Instructions in Images",
+            "content": "A novel proof-of-concept attack, dubbed Ghostcommit, demonstrates how malicious AI instructions can be concealed within PNG image files. This technique allows attackers to bypass traditional code review processes, potentially leading to unauthorized data access and manipulation. The attack highlights the evolving nature of AI-related threats and the need for advanced detection mechanisms. Security teams should consider integrating AI-driven anomaly detection tools to identify such sophisticated threats and protect their systems from covert infiltration.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/07/ghostcommit-attack-hides-malicious-ai-instructions-in-images",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "ScamBuster—AI Fights Back Against Email Scammers",
+            "title": "Turning the Tables on Email Scammers With 'ScamBuster'",
+            "content": "ScamBuster, an open-source, AI-driven system, is revolutionizing the fight against phishing by adopting victim personas to engage with attackers. This innovative approach allows organizations and law enforcement to gather valuable intelligence on cybercriminal operations. By simulating real interactions, ScamBuster can identify phishing tactics and provide actionable insights to enhance security measures. Organizations are encouraged to explore AI-driven solutions like ScamBuster to bolster their defenses against evolving email threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/turning-tables-email-scammers-scambuster",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "RabbitMQ Flaws—OAuth Secrets at Risk",
+            "title": "RabbitMQ Flaws Expose OAuth Secrets, Risk Complete Takeover",
+            "content": "RabbitMQ has patched two critical access control vulnerabilities that exposed OAuth secrets and risked complete takeover of the message broker. Discovered by Miggo Security, these flaws could have allowed attackers to compromise enterprise application data and control messaging infrastructure. Organizations using RabbitMQ are urged to apply the latest updates to secure their systems. This incident highlights the importance of regular security assessments and prompt patching to protect against potential exploits.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4196093/rabbitmq-flaws-expose-oauth-secrets-risk-complete-takeover-of-the-broker.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "CISA GitHub Leak—Credentials Exposed for Six Months",
+            "title": "Lessons Learned from CISA’s Recent GitHub Leak",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released a postmortem on a data leak involving the publication of internal credentials, including AWS Govcloud keys, on GitHub. The credentials were publicly accessible for nearly six months before being discovered. This incident underscores the critical need for robust access management and regular audits of code repositories. Organizations are advised to implement strict access controls and continuous monitoring to prevent similar data exposure risks.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Forg365 PhaaS—Targeting Microsoft 365 with AI Lures",
+            "title": "Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft",
+            "content": "Forg365, a new phishing-as-a-service operation, is targeting Microsoft 365 accounts using advanced tactics such as device code phishing and adversary-in-the-middle session theft. The operation employs AI-assisted lure creation and antibot evasion techniques to enhance its effectiveness. Organizations using Microsoft 365 are advised to strengthen their security measures, including multi-factor authentication and user training, to defend against these sophisticated phishing attacks. This development highlights the growing sophistication of phishing operations and the need for proactive defense strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 11 2026",
             "headline": "Zimbra Urges Patch—Critical XSS Flaw Exploits Emails",
             "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
             "content": "Zimbra has released updates to address a critical stored cross-site scripting (XSS) vulnerability affecting its Classic Web Client. This flaw could allow attackers to execute arbitrary code by sending specially crafted emails. The vulnerability poses a significant risk as it can be exploited during user sessions, potentially leading to unauthorized access and data breaches. Zimbra users are strongly advised to apply the latest security patches immediately to mitigate potential threats. This incident underscores the ongoing challenges of securing web-based email platforms against sophisticated attack vectors.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Ryuk Ransomware: Armenian National Faces 15 Years",
-            "title": "Armenian National Pleads Guilty to Ryuk Ransomware Attacks",
-            "content": "Karen Vardanyan, an Armenian national, has pleaded guilty to participating in Ryuk ransomware attacks, facing up to 15 years in federal prison. Vardanyan has also agreed to pay nearly $1.2 million in restitution for his role in the cybercriminal activities. Ryuk ransomware has been notorious for targeting various sectors, causing significant financial and operational disruptions. This case highlights the international reach of ransomware operations and the ongoing efforts by law enforcement to hold perpetrators accountable. Organizations are reminded to bolster their cybersecurity defenses against such pervasive threats.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/karen-vardanyan-armenian-ryuk-ransomware-guilty/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Microsoft Warns of GigaWiper—Destructive Backdoor Uncovered",
-            "title": "Microsoft Uncovers GigaWiper, a Backdoor Designed for Destruction on Demand",
-            "content": "Microsoft has issued a warning about GigaWiper, a new backdoor that merges espionage malware with destructive capabilities. First observed in October 2025, this Golang-based implant allows remote administration and can be triggered to destroy data on demand. The discovery highlights the evolving nature of cyber threats that blur the lines between espionage and sabotage. Organizations are urged to enhance their monitoring and incident response strategies to detect and mitigate such sophisticated threats. This development emphasizes the critical need for robust cybersecurity measures in protecting sensitive information.",
-            "source": "EU extends mass scanning of messages without a warrant | CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4195470/microsoft-uncovers-gigawiper-a-backdoor-designed-for-destruction-on-demand.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Microsoft Defender Patches RoguePlanet Zero-Day",
-            "title": "Microsoft Fixes RoguePlanet Zero-Day in Defender",
-            "content": "Microsoft has released a patch for the RoguePlanet zero-day vulnerability in its Defender antivirus software. This zero-day flaw allowed attackers to bypass security measures and execute unauthorized actions on affected systems. Users are advised to update their Defender installations promptly to protect against potential exploits. The swift patching of this vulnerability reflects Microsoft's commitment to maintaining the security of its products. Organizations should ensure their systems are updated regularly to defend against emerging threats and maintain robust cybersecurity hygiene.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/microsoft-fixes-rogueplanet-zero-day-in-defender",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Injective Labs GitHub Hack—Wallet Keys at Risk",
-            "title": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
-            "content": "Threat actors have compromised the GitHub repository of Injective Labs, leading to the publication of a malicious npm package designed to steal cryptocurrency wallet private keys and mnemonic seed phrases. The affected package, @injectivelabs/sdk-ts@1.20.21, contained functions that could exfiltrate sensitive data. This incident underscores the critical importance of securing software supply chains and monitoring for unauthorized changes. Developers and users of the Injective Labs SDK are urged to review their dependencies and update to secure versions immediately. The breach highlights the ongoing risks associated with open-source software repositories.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "U-Boot Flaws—Devices at Risk of Crash or Code Execution",
-            "title": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
-            "content": "Researchers from Binarly have identified six vulnerabilities in U-Boot, a widely used bootloader for various hardware devices. Four of these flaws can cause devices to crash, while the other two could allow attackers to execute code during the boot process. These vulnerabilities pose a significant threat to devices such as routers, smart cameras, and data-center servers. Manufacturers and users are advised to apply patches and updates as they become available to mitigate potential risks. This discovery highlights the importance of securing firmware components in the broader cybersecurity landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Laser Attack Resets Tangem Wallets—Security Flaw Exposed",
-            "title": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
-            "content": "Security researchers at Ledger's Donjon team have demonstrated a laser-based attack that can reset the passwords of Tangem crypto wallet cards. This attack involves a precisely timed laser pulse aimed at the card's chip, allowing attackers to set a new password without needing the old one. As these cards cannot be patched, affected users are at risk of losing control over their wallets. This vulnerability highlights the need for robust physical security measures in hardware wallet design. Users should consider additional security layers to protect their cryptocurrency assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Lumen Technologies Expands Asset Management—1.1M Assets Tracked",
-            "title": "From 17,000 to 1.1 Million Assets: How Lumen Technologies Rebuilt Exposure Management at Scale",
-            "content": "Lumen Technologies has significantly expanded its asset management capabilities, growing from tracking 17,000 to over 1.1 million assets. This transformation was driven by the need for comprehensive exposure management in today's complex cybersecurity landscape. According to the 2026 Axonius Actionability Report, only 45% of organizations consolidate their asset and exposure data into a single view. Lumen's approach serves as a model for enterprises seeking to improve their cybersecurity posture by ensuring accurate and holistic asset inventories. This initiative underscores the importance of visibility in effective cybersecurity management.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/from-17000-to-11-million-assets-how.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "WP-SHELLSTORM Backdoor—1.4M WordPress Sites Targeted",
-            "title": "Exposed Hacker Server Reveals WP-SHELLSTORM Backdooring Thousands of WordPress Sites",
-            "content": "An exposed server belonging to a cybercrime group has revealed the WP-SHELLSTORM operation, which targeted over 1.4 million WordPress sites. The server contained hacking tools, activity logs, and target lists, although far fewer sites were actually compromised. This exposure provides valuable insights into the tactics and targets of cybercriminals exploiting WordPress vulnerabilities. Website administrators are advised to review their security measures and ensure their WordPress installations are up-to-date to prevent unauthorized access. The incident highlights the ongoing threat posed by unsecured servers and the importance of proactive security practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Okta Alerts on Vishing—Microsoft 365 Users Targeted",
-            "title": "Okta Warns of Vishing Attacks Targeting Microsoft 365 Customers",
-            "content": "Okta has issued a warning about vishing attacks targeting Microsoft 365 users, where attackers impersonate support personnel to direct victims to phishing websites mimicking Microsoft Entra ID login pages. These attacks aim to harvest credentials and gain unauthorized access to user accounts. Organizations using Microsoft 365 are urged to educate their employees about such social engineering tactics and implement multi-factor authentication to enhance account security. This alert underscores the persistent threat of vishing and the need for vigilance in protecting digital identities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/okta-warns-of-vishing-attacks-targeting-microsoft-365-customers/",
             "relatedResources": []
         },
         {
@@ -123,6 +132,96 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Jul 10 2026",
+            "headline": "Open Source AI Powers Half of Fortune 500",
+            "title": "Hugging Face CEO Highlights Open Source AI's Growing Influence",
+            "content": "Open source AI is experiencing unprecedented growth, with Hugging Face CEO Clem Delangue noting its adoption by nearly half of the Fortune 500 companies. Hugging Face has emerged as a pivotal platform, akin to GitHub for AI, where developers share and access open models and datasets. This trend underscores a shift from proprietary AI solutions to open-source alternatives, driven by the need for customization and cost-efficiency. Companies are increasingly favoring open-source models to avoid the limitations of renting AI solutions. This movement is reshaping the AI landscape, emphasizing the importance of collaborative development and innovation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Microsoft's Emissions Surge—25% Increase in 2025",
+            "title": "Microsoft Reports 25% Rise in Carbon Emissions Amid Climate Goals",
+            "content": "Microsoft's 2026 sustainability report reveals a 25% increase in carbon emissions for 2025, totaling 34 million metric tons. This surge challenges Microsoft's climate commitments and highlights the complexities of managing emissions amid rapid business growth. The report, covered by GeekWire, indicates that emissions would have been higher without specific interventions. This development raises concerns about the tech giant's ability to meet its environmental targets and underscores the broader challenge of balancing technological expansion with sustainability. Microsoft must now reassess its strategies to align with its climate objectives.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Waze Integrates AI—Competes with Apple Maps",
+            "title": "Waze Unveils AI-Powered Features with Google's Gemini Integration",
+            "content": "Waze has introduced new AI-powered features, leveraging Google's Gemini AI assistant to enhance user experience and compete with services like Apple Maps. The updates include personalized trip planning and improved conversational reporting, reflecting Google's strategy to integrate Gemini across its product suite. This move positions Waze to offer more tailored navigation solutions, potentially increasing user engagement. As AI continues to transform navigation apps, Waze's enhancements highlight the growing importance of AI in delivering customized and efficient travel experiences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 12 2026",
+            "headline": "AI Data Centers Face Growing Resistance",
+            "title": "Opposition to AI Data Centers Intensifies Amid Expansion Efforts",
+            "content": "The expansion of AI data centers is encountering increasing resistance from communities concerned about environmental and infrastructural impacts. As detailed in The Stepback newsletter, the rapid growth of AI technologies has led to a surge in data center construction, sparking debates over resource allocation and sustainability. This opposition reflects broader societal concerns about the environmental footprint of AI and the need for responsible development practices. Stakeholders must navigate these challenges to ensure that AI infrastructure growth aligns with community and environmental priorities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/963346/ai-data-centers-fight",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Meta Pulls AI Feature After User Backlash",
+            "title": "Meta Removes Controversial AI Feature from Instagram Following Criticism",
+            "content": "Meta has removed a contentious AI feature from Instagram after receiving significant user backlash. Initially intended to offer creative tools and content control, the feature was criticized for its implementation and impact on user experience. Meta acknowledged the feedback and decided to discontinue the feature, emphasizing its commitment to user satisfaction. This incident highlights the challenges tech companies face in balancing innovation with user expectations and the importance of responsive product management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Apple Sues OpenAI—Alleges Trade Secret Theft",
+            "title": "Apple Files Lawsuit Against OpenAI Over Alleged Trade Secret Misuse",
+            "content": "Apple has initiated legal action against OpenAI, accusing the company of orchestrating a trade secret theft involving senior leadership and a former Apple employee. The lawsuit alleges that proprietary information was misappropriated, potentially impacting Apple's competitive position. This legal battle underscores the high stakes in the AI industry, where intellectual property and innovation are critical assets. Companies must remain vigilant in protecting their technological advancements and ensuring compliance with legal and ethical standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Instagram's Mosseri: Dislike AI? Remove It from Your Feed",
+            "title": "Instagram's Adam Mosseri Advocates User Control Over AI Content",
+            "content": "Instagram head Adam Mosseri has stated that users who dislike AI content should have the option to remove it from their feeds. In a podcast interview, Mosseri emphasized the importance of user choice, suggesting that while AI content shouldn't be filtered out entirely, users should have control over their content preferences. This stance reflects ongoing debates about AI's role in social media and the balance between algorithmic curation and user autonomy. Instagram's approach may influence how platforms manage AI-driven content.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "Sunrun Offers Home AI Data Center Hosting",
+            "title": "Sunrun Launches Pilot for Home-Based AI Data Center Hosting",
+            "content": "Sunrun, a solar and home energy storage company, is piloting a program to host AI data centers in customers' homes. The initiative involves installing compute units in residential properties, offering homeowners compensation for participating. This distributed AI compute model aims to decentralize data center infrastructure, potentially reducing environmental impact and operational costs. As AI demands grow, innovative solutions like Sunrun's could redefine data center strategies, emphasizing sustainability and community involvement.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 10 2026",
+            "headline": "GPT 5.6 Powers Microsoft Copilot 365 Amid Breakup Rumors",
+            "title": "OpenAI's GPT 5.6 Chosen for Microsoft Copilot 365 Despite Speculation",
+            "content": "OpenAI has confirmed that its GPT 5.6 model will continue to power Microsoft's Copilot 365 suite, amid rumors of a potential partnership dissolution. The announcement reaffirms the collaboration between OpenAI and Microsoft, highlighting the model's capabilities in enhancing productivity applications. Despite industry speculation, the partnership remains intact, underscoring the strategic importance of AI in Microsoft's product offerings. This development emphasizes the role of advanced AI models in transforming workplace tools and maintaining competitive advantage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 09 2026",
+            "headline": "Fidji Simo Exits OpenAI—Leadership Gap Emerges",
+            "title": "Fidji Simo Steps Down from OpenAI's No. 2 Role Amid Extended Leave",
+            "content": "Fidji Simo, OpenAI's second-in-command, is stepping down following an extended medical leave, creating a leadership void as the company navigates a potential IPO and competitive pressures from rivals like Anthropic. Simo's departure comes at a critical juncture for OpenAI, which is striving to strengthen its position in the enterprise AI market. The leadership change may impact strategic initiatives and organizational dynamics, necessitating a swift response to maintain momentum and address emerging challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 12 2026",
             "headline": "Lorde Criticizes Ray-Ban Meta AI Glasses at Festival",
             "title": "Lorde Dismisses Ray-Ban Meta AI Glasses as Unattractive at Madrid Festival",
@@ -138,78 +237,6 @@ const websiteContent = {
             "content": "Apple's self-driving car initiative may have stalled, but it significantly advanced the company's AI chip capabilities. Initially designed to power autonomous vehicles, these chips now enhance Apple's broader AI processing power across devices. This pivot underscores the importance of robust on-device AI processing, a critical factor in Apple's competitive edge in the tech market. The development highlights how failed projects can lead to unexpected technological advancements. Tech leaders should consider how reallocating resources from unsuccessful ventures can yield innovative breakthroughs.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Meta Disables Instagram AI Deepfake Feature Amid Backlash",
-            "title": "Meta Halts Instagram's AI Deepfake Tool Following User Concerns",
-            "content": "Meta has disabled a controversial Instagram feature that allowed users to create AI-generated images from public account content. The feature faced criticism for privacy violations, as it enabled the manipulation of any public account's images without consent. This move reflects growing concerns over AI's potential misuse in social media platforms. The decision to turn off the feature underscores the need for stricter AI governance and user privacy protection. Developers and security professionals should prioritize ethical considerations in AI tool deployment.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Apple Sues OpenAI Over Alleged Trade Secret Theft",
-            "title": "Apple Accuses OpenAI of Misappropriating Hardware Secrets in Lawsuit",
-            "content": "Apple has filed a lawsuit against OpenAI, alleging that former Apple employees at the AI startup stole trade secrets to enhance OpenAI's hardware capabilities. The lawsuit also implicates IO Products, suggesting a broader pattern of intellectual property theft. This legal battle highlights the competitive tensions in the AI industry, where proprietary technology is a valuable asset. The outcome could set precedents for how companies protect their innovations. Legal and tech professionals should watch this case for its implications on corporate security practices.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "SK Hynix's $26.5B IPO Spurs Calls for US Chip Fabs",
-            "title": "SK Hynix's Record IPO Prompts Urge for US Manufacturing Expansion",
-            "content": "SK Hynix has raised $26.5 billion in the largest foreign IPO in US history, amid the booming demand for AI chips. The success has led to calls for the company, along with Samsung, to establish manufacturing facilities in the United States. This move could bolster the US semiconductor supply chain, reducing reliance on foreign production. The IPO's success underscores the lucrative potential of AI technology investments. Industry stakeholders should consider the strategic benefits of localizing chip production to enhance supply chain resilience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI's Fidji Simo Steps Down Due to Health Issues",
-            "title": "Fidji Simo Leaves OpenAI AGI Role, Cites Health Concerns",
-            "content": "Fidji Simo, who led OpenAI's Artificial General Intelligence (AGI) efforts, is stepping down due to a neuroimmune condition. She will transition to a part-time advisory role, impacting OpenAI's leadership structure. Simo's departure comes after a brief medical leave announced in April, highlighting the pressures faced by leaders in high-stakes AI development. This change may affect OpenAI's strategic direction in AGI research. Organizations should ensure robust support systems for leaders managing demanding roles in rapidly evolving tech fields.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "OpenAI Shuts Down Atlas, Expands AI Browser Features",
-            "title": "OpenAI Discontinues Atlas, Integrates Features into Desktop and Chrome",
-            "content": "OpenAI is discontinuing its AI-powered browser, Atlas, less than a year after its launch. However, the company plans to integrate some of Atlas's browsing capabilities into its desktop application and a new Chrome extension. This strategic shift indicates OpenAI's focus on enhancing user experience through more accessible platforms. The decision reflects the dynamic nature of AI product development and the need to adapt to user feedback and technological advancements. Tech professionals should evaluate how feature integration can optimize product offerings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Meta Joins AI Coding Race with Muse Spark 1.1",
-            "title": "Meta Launches Muse Spark 1.1 to Compete in AI Coding Arena",
-            "content": "Meta has introduced Muse Spark 1.1, an AI tool designed to handle complex coding tasks, including bug fixes and code migrations. This release positions Meta in the competitive AI coding market, where automation tools are increasingly sought after by enterprises. Muse Spark 1.1 aims to streamline software development processes, reflecting a trend towards AI-driven efficiency in coding. Developers should explore how such tools can enhance productivity and reduce manual coding errors. The entry of major players like Meta could accelerate innovation in AI coding solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "NYT Accuses OpenAI of Hiding Evidence in Copyright Case",
-            "title": "New York Times Claims OpenAI Concealed Data in ChatGPT Lawsuit",
-            "content": "The New York Times has accused OpenAI of withholding critical evidence in their ongoing copyright lawsuit concerning ChatGPT. The publication alleges that OpenAI hid tools and datasets that could reveal the use of copyrighted journalism in AI outputs. This escalation in legal proceedings underscores the complexities of intellectual property rights in AI-generated content. The case could have significant implications for AI developers regarding transparency and data usage. Legal experts and AI practitioners should closely follow this case for its potential impact on AI content regulation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Elon Musk Assures Anthropic of Continued Support Amid Revenue Stakes",
-            "title": "Musk Pledges Not to Sever Ties with Anthropic Despite Revenue Concerns",
-            "content": "Elon Musk has publicly assured Anthropic that he will not cut off support, despite the $40 billion revenue implications tied to hosting its AI models. This commitment comes amid speculation about the stability of Anthropic's partnerships. Musk's statement reflects the high stakes involved in hosting AI models and the importance of maintaining strategic alliances. The assurance may stabilize Anthropic's market position and influence investor confidence. AI companies should prioritize transparent communication to manage stakeholder expectations effectively.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/",
             "relatedResources": []
         },
         {
