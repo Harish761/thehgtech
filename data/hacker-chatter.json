@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-07-12T15:32:25.198571",
-  "total_incidents": 29381,
+  "last_updated": "2026-07-13T05:51:57.793765",
+  "total_incidents": 29388,
   "incidents": [
+    {
+      "id": "cmdorganization_els_for_autism",
+      "victim_name": "Els for Autism",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-07-12T23:50:22.758258+00:00",
+      "industry": "Healthcare",
+      "website": "www.elsforautism.org",
+      "claim": "Els for Autism Foundation, founded by Liezl and Ernie Els, offers programs and resources for adults and children with autism spectrum disorder (ASD). The Els Center of Excellence campus is a world-class site hosting leading-edge programs and services for individuals with autism. Based in Jupiter, Florida, The Els Center of Excellence is on track to be a global leader in the field of autism and a leading example of what can be available to individuals on the spectrum.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_casper_orthopedics",
+      "victim_name": "Casper Orthopedics",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-07-12T22:22:52.789531+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Orthopedic clinic patients' data and medical records exposed.",
+      "screenshot": "",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/ydEfQm1BMSZSgr32xb3SQldY95kAENrabpvZWAB6C+3+LuVguGp5ux8ZvmSXzbRKaban7I5r07hjF11p3Xt90V1NGp4ZHdV",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_surtifamiliar",
+      "victim_name": "Surtifamiliar",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-07-12T22:22:32.308778+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Passports of supermarket chain employees.",
+      "screenshot": "",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/Dr7VhVFOMK1k2+qnI9jF0gDOJlR0NJq8kdZ4KX5xPANO9NEajFOqWDiv0uo0ZIzxEU+X8zkXyy6Sus+P5IxfUQ5Ym5uY3kw",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_community_advocates",
+      "victim_name": "Community Advocates",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-07-12T22:22:11.775114+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "Law firm clients' personal data exposed.",
+      "screenshot": "",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/fy1PXgixthOWCOyIB32fCD4KDmveBj2e697E1+YNBsiXeOOnVvYwMohSmHuq+DnGIZDsOM5rEKOumoiGxqRbWQzd0JPQlRa",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "deadlock_aldaco_avance_2022_s.l.",
+      "victim_name": "Aldaco Avance 2022 S.L.",
+      "threat_actor": "Deadlock",
+      "date_discovered": "2026-07-12T19:20:26.738726+00:00",
+      "industry": "Business Services",
+      "website": "aldacogrupoavance.es",
+      "claim": "Aldaco is a Spanish company specializing in industrial engineering, construction materials, civil engineering, mining and labor security, with seats in Asturias, Galicia and Madrid. The company distributes machines and technical tools, offers specialized asesoramients and support for professional projects.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_al_-_saidi_factory",
+      "victim_name": "Al - Saidi Factory",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-07-12T17:55:26.704310+00:00",
+      "industry": "Manufacturing",
+      "website": "alsaidi.com",
+      "claim": "Al Saidi Al Saidi Trading and Industry is a prominent group of companies providing tailored chemical and logistics solutions primarily for clients in the Middle East. They offer a comprehensive range of global logistics services, including supply chain management and freight forwarding, designed to enhance business efficiency. Additionally, the company specializes in manufacturing chemicals for the Oil & Gas and petrochemical industries, focusing on reliability and sustainability. With a commitment to high-quality, environmentally friendly products, Al Saidi aims to support clients in maximizing their operational effectiveness.",
+      "screenshot": "",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=7dc6bb41-0cc2-4c0a-8b60-dffc1a57317a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_step_oiltools",
+      "victim_name": "STEP Oiltools",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-07-12T17:55:01.344752+00:00",
+      "industry": "Energy",
+      "website": "stepoiltools.com",
+      "claim": "STEP Oiltools is a leading global provider of solids control and drilling waste management services, primarily serving the oil and gas and civil engineering industries. The company offers a range of products including mini separation systems, modular recyclers, and dewatering systems, aimed at enhancing efficiency and sustainability in drilling operations. With a commitment to health and safety, STEP Oiltools has received recognition for its high standards in workplace safety. Their clientele includes major players in the energy sector, civil construction, and water treatment markets.",
+      "screenshot": "",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=2aedf0cd-9031-4333-aa3b-3b775041d7d3",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "m3rx_eclective.ie",
       "victim_name": "eclective.ie",
