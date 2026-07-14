@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-14T02:30:23.338098",
+  "last_updated": "2026-07-14T13:43:11.281484",
   "period": "Last 7 days",
-  "total_groups": 29,
-  "total_victims": 244,
+  "total_groups": 30,
+  "total_victims": 255,
   "groups": [
     {
       "name": "Deadlock",
@@ -73,8 +73,8 @@
         "Agriculture and Food Production",
         "Business Services",
         "Construction",
-        "Consumer Services",
-        "Financial Services"
+        "Financial Services",
+        "Healthcare"
       ],
       "countries": [
         "AO",
@@ -97,8 +97,14 @@
     },
     {
       "name": "Qilin",
-      "count": 44,
+      "count": 46,
       "victims": [
+        {
+          "name": "Sedemi",
+          "date": "2026-07-14T03:57:06.724334+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=44c613b3-9f46-4e31-a76b-0af290178914",
+          "discovered_date": "2026-07-14T03:57:06.724334+00:00"
+        },
         {
           "name": "Counts & Dobyns",
           "date": "2026-07-13T21:02:04.535972+00:00",
@@ -152,12 +158,6 @@
           "date": "2026-07-11T13:35:16.397025+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=b004c1c5-0926-4073-8d0d-11a7f9167b2d",
           "discovered_date": "2026-07-11T13:35:16.397025+00:00"
-        },
-        {
-          "name": "Retelit SpA PIVA",
-          "date": "2026-07-11T13:34:33.497262+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=eb22c190-4265-4182-9698-7c5ca02d59b5",
-          "discovered_date": "2026-07-11T13:34:33.497262+00:00"
         }
       ],
       "industries": [
@@ -183,12 +183,103 @@
         8,
         0,
         16,
-        0
+        2
+      ]
+    },
+    {
+      "name": "Dragonforce",
+      "count": 32,
+      "victims": [
+        {
+          "name": "Road Ahead Technologies Consultant",
+          "date": "2026-07-14T13:23:56.202895+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=59b86793-648f-4822-8c06-61485a57ac1a",
+          "discovered_date": "2026-07-14T13:23:56.202895+00:00"
+        },
+        {
+          "name": "Ifage",
+          "date": "2026-07-14T12:25:44.922991+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=81b39124-4df9-4825-b410-581d859de945",
+          "discovered_date": "2026-07-14T12:25:44.922991+00:00"
+        },
+        {
+          "name": "Omax Autos",
+          "date": "2026-07-14T12:26:08.628529+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e97e4acb-8587-423d-afa3-e4dc8fdb22dd",
+          "discovered_date": "2026-07-14T12:26:08.628529+00:00"
+        },
+        {
+          "name": "Midal Cables",
+          "date": "2026-07-14T12:53:59.567923+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1cca878f-d73a-45df-bc04-d0413369432a",
+          "discovered_date": "2026-07-14T12:53:59.567923+00:00"
+        },
+        {
+          "name": "Atcom",
+          "date": "2026-07-14T12:54:51.124346+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e14ea058-9e63-4d6e-b0c2-2b6baf9065c2",
+          "discovered_date": "2026-07-14T12:54:51.124346+00:00"
+        },
+        {
+          "name": "Intron Technology Holdings",
+          "date": "2026-07-14T12:55:43.376283+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=8d68afdb-9f29-4d4a-941d-3a312b899536",
+          "discovered_date": "2026-07-14T12:55:43.376283+00:00"
+        },
+        {
+          "name": "asimar.com",
+          "date": "2026-07-14T09:24:51.535546+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=927c723b-c1df-46f6-953a-9f8505bcc6e2",
+          "discovered_date": "2026-07-14T09:24:51.535546+00:00"
+        },
+        {
+          "name": "momenta.cn",
+          "date": "2026-07-14T00:24:00.121028+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=3880d2b3-a7c4-473b-9407-bc9147cd9b63",
+          "discovered_date": "2026-07-14T00:24:00.121028+00:00"
+        },
+        {
+          "name": "Northeast Rescue Systems",
+          "date": "2026-07-13T15:52:40.496020+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=872e1a75-79c6-4adf-b533-bc796676b244",
+          "discovered_date": "2026-07-13T15:52:40.496020+00:00"
+        },
+        {
+          "name": "Nicholson y Cano Abogados",
+          "date": "2026-07-13T14:55:05.739884+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=dde8ad3c-5650-48f2-bd90-cb786567b52b",
+          "discovered_date": "2026-07-13T14:55:05.739884+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Construction",
+        "Energy",
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "AE",
+        "AR",
+        "AU",
+        "CH",
+        "CN"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        2,
+        2,
+        4,
+        8,
+        16
       ]
     },
     {
       "name": "Thegentlemen",
-      "count": 34,
+      "count": 22,
       "victims": [
         {
           "name": "Royal Foods",
@@ -257,7 +348,7 @@
         "AU",
         "CZ",
         "DE",
-        "EG"
+        "ES"
       ],
       "trend": "up",
       "trend_percentage": 15,
@@ -269,97 +360,6 @@
         0,
         0,
         0
-      ]
-    },
-    {
-      "name": "Dragonforce",
-      "count": 18,
-      "victims": [
-        {
-          "name": "momenta.cn",
-          "date": "2026-07-14T00:24:00.121028+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=3880d2b3-a7c4-473b-9407-bc9147cd9b63",
-          "discovered_date": "2026-07-14T00:24:00.121028+00:00"
-        },
-        {
-          "name": "Northeast Rescue Systems",
-          "date": "2026-07-13T15:52:40.496020+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=872e1a75-79c6-4adf-b533-bc796676b244",
-          "discovered_date": "2026-07-13T15:52:40.496020+00:00"
-        },
-        {
-          "name": "Nicholson y Cano Abogados",
-          "date": "2026-07-13T14:55:05.739884+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=dde8ad3c-5650-48f2-bd90-cb786567b52b",
-          "discovered_date": "2026-07-13T14:55:05.739884+00:00"
-        },
-        {
-          "name": "www.twtci.com Trans World Trading",
-          "date": "2026-07-13T09:23:46.364855+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=45c18967-51db-4181-97c5-6a0d59ab1122",
-          "discovered_date": "2026-07-13T09:23:46.364855+00:00"
-        },
-        {
-          "name": "degeremcia.com",
-          "date": "2026-07-13T09:24:09.043553+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=f23e19db-7e99-4185-9673-3ef7cf7a8c17",
-          "discovered_date": "2026-07-13T09:24:09.043553+00:00"
-        },
-        {
-          "name": "STEP Oiltools",
-          "date": "2026-07-12T17:55:01.344752+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=2aedf0cd-9031-4333-aa3b-3b775041d7d3",
-          "discovered_date": "2026-07-12T17:55:01.344752+00:00"
-        },
-        {
-          "name": "Al - Saidi Factory",
-          "date": "2026-07-12T17:55:26.704310+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=7dc6bb41-0cc2-4c0a-8b60-dffc1a57317a",
-          "discovered_date": "2026-07-12T17:55:26.704310+00:00"
-        },
-        {
-          "name": "The Schuett Companies",
-          "date": "2026-07-10T21:57:26.296097+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=d08d0ea2-3184-4606-8198-38fd270460a4",
-          "discovered_date": "2026-07-10T21:57:26.296097+00:00"
-        },
-        {
-          "name": "Access Equipment Hire",
-          "date": "2026-07-11T15:25:06.066641+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=71752b28-6410-4be5-b260-ffa493fdc9d3",
-          "discovered_date": "2026-07-11T15:25:06.066641+00:00"
-        },
-        {
-          "name": "momenta.cn",
-          "date": "2026-07-14T00:24:00+00:00",
-          "url": "https://www.ransomware.live/id/bW9tZW50YS5jbkBkcmFnb25mb3JjZQ==",
-          "discovered_date": "2026-07-14T00:24:00+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Construction",
-        "Energy",
-        "Manufacturing",
-        "Not Found"
-      ],
-      "countries": [
-        "AR",
-        "AU",
-        "CN",
-        "PH",
-        "RO"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        2,
-        4,
-        8,
-        2
       ]
     },
     {
@@ -526,6 +526,74 @@
         0,
         0,
         0
+      ]
+    },
+    {
+      "name": "Cmdorganization",
+      "count": 7,
+      "victims": [
+        {
+          "name": "Target Energy Solutions",
+          "date": "2026-07-14T07:20:25.970689+00:00",
+          "url": "",
+          "discovered_date": "2026-07-14T07:20:25.970689+00:00"
+        },
+        {
+          "name": "Els for Autism",
+          "date": "2026-07-12T23:50:22.758258+00:00",
+          "url": "",
+          "discovered_date": "2026-07-12T23:50:22.758258+00:00"
+        },
+        {
+          "name": "Golden Star Resources",
+          "date": "2026-07-11T10:50:29.730582+00:00",
+          "url": "",
+          "discovered_date": "2026-07-11T10:50:29.730582+00:00"
+        },
+        {
+          "name": "Target Energy Solutions",
+          "date": "2026-07-14T07:20:25+00:00",
+          "url": "https://www.ransomware.live/id/VGFyZ2V0IEVuZXJneSBTb2x1dGlvbnNAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-07-14T07:20:25+00:00"
+        },
+        {
+          "name": "Els for Autism",
+          "date": "2026-07-12T23:50:22+00:00",
+          "url": "https://www.ransomware.live/id/RWxzIGZvciBBdXRpc21AY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-07-12T23:50:22+00:00"
+        },
+        {
+          "name": "Golden Star Resources",
+          "date": "2026-07-11T10:50:29+00:00",
+          "url": "https://www.ransomware.live/id/R29sZGVuIFN0YXIgUmVzb3VyY2VzQGNtZG9yZ2FuaXphdGlvbg==",
+          "discovered_date": "2026-07-11T10:50:29+00:00"
+        },
+        {
+          "name": "Finance Yorkshire",
+          "date": "2026-07-09T19:20:22+00:00",
+          "url": "https://www.ransomware.live/id/RmluYW5jZSBZb3Jrc2hpcmVAY21kb3JnYW5pemF0aW9u",
+          "discovered_date": "2026-07-09T19:20:22+00:00"
+        }
+      ],
+      "industries": [
+        "Energy",
+        "Healthcare"
+      ],
+      "countries": [
+        "GB",
+        "GH",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        1,
+        0,
+        2,
+        2,
+        0,
+        2
       ]
     },
     {
@@ -828,48 +896,34 @@
       ]
     },
     {
-      "name": "Cmdorganization",
-      "count": 5,
+      "name": "Ailock",
+      "count": 3,
       "victims": [
         {
-          "name": "Els for Autism",
-          "date": "2026-07-12T23:50:22.758258+00:00",
+          "name": "WBF Construction",
+          "date": "2026-07-14T12:20:12.567010+00:00",
           "url": "",
-          "discovered_date": "2026-07-12T23:50:22.758258+00:00"
+          "discovered_date": "2026-07-14T12:20:12.567010+00:00"
         },
         {
-          "name": "Golden Star Resources",
-          "date": "2026-07-11T10:50:29.730582+00:00",
-          "url": "",
-          "discovered_date": "2026-07-11T10:50:29.730582+00:00"
+          "name": "WBF Construction",
+          "date": "2026-07-14T12:20:12+00:00",
+          "url": "https://www.ransomware.live/id/V0JGIENvbnN0cnVjdGlvbkBBaUxvY2s=",
+          "discovered_date": "2026-07-14T12:20:12+00:00"
         },
         {
-          "name": "Els for Autism",
-          "date": "2026-07-12T23:50:22+00:00",
-          "url": "https://www.ransomware.live/id/RWxzIGZvciBBdXRpc21AY21kb3JnYW5pemF0aW9u",
-          "discovered_date": "2026-07-12T23:50:22+00:00"
-        },
-        {
-          "name": "Golden Star Resources",
-          "date": "2026-07-11T10:50:29+00:00",
-          "url": "https://www.ransomware.live/id/R29sZGVuIFN0YXIgUmVzb3VyY2VzQGNtZG9yZ2FuaXphdGlvbg==",
-          "discovered_date": "2026-07-11T10:50:29+00:00"
-        },
-        {
-          "name": "Finance Yorkshire",
-          "date": "2026-07-09T19:20:22+00:00",
-          "url": "https://www.ransomware.live/id/RmluYW5jZSBZb3Jrc2hpcmVAY21kb3JnYW5pemF0aW9u",
-          "discovered_date": "2026-07-09T19:20:22+00:00"
+          "name": "Pinturas Prisa",
+          "date": "2026-07-09T08:20:07+00:00",
+          "url": "https://www.ransomware.live/id/UGludHVyYXMgUHJpc2FAQWlMb2Nr",
+          "discovered_date": "2026-07-09T08:20:07+00:00"
         }
       ],
       "industries": [
-        "Energy",
-        "Healthcare"
+        "Construction"
       ],
       "countries": [
-        "GB",
-        "GH",
-        "US"
+        "MX",
+        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -877,10 +931,52 @@
         0,
         1,
         0,
-        2,
-        2,
         0,
-        0
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "Blacknevas",
+      "count": 3,
+      "victims": [
+        {
+          "name": "L'azurde",
+          "date": "2026-07-14T10:23:47.804618+00:00",
+          "url": "http://ctyfftrjgtwdjzlgqh4avbd35sqrs6tde4oyam2ufbjch6oqpqtkdtid.onion/10f9693f-9d25-4de6-8941-411cfe9f3020",
+          "discovered_date": "2026-07-14T10:23:47.804618+00:00"
+        },
+        {
+          "name": "Arkın Group",
+          "date": "2026-07-14T13:22:18+00:00",
+          "url": "https://www.ransomware.live/id/QXJrxLFuIEdyb3VwQGJsYWNrbmV2YXM=",
+          "discovered_date": "2026-07-14T13:22:18+00:00"
+        },
+        {
+          "name": "L'azurde",
+          "date": "2026-07-14T10:23:47+00:00",
+          "url": "https://www.ransomware.live/id/TCdhenVyZGVAYmxhY2tuZXZhcw==",
+          "discovered_date": "2026-07-14T10:23:47+00:00"
+        }
+      ],
+      "industries": [
+        "Consumer Services"
+      ],
+      "countries": [
+        "SA",
+        "TR"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
       ]
     },
     {
@@ -1359,33 +1455,6 @@
       "industries": [],
       "countries": [
         "N/A"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ailock",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Pinturas Prisa",
-          "date": "2026-07-09T08:20:07+00:00",
-          "url": "https://www.ransomware.live/id/UGludHVyYXMgUHJpc2FAQWlMb2Nr",
-          "discovered_date": "2026-07-09T08:20:07+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "MX"
       ],
       "trend": "down",
       "trend_percentage": -5,
