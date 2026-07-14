@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 13 2026",
+            "headline": "Joomla Extensions Exploited—Remote Code Execution Alert",
+            "title": "Critical Vulnerabilities in Joomla Extensions Allow Remote Code Execution",
+            "content": "Security researchers have identified critical vulnerabilities in the Balbooa Forms and iCagenda Joomla extensions, which are being actively exploited by threat actors for remote code execution. These flaws enable attackers to execute arbitrary code on vulnerable systems, posing a significant risk to websites using these extensions. Organizations utilizing these Joomla extensions should prioritize patching to prevent potential breaches. The exploitation of these vulnerabilities highlights the ongoing threat of unpatched software in content management systems. Administrators are urged to update to the latest versions immediately to mitigate risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/organizations-warned-of-exploited-joomla-extension-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Russian Hackers Target Critical Infrastructure—US Issues Warning",
+            "title": "US Authorities Alert on Russian Cyber Attacks on Critical Infrastructure",
+            "content": "The NSA, FBI, and CISA have issued a warning regarding recent cyberattacks by Russian hackers targeting critical infrastructure in North America and Europe. These attackers exploit vulnerabilities in misconfigured routers to gain unauthorized network access. The advisory emphasizes the importance of updating router firmware and ensuring proper configuration to defend against these threats. This alert comes amid heightened geopolitical tensions, underscoring the need for robust cybersecurity measures in critical sectors. Organizations are advised to enhance their network security protocols to prevent potential disruptions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "CrashStealer Malware Bypasses macOS Security—Data at Risk",
+            "title": "CrashStealer macOS Malware Evades Gatekeeper Using Notarized Dropper",
+            "content": "A new macOS malware named CrashStealer has been discovered, capable of harvesting sensitive data from compromised systems. Unlike typical macOS malware, CrashStealer uses a notarized dropper to bypass Gatekeeper checks, making it particularly stealthy. This malware targets systems running macOS, posing a threat to users' personal and financial information. The emergence of CrashStealer highlights the evolving tactics of cybercriminals in circumventing Apple's security measures. Users are advised to remain vigilant, keep their systems updated, and avoid downloading software from untrusted sources.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/crashstealer-macos-malware-uses.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "ModHeader Pulled—Hidden Data Collector Discovered",
+            "title": "Google and Microsoft Remove ModHeader Extension Due to Privacy Concerns",
+            "content": "Google and Microsoft have removed the ModHeader extension from their Chrome and Edge web stores after researchers uncovered a dormant browsing-history collector within its code. With approximately 1.6 million installs, the extension posed a significant privacy risk. Although the collector was inactive, its presence raised alarms about potential data misuse. This incident underscores the importance of scrutinizing third-party extensions for hidden functionalities. Users are encouraged to review installed extensions and remove any that are unnecessary or suspicious.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/google-and-microsoft-pull-modheader.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "RabbitMQ Vulnerability Exposes OAuth Secrets—Patch Urgently",
+            "title": "Critical RabbitMQ Vulnerability Allows Unauthorized Access to OAuth Secrets",
+            "content": "A vulnerability in RabbitMQ has been identified, allowing unauthenticated attackers to access confidential OAuth client secrets. This flaw could enable attackers to take control of the message broker, posing a severe risk to enterprise systems relying on RabbitMQ for messaging services. Organizations using RabbitMQ are urged to apply the latest patches to secure their systems. This vulnerability highlights the critical need for regular security assessments and timely updates to prevent unauthorized access to sensitive data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rabbitmq-vulnerability-threatens-enterprise-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "MemGhost Attack Alters AI Memory—Email Exploit Found",
+            "title": "MemGhost Attack Manipulates AI Agents Through Single Email Exploit",
+            "content": "Researchers have uncovered a novel attack method, dubbed MemGhost, which can plant persistent false memories in AI agents via a single email. By exploiting AI memory and inbox access, attackers can manipulate the agent's understanding and responses. This vulnerability poses a significant threat to AI systems integrated into personal and professional environments. The MemGhost attack highlights the need for enhanced security measures in AI development to prevent manipulation and ensure data integrity. Developers are advised to implement robust validation mechanisms to safeguard AI memory.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "June Sees 37 Cybersecurity M&A Deals—Industry Consolidates",
+            "title": "Cybersecurity M&A Activity Surges with 37 Deals Announced in June 2026",
+            "content": "The cybersecurity sector witnessed a significant surge in mergers and acquisitions, with 37 deals announced in June 2026. Key players such as 1Password, Accenture, Cisco, F5, Rubrik, and SailPoint were involved in these transactions, reflecting ongoing industry consolidation. This trend highlights the growing demand for comprehensive cybersecurity solutions and the strategic positioning of companies to enhance their offerings. Industry professionals should monitor these developments to understand market dynamics and potential shifts in cybersecurity capabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-june-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "AI-Generated Script Maps Active Directory—Security Alert",
+            "title": "Suspected AI-Generated PowerShell Script Used for Active Directory Mapping",
+            "content": "Cybersecurity experts have detected an intrusion involving a PowerShell script, suspected to be AI-generated, used for Active Directory (AD) enumeration. The script targeted Domain Controllers, mapping users, computers, and domains, and exporting the data for potential misuse. This incident underscores the increasing use of AI in crafting sophisticated cyberattack tools. Organizations are advised to enhance monitoring of PowerShell activities and implement strict access controls to protect AD environments from unauthorized mapping and data extraction.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "ShareFile Shutdown—Security Threat Prompts Urgent Action",
+            "title": "Progress Urges ShareFile Storage Zone Controller Shutdown Amid Threat Investigation",
+            "content": "Progress has advised customers to manually shut down their ShareFile Storage Zone Controllers due to a credible security threat under investigation. This precautionary measure aims to prevent potential exploitation while the company assesses the risk. ShareFile users are urged to comply with the shutdown request to safeguard their data. This incident highlights the importance of proactive threat management and the need for organizations to have contingency plans for critical infrastructure. Customers should stay informed of updates from Progress regarding the resolution of this threat.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/progress-prompts-sharefile-storage-zone-controller-shutdown-amid-security-concerns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Router Security Lapses Exploited—Global Advisory Issued",
+            "title": "Global Advisory Urges Enterprises to Enhance Router Security Practices",
+            "content": "Security agencies worldwide have issued a joint advisory urging enterprises to improve their router security hygiene. This call to action follows reports of Russian government-sponsored attackers exploiting weaknesses in inadequately protected and misconfigured routers. The advisory emphasizes the need for regular firmware updates and proper configuration to prevent unauthorized access. This global initiative reflects the critical role of routers in network security and the ongoing threat posed by state-sponsored cyber actors. Organizations are encouraged to review and strengthen their router security protocols.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
             "headline": "AI Coding Tools—A Double-Edged Sword for Security",
             "title": "Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks",
             "content": "This week's cybersecurity landscape highlights the dual nature of AI coding tools, which are rapidly identifying bugs but also being leveraged by attackers to exploit vulnerabilities. Key incidents include the Citrix Bleed 2 ransomware and a significant threat to ShareFile users. The use of AI in coding is accelerating vulnerability discovery, but it also empowers attackers who do not adhere to ethical standards. Security professionals must remain vigilant and ensure robust defenses are in place to counteract these sophisticated threats. Organizations should prioritize patch management and continuous monitoring to mitigate risks.",
@@ -92,61 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "Zimbra Urges Patch—Critical XSS Flaw Exploits Emails",
-            "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
-            "content": "Zimbra has released updates to address a critical stored cross-site scripting (XSS) vulnerability affecting its Classic Web Client. This flaw could allow attackers to execute arbitrary code by sending specially crafted emails. The vulnerability poses a significant risk as it can be exploited during user sessions, potentially leading to unauthorized access and data breaches. Zimbra users are strongly advised to apply the latest security patches immediately to mitigate potential threats. This incident underscores the ongoing challenges of securing web-based email platforms against sophisticated attack vectors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "Balochistan Police Portal Hacked—Espionage by China, India",
-            "title": "Hackers Exploit Balochistan Police Portal in Espionage Campaigns",
-            "content": "Cybersecurity researchers have uncovered a prolonged cyber espionage campaign targeting Pakistani law enforcement, specifically the Balochistan Police, by threat actors suspected to be aligned with China and India. The attacks, spanning from February 2024 to April 2026, involved the compromise of critical police assets, potentially exposing sensitive operational data. This incident underscores the ongoing geopolitical tensions in the region and highlights the vulnerability of law enforcement IT infrastructure to sophisticated cyber threats. Organizations are advised to enhance their security protocols and conduct regular audits to mitigate such risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "jscrambler NPM Release—Rust Infostealer Hidden in Update",
-            "title": "Compromised jscrambler NPM Release Deploys Rust Infostealer",
-            "content": "The jscrambler npm package version 8.14.0 has been compromised, deploying a Rust-based infostealer during installation. This malicious version includes a preinstall hook that executes a native binary across Windows, macOS, and Linux platforms. The incident underscores the risks associated with third-party software dependencies and the importance of verifying package integrity. Developers are urged to review their npm packages and update to secure versions to prevent data theft and system compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "Ghost Accounts Exploit GitHub API—Mass Recon Campaign Unveiled",
-            "title": "Ghost Accounts Exploit GitHub API for Organizational Reconnaissance",
-            "content": "A mass reconnaissance campaign has been identified, utilizing ghost accounts to exploit GitHub's API for mapping organizational structures, including repositories and member details. This tactic poses a significant threat to the security of software supply chains, as it allows attackers to gather intelligence on potential targets. Organizations should enhance their GitHub security settings and monitor for unauthorized access to mitigate the risk of such reconnaissance activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ghost-accounts-abuse-github-api-in-mass-recon-campaign/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jul 10 2026",
-            "headline": "Open Source AI Powers Half of Fortune 500",
-            "title": "Hugging Face CEO Highlights Open Source AI's Growing Influence",
-            "content": "Open source AI is experiencing unprecedented growth, with Hugging Face CEO Clem Delangue noting its adoption by nearly half of the Fortune 500 companies. Hugging Face has emerged as a pivotal platform, akin to GitHub for AI, where developers share and access open models and datasets. This trend underscores a shift from proprietary AI solutions to open-source alternatives, driven by the need for customization and cost-efficiency. Companies are increasingly favoring open-source models to avoid the limitations of renting AI solutions. This movement is reshaping the AI landscape, emphasizing the importance of collaborative development and innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/open-source-ai-matters-more-than-ever-according-to-hugging-faces-clem-delangue/",
+            "date": "Jul 13 2026",
+            "headline": "ACRouter Boosts AI Efficiency—Cuts Costs by 2.6x",
+            "title": "ACRouter Framework Optimizes AI Model Selection, Reducing Costs Significantly",
+            "content": "ACRouter, a new open-source framework, is revolutionizing enterprise AI by dynamically routing tasks to the most suitable AI model, optimizing both speed and cost. Unlike traditional static classification methods, ACRouter adapts in real-time, achieving a 2.6x reduction in costs compared to Opus-only setups. This advancement is particularly impactful for businesses leveraging AI at scale, allowing for more efficient resource allocation and improved performance. As AI adoption grows, such frameworks are becoming essential components of the AI stack, offering significant operational benefits. Organizations should consider integrating adaptive routing solutions like ACRouter to enhance their AI capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/acrouter-picks-the-smartest-ai-model-per-task-beating-opus-only-setups-by-2-6x-on-cost",
             "relatedResources": []
         },
         {
-            "date": "Jul 10 2026",
-            "headline": "Microsoft's Emissions Surge—25% Increase in 2025",
-            "title": "Microsoft Reports 25% Rise in Carbon Emissions Amid Climate Goals",
-            "content": "Microsoft's 2026 sustainability report reveals a 25% increase in carbon emissions for 2025, totaling 34 million metric tons. This surge challenges Microsoft's climate commitments and highlights the complexities of managing emissions amid rapid business growth. The report, covered by GeekWire, indicates that emissions would have been higher without specific interventions. This development raises concerns about the tech giant's ability to meet its environmental targets and underscores the broader challenge of balancing technological expansion with sustainability. Microsoft must now reassess its strategies to align with its climate objectives.",
+            "date": "Jul 14 2026",
+            "headline": "PixVerse Raises $439M—Valuation Surpasses $2B",
+            "title": "PixVerse Secures $439 Million to Expand Video-Generation Capabilities",
+            "content": "PixVerse, a video-generation startup, has successfully raised $439 million in funding, pushing its valuation beyond $2 billion. The company plans to use the capital to enhance its world model offerings and expand its reach across various geographies. This funding round underscores the growing demand for advanced video-generation technologies, which are increasingly being integrated into diverse sectors such as entertainment, marketing, and virtual reality. Investors are betting on PixVerse's potential to lead in this rapidly evolving market. Companies in related fields should monitor PixVerse's developments for potential collaboration or competition.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Nadella Warns of AI Trojan Horse Risks",
+            "title": "Satya Nadella Warns Companies About AI's Trojan Horse Potential",
+            "content": "Microsoft CEO Satya Nadella has issued a stark warning to companies utilizing AI, highlighting concerns that proprietary AI models could act as Trojan horses. This warning comes amid growing debates about the risks associated with AI, particularly the potential for large AI labs to exploit their models for unauthorized data access or influence. Nadella's comments reflect a broader industry anxiety about the control and transparency of AI technologies. Organizations are advised to conduct thorough due diligence when integrating AI solutions to safeguard against potential vulnerabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Apple Sues OpenAI Over Trade Secret Theft",
+            "title": "Apple Accuses OpenAI of Conspiring to Steal Trade Secrets",
+            "content": "Apple has filed a lawsuit against OpenAI, alleging that the AI company conspired with former Apple employees to steal trade secrets. The lawsuit claims that OpenAI facilitated unauthorized access to Apple's systems and encouraged candidates to bring proprietary hardware to interviews. These allegations, if proven, could have significant legal and financial implications for OpenAI. The case highlights the critical importance of safeguarding intellectual property in the competitive tech industry. Companies should reinforce their security protocols and employee agreements to prevent similar breaches.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Apple vs. OpenAI—Trade Secret Allegations Unveiled",
+            "title": "Allegations in Apple's Trade Secrets Lawsuit Against OpenAI",
+            "content": "Apple's lawsuit against OpenAI includes a series of startling allegations, such as unauthorized access to Apple's systems and requests for job candidates to bring Apple hardware to interviews. These claims suggest a deliberate effort by OpenAI to acquire confidential information from Apple. The lawsuit could set a precedent for how trade secret disputes are handled in the AI sector. Companies should closely follow this case to understand the legal ramifications and ensure their own practices comply with intellectual property laws.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Altman Responds to Musk—Space Data Center Debate Heats Up",
+            "title": "Sam Altman and Elon Musk Clash Over Space Data Centers",
+            "content": "In a heated exchange, Sam Altman responded to Elon Musk's accusations of being a scammer by criticizing Musk's promotion of space data centers to investors. Altman's comments reflect a broader skepticism within the industry about the viability and practicality of space-based data centers. This debate highlights the ongoing tension between tech leaders over the future direction of data infrastructure. Industry professionals should consider the technical and economic feasibility of such ambitious projects before investing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Memory Shortage Hits Smartphone Shipments—Apple, Samsung Gain",
+            "title": "Apple and Samsung Thrive Amid Smartphone Memory Shortage",
+            "content": "A global memory shortage has led to historic lows in smartphone shipments, yet Apple and Samsung continue to benefit. Despite the component shortages and economic challenges, these leading manufacturers have managed to maintain production levels, capitalizing on their robust supply chains and market positions. This situation underscores the importance of supply chain resilience in the tech industry. Companies should evaluate their supply chain strategies to mitigate risks associated with component shortages and ensure continued operations.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/07/apple-and-samsung-benefit-as-memory-shortage-pushes-smartphone-shipments-to-historic-lows/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "AI Ethics Questioned—Should AI Assist in Crimes?",
+            "title": "Ethical Concerns Arise Over AI's Role in Criminal Activities",
+            "content": "A provocative question has emerged in the AI ethics debate: should AI be designed to assist users in committing crimes, such as getting away with murder? This discussion highlights the potential for AI systems to be misused if not properly aligned with ethical guidelines. As AI becomes more user-aligned, the risk of exploitation for illicit purposes increases. Industry leaders and policymakers must collaborate to establish robust ethical frameworks that prevent AI from being used in harmful ways.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/should-ai-help-you-get-away-with-killing-your-spouse/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Anthropic Localizes Claude Pricing for Indian Market",
+            "title": "Anthropic Adjusts Claude AI Pricing for Indian Users",
+            "content": "Anthropic has begun localizing its Claude AI pricing for the Indian market, offering subscription plans denominated in Indian rupees. This move reflects India's significance as Anthropic's largest market after the United States and aims to make its AI services more accessible to Indian users. By tailoring pricing strategies to local markets, Anthropic is positioning itself to capture a larger share of the growing AI demand in India. Companies should consider similar localization strategies to enhance market penetration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Waze Integrates AI—Gemini Enhances Driving Experience",
+            "title": "Waze Introduces AI-Powered Features with Gemini Integration",
+            "content": "Waze is undergoing an AI transformation with the integration of Google's Gemini AI assistant, aiming to personalize user trips. This update includes enhancements to the app's conversation capabilities and route personalization features. By leveraging AI, Waze seeks to improve user experience and maintain its competitive edge in the navigation app market. Users can expect more intuitive interactions and tailored driving suggestions. Developers should explore AI integration opportunities to enhance product offerings and user satisfaction.",
             "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
+            "sourceUrl": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
             "relatedResources": []
         },
         {
@@ -168,60 +294,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 10 2026",
-            "headline": "Meta Pulls AI Feature After User Backlash",
-            "title": "Meta Removes Controversial AI Feature from Instagram Following Criticism",
-            "content": "Meta has removed a contentious AI feature from Instagram after receiving significant user backlash. Initially intended to offer creative tools and content control, the feature was criticized for its implementation and impact on user experience. Meta acknowledged the feedback and decided to discontinue the feature, emphasizing its commitment to user satisfaction. This incident highlights the challenges tech companies face in balancing innovation with user expectations and the importance of responsive product management.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Apple Sues OpenAI—Alleges Trade Secret Theft",
-            "title": "Apple Files Lawsuit Against OpenAI Over Alleged Trade Secret Misuse",
-            "content": "Apple has initiated legal action against OpenAI, accusing the company of orchestrating a trade secret theft involving senior leadership and a former Apple employee. The lawsuit alleges that proprietary information was misappropriated, potentially impacting Apple's competitive position. This legal battle underscores the high stakes in the AI industry, where intellectual property and innovation are critical assets. Companies must remain vigilant in protecting their technological advancements and ensuring compliance with legal and ethical standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Instagram's Mosseri: Dislike AI? Remove It from Your Feed",
-            "title": "Instagram's Adam Mosseri Advocates User Control Over AI Content",
-            "content": "Instagram head Adam Mosseri has stated that users who dislike AI content should have the option to remove it from their feeds. In a podcast interview, Mosseri emphasized the importance of user choice, suggesting that while AI content shouldn't be filtered out entirely, users should have control over their content preferences. This stance reflects ongoing debates about AI's role in social media and the balance between algorithmic curation and user autonomy. Instagram's approach may influence how platforms manage AI-driven content.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/963961/instagram-adam-mosseri-ai-feed-filters",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "Sunrun Offers Home AI Data Center Hosting",
-            "title": "Sunrun Launches Pilot for Home-Based AI Data Center Hosting",
-            "content": "Sunrun, a solar and home energy storage company, is piloting a program to host AI data centers in customers' homes. The initiative involves installing compute units in residential properties, offering homeowners compensation for participating. This distributed AI compute model aims to decentralize data center infrastructure, potentially reducing environmental impact and operational costs. As AI demands grow, innovative solutions like Sunrun's could redefine data center strategies, emphasizing sustainability and community involvement.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/963930/sunrun-distributed-ai-data-center",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 10 2026",
-            "headline": "GPT 5.6 Powers Microsoft Copilot 365 Amid Breakup Rumors",
-            "title": "OpenAI's GPT 5.6 Chosen for Microsoft Copilot 365 Despite Speculation",
-            "content": "OpenAI has confirmed that its GPT 5.6 model will continue to power Microsoft's Copilot 365 suite, amid rumors of a potential partnership dissolution. The announcement reaffirms the collaboration between OpenAI and Microsoft, highlighting the model's capabilities in enhancing productivity applications. Despite industry speculation, the partnership remains intact, underscoring the strategic importance of AI in Microsoft's product offerings. This development emphasizes the role of advanced AI models in transforming workplace tools and maintaining competitive advantage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 09 2026",
-            "headline": "Fidji Simo Exits OpenAI—Leadership Gap Emerges",
-            "title": "Fidji Simo Steps Down from OpenAI's No. 2 Role Amid Extended Leave",
-            "content": "Fidji Simo, OpenAI's second-in-command, is stepping down following an extended medical leave, creating a leadership void as the company navigates a potential IPO and competitive pressures from rivals like Anthropic. Simo's departure comes at a critical juncture for OpenAI, which is striving to strengthen its position in the enterprise AI market. The leadership change may impact strategic initiatives and organizational dynamics, necessitating a swift response to maintain momentum and address emerging challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 12 2026",
             "headline": "Lorde Criticizes Ray-Ban Meta AI Glasses at Festival",
             "title": "Lorde Dismisses Ray-Ban Meta AI Glasses as Unattractive at Madrid Festival",
@@ -237,24 +309,6 @@ const websiteContent = {
             "content": "Apple's self-driving car initiative may have stalled, but it significantly advanced the company's AI chip capabilities. Initially designed to power autonomous vehicles, these chips now enhance Apple's broader AI processing power across devices. This pivot underscores the importance of robust on-device AI processing, a critical factor in Apple's competitive edge in the tech market. The development highlights how failed projects can lead to unexpected technological advancements. Tech leaders should consider how reallocating resources from unsuccessful ventures can yield innovative breakthroughs.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "AI Coding Tools Enable New Threat: Slopsquatting",
-            "title": "Slopsquatting Emerges as AI-Induced Software Supply Chain Threat",
-            "content": "Slopsquatting, a novel supply chain threat, is gaining traction due to AI coding tools' hallucinations. As developers increasingly depend on AI assistants, they inadvertently expose their software to cybercriminals from the outset. This threat involves exploiting AI-generated code errors to insert malicious packages into software supply chains. The impact is significant, potentially affecting any organization utilizing AI-driven development tools. Developers must be vigilant in code review processes and implement stringent security protocols to mitigate this risk. Understanding and addressing slopsquatting is crucial for maintaining software integrity in AI-enhanced environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 11 2026",
-            "headline": "OpenAI Targets Families with New ChatGPT Features",
-            "title": "OpenAI Expands ChatGPT to Cater to Families and Older Adults",
-            "content": "OpenAI is expanding its ChatGPT offerings to include features tailored for families, caregivers, and older adults. The company is hiring a dedicated product manager to lead this initiative, aiming to integrate AI more deeply into household dynamics. This move reflects a growing trend of AI technologies becoming integral to everyday life, beyond traditional business applications. By focusing on these demographics, OpenAI seeks to enhance user engagement and accessibility, potentially broadening its market reach. Stakeholders should monitor these developments as they may influence AI adoption patterns in domestic settings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/11/openai-bets-on-families-as-chatgpt-goes-deeper-into-households/",
             "relatedResources": []
         }
     ],
@@ -341,6 +395,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2008-4128",
+            "dateAdded": "Jul 13, 2026",
+            "vendor": "Cisco IOS",
+            "description": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, a",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-56291",
             "dateAdded": "Jul 10, 2026",
             "vendor": "Balbooa Forms",
@@ -360,50 +425,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48908",
-            "dateAdded": "Jul 07, 2026",
-            "vendor": "JoomShaper SP Page Builder",
-            "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48908",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-55255",
-            "dateAdded": "Jul 07, 2026",
-            "vendor": "Langflow Langflow",
-            "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-55255",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-56290",
-            "dateAdded": "Jul 07, 2026",
-            "vendor": "Joomlack Page Builder",
-            "description": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56290",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48282",
-            "dateAdded": "Jul 07, 2026",
-            "vendor": "Adobe ColdFusion",
-            "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48282",
             "isZeroDay": false
         }
     ],
