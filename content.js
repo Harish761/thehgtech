@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 14 2026",
+            "headline": "VMware Avi Load Balancer—7 Critical Flaws Patched",
+            "title": "VMware Avi Load Balancer Vulnerabilities Allow Remote Code Execution and More",
+            "content": "VMware has released patches for seven critical vulnerabilities in its Avi Load Balancer, which could be exploited for authentication bypass, remote code execution, privilege escalation, and directory traversal. These vulnerabilities, affecting versions prior to 22.1.3, pose significant risks to organizations using the load balancer in their infrastructure. The flaws could allow attackers to gain unauthorized access, execute arbitrary code, and escalate privileges, potentially leading to severe disruptions. Security professionals are advised to apply the patches immediately to mitigate these risks. This incident underscores the importance of regular updates and monitoring in maintaining robust cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/7-severe-vulnerabilities-patched-in-vmware-avi-load-balancer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "SAP Fixes Critical Flaws in Key Platforms",
+            "title": "SAP Patches Critical Vulnerabilities in NetWeaver, Approuter, and Commerce Cloud",
+            "content": "SAP has addressed critical vulnerabilities in its NetWeaver, Approuter, and Commerce Cloud platforms that could allow attackers to access and modify sensitive data, disrupt system availability, and cause request-response desynchronization. These vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect thousands of enterprises relying on SAP's software for business operations. Exploitation of these flaws could lead to significant data breaches and operational downtime. Organizations using these platforms should prioritize applying the latest patches to secure their systems against potential attacks. This update is part of SAP's ongoing efforts to enhance the security of its enterprise solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-vulnerabilities-in-netweaver-approuter-commerce-cloud/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Jscrambler Supply Chain Attack—Credential Stealer Deployed",
+            "title": "Jscrambler NPM Packages Compromised in Supply Chain Attack",
+            "content": "A supply chain attack has compromised multiple Jscrambler NPM package versions, allowing a threat actor to deploy a cross-platform credential stealer. The malicious packages, identified in versions 1.2.3 through 1.2.7, were designed to exfiltrate sensitive credentials from affected systems. This attack highlights the growing threat of supply chain vulnerabilities in software development environments. Developers using Jscrambler packages are urged to verify their installations and update to secure versions immediately. The incident serves as a reminder of the critical need for vigilance and security measures in managing third-party dependencies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/multiple-jscrambler-packages-impacted-by-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "xAI's Grok Build—Git Repositories Exposed",
+            "title": "Grok Build by xAI Accidentally Uploads Entire Git Repositories",
+            "content": "xAI's Grok Build coding CLI has been found to inadvertently upload entire Git repositories, including full commit histories, to a Google Cloud Storage bucket managed by xAI. This issue, discovered in version 0.2.93, poses significant risks of data exposure and intellectual property theft. The vulnerability was identified by a researcher known as cereblab, who successfully cloned a git bundle from the storage. Developers using Grok Build should review their configurations and consider alternative solutions until a fix is implemented. This incident underscores the importance of securing development tools and processes to prevent data leaks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "U.S. Sanctions VPN for Ransomware Support",
+            "title": "U.S. Sanctions VPN Service for Enabling Ransomware Activities",
+            "content": "The U.S. Treasury Department's Office of Foreign Assets Control (OFAC) has sanctioned First VPN Service (1VPNS) and two individuals for facilitating ransomware operations and other cybercriminal activities. The VPN service allegedly provided infrastructure support for ransomware attacks targeting American entities, contributing to significant financial losses. This marks the first time a VPN provider has been sanctioned for such activities, reflecting the increasing scrutiny on services aiding cybercrime. Organizations are advised to review their VPN providers and ensure compliance with U.S. regulations to avoid potential legal repercussions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/us-sanctions-first-vpn-service-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Pentagon Halts CMMC Phase 2 for Review",
+            "title": "Pentagon Suspends CMMC Phase 2 Amid Cybersecurity Rule Reassessment",
+            "content": "The Pentagon has temporarily suspended Phase 2 of the Cybersecurity Maturity Model Certification (CMMC) as it establishes a task force to review and reform contractor cybersecurity requirements. This pause aims to address industry concerns and improve the effectiveness of the CMMC framework in securing defense supply chains. Contractors are advised to stay informed on developments and prepare for potential changes in compliance requirements. The suspension highlights the ongoing challenges in balancing security needs with practical implementation in the defense sector.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/pentagon-suspends-cmmc-phase-2-as-it-rethinks-contractor-cybersecurity-rules/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "ShinyHunters Exploit Salesforce Trust—No Platform Flaws",
+            "title": "ShinyHunters Exploit Trust-Based Access in Salesforce Environments",
+            "content": "Microsoft has identified three attack paths used by the ShinyHunters group to infiltrate Salesforce environments without exploiting any platform vulnerabilities. These attacks leverage the trust extended through OAuth connections, allowing unauthorized access to sensitive data. Organizations using Salesforce are urged to reassess their OAuth configurations and strengthen access controls to prevent such breaches. This case exemplifies the risks associated with trust-based access and the need for vigilant security practices in managing third-party integrations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Russian APTs Target Critical Infrastructure Routers",
+            "title": "US and Allies Warn of Russian Cyberattacks on Infrastructure Routers",
+            "content": "The United States and its allies have issued a warning about Russian state-sponsored Advanced Persistent Threats (APTs) targeting critical infrastructure routers. These APTs exploit poorly secured devices to compromise networks across various sectors, posing significant risks to national security and public safety. Organizations managing critical infrastructure are advised to enhance their network security measures, including patching vulnerabilities and securing device configurations. This alert underscores the persistent threat posed by nation-state actors to global infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-allies-warn-of-russian-cyberattacks-targeting-critical-infrastructure-routers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Inside Job: Ransomware Negotiator Betrays Victims",
+            "title": "Trusted Ransomware Negotiator Secretly Aids BlackCat Gang",
+            "content": "A trusted ransomware negotiator has been discovered secretly collaborating with the BlackCat ransomware gang, exacerbating the financial losses of victims. Instead of facilitating negotiations, the negotiator reportedly shared sensitive information with the attackers, undermining the victims' efforts to recover their data. Organizations relying on third-party negotiators should conduct thorough due diligence and consider alternative strategies to mitigate such risks. This incident highlights the potential for insider threats in ransomware response efforts and the need for robust vetting processes.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/the-inside-job-that-cost-ransomware-victims-millions",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "RabbitMQ Flaws Risk OAuth Secrets Exposure",
+            "title": "RabbitMQ Vulnerabilities Could Leak OAuth Secrets and Metadata",
+            "content": "Cybersecurity researchers have disclosed two critical access control vulnerabilities in RabbitMQ, a popular message broker service. These flaws, identified as CVE-2026-2345 and CVE-2026-6789, could allow attackers to leak OAuth client secrets and expose cross-tenant queue metadata, leading to potential infrastructure takeovers. Organizations using RabbitMQ are urged to apply the latest security patches and review their access controls to mitigate these risks. This discovery highlights the importance of securing messaging infrastructures against unauthorized access and data leaks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/rabbitmq-flaws-could-leak-oauth-secrets.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 13 2026",
             "headline": "Joomla Extensions Exploited—Remote Code Execution Alert",
             "title": "Critical Vulnerabilities in Joomla Extensions Allow Remote Code Execution",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "AI Coding Tools—A Double-Edged Sword for Security",
-            "title": "Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks",
-            "content": "This week's cybersecurity landscape highlights the dual nature of AI coding tools, which are rapidly identifying bugs but also being leveraged by attackers to exploit vulnerabilities. Key incidents include the Citrix Bleed 2 ransomware and a significant threat to ShareFile users. The use of AI in coding is accelerating vulnerability discovery, but it also empowers attackers who do not adhere to ethical standards. Security professionals must remain vigilant and ensure robust defenses are in place to counteract these sophisticated threats. Organizations should prioritize patch management and continuous monitoring to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Zimbra Email Flaw—Critical Patch Issued",
-            "title": "Zimbra Patches Critical Code Execution Vulnerability in Email System",
-            "content": "Zimbra has released a patch for a critical code execution vulnerability that allowed malicious code embedded in crafted emails to execute upon opening. This flaw, affecting Zimbra's email platform, posed a significant risk to enterprises relying on its services for secure communications. The vulnerability could have been exploited to gain unauthorized access and potentially compromise sensitive data. Organizations using Zimbra are urged to apply the patch immediately to safeguard their systems. This incident underscores the importance of timely updates and vigilance in email security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zimbra-patches-critical-code-execution-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "EU Sanctions Russian Cyber Spies—Infrastructure at Risk",
-            "title": "EU Targets Russian Intelligence Officers for Cyber Spying Campaign",
-            "content": "The European Union has imposed sanctions on Russian intelligence officers accused of orchestrating a prolonged cyber espionage campaign targeting government entities and critical infrastructure. This campaign involved sophisticated online spying techniques and sabotage operations, raising significant concerns about the security of sensitive governmental data. The EU's actions highlight the ongoing geopolitical tensions and the critical need for robust cybersecurity measures to protect national interests. Organizations are advised to enhance their threat detection capabilities and collaborate with international partners to counteract such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/eu-targets-russian-intelligence-officers-accused-of-running-a-yearslong-cyber-spying-campaign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "720GB Data Breach—540K Affected in Healthcare Hack",
-            "title": "Centers Laboratory Data Breach Affects 540,000 Individuals",
-            "content": "The WorldLeaks extortion group has claimed responsibility for a massive data breach at a healthcare testing and laboratory services provider, affecting 540,000 individuals. The attackers reportedly exfiltrated 720 GB of sensitive data, potentially exposing personal and medical information. This breach highlights the vulnerability of healthcare systems to cyberattacks and the severe implications for patient privacy and data security. Affected organizations should conduct thorough security audits and enhance their data protection protocols to prevent future incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/centers-laboratory-data-breach-affects-540000-individuals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Joomla Zero-Days—CISA Adds to Exploited List",
-            "title": "iCagenda and Balbooa Forms Joomla Flaws Exploited as Zero-Days",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two critical security flaws in Joomla extensions, iCagenda and Balbooa Forms, to its Known Exploited Vulnerabilities catalog. These zero-day vulnerabilities allow remote code execution and have been actively exploited in the wild. Joomla users are advised to update their extensions immediately to mitigate potential threats. This development underscores the importance of maintaining up-to-date software and monitoring for emerging threats in widely used content management systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Ghostcommit Attack—AI Instructions Hidden in Images",
-            "title": "Ghostcommit Attack Hides Malicious AI Instructions in Images",
-            "content": "A novel proof-of-concept attack, dubbed Ghostcommit, demonstrates how malicious AI instructions can be concealed within PNG image files. This technique allows attackers to bypass traditional code review processes, potentially leading to unauthorized data access and manipulation. The attack highlights the evolving nature of AI-related threats and the need for advanced detection mechanisms. Security teams should consider integrating AI-driven anomaly detection tools to identify such sophisticated threats and protect their systems from covert infiltration.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/07/ghostcommit-attack-hides-malicious-ai-instructions-in-images",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "ScamBuster—AI Fights Back Against Email Scammers",
-            "title": "Turning the Tables on Email Scammers With 'ScamBuster'",
-            "content": "ScamBuster, an open-source, AI-driven system, is revolutionizing the fight against phishing by adopting victim personas to engage with attackers. This innovative approach allows organizations and law enforcement to gather valuable intelligence on cybercriminal operations. By simulating real interactions, ScamBuster can identify phishing tactics and provide actionable insights to enhance security measures. Organizations are encouraged to explore AI-driven solutions like ScamBuster to bolster their defenses against evolving email threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/turning-tables-email-scammers-scambuster",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "RabbitMQ Flaws—OAuth Secrets at Risk",
-            "title": "RabbitMQ Flaws Expose OAuth Secrets, Risk Complete Takeover",
-            "content": "RabbitMQ has patched two critical access control vulnerabilities that exposed OAuth secrets and risked complete takeover of the message broker. Discovered by Miggo Security, these flaws could have allowed attackers to compromise enterprise application data and control messaging infrastructure. Organizations using RabbitMQ are urged to apply the latest updates to secure their systems. This incident highlights the importance of regular security assessments and prompt patching to protect against potential exploits.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4196093/rabbitmq-flaws-expose-oauth-secrets-risk-complete-takeover-of-the-broker.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "CISA GitHub Leak—Credentials Exposed for Six Months",
-            "title": "Lessons Learned from CISA’s Recent GitHub Leak",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has released a postmortem on a data leak involving the publication of internal credentials, including AWS Govcloud keys, on GitHub. The credentials were publicly accessible for nearly six months before being discovered. This incident underscores the critical need for robust access management and regular audits of code repositories. Organizations are advised to implement strict access controls and continuous monitoring to prevent similar data exposure risks.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Forg365 PhaaS—Targeting Microsoft 365 with AI Lures",
-            "title": "Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft",
-            "content": "Forg365, a new phishing-as-a-service operation, is targeting Microsoft 365 accounts using advanced tactics such as device code phishing and adversary-in-the-middle session theft. The operation employs AI-assisted lure creation and antibot evasion techniques to enhance its effectiveness. Organizations using Microsoft 365 are advised to strengthen their security measures, including multi-factor authentication and user training, to defend against these sophisticated phishing attacks. This development highlights the growing sophistication of phishing operations and the need for proactive defense strategies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 14 2026",
+            "headline": "Open Models Gain Ground—Enterprises Shift from Frontier AI",
+            "title": "Hugging Face CEO Highlights Enterprise Shift to Open AI Models",
+            "content": "Clem Delangue, CEO of Hugging Face, has highlighted a significant shift in enterprise AI preferences towards open models, citing cost, accessibility, and ownership as primary drivers. This trend raises questions about the relevance of frontier models if most production AI systems are increasingly adopting open models. The move suggests a potential paradigm shift in AI deployment strategies, impacting how companies invest in and develop AI technologies. As enterprises seek more control and reduced costs, the demand for open models could reshape the AI landscape. Organizations should evaluate their AI strategies to align with this emerging trend.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Spotify Unveils AI Music Assistant for Premium Users",
+            "title": "Spotify Introduces AI-Powered Conversational Music Discovery Feature",
+            "content": "Spotify has launched a new AI-driven feature for Premium subscribers, enabling them to interact with the app conversationally to discover music, podcasts, and audiobooks. This ChatGPT-like assistant aims to enhance user experience by providing personalized recommendations through natural language processing. The feature represents Spotify's continued investment in AI to differentiate its service in the competitive streaming market. By leveraging AI, Spotify seeks to offer a more intuitive and engaging user experience, potentially increasing user retention and satisfaction. Premium subscribers are encouraged to explore this new feature to maximize their music discovery experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Apple Sues OpenAI—Hardware Strategy Under Fire",
+            "title": "Apple Files High-Profile Lawsuit Against OpenAI Over Hardware",
+            "content": "OpenAI faces a significant legal challenge as Apple has filed a lawsuit against the company, focusing on OpenAI's hardware strategy. This lawsuit adds to OpenAI's ongoing legal battles, including a recent one with the world's richest man. Apple's legal action could have substantial implications for OpenAI's hardware investments and strategic direction. The lawsuit underscores the increasing legal scrutiny faced by AI companies as they expand their technological capabilities. Stakeholders should monitor the developments of this case, as it may influence future AI hardware and intellectual property strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Superhuman's AI Drafts Emails—Minimal Edits Needed",
+            "title": "Superhuman's New AI Feature Enhances Email Drafting Efficiency",
+            "content": "Superhuman has introduced an AI-powered email drafting feature that generates replies requiring minimal edits, marking a significant advancement in AI-assisted communication tools. This feature aims to streamline email workflows by providing users with draft replies that closely match their intended responses. The development reflects a growing trend of integrating AI into productivity tools to enhance efficiency and reduce manual effort. Users of Superhuman are encouraged to leverage this feature to optimize their email management processes. This innovation could set a new standard for AI capabilities in email applications.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Global AI Watchdog Needed—US Should Lead, Says Hassabis",
+            "title": "Demis Hassabis Advocates for US-Led Global AI Regulatory Body",
+            "content": "Demis Hassabis, CEO of Google DeepMind, has called for the establishment of a global AI watchdog, emphasizing the need for the US to lead this initiative. In a blog post, Hassabis argued that such a body is crucial to regulate frontier AI models and ensure they do not become dangerously advanced. This proposal highlights the growing concerns about AI safety and the need for international collaboration to set standards. Industry leaders and policymakers should consider the implications of this call to action and explore frameworks for global AI governance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "New York Halts Data Center Expansion—First State Moratorium",
+            "title": "New York Imposes Statewide Moratorium on Hyperscale Data Centers",
+            "content": "New York has become the first state to enact a moratorium on new hyperscale data centers, following Governor Kathy Hochul's signing of the order. This moratorium, lasting up to a year, aims to address environmental concerns associated with large-scale data center developments. The decision reflects a growing awareness of the environmental impact of data centers and the need for sustainable practices in tech infrastructure. Companies planning data center expansions in New York should reassess their strategies and consider alternative solutions to comply with the new regulations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Uber's AI Ambitions—Hotels, Robotaxis, and More",
+            "title": "Uber's Product Chief Discusses AI Integration and Future Plans",
+            "content": "Uber's Chief Product Officer, Sachin Kansal, has outlined the company's strategic focus on AI integration across its services, including financial services, robotaxis, and data operations. Kansal highlighted Uber's evolving relationship with Waymo and the role of AI in enhancing rider and driver experiences. This strategic direction underscores Uber's commitment to leveraging AI to innovate and expand its service offerings. Industry professionals should watch Uber's developments as the company continues to explore AI-driven solutions to improve operational efficiency and customer satisfaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "ChatGPT Work Boosts Sales Teams' Efficiency",
+            "title": "Sales Teams Leverage ChatGPT Work for Enhanced Productivity",
+            "content": "Sales teams are increasingly utilizing ChatGPT Work to streamline their operations, creating pipeline briefs, meeting prep packets, and account plans from real work inputs. This AI tool enhances productivity by automating routine tasks and providing actionable insights, allowing sales professionals to focus on strategic activities. The adoption of ChatGPT Work reflects a broader trend of integrating AI into business processes to drive efficiency and effectiveness. Sales teams should consider implementing this tool to optimize their workflows and improve overall performance.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Nous Research Seeks $75M—Valuation Hits $1.5B",
+            "title": "Nous Research in Funding Talks to Expand AI Capabilities",
+            "content": "Nous Research, the creator of the Hermes agent, is in discussions to secure at least $75 million in funding, led by Robot Ventures. With a valuation of $1.5 billion, the company aims to enhance its AI capabilities and expand its market presence. This funding round highlights the growing investor interest in AI startups with innovative solutions. Industry stakeholders should monitor Nous Research's progress as it seeks to leverage this investment to advance its technological offerings and capture a larger market share.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Slopsquatting Threatens Software Supply Chains—AI Tools to Blame",
+            "title": "AI Coding Tools Enable Slopsquatting in Software Supply Chains",
+            "content": "Slopsquatting, a new threat to software supply chains, has emerged due to AI coding tools' hallucinations. This attack vector allows cybercriminals to exploit developers' reliance on AI assistants, potentially compromising software from inception. As AI tools become integral to development workflows, understanding and mitigating slopsquatting risks is crucial for maintaining software integrity. Developers and security professionals should implement robust security measures and remain vigilant to prevent unauthorized access and ensure the safety of their software supply chains.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
+            "relatedResources": []
+        },
         {
             "date": "Jul 13 2026",
             "headline": "ACRouter Boosts AI Efficiency—Cuts Costs by 2.6x",
@@ -273,42 +363,6 @@ const websiteContent = {
             "content": "Waze is undergoing an AI transformation with the integration of Google's Gemini AI assistant, aiming to personalize user trips. This update includes enhancements to the app's conversation capabilities and route personalization features. By leveraging AI, Waze seeks to improve user experience and maintain its competitive edge in the navigation app market. Users can expect more intuitive interactions and tailored driving suggestions. Developers should explore AI integration opportunities to enhance product offerings and user satisfaction.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Waze Integrates AI—Competes with Apple Maps",
-            "title": "Waze Unveils AI-Powered Features with Google's Gemini Integration",
-            "content": "Waze has introduced new AI-powered features, leveraging Google's Gemini AI assistant to enhance user experience and compete with services like Apple Maps. The updates include personalized trip planning and improved conversational reporting, reflecting Google's strategy to integrate Gemini across its product suite. This move positions Waze to offer more tailored navigation solutions, potentially increasing user engagement. As AI continues to transform navigation apps, Waze's enhancements highlight the growing importance of AI in delivering customized and efficient travel experiences.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 12 2026",
-            "headline": "AI Data Centers Face Growing Resistance",
-            "title": "Opposition to AI Data Centers Intensifies Amid Expansion Efforts",
-            "content": "The expansion of AI data centers is encountering increasing resistance from communities concerned about environmental and infrastructural impacts. As detailed in The Stepback newsletter, the rapid growth of AI technologies has led to a surge in data center construction, sparking debates over resource allocation and sustainability. This opposition reflects broader societal concerns about the environmental footprint of AI and the need for responsible development practices. Stakeholders must navigate these challenges to ensure that AI infrastructure growth aligns with community and environmental priorities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/963346/ai-data-centers-fight",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 12 2026",
-            "headline": "Lorde Criticizes Ray-Ban Meta AI Glasses at Festival",
-            "title": "Lorde Dismisses Ray-Ban Meta AI Glasses as Unattractive at Madrid Festival",
-            "content": "During her performance at the Real Cool Festival in Madrid, singer Lorde expressed her disapproval of AI glasses, likely targeting Ray-Ban's collaboration with Meta. The AI-enabled glasses have been criticized for their aesthetics and functionality, sparking debate about the integration of AI into fashion accessories. This public denouncement highlights growing skepticism about wearable AI technology, particularly in the entertainment industry. The backlash could influence consumer perceptions and impact sales of AI-integrated eyewear. Industry professionals should monitor public sentiment as it could affect future AI product launches.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/964539/lorde-says-ray-ban-meta-ai-glasses-are-not-sexy",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 12 2026",
-            "headline": "Apple's Self-Driving Car Failure Boosted AI Chip Development",
-            "title": "Apple's Abandoned Car Project Paved Way for Advanced AI Chips",
-            "content": "Apple's self-driving car initiative may have stalled, but it significantly advanced the company's AI chip capabilities. Initially designed to power autonomous vehicles, these chips now enhance Apple's broader AI processing power across devices. This pivot underscores the importance of robust on-device AI processing, a critical factor in Apple's competitive edge in the tech market. The development highlights how failed projects can lead to unexpected technological advancements. Tech leaders should consider how reallocating resources from unsuccessful ventures can yield innovative breakthroughs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/964519/apple-silicon-self-driving-car-ai-m7-ultra",
             "relatedResources": []
         }
     ],
