@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1583",
+      "incident_id": 1583,
+      "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
+      "date": "2026-07-14",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1584",
+      "incident_id": 1584,
+      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
+      "date": "2026-07-14",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1585",
+      "incident_id": 1585,
+      "title": "Discord's Automated Moderation System Reportedly Wrongfully Banned More Than 8,000 Users Over Benign",
+      "date": "2026-07-14",
+      "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-701",
       "incident_id": 701,
       "title": "American Asylum Seeker John Mark Dougan in Russia Reportedly Spreads Disinformation via AI Tools and",
@@ -2650,9 +2674,9 @@
     }
   ],
   "stats": {
-    "total": 331,
-    "last7Days": 17,
-    "last30Days": 113
+    "total": 334,
+    "last7Days": 18,
+    "last30Days": 116
   },
-  "lastUpdated": "2026-07-14T22:54:52.744779+05:30"
+  "lastUpdated": "2026-07-15T01:21:53.385965+05:30"
 }
