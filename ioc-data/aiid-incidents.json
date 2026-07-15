@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1578",
+      "incident_id": 1578,
+      "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
+      "date": "2026-07-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1587",
+      "incident_id": 1587,
+      "title": "Koi Security's AI-Assisted Threat Report Allegedly Led to Blocking of MeetingTV Domains",
+      "date": "2026-07-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1583",
       "incident_id": 1583,
       "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
@@ -22,6 +38,14 @@
       "title": "Discord's Automated Moderation System Reportedly Wrongfully Banned More Than 8,000 Users Over Benign",
       "date": "2026-07-14",
       "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1586",
+      "incident_id": 1586,
+      "title": "Threat Actor Reportedly Used AI-Assisted Workflows to Compromise AWS Environment for Extortion",
+      "date": "2026-07-14",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -132,14 +156,6 @@
       "id": "AIID-1577",
       "incident_id": 1577,
       "title": "Lawyer in Amarsingh v. Frontier Airlines Sanctioned Over Court-Identified ChatGPT Citation Errors",
-      "date": "2026-07-08",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1578",
-      "incident_id": 1578,
-      "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
       "date": "2026-07-08",
       "category": "other",
       "severity": "medium"
@@ -2674,9 +2690,9 @@
     }
   ],
   "stats": {
-    "total": 334,
-    "last7Days": 18,
-    "last30Days": 116
+    "total": 336,
+    "last7Days": 20,
+    "last30Days": 118
   },
-  "lastUpdated": "2026-07-15T02:40:05.970341+05:30"
+  "lastUpdated": "2026-07-15T08:54:41.475733+05:30"
 }
