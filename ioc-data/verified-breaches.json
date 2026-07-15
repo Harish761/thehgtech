@@ -7054,6 +7054,25 @@
       "Description": "In October 2018, the bullion education and dealer services site <a href=\"https://goldsilver.com/\" target=\"_blank\" rel=\"noopener\">GoldSilver</a> suffered a data breach that exposed 243k unique email addresses spanning customers and mailing list subscribers. An extensive amount of personal information on customers was obtained including names, addresses, phone numbers, purchases and passwords and answers to security questions stored as MD5 hashes. In a small number of cases, passport, social security numbers and partial credit card data was also exposed. The data breach and source code belonging to GoldSilver was publicly posted on a dark web service where it remained months later. When notified about the incident, GoldSilver advised that \"all affected customers have been directly notified\"."
     }
   ],
+  "goosecreek.com": [
+    {
+      "Name": "GooseCreek",
+      "Title": "Goose Creek",
+      "BreachDate": "2026-06-09",
+      "AddedDate": "2026-07-15T05:03:14Z",
+      "PwnCount": 6574121,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Purchases"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://www.reddit.com/r/goosecreekcandles/comments/1u1dulr/data_breach_email/\" target=\"_blank\" rel=\"noopener\">a party claiming to have access to data from Goose Creek Candle Company sent emails to a number of the company's customers</a>, claiming the company had a security vulnerability and suffered a data breach. The data was subsequently sent to Have I Been Pwned and contained 6.6M unique email addresses along with names, phone numbers, physical addresses, order IDs and total spent. The data appears to have been obtained from the company's Shopify instance. Goose Creek is aware of the reports but was unable to provide Have I Been Pwned with any further information at the time of publication."
+    }
+  ],
   "gpotato.com": [
     {
       "Name": "gPotato",
