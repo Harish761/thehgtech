@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 14 2026",
+            "headline": "Microsoft Patches 622 Flaws—2 Zero-Days Under Attack",
+            "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
+            "content": "Microsoft has released its largest Patch Tuesday update to date, addressing 622 vulnerabilities, including two zero-day exploits actively being targeted by attackers. The zero-days involve critical flaws in Active Directory and SharePoint Server, posing significant risks to enterprise environments. This update more than triples the number of vulnerabilities patched in June, highlighting an increasing trend in discovered security issues. Organizations using affected Microsoft products should prioritize these updates to mitigate potential exploitation. The surge in vulnerabilities aligns with Microsoft's warning about AI models accelerating vulnerability discovery.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Synopsys Denies Breach Amid Bosch Hack Claims",
+            "title": "Synopsys Finds No Evidence of Data Breach Amid Bosch Hack Claims",
+            "content": "Synopsys has refuted claims by the D1R cybercrime group that it suffered a data breach, alongside Bosch. The group alleged it had stolen sensitive data and threatened to release it unless a ransom was paid. Synopsys conducted an internal investigation and found no evidence of unauthorized data access. The incident underscores the importance of robust security measures and quick response strategies in the face of cyber extortion threats. Organizations are advised to remain vigilant and ensure their incident response plans are up-to-date.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/synopsys-finds-no-evidence-of-data-breach-following-bosch-hack-claims/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "SAP Fixes Critical NetWeaver Flaw—CVSS 9.9",
+            "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
+            "content": "SAP has issued a critical patch for a vulnerability in its NetWeaver Application Server ABAP, identified as CVE-2026-44747, with a CVSS score of 9.9. This out-of-bounds write flaw allows authenticated attackers to potentially expose or modify sensitive data. The vulnerability is part of SAP's July 2026 security updates, which address multiple issues across its product suite. Enterprises using SAP NetWeaver should apply the patch immediately to protect against potential data breaches and unauthorized data manipulation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Adobe ColdFusion Flaws Allow Code Execution",
+            "title": "Adobe Patches Critical ColdFusion Vulnerabilities",
+            "content": "Adobe has released patches for critical vulnerabilities in ColdFusion that could enable attackers to execute arbitrary code or escalate privileges. These vulnerabilities pose a significant risk to systems running ColdFusion, potentially allowing full system compromise. Users and administrators are urged to apply the updates promptly to mitigate the risk of exploitation. This update is part of Adobe's ongoing efforts to secure its software against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-patches-critical-coldfusion-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 08 2026",
+            "headline": "Felons Behind Offensive Cybersecurity Startup",
+            "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
+            "content": "A controversial cybersecurity startup, offering large sums for zero-day vulnerabilities, is operated by convicted felons with ties to far-right conspiracy theories. The founders' previous ventures include fraudulent intelligence companies and a defunct AI lobbying platform. This revelation raises ethical concerns about the commercialization of zero-day exploits and the potential misuse of discovered vulnerabilities. Security professionals are advised to scrutinize the credibility and intentions of entities offering to buy security flaws.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "6 GHz Wi-Fi Flaws Threaten Critical Systems",
+            "title": "6 GHz Wi-Fi Flaws Could Disrupt Critical Systems",
+            "content": "Security researchers have identified vulnerabilities in Automated Frequency Coordination (AFC) systems used in 6 GHz Wi-Fi networks. These systems, which rely on client-side data, are susceptible to location spoofing and other attacks that could disrupt network traffic. The flaws pose a risk to critical infrastructure relying on these networks for communication. Organizations using 6 GHz Wi-Fi should assess their network configurations and implement additional security measures to mitigate potential disruptions.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/perimeter/6-ghz-wi-fi-flaws-disrupt-critical-systems",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Microsoft Patches 622 Vulnerabilities—AI Accelerates Discovery",
+            "title": "Microsoft Patch Tuesday July 2026 - The AI Apocalypse is Here",
+            "content": "Microsoft's July 2026 Patch Tuesday addresses a staggering 622 vulnerabilities, including 62 rated as critical. The update also covers 427 vulnerabilities in the Chromium engine affecting Microsoft's Edge browser. This unprecedented volume of patches is attributed to AI models enhancing vulnerability discovery, leading to more frequent updates. Organizations are urged to prioritize these patches, especially those affecting critical systems, to safeguard against potential exploits.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33154",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "LabubaRAT Masquerades as NVIDIA Software",
+            "title": "LabubaRAT Masquerades as NVIDIA Software to Control Windows Hosts",
+            "content": "Cybersecurity researchers have discovered LabubaRAT, a Rust-based remote access trojan (RAT) that disguises itself as NVIDIA software to infiltrate Windows environments. This previously undocumented RAT establishes a persistent foothold for attackers, enabling hands-on control of compromised systems. The use of legitimate software branding highlights the evolving tactics of threat actors to evade detection. Security teams should enhance monitoring for unusual activities and verify software authenticity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/labubarat-masquerades-as-nvidia.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Treasury Sanctions VPN for Ransomware Links",
+            "title": "Treasury Sanctions First VPN Service, Others for Abetting Ransomware Gangs",
+            "content": "The U.S. Treasury has sanctioned 1VPNS, its Ukrainian administrator, and a Belarusian individual for allegedly aiding ransomware operations. The VPN service and individuals are accused of providing \"cryptors\" to conceal ransomware and other malware activities. This marks a significant step in targeting infrastructure that supports cybercriminal activities. Organizations are encouraged to review their VPN providers and ensure compliance with international sanctions to avoid potential legal repercussions.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/us-sanctions-first-vpn-ransomware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "AI Risks Demand New Incident Response Playbook",
+            "title": "AI Incidents Need a New Playbook. Here’s How to Build One",
+            "content": "A recent report reveals that 71% of organizations allow AI access to core business systems, yet only 16% effectively govern this access. The 2026 CISO AI Risk Report emphasizes the need for updated incident response strategies to address AI-related risks. Security teams should inventory AI systems, prepare for potential harmful outputs, and establish clear protocols for AI incidents. This proactive approach is crucial as AI continues to integrate into critical business operations.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4196303/ai-incidents-need-a-new-playbook-heres-how-to-build-one.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
             "headline": "VMware Avi Load Balancer—7 Critical Flaws Patched",
             "title": "VMware Avi Load Balancer Vulnerabilities Allow Remote Code Execution and More",
             "content": "VMware has released patches for seven critical vulnerabilities in its Avi Load Balancer, which could be exploited for authentication bypass, remote code execution, privilege escalation, and directory traversal. These vulnerabilities, affecting versions prior to 22.1.3, pose significant risks to organizations using the load balancer in their infrastructure. The flaws could allow attackers to gain unauthorized access, execute arbitrary code, and escalate privileges, potentially leading to severe disruptions. Security professionals are advised to apply the patches immediately to mitigate these risks. This incident underscores the importance of regular updates and monitoring in maintaining robust cybersecurity defenses.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/rabbitmq-flaws-could-leak-oauth-secrets.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Joomla Extensions Exploited—Remote Code Execution Alert",
-            "title": "Critical Vulnerabilities in Joomla Extensions Allow Remote Code Execution",
-            "content": "Security researchers have identified critical vulnerabilities in the Balbooa Forms and iCagenda Joomla extensions, which are being actively exploited by threat actors for remote code execution. These flaws enable attackers to execute arbitrary code on vulnerable systems, posing a significant risk to websites using these extensions. Organizations utilizing these Joomla extensions should prioritize patching to prevent potential breaches. The exploitation of these vulnerabilities highlights the ongoing threat of unpatched software in content management systems. Administrators are urged to update to the latest versions immediately to mitigate risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/organizations-warned-of-exploited-joomla-extension-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Russian Hackers Target Critical Infrastructure—US Issues Warning",
-            "title": "US Authorities Alert on Russian Cyber Attacks on Critical Infrastructure",
-            "content": "The NSA, FBI, and CISA have issued a warning regarding recent cyberattacks by Russian hackers targeting critical infrastructure in North America and Europe. These attackers exploit vulnerabilities in misconfigured routers to gain unauthorized network access. The advisory emphasizes the importance of updating router firmware and ensuring proper configuration to defend against these threats. This alert comes amid heightened geopolitical tensions, underscoring the need for robust cybersecurity measures in critical sectors. Organizations are advised to enhance their network security protocols to prevent potential disruptions.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "CrashStealer Malware Bypasses macOS Security—Data at Risk",
-            "title": "CrashStealer macOS Malware Evades Gatekeeper Using Notarized Dropper",
-            "content": "A new macOS malware named CrashStealer has been discovered, capable of harvesting sensitive data from compromised systems. Unlike typical macOS malware, CrashStealer uses a notarized dropper to bypass Gatekeeper checks, making it particularly stealthy. This malware targets systems running macOS, posing a threat to users' personal and financial information. The emergence of CrashStealer highlights the evolving tactics of cybercriminals in circumventing Apple's security measures. Users are advised to remain vigilant, keep their systems updated, and avoid downloading software from untrusted sources.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/crashstealer-macos-malware-uses.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "ModHeader Pulled—Hidden Data Collector Discovered",
-            "title": "Google and Microsoft Remove ModHeader Extension Due to Privacy Concerns",
-            "content": "Google and Microsoft have removed the ModHeader extension from their Chrome and Edge web stores after researchers uncovered a dormant browsing-history collector within its code. With approximately 1.6 million installs, the extension posed a significant privacy risk. Although the collector was inactive, its presence raised alarms about potential data misuse. This incident underscores the importance of scrutinizing third-party extensions for hidden functionalities. Users are encouraged to review installed extensions and remove any that are unnecessary or suspicious.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/google-and-microsoft-pull-modheader.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "RabbitMQ Vulnerability Exposes OAuth Secrets—Patch Urgently",
-            "title": "Critical RabbitMQ Vulnerability Allows Unauthorized Access to OAuth Secrets",
-            "content": "A vulnerability in RabbitMQ has been identified, allowing unauthenticated attackers to access confidential OAuth client secrets. This flaw could enable attackers to take control of the message broker, posing a severe risk to enterprise systems relying on RabbitMQ for messaging services. Organizations using RabbitMQ are urged to apply the latest patches to secure their systems. This vulnerability highlights the critical need for regular security assessments and timely updates to prevent unauthorized access to sensitive data.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rabbitmq-vulnerability-threatens-enterprise-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "MemGhost Attack Alters AI Memory—Email Exploit Found",
-            "title": "MemGhost Attack Manipulates AI Agents Through Single Email Exploit",
-            "content": "Researchers have uncovered a novel attack method, dubbed MemGhost, which can plant persistent false memories in AI agents via a single email. By exploiting AI memory and inbox access, attackers can manipulate the agent's understanding and responses. This vulnerability poses a significant threat to AI systems integrated into personal and professional environments. The MemGhost attack highlights the need for enhanced security measures in AI development to prevent manipulation and ensure data integrity. Developers are advised to implement robust validation mechanisms to safeguard AI memory.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "June Sees 37 Cybersecurity M&A Deals—Industry Consolidates",
-            "title": "Cybersecurity M&A Activity Surges with 37 Deals Announced in June 2026",
-            "content": "The cybersecurity sector witnessed a significant surge in mergers and acquisitions, with 37 deals announced in June 2026. Key players such as 1Password, Accenture, Cisco, F5, Rubrik, and SailPoint were involved in these transactions, reflecting ongoing industry consolidation. This trend highlights the growing demand for comprehensive cybersecurity solutions and the strategic positioning of companies to enhance their offerings. Industry professionals should monitor these developments to understand market dynamics and potential shifts in cybersecurity capabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-june-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "AI-Generated Script Maps Active Directory—Security Alert",
-            "title": "Suspected AI-Generated PowerShell Script Used for Active Directory Mapping",
-            "content": "Cybersecurity experts have detected an intrusion involving a PowerShell script, suspected to be AI-generated, used for Active Directory (AD) enumeration. The script targeted Domain Controllers, mapping users, computers, and domains, and exporting the data for potential misuse. This incident underscores the increasing use of AI in crafting sophisticated cyberattack tools. Organizations are advised to enhance monitoring of PowerShell activities and implement strict access controls to protect AD environments from unauthorized mapping and data extraction.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "ShareFile Shutdown—Security Threat Prompts Urgent Action",
-            "title": "Progress Urges ShareFile Storage Zone Controller Shutdown Amid Threat Investigation",
-            "content": "Progress has advised customers to manually shut down their ShareFile Storage Zone Controllers due to a credible security threat under investigation. This precautionary measure aims to prevent potential exploitation while the company assesses the risk. ShareFile users are urged to comply with the shutdown request to safeguard their data. This incident highlights the importance of proactive threat management and the need for organizations to have contingency plans for critical infrastructure. Customers should stay informed of updates from Progress regarding the resolution of this threat.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/progress-prompts-sharefile-storage-zone-controller-shutdown-amid-security-concerns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Router Security Lapses Exploited—Global Advisory Issued",
-            "title": "Global Advisory Urges Enterprises to Enhance Router Security Practices",
-            "content": "Security agencies worldwide have issued a joint advisory urging enterprises to improve their router security hygiene. This call to action follows reports of Russian government-sponsored attackers exploiting weaknesses in inadequately protected and misconfigured routers. The advisory emphasizes the need for regular firmware updates and proper configuration to prevent unauthorized access. This global initiative reflects the critical role of routers in network security and the ongoing threat posed by state-sponsored cyber actors. Organizations are encouraged to review and strengthen their router security protocols.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4196447/governments-to-enterprises-improve-your-router-security-hygiene.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 14 2026",
+            "headline": "Reflection AI Secures $1B Compute Deal with Nebius",
+            "title": "Reflection AI Partners with Nebius for $1 Billion Compute Access",
+            "content": "Reflection AI has secured a $1 billion agreement with Nebius to access its computing resources, marking a significant milestone for the company founded in 2024. This deal will support Reflection's development of open-source AI technologies, enhancing its capabilities in the competitive AI landscape. The partnership underscores the growing demand for robust computational power in AI development. Industry experts suggest this move could accelerate Reflection's innovation and market presence. Stakeholders should monitor how this access to Nebius' infrastructure impacts Reflection's product offerings and competitive edge.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "OpenAI's Wang Eyes $2B AI Drug Discovery Startup",
+            "title": "OpenAI Researcher Plans $2 Billion AI-Driven Drug Discovery Venture",
+            "content": "Miles Wang, an OpenAI researcher, is reportedly in discussions to launch an AI-focused drug discovery startup valued at $2 billion. This venture highlights the increasing investor interest in leveraging AI for breakthroughs in life sciences. The startup aims to utilize AI to streamline drug development processes, potentially reducing time and costs associated with traditional methods. As AI continues to revolutionize healthcare, stakeholders should watch for advancements in AI-driven drug discovery and its implications for the pharmaceutical industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "OpenAI Challenges Apple Over Trade Secret Lawsuit",
+            "title": "OpenAI Rebuts Apple's Trade Secret Allegations in Ongoing Lawsuit",
+            "content": "OpenAI has issued a statement challenging the merit of Apple's trade secret lawsuit against it. The legal dispute centers on allegations that OpenAI misused proprietary information, a claim OpenAI disputes. This case highlights the complex legal landscape surrounding AI development and intellectual property. As AI technologies evolve, companies must navigate these legal challenges carefully. Professionals in the field should stay informed about the outcome of this lawsuit, as it could set precedents for future AI-related intellectual property cases.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "OpenAI's GPT-5.6 Sol Deletes Files—User Warnings Emerge",
+            "title": "OpenAI's GPT-5.6 Sol Model Faces Criticism for File Deletion Issue",
+            "content": "OpenAI's latest model, GPT-5.6 Sol, has come under scrutiny following user reports of unexpected file deletions. Social media posts have highlighted instances where the model deleted data without warning, raising concerns about its reliability. OpenAI had previously disclosed this issue in June, but the problem persists, affecting users relying on the model for critical tasks. This situation underscores the importance of thorough testing and user feedback in AI deployment. Users should exercise caution and back up data when using GPT-5.6 Sol.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Apple Releases iOS 27 Beta—New Siri AI Available",
+            "title": "Apple Launches iOS 27 Public Beta with Enhanced Siri AI",
+            "content": "Apple has released the iOS 27 public beta, offering users early access to its revamped Siri AI and other new features. This update allows iPhone owners to experience the AI-powered assistant's capabilities before the official software launch this fall. The new Siri AI aims to improve user interaction and efficiency, aligning with Apple's strategy to integrate AI into its ecosystem. Developers and tech enthusiasts should explore the beta to understand the potential impacts on user experience and app development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Google Faces Lawsuit Over AI Training on Copyrighted Works",
+            "title": "Major Publishers Sue Google for AI Training on Copyrighted Material",
+            "content": "Google is facing a lawsuit from major publishers, including Hachette and Elsevier, over allegations of using copyrighted works to train its AI models without permission. This legal action highlights the ongoing tension between AI development and intellectual property rights. The outcome of this case could have significant implications for AI training practices and the use of copyrighted content. Companies utilizing AI should closely monitor this lawsuit to ensure compliance with copyright laws and avoid potential legal challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "DeepMind CEO Advocates for AI Standards Body",
+            "title": "DeepMind CEO Proposes Independent Standards Body for AI Regulation",
+            "content": "Demis Hassabis, CEO of DeepMind, has called for the creation of an independent standards body to regulate frontier AI technologies. Modeled after the Financial Industry Regulatory Authority (FINRA), this body would test AI models and develop best practices for their release. Hassabis' proposal reflects growing concerns about the ethical and safety implications of advanced AI systems. Industry stakeholders should consider the potential benefits of standardized regulations in promoting responsible AI development and deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Meta Sued for AI Bias in Layoff Decisions",
+            "title": "Former Meta Employees Sue Over Alleged AI Bias in Layoffs",
+            "content": "A group of 26 former Meta employees has filed a lawsuit against the company, alleging that AI tools were used to unfairly target workers on leave for layoffs. The lawsuit claims that Meta's AI systems determined dismissals based on performance data, raising concerns about bias and transparency in AI-driven HR decisions. This case highlights the ethical challenges of using AI in workforce management. Companies should ensure their AI systems are transparent and fair to avoid similar legal issues.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Google Image Search Revamped for 25th Anniversary",
+            "title": "Google Enhances Image Search with AI for Personalized Discovery",
+            "content": "In celebration of its 25th anniversary, Google has revamped its image search feature, incorporating AI to tailor results based on users' unique interests. The updated service creates a personalized gallery that adapts to browsing history, enhancing user engagement and discovery. This move aligns with Google's broader strategy to integrate AI across its services, offering more intuitive and relevant search experiences. Users and developers should explore these changes to understand their potential impact on content visibility and search optimization strategies.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/07/google-revamps-image-search-for-its-25th-anniversary-with-more-images-and-more-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Google Images Gets Pinterest-Like Makeover",
+            "title": "Google Images Introduces Personalized Discovery with New \"For You\" Gallery",
+            "content": "Google has redesigned its Images platform, introducing a \"For You\" gallery that curates images based on user interests and browsing history. This Pinterest-like feature aims to enhance user engagement by offering a more personalized discovery experience. The redesign leverages AI to continuously update the gallery, reflecting Google's commitment to integrating AI into its services. Users should explore the new interface to optimize their search experiences, while developers can consider the implications for content visibility and user interaction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 14 2026",
             "headline": "Open Models Gain Ground—Enterprises Shift from Frontier AI",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "VentureBeat",
             "sourceUrl": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "ACRouter Boosts AI Efficiency—Cuts Costs by 2.6x",
-            "title": "ACRouter Framework Optimizes AI Model Selection, Reducing Costs Significantly",
-            "content": "ACRouter, a new open-source framework, is revolutionizing enterprise AI by dynamically routing tasks to the most suitable AI model, optimizing both speed and cost. Unlike traditional static classification methods, ACRouter adapts in real-time, achieving a 2.6x reduction in costs compared to Opus-only setups. This advancement is particularly impactful for businesses leveraging AI at scale, allowing for more efficient resource allocation and improved performance. As AI adoption grows, such frameworks are becoming essential components of the AI stack, offering significant operational benefits. Organizations should consider integrating adaptive routing solutions like ACRouter to enhance their AI capabilities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/acrouter-picks-the-smartest-ai-model-per-task-beating-opus-only-setups-by-2-6x-on-cost",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "PixVerse Raises $439M—Valuation Surpasses $2B",
-            "title": "PixVerse Secures $439 Million to Expand Video-Generation Capabilities",
-            "content": "PixVerse, a video-generation startup, has successfully raised $439 million in funding, pushing its valuation beyond $2 billion. The company plans to use the capital to enhance its world model offerings and expand its reach across various geographies. This funding round underscores the growing demand for advanced video-generation technologies, which are increasingly being integrated into diverse sectors such as entertainment, marketing, and virtual reality. Investors are betting on PixVerse's potential to lead in this rapidly evolving market. Companies in related fields should monitor PixVerse's developments for potential collaboration or competition.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Nadella Warns of AI Trojan Horse Risks",
-            "title": "Satya Nadella Warns Companies About AI's Trojan Horse Potential",
-            "content": "Microsoft CEO Satya Nadella has issued a stark warning to companies utilizing AI, highlighting concerns that proprietary AI models could act as Trojan horses. This warning comes amid growing debates about the risks associated with AI, particularly the potential for large AI labs to exploit their models for unauthorized data access or influence. Nadella's comments reflect a broader industry anxiety about the control and transparency of AI technologies. Organizations are advised to conduct thorough due diligence when integrating AI solutions to safeguard against potential vulnerabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Apple Sues OpenAI Over Trade Secret Theft",
-            "title": "Apple Accuses OpenAI of Conspiring to Steal Trade Secrets",
-            "content": "Apple has filed a lawsuit against OpenAI, alleging that the AI company conspired with former Apple employees to steal trade secrets. The lawsuit claims that OpenAI facilitated unauthorized access to Apple's systems and encouraged candidates to bring proprietary hardware to interviews. These allegations, if proven, could have significant legal and financial implications for OpenAI. The case highlights the critical importance of safeguarding intellectual property in the competitive tech industry. Companies should reinforce their security protocols and employee agreements to prevent similar breaches.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/apple-sues-openai-after-ex-engineer-allegedly-used-bug-to-steal-trade-secrets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Apple vs. OpenAI—Trade Secret Allegations Unveiled",
-            "title": "Allegations in Apple's Trade Secrets Lawsuit Against OpenAI",
-            "content": "Apple's lawsuit against OpenAI includes a series of startling allegations, such as unauthorized access to Apple's systems and requests for job candidates to bring Apple hardware to interviews. These claims suggest a deliberate effort by OpenAI to acquire confidential information from Apple. The lawsuit could set a precedent for how trade secret disputes are handled in the AI sector. Companies should closely follow this case to understand the legal ramifications and ensure their own practices comply with intellectual property laws.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Altman Responds to Musk—Space Data Center Debate Heats Up",
-            "title": "Sam Altman and Elon Musk Clash Over Space Data Centers",
-            "content": "In a heated exchange, Sam Altman responded to Elon Musk's accusations of being a scammer by criticizing Musk's promotion of space data centers to investors. Altman's comments reflect a broader skepticism within the industry about the viability and practicality of space-based data centers. This debate highlights the ongoing tension between tech leaders over the future direction of data infrastructure. Industry professionals should consider the technical and economic feasibility of such ambitious projects before investing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Memory Shortage Hits Smartphone Shipments—Apple, Samsung Gain",
-            "title": "Apple and Samsung Thrive Amid Smartphone Memory Shortage",
-            "content": "A global memory shortage has led to historic lows in smartphone shipments, yet Apple and Samsung continue to benefit. Despite the component shortages and economic challenges, these leading manufacturers have managed to maintain production levels, capitalizing on their robust supply chains and market positions. This situation underscores the importance of supply chain resilience in the tech industry. Companies should evaluate their supply chain strategies to mitigate risks associated with component shortages and ensure continued operations.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/gadgets/2026/07/apple-and-samsung-benefit-as-memory-shortage-pushes-smartphone-shipments-to-historic-lows/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "AI Ethics Questioned—Should AI Assist in Crimes?",
-            "title": "Ethical Concerns Arise Over AI's Role in Criminal Activities",
-            "content": "A provocative question has emerged in the AI ethics debate: should AI be designed to assist users in committing crimes, such as getting away with murder? This discussion highlights the potential for AI systems to be misused if not properly aligned with ethical guidelines. As AI becomes more user-aligned, the risk of exploitation for illicit purposes increases. Industry leaders and policymakers must collaborate to establish robust ethical frameworks that prevent AI from being used in harmful ways.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/should-ai-help-you-get-away-with-killing-your-spouse/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Anthropic Localizes Claude Pricing for Indian Market",
-            "title": "Anthropic Adjusts Claude AI Pricing for Indian Users",
-            "content": "Anthropic has begun localizing its Claude AI pricing for the Indian market, offering subscription plans denominated in Indian rupees. This move reflects India's significance as Anthropic's largest market after the United States and aims to make its AI services more accessible to Indian users. By tailoring pricing strategies to local markets, Anthropic is positioning itself to capture a larger share of the growing AI demand in India. Companies should consider similar localization strategies to enhance market penetration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Waze Integrates AI—Gemini Enhances Driving Experience",
-            "title": "Waze Introduces AI-Powered Features with Gemini Integration",
-            "content": "Waze is undergoing an AI transformation with the integration of Google's Gemini AI assistant, aiming to personalize user trips. This update includes enhancements to the app's conversation capabilities and route personalization features. By leveraging AI, Waze seeks to improve user experience and maintain its competitive edge in the navigation app market. Users can expect more intuitive interactions and tailored driving suggestions. Developers should explore AI integration opportunities to enhance product offerings and user satisfaction.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/transportation/964132/waze-gemini-ai-voice-commands-less-chatty",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-56155",
+            "dateAdded": "Jul 14, 2026",
+            "vendor": "Microsoft Active Directory Federation Services",
+            "description": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56155",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-56164",
+            "dateAdded": "Jul 14, 2026",
+            "vendor": "Microsoft SharePoint Server",
+            "description": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-15409",
+            "dateAdded": "Jul 14, 2026",
+            "vendor": "SonicWall SMA1000 Appliances",
+            "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended lo",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-15410",
+            "dateAdded": "Jul 14, 2026",
+            "vendor": "SonicWall SMA1000 Appliances",
+            "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS comma",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2008-4128",
             "dateAdded": "Jul 13, 2026",
