@@ -6188,6 +6188,26 @@
       "Description": "In March 2018, the Florida Virtual School (FLVS) <a href=\"https://www.flvs.net/notices?source=homepage\" target=\"_blank\" rel=\"noopener\">posted a data breach notification to their website</a>. The school had identified a data breach which had occurred sometime between 6 May 2016 and 12 Feb 2018 and an XML file containing 368k student records was subsequently found circulating. Each record contained student name, date of birth, password, grade, email <em>and</em> parent email resulting in a total of 543k unique email addresses. Due to the prevalence of email addresses belonging to individuals who are still legally children, the data breach has been flagged as \"sensitive\"."
     }
   ],
+  "fluke.com": [
+    {
+      "Name": "Fluke",
+      "Title": "Fluke",
+      "BreachDate": "2026-07-01",
+      "AddedDate": "2026-07-15T08:01:04Z",
+      "PwnCount": 821100,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Physical addresses",
+        "Support tickets"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2026, electronic test and measurement equipment company <a href=\"https://breachnews.com/breaches/shinyhunters-adds-ingram-content-group-and-fluke-corporation-to-leak-site/\" target=\"_blank\" rel=\"noopener\">Fluke was targeted in a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published more than 100GB of data allegedly taken from the company. The corpus contained largely corporate contact information, including over 800k unique email addresses, names, phone numbers and physical addresses. A large collection of support cases was also present."
+    }
+  ],
   "fntech.com": [
     {
       "Name": "RobloxDeveloperConference2024",
