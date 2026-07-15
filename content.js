@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 15 2026",
+            "headline": "CISA Demands Urgent Patching of SharePoint Zero-Days",
+            "title": "CISA Urges Immediate Patching of Exploited SharePoint Vulnerabilities",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent call to patch three actively exploited vulnerabilities in Microsoft SharePoint, two of which are zero-day vulnerabilities. These vulnerabilities pose significant risks as they allow attackers to execute arbitrary code remotely. Organizations using SharePoint are advised to apply the latest security updates immediately to mitigate potential threats. This advisory highlights the ongoing trend of attackers targeting widely used enterprise collaboration tools. Failure to patch these vulnerabilities could result in unauthorized access and data breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-sharepoint-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Firefox, Chrome, Adobe, VMware Fix Critical Flaws",
+            "title": "Firefox, Chrome, Adobe, and VMware Updates Fix Multiple Critical Security Flaws",
+            "content": "Mozilla, Google, Adobe, and VMware have released critical updates addressing multiple security vulnerabilities across their platforms. Notably, Firefox has patched two critical flaws, CVE-2026-15718 and CVE-2026-15719, which could be exploited using published exploit code. These vulnerabilities affect the WebAssembly and DOM: Navigation components, respectively. Users are urged to update their software to the latest versions to protect against potential attacks. This wave of patches underscores the importance of timely updates in maintaining cybersecurity hygiene.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Windows Zero-Day PoC Released Post-Patch Tuesday",
+            "title": "Researcher Drops New Windows Zero-Day PoC Hours After Microsoft Patch Tuesday",
+            "content": "Security researcher Chaotic Eclipse, also known as Nightmare-Eclipse, has released a proof-of-concept (PoC) exploit named LegacyHive. This exploit targets a vulnerability in the Windows User Profile Service, allowing privilege escalation through arbitrary hive loading. The timing of this release, shortly after Microsoft's Patch Tuesday, raises concerns about potential exploitation before a patch is available. Organizations using Windows are advised to monitor for updates and implement mitigations where possible. This incident highlights the ongoing challenges in securing Windows environments against zero-day threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/researcher-drops-new-windows-zero-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Fortinet, Ivanti, ServiceNow Patch Critical Vulnerabilities",
+            "title": "Vulnerabilities Patched by Fortinet, Ivanti, ServiceNow",
+            "content": "Fortinet, Ivanti, and ServiceNow have released patches for critical vulnerabilities affecting their platforms. Notably, a severe flaw in the ServiceNow AI platform could allow remote code execution by attackers. Organizations using these platforms should apply the patches immediately to prevent potential exploitation. This development is part of a broader trend of attackers targeting enterprise software to gain unauthorized access. Staying updated with the latest security patches is crucial for maintaining a secure IT environment.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/vulnerabilities-patched-by-fortinet-ivanti-servicenow/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Cursor Flaw Enables Silent Windows Code Execution",
+            "title": "Cursor Flaw Lets Malicious Cloned Repositories Trigger Windows Code Execution",
+            "content": "A vulnerability in the Cursor application on Windows allows malicious code execution without user interaction. If a file named git.exe is present in the project root, Cursor executes it automatically, posing significant risks to developers. This flaw can be exploited to access sensitive information such as SSH keys and cloud tokens. Developers using Cursor on Windows should review their repositories for suspicious files and apply necessary security measures. This incident underscores the importance of securing development environments against unauthorized code execution.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/cursor-flaw-lets-malicious-cloned.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "SonicWall Zero-Days Exploited—Admin Commands at Risk",
+            "title": "Two SonicWall SMA 1000 Zero-Days Exploited, One Could Enable Admin Commands",
+            "content": "SonicWall has alerted users to active exploitation of two zero-day vulnerabilities in its Secure Mobile Access (SMA) 1000 series appliances. The vulnerabilities, CVE-2026-15409 and CVE-2026-15410, allow remote code execution, with one enabling arbitrary command execution. Organizations using these appliances should apply available patches immediately to mitigate risks. This situation highlights the critical need for timely vulnerability management in network security devices. SonicWall's prompt response is crucial in preventing potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "White House Launches AI-Driven Cyber Vulnerability Program",
+            "title": "White House launches AI-driven vulnerability clearinghouse to speed cyber remediation",
+            "content": "The White House has announced the launch of Gold Eagle, an AI-driven initiative aimed at enhancing vulnerability management across government agencies and critical infrastructure. This program seeks to leverage artificial intelligence to identify, prioritize, and remediate software vulnerabilities more efficiently. By expanding AI's role beyond threat detection, the initiative aims to improve cybersecurity resilience and reduce the time to address vulnerabilities. Organizations involved in critical infrastructure should prepare to integrate AI-driven solutions into their cybersecurity strategies.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4197348/white-house-launches-ai-driven-vulnerability-clearinghouse-to-speed-cyber-remediation.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Microsoft Fixes 622 CVEs—3 Zero-Days in July Patch",
+            "title": "July 2026 Patch Tuesday fixes 622 Microsoft CVEs, including three zero-days",
+            "content": "Microsoft's July 2026 Patch Tuesday has set a new record by addressing 622 Common Vulnerabilities and Exposures (CVEs), including three zero-day vulnerabilities. This is a significant increase from the previous month, emphasizing the growing complexity of the threat landscape. Organizations using Microsoft products should prioritize these updates to protect against potential exploits. The record number of patches reflects Microsoft's ongoing efforts to enhance security across its platforms. Regular patching remains a critical component of cybersecurity defense strategies.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/07/july-2026-patch-tuesday-fixes-622-microsoft-cves-including-three-zero-days",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Cybersecurity Needs More Prevention, Less Cure Reliance",
+            "title": "Cybersecurity needs more prevention and less reliance on cure",
+            "content": "The cybersecurity industry is urged to shift focus from reactive measures to preventive strategies, drawing parallels with the medical field's emphasis on prevention over cure. Current trends show an over-reliance on detection-focused tools, which may not effectively mitigate threats. By prioritizing preventive measures, organizations can achieve better security outcomes and cost-effectiveness. This perspective encourages a reevaluation of cybersecurity strategies to incorporate more proactive defenses. Security professionals should consider integrating preventive solutions to enhance overall resilience.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4196818/cybersecurity-needs-more-prevention-and-less-reliance-on-cure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Windows Bind Link Attacks Evade EDR Detection",
+            "title": "Windows Bind Link Attacks Can Hide Malware From EDR Tools",
+            "content": "Researchers at Bitdefender have uncovered a technique using Windows bind links to create conflicting filesystem views, effectively hiding malware from endpoint detection and response (EDR) tools. This method allows attackers to bypass traditional security measures, posing significant risks to Windows environments. Organizations should enhance their detection capabilities and consider alternative security solutions to address this evasion technique. The discovery highlights the evolving tactics used by threat actors to circumvent security defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/windows-bind-link-attacks-can-hide-malware-from-edr-tools/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 14 2026",
             "headline": "Microsoft Patches 622 Flaws—2 Zero-Days Under Attack",
             "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
@@ -37,15 +127,6 @@ const websiteContent = {
             "content": "Adobe has released patches for critical vulnerabilities in ColdFusion that could enable attackers to execute arbitrary code or escalate privileges. These vulnerabilities pose a significant risk to systems running ColdFusion, potentially allowing full system compromise. Users and administrators are urged to apply the updates promptly to mitigate the risk of exploitation. This update is part of Adobe's ongoing efforts to secure its software against emerging threats.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/adobe-patches-critical-coldfusion-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 08 2026",
-            "headline": "Felons Behind Offensive Cybersecurity Startup",
-            "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
-            "content": "A controversial cybersecurity startup, offering large sums for zero-day vulnerabilities, is operated by convicted felons with ties to far-right conspiracy theories. The founders' previous ventures include fraudulent intelligence companies and a defunct AI lobbying platform. This revelation raises ethical concerns about the commercialization of zero-day exploits and the potential misuse of discovered vulnerabilities. Security professionals are advised to scrutinize the credibility and intentions of entities offering to buy security flaws.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/7-severe-vulnerabilities-patched-in-vmware-avi-load-balancer/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "SAP Fixes Critical Flaws in Key Platforms",
-            "title": "SAP Patches Critical Vulnerabilities in NetWeaver, Approuter, and Commerce Cloud",
-            "content": "SAP has addressed critical vulnerabilities in its NetWeaver, Approuter, and Commerce Cloud platforms that could allow attackers to access and modify sensitive data, disrupt system availability, and cause request-response desynchronization. These vulnerabilities, identified as CVE-2026-1234 and CVE-2026-5678, affect thousands of enterprises relying on SAP's software for business operations. Exploitation of these flaws could lead to significant data breaches and operational downtime. Organizations using these platforms should prioritize applying the latest patches to secure their systems against potential attacks. This update is part of SAP's ongoing efforts to enhance the security of its enterprise solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-vulnerabilities-in-netweaver-approuter-commerce-cloud/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Jscrambler Supply Chain Attack—Credential Stealer Deployed",
-            "title": "Jscrambler NPM Packages Compromised in Supply Chain Attack",
-            "content": "A supply chain attack has compromised multiple Jscrambler NPM package versions, allowing a threat actor to deploy a cross-platform credential stealer. The malicious packages, identified in versions 1.2.3 through 1.2.7, were designed to exfiltrate sensitive credentials from affected systems. This attack highlights the growing threat of supply chain vulnerabilities in software development environments. Developers using Jscrambler packages are urged to verify their installations and update to secure versions immediately. The incident serves as a reminder of the critical need for vigilance and security measures in managing third-party dependencies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/multiple-jscrambler-packages-impacted-by-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "xAI's Grok Build—Git Repositories Exposed",
-            "title": "Grok Build by xAI Accidentally Uploads Entire Git Repositories",
-            "content": "xAI's Grok Build coding CLI has been found to inadvertently upload entire Git repositories, including full commit histories, to a Google Cloud Storage bucket managed by xAI. This issue, discovered in version 0.2.93, poses significant risks of data exposure and intellectual property theft. The vulnerability was identified by a researcher known as cereblab, who successfully cloned a git bundle from the storage. Developers using Grok Build should review their configurations and consider alternative solutions until a fix is implemented. This incident underscores the importance of securing development tools and processes to prevent data leaks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "U.S. Sanctions VPN for Ransomware Support",
-            "title": "U.S. Sanctions VPN Service for Enabling Ransomware Activities",
-            "content": "The U.S. Treasury Department's Office of Foreign Assets Control (OFAC) has sanctioned First VPN Service (1VPNS) and two individuals for facilitating ransomware operations and other cybercriminal activities. The VPN service allegedly provided infrastructure support for ransomware attacks targeting American entities, contributing to significant financial losses. This marks the first time a VPN provider has been sanctioned for such activities, reflecting the increasing scrutiny on services aiding cybercrime. Organizations are advised to review their VPN providers and ensure compliance with U.S. regulations to avoid potential legal repercussions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/us-sanctions-first-vpn-service-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Pentagon Halts CMMC Phase 2 for Review",
-            "title": "Pentagon Suspends CMMC Phase 2 Amid Cybersecurity Rule Reassessment",
-            "content": "The Pentagon has temporarily suspended Phase 2 of the Cybersecurity Maturity Model Certification (CMMC) as it establishes a task force to review and reform contractor cybersecurity requirements. This pause aims to address industry concerns and improve the effectiveness of the CMMC framework in securing defense supply chains. Contractors are advised to stay informed on developments and prepare for potential changes in compliance requirements. The suspension highlights the ongoing challenges in balancing security needs with practical implementation in the defense sector.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/pentagon-suspends-cmmc-phase-2-as-it-rethinks-contractor-cybersecurity-rules/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "ShinyHunters Exploit Salesforce Trust—No Platform Flaws",
-            "title": "ShinyHunters Exploit Trust-Based Access in Salesforce Environments",
-            "content": "Microsoft has identified three attack paths used by the ShinyHunters group to infiltrate Salesforce environments without exploiting any platform vulnerabilities. These attacks leverage the trust extended through OAuth connections, allowing unauthorized access to sensitive data. Organizations using Salesforce are urged to reassess their OAuth configurations and strengthen access controls to prevent such breaches. This case exemplifies the risks associated with trust-based access and the need for vigilant security practices in managing third-party integrations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Russian APTs Target Critical Infrastructure Routers",
-            "title": "US and Allies Warn of Russian Cyberattacks on Infrastructure Routers",
-            "content": "The United States and its allies have issued a warning about Russian state-sponsored Advanced Persistent Threats (APTs) targeting critical infrastructure routers. These APTs exploit poorly secured devices to compromise networks across various sectors, posing significant risks to national security and public safety. Organizations managing critical infrastructure are advised to enhance their network security measures, including patching vulnerabilities and securing device configurations. This alert underscores the persistent threat posed by nation-state actors to global infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-allies-warn-of-russian-cyberattacks-targeting-critical-infrastructure-routers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Inside Job: Ransomware Negotiator Betrays Victims",
-            "title": "Trusted Ransomware Negotiator Secretly Aids BlackCat Gang",
-            "content": "A trusted ransomware negotiator has been discovered secretly collaborating with the BlackCat ransomware gang, exacerbating the financial losses of victims. Instead of facilitating negotiations, the negotiator reportedly shared sensitive information with the attackers, undermining the victims' efforts to recover their data. Organizations relying on third-party negotiators should conduct thorough due diligence and consider alternative strategies to mitigate such risks. This incident highlights the potential for insider threats in ransomware response efforts and the need for robust vetting processes.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/the-inside-job-that-cost-ransomware-victims-millions",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "RabbitMQ Flaws Risk OAuth Secrets Exposure",
-            "title": "RabbitMQ Vulnerabilities Could Leak OAuth Secrets and Metadata",
-            "content": "Cybersecurity researchers have disclosed two critical access control vulnerabilities in RabbitMQ, a popular message broker service. These flaws, identified as CVE-2026-2345 and CVE-2026-6789, could allow attackers to leak OAuth client secrets and expose cross-tenant queue metadata, leading to potential infrastructure takeovers. Organizations using RabbitMQ are urged to apply the latest security patches and review their access controls to mitigate these risks. This discovery highlights the importance of securing messaging infrastructures against unauthorized access and data leaks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/rabbitmq-flaws-could-leak-oauth-secrets.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 15 2026",
+            "headline": "Anthropic Backs Ode—Aiming for Trillion-Dollar AI Implementation",
+            "title": "Anthropic and Blackstone Bet on AI Implementation with Ode Launch",
+            "content": "Anthropic, in collaboration with Blackstone, has launched Ode, a venture focused on embedding forward-deployed engineers within enterprises to accelerate AI adoption. This strategic move highlights a shift in the AI industry, emphasizing implementation over model development as the next trillion-dollar opportunity. Ode aims to integrate AI solutions directly into business operations, addressing the common bottleneck of AI deployment in enterprise environments. By placing engineers on-site, Ode seeks to streamline the customization and integration of AI technologies, potentially transforming enterprise workflows. This approach could redefine how businesses leverage AI, offering a competitive edge in a rapidly evolving market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Rime Secures $24M—Handles 100M Monthly Calls",
+            "title": "Rime Raises $24M Series A to Enhance AI-Driven Customer Call Management",
+            "content": "Rime, an AI startup specializing in managing customer calls, has raised $24 million in a Series A funding round. The company currently handles over 100 million calls monthly across various enterprises, showcasing its robust AI-driven call management capabilities. This funding will be used to enhance Rime's technology and expand its market reach, addressing the growing demand for efficient customer service solutions. As businesses increasingly rely on AI to streamline operations, Rime's platform offers a scalable solution for managing high call volumes with improved accuracy and efficiency. This development underscores the rising importance of AI in customer service.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Emergent Becomes Unicorn—$130M Series C Boosts AI Coding",
+            "title": "Indian AI Startup Emergent Achieves Unicorn Status with $130M Funding",
+            "content": "Emergent, an Indian AI coding startup, has achieved unicorn status following a successful $130 million Series C funding round. The company has reached a $120 million annualized revenue run rate and boasts over 200,000 paying customers. This milestone highlights Emergent's rapid growth and the increasing demand for AI-driven coding solutions. The funding will support further development of its platform, which aims to enhance coding efficiency through AI-powered tools. Emergent's success reflects a broader trend in the tech industry, where AI is becoming integral to software development processes, offering significant productivity gains.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "OpenAI's Screenless Speaker—A Moving ChatGPT Companion",
+            "title": "OpenAI Develops Screenless Speaker with Moving Mechanical Elements",
+            "content": "OpenAI is reportedly developing its first hardware device, a screenless speaker designed to interact with users through ChatGPT. The device features mechanical elements that can move autonomously, aiming to create a companion-like experience for users. This innovative approach seeks to provide a physical manifestation of OpenAI's AI capabilities, enhancing user interaction beyond traditional screen-based interfaces. The speaker will utilize a camera and sensors to understand its environment, offering a more immersive AI experience. This development marks OpenAI's entry into the hardware market, potentially setting new standards for AI-driven consumer devices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "SpaceXAI's Grok Tool—Codebase Uploads to Cloud Exposed",
+            "title": "SpaceXAI's Grok Tool Found Uploading User Codebases to Google Cloud",
+            "content": "SpaceXAI's Grok Build AI coding tool was discovered uploading entire user codebases to Google Cloud without explicit user consent. This issue was identified by Cereblab, prompting SpaceXAI to disable the feature. The incident raises significant privacy and security concerns, particularly for developers who rely on Grok for sensitive projects. Users are advised to review their code management practices and ensure compliance with data protection regulations. This case underscores the importance of transparency and user consent in AI tool operations, highlighting potential risks associated with cloud-based code storage.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/965600/spacexai-grok-build-repository-upload",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "New York Halts Data Center Builds—AI Industry Impacted",
+            "title": "New York Imposes One-Year Moratorium on Data Center Construction",
+            "content": "New York has enacted a one-year moratorium on data center construction, a move that could significantly impact the AI industry. This decision is part of a broader environmental initiative, reflecting growing concerns over the energy consumption and environmental footprint of large-scale data centers. The moratorium may serve as a precedent for other regions considering similar measures, potentially affecting AI development and deployment timelines. Companies relying on data centers for AI processing must explore alternative solutions to mitigate potential disruptions. This development highlights the need for sustainable practices in the tech industry.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/07/new-york-is-the-first-state-to-impose-a-data-center-moratorium/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Spotify Introduces AI Chatbot—Enhances Music Exploration",
+            "title": "Spotify Launches AI Chatbot for Interactive Music Discovery",
+            "content": "Spotify is testing a new AI feature that allows Premium subscribers to interact with a chatbot for music, audiobook, and podcast exploration. The \"Talk to Spotify\" feature is integrated into the Home and Now Playing views on the mobile app, enabling users to discover content through conversational interaction. This innovation aims to enhance user engagement and personalize the listening experience, leveraging AI to offer tailored recommendations. As AI continues to transform digital media consumption, Spotify's chatbot represents a significant step towards more interactive and intuitive user interfaces.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/965358/spotify-ai-chatbot-interface-music-audiobooks-podcasts",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Hinge Founder Raises $18M—Launches AI Dating Service Overtone",
+            "title": "Overtone: New AI-Powered Dating Service by Hinge Founder Secures $18M",
+            "content": "The founder of Hinge has raised $18 million to launch Overtone, an AI-driven dating service that emphasizes voice and audio interactions. Overtone aims to provide highly curated introductions, leveraging AI to enhance matchmaking accuracy and user experience. This service represents a shift towards more personalized and engaging dating platforms, utilizing advanced technologies to redefine how users connect. The funding will support the development and expansion of Overtone's platform, positioning it as a potential leader in the evolving online dating landscape. This initiative highlights the growing role of AI in transforming social interactions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/14/the-founder-of-hinge-raised-18m-to-build-a-new-ai-dating-service-overtone/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Google Images Revamp—AI Recommends Photos Pre-Search",
+            "title": "Google Images Introduces AI-Driven Photo Recommendations on Homepage",
+            "content": "Google is updating its Images homepage to feature AI-driven photo recommendations before users initiate a search. This change, marking the platform's 25th anniversary, aims to enhance user engagement by proactively suggesting images based on user preferences and browsing history. The new feature leverages machine learning algorithms to predict and display content of interest, streamlining the search process. As AI continues to evolve, such enhancements reflect Google's commitment to improving user experience through personalized content delivery. Users can expect a more intuitive and efficient image search experience with this update.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/965138/google-images-homepage-ai-overviews-search-nano-banana",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Vint Cerf's AI Plan—Identifying Agents on the Internet",
+            "title": "Vint Cerf Develops Standard for Identifying AI Agents Online",
+            "content": "Vint Cerf, co-creator of TCP/IP, is working on a new standard to identify AI agents on the internet. This initiative aims to address the growing challenge of distinguishing between human and AI-generated content online. By establishing a framework for AI identification, Cerf seeks to enhance transparency and accountability in digital interactions. As AI agents become more prevalent, this standard could play a crucial role in maintaining trust and integrity in online communications. The project reflects ongoing efforts to adapt internet protocols to the evolving landscape of AI technologies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 14 2026",
             "headline": "Reflection AI Secures $1B Compute Deal with Nebius",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google has redesigned its Images platform, introducing a \"For You\" gallery that curates images based on user interests and browsing history. This Pinterest-like feature aims to enhance user engagement by offering a more personalized discovery experience. The redesign leverages AI to continuously update the gallery, reflecting Google's commitment to integrating AI into its services. Users should explore the new interface to optimize their search experiences, while developers can consider the implications for content visibility and user interaction.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Open Models Gain Ground—Enterprises Shift from Frontier AI",
-            "title": "Hugging Face CEO Highlights Enterprise Shift to Open AI Models",
-            "content": "Clem Delangue, CEO of Hugging Face, has highlighted a significant shift in enterprise AI preferences towards open models, citing cost, accessibility, and ownership as primary drivers. This trend raises questions about the relevance of frontier models if most production AI systems are increasingly adopting open models. The move suggests a potential paradigm shift in AI deployment strategies, impacting how companies invest in and develop AI technologies. As enterprises seek more control and reduced costs, the demand for open models could reshape the AI landscape. Organizations should evaluate their AI strategies to align with this emerging trend.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/the-real-ai-race-may-no-longer-be-at-the-frontier-open-models-hugging-face/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Spotify Unveils AI Music Assistant for Premium Users",
-            "title": "Spotify Introduces AI-Powered Conversational Music Discovery Feature",
-            "content": "Spotify has launched a new AI-driven feature for Premium subscribers, enabling them to interact with the app conversationally to discover music, podcasts, and audiobooks. This ChatGPT-like assistant aims to enhance user experience by providing personalized recommendations through natural language processing. The feature represents Spotify's continued investment in AI to differentiate its service in the competitive streaming market. By leveraging AI, Spotify seeks to offer a more intuitive and engaging user experience, potentially increasing user retention and satisfaction. Premium subscribers are encouraged to explore this new feature to maximize their music discovery experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Apple Sues OpenAI—Hardware Strategy Under Fire",
-            "title": "Apple Files High-Profile Lawsuit Against OpenAI Over Hardware",
-            "content": "OpenAI faces a significant legal challenge as Apple has filed a lawsuit against the company, focusing on OpenAI's hardware strategy. This lawsuit adds to OpenAI's ongoing legal battles, including a recent one with the world's richest man. Apple's legal action could have substantial implications for OpenAI's hardware investments and strategic direction. The lawsuit underscores the increasing legal scrutiny faced by AI companies as they expand their technological capabilities. Stakeholders should monitor the developments of this case, as it may influence future AI hardware and intellectual property strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Superhuman's AI Drafts Emails—Minimal Edits Needed",
-            "title": "Superhuman's New AI Feature Enhances Email Drafting Efficiency",
-            "content": "Superhuman has introduced an AI-powered email drafting feature that generates replies requiring minimal edits, marking a significant advancement in AI-assisted communication tools. This feature aims to streamline email workflows by providing users with draft replies that closely match their intended responses. The development reflects a growing trend of integrating AI into productivity tools to enhance efficiency and reduce manual effort. Users of Superhuman are encouraged to leverage this feature to optimize their email management processes. This innovation could set a new standard for AI capabilities in email applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/superhumans-new-auto-draft-feature-almost-makes-me-like-ai-replies/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Global AI Watchdog Needed—US Should Lead, Says Hassabis",
-            "title": "Demis Hassabis Advocates for US-Led Global AI Regulatory Body",
-            "content": "Demis Hassabis, CEO of Google DeepMind, has called for the establishment of a global AI watchdog, emphasizing the need for the US to lead this initiative. In a blog post, Hassabis argued that such a body is crucial to regulate frontier AI models and ensure they do not become dangerously advanced. This proposal highlights the growing concerns about AI safety and the need for international collaboration to set standards. Industry leaders and policymakers should consider the implications of this call to action and explore frameworks for global AI governance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/965270/google-deepmind-demis-hassabis-global-ai-watchdog",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "New York Halts Data Center Expansion—First State Moratorium",
-            "title": "New York Imposes Statewide Moratorium on Hyperscale Data Centers",
-            "content": "New York has become the first state to enact a moratorium on new hyperscale data centers, following Governor Kathy Hochul's signing of the order. This moratorium, lasting up to a year, aims to address environmental concerns associated with large-scale data center developments. The decision reflects a growing awareness of the environmental impact of data centers and the need for sustainable practices in tech infrastructure. Companies planning data center expansions in New York should reassess their strategies and consider alternative solutions to comply with the new regulations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Uber's AI Ambitions—Hotels, Robotaxis, and More",
-            "title": "Uber's Product Chief Discusses AI Integration and Future Plans",
-            "content": "Uber's Chief Product Officer, Sachin Kansal, has outlined the company's strategic focus on AI integration across its services, including financial services, robotaxis, and data operations. Kansal highlighted Uber's evolving relationship with Waymo and the role of AI in enhancing rider and driver experiences. This strategic direction underscores Uber's commitment to leveraging AI to innovate and expand its service offerings. Industry professionals should watch Uber's developments as the company continues to explore AI-driven solutions to improve operational efficiency and customer satisfaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "ChatGPT Work Boosts Sales Teams' Efficiency",
-            "title": "Sales Teams Leverage ChatGPT Work for Enhanced Productivity",
-            "content": "Sales teams are increasingly utilizing ChatGPT Work to streamline their operations, creating pipeline briefs, meeting prep packets, and account plans from real work inputs. This AI tool enhances productivity by automating routine tasks and providing actionable insights, allowing sales professionals to focus on strategic activities. The adoption of ChatGPT Work reflects a broader trend of integrating AI into business processes to drive efficiency and effectiveness. Sales teams should consider implementing this tool to optimize their workflows and improve overall performance.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Nous Research Seeks $75M—Valuation Hits $1.5B",
-            "title": "Nous Research in Funding Talks to Expand AI Capabilities",
-            "content": "Nous Research, the creator of the Hermes agent, is in discussions to secure at least $75 million in funding, led by Robot Ventures. With a valuation of $1.5 billion, the company aims to enhance its AI capabilities and expand its market presence. This funding round highlights the growing investor interest in AI startups with innovative solutions. Industry stakeholders should monitor Nous Research's progress as it seeks to leverage this investment to advance its technological offerings and capture a larger market share.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 13 2026",
-            "headline": "Slopsquatting Threatens Software Supply Chains—AI Tools to Blame",
-            "title": "AI Coding Tools Enable Slopsquatting in Software Supply Chains",
-            "content": "Slopsquatting, a new threat to software supply chains, has emerged due to AI coding tools' hallucinations. This attack vector allows cybercriminals to exploit developers' reliance on AI assistants, potentially compromising software from inception. As AI tools become integral to development workflows, understanding and mitigating slopsquatting risks is crucial for maintaining software integrity. Developers and security professionals should implement robust security measures and remain vigilant to prevent unauthorized access and ensure the safety of their software supply chains.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools",
             "relatedResources": []
         }
     ],
