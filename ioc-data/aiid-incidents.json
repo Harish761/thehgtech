@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1588",
+      "incident_id": 1588,
+      "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
+      "date": "2026-07-15",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1583",
       "incident_id": 1583,
       "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
@@ -2690,9 +2698,9 @@
     }
   ],
   "stats": {
-    "total": 336,
-    "last7Days": 20,
-    "last30Days": 118
+    "total": 337,
+    "last7Days": 21,
+    "last30Days": 119
   },
-  "lastUpdated": "2026-07-15T08:54:41.475733+05:30"
+  "lastUpdated": "2026-07-15T11:54:27.451096+05:30"
 }
