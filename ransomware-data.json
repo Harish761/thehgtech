@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-07-15T13:43:50.241110",
+  "last_updated": "2026-07-16T02:36:16.659085",
   "period": "Last 7 days",
-  "total_groups": 32,
-  "total_victims": 285,
+  "total_groups": 31,
+  "total_victims": 286,
   "groups": [
     {
       "name": "Deadlock",
@@ -86,10 +86,10 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         65,
         0,
         1,
+        0,
         0,
         0,
         0
@@ -97,8 +97,14 @@
     },
     {
       "name": "Dragonforce",
-      "count": 46,
+      "count": 48,
       "victims": [
+        {
+          "name": "Heritage Mechanical LLC",
+          "date": "2026-07-15T13:53:20.765236+00:00",
+          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=b3dd9277-35e9-4698-8a7a-144bdf89a688",
+          "discovered_date": "2026-07-15T13:53:20.765236+00:00"
+        },
         {
           "name": "Stephens Precision",
           "date": "2026-07-15T12:53:37.660880+00:00",
@@ -152,12 +158,6 @@
           "date": "2026-07-14T12:26:08.628529+00:00",
           "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=e97e4acb-8587-423d-afa3-e4dc8fdb22dd",
           "discovered_date": "2026-07-14T12:26:08.628529+00:00"
-        },
-        {
-          "name": "Midal Cables",
-          "date": "2026-07-14T12:53:59.567923+00:00",
-          "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=1cca878f-d73a-45df-bc04-d0413369432a",
-          "discovered_date": "2026-07-14T12:53:59.567923+00:00"
         }
       ],
       "industries": [
@@ -177,18 +177,18 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         2,
         2,
         4,
         8,
         22,
-        8
+        10,
+        0
       ]
     },
     {
       "name": "Qilin",
-      "count": 44,
+      "count": 46,
       "victims": [
         {
           "name": "Feliubadaló",
@@ -201,6 +201,12 @@
           "date": "2026-07-15T05:01:35.732686+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=21fe1d79-9687-4b3e-8646-659c19380a51",
           "discovered_date": "2026-07-15T05:01:35.732686+00:00"
+        },
+        {
+          "name": "International Delights",
+          "date": "2026-07-15T19:52:20.310973+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=2a85afa5-7c66-4fe2-a552-df3f6954cb9c",
+          "discovered_date": "2026-07-15T19:52:20.310973+00:00"
         },
         {
           "name": "THL",
@@ -243,12 +249,6 @@
           "date": "2026-07-13T19:57:03.595939+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=8e67cc56-c717-453f-b94c-f1a6b99766a7",
           "discovered_date": "2026-07-13T19:57:03.595939+00:00"
-        },
-        {
-          "name": "URH Hoteliers",
-          "date": "2026-07-13T19:27:04.064230+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=184d06d6-c5b8-4ac9-82f0-b7febaf5eb0f",
-          "discovered_date": "2026-07-13T19:27:04.064230+00:00"
         }
       ],
       "industries": [
@@ -268,13 +268,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         12,
         8,
         0,
         16,
         4,
-        4
+        6,
+        0
       ]
     },
     {
@@ -354,8 +354,8 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         19,
+        0,
         0,
         0,
         0,
@@ -448,8 +448,8 @@
         0,
         0,
         0,
-        0,
         12,
+        0,
         0
       ]
     },
@@ -533,9 +533,9 @@
       "daily_counts": [
         0,
         0,
-        0,
         4,
         6,
+        0,
         0,
         0
       ]
@@ -611,8 +611,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         9,
+        0,
         0,
         0,
         0,
@@ -689,9 +689,9 @@
         0,
         0,
         0,
-        0,
         2,
-        6
+        6,
+        0
       ]
     },
     {
@@ -753,12 +753,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        1,
         0,
         2,
         2,
         0,
         2,
+        0,
         0
       ]
     },
@@ -815,13 +815,13 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         1,
         0,
         0,
         3,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -872,68 +872,6 @@
       ],
       "countries": [
         "CA",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        6,
-        0
-      ]
-    },
-    {
-      "name": "D1R",
-      "count": 6,
-      "victims": [
-        {
-          "name": "Synopsys",
-          "date": "2026-07-13T11:32:50.345956+00:00",
-          "url": "",
-          "discovered_date": "2026-07-13T11:32:50.345956+00:00"
-        },
-        {
-          "name": "Bosch",
-          "date": "2026-07-13T11:33:36.109970+00:00",
-          "url": "",
-          "discovered_date": "2026-07-13T11:33:36.109970+00:00"
-        },
-        {
-          "name": "ARM",
-          "date": "2026-07-13T11:33:13.133892+00:00",
-          "url": "",
-          "discovered_date": "2026-07-13T11:33:13.133892+00:00"
-        },
-        {
-          "name": "Bosch",
-          "date": "2026-07-13T11:33:36+00:00",
-          "url": "https://www.ransomware.live/id/Qm9zY2hARDFS",
-          "discovered_date": "2026-07-13T11:33:36+00:00"
-        },
-        {
-          "name": "ARM",
-          "date": "2026-07-13T11:33:13+00:00",
-          "url": "https://www.ransomware.live/id/QVJNQEQxUg==",
-          "discovered_date": "2026-07-13T11:33:13+00:00"
-        },
-        {
-          "name": "Synopsys",
-          "date": "2026-07-13T11:32:50+00:00",
-          "url": "https://www.ransomware.live/id/U3lub3BzeXNARDFS",
-          "discovered_date": "2026-07-13T11:32:50+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Technology"
-      ],
-      "countries": [
-        "DE",
-        "GB",
         "US"
       ],
       "trend": "stable",
@@ -1004,8 +942,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         6,
+        0,
         0,
         0,
         0
@@ -1065,10 +1003,59 @@
       "daily_counts": [
         0,
         0,
-        0,
         6,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Coinbasecartel",
+      "count": 4,
+      "victims": [
+        {
+          "name": "PanasonicAero",
+          "date": "2026-07-15T17:01:52.643821+00:00",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/panaaeroo",
+          "discovered_date": "2026-07-15T17:01:52.643821+00:00"
+        },
+        {
+          "name": "Axiom GlobalNEW",
+          "date": "2026-07-14T20:53:23.015790+00:00",
+          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/axiom",
+          "discovered_date": "2026-07-14T20:53:23.015790+00:00"
+        },
+        {
+          "name": "PanasonicAero",
+          "date": "2026-07-15T17:01:52+00:00",
+          "url": "https://www.ransomware.live/id/UGFuYXNvbmljQWVyb0Bjb2luYmFzZWNhcnRlbA==",
+          "discovered_date": "2026-07-15T17:01:52+00:00"
+        },
+        {
+          "name": "Axiom GlobalNEW",
+          "date": "2026-07-14T20:53:23+00:00",
+          "url": "https://www.ransomware.live/id/QXhpb20gR2xvYmFsTkVXQGNvaW5iYXNlY2FydGVs",
+          "discovered_date": "2026-07-14T20:53:23+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Not Found"
+      ],
+      "countries": [
+        "JP",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
         0
       ]
     },
@@ -1115,8 +1102,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0
       ]
     },
@@ -1157,8 +1144,8 @@
         0,
         0,
         0,
-        0,
         3,
+        0,
         0
       ]
     },
@@ -1198,9 +1185,9 @@
         0,
         0,
         0,
-        0,
         1,
         2,
+        0,
         0
       ]
     },
@@ -1238,10 +1225,10 @@
         0,
         0,
         0,
-        0,
         1,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1275,8 +1262,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1310,8 +1297,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1333,41 +1320,6 @@
       ],
       "industries": [
         "Energy"
-      ],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2
-      ]
-    },
-    {
-      "name": "Coinbasecartel",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Axiom GlobalNEW",
-          "date": "2026-07-14T20:53:23.015790+00:00",
-          "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/axiom",
-          "discovered_date": "2026-07-14T20:53:23.015790+00:00"
-        },
-        {
-          "name": "Axiom GlobalNEW",
-          "date": "2026-07-14T20:53:23+00:00",
-          "url": "https://www.ransomware.live/id/QXhpb20gR2xvYmFsTkVXQGNvaW5iYXNlY2FydGVs",
-          "discovered_date": "2026-07-14T20:53:23+00:00"
-        }
-      ],
-      "industries": [
-        "Not Found"
       ],
       "countries": [
         "US"
@@ -1413,9 +1365,44 @@
         0,
         0,
         0,
-        0,
         2,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Ransomhouse",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Fidelity Services Group",
+          "date": "2026-07-15T19:28:42.063845+00:00",
+          "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/044542026d63eb0acd49e9e0b2b7b6e7ab0bbce2",
+          "discovered_date": "2026-07-15T19:28:42.063845+00:00"
+        },
+        {
+          "name": "Fidelity Services Group",
+          "date": "2026-07-15T19:28:42+00:00",
+          "url": "https://www.ransomware.live/id/RmlkZWxpdHkgU2VydmljZXMgR3JvdXBAcmFuc29taG91c2U=",
+          "discovered_date": "2026-07-15T19:28:42+00:00"
+        }
+      ],
+      "industries": [
+        "Financial Services"
+      ],
+      "countries": [
+        "GB"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
         0
       ]
     },
@@ -1445,8 +1432,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1482,8 +1469,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1510,8 +1497,8 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0
       ]
     },
@@ -1533,8 +1520,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1560,8 +1547,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1587,8 +1574,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1614,8 +1601,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1637,33 +1624,6 @@
       "industries": [],
       "countries": [
         "GB"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Moneymessage",
-      "count": 1,
-      "victims": [
-        {
-          "name": "Envision Unlimited",
-          "date": "2026-07-09T17:27:17+00:00",
-          "url": "https://www.ransomware.live/id/RW52aXNpb24gVW5saW1pdGVkQG1vbmV5bWVzc2FnZQ==",
-          "discovered_date": "2026-07-09T17:27:17+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "N/A"
       ],
       "trend": "down",
       "trend_percentage": -5,
