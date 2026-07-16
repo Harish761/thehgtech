@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1588",
+      "incident_id": 1588,
+      "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
+      "date": "2026-07-16",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1578",
       "incident_id": 1578,
       "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
@@ -17,12 +25,12 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1588",
-      "incident_id": 1588,
-      "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
+      "id": "AIID-1589",
+      "incident_id": 1589,
+      "title": "Purportedly AI-Powered 007TG Platform Reportedly Used by Scam Networks Linked to $75 Million in Proc",
       "date": "2026-07-15",
       "category": "fraud",
-      "severity": "high"
+      "severity": "critical"
     },
     {
       "id": "AIID-1583",
@@ -2698,9 +2706,9 @@
     }
   ],
   "stats": {
-    "total": 337,
-    "last7Days": 18,
-    "last30Days": 119
+    "total": 338,
+    "last7Days": 19,
+    "last30Days": 120
   },
-  "lastUpdated": "2026-07-16T02:40:58.226759+05:30"
+  "lastUpdated": "2026-07-16T09:00:05.996451+05:30"
 }
