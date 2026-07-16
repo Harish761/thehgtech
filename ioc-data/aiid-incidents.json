@@ -33,6 +33,22 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1590",
+      "incident_id": 1590,
+      "title": "Purported Philip Morris-Backed AI Tool Reportedly Generated Responses Opposing Stricter EU Tobacco R",
+      "date": "2026-07-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1591",
+      "incident_id": 1591,
+      "title": "Purported AI-Generated Video Allegedly Contributed to Laredo, Texas, Teen's Death by Suicide",
+      "date": "2026-07-15",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1583",
       "incident_id": 1583,
       "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
@@ -2706,9 +2722,9 @@
     }
   ],
   "stats": {
-    "total": 338,
-    "last7Days": 19,
-    "last30Days": 120
+    "total": 340,
+    "last7Days": 21,
+    "last30Days": 122
   },
-  "lastUpdated": "2026-07-16T09:00:05.996451+05:30"
+  "lastUpdated": "2026-07-16T11:57:50.823694+05:30"
 }
