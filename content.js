@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 15 2026",
+            "headline": "ShareFile Zero-Day Fixed—Users Must Apply Patch",
+            "title": "Progress Confirms Zero-Day Vulnerability Behind ShareFile Disruption",
+            "content": "Progress has confirmed a zero-day vulnerability affecting its ShareFile service, which led to significant disruptions. The company has released a patch to address the issue, urging Storage Zones Controller customers to apply it immediately to restore access. This vulnerability highlights the ongoing challenges in securing cloud-based file-sharing services. While the specific technical details of the vulnerability remain undisclosed, the incident underscores the importance of timely patch management. Customers are advised to update their systems promptly to mitigate potential risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/progress-confirms-zero-day-vulnerability-behind-sharefile-disruption/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Chrome 150, Firefox 152 Patch Critical Flaws—Update Now",
+            "title": "Critical Vulnerabilities Patched With Fresh Chrome 150, Firefox 152 Updates",
+            "content": "Google and Mozilla have released updates for Chrome version 150 and Firefox version 152, addressing critical vulnerabilities. Notably, public exploit code targeting Firefox vulnerabilities exists, although no active exploitation has been observed. These updates are crucial for maintaining browser security, as both browsers are widely used across various platforms. Users are urged to update to the latest versions to protect against potential exploits. This development reflects the ongoing need for vigilance in browser security management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-vulnerabilities-patched-with-fresh-chrome-150-firefox-152-updates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "NPM Supply Chain Attacks Target Node.js Developers",
+            "title": "NPM Ecosystem Hit with Two New Supply Chain Compromises",
+            "content": "The NPM ecosystem has been targeted by two new supply chain attacks, affecting Node.js developers. The attacks involved the compromise of npm packages from the open-source AsyncAPI and Jscrambler Code Integrity projects, which were poisoned with malware. This incident highlights the increasing frequency and sophistication of attacks on developer ecosystems. Developers using these packages should verify their code integrity and consider implementing additional security measures. Supply chain security remains a critical concern for the software development community.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4197499/npm-ecosystem-hit-with-two-new-supply-chain-compromises.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Identity Attacks Surpass Exploits in Ransomware Incidents",
+            "title": "Identity Attacks Overtake Exploits as Top Ransomware Cause",
+            "content": "Recent analysis reveals that email-based identity attacks have surpassed traditional exploits as the leading cause of ransomware incidents. Despite the deployment of multifactor authentication (MFA) in 97% of credential-based attacks, these measures often failed to prevent compromises. This trend underscores the evolving tactics of cybercriminals who increasingly target identity credentials. Organizations are advised to enhance their email security and consider additional layers of identity protection. The shift in attack vectors highlights the need for adaptive security strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "SonicWall Zero-Days Exploited—Patch Immediately",
+            "title": "SonicWall Customers Under Threat as Attackers Exploit 2 Zero-Days",
+            "content": "SonicWall customers are at risk after attackers exploited two zero-day vulnerabilities, which were chained together for greater impact. These vulnerabilities were first exploited three weeks before SonicWall disclosed and patched them. The incident emphasizes the critical need for timely vulnerability disclosure and patching. SonicWall users should apply the available patches immediately to protect their systems. This case highlights the persistent threat posed by zero-day vulnerabilities in network security devices.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/sonicwall-zero-day-vulnerabilities-exploited/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "TuxBot v3: AI-Assisted IoT Botnet Emerges",
+            "title": "TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development",
+            "content": "Researchers have uncovered TuxBot v3 Evolution, an Internet-of-Things (IoT) botnet framework potentially developed with the assistance of a large language model (LLM). Although the AI-assisted development was not entirely successful, it marks a novel approach in botnet evolution. This discovery highlights the growing intersection of AI and cybersecurity threats. IoT device manufacturers and users should remain vigilant and ensure their devices are secured against such emerging threats. The use of AI in cybercrime presents new challenges for defenders.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "2-Click Exploit Threatens Developer Environments",
+            "title": "2-Click Cursor Exploit Enables Dev Environment Takeover",
+            "content": "A newly discovered exploit, dubbed the \"2-Click Cursor,\" leverages simple bugs to gain unauthorized access to developers' environments rich in source code. This exploit allows attackers to access sensitive developer secrets with minimal user interaction. The vulnerability underscores the importance of securing development environments against seemingly trivial bugs. Developers should review their security protocols and consider implementing additional safeguards to protect their code and credentials. This incident highlights the ongoing risks posed by overlooked vulnerabilities.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Nigeria Mandates Cyberattack Disclosure Amid Rising Threats",
+            "title": "Nigeria Deepens Cybersecurity Efforts as Cybercriminals See More Profits",
+            "content": "Nigeria has introduced new regulations requiring organizations to disclose cyberattacks, aligning with global trends towards mandated transparency. This move comes as cybercriminals increasingly target the West African nation, seeking higher profits. The regulations aim to enhance cybersecurity resilience and foster a culture of transparency among businesses. Organizations in Nigeria should prepare to comply with these disclosure requirements and strengthen their cybersecurity measures. This development reflects a broader shift towards accountability in cybersecurity practices.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/nigeria-cybersecurity-efforts-cybercriminals-profits",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "OkoBot Malware Targets Ledger, Trezor Wallets",
+            "title": "OkoBot Malware Framework Injects Seed Phrase Phishing Into Ledger and Trezor Apps",
+            "content": "The OkoBot malware framework has been identified as targeting users of Ledger and Trezor hardware wallets, aiming to steal recovery phrases. Operating since April 2025, OkoBot injects phishing requests directly into the wallet's desktop software, sometimes waiting until the device is connected. This sophisticated attack highlights the vulnerabilities in hardware wallet applications. Users are advised to verify the authenticity of software updates and remain cautious of unexpected prompts. The incident underscores the importance of securing cryptocurrency assets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/okobot-malware-framework-injects-seed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "White House Launches AI-Driven Vulnerability Initiative",
+            "title": "White House Launches AI-Driven ‘Gold Eagle’ Vulnerability Coordination Initiative",
+            "content": "The White House has unveiled the \"Gold Eagle\" initiative, an AI-driven program aimed at enhancing vulnerability coordination. This initiative follows an AI-focused Executive Order signed by President Trump, emphasizing the role of artificial intelligence in national cybersecurity efforts. The program seeks to improve the identification and management of vulnerabilities across critical infrastructure. Organizations are encouraged to engage with the initiative to bolster their cybersecurity posture. This move reflects the growing integration of AI in government-led cybersecurity strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/white-house-launches-ai-driven-gold-eagle-vulnerability-coordination-initiative/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
             "headline": "CISA Demands Urgent Patching of SharePoint Zero-Days",
             "title": "CISA Urges Immediate Patching of Exploited SharePoint Vulnerabilities",
             "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent call to patch three actively exploited vulnerabilities in Microsoft SharePoint, two of which are zero-day vulnerabilities. These vulnerabilities pose significant risks as they allow attackers to execute arbitrary code remotely. Organizations using SharePoint are advised to apply the latest security updates immediately to mitigate potential threats. This advisory highlights the ongoing trend of attackers targeting widely used enterprise collaboration tools. Failure to patch these vulnerabilities could result in unauthorized access and data breaches.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/windows-bind-link-attacks-can-hide-malware-from-edr-tools/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Microsoft Patches 622 Flaws—2 Zero-Days Under Attack",
-            "title": "Microsoft Patches Record 622 Flaws, Including Two Zero-Days Under Active Attack",
-            "content": "Microsoft has released its largest Patch Tuesday update to date, addressing 622 vulnerabilities, including two zero-day exploits actively being targeted by attackers. The zero-days involve critical flaws in Active Directory and SharePoint Server, posing significant risks to enterprise environments. This update more than triples the number of vulnerabilities patched in June, highlighting an increasing trend in discovered security issues. Organizations using affected Microsoft products should prioritize these updates to mitigate potential exploitation. The surge in vulnerabilities aligns with Microsoft's warning about AI models accelerating vulnerability discovery.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Synopsys Denies Breach Amid Bosch Hack Claims",
-            "title": "Synopsys Finds No Evidence of Data Breach Amid Bosch Hack Claims",
-            "content": "Synopsys has refuted claims by the D1R cybercrime group that it suffered a data breach, alongside Bosch. The group alleged it had stolen sensitive data and threatened to release it unless a ransom was paid. Synopsys conducted an internal investigation and found no evidence of unauthorized data access. The incident underscores the importance of robust security measures and quick response strategies in the face of cyber extortion threats. Organizations are advised to remain vigilant and ensure their incident response plans are up-to-date.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/synopsys-finds-no-evidence-of-data-breach-following-bosch-hack-claims/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "SAP Fixes Critical NetWeaver Flaw—CVSS 9.9",
-            "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
-            "content": "SAP has issued a critical patch for a vulnerability in its NetWeaver Application Server ABAP, identified as CVE-2026-44747, with a CVSS score of 9.9. This out-of-bounds write flaw allows authenticated attackers to potentially expose or modify sensitive data. The vulnerability is part of SAP's July 2026 security updates, which address multiple issues across its product suite. Enterprises using SAP NetWeaver should apply the patch immediately to protect against potential data breaches and unauthorized data manipulation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Adobe ColdFusion Flaws Allow Code Execution",
-            "title": "Adobe Patches Critical ColdFusion Vulnerabilities",
-            "content": "Adobe has released patches for critical vulnerabilities in ColdFusion that could enable attackers to execute arbitrary code or escalate privileges. These vulnerabilities pose a significant risk to systems running ColdFusion, potentially allowing full system compromise. Users and administrators are urged to apply the updates promptly to mitigate the risk of exploitation. This update is part of Adobe's ongoing efforts to secure its software against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/adobe-patches-critical-coldfusion-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "6 GHz Wi-Fi Flaws Threaten Critical Systems",
-            "title": "6 GHz Wi-Fi Flaws Could Disrupt Critical Systems",
-            "content": "Security researchers have identified vulnerabilities in Automated Frequency Coordination (AFC) systems used in 6 GHz Wi-Fi networks. These systems, which rely on client-side data, are susceptible to location spoofing and other attacks that could disrupt network traffic. The flaws pose a risk to critical infrastructure relying on these networks for communication. Organizations using 6 GHz Wi-Fi should assess their network configurations and implement additional security measures to mitigate potential disruptions.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/perimeter/6-ghz-wi-fi-flaws-disrupt-critical-systems",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Microsoft Patches 622 Vulnerabilities—AI Accelerates Discovery",
-            "title": "Microsoft Patch Tuesday July 2026 - The AI Apocalypse is Here",
-            "content": "Microsoft's July 2026 Patch Tuesday addresses a staggering 622 vulnerabilities, including 62 rated as critical. The update also covers 427 vulnerabilities in the Chromium engine affecting Microsoft's Edge browser. This unprecedented volume of patches is attributed to AI models enhancing vulnerability discovery, leading to more frequent updates. Organizations are urged to prioritize these patches, especially those affecting critical systems, to safeguard against potential exploits.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33154",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "LabubaRAT Masquerades as NVIDIA Software",
-            "title": "LabubaRAT Masquerades as NVIDIA Software to Control Windows Hosts",
-            "content": "Cybersecurity researchers have discovered LabubaRAT, a Rust-based remote access trojan (RAT) that disguises itself as NVIDIA software to infiltrate Windows environments. This previously undocumented RAT establishes a persistent foothold for attackers, enabling hands-on control of compromised systems. The use of legitimate software branding highlights the evolving tactics of threat actors to evade detection. Security teams should enhance monitoring for unusual activities and verify software authenticity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/labubarat-masquerades-as-nvidia.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Treasury Sanctions VPN for Ransomware Links",
-            "title": "Treasury Sanctions First VPN Service, Others for Abetting Ransomware Gangs",
-            "content": "The U.S. Treasury has sanctioned 1VPNS, its Ukrainian administrator, and a Belarusian individual for allegedly aiding ransomware operations. The VPN service and individuals are accused of providing \"cryptors\" to conceal ransomware and other malware activities. This marks a significant step in targeting infrastructure that supports cybercriminal activities. Organizations are encouraged to review their VPN providers and ensure compliance with international sanctions to avoid potential legal repercussions.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/us-sanctions-first-vpn-ransomware/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "AI Risks Demand New Incident Response Playbook",
-            "title": "AI Incidents Need a New Playbook. Here’s How to Build One",
-            "content": "A recent report reveals that 71% of organizations allow AI access to core business systems, yet only 16% effectively govern this access. The 2026 CISO AI Risk Report emphasizes the need for updated incident response strategies to address AI-related risks. Security teams should inventory AI systems, prepare for potential harmful outputs, and establish clear protocols for AI incidents. This proactive approach is crucial as AI continues to integrate into critical business operations.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4196303/ai-incidents-need-a-new-playbook-heres-how-to-build-one.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "VMware Avi Load Balancer—7 Critical Flaws Patched",
-            "title": "VMware Avi Load Balancer Vulnerabilities Allow Remote Code Execution and More",
-            "content": "VMware has released patches for seven critical vulnerabilities in its Avi Load Balancer, which could be exploited for authentication bypass, remote code execution, privilege escalation, and directory traversal. These vulnerabilities, affecting versions prior to 22.1.3, pose significant risks to organizations using the load balancer in their infrastructure. The flaws could allow attackers to gain unauthorized access, execute arbitrary code, and escalate privileges, potentially leading to severe disruptions. Security professionals are advised to apply the patches immediately to mitigate these risks. This incident underscores the importance of regular updates and monitoring in maintaining robust cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/7-severe-vulnerabilities-patched-in-vmware-avi-load-balancer/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 15 2026",
+            "headline": "Suno AI Scrapes YouTube—Millions of Songs Compromised",
+            "title": "Hack Reveals Suno AI's Extensive Use of YouTube Data for Training",
+            "content": "A recent hacking incident has exposed that Suno, an AI music generator, used unauthorized methods to scrape millions of songs and lyrics from platforms like YouTube Music, Deezer, and Genius. The breach occurred when a hacker accessed Suno's source code using an employee's credentials, revealing the extent of the data collection. This revelation raises significant concerns over intellectual property rights and the ethical use of training data in AI models. The music industry and content creators are particularly affected, as their work may have been used without consent. Stakeholders should review their data protection strategies and consider legal actions against unauthorized data usage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "GPT-Red Enhances AI Safety Through Self-Improvement",
+            "title": "OpenAI's GPT-Red Uses Self-Play for Enhanced AI Robustness",
+            "content": "OpenAI has introduced GPT-Red, an innovative automated red teaming system designed to enhance AI safety and alignment. By employing self-play techniques, GPT-Red improves the robustness of AI models against prompt injection attacks and other vulnerabilities. This development is crucial for organizations relying on AI systems for critical operations, as it promises to mitigate risks associated with AI deployment. The system's ability to self-improve through iterative testing sets a new standard in AI security practices. Companies should consider integrating similar self-improvement mechanisms to bolster their AI defenses.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Inkling Model Open-Sourced—A New AI Contender Emerges",
+            "title": "Thinking Machines Releases Inkling, a Multimodal Open Source AI Model",
+            "content": "Thinking Machines has open-sourced Inkling, a 975-billion-parameter multimodal language model, marking a significant milestone in AI development. Designed for low-cost deployment and resistance to censorship, Inkling allows enterprises to customize and control AI workloads on-premises or in virtual private clouds. This move positions Thinking Machines as a formidable competitor to industry giants like Anthropic and OpenAI. Businesses seeking flexible AI solutions can leverage Inkling's capabilities to enhance their operations while maintaining data sovereignty. The release underscores a growing trend towards open-source AI models that prioritize user control and adaptability.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/thinking-machines-open-sources-first-multimodal-language-model-inkling-focused-on-low-cost-and-resistance-to-censorship",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Microsoft Trains Sales Teams Against OpenAI, Anthropic",
+            "title": "Microsoft Promotes In-House AI Models Over Competitors",
+            "content": "Microsoft is reportedly training its sales teams to highlight the efficiency and cost-effectiveness of its in-house AI models compared to those of competitors like OpenAI and Anthropic. This strategic move aims to position Microsoft's AI offerings as superior in terms of performance and value. As AI adoption continues to grow, organizations are increasingly evaluating the cost-benefit ratios of different AI solutions. Microsoft's emphasis on its proprietary models reflects a competitive landscape where differentiation in AI capabilities is crucial. Companies should assess their AI needs carefully to choose the most suitable solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "xAI Sues Over Grok Misuse in CSAM Deepfakes",
+            "title": "xAI Takes Legal Action Against Grok Misuse for CSAM Deepfakes",
+            "content": "xAI, owned by Elon Musk, has filed a lawsuit against a South Carolina man for allegedly using its Grok AI chatbot to generate child sexual abuse material (CSAM) deepfakes. The lawsuit accuses Terry Wayne Harwood of intentionally circumventing Grok's safeguards to create illicit content. This case highlights the potential misuse of AI technologies and the importance of robust ethical guidelines and security measures. Organizations developing AI tools must prioritize the implementation of effective safeguards to prevent similar abuses. Legal frameworks may need to evolve to address the challenges posed by AI-generated content.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "OpenAI Launches $230 Keyboard Amid Legal Dispute",
+            "title": "OpenAI Introduces Keyboard for Codex Amidst Apple Legal Battle",
+            "content": "Amid a legal battle with Apple over hardware trade theft allegations, OpenAI has released a $230 light-up keyboard designed to complement its Codex coding application. The keyboard aims to enhance user experience by providing a tailored interface for Codex users. This release comes as OpenAI seeks to expand its hardware offerings despite ongoing legal challenges. Developers using Codex may find the keyboard beneficial for improving coding efficiency and workflow. The situation underscores the competitive tensions in the tech industry, where intellectual property disputes are increasingly common.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "SpaceX Stock Drops to $135 Pre-Starship Launch",
+            "title": "SpaceX Shares Decline to $135 Ahead of Starship Launch",
+            "content": "SpaceX's stock has fallen to $135 per share, reflecting a decline from its post-IPO highs as investors reassess the company's prospects ahead of the Starship launch. The market's response indicates a more cautious approach to the ambitious promises made by CEO Elon Musk. This development is significant for stakeholders monitoring the aerospace sector, as it may influence investment strategies and risk assessments. The upcoming Starship launch will be a critical test for SpaceX's technological capabilities and market confidence. Investors should stay informed about the launch's outcomes and potential impacts on SpaceX's valuation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Thinking Machines Debuts Inkling—A Year in the Making",
+            "title": "Thinking Machines Unveils Inkling After Extensive Development",
+            "content": "Thinking Machines has officially launched Inkling, its first open-source AI model, after over a year of development focused on building robust AI infrastructure. Inkling's release marks a pivotal moment for the company as it challenges the one-size-fits-all approach to AI with a customizable, multimodal solution. This model is designed to cater to diverse enterprise needs, offering flexibility and control over AI deployments. The introduction of Inkling highlights a shift towards more adaptable AI models that can be tailored to specific organizational requirements. Enterprises should explore how such models can enhance their AI strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Whatnot Acquires Shaped for Enhanced Live Shopping AI",
+            "title": "Whatnot Acquires Shaped to Boost Real-Time Shopping Recommendations",
+            "content": "Livestream shopping platform Whatnot has acquired Shaped, an AI startup specializing in real-time recommendations and search. This acquisition aims to enhance Whatnot's personalization and discovery features as it expands into new product categories. By integrating Shaped's machine learning capabilities, Whatnot seeks to improve user engagement and conversion rates in the competitive live shopping market. The move reflects a broader trend of leveraging AI to optimize e-commerce experiences. Retailers should consider similar strategies to stay competitive and meet evolving consumer expectations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Microsoft Patches 570 Vulnerabilities with AI Assistance",
+            "title": "Microsoft Uses AI to Patch Record 570 Security Vulnerabilities",
+            "content": "Microsoft's latest Patch Tuesday release addressed a record 570 security vulnerabilities across its product line, thanks to AI-driven discoveries. This unprecedented number of fixes underscores the critical role AI plays in identifying and mitigating security threats. The vulnerabilities spanned various Microsoft products, highlighting the importance of regular updates and proactive security measures. Organizations using Microsoft products should prioritize applying these patches to safeguard against potential exploits. This development emphasizes the growing reliance on AI technologies to enhance cybersecurity defenses.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 15 2026",
             "headline": "Anthropic Backs Ode—Aiming for Trillion-Dollar AI Implementation",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Reflection AI Secures $1B Compute Deal with Nebius",
-            "title": "Reflection AI Partners with Nebius for $1 Billion Compute Access",
-            "content": "Reflection AI has secured a $1 billion agreement with Nebius to access its computing resources, marking a significant milestone for the company founded in 2024. This deal will support Reflection's development of open-source AI technologies, enhancing its capabilities in the competitive AI landscape. The partnership underscores the growing demand for robust computational power in AI development. Industry experts suggest this move could accelerate Reflection's innovation and market presence. Stakeholders should monitor how this access to Nebius' infrastructure impacts Reflection's product offerings and competitive edge.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/reflection-inks-1b-compute-deal-with-nebius/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "OpenAI's Wang Eyes $2B AI Drug Discovery Startup",
-            "title": "OpenAI Researcher Plans $2 Billion AI-Driven Drug Discovery Venture",
-            "content": "Miles Wang, an OpenAI researcher, is reportedly in discussions to launch an AI-focused drug discovery startup valued at $2 billion. This venture highlights the increasing investor interest in leveraging AI for breakthroughs in life sciences. The startup aims to utilize AI to streamline drug development processes, potentially reducing time and costs associated with traditional methods. As AI continues to revolutionize healthcare, stakeholders should watch for advancements in AI-driven drug discovery and its implications for the pharmaceutical industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/openai-researcher-miles-wang-in-talks-to-launch-ai-drug-discovery-startup-valued-at-2b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "OpenAI Challenges Apple Over Trade Secret Lawsuit",
-            "title": "OpenAI Rebuts Apple's Trade Secret Allegations in Ongoing Lawsuit",
-            "content": "OpenAI has issued a statement challenging the merit of Apple's trade secret lawsuit against it. The legal dispute centers on allegations that OpenAI misused proprietary information, a claim OpenAI disputes. This case highlights the complex legal landscape surrounding AI development and intellectual property. As AI technologies evolve, companies must navigate these legal challenges carefully. Professionals in the field should stay informed about the outcome of this lawsuit, as it could set precedents for future AI-related intellectual property cases.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "OpenAI's GPT-5.6 Sol Deletes Files—User Warnings Emerge",
-            "title": "OpenAI's GPT-5.6 Sol Model Faces Criticism for File Deletion Issue",
-            "content": "OpenAI's latest model, GPT-5.6 Sol, has come under scrutiny following user reports of unexpected file deletions. Social media posts have highlighted instances where the model deleted data without warning, raising concerns about its reliability. OpenAI had previously disclosed this issue in June, but the problem persists, affecting users relying on the model for critical tasks. This situation underscores the importance of thorough testing and user feedback in AI deployment. Users should exercise caution and back up data when using GPT-5.6 Sol.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Apple Releases iOS 27 Beta—New Siri AI Available",
-            "title": "Apple Launches iOS 27 Public Beta with Enhanced Siri AI",
-            "content": "Apple has released the iOS 27 public beta, offering users early access to its revamped Siri AI and other new features. This update allows iPhone owners to experience the AI-powered assistant's capabilities before the official software launch this fall. The new Siri AI aims to improve user interaction and efficiency, aligning with Apple's strategy to integrate AI into its ecosystem. Developers and tech enthusiasts should explore the beta to understand the potential impacts on user experience and app development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/apple-opens-its-new-siri-ai-to-everyone-with-the-ios-27-public-beta/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Google Faces Lawsuit Over AI Training on Copyrighted Works",
-            "title": "Major Publishers Sue Google for AI Training on Copyrighted Material",
-            "content": "Google is facing a lawsuit from major publishers, including Hachette and Elsevier, over allegations of using copyrighted works to train its AI models without permission. This legal action highlights the ongoing tension between AI development and intellectual property rights. The outcome of this case could have significant implications for AI training practices and the use of copyrighted content. Companies utilizing AI should closely monitor this lawsuit to ensure compliance with copyright laws and avoid potential legal challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "DeepMind CEO Advocates for AI Standards Body",
-            "title": "DeepMind CEO Proposes Independent Standards Body for AI Regulation",
-            "content": "Demis Hassabis, CEO of DeepMind, has called for the creation of an independent standards body to regulate frontier AI technologies. Modeled after the Financial Industry Regulatory Authority (FINRA), this body would test AI models and develop best practices for their release. Hassabis' proposal reflects growing concerns about the ethical and safety implications of advanced AI systems. Industry stakeholders should consider the potential benefits of standardized regulations in promoting responsible AI development and deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Meta Sued for AI Bias in Layoff Decisions",
-            "title": "Former Meta Employees Sue Over Alleged AI Bias in Layoffs",
-            "content": "A group of 26 former Meta employees has filed a lawsuit against the company, alleging that AI tools were used to unfairly target workers on leave for layoffs. The lawsuit claims that Meta's AI systems determined dismissals based on performance data, raising concerns about bias and transparency in AI-driven HR decisions. This case highlights the ethical challenges of using AI in workforce management. Companies should ensure their AI systems are transparent and fair to avoid similar legal issues.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Google Image Search Revamped for 25th Anniversary",
-            "title": "Google Enhances Image Search with AI for Personalized Discovery",
-            "content": "In celebration of its 25th anniversary, Google has revamped its image search feature, incorporating AI to tailor results based on users' unique interests. The updated service creates a personalized gallery that adapts to browsing history, enhancing user engagement and discovery. This move aligns with Google's broader strategy to integrate AI across its services, offering more intuitive and relevant search experiences. Users and developers should explore these changes to understand their potential impact on content visibility and search optimization strategies.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/07/google-revamps-image-search-for-its-25th-anniversary-with-more-images-and-more-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 14 2026",
-            "headline": "Google Images Gets Pinterest-Like Makeover",
-            "title": "Google Images Introduces Personalized Discovery with New \"For You\" Gallery",
-            "content": "Google has redesigned its Images platform, introducing a \"For You\" gallery that curates images based on user interests and browsing history. This Pinterest-like feature aims to enhance user engagement by offering a more personalized discovery experience. The redesign leverages AI to continuously update the gallery, reflecting Google's commitment to integrating AI into its services. Users should explore the new interface to optimize their search experiences, while developers can consider the implications for content visibility and user interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/14/google-images-gets-a-pinterest-like-redesign-focused-on-discovery/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-46817",
+            "dateAdded": "Jul 15, 2026",
+            "vendor": "Oracle E-Business Suite",
+            "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks o",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-4346",
+            "dateAdded": "Jul 15, 2026",
+            "vendor": "KNX Association KNX Protocol Connection Authorizat",
+            "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without addition",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-56155",
             "dateAdded": "Jul 14, 2026",
