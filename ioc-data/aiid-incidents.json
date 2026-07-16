@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1593",
+      "incident_id": 1593,
+      "title": "Purportedly AI-Powered Software Allegedly Used to Replace Montefiore Hospital Utilization-Review Nur",
+      "date": "2026-07-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1578",
       "incident_id": 1578,
       "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
@@ -2730,9 +2738,9 @@
     }
   ],
   "stats": {
-    "total": 341,
-    "last7Days": 18,
-    "last30Days": 107
+    "total": 342,
+    "last7Days": 19,
+    "last30Days": 108
   },
-  "lastUpdated": "2026-07-17T01:12:04.047610+05:30"
+  "lastUpdated": "2026-07-17T02:42:26.323948+05:30"
 }
