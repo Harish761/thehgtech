@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-07-15T16:01:02.357004",
-  "total_incidents": 29451,
+  "last_updated": "2026-07-16T05:24:23.624769",
+  "total_incidents": 29454,
   "incidents": [
+    {
+      "id": "qilin_international_delights",
+      "victim_name": "International Delights",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-15T19:52:20.310973+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "intdelights.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/af4cba0918d5d609162951d6079fe55d.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=2a85afa5-7c66-4fe2-a552-df3f6954cb9c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "ransomhouse_fidelity_services_group",
+      "victim_name": "Fidelity Services Group",
+      "threat_actor": "ransomhouse",
+      "date_discovered": "2026-07-15T19:28:42.063845+00:00",
+      "industry": "Financial Services",
+      "website": "www.fidelity-services.com",
+      "claim": "Fidelity Services Group is Southern Africa's largest integrated security solutions provider, specializing in innovative protection services. With over 60 years of experience, they offer a range of services including security guarding, cash management, and fire protection solutions tailored for corporate clients. Their commitment to excellence and technological advancement positions them as a leader in the security market. The company serves various industries, ensuring peace of mind through specialized and professionally trained personnel",
+      "screenshot": "https://images.ransomware.live/victims/6bd020b5fd5008f03258953faa015873.png",
+      "url": "http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion/r/044542026d63eb0acd49e9e0b2b7b6e7ab0bbce2",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_panasonicaero",
+      "victim_name": "PanasonicAero",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-07-15T17:01:52.643821+00:00",
+      "industry": "Manufacturing",
+      "website": "panasonic.aero",
+      "claim": "[AI generated] Panasonic Avionics Corporation, commonly known as Panasonic Aero, is a US-based subsidiary of Panasonic Corporation specializing in in-flight entertainment and connectivity systems for commercial airlines. The company designs and supplies seatback screens, Wi-Fi connectivity, and cabin management solutions. Headquartered in Lake Forest, California, it serves major global airlines and operates within the aerospace and aviation technology industry.",
+      "screenshot": "https://images.ransomware.live/victims/93bd27d758645b4c4486fd57a3f1ab99.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/panaaeroo",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_heritage_mechanical_llc",
       "victim_name": "Heritage Mechanical LLC",
