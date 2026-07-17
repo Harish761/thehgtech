@@ -2721,22 +2721,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1451",
-      "incident_id": 1451,
-      "title": "Purportedly AI-Generated Facebook Video Allegedly Misused Sk\u00ebnder Brataj and Blendi Fevziu to Promot",
-      "date": "2026-04-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1453",
-      "incident_id": 1453,
-      "title": "Attorney in Fletcher v. Experian Information Solutions, Inc. Reportedly Submitted Reply Brief with P",
-      "date": "2026-04-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1455",
       "incident_id": 1455,
       "title": "Purported Deepfake Videos Allegedly Impersonated Optometrist Joseph Allen to Promote Myopia-Reversal",
@@ -2746,9 +2730,9 @@
     }
   ],
   "stats": {
-    "total": 343,
+    "total": 341,
     "last7Days": 18,
     "last30Days": 79
   },
-  "lastUpdated": "2026-07-18T01:10:39.605807+05:30"
+  "lastUpdated": "2026-07-18T02:34:44.278890+05:30"
 }
