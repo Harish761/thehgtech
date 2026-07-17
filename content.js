@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 17 2026",
+            "headline": "Military Autonomy Race—Can Infrastructure Keep Up?",
+            "title": "Military Forces Accelerate Autonomous Capabilities Amid Infrastructure Challenges",
+            "content": "Military forces across the U.S., UK, and NATO are rapidly advancing their autonomous capabilities, driven by new investments and evolving defense strategies. This push is transforming capability delivery, emphasizing programs that transition swiftly from concept to deployment. However, the pace of development raises questions about the ability of existing information infrastructure to support these advancements securely. As autonomous systems become integral to military operations, ensuring robust and trusted infrastructure is critical to maintaining operational effectiveness and security. Stakeholders must prioritize infrastructure upgrades to keep pace with technological advancements in military autonomy.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/the-race-to-field-military-autonomy-is.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "SharePoint RCE Vulnerability Exploited Post-Disclosure",
+            "title": "Critical SharePoint Vulnerability CVE-2026-58644 Exploited After Public Disclosure",
+            "content": "A critical remote code execution (RCE) vulnerability in Microsoft SharePoint, identified as CVE-2026-58644, is being actively exploited shortly after its disclosure. This flaw allows remote, authenticated attackers to execute arbitrary code on vulnerable servers, posing a significant threat to organizations using SharePoint. The vulnerability underscores the importance of timely patch management, as attackers are quick to leverage newly disclosed flaws. Organizations are urged to apply the latest security updates to mitigate potential exploitation and protect sensitive data stored on SharePoint servers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fresh-sharepoint-vulnerability-exploited-soon-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "Ransomware Halts Coca-Cola's Fairlife Production",
+            "title": "Coca-Cola Suspends Fairlife Production Following Ransomware Attack",
+            "content": "Coca-Cola has temporarily suspended production of its Fairlife dairy products in the U.S. due to a ransomware attack. The company is currently assessing the full scope and impact of the incident, which has disrupted operations. This attack highlights the ongoing threat of ransomware to critical supply chains and the importance of robust cybersecurity measures. Organizations in the food and beverage sector should review their security protocols and ensure they have effective incident response plans in place to minimize operational disruptions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "CISA Flags SharePoint Zero-Day—Patch by July 19",
+            "title": "CISA Adds SharePoint RCE Zero-Day CVE-2026-58644 to Exploited List",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a newly patched Microsoft SharePoint vulnerability, CVE-2026-58644, to its Known Exploited Vulnerabilities catalog. This action mandates that Federal Civilian Executive Branch agencies apply the necessary fixes by July 19, 2026. The vulnerability allows remote code execution, posing a significant risk to unpatched systems. CISA's directive underscores the urgency for organizations to prioritize patching to protect against potential exploitation and safeguard critical infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "North Korean Malware Hidden in SVG Images",
+            "title": "North Korean Threat Actors Use SVG Steganography for Malware Delivery",
+            "content": "North Korean threat actors associated with the Contagious Interview campaign are using steganography to hide malware within SVG image files. This technique is part of a broader campaign involving fake job postings and coding challenges to deliver a four-stage payload. The use of SVG files to conceal malicious code highlights the evolving tactics of threat actors to bypass traditional security measures. Organizations should be vigilant about suspicious job offers and ensure robust scanning of image files to detect hidden threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "EU Mandates Google to Open Android to Rivals",
+            "title": "EU Orders Google to Allow Rival AI Assistants Access to Android Features",
+            "content": "The European Commission has mandated Google to provide rival AI assistants with the same access to Android features as its own Gemini assistant. This includes access to the camera, microphone, screen, and the ability to operate in the background. The decision aims to foster competition and innovation in the AI assistant market by leveling the playing field. Google must comply with this order to avoid potential penalties, and developers of rival AI assistants should prepare to leverage these new capabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/eu-orders-google-to-open-android-mic.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "Beacon Security Secures $13M for Data Platform",
+            "title": "Beacon Security Raises $13 Million to Enhance Security Data Platform",
+            "content": "Beacon Security has successfully raised $13 million in funding to advance its security data platform, which aids organizations in detecting, hunting, and protecting assets at machine speed. The platform's capabilities are designed to address the increasing complexity of cybersecurity threats across diverse environments. This investment will enable Beacon Security to expand its offerings and enhance its ability to provide real-time insights and protection to its clients. Security professionals should monitor Beacon's developments for potential integration into their cybersecurity strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/beacon-security-raises-13-million-for-security-data-platform/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "Pentagon Halts CMMC Phase 2—Industry Reacts",
+            "title": "Industry Responds to Pentagon's Suspension of CMMC Phase 2 Audits",
+            "content": "The Pentagon's decision to suspend Phase 2 of the Cybersecurity Maturity Model Certification (CMMC) has prompted varied reactions from industry professionals. While the suspension pauses third-party audits, the legal obligation to protect Controlled Unclassified Information (CUI) remains. This development highlights ongoing challenges in balancing compliance requirements with practical implementation. Organizations should continue to prioritize cybersecurity measures to protect CUI, even in the absence of formal audits, and stay informed about future CMMC updates.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/industry-reactions-to-pentagon-suspending-cmmc-phase-2-feedback-friday/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "Cyberattack Disrupts Nichirei's Frozen Food Operations",
+            "title": "Japanese Frozen Food Giant Nichirei Hit by Cyberattack, Operations Disrupted",
+            "content": "Nichirei, a leading Japanese frozen food company, has experienced operational disruptions due to a cyberattack, forcing the disconnection of its systems on July 13. The company is gradually restoring operations while assessing the attack's impact. This incident underscores the vulnerability of supply chains to cyber threats and the need for robust security measures. Companies in the food industry should enhance their cybersecurity defenses to protect against similar attacks and ensure business continuity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cyberattack-disrupts-operations-of-japanese-frozen-food-giant-nichirei/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "GoSerpent Malware Targets Southeast Asian Diplomats",
+            "title": "New GoSerpent Malware Targets Southeast Asian Governments for Espionage",
+            "content": "Cybersecurity researchers have uncovered GoSerpent, a previously undocumented malware targeting governments and diplomats in Southeast Asia since late 2025. The malware aims to establish long-term access and gather intelligence, posing a significant threat to national security. Kaspersky, the cybersecurity firm that identified GoSerpent, emphasizes the need for enhanced vigilance and security measures in the region. Governments and organizations should prioritize threat intelligence and monitoring to detect and mitigate such sophisticated cyber espionage campaigns.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-goserpent-malware-targets-southeast.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 16 2026",
             "headline": "£29M TfL Hack—Two Hackers Sentenced to 5.5 Years",
             "title": "Scattered Spider Hackers Sentenced for £29 Million TfL Cyberattack",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/f5-patches-multiple-nginx-big-ip-vulnerabilities/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Splunk, Zoom Patch Critical Flaws—Credential Theft Risk",
-            "title": "Splunk and Zoom Address Critical Vulnerabilities Threatening User Credentials",
-            "content": "Splunk and Zoom have released patches for critical vulnerabilities that could allow attackers to access user credentials, take over accounts, and escalate privileges. The flaws impact Splunk's enterprise software and Zoom's desktop client for Windows, with the latter tracked as CVE-2026-53412, carrying a CVSS score of 9.8. These vulnerabilities could be exploited to gain unauthorized access to sensitive data and systems, posing a significant risk to organizations relying on these platforms. Users are advised to apply the latest updates immediately to mitigate potential exploitation. This development underscores the importance of regular security updates in safeguarding enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/splunk-zoom-patch-critical-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "OpenAI's GPT-Red Enhances Security—Automates Prompt Injection Tests",
-            "title": "OpenAI Introduces GPT-Red to Automate Prompt Injection Testing for GPT-5.6",
-            "content": "OpenAI has unveiled GPT-Red, an internal automated red-teaming model designed to identify and address prompt injection vulnerabilities in GPT-5.6. This model scales vulnerability discovery efforts, aiming to resolve issues before the tools are widely deployed. GPT-Red's capabilities highlight the vulnerability of previous models to prompt injection attacks, which can manipulate AI outputs. By automating these tests, OpenAI seeks to enhance the robustness of its AI models against potential exploitation. Organizations using AI tools should remain vigilant and consider similar proactive measures to secure their deployments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/openais-gpt-red-automates-prompt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "CISA Warns: Secure SharePoint Now—Exploits Rising",
-            "title": "CISA Urges Immediate Hardening of SharePoint Amid Active Exploits",
-            "content": "The US Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent advisory for organizations to secure their Microsoft SharePoint deployments. This follows the discovery of active exploitation of three vulnerabilities in the on-premises collaboration platform. These vulnerabilities could allow attackers to gain unauthorized access and compromise sensitive data. CISA's warning emphasizes the need for immediate action to patch and harden SharePoint systems. Organizations are encouraged to follow CISA's guidelines to protect their infrastructure from potential threats, highlighting the ongoing risks associated with unpatched enterprise software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197775/cisa-urges-immediate-sharepoint-hardening-as-exploits-mount.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Scattered Spider Hackers Jailed in UK—TfL Attack",
-            "title": "UK Sentences Two Hackers for Transport for London Cyberattack",
-            "content": "Thalha Jubair and Owen Flowers, members of the Scattered Spider hacking group, have been sentenced to jail in the UK for their roles in a 2024 cyberattack targeting Transport for London (TfL). The attack disrupted TfL's operations, highlighting the vulnerabilities in critical infrastructure. This sentencing marks a significant step in holding cybercriminals accountable and serves as a deterrent to future attacks. Organizations in the transportation sector are advised to review their security measures to prevent similar incidents. The case underscores the importance of international cooperation in cybersecurity enforcement.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/two-scattered-spider-hackers-sentenced-to-jail-in-uk/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "AI Data Centers Outpace Security—New Risks Emerge",
-            "title": "Rapid AI Data Center Expansion Outstrips Security Measures",
-            "content": "The rapid construction of AI data centers is introducing new security challenges that traditional designs were not equipped to handle. As organizations race to build infrastructure to support AI workloads, security professionals warn of increased risks, including data breaches and unauthorized access. The complexity of AI systems requires specialized security protocols to protect sensitive data and maintain operational integrity. Companies investing in AI infrastructure should prioritize security from the outset, incorporating robust measures to address these emerging threats. This trend highlights the evolving landscape of cybersecurity in the AI era.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-data-centers-are-being-built-faster-than-they-can-be-secured/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "TELEPUZ Malware Exploits ClickFix—Data Theft Threat",
-            "title": "TELEPUZ Malware Uses ClickFix Lures to Steal Data and Execute Commands",
-            "content": "Cybersecurity researchers have identified a new malware strain named TELEPUZ, which is spreading through websites infected with ClickFix lures. This modular malware is designed to steal data and execute commands on compromised systems. Since its emergence in April 2026, TELEPUZ has posed a significant threat to users, leveraging its lightweight and adaptable nature to evade detection. Organizations are advised to enhance their security measures and monitor network traffic for signs of infection. The discovery of TELEPUZ underscores the ongoing evolution of malware tactics and the need for vigilant cybersecurity practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-telepuz-malware-spreads-via.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "ClickLock Stealer Targets macOS—Bypasses Security",
-            "title": "ClickLock Stealer Exploits macOS Vulnerabilities to Steal Credentials",
-            "content": "A new macOS malware, ClickLock Stealer, has been identified, targeting users to steal passwords and cryptocurrency. The malware bypasses macOS security through social engineering and process killing, affecting at least 100 users. It operates by killing applications every 210 milliseconds until victims enter their login credentials. This attack vector highlights the vulnerabilities in macOS security and the need for users to exercise caution when prompted for credentials. Security professionals recommend updating to the latest macOS version and implementing additional security measures to mitigate such threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/clicklock-stealer-bypasses-macos-security-with-social-engineering-process-killing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "20+ Brazilian Gov Websites Hijacked—Malware Delivery",
-            "title": "Hijacked Brazilian Government Websites Used for Malware Distribution",
-            "content": "More than 20 Brazilian government websites have been hijacked and repurposed as malware delivery channels in an ongoing campaign dubbed PhantomEnigma. The attack, uncovered by ANY.RUN, involves previously undocumented backdoors, posing a significant threat to users accessing these sites. This incident highlights the vulnerabilities within government infrastructure and the potential for widespread impact. Users are advised to exercise caution when visiting government websites and ensure their systems are protected with up-to-date security software. The campaign underscores the importance of securing public sector digital assets against cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/20-hijacked-government-websites.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Agent Data Injection Attack—AI Agents Misled",
-            "title": "New Attack Method Manipulates AI Agents via Data Injection",
-            "content": "A novel attack method, known as Agent Data Injection, has been discovered, allowing attackers to manipulate AI agents into misclicking or executing unauthorized commands. By embedding malicious data in seemingly innocuous inputs, attackers can alter the behavior of AI systems without direct access. This vulnerability poses a significant risk to organizations relying on AI for decision-making processes. Security professionals are urged to review their AI deployment strategies and implement safeguards against data manipulation. The discovery of this attack method highlights the need for ongoing vigilance in securing AI technologies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-agent-data-injection-attack-can.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Daxin Malware Resurfaces in Taiwan—New Backdoor Found",
-            "title": "Daxin Malware and Stupig Backdoor Detected in Taiwanese Firm",
-            "content": "The advanced malware Daxin, linked to a China-based threat actor, has resurfaced in a Taiwanese manufacturing firm after a four-year hiatus. Alongside Daxin, researchers have identified a new backdoor named Stupig, which operates pre-login to gain SYSTEM-level access. This development raises concerns about the security of industrial systems and the potential for espionage. Organizations in the manufacturing sector should enhance their security postures and monitor for signs of these threats. The reemergence of Daxin and the discovery of Stupig underscore the persistent threat posed by sophisticated cyber actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/daxin-resurfaces-in-taiwan-alongside.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 15 2026",
+            "headline": "OpenAI's GPT-Red Enhances AI Safety via Self-Improvement",
+            "title": "GPT-Red: OpenAI's Self-Improving System Boosts AI Robustness",
+            "content": "OpenAI has unveiled GPT-Red, an innovative automated red teaming system designed to enhance AI safety and robustness through self-play mechanisms. This system aims to improve AI alignment and prompt injection resilience by simulating adversarial scenarios that challenge AI models. By iteratively testing and refining its own capabilities, GPT-Red seeks to identify and mitigate potential vulnerabilities before they can be exploited. This development is crucial for organizations relying on AI for critical operations, as it promises to reduce the risk of unexpected AI behavior. OpenAI's approach reflects a growing trend in the industry towards proactive AI security measures.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "$400M Chip Loan Signals AI Infrastructure Shift",
+            "title": "GPU Financiers Pivot to Inference Chips in $400M Deal",
+            "content": "In a significant move for AI infrastructure, a $400 million chip-backed loan has been secured, indicating a shift from traditional GPUs to specialized inference chips. This financial maneuver highlights the growing demand for efficient AI processing hardware, as inference chips offer improved performance for AI workloads. The deal underscores the evolving landscape of AI infrastructure investments, with financiers recognizing the potential of inference chips to support the next wave of AI applications. This trend is expected to impact AI developers and enterprises seeking cost-effective solutions for deploying AI at scale.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "OpenAI Launches AI Scorecard for Measuring ROI",
+            "title": "OpenAI Introduces Practical AI Scorecard for ROI Assessment",
+            "content": "Sarah Friar, CFO of OpenAI, has introduced a new AI scorecard designed to measure the return on investment (ROI) of AI initiatives. The scorecard evaluates AI projects based on useful work, cost per successful task, dependability, and return on compute. This tool aims to provide organizations with a structured approach to assess the effectiveness and efficiency of their AI deployments. By offering a clear framework for evaluating AI performance, OpenAI's scorecard addresses a critical need for transparency and accountability in AI investments. This initiative reflects the industry's focus on maximizing the value derived from AI technologies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Ex-DeepMind Researcher Secures $300M Pre-Seed for Visual AI",
+            "title": "Former DeepMind Researcher Raises $300M for Visual AI Venture",
+            "content": "Andrew Dai, a former DeepMind researcher, has raised $300 million at a pre-seed valuation for his new venture focused on visual AI. Drawing from his extensive experience in developing influential AI systems, Dai aims to explore visual AI as a major frontier in artificial intelligence. This substantial funding reflects investor confidence in the potential of visual AI to transform industries such as healthcare, automotive, and entertainment. Dai's venture highlights the increasing interest in AI applications that leverage visual data to enhance decision-making and user experiences.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Cars24 Boosts Efficiency with OpenAI-Powered Agents",
+            "title": "Cars24 Leverages OpenAI for Enhanced Customer Interaction",
+            "content": "Cars24 has successfully integrated OpenAI-powered voice and chat agents to manage over 1 million monthly conversation minutes, significantly improving customer engagement. The deployment of these AI agents has enabled Cars24 to recover 12% of lost leads and streamline workflows across its teams. By utilizing advanced AI technologies, Cars24 aims to enhance operational efficiency and customer satisfaction. This case study exemplifies the growing trend of businesses adopting AI-driven solutions to optimize communication and service delivery.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/cars24",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Microsoft Trains Sales to Undermine OpenAI, Anthropic",
+            "title": "Microsoft Pushes In-House AI Models Over Competitors",
+            "content": "Microsoft is reportedly training its sales teams to promote its in-house AI models as more efficient and cost-effective alternatives to those offered by competitors like OpenAI and Anthropic. This strategic move aims to position Microsoft's AI solutions as superior in terms of performance and value. The company's efforts reflect the competitive landscape in the AI industry, where tech giants are vying for market dominance by highlighting the advantages of their proprietary technologies. This development suggests a potential shift in enterprise preferences towards Microsoft’s AI offerings.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "xAI Sues Over Grok's Use in CSAM Deepfakes",
+            "title": "xAI Files Lawsuit Against Grok User for CSAM Deepfakes",
+            "content": "xAI, owned by Elon Musk, has filed a lawsuit against a South Carolina man for allegedly using its Grok AI chatbot to generate child sexual abuse material (CSAM) deepfakes. The lawsuit claims that the defendant, Terry Wayne Harwood, intentionally circumvented Grok's safeguards to produce illicit content. This legal action highlights the ongoing challenges in ensuring AI systems are not misused for harmful purposes. xAI's response underscores the importance of robust security measures and ethical guidelines in AI development and deployment.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "OpenAI Launches $230 Codex Keyboard Amid Apple Dispute",
+            "title": "OpenAI Releases Codex Keyboard During Apple Legal Battle",
+            "content": "OpenAI has introduced a $230 keyboard designed for use with its Codex coding application, even as it faces a legal battle with Apple over hardware trade theft allegations. The keyboard features customizable lighting to enhance coding efficiency and user experience. Despite the ongoing legal dispute, OpenAI's product launch demonstrates its commitment to expanding its hardware offerings. This development is part of a broader trend of AI companies diversifying their product lines to include specialized hardware that complements their software solutions.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "SpaceX Stock Drops to $135 Ahead of Starship Launch",
+            "title": "SpaceX Shares Fall to $135 Pre-Starship Launch",
+            "content": "SpaceX's stock has declined to $135 per share, reflecting a significant drop from its post-IPO highs. This decrease comes as the company prepares for its upcoming Starship launch, amid investor concerns about the ambitious promises made by CEO Elon Musk. The market's reaction suggests a more cautious approach to SpaceX's valuation, as stakeholders weigh the risks and potential rewards of its space exploration endeavors. This situation highlights the volatility often associated with high-profile tech companies in the public market.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Thinking Machines Debuts Inkling—First Open AI Model",
+            "title": "Thinking Machines Launches Inkling to Challenge AI Norms",
+            "content": "Thinking Machines has unveiled Inkling, its first open AI model, marking a departure from the one-size-fits-all approach prevalent in the industry. After a year and a half of development, Inkling is designed to offer customizable AI solutions tailored to specific needs. This launch represents Thinking Machines' commitment to providing flexible and adaptable AI tools that cater to diverse applications. The introduction of Inkling underscores a growing trend towards open and modular AI systems that empower users with greater control and customization options.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 16 2026",
             "headline": "Moonshot AI Unveils 2.8T-Parameter Open-Source Model—Kimi K3",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Alexandre LeBrun, CEO of AMI Labs, has publicly dismissed the use of terms like \"AGI\" (Artificial General Intelligence) and \"superintelligence\" for his company's AI developments. LeBrun's stance highlights a cautious approach to AI terminology, focusing on realistic capabilities rather than speculative labels. This perspective aligns with a segment of the AI community advocating for precise language to avoid misconceptions about AI's current state and potential. Professionals should consider the implications of terminology in AI discourse and development.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Moonshot's Kimi 3 to Rival Anthropic's Opus 4.8",
-            "title": "Moonshot's Kimi 3 Set to Become China's Largest Open AI Model",
-            "content": "Moonshot is poised to release Kimi 3, which is expected to be China's largest open AI model, boasting a parameter count between 2 trillion and 3 trillion. This development aims to close the competitive gap with Anthropic's Opus 4.8, a leading model in the AI landscape. The introduction of Kimi 3 marks a significant milestone in China's AI capabilities, potentially enhancing applications across various sectors, including natural language processing and automated decision-making. As the AI arms race intensifies, Kimi 3 could provide a strategic advantage in both domestic and international markets. Industry professionals should monitor this release for potential impacts on AI-driven solutions and collaborations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Apple AI Launches in China with Alibaba, Baidu",
-            "title": "Apple Intelligence Approved for Launch in China with Alibaba and Baidu",
-            "content": "Apple has secured approval to launch its AI initiatives in China, partnering with tech giants Alibaba and Baidu. This collaboration marks a pivotal step in Apple's strategy to expand its AI presence in a crucial market. The partnership is expected to leverage Alibaba's and Baidu's extensive local expertise and infrastructure, potentially accelerating AI development and deployment in China. This move could significantly influence the competitive dynamics in the Chinese AI sector, where local and international players vie for dominance. Stakeholders should assess the implications of this partnership on market strategies and AI technology adoption.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Claude Integrates 1Password for Seamless Credential Access",
-            "title": "Claude Can Now Use Your 1Password Credentials for Enhanced Tasks",
-            "content": "Anthropic's chatbot, Claude, now features a new integration with 1Password, allowing it to access stored credentials such as usernames and passwords. This functionality enables Claude to perform complex tasks like booking travel and managing online accounts with greater efficiency. The integration underscores the growing trend of AI systems enhancing user convenience through secure access to personal data. Users must ensure proper authorization settings to maintain security while leveraging this feature. This development highlights the ongoing evolution of AI capabilities in personal and professional task management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "EU Orders Google to Open Android, Search to Rivals",
-            "title": "Google Ordered to Open Android and Search to Rivals in Europe",
-            "content": "The European Union has mandated Google to provide rival AI assistants and search engines with greater access to Android and Google Search. This decision, aimed at enforcing the bloc's digital antitrust rules, could diminish Google's dominance over these platforms. The ruling is part of a broader effort to foster competition and innovation in the tech industry. Companies relying on Google's ecosystem should prepare for potential shifts in market dynamics and explore new opportunities arising from increased platform accessibility.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "$20M Boost for AI in Oil and Gas by Applied Computing",
-            "title": "Applied Computing Secures $20M to Develop AI Model for Oil and Gas",
-            "content": "Applied Computing has raised $20 million in Series A funding to create a foundational AI model tailored for the oil, gas, and petrochemical industries. This initiative aims to enhance operational efficiency and decision-making processes across entire plants. By integrating AI into these sectors, companies can expect improved predictive maintenance, resource management, and safety protocols. Stakeholders in the energy sector should consider the potential benefits of adopting AI-driven solutions to optimize their operations and reduce costs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/applied-computing-wants-to-give-oil-and-gas-operators-an-ai-model-for-the-entire-plant/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Thinking Machines Lab Unveils 975B-Parameter Model",
-            "title": "Thinking Machines Lab Drops Its First Model, Inkling",
-            "content": "Thinking Machines Lab has introduced Inkling, a 975-billion-parameter open-source model designed to understand video and audio content. This release positions the lab as a formidable competitor against established players like Anthropic and OpenAI. Inkling's capabilities could revolutionize multimedia content analysis and generation, offering new possibilities for applications in entertainment, security, and education. Developers and businesses should explore the potential of integrating Inkling into their workflows to leverage its advanced analytical abilities.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Suno's AI Trained on Millions of Illegally Scraped Songs",
-            "title": "Suno Exposed for Using Illegally Scraped Songs in AI Training",
-            "content": "Suno, an AI music generator, has been implicated in a data breach revealing its training on millions of songs and lyrics scraped from platforms like YouTube Music, Deezer, and Genius. This incident raises significant ethical and legal concerns regarding data usage in AI model training. The lack of transparency in Suno's dataset composition could lead to potential lawsuits and regulatory scrutiny. Companies involved in AI development should prioritize ethical data sourcing to avoid similar controversies and ensure compliance with intellectual property laws.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "OpenAI's Codex Gets Hardware Boost Amid Legal Battle",
-            "title": "OpenAI Finally Launches Hardware for Codex Amid Legal Dispute",
-            "content": "OpenAI has unveiled new hardware designed to enhance its Codex platform, a coding assistant, despite ongoing legal challenges involving a separate AI device project. The hardware aims to improve Codex's performance, offering developers a more robust tool for coding tasks. This release comes as OpenAI navigates a complex legal landscape, highlighting the company's commitment to advancing AI capabilities. Developers using Codex should evaluate the new hardware's potential to streamline their coding processes and increase productivity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Google DeepMind's Joint Bioresilience Approach with Isomorphic Labs",
-            "title": "Google DeepMind and Isomorphic Labs Unveil Bioresilience Strategy",
-            "content": "Google DeepMind and Isomorphic Labs have announced a collaborative approach to bioresilience, leveraging AI models to enhance biological research and resilience. This initiative aims to address global challenges such as disease outbreaks and environmental changes by utilizing AI for predictive modeling and analysis. The partnership underscores the potential of AI in advancing scientific understanding and developing proactive solutions to complex biological issues. Researchers and policymakers should consider the implications of AI-driven bioresilience strategies in shaping future health and environmental policies.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "AI Slop Movies: The New Direct-to-Video Phenomenon",
-            "title": "AI Slop Movies Emerge as the Latest Direct-to-Video Trend",
-            "content": "AI-generated films, dubbed \"AI slop movies,\" are becoming the latest trend in direct-to-video releases, capitalizing on the capabilities of AI to produce content quickly and cost-effectively. This phenomenon is reshaping the film industry by enabling rapid production cycles and reducing reliance on traditional filmmaking processes. While these movies offer new opportunities for content creators, they also raise questions about quality and originality. Industry professionals should assess the impact of AI on content creation and consider the balance between innovation and artistic integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
             "relatedResources": []
         }
     ],
