@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 16 2026",
+            "headline": "£29M TfL Hack—Two Hackers Sentenced to 5.5 Years",
+            "title": "Scattered Spider Hackers Sentenced for £29 Million TfL Cyberattack",
+            "content": "Owen Flowers and Thalha Jubair have been sentenced to five and a half years each for their roles in the 2024 cyberattack on Transport for London (TfL). The attack, orchestrated by the Scattered Spider group, rendered 148 TfL systems inoperable and forced 27,000 employees into office workarounds. The hack caused significant operational disruptions and financial losses estimated at £29 million. This sentencing underscores the severe legal consequences of cybercrime, particularly when targeting critical infrastructure. Security professionals are urged to bolster defenses against similar threats targeting public services.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/two-scattered-spider-hackers-get-55.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Zoom Windows Flaw—Critical Patch Released for CVE-2026-53412",
+            "title": "Zoom Patches Critical Windows Vulnerability Enabling Account Takeover",
+            "content": "Zoom has issued a patch for a critical vulnerability, CVE-2026-53412, affecting its Workplace for Windows, Desktop Client, VDI Client, and Meeting SDK. With a CVSS score of 9.8, this flaw could allow unauthorized users to take over accounts via network access. Given Zoom's extensive user base of over 300 million daily active users, the potential impact is significant. Users are advised to update their software immediately to mitigate the risk of exploitation. This incident highlights the ongoing need for vigilance in securing widely-used communication platforms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Firefox, Chrome, Adobe, VMware—Critical Flaws Patched",
+            "title": "Critical Security Flaws Patched in Firefox, Chrome, Adobe, and VMware",
+            "content": "Mozilla has released updates for Firefox to address two critical vulnerabilities, CVE-2026-15718 and CVE-2026-15719, involving the WebAssembly and DOM: Navigation components. Exploit code for these vulnerabilities has been published, posing a significant threat. Concurrently, Adobe, Chrome, and VMware have also issued patches for critical security flaws. These updates are crucial for maintaining system integrity and protecting against potential exploits. Users and administrators should prioritize applying these patches to safeguard their systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "OT Security Challenges—Legacy Systems Pose Real-World Risks",
+            "title": "Legacy Systems and Real-World Impacts: OT Security Challenges",
+            "content": "Operational Technology (OT) security remains a critical challenge due to legacy systems and the inherent risks they pose to critical infrastructure. Vulnerability disclosure in OT environments requires a delicate balance between transparency and safety. As these systems are often outdated and lack modern security features, they are prime targets for cyberattacks. Organizations must invest in upgrading and securing their OT environments to prevent potential disruptions and ensure the safety of critical operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/legacy-systems-real-world-impacts-the-reality-of-ot-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "'LegacyHive' Zero-Day—Windows Vulnerability Exposed",
+            "title": "Nightmare Eclipse Unveils ‘LegacyHive’ Windows Zero-Day Vulnerability",
+            "content": "A researcher known as Nightmare Eclipse has disclosed a new Windows zero-day vulnerability dubbed 'LegacyHive.' While the proof-of-concept exploit has been stripped to prevent immediate exploitation, the vulnerability poses a significant risk to Windows systems. This disclosure highlights the ongoing threat of zero-day vulnerabilities and the importance of timely patching and system updates. Security teams should remain vigilant and monitor for any developments related to this vulnerability.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-legacyhive-windows-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "n8n Token Flaw—Cross-Issuer Login Vulnerability Discovered",
+            "title": "n8n Token Exchange Flaw Allows Cross-Issuer User Logins",
+            "content": "A security flaw in n8n, a workflow automation platform, has been identified where Enterprise instances configured with multiple external token issuers could allow unauthorized logins. The flaw arises from the system matching incoming JWTs to local users based solely on the 'sub' claim, ignoring the 'iss' claim. This oversight could lead to unauthorized access across different issuers. Organizations using n8n should review their token configurations and apply necessary security measures to prevent exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/n8n-token-exchange-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "ClickLock Stealer—New macOS Threat Demands Passwords",
+            "title": "ClickLock macOS Stealer Forces Password Disclosure by Killing Apps",
+            "content": "A new macOS infostealer, ClickLock, has emerged, employing aggressive tactics to extract user passwords. It continuously terminates applications every 210 milliseconds until the victim provides their login credentials. Delivered via a command in the Terminal, it masquerades as a legitimate system dialog to deceive users. Once the password is entered, it installs persistent LaunchAgents. macOS users should be cautious of suspicious Terminal commands and ensure their systems are protected with updated security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-clicklock-macos-stealer-kills-apps.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Oak Secures $60M—AI Identity System Launched",
+            "title": "Oak Emerges With $60 Million Funding for AI Identity Operating System",
+            "content": "Oak, a startup specializing in identity management, has emerged from stealth mode with $60 million in funding. The company has developed an AI-powered Identity Operating System designed to manage identities across organizational environments. This system aims to enhance security and streamline identity governance. The significant investment reflects growing interest in AI-driven solutions for identity management, a critical area in cybersecurity. Organizations should explore such technologies to strengthen their identity and access management strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oak-emerges-from-stealth-mode-with-60-million-in-funding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Shark Vacuum Flaw—Region-Wide Control Vulnerability Found",
+            "title": "Unpatched Shark Vacuum Flaw Allows Region-Wide Device Control",
+            "content": "A vulnerability in the Shark RV2320EDUS robot vacuum has been discovered, allowing attackers to execute root commands on devices across the same AWS region. By extracting the certificate from the vacuum's flash, attackers can control other vacuums, access cameras, and retrieve Wi-Fi passwords in plaintext. This flaw poses a significant privacy and security risk. Users should be aware of the potential for unauthorized access and consider network segmentation and other security measures to protect their devices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/unpatched-shark-vacuum-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "F5 Patches—NGINX, BIG-IP Vulnerabilities Fixed",
+            "title": "F5 Releases Patches for Multiple NGINX and BIG-IP Vulnerabilities",
+            "content": "F5 has issued patches for several vulnerabilities affecting its NGINX and BIG-IP products. These flaws could allow attackers to modify configurations, terminate processes, cross security boundaries, leak memory, and execute arbitrary code. Organizations using these products should apply the patches immediately to mitigate potential security risks. This update underscores the importance of regular patch management in maintaining secure network infrastructures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/f5-patches-multiple-nginx-big-ip-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
             "headline": "Splunk, Zoom Patch Critical Flaws—Credential Theft Risk",
             "title": "Splunk and Zoom Address Critical Vulnerabilities Threatening User Credentials",
             "content": "Splunk and Zoom have released patches for critical vulnerabilities that could allow attackers to access user credentials, take over accounts, and escalate privileges. The flaws impact Splunk's enterprise software and Zoom's desktop client for Windows, with the latter tracked as CVE-2026-53412, carrying a CVSS score of 9.8. These vulnerabilities could be exploited to gain unauthorized access to sensitive data and systems, posing a significant risk to organizations relying on these platforms. Users are advised to apply the latest updates immediately to mitigate potential exploitation. This development underscores the importance of regular security updates in safeguarding enterprise environments.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/daxin-resurfaces-in-taiwan-alongside.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "ShareFile Zero-Day Fixed—Users Must Apply Patch",
-            "title": "Progress Confirms Zero-Day Vulnerability Behind ShareFile Disruption",
-            "content": "Progress has confirmed a zero-day vulnerability affecting its ShareFile service, which led to significant disruptions. The company has released a patch to address the issue, urging Storage Zones Controller customers to apply it immediately to restore access. This vulnerability highlights the ongoing challenges in securing cloud-based file-sharing services. While the specific technical details of the vulnerability remain undisclosed, the incident underscores the importance of timely patch management. Customers are advised to update their systems promptly to mitigate potential risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/progress-confirms-zero-day-vulnerability-behind-sharefile-disruption/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Chrome 150, Firefox 152 Patch Critical Flaws—Update Now",
-            "title": "Critical Vulnerabilities Patched With Fresh Chrome 150, Firefox 152 Updates",
-            "content": "Google and Mozilla have released updates for Chrome version 150 and Firefox version 152, addressing critical vulnerabilities. Notably, public exploit code targeting Firefox vulnerabilities exists, although no active exploitation has been observed. These updates are crucial for maintaining browser security, as both browsers are widely used across various platforms. Users are urged to update to the latest versions to protect against potential exploits. This development reflects the ongoing need for vigilance in browser security management.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-vulnerabilities-patched-with-fresh-chrome-150-firefox-152-updates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "NPM Supply Chain Attacks Target Node.js Developers",
-            "title": "NPM Ecosystem Hit with Two New Supply Chain Compromises",
-            "content": "The NPM ecosystem has been targeted by two new supply chain attacks, affecting Node.js developers. The attacks involved the compromise of npm packages from the open-source AsyncAPI and Jscrambler Code Integrity projects, which were poisoned with malware. This incident highlights the increasing frequency and sophistication of attacks on developer ecosystems. Developers using these packages should verify their code integrity and consider implementing additional security measures. Supply chain security remains a critical concern for the software development community.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197499/npm-ecosystem-hit-with-two-new-supply-chain-compromises.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Identity Attacks Surpass Exploits in Ransomware Incidents",
-            "title": "Identity Attacks Overtake Exploits as Top Ransomware Cause",
-            "content": "Recent analysis reveals that email-based identity attacks have surpassed traditional exploits as the leading cause of ransomware incidents. Despite the deployment of multifactor authentication (MFA) in 97% of credential-based attacks, these measures often failed to prevent compromises. This trend underscores the evolving tactics of cybercriminals who increasingly target identity credentials. Organizations are advised to enhance their email security and consider additional layers of identity protection. The shift in attack vectors highlights the need for adaptive security strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "SonicWall Zero-Days Exploited—Patch Immediately",
-            "title": "SonicWall Customers Under Threat as Attackers Exploit 2 Zero-Days",
-            "content": "SonicWall customers are at risk after attackers exploited two zero-day vulnerabilities, which were chained together for greater impact. These vulnerabilities were first exploited three weeks before SonicWall disclosed and patched them. The incident emphasizes the critical need for timely vulnerability disclosure and patching. SonicWall users should apply the available patches immediately to protect their systems. This case highlights the persistent threat posed by zero-day vulnerabilities in network security devices.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/sonicwall-zero-day-vulnerabilities-exploited/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "TuxBot v3: AI-Assisted IoT Botnet Emerges",
-            "title": "TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development",
-            "content": "Researchers have uncovered TuxBot v3 Evolution, an Internet-of-Things (IoT) botnet framework potentially developed with the assistance of a large language model (LLM). Although the AI-assisted development was not entirely successful, it marks a novel approach in botnet evolution. This discovery highlights the growing intersection of AI and cybersecurity threats. IoT device manufacturers and users should remain vigilant and ensure their devices are secured against such emerging threats. The use of AI in cybercrime presents new challenges for defenders.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "2-Click Exploit Threatens Developer Environments",
-            "title": "2-Click Cursor Exploit Enables Dev Environment Takeover",
-            "content": "A newly discovered exploit, dubbed the \"2-Click Cursor,\" leverages simple bugs to gain unauthorized access to developers' environments rich in source code. This exploit allows attackers to access sensitive developer secrets with minimal user interaction. The vulnerability underscores the importance of securing development environments against seemingly trivial bugs. Developers should review their security protocols and consider implementing additional safeguards to protect their code and credentials. This incident highlights the ongoing risks posed by overlooked vulnerabilities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Nigeria Mandates Cyberattack Disclosure Amid Rising Threats",
-            "title": "Nigeria Deepens Cybersecurity Efforts as Cybercriminals See More Profits",
-            "content": "Nigeria has introduced new regulations requiring organizations to disclose cyberattacks, aligning with global trends towards mandated transparency. This move comes as cybercriminals increasingly target the West African nation, seeking higher profits. The regulations aim to enhance cybersecurity resilience and foster a culture of transparency among businesses. Organizations in Nigeria should prepare to comply with these disclosure requirements and strengthen their cybersecurity measures. This development reflects a broader shift towards accountability in cybersecurity practices.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/nigeria-cybersecurity-efforts-cybercriminals-profits",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "OkoBot Malware Targets Ledger, Trezor Wallets",
-            "title": "OkoBot Malware Framework Injects Seed Phrase Phishing Into Ledger and Trezor Apps",
-            "content": "The OkoBot malware framework has been identified as targeting users of Ledger and Trezor hardware wallets, aiming to steal recovery phrases. Operating since April 2025, OkoBot injects phishing requests directly into the wallet's desktop software, sometimes waiting until the device is connected. This sophisticated attack highlights the vulnerabilities in hardware wallet applications. Users are advised to verify the authenticity of software updates and remain cautious of unexpected prompts. The incident underscores the importance of securing cryptocurrency assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/okobot-malware-framework-injects-seed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "White House Launches AI-Driven Vulnerability Initiative",
-            "title": "White House Launches AI-Driven ‘Gold Eagle’ Vulnerability Coordination Initiative",
-            "content": "The White House has unveiled the \"Gold Eagle\" initiative, an AI-driven program aimed at enhancing vulnerability coordination. This initiative follows an AI-focused Executive Order signed by President Trump, emphasizing the role of artificial intelligence in national cybersecurity efforts. The program seeks to improve the identification and management of vulnerabilities across critical infrastructure. Organizations are encouraged to engage with the initiative to bolster their cybersecurity posture. This move reflects the growing integration of AI in government-led cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/white-house-launches-ai-driven-gold-eagle-vulnerability-coordination-initiative/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 16 2026",
+            "headline": "Moonshot AI Unveils 2.8T-Parameter Open-Source Model—Kimi K3",
+            "title": "China’s Moonshot AI Releases Kimi K3, Largest Open-Source Model",
+            "content": "Moonshot AI, a Beijing-based startup supported by Alibaba, has launched Kimi K3, a groundbreaking 2.8-trillion-parameter AI model. This model is now the largest open-source AI system globally, rivaling leading U.S. models in performance benchmarks. Kimi K3 is designed to enhance natural language processing capabilities, offering developers a powerful tool for various applications. The release marks a significant step in China's AI development, emphasizing the country's commitment to open-source innovation. Organizations can leverage Kimi K3 to improve AI-driven solutions, but should assess compatibility with existing systems.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Enterprise AI Faces Trust Issues—Not Just Retrieval Challenges",
+            "title": "The AI Context Gap: Trust Issues in Enterprise AI Organizations",
+            "content": "A recent study of 101 enterprises reveals that AI systems are facing trust issues, with infrastructure development outpacing reliability. Retrieval-augmented generation has become the standard for providing business context, yet provider-native retrieval methods are surpassing traditional vector databases. This shift highlights a growing challenge in ensuring data integrity and trustworthiness in AI applications. Enterprises must prioritize building robust, trustworthy systems to avoid potential data mishandling and ensure reliable AI outputs. Professionals should focus on enhancing data validation processes to bridge the trust gap in AI deployments.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Google Vids Introduces Personalized AI Avatars for Users",
+            "title": "Google Vids Now Lets You Star in Your Own AI Videos",
+            "content": "Google has enhanced its Vids platform by introducing personalized AI avatars, allowing users to create videos featuring digital versions of themselves. This feature is powered by Gemini Omni, which also supports video generation and editing from prompts and reference images. The update aims to provide users with more creative control and personalization in content creation. This development reflects the increasing trend of integrating AI into multimedia platforms, offering new opportunities for user engagement. Users should explore these tools to enhance their video content with personalized elements.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Roblox Adds AI Game Creation—Build Games with Text Prompts",
+            "title": "Roblox Launches AI-Powered Game-Creation Feature in Mobile App",
+            "content": "Roblox has introduced a new \"Build\" feature in its mobile app, enabling users to generate basic games using a single text prompt. This AI-powered tool simplifies game development, making it accessible to a broader audience, including those without coding skills. By leveraging AI, Roblox aims to democratize game creation and foster creativity among its user base. The feature aligns with the growing trend of AI-driven content creation tools in the gaming industry. Users are encouraged to experiment with this feature to explore new game development possibilities.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "NY Governor Uses AI to Review State Regulations",
+            "title": "New York Governor Uses AI to Analyze State Rules and Policies",
+            "content": "New York Governor Kathy Hochul has announced the use of AI to review and analyze every rule, regulation, and policy in the state. Despite a recent moratorium on new AI data centers, Hochul is leveraging AI technology to streamline and improve regulatory processes. This initiative reflects a growing trend of utilizing AI in government operations to enhance efficiency and decision-making. State officials and policymakers should consider the implications of AI integration in regulatory frameworks, ensuring transparency and accountability.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "NVIDIA Nemotron 3 Tops RTEB—Advances Agentic Retrieval",
+            "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB",
+            "content": "NVIDIA's Nemotron 3 Embed has achieved the top ranking on the RTEB benchmark, advancing the field of agentic retrieval. This accomplishment underscores NVIDIA's leadership in AI hardware and software development, particularly in enhancing retrieval capabilities. The Nemotron 3's performance highlights its potential to improve AI-driven search and data retrieval processes across various applications. Organizations utilizing AI for data-intensive tasks should consider integrating Nemotron 3 to optimize retrieval efficiency and accuracy.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Google AI Mode Expands—Now Links with Select Apps",
+            "title": "Google’s AI Mode Now Lets You Link and Interact with Apps",
+            "content": "Google has expanded its AI Mode, allowing users to link and interact with select applications beyond simple question-answering. This update enhances AI Mode's functionality, enabling it to perform tasks across various apps, thereby increasing productivity and user engagement. The integration reflects a broader trend of AI systems becoming more embedded in everyday digital interactions. Users should explore these new capabilities to streamline workflows and enhance app usage.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Google Rebrands NotebookLM—Now Gemini Notebook",
+            "title": "Google is Renaming NotebookLM to Gemini Notebook",
+            "content": "Google has announced the rebranding of its AI note-taking app from NotebookLM to Gemini Notebook. Despite the name change, the app will continue as a standalone product while integrating more deeply with Google's Gemini and Search platforms. This move aims to unify Google's AI offerings under the Gemini brand, enhancing user experience and functionality. Users should be aware of the rebranding and explore new integration features to maximize productivity.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "DoorDash Launches Command-Line Tool for Developers",
+            "title": "Yes, You Can Now Order DoorDash from the Command Line",
+            "content": "DoorDash has introduced dd-cli, a command-line interface tool in limited beta, allowing developers and AI agents to search stores, build carts, and place orders directly from the terminal. This initiative represents a shift towards software designed for AI agents, facilitating seamless integration into automated workflows. The tool is expected to enhance efficiency for developers and businesses utilizing AI-driven processes. Interested parties should apply for beta access to explore its capabilities and potential applications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "AMI Labs CEO Rejects 'AGI' and 'Superintelligence' Labels",
+            "title": "Why AMI Labs’ Alexandre LeBrun Won’t Call His AI ‘AGI’",
+            "content": "Alexandre LeBrun, CEO of AMI Labs, has publicly dismissed the use of terms like \"AGI\" (Artificial General Intelligence) and \"superintelligence\" for his company's AI developments. LeBrun's stance highlights a cautious approach to AI terminology, focusing on realistic capabilities rather than speculative labels. This perspective aligns with a segment of the AI community advocating for precise language to avoid misconceptions about AI's current state and potential. Professionals should consider the implications of terminology in AI discourse and development.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/why-ami-labs-alexandre-lebrun-wont-call-his-ai-agi-or-superintelligence/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 16 2026",
             "headline": "Moonshot's Kimi 3 to Rival Anthropic's Opus 4.8",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Suno AI Scrapes YouTube—Millions of Songs Compromised",
-            "title": "Hack Reveals Suno AI's Extensive Use of YouTube Data for Training",
-            "content": "A recent hacking incident has exposed that Suno, an AI music generator, used unauthorized methods to scrape millions of songs and lyrics from platforms like YouTube Music, Deezer, and Genius. The breach occurred when a hacker accessed Suno's source code using an employee's credentials, revealing the extent of the data collection. This revelation raises significant concerns over intellectual property rights and the ethical use of training data in AI models. The music industry and content creators are particularly affected, as their work may have been used without consent. Stakeholders should review their data protection strategies and consider legal actions against unauthorized data usage.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "GPT-Red Enhances AI Safety Through Self-Improvement",
-            "title": "OpenAI's GPT-Red Uses Self-Play for Enhanced AI Robustness",
-            "content": "OpenAI has introduced GPT-Red, an innovative automated red teaming system designed to enhance AI safety and alignment. By employing self-play techniques, GPT-Red improves the robustness of AI models against prompt injection attacks and other vulnerabilities. This development is crucial for organizations relying on AI systems for critical operations, as it promises to mitigate risks associated with AI deployment. The system's ability to self-improve through iterative testing sets a new standard in AI security practices. Companies should consider integrating similar self-improvement mechanisms to bolster their AI defenses.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Inkling Model Open-Sourced—A New AI Contender Emerges",
-            "title": "Thinking Machines Releases Inkling, a Multimodal Open Source AI Model",
-            "content": "Thinking Machines has open-sourced Inkling, a 975-billion-parameter multimodal language model, marking a significant milestone in AI development. Designed for low-cost deployment and resistance to censorship, Inkling allows enterprises to customize and control AI workloads on-premises or in virtual private clouds. This move positions Thinking Machines as a formidable competitor to industry giants like Anthropic and OpenAI. Businesses seeking flexible AI solutions can leverage Inkling's capabilities to enhance their operations while maintaining data sovereignty. The release underscores a growing trend towards open-source AI models that prioritize user control and adaptability.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/thinking-machines-open-sources-first-multimodal-language-model-inkling-focused-on-low-cost-and-resistance-to-censorship",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Microsoft Trains Sales Teams Against OpenAI, Anthropic",
-            "title": "Microsoft Promotes In-House AI Models Over Competitors",
-            "content": "Microsoft is reportedly training its sales teams to highlight the efficiency and cost-effectiveness of its in-house AI models compared to those of competitors like OpenAI and Anthropic. This strategic move aims to position Microsoft's AI offerings as superior in terms of performance and value. As AI adoption continues to grow, organizations are increasingly evaluating the cost-benefit ratios of different AI solutions. Microsoft's emphasis on its proprietary models reflects a competitive landscape where differentiation in AI capabilities is crucial. Companies should assess their AI needs carefully to choose the most suitable solutions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "xAI Sues Over Grok Misuse in CSAM Deepfakes",
-            "title": "xAI Takes Legal Action Against Grok Misuse for CSAM Deepfakes",
-            "content": "xAI, owned by Elon Musk, has filed a lawsuit against a South Carolina man for allegedly using its Grok AI chatbot to generate child sexual abuse material (CSAM) deepfakes. The lawsuit accuses Terry Wayne Harwood of intentionally circumventing Grok's safeguards to create illicit content. This case highlights the potential misuse of AI technologies and the importance of robust ethical guidelines and security measures. Organizations developing AI tools must prioritize the implementation of effective safeguards to prevent similar abuses. Legal frameworks may need to evolve to address the challenges posed by AI-generated content.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "OpenAI Launches $230 Keyboard Amid Legal Dispute",
-            "title": "OpenAI Introduces Keyboard for Codex Amidst Apple Legal Battle",
-            "content": "Amid a legal battle with Apple over hardware trade theft allegations, OpenAI has released a $230 light-up keyboard designed to complement its Codex coding application. The keyboard aims to enhance user experience by providing a tailored interface for Codex users. This release comes as OpenAI seeks to expand its hardware offerings despite ongoing legal challenges. Developers using Codex may find the keyboard beneficial for improving coding efficiency and workflow. The situation underscores the competitive tensions in the tech industry, where intellectual property disputes are increasingly common.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "SpaceX Stock Drops to $135 Pre-Starship Launch",
-            "title": "SpaceX Shares Decline to $135 Ahead of Starship Launch",
-            "content": "SpaceX's stock has fallen to $135 per share, reflecting a decline from its post-IPO highs as investors reassess the company's prospects ahead of the Starship launch. The market's response indicates a more cautious approach to the ambitious promises made by CEO Elon Musk. This development is significant for stakeholders monitoring the aerospace sector, as it may influence investment strategies and risk assessments. The upcoming Starship launch will be a critical test for SpaceX's technological capabilities and market confidence. Investors should stay informed about the launch's outcomes and potential impacts on SpaceX's valuation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/spacex-falls-to-135-ipo-price-ahead-of-starship-launch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Thinking Machines Debuts Inkling—A Year in the Making",
-            "title": "Thinking Machines Unveils Inkling After Extensive Development",
-            "content": "Thinking Machines has officially launched Inkling, its first open-source AI model, after over a year of development focused on building robust AI infrastructure. Inkling's release marks a pivotal moment for the company as it challenges the one-size-fits-all approach to AI with a customizable, multimodal solution. This model is designed to cater to diverse enterprise needs, offering flexibility and control over AI deployments. The introduction of Inkling highlights a shift towards more adaptable AI models that can be tailored to specific organizational requirements. Enterprises should explore how such models can enhance their AI strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Whatnot Acquires Shaped for Enhanced Live Shopping AI",
-            "title": "Whatnot Acquires Shaped to Boost Real-Time Shopping Recommendations",
-            "content": "Livestream shopping platform Whatnot has acquired Shaped, an AI startup specializing in real-time recommendations and search. This acquisition aims to enhance Whatnot's personalization and discovery features as it expands into new product categories. By integrating Shaped's machine learning capabilities, Whatnot seeks to improve user engagement and conversion rates in the competitive live shopping market. The move reflects a broader trend of leveraging AI to optimize e-commerce experiences. Retailers should consider similar strategies to stay competitive and meet evolving consumer expectations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Microsoft Patches 570 Vulnerabilities with AI Assistance",
-            "title": "Microsoft Uses AI to Patch Record 570 Security Vulnerabilities",
-            "content": "Microsoft's latest Patch Tuesday release addressed a record 570 security vulnerabilities across its product line, thanks to AI-driven discoveries. This unprecedented number of fixes underscores the critical role AI plays in identifying and mitigating security threats. The vulnerabilities spanned various Microsoft products, highlighting the importance of regular updates and proactive security measures. Organizations using Microsoft products should prioritize applying these patches to safeguard against potential exploits. This development emphasizes the growing reliance on AI technologies to enhance cybersecurity defenses.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -449,6 +449,39 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-58644",
+            "dateAdded": "Jul 16, 2026",
+            "vendor": "Microsoft SharePoint",
+            "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-25089",
+            "dateAdded": "Jul 16, 2026",
+            "vendor": "Fortinet FortiSandbox",
+            "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-39808",
+            "dateAdded": "Jul 16, 2026",
+            "vendor": "Fortinet FortiSandbox",
+            "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-46817",
             "dateAdded": "Jul 15, 2026",
             "vendor": "Oracle E-Business Suite",
@@ -523,28 +556,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-4128",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-56291",
-            "dateAdded": "Jul 10, 2026",
-            "vendor": "Balbooa Forms",
-            "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56291",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48939",
-            "dateAdded": "Jul 10, 2026",
-            "vendor": "iCagenda iCagenda",
-            "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48939",
             "isZeroDay": false
         }
     ],
