@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1594",
+      "incident_id": 1594,
+      "title": "Purportedly AI-Generated Facebook Pages Allegedly Targeted Australian Rules Football Club Geelong Ca",
+      "date": "2026-07-16",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1578",
       "incident_id": 1578,
       "title": "LLM-Driven Ransomware Operator Dubbed JADEPUFFER Reportedly Targeted Production Database",
@@ -2738,9 +2746,9 @@
     }
   ],
   "stats": {
-    "total": 342,
-    "last7Days": 19,
-    "last30Days": 108
+    "total": 343,
+    "last7Days": 20,
+    "last30Days": 109
   },
-  "lastUpdated": "2026-07-17T02:42:26.323948+05:30"
+  "lastUpdated": "2026-07-17T09:01:35.557216+05:30"
 }
