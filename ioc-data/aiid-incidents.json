@@ -2719,20 +2719,12 @@
       "date": "2026-04-19",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1455",
-      "incident_id": 1455,
-      "title": "Purported Deepfake Videos Allegedly Impersonated Optometrist Joseph Allen to Promote Myopia-Reversal",
-      "date": "2026-04-18",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 341,
+    "total": 340,
     "last7Days": 18,
     "last30Days": 79
   },
-  "lastUpdated": "2026-07-18T02:34:44.278890+05:30"
+  "lastUpdated": "2026-07-18T08:52:37.784018+05:30"
 }
