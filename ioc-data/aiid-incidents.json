@@ -2679,52 +2679,12 @@
       "date": "2026-04-24",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1456",
-      "incident_id": 1456,
-      "title": "Video with Reportedly AI-Generated Audio Purported to Show Croatian Footballer Luka Modri\u0107 Endorsing",
-      "date": "2026-04-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1457",
-      "incident_id": 1457,
-      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Immunologist Stipan Jonji\u0107 Promo",
-      "date": "2026-04-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1458",
-      "incident_id": 1458,
-      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Neurosurgeon Josip Paladino Endo",
-      "date": "2026-04-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1459",
-      "incident_id": 1459,
-      "title": "Video with Reportedly AI-Generated Media Purported to Show Croatian Physician Alemka Markoti\u0107 Endors",
-      "date": "2026-04-19",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1460",
-      "incident_id": 1460,
-      "title": "Baidu Apollo Go Robotaxis Stopped in Traffic During Reported System Failure in Wuhan, Stranding Some",
-      "date": "2026-04-19",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 340,
-    "last7Days": 18,
-    "last30Days": 79
+    "total": 335,
+    "last7Days": 13,
+    "last30Days": 68
   },
-  "lastUpdated": "2026-07-18T22:37:51.699551+05:30"
+  "lastUpdated": "2026-07-19T01:13:04.703894+05:30"
 }
