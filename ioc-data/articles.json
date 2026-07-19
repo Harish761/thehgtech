@@ -1,6 +1,38 @@
 {
   "articles": [
     {
+      "id": "hardware-backed-trust-enterprise-2026",
+      "title": "Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data",
+      "date": "July 19, 2026",
+      "category": "Enterprise Security",
+      "badge": "FLAGSHIP",
+      "author": "Harish G",
+      "excerpt": "An independent enterprise security analysis of how Windows (TPM, Secure Boot, Pluton, Windows Hello, BitLocker) and macOS (Secure Enclave, T2, Apple Silicon, FileVault, Touch ID, Passkeys) establish hardware-backed trust to protect enterprise identities, credentials, and Zero Trust access decisions.",
+      "image": "/images/articles/hardware-backed-trust-enterprise-2026.png",
+      "externalUrl": "articles/hardware-backed-trust-enterprise-2026.html",
+      "tags": [
+        "Hardware Trust",
+        "TPM",
+        "Secure Enclave",
+        "BitLocker",
+        "FileVault",
+        "Windows Hello",
+        "Touch ID",
+        "Passkeys",
+        "FIDO2",
+        "Secure Boot",
+        "Measured Boot",
+        "Pluton",
+        "Zero Trust",
+        "Conditional Access",
+        "Enterprise Endpoint Security",
+        "Microsoft Entra ID",
+        "Intune",
+        "Jamf",
+        "Device Compliance"
+      ]
+    },
+    {
       "id": "report-20260713",
       "title": "Weekly Threat Report: July 13, 2026",
       "date": "July 13, 2026",
