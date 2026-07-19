@@ -5,92 +5,101 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 17 2026",
+            "headline": "SharePoint RCE Exploited—Patch Critical CVE-2026-58644 Now",
+            "title": "Fresh SharePoint Vulnerability Exploited Soon After Disclosure",
+            "content": "A critical vulnerability in Microsoft SharePoint, identified as CVE-2026-58644, is being actively exploited shortly after its disclosure. This flaw allows remote, authenticated attackers to execute arbitrary code on affected servers, posing a significant risk to organizations using SharePoint. The vulnerability impacts all versions of SharePoint Server prior to the latest patch. Organizations are urged to apply the security update immediately to mitigate potential breaches. This incident underscores the importance of timely patch management in enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fresh-sharepoint-vulnerability-exploited-soon-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "CISA Adds SharePoint Zero-Day to Exploited Vulnerabilities List",
+            "title": "CISA Adds Exploited SharePoint RCE Zero-Day CVE-2026-58644 to KEV",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the newly patched CVE-2026-58644, a critical remote code execution vulnerability in Microsoft SharePoint Server, to its Known Exploited Vulnerabilities catalog. Federal Civilian Executive Branch agencies are mandated to apply the fixes by July 19, 2026. This vulnerability allows attackers to execute arbitrary code, highlighting the urgency for all organizations using SharePoint to update their systems immediately. The addition to CISA's KEV list emphasizes the flaw's active exploitation and potential for widespread impact.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "Ransomware Halts Coca-Cola's Fairlife Production in US",
+            "title": "Coca-Cola Suspends US Fairlife Production Due to Ransomware Attack",
+            "content": "Coca-Cola has temporarily suspended production of its Fairlife dairy products in the United States following a ransomware attack. The company is currently assessing the full scope and impact of the incident, which has disrupted operations. This attack highlights the growing threat of ransomware to critical supply chains and the food and beverage industry. Organizations are reminded to bolster their cybersecurity defenses and incident response plans to mitigate such risks. The incident serves as a stark reminder of the vulnerabilities within industrial control systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Anubis Ransomware Targets Healthcare—RaaS Model Expands Threat",
+            "title": "Anubis Ransomware: What You Need to Know",
+            "content": "The Anubis ransomware-as-a-service (RaaS) operation has significantly impacted healthcare organizations, though other sectors are also at risk. This RaaS model allows cybercriminals to rent ransomware tools, expanding the threat landscape. Healthcare systems, already strained by operational demands, are particularly vulnerable to such attacks. Organizations must enhance their cybersecurity measures, including regular backups and employee training, to defend against ransomware threats. The rise of RaaS underscores the need for comprehensive cybersecurity strategies across all industries.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.fortra.com/blog/anubis-ransomware",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "AI Boosts Iran's Cyber Tactics in 2026 Conflict",
+            "title": "AI Has Enhanced Iran’s Asymmetric Playbook During the 2026 Conflict",
+            "content": "Iran has leveraged artificial intelligence to enhance its asymmetric warfare strategies during the 2026 conflict, using AI as a force multiplier in cyber operations, influence campaigns, and domestic surveillance. This development highlights the increasing role of AI in modern warfare, allowing for more sophisticated and efficient operations. The use of AI in cyber tactics poses new challenges for global cybersecurity defenses, necessitating advancements in AI-driven threat detection and response. Security professionals must stay informed about the evolving capabilities of state actors employing AI in cyber warfare.",
+            "source": "Recorded Future",
+            "sourceUrl": "https://www.recordedfuture.com/research/iran-ai-asymmetric-playbook",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Microsoft Patches 622 CVEs—3 Zero-Days Fixed in July",
+            "title": "July 2026 Patch Tuesday Fixes 622 Microsoft CVEs, Including Three Zero-Days",
+            "content": "Microsoft's July 2026 Patch Tuesday has addressed a record-breaking 622 Common Vulnerabilities and Exposures (CVEs), including three critical zero-day vulnerabilities. This update is three times larger than the previous month, underscoring the ongoing challenges in software security. Among the fixed vulnerabilities, 62 are rated critical, affecting various Microsoft products. Organizations are urged to apply these patches promptly to protect against potential exploits. The scale of this update highlights the importance of robust patch management practices in maintaining cybersecurity resilience.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/07/july-2026-patch-tuesday-fixes-622-microsoft-cves-including-three-zero-days",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 15 2026",
+            "headline": "Nigeria Mandates Cyberattack Disclosure Amid Rising Threats",
+            "title": "Nigeria Deepens Cybersecurity Efforts as Cybercriminals See More Profits",
+            "content": "Nigeria has implemented new regulations requiring organizations to disclose cyberattacks, aligning with global trends towards transparency in cybersecurity incidents. This move aims to enhance national cybersecurity posture as cybercriminals increasingly target the West African nation. The mandatory disclosure is expected to improve threat intelligence sharing and response strategies. Organizations operating in Nigeria must adapt to these regulatory changes and strengthen their cybersecurity frameworks to mitigate risks. The initiative reflects a growing recognition of the importance of transparency in combating cybercrime.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/nigeria-cybersecurity-efforts-cybercriminals-profits",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Ransomware Negotiator Betrays Victims—Millions Lost to BlackCat",
+            "title": "The Inside Job That Cost Ransomware Victims Millions",
+            "content": "A trusted ransomware negotiator has been exposed for secretly collaborating with the BlackCat ransomware group, leading to increased extortion demands and financial losses for victims. This betrayal highlights the risks associated with relying on third-party negotiators in ransomware incidents. Organizations are advised to conduct thorough due diligence when selecting negotiation partners and to consider alternative strategies, such as strengthening internal incident response capabilities. The incident underscores the complexity and challenges of navigating ransomware negotiations.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/07/the-inside-job-that-cost-ransomware-victims-millions",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 14 2026",
+            "headline": "Ransomware Negotiator's Double-Cross Exposes Victims to BlackCat",
+            "title": "The Ransomware Negotiator Who Was Working for the Other Side",
+            "content": "A ransomware negotiation specialist has been found to be colluding with the BlackCat ransomware gang, compromising the trust of victims seeking assistance. This revelation exposes the vulnerabilities in the ransomware negotiation process and the potential for insider threats. Companies are urged to reassess their reliance on external negotiators and enhance their cybersecurity measures to prevent such breaches of trust. The incident serves as a cautionary tale about the complexities of dealing with ransomware attacks and the importance of vetting third-party partners.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ransomware-negotiator-working-other-side",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 13 2026",
+            "headline": "Ghostcommit Attack Hides AI Prompts in Images—New Threat Vector",
+            "title": "Ghostcommit Attack Hides Malicious AI Instructions in Images",
+            "content": "A novel proof-of-concept attack known as Ghostcommit demonstrates how malicious AI instructions can be concealed within PNG image files, bypassing traditional code review processes. This attack vector poses a significant threat to software development environments, as it allows for covert prompt injection that can lead to unauthorized data access or manipulation. Developers and security teams are advised to enhance their code review and scanning procedures to detect such hidden threats. The emergence of Ghostcommit highlights the evolving tactics of cyber adversaries in exploiting AI technologies.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/ai/2026/07/ghostcommit-attack-hides-malicious-ai-instructions-in-images",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
             "headline": "Armenia Detains Russian Tourist—Mistaken Identity in REvil Case",
             "title": "Armenia Holds Russian Tourist on U.S. Warrant for REvil Hacker",
             "content": "Armenia has detained a Russian tourist, Aleksandr Ermakov, on a U.S. extradition request related to the notorious REvil ransomware group. The arrest occurred at Yerevan's Zvartnots airport, where Ermakov was pulled from the departure hall. His wife claims this is a case of mistaken identity, as the U.S. warrant targets a suspect with the same name involved in REvil activities. The incident highlights the complexities and potential pitfalls in international cybercrime enforcement. Legal experts emphasize the need for thorough identity verification in extradition cases to prevent wrongful detentions. This case underscores the global reach and ongoing impact of ransomware investigations.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/armenia-detains-russian-tourist-on-us.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "£29M TfL Hack—Two Hackers Sentenced to 5.5 Years",
-            "title": "Scattered Spider Hackers Sentenced for £29 Million TfL Cyberattack",
-            "content": "Owen Flowers and Thalha Jubair have been sentenced to five and a half years each for their roles in the 2024 cyberattack on Transport for London (TfL). The hack rendered 148 TfL systems inoperable, impacting 27,000 employees and causing significant operational disruptions. The attackers, part of the Scattered Spider group, exploited vulnerabilities in TfL's network to execute the breach. This case highlights the severe consequences of cyberattacks on critical infrastructure and the legal repercussions for those involved. Organizations are urged to enhance their cybersecurity measures to prevent similar incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/two-scattered-spider-hackers-get-55.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "CISA Warns—Secure SharePoint Now Amid Active Exploits",
-            "title": "CISA Urges Immediate Action on SharePoint Vulnerabilities",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent advisory for organizations to secure their Microsoft SharePoint deployments. Three vulnerabilities in the on-premises version are being actively exploited, posing significant risks to affected systems. These vulnerabilities could allow attackers to gain unauthorized access and compromise sensitive data. CISA recommends immediate patching and hardening of SharePoint environments to mitigate potential threats. This alert underscores the importance of proactive vulnerability management in protecting enterprise collaboration platforms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197775/cisa-urges-immediate-sharepoint-hardening-as-exploits-mount.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Zoom Patches Critical Account Takeover Vulnerability",
-            "title": "Zoom Addresses Critical Security Flaw Allowing Account Takeovers",
-            "content": "Zoom has patched a critical security vulnerability that could have allowed unauthenticated users to take over accounts via network access. This flaw, affecting Zoom's extensive user base of over 300 million daily active users, highlights the platform's vulnerability to cyber threats. The issue underscores the importance of regular security updates and vigilance in safeguarding communication platforms. Users are advised to update their Zoom applications immediately to protect against potential exploitation. This incident serves as a reminder of the ongoing need for robust cybersecurity measures in widely used software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197962/zoom-patches-account-takeover-hole-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "NPM Ecosystem Hit—Supply Chain Attacks Target Node.js",
-            "title": "NPM Supply Chain Compromises Affect Node.js Developer Ecosystem",
-            "content": "The NPM ecosystem has been targeted by two new supply chain attacks, impacting Node.js developers. Malicious actors compromised multiple npm packages, including those from AsyncAPI and Jscrambler Code Integrity, injecting malware into the development chain. These attacks highlight the increasing sophistication and frequency of threats targeting open-source software repositories. Developers are urged to verify package integrity and monitor for unusual activity in their projects. This incident emphasizes the critical need for enhanced security practices in managing software dependencies.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197499/npm-ecosystem-hit-with-two-new-supply-chain-compromises.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "Identity Attacks Surpass Exploits in Ransomware Incidents",
-            "title": "Email Attacks Now Leading Cause of Ransomware Breaches",
-            "content": "Email-based identity attacks have overtaken traditional exploits as the primary cause of ransomware incidents, according to recent findings. Despite the deployment of multifactor authentication (MFA) in 97% of credential-based attacks, these measures failed to prevent compromises. This shift highlights the evolving tactics of cybercriminals who are increasingly targeting human vulnerabilities. Organizations are advised to enhance their email security protocols and conduct regular employee training to mitigate these risks. The findings underscore the need for comprehensive security strategies that address both technical and human factors.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/identity-access-management-security/identity-attacks-overtake-exploits-top-ransomware-cause",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "SonicWall Zero-Days Exploited—Customers at Risk",
-            "title": "SonicWall Customers Threatened by Exploited Zero-Day Vulnerabilities",
-            "content": "SonicWall customers are at risk as attackers exploit two zero-day vulnerabilities, which were first used three weeks before the vendor disclosed and patched them. These vulnerabilities, when chained together, allow attackers to bypass security measures and gain unauthorized access. The incident highlights the critical importance of timely vulnerability disclosure and patch management. SonicWall users are urged to apply the latest security updates immediately to protect their systems. This case underscores the ongoing threat posed by zero-day exploits in cybersecurity.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/sonicwall-zero-day-vulnerabilities-exploited/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "2-Click Exploit Threatens Developer Environments",
-            "title": "Simple Exploit Allows Takeover of Developer Environments",
-            "content": "A newly discovered exploit, requiring only two clicks, enables attackers to gain access to developers' environments, exposing sensitive source code and secrets. This exploit leverages longstanding bugs that have been overlooked, posing a significant risk to development operations. The vulnerability underscores the importance of securing development environments and regularly auditing code for potential weaknesses. Developers are advised to implement stringent access controls and monitor for unusual activity. This incident highlights the need for vigilance in protecting software development processes from exploitation.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 15 2026",
-            "headline": "White House Launches AI-Driven Cyber Vulnerability Program",
-            "title": "AI-Powered Initiative to Accelerate Cyber Vulnerability Remediation",
-            "content": "The White House has announced the launch of Gold Eagle, an AI-driven program designed to enhance vulnerability management across government agencies and critical infrastructure. This initiative aims to identify, prioritize, and remediate software vulnerabilities more efficiently, leveraging artificial intelligence to streamline processes. The program represents a significant expansion of AI applications beyond threat detection, focusing on proactive cybersecurity measures. Agencies are encouraged to integrate Gold Eagle into their existing security frameworks to improve resilience against cyber threats. This development marks a strategic shift towards AI-enhanced cybersecurity operations.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4197348/white-house-launches-ai-driven-vulnerability-clearinghouse-to-speed-cyber-remediation.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Legacy Systems Pose OT Security Challenges",
-            "title": "Balancing OT Security Risks with Legacy System Constraints",
-            "content": "Operational Technology (OT) security faces significant challenges due to the prevalence of legacy systems in critical infrastructure. These outdated systems often lack modern security features, making them vulnerable to cyber threats. The disclosure of OT vulnerabilities requires careful consideration to balance safety concerns and the need for transparency. Organizations must prioritize upgrading legacy systems and implementing robust security measures to protect against potential attacks. This issue highlights the complex interplay between maintaining operational continuity and ensuring cybersecurity in industrial environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/legacy-systems-real-world-impacts-the-reality-of-ot-security/",
             "relatedResources": []
         },
         {
@@ -173,25 +182,97 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4197923/the-saas-blind-spot-why-security-teams-cant-get-inside-their-own-apps.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "Risk Ledger Secures $32M to Tackle Supply Chain Security",
-            "title": "Risk Ledger Raises $32 Million in Series B Funding for Supply Chain Security",
-            "content": "Risk Ledger, a UK-based firm specializing in supply chain security, has successfully raised $32 million in a Series B funding round. The company offers a collaborative platform designed to help organizations manage and mitigate supply chain risks effectively. This funding will enable Risk Ledger to expand its platform capabilities and reach a broader market, addressing the growing concerns around supply chain vulnerabilities. As supply chain attacks become increasingly prevalent, the need for comprehensive risk management solutions is more critical than ever. Organizations are encouraged to explore innovative tools like Risk Ledger to enhance their security posture.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/risk-ledger-raises-32-million-in-series-b-funding/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
+            "date": "Jul 18 2026",
+            "headline": "Dave Eggers Critiques ChatGPT—\"Silencing an Entire Generation\"",
+            "title": "Dave Eggers Addresses OpenAI Staff on ChatGPT's Cultural Impact",
+            "content": "Author Dave Eggers recently addressed OpenAI staff, expressing concerns that ChatGPT is \"silencing an entire generation.\" Invited by OpenAI CEO Sam Altman, Eggers shared his perspective on the cultural and creative implications of AI-driven content generation. Eggers, known for his contributions to literature and education, highlighted the potential for AI to overshadow human creativity and diminish the diversity of voices in writing and journalism. This discussion underscores ongoing debates about the ethical and societal impacts of AI technologies. OpenAI continues to engage with thought leaders to navigate these complex issues.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 18 2026",
+            "headline": "Moonshot AI's Kimi Sparks \"Full AI Communism\" Concerns",
+            "title": "Moonshot AI's Kimi Model Raises Alarm Over AI Governance",
+            "content": "Moonshot AI's latest release of the Kimi model has sparked debate over the concept of \"full AI communism.\" The Chinese company's model raises questions about centralized AI control and its implications for global tech governance. Critics argue that such models could lead to increased surveillance and control by state actors. Moonshot AI, backed by Alibaba, maintains that Kimi is designed to enhance AI accessibility and innovation. This development highlights the geopolitical tensions surrounding AI advancements and the need for international dialogue on AI ethics and regulation.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Kimi K3—World's Largest Open-Source AI Model Released",
+            "title": "Moonshot AI Unveils Kimi K3, Rivaling Top U.S. AI Systems",
+            "content": "Moonshot AI has launched Kimi K3, a 2.8-trillion-parameter model, now the largest open-source AI model globally. This Beijing-based startup, supported by Alibaba, claims Kimi K3 matches the performance of leading proprietary models from the U.S. The model's open-source nature aims to democratize AI development, providing researchers and developers worldwide with access to cutting-edge AI capabilities. This release positions Moonshot AI as a formidable competitor in the global AI landscape, challenging the dominance of U.S. tech giants in AI research and development.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 15 2026",
-            "headline": "GPT-Red Enhances AI Safety via Self-Improvement",
-            "title": "OpenAI's GPT-Red Uses Self-Play for AI Safety and Robustness",
-            "content": "OpenAI has introduced GPT-Red, an automated red teaming system designed to enhance AI safety and robustness through self-improvement. By leveraging self-play, GPT-Red aims to improve AI alignment and strengthen defenses against prompt injection attacks. This innovative approach allows the AI to simulate adversarial scenarios, learning to counteract potential threats autonomously. The development addresses growing concerns about AI vulnerabilities, particularly in high-stakes environments where AI systems are increasingly deployed. Security professionals should monitor GPT-Red's progress as it represents a significant step toward more resilient AI systems.",
+            "headline": "Thinking Machines Enters AI Arena with Inkling Model",
+            "title": "Thinking Machines Lab Debuts Inkling, A 975-Billion-Parameter AI Model",
+            "content": "Thinking Machines Lab has introduced Inkling, a 975-billion-parameter open-source model designed to process video and audio data. This model positions the company as a potential competitor to established AI leaders like Anthropic and OpenAI. Inkling's capabilities in understanding multimedia content could revolutionize applications in media analysis, content creation, and more. As the AI landscape becomes increasingly competitive, Thinking Machines' entry with Inkling highlights the growing trend of open-source AI models driving innovation and accessibility in the field.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "NVIDIA NeMo Automodel—Scale Video, Image Model Fine-Tuning",
+            "title": "NVIDIA NeMo Automodel and Diffusers Enhance AI Model Fine-Tuning",
+            "content": "NVIDIA has introduced NeMo Automodel, a tool designed to fine-tune video and image models at scale, in collaboration with Hugging Face's Diffusers. This integration allows developers to efficiently adjust AI models for specific tasks, enhancing performance and reducing development time. By leveraging this tool, organizations can optimize AI models for diverse applications, from autonomous vehicles to content creation. This advancement underscores the importance of scalable AI solutions in meeting the growing demand for customized and efficient AI deployments.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 17 2026",
+            "headline": "OpenAI Introduces AI Scorecard for Measuring ROI",
+            "title": "OpenAI's AI Scorecard Evaluates ROI and Compute Efficiency",
+            "content": "OpenAI CFO Sarah Friar has unveiled a practical AI scorecard designed to measure return on investment (ROI) through metrics such as useful work, cost per successful task, dependability, and return on compute. This tool aims to provide organizations with a comprehensive framework for evaluating the efficiency and effectiveness of their AI deployments. As AI adoption grows, the need for standardized metrics to assess AI performance becomes increasingly critical. OpenAI's initiative reflects the industry's shift towards accountability and transparency in AI investments.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+            "sourceUrl": "https://openai.com/index/a-scorecard-for-the-ai-age",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Google Vids—Create AI Videos with Personal Avatars",
+            "title": "Google Vids Introduces Personalized AI Avatars for Video Creation",
+            "content": "Google has enhanced its Vids platform with personalized AI avatars, allowing users to create videos featuring digital versions of themselves. Powered by Gemini Omni, these tools enable video generation and editing from prompts and reference images. This feature offers users a novel way to engage with content creation, blending personal identity with AI technology. As AI continues to transform media production, Google's innovation highlights the potential for personalized and interactive digital experiences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Roblox \"Build\" Feature—Create Games with Text Prompts",
+            "title": "Roblox Launches AI-Powered Game Creation with \"Build\" Feature",
+            "content": "Roblox has introduced a new \"Build\" feature in its mobile app, enabling users to generate basic games using a single text prompt. This AI-powered tool simplifies game development, making it accessible to users without programming skills. By leveraging natural language processing, Roblox aims to democratize game creation and expand its user base. This development reflects the broader trend of integrating AI into creative platforms, empowering users to bring their ideas to life with minimal technical barriers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "NY Governor Uses AI to Review State Regulations",
+            "title": "New York Governor Utilizes AI for Comprehensive Regulation Analysis",
+            "content": "New York Governor Kathy Hochul has announced the use of AI to analyze all state rules, regulations, and policies. Despite a recent moratorium on new AI data centers, Hochul's administration is leveraging AI technology to streamline regulatory review processes. This initiative aims to enhance governmental efficiency and ensure regulatory compliance. As AI becomes increasingly integrated into public administration, New York's approach highlights the potential for AI to transform bureaucratic processes and improve governance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 16 2026",
+            "headline": "Claude Integrates 1Password for Secure Credential Management",
+            "title": "Claude Now Accesses 1Password Credentials for Enhanced Task Automation",
+            "content": "Anthropic's chatbot Claude now integrates with 1Password, allowing it to access stored security credentials such as usernames and passwords. This feature enables Claude to perform multi-step tasks like booking travel and managing online accounts securely. By automating credential management, users can streamline workflows while maintaining security. This integration reflects the growing trend of combining AI with cybersecurity tools to enhance productivity and user experience in digital environments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
             "relatedResources": []
         },
         {
@@ -240,42 +321,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 16 2026",
-            "headline": "Google AI Mode—App Integration Expanded",
-            "title": "Google Expands AI Mode to Integrate with Select Apps",
-            "content": "Google has enhanced its AI Mode, allowing users to link and interact with select applications directly. This update extends AI Mode's capabilities beyond simple question-answering to executing tasks across integrated apps. The expansion aims to streamline user workflows and improve productivity by leveraging AI's potential in everyday applications. As AI becomes more embedded in software ecosystems, developers should explore opportunities to integrate AI functionalities into their products. This development reflects the ongoing trend of AI-driven automation in personal and professional settings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "Google Rebrands NotebookLM to Gemini Notebook",
-            "title": "Google's AI Note-Taking App Renamed to Gemini Notebook",
-            "content": "Google has rebranded its AI-powered note-taking application, previously known as NotebookLM, to Gemini Notebook. Despite the name change, the app remains standalone while integrating more deeply with Google's Gemini and Search platforms. Initially introduced as Project Tailwind, the app's rebranding aligns with Google's broader strategy to unify its AI offerings under the Gemini brand. Users can expect continued enhancements as Google refines its AI tools. This move underscores the importance of cohesive branding in tech product ecosystems.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "DoorDash CLI—Order from Terminal",
-            "title": "DoorDash Launches Command-Line Tool for Developers and AI Agents",
-            "content": "DoorDash has introduced dd-cli, a command-line interface tool that allows developers and AI agents to interact with its platform from the terminal. This beta release enables users to search stores, build carts, and place orders directly through command-line operations. The tool represents a shift towards software designed for AI agents, facilitating automated interactions with e-commerce services. Developers should explore dd-cli for integrating DoorDash functionalities into their applications. This innovation highlights the growing trend of AI-driven automation in consumer services.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 16 2026",
-            "headline": "EU Orders Google to Open Android, Search",
-            "title": "EU Mandates Google to Allow Rival Access to Android and Search",
-            "content": "The European Union has ordered Google to provide greater access to its Android operating system and Search platform for rival AI assistants and search engines. This decision, part of the EU's digital antitrust rules, aims to reduce Google's dominance and foster competition. The ruling could significantly impact Google's control over its tech ecosystem, prompting potential changes in its business practices. Tech companies operating in the EU should prepare for adjustments in their strategies to comply with these new regulations. This development underscores the increasing regulatory scrutiny on tech giants.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 17 2026",
             "headline": "Capital One's VulnHunter—AI Tool for Pre-Production Security",
             "title": "Capital One Releases VulnHunter to Detect Software Flaws Before Deployment",
@@ -318,51 +363,6 @@ const websiteContent = {
             "content": "Apple has filed a lawsuit against OpenAI, alleging trade secret violations involving over 400 former Apple employees now working at OpenAI. The lawsuit claims misconduct reaching OpenAI's chief hardware officer, potentially jeopardizing OpenAI's upcoming IPO. This legal battle highlights the competitive tensions between tech giants over AI talent and intellectual property. The outcome could have significant implications for OpenAI's market valuation and strategic direction. Industry stakeholders should monitor the case for its potential impact on AI industry dynamics and corporate governance.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "Patreon Blocks AI Bots—Partners with Cloudflare",
-            "title": "Patreon Strengthens Defenses Against Unauthorized AI Scraping",
-            "content": "Patreon has enhanced its security measures by collaborating with Cloudflare to block AI bots that scrape content without permission. This shift from relying solely on robots.txt to active blocking reflects a growing concern over unauthorized AI training on creators' content. The move aims to protect intellectual property and ensure fair compensation for content creators. As AI models increasingly rely on large datasets, platforms must balance innovation with creator rights. Content platforms and creators should consider similar measures to safeguard their digital assets.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "Zoom Hack Raises Privacy Concerns—Transcription Overload",
-            "title": "Zoom Hack Highlights Risks of Ubiquitous Meeting Transcriptions",
-            "content": "A recent Zoom hack has sparked debate over the privacy implications of automatic meeting transcriptions and summaries. As more interactions are recorded and analyzed, questions arise about who accesses and utilizes this data. The incident underscores the need for robust security measures and user consent protocols in digital communication platforms. Organizations should reassess their data handling practices to protect sensitive information and maintain user trust. Security professionals must advocate for transparent policies and advanced encryption methods to safeguard digital interactions.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/17/the-zoom-hack-that-says-dont-record-me/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "Apple's Legal Move Against OpenAI—Timing Couldn't Be Worse",
-            "title": "Apple's Trade Secrets Lawsuit Challenges OpenAI Amid IPO Preparations",
-            "content": "Apple's lawsuit against OpenAI, alleging trade secret theft, comes at a critical juncture as OpenAI prepares for its IPO. The complaint accuses OpenAI of recruiting over 400 former Apple employees, raising concerns about intellectual property breaches. This legal confrontation could disrupt OpenAI's IPO timeline and affect investor confidence. The case highlights the competitive pressures in the AI sector, where talent acquisition and IP protection are paramount. Industry observers should watch for developments that may influence AI market strategies and legal frameworks.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "AI Boom Reshapes India's Smartphone Market—Memory Crunch",
-            "title": "AI-Driven Memory Demand Impacts India's Smartphone Industry",
-            "content": "India's smartphone market is experiencing a slowdown, influenced by the rising demand for AI-driven memory capabilities. As AI applications become more prevalent, the need for enhanced processing power and storage is reshaping consumer electronics. This trend affects pricing strategies, consumer demand, and corporate planning within the industry. Manufacturers must adapt to these changes by innovating and optimizing their product offerings. Industry professionals should consider the implications of AI advancements on hardware requirements and market dynamics.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 17 2026",
-            "headline": "$400M Chip Loan Signals AI Infrastructure Shift",
-            "title": "GPU Financiers Pivot to Inference Chips in $400M Deal",
-            "content": "In a significant move for AI infrastructure, a $400 million chip-backed loan has been secured, indicating a shift from traditional GPUs to specialized inference chips. This financial maneuver highlights the growing demand for efficient AI processing hardware, as inference chips offer improved performance for AI workloads. The deal underscores the evolving landscape of AI infrastructure investments, with financiers recognizing the potential of inference chips to support the next wave of AI applications. This trend is expected to impact AI developers and enterprises seeking cost-effective solutions for deploying AI at scale.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
             "relatedResources": []
         }
     ],
