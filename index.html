@@ -572,7 +572,7 @@
     </script>
 
     <!-- Extracted Critical/Homepage Styles (Async) -->
-    <link rel="stylesheet" href="homepage-styles.css?v=1.2" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="homepage-styles.min.css?v=2.0" media="print" onload="this.media='all'">
     <noscript>
     </noscript>
 
@@ -595,11 +595,6 @@
     <a href="#main-content" class="skip-link"
         style="position: absolute; top: -100px; left: 0; background: var(--accent); color: white; padding: 1rem; z-index: 100000; transition: top 0.3s;">Skip
         to main content</a>
-    <style>
-        .skip-link:focus {
-            top: 0;
-        }
-    </style>
 
     <!-- ========== NEW MOBILE NAVIGATION (v3.1) ========== -->
 
@@ -608,7 +603,7 @@
 <header class="m-header m-only">
     <div class="m-header__logo">
         <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;" fetchpriority="high">
             <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
             <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
         </a>
@@ -978,220 +973,7 @@
         </div>
     </header>
 
-    <!-- New Year 2026 Security Banner - Expired (hidden after Jan 7, 2026) -->
-    <div id="newYearBanner" class="new-year-banner hidden" role="banner" aria-label="New Year 2026 Greeting"
-        style="display: none;">
-        <div class="new-year-banner__content">
-            <div class="new-year-banner__terminal">
-                <span class="terminal-prompt">root@thehgtech:~$</span>
-                <span class="terminal-text">echo "Happy New Year 2026!"</span>
-            </div>
-            <div class="new-year-banner__message">
-                <span class="new-year-banner__icon"><i class="fas fa-lock"></i></span>
-                <span class="new-year-banner__text">
-                    <strong>Welcome to 2026!</strong> May your firewalls stay strong, your patches stay current, and
-                    your MFA stay enabled.
-                    <span class="desktop-only" style="opacity: 0.8;">// Zero breaches, maximum resilience <i
-                            class="fas fa-shield-alt"></i></span>
-                </span>
-            </div>
-        </div>
-        <button class="new-year-banner__close" onclick="closeNewYearBanner()" aria-label="Close banner">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
 
-    <style>
-        .new-year-banner {
-            position: relative;
-            margin-top: 60px;
-            /* Account for fixed desktop header */
-            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(139, 92, 246, 0.1), rgba(255, 61, 61, 0.05));
-            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
-            padding: 0.75rem 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            overflow: hidden;
-            animation: bannerGlow 3s ease-in-out infinite alternate;
-            z-index: 99;
-        }
-
-        @keyframes bannerGlow {
-            0% {
-                box-shadow: inset 0 -2px 20px rgba(0, 217, 255, 0.1);
-            }
-
-            100% {
-                box-shadow: inset 0 -2px 20px rgba(139, 92, 246, 0.15);
-            }
-        }
-
-        .new-year-banner__content {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .new-year-banner__terminal {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-family: 'Fira Code', 'Consolas', monospace;
-            font-size: 0.85rem;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            border: 1px solid rgba(0, 217, 255, 0.2);
-        }
-
-        .terminal-prompt {
-            color: #30D158;
-        }
-
-        .terminal-text {
-            color: #00D9FF;
-            animation: typewriter 2s steps(25) forwards;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        @keyframes typewriter {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        .new-year-banner__message {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--text-primary);
-            font-size: 0.9rem;
-        }
-
-        .new-year-banner__icon {
-            font-size: 1.2rem;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-        }
-
-        .new-year-banner__text strong {
-            background: linear-gradient(135deg, #00D9FF, #3B82F6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .new-year-banner__close {
-            position: absolute;
-            right: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: var(--text-secondary);
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.2s;
-        }
-
-        .new-year-banner__close:hover {
-            background: rgba(255, 76, 76, 0.2);
-            color: #FF3D3D;
-        }
-
-        /* Light mode */
-        .light-mode .new-year-banner {
-            background: linear-gradient(135deg, rgba(0, 150, 200, 0.1), rgba(139, 92, 246, 0.08), rgba(255, 61, 61, 0.05));
-            border-bottom-color: rgba(0, 150, 200, 0.3);
-        }
-
-        .light-mode .new-year-banner__terminal {
-            background: rgba(0, 0, 0, 0.05);
-            border-color: rgba(0, 150, 200, 0.3);
-        }
-
-        .light-mode .terminal-prompt {
-            color: #00875a;
-        }
-
-        .light-mode .terminal-text {
-            color: #0077aa;
-        }
-
-        /* Mobile adjustments */
-        @media (max-width: 768px) {
-            .new-year-banner {
-                padding: 0.6rem 2.5rem 0.6rem 1rem;
-                margin-top: 56px;
-                /* Account for fixed mobile header */
-            }
-
-            .new-year-banner__terminal {
-                display: none;
-            }
-
-            .new-year-banner__message {
-                font-size: 0.8rem;
-                text-align: center;
-            }
-
-            .new-year-banner__close {
-                right: 0.5rem;
-                width: 24px;
-                height: 24px;
-            }
-        }
-
-        .new-year-banner.hidden {
-            display: none;
-        }
-    </style>
-
-    <script>
-        function closeNewYearBanner() {
-            const banner = document.getElementById('newYearBanner');
-            banner.classList.add('hidden');
-            sessionStorage.setItem('newYearBanner2026Closed', 'true');
-        }
-
-        // Check if banner was previously closed in this session
-        document.addEventListener('DOMContentLoaded', function () {
-            if (sessionStorage.getItem('newYearBanner2026Closed') === 'true') {
-                document.getElementById('newYearBanner').classList.add('hidden');
-            }
-
-            // Auto-hide after Jan 7, 2026
-            const expiryDate = new Date('2026-01-08T00:00:00');
-            if (new Date() > expiryDate) {
-                document.getElementById('newYearBanner').classList.add('hidden');
-            }
-        });
-    </script>
 
     <!-- Main Content -->
     <main class="main" id="main-content" role="main">
@@ -1594,29 +1376,6 @@
                 </script>
 
                 <!-- Feature Card Styles -->
-                <style>
-                    .feature-slide h2 {
-                        text-shadow: 0 0 30px currentColor;
-                    }
-
-                    .nav-dot:hover {
-                        transform: scale(1.3);
-                        opacity: 0.8 !important;
-                    }
-
-                    .feature-cta:focus {
-                        outline: 2px solid currentColor;
-                        outline-offset: 2px;
-                    }
-
-                    .feature-card-container {
-                        transition: box-shadow 0.5s ease;
-                    }
-
-                    .feature-card-container:hover {
-                        box-shadow: 0 8px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-                    }
-                </style>
 
                 <!-- Stats Bar -->
                 <div class="hero-stats-bar"
@@ -1722,541 +1481,6 @@
                     </a>
                 </div>
 
-                <style>
-                    /* ========== HERO NEWS FEED ========== */
-                    .hero-news-feed {
-                        width: 100%;
-                        max-width: 720px;
-                        margin: 0 auto;
-                        background: linear-gradient(180deg, rgba(20, 25, 35, 0.9) 0%, rgba(12, 15, 22, 0.95) 100%);
-                        border: 1px solid rgba(255, 255, 255, 0.08);
-                        border-radius: 16px;
-                        padding: 1.25rem 1.5rem;
-                        backdrop-filter: blur(20px);
-                        -webkit-backdrop-filter: blur(20px);
-                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.04);
-                        position: relative;
-                        overflow: hidden;
-                        transition: none !important;
-                    }
-
-                    .hero-news-feed::before {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        height: 1px;
-                        background: linear-gradient(90deg, transparent, rgba(0, 217, 255, 0.4), transparent);
-                    }
-
-                    /* Header */
-                    .hnf-header {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-bottom: 0.75rem;
-                    }
-
-                    .hnf-header-left {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.75rem;
-                    }
-
-                    .hnf-live-indicator {
-                        display: inline-flex;
-                        align-items: center;
-                        gap: 0.35rem;
-                        padding: 0.2rem 0.6rem;
-                        background: rgba(255, 61, 61, 0.15);
-                        border: 1px solid rgba(255, 61, 61, 0.3);
-                        border-radius: 50px;
-                    }
-
-                    .hnf-live-dot {
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 50%;
-                        background: #FF3D3D;
-                        animation: hnfPulse 1.5s ease-in-out infinite;
-                    }
-
-                    @keyframes hnfPulse {
-                        0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.5); }
-                        50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(255, 61, 61, 0); }
-                    }
-
-                    .hnf-live-text {
-                        font-size: 0.6rem;
-                        font-weight: 800;
-                        color: #FF3D3D;
-                        letter-spacing: 1.5px;
-                    }
-
-                    .hnf-title {
-                        font-size: 0.85rem;
-                        font-weight: 700;
-                        color: #fff;
-                        margin: 0;
-                    }
-
-                    .hnf-timestamp {
-                        font-size: 0.7rem;
-                        color: var(--text-muted, #666);
-                        display: flex;
-                        align-items: center;
-                        gap: 0.35rem;
-                    }
-
-                    /* Tabs */
-                    .hnf-tabs {
-                        display: flex;
-                        gap: 0.75rem;
-                        margin-bottom: 0.75rem;
-                        height: 42px;
-                        align-items: flex-start;
-                    }
-
-                    .hnf-tab {
-                        flex: 1;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 0.4rem;
-                        background: var(--glass, rgba(255, 255, 255, 0.03));
-                        border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
-                        color: var(--text-secondary, #999);
-                        padding: 0.55rem 1rem;
-                        border-radius: 8px;
-                        font-size: 0.78rem;
-                        font-weight: 600;
-                        cursor: pointer;
-                        transition: background 0.2s ease, border-color 0.2s ease, color 0.15s ease, box-shadow 0.25s ease;
-                        letter-spacing: 0.3px;
-                        position: relative;
-                        overflow: hidden;
-                        height: 42px !important; /* Fixed height is mandatory */
-                        max-height: 42px !important;
-                        box-sizing: border-box;
-                    }
-
-                    .hnf-tab:hover {
-                        background: rgba(255, 61, 61, 0.08);
-                        border-color: rgba(255, 61, 61, 0.2);
-                        color: var(--text-primary, #fff);
-                    }
-
-                    .hnf-tab.active {
-                        background: var(--accent, #FF3D3D);
-                        border-color: var(--accent, #FF3D3D);
-                        color: #fff;
-                        box-shadow: 0 4px 20px rgba(255, 61, 61, 0.4);
-                    }
-
-                    .hnf-tab.active i {
-                        color: #fff;
-                    }
-
-                    /* Card Stack */
-                    .hnf-card-stack {
-                        position: relative;
-                    }
-
-                    .hnf-feed {
-                        position: relative;
-                        min-height: 180px; /* Baseline to reduce jumping */
-                    }
-
-                    .hnf-card {
-                        display: none;
-                    }
-
-                    .hnf-card.active {
-                        display: block;
-                    }
-
-                    .hnf-card-inner {
-                        padding: 1rem 1.25rem;
-                        background: rgba(255, 255, 255, 0.02);
-                        border: 1px solid rgba(255, 255, 255, 0.06);
-                        border-radius: 12px;
-                        cursor: pointer;
-                        transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-                        position: relative;
-                    }
-
-                    .hnf-card-inner:hover {
-                        background: rgba(0, 217, 255, 0.04);
-                        border-color: rgba(0, 217, 255, 0.15);
-                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-                    }
-
-                    .hnf-card-inner::before {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        width: 3px;
-                        height: 60%;
-                        border-radius: 3px;
-                        background: var(--hnf-accent, #00D9FF);
-                        opacity: 0;
-                        transition: opacity 0.3s ease;
-                    }
-
-                    .hnf-card-inner:hover::before {
-                        opacity: 1;
-                    }
-
-                    /* Meta */
-                    .hnf-card-meta {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-bottom: 0.5rem;
-                    }
-
-                    .hnf-source {
-                        font-size: 0.65rem;
-                        font-weight: 700;
-                        color: #00D9FF;
-                        text-transform: uppercase;
-                        letter-spacing: 0.8px;
-                        display: flex;
-                        align-items: center;
-                        gap: 0.3rem;
-                    }
-
-                    .hnf-source i {
-                        font-size: 0.55rem;
-                    }
-
-                    .hnf-time {
-                        font-size: 0.65rem;
-                        color: var(--text-muted, #666);
-                        display: flex;
-                        align-items: center;
-                        gap: 0.25rem;
-                    }
-
-                    .hnf-card-title {
-                        font-size: 0.9rem;
-                        font-weight: 600;
-                        color: #fff;
-                        margin: 0 0 0.4rem;
-                        line-height: 1.4;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 1;
-                        line-clamp: 1;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
-                    .hnf-card-excerpt {
-                        font-size: 0.75rem;
-                        color: var(--text-muted, #888);
-                        line-height: 1.5;
-                        margin: 0 0 0.5rem;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                    }
-
-                    .hnf-card-tags {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.5rem;
-                        margin-bottom: 0.5rem;
-                    }
-
-                    .hnf-tag {
-                        font-size: 0.55rem;
-                        font-weight: 700;
-                        text-transform: uppercase;
-                        letter-spacing: 0.8px;
-                        padding: 0.15rem 0.5rem;
-                        border-radius: 4px;
-                        background: rgba(0, 217, 255, 0.1);
-                        color: #00D9FF;
-                        border: 1px solid rgba(0, 217, 255, 0.2);
-                    }
-
-                    .hnf-tag.ai {
-                        background: rgba(139, 92, 246, 0.1);
-                        color: #8B5CF6;
-                        border-color: rgba(139, 92, 246, 0.2);
-                    }
-
-                    .hnf-reading-time {
-                        font-size: 0.6rem;
-                        color: var(--text-muted, #666);
-                        display: flex;
-                        align-items: center;
-                        gap: 0.25rem;
-                    }
-
-                    .hnf-card-footer {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                    }
-
-                    .hnf-read-more {
-                        font-size: 0.7rem;
-                        font-weight: 600;
-                        color: var(--text-muted, #666);
-                        display: flex;
-                        align-items: center;
-                        gap: 0.3rem;
-                        transition: color 0.2s ease;
-                    }
-
-                    .hnf-card-inner:hover .hnf-read-more {
-                        color: #00D9FF;
-                    }
-
-                    .hnf-source-url {
-                        font-size: 0.6rem;
-                        color: var(--text-muted, #555);
-                        display: flex;
-                        align-items: center;
-                        gap: 0.25rem;
-                        opacity: 0.6;
-                        max-width: 160px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-
-                    .hnf-source-url i {
-                        font-size: 0.5rem;
-                    }
-
-                    /* Navigation */
-                    .hnf-nav {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-top: 0.75rem;
-                        padding-top: 0.75rem;
-                        border-top: 1px solid rgba(255, 255, 255, 0.05);
-                    }
-
-                    .hnf-dots {
-                        display: flex;
-                        gap: 4px;
-                    }
-
-                    .hnf-dot {
-                        width: 16px;
-                        height: 3px;
-                        border-radius: 3px;
-                        background: rgba(255, 255, 255, 0.1);
-                        transition: all 0.3s ease;
-                        cursor: pointer;
-                    }
-
-                    .hnf-dot.active {
-                        width: 28px;
-                        background: #00D9FF;
-                        box-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
-                    }
-
-                    .hnf-dot:hover:not(.active) {
-                        background: rgba(255, 255, 255, 0.2);
-                    }
-
-                    .hnf-controls {
-                        display: flex;
-                        align-items: center;
-                        gap: 0.5rem;
-                    }
-
-                    .hnf-nav-btn {
-                        width: 28px;
-                        height: 28px;
-                        border-radius: 6px;
-                        border: 1px solid rgba(255, 255, 255, 0.08);
-                        background: rgba(255, 255, 255, 0.03);
-                        color: var(--text-muted, #666);
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 0.65rem;
-                        transition: all 0.2s ease;
-                    }
-
-                    .hnf-nav-btn:hover {
-                        background: rgba(0, 217, 255, 0.1);
-                        border-color: rgba(0, 217, 255, 0.3);
-                        color: #00D9FF;
-                    }
-
-                    .hnf-counter {
-                        font-size: 0.65rem;
-                        color: var(--text-muted, #666);
-                        font-weight: 600;
-                        font-variant-numeric: tabular-nums;
-                        min-width: 40px;
-                        text-align: center;
-                    }
-
-                    /* View All */
-                    .hnf-view-all {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 0.4rem;
-                        margin-top: 0.75rem;
-                        padding: 0.5rem;
-                        color: var(--text-muted, #666);
-                        text-decoration: none;
-                        font-size: 0.7rem;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        letter-spacing: 1px;
-                        transition: all 0.2s ease;
-                        border-radius: 6px;
-                    }
-
-                    .hnf-view-all:hover {
-                        color: #00D9FF;
-                        background: rgba(0, 217, 255, 0.05);
-                    }
-
-                    .hnf-view-all i {
-                        font-size: 0.6rem;
-                        animation: hnfBounce 2s ease-in-out infinite;
-                    }
-
-                    @keyframes hnfBounce {
-                        0%, 100% { transform: translateY(0); }
-                        50% { transform: translateY(3px); }
-                    }
-
-                    /* Light mode */
-                    .light-mode .hero-news-feed {
-                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.98) 100%);
-                        border-color: rgba(0, 0, 0, 0.08);
-                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.5);
-                    }
-
-                    .light-mode .hero-news-feed::before {
-                        background: linear-gradient(90deg, transparent, rgba(0, 150, 200, 0.3), transparent);
-                    }
-
-                    .light-mode .hnf-title {
-                        color: #1a1a2e;
-                    }
-
-                    .light-mode .hnf-tab {
-                        background: rgba(0, 0, 0, 0.02);
-                        border-color: rgba(0, 0, 0, 0.08);
-                        color: #666;
-                    }
-
-                    .light-mode .hnf-tab.active {
-                        background: var(--accent, #FF3D3D);
-                        border-color: var(--accent, #FF3D3D);
-                        color: #fff;
-                        box-shadow: 0 4px 16px rgba(255, 61, 61, 0.3);
-                    }
-
-                    .light-mode .hnf-card-inner {
-                        background: rgba(0, 0, 0, 0.01);
-                        border-color: rgba(0, 0, 0, 0.06);
-                    }
-
-                    .light-mode .hnf-card-inner:hover {
-                        background: rgba(0, 150, 200, 0.03);
-                        border-color: rgba(0, 150, 200, 0.15);
-                    }
-
-                    .light-mode .hnf-card-title {
-                        color: #1a1a2e;
-                    }
-
-                    .light-mode .hnf-card-excerpt {
-                        color: #666;
-                    }
-
-                    .light-mode .hnf-tag {
-                        background: rgba(0, 150, 200, 0.08);
-                        color: #0099cc;
-                        border-color: rgba(0, 150, 200, 0.15);
-                    }
-
-                    .light-mode .hnf-source {
-                        color: #0099cc;
-                    }
-
-                    .light-mode .hnf-dot.active {
-                        background: #0099cc;
-                        box-shadow: 0 0 8px rgba(0, 150, 200, 0.3);
-                    }
-
-                    .light-mode .hnf-nav-btn {
-                        border-color: rgba(0, 0, 0, 0.08);
-                        background: rgba(0, 0, 0, 0.02);
-                    }
-
-                    .light-mode .hnf-nav-btn:hover {
-                        background: rgba(0, 150, 200, 0.08);
-                        border-color: rgba(0, 150, 200, 0.2);
-                        color: #0099cc;
-                    }
-
-                    .light-mode .hnf-card-inner:hover .hnf-read-more {
-                        color: #0099cc;
-                    }
-
-                    .light-mode .hnf-view-all:hover {
-                        color: #0099cc;
-                        background: rgba(0, 150, 200, 0.05);
-                    }
-
-                    .light-mode .hnf-nav {
-                        border-top-color: rgba(0, 0, 0, 0.06);
-                    }
-
-                    /* Mobile */
-                    @media (max-width: 768px) {
-                        .hero-news-feed {
-                            border-radius: 12px;
-                            padding: 1rem 1rem;
-                            max-width: calc(100% - 2rem);
-                        }
-
-                        .hnf-header {
-                            flex-direction: row;
-                        }
-
-                        .hnf-card-title {
-                            font-size: 0.85rem;
-                        }
-
-                        .hnf-card-stack {
-                            /* auto height */
-                        }
-
-                        .hnf-dots {
-                            display: none;
-                        }
-
-                        .hnf-tab span {
-                            display: none;
-                        }
-
-                        .hnf-tab {
-                            padding: 0.45rem 1rem;
-                        }
-                    }
-                </style>
 
                 <!-- Hero News Feed Script -->
                 <script>
@@ -2475,94 +1699,6 @@
 
             <!-- Newsletter Subscription -->
             <div class="container" style="max-width: 800px; margin: 2rem auto 4rem; position: relative; z-index: 10;">
-                <style>
-                    /* Custom TheHGTech Newsletter Style */
-                    .hg-newsletter-wrapper {
-                        background: var(--glass);
-                        border: 1px solid var(--border);
-                        border-radius: 12px;
-                        padding: 2.5rem 2rem;
-                        text-align: center;
-                        backdrop-filter: blur(10px);
-                        position: relative;
-                        overflow: hidden;
-                        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-                    }
-                    .hg-newsletter-wrapper::before {
-                        content: '';
-                        position: absolute;
-                        top: 0; left: 0; right: 0; height: 3px;
-                        background: linear-gradient(90deg, #00D9FF, #8B5CF6);
-                    }
-                    .hg-newsletter-title {
-                        font-size: 1.75rem;
-                        font-weight: 800;
-                        color: #fff;
-                        margin-bottom: 0.5rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 0.75rem;
-                    }
-                    .hg-newsletter-desc {
-                        color: var(--text-secondary);
-                        font-size: 1rem;
-                        margin-bottom: 1.5rem;
-                        max-width: 500px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    .hg-newsletter-input {
-                        width: 100%;
-                        max-width: 350px;
-                        padding: 0.85rem 1.2rem;
-                        border-radius: 6px;
-                        border: 1px solid var(--border);
-                        background: rgba(0, 0, 0, 0.4);
-                        color: #fff;
-                        font-family: inherit;
-                        outline: none;
-                        transition: border-color 0.3s ease;
-                    }
-                    .hg-newsletter-input:focus {
-                        border-color: var(--accent-cyan);
-                    }
-                    .hg-newsletter-btn {
-                        background: var(--accent-cyan);
-                        color: #000;
-                        font-weight: 700;
-                        padding: 0.85rem 1.5rem;
-                        border: none;
-                        border-radius: 6px;
-                        cursor: pointer;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
-                        white-space: nowrap;
-                    }
-                    .hg-newsletter-btn:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
-                    }
-                    .hg-form-row {
-                        display: flex;
-                        gap: 0.5rem;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: wrap;
-                    }
-                    .sib-form-message-panel {
-                        margin-top: 1rem;
-                        padding: 0.75rem;
-                        border-radius: 6px;
-                        font-size: 0.9rem;
-                        display: none;
-                    }
-                    #error-message { color: #ff4949; background: rgba(255, 73, 73, 0.1); border: 1px solid rgba(255, 73, 73, 0.3); }
-                    #success-message { color: #13ce66; background: rgba(19, 206, 102, 0.1); border: 1px solid rgba(19, 206, 102, 0.3); }
-                    @media (max-width: 600px) {
-                        .hg-form-row { flex-direction: column; }
-                        .hg-newsletter-input, .hg-newsletter-btn { max-width: 100%; width: 100%; }
-                    }
-                </style>
 
                 <div class="hg-newsletter-wrapper">
                     <div class="hg-newsletter-title">
@@ -2570,72 +1706,6 @@
                     </div>
                     <div class="hg-newsletter-desc">Get the latest cyber threats, zero-days, and AI security analysis delivered straight to your inbox. No spam, ever.</div>
 
-                    <style>
-                        .hg-newsletter-input {
-                            flex: 1;
-                            min-width: 200px;
-                            max-width: 340px;
-                            padding: 0 1.2rem;
-                            height: 48px;
-                            border-radius: 8px;
-                            border: 1px solid rgba(0,217,255,0.3);
-                            background: rgba(0,0,0,0.45);
-                            color: #fff;
-                            font-size: 0.95rem;
-                            font-family: inherit;
-                            outline: none;
-                            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-                        }
-                        .hg-newsletter-input::placeholder { color: rgba(255,255,255,0.4); }
-                        .hg-newsletter-input:focus {
-                            border-color: var(--accent-cyan);
-                            box-shadow: 0 0 0 3px rgba(0,217,255,0.15);
-                        }
-                        .hg-newsletter-btn {
-                            height: 48px;
-                            padding: 0 1.75rem;
-                            background: linear-gradient(135deg, #00D9FF, #00b4cc);
-                            color: #000;
-                            font-weight: 700;
-                            font-size: 0.875rem;
-                            letter-spacing: 0.05em;
-                            border: none;
-                            border-radius: 8px;
-                            cursor: pointer;
-                            white-space: nowrap;
-                            transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s;
-                        }
-                        .hg-newsletter-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,217,255,0.35); }
-                        .hg-newsletter-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-                        .hg-form-row {
-                            display: flex;
-                            gap: 0.6rem;
-                            justify-content: center;
-                            align-items: center;
-                            flex-wrap: wrap;
-                        }
-                        .hg-captcha-wrap {
-                            display: flex;
-                            justify-content: center;
-                            margin-top: 1.25rem;
-                        }
-                        .hg-form-msg {
-                            padding: 0.75rem 1rem;
-                            border-radius: 8px;
-                            font-size: 0.9rem;
-                            margin-bottom: 1.25rem;
-                            display: none;
-                            text-align: center;
-                        }
-                        .hg-form-msg.success { color: #13ce66; background: rgba(19,206,102,0.12); border: 1px solid rgba(19,206,102,0.3); }
-                        .hg-form-msg.error   { color: #ff4949; background: rgba(255,73,73,0.1);   border: 1px solid rgba(255,73,73,0.3); }
-                        .hg-field-error { color: #ff6b6b; font-size: 0.82rem; margin-top: 0.5rem; min-height: 1.2em; display: block; text-align: center; }
-                        @media (max-width: 560px) {
-                            .hg-newsletter-input { max-width: 100%; width: 100%; }
-                            .hg-newsletter-btn { width: 100%; }
-                            .hg-form-row { flex-direction: column; }
-                        }
-                    </style>
 
                     <div id="hg-success" class="hg-form-msg success">🎉 You're subscribed! Check your inbox to confirm.</div>
                     <div id="hg-error"   class="hg-form-msg error">Something went wrong. Please try again.</div>
@@ -4252,22 +3322,6 @@
                     </div>
                 </div>
 
-                <style>
-                    .featured-card:hover {
-                        transform: translateX(5px);
-                        border-color: var(--accent-cyan) !important;
-                    }
-
-                    .featured-card:hover h3 {
-                        color: var(--accent-cyan);
-                    }
-
-                    @media (max-width: 900px) {
-                        .featured-section>div {
-                            grid-template-columns: 1fr !important;
-                        }
-                    }
-                </style>
             </section>
 
 
@@ -4677,7 +3731,7 @@
             </div>
 
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> TheHGTech. All rights reserved. Stay secure. Stay informed. Stay ahead.
+                &copy; 2026 TheHGTech. All rights reserved. Stay secure. Stay informed. Stay ahead.
             </div>
         </div>
     </footer>
@@ -4967,7 +4021,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             const loadCveStats = async () => {
                 try {
-                    const response = await fetch('cve-data.json?t=' + Date.now());
+                    const response = await fetch('cve-data.json');
                     const data = await response.json();
                     const cves = (data.cves || []).slice(0, 50);
 
@@ -5002,7 +4056,7 @@
         // ========== DYNAMIC IOC COUNT ==========
         async function updateHeroIocCount() {
             try {
-                const response = await fetch('threat-intel-history.json?t=' + Date.now());
+                const response = await fetch('threat-intel-history.json');
                 const data = await response.json();
                 const heroIocEl = document.getElementById('heroIocCountDynamic');
 
@@ -5022,7 +4076,7 @@
         // ========== DYNAMIC ARTICLES LOADING ==========
         async function loadLatestArticles() {
             try {
-                const response = await fetch('ioc-data/articles.json?t=' + Date.now());
+                const response = await fetch('ioc-data/articles.json');
                 const data = await response.json();
                 // articles.json has { "articles": [...] } structure
                 const articles = (data.articles || data || []).slice(0, 2);
@@ -5063,7 +4117,7 @@
         // ========== DYNAMIC GUIDES LOADING ==========
         async function loadLatestGuides() {
             try {
-                const response = await fetch('guides/guides.json?t=' + Date.now());
+                const response = await fetch('guides/guides.json');
                 const data = await response.json();
                 // Get first 2 featured guides
                 const guides = (data || []).filter(g => g.featured !== false).slice(0, 2);
@@ -5107,11 +4161,29 @@
             loadLatestArticles();
         });
     </script>
-    <script src="archives-content.js?v=20251130" defer></script>
-    <script src="threat-intel.js?v=20251125" defer
-        onerror="console.log('threat-intel.js not found - using fallback')"></script>
-    <script src="update-ioc-counts.js?v=20251125d" defer></script>
-    <script src="seo-enhancements.js?v=20251125" defer></script>
+    <!-- Non-critical below-fold scripts: idle-loaded after page is interactive -->
+    <script>
+        (function() {
+            function idleLoad(src, onerrorMsg) {
+                var s = document.createElement('script');
+                s.src = src;
+                s.defer = true;
+                if (onerrorMsg) s.onerror = function() { console.log(onerrorMsg); };
+                document.body.appendChild(s);
+            }
+            function loadBelowFoldScripts() {
+                idleLoad('archives-content.js?v=20251130');
+                idleLoad('threat-intel.js?v=20251125', 'threat-intel.js not found - using fallback');
+                idleLoad('update-ioc-counts.js?v=20251125d');
+                idleLoad('seo-enhancements.js?v=20251125');
+            }
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(loadBelowFoldScripts, { timeout: 4000 });
+            } else {
+                setTimeout(loadBelowFoldScripts, 2500);
+            }
+        })();
+    </script>
 
 
     <!-- Main JavaScript -->
