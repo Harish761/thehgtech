@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-18T13:14:56.273296",
+  "last_updated": "2026-07-19T02:44:01.251448",
   "period": "Last 7 days",
   "total_groups": 32,
-  "total_victims": 265,
+  "total_victims": 266,
   "groups": [
     {
       "name": "Dragonforce",
-      "count": 49,
+      "count": 43,
       "victims": [
         {
           "name": "NewNet",
@@ -79,20 +79,20 @@
       "countries": [
         "AE",
         "AR",
-        "AU",
         "BW",
-        "CH"
+        "CH",
+        "CN"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        2,
         4,
-        19,
+        14,
         9,
         12,
         0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -180,16 +180,40 @@
         0,
         0,
         0,
-        0,
         37,
         6,
+        0,
         0
       ]
     },
     {
       "name": "Qilin",
-      "count": 37,
+      "count": 41,
       "victims": [
+        {
+          "name": "Heartland Catfish",
+          "date": "2026-07-18T13:37:37.481309+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=f9340ec9-e2fc-4a39-9289-565a6b39daf5",
+          "discovered_date": "2026-07-18T13:37:37.481309+00:00"
+        },
+        {
+          "name": "Salina Supply",
+          "date": "2026-07-18T13:36:52.734595+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=336e1eea-cc38-4572-938d-8f80895e769e",
+          "discovered_date": "2026-07-18T13:36:52.734595+00:00"
+        },
+        {
+          "name": "St Martha Catholic Church",
+          "date": "2026-07-18T13:35:16.092868+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=be920d01-1289-47d4-a4da-8ebf156a33ad",
+          "discovered_date": "2026-07-18T13:35:16.092868+00:00"
+        },
+        {
+          "name": "The Nueva School",
+          "date": "2026-07-18T13:34:28.127090+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=f5d63ec4-a191-4de4-a6d1-f0fa52fba59e",
+          "discovered_date": "2026-07-18T13:34:28.127090+00:00"
+        },
         {
           "name": "Sicc",
           "date": "2026-07-18T11:39:26.258038+00:00",
@@ -225,38 +249,14 @@
           "date": "2026-07-18T00:06:10.077194+00:00",
           "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=cddad5ee-72f3-48fd-9310-4858484d5f59",
           "discovered_date": "2026-07-18T00:06:10.077194+00:00"
-        },
-        {
-          "name": "Cafar",
-          "date": "2026-07-17T16:57:50.608474+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=534f0ef4-d3fb-4650-ae42-445c281986c6",
-          "discovered_date": "2026-07-17T16:57:50.608474+00:00"
-        },
-        {
-          "name": "Acosol",
-          "date": "2026-07-17T14:58:06.472736+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=06db273a-dad1-49d1-98ea-f59c947de0b6",
-          "discovered_date": "2026-07-17T14:58:06.472736+00:00"
-        },
-        {
-          "name": "Feliubadaló",
-          "date": "2026-07-15T08:31:36.695498+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=cd9a8829-4c6d-4835-82c5-58dedb507d9a",
-          "discovered_date": "2026-07-15T08:31:36.695498+00:00"
-        },
-        {
-          "name": "Levin Furniture",
-          "date": "2026-07-15T05:01:35.732686+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=21fe1d79-9687-4b3e-8646-659c19380a51",
-          "discovered_date": "2026-07-15T05:01:35.732686+00:00"
         }
       ],
       "industries": [
         "Agriculture and Food Production",
         "Business Services",
         "Consumer Services",
-        "Not Found",
-        "Technology"
+        "Education",
+        "Not Found"
       ],
       "countries": [
         "AR",
@@ -268,13 +268,13 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         8,
         3,
         6,
         0,
         4,
-        12
+        20,
+        0
       ]
     },
     {
@@ -350,8 +350,8 @@
         "Not Found"
       ],
       "countries": [
-        "GB",
         "JP",
+        "NL",
         "PH",
         "SG",
         "TW"
@@ -360,12 +360,102 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         2,
         0,
         4,
         2,
-        14
+        14,
+        0
+      ]
+    },
+    {
+      "name": "Krybit",
+      "count": 10,
+      "victims": [
+        {
+          "name": "euroins.bg",
+          "date": "2026-07-18T16:26:43.627960+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/168d441c086815fb0d0ce67b7bc405626f36a6e6bd85285420c98b85c2db571e/",
+          "discovered_date": "2026-07-18T16:26:43.627960+00:00"
+        },
+        {
+          "name": "eitzchaim.com",
+          "date": "2026-07-17T00:30:53.818767+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/e83ae42f72039def5cfd6f399fe5e431589b34af2c477b1c3e8c96fbdb8b2f9f/",
+          "discovered_date": "2026-07-17T00:30:53.818767+00:00"
+        },
+        {
+          "name": "formasuniversales.com",
+          "date": "2026-07-17T00:30:15.591118+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/21a5e7905a0c2544593cc8856fc4190f3c5cd9dea2922b15adf9cc5582bde4b7/",
+          "discovered_date": "2026-07-17T00:30:15.591118+00:00"
+        },
+        {
+          "name": "rehabmalaysia.com",
+          "date": "2026-07-17T00:29:31.938682+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/358c4d15c88f881a4fe9b4009fea92875bd9569160533db6cbea77d6fbdee3be/",
+          "discovered_date": "2026-07-17T00:29:31.938682+00:00"
+        },
+        {
+          "name": "www.lagus.cz",
+          "date": "2026-07-17T00:28:54.930581+00:00",
+          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/5bce46da119b73d1ba3d82909cd88d658342a1fee85f82c5c5e2be35e2bd2494/",
+          "discovered_date": "2026-07-17T00:28:54.930581+00:00"
+        },
+        {
+          "name": "euroins.bg",
+          "date": "2026-07-18T16:26:43+00:00",
+          "url": "https://www.ransomware.live/id/ZXVyb2lucy5iZ0BrcnliaXQ=",
+          "discovered_date": "2026-07-18T16:26:43+00:00"
+        },
+        {
+          "name": "eitzchaim.com",
+          "date": "2026-07-17T00:30:53+00:00",
+          "url": "https://www.ransomware.live/id/ZWl0emNoYWltLmNvbUBrcnliaXQ=",
+          "discovered_date": "2026-07-17T00:30:53+00:00"
+        },
+        {
+          "name": "formasuniversales.com",
+          "date": "2026-07-17T00:30:15+00:00",
+          "url": "https://www.ransomware.live/id/Zm9ybWFzdW5pdmVyc2FsZXMuY29tQGtyeWJpdA==",
+          "discovered_date": "2026-07-17T00:30:15+00:00"
+        },
+        {
+          "name": "rehabmalaysia.com",
+          "date": "2026-07-17T00:29:31+00:00",
+          "url": "https://www.ransomware.live/id/cmVoYWJtYWxheXNpYS5jb21Aa3J5Yml0",
+          "discovered_date": "2026-07-17T00:29:31+00:00"
+        },
+        {
+          "name": "www.lagus.cz",
+          "date": "2026-07-17T00:28:54+00:00",
+          "url": "https://www.ransomware.live/id/d3d3LmxhZ3VzLmN6QGtyeWJpdA==",
+          "discovered_date": "2026-07-17T00:28:54+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Financial Services",
+        "Healthcare",
+        "Not Found"
+      ],
+      "countries": [
+        "BG",
+        "CZ",
+        "IL",
+        "MX",
+        "MY"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        8,
+        2,
+        0
       ]
     },
     {
@@ -447,12 +537,12 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         2,
         0,
         2,
         2,
         4,
+        0,
         0
       ]
     },
@@ -541,9 +631,85 @@
         0,
         0,
         0,
-        0,
         10,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Nova",
+      "count": 8,
+      "victims": [
+        {
+          "name": "FMZ Tecnologia em Sistemas",
+          "date": "2026-07-18T14:27:42.480518+00:00",
+          "url": "http://novadmrkp4vbk2padk5t6pbxolndceuc7hrcq4mjaoyed6nxsqiuzyyd.onion/fmz-tecnologia-em-sistemas",
+          "discovered_date": "2026-07-18T14:27:42.480518+00:00"
+        },
+        {
+          "name": "Phi",
+          "date": "2026-07-17T01:32:34.432625+00:00",
+          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/phi",
+          "discovered_date": "2026-07-17T01:32:34.432625+00:00"
+        },
+        {
+          "name": "Digipro",
+          "date": "2026-07-17T01:31:23.192629+00:00",
+          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/digipro",
+          "discovered_date": "2026-07-17T01:31:23.192629+00:00"
+        },
+        {
+          "name": "Integrated Marketing Services",
+          "date": "2026-07-17T01:30:03.852708+00:00",
+          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/integrated-marketing-services",
+          "discovered_date": "2026-07-17T01:30:03.852708+00:00"
+        },
+        {
+          "name": "FMZ Tecnologia em Sistemas",
+          "date": "2026-07-18T14:27:42+00:00",
+          "url": "https://www.ransomware.live/id/Rk1aIFRlY25vbG9naWEgZW0gU2lzdGVtYXNAbm92YQ==",
+          "discovered_date": "2026-07-18T14:27:42+00:00"
+        },
+        {
+          "name": "Phi",
+          "date": "2026-07-17T01:32:34+00:00",
+          "url": "https://www.ransomware.live/id/UGhpQG5vdmE=",
+          "discovered_date": "2026-07-17T01:32:34+00:00"
+        },
+        {
+          "name": "Digipro",
+          "date": "2026-07-17T01:31:23+00:00",
+          "url": "https://www.ransomware.live/id/RGlnaXByb0Bub3Zh",
+          "discovered_date": "2026-07-17T01:31:23+00:00"
+        },
+        {
+          "name": "Integrated Marketing Services",
+          "date": "2026-07-17T01:30:03+00:00",
+          "url": "https://www.ransomware.live/id/SW50ZWdyYXRlZCBNYXJrZXRpbmcgU2VydmljZXNAbm92YQ==",
+          "discovered_date": "2026-07-17T01:30:03+00:00"
+        }
+      ],
+      "industries": [
+        "Business Services",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "BR",
+        "CA",
+        "US",
+        "VN"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        2,
         0
       ]
     },
@@ -606,7 +772,6 @@
       ],
       "countries": [
         "CA",
-        "GB",
         "US"
       ],
       "trend": "stable",
@@ -615,85 +780,9 @@
         0,
         0,
         0,
-        0,
         4,
         4,
-        0
-      ]
-    },
-    {
-      "name": "Krybit",
-      "count": 8,
-      "victims": [
-        {
-          "name": "eitzchaim.com",
-          "date": "2026-07-17T00:30:53.818767+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/e83ae42f72039def5cfd6f399fe5e431589b34af2c477b1c3e8c96fbdb8b2f9f/",
-          "discovered_date": "2026-07-17T00:30:53.818767+00:00"
-        },
-        {
-          "name": "formasuniversales.com",
-          "date": "2026-07-17T00:30:15.591118+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/21a5e7905a0c2544593cc8856fc4190f3c5cd9dea2922b15adf9cc5582bde4b7/",
-          "discovered_date": "2026-07-17T00:30:15.591118+00:00"
-        },
-        {
-          "name": "rehabmalaysia.com",
-          "date": "2026-07-17T00:29:31.938682+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/358c4d15c88f881a4fe9b4009fea92875bd9569160533db6cbea77d6fbdee3be/",
-          "discovered_date": "2026-07-17T00:29:31.938682+00:00"
-        },
-        {
-          "name": "www.lagus.cz",
-          "date": "2026-07-17T00:28:54.930581+00:00",
-          "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/5bce46da119b73d1ba3d82909cd88d658342a1fee85f82c5c5e2be35e2bd2494/",
-          "discovered_date": "2026-07-17T00:28:54.930581+00:00"
-        },
-        {
-          "name": "eitzchaim.com",
-          "date": "2026-07-17T00:30:53+00:00",
-          "url": "https://www.ransomware.live/id/ZWl0emNoYWltLmNvbUBrcnliaXQ=",
-          "discovered_date": "2026-07-17T00:30:53+00:00"
-        },
-        {
-          "name": "formasuniversales.com",
-          "date": "2026-07-17T00:30:15+00:00",
-          "url": "https://www.ransomware.live/id/Zm9ybWFzdW5pdmVyc2FsZXMuY29tQGtyeWJpdA==",
-          "discovered_date": "2026-07-17T00:30:15+00:00"
-        },
-        {
-          "name": "rehabmalaysia.com",
-          "date": "2026-07-17T00:29:31+00:00",
-          "url": "https://www.ransomware.live/id/cmVoYWJtYWxheXNpYS5jb21Aa3J5Yml0",
-          "discovered_date": "2026-07-17T00:29:31+00:00"
-        },
-        {
-          "name": "www.lagus.cz",
-          "date": "2026-07-17T00:28:54+00:00",
-          "url": "https://www.ransomware.live/id/d3d3LmxhZ3VzLmN6QGtyeWJpdA==",
-          "discovered_date": "2026-07-17T00:28:54+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Healthcare",
-        "Not Found"
-      ],
-      "countries": [
-        "CZ",
-        "IL",
-        "MX",
-        "MY"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
         0,
-        0,
-        0,
-        0,
-        0,
-        8,
         0
       ]
     },
@@ -764,84 +853,9 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         6,
         0,
         2,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Ailock",
-      "count": 8,
-      "victims": [
-        {
-          "name": "Nihon Kotsu Co., Ltd.",
-          "date": "2026-07-15T09:50:07.867185+00:00",
-          "url": "",
-          "discovered_date": "2026-07-15T09:50:07.867185+00:00"
-        },
-        {
-          "name": "Solid Advance Inc.",
-          "date": "2026-07-15T09:20:31.022167+00:00",
-          "url": "",
-          "discovered_date": "2026-07-15T09:20:31.022167+00:00"
-        },
-        {
-          "name": "Ferrovial",
-          "date": "2026-07-15T09:20:09.317932+00:00",
-          "url": "",
-          "discovered_date": "2026-07-15T09:20:09.317932+00:00"
-        },
-        {
-          "name": "WBF Construction",
-          "date": "2026-07-14T12:20:12.567010+00:00",
-          "url": "",
-          "discovered_date": "2026-07-14T12:20:12.567010+00:00"
-        },
-        {
-          "name": "Nihon Kotsu Co., Ltd.",
-          "date": "2026-07-15T09:50:07+00:00",
-          "url": "https://www.ransomware.live/id/Tmlob24gS290c3UgQ28uLCBMdGQuQEFpTG9jaw==",
-          "discovered_date": "2026-07-15T09:50:07+00:00"
-        },
-        {
-          "name": "Solid Advance Inc.",
-          "date": "2026-07-15T09:20:31+00:00",
-          "url": "https://www.ransomware.live/id/U29saWQgQWR2YW5jZSBJbmMuQEFpTG9jaw==",
-          "discovered_date": "2026-07-15T09:20:31+00:00"
-        },
-        {
-          "name": "Ferrovial",
-          "date": "2026-07-15T09:20:09+00:00",
-          "url": "https://www.ransomware.live/id/RmVycm92aWFsQEFpTG9jaw==",
-          "discovered_date": "2026-07-15T09:20:09+00:00"
-        },
-        {
-          "name": "WBF Construction",
-          "date": "2026-07-14T12:20:12+00:00",
-          "url": "https://www.ransomware.live/id/V0JGIENvbnN0cnVjdGlvbkBBaUxvY2s=",
-          "discovered_date": "2026-07-14T12:20:12+00:00"
-        }
-      ],
-      "industries": [
-        "Business Services",
-        "Construction",
-        "Transportation/Logistics"
-      ],
-      "countries": [
-        "ES",
-        "JP",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        6,
         0,
         0,
         0
@@ -907,75 +921,81 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        3,
         0,
         0,
         0,
         0,
         4,
+        0,
         0
       ]
     },
     {
-      "name": "Nova",
-      "count": 6,
+      "name": "Ailock",
+      "count": 7,
       "victims": [
         {
-          "name": "Phi",
-          "date": "2026-07-17T01:32:34.432625+00:00",
-          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/phi",
-          "discovered_date": "2026-07-17T01:32:34.432625+00:00"
+          "name": "Nihon Kotsu Co., Ltd.",
+          "date": "2026-07-15T09:50:07.867185+00:00",
+          "url": "",
+          "discovered_date": "2026-07-15T09:50:07.867185+00:00"
         },
         {
-          "name": "Digipro",
-          "date": "2026-07-17T01:31:23.192629+00:00",
-          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/digipro",
-          "discovered_date": "2026-07-17T01:31:23.192629+00:00"
+          "name": "Solid Advance Inc.",
+          "date": "2026-07-15T09:20:31.022167+00:00",
+          "url": "",
+          "discovered_date": "2026-07-15T09:20:31.022167+00:00"
         },
         {
-          "name": "Integrated Marketing Services",
-          "date": "2026-07-17T01:30:03.852708+00:00",
-          "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/integrated-marketing-services",
-          "discovered_date": "2026-07-17T01:30:03.852708+00:00"
+          "name": "Ferrovial",
+          "date": "2026-07-15T09:20:09.317932+00:00",
+          "url": "",
+          "discovered_date": "2026-07-15T09:20:09.317932+00:00"
         },
         {
-          "name": "Phi",
-          "date": "2026-07-17T01:32:34+00:00",
-          "url": "https://www.ransomware.live/id/UGhpQG5vdmE=",
-          "discovered_date": "2026-07-17T01:32:34+00:00"
+          "name": "Nihon Kotsu Co., Ltd.",
+          "date": "2026-07-15T09:50:07+00:00",
+          "url": "https://www.ransomware.live/id/Tmlob24gS290c3UgQ28uLCBMdGQuQEFpTG9jaw==",
+          "discovered_date": "2026-07-15T09:50:07+00:00"
         },
         {
-          "name": "Digipro",
-          "date": "2026-07-17T01:31:23+00:00",
-          "url": "https://www.ransomware.live/id/RGlnaXByb0Bub3Zh",
-          "discovered_date": "2026-07-17T01:31:23+00:00"
+          "name": "Solid Advance Inc.",
+          "date": "2026-07-15T09:20:31+00:00",
+          "url": "https://www.ransomware.live/id/U29saWQgQWR2YW5jZSBJbmMuQEFpTG9jaw==",
+          "discovered_date": "2026-07-15T09:20:31+00:00"
         },
         {
-          "name": "Integrated Marketing Services",
-          "date": "2026-07-17T01:30:03+00:00",
-          "url": "https://www.ransomware.live/id/SW50ZWdyYXRlZCBNYXJrZXRpbmcgU2VydmljZXNAbm92YQ==",
-          "discovered_date": "2026-07-17T01:30:03+00:00"
+          "name": "Ferrovial",
+          "date": "2026-07-15T09:20:09+00:00",
+          "url": "https://www.ransomware.live/id/RmVycm92aWFsQEFpTG9jaw==",
+          "discovered_date": "2026-07-15T09:20:09+00:00"
+        },
+        {
+          "name": "WBF Construction",
+          "date": "2026-07-14T12:20:12+00:00",
+          "url": "https://www.ransomware.live/id/V0JGIENvbnN0cnVjdGlvbkBBaUxvY2s=",
+          "discovered_date": "2026-07-14T12:20:12+00:00"
         }
       ],
       "industries": [
         "Business Services",
-        "Not Found",
-        "Technology"
+        "Construction",
+        "Transportation/Logistics"
       ],
       "countries": [
-        "CA",
-        "US",
-        "VN"
+        "ES",
+        "JP",
+        "N/A"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
-        0,
-        0,
-        0,
+        1,
         6,
+        0,
+        0,
+        0,
         0
       ]
     },
@@ -1032,8 +1052,8 @@
       "trend_percentage": 0,
       "daily_counts": [
         0,
-        0,
         6,
+        0,
         0,
         0,
         0,
@@ -1083,8 +1103,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
         3,
+        0,
         0,
         0,
         0,
@@ -1131,11 +1151,11 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
         0,
         1,
         0,
         2,
+        0,
         0,
         0
       ]
@@ -1174,9 +1194,9 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
         2,
+        0,
         0,
         0,
         0
@@ -1217,8 +1237,8 @@
         0,
         0,
         0,
-        0,
         3,
+        0,
         0,
         0
       ]
@@ -1254,10 +1274,10 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         2,
+        0,
         0,
         0,
         0
@@ -1295,7 +1315,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        3,
+        0,
         0,
         0,
         0,
@@ -1335,8 +1355,8 @@
         0,
         0,
         0,
-        0,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1368,8 +1388,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1402,8 +1422,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1438,8 +1458,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ]
@@ -1472,8 +1492,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1507,8 +1527,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1534,16 +1554,16 @@
       "industries": [],
       "countries": [
         "BR",
-        "GB"
+        "ZA"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0
       ]
@@ -1573,9 +1593,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -1607,8 +1627,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -1635,8 +1655,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1662,8 +1682,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1688,8 +1708,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1715,7 +1735,7 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        1,
+        0,
         0,
         0,
         0,
