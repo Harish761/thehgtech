@@ -913,11 +913,10 @@
 
                 <p>To understand why hardware-backed trust matters, it helps to understand what came before it—and why each era's defenses fell short.</p>
 
-                <div class="diagram-placeholder">
-                    <div class="diagram-icon"><i class="fas fa-timeline"></i></div>
-                    <div class="diagram-title">Timeline: Evolution of Enterprise Hardware Trust</div>
-                    <div class="diagram-desc">Showing the progression from software-only authentication (pre-2004) through TPM 1.2 adoption, BitLocker, FileVault 2, Windows Hello, Touch ID, Secure Enclave, T2, Apple Silicon, and FIDO2 Passkeys to the present Pluton era.</div>
-                </div>
+                <figure style="margin: 2rem 0;">
+                    <img src="/images/articles/timeline_evolution.jpg" alt="Timeline: Evolution of Enterprise Hardware Trust" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
+                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Evolution of Enterprise Hardware Trust: 2003–2026</figcaption>
+                </figure>
 
                 <h3>The Software-Only Era (Pre-2004)</h3>
                 <p>Enterprise security in the late 1990s and early 2000s was almost entirely software-based. Passwords were the primary authentication mechanism. Disk encryption, where it existed at all, was often a third-party add-on with its keys managed in software—meaning the keys lived in memory that malware could potentially read. If a laptop was stolen, the encryption was frequently circumvented by booting from external media. Enterprise trust was asserted: devices were assumed compliant unless proven otherwise.</p>
@@ -1046,11 +1045,10 @@
 
                 <p>This is the question that enterprise security architects should be able to answer. Not in theory—but specifically, for the devices their organization deploys.</p>
 
-                <div class="diagram-placeholder">
-                    <div class="diagram-icon"><i class="fas fa-power-off"></i></div>
-                    <div class="diagram-title">Windows Enterprise Trust Flow — Boot to Cloud</div>
-                    <div class="diagram-desc">Illustrating the sequence from power-on through UEFI firmware, TPM/Pluton measurement, Secure Boot verification, Measured Boot PCR recording, OS loader, Windows kernel launch, Credential Guard initialization, and Windows Hello authentication to Entra ID token issuance.</div>
-                </div>
+                <figure style="margin: 2rem 0;">
+                    <img src="/images/articles/windows_trust_flow.jpg" alt="Windows Enterprise Trust Flow — Boot to Cloud" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
+                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Windows Enterprise Trust Flow: From UEFI Firmware to Entra ID Token Issuance</figcaption>
+                </figure>
 
                 <h3>Windows: The Measured Boot Chain</h3>
 
@@ -1068,11 +1066,10 @@
 
                 <h3>macOS: The Apple Silicon Secure Boot</h3>
 
-                <div class="diagram-placeholder">
-                    <div class="diagram-icon"><i class="fab fa-apple"></i></div>
-                    <div class="diagram-title">macOS Enterprise Trust Flow — Boot to Cloud</div>
-                    <div class="diagram-desc">Illustrating the Apple Silicon boot sequence from power-on through Boot ROM (hardware root of trust), LocalPolicy verification, iBoot (stage-1 and stage-2 bootloader), macOS kernel loading with Secure Enclave attestation, Touch ID authentication, FileVault key release, and Jamf compliance reporting to Entra ID or managed Apple ID access.</div>
-                </div>
+                <figure style="margin: 2rem 0;">
+                    <img src="/images/articles/macos_trust_flow.jpg" alt="macOS Enterprise Trust Flow — Boot to Cloud" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
+                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">macOS Apple Silicon Boot Trust Flow: From Boot ROM to Managed Apple ID / SSO</figcaption>
+                </figure>
 
                 <p>On Apple Silicon Macs, the boot process is fundamentally different from anything on x86 hardware—and the differences have direct enterprise security implications.</p>
 
@@ -1133,11 +1130,10 @@
 
                 <p>Hardware trust is not valuable in isolation. Its value to the enterprise is in how that trust gets translated into access decisions—which resources a user can reach, from which devices, under which conditions.</p>
 
-                <div class="diagram-placeholder">
-                    <div class="diagram-icon"><i class="fas fa-sitemap"></i></div>
-                    <div class="diagram-title">Enterprise Device Lifecycle — Hardware Trust to Cloud Access</div>
-                    <div class="diagram-desc">Illustrating the complete lifecycle: device provisioning (TPM/Enclave initialization, MDM enrollment), runtime trust establishment (Secure Boot attestation, compliance signal generation), user authentication (Windows Hello / Touch ID / Passkey), identity provider trust evaluation (Entra ID / Managed Apple ID), Conditional Access policy evaluation, and enterprise application access grant or denial.</div>
-                </div>
+                <figure style="margin: 2rem 0;">
+                    <img src="/images/articles/enterprise_device_lifecycle.jpg" alt="Enterprise Device Lifecycle — Hardware Trust to Cloud Access" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
+                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Enterprise Device Lifecycle: Provisioning, Runtime Trust, Authentication, and Conditional Access</figcaption>
+                </figure>
 
                 <h3>The MDM Layer: Intune and Jamf</h3>
 
