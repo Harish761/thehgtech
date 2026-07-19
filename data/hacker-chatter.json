@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-07-18T15:29:43.198121",
-  "total_incidents": 29532,
+  "last_updated": "2026-07-19T05:36:02.959080",
+  "total_incidents": 29533,
   "incidents": [
+    {
+      "id": "krybit_euroins.bg",
+      "victim_name": "euroins.bg",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-07-18T16:26:43.627960+00:00",
+      "industry": "Financial Services",
+      "website": "euroins.bg",
+      "claim": "Euroins Insurance Company AD (Застрахователна компания Евроинс АД) is one of the first a...",
+      "screenshot": "https://images.ransomware.live/victims/c229f589b162a61d4a2781efc8cc6727.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/168d441c086815fb0d0ce67b7bc405626f36a6e6bd85285420c98b85c2db571e/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "nova_fmz_tecnologia_em_sistemas",
       "victim_name": "FMZ Tecnologia em Sistemas",
