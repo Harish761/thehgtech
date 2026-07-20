@@ -11915,6 +11915,34 @@
       "Description": "In October 2010, the Irish bookmaker <a href=\"http://www.telegraph.co.uk/technology/internet-security/11005558/Irish-government-disappointed-over-Paddy-Power-hack.html\" target=\"_blank\" rel=\"noopener\">Paddy Power suffered a data breach</a> that exposed 750,000 customer records with nearly 600,000 unique email addresses. The breach was not disclosed until July 2014 and contained extensive personal information including names, addresses, phone numbers and plain text security questions and answers."
     }
   ],
+  "paidwork.com": [
+    {
+      "Name": "Paidwork",
+      "Title": "Paidwork",
+      "BreachDate": "2026-03-29",
+      "AddedDate": "2026-07-19T22:57:18Z",
+      "PwnCount": 23272765,
+      "DataClasses": [
+        "Bank account numbers",
+        "Dates of birth",
+        "Device information",
+        "Education levels",
+        "Email addresses",
+        "Financial transactions",
+        "Genders",
+        "IP addresses",
+        "Names",
+        "Passwords",
+        "Personal interests",
+        "Phone numbers",
+        "Physical addresses",
+        "Profile photos"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2026, <a href=\"https://cybernews.com/security/paidwork-data-breach-22-million-users/\" target=\"_blank\" rel=\"noopener\">hackers claimed they had obtained data from the gig economy platform Paidwork which they then listed for sale</a>. Almost 11GB of data allegedly obtained from the platform was subsequently <a href=\"https://x.com/dailydarkweb/status/2078527237809131674?s=61&t=beHN95Zd9G3fQiuO1h_jzA\" target=\"_blank\" rel=\"noopener\">posted publicly in July</a> and contained over 23M unique email addresses. The breach also included a broad range of other data relating to the operation of the platform including user profile data, banking information, payout history for workers and passwords stored as bcrypt hashes."
+    }
+  ],
   "pampling.com": [
     {
       "Name": "Pampling",
