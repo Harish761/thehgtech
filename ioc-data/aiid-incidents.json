@@ -17,6 +17,30 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1597",
+      "incident_id": 1597,
+      "title": "Spokane, Washington, Police Reportedly Circulated Purported AI-Generated Image as Authentic Photo of",
+      "date": "2026-07-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1598",
+      "incident_id": 1598,
+      "title": "City of Spokane Reportedly Distributed Purported AI-Generated Clocktower Flyer Resembling Graphic De",
+      "date": "2026-07-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1599",
+      "incident_id": 1599,
+      "title": "Waymo Robotaxi Reportedly Remained Immobilized While Vandals Smashed Vehicle with Passenger Inside",
+      "date": "2026-07-21",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1588",
       "incident_id": 1588,
       "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
@@ -2698,9 +2722,9 @@
     }
   ],
   "stats": {
-    "total": 337,
-    "last7Days": 15,
-    "last30Days": 56
+    "total": 340,
+    "last7Days": 14,
+    "last30Days": 59
   },
-  "lastUpdated": "2026-07-21T23:09:21.117460+05:30"
+  "lastUpdated": "2026-07-22T01:31:34.742926+05:30"
 }
