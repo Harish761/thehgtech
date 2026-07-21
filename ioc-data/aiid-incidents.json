@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1595",
+      "incident_id": 1595,
+      "title": "Deputies in Cherokee County, Georgia, Allegedly Misused Automated License Plate Reader Data for Non-",
+      "date": "2026-07-21",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1596",
+      "incident_id": 1596,
+      "title": "Purported Deepfake Impersonation of Starmangalsutra Director Reportedly Led to \u20b910.70 Crore (Approxi",
+      "date": "2026-07-21",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1588",
       "incident_id": 1588,
       "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
@@ -2682,9 +2698,9 @@
     }
   ],
   "stats": {
-    "total": 335,
-    "last7Days": 13,
-    "last30Days": 54
+    "total": 337,
+    "last7Days": 15,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-07-21T19:46:06.896447+05:30"
+  "lastUpdated": "2026-07-21T23:09:21.117460+05:30"
 }
