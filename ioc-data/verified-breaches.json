@@ -15070,6 +15070,26 @@
       "Description": "In January 2022, the now defunct file upload service Sundry Files suffered a data breach that exposed 274k unique email addresses. The data also included usernames, IP addresses and passwords stored as salted SHA-256 hashes."
     }
   ],
+  "suno.com": [
+    {
+      "Name": "Suno",
+      "Title": "Suno",
+      "BreachDate": "2025-11-25",
+      "AddedDate": "2026-07-20T19:49:51Z",
+      "PwnCount": 55282226,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Partial credit card data",
+        "Phone numbers",
+        "Physical addresses",
+        "Purchases"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In November 2025, <a href=\"https://www.404media.co/hack-reveals-suno-ai-music-generator-scraped-youtube-deezer-and-genius/\" target=\"_blank\" rel=\"noopener\">AI music generation tool Suno suffered a data breach that later came to light in July the following year</a>. The data contained over 55M unique email addresses. Phone numbers were also present where they had been used as the sign-up method. Although representing a small portion of the corpus, the breach also included tens of thousands of Stripe records relating to purchases, containing names, physical addresses, purchase amounts and partial credit card data including the card type, expiry date and last 4 digits. The company advised that \"Suno does not have access to customers' full credit card numbers in Stripe\"."
+    }
+  ],
   "superdraft.io": [
     {
       "Name": "SuperDraft",
