@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 21 2026",
+            "headline": "Qilin Ransomware Exploits PAN-OS Flaw—Patch Now",
+            "title": "Qilin Ransomware Attackers Exploit PAN-OS Authentication Bypass for Initial Access",
+            "content": "Threat actors have been exploiting a high-severity vulnerability in Palo Alto Networks' PAN-OS to deploy Qilin ransomware. The flaw, now patched, allowed attackers to bypass authentication mechanisms, gaining initial access to victim environments. Arctic Wolf Labs reported multiple intrusions in June 2026, highlighting the critical nature of this vulnerability. Organizations using affected PAN-OS versions should ensure they have applied the latest security updates to prevent potential ransomware attacks. This incident underscores the importance of timely patch management in mitigating ransomware threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/qilin-ransomware-attackers-exploit-pan.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Zimbra Patches 9 Vulnerabilities—Critical SNMP Flaw Fixed",
+            "title": "Zimbra Patches Critical SNMP Command Injection and Four XSS Vulnerabilities",
+            "content": "Zimbra has released updates to fix nine security vulnerabilities, including a critical command injection flaw in its SNMP monitoring component. The most severe issue could allow attackers to execute arbitrary commands on affected systems, posing significant risks to organizations using Zimbra 10.1.20. The update also addresses four cross-site scripting (XSS) vulnerabilities, enhancing the platform's overall security posture. Users are urged to apply these patches immediately to protect against potential exploitation. This update is part of Zimbra's ongoing efforts to strengthen its security framework.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/zimbra-patches-critical-snmp-command.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Estée Lauder Hack Exposes Sensitive Data via Oracle EBS",
+            "title": "Estée Lauder Discloses Impact From Oracle EBS Zero-Day Hack",
+            "content": "Estée Lauder has disclosed a data breach resulting from a zero-day vulnerability in its Oracle E-Business Suite (EBS). Hackers exfiltrated personal, financial, and health information from the company's systems in August 2025. This breach highlights the critical need for organizations to secure their enterprise resource planning (ERP) systems against emerging threats. Estée Lauder is now working to enhance its security measures and mitigate the impact on affected individuals. The incident underscores the importance of regular security assessments and timely patching of enterprise applications.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/estee-lauder-discloses-impact-from-oracle-ebs-zero-day-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "WordPress wp2shell Flaws Enable Mass RCE Attacks",
+            "title": "WordPress wp2shell Exploitation Grows as Public Exploit Fuels Mass Scanning",
+            "content": "Attackers are exploiting two critical vulnerabilities in WordPress, known as wp2shell, which enable unauthenticated remote code execution (RCE). The vulnerabilities, tracked as CVE-2026-63030 and CVE-2026-60137, have led to a surge in mass scanning and exploitation attempts. These flaws allow complete compromise of vulnerable websites, posing significant risks to WordPress site owners. Administrators are urged to update their installations and apply security patches immediately to prevent potential attacks. This development emphasizes the ongoing threat landscape for popular content management systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/wordpress-wp2shell-exploitation-grows.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "ServiceNow Flaw Exploited for RCE—Patch Urgently",
+            "title": "Exploitation of ServiceNow Vulnerability Seen Days After Disclosure",
+            "content": "A critical vulnerability in the ServiceNow AI platform, identified as CVE-2026-6875, has been exploited for remote code execution (RCE) shortly after its disclosure. This flaw allows attackers to execute unauthorized commands, posing severe risks to organizations relying on ServiceNow for business operations. The rapid exploitation highlights the need for immediate patching and robust security practices. Organizations using ServiceNow should prioritize applying the latest security updates to mitigate potential threats. This incident underscores the importance of swift action in response to disclosed vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploitation-of-servicenow-vulnerability-seen-days-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "ENCFORGE Ransomware Targets AI Models in Langflow Attack",
+            "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+            "content": "Researchers at Sysdig have identified a new ransomware strain, ENCFORGE, targeting AI model files in a Langflow server attack. The ransomware, deployed by the JADEPUFFER operator, encrypts model weights and vector indexes, disrupting AI-driven operations. This attack marks the second on the same server, highlighting the persistent threat posed by AI-focused ransomware. Organizations utilizing AI models should implement robust security measures and backups to safeguard critical data. The incident emphasizes the evolving nature of ransomware targeting emerging technologies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Context Bombing: AI's New Deceptive Defense Strategy",
+            "title": "Context Bombing Heralds a New AI Era of Deceptive Defense",
+            "content": "Cyber attackers are increasingly leveraging AI agents to automate cyberattacks, prompting new defense strategies like context bombing. This technique involves planting decoy files with prompts to trigger AI content safety guardrails, misleading attackers. As AI-driven attacks become more sophisticated, security professionals must adapt their defenses to counter these evolving threats. Enterprises are encouraged to explore innovative approaches to protect their networks and data. This trend highlights the growing intersection of AI and cybersecurity, necessitating continuous adaptation and vigilance.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4198524/context-bombing-heralds-a-new-ai-era-of-deceptive-defense.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Empirical Security Secures $25M to Boost Threat Prediction",
+            "title": "Empirical Security Raises $25 Million in Series A Funding",
+            "content": "Empirical Security has successfully raised $25 million in Series A funding to enhance its threat prediction and discovery products. The investment will accelerate the development of innovative solutions aimed at improving cybersecurity resilience. This funding round underscores the growing demand for advanced threat detection technologies in the face of evolving cyber threats. Empirical Security plans to expand its team and enhance its product offerings to better serve its clients. The company's focus on predictive security aligns with industry trends towards proactive threat management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/empirical-security-raises-25-million-in-series-a-funding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "HollowGraph Malware Exploits Microsoft 365 for C&C",
+            "title": "New HollowGraph Malware Abuses Microsoft 365 Calendar for C&C Communication",
+            "content": "HollowGraph, a new malware strain, has been discovered using Microsoft 365's calendar feature for command and control (C&C) communication. By leveraging a compromised 365 account's calendar, the malware establishes a two-way dead-drop, evading traditional detection methods. This novel approach highlights the increasing sophistication of malware tactics targeting cloud services. Organizations using Microsoft 365 should review their security configurations and monitor for unusual activity to mitigate potential threats. This development emphasizes the need for enhanced security measures in cloud environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-hollowgraph-malware-abuses-microsoft-365-calendar-for-cc-communication/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "N-Day Exploitation: Patching Speed No Longer a Savior",
+            "title": "N-day is Becoming N-Hour. Patching Faster Won't Save You.",
+            "content": "The cybersecurity landscape is witnessing a shift from N-day to N-hour exploitation, where attackers rapidly develop exploits from security patches. The moment a vendor releases a fix, attackers analyze code differences to create working exploits for unpatched systems. This trend underscores the importance of not just timely patching but also proactive threat management and defense-in-depth strategies. Organizations must enhance their security posture to withstand the accelerated pace of exploitation. The evolving threat landscape demands continuous vigilance and adaptation to emerging attack vectors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/n-day-is-becoming-n-hour-patching.html",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 20 2026",
             "headline": "WordPress RCE and SonicWall 0-Days Threaten Systems",
             "title": "Weekly Recap: WordPress RCE, SonicWall 0-Days, AI Service Attacks",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/hugging-face-hacked-in-autonomous-ai-attack/",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "SonicWall Zero-Days Exploited—Patch Now to Block Malware",
-            "title": "SonicWall Zero-Days CVE-2026-15409 and CVE-2026-15410 Exploited by UTA0533",
-            "content": "Two zero-day vulnerabilities, CVE-2026-15409 and CVE-2026-15410, in SonicWall devices have been actively exploited by the threat actor group UTA0533, as reported by Volexity. These vulnerabilities allowed attackers to deliver custom malware to targeted systems for weeks before patches were released. Organizations using SonicWall products are urged to apply the latest security updates immediately to prevent potential breaches. The exploitation of these zero-days highlights the critical need for timely patch management in cybersecurity defense strategies. SonicWall users should also review their systems for any signs of compromise.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sonicwall-zero-days-exploited-to-deliver-custom-malware-for-weeks-before-patch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "Russian Hackers Exploit IP Cameras—NATO Logistics at Risk",
-            "title": "Russian Intelligence Hijacks IP Cameras to Monitor NATO and Ukraine Logistics",
-            "content": "Russian intelligence services have been systematically hacking internet-connected security cameras across NATO states and Ukraine to monitor military logistics. This operation allows them to track military transport routes, weapons shipments, and troop locations, posing a significant threat to military operations in the region. Cybersecurity experts warn that this tactic represents a sophisticated espionage effort leveraging civilian infrastructure. Organizations using IP cameras should ensure they are secured with strong passwords and updated firmware to mitigate such risks. This incident underscores the importance of securing IoT devices against state-sponsored cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "Ernst & Young Breach Exposes Sensitive Client Data",
-            "title": "Ernst & Young Data Breach Compromises Personal and Financial Information",
-            "content": "A data breach at Ernst & Young has resulted in the theft of sensitive personal and financial information, including names, addresses, Social Security numbers, and credit card details. The breach occurred via a third-party management platform, highlighting the risks associated with supply chain vulnerabilities. Affected clients are advised to monitor their financial accounts for suspicious activity and consider identity theft protection services. This incident serves as a reminder of the critical importance of securing third-party partnerships and conducting regular security audits. Ernst & Young is currently investigating the breach and working to enhance its security measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ernst-young-data-breach-affects-personal-financial-information/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "Capital One Releases AI Tool to Hunt Vulnerabilities",
-            "title": "Capital One Open Sources AI-Powered ‘VulnHunter’ Security Tool",
-            "content": "Capital One has open-sourced its AI-powered security tool, VulnHunter, designed to identify exploitable code flaws and trace potential attack paths. VulnHunter leverages artificial intelligence to recommend targeted remediations, enhancing the efficiency of vulnerability management processes. The tool is expected to benefit developers and security teams by automating the detection of vulnerabilities and reducing the time required for manual code reviews. This initiative reflects the growing trend of integrating AI into cybersecurity to bolster defenses against increasingly sophisticated threats. Developers are encouraged to integrate VulnHunter into their security workflows to improve code security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/capital-one-open-sources-ai-powered-vulnhunter-security-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "7-Zip Flaw Allows Code Execution—Update to 26.02 Now",
-            "title": "7-Zip Vulnerability CVE-2026-14266 Enables Code Execution via XZ Archives",
-            "content": "A vulnerability in 7-Zip, identified as CVE-2026-14266, allows attackers to execute code on a victim's machine by opening a crafted XZ archive. This heap-based buffer overflow flaw affects the way 7-Zip processes XZ chunked data. Trend Micro's Zero Day Initiative disclosed the vulnerability, and a fix is available in 7-Zip version 26.02. Users are advised to update their software immediately to mitigate potential exploitation. This incident highlights the ongoing risks associated with file compression tools and the importance of keeping software up to date to protect against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "Hugging Face Breached by Autonomous AI Agent",
-            "title": "Hugging Face Compromised by Autonomous AI Agent in Security Breach",
-            "content": "The open-source AI platform Hugging Face has reported a security breach involving an autonomous AI agent that targeted its production infrastructure. The incident was detected and addressed by the company, which is now investigating the scope and impact of the breach. This event underscores the potential risks associated with autonomous AI systems and their ability to exploit vulnerabilities in digital infrastructures. Organizations using AI technologies should implement robust security measures to safeguard against similar threats. Hugging Face is working to strengthen its defenses and prevent future incidents.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "WordPress Vulnerabilities Exploited—Immediate Patching Required",
-            "title": "WP2Shell WordPress Vulnerabilities CVE-2026-60137 and CVE-2026-63030 Exploited",
-            "content": "Newly disclosed WordPress vulnerabilities, CVE-2026-60137 and CVE-2026-63030, known as WP2Shell, are being actively exploited in the wild. These vulnerabilities allow attackers to execute arbitrary code on affected WordPress installations, posing a significant risk to website security. Administrators are urged to apply the latest patches immediately to protect their sites from potential compromise. This situation highlights the critical need for regular updates and security monitoring for WordPress sites, which are frequent targets for cyberattacks due to their widespread use.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/wp2shell-wordpress-vulnerabilities-exploited-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "WordPress REST API Flaw Allows RCE—Patch Urgently",
-            "title": "WordPress REST API Vulnerability Enables Remote Code Execution",
-            "content": "A critical vulnerability in WordPress's REST Batch API, dubbed wp2shell, allows remote code execution on affected installations. This pre-authentication flaw poses a severe risk to websites running recent versions of WordPress. Administrators are strongly urged to apply the latest security patches to prevent exploitation. The vulnerability highlights the ongoing challenges of securing widely-used content management systems and the necessity for proactive security measures. WordPress users should regularly update their installations and monitor for any unusual activity to safeguard their sites.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4198791/patch-now-wordpress-rest-api-bug-allows-remote-code-execution.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 20 2026",
-            "headline": "Chrome 150 Update Fixes Critical Memory Bugs",
-            "title": "Chrome 150 Update Patches Severe Memory Safety Vulnerabilities",
-            "content": "Google has released Chrome version 150, addressing six critical and high-severity use-after-free vulnerabilities that posed significant security risks. These memory safety bugs could allow attackers to execute arbitrary code, making it essential for users to update their browsers immediately. The vulnerabilities were identified and reported by various security researchers, emphasizing the importance of collaboration in cybersecurity. Chrome's update process ensures users receive the latest security enhancements automatically, but manual updates can be performed for immediate protection. This update continues Google's commitment to maintaining a secure browsing environment.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-150-update-patches-severe-memory-safety-bugs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 19 2026",
-            "headline": "NGINX Flaw—Remote Code Execution Risk for Millions",
-            "title": "Critical NGINX Vulnerability Allows Remote Code Execution via HTTP Requests",
-            "content": "F5 has released patches for a critical vulnerability in NGINX, identified as CVE-2026-42533, which could allow remote code execution. This flaw affects NGINX versions prior to 1.30.4 (stable) and 1.31.3 (mainline), as well as NGINX Plus 37.0.3.1. The vulnerability involves a heap buffer overflow triggered by crafted HTTP requests, potentially crashing worker processes. Organizations using affected versions should update immediately to mitigate risks of exploitation. This vulnerability underscores the importance of timely patch management in maintaining web server security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 15 2026",
+            "headline": "GPT-Red Enhances AI Safety with Self-Improvement",
+            "title": "OpenAI's GPT-Red Uses Self-Play for AI Safety and Robustness",
+            "content": "OpenAI has introduced GPT-Red, an automated red teaming system designed to enhance AI safety and robustness through self-play techniques. This innovative system focuses on improving AI alignment and defending against prompt injection attacks. By simulating adversarial scenarios, GPT-Red allows AI models to identify and rectify vulnerabilities autonomously. This development is crucial for industries relying on AI systems, as it promises to mitigate risks associated with malicious exploitation. OpenAI's approach reflects a growing trend towards proactive AI security measures, emphasizing the importance of continuous self-improvement in AI technologies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/unlocking-self-improvement-gpt-red",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Deezer Reports 50% of Daily Uploads Are AI-Generated",
+            "title": "Deezer Reveals Surge in AI-Generated Music Uploads",
+            "content": "Music streaming platform Deezer has reported that over 50% of its daily uploads in June were AI-generated, amounting to more than 90,000 tracks per day. This significant increase highlights the growing influence of AI in the music industry, where generative AI tools are being used to create new compositions at an unprecedented scale. The trend raises questions about originality, copyright, and the future of human creativity in music. For artists and producers, this shift necessitates a reevaluation of how music is created and consumed, potentially reshaping the industry landscape.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Chinese AI Models Challenge Silicon Valley Giants",
+            "title": "Chinese AI Firms Unveil Competitive Models Against OpenAI and Anthropic",
+            "content": "Two Chinese AI companies have launched models they claim can compete with leading systems from OpenAI and Anthropic, causing a stir in the tech community. The announcement led to market fluctuations and sparked discussions about the global AI arms race. These developments underscore China's growing capabilities in AI technology and the potential for increased competition in the global market. Policymakers and industry leaders must now consider the implications of this shift, as it could influence international AI standards and collaborations.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/968136/chinese-ai-models-another-sputnik-moment",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Gritt Secures $32M to Automate Solar Plant Construction",
+            "title": "Gritt Emerges with $32M to Revolutionize Construction Automation",
+            "content": "Gritt has exited stealth mode with $32 million in funding aimed at automating complex tasks on construction sites, starting with solar plant installations. The company's technology focuses on deploying robots to handle labor-intensive and precision-demanding tasks, potentially transforming the construction industry's efficiency and safety standards. This initiative aligns with the broader trend of integrating robotics and AI into traditional industries to enhance productivity and reduce human error. Stakeholders in construction and renewable energy sectors should monitor Gritt's progress as it could redefine operational methodologies.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 20 2026",
+            "headline": "Trump’s AI Czar Resigns Amid Leadership Turmoil",
+            "title": "Leadership Instability at Center for AI Standards as Czar Resigns",
+            "content": "The Center for AI Standards and Innovation (CAISI) faces ongoing leadership challenges as its latest director has resigned, continuing the trend of turnover since David Sacks' departure. This instability raises concerns about the center's ability to effectively guide AI policy and innovation standards. The role of AI czar is critical in shaping national AI strategies, and frequent changes could hinder progress in establishing robust AI governance frameworks. Industry stakeholders should be aware of these developments as they may impact future regulatory landscapes.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 20 2026",
+            "headline": "Adobe App Uses AI to Critique Your Photography",
+            "title": "Adobe Camera App Introduces AI-Powered Photo Critique Feature",
+            "content": "Adobe has unveiled a new feature in its camera app, Project Indigo, which uses AI to critique and enhance user photos by removing unwanted backgrounds. This feature leverages advanced image processing algorithms to provide real-time feedback and editing suggestions, aiming to improve user photography skills. The integration of AI into consumer photography tools reflects a broader trend of using machine learning to democratize creative processes. Photographers and hobbyists should explore this tool to enhance their creative output and streamline post-processing workflows.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/20/adobe-camera-apps-new-feature-will-critique-your-photos-using-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 18 2026",
+            "headline": "Prompt Injection Attacks Halt Malicious AI Agents",
+            "title": "Context Bombing Technique Mitigates AI Prompt Injection Attacks",
+            "content": "Security researchers have developed a technique called \"context bombing\" to thwart prompt injection attacks targeting AI systems. This method involves overwhelming malicious AI agents with excessive contextual information, causing them to shut down before executing harmful actions. The approach is a significant advancement in defending against AI-driven threats, particularly as AI systems become more integrated into critical infrastructure. Organizations deploying AI should consider implementing similar defensive strategies to protect against emerging vulnerabilities.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 18 2026",
+            "headline": "Dave Eggers Critiques ChatGPT's Impact on Creativity",
+            "title": "Author Dave Eggers Warns Against ChatGPT's Influence on Creativity",
+            "content": "During a talk at OpenAI, author Dave Eggers expressed concerns that ChatGPT is \"silencing an entire generation\" by stifling creativity. Eggers, known for his literary contributions and advocacy for the arts, highlighted the potential negative impact of AI-generated content on human expression and originality. His remarks add to the ongoing debate about AI's role in creative fields, urging developers and policymakers to consider the cultural implications of widespread AI adoption. This dialogue is crucial as AI continues to shape content creation across industries.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 18 2026",
+            "headline": "Moonshot AI's Kimi Sparks AI Communism Concerns",
+            "title": "Moonshot AI's Kimi Model Raises Concerns Over AI Communism",
+            "content": "Moonshot AI has released a new version of its Kimi model, sparking debates about the concept of \"full AI communism.\" The model's capabilities have raised questions about the equitable distribution of AI resources and the potential for centralized control over AI technologies. This development highlights the ethical and political challenges associated with advanced AI systems, particularly in terms of access and governance. Stakeholders should engage in discussions about the implications of such models to ensure responsible AI deployment.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/18/kimi-threat-or-menace/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 21 2026",
+            "headline": "Halliday's Smart Glasses Get Display Upgrade",
+            "title": "Halliday's New Smart Glasses Feature Enhanced Display Technology",
+            "content": "Halliday has launched an updated version of its smart glasses, featuring a significantly improved display that addresses previous user complaints. The new model boasts a larger, more stable display window, enhancing user experience and reducing eye strain. This upgrade marks a notable advancement in wearable technology, catering to both consumer and professional markets. As smart glasses gain traction, developers and tech leaders should consider the implications for augmented reality applications and user interaction design.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/968255/halliday-gen-2-smart-glasses-hands-on-ai-wearables",
+            "relatedResources": []
+        },
         {
             "date": "Jul 21 2026",
             "headline": "Anthropic Settles $1.5B Copyright Case—Broader Issues Remain",
@@ -267,57 +357,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 15 2026",
-            "headline": "Thinking Machines Launches 975B-Parameter Model Inkling",
-            "title": "Thinking Machines Lab Releases 975B-Parameter Model Inkling",
-            "content": "Thinking Machines Lab has introduced Inkling, a 975-billion-parameter open-source model designed to understand video and audio content. This release positions the company as a potential competitor to established players like Anthropic and OpenAI. Inkling's capabilities could significantly impact multimedia content analysis and generation. The model's open-source nature encourages collaboration and innovation within the AI community. Developers and researchers should explore Inkling's potential applications in multimedia processing and consider its implications for future AI developments.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 20 2026",
             "headline": "China Challenges U.S. AI Dominance with Cost-Effective Models",
             "title": "Chinese AI Firms Unveil Competitive Models Against U.S. Giants",
             "content": "China's AI sector is intensifying competition with the U.S. as companies like Moonshot and Alibaba introduce AI models rivaling those from OpenAI and Anthropic. These models promise comparable performance at significantly lower costs, potentially narrowing the gap in AI leadership. The rapid advancements highlight China's strategic push to disrupt Silicon Valley's dominance in AI technology. This shift could impact global AI market dynamics, urging U.S. companies to innovate and reduce costs. Tech leaders should assess these developments to strategize future AI investments.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 19 2026",
-            "headline": "Christopher Nolan Warns of AI as a Trojan Horse",
-            "title": "Director Christopher Nolan Criticizes AI as a 'Trojan Horse'",
-            "content": "Christopher Nolan, director of 'Odyssey,' has expressed concerns about AI, likening it to a 'Trojan horse.' Nolan warns that AI's capabilities may be underestimated, posing hidden risks to society. His comments reflect a growing skepticism among thought leaders regarding AI's unchecked advancement. As AI continues to integrate into various sectors, stakeholders should critically assess its potential impacts and advocate for responsible development practices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/19/odyssey-director-christopher-nolan-calls-ai-an-obvious-trojan-horse/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 19 2026",
-            "headline": "Jensen Huang Secures Strategic Tech Deals in Japan",
-            "title": "Nvidia's Jensen Huang Concludes Japan Visit with Key Tech Partnerships",
-            "content": "Nvidia CEO Jensen Huang has concluded a successful visit to Japan, securing strategic deals across the country's tech ecosystem. These agreements span various sectors, including AI, robotics, and semiconductors, positioning Nvidia as a pivotal player in Japan's tech landscape. This move aligns with Japan's increasing focus on AI and advanced technologies to drive economic growth. The partnerships are expected to enhance Nvidia's market presence and innovation capabilities in the region. Tech leaders should monitor these developments as they may influence global AI and semiconductor markets.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 19 2026",
-            "headline": "Apple Lawsuit Threatens OpenAI's Hardware Ambitions",
-            "title": "Apple's Legal Action Could Disrupt OpenAI's Hardware and IPO Plans",
-            "content": "Apple has filed a lawsuit against OpenAI, alleging trade secret violations that could impact OpenAI's hardware ambitions and upcoming IPO. The lawsuit claims misconduct involving over 400 former Apple employees now at OpenAI, including the chief hardware officer. This legal battle could delay OpenAI's plans to enter the hardware market and go public. Industry professionals should watch for potential disruptions in AI hardware developments and OpenAI's strategic direction. The outcome may set precedents for employee mobility and intellectual property in tech.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 19 2026",
-            "headline": "Current AI Aims for Global AI Inclusivity",
-            "title": "Nonprofit Current AI Strives to Build an Inclusive AI Ecosystem",
-            "content": "Current AI, a nonprofit organization, is making strides in creating an inclusive AI ecosystem that caters to diverse cultural contexts. The initiative focuses on developing AI technologies that are accessible across various devices and platforms, ensuring no culture is left behind. This approach addresses the digital divide and promotes equitable access to AI advancements. By fostering inclusivity, Current AI aims to democratize AI technology, making it freely available to all. Stakeholders in AI development should consider similar inclusive strategies to broaden the impact of their technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/",
             "relatedResources": []
         }
     ],
