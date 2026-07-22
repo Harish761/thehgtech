@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1604",
+      "incident_id": 1604,
+      "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
+      "date": "2026-07-22",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1595",
       "incident_id": 1595,
       "title": "Deputies in Cherokee County, Georgia, Allegedly Misused Automated License Plate Reader Data for Non-",
@@ -2754,9 +2762,9 @@
     }
   ],
   "stats": {
-    "total": 344,
-    "last7Days": 13,
-    "last30Days": 62
+    "total": 345,
+    "last7Days": 14,
+    "last30Days": 63
   },
-  "lastUpdated": "2026-07-23T01:23:10.147370+05:30"
+  "lastUpdated": "2026-07-23T02:47:58.914130+05:30"
 }
