@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-07-22T05:33:30.501976",
-  "total_incidents": 29595,
+  "last_updated": "2026-07-22T15:58:21.622637",
+  "total_incidents": 29602,
   "incidents": [
+    {
+      "id": "krybit_dhli.in",
+      "victim_name": "dhli.in",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-07-22T14:57:43.088649+00:00",
+      "industry": "Not Found",
+      "website": "dhli.in",
+      "claim": "Delhi Heart & Lung Institute (DHLI) is a tertiary care 100-bedded super specialty hospital established in 2003 in New De...",
+      "screenshot": "https://images.ransomware.live/victims/7f20309df012adfdd38ec54bea78660d.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/e26a25863929498d892fc5fa338f732d064a71fbc45f82e4c50ec65dd52d0911/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_vibonum_technologies_private_limited",
+      "victim_name": "Vibonum Technologies Private Limited",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-07-22T14:57:03.182715+00:00",
+      "industry": "Technology",
+      "website": "Vibonum Technologies Private Limited",
+      "claim": "*** is a recently incorporated Indian private limited company established on March 27, ...",
+      "screenshot": "https://images.ransomware.live/victims/63133d64baad7a89237484363b5c9a41.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/e1c359f3adfa9013cea01c331014d453ddb894b7cc928cbe54875d2f6fd67446/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_kruse_construction",
+      "victim_name": "Kruse Construction",
+      "threat_actor": "akira",
+      "date_discovered": "2026-07-22T13:53:08.680785+00:00",
+      "industry": "Construction",
+      "website": "",
+      "claim": "Kruse Construction is a mechanical contractor with over 50 years of experience in the petroleum\nand petrochemical industry, specializing in the construction and maintenance of liquid petrole\num truck, rail, and pipeline terminals. The company also provides services for bulk plants, pip\neline pump stations, lube oil plants, and underground pipelines.\n\nWe will upload 10gb corporate data soon. Employee information (passports, lots of DLs), project\ns, contracts, financials, customer files and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_university_sprinkler_systems",
+      "victim_name": "University Sprinkler Systems",
+      "threat_actor": "akira",
+      "date_discovered": "2026-07-22T13:52:47.992790+00:00",
+      "industry": "Business Services",
+      "website": "",
+      "claim": "University Sprinklers is BC's largest irrigation company, specializing in the installation of i\nrrigation sprinkler systems and landscape lighting for both residential and commercial clients.\nWith over 40 years of experience, they provide tailored irrigation solutions that ensure healt\nhy lawns and gardens while conserving water.\n\nWe will upload corporate data soon. Employee information (DLs and other files), client informat\nion and and other internal files.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "booba_project_pelli_clarke_pelli_architects",
+      "victim_name": "Pelli Clarke Pelli Architects",
+      "threat_actor": "Booba Project",
+      "date_discovered": "2026-07-22T13:20:46.765074+00:00",
+      "industry": "Business Services",
+      "website": "www.pcparch.com",
+      "claim": "Architecture and Planning Stolen data: 45 GB.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_koshkaryan_law_group",
+      "victim_name": "Koshkaryan Law Group",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-07-22T09:01:02.780948+00:00",
+      "industry": "Business Services",
+      "website": "koshlaw.com",
+      "claim": "Koshkaryan Law Group is a legal firm specializing in personal injury and criminal defense cases. They prioritize client service and provide personalized attention to ensure favorable outcomes for their clients. The firm offers free initial consultations and is dedicated to keeping clients informed about their legal options. With a strong track record of recovering over $138 million for clients, they aim to advocate vigorously on behalf of those they represent.",
+      "screenshot": "https://images.ransomware.live/victims/9c203912d4958f237d955f8f76142c6e.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=877bb86e-24f9-4685-bbe4-6589ae2725b6",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_issvc.com",
+      "victim_name": "issvc.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-07-22T08:58:05.736397+00:00",
+      "industry": "Technology",
+      "website": "issvc.com",
+      "claim": "issvc.com\n\nOfficial Notice to Management and Stakeholders\n\nThe time window has expired. Exactly 24 hours remain until the final deadline. If an agreement is not reached by the end of this period, the complete confidential dataset totaling 262 GB will be published into the public domain.\n\nCompromised…",
+      "screenshot": "https://images.ransomware.live/victims/ce35ed709b5abc3ae857b94bca5d0a8c.png",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/K7Q4Xwr5J40rpV4U3bKWQKH2422gyEVQ",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "nova_marpatech",
       "victim_name": "Marpatech",
