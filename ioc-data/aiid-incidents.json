@@ -57,6 +57,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1602",
+      "incident_id": 1602,
+      "title": "Zoox Autonomous Vehicle Reportedly Entered Smoke-Obscured Fire Scene, Prompting Heavy-Smoke Detectio",
+      "date": "2026-07-21",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1603",
+      "incident_id": 1603,
+      "title": "Crown Prosecution Service Reportedly Filed Purportedly AI-Generated False Citations in Two Extraditi",
+      "date": "2026-07-21",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1588",
       "incident_id": 1588,
       "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
@@ -2738,9 +2754,9 @@
     }
   ],
   "stats": {
-    "total": 342,
-    "last7Days": 16,
-    "last30Days": 61
+    "total": 344,
+    "last7Days": 18,
+    "last30Days": 63
   },
-  "lastUpdated": "2026-07-22T02:51:28.060977+05:30"
+  "lastUpdated": "2026-07-22T09:06:13.472401+05:30"
 }
