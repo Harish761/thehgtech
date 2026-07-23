@@ -2745,14 +2745,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1465",
-      "incident_id": 1465,
-      "title": "Purportedly AI-Generated Video Reportedly Depicted Bulgarian Politician Kostadin Kostadinov Falling ",
-      "date": "2026-04-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1466",
       "incident_id": 1466,
       "title": "Network of Allegedly Fake Facebook Profiles with Purportedly AI-Generated Images Amplified Posts by ",
@@ -2762,9 +2754,9 @@
     }
   ],
   "stats": {
-    "total": 345,
+    "total": 344,
     "last7Days": 14,
     "last30Days": 63
   },
-  "lastUpdated": "2026-07-23T19:56:03.941045+05:30"
+  "lastUpdated": "2026-07-23T23:13:26.081522+05:30"
 }
