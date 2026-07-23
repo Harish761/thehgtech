@@ -2721,30 +2721,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1462",
-      "incident_id": 1462,
-      "title": "Purported Deepfake Facebook Advertisement Reportedly Used Bulgarian Actor and TV Host Mihail Bilalov",
-      "date": "2026-04-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1463",
-      "incident_id": 1463,
-      "title": "Purported Deepfake Facebook Advertisement Reportedly Used Bulgarian Actor, Director, and Playwright ",
-      "date": "2026-04-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1464",
-      "incident_id": 1464,
-      "title": "Purportedly AI-Manipulated Video Reportedly Misrepresented Bulgarian DPS Figure Ahmed Dogan and Spre",
-      "date": "2026-04-24",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1466",
       "incident_id": 1466,
       "title": "Network of Allegedly Fake Facebook Profiles with Purportedly AI-Generated Images Amplified Posts by ",
@@ -2754,9 +2730,9 @@
     }
   ],
   "stats": {
-    "total": 344,
+    "total": 341,
     "last7Days": 10,
     "last30Days": 60
   },
-  "lastUpdated": "2026-07-24T01:26:06.808942+05:30"
+  "lastUpdated": "2026-07-24T02:47:19.121990+05:30"
 }
