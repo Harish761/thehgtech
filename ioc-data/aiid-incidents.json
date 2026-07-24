@@ -2703,36 +2703,12 @@
       "date": "2026-04-30",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1468",
-      "incident_id": 1468,
-      "title": "Purportedly AI-Enhanced Images of Iranian Women Protesters Were Reportedly Spread With Unverified Ex",
-      "date": "2026-04-25",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1461",
-      "incident_id": 1461,
-      "title": "Purportedly AI-Manipulated Medical Scam Advertisement Reportedly Used Bulgarian TV Host and Physicia",
-      "date": "2026-04-24",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1466",
-      "incident_id": 1466,
-      "title": "Network of Allegedly Fake Facebook Profiles with Purportedly AI-Generated Images Amplified Posts by ",
-      "date": "2026-04-24",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 341,
+    "total": 338,
     "last7Days": 10,
     "last30Days": 60
   },
-  "lastUpdated": "2026-07-24T02:47:19.121990+05:30"
+  "lastUpdated": "2026-07-24T09:05:36.340547+05:30"
 }
