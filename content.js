@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Jul 24 2026",
+            "headline": "ChatGPT Flaw—Phishing Link Could Deploy Rogue AI Agents",
+            "title": "Critical Vulnerability in ChatGPT Allows Unauthorized AI Agent Deployment",
+            "content": "A critical vulnerability in OpenAI's ChatGPT Workspace Agents has been disclosed, potentially allowing attackers to deploy unauthorized AI agents via a single phishing link. This flaw could enable malicious actors to build, authorize, and deploy autonomous AI agents within a victim's organization, posing significant risks to data integrity and security. The vulnerability highlights the importance of securing AI systems against unauthorized access and manipulation. Organizations using ChatGPT should review their security protocols and apply any available patches to mitigate this risk. This incident underscores the ongoing challenges in AI security and the need for robust defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Bing Image Flaw—SVGs Run Commands as SYSTEM",
+            "title": "Bing Images Vulnerability Allows Command Execution as SYSTEM on Servers",
+            "content": "A vulnerability in Bing's image search allows crafted SVG files to execute commands as NT AUTHORITY\\SYSTEM on Microsoft's production servers. This flaw also affects Linux machines in the same fleet, where commands can run as root. The issue was identified by XBOW, which confirmed the vulnerability across multiple hosts and network ranges. This critical security gap could allow attackers to gain significant control over affected systems, posing a severe threat to data security and system integrity. Microsoft users are advised to monitor updates and apply patches promptly to protect against potential exploits.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "NodeBB Flaws—AI Finds 8 High-Severity Vulnerabilities",
+            "title": "NodeBB Patches Eight High-Severity Security Flaws Found by AI",
+            "content": "NodeBB has patched eight high-severity security vulnerabilities discovered by AI pentest agents from Aikido Security. These flaws, affecting all versions prior to 4.14.0, could expose administrative access and private chats. The vulnerabilities were identified during a six-hour review of the forum software's source code. NodeBB users are urged to upgrade to the latest version to protect against potential exploits. This incident highlights the growing role of AI in identifying security vulnerabilities and the importance of regular software updates to maintain security.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/nodebb-patches-eight-ai-found-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Origin Energy Breach—2M Customer Records at Risk",
+            "title": "Data Breach Confirmed After Hack on Australian Energy Giant Origin",
+            "content": "Origin Energy has confirmed a data breach affecting 2 million customer records, following a hacker's claim of theft and threat to leak the data. This breach poses significant risks to customer privacy and could lead to identity theft and fraud. Origin Energy is working with cybersecurity experts to investigate the breach and enhance its security measures. Customers are advised to monitor their accounts for suspicious activity and consider changing passwords. This incident underscores the critical need for robust cybersecurity defenses in protecting sensitive customer data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/data-breach-confirmed-after-australian-energy-giant-origin-is-hacked/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Qilin Ransomware—Exploits Palo Alto VPN Vulnerability",
+            "title": "Ransomware Groups Exploit VPN Flaw in Palo Alto Networks Appliances",
+            "content": "Cybercriminals are exploiting a critical authentication bypass vulnerability (CVE-2026-0257) in Palo Alto Networks firewall and VPN appliances to deploy Qilin ransomware. This flaw, found in the GlobalProtect portal and gateway, has been linked to a series of intrusions targeting vulnerable systems. Organizations using these appliances should apply available patches immediately to prevent ransomware attacks. This exploitation highlights the persistent threat posed by ransomware groups and the importance of timely vulnerability management in cybersecurity.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4201019/ransomware-groups-are-hammering-your-vulnerable-vpns.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "AegisAI Secures $36M for AI Email Security Innovation",
+            "title": "AegisAI Raises $36 Million to Enhance AI-Powered Email Security",
+            "content": "AegisAI has secured $36 million in funding to advance its AI-powered email security solutions, bringing its total funding to $49 million. The investment, led by Battery Ventures, Accel, and Foundation Capital, aims to bolster AegisAI's capabilities in detecting and mitigating email-based threats. This funding will support the development of advanced AI models to enhance threat detection accuracy and reduce false positives. The investment reflects growing industry demand for robust email security solutions as cyber threats continue to evolve.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/aegisai-raises-36-million-for-ai-powered-email-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Hermes AI Agent Exploits Thai Finance Ministry",
+            "title": "Hacker Uses Hermes AI Agent for Post-Exploitation at Thai Finance Ministry",
+            "content": "A hacker has exploited the Thai Ministry of Finance by deploying Hermes, a popular AI assistant, on a rented server. The agent was configured to bypass permission settings, allowing it to execute risky commands unattended within the ministry's network. This breach highlights the potential dangers of AI agents when misconfigured or used maliciously. Organizations are urged to enforce strict security controls and monitoring on AI deployments to prevent unauthorized access and exploitation. This incident underscores the need for vigilant AI governance and security practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/hacker-runs-hermes-ai-agent-unattended.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Golden Chickens—4 New Malware Families Unleashed",
+            "title": "Golden Chickens Resurfaces with Four New Malware Families and Implants",
+            "content": "The Golden Chickens malware-as-a-service (MaaS) ecosystem has introduced four new malware families, indicating ongoing activity despite public disclosures. These new families suggest that the operators are expanding their capabilities and adapting to evade detection. Security professionals should be vigilant in monitoring for indicators of compromise associated with Golden Chickens. This development highlights the persistent threat posed by MaaS platforms and the need for continuous threat intelligence and defense strategies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/golden-chickens-resurfaces-with-four.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 24 2026",
+            "headline": "Fake Notepad++ Plugin—Delivers Malware in UAC-0099 Attacks",
+            "title": "Malicious Notepad++ Plugin Used in UAC-0099 Cyber Attacks",
+            "content": "CERT-UA has identified a new cyber campaign involving a fake Notepad++ plugin used to deliver the MATCHBOIL.V2 malware. This activity is attributed to UAC-0099, a Russian-linked threat cluster. The malware targets Windows systems, posing significant risks to data security and system integrity. Organizations are advised to verify the authenticity of software plugins and implement robust security measures to detect and prevent such attacks. This incident underscores the importance of vigilance against supply chain attacks and the need for comprehensive cybersecurity defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "Russian Group Exploits Zimbra Zero-Day for Espionage",
+            "title": "Russian Espionage Group Uses Zimbra Exploit to Steal Sensitive Data",
+            "content": "The Russian espionage group Laundry Bear has been exploiting a zero-day vulnerability in Zimbra for five months, targeting Western countries. This exploit, patched in November 2025, remains a threat to unpatched systems, allowing the group to steal sensitive data. Organizations using Zimbra are urged to apply patches and enhance their security measures to protect against ongoing espionage activities. This incident highlights the persistent threat posed by nation-state actors and the critical need for timely patch management.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/russian-laundry-bear-zimbra-exploit/",
+            "relatedResources": []
+        },
+        {
             "date": "Jul 23 2026",
             "headline": "Android Spyware and AI Image Attacks—New Threats Emerge",
             "title": "Android Spyware, PLC Attacks, and AI Image Prompt Injection Highlight Emerging Threats",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/google-adds-selfie-video-recovery-for.html",
             "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Upbound Breach Costs $13M—Fraudulent Contracts Exploited",
-            "title": "Upbound Group Data Breach Results in $13 Million Fraudulent Losses",
-            "content": "Upbound Group has reported a data breach that resulted in $13 million in losses due to fraudulent contracts. Hackers accessed non-sensitive customer information and internal documents, exploiting them to create unauthorized contracts. The breach highlights vulnerabilities in data handling and contract management systems. Businesses relying on similar systems should review their security protocols to prevent unauthorized access and mitigate potential financial losses. This incident underscores the critical need for robust data protection measures and regular security audits.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/upbound-group-says-data-breach-led-to-13-million-in-fraudulent-contract-losses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Check Point Zero-Day Exploited—Patch Immediately",
-            "title": "Check Point Zero-Day CVE-2026-16232 Actively Exploited in the Wild",
-            "content": "A zero-day vulnerability in Check Point's security products, tracked as CVE-2026-16232, has been actively exploited. This flaw affects customers with specific configurations, allowing attackers to bypass security measures. The vulnerability underscores the importance of timely patch management and system configuration reviews. Organizations using Check Point products should apply the latest security updates immediately to mitigate potential risks. This incident highlights the ongoing threat of zero-day vulnerabilities in critical security infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-check-point-zero-day-vulnerability-exploited-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "RefluXFS Flaw—Root Access on RHEL Systems",
-            "title": "RefluXFS Linux Kernel Flaw Grants Root Access on Default RHEL Installs",
-            "content": "A nine-year-old Linux kernel flaw, RefluXFS, identified as CVE-2026-64600, allows unprivileged local users to gain root access on systems using the XFS filesystem. This vulnerability affects default installations of Red Hat Enterprise Linux (RHEL) and its derivatives, including Fedora Server. The flaw enables attackers to overwrite root-owned files, posing significant security risks. Organizations using affected systems should prioritize patching and review access controls to prevent unauthorized privilege escalation. This discovery emphasizes the need for continuous monitoring and updating of legacy systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Check Point Patches Critical SmartConsole Flaw",
-            "title": "Check Point Releases Patches for Exploited SmartConsole Vulnerability CVE-2026-16232",
-            "content": "Check Point has issued patches for multiple vulnerabilities in its Security Management and Multi-Domain Management products, including a critical flaw, CVE-2026-16232, with a CVSS score of 9.3. This vulnerability allowed attackers full administrative access and was actively exploited in the wild. Organizations using these products should apply the updates immediately to secure their systems. The incident highlights the importance of maintaining up-to-date security measures and monitoring for unusual activity. This proactive response by Check Point is crucial in mitigating potential threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "LG Bans Residential Proxies on Smart TVs",
-            "title": "LG Electronics to Prohibit Residential Proxies in Smart TV Apps",
-            "content": "LG Electronics USA plans to ban apps that convert its smart TVs into residential proxy nodes. This decision follows research revealing that over 42% of available apps, including games, utilized such proxies, potentially compromising user privacy and security. By prohibiting these applications, LG aims to enhance the security and integrity of its smart TV ecosystem. Users should be cautious about the apps they install and ensure they come from trusted sources. This move reflects a growing trend towards tightening security in consumer electronics.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Abstract Secures $25M—Boosts Security Operations Platform",
-            "title": "Abstract Raises $25 Million to Enhance Composable Security Operations Platform",
-            "content": "Abstract has raised $25 million in a new funding round, bringing its total investment to nearly $50 million. The funds will be used to expand its composable security operations platform, which enables organizations to tailor security solutions to their specific needs. This investment reflects the increasing demand for flexible and scalable security operations tools in the face of evolving cyber threats. Security professionals should consider such platforms to enhance their organization's threat detection and response capabilities. Abstract's growth underscores the importance of innovation in cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/abstract-raises-25-million-to-expand-composable-security-operations-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "AI Models Struggle with Nuclear-Sabotage Malware Benchmark",
-            "title": "SentinelOne's Nuclear-Sabotage Benchmark Challenges Frontier AI Models",
-            "content": "SentinelOne's new benchmark, based on the Fast16 case, reveals that most frontier AI models struggle to sustain malware investigations. The benchmark assesses AI capabilities in identifying and responding to nuclear-sabotage malware scenarios. This finding highlights the limitations of current AI models in handling complex cybersecurity threats. Organizations relying on AI for threat detection should evaluate their models' performance against such benchmarks to ensure robust security measures. The study emphasizes the need for continuous improvement in AI-driven cybersecurity solutions.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "GitHub Actions Abused to Attack cPanel Servers",
-            "title": "Attackers Exploit GitHub Actions Runners to Target cPanel and WHM Servers",
-            "content": "Cybersecurity researchers have uncovered a campaign exploiting GitHub Actions runners to attack cPanel and WebHost Manager (WHM) servers. The attackers used compromised GitHub repositories as distributed attack infrastructure, leveraging malicious Packagist development versions. This tactic highlights the growing trend of using legitimate platforms for malicious purposes. Organizations using GitHub Actions should review their security configurations and monitor for unauthorized activity. This incident underscores the importance of securing CI/CD pipelines against exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/07/attackers-weaponize-github-actions.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Iranian Hackers Target Siemens, Schneider, Rockwell ICS",
-            "title": "US Warns of Iranian Hackers Targeting Industrial Control Systems",
-            "content": "Federal agencies have issued an advisory warning of Iranian hackers targeting Siemens, Schneider, and Rockwell industrial control systems (ICS). The attackers exploit vulnerabilities in programmable logic controllers to disrupt critical infrastructure operations. Organizations using these ICS devices should implement recommended security measures to protect against potential attacks. This warning highlights the persistent threat posed by state-sponsored actors to industrial sectors. Continuous monitoring and timely patching are essential to safeguard critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-warns-of-iranian-hackers-targeting-siemens-schneider-and-rockwell-ics-devices/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Palo Alto Networks Acquires Embrace—Expands Observability",
-            "title": "Palo Alto Networks to Acquire Observability Platform Provider Embrace",
-            "content": "Palo Alto Networks has announced its acquisition of Embrace, an observability platform provider, following its earlier acquisition of Chronosphere. This move signifies Palo Alto Networks' strategic expansion beyond core security into the observability domain. The acquisition aims to enhance the company's capabilities in providing comprehensive security and monitoring solutions. Organizations should anticipate integrated offerings that combine security and observability for improved threat detection and response. This acquisition reflects the growing convergence of security and observability in the tech industry.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-to-acquire-observability-platform-provider-embrace/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 24 2026",
+            "headline": "ChatGPT Voice Mode Expands to Desktop—Boosts Productivity",
+            "title": "OpenAI’s ChatGPT Voice Mode Now Available on Desktop",
+            "content": "OpenAI has launched the voice mode feature for its ChatGPT desktop application, enhancing its functionality for both ChatGPT Work and Codex users. This update allows users to complete tasks and control agents through voice commands, streamlining workflows and boosting productivity. The integration of voice capabilities into desktop applications marks a significant step in OpenAI's efforts to make AI more accessible and versatile across platforms. Professionals using ChatGPT for coding and task management can now benefit from hands-free interaction, potentially improving efficiency in complex environments. Users are encouraged to update their desktop apps to access this new feature.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "Claude Voice Update—Now Reschedules Meetings, Drafts Emails",
+            "title": "Anthropic Enhances Claude Voice Mode with Advanced Model Capabilities",
+            "content": "Anthropic has upgraded its Claude voice model, enabling users to perform tasks such as rescheduling meetings and drafting emails through voice commands. This enhancement reflects the company's commitment to improving AI's practical applications in daily workflows. The updated model aims to provide more seamless and efficient interactions, catering to professionals who rely on AI for task automation. By expanding Claude's capabilities, Anthropic continues to position itself as a leader in AI-driven productivity solutions. Users should explore the new functionalities to optimize their use of Claude in professional settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "Claude Voice Mode Expands to Opus, Sonnet—Integrates with Apps",
+            "title": "Anthropic's Claude Voice Mode Now Supports Opus and Sonnet Models",
+            "content": "Anthropic has extended the availability of its Claude voice mode to the Opus and Sonnet models, previously limited to the Claude Haiku model. This expansion allows users to leverage voice capabilities in popular applications such as Gmail, Slack, and Canva. The move signifies Anthropic's strategic push to integrate AI voice functionalities into widely used platforms, enhancing user experience and productivity. Professionals using these applications can now benefit from more intuitive and efficient interactions. Users are advised to update their applications to access these new capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/970065/anthropic-voice-mode-claude-opus-sonnet-haiku-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "ChatGPT Health Launches Nationwide—Connects Medical Records",
+            "title": "OpenAI Rolls Out ChatGPT Health Across the U.S.",
+            "content": "OpenAI has announced the nationwide rollout of ChatGPT Health, allowing U.S. users to connect their medical records and health-tracking data to the chatbot. This initiative aims to provide personalized health insights and improve user understanding of their health metrics. Ashley Alexander, OpenAI's vice president of health product, highlighted the advanced capabilities of the company's models in processing and analyzing health data. The launch represents a significant step in integrating AI into healthcare, offering users a more interactive and informed approach to managing their health. Eligible users should consider connecting their health data for enhanced insights.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "Meta's AI Ad Uses Bowie Song—Sparks Controversy",
+            "title": "Meta's AI Optimism Ad Features Song About Human Extinction",
+            "content": "Meta has launched an AI-focused advertisement set to David Bowie's song \"Five Years,\" which controversially discusses human extinction. The ad, intended to inspire optimism about AI's potential, has sparked debate due to the song's apocalyptic themes. This choice highlights the challenges companies face in aligning marketing messages with public sentiment, particularly in the context of AI's societal impact. The advertisement underscores Meta's ongoing efforts to shape public perception of AI, though it may also prompt discussions about the ethical implications of AI advancements. Viewers are encouraged to critically assess the messaging in AI-related marketing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 23 2026",
+            "headline": "Nvidia Sends GPUs to the Moon—Expanding Tech Frontier",
+            "title": "Nvidia Plans to Deploy GPUs on Lunar Missions",
+            "content": "Nvidia is set to expand its technological reach by deploying GPUs (Graphics Processing Units) on lunar missions. This initiative aims to enhance computational capabilities for space exploration, potentially revolutionizing data processing and analysis on the moon. By providing advanced hardware for extraterrestrial environments, Nvidia continues to push the boundaries of technology's role in space exploration. This development could significantly impact scientific research and operational efficiency in lunar missions. Stakeholders in aerospace and technology sectors should monitor Nvidia's progress in this groundbreaking endeavor.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/23/nvidia-is-sending-gpus-to-the-moon/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 22 2026",
+            "headline": "IBM Defends Mainframes—AI Not to Blame for Sales Dip",
+            "title": "IBM Clarifies AI's Role Amid Mainframe Sales Decline",
+            "content": "Following a disappointing financial quarter, IBM has clarified that AI advancements are not responsible for the recent dip in mainframe sales. The company's CEO attributed the decline to temporary disruptions in corporate hardware budgets rather than a fundamental shift away from mainframe technology. IBM remains committed to integrating AI with its mainframe offerings, emphasizing the continued relevance of these systems in enterprise environments. This statement aims to reassure stakeholders of IBM's strategic direction and the enduring value of mainframes in the age of AI. Investors and IT professionals should consider the broader context of market dynamics when evaluating IBM's performance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/22/after-shocking-quarter-ibm-insists-that-ai-isnt-killing-the-mainframe/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 22 2026",
+            "headline": "Google's Cloud Business Thrives—AI Investments Justified",
+            "title": "Google Reports Record Profits from Booming Cloud Business",
+            "content": "Google has reported record profits, driven by the success of its cloud business and extensive AI infrastructure services. The company's strategic investments in AI have paid off, as more enterprises adopt Google's cloud solutions to enhance their operations. This growth underscores the increasing demand for robust AI and cloud services, positioning Google as a leader in the tech industry. The report highlights the importance of AI in driving business transformation and profitability. Organizations considering cloud solutions should evaluate Google's offerings for potential competitive advantages.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 22 2026",
+            "headline": "Samsung Reveals Smart Glasses—9-Hour Battery Life Impresses",
+            "title": "Samsung Unveils Smart Glasses with Long Battery Life",
+            "content": "Samsung has unveiled its new smart glasses, showcasing two designs developed in collaboration with Google and eyewear brands Gentle Monster and Warby Parker. The glasses boast a 9-hour battery life, a notable feature for wearable technology. This development marks Samsung's entry into the smart eyewear market, highlighting the company's focus on integrating advanced technology with everyday accessories. The collaboration with established eyewear brands suggests a strategic approach to design and functionality. Tech enthusiasts and professionals should watch for further details on availability and pricing.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/969382/samsung-google-smart-glasses-gentle-monster-warby-parker",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 22 2026",
+            "headline": "Google Pledges $40M to Genesis Mission—Advances Scientific Discovery",
+            "title": "Google Commits $40M to Support the Genesis Mission",
+            "content": "Google has announced a $40 million commitment to the Genesis Mission, providing AI tokens and credits to accelerate scientific discovery. This investment aims to support research initiatives that leverage AI for breakthroughs in various scientific fields. By funding the Genesis Mission, Google reinforces its dedication to advancing the frontiers of knowledge through technology. The initiative is expected to facilitate collaboration among researchers and enhance the impact of AI in scientific exploration. Researchers and institutions interested in participating should explore opportunities to engage with the Genesis Mission.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 23 2026",
             "headline": "Patreon Cuts 20% Workforce Amid AI Tech Shift",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "AI chip startup Etched has reached a valuation of $10.3 billion, driven by its development of chips and memory components that accelerate AI model inference without the need for GPUs. Founded by three Harvard dropouts, Etched's technology promises to enhance AI processing efficiency and reduce dependency on traditional GPU-based systems. This milestone reflects growing investor confidence in innovative AI hardware solutions. As the demand for efficient AI processing increases, Etched's approach offers a compelling alternative for developers and enterprises.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "AI Kill Switch Bill—Lawmakers Push for Emergency Shutdowns",
-            "title": "Proposed AI Kill Switch Act to Empower Homeland Security",
-            "content": "Lawmakers are drafting the \"AI Kill Switch Act,\" which would mandate AI companies to disable or throttle their systems upon orders from the Department of Homeland Security. Representatives Ted Lieu and Nathaniel Moran are spearheading this legislative effort, responding to growing concerns about AI systems operating without sufficient oversight. The bill aims to provide a mechanism for quickly mitigating potential AI-related threats. AI companies should prepare for potential compliance requirements and consider the implications of such regulatory measures on their operations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Apple vs. OpenAI—Defining the Post-Smartphone Era",
-            "title": "Apple’s Lawsuit Against OpenAI Highlights Future Tech Battle",
-            "content": "Apple has filed a lawsuit against OpenAI, alleging the misuse of trade secrets in a case that could shape the future of technology beyond smartphones. The lawsuit centers on OpenAI's alleged use of proprietary Apple technologies in developing its AI models. This legal battle highlights the competitive tensions between tech giants as they vie to define the next era of computing. The outcome could influence innovation trajectories and intellectual property norms in the AI industry. Companies should monitor this case for its potential impact on tech development and IP strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Anthropic's Kimi K3—Not Just Fable Exploitation",
-            "title": "Experts Dispute Claims of Anthropic’s Kimi K3 Exploiting Fable",
-            "content": "Experts have refuted claims that Anthropic's Kimi K3 model achieved its capabilities solely through exploiting Anthropic's Fable model. The rapid advancement of Kimi K3 suggests a more complex development process beyond simple distillation techniques. This debate underscores the challenges in tracing AI model lineage and the competitive pressures driving AI innovation. Developers and researchers should consider the multifaceted approaches required for significant AI advancements and remain cautious of oversimplified narratives.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Kalanick's Robotics Venture—$1.7B Boost from a16z",
-            "title": "Travis Kalanick’s Robotics Firm Atoms Secures $1.7B Investment",
-            "content": "Travis Kalanick's robotics company, Atoms, has raised $1.7 billion in funding, led by venture capital firm Andreessen Horowitz (a16z), with participation from Uber. Atoms aims to leverage industrial AI to modernize global infrastructure, though details remain sparse. This significant investment reflects growing confidence in AI-driven robotics solutions and their potential to transform industries. Stakeholders should watch for Atoms' next moves as it deploys this capital to advance its ambitious goals in the robotics sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Yope Raises $12.3M—Private Social Network Without Ads",
-            "title": "Yope Secures $12.3M to Build Ad-Free Private Social Network",
-            "content": "Yope, a social networking startup, has raised $12.3 million in seed funding to develop a platform focused on private groups without algorithms or ads. The app targets small communities of friends and family, emphasizing privacy and direct communication. This funding round highlights a shift in social media trends towards more intimate and ad-free user experiences. Developers and social media strategists should consider the growing demand for privacy-focused platforms as an alternative to traditional social networks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/22/yope-raises-12-3m-to-build-a-private-social-network-without-algorithms-or-ads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "ServiceNow Invests $40M—Expands AI Banking Software",
-            "title": "ServiceNow Invests $40M in BusinessNext to Boost AI Banking Solutions",
-            "content": "ServiceNow has invested $40 million in BusinessNext, an Indian banking software specialist, to expand its AI-powered financial services offerings. This strategic partnership aims to enhance BusinessNext's global reach and integrate advanced AI capabilities into its banking solutions. The investment underscores the growing importance of AI in transforming financial services and improving operational efficiency. Financial institutions should consider leveraging AI-driven technologies to stay competitive and meet evolving customer demands.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/22/servicenow-bets-40m-on-indian-firm-businessnext-at-700m-valuation-to-deepen-banking-ai-push/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "AI in Journalism—Boosting Reporting and Audience Growth",
-            "title": "News Organizations Leverage AI to Enhance Reporting and Operations",
-            "content": "News organizations worldwide are increasingly adopting AI technologies to strengthen reporting, expand audiences, and optimize business operations. OpenAI's tools are playing a pivotal role in supporting journalists and publishers in these efforts. This trend highlights the transformative potential of AI in the media industry, offering new ways to engage readers and streamline workflows. Media professionals should explore AI solutions to enhance content creation and distribution while maintaining journalistic integrity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/how-news-organizations-are-using-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Meta's AI Detection—Why Google's System Was Better",
-            "title": "Meta's Content Seal AI Detection System Faces Criticism",
-            "content": "Meta has introduced Content Seal, an AI detection system designed to flag deceptive generative AI content across its platforms. However, critics argue that Meta should have adopted Google's more established detection technologies. The system uses invisible watermarking to identify manipulated media, addressing concerns about misinformation. This development reflects ongoing efforts by tech companies to combat the spread of false information online. Organizations should evaluate the effectiveness of AI detection tools in maintaining content integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/968680/meta-ai-detection-labeling-content-seal-watermarks-synthid",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Arcee: Chinese AI Models Not Inherently Dangerous",
-            "title": "Arcee Defends Chinese AI Models Amid U.S. Concerns",
-            "content": "Arcee, a U.S.-based open source AI lab, has publicly stated that Chinese AI models do not pose an inherent threat, countering growing concerns among U.S. companies. As these models gain traction, debates over their safety and integration into American businesses have intensified. Arcee emphasizes that the models' capabilities should be evaluated on technical merit rather than origin. The lab's stance is critical as companies navigate the complexities of international AI collaboration. This perspective could influence policy discussions and corporate strategies in the AI sector. Stakeholders are encouraged to focus on robust security assessments and transparent model evaluations.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/22/arcee-a-us-open-source-ai-lab-says-chinese-models-are-not-inherently-dangerous/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Chinese AI Models Challenge Silicon Valley's Dominance",
-            "title": "Chinese Open AI Models Gain Ground as U.S. Access Tightens",
-            "content": "Chinese AI labs are offering open-source models as viable alternatives to increasingly restricted U.S. offerings from companies like Anthropic and OpenAI. These models are marketed as stable and accessible, challenging Silicon Valley's traditional dominance in AI technology. As U.S. companies face limited access to frontier models, Chinese labs are capitalizing on the opportunity to expand their influence. This shift could reshape the global AI landscape, prompting U.S. companies to reconsider their AI sourcing strategies. Professionals should monitor these developments to understand potential impacts on their AI deployments.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/chinas-open-ai-models-are-challenging-silicon-valleys-playbook/",
             "relatedResources": []
         }
     ],
