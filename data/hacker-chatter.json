@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-07-24T15:54:24.466954",
-  "total_incidents": 29676,
+  "last_updated": "2026-07-25T05:27:32.675674",
+  "total_incidents": 29683,
   "incidents": [
+    {
+      "id": "securotrop_advantage_sintered_metals",
+      "victim_name": "Advantage Sintered Metals",
+      "threat_actor": "securotrop",
+      "date_discovered": "2026-07-25T03:57:54.474799+00:00",
+      "industry": "Manufacturing",
+      "website": "www.advantagesintered.com",
+      "claim": "Status: AWAITING\nSize: 503 GB",
+      "screenshot": "https://images.ransomware.live/victims/803e55e296e455f81d0ab9e71f8387ab.png",
+      "url": "http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_gop",
+      "victim_name": "GOP",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-24T22:59:12.543596+00:00",
+      "industry": "Other",
+      "website": "www.gopltd.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/a28ccc6169d25000febcf1a4c8cbf1a9.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=bb832c6c-99a5-48b5-a604-526591d752bd",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nova_center_of_information_technologies_in_finance_public_institution",
+      "victim_name": "Center Of Information Technologies In Finance Public Institution",
+      "threat_actor": "nova",
+      "date_discovered": "2026-07-24T22:57:47.407993+00:00",
+      "industry": "Financial Services",
+      "website": "",
+      "claim": "Centrul de Tehnologii Informaționale în Finanțe (CTIF) offers a wide range of services and products aimed at legal entities such as public authorities, budget institutions, and economic agents, as well as individuals interested in financial information technology. Their services primarily focus on the management, development, and operation of automated information systems in public finance, accounting, taxation, customs, and public procurement. CTIF also provides training courses for professionals in the field of public procurement. The center is committed to transparency and communication with its clients - Data officially taken from Minister Private Information Cloud, Nova Provide tree and samples from stolen data to the company when its get in touch with support department.",
+      "screenshot": "https://images.ransomware.live/victims/d81c2fd2d7dafd52ee36a2bd3dbf2da9.png",
+      "url": "http://pifk3xu3vad6cuxsjll4qjomyaaaoyvnyqppro75pazadzctrrvpdnyd.onion/center-of-information-technologies-in-finance-public-institution",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "unsafe_jiva_health",
+      "victim_name": "Jiva Health",
+      "threat_actor": "unsafe",
+      "date_discovered": "2026-07-24T22:12:03.940831+00:00",
+      "industry": "Healthcare",
+      "website": "Jiva Health",
+      "claim": "Revenue: 9 million",
+      "screenshot": "https://images.ransomware.live/victims/687425ba4ca6ef35d6bc5eae700adeda.png",
+      "url": "http://unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd.onion/reel/6a63d73e8b37a93648b56ecc?page=1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "safepay_upland.k12.ca.us",
+      "victim_name": "upland.k12.ca.us",
+      "threat_actor": "safepay",
+      "date_discovered": "2026-07-24T21:59:45.844758+00:00",
+      "industry": "Education",
+      "website": "upland.k12.ca.us",
+      "claim": "The district provides comprehensive education from kindergarten through twelfth grade and operates 14 schools, including elementary, junior high, and high …",
+      "screenshot": "https://images.ransomware.live/victims/a05b0b2823ba9d1ffc4256c90f05ffdf.png",
+      "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/uplandk12caus/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "safepay_gvsurgicalarts.com",
+      "victim_name": "gvsurgicalarts.com",
+      "threat_actor": "safepay",
+      "date_discovered": "2026-07-24T21:59:13.423298+00:00",
+      "industry": "Healthcare",
+      "website": "gvsurgicalarts.com",
+      "claim": "Founded in 2004 by Dr. Brian R. Chisdak, the practice has grown into one of Montana's leading surgical centers and …",
+      "screenshot": "https://images.ransomware.live/victims/907ab2a93779aad38f54485bab7e8737.png",
+      "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/gvsurgicalartscom/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "m3rx_ausproof.com.au",
+      "victim_name": "ausproof.com.au",
+      "threat_actor": "m3rx",
+      "date_discovered": "2026-07-24T19:28:48.567761+00:00",
+      "industry": "Professional Services",
+      "website": "ausproof.com.au",
+      "claim": "+61 749784000 , AusProof is a leader in the design and manufacture of low and high voltage electrical cable couplers specifically for the mining and tunneling industries. Established in 1974, the company is committed to innovation and quality in its product offerings. AusProof serves clients globally, providing reliable solutions for electrical connectivity in challenging environments. Their extensive experience and dedication to research and development ensure that they meet the evolving needs of their customers. Stolen: 460 GB 373,495 Files",
+      "screenshot": "https://images.ransomware.live/victims/7aa287b8742574fbe202edf4a744b9cf.png",
+      "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#ausproof.com.au",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "booba_project_zynex",
       "victim_name": "Zynex",
