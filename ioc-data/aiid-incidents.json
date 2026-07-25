@@ -1,6 +1,38 @@
 {
   "incidents": [
     {
+      "id": "AIID-1605",
+      "incident_id": 1605,
+      "title": "Purportedly AI-Generated Image Prompted Emergency Investigation of False Fire at South Africa's Orla",
+      "date": "2026-07-24",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1606",
+      "incident_id": 1606,
+      "title": "SASSA Facial-Verification Failures Reportedly Contributed to Social Grant Access Disruptions in Sout",
+      "date": "2026-07-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1607",
+      "incident_id": 1607,
+      "title": "Canadian MLA Bill Oliver Reportedly Read Unremoved LLM Instructions During New Brunswick Legislative",
+      "date": "2026-07-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1608",
+      "incident_id": 1608,
+      "title": "Purportedly AI-Generated Memorial Posters Reportedly Presented Fabricated Child Portraits as Victims",
+      "date": "2026-07-24",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1604",
       "incident_id": 1604,
       "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
@@ -2706,9 +2738,9 @@
     }
   ],
   "stats": {
-    "total": 338,
-    "last7Days": 10,
-    "last30Days": 57
+    "total": 342,
+    "last7Days": 14,
+    "last30Days": 61
   },
-  "lastUpdated": "2026-07-25T02:46:17.444929+05:30"
+  "lastUpdated": "2026-07-25T09:02:26.747479+05:30"
 }
