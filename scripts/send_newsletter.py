@@ -74,6 +74,255 @@ def create_and_send_campaign(subject, html_content):
     call_brevo_api(f"emailCampaigns/{campaign_id}/sendNow", method="POST")
     print("Campaign sent successfully!")
 
+# ---------------------------------------------------------------------------
+# CVE Section Helpers
+# ---------------------------------------------------------------------------
+
+CVE_STATE_PATH = "data/newsletter-cve-state.json"
+EPSS_THRESHOLD = 0.80  # 80% and above
+ZERO_DAY_WINDOW_DAYS = 7
+
+
+def load_cve_data():
+    """Load CVE records from cve-data.json. Returns empty list if unavailable."""
+    if not os.path.exists("cve-data.json"):
+        print("Warning: cve-data.json not found. CVE section will be skipped.")
+        return []
+    with open("cve-data.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data.get("cves", [])
+
+
+def get_zero_day_cves(cves):
+    """
+    Return zero-day CVEs whose dateAdded is within the last ZERO_DAY_WINDOW_DAYS days.
+    Sorted newest-first.
+    """
+    today = datetime.datetime.utcnow().date()
+    cutoff = today - datetime.timedelta(days=ZERO_DAY_WINDOW_DAYS)
+
+    result = []
+    for c in cves:
+        if not c.get("isZeroDay"):
+            continue
+        try:
+            date_added = datetime.datetime.strptime(c.get("dateAdded", ""), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if date_added >= cutoff:
+            result.append(c)
+
+    result.sort(key=lambda x: x.get("dateAdded", ""), reverse=True)
+    return result
+
+
+def get_high_epss_locked(cves):
+    """
+    Return the daily-locked high-EPSS CVE list (score >= EPSS_THRESHOLD).
+    On the first call of each UTC day the list is generated and saved to
+    CVE_STATE_PATH. Subsequent calls within the same day read from the lock.
+    """
+    today_str = datetime.datetime.utcnow().strftime("%Y-%m-%d")
+
+    # Load existing state
+    state = {}
+    if os.path.exists(CVE_STATE_PATH):
+        try:
+            with open(CVE_STATE_PATH, "r", encoding="utf-8") as f:
+                state = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    high_epss_state = state.get("highEpss", {})
+
+    # If today's lock already exists, return those CVEs
+    if high_epss_state.get("lockDate") == today_str:
+        locked_ids = set(high_epss_state.get("cveIds", []))
+        locked = [c for c in cves if c["cveId"] in locked_ids]
+        # Preserve descending EPSS order
+        locked.sort(key=lambda x: (x.get("epss") or {}).get("score", 0), reverse=True)
+        print(f"CVE state: using existing daily lock ({len(locked)} high-EPSS CVEs).")
+        return locked
+
+    # Generate a fresh lock for today
+    high_epss = [
+        c for c in cves
+        if (c.get("epss") or {}).get("score", 0) >= EPSS_THRESHOLD
+    ]
+    high_epss.sort(key=lambda x: (x.get("epss") or {}).get("score", 0), reverse=True)
+
+    state["highEpss"] = {
+        "lockDate": today_str,
+        "cveIds": [c["cveId"] for c in high_epss]
+    }
+
+    os.makedirs(os.path.dirname(CVE_STATE_PATH), exist_ok=True)
+    with open(CVE_STATE_PATH, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+
+    print(f"CVE state: generated new daily lock with {len(high_epss)} high-EPSS CVEs.")
+    return high_epss
+
+
+def _fmt_date(date_str):
+    """Format YYYY-MM-DD to 'Mon DD, YYYY'. Returns original string on failure."""
+    try:
+        return datetime.datetime.strptime(date_str, "%Y-%m-%d").strftime("%b %d, %Y")
+    except (ValueError, TypeError):
+        return date_str or "N/A"
+
+
+def _vendor_product(c):
+    """Return a readable 'Vendor · Product' string, avoiding redundancy."""
+    vendor = c.get("vendor", "Unknown")
+    product = c.get("product", "")
+    if product and product.lower() != vendor.lower():
+        return f"{vendor} &middot; {product}"
+    return vendor
+
+
+def _short_desc(c, max_len=130):
+    """Return a truncated short description suitable for an email row."""
+    text = c.get("shortDescription") or c.get("description") or ""
+    return text[:max_len].rstrip() + "..." if len(text) > max_len else text
+
+
+def generate_cve_section_html(cves):
+    """
+    Build the HTML for the CVE section of the digest:
+      - Zero-Day Watch   (red,    7-day window from dateAdded)
+      - High Exploit Risk (orange, daily-locked, EPSS >= 80%)
+
+    Returns an empty string if there is nothing to show.
+    Uses inline CSS only for maximum email-client compatibility.
+    """
+    zero_days = get_zero_day_cves(cves)
+    high_epss = get_high_epss_locked(cves)
+
+    if not zero_days and not high_epss:
+        print("CVE section: no qualifying CVEs — section omitted.")
+        return ""
+
+    html = ""
+
+    # ── Zero-Day Watch ───────────────────────────────────────────────────────
+    if zero_days:
+        html += """
+            <h2 style="color:#ff3d3d;font-size:15px;border-left:4px solid #ff3d3d;
+                        padding-left:12px;margin:40px 0 4px 0;letter-spacing:1px;
+                        text-transform:uppercase;font-weight:700;">
+                Zero-Day Watch
+            </h2>
+            <p style="color:#8b949e;font-size:12px;margin:0 0 14px 16px;">
+                Active exploitation confirmed by CISA KEV. Remediate before the due date.
+            </p>
+        """
+        for c in zero_days:
+            cve_id     = c.get("cveId", "N/A")
+            vp         = _vendor_product(c)
+            detected   = _fmt_date(c.get("dateAdded"))
+            due        = _fmt_date(c.get("dueDate"))
+            desc       = _short_desc(c)
+            nvd_url    = c.get("nvdUrl") or f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+
+            html += f"""
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="border:1px solid #30363d;border-radius:6px;
+                          margin-bottom:8px;border-collapse:separate;">
+              <tr>
+                <td style="padding:10px 14px;background:#0d1117;
+                           border-radius:6px 6px 0 0;width:60%;vertical-align:top;">
+                  <span style="color:#ff3d3d;font-weight:700;font-size:13px;
+                               font-family:'Courier New',Courier,monospace;">{cve_id}</span><br>
+                  <span style="color:#c9d1d9;font-size:12px;">{vp}</span>
+                </td>
+                <td style="padding:10px 14px;background:#0d1117;
+                           border-radius:6px 6px 0 0;text-align:right;vertical-align:top;">
+                  <span style="font-size:11px;color:#8b949e;display:block;">
+                    Detected: {detected}
+                  </span>
+                  <span style="font-size:11px;color:#ff3d3d;font-weight:600;display:block;">
+                    Due: {due}
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"
+                    style="padding:8px 14px;background:#161b22;
+                           border-top:1px solid #30363d;border-radius:0 0 6px 6px;">
+                  <span style="font-size:12px;color:#8b949e;line-height:1.6;">{desc}</span>
+                  <a href="{nvd_url}"
+                     style="color:#58a6ff;font-size:12px;text-decoration:none;
+                            margin-left:12px;font-weight:600;white-space:nowrap;">
+                    View on NVD &rarr;
+                  </a>
+                </td>
+              </tr>
+            </table>
+            """
+
+    # ── High Exploit Risk ────────────────────────────────────────────────────
+    if high_epss:
+        html += """
+            <h2 style="color:#FF8C42;font-size:15px;border-left:4px solid #FF8C42;
+                        padding-left:12px;margin:36px 0 4px 0;letter-spacing:1px;
+                        text-transform:uppercase;font-weight:700;">
+                High Exploit Risk
+            </h2>
+            <p style="color:#8b949e;font-size:12px;margin:0 0 14px 16px;">
+                EPSS &ge; 80% &mdash; high probability of exploitation in the next 30 days.
+                List locked at today&apos;s morning run.
+            </p>
+        """
+        for c in high_epss:
+            cve_id    = c.get("cveId", "N/A")
+            vp        = _vendor_product(c)
+            epss_pct  = f"{(c.get('epss') or {}).get('score', 0) * 100:.0f}%"
+            source    = c.get("source", "")
+            desc      = _short_desc(c)
+            nvd_url   = c.get("nvdUrl") or f"https://nvd.nist.gov/vuln/detail/{cve_id}"
+
+            html += f"""
+            <table width="100%" cellpadding="0" cellspacing="0"
+                   style="border:1px solid #30363d;border-radius:6px;
+                          margin-bottom:8px;border-collapse:separate;">
+              <tr>
+                <td style="padding:10px 14px;background:#0d1117;
+                           border-radius:6px 6px 0 0;width:60%;vertical-align:top;">
+                  <span style="color:#FF8C42;font-weight:700;font-size:13px;
+                               font-family:'Courier New',Courier,monospace;">{cve_id}</span><br>
+                  <span style="color:#c9d1d9;font-size:12px;">{vp}</span>
+                </td>
+                <td style="padding:10px 14px;background:#0d1117;
+                           border-radius:6px 6px 0 0;text-align:right;vertical-align:top;">
+                  <span style="font-size:15px;color:#FF8C42;font-weight:700;display:block;">
+                    EPSS {epss_pct}
+                  </span>
+                  <span style="font-size:11px;color:#8b949e;display:block;">{source}</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"
+                    style="padding:8px 14px;background:#161b22;
+                           border-top:1px solid #30363d;border-radius:0 0 6px 6px;">
+                  <span style="font-size:12px;color:#8b949e;line-height:1.6;">{desc}</span>
+                  <a href="{nvd_url}"
+                     style="color:#58a6ff;font-size:12px;text-decoration:none;
+                            margin-left:12px;font-weight:600;white-space:nowrap;">
+                    View on NVD &rarr;
+                  </a>
+                </td>
+              </tr>
+            </table>
+            """
+
+    return html
+
+
+# ---------------------------------------------------------------------------
+# Email generators
+# ---------------------------------------------------------------------------
+
 def generate_shorts_html():
     with open("content.js", "r", encoding="utf-8") as f:
         content = f.read()
@@ -155,7 +404,13 @@ def generate_shorts_html():
                 <a href="{short['sourceUrl']}">Read Full Story &rarr;</a>
             </div>
         """
-        
+
+    # ── CVE Section ──────────────────────────────────────────────────────────
+    cves = load_cve_data()
+    cve_html = generate_cve_section_html(cves)
+    html += cve_html
+    # ─────────────────────────────────────────────────────────────────────────
+
     html += """
             <div class="tagline">Stay secure. Stay informed. Stay ahead.</div>
             <div class="footer">
@@ -221,7 +476,7 @@ def generate_article_html(file_path):
     <body>
         <div class="container">
             <div class="header">
-                <h2>The<span>HG</span>Tech ⚡ New Analysis</h2>
+                <h2>The<span>HG</span>Tech &#9889; New Analysis</h2>
             </div>
             
             <img class="hero" src="{image_url}" alt="Hero Image">

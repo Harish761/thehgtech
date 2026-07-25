@@ -9,6 +9,10 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
+# Required to commit the CVE daily-lock state file back to the repo
+permissions:
+  contents: write
+
 jobs:
   send-newsletter:
     runs-on: ubuntu-latest
@@ -17,6 +21,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -34,8 +40,17 @@ jobs:
         run: |
           python scripts/send_newsletter.py --type shorts
       
+      - name: Commit CVE daily-lock state
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add data/newsletter-cve-state.json || true
+          git diff --staged --quiet || \
+            git commit -m "chore: update newsletter CVE lock [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git pull --rebase origin main && git push || true
+      
       - name: Summary
         if: always()
         run: |
-          echo "### 📧 Newsletter Sent: Daily Digest" >> $GITHUB_STEP_SUMMARY
-          echo "Dispatched shorts digest to Brevo API." >> $GITHUB_STEP_SUMMARY
+          echo "### Newsletter Sent: Daily Digest" >> $GITHUB_STEP_SUMMARY
+          echo "Dispatched shorts digest (with CVE section) to Brevo API." >> $GITHUB_STEP_SUMMARY
