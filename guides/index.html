@@ -1901,7 +1901,7 @@
                 const badge = g.badge ? `<span class="card-badge ${g.badge.toLowerCase()}">${g.badge}</span>` : '';
                 const icon = getCategoryIcon(g.category);
                 return `
-                <a data-removed-broken-link="true" class="guide-card-link">
+                <a href="/guides/${g.id}.html" class="guide-card-link">
                     <article class="guide-card">
                         <div class="card-image">
                             <img src="${g.image || defaultImage}" alt="${g.title}" loading="lazy" onerror="this.src='${defaultImage}'">
