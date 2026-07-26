@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "gitlab-rce-invisible-patch-2026",
+      "title": "The GitLab RCE Patch That Had No CVE: A Vulnerability Management Wake-Up Call",
+      "date": "July 26, 2026",
+      "category": "Vulnerability Research",
+      "badge": "FLAGSHIP",
+      "author": "Harish G",
+      "excerpt": "A critical GitLab RCE (the Oj Spill) was silently patched six weeks before public disclosure with no CVE, no advisory, and no CVSS score. Deep technical analysis of the exploit chain — two memory corruption bugs in the Oj gem chained through ipynbdiff — and what it reveals about enterprise vulnerability management blind spots.",
+      "image": "/images/articles/gitlab-rce-invisible-patch-2026.png",
+      "externalUrl": "articles/gitlab-rce-invisible-patch-2026.html",
+      "tags": [
+        "GitLab",
+        "RCE",
+        "CVE Blind Spot",
+        "Vulnerability Management",
+        "Oj Gem",
+        "Memory Corruption",
+        "Supply Chain Security",
+        "ipynbdiff",
+        "Puma",
+        "Jupyter Notebook",
+        "ASLR Bypass",
+        "Enterprise Security",
+        "Detection Engineering",
+        "ISO 27001",
+        "depthfirst"
+      ]
+    },
+    {
       "id": "report-20260720",
       "title": "Weekly Threat Report: July 20, 2026",
       "date": "July 20, 2026",
