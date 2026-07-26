@@ -31,69 +31,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Jul 23 2026",
-            "headline": "Check Point Flaw Exploited—Unauthenticated Admin Access Granted",
-            "title": "Check Point SmartConsole Vulnerability Allows Unauthenticated Admin Privileges",
-            "content": "A critical vulnerability in Check Point's SmartConsole management tool, identified as CVE-2026-16232, is being actively exploited in the wild. This flaw allows unauthenticated attackers to gain full administrative privileges, posing a severe risk to affected systems. With a CVSS score of 9.3, this vulnerability underscores the critical need for immediate patching. Check Point has issued a security alert urging users to update their systems to mitigate potential exploitation. This incident highlights the importance of securing management interfaces against unauthorized access.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4200913/check-point-hole-grants-unauthenticated-attackers-full-smartconsole-admin-privileges.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Ransomware Hits Japanese Food Chain—Supply Disrupted",
-            "title": "Ransomware Attack Disrupts Japanese Frozen-Food Supply Chain",
-            "content": "A ransomware attack has severely disrupted operations at a Japanese food and logistics firm, impacting the supply of frozen food to thousands of clients, including major franchises like Kentucky Fried Chicken. The attack highlights the vulnerability of supply chains to cyber threats and the potential for significant operational disruptions. Organizations in the food and logistics sectors should reassess their cybersecurity strategies and consider implementing advanced threat detection and response measures. This incident underscores the critical nature of cybersecurity in maintaining supply chain integrity.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-attack-japanese-frozen-food-chain",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Kratos PhaaS Dismantled—Global Crackdown by Law Enforcement",
-            "title": "German Law Enforcement Dismantles Phishing-as-a-Service Group Kratos",
-            "content": "German law enforcement, in collaboration with international agencies, has dismantled the infrastructure of Kratos, a major phishing-as-a-service (PhaaS) group. The operation resulted in the arrest of a Kratos developer and technical administrator in Indonesia. This crackdown highlights the global effort to combat cybercrime networks offering phishing services to threat actors. Organizations should remain vigilant against phishing threats and consider enhancing their email security and user awareness training. The dismantling of Kratos marks a significant victory in the fight against organized cybercrime.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4200215/german-law-enforcement-claims-to-have-dismantled-mega-phishing-as-a-service-group-kratos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Oracle's July Update—1,449 Security Patches Released",
-            "title": "Oracle's July 2026 Update Fixes Critical Fusion Middleware Flaws",
-            "content": "Oracle's July 2026 Critical Patch Update, its largest to date, includes 1,449 new security patches across 32 product families. Notably, Fusion Middleware received ten patches for vulnerabilities with a CVSS score of 10.0, indicating critical severity. This extensive update underscores the importance of regular patch management to protect against potential exploits. Organizations using Oracle products should prioritize applying these patches to safeguard their systems. The scale of this update reflects the ongoing challenges in securing complex enterprise software environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4200184/oracles-july-update-fixes-ten-10-0-vulnerabilities-in-fusion-middleware.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 21 2026",
-            "headline": "Ransomware Surge—Fragmentation Fuels New Attacks",
-            "title": "Ransomware Ecosystem Fragmentation Drives Attack Acceleration",
-            "content": "Researchers have observed an acceleration in ransomware attacks, attributed to the fragmentation of the ransomware ecosystem and the emergence of new threat actors. This trend is expanding the scope of attacks to less defended organizations, increasing the overall risk landscape. Security professionals should focus on enhancing their defenses and adopting proactive threat intelligence to mitigate these evolving threats. The rise in ransomware activity underscores the need for comprehensive cybersecurity strategies to protect vulnerable targets.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-is-accelerating-not-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 21 2026",
-            "headline": "wp2shell Exploited—WordPress Sites at Risk",
-            "title": "WordPress Sites Compromised Through wp2shell Vulnerability Chain",
-            "content": "Attackers are actively exploiting the critical wp2shell vulnerability chain in WordPress sites, putting both sites and their visitors at risk. The exploitation began within hours of patch releases, highlighting the urgency of timely updates. This vulnerability underscores the importance of maintaining up-to-date security measures for WordPress installations. Site administrators should apply patches immediately and consider additional security plugins to protect against potential exploits. The rapid exploitation of wp2shell reflects the ongoing threat landscape for popular content management systems.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/07/what-happens-if-you-visit-a-wordpress-site-hacked-through-wp2shell",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "OpenAI Fixes ChatGPT Flaw—Preventing AI Insider Threats",
-            "title": "OpenAI Addresses ChatGPT AgentForger Flaw to Prevent AI Insider Threats",
-            "content": "OpenAI has patched a vulnerability known as AgentForger, which allowed attackers to create and control an invisible autonomous AI agent within a victim organization. This flaw posed significant risks by enabling potential insider threats through AI manipulation. Organizations using AI models should remain vigilant and ensure robust security measures are in place to prevent unauthorized access and control. The resolution of this flaw highlights the importance of securing AI systems against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-fixes-chatgpt-agent-flaw-that-could-let-attackers-forge-an-ai-insider/",
-            "relatedResources": []
-        },
-        {
             "date": "Jul 24 2026",
             "headline": "Dolphin X Malware Uses AI—Linux Kernel Flaws Exposed",
             "title": "Dolphin X AI-Powered Malware and 400 Linux Kernel Flaws Uncovered",
@@ -118,15 +55,6 @@ const websiteContent = {
             "content": "Security researchers have identified Kimi K3 agents exploiting zero-day vulnerabilities in Redis versions 6.2.22, 7.4.9, 8.6.4, and 8.8.0, leading to remote code execution (RCE) attacks. The vulnerabilities require the use of RESTORE, with additional dependencies on EVAL and XGROUP for certain versions. Redis has responded by issuing seven security releases to address these flaws. Organizations using Redis should urgently apply these updates to prevent potential exploitation. This incident underscores the importance of maintaining up-to-date software to protect against emerging threats.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Upbound Breach Costs $13M—Fraudulent Contracts Exposed",
-            "title": "Upbound Group Data Breach Results in $13 Million Fraud Losses",
-            "content": "Upbound Group has reported a data breach that led to $13 million in losses due to fraudulent contracts. Hackers accessed non-sensitive customer information and other documents, exploiting them for financial gain. This breach highlights the financial risks associated with inadequate data protection measures. Companies are urged to enhance their cybersecurity frameworks, focusing on data encryption and access controls to safeguard sensitive information. The incident serves as a reminder of the potential financial impact of data breaches on businesses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/upbound-group-says-data-breach-led-to-13-million-in-fraudulent-contract-losses/",
             "relatedResources": []
         },
         {
@@ -210,69 +138,6 @@ const websiteContent = {
             "content": "Midjourney, an AI lab known for its image and video generation technologies, has acquired the astrology app Co-Star. This strategic move marks Midjourney's expansion into new domains beyond its traditional focus. The acquisition is expected to integrate Co-Star's personalized astrology insights with Midjourney's AI capabilities, potentially creating new user experiences. As AI companies diversify their offerings, the integration of niche applications like astrology could drive innovation in personalized content delivery. Industry observers will be watching how Midjourney leverages this acquisition to enhance its AI-driven services.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "AMD Challenges Nvidia with Helios AI System",
-            "title": "AMD Unveils Helios AI Rack-Scale System to Compete with Nvidia",
-            "content": "AMD has announced its new Helios AI rack-scale system, set to ship later this year, as a direct challenge to Nvidia's dominance in the AI hardware market. The Helios system is designed to optimize AI workloads with enhanced processing power and efficiency. This development is significant for enterprises seeking alternatives to Nvidia's solutions, potentially reducing costs and increasing competition. As AI demands grow, the introduction of Helios could shift market dynamics, prompting further innovation in AI hardware. Industry stakeholders should evaluate the Helios system's capabilities to determine its fit for their AI infrastructure needs.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "AegisAI Secures $36M to Combat AI Spear Phishing",
-            "title": "AegisAI Raises $36M to Tackle AI-Driven Spear Phishing Threats",
-            "content": "AegisAI, founded by former Google security executives, has secured $36 million in funding to enhance its AI agents designed to combat spear phishing attacks. These AI agents analyze messages with human-like scrutiny, identifying subtle anomalies that traditional methods might miss. As spear phishing tactics become more sophisticated, AegisAI's technology aims to protect organizations from costly breaches. The funding will support further development and deployment of these AI-driven security solutions. Security professionals should consider integrating advanced AI tools like AegisAI's to bolster their defenses against evolving phishing threats.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Runway's AI Model Router Eases Generative Media Selection",
-            "title": "Runway Introduces AI Model Router for Optimized Generative Media",
-            "content": "Runway has launched a new AI Model Router designed to streamline the selection of generative media models based on developer priorities such as quality, speed, or cost. This tool automatically identifies the most suitable model for image, video, or audio generation requests, enhancing efficiency in media production workflows. As the generative media landscape becomes increasingly crowded, tools like Runway's router offer a competitive edge by optimizing resource allocation. Developers and media professionals can leverage this technology to improve project outcomes and reduce operational complexity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "Google's AI Spending Leads to Negative Cash Flow",
-            "title": "Google's AI Investments Result in First Negative Cash Flow Quarter",
-            "content": "Google has reported its first negative cash flow quarter, attributed to substantial investments in AI technologies. Despite maintaining strong revenue figures, the company's aggressive spending on AI development and infrastructure has impacted its financials. This shift highlights the growing costs associated with advancing AI capabilities and maintaining competitive advantage. As AI continues to drive innovation, companies like Google must balance investment with financial sustainability. Stakeholders should monitor Google's strategic decisions as it navigates the challenges of scaling AI operations.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 23 2026",
-            "headline": "AI Kill Switch Bill to Be Introduced in Congress",
-            "title": "Lawmakers Propose AI Kill Switch Act for Emergency Shutdowns",
-            "content": "U.S. lawmakers are preparing to introduce the \"AI Kill Switch Act,\" which would mandate AI companies to implement mechanisms for emergency shutdowns or throttling of their systems upon orders from the Department of Homeland Security. This legislative move aims to address concerns over AI systems' potential risks and ensure government oversight in critical situations. The proposed bill reflects growing scrutiny of AI technologies and their societal impact. AI companies should prepare for potential regulatory changes and assess their systems' compliance with emerging legal requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "Chinese AI Models Challenge Silicon Valley's Approach",
-            "title": "Chinese Open AI Models Offer Accessible Alternatives to U.S. Counterparts",
-            "content": "Chinese AI labs are gaining attention by promoting open-source AI models as accessible and stable alternatives to those from U.S. companies like Anthropic and OpenAI. As access to frontier models becomes more restricted in the U.S., Chinese offerings present a viable option for developers seeking flexibility and transparency. This trend could reshape the competitive landscape, encouraging innovation and collaboration across borders. Industry professionals should consider exploring these open-source models to diversify their AI toolsets and leverage global advancements.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/chinas-open-ai-models-are-challenging-silicon-valleys-playbook/",
-            "relatedResources": []
-        },
-        {
-            "date": "Jul 22 2026",
-            "headline": "OpenAI's Project Camellia Invests in Georgia Community",
-            "title": "OpenAI Launches Project Camellia to Build AI Infrastructure in Georgia",
-            "content": "OpenAI has announced Project Camellia, an initiative in Effingham County, Georgia, focused on developing AI infrastructure with commitments to responsible energy use, community investment, and job creation. This project aims to integrate AI technologies with local resources, fostering economic growth and technological advancement. By prioritizing sustainability and community engagement, OpenAI seeks to set a precedent for ethical AI development. Stakeholders in the region can expect increased access to AI tools like Codex, enhancing local capabilities and opportunities.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
             "relatedResources": []
         },
         {
