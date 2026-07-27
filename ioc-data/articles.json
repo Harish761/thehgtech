@@ -1,6 +1,38 @@
 {
   "articles": [
     {
+      "id": "which-ai-race-measuring-2026",
+      "title": "Which AI Race Are We Actually Measuring?",
+      "date": "July 27, 2026",
+      "category": "Editorial Analysis",
+      "badge": "EDITORIAL",
+      "author": "Harish G",
+      "excerpt": "Most discussions about 'who is winning the AI race' assume there is one competition with one finish line. The evidence suggests otherwise. An editorial analysis of the five concurrent AI races — frontier models, personal AI, smartphone AI, infrastructure, and open-weight — and why judging them all by the same benchmark produces misleading conclusions.",
+      "image": "/images/articles/which-ai-race-measuring-2026.png",
+      "externalUrl": "articles/which-ai-race-measuring-2026.html",
+      "tags": [
+        "Editorial",
+        "Consumer AI",
+        "AI Race",
+        "Apple Intelligence",
+        "Apple Silicon",
+        "Siri",
+        "ChatGPT",
+        "OpenAI",
+        "Anthropic",
+        "Google Gemini",
+        "Frontier AI",
+        "On-Device AI",
+        "NVIDIA",
+        "Qualcomm",
+        "Meta Llama",
+        "Open-Weight AI",
+        "Benchmarks",
+        "Samsung Galaxy AI",
+        "Personal AI"
+      ]
+    },
+    {
       "id": "gitlab-rce-invisible-patch-2026",
       "title": "The GitLab RCE Patch That Had No CVE: A Vulnerability Management Wake-Up Call",
       "date": "July 26, 2026",
