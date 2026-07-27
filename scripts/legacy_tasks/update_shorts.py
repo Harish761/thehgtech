@@ -1320,6 +1320,13 @@ def update_shorts():
     print(f"\n📊 Parsed {len(new_cyber_shorts)} new cybersecurity shorts")
     print(f"📊 Parsed {len(new_ai_shorts)} new AI shorts")
     
+    # Abort if we had new articles but failed to parse/generate any shorts
+    if (cyber_articles_new and not new_cyber_shorts) or (ai_articles_new and not new_ai_shorts):
+        print("\n❌ CRITICAL ERROR: AI failed to generate shorts from new articles!")
+        print("❌ This usually means the OPENAI_API_KEY is invalid, expired, or out of quota.")
+        print("❌ Aborting update to prevent deleting old content without replacing it.")
+        sys.exit(1)
+    
     # Verify URLs are real (not placeholders)
     for short in new_cyber_shorts + new_ai_shorts:
         if 'PLACEHOLDER' in short.get('sourceUrl', ''):
