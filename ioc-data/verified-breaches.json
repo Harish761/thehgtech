@@ -7795,6 +7795,28 @@
       "Description": "In December 2017, the Danish torrent tracker known as <a href=\"https://torrentfreak.com/popular-danish-torrent-tracker-shuts-down-after-hack-180102/\" target=\"_blank\" rel=\"noopener\">HoundDawgs suffered a data breach</a>. More than 55GB of data was dumped publicly and whilst <a href=\"https://www.flashback.org/p62770812\" target=\"_blank\" rel=\"noopener\">there was initially contention as to the severity of the incident</a>, the data did indeed contain more than 45k unique email addresses complete extensive logs of torrenting activity, IP addresses and SHA1 passwords."
     }
   ],
+  "hccs.edu": [
+    {
+      "Name": "HoustonCityCollege",
+      "Title": "Houston City College",
+      "BreachDate": "2026-06-16",
+      "AddedDate": "2026-07-28T06:05:24Z",
+      "PwnCount": 831642,
+      "DataClasses": [
+        "Academic records",
+        "Citizenship statuses",
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://securityaffairs.com/193777/data-breach/edtech-faces-a-cybersecurity-crisis-data-breaches-surge.html\" target=\"_blank\" rel=\"noopener\">Houston City College was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. Data allegedly obtained from the college was later published publicly and included 832k unique email addresses along with names, addresses, phone numbers, academic records, and other personal information relating to both current students and alumni."
+    }
+  ],
   "houzz.com": [
     {
       "Name": "Houzz",

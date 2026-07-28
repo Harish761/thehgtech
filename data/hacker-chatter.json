@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-07-28T05:29:48.947689",
-  "total_incidents": 29835,
+  "last_updated": "2026-07-28T16:18:12.174232",
+  "total_incidents": 29840,
   "incidents": [
+    {
+      "id": "incransom_della_casa_group_ag",
+      "victim_name": "Della Casa Group AG",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-07-28T12:00:56.253463+00:00",
+      "industry": "Other",
+      "website": "dellacasa.group",
+      "claim": "\r 041 785 61 31 / 041 785 61 46 / info@dellacasa.group\r 041 785 61 36 / s.pajaziti@dellacasa.group\r 041 785 61 30 / gdc@dellacasa.group\r 041 785 61 33 / a.stirnimann@dellacasa.group\r 041 785 61 43 / a.marku@dellacasa.group\r 041 785 61 42 / d.meier@dellacasa.group\r ***************************************************\r (240,391,913,425 bytes)\r 86,332 Files, / 15,359 Folders\r Personal / Client Information\r Accounting / Finance\r Details of current and future projects\r Other",
+      "screenshot": "https://images.ransomware.live/victims/c96b4665a8f698de6fcb89d701c23a14.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a6774db5ae71db30c14ce5b",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_gran_valle_negocios",
+      "victim_name": "Gran valle negocios",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-28T10:01:53.210835+00:00",
+      "industry": "Other",
+      "website": "www.granvallenegocios.com.ar",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/3c27ea5a30120477abf37ea990327817.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=a830d214-9f13-4708-8f06-bf1c3021c973",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "termite_affinia_healthcare",
+      "victim_name": "Affinia Healthcare",
+      "threat_actor": "termite",
+      "date_discovered": "2026-07-28T02:07:54.053364+00:00",
+      "industry": "Healthcare",
+      "website": "affiniahealthcare.org",
+      "claim": "Affinia Healthcare is dedicated to providing high-quality medical care and exceptional services across multiple locations in the St. Louis area. They offer a comprehensive range of health services including primary care, dental, behavioral health, and specialized programs for all family members, particularly focusing on underprivileged communities.\n",
+      "screenshot": "https://images.ransomware.live/victims/118ec56ccb6c9833af5ebc7ac503fdec.png",
+      "url": "http://termiteuslbumdge2zmfmfcsrvmvsfe4gvyudc5j6cdnisnhtftvokid.onion/post/6a67df3dfbf635b18142d5aa",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_minigrip.com.mx",
+      "victim_name": "minigrip.com.mx",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-07-28T02:01:06.045495+00:00",
+      "industry": "Manufacturing",
+      "website": "minigrip.com.mx",
+      "claim": "Unauthorized access has been gained to the company's confidential files, including client data, proprietary R&D, and financial documentation.",
+      "screenshot": "https://images.ransomware.live/victims/2678e82dec1d07a0797e05bcada10bf4.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a631e935ae71db30c9b88ce",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_ducon",
+      "victim_name": "DUCON",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-07-28T01:58:50.547575+00:00",
+      "industry": "Manufacturing",
+      "website": "ducon.com.co",
+      "claim": "Unauthorized access has been gained to the company's confidential files, including client data, proprietary R&D, and financial documentation.",
+      "screenshot": "https://images.ransomware.live/victims/ab95eea8fe5dfd329793d4afb9ce994c.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a6321575ae71db30c9bd08e",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_greenecountyga.gov",
       "victim_name": "greenecountyga.gov",
@@ -32,7 +92,7 @@
       "threat_actor": "anubis",
       "date_discovered": "2026-07-28T00:57:09.468182+00:00",
       "industry": "Financial Services",
-      "website": "",
+      "website": "prelys-courtage.com",
       "claim": "Client data breach at a major mortgage brokerage franchise.",
       "screenshot": "https://images.ransomware.live/victims/839e09e7f6a5ba6e9ce710cab89f6488.png",
       "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/BOGek03huSzlB0TMCY82I66nKD5dRABnYIv5H36irQvLQZUKM0W2IQJ4ou2wlY3mgLTSOyJCbAVk4dtnUT6skHlmZThTSTNE",
