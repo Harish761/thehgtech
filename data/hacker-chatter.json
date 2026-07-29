@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-07-29T05:36:01.352134",
-  "total_incidents": 29854,
+  "last_updated": "2026-07-29T16:00:13.633757",
+  "total_incidents": 29857,
   "incidents": [
+    {
+      "id": "spacebears_stellarrad_systems",
+      "victim_name": "StellarRAD Systems",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-07-29T11:03:26.457397+00:00",
+      "industry": "Technology",
+      "website": "www.stellarrad.com",
+      "claim": "Since 1981, StellarRAD Systems exists to solve the critical issues facing our clients, both large and small. We provide a broad range of services and solutions to help telecommunications providers around the world facilitate change and achieve their vision while optimizing performance and productivity. Our unique, customer focused approach ensures a level of service that you will quickly come to appreciate.Our family of GIS products and conversion services provides an industry leading toolset for engineers managing fiber and copper networks, including the ability to import GPS data, manipulate coordinate systems, identify network components with physical and logical connectivity and much more. Do you need all of this information plus the associated subscriber data available to every employee in your organization via desktop, notebook, tablet and smartphone? Done.  -SQL Data-DWG plan-Personal information of employees and clients-Financial documents-APP files https://www.stellarrad.com/",
+      "screenshot": "https://images.ransomware.live/victims/15506d32528666df836ef9b53662a6ec.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/64/stellarrad-systems",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "aurora_bretford_manufacturing",
+      "victim_name": "Bretford Manufacturing",
+      "threat_actor": "aurora",
+      "date_discovered": "2026-07-29T06:51:40.642786+00:00",
+      "industry": "Manufacturing",
+      "website": "Bretford Manufacturing",
+      "claim": "Bretford Manufacturing, Inc. is a privately held manufacturer of charging solutions for mobile devices, founded in 1948 and headquartered in Franklin Park, Illinois. With ~60 employees and ~$10M annual revenue, it serves education, healthcare, retail, and government sectors.\n\nThe exposed material includes:\n\nSocial Security Numbers for the entire workforce (current + 200–400 historical employees + dependents) via ACA Census files, 1099 forms, and payroll records spanning 2010–2026.\nCorporate and vendor bank accounts — Bretford's own checking account (routing + account number) plus 26+ vendor bank accounts from NACHA ACH batch files.\nComplete network architecture — VPN gateway IP, internal topology diagram, IP allocation tables, infrastructure inventory, disaster recovery plan, and Active Directory domain name.\n20 years of HR records including medical leave, disability accommodations, drug tests, garnishments, pension, 401(k), insurance enrollment, and termination records.\nComplete product engineering library — SolidWorks CAD files for all products, CNC/laser programs, and manufacturing process documentation.",
+      "screenshot": "https://images.ransomware.live/victims/24e7454d3e12c72ecb9b74aa1da3a797.png",
+      "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/bretford-manufacturing-b4537780",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "gunra_weilhotel",
+      "victim_name": "Weilhotel",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-07-29T04:24:37.577820+00:00",
+      "industry": "Hospitality",
+      "website": "weilhotel.com",
+      "claim": "Sector: Hotel | Revenue: US$ 5,000,000",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "deadlock_ahenk_lab",
       "victim_name": "AHENK lab",
