@@ -2727,20 +2727,12 @@
       "date": "2026-05-02",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1470",
-      "incident_id": 1470,
-      "title": "DisMech AI Curation Agent Reportedly Completed GitHub Issue Intended as New Contributor's Learning T",
-      "date": "2026-04-30",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 342,
+    "total": 341,
     "last7Days": 5,
     "last30Days": 54
   },
-  "lastUpdated": "2026-07-29T02:47:12.284126+05:30"
+  "lastUpdated": "2026-07-29T09:00:32.682618+05:30"
 }
