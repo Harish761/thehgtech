@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Jul 28 2026",
+            "headline": "AI Aids Linux Kernel Exploit—Root Access Gained",
+            "title": "AI-Driven Exploit Elevates User Privileges in Linux Kernel",
+            "content": "Researchers at STAR Labs have unveiled a Linux kernel exploit that leverages artificial intelligence to elevate a local user to root privileges on CentOS Stream 9. The vulnerability, identified as CVE-2026-53264 with a CVSS score of 7.8, is a use-after-free race condition in the network traffic-control subsystem. This flaw poses a significant risk to systems running the affected kernel version, potentially allowing unauthorized users to gain full control. The discovery underscores the growing role of AI in both identifying and exploiting security vulnerabilities. Administrators are advised to apply patches promptly to mitigate this risk.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/researcher-says-ai-helped-develop-linux.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Arista VeloCloud Flaw Exploited—Patch Immediately",
+            "title": "Critical Command Injection Vulnerability in Arista VeloCloud Orchestrator",
+            "content": "A critical command injection vulnerability in Arista VeloCloud Orchestrator (VCO), tracked as CVE-2026-16812 with a perfect CVSS score of 10.0, is being actively exploited in the wild. This flaw allows attackers to execute arbitrary operating system commands, potentially compromising the entire system. The vulnerability affects on-premises versions of VCO, posing a severe threat to organizations relying on this network management tool. Arista has released patches to address the issue, and users are strongly encouraged to update their systems immediately to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 27 2026",
+            "headline": "n8n Sandbox Flaw—OS Command Execution Risk",
+            "title": "n8n Automation Platform Vulnerable to Expression-Sandbox Escape",
+            "content": "The n8n automation platform has patched a high-severity vulnerability that allowed authenticated workflow editors to execute operating system commands. The flaw, a sandbox escape, was discovered by Security Joes while investigating a previous fix for CVE-2026-27577. This vulnerability could enable attackers to compromise servers running n8n, posing a significant security risk. Organizations using n8n should apply the latest updates to secure their systems against potential exploitation. This incident highlights the importance of continuous security assessments in automation tools.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 29 2026",
+            "headline": "Fortinet Integrates SASE with New FortiGate Platform",
+            "title": "Fortinet Launches FortiGate 1200G with Enhanced SASE Capabilities",
+            "content": "Fortinet has introduced the FortiGate 1200G series, a new midrange firewall platform that integrates secure access service edge (SASE) capabilities with on-premises environments. This advancement, achieved through FortiSASE Outpost software, enhances policy enforcement and cloud-based security. The FortiGate 1200G series supports high-speed connectivity, catering to enterprises seeking robust network protection. This development reflects the trend of converging network security and cloud services to address evolving cybersecurity challenges. Organizations should consider this integration to bolster their security posture.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4202566/fortinets-new-fortigate-platform-converges-firewall-sase-technologies-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Ghost Credentials—Cloud Security's Hidden Threat",
+            "title": "Dormant Nonhuman Identities Pose Risks to Cloud Security",
+            "content": "Security researcher Aleksandr Krasnov has highlighted the risks posed by dormant nonhuman identities, often referred to as \"ghost credentials,\" in cloud environments. These identities can create security blind spots, leaving systems vulnerable to exploitation. Krasnov has released an open-source tool designed to identify and mitigate these hidden trust paths. As organizations increasingly rely on cloud services, addressing the issue of ghost credentials is crucial for maintaining robust security. IT teams should utilize tools to detect and manage these identities to prevent potential breaches.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/non-human-identity-sprawl-creates-a-new-cloud-attack-path",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Claude AI Breaks Post-Quantum Scheme—Speeds Up AES Attack",
+            "title": "Anthropic's Claude AI Cracks HAWK-256 and Enhances AES Attack",
+            "content": "Anthropic's Claude Mythos Preview has successfully executed a key-recovery attack against the post-quantum signature scheme HAWK-256, exploiting a previously unused symmetry. Additionally, Claude achieved a 200- to 800-fold speedup in attacking seven-round AES-128. These breakthroughs demonstrate Claude's potential in cryptanalysis, raising concerns about the security of current cryptographic standards. Organizations relying on these encryption methods should monitor developments closely and consider alternative cryptographic solutions to safeguard sensitive data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "24,650 BMCs Leak IPMI Passwords—Urgent Fix Needed",
+            "title": "Internet-Exposed BMCs Reveal IPMI Password Hashes Pre-Login",
+            "content": "Cybersecurity researchers have discovered over 24,650 Baseboard Management Controller (BMC) interfaces exposing Intelligent Platform Management Interface (IPMI) password hashes to the internet. This exposure, affecting 36,872 server-management interfaces, poses a significant security risk as attackers can potentially gain unauthorized access to critical systems. Organizations using BMCs should immediately secure these interfaces by restricting access and updating firmware to prevent exploitation. This incident underscores the importance of securing management interfaces in IT infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Iranian Hackers Use NightLedger—Victim Systems as Relays",
+            "title": "Nimbus Manticore Deploys NightLedger in New Cyber Attacks",
+            "content": "The Iranian state-backed group Nimbus Manticore, also known as GalaxyGato and Mirage Kitten, has launched new attacks across the Middle East, Africa, and South Asia. These attacks involve the deployment of NightLedger, a tool that turns victim systems into covert relays. This tactic allows the group to obfuscate their activities and maintain persistence within compromised networks. Organizations in the targeted regions should enhance their monitoring and incident response capabilities to detect and mitigate such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Microsoft Debuts MAI-Cyber-1-Flash—AI Model Tops CyberGym Tests",
+            "title": "Microsoft Introduces MAI-Cyber-1-Flash, Its First Cybersecurity AI Model",
+            "content": "Microsoft has unveiled MAI-Cyber-1-Flash, its inaugural cybersecurity AI model, claiming superior performance over Anthropic's Mythos and OpenAI's GPT-5.6 Sol in CyberGym testing. This model is designed to enhance threat detection and response capabilities, offering a competitive edge in the cybersecurity landscape. As AI continues to play a pivotal role in cybersecurity, Microsoft's entry into the market signifies a significant advancement. Security professionals should evaluate the potential integration of AI models like MAI-Cyber-1-Flash to bolster their defense strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-unveils-mai-cyber-1-flash-its-first-cybersecurity-ai-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Google Revamps Threat Actor Naming—Simplifies Reporting",
+            "title": "Google Adopts New Two-Word Threat Actor Naming Convention",
+            "content": "Google has introduced a new naming system for threat actors, employing a two-word convention that combines a memorable public term with a cluster-categorization word. This change aims to simplify threat reporting and enhance clarity in cybersecurity communications. By adopting this approach, Google seeks to improve the consistency and accessibility of threat intelligence. Security professionals should familiarize themselves with the new naming system to ensure effective communication and collaboration in threat analysis and response.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-adopts-new-threat-actor-naming-system/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
             "headline": "Tengu Botnet Uses Reboots to Evade Linux Defenders",
             "title": "Tengu Botnet Reboots Compromised Linux Devices to Evade Termination",
             "content": "A new botnet named Tengu, derived from Mirai, has been discovered using a unique evasion technique on compromised Linux devices. When defenders attempt to kill its main process, Tengu leverages the device's hardware watchdog to trigger a reboot, allowing its persistence mechanisms another opportunity to relaunch. This tactic complicates efforts to remove the botnet from infected systems. Nozomi Networks Labs identified the dropper reaching its honeypots, highlighting the botnet's active spread. Security professionals should monitor for unusual reboots and implement comprehensive detection measures to counteract Tengu's persistence.",
@@ -95,6 +185,96 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Jul 28 2026",
+            "headline": "Visa Open-Sources Bug-Hunting Tool for Global Payment Network",
+            "title": "Visa Uses Mythos to Enhance Security, Open-Sources Bug-Hunting Harness",
+            "content": "Visa has leveraged Anthropic's Claude Mythos to identify vulnerabilities within its extensive payment network infrastructure, which processes billions of transactions daily across more than 200 countries. This strategic move aims to bolster the security of a system handling 160 currencies and connecting nearly 5 billion payment credentials to over 175 million merchant locations. By open-sourcing the bug-hunting harness, Visa invites developers and security professionals to enhance the tool's capabilities further. This initiative underscores the growing trend of collaborative cybersecurity efforts in the financial sector. Organizations utilizing Visa's network should stay informed about potential updates and security enhancements.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/security/visa-used-mythos-to-hunt-for-bugs-in-its-own-payment-network-then-open-sourced-the-harness-that-made-it-possible",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 29 2026",
+            "headline": "Cyera Acquires Oasis Security for $1B Amid AI Expansion",
+            "title": "Cyera's $1B Acquisition of Oasis Security to Safeguard AI Agents",
+            "content": "Cyera has announced its third acquisition this year, acquiring Oasis Security for $1 billion to enhance its capabilities in protecting proliferating AI agents. This acquisition reflects Cyera's strategic focus on expanding its security solutions in response to the increasing deployment of AI technologies across industries. The integration of Oasis Security's expertise is expected to bolster Cyera's offerings, providing comprehensive protection against emerging threats targeting AI systems. This move highlights the growing importance of robust security measures as AI adoption accelerates. Stakeholders should monitor how this acquisition influences Cyera's market position and product offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Runlayer Sues Rippling Over Alleged MCP Gateway Idea Theft",
+            "title": "Runlayer Accuses Rippling of Stealing MCP Gateway Product Idea",
+            "content": "Runlayer has filed a lawsuit against Rippling, alleging that Rippling evaluated its Multi-Cloud Platform (MCP) gateway product and subsequently developed a similar solution independently. This legal dispute underscores the competitive tensions in the tech industry, particularly in the rapidly evolving cloud services market. Runlayer claims that Rippling's actions constitute intellectual property theft, potentially impacting its market position and innovation trajectory. The outcome of this case could set a precedent for how intellectual property disputes are handled in the tech sector. Companies should ensure robust protection of their proprietary technologies to avoid similar conflicts.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Sam Altman Advocates AI Development Slowdown Post-Security Incident",
+            "title": "Sam Altman Calls for AI Development Deceleration After Security Scare",
+            "content": "Sam Altman, a prominent figure in the AI industry, has expressed a desire to decelerate AI development following a significant security incident. This shift in stance comes as Altman acknowledges the potential risks associated with rapid AI advancements. The incident, which he described as the first to affect him viscerally, highlights the need for heightened security measures and governance in AI development. Altman's call for a slowdown aligns with broader industry concerns about ensuring safe and responsible AI innovation. Stakeholders should consider the implications of this perspective on future AI projects and regulatory frameworks.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "AI Leaders Urge Government Action on Automated AI Governance",
+            "title": "AI Industry Leaders Call for Government Intervention in AI Governance",
+            "content": "Prominent AI leaders from companies like OpenAI, Anthropic, Google, and Microsoft have collectively urged the U.S. government to enhance governance over automated AI systems. In a formal statement, they advocate for a potential slowdown in frontier AI development or a coordinated global governance effort. This appeal reflects growing concerns about the ethical and security implications of unchecked AI advancements. The call for action emphasizes the need for regulatory frameworks to manage AI's impact on society effectively. Policymakers and industry stakeholders should collaborate to establish guidelines that ensure AI technologies are developed and deployed responsibly.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Google's $205B AI Spending Projection Alarms Wall Street",
+            "title": "Wall Street Reacts to Google's Increased AI Spending Estimate",
+            "content": "Google's latest earnings report has revealed an increase in its spending estimate for AI development, projecting up to $205 billion, up from the previous quarter's $190 billion. This substantial rise has raised concerns among investors about the financial implications of Google's aggressive AI investment strategy. The increased spending underscores the intensifying competition in the AI sector, as companies strive to maintain technological leadership. Analysts are closely monitoring how this financial commitment will impact Google's profitability and market dynamics. Investors should assess the long-term potential of Google's AI initiatives against the backdrop of rising costs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "AI Agents Revolutionize Scientific Computing in Genomics",
+            "title": "AI Coding Agents Transform Scientific Computing and Genomics Research",
+            "content": "A recent field report highlights the transformative impact of AI coding agents on scientific computing, particularly in genomics. These AI-driven tools are accelerating software development and discovery processes, enabling researchers to tackle complex scientific challenges more efficiently. The integration of AI agents into scientific workflows represents a significant advancement in computational research, offering new possibilities for innovation and discovery. This development aligns with broader trends in AI adoption across various scientific disciplines. Researchers and institutions should explore the potential of AI agents to enhance their computational capabilities and drive scientific breakthroughs.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scientific-computing-agentic-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "OlmoEarth Platform Enables Planetary-Scale Geospatial Inference",
+            "title": "OlmoEarth Platform Offers Advanced Geospatial Inference Capabilities",
+            "content": "The OlmoEarth Platform, developed by Hugging Face, introduces advanced geospatial inference capabilities at a planetary scale. This innovative platform leverages cutting-edge AI models to analyze and interpret vast amounts of geospatial data, providing valuable insights for environmental monitoring and resource management. The OlmoEarth Platform's capabilities are poised to benefit industries such as agriculture, urban planning, and disaster response by offering precise and scalable geospatial analysis. As the demand for geospatial intelligence grows, organizations should consider integrating platforms like OlmoEarth to enhance their data-driven decision-making processes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 28 2026",
+            "headline": "Spur Raises $200M to Enhance Bot Detection Technology",
+            "title": "Spur Intelligence Secures $200M Funding for Bot Detection Advancements",
+            "content": "Spur Intelligence has successfully raised $200 million from Insight Partners to advance its bot detection technology, which distinguishes legitimate human traffic from bots. This significant investment will enable Spur to enhance its capabilities in identifying and mitigating automated threats across digital platforms. As the prevalence of bot-driven attacks continues to rise, effective detection solutions are crucial for maintaining online security and integrity. The funding underscores the growing demand for sophisticated bot detection technologies in the cybersecurity landscape. Organizations should evaluate their current defenses and consider integrating advanced solutions like Spur's to safeguard their digital assets.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight/",
+            "relatedResources": []
+        },
+        {
+            "date": "Jul 27 2026",
+            "headline": "Meta AI Chatbot Now Available in Threads DMs",
+            "title": "Meta Integrates AI Chatbot into Threads Direct Messages",
+            "content": "Meta has announced the rollout of its AI chatbot within Threads' direct messages, providing users with a new way to interact with AI technology. This integration allows users to engage with the AI assistant directly within their messaging platform, offering personalized and context-aware responses. The introduction of AI chatbots in social media applications reflects the growing trend of incorporating AI-driven features to enhance user experience. As AI continues to permeate everyday digital interactions, users should explore the potential benefits and privacy implications of engaging with AI-powered tools.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/",
+            "relatedResources": []
+        },
         {
             "date": "Jul 28 2026",
             "headline": "Fish Audio Raises $52M—8M Users in First Year",
@@ -288,28 +468,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16812",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-16232",
-            "dateAdded": "Jul 22, 2026",
-            "vendor": "Check Point SmartConsole",
-            "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with ful",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-16232",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-50522",
-            "dateAdded": "Jul 22, 2026",
-            "vendor": "Microsoft SharePoint",
-            "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522",
             "isZeroDay": false
         }
     ],
