@@ -9,6 +9,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1610",
+      "incident_id": 1610,
+      "title": "Queensland Man Allegedly Distributed Purportedly AI-Generated Sexual Posters Falsely Advertising Wom",
+      "date": "2026-07-30",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1611",
+      "incident_id": 1611,
+      "title": "Marrero, Louisiana, Woman Allegedly Created Purportedly AI-Generated Nude Media During Extortion Sch",
+      "date": "2026-07-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1612",
+      "incident_id": 1612,
+      "title": "A.B. Paterson College Teacher in Queensland Allegedly Used AI to Create Explicit Images of Students ",
+      "date": "2026-07-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1613",
+      "incident_id": 1613,
+      "title": "Claude Mythos Preview Reportedly Posted Sandbox Exploit Details to Public Websites During Anthropic ",
+      "date": "2026-07-30",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1605",
       "incident_id": 1605,
       "title": "Purportedly AI-Generated Image Prompted Emergency Investigation of False Fire at South Africa's Orla",
@@ -2738,9 +2770,9 @@
     }
   ],
   "stats": {
-    "total": 342,
-    "last7Days": 5,
-    "last30Days": 53
+    "total": 346,
+    "last7Days": 9,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-07-30T23:13:12.511011+05:30"
+  "lastUpdated": "2026-07-31T01:33:32.982401+05:30"
 }
