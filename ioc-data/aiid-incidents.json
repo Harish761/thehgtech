@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1609",
+      "incident_id": 1609,
+      "title": "ChatGPT-4o Allegedly Discouraged Florida Pastor From Seeking Care Before Pulmonary Embolism",
+      "date": "2026-07-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1605",
       "incident_id": 1605,
       "title": "Purportedly AI-Generated Image Prompted Emergency Investigation of False Fire at South Africa's Orla",
@@ -2730,9 +2738,9 @@
     }
   ],
   "stats": {
-    "total": 341,
-    "last7Days": 4,
-    "last30Days": 52
+    "total": 342,
+    "last7Days": 5,
+    "last30Days": 53
   },
-  "lastUpdated": "2026-07-30T19:56:19.492726+05:30"
+  "lastUpdated": "2026-07-30T23:13:12.511011+05:30"
 }
