@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-07-29T16:00:13.633757",
-  "total_incidents": 29857,
+  "last_updated": "2026-07-30T05:22:51.938237",
+  "total_incidents": 29860,
   "incidents": [
+    {
+      "id": "incransom_harwal.net",
+      "victim_name": "harwal.net",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-07-29T16:26:22.220887+00:00",
+      "industry": "Not Found",
+      "website": "harwal.net",
+      "claim": "Harwal.net\r \r Harwal Group is the largest plastics recycler in the Middle East, founded in 1938, with an annual processing capacity of over 200,000 tons of plastics and metals.\r Manufacturing includes construction materials, pre-engineered building systems, industrial packaging, consumer goods, and refrigeration equipment, including commercial chillers and freezers under the Celsius brand.\r Companies within the group: four main divisions — TSSC, Interplast, Cosmoplast, and Intermetal — unite 28 business units operating in 65 countries worldwide.\r DATA- 12tb",
+      "screenshot": "https://images.ransomware.live/victims/f5838a33afed5e18b1b72dbf7edbdec2.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a6a24085ae71db30c60bd45",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_northwood_country_club",
+      "victim_name": "Northwood Country Club",
+      "threat_actor": "akira",
+      "date_discovered": "2026-07-29T13:50:57.407088+00:00",
+      "industry": "Hospitality",
+      "website": "",
+      "claim": "Northwood Country Club is a private club located in Meridian, Mississippi, known for its beauti\nful facilities and convenient city location. The club offers a range of amenities including cha\nmpionship golf, clubhouse dining, swimming pool, tennis, and fitness services.\n\nWe will upload corporate data soon. Employee information (name, home addresses, contacts (emerg\nency ones) and so on), financials, contracts and agreements, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "section9_****.com.pa",
+      "victim_name": "****.com.pa",
+      "threat_actor": "Section9",
+      "date_discovered": "2026-07-29T13:20:57.472696+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "TRAVEL",
+      "screenshot": "https://images.ransomware.live/victims/d91699d4de2c23ce3c013ef52fe099f2.png",
+      "url": "http://v76bdil3v7hczufr7kwk75eq6oks27d3qwj6v5ajj6v6rubbvwhcq2qd.onion/post/898fa9b128c4eeb7",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "spacebears_stellarrad_systems",
       "victim_name": "StellarRAD Systems",
