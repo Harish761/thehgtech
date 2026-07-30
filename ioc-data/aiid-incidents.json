@@ -41,6 +41,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1614",
+      "incident_id": 1614,
+      "title": "Two Men Allegedly Created and Distributed Purportedly AI-Generated Sexual Images of 22 Women in Sill",
+      "date": "2026-07-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1605",
       "incident_id": 1605,
       "title": "Purportedly AI-Generated Image Prompted Emergency Investigation of False Fire at South Africa's Orla",
@@ -2770,9 +2778,9 @@
     }
   ],
   "stats": {
-    "total": 346,
-    "last7Days": 9,
-    "last30Days": 56
+    "total": 347,
+    "last7Days": 10,
+    "last30Days": 57
   },
-  "lastUpdated": "2026-07-31T01:33:32.982401+05:30"
+  "lastUpdated": "2026-07-31T02:49:49.594301+05:30"
 }
