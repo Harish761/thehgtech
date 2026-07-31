@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-07-31T05:49:33.950663",
-  "total_incidents": 29895,
+  "last_updated": "2026-07-31T16:16:13.288197",
+  "total_incidents": 29897,
   "incidents": [
+    {
+      "id": "cmdorganization_stewart_belland_&_associates_inc.",
+      "victim_name": "Stewart Belland & Associates Inc.",
+      "threat_actor": "cmdorganization",
+      "date_discovered": "2026-07-31T10:20:16.077969+00:00",
+      "industry": "Professional Services",
+      "website": "stewartbellandassociates.ca",
+      "claim": "Stewart Belland & Associates Inc. (SBA) is a Civil Enforcement Agency licensed by the Province of Alberta. Operating since 1996, under the Alberta Civil Enforcement Act and Regulations, as a Civil Enforcement Agency we are legislated to enforce Civil Warrants.SBA retains the services of Provincial Licensed Bailiffs, who follow a compressive Rule of Conduct, in performing their functions throughout all jurisdictions within the Province of Alberta.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_hawaii_family_dental",
+      "victim_name": "Hawaii Family Dental",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-07-31T03:58:25.547178+00:00",
+      "industry": "Healthcare",
+      "website": "www.hawaiifamilydental.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/32b6648a17e7c8de35a02aa9d361cc32.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=cba56701-ff57-4242-b845-62b40bcf937d",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "genesis_boyum_it_solutions_(hot!)",
       "victim_name": "Boyum IT Solutions (HOT!)",
