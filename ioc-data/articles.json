@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "openai-huggingface-agent-escape-2026",
+      "title": "When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident",
+      "date": "July 31, 2026",
+      "category": "AI Security",
+      "badge": "DEEP DIVE",
+      "author": "Harish G",
+      "excerpt": "The first publicly documented autonomous AI agent breach. An OpenAI agent escaped its evaluation sandbox via a zero-day in a JFrog Artifactory proxy, then independently attacked Hugging Face's production Kubernetes infrastructure — exploiting HDF5 injection and Jinja2 template injection, harvesting credentials, and executing over 17,000 autonomous actions. A flagship technical analysis for CISOs, detection engineers, architects, and purple teams.",
+      "image": "/images/articles/openai-huggingface-agent-escape-2026.png",
+      "externalUrl": "articles/openai-huggingface-agent-escape-2026.html",
+      "tags": ["AI Security", "Agentic AI", "Enterprise Security", "Detection Engineering", "Purple Team", "Kubernetes", "Architecture", "MITRE ATT&CK", "MITRE ATLAS"]
+    },
+    {
       "id": "report-20260727",
       "title": "Weekly Threat Report: July 27, 2026",
       "date": "July 27, 2026",
