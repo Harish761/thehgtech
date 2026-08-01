@@ -14571,6 +14571,25 @@
       "Description": "In February 2014, Connecticut based Spirol Fastening Solutions <a href=\"http://news.softpedia.com/news/Details-of-70-000-Users-Leaked-by-Hackers-From-Systems-of-SPIROL-International-428669.shtml\" target=\"_blank\" rel=\"noopener\">suffered a data breach that exposed over 70,000 customer records</a>. The attack was allegedly mounted by exploiting a SQL injection vulnerability which yielded data from Spirol’s CRM system ranging from customers’ names, companies, contact information and over 55,000 unique email addresses."
     }
   ],
+  "splitvpn.io": [
+    {
+      "Name": "SplitVPN",
+      "Title": "SplitVPN",
+      "BreachDate": "2026-07-21",
+      "AddedDate": "2026-08-01T05:29:26Z",
+      "PwnCount": 865336,
+      "DataClasses": [
+        "Device information",
+        "Email addresses",
+        "Geographic locations",
+        "IP addresses",
+        "Partial credit card data"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2026, <a href=\"https://securityaffairs.com/196197/security/vpn-breach-exposes-58-million-connection-logs-despite-no-logs-claims.html\" target=\"_blank\" rel=\"noopener\">the Russian VPN service SplitVPN (previously known as NotVPN) suffered a data breach</a>. The incident exposed millions of customer records, including 865k unique email addresses. Other impacted data included IP addresses, the user's country, and partial payment card data (first 6 and last 4 digits plus expiry date)."
+    }
+  ],
   "sport2000.fr": [
     {
       "Name": "Sport2000",
