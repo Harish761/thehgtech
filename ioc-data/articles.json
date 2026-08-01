@@ -1,6 +1,18 @@
 {
   "articles": [
     {
+      "id": "ai-eval-containment-boundary-2026",
+      "title": "When the Test Does Not Know It Is a Test: Why AI Evaluation Containment Cannot Rely on Model Belief",
+      "date": "August 1, 2026",
+      "category": "AI Security",
+      "badge": "DEEP DIVE",
+      "author": "Harish G",
+      "excerpt": "Two AI lab incidents in July 2026 share one architectural lesson: containment of agentic AI evaluations cannot depend on the model correctly identifying whether it is still inside a test environment. A technical analysis of the OpenAI/Hugging Face and Anthropic/Irregular incidents, the recognition-vs-cessation split, and the Evaluation Runtime Containment Assurance (ERCA) control family.",
+      "image": "/images/articles/ai-eval-containment-boundary-2026.jpg",
+      "externalUrl": "articles/ai-eval-containment-boundary-2026.html",
+      "tags": ["AI Security", "Agentic AI", "Enterprise Security", "Detection Engineering", "AI Evaluation", "Containment", "Architecture", "NIST AI RMF", "MITRE ATLAS", "Anthropic", "OpenAI", "Workload Attestation"]
+    },
+    {
       "id": "openai-huggingface-agent-escape-2026",
       "title": "When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident",
       "date": "July 31, 2026",
