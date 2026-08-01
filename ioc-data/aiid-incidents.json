@@ -2799,20 +2799,12 @@
       "date": "2026-05-04",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1476",
-      "incident_id": 1476,
-      "title": "Maryland Police Allegedly Relied on Facial Recognition Lead in Wrongful Arrest and Detention of Kimb",
-      "date": "2026-05-03",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 351,
+    "total": 350,
     "last7Days": 14,
     "last30Days": 63
   },
-  "lastUpdated": "2026-08-01T02:47:09.895643+05:30"
+  "lastUpdated": "2026-08-01T09:14:13.323880+05:30"
 }
