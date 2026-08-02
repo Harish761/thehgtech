@@ -1,7 +1,19 @@
 {
-  "last_updated": "2026-08-02T05:40:33.209882",
-  "total_incidents": 29965,
+  "last_updated": "2026-08-02T15:36:54.973338",
+  "total_incidents": 29966,
   "incidents": [
+    {
+      "id": "crpxo_encore_enterprises,_inc.",
+      "victim_name": "Encore Enterprises, Inc.",
+      "threat_actor": "CRPxO",
+      "date_discovered": "2026-08-02T03:50:43.130953+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "Sector: Commercial Real Estate | Data leaked: 700.0 GB",
+      "screenshot": "https://images.ransomware.live/victims/4c994907cbc30e508e33addbbe1611ae.png",
+      "url": "http://tlxoddx4odmc2qvsmtsbgwwsv5j45osb5sox7mz6izxliuju5mkulzad.onion/victim.php?slug=encore-bz",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "thegentlemen_philippine_savings_bank",
       "victim_name": "Philippine Savings Bank",
