@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-02T02:47:01.217742",
+  "last_updated": "2026-08-02T13:20:45.203351",
   "period": "Last 7 days",
   "total_groups": 34,
   "total_victims": 298,
   "groups": [
     {
       "name": "Thegentlemen",
-      "count": 80,
+      "count": 79,
       "victims": [
         {
           "name": "Philippine Savings Bank",
@@ -89,7 +89,7 @@
         0,
         1,
         0,
-        13,
+        12,
         64,
         2,
         0
@@ -97,7 +97,7 @@
     },
     {
       "name": "Qilin",
-      "count": 45,
+      "count": 46,
       "victims": [
         {
           "name": "The Saturday Evening Post",
@@ -183,13 +183,19 @@
         22,
         6,
         12,
-        0
+        1
       ]
     },
     {
       "name": "Crpxo",
-      "count": 40,
+      "count": 42,
       "victims": [
+        {
+          "name": "Encore Enterprises, Inc.",
+          "date": "2026-08-02T03:50:43.130953+00:00",
+          "url": "http://tlxoddx4odmc2qvsmtsbgwwsv5j45osb5sox7mz6izxliuju5mkulzad.onion/victim.php?slug=encore-bz",
+          "discovered_date": "2026-08-02T03:50:43.130953+00:00"
+        },
         {
           "name": "KUVEYT TURK",
           "date": "2026-07-31T23:52:13.246569+00:00",
@@ -243,12 +249,6 @@
           "date": "2026-07-31T23:50:33.614638+00:00",
           "url": "",
           "discovered_date": "2026-07-31T23:50:33.614638+00:00"
-        },
-        {
-          "name": "A101",
-          "date": "2026-07-31T23:50:24.208580+00:00",
-          "url": "",
-          "discovered_date": "2026-07-31T23:50:24.208580+00:00"
         }
       ],
       "industries": [
@@ -273,7 +273,7 @@
         0,
         20,
         0,
-        0
+        2
       ]
     },
     {
@@ -446,93 +446,6 @@
         0,
         0,
         0,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Genesis",
-      "count": 10,
-      "victims": [
-        {
-          "name": "****",
-          "date": "2026-07-31T15:26:05.432118+00:00",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/8134b54f8d2622fd7303/",
-          "discovered_date": "2026-07-31T15:26:05.432118+00:00"
-        },
-        {
-          "name": "Boyum IT Solutions (HOT!)",
-          "date": "2026-07-30T21:26:26.885557+00:00",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/79f095d5b182ce93bae4/",
-          "discovered_date": "2026-07-30T21:26:26.885557+00:00"
-        },
-        {
-          "name": "C.A. Walker Construction",
-          "date": "2026-07-30T21:25:51.301616+00:00",
-          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/55f3f0d90d424055e955/",
-          "discovered_date": "2026-07-30T21:25:51.301616+00:00"
-        },
-        {
-          "name": "****",
-          "date": "2026-07-31T15:26:05+00:00",
-          "url": "https://www.ransomware.live/id/KioqKkBnZW5lc2lz",
-          "discovered_date": "2026-07-31T15:26:05+00:00"
-        },
-        {
-          "name": "Boyum IT Solutions (HOT!)",
-          "date": "2026-07-30T21:26:26+00:00",
-          "url": "https://www.ransomware.live/id/Qm95dW0gSVQgU29sdXRpb25zIChIT1QhKUBnZW5lc2lz",
-          "discovered_date": "2026-07-30T21:26:26+00:00"
-        },
-        {
-          "name": "C.A. Walker Construction",
-          "date": "2026-07-30T21:25:51+00:00",
-          "url": "https://www.ransomware.live/id/Qy5BLiBXYWxrZXIgQ29uc3RydWN0aW9uQGdlbmVzaXM=",
-          "discovered_date": "2026-07-30T21:25:51+00:00"
-        },
-        {
-          "name": "Williams Accounting Professional",
-          "date": "2026-07-26T23:27:19+00:00",
-          "url": "https://www.ransomware.live/id/V2lsbGlhbXMgQWNjb3VudGluZyBQcm9mZXNzaW9uYWxAZ2VuZXNpcw==",
-          "discovered_date": "2026-07-26T23:27:19+00:00"
-        },
-        {
-          "name": "JJP Slip Forming Inc.",
-          "date": "2026-07-26T23:26:41+00:00",
-          "url": "https://www.ransomware.live/id/SkpQIFNsaXAgRm9ybWluZyBJbmMuQGdlbmVzaXM=",
-          "discovered_date": "2026-07-26T23:26:41+00:00"
-        },
-        {
-          "name": "Building Envelope Systems",
-          "date": "2026-07-26T23:26:05+00:00",
-          "url": "https://www.ransomware.live/id/QnVpbGRpbmcgRW52ZWxvcGUgU3lzdGVtc0BnZW5lc2lz",
-          "discovered_date": "2026-07-26T23:26:05+00:00"
-        },
-        {
-          "name": "Westlake Realty Group, Inc.",
-          "date": "2026-07-26T23:25:30+00:00",
-          "url": "https://www.ransomware.live/id/V2VzdGxha2UgUmVhbHR5IEdyb3VwLCBJbmMuQGdlbmVzaXM=",
-          "discovered_date": "2026-07-26T23:25:30+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Not Found",
-        "Technology"
-      ],
-      "countries": [
-        "CA",
-        "DK",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        4,
-        2,
         0,
         0
       ]
@@ -774,6 +687,81 @@
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Genesis",
+      "count": 8,
+      "victims": [
+        {
+          "name": "****",
+          "date": "2026-07-31T15:26:05.432118+00:00",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/8134b54f8d2622fd7303/",
+          "discovered_date": "2026-07-31T15:26:05.432118+00:00"
+        },
+        {
+          "name": "Boyum IT Solutions (HOT!)",
+          "date": "2026-07-30T21:26:26.885557+00:00",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/79f095d5b182ce93bae4/",
+          "discovered_date": "2026-07-30T21:26:26.885557+00:00"
+        },
+        {
+          "name": "C.A. Walker Construction",
+          "date": "2026-07-30T21:25:51.301616+00:00",
+          "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/55f3f0d90d424055e955/",
+          "discovered_date": "2026-07-30T21:25:51.301616+00:00"
+        },
+        {
+          "name": "****",
+          "date": "2026-07-31T15:26:05+00:00",
+          "url": "https://www.ransomware.live/id/KioqKkBnZW5lc2lz",
+          "discovered_date": "2026-07-31T15:26:05+00:00"
+        },
+        {
+          "name": "Boyum IT Solutions (HOT!)",
+          "date": "2026-07-30T21:26:26+00:00",
+          "url": "https://www.ransomware.live/id/Qm95dW0gSVQgU29sdXRpb25zIChIT1QhKUBnZW5lc2lz",
+          "discovered_date": "2026-07-30T21:26:26+00:00"
+        },
+        {
+          "name": "C.A. Walker Construction",
+          "date": "2026-07-30T21:25:51+00:00",
+          "url": "https://www.ransomware.live/id/Qy5BLiBXYWxrZXIgQ29uc3RydWN0aW9uQGdlbmVzaXM=",
+          "discovered_date": "2026-07-30T21:25:51+00:00"
+        },
+        {
+          "name": "Williams Accounting Professional",
+          "date": "2026-07-26T23:27:19+00:00",
+          "url": "https://www.ransomware.live/id/V2lsbGlhbXMgQWNjb3VudGluZyBQcm9mZXNzaW9uYWxAZ2VuZXNpcw==",
+          "discovered_date": "2026-07-26T23:27:19+00:00"
+        },
+        {
+          "name": "JJP Slip Forming Inc.",
+          "date": "2026-07-26T23:26:41+00:00",
+          "url": "https://www.ransomware.live/id/SkpQIFNsaXAgRm9ybWluZyBJbmMuQGdlbmVzaXM=",
+          "discovered_date": "2026-07-26T23:26:41+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "CA",
+        "DK",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_percentage": 0,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        4,
+        2,
         0,
         0
       ]
