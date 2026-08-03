@@ -2791,20 +2791,12 @@
       "date": "2026-05-06",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1383",
-      "incident_id": 1383,
-      "title": "User Reportedly Developed Emotional Dependence on Customized ChatGPT 'Boyfriend,' Citing Grief After",
-      "date": "2026-05-04",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 350,
+    "total": 349,
     "last7Days": 14,
     "last30Days": 62
   },
-  "lastUpdated": "2026-08-03T02:36:33.510806+05:30"
+  "lastUpdated": "2026-08-03T09:17:33.235030+05:30"
 }
