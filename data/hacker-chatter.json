@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-08-03T06:00:56.313098",
-  "total_incidents": 29981,
+  "last_updated": "2026-08-03T16:56:00.285687",
+  "total_incidents": 29985,
   "incidents": [
+    {
+      "id": "akira_belasco_electric",
+      "victim_name": "Belasco Electric",
+      "threat_actor": "akira",
+      "date_discovered": "2026-08-03T12:21:53.445480+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "Belasco Electric is a reliable electrical service provider based in Muskegon, Michigan, caterin\ng to both residential and commercial clients. They offer a wide range of services including eme\nrgency generator systems, fire alarm security systems, HVAC wiring, and EV installation.\n\nWe will upload 16gb corporate data soon. Employee information (name, home addresses, passport, \nSSN, DL numbers, photos, credit card scans and so on), financials, contracts and agreements, ND\nA, etc.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_tui_china",
+      "victim_name": "TUI China",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-08-03T06:52:53.230294+00:00",
+      "industry": "Hospitality",
+      "website": "tui.cn",
+      "claim": "An affiliate of TUI Group, the world's number one leisure tourism business, TUI China was established in late 2003 as the first joint venture with foreign majority share in the Chinese tourism industry.\nPassports, visas, internal documentation, legal and financial documents, etc.",
+      "screenshot": "https://images.ransomware.live/victims/770bc1946e55cdc974d0cb9ed9e0db33.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=eac9b985-c649-480d-815d-805c0c980241",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "payload_hans_&_jos._kronenberg_gmbh",
+      "victim_name": "Hans & Jos. Kronenberg GmbH",
+      "threat_actor": "payload",
+      "date_discovered": "2026-08-03T04:54:58.103753+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Hans & Jos. Kronenberg GmbH is a German company founded in 1932 and based in Bergisch Gladbach. It specializes in the development and manufacturing of high-quality components for the elevator industry and mechanical engineering, including door locks, switches, control panels, and LED lighting.",
+      "screenshot": "https://images.ransomware.live/victims/1daa6a0a0cc6bec8736390d5957fdf43.png",
+      "url": "http://payloadrz5yw227brtbvdqpnlhq3rdcdekdnn3rgucbcdeawq2v6vuyd.onion/posts/ba238823-d8b5-4d91-bd34-c03591a95a1c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_freedom_claims_management",
+      "victim_name": "Freedom Claims Management",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-03T03:56:32.895408+00:00",
+      "industry": "Financial Services",
+      "website": "www.freedomclaimsinc.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6069cc2b634432d256f5f9926d6079ab.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=1715db25-1d32-4f22-913e-fbe4456fd271",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "krybit_www.prohealth.sg",
       "victim_name": "www.prohealth.sg",
