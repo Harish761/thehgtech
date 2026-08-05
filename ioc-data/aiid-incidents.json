@@ -2767,36 +2767,12 @@
       "date": "2026-05-07",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1477",
-      "incident_id": 1477,
-      "title": "Scammers Reportedly Used AI-Generated Image of Missing Puppy Hazel to Solicit Fraudulent Vet Payment",
-      "date": "2026-05-07",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1478",
-      "incident_id": 1478,
-      "title": "Scammers Reportedly Used AI-Generated Images of Missing Dog Archer to Solicit Fraudulent Vet Payment",
-      "date": "2026-05-07",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1479",
-      "incident_id": 1479,
-      "title": "ChatGPT-Generated Image of Nonexistent 'Homeless Man' Was Used in False St. Petersburg, Florida Burg",
-      "date": "2026-05-06",
-      "category": "misinformation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 349,
+    "total": 346,
     "last7Days": 14,
     "last30Days": 57
   },
-  "lastUpdated": "2026-08-05T02:52:15.253366+05:30"
+  "lastUpdated": "2026-08-05T08:56:03.608687+05:30"
 }
