@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-08-05T05:29:37.587784",
-  "total_incidents": 30026,
+  "last_updated": "2026-08-05T16:15:17.547304",
+  "total_incidents": 30029,
   "incidents": [
+    {
+      "id": "spacebears_pontobr_sistemas",
+      "victim_name": "PontoBR Sistemas",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-08-05T08:00:07.498173+00:00",
+      "industry": "Technology",
+      "website": "pontobrsistemas.com.br",
+      "claim": "Founded in 2008 in Brazil, PontoBR Sistemas is an IT firm specializing in advanced call center technologies, including its proprietary Discador Tabulare, as well as public examination management systems. The company provides tailored software solutions and IT infrastructure services, having received recognition from the Brazilian federal innovation agency, FINEP.-SQL Data https://pontobrsistemas.com.br/",
+      "screenshot": "https://images.ransomware.live/victims/1ffb3eebb190b5fa169c8e53ed3b6368.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/65/pontobr-sistemas",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "gunra_pt_all_cosmos_biotek",
+      "victim_name": "PT All Cosmos Biotek",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-08-05T07:24:49.201288+00:00",
+      "industry": "Healthcare",
+      "website": "allcosmos.com",
+      "claim": "Sector: Agricultural Biotechnology &amp; Fertilizer | Revenue: US$ 5,000,000",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "orova_fixit_tek",
+      "victim_name": "FixIT Tek",
+      "threat_actor": "Orova",
+      "date_discovered": "2026-08-05T07:21:07.528172+00:00",
+      "industry": "Technology",
+      "website": "fixittek.com",
+      "claim": "Providing the best possible IT services to businesses of all sizes in Central Florida and Surrounding Areas.   ##### FixIT Tek's Syncro MSP panel has been hacked and stolen big data of many clients from their network. #####",
+      "screenshot": "https://images.ransomware.live/victims/c9dbf9a21b98baf0be16f46749d0c458.png",
+      "url": "http://mzlajyncb2rafn5bsb7esmo73kyawjxeirunba27n6nermmafzlcp4qd.onion/MK3UE2I6814ROIUKLV/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_lantisnet.com",
       "victim_name": "lantisnet.com",
@@ -20,7 +56,7 @@
       "threat_actor": "incransom",
       "date_discovered": "2026-08-04T23:54:25.508491+00:00",
       "industry": "Education",
-      "website": "",
+      "website": "loyalistcollege.com",
       "claim": "The management of this institution was repeatedly warned about the disclosure of hundreds of personal data. Each of you who is faced with the consequences of the leak can be absolutely sure that the management of Loyalist College absolutely does not care about its students, employees and partners.\r -------------------------\r Loyalist is Ontario's Destination College, empowering students, faculty, staff, and partners through experiential, industry cluster-based education, training and applied research programs. The College provides job-ready graduates for, and knowledge transfer to, industry and the community.",
       "screenshot": "https://images.ransomware.live/victims/41d67b47d4108774e6f610ea5e603863.png",
       "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a70f8179cd108bf2610d332",
@@ -68,7 +104,7 @@
       "threat_actor": "incransom",
       "date_discovered": "2026-08-04T17:57:04.049641+00:00",
       "industry": "Manufacturing",
-      "website": "",
+      "website": "trulite.com",
       "claim": "TRULITE GLASS & ALUMINUM SOLUTIONS\r Date: August 2026\r Overview\r Trulite Glass & Aluminum Solutions, a portfolio company of Truelink Capital (Los Angeles, CA), is a leading North American fabricator and distributor of architectural glass and aluminum systems. Headquartered in Alpharetta, Georgia, the company operates 40+ fabrication and distribution facilities across the United States and Canada, serving the commercial construction industry.\r Trulite was founded in 1978 and has undergone significant expansion through acquisitions — including Vitro America, Western States Glass, AGC Fabrication, Super Sky Products, American Insulated Glass, and others. In October 2022, Truelink Capital acquired Trulite from Sun Capital Partners.\r The company generates estimated annual revenue of $800M–$1.2B and employs 2,000–3,500 people.\r Incident\r We have obtained full and unrestricted access to Trulite's internal infrastructure. The total volume of exfiltrated data exceeds 8 terabytes.\r Data in Our Possession\r The dataset includes but is not limited to:\r - Complete corporate databases — ERP system (Microsoft Dynamics AX), CRM, operational databases\r - Financial records — multi-year Profit & Loss statements by branch, EBITDA schedules, debt covenant compliance calculations, 13-week cash flow forecasts, weekly and monthly financial reporting packages prepared for private equity ownership\r - M&A documentation — Confidential Information Memorandums (CIM), executed Stock Purchase Agreements, acquisition pipeline documents, due diligence materials, corporate structure charts with ownership percentages\r - Private equity communications — internal correspondence and reporting between Trulite management and fund ownership (Sun Capital Partners, Truelink Capital)\r - Board of Directors materials — governance records, board presentations, strategic planning documents\r - HR and employee data — personnel records, payroll, benefits information\r - Customer and vendor data — contracts, pricing agreements, project documentation, accounts receivable/payable\r - IT infrastructure documentation — network architecture, system configurations, credentials\r - Operational data — production records, logistics, fleet management, facility documentation across all 40+ locations\r Proof of Access\r Sample data will be published to confirm the scope and authenticity of the breach. Full data publication will follow if no resolution is reached.\r Contact\r The Trulite management team has been contacted directly and provided with instructions to initiate private negotiations. A deadline has been communicated.\r This is the only public statement at this time. Further updates — including data samples — will follow according to the established timeline.",
       "screenshot": "https://images.ransomware.live/victims/c123cb1f3369dfccc831a0700c9cf6a0.png",
       "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a72219f9cd108bf2638cb21",
