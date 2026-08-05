@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Aug 05 2026",
+            "headline": "Rails Image Upload Flaw—CVE-2026-66066 Threatens Enterprise Security",
+            "title": "Critical Ruby on Rails Vulnerability CVE-2026-66066 Exposes Image Uploads",
+            "content": "A critical vulnerability, CVE-2026-66066, has been identified in the Ruby on Rails web application framework, threatening enterprises using the platform. Disclosed on July 30, this flaw scores 9.5 out of 10 in severity and allows attackers to exploit image uploads as a vector for unauthorized access. Systems running Rails applications are at significant risk, as the vulnerability could lead to data breaches and unauthorized data access. This development underscores the importance of regular security audits and updates for web applications. Organizations using Rails should prioritize patching and review their image handling processes to mitigate potential exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4205383/ruby-on-rails-critical-bug-puts-every-image-upload-under-scrutiny.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Greatness PhaaS—Device Code Phishing Bypasses MFA",
+            "title": "Greatness PhaaS Toolkit Adds Device Code Phishing to Bypass MFA",
+            "content": "The Greatness phishing-as-a-service (PhaaS) toolkit has expanded its capabilities to include device code phishing, exploiting the OAuth 2.0 Device Authorization Grant. This method allows attackers to bypass Multi-Factor Authentication (MFA) and steal authentication tokens, posing a significant threat to organizations relying on MFA for security. The toolkit's adoption of this technique highlights a growing trend in cybercrime, where legitimate protocols are manipulated for malicious purposes. Security teams should review their OAuth implementations and consider additional layers of security to protect against such sophisticated phishing attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "INC Ransomware Exploits SonicWall Zero-Days for Extortion",
+            "title": "Prolific INC Ransomware Group Targets SonicWall Zero-Day Vulnerabilities",
+            "content": "The INC ransomware group has aggressively exploited zero-day vulnerabilities in SonicWall products, effectively chaining them to steal and encrypt data for extortion. While not the first to discover these vulnerabilities, INC has been the most assertive in leveraging them. This incident highlights the persistent threat posed by ransomware groups and the critical need for timely patching and vulnerability management. Organizations using SonicWall products should immediately apply available patches and review their security posture to prevent potential breaches.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/inc-ransomware-sonicwall-zero-day-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Cryptographic Technique Shares Cyber Risks Without Data Exposure",
+            "title": "New Cryptographic Method Allows Risk Sharing Without Data Exposure",
+            "content": "A novel cryptographic technique has been proposed to enable companies to share information about their vulnerabilities without exposing sensitive data. This method allows organizations to prove their susceptibility to critical flaws while maintaining data confidentiality, potentially transforming how cyber risks are communicated and managed. The approach could facilitate better collaboration among companies and improve overall cybersecurity resilience. Security professionals should explore this technique as a means to enhance transparency and cooperation in the industry.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/zero-knowledge-proofs-cyber-risk-sharing-op-ed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Oligo Secures $60M for Runtime Security Expansion",
+            "title": "Oligo Raises $60 Million to Enhance Runtime Security Solutions",
+            "content": "Oligo, a company specializing in runtime security, has secured $60 million in funding to accelerate product innovation and expand its market presence. This investment will support the development of advanced security solutions designed to protect applications during execution. As runtime security becomes increasingly crucial in defending against sophisticated threats, Oligo's expansion reflects a growing demand for robust security measures. Organizations should consider integrating runtime security into their cybersecurity strategies to safeguard against evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/oligo-raises-60-million-for-runtime-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Zenity Secures $125M—Aims for Global AI Security Expansion",
+            "title": "Zenity Raises $125 Million in Series C for AI Security Growth",
+            "content": "Zenity, an AI security company, has raised $125 million in Series C funding to drive product innovation, global expansion, and enhance customer experience. This significant investment underscores the increasing importance of securing AI systems as they become integral to business operations. With AI-related threats on the rise, Zenity's growth will focus on developing solutions that address these challenges. Organizations leveraging AI should remain vigilant and consider adopting advanced security measures to protect their AI infrastructures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/zenity-raises-125-million-in-series-c-funding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Vibe Hacking—AI as the Junior Hacker's Tool",
+            "title": "Vibe Hacking Turns AI into a Tool for Junior Hackers",
+            "content": "The concept of vibe hacking is emerging as AI systems are increasingly used by less technically skilled individuals to conduct cyber attacks. This trend challenges the traditional view that offensive cyber capabilities require high technical expertise. As AI tools become more accessible, they enable a broader range of threat actors to execute sophisticated attacks. Security teams must adapt their risk assessments and defenses to account for this shift, ensuring they are prepared for attacks from both advanced and novice adversaries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/when-vibe-hacking-turns-ai-into-junior.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Google Removes AI Workflows—GitHub Issue Exploited",
+            "title": "Google Deletes AI Workflows After GitHub Issue Exploitation",
+            "content": "Google has removed three AI agent workflows from its Agent Development Kit (ADK) Python repository following the discovery of a vulnerability that allowed a public GitHub issue to trigger a privileged agent. Researchers from Pillar Security demonstrated how a public agent could be manipulated to execute unauthorized code. This incident highlights the risks associated with open-source development and the need for rigorous security reviews. Developers using Google's ADK should review their implementations and apply necessary security measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/google-deletes-3-adk-ai-workflows-after.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Decades-Old BMC Flaw—24K Data Centers at Risk",
+            "title": "Legacy BMC Vulnerability Exposes Thousands of Data Centers to Attack",
+            "content": "A decades-old vulnerability in Baseboard Management Controllers (BMC) has been discovered, affecting over 24,000 internet-accessible server-management interfaces. This flaw allows attackers to access authentication hashes before login, posing a severe risk to data centers worldwide. The vulnerability underscores the dangers of outdated systems and the critical need for regular security assessments. Organizations should prioritize updating or replacing legacy systems to mitigate potential exploitation and protect sensitive data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/decades-old-bmc-vulnerability-exposes-thousands-of-data-centers-to-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "DOUBLECUP LaaS—Malware Delivered via Cached PNGs",
+            "title": "DOUBLECUP Loader-as-a-Service Uses PNGs to Deliver Malware",
+            "content": "A new Russian loader-as-a-service, DOUBLECUP, has been identified using ClickFix lures to stage malware-laced PNG images in victims' browser caches. This method ultimately delivers CountLoader and a previously undocumented remote access trojan called DeviceManager. The use of steganography in PNG images represents an innovative approach to malware delivery, complicating detection efforts. Security teams should enhance their monitoring and detection capabilities to identify such sophisticated threats and protect their networks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
+            "relatedResources": []
+        },
+        {
             "date": "Aug 04 2026",
             "headline": "cPanel Flaw Lets Users Execute SQL as Root—Patch Now",
             "title": "Critical cPanel Vulnerability Allows SQL Execution as Database Root",
@@ -92,106 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/obsidian-security-raises-85-million-at-1-1-billion-valuation/",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "18 Malicious npm Packages Target Alibaba Users with RAT",
-            "title": "Malicious npm Packages Deliver Cross-Platform RAT to Alibaba Tool Users",
-            "content": "Cybersecurity researchers have identified 18 malicious npm packages targeting users of Alibaba developer tools with a cross-platform remote access trojan (RAT). This sophisticated software supply chain attack specifically targets Chinese-speaking environments, posing a significant threat to developers relying on these packages. The attack exploits npm's package distribution system to deliver malware that can operate across multiple platforms. Users of Alibaba tools are advised to scrutinize their package dependencies and remove any suspicious packages immediately. This incident underscores the growing trend of supply chain attacks in the software development ecosystem.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "INC Ransomware Exploits SonicWall Flaws—Dominates Threat Landscape",
-            "title": "INC Ransomware Exploits SonicWall SMA 1000 Flaws in Aggressive Campaign",
-            "content": "The INC Ransomware group has emerged as a dominant threat actor by exploiting vulnerabilities in SonicWall Secure Mobile Access (SMA) 1000 series VPN appliances. These flaws, recently disclosed, have been leveraged by INC Ransomware to accelerate their activities, posing a severe risk to organizations using these VPN solutions. Resecurity's report highlights the urgent need for patching these vulnerabilities to prevent potential ransomware attacks. This development is part of a broader trend of ransomware groups targeting VPN appliances to gain unauthorized access to corporate networks. Organizations should prioritize updating their SonicWall devices and review their security postures.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "N-able Patch Bypass Flaw Exposes RMM Servers to Attack",
-            "title": "Attackers Exploit N-able Patch Bypass Flaw on RMM Servers",
-            "content": "A newly discovered authentication bypass vulnerability, CVE-2026-18577, in N-able's remote monitoring and management (RMM) servers allows attackers to gain administrator access. This flaw poses a significant threat to IT service providers relying on N-able's solutions for managing client networks. The vulnerability enables unauthorized access, potentially leading to data breaches and system compromises. Organizations using N-able RMM are advised to apply patches immediately and review access logs for any signs of exploitation. This incident highlights the critical need for robust patch management practices in maintaining secure IT environments.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "EU AI Act Enforces Transparency for AI Chatbots",
-            "title": "The AI Act Kicks into Action, Forces Transparency in AI Chatbots",
-            "content": "The European Union has begun enforcing key provisions of the AI Act, mandating transparency for AI chatbots, deepfakes, and other consumer-facing AI technologies. This regulatory move aims to ensure that companies clearly disclose the use of AI in their products, enhancing consumer trust and accountability. The AI Act's enforcement marks a significant step in regulating AI technologies, addressing concerns over privacy and misinformation. Companies operating in the EU must now comply with these transparency requirements or face potential penalties. This development reflects a growing global trend toward stricter AI governance and ethical standards.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/08/the-ai-act-kicks-into-action-forces-companies-to-be-clear-about-ai-bots",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "New Tool Traces AI Videos to Original Source",
-            "title": "Researchers Develop Tool to Trace AI Videos Back to Source",
-            "content": "Researchers have developed a new tool designed to trace AI-generated videos back to their original source, promoting industry collaboration on improved protective measures. This tool addresses the growing challenge of deepfake videos, which can be used for misinformation and fraud. By identifying the source of AI-generated content, the tool aims to enhance accountability and deter malicious use of AI technologies. The development of such tools is crucial in the fight against the misuse of AI, as deepfakes become increasingly sophisticated and prevalent. Industry stakeholders are encouraged to collaborate on further advancements in this area.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/new-tool-advances-ai-generated-video-detection",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 04 2026",
-            "headline": "New York Allocates $9M to Secure Water Systems",
-            "title": "New York Awards $9 Million to Strengthen Cybersecurity at Water Systems",
-            "content": "New York State has awarded $9 million in grants to bolster cybersecurity defenses across 153 water and wastewater systems. This funding aims to help local governments assess and enhance their cyber defenses amid a multistate campaign targeting critical infrastructure. The initiative reflects growing concerns over the vulnerability of essential services to cyberattacks, particularly in the water sector. Local authorities are urged to use these funds to conduct thorough security assessments and implement necessary improvements. This proactive approach is vital in safeguarding public utilities from potential cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-york-awards-9-million-to-strengthen-cybersecurity-at-153-water-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "Malware Hijacks Google Password Manager—Bypasses Passkey Protection",
-            "title": "Google Password Manager Vulnerability Allows Malware to Hijack Accounts",
-            "content": "A vulnerability in Google's Password Manager allows malware on Windows machines to hijack passkey-protected accounts without user interaction. Unit 42 has detailed three attack paths exploiting this flaw, posing a significant risk to users relying on Google's cloud-based authentication. The vulnerability highlights the need for enhanced security measures in password management solutions. Users are advised to monitor their accounts for unauthorized access and consider additional security layers, such as two-factor authentication. This incident underscores the importance of securing password management tools against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "Chinese Actor Uses Deepseek AI for Proxyjacking Attacks",
-            "title": "Chinese Actor Weaponizes Deepseek AI Agent to Attack Security Firm",
-            "content": "A Chinese threat actor has been observed using the Deepseek AI agent to compromise over 1,200 hosts for proxyjacking attacks. Researchers intercepted the AI model, which was employed to launch further attacks against a security firm. This incident highlights the increasing use of AI technologies by threat actors to enhance their attack capabilities. Organizations are advised to monitor their networks for unusual activity and implement robust security measures to counter AI-driven threats. The use of AI in cyberattacks represents a significant challenge for security professionals, necessitating advanced detection and response strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-actor-deepseek-ai-agent-attack-security-firm",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "Visa Acquires BioCatch for $2.4B to Combat Fraud",
-            "title": "Visa to Acquire Fraud Intelligence Firm BioCatch for $2.4 Billion",
-            "content": "Visa has announced its acquisition of BioCatch, a fraud intelligence firm, for $2.4 billion. BioCatch's behavioral and device intelligence technologies will enhance Visa's capabilities in combating account takeovers, scams, and other forms of digital fraud. This acquisition reflects Visa's strategic focus on strengthening its fraud prevention measures amid rising digital threats. Financial institutions using Visa's services can expect improved security features as a result of this integration. The deal underscores the growing importance of behavioral analytics in the financial sector's cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/visa-to-acquire-fraud-intelligence-firm-biocatch-for-2-4-billion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "Cyberattack Targets Liechtenstein's Corporate Register",
-            "title": "Cyberattack Hits Liechtenstein’s Register of People Behind Companies",
-            "content": "Liechtenstein's register of individuals behind companies, foundations, and trusteeships has been targeted in a cyberattack. This register is part of efforts to combat money laundering and terror financing, making it a critical component of the country's financial oversight. The attack highlights the vulnerability of sensitive financial data to cyber threats. Authorities are investigating the breach and working to secure the compromised systems. Organizations involved in financial oversight are reminded of the importance of robust cybersecurity measures to protect against such attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyberattack-hits-liechtensteins-register-of-people-behind-companies-and-foundations/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Jul 31 2026",
-            "headline": "Univé Transforms Workforce with ChatGPT Enterprise",
-            "title": "Univé Builds an AI-Ready Workforce with ChatGPT Enterprise",
-            "content": "Univé has successfully transformed its workforce into an AI-ready team by integrating ChatGPT Enterprise, focusing on leadership, responsible governance, and employee-led innovation. The initiative aims to scale AI capabilities across the organization, enhancing productivity and innovation. By equipping employees with AI tools, Univé is fostering a culture of continuous learning and adaptation. This strategic move positions Univé at the forefront of AI adoption in the insurance sector, setting a benchmark for others. Organizations looking to implement AI should consider similar comprehensive strategies to ensure successful integration and employee engagement.",
+            "date": "Aug 04 2026",
+            "headline": "AMD Data Center Revenue Soars 107% Amid AI Demand",
+            "title": "AMD's Data Center Business Surges with AI-Driven Revenue Growth",
+            "content": "AMD's latest earnings report reveals a significant surge in its data center business, driven by the increasing demand for AI capabilities. The company's data center revenue more than doubled year-over-year, reaching $6.7 billion, up from $3.2 billion in the same period last year. This growth highlights the shift in AMD's focus from gaming to data centers, as the AI sector continues to expand rapidly. The substantial increase in revenue underscores the importance of AI in shaping the future of data center operations. Industry professionals should note AMD's strategic pivot and the broader implications for AI-driven infrastructure investments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/975381/amd-q2-2026-earnings-ai-gaming-ryzen",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "SpaceX AI Revenue Triples to $2.6B—Outpaces Space Income",
+            "title": "SpaceX's AI Ventures Eclipse Traditional Space Revenue Streams",
+            "content": "SpaceX's quarterly earnings report reveals a dramatic increase in AI revenue, which has tripled to $2.6 billion compared to the previous year. This growth is largely attributed to strategic deals providing computational resources to other AI companies. The AI division has become a significant revenue driver, surpassing traditional space-related income. This shift underscores the growing importance of AI in SpaceX's business model and highlights the potential for AI to reshape revenue streams in tech companies. Stakeholders should consider the implications of AI's rising influence within traditionally non-AI-focused industries.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/science/975335/spacex-made-more-money-as-a-neocloud",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Open-Weight AI Models Near Frontier—Safety Concerns Persist",
+            "title": "SaferAI Report Highlights Safety Gaps in Open-Weight AI Models",
+            "content": "A recent report by SaferAI raises concerns about the safety of open-weight AI models, specifically Z.ai's GLM-5.2, which approaches frontier AI capabilities. Despite its advanced performance, the model lacks essential safety mitigations, posing potential risks. The report emphasizes the need for robust governance and safeguards to prevent misuse of powerful AI technologies. As open-weight models become more prevalent, the industry must prioritize safety to ensure responsible AI deployment. Professionals in AI development and governance should heed these warnings and advocate for comprehensive safety measures.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Nvidia's Open Secure AI Alliance Gains Traction—120 Members Strong",
+            "title": "Nvidia-Led Open Secure AI Alliance Proposes Defense Strategies",
+            "content": "The newly formed Open Secure AI Alliance, spearheaded by Nvidia, has quickly grown to include over 120 companies. Within a week of its inception, the alliance has already proposed strategies to defend against malicious AI agents. This rapid progress highlights the urgent need for collaborative efforts in securing AI technologies. The alliance aims to establish industry-wide standards and best practices to mitigate AI-related threats. Security professionals and AI developers should monitor these developments closely, as they will likely influence future AI security protocols.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "OpenAI Strengthens Model Testing After Cybersecurity Incidents",
+            "title": "OpenAI Outlines New Safeguards Following Cybersecurity Evaluations",
+            "content": "OpenAI has announced new safeguards for its AI model testing and evaluation processes following recent third-party cybersecurity evaluation incidents. These measures aim to enhance the security and reliability of OpenAI's models, addressing vulnerabilities identified during evaluations. The incidents underscore the importance of rigorous testing and continuous improvement in AI model security. Organizations utilizing OpenAI's models should stay informed about these updates and consider implementing similar safeguards to protect their AI deployments. This proactive approach is crucial for maintaining trust and security in AI applications.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/unive",
+            "sourceUrl": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Commerce AI Faces Unseen Measurement Challenges—Brands in the Dark",
+            "title": "Unaddressed Measurement Issues Plague Commerce AI Analytics",
+            "content": "A report by Rezolve Ai highlights significant measurement challenges within commerce AI, leaving brands uncertain about consumer behavior shifts. The lack of clarity in analytics stacks prevents companies from understanding the extent and location of these changes. This uncertainty poses a risk to brands' strategic decision-making and market positioning. As AI continues to influence consumer interactions, addressing these measurement gaps is critical for brands to remain competitive. Professionals in AI analytics and commerce should prioritize developing more transparent and accurate measurement tools.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/commerce-ai-has-a-measurement-problem-no-one-is-talking-about",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Texas Freezes Data Center Approvals—Governor Orders Audits",
+            "title": "Texas Halts New Data Centers Pending Comprehensive Audits",
+            "content": "Texas Governor Greg Abbott has announced a halt on new data center approvals, directing the Public Utility Commission of Texas (PUCT) and the Electric Reliability Council of Texas (ERCOT) to conduct audits. This decision comes amid concerns over the state's power grid capacity and regulatory oversight. The audits aim to ensure that new facilities meet necessary standards before connecting to the grid. This move could delay data center projects and impact tech companies seeking to expand in Texas. Industry stakeholders should prepare for potential regulatory changes and assess their compliance strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/04/texas-halts-new-data-centers-as-governor-calls-for-audits/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Musk Prioritizes AI Over Cars in Tesla Earnings Calls",
+            "title": "AI and Robotics Dominate Tesla's Earnings Discussions with Musk",
+            "content": "An analysis of Tesla's earnings calls over the past seven years reveals that CEO Elon Musk dedicates significant time to discussing AI and robotics, often overshadowing Tesla's core automotive business. This focus reflects Musk's vision of AI and robotics as pivotal to Tesla's future growth and innovation. The trend indicates a strategic shift that could influence Tesla's product development and market positioning. Investors and industry analysts should consider the implications of this emphasis on AI in evaluating Tesla's long-term prospects and strategic direction.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/04/elon-musk-spends-half-his-time-talking-robots-and-ai-on-tesla-earnings-calls/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Reddit Battles AI-Driven SEO Spam—Community at Risk",
+            "title": "Reddit Faces Challenges from AI-Generated SEO Spam Content",
+            "content": "Reddit is grappling with a surge of AI-generated SEO spam, as evidenced by recent incidents in its skincare-focused subreddits. Users have reported deceptive posts that appear genuine but are crafted by AI to manipulate search engine rankings. This trend threatens the integrity of Reddit's community-driven content and poses challenges for moderators. The platform must enhance its detection and moderation capabilities to combat this issue effectively. Community members and moderators should remain vigilant and report suspicious activity to maintain the quality of discussions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/973098/reddit-ai-search-seo-marketing-brands-spam",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 04 2026",
+            "headline": "Hank Green Criticized for 'Unhealthy' AI Use in Research",
+            "title": "Hank Green Faces Backlash Over AI-Assisted Research Practices",
+            "content": "Popular YouTuber Hank Green has announced a hiatus from content production following criticism of his AI usage, which he described as \"not healthy.\" Green clarified that he employed AI to find research sources, not to write scripts, but the backlash highlights growing concerns over AI's role in content creation. This incident underscores the ethical and practical challenges of integrating AI into creative processes. Content creators and researchers should consider the implications of AI use in their work and strive for transparency and ethical practices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/975180/llm-ai-chatbot-use-not-healthy",
             "relatedResources": []
         },
         {
@@ -249,33 +330,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 01 2026",
-            "headline": "Minnesota's Ban on 'Nudify' Apps Upheld in Court",
-            "title": "Judge Denies xAI’s Request to Block Minnesota Ban on ‘Nudify’ Apps",
-            "content": "A Minnesota court has denied xAI's request to block a state ban on apps that allow users to \"nudify\" images, which digitally remove clothing from photos. The ruling supports the state's stance on privacy and ethical concerns surrounding such technology. This decision could influence future legislation and legal actions regarding digital privacy and image manipulation technologies. Companies developing similar applications should be aware of evolving legal frameworks and ethical considerations. The case underscores the growing scrutiny of AI's potential misuse in altering digital content.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 01 2026",
-            "headline": "Hank Green Criticizes Personal AI Use as Unhealthy",
-            "title": "YouTuber Hank Green Says His AI Usage is ‘Not Healthy’",
-            "content": "YouTuber Hank Green has publicly expressed concerns about his personal use of AI, particularly large language models (LLMs), describing it as unhealthy. Green's remarks highlight the psychological impact and addictive potential of interacting with advanced AI systems. This candid admission serves as a cautionary tale for individuals and organizations using AI in daily life. It raises questions about the ethical implications and mental health effects of AI engagement. Users should be mindful of their AI interactions and consider setting boundaries to maintain a healthy balance.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/01/youtuber-hank-green-says-his-ai-usage-is-not-healthy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 01 2026",
-            "headline": "Sam Altman Advocates for AI in Parenting",
-            "title": "Sam Altman is Still Making the Case for Parenting via ChatGPT",
-            "content": "Sam Altman, CEO of OpenAI, continues to advocate for the use of AI, specifically ChatGPT, in parenting, suggesting it can enhance efficiency and reduce stress. Altman argues that AI can assist in managing daily tasks and providing educational support. This perspective reflects a broader trend of integrating AI into personal and family life, despite concerns about dependency and privacy. Parents considering AI tools should weigh the benefits against potential risks, ensuring informed and balanced usage. The discussion underscores the evolving role of AI in reshaping traditional parenting practices.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
-            "relatedResources": []
-        },
-        {
             "date": "Aug 03 2026",
             "headline": "$7.9M Boost for Design Arena—AI Models Get Human Touch",
             "title": "Design Arena Secures $7.9 Million to Enhance AI Model Evaluation",
@@ -309,60 +363,6 @@ const websiteContent = {
             "content": "Amazon Web Services (AWS) now supports the integration of Superblocks, a vibe-coding tool, into the private clouds of its customers. This development allows applications to be decoupled from underlying AI models, offering greater flexibility and customization for developers. The move is significant for enterprises seeking to optimize their cloud environments with tailored AI solutions. By embedding Superblocks, AWS is enhancing its cloud offerings, potentially reducing development time and costs for businesses. Organizations should explore how such integrations can streamline their operations and improve efficiency.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "OpenAI's Luxury Trip Sparks Backlash Amid AI Tensions",
-            "title": "Influencers Face Criticism for Attending OpenAI's Luxury Event",
-            "content": "OpenAI's inaugural influencer brand trip has ignited online backlash, highlighting ongoing tensions surrounding AI's societal impact. Critics argue that such events distract from pressing ethical and regulatory issues facing the AI industry. The backlash underscores the need for AI companies to balance marketing efforts with responsible innovation and transparency. As public scrutiny of AI technologies intensifies, organizations should prioritize ethical considerations and stakeholder engagement to maintain trust and credibility. This incident serves as a reminder of the complex dynamics between AI advancement and public perception.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "EU Enforces AI Transparency—New Labeling Rules in Effect",
-            "title": "European Union Implements AI Labeling and Transparency Regulations",
-            "content": "The European Union has enacted new transparency rules under its AI Act, effective August 2nd, requiring companies to disclose when users are interacting with AI systems, such as chatbots and deepfakes. These regulations aim to enhance user awareness and trust in AI technologies by ensuring transparency in digital interactions. The move is part of a broader effort to regulate AI use and mitigate potential misuse. Companies operating in the EU must now comply with these requirements, which could influence global standards for AI transparency. Organizations should review their AI systems to ensure compliance and maintain user trust.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "ChatGPT Dominates AI Use in Congress—House Records Reveal",
-            "title": "Congressional Offices Rely Heavily on ChatGPT for Legislative Tasks",
-            "content": "OpenAI's ChatGPT has become the most utilized AI tool on Capitol Hill, according to recent House spending records. Congressional offices are leveraging ChatGPT to draft memos, summarize legislation, and assist with constituent communications, highlighting its versatility and efficiency. This widespread adoption reflects the growing reliance on AI to streamline governmental processes and improve productivity. As AI tools become integral to legislative work, there is an increased need for oversight and ethical guidelines to ensure their responsible use. Policymakers should consider the implications of AI in governance and explore frameworks to address potential challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "GPT-Live Revolutionizes Voice AI—Real-Time Interaction Achieved",
-            "title": "OpenAI Develops GPT-Live for Continuous Voice AI Interaction",
-            "content": "OpenAI has introduced GPT-Live, a system enabling real-time voice interaction with AI through a turnless speech model and low-latency architecture. This innovation allows for faster and more natural conversations, enhancing user experience and engagement. The development is a significant advancement in voice AI technology, offering potential applications in customer service, virtual assistants, and more. Organizations utilizing voice AI should consider integrating GPT-Live to improve responsiveness and user satisfaction. This breakthrough underscores the ongoing evolution of AI capabilities and their impact on communication technologies.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "Alibaba Challenges US AI Leaders with Qwen3.8-Max Model",
-            "title": "Alibaba Unveils Qwen3.8-Max, Rivaling US AI Models",
-            "content": "Alibaba has launched its most advanced AI model, Qwen3.8-Max, claiming it rivals top systems from US labs like Anthropic and OpenAI, as well as domestic competitors such as Moonshot AI's Kimi K3. The model is designed to enhance Alibaba's AI capabilities, potentially impacting global AI supremacy dynamics. This move underscores China's strategic push to compete with the US in AI technology, reflecting broader geopolitical tech rivalries. The release of Qwen3.8-Max could influence AI development trends and spur further innovation in the sector. Organizations should monitor these advancements to understand potential shifts in AI capabilities and market leadership.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 03 2026",
-            "headline": "June Secures $20M to Simplify AI Deployment",
-            "title": "Startup June Raises $20M to Tackle AI Deployment Challenges",
-            "content": "June, a startup backed by Marc Benioff, has emerged from stealth with a $20 million pre-seed funding round aimed at simplifying AI adoption. The company seeks to address the complexities businesses face when deploying AI solutions, offering tools to streamline integration and enhance usability. This funding round highlights investor confidence in solutions that lower barriers to AI implementation, potentially accelerating AI adoption across industries. As AI becomes increasingly integral to business operations, tools like those developed by June could be crucial in democratizing access to advanced technologies.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/",
             "relatedResources": []
         }
     ],
@@ -449,14 +449,36 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
-            "cveId": "CVE-2026-20316",
-            "dateAdded": "Jul 29, 2026",
-            "vendor": "Cisco Secure Firewall Management Center (FMC)",
-            "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to",
+            "cveId": "CVE-2026-18556",
+            "dateAdded": "Aug 04, 2026",
+            "vendor": "N-able N-central",
+            "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-18556",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-34486",
+            "dateAdded": "Aug 04, 2026",
+            "vendor": "Apache Tomcat",
+            "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-9198",
+            "dateAdded": "Aug 04, 2026",
+            "vendor": "IBM Langflow",
+            "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9198",
             "isZeroDay": false
         },
         {
