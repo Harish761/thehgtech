@@ -2759,20 +2759,12 @@
       "date": "2026-05-10",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1339",
-      "incident_id": 1339,
-      "title": "Purportedly AI-Cloned Voice Allegedly Used to Defraud Play School Owner of \u20b997,500 (~$1,080 USD) in ",
-      "date": "2026-05-07",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 346,
+    "total": 345,
     "last7Days": 14,
     "last30Days": 55
   },
-  "lastUpdated": "2026-08-06T01:39:10.262360+05:30"
+  "lastUpdated": "2026-08-06T02:51:40.943135+05:30"
 }
