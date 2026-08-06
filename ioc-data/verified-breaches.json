@@ -8309,6 +8309,26 @@
       "Description": "In March 2019, <a href=\"https://techcrunch.com/2019/04/02/inside-a-spam-operation/\" target=\"_blank\" rel=\"noopener\">a spam operation known as \"Intelimost\" sent millions of emails appearing to come from people the recipients knew</a>. Security researcher <a href=\"https://securitydiscovery.com/massive-spam-operation-uncovered-in-a-database-leak/\" target=\"_blank\" rel=\"noopener\">Bob Diachenko found over 3 million unique email addresses in an exposed Elasticsearch database</a>, alongside plain text passwords used to access the victim's mailbox and customise the spam."
     }
   ],
+  "icsecurity.com": [
+    {
+      "Name": "InterConSecurity",
+      "Title": "Inter-Con Security",
+      "BreachDate": "2026-06-18",
+      "AddedDate": "2026-08-05T23:39:01Z",
+      "PwnCount": 276114,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In June 2026, <a href=\"https://x.com/DarkWebInformer/status/2069536119545540871\" target=\"_blank\" rel=\"noopener\">Inter-Con Security was targeted in a ShinyHunters “pay or leak” extortion campaign</a>. The group subsequently published data it alleged was taken from the company, including 276k unique email addresses along with names, physical addresses, job titles and phone numbers. The data encompassed a combination of contacts, internal users and leads."
+    }
+  ],
   "ikointl.com": [
     {
       "Name": "IKO",
