@@ -1,6 +1,62 @@
 {
   "incidents": [
     {
+      "id": "AIID-1186",
+      "incident_id": 1186,
+      "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines",
+      "date": "2026-08-06",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1329",
+      "incident_id": 1329,
+      "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1619",
+      "incident_id": 1619,
+      "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1620",
+      "incident_id": 1620,
+      "title": "Hillsboro, Oregon, Man Allegedly Possessed Dozens of Purportedly AI-Generated Images Depicting Child",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1621",
+      "incident_id": 1621,
+      "title": "Publicly Shared Claude Artifacts Reportedly Became Discoverable Through Google Search",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1622",
+      "incident_id": 1622,
+      "title": "Walmart's AI Voice System Allegedly Collected Illinois Callers' Biometric Voiceprints Without Consen",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1623",
+      "incident_id": 1623,
+      "title": "Pennsylvania's Lancaster Country Day School Students Allegedly Used AI to Create Hundreds of Sexuali",
+      "date": "2026-08-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1608",
       "incident_id": 1608,
       "title": "Purportedly AI-Generated Memorial Posters Reportedly Presented Fabricated Child Portraits as Victims",
@@ -1841,14 +1897,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-1186",
-      "incident_id": 1186,
-      "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1213",
       "incident_id": 1213,
       "title": "Gaggle AI Monitoring at Lawrence, Kansas High School Reportedly Misflags Student Content and Blocks ",
@@ -2762,9 +2810,9 @@
     }
   ],
   "stats": {
-    "total": 345,
-    "last7Days": 14,
-    "last30Days": 55
+    "total": 351,
+    "last7Days": 13,
+    "last30Days": 60
   },
-  "lastUpdated": "2026-08-06T20:00:38.272923+05:30"
+  "lastUpdated": "2026-08-07T05:54:54.843192+05:30"
 }
