@@ -57,6 +57,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1624",
+      "incident_id": 1624,
+      "title": "ISWAP Reportedly Used AI Guidance to Breach Nigerian Military Base Defenses by Motorcycle",
+      "date": "2026-08-06",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1625",
+      "incident_id": 1625,
+      "title": "Tunisian Man Allegedly Used ChatGPT to Research Bomb-Making During Paris Terror Plot Targeting Louvr",
+      "date": "2026-08-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1608",
       "incident_id": 1608,
       "title": "Purportedly AI-Generated Memorial Posters Reportedly Presented Fabricated Child Portraits as Victims",
@@ -2810,9 +2826,9 @@
     }
   ],
   "stats": {
-    "total": 351,
-    "last7Days": 13,
-    "last30Days": 60
+    "total": 353,
+    "last7Days": 15,
+    "last30Days": 62
   },
-  "lastUpdated": "2026-08-07T06:24:56.968100+05:30"
+  "lastUpdated": "2026-08-07T11:17:39.717590+05:30"
 }
