@@ -5557,6 +5557,27 @@
       "Description": "In June 2016, the online multiplayer game <a href=\"http://securityaffairs.co/wordpress/52260/data-breach/evony-data-breach.html\" target=\"_blank\" rel=\"noopener\">Evony was hacked</a> and over 29 million unique accounts were exposed. The attack led to the exposure of usernames, email and IP addresses and MD5 hashes of passwords (without salt)."
     }
   ],
+  "exactsciences.com": [
+    {
+      "Name": "ExactSciences",
+      "Title": "Exact Sciences",
+      "BreachDate": "2026-07-15",
+      "AddedDate": "2026-08-07T06:17:56Z",
+      "PwnCount": 10869543,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Names",
+        "Personal health data",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2026, <a href=\"https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/\" target=\"_blank\" rel=\"noopener\">Exact Sciences (now owned by Abbott Laboratories) was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group claimed to have obtained data from the company's cancer diagnostics business, which they later published publicly. The breach contained 10.9M unique email addresses belonging to customers, patients and healthcare providers, along with names, addresses, phone numbers and health records. <a href=\"https://www.abbott.com/en-us/corpnewsroom/diagnostics-testing/abbott-statement-on-cyber-incident-in-cancer-diagnostics-business\" target=\"_blank\" rel=\"noopener\">Abbott subsequently published a public notice</a> advising that \"some of the impacted files contain personal information and/or personal health information\" and that more specific information would follow once their review of the incident was complete."
+    }
+  ],
   "exactis.com": [
     {
       "Name": "Exactis",
