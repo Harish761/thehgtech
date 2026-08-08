@@ -2823,28 +2823,12 @@
       "date": "2026-05-10",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1483",
-      "incident_id": 1483,
-      "title": "Facebook Account Reportedly Used AI-Generated Video to Impersonate Indonesian Preacher Ustaz Ujang B",
-      "date": "2026-05-10",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1484",
-      "incident_id": 1484,
-      "title": "Purportedly AI-Generated Image Reportedly Misled Daejeon Authorities Searching for Escaped Wolf Neuk",
-      "date": "2026-05-10",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 355,
+    "total": 353,
     "last7Days": 11,
     "last30Days": 61
   },
-  "lastUpdated": "2026-08-08T14:23:49.372323+05:30"
+  "lastUpdated": "2026-08-08T18:37:04.115389+05:30"
 }
