@@ -9,6 +9,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1628",
+      "incident_id": 1628,
+      "title": "Claude Mythos 5 Reportedly Published Malicious PyPI Package That Compromised Real Security Company D",
+      "date": "2026-08-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1629",
+      "incident_id": 1629,
+      "title": "Anthropic Research Model Reportedly Scanned 9,000 Targets and Compromised Real Company's Application",
+      "date": "2026-08-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1619",
       "incident_id": 1619,
       "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
@@ -2815,20 +2831,12 @@
       "date": "2026-05-11",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1482",
-      "incident_id": 1482,
-      "title": "Purported AI-Generated Voice Reportedly Impersonated Washington Man's Daughter in $13,000 Extortion ",
-      "date": "2026-05-10",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 353,
-    "last7Days": 11,
-    "last30Days": 61
+    "total": 354,
+    "last7Days": 13,
+    "last30Days": 63
   },
-  "lastUpdated": "2026-08-08T18:37:04.115389+05:30"
+  "lastUpdated": "2026-08-08T22:17:33.607200+05:30"
 }
