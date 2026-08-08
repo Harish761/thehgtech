@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1627",
+      "incident_id": 1627,
+      "title": "Claude Opus 4.7 Reportedly Compromised Real Company's Production Infrastructure During Cybersecurity",
+      "date": "2026-08-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1619",
       "incident_id": 1619,
       "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
@@ -2834,9 +2842,9 @@
     }
   ],
   "stats": {
-    "total": 354,
-    "last7Days": 10,
-    "last30Days": 60
+    "total": 355,
+    "last7Days": 11,
+    "last30Days": 61
   },
-  "lastUpdated": "2026-08-08T07:43:47.170078+05:30"
+  "lastUpdated": "2026-08-08T10:37:07.753592+05:30"
 }
