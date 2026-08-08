@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1630",
+      "incident_id": 1630,
+      "title": "Atlantic City Casino-Hotels Allegedly Used Cendyn's Rainmaker AI to Coordinate and Inflate Room Rate",
+      "date": "2026-08-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1619",
       "incident_id": 1619,
       "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
@@ -2834,9 +2842,9 @@
     }
   ],
   "stats": {
-    "total": 354,
-    "last7Days": 13,
-    "last30Days": 63
+    "total": 355,
+    "last7Days": 14,
+    "last30Days": 60
   },
-  "lastUpdated": "2026-08-08T22:17:33.607200+05:30"
+  "lastUpdated": "2026-08-09T00:38:26.063547+05:30"
 }
