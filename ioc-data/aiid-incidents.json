@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1619",
+      "incident_id": 1619,
+      "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
+      "date": "2026-08-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1625",
+      "incident_id": 1625,
+      "title": "Tunisian Man Allegedly Used ChatGPT to Research Bomb-Making During Paris Terror Plot Targeting Louvr",
+      "date": "2026-08-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1626",
+      "incident_id": 1626,
+      "title": "American Exceptionalism Institute's Purportedly AI-Generated Ad Drew Defamation Claims Over Marsha B",
+      "date": "2026-08-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1186",
       "incident_id": 1186,
       "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines",
@@ -12,14 +36,6 @@
       "id": "AIID-1329",
       "incident_id": 1329,
       "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
-      "date": "2026-08-06",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1619",
-      "incident_id": 1619,
-      "title": "Bentonville, Arkansas, Photographer Allegedly Used Grok to Create AI-Generated Child Sexual Abuse Ma",
       "date": "2026-08-06",
       "category": "other",
       "severity": "medium"
@@ -63,14 +79,6 @@
       "date": "2026-08-06",
       "category": "data_leak",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1625",
-      "incident_id": 1625,
-      "title": "Tunisian Man Allegedly Used ChatGPT to Research Bomb-Making During Paris Terror Plot Targeting Louvr",
-      "date": "2026-08-06",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-1608",
@@ -2826,9 +2834,9 @@
     }
   ],
   "stats": {
-    "total": 353,
-    "last7Days": 9,
-    "last30Days": 59
+    "total": 354,
+    "last7Days": 10,
+    "last30Days": 60
   },
-  "lastUpdated": "2026-08-08T02:22:41.016504+05:30"
+  "lastUpdated": "2026-08-08T07:43:47.170078+05:30"
 }
