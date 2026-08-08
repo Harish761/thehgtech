@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-08-08T03:49:28.143623",
-  "total_incidents": 30172,
+  "last_updated": "2026-08-08T14:58:25.164745",
+  "total_incidents": 30174,
   "incidents": [
+    {
+      "id": "storm_united_group_of_companies",
+      "victim_name": "United Group of Companies",
+      "threat_actor": "Storm",
+      "date_discovered": "2026-08-08T09:21:21.811786+00:00",
+      "industry": "Other",
+      "website": "ugoc.com",
+      "claim": "Since 1972, The United Group of Companies, Inc. has specialized in all phases of real estate: development, financing, construction, and management. Their specialties include independent senior living, student apartment communities, multi-family (including affordable) housing, commercial properties, and mixed-use neighborhoods. The United Group of Companies is headquartered out of Troy, New York. \nThe company headquarters is located in 300 Jordan Road, Troy, NY 12180, United States. 201-500 Employees",
+      "screenshot": "https://images.ransomware.live/victims/a83592ba3aa411c0b631be116739cb11.png",
+      "url": "http://yqhecvqtdvq6p7duqcgw2qca77spbgakxcoibtx6zpvfshltsbbbhfqd.onion/company/6a7641d97a5bd158e10b4e50",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "storm_sawyer_savings_bank",
+      "victim_name": "Sawyer Savings Bank",
+      "threat_actor": "Storm",
+      "date_discovered": "2026-08-08T09:20:49.934425+00:00",
+      "industry": "Financial Services",
+      "website": "sawyersavings.bank",
+      "claim": "Sawyer Savings Bank is a community-focused financial institution with over 150 years of experience, offering a range of personal and business banking services. Their products include personal checking, savings accounts, business loans, and digital banking solutions designed to enhance customer convenience and security. The bank is dedicated to supporting local communities through various initiatives, including scholarships and volunteerism. Their target clients include individuals seeking personal banking solutions and businesses looking for comprehensive banking support. \nThe company headquarters is located in 87 Market Street, Saugerties, NY 12477, United States.11-50 Employees",
+      "screenshot": "https://images.ransomware.live/victims/abf67865b4a7ad513a47eb3d69533384.png",
+      "url": "http://yqhecvqtdvq6p7duqcgw2qca77spbgakxcoibtx6zpvfshltsbbbhfqd.onion/company/6a7640d37a5bd158e10b4e4f",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "bravox_medicos",
       "victim_name": "MEDICOS",

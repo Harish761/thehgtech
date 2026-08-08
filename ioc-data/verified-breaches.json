@@ -2668,6 +2668,27 @@
       "Description": "In March 2026, <a href=\"https://x.com/DarkWebInformer/status/2037305685965148419\" target=\"_blank\" rel=\"noopener\">a breach of one of the many iterations of the BreachForums hacking forum known as \"Version 5\" was publicly disclosed</a>. The incident exposed 340k unique email addresses along with usernames and argon2 password hashes."
     }
   ],
+  "brinkshome.com": [
+    {
+      "Name": "BrinksHome",
+      "Title": "Brinks Home",
+      "BreachDate": "2026-07-13",
+      "AddedDate": "2026-08-08T10:44:52Z",
+      "PwnCount": 732162,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Names",
+        "Partial credit card data",
+        "Phone numbers",
+        "Physical addresses",
+        "Purchases"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2026, <a href=\"https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/\" target=\"_blank\" rel=\"noopener\">Brinks Home was targeted in a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data they alleged was taken from the company, including 732k unique email addresses and other personal information relating to leads, customers and Brinks staff such as name, phone numbers and physical addresses. The data also included purchases from Brinks along with partial credit card data (last 4 digits, card type and expiry). <a href=\"https://brinkshome.com/cybersecurity-update\" target=\"_blank\" rel=\"noopener\">In Brinks' disclosure notice</a>, they acknowledged the incident and risk of disclosure, and advised that they would notify impacted parties \"consistent with applicable law\"."
+    }
+  ],
   "btc-alpha.com": [
     {
       "Name": "BTCAlpha",
@@ -5562,7 +5583,7 @@
       "Name": "ExactSciences",
       "Title": "Exact Sciences",
       "BreachDate": "2026-07-15",
-      "AddedDate": "2026-08-07T06:17:56Z",
+      "AddedDate": "2026-08-07T06:27:29Z",
       "PwnCount": 10869543,
       "DataClasses": [
         "Dates of birth",
@@ -5575,7 +5596,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In July 2026, <a href=\"https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/\" target=\"_blank\" rel=\"noopener\">Exact Sciences (now owned by Abbott Laboratories) was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group claimed to have obtained data from the company's cancer diagnostics business, which they later published publicly. The breach contained 10.9M unique email addresses belonging to customers, patients and healthcare providers, along with names, addresses, phone numbers and health records. <a href=\"https://www.abbott.com/en-us/corpnewsroom/diagnostics-testing/abbott-statement-on-cyber-incident-in-cancer-diagnostics-business\" target=\"_blank\" rel=\"noopener\">Abbott subsequently published a public notice</a> advising that \"some of the impacted files contain personal information and/or personal health information\" and that more specific information would follow once their review of the incident was complete."
+      "Description": "In July 2026, <a href=\"https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/\" target=\"_blank\" rel=\"noopener\">Exact Sciences (now owned by Abbott Laboratories) was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group claimed to have obtained data from the company's cancer diagnostics business, which they later published publicly. The breach contained 10.9M unique email addresses belonging to customers, patients and healthcare providers, along with names, addresses, phone numbers and health records. <a href=\"https://www.abbott.com/en-us/corpnewsroom/diagnostics-testing/abbott-statement-on-cyber-incident-in-cancer-diagnostics-business\" target=\"_blank\" rel=\"noopener\">Abbott subsequently published a public notice</a> advising that \"some of the impacted files contain personal information and/or personal health information\" and that more specific information would follow once their review of the incident was complete. For context, Exact Sciences is the maker of the Cologuard at-home colorectal cancer screening test."
     }
   ],
   "exactis.com": [
