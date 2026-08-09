@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-08-08T14:58:25.164745",
-  "total_incidents": 30174,
+  "last_updated": "2026-08-09T03:57:39.231276",
+  "total_incidents": 30179,
   "incidents": [
+    {
+      "id": "panzer_daily_trust",
+      "victim_name": "Daily Trust",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-08-08T19:21:01.537371+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "Daily Trust is a Nigerian news organization that provides breaking news, investigative stories, and various features across multiple sectors including business, politics, sports, and entertainment. The company offers content through print, online platforms, and media outlets like Trust TV and Trust Radio. Its services cater primarily to the Nigerian public, with a focus on providing comprehensive coverage of local and international news. Daily Trust aims to inform and engage its audience through a diverse range of storytelling and analysis.",
+      "screenshot": "https://images.ransomware.live/victims/621aacd18dc9fc22832041481d05f1b3.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/daily-trust",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_impact_centre_chrétien",
+      "victim_name": "Impact Centre Chrétien",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-08T16:28:01.710957+00:00",
+      "industry": "Other",
+      "website": "www.impactcentrechretien.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/809080baafc0198ddf10a1f297f9b3ca.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=beeeda5d-f120-4c05-8e03-78c2d8785c59",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_louisville_bar_association",
+      "victim_name": "Louisville Bar Association",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-08-08T14:25:56.891591+00:00",
+      "industry": "Professional Services",
+      "website": "loubar.org",
+      "claim": "The Louisville Bar Association (LBA) provides a range of services including membership benefits, legal job placement, continuing legal education (CLE), and public service initiatives. It aims to support legal professionals at all stages of their careers while promoting diversity and community engagement within the legal field. The LBA also offers resources for individuals seeking legal representation and hosts various events and awards to recognize outstanding contributions in the legal community. Their intended clients include legal professionals, law firms, and individuals in need of legal assistance in the Louisville area.",
+      "screenshot": "https://images.ransomware.live/victims/7b177fef51c9f2056da083439204572e.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a623df35ae71db30c7eabbf",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_clausing",
+      "victim_name": "Clausing",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-08T12:30:30.169180+00:00",
+      "industry": "Manufacturing",
+      "website": "www.clausing-tiefbau.com",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6eafd0e330c4ae341f0b44ac689bdbe5.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6a51158d-1290-4eb0-884a-597a8ffd28a0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_clls_co_ltd",
+      "victim_name": "CLLS Co Ltd",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-08T12:29:06.719361+00:00",
+      "industry": "Not Found",
+      "website": "CLLS.com.sg",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/2330fd98c47c23ce47db149f0b28b130.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=519326ff-4372-4dd4-82d5-a11cc4270a2f",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "storm_united_group_of_companies",
       "victim_name": "United Group of Companies",
