@@ -793,6 +793,24 @@
       "Description": "In July 2016, a hacker known as Phineas Fisher <a href=\"https://motherboard.vice.com/en_us/article/yp3n55/phineas-fisher-turkish-government-hack\" target=\"_blank\" rel=\"noopener\">hacked Turkey's ruling party (Justice and Development Party or \"AKP\") and gained access to 300k emails</a>. The full contents of the emails were subsequently <a href=\"https://wikileaks.org/akp-emails/\" target=\"_blank\" rel=\"noopener\">published by WikiLeaks and made searchable</a>. HIBP identified over 917k unique email address patterns in the data set, including message IDs and a number of other non-user addresses."
     }
   ],
+  "alcon.com": [
+    {
+      "Name": "Alcon",
+      "Title": "Alcon",
+      "BreachDate": "2026-08-01",
+      "AddedDate": "2026-08-09T10:04:34Z",
+      "PwnCount": 218395,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, <a href=\"https://x.com/h4ckmanac/status/2084157760933949852\" target=\"_blank\" rel=\"noopener\">the Alcon eye care company was named in a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data allegedly sourced from Alcon containing 218k unique email addresses along with other largely corporate B2B contact fields, including name, phone number and physical address."
+    }
+  ],
   "allianzlife.com": [
     {
       "Name": "AllianzLife",
