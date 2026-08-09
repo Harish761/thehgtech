@@ -2831,28 +2831,12 @@
       "date": "2026-05-12",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1485",
-      "incident_id": 1485,
-      "title": "Guelph, Ontario, Woman Reportedly Lost $14,000 in Purported Deepfake MrBeast Cryptocurrency Scam",
-      "date": "2026-05-11",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1486",
-      "incident_id": 1486,
-      "title": "AI-Themed Investment Scam Network Reportedly Used Keitaro Cloaking Across 15,500 Domains",
-      "date": "2026-05-11",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 356,
+    "total": 354,
     "last7Days": 15,
     "last30Days": 61
   },
-  "lastUpdated": "2026-08-09T02:13:05.058702+05:30"
+  "lastUpdated": "2026-08-09T07:53:25.828635+05:30"
 }
