@@ -17,11 +17,11 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), '../data/hacker-chatter.json
 def fetch_incident_feed():
     print("🌐 Fetching latest OSINT hacker chatter...")
     victims = []
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) TheHGTech-OSINT"}
+    headers = {"User-Agent": "TheHGTech-OSINT"}
     
     try:
         # Public Endpoint (Updates daily, 100+ latest victims, no token required)
-        url = 'https://api.ransomware.live/recentvictims'
+        url = 'https://api.ransomware.live/v2/recentvictims'
         req = urllib.request.Request(url, headers=headers)
         with urllib.request.urlopen(req, timeout=30) as response:
             raw_data = json.loads(response.read().decode())
