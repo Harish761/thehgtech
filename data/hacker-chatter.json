@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-08-11T17:34:16.323016",
-  "total_incidents": 30258,
+  "last_updated": "2026-08-12T04:21:20.005470",
+  "total_incidents": 30264,
   "incidents": [
+    {
+      "id": "spacebears_basso_fedele_&_figli_s.r.l._(olio_basso)_/_villa_raiano",
+      "victim_name": "Basso Fedele & Figli S.r.l. (Olio Basso) / Villa Raiano",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-08-12T02:36:31.317051+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "Basso Fedele & Figli S.r.l. is a historic Italian family company founded in 1904 in San Michele di Serino, in the Irpinia region of Campania. For over a century, the Basso family has been dedicated to the production and bottling of high-quality olive oil. Today, the company is a leading name in the Italian olive oil sector, exporting its products under the Basso® brand to more than 90 countries worldwide. Combining tradition with modern technology, Basso offers a wide range of oils, including extra virgin olive oil, seed oils, and specialty blends. The company also produces private-label oils for major retail chains, maintaining a strong commitment to quality, traceability, and authenticity.https://www.villaraiano.com/Villa Raiano is the wine estate of the Basso family, established in 1996 as a natural extension of their agricultural heritage in Irpinia, Campania. The winery focuses on producing premium organic wines from indigenous grape varieties, particularly Fiano di Avellino, Greco di Tufo, and Aglianico. With approximately 27 hectares of certified organic vineyards, Villa Raiano combines traditional winemaking with modern techniques, including gravity-flow processing and minimal batonnage to preserve freshness and minerality. In 2018, the new generation of the Basso family took over management, and in 2024, a state-of-the-art underground cellar was opened for aging. Villa Raiano is now recognized as one of the most dynamic and respected wineries in southern Italy.-Personal information of employees and clients -Financial documents -Other files https://oliobasso.com/",
+      "screenshot": "https://images.ransomware.live/victims/8790f4c83ef6d0d2c5b0c33a7d1a1f44.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/68/basso-fedele-figli-srl-olio-basso-villa-raiano",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "genesis_**e***",
+      "victim_name": "**E***",
+      "threat_actor": "genesis",
+      "date_discovered": "2026-08-11T23:56:08.099292+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "A healthcare organization",
+      "screenshot": "https://images.ransomware.live/victims/1407316b95b80ae78d645e3fd5ac6e07.png",
+      "url": "http://genesis6ixpb5mcy4kudybtw5op2wqlrkocfogbnenz3c647ibqixiad.onion/9e19757b54df85888c12/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "orova_ganzhou_xinye_craft_co.,_ltd.",
+      "victim_name": "Ganzhou Xinye Craft Co., Ltd.",
+      "threat_actor": "Orova",
+      "date_discovered": "2026-08-11T18:51:28.815570+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Ganzhou Xinye Art and Craft Co., Ltd. is a large-scale craft gift production enterprise affiliated to Xinlin Group. The company was established in September 1997. It is a large foreign-owned enterprise with a total investment of 7.2 million US dollars. It mainly produces resin, glass, clay, ceramics, water globe and other handicrafts, all products are exported to the United States, Canada, Britain and other European and American countries.",
+      "screenshot": "https://images.ransomware.live/victims/7f897d4ac46d0f9b16db411eefdadcad.png",
+      "url": "http://mzlajyncb2rafn5bsb7esmo73kyawjxeirunba27n6nermmafzlcp4qd.onion/idlfthynicdrnnzkss/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "panzer_xpress_tech",
+      "victim_name": "Xpress Tech",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-08-11T18:21:36.956448+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Xpress Tech is a leading B2B iGaming aggregation platform established in 2015 under Softquo Holding. It provides a comprehensive one-stop technical solution connecting operators with over 120 gaming providers and a portfolio of more than 30,000 games via a single Remote API integration. The platform also features integrated payment solutions and back-office data management",
+      "screenshot": "https://images.ransomware.live/victims/ba0f164c41f2add5160da16a3fe0f3ea.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/xpress-tech",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_g.m.a._grandi_marche_automobili_-_s.r.l",
+      "victim_name": "G.M.A. GRANDI MARCHE AUTOMOBILI - S.R.L",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-11T17:29:19.817959+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6f69923237caea9ba07775c88c05a27c.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=4e83e92f-9bdd-4f12-907b-e98a783774fe",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_crown_group",
+      "victim_name": "Crown Group",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-11T17:28:38.943041+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/c10299fb1ddbeb652e897e951104c02a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6072235c-e4c9-4151-b086-8e83ed5b9fd7",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_qpc_global",
       "victim_name": "QPC Global",
