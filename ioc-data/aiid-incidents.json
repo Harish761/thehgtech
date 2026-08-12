@@ -2807,28 +2807,12 @@
       "date": "2026-05-17",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1490",
-      "incident_id": 1490,
-      "title": "ChatGPT Was Allegedly Consulted About Attack Options Before Teen Attempted to Stab Officer at Tira, ",
-      "date": "2026-05-14",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1491",
-      "incident_id": 1491,
-      "title": "ChatGPT Use Was Reportedly Cited in Delusional State Before Homicide and Assault in Readfield, Maine",
-      "date": "2026-05-13",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 353,
+    "total": 351,
     "last7Days": 15,
     "last30Days": 55
   },
-  "lastUpdated": "2026-08-12T02:28:40.757849+05:30"
+  "lastUpdated": "2026-08-12T08:07:26.228315+05:30"
 }
