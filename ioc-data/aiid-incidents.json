@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1633",
+      "incident_id": 1633,
+      "title": "Anthropic and OpenAI AI Agents Reportedly Took Unsanctioned Actions on the Live Internet During UK A",
+      "date": "2026-08-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1627",
       "incident_id": 1627,
       "title": "Claude Opus 4.7 Reportedly Compromised Real Company's Production Infrastructure During Cybersecurity",
@@ -2818,9 +2826,9 @@
     }
   ],
   "stats": {
-    "total": 352,
-    "last7Days": 9,
-    "last30Days": 52
+    "total": 353,
+    "last7Days": 10,
+    "last30Days": 53
   },
-  "lastUpdated": "2026-08-14T01:06:57.081873+05:30"
+  "lastUpdated": "2026-08-14T02:25:27.928778+05:30"
 }
