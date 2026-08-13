@@ -13607,6 +13607,24 @@
       "Description": "In June 2023, data belonging to the \"UK's No.1 Business Marketplace\" Rightbiz appeared on a popular hacking forum. Comprising of more than 18M rows of data, the breach included 65k unique email addresses along with names, phone numbers and physical address. Rightbiz didn't respond to mulitple attempts to disclose the incident./a>."
     }
   ],
+  "ringcentral.com": [
+    {
+      "Name": "RingCentral",
+      "Title": "RingCentral",
+      "BreachDate": "2026-07-27",
+      "AddedDate": "2026-08-13T10:54:40Z",
+      "PwnCount": 1596490,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2026, the cloud-based business communications platform <a href=\"https://x.com/AlvieriD/status/2084262989448749447\" target=\"_blank\" rel=\"noopener\">RingCentral was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data they claimed was obtained from the platform, which included 1.6M unique email addresses along with names, physical addresses and phone numbers. <a href=\"https://www.ringcentral.com/trust-center/security-bulletin.html\" target=\"_blank\" rel=\"noopener\">In their disclosure notice</a>, RingCentral advised that the incident affected \"a limited portion of RingCentral customers\" and that it was communicating directly with those affected."
+    }
+  ],
   "rivercitymediaonline.com": [
     {
       "Name": "RiverCityMedia",
