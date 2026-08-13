@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1632",
+      "incident_id": 1632,
+      "title": "Yale Student Suspended and Given F After GPTZero Allegedly Misclassified Exam as AI-Generated",
+      "date": "2026-08-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1627",
       "incident_id": 1627,
       "title": "Claude Opus 4.7 Reportedly Compromised Real Company's Production Infrastructure During Cybersecurity",
@@ -2810,9 +2818,9 @@
     }
   ],
   "stats": {
-    "total": 351,
-    "last7Days": 15,
-    "last30Days": 55
+    "total": 352,
+    "last7Days": 16,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-08-13T19:07:57.773961+05:30"
+  "lastUpdated": "2026-08-13T22:36:30.043093+05:30"
 }
