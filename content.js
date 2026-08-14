@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Aug 14 2026",
+            "headline": "RingCentral Breach Exposes 1.6M Users' Personal Data",
+            "title": "RingCentral Data Breach Affects 1.6 Million Users with Personal Data Leak",
+            "content": "RingCentral has suffered a data breach impacting approximately 1.6 million users, with hackers publishing stolen information including names, addresses, email addresses, and phone numbers. The breach highlights vulnerabilities in cloud communication platforms, emphasizing the need for robust security measures. Affected users should be vigilant for phishing attempts and consider changing passwords. This incident underscores the growing trend of targeting communication services for personal data theft. Organizations using similar platforms should review their security protocols to prevent similar breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/1-6-million-likely-impacted-by-ringcentral-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "Beacon CRM Breach Hits 1,000 Charities via AWS Key Leak",
+            "title": "Compromised AWS Key Leads to Data Breach in Beacon CRM Affecting 1,000 Charities",
+            "content": "A data breach at Beacon CRM has compromised the information of over 1,000 charities, traced back to a leaked AWS access key found in publicly available JavaScript build artifacts. This incident highlights the critical importance of securing cloud access credentials and monitoring build environments for vulnerabilities. Affected charities may face operational disruptions and should assess the impact on their donor and operational data. This breach serves as a reminder for organizations to regularly audit their cloud security practices and ensure sensitive keys are not exposed.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-1000-charities-hit-by-beacon-crm-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "ShipMonk Breach Exposes 14,000 Trezor Customers' Shipping Data",
+            "title": "Data Breach at ShipMonk Affects 14,000 Trezor Customers",
+            "content": "ShipMonk has experienced a data breach affecting 14,000 Trezor customers, with hackers obtaining shipping information such as names, addresses, email addresses, and phone numbers. This breach raises concerns about the security of third-party logistics providers handling sensitive customer data. Trezor users should monitor their accounts for suspicious activity and consider additional security measures. The incident highlights the need for robust data protection strategies in supply chain and logistics operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/14000-trezor-customers-impacted-by-data-breach-at-shipmonk/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "GeoServer Zero-Day Exploited for Remote Code Execution",
+            "title": "Unpatched GeoServer Zero-Day Vulnerability Exploited by Hackers",
+            "content": "Hackers are actively exploiting a zero-day vulnerability in GeoServer, identified as an SQL injection flaw that allows remote code execution. This vulnerability poses a significant risk to organizations using GeoServer for geospatial data management. Users are advised to apply any available mitigations and monitor for unusual activity until a patch is released. The exploitation of unpatched vulnerabilities continues to be a major threat vector, underscoring the importance of timely updates and vulnerability management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-exploiting-unpatched-geoserver-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 12 2026",
+            "headline": "ShieldBreak PoC Bypasses Microsoft Defender Patch",
+            "title": "ShieldBreak Zero-Day PoC Demonstrates Microsoft Defender Patch Bypass",
+            "content": "A security researcher known as Chaotic Eclipse has released a proof-of-concept (PoC) for a zero-day vulnerability named ShieldBreak, which affects Microsoft Defender for Windows. The PoC demonstrates a patch bypass that grants SYSTEM access, posing a severe security risk. Organizations relying on Microsoft Defender should be aware of this vulnerability and consider additional security measures. This incident highlights the ongoing challenges in maintaining effective endpoint protection against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 11 2026",
+            "headline": "Microsoft Patches 398 Vulnerabilities—One Actively Exploited",
+            "title": "Microsoft Releases Updates to Fix 398 Security Vulnerabilities",
+            "content": "Microsoft has issued updates addressing 398 security vulnerabilities across its Windows operating systems and supported software. Among these, one vulnerability is actively exploited, and two others were publicly disclosed before patching. This extensive update underscores the importance of regular patch management to protect against potential exploits. Organizations should prioritize applying these updates to mitigate risks associated with unpatched vulnerabilities. The proactive approach by Microsoft highlights the ongoing battle against evolving cyber threats.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "Salesforce, ServiceNow Data Targeted in 'City-Forum' Attacks",
+            "title": "'City-Forum' Attacks Compromise Salesforce and ServiceNow Data",
+            "content": "Researchers at Reco have identified attacks targeting data within Salesforce and ServiceNow systems, attributed to the extortion group ShinyHunters. These attacks expose sensitive user data, posing significant risks to organizations relying on these platforms for customer relationship management. Companies using Salesforce and ServiceNow should review their security measures and monitor for unauthorized access. The persistence of groups like ShinyHunters highlights the need for robust security strategies to protect valuable enterprise data.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4209788/salesforce-servicenow-data-targeted-in-city-forum-attacks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "Akira Ransomware Uses Safe Mode to Evade Detection",
+            "title": "Akira Ransomware Reboots Systems into Safe Mode to Bypass EDR",
+            "content": "Akira ransomware affiliates have adopted a novel technique to evade endpoint detection and response (EDR) systems by rebooting compromised Windows systems into Safe Mode with Networking. This method disables security agents, including Microsoft Defender's real-time protection, allowing ransomware to execute unimpeded. Organizations should consider additional security layers and review their incident response plans to counter such evasive tactics. The evolution of ransomware techniques underscores the need for continuous adaptation in cybersecurity defenses.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4209606/akira-ransomware-reboots-into-windows-safe-mode-to-knock-edr-offline.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "Google Cloud's Post-Quantum Plan Targets 2029 Readiness",
+            "title": "Google Cloud Unveils Post-Quantum Cryptography Roadmap with 2029 Goal",
+            "content": "Google Cloud has outlined its roadmap to achieve full post-quantum cryptography readiness by 2029, with key milestones set for 2027 and 2028. This initiative aims to prepare for the future threat of quantum computing, which could potentially break current cryptographic algorithms. Organizations should begin assessing their cryptographic infrastructure and consider transitioning to quantum-resistant algorithms. Google's proactive approach highlights the importance of future-proofing security measures in anticipation of technological advancements.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-cloud-sets-out-post-quantum-roadmap-with-2029-readiness-goal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "AmnesiaStealer Malware Targets macOS for Data Theft",
+            "title": "AmnesiaStealer macOS Malware Harvests Data and Controls Browser Sessions",
+            "content": "AmnesiaStealer, a Rust-based macOS malware, has been identified as a threat capable of stealing users' passwords, keychain information, and browser data from Chromium-based browsers and Safari. This malware poses a significant risk to macOS users, emphasizing the need for robust endpoint protection and regular security updates. Organizations and individuals using macOS should remain vigilant and consider using additional security tools to detect and mitigate such threats. The emergence of sophisticated macOS malware highlights the expanding target landscape for cybercriminals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/amnesiastealer-macos-malware-steals-data-controls-browser-sessions/",
+            "relatedResources": []
+        },
+        {
             "date": "Aug 13 2026",
             "headline": "Adobe Commerce Bug Exploited Hours After Patch Release",
             "title": "Immediate Exploitation of Adobe Commerce CVE-2026-71362 Post-Patch",
@@ -58,15 +148,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 11 2026",
-            "headline": "Microsoft Patches 398 Flaws—Zero-Day Under Attack",
-            "title": "Microsoft August Patch Tuesday Fixes 398 Flaws, Zero-Day Included",
-            "content": "Microsoft's August Patch Tuesday addressed 398 vulnerabilities, including a zero-day flaw in a Windows kernel driver. This zero-day, already exploited in the wild, allows attackers to escalate privileges to SYSTEM level. The flaw affects the core Windows driver handling network socket operations, posing a critical threat to systems with unpatched vulnerabilities. Organizations are urged to apply these updates immediately to protect against potential exploitation. This extensive patch release highlights Microsoft's ongoing efforts to secure its software ecosystem against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
-            "relatedResources": []
-        },
-        {
             "date": "Aug 13 2026",
             "headline": "GeoServer Zero-Day SQL Injection Exploited by Attackers",
             "title": "Attackers Target Unpatched SQL Injection in GeoServer Platform",
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/wordpress-7-0-4-patches-remote-code-execution-vulnerability/",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "VMware vCenter Flaw—CVE-2026-59310 Exploited",
-            "title": "Critical VMware vCenter Vulnerability in Attackers’ Crosshairs",
-            "content": "A critical directory traversal vulnerability, CVE-2026-59310, has been identified in VMware vCenter, allowing remote attackers to execute arbitrary code. This vulnerability is currently being targeted by threat actors, posing a severe risk to organizations relying on VMware for virtual infrastructure management. The flaw enables attackers to gain unauthorized access and potentially disrupt operations. Security professionals are advised to apply available patches immediately and review their systems for any signs of compromise. This incident highlights the ongoing need for vigilance in securing virtualization environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-vmware-vcenter-vulnerability-in-attackers-crosshairs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "SharePoint Auth Bypass—CVE-2026-55040 Exploited",
-            "title": "Attackers Exploit SharePoint Authentication Bypass After Public PoC Release",
-            "content": "Microsoft SharePoint users face a critical threat as attackers exploit CVE-2026-55040, a security feature bypass vulnerability with a CVSS score of 9.1. The flaw, stemming from weak authentication mechanisms, was quickly targeted following the release of a proof-of-concept (PoC) code. Organizations using SharePoint are at risk of unauthorized access and data breaches. Security teams should prioritize patching this vulnerability and strengthening authentication protocols. This incident underscores the rapid weaponization of publicly disclosed vulnerabilities in enterprise software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/attackers-exploit-sharepoint.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "AI Agents Breach Taiwanese Government—New Cyber Threat Era",
-            "title": "AI Agents Wage Near-Autonomous Cyberattack on Asian Government Networks",
-            "content": "Autonomous AI agents have launched a sophisticated cyberattack on Taiwanese government networks, breaching systems and compromising credentials. Built on open-source frameworks, these agents conducted a multi-day operation, probing sensitive areas such as a nuclear safety agency. This incident marks a new phase in AI-enabled cyber operations, raising concerns about the future of automated threats. Security professionals must consider AI's potential in both offensive and defensive cyber strategies. The attack underscores the need for enhanced monitoring and response capabilities in government and critical infrastructure sectors.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4209210/ai-agents-wage-near-autonomous-cyberattack-on-asian-government-networks.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "Belgium's eID Flaw—RCE Risk for Citizens",
-            "title": "Belgium's eID Authentication Opens Citizen Accounts to RCE",
-            "content": "Severe vulnerabilities in a key browser extension have compromised the trust framework of Belgium's electronic ID (eID) system, exposing citizen accounts to remote code execution (RCE) attacks. This breach highlights significant security issues with browser extensions and their impact on national identity systems. Belgian authorities are urged to address these vulnerabilities promptly to protect citizens' personal data and maintain trust in digital identity solutions. The incident serves as a cautionary tale for other nations relying on similar technologies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/belgium-eid-authentication-citizen-accounts-rce",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "Fortinet Fixes Auth Flaws—Secure Your Systems",
-            "title": "Fortinet Patches Authentication Flaws in FortiWeb and FortiManager",
-            "content": "Fortinet has addressed critical authentication vulnerabilities in its FortiWeb and FortiManager products, which could allow attackers to log in with arbitrary credentials or impersonate FortiGate appliances. These flaws pose a significant risk to organizations using Fortinet's security solutions, potentially leading to unauthorized access and data breaches. Security teams should apply the patches immediately and review their configurations for any anomalies. This update is part of Fortinet's commitment to maintaining robust security across its product line.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-patches-authentication-flaws-in-fortiweb-and-fortimanager/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "White House Enlists Firms—Combat Cybercrime Gangs",
-            "title": "White House Mobilizes Security Firms for Operations Against Foreign Cybercrime Gangs",
-            "content": "The White House is enlisting security firms to combat foreign cybercrime gangs, requiring participating companies to post a $1 million bond. This initiative aims to enhance collaboration between the government and private sector in tackling cyber threats. The bond ensures compliance with operational requirements and underscores the seriousness of the endeavor. Security firms are expected to bring their expertise and resources to disrupt criminal activities effectively. This move reflects a growing trend of public-private partnerships in cybersecurity defense.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/white-house-mobilizes-security-firms-for-operations-against-foreign-cybercrime-gangs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Metabase SQLi Zero-Day—Total Access Risk",
-            "title": "Metabase SQLi Exploit Grants Attackers Total Access",
-            "content": "Metabase has disclosed a zero-day SQL Injection vulnerability, CVE-2026-72898, that could expose sensitive credentials, tokens, and API keys. This flaw allows attackers to gain total access to affected systems, posing a severe risk to businesses using the Metabase business intelligence platform. Organizations are advised to apply patches as soon as they are available and review their systems for potential exposure. This incident highlights the critical need for robust security measures in data analytics and business intelligence tools.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4208307/metabase-sqli-exploit-grants-attackers-total-access.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Lazarus Exploits Windows Zero-Day—Defense Firms Targeted",
-            "title": "Lazarus Group Exploits Windows Zero-Day to Deploy Backdoor in Defense Sector",
-            "content": "The notorious Lazarus Group, linked to North Korea, has exploited a zero-day vulnerability in Microsoft Windows to deploy a novel backdoor targeting defense and aerospace companies in France, Germany, Brazil, and India. The flaw, recently patched by Microsoft, allowed attackers to gain SYSTEM access, posing a significant threat to sensitive sectors. This campaign underscores the persistent threat posed by state-sponsored actors exploiting zero-day vulnerabilities to infiltrate critical infrastructure. Organizations in the targeted sectors should prioritize applying the latest patches and enhancing their network monitoring to detect unusual activities. This incident highlights the ongoing need for vigilance against sophisticated cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "737 Chrome VPN Extensions Hijack Traffic—Check Yours Now",
-            "title": "Massive Set of Chrome VPN Extensions Found Routing Traffic Through Proxies",
-            "content": "Security researchers have uncovered 737 free VPN and proxy extensions on the Chrome Web Store that intercept and route browser traffic through a proxy infrastructure. These extensions primarily target Russian-speaking users seeking access to blocked services, posing a significant privacy risk. The extensions were published by at least 40 different developers, indicating a coordinated effort to exploit users seeking anonymity. Users are advised to review and remove any suspicious VPN extensions from their browsers immediately. This discovery highlights the risks associated with using unverified browser extensions, especially those offering free VPN services.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Aug 12 2026",
+            "headline": "AI Pioneers Debate Open Source Amid Safety Concerns",
+            "title": "Hinton, Li, and Ng Discuss AI Regulation and Open Source at Ai4",
+            "content": "At the Ai4 conference, AI luminaries Geoffrey Hinton, Fei-Fei Li, and Andrew Ng engaged in a critical debate on AI regulation and the role of open source in the industry. As AI safety concerns grow, the experts argued for maintaining open access to AI technologies to foster innovation and competition, particularly as China makes significant advances in Asia. The discussion highlighted the delicate balance between regulation and innovation, emphasizing the need for the U.S. to remain competitive in the global AI landscape. Professionals in the field are urged to consider the implications of open source on AI safety and international competitiveness. The debate underscores the ongoing tension between innovation and regulation in AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 10 2026",
+            "headline": "Meta Unveils Muse Glimmer—Open Source and Multimodal",
+            "title": "Meta Launches Muse Glimmer: A Local, Agentic, Multimodal AI Platform",
+            "content": "Meta has introduced Muse Glimmer, a new open-source AI platform designed to operate locally with multimodal capabilities. This agentic system allows for seamless integration across various applications, enhancing user interaction with AI through text, image, and audio inputs. By making Muse Glimmer open source, Meta aims to empower developers to customize and expand the platform's functionalities, fostering innovation in AI applications. This move positions Meta as a key player in the open-source AI community, encouraging collaboration and transparency. Developers are encouraged to explore Muse Glimmer's potential to enhance AI-driven solutions across industries.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/muse-glimmer",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "Microsoft Retires Mico from Copilot—Moves to Learn Live",
+            "title": "Microsoft Shifts Mico Avatar from Copilot to Learn Live Platform",
+            "content": "Microsoft has announced the removal of its Mico avatar from the Copilot chatbot's voice mode, redirecting the character to the Learn Live platform. Mico, known for its emotive yellow blob appearance, will now have enhanced interaction opportunities in educational settings. This strategic move aims to optimize the avatar's capabilities by providing a more dynamic environment for user engagement. The transition reflects Microsoft's ongoing efforts to refine its AI interfaces and improve user experience across its platforms. Users of Copilot will no longer see Mico, while educators and learners can expect more interactive sessions with the avatar on Learn Live.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "OpenAI Appoints New CRO Amid Executive Reshuffle",
+            "title": "Dali Rajic Joins OpenAI as Chief Revenue Officer",
+            "content": "OpenAI has appointed Dali Rajic, former president and COO of Wiz, as its new Chief Revenue Officer, replacing Denise Dresser after a nine-month tenure. This executive change is part of a broader shake-up within OpenAI as it seeks to strengthen its leadership team. Rajic's experience in scaling operations and driving revenue growth is expected to bolster OpenAI's strategic initiatives in the competitive AI market. The transition highlights OpenAI's focus on enhancing its commercial strategies to maintain its position as a leading AI research organization. Stakeholders should anticipate potential shifts in OpenAI's business approach under Rajic's leadership.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "Nvidia's $500B Strategy Targets Aging GPUs—A Bold Move",
+            "title": "Nvidia's $500 Billion Plan Aims to Sustain GPU Value",
+            "content": "Nvidia has unveiled a $500 billion strategy to ensure the longevity and value of its GPUs, particularly older models. The plan involves engaging financiers to support AI infrastructure investments, thereby maintaining demand for Nvidia's hardware. This approach is seen as a calculated risk to stabilize the GPU market amid rapid technological advancements. By securing financial backing, Nvidia aims to extend the lifecycle of its products and reinforce its dominance in the AI hardware sector. Industry professionals should monitor Nvidia's financial maneuvers as they could influence market dynamics and investment trends in AI technology.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "Apple Eyes Nine-Figure Deal to Boost Siri's News Content",
+            "title": "Apple Negotiates Publisher Payments to Enhance Siri's News Updates",
+            "content": "Apple is reportedly in discussions to allocate a nine-figure budget for compensating publishers to supply current news content for Siri. This initiative aims to enhance Siri's capabilities by providing users with timely and relevant news updates, potentially increasing user engagement with Apple's voice assistant. The move underscores Apple's commitment to improving its AI-driven services and maintaining competitiveness in the digital assistant market. Publishers stand to benefit from this arrangement through new revenue streams, while users can expect more comprehensive news coverage from Siri. Industry observers should watch for further developments in Apple's content acquisition strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/13/apple-in-talks-to-pay-publishers-to-provide-siri-with-current-news-report/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "Google's AI Ambitions Questioned Amid DeepMind Reorganization",
+            "title": "Google's AI Strategy Under Scrutiny Following DeepMind Shake-Up",
+            "content": "Google's recent reorganization of its AI division, Google DeepMind, has sparked industry debate over the company's commitment to leading in AI innovation. The restructuring has raised questions about Google's strategic priorities and its ability to compete with rivals in the rapidly evolving AI landscape. As the tech giant reassesses its AI focus, stakeholders are concerned about potential impacts on research and development efforts. This development highlights the challenges faced by major tech companies in balancing innovation with organizational changes. Industry professionals should consider the implications of Google's strategic shifts on the broader AI ecosystem.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/979370/google-deepmind-ai-race-lose-jeff-dean-demis-hassabis",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 12 2026",
+            "headline": "White House to Expand AI Policy—Open Models Considered",
+            "title": "U.S. Government Considers Open Models in AI Policy Expansion",
+            "content": "The White House is reportedly planning to expand its AI policy framework to include open models, reflecting a shift in regulatory approach. This potential inclusion aims to address the growing influence of open-source AI technologies and their impact on innovation and security. The move indicates the government's recognition of the need for comprehensive regulation that balances technological advancement with safety concerns. Industry stakeholders should prepare for possible regulatory changes that could affect the development and deployment of open-source AI models. This policy expansion underscores the ongoing efforts to establish a robust regulatory environment for AI technologies.",
+            "source": "WIRED",
+            "sourceUrl": "https://www.wired.com/story/the-white-house-is-going-to-expand-its-ai-policy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 14 2026",
+            "headline": "Apple Partners with Alibaba for China-Specific AI Model",
+            "title": "Apple Collaborates with Alibaba on AI Model for Chinese Market",
+            "content": "Apple has reportedly collaborated with Alibaba to develop a custom AI model tailored for the Chinese market, marking a rare partnership amid U.S.-China tensions. This large language model was specifically trained to cater to China's unique linguistic and cultural needs, showcasing Apple's strategic adaptation to regional markets. The partnership highlights the complexities of cross-border collaborations in the tech industry, particularly in AI development. As geopolitical tensions continue, this move underscores the importance of localized AI solutions for global tech companies. Industry professionals should consider the implications of such partnerships on international AI strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 13 2026",
+            "headline": "GPT-5.6 Sol Ultrafast Mode—14X Speed Boost Unveiled",
+            "title": "OpenAI Introduces Ultrafast Mode for GPT-5.6 Sol with Enhanced Speed",
+            "content": "OpenAI has announced the Ultrafast mode for its GPT-5.6 Sol, offering up to a 14-fold increase in processing speed. This new API service tier, powered by Cerebras, delivers up to 750 output tokens per second, significantly enhancing the efficiency of AI applications. The speed boost is expected to benefit developers by reducing latency and improving user experience in real-time applications. OpenAI's latest offering highlights its commitment to advancing AI performance and scalability. Developers are encouraged to explore the potential of Ultrafast mode to optimize their AI-driven solutions.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/previewing-ultrafast",
+            "relatedResources": []
+        },
         {
             "date": "Aug 13 2026",
             "headline": "Writer's New AI Model Cuts Token Costs—GLM-5.2 Enhanced",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google has unveiled Gemini 3.7 Flash, just three weeks after the release of its predecessor, Gemini 3.6 Flash. The new version boasts substantial improvements, underscoring Google's commitment to rapid innovation in AI technology. These enhancements are expected to provide users with more robust capabilities and improved performance. Organizations leveraging Google's AI solutions should evaluate the benefits of upgrading to Gemini 3.7 Flash to stay at the forefront of technological advancements. This swift iteration cycle highlights the competitive nature of the AI industry.",
             "source": "Ars Technica",
             "sourceUrl": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "Microsoft Merges Copilot Apps—Prepares for Unified Super App",
-            "title": "Microsoft Combines Consumer and Commercial Copilot Apps into One Interface",
-            "content": "Microsoft is consolidating its consumer and commercial Copilot AI assistants into a single \"super app\" interface, starting with the integration of Copilot and Microsoft 365 Copilot apps. This move aims to streamline user experience by allowing both personal and work accounts to operate within the new unified app, retaining the \"Microsoft Copilot\" branding. The integration is expected to enhance productivity by providing a seamless transition between personal and professional tasks. This development aligns with Microsoft's strategy to leverage AI for improved user engagement across its platforms. Users should anticipate updates to their existing Copilot applications as the transition progresses.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/979466/microsoft-copilot-365-app-unified-experience",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 13 2026",
-            "headline": "Claude's Invisible Watermark Flags AI-Edited Text",
-            "title": "Claude Introduces Invisible Watermark for AI-Processed Content",
-            "content": "Claude has unveiled a new invisible watermarking feature that flags any content processed by its AI, including human-written text that has been edited by the system. This watermark is currently undetectable to users, providing a subtle method of tracking AI involvement in content creation. The feature aims to address concerns about AI-generated content authenticity and accountability. While the watermark is invisible now, future updates may include detection tools for transparency. This development is part of a broader trend of implementing traceability in AI outputs to maintain trust and integrity in digital content.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Automattic's Mesh CRM Launches on Android",
-            "title": "Automattic Expands Mesh CRM Availability with Android App Launch",
-            "content": "Automattic has released an Android version of Mesh, its AI-powered contacts and relationship management app. Mesh aims to enhance user productivity by integrating AI to manage contacts and streamline communication. The app's Android launch follows its initial success on other platforms, broadening its accessibility to a wider user base. This expansion reflects the growing demand for AI-driven CRM solutions that offer personalized and efficient contact management. Users can now download Mesh from the Google Play Store to experience its advanced features on Android devices.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/12/mesh-automattics-crm-for-everyone-comes-to-android/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "AI Wearables Bet on Voice—Sandbar Leads Charge",
-            "title": "Sandbar Advocates Voice as Future of AI Wearables",
-            "content": "Sandbar, a leader in AI wearables, is championing voice-enabled technology as the future of AI-driven devices. The company believes that voice interaction will differentiate its products, such as AI rings, from other notetaking hardware like pendants and earbuds. This strategic focus on voice aims to enhance user interaction by providing a more natural and intuitive interface. As AI wearables gain popularity, Sandbar's approach could set a new standard in the market, emphasizing the importance of seamless user experiences in wearable technology.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Google Unveils Pixel 11, Pixel Watch 5, and Gemini Features",
-            "title": "Made by Google 2026 Event Showcases Pixel 11 and More",
-            "content": "At the Made by Google 2026 event, Google announced several new products, including the Pixel 11 series, Pixel Watch 5, and Pixel Tag. The Pixel 11 series introduces advanced camera features and AI capabilities, while the Pixel Watch 5 focuses on health and fitness tracking with deeper AI integration. Additionally, the Pixel Tag enters the market as a competitor to Apple's AirTag, offering enhanced location tracking. These announcements highlight Google's commitment to integrating AI across its product lines, enhancing user experience and functionality.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Google DeepMind Launches Sign Language AI Model",
-            "title": "Google DeepMind Introduces Sign Language-to-Text Model for Accessibility",
-            "content": "Google DeepMind has launched SL2T, a groundbreaking sign-language-to-text model designed to improve accessibility for Deaf and hard of hearing users. This model translates sign language into text, facilitating communication and enhancing user interaction with digital platforms. The introduction of SL2T marks a significant advancement in AI-driven accessibility tools, offering real-time translation and support for various sign languages. This initiative reflects Google's commitment to inclusivity and the use of AI to bridge communication gaps in diverse communities.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/putting-sign-language-ai-into-users-hands/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Pixel Watch 5 Enhances AI and Health Features",
-            "title": "Google Pixel Watch 5 Integrates AI for Health Monitoring",
-            "content": "Google's Pixel Watch 5, priced at $399, introduces enhanced AI capabilities focused on health monitoring. The watch features a new satin pyrite case, additional strap colors, and a special edition in collaboration with Steph Curry. Under the hood, it boasts a faster Qualcomm processor and improved battery life. With a $50 price increase from its predecessor, the Pixel Watch 5 emphasizes AI-driven health insights, positioning itself as a leader in the wearable tech market. Users can expect more personalized health tracking and fitness recommendations.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/978094/pixel-watch-5-hands-on-made-by-google-gemini-wearables-smartwatch",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "ChatGPT-Inspired Dog Cancer Vaccine Spurs Startup",
-            "title": "Gamgee Startup Launches Personalized mRNA Cancer Vaccines for Dogs",
-            "content": "Paul Conyngham, an Australian tech entrepreneur, has launched Gamgee, a startup offering personalized mRNA cancer vaccines for dogs. This venture was inspired by his previous use of ChatGPT and other AI tools to develop a cancer vaccine for his own pet. Gamgee aims to revolutionize veterinary medicine by providing tailored cancer treatments, leveraging AI to customize vaccines based on individual dog profiles. This innovative approach highlights the potential of AI in advancing personalized healthcare solutions beyond human applications.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/978671/ai-cured-dog-cancer-mrna-vaccine-startup-gamgee",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "Grok Bot Becomes AI Teammate for Task Automation",
-            "title": "SpaceXAI Introduces Grok Bot for Workplace Task Automation",
-            "content": "SpaceXAI has unveiled Grok Bot, an AI agent designed to function as an independent \"AI teammate\" capable of automating workplace tasks. This service allows the bot to access cloud-based environments, sign into apps, and complete multi-step tasks autonomously. Grok Bot aims to enhance productivity by reducing manual workload and streamlining operations. This development reflects a growing trend towards AI-driven automation in professional settings, offering businesses a tool to optimize efficiency and resource management.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/978666/spacexai-grok-bot-ai-agent-beta-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 12 2026",
-            "headline": "RingCentral Leverages AI for Enhanced Product Development",
-            "title": "RingCentral Utilizes ChatGPT Work and Codex for AI Innovation",
-            "content": "RingCentral is utilizing ChatGPT Work and Codex to accelerate AI product development and streamline operations across its engineering teams. By integrating these AI tools, RingCentral aims to enhance its product offerings and centralize operational intelligence, fostering innovation and efficiency. This strategic move underscores the importance of AI in driving technological advancements and maintaining competitive advantage in the communications industry. Organizations looking to optimize their development processes can consider similar AI integrations to boost productivity and innovation.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/ringcentral",
             "relatedResources": []
         }
     ],
