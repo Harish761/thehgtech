@@ -17,6 +17,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1634",
+      "incident_id": 1634,
+      "title": "Purportedly AI-Generated Video Reportedly Misled Elderly Malaysian Couple Into Traveling to Nonexist",
+      "date": "2026-08-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1635",
+      "incident_id": 1635,
+      "title": "ChatGPT Reportedly Gave Incorrect Mount Misen Ropeway Hours, Leaving Couple Stranded After Hike in J",
+      "date": "2026-08-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1636",
+      "incident_id": 1636,
+      "title": "Purportedly AI-Generated Travel Information Reportedly Misled Tourists into Seeking Nonexistent 'Sac",
+      "date": "2026-08-13",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1627",
       "incident_id": 1627,
       "title": "Claude Opus 4.7 Reportedly Compromised Real Company's Production Infrastructure During Cybersecurity",
@@ -2826,9 +2850,9 @@
     }
   ],
   "stats": {
-    "total": 353,
-    "last7Days": 10,
-    "last30Days": 53
+    "total": 356,
+    "last7Days": 13,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-08-14T02:25:27.928778+05:30"
+  "lastUpdated": "2026-08-14T08:07:56.113443+05:30"
 }
