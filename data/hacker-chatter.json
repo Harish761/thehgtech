@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-08-13T15:30:24.706307",
-  "total_incidents": 30343,
+  "last_updated": "2026-08-14T04:22:05.708500",
+  "total_incidents": 30349,
   "incidents": [
+    {
+      "id": "silentransomgroup_reminger",
+      "victim_name": "Reminger",
+      "threat_actor": "SilentRansomGroup",
+      "date_discovered": "2026-08-13T23:52:14.083934+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Reminger Attorneys at Law is a law firm with a strong presence in Ohio, Kentucky, and Indiana, operati…",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_https://pacific-construction.com/",
+      "victim_name": "https://pacific-construction.com/",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-08-13T23:27:04.890268+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "project data client data contract",
+      "screenshot": "https://images.ransomware.live/victims/f544aa005dcb842ed6d9f90a57e26f86.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a7e4ea49cd108bf269e158e",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_cambrialawfirm.com",
+      "victim_name": "cambrialawfirm.com",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-08-13T23:26:32.196914+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "personal and medical cards of all clients.",
+      "screenshot": "https://images.ransomware.live/victims/a14437ad351fd77ba734f0fc91ec5c44.png",
+      "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a7e49da9cd108bf269d76d0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "coinbasecartel_hitachi_high-tech",
+      "victim_name": "Hitachi High-Tech",
+      "threat_actor": "coinbasecartel",
+      "date_discovered": "2026-08-13T20:53:02.908968+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "[AI generated] Hitachi High-Tech is a Japanese technology company headquartered in Tokyo, Japan, and a subsidiary of Hitachi Ltd. It operates in the high-technology and precision equipment industry, specializing in semiconductor manufacturing equipment, analytical and medical instruments, and industrial systems. The company serves sectors including healthcare, electronics, and scientific research, supplying solutions globally across manufacturing and laboratory environments.",
+      "screenshot": "https://images.ransomware.live/victims/41e957bcbd127c37dd6f9603bd0dcbab.png",
+      "url": "http://fjg4zi4opkxkvdz7mvwp7h6goe4tcby3hhkrz43pht4j3vakhy75znyd.onion/companies/hitachi",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "rhysida_sia_medical_centre",
+      "victim_name": "SIA Medical Centre",
+      "threat_actor": "rhysida",
+      "date_discovered": "2026-08-13T17:57:28.008533+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "SIA Medical Centre SIA Medical was established in 1993 and was founded by Dr Martin Sia in Melbourne's northwest. 9 clinics - Box Hill, Burwood, Croydon, Essendon, Footscray, Moonee Ponds, Montrose, Mulgrave and Berwick.We are pleased to present:~20,000 patient medical records - names, dates of birth, Medicare numbers, clinical notes, insurance and work-cover files, full patient dossiersStaff identity documents - passports, driver's licenses, police checks, tax file declarations of doctors and employeesPlaintext credentials - logins and passwords for clinical systems (Synapse imaging, PRODA, terminal server, doctor accounts)HR records - signed employment contracts, staff incident reports, immunisation registersLegal & financial - subpoenas, complaints, Bupa contracts, bank details (BSB/ABN), provider payment forms    More",
+      "screenshot": "",
+      "url": "http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion/archive.php?company=258",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "dragonforce_gb_group_s.a",
       "victim_name": "GB Group S.A",
@@ -273,7 +333,7 @@
       "date_discovered": "2026-08-12T15:49:44.994282+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Project, Soft Total size: 89.8Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -285,7 +345,7 @@
       "date_discovered": "2026-08-12T15:49:11.014596+00:00",
       "industry": "Professional Services",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: PDF files, Cad-files, Soft Total size: 253Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -297,7 +357,7 @@
       "date_discovered": "2026-08-12T15:48:38.535233+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: DBF files, Cad-files, Project, Soft, Backups Total size: 241Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -309,7 +369,7 @@
       "date_discovered": "2026-08-12T15:48:04.530850+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project Total size: 13.2Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -321,7 +381,7 @@
       "date_discovered": "2026-08-12T15:47:31.046408+00:00",
       "industry": "Manufacturing",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project Total size: 501Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -333,7 +393,7 @@
       "date_discovered": "2026-08-12T15:46:56.947871+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] FluidLogic is a US-based technology company specializing in advanced fluid management systems. It develops innovative hydration and fluid delivery solutions, primarily used in sports, military, and outdoor applications. The company is known for engineering pressurized hydration systems that allow hands-free fluid delivery. Operating in the sporting goods and defense equipment industry, FluidLogic serves both consumer and government markets across the United States.",
+      "claim": "Data exfiltrated included the following: Database, Project,Cad-files Total size: 26.4Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -345,7 +405,7 @@
       "date_discovered": "2026-08-12T15:46:22.667628+00:00",
       "industry": "Manufacturing",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project Total size: 0.5Gb Revenue: $5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -357,7 +417,7 @@
       "date_discovered": "2026-08-12T15:45:49.948368+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects Total size: 40,7Gb Revenue: $1,700,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -369,7 +429,7 @@
       "date_discovered": "2026-08-12T15:45:17.291978+00:00",
       "industry": "Government & Defense",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects Total size: 319Gb Revenue: $1,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -381,7 +441,7 @@
       "date_discovered": "2026-08-12T15:44:44.817204+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects Total size: 1,84Gb Revenue: <$5,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -393,7 +453,7 @@
       "date_discovered": "2026-08-12T15:44:12.051181+00:00",
       "industry": "Transportation",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects, SQL Backups, Soft installers, Jpeg, Png, PDF - files Total size: 83Gb Revenue: $10,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -405,7 +465,7 @@
       "date_discovered": "2026-08-12T15:43:39.265972+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] LifeStraw is an American consumer goods company specializing in portable water filtration and purification products. Founded in Switzerland and now headquartered in the United States, it produces filters, straws, bottles, and pitchers designed to remove bacteria, parasites, and microplastics from water. The company serves outdoor enthusiasts, travelers, and humanitarian relief efforts globally, making safe drinking water accessible in both recreational and emergency contexts.",
+      "claim": "Data exfiltrated included the following: Database, Projects, Backups, Logs, Soft installers, PDF, TXT, XML - files Total size: 168Gb Revenue: $200,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -417,7 +477,7 @@
       "date_discovered": "2026-08-12T15:43:02.405958+00:00",
       "industry": "Not Found",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects Total size: 581Gb Revenue: $7,600,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -429,7 +489,7 @@
       "date_discovered": "2026-08-12T15:42:29.821078+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects, Backups Total size: 109Gb Revenue: $8,100,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -441,7 +501,7 @@
       "date_discovered": "2026-08-12T15:41:56.826997+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects, Soft installers Total size: 279Gb Revenue: $6,600,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -453,7 +513,7 @@
       "date_discovered": "2026-08-12T15:41:22.251890+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] Thermos.com is the official website of Thermos LLC, a well-known American consumer goods company specializing in insulated food and beverage containers. Operating in the housewares and outdoor products industry, the company sells vacuum-insulated bottles, lunch kits, and food jars. Originally founded in Germany in 1904, Thermos is now headquartered in the United States and serves global markets through retail and e-commerce channels.",
+      "claim": "Data exfiltrated included the following: Database, Projects, Soft installers Total size: 285Gb Revenue: $9,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -465,7 +525,7 @@
       "date_discovered": "2026-08-12T15:40:47.054980+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Projects, Project Backups, SQL Database Backup Total size: 382Gb Revenue: $5,800,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -477,7 +537,7 @@
       "date_discovered": "2026-08-12T15:40:14.041173+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] 9Altitudes is a Belgian technology consulting and software implementation company. It specializes in digital transformation services, offering expertise in Microsoft Dynamics 365, ERP, CRM, and cloud-based business solutions. The company serves industries such as manufacturing, retail, and professional services across Europe. Headquartered in Belgium, 9Altitudes helps organizations optimize business processes through technology strategy, implementation, and managed services.",
+      "claim": "Data exfiltrated included the following: Database, Projects, Project Backups, SQL Database Backup Total size: 382Gb Revenue: $15,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -489,7 +549,7 @@
       "date_discovered": "2026-08-12T15:39:39.050798+00:00",
       "industry": "Hospitality",
       "website": "",
-      "claim": "[AI generated] Intellihot is a US-based company specializing in commercial and residential tankless water heating solutions. Founded in Illinois, the company designs and manufactures smart, gas-fired tankless water heaters that use proprietary modular technology for energy efficiency and scalability. Intellihot serves hospitality, multifamily, and commercial sectors, emphasizing IoT connectivity and remote monitoring capabilities to optimize performance and reduce energy consumption.",
+      "claim": "Data exfiltrated included the following: Database, Projects, Backups, Soft installers, Updates, XML - files Total size: 271Gb Revenue: $27,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -501,7 +561,7 @@
       "date_discovered": "2026-08-12T15:39:02.229687+00:00",
       "industry": "Professional Services",
       "website": "",
-      "claim": "[AI generated] Intelligent Growth Solutions (IGS) is a UK-based agricultural technology company specializing in vertical farming. Founded in Scotland, IGS develops advanced indoor growing systems that use artificial lighting, automation, and data-driven controls to grow crops in stacked, controlled environments. Their technology targets food producers, research institutions, and commercial growers seeking sustainable, year-round crop production independent of climate conditions.",
+      "claim": "Data exfiltrated included the following: Database, Project, PDF, XLSX, XLS, DOCX - files Total size: 261Gb Revenue: $31,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -513,7 +573,7 @@
       "date_discovered": "2026-08-12T15:38:27.550155+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 1,588Gb Revenue: $470,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -525,7 +585,7 @@
       "date_discovered": "2026-08-12T15:37:54.784736+00:00",
       "industry": "Manufacturing",
       "website": "",
-      "claim": "[AI generated] Atomberg Technologies is an Indian consumer electronics company headquartered in Mumbai, India. It specializes in manufacturing energy-efficient smart home appliances, most notably BLDC motor-based ceiling fans that consume significantly less electricity than conventional fans. The company also produces other appliances like mixer grinders and water geysers. Founded in 2012, Atomberg targets the residential and commercial segments across India.",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 980Gb Revenue: $68,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -537,7 +597,7 @@
       "date_discovered": "2026-08-12T15:37:19.652831+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] Clover.com is a US-based financial technology company that provides point-of-sale systems and business management solutions primarily for small and medium-sized businesses. Operated under Fiserv, Clover offers hardware terminals, software, and payment processing services. Its platform supports inventory management, employee tracking, customer engagement, and sales analytics, making it a comprehensive commerce solution across the retail and hospitality industries.",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 651Gb Revenue: $400,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -549,7 +609,7 @@
       "date_discovered": "2026-08-12T15:36:39.783024+00:00",
       "industry": "Financial Services",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 75,4Gb Revenue: $400,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -561,7 +621,7 @@
       "date_discovered": "2026-08-12T15:36:06.084051+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 22,4Gb Revenue: $100,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -573,7 +633,7 @@
       "date_discovered": "2026-08-12T15:35:32.342395+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] Suunto is a Finnish company founded in 1936, headquartered in Vantaa, Finland. It specializes in designing and manufacturing sports watches, dive computers, and outdoor instruments. The brand is well known in the sports and adventure industry, offering precision equipment for activities such as hiking, diving, and trail running. Suunto operates globally, with its Chinese market presence reflected in the suunto.cn domain, serving consumers across Asia and worldwide.",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 1470Gb Revenue: $111,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -585,7 +645,7 @@
       "date_discovered": "2026-08-12T15:34:55.443492+00:00",
       "industry": "Education",
       "website": "",
-      "claim": "[AI generated] N/A\n\nThe identifier \"SMAPCENTER.UAH.EDU\" appears to be a subdomain associated with the University of Alabama in Huntsville (UAH), likely related to a specific research center or project. However, there is insufficient reliable information available to provide a factual and accurate description of this specific entity's scope, activities, or industry focus without risk of providing inaccurate details.",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 6,08Gb Revenue: $113,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -597,7 +657,7 @@
       "date_discovered": "2026-08-12T15:34:20.728244+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 1579,9Gb Revenue: $1,000,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -609,7 +669,7 @@
       "date_discovered": "2026-08-12T15:33:46.296931+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] Mamas & Papas is a British retailer specialising in baby and nursery products, including prams, pushchairs, car seats, furniture, clothing, and accessories for newborns and young children. Founded in 1981 and headquartered in Huddersfield, England, the company operates both physical stores and an e-commerce platform via mamasandpapas.com. It serves customers primarily in the United Kingdom and ships internationally, positioning itself as a premium brand in the mother and baby retail industry.",
+      "claim": "Data exfiltrated included the following: Database, Project - files Total size: 1,18Gb Revenue: $131,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -621,7 +681,7 @@
       "date_discovered": "2026-08-12T15:33:09.409945+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Database, Project, PDF, TXT, DOC - files Total size: 3684Gb Revenue: $269,800,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -633,7 +693,7 @@
       "date_discovered": "2026-08-12T15:32:34.013033+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] Mammut is a Swiss outdoor sports brand founded in 1862, headquartered in Seon, Switzerland. The company specializes in designing and manufacturing high-performance equipment, apparel, and footwear for mountaineering, climbing, skiing, and hiking. Known for its premium quality and innovation, Mammut serves professional athletes and outdoor enthusiasts worldwide, operating across retail stores and e-commerce channels globally.",
+      "claim": "Data exfiltrated included the following: .png files, files Windchil Total size: 136Gb Revenue: $281,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -645,7 +705,7 @@
       "date_discovered": "2026-08-12T15:32:00.293073+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] Partech is a global venture capital firm headquartered in Paris, France, with additional offices in San Francisco and Dakar. It invests in technology and digital companies across various stages, from seed to growth. Partech focuses on sectors including software, fintech, healthtech, and deeptech, supporting startups in Europe, Africa, and North America with funding, strategic guidance, and operational expertise.",
+      "claim": "Data exfiltrated included the following: Database, Project, Cad-files, Backups Total size: 24Gb Revenue: $475,700,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -657,7 +717,7 @@
       "date_discovered": "2026-08-12T15:31:24.339190+00:00",
       "industry": "Healthcare",
       "website": "",
-      "claim": "[AI generated] Starkey is a leading American hearing technology company headquartered in Eden Prairie, Minnesota, USA. Founded in 1967, it designs, manufactures, and distributes hearing aids and related hearing health solutions. Starkey is one of the few remaining privately held hearing aid manufacturers in the world and is known for innovation in smart hearing technology, including AI-powered and health-monitoring hearing devices.",
+      "claim": "Data exfiltrated included the following: Database, Project Total size: 3030Gb Revenue: $939,200,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -669,7 +729,7 @@
       "date_discovered": "2026-08-12T15:30:49.179797+00:00",
       "industry": "Manufacturing",
       "website": "",
-      "claim": "[AI generated] Largan Precision Co., Ltd., operating under largan.com.tw, is a Taiwanese company headquartered in Taichung, Taiwan. It is a leading manufacturer of optical lenses, primarily supplying high-precision glass and plastic lens modules for smartphone cameras. The company serves major global clients including Apple. It operates within the optical components and consumer electronics supply chain industry, making it a critical player in the global mobile device manufacturing ecosystem.",
+      "claim": "Data exfiltrated included the following: Project, Soft Total size: 56Gb Revenue: $1,700,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -681,7 +741,7 @@
       "date_discovered": "2026-08-12T15:30:13.513909+00:00",
       "industry": "Hospitality",
       "website": "",
-      "claim": "[AI generated] ToastTab.com is the online platform for Toast, Inc., a US-based restaurant technology company headquartered in Boston, Massachusetts. Toast provides cloud-based point-of-sale software, payment processing, and restaurant management solutions tailored for the food service industry. Its platform supports ordering, payroll, inventory, and customer engagement tools, serving restaurants of all sizes across the United States and internationally.",
+      "claim": "Data exfiltrated included the following: project, backup database, logs Total size: 215Gb Revenue: $6,400,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -693,7 +753,7 @@
       "date_discovered": "2026-08-12T15:29:38.218195+00:00",
       "industry": "Not Found",
       "website": "",
-      "claim": "[AI generated] IRCO.COM appears to be associated with the Industrial Rubber Company (IRCO), a U.S.-based manufacturer and distributor specializing in industrial rubber products, seals, gaskets, hoses, and related components. The company serves sectors such as manufacturing, oil and gas, and construction. Operating primarily in the United States, it supplies both standard and custom rubber solutions to industrial clients across various markets.",
+      "claim": "Data exfiltrated included the following: Cad-files, PDF drawings, diagrams, product presentations, specifications, manuals and instructions Total size: 5564Gb Revenue: $7,800,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -705,7 +765,7 @@
       "date_discovered": "2026-08-12T15:29:01.695226+00:00",
       "industry": "Retail & E-Commerce",
       "website": "",
-      "claim": "[AI generated] ALDO Group is a Canadian footwear and accessories retailer headquartered in Montreal, Quebec. Founded in 1972 by Aldo Bensadoun, the company designs, manufactures, and sells shoes, boots, handbags, and accessories through its ALDO and Call It Spring brands. Operating thousands of stores worldwide across over 100 countries, it serves both wholesale and direct retail markets targeting fashion-conscious consumers globally.",
+      "claim": "Data exfiltrated included the following: TSV files, soft, Projects, Cad-files Total size: 424Gb Revenue: $14,800,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -717,7 +777,7 @@
       "date_discovered": "2026-08-12T15:28:25.738829+00:00",
       "industry": "Healthcare",
       "website": "",
-      "claim": "[AI generated] Philips is a Dutch multinational technology company headquartered in Amsterdam, Netherlands. It operates primarily in the health technology sector, developing medical diagnostic imaging systems, patient monitoring equipment, and personal health products. Formerly a major consumer electronics brand, Philips shifted focus to healthcare innovation. It serves hospitals, clinicians, and consumers worldwide, with operations spanning over 100 countries.",
+      "claim": "Data exfiltrated included the following: PDF drawings, diagrams, blueprints Total size: 13.5Gb Revenue: $20,700,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -729,7 +789,7 @@
       "date_discovered": "2026-08-12T15:27:48.355315+00:00",
       "industry": "Financial Services",
       "website": "",
-      "claim": "[AI generated] Fiserv is a leading American financial technology company headquartered in Milwaukee, Wisconsin. It provides payment processing, banking software, and financial services technology to banks, credit unions, merchants, and other financial institutions worldwide. Its services include core banking systems, digital payments, card processing, and data analytics. Fiserv operates globally and is listed on the NASDAQ stock exchange.",
+      "claim": "Data exfiltrated included the following: Projects, Cad-files, files Windchil, Soft Total size: 874Gb Revenue: $21,200,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -741,7 +801,7 @@
       "date_discovered": "2026-08-12T15:27:14.087581+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] General Electric (GE) is a American multinational conglomerate headquartered in Cincinnati, Ohio, USA. Operating across multiple industries, GE focuses on aviation, healthcare, and energy sectors. The company manufactures jet engines, medical imaging equipment, and power generation technologies. GE has undergone significant restructuring in recent years, spinning off several business units to sharpen its focus on industrial operations globally.",
+      "claim": "Data exfiltrated included the following: Software backups, system files, projects Total size: 391Gb Revenue: $113,000,000,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
       "source": "Ransomware.live OSINT API"
@@ -753,9 +813,21 @@
       "date_discovered": "2026-08-12T15:26:40.188177+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "[AI generated] N/A",
+      "claim": "Data exfiltrated included the following: Projects, Cad-files, Backup files Windchil Total size: 230Gb Revenue: $370,900,000",
       "screenshot": "https://images.ransomware.live/victims/6102061631e2489ca2c213c1c254aba3.png",
       "url": "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "clop_shell.com_(august_2026)",
+      "victim_name": "SHELL.COM (August 2026)",
+      "threat_actor": "clop",
+      "date_discovered": "2026-08-12T15:26:06+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "Data exfiltrated included the following: Engineering drawings, photos of the facilities, scans of facility testing reports, project plans Total size: 89Gb Revenue: $2,673,000,000,000",
+      "screenshot": "",
+      "url": "",
       "source": "Ransomware.live OSINT API"
     },
     {
