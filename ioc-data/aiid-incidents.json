@@ -3,7 +3,7 @@
     {
       "id": "AIID-1637",
       "incident_id": 1637,
-      "title": "Hank Green Used AI-Generated Scientific Image Containing Errors in Educational Video",
+      "title": "Hank Green Reportedly Used AI-Generated Scientific Image Containing Errors in Educational Video",
       "date": "2026-08-15",
       "category": "other",
       "severity": "medium"
@@ -15,6 +15,30 @@
       "date": "2026-08-15",
       "category": "fraud",
       "severity": "critical"
+    },
+    {
+      "id": "AIID-1639",
+      "incident_id": 1639,
+      "title": "Turkish National Reportedly Posted AI-Generated Image Depicting Himself with Eric Trump While Promot",
+      "date": "2026-08-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1640",
+      "incident_id": 1640,
+      "title": "Istanbul Fraud Network Reportedly Used AI-Assisted Call Center Software to Impersonate Officials and",
+      "date": "2026-08-15",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1641",
+      "incident_id": 1641,
+      "title": "Rep. Anna Paulina Luna's Office Accidentally Published Claude Transcript Residue in House Amendment ",
+      "date": "2026-08-15",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-1632",
@@ -2866,9 +2890,9 @@
     }
   ],
   "stats": {
-    "total": 358,
-    "last7Days": 12,
-    "last30Days": 53
+    "total": 361,
+    "last7Days": 15,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-08-15T18:24:48.016305+05:30"
+  "lastUpdated": "2026-08-15T22:05:54.012851+05:30"
 }
