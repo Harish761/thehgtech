@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1637",
+      "incident_id": 1637,
+      "title": "Hank Green Used AI-Generated Scientific Image Containing Errors in Educational Video",
+      "date": "2026-08-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1638",
+      "incident_id": 1638,
+      "title": "Suspects Reportedly Used AI-Generated Videos to Defraud 33 People of Approximately 15 Million Lira i",
+      "date": "2026-08-15",
+      "category": "fraud",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1632",
       "incident_id": 1632,
       "title": "Yale Student Suspended and Given F After GPTZero Allegedly Misclassified Exam as AI-Generated",
@@ -2850,9 +2866,9 @@
     }
   ],
   "stats": {
-    "total": 356,
-    "last7Days": 10,
-    "last30Days": 51
+    "total": 358,
+    "last7Days": 12,
+    "last30Days": 53
   },
-  "lastUpdated": "2026-08-15T14:09:58.373731+05:30"
+  "lastUpdated": "2026-08-15T18:24:48.016305+05:30"
 }
