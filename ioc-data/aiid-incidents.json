@@ -11,7 +11,7 @@
     {
       "id": "AIID-1638",
       "incident_id": 1638,
-      "title": "Suspects Reportedly Used AI-Generated Videos to Defraud 33 People of Approximately 15 Million Lira i",
+      "title": "Suspects Alleged to Have Used Purportedly AI-Generated Videos to Defraud 33 People of Approximately ",
       "date": "2026-08-15",
       "category": "fraud",
       "severity": "critical"
@@ -19,7 +19,7 @@
     {
       "id": "AIID-1639",
       "incident_id": 1639,
-      "title": "Turkish National Reportedly Posted AI-Generated Image Depicting Himself with Eric Trump While Promot",
+      "title": "Turkish National Reportedly Posted a Purportedly AI-Generated Image Depicting Himself with Eric Trum",
       "date": "2026-08-15",
       "category": "other",
       "severity": "medium"
@@ -35,7 +35,23 @@
     {
       "id": "AIID-1641",
       "incident_id": 1641,
-      "title": "Rep. Anna Paulina Luna's Office Accidentally Published Claude Transcript Residue in House Amendment ",
+      "title": "Rep. Anna Paulina Luna's Office Reportedly Published Claude Transcript Residue on Accident in House ",
+      "date": "2026-08-15",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1642",
+      "incident_id": 1642,
+      "title": "AI Agent Powered by Claude Opus 4.6 Reportedly Exploited Gym Booking API and Removed Another Member ",
+      "date": "2026-08-15",
+      "category": "other",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1643",
+      "incident_id": 1643,
+      "title": "Wyoming Woman's Childhood Photograph Reportedly Used to Generate Thousands of Explicit Images with G",
       "date": "2026-08-15",
       "category": "other",
       "severity": "medium"
@@ -2890,9 +2906,9 @@
     }
   ],
   "stats": {
-    "total": 361,
-    "last7Days": 15,
-    "last30Days": 56
+    "total": 363,
+    "last7Days": 12,
+    "last30Days": 54
   },
-  "lastUpdated": "2026-08-15T22:05:54.012851+05:30"
+  "lastUpdated": "2026-08-16T00:27:08.729180+05:30"
 }
