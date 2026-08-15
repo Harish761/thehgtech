@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-08-15T03:11:47.320611",
-  "total_incidents": 30396,
+  "last_updated": "2026-08-15T14:48:06.250162",
+  "total_incidents": 30400,
   "incidents": [
+    {
+      "id": "blackwater_www.amca.org.ar",
+      "victim_name": "www.amca.org.ar",
+      "threat_actor": "blackwater",
+      "date_discovered": "2026-08-15T09:23:53.349188+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "system breach, data blocking",
+      "screenshot": "https://images.ransomware.live/victims/96eb000a84aae57f921655abf7cf0678.png",
+      "url": "http://ejzl7cjxmkx7lzhiqwidmrwtfjv45pkczbc4fnyaut3t7gll3yaiq5id.onion/blog?uuid=b4bdc6d3-3c1e-349b-821f-543ab3a4c7fa",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "blackwater_www.shalina.com",
+      "victim_name": "www.shalina.com",
+      "threat_actor": "blackwater",
+      "date_discovered": "2026-08-15T09:23:19.928820+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "system breach, data blocking",
+      "screenshot": "https://images.ransomware.live/victims/e0e227ff507591f8d614ec9e439cd28d.png",
+      "url": "http://ejzl7cjxmkx7lzhiqwidmrwtfjv45pkczbc4fnyaut3t7gll3yaiq5id.onion/blog?uuid=67ef1aa3-bfe3-35fa-8712-c3b6977bc7be",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_interim_healthcare",
+      "victim_name": "Interim HealthCare",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-08-15T04:22:13.780378+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Home Healthcare Agency & Medical Staffing.",
+      "screenshot": "https://images.ransomware.live/victims/197e3e775b98ceda840b85d622690a66.png",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/xjzBCfUkCOzKIJhTh9nwY7NPbaLxJGgene7s3HohBcLhET3VwjRQ5Za64O19nnRB2nOWIYc0F5Y5ccdhMpg7XJLRVdOcTdh",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "panzer_alpine_electronics_europe",
+      "victim_name": "Alpine Electronics Europe",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-08-15T00:21:25.972931+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Alpine Electronics Europe specializes in the distribution of automotive electronics and audio products. The company offers a range of products and support services tailored for various European markets. Their intended clients include automotive manufacturers and consumers seeking high-quality audio solutions. Alpine is committed to providing innovative technology and exceptional customer service across multiple countries in Europe.",
+      "screenshot": "https://images.ransomware.live/victims/111f31ade4fa6b2cfa6bfbd748a26a24.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/alpine-electronics-europe",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_ferrari_mangimi_srl",
       "victim_name": "FERRARI MANGIMI SRL",
