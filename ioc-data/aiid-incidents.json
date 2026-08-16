@@ -2343,92 +2343,12 @@
       "date": "2026-05-20",
       "category": "bias",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-158",
-      "incident_id": 158,
-      "title": "Remote Proctoring Facial-Detection Software Reportedly Failed to Detect Black Student During Lab Qui",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-482",
-      "incident_id": 482,
-      "title": "Vanderbilt Peabody Office's Purportedly ChatGPT-Drafted Message About Michigan State Shooting Report",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-887",
-      "incident_id": 887,
-      "title": "Students of Richland School District in Cambria County, Pennsylvania Allegedly Used AI to Generate O",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-888",
-      "incident_id": 888,
-      "title": "Sydney High Schooler Allegedly Generated Deepfakes of Other Students",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-891",
-      "incident_id": 891,
-      "title": "Purported AI Voice Scam Reportedly Targets Westchester Parents with Fake Kidnapping Ransom Calls",
-      "date": "2026-05-18",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-899",
-      "incident_id": 899,
-      "title": "Character.ai Chatbots Allegedly Emulating School Shooters and Their Victims",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-943",
-      "incident_id": 943,
-      "title": "Nonconsensual Explicit AI-Generated Images of Up to 60 Gladstone Park Secondary College Students in ",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-945",
-      "incident_id": 945,
-      "title": "Two 16-Year-Old Students in Athens, Greece Allegedly Generated Nonconsensual Deepfake Pornography of",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-947",
-      "incident_id": 947,
-      "title": "Two Members of Highline Public Schools Community in King County, Washington Reportedly Targeted in D",
-      "date": "2026-05-18",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-990",
-      "incident_id": 990,
-      "title": "Corinth School District Educator in Mississippi Allegedly Used AI to Generate CSAM of Students",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 303,
+    "total": 293,
     "last7Days": 12,
     "last30Days": 54
   },
-  "lastUpdated": "2026-08-16T14:11:01.680097+05:30"
+  "lastUpdated": "2026-08-16T18:26:26.672317+05:30"
 }
