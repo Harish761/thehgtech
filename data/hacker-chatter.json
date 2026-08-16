@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-08-16T03:26:25.493665",
-  "total_incidents": 30411,
+  "last_updated": "2026-08-16T14:48:08.462273",
+  "total_incidents": 30418,
   "incidents": [
+    {
+      "id": "qilin_jone_précision",
+      "victim_name": "Jone Précision",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:32:36.197046+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/fe4cecf65a95d427e55b8e099e12ba21.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=40c19069-fd91-4f43-846b-71806c93607a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_arnall_golden_gregory",
+      "victim_name": "Arnall Golden Gregory",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:31:57.355251+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/272b376a527ded665959d6adf3f2f910.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=d9559304-65e3-4e4a-bd09-1458a353040a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_ascii_group",
+      "victim_name": "ASCII Group",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:31:19.397288+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/8113bfee050c9d1b3fe8926895688b8a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=ed7ed937-727c-4371-9d4d-4502c16433b2",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_delta_ways",
+      "victim_name": "DELTA WAYS",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:30:40.960671+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/c42fb224025c0511abd3edd0fae25ffa.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=36fd56c5-beb5-4603-a83d-e57f7033a1c5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_motorenmaier_gmbh",
+      "victim_name": "motorenmaier gmbh",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:30:02.880941+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/70cc112c9a6dbf440992e2433ad814e4.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=177d0f71-0d17-4b81-965c-1258d7575d1d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_double_h_equipment",
+      "victim_name": "Double H Equipment",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-16T09:29:25.291282+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6c7a873d222989690a330a2baac5de00.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=e7cab978-cf1e-42fe-9f4d-4a920708b9db",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "orova_smartsoft",
+      "victim_name": "Smartsoft",
+      "threat_actor": "Orova",
+      "date_discovered": "2026-08-16T08:52:41.066960+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Say goodbye to cumbersome and difficult-to-maintain traditional architectures and regain control of your processes. Redefine enterprise standards with the high performance and low-code platform of .NET 8.",
+      "screenshot": "https://images.ransomware.live/victims/cbeba2db2ec2cce0a42fcfd17e1f6b8c.png",
+      "url": "http://mzlajyncb2rafn5bsb7esmo73kyawjxeirunba27n6nermmafzlcp4qd.onion/omtxosclqflpiwyoei/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "xpl0itrs_oz_hair_&_beauty",
       "victim_name": "Oz Hair & Beauty",
