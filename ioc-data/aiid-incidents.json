@@ -2345,38 +2345,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-9",
-      "incident_id": 9,
-      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-96",
-      "incident_id": 96,
-      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-140",
-      "incident_id": 140,
-      "title": "University of Toronto's ProctorU Deployment Reportedly Disadvantaged BIPOC Students During Exam Chec",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-138",
-      "incident_id": 138,
-      "title": "University of Illinois' Proctorio Remote-Proctoring Deployment Reportedly Raised Student Rights Conc",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-158",
       "incident_id": 158,
       "title": "Remote Proctoring Facial-Detection Software Reportedly Failed to Detect Black Student During Lab Qui",
@@ -2391,22 +2359,6 @@
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-538",
-      "incident_id": 538,
-      "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-793",
-      "incident_id": 793,
-      "title": "AllHere's Chatbot 'Ed' Fails and Costs Los Angeles Unified School District $6 Million",
-      "date": "2026-05-18",
-      "category": "other",
-      "severity": "critical"
     },
     {
       "id": "AIID-887",
@@ -2471,20 +2423,12 @@
       "date": "2026-05-18",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1038",
-      "incident_id": 1038,
-      "title": "Scammers Reportedly Use AI Tools to Impersonate Students and Obtain Federal Aid",
-      "date": "2026-05-18",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 310,
+    "total": 303,
     "last7Days": 12,
     "last30Days": 54
   },
-  "lastUpdated": "2026-08-16T07:23:24.750107+05:30"
+  "lastUpdated": "2026-08-16T10:15:00.774915+05:30"
 }
