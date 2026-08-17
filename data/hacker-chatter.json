@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-08-17T03:27:14.236801",
-  "total_incidents": 30445,
+  "last_updated": "2026-08-17T14:53:22.766459",
+  "total_incidents": 30449,
   "incidents": [
+    {
+      "id": "aurora_lloyd_coils_europe",
+      "victim_name": "Lloyd Coils Europe",
+      "threat_actor": "aurora",
+      "date_discovered": "2026-08-17T09:52:52.602860+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "[manufacturer] 4 Coils Technology s.r.o. (trading as Lloyd Coils Europe) is a Czech-headquartered manufacturer of custom heat exchangers for the HVAC&R industry, with offices in Germany, France, and the United Kingdom. They serve 200+ OEM customers across 39 countries — names like Carrier, Daikin, Trane, Systemair, Remak, GEA, Swegon, and VTS.\n\nTheir competitive advantage comes from two things: decades of thermodynamic engineering expertise embodied in their MyCoil selection software (licensed to OEM customers worldwide), and a manufacturing capability for custom heat exchangers. Approximately 200 employees work across four countries.",
+      "screenshot": "https://images.ransomware.live/victims/78c9529deea0a5cffdb86d3ec8601903.png",
+      "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/lloyd-coils-europe-344e7910",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_vermont_xcenter",
+      "victim_name": "Vermont XCenter",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-08-17T09:24:54.771469+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "A Vermont coloca seus clientes estrategicamente no Centro das Decisões, pois entende que o cliente deve estar no Centro das Atenções. Com isso estabelecido, a companhia acredita que é mais simples interpretar o mercado a partir dos desejos e perspectivas do mesmo. Vermont XCenter: Centro de interAções modernas que promovem experiências em relacionamento. Soluções de Contact Center que contam com um avanço tecnológico do atendimento e que se adaptam às necessidades de um consumidor cada vez mais exigente e conectado; Soluções de Tecnologia: Pensada por meio de um portfólio que vai desde fábrica de software, mapeamento e modelagem dos processos de negócios (BPM) até Service e Help Desk. Com Skills técnicos e avançadas linguagens de programação.",
+      "screenshot": "https://images.ransomware.live/victims/ad7f20eba43b2ee45c5cbb9828acc2f1.png",
+      "url": "http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/blog/?post_uuid=50670edf-f2a0-45b3-ae78-bfbc7f5e951d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "bravox_moores",
+      "victim_name": "Moores",
+      "threat_actor": "bravox",
+      "date_discovered": "2026-08-17T03:22:23.204673+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Kitchen solutions provider for housing developers.",
+      "screenshot": "https://images.ransomware.live/victims/a1d581e46933e66633a1bb54810dd96e.png",
+      "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/c24b4cd2-897f-403d-ade7-57251f96c6d9",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_albania's_official_national_teacher_training_portal",
+      "victim_name": "Albania's Official National Teacher Training Portal",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-08-17T02:20:41.274217+00:00",
+      "industry": "Education",
+      "website": "",
+      "claim": "Albania’s official national teacher training portal provides centralized professional development resources and accredited programs for educators nationwide.\n\nThis leak include data such as;\nRoughly ~100k Full national ID numbers, full names and teacher certificates in PDF. [Size: 5.9 GB | Sector: Education, Government]",
+      "screenshot": "",
+      "url": "/post/albanias-official-national-teacher-training-portal/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "emperador_albania's_official_national_teacher_training_portal.",
       "victim_name": "Albania's official national teacher training portal.",
