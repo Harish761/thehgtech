@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1645",
+      "incident_id": 1645,
+      "title": "3M-Retained Expert Reportedly Submitted Largely ChatGPT-Generated Analysis Seeking to Exonerate 3M a",
+      "date": "2026-08-18",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1637",
       "incident_id": 1637,
       "title": "Hank Green Reportedly Used AI-Generated Scientific Image Containing Errors in Educational Video",
@@ -2354,9 +2362,9 @@
     }
   ],
   "stats": {
-    "total": 294,
-    "last7Days": 13,
-    "last30Days": 55
+    "total": 295,
+    "last7Days": 14,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-08-18T22:13:49.298413+05:30"
+  "lastUpdated": "2026-08-19T00:37:45.941288+05:30"
 }
