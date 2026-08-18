@@ -17,6 +17,22 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1646",
+      "incident_id": 1646,
+      "title": "Suspected China-Linked Hackers Reportedly Used AI Agents to Compromise Taiwanese Government Systems ",
+      "date": "2026-08-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1647",
+      "incident_id": 1647,
+      "title": "AI-Generated Voice Mimicking Taiwan President Lai Ching-te Reportedly Used in Political Video Critic",
+      "date": "2026-08-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1637",
       "incident_id": 1637,
       "title": "Hank Green Reportedly Used AI-Generated Scientific Image Containing Errors in Educational Video",
@@ -2362,9 +2378,9 @@
     }
   ],
   "stats": {
-    "total": 295,
-    "last7Days": 14,
-    "last30Days": 56
+    "total": 297,
+    "last7Days": 16,
+    "last30Days": 58
   },
-  "lastUpdated": "2026-08-19T00:37:45.941288+05:30"
+  "lastUpdated": "2026-08-19T02:04:26.687224+05:30"
 }
