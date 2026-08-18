@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1644",
+      "incident_id": 1644,
+      "title": "DuckDuckGo Search Assist Reportedly Falsely Claimed Donald Trump and JD Vance Died of Rabies",
+      "date": "2026-08-18",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1637",
       "incident_id": 1637,
       "title": "Hank Green Reportedly Used AI-Generated Scientific Image Containing Errors in Educational Video",
@@ -2346,9 +2354,9 @@
     }
   ],
   "stats": {
-    "total": 293,
-    "last7Days": 12,
-    "last30Days": 54
+    "total": 294,
+    "last7Days": 13,
+    "last30Days": 55
   },
-  "lastUpdated": "2026-08-18T18:32:44.824183+05:30"
+  "lastUpdated": "2026-08-18T22:13:49.298413+05:30"
 }
