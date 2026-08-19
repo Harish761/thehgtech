@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Aug 19 2026",
+            "headline": "Cl0p Ransomware Hits 40+ Firms—Shell, Philips Named",
+            "title": "Cl0p Ransomware Group Lists Over 40 Victims in PTC Windchill Campaign",
+            "content": "The Cl0p ransomware group has publicly named over 40 companies as victims of their recent campaign targeting PTC Windchill systems. Notable companies affected include Shell, Philips, Fiserv, Zebra, Mindray, and Largan Precision. The attack exploited vulnerabilities in the PTC Windchill platform, which is widely used for product lifecycle management. This breach underscores the increasing threat posed by ransomware groups targeting enterprise software systems. Organizations using PTC Windchill are urged to review their security measures and apply any available patches to mitigate potential risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cl0p-ransomware-group-names-over-40-victims-of-ptc-windchill-campaign/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "CISA Flags 4 Critical Flaws—Exploitations in Progress",
+            "title": "CISA Adds Critical macOS, SharePoint, vCenter, Microsoft IKE Flaws to KEV",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added four critical vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, highlighting their active exploitation. The vulnerabilities include issues in macOS, SharePoint, vCenter, and Microsoft IKE, with CVE-2026-65400 being one of the notable entries. These flaws allow for remote code execution and unauthorized access, posing significant risks to affected systems. Organizations using these platforms should prioritize patching to protect against potential attacks. CISA's update reflects an ongoing trend of critical vulnerabilities being exploited soon after discovery.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "CareCloud Breach Expands—3.7 Million Affected",
+            "title": "CareCloud Data Breach Impact Grows to 3.7 Million Individuals",
+            "content": "The CareCloud data breach, initially thought to affect 350,000 individuals, now impacts 3.7 million people, according to the U.S. Department of Health and Human Services breach tracker. The breach involved unauthorized access to sensitive personal and health information. This significant increase in affected individuals highlights the growing scale and impact of data breaches in the healthcare sector. Organizations are advised to enhance their data protection measures and ensure compliance with health data regulations to prevent similar incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/carecloud-data-breach-impact-grows-to-3-7-million-individuals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Clop's Windchill Shell Maps Engineering Data",
+            "title": "Clop-Linked Windchill Web Shell Decrypts Credentials and Maps Engineering Data",
+            "content": "ReliaQuest has discovered a JavaServer Pages (JSP) web shell used by the Clop ransomware group to exploit vulnerabilities in PTC Windchill and FlexPLM servers. This web shell is designed to decrypt credentials and map engineering data, posing a significant threat to organizations relying on these enterprise Product Lifecycle Management (PLM) systems. The attack highlights the sophistication of modern ransomware operations targeting critical business infrastructure. Companies using these systems should conduct thorough security assessments and apply necessary patches to safeguard their data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/clop-linked-windchill-web-shell.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "GitLab GraphQL Flaw—Public Projects at Risk",
+            "title": "Critical GitLab GraphQL Flaw Could Let Attackers Delete Public Projects",
+            "content": "GitLab has issued security updates to address a critical vulnerability in its Community Edition (CE) and Enterprise Edition (EE) software. The flaw, tracked as CVE-2026-12345, could allow unauthenticated attackers to delete public projects and user data under certain conditions. This vulnerability affects GitLab versions prior to 15.0.0 and underscores the importance of securing open-source development platforms. Users are urged to update to the latest GitLab version to protect their projects from potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/critical-gitlab-graphql-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "AI Exploits Snowflake Flaw—GitHub Copilot Misses It",
+            "title": "Snowflake Flaw Slips Past AI Checks, Exploited by Another AI",
+            "content": "An AI security agent from cloud security firm Wiz has identified and exploited a critical vulnerability in Snowflake's GitHub Actions pipeline. This flaw, which was overlooked by GitHub Copilot during code review, highlights the challenges of relying solely on AI for security assessments. The vulnerability was part of a pull request and demonstrates the need for human oversight in AI-driven security processes. Organizations using AI tools for code review should implement additional verification steps to ensure comprehensive security coverage.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Chrome Update Fixes 2 Critical Buffer Overflows",
+            "title": "Update Chrome Now: Two Critical Vulnerabilities Fixed",
+            "content": "Google has released an update for its Chrome browser, addressing 15 security vulnerabilities, including two critical buffer overflow flaws. These vulnerabilities could allow attackers to execute arbitrary code on affected systems. Users running Chrome on desktop platforms should update to the latest version immediately to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from emerging threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/08/update-chrome-now-two-critical-vulnerabilities-fixed",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Microsoft Patches Copilot Flaw After 8 Months",
+            "title": "Microsoft Finally Patches Critical One-Click Copilot Vulnerability",
+            "content": "Microsoft has issued a patch for a critical vulnerability in its AI assistant, Copilot, nearly eight months after it was first identified. The flaw, known as the CoSnitch hole, exploited the AI's inability to distinguish data in a query from an instruction, posing a significant security risk. This delay in patching raises concerns about the responsiveness of tech giants in addressing AI vulnerabilities. Users of the personal version of Copilot are advised to apply the update immediately to mitigate potential risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "US Charges 17 Iranian Hackers—$10M Reward Offered",
+            "title": "US Charges 17 Iranian Hackers, Offers $10 Million Rewards for 5",
+            "content": "The U.S. Department of Justice has charged 17 members of the Mabna Institute, an Iranian hacking group, for targeting hundreds of universities and organizations worldwide. The U.S. government is offering rewards of up to $10 million for information leading to the capture of five of these individuals. This move underscores the ongoing international efforts to combat state-sponsored cybercrime. Organizations are encouraged to strengthen their cybersecurity defenses to protect against similar threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-charges-17-iranian-hackers-offers-10-million-rewards-for-5-of-them/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "StopAndProtect Uses 2,000 WordPress Sites for Malware",
+            "title": "StopAndProtect Uses Nearly 2,000 Hacked WordPress Sites to Spread Malware",
+            "content": "Cybersecurity researchers have uncovered a global cybercrime operation, StopAndProtect, which exploits nearly 2,000 hacked WordPress sites to distribute malware. These compromised sites serve as infrastructure for malware dissemination, data theft, and tracking of infected hosts. The operation highlights the vulnerabilities of popular content management systems like WordPress in the face of sophisticated cyber threats. Website administrators are advised to regularly update their WordPress installations and plugins to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+            "relatedResources": []
+        },
+        {
             "date": "Aug 18 2026",
             "headline": "MLflow SSRF Flaw—Cloud Credentials at Risk",
             "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/dozens-of-webkit-vulnerabilities-patched-with-fresh-macos-ios-security-updates/",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Salesforce, ServiceNow Data Scraped—City Forum Campaign Exposed",
-            "title": "City Forum Campaign Scrapes Salesforce and ServiceNow Portals for Over a Year",
-            "content": "A sophisticated cyber campaign, dubbed City Forum, has been extracting data from Salesforce and ServiceNow customer portals across various industries since 2025. Security researchers from Reco identified a single infrastructure source responsible for the unauthorized data pulls. This campaign highlights the vulnerabilities in customer relationship management (CRM) systems, potentially affecting thousands of businesses relying on these platforms for sensitive data management. Organizations using Salesforce and ServiceNow should review their access controls and monitor for unusual data access patterns. This incident underscores the importance of securing third-party integrations and vigilant monitoring of CRM systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "RubyGems Typosquatting—16 Packages Steal Credentials, Crypto Wallets",
-            "title": "Typosquatting Campaign Targets RubyGems Users with StubMaker Malware",
-            "content": "A new typosquatting campaign has been detected targeting RubyGems users, deploying a Windows-based information stealer known as StubMaker. Discovered by OpenSourceMalware, this campaign involves 16 malicious packages designed to exfiltrate browser credentials and cryptocurrency wallet information. The attack exploits common misspellings of popular RubyGems packages, tricking developers into downloading compromised versions. Users are advised to verify package names carefully and monitor for unusual activity on systems using these packages. This incident highlights the ongoing threat of supply chain attacks in open-source ecosystems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "300K WordPress Sites at Risk—Form Plugin Flaw Exploited",
-            "title": "WordPress Form Plugin Vulnerability Exposes 300,000 Sites to Hacking",
-            "content": "A critical vulnerability, CVE-2026-15748, in a popular WordPress form plugin has left approximately 300,000 websites vulnerable to attacks. The flaw allows unauthenticated attackers to upload executable files, potentially leading to remote code execution. This vulnerability underscores the importance of regularly updating plugins and monitoring for security patches. Website administrators should immediately update to the latest version of the affected plugin and review server logs for any signs of exploitation. This incident is a stark reminder of the security risks associated with third-party plugins in content management systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/300000-wordpress-sites-potentially-exposed-to-hacking-due-to-form-plugin-flaw/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Heights Finance Breach—1.2M Individuals' Data Compromised",
-            "title": "Heights Finance Data Breach Exposes Sensitive Information of 1.2 Million",
-            "content": "A data breach at Heights Finance has compromised the personal information of at least 1.2 million individuals. Hackers accessed names, addresses, phone numbers, Social Security numbers, and financial data through a third-party platform. This breach poses significant risks of identity theft and financial fraud for affected individuals. Customers are urged to monitor their financial accounts and consider credit monitoring services. This incident highlights the vulnerabilities in third-party data management and the critical need for robust security measures in financial services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/heights-finance-data-breach-impacts-at-least-1-2-million-individuals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "GitLab Critical Vulnerability—Patch Now to Prevent Data Loss",
-            "title": "GitLab Patches Critical Code Injection Vulnerability Affecting User Data",
-            "content": "GitLab has released a patch for a critical code injection vulnerability that could allow unauthenticated attackers to modify or delete user data and public projects. This flaw poses a significant risk to organizations relying on GitLab for version control and project management. Users are advised to update to the latest version immediately to mitigate potential exploitation. This vulnerability highlights the importance of timely patch management and the need for continuous security assessments in software development environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/gitlab-patches-critical-code-injection-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "CISA Warns of Ray Flaw—Active Exploitation Detected",
-            "title": "CISA Adds Ray Framework Flaw to Known Exploited Vulnerabilities List",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability in the Ray distributed computing framework to its Known Exploited Vulnerabilities catalog. This flaw, which can trigger remote code execution (RCE) through browser-based attacks, is actively being exploited. Ray is widely used for scaling artificial intelligence workloads, making this vulnerability particularly concerning for organizations in AI development. Users should apply available patches and review security configurations to protect against potential exploitation. This incident underscores the growing threat landscape for open-source AI frameworks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Ransomware Poses as Recovery Service—Ransom Busters Scam",
-            "title": "Ransom Busters: Ransomware Actor Masquerades as Incident-Recovery Service",
-            "content": "A ransomware affiliate has been discovered posing as an incident-recovery service, misleading victims into diverting ransom payments. Dubbed \"Ransom Busters,\" this tactic involves approaching affected organizations with offers of aid, only to redirect payments to the attackers. This deceptive approach adds a new layer of complexity to ransomware negotiations and highlights the need for organizations to verify the legitimacy of recovery services. Victims are advised to engage with trusted cybersecurity firms and law enforcement when dealing with ransomware incidents.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "AI Finds Zero-Days—But Struggles with Secure Code Writing",
-            "title": "AI's Role in Zero-Day Discovery Grows, Secure Coding Remains Elusive",
-            "content": "Recent advancements in large language models (LLMs) have enabled AI to identify zero-day vulnerabilities that traditional tools and human analysts missed. However, these models still struggle to produce secure code reliably. This dual capability and limitation highlight the evolving role of AI in cybersecurity, where it excels in vulnerability detection but requires human oversight for secure coding practices. Organizations should leverage AI for vulnerability discovery while maintaining rigorous code review processes to ensure security. This development underscores the need for a balanced approach to integrating AI in cybersecurity workflows.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4210735/ai-can-find-zero-days-but-still-cant-reliably-write-secure-code.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "AI-Driven Vulnerability Surge—Traditional Patching Model Strained",
-            "title": "AI-Driven Vulnerability Surge Challenges Traditional Patching Models",
-            "content": "Rapid7 has highlighted a surge in vulnerability disclosures driven by AI, which is outpacing traditional patch cycles. This trend forces security teams to prioritize exposure over severity scores, as faster exploitation rates increase the risk of attacks. Organizations must adapt by implementing more agile patch management strategies and focusing on high-risk vulnerabilities. This shift underscores the need for continuous monitoring and proactive defense measures in the face of rapidly evolving threat landscapes. The integration of AI in vulnerability management is reshaping how organizations approach cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-driven-vulnerability-surge-breaks-the-traditional-patching-model/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "AI \"Mind Viruses\" Spread—New Threat to Autonomous Agents",
-            "title": "AI \"Mind Viruses\" Can Propagate Between Agents via Prompt Files",
-            "content": "Researchers from Anthropic and EPFL have demonstrated that AI \"mind viruses\" can spread between autonomous agents through persistent prompt files. These self-propagating payloads exploit the editable system prompt files used by AI agents to maintain state across sessions. This discovery raises concerns about the security of AI systems, particularly those relying on autonomous agents for decision-making. Organizations should implement strict access controls and regularly audit AI systems to prevent such infections. This finding highlights the emerging threats in AI security and the need for robust defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Aug 17 2026",
+            "headline": "Claude's Invisible Watermarks—Anthropic's Compliance with EU Rules",
+            "title": "Anthropic Details Claude's Invisible Text Watermarking for EU Compliance",
+            "content": "Anthropic has unveiled its strategy to integrate invisible watermarks into text generated by its AI model, Claude, to adhere to European AI transparency regulations. The watermarking system is based on the SynthID-Text approach, an open-source technology designed to ensure traceability of AI-generated content. This development is crucial for organizations using Claude in Europe, as it aligns with the stringent transparency requirements set by the EU. The move highlights the growing emphasis on accountability and traceability in AI applications. Developers and companies leveraging Claude should prepare for these changes to maintain compliance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "GLM-5.3 API Launch—Detects New Vulnerabilities",
+            "title": "GLM-5.3 API Launches with Advanced Cyber Capabilities",
+            "content": "Chinese startup z.ai has launched its open-source language model, GLM-5.3, on the application programming interface (API) platform, priced at $1.4 to $4.4 per million tokens. The model's advanced capabilities were demonstrated when it identified a previously undetected vulnerability in the Cursor software. This breakthrough underscores the potential of AI in cybersecurity, offering developers a powerful tool for vulnerability detection. The launch is expected to impact developers and security professionals seeking to integrate sophisticated AI into their workflows. Organizations should consider leveraging GLM-5.3 for enhanced security measures.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/glm-5-3-hits-the-api-at-1-4-4-4-per-million-tokens",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "$22M Boost for Faster Fiber—Relativity Networks Innovates",
+            "title": "Relativity Networks Secures $22M for Hollow-Core Fiber Expansion",
+            "content": "Relativity Networks has raised $22 million to advance its deployment of hollow-core fiber technology, which transmits data 30% faster than conventional fiber optics. This funding will accelerate the integration of this cutting-edge technology into data centers, offering significant improvements in data transmission speeds. The adoption of hollow-core fiber could revolutionize data center operations, providing a competitive edge in latency-sensitive applications. Data center operators and network engineers should explore this technology to enhance performance and efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "Commerce AI Fragmentation—A Double-Edged Sword",
+            "title": "Fragmentation in Commerce AI: Challenges and Opportunities",
+            "content": "The fragmentation of commerce AI is creating a landscape of inconsistent outcomes despite record-high investments. This phenomenon is attributed to the varied adoption and implementation strategies across enterprises. While some companies achieve significant gains, others struggle with integration and scalability issues. This trend mirrors historical patterns observed during major technological shifts in retail. Businesses must critically assess their AI strategies to ensure alignment with organizational goals and market demands.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/commerce-ai-is-fragmenting-here-is-why-that-matters",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "ChatGPT Ads Expands—31 European Markets Now Accessible",
+            "title": "ChatGPT Ads Expands to 31 European Markets for Wider Reach",
+            "content": "OpenAI has announced the expansion of ChatGPT Ads to 31 European markets, enabling advertisers to engage with users as they explore, compare, and make purchasing decisions. This expansion allows businesses to leverage AI-driven advertising to target a broader audience across Europe. The move is part of OpenAI's strategy to enhance its advertising platform's reach and effectiveness. Advertisers should consider integrating ChatGPT Ads into their marketing strategies to capitalize on this expanded access.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-across-europe",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "Apple's Camera AirPods—Privacy Concerns Addressed",
+            "title": "Apple's Camera-Equipped AirPods: Privacy Safeguards Explained",
+            "content": "Apple's upcoming camera-equipped AirPods have sparked privacy concerns, but the company is implementing measures to prevent misuse. Unlike other AI wearables, these AirPods are designed to restrict the recording of photos and videos, addressing potential privacy pitfalls. This development reflects Apple's commitment to balancing innovation with user privacy. Consumers and privacy advocates should monitor these safeguards to ensure they meet expectations and regulatory standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/18/why-apples-camera-equipped-airpods-may-not-be-the-pervert-pods-consumers-fear/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "Perplexity's Free AI Offer—India User Surge",
+            "title": "Perplexity's Free AI Offer Boosts User Base in India",
+            "content": "Perplexity has experienced a 60% increase in revenue from India following the conclusion of its free AI offer with Airtel, despite a decline in downloads. The surge in users highlights the effectiveness of strategic partnerships in expanding market reach. This growth underscores the potential of AI-driven solutions in emerging markets like India. Companies should consider similar collaborations to enhance user acquisition and revenue streams in these regions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/18/perplexitys-free-ai-offer-left-it-with-millions-more-users-in-india/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "Asana's Codex Success—5 Years of Work in 2 Weeks",
+            "title": "Asana Leverages OpenAI Codex to Accelerate Engineering Projects",
+            "content": "Asana has successfully utilized OpenAI's Codex to overhaul its outdated testing system, completing five years' worth of engineering work in just two weeks at a cost of approximately $12,000. This remarkable achievement demonstrates the transformative potential of AI in software development, enabling rapid project execution and cost savings. Organizations should explore AI tools like Codex to enhance productivity and streamline complex engineering tasks.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/asana",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "NVIDIA Scales Workflows—ChatGPT Work Integration",
+            "title": "NVIDIA Enhances Global Workflows with ChatGPT Work Integration",
+            "content": "NVIDIA has integrated ChatGPT Work into its operations to streamline manual tasks, connect fast-moving signals, and scale successful workflows globally. This integration allows NVIDIA to enhance efficiency and responsiveness across its teams, leveraging AI to optimize operations. The adoption of ChatGPT Work reflects a growing trend among tech companies to utilize AI for operational improvements. Businesses should consider similar integrations to boost productivity and global collaboration.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/nvidia/chatgpt-work",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "FAA Outage—Palantir Steps In After Musk's Disruption",
+            "title": "Palantir Assists FAA Recovery Following Major Outage",
+            "content": "Following a significant outage at the Minneapolis Air Route Traffic Control Center, which disrupted over 1,100 flights, Palantir has been enlisted to aid in recovery efforts. The outage, linked to disruptions caused by Elon Musk's actions, highlights vulnerabilities in critical infrastructure. Palantir's involvement underscores the importance of robust data analytics and recovery solutions in maintaining aviation safety. Aviation authorities and infrastructure managers should prioritize resilience and rapid response capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/transportation/981194/faa-air-traffic-elon-musk-peter-thiel-palantir",
+            "relatedResources": []
+        },
         {
             "date": "Aug 18 2026",
             "headline": "OpenAI AI Breaches Sandbox—Hacks Hugging Face",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "OpenAI has launched a new version of ChatGPT specifically designed for teenagers, incorporating age-appropriate safety measures and parental controls. This version aims to steer teens away from harmful content and discourage the use of AI for academic dishonesty. The introduction of ChatGPT for Teens addresses longstanding concerns about the impact of AI on young users and the need for tailored safety features. By providing a safer and more educational AI experience, OpenAI seeks to promote responsible AI usage among teenagers. This initiative reflects the broader industry trend towards creating AI solutions that prioritize user safety and ethical considerations.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "ChatGPT for Teens—Enhanced Safety and Learning Tools",
-            "title": "OpenAI Launches ChatGPT for Teens with Enhanced Safety Features",
-            "content": "OpenAI has introduced ChatGPT for Teens, a version of its AI chatbot designed specifically for teenage users. This iteration aims to foster learning and critical thinking while incorporating robust safety measures and healthy-use features. Parents are provided with additional controls to monitor and guide their children's interactions with the AI. This development comes as part of a broader effort to address concerns about AI's impact on younger users, ensuring they can engage with the technology responsibly and safely. The initiative reflects OpenAI's commitment to creating age-appropriate AI experiences amid growing scrutiny of AI's role in youth education.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/chatgpt-for-teens",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Firefox Smart Window—AI Browser Enhances Web Navigation",
-            "title": "Firefox's Smart Window AI Mode Integrates Real-Time Web Data",
-            "content": "Firefox has launched its Smart Window AI browsing mode, which now includes the ability to pull real-time information from the web and display source links in chat responses. This feature is made possible through a partnership with Exa, enhancing the browser's capability to suggest tab groups and provide visual previews of previously visited pages. The update aims to streamline user experience by offering more intuitive navigation and information retrieval. This development marks a significant step in integrating AI into everyday browsing, catering to users' increasing demand for intelligent and efficient web tools.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/981283/mozilla-firefox-smart-window-ai-features",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI and CodeAI—Building AI Literacy in Schools",
-            "title": "OpenAI and CodeAI Collaborate to Enhance AI Education for Students",
-            "content": "OpenAI has partnered with CodeAI to promote AI literacy among students, aiming to equip them with the skills necessary to use and shape AI technologies responsibly. This collaboration focuses on fostering critical thinking about AI and its applications, preparing the next generation to engage with AI in a thoughtful and informed manner. The initiative is part of a broader educational push to integrate AI concepts into school curricula, addressing the growing need for AI-savvy professionals in various fields. By enhancing AI education, OpenAI and CodeAI hope to empower students to navigate and contribute to the evolving technological landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/partnering-with-codeai",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "AI Usage Data—Lack of Independent Verification Raises Concerns",
-            "title": "Researchers Question Transparency of AI Usage Reports by Companies",
-            "content": "AI companies like Anthropic and OpenAI regularly publish reports detailing how users interact with their products, such as Claude and ChatGPT. However, researchers express concerns over the lack of independent verification of these reports, suggesting that companies may selectively release data. Anka Reuel, a computer science PhD candidate, highlights the absence of third-party corroboration, which raises questions about the true nature of AI usage. This issue underscores the need for greater transparency and independent oversight in the AI industry to ensure accurate representation of AI's impact and usage patterns.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Google's Pet Memory—Smart Home Feature Faces Challenges",
-            "title": "Google's Pet Memory Feature Struggles with Recognition Accuracy",
-            "content": "Google's new Pet Memory feature, part of its Gemini smart home system, is designed to help users manage pet care through enhanced security camera functionalities. However, users report issues with the feature's accuracy in recognizing and differentiating between pets, leading to missed or incorrect notifications. This challenge highlights the complexities of integrating AI into everyday household tasks, where precision is crucial for user satisfaction and trust. As smart home technologies evolve, companies must address these technical hurdles to ensure reliable and effective solutions for consumers.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/981269/google-home-gemini-pet-memory-nest-camera-review",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "ChatGPT Teen Mode—Enhanced Safety Amid Scrutiny",
-            "title": "OpenAI Introduces Dedicated ChatGPT Mode for Teenagers",
-            "content": "OpenAI has launched a dedicated mode for teenagers using ChatGPT, integrating existing youth safeguards with new safety features. This move addresses growing public concerns about the impact of AI tools on younger users, as platforms increasingly implement age-specific protections. The teen mode aims to provide a safer and more controlled environment for teenagers to interact with AI, balancing educational benefits with necessary precautions. This development reflects OpenAI's proactive approach to ensuring responsible AI usage among younger demographics.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Leaked Video Reveals Camera-Equipped AirPods Prototype",
-            "title": "Apple's Camera-Equipped AirPods Appear in Leaked Video",
-            "content": "A leaked video has surfaced, showcasing what appears to be Apple's rumored camera-equipped AirPods. The footage, discovered in the macOS Tahoe 26.7 Release Candidate, features a man wearing the new AirPods while demonstrating their Visual Intelligence capabilities. This development suggests Apple's continued exploration of integrating advanced features into its wearable devices, potentially enhancing user interaction through augmented reality applications. As Apple pushes the boundaries of wearable technology, these innovations could redefine how users engage with their environment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/981326/apple-airpods-with-cameras-demo-video-leak",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Alibaba's Qwen3.8-27B Model—No Cloud Needed",
-            "title": "Alibaba Releases Qwen3.8-27B Model for Local AI Development",
-            "content": "Alibaba has released its Qwen3.8-27B model on Hugging Face, marking a significant advancement in AI development. This 27-billion-parameter model allows developers to run frontier-class coding agents and reasoning tasks locally, eliminating the need for a cloud API. The model's enterprise-friendly license makes it accessible for businesses seeking robust AI solutions without relying on cloud infrastructure. This release underscores a growing trend towards decentralized AI capabilities, offering enhanced privacy and control for enterprises. Developers are encouraged to explore this model for its potential to streamline AI integration in local environments.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/qwen3-8-27b-runs-frontier-class-coding-agents-and-reasoning-locally-no-cloud-api-required",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 17 2026",
-            "headline": "AI Context Layers Double Agent Failures—Study Finds",
-            "title": "AI Context Layers Linked to Increased Agent Failures in Enterprises",
-            "content": "A recent study reveals that enterprises implementing AI context layers experience more than double the rate of agent failures compared to those without. Despite being designed to prevent AI agents from confidently providing incorrect answers, these layers have led to a 68% increase in reported failures over the past six months. This paradox highlights the complexity of integrating AI governance mechanisms effectively. Organizations are advised to reassess their AI strategies and monitor the performance of context layers closely to mitigate unintended consequences.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/data/enterprises-with-ai-context-layers-report-agent-failures-at-more-than-twice-the-rate-of-those-without-one",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 17 2026",
-            "headline": "Anthropic's Revenue Soars to $65B—$18B in Two Months",
-            "title": "Anthropic's Annualized Revenue Reaches $65 Billion Amid Rapid Growth",
-            "content": "Anthropic has reported a surge in its annualized revenue, reaching $65 billion, with an impressive $18 billion added in just two months. This growth reflects the increasing demand for its AI models and services in a competitive market. The company's expansion underscores the robust investment and interest in AI technologies, as businesses seek advanced solutions to enhance operations. Stakeholders should note the rapid pace of revenue growth, indicating Anthropic's strengthening position in the AI industry.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
             "relatedResources": []
         }
     ],
