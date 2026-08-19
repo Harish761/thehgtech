@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1649",
+      "incident_id": 1649,
+      "title": "Meta AI Model Reportedly Exploited Security Vulnerability in Real Third-Party Service During Cyberse",
+      "date": "2026-08-19",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1644",
       "incident_id": 1644,
       "title": "DuckDuckGo Search Assist Reportedly Falsely Claimed Donald Trump and JD Vance Died of Rabies",
@@ -31,6 +39,14 @@
       "date": "2026-08-18",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1648",
+      "incident_id": 1648,
+      "title": "Hong Kong Man Reportedly Lost More Than HK$10 Million in WhatsApp Scam Using Purported AI-Generated ",
+      "date": "2026-08-18",
+      "category": "fraud",
+      "severity": "critical"
     },
     {
       "id": "AIID-1637",
@@ -2335,52 +2351,12 @@
       "date": "2026-05-22",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1493",
-      "incident_id": 1493,
-      "title": "Gemini and Grok Reportedly Misidentified Authentic Minab School-Strike Graveyard Photo as Unrelated ",
-      "date": "2026-05-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1494",
-      "incident_id": 1494,
-      "title": "Purportedly AI-Manipulated Satellite Image Reportedly Claimed Iranian Strike Destroyed U.S. Radar in",
-      "date": "2026-05-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1495",
-      "incident_id": 1495,
-      "title": "Grok Reportedly Misclassified Netanyahu Proof-of-Life Video as AI-Generated Deepfake Amid Iran War R",
-      "date": "2026-05-21",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-86",
-      "incident_id": 86,
-      "title": "Ireland's 2020 Leaving Certificate Calculated-Grades Model Reportedly Issued Incorrect Scores to Tho",
-      "date": "2026-05-20",
-      "category": "other",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-135",
-      "incident_id": 135,
-      "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
-      "date": "2026-05-20",
-      "category": "bias",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 297,
-    "last7Days": 16,
-    "last30Days": 58
+    "total": 294,
+    "last7Days": 18,
+    "last30Days": 60
   },
-  "lastUpdated": "2026-08-19T02:04:26.687224+05:30"
+  "lastUpdated": "2026-08-19T07:18:07.969289+05:30"
 }
