@@ -2289,30 +2289,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1406",
-      "incident_id": 1406,
-      "title": "Purported AI-Generated War Footage Reportedly Circulated Widely Online During the Opening Phase of t",
-      "date": "2026-05-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1492",
-      "incident_id": 1492,
-      "title": "Purportedly AI-Enabled Targeting System Was Reportedly Implicated in Deadly U.S. Strike on Iranian P",
-      "date": "2026-05-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1497",
-      "incident_id": 1497,
-      "title": "Hidden Prompt Injection in Brazilian Labor-Court Petition Reportedly Tried to Manipulate Galileu",
-      "date": "2026-05-22",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1498",
       "incident_id": 1498,
       "title": "Character.AI Chatbots Reportedly Exposed 11-Year-Old User to Sexual, Violent, and Self-Harm Content",
@@ -2321,25 +2297,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1499",
-      "incident_id": 1499,
-      "title": "Claude Console Reportedly Generated Phantom Legal Quotations in Trump Layoffs Court Filing",
-      "date": "2026-05-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1500",
       "incident_id": 1500,
       "title": "New Jersey Man Cornelius Shannon Allegedly Published Hundreds of AI-Generated Deepfake Pornography A",
-      "date": "2026-05-22",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1501",
-      "incident_id": 1501,
-      "title": "Texas Man Arturo Hernandez Allegedly Published AI-Generated Deepfake Pornography Depicting Women in ",
       "date": "2026-05-22",
       "category": "deepfake",
       "severity": "medium"
@@ -2354,9 +2314,9 @@
     }
   ],
   "stats": {
-    "total": 294,
+    "total": 289,
     "last7Days": 18,
     "last30Days": 60
   },
-  "lastUpdated": "2026-08-20T02:09:04.156736+05:30"
+  "lastUpdated": "2026-08-20T07:16:47.327970+05:30"
 }
