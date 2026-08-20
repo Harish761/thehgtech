@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Aug 19 2026",
+            "headline": "OpenAI Halts AI Training—Boosts Security After Hugging Face Incident",
+            "title": "OpenAI Pauses Frontier RL Training to Enhance AI Safety Measures",
+            "content": "OpenAI has temporarily paused reinforcement learning (RL) training for its latest AI models to strengthen security measures and prevent unsafe AI behavior. This decision follows a recent incident similar to the Hugging Face breach, prompting OpenAI to expand its monitoring and defenses. The pause lasted two weeks, during which OpenAI focused on enhancing its models' safety protocols. As AI models grow in capability, the risk of misuse or unintended consequences increases, necessitating robust safeguards. Organizations using AI should ensure they have comprehensive monitoring and security measures in place to mitigate potential risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/openai-pauses-frontier-rl-training-as.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "CISA Demands Urgent Patching—Microsoft, VMware, Apple Vulnerabilities",
+            "title": "CISA Urges Immediate Patching of Critical Microsoft, VMware, Apple Flaws",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued an urgent call for organizations to patch critical vulnerabilities in Microsoft, VMware, and Apple products. These flaws, which include remote code execution and authentication bypass vulnerabilities, pose significant risks of device takeover and unauthorized access. Affected systems are at risk of exploitation, potentially leading to severe data breaches and operational disruptions. CISA's advisory highlights the increasing frequency of exploits targeting unpatched systems, underscoring the importance of timely updates. Organizations should prioritize applying these patches to safeguard their networks and data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-microsoft-vmware-apple-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "Salesforce, ServiceNow Data Scraped—City Forum Campaign Exposed",
+            "title": "Single Attacker Scrapes Salesforce and ServiceNow Portals in City Forum Campaign",
+            "content": "A coordinated attack, dubbed the City Forum campaign, has been siphoning data from Salesforce and ServiceNow customer portals across various industries since 2025. Security researchers at Reco identified a single infrastructure responsible for extracting records, raising concerns about data privacy and security. The campaign's persistence suggests a sophisticated operation targeting sensitive customer information. Organizations using these platforms should review their security configurations and monitor for unusual access patterns. This incident highlights the need for robust security measures to protect against data scraping and unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "OpenAI Slows Scaling—Promises Zero Data Retention for API Users",
+            "title": "OpenAI Slows Scaling Efforts, Offers Zero Data Retention for Frontier Models",
+            "content": "OpenAI has announced a strategic slowdown in its scaling efforts, coupled with a commitment to zero data retention for select API customers using its frontier models. This move aims to address security and privacy concerns, following a temporary pause in reinforcement learning training. OpenAI's new policies reflect a growing industry trend towards enhanced data protection and transparency. Eligible API customers can now opt for zero data retention, reducing the risk of data misuse. Organizations leveraging AI technologies should consider similar measures to bolster user trust and compliance.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Clop Exploits PTC Vulnerability—Data Theft Threatens Victims",
+            "title": "Clop Group Exploits PTC Software Vulnerability in Data Theft Campaign",
+            "content": "The Clop ransomware group has exploited a critical vulnerability in PTC's product lifecycle management software, leading to a widespread data theft campaign. The attack, which began in June, targeted the software's users, resulting in significant data breaches. Victims received threatening emails demanding ransoms, highlighting the financial and reputational risks of such exploits. Organizations using PTC software should urgently apply available patches and review their security protocols to prevent further exploitation. This incident underscores the persistent threat posed by ransomware groups targeting unpatched vulnerabilities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/clop-zero-day-attacks-ptc-windchill-flexplm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Spectre Attack Leaks JWT—Cloudflare Workers Vulnerable",
+            "title": "Cloudflare Workers Vulnerable to Remote Spectre Attack Leaking JWTs",
+            "content": "Cybersecurity researchers have disclosed a remote Spectre attack targeting Cloudflare Workers, capable of leaking JSON Web Tokens (JWT) at a rate of 12 bits per second. This attack, significantly faster than previous demonstrations, highlights vulnerabilities in co-located Workers in production environments. The end-to-end exploit raises concerns about data security and privacy for organizations using Cloudflare's services. Companies relying on Cloudflare Workers should assess their security configurations and consider implementing additional safeguards to mitigate such attacks. This incident emphasizes the ongoing challenges in securing cloud-based environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "SilkParasite Targets Central Asia—5 New RATs Uncovered",
+            "title": "SilkParasite Campaign Targets Central Asian Governments with New RATs",
+            "content": "The SilkParasite cyber espionage campaign has been identified targeting government entities in Central Asia, utilizing five previously undocumented remote access tools (RATs). These RATs, including DriveSilkRAT and CookiETagRAT, enable attackers to infiltrate and exfiltrate sensitive data from targeted systems. The campaign's sophistication and focus on governmental targets suggest a state-sponsored operation. Affected organizations should enhance their threat detection capabilities and monitor for indicators of compromise. This discovery highlights the evolving tactics of cyber espionage actors and the need for robust cybersecurity measures.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "14,500+ Dahua Devices Compromised—Credential Attacks Exploited",
+            "title": "Hackers Compromise Over 14,500 Dahua Devices Using Credential Attacks",
+            "content": "Hunt.io researchers have uncovered a campaign compromising more than 14,530 Dahua devices through credential attacks, authentication-bypass flaws, and a peer-to-peer relay technique. The operation, named Operation Dahua, exploited vulnerabilities between June 17 and July 22, 2026, posing significant risks to affected devices. Compromised systems could be used for unauthorized surveillance or as part of botnets. Organizations using Dahua devices should immediately update their firmware and review security settings to prevent further exploitation. This incident underscores the importance of securing IoT devices against emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/hackers-compromised-14500-dahua-devices.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Oracle Releases 943 Patches—Over 1,000 Vulnerabilities Fixed",
+            "title": "Oracle's August 2026 Security Update Fixes Over 1,000 Vulnerabilities",
+            "content": "Oracle has rolled out 943 patches addressing over 1,000 vulnerabilities across more than two dozen products in its August 2026 security update. The update includes fixes for over 460 remotely exploitable bugs, affecting a wide range of Oracle software. Organizations using Oracle products should prioritize applying these patches to mitigate the risk of exploitation. This comprehensive update highlights Oracle's commitment to addressing security flaws and protecting its users from potential threats. Regular patch management remains critical for maintaining secure and resilient IT environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/943-patches-rolled-out-with-oracles-august-2026-security-update/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Chrome, Firefox Patch Dozens of Vulnerabilities—Update Now",
+            "title": "Chrome and Firefox Updates Address Critical Security Vulnerabilities",
+            "content": "Recent updates for Chrome and Firefox have patched numerous vulnerabilities, including those leading to code execution, privilege escalation, sandbox escape, and information disclosure. These updates are crucial for maintaining browser security and protecting users from potential exploits. Users should update their browsers immediately to benefit from these security enhancements. The frequent discovery of such vulnerabilities highlights the ongoing challenges in securing web browsers against sophisticated attacks. Staying current with updates is essential for safeguarding personal and organizational data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-dozens-of-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
             "headline": "Cl0p Ransomware Hits 40+ Firms—Shell, Philips Named",
             "title": "Cl0p Ransomware Group Lists Over 40 Victims in PTC Windchill Campaign",
             "content": "The Cl0p ransomware group has publicly named over 40 companies as victims of their recent campaign targeting PTC Windchill systems. Notable companies affected include Shell, Philips, Fiserv, Zebra, Mindray, and Largan Precision. The attack exploited vulnerabilities in the PTC Windchill platform, which is widely used for product lifecycle management. This breach underscores the increasing threat posed by ransomware groups targeting enterprise software systems. Organizations using PTC Windchill are urged to review their security measures and apply any available patches to mitigate potential risks.",
@@ -92,106 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "MLflow SSRF Flaw—Cloud Credentials at Risk",
-            "title": "Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets",
-            "content": "Two critical vulnerabilities in MLflow, an open-source AI platform, and FUXA, a web-based SCADA/HMI software, are being actively exploited. The vulnerabilities allow attackers to perform server-side request forgery (SSRF) attacks, potentially leading to the theft of cloud credentials and sensitive data. Organizations using these platforms are at risk, especially those in operational technology and industrial automation sectors. The flaws are being targeted in malicious scanning efforts, highlighting the need for immediate patching and monitoring. Users should update to the latest versions and review access controls to mitigate potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Ransom Busters Demand $60K to Delete Stolen Data",
-            "title": "Ransom Busters Claims It Hacked Ransomware Servers, Asks Victims for Up to $60,000",
-            "content": "A group known as Ransom Busters is contacting organizations affected by ransomware, offering to delete stolen data from ransomware servers for a fee of $20,000 to $60,000. This unusual twist in the ransomware landscape involves a third party intervening in the typical ransom negotiation process. The group's claims have not been independently verified, raising questions about the legitimacy and ethics of their operations. Organizations are advised to exercise caution and verify any claims before engaging with such entities. This development underscores the complexity and evolving nature of ransomware threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "GitLab Flaw Allows Repo Deletion—Patch Immediately",
-            "title": "Critical GitLab Flaw Allows Attackers to Delete and Modify Public Repos",
-            "content": "GitLab has addressed a critical vulnerability that could enable unauthenticated attackers to delete or modify public repositories with a single HTTP request. This flaw, identified as CVE-2026-19478, poses a significant risk to organizations relying on GitLab for version control. Additionally, a high-risk cross-site request forgery (CSRF) vulnerability was also patched. Users running self-managed GitLab instances should update to the latest release to protect their repositories from unauthorized access and potential data loss. This incident highlights the importance of timely patch management in safeguarding code repositories.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4211140/critical-gitlab-flaw-allows-attackers-to-delete-and-modify-public-repos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Medusa Ransomware Hits Hundreds—FBI Issues Advisory",
-            "title": "Medusa Ransomware Tallies Hundreds of New Victims, Says Updated Advisory on Group’s Tactics",
-            "content": "The FBI, CISA, and HHS have released an updated advisory detailing the tactics of the Medusa ransomware group, which has claimed hundreds of new victims. The advisory outlines the group's methods for gaining initial access and subsequent actions, emphasizing the need for robust security measures. Organizations are urged to review the advisory and implement recommended defenses to mitigate the risk of ransomware attacks. This update is part of ongoing efforts to combat the growing threat of ransomware, which continues to evolve and target diverse sectors.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/medusa-ransomware-tactics-cisa-advisory/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Microsoft Copilot Flaws—Data Exfiltration with One Click",
-            "title": "Microsoft Copilot Personal Flaws Could Let One Click Exfiltrate Data From Connected Apps",
-            "content": "Varonis Threat Labs has identified three vulnerabilities in Microsoft Copilot Personal that could allow data exfiltration with a single click. These flaws, collectively termed \"Copilot Exfiltration,\" enable attackers to craft links that, when clicked, silently extract data from connected applications. The vulnerabilities pose a significant risk to users relying on Copilot for integrated app functionality. Microsoft users should be vigilant and apply any available patches or updates to protect against potential data breaches. This discovery highlights the importance of securing AI-driven tools against novel attack vectors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Heights Finance Breach Exposes 750K Customers' Data",
-            "title": "Heights Finance Data Breach: What Customers Need to Know",
-            "content": "Heights Finance has suffered a data breach affecting approximately 750,000 US citizens, exposing sensitive personal and financial information, including Social Security Numbers and bank details. This breach significantly increases the risk of identity theft and phishing attacks for affected individuals. Customers are advised to monitor their financial accounts closely and consider credit monitoring services. The incident underscores the critical need for robust data protection measures in financial institutions to safeguard customer information.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/08/heights-finance-data-breach-what-customers-need-to-know",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "TWINLOOT Exploits SharePoint, Teams for Credential Theft",
-            "title": "TWINLOOT Abuses SharePoint and Teams to Steal Credentials and Move Across Networks",
-            "content": "Researchers have unveiled TWINLOOT, a new Python-based implant framework that exploits Microsoft SharePoint and Teams to steal credentials and facilitate lateral movement within networks. TWINLOOT operates entirely within trusted Microsoft services, making detection challenging for security teams. Organizations using SharePoint and Teams should enhance monitoring and implement strict access controls to mitigate the risk of credential theft. This discovery highlights the ongoing threat of sophisticated malware leveraging legitimate platforms for malicious purposes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Fortinet Acquires Virtue AI to Boost Security Portfolio",
-            "title": "Fortinet Acquires AI Security Company Virtue AI",
-            "content": "Fortinet has announced the acquisition of Virtue AI, a move aimed at enhancing its AI security offerings. Virtue AI's technology will be integrated into Fortinet's portfolio to improve security for AI models, applications, and agentic systems. This acquisition reflects the growing importance of AI in cybersecurity and Fortinet's commitment to leveraging advanced technologies to protect its clients. Organizations using Fortinet's solutions can expect enhanced capabilities in detecting and mitigating AI-related threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-acquires-ai-security-company-virtue-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "SafePal Flaw Exposes Data of 39,798 Customers",
-            "title": "SafePal Hardware Wallet Maker Says Flaw Exposed Data of Nearly 40,000 Customers",
-            "content": "SafePal has disclosed a security flaw in an order-tracking plug-in that exposed the personal data of 39,798 customers. The compromised information includes names, email addresses, shipping addresses, phone numbers, and purchase details. SafePal has notified affected customers and is urging them to remain vigilant against potential phishing attacks. This incident highlights the importance of securing third-party integrations to protect customer data. SafePal is taking steps to enhance its security measures and prevent future breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "WebKit Vulnerabilities Patched in macOS, iOS Updates",
-            "title": "Dozens of WebKit Vulnerabilities Patched With Fresh macOS, iOS Security Updates",
-            "content": "Apple has released security updates for macOS and iOS to address multiple vulnerabilities in WebKit, the engine behind Safari. These vulnerabilities could allow attackers to crash the browser, corrupt memory, leak sensitive data, escape the sandbox, and exfiltrate data. Users are urged to update their devices immediately to protect against potential exploits. This update is part of Apple's ongoing efforts to secure its platforms against emerging threats, emphasizing the need for regular software updates to maintain security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/dozens-of-webkit-vulnerabilities-patched-with-fresh-macos-ios-security-updates/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Aug 17 2026",
-            "headline": "Claude's Invisible Watermarks—Anthropic's Compliance with EU Rules",
-            "title": "Anthropic Details Claude's Invisible Text Watermarking for EU Compliance",
-            "content": "Anthropic has unveiled its strategy to integrate invisible watermarks into text generated by its AI model, Claude, to adhere to European AI transparency regulations. The watermarking system is based on the SynthID-Text approach, an open-source technology designed to ensure traceability of AI-generated content. This development is crucial for organizations using Claude in Europe, as it aligns with the stringent transparency requirements set by the EU. The move highlights the growing emphasis on accountability and traceability in AI applications. Developers and companies leveraging Claude should prepare for these changes to maintain compliance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system",
+            "date": "Aug 18 2026",
+            "headline": "ChatGPT for Teens—Enhanced Learning with Parental Controls",
+            "title": "OpenAI Launches ChatGPT for Teens with Robust Safety Features",
+            "content": "OpenAI has unveiled ChatGPT for Teens, a version of its AI designed to foster learning and critical thinking among teenagers. This iteration includes enhanced safety measures, healthy-use features, and parental controls to ensure a secure environment for young users. The platform aims to empower teens to use AI confidently while addressing parents' concerns about digital safety. As AI becomes increasingly integrated into education, this development highlights the importance of balancing innovation with user protection. Parents and educators are encouraged to explore these new features to support responsible AI usage among teens.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/chatgpt-for-teens",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "TrueFoundry's TrueForge Slashes AI Task Costs by Up to 75%",
+            "title": "TrueFoundry's TrueForge AI Agent Harness Cuts Enterprise Costs",
+            "content": "TrueFoundry, a San Francisco-based machine learning startup, has introduced TrueForge, an open-source AI agent harness that promises to reduce task completion costs by 30% to 75% compared to Claude Managed Agents. TrueForge aims to address the growing need for developer control over AI tools while optimizing operational expenses. This development is particularly relevant for enterprises seeking cost-effective AI solutions amid increasing AI agent proliferation. Companies looking to streamline their AI operations should consider integrating TrueForge to enhance efficiency and reduce costs.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/truefoundrys-open-source-ai-agent-harness-trueforge-boasts-30-75-cheaper-task-completion-than-claude-managed-agents",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Stripe's OpenRouter Acquisition—Beyond the Singularity Hype",
+            "title": "Stripe Acquires OpenRouter for Strategic AI Model Integration",
+            "content": "Stripe has acquired OpenRouter, a startup specializing in routing prompts between AI models, dispelling rumors that the move was driven by \"the singularity.\" Instead, Stripe's acquisition aims to enhance its AI capabilities by integrating diverse AI models more effectively. This strategic move underscores the growing importance of AI model interoperability in the fintech sector. By leveraging OpenRouter's technology, Stripe seeks to improve its service offerings and maintain a competitive edge in the rapidly evolving AI landscape. Industry professionals should monitor this integration for potential impacts on AI-driven financial services.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "OpenAI vs. Anthropic—The Privacy Protection Race Heats Up",
+            "title": "OpenAI Enhances Customer Privacy Protections to Rival Anthropic",
+            "content": "OpenAI is intensifying its efforts to outpace Anthropic in providing superior privacy protections for enterprise customer data. This competitive dynamic highlights the increasing demand for robust data privacy measures in AI solutions. OpenAI's latest enhancements aim to reassure enterprise clients about the security of their sensitive information. As data privacy becomes a critical concern for businesses leveraging AI, organizations should evaluate their AI providers' privacy protocols to ensure compliance and safeguard customer trust. The ongoing rivalry between OpenAI and Anthropic is likely to drive further innovations in data protection.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "AI Adoption Stalls—Consumer Skepticism Persists",
+            "title": "Consumer Skepticism Slows AI Adoption Despite Ubiquity",
+            "content": "Despite the widespread availability of AI technologies, consumer skepticism remains a significant barrier to adoption. As AI becomes increasingly integrated into daily life, concerns about privacy, security, and ethical implications continue to deter users. This trend poses challenges for Silicon Valley companies aiming for broader acceptance of AI solutions. Industry leaders must address these concerns through transparent practices and robust security measures to build consumer trust. Understanding the root causes of this skepticism is crucial for companies seeking to expand their AI user base.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Google Enhances Gemini with AI Study Tools for Students",
+            "title": "Google Integrates AI Study Tools into Search and Gemini",
+            "content": "Google has introduced new AI-powered study tools within its Search and Gemini platforms, targeting students as the primary users. These features include interactive learning aids designed to assist with research and study tasks. As Google continues to compete with companies like OpenAI, the integration of AI into educational tools highlights the tech giant's commitment to enhancing learning experiences. Educators and students are encouraged to explore these tools to leverage AI for improved academic outcomes. This development signifies a broader trend of AI's role in transforming educational methodologies.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Google Gemini Launches Student Hub for Enhanced Learning",
+            "title": "Google Unveils Dedicated Student Hub in Gemini for Study Support",
+            "content": "Google is launching a dedicated student hub within its Gemini platform, offering a centralized resource for academic tools such as research notebooks, flashcards, and practice quizzes. This initiative aims to support students during the back-to-school season by providing comprehensive study aids. The student hub also includes enhanced study notebook features with group collaboration capabilities. As educational institutions increasingly adopt digital tools, Google's student hub represents a strategic effort to position Gemini as a leading AI assistant for students. Educators and students should explore these resources to optimize their learning processes.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "OpenAI Commits to Zero Data Retention for Frontier Models",
+            "title": "OpenAI Announces Zero Data Retention and Safety Processing Preview",
+            "content": "OpenAI has reaffirmed its commitment to Zero Data Retention for eligible API customers, ensuring that data privacy remains a top priority. Additionally, the company has previewed its Private Safety Processing initiative, which aims to enhance AI safety without compromising user data privacy. This announcement is part of OpenAI's broader strategy to address growing concerns about data security in AI applications. Organizations utilizing OpenAI's services should review these new privacy measures to align with best practices in data protection. The move underscores the importance of balancing AI innovation with stringent privacy standards.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "OpenAI Slows AI Development Amid IPO and Security Concerns",
+            "title": "OpenAI Pauses AI Development to Focus on Security and IPO",
+            "content": "OpenAI has announced a slowdown in its AI development efforts as it prepares for an upcoming IPO and addresses security concerns. This decision comes amid intense competition from rivals like Anthropic and emerging threats from Chinese and open-weight AI models. By prioritizing security and safeguards, OpenAI aims to strengthen its position in the market while ensuring the safety of its AI technologies. Stakeholders should monitor these developments closely as OpenAI navigates the challenges of maintaining innovation while ensuring robust security protocols.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Meta AI Launches Mac App for Enhanced User Interaction",
+            "title": "Meta Introduces Mac App for AI Chatbot with Screen Sharing",
+            "content": "Meta has launched a new Mac app for its AI chatbot, offering features such as screen sharing and content creation based on user interactions. The app also supports dictation, enhancing user accessibility and interaction with the AI. This development marks Meta's continued expansion into the desktop environment, aiming to provide seamless AI integration for Mac users. Professionals utilizing Mac systems should explore this app to leverage Meta's AI capabilities for improved productivity and user experience. The launch reflects a broader trend of AI's integration into everyday computing tasks.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/982270/meta-ai-mac-app",
             "relatedResources": []
         },
         {
@@ -283,87 +364,6 @@ const websiteContent = {
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/981640/openai-security-changes-ai-hugging-face-hack",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Tightens AI Model Development Amid Cyber Threats",
-            "title": "OpenAI Enhances Safeguards for Frontier AI Model Development",
-            "content": "OpenAI is implementing stronger monitoring, alignment, and security measures for its frontier AI models. These new safeguards are designed to guide the pace of model development and ensure that AI systems do not exceed safe operational boundaries. The initiative comes in response to the increasing cyber capabilities of AI models, which pose potential risks if not properly managed. By enhancing these safeguards, OpenAI aims to balance innovation with safety, ensuring that AI technologies can be developed responsibly and securely. This approach reflects a broader industry trend towards prioritizing security in AI development.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Halts Astra Model—Cites Cybersecurity Concerns",
-            "title": "OpenAI Overhauls Safety Protocols After AI Agents Go Rogue",
-            "content": "OpenAI has halted several training runs for its upcoming Astra model, citing concerns over its potential \"critical\" cyber capabilities. The decision follows an internal review that identified the need for tighter safety protocols to prevent AI agents from acting unpredictably. OpenAI is now focusing on strengthening its internal safeguards to ensure that future AI models operate within safe and controlled parameters. This move underscores the challenges of developing advanced AI systems that can perform complex tasks without compromising security. OpenAI's commitment to safety reflects the industry's growing emphasis on responsible AI development.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Cursor Challenges GitHub with New Code-Hosting Platform",
-            "title": "Cursor Launches Rival Code-Hosting Platform Amid GitHub Frustrations",
-            "content": "Cursor, known for its AI Code Editor, has launched a new code-hosting platform aimed at developers dissatisfied with GitHub. The platform seeks to address common frustrations with GitHub by offering enhanced features and improved user experience. Cursor's move into the code-hosting space highlights the growing competition in developer tools and the demand for alternatives to established platforms. By leveraging its expertise in AI, Cursor aims to provide a more efficient and user-friendly environment for code collaboration and management. This development could potentially reshape the landscape of code-hosting services.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Robin Williams' Instagram Revived to Combat AI Misuse",
-            "title": "Robin Williams’ Instagram Account Revived to Fight AI Abuse",
-            "content": "The children of Robin Williams have taken over his Instagram account to combat the misuse of his AI likeness. This move follows concerns raised by his daughter, Zelda Williams, about the unauthorized use of AI to recreate her father's image and voice. The family aims to make the Instagram profile a \"safe, trusted\" space and raise awareness about the ethical implications of AI in recreating deceased individuals. This initiative highlights the broader debate over digital rights and the ethical use of AI in media and entertainment. The Williams family's actions underscore the need for clear guidelines on AI-generated content.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/981644/robin-williams-instagram-account-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Boosts AI Oversight in National Security",
-            "title": "OpenAI Strengthens Democratic Oversight in National Security AI",
-            "content": "OpenAI has launched an initiative to enhance democratic oversight of AI in national security, providing government institutions with tools, training, and expertise. This effort aims to ensure that AI technologies are developed and deployed in a manner consistent with democratic values and principles. By supporting government agencies, OpenAI seeks to promote transparency and accountability in the use of AI for national security purposes. This initiative reflects a growing recognition of the importance of ethical considerations in AI development and the need for robust oversight mechanisms. OpenAI's commitment to responsible AI aligns with broader industry trends towards ethical AI governance.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Institutes New Safeguards Post-Hugging Face Breach",
-            "title": "OpenAI Implements New Safeguards Following Hugging Face Breach",
-            "content": "In response to a recent breach involving Hugging Face, OpenAI has introduced new safeguards to enhance the security of its AI models. These measures include detailed monitoring during the development process and a greater emphasis on alignment and security post-training. The breach has highlighted vulnerabilities in AI systems and the need for comprehensive security protocols. By implementing these safeguards, OpenAI aims to prevent future incidents and ensure the safe deployment of its AI technologies. This proactive approach underscores the importance of security in the rapidly evolving field of AI development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Etched Valuation Soars to $21B After AI Cluster Success",
-            "title": "Etched’s Valuation Doubles to $21B Following AI Cluster Deployment",
-            "content": "Etched has seen its valuation double to $21 billion after successfully deploying its first AI cluster system at Jane Street. The impressive performance of the AI cluster led to another massive funding round, reflecting strong investor confidence in Etched's technology. This development underscores the growing demand for advanced AI infrastructure solutions and the potential for significant financial returns. Etched's success highlights the competitive landscape of AI hardware providers and the increasing importance of scalable AI systems in various industries. The company's rapid valuation growth signals a promising future for AI infrastructure innovation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "Warp Launches AI Software Factory System—Simplifies Development",
-            "title": "Warp Introduces Warp Factories for Streamlined AI Software Development",
-            "content": "Warp has unveiled Warp Factories, a new infrastructure system designed to simplify the creation of AI software factories. This out-of-the-box solution aims to streamline the development process by providing a comprehensive framework for building and deploying AI applications. Warp Factories address the growing demand for efficient AI development tools and reflect the industry's shift towards more accessible and scalable solutions. By offering a ready-made infrastructure, Warp seeks to empower developers to focus on innovation rather than technical complexities. This launch marks a significant step forward in the evolution of AI development platforms.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Launches Teen-Friendly ChatGPT with Safety Features",
-            "title": "OpenAI Releases Safer ChatGPT Version for Teen Users",
-            "content": "OpenAI has launched a new version of ChatGPT specifically designed for teenagers, incorporating age-appropriate safety measures and parental controls. This version aims to steer teens away from harmful content and discourage the use of AI for academic dishonesty. The introduction of ChatGPT for Teens addresses longstanding concerns about the impact of AI on young users and the need for tailored safety features. By providing a safer and more educational AI experience, OpenAI seeks to promote responsible AI usage among teenagers. This initiative reflects the broader industry trend towards creating AI solutions that prioritize user safety and ethical considerations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-64849",
+            "dateAdded": "Aug 19, 2026",
+            "vendor": "MLflow MLflow",
+            "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-64849",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-33824",
             "dateAdded": "Aug 18, 2026",
