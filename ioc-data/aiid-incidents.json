@@ -2289,34 +2289,18 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1498",
-      "incident_id": 1498,
-      "title": "Character.AI Chatbots Reportedly Exposed 11-Year-Old User to Sexual, Violent, and Self-Harm Content",
-      "date": "2026-05-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1500",
       "incident_id": 1500,
       "title": "New Jersey Man Cornelius Shannon Allegedly Published Hundreds of AI-Generated Deepfake Pornography A",
       "date": "2026-05-22",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1502",
-      "incident_id": 1502,
-      "title": "Scammers Reportedly Used Real-Time Deepfake Video to Impersonate Veriff CEO Kaarel Kotkas in WhatsAp",
-      "date": "2026-05-22",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 289,
+    "total": 287,
     "last7Days": 18,
     "last30Days": 60
   },
-  "lastUpdated": "2026-08-20T18:35:53.089565+05:30"
+  "lastUpdated": "2026-08-20T22:23:51.880465+05:30"
 }
