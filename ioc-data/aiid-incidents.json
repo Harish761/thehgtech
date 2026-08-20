@@ -2287,20 +2287,12 @@
       "date": "2026-05-28",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1500",
-      "incident_id": 1500,
-      "title": "New Jersey Man Cornelius Shannon Allegedly Published Hundreds of AI-Generated Deepfake Pornography A",
-      "date": "2026-05-22",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 287,
-    "last7Days": 18,
-    "last30Days": 60
+    "total": 286,
+    "last7Days": 13,
+    "last30Days": 51
   },
-  "lastUpdated": "2026-08-20T22:23:51.880465+05:30"
+  "lastUpdated": "2026-08-21T00:46:18.763703+05:30"
 }
