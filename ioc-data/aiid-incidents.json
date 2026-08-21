@@ -1,6 +1,54 @@
 {
   "incidents": [
     {
+      "id": "AIID-811",
+      "incident_id": 811,
+      "title": "AI-Powered Transcription Services Allegedly Leak Confidential Workplace Discussions",
+      "date": "2026-08-20",
+      "category": "data_leak",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1650",
+      "incident_id": 1650,
+      "title": "Otter.ai Notetaker Allegedly Recorded Meeting Conversations Without Participants' Informed Consent a",
+      "date": "2026-08-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1651",
+      "incident_id": 1651,
+      "title": "Fireflies.AI Meeting Assistant Allegedly Collected Biometric Voice Data from Illinois Meeting Partic",
+      "date": "2026-08-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1652",
+      "incident_id": 1652,
+      "title": "Granola AI Notetaker Allegedly Captured and Transcribed Florida Meeting Participant Without Notice o",
+      "date": "2026-08-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1653",
+      "incident_id": 1653,
+      "title": "Social Media Recommendation Algorithms Allegedly Repeatedly Exposed 13-Year-Old Blake Gallier to Sui",
+      "date": "2026-08-20",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1654",
+      "incident_id": 1654,
+      "title": "AI Chatbot Reportedly Recommended Herbicide Treatment Linked to Loss of About 25 Acres of Sesame in ",
+      "date": "2026-08-20",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1649",
       "incident_id": 1649,
       "title": "Meta AI Model Reportedly Exploited Security Vulnerability in Real Third-Party Service During Cyberse",
@@ -2001,14 +2049,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-811",
-      "incident_id": 811,
-      "title": "AI-Powered Transcription Services Allegedly Leak Confidential Workplace Discussions",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "high"
-    },
-    {
       "id": "AIID-829",
       "incident_id": 829,
       "title": "Facial Recognition System in Buenos Aires Triggers Police Checks Based on False Matches",
@@ -2290,9 +2330,9 @@
     }
   ],
   "stats": {
-    "total": 286,
-    "last7Days": 13,
-    "last30Days": 51
+    "total": 291,
+    "last7Days": 19,
+    "last30Days": 57
   },
-  "lastUpdated": "2026-08-21T02:09:30.157735+05:30"
+  "lastUpdated": "2026-08-21T07:22:10.702854+05:30"
 }
