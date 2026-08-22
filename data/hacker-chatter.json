@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-08-22T03:20:33.553540",
-  "total_incidents": 30617,
+  "last_updated": "2026-08-22T14:47:16.313937",
+  "total_incidents": 30623,
   "incidents": [
+    {
+      "id": "spacebears_holzmarkt_chemnitz",
+      "victim_name": "holzmarkt chemnitz",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-08-22T08:00:14.089124+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Holzmarkt Chemnitz is a specialized retail store for building materials and wood products, operating two branches in Chemnitz (Fichtestraße and Kalkstraße). They serve as a competent partner for both professional builders and private customers.-Personal information of employees and clients -Financial documents-SQL DB https://holzmarkt-chemnitz.de/",
+      "screenshot": "https://images.ransomware.live/victims/5a4b7854f8a08c7e1479782351b919a8.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/71/holzmarkt-chemnitz",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "spacebears_freelom",
+      "victim_name": "Freelom",
+      "threat_actor": "spacebears",
+      "date_discovered": "2026-08-22T07:59:41.537374+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Freelom.net s.r.o. is a Czech internet service provider and IT company based in Lomnice nad Popelkou, which has been operating since 2009 . The company's primary focus is providing wireless internet access via its own network, with services available 24 hours a day, 7 days a week.The company is led by two managing directors, Jiří Plichta and Petr Malý. A priority for Freelom.net is the speed, reliability, and quality of its services , and it aims to resolve technical issues within a maximum of 24 hours-SQL Data (All client personal data) https://freelom.cz/",
+      "screenshot": "https://images.ransomware.live/victims/e0ebecf15a9179092fe420658c90ef16.png",
+      "url": "http://5butbkrljkaorg5maepuca25oma7eiwo6a2rlhvkblb4v6mf3ki2ovid.onion/companies/72/freelom",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_island_networks",
+      "victim_name": "Island Networks",
+      "threat_actor": "pear",
+      "date_discovered": "2026-08-22T07:57:34.331049+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Provider for Business-class Internet, Cybersecurity & Home Wi-Fi",
+      "screenshot": "https://images.ransomware.live/victims/3d3e4ca9057f0d3545125c4308a31942.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/islandnetjm",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_mogren,_glessner_&_ahrens,_p.s.",
+      "victim_name": "Mogren, Glessner & Ahrens, P.S.",
+      "threat_actor": "pear",
+      "date_discovered": "2026-08-22T07:57:08.921168+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Services in family law",
+      "screenshot": "https://images.ransomware.live/victims/a0bac84758360eb2c281428f3b1f0e30.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/mgrlaw",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "rhysida_cri_electric",
+      "victim_name": "CRI Electric",
+      "threat_actor": "rhysida",
+      "date_discovered": "2026-08-22T05:56:26.446012+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "CRI Electric CRI Electric is a veteran-owned business based in San Antonio, providing professional electrical services since 1998. They cater to both residential and commercial clients, offering services such as emergency electrical repairs, EV charger installations, and home rewiring. We are pleased to present:Employee's federal account artifacts** (`HR-Confidential\\Israel's Forms`): Login.gov personal recovery key (VA identity), TSP (retirement savings), ID.me, DoD DS Logon, PIEE (DoD contract payments)151 vendor W-9 forms** (SSN/EIN), payroll docs, HR-lawyer (privileged) correspondence, OSHA-adjacent injury/incident reports with photos.Public-sector bid pricing** (2025�2026: SAWS HQ EV charging, SAISD, NISD) � bid-competitiveness and Davis-Bacon certified-payroll context.Corporate docs (SDVOSB certification, Articles, bylaws, stock ledgers), QuickBooks financials, a Power of Attorney    More",
+      "screenshot": "https://images.ransomware.live/victims/f7c0c9ba955aee3907d5bb9d20840e89.png",
+      "url": "http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion/archive.php?company=264",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_meridian_logistics_group",
+      "victim_name": "Meridian Logistics Group",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-08-22T05:19:52.744287+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "Full network image staged. ERP exports, dispatch DB and payroll archives recovered. Pending final inventory before publication.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "panzer_nteitalia",
       "victim_name": "Nteitalia",
