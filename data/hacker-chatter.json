@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-08-21T15:03:21.555661",
-  "total_incidents": 30610,
+  "last_updated": "2026-08-22T03:20:33.553540",
+  "total_incidents": 30617,
   "incidents": [
+    {
+      "id": "panzer_nteitalia",
+      "victim_name": "Nteitalia",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-08-21T16:51:22.138601+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "NTE Italia, an engineering and telecommunications service provider based in Catanzaro, Italy. Sensitive thousands of documents are compromised.",
+      "screenshot": "https://images.ransomware.live/victims/98a6059b01e7bf737f774d0cd6beec20.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/nteitalia",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_quaker_state_mexico",
+      "victim_name": "Quaker State Mexico",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-21T14:56:15.304066+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/072038d419f6335db9fb3e595d06e44a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=59a43842-d0d8-41db-ab38-2cd125d91db2",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_ipic",
+      "victim_name": "iPic",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-21T14:55:37.675449+00:00",
+      "industry": "Hospitality",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/9aa3939e31cb3cfaffb8079db31c0cc2.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=769179b7-db54-45e8-b3ba-9d7c94951e5d",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_jc_sales",
+      "victim_name": "JC Sales",
+      "threat_actor": "akira",
+      "date_discovered": "2026-08-21T13:21:20.842951+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "JC Sales is a leading full-service wholesaler based in Los Angeles, California, specializing in\na vast array of wholesale products including health and beauty items, food and beverages, gene\nral merchandise, and seasonal items.\n\nWe will upload 206gb of corporate data soon. Detailed personal employee information (passports,\nDLs, addresses, phones, contacts), confidential financials, contracts and agreements, client i\nnformation, NDAs and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_cinépolis",
+      "victim_name": "Cinépolis",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-21T12:56:53.309028+00:00",
+      "industry": "Hospitality",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/e693ca6267e36f71d9241983370c1656.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=01be5eca-c028-47e8-add2-46a852dccda7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "rhysida_fairview_dental_group",
+      "victim_name": "Fairview Dental Group",
+      "threat_actor": "rhysida",
+      "date_discovered": "2026-08-21T12:28:19.425238+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Fairview Dental Group Fairview Dental Group offers a range of dental services including family dentistry, cosmetic treatments, dental implants, and invisible braces.We are pleased to present:Full patient database, patient X-rays, scanned forms/consents/invoices, health records (PHI) of the entire practice, unencrypted.    More",
+      "screenshot": "",
+      "url": "http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion/archive.php?company=260",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_gindre_india",
+      "victim_name": "Gindre India",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-21T11:57:12.828596+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/5027b000787f3a73c5977bf6380778e2.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=a4a0d54e-27c5-45ec-a3aa-39184e012167",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "rhysida_battle_creek_public_schools",
       "victim_name": "Battle Creek Public Schools",
