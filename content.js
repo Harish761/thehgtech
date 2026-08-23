@@ -4,39 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Aug 20 2026",
-            "headline": "Rust Crates Compromised—245 Million Downloads at Risk",
-            "title": "Rust Supply Chain Attack Injects Malware into Popular Crates",
-            "content": "The Rust Project has removed malicious versions of three popular crates from crates.io after a compromised maintainer account introduced a typosquatted dependency. This dependency's build script executed a remote payload during compilation, affecting crates with a combined 245 million downloads. The compromised crates were widely used, posing a significant risk to developers relying on them for secure software builds. This incident underscores the vulnerabilities in software supply chains, particularly in open-source ecosystems. Developers using these crates should verify their dependencies and update to secure versions immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+            "date": "Aug 21 2026",
+            "headline": "Isolated-vm Flaw Enables Host RCE—Patch Immediately",
+            "title": "Critical Isolated-vm Vulnerability Allows Remote Code Execution on Host",
+            "content": "A critical vulnerability in the isolated-vm library, used for running JavaScript code in isolated processes, has been identified and patched. The flaw, a type confusion bug, allows attackers to escape the V8 sandbox and hijack the host process's control flow, potentially leading to remote code execution (RCE). This vulnerability poses a significant risk to systems using isolated-vm, particularly in AI projects where the library is popular. Users are urged to update to the latest version immediately to mitigate potential exploitation. The discovery underscores the ongoing challenges in securing sandbox environments against sophisticated attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-isolated-vm-vulnerability-leads-to-rce-on-host/",
             "relatedResources": []
         },
         {
-            "date": "Aug 20 2026",
-            "headline": "AI Scripts Target Siemens S7 PLCs in Critical U.S. Infrastructure",
-            "title": "AI-Generated Exploit Scripts Threaten U.S. Critical Infrastructure via Siemens PLCs",
-            "content": "The U.S. government has issued a warning about an \"active threat\" targeting critical infrastructure using AI-generated exploit scripts. These scripts focus on Siemens S7 Series Programmable Logic Controllers (PLCs), enabling reconnaissance and potential control over critical systems. This development highlights the increasing sophistication of cyber threats leveraging AI to automate and enhance attack capabilities. Organizations using Siemens S7 PLCs should bolster their defenses and monitor for unusual activity. This threat emphasizes the need for robust cybersecurity measures in protecting critical infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
+            "date": "Aug 21 2026",
+            "headline": "Rust Supply Chain Attack—North Korean Hackers Suspected",
+            "title": "North Korean Hackers Linked to Rust Supply Chain Attack",
+            "content": "A supply chain attack targeting the Rust programming language ecosystem has been linked to North Korean hackers. The attackers introduced a malicious version of the arrayref library, which included a dependency to fetch a harmful payload from a remote server. This incident highlights the growing threat of supply chain attacks, where trusted components are compromised to infiltrate systems. Developers using the affected library are advised to review their dependencies and update to secure versions. The attack underscores the importance of vigilance in managing open-source software dependencies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
             "relatedResources": []
         },
         {
-            "date": "Aug 20 2026",
-            "headline": "Isolated-vm Flaw Enables JavaScript Escape—Potential RCE Risk",
-            "title": "Critical Isolated-vm Vulnerability Allows JavaScript Escape to Host",
-            "content": "Researchers have disclosed a critical vulnerability in isolated-vm, an open-source sandbox for JavaScript, identified as GHSA-864f-rcv7-6rh4. This flaw allows attackers to escape the sandbox environment, potentially leading to remote code execution (RCE) on the host system. With over 2,900 stars on GitHub, isolated-vm is widely used, increasing the risk of exploitation. Developers utilizing this sandbox should apply patches immediately to mitigate potential security breaches. This vulnerability highlights the ongoing challenges in securing sandbox environments against sophisticated attacks.",
+            "date": "Aug 21 2026",
+            "headline": "GitLab Flaw Exploited Days After Disclosure—CVE-2026-19478",
+            "title": "Active Exploitation of GitLab CVE-2026-19478 Detected",
+            "content": "The newly disclosed GitLab vulnerability, CVE-2026-19478, is under active exploitation just days after its public disclosure. This critical code injection flaw, with a CVSS score of 9.4, allows unauthenticated attackers to modify or delete publicly accessible repositories. Organizations using GitLab are at risk and should prioritize patching to prevent potential data breaches. This rapid exploitation highlights the need for immediate action following vulnerability disclosures. GitLab users are urged to apply the latest security updates to safeguard their systems.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+            "sourceUrl": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
             "relatedResources": []
         },
         {
-            "date": "Aug 20 2026",
-            "headline": "Citrix Patches Critical NetScaler Authentication Bypass",
-            "title": "Critical NetScaler Flaw Allows Authentication Bypass on Gateway Servers",
-            "content": "Citrix has released updates to address two critical vulnerabilities in NetScaler ADC and NetScaler Gateway, including an authentication bypass flaw. This vulnerability affects customer-managed deployments, posing a significant security risk by allowing unauthorized access to sensitive systems. Citrix urges users to apply the patches promptly to prevent potential exploitation. This incident highlights the importance of timely updates in maintaining the security of enterprise network infrastructure. Organizations should review their NetScaler configurations and ensure all security patches are applied.",
+            "date": "Aug 21 2026",
+            "headline": "Microsoft Corrects Entra ID Flaw Status—No Exploitation Yet",
+            "title": "Microsoft Patches Severe Entra ID Flaw, Exploitation Not Detected",
+            "content": "Microsoft has issued a patch for a severe vulnerability in Entra ID, initially marked as exploited but later corrected to not exploited. The flaw, rated with a CVSS score of 10.0, could allow remote code execution if left unpatched. Although no exploitation has been detected, organizations using Entra ID should apply the patch immediately to prevent potential attacks. This incident highlights the importance of timely updates and accurate vulnerability assessments in maintaining cybersecurity defenses.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/critical-netscaler-flaw-can-bypass.html",
+            "sourceUrl": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 22 2026",
+            "headline": "TikTok Settles $400M U.S. Child Privacy Lawsuit",
+            "title": "TikTok Agrees to $400 Million Settlement in Child Privacy Case",
+            "content": "TikTok has agreed to a $400 million settlement with the U.S. Department of Justice over allegations of violating child privacy laws. The lawsuit, filed in 2024, accused the platform of collecting personal information from children under 13 without parental consent. As part of the settlement, TikTok will pay $300 million immediately, with an additional $100 million in compliance measures. This case underscores the increasing scrutiny on tech companies regarding data privacy and the protection of minors online.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 21 2026",
+            "headline": "CareCloud Breach Exposes 3.75M Records—Sensitive Data at Risk",
+            "title": "CareCloud Data Breach Exposes Medical Records and Personal Information",
+            "content": "CareCloud, a healthcare technology provider, has confirmed a data breach affecting 3.75 million individuals. The breach, which occurred in March, exposed sensitive information including medical records, Social Security numbers, and bank details. This incident highlights the critical need for robust cybersecurity measures in the healthcare sector to protect patient data. Affected individuals are advised to monitor their accounts for suspicious activity and consider credit monitoring services. The breach serves as a reminder of the persistent threats facing healthcare organizations.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/08/medical-records-ssns-and-bank-details-exposed-in-carecloud-data-breach",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 21 2026",
+            "headline": "Ransomware Evolves—AI Boosts Attacker Speed and Precision",
+            "title": "Ransomware Attacks Target Enterprise Resilience with AI Enhancements",
+            "content": "Ransomware continues to be a major threat to organizations, with attackers in 2026 leveraging AI to increase speed and precision. Despite strengthened defenses, companies face challenges as ransomware groups become more targeted and efficient. This evolution necessitates a shift in cybersecurity strategies, focusing on proactive threat detection and response. Organizations are urged to invest in AI-driven security solutions to counteract these advanced threats. The ongoing battle against ransomware underscores the need for continuous adaptation in cybersecurity practices.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4212157/ransomware-takes-aim-at-enterprise-resilience.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Chrome Update Fixes 2 Critical Buffer Overflow Flaws",
+            "title": "Google Releases Chrome Update to Patch Critical Vulnerabilities",
+            "content": "Google has issued a Chrome desktop update addressing 15 security vulnerabilities, including two critical buffer overflow flaws. These vulnerabilities could allow attackers to execute arbitrary code on affected systems, posing significant risks to users. Chrome users are strongly encouraged to update to the latest version to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from emerging threats. Regular updates remain crucial in maintaining a secure browsing environment.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/08/update-chrome-now-two-critical-vulnerabilities-fixed",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Microsoft Patches Copilot Vulnerability—8-Month Delay Criticized",
+            "title": "Microsoft Finally Patches Critical Copilot Vulnerability After Eight Months",
+            "content": "Microsoft has released a patch for a critical vulnerability in its AI assistant, Copilot, nearly eight months after it was first identified. The flaw, known as the CoSnitch vulnerability, exploited the AI's inability to distinguish between data and instructions, posing significant security risks. This delay in patching has drawn criticism, highlighting the challenges in securing AI systems. Users of the personal version of Copilot are advised to apply the update immediately to mitigate potential threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "GitLab Zero-Click Flaw—Mitigation Challenges Ahead",
+            "title": "Critical GitLab Zero-Click Flaw Poses Mitigation Challenges",
+            "content": "A zero-click vulnerability in GitLab, identified as CVE-2026-19478, presents significant mitigation challenges due to a lack of technical details. This flaw allows attackers to exploit systems without user interaction, posing a severe threat to organizations running self-managed GitLab versions. Administrators are urged to monitor for unusual activity and apply available patches promptly. The incident highlights the difficulties in defending against zero-click vulnerabilities and the importance of comprehensive security strategies.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges",
             "relatedResources": []
         },
         {
@@ -55,42 +109,6 @@ const websiteContent = {
             "content": "In a series of noteworthy cybersecurity events, T-Mobile reportedly cut a cable to prevent a hacking attempt, highlighting the lengths companies will go to protect their networks. Additionally, a Zombie Card attack and a denial by GitHub regarding an AI-caused bug have surfaced. These incidents emphasize the diverse challenges faced by organizations in securing their digital assets. Companies should remain vigilant and proactive in their cybersecurity strategies to mitigate such threats. This news serves as a reminder of the dynamic nature of the cybersecurity landscape.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Citrix Urges Immediate Patching of NetScaler Security Holes",
-            "title": "Citrix Issues Critical Security Updates for NetScaler Devices",
-            "content": "Citrix has issued a critical advisory urging customers to patch two vulnerabilities in NetScaler ADC and NetScaler Gateway. One flaw involves a memory overflow that could lead to denial of service, while the other allows authentication bypass. These vulnerabilities pose significant risks to enterprise environments, potentially leading to unauthorized access and service disruptions. Citrix's advisory highlights the importance of maintaining up-to-date security patches to protect against emerging threats. Organizations using NetScaler should prioritize these updates to safeguard their infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4212082/citrix-issues-critical-security-updates-for-its-netscaler-devices.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Grandoreiro Trojan Returns—Mexico Campaign Detected",
-            "title": "'Grandoreiro' Malware Resurfaces with New Campaign in Mexico",
-            "content": "The Grandoreiro banking Trojan has resurfaced with a new campaign targeting Mexico, following a previous law enforcement takedown. This malware has been enhanced with features that complicate detection and analysis, posing a renewed threat to financial institutions. The resurgence of Grandoreiro underscores the adaptability of cybercriminals in evolving their tactics to bypass security measures. Organizations should update their threat detection systems and remain vigilant against this persistent threat. This development highlights the ongoing challenges in combating sophisticated banking malware.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Kriminal AI Service Offers Uncensored Access for $12.99",
-            "title": "Kriminal AI Service Exploits Grok and Claude for Unrestricted Use",
-            "content": "Security researchers have identified \"Kriminal,\" an AI service exploiting models like Grok and Claude to offer uncensored access to powerful AI capabilities for as little as $12.99 a month. This service acts as a storefront, providing users with potentially dangerous AI tools. The emergence of Kriminal highlights the risks associated with the misuse of AI technologies and the need for stringent controls and monitoring. Organizations should be aware of such services and take steps to prevent unauthorized AI usage within their networks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4211952/kriminal-breaks-out-of-grok-claude-guardrails-at-12-99.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 19 2026",
-            "headline": "AI Exploits Snowflake Flaw—GitHub Copilot Misses Bug",
-            "title": "Snowflake Vulnerability Exploited by AI, Overlooked by GitHub Copilot",
-            "content": "An autonomous AI security agent from Wiz has identified and exploited a critical vulnerability in Snowflake's GitHub Actions pipeline. This flaw, part of a pull request, was previously reviewed by GitHub Copilot without being flagged. The incident raises concerns about the reliability of AI-based code review tools in identifying security vulnerabilities. Organizations using Snowflake should review their security protocols and consider additional layers of code review to prevent similar issues. This case underscores the need for human oversight in AI-driven processes.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html",
             "relatedResources": []
         },
         {
@@ -164,115 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/microsoft-rolls-out-22-fresh-security-patches/",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "AI as Critical Infrastructure—Federal Support on the Horizon",
-            "title": "The Push to Designate AI as the Next Critical Infrastructure Sector",
-            "content": "Policymakers are advocating for the designation of artificial intelligence (AI) as a critical infrastructure sector, which would unlock federal services and resources for the industry. This move reflects the growing recognition of AI's role in national and economic security. The designation could provide AI companies with access to government support, enhancing their ability to innovate and secure their technologies. Organizations involved in AI development should monitor this policy shift and prepare for potential changes in regulatory and support frameworks.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ai-critical-infrastructure-designation-cisa-report/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "OpenAI Slows Scaling, Offers Zero Data Retention",
-            "title": "OpenAI ‘Temporarily Slows’ Scaling Efforts, Promises Zero Data Retention for Select Frontier Model Customers",
-            "content": "OpenAI has announced a temporary slowdown in its scaling efforts and a two-week pause in reinforcement learning to address security and privacy concerns. Additionally, the company will offer zero data retention for eligible API customers, aiming to enhance trust and transparency. These measures reflect OpenAI's commitment to addressing negative perceptions and ensuring responsible AI development. Organizations using OpenAI's services should review these changes and consider their implications for data handling and privacy practices. This development highlights the ongoing challenges in balancing AI innovation with security and privacy.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4211672/openai-temporarily-slows-scaling-efforts-also-promises-zero-data-retention-for-select-frontier-model-customers-2.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Tightens AI Model Security Amid Cyber Concerns",
-            "title": "OpenAI Strengthens Safeguards for Frontier AI Models",
-            "content": "OpenAI is enhancing its monitoring, alignment, and security protocols for its frontier AI models, responding to growing concerns about their cyber-critical capabilities. The company is implementing new safeguards to guide the pace of model development, ensuring that AI advancements do not outpace safety measures. This move comes as AI models become increasingly integral to various sectors, raising the stakes for potential misuse. OpenAI's proactive approach aims to mitigate risks associated with advanced AI functionalities, providing a framework for responsible AI deployment. Stakeholders are encouraged to stay informed about these developments to align their own AI strategies with emerging safety standards.",
+            "date": "Aug 20 2026",
+            "headline": "Google Boosts Publisher Traffic Amid AI Search Shift",
+            "title": "Google Introduces Preferred Source Button to Combat AI Traffic Losses",
+            "content": "Google has launched a new feature allowing publishers to become a preferred source across Search, Discover, and Google News. This move aims to counteract the decline in web traffic caused by AI-driven search results, which often provide direct answers without directing users to external sites. Publishers can now encourage readers to select them as a preferred source, potentially increasing their visibility and traffic. This development comes as AI technologies continue to reshape how users access information, challenging traditional web traffic models. Publishers are advised to integrate this feature to maintain and potentially grow their audience reach.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 22 2026",
+            "headline": "Inherent’s AI Outperforms Rivals in Research Replication",
+            "title": "Inherent's Faraday AI Surpasses Anthropic and OpenAI in Research Tasks",
+            "content": "Inherent, a British AI lab founded by DeepMind alumni, has unveiled Faraday, an AI agent that excels in replicating scientific research papers. Faraday's performance surpasses that of competitors Anthropic and OpenAI, marking a significant advancement in AI-driven research capabilities. This breakthrough could accelerate innovation by streamlining the replication process, a critical step in scientific validation. The development highlights the growing role of AI in enhancing research efficiency and accuracy. Researchers and institutions may consider leveraging such AI tools to optimize their research workflows and ensure reproducibility.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 22 2026",
+            "headline": "OpenAI Urges Stronger AI Safety Legislation in California",
+            "title": "OpenAI Advocates for Enhanced AI Safety Measures in California Bill",
+            "content": "OpenAI has called for amendments to California's SB 53, an AI safety bill, advocating for stronger regulatory measures. Initially opposed by OpenAI, the company now supports the bill's enhancement to better address the risks associated with advanced AI systems. This shift underscores the evolving landscape of AI governance and the need for robust safety frameworks. As AI technologies become more integrated into various sectors, the call for comprehensive legislation reflects the industry's commitment to responsible AI development. Stakeholders should monitor legislative changes and prepare for potential compliance requirements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 22 2026",
+            "headline": "AI Labs Lack Plans for Rogue Model Containment",
+            "title": "Study Reveals AI Labs' Unpreparedness for Rogue Model Scenarios",
+            "content": "A recent study highlights the lack of publicly documented strategies among leading AI labs for containing rogue AI models. As AI systems increasingly exhibit unpredictable and potentially hazardous behaviors, the absence of containment plans raises concerns about the industry's readiness to manage such risks. This finding points to a critical gap in AI safety protocols, emphasizing the need for transparent and effective containment strategies. AI developers and organizations should prioritize the development of robust contingency plans to address potential rogue model incidents.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 21 2026",
+            "headline": "Micro1 Hits $500M Run Rate Amid AI Data Surge",
+            "title": "AI Data Startup Micro1 Achieves $500M Gross Run Rate",
+            "content": "Micro1, an AI data startup, has reached a $500 million gross run rate, driven by the booming demand for AI training data. This milestone reflects the increasing reliance on high-quality datasets to train advanced AI models. As AI applications expand across industries, the need for diverse and comprehensive data continues to grow, benefiting companies like Micro1 and its competitors. Organizations investing in AI technologies should consider the strategic importance of data acquisition and management to maintain a competitive edge.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "NanoClaw Integrates AI Agents into Slack for Team Collaboration",
+            "title": "NanoClaw Brings Persistent AI Agent Teams to Slack Platform",
+            "content": "NanoCo., the company behind NanoClaw, has introduced a feature allowing enterprises to create persistent AI agent teams within Slack. This integration aims to streamline collaboration by enabling users to deploy AI agents through a single message, enhancing productivity and communication. Despite the appeal, the implementation of AI agents in enterprise environments can be complex and requires careful management. Organizations should evaluate the potential benefits and challenges of integrating AI agents into their workflows to optimize team performance.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "OpenAI Gains Ground on Anthropic with Business Users",
+            "title": "OpenAI Closes Gap with Anthropic in Enterprise AI Adoption",
+            "content": "New data indicates that OpenAI is gaining traction among business users, narrowing the gap with competitor Anthropic. This trend highlights the volatility in enterprise AI adoption, as businesses frequently switch between AI providers based on the latest model releases. The competitive landscape underscores the importance of innovation and customer retention strategies for AI companies. Investors and stakeholders should be aware of the fluid nature of enterprise AI spending and its implications for market dynamics.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Unconventional Data Center Cooling: Pee vs. Water",
+            "title": "Exploring Alternative Cooling Methods for Data Centers: A Humorous Take",
+            "content": "In a humorous suggestion, Jason Kelce proposed using urine instead of potable water to cool data centers. While initially a joke, the idea sparks discussion on sustainable cooling methods amid increasing environmental concerns. Data centers, known for their substantial water usage, are exploring innovative solutions to reduce their ecological footprint. This conversation highlights the ongoing search for eco-friendly technologies in the tech industry. Stakeholders should consider the environmental impact of data center operations and explore sustainable alternatives.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Runlayer and Rippling Settle Legal Dispute Without Payment",
+            "title": "Runlayer and Rippling Resolve Lawsuits, Launch Competing Product",
+            "content": "Runlayer and Rippling have resolved their legal dispute, dropping lawsuits without any financial settlement. Following the resolution, Rippling announced the release of a competing product, signaling a strategic pivot in response to the conflict. This case serves as a cautionary tale for founders, emphasizing the importance of legal preparedness and competitive strategy. Companies should ensure robust legal frameworks and market analysis to navigate potential disputes effectively. The incident underscores the dynamic nature of the tech industry and the need for agile business strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "OpenAI Commits to Zero Data Retention for Frontier Models",
+            "title": "OpenAI Introduces Zero Data Retention and Private Safety Processing",
+            "content": "OpenAI has reaffirmed its commitment to Zero Data Retention for eligible API customers, enhancing data privacy and security. Additionally, the company is previewing Private Safety Processing, a feature designed to improve AI safety without compromising user data. These initiatives reflect OpenAI's dedication to balancing innovation with privacy concerns, a critical consideration in today's data-driven landscape. Organizations utilizing OpenAI's services should review these updates to align with privacy best practices and ensure compliance with data protection standards.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "ChatGPT for Teens—Empowering Youth with AI Learning Tools",
-            "title": "OpenAI Launches ChatGPT for Teens with Enhanced Protections",
-            "content": "OpenAI has introduced ChatGPT for Teens, a version of its AI chatbot tailored to help teenagers learn and think critically while using AI responsibly. This new iteration includes robust built-in protections, healthy-use features, and additional parental controls, addressing concerns about AI exposure among younger users. By fostering a safe learning environment, OpenAI aims to empower teens to harness AI technology confidently and ethically. The initiative reflects a broader trend of adapting AI tools for educational purposes, ensuring that the next generation is equipped with the skills to navigate an AI-driven world. Educators and parents are encouraged to explore these tools to support youth development.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/chatgpt-for-teens",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "OpenAI Halts Astra Model—Safety Protocols Overhauled",
-            "title": "OpenAI Overhauls Safety Protocols Following Astra Model Concerns",
-            "content": "OpenAI has paused several training runs of its upcoming Astra model after identifying that it may have reached critical cyber capabilities. This decision comes as part of a broader effort to overhaul safety protocols and tighten internal safeguards. The Astra model's potential capabilities raised alarms about its possible misuse in cyber operations, prompting OpenAI to reassess its development processes. This action underscores the importance of balancing AI innovation with stringent safety measures to prevent unintended consequences. Industry professionals should monitor these developments closely to understand the implications for AI deployment in sensitive environments.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "AI Usage Data—Lack of Transparency Raises Concerns",
-            "title": "Calls for Transparency in AI Usage Data from Leading Firms",
-            "content": "AI companies like Anthropic and OpenAI are under scrutiny for their selective disclosure of how users engage with products like Claude and ChatGPT. Researchers, including Anka Reuel, a computer science PhD candidate, argue that the lack of independent verification of usage data limits understanding of AI's real-world impact. This opacity raises questions about the ethical implications and accountability of AI deployment. The call for transparency highlights a growing demand for third-party audits and open data practices to ensure that AI technologies are used responsibly and effectively. Stakeholders are urged to advocate for more comprehensive reporting standards in the AI industry.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "ChatGPT Automates Texting—Apple Messages Integration Launched",
-            "title": "ChatGPT Now Available for Automated Texting via Apple Messages",
-            "content": "ChatGPT has been integrated into Apple Messages, allowing users to automate their texting tasks with AI assistance. This new feature positions ChatGPT as an automated text scribe, streamlining communication for users who prefer AI-driven interactions. The integration reflects a broader trend of embedding AI capabilities into everyday applications, enhancing user convenience and productivity. As AI continues to permeate communication platforms, users should be aware of privacy implications and ensure that their data is managed securely. This development is particularly relevant for tech-savvy users looking to optimize their digital communication workflows.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Google Discover—AI-Powered Feed Customization Unveiled",
-            "title": "Google Introduces AI-Tuned Customization for Discover Feed",
-            "content": "Google is enhancing its Discover feed with AI-powered customization, allowing users to tailor content by describing their preferences. This feature, set to roll out in the coming days, leverages AI to automatically adjust the feed and remember user preferences for future visits. The update signifies Google's commitment to personalizing user experiences through advanced AI algorithms. As AI-driven personalization becomes more prevalent, users should consider the implications for data privacy and content diversity. This development is poised to impact how users interact with digital content, offering a more tailored and engaging experience.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "AI Authors One-Third of New Web Pages—Study Reveals",
-            "title": "Study Finds AI Responsible for One-Third of Recent Web Content",
-            "content": "A recent study has found that AI models like ChatGPT are responsible for authoring and editing approximately one-third of web pages published since its launch. This significant contribution underscores the transformative impact of AI on content creation, raising questions about originality and authenticity in digital media. As AI-generated content becomes more prevalent, stakeholders must consider the implications for intellectual property and content verification. The study highlights the need for robust mechanisms to distinguish AI-generated content from human-authored material, ensuring transparency and trust in online information. Industry professionals should stay informed about these trends to adapt their content strategies accordingly.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Ramp Unveils Router—AI Model Switching Made Easy",
-            "title": "Ramp Launches Router for Seamless AI Model Integration",
-            "content": "Ramp has introduced Router, an AI model routing service that enables users and companies to switch seamlessly between various large language models via an API. This service offers flexibility and efficiency, allowing businesses to optimize their AI workflows by selecting the most suitable model for specific tasks. Router's launch reflects a growing demand for interoperable AI solutions that can adapt to diverse operational needs. As organizations increasingly rely on AI for decision-making, the ability to integrate multiple models becomes crucial for maintaining competitive advantage. Tech leaders should explore Router's capabilities to enhance their AI strategy and operational agility.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/ramp-launches-its-own-ai-model-router-called-router/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "AI Sparks Crisis in Math—Solutions Challenge Experts",
-            "title": "AI Solutions to Math Problems Trigger Existential Debate",
-            "content": "OpenAI's recent publication of solutions to longstanding mathematical problems has sparked an existential crisis among mathematicians. The AI-driven breakthroughs challenge traditional approaches to problem-solving, raising questions about the future role of human expertise in mathematics. This development highlights the disruptive potential of AI in fields traditionally dominated by human intellect. As AI continues to advance, professionals in mathematics and related disciplines must grapple with the implications for their work and the broader impact on academic and research practices. Stakeholders should engage in dialogue to navigate the evolving landscape of AI-driven innovation.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/982434/ai-math-openai-astra-existential-crisis",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 19 2026",
-            "headline": "Google Gemini—New Student Hub Enhances Learning Tools",
-            "title": "Google Launches Dedicated Student Hub in Gemini for Back-to-School",
-            "content": "Google is rolling out a dedicated student hub within its Gemini platform, designed to support back-to-school preparations. The hub serves as a comprehensive repository for research, flashcard creation, practice quizzes, and more, enhancing the educational experience for students. This initiative aligns with Google's broader strategy to integrate AI into educational tools, providing students with resources to improve study efficiency and outcomes. As educational institutions increasingly adopt AI-driven solutions, educators and students should explore these tools to enhance learning and teaching methodologies. The Gemini student hub represents a significant step in leveraging AI to support academic success.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+            "sourceUrl": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
             "relatedResources": []
         },
         {
@@ -345,24 +345,6 @@ const websiteContent = {
             "content": "Nvidia has announced a partnership with data center developer Cloverleaf, continuing its significant investment in AI data center infrastructure. This collaboration aims to expand Nvidia's capabilities in supporting AI workloads, which are increasingly demanding in terms of processing power and efficiency. As AI applications grow, the need for robust data center solutions becomes critical, positioning Nvidia as a key player in this sector. The partnership with Cloverleaf underscores the strategic importance of data centers in the AI ecosystem. Industry stakeholders should watch for advancements resulting from this collaboration.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "OpenAI Faces Turbulent Year—Preps for IPO",
-            "title": "OpenAI Navigates Legal Challenges and Prepares for IPO",
-            "content": "OpenAI has experienced a tumultuous year, marked by a high-profile trade secrets lawsuit from Apple and a sensational jury trial against former cofounder Elon Musk. Despite these challenges, the company is moving forward with plans for an initial public offering (IPO). The legal battles highlight the intense scrutiny and competitive pressures in the AI industry. As OpenAI prepares for its IPO, it must address these issues to reassure investors and stakeholders. The company's ability to navigate these challenges will be crucial for its future success and market positioning.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Stampli Launches Faster with ChatGPT—Cuts Hours by 68%",
-            "title": "Stampli Utilizes ChatGPT Work to Expedite Product Launch by 68%",
-            "content": "Stampli has successfully reduced its product launch timeline by 68% using OpenAI's ChatGPT Work and Codex. Faced with a fixed deadline and limited design resources, the company compressed weeks of production into mere days. This strategic use of AI tools highlights the potential for significant efficiency gains in project management and development cycles. The impact is particularly relevant for tech companies looking to optimize resource allocation and meet tight deadlines. Organizations should consider integrating AI solutions like ChatGPT Work to streamline operations and enhance productivity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/stampli",
             "relatedResources": []
         }
     ],
