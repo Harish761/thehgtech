@@ -5,8 +5,17 @@
     <link>https://thehgtech.com</link>
     <description>Breaking news, analysis, and insights on cybersecurity threats and artificial intelligence</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2026 05:55:37 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 23 Aug 2026 13:37:00 +0000</lastBuildDate>
     <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE-2026-69836: Microsoft Entra ID CVSS 10.0 RCE — Corrected Exploitation Status, No Action Required</title>
+      <link>https://thehgtech.com/articles/microsoft-entra-id-rce-cve-2026-69836.html</link>
+      <guid isPermaLink="true">https://thehgtech.com/articles/microsoft-entra-id-rce-cve-2026-69836.html</guid>
+      <pubDate>Sat, 23 Aug 2026 13:37:00 +0000</pubDate>
+      <dc:creator>Harish G</dc:creator>
+      <description>CVE-2026-69836 is a critical CVSS 10.0 deserialization RCE in Microsoft Entra ID. Microsoft fully mitigated it server-side. An initial exploitation claim was corrected to No. No customer action required. Primary-source analysis from MSRC API, NVD, MITRE CVE, and CISA KEV.</description>
+      <content:encoded><![CDATA[ <p>CVE-2026-69836 is a critical CVSS 10.0 remote code execution vulnerability in Microsoft Entra ID caused by deserialization of untrusted data (CWE-502). Microsoft fully mitigated the flaw server-side before disclosure. An initial exploitation flag was corrected to No within 24-48 hours of publication. No customer action is required.</p><p><a href="https://thehgtech.com/articles/microsoft-entra-id-rce-cve-2026-69836.html">Read the full primary-source analysis at TheHGTech</a></p> ]]></content:encoded>
+    </item>
     <item>
       <title>Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints</title>
       <link>https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html</link>
