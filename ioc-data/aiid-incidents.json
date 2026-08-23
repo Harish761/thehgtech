@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1580",
+      "incident_id": 1580,
+      "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
+      "date": "2026-08-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1582",
+      "incident_id": 1582,
+      "title": "Bangladesh-Operated Facebook Pages Reportedly Used AI-Generated Imagery to Mimic U.S. Grassroots Opp",
+      "date": "2026-08-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-811",
       "incident_id": 811,
       "title": "AI-Powered Transcription Services Allegedly Leak Confidential Workplace Discussions",
@@ -665,14 +681,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1580",
-      "incident_id": 1580,
-      "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
-      "date": "2026-07-10",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1581",
       "incident_id": 1581,
       "title": "Storm-1516 Reportedly Spread Fabricated Narratives Targeting Firebird Data Center in Armenia",
@@ -702,14 +710,6 @@
       "title": "Purportedly AI-Generated Videos Reportedly Impersonated Ghanaian President John Mahama to Solicit Mo",
       "date": "2026-07-09",
       "category": "fraud",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1582",
-      "incident_id": 1582,
-      "title": "Bangladesh-Operated Facebook Pages Reportedly Shared AI-Generated Anti-Data-Center Imagery",
-      "date": "2026-07-09",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -2331,8 +2331,8 @@
   ],
   "stats": {
     "total": 291,
-    "last7Days": 12,
-    "last30Days": 56
+    "last7Days": 14,
+    "last30Days": 58
   },
-  "lastUpdated": "2026-08-23T14:12:23.271230+05:30"
+  "lastUpdated": "2026-08-23T18:27:10.079867+05:30"
 }
