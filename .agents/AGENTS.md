@@ -4,14 +4,12 @@
 
 ## STRICT PUBLISHING WORKFLOW (CRITICAL)
 NEVER manually edit `articles.html`, `index.html`, or `articles/page/*/index.html` to add new articles. The site uses a dynamic build system.
+
 1. **Metadata**: Always append new article metadata to the central datastore: `ioc-data/articles.json`.
 2. **Pagination**: Always run `python3 scripts/generate_pagination.py` to auto-build the grids and static fallbacks.
-3. **Structure**: When creating the article HTML, you MUST include the bottom interaction bar and mobile scripts. Read `templates/article-template.html` or read a previous article entirely to the `</html>` tag to ensure you do not miss the footer components.
+3. **HTML Structure & Boilerplate (CRITICAL RULE)**: 
+   - **DO NOT** generate new article HTML from scratch using scripts, f-strings, or basic templates. 
+   - Because the site is statically structured without a server-side include system, the top navigation mega-menu, search overlays, stylesheets, and bottom interaction bars are **massive and hardcoded**.
+   - **YOU MUST** create new articles by completely cloning a recent, fully-featured article (e.g., `cp articles/apple-dyld-zero-day-cve-2026-20700.html articles/new-article.html`).
+   - After cloning, use targeted replacements to overwrite ONLY the `<title>`, SEO `<meta>` tags, JSON-LD `<script>` blocks, and the inner `<article> ... </article>` content. Leave the `<body>` wrapper, `<header>`, and `<nav>` entirely untouched.
 4. **Documentation**: Always consult `docs/ARTICLE_CREATION_GUIDE.md` and `docs/ARTICLES-PAGE-IMPLEMENTATION.md` before attempting structural changes to the publishing pipeline.
-
-## STRICT PUBLISHING WORKFLOW (CRITICAL)
-NEVER manually edit `articles.html`, `index.html`, or `articles/page/*/index.html` to add new articles. The site uses a dynamic build system.
-1. **Metadata**: Always insert new article metadata to the central datastore: `ioc-data/articles.json`.
-2. **Pagination**: Always run `python3 scripts/generate_pagination.py` to auto-build the grids and static fallbacks.
-3. **Structure**: When creating the article HTML, you MUST include the bottom interaction bar and mobile scripts. Read `templates/article-template.html` or read a previous article entirely to the `</html>` tag to ensure you do not miss the footer components.
-4. **Documentation**: Always consult `docs/ARTICLE_CREATION_GUIDE.md` before publishing.
