@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Aug 20 2026",
+            "headline": "Rust Crates Compromised—245M Downloads Affected by Malware",
+            "title": "Rust Supply Chain Attack Infects Popular Crates with Build-Time Malware",
+            "content": "The Rust Project has removed malicious versions of three popular Rust crates from crates.io following a supply chain attack. A compromised maintainer account published releases that included a typosquatted dependency, which executed a remote payload during compilation. The affected crates, downloaded 245 million times, underscore the vulnerability of open-source ecosystems to such attacks. This incident highlights the critical need for developers to verify dependencies and maintain strict security protocols. Users of the affected crates should immediately update to the latest secure versions to mitigate potential risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "AI Scripts Target Siemens PLCs—U.S. Infrastructure at Risk",
+            "title": "AI-Generated Exploit Scripts Threaten Siemens S7 PLCs in Critical U.S. Infrastructure",
+            "content": "The U.S. government has issued a warning about an active threat targeting critical infrastructure using AI-generated exploit scripts. These scripts are specifically designed to target Siemens S7 Series Programmable Logic Controllers (PLCs), enabling reconnaissance and potential sabotage. This development marks a significant escalation in the use of AI for cyberattacks, posing severe risks to national security. Organizations using Siemens S7 PLCs should enhance their security measures and monitor for unusual activity. This threat highlights the growing intersection of AI and cybersecurity, necessitating advanced defenses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/ai-generated-exploit-scripts-target.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Isolated-vm Flaw Exposes Hosts—Patch to Prevent RCE",
+            "title": "Isolated-vm Vulnerability Allows JavaScript Escape for Remote Code Execution",
+            "content": "A critical security flaw has been discovered in isolated-vm, a widely used open-source JavaScript sandbox. The vulnerability, identified as GHSA-864f-rcv7-6rh4, allows attackers to escape the sandbox environment, potentially leading to remote code execution on the host system. With over 2,900 stars on GitHub, isolated-vm is popular in AI projects, making this flaw particularly concerning. Developers using isolated-vm should apply the latest patches immediately to protect against exploitation. This incident underscores the importance of rigorous security testing in open-source software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "JavaScript Sandbox Flaw Patched—AI Projects at Risk",
+            "title": "Critical Flaw Patched in Popular JavaScript Sandbox Used in AI Projects",
+            "content": "A critical vulnerability in isolated-vm, a JavaScript sandbox library, has been patched following its discovery. The flaw allowed attackers to hijack the host's control flow, enabling potential remote code execution. Isolated-vm is extensively used in AI projects, making this vulnerability a significant concern for developers. Users are urged to update to the latest version to safeguard their systems. This patch highlights the ongoing need for vigilance in securing open-source tools that underpin critical AI applications.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4212151/critical-flaw-patched-in-popular-javascript-sandbox-used-in-ai-projects.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Citrix Patches Critical NetScaler Flaws—Immediate Update Urged",
+            "title": "Citrix Issues Critical Security Updates for NetScaler Devices",
+            "content": "Citrix has released urgent patches for two critical vulnerabilities affecting NetScaler ADC and NetScaler Gateway. One flaw involves a memory overflow that could lead to denial of service, while the other allows authentication bypass. These vulnerabilities pose significant risks to customer-managed NetScaler deployments, potentially compromising network security. Citrix advises all users to apply the updates promptly to protect against potential exploitation. This situation emphasizes the importance of timely patch management in maintaining secure network environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4212082/citrix-issues-critical-security-updates-for-its-netscaler-devices.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Cyber Policing Hindered by Budget and Training Gaps",
+            "title": "Money and Mindset: Roadblocks to Effective Cyber Policing",
+            "content": "The rapid evolution of cybercrime is outpacing law enforcement training, with officers often lacking even basic cybersecurity skills. Budget constraints and a lack of focus are major barriers to progress in cyber policing. As cyber threats become more sophisticated, the need for specialized training and resources is critical. This gap leaves law enforcement ill-prepared to tackle the growing volume of cyber incidents, highlighting an urgent need for investment in cybersecurity education and infrastructure.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "AI as Critical Infrastructure—Federal Support on the Horizon",
+            "title": "Push to Designate AI as Next Critical Infrastructure Sector",
+            "content": "Policymakers are advocating for artificial intelligence (AI) to be designated as a critical infrastructure sector, a move that would unlock federal resources and support. This designation reflects AI's increasing importance to national and economic security. If approved, the AI industry could gain access to enhanced federal services, tools, and protections. This initiative underscores the growing recognition of AI's pivotal role in modern society and the need for robust security measures to safeguard it.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ai-critical-infrastructure-designation-cisa-report/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "'Grandoreiro' Trojan Returns—Targets Mexican Banks",
+            "title": "'Grandoreiro' Malware Resurfaces with New Campaign in Mexico",
+            "content": "The banking Trojan 'Grandoreiro' has resurfaced, targeting financial institutions in Mexico with enhanced features to evade detection. Following a law enforcement takedown, the malware has been updated to make analysis more challenging. This resurgence highlights the persistent threat posed by banking Trojans and the need for robust cybersecurity defenses in the financial sector. Institutions are advised to strengthen their security measures and remain vigilant against evolving malware tactics.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Clop's PTC Hack—Long-Term Impacts Unfolding",
+            "title": "The Long Tail of Clop’s PTC Hack Begins to Emerge",
+            "content": "The Clop ransomware group is believed to have exploited a critical vulnerability in PTC's product lifecycle management software. This breach, occurring in June, preceded threatening emails sent to victims. The incident underscores the long-term impacts of ransomware attacks and the importance of timely vulnerability management. Organizations using PTC software should review their security protocols and ensure all patches are applied. This case highlights the evolving tactics of ransomware groups in targeting critical software vulnerabilities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/clop-zero-day-attacks-ptc-windchill-flexplm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Snowflake Flaw Exploited by AI—GitHub Copilot Misses It",
+            "title": "Snowflake Vulnerability Exploited by AI Despite Copilot Review",
+            "content": "An autonomous AI security agent from Wiz identified and exploited a critical vulnerability in Snowflake’s GitHub Actions pipeline. The flaw was overlooked by GitHub Copilot during code review, raising concerns about the reliability of AI-driven code analysis tools. This incident highlights the need for human oversight in code security and the potential risks of relying solely on AI for vulnerability detection. Developers should implement comprehensive security checks to prevent similar exploits.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4211501/snowflake-flaw-slips-past-ai-checks-gets-exploited-by-another-ai.html",
+            "relatedResources": []
+        },
+        {
             "date": "Aug 21 2026",
             "headline": "Isolated-vm Flaw Enables Host RCE—Patch Immediately",
             "title": "Critical Isolated-vm Vulnerability Allows Remote Code Execution on Host",
@@ -67,33 +157,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 19 2026",
-            "headline": "Chrome Update Fixes 2 Critical Buffer Overflow Flaws",
-            "title": "Google Releases Chrome Update to Patch Critical Vulnerabilities",
-            "content": "Google has issued a Chrome desktop update addressing 15 security vulnerabilities, including two critical buffer overflow flaws. These vulnerabilities could allow attackers to execute arbitrary code on affected systems, posing significant risks to users. Chrome users are strongly encouraged to update to the latest version to protect against potential exploits. This update is part of Google's ongoing efforts to enhance browser security and protect users from emerging threats. Regular updates remain crucial in maintaining a secure browsing environment.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/08/update-chrome-now-two-critical-vulnerabilities-fixed",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 19 2026",
-            "headline": "Microsoft Patches Copilot Vulnerability—8-Month Delay Criticized",
-            "title": "Microsoft Finally Patches Critical Copilot Vulnerability After Eight Months",
-            "content": "Microsoft has released a patch for a critical vulnerability in its AI assistant, Copilot, nearly eight months after it was first identified. The flaw, known as the CoSnitch vulnerability, exploited the AI's inability to distinguish between data and instructions, posing significant security risks. This delay in patching has drawn criticism, highlighting the challenges in securing AI systems. Users of the personal version of Copilot are advised to apply the update immediately to mitigate potential threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4211342/microsoft-finally-patches-critical-one-click-copilot-vulnerability-more-than-eight-months-after-learning-of-it-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 18 2026",
-            "headline": "GitLab Zero-Click Flaw—Mitigation Challenges Ahead",
-            "title": "Critical GitLab Zero-Click Flaw Poses Mitigation Challenges",
-            "content": "A zero-click vulnerability in GitLab, identified as CVE-2026-19478, presents significant mitigation challenges due to a lack of technical details. This flaw allows attackers to exploit systems without user interaction, posing a severe threat to organizations running self-managed GitLab versions. Administrators are urged to monitor for unusual activity and apply available patches promptly. The incident highlights the difficulties in defending against zero-click vulnerabilities and the importance of comprehensive security strategies.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges",
-            "relatedResources": []
-        },
-        {
             "date": "Aug 22 2026",
             "headline": "Banking Trojans Manic, Grandoreiro, ToxicPanda 2.0 Resurface",
             "title": "Banking Trojans Manic, Grandoreiro, and ToxicPanda 2.0 in Focus",
@@ -119,79 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/former-nsa-director-paul-nakasone-launches-national-security-advisory-firm/",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Apollo Breach: Financial Sector Under Siege",
-            "title": "Apollo Discloses Data Breach from Ongoing Wave of Attacks Hitting Financial Sector",
-            "content": "Apollo, a prominent private equity firm, has disclosed a data breach affecting its cloud platforms during a five-day period in early July. Attackers accessed sensitive personal data, underscoring the persistent threat to the financial sector. This breach is part of a broader wave of attacks targeting financial institutions, raising concerns about the security of cloud-based systems. Organizations in the financial sector must prioritize strengthening their cybersecurity defenses and conducting regular security audits to protect sensitive information. The incident highlights the critical need for robust incident response strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/apollo-discloses-data-breach-social-engineering-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "14 Trojanized npm Packages Deploy AI-Backed Linux Backdoor",
-            "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
-            "content": "Researchers have identified 14 trojanized npm packages masquerading as calendar and streak utilities, designed to deliver the AI-powered Linux implant RedC2 4.0. The backdoor leverages AI-assisted command and control (C2) capabilities, posing a significant threat to Linux systems. The discovery highlights the increasing sophistication of supply chain attacks targeting open-source ecosystems. Developers and organizations using npm packages should conduct thorough security reviews and monitor for suspicious activity. This incident underscores the importance of securing software supply chains against emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Microsoft Defender Driver Exploited to Remove Security Software",
-            "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
-            "content": "Check Point Research has revealed a technique exploiting Microsoft Defender's signed boot-time remediation driver to perform unauthorized kernel-level operations. This method affects Windows systems from version 7 through 11 25H2, allowing attackers to delete security software at boot without exploiting any software flaws. The vulnerability highlights the risks associated with trusted components being repurposed for malicious activities. Organizations should ensure their security solutions are updated and monitor for unusual system behavior. This discovery emphasizes the need for vigilant security practices even with trusted software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Android Car Malware Targets Vehicle Firmware for Ad Fraud",
-            "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
-            "content": "A new malware family has been identified targeting Android-based vehicle head unit firmware developed by DoFun. Discovered by Kaspersky, the malware aims to deploy a multi-stage downloader for ad fraud and proxy botnet activities. This threat represents a novel attack vector exploiting vehicle systems, potentially impacting user privacy and security. Automakers and users should ensure firmware updates are sourced from trusted providers and remain vigilant against unauthorized modifications. The rise of connected vehicles necessitates robust cybersecurity measures to protect against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Encrypted Prompts Bypass AI Safety in Grok, Gemini",
-            "title": "Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini",
-            "content": "Researchers have discovered a technique called 'Cryptographic Context Injection' that bypasses AI safety guardrails in models like Grok and Gemini. This method conceals malicious instructions within encrypted prompts, only revealing them inside a trusted execution environment. The vulnerability raises concerns about the integrity of AI systems and their susceptibility to manipulation. Organizations utilizing AI models should implement additional security measures to detect and mitigate such threats. This finding underscores the importance of continuous monitoring and validation of AI systems to ensure their safe operation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Phishing Toolkit Uses Passkeys for Persistent Access",
-            "title": "New Phishing Toolkit Uses Passkeys to Maintain Access After Password Resets",
-            "content": "The iAuthFlow V2 phishing toolkit has been identified, capable of registering attacker-controlled passkeys to maintain access even after password resets and session revocations. This toolkit poses a significant threat by enabling persistent unauthorized access to compromised accounts. Organizations should educate users on recognizing phishing attempts and implement multi-factor authentication (MFA) to enhance security. The emergence of such sophisticated phishing tools highlights the need for continuous vigilance and proactive security measures to protect sensitive information.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/new-phishing-toolkit-uses-passkeys-to-maintain-access-after-password-resets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Microsoft Patches 22 Vulnerabilities in Entra ID",
-            "title": "Microsoft Patches Exploited Entra ID Vulnerability",
-            "content": "Microsoft has released 22 patches addressing vulnerabilities in Entra ID, including those for code execution, privilege escalation, and information disclosure. The patches aim to mitigate risks associated with these vulnerabilities, which could be exploited by attackers to gain unauthorized access or execute malicious code. Organizations using Entra ID should apply these patches promptly to protect their systems. This update underscores the importance of regular patch management and staying informed about security advisories to maintain a secure IT environment.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-rolls-out-22-fresh-security-patches/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
             "date": "Aug 20 2026",
-            "headline": "Google Boosts Publisher Traffic Amid AI Search Shift",
-            "title": "Google Introduces Preferred Source Button to Combat AI Traffic Losses",
-            "content": "Google has launched a new feature allowing publishers to become a preferred source across Search, Discover, and Google News. This move aims to counteract the decline in web traffic caused by AI-driven search results, which often provide direct answers without directing users to external sites. Publishers can now encourage readers to select them as a preferred source, potentially increasing their visibility and traffic. This development comes as AI technologies continue to reshape how users access information, challenging traditional web traffic models. Publishers are advised to integrate this feature to maintain and potentially grow their audience reach.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
+            "headline": "Stampli Launches 68% Faster with ChatGPT Work",
+            "title": "Stampli Accelerates Product Launch Using ChatGPT Work and Codex",
+            "content": "Stampli has significantly reduced its product launch timeline by 68% through the integration of OpenAI's ChatGPT Work and Codex. Facing a fixed deadline and limited design resources, the company managed to compress weeks of production into mere days. This acceleration was achieved by leveraging AI-driven automation and coding assistance, demonstrating the potential of AI to streamline complex workflows. The impact is particularly beneficial for tech companies under tight schedules, offering a blueprint for efficient resource allocation. As AI tools become more sophisticated, their role in project management and execution is expected to grow.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/stampli",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "OpenAI Tightens AI Model Safeguards Amid Cyber Concerns",
+            "title": "OpenAI Enhances Monitoring and Security for Frontier AI Models",
+            "content": "OpenAI is bolstering its monitoring and security measures for frontier AI models in response to growing cyber-critical capabilities. The organization is implementing new safeguards to guide the development pace of these models, ensuring alignment with security protocols. This move comes as AI systems increasingly influence critical sectors, necessitating robust oversight to prevent misuse. By strengthening these measures, OpenAI aims to mitigate risks associated with advanced AI deployment, emphasizing the importance of responsible innovation. Stakeholders are advised to stay informed about these developments to align with industry best practices.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "ChatGPT for Teens—Safe AI Learning Platform Launched",
+            "title": "OpenAI Introduces ChatGPT for Teens with Enhanced Protections",
+            "content": "OpenAI has launched ChatGPT for Teens, a platform designed to help teenagers learn and engage with AI safely. This version includes stronger built-in protections, healthy-use features, and additional parental controls to foster a secure learning environment. The initiative aims to equip young users with critical thinking skills and confidence in using AI tools. As AI becomes more integrated into daily life, such educational platforms are crucial for developing responsible digital citizens. Parents and educators are encouraged to explore these features to support youth in navigating AI technologies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/chatgpt-for-teens",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "OpenAI Halts Astra Model—Safety Protocols Overhauled",
+            "title": "OpenAI Overhauls Safety Protocols After Astra Model Concerns",
+            "content": "OpenAI is overhauling its safety protocols following concerns that its upcoming Astra model may have reached critical cyber capabilities. The organization has paused numerous training runs to tighten internal safeguards, ensuring that AI development aligns with security standards. This decision underscores the potential risks associated with advanced AI models and the need for rigorous oversight. The halt in training highlights OpenAI's commitment to preventing AI systems from operating beyond intended parameters. Industry professionals should monitor these developments to understand the evolving landscape of AI safety.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 18 2026",
+            "headline": "AI Usage Data Lacks Independent Verification—Researchers Warn",
+            "title": "Researchers Question Transparency of AI Usage Data Reports",
+            "content": "AI researchers are raising concerns about the transparency of usage data reports from companies like Anthropic and OpenAI. These reports, which detail how products like Claude and ChatGPT are used, are criticized for lacking independent verification. Anka Reuel, a computer science PhD candidate, highlights the absence of corroborative sources, suggesting that the data may not fully represent user interactions. This issue points to a broader challenge in the AI industry regarding data transparency and accountability. Stakeholders are urged to advocate for more open data practices to ensure accurate assessments of AI impact.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "ChatGPT Automates Texting with Apple Messages Plug-In",
+            "title": "ChatGPT Integrates with Apple Messages for Automated Texting",
+            "content": "ChatGPT is now available as an automated texting assistant via a new integration with Apple Messages. This plug-in allows users to delegate text composition to ChatGPT, streamlining communication tasks. The integration exemplifies the growing trend of AI-driven automation in everyday applications, enhancing user convenience and efficiency. As AI continues to integrate with consumer technologies, users can expect more seamless interactions across platforms. Professionals should consider the implications of such integrations on productivity and communication strategies.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Google Discover Feed Gets AI-Powered Customization",
+            "title": "Google Introduces AI-Tuned Customization for Discover Feed",
+            "content": "Google is enhancing its Discover feed with AI-powered customization, allowing users to tailor content by describing their preferences. This feature, set to roll out in the coming days, uses AI to adjust the feed dynamically and remember user preferences for future visits. The update reflects a broader trend of personalized content delivery driven by AI capabilities. Users will find the customization option within the Google app, offering a more tailored browsing experience. This development underscores the role of AI in enhancing user engagement through personalized content.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "OpenAI Faces Turbulent Year Amid Legal and IPO Challenges",
+            "title": "OpenAI Navigates Legal Battles and IPO Preparations",
+            "content": "OpenAI is navigating a challenging year marked by legal disputes and preparations for an initial public offering (IPO). The company has faced a high-profile trade secrets lawsuit from Apple and a sensational jury trial involving former cofounder Elon Musk. Additionally, an unreleased model's hacking incident has drawn widespread scrutiny. As OpenAI gears up for its IPO, these events highlight the complexities of operating at the forefront of AI innovation. Stakeholders should monitor these developments for insights into the evolving dynamics of the AI industry.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 19 2026",
+            "headline": "Google Gemini Launches Student Hub for Back-to-School Season",
+            "title": "Google Enhances Gemini with Dedicated Student Hub Features",
+            "content": "Google is rolling out a dedicated student hub within its Gemini platform, just in time for the back-to-school season. This hub serves as a comprehensive tool for students, offering features like research collection, flashcard creation, and practice quizzes. The enhancement includes support for group study sessions, aiming to facilitate collaborative learning. This initiative reflects Google's commitment to integrating AI into educational tools, providing students with resources to enhance their learning experience. Educators and students are encouraged to explore these new features to optimize study practices.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 20 2026",
+            "headline": "Slack Introduces AI-Powered Vibe-Coding Channels",
+            "title": "Slack Launches Collaborative Vibe-Coding Channels with AI Agents",
+            "content": "Slack is launching new collaborative vibe-coding channels, enabling teams to code together with the assistance of AI agents. These channels provide open, project-specific spaces with dedicated user tabs and features for comparing coding changes. The integration of AI agents aims to streamline coding workflows and enhance team collaboration. This development is part of a broader trend of incorporating AI into collaborative tools to boost productivity and innovation. Teams are encouraged to leverage these features to improve coding efficiency and project management.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/982628/slack-code-vibe-coding-channels-launch",
             "relatedResources": []
         },
         {
@@ -228,51 +309,6 @@ const websiteContent = {
             "content": "Micro1, an AI data startup, has reached a $500 million gross run rate, driven by the booming demand for AI training data. This milestone reflects the increasing reliance on high-quality datasets to train advanced AI models. As AI applications expand across industries, the need for diverse and comprehensive data continues to grow, benefiting companies like Micro1 and its competitors. Organizations investing in AI technologies should consider the strategic importance of data acquisition and management to maintain a competitive edge.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "NanoClaw Integrates AI Agents into Slack for Team Collaboration",
-            "title": "NanoClaw Brings Persistent AI Agent Teams to Slack Platform",
-            "content": "NanoCo., the company behind NanoClaw, has introduced a feature allowing enterprises to create persistent AI agent teams within Slack. This integration aims to streamline collaboration by enabling users to deploy AI agents through a single message, enhancing productivity and communication. Despite the appeal, the implementation of AI agents in enterprise environments can be complex and requires careful management. Organizations should evaluate the potential benefits and challenges of integrating AI agents into their workflows to optimize team performance.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/nanoclaw-comes-to-slack-letting-you-create-persistent-ai-agent-teams-and-colleagues-from-a-single-message",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "OpenAI Gains Ground on Anthropic with Business Users",
-            "title": "OpenAI Closes Gap with Anthropic in Enterprise AI Adoption",
-            "content": "New data indicates that OpenAI is gaining traction among business users, narrowing the gap with competitor Anthropic. This trend highlights the volatility in enterprise AI adoption, as businesses frequently switch between AI providers based on the latest model releases. The competitive landscape underscores the importance of innovation and customer retention strategies for AI companies. Investors and stakeholders should be aware of the fluid nature of enterprise AI spending and its implications for market dynamics.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Unconventional Data Center Cooling: Pee vs. Water",
-            "title": "Exploring Alternative Cooling Methods for Data Centers: A Humorous Take",
-            "content": "In a humorous suggestion, Jason Kelce proposed using urine instead of potable water to cool data centers. While initially a joke, the idea sparks discussion on sustainable cooling methods amid increasing environmental concerns. Data centers, known for their substantial water usage, are exploring innovative solutions to reduce their ecological footprint. This conversation highlights the ongoing search for eco-friendly technologies in the tech industry. Stakeholders should consider the environmental impact of data center operations and explore sustainable alternatives.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "Runlayer and Rippling Settle Legal Dispute Without Payment",
-            "title": "Runlayer and Rippling Resolve Lawsuits, Launch Competing Product",
-            "content": "Runlayer and Rippling have resolved their legal dispute, dropping lawsuits without any financial settlement. Following the resolution, Rippling announced the release of a competing product, signaling a strategic pivot in response to the conflict. This case serves as a cautionary tale for founders, emphasizing the importance of legal preparedness and competitive strategy. Companies should ensure robust legal frameworks and market analysis to navigate potential disputes effectively. The incident underscores the dynamic nature of the tech industry and the need for agile business strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/20/runlayer-rippling-drop-lawsuits-but-the-brouhaha-is-still-a-cautionary-tale-for-founders/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 20 2026",
-            "headline": "OpenAI Commits to Zero Data Retention for Frontier Models",
-            "title": "OpenAI Introduces Zero Data Retention and Private Safety Processing",
-            "content": "OpenAI has reaffirmed its commitment to Zero Data Retention for eligible API customers, enhancing data privacy and security. Additionally, the company is previewing Private Safety Processing, a feature designed to improve AI safety without compromising user data. These initiatives reflect OpenAI's dedication to balancing innovation with privacy concerns, a critical consideration in today's data-driven landscape. Organizations utilizing OpenAI's services should review these updates to align with privacy best practices and ensure compliance with data protection standards.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
             "relatedResources": []
         },
         {
@@ -327,24 +363,6 @@ const websiteContent = {
             "content": "Prominent YouTube creators, including Matti Haapoja and Sam \"Kold\" Kolder, are under scrutiny for promoting AI platform Higgsfield's Seedance 2.5 functionality. The backlash stems from concerns about the ethical implications of accepting sponsorships from AI companies, which may influence content authenticity and creator independence. As AI tools become more prevalent in content creation, the relationship between creators and AI sponsors is increasingly scrutinized. This situation underscores the need for transparency and ethical guidelines in influencer marketing within the tech industry. Creators should evaluate sponsorships carefully to maintain credibility with their audiences.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/983181/matti-haapoja-sam-kold-kolder-higgsfield-seedance-backlash",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "TrueForge Cuts AI Task Costs by Up to 75%",
-            "title": "TrueFoundry's TrueForge Offers Cost-Effective AI Agent Harness",
-            "content": "TrueFoundry has introduced TrueForge, an open-source AI agent harness that promises to reduce task completion costs by 30% to 75% compared to Claude Managed Agents. This innovation addresses the growing need for developer control over AI agents while minimizing operational expenses. TrueForge's cost-efficiency makes it an attractive option for enterprises looking to optimize their AI deployments. As AI agent usage proliferates, solutions like TrueForge offer a competitive edge by enhancing control and reducing costs. Developers and businesses should consider adopting such tools to improve their AI strategies.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/orchestration/truefoundrys-open-source-ai-agent-harness-trueforge-boasts-30-75-cheaper-task-completion-than-claude-managed-agents",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 21 2026",
-            "headline": "Nvidia Invests in Data Centers with Cloverleaf",
-            "title": "Nvidia Partners with Cloverleaf for Data Center Development",
-            "content": "Nvidia has announced a partnership with data center developer Cloverleaf, continuing its significant investment in AI data center infrastructure. This collaboration aims to expand Nvidia's capabilities in supporting AI workloads, which are increasingly demanding in terms of processing power and efficiency. As AI applications grow, the need for robust data center solutions becomes critical, positioning Nvidia as a key player in this sector. The partnership with Cloverleaf underscores the strategic importance of data centers in the AI ecosystem. Industry stakeholders should watch for advancements resulting from this collaboration.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
             "relatedResources": []
         }
     ],
