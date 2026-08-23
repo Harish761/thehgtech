@@ -1,6 +1,22 @@
 {
   "articles": [
     {
+      "id": "tcs-dem-controversy-2026",
+      "title": "TCS Digital Tracking Controversy: DEM vs Employee Surveillance",
+      "date": "August 24, 2026",
+      "category": "Enterprise Security",
+      "badge": "NEW",
+      "image": "images/articles/tcs-dem-controversy.jpg",
+      "excerpt": "Explore the TCS digital tracking controversy. What is Digital Experience Monitoring (DEM), why enterprises use it, and where security crosses into surveillance.",
+      "externalUrl": "/articles/tcs-digital-experience-monitoring-controversy.html",
+      "tags": [
+        "Enterprise Security",
+        "Privacy",
+        "Compliance",
+        "Analysis"
+      ]
+    },
+    {
       "id": "cve-2026-69836",
       "title": "CVE-2026-69836: Microsoft Entra ID CVSS 10.0 RCE \u2014 Corrected Exploitation Status, No Action Required",
       "date": "August 23, 2026",
