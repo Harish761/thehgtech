@@ -1873,6 +1873,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-441",
       "incident_id": 441,
       "title": "South Korean Agencies Reportedly Shared Airport Travelers' Face Images with Companies to Train Immig",
@@ -1889,9 +1897,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-438",
-      "incident_id": 438,
-      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
+      "id": "AIID-491",
+      "incident_id": 491,
+      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -1900,54 +1908,6 @@
       "id": "AIID-513",
       "incident_id": 513,
       "title": "ChatGPT Reportedly Banned by Italian Authority Due to OpenAI's Purported Lack of Legal Basis for Dat",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-556",
-      "incident_id": 556,
-      "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-559",
-      "incident_id": 559,
-      "title": "Grant Reviewers Reportedly Fed Applications into Generative AI to Produce Reports, Allegedly Breachi",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-571",
-      "incident_id": 571,
-      "title": "Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team",
-      "date": "2026-05-29",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-586",
-      "incident_id": 586,
-      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-636",
-      "incident_id": 636,
-      "title": "AI Romance Apps Reportedly Compromise User Privacy for Data Harvesting",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-491",
-      "incident_id": 491,
-      "title": "Replika's AI Experience Reportedly Lacked Protection for Minors, Resulting in Data Ban",
       "date": "2026-05-29",
       "category": "other",
       "severity": "medium"
@@ -1969,11 +1929,35 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-556",
+      "incident_id": 556,
+      "title": "Amazon Allegedly Violated Children's Privacy through Default Voice Collection Settings",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-558",
       "incident_id": 558,
       "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
       "date": "2026-05-29",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-559",
+      "incident_id": 559,
+      "title": "Grant Reviewers Reportedly Fed Applications into Generative AI to Produce Reports, Allegedly Breachi",
+      "date": "2026-05-29",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-571",
+      "incident_id": 571,
+      "title": "Reported Accidental Exposure of 38TB of Data by Microsoft's AI Research Team",
+      "date": "2026-05-29",
+      "category": "data_leak",
       "severity": "medium"
     },
     {
@@ -1983,6 +1967,22 @@
       "date": "2026-05-29",
       "category": "other",
       "severity": "high"
+    },
+    {
+      "id": "AIID-586",
+      "incident_id": 586,
+      "title": "FTC Targets Edmodo for Unlawful Use of Children\u2019s Data and Delegating Compliance to Schools",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-636",
+      "incident_id": 636,
+      "title": "AI Romance Apps Reportedly Compromise User Privacy for Data Harvesting",
+      "date": "2026-05-29",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-657",
@@ -2265,19 +2265,19 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-433",
-      "incident_id": 433,
-      "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
-      "date": "2026-05-28",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-357",
       "incident_id": 357,
       "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
       "date": "2026-05-28",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-433",
+      "incident_id": 433,
+      "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
+      "date": "2026-05-28",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -2334,5 +2334,5 @@
     "last7Days": 14,
     "last30Days": 55
   },
-  "lastUpdated": "2026-08-24T18:37:43.334200+05:30"
+  "lastUpdated": "2026-08-24T22:20:47.459598+05:30"
 }
