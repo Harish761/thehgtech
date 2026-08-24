@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-08-24T03:30:56.825601",
-  "total_incidents": 30686,
+  "last_updated": "2026-08-24T15:09:44.656742",
+  "total_incidents": 30688,
   "incidents": [
+    {
+      "id": "storm_sharp_motor_group",
+      "victim_name": "Sharp Motor Group",
+      "threat_actor": "Storm",
+      "date_discovered": "2026-08-24T04:51:59.732876+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "Sharp Motor Group is a privately owned automotive dealership group based in Tweed Heads, New South Wales, Australia. The company serves customers across Tweed Heads, the Northern Rivers region, and the Gold Coast. Sharp Motor Group sells new, used, and demonstrator vehicles and provides vehicle servicing, spare parts, finance, insurance, and trade-in services. Its dealership represents major automotive brands, including Kia, Suzuki, Mahindra, Chery, Renault, and GMSV. The company focuses on providing a convenient one-stop automotive service and emphasizes customer service, value, choice, and a positive buying and ownership experience. \nThe company headquarters is located in 153 Wharf Street, Tweed Heads, NSW 2485, Australia. 51-200 Employees",
+      "screenshot": "https://images.ransomware.live/victims/54bea31baeb9c66aa6ce9c089ff6c973.png",
+      "url": "http://yqhecvqtdvq6p7duqcgw2qca77spbgakxcoibtx6zpvfshltsbbbhfqd.onion/company/6a8aef68bcb899d105729a10",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "krybit_resi.com",
+      "victim_name": "resi.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-08-24T00:54:35.293077+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Resi is a UK-based online architectural and home renovation platform founded in 2017 by Alexandra Depledge and Jules Col...",
+      "screenshot": "https://images.ransomware.live/victims/8dc616d0696093619f8339d15d912ac7.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/94e954f9fa4095799dede0c689e6d6b51ddddaff16d44b75cf49ba265dc3a79a/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "coinbasecartel_westwing_group_se",
       "victim_name": "Westwing Group SE",
