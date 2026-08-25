@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-08-25T03:25:41.445485",
-  "total_incidents": 30712,
+  "last_updated": "2026-08-25T15:22:33.143028",
+  "total_incidents": 30715,
   "incidents": [
+    {
+      "id": "dark_project_pump_engineering_company",
+      "victim_name": "Pump Engineering Company",
+      "threat_actor": "Dark Project",
+      "date_discovered": "2026-08-25T09:51:49.817517+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "About Pump Engineering Company Pump Engineering Company is a full-service distributor and supplier of industrial pumps, parts, and fluid handling systems, serving Southern California since 1946. During the cyberattack, 120,000 files (115 GB) were stolen, including an extensive customer database, insurance documents, confidential financial documents, and a vast number of project drawings.",
+      "screenshot": "https://images.ransomware.live/victims/d3b66de8697b5e4f444b6bc71032dd15.png",
+      "url": "http://darkprn3d3udnhpuxknsrhft3376lrz5tenhgkrxge5hxqe46pkbrwid.onion/article?slug=pump-engineering-company",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "majinahanashi_pca_group_sdn._bhd.",
+      "victim_name": "PCA Group Sdn. Bhd.",
+      "threat_actor": "majinahanashi",
+      "date_discovered": "2026-08-25T09:22:11.312472+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "PUBLICATION SCHEDULED. [LEAK / 1844 FILES]",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dark_project_dentist_in_new_britain,_ct",
+      "victim_name": "Dentist in New Britain, CT",
+      "threat_actor": "Dark Project",
+      "date_discovered": "2026-08-25T09:21:23.224020+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "About Dentist in New Britain, CT Dentist in New Britain has spent over a decade caring for families across New Britain—pairing modern technology with the kind of warmth you don't expect from a dental office. As a result of the attack, the following were compromised: the entire customer database, consisting of just over 8,000 files, as well as a small number of records containing Social Security numbers",
+      "screenshot": "https://images.ransomware.live/victims/1af22e0cde029ef7f149f1b686540164.png",
+      "url": "http://darkprn3d3udnhpuxknsrhft3376lrz5tenhgkrxge5hxqe46pkbrwid.onion/article?slug=dentist-in-new-britain-ct",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_consultores_de_seguros",
       "victim_name": "Consultores de Seguros",
@@ -201,7 +237,7 @@
       "date_discovered": "2026-08-24T14:23:32.659108+00:00",
       "industry": "Technology",
       "website": "",
-      "claim": "https://marcktechno.comMarktechno has been a key player in the mechanical and sheet metal Deadline: 2026-08-31 13:50:00.000000",
+      "claim": "https://marcktechno.com Marktechno has been a key player in the mechanical and sheet metal Deadline: 2026-08-31 13:50:00.000000",
       "screenshot": "https://images.ransomware.live/victims/6974a4026efebd098c8423b5b343997d.png",
       "url": "http://arcuufpr5xxbbkin4mlidt7itmr6znlppk63jbtkeguuhszmc5g7qdyd.onion/?p=792",
       "source": "Ransomware.live OSINT API"
