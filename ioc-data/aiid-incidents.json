@@ -1,9 +1,25 @@
 {
   "incidents": [
     {
+      "id": "AIID-1278",
+      "incident_id": 1278,
+      "title": "ChatGPT Reportedly Found to Reproduce Protected German Lyrics in Copyright Case",
+      "date": "2026-08-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1655",
       "incident_id": 1655,
       "title": "Suno Allegedly Copied Copyrighted Music Without Permission to Train Its Generative AI Models",
+      "date": "2026-08-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1656",
+      "incident_id": 1656,
+      "title": "Udio Allegedly Copied Copyrighted Sound Recordings Without Permission to Train Its Generative AI Mod",
       "date": "2026-08-25",
       "category": "other",
       "severity": "medium"
@@ -2338,9 +2354,9 @@
     }
   ],
   "stats": {
-    "total": 292,
-    "last7Days": 15,
-    "last30Days": 56
+    "total": 294,
+    "last7Days": 17,
+    "last30Days": 58
   },
-  "lastUpdated": "2026-08-25T18:35:37.392824+05:30"
+  "lastUpdated": "2026-08-25T22:22:16.568743+05:30"
 }
