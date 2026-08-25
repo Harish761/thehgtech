@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1657",
+      "incident_id": 1657,
+      "title": "Anthropic Allegedly Copied Copyrighted Song Lyrics Without Permission to Train Claude",
+      "date": "2026-08-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1580",
       "incident_id": 1580,
       "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
@@ -2354,9 +2362,9 @@
     }
   ],
   "stats": {
-    "total": 294,
-    "last7Days": 17,
-    "last30Days": 58
+    "total": 295,
+    "last7Days": 13,
+    "last30Days": 59
   },
-  "lastUpdated": "2026-08-25T22:22:16.568743+05:30"
+  "lastUpdated": "2026-08-26T00:39:09.744209+05:30"
 }
