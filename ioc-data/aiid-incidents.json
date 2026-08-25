@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1108",
+      "incident_id": 1108,
+      "title": "Digital Rights Groups Accuse Meta and Character.AI of Facilitating Unlicensed Therapy via Chatbots",
+      "date": "2026-08-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1278",
       "incident_id": 1278,
       "title": "ChatGPT Reportedly Found to Reproduce Protected German Lyrics in Copyright Case",
@@ -30,6 +38,14 @@
       "title": "Anthropic Allegedly Copied Copyrighted Song Lyrics Without Permission to Train Claude",
       "date": "2026-08-25",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1658",
+      "incident_id": 1658,
+      "title": "State Farm Defense Counsel Acknowledged AI-Assisted Filings in Meni-Siliga v. A's Contractor, Inc. C",
+      "date": "2026-08-25",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -700,14 +716,6 @@
       "id": "AIID-1040",
       "incident_id": 1040,
       "title": "Meta User-Created AI Companions Allegedly Implicated in Facilitating Sexually Themed Conversations I",
-      "date": "2026-07-11",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1108",
-      "incident_id": 1108,
-      "title": "Digital Rights Groups Accuse Meta and Character.AI of Facilitating Unlicensed Therapy via Chatbots",
       "date": "2026-07-11",
       "category": "other",
       "severity": "medium"
@@ -2362,9 +2370,9 @@
     }
   ],
   "stats": {
-    "total": 295,
-    "last7Days": 13,
-    "last30Days": 59
+    "total": 296,
+    "last7Days": 15,
+    "last30Days": 61
   },
-  "lastUpdated": "2026-08-26T00:39:09.744209+05:30"
+  "lastUpdated": "2026-08-26T02:14:26.066390+05:30"
 }
