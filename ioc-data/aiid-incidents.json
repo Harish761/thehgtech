@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1655",
+      "incident_id": 1655,
+      "title": "Suno Allegedly Copied Copyrighted Music Without Permission to Train Its Generative AI Models",
+      "date": "2026-08-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1580",
       "incident_id": 1580,
       "title": "PRC-Linked Accounts Reportedly Used ChatGPT in Covert Campaigns Targeting U.S. AI Policy Debates",
@@ -2330,9 +2338,9 @@
     }
   ],
   "stats": {
-    "total": 291,
-    "last7Days": 14,
-    "last30Days": 55
+    "total": 292,
+    "last7Days": 15,
+    "last30Days": 56
   },
-  "lastUpdated": "2026-08-25T14:23:54.205922+05:30"
+  "lastUpdated": "2026-08-25T18:35:37.392824+05:30"
 }
