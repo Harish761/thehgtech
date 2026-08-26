@@ -2351,28 +2351,12 @@
       "date": "2026-05-28",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1503",
-      "incident_id": 1503,
-      "title": "Purported AI Name-Reading System Reportedly Skipped and Misannounced Graduates at Arizona's Glendale",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1505",
-      "incident_id": 1505,
-      "title": "Scammers Reportedly Used AI-Cloned Daughter's Voice to Defraud Bay Area Mother in Fake Kidnapping Ca",
-      "date": "2026-05-28",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 296,
+    "total": 294,
     "last7Days": 15,
     "last30Days": 61
   },
-  "lastUpdated": "2026-08-26T02:14:26.066390+05:30"
+  "lastUpdated": "2026-08-26T07:22:49.956613+05:30"
 }
