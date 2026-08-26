@@ -3056,6 +3056,24 @@
       "Description": "In February 2026, <a href=\"https://www.theregister.com/2026/02/18/shinyhunters_cargurus_breach/\" target=\"_blank\" rel=\"noopener\">the automotive marketplace CarGurus was the target of a data breach attributed to the threat actor ShinyHunters</a>. Following an attempted extortion, the data was published publicly and contained more than 12M email addresses across multiple files including user account ID mappings, finance pre-qualification application data and dealer account and subscription information. Impacted data also included names, phone numbers, physical and IP addresses, and auto finance application outcomes."
     }
   ],
+  "carhartt.com": [
+    {
+      "Name": "Carhartt",
+      "Title": "Carhartt",
+      "BreachDate": "2026-08-13",
+      "AddedDate": "2026-08-25T21:34:25Z",
+      "PwnCount": 12933413,
+      "DataClasses": [
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, clothing retailer <a href=\"https://cybernews.com/news/carhartt-data-breach-shinyhunters-millions-customer-records/\" target=\"_blank\" rel=\"noopener\">Carhartt was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data allegedly obtained from the company including 12.9M unique email addresses, names, phone numbers and physical addresses. The published corpus also contained <a href=\"https://www.troyhunt.com/a-cautionary-tale-about-data-breach-claims-verification-and-carhartt\" target=\"_blank\" rel=\"noopener\">millions of synthetic records that did not relate to real individuals</a> and were excluded from the breach."
+    }
+  ],
   "carmax.com": [
     {
       "Name": "CarMax",
