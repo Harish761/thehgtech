@@ -2289,14 +2289,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-186",
-      "incident_id": 186,
-      "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-239",
       "incident_id": 239,
       "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
@@ -2319,44 +2311,12 @@
       "date": "2026-05-28",
       "category": "bias",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-603",
-      "incident_id": 603,
-      "title": "Algorithmic Allocation of Resources in Healthcare for Disabled and Elderly Care Services Allegedly H",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-808",
-      "incident_id": 808,
-      "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-868",
-      "incident_id": 868,
-      "title": "Portland Water Bureau SERVUS Algorithm Reportedly Allocates Utility Bill Discount to High-Wealth Con",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-894",
-      "incident_id": 894,
-      "title": "RealPage's YieldStar Allegedly Facilitated Rent Price Coordination Among Canadian Landlords",
-      "date": "2026-05-28",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 294,
+    "total": 289,
     "last7Days": 15,
     "last30Days": 61
   },
-  "lastUpdated": "2026-08-26T18:40:33.821370+05:30"
+  "lastUpdated": "2026-08-26T22:24:39.506174+05:30"
 }
