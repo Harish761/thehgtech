@@ -2279,20 +2279,12 @@
       "date": "2026-05-29",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1504",
-      "incident_id": 1504,
-      "title": "Nonfiction Book 'The Future of Truth' Reportedly Included AI-Generated and Misattributed Quotations",
-      "date": "2026-05-29",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 286,
+    "total": 285,
     "last7Days": 14,
     "last30Days": 61
   },
-  "lastUpdated": "2026-08-27T04:53:14.196205+05:30"
+  "lastUpdated": "2026-08-27T15:00:06.911583+05:30"
 }
