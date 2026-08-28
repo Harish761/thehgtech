@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-968",
+      "incident_id": 968,
+      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
+      "date": "2026-08-27",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1659",
+      "incident_id": 1659,
+      "title": "Purported Hanover Institute for Public Policy Reportedly Targeted Chatbot Responses in Israeli Gover",
+      "date": "2026-08-27",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1660",
+      "incident_id": 1660,
+      "title": "Purportedly AI-Generated Videos Impersonating Immigration Attorney Angel Leal Were Reportedly Used t",
+      "date": "2026-08-27",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1108",
       "incident_id": 1108,
       "title": "Digital Rights Groups Accuse Meta and Character.AI of Facilitating Unlicensed Therapy via Chatbots",
@@ -1289,14 +1313,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-968",
-      "incident_id": 968,
-      "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1014",
       "incident_id": 1014,
       "title": "Students in Maltese Schools Reportedly Being Targeted by Deepfake Nudes",
@@ -1887,20 +1903,12 @@
       "date": "2026-05-31",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1506",
-      "incident_id": 1506,
-      "title": "ChatGPT Was Alleged to Have Reinforced Pittsburgh Man's Stalking and Threats Against Women",
-      "date": "2026-05-30",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 237,
-    "last7Days": 8,
-    "last30Days": 61
+    "total": 238,
+    "last7Days": 11,
+    "last30Days": 64
   },
-  "lastUpdated": "2026-08-28T03:44:24.533280+05:30"
+  "lastUpdated": "2026-08-28T07:47:11.710347+05:30"
 }
