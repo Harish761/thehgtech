@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1661",
+      "incident_id": 1661,
+      "title": "Aurora Ransomware Operator Reportedly Used Cursor Agent to Assist Intrusions Against Multiple Organi",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1662",
+      "incident_id": 1662,
+      "title": "Pizza Hut Franchisee Chaac Pizza Northeast Alleged Dragontail AI System Contributed to Delivery Dela",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-968",
       "incident_id": 968,
       "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
@@ -1906,9 +1922,9 @@
     }
   ],
   "stats": {
-    "total": 238,
-    "last7Days": 11,
-    "last30Days": 64
+    "total": 240,
+    "last7Days": 13,
+    "last30Days": 66
   },
-  "lastUpdated": "2026-08-29T12:28:17.580715+05:30"
+  "lastUpdated": "2026-08-29T19:18:44.867150+05:30"
 }
