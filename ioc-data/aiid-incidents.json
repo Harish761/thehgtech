@@ -1,6 +1,398 @@
 {
   "incidents": [
     {
+      "id": "AIID-10",
+      "incident_id": 10,
+      "title": "Kronos Scheduling Algorithm Allegedly Caused Financial Issues for Starbucks Employees",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-37",
+      "incident_id": 37,
+      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
+      "date": "2026-08-29",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-95",
+      "incident_id": 95,
+      "title": "Job Screening Service Halts Facial Analysis of Applicants",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-123",
+      "incident_id": 123,
+      "title": "Epic Systems\u2019s Sepsis Prediction Algorithms Revealed to Have High Error Rates on Seriously Ill Patie",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-124",
+      "incident_id": 124,
+      "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-192",
+      "incident_id": 192,
+      "title": "Three Make-Up Artists Lost Jobs Following Black-Box Automated Decision by HireVue",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-344",
+      "incident_id": 344,
+      "title": "Hiring Algorithms Provided Invalid Positive Results for Interview Responses in German",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-345",
+      "incident_id": 345,
+      "title": "Auto-Insurance Photo-Based Estimation Allegedly Gave Inaccurate Repair Prices Frequently",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-405",
+      "incident_id": 405,
+      "title": "Schufa Credit Scoring in Germany Reported for Unreliable and Imbalanced Scores",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-432",
+      "incident_id": 432,
+      "title": "Southwest Airlines Crew Scheduling Solver Degenerates Flight Network",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-386",
+      "incident_id": 386,
+      "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management",
+      "date": "2026-08-29",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-425",
+      "incident_id": 425,
+      "title": "State Farm Allegedly Discriminated against Black Customers in Claim Payout",
+      "date": "2026-08-29",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-591",
+      "incident_id": 591,
+      "title": "Cigna Algorithm PXDX Allegedly Rejected Thousands of Patient Claims En Masse in Breach of California",
+      "date": "2026-08-29",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-608",
+      "incident_id": 608,
+      "title": "UnitedHealth Accused of Deploying  Allegedly Flawed AI to Deny Medical Coverage",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-489",
+      "incident_id": 489,
+      "title": "Workday's AI Tools Allegedly Enabled Employers to Discriminate against Applicants of Protected Group",
+      "date": "2026-08-29",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-549",
+      "incident_id": 549,
+      "title": "Fast Food Chains' AI Chatbots Failed to Assist Job Applicants with Scheduling Interviews",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-644",
+      "incident_id": 644,
+      "title": "Alleged State-Sponsored Hackers Escalate Purported Phishing Attacks Using Artificial Intelligence",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-728",
+      "incident_id": 728,
+      "title": "AI Firm Lovo Reportedly Accused of Illegally Replicating Voice Actors' Voices",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-811",
+      "incident_id": 811,
+      "title": "AI-Powered Transcription Services Allegedly Leak Confidential Workplace Discussions",
+      "date": "2026-08-29",
+      "category": "data_leak",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-844",
+      "incident_id": 844,
+      "title": "SafeRent AI Screening Tool Allegedly Discriminated Against Housing Voucher Applicants",
+      "date": "2026-08-29",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-870",
+      "incident_id": 870,
+      "title": "Meeten Malware Campaign Reportedly Undermines Web3 Security Using AI-Legitimized Branding",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-906",
+      "incident_id": 906,
+      "title": "Alleged AI-Powered Call Center Breach Exposes Over 10 Million Conversations in the Middle East",
+      "date": "2026-08-29",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-937",
+      "incident_id": 937,
+      "title": "Bolivian Criminal Network Allegedly Used Deepfake of Education Minister to Defraud at Least 19 Victi",
+      "date": "2026-08-29",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1037",
+      "incident_id": 1037,
+      "title": "Microsoft Reportedly Blocks 1.6 Million Bot Signup Attempts Per Hour Amid Global AI-Driven Fraud Sur",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1039",
+      "incident_id": 1039,
+      "title": "Anysphere AI Support Bot for Cursor Reportedly Invents Login Policy, Leading to Subscription Cancell",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1054",
+      "incident_id": 1054,
+      "title": "Anthropic Report Details Claude Misuse for Influence Operations, Credential Stuffing, Recruitment Fr",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1070",
+      "incident_id": 1070,
+      "title": "Serviceaide AI Platform Implicated in Health Data Exposure Affecting 483,000 Catholic Health Patient",
+      "date": "2026-08-29",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1082",
+      "incident_id": 1082,
+      "title": "California Homeowner Reportedly Loses Insurance After Purported Aerial Imagery-Based Roof Assessment",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1083",
+      "incident_id": 1083,
+      "title": "Texas Homeowner Reportedly Spent $3,000 to Contest AI-Flagged Warning of Insurance Nonrenewal",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1118",
+      "incident_id": 1118,
+      "title": "Ongoing Purported AI-Assisted Identity Fraud Enables Unauthorized Access to Western Companies by Nor",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1126",
+      "incident_id": 1126,
+      "title": "Reported Use of Deepfake Video Impersonating Owen Wilson in Romance Scam with Fake Job Payments",
+      "date": "2026-08-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1152",
+      "incident_id": 1152,
+      "title": "LLM-Driven Replit Agent Reportedly Executed Unauthorized Destructive Commands During Code Freeze, Le",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1158",
+      "incident_id": 1158,
+      "title": "Alleged Malicious Wiping Command Found in Amazon Q AI Assistant",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1179",
+      "incident_id": 1179,
+      "title": "McDonald's McHire AI Recruitment Platform Reportedly Exposed Data of 64 Million Applicants via Defau",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1218",
+      "incident_id": 1218,
+      "title": "Microsoft 365 Copilot Vulnerability Allegedly Allowed File Access Without Audit Log Entry",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1313",
+      "incident_id": 1313,
+      "title": "Anthropic Claude AI Agent Reportedly Caused Financial Losses While Operating Office Vending Machine ",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1324",
+      "incident_id": 1324,
+      "title": "Pieces Technologies' Clinical AI Systems Allegedly Marketed With Misleading Performance Claims",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1412",
+      "incident_id": 1412,
+      "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey's Lilli AI Platform ",
+      "date": "2026-08-29",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1469",
+      "incident_id": 1469,
+      "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1471",
+      "incident_id": 1471,
+      "title": "Meta Internal AI Agent Reportedly Gave Advice That Allegedly Exposed Sensitive Data to Unauthorized ",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1510",
+      "incident_id": 1510,
+      "title": "Meta AI Support Bot Reportedly Enabled Takeovers of High-Profile Instagram Accounts",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1570",
+      "incident_id": 1570,
+      "title": "Purported Deepfake Impersonating Dubai Crown Prince Reportedly Used to Defraud Filipino Domestic Wor",
+      "date": "2026-08-29",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1575",
+      "incident_id": 1575,
+      "title": "Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1584",
+      "incident_id": 1584,
+      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1593",
+      "incident_id": 1593,
+      "title": "Purportedly AI-Powered Software Allegedly Used to Replace Montefiore Hospital Utilization-Review Nur",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1650",
+      "incident_id": 1650,
+      "title": "Otter.ai Notetaker Allegedly Recorded Meeting Conversations Without Participants' Informed Consent a",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1651",
+      "incident_id": 1651,
+      "title": "Fireflies.AI Meeting Assistant Allegedly Collected Biometric Voice Data from Illinois Meeting Partic",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1652",
+      "incident_id": 1652,
+      "title": "Granola AI Notetaker Allegedly Captured and Transcribed Florida Meeting Participant Without Notice o",
+      "date": "2026-08-29",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1660",
+      "incident_id": 1660,
+      "title": "Purportedly AI-Generated Videos Impersonating Miami Immigration Attorney Were Reportedly Used to Def",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1661",
       "incident_id": 1661,
       "title": "Aurora Ransomware Operator Reportedly Used Cursor Agent to Assist Intrusions Against Multiple Organi",
@@ -17,6 +409,22 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1663",
+      "incident_id": 1663,
+      "title": "Comedy Writer Bruce Vilanch Reportedly Sent Money in Purportedly AI-Assisted Scam Impersonating Fres",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1664",
+      "incident_id": 1664,
+      "title": "Broadway Performer and SiriusXM Host Seth Rudetsky Reportedly Lost Facebook Page Access in Purported",
+      "date": "2026-08-29",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-968",
       "incident_id": 968,
       "title": "'Pravda' Network, Successor to 'Portal Kombat,' Allegedly Seeding AI Models with Kremlin Disinformat",
@@ -31,14 +439,6 @@
       "date": "2026-08-27",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1660",
-      "incident_id": 1660,
-      "title": "Purportedly AI-Generated Videos Impersonating Immigration Attorney Angel Leal Were Reportedly Used t",
-      "date": "2026-08-27",
-      "category": "fraud",
-      "severity": "high"
     },
     {
       "id": "AIID-1108",
@@ -101,38 +501,6 @@
       "incident_id": 1582,
       "title": "Bangladesh-Operated Facebook Pages Reportedly Used AI-Generated Imagery to Mimic U.S. Grassroots Opp",
       "date": "2026-08-23",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-811",
-      "incident_id": 811,
-      "title": "AI-Powered Transcription Services Allegedly Leak Confidential Workplace Discussions",
-      "date": "2026-08-20",
-      "category": "data_leak",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1650",
-      "incident_id": 1650,
-      "title": "Otter.ai Notetaker Allegedly Recorded Meeting Conversations Without Participants' Informed Consent a",
-      "date": "2026-08-20",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1651",
-      "incident_id": 1651,
-      "title": "Fireflies.AI Meeting Assistant Allegedly Collected Biometric Voice Data from Illinois Meeting Partic",
-      "date": "2026-08-20",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1652",
-      "incident_id": 1652,
-      "title": "Granola AI Notetaker Allegedly Captured and Transcribed Florida Meeting Participant Without Notice o",
-      "date": "2026-08-20",
       "category": "other",
       "severity": "medium"
     },
@@ -649,14 +1017,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1593",
-      "incident_id": 1593,
-      "title": "Purportedly AI-Powered Software Allegedly Used to Replace Montefiore Hospital Utilization-Review Nur",
-      "date": "2026-07-16",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1594",
       "incident_id": 1594,
       "title": "Purportedly AI-Generated Facebook Pages Allegedly Targeted Australian Rules Football Club Geelong Ca",
@@ -710,14 +1070,6 @@
       "title": "Waymo Robotaxi Reportedly Caught Fire After Driving Over Firework in San Francisco",
       "date": "2026-07-14",
       "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1584",
-      "incident_id": 1584,
-      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
-      "date": "2026-07-14",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -801,14 +1153,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1575",
-      "incident_id": 1575,
-      "title": "Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers",
-      "date": "2026-07-08",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1577",
       "incident_id": 1577,
       "title": "Lawyer in Amarsingh v. Frontier Airlines Sanctioned Over Court-Identified ChatGPT Citation Errors",
@@ -831,14 +1175,6 @@
       "date": "2026-07-07",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1570",
-      "incident_id": 1570,
-      "title": "Purported Deepfake Impersonating Dubai Crown Prince Reportedly Used to Defraud Filipino Domestic Wor",
-      "date": "2026-07-06",
-      "category": "deepfake",
-      "severity": "high"
     },
     {
       "id": "AIID-1572",
@@ -1110,14 +1446,6 @@
       "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
       "date": "2026-06-19",
       "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1469",
-      "incident_id": 1469,
-      "title": "PocketOS Production Database Was Reportedly Deleted by Cursor AI Agent Running Claude Opus 4.6",
-      "date": "2026-06-19",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -1857,14 +2185,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1510",
-      "incident_id": 1510,
-      "title": "Meta AI Support Bot Reportedly Enabled Takeovers of High-Profile Instagram Accounts",
-      "date": "2026-06-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1511",
       "incident_id": 1511,
       "title": "Grok Reportedly Generated Images After X Users Asked It to Unredact Epstein-File Photos of Children ",
@@ -1905,14 +2225,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1508",
-      "incident_id": 1508,
-      "title": "Italian Mediaset Journalist Safiria Leccese's Image Was Reportedly Used in a Purportedly AI-Generate",
-      "date": "2026-05-31",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1509",
       "incident_id": 1509,
       "title": "Self-Employed Somerset Father Wayne Luxon Reportedly Lost \u00a3140,000 After Facebook Deepfake of Martin",
@@ -1922,9 +2234,9 @@
     }
   ],
   "stats": {
-    "total": 240,
-    "last7Days": 13,
-    "last30Days": 66
+    "total": 279,
+    "last7Days": 63,
+    "last30Days": 104
   },
-  "lastUpdated": "2026-08-29T19:18:44.867150+05:30"
+  "lastUpdated": "2026-08-30T00:52:57.845554+05:30"
 }
