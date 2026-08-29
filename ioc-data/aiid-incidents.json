@@ -2215,28 +2215,12 @@
       "date": "2026-06-01",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1268",
-      "incident_id": 1268,
-      "title": "Meta's Automated Ad and Targeting Systems Reportedly Enabled Large-Scale Fraud Revenue",
-      "date": "2026-05-31",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1509",
-      "incident_id": 1509,
-      "title": "Self-Employed Somerset Father Wayne Luxon Reportedly Lost \u00a3140,000 After Facebook Deepfake of Martin",
-      "date": "2026-05-31",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 279,
+    "total": 277,
     "last7Days": 63,
     "last30Days": 104
   },
-  "lastUpdated": "2026-08-30T00:52:57.845554+05:30"
+  "lastUpdated": "2026-08-30T02:35:25.863220+05:30"
 }
