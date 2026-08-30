@@ -2207,20 +2207,12 @@
       "date": "2026-06-04",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1507",
-      "incident_id": 1507,
-      "title": "COEMPT Quality Assurance Engineers Allegedly Violated Indian CBSE Student Data Privacy Rights by Pro",
-      "date": "2026-06-01",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 277,
+    "total": 276,
     "last7Days": 63,
     "last30Days": 104
   },
-  "lastUpdated": "2026-08-30T04:07:24.947338+05:30"
+  "lastUpdated": "2026-08-30T10:45:16.881211+05:30"
 }
