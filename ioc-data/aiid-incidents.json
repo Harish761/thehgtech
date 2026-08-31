@@ -1,6 +1,238 @@
 {
   "incidents": [
     {
+      "id": "AIID-76",
+      "incident_id": 76,
+      "title": "Buenos Aires Government Reportedly Used Children's Personal Data in Facial Recognition System for Fu",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-109",
+      "incident_id": 109,
+      "title": "PimEyes's Facial Recognition AI Allegedly Lacked Safeguards to Prevent Itself from Being Abused",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-119",
+      "incident_id": 119,
+      "title": "Xsolla Employees Fired by CEO Allegedly via Big Data Analytics of Work Activities",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-122",
+      "incident_id": 122,
+      "title": "Facebook's 'Tag Suggestions' Allegedly Stored Biometric Data without User Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-170",
+      "incident_id": 170,
+      "title": "Target Suggested Maternity-Related Advertisements to a Teenage Girl's Home, Allegedly Correctly Pred",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-167",
+      "incident_id": 167,
+      "title": "Researchers' Homosexual-Men Detection Model Denounced as a Threat to LGBTQ People's Safety and Priva",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-184",
+      "incident_id": 184,
+      "title": "Facial Recognition Program in S\u00e3o Paulo Metro Stations Suspended for Illegal and Disproportionate Vi",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-199",
+      "incident_id": 199,
+      "title": "Ever AI Reportedly Deceived Customers about FRT Use in App",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-212",
+      "incident_id": 212,
+      "title": "XPeng Motors Fined For Illegal Collection of Consumers\u2019 Faces Using Facial Recognition Cameras",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-258",
+      "incident_id": 258,
+      "title": "Australian Retailers Reportedly Captured Face Prints of Their Customers without Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-254",
+      "incident_id": 254,
+      "title": "Google's Face Grouping Allegedly Collected and Analyzed Users' Facial Structure without Consent, Vio",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-267",
+      "incident_id": 267,
+      "title": "Clearview AI Algorithm Built on Photos Scraped from Social Media Profiles without Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-276",
+      "incident_id": 276,
+      "title": "Local South Korean Government\u2019s Use of CCTV Footage Analysis via Facial Recognition to Track COVID C",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-361",
+      "incident_id": 361,
+      "title": "Amazon Echo Mistakenly Recorded and Sent Private Conversation to Random Contact",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-409",
+      "incident_id": 409,
+      "title": "Facial Recognition Researchers Allegedly Used YouTube Videos of Transgender People Without Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-368",
+      "incident_id": 368,
+      "title": "Facial Recognition Smart Phone App 'Blue Wolf' Reportedly Monitored Palestinians in the West Bank",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-358",
+      "incident_id": 358,
+      "title": "Calgary Malls Reportedly Deployed Facial Recognition Without Customer Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-395",
+      "incident_id": 395,
+      "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-357",
+      "incident_id": 357,
+      "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-387",
+      "incident_id": 387,
+      "title": "Oracle's Algorithmic Data Processing System Alleged as Unlawful and Violating Privacy Rights",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-360",
+      "incident_id": 360,
+      "title": "McDonald's AI Drive-Thru Allegedly Collected Biometric Customer Data without Consent, Violating BIPA",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-406",
+      "incident_id": 406,
+      "title": "Facebook's Friend Suggestion Feature Recommends Patients of Psychiatrist to Each Other",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-408",
+      "incident_id": 408,
+      "title": "Facebook Reportedly Outed Sex Workers through Friend Recommendations",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-773",
+      "incident_id": 773,
+      "title": "Chatbot in Workplace Training at Bunbury Prison Reveals Real Names in Sexual Harassment Case",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1069",
+      "incident_id": 1069,
+      "title": "Purported Graphite Spyware Linked to Paragon Solutions Allegedly Deployed Against Journalists and Ci",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1101",
+      "incident_id": 1101,
+      "title": "Meta AI App Reportedly Publishes Personal Chats Without Users Fully Realizing",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1172",
+      "incident_id": 1172,
+      "title": "Meta AI Bug in Deployed Service Reportedly Allowed Potential Access to Other Users' Prompts and Resp",
+      "date": "2026-08-31",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1176",
+      "incident_id": 1176,
+      "title": "Microsoft's Windows Recall Allegedly Stores Passwords and Social Security Numbers in Preview Mode",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1362",
+      "incident_id": 1362,
+      "title": "Border Patrol Agent Allegedly Claimed Facial Recognition Identified Minneapolis ICE Observer and Glo",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1428",
       "incident_id": 1428,
       "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
@@ -1417,14 +1649,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1069",
-      "incident_id": 1069,
-      "title": "Purported Graphite Spyware Linked to Paragon Solutions Allegedly Deployed Against Journalists and Ci",
-      "date": "2026-06-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1165",
       "incident_id": 1165,
       "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
@@ -1727,22 +1951,6 @@
       "date": "2026-06-17",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1101",
-      "incident_id": 1101,
-      "title": "Meta AI App Reportedly Publishes Personal Chats Without Users Fully Realizing",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1172",
-      "incident_id": 1172,
-      "title": "Meta AI Bug in Deployed Service Reportedly Allowed Potential Access to Other Users' Prompts and Resp",
-      "date": "2026-06-17",
-      "category": "prompt_injection",
-      "severity": "medium"
     },
     {
       "id": "AIID-1180",
@@ -2242,9 +2450,9 @@
     }
   ],
   "stats": {
-    "total": 280,
-    "last7Days": 65,
-    "last30Days": 102
+    "total": 306,
+    "last7Days": 94,
+    "last30Days": 131
   },
-  "lastUpdated": "2026-08-31T21:37:05.661271+05:30"
+  "lastUpdated": "2026-09-01T04:29:06.698082+05:30"
 }
