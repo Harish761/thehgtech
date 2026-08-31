@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-08-30T18:08:22.942030",
-  "total_incidents": 30885,
+  "last_updated": "2026-08-31T08:51:41.561259",
+  "total_incidents": 30892,
   "incidents": [
+    {
+      "id": "qilin_afsard",
+      "victim_name": "AFSARD",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-08-30T16:07:30.579790+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/2cfade50aa31b4a11b5efd3ef613e3d9.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=9136a394-e1a1-47ce-8fe6-16ed813a5d23",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "wallstreet_andover",
+      "victim_name": "Andover",
+      "threat_actor": "Wallstreet",
+      "date_discovered": "2026-08-30T15:21:42.569290+00:00",
+      "industry": "Education",
+      "website": "",
+      "claim": "The Town of Andover, Massachusetts, is a municipal government organization that provides public services, administration, community programs, education resources, infrastructure support, and civic information to residents and businesses in Andover.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_thq_nordic",
+      "victim_name": "THQ Nordic",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-08-30T14:54:44.921892+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Multimedia,Games,Graphics Software",
+      "screenshot": "https://images.ransomware.live/victims/7b4748f76f7f4ec04b47c30b49618a5a.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/113",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_erdem_hospital",
+      "victim_name": "Erdem Hospital",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-08-30T14:54:22.650260+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Hospitals",
+      "screenshot": "https://images.ransomware.live/victims/b586f6b1823e13741968f6ddb6432785.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/114",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_hospital_clnico_universidad_de_chile",
+      "victim_name": "Hospital Clnico Universidad de Chile",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-08-30T14:53:50.462411+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Hospitals",
+      "screenshot": "https://images.ransomware.live/victims/5d1d8dd0ece89d430c80c062e691e45c.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/115",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "falcon_globus_medical",
+      "victim_name": "Globus Medical",
+      "threat_actor": "Falcon",
+      "date_discovered": "2026-08-30T14:29:39.892529+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Medical devices Â· NYSE: GMED - Our 2.96 TB extraction includes your entire Microsoft PowerBi which contains over 51,000 records of your customers and more, FDA feedback, 510(k) submissions, PMA approval letters, TGA suspension proposals, product complaint logs, serious adverse event narratives, final CAPA investigation findings, merger diligence decks, integration plans, FTC antitrust review documents, combined P&L statements, deal models, budget spreadsheets, medical board of directors meeting minutes and agendas, executed NDAs, distribution contracts with named partners and medical institutions, patient demographics and history from clinical registries and much more.",
+      "screenshot": "https://images.ransomware.live/victims/8c06bafb6f0ec797dd0fc3bd05776986.png",
+      "url": "http://i7loab6thvz4lb7jdr3qoeumbvilwhbgnwsctnlfmvsv7g5s3vsiw6yd.onion/#GlobusMedical",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "falcon_distributionnow_(dnow_inc.)",
+      "victim_name": "DistributionNOW (DNOW Inc.)",
+      "threat_actor": "Falcon",
+      "date_discovered": "2026-08-30T14:29:18.522555+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Energy & industrial distribution Â· NYSE: DNOW - Our 344 GB extraction includes your corporate information, corporate bank statements, vendor payment instructions, detailed payroll records, employee compensation, tax documents, operational secrets, proprietary SCADA gateway backups, PLC logic programs, industrial automation project files, internal audit logs detailing unethical activity investigations, whistleblower reports regarding harassment and discrimination, employee disciplinary records, employee PII, passports, driving licenses, medical drug screen results and much more.",
+      "screenshot": "https://images.ransomware.live/victims/281f1e838daf199785d1256d59b7ff1a.png",
+      "url": "http://i7loab6thvz4lb7jdr3qoeumbvilwhbgnwsctnlfmvsv7g5s3vsiw6yd.onion/#distribution_now",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_crystalpharmatech",
       "victim_name": "Crystalpharmatech",
