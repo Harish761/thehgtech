@@ -4,93 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Aug 28 2026",
-            "headline": "ATF Investigates 'Major Incident' After Ransomware Claim",
-            "title": "ATF Confirms Cyber Incident Following Ransomware Group's Attack Claim",
-            "content": "The Bureau of Alcohol, Tobacco, Firearms and Explosives (ATF) has confirmed a significant cyber incident following claims by a ransomware group that they compromised the agency's systems. The ATF, in collaboration with the Department of Justice (DOJ), is actively investigating the breach, which has been labeled a 'major incident'. While specific details about the ransomware group or the extent of the data compromised remain undisclosed, the incident underscores the persistent threat of ransomware attacks on government agencies. Security professionals are advised to review their ransomware defense strategies and ensure robust incident response plans are in place. This event highlights the ongoing need for vigilance and preparedness against sophisticated cyber threats.",
+            "date": "Aug 31 2026",
+            "headline": "ServiceNow Patches 3 Critical Code Injection Flaws",
+            "title": "ServiceNow Addresses Critical Code Injection Vulnerabilities",
+            "content": "ServiceNow has released patches for three critical code injection vulnerabilities that could be exploited by attackers to execute arbitrary code and manipulate data. The vulnerabilities, identified in the ServiceNow platform, pose a significant risk to organizations relying on this software for IT service management. Exploitation of these flaws could lead to unauthorized access and data tampering, impacting business operations. Security professionals are advised to apply the patches immediately to mitigate potential threats. This incident underscores the importance of regular software updates and vulnerability management in maintaining cybersecurity resilience.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/atf-confirms-cyber-incident-after-ransomware-group-claims-attack/",
+            "sourceUrl": "https://www.securityweek.com/servicenow-patches-3-critical-code-injection-vulnerabilities/",
             "relatedResources": []
         },
         {
-            "date": "Aug 27 2026",
-            "headline": "Australia Nabs Two in TeamPCP Cybercrime Crackdown",
-            "title": "Two Alleged 'TeamPCP' Hackers Arrested in Australia",
-            "content": "Australian authorities have apprehended two individuals suspected of being key members of TeamPCP, a notorious cybercrime group known for extensive software supply chain attacks. The arrests mark a significant breakthrough in curbing the group's activities, which have included data extortion and prolonged cyber assaults. The Australian Federal Police (AFP) announced the arrests, highlighting the collaborative efforts with international law enforcement to dismantle cybercriminal networks. This development serves as a reminder of the global nature of cyber threats and the importance of international cooperation in cybersecurity enforcement. Organizations should remain vigilant and ensure their supply chain security measures are robust.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+            "date": "Aug 31 2026",
+            "headline": "McKesson Breach: 284M Records at Risk—Deadline Looms",
+            "title": "McKesson Confirms Data Breach Amid ShinyHunters Extortion Threat",
+            "content": "Healthcare giant McKesson has confirmed a data breach involving the theft of 284 million records, claimed by the ShinyHunters extortion group. The attackers have set a deadline for ransom payment, threatening to leak sensitive data if demands are not met. The breach potentially exposes patient information and other critical data, raising significant privacy and security concerns. Organizations in the healthcare sector are reminded of the critical need for robust data protection measures and incident response plans. This breach highlights the ongoing threat posed by cybercriminal groups targeting healthcare providers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mckesson-confirms-data-breach-as-attacker-deadline-looms/",
             "relatedResources": []
         },
         {
-            "date": "Aug 28 2026",
-            "headline": "Berlin Rejects Ransom Demand After State Network Breach",
-            "title": "Berlin Refuses to Pay Hackers Who Stole Data From State Network",
-            "content": "Berlin's state government has confirmed it will not comply with extortion demands following a cyberattack that compromised the city's state administrative network. The breach, which occurred in August, led to unauthorized data outflows, prompting a comprehensive forensic investigation. Despite the hackers' demands, Berlin's authorities have taken a firm stance against paying ransoms, emphasizing the importance of resilience and recovery over capitulation. This incident highlights the critical need for robust cybersecurity defenses and incident response plans in governmental networks. Security professionals should take note of Berlin's approach as a case study in handling cyber extortion.",
+            "date": "Aug 31 2026",
+            "headline": "Aurora Ransomware Uses AI—10 Targets Compromised",
+            "title": "Aurora Ransomware Leverages AI Tool Cursor in Recent Attacks",
+            "content": "The Aurora ransomware group has been observed utilizing SpaceX's AI-powered coding assistant, Cursor, to infiltrate and compromise networks of ten organizations. This innovative use of artificial intelligence in cyberattacks demonstrates the evolving tactics of threat actors. The findings, reported by CloudSEK and Gambit Security, emphasize the need for enhanced security measures to protect against AI-assisted threats. Organizations are urged to review their security protocols and ensure AI tools are securely integrated into their systems. This development marks a concerning trend in the use of AI for malicious purposes.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/berlin-refuses-to-pay-hackers-who-stole.html",
+            "sourceUrl": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Ruby on Rails Flaw—KindaRails2Shell Targets Secrets",
+            "title": "Critical Ruby on Rails Vulnerability Exploited by Attackers",
+            "content": "A critical vulnerability in Ruby on Rails, dubbed KindaRails2Shell, allows attackers to read arbitrary files and execute code remotely. This flaw poses a significant risk to applications built on the Ruby on Rails framework, potentially exposing sensitive data and system secrets. Security experts warn that this vulnerability is actively being targeted by malicious actors. Developers using Ruby on Rails are strongly advised to apply available patches and review their security configurations. This incident highlights the importance of securing web application frameworks against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-ruby-on-rails-vulnerability-in-attackers-crosshairs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "80GB Stolen—Manchester Airports Group Breach Claimed",
+            "title": "Extortion Group Claims Data Breach at Manchester Airports Group",
+            "content": "The extortion group FulcrumSec has claimed responsibility for a data breach involving the theft of over 80GB of data from Manchester Airports Group. The stolen data reportedly includes sensitive information that the group threatens to leak online if their demands are not met. This breach underscores the vulnerability of critical infrastructure to cyberattacks and the potential impact on public safety and privacy. Security teams at airports and similar organizations are urged to enhance their cybersecurity defenses and incident response strategies. The aviation sector remains a high-value target for cybercriminals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/extortion-group-claims-manchester-airports-group-data-breach/",
             "relatedResources": []
         },
         {
             "date": "Aug 28 2026",
-            "headline": "130 Firms Back OpenAI's Cyber Defense Pledge Amid AI Threats",
-            "title": "Tech, Cybersecurity Giants Unite Behind OpenAI-Led Cyber Defense Pledge",
-            "content": "In a significant move to bolster cybersecurity defenses, nearly 130 technology and cybersecurity companies have united behind a pledge led by OpenAI. This collective effort aims to address the growing sophistication of AI-enabled cyberattacks. The pledge underscores the urgency of enhancing cyber defenses as artificial intelligence continues to evolve and be weaponized by threat actors. Participants are encouraged to share threat intelligence and collaborate on developing advanced security measures. This initiative highlights the critical role of industry collaboration in combating emerging cyber threats and reinforces the need for continuous innovation in cybersecurity practices.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tech-cybersecurity-giants-unite-behind-openai-led-cyber-defense-pledge/",
+            "headline": "Cosmos EVM Flaw Exploited—Funds Drained from 6 Blockchains",
+            "title": "Critical Cosmos EVM Vulnerability Exploited in Blockchain Attacks",
+            "content": "Cosmos Labs has issued a warning about a critical flaw in the Cosmos EVM module, designated GHSA-7g4w-cg88-2cq2, which was exploited to drain funds from six blockchains. The vulnerability, affecting balance handling, was exploited between August 20 and August 25, 2026. This incident highlights the risks associated with shared blockchain modules and the need for rigorous security assessments. Blockchain operators are advised to review their systems for potential vulnerabilities and apply necessary patches. The exploitation of this flaw underscores the ongoing challenges in securing decentralized financial systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
             "relatedResources": []
         },
         {
-            "date": "Aug 27 2026",
-            "headline": "UK Energy Cyberattack Exposes Critical Infrastructure Weakness",
-            "title": "Critical Infrastructure's Long, Undefended Tail Exposed by UK Energy Attack",
-            "content": "A cyberattack on a small British electricity generator, which resulted in a four-day shutdown, has exposed vulnerabilities in critical infrastructure. Although the attack did not cause power outages or threaten the national grid, it highlights the potential risks posed by insufficiently defended components of essential services. Initially attributed to Iran-linked hackers, the incident underscores the need for comprehensive security measures across all levels of critical infrastructure. Security professionals should assess and fortify the cybersecurity posture of smaller, seemingly less critical components to prevent exploitation by threat actors.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4214535/critical-infrastructures-long-undefended-tail-exposed-by-uk-energy-attack.html",
+            "date": "Aug 28 2026",
+            "headline": "ownCloud Flaw Used to Steal Philippine Nuclear Data",
+            "title": "Critical ownCloud Vulnerability Exploited in Philippine Nuclear Data Theft",
+            "content": "A critical security flaw in ownCloud has been exploited by a Chinese-speaking threat actor to steal nuclear research records from a Philippine research body. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added this vulnerability to its Known Exploited Vulnerabilities catalog. This incident highlights the persistent threat of cyber espionage targeting sensitive research data. Organizations using ownCloud are urged to apply security updates and review their access controls to prevent unauthorized data access. The attack underscores the need for vigilance in protecting critical research infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
             "relatedResources": []
         },
         {
-            "date": "Aug 26 2026",
-            "headline": "Ubiquiti Patches Three 10.0 Flaws in UniFi Line",
-            "title": "Three 10.0 Security Flaws Fixed Across Ubiquiti's UniFi Line",
-            "content": "Ubiquiti has addressed three critical security vulnerabilities, each rated at a maximum severity score of 10.0, across its UniFi product line. In total, 22 vulnerabilities were disclosed, with all but one rated as critical. These flaws could allow attackers to execute arbitrary code or gain unauthorized access to affected systems. The vulnerabilities highlight the importance of timely patch management and the need for organizations to regularly update their systems to protect against potential exploits. Security teams should prioritize applying these patches to mitigate risks associated with these high-severity vulnerabilities.",
+            "date": "Aug 31 2026",
+            "headline": "AI Kill Switch Act—A Threat to U.S. Security",
+            "title": "AI Kill Switch Act Risks Undermining U.S. Infrastructure Security",
+            "content": "The proposed AI Kill Switch Act, which mandates 'kill switches' for AI agents, is raising concerns among security experts. Critics argue that such measures could compromise the security of America's critical infrastructure and weaken U.S. leadership in AI technology. The act is reminiscent of past legislative efforts like the Clipper Chip, which faced backlash for similar reasons. Security professionals warn that implementing kill switches could introduce vulnerabilities and hinder innovation. Congress is urged to reconsider the implications of this legislation on national security and technological advancement.",
             "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/ubiquiti-unifi-critical-vulnerabilities-patched/",
+            "sourceUrl": "https://cyberscoop.com/ai-kill-switch-act-clipper-chip-mistakes-op-ed/",
             "relatedResources": []
         },
         {
-            "date": "Aug 28 2026",
-            "headline": "APT28's HOOKEDGE Backdoor Targets European Governments",
-            "title": "APT28-Linked HOOKEDGE Backdoor Targets European Government and Diplomatic Organizations",
-            "content": "Cybersecurity researchers have identified a series of campaigns deploying the HOOKEDGE backdoor, linked to the APT28 group, targeting government and diplomatic entities in Romania, Spain, and Türkiye. These campaigns, active from late September 2025 to early April 2026, demonstrate the persistent threat posed by state-sponsored actors. The backdoor allows attackers to exfiltrate sensitive information and maintain a foothold in compromised networks. Organizations in the targeted regions should enhance their threat detection capabilities and implement robust security measures to defend against such sophisticated attacks.",
+            "date": "Aug 31 2026",
+            "headline": "North Korean Job Fraud Expands to Healthcare, Sales",
+            "title": "North Korean Job Fraud Scheme Extends Beyond IT Sector",
+            "content": "North Korean threat actors are expanding their fraudulent job schemes beyond the IT sector into healthcare and sales. Recent investigations have identified suspected North Korean operatives employed in these industries, raising concerns about potential espionage and data theft. This development highlights the adaptability of North Korean cyber operations and their ability to infiltrate diverse sectors. Organizations are advised to enhance their employee verification processes and remain vigilant against insider threats. The expansion of this scheme underscores the persistent threat posed by state-sponsored cyber activities.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/apt28-linked-hookedge-backdoor-targets.html",
+            "sourceUrl": "https://thehackernews.com/2026/08/north-korean-job-fraud-expands-beyond.html",
             "relatedResources": []
         },
         {
-            "date": "Aug 28 2026",
-            "headline": "Cisco Warns: Check AI Model Lineage for Hidden Risks",
-            "title": "Think You’ve Eliminated Chinese AI? Check the Model’s Lineage, Cisco Says",
-            "content": "Cisco has raised concerns about the hidden risks associated with AI models, emphasizing the importance of understanding their lineage. New research indicates that country-of-origin labels can obscure an AI model's upstream dependencies and inherited behaviors, potentially introducing security vulnerabilities. This finding is particularly relevant for organizations seeking to eliminate Chinese AI technologies due to geopolitical considerations. Security professionals should conduct thorough audits of AI models to identify any hidden dependencies that could pose security risks. This highlights the need for transparency and due diligence in AI supply chains.",
+            "date": "Aug 31 2026",
+            "headline": "Kaspersky Patches 'HardBreacher' Exploit in Security Product",
+            "title": "Kaspersky Addresses Vulnerability in Endpoint Security Product",
+            "content": "Kaspersky has patched a vulnerability in its Endpoint Security product, known as 'HardBreacher,' which was exploited by the Nightmare Eclipse group. The flaw allowed unauthorized access to systems, posing a significant risk to users of Kaspersky's security solutions. Organizations using Kaspersky products are advised to apply the latest updates to protect against potential exploitation. This incident underscores the importance of timely patch management in maintaining the integrity of security software. The swift response by Kaspersky highlights the need for proactive measures in addressing emerging threats.",
             "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/think-youve-eliminated-chinese-ai-check-the-models-lineage-cisco-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 26 2026",
-            "headline": "'HTTP Terminator' Uncovers New HTTP Desync Attack Techniques",
-            "title": "'HTTP Terminator' Hunts for Novel Desync Attacks",
-            "content": "James Kettle from PortSwigger has introduced an AI-powered open-source tool named 'HTTP Terminator' that has discovered new HTTP request-smuggling techniques. These techniques exploit desynchronization vulnerabilities in HTTP requests, potentially allowing attackers to bypass security controls and access sensitive data. The tool's findings underscore the evolving nature of web application threats and the need for continuous monitoring and testing of web security measures. Developers and security teams should leverage such tools to identify and mitigate desync vulnerabilities in their applications.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/http-terminator-hunts-novel-desync-attacks",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 25 2026",
-            "headline": "Mexico's Cybersecurity Plan 2025-2030: A Strategic Defense Blueprint",
-            "title": "Mexico’s Cybersecurity Plan 2025-2030: Turning Ambition Into Defense",
-            "content": "Mexico has unveiled its Cybersecurity Plan for 2025-2030, outlining a strategic roadmap to enhance national cyber defenses. The plan addresses key threats such as ransomware and emphasizes building resilient infrastructure and capabilities. It aims to strengthen collaboration between government, private sector, and international partners to effectively counter cyber threats. This initiative reflects a growing recognition of the importance of comprehensive cybersecurity strategies in safeguarding national interests. Security professionals should consider the plan's elements as part of broader efforts to enhance regional and global cybersecurity resilience.",
-            "source": "Recorded Future",
-            "sourceUrl": "https://www.recordedfuture.com/blog/mexico-cybersecurity-plan",
+            "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-hardbreacher-kaspersky-product-exploit/",
             "relatedResources": []
         },
         {
@@ -101,34 +101,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
             "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "WordPress Flaws Expose Sites to Takeover—Patch Immediately",
-            "title": "Critical Vulnerabilities in WordPress Plugins and Themes Allow Site Takeover",
-            "content": "Multiple critical vulnerabilities have been identified in popular WordPress plugins and themes, including WPMU DEV Dashboard, Avada, TranslatePress, Pods, and GiveWP. These flaws could lead to authentication bypass, account takeover, and remote code execution (RCE). The vulnerabilities were disclosed by security firms Wordfence and Patchstack, emphasizing the need for immediate updates to prevent exploitation. WordPress site administrators should prioritize patching these plugins to safeguard their sites from potential attacks. This incident underscores the ongoing security challenges faced by WordPress users due to the platform's widespread use and the critical nature of its ecosystem.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Hasbro Breach Exposes Employee Data—Cyberattack Disrupts Operations",
-            "title": "Hasbro Data Breach Reveals Employee Personal Information Following Cyberattack",
-            "content": "Hasbro has disclosed a data breach resulting from a cyberattack earlier this year that exposed personal information of its employees. The toy and game giant experienced operational disruptions due to the attack, which has now been linked to unauthorized access to sensitive employee data. While the company has not specified the exact number of affected individuals, the breach underscores the vulnerability of corporate networks to sophisticated cyber threats. Employees are advised to monitor their personal accounts for unusual activity and consider identity protection services. This incident highlights the ongoing risks faced by large enterprises in safeguarding sensitive information against cyberattacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hasbro-data-breach-exposed-employee-personal-information/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Aug 27 2026",
-            "headline": "ChatGPT Boosts Student Performance—Study Reveals Key Insights",
-            "title": "Study Highlights ChatGPT's Role in Enhancing Student Critical Thinking",
-            "content": "A recent randomized study involving over 1,000 students has demonstrated the positive impact of ChatGPT on student performance in real-world university assignments. The research focused on the integration of ChatGPT with critical-thinking training, revealing improvements in originality and analytical skills. Students using ChatGPT showed enhanced ability to generate diverse ideas and solutions, crucial for academic success. This study underscores the potential of AI tools in educational settings, promoting broader thinking and deeper engagement with complex topics. Educators are encouraged to integrate AI tools like ChatGPT to foster critical thinking and creativity in students.",
+            "date": "Aug 31 2026",
+            "headline": "98% of Claims Adjusters Slam AI—Industry Faces Backlash",
+            "title": "Insurance Claims Adjusters Voice Overwhelming Discontent with AI Integration",
+            "content": "A recent analysis of Glassdoor reviews reveals that 98% of insurance claims adjusters express negative sentiments about AI's role in their work. Many adjusters argue that AI, while a tool, should not replace human judgment in claims processing. The dissatisfaction highlights a growing tension between AI-driven efficiency and the nuanced decision-making required in insurance assessments. As insurers increasingly adopt AI to streamline operations, the industry must address these concerns to balance technological advancement with employee satisfaction. Stakeholders are urged to ensure AI tools complement rather than replace human expertise.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/insurance-claims-adjusters-really-hate-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Harvard Dropout Raises $6M for Police Guidance App",
+            "title": "Blue Voice Secures $6M to Develop Real-Time Legal App for Police",
+            "content": "Blue Voice, a startup founded by a Harvard Law dropout, has raised $6 million in a seed round led by SignalFire and Las Olas VC. The app aims to provide police officers with real-time legal and policy guidance, akin to a digital assistant named \"Harvey.\" This funding will accelerate the development of the app, which seeks to improve decision-making in law enforcement by offering instant access to legal frameworks and protocols. The initiative reflects a broader trend of leveraging AI to enhance public service efficiency and accountability. Law enforcement agencies are encouraged to explore such tools to support officers in the field.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Clipto Valued at $250M—AI Video Search Startup Soars",
+            "title": "Clipto Achieves $250M Valuation with AI-Powered Video Search Capabilities",
+            "content": "Clipto, a three-year-old startup specializing in AI-driven video search, has reached a $250 million valuation following a successful funding round. The company reports $15 million in annual recurring revenue (ARR) and profitability prior to securing an additional $15 million investment. Clipto's technology enables efficient searching through terabytes of video data, offering significant advantages for media companies and content creators. This development underscores the growing demand for AI solutions that enhance data accessibility and management. Businesses handling large volumes of video content should consider integrating such AI tools to optimize their operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Debian Embraces AI—No Ban on AI Code Contributions",
+            "title": "Debian Votes to Allow AI Tools in Linux Development",
+            "content": "Debian has voted to permit the use of AI tools in the development, maintenance, and documentation of its Linux distribution. The decision acknowledges the potential of \"responsible\" AI use to enhance developer productivity. This policy shift reflects a broader acceptance of AI in open-source projects, emphasizing the importance of balancing innovation with ethical considerations. Developers contributing to Debian are encouraged to explore AI tools that can streamline their workflows while adhering to community guidelines. This move may inspire other open-source projects to reevaluate their stance on AI integration.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Nvidia Invests $3.5B in MediaTek—AI Chip Strategy Unveiled",
+            "title": "Nvidia's $3.5B Investment in MediaTek Signals AI Infrastructure Ambitions",
+            "content": "Nvidia has invested $3.5 billion in Taiwanese chipmaker MediaTek, highlighting its strategy to remain integral to AI infrastructure as major tech companies develop their own AI chips. This partnership aims to leverage MediaTek's manufacturing capabilities to produce advanced AI chips, ensuring Nvidia's continued relevance in the rapidly evolving AI landscape. The investment underscores the increasing competition in the AI hardware market, with companies seeking to optimize performance and reduce reliance on external suppliers. Industry leaders should monitor these developments to understand the shifting dynamics in AI chip production.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "EU Tightens Grip on ChatGPT—New Regulations Imminent",
+            "title": "EU to Impose Stricter Regulations on ChatGPT Under Digital Services Act",
+            "content": "The European Union is set to enforce stricter regulations on OpenAI's ChatGPT, now classified as a Very Large Online Search Engine under the Digital Services Act. This classification requires OpenAI to mitigate risks related to minors, user mental health, and illegal content dissemination. The move reflects growing concerns over AI's societal impacts and the need for robust governance frameworks. Companies deploying AI technologies in the EU must prepare for increased compliance requirements and potential operational adjustments. This regulatory shift highlights the importance of ethical AI deployment in safeguarding user interests.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/986682/openai-chatgpt-eu-dsa",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Instagram Targets Fake AI Influencers—New Label Introduced",
+            "title": "Instagram Cracks Down on AI-Generated Accounts with New Labeling",
+            "content": "Instagram is implementing measures to combat the rise of AI-generated influencer accounts by renaming the \"AI creator\" label to \"AI-generated profile.\" This change aims to enhance transparency and help users distinguish between real and AI-generated personas. The platform's action addresses concerns about the authenticity of online interactions and the potential for AI to manipulate social media dynamics. Users and marketers should be aware of these changes to better navigate the evolving landscape of digital influence. Instagram's initiative highlights the ongoing challenge of maintaining authenticity in the age of AI.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/986593/instagram-addresses-fake-ai-profile-slop",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Circleback Launches Free Tier—Aims to Expand User Base",
+            "title": "Circleback Introduces Free Tier to Attract More Meeting Note-Taker Users",
+            "content": "Circleback, a meeting note-taking app, has launched a free tier alongside new pricing plans starting at $14 per month. This strategic move aims to broaden its customer base by offering accessible options for individuals and businesses seeking efficient meeting management solutions. The introduction of a free tier reflects a growing trend among SaaS companies to lower entry barriers and increase user engagement. Organizations looking to enhance productivity through digital tools should explore Circleback's offerings to optimize meeting outcomes. This development underscores the competitive landscape of productivity software.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/meeting-notetaker-circleback-adds-a-free-tier-to-attract-more-customers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "ChatGPT Ads Hits $1B Revenue—Global Expansion Underway",
+            "title": "ChatGPT Ads Achieves $1 Billion Revenue Run Rate, Expands Globally",
+            "content": "OpenAI's ChatGPT Ads has reached a $1 billion annualized revenue run rate, marking a significant milestone in its global expansion. The platform offers free and affordable AI access, supporting broader adoption across diverse markets. This achievement highlights the increasing demand for AI-driven advertising solutions and OpenAI's strategic positioning in the market. Businesses worldwide are encouraged to leverage ChatGPT Ads to enhance their digital marketing efforts and reach target audiences effectively. The success of ChatGPT Ads underscores the transformative potential of AI in the advertising industry.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+            "sourceUrl": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 28 2026",
+            "headline": "Neocloud Lambda Secures $1B Debt for Nvidia AI Chips",
+            "title": "Neocloud Lambda Raises $1B to Acquire Nvidia AI Chips for Leasing",
+            "content": "Neocloud Lambda has secured $1 billion in private debt to purchase Nvidia AI chips, which it plans to lease to Microsoft. This move highlights the substantial financial investments required to support the growing demand for AI hardware. The transaction is part of a broader trend where companies seek to capitalize on the AI boom by acquiring cutting-edge technology for strategic partnerships. Organizations involved in AI development should consider similar financing strategies to enhance their technological capabilities and market competitiveness. The deal emphasizes the critical role of AI chips in advancing computational power.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
             "relatedResources": []
         },
         {
@@ -138,78 +201,6 @@ const websiteContent = {
             "content": "The U.S. government is intensifying efforts to limit the use of foreign-made drones and robots, aiming to bolster national security. However, China's vast manufacturing capabilities and market scale may allow it to circumvent these barriers, potentially shifting the competitive landscape. This move is part of a broader strategy to secure critical technologies and reduce dependency on foreign suppliers. Industry experts suggest that while U.S. restrictions may slow Chinese drone imports, they are unlikely to halt China's global market expansion. Companies should monitor regulatory changes and assess supply chain impacts.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 28 2026",
-            "headline": "Open-Weight AI Companies—Valley's New Acquisition Targets",
-            "title": "Open-Weight AI Firms Attracting Major Investment in Silicon Valley",
-            "content": "Silicon Valley is witnessing a surge in interest towards open-weight AI companies, which are becoming prime acquisition targets. These firms focus on developing AI models that are freely available, encouraging innovation and collaboration. The influx of capital into this sector highlights a shift towards open-source AI development, fostering a more inclusive tech ecosystem. This trend is driven by the demand for transparency and accessibility in AI technologies. Tech leaders are advised to explore partnerships with open-weight AI companies to leverage their innovative potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/28/open-weight-ai-companies-are-the-valleys-hottest-acquisition-targets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 28 2026",
-            "headline": "OpenAI Ends Cursor Contract Post-SpaceX Acquisition",
-            "title": "OpenAI Discontinues Cursor Contract After SpaceX Acquisition",
-            "content": "OpenAI has decided to terminate its contract with Cursor following the latter's acquisition by SpaceX. The decision reflects strategic realignment and resource allocation within OpenAI, as it focuses on core projects and partnerships. This move underscores the dynamic nature of tech collaborations, where acquisitions can lead to shifts in existing agreements. Organizations involved in similar partnerships should evaluate the impact of acquisitions on their contracts and strategic goals. OpenAI's decision highlights the importance of adaptability in the rapidly evolving tech landscape.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 27 2026",
-            "headline": "Anthropic, OpenAI Headline TechCrunch Disrupt 2026 AI Stage",
-            "title": "Anthropic and OpenAI to Feature at TechCrunch Disrupt 2026",
-            "content": "TechCrunch Disrupt 2026 will feature Anthropic and OpenAI on its AI Stage, focusing on the most pressing topics in the AI community. Sponsored by Google for Startups, the event aims to explore advancements and challenges in AI development. This gathering of industry leaders provides a platform for discussing AI's future, including ethical considerations and technological breakthroughs. Attendees can expect insights into the latest AI trends and innovations. Professionals in the AI field should consider attending to stay informed on cutting-edge developments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 27 2026",
-            "headline": "Barret Zoph Joins Google Post-OpenAI Stint",
-            "title": "Barret Zoph Transitions from OpenAI to Google",
-            "content": "Barret Zoph, co-founder of Thinking Machines Lab, has joined Google after a brief tenure at OpenAI. Zoph, known for his expertise in machine learning and AI research, previously served as CTO at Thinking Machines Lab. His move to Google signals a strategic acquisition of talent as the tech giant continues to strengthen its AI capabilities. This transition highlights the competitive nature of the AI industry, where top talent is highly sought after. Companies should focus on retaining skilled professionals to maintain a competitive edge.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 27 2026",
-            "headline": "Google's AI Mode—Your New Travel Agent",
-            "title": "Google Enhances AI Mode for Comprehensive Travel Planning",
-            "content": "Google has upgraded its AI Mode to include features for tracking flight prices and booking hotels, positioning it as a comprehensive AI travel agent. This development moves beyond traditional information retrieval, enabling users to manage entire travel itineraries through AI. The enhanced capabilities aim to streamline the travel planning process, offering convenience and efficiency to users. This update reflects Google's strategy to integrate AI into everyday tasks, enhancing user experience. Travelers and tech enthusiasts should explore these new features for optimized travel planning.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/27/googles-ai-mode-can-now-track-flight-prices-help-book-hotels-and-more/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 27 2026",
-            "headline": "Hugging Face's Microduck—A $399 AI Robot Companion",
-            "title": "Hugging Face Launches Microduck, a Rollerskating AI Robot",
-            "content": "Hugging Face's Pollen Robotics has unveiled the Microduck, an AI robot designed to charm with its unique rollerskating ability. Standing under 10 inches tall, this one-eyed biped is available for preorder at $399, with shipping expected before Christmas. The Microduck is offered in various colors, including cream and lavender, appealing to both tech enthusiasts and collectors. This launch highlights the growing trend of consumer-friendly AI robots, blending functionality with entertainment. Potential buyers should consider the Microduck as a novel addition to their tech collection.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/gadgets/985549/hugging-face-microduck-robot",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 27 2026",
-            "headline": "Plaud's AI Earbuds—Record, Transcribe, Summarize Conversations",
-            "title": "Plaud Introduces AI Earbuds for Enhanced Conversation Management",
-            "content": "Plaud has launched the Plaud One Explorer Edition, AI-powered earbuds designed to record, transcribe, and summarize conversations. These earbuds can be worn traditionally or used via a standalone charging case, offering flexibility and convenience. The device aims to assist professionals in managing meetings and personal interactions more effectively. This innovation reflects the increasing demand for AI wearables that enhance productivity and communication. Professionals interested in optimizing their workflow should consider integrating such AI tools into their daily routines.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/985500/plaud-one-earbuds-ai-recorder-price-availability",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 26 2026",
-            "headline": "Google Expands Gemini 3.5—AI Speech-to-Text for Chrome",
-            "title": "Google Integrates Gemini 3.5 Transcribe into Chrome for Enhanced Accessibility",
-            "content": "Google has announced the integration of Gemini 3.5 Transcribe, an AI-powered speech-to-text tool, into its Chrome browser. This development aims to improve accessibility and user interaction by enabling seamless transcription of spoken content. The tool, already powering Gboard's Rambler, is now set to enhance user experience across more Google products. This move aligns with Google's commitment to leveraging AI for practical applications, broadening accessibility for users with diverse needs. Developers and users should explore these capabilities to enhance digital accessibility and productivity.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-5-transcribe-for-ai-powered-speech-to-text/",
             "relatedResources": []
         },
         {
@@ -237,42 +228,6 @@ const websiteContent = {
             "content": "Caterpillar is transferring its extensive experience in mining automation to the field of AI deployment. Having spent decades automating remote mining operations, the company is now focusing on integrating AI technologies into its machinery. This strategic move aims to enhance operational efficiency and safety across various industries. Caterpillar's expertise in autonomous systems positions it as a leader in AI-driven industrial solutions. Professionals in the field should monitor Caterpillar's advancements as they could set new standards for AI integration in heavy machinery.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Sony and Warner Sue Anthropic—Copyright Infringement Alleged",
-            "title": "Sony Music and Warner Chappell File Lawsuit Against Anthropic",
-            "content": "Sony Music Publishing and Warner Chappell have initiated legal action against Anthropic, alleging infringement of \"tens of thousands\" of copyrighted works. Filed in the US District Court for the Northern District of California, the lawsuit seeks up to $150,000 per work plus additional damages. This case underscores the ongoing legal challenges faced by AI companies in handling copyrighted content. The outcome could have significant implications for AI-generated content and copyright law. Industry professionals should closely follow this case for its potential impact on AI development and intellectual property rights.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Sony, Warner Sue Anthropic for IP Theft—$150K Per Work",
-            "title": "Sony Music and Warner Sue Anthropic Over Intellectual Property Theft",
-            "content": "Sony Music and Warner Chappell have filed a lawsuit against Anthropic, accusing the AI company of a \"brazen campaign\" of intellectual property theft. The suit, filed in the US District Court for the Northern District of California, seeks damages for \"tens of thousands\" of copyrighted works, with claims of up to $150,000 per work. This legal action highlights the growing tensions between AI companies and content creators over the use of copyrighted material in AI training datasets. The outcome of this case could set significant precedents for how AI models are trained and the legal responsibilities of AI developers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Nvidia's AI Edge—Beyond GPUs to Smarter Data Centers",
-            "title": "Nvidia Expands AI Capabilities with Smarter Data Center Systems",
-            "content": "Nvidia is advancing its AI technology beyond GPUs by enhancing data center efficiency through smarter traffic control systems. This new generation of data center systems aims to optimize performance not by increasing processor cycles but by improving data flow management. The move signifies a shift in focus towards holistic system efficiency, impacting enterprises relying on data-intensive applications. As AI workloads grow, these innovations are crucial for maintaining performance and reducing operational costs. Professionals in AI and IT infrastructure should explore these advancements to leverage Nvidia's evolving ecosystem for enhanced computational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Musicians Turn Detectives—Hunting AI Music Grifters",
-            "title": "Musicians Combat AI-Generated Music Mimicking Human Artists",
-            "content": "Musicians are increasingly acting as detectives to identify AI-generated music that mimics their original work. With the rise of sophisticated audio-focused generative tools, the internet is flooded with algorithmically derived melodies and vocals. This trend poses challenges for artists seeking to protect their intellectual property. The music industry must adapt to these technological advancements by implementing robust detection and copyright enforcement mechanisms. Artists and developers should collaborate to create tools that can distinguish between human and AI-generated content, safeguarding the integrity of creative works.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/985866/h4rris-nihil-young-edm-suno-ai",
             "relatedResources": []
         }
     ],
@@ -358,6 +313,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-82078",
+            "dateAdded": "Aug 31, 2026",
+            "vendor": "PaperCut NG/MF",
+            "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpa",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82078",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-81578",
+            "dateAdded": "Aug 31, 2026",
+            "vendor": "PaperCut NG/MF",
+            "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81578",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2023-49105",
             "dateAdded": "Aug 27, 2026",
