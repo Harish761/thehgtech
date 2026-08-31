@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1428",
+      "incident_id": 1428,
+      "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1666",
       "incident_id": 1666,
       "title": "Oura Smart Ring Purchaser in California Alleged Company Overstated AI Sleep-Tracking Accuracy, Leadi",
@@ -2234,9 +2242,9 @@
     }
   ],
   "stats": {
-    "total": 279,
-    "last7Days": 64,
-    "last30Days": 101
+    "total": 280,
+    "last7Days": 65,
+    "last30Days": 102
   },
-  "lastUpdated": "2026-08-31T10:52:35.010628+05:30"
+  "lastUpdated": "2026-08-31T21:37:05.661271+05:30"
 }
