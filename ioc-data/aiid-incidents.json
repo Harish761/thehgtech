@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1666",
+      "incident_id": 1666,
+      "title": "Oura Smart Ring Purchaser in California Alleged Company Overstated AI Sleep-Tracking Accuracy, Leadi",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1665",
+      "incident_id": 1665,
+      "title": "Purportedly AI-Generated Article Falsely Depicted Australian Broadcasting Corporation Finance Presen",
+      "date": "2026-08-30",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1667",
+      "incident_id": 1667,
+      "title": "Minnesota Attorney Reportedly Used AI-Generated Fabricated Citations in Hennepin County Civil Case a",
+      "date": "2026-08-30",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-10",
       "incident_id": 10,
       "title": "Kronos Scheduling Algorithm Allegedly Caused Financial Issues for Starbucks Employees",
@@ -2210,9 +2234,9 @@
     }
   ],
   "stats": {
-    "total": 276,
-    "last7Days": 61,
-    "last30Days": 98
+    "total": 279,
+    "last7Days": 64,
+    "last30Days": 101
   },
-  "lastUpdated": "2026-08-31T04:11:27.183652+05:30"
+  "lastUpdated": "2026-08-31T10:52:35.010628+05:30"
 }
