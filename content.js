@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Sep 01 2026",
+            "headline": "PaperCut Vulnerabilities Lead to Active Exploitation—CISA Warns",
+            "title": "PaperCut Exploitation Escalates with CVE-2026-82078 and CVE-2026-81578",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has added two critical vulnerabilities, CVE-2026-82078 and CVE-2026-81578, affecting PaperCut software to its Known Exploited Vulnerabilities (KEV) catalog. These vulnerabilities are being actively exploited, leading to unauthorized intrusions. The flaws enable attackers to bypass authentication and execute arbitrary code, posing significant risks to organizations using PaperCut for print management. Security professionals are urged to apply patches immediately to mitigate potential breaches. This escalation highlights the importance of maintaining updated security measures against evolving threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 29 2026",
+            "headline": "WordPress Flaws Enable Site Takeovers—Patch Critical Plugins Now",
+            "title": "Critical Flaws in WordPress Plugins and Themes Allow RCE and Takeovers",
+            "content": "Security researchers have disclosed multiple critical vulnerabilities in popular WordPress plugins and themes, including WPMU DEV Dashboard, Avada, TranslatePress, Pods, and GiveWP. These flaws could lead to authentication bypass, account takeover, and remote code execution (RCE). Wordfence and Patchstack have identified these issues, urging site administrators to update affected plugins immediately. With WordPress powering over 40% of websites globally, the potential impact is vast, risking site integrity and user data. This incident underscores the necessity for regular updates and security audits in web applications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 27 2026",
+            "headline": "TeamPCP Hackers Arrested—Australia Cracks Down on Cybercrime",
+            "title": "Australian Authorities Arrest Two Alleged TeamPCP Cybercriminals",
+            "content": "Australian Federal Police have arrested two individuals suspected of being members of TeamPCP, a notorious cybercrime group involved in extensive software supply chain attacks. This group has been linked to numerous data extortion schemes, impacting businesses and individuals globally. The arrests mark a significant step in dismantling one of the longest-running cybercrime operations. Authorities emphasize the importance of international cooperation in combating cyber threats, as these operations often span multiple jurisdictions. Organizations are advised to review their supply chain security measures to prevent similar attacks.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Windows Bug Misleads Users—Defender Antivirus Still Active",
+            "title": "Windows Bug Incorrectly Reports Microsoft Defender Antivirus as Disabled",
+            "content": "Microsoft has acknowledged a bug in Windows that falsely informs users that Microsoft Defender Antivirus is turned off, despite it functioning correctly. This glitch could lead users to mistakenly disable other security measures, increasing vulnerability to threats. Microsoft is actively working on a fix, but in the meantime, users are advised to verify their antivirus status through the Windows Security app. This incident highlights the critical need for accurate system notifications to maintain effective cybersecurity practices and user trust.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4216607/windows-bug-incorrectly-tells-users-that-microsoft-defender-antivirus-is-turned-off-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "ShinyHunters Breach McKesson—Patient Data at Risk",
+            "title": "McKesson Confirms Data Breach Amid ShinyHunters' Patient Data Theft Claims",
+            "content": "Healthcare giant McKesson has confirmed a data breach following claims by the cybercriminal group ShinyHunters of stealing hundreds of millions of patient records. The breach raises significant concerns over patient privacy and data protection within the healthcare sector. McKesson is currently investigating the extent of the breach and working to secure its systems. This incident serves as a stark reminder of the vulnerabilities in healthcare data management and the need for robust cybersecurity measures to protect sensitive information.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/08/mckesson-confirms-cyber-incident-after-shinyhunters-claims-patient-data-theft",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "ValleyRAT Backdoor Evades Detection—Hides in Signed Adware",
+            "title": "ValleyRAT Backdoor Disguised in Signed Chinese Adware",
+            "content": "The threat actor known as Silver Fox is distributing the ValleyRAT backdoor through a signed Chinese adware application, exploiting user trust to bypass antivirus defenses. By running the malware under a trusted process, attackers can evade detection, especially when users add such software to antivirus exclusions. Kaspersky has identified this tactic as a sophisticated method to infiltrate systems. Users are advised to scrutinize software before adding it to exclusion lists and to maintain updated security protocols to prevent such intrusions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Anthropic Logs Out Users—Infostealer Malware Threat",
+            "title": "Anthropic Warns Claude Users of Infostealer Malware Infections",
+            "content": "Anthropic has taken proactive measures by logging out users and removing payment data from accounts to combat an infostealer malware threat targeting its Claude AI platform. This move aims to prevent unauthorized access and potential data theft. The company advises users to reset passwords and monitor account activity closely. This incident highlights the increasing targeting of AI platforms by cybercriminals and the need for robust security measures to protect sensitive user data and maintain trust in AI services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-warns-claude-users-of-infostealer-malware-infections/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Boston Scientific Cyberattack—Recovery Efforts Ongoing",
+            "title": "Boston Scientific Still Recovering From Cyberattack Impacting Global Network",
+            "content": "Boston Scientific is in the process of recovering from a cyberattack that caused significant disruption to its global network. The company has enlisted the help of cybersecurity firms, including CrowdStrike, to investigate and mitigate the impact. This attack underscores the vulnerability of critical infrastructure in the healthcare sector to cyber threats. Organizations are reminded of the importance of having comprehensive incident response plans and robust cybersecurity measures to protect against such disruptive attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/boston-scientific-still-recovering-from-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Fire Ant Expands Campaign—Targets Cisco Routers",
+            "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials",
+            "content": "The cyber espionage group Fire Ant, linked to China, has expanded its operations to target Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts. This campaign aims to steal credentials and blind security logs, posing a significant threat to high-value network infrastructures. Organizations using these systems are advised to implement stringent access controls and monitor network traffic for unusual activity. This development highlights the persistent threat posed by state-sponsored actors to critical network components.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "DoJ Clarifies China Hacking—Agencies Targeted, Not Victims",
+            "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets",
+            "content": "The U.S. Department of Justice (DoJ) has clarified its previous statement regarding Chinese cyberattacks, noting that U.S. agencies were targeted but not directly victimized. This correction follows initial reports that suggested several agencies, including NASA, were victims of these attacks. The clarification emphasizes the distinction between being a target and suffering a breach, which is crucial for understanding the scope and impact of cyber threats. Agencies are advised to remain vigilant and enhance their cybersecurity defenses against such targeted attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
+            "relatedResources": []
+        },
+        {
             "date": "Aug 31 2026",
             "headline": "ServiceNow Patches 3 Critical Code Injection Flaws",
             "title": "ServiceNow Addresses Critical Code Injection Vulnerabilities",
@@ -49,24 +139,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 28 2026",
-            "headline": "Cosmos EVM Flaw Exploited—Funds Drained from 6 Blockchains",
-            "title": "Critical Cosmos EVM Vulnerability Exploited in Blockchain Attacks",
-            "content": "Cosmos Labs has issued a warning about a critical flaw in the Cosmos EVM module, designated GHSA-7g4w-cg88-2cq2, which was exploited to drain funds from six blockchains. The vulnerability, affecting balance handling, was exploited between August 20 and August 25, 2026. This incident highlights the risks associated with shared blockchain modules and the need for rigorous security assessments. Blockchain operators are advised to review their systems for potential vulnerabilities and apply necessary patches. The exploitation of this flaw underscores the ongoing challenges in securing decentralized financial systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 28 2026",
-            "headline": "ownCloud Flaw Used to Steal Philippine Nuclear Data",
-            "title": "Critical ownCloud Vulnerability Exploited in Philippine Nuclear Data Theft",
-            "content": "A critical security flaw in ownCloud has been exploited by a Chinese-speaking threat actor to steal nuclear research records from a Philippine research body. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added this vulnerability to its Known Exploited Vulnerabilities catalog. This incident highlights the persistent threat of cyber espionage targeting sensitive research data. Organizations using ownCloud are urged to apply security updates and review their access controls to prevent unauthorized data access. The attack underscores the need for vigilance in protecting critical research infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets.html",
-            "relatedResources": []
-        },
-        {
             "date": "Aug 31 2026",
             "headline": "AI Kill Switch Act—A Threat to U.S. Security",
             "title": "AI Kill Switch Act Risks Undermining U.S. Infrastructure Security",
@@ -104,6 +176,96 @@ const websiteContent = {
         }
     ],
     "aiShorts": [
+        {
+            "date": "Aug 27 2026",
+            "headline": "ChatGPT Boosts Student Performance in Critical Thinking Study",
+            "title": "Study Shows ChatGPT Enhances Student Critical Thinking and Originality",
+            "content": "A randomized study involving over 1,000 students has revealed that integrating ChatGPT with critical-thinking training significantly boosts student performance on university assignments. The research highlights that students using ChatGPT demonstrated improved originality and broader thinking skills. This study underscores the potential of AI tools in educational settings, suggesting that when combined with structured training, AI can enhance learning outcomes. Educators are encouraged to explore AI-assisted learning to foster critical thinking and creativity among students. This development aligns with the growing trend of incorporating AI into educational curricula to prepare students for a tech-driven future.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "OpenClaw 2.0 Revolutionizes AI Coding for Enterprises",
+            "title": "OpenClaw 2.0 Launches, Transforming AI Coding into a Multiplayer Experience",
+            "content": "OpenClaw 2.0 has been released, offering enterprises a groundbreaking way to leverage AI coding through a multiplayer approach. This open-source AI harness allows users to transform language models into autonomous workers that can be communicated with via popular messaging platforms like Telegram and WhatsApp. While initial excitement peaked in March 2026, the release of version 2.0 aims to reignite interest by enhancing collaborative coding capabilities. Enterprises can now streamline workflows and improve productivity by integrating AI into their coding processes. This innovation reflects a broader trend towards democratizing AI development and making it more accessible to diverse teams.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/openclaw-2-0-is-here-what-it-means-for-enterprises",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Apple Accuses Ex-Employee of Data Theft for OpenAI",
+            "title": "Apple Presents Evidence Against Former Employee in Data Theft Case",
+            "content": "Apple has presented what it calls \"shocking evidence\" against a former employee accused of stealing company data for OpenAI. The tech giant alleges that the individual destroyed evidence after learning of the investigation, raising concerns about internal data security protocols. This case highlights the ongoing challenges companies face in protecting proprietary information from insider threats. Organizations are advised to strengthen their data protection measures and conduct regular audits to prevent similar incidents. The situation underscores the importance of robust cybersecurity practices in safeguarding intellectual property.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Pentagon Adopts ChatGPT, Grok for AI Portal",
+            "title": "Pentagon Integrates ChatGPT and Grok into AI Tools Portal",
+            "content": "The Pentagon has announced the integration of OpenAI's ChatGPT and SpaceXAI's Grok into its central AI tools portal, alongside Google's Gemini. This move aims to enhance the Department of Defense's AI capabilities by providing access to advanced language models for various applications. The inclusion of these models reflects the Pentagon's commitment to leveraging cutting-edge AI technology for national security purposes. Defense agencies are encouraged to explore these tools to improve operational efficiency and decision-making processes. This development is part of a broader trend of government adoption of AI technologies to maintain a strategic advantage.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Instagram Curbs Reach of Undisclosed AI Profiles",
+            "title": "Instagram Limits Influence of Undisclosed AI Influencers",
+            "content": "Instagram has implemented new restrictions on the reach of undisclosed AI profiles in response to growing frustration over AI influencers. The platform aims to increase transparency and ensure users are aware when they are interacting with AI-generated content. This move addresses concerns about the authenticity and ethical implications of AI influencers in social media. Users and marketers should be aware of these changes as they may impact engagement metrics and advertising strategies. The decision reflects a broader industry trend towards greater transparency and accountability in AI-driven content creation.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "OpenAI Backs California Bill for Youth AI Safety",
+            "title": "OpenAI Supports California Legislation for Teen AI Safeguards",
+            "content": "OpenAI has expressed its support for California Senate Bill 1119, which aims to implement strong, age-appropriate AI safeguards for teenagers. The bill seeks to balance safety with opportunities for learning and creativity in AI usage. OpenAI's endorsement highlights the importance of protecting young users while fostering an environment conducive to innovation and exploration. Policymakers and educators are encouraged to consider similar measures to ensure the responsible use of AI technologies by minors. This initiative is part of a growing movement to address the ethical and safety concerns associated with AI in youth contexts.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Polimill Advances Japan's AI Infrastructure with GPT Models",
+            "title": "Polimill Develops Japan's Next-Gen Public AI Infrastructure",
+            "content": "Polimill is spearheading the development of Japan's next-generation public AI infrastructure using OpenAI's GPT models and Codex. This initiative aims to enhance municipal access to administrative knowledge and accelerate technological development. By leveraging these advanced AI tools, Japanese municipalities can improve efficiency and decision-making processes. The project reflects a broader trend of governments investing in AI to modernize public services and infrastructure. Stakeholders are encouraged to monitor this development as it may serve as a model for other countries looking to integrate AI into public administration.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/polimill",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 29 2026",
+            "headline": "Sony, Warner Sue Anthropic for IP Theft",
+            "title": "Sony Music and Warner Chappell File Lawsuit Against Anthropic",
+            "content": "Sony Music Publishing and Warner Chappell have filed a lawsuit against Anthropic, accusing the company of a \"brazen campaign\" of intellectual property theft. The lawsuit, filed in the US District Court for the Northern District of California, seeks damages for \"tens of thousands\" of copyrighted works allegedly used without permission. The case highlights the ongoing legal battles over AI-generated content and intellectual property rights. Companies in the AI space should be vigilant about copyright compliance to avoid similar legal challenges. This lawsuit underscores the need for clear regulations and guidelines in the rapidly evolving AI industry.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 29 2026",
+            "headline": "TechBBQ Debates AI Control in Europe",
+            "title": "TechBBQ Conference Explores Human Agency Over AI in Europe",
+            "content": "The annual Nordic TechBBQ conference brought together investors, founders, and operators from across Europe to discuss the critical issue of human agency over AI. Participants debated who truly controls AI systems and the implications for society and business. The discussions reflect a growing concern about the balance of power between humans and AI technologies. Industry leaders are urged to consider ethical frameworks and governance models to ensure AI serves human interests. This conversation is part of a broader dialogue on the responsible development and deployment of AI technologies worldwide.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/29/at-techbbq-europes-ai-conversations-kept-coming-back-to-whos-actually-in-control/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 29 2026",
+            "headline": "Nvidia Expands AI Advantage Beyond GPUs",
+            "title": "Nvidia's AI Strategy Shifts Focus Beyond GPU Technology",
+            "content": "Nvidia is expanding its AI strategy beyond traditional GPU technology, focusing on smarter data center systems that enhance efficiency through improved traffic control. This shift aims to optimize data processing without solely relying on increased processor cycles. The move highlights Nvidia's commitment to maintaining its leadership in the AI hardware market by innovating beyond GPUs. Data center operators and IT professionals should consider these advancements when planning infrastructure upgrades. Nvidia's approach reflects a broader industry trend towards more intelligent and efficient AI hardware solutions.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+            "relatedResources": []
+        },
         {
             "date": "Aug 31 2026",
             "headline": "98% of Claims Adjusters Slam AI—Industry Faces Backlash",
@@ -186,48 +348,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 28 2026",
-            "headline": "Neocloud Lambda Secures $1B Debt for Nvidia AI Chips",
-            "title": "Neocloud Lambda Raises $1B to Acquire Nvidia AI Chips for Leasing",
-            "content": "Neocloud Lambda has secured $1 billion in private debt to purchase Nvidia AI chips, which it plans to lease to Microsoft. This move highlights the substantial financial investments required to support the growing demand for AI hardware. The transaction is part of a broader trend where companies seek to capitalize on the AI boom by acquiring cutting-edge technology for strategic partnerships. Organizations involved in AI development should consider similar financing strategies to enhance their technological capabilities and market competitiveness. The deal emphasizes the critical role of AI chips in advancing computational power.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-            "relatedResources": []
-        },
-        {
             "date": "Aug 31 2026",
             "headline": "U.S. Blocks Foreign Drones—China's Scale May Shift Market",
             "title": "U.S. Restricts Foreign Drones as China Expands Global Reach",
             "content": "The U.S. government is intensifying efforts to limit the use of foreign-made drones and robots, aiming to bolster national security. However, China's vast manufacturing capabilities and market scale may allow it to circumvent these barriers, potentially shifting the competitive landscape. This move is part of a broader strategy to secure critical technologies and reduce dependency on foreign suppliers. Industry experts suggest that while U.S. restrictions may slow Chinese drone imports, they are unlikely to halt China's global market expansion. Companies should monitor regulatory changes and assess supply chain impacts.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/30/the-u-s-is-building-barriers-around-drones-and-robots-china-still-has-scale/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 30 2026",
-            "headline": "Musk's SpaceX Foundry—Faster Turbines, More Pollution",
-            "title": "SpaceX's New Foundry Speeds Turbine Production Amid Pollution Concerns",
-            "content": "Elon Musk has announced a new SpaceX foundry that promises to accelerate the production of gas turbine blades by 18 months compared to current industry standards. This development comes as Musk bets on gas power, a controversial choice given the ongoing lawsuits and health studies linked to turbine pollution. The foundry's ability to cast its own blades could revolutionize turbine manufacturing, but it raises environmental concerns. Communities near turbine sites have reported adverse health effects, prompting legal actions. Industry leaders and environmentalists alike are watching closely as SpaceX navigates these challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 30 2026",
-            "headline": "Texas Halts $30M Flock Camera Funding Amid Backlash",
-            "title": "Governor Abbott Freezes Funding for Controversial Flock Cameras",
-            "content": "Texas Governor Greg Abbott has blocked state funding for Flock's AI-powered surveillance cameras following public backlash and a Texas Tribune investigation. The state had previously invested over $30 million in these cameras, which are designed to enhance security through AI surveillance. Critics argue that the cameras infringe on privacy rights and lack sufficient oversight. This decision highlights the growing tension between technological advancements in surveillance and civil liberties. Stakeholders are urged to consider the ethical implications of AI surveillance technologies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/986541/texas-governor-abbott-flock-cameras",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 30 2026",
-            "headline": "Caterpillar Leverages Mining Automation for AI Deployment",
-            "title": "Caterpillar Applies Mining Automation Expertise to AI Deployment",
-            "content": "Caterpillar is transferring its extensive experience in mining automation to the field of AI deployment. Having spent decades automating remote mining operations, the company is now focusing on integrating AI technologies into its machinery. This strategic move aims to enhance operational efficiency and safety across various industries. Caterpillar's expertise in autonomous systems positions it as a leader in AI-driven industrial solutions. Professionals in the field should monitor Caterpillar's advancements as they could set new standards for AI integration in heavy machinery.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
             "relatedResources": []
         }
     ],
@@ -432,17 +558,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-60004",
-            "dateAdded": "Aug 25, 2026",
-            "vendor": "Gitea Gitea",
-            "description": "Gitea contains a code injection vulnerability that allows an attacker with repository write access to send a malicious patch to the diffpatch API endpoint to plant an executable Git hook and run shell",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60004",
             "isZeroDay": false
         }
     ],
