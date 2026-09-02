@@ -490,7 +490,7 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
                     const isNew = new Date(a.date) > lastView;
                     const dateStr = new Date(a.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
                     return `
-                        <a href="/${a.externalUrl || ''}" class="cc-item ${isNew ? 'new-item' : ''}">
+                        <a href="${(a.externalUrl || '').startsWith('/') ? a.externalUrl : '/' + (a.externalUrl || '')}" class="cc-item ${isNew ? 'new-item' : ''}">
                             <div class="cc-item-icon" style="color: var(--accent-cyan); background: rgba(0, 217, 255, 0.1);"><i class="fas fa-newspaper"></i></div>
                             <div class="cc-item-content">
                                 <div class="cc-item-date">
