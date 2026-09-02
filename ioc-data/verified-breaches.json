@@ -10117,6 +10117,28 @@
       "Description": "In November 2014, the <a href=\"http://www.scmagazine.com/malwarebytes-forum-hacked/article/385187/\" target=\"_blank\" rel=\"noopener\">Malwarebytes forum was hacked</a> and 111k member records were exposed. The IP.Board forum included email and IP addresses, birth dates and passwords stored as salted hashes using a weak implementation enabling many to be rapidly cracked."
     }
   ],
+  "magairports.com": [
+    {
+      "Name": "ManchesterAirportsGroup",
+      "Title": "Manchester Airports Group",
+      "BreachDate": "2026-08-27",
+      "AddedDate": "2026-09-02T07:36:59Z",
+      "PwnCount": 8728451,
+      "DataClasses": [
+        "Browser user agent details",
+        "Email addresses",
+        "Geographic locations",
+        "IP addresses",
+        "Names",
+        "Phone numbers",
+        "Purchases",
+        "Vehicle registration plates"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, <a href=\"https://www.bleepingcomputer.com/news/security/manchester-airports-group-says-hackers-stole-travelers-data/\" target=\"_blank\" rel=\"noopener\">Manchester Airports Group (MAG) disclosed a data breach impacting their services</a>. The incident was <a href=\"https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/\" target=\"_blank\" rel=\"noopener\">later claimed by the FulcrumSec hacking group</a>, who subsequently published email addresses and phone numbers relating to 8.7M customers of Manchester, Stansted and East Midlands airports. The data contained personal information relating to airport services, including vehicle registrations and parking history, Fast Track purchases and lounge bookings. In <a href=\"https://mediacentre.magairports.com/mag-statement-on-cyber-security-incident/\" target=\"_blank\" rel=\"noopener\">their disclosure notice</a>, MAG advised that \"at no point has passenger safety or aviation security been compromised\"."
+    }
+  ],
   "mangatraders.com": [
     {
       "Name": "MangaTraders",
