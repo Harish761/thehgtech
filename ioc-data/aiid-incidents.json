@@ -2433,14 +2433,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1512",
-      "incident_id": 1512,
-      "title": "The Sydney Morning Herald and The Age Removed an Opinion Article After Undisclosed Copilot Use",
-      "date": "2026-06-04",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1514",
       "incident_id": 1514,
       "title": "Purportedly AI-Generated Video Reportedly Depicted Kosovo LDK Figure Hykmete Bajrami and Former Serb",
@@ -2450,9 +2442,9 @@
     }
   ],
   "stats": {
-    "total": 306,
+    "total": 305,
     "last7Days": 88,
     "last30Days": 131
   },
-  "lastUpdated": "2026-09-02T04:03:05.173268+05:30"
+  "lastUpdated": "2026-09-02T09:50:22.051337+05:30"
 }
