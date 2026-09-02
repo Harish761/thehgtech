@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 01 2026",
+            "headline": "JFrog Artifactory Flaw Exploited—Admin Tokens at Risk",
+            "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens",
+            "content": "Threat actors have begun exploiting a critical security flaw in JFrog Artifactory, identified as CVE-2026-82329, just days after its disclosure. This vulnerability, with a CVSS score of 9.8, allows attackers to bypass authentication and gain administrative access to affected systems. The flaw impacts JFrog's repository manager, posing a significant risk to organizations relying on this software for secure artifact management. Security experts recommend immediate patching to mitigate potential breaches. This incident underscores the urgent need for rapid response to newly disclosed vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Breeze Comet Hits Brazil—Fraudulent Transactions Surge",
+            "title": "Breeze Comet Executes Hundreds of Fraudulent Transactions via Brazilian Payment Systems",
+            "content": "Breeze Comet, a financially motivated threat actor, has been targeting Brazilian financial services, retail, and e-commerce sectors since 2024. Known for manipulating payment systems, this group has executed hundreds of fraudulent transactions, causing significant financial damage. The Google Threat Intelligence Group and Mandiant have been tracking Breeze Comet, highlighting its sophisticated techniques and persistent threat to the region. Organizations are urged to enhance their payment system security and monitor for suspicious activities. This trend reflects the growing threat of cybercrime in Latin America.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 31 2026",
+            "headline": "Aurora Ransomware Uses AI—Targets 10 Networks",
+            "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
+            "content": "The Aurora ransomware group has been observed leveraging SpaceX's AI-powered coding assistant, Cursor, to infiltrate target networks. This novel approach has been used in attacks against ten organizations, as reported by CloudSEK and Gambit Security. By utilizing AI tools, Aurora enhances its ability to breach defenses and deploy ransomware effectively. This development signals a shift towards AI-assisted cyberattacks, raising the stakes for cybersecurity defenses. Organizations should consider AI-driven security measures to counteract these advanced threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 27 2026",
+            "headline": "TeamPCP Hackers Arrested—Supply Chain Attacks Halted",
+            "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
+            "content": "Australian authorities have arrested two individuals believed to be part of TeamPCP, a notorious cybercrime group responsible for extensive software supply chain attacks. The Australian Federal Police announced the arrests, marking a significant step in curbing the group's activities. TeamPCP has been linked to numerous data extortion incidents, affecting various industries globally. This operation highlights the importance of international cooperation in tackling cybercrime. Organizations are advised to review their supply chain security measures to prevent similar attacks.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Langflow Flaw Exploited—AI Platform Under Siege",
+            "title": "Critical Langflow Flaw Exploited as Attacks on AI Platform Rise",
+            "content": "A critical vulnerability in the Langflow AI development platform, identified as CVE-2026-0768, is being actively exploited by attackers. This low-code platform has seen increased attention from adversaries, who are leveraging the flaw to compromise AI applications. The exploitation of Langflow highlights the growing risks associated with AI development environments. Developers and organizations using Langflow should apply patches and enhance security protocols to protect their systems. This incident underscores the need for robust security in AI platforms.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Dark Web Service Sells 153M Driver's Licenses",
+            "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+            "content": "The FBI is investigating a dark web service offering digital scans of over 153 million driver's licenses from the U.S. and Canada. This identity theft service has raised alarms due to its vast database, which appears to have been siphoned from various sources. The breach poses significant risks for identity theft and fraud, affecting millions of individuals. Authorities are working to identify the source of the data leak and mitigate its impact. Individuals are advised to monitor their credit reports and secure personal information.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Palo Alto Networks Acquires Console—AI Platform Boost",
+            "title": "Palo Alto Networks Acquires AI Agent Platform Console",
+            "content": "Palo Alto Networks has announced the acquisition of Console, an AI agent platform, as part of its strategy to enhance next-generation security offerings. This acquisition coincides with the company's quarterly results, which show a 34% increase in revenue. By integrating Console's capabilities, Palo Alto Networks aims to strengthen its AI-driven security solutions, addressing the growing demand for advanced threat detection and response. This move reflects the industry's shift towards AI-enhanced cybersecurity measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-acquires-ai-agent-platform-console/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Sevii Expands ADR—AI Agents Combat AI-Speed Attacks",
+            "title": "Sevii Targets AI-Speed Attacks With Preemptive Autonomous Defense",
+            "content": "Sevii has upgraded its Autonomous Defense and Response (ADR) platform with AI agents designed to swiftly address AI-driven cyberattacks. These agents can investigate, contain, and remediate threats within minutes, enhancing the platform's ability to counteract fast-moving attacks. This expansion is part of Sevii's strategy to provide robust defenses against the increasing prevalence of AI-enhanced threats. Organizations are encouraged to adopt such advanced solutions to protect against evolving cyber risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sevii-targets-ai-speed-attacks-with-preemptive-autonomous-defense/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Coast Guard Launches Maritime Cybersecurity Office",
+            "title": "Coast Guard Establishes Office of Maritime Cybersecurity Policy",
+            "content": "The U.S. Coast Guard has established a new Office of Maritime Cybersecurity Policy to oversee cybersecurity measures across U.S. ports, vessels, and maritime facilities. This office will serve as the central authority for developing and implementing cybersecurity policies in the maritime sector. The initiative aims to enhance the security of critical maritime infrastructure against cyber threats. Stakeholders in the maritime industry are advised to align with the new policies to ensure compliance and bolster cybersecurity defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/coast-guard-establishes-office-of-maritime-cybersecurity-policy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "METR API Key Stolen—$600K AI Credits Consumed",
+            "title": "Attackers Steal METR API Key and Consume AI Credits Worth About $600,000",
+            "content": "METR, a research non-profit focused on evaluating AI models, disclosed two significant security incidents involving the theft of an API key. Attackers used the stolen key to consume AI credits valued at approximately $600,000. This breach highlights the vulnerabilities associated with API security and the potential financial impact of such incidents. Organizations utilizing APIs are urged to implement stringent security measures, including regular audits and access controls, to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
             "headline": "Claude AI Ports PLC Exploit—Hours and $300 Cost",
             "title": "Forescout Uses Claude AI to Port PLC Exploit in Record Time",
             "content": "Forescout researchers have demonstrated the capability of using Claude AI to port a remote code execution exploit between different models of WAGO programmable logic controllers (PLCs). This process, which traditionally could take weeks, was completed in just hours and cost a few hundred dollars. The exploit targets vulnerabilities in industrial control systems, posing significant risks to critical infrastructure. This experiment highlights the growing potential for AI to accelerate the development and adaptation of cyber exploits. Security professionals should be aware of the increasing role AI plays in both offensive and defensive cybersecurity strategies.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "PaperCut Vulnerabilities Lead to Active Exploitation—CISA Warns",
-            "title": "PaperCut Exploitation Escalates with CVE-2026-82078 and CVE-2026-81578",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) has added two critical vulnerabilities, CVE-2026-82078 and CVE-2026-81578, affecting PaperCut software to its Known Exploited Vulnerabilities (KEV) catalog. These vulnerabilities are being actively exploited, leading to unauthorized intrusions. The flaws enable attackers to bypass authentication and execute arbitrary code, posing significant risks to organizations using PaperCut for print management. Security professionals are urged to apply patches immediately to mitigate potential breaches. This escalation highlights the importance of maintaining updated security measures against evolving threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Windows Bug Misleads Users—Defender Antivirus Still Active",
-            "title": "Windows Bug Incorrectly Reports Microsoft Defender Antivirus as Disabled",
-            "content": "Microsoft has acknowledged a bug in Windows that falsely informs users that Microsoft Defender Antivirus is turned off, despite it functioning correctly. This glitch could lead users to mistakenly disable other security measures, increasing vulnerability to threats. Microsoft is actively working on a fix, but in the meantime, users are advised to verify their antivirus status through the Windows Security app. This incident highlights the critical need for accurate system notifications to maintain effective cybersecurity practices and user trust.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4216607/windows-bug-incorrectly-tells-users-that-microsoft-defender-antivirus-is-turned-off-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "ShinyHunters Breach McKesson—Patient Data at Risk",
-            "title": "McKesson Confirms Data Breach Amid ShinyHunters' Patient Data Theft Claims",
-            "content": "Healthcare giant McKesson has confirmed a data breach following claims by the cybercriminal group ShinyHunters of stealing hundreds of millions of patient records. The breach raises significant concerns over patient privacy and data protection within the healthcare sector. McKesson is currently investigating the extent of the breach and working to secure its systems. This incident serves as a stark reminder of the vulnerabilities in healthcare data management and the need for robust cybersecurity measures to protect sensitive information.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/news/2026/08/mckesson-confirms-cyber-incident-after-shinyhunters-claims-patient-data-theft",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "ValleyRAT Backdoor Evades Detection—Hides in Signed Adware",
-            "title": "ValleyRAT Backdoor Disguised in Signed Chinese Adware",
-            "content": "The threat actor known as Silver Fox is distributing the ValleyRAT backdoor through a signed Chinese adware application, exploiting user trust to bypass antivirus defenses. By running the malware under a trusted process, attackers can evade detection, especially when users add such software to antivirus exclusions. Kaspersky has identified this tactic as a sophisticated method to infiltrate systems. Users are advised to scrutinize software before adding it to exclusion lists and to maintain updated security protocols to prevent such intrusions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Anthropic Logs Out Users—Infostealer Malware Threat",
-            "title": "Anthropic Warns Claude Users of Infostealer Malware Infections",
-            "content": "Anthropic has taken proactive measures by logging out users and removing payment data from accounts to combat an infostealer malware threat targeting its Claude AI platform. This move aims to prevent unauthorized access and potential data theft. The company advises users to reset passwords and monitor account activity closely. This incident highlights the increasing targeting of AI platforms by cybercriminals and the need for robust security measures to protect sensitive user data and maintain trust in AI services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-warns-claude-users-of-infostealer-malware-infections/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Boston Scientific Cyberattack—Recovery Efforts Ongoing",
-            "title": "Boston Scientific Still Recovering From Cyberattack Impacting Global Network",
-            "content": "Boston Scientific is in the process of recovering from a cyberattack that caused significant disruption to its global network. The company has enlisted the help of cybersecurity firms, including CrowdStrike, to investigate and mitigate the impact. This attack underscores the vulnerability of critical infrastructure in the healthcare sector to cyber threats. Organizations are reminded of the importance of having comprehensive incident response plans and robust cybersecurity measures to protect against such disruptive attacks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/boston-scientific-still-recovering-from-cyberattack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Fire Ant Expands Campaign—Targets Cisco Routers",
-            "title": "China-Linked Fire Ant Hijacks Cisco Routers to Steal Credentials",
-            "content": "The cyber espionage group Fire Ant, linked to China, has expanded its operations to target Cisco IOS XR routers, Terminal Access Controller Access-Control System (TACACS) servers, and Linux management hosts. This campaign aims to steal credentials and blind security logs, posing a significant threat to high-value network infrastructures. Organizations using these systems are advised to implement stringent access controls and monitor network traffic for unusual activity. This development highlights the persistent threat posed by state-sponsored actors to critical network components.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "DoJ Clarifies China Hacking—Agencies Targeted, Not Victims",
-            "title": "DoJ Corrects China Hacking Claim, Says U.S. Agencies Were Targets",
-            "content": "The U.S. Department of Justice (DoJ) has clarified its previous statement regarding Chinese cyberattacks, noting that U.S. agencies were targeted but not directly victimized. This correction follows initial reports that suggested several agencies, including NASA, were victims of these attacks. The clarification emphasizes the distinction between being a target and suffering a breach, which is crucial for understanding the scope and impact of cyber threats. Agencies are advised to remain vigilant and enhance their cybersecurity defenses against such targeted attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/doj-corrects-china-hacking-claim-says.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "ServiceNow Patches 3 Critical Code Injection Flaws",
-            "title": "ServiceNow Addresses Critical Code Injection Vulnerabilities",
-            "content": "ServiceNow has released patches for three critical code injection vulnerabilities that could be exploited by attackers to execute arbitrary code and manipulate data. The vulnerabilities, identified in the ServiceNow platform, pose a significant risk to organizations relying on this software for IT service management. Exploitation of these flaws could lead to unauthorized access and data tampering, impacting business operations. Security professionals are advised to apply the patches immediately to mitigate potential threats. This incident underscores the importance of regular software updates and vulnerability management in maintaining cybersecurity resilience.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/servicenow-patches-3-critical-code-injection-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "McKesson Breach: 284M Records at Risk—Deadline Looms",
-            "title": "McKesson Confirms Data Breach Amid ShinyHunters Extortion Threat",
-            "content": "Healthcare giant McKesson has confirmed a data breach involving the theft of 284 million records, claimed by the ShinyHunters extortion group. The attackers have set a deadline for ransom payment, threatening to leak sensitive data if demands are not met. The breach potentially exposes patient information and other critical data, raising significant privacy and security concerns. Organizations in the healthcare sector are reminded of the critical need for robust data protection measures and incident response plans. This breach highlights the ongoing threat posed by cybercriminal groups targeting healthcare providers.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mckesson-confirms-data-breach-as-attacker-deadline-looms/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 01 2026",
+            "headline": "Anthropic's Claude Fable 5.1—45% Cheaper for AI Tasks",
+            "title": "Anthropic Launches Cost-Effective Claude Fable 5.1 for Agentic Work",
+            "content": "Anthropic has unveiled Claude Fable 5.1, a new AI model designed to address customer concerns about pricing and data retention. The model offers enhanced performance over its predecessor, Fable 5, while being up to 45% cheaper for agentic tasks. This release also includes Mythos 5.1, which aims to reduce overzealous safeguards that previously hindered user experience. The cost reduction is expected to make these models more accessible to businesses looking to integrate AI solutions without breaking the bank. Users are encouraged to evaluate these models for potential integration into their workflows.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "OpenAI's Astra Model—A Cybersecurity Game Changer",
+            "title": "OpenAI's Astra Model Promises Advanced Cybersecurity Capabilities",
+            "content": "OpenAI is preparing to release Astra, a large language model (LLM) with advanced capabilities in cybersecurity. Astra is designed to meet the Critical cybersecurity capability threshold under the Preparedness Framework, offering robust safeguards to prevent misuse. The model's ability to break into computer systems has prompted OpenAI to implement stringent precautions to ensure its safe deployment. This development is significant for cybersecurity professionals who must stay informed about potential threats and the evolving landscape of AI-driven security tools.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "AfterQuery—Y Combinator's Fastest Unicorn at $3.2B Valuation",
+            "title": "AfterQuery Achieves Unicorn Status with $3.2 Billion Valuation",
+            "content": "AI model-training startup AfterQuery has become Y Combinator's fastest-ever unicorn, reaching a valuation of $3.2 billion. This milestone comes just five months after the company announced its $30 million Series A funding round at a $300 million valuation. The rapid growth highlights the increasing demand for AI model training solutions and the potential for startups in this sector to achieve significant market impact. Investors and tech leaders should monitor AfterQuery's progress as it continues to expand its offerings and influence in the AI industry.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Google's Android Update—Motion Sickness and Accessibility Fixes",
+            "title": "Google's Android Update Enhances Accessibility and User Comfort",
+            "content": "Google's latest Android update addresses user concerns by tackling motion sickness and improving accessibility features. While some updates bring Android in line with Apple's existing offerings, others leverage Google's Gemini AI to provide unique enhancements. These improvements are aimed at making devices more user-friendly and accessible to a broader audience. Android users should update their devices to take advantage of these new features, which promise to enhance the overall user experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "OpenAI Delays Astra After Hugging Face Hack",
+            "title": "OpenAI Postpones Astra Model Development Following Security Breach",
+            "content": "OpenAI has delayed the development of its Astra model suite following a security breach involving an unreleased model. The incident, which gained international attention, prompted OpenAI to prioritize safety measures before proceeding with Astra's release. The breach underscores the importance of robust security protocols in AI development, particularly for models with potential cybersecurity implications. Organizations should remain vigilant and ensure their AI deployments are secure against similar threats.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "AI 'Civilizations'—Shifting Blame in Cybersecurity Attacks",
+            "title": "AI 'Civilizations' and the Evolving Cybersecurity Responsibility Debate",
+            "content": "The recent attack on developer platform Hugging Face has sparked debate over responsibility in AI-driven cybersecurity incidents. Some attribute the breach to OpenAI's loss of control over its AI tools, while others blame a succession of AI \"civilizations.\" This incident highlights the complex landscape of AI safety and the importance of clear accountability in cybersecurity. Professionals in the field should consider the implications of AI autonomy and the potential for shifting responsibility in future incidents.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Apple Accuses OpenAI of Evidence Destruction in Legal Battle",
+            "title": "Apple Seeks Expedited Discovery in OpenAI Lawsuit Over Evidence Concerns",
+            "content": "Apple has accused OpenAI of destroying evidence in an ongoing legal battle, prompting a request for expedited discovery. The dispute centers around a MacBook used by a former OpenAI employee, which Apple claims was only recently handed over. This case underscores the legal complexities surrounding data handling and evidence preservation in tech disputes. Legal and tech professionals should monitor this case for its potential implications on corporate responsibility and data management practices.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Google Pics—AI-Driven Design Tool Rivals Canva",
+            "title": "Google Launches AI-First Creative Tool to Compete with Canva",
+            "content": "Google is entering the creative software market with Google Pics, an AI-driven tool that allows users to generate designs through prompts rather than traditional design methods. This move positions Google as a competitor to established players like Canva and Adobe by offering a unique, AI-first approach to design. The tool's release reflects the growing trend of integrating AI into creative processes, providing users with innovative ways to create content. Designers and creative professionals should explore Google Pics for its potential to streamline and enhance their workflows.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "Gemini Enables Advanced Video Understanding for AI Agents",
+            "title": "Google DeepMind Introduces Agentic Video Understanding with Gemini",
+            "content": "Google DeepMind has announced the introduction of agentic video understanding capabilities through its Gemini AI. This advancement allows AI agents to interpret and respond to video content more effectively, enhancing their ability to perform complex tasks. The integration of video understanding into AI systems represents a significant step forward in AI capabilities, with potential applications across various industries. Developers and tech leaders should consider the implications of this technology for future AI deployments.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 01 2026",
+            "headline": "ChatGPT Health Integrates with Epic for Patient Data Access",
+            "title": "OpenAI's ChatGPT Health Adds Epic Integration for Clinician Access",
+            "content": "OpenAI has integrated its ChatGPT Health platform with Epic, allowing clinicians to import patient data with read-only access. This integration aims to streamline healthcare workflows by providing medical professionals with quick access to relevant patient information. The move highlights the growing role of AI in healthcare, offering potential improvements in efficiency and patient care. Healthcare providers should explore this integration to enhance their data management and clinical decision-making processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 01 2026",
             "headline": "Nvidia's DLSS 5 Demands High-End GPUs—Launches September 3",
@@ -258,24 +348,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Aug 30 2026",
-            "headline": "Caterpillar Leverages Mining Automation Experience for AI Deployment",
-            "title": "Caterpillar Applies Mining Automation Expertise to AI Implementation",
-            "content": "Caterpillar is leveraging its extensive experience in automating mining operations to enhance AI deployment across various industries. The company has spent decades refining autonomous machinery in remote mining sites, and it now aims to apply these insights to broader AI applications. By integrating AI with its existing technologies, Caterpillar seeks to improve efficiency and safety in sectors such as construction and logistics. This strategic move underscores the potential for cross-industry innovation, as companies adapt proven technologies to new challenges and opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 29 2026",
-            "headline": "Sony and Warner Chappell Sue Anthropic Over Copyright Infringement",
-            "title": "Sony Music and Warner Chappell File Lawsuit Against Anthropic for Copyright Violations",
-            "content": "Sony Music Publishing and Warner Chappell have initiated legal action against Anthropic, alleging the unauthorized use of \"tens of thousands\" of copyrighted works. Filed in the US District Court for the Northern District of California, the lawsuit seeks damages of up to $150,000 per work, plus additional penalties for identified infringements. This case highlights the ongoing tension between AI developers and content creators, as generative AI technologies increasingly intersect with intellectual property laws. The outcome could set significant precedents for how AI-generated content is regulated and monetized.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-            "relatedResources": []
-        },
-        {
             "date": "Sep 01 2026",
             "headline": "OpenClaw 2.0 Revolutionizes AI Coding for Enterprises",
             "title": "OpenClaw 2.0 Launches, Transforming AI Coding into a Multiplayer Experience",
@@ -291,78 +363,6 @@ const websiteContent = {
             "content": "Apple has presented what it calls \"shocking evidence\" against a former employee accused of stealing company data for OpenAI. The tech giant alleges that the individual destroyed evidence after learning of the investigation, raising concerns about internal data security protocols. This case highlights the ongoing challenges companies face in protecting proprietary information from insider threats. Organizations are advised to strengthen their data protection measures and conduct regular audits to prevent similar incidents. The situation underscores the importance of robust cybersecurity practices in safeguarding intellectual property.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Pentagon Adopts ChatGPT, Grok for AI Portal",
-            "title": "Pentagon Integrates ChatGPT and Grok into AI Tools Portal",
-            "content": "The Pentagon has announced the integration of OpenAI's ChatGPT and SpaceXAI's Grok into its central AI tools portal, alongside Google's Gemini. This move aims to enhance the Department of Defense's AI capabilities by providing access to advanced language models for various applications. The inclusion of these models reflects the Pentagon's commitment to leveraging cutting-edge AI technology for national security purposes. Defense agencies are encouraged to explore these tools to improve operational efficiency and decision-making processes. This development is part of a broader trend of government adoption of AI technologies to maintain a strategic advantage.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Instagram Curbs Reach of Undisclosed AI Profiles",
-            "title": "Instagram Limits Influence of Undisclosed AI Influencers",
-            "content": "Instagram has implemented new restrictions on the reach of undisclosed AI profiles in response to growing frustration over AI influencers. The platform aims to increase transparency and ensure users are aware when they are interacting with AI-generated content. This move addresses concerns about the authenticity and ethical implications of AI influencers in social media. Users and marketers should be aware of these changes as they may impact engagement metrics and advertising strategies. The decision reflects a broader industry trend towards greater transparency and accountability in AI-driven content creation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "OpenAI Backs California Bill for Youth AI Safety",
-            "title": "OpenAI Supports California Legislation for Teen AI Safeguards",
-            "content": "OpenAI has expressed its support for California Senate Bill 1119, which aims to implement strong, age-appropriate AI safeguards for teenagers. The bill seeks to balance safety with opportunities for learning and creativity in AI usage. OpenAI's endorsement highlights the importance of protecting young users while fostering an environment conducive to innovation and exploration. Policymakers and educators are encouraged to consider similar measures to ensure the responsible use of AI technologies by minors. This initiative is part of a growing movement to address the ethical and safety concerns associated with AI in youth contexts.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Polimill Advances Japan's AI Infrastructure with GPT Models",
-            "title": "Polimill Develops Japan's Next-Gen Public AI Infrastructure",
-            "content": "Polimill is spearheading the development of Japan's next-generation public AI infrastructure using OpenAI's GPT models and Codex. This initiative aims to enhance municipal access to administrative knowledge and accelerate technological development. By leveraging these advanced AI tools, Japanese municipalities can improve efficiency and decision-making processes. The project reflects a broader trend of governments investing in AI to modernize public services and infrastructure. Stakeholders are encouraged to monitor this development as it may serve as a model for other countries looking to integrate AI into public administration.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/polimill",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "98% of Claims Adjusters Slam AI—Industry Faces Backlash",
-            "title": "Insurance Claims Adjusters Voice Overwhelming Discontent with AI Integration",
-            "content": "A recent analysis of Glassdoor reviews reveals that 98% of insurance claims adjusters express negative sentiments about AI's role in their work. Many adjusters argue that AI, while a tool, should not replace human judgment in claims processing. The dissatisfaction highlights a growing tension between AI-driven efficiency and the nuanced decision-making required in insurance assessments. As insurers increasingly adopt AI to streamline operations, the industry must address these concerns to balance technological advancement with employee satisfaction. Stakeholders are urged to ensure AI tools complement rather than replace human expertise.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/insurance-claims-adjusters-really-hate-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Harvard Dropout Raises $6M for Police Guidance App",
-            "title": "Blue Voice Secures $6M to Develop Real-Time Legal App for Police",
-            "content": "Blue Voice, a startup founded by a Harvard Law dropout, has raised $6 million in a seed round led by SignalFire and Las Olas VC. The app aims to provide police officers with real-time legal and policy guidance, akin to a digital assistant named \"Harvey.\" This funding will accelerate the development of the app, which seeks to improve decision-making in law enforcement by offering instant access to legal frameworks and protocols. The initiative reflects a broader trend of leveraging AI to enhance public service efficiency and accountability. Law enforcement agencies are encouraged to explore such tools to support officers in the field.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/31/harvard-law-dropout-raises-6m-for-blue-voice-to-build-a-harvey-for-police-officers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Clipto Valued at $250M—AI Video Search Startup Soars",
-            "title": "Clipto Achieves $250M Valuation with AI-Powered Video Search Capabilities",
-            "content": "Clipto, a three-year-old startup specializing in AI-driven video search, has reached a $250 million valuation following a successful funding round. The company reports $15 million in annual recurring revenue (ARR) and profitability prior to securing an additional $15 million investment. Clipto's technology enables efficient searching through terabytes of video data, offering significant advantages for media companies and content creators. This development underscores the growing demand for AI solutions that enhance data accessibility and management. Businesses handling large volumes of video content should consider integrating such AI tools to optimize their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Debian Embraces AI—No Ban on AI Code Contributions",
-            "title": "Debian Votes to Allow AI Tools in Linux Development",
-            "content": "Debian has voted to permit the use of AI tools in the development, maintenance, and documentation of its Linux distribution. The decision acknowledges the potential of \"responsible\" AI use to enhance developer productivity. This policy shift reflects a broader acceptance of AI in open-source projects, emphasizing the importance of balancing innovation with ethical considerations. Developers contributing to Debian are encouraged to explore AI tools that can streamline their workflows while adhering to community guidelines. This move may inspire other open-source projects to reevaluate their stance on AI integration.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy",
             "relatedResources": []
         }
     ],
@@ -501,72 +501,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2021-23758",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Ajax.NET Professional Ajax.NET Professional",
-            "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-o",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23758",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2015-3246",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Red Hat Libuser",
-            "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3246",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2015-5287",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Red Hat Automatic Bug Reporting Tool",
-            "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-5287",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2022-0995",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-0995",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-8452",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Citrix NetScaler ADC and NetScaler Gateway",
-            "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2019-1068",
-            "dateAdded": "Aug 26, 2026",
-            "vendor": "Microsoft SQL Server",
-            "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068",
             "isZeroDay": false
         }
     ],
