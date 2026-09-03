@@ -1,9 +1,281 @@
 {
   "incidents": [
     {
+      "id": "AIID-11",
+      "incident_id": 11,
+      "title": "Northpointe Risk Models",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-9",
       "incident_id": 9,
       "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-37",
+      "incident_id": 37,
+      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-40",
+      "incident_id": 40,
+      "title": "COMPAS Algorithm Reportedly Performs Poorly in Crime Recidivism Prediction",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-43",
+      "incident_id": 43,
+      "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-54",
+      "incident_id": 54,
+      "title": "Predictive Policing Biases of PredPol",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-96",
+      "incident_id": 96,
+      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-99",
+      "incident_id": 99,
+      "title": "Major Universities Are Reportedly Using Race as a 'High Impact Predictor' of Student Success",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-135",
+      "incident_id": 135,
+      "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-123",
+      "incident_id": 123,
+      "title": "Epic Systems\u2019s Sepsis Prediction Algorithms Revealed to Have High Error Rates on Seriously Ill Patie",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-154",
+      "incident_id": 154,
+      "title": "Justice Department\u2019s Recidivism Risk Algorithm PATTERN Allegedly Caused Persistent Disparities Along",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-149",
+      "incident_id": 149,
+      "title": "Zillow Shut Down Zillow Offers Division Allegedly Due to Predictive Pricing Tool's Insufficient Accu",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-124",
+      "incident_id": 124,
+      "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-162",
+      "incident_id": 162,
+      "title": "ETS Used Allegedly Flawed Voice Recognition Evidence to Accuse and Assess Scale of Cheating, Causing",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-195",
+      "incident_id": 195,
+      "title": "Predictive Policing Program by Florida Sheriff\u2019s Office Allegedly Violated Residents\u2019 Rights and Tar",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-186",
+      "incident_id": 186,
+      "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-172",
+      "incident_id": 172,
+      "title": "NarxCare\u2019s Risk Score Model Allegedly Lacked Validation and Trained on Data with High Risk of Bias",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-204",
+      "incident_id": 204,
+      "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-188",
+      "incident_id": 188,
+      "title": "Argentinian City Government Deployed Teenage-Pregnancy Predictive Algorithm Using Invasive Demograph",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-189",
+      "incident_id": 189,
+      "title": "Opaque Fraud Detection Algorithm by the UK\u2019s Department of Work and Pensions Allegedly Discriminated",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-239",
+      "incident_id": 239,
+      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-225",
+      "incident_id": 225,
+      "title": "IBM Watson for Oncology Criticized by Customers for Allegedly Unsafe and Inaccurate Cancer Treatment",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-238",
+      "incident_id": 238,
+      "title": "Oregon\u2019s Screening Tool for Child Abuse Cases Discontinued Following Concerns of Racial Bias",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-274",
+      "incident_id": 274,
+      "title": "Virginia Courts\u2019 Algorithmic Recidivism Risk Assessment Failed to Lower Incarceration Rates",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-345",
+      "incident_id": 345,
+      "title": "Auto-Insurance Photo-Based Estimation Allegedly Gave Inaccurate Repair Prices Frequently",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-405",
+      "incident_id": 405,
+      "title": "Schufa Credit Scoring in Germany Reported for Unreliable and Imbalanced Scores",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-433",
+      "incident_id": 433,
+      "title": "Chicago Police's Strategic Subject List Reportedly Biased Along Racial Lines",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-461",
+      "incident_id": 461,
+      "title": "IRS Audited Black Taxpayers More Frequently Reportedly Due to Algorithm",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-502",
+      "incident_id": 502,
+      "title": "Pennsylvania County's Family Screening Tool Allegedly Exhibited Discriminatory Effects",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-582",
+      "incident_id": 582,
+      "title": "Racial Bias in Lung Function Diagnostic Algorithm Leads to Underdiagnosis in Black Men",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-608",
+      "incident_id": 608,
+      "title": "UnitedHealth Accused of Deploying  Allegedly Flawed AI to Deny Medical Coverage",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-611",
+      "incident_id": 611,
+      "title": "UK Government AI Allegedly Targets Disproportionate Numbers of Certain Nationals for Fraud Review",
+      "date": "2026-09-03",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-501",
+      "incident_id": 501,
+      "title": "Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman",
+      "date": "2026-09-03",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-588",
+      "incident_id": 588,
+      "title": "Australian Terrorism Prediction Tool Reportedly Disparately Impacts Persons with Autism",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-699",
+      "incident_id": 699,
+      "title": "VA Suicide Prevention Algorithm REACH VET Reportedly Prioritizes Men Over Women Veterans",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -281,33 +553,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-37",
-      "incident_id": 37,
-      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
-      "date": "2026-08-29",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-95",
       "incident_id": 95,
       "title": "Job Screening Service Halts Facial Analysis of Applicants",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-123",
-      "incident_id": 123,
-      "title": "Epic Systems\u2019s Sepsis Prediction Algorithms Revealed to Have High Error Rates on Seriously Ill Patie",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-124",
-      "incident_id": 124,
-      "title": "Optum Algorithmic Health Risk Scores Reportedly Underestimated Black Patients' Needs",
       "date": "2026-08-29",
       "category": "other",
       "severity": "medium"
@@ -324,22 +572,6 @@
       "id": "AIID-344",
       "incident_id": 344,
       "title": "Hiring Algorithms Provided Invalid Positive Results for Interview Responses in German",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-345",
-      "incident_id": 345,
-      "title": "Auto-Insurance Photo-Based Estimation Allegedly Gave Inaccurate Repair Prices Frequently",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-405",
-      "incident_id": 405,
-      "title": "Schufa Credit Scoring in Germany Reported for Unreliable and Imbalanced Scores",
       "date": "2026-08-29",
       "category": "other",
       "severity": "medium"
@@ -375,14 +607,6 @@
       "date": "2026-08-29",
       "category": "data_leak",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-608",
-      "incident_id": 608,
-      "title": "UnitedHealth Accused of Deploying  Allegedly Flawed AI to Deny Medical Coverage",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-489",
@@ -1585,14 +1809,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-43",
-      "incident_id": 43,
-      "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
-      "date": "2026-06-24",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1454",
       "incident_id": 1454,
       "title": "Purported Deepfake Video Reportedly Portrayed Nirmala Sitharaman Endorsing Investment Scheme",
@@ -2434,9 +2650,9 @@
     }
   ],
   "stats": {
-    "total": 304,
-    "last7Days": 87,
-    "last30Days": 132
+    "total": 331,
+    "last7Days": 115,
+    "last30Days": 160
   },
-  "lastUpdated": "2026-09-04T02:44:57.768211+05:30"
+  "lastUpdated": "2026-09-04T04:00:18.880389+05:30"
 }
