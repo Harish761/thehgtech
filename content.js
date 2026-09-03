@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 02 2026",
+            "headline": "OpenLeash Adds Human Oversight to AI Agent Actions",
+            "title": "OpenLeash Introduces Human Verification for Risky AI Actions",
+            "content": "OpenLeash has launched a new security feature that intercepts potentially dangerous actions by AI agents, requiring human approval when the intent is unclear. This tool aims to mitigate risks associated with autonomous AI operations by blocking clear threats and involving human judgment in ambiguous cases. As AI systems become more integrated into critical operations, ensuring human oversight is crucial to prevent unintended consequences. Security professionals are encouraged to integrate such tools to maintain control over AI-driven processes. This development highlights the growing need for hybrid AI-human governance frameworks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openleash-adds-a-human-check-to-risky-ai-agent-actions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "SonicWall Zero-Days Exploited—Patch SMA1000 Now",
+            "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
+            "content": "SonicWall has issued an urgent warning regarding two zero-day vulnerabilities, CVE-2026-83549 and CVE-2026-83548, affecting its SMA1000 series appliances. These vulnerabilities can be exploited together to achieve unauthenticated remote code execution, posing a significant threat to organizations using these devices. The company has released patches and advises immediate updates to mitigate potential exploitation. This incident underscores the persistent targeting of network security devices by threat actors, emphasizing the need for timely vulnerability management. Organizations should prioritize patching to protect against these active threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 27 2026",
+            "headline": "TeamPCP Hackers Arrested—Australia Cracks Down on Cybercrime",
+            "title": "Two Alleged ‘TeamPCP’ Hackers Arrested in Australia",
+            "content": "Australian authorities have arrested two individuals suspected of being key members of TeamPCP, a notorious cybercrime group linked to extensive software supply chain attacks. The Australian Federal Police (AFP) announced the arrests, marking a significant step in combating cybercrime in the region. TeamPCP is believed to have orchestrated one of the longest-running series of attacks, impacting numerous organizations globally. This development highlights the importance of international cooperation in tackling cyber threats and the ongoing efforts to dismantle sophisticated cybercriminal networks.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/08/two-alleged-teampcp-hackers-arrested-in-australia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "SonicWall Patches Critical Exploits—Update SMA1000 Devices",
+            "title": "SonicWall Reports Two Major Security Holes Under Active Exploit",
+            "content": "SonicWall has identified two critical vulnerabilities in its Secure Mobile Access (SMA) 1000 series, which are currently being exploited in the wild. These security holes allow remote attacks that can bypass authentication, posing severe risks to affected systems. SonicWall has released patches and urges immediate application to protect against potential breaches. Security experts have labeled these vulnerabilities as highly concerning, given their potential impact on secure remote access solutions. Organizations relying on SMA1000 devices should act swiftly to secure their networks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Google, OpenAI Launch Cyber AI Models for Defenders",
+            "title": "Google, Anthropic, and OpenAI Unveil Cyber AI Models, Safeguards",
+            "content": "Google, Anthropic, and OpenAI have introduced advanced cybersecurity AI models, including Google's Gemini 3.8 Flash Cyber, designed to enhance threat detection and response capabilities. These models are part of the Fairwind Program, which provides access to trusted defenders such as governments and healthcare organizations. The initiative aims to bolster cybersecurity defenses by leveraging AI to predict and mitigate threats more effectively. As cyber threats evolve, integrating AI into security strategies becomes increasingly vital for organizations seeking to protect sensitive data and infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Fake Installers Disable Windows Update, Weaken Defender",
+            "title": "Fake Software Installers Disable Windows Update and Weaken Microsoft Defender",
+            "content": "A new malware campaign is distributing fake software installers that disable Windows Update and weaken Microsoft Defender, compromising system security. These malicious installers are spread through bogus software-download websites impersonating trusted vendors. The campaign has affected multiple organizations across various industries, primarily targeting users seeking popular software downloads. Security professionals should advise users to verify the authenticity of download sources and maintain robust endpoint protection to prevent such compromises. This incident underscores the importance of vigilance in software acquisition practices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Malicious .git Configs Exploit AI Agents—Patch Now",
+            "title": "Malicious .git Configs Can Make AI Agents Run Attacker Code",
+            "content": "Manifold Security has disclosed eight vulnerabilities in AI coding agents, including Claude and Codex, that allow malicious .git configurations to execute attacker code on developers' machines. Four of these flaws remain unpatched, posing a risk to developers using these agents. The vulnerabilities exploit the agent's command execution capabilities, potentially leading to unauthorized actions on the host system. Developers are urged to review their Git configurations and apply available patches to mitigate these risks. This highlights the need for secure coding practices in AI development environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Brazilian Government Sites Hijacked—Redirected to Gambling Pages",
+            "title": "Malicious Apache Modules Hijack Brazilian Government Site Traffic",
+            "content": "A cybercrime group known as Gambling Goblin has been installing malicious Apache modules on Brazilian government and educational websites to redirect traffic to gambling and sports betting pages. The attackers, identified as a Chinese-speaking cluster, exploit compromised web servers to control site traffic. This activity not only disrupts legitimate access but also risks exposing users to further cyber threats. Organizations managing web servers should enhance their monitoring and security measures to prevent such unauthorized modifications. This incident underscores the persistent threat of web server exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/malicious-apache-modules-hijack.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Cleo Harmony Exploit Published—Authentication Bypass Risk",
+            "title": "Exploit Published for Fresh Cleo Harmony Vulnerability",
+            "content": "An exploit has been published for a newly discovered vulnerability in Cleo Harmony that allows remote attackers to bypass authentication via argument bearer manipulation. This security defect poses a significant risk to organizations using Cleo Harmony for data integration and management. The publication of the exploit increases the urgency for affected users to apply available security patches. This incident highlights the critical need for proactive vulnerability management in data management solutions to prevent unauthorized access and data breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploit-published-for-fresh-cleo-harmony-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Anthropic Launches Enterprise Safeguards—Zero Data Retention",
+            "title": "Anthropic Details Response to Security Incidents, Unveils Enterprise Safeguards",
+            "content": "Anthropic has introduced Enterprise Frontier Safeguards (EFS), a comprehensive security system combining zero data retention policies with automated misuse monitoring. This initiative aims to enhance data protection and ensure compliance with stringent security standards. By eliminating data retention, Anthropic reduces the risk of data exposure in the event of a breach. Organizations are encouraged to adopt such safeguards to strengthen their security posture and protect sensitive information. This development reflects the growing emphasis on data privacy and proactive security measures in enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-details-response-to-security-incidents-unveils-enterprise-safeguards/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
             "headline": "UK to Restrict High-Risk Tech in Critical Infrastructure",
             "title": "UK Government to Block High-Risk Tech Suppliers from Critical Infrastructure",
             "content": "The UK government is set to introduce amendments to the Cyber Security and Resilience Bill, granting ministers the authority to block high-risk technology suppliers from critical infrastructure sectors. This move comes in response to the increasing threat of supply chain attacks, which have become a significant concern for national security. The bill aims to enhance the resilience of the UK's critical systems by restricting the use of technology from suppliers deemed risky. This legislative change reflects a broader trend among nations to secure their supply chains against cyber threats. Organizations involved in critical infrastructure should review their supplier relationships and ensure compliance with upcoming regulations.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/rockwell-automation-patches-over-a-dozen-vulnerabilities-across-products/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "JFrog Artifactory Flaw Exploited—Admin Tokens at Risk",
-            "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens",
-            "content": "Threat actors have begun exploiting a critical security flaw in JFrog Artifactory, identified as CVE-2026-82329, just days after its disclosure. This vulnerability, with a CVSS score of 9.8, allows attackers to bypass authentication and gain administrative access to affected systems. The flaw impacts JFrog's repository manager, posing a significant risk to organizations relying on this software for secure artifact management. Security experts recommend immediate patching to mitigate potential breaches. This incident underscores the urgent need for rapid response to newly disclosed vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Breeze Comet Hits Brazil—Fraudulent Transactions Surge",
-            "title": "Breeze Comet Executes Hundreds of Fraudulent Transactions via Brazilian Payment Systems",
-            "content": "Breeze Comet, a financially motivated threat actor, has been targeting Brazilian financial services, retail, and e-commerce sectors since 2024. Known for manipulating payment systems, this group has executed hundreds of fraudulent transactions, causing significant financial damage. The Google Threat Intelligence Group and Mandiant have been tracking Breeze Comet, highlighting its sophisticated techniques and persistent threat to the region. Organizations are urged to enhance their payment system security and monitor for suspicious activities. This trend reflects the growing threat of cybercrime in Latin America.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Aug 31 2026",
-            "headline": "Aurora Ransomware Uses AI—Targets 10 Networks",
-            "title": "Aurora Ransomware Operators Use Cursor AI in Attacks Against 10 Targets",
-            "content": "The Aurora ransomware group has been observed leveraging SpaceX's AI-powered coding assistant, Cursor, to infiltrate target networks. This novel approach has been used in attacks against ten organizations, as reported by CloudSEK and Gambit Security. By utilizing AI tools, Aurora enhances its ability to breach defenses and deploy ransomware effectively. This development signals a shift towards AI-assisted cyberattacks, raising the stakes for cybersecurity defenses. Organizations should consider AI-driven security measures to counteract these advanced threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/08/aurora-ransomware-operators-use-cursor.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Langflow Flaw Exploited—AI Platform Under Siege",
-            "title": "Critical Langflow Flaw Exploited as Attacks on AI Platform Rise",
-            "content": "A critical vulnerability in the Langflow AI development platform, identified as CVE-2026-0768, is being actively exploited by attackers. This low-code platform has seen increased attention from adversaries, who are leveraging the flaw to compromise AI applications. The exploitation of Langflow highlights the growing risks associated with AI development environments. Developers and organizations using Langflow should apply patches and enhance security protocols to protect their systems. This incident underscores the need for robust security in AI platforms.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/critical-langflow-flaw-exploited-attacks-rise",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Dark Web Service Sells 153M Driver's Licenses",
-            "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
-            "content": "The FBI is investigating a dark web service offering digital scans of over 153 million driver's licenses from the U.S. and Canada. This identity theft service has raised alarms due to its vast database, which appears to have been siphoned from various sources. The breach poses significant risks for identity theft and fraud, affecting millions of individuals. Authorities are working to identify the source of the data leak and mitigate its impact. Individuals are advised to monitor their credit reports and secure personal information.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Palo Alto Networks Acquires Console—AI Platform Boost",
-            "title": "Palo Alto Networks Acquires AI Agent Platform Console",
-            "content": "Palo Alto Networks has announced the acquisition of Console, an AI agent platform, as part of its strategy to enhance next-generation security offerings. This acquisition coincides with the company's quarterly results, which show a 34% increase in revenue. By integrating Console's capabilities, Palo Alto Networks aims to strengthen its AI-driven security solutions, addressing the growing demand for advanced threat detection and response. This move reflects the industry's shift towards AI-enhanced cybersecurity measures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-acquires-ai-agent-platform-console/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Sevii Expands ADR—AI Agents Combat AI-Speed Attacks",
-            "title": "Sevii Targets AI-Speed Attacks With Preemptive Autonomous Defense",
-            "content": "Sevii has upgraded its Autonomous Defense and Response (ADR) platform with AI agents designed to swiftly address AI-driven cyberattacks. These agents can investigate, contain, and remediate threats within minutes, enhancing the platform's ability to counteract fast-moving attacks. This expansion is part of Sevii's strategy to provide robust defenses against the increasing prevalence of AI-enhanced threats. Organizations are encouraged to adopt such advanced solutions to protect against evolving cyber risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sevii-targets-ai-speed-attacks-with-preemptive-autonomous-defense/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Coast Guard Launches Maritime Cybersecurity Office",
-            "title": "Coast Guard Establishes Office of Maritime Cybersecurity Policy",
-            "content": "The U.S. Coast Guard has established a new Office of Maritime Cybersecurity Policy to oversee cybersecurity measures across U.S. ports, vessels, and maritime facilities. This office will serve as the central authority for developing and implementing cybersecurity policies in the maritime sector. The initiative aims to enhance the security of critical maritime infrastructure against cyber threats. Stakeholders in the maritime industry are advised to align with the new policies to ensure compliance and bolster cybersecurity defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/coast-guard-establishes-office-of-maritime-cybersecurity-policy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "METR API Key Stolen—$600K AI Credits Consumed",
-            "title": "Attackers Steal METR API Key and Consume AI Credits Worth About $600,000",
-            "content": "METR, a research non-profit focused on evaluating AI models, disclosed two significant security incidents involving the theft of an API key. Attackers used the stolen key to consume AI credits valued at approximately $600,000. This breach highlights the vulnerabilities associated with API security and the potential financial impact of such incidents. Organizations utilizing APIs are urged to implement stringent security measures, including regular audits and access controls, to prevent unauthorized access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-steal-metr-api-key-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Claude AI Ports PLC Exploit—Hours and $300 Cost",
-            "title": "Forescout Uses Claude AI to Port PLC Exploit in Record Time",
-            "content": "Forescout researchers have demonstrated the capability of using Claude AI to port a remote code execution exploit between different models of WAGO programmable logic controllers (PLCs). This process, which traditionally could take weeks, was completed in just hours and cost a few hundred dollars. The exploit targets vulnerabilities in industrial control systems, posing significant risks to critical infrastructure. This experiment highlights the growing potential for AI to accelerate the development and adaptation of cyber exploits. Security professionals should be aware of the increasing role AI plays in both offensive and defensive cybersecurity strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/experiment-porting-a-plc-exploit-with-ai-takes-hours-and-hundreds-of-dollars/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 02 2026",
+            "headline": "Palo Alto Networks Acquires Console for $500M—AI Automation Race Heats Up",
+            "title": "Palo Alto Networks Acquires Console for $500M, Shaping AI IT Service Automation",
+            "content": "Palo Alto Networks has acquired Console, a Thrive-backed startup, for $500 million, positioning itself as a formidable player in AI-driven IT service automation. This acquisition leaves Sequoia-backed Serval as the leading startup in the sector, according to industry analysts. Console's technology focuses on automating IT services through AI, which could enhance Palo Alto Networks' offerings in cybersecurity and network management. The move underscores the growing trend of integrating AI into IT services to improve efficiency and reduce human error. Companies in the IT sector should monitor this development as it may influence competitive dynamics and service offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
+            "relatedResources": []
+        },
+        {
+            "date": "Aug 27 2026",
+            "headline": "ChatGPT Boosts Student Performance—1,000-Student Study Reveals Insights",
+            "title": "Study Shows ChatGPT and Critical Thinking Training Enhance Student Performance",
+            "content": "A recent study involving over 1,000 students has demonstrated that the combination of ChatGPT usage and critical thinking training significantly improves student performance on university assignments. The research highlights that students who engaged with ChatGPT showed enhanced originality and broader thinking capabilities. This finding suggests that AI tools, when paired with proper educational strategies, can be powerful aids in academic settings. Educators and institutions should consider integrating AI tools like ChatGPT into their curricula to foster critical thinking and creativity among students.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Meta's Muse Voice Transcribe—$0.18/Hour for 20+ Speaker Diarization",
+            "title": "Meta Launches Muse Voice Transcribe with Real-Time Diarization for Enterprises",
+            "content": "Meta has introduced Muse Voice Transcribe, a new audio perception model offering real-time transcription and speaker diarization for over 20 speakers at a competitive rate of $0.18 per hour. This service targets enterprises needing efficient and cost-effective speech-to-text solutions. The model integrates streaming transcription, endpoint detection, and advanced diarization, making it a strong contender in the growing speech-to-text market. Businesses requiring large-scale transcription services should evaluate Muse Voice Transcribe for its affordability and technical capabilities.",
+            "source": "VentureBeat",
+            "sourceUrl": "https://venturebeat.com/technology/meta-prices-muse-voice-transcribe-at-0-18-an-hour-with-real-time-diarization-for-20-speakers-a-steal-for-enterprises",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Nvidia and Robots Star at TechCrunch Disrupt's Real World AI Stage",
+            "title": "TechCrunch Disrupt 2026 Features Nvidia, Robotics, and Extinct Animals on AI Stage",
+            "content": "TechCrunch Disrupt 2026 has introduced the Real World AI stage, focusing on the convergence of digital and physical realms. This stage highlights innovations from Nvidia, robotics, and even the concept of resurrecting extinct animals through AI. The event underscores the increasing integration of AI in various sectors, including hardware and biological sciences. Attendees can expect insights into how AI is transforming industries by bridging digital and physical worlds. Professionals in AI and related fields should watch for developments from this event to stay ahead in the rapidly evolving tech landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "OpenAI's Astra Model Raises AI Safety Concerns",
+            "title": "OpenAI's Astra Model Introduces \"Recurrent Depth\" Technique, Sparking Safety Concerns",
+            "content": "OpenAI's new Astra model employs \"recurrent depth,\" a technique allowing it to operate beyond traditional sequential reasoning models. This advancement has raised alarms among AI safety experts due to its potential to perform complex reasoning without human-like constraints. The Astra model represents a significant leap in AI capabilities, potentially impacting fields reliant on advanced reasoning. AI developers and safety professionals should closely examine Astra's implications to address potential risks associated with its deployment.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Google Unveils Gemini 3.8 Flash—Enhanced Reasoning, Same Price",
+            "title": "Google's Gemini 3.8 Flash Model Offers Improved Reasoning at Existing Price",
+            "content": "Google has launched the Gemini 3.8 Flash model, boasting enhanced reasoning capabilities compared to its predecessor, Gemini 3.7 Flash. The new model performs more reasoning steps on complex tasks and iteratively calls tools, yet maintains the introductory pricing of $0.75 per million tokens. This release highlights Google's commitment to advancing AI performance without increasing costs. AI practitioners should consider the Gemini 3.8 Flash for projects requiring sophisticated reasoning at a competitive price point.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Amazon's AI Assistant Detects Fake Emails—Boosts Security",
+            "title": "Amazon AI Assistant Now Identifies Fake Company Emails to Combat Scams",
+            "content": "Amazon has enhanced its AI assistant capabilities to detect fake emails, texts, and calls claiming to be from the company. Users can now ask Alexa for Shopping to verify the authenticity of messages, leveraging AI to combat impersonation scams. This feature aims to protect customers from phishing attacks and fraudulent communications. Organizations should consider similar AI-driven solutions to enhance their cybersecurity measures and protect users from increasingly sophisticated scams.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "AI Detection Challenges—Beyond 'Real or Fake'",
+            "title": "Pangram's Max Spero Discusses Complexities of AI Detection Beyond Simple Binaries",
+            "content": "Max Spero of Pangram highlights the growing challenge of detecting AI-generated content, which now permeates job applications, product reviews, and insurance claims. The internet's trust issues are exacerbated by AI's ability to produce realistic text and images, complicating the distinction between genuine and fabricated content. This trend necessitates advanced detection tools and strategies to maintain trust in digital interactions. Tech professionals should prioritize developing and implementing robust AI detection systems to address these challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/pangrams-max-spero-on-why-ai-detection-is-harder-than-real-or-fake/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "Internet Trust Crisis—AI Content Fuels 'Dead Internet Theory'",
+            "title": "Pangram CEO Warns of Internet Trust Crisis Due to AI-Generated Content",
+            "content": "The CEO of Pangram has expressed concerns about the internet's trust crisis, driven by the proliferation of AI-generated content in various domains. This phenomenon contributes to the \"dead internet theory,\" where genuine human interaction is overshadowed by automated content. The rise of AI-generated text and images in critical areas like job applications and product reviews highlights the urgent need for effective detection and verification systems. Stakeholders in digital platforms must address these issues to preserve the integrity and reliability of online content.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/were-dangerously-close-to-dead-internet-theory-says-pangrams-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "US Government Backs OpenAI on LLM Training with Copyrighted Material",
+            "title": "US Government Supports OpenAI's Use of Copyrighted Material for LLM Training",
+            "content": "The US government has sided with OpenAI regarding the use of copyrighted material for training large language models (LLMs). The government's stance emphasizes the importance of fostering a competitive AI industry that sets global standards. This decision may influence future policies on AI training data and intellectual property rights. AI developers and legal experts should monitor this development, as it could impact data usage practices and regulatory frameworks in the AI sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 01 2026",
             "headline": "OpenAI's Astra Model Achieves Critical Cybersecurity Milestone",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/02/openai-faces-30-more-lawsuits-tied-to-tumbler-ridge-shooting/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Anthropic's Claude Fable 5.1—45% Cheaper for AI Tasks",
-            "title": "Anthropic Launches Cost-Effective Claude Fable 5.1 for Agentic Work",
-            "content": "Anthropic has unveiled Claude Fable 5.1, a new AI model designed to address customer concerns about pricing and data retention. The model offers enhanced performance over its predecessor, Fable 5, while being up to 45% cheaper for agentic tasks. This release also includes Mythos 5.1, which aims to reduce overzealous safeguards that previously hindered user experience. The cost reduction is expected to make these models more accessible to businesses looking to integrate AI solutions without breaking the bank. Users are encouraged to evaluate these models for potential integration into their workflows.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "OpenAI's Astra Model—A Cybersecurity Game Changer",
-            "title": "OpenAI's Astra Model Promises Advanced Cybersecurity Capabilities",
-            "content": "OpenAI is preparing to release Astra, a large language model (LLM) with advanced capabilities in cybersecurity. Astra is designed to meet the Critical cybersecurity capability threshold under the Preparedness Framework, offering robust safeguards to prevent misuse. The model's ability to break into computer systems has prompted OpenAI to implement stringent precautions to ensure its safe deployment. This development is significant for cybersecurity professionals who must stay informed about potential threats and the evolving landscape of AI-driven security tools.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "AfterQuery—Y Combinator's Fastest Unicorn at $3.2B Valuation",
-            "title": "AfterQuery Achieves Unicorn Status with $3.2 Billion Valuation",
-            "content": "AI model-training startup AfterQuery has become Y Combinator's fastest-ever unicorn, reaching a valuation of $3.2 billion. This milestone comes just five months after the company announced its $30 million Series A funding round at a $300 million valuation. The rapid growth highlights the increasing demand for AI model training solutions and the potential for startups in this sector to achieve significant market impact. Investors and tech leaders should monitor AfterQuery's progress as it continues to expand its offerings and influence in the AI industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Google's Android Update—Motion Sickness and Accessibility Fixes",
-            "title": "Google's Android Update Enhances Accessibility and User Comfort",
-            "content": "Google's latest Android update addresses user concerns by tackling motion sickness and improving accessibility features. While some updates bring Android in line with Apple's existing offerings, others leverage Google's Gemini AI to provide unique enhancements. These improvements are aimed at making devices more user-friendly and accessible to a broader audience. Android users should update their devices to take advantage of these new features, which promise to enhance the overall user experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "OpenAI Delays Astra After Hugging Face Hack",
-            "title": "OpenAI Postpones Astra Model Development Following Security Breach",
-            "content": "OpenAI has delayed the development of its Astra model suite following a security breach involving an unreleased model. The incident, which gained international attention, prompted OpenAI to prioritize safety measures before proceeding with Astra's release. The breach underscores the importance of robust security protocols in AI development, particularly for models with potential cybersecurity implications. Organizations should remain vigilant and ensure their AI deployments are secure against similar threats.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "AI 'Civilizations'—Shifting Blame in Cybersecurity Attacks",
-            "title": "AI 'Civilizations' and the Evolving Cybersecurity Responsibility Debate",
-            "content": "The recent attack on developer platform Hugging Face has sparked debate over responsibility in AI-driven cybersecurity incidents. Some attribute the breach to OpenAI's loss of control over its AI tools, while others blame a succession of AI \"civilizations.\" This incident highlights the complex landscape of AI safety and the importance of clear accountability in cybersecurity. Professionals in the field should consider the implications of AI autonomy and the potential for shifting responsibility in future incidents.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987566/ai-civilizations-opeai-hugging-face-hack",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Apple Accuses OpenAI of Evidence Destruction in Legal Battle",
-            "title": "Apple Seeks Expedited Discovery in OpenAI Lawsuit Over Evidence Concerns",
-            "content": "Apple has accused OpenAI of destroying evidence in an ongoing legal battle, prompting a request for expedited discovery. The dispute centers around a MacBook used by a former OpenAI employee, which Apple claims was only recently handed over. This case underscores the legal complexities surrounding data handling and evidence preservation in tech disputes. Legal and tech professionals should monitor this case for its potential implications on corporate responsibility and data management practices.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Google Pics—AI-Driven Design Tool Rivals Canva",
-            "title": "Google Launches AI-First Creative Tool to Compete with Canva",
-            "content": "Google is entering the creative software market with Google Pics, an AI-driven tool that allows users to generate designs through prompts rather than traditional design methods. This move positions Google as a competitor to established players like Canva and Adobe by offering a unique, AI-first approach to design. The tool's release reflects the growing trend of integrating AI into creative processes, providing users with innovative ways to create content. Designers and creative professionals should explore Google Pics for its potential to streamline and enhance their workflows.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Gemini Enables Advanced Video Understanding for AI Agents",
-            "title": "Google DeepMind Introduces Agentic Video Understanding with Gemini",
-            "content": "Google DeepMind has announced the introduction of agentic video understanding capabilities through its Gemini AI. This advancement allows AI agents to interpret and respond to video content more effectively, enhancing their ability to perform complex tasks. The integration of video understanding into AI systems represents a significant step forward in AI capabilities, with potential applications across various industries. Developers and tech leaders should consider the implications of this technology for future AI deployments.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "ChatGPT Health Integrates with Epic for Patient Data Access",
-            "title": "OpenAI's ChatGPT Health Adds Epic Integration for Clinician Access",
-            "content": "OpenAI has integrated its ChatGPT Health platform with Epic, allowing clinicians to import patient data with read-only access. This integration aims to streamline healthcare workflows by providing medical professionals with quick access to relevant patient information. The move highlights the growing role of AI in healthcare, offering potential improvements in efficiency and patient care. Healthcare providers should explore this integration to enhance their data management and clinical decision-making processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -449,6 +449,83 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-59822",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "BerriAI LiteLLM",
+            "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an ar",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-59822",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-48710",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "Kludex Starlette",
+            "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentica",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48710",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-49869",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "Kestra Kestra OSS",
+            "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-49869",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-82329",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "JFrog Artifactory",
+            "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82329",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-9586",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "Sangoma Switchvox",
+            "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single craf",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-9586",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-83548",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "SonicWall SMA1000 Appliances",
+            "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83548",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-83549",
+            "dateAdded": "Sep 02, 2026",
+            "vendor": "SonicWall SMA1000 Appliances",
+            "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote cod",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83549",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-82078",
             "dateAdded": "Aug 31, 2026",
             "vendor": "PaperCut NG/MF",
@@ -468,39 +545,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-81578",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2023-49105",
-            "dateAdded": "Aug 27, 2026",
-            "vendor": "ownCloud ownCloud",
-            "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-49105",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-53362",
-            "dateAdded": "Aug 27, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53362",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-66384",
-            "dateAdded": "Aug 27, 2026",
-            "vendor": "JFrog Artifactory",
-            "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-66384",
             "isZeroDay": false
         }
     ],
