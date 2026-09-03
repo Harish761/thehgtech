@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-9",
+      "incident_id": 9,
+      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-76",
       "incident_id": 76,
       "title": "Buenos Aires Government Reportedly Used Children's Personal Data in Facial Recognition System for Fu",
@@ -2426,9 +2434,9 @@
     }
   ],
   "stats": {
-    "total": 303,
-    "last7Days": 86,
-    "last30Days": 131
+    "total": 304,
+    "last7Days": 87,
+    "last30Days": 132
   },
-  "lastUpdated": "2026-09-04T00:46:14.657999+05:30"
+  "lastUpdated": "2026-09-04T02:44:57.768211+05:30"
 }
