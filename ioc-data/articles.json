@@ -6,7 +6,6 @@
       "category": "Vulnerability Analysis, EDR Security, Windows Security, Enterprise Security",
       "title": "FalconFlank: Technical Analysis of CrowdStrike Falcon Sensor Local Privilege Escalation Proof-of-Concept",
       "excerpt": "A security researcher known as Chaotic Eclipse published FalconFlank, a proof-of-concept exploit targeting the Microsoft Office malicious macro removal feature in CrowdStrike Falcon Sensor. TheHGTech provides a comprehensive technical deep dive into the attack chain, detection opportunities, enterprise risk assessment, and mitigation guidance.",
-      "url": "/articles/falconflank-crowdstrike-falcon-lpe-analysis.html",
       "tags": [
         "FalconFlank",
         "CrowdStrike",
@@ -23,7 +22,8 @@
       ],
       "author": "TheHGTech Security Research",
       "featured": true,
-      "image": "/images/articles/falconflank-poc-demo.png"
+      "image": "/images/articles/falconflank-poc-demo.png",
+      "externalUrl": "/articles/falconflank-crowdstrike-falcon-lpe-analysis.html"
     },
     {
       "id": "report-20260831",
