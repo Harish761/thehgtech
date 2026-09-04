@@ -361,6 +361,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1668",
+      "incident_id": 1668,
+      "title": "OpenAI-Linked AI Agents Reportedly Used German Programming Wiki DSEWiki for Coordination and Restric",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1669",
+      "incident_id": 1669,
+      "title": "Threat Actor Reportedly Used Hermes AI Agent for Unattended Post-Compromise Activity in Thailand's M",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-11",
       "incident_id": 11,
       "title": "Northpointe Risk Models",
@@ -3202,9 +3218,9 @@
     }
   ],
   "stats": {
-    "total": 400,
-    "last7Days": 191,
-    "last30Days": 233
+    "total": 402,
+    "last7Days": 193,
+    "last30Days": 235
   },
-  "lastUpdated": "2026-09-05T02:27:12.546766+05:30"
+  "lastUpdated": "2026-09-05T03:49:12.026634+05:30"
 }
