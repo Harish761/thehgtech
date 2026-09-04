@@ -1011,11 +1011,11 @@
                 </p>
             </header>
 
-            <img src="/images/articles/falconflank-poc-demo.png"
-                alt="FalconFlank PoC demonstration — SYSTEM shell obtained via CrowdStrike Falcon Sensor privilege escalation" class="featured-image"
-                loading="eager">
+            <img src="/images/og-image.jpg"
+                alt="FalconFlank Hero Image Placeholder" class="featured-image"
+                loading="eager" style="opacity: 0.5;">
             <p style="text-align:center; font-size:0.82rem; color:var(--text-secondary); margin-top:-0.5rem; margin-bottom:1.5rem;">
-                <em>Figure 1: FalconFlank PoC in action. The Debug build of FalconFlank.exe executes from a standard user context (<code>C:\Users\user\Desktop\FalconFlank\x64\Debug</code>), prints "Exploit succeeded, loading dll, please wait…", and spawns a cmd.exe shell running as <code>NT AUTHORITY\SYSTEM</code>. Note that the Release build returned "Access is denied," suggesting CrowdStrike had already deployed a behavioural signature for that binary. Windows 11 25H2 (Build 26200.9278).</em>
+                <em>[Hero image to be added here]</em>
             </p>
 
             <div class="cvss-box">
@@ -1186,7 +1186,15 @@
             <h3>Repository Overview</h3>
             <p>The repository is tagged with the description <em>"Crowdstrike Falcon 0day Privilege Escalation Vulnerability"</em>. The project appears to be a C++ Visual Studio solution targeting 64-bit Windows, with both Debug and Release build configurations present. The GitHub repository ID is <code>1355442495</code>, confirming its creation around the time of the September 2026 disclosure.</p>
             <h3>The PoC Execution Evidence</h3>
-            <p>The screenshot provided by the researcher (and reproduced at the top of this article) shows the most critical evidence available at the time of writing. Examining the terminal output carefully:</p>
+            <div style="margin: 2.5rem 0; text-align: center;">
+                <img src="/images/articles/falconflank-poc-demo.png"
+                    alt="FalconFlank PoC demonstration — SYSTEM shell obtained via CrowdStrike Falcon Sensor privilege escalation" 
+                    style="max-width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border);" loading="lazy">
+                <p style="text-align:center; font-size:0.85rem; color:var(--text-secondary); margin-top:1rem; line-height:1.5;">
+                    <em>Figure 1: FalconFlank PoC in action. The Debug build of FalconFlank.exe executes from a standard user context (<code>C:\Users\user\Desktop\FalconFlank\x64\Debug</code>), prints "Exploit succeeded, loading dll, please wait…", and spawns a cmd.exe shell running as <code>NT AUTHORITY\SYSTEM</code>. Note that the Release build returned "Access is denied," suggesting CrowdStrike had already deployed a behavioural signature for that binary. Windows 11 25H2 (Build 26200.9278).</em>
+                </p>
+            </div>
+            <p>The screenshot provided by the researcher (reproduced above) shows the most critical evidence available at the time of writing. Examining the terminal output carefully:</p>
             <ul>
                 <li><strong>Environment:</strong> Windows 11 Version 10.0.26200.9278 &mdash; a fully updated Windows 11 25H2 build at the time of disclosure</li>
                 <li><strong>Release build failure:</strong> <code>C:\Users\user\Desktop\FalconFlank\x64\Release&gt;FalconFlank.exe</code> &rarr; <code>Access is denied.</code> &mdash; The Release binary was blocked, most likely by a CrowdStrike behavioural or hash-based detection deployed after the researcher shared the binary.</li>
