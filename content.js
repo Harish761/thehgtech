@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 03 2026",
+            "headline": "Cisco Warns—Unpatched Email Flaws, Critical Switch Bugs",
+            "title": "Cisco Alerts on Unpatched S/MIME Flaws and Critical Switch Vulnerabilities",
+            "content": "Cisco has issued a warning regarding publicly disclosed flaws in its Secure Email product that could expose encrypted email content. Additionally, critical vulnerabilities in IOS XR and Nexus switches, which could allow remote code execution and authentication bypass, have been patched. These vulnerabilities pose significant risks to enterprises relying on Cisco's network infrastructure. The flaws highlight the ongoing challenges in securing complex network environments. Organizations using affected Cisco products should prioritize patching and review their email encryption configurations to mitigate potential exposure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-warns-of-unpatched-secure-email-flaws-patches-critical-switch-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "FalconFlank PoC—CrowdStrike Falcon Privilege Escalation Exposed",
+            "title": "Researcher Releases FalconFlank PoC for CrowdStrike Falcon Privilege Escalation",
+            "content": "A security researcher known as Chaotic Eclipse has released a proof-of-concept (PoC) for a zero-day privilege escalation vulnerability in CrowdStrike Falcon, dubbed FalconFlank. This flaw allows attackers to gain elevated privileges on systems running the affected security software. The vulnerability highlights potential weaknesses in endpoint protection solutions and underscores the need for robust privilege management practices. Organizations using CrowdStrike Falcon should monitor for updates and consider additional security measures to protect against exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "CISA Adds 7 Flaws—Reverse Shells, Crypto Miners Detected",
+            "title": "CISA Updates KEV Catalog with Seven Exploited Vulnerabilities",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added seven security flaws to its Known Exploited Vulnerabilities (KEV) catalog. These vulnerabilities, including CVE-2026-83548 with a CVSS score of 10.0, have been actively targeted by attackers deploying reverse shells and cryptocurrency miners. The inclusion in the KEV catalog emphasizes the critical nature of these vulnerabilities and the need for immediate remediation. Organizations should review the catalog and prioritize patching to protect against potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "SonicWall Zero-Days—Persistent Threats Exploit SMA 1000",
+            "title": "Attackers Exploit Zero-Days in SonicWall SMA 1000 Appliances",
+            "content": "SonicWall customers are facing ongoing threats as attackers exploit zero-day vulnerabilities in SMA 1000 appliances. Since late 2025, five such vulnerabilities have been actively targeted, underscoring the persistent risks associated with these devices. The continued exploitation highlights the importance of timely patching and robust security measures. Organizations using SonicWall products should remain vigilant and ensure their systems are updated to mitigate potential attacks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/sonicwall-sma1000-zero-days-actively-exploited/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Phishing Kits, Dropbox Hacks—ThreatsDay Highlights",
+            "title": "ThreatsDay: CEO Phishing Kits and 5K Dropbox Account Hacks",
+            "content": "The latest ThreatsDay report reveals a surge in phishing attacks, including CEO phishing kits and the compromise of 5,000 Dropbox accounts. Attackers are leveraging legitimate tools and social engineering tactics, such as OAuth traps and fake login pages, to deceive users. This trend highlights the evolving sophistication of phishing campaigns and the need for enhanced user awareness and security training. Organizations should implement multi-factor authentication and regularly update security protocols to defend against these threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "US Targeted—RMM Phishing Campaign Hits 46 Countries",
+            "title": "US Becomes Top Target in Global RMM Phishing Campaign",
+            "content": "A remote monitoring and management (RMM) phishing campaign, initially linked to Canadian targets, has expanded to 46 countries, with the United States accounting for 45% of observed activity. The campaign uses Canada Revenue Agency tax forms as lures, demonstrating the global reach and adaptability of phishing tactics. This development underscores the importance of international collaboration in combating cyber threats. Organizations should enhance email filtering and user training to mitigate phishing risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/us-becomes-top-target-in-rmm-phishing.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "153M Driver License Images—Dark Web Sale Alert",
+            "title": "153 Million Driver License Images Offered on Dark Web",
+            "content": "Cybercriminals are selling digital scans of 153 million US and Canadian driver’s licenses on the dark web, likely stolen from IDScan.net. This massive data breach poses significant identity theft risks for affected individuals. The sale of such sensitive information highlights the ongoing challenges in protecting personal data from cybercriminals. Individuals should monitor their credit reports and consider identity theft protection services to mitigate potential impacts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/153-million-driver-license-images-offered-on-dark-web/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Node.js Abused—Malware Delivery in Targeted Attacks",
+            "title": "Attackers Turn Node.js Runtime Into Malware Delivery Tool",
+            "content": "Threat actors are exploiting the Node.js JavaScript runtime to deliver malware in targeted attacks against government departments and technology firms. This technique involves leveraging the trusted runtime environment to bypass security measures and deploy malicious payloads. The use of legitimate tools in cyber attacks underscores the need for comprehensive security strategies that include monitoring and anomaly detection. Organizations should review their application security practices and consider additional safeguards to protect against such threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-turn-trusted-nodejs-runtime.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Shai-Hulud Worm—469 Credential Locations Targeted",
+            "title": "Shai-Hulud Infostealer Worm Expands Credential Scanning Capabilities",
+            "content": "The Shai-Hulud infostealer worm has evolved to scan for credentials across 469 locations, including developer environments, CI/CD tooling, cloud configurations, and AI tool configurations. This expansion increases the worm's potential impact on organizations by targeting a broader range of sensitive data. The ongoing development of such malware highlights the need for robust credential management and security practices. Organizations should regularly audit their environments and implement strong access controls to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 02 2026",
+            "headline": "JFrog Artifactory Bug—Supply Chain Security Alert",
+            "title": "Exploited JFrog Artifactory Bug Puts Software Supply Chain on Alert",
+            "content": "A critical authentication bypass vulnerability in JFrog Artifactory, tracked as CVE-2026-82329, is being exploited in the wild. Attackers have been observed generating administrator tokens and accessing sensitive data within the software supply-chain platform. This exploitation underscores the critical nature of securing supply chain components and the potential risks of unpatched vulnerabilities. Organizations using JFrog Artifactory should apply available patches and review their security configurations to prevent unauthorized access.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4217534/exploited-jfrog-artifactory-bug-puts-software-supply-chain-on-alert.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
             "headline": "Cisco Nexus 9000 Flaw—Remote Code Execution Risk",
             "title": "Critical Vulnerability in Cisco Nexus 9000 Allows Remote Code Execution",
             "content": "Cisco has issued patches for a critical vulnerability in its Nexus 9000 switches, specifically affecting 10 models based on Silicon One. This flaw permits unauthenticated remote attackers to execute code as root, posing a severe security risk. Additionally, Cisco has released an IOS XR hardening update addressing seven vulnerabilities, two of which are rated 9.8 on the CVSS scale. These vulnerabilities could lead to remote code execution and authentication bypass. Organizations using these systems should apply the patches immediately to mitigate potential exploitation. This incident underscores the importance of timely updates in maintaining network security.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/ai-agent-firewall-startup-air-security-emerges-from-stealth-with-50-million/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "OpenLeash Adds Human Oversight to AI Agent Actions",
-            "title": "OpenLeash Introduces Human Verification for Risky AI Actions",
-            "content": "OpenLeash has launched a new security feature that intercepts potentially dangerous actions by AI agents, requiring human approval when the intent is unclear. This tool aims to mitigate risks associated with autonomous AI operations by blocking clear threats and involving human judgment in ambiguous cases. As AI systems become more integrated into critical operations, ensuring human oversight is crucial to prevent unintended consequences. Security professionals are encouraged to integrate such tools to maintain control over AI-driven processes. This development highlights the growing need for hybrid AI-human governance frameworks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openleash-adds-a-human-check-to-risky-ai-agent-actions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "SonicWall Zero-Days Exploited—Patch SMA1000 Now",
-            "title": "SonicWall Warns of Two SMA1000 Zero-Days Exploited in Attacks",
-            "content": "SonicWall has issued an urgent warning regarding two zero-day vulnerabilities, CVE-2026-83549 and CVE-2026-83548, affecting its SMA1000 series appliances. These vulnerabilities can be exploited together to achieve unauthenticated remote code execution, posing a significant threat to organizations using these devices. The company has released patches and advises immediate updates to mitigate potential exploitation. This incident underscores the persistent targeting of network security devices by threat actors, emphasizing the need for timely vulnerability management. Organizations should prioritize patching to protect against these active threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sonicwall-warns-of-two-sma1000-zero-days-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "SonicWall Patches Critical Exploits—Update SMA1000 Devices",
-            "title": "SonicWall Reports Two Major Security Holes Under Active Exploit",
-            "content": "SonicWall has identified two critical vulnerabilities in its Secure Mobile Access (SMA) 1000 series, which are currently being exploited in the wild. These security holes allow remote attacks that can bypass authentication, posing severe risks to affected systems. SonicWall has released patches and urges immediate application to protect against potential breaches. Security experts have labeled these vulnerabilities as highly concerning, given their potential impact on secure remote access solutions. Organizations relying on SMA1000 devices should act swiftly to secure their networks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4217682/sonicwall-reports-two-major-security-holes-under-active-exploit-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Google, OpenAI Launch Cyber AI Models for Defenders",
-            "title": "Google, Anthropic, and OpenAI Unveil Cyber AI Models, Safeguards",
-            "content": "Google, Anthropic, and OpenAI have introduced advanced cybersecurity AI models, including Google's Gemini 3.8 Flash Cyber, designed to enhance threat detection and response capabilities. These models are part of the Fairwind Program, which provides access to trusted defenders such as governments and healthcare organizations. The initiative aims to bolster cybersecurity defenses by leveraging AI to predict and mitigate threats more effectively. As cyber threats evolve, integrating AI into security strategies becomes increasingly vital for organizations seeking to protect sensitive data and infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Fake Installers Disable Windows Update, Weaken Defender",
-            "title": "Fake Software Installers Disable Windows Update and Weaken Microsoft Defender",
-            "content": "A new malware campaign is distributing fake software installers that disable Windows Update and weaken Microsoft Defender, compromising system security. These malicious installers are spread through bogus software-download websites impersonating trusted vendors. The campaign has affected multiple organizations across various industries, primarily targeting users seeking popular software downloads. Security professionals should advise users to verify the authenticity of download sources and maintain robust endpoint protection to prevent such compromises. This incident underscores the importance of vigilance in software acquisition practices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Malicious .git Configs Exploit AI Agents—Patch Now",
-            "title": "Malicious .git Configs Can Make AI Agents Run Attacker Code",
-            "content": "Manifold Security has disclosed eight vulnerabilities in AI coding agents, including Claude and Codex, that allow malicious .git configurations to execute attacker code on developers' machines. Four of these flaws remain unpatched, posing a risk to developers using these agents. The vulnerabilities exploit the agent's command execution capabilities, potentially leading to unauthorized actions on the host system. Developers are urged to review their Git configurations and apply available patches to mitigate these risks. This highlights the need for secure coding practices in AI development environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Brazilian Government Sites Hijacked—Redirected to Gambling Pages",
-            "title": "Malicious Apache Modules Hijack Brazilian Government Site Traffic",
-            "content": "A cybercrime group known as Gambling Goblin has been installing malicious Apache modules on Brazilian government and educational websites to redirect traffic to gambling and sports betting pages. The attackers, identified as a Chinese-speaking cluster, exploit compromised web servers to control site traffic. This activity not only disrupts legitimate access but also risks exposing users to further cyber threats. Organizations managing web servers should enhance their monitoring and security measures to prevent such unauthorized modifications. This incident underscores the persistent threat of web server exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/malicious-apache-modules-hijack.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Cleo Harmony Exploit Published—Authentication Bypass Risk",
-            "title": "Exploit Published for Fresh Cleo Harmony Vulnerability",
-            "content": "An exploit has been published for a newly discovered vulnerability in Cleo Harmony that allows remote attackers to bypass authentication via argument bearer manipulation. This security defect poses a significant risk to organizations using Cleo Harmony for data integration and management. The publication of the exploit increases the urgency for affected users to apply available security patches. This incident highlights the critical need for proactive vulnerability management in data management solutions to prevent unauthorized access and data breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploit-published-for-fresh-cleo-harmony-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Anthropic Launches Enterprise Safeguards—Zero Data Retention",
-            "title": "Anthropic Details Response to Security Incidents, Unveils Enterprise Safeguards",
-            "content": "Anthropic has introduced Enterprise Frontier Safeguards (EFS), a comprehensive security system combining zero data retention policies with automated misuse monitoring. This initiative aims to enhance data protection and ensure compliance with stringent security standards. By eliminating data retention, Anthropic reduces the risk of data exposure in the event of a breach. Organizations are encouraged to adopt such safeguards to strengthen their security posture and protect sensitive information. This development reflects the growing emphasis on data privacy and proactive security measures in enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-details-response-to-security-incidents-unveils-enterprise-safeguards/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "UK to Restrict High-Risk Tech in Critical Infrastructure",
-            "title": "UK Government to Block High-Risk Tech Suppliers from Critical Infrastructure",
-            "content": "The UK government is set to introduce amendments to the Cyber Security and Resilience Bill, granting ministers the authority to block high-risk technology suppliers from critical infrastructure sectors. This move comes in response to the increasing threat of supply chain attacks, which have become a significant concern for national security. The bill aims to enhance the resilience of the UK's critical systems by restricting the use of technology from suppliers deemed risky. This legislative change reflects a broader trend among nations to secure their supply chains against cyber threats. Organizations involved in critical infrastructure should review their supplier relationships and ensure compliance with upcoming regulations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/uk-moves-to-block-high-risk-tech-suppliers-from-critical-infrastructure/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 03 2026",
+            "headline": "OpenAI's GPT-6 Astra—A Leap into the AGI Era",
+            "title": "OpenAI Unveils GPT-6 Astra, Marking a Generational Leap in AI",
+            "content": "OpenAI has introduced GPT-6 Astra, its latest AI model heralded as a \"generational leap in capability.\" This model is designed to enhance cybersecurity, professional work, software engineering, and scientific research. Notably, GPT-6 Astra is the first model to meet OpenAI's \"Critical\" level of cybersecurity capability under its Preparedness Framework. This advancement signifies a pivotal step towards artificial general intelligence (AGI), with potential impacts across various sectors. Organizations should evaluate how GPT-6 Astra can be integrated into their workflows to leverage its advanced capabilities.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Nvidia's PAIR—Transform Idle PCs into AI Powerhouses",
+            "title": "Nvidia Launches Personal AI Router to Harness Idle Computer Power",
+            "content": "Nvidia has unveiled the Personal AI Router (PAIR), a free tool designed to link idle home computers into a personal AI data center. PAIR facilitates local AI inference tasks using tools like Ollama and LM Studio. This open-source software does not require additional hardware, making it accessible for users seeking to optimize their computing resources. By leveraging existing devices, PAIR offers a cost-effective solution for personal AI computing needs. Tech professionals should explore PAIR's potential to enhance AI processing capabilities without significant investment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "GPT-6 Astra Achieves Critical Cybersecurity Capability",
+            "title": "OpenAI's GPT-6 Astra Reaches Critical Cybersecurity Preparedness Level",
+            "content": "OpenAI's GPT-6 Astra has been designated as the first model to achieve the Critical level of cybersecurity capability under OpenAI's Preparedness Framework. This milestone underscores the model's robust security features, making it highly suitable for deployment in environments where cybersecurity is paramount. The model's enhanced capabilities are expected to provide significant benefits to sectors reliant on secure data handling and processing. Organizations should consider integrating GPT-6 Astra into their cybersecurity strategies to capitalize on its advanced protections.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/safety-overview-gpt-6-astra",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 04 2026",
+            "headline": "Crusoe Raises $3B—Secures $13B Contract with Jane Street",
+            "title": "Crusoe Secures $3 Billion Funding Following $13 Billion Contract",
+            "content": "Crusoe, a data center developer, has reportedly raised $3 billion at a $30 billion valuation. This funding round follows a substantial $13 billion contract with Jane Street, highlighting Crusoe's growing influence in the data center market. The investment is expected to accelerate Crusoe's expansion and technological advancements. Industry stakeholders should monitor Crusoe's developments as it continues to shape the future of data center infrastructure and services.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Accel Eyes $1B Investment in Thinking Machines",
+            "title": "Accel in Talks to Lead $1 Billion Round for Thinking Machines",
+            "content": "Accel is reportedly in discussions to lead a $1 billion funding round for Thinking Machines, valuing the startup at $40 billion. Thinking Machines, known for its AI-driven solutions, boasts an annual revenue run rate exceeding $100 million. This potential investment underscores the growing interest in AI startups with scalable revenue models. Investors and tech leaders should watch for developments in this funding round, which could significantly impact the AI industry landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Abliteration.ai—Unlocking AI Models Without Guardrails",
+            "title": "Abliteration.ai Facilitates Access to Unrestricted AI Models",
+            "content": "Abliteration.ai is making strides in providing access to powerful AI models without traditional guardrails. The company argues that equipping defenders with the same tools as bad actors can enhance cybersecurity. This approach raises questions about the balance between accessibility and security in AI deployment. Cybersecurity professionals should evaluate the implications of using unrestricted AI models and consider the potential benefits and risks associated with such access.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/03/abliteration-ai-is-making-a-business-out-of-removing-ai-guardrails/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Meta Offers Discounts for Muse Spark User Data",
+            "title": "Meta Incentivizes Data Sharing for Muse Spark Model Development",
+            "content": "Meta is offering significant discounts, averaging 95%, to users of its new Muse Spark model who agree to share their prompts and outputs. This initiative aims to gather data to enhance future model iterations, focusing on coding and agent operations. By incentivizing data sharing, Meta seeks to refine its AI capabilities while raising privacy and data security considerations. Developers should weigh the benefits of participating against potential data privacy concerns.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "OpenAI's Astra—Redefining Computer and Browser Use",
+            "title": "OpenAI Launches Astra, Promising Speed and Safety in AI Tasks",
+            "content": "OpenAI has launched Astra, a powerful AI model touted as a \"new frontier\" in computer and browser use. Astra is designed to perform tasks with unparalleled speed, accuracy, and safety, setting a new standard for AI applications. This development is poised to impact various industries by enhancing efficiency and security in digital operations. Businesses should assess how Astra can be integrated into their systems to optimize performance and security.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Nvidia Acquires Hugging Face—$12.9 Billion Open-Source AI Bet",
+            "title": "Nvidia's $12.9 Billion Acquisition of Hugging Face to Boost Open-Source AI",
+            "content": "Nvidia has confirmed its acquisition of Hugging Face for $12.9 billion, a strategic move to bolster its open-source AI capabilities. This acquisition grants Nvidia access to a vast repository of AI models and datasets, positioning it to lead in the open-source AI domain. The deal reflects Nvidia's commitment to expanding its influence in AI development and deployment. Tech leaders should consider the implications of this acquisition on the open-source AI landscape and Nvidia's future offerings.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/nvidias-hugging-face-acquisition-is-a-dollar129-billion-bet-on-open-source-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 03 2026",
+            "headline": "Google Introduces Voice Control for Gmail, Docs, Keep",
+            "title": "Google Rolls Out AI-Powered Voice Assistant for Productivity Apps",
+            "content": "Google has launched AI-powered voice assistant modes for Gmail, Docs, and Keep, enabling users to manage these applications through voice commands. Dubbed Gmail Live, Docs Live, and Keep Live, these features aim to enhance user interaction by providing real-time conversational capabilities. This development is part of Google's broader strategy to integrate AI into everyday productivity tools. Users should explore these new functionalities to streamline their workflows and improve efficiency.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini",
+            "relatedResources": []
+        },
         {
             "date": "Sep 03 2026",
             "headline": "Nvidia Acquires Hugging Face for $12.93 Billion",
@@ -192,15 +282,6 @@ const websiteContent = {
             "content": "Nvidia has announced its acquisition of Hugging Face for $12.93 billion, marking a significant expansion into the open-source AI domain. Hugging Face, a platform established in 2016, is renowned for hosting over 3 million AI models and serving more than 18 million developers globally. This strategic move provides Nvidia with direct access to a vast repository of open-source AI models and datasets, potentially accelerating its AI development initiatives. The acquisition reflects a growing trend among tech giants to integrate open-source resources to enhance innovation and collaboration. Developers and tech leaders should anticipate increased integration of Nvidia's hardware with Hugging Face's software offerings.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "Anthropic's New AI Models Cut Costs by Up to 45%",
-            "title": "Anthropic Launches Cost-Efficient AI Models Claude Fable 5.1 and Mythos 5.1",
-            "content": "Anthropic has introduced its latest AI models, Claude Fable 5.1 and Mythos 5.1, which promise to reduce costs by up to 45% for agentic tasks. These models address previous customer concerns regarding pricing, data retention, and overly cautious safeguards. Claude Fable 5.1, in particular, offers enhanced performance compared to its predecessor, Fable 5, while being more cost-effective. This development is crucial for businesses seeking efficient AI solutions without compromising on performance. Organizations leveraging AI for complex tasks should consider these models to optimize their operations and reduce expenses.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Palo Alto Networks has acquired Console, a Thrive-backed startup, for $500 million, positioning itself as a formidable player in AI-driven IT service automation. This acquisition leaves Sequoia-backed Serval as the leading startup in the sector, according to industry analysts. Console's technology focuses on automating IT services through AI, which could enhance Palo Alto Networks' offerings in cybersecurity and network management. The move underscores the growing trend of integrating AI into IT services to improve efficiency and reduce human error. Companies in the IT sector should monitor this development as it may influence competitive dynamics and service offerings.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Meta's Muse Voice Transcribe—$0.18/Hour for 20+ Speaker Diarization",
-            "title": "Meta Launches Muse Voice Transcribe with Real-Time Diarization for Enterprises",
-            "content": "Meta has introduced Muse Voice Transcribe, a new audio perception model offering real-time transcription and speaker diarization for over 20 speakers at a competitive rate of $0.18 per hour. This service targets enterprises needing efficient and cost-effective speech-to-text solutions. The model integrates streaming transcription, endpoint detection, and advanced diarization, making it a strong contender in the growing speech-to-text market. Businesses requiring large-scale transcription services should evaluate Muse Voice Transcribe for its affordability and technical capabilities.",
-            "source": "VentureBeat",
-            "sourceUrl": "https://venturebeat.com/technology/meta-prices-muse-voice-transcribe-at-0-18-an-hour-with-real-time-diarization-for-20-speakers-a-steal-for-enterprises",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Nvidia and Robots Star at TechCrunch Disrupt's Real World AI Stage",
-            "title": "TechCrunch Disrupt 2026 Features Nvidia, Robotics, and Extinct Animals on AI Stage",
-            "content": "TechCrunch Disrupt 2026 has introduced the Real World AI stage, focusing on the convergence of digital and physical realms. This stage highlights innovations from Nvidia, robotics, and even the concept of resurrecting extinct animals through AI. The event underscores the increasing integration of AI in various sectors, including hardware and biological sciences. Attendees can expect insights into how AI is transforming industries by bridging digital and physical worlds. Professionals in AI and related fields should watch for developments from this event to stay ahead in the rapidly evolving tech landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/02/techcrunch-disrupt-2026s-new-real-world-ai-stage-features-nvidia-robots-and-extinct-animals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "OpenAI's Astra Model Raises AI Safety Concerns",
-            "title": "OpenAI's Astra Model Introduces \"Recurrent Depth\" Technique, Sparking Safety Concerns",
-            "content": "OpenAI's new Astra model employs \"recurrent depth,\" a technique allowing it to operate beyond traditional sequential reasoning models. This advancement has raised alarms among AI safety experts due to its potential to perform complex reasoning without human-like constraints. The Astra model represents a significant leap in AI capabilities, potentially impacting fields reliant on advanced reasoning. AI developers and safety professionals should closely examine Astra's implications to address potential risks associated with its deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Google Unveils Gemini 3.8 Flash—Enhanced Reasoning, Same Price",
-            "title": "Google's Gemini 3.8 Flash Model Offers Improved Reasoning at Existing Price",
-            "content": "Google has launched the Gemini 3.8 Flash model, boasting enhanced reasoning capabilities compared to its predecessor, Gemini 3.7 Flash. The new model performs more reasoning steps on complex tasks and iteratively calls tools, yet maintains the introductory pricing of $0.75 per million tokens. This release highlights Google's commitment to advancing AI performance without increasing costs. AI practitioners should consider the Gemini 3.8 Flash for projects requiring sophisticated reasoning at a competitive price point.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Amazon's AI Assistant Detects Fake Emails—Boosts Security",
-            "title": "Amazon AI Assistant Now Identifies Fake Company Emails to Combat Scams",
-            "content": "Amazon has enhanced its AI assistant capabilities to detect fake emails, texts, and calls claiming to be from the company. Users can now ask Alexa for Shopping to verify the authenticity of messages, leveraging AI to combat impersonation scams. This feature aims to protect customers from phishing attacks and fraudulent communications. Organizations should consider similar AI-driven solutions to enhance their cybersecurity measures and protect users from increasingly sophisticated scams.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/988518/amazon-alexa-for-shopping-verify-emails",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "AI Detection Challenges—Beyond 'Real or Fake'",
-            "title": "Pangram's Max Spero Discusses Complexities of AI Detection Beyond Simple Binaries",
-            "content": "Max Spero of Pangram highlights the growing challenge of detecting AI-generated content, which now permeates job applications, product reviews, and insurance claims. The internet's trust issues are exacerbated by AI's ability to produce realistic text and images, complicating the distinction between genuine and fabricated content. This trend necessitates advanced detection tools and strategies to maintain trust in digital interactions. Tech professionals should prioritize developing and implementing robust AI detection systems to address these challenges.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/pangrams-max-spero-on-why-ai-detection-is-harder-than-real-or-fake/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "Internet Trust Crisis—AI Content Fuels 'Dead Internet Theory'",
-            "title": "Pangram CEO Warns of Internet Trust Crisis Due to AI-Generated Content",
-            "content": "The CEO of Pangram has expressed concerns about the internet's trust crisis, driven by the proliferation of AI-generated content in various domains. This phenomenon contributes to the \"dead internet theory,\" where genuine human interaction is overshadowed by automated content. The rise of AI-generated text and images in critical areas like job applications and product reviews highlights the urgent need for effective detection and verification systems. Stakeholders in digital platforms must address these issues to preserve the integrity and reliability of online content.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/were-dangerously-close-to-dead-internet-theory-says-pangrams-ceo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 02 2026",
-            "headline": "US Government Backs OpenAI on LLM Training with Copyrighted Material",
-            "title": "US Government Supports OpenAI's Use of Copyrighted Material for LLM Training",
-            "content": "The US government has sided with OpenAI regarding the use of copyrighted material for training large language models (LLMs). The government's stance emphasizes the importance of fostering a competitive AI industry that sets global standards. This decision may influence future policies on AI training data and intellectual property rights. AI developers and legal experts should monitor this development, as it could impact data usage practices and regulatory frameworks in the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 01 2026",
-            "headline": "OpenAI's Astra Model Achieves Critical Cybersecurity Milestone",
-            "title": "Astra Becomes First OpenAI Model to Meet Critical Cybersecurity Threshold",
-            "content": "OpenAI has announced that its latest AI model, Astra, is the first to meet the Critical cybersecurity capability threshold under the Preparedness Framework. This achievement underscores Astra's enhanced safeguards designed to protect against potential misuse and vulnerabilities. The model's release follows rigorous testing and improvements to ensure it adheres to stringent security standards. Astra's capabilities are expected to set a new benchmark in AI safety, offering robust defenses against cyber threats. Organizations leveraging AI should evaluate Astra's features to enhance their cybersecurity posture.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/path-to-astra",
             "relatedResources": []
         }
     ],
