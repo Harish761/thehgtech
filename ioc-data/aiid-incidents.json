@@ -1,6 +1,366 @@
 {
   "incidents": [
     {
+      "id": "AIID-518",
+      "incident_id": 518,
+      "title": "New York Detective Reportedly Misused Woody Harrelson's Face to Perform Face Recognition Search",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-538",
+      "incident_id": 538,
+      "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-592",
+      "incident_id": 592,
+      "title": "Facial Recognition Misidentifies Pregnant Woman Leading to False Arrest in Detroit",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-619",
+      "incident_id": 619,
+      "title": "Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-514",
+      "incident_id": 514,
+      "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-515",
+      "incident_id": 515,
+      "title": "Facial Recognition Error Reportedly Leads to Wrongful Arrest of Georgia Man and $200K Settlement in ",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-517",
+      "incident_id": 517,
+      "title": "Man Arrested For Sock Theft by False Facial Match Despite Alibi",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-557",
+      "incident_id": 557,
+      "title": "Miami Police Deployed Facial Recognition to Arrest George Floyd Protestor Allegedly without Cause",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-558",
+      "incident_id": 558,
+      "title": "Activists Allege NYPD's Application of Facial Recognition Interfered with Right to Protest",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-572",
+      "incident_id": 572,
+      "title": "University Student Reportedly Received Zero After Turnitin AI Detector Flagged Essay",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-598",
+      "incident_id": 598,
+      "title": "False Arrest of Georgia Man Due to Louisiana Police's Faulty Facial Recognition Technology",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-630",
+      "incident_id": 630,
+      "title": "Alleged Macy's Facial Recognition Error Leads to Wrongful Arrest and Subsequent Sexual Assault in Ja",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-659",
+      "incident_id": 659,
+      "title": "Purported Mass Facial Recognition Program in Gaza Reportedly Used by Israeli Forces to Identify Pale",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-692",
+      "incident_id": 692,
+      "title": "London Metropolitan Police's Facial Recognition Technology Reportedly Misidentified Shaun Thompson a",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-815",
+      "incident_id": 815,
+      "title": "Police Use of Facial Recognition Software Causes Wrongful Arrests Without Defendant Knowledge",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-816",
+      "incident_id": 816,
+      "title": "Cross-Jurisdictional Facial Recognition Misidentification by NYPD Leads to Wrongful Arrest and Four-",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-829",
+      "incident_id": 829,
+      "title": "Facial Recognition System in Buenos Aires Triggers Police Checks Based on False Matches",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-831",
+      "incident_id": 831,
+      "title": "NYC Subway AI Weapons Scanners Yield High False Positive Rate and Detect No Guns in Month-Long Pilot",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-849",
+      "incident_id": 849,
+      "title": "AI Detection Tools Allegedly Misidentify Neurodivergent and ESL Students' Work as AI-Generated in Ac",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-896",
+      "incident_id": 896,
+      "title": "Alleged Misuse of Facial Recognition Technology by Law Enforcement Reportedly Leading to Wrongful Ar",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-925",
+      "incident_id": 925,
+      "title": "Alleged License Plate Recognition Errors in Christchurch Lead to Wrongful Parking Fines",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1075",
+      "incident_id": 1075,
+      "title": "New Orleans Police Reportedly Used Real-Time Facial Recognition Alerts Supplied by Project NOLA Desp",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1103",
+      "incident_id": 1103,
+      "title": "Purported DOGE Contract Review Tool Cited in Reports of AI-Driven Misjudgments in VA Budget Cuts",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1163",
+      "incident_id": 1163,
+      "title": "Purported Face\u2011Swap Technology Reportedly Used to Circumvent Financial Platform's Facial Recognition",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1167",
+      "incident_id": 1167,
+      "title": "Alleged Gaggle Surveillance Alert Reportedly Leads to Arrest and Detention of 13-Year-Old Student in",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1177",
+      "incident_id": 1177,
+      "title": "Purported AI Monitoring Software Reportedly Flags Unsent Joke Threat, Leading to Arizona Student Sus",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1191",
+      "incident_id": 1191,
+      "title": "NYPD Facial Recognition System Allegedly Produced Erroneous Match That Reportedly Resulted in Wrongf",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1215",
+      "incident_id": 1215,
+      "title": "Gaggle Alert Reportedly Leads to Arrest of 15-Year-Old in Volusia County, Florida, for School Threat",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1250",
+      "incident_id": 1250,
+      "title": "Alleged False Positive by Omnilert AI Gun Detection System Prompts Police Search at Baltimore County",
+      "date": "2026-09-04",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1267",
+      "incident_id": 1267,
+      "title": "Omnilert AI Reportedly Triggered False Gun Alert at Parkville High, Prompting Student Relocation",
+      "date": "2026-09-04",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1311",
+      "incident_id": 1311,
+      "title": "Peppermill Casino Facial Recognition System Reportedly Misidentified Individual, Leading to Wrongful",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1312",
+      "incident_id": 1312,
+      "title": "ZeroEyes AI Surveillance System Reportedly Flagged Clarinet as Gun, Triggering School Lockdown in Fl",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1353",
+      "incident_id": 1353,
+      "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1362",
+      "incident_id": 1362,
+      "title": "Border Patrol Agent Allegedly Claimed Facial Recognition Identified Minneapolis ICE Observer and Glo",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1374",
+      "incident_id": 1374,
+      "title": "Purportedly AI-Generated Sepsis Alert Reportedly Prompted Potentially Inappropriate IV Fluid Adminis",
+      "date": "2026-09-04",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1375",
+      "incident_id": 1375,
+      "title": "OpenAI Allegedly Did Not Alert RCMP After ChatGPT Flagged Violent Chats Before British Columbia Scho",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1400",
+      "incident_id": 1400,
+      "title": "West Midlands Police Reportedly Relied on Erroneous Copilot-Generated Intelligence in Maccabi Tel Av",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1402",
+      "incident_id": 1402,
+      "title": "DOGE Reportedly Relied on Unvetted ChatGPT Outputs in Canceling National Endowment for the Humanitie",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1416",
+      "incident_id": 1416,
+      "title": "Purported Facial Recognition Error Reportedly Led to Arrest and Monthslong Jailing of Tennessee Woma",
+      "date": "2026-09-04",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1476",
+      "incident_id": 1476,
+      "title": "Maryland Police Allegedly Relied on Facial Recognition Lead in Wrongful Arrest and Detention of Kimb",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1492",
+      "incident_id": 1492,
+      "title": "Purportedly AI-Enabled Targeting System Was Reportedly Implicated in Deadly U.S. Strike on Iranian P",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1545",
+      "incident_id": 1545,
+      "title": "Florida Police Reportedly Wrongfully Arrested Commercial Crabber Robert Dillon After Allegedly False",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1573",
+      "incident_id": 1573,
+      "title": "National Company Law Tribunal Reportedly Relied on AI-Hallucinated Precedents in Pooja Ramesh Singh ",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1632",
+      "incident_id": 1632,
+      "title": "Yale Student Suspended and Given F After GPTZero Allegedly Misclassified Exam as AI-Generated",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1654",
+      "incident_id": 1654,
+      "title": "AI Chatbot Reportedly Recommended Herbicide Treatment Linked to Loss of About 25 Acres of Sesame in ",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-11",
       "incident_id": 11,
       "title": "Northpointe Risk Models",
@@ -49,9 +409,33 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-74",
+      "incident_id": 74,
+      "title": "Detroit Police Allegedly Wrongfully Arrested Black Man Due to Purportedly Faulty Facial Recognition ",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-76",
+      "incident_id": 76,
+      "title": "Buenos Aires Government Reportedly Used Children's Personal Data in Facial Recognition System for Fu",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-96",
       "incident_id": 96,
       "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-112",
+      "incident_id": 112,
+      "title": "Police Departments Reported ShotSpotter as Unreliable and Wasteful",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -70,6 +454,14 @@
       "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
       "date": "2026-09-03",
       "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-171",
+      "incident_id": 171,
+      "title": "Traffic Camera Misread Text on Pedestrian's Shirt as License Plate, Causing UK Officials to Issue Fi",
+      "date": "2026-09-03",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -145,6 +537,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-214",
+      "incident_id": 214,
+      "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-188",
       "incident_id": 188,
       "title": "Argentinian City Government Deployed Teenage-Pregnancy Predictive Algorithm Using Invasive Demograph",
@@ -159,6 +559,14 @@
       "date": "2026-09-03",
       "category": "bias",
       "severity": "high"
+    },
+    {
+      "id": "AIID-235",
+      "incident_id": 235,
+      "title": "Chinese Insurer Ping An Employed Facial Recognition to Determine Customers\u2019 Untrustworthiness, Which",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
     },
     {
       "id": "AIID-239",
@@ -177,6 +585,38 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-246",
+      "incident_id": 246,
+      "title": "Misreading of an Automated License Plate Reader (ALPR) Unverified by Police, Resulting in Traffic St",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-248",
+      "incident_id": 248,
+      "title": "Reported Automated License Plate Reader Alert on Previously Stolen Rental Car Leads to Alleged Wrong",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-244",
+      "incident_id": 244,
+      "title": "Colorado Police\u2019s Automated License Plate Reader (ALPR) Matched a Family\u2019s Minivan\u2019s Plate to That o",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-245",
+      "incident_id": 245,
+      "title": "Unverified Misreading by Automated Plate Reader Led to Traffic Stop and Restraint of an Innocent Per",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-238",
       "incident_id": 238,
       "title": "Oregon\u2019s Screening Tool for Child Abuse Cases Discontinued Following Concerns of Racial Bias",
@@ -185,9 +625,57 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-256",
+      "incident_id": 256,
+      "title": "DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-255",
+      "incident_id": 255,
+      "title": "Unreliable ShotSpotter Audio Previously Used to Convict Chicago Man in Murder Case",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-274",
       "incident_id": 274,
       "title": "Virginia Courts\u2019 Algorithmic Recidivism Risk Assessment Failed to Lower Incarceration Rates",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-295",
+      "incident_id": 295,
+      "title": "Wrongful Attempted Arrest for Apple Store Thefts Due to NYPD\u2019s Facial Misidentification",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-349",
+      "incident_id": 349,
+      "title": "Evolv AI Weapons Detection System Allegedly Misrepresents Accuracy, Leading to School Security Gaps",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-302",
+      "incident_id": 302,
+      "title": "Dartmouth's Geisel School of Medicine Reportedly Used Canvas Activity Logs to Accuse Students of Che",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-288",
+      "incident_id": 288,
+      "title": "New Jersey Police Wrongful Arrested Innocent Black Man via FRT",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -201,9 +689,41 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-301",
+      "incident_id": 301,
+      "title": "Honorlock's AI Proctoring System Reportedly Led Broward College to Accuse a Teenager of Cheating",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-404",
+      "incident_id": 404,
+      "title": "Sound Intelligence's Aggression Detector Misidentified Innocuous Sounds",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-405",
       "incident_id": 405,
       "title": "Schufa Credit Scoring in Germany Reported for Unreliable and Imbalanced Scores",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-412",
+      "incident_id": 412,
+      "title": "Finnish Police Were Reportedly Reprimanded After National Bureau of Investigation Unit Allegedly Use",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-429",
+      "incident_id": 429,
+      "title": "Unreliable ShotSpotter Audio Convicted Black Rochester Man of Shooting Police",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -217,12 +737,60 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-439",
+      "incident_id": 439,
+      "title": "Detroit Police Wrongfully Arrested Black Man Due To Faulty Facial Recognition",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-446",
+      "incident_id": 446,
+      "title": "ShotSpotter Failed to Alert Authorities of Mass Shooting in North Carolina",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-472",
+      "incident_id": 472,
+      "title": "NYPD's Deployment of Facial Recognition Cameras Reportedly Reinforced Biased Policing",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-440",
+      "incident_id": 440,
+      "title": "Louisiana Police Wrongfully Arrested Black Man Using False Face Match",
+      "date": "2026-09-03",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-461",
       "incident_id": 461,
       "title": "IRS Audited Black Taxpayers More Frequently Reportedly Due to Algorithm",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-483",
+      "incident_id": 483,
+      "title": "Indian Police Allegedly Tortured and Killed Innocent Man Following Facial Misidentification",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "critical"
     },
     {
       "id": "AIID-502",
@@ -281,12 +849,100 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-76",
-      "incident_id": 76,
-      "title": "Buenos Aires Government Reportedly Used Children's Personal Data in Facial Recognition System for Fu",
-      "date": "2026-08-31",
+      "id": "AIID-733",
+      "incident_id": 733,
+      "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data",
+      "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-747",
+      "incident_id": 747,
+      "title": "Fatalities Reportedly Occur Despite VioG\u00e9n Algorithm's Low or Negligible Risk Scores",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-808",
+      "incident_id": 808,
+      "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-822",
+      "incident_id": 822,
+      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
+      "date": "2026-09-03",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1082",
+      "incident_id": 1082,
+      "title": "California Homeowner Reportedly Loses Insurance After Purported Aerial Imagery-Based Roof Assessment",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1083",
+      "incident_id": 1083,
+      "title": "Texas Homeowner Reportedly Spent $3,000 to Contest AI-Flagged Warning of Insurance Nonrenewal",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1324",
+      "incident_id": 1324,
+      "title": "Pieces Technologies' Clinical AI Systems Allegedly Marketed With Misleading Performance Claims",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1343",
+      "incident_id": 1343,
+      "title": "ICE AI Resume Screening Error Allegedly Routed Inexperienced Recruits Into Inadequate Training Pathw",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1396",
+      "incident_id": 1396,
+      "title": "Betfair's Machine-Learning Risk System Reportedly Failed to Flag Luke Ashton Before Gambling-Related",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1575",
+      "incident_id": 1575,
+      "title": "Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1584",
+      "incident_id": 1584,
+      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1631",
+      "incident_id": 1631,
+      "title": "Zoetis Vetscan Imagyst Allegedly Misclassified Dog's Cancerous Tumor, Leading to Second Surgery and ",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "critical"
     },
     {
       "id": "AIID-109",
@@ -505,14 +1161,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1362",
-      "incident_id": 1362,
-      "title": "Border Patrol Agent Allegedly Claimed Facial Recognition Identified Minneapolis ICE Observer and Glo",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1428",
       "incident_id": 1428,
       "title": "UK High Court Found Sky Betting & Gaming Unlawfully Used Automated Profiling and Targeted Marketing ",
@@ -713,22 +1361,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1082",
-      "incident_id": 1082,
-      "title": "California Homeowner Reportedly Loses Insurance After Purported Aerial Imagery-Based Roof Assessment",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1083",
-      "incident_id": 1083,
-      "title": "Texas Homeowner Reportedly Spent $3,000 to Contest AI-Flagged Warning of Insurance Nonrenewal",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1118",
       "incident_id": 1118,
       "title": "Ongoing Purported AI-Assisted Identity Fraud Enables Unauthorized Access to Western Companies by Nor",
@@ -785,14 +1417,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1324",
-      "incident_id": 1324,
-      "title": "Pieces Technologies' Clinical AI Systems Allegedly Marketed With Misleading Performance Claims",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1412",
       "incident_id": 1412,
       "title": "CodeWall's Autonomous Agent Reportedly Obtained Unauthorized Access to McKinsey's Lilli AI Platform ",
@@ -831,22 +1455,6 @@
       "date": "2026-08-29",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1575",
-      "incident_id": 1575,
-      "title": "Eightfold AI Hiring Tools Allegedly Secretly Scored Job Applicants for Employers",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1584",
-      "incident_id": 1584,
-      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-1593",
@@ -1009,14 +1617,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-1654",
-      "incident_id": 1654,
-      "title": "AI Chatbot Reportedly Recommended Herbicide Treatment Linked to Loss of About 25 Acres of Sesame in ",
-      "date": "2026-08-20",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1649",
       "incident_id": 1649,
       "title": "Meta AI Model Reportedly Exploited Security Vulnerability in Real Third-Party Service During Cyberse",
@@ -1121,14 +1721,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1632",
-      "incident_id": 1632,
-      "title": "Yale Student Suspended and Given F After GPTZero Allegedly Misclassified Exam as AI-Generated",
-      "date": "2026-08-13",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1633",
       "incident_id": 1633,
       "title": "Anthropic and OpenAI AI Agents Reportedly Took Unsanctioned Actions on the Live Internet During UK A",
@@ -1191,14 +1783,6 @@
       "date": "2026-08-08",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1631",
-      "incident_id": 1631,
-      "title": "Zoetis Vetscan Imagyst Allegedly Misclassified Dog's Cancerous Tumor, Leading to Second Surgery and ",
-      "date": "2026-08-08",
-      "category": "other",
-      "severity": "critical"
     },
     {
       "id": "AIID-1619",
@@ -1665,14 +2249,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1573",
-      "incident_id": 1573,
-      "title": "National Company Law Tribunal Reportedly Relied on AI-Hallucinated Precedents in Pooja Ramesh Singh ",
-      "date": "2026-07-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1572",
       "incident_id": 1572,
       "title": "Westlaw CoCounsel Reportedly Generated False Legal Quotations in United States v. Farris",
@@ -1865,14 +2441,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-896",
-      "incident_id": 896,
-      "title": "Alleged Misuse of Facial Recognition Technology by Law Enforcement Reportedly Leading to Wrongful Ar",
-      "date": "2026-06-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1165",
       "incident_id": 1165,
       "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
@@ -2025,14 +2593,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1545",
-      "incident_id": 1545,
-      "title": "Florida Police Reportedly Wrongfully Arrested Commercial Crabber Robert Dillon After Allegedly False",
-      "date": "2026-06-18",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1546",
       "incident_id": 1546,
       "title": "Google Android Earthquake Alerts System Reportedly Underestimated Kahramanmara\u015f Earthquake and Faile",
@@ -2119,14 +2679,6 @@
       "date": "2026-06-17",
       "category": "fraud",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-822",
-      "incident_id": 822,
-      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
-      "date": "2026-06-17",
-      "category": "bias",
-      "severity": "medium"
     },
     {
       "id": "AIID-882",
@@ -2650,9 +3202,9 @@
     }
   ],
   "stats": {
-    "total": 331,
-    "last7Days": 115,
-    "last30Days": 160
+    "total": 400,
+    "last7Days": 191,
+    "last30Days": 233
   },
-  "lastUpdated": "2026-09-04T04:00:18.880389+05:30"
+  "lastUpdated": "2026-09-04T09:51:00.835990+05:30"
 }
