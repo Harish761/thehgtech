@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-04T07:21:15.693170",
-  "total_incidents": 31011,
+  "last_updated": "2026-09-04T17:42:12.305032",
+  "total_incidents": 31014,
   "incidents": [
+    {
+      "id": "qilin_commission_de_la_construction_du_quebec_(ccq)",
+      "victim_name": "Commission de la construction du Quebec (CCQ)",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-04T11:30:59.887918+00:00",
+      "industry": "Government & Defense",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/6433946f17d7189c0cca58f25a824b8a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=a2710463-aa0e-4555-be9c-57188ff6434c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "gunra_blanco_&_etcheverry",
+      "victim_name": "Blanco & Etcheverry",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-09-04T06:59:19.092117+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Sector: Law Firm | Revenue: US$ 5,000,000",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "gunra_occidental",
+      "victim_name": "Occidental",
+      "threat_actor": "gunra",
+      "date_discovered": "2026-09-04T06:58:59.451329+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "Sector: Insurance | Revenue: US$ 157,000,000",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_complete_packaging_solutions",
       "victim_name": "Complete Packaging Solutions",
