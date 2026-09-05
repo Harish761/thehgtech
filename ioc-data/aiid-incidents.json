@@ -161,9 +161,33 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-161",
+      "incident_id": 161,
+      "title": "Facebook's Ad Delivery Reportedly Excluded Audience along Racial and Gender Lines",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-157",
       "incident_id": 157,
       "title": "Amazon's Monitoring System Allegedly Pushed Delivery Drivers to Prioritize Speed over Safety, Leadin",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-150",
+      "incident_id": 150,
+      "title": "Swedish Contraceptive App, Natural Cycles, Allegedly Failed to Correctly Map Menstrual Cycle",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-166",
+      "incident_id": 166,
+      "title": "Networking Platform Giggle Employs AI to Determine Users\u2019 Gender, Allegedly Excluding Transgender Wo",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -177,6 +201,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-186",
+      "incident_id": 186,
+      "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-204",
       "incident_id": 204,
       "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
@@ -185,9 +217,25 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-188",
+      "incident_id": 188,
+      "title": "Argentinian City Government Deployed Teenage-Pregnancy Predictive Algorithm Using Invasive Demograph",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-239",
       "incident_id": 239,
       "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-210",
+      "incident_id": 210,
+      "title": "Indian Political App Tek Fog Allegedly Hijacked Trends and Manipulated Public Opinion on Other Socia",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -209,12 +257,44 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-332",
+      "incident_id": 332,
+      "title": "Google Images Showed Racially Biased Results for 'Professional' Hairstyles",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-297",
+      "incident_id": 297,
+      "title": "EasyMile Self-Driving Shuttle Unexpectedly Stopped Mid-Route, Injuring a Passenger",
+      "date": "2026-09-05",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-311",
+      "incident_id": 311,
+      "title": "YouTube Auto-Moderation Reportedly Banned Women of Sex Tech Conference",
+      "date": "2026-09-05",
+      "category": "content_moderation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-355",
       "incident_id": 355,
       "title": "Uber Allegedly Wrongfully Accused Drivers of Fraud via Automated Systems",
       "date": "2026-09-05",
       "category": "fraud",
       "severity": "high"
+    },
+    {
+      "id": "AIID-400",
+      "incident_id": 400,
+      "title": "Google Search Reportedly Returned Fewer Results for Abortion Services in Rural Areas",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-354",
@@ -238,6 +318,14 @@
       "title": "Transgender Uber Drivers Mistakenly Kicked off App for Appearance Change during Gender Transitions",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-416",
+      "incident_id": 416,
+      "title": "Facebook's Job Ad Algorithm Allegedly Biased against Older and Female Workers",
+      "date": "2026-09-05",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -945,14 +1033,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-186",
-      "incident_id": 186,
-      "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-172",
       "incident_id": 172,
       "title": "NarxCare\u2019s Risk Score Model Allegedly Lacked Validation and Trained on Data with High Risk of Bias",
@@ -964,14 +1044,6 @@
       "id": "AIID-214",
       "incident_id": 214,
       "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-188",
-      "incident_id": 188,
-      "title": "Argentinian City Government Deployed Teenage-Pregnancy Predictive Algorithm Using Invasive Demograph",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -3522,9 +3594,9 @@
     }
   ],
   "stats": {
-    "total": 440,
-    "last7Days": 237,
-    "last30Days": 278
+    "total": 449,
+    "last7Days": 246,
+    "last30Days": 287
   },
-  "lastUpdated": "2026-09-05T17:18:36.374654+05:30"
+  "lastUpdated": "2026-09-05T20:35:19.767718+05:30"
 }
