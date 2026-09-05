@@ -1,11 +1,51 @@
 {
   "incidents": [
     {
+      "id": "AIID-12",
+      "incident_id": 12,
+      "title": "Common Biases of Vector Embeddings",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-10",
       "incident_id": 10,
       "title": "Kronos Scheduling Algorithm Allegedly Caused Financial Issues for Starbucks Employees",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-14",
+      "incident_id": 14,
+      "title": "Biased Sentiment Analysis",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-19",
+      "incident_id": 19,
+      "title": "Sexist and Racist Google Adsense Advertisements",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-13",
+      "incident_id": 13,
+      "title": "High-Toxicity Assessed on Text Involving Women and Minority Groups",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-18",
+      "incident_id": 18,
+      "title": "Gender Biases of Google Image Search",
+      "date": "2026-09-05",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -17,11 +57,75 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-37",
+      "incident_id": 37,
+      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-47",
+      "incident_id": 47,
+      "title": "LinkedIn Search Prefers Male Names",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-43",
+      "incident_id": 43,
+      "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-59",
+      "incident_id": 59,
+      "title": "Gender Biases in Google Translate",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-81",
+      "incident_id": 81,
+      "title": "Researchers find evidence of racial, gender, and socioeconomic bias in chest X-ray classifiers",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-77",
+      "incident_id": 77,
+      "title": "Knightscope's Park Patrol Robot Ignored Bystander Pressing Emergency Button to Alert Police about Fi",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-96",
       "incident_id": 96,
       "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-87",
+      "incident_id": 87,
+      "title": "UK passport photo checker shows bias against dark-skinned women",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-92",
+      "incident_id": 92,
+      "title": "Apple Card's Credit Assessment Algorithm Allegedly Discriminated against Women",
+      "date": "2026-09-05",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -177,6 +281,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-597",
+      "incident_id": 597,
+      "title": "Female Students at Westfield High School in New Jersey Reportedly Targeted with Deepfake Nudes",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-530",
       "incident_id": 530,
       "title": "Telegram Channels Allowed Users to Make Non-Consensual Deepfake Porn as Paid Service",
@@ -191,6 +303,38 @@
       "date": "2026-09-05",
       "category": "other",
       "severity": "critical"
+    },
+    {
+      "id": "AIID-943",
+      "incident_id": 943,
+      "title": "Nonconsensual Explicit AI-Generated Images of Up to 60 Gladstone Park Secondary College Students in ",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1342",
+      "incident_id": 1342,
+      "title": "Purported Deepfake Nude Images of Students Circulated Without Consent at Valencia Educational Instit",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1445",
+      "incident_id": 1445,
+      "title": "Lower Saxony CDU Employee Allegedly Shared Sexualized Purported Deepfake of Colleague in Internal Wh",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1560",
+      "incident_id": 1560,
+      "title": "Man in Egypt Reportedly Convicted of Using AI-Fabricated Sexual Content to Blackmail Relative",
+      "date": "2026-09-05",
+      "category": "misinformation",
+      "severity": "medium"
     },
     {
       "id": "AIID-1584",
@@ -217,12 +361,28 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1614",
+      "incident_id": 1614,
+      "title": "Two Men Allegedly Created and Distributed Purportedly AI-Generated Sexual Images of 22 Women in Sill",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1617",
       "incident_id": 1617,
       "title": "Motive AI Dashcams Allegedly Collected Truckers' Biometric Data and Built License-Plate Location Rec",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1653",
+      "incident_id": 1653,
+      "title": "Social Media Recommendation Algorithms Allegedly Repeatedly Exposed 13-Year-Old Blake Gallier to Sui",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "critical"
     },
     {
       "id": "AIID-1662",
@@ -673,27 +833,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-37",
-      "incident_id": 37,
-      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
-      "date": "2026-09-03",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-40",
       "incident_id": 40,
       "title": "COMPAS Algorithm Reportedly Performs Poorly in Crime Recidivism Prediction",
       "date": "2026-09-03",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-43",
-      "incident_id": 43,
-      "title": "St George's Hospital Medical School allegedly Automated Admissions with Discriminatory Results",
-      "date": "2026-09-03",
-      "category": "bias",
       "severity": "medium"
     },
     {
@@ -1833,14 +1977,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1653",
-      "incident_id": 1653,
-      "title": "Social Media Recommendation Algorithms Allegedly Repeatedly Exposed 13-Year-Old Blake Gallier to Sui",
-      "date": "2026-08-20",
-      "category": "other",
-      "severity": "critical"
-    },
-    {
       "id": "AIID-1649",
       "incident_id": 1649,
       "title": "Meta AI Model Reportedly Exploited Security Vulnerability in Real Third-Party Service During Cyberse",
@@ -2164,14 +2300,6 @@
       "id": "AIID-1611",
       "incident_id": 1611,
       "title": "Marrero, Louisiana, Woman Allegedly Created Purportedly AI-Generated Nude Media During Extortion Sch",
-      "date": "2026-07-30",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1614",
-      "incident_id": 1614,
-      "title": "Two Men Allegedly Created and Distributed Purportedly AI-Generated Sexual Images of 22 Women in Sill",
       "date": "2026-07-30",
       "category": "other",
       "severity": "medium"
@@ -2542,14 +2670,6 @@
       "title": "Kalibrate Fuel Pricing Allegedly Enabled California Gas Station Operators to Coordinate Higher Pump ",
       "date": "2026-06-26",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1560",
-      "incident_id": 1560,
-      "title": "Man in Egypt Reportedly Convicted of Using AI-Fabricated Sexual Content to Blackmail Relative",
-      "date": "2026-06-26",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -3402,9 +3522,9 @@
     }
   ],
   "stats": {
-    "total": 425,
-    "last7Days": 219,
-    "last30Days": 261
+    "total": 440,
+    "last7Days": 237,
+    "last30Days": 278
   },
-  "lastUpdated": "2026-09-05T09:46:35.848711+05:30"
+  "lastUpdated": "2026-09-05T17:18:36.374654+05:30"
 }
