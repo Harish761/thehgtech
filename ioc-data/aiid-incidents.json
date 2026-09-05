@@ -59,7 +59,7 @@
     {
       "id": "AIID-37",
       "incident_id": 37,
-      "title": "Amazon\u2019s Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
+      "title": "Amazon's Experimental Hiring Tool Allegedly Displayed Gender Bias in Candidate Rankings",
       "date": "2026-09-05",
       "category": "bias",
       "severity": "medium"
@@ -505,11 +505,107 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-785",
+      "incident_id": 785,
+      "title": "ESPN's AI Coverage Reportedly Overlooks Alex Morgan in Her Final Match Recap",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-797",
+      "incident_id": 797,
+      "title": "Teenager Reportedly Makes Deepfake Pornography of 50 Girls at Bacchus Marsh Grammar School in Austra",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-798",
+      "incident_id": 798,
+      "title": "Students at Australian Schools Reportedly Used AI Nudification Tools to Create Nonconsensual Sexual ",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-822",
+      "incident_id": 822,
+      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-848",
+      "incident_id": 848,
+      "title": "High School Student in C\u00f3rdoba, Argentina Accused of Using AI to Generate Explicit Images of Classma",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-873",
+      "incident_id": 873,
+      "title": "YouTube Algorithms Allegedly Amplify Eating Disorder Content to Adolescent Girls",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-874",
+      "incident_id": 874,
+      "title": "One in Six Congresswomen Have Reportedly Been Targeted by AI-Generated Nonconsensual Intimate Imager",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-888",
+      "incident_id": 888,
+      "title": "Sydney High Schooler Allegedly Generated Deepfakes of Other Students",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-916",
+      "incident_id": 916,
+      "title": "Plymouth, Massachusetts Resident Reportedly Used AI Chatbots CrushOn.ai and JanitorAI to Harass and ",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-943",
       "incident_id": 943,
       "title": "Nonconsensual Explicit AI-Generated Images of Up to 60 Gladstone Park Secondary College Students in ",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1000",
+      "incident_id": 1000,
+      "title": "Sora Video Generator Has Reportedly Been Creating Biased Human Representations Across Race, Gender, ",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1004",
+      "incident_id": 1004,
+      "title": "San Francisco City Attorney Sues Operators of AI Deepfake Pornography Websites for Violations of Sta",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1134",
+      "incident_id": 1134,
+      "title": "Reported Deepfakes of Ukrainian Deputy PM Olha Stefanishyna Allegedly Supporting Fictional Mobilizat",
+      "date": "2026-09-05",
+      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -1438,14 +1534,6 @@
       "title": "Infinite Campus AI-Driven Student Risk Model Leads to Cuts in Support for Nevada's Low-Income School",
       "date": "2026-09-03",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-822",
-      "incident_id": 822,
-      "title": "Algorithmic Bias in French Welfare System Allegedly Discriminates Against Marginalized Groups",
-      "date": "2026-09-03",
-      "category": "bias",
       "severity": "medium"
     },
     {
@@ -2905,14 +2993,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-798",
-      "incident_id": 798,
-      "title": "Students at Australian Schools Reportedly Used AI Nudification Tools to Create Nonconsensual Sexual ",
-      "date": "2026-06-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1165",
       "incident_id": 1165,
       "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
@@ -3553,14 +3633,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1134",
-      "incident_id": 1134,
-      "title": "Reported Deepfakes of Ukrainian Deputy PM Olha Stefanishyna Allegedly Supporting Fictional Mobilizat",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1202",
       "incident_id": 1202,
       "title": "Russian Disinformation Campaign Reportedly Used AI-Generated Posts and Videos to Target 2025 Moldova",
@@ -3674,9 +3746,9 @@
     }
   ],
   "stats": {
-    "total": 459,
-    "last7Days": 217,
-    "last30Days": 290
+    "total": 468,
+    "last7Days": 228,
+    "last30Days": 301
   },
-  "lastUpdated": "2026-09-06T02:07:15.533535+05:30"
+  "lastUpdated": "2026-09-06T03:32:25.706914+05:30"
 }
