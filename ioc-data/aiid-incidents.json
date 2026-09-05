@@ -337,6 +337,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-423",
+      "incident_id": 423,
+      "title": "Lensa AI's Produced Unintended Sexually Explicit or Suggestive \"Magic Avatars\" for Women",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-395",
       "incident_id": 395,
       "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
@@ -361,11 +369,43 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-438",
+      "incident_id": 438,
+      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-480",
+      "incident_id": 480,
+      "title": "Non-consensual Deepfake Porn Targeted Female Content Creators",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-496",
+      "incident_id": 496,
+      "title": "Male College Freshman Allegedly Made Porn Deepfakes Using Female Friend's Face",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-527",
       "incident_id": 527,
       "title": "Tech Companies Reportedly Influenced Gig Workers' Behaviors Using Algorithms to Vary Pay for Same Am",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-529",
+      "incident_id": 529,
+      "title": "Stable Diffusion Reportedly Exhibited Biases for Prompts Featuring Professions",
+      "date": "2026-09-05",
+      "category": "prompt_injection",
       "severity": "medium"
     },
     {
@@ -377,11 +417,43 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-617",
+      "incident_id": 617,
+      "title": "Male student allegedly used AI to generate nude photos of female classmates at a high school in Issa",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-619",
+      "incident_id": 619,
+      "title": "Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-494",
+      "incident_id": 494,
+      "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-530",
       "incident_id": 530,
       "title": "Telegram Channels Allowed Users to Make Non-Consensual Deepfake Porn as Paid Service",
       "date": "2026-09-05",
       "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-580",
+      "incident_id": 580,
+      "title": "Alleged Gender Discrimination in Facebook Job Ads Algorithm",
+      "date": "2026-09-05",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -526,14 +598,6 @@
       "title": "Facial Recognition Misidentifies Pregnant Woman Leading to False Arrest in Detroit",
       "date": "2026-09-04",
       "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-619",
-      "incident_id": 619,
-      "title": "Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters",
-      "date": "2026-09-04",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -1246,14 +1310,6 @@
       "title": "NYPD's Deployment of Facial Recognition Cameras Reportedly Reinforced Biased Policing",
       "date": "2026-09-03",
       "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-438",
-      "incident_id": 438,
-      "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
-      "date": "2026-09-03",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -3594,9 +3650,9 @@
     }
   ],
   "stats": {
-    "total": 449,
-    "last7Days": 246,
-    "last30Days": 287
+    "total": 456,
+    "last7Days": 253,
+    "last30Days": 294
   },
-  "lastUpdated": "2026-09-05T20:35:19.767718+05:30"
+  "lastUpdated": "2026-09-05T23:41:25.171296+05:30"
 }
