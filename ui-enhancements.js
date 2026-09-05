@@ -18,7 +18,6 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
         init() {
             this.createButton();
             this.bindEvents();
-            console.log('[BackToTop] ✓ Initialized');
         }
 
         createButton() {
@@ -449,7 +448,6 @@ function escapeHTMLBasic(str) { if (!str) return ''; return String(str).replace(
                     this.changelog = this.filterAndSort(data.changelog || []);
                 }
             } catch (e) {
-                console.error("Command Center fetch error:", e);
             }
         }
 

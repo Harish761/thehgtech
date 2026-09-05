@@ -1,7 +1,6 @@
 (function () {
     'use strict';
 
-    console.log('[Tabs] Script loaded');
 
     // Wait for DOM to be ready
     if (document.readyState === 'loading') {
@@ -11,7 +10,6 @@
     }
 
     function init() {
-        console.log('[Tabs] Initializing...');
         const mainContainer = document.querySelector('.main .container');
 
         if (!mainContainer) {
@@ -98,10 +96,8 @@
         // Initialize dashboard charts after DOM is ready
         try {
             if (typeof ThreatDashboard !== 'undefined') {
-                console.log('[Tabs] Loading ThreatDashboard...');
                 const dashboard = new ThreatDashboard();
                 dashboard.loadAllData().then(stats => {
-                    console.log('[Tabs] Data loaded, initializing charts...');
                     // Render leaderboard
                     const leaderboard = document.getElementById('threatLeaderboard');
                     if (leaderboard && stats.topMalware) {
@@ -354,8 +350,7 @@
             const data = await response.json();
             renderRansomwareData(data);
 
-            console.log('✅ Ransomware data loaded:', data.total_groups, 'groups');
-        } catch (error) {
+            } catch (error) {
             console.error('❌ Error loading ransomware data:', error);
             renderRansomwareError();
         }
@@ -615,13 +610,11 @@
     function initializeCharts(stats, dashboard) {
         // Wait for Chart.js to load if it hasn't yet, with a max timeout
         if (typeof Chart === 'undefined') {
-            console.warn('[Tabs] Chart.js not loaded yet, retrying in 100ms...');
             let attempts = 0;
             const checkChart = setInterval(() => {
                 attempts++;
                 if (typeof Chart !== 'undefined') {
                     clearInterval(checkChart);
-                    console.log('[Tabs] Chart.js loaded, initializing charts now.');
                     initializeCharts(stats, dashboard);
                 } else if (attempts > 50) { // 5 seconds max
                     clearInterval(checkChart);

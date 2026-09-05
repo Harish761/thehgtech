@@ -19,7 +19,6 @@
             this.bindEvents();
             this.injectStyles();
             this.createHelpModal();
-            console.log('[KeyboardShortcuts] ✓ Initialized');
         }
 
         registerShortcuts() {

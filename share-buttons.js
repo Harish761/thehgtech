@@ -21,7 +21,6 @@ class ShareButtons {
 
     setup() {
         this.injectShareButtons();
-        console.log('[ShareButtons] ✓ Initialized');
     }
 
     injectStyles() {
@@ -323,7 +322,6 @@ class ShareButtons {
                     icon.className = 'fas fa-link';
                 }, 2000);
             } catch (err) {
-                console.error('Failed to copy:', err);
                 if (window.toastSystem) {
                     window.toastSystem.error('Failed to copy link');
                 }
@@ -339,7 +337,6 @@ class ShareButtons {
                 return true;
             } catch (err) {
                 if (err.name !== 'AbortError') {
-                    console.error('Share failed:', err);
                 }
                 return false;
             }

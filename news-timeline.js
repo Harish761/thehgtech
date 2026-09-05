@@ -290,7 +290,6 @@
         const item = items[index];
 
         if (!item) {
-            console.error('News item not found:', index, type);
             return;
         }
 
@@ -404,7 +403,6 @@
      */
     function initNewsTimeline() {
         if (typeof websiteContent === 'undefined') {
-            console.warn('websiteContent not loaded yet');
             return;
         }
 
@@ -418,7 +416,6 @@
             renderNewsTimeline('aiNewsPremium', websiteContent.aiShorts, 'ai');
         }
 
-        console.log('✅ News Timeline initialized');
     }
 
     // Expose functions to global scope

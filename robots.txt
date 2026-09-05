@@ -7,7 +7,6 @@ Disallow: /*.py$
 Disallow: /venv/
 Disallow: /__pycache__/
 Disallow: /*.backup
-Disallow: /admin-articles.html
 Disallow: /mobile_backup/
 Disallow: /.git/
 # Block dev-only JSON data files (not the live data feeds)

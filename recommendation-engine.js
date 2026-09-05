@@ -25,7 +25,6 @@ class RecommendationEngine {
             this.renderWidgets();
         }
 
-        console.log('[RecommendationEngine] ✓ Initialized');
     }
 
     injectStyles() {

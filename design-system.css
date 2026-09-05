@@ -580,3 +580,22 @@ body.light-mode .modal-content, body.light-mode .cve-modal-content, body.light-m
     border-top: 1px solid rgba(255, 255, 255, 0.8) !important;
     box-shadow: 0 32px 64px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.8) !important;
 }
+
+/* ========== ACCESSIBILITY: Reduced Motion ========== */
+/* Respects the OS-level "Reduce Motion" preference for users with vestibular disorders */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    /* Preserve opacity transitions for visibility/focus states */
+    .skip-link,
+    [aria-hidden="true"] {
+        transition: none !important;
+    }
+}

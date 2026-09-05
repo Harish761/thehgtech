@@ -75,7 +75,6 @@ function fallbackCopyLink(url) {
         document.execCommand('copy');
         showCopyFeedback();
     } catch (err) {
-        console.error('Failed to copy:', err);
         alert('Failed to copy link. Please copy manually: ' + url);
     }
 

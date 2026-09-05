@@ -60,7 +60,6 @@
     # Basic Security Headers
     Header always set X-Content-Type-Options "nosniff"
     Header always set X-Frame-Options "DENY"
-    Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
     
     # HSTS - Force HTTPS (1 year, include subdomains, preload-ready)
@@ -95,3 +94,14 @@
 
 # Custom 404 Error Page
 ErrorDocument 404 /404.html
+
+# ========== BLOCK DEBUG & BUILD SCRIPTS FROM WEB ACCESS ==========
+# These files are development tools — they must never be publicly accessible
+<FilesMatch "\.(py|sh)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "^(check_|debug_|eval_|test-|test_|find_|fix_|show_|dump_|extract_|refine_|create_|update_|runs)">
+    Require all denied
+</FilesMatch>
+
