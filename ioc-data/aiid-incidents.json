@@ -457,12 +457,52 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-699",
+      "incident_id": 699,
+      "title": "VA Suicide Prevention Algorithm REACH VET Reportedly Prioritizes Men Over Women Veterans",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-716",
       "incident_id": 716,
       "title": "Algorithmic Staffing Failures Linked to Resident Deaths at Leading Assisted-Living Chain Brookdale",
       "date": "2026-09-05",
       "category": "other",
       "severity": "critical"
+    },
+    {
+      "id": "AIID-747",
+      "incident_id": 747,
+      "title": "Fatalities Reportedly Occur Despite VioG\u00e9n Algorithm's Low or Negligible Risk Scores",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-754",
+      "incident_id": 754,
+      "title": "Female Politicians in the United Kingdom Reportedly Victimized by Purported Deepfake Pornography",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-777",
+      "incident_id": 777,
+      "title": "South Korea Reportedly Experienced a Surge of Explicit Deepfake Pornography",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-782",
+      "incident_id": 782,
+      "title": "AI 'Nudify' Apps Used as Tools for Blackmail and Extortion",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-943",
@@ -551,6 +591,14 @@
       "date": "2026-09-05",
       "category": "other",
       "severity": "critical"
+    },
+    {
+      "id": "AIID-1668",
+      "incident_id": 1668,
+      "title": "OpenAI-Linked AI Agents Reportedly Used German Programming Wiki DSEWiki for Coordination and Restric",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-1671",
@@ -924,14 +972,6 @@
       "id": "AIID-1654",
       "incident_id": 1654,
       "title": "AI Chatbot Reportedly Recommended Herbicide Treatment Linked to Loss of About 25 Acres of Sesame in ",
-      "date": "2026-09-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1668",
-      "incident_id": 1668,
-      "title": "OpenAI-Linked AI Agents Reportedly Used German Programming Wiki DSEWiki for Coordination and Restric",
       "date": "2026-09-04",
       "category": "other",
       "severity": "medium"
@@ -1385,25 +1425,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-699",
-      "incident_id": 699,
-      "title": "VA Suicide Prevention Algorithm REACH VET Reportedly Prioritizes Men Over Women Veterans",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-733",
       "incident_id": 733,
       "title": "Auto Insurers Allegedly Are Surreptitiously Collecting and Scoring Driver Data",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-747",
-      "incident_id": 747,
-      "title": "Fatalities Reportedly Occur Despite VioG\u00e9n Algorithm's Low or Negligible Risk Scores",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -3650,9 +3674,9 @@
     }
   ],
   "stats": {
-    "total": 456,
-    "last7Days": 253,
-    "last30Days": 294
+    "total": 459,
+    "last7Days": 217,
+    "last30Days": 290
   },
-  "lastUpdated": "2026-09-05T23:41:25.171296+05:30"
+  "lastUpdated": "2026-09-06T02:07:15.533535+05:30"
 }
