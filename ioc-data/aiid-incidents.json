@@ -1,6 +1,262 @@
 {
   "incidents": [
     {
+      "id": "AIID-10",
+      "incident_id": 10,
+      "title": "Kronos Scheduling Algorithm Allegedly Caused Financial Issues for Starbucks Employees",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-9",
+      "incident_id": 9,
+      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-96",
+      "incident_id": 96,
+      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-94",
+      "incident_id": 94,
+      "title": "Court Rules Deliveroo Used 'Discriminatory' Algorithm",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-111",
+      "incident_id": 111,
+      "title": "Amazon Flex Drivers Allegedly Fired via Automated Employee Evaluations",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-116",
+      "incident_id": 116,
+      "title": "Amazon's AI Cameras Incorrectly Penalized Delivery Drivers for Mistakes They Did Not Make",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-119",
+      "incident_id": 119,
+      "title": "Xsolla Employees Fired by CEO Allegedly via Big Data Analytics of Work Activities",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-157",
+      "incident_id": 157,
+      "title": "Amazon's Monitoring System Allegedly Pushed Delivery Drivers to Prioritize Speed over Safety, Leadin",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-203",
+      "incident_id": 203,
+      "title": "Uber Launched Opaque Algorithm That Changes Drivers' Payments in the US",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-204",
+      "incident_id": 204,
+      "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-239",
+      "incident_id": 239,
+      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-272",
+      "incident_id": 272,
+      "title": "Grab Tweaked Matchmaking Algorithm, Providing Preferential Treatment to Drivers Registered with Affi",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-265",
+      "incident_id": 265,
+      "title": "Black Uber Eats Driver Allegedly Subjected to Excessive Photo Checks and Dismissed via FRT Results",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-355",
+      "incident_id": 355,
+      "title": "Uber Allegedly Wrongfully Accused Drivers of Fraud via Automated Systems",
+      "date": "2026-09-05",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-354",
+      "incident_id": 354,
+      "title": "Uber Allegedly Violated GDPR by Failing to Provide Sufficient Notice on Automated Profiling for Driv",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-384",
+      "incident_id": 384,
+      "title": "Glovo Driver in Italy Fired via Automated Email after Being Killed in Accident",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-396",
+      "incident_id": 396,
+      "title": "Transgender Uber Drivers Mistakenly Kicked off App for Appearance Change during Gender Transitions",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-418",
+      "incident_id": 418,
+      "title": "Uber Locked Indian Drivers out of Accounts Allegedly Due to Facial Recognition Fails",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-395",
+      "incident_id": 395,
+      "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-382",
+      "incident_id": 382,
+      "title": "Instagram's Exposure of Harmful Content Allegedly Contributed to Teenage Girl's Suicide",
+      "date": "2026-09-05",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-386",
+      "incident_id": 386,
+      "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management",
+      "date": "2026-09-05",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-527",
+      "incident_id": 527,
+      "title": "Tech Companies Reportedly Influenced Gig Workers' Behaviors Using Algorithms to Vary Pay for Same Am",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-530",
+      "incident_id": 530,
+      "title": "Telegram Channels Allowed Users to Make Non-Consensual Deepfake Porn as Paid Service",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-716",
+      "incident_id": 716,
+      "title": "Algorithmic Staffing Failures Linked to Resident Deaths at Leading Assisted-Living Chain Brookdale",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1584",
+      "incident_id": 1584,
+      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1588",
+      "incident_id": 1588,
+      "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
+      "date": "2026-09-05",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1589",
+      "incident_id": 1589,
+      "title": "Purportedly AI-Powered 007TG Platform Reportedly Used by Scam Networks Linked to $75 Million in Proc",
+      "date": "2026-09-05",
+      "category": "fraud",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1617",
+      "incident_id": 1617,
+      "title": "Motive AI Dashcams Allegedly Collected Truckers' Biometric Data and Built License-Plate Location Rec",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1662",
+      "incident_id": 1662,
+      "title": "Pizza Hut Franchisee Chaac Pizza Northeast Alleged Dragontail AI System Contributed to Delivery Dela",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1671",
+      "incident_id": 1671,
+      "title": "OpenAI GPT-5.6 Sol Agent Reportedly Deleted Most Files in AI Startup Founder's Mac Home Directory",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1672",
+      "incident_id": 1672,
+      "title": "OpenAI GPT-5.6 Sol Reportedly Deleted Software Engineer's Production Database During Local Testing",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1674",
+      "incident_id": 1674,
+      "title": "Instinct AI Personal Assistant Reportedly Sent Email From Moxxie Ventures Founder's Account Without ",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-518",
       "incident_id": 518,
       "title": "New York Detective Reportedly Misused Woody Harrelson's Face to Perform Face Recognition Search",
@@ -377,17 +633,41 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-11",
-      "incident_id": 11,
-      "title": "Northpointe Risk Models",
-      "date": "2026-09-03",
+      "id": "AIID-1670",
+      "incident_id": 1670,
+      "title": "Threat Actor Reportedly Used LLM Agent to Exfiltrate Internal Database After Compromising marimo Pyt",
+      "date": "2026-09-04",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-9",
-      "incident_id": 9,
-      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "id": "AIID-1673",
+      "incident_id": 1673,
+      "title": "Google Gemini 3.5 Coding Agent Reportedly Caused Production Portal Outage and Generated Fabricated R",
+      "date": "2026-09-04",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1675",
+      "incident_id": 1675,
+      "title": "Instinct AI Personal Assistant Reportedly Summarized an AI Product Founder's Retained Emails After G",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1676",
+      "incident_id": 1676,
+      "title": "Anthropic Claude Opus 5 Coding Agent Reportedly Reset a Live Supabase Production Database During Pri",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-11",
+      "incident_id": 11,
+      "title": "Northpointe Risk Models",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -436,14 +716,6 @@
       "id": "AIID-76",
       "incident_id": 76,
       "title": "Buenos Aires Government Reportedly Used Children's Personal Data in Facial Recognition System for Fu",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-96",
-      "incident_id": 96,
-      "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -545,14 +817,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-204",
-      "incident_id": 204,
-      "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-214",
       "incident_id": 214,
       "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
@@ -582,14 +846,6 @@
       "title": "Chinese Insurer Ping An Employed Facial Recognition to Determine Customers\u2019 Untrustworthiness, Which",
       "date": "2026-09-03",
       "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-239",
-      "incident_id": 239,
-      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
-      "date": "2026-09-03",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -945,14 +1201,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1584",
-      "incident_id": 1584,
-      "title": "Meta's AI-Assisted Layoff Process Allegedly Disproportionately Selected Employees on Protected Leave",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1631",
       "incident_id": 1631,
       "title": "Zoetis Vetscan Imagyst Allegedly Misclassified Dog's Cancerous Tumor, Leading to Second Surgery and ",
@@ -964,14 +1212,6 @@
       "id": "AIID-109",
       "incident_id": 109,
       "title": "PimEyes's Facial Recognition AI Allegedly Lacked Safeguards to Prevent Itself from Being Abused",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-119",
-      "incident_id": 119,
-      "title": "Xsolla Employees Fired by CEO Allegedly via Big Data Analytics of Work Activities",
       "date": "2026-08-31",
       "category": "other",
       "severity": "medium"
@@ -1089,14 +1329,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-395",
-      "incident_id": 395,
-      "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-357",
       "incident_id": 357,
       "title": "GPT-2 Reportedly Reproduced Personal Data from Its Training Data",
@@ -1209,14 +1441,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-10",
-      "incident_id": 10,
-      "title": "Kronos Scheduling Algorithm Allegedly Caused Financial Issues for Starbucks Employees",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-95",
       "incident_id": 95,
       "title": "Job Screening Service Halts Facial Analysis of Applicants",
@@ -1246,14 +1470,6 @@
       "title": "Southwest Airlines Crew Scheduling Solver Degenerates Flight Network",
       "date": "2026-08-29",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-386",
-      "incident_id": 386,
-      "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management",
-      "date": "2026-08-29",
-      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1519,14 +1735,6 @@
       "date": "2026-08-29",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1662",
-      "incident_id": 1662,
-      "title": "Pizza Hut Franchisee Chaac Pizza Northeast Alleged Dragontail AI System Contributed to Delivery Dela",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "critical"
     },
     {
       "id": "AIID-1663",
@@ -1913,14 +2121,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1617",
-      "incident_id": 1617,
-      "title": "Motive AI Dashcams Allegedly Collected Truckers' Biometric Data and Built License-Plate Location Rec",
-      "date": "2026-07-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1618",
       "incident_id": 1618,
       "title": "Apartment Owner and Manager UDR Allegedly Used RealPage Algorithms to Set San Diego Rents in Keller ",
@@ -2097,14 +2297,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1588",
-      "incident_id": 1588,
-      "title": "Purportedly AI-Powered KT Platform Reportedly Used in Forced Scamming Operation Involving Trafficked",
-      "date": "2026-07-16",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1592",
       "incident_id": 1592,
       "title": "Purportedly AI-Generated Images Reportedly Used During Four-Year Catfishing Campaign Targeting Welsh",
@@ -2135,14 +2327,6 @@
       "date": "2026-07-15",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1589",
-      "incident_id": 1589,
-      "title": "Purportedly AI-Powered 007TG Platform Reportedly Used by Scam Networks Linked to $75 Million in Proc",
-      "date": "2026-07-15",
-      "category": "fraud",
-      "severity": "critical"
     },
     {
       "id": "AIID-1590",
@@ -3218,9 +3402,9 @@
     }
   ],
   "stats": {
-    "total": 402,
-    "last7Days": 193,
-    "last30Days": 235
+    "total": 425,
+    "last7Days": 219,
+    "last30Days": 261
   },
-  "lastUpdated": "2026-09-05T03:49:12.026634+05:30"
+  "lastUpdated": "2026-09-05T09:46:35.848711+05:30"
 }
