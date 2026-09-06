@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-09-06T03:15:20.068177",
+  "last_updated": "2026-09-06T15:01:13.336614",
   "period": "Last 7 days",
-  "total_groups": 45,
-  "total_victims": 285,
+  "total_groups": 46,
+  "total_victims": 281,
   "groups": [
     {
       "name": "Qilin",
-      "count": 33,
+      "count": 30,
       "victims": [
         {
           "name": "Philippine Ports Authority",
@@ -97,7 +97,7 @@
     },
     {
       "name": "Krybit",
-      "count": 30,
+      "count": 28,
       "victims": [
         {
           "name": "ligacancerguate.org",
@@ -165,7 +165,7 @@
         "Education",
         "Healthcare",
         "Hospitality",
-        "Manufacturing"
+        "Other"
       ],
       "countries": [
         "BT",
@@ -178,7 +178,7 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        28,
+        26,
         0,
         2,
         0,
@@ -358,97 +358,6 @@
       ]
     },
     {
-      "name": "Direwolf",
-      "count": 16,
-      "victims": [
-        {
-          "name": "Wolfram Research",
-          "date": "2026-09-04T17:55:01.272504+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/121",
-          "discovered_date": "2026-09-04T17:55:01.272504+00:00"
-        },
-        {
-          "name": "Cartrack Holdings",
-          "date": "2026-09-02T17:53:21.581325+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/120",
-          "discovered_date": "2026-09-02T17:53:21.581325+00:00"
-        },
-        {
-          "name": "PTT Oil and Retail Business",
-          "date": "2026-09-02T16:54:26.923730+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/119",
-          "discovered_date": "2026-09-02T16:54:26.923730+00:00"
-        },
-        {
-          "name": "Oportunidados",
-          "date": "2026-09-01T16:25:03.194416+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/118",
-          "discovered_date": "2026-09-01T16:25:03.194416+00:00"
-        },
-        {
-          "name": "PT Intraco Penta Tbk",
-          "date": "2026-09-01T15:53:54.238628+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/117",
-          "discovered_date": "2026-09-01T15:53:54.238628+00:00"
-        },
-        {
-          "name": "Honeycomb Programs Inc",
-          "date": "2026-09-01T15:54:31.468817+00:00",
-          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/116",
-          "discovered_date": "2026-09-01T15:54:31.468817+00:00"
-        },
-        {
-          "name": "Mission Pet Health",
-          "date": "2026-09-05T21:54:20+00:00",
-          "url": "https://www.ransomware.live/id/TWlzc2lvbiBQZXQgSGVhbHRoQGRpcmV3b2xm",
-          "discovered_date": "2026-09-05T21:54:20+00:00"
-        },
-        {
-          "name": "Wolfram Research",
-          "date": "2026-09-04T17:55:01+00:00",
-          "url": "https://www.ransomware.live/id/V29sZnJhbSBSZXNlYXJjaEBkaXJld29sZg==",
-          "discovered_date": "2026-09-04T17:55:01+00:00"
-        },
-        {
-          "name": "Cartrack Holdings",
-          "date": "2026-09-02T17:53:21+00:00",
-          "url": "https://www.ransomware.live/id/Q2FydHJhY2sgSG9sZGluZ3NAZGlyZXdvbGY=",
-          "discovered_date": "2026-09-02T17:53:21+00:00"
-        },
-        {
-          "name": "PTT Oil and Retail Business",
-          "date": "2026-09-02T16:54:26+00:00",
-          "url": "https://www.ransomware.live/id/UFRUIE9pbCBhbmQgUmV0YWlsIEJ1c2luZXNzQGRpcmV3b2xm",
-          "discovered_date": "2026-09-02T16:54:26+00:00"
-        }
-      ],
-      "industries": [
-        "Energy & Utilities",
-        "Manufacturing",
-        "Not Found",
-        "Other",
-        "Technology"
-      ],
-      "countries": [
-        "BR",
-        "CL",
-        "ID",
-        "SE",
-        "TH"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        6,
-        4,
-        0,
-        2,
-        1,
-        0
-      ]
-    },
-    {
       "name": "Akira",
       "count": 16,
       "victims": [
@@ -535,6 +444,97 @@
         4,
         0,
         0
+      ]
+    },
+    {
+      "name": "Direwolf",
+      "count": 15,
+      "victims": [
+        {
+          "name": "Mission Pet Health",
+          "date": "2026-09-05T21:54:20.573912+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/122",
+          "discovered_date": "2026-09-05T21:54:20.573912+00:00"
+        },
+        {
+          "name": "Wolfram Research",
+          "date": "2026-09-04T17:55:01.272504+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/121",
+          "discovered_date": "2026-09-04T17:55:01.272504+00:00"
+        },
+        {
+          "name": "Cartrack Holdings",
+          "date": "2026-09-02T17:53:21.581325+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/120",
+          "discovered_date": "2026-09-02T17:53:21.581325+00:00"
+        },
+        {
+          "name": "PTT Oil and Retail Business",
+          "date": "2026-09-02T16:54:26.923730+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/119",
+          "discovered_date": "2026-09-02T16:54:26.923730+00:00"
+        },
+        {
+          "name": "Oportunidados",
+          "date": "2026-09-01T16:25:03.194416+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/118",
+          "discovered_date": "2026-09-01T16:25:03.194416+00:00"
+        },
+        {
+          "name": "PT Intraco Penta Tbk",
+          "date": "2026-09-01T15:53:54.238628+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/117",
+          "discovered_date": "2026-09-01T15:53:54.238628+00:00"
+        },
+        {
+          "name": "Honeycomb Programs Inc",
+          "date": "2026-09-01T15:54:31.468817+00:00",
+          "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/116",
+          "discovered_date": "2026-09-01T15:54:31.468817+00:00"
+        },
+        {
+          "name": "myLaurel",
+          "date": "2026-09-06T11:53:36+00:00",
+          "url": "https://www.ransomware.live/id/bXlMYXVyZWxAZGlyZXdvbGY=",
+          "discovered_date": "2026-09-06T11:53:36+00:00"
+        },
+        {
+          "name": "Mission Pet Health",
+          "date": "2026-09-05T21:54:20+00:00",
+          "url": "https://www.ransomware.live/id/TWlzc2lvbiBQZXQgSGVhbHRoQGRpcmV3b2xm",
+          "discovered_date": "2026-09-05T21:54:20+00:00"
+        },
+        {
+          "name": "Wolfram Research",
+          "date": "2026-09-04T17:55:01+00:00",
+          "url": "https://www.ransomware.live/id/V29sZnJhbSBSZXNlYXJjaEBkaXJld29sZg==",
+          "discovered_date": "2026-09-04T17:55:01+00:00"
+        }
+      ],
+      "industries": [
+        "Energy & Utilities",
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Other"
+      ],
+      "countries": [
+        "BR",
+        "ID",
+        "TH",
+        "US",
+        "ZA"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        6,
+        4,
+        0,
+        2,
+        2,
+        1
       ]
     },
     {
@@ -1332,6 +1332,57 @@
       ]
     },
     {
+      "name": "Panzer",
+      "count": 4,
+      "victims": [
+        {
+          "name": "Hochschule Heilbronn Bildungscampus",
+          "date": "2026-09-04T00:51:09.295624+00:00",
+          "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/hochschule-heilbronn-bildungscampus",
+          "discovered_date": "2026-09-04T00:51:09.295624+00:00"
+        },
+        {
+          "name": "Dinas Komunikasi dan Informatika",
+          "date": "2026-09-03T11:51:28.146802+00:00",
+          "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/dinas-komunikasi-dan-informatika",
+          "discovered_date": "2026-09-03T11:51:28.146802+00:00"
+        },
+        {
+          "name": "KHALED ALFAGIH ENGINEERING CONSULTANCY",
+          "date": "2026-09-06T12:22:23+00:00",
+          "url": "https://www.ransomware.live/id/S0hBTEVEIEFMRkFHSUggRU5HSU5FRVJJTkcgQ09OU1VMVEFOQ1lAUGFuemVy",
+          "discovered_date": "2026-09-06T12:22:23+00:00"
+        },
+        {
+          "name": "Edacentrum",
+          "date": "2026-09-06T10:51:32+00:00",
+          "url": "https://www.ransomware.live/id/RWRhY2VudHJ1bUBQYW56ZXI=",
+          "discovered_date": "2026-09-06T10:51:32+00:00"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Government & Defense"
+      ],
+      "countries": [
+        "DE",
+        "ID",
+        "SA",
+        "SE"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2
+      ]
+    },
+    {
       "name": "Insomnia",
       "count": 4,
       "victims": [
@@ -1634,45 +1685,6 @@
       ]
     },
     {
-      "name": "Falcon",
-      "count": 3,
-      "victims": [
-        {
-          "name": "Hayward Holdings",
-          "date": "2026-08-31T15:22:09+00:00",
-          "url": "https://www.ransomware.live/id/SGF5d2FyZCBIb2xkaW5nc0BGYWxjb24=",
-          "discovered_date": "2026-08-31T15:22:09+00:00"
-        },
-        {
-          "name": "Globus Medical",
-          "date": "2026-08-30T14:29:39+00:00",
-          "url": "https://www.ransomware.live/id/R2xvYnVzIE1lZGljYWxARmFsY29u",
-          "discovered_date": "2026-08-30T14:29:39+00:00"
-        },
-        {
-          "name": "DistributionNOW (DNOW Inc.)",
-          "date": "2026-08-30T14:29:18+00:00",
-          "url": "https://www.ransomware.live/id/RGlzdHJpYnV0aW9uTk9XIChETk9XIEluYy4pQEZhbGNvbg==",
-          "discovered_date": "2026-08-30T14:29:18+00:00"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    {
       "name": "Zawoo",
       "count": 3,
       "victims": [
@@ -1714,6 +1726,41 @@
       ]
     },
     {
+      "name": "Kazu",
+      "count": 2,
+      "victims": [
+        {
+          "name": "Spirit Cultural Exchange - US",
+          "date": "2026-09-05T21:29:42.693866+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T21:29:42.693866+00:00"
+        },
+        {
+          "name": "Spirit Cultural Exchange - US",
+          "date": "2026-09-05T21:29:42+00:00",
+          "url": "https://www.ransomware.live/id/U3Bpcml0IEN1bHR1cmFsIEV4Y2hhbmdlIC0gVVNAa2F6dQ==",
+          "discovered_date": "2026-09-05T21:29:42+00:00"
+        }
+      ],
+      "industries": [
+        "Education"
+      ],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ]
+    },
+    {
       "name": "Emperador",
       "count": 2,
       "victims": [
@@ -1745,43 +1792,6 @@
         0,
         0,
         2,
-        0
-      ]
-    },
-    {
-      "name": "Panzer",
-      "count": 2,
-      "victims": [
-        {
-          "name": "Hochschule Heilbronn Bildungscampus",
-          "date": "2026-09-04T00:51:09.295624+00:00",
-          "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/hochschule-heilbronn-bildungscampus",
-          "discovered_date": "2026-09-04T00:51:09.295624+00:00"
-        },
-        {
-          "name": "Dinas Komunikasi dan Informatika",
-          "date": "2026-09-03T11:51:28.146802+00:00",
-          "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/dinas-komunikasi-dan-informatika",
-          "discovered_date": "2026-09-03T11:51:28.146802+00:00"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Government & Defense"
-      ],
-      "countries": [
-        "DE",
-        "ID"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        1,
-        1,
-        0,
         0
       ]
     },
@@ -2136,14 +2146,14 @@
       ]
     },
     {
-      "name": "Kazu",
+      "name": "Chaos",
       "count": 1,
       "victims": [
         {
-          "name": "Spirit Cultural Exchange - US",
-          "date": "2026-09-05T21:29:42+00:00",
-          "url": "https://www.ransomware.live/id/U3Bpcml0IEN1bHR1cmFsIEV4Y2hhbmdlIC0gVVNAa2F6dQ==",
-          "discovered_date": "2026-09-05T21:29:42+00:00"
+          "name": "evergenbio.com",
+          "date": "2026-09-06T13:25:44+00:00",
+          "url": "https://www.ransomware.live/id/ZXZlcmdlbmJpby5jb21AY2hhb3M=",
+          "discovered_date": "2026-09-06T13:25:44+00:00"
         }
       ],
       "industries": [],
@@ -2158,8 +2168,8 @@
         0,
         0,
         0,
-        1,
-        0
+        0,
+        1
       ]
     },
     {
@@ -2279,6 +2289,33 @@
           "date": "2026-08-31T15:57:55+00:00",
           "url": "https://www.ransomware.live/id/U3VwZXIgU3lzdGVtcyBJbmNAaW50ZXJsb2Nr",
           "discovered_date": "2026-08-31T15:57:55+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Falcon",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Hayward Holdings",
+          "date": "2026-08-31T15:22:09+00:00",
+          "url": "https://www.ransomware.live/id/SGF5d2FyZCBIb2xkaW5nc0BGYWxjb24=",
+          "discovered_date": "2026-08-31T15:22:09+00:00"
         }
       ],
       "industries": [],
