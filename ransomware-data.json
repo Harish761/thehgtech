@@ -1,9 +1,100 @@
 {
-  "last_updated": "2026-09-05T14:42:18.843613",
+  "last_updated": "2026-09-06T03:15:20.068177",
   "period": "Last 7 days",
-  "total_groups": 44,
+  "total_groups": 45,
   "total_victims": 285,
   "groups": [
+    {
+      "name": "Qilin",
+      "count": 33,
+      "victims": [
+        {
+          "name": "Philippine Ports Authority",
+          "date": "2026-09-05T13:46:22.001080+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=65f2d9fb-d508-4c18-84e1-14defac537bb",
+          "discovered_date": "2026-09-05T13:46:22.001080+00:00"
+        },
+        {
+          "name": "Bauman Law Group",
+          "date": "2026-09-05T13:45:42.996623+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=e46fa1b8-8412-4232-9d35-bec750d2f148",
+          "discovered_date": "2026-09-05T13:45:42.996623+00:00"
+        },
+        {
+          "name": "G&S Technologies",
+          "date": "2026-09-05T11:30:09.498775+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=443343d0-78e2-4240-833c-478a6c9bc3c2",
+          "discovered_date": "2026-09-05T11:30:09.498775+00:00"
+        },
+        {
+          "name": "Nolan Consulting Group",
+          "date": "2026-09-05T11:29:38.310374+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=407b8f19-2224-49bc-8b77-b75fc879d2eb",
+          "discovered_date": "2026-09-05T11:29:38.310374+00:00"
+        },
+        {
+          "name": "Colonial Hyundai",
+          "date": "2026-09-05T11:29:05.259581+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=05e13c6e-47a3-4022-abf1-06eae70f1662",
+          "discovered_date": "2026-09-05T11:29:05.259581+00:00"
+        },
+        {
+          "name": "The Big Table",
+          "date": "2026-09-05T11:28:34.617597+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=58349bee-bd7c-491c-ae26-f8d92e517b40",
+          "discovered_date": "2026-09-05T11:28:34.617597+00:00"
+        },
+        {
+          "name": "Jouvet SAS",
+          "date": "2026-09-05T11:30:41.668251+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=ee0464c8-913c-4fec-bf54-04737c76b065",
+          "discovered_date": "2026-09-05T11:30:41.668251+00:00"
+        },
+        {
+          "name": "AP CAPITAL PARTNERS LIMITED",
+          "date": "2026-09-04T14:32:00.090393+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=1494ea59-5072-4eaa-a7ec-92aa902485ad",
+          "discovered_date": "2026-09-04T14:32:00.090393+00:00"
+        },
+        {
+          "name": "Commission de la construction du Quebec (CCQ)",
+          "date": "2026-09-04T11:30:59.887918+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=a2710463-aa0e-4555-be9c-57188ff6434c",
+          "discovered_date": "2026-09-04T11:30:59.887918+00:00"
+        },
+        {
+          "name": "Complete Packaging Solutions",
+          "date": "2026-09-04T01:31:29.000633+00:00",
+          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=adec1c55-2d8f-4001-b107-5bc6e3433690",
+          "discovered_date": "2026-09-04T01:31:29.000633+00:00"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Energy & Utilities",
+        "Financial Services",
+        "Government & Defense",
+        "Hospitality"
+      ],
+      "countries": [
+        "AR",
+        "CA",
+        "CL",
+        "FR",
+        "GB"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        2,
+        1,
+        4,
+        0,
+        8,
+        14,
+        0
+      ]
+    },
     {
       "name": "Krybit",
       "count": 30,
@@ -87,282 +178,11 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
-        0,
         28,
         0,
         2,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Qilin",
-      "count": 27,
-      "victims": [
-        {
-          "name": "AP CAPITAL PARTNERS LIMITED",
-          "date": "2026-09-04T14:32:00.090393+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=1494ea59-5072-4eaa-a7ec-92aa902485ad",
-          "discovered_date": "2026-09-04T14:32:00.090393+00:00"
-        },
-        {
-          "name": "Commission de la construction du Quebec (CCQ)",
-          "date": "2026-09-04T11:30:59.887918+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=a2710463-aa0e-4555-be9c-57188ff6434c",
-          "discovered_date": "2026-09-04T11:30:59.887918+00:00"
-        },
-        {
-          "name": "Complete Packaging Solutions",
-          "date": "2026-09-04T01:31:29.000633+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=adec1c55-2d8f-4001-b107-5bc6e3433690",
-          "discovered_date": "2026-09-04T01:31:29.000633+00:00"
-        },
-        {
-          "name": "Tanner",
-          "date": "2026-09-04T01:30:43.737853+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=285a4356-5f48-45b3-b1ce-a250aab638a8",
-          "discovered_date": "2026-09-04T01:30:43.737853+00:00"
-        },
-        {
-          "name": "Uak University",
-          "date": "2026-09-02T13:05:54.656094+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=759965bf-44b5-4772-93e8-cbd8e8be702b",
-          "discovered_date": "2026-09-02T13:05:54.656094+00:00"
-        },
-        {
-          "name": "Grayson Rural Electric Cooperative",
-          "date": "2026-09-02T05:01:37.576150+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=678d1dd9-022a-4521-8317-67e56329d10e",
-          "discovered_date": "2026-09-02T05:01:37.576150+00:00"
-        },
-        {
-          "name": "Commission de la construction du Quebec",
-          "date": "2026-09-01T03:57:10.128191+00:00",
-          "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=bb124a20-c23d-4d26-a952-fefc3b6d6fc2",
-          "discovered_date": "2026-09-01T03:57:10.128191+00:00"
-        },
-        {
-          "name": "Philippine Ports Authority",
-          "date": "2026-09-05T13:46:22+00:00",
-          "url": "https://www.ransomware.live/id/UGhpbGlwcGluZSBQb3J0cyBBdXRob3JpdHlAcWlsaW4=",
-          "discovered_date": "2026-09-05T13:46:22+00:00"
-        },
-        {
-          "name": "Bauman Law Group",
-          "date": "2026-09-05T13:45:42+00:00",
-          "url": "https://www.ransomware.live/id/QmF1bWFuIExhdyBHcm91cEBxaWxpbg==",
-          "discovered_date": "2026-09-05T13:45:42+00:00"
-        },
-        {
-          "name": "Jouvet SAS",
-          "date": "2026-09-05T11:30:41+00:00",
-          "url": "https://www.ransomware.live/id/Sm91dmV0IFNBU0BxaWxpbg==",
-          "discovered_date": "2026-09-05T11:30:41+00:00"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Energy & Utilities",
-        "Financial Services",
-        "Government & Defense",
-        "Manufacturing"
-      ],
-      "countries": [
-        "AR",
-        "CA",
-        "CL",
-        "FR",
-        "GB"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        4,
-        2,
-        2,
-        4,
         0,
-        8,
-        7
-      ]
-    },
-    {
-      "name": "Incransom",
-      "count": 21,
-      "victims": [
-        {
-          "name": "myglobal.com",
-          "date": "2026-09-03T18:25:31.491703+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a99ad6a9cd108bf26e7ee52",
-          "discovered_date": "2026-09-03T18:25:31.491703+00:00"
-        },
-        {
-          "name": "specialtytextile.com",
-          "date": "2026-09-02T09:58:49.391822+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a97ed959cd108bf26aadc1c",
-          "discovered_date": "2026-09-02T09:58:49.391822+00:00"
-        },
-        {
-          "name": "Multiver Ltée",
-          "date": "2026-09-02T14:55:53.486798+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a98358f9cd108bf26b3e38b",
-          "discovered_date": "2026-09-02T14:55:53.486798+00:00"
-        },
-        {
-          "name": "Metales Panamericanos",
-          "date": "2026-09-02T14:55:35.724292+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a9836399cd108bf26b3fe27",
-          "discovered_date": "2026-09-02T14:55:35.724292+00:00"
-        },
-        {
-          "name": "Policlinico Triestino",
-          "date": "2026-09-02T14:56:11.976884+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a9835249cd108bf26b3d268",
-          "discovered_date": "2026-09-02T14:56:11.976884+00:00"
-        },
-        {
-          "name": "Trucka",
-          "date": "2026-09-02T14:56:29.777405+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a9834289cd108bf26b3a6ba",
-          "discovered_date": "2026-09-02T14:56:29.777405+00:00"
-        },
-        {
-          "name": "Asfaltos y Pavimentos S.A. (Asfalpasa)",
-          "date": "2026-09-02T14:57:43.928091+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a98332a9cd108bf26b37c4c",
-          "discovered_date": "2026-09-02T14:57:43.928091+00:00"
-        },
-        {
-          "name": "Westfield Public School District",
-          "date": "2026-09-02T14:57:04.903288+00:00",
-          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a98339f9cd108bf26b38e4f",
-          "discovered_date": "2026-09-02T14:57:04.903288+00:00"
-        },
-        {
-          "name": "myglobal.com",
-          "date": "2026-09-03T18:25:31+00:00",
-          "url": "https://www.ransomware.live/id/bXlnbG9iYWwuY29tQGluY3JhbnNvbQ==",
-          "discovered_date": "2026-09-03T18:25:31+00:00"
-        },
-        {
-          "name": "Asfaltos y Pavimentos S.A. (Asfalpasa)",
-          "date": "2026-09-02T14:57:43+00:00",
-          "url": "https://www.ransomware.live/id/QXNmYWx0b3MgeSBQYXZpbWVudG9zIFMuQS4gKEFzZmFscGFzYSlAaW5jcmFuc29t",
-          "discovered_date": "2026-09-02T14:57:43+00:00"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Healthcare",
-        "Manufacturing",
-        "Not Found",
-        "Other"
-      ],
-      "countries": [
-        "CA",
-        "ES",
-        "GB",
-        "IT",
-        "MX"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        5,
-        0,
-        14,
-        2,
-        0,
-        0
-      ]
-    },
-    {
-      "name": "Akira",
-      "count": 18,
-      "victims": [
-        {
-          "name": "Stransky Heiz-Mess-Regeltechnik GmbH",
-          "date": "2026-09-04T14:53:27.302480+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T14:53:27.302480+00:00"
-        },
-        {
-          "name": "Worrell",
-          "date": "2026-09-04T13:51:54.499887+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T13:51:54.499887+00:00"
-        },
-        {
-          "name": "PennFab",
-          "date": "2026-09-02T14:22:30.041744+00:00",
-          "url": "",
-          "discovered_date": "2026-09-02T14:22:30.041744+00:00"
-        },
-        {
-          "name": "ScrubaDub Auto Wash Centers",
-          "date": "2026-09-02T13:52:50.023590+00:00",
-          "url": "",
-          "discovered_date": "2026-09-02T13:52:50.023590+00:00"
-        },
-        {
-          "name": "Algra Group",
-          "date": "2026-09-02T13:52:47.916604+00:00",
-          "url": "",
-          "discovered_date": "2026-09-02T13:52:47.916604+00:00"
-        },
-        {
-          "name": "Congressional Iron Works",
-          "date": "2026-09-01T15:21:40.812015+00:00",
-          "url": "",
-          "discovered_date": "2026-09-01T15:21:40.812015+00:00"
-        },
-        {
-          "name": "Flex1",
-          "date": "2026-09-01T14:23:54.137528+00:00",
-          "url": "",
-          "discovered_date": "2026-09-01T14:23:54.137528+00:00"
-        },
-        {
-          "name": "Stransky Heiz-Mess-Regeltechnik GmbH",
-          "date": "2026-09-04T14:53:27+00:00",
-          "url": "https://www.ransomware.live/id/U3RyYW5za3kgSGVpei1NZXNzLVJlZ2VsdGVjaG5payBHbWJIQGFraXJh",
-          "discovered_date": "2026-09-04T14:53:27+00:00"
-        },
-        {
-          "name": "Worrell",
-          "date": "2026-09-04T13:51:54+00:00",
-          "url": "https://www.ransomware.live/id/V29ycmVsbEBha2lyYQ==",
-          "discovered_date": "2026-09-04T13:51:54+00:00"
-        },
-        {
-          "name": "PennFab",
-          "date": "2026-09-02T14:22:30+00:00",
-          "url": "https://www.ransomware.live/id/UGVubkZhYkBha2lyYQ==",
-          "discovered_date": "2026-09-02T14:22:30+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Not Found",
-        "Other",
-        "Retail & E-Commerce"
-      ],
-      "countries": [
-        "DE",
-        "N/A",
-        "NL",
-        "US"
-      ],
-      "trend": "up",
-      "trend_percentage": 15,
-      "daily_counts": [
-        0,
-        3,
-        5,
-        6,
-        0,
-        4,
         0
       ]
     },
@@ -442,11 +262,11 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         8,
         0,
         0,
         9,
+        0,
         0,
         0
       ]
@@ -529,17 +349,17 @@
       "trend_percentage": 15,
       "daily_counts": [
         0,
+        2,
+        6,
+        6,
+        2,
         0,
-        2,
-        6,
-        6,
-        2,
         0
       ]
     },
     {
       "name": "Direwolf",
-      "count": 15,
+      "count": 16,
       "victims": [
         {
           "name": "Wolfram Research",
@@ -578,6 +398,12 @@
           "discovered_date": "2026-09-01T15:54:31.468817+00:00"
         },
         {
+          "name": "Mission Pet Health",
+          "date": "2026-09-05T21:54:20+00:00",
+          "url": "https://www.ransomware.live/id/TWlzc2lvbiBQZXQgSGVhbHRoQGRpcmV3b2xm",
+          "discovered_date": "2026-09-05T21:54:20+00:00"
+        },
+        {
           "name": "Wolfram Research",
           "date": "2026-09-04T17:55:01+00:00",
           "url": "https://www.ransomware.live/id/V29sZnJhbSBSZXNlYXJjaEBkaXJld29sZg==",
@@ -594,12 +420,6 @@
           "date": "2026-09-02T16:54:26+00:00",
           "url": "https://www.ransomware.live/id/UFRUIE9pbCBhbmQgUmV0YWlsIEJ1c2luZXNzQGRpcmV3b2xm",
           "discovered_date": "2026-09-02T16:54:26+00:00"
-        },
-        {
-          "name": "Oportunidados",
-          "date": "2026-09-01T16:25:03+00:00",
-          "url": "https://www.ransomware.live/id/T3BvcnR1bmlkYWRvc0BkaXJld29sZg==",
-          "discovered_date": "2026-09-01T16:25:03+00:00"
         }
       ],
       "industries": [
@@ -619,12 +439,101 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        3,
         0,
         6,
         4,
         0,
         2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "Akira",
+      "count": 16,
+      "victims": [
+        {
+          "name": "Stransky Heiz-Mess-Regeltechnik GmbH",
+          "date": "2026-09-04T14:53:27.302480+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T14:53:27.302480+00:00"
+        },
+        {
+          "name": "Worrell",
+          "date": "2026-09-04T13:51:54.499887+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T13:51:54.499887+00:00"
+        },
+        {
+          "name": "PennFab",
+          "date": "2026-09-02T14:22:30.041744+00:00",
+          "url": "",
+          "discovered_date": "2026-09-02T14:22:30.041744+00:00"
+        },
+        {
+          "name": "ScrubaDub Auto Wash Centers",
+          "date": "2026-09-02T13:52:50.023590+00:00",
+          "url": "",
+          "discovered_date": "2026-09-02T13:52:50.023590+00:00"
+        },
+        {
+          "name": "Algra Group",
+          "date": "2026-09-02T13:52:47.916604+00:00",
+          "url": "",
+          "discovered_date": "2026-09-02T13:52:47.916604+00:00"
+        },
+        {
+          "name": "Stransky Heiz-Mess-Regeltechnik GmbH",
+          "date": "2026-09-04T14:53:27+00:00",
+          "url": "https://www.ransomware.live/id/U3RyYW5za3kgSGVpei1NZXNzLVJlZ2VsdGVjaG5payBHbWJIQGFraXJh",
+          "discovered_date": "2026-09-04T14:53:27+00:00"
+        },
+        {
+          "name": "Worrell",
+          "date": "2026-09-04T13:51:54+00:00",
+          "url": "https://www.ransomware.live/id/V29ycmVsbEBha2lyYQ==",
+          "discovered_date": "2026-09-04T13:51:54+00:00"
+        },
+        {
+          "name": "PennFab",
+          "date": "2026-09-02T14:22:30+00:00",
+          "url": "https://www.ransomware.live/id/UGVubkZhYkBha2lyYQ==",
+          "discovered_date": "2026-09-02T14:22:30+00:00"
+        },
+        {
+          "name": "ScrubaDub Auto Wash Centers",
+          "date": "2026-09-02T13:52:50+00:00",
+          "url": "https://www.ransomware.live/id/U2NydWJhRHViIEF1dG8gV2FzaCBDZW50ZXJzQGFraXJh",
+          "discovered_date": "2026-09-02T13:52:50+00:00"
+        },
+        {
+          "name": "Algra Group",
+          "date": "2026-09-02T13:52:47+00:00",
+          "url": "https://www.ransomware.live/id/QWxncmEgR3JvdXBAYWtpcmE=",
+          "discovered_date": "2026-09-02T13:52:47+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Not Found",
+        "Other",
+        "Retail & E-Commerce"
+      ],
+      "countries": [
+        "DE",
+        "N/A",
+        "NL",
+        "US"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        3,
+        3,
+        6,
+        0,
+        4,
+        0,
         0
       ]
     },
@@ -633,85 +542,267 @@
       "count": 15,
       "victims": [
         {
+          "name": "Lider Aviacao",
+          "date": "2026-09-05T18:29:44.230169+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T18:29:44.230169+00:00"
+        },
+        {
+          "name": "Veradigm",
+          "date": "2026-09-05T18:29:58.376127+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T18:29:58.376127+00:00"
+        },
+        {
+          "name": "Zdrowit",
+          "date": "2026-09-05T18:30:11.287716+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T18:30:11.287716+00:00"
+        },
+        {
+          "name": "Leo Schachter Diamonds",
+          "date": "2026-09-05T18:30:24.324910+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T18:30:24.324910+00:00"
+        },
+        {
           "name": "Seasia Infotech",
           "date": "2026-09-02T10:30:50.512757+00:00",
           "url": "",
           "discovered_date": "2026-09-02T10:30:50.512757+00:00"
         },
         {
+          "name": "Leo Schachter Diamonds",
+          "date": "2026-09-05T18:30:24+00:00",
+          "url": "https://www.ransomware.live/id/TGVvIFNjaGFjaHRlciBEaWFtb25kc0B0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-09-05T18:30:24+00:00"
+        },
+        {
+          "name": "Zdrowit",
+          "date": "2026-09-05T18:30:11+00:00",
+          "url": "https://www.ransomware.live/id/WmRyb3dpdEB0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-09-05T18:30:11+00:00"
+        },
+        {
+          "name": "Veradigm",
+          "date": "2026-09-05T18:29:58+00:00",
+          "url": "https://www.ransomware.live/id/VmVyYWRpZ21AdGhlZ2VudGxlbWVu",
+          "discovered_date": "2026-09-05T18:29:58+00:00"
+        },
+        {
+          "name": "Lider Aviacao",
+          "date": "2026-09-05T18:29:44+00:00",
+          "url": "https://www.ransomware.live/id/TGlkZXIgQXZpYWNhb0B0aGVnZW50bGVtZW4=",
+          "discovered_date": "2026-09-05T18:29:44+00:00"
+        },
+        {
           "name": "Seasia Infotech",
           "date": "2026-09-02T10:30:50+00:00",
           "url": "https://www.ransomware.live/id/U2Vhc2lhIEluZm90ZWNoQHRoZWdlbnRsZW1lbg==",
           "discovered_date": "2026-09-02T10:30:50+00:00"
-        },
-        {
-          "name": "CareerSource Palm Beach County",
-          "date": "2026-09-01T12:14:30+00:00",
-          "url": "https://www.ransomware.live/id/Q2FyZWVyU291cmNlIFBhbG0gQmVhY2ggQ291bnR5QHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-09-01T12:14:30+00:00"
-        },
-        {
-          "name": "Nutex Health",
-          "date": "2026-09-01T12:14:08+00:00",
-          "url": "https://www.ransomware.live/id/TnV0ZXggSGVhbHRoQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-09-01T12:14:08+00:00"
-        },
-        {
-          "name": "The Sole",
-          "date": "2026-09-01T12:13:48+00:00",
-          "url": "https://www.ransomware.live/id/VGhlIFNvbGVAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-09-01T12:13:48+00:00"
-        },
-        {
-          "name": "EP Manufacturing Bhd",
-          "date": "2026-08-31T12:04:38+00:00",
-          "url": "https://www.ransomware.live/id/RVAgTWFudWZhY3R1cmluZyBCaGRAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-08-31T12:04:38+00:00"
-        },
-        {
-          "name": "Saudi Consulting Services SAUD CONSULT",
-          "date": "2026-08-31T12:04:17+00:00",
-          "url": "https://www.ransomware.live/id/U2F1ZGkgQ29uc3VsdGluZyBTZXJ2aWNlcyBTQVVEIENPTlNVTFRAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-08-31T12:04:17+00:00"
-        },
-        {
-          "name": "Glassdoor",
-          "date": "2026-08-30T09:54:40+00:00",
-          "url": "https://www.ransomware.live/id/R2xhc3Nkb29yQHRoZWdlbnRsZW1lbg==",
-          "discovered_date": "2026-08-30T09:54:40+00:00"
-        },
-        {
-          "name": "G R Infraprojects",
-          "date": "2026-08-30T09:54:19+00:00",
-          "url": "https://www.ransomware.live/id/RyBSIEluZnJhcHJvamVjdHNAdGhlZ2VudGxlbWVu",
-          "discovered_date": "2026-08-30T09:54:19+00:00"
-        },
-        {
-          "name": "Northwest Trophy",
-          "date": "2026-08-30T09:53:59+00:00",
-          "url": "https://www.ransomware.live/id/Tm9ydGh3ZXN0IFRyb3BoeUB0aGVnZW50bGVtZW4=",
-          "discovered_date": "2026-08-30T09:53:59+00:00"
         }
       ],
       "industries": [
-        "Technology"
+        "Healthcare",
+        "Retail & E-Commerce",
+        "Technology",
+        "Transportation"
       ],
       "countries": [
-        "AR",
-        "CH",
+        "BR",
         "GB",
         "IN",
-        "IT"
+        "MY",
+        "PL"
       ],
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        8,
         2,
         3,
         2,
         0,
         0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "Incransom",
+      "count": 15,
+      "victims": [
+        {
+          "name": "myglobal.com",
+          "date": "2026-09-03T18:25:31.491703+00:00",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a99ad6a9cd108bf26e7ee52",
+          "discovered_date": "2026-09-03T18:25:31.491703+00:00"
+        },
+        {
+          "name": "specialtytextile.com",
+          "date": "2026-09-02T09:58:49.391822+00:00",
+          "url": "http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures/6a97ed959cd108bf26aadc1c",
+          "discovered_date": "2026-09-02T09:58:49.391822+00:00"
+        },
+        {
+          "name": "myglobal.com",
+          "date": "2026-09-03T18:25:31+00:00",
+          "url": "https://www.ransomware.live/id/bXlnbG9iYWwuY29tQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-09-03T18:25:31+00:00"
+        },
+        {
+          "name": "Asfaltos y Pavimentos S.A. (Asfalpasa)",
+          "date": "2026-09-02T14:57:43+00:00",
+          "url": "https://www.ransomware.live/id/QXNmYWx0b3MgeSBQYXZpbWVudG9zIFMuQS4gKEFzZmFscGFzYSlAaW5jcmFuc29t",
+          "discovered_date": "2026-09-02T14:57:43+00:00"
+        },
+        {
+          "name": "Westfield Public School District",
+          "date": "2026-09-02T14:57:04+00:00",
+          "url": "https://www.ransomware.live/id/V2VzdGZpZWxkIFB1YmxpYyBTY2hvb2wgRGlzdHJpY3RAaW5jcmFuc29t",
+          "discovered_date": "2026-09-02T14:57:04+00:00"
+        },
+        {
+          "name": "Trucka",
+          "date": "2026-09-02T14:56:29+00:00",
+          "url": "https://www.ransomware.live/id/VHJ1Y2thQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-09-02T14:56:29+00:00"
+        },
+        {
+          "name": "Policlinico Triestino",
+          "date": "2026-09-02T14:56:11+00:00",
+          "url": "https://www.ransomware.live/id/UG9saWNsaW5pY28gVHJpZXN0aW5vQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-09-02T14:56:11+00:00"
+        },
+        {
+          "name": "Multiver Ltée",
+          "date": "2026-09-02T14:55:53+00:00",
+          "url": "https://www.ransomware.live/id/TXVsdGl2ZXIgTHTDqWVAaW5jcmFuc29t",
+          "discovered_date": "2026-09-02T14:55:53+00:00"
+        },
+        {
+          "name": "Metales Panamericanos",
+          "date": "2026-09-02T14:55:35+00:00",
+          "url": "https://www.ransomware.live/id/TWV0YWxlcyBQYW5hbWVyaWNhbm9zQGluY3JhbnNvbQ==",
+          "discovered_date": "2026-09-02T14:55:35+00:00"
+        },
+        {
+          "name": "specialtytextile.com",
+          "date": "2026-09-02T09:58:49+00:00",
+          "url": "https://www.ransomware.live/id/c3BlY2lhbHR5dGV4dGlsZS5jb21AaW5jcmFuc29t",
+          "discovered_date": "2026-09-02T09:58:49+00:00"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Other"
+      ],
+      "countries": [
+        "CA",
+        "ES",
+        "GB",
+        "IT",
+        "MX"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        5,
+        0,
+        8,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Vexy Ransomware",
+      "count": 12,
+      "victims": [
+        {
+          "name": "Mega Velocity",
+          "date": "2026-09-05T17:22:03.885731+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T17:22:03.885731+00:00"
+        },
+        {
+          "name": "Sancity Soft Touch",
+          "date": "2026-09-04T16:23:12.456390+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T16:23:12.456390+00:00"
+        },
+        {
+          "name": "Annapurna Fashion",
+          "date": "2026-09-04T16:23:32.912477+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T16:23:32.912477+00:00"
+        },
+        {
+          "name": "Palsana Enviro (PEPL)",
+          "date": "2026-09-04T16:23:53.260819+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T16:23:53.260819+00:00"
+        },
+        {
+          "name": "McDonald's Ecuador",
+          "date": "2026-09-03T12:51:32.806994+00:00",
+          "url": "",
+          "discovered_date": "2026-09-03T12:51:32.806994+00:00"
+        },
+        {
+          "name": "Engefitas",
+          "date": "2026-09-03T09:54:12.520621+00:00",
+          "url": "",
+          "discovered_date": "2026-09-03T09:54:12.520621+00:00"
+        },
+        {
+          "name": "Mega Velocity",
+          "date": "2026-09-05T17:22:03+00:00",
+          "url": "https://www.ransomware.live/id/TWVnYSBWZWxvY2l0eUBWZXh5IFJhbnNvbXdhcmU=",
+          "discovered_date": "2026-09-05T17:22:03+00:00"
+        },
+        {
+          "name": "Palsana Enviro (PEPL)",
+          "date": "2026-09-04T16:23:53+00:00",
+          "url": "https://www.ransomware.live/id/UGFsc2FuYSBFbnZpcm8gKFBFUEwpQFZleHkgUmFuc29td2FyZQ==",
+          "discovered_date": "2026-09-04T16:23:53+00:00"
+        },
+        {
+          "name": "Annapurna Fashion",
+          "date": "2026-09-04T16:23:32+00:00",
+          "url": "https://www.ransomware.live/id/QW5uYXB1cm5hIEZhc2hpb25AVmV4eSBSYW5zb213YXJl",
+          "discovered_date": "2026-09-04T16:23:32+00:00"
+        },
+        {
+          "name": "Sancity Soft Touch",
+          "date": "2026-09-04T16:23:12+00:00",
+          "url": "https://www.ransomware.live/id/U2FuY2l0eSBTb2Z0IFRvdWNoQFZleHkgUmFuc29td2FyZQ==",
+          "discovered_date": "2026-09-04T16:23:12+00:00"
+        }
+      ],
+      "industries": [
+        "Hospitality",
+        "Manufacturing",
+        "Other",
+        "Retail & E-Commerce",
+        "Transportation"
+      ],
+      "countries": [
+        "BR",
+        "EC",
+        "IN",
+        "MX",
+        "N/A"
+      ],
+      "trend": "up",
+      "trend_percentage": 15,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        4,
+        6,
+        2,
         0
       ]
     },
@@ -793,101 +884,12 @@
       "trend": "up",
       "trend_percentage": 15,
       "daily_counts": [
-        0,
         6,
         0,
         0,
         0,
         6,
-        0
-      ]
-    },
-    {
-      "name": "Vexy Ransomware",
-      "count": 10,
-      "victims": [
-        {
-          "name": "Sancity Soft Touch",
-          "date": "2026-09-04T16:23:12.456390+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T16:23:12.456390+00:00"
-        },
-        {
-          "name": "Annapurna Fashion",
-          "date": "2026-09-04T16:23:32.912477+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T16:23:32.912477+00:00"
-        },
-        {
-          "name": "Palsana Enviro (PEPL)",
-          "date": "2026-09-04T16:23:53.260819+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T16:23:53.260819+00:00"
-        },
-        {
-          "name": "McDonald's Ecuador",
-          "date": "2026-09-03T12:51:32.806994+00:00",
-          "url": "",
-          "discovered_date": "2026-09-03T12:51:32.806994+00:00"
-        },
-        {
-          "name": "Engefitas",
-          "date": "2026-09-03T09:54:12.520621+00:00",
-          "url": "",
-          "discovered_date": "2026-09-03T09:54:12.520621+00:00"
-        },
-        {
-          "name": "Palsana Enviro (PEPL)",
-          "date": "2026-09-04T16:23:53+00:00",
-          "url": "https://www.ransomware.live/id/UGFsc2FuYSBFbnZpcm8gKFBFUEwpQFZleHkgUmFuc29td2FyZQ==",
-          "discovered_date": "2026-09-04T16:23:53+00:00"
-        },
-        {
-          "name": "Annapurna Fashion",
-          "date": "2026-09-04T16:23:32+00:00",
-          "url": "https://www.ransomware.live/id/QW5uYXB1cm5hIEZhc2hpb25AVmV4eSBSYW5zb213YXJl",
-          "discovered_date": "2026-09-04T16:23:32+00:00"
-        },
-        {
-          "name": "Sancity Soft Touch",
-          "date": "2026-09-04T16:23:12+00:00",
-          "url": "https://www.ransomware.live/id/U2FuY2l0eSBTb2Z0IFRvdWNoQFZleHkgUmFuc29td2FyZQ==",
-          "discovered_date": "2026-09-04T16:23:12+00:00"
-        },
-        {
-          "name": "McDonald's Ecuador",
-          "date": "2026-09-03T12:51:32+00:00",
-          "url": "https://www.ransomware.live/id/TWNEb25hbGQncyBFY3VhZG9yQFZleHkgUmFuc29td2FyZQ==",
-          "discovered_date": "2026-09-03T12:51:32+00:00"
-        },
-        {
-          "name": "Engefitas",
-          "date": "2026-09-03T09:54:12+00:00",
-          "url": "https://www.ransomware.live/id/RW5nZWZpdGFzQFZleHkgUmFuc29td2FyZQ==",
-          "discovered_date": "2026-09-03T09:54:12+00:00"
-        }
-      ],
-      "industries": [
-        "Hospitality",
-        "Manufacturing",
-        "Other",
-        "Retail & E-Commerce"
-      ],
-      "countries": [
-        "BR",
-        "EC",
-        "IN",
-        "N/A"
-      ],
-      "trend": "stable",
-      "trend_percentage": 0,
-      "daily_counts": [
         0,
-        0,
-        0,
-        0,
-        4,
-        6,
         0
       ]
     },
@@ -960,10 +962,10 @@
         0,
         0,
         0,
-        0,
         2,
         4,
-        2
+        2,
+        0
       ]
     },
     {
@@ -1037,8 +1039,8 @@
         0,
         0,
         0,
-        0,
         8,
+        0,
         0,
         0
       ]
@@ -1107,8 +1109,8 @@
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
-        0,
         8,
+        0,
         0,
         0,
         0,
@@ -1117,63 +1119,63 @@
       ]
     },
     {
-      "name": "Everest",
+      "name": "Aurora",
       "count": 6,
       "victims": [
         {
-          "name": "VIVOTEK",
-          "date": "2026-09-01T02:25:26.523703+00:00",
-          "url": "http://everestndkvzcibcje2cqxhre2hmmybl3rn2gwzwsblz7gx6uryn5rad.onion/news/vivotek",
-          "discovered_date": "2026-09-01T02:25:26.523703+00:00"
+          "name": "Metrea LLC/Commuter Air Technology, Inc.",
+          "date": "2026-09-05T09:53:15.683002+00:00",
+          "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/metrea-llc-77f4beea",
+          "discovered_date": "2026-09-05T09:53:15.683002+00:00"
         },
         {
-          "name": "Italtel Peru",
-          "date": "2026-09-01T02:24:48.790434+00:00",
-          "url": "http://everestndkvzcibcje2cqxhre2hmmybl3rn2gwzwsblz7gx6uryn5rad.onion/news/italtel-peru",
-          "discovered_date": "2026-09-01T02:24:48.790434+00:00"
+          "name": "Chip 1 Exchange",
+          "date": "2026-09-02T06:52:31.237644+00:00",
+          "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/chip-1-exchange-13b819b4",
+          "discovered_date": "2026-09-02T06:52:31.237644+00:00"
         },
         {
-          "name": "Rise UP",
-          "date": "2026-09-01T02:26:01.787855+00:00",
-          "url": "http://everestndkvzcibcje2cqxhre2hmmybl3rn2gwzwsblz7gx6uryn5rad.onion/news/rise-up",
-          "discovered_date": "2026-09-01T02:26:01.787855+00:00"
+          "name": "Metrea LLC/Commuter Air Technology, Inc.",
+          "date": "2026-09-05T09:53:15+00:00",
+          "url": "https://www.ransomware.live/id/TWV0cmVhIExMQy9Db21tdXRlciBBaXIgVGVjaG5vbG9neSwgSW5jLkBhdXJvcmE=",
+          "discovered_date": "2026-09-05T09:53:15+00:00"
         },
         {
-          "name": "Rise UP",
-          "date": "2026-09-01T02:26:01+00:00",
-          "url": "https://www.ransomware.live/id/UmlzZSBVUEBldmVyZXN0",
-          "discovered_date": "2026-09-01T02:26:01+00:00"
+          "name": "EDIF S.p.A.",
+          "date": "2026-09-04T06:53:59+00:00",
+          "url": "https://www.ransomware.live/id/RURJRiBTLnAuQS5AYXVyb3Jh",
+          "discovered_date": "2026-09-04T06:53:59+00:00"
         },
         {
-          "name": "VIVOTEK",
-          "date": "2026-09-01T02:25:26+00:00",
-          "url": "https://www.ransomware.live/id/VklWT1RFS0BldmVyZXN0",
-          "discovered_date": "2026-09-01T02:25:26+00:00"
+          "name": "Chip 1 Exchange",
+          "date": "2026-09-02T06:52:31+00:00",
+          "url": "https://www.ransomware.live/id/Q2hpcCAxIEV4Y2hhbmdlQGF1cm9yYQ==",
+          "discovered_date": "2026-09-02T06:52:31+00:00"
         },
         {
-          "name": "Italtel Peru",
-          "date": "2026-09-01T02:24:48+00:00",
-          "url": "https://www.ransomware.live/id/SXRhbHRlbCBQZXJ1QGV2ZXJlc3Q=",
-          "discovered_date": "2026-09-01T02:24:48+00:00"
+          "name": "Ishbia & Gagleard, P.C.",
+          "date": "2026-08-31T10:22:14+00:00",
+          "url": "https://www.ransomware.live/id/SXNoYmlhICYgR2FnbGVhcmQsIFAuQy5AYXVyb3Jh",
+          "discovered_date": "2026-08-31T10:22:14+00:00"
         }
       ],
       "industries": [
-        "Technology"
+        "Technology",
+        "Transportation"
       ],
       "countries": [
-        "N/A",
-        "PE",
-        "TW"
+        "IT",
+        "US"
       ],
       "trend": "stable",
       "trend_percentage": 0,
       "daily_counts": [
+        1,
         0,
+        2,
         0,
-        6,
-        0,
-        0,
-        0,
+        1,
+        2,
         0
       ]
     },
@@ -1227,63 +1229,57 @@
         1,
         1,
         1,
-        1,
+        0,
         0,
         0
       ]
     },
     {
-      "name": "Aurora",
-      "count": 5,
+      "name": "DYSPHOR1A",
+      "count": 4,
       "victims": [
         {
-          "name": "Chip 1 Exchange",
-          "date": "2026-09-02T06:52:31.237644+00:00",
-          "url": "http://u6lieui2dakbctcjea2bz4r4q32r7t36nwljovqbv7mxs6o2smgxixid.onion/blog/chip-1-exchange-13b819b4",
-          "discovered_date": "2026-09-02T06:52:31.237644+00:00"
+          "name": "CitizensPay",
+          "date": "2026-09-05T15:50:36.617535+00:00",
+          "url": "",
+          "discovered_date": "2026-09-05T15:50:36.617535+00:00"
         },
         {
-          "name": "Metrea LLC/Commuter Air Technology, Inc.",
-          "date": "2026-09-05T09:53:15+00:00",
-          "url": "https://www.ransomware.live/id/TWV0cmVhIExMQy9Db21tdXRlciBBaXIgVGVjaG5vbG9neSwgSW5jLkBhdXJvcmE=",
-          "discovered_date": "2026-09-05T09:53:15+00:00"
+          "name": "MBT Telecom",
+          "date": "2026-09-04T16:50:33.931476+00:00",
+          "url": "",
+          "discovered_date": "2026-09-04T16:50:33.931476+00:00"
         },
         {
-          "name": "EDIF S.p.A.",
-          "date": "2026-09-04T06:53:59+00:00",
-          "url": "https://www.ransomware.live/id/RURJRiBTLnAuQS5AYXVyb3Jh",
-          "discovered_date": "2026-09-04T06:53:59+00:00"
+          "name": "CitizensPay",
+          "date": "2026-09-05T15:50:36+00:00",
+          "url": "https://www.ransomware.live/id/Q2l0aXplbnNQYXlARFlTUEhPUjFB",
+          "discovered_date": "2026-09-05T15:50:36+00:00"
         },
         {
-          "name": "Chip 1 Exchange",
-          "date": "2026-09-02T06:52:31+00:00",
-          "url": "https://www.ransomware.live/id/Q2hpcCAxIEV4Y2hhbmdlQGF1cm9yYQ==",
-          "discovered_date": "2026-09-02T06:52:31+00:00"
-        },
-        {
-          "name": "Ishbia & Gagleard, P.C.",
-          "date": "2026-08-31T10:22:14+00:00",
-          "url": "https://www.ransomware.live/id/SXNoYmlhICYgR2FnbGVhcmQsIFAuQy5AYXVyb3Jh",
-          "discovered_date": "2026-08-31T10:22:14+00:00"
+          "name": "MBT Telecom",
+          "date": "2026-09-04T16:50:33+00:00",
+          "url": "https://www.ransomware.live/id/TUJUIFRlbGVjb21ARFlTUEhPUjFB",
+          "discovered_date": "2026-09-04T16:50:33+00:00"
         }
       ],
       "industries": [
+        "Financial Services",
         "Technology"
       ],
       "countries": [
-        "IT",
-        "US"
+        "MM"
       ],
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        1,
+        0,
+        0,
         0,
         2,
-        0,
-        1,
-        1
+        2,
+        0
       ]
     },
     {
@@ -1330,8 +1326,8 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0
       ]
     },
@@ -1373,111 +1369,13 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         0,
         2,
         1,
         0,
-        0
-      ]
-    },
-    {
-      "name": "Medusalocker",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Licindia",
-          "date": "2026-09-02T09:29:09.492860+00:00",
-          "url": "http://t33zoj4qwv455fog7qnb2azi5xcdxkixughmmduzbw2rtdgryqfbh6id.onion/company/banaoah/",
-          "discovered_date": "2026-09-02T09:29:09.492860+00:00"
-        },
-        {
-          "name": "Lawter",
-          "date": "2026-09-01T04:27:28.960315+00:00",
-          "url": "http://t33zoj4qwv455fog7qnb2azi5xcdxkixughmmduzbw2rtdgryqfbh6id.onion/company/baoatah/",
-          "discovered_date": "2026-09-01T04:27:28.960315+00:00"
-        },
-        {
-          "name": "Licindia",
-          "date": "2026-09-02T09:29:09+00:00",
-          "url": "https://www.ransomware.live/id/TGljaW5kaWFAbWVkdXNhbG9ja2Vy",
-          "discovered_date": "2026-09-02T09:29:09+00:00"
-        },
-        {
-          "name": "Lawter",
-          "date": "2026-09-01T04:27:28+00:00",
-          "url": "https://www.ransomware.live/id/TGF3dGVyQG1lZHVzYWxvY2tlcg==",
-          "discovered_date": "2026-09-01T04:27:28+00:00"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Other"
-      ],
-      "countries": [
-        "IN",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        2,
-        2,
-        0,
         0,
         0
-      ]
-    },
-    {
-      "name": "Pear",
-      "count": 4,
-      "victims": [
-        {
-          "name": "Kovo Healthtech Corp",
-          "date": "2026-09-05T04:57:55.811680+00:00",
-          "url": "http://peargxn3oki34c4savcbcfqofjjwjnnyrlrbszfv6ujlx36mhrh57did.onion/Companies/kovoplus",
-          "discovered_date": "2026-09-05T04:57:55.811680+00:00"
-        },
-        {
-          "name": "EdgeChem Jamaica Limited",
-          "date": "2026-09-05T04:58:23.132944+00:00",
-          "url": "http://peargxn3oki34c4savcbcfqofjjwjnnyrlrbszfv6ujlx36mhrh57did.onion/Companies/edgechem",
-          "discovered_date": "2026-09-05T04:58:23.132944+00:00"
-        },
-        {
-          "name": "EdgeChem Jamaica Limited",
-          "date": "2026-09-05T04:58:23+00:00",
-          "url": "https://www.ransomware.live/id/RWRnZUNoZW0gSmFtYWljYSBMaW1pdGVkQHBlYXI=",
-          "discovered_date": "2026-09-05T04:58:23+00:00"
-        },
-        {
-          "name": "Kovo Healthtech Corp",
-          "date": "2026-09-05T04:57:55+00:00",
-          "url": "https://www.ransomware.live/id/S292byBIZWFsdGh0ZWNoIENvcnBAcGVhcg==",
-          "discovered_date": "2026-09-05T04:57:55+00:00"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Manufacturing"
-      ],
-      "countries": [
-        "JM",
-        "US"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        4
       ]
     },
     {
@@ -1518,12 +1416,96 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         4,
         0,
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Medusalocker",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Licindia",
+          "date": "2026-09-02T09:29:09.492860+00:00",
+          "url": "http://t33zoj4qwv455fog7qnb2azi5xcdxkixughmmduzbw2rtdgryqfbh6id.onion/company/banaoah/",
+          "discovered_date": "2026-09-02T09:29:09.492860+00:00"
+        },
+        {
+          "name": "Licindia",
+          "date": "2026-09-02T09:29:09+00:00",
+          "url": "https://www.ransomware.live/id/TGljaW5kaWFAbWVkdXNhbG9ja2Vy",
+          "discovered_date": "2026-09-02T09:29:09+00:00"
+        },
+        {
+          "name": "Lawter",
+          "date": "2026-09-01T04:27:28+00:00",
+          "url": "https://www.ransomware.live/id/TGF3dGVyQG1lZHVzYWxvY2tlcg==",
+          "discovered_date": "2026-09-01T04:27:28+00:00"
+        }
+      ],
+      "industries": [
+        "Other"
+      ],
+      "countries": [
+        "IN",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Pear",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Kovo Healthtech Corp",
+          "date": "2026-09-05T04:57:55.811680+00:00",
+          "url": "http://peargxn3oki34c4savcbcfqofjjwjnnyrlrbszfv6ujlx36mhrh57did.onion/Companies/kovoplus",
+          "discovered_date": "2026-09-05T04:57:55.811680+00:00"
+        },
+        {
+          "name": "EdgeChem Jamaica Limited",
+          "date": "2026-09-05T04:58:23+00:00",
+          "url": "https://www.ransomware.live/id/RWRnZUNoZW0gSmFtYWljYSBMaW1pdGVkQHBlYXI=",
+          "discovered_date": "2026-09-05T04:58:23+00:00"
+        },
+        {
+          "name": "Kovo Healthtech Corp",
+          "date": "2026-09-05T04:57:55+00:00",
+          "url": "https://www.ransomware.live/id/S292byBIZWFsdGh0ZWNoIENvcnBAcGVhcg==",
+          "discovered_date": "2026-09-05T04:57:55+00:00"
+        }
+      ],
+      "industries": [
+        "Healthcare"
+      ],
+      "countries": [
+        "JM",
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
         0
       ]
     },
@@ -1560,9 +1542,9 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
         2,
+        0,
         0,
         0,
         0,
@@ -1601,9 +1583,50 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Everest",
+      "count": 3,
+      "victims": [
+        {
+          "name": "Rise UP",
+          "date": "2026-09-01T02:26:01+00:00",
+          "url": "https://www.ransomware.live/id/UmlzZSBVUEBldmVyZXN0",
+          "discovered_date": "2026-09-01T02:26:01+00:00"
+        },
+        {
+          "name": "VIVOTEK",
+          "date": "2026-09-01T02:25:26+00:00",
+          "url": "https://www.ransomware.live/id/VklWT1RFS0BldmVyZXN0",
+          "discovered_date": "2026-09-01T02:25:26+00:00"
+        },
+        {
+          "name": "Italtel Peru",
+          "date": "2026-09-01T02:24:48+00:00",
+          "url": "https://www.ransomware.live/id/SXRhbHRlbCBQZXJ1QGV2ZXJlc3Q=",
+          "discovered_date": "2026-09-01T02:24:48+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "N/A",
+        "PE",
+        "TW"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        3,
+        0,
         0,
         0,
         0,
@@ -1640,8 +1663,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        2,
         1,
+        0,
         0,
         0,
         0,
@@ -1681,8 +1704,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         3,
+        0,
         0,
         0,
         0,
@@ -1712,41 +1735,6 @@
       ],
       "countries": [
         "AR"
-      ],
-      "trend": "down",
-      "trend_percentage": -5,
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        2
-      ]
-    },
-    {
-      "name": "DYSPHOR1A",
-      "count": 2,
-      "victims": [
-        {
-          "name": "MBT Telecom",
-          "date": "2026-09-04T16:50:33.931476+00:00",
-          "url": "",
-          "discovered_date": "2026-09-04T16:50:33.931476+00:00"
-        },
-        {
-          "name": "MBT Telecom",
-          "date": "2026-09-04T16:50:33+00:00",
-          "url": "https://www.ransomware.live/id/TUJUIFRlbGVjb21ARFlTUEhPUjFB",
-          "discovered_date": "2026-09-04T16:50:33+00:00"
-        }
-      ],
-      "industries": [
-        "Technology"
-      ],
-      "countries": [
-        "MM"
       ],
       "trend": "down",
       "trend_percentage": -5,
@@ -1791,9 +1779,9 @@
         0,
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0
       ]
     },
@@ -1827,8 +1815,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -1860,8 +1848,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1895,8 +1883,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1932,8 +1920,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         2,
+        0,
         0,
         0,
         0
@@ -1966,8 +1954,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -2001,8 +1989,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -2036,8 +2024,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -2071,8 +2059,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         2,
+        0,
         0,
         0,
         0,
@@ -2108,8 +2096,8 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ]
     },
@@ -2138,12 +2126,39 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         2,
         0,
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Kazu",
+      "count": 1,
+      "victims": [
+        {
+          "name": "Spirit Cultural Exchange - US",
+          "date": "2026-09-05T21:29:42+00:00",
+          "url": "https://www.ransomware.live/id/U3Bpcml0IEN1bHR1cmFsIEV4Y2hhbmdlIC0gVVNAa2F6dQ==",
+          "discovered_date": "2026-09-05T21:29:42+00:00"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "US"
+      ],
+      "trend": "down",
+      "trend_percentage": -5,
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
         0
       ]
     },
@@ -2170,8 +2185,8 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -2194,8 +2209,8 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
@@ -2220,8 +2235,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2247,8 +2262,8 @@
       "trend_percentage": -5,
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2273,8 +2288,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2300,8 +2315,8 @@
       "trend": "down",
       "trend_percentage": -5,
       "daily_counts": [
-        0,
         1,
+        0,
         0,
         0,
         0,
