@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1171",
+      "incident_id": 1171,
+      "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
+      "date": "2026-09-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1229",
+      "incident_id": 1229,
+      "title": "Gold Coast Man Reportedly Ordered to Pay $343,500 After Posting Purported Deepfake Pornographic Imag",
+      "date": "2026-09-06",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1284",
+      "incident_id": 1284,
+      "title": "Secret Desires AI Platform Reportedly Exposed Nearly Two Million Sensitive Images in Cloud Storage L",
+      "date": "2026-09-06",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-12",
       "incident_id": 12,
       "title": "Common Biases of Vector Embeddings",
@@ -3001,14 +3025,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1229",
-      "incident_id": 1229,
-      "title": "Gold Coast Man Reportedly Ordered to Pay $343,500 After Posting Purported Deepfake Pornographic Imag",
-      "date": "2026-06-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1249",
       "incident_id": 1249,
       "title": "Virginia Candidate John Reid Reportedly Used AI-Generated Deepfake of Opponent Ghazala Hashmi in Sim",
@@ -3746,9 +3762,9 @@
     }
   ],
   "stats": {
-    "total": 468,
-    "last7Days": 228,
-    "last30Days": 301
+    "total": 470,
+    "last7Days": 231,
+    "last30Days": 304
   },
-  "lastUpdated": "2026-09-06T09:56:37.836458+05:30"
+  "lastUpdated": "2026-09-06T17:36:21.017639+05:30"
 }
