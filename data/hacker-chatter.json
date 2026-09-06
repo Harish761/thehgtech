@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-06T07:14:30.403834",
-  "total_incidents": 31047,
+  "last_updated": "2026-09-06T17:14:35.498032",
+  "total_incidents": 31050,
   "incidents": [
+    {
+      "id": "panzer_khaled_alfagih_engineering_consultancy",
+      "victim_name": "KHALED ALFAGIH ENGINEERING CONSULTANCY",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-09-06T12:22:23.544880+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Khaled Alfagih Engineering Consultancy Company is one of the most specialized engineering consultancy firms in healthcare design and planning in KSA with more than 25 years of experience. KFO providing the quality in the field of architecture and engineering design, execution supervision and projects management. KFO focused on teamwork, client relationship and knowledge transfer.",
+      "screenshot": "https://images.ransomware.live/victims/10e73226da084170e0f0854b58841340.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/khaled-alfagih-engineering-consultancy",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_mylaurel",
+      "victim_name": "myLaurel",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-09-06T11:53:36.694741+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Elderly Care Services",
+      "screenshot": "https://images.ransomware.live/victims/64ed8a8db8e2c665d4d0d4d3b8b18bed.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/123",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "panzer_edacentrum",
+      "victim_name": "Edacentrum",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-09-06T10:51:32.892177+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "The edacentrum is the network for electronics, design and applications in business and science. As an independent authority, the edacentrum designs research & development for a consistent design methodology along the entire value chain. In this role, the edacentrum is a recognized innovation accelerator for the microelectronics industry and its user industries",
+      "screenshot": "https://images.ransomware.live/victims/1544c5609b84df86e651c661867399ee.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/edacentrum",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "direwolf_mission_pet_health",
       "victim_name": "Mission Pet Health",
@@ -897,7 +933,7 @@
       "date_discovered": "2026-09-02T13:52:47.916604+00:00",
       "industry": "Other",
       "website": "",
-      "claim": "Algra Group specializes in customized input systems, front panels, and industrial labels, provi\nding tailored solutions for various industries. Their product range includes agnostic touch sys\ntems, piezo keyboards, and weightpads, catering to sectors such as food processing, automation,\nwellness, medical technology, and transportation.\n\nWe will upload corporate data soon. Employee personal information (passport numbers, DLs), clie\nnts and partners information, contacts and agreements, financials, NDAs.\n",
+      "claim": "Algra Group specializes in customized input systems, front panels, and industrial labels, provi\r\nding tailored solutions for various industries. Their product range includes agnostic touch sys\r\ntems, piezo keyboards, and weightpads, catering to sectors such as food processing, automation,\r\nwellness, medical technology, and transportation.\r\n\r\nWe will upload corporate data soon. Employee personal information (passport numbers, DLs), clie\r\nnts and partners information, contacts and agreements, financials, NDAs.",
       "screenshot": "",
       "url": "",
       "source": "Ransomware.live OSINT API"
