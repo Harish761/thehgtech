@@ -57,6 +57,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1439",
+      "incident_id": 1439,
+      "title": "Former New Orleans Isidore Newman School Teacher Allegedly Used AI to Create Fake Nude Images from S",
+      "date": "2026-09-06",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-12",
       "incident_id": 12,
       "title": "Common Biases of Vector Embeddings",
@@ -3794,9 +3802,9 @@
     }
   ],
   "stats": {
-    "total": 474,
-    "last7Days": 235,
-    "last30Days": 308
+    "total": 475,
+    "last7Days": 234,
+    "last30Days": 306
   },
-  "lastUpdated": "2026-09-06T23:43:58.073065+05:30"
+  "lastUpdated": "2026-09-07T02:12:15.390557+05:30"
 }
