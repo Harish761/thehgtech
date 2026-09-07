@@ -3713,50 +3713,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-739",
-      "incident_id": 739,
-      "title": "Scammers Allegedly Use Deepfake of Hong Kong Entertainer Andy Lau to Steal NT$2.64 Million from Fan",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-802",
-      "incident_id": 802,
-      "title": "Purported Deepfake of Brian May Allegedly Exploited in Scam Offering Fake Queen Backstage Tickets",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1419",
-      "incident_id": 1419,
-      "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1436",
       "incident_id": 1436,
       "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2",
       "date": "2026-06-09",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1525",
-      "incident_id": 1525,
-      "title": "Purported Deepfake Video Reportedly Impersonated Former Mongolian Deputy Prime Minister Amarsaikhan ",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 469,
+    "total": 465,
     "last7Days": 221,
     "last30Days": 315
   },
-  "lastUpdated": "2026-09-08T01:22:40.916995+05:30"
+  "lastUpdated": "2026-09-08T03:13:11.881606+05:30"
 }
