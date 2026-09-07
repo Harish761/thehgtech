@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-09-06T17:14:35.498032",
-  "total_incidents": 31050,
+  "last_updated": "2026-09-07T07:27:56.094992",
+  "total_incidents": 31057,
   "incidents": [
+    {
+      "id": "shinyhunters_medela.com",
+      "victim_name": "Medela.com",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-09-07T01:32:59.937610+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "This is a final warning to reach out by 08 Sep 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. | Updated: 07 Sep 2026 | Warning: FINAL WARNING",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_homewood_sales",
+      "victim_name": "Homewood Sales",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-09-06T18:52:33.754474+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Homewood Sales Corporation specializes in equipment life extension solutions, offering a wide range of products including automatic voltage regulators, control panels, and motors, all built to Westinghouse specifications. With over a century of expertise, they provide exceptional quality in industrial and power distribution units and components. Their services include global sourcing, factory revitalization, and technical support, ensuring precise and expert assistance for their clients. Homewood primarily serves industries requiring reliable power distribution and equipment maintenance solutions.",
+      "screenshot": "https://images.ransomware.live/victims/7d25a7090eea36fae2bb72f7e7dd96d4.png",
+      "url": "http://xjhmtitnrdrgzw4vmsghirdoo2fk35a3tzj4enlmah4pvehdspydsiyd.onion/blog/?post_uuid=6483b94b-84e1-4416-947f-2591eb728a83",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_norwood_law_firm",
+      "victim_name": "Norwood Law Firm",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-09-06T18:51:42.171469+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Norwood Law is a Tulsa-based legal firm that specializes in personal injury law, criminal defense, business law, and family law. Founded by attorney Joe Norwood in 2004, the firm is known for its success in high-profile cases and achieving significant legal victories for its clients. The team also includes Todd Maxwell, who specializes in contracts, construction law, and dispute mediation. Norwood Law serves clients in Oklahoma seeking expert legal representation in complex legal matters.",
+      "screenshot": "https://images.ransomware.live/victims/612fe3a960567cd5fbee8c36f68cfd0c.png",
+      "url": "http://xjhmtitnrdrgzw4vmsghirdoo2fk35a3tzj4enlmah4pvehdspydsiyd.onion/blog/?post_uuid=66da3509-a3fc-4ff3-a229-ecfa57caf4e0",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dysphor1a_rtad_gov_mm",
+      "victim_name": "RTAD GOV MM",
+      "threat_actor": "DYSPHOR1A",
+      "date_discovered": "2026-09-06T17:50:31.300191+00:00",
+      "industry": "Government & Defense",
+      "website": "",
+      "claim": "Road Transport Administration Department (RTAD) — official government portal providing public transport services, driving license issuance, vehicle registration, and safety regulations. Full databases dump total 1.08 GB. Victim domain https://rtad.gov.mm.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_eassist_dental_solutions",
+      "victim_name": "eAssist Dental Solutions",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-09-06T16:55:00.061014+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Healthcare",
+      "screenshot": "https://images.ransomware.live/victims/9b882896080241fd4fe227bc0d69e91a.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/124",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vexy_ransomware_sancity",
+      "victim_name": "Sancity",
+      "threat_actor": "Vexy Ransomware",
+      "date_discovered": "2026-09-06T15:00:28.254541+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "An active, unlisted public company incorporated in 2012, operating in real estate/construction and real-estate marketing & sales",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "chaos_evergenbio.com",
+      "victim_name": "evergenbio.com",
+      "threat_actor": "chaos",
+      "date_discovered": "2026-09-06T13:25:44.025363+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Evergen is a leading Contract Development and Manufacturing Organization (CDMO) specializing in biomaterial solutions for regenerative medicine. We work closely with OEM partners to deliver customized biomaterial solutions that meet specific clinical needs",
+      "screenshot": "https://images.ransomware.live/victims/aa55538e31acd877b2451c5234f55bc4.png",
+      "url": "http://hptqq2o2qjva7lcaaq67w36jihzivkaitkexorauw7b2yul2z6zozpqd.onion/post/MU7nZVTkyUp3ngugKlwOnyVtxCATQdyB",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "panzer_khaled_alfagih_engineering_consultancy",
       "victim_name": "KHALED ALFAGIH ENGINEERING CONSULTANCY",
