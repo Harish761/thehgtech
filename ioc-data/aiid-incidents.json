@@ -3713,14 +3713,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-621",
-      "incident_id": 621,
-      "title": "Microsoft AI Is Alleged to Have Generated Violent Imagery of Minorities and Public Figures",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-739",
       "incident_id": 739,
       "title": "Scammers Allegedly Use Deepfake of Hong Kong Entertainer Andy Lau to Steal NT$2.64 Million from Fan",
@@ -3753,67 +3745,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1098",
-      "incident_id": 1098,
-      "title": "Image Purporting to Show President Paul Kagame of Rwanda in M23 Uniform Reportedly AI-Generated",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1116",
-      "incident_id": 1116,
-      "title": "Alleged Deepfake Video Depicts Former Malaysian Inspector-General of Police Tan Sri Acryl Sani Abdul",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1133",
-      "incident_id": 1133,
-      "title": "Reported AI-Generated Audio of Ukrainian Commander Andriy Biletsky Used in Russian Disinformation Ca",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1202",
-      "incident_id": 1202,
-      "title": "Russian Disinformation Campaign Reportedly Used AI-Generated Posts and Videos to Target 2025 Moldova",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1336",
-      "incident_id": 1336,
-      "title": "BJP Used Deepfake Videos of Manoj Tiwari to Target Haryanvi Voters in 2020 Delhi Election",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1414",
-      "incident_id": 1414,
-      "title": "Purported Gemini-Generated AI Images Reportedly Claimed U.S. Delta Force Soldiers Were Captured by t",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1419",
       "incident_id": 1419,
       "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
       "date": "2026-06-09",
       "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1425",
-      "incident_id": 1425,
-      "title": "'Citizens Against Mamdani' Accounts Reportedly Posted AI-Generated Videos of Fictional New Yorkers t",
-      "date": "2026-06-09",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -3825,38 +3761,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1481",
-      "incident_id": 1481,
-      "title": "Purported AI-Generated YouTube Network Reportedly Promoted Alberta Secession and U.S. Annexation Nar",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1496",
-      "incident_id": 1496,
-      "title": "Purportedly AI-Generated Jeffrey Epstein Video Reportedly Used by Pro-Iran Accounts to Claim Iran Wa",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1513",
-      "incident_id": 1513,
-      "title": "Dimal Basha's Likeness Was Reportedly Used in Purportedly Fake AI-Generated Video After Kosovo Parli",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1518",
-      "incident_id": 1518,
-      "title": "Kosovo Public Broadcaster RTK and Journalist G\u00ebzim Bimbashi Were Reportedly AI-Impersonated in Alleg",
-      "date": "2026-06-09",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1525",
       "incident_id": 1525,
       "title": "Purported Deepfake Video Reportedly Impersonated Former Mongolian Deputy Prime Minister Amarsaikhan ",
@@ -3866,9 +3770,9 @@
     }
   ],
   "stats": {
-    "total": 483,
+    "total": 471,
     "last7Days": 248,
     "last30Days": 319
   },
-  "lastUpdated": "2026-09-07T09:55:32.346835+05:30"
+  "lastUpdated": "2026-09-07T19:42:47.282653+05:30"
 }
