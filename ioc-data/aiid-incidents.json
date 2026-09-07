@@ -185,6 +185,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-18",
+      "incident_id": 18,
+      "title": "Gender Biases of Google Image Search",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-12",
       "incident_id": 12,
       "title": "Common Biases of Vector Embeddings",
@@ -217,25 +225,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-13",
-      "incident_id": 13,
-      "title": "High-Toxicity Assessed on Text Involving Women and Minority Groups",
+      "id": "AIID-9",
+      "incident_id": 9,
+      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-18",
-      "incident_id": 18,
-      "title": "Gender Biases of Google Image Search",
-      "date": "2026-09-05",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-9",
-      "incident_id": 9,
-      "title": "New York City Reportedly Released Disputed Value-Added Teacher Ratings for Thousands of Teachers",
+      "id": "AIID-13",
+      "incident_id": 13,
+      "title": "High-Toxicity Assessed on Text Involving Women and Minority Groups",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -273,14 +273,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-81",
-      "incident_id": 81,
-      "title": "Researchers find evidence of racial, gender, and socioeconomic bias in chest X-ray classifiers",
-      "date": "2026-09-05",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-77",
       "incident_id": 77,
       "title": "Knightscope's Park Patrol Robot Ignored Bystander Pressing Emergency Button to Alert Police about Fi",
@@ -294,6 +286,14 @@
       "title": "Houston ISD's EVAAS Teacher-Evaluation System Reportedly Put Teachers' Jobs at Risk Through Unverifi",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-81",
+      "incident_id": 81,
+      "title": "Researchers find evidence of racial, gender, and socioeconomic bias in chest X-ray classifiers",
+      "date": "2026-09-05",
+      "category": "bias",
       "severity": "medium"
     },
     {
@@ -329,17 +329,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-116",
-      "incident_id": 116,
-      "title": "Amazon's AI Cameras Incorrectly Penalized Delivery Drivers for Mistakes They Did Not Make",
+      "id": "AIID-119",
+      "incident_id": 119,
+      "title": "Xsolla Employees Fired by CEO Allegedly via Big Data Analytics of Work Activities",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-119",
-      "incident_id": 119,
-      "title": "Xsolla Employees Fired by CEO Allegedly via Big Data Analytics of Work Activities",
+      "id": "AIID-116",
+      "incident_id": 116,
+      "title": "Amazon's AI Cameras Incorrectly Penalized Delivery Drivers for Mistakes They Did Not Make",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -393,14 +393,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-204",
-      "incident_id": 204,
-      "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
-      "date": "2026-09-05",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-188",
       "incident_id": 188,
       "title": "Argentinian City Government Deployed Teenage-Pregnancy Predictive Algorithm Using Invasive Demograph",
@@ -409,9 +401,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-239",
-      "incident_id": 239,
-      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
+      "id": "AIID-204",
+      "incident_id": 204,
+      "title": "A Chinese Tech Worker at Zhihu Fired Allegedly via a Resignation Risk Prediction Algorithm",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -420,6 +412,14 @@
       "id": "AIID-210",
       "incident_id": 210,
       "title": "Indian Political App Tek Fog Allegedly Hijacked Trends and Manipulated Public Opinion on Other Socia",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-239",
+      "incident_id": 239,
+      "title": "Algorithmic Teacher Evaluation Program Reportedly Failed to Improve Student Outcomes and Was Alleged",
       "date": "2026-09-05",
       "category": "other",
       "severity": "medium"
@@ -481,6 +481,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-395",
+      "incident_id": 395,
+      "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
+      "date": "2026-09-05",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-354",
       "incident_id": 354,
       "title": "Uber Allegedly Violated GDPR by Failing to Provide Sufficient Notice on Automated Profiling for Driv",
@@ -502,6 +510,22 @@
       "title": "Transgender Uber Drivers Mistakenly Kicked off App for Appearance Change during Gender Transitions",
       "date": "2026-09-05",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-382",
+      "incident_id": 382,
+      "title": "Instagram's Exposure of Harmful Content Allegedly Contributed to Teenage Girl's Suicide",
+      "date": "2026-09-05",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-386",
+      "incident_id": 386,
+      "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management",
+      "date": "2026-09-05",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -529,30 +553,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-395",
-      "incident_id": 395,
-      "title": "Amazon Allegedly Forced Deployment of AI-Powered Cameras on Delivery Drivers",
-      "date": "2026-09-05",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-382",
-      "incident_id": 382,
-      "title": "Instagram's Exposure of Harmful Content Allegedly Contributed to Teenage Girl's Suicide",
-      "date": "2026-09-05",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-386",
-      "incident_id": 386,
-      "title": "Amazon\u2019s \"Time Off Task\" System Made False Assumptions about Workers' Time Management",
-      "date": "2026-09-05",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-438",
       "incident_id": 438,
       "title": "Henan Authorities Reportedly Commissioned Facial Recognition System to Track Journalists and Interna",
@@ -564,6 +564,14 @@
       "id": "AIID-480",
       "incident_id": 480,
       "title": "Non-consensual Deepfake Porn Targeted Female Content Creators",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-494",
+      "incident_id": 494,
+      "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
       "date": "2026-09-05",
       "category": "deepfake",
       "severity": "medium"
@@ -593,6 +601,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-530",
+      "incident_id": 530,
+      "title": "Telegram Channels Allowed Users to Make Non-Consensual Deepfake Porn as Paid Service",
+      "date": "2026-09-05",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-580",
+      "incident_id": 580,
+      "title": "Alleged Gender Discrimination in Facebook Job Ads Algorithm",
+      "date": "2026-09-05",
+      "category": "bias",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-597",
       "incident_id": 597,
       "title": "Female Students at Westfield High School in New Jersey Reportedly Targeted with Deepfake Nudes",
@@ -614,30 +638,6 @@
       "title": "Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters",
       "date": "2026-09-05",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-494",
-      "incident_id": 494,
-      "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
-      "date": "2026-09-05",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-530",
-      "incident_id": 530,
-      "title": "Telegram Channels Allowed Users to Make Non-Consensual Deepfake Porn as Paid Service",
-      "date": "2026-09-05",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-580",
-      "incident_id": 580,
-      "title": "Alleged Gender Discrimination in Facebook Job Ads Algorithm",
-      "date": "2026-09-05",
-      "category": "bias",
       "severity": "medium"
     },
     {
@@ -905,30 +905,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-518",
-      "incident_id": 518,
-      "title": "New York Detective Reportedly Misused Woody Harrelson's Face to Perform Face Recognition Search",
-      "date": "2026-09-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-538",
-      "incident_id": 538,
-      "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
-      "date": "2026-09-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-592",
-      "incident_id": 592,
-      "title": "Facial Recognition Misidentifies Pregnant Woman Leading to False Arrest in Detroit",
-      "date": "2026-09-04",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-514",
       "incident_id": 514,
       "title": "Turnitin's ChatGPT-Detection Tool Falsely Flagged Student Essays as AI-Generated",
@@ -953,6 +929,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-518",
+      "incident_id": 518,
+      "title": "New York Detective Reportedly Misused Woody Harrelson's Face to Perform Face Recognition Search",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-538",
+      "incident_id": 538,
+      "title": "Texas A&M-Commerce Professor Reportedly Used ChatGPT to Accuse Students of Cheating and Assign Incom",
+      "date": "2026-09-04",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-557",
       "incident_id": 557,
       "title": "Miami Police Deployed Facial Recognition to Arrest George Floyd Protestor Allegedly without Cause",
@@ -974,6 +966,14 @@
       "title": "University Student Reportedly Received Zero After Turnitin AI Detector Flagged Essay",
       "date": "2026-09-04",
       "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-592",
+      "incident_id": 592,
+      "title": "Facial Recognition Misidentifies Pregnant Woman Leading to False Arrest in Detroit",
+      "date": "2026-09-04",
+      "category": "misinformation",
       "severity": "medium"
     },
     {
@@ -1329,17 +1329,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-112",
-      "incident_id": 112,
-      "title": "Police Departments Reported ShotSpotter as Unreliable and Wasteful",
+      "id": "AIID-99",
+      "incident_id": 99,
+      "title": "Major Universities Are Reportedly Using Race as a 'High Impact Predictor' of Student Success",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-99",
-      "incident_id": 99,
-      "title": "Major Universities Are Reportedly Using Race as a 'High Impact Predictor' of Student Success",
+      "id": "AIID-112",
+      "incident_id": 112,
+      "title": "Police Departments Reported ShotSpotter as Unreliable and Wasteful",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -1350,6 +1350,14 @@
       "title": "UT Austin's GRADE Algorithm Reportedly Reduced Review of Lower-Scored PhD Applicants Amid Bias Conce",
       "date": "2026-09-03",
       "category": "bias",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-162",
+      "incident_id": 162,
+      "title": "ETS Used Allegedly Flawed Voice Recognition Evidence to Accuse and Assess Scale of Cheating, Causing",
+      "date": "2026-09-03",
+      "category": "other",
       "severity": "medium"
     },
     {
@@ -1393,14 +1401,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-162",
-      "incident_id": 162,
-      "title": "ETS Used Allegedly Flawed Voice Recognition Evidence to Accuse and Assess Scale of Cheating, Causing",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-195",
       "incident_id": 195,
       "title": "Predictive Policing Program by Florida Sheriff\u2019s Office Allegedly Violated Residents\u2019 Rights and Tar",
@@ -1417,20 +1417,20 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-214",
-      "incident_id": 214,
-      "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-189",
       "incident_id": 189,
       "title": "Opaque Fraud Detection Algorithm by the UK\u2019s Department of Work and Pensions Allegedly Discriminated",
       "date": "2026-09-03",
       "category": "bias",
       "severity": "high"
+    },
+    {
+      "id": "AIID-214",
+      "incident_id": 214,
+      "title": "SN Technologies Reportedly Lied to a New York State School District about Its Facial and Weapon Dete",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-235",
@@ -1449,25 +1449,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-246",
-      "incident_id": 246,
-      "title": "Misreading of an Automated License Plate Reader (ALPR) Unverified by Police, Resulting in Traffic St",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-248",
-      "incident_id": 248,
-      "title": "Reported Automated License Plate Reader Alert on Previously Stolen Rental Car Leads to Alleged Wrong",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-244",
       "incident_id": 244,
       "title": "Colorado Police\u2019s Automated License Plate Reader (ALPR) Matched a Family\u2019s Minivan\u2019s Plate to That o",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-246",
+      "incident_id": 246,
+      "title": "Misreading of an Automated License Plate Reader (ALPR) Unverified by Police, Resulting in Traffic St",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -1481,6 +1473,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-248",
+      "incident_id": 248,
+      "title": "Reported Automated License Plate Reader Alert on Previously Stolen Rental Car Leads to Alleged Wrong",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-238",
       "incident_id": 238,
       "title": "Oregon\u2019s Screening Tool for Child Abuse Cases Discontinued Following Concerns of Racial Bias",
@@ -1489,17 +1489,17 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-256",
-      "incident_id": 256,
-      "title": "DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert",
+      "id": "AIID-255",
+      "incident_id": 255,
+      "title": "Unreliable ShotSpotter Audio Previously Used to Convict Chicago Man in Murder Case",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
     },
     {
-      "id": "AIID-255",
-      "incident_id": 255,
-      "title": "Unreliable ShotSpotter Audio Previously Used to Convict Chicago Man in Murder Case",
+      "id": "AIID-256",
+      "incident_id": 256,
+      "title": "DUI Arrest Case Allegedly Based Only on ShotSpotter's Alert",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -1609,9 +1609,25 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-440",
+      "incident_id": 440,
+      "title": "Louisiana Police Wrongfully Arrested Black Man Using False Face Match",
+      "date": "2026-09-03",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-446",
       "incident_id": 446,
       "title": "ShotSpotter Failed to Alert Authorities of Mass Shooting in North Carolina",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-461",
+      "incident_id": 461,
+      "title": "IRS Audited Black Taxpayers More Frequently Reportedly Due to Algorithm",
       "date": "2026-09-03",
       "category": "other",
       "severity": "medium"
@@ -1625,28 +1641,20 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-440",
-      "incident_id": 440,
-      "title": "Louisiana Police Wrongfully Arrested Black Man Using False Face Match",
-      "date": "2026-09-03",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-461",
-      "incident_id": 461,
-      "title": "IRS Audited Black Taxpayers More Frequently Reportedly Due to Algorithm",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-483",
       "incident_id": 483,
       "title": "Indian Police Allegedly Tortured and Killed Innocent Man Following Facial Misidentification",
       "date": "2026-09-03",
       "category": "other",
       "severity": "critical"
+    },
+    {
+      "id": "AIID-501",
+      "incident_id": 501,
+      "title": "Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman",
+      "date": "2026-09-03",
+      "category": "misinformation",
+      "severity": "medium"
     },
     {
       "id": "AIID-502",
@@ -1665,6 +1673,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-588",
+      "incident_id": 588,
+      "title": "Australian Terrorism Prediction Tool Reportedly Disparately Impacts Persons with Autism",
+      "date": "2026-09-03",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-608",
       "incident_id": 608,
       "title": "UnitedHealth Accused of Deploying  Allegedly Flawed AI to Deny Medical Coverage",
@@ -1679,22 +1695,6 @@
       "date": "2026-09-03",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-501",
-      "incident_id": 501,
-      "title": "Length of Stay False Diagnosis Cut Off Insurer's Payment for Treatment of Elderly Woman",
-      "date": "2026-09-03",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-588",
-      "incident_id": 588,
-      "title": "Australian Terrorism Prediction Tool Reportedly Disparately Impacts Persons with Autism",
-      "date": "2026-09-03",
-      "category": "other",
-      "severity": "medium"
     },
     {
       "id": "AIID-733",
@@ -1809,14 +1809,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-199",
-      "incident_id": 199,
-      "title": "Ever AI Reportedly Deceived Customers about FRT Use in App",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-212",
       "incident_id": 212,
       "title": "XPeng Motors Fined For Illegal Collection of Consumers\u2019 Faces Using Facial Recognition Cameras",
@@ -1825,9 +1817,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-258",
-      "incident_id": 258,
-      "title": "Australian Retailers Reportedly Captured Face Prints of Their Customers without Consent",
+      "id": "AIID-199",
+      "incident_id": 199,
+      "title": "Ever AI Reportedly Deceived Customers about FRT Use in App",
       "date": "2026-08-31",
       "category": "other",
       "severity": "medium"
@@ -1836,6 +1828,14 @@
       "id": "AIID-254",
       "incident_id": 254,
       "title": "Google's Face Grouping Allegedly Collected and Analyzed Users' Facial Structure without Consent, Vio",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-258",
+      "incident_id": 258,
+      "title": "Australian Retailers Reportedly Captured Face Prints of Their Customers without Consent",
       "date": "2026-08-31",
       "category": "other",
       "severity": "medium"
@@ -1857,22 +1857,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-361",
-      "incident_id": 361,
-      "title": "Amazon Echo Mistakenly Recorded and Sent Private Conversation to Random Contact",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-409",
-      "incident_id": 409,
-      "title": "Facial Recognition Researchers Allegedly Used YouTube Videos of Transgender People Without Consent",
-      "date": "2026-08-31",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-368",
       "incident_id": 368,
       "title": "Facial Recognition Smart Phone App 'Blue Wolf' Reportedly Monitored Palestinians in the West Bank",
@@ -1884,6 +1868,14 @@
       "id": "AIID-358",
       "incident_id": 358,
       "title": "Calgary Malls Reportedly Deployed Facial Recognition Without Customer Consent",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-361",
+      "incident_id": 361,
+      "title": "Amazon Echo Mistakenly Recorded and Sent Private Conversation to Random Contact",
       "date": "2026-08-31",
       "category": "other",
       "severity": "medium"
@@ -1924,6 +1916,14 @@
       "id": "AIID-408",
       "incident_id": 408,
       "title": "Facebook Reportedly Outed Sex Workers through Friend Recommendations",
+      "date": "2026-08-31",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-409",
+      "incident_id": 409,
+      "title": "Facial Recognition Researchers Allegedly Used YouTube Videos of Transgender People Without Consent",
       "date": "2026-08-31",
       "category": "other",
       "severity": "medium"
@@ -2025,14 +2025,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-432",
-      "incident_id": 432,
-      "title": "Southwest Airlines Crew Scheduling Solver Degenerates Flight Network",
-      "date": "2026-08-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-425",
       "incident_id": 425,
       "title": "State Farm Allegedly Discriminated against Black Customers in Claim Payout",
@@ -2041,12 +2033,12 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-591",
-      "incident_id": 591,
-      "title": "Cigna Algorithm PXDX Allegedly Rejected Thousands of Patient Claims En Masse in Breach of California",
+      "id": "AIID-432",
+      "incident_id": 432,
+      "title": "Southwest Airlines Crew Scheduling Solver Degenerates Flight Network",
       "date": "2026-08-29",
-      "category": "data_leak",
-      "severity": "critical"
+      "category": "other",
+      "severity": "medium"
     },
     {
       "id": "AIID-489",
@@ -2063,6 +2055,14 @@
       "date": "2026-08-29",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-591",
+      "incident_id": 591,
+      "title": "Cigna Algorithm PXDX Allegedly Rejected Thousands of Patient Claims En Masse in Breach of California",
+      "date": "2026-08-29",
+      "category": "data_leak",
+      "severity": "critical"
     },
     {
       "id": "AIID-644",
@@ -3729,22 +3729,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-958",
-      "incident_id": 958,
-      "title": "Europol Operation Cumberland Investigates at Least 273 Suspects in 19 Countries for AI-Generated Chi",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1033",
-      "incident_id": 1033,
-      "title": "Video Allegedly Altered by AI Reportedly Spreads Claim of Nigerian Doctor's Hypertension Cure",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1419",
       "incident_id": 1419,
       "title": "Purported Deepfake Images of Gr\u00e1inne Seoige Reportedly Circulated During Ireland's 2024 General Elec",
@@ -3770,9 +3754,9 @@
     }
   ],
   "stats": {
-    "total": 471,
-    "last7Days": 248,
-    "last30Days": 319
+    "total": 469,
+    "last7Days": 221,
+    "last30Days": 315
   },
-  "lastUpdated": "2026-09-07T19:42:47.282653+05:30"
+  "lastUpdated": "2026-09-08T01:22:40.916995+05:30"
 }
