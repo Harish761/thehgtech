@@ -1,6 +1,126 @@
 {
   "incidents": [
     {
+      "id": "AIID-1115",
+      "incident_id": 1115,
+      "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1131",
+      "incident_id": 1131,
+      "title": "Alleged Deepfake Identity Scam Uses Miami Beach Realtor's Likeness to Defraud Victim in the United K",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1206",
+      "incident_id": 1206,
+      "title": "Purported AI-Generated Deepfake of Spiritual Leader Sadhguru Used in Investment Scam Allegedly Defra",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1328",
+      "incident_id": 1328,
+      "title": "Purported Deepfake Impersonating Elon Musk Allegedly Defrauded Elderly U.S. Woman of $50,000 via Gif",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1353",
+      "incident_id": 1353,
+      "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1448",
+      "incident_id": 1448,
+      "title": "Ohio Man Pleaded Guilty after Prosecutors Alleged He Used AI to Create and Distribute Nonconsensual ",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1474",
+      "incident_id": 1474,
+      "title": "Tasmanian School Students Reportedly Created Purported AI-Generated Pornographic Images of Female Cl",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1485",
+      "incident_id": 1485,
+      "title": "Guelph, Ontario, Woman Reportedly Lost $14,000 in Purported Deepfake MrBeast Cryptocurrency Scam",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1500",
+      "incident_id": 1500,
+      "title": "New Jersey Man Cornelius Shannon Allegedly Published Hundreds of AI-Generated Deepfake Pornography A",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1501",
+      "incident_id": 1501,
+      "title": "Texas Man Arturo Hernandez Allegedly Published AI-Generated Deepfake Pornography Depicting Women in ",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1506",
+      "incident_id": 1506,
+      "title": "ChatGPT Was Alleged to Have Reinforced Pittsburgh Man's Stalking and Threats Against Women",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1511",
+      "incident_id": 1511,
+      "title": "Grok Reportedly Generated Images After X Users Asked It to Unredact Epstein-File Photos of Children ",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1610",
+      "incident_id": 1610,
+      "title": "Queensland Man Allegedly Distributed Purportedly AI-Generated Sexual Posters Falsely Advertising Wom",
+      "date": "2026-09-07",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1623",
+      "incident_id": 1623,
+      "title": "Pennsylvania's Lancaster Country Day School Students Allegedly Used AI to Create Hundreds of Sexuali",
+      "date": "2026-09-07",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1643",
+      "incident_id": 1643,
+      "title": "Wyoming Woman's Childhood Photograph Reportedly Used to Generate Thousands of Explicit Images with G",
+      "date": "2026-09-07",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1171",
       "incident_id": 1171,
       "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
@@ -1028,14 +1148,6 @@
       "id": "AIID-1312",
       "incident_id": 1312,
       "title": "ZeroEyes AI Surveillance System Reportedly Flagged Clarinet as Gun, Triggering School Lockdown in Fl",
-      "date": "2026-09-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1353",
-      "incident_id": 1353,
-      "title": "ICE Facial Recognition App Mobile Fortify Reportedly Misidentified Woman Twice During Immigration En",
       "date": "2026-09-04",
       "category": "other",
       "severity": "medium"
@@ -2377,14 +2489,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1643",
-      "incident_id": 1643,
-      "title": "Wyoming Woman's Childhood Photograph Reportedly Used to Generate Thousands of Explicit Images with G",
-      "date": "2026-08-15",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1633",
       "incident_id": 1633,
       "title": "Anthropic and OpenAI AI Agents Reportedly Took Unsanctioned Actions on the Live Internet During UK A",
@@ -2513,14 +2617,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1623",
-      "incident_id": 1623,
-      "title": "Pennsylvania's Lancaster Country Day School Students Allegedly Used AI to Create Hundreds of Sexuali",
-      "date": "2026-08-06",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1624",
       "incident_id": 1624,
       "title": "ISWAP Reportedly Used AI Guidance to Breach Nigerian Military Base Defenses by Motorcycle",
@@ -2532,14 +2628,6 @@
       "id": "AIID-1608",
       "incident_id": 1608,
       "title": "Purportedly AI-Generated Memorial Posters Reportedly Presented Fabricated Child Portraits as Victims",
-      "date": "2026-07-31",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1610",
-      "incident_id": 1610,
-      "title": "Queensland Man Allegedly Distributed Purportedly AI-Generated Sexual Posters Falsely Advertising Wom",
       "date": "2026-07-31",
       "category": "misinformation",
       "severity": "medium"
@@ -3769,42 +3857,18 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1522",
-      "incident_id": 1522,
-      "title": "Reported AI-Generated Videos Allegedly Posed as Kosovo Election Vox Pops Before June 7, 2026 Vote",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1525",
       "incident_id": 1525,
       "title": "Purported Deepfake Video Reportedly Impersonated Former Mongolian Deputy Prime Minister Amarsaikhan ",
       "date": "2026-06-09",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1526",
-      "incident_id": 1526,
-      "title": "Reddit Scam Ads Reportedly Used Deepfake News Segments and Cloned Media Sites to Promote Allegedly F",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1527",
-      "incident_id": 1527,
-      "title": "Purported Deepfake Ads Reportedly Fabricated BBC Question Time Confrontations Between Andrew Bailey ",
-      "date": "2026-06-09",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 475,
-    "last7Days": 234,
-    "last30Days": 306
+    "total": 483,
+    "last7Days": 248,
+    "last30Days": 319
   },
-  "lastUpdated": "2026-09-07T03:35:52.348963+05:30"
+  "lastUpdated": "2026-09-07T09:55:32.346835+05:30"
 }
