@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1677",
+      "incident_id": 1677,
+      "title": "xAI Reportedly Operated Unpermitted Gas Turbines in Southaven, Mississippi, to Power Colossus 2 AI D",
+      "date": "2026-09-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1678",
+      "incident_id": 1678,
+      "title": "Avride Autonomous Vehicle Reportedly Struck and Killed Nesting Duck Near Mueller Lake Park in Austin",
+      "date": "2026-09-08",
+      "category": "autonomous_vehicle",
+      "severity": "critical"
+    },
+    {
+      "id": "AIID-1679",
+      "incident_id": 1679,
+      "title": "Lyft Driver in Boca Raton, Florida, Allegedly Used Purported Google Gemini-Generated Image to Suppor",
+      "date": "2026-09-08",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1115",
       "incident_id": 1115,
       "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
@@ -3714,9 +3738,9 @@
     }
   ],
   "stats": {
-    "total": 464,
-    "last7Days": 221,
-    "last30Days": 315
+    "total": 467,
+    "last7Days": 224,
+    "last30Days": 318
   },
-  "lastUpdated": "2026-09-08T18:20:08.702677+05:30"
+  "lastUpdated": "2026-09-09T00:55:48.114145+05:30"
 }
