@@ -33,6 +33,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1681",
+      "incident_id": 1681,
+      "title": "Georgia Retired Couple Reportedly Lost Nearly $800,000 in Cryptocurrency Scam Using Purported AI-Gen",
+      "date": "2026-09-08",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1115",
       "incident_id": 1115,
       "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
@@ -3746,9 +3754,9 @@
     }
   ],
   "stats": {
-    "total": 468,
-    "last7Days": 225,
-    "last30Days": 319
+    "total": 469,
+    "last7Days": 226,
+    "last30Days": 320
   },
-  "lastUpdated": "2026-09-09T02:50:15.050249+05:30"
+  "lastUpdated": "2026-09-09T04:04:07.855050+05:30"
 }
