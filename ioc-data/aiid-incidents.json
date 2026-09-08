@@ -3711,20 +3711,12 @@
       "date": "2026-06-11",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1436",
-      "incident_id": 1436,
-      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During June 2",
-      "date": "2026-06-09",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 465,
+    "total": 464,
     "last7Days": 221,
     "last30Days": 315
   },
-  "lastUpdated": "2026-09-08T04:15:52.302897+05:30"
+  "lastUpdated": "2026-09-08T09:55:12.082641+05:30"
 }
