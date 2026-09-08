@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1680",
+      "incident_id": 1680,
+      "title": "Unknown Actor Reportedly Exploited Cline's Claude-Powered GitHub Issue-Triage Workflow and Published",
+      "date": "2026-09-08",
+      "category": "other",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1115",
       "incident_id": 1115,
       "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
@@ -3738,9 +3746,9 @@
     }
   ],
   "stats": {
-    "total": 467,
-    "last7Days": 224,
-    "last30Days": 318
+    "total": 468,
+    "last7Days": 225,
+    "last30Days": 319
   },
-  "lastUpdated": "2026-09-09T00:55:48.114145+05:30"
+  "lastUpdated": "2026-09-09T02:50:15.050249+05:30"
 }
