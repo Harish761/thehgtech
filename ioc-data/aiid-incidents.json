@@ -41,6 +41,14 @@
       "severity": "high"
     },
     {
+      "id": "AIID-1682",
+      "incident_id": 1682,
+      "title": "D.C. Court of Appeals Struck Deutsche Bank National Trust Company Brief After Attorney Used Google G",
+      "date": "2026-09-08",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1115",
       "incident_id": 1115,
       "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
@@ -3754,9 +3762,9 @@
     }
   ],
   "stats": {
-    "total": 469,
-    "last7Days": 226,
-    "last30Days": 320
+    "total": 470,
+    "last7Days": 227,
+    "last30Days": 321
   },
-  "lastUpdated": "2026-09-09T04:04:07.855050+05:30"
+  "lastUpdated": "2026-09-09T10:00:41.446240+05:30"
 }
