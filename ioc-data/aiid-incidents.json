@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1683",
+      "incident_id": 1683,
+      "title": "Delhi Man Allegedly Used AI to Create and Circulate Obscene Images of College Acquaintance",
+      "date": "2026-09-09",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1677",
       "incident_id": 1677,
       "title": "xAI Reportedly Operated Unpermitted Gas Turbines in Southaven, Mississippi, to Power Colossus 2 AI D",
@@ -3751,20 +3759,12 @@
       "date": "2026-06-13",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1528",
-      "incident_id": 1528,
-      "title": "AI-Enabled TruDi Navigation System Was Alleged to Have Contributed to Patient's Stroke During May 20",
-      "date": "2026-06-11",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 470,
-    "last7Days": 227,
-    "last30Days": 321
+    "last7Days": 228,
+    "last30Days": 322
   },
-  "lastUpdated": "2026-09-10T02:36:14.160804+05:30"
+  "lastUpdated": "2026-09-10T03:58:26.452775+05:30"
 }
