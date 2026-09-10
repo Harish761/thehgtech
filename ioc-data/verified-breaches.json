@@ -1348,7 +1348,7 @@
   "artvalue.com": [
     {
       "Name": "Artvalue",
-      "Title": "Artvalue",
+      "Title": "Artvalue.com",
       "BreachDate": "2019-06-19",
       "AddedDate": "2019-07-19T13:16:52Z",
       "PwnCount": 157692,
@@ -1361,7 +1361,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2019, the France-based art valuation website <a href=\"http://artvalue.com/\" target=\"_blank\" rel=\"noopener\">Artvalue.com</a> left their 158k member subscriber base publicly exposed in a text file on their website. The exposed data included names, usernames, email addresses and passwords stored as MD5 hashes. The site operator did not respond when contacted about the incident, although the exposed file was subsequently removed."
+      "Description": "In June 2019, the France-based art valuation website Artvalue.com (now defunct) left their 158k member subscriber base publicly exposed in a text file on their website. The exposed data included names, usernames, email addresses and passwords stored as MD5 hashes. The site operator did not respond when contacted about the incident, although the exposed file was subsequently removed."
     }
   ],
   "ashleymadison.com": [
@@ -10421,6 +10421,28 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In April 2026, education company <a href=\"https://www.bleepingcomputer.com/news/security/mcgraw-hill-confirms-data-breach-following-extortion-threat/\" target=\"_blank\" rel=\"noopener\">McGraw Hill confirmed a data breach following an extortion attempt</a>. Attributed to a Salesforce misconfiguration, the company stated the incident exposed \"a limited set of data from a webpage hosted by Salesforce on its platform\". More than 100GB of data was later publicly distributed, containing 13.5M unique email addresses across multiple files, with additional fields such as name, physical address and phone number appearing inconsistently across some records."
+    }
+  ],
+  "mckesson.com": [
+    {
+      "Name": "McKesson",
+      "Title": "McKesson",
+      "BreachDate": "2026-08-21",
+      "AddedDate": "2026-09-10T05:45:39Z",
+      "PwnCount": 6404340,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Employers",
+        "Genders",
+        "Names",
+        "Personal health data",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, <a href=\"https://www.bleepingcomputer.com/news/security/mckesson-discloses-breach-after-shinyhunters-claims-patient-data-theft/\" target=\"_blank\" rel=\"noopener\">healthcare and pharmaceutical company McKesson was targeted in a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published a substantial corpus of data they alleged was sourced from the company, which included 6.4M unique email addresses among other personal and corporate data attributes. The impacted data related to a range of individuals and roles, including marketing campaign recipients, patients, staff and healthcare provider contacts. In <a href=\"https://www.mckesson.com/utility/cybersecurity/customer-cybersecurity-information-center/\" target=\"_blank\" rel=\"noopener\">McKesson's disclosure notice</a>, the company advised it had identified unauthorised access to \"certain third-party applications and the exfiltration of certain data was associated with a subset of customers within our Oncology & Multispecialty and Medical-Surgical business units\", but had \"reasonable assurance of no ongoing unauthorized activity\"."
     }
   ],
   "mdpi.com": [
