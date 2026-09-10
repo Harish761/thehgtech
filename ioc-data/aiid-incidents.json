@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1686",
+      "incident_id": 1686,
+      "title": "Tesla Model S with Autopilot Reportedly Engaged Struck Parked SUV in Key Largo, Killing One Person a",
+      "date": "2026-09-10",
+      "category": "autonomous_vehicle",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1683",
       "incident_id": 1683,
       "title": "Delhi Man Allegedly Used AI to Create and Circulate Obscene Images of College Acquaintance",
@@ -3778,9 +3786,9 @@
     }
   ],
   "stats": {
-    "total": 472,
-    "last7Days": 170,
-    "last30Days": 324
+    "total": 473,
+    "last7Days": 171,
+    "last30Days": 325
   },
-  "lastUpdated": "2026-09-11T02:36:14.727570+05:30"
+  "lastUpdated": "2026-09-11T03:59:28.805391+05:30"
 }
