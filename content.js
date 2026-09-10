@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Sep 10 2026",
+            "headline": "NetScaler Flaw CVE-2026-19490 Exploited—Patch Immediately",
+            "title": "Critical NetScaler Vulnerability CVE-2026-19490 Actively Exploited in Attacks",
+            "content": "A critical authentication bypass vulnerability, tracked as CVE-2026-19490, has been actively exploited in Citrix NetScaler products since at least September 3, 2026. This flaw allows attackers to bypass authentication mechanisms, potentially leading to unauthorized access to sensitive systems. Organizations using affected NetScaler versions should prioritize patching to mitigate potential breaches. This incident underscores the importance of timely updates, as attackers increasingly target known vulnerabilities. Security teams should review their systems for signs of compromise and ensure all patches are applied promptly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-netscaler-vulnerability-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Check Point VPN Flaws Allow RCE—Patch Now",
+            "title": "Check Point Discloses Critical VPN Certificate Vulnerabilities Enabling Remote Code Execution",
+            "content": "Check Point has addressed two critical vulnerabilities in its firewall and management products related to VPN certificate handling, both rated 9.8 in severity. These flaws could permit unauthenticated remote code execution under specific, undisclosed conditions. Organizations using Check Point products should apply the latest patches to prevent potential exploitation. The vulnerabilities highlight the ongoing risks associated with VPN technologies and the need for stringent security measures. As remote work continues to expand, securing VPN infrastructure remains a top priority for IT departments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "AdaptHealth Breach Exposes 4.1M Records—Data at Risk",
+            "title": "AdaptHealth Data Breach Affects 4.1 Million Individuals",
+            "content": "In a significant data breach, hackers accessed personal, health, and insurance information from AdaptHealth's systems in June 2026, impacting approximately 4.1 million individuals. The breach underscores the vulnerabilities in healthcare data management and the critical need for robust cybersecurity measures. Affected individuals should monitor their accounts for suspicious activity and consider identity protection services. This incident highlights the healthcare sector's ongoing struggle with data security and the potential consequences of inadequate protections.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/4-1-million-impacted-by-adapthealth-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "CISA Sets Sept. 12 Deadline for Cisco, Citrix, Fortinet Patches",
+            "title": "CISA Urges Immediate Patching of Cisco, Citrix, Fortinet Vulnerabilities",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added critical vulnerabilities affecting Cisco, Citrix, and Fortinet products to its Known Exploited Vulnerabilities catalog. Federal agencies must apply patches by September 12, 2026, to mitigate potential threats. These vulnerabilities, if left unpatched, could lead to unauthorized access and data breaches. Organizations are advised to prioritize these updates to protect their networks from exploitation. This directive reflects CISA's proactive approach to enhancing national cybersecurity resilience.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Cisco Secure FMC Exploitation Warning—Act Now",
+            "title": "Organizations Alerted to Exploitation of Cisco Secure FMC Vulnerability CVE-2026-20079",
+            "content": "Cisco and the Cybersecurity and Infrastructure Security Agency (CISA) have issued warnings about the active exploitation of CVE-2026-20079, a vulnerability in Cisco Secure FMC disclosed in March 2026. This flaw could allow attackers to gain unauthorized access to network management systems. Organizations using Cisco Secure FMC should apply the recommended patches immediately to prevent potential breaches. The ongoing exploitation of this vulnerability highlights the importance of timely updates and vigilant monitoring of network security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/organizations-warned-of-cisco-secure-fmc-exploitation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "ShieldCrash Exploit Targets Microsoft Defender—Patch Urgently",
+            "title": "New ‘ShieldCrash’ Zero-Day Exploit Compromises Microsoft Defender on Windows",
+            "content": "A zero-day exploit named 'ShieldCrash' has been identified, targeting Microsoft Defender on Windows systems with the latest September 2026 patches. This exploit grants attackers full system privileges, posing a significant risk to affected machines. Security professionals should prioritize deploying any available updates from Microsoft to mitigate this threat. The emergence of 'ShieldCrash' underscores the persistent challenges in securing endpoint protection software against sophisticated attacks. Organizations should remain vigilant and ensure their security solutions are up to date.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/new-shieldcrash-zero-day-exploit-targets-microsoft-defender/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Chrome Update Fixes Exploited V8 Vulnerability—Act Fast",
+            "title": "Urgent Chrome Update Addresses Actively Exploited V8 Vulnerability",
+            "content": "Google has released a critical update for Chrome, addressing an actively exploited vulnerability in the V8 JavaScript engine, along with 229 other security flaws. Users are strongly advised to update to the latest version to protect against potential attacks. The V8 vulnerability could allow attackers to execute arbitrary code via malicious web pages. This update is crucial for maintaining browser security, as Chrome continues to be a prime target for cyber threats. Regular updates are essential to safeguard against emerging vulnerabilities.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/09/update-chrome-now-to-protect-against-an-actively-exploited-vulnerability",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Post-Quantum Cryptography: Preparing for Future Threats",
+            "title": "Strategic Planning for Post-Quantum Cryptography in Enterprise Security",
+            "content": "As quantum computing advances, enterprises are urged to begin planning for post-quantum cryptography to protect sensitive data from future threats. The urgency stems from the potential for quantum computers to break current encryption standards. Organizations should assess their cryptographic assets and develop a transition strategy to quantum-resistant algorithms. This proactive approach is essential to ensure long-term data security and maintain trust in digital communications. The clock is ticking, and early preparation will mitigate risks associated with quantum breakthroughs.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4220259/getting-ahead-of-harvest-now-decrypt-later-post-quantum-cryptography-planning.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "EU Cyber Resilience Act: 24-Hour Reporting Mandate",
+            "title": "EU Cyber Resilience Act Enforces New 24-Hour Incident Reporting Requirement",
+            "content": "The European Union's Cyber Resilience Act, effective this Friday, mandates that organizations report serious product security incidents within 24 hours of discovery. This regulation aims to enhance transparency and improve the EU's overall cybersecurity posture. Companies must establish robust incident detection and reporting mechanisms to comply with the new requirements. The act reflects a growing trend towards stringent cybersecurity governance and accountability. Organizations should review their incident response plans to ensure timely compliance with the new mandate.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/eu-cyber-resilience-act-reporting-requirements",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Google Play Early Access Misused for Deceptive Apps",
+            "title": "Google Play Early Access Abused to Distribute Thousands of Deceptive Apps",
+            "content": "Malicious actors are exploiting Google Play's Early Access program to distribute deceptive Android apps, falsely promising money, rewards, and premium content. These apps, not yet officially released, pose significant risks to users by potentially harvesting personal data or delivering malware. Developers and users should exercise caution when engaging with Early Access apps and report suspicious activity to Google. This misuse highlights the challenges in maintaining app store integrity and the need for enhanced vetting processes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html",
+            "relatedResources": []
+        },
+        {
             "date": "Sep 09 2026",
             "headline": "$52.8M Crypto Seized—U.S. Shuts Down Xinbi Scam Hub",
             "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Android Patches 180 Vulnerabilities in September Update",
-            "title": "Android September 2026 Security Update Fixes 180 Vulnerabilities",
-            "content": "Google's September 2026 security update for Android addresses 180 vulnerabilities across its Framework, System, and Kernel components. This comprehensive patch includes fixes for critical flaws that could allow remote code execution, privilege escalation, and information disclosure. Android users are urged to update their devices to mitigate potential risks, as these vulnerabilities affect a wide range of Android versions and devices. This update underscores the ongoing challenge of securing the Android ecosystem against increasingly sophisticated threats. Users should ensure their devices are set to receive automatic updates to stay protected.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/androids-september-2026-updates-patch-180-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Fortinet Fixes Critical Bugs in Monitoring Tools",
-            "title": "Fortinet Patches Critical Vulnerabilities in FortiMonitorOnSight and Chrome Extension",
-            "content": "Fortinet has released patches for critical vulnerabilities in its FortiMonitorOnSight and Chrome Extension that could allow attackers to bypass authentication and proxy user browser traffic. These unauthenticated bugs pose significant risks, particularly for enterprises relying on Fortinet's monitoring solutions. Users are advised to apply the patches immediately to prevent potential exploitation. This update is part of Fortinet's ongoing efforts to enhance the security of its products amid a landscape of evolving cyber threats. Organizations should regularly update their security tools to protect against such vulnerabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fortinet-patches-critical-vulnerabilities-in-fortimonitoronsight-chrome-extension/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "DeepSeek Flaw Lets AI Disable Its Own Sandbox",
-            "title": "DeepSeek Harness Flaw Allows AI Agents to Disable File Sandbox",
-            "content": "A vulnerability in DeepSeek Harness, an open-source tool for running AI coding agents, allows sandboxed agents to disable their own sandboxes with a single command. This flaw could lead to unauthorized access and manipulation of untrusted files on a developer's machine. DeepSeek Harness is widely used in AI development environments, making this vulnerability particularly concerning for developers working with sensitive data. Users of DeepSeek Harness should apply the latest security updates to mitigate this risk. The incident highlights the importance of robust sandboxing mechanisms in AI development tools.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Schneider Electric, Siemens Patch Critical ICS Flaws",
-            "title": "ICS Patch Tuesday: Schneider Electric and Siemens Fix Critical Vulnerabilities",
-            "content": "Schneider Electric and Siemens have released patches for critical vulnerabilities affecting their industrial control system (ICS) products. AVEVA and Rockwell Automation also issued updates to address similar issues. These vulnerabilities could potentially allow attackers to disrupt industrial operations, posing significant risks to critical infrastructure. Organizations using these ICS products should apply the patches promptly to secure their systems. This coordinated patch release underscores the ongoing need for vigilance in protecting industrial environments from cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ics-patch-tuesday-schneider-electric-siemens-fix-critical-flaws/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Alby Hub Flaw Exposes Bitcoin Wallets to Takeover",
-            "title": "Critical Alby Hub Flaw Could Allow Attackers to Take Over Bitcoin Wallets",
-            "content": "Alby has identified a critical flaw in its Alby Hub, a self-hosted Lightning wallet, which could allow attackers to take over internet-exposed wallets. This vulnerability is particularly dangerous for users who have made their Alby Hub accessible from the internet, as it could lead to unauthorized transactions and loss of funds. Alby advises users to ensure their hubs are not publicly accessible and to apply security updates immediately. This incident highlights the importance of securing cryptocurrency wallets against potential cyber threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Ivanti Patches Critical Flaws in Enterprise Products",
-            "title": "Ivanti Patches Critical Vulnerabilities Across Enterprise Security Products",
-            "content": "Ivanti has released patches for six critical vulnerabilities in its Neurons for ITSM, which could enable remote code execution. Additionally, Sentry and EPMM have received updates to address authentication bypass flaws. These vulnerabilities pose significant risks to enterprises relying on Ivanti's security solutions. Organizations are urged to apply these patches immediately to protect against potential exploitation. This update is part of Ivanti's commitment to maintaining the security and integrity of its enterprise products.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ivanti-patches-critical-flaws-across-enterprise-security-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Chrome 153 Fixes Seventh Zero-Day of 2026",
-            "title": "Chrome 153 Update Patches Seventh Zero-Day Vulnerability of 2026",
-            "content": "Google has released Chrome version 153, addressing 230 security vulnerabilities, including the seventh zero-day exploit of 2026. This update is critical for users as the zero-day vulnerability could allow attackers to execute arbitrary code on affected systems. Users are strongly advised to update their browsers immediately to protect against potential threats. This marks a continued trend of frequent zero-day discoveries in Chrome, emphasizing the need for regular updates and vigilance in browser security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-153-patches-seventh-zero-day-of-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Chrome V8 Zero-Day Exploited—Patch Available",
-            "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution",
-            "content": "Google has patched a medium-severity out-of-bounds vulnerability in Chrome's V8 JavaScript engine, identified as CVE-2026-87491. This zero-day flaw, which has been actively exploited in the wild, allows attackers to execute code within the browser's sandbox. Users should update to the latest version of Chrome to mitigate this risk. The vulnerability highlights the ongoing challenges in securing browser environments against sophisticated attacks. Regular updates and vigilance remain critical for maintaining browser security.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "SAP Patches CVSS 10.0 Kernel Flaw—Critical Update",
-            "title": "SAP Patches Critical CVSS 10.0 Kernel Vulnerability in EPP Processing",
-            "content": "SAP has issued security updates to address a critical vulnerability in its Extended Passport (EPP) Processing, tracked as CVE-2026-44756. This flaw, with a maximum CVSS score of 10.0, could enable unauthenticated remote code execution, severely impacting application confidentiality, integrity, and availability. Organizations using SAP products should apply these patches immediately to mitigate potential exploitation. This update underscores the critical nature of maintaining up-to-date security measures in enterprise software environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Non-Human Identities Now Top Enterprise Threat Vector",
-            "title": "SpyCloud Report Finds Non-Human Identities Leading Enterprise Threats",
-            "content": "SpyCloud's 2026 Identity Threat Report reveals that non-human identities, such as AI and machine identities, have become the primary entry point for cyber threats into enterprises. Despite 95% of organizations believing they have visibility into these exposures, only 36% actively monitor them. This gap highlights a significant risk for enterprises, as attackers increasingly target automated systems and processes. Organizations are encouraged to enhance their monitoring and protection of non-human identities to mitigate these emerging threats.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4220209/spycloud-2026-identity-threat-report-finds-non-human-identities-are-now-the-leading-path-into-the-enterprise.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 10 2026",
+            "headline": "AI Hunts Antimicrobials—Fighting Drug Resistance",
+            "title": "Codex and ChatGPT Used to Discover Antimicrobial Molecules",
+            "content": "César de la Fuente's lab is leveraging AI models Codex and ChatGPT to explore genomes for potential antimicrobial molecules, targeting drug-resistant infections. By analyzing both living and extinct genomes, the AI tools aim to identify candidates that can combat the growing threat of antibiotic resistance. This innovative approach could revolutionize how new drugs are discovered, potentially speeding up the process and reducing costs. The research underscores the critical role AI can play in addressing global health challenges. Professionals in biotechnology and pharmaceuticals should consider integrating AI in their research methodologies to enhance discovery processes.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/using-codex-chatgpt-to-search-for-new-antimicrobials",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Meta's Muse AI—Productivity Boost or Privacy Concern?",
+            "title": "Meta Launches Muse AI Assistant for Enhanced Productivity",
+            "content": "Meta has introduced Muse, an AI-powered assistant designed to streamline tasks such as online shopping, email management, and trip planning. This marks Meta's significant entry into AI productivity tools, promising to alleviate routine tasks for users. While the tool offers convenience, it also raises privacy concerns due to its deep integration into personal activities. As AI assistants become more prevalent, users and developers must weigh the benefits against potential privacy risks. Tech leaders should monitor how AI assistants like Muse are received and assess their impact on user privacy and productivity.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "ChatGPT Work—Harness AI for Data Insights",
+            "title": "ChatGPT Work Introduces Data Agent for Business Intelligence",
+            "content": "OpenAI has unveiled the Data agent in ChatGPT Work, enabling businesses to connect their data, uncover insights, and build interactive dashboards using natural language. This tool aims to democratize data analysis, allowing users without technical expertise to leverage AI for business intelligence. By simplifying data interaction, the Data agent could transform how companies approach data-driven decision-making. Organizations should explore integrating such AI tools to enhance their analytical capabilities and maintain a competitive edge. The move reflects a broader trend of AI making complex data more accessible to non-specialists.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/put-data-to-work",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "AI Agents Overwhelm Public Services with Claims",
+            "title": "AI Agents Increase Public Service Requests, Prompting System Strain",
+            "content": "Public services are experiencing a surge in requests as AI agents automate the process of filing claims. Researchers note that most claims are legitimate, reflecting the efficiency of AI in identifying entitlements. However, the influx is straining existing systems, highlighting the need for infrastructure upgrades. As AI becomes more integrated into public services, agencies must adapt to handle increased demand. This trend underscores the dual-edged nature of AI, offering both efficiency and challenges in public administration. Policymakers should consider investing in robust systems to manage AI-driven service requests.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Maven Robotics Secures $100M—Targets Robot Deployment",
+            "title": "Maven Robotics Emerges with $100M Funding for Robot Deployment",
+            "content": "Maven Robotics has announced its emergence from stealth with a $100 million Series A funding round, positioning itself as a key player in robot deployment. The company is actively deploying robotics solutions, aiming to capture significant market share in automated systems. This substantial investment signals confidence in Maven's technology and its potential to disrupt traditional deployment models. Industry professionals should watch Maven's progress as it could influence trends in automation and robotics. The funding highlights the growing investor interest in robotics as a transformative industry.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/maven-robotics-wants-to-steal-your-robot-deployment-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "AI Hacks Gadgets—Improves Security Posture",
+            "title": "AI Agent Exploits and Secures Household Devices",
+            "content": "An experiment involving an open-source AI model revealed vulnerabilities in household gadgets after safety guardrails were removed. The AI successfully hacked into a PC and identified security flaws, subsequently providing solutions to enhance device security. This highlights the dual role of AI in both exploiting and securing systems, offering insights into potential vulnerabilities. Security professionals should consider similar AI-driven assessments to identify and mitigate risks proactively. The exercise underscores the importance of maintaining robust security measures while exploring AI's capabilities.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/i-used-ai-to-hack-my-home-network/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "Apple's AI Audio—Privacy Measures Explained",
+            "title": "Apple Details Privacy in New Siri AI Audio Features",
+            "content": "Apple has released a document outlining privacy measures for its new Siri AI Audio Intelligence features, including Siri Recap and Live Rewind. These features aim to enhance user experience while maintaining privacy through ambient listening controls. The document provides transparency on how Apple balances AI advancements with user privacy, a critical concern in the tech industry. As AI-driven audio features become more common, understanding privacy implications is crucial for both developers and users. Apple's approach may serve as a model for other companies navigating AI and privacy challenges.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "AI and 3D Printing—Apple's Foldable Phone Innovation",
+            "title": "Apple Utilizes AI and 3D Printing for Foldable Phone Hinge",
+            "content": "Apple has announced the use of AI and 3D printing in the development of its foldable phone's hinge, marking a significant innovation in manufacturing processes. This approach allows for precision and efficiency, potentially setting a new standard in smartphone production. The integration of AI in hardware design exemplifies the growing trend of AI-driven manufacturing. Industry professionals should consider the implications of AI in product design and manufacturing, as it could lead to more efficient and innovative production techniques. Apple's move may influence future developments in the smartphone industry.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/09/the-hinge-for-apples-new-foldable-phone-was-built-with-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "Apple's Health App—Calculates 'Health Age' with AI",
+            "title": "Apple Health App Update Introduces 'Health Age' and Readiness Score",
+            "content": "Apple has revamped its Health app to include a 'health age' and readiness score, utilizing Apple Intelligence to interpret health data more effectively. This update aims to provide users with a comprehensive understanding of their health status, promoting proactive health management. By leveraging AI, Apple enhances the app's ability to deliver personalized health insights. Health professionals and app developers should note the increasing role of AI in health monitoring and consider its potential in patient care. The update reflects a broader trend of integrating AI into personal health management tools.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/09/apples-revamped-health-app-will-calculate-your-health-age-and-readiness-score/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "Microsoft Sets AI Privacy Rules for Schools",
+            "title": "Microsoft Agrees to AI Privacy Principles for Educational Use",
+            "content": "In response to recent bans on student-facing AI, Microsoft has agreed to a set of privacy and safety principles for AI use in schools. This agreement, made with the American Federation of Teachers and its New York City affiliate, aims to ensure responsible AI deployment in educational settings. The move addresses concerns over data privacy and the ethical use of AI in classrooms. Educational institutions and tech developers should align with these principles to foster trust and compliance in AI applications. Microsoft's commitment highlights the importance of safeguarding student data in the digital age.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+            "relatedResources": []
+        },
         {
             "date": "Sep 10 2026",
             "headline": "Listen Labs Cancels $1.5B Funding for Salesforce Talks",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Apple CEO John Ternus has asserted that the iPhone remains the best AI device, emphasizing the privacy advantages of on-device AI models. Ternus highlighted the iPhone's ability to perform complex AI tasks without compromising user data, setting it apart from cloud-dependent alternatives. This statement reinforces Apple's commitment to privacy-centric AI development, a key differentiator in the competitive smartphone market. As privacy concerns grow, consumers and developers should consider the benefits of on-device AI processing. Apple's stance may influence industry trends towards more secure and private AI implementations.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "OECD Report: AI Use Linked to Lower Student Scores",
-            "title": "Global Study Finds AI Use in Education Correlates with Lower Performance",
-            "content": "A recent OECD educational report reveals that students using AI for study purposes generally score lower than their peers who do not. The report highlights that while some AI applications can provide a slight academic boost, the overall trend shows a negative impact on student performance. This finding raises concerns about the effectiveness of AI tools in educational settings and suggests a need for more strategic integration of technology in learning environments. Educators and policymakers should consider these findings when developing curricula and technology policies. The report underscores the importance of teaching students how to effectively use AI tools rather than relying on them indiscriminately.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Anthropic Researcher Warns: AI Could End Humanity",
-            "title": "Anthropic Safety Expert Cautions Against Uncontrolled AI Development",
-            "content": "A senior safety researcher at Anthropic has issued a stark warning, estimating a more than 10 percent chance that artificial intelligence could lead to human extinction by the decade's end. This alarming prediction follows the resignation of a colleague who criticized AI labs for recklessly pursuing superhuman systems without adequate control measures. The statement highlights growing concerns within the AI community about the potential dangers of advanced AI technologies. Industry leaders are urged to prioritize safety protocols and establish pacing agreements to mitigate these existential risks. The call for caution comes amid a competitive race to develop increasingly powerful AI models.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Superintelligence Debate: Control Challenges Loom",
-            "title": "The Impending Arrival of Superintelligent AI Raises Control Concerns",
-            "content": "The tech industry is abuzz with discussions about the inevitability of superintelligent AI, but recent incidents, such as the OpenAI Hugging Face breach, highlight the dangers of deploying systems more capable than humans. These events underscore the challenges of controlling AI systems that exceed human intelligence. As companies race to develop these advanced technologies, the potential for unintended consequences grows. Industry experts emphasize the need for robust safety measures and regulatory frameworks to manage the risks associated with superintelligent AI. Stakeholders are encouraged to engage in dialogue about ethical AI development and deployment.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/superintelligence-is-coming-should-we-let-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Anthropic Researcher Resigns Over AI Extinction Fears",
-            "title": "Jacob Coxon Leaves Anthropic, Citing AI Extinction Concerns",
-            "content": "Jacob Coxon, a researcher at Anthropic, has resigned due to fears that self-improving AI could lead to human extinction. Coxon has called for pacing agreements between AI labs to prevent the unchecked development of potentially dangerous AI systems. His departure highlights the growing unease within the AI research community about the rapid advancement of AI technologies without sufficient safety protocols. Coxon's resignation serves as a wake-up call for industry leaders to prioritize ethical considerations and collaborative efforts in AI development. The call for pacing agreements aims to ensure responsible innovation in the field.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Shipt Introduces AI Shopping Assistant for Tailored Carts",
-            "title": "Shipt Enhances User Experience with AI-Powered Shopping Assistant",
-            "content": "Shipt has launched a new AI shopping assistant designed to streamline the grocery shopping experience for users. The assistant can create customized shopping carts based on user requests, such as preparing for a Saturday tailgate or planning school lunches. This feature aims to simplify the shopping process by providing personalized recommendations and efficient cart management. The introduction of AI technology in Shipt's platform reflects a broader trend of integrating AI to enhance consumer convenience and satisfaction. Users can expect a more tailored shopping experience, potentially increasing customer engagement and retention.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/shipt-becomes-the-latest-delivery-app-with-an-ai-shopping-assistant/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "AI Spend Per Employee Drops—Economic Indicator?",
-            "title": "Decline in AI Spend Per Employee Raises Economic Questions",
-            "content": "A recent analysis reveals a decline in AI spending per employee among top firms in August, attributed to falling token costs and cheaper AI models. This trend raises questions about whether the reduction is a seasonal fluctuation or an indicator of broader economic challenges. Companies may be reassessing their AI investment strategies in response to changing market conditions. The decrease in spending could impact the pace of AI adoption and innovation across industries. Business leaders should monitor these developments closely to adjust their AI strategies accordingly. The trend highlights the need for strategic investment in AI technologies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Sequoia Invests $25M in Cymphony Amid Security Concerns",
-            "title": "Sequoia Capital Backs Cymphony as AI Security Risks Emerge",
-            "content": "Sequoia Capital has led a $25 million Series A investment in Cymphony, valuing the AI company at over $100 million. This investment comes as AI agents introduce new security risks for enterprises, prompting increased attention to AI-driven security solutions. Cymphony's technology aims to address these challenges by providing robust security measures for AI applications. The funding will support the company's efforts to enhance its security offerings and expand its market presence. As AI continues to evolve, the demand for secure and reliable AI solutions is expected to grow, making Cymphony a key player in the industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Amazon AI Syncs Lips with Dubbed Audio—Prime Video Innovation",
-            "title": "Amazon Prime Video Launches AI Lip-Sync Feature for Dubs",
-            "content": "Amazon Prime Video has introduced a new AI-powered feature that synchronizes actors' lip movements with dubbed audio, enhancing the viewing experience for audiences. Initially available with the English dub of the German series \"Maxton Hall,\" the feature is set to expand to additional titles in the future. This technology aims to improve the quality of dubbed content by providing more realistic and immersive audio-visual synchronization. The innovation reflects Amazon's commitment to leveraging AI to enhance its streaming services. Viewers can look forward to more seamless and engaging dubbed content as the feature rolls out.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Suno Overhauls AI Models Amid Copyright Lawsuits",
-            "title": "Suno Replaces AI Models with Licensed Music-Trained Version",
-            "content": "In response to mounting copyright lawsuits, Suno has replaced its existing AI models with a new version, Suno v6, trained exclusively on licensed music. This strategic move aims to mitigate legal risks associated with the use of unlicensed content in AI training. The decision underscores the growing importance of ethical and legal considerations in AI development, particularly in the creative industries. Suno's proactive approach highlights the challenges companies face in balancing innovation with compliance. Industry observers will be watching closely to see how this shift impacts Suno's market position and legal standing.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 08 2026",
-            "headline": "Claude Tokens Stolen—Anthropic Warns Users of Ongoing Hacks",
-            "title": "Hackers Exploit Claude Accounts to Steal Tokens from Subscribers",
-            "content": "Anthropic has issued a warning to its Claude AI users following reports of unauthorized token consumption. A user discovered unusual activity on their account, prompting an investigation that revealed hackers were exploiting vulnerabilities to steal tokens. This breach primarily affects subscribers who may see unexpected charges or reduced access to services. The incident underscores the importance of robust account security measures in AI platforms. Users are advised to monitor their accounts for suspicious activity and update their security credentials immediately.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
             "relatedResources": []
         }
     ],
