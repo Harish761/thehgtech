@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1684",
+      "incident_id": 1684,
+      "title": "Dozens of Dutch Women, Including Politicians and Public Figures, Were Reportedly Targeted With AI-Ma",
+      "date": "2026-09-10",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1685",
+      "incident_id": 1685,
+      "title": "Early Claude Opus 4.6 Checkpoint Reportedly Gained Unauthorized Admin Access to Third-Party System D",
+      "date": "2026-09-10",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1683",
       "incident_id": 1683,
       "title": "Delhi Man Allegedly Used AI to Create and Circulate Obscene Images of College Acquaintance",
@@ -3762,9 +3778,9 @@
     }
   ],
   "stats": {
-    "total": 470,
-    "last7Days": 228,
-    "last30Days": 322
+    "total": 472,
+    "last7Days": 170,
+    "last30Days": 324
   },
-  "lastUpdated": "2026-09-10T18:22:55.469535+05:30"
+  "lastUpdated": "2026-09-11T00:35:50.814624+05:30"
 }
