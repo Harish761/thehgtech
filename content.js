@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 10 2026",
+            "headline": "10% of LiteLLM Servers Vulnerable to Default Admin Key",
+            "title": "LiteLLM Servers Exposed by Default Admin Key in Setup Guide",
+            "content": "Nearly 10% of LiteLLM servers scanned by Wiz Research were found to accept the default admin key \"sk-1234,\" as outlined in LiteLLM's setup guide. LiteLLM serves as an open-source AI gateway, facilitating communication between company applications and AI model providers. This vulnerability exposes organizations to unauthorized access, potentially compromising sensitive data and operations. The issue underscores the importance of changing default credentials and conducting regular security audits. Companies using LiteLLM should immediately update their admin keys and review their server configurations to mitigate risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/nearly-1-in-10-exposed-litellm-gateways.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "DeepSeek Flaw Lets AI Agents Escape Sandboxes",
+            "title": "DeepSeek Harness Flaw Allows AI Agents to Disable Sandboxes",
+            "content": "A critical flaw in DeepSeek Harness, an open-source tool for AI coding agents, allowed agents to disable their own sandboxes with a single command. This vulnerability could let malicious code execute on a developer's machine without restrictions, posing significant security risks. DeepSeek Harness is designed to run AI commands in a controlled environment, but this flaw undermines its core functionality. Developers using DeepSeek Harness should apply patches immediately and review their security protocols. This incident highlights the need for rigorous testing of AI tools before deployment.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 09 2026",
+            "headline": "Alby Hub Flaw Exposes Bitcoin Wallets to Takeover",
+            "title": "Critical Alby Hub Flaw Could Lead to Bitcoin Wallet Takeovers",
+            "content": "Alby has identified a critical vulnerability in its Alby Hub software that could allow attackers to take control of Bitcoin wallets if the Hub is accessible from the internet. Alby Hub, a self-hosted Lightning wallet solution, requires users to run the software on their own systems. This flaw could lead to unauthorized transactions, resulting in financial losses for wallet owners. Users are urged to restrict internet access to their Alby Hub installations and apply security patches promptly. This incident emphasizes the importance of securing self-hosted financial applications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Conti Member Sentenced to 4 Years for Ransomware Attacks",
+            "title": "Conti Ransomware Operator Sentenced to Four Years in Prison",
+            "content": "Oleksii Lytvynenko, a member of the notorious Conti ransomware group, has been sentenced to four years in prison for his involvement in attacks on at least 12 companies. Lytvynenko joined Conti in 2021 and played a direct role in orchestrating ransomware campaigns that disrupted operations and demanded hefty ransoms. This sentencing marks a significant legal victory against ransomware operators, highlighting ongoing efforts to dismantle cybercriminal networks. Organizations are reminded to bolster their defenses against ransomware threats through comprehensive security strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/conti-ransomware-developer-sentenced/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Mandiant Founder Joins Amazon Board Amid Cyber Expansion",
+            "title": "Kevin Mandia Joins Amazon Board, Bringing Cybersecurity Expertise",
+            "content": "Kevin Mandia, founder of cybersecurity firm Mandiant, has joined Amazon's board of directors, bringing over 30 years of experience in public and private sector cybersecurity. Mandia's appointment comes as Amazon continues to expand its cybersecurity capabilities to protect its vast digital ecosystem. His expertise is expected to enhance Amazon's strategic approach to emerging threats and bolster its security posture. This move reflects the increasing importance of cybersecurity leadership at the highest levels of corporate governance.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mandiant-founder-kevin-mandia-joins-amazon-board/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "200 Android Flaws and Phishing Tactics Dominate ThreatsDay",
+            "title": "ThreatsDay Highlights 200 Android Vulnerabilities and Phishing Risks",
+            "content": "This week's ThreatsDay report reveals 200 Android vulnerabilities, new phishing tactics leveraging browser extensions, and over 119,000 scam shops. The report underscores a recurring theme: systems remain exposed due to outdated software and misconfigurations. Security professionals are urged to prioritize patch management and user education to mitigate these threats. The persistence of old vulnerabilities highlights the need for continuous monitoring and proactive security measures. Organizations should review their security policies to ensure resilience against evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Nightmare-Eclipse Unleashes 'ShieldCrash' Windows Exploit",
+            "title": "Nightmare-Eclipse Strikes Again with 'ShieldCrash' Windows Exploit",
+            "content": "The researcher known as Nightmare-Eclipse has released a new zero-day exploit targeting Windows Defender, dubbed 'ShieldCrash.' This exploit continues the researcher's campaign against Microsoft, allowing attackers to bypass Defender's protections and execute arbitrary code. Security professionals are advised to monitor for updates and apply patches as soon as they become available. This incident highlights the ongoing challenges in securing endpoint protection systems against sophisticated exploits. Organizations should remain vigilant and ensure their security solutions are up-to-date.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-strikes-again-shieldcrash-windows-exploit",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Top 10 LLM Vulnerabilities Threaten AI Deployments",
+            "title": "Critical Vulnerabilities in Large Language Models Identified",
+            "content": "As enterprises increasingly adopt generative AI technologies, a new report identifies the top 10 vulnerabilities in large language models (LLMs). These vulnerabilities include potential data leaks, harmful content generation, and exposure to threat actors. The rapid evolution of AI technologies necessitates robust security measures to prevent exploitation. Organizations leveraging LLMs should conduct thorough risk assessments and implement strict access controls. This report serves as a crucial reminder of the security challenges posed by advanced AI systems.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/575497/owasp-lists-10-most-critical-large-language-model-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Anthropic Researcher Resigns Over AI Safety Concerns",
+            "title": "Anthropic Researcher Resigns, Citing AI Development Dangers",
+            "content": "A researcher from Anthropic has resigned, warning of the potential dangers associated with AI development. This resignation follows similar high-profile departures from both Anthropic and OpenAI, highlighting ongoing safety concerns within the AI community. The researcher emphasized the need for ethical considerations and robust safety protocols in AI research and deployment. This development underscores the growing debate over the responsible advancement of AI technologies and the importance of addressing safety issues proactively.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/anthropic-researcher-resigns-with-warning-about-the-dangers-of-ai-development/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Deceptive Apps Exploit Google Play Early Access Loophole",
+            "title": "Deceptive Android Apps Exploit Google Play Early Access for Evasion",
+            "content": "Dishonest developers are exploiting Google Play's Early Access program to distribute deceptive Android apps that evade user reviews. These apps gain early traction by bypassing standard review processes, potentially leading to widespread distribution of malicious software. Security experts warn that this loophole could be used to spread malware and compromise user data. Google is urged to tighten its Early Access policies to prevent abuse and protect users. Developers and users alike should remain cautious when engaging with Early Access apps.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/deceptive-android-apps-exploit-google-play-early-access-to-evade-reviews/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
             "headline": "NetScaler Flaw CVE-2026-19490 Exploited—Patch Immediately",
             "title": "Critical NetScaler Vulnerability CVE-2026-19490 Actively Exploited in Attacks",
             "content": "A critical authentication bypass vulnerability, tracked as CVE-2026-19490, has been actively exploited in Citrix NetScaler products since at least September 3, 2026. This flaw allows attackers to bypass authentication mechanisms, potentially leading to unauthorized access to sensitive systems. Organizations using affected NetScaler versions should prioritize patching to mitigate potential breaches. This incident underscores the importance of timely updates, as attackers increasingly target known vulnerabilities. Security teams should review their systems for signs of compromise and ensure all patches are applied promptly.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "$52.8M Crypto Seized—U.S. Shuts Down Xinbi Scam Hub",
-            "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
-            "content": "The U.S. Department of Justice has dismantled the Xinbi Guarantee, an illicit online marketplace offering scam services, by seizing Telegram channels and freezing two cryptocurrency wallets holding $52.8 million. This operation highlights the increasing use of cryptocurrencies in facilitating online fraud. The Scam Center initiative played a crucial role in this crackdown, showcasing the U.S. government's commitment to combating digital financial crimes. This move sends a strong message to cybercriminals exploiting digital currencies for illegal activities. Security professionals should remain vigilant about the evolving tactics of online scam operations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Microsoft Defender Flaw—ShieldBreak Patch Bypassed Again",
-            "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
-            "content": "Security researcher Chaotic Eclipse has released a proof-of-concept (PoC) for a zero-day vulnerability in Microsoft Defender, named ShieldCrash. This flaw bypasses the ShieldBreak patch for CVE-2026-69414, which carries a CVSS score of 7.8. The vulnerability allows attackers to circumvent existing protections, posing significant risks to systems relying on Microsoft Defender for security. Organizations using Microsoft Defender should closely monitor updates and consider additional security measures to mitigate potential threats. This incident underscores the ongoing challenges in patch management and vulnerability exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Microsoft Patches 974 Flaws—Two Zero-Days Included",
-            "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
-            "content": "Microsoft has set a new record by patching 974 vulnerabilities across its software portfolio during September's Patch Tuesday. This includes two zero-day vulnerabilities actively exploited in the wild. The patches cover 723 flaws in Windows, 111 in Office, 62 in SQL, and 22 in Dynamics. The scale of this update highlights the persistent security challenges faced by Microsoft and its users. Organizations are urged to apply these patches promptly to protect against potential exploits. This massive patch release reflects the growing complexity and interconnectivity of modern software ecosystems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Chinese Espionage Groups Exploit Triple Zero-Day Chain",
-            "title": "Chinese Espionage Groups Swarm to Exploit Triple-Link Chain of Zero-Days",
-            "content": "Multiple China-aligned threat groups are actively exploiting a chain of three zero-day vulnerabilities to target organizations globally. According to Proofpoint, this activity is ongoing and expected to expand. The exploitation of these zero-days underscores the sophisticated tactics employed by state-sponsored actors to gain unauthorized access to sensitive information. Organizations should enhance their threat detection and response capabilities to mitigate potential risks. This development highlights the persistent threat posed by nation-state actors in the cybersecurity landscape.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/china-espionage-groups-exploit-chain-zero-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "AI Empowers Cybercriminals—Nation-State-Level Attacks Now Accessible",
-            "title": "AI Is Giving Lesser-Resourced Attackers Nation-State-Level Reach, Google Warns",
-            "content": "Google's Threat Intelligence Group (GTIG) reports that both criminal and state-sponsored adversaries are increasingly leveraging artificial intelligence (AI) to automate and scale their attacks. This trend allows lesser-resourced attackers to achieve nation-state-level capabilities, posing significant threats to global cybersecurity. The use of AI in cyberattacks enables rapid adaptation and execution, challenging traditional defense mechanisms. Security professionals must prioritize AI-driven threat detection and response strategies to counter these advanced threats. This development underscores the transformative impact of AI on the cybersecurity landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-is-giving-lesser-resourced-attackers-nation-state-level-reach-google-warns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "HelmGuard Secures $7.3M for GRC and Security Expansion",
-            "title": "HelmGuard Raises $7.3 Million for Agentic GRC and Security",
-            "content": "HelmGuard has successfully raised $7.3 million to enhance its governance, risk, and compliance (GRC) and security solutions. The funding will support the company's expansion in the U.S. market and bolster its engineering and go-to-market teams. HelmGuard's focus on agentic GRC aims to provide organizations with more adaptive and responsive security frameworks. This investment reflects the growing demand for robust GRC solutions in an increasingly complex regulatory environment. Security leaders should consider integrating advanced GRC tools to streamline compliance and risk management processes.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/helmguard-raises-7-3-million-for-agentic-grc-and-security/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Infostealer Logs Reveal AI Token Vulnerability—MFA Bypassed",
-            "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
-            "content": "Cybercriminals are exploiting information stealer logs to hijack AI user accounts by creating \"stolen keys\" that bypass multi-factor authentication (MFA). Tools like Lumma Stealer and Vidar are being used to harvest credentials from AI model providers such as Google and Anthropic. This vulnerability poses significant risks to organizations relying on AI services for critical operations. Security teams should enhance monitoring and implement additional authentication layers to protect against unauthorized access. This incident highlights the need for robust security measures in the rapidly evolving AI landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "U.S. Warns of China's AI Model Extraction Tactics",
-            "title": "US Agencies Warn China Is Systematically Extracting Frontier AI Capabilities",
-            "content": "U.S. agencies have issued warnings about China's systematic extraction of advanced AI capabilities through distillation attacks. These attacks capture outputs from AI models to train competing systems, posing significant intellectual property risks. The activity highlights the strategic importance of AI technology and the lengths to which nation-states will go to gain competitive advantages. Organizations developing AI models should implement robust security measures to protect their intellectual property. This development underscores the geopolitical dimensions of AI research and development.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-agencies-warn-china-is-systematically-extracting-frontier-ai-capabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Meta's Muse AI Agent—Safety and Privacy in Focus",
-            "title": "Meta Launches Personal AI Agent, Muse, Emphasizes Safety and Privacy",
-            "content": "Meta has launched Muse, a personal AI agent designed to prioritize user safety and privacy. Muse operates on a dedicated, secure virtual machine that safeguards both the agent and user data. This initiative reflects Meta's commitment to addressing privacy concerns in AI development. The introduction of Muse highlights the growing trend of integrating AI into personal and professional environments. Users and developers should remain informed about privacy features and best practices when deploying AI solutions. This launch marks a significant step in the evolution of AI-driven personal assistants.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/meta-launches-personal-ai-agent-muse-emphasizes-safety-and-privacy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "China Accused of AI Model Distillation—U.S. Agencies Alert",
-            "title": "U.S. Agencies Accuse China AI Firms of Distilling Claude, GPT, Gemini, and Grok",
-            "content": "U.S. cybersecurity and intelligence agencies have accused Chinese AI companies of conducting systematic distillation attacks on American frontier models like Claude, GPT, Gemini, and Grok. These attacks aim to extract proprietary functionalities, posing significant risks to U.S. technological leadership. The activity is described as occurring at an industrial scale, highlighting the strategic importance of AI capabilities. Organizations involved in AI development should enhance security measures to protect their intellectual property. This situation underscores the competitive and contentious nature of global AI advancements.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 10 2026",
+            "headline": "Slack Integrates AI for Interactive Reports in Chats",
+            "title": "Slack Introduces AI-Powered Interactive Reporting Tools in Chat",
+            "content": "Slack has unveiled a new feature, Slackforce Surfaces, allowing users to create interactive reports, polls, and dashboards directly within chat conversations. This AI-driven tool leverages Slackbot to gather and compile data from relevant discussions, streamlining the process of building presentations and microsites. The integration aims to enhance productivity by reducing the time spent on data collection and report generation. This development is part of Slack's broader strategy to incorporate advanced AI capabilities into its platform, catering to the growing demand for seamless, in-chat data visualization tools. Users should familiarize themselves with the new feature to maximize its potential for collaborative projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Nvidia Projects 70% Growth—CEO Jensen Huang Explains",
+            "title": "Nvidia CEO Jensen Huang Predicts 70% Growth Amid Expanding AI Market",
+            "content": "Nvidia CEO Jensen Huang has projected a 70% growth for the company in the coming year, driven by its extensive involvement across various tech sectors. Huang emphasized that Nvidia's growth is not reliant on circular deals but rather on its strategic positioning in AI, gaming, and data center markets. The company's robust pipeline of products and partnerships is expected to fuel this expansion. Nvidia's continued innovation in GPU technology and AI platforms positions it as a key player in the rapidly evolving tech landscape. Stakeholders should monitor Nvidia's market strategies and product releases closely as the company aims to capitalize on the burgeoning demand for AI solutions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "OpenAI Halts Pro Subscriptions Amid Astra Demand Surge",
+            "title": "OpenAI Pauses Pro Subscriptions Due to High Astra Demand",
+            "content": "OpenAI has temporarily suspended new sign-ups for its Pro subscriptions, citing the strain these accounts place on its systems amid surging demand for its Astra model. The company is working to expand its infrastructure to accommodate the increased usage without compromising service quality. This pause highlights the challenges AI companies face in scaling operations to meet user demand. Current Pro users will continue to have access, but new users may experience delays in obtaining premium features. OpenAI's decision underscores the importance of robust infrastructure planning in AI service delivery.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Anthropic Reports Distillation Attacks by Chinese AI Firms",
+            "title": "Anthropic Alleges Distillation Attacks from Chinese AI Companies",
+            "content": "Anthropic has released a report detailing persistent distillation attacks by AI companies based in China, including Alibaba, Moonshot AI, and DeepSeek. These attacks involve extracting proprietary model information to gain competitive advantages, a tactic that has intensified with growing competition in the AI sector. The report highlights the need for stronger intellectual property protections and cybersecurity measures in the AI industry. Companies are urged to review their security protocols to safeguard against such attacks, which could compromise proprietary technologies and market positions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Spirit's Data Sale to Google Sparks Privacy Concerns",
+            "title": "Concerns Rise Over Spirit Airlines' Data Sale to Google Amid Bankruptcy",
+            "content": "The impending sale of Spirit Airlines' customer data to Google as part of bankruptcy proceedings has raised significant privacy concerns. Critics argue that bankruptcy should not become a loophole for acquiring sensitive data, likening it to a \"land grab\" for AI companies. The sale includes vast amounts of customer information, potentially impacting millions of individuals. Privacy advocates are calling for stricter regulations to prevent the misuse of personal data in bankruptcy sales. Stakeholders are advised to monitor developments closely and consider the implications for data privacy and consumer rights.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Rogue AI Agents Struggle with CAPTCHAs—Anthropic Study",
+            "title": "Anthropic Study Reveals Rogue AI Agents' CAPTCHA Challenges",
+            "content": "Anthropic's latest study reveals that rogue AI agents encounter significant difficulties when attempting to bypass CAPTCHAs, a common internet security measure. These findings provide insight into the limitations of AI in mimicking human behavior online. The study underscores the effectiveness of CAPTCHAs in thwarting unauthorized access by automated systems, highlighting their continued relevance in cybersecurity. Organizations are encouraged to maintain CAPTCHA implementations as part of their security protocols to protect against automated threats.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Pocket FM's Revenue Soars to $500M with AI Content Boost",
+            "title": "Pocket FM Doubles Revenue to $500M as AI Powers Content Creation",
+            "content": "India's Pocket FM has reported a doubling of its revenue run rate to $500 million, driven by AI-generated content, which now accounts for 93% of its audio productions. The use of AI has reduced content production costs by approximately 80 times, enabling the platform to scale rapidly and offer diverse audio content. This growth reflects the transformative impact of AI on media production and distribution, positioning Pocket FM as a leader in the audio streaming market. Industry professionals should consider the implications of AI-driven content creation for competitive strategy and operational efficiency.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Universal Music Launches AI Platform with ElevenLabs",
+            "title": "Universal Music Group Partners with ElevenLabs for AI Music Platform",
+            "content": "Universal Music Group has announced the launch of an AI-powered music platform in collaboration with ElevenLabs. This platform will allow users to remix and create new versions of songs using Universal's licensed music catalog. The initiative represents a significant step in integrating AI into music production, offering new creative opportunities for artists and consumers alike. The platform is part of a multiyear licensing agreement, highlighting the growing trend of AI adoption in the music industry. Music professionals should explore the potential of AI tools to innovate and expand their creative processes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Mathematicians Demand Proof from OpenAI on Data Usage",
+            "title": "OpenAI Faces Scrutiny Over Alleged Use of Unpublished Mathematical Work",
+            "content": "OpenAI is under scrutiny as a second mathematician accuses the company of using unpublished mathematical work to enhance its models. This follows a recent dispute over the data sources driving OpenAI's mathematical discoveries. The allegations raise questions about data transparency and intellectual property rights in AI development. OpenAI has yet to provide evidence disproving these claims, prompting calls for greater accountability in AI research practices. Researchers and developers should be aware of the ethical considerations and potential legal implications surrounding data usage in AI projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "OpenAI Expands AI Access for Government Cyber Defense",
+            "title": "OpenAI and GSA Enhance AI Access and Cyber Defense for Governments",
+            "content": "OpenAI, in partnership with the General Services Administration (GSA), is offering expanded AI access and cyber defense support to eligible federal, state, local, and tribal governments. The initiative includes $0 license fees and a 50% discount on usage, aiming to bolster government cybersecurity capabilities. This move reflects OpenAI's commitment to supporting public sector digital transformation and enhancing national cyber resilience. Government agencies are encouraged to leverage these resources to strengthen their cybersecurity frameworks and protect against evolving threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/expanding-ai-access-us-government",
+            "relatedResources": []
+        },
         {
             "date": "Sep 10 2026",
             "headline": "AI Hunts Antimicrobials—Fighting Drug Resistance",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Listen Labs Cancels $1.5B Funding for Salesforce Talks",
-            "title": "Listen Labs Abandons $1.5B Series C Funding Amid Salesforce Negotiations",
-            "content": "Listen Labs, an AI research startup, has reportedly walked away from a $1.5 billion Series C funding round with Menlo Ventures to pursue discussions with Salesforce. The decision to abandon a signed term sheet highlights the strategic pivot towards potential collaboration or acquisition talks with the cloud computing giant. This move underscores the increasing interest from major tech companies in acquiring AI capabilities and talent. The impact on Listen Labs' growth trajectory remains to be seen, as the startup may gain significant resources and market access through Salesforce. Industry observers are keenly watching for further developments in this potential partnership.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/ai-research-startup-listen-labs-scrubbed-a-1-5b-funding-round-for-salesforce-talks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Suno Unveils AI Music Model with Record Industry Support",
-            "title": "Suno Releases AI Music Model v6 with Record Industry Collaboration",
-            "content": "Suno has launched its v6 AI music model, marking its first collaboration with the record industry. The model was trained with a new dataset that excludes previous training data, ensuring compliance with industry standards. Suno's CEO, Jack Brody, emphasized the importance of licensed content in developing this model, which aims to enhance music creation while respecting intellectual property. This development reflects a growing trend of AI integration in creative industries, balancing innovation with rights management. Musicians and producers may benefit from new tools for music production, potentially transforming the industry landscape.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "OpenAI Adds AI Alignment Expert to Board",
-            "title": "Paul Christiano Joins OpenAI Foundation Board of Directors",
-            "content": "OpenAI has appointed Paul Christiano, a prominent AI researcher focused on alignment, to its board of directors. Christiano's expertise in AI safety and alignment is expected to guide OpenAI's efforts in developing responsible AI technologies. His addition to the board signals OpenAI's commitment to addressing ethical concerns and ensuring AI systems align with human values. This move comes amid growing scrutiny of AI's societal impact and the need for robust governance frameworks. AI professionals and stakeholders should monitor how Christiano's influence shapes OpenAI's strategic direction and policy decisions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "OpenAI Solves Millennium Prize Math Problem",
-            "title": "OpenAI's Breakthrough in Solving Millennium Prize Problem Stuns Academia",
-            "content": "OpenAI has announced a groundbreaking solution to one of the Millennium Prize problems, showcasing AI's transformative impact on mathematics. This achievement demonstrates the rapid advancement of AI capabilities in complex problem-solving, potentially revolutionizing mathematical research. The solution, yet to be formally published, raises questions about AI's role in academic disciplines traditionally dominated by human intellect. Researchers and educators must consider how AI tools can complement human expertise and redefine educational paradigms. The academic community is urged to engage with AI developments to harness their potential responsibly.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Massachusetts Imposes Clean Power Rules on Data Centers",
-            "title": "Massachusetts Enforces New Clean Power Regulations for Data Centers",
-            "content": "Massachusetts has introduced new regulations requiring data centers to adhere to clean power standards, becoming the third state to implement such measures recently. These rules aim to reduce the environmental impact of data centers, which are significant energy consumers. The regulations may increase operational costs for data center operators but also encourage investment in renewable energy sources. This trend reflects a broader push for sustainable practices in the tech industry, aligning with global efforts to combat climate change. Data center operators should evaluate their energy strategies to comply with these evolving standards.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "US Accuses Chinese Firms of Copying AI Models",
-            "title": "Six Chinese AI Firms Allegedly Copy US Frontier Models Aggressively",
-            "content": "The US government has accused six Chinese AI firms of aggressively copying cutting-edge AI models developed by American companies. This accusation highlights ongoing tensions in the global AI race, where intellectual property theft and model replication pose significant challenges. The US has urged AI firms to identify and covertly switch Chinese users to less-capable models, aiming to protect proprietary technologies. This development underscores the geopolitical dimensions of AI innovation and the need for robust cybersecurity measures. Companies should enhance their IP protection strategies to safeguard their AI assets.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Apple Watch AI Features Raise Privacy Concerns",
-            "title": "Apple's New AI Features on Watch Spark Privacy Debate",
-            "content": "Apple's latest AI features for its Watch, capable of transcribing speech and summarizing conversations, have raised privacy concerns among users and experts. While Apple assures that raw audio is not saved, the potential for constant monitoring has sparked discussions about consent and privacy. These features reflect a growing trend of ambient listening technologies, which could alter user behavior and expectations of privacy. Users and developers should be aware of the implications of such technologies and advocate for transparent privacy policies. The debate highlights the need for clear guidelines on data usage and consent.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/apple-watchs-new-ai-features-are-normalizing-the-idea-that-technology-is-always-listening/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Apple Unveils Foldable iPhone Duo at Fall Event",
-            "title": "Apple Launches Foldable iPhone Duo and Always-Listening Watch",
-            "content": "Apple has introduced its first foldable phone, the iPhone Duo, alongside an Apple Watch with always-listening capabilities at its fall event. The iPhone Duo represents a significant innovation in smartphone design, featuring a flexible hinge developed using AI and 3D printing. The always-listening Watch raises privacy concerns, as it can transcribe and summarize conversations. These announcements highlight Apple's continued focus on integrating AI into its product lineup, enhancing functionality while navigating privacy challenges. Consumers and developers should explore the potential of these new devices while considering privacy implications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/everything-apple-announced-at-its-fall-iphone-event-from-the-foldable-iphone-duo-to-an-always-listening-apple-watch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Apple's iPhone Camera Mode Verifies Non-AI Photos",
-            "title": "iPhone 18 Pro's \"Reference Image\" Mode Ensures Photo Authenticity",
-            "content": "Apple's upcoming iPhone 18 Pro will feature a \"Reference Image\" mode designed to verify the authenticity of photos by signing every pixel captured. This innovation aims to address concerns about AI-manipulated images and provide users with a means to prove their photos are unaltered. The feature leverages the device's new camera sensor technology, enhancing trust in digital photography. As AI-generated content becomes more prevalent, tools like this are crucial for maintaining credibility in visual media. Photographers and content creators should leverage this feature to ensure the integrity of their work.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Apple CEO Declares iPhone as Top AI Device",
-            "title": "Apple CEO John Ternus Affirms iPhone's AI Superiority",
-            "content": "Apple CEO John Ternus has asserted that the iPhone remains the best AI device, emphasizing the privacy advantages of on-device AI models. Ternus highlighted the iPhone's ability to perform complex AI tasks without compromising user data, setting it apart from cloud-dependent alternatives. This statement reinforces Apple's commitment to privacy-centric AI development, a key differentiator in the competitive smartphone market. As privacy concerns grow, consumers and developers should consider the benefits of on-device AI processing. Apple's stance may influence industry trends towards more secure and private AI implementations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/apple-ceo-john-ternus-says-the-best-ai-device-is-still-the-iphone/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-86060",
+            "dateAdded": "Sep 10, 2026",
+            "vendor": "MikroTik RouterOS",
+            "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escala",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86060",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-67277",
+            "dateAdded": "Sep 10, 2026",
+            "vendor": "MikroTik RouterOS",
+            "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67277",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-19490",
             "dateAdded": "Sep 09, 2026",
@@ -534,17 +556,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85880",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-85046",
-            "dateAdded": "Sep 04, 2026",
-            "vendor": "Google Chromium V8",
-            "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85046",
             "isZeroDay": false
         }
     ],
