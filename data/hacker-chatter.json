@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-11T07:24:35.675220",
-  "total_incidents": 31176,
+  "last_updated": "2026-09-11T17:48:56.952570",
+  "total_incidents": 31179,
   "incidents": [
+    {
+      "id": "fulcrumsec_dustin_group",
+      "victim_name": "Dustin Group",
+      "threat_actor": "fulcrumsec",
+      "date_discovered": "2026-09-11T12:29:31.850341+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "[AI generated] Dustin Group is a Swedish technology reseller and IT solutions provider headquartered in Stockholm, Sweden. The company operates primarily in the Nordic and Benelux regions, offering hardware, software, and IT services to businesses and public sector organizations. Its product portfolio includes computers, networking equipment, and cloud solutions. Dustin serves both SMBs and large enterprises, positioning itself as a one-stop shop for IT procurement and digital transformation support.",
+      "screenshot": "https://images.ransomware.live/victims/24d658f891841f0170ab390fcd7ffe16.png",
+      "url": "http://4e3p3in2bl67hxchuwza7qvnpe7pyeloyztr5fnh257fxkovfhappjyd.onion/dustin/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "panzer_konica_minolta_bulgaria",
+      "victim_name": "Konica Minolta Bulgaria",
+      "threat_actor": "Panzer",
+      "date_discovered": "2026-09-11T10:53:16.691797+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Konica Minolta Bulgaria is a company with its own sales, marketing, and technical structure, and is part of the global brand specializing in innovative business and IT solutions. The company established its presence in Bulgaria in 2005 and has experienced continuous growth ever since.",
+      "screenshot": "https://images.ransomware.live/victims/d5eaf1eaabe24cbbd66db634633639ef.png",
+      "url": "http://pnzruro7syvwvefx5mpo2fhzi4jftgquynsqf3vy5x3no57yp2iz4nyd.onion/company/konica-minolta-bulgaria",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_medical_department_store",
+      "victim_name": "Medical Department Store",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-09-11T05:53:47.072496+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Medical Department Store in united state",
+      "screenshot": "https://images.ransomware.live/victims/cc82f0e7d1ac1dc210431285571e5916.png",
+      "url": "http://xjhmtitnrdrgzw4vmsghirdoo2fk35a3tzj4enlmah4pvehdspydsiyd.onion/blog/?post_uuid=aafe099f-f355-4460-95fb-4443b41efc21",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "panzer_agencia_estatal_de_meteorología",
       "victim_name": "Agencia Estatal de Meteorología",
