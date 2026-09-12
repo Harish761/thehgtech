@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1687",
+      "incident_id": 1687,
+      "title": "Anthropic-Designated GTG-87001 Weapons Cell in Northern Yemen Reportedly Used Claude Code to Develop",
+      "date": "2026-09-11",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1684",
       "incident_id": 1684,
       "title": "Dozens of Dutch Women, Including Politicians and Public Figures, Were Reportedly Targeted With AI-Ma",
@@ -3714,9 +3722,9 @@
     }
   ],
   "stats": {
-    "total": 464,
-    "last7Days": 123,
-    "last30Days": 325
+    "total": 465,
+    "last7Days": 124,
+    "last30Days": 326
   },
-  "lastUpdated": "2026-09-12T04:00:01.828893+05:30"
+  "lastUpdated": "2026-09-12T09:55:43.363729+05:30"
 }
