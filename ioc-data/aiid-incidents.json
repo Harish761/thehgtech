@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1688",
+      "incident_id": 1688,
+      "title": "Teenager in Quilmes, Argentina, Reportedly Consulted ChatGPT While Planning School Shooting Against ",
+      "date": "2026-09-12",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1687",
       "incident_id": 1687,
       "title": "Anthropic-Designated GTG-87001 Weapons Cell in Northern Yemen Reportedly Used Claude Code to Develop",
@@ -3722,9 +3730,9 @@
     }
   ],
   "stats": {
-    "total": 465,
-    "last7Days": 124,
-    "last30Days": 326
+    "total": 466,
+    "last7Days": 125,
+    "last30Days": 327
   },
-  "lastUpdated": "2026-09-12T17:37:51.479539+05:30"
+  "lastUpdated": "2026-09-12T23:48:58.621271+05:30"
 }
