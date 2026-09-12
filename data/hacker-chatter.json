@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-09-11T17:48:56.952570",
-  "total_incidents": 31179,
+  "last_updated": "2026-09-12T07:17:06.611071",
+  "total_incidents": 31184,
   "incidents": [
+    {
+      "id": "securotrop_shelco_filters",
+      "victim_name": "Shelco Filters",
+      "threat_actor": "securotrop",
+      "date_discovered": "2026-09-12T00:37:05.716615+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Status: AWAITING\nSize: 191 GB",
+      "screenshot": "https://images.ransomware.live/victims/803e55e296e455f81d0ab9e71f8387ab.png",
+      "url": "http://securo45z554mw7rgrt7wcgv5eenj2xmxyrsdj3fcjsvindu63s4bsid.onion",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "safepay_compunnel.com",
+      "victim_name": "compunnel.com",
+      "threat_actor": "safepay",
+      "date_discovered": "2026-09-11T22:04:42.268067+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "The company provides a combination of talent acquisition, IT consulting, digital engineering, artificial intelligence, cybersecurity, and workforce management services to …",
+      "screenshot": "https://images.ransomware.live/victims/3b857812cc1f626ef27a607eb1ca7d8f.png",
+      "url": "http://safepaypfxntwixwjrlcscft433ggemlhgkkdupi2ynhtcmvdgubmoyd.onion/blog/post/compunnelcom/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_imperial_healthcare_solutions",
+      "victim_name": "Imperial Healthcare Solutions",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-11T22:03:56.666400+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/5a4df684bc68a85645c4e31476fc2ce9.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=c696224e-7b55-42fd-975d-523482859420",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "direwolf_port_of_tanjung_pelepas",
+      "victim_name": "Port of Tanjung Pelepas",
+      "threat_actor": "direwolf",
+      "date_discovered": "2026-09-11T15:54:58.991295+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "Marine Shipping &amp; Transportation",
+      "screenshot": "https://images.ransomware.live/victims/ca216a3b32a41f68402d31688aed2902.png",
+      "url": "http://direwolfcdkv5whaz2spehizdg22jsuf5aeje4asmetpbt6ri4jnd4qd.onion/api/public/articles/135",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_foss_inc.",
+      "victim_name": "Foss Inc.",
+      "threat_actor": "pear",
+      "date_discovered": "2026-09-11T14:19:06.854549+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Leading provider of installation, maintenance services to the energy industry",
+      "screenshot": "https://images.ransomware.live/victims/fe51959f8612022a75812cc3c89ef15e.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/fossinc",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "fulcrumsec_dustin_group",
       "victim_name": "Dustin Group",
