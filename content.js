@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 11 2026",
+            "headline": "GitLab CVSS 10 Flaw Probed—Patch Immediately",
+            "title": "GitLab CVE-2026-85706 Path Traversal Flaw Actively Exploited",
+            "content": "GitLab has urgently released patches to address a critical path traversal vulnerability, CVE-2026-85706, in its repository commits API. This flaw, rated with a maximum CVSS score of 10.0, allows unauthenticated attackers to read files from the server, posing a severe risk to self-managed installations. The vulnerability has already been subjected to in-the-wild probes shortly after its public disclosure. GitLab users are strongly advised to upgrade their installations immediately to mitigate potential exploitation. This incident underscores the importance of rapid response to disclosed vulnerabilities in widely used platforms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "PaperCut Replaces Emergency Patches Amid Active Exploits",
+            "title": "PaperCut Releases New Fixes for Actively Exploited Vulnerabilities",
+            "content": "PaperCut has issued a new security maintenance release to replace previous emergency patches addressing two actively exploited vulnerabilities. The affected versions include PaperCut NG/MF 26.0.5, 25.0.13, and 24.1.10. These vulnerabilities have been under active exploitation, prompting the company to enhance its patching strategy. Organizations using these versions should apply the new updates immediately to safeguard against potential attacks. This move highlights the ongoing challenges in maintaining secure software environments amid evolving threat landscapes.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Check Point Patches 9.8-Rated VPN Flaws—RCE Risk",
+            "title": "Check Point Fixes Critical VPN Certificate Vulnerabilities Allowing RCE",
+            "content": "Check Point has addressed two critical vulnerabilities in its firewall and management products related to VPN certificate handling. These flaws, both rated 9.8 on the CVSS scale, could enable unauthenticated remote code execution (RCE) under specific conditions. The vulnerabilities highlight the risks associated with improper certificate management in security products. Check Point users are advised to apply the patches promptly to mitigate potential exploitation. This incident underscores the critical need for robust security measures in VPN implementations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "CISA Sets Sept. 12 Deadline for Cisco, Citrix, Fortinet Patches",
+            "title": "CISA Mandates Immediate Patching of Exploited Cisco, Citrix, Fortinet Flaws",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added three vulnerabilities affecting Cisco, Citrix, and Fortinet to its Known Exploited Vulnerabilities catalog. Federal Civilian Executive Branch agencies are required to apply patches by September 12, 2026. These vulnerabilities have been actively exploited, posing significant risks to affected systems. Organizations using these products should prioritize patching to protect against potential threats. This directive reflects CISA's proactive approach to mitigating risks from known exploited vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "AI Weaponization Attempt in Yemen—Anthropic Reports",
+            "title": "Anthropic Reports AI-Based Weapon Development Attempt in Yemen",
+            "content": "Anthropic has reported that users in Houthi-held Yemen attempted to develop advanced weapons using artificial intelligence. Although the attempt did not result in a functional device, a failed test of a guided rocket was carried out. This incident highlights the potential misuse of AI technologies in conflict zones. Organizations involved in AI development should be aware of the ethical implications and potential for misuse. The report underscores the need for robust controls and monitoring of AI applications in sensitive areas.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/users-in-houthi-held-yemen-tried-to-develop-advanced-weapons-with-ai-anthropic-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Phishing Research Redefines Security Awareness Metrics",
+            "title": "New Phishing Research Advocates for Broader Security Awareness Testing",
+            "content": "A comprehensive analysis of 2.47 million simulated phishing attacks suggests that organizations should focus on measuring credential leaks and incident reporting rather than merely tracking click rates. This research challenges traditional security awareness testing methods, advocating for a more holistic approach to evaluating organizational resilience against phishing. Security professionals are encouraged to adopt these insights to enhance their training programs. The findings emphasize the evolving nature of phishing threats and the need for adaptive security strategies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/phishing-research-challenges-conventional-security-awareness-testing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "China-Based Labs Target Claude with Distillation Attacks",
+            "title": "Anthropic Identifies Claude Distillation Attacks by China-Based AI Labs",
+            "content": "Anthropic has disrupted industrial-scale distillation attacks against its AI model Claude, originating from seven China-based labs, including Alibaba and Moonshot. Knowledge distillation, a legitimate training method, was illicitly used to extract proprietary model information. This incident highlights the challenges of protecting AI intellectual property from sophisticated adversaries. Organizations using AI models should implement robust security measures to safeguard against similar threats. The attacks underscore the ongoing risks in the AI development landscape.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Surfshark Breach—Misconfigured Server Exposes Data",
+            "title": "Surfshark Systems Compromised Due to Misconfigured Test Server",
+            "content": "Surfshark has reported unauthorized access to a misconfigured test server containing engineering materials, including internal configurations. This breach underscores the importance of securing test environments to prevent unauthorized access to sensitive data. Organizations are advised to review their server configurations and implement stringent access controls. The incident serves as a reminder of the potential risks associated with misconfigured systems in cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "JFrog Artifactory Flaws Exploited for Admin Control",
+            "title": "Attackers Exploit JFrog Artifactory Flaws to Gain Admin Access",
+            "content": "Attackers have chained two vulnerabilities in JFrog Artifactory to gain administrator control of self-hosted servers and plant backdoors. These attacks, observed between August 15 and September 8, have been addressed by JFrog with necessary patches. Organizations using JFrog Artifactory should apply these updates immediately to prevent unauthorized access. This incident highlights the critical nature of securing software build pipelines against exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 10 2026",
+            "headline": "Chrome Update Fixes Actively Exploited V8 Vulnerability",
+            "title": "Urgent Chrome Update Addresses Actively Exploited V8 Vulnerability",
+            "content": "Google has released a significant update for Chrome, addressing an actively exploited vulnerability in the V8 JavaScript engine along with 229 other flaws. Users are urged to update to the latest version to protect against potential exploits. This vulnerability highlights the ongoing targeting of Chrome by threat actors and the importance of timely updates. Security professionals should ensure that systems are updated promptly to mitigate risks.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/09/update-chrome-now-to-protect-against-an-actively-exploited-vulnerability",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
             "headline": "GitLab Flaw Exploited—Patch Critical Path Traversal Now",
             "title": "GitLab Vulnerability Exploited One Day After Disclosure",
             "content": "A critical path traversal vulnerability in GitLab, identified as CVE-2026-85101, has been exploited just one day after its disclosure. This flaw allows unauthenticated attackers to read arbitrary files from the GitLab server, posing a significant risk to data integrity and confidentiality. The vulnerability affects all versions prior to the latest patch, urging administrators to update immediately to mitigate potential data breaches. The rapid exploitation highlights the need for prompt patch management and vulnerability assessment in DevOps environments. Security teams should prioritize applying the patch to prevent unauthorized access to sensitive files.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "10% of LiteLLM Servers Vulnerable to Default Admin Key",
-            "title": "LiteLLM Servers Exposed by Default Admin Key in Setup Guide",
-            "content": "Nearly 10% of LiteLLM servers scanned by Wiz Research were found to accept the default admin key \"sk-1234,\" as outlined in LiteLLM's setup guide. LiteLLM serves as an open-source AI gateway, facilitating communication between company applications and AI model providers. This vulnerability exposes organizations to unauthorized access, potentially compromising sensitive data and operations. The issue underscores the importance of changing default credentials and conducting regular security audits. Companies using LiteLLM should immediately update their admin keys and review their server configurations to mitigate risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/nearly-1-in-10-exposed-litellm-gateways.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "DeepSeek Flaw Lets AI Agents Escape Sandboxes",
-            "title": "DeepSeek Harness Flaw Allows AI Agents to Disable Sandboxes",
-            "content": "A critical flaw in DeepSeek Harness, an open-source tool for AI coding agents, allowed agents to disable their own sandboxes with a single command. This vulnerability could let malicious code execute on a developer's machine without restrictions, posing significant security risks. DeepSeek Harness is designed to run AI commands in a controlled environment, but this flaw undermines its core functionality. Developers using DeepSeek Harness should apply patches immediately and review their security protocols. This incident highlights the need for rigorous testing of AI tools before deployment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Alby Hub Flaw Exposes Bitcoin Wallets to Takeover",
-            "title": "Critical Alby Hub Flaw Could Lead to Bitcoin Wallet Takeovers",
-            "content": "Alby has identified a critical vulnerability in its Alby Hub software that could allow attackers to take control of Bitcoin wallets if the Hub is accessible from the internet. Alby Hub, a self-hosted Lightning wallet solution, requires users to run the software on their own systems. This flaw could lead to unauthorized transactions, resulting in financial losses for wallet owners. Users are urged to restrict internet access to their Alby Hub installations and apply security patches promptly. This incident emphasizes the importance of securing self-hosted financial applications.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Conti Member Sentenced to 4 Years for Ransomware Attacks",
-            "title": "Conti Ransomware Operator Sentenced to Four Years in Prison",
-            "content": "Oleksii Lytvynenko, a member of the notorious Conti ransomware group, has been sentenced to four years in prison for his involvement in attacks on at least 12 companies. Lytvynenko joined Conti in 2021 and played a direct role in orchestrating ransomware campaigns that disrupted operations and demanded hefty ransoms. This sentencing marks a significant legal victory against ransomware operators, highlighting ongoing efforts to dismantle cybercriminal networks. Organizations are reminded to bolster their defenses against ransomware threats through comprehensive security strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/conti-ransomware-developer-sentenced/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Mandiant Founder Joins Amazon Board Amid Cyber Expansion",
-            "title": "Kevin Mandia Joins Amazon Board, Bringing Cybersecurity Expertise",
-            "content": "Kevin Mandia, founder of cybersecurity firm Mandiant, has joined Amazon's board of directors, bringing over 30 years of experience in public and private sector cybersecurity. Mandia's appointment comes as Amazon continues to expand its cybersecurity capabilities to protect its vast digital ecosystem. His expertise is expected to enhance Amazon's strategic approach to emerging threats and bolster its security posture. This move reflects the increasing importance of cybersecurity leadership at the highest levels of corporate governance.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/mandiant-founder-kevin-mandia-joins-amazon-board/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "200 Android Flaws and Phishing Tactics Dominate ThreatsDay",
-            "title": "ThreatsDay Highlights 200 Android Vulnerabilities and Phishing Risks",
-            "content": "This week's ThreatsDay report reveals 200 Android vulnerabilities, new phishing tactics leveraging browser extensions, and over 119,000 scam shops. The report underscores a recurring theme: systems remain exposed due to outdated software and misconfigurations. Security professionals are urged to prioritize patch management and user education to mitigate these threats. The persistence of old vulnerabilities highlights the need for continuous monitoring and proactive security measures. Organizations should review their security policies to ensure resilience against evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Nightmare-Eclipse Unleashes 'ShieldCrash' Windows Exploit",
-            "title": "Nightmare-Eclipse Strikes Again with 'ShieldCrash' Windows Exploit",
-            "content": "The researcher known as Nightmare-Eclipse has released a new zero-day exploit targeting Windows Defender, dubbed 'ShieldCrash.' This exploit continues the researcher's campaign against Microsoft, allowing attackers to bypass Defender's protections and execute arbitrary code. Security professionals are advised to monitor for updates and apply patches as soon as they become available. This incident highlights the ongoing challenges in securing endpoint protection systems against sophisticated exploits. Organizations should remain vigilant and ensure their security solutions are up-to-date.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-strikes-again-shieldcrash-windows-exploit",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Top 10 LLM Vulnerabilities Threaten AI Deployments",
-            "title": "Critical Vulnerabilities in Large Language Models Identified",
-            "content": "As enterprises increasingly adopt generative AI technologies, a new report identifies the top 10 vulnerabilities in large language models (LLMs). These vulnerabilities include potential data leaks, harmful content generation, and exposure to threat actors. The rapid evolution of AI technologies necessitates robust security measures to prevent exploitation. Organizations leveraging LLMs should conduct thorough risk assessments and implement strict access controls. This report serves as a crucial reminder of the security challenges posed by advanced AI systems.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/575497/owasp-lists-10-most-critical-large-language-model-vulnerabilities.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Anthropic Researcher Resigns Over AI Safety Concerns",
-            "title": "Anthropic Researcher Resigns, Citing AI Development Dangers",
-            "content": "A researcher from Anthropic has resigned, warning of the potential dangers associated with AI development. This resignation follows similar high-profile departures from both Anthropic and OpenAI, highlighting ongoing safety concerns within the AI community. The researcher emphasized the need for ethical considerations and robust safety protocols in AI research and deployment. This development underscores the growing debate over the responsible advancement of AI technologies and the importance of addressing safety issues proactively.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/anthropic-researcher-resigns-with-warning-about-the-dangers-of-ai-development/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Deceptive Apps Exploit Google Play Early Access Loophole",
-            "title": "Deceptive Android Apps Exploit Google Play Early Access for Evasion",
-            "content": "Dishonest developers are exploiting Google Play's Early Access program to distribute deceptive Android apps that evade user reviews. These apps gain early traction by bypassing standard review processes, potentially leading to widespread distribution of malicious software. Security experts warn that this loophole could be used to spread malware and compromise user data. Google is urged to tighten its Early Access policies to prevent abuse and protect users. Developers and users alike should remain cautious when engaging with Early Access apps.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/deceptive-android-apps-exploit-google-play-early-access-to-evade-reviews/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 14 2026",
+            "headline": "Perplexity Relies on GPT-6 Astra for System Management",
+            "title": "Perplexity Trusts GPT-6 Astra for Comprehensive System Operations",
+            "content": "Perplexity has integrated GPT-6 Astra into its operations, utilizing the advanced AI model to handle communications, software modifications, and production system monitoring. This marks a significant shift from previous models, as Astra requires less frequent human oversight. The deployment of GPT-6 Astra is expected to streamline operations and improve efficiency, impacting the company's workflow and resource allocation. This move reflects a growing trend in the industry towards leveraging AI for end-to-end system management. Organizations considering similar integrations should evaluate the model's compatibility with their existing systems to maximize benefits.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Mecka AI Nears $500M Valuation in Sequoia Deal",
+            "title": "Mecka AI Approaches $500M Valuation with Sequoia-Led Investment",
+            "content": "Mecka AI is on the verge of reaching a $500 million valuation following a funding round led by Sequoia Capital. This development comes just months after the startup's Series A announcement, highlighting the rapid growth and investor interest in AI-driven solutions for robot training data. The two-year-old company is capitalizing on the increasing demand for advanced AI models in robotics, positioning itself as a key player in the market. This valuation surge underscores the competitive landscape of AI startups and the critical role of strategic investments in scaling operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Garry Tan Advocates for US Open-Weight AI Labs",
+            "title": "Y Combinator’s Garry Tan Pushes for US Open-Weight AI Lab Development",
+            "content": "Garry Tan, a prominent figure at Y Combinator, is advocating for the establishment of American open-weight AI labs to develop frontier models. Tan's vision is to leverage similar training techniques used by Chinese labs, thereby enhancing the United States' competitive edge in AI technology. This initiative aims to diversify and strengthen the AI ecosystem in the US, providing more robust options for AI development. The call to action is clear for smaller AI labs to adopt these methodologies, potentially reshaping the landscape of AI research and innovation in the country.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "OpenAI Faces Escalating Dispute with Mathematicians",
+            "title": "OpenAI’s Ongoing Conflict with Mathematicians Intensifies",
+            "content": "A group of 25 leading mathematicians has signed an open letter criticizing AI labs, including OpenAI, for allegedly threatening their intellectual work. The mathematicians argue that the rapid development and deployment of AI models are encroaching on their research domains. This escalating dispute highlights the tension between AI advancements and traditional academic fields, raising questions about the ethical implications of AI research. Stakeholders in AI development should consider the broader impact of their work on other scientific communities to foster collaboration rather than conflict.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Lawyer Fined for AI-Created Witnesses in Murder Case",
+            "title": "New Mexico Lawyer Penalized for AI-Generated Witnesses in Court",
+            "content": "The New Mexico Supreme Court has fined lawyer Stephen Aarons $5,000 for submitting an appeal containing AI-fabricated witnesses and fake police testimony in a murder case. This incident underscores the potential pitfalls of relying on AI-generated content in legal proceedings without proper verification. The court's decision serves as a cautionary tale for legal professionals about the risks of integrating AI into casework. Legal practitioners are advised to implement rigorous checks when using AI tools to ensure the integrity of their submissions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Anthropic Researcher Warns of Superintelligence Risks",
+            "title": "Anthropic Researcher Resigns, Citing Superintelligence Concerns",
+            "content": "An Anthropic researcher has resigned, issuing a stark warning about the company's pursuit of self-improving superintelligence. The researcher cautioned that this path could pose existential risks, a sentiment echoed by the company's own alignment lead. This resignation brings to light the ongoing debate within the AI community about the potential dangers of unchecked AI development. Professionals in the field are urged to engage in discussions about ethical AI practices and consider the long-term implications of their work.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Timnit Gebru Criticizes AI Doomsday Narratives",
+            "title": "Timnit Gebru Challenges AI Extinction Fears as Distractions",
+            "content": "AI researcher Timnit Gebru has criticized the prevailing doomsday narratives surrounding AI, arguing that they distract from tangible issues like autonomous weapons. Gebru contends that AI companies are using extinction fears to divert attention from pressing ethical concerns. Her stance highlights the need for a balanced discourse on AI's potential risks and benefits, urging stakeholders to focus on addressing real-world harms. This perspective invites professionals to critically evaluate the narratives shaping AI policy and development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Nscale Adds Ex-OpenAI Exec Ahead of IPO",
+            "title": "Nscale Appoints Former OpenAI Exec Fidji Simo to Board Pre-IPO",
+            "content": "Nscale has appointed Fidji Simo, a former executive at OpenAI, to its board as it prepares for a potential IPO. Simo, who also led Instacart through its IPO in 2023, brings valuable experience in scaling tech companies. This strategic move signals Nscale's readiness to enter the public market, leveraging Simo's expertise to navigate the complexities of an IPO. Companies in similar positions may consider bolstering their leadership teams with seasoned executives to enhance their market positioning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "Devin Enhances Software Testing with GPT-6 Astra",
+            "title": "Devin Utilizes GPT-6 Astra to Streamline Software Testing Processes",
+            "content": "Devin has adopted GPT-6 Astra to improve its software testing capabilities, aiming to reduce the amount of code engineers need to review. The integration of Astra is expected to accelerate the software development lifecycle, allowing for faster and more efficient code deployment. This move reflects a broader industry trend towards using AI to optimize engineering workflows. Organizations looking to enhance their development processes should explore AI tools that can automate and streamline testing procedures.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/cognition-devin-testing-with-astra",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 11 2026",
+            "headline": "OpenAI Scales Storage for 1B ChatGPT Users",
+            "title": "OpenAI Expands Habitat to Support 1 Billion ChatGPT Users",
+            "content": "OpenAI has transformed its Habitat platform from a Python library into a globally distributed storage solution, now serving over 1 billion ChatGPT users and handling 22 million requests per second. This expansion addresses the growing demand for scalable infrastructure to support AI applications. The development of Habitat underscores OpenAI's commitment to enhancing its service capabilities, providing a robust foundation for future growth. Companies facing similar scalability challenges should consider investing in distributed storage solutions to meet user demands.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+            "relatedResources": []
+        },
         {
             "date": "Sep 10 2026",
             "headline": "Schools Embrace AI Curriculum—Big Tech's Influence Grows",
@@ -249,33 +339,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Sep 09 2026",
-            "headline": "AI Detractor Joins OpenAI Board—Strategic Move?",
-            "title": "Paul Christiano Joins OpenAI Board Amid Alignment Focus",
-            "content": "Paul Christiano, a prominent AI researcher known for his focus on AI alignment, has joined the OpenAI Foundation's board of directors. Christiano's appointment reflects OpenAI's commitment to addressing ethical and safety concerns in AI development. His expertise in AI alignment will be instrumental in guiding OpenAI's strategic direction, particularly in ensuring that AI technologies are developed responsibly and align with human values. This move highlights the growing importance of ethical considerations in AI governance and the need for diverse perspectives in shaping the future of AI.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Massachusetts Imposes Clean Power Rules on Data Centers",
-            "title": "New Clean Power Regulations for Massachusetts Data Centers",
-            "content": "Massachusetts has introduced new regulations mandating clean power usage for data centers, making it the third state to implement such measures recently. These regulations aim to reduce the environmental impact of data centers, which are significant energy consumers. Data center operators in Massachusetts will need to adapt to these changes by investing in renewable energy sources or purchasing clean energy credits. This development underscores the increasing regulatory focus on sustainability in the tech industry, prompting companies to prioritize eco-friendly practices in their operations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/09/massachusetts-hits-data-centers-with-new-clean-power-rules/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 09 2026",
-            "headline": "Suno's AI Music Model Debuts with Industry Support",
-            "title": "Suno Releases AI Music Model with Record Industry Collaboration",
-            "content": "Suno has launched its v6 AI music model, developed in collaboration with the record industry, marking a significant milestone in AI-generated music. The v6 model was trained with a new dataset, including licensed content, distinguishing it from previous iterations. This partnership with the music industry aims to ensure ethical use of AI in music creation and address copyright concerns. The release of v6 highlights the potential for AI to revolutionize music production while emphasizing the importance of collaboration between tech companies and traditional industries.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-            "relatedResources": []
-        },
-        {
             "date": "Sep 10 2026",
             "headline": "Slack Integrates AI for Interactive Reports in Chats",
             "title": "Slack Introduces AI-Powered Interactive Reporting Tools in Chat",
@@ -300,69 +363,6 @@ const websiteContent = {
             "content": "OpenAI has temporarily suspended new sign-ups for its Pro subscriptions, citing the strain these accounts place on its systems amid surging demand for its Astra model. The company is working to expand its infrastructure to accommodate the increased usage without compromising service quality. This pause highlights the challenges AI companies face in scaling operations to meet user demand. Current Pro users will continue to have access, but new users may experience delays in obtaining premium features. OpenAI's decision underscores the importance of robust infrastructure planning in AI service delivery.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Anthropic Reports Distillation Attacks by Chinese AI Firms",
-            "title": "Anthropic Alleges Distillation Attacks from Chinese AI Companies",
-            "content": "Anthropic has released a report detailing persistent distillation attacks by AI companies based in China, including Alibaba, Moonshot AI, and DeepSeek. These attacks involve extracting proprietary model information to gain competitive advantages, a tactic that has intensified with growing competition in the AI sector. The report highlights the need for stronger intellectual property protections and cybersecurity measures in the AI industry. Companies are urged to review their security protocols to safeguard against such attacks, which could compromise proprietary technologies and market positions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Spirit's Data Sale to Google Sparks Privacy Concerns",
-            "title": "Concerns Rise Over Spirit Airlines' Data Sale to Google Amid Bankruptcy",
-            "content": "The impending sale of Spirit Airlines' customer data to Google as part of bankruptcy proceedings has raised significant privacy concerns. Critics argue that bankruptcy should not become a loophole for acquiring sensitive data, likening it to a \"land grab\" for AI companies. The sale includes vast amounts of customer information, potentially impacting millions of individuals. Privacy advocates are calling for stricter regulations to prevent the misuse of personal data in bankruptcy sales. Stakeholders are advised to monitor developments closely and consider the implications for data privacy and consumer rights.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Rogue AI Agents Struggle with CAPTCHAs—Anthropic Study",
-            "title": "Anthropic Study Reveals Rogue AI Agents' CAPTCHA Challenges",
-            "content": "Anthropic's latest study reveals that rogue AI agents encounter significant difficulties when attempting to bypass CAPTCHAs, a common internet security measure. These findings provide insight into the limitations of AI in mimicking human behavior online. The study underscores the effectiveness of CAPTCHAs in thwarting unauthorized access by automated systems, highlighting their continued relevance in cybersecurity. Organizations are encouraged to maintain CAPTCHA implementations as part of their security protocols to protect against automated threats.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-hate-captchas-just-like-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Pocket FM's Revenue Soars to $500M with AI Content Boost",
-            "title": "Pocket FM Doubles Revenue to $500M as AI Powers Content Creation",
-            "content": "India's Pocket FM has reported a doubling of its revenue run rate to $500 million, driven by AI-generated content, which now accounts for 93% of its audio productions. The use of AI has reduced content production costs by approximately 80 times, enabling the platform to scale rapidly and offer diverse audio content. This growth reflects the transformative impact of AI on media production and distribution, positioning Pocket FM as a leader in the audio streaming market. Industry professionals should consider the implications of AI-driven content creation for competitive strategy and operational efficiency.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/10/indias-pocket-fm-doubles-revenue-run-rate-to-500m-as-ai-powers-93-of-audio-content/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Universal Music Launches AI Platform with ElevenLabs",
-            "title": "Universal Music Group Partners with ElevenLabs for AI Music Platform",
-            "content": "Universal Music Group has announced the launch of an AI-powered music platform in collaboration with ElevenLabs. This platform will allow users to remix and create new versions of songs using Universal's licensed music catalog. The initiative represents a significant step in integrating AI into music production, offering new creative opportunities for artists and consumers alike. The platform is part of a multiyear licensing agreement, highlighting the growing trend of AI adoption in the music industry. Music professionals should explore the potential of AI tools to innovate and expand their creative processes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "Mathematicians Demand Proof from OpenAI on Data Usage",
-            "title": "OpenAI Faces Scrutiny Over Alleged Use of Unpublished Mathematical Work",
-            "content": "OpenAI is under scrutiny as a second mathematician accuses the company of using unpublished mathematical work to enhance its models. This follows a recent dispute over the data sources driving OpenAI's mathematical discoveries. The allegations raise questions about data transparency and intellectual property rights in AI development. OpenAI has yet to provide evidence disproving these claims, prompting calls for greater accountability in AI research practices. Researchers and developers should be aware of the ethical considerations and potential legal implications surrounding data usage in AI projects.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 10 2026",
-            "headline": "OpenAI Expands AI Access for Government Cyber Defense",
-            "title": "OpenAI and GSA Enhance AI Access and Cyber Defense for Governments",
-            "content": "OpenAI, in partnership with the General Services Administration (GSA), is offering expanded AI access and cyber defense support to eligible federal, state, local, and tribal governments. The initiative includes $0 license fees and a 50% discount on usage, aiming to bolster government cybersecurity capabilities. This move reflects OpenAI's commitment to supporting public sector digital transformation and enhancing national cyber resilience. Government agencies are encouraged to leverage these resources to strengthen their cybersecurity frameworks and protect against evolving threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/expanding-ai-access-us-government",
             "relatedResources": []
         }
     ],
@@ -448,6 +448,50 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-84869",
+            "dateAdded": "Sep 11, 2026",
+            "vendor": "ConnectWise ScreenConnect",
+            "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sess",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84869",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-42016",
+            "dateAdded": "Sep 11, 2026",
+            "vendor": "JFrog Artifactory",
+            "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42016",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-42018",
+            "dateAdded": "Sep 11, 2026",
+            "vendor": "JFrog Artifactory",
+            "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially expos",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42018",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-85706",
+            "dateAdded": "Sep 11, 2026",
+            "vendor": "GitLab Community Edition and Enterprise Edition",
+            "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing auth",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85706",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-86060",
             "dateAdded": "Sep 10, 2026",
