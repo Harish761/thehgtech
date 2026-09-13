@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-09-12T17:21:02.562822",
-  "total_incidents": 31204,
+  "last_updated": "2026-09-13T07:35:26.086383",
+  "total_incidents": 31208,
   "incidents": [
+    {
+      "id": "doommageddon_incor_group",
+      "victim_name": "INCOR Group",
+      "threat_actor": "Doommageddon",
+      "date_discovered": "2026-09-13T00:53:02.200383+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "Status: upcoming | Data size: — | Files: 0 files | Deadline: 2026-09-20T00:00:00Z",
+      "screenshot": "https://images.ransomware.live/victims/ea98bbfbcedde938bc23cf03249a61d1.png",
+      "url": "http://iacjvmxjb2ivqkxxzmde4w6g53gn6ym7c3g6mfifvejyhqtp4wrkypyd.onion/victim/incor-group",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vexy_ransomware_strad_solutions",
+      "victim_name": "Strad Solutions",
+      "threat_actor": "Vexy Ransomware",
+      "date_discovered": "2026-09-12T23:58:29.052830+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Strad Solutions provides cloud hosting, dedicated servers, managed IT, cybersecurity, and disaster recovery services for businesses worldwide.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_nexbex_solutions_private_limited",
+      "victim_name": "Nexbex Solutions Private Limited",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-09-12T13:51:54.425309+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Nexbex Solutions Private Limited is a technology consulting and software engineering firm incorporated in November 2023, headquartered in Malappuram, Kerala (India). Classified as an emerging private company, it operates with a paid-up capital of 10 million Indian rupees (₹10 Lakhs) and a compact team, generating estimated annual revenue of less than $1.2 million USD. Its core business focuses on computer programming, custom mobile application development (such as its corporate loyalty platforms Nexi Paints and Grace Petroleum), and digital solutions for retail automation, e-commerce, and smart lead management for growing small and medium-sized enterprises.\n\nWe have access to all their databases with their clients' sensitive data, which include names, emails, phone numbers, addresses, etc. 600 MB.\n\nDomains: club7ms.com, rayssportsnetwork.com, hwzthat.com, etc.\nSubdomains\tType\n\tstaging, edmontoneagles, masc, psca, live, kkr, victoriapark, staging.victoriapark, spartans, blaze, ramblers, eagle\t\n\tadmin.bookings-staging, backend.academy, admin.spike.booking, etc.\n\n\nWe have the source code for all 200+ of their projects. 10 GB +. going up. [Size: 600.0 MB | Sector: Technology]",
+      "screenshot": "",
+      "url": "/post/nexbex-solutions-private-limited/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "rhysida_axdia_international",
+      "victim_name": "Axdia International",
+      "threat_actor": "rhysida",
+      "date_discovered": "2026-09-12T13:10:06.735416+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Axdia International Axdia International is a German electronics company that brings together a wide range of modern small electronics and electric mobility products.    More",
+      "screenshot": "https://images.ransomware.live/victims/b36a81a2bdc8c574a7401ccf2a995ca7.png",
+      "url": "http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion/archive.php?company=273",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "unsafe_watchops.com",
       "victim_name": "watchops.com",
