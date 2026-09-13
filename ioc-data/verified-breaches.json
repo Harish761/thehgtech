@@ -3319,7 +3319,7 @@
   "chess.com": [
     {
       "Name": "Chess",
-      "Title": "Chess",
+      "Title": "Chess.com (2023)",
       "BreachDate": "2023-11-08",
       "AddedDate": "2023-11-10T02:02:26Z",
       "PwnCount": 1274077,
@@ -3331,7 +3331,23 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In November 2023, <a href=\"https://www.hackread.com/hacker-leaks-scraped-chess-com-user-records/\" target=\"_blank\" rel=\"noopener\">over 800k user records were scraped from the Chess website and posted to a popular hacking forum</a>. The data included email address, name, username and the geographic location of the user. A further 446k scraped records were later provided and added to HIBP."
+      "Description": "In November 2023, <a href=\"https://www.hackread.com/hacker-leaks-scraped-chess-com-user-records/\" target=\"_blank\" rel=\"noopener\">over 800k user records were scraped from the Chess.com website and posted to a popular hacking forum</a>. The data included email address, name, username and the geographic location of the user. A further 446k scraped records were later provided and added to HIBP."
+    },
+    {
+      "Name": "Chess2026",
+      "Title": "Chess.com (2026)",
+      "BreachDate": "2026-08-03",
+      "AddedDate": "2026-09-13T13:09:11Z",
+      "PwnCount": 4653212,
+      "DataClasses": [
+        "Email addresses",
+        "Geographic locations",
+        "Names",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, <a href=\"https://securityaffairs.com/197174/breaking-news/chess-com-leak-exposes-7-3-million-users-evidence-points-to-scraping.html\" target=\"_blank\" rel=\"noopener\">millions of records allegedly sourced from Chess.com were posted online</a>. The data contained 7.3M rows with 4.6M unique email addresses, along with usernames, names, countries and data relating to users' Chess.com accounts. Analysis of the data suggested it had been obtained by scraping. When loaded into HIBP, 99% of the email addresses had already appeared in previous data breaches, further supporting the scraping theory. <a href=\"https://www.troyhunt.com/when-is-a-scrape-a-breach/\" target=\"_blank\" rel=\"noopener\">Read more about scrapes and data breaches.</a>"
     }
   ],
   "csdn.net": [

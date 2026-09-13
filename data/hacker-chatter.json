@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-09-13T07:35:26.086383",
-  "total_incidents": 31208,
+  "last_updated": "2026-09-13T17:31:37.906057",
+  "total_incidents": 31215,
   "incidents": [
+    {
+      "id": "krybit_www.kashkha.com",
+      "victim_name": "www.kashkha.com",
+      "threat_actor": "krybit",
+      "date_discovered": "2026-09-13T12:29:33.395462+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Kashkha is a multinational modest fashion brand founded three decades ago in Dubai, UAE, specializing in designing, manu...",
+      "screenshot": "https://images.ransomware.live/victims/720d85f11ccabb63333968dee8c7ae98.png",
+      "url": "http://krybitqsdzwmhnitvwuhvsntfgf2wrhxveyxroxpc44c6gkft2cqldyd.onion/blog/f80863cff7bd3f7607c6486f3615c67a133e57a0cd5f4b6d749c3f1f3c3a1a9e/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_caridro_val_de_loire",
+      "victim_name": "CARIDRO VAL DE LOIRE",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-13T11:03:46.354166+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/04929040d6bc2dde85f051529d725e09.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=224e65b0-92cc-464a-871e-518f88a99685",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "auditteam_paid_victim_f9cf4b639cac1b18",
+      "victim_name": "Paid Victim F9CF4B639CAC1B18",
+      "threat_actor": "AuditTeam",
+      "date_discovered": "2026-09-13T09:51:41.156898+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/3f2069ce1f505b5163eb8b23dc629d7e.png",
+      "url": "http://6tdqqaxftvradka5d2frzgwixis7fmro7rfh4ettzcx7jfapkebe6jad.onion/entity/F9CF4B639CAC1B18",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "auditteam_paid_victim_fdc699de3a112669",
+      "victim_name": "Paid Victim FDC699DE3A112669",
+      "threat_actor": "AuditTeam",
+      "date_discovered": "2026-09-13T09:51:07.947269+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "[AI generated] N/A",
+      "screenshot": "https://images.ransomware.live/victims/21eb228c3b96ee6cf6bb2fe2c5853c1b.png",
+      "url": "http://6tdqqaxftvradka5d2frzgwixis7fmro7rfh4ettzcx7jfapkebe6jad.onion/entity/FDC699DE3A112669",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "auditteam_vi***in",
+      "victim_name": "vi***in",
+      "threat_actor": "AuditTeam",
+      "date_discovered": "2026-09-13T09:50:31.693860+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "",
+      "screenshot": "https://images.ransomware.live/victims/5ff5184d3b0906a6d4dab759b37ae6e6.png",
+      "url": "http://6tdqqaxftvradka5d2frzgwixis7fmro7rfh4ettzcx7jfapkebe6jad.onion/entity/4AB39A256B7A31D5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "barracuda_i2i-systems",
+      "victim_name": "i2i-systems",
+      "threat_actor": "Barracuda",
+      "date_discovered": "2026-09-13T09:20:21.439464+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "This is one of the most poorly secured companies we have ever encountered. Over the course of a week, we analyzed the infrastructure and moved freely across their network. The infrastructure lacked proper security configurations, and the IT department showed a complete disregard for the data. As a result of the attack, 693 gigabytes of data were exfiltrated.\r\nWe downloaded the complete source code for the following projects:\r\n\r\nCaplan\r\nDataGov-Dev-Docker\r\nDDR\r\nDDR-Veriskop\r\nDFE-Dev\r\nKangal-Dev\r\nSDD-DEV-DOCKER\r\nSDD-MAIN\r\ncommonprojects.zip\r\nCopycat.zip\r\nCopycatLive.zip\r\ndatacat.war\r\ndatagov.war\r\nKangal-Dev.zip\r\nKangal-Master.zip\r\nSDD-DEV-DOCKER@2.zip\r\nsmartdq.war\r\n\r\nThe volume of exfiltrated source code totaled 44 gigabytes. The data includes a full snapshot of the latest releases from the development repository. i2i-systems has a direct connection to the information security company Veriskop; therefore, this breach directly affects them as well. In addition, i2i-systems engaged in joint projects with partners such as Vodafone, Etiya, Bouygues, Freedom Mobile, and others; this is evidenced by the Linux servers located within the i2i-systems infrastructure:\r\n\r\n1864654005 backup_Veriskop-SQA1.local_2026-08-31_203808.tar.gz\r\n3292962897 copycat2019.i2isystems.local_critical_backup_2026-08-31_19-30-29.tar.gz\r\n18422354 critical_backup_bouygues_fcbs_batch2.local_20260830_221815.tar.gz\r\n2231188487 etiya-mobile-test-01.local_backup_20260831_213207.tar.gz\r\n20546323810 freedom-mobile1-critical-vault.tar.gz\r\n1050673952 freedom-mobile2-secrets-20260830-232814.tar.gz\r\n721661 maya-redhat7-9_2026-08-30_233036.tar.gz\r\n22966288270 ol8-10-innobi_full_backup_20260831_022640.tar.gz\r\n529695763 veriskop-db-critical-backup-2026-08-31_234418.tar.gz\r\n13012999372 veriskop-fiziksel-yedek-20260831023535.tar.gz\r\n309528511 veriskop-oracle-critical-backup-2026-08-31_203340.tar.gz\r\n633604141 veriskop-rhel-7.local_critical_backup.tar.gz\r\n4878999722 Veriskoptest01.local_backup_20260831_213236.tar.gz\r\n238487575 Veriskoptest02.local_critical_backup_20260831_213052.tar.gz\r\n33936543608 veriskoptest03_critical_backup_2026-08-31.tar.gz\r\n\r\nWe have extracted absolutely all critical data from these infrastructure Linux systems and created a snapshot of the databases.\r\nIn addition, i2i-systems recently launched a joint project with Turk Telekom—we have downloaded the database containing all their customers.\r\nThe data will be published soon... | Severity: HIGH | Size: 643 GB | Status: selling | 300000$",
+      "screenshot": "https://images.ransomware.live/victims/cd6bb15fdcf005c06167f69b27e438ff.png",
+      "url": "mailto:writetousbrkd@2mail.co",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "shinyhunters_kimberly-clark",
+      "victim_name": "Kimberly-Clark",
+      "threat_actor": "shinyhunters",
+      "date_discovered": "2026-09-13T08:48:41.160130+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "This is a final warning to reach out by 16 Sep 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline. | Updated: 13 Sep 2026 | Warning: FINAL WARNING",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "doommageddon_incor_group",
       "victim_name": "INCOR Group",
