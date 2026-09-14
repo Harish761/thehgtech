@@ -3639,20 +3639,12 @@
       "date": "2026-06-16",
       "category": "other",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1533",
-      "incident_id": 1533,
-      "title": "Four Lawyers Reportedly Sanctioned After Purportedly AI-Related Hallucinated Citations Appeared in W",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 456,
+    "total": 455,
     "last7Days": 15,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-15T01:46:59.962220+05:30"
+  "lastUpdated": "2026-09-15T03:28:02.552127+05:30"
 }
