@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-494",
+      "incident_id": 494,
+      "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
+      "date": "2026-09-14",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1131",
+      "incident_id": 1131,
+      "title": "Alleged Deepfake Identity Scam Uses Miami Beach Realtor's Likeness to Defraud Victim in the United K",
+      "date": "2026-09-14",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1648",
+      "incident_id": 1648,
+      "title": "Hong Kong Man Reportedly Lost More Than HK$10 Million in WhatsApp Scam Using Purported AI-Generated ",
+      "date": "2026-09-14",
+      "category": "fraud",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1688",
       "incident_id": 1688,
       "title": "Teenager in Quilmes, Argentina, Reportedly Consulted ChatGPT While Planning School Shooting Against ",
@@ -100,14 +124,6 @@
       "id": "AIID-1115",
       "incident_id": 1115,
       "title": "Alleged Deepfake Investment Scam Uses Economist David Rosenberg's Likeness on Meta Platforms",
-      "date": "2026-09-07",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1131",
-      "incident_id": 1131,
-      "title": "Alleged Deepfake Identity Scam Uses Miami Beach Realtor's Likeness to Defraud Victim in the United K",
       "date": "2026-09-07",
       "category": "deepfake",
       "severity": "high"
@@ -710,14 +726,6 @@
       "title": "Rite Aid Facial Recognition Disproportionately Misidentified Minority Shoppers as Shoplifters",
       "date": "2026-09-05",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-494",
-      "incident_id": 494,
-      "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
-      "date": "2026-09-05",
-      "category": "deepfake",
       "severity": "medium"
     },
     {
@@ -2529,14 +2537,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1648",
-      "incident_id": 1648,
-      "title": "Hong Kong Man Reportedly Lost More Than HK$10 Million in WhatsApp Scam Using Purported AI-Generated ",
-      "date": "2026-08-18",
-      "category": "fraud",
-      "severity": "critical"
-    },
-    {
       "id": "AIID-1637",
       "incident_id": 1637,
       "title": "Hank Green Reportedly Used AI-Generated Scientific Image Containing Errors in Educational Video",
@@ -3641,42 +3641,18 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1532",
-      "incident_id": 1532,
-      "title": "Reported Deepfake Video Impersonating Mark Carney Used in Nearly $1M Cryptocurrency Scam Targeting O",
-      "date": "2026-06-16",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1533",
       "incident_id": 1533,
       "title": "Four Lawyers Reportedly Sanctioned After Purportedly AI-Related Hallucinated Citations Appeared in W",
       "date": "2026-06-16",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1534",
-      "incident_id": 1534,
-      "title": "Google Alleged Outsider Enterprise Used Gemini to Create Phishing Sites for Text-Message Scams",
-      "date": "2026-06-16",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1535",
-      "incident_id": 1535,
-      "title": "OpenAI Allegedly Failed to Intervene in ChatGPT Conversations Preceding Montreal Web Developer Alice",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 459,
-    "last7Days": 27,
-    "last30Days": 323
+    "total": 456,
+    "last7Days": 15,
+    "last30Days": 317
   },
-  "lastUpdated": "2026-09-14T20:28:48.992839+05:30"
+  "lastUpdated": "2026-09-15T01:46:59.962220+05:30"
 }
