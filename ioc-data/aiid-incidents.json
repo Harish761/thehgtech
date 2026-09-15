@@ -3417,51 +3417,11 @@
       "severity": "high"
     },
     {
-      "id": "AIID-686",
-      "incident_id": 686,
-      "title": "Meta AI Image Generator Reportedly Fails to Accurately Represent Interracial Relationships",
-      "date": "2026-06-17",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-700",
-      "incident_id": 700,
-      "title": "Meta's AI Chatbots Are Reportedly Entering Online Support Communities Uninvited",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-712",
-      "incident_id": 712,
-      "title": "Meta AI Hallucinates Harassment Allegations Against New York Politicians",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-732",
       "incident_id": 732,
       "title": "Whisper Speech-to-Text AI Reportedly Found to Create Violent Hallucinations",
       "date": "2026-06-17",
       "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-734",
-      "incident_id": 734,
-      "title": "Leading AI Models Reportedly Found to Mimic Russian Disinformation in 33% of Cases and to Cite Fake ",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-750",
-      "incident_id": 750,
-      "title": "AI Chatbots Reportedly Inaccurately Conveyed Real-Time Political News",
-      "date": "2026-06-17",
-      "category": "other",
       "severity": "medium"
     },
     {
@@ -3521,22 +3481,6 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1180",
-      "incident_id": 1180,
-      "title": "Purported Meta AI Chatbot Persona 'Big sis Billie' Reportedly Engages in Romantic Roleplay and Provi",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1200",
-      "incident_id": 1200,
-      "title": "Meta AI on Instagram Reportedly Facilitated Suicide and Eating Disorder Roleplay with Teen Accounts",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1224",
       "incident_id": 1224,
       "title": "Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele B\u00fcndchen and Other Celebrities",
@@ -3553,25 +3497,9 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1247",
-      "incident_id": 1247,
-      "title": "Meta AI Reportedly Generated Purportedly False Claims Linking Activist Robby Starbuck to January 6th",
-      "date": "2026-06-17",
-      "category": "prompt_injection",
-      "severity": "high"
-    },
-    {
       "id": "AIID-1259",
       "incident_id": 1259,
       "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1279",
-      "incident_id": 1279,
-      "title": "Prominent AI Chatbots Allegedly Produced Incorrect UK Financial and ISA Guidance",
       "date": "2026-06-17",
       "category": "other",
       "severity": "medium"
@@ -3591,20 +3519,12 @@
       "date": "2026-06-17",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1356",
-      "incident_id": 1356,
-      "title": "Urban VPN Proxy Browser Extension Reportedly Harvested and Sold Private AI Chatbot Conversations via",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 450,
+    "total": 440,
     "last7Days": 15,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-15T10:15:09.294202+05:30"
+  "lastUpdated": "2026-09-15T18:57:30.105629+05:30"
 }
