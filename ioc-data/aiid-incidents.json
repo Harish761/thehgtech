@@ -3393,86 +3393,6 @@
       "severity": "critical"
     },
     {
-      "id": "AIID-106",
-      "incident_id": 106,
-      "title": "Korean Chatbot Luda Reportedly Made Offensive Remarks Towards Minority Groups in South Korea",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-142",
-      "incident_id": 142,
-      "title": "Facebook's Advertisement Moderation System Allegedly Routinely Misidentified Adaptive Fashion Produc",
-      "date": "2026-06-17",
-      "category": "content_moderation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-561",
-      "incident_id": 561,
-      "title": "OpenAI Alleged by Lawsuit Violated Users' Privacy Rights by Training AI on Private Info without Info",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-732",
-      "incident_id": 732,
-      "title": "Whisper Speech-to-Text AI Reportedly Found to Create Violent Hallucinations",
-      "date": "2026-06-17",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-779",
-      "incident_id": 779,
-      "title": "Music Producer Michael Smith Reportedly Arrested for Allegedly Using AI-Generated Songs in $10 Milli",
-      "date": "2026-06-17",
-      "category": "fraud",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-882",
-      "incident_id": 882,
-      "title": "AI-Generated Reading Summaries on Fable App Reportedly Wrote Biased and Offensive Commentary",
-      "date": "2026-06-17",
-      "category": "bias",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1014",
-      "incident_id": 1014,
-      "title": "Students in Maltese Schools Reportedly Being Targeted by Deepfake Nudes",
-      "date": "2026-06-17",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1018",
-      "incident_id": 1018,
-      "title": "OpenAI's 4o Model Allegedly Used to Generate Fake Receipts and Prescriptions",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1062",
-      "incident_id": 1062,
-      "title": "Brazilian Authorities Reportedly Link AI-Generated Marcos Mion Videos to Purported Fake Restaurant P",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1066",
-      "incident_id": 1066,
-      "title": "Hong Kong Syndicate Allegedly Used AI-Generated Facial Composites to Open Bank Accounts",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1067",
       "incident_id": 1067,
       "title": "Alleged Use of Purported AI-Generated Identities to Defraud FTX Claims Buyers of $5.6M",
@@ -3489,42 +3409,18 @@
       "severity": "high"
     },
     {
-      "id": "AIID-1238",
-      "incident_id": 1238,
-      "title": "OpenAI ChatGPT Models Reportedly Jailbroken to Provide Chemical, Biological, and Nuclear Weapons Ins",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1259",
-      "incident_id": 1259,
-      "title": "ChatGPT Allegedly Encouraged 23-Year-Old Texas User's Suicide During Extended Conversations",
-      "date": "2026-06-17",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1289",
       "incident_id": 1289,
       "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
       "date": "2026-06-17",
       "category": "deepfake",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1290",
-      "incident_id": 1290,
-      "title": "Alleged Fabricated News Sites and Deepfakes Impersonated Maltese Ministers, Financial Experts, and M",
-      "date": "2026-06-17",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 440,
-    "last7Days": 15,
+    "total": 427,
+    "last7Days": 9,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-15T18:57:30.105629+05:30"
+  "lastUpdated": "2026-09-16T01:10:15.375864+05:30"
 }
