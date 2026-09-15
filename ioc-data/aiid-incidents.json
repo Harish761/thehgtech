@@ -3391,36 +3391,12 @@
       "date": "2026-06-18",
       "category": "other",
       "severity": "critical"
-    },
-    {
-      "id": "AIID-1067",
-      "incident_id": 1067,
-      "title": "Alleged Use of Purported AI-Generated Identities to Defraud FTX Claims Buyers of $5.6M",
-      "date": "2026-06-17",
-      "category": "fraud",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1224",
-      "incident_id": 1224,
-      "title": "Purportedly AI-Generated Deepfake Ads on Instagram Impersonate Gisele B\u00fcndchen and Other Celebrities",
-      "date": "2026-06-17",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1289",
-      "incident_id": 1289,
-      "title": "Malta's Prime Minister Robert Abela Reportedly Deepfaked by a Ukrainian National in Cryptocurrency F",
-      "date": "2026-06-17",
-      "category": "deepfake",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 427,
+    "total": 424,
     "last7Days": 9,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-16T01:10:15.375864+05:30"
+  "lastUpdated": "2026-09-16T03:09:45.508729+05:30"
 }
