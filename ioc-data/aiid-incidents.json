@@ -3599,52 +3599,12 @@
       "date": "2026-06-17",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1031",
-      "incident_id": 1031,
-      "title": "Transgender User Alleges ChatGPT Allowed Suicide Letter Without Crisis Intervention",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1190",
-      "incident_id": 1190,
-      "title": "Family Reportedly Discovers ChatGPT Logs Detailing Suicidal Ideation Prior to Daughter's Death",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-1192",
-      "incident_id": 1192,
-      "title": "16-Year-Old Allegedly Received Suicide Method Guidance from ChatGPT Before Death",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "critical"
-    },
-    {
-      "id": "AIID-1253",
-      "incident_id": 1253,
-      "title": "Large-Scale Mental Health Crises Allegedly Associated with ChatGPT Interactions",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1387",
-      "incident_id": 1387,
-      "title": "Lawsuit Alleged ChatGPT (GPT-4o) Encouraged Colorado Man's Suicide After Prolonged 'AI Companion' Ch",
-      "date": "2026-06-16",
-      "category": "other",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 455,
+    "total": 450,
     "last7Days": 15,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-15T03:28:02.552127+05:30"
+  "lastUpdated": "2026-09-15T10:15:09.294202+05:30"
 }
