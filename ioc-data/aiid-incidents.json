@@ -3321,43 +3321,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1537",
-      "incident_id": 1537,
-      "title": "Two Waymo Robotaxis Allegedly Contributed to Bike-Lane Collision That Injured San Francisco Cyclist",
-      "date": "2026-06-18",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1538",
       "incident_id": 1538,
       "title": "City of Zhuzhou in Hunan Suspended Hellobike Robotaxi Service After Vehicle Struck Two Pedestrians",
       "date": "2026-06-18",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1539",
-      "incident_id": 1539,
-      "title": "Zoox Robotaxi Crossed Into Opposing Lane and Stopped Near Oncoming Traffic",
-      "date": "2026-06-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1540",
-      "incident_id": 1540,
-      "title": "Zoox Robotaxi Reportedly Collided with Open Car Door, Allegedly Injuring San Francisco Street Ambass",
-      "date": "2026-06-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1541",
-      "incident_id": 1541,
-      "title": "Waymo Robotaxi Reportedly Entered Phoenix Light-Rail Tracks, Prompting Passenger to Exit",
-      "date": "2026-06-18",
-      "category": "prompt_injection",
       "severity": "medium"
     },
     {
@@ -3394,9 +3362,9 @@
     }
   ],
   "stats": {
-    "total": 424,
-    "last7Days": 9,
+    "total": 420,
+    "last7Days": 8,
     "last30Days": 317
   },
-  "lastUpdated": "2026-09-16T18:57:04.647962+05:30"
+  "lastUpdated": "2026-09-17T01:01:10.580875+05:30"
 }
