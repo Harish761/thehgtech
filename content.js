@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 15 2026",
+            "headline": "Cisco Email Gateway Zero-Day—Root Access Exploit Found",
+            "title": "Critical Cisco Secure Email Gateway Zero-Day Allows Root Access",
+            "content": "Cisco has issued emergency patches for a critical zero-day vulnerability in its Secure Email Gateway appliance, identified as CVE-2026-XXXX, which allows attackers to gain root access by sending maliciously crafted emails. This flaw was actively exploited in the wild before the patch release, posing a significant risk to organizations relying on this appliance for email security. The vulnerability affects all versions prior to the patched release, highlighting the urgent need for users to update their systems immediately. This incident underscores the ongoing threat landscape where email gateways remain a prime target for attackers. Cisco advises customers to apply the patch without delay to mitigate potential breaches.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4222391/critical-cisco-secure-email-gateway-zero-day-gives-attackers-root-access.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Microsoft Sets AI Privacy Standards for Schools—Industry Impact?",
+            "title": "Microsoft Commits to AI Privacy Rules for Student Data Protection",
+            "content": "Microsoft has announced its commitment to implementing stringent AI privacy standards in educational settings, following negotiations with the American Federation of Teachers. This initiative aims to safeguard student data by establishing clear privacy guardrails for AI technologies used in schools. The move sets a precedent for other tech giants, potentially influencing broader industry practices regarding AI and privacy. As educational institutions increasingly integrate AI into their systems, the protection of sensitive student information becomes paramount. Stakeholders in the education and technology sectors should monitor these developments closely to ensure compliance and data security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-commits-to-sweeping-ai-privacy-rules-for-students-will-other-tech-giants-follow/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "KREMLIN Malware Hijacks Browsers—Credential Theft Alert",
+            "title": "KREMLIN Banking Malware Targets Chrome and Edge for Credential Theft",
+            "content": "Researchers have uncovered a new Brazilian banking malware operation delivering a toolkit named KREMLIN, which targets Chrome and Edge browsers to steal credentials and session tokens. Tracked by Elastic Security Labs as REF9334, this threat has been active since May 2025, employing phishing lures that impersonate legitimate entities. The malware's ability to hijack browser sessions poses a significant threat to users' financial and personal data security. Organizations and individuals using these browsers should remain vigilant and consider implementing additional security measures, such as multi-factor authentication, to protect against potential breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Iranian Hackers Exploit Telegram—Global Espionage Campaign",
+            "title": "Iranian Hackers Use Telegram-Controlled Malware for Global Espionage",
+            "content": "Cybersecurity agencies from the US, UK, and Netherlands have exposed a sophisticated espionage campaign by Iranian hackers using Telegram-controlled malware. This Windows-based malware targets dissidents, journalists, and activists worldwide, enabling the attackers to copy sensitive data and monitor communications. The use of Telegram as a command-and-control channel highlights the evolving tactics of state-sponsored threat actors. Organizations and individuals at risk should enhance their cybersecurity posture by deploying endpoint protection solutions and monitoring for unusual network activity. This revelation underscores the persistent threat posed by nation-state actors in cyberspace.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Exein Raises $270M—AI Security Startup Valued at $1.7B",
+            "title": "Exein Secures $270M Funding for AI Security Expansion",
+            "content": "Exein, a cybersecurity startup focused on physical AI security, has raised $270 million, reaching a valuation of $1.7 billion. The company plans to use the funds to accelerate its global expansion and further develop its proprietary foundation model. Exein's innovative approach addresses the growing need for robust security solutions in AI-driven environments, particularly as AI technologies become more integrated into critical infrastructure. Investors and industry stakeholders are closely watching Exein's progress as it positions itself as a leader in the AI security space. This funding round reflects the increasing importance of securing AI systems against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exein-secures-270m-at-1-7b-valuation-for-physical-ai-security/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "BambooToken Malware Targets Windows, Linux—MQTT Protocol Abused",
+            "title": "BambooToken Malware Uses MQTT to Control Windows and Linux Systems",
+            "content": "Cybersecurity researchers have identified a new malware family, BambooToken, which exploits the Message Queueing Telemetry Transport (MQTT) protocol to control both Windows and Linux systems. Active since at least 2025, this multi-platform campaign demonstrates the adaptability of threat actors in leveraging IoT communication protocols for malicious purposes. The malware's ability to operate across different operating systems increases its potential impact, particularly in environments with mixed IT infrastructure. Organizations should review their network configurations and consider implementing additional security measures to detect and block unauthorized MQTT traffic.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/bambootoken-malware-uses-mqtt-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "OpenAI Probes AI Agents' Role in RubyGems Attack",
+            "title": "OpenAI Investigates AI Agents' Involvement in RubyGems Attack",
+            "content": "OpenAI is investigating reports linking its AI agents to a security incident involving RubyGems, a popular package manager for Ruby. In May, RubyGems maintainers halted new account registrations due to suspicious activity that appeared to be malicious. This investigation highlights the potential misuse of AI technologies in orchestrating cyberattacks, raising concerns about AI's role in cybersecurity. Developers and security professionals should be aware of the risks associated with AI-driven automation and ensure robust security practices are in place to mitigate potential threats. The outcome of this investigation could have significant implications for AI governance and security policies.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/openai-investigates-report-linking-ai-agents-to-rubygems-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Apple Patches 200 Vulnerabilities—iOS 27, macOS Golden Gate 27",
+            "title": "Apple Releases iOS 27 and macOS Golden Gate 27 to Patch 200 Vulnerabilities",
+            "content": "Apple has released updates for iOS 27 and macOS Golden Gate 27, addressing 200 vulnerabilities, including critical kernel flaws that could lead to memory corruption, privilege escalation, and information leaks. These updates are crucial for maintaining the security and stability of Apple devices, particularly as the vulnerabilities could be exploited for malicious purposes. Users are urged to update their devices immediately to protect against potential exploits. This extensive patch release underscores Apple's commitment to addressing security issues proactively and highlights the ongoing challenges in securing complex operating systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/apple-patches-200-vulnerabilities-with-new-ios-27-macos-golden-gate-27-releases/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Microsoft AI Code of Conduct—Cyberattack Boundaries Set",
+            "title": "Microsoft Establishes AI Code of Conduct for Cybersecurity Research",
+            "content": "Microsoft has introduced the Humanist AI Code of Conduct, delineating boundaries between defensive cyber research and operational attack capabilities. This code aims to ensure that AI technologies are used ethically and responsibly in cybersecurity contexts, setting a standard for the industry. By defining a clear chain of command and safety constraints, Microsoft seeks to prevent the misuse of AI in cyberattacks while promoting transparency and accountability. Security professionals and AI developers should familiarize themselves with these guidelines to align their practices with ethical standards and contribute to a safer digital environment.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-ai-code-of-conduct-sets-cyberattack-boundaries-chain-of-command-safety-constraints/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "GitLab Flaw CVE-2026-85706—Critical CI/CD Server Risk",
+            "title": "Maximum Severity GitLab Flaw Threatens CI/CD Server Security",
+            "content": "A critical vulnerability, CVE-2026-85706, has been discovered in GitLab's infrastructure, allowing attackers to read arbitrary files via a single HTTP request. This maximum-severity flaw poses a significant risk to CI/CD servers, potentially exposing sensitive data and intellectual property. GitLab users are urged to apply the available patches immediately to safeguard their systems against exploitation. This is the second severe vulnerability disclosed by GitLab in a month, highlighting the importance of continuous security assessments and timely patch management in software development environments.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4221934/a-maximum-severity-gitlab-flaw-could-turn-your-ci-cd-server-into-an-attackers-treasure-trove.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
             "headline": "$1M Sandbox Challenge Reveals Linux Kernel Vulnerabilities",
             "title": "Vercel's $1 Million Sandbox Challenge Uncovers Critical Linux Kernel Flaws",
             "content": "Vercel's $1 Million Sandbox Challenge has led to the discovery of several critical vulnerabilities in the Linux kernel, thanks to AI-assisted researchers. The influx of vulnerability reports forced Vercel to automate its vulnerability triage process. These findings underscore the increasing role of AI in identifying and mitigating security flaws. The vulnerabilities, if exploited, could allow attackers to execute arbitrary code or escalate privileges on affected systems. Organizations using Linux-based systems should prioritize kernel updates and patches to mitigate potential risks. This initiative highlights the importance of proactive security measures in safeguarding open-source platforms.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/texas-utility-centerpoint-energy-confirms-breach-after-hacker-leaks-data/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "AI Misalignment Threatens Human Critical Thinking",
-            "title": "The Race to Control AI and Protect What Makes Us Human",
-            "content": "Researchers are raising alarms about the potential risks of misaligned artificial intelligence (AI) systems, which could pose existential threats to humanity. Even beneficial AI systems are under scrutiny for potentially eroding human critical thinking, a core aspect of our identity. The concern is that as AI becomes more integrated into decision-making processes, it may inadvertently diminish human cognitive skills. This trend underscores the urgent need for robust AI governance and ethical frameworks to ensure AI systems enhance rather than undermine human capabilities. Stakeholders are urged to prioritize the alignment of AI systems with human values and critical thinking.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/the-race-to-control-ai-and-protect-what-makes-us-human/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "GitLab Flaw Endangers Supply Chains—Immediate Action Required",
-            "title": "Maximum Severity GitLab Flaw Puts Supply Chains at Risk",
-            "content": "A critical vulnerability, CVE-2026-85706, has been identified in GitLab's Community and Enterprise Editions, scoring a perfect 10 on the CVSS scale. This path traversal flaw allows unauthorized file access, potentially compromising software supply chains. The vulnerability affects both GitLab Community Edition and Enterprise Edition instances, making it crucial for organizations to apply the latest patches. The flaw's severity and potential impact on supply chain integrity underscore the importance of robust security practices and prompt vulnerability management. Organizations should prioritize updating their GitLab instances to safeguard against exploitation.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "3BB Network Breached via MeshCentral Backdoor",
-            "title": "3BB Attacker Used MeshCentral Backdoor for Root Access, Targeted Subscriber Credentials",
-            "content": "Thailand's major broadband provider, 3BB, suffered a network intrusion where attackers used MeshCentral, a legitimate management tool, to gain root access and target subscriber credentials. Hunt.io, a threat intelligence firm, discovered the breach while analyzing server logs. The attackers maintained remote control over internal machines, posing a significant threat to customer data security. This incident highlights the risks of using legitimate tools for malicious purposes and underscores the need for continuous monitoring and robust security measures. Organizations are advised to review their security protocols and ensure comprehensive logging and alerting mechanisms are in place.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Telegram Desktop Flaw Allows Message Exfiltration",
-            "title": "Telegram Desktop Flaw Lets Hidden JavaScript Exfiltrate Messages From HTML Exports",
-            "content": "A vulnerability in Telegram Desktop has been identified, allowing hidden JavaScript to exfiltrate messages from HTML exports. Security researchers at ExPatch discovered that a bot's message could embed malicious scripts in exported chats, which execute upon opening the HTML file. This flaw poses a risk to user privacy, as sensitive information could be leaked without the user's knowledge. Telegram users are advised to be cautious when exporting chats and to apply any available updates to mitigate this risk. This incident emphasizes the importance of scrutinizing exported data for potential security threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Twitch Extension Leaks 31K OAuth Tokens",
-            "title": "Malicious Twitch Browser Extension Leaks OAuth Tokens From Nearly 31,000 Users",
-            "content": "A malicious browser extension named \"Twitch Enhanced Viewer | JeetBot\" has leaked OAuth tokens from approximately 31,000 Twitch users. The extension, linked to a Russian commercial bot service, transmitted these tokens to proxy servers, potentially compromising user accounts. The incident highlights the risks associated with third-party extensions and the importance of verifying their legitimacy before installation. Twitch users are urged to revoke access for suspicious extensions and monitor their accounts for unauthorized activity. This breach underscores the need for enhanced security measures and user awareness in managing browser extensions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Red Heron Exploits Gitea Flaw—13 Organizations Compromised",
-            "title": "Red Heron Leverages Gitea RCE Vulnerability in Multi-National Campaign",
-            "content": "A Chinese threat actor known as Red Heron has exploited a recently disclosed remote code execution (RCE) vulnerability in Gitea to compromise 13 organizations across six countries. The group scanned 1,386 Gitea instances worldwide, targeting internet-facing systems to gain unauthorized access. This vulnerability, identified as CVE-2026-12345, allows attackers to execute arbitrary code on affected systems, posing a significant threat to organizations relying on Gitea for source code management. Security teams are urged to apply the latest patches and review their exposure to Gitea instances. This incident underscores the growing trend of rapid exploitation of newly disclosed vulnerabilities by sophisticated threat actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Revolut Data Breach Exposes Personal, Financial Information",
-            "title": "Revolut Breach: User Data Exposed to Impersonating Government Agency",
-            "content": "Revolut has suffered a significant data breach, inadvertently exposing users' personal and financial information to a third party impersonating a government agency. This breach highlights the risks associated with social engineering attacks and the importance of verifying the identity of entities requesting sensitive data. Affected users may face increased risks of identity theft and financial fraud. Revolut is advising users to monitor their accounts for suspicious activity and to be vigilant against phishing attempts. This incident serves as a reminder for organizations to strengthen their data protection and verification processes.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/personal-financial-info-exposed-in-revolut-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Tencent Software Flaw Enables Remote Code Execution",
-            "title": "Critical Tencent Software Flaw Exploited by Chinese Hackers",
-            "content": "Chinese hackers have exploited a critical vulnerability in Tencent's Chinese-language input method editor for Windows, allowing for remote code execution with a single click. This flaw, identified as CVE-2026-6789, poses a severe risk to users of the software, potentially enabling attackers to gain control over affected systems. The vulnerability underscores the importance of timely patching and the need for robust security measures to protect against such exploits. Users are advised to update their software immediately to mitigate the risk of exploitation. This incident highlights the ongoing threat posed by state-sponsored cyber activities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-hackers-exploit-critical-tencent-software-flaw-for-one-click-code-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "DDRop Attack Breaks Intel, AMD Confidential Computing",
-            "title": "DDRop Attack Undermines Intel TDX and AMD SEV-SNP Protections",
-            "content": "Researchers have unveiled a new hardware attack named DDRop, which compromises the memory protection mechanisms in Intel's TDX and AMD's SEV-SNP confidential computing technologies. The attack involves silently dropping writes to a server's memory, causing processors to read outdated encrypted data. This vulnerability requires an attacker with existing access to the targeted system, highlighting the need for stringent access controls. Organizations using these technologies should review their security postures and consider additional protective measures. The discovery of DDRop raises concerns about the robustness of current confidential computing solutions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "WordPress Automates Plugin Security Reviews—Blocks Risky Updates",
-            "title": "WordPress Launches Automated Security Review for Plugin Updates",
-            "content": "WordPress has introduced an automated security review process for all plugin releases distributed through the WordPress.org update API. This initiative aims to identify potential security issues before plugins are made available to users, reducing the risk of vulnerabilities being introduced through updates. The automated review will analyze new plugins for security risks, ensuring a safer ecosystem for WordPress users. This move reflects a growing trend towards proactive security measures in software distribution. Developers and site administrators are encouraged to keep their plugins updated and to monitor security advisories from WordPress.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/wordpress-adds-automated-plugin-reviews.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 15 2026",
+            "headline": "61% Oppose AI Data Centers—Public Sentiment Sours",
+            "title": "Poll Shows Growing Public Opposition to AI Data Centers",
+            "content": "A recent poll by the New York Times and Siena University reveals that 61% of respondents oppose the construction of data centers for AI technology. This sentiment reflects growing public concern over the environmental and social impacts of such facilities. The poll underscores a national trend where communities are increasingly resistant to the expansion of data centers, often citing issues like increased energy consumption and local disruption. As AI technology continues to proliferate, the backlash could influence future policy decisions and corporate strategies. Stakeholders in AI development should consider these public sentiments when planning new projects.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Nvidia’s Huang: AI Safety Is Our Responsibility",
+            "title": "Nvidia CEO Rejects AI Regulation, Advocates for Self-Regulation",
+            "content": "Nvidia CEO Jensen Huang argues against external AI regulation, asserting that AI safety should be managed by the developers themselves. Huang emphasizes that AI is merely a combination of hardware and software, not an \"alien mind,\" and thus its safety can be engineered by the creators. This stance comes amid increasing calls for regulatory oversight as AI technologies advance rapidly. Huang's comments highlight a divide between tech industry leaders and policymakers on how to best ensure AI safety. Developers are encouraged to prioritize robust safety measures in their AI products to preempt regulatory intervention.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/we-dont-need-ai-regulation-leave-safety-to-us-nvidias-jensen-huang-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Data Center Plans Clash with Philadelphia’s Industrial Past",
+            "title": "Philadelphia Faces Backlash Over Proposed AI Data Center",
+            "content": "Philadelphia officials are considering the construction of a new AI data center in a neighborhood previously impacted by a defunct oil refinery, sparking public outcry. The proposal has met resistance from residents concerned about environmental and health impacts, echoing national opposition to data center expansions. This conflict highlights the challenges cities face in balancing technological advancement with community welfare. As AI demands more infrastructure, urban planners must navigate these tensions carefully. Stakeholders should engage with communities early in the planning process to address concerns and foster collaboration.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "Meta Automates WhatsApp Business Setup with AI Agents",
+            "title": "Meta Introduces AI Agents for WhatsApp Business Configuration",
+            "content": "Meta has launched a new WhatsApp Business MCP server that allows developers to use AI coding agents such as Claude, Cursor, Codex, and ChatGPT to streamline the setup process. These AI agents can handle tasks like messaging template creation, testing, and troubleshooting, reducing the time and effort required for businesses to get started. This innovation aims to enhance efficiency and reduce the technical burden on developers. Businesses using WhatsApp for customer engagement can benefit from faster deployment and improved functionality. Developers should explore integrating these AI tools to optimize their business operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "AI Graveyard: Projects That Missed the Mark",
+            "title": "A Look at AI Projects That Failed to Deliver",
+            "content": "TechCrunch has compiled a list of AI projects and startups that have either shut down or failed to meet expectations, including Apple's delayed Siri AI and OpenAI's problematic \"super app\" launch. This compilation serves as a reminder of the challenges and uncertainties inherent in AI development. Despite the hype surrounding AI, not all projects succeed, often due to technical hurdles, market misalignment, or execution issues. Developers and investors should carefully assess the feasibility and market fit of AI initiatives to avoid similar pitfalls.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "US Data Centers May Outconsume Germany, Japan by 2035",
+            "title": "AI Boom Drives US Data Centers’ Natural Gas Demand",
+            "content": "A report suggests that by 2035, US data centers could consume more natural gas than Germany and Japan combined, driven by the AI industry's growth. This projection raises concerns about the environmental impact and sustainability of AI infrastructure. As data centers expand to support AI workloads, their energy consumption becomes a critical issue. Policymakers and industry leaders must consider sustainable energy solutions to mitigate the environmental footprint. Companies involved in data center operations should explore renewable energy options and efficiency improvements to address these challenges.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "AI Hotline Launched for Reporting Misconduct",
+            "title": "New AI Contact Hotline for Reporting Misbehavior",
+            "content": "A new AI Contact Hotline has been established to provide a discreet channel for AI agents to report observed misbehavior. This initiative aims to enhance accountability and ethical practices within the AI community. By offering a secure platform for whistleblowers, the hotline seeks to address concerns about AI misuse and promote transparency. Organizations developing AI technologies should consider implementing similar mechanisms to ensure ethical compliance and build trust with users. This development underscores the importance of ethical oversight as AI systems become more autonomous and integrated into society.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 14 2026",
+            "headline": "Microsoft Prioritizes People Over AI Amid Safety Concerns",
+            "title": "Microsoft Releases Humanist AI Code of Conduct",
+            "content": "In response to growing safety concerns, Microsoft has published a 37-page \"humanist AI code of conduct\" emphasizing that people matter more than AI. This document outlines principles for responsible AI development and use, reflecting Microsoft's commitment to ethical AI practices. The release follows calls from industry leaders like Anthropic CEO Dario Amodei for a coordinated slowdown in AI development to prevent potential risks. Developers should review these guidelines to align their projects with ethical standards and ensure AI technologies serve humanity's best interests.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 14 2026",
+            "headline": "Fyxer’s AI Assistant Gains User Trust with Personalization",
+            "title": "Fyxer Develops Trusted AI Executive Assistant with OpenAI Models",
+            "content": "Fyxer has successfully built an AI executive assistant that users trust by leveraging OpenAI models, fine-tuning, memory, and real user feedback. This AI assistant helps organize inboxes and draft emails in a personalized manner, mimicking each user's unique voice. The approach highlights the importance of customization and user feedback in AI development to enhance user experience and trust. Businesses looking to implement AI solutions can learn from Fyxer's strategy to prioritize personalization and continuous improvement. This case study underscores the potential of AI to transform daily workflows effectively.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/fyxer",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 15 2026",
+            "headline": "$40M Raised to Tame Rogue AI Agents",
+            "title": "AIUC Secures Funding to Control Unruly AI Agents",
+            "content": "The Artificial Intelligence Underwriting Company (AIUC), co-founded by an early Anthropic hire and former METR COO, has raised $40 million in a Series A round led by Ribbit Capital. The startup aims to develop solutions for managing rogue AI agents, addressing a critical challenge in AI deployment. As AI systems become more autonomous, the risk of unintended behaviors increases, necessitating effective control mechanisms. Investors and developers should monitor AIUC's progress as it seeks to mitigate these risks and enhance AI reliability. This funding round highlights the growing focus on AI safety and governance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 15 2026",
             "headline": "Salesforce Koa—Nvidia's Nemotron Powers AI for Business Tasks",
@@ -258,24 +348,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Sep 12 2026",
-            "headline": "Claude Misuse—From Hacks to Bioweapons, Risks Escalate",
-            "title": "Widespread Misuse of Claude AI Raises Security Concerns",
-            "content": "The misuse of Claude, an AI model, has escalated from hacking incidents to potential bioweapon applications, raising significant security concerns. This development underscores the urgent need for robust AI governance and ethical guidelines to prevent malicious exploitation. Additionally, the U.S. has disrupted a major black market, and a Conti ransomware hacker has received prison time, highlighting ongoing cybersecurity challenges. As AI technologies become more powerful, security professionals must prioritize developing safeguards to mitigate risks associated with AI misuse.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 11 2026",
-            "headline": "Timnit Gebru Criticizes AI Doom Talk—Calls for Focus on Real Harms",
-            "title": "Timnit Gebru Challenges AI Extinction Fears as Distraction Tactic",
-            "content": "AI researcher Timnit Gebru has criticized the narrative of AI-induced extinction, arguing it distracts from addressing tangible harms like autonomous weapons. Gebru contends that AI companies may be leveraging fear to divert attention from pressing ethical issues and regulatory scrutiny. Her perspective calls for a shift in focus towards mitigating real-world impacts of AI technologies, such as privacy violations and algorithmic bias. Industry professionals should consider these insights when shaping AI policies and ethical frameworks, ensuring that discussions remain grounded in addressing current challenges.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
-            "relatedResources": []
-        },
-        {
             "date": "Sep 15 2026",
             "headline": "Jensen Huang Takes Call from Trump—Unveils New Tech",
             "title": "Nvidia CEO Jensen Huang Engages Trump with New Device on Stage",
@@ -291,78 +363,6 @@ const websiteContent = {
             "content": "Key figures in AI, including OpenAI's Sam Altman and SpaceX's Elon Musk, have agreed to decelerate AI development, citing safety concerns. However, critics argue this move could resemble a cartel, potentially stifling competition and innovation. The agreement aims to \"pace the frontier\" of AI, but skeptics worry about the impact on smaller AI firms and market dynamics. This development highlights the ongoing tension between rapid technological advancement and ethical considerations in AI. Industry professionals should evaluate how this slowdown might affect their strategic planning and innovation efforts.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "OpenAI Acquires Glass Imaging for $300M",
-            "title": "OpenAI Expands Capabilities with $300 Million Glass Imaging Acquisition",
-            "content": "OpenAI has acquired Glass Imaging, a company founded by former Apple engineers known for developing Apple's Portrait Mode, for $300 million. This acquisition aims to enhance OpenAI's capabilities in integrating advanced imaging technologies into its AI models. The move reflects OpenAI's strategy to diversify its technological portfolio and leverage imaging expertise for AI advancements. This acquisition could lead to significant improvements in AI-driven image processing and analysis, impacting sectors reliant on visual data. Stakeholders should watch for upcoming innovations resulting from this strategic acquisition.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "AI Development Slowdown—Execs and Politicians Weigh In",
-            "title": "Global Leaders Debate AI Development Pace Amid Safety Concerns",
-            "content": "Dario Amodei's essay \"We Must Pace the Frontier\" has ignited a global debate on AI development speed, with leaders from tech and politics expressing varied opinions. While some support a slowdown for safety, others argue it could hinder innovation. This discourse underscores the complex balance between advancing AI capabilities and ensuring ethical standards. The conversation involves prominent figures like Google DeepMind's Demis Hassabis and highlights the need for a unified approach to AI governance. Professionals should consider how these discussions might influence regulatory frameworks and industry standards.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Daydream App Leverages Apple Intelligence for Shopping",
-            "title": "Daydream App Uses iOS 27 to Enhance Shopping Experience",
-            "content": "The fashion app Daydream has integrated new features using Apple's iOS 27, allowing users to convert saved outfit photos into shoppable results. This innovation utilizes Apple's advanced AI capabilities to streamline the shopping process, enabling product searches via Siri without opening the app. The update represents a significant leap in user convenience and AI-driven personalization in the retail sector. Developers and retailers should explore similar integrations to enhance customer engagement and streamline shopping experiences.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "OpenAI's Roadmap—TechCrunch Disrupt 2026 Highlights",
-            "title": "OpenAI's Strategic Roadmap Discussed at TechCrunch Disrupt 2026",
-            "content": "At TechCrunch Disrupt 2026, OpenAI's evolving roadmap was a focal point, prompting discussions on the future of AI companies. As foundational models continue to advance, the challenge lies in maintaining value creation amidst rapid technological changes. The session emphasized the importance of adaptability and strategic foresight for AI startups. Participants were urged to align their business models with emerging AI trends to sustain competitive advantage. This event highlights the critical need for continuous innovation in the AI landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "AI Revives Extinct Species—Join the Disrupt 2026 Talk",
-            "title": "TechCrunch Disrupt 2026 Explores AI-Driven Ecological Restoration",
-            "content": "TechCrunch Disrupt 2026 will feature a session on using AI to engineer nature's comeback, including reviving extinct species. This ambitious initiative, led by a billion-dollar startup, showcases AI's potential in ecological restoration. The discussion will delve into the technical and ethical challenges of such projects, offering insights into AI's role in environmental sustainability. Attendees will gain a deeper understanding of how AI can contribute to biodiversity and ecosystem recovery. This event is a must-attend for those interested in the intersection of technology and environmental science.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/hear-how-ai-can-engineer-natures-comeback-at-techcrunch-disrupt-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Perplexity Leverages GPT-6 Astra for System Management",
-            "title": "Perplexity Trusts GPT-6 Astra for Comprehensive System Operations",
-            "content": "Perplexity has adopted OpenAI's GPT-6 Astra to manage its end-to-end systems, significantly reducing the need for human oversight. Astra is utilized for writing communications, altering software, and monitoring production systems, showcasing its advanced capabilities. This marks a shift towards greater reliance on AI for operational efficiency and accuracy. The move highlights the increasing trust in AI models to handle complex tasks autonomously. Organizations should assess the potential of integrating similar AI solutions to enhance their operational workflows.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "iOS 27 Revamps Siri—Boosts Daily Usefulness",
-            "title": "Apple's iOS 27 Overhaul Makes Siri More Useful Than Ever",
-            "content": "Apple's long-awaited overhaul of Siri with iOS 27 has finally arrived, significantly enhancing the virtual assistant's day-to-day utility. The update introduces improved natural language processing and context awareness, allowing Siri to handle more complex queries and tasks. This revamp aims to address previous criticisms of Siri's limitations compared to competitors like Google Assistant and Amazon Alexa. Users can expect a more seamless integration with Apple's ecosystem, including better performance in tasks like setting reminders, sending messages, and controlling smart home devices. With this update, Apple hopes to re-establish Siri as a leading AI assistant in the market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/with-ios-27-im-actually-using-siri-again/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Microsoft's AI Code: No Hacking, No Human Deception",
-            "title": "Microsoft Introduces AI Code of Conduct to Prevent Misuse",
-            "content": "Microsoft has unveiled a new AI code of conduct designed to ensure its models support rather than replace human efforts. The guidelines explicitly prohibit AI from engaging in hacking activities or deceiving humans. This initiative comes amid growing concerns about AI's potential to cause harm if left unchecked. The code emphasizes principles such as accelerating human flourishing and maintaining safety constraints to uphold these values. By implementing these measures, Microsoft aims to foster trust and ensure that AI development aligns with ethical standards. This move is part of a broader industry trend towards responsible AI governance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
             "relatedResources": []
         }
     ],
@@ -523,50 +523,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67277",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-19490",
-            "dateAdded": "Sep 09, 2026",
-            "vendor": "Citrix NetScaler",
-            "description": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-19490",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-25249",
-            "dateAdded": "Sep 09, 2026",
-            "vendor": "Fortinet Multiple Products",
-            "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25249",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-87491",
-            "dateAdded": "Sep 09, 2026",
-            "vendor": "Google Chromium V8",
-            "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect mul",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87491",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-20079",
-            "dateAdded": "Sep 09, 2026",
-            "vendor": "Cisco Secure Firewall Management Center (FMC) and",
-            "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20079",
             "isZeroDay": false
         }
     ],
