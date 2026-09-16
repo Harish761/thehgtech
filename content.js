@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Sep 16 2026",
+            "headline": "AI Agent Breaches Data—Autonomous Attack Milestone",
+            "title": "First Agentic AI Data Breach Reported to Spanish Regulator",
+            "content": "Spanish regulators have reported a significant cybersecurity incident involving an AI agent that autonomously executed a data breach. The AI agent successfully chained together a login, discovered a vulnerability, and accessed personal data, marking a potential milestone in autonomous cyberattacks. This incident highlights the evolving threat landscape where AI systems themselves can become attackers, posing new challenges for cybersecurity defenses. Organizations must now consider the implications of AI-driven threats and enhance their security measures accordingly. This breach underscores the need for robust AI governance and monitoring to prevent similar incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/first-agentic-ai-data-breach-reported-to-spanish-regulator/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Issabel Flaw Exploited—Unauthenticated Command Execution Risk",
+            "title": "Attackers Exploit Issabel Framework Flaw Enabling Unauthenticated OS Command Execution",
+            "content": "A critical security vulnerability in the Issabel Framework, identified as CVE-2026-89026, is actively being exploited by attackers. This flaw, with a CVSS v3.1 score of 9.8, allows unauthenticated remote attackers to execute operating system commands, posing a severe threat to systems using this open-source unified communications PBX software. Organizations using Issabel should prioritize patching to mitigate potential exploitation risks. The exploitation of this vulnerability underscores the importance of timely updates and the need for continuous monitoring of open-source software for security weaknesses.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Russian Enterprises Targeted—Backdoors and Ransomware Surge",
+            "title": "Three Threat Groups Target Russian Enterprises With Backdoors, Ransomware, and Wipers",
+            "content": "Russian enterprises are under siege from three distinct threat groups: NightEagle, Hacking Cat, and Toy Ghouls. Kaspersky reports that these groups are deploying backdoors, ransomware, and wipers in their attacks. NightEagle, also known as APT-Q-95, is particularly notorious for its sophisticated tactics. The surge in attacks highlights the increasing complexity and coordination of cyber threats targeting critical infrastructure and businesses in Russia. Organizations in the region should bolster their cybersecurity defenses and remain vigilant against these evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/three-threat-groups-target-russian.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "AIUC Secures $40M—Boosts AI Agent Certification",
+            "title": "AIUC Raises $40 Million to Certify Enterprise AI Agents",
+            "content": "AIUC has successfully raised $40 million to enhance its certification processes for enterprise AI agents. The company focuses on setting standards for AI systems, testing them against risks such as jailbreaks, prompt injections, and unauthorized actions. This funding will enable AIUC to expand its capabilities and address the growing demand for secure and reliable AI solutions in enterprises. As AI technologies become more integrated into business operations, ensuring their safety and compliance is crucial for maintaining trust and security.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/aiuc-raises-40-million-to-certify-enterprise-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "AI Coding Session Hijacked—Shai-Hulud Infects 100 Repositories",
+            "title": "Attacker Hijacks AI Coding Assistant Session, Spreads Shai-Hulud Across About 100 Repositories",
+            "content": "An attacker has compromised an AI coding assistant session at a software-as-a-service provider, spreading the Shai-Hulud malware across approximately 100 internal code repositories. Mandiant reports that the attacker initially poisoned software recommendations made by the AI assistant, leading to the widespread infection. This incident highlights the risks associated with AI-driven development tools and the potential for malicious exploitation. Organizations using AI coding assistants should implement robust security measures to prevent unauthorized access and ensure the integrity of their codebases.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attacker-hijacks-ai-coding-assistant.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Pixel Modem Zero-Day—Google Releases Critical Patch",
+            "title": "Pixel Modem Zero-Day Exploited in Targeted Attacks",
+            "content": "Google has issued a critical patch for a zero-day vulnerability in its Pixel modem, identified as CVE-2026-58704. This privilege escalation flaw was actively exploited in targeted attacks, prompting Google to release a fix on September 15. The vulnerability allows attackers to bypass permissions due to a logic error, posing a significant risk to affected devices. Pixel users are urged to apply the update immediately to protect against potential exploitation. This incident underscores the importance of timely patch management in mitigating security risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/pixel-modem-zero-day-exploited-in-targeted-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "WordPress Sites at Risk—200K+ Vulnerable to RCE Attacks",
+            "title": "Unauthenticated RCE Flaws Could Expose 200,000+ WordPress Sites to Takeover",
+            "content": "A vulnerability in The Events Calendar plugin for WordPress could expose over 200,000 sites to remote code execution (RCE) attacks. This unauthenticated flaw allows attackers to execute arbitrary code, potentially leading to site takeovers. WordPress site administrators using this plugin should apply available patches immediately to mitigate the risk. The widespread use of WordPress and its plugins makes it a frequent target for cyberattacks, emphasizing the need for regular updates and security audits.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/unauthenticated-rce-flaws-could-expose-200000-wordpress-sites-to-takeover/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Acronis Plugin Flaw—Targeted Attacks Exploit Privilege Escalation",
+            "title": "Acronis cPanel Backup Plugin Vulnerability Exploited in Targeted Attacks",
+            "content": "A high-severity vulnerability in the Acronis Backup plugin for cPanel and Web Host Manager (WHM) has been exploited in targeted attacks. Tracked as CVE-2026-87886, this flaw involves local privilege escalation due to insecure file permissions, with a CVSS score of 7.8. Acronis users are advised to apply patches to prevent unauthorized access and potential data breaches. This incident highlights the critical need for securing backup solutions, which are often targeted by attackers seeking to compromise sensitive data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "WooCommerce Flaw Exploited—PHP Web Shells Deployed",
+            "title": "Attackers Exploit WooCommerce Wholesale Lead Capture Flaw to Plant PHP Web Shells",
+            "content": "A critical security flaw in the WooCommerce Wholesale Lead Capture plugin is being exploited to deploy PHP web shells. This vulnerability allows unauthenticated attackers to upload arbitrary files, including backdoors, on over 6,000 active installations. Site administrators using this plugin should update immediately to prevent unauthorized access and potential site compromise. The exploitation of this flaw underscores the importance of securing e-commerce platforms against emerging threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-woocommerce-wholesale.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Oracle Patch Update—673 Vulnerabilities Addressed Across Products",
+            "title": "Oracle’s September Patches Put Fusion Middleware Back in the Hot Seat",
+            "content": "Oracle's September 2026 Critical Security Patch Update addresses 673 vulnerabilities across 17 product families, with Fusion Middleware receiving 153 patches. The update also includes 159 patches for the Oracle E-Business Suite, with 19 vulnerabilities rated critical. Organizations using Oracle products should prioritize applying these patches to protect against potential exploits. This extensive update highlights the ongoing challenge of securing complex enterprise software environments against a wide range of vulnerabilities.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4222875/oracles-september-patches-put-fusion-middleware-back-in-the-hot-seat-2.html",
+            "relatedResources": []
+        },
+        {
             "date": "Sep 15 2026",
             "headline": "Cisco Email Gateway Zero-Day—Root Access Exploit Found",
             "title": "Critical Cisco Secure Email Gateway Zero-Day Allows Root Access",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4221934/a-maximum-severity-gitlab-flaw-could-turn-your-ci-cd-server-into-an-attackers-treasure-trove.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "$1M Sandbox Challenge Reveals Linux Kernel Vulnerabilities",
-            "title": "Vercel's $1 Million Sandbox Challenge Uncovers Critical Linux Kernel Flaws",
-            "content": "Vercel's $1 Million Sandbox Challenge has led to the discovery of several critical vulnerabilities in the Linux kernel, thanks to AI-assisted researchers. The influx of vulnerability reports forced Vercel to automate its vulnerability triage process. These findings underscore the increasing role of AI in identifying and mitigating security flaws. The vulnerabilities, if exploited, could allow attackers to execute arbitrary code or escalate privileges on affected systems. Organizations using Linux-based systems should prioritize kernel updates and patches to mitigate potential risks. This initiative highlights the importance of proactive security measures in safeguarding open-source platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/1-million-sandbox-challenge-uncovers-linux-kernel-flaws/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Thai ISP Breached via Fortinet Flaw—Data at Risk",
-            "title": "Thai Broadband Provider Compromised Through Fortinet Vulnerability",
-            "content": "A major Thai broadband provider has fallen victim to a cyberattack exploiting a vulnerability in Fortinet's systems. Attackers deployed reconnaissance scripts, CVE probing tools, and privilege escalation utilities to infiltrate the network. This breach highlights the critical need for timely patching of known vulnerabilities in enterprise environments. The compromised systems could lead to unauthorized access and data theft, affecting both the provider and its customers. Organizations using Fortinet products should immediately review their security posture and apply available patches to prevent similar incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/thai-broadband-provider-hacked-via-fortinet-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Marimo RCE Exploited—SSH Bastion Breached in Seconds",
-            "title": "Human Attacker Exploits Marimo RCE to Breach SSH Bastion Rapidly",
-            "content": "A recent attack demonstrated the speed at which skilled human operators can exploit vulnerabilities, with an attacker reaching an SSH bastion in just eight seconds using a Marimo Remote Code Execution (RCE) flaw. This incident, analyzed by Sysdig, underscores the shrinking window between vulnerability discovery and exploitation, exacerbated by AI advancements. The breach highlights the need for robust security measures and rapid incident response capabilities. Organizations should ensure their systems are patched and monitor for unusual activity to mitigate such swift intrusions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/human-attacker-exploits-marimo-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "240K Affected in Japan VPN Data Breach",
-            "title": "Data Breach at Japan’s Digital Agency Affects 240,000 Individuals",
-            "content": "A significant data breach at Japan's Digital Agency has compromised the personal information of approximately 240,000 individuals. Hackers exploited a vulnerability in a VPN product to gain unauthorized access to sensitive data. This breach underscores the critical importance of securing VPNs, which are often targeted by cybercriminals to bypass network defenses. Affected individuals face potential risks of identity theft and fraud. Organizations should conduct thorough security assessments of their VPN solutions and implement multi-factor authentication to enhance protection.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/240000-hit-by-data-breach-at-japans-digital-agency/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "LiteSpeed Flaw Risks Root Access on Shared Servers",
-            "title": "LiteSpeed Enterprise Vulnerability Allows Root Access on Shared Hosting Servers",
-            "content": "A critical vulnerability in LiteSpeed Web Server Enterprise has been identified, potentially allowing low-privilege users to gain root access on shared-hosting servers. cPanel issued an advisory warning about the flaw, which affects servers hosting multiple customer websites. This vulnerability poses a significant risk, as attackers could exploit it to compromise entire server environments. Administrators should apply patches and review server configurations to prevent unauthorized access. This incident highlights the ongoing challenges of securing shared hosting environments against privilege escalation attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Cisco Email Gateway Flaw—Root Exploitation in the Wild",
-            "title": "Critical Flaw in Cisco Secure Email Gateway Actively Exploited",
-            "content": "Cisco has issued a warning about a critical vulnerability in AsyncOS Software for its Secure Email Gateway, tracked as CVE-2026-76461. This flaw, with a CVSS score of 9.8, allows unauthenticated attackers to execute commands with root privileges on the underlying operating system. The vulnerability is under active exploitation, posing a severe threat to affected organizations. Cisco recommends immediate patching and monitoring for unusual activity. This incident highlights the importance of timely vulnerability management in protecting critical email infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "China-Linked Hackers Deploy GRIMWEDGE via Zero-Day Chain",
-            "title": "Chinese Hackers Exploit Chrome-Windows Zero-Day to Deploy GRIMWEDGE",
-            "content": "A Chinese threat actor, identified as UTA0560, has been linked to a spear-phishing campaign exploiting zero-day vulnerabilities in Google Chrome and Microsoft Windows. The campaign delivers a malicious JavaScript backdoor named GRIMWEDGE. Volexity, tracking this threat cluster, highlights the sophisticated nature of the attack chain. The exploitation of recently patched flaws underscores the urgency for organizations to update their systems promptly. This incident emphasizes the persistent threat posed by state-affiliated actors leveraging zero-day vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/china-linked-hackers-exploit-chrome.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Exaforce Expands AI Security Monitoring Beyond Claude",
-            "title": "Exaforce Enhances AI Security Tool to Monitor Diverse AI Agents",
-            "content": "Exaforce has announced an extension of its AI security tool, enabling enterprise security teams to monitor a wider range of AI agents beyond Claude. By leveraging existing security telemetry, Exaforce AI Security integrates usage data from AI platforms with endpoint, cloud, SaaS, and code data. This approach eliminates the need for additional endpoint sensors, streamlining security operations. Organizations can now gain comprehensive visibility into AI agent activities, enhancing their ability to detect and respond to potential threats. This development reflects the growing importance of securing AI assets in enterprise environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4222191/exaforce-extends-its-ai-security-tool-to-monitor-more-than-just-claude.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Threat Actors Target AI Assets for Cyber Espionage",
-            "title": "Cybercriminals and Espionage Groups Target AI Assets in New Attacks",
-            "content": "State-affiliated cyberespionage groups and cybercrime gangs are increasingly targeting AI-related assets, including documents, configuration files, and proprietary models. The rise in distillation attacks, where adversaries extract knowledge from large language models (LLMs), poses a significant threat to organizations developing AI technologies. This trend highlights the need for robust security measures to protect intellectual property and sensitive AI data. Companies should implement strict access controls and monitor for unauthorized activities to safeguard their AI investments. The operationalization of AI by threat actors represents a new frontier in cybersecurity challenges.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4221307/threat-actors-are-coming-for-your-ai-assets-to-operationalize-their-use-of-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "CenterPoint Energy Breach Exposes 7.5M Customer Records",
-            "title": "Texas Utility CenterPoint Energy Confirms Data Breach After Hacker Leak",
-            "content": "CenterPoint Energy, a Texas-based utility company, has confirmed a data breach following a hacker's claim of stealing 7.5 million customer records. The breach raises concerns about the security of critical infrastructure and the potential for identity theft among affected customers. CenterPoint Energy is investigating the incident and has notified relevant authorities. This breach underscores the importance of robust cybersecurity measures for utility companies, which are increasingly targeted by cybercriminals. Customers are advised to monitor their accounts for suspicious activity and report any anomalies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/texas-utility-centerpoint-energy-confirms-breach-after-hacker-leaks-data/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 16 2026",
+            "headline": "Google Opens Smart Home to AI Agents—Claude, Open Claw Included",
+            "title": "Google Home MCP Allows AI Agents to Control Smart Devices",
+            "content": "Google has announced the integration of third-party AI agents into its smart home ecosystem through the Model Context Protocol (MCP). This development allows AI tools like Claude and Open Claw to access and control connected devices, as well as analyze home data. The Google Home MCP aims to standardize interactions between AI agents and smart devices, potentially enhancing automation capabilities for users. This move could significantly impact privacy and security, as it involves sharing sensitive home data with external AI systems. Users should be aware of the implications and ensure that their smart home devices are updated and secured.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Anthropic Combines Claude Chat and Cowork for Pro Users",
+            "title": "Anthropic Merges Claude Chat and Cowork in Unified Interface",
+            "content": "Anthropic has launched a unified interface that merges its Claude chat and Cowork functionalities, initially available to Pro and Max plan subscribers. This integration aims to streamline user experience by consolidating communication and collaboration tools. The move is part of Anthropic's broader strategy to enhance productivity and user engagement within its platform. By offering these features to premium users first, Anthropic seeks to gather feedback and refine the interface before a wider rollout. Subscribers should explore the new interface to leverage its potential for improved workflow management.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Claude Challenges Gemini with New Docs and Slides Tools",
+            "title": "Claude Introduces Docs and Slides for Enhanced Document Creation",
+            "content": "Claude has unveiled new Docs and Slides tools, enabling users to create and share documents and presentations through its chat interface. These tools allow for exporting, editing, and collaborative sharing, positioning Claude as a competitor to Google's Gemini suite. This development simplifies document management by integrating creation and communication within a single platform. Users can expect improved productivity and seamless collaboration, especially in environments that rely heavily on document sharing. Professionals should consider how these tools can be integrated into their existing workflows for efficiency gains.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "OpenAI and AARP Educate 1,000 Seniors on AI Use",
+            "title": "OpenAI and AARP Launch ChatGPT Workshops for Older Adults",
+            "content": "OpenAI, in partnership with AARP, is conducting free ChatGPT workshops for 1,000 older adults across 10 U.S. cities. These hands-on sessions aim to build practical AI skills among seniors, ensuring they can safely and effectively use AI in daily life. The initiative addresses the digital divide by empowering older adults with knowledge and confidence in AI technologies. Participants will learn to navigate AI tools, enhancing their ability to engage with digital platforms. This effort underscores the importance of inclusive technology education and the role of AI in everyday activities.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Fraudulent AI Dating Apps Exploit Users—Security Alert",
+            "title": "AI-Powered Dating App Scams Target Users with Fake Profiles",
+            "content": "Security researcher Matthew \"Zigula\" Gore-Kormanik has uncovered a fraudulent AI-powered dating app named Dora, which uses fake profiles to scam users. The app generates realistic personas, complete with detailed bios, to lure victims into interactions. This scam highlights the growing trend of AI-driven deception in the online dating space, posing significant risks to personal data and financial security. Users are advised to exercise caution and verify the authenticity of dating apps before engaging. Staying informed about such scams is crucial for protecting personal information in the digital age.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Threads Enhances Podcast Promotion with New Tools",
+            "title": "Threads Introduces Features to Boost Podcast Visibility",
+            "content": "Threads has launched a suite of tools designed to help podcasters promote their shows and engage with listeners. The new features include profile cards, episode links, transcripts, guest tags, posting reminders, and audience insights. This initiative by Meta aims to position Threads as a central hub for podcast promotion and discussion, competing with platforms like X. Podcasters can leverage these tools to increase their reach and connect with a broader audience. The enhancements reflect the growing importance of podcasts in digital media and the need for effective promotional strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/threads-new-features-let-podcasters-promote-shows-and-reach-listeners/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Top VCs to Judge Startup Battlefield at Disrupt 2026",
+            "title": "Next Wave of VCs Announced for TechCrunch Disrupt 2026",
+            "content": "TechCrunch has revealed the next five top-tier venture capitalists who will judge the Startup Battlefield 200 contenders at Disrupt 2026. This event is a key opportunity for startups to pitch their ideas to influential investors and gain exposure. The announcement underscores the competitive nature of the startup ecosystem and the importance of securing venture capital for growth. Entrepreneurs are encouraged to register before September 25 to take advantage of early bird discounts and maximize their networking opportunities. Participation in such events can be pivotal for startups seeking funding and partnerships.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/next-wave-of-vcs-judging-startup-battlefield-200-contenders-at-techcrunch-disrupt-2026-revealed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Last Call to Exhibit at TechCrunch Disrupt 2026",
+            "title": "Final Days to Secure Exhibit Space at TechCrunch Disrupt",
+            "content": "The deadline to book exhibit tables at TechCrunch Disrupt 2026 is fast approaching, with the final date set for September 18. This event, scheduled for October 13–15, offers startups a platform to showcase their innovations to over 10,000 founders, investors, and tech leaders. Exhibiting at Disrupt provides valuable exposure and the chance to connect with high-value leads and potential investors. Startups should act quickly to secure their spot and prepare to make a strong impression at this premier industry event.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/3-days-left-to-exhibit-at-techcrunch-disrupt-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "SK Hynix and Intel Discuss US Memory Chip Collaboration",
+            "title": "SK Hynix in Talks with Intel for US-Based Memory Chip Production",
+            "content": "SK Hynix is reportedly in discussions with Intel to collaborate on building memory chips in the United States. While no plans have been finalized, this potential partnership could enhance the domestic semiconductor supply chain and reduce reliance on overseas manufacturing. The collaboration aligns with broader industry trends towards localizing chip production in response to geopolitical tensions and supply chain disruptions. Stakeholders in the semiconductor industry should monitor these developments closely, as they could impact market dynamics and competitive positioning.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/sk-hynix-reportedly-in-talks-with-intel-to-build-memory-chips-in-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 16 2026",
+            "headline": "Infosys Ex-Chief's AI Startup Secures $53M Funding",
+            "title": "Former Infosys CEO's AI Startup Raises $53M in New Funding",
+            "content": "A Palo Alto-based AI startup founded by a former Infosys chief has secured $53 million in funding, bolstering its position in the enterprise market. The startup has quickly gained traction, landing multiple seven-figure contracts within months of its launch. This funding round reflects investor confidence in the startup's potential to innovate and capture market share in the competitive AI landscape. Enterprises looking to leverage AI solutions should consider the startup's offerings as it continues to expand its capabilities and customer base.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/16/former-infosys-chiefs-ai-startup-adds-50m-to-seed-weeks-after-initial-raise/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 15 2026",
             "headline": "61% Oppose AI Data Centers—Public Sentiment Sours",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Salesforce Koa—Nvidia's Nemotron Powers AI for Business Tasks",
-            "title": "Salesforce Koa Leverages Nvidia's Nemotron for Enhanced AI Business Solutions",
-            "content": "Salesforce has unveiled Koa, an AI model built on Nvidia's open-weight Nemotron, designed to optimize sales, marketing, and customer support tasks. This collaboration marks a significant advancement in AI-driven business solutions, as Koa is trained to handle complex reasoning tasks that traditionally require human intervention. The model's capabilities could streamline operations, reduce costs, and enhance customer interactions for enterprises. As AI labs face increasing pressure to innovate, Salesforce's move highlights the competitive landscape in AI development. Businesses should consider integrating such AI models to stay ahead in efficiency and customer service.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Meta One—AI Tools and Premium Social Features Bundled",
-            "title": "Meta Expands AI Access with New Subscription Plans",
-            "content": "Meta has introduced Meta One, a subscription service offering expanded access to its AI tools alongside premium features for Facebook, Instagram, and WhatsApp. This move aims to integrate AI more deeply into social media experiences, providing users with enhanced functionalities and exclusive content. The subscription model reflects a growing trend among tech giants to monetize AI capabilities while offering value-added services. Users can expect improved personalization and engagement across Meta's platforms, potentially influencing how social media is consumed. Tech leaders should monitor this shift as it may redefine user expectations and platform interactions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "OpenAI, Anthropic, Google Discuss AI Safety Amid Global Race",
-            "title": "AI Safety Talks Continue Among OpenAI, Anthropic, and Google",
-            "content": "OpenAI has confirmed ongoing discussions with Anthropic and Google DeepMind regarding AI safety, amidst geopolitical tensions and competitive pressures. These talks aim to address potential risks associated with rapid AI advancements, as the Trump administration prioritizes keeping pace with China's AI developments. The collaboration underscores the importance of establishing safety protocols to mitigate unintended consequences of AI deployment. Stakeholders in AI development should remain informed about these discussions, as they could influence regulatory frameworks and industry standards. The outcome may significantly impact how AI technologies are developed and implemented globally.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Profound Hits Unicorn Status—$180M Series D Funding Secured",
-            "title": "AEO Startup Profound Achieves Unicorn Valuation with New Funding",
-            "content": "Profound, an Artificial Emotional Intelligence (AEO) startup, has reached a $1.8 billion valuation following a successful $180 million Series D funding round. This milestone comes just seven months after its Series C round, highlighting the rapid growth and investor confidence in AEO technologies. The funding will likely accelerate Profound's development of emotionally intelligent AI systems, which are increasingly sought after in customer service and mental health applications. Industry professionals should watch for advancements in AEO as it represents a significant evolution in human-computer interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Meta One Subscriptions—AI and Social Media Combined",
-            "title": "Meta Launches Global Subscription Bundles for AI and Social Media",
-            "content": "Meta has globally launched its Meta One subscription bundles, combining standalone app subscriptions with enhanced AI usage. Following the introduction of its AI assistant, Muse, these bundles offer various tiers to cater to different user needs. The initiative reflects a strategic move to monetize AI capabilities while offering users comprehensive access to Meta's ecosystem. This development may influence how social media platforms leverage AI to enhance user experiences. Tech leaders should evaluate the potential impacts on user engagement and platform monetization strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Superpose App—AI-Powered Photo Posing Guidance",
-            "title": "Former TikTok Execs Launch AI App for Photo Posing",
-            "content": "Superpose, a new app developed by former TikTok executives, uses AI to guide users in posing for photos. The app analyzes selfies and generates four potential poses, aiming to enhance user creativity and photo quality. This innovation taps into the growing trend of AI-driven personal enhancement tools, offering a unique value proposition for social media enthusiasts and photography aficionados. As AI continues to permeate everyday applications, developers should consider the potential for similar tools to enhance user engagement and satisfaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/15/former-tiktok-execs-built-an-app-that-uses-ai-to-teach-you-how-to-pose-for-a-photo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "SimpliSafe Doorbell—AI and Human Security Integration",
-            "title": "SimpliSafe Launches AI-Powered Video Doorbell with Human Monitoring",
-            "content": "SimpliSafe has introduced the Video Doorbell Series 2, integrating AI with human security monitoring for enhanced home protection. Priced at $199.99, the doorbell works with SimpliSafe's Active Guard Outdoor Protection service, starting at $49.99 per month. This combination of AI analysis and human oversight aims to provide comprehensive security solutions for homeowners. As DIY home security systems evolve, this development highlights the potential for AI to augment traditional security measures. Homeowners and security professionals should consider the benefits of integrating AI with human expertise for improved safety.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "Nvidia CEO Opposes AI Development Slowdown—Trump Informed",
-            "title": "Jensen Huang Tells Trump AI Slowdown Unacceptable for Nvidia",
-            "content": "Nvidia CEO Jensen Huang has expressed opposition to slowing AI development, directly addressing President Trump during a recent discussion. This stance contrasts with calls from industry leaders like Elon Musk and Sam Altman to decelerate AI advancements. Huang's position highlights Nvidia's commitment to maintaining its competitive edge in the AI sector, emphasizing the importance of rapid innovation. As geopolitical and competitive pressures mount, tech leaders should consider the implications of differing views on AI development pace. The outcome may influence global AI leadership and market dynamics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/nvidia-ceo-jensen-huang-tells-trump-were-not-going-to-let-an-ai-slowdown-happen/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 15 2026",
-            "headline": "Jensen Huang Takes Call from Trump—Unveils New Tech",
-            "title": "Nvidia CEO Jensen Huang Engages Trump with New Device on Stage",
-            "content": "During a live event, Nvidia CEO Jensen Huang took a call from President Trump using an intriguing new device, capturing the audience's attention. While the conversation focused on AI development, the device itself sparked curiosity among tech enthusiasts. This incident comes amid discussions about the pace of AI advancements, with Huang opposing calls to slow down AI progress. The device's specifics remain undisclosed, but its appearance suggests potential innovations in communication technology. Tech leaders should monitor Nvidia's announcements for further details on this mysterious device.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/14/jensen-huang-took-a-call-from-trump-and-showed-off-something-else-too/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 14 2026",
-            "headline": "AI Titans Agree to Slowdown—Cartel Concerns Arise",
-            "title": "Big Tech's AI Slowdown Sparks Debate Over Safety and Competition",
-            "content": "Key figures in AI, including OpenAI's Sam Altman and SpaceX's Elon Musk, have agreed to decelerate AI development, citing safety concerns. However, critics argue this move could resemble a cartel, potentially stifling competition and innovation. The agreement aims to \"pace the frontier\" of AI, but skeptics worry about the impact on smaller AI firms and market dynamics. This development highlights the ongoing tension between rapid technological advancement and ethical considerations in AI. Industry professionals should evaluate how this slowdown might affect their strategic planning and innovation efforts.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -449,6 +449,17 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-58704",
+            "dateAdded": "Sep 16, 2026",
+            "vendor": "Google Pixel",
+            "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58704",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-76461",
             "dateAdded": "Sep 14, 2026",
             "vendor": "Cisco Secure Email Gateway",
@@ -463,7 +474,7 @@ const websiteContent = {
             "cveId": "CVE-2026-84869",
             "dateAdded": "Sep 11, 2026",
             "vendor": "ConnectWise ScreenConnect",
-            "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sess",
+            "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote sessi",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
@@ -474,7 +485,7 @@ const websiteContent = {
             "cveId": "CVE-2026-42016",
             "dateAdded": "Sep 11, 2026",
             "vendor": "JFrog Artifactory",
-            "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+            "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
@@ -507,7 +518,7 @@ const websiteContent = {
             "cveId": "CVE-2026-86060",
             "dateAdded": "Sep 10, 2026",
             "vendor": "MikroTik RouterOS",
-            "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escala",
+            "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escala",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
@@ -518,7 +529,7 @@ const websiteContent = {
             "cveId": "CVE-2026-67277",
             "dateAdded": "Sep 10, 2026",
             "vendor": "MikroTik RouterOS",
-            "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+            "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
