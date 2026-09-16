@@ -3329,14 +3329,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1538",
-      "incident_id": 1538,
-      "title": "City of Zhuzhou in Hunan Suspended Hellobike Robotaxi Service After Vehicle Struck Two Pedestrians",
-      "date": "2026-06-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1546",
       "incident_id": 1546,
       "title": "Google Android Earthquake Alerts System Reportedly Underestimated Kahramanmara\u015f Earthquake and Faile",
@@ -3346,9 +3338,9 @@
     }
   ],
   "stats": {
-    "total": 418,
+    "total": 417,
     "last7Days": 11,
     "last30Days": 320
   },
-  "lastUpdated": "2026-09-17T03:04:17.232626+05:30"
+  "lastUpdated": "2026-09-17T04:23:01.613414+05:30"
 }
