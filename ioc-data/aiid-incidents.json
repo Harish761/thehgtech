@@ -1,6 +1,30 @@
 {
   "incidents": [
     {
+      "id": "AIID-1595",
+      "incident_id": 1595,
+      "title": "Deputies in Cherokee County, Georgia, Allegedly Misused Automated License Plate Reader Data for Non-",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1689",
+      "incident_id": 1689,
+      "title": "Fort Bend County, Texas, Sheriff's Office Lieutenant Reportedly Used Flock Safety License-Plate Read",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1690",
+      "incident_id": 1690,
+      "title": "Kechi, Kansas Police Lieutenant Victor Heiar Used Flock Safety License-Plate Reader System to Monito",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-494",
       "incident_id": 494,
       "title": "Female Celebrities' Faces Reportedly Shown in Sexually Suggestive Ads for Deepfake App",
@@ -2841,14 +2865,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1595",
-      "incident_id": 1595,
-      "title": "Deputies in Cherokee County, Georgia, Allegedly Misused Automated License Plate Reader Data for Non-",
-      "date": "2026-07-21",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1596",
       "incident_id": 1596,
       "title": "Purported Deepfake Impersonation of Starmangalsutra Director Reportedly Led to \u20b910.70 Crore (Approxi",
@@ -3313,43 +3329,11 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-647",
-      "incident_id": 647,
-      "title": "A Self-Driving Waymo Robotaxi Reportedly Collided with a Bicyclist",
-      "date": "2026-06-18",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1538",
       "incident_id": 1538,
       "title": "City of Zhuzhou in Hunan Suspended Hellobike Robotaxi Service After Vehicle Struck Two Pedestrians",
       "date": "2026-06-18",
       "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1542",
-      "incident_id": 1542,
-      "title": "OpenClaw Agent Reportedly Tried to Delete Meta AI Alignment Director Summer Yue's Emails Despite Sto",
-      "date": "2026-06-18",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1543",
-      "incident_id": 1543,
-      "title": "Waymo Robotaxi Reportedly Obstructed Ambulance Responding to Austin Mass Shooting",
-      "date": "2026-06-18",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1544",
-      "incident_id": 1544,
-      "title": "Waymo Robotaxi Reportedly Entered Flooded San Antonio Roadway and Was Swept Into Waterway",
-      "date": "2026-06-18",
-      "category": "autonomous_vehicle",
       "severity": "medium"
     },
     {
@@ -3362,9 +3346,9 @@
     }
   ],
   "stats": {
-    "total": 420,
-    "last7Days": 8,
-    "last30Days": 317
+    "total": 418,
+    "last7Days": 11,
+    "last30Days": 320
   },
-  "lastUpdated": "2026-09-17T01:01:10.580875+05:30"
+  "lastUpdated": "2026-09-17T03:04:17.232626+05:30"
 }
