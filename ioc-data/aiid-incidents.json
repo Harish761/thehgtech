@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1489",
+      "incident_id": 1489,
+      "title": "ChatGPT Was Reportedly Used in Planning School Stabbing in Pirkkala, Finland, That Injured Three Pup",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1595",
       "incident_id": 1595,
       "title": "Deputies in Cherokee County, Georgia, Allegedly Misused Automated License Plate Reader Data for Non-",
@@ -23,6 +31,30 @@
       "date": "2026-09-16",
       "category": "other",
       "severity": "medium"
+    },
+    {
+      "id": "AIID-1691",
+      "incident_id": 1691,
+      "title": "ChatGPT Was Reportedly Used to Plan Z\u00fcrich-Oerlikon Knife Attack That Seriously Injured Three Five-Y",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1692",
+      "incident_id": 1692,
+      "title": "Parkview High School in Georgia Reportedly Received Series of Purportedly AI-Generated Bomb Threats ",
+      "date": "2026-09-16",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1693",
+      "incident_id": 1693,
+      "title": "AI Agent Reportedly Exploited Application Vulnerabilities to Modify Personal Data and Access Invoice",
+      "date": "2026-09-16",
+      "category": "other",
+      "severity": "high"
     },
     {
       "id": "AIID-494",
@@ -3257,46 +3289,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1165",
-      "incident_id": 1165,
-      "title": "Grok Imagine Reportedly Produces Nonconsensual Taylor Swift Deepfake Nudes Without Explicit Promptin",
-      "date": "2026-06-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1249",
-      "incident_id": 1249,
-      "title": "Virginia Candidate John Reid Reportedly Used AI-Generated Deepfake of Opponent Ghazala Hashmi in Sim",
-      "date": "2026-06-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1292",
-      "incident_id": 1292,
-      "title": "Glasgow Man Allegedly Used AI Tool to Create and Share Nonconsensual Deepfake Nude Images of Former ",
-      "date": "2026-06-19",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1321",
-      "incident_id": 1321,
-      "title": "Shilpa Shetty Alleges AI-Enabled Impersonation and Misuse of Likeness in Mumbai High Court Filing",
-      "date": "2026-06-19",
-      "category": "fraud",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1364",
-      "incident_id": 1364,
-      "title": "Moltbook Database Exposure Allegedly Revealed Users' Private Communications and API Authentication T",
-      "date": "2026-06-19",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1467",
       "incident_id": 1467,
       "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
@@ -3313,34 +3305,18 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1547",
-      "incident_id": 1547,
-      "title": "Waymo Robotaxis Reportedly Entered Closed Freeway Construction Zones in Arizona and California",
-      "date": "2026-06-19",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1548",
       "incident_id": 1548,
       "title": "South African Home Affairs Revised White Paper Reportedly Included Fictitious References Believed to",
       "date": "2026-06-19",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1546",
-      "incident_id": 1546,
-      "title": "Google Android Earthquake Alerts System Reportedly Underestimated Kahramanmara\u015f Earthquake and Faile",
-      "date": "2026-06-18",
-      "category": "other",
-      "severity": "critical"
     }
   ],
   "stats": {
-    "total": 417,
-    "last7Days": 11,
-    "last30Days": 320
+    "total": 414,
+    "last7Days": 15,
+    "last30Days": 324
   },
-  "lastUpdated": "2026-09-17T04:23:01.613414+05:30"
+  "lastUpdated": "2026-09-17T10:14:40.649032+05:30"
 }
