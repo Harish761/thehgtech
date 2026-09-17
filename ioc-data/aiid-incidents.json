@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1692",
+      "incident_id": 1692,
+      "title": "Parkview High School in Georgia Reportedly Received Series of Purportedly AI-Generated Bomb Threats ",
+      "date": "2026-09-17",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1693",
+      "incident_id": 1693,
+      "title": "AI Agent Reportedly Exploited Application Vulnerabilities to Modify Personal Data and Access Invoice",
+      "date": "2026-09-17",
+      "category": "data_leak",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1489",
       "incident_id": 1489,
       "title": "ChatGPT Was Reportedly Used in Planning School Stabbing in Pirkkala, Finland, That Injured Three Pup",
@@ -39,22 +55,6 @@
       "date": "2026-09-16",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1692",
-      "incident_id": 1692,
-      "title": "Parkview High School in Georgia Reportedly Received Series of Purportedly AI-Generated Bomb Threats ",
-      "date": "2026-09-16",
-      "category": "prompt_injection",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1693",
-      "incident_id": 1693,
-      "title": "AI Agent Reportedly Exploited Application Vulnerabilities to Modify Personal Data and Access Invoice",
-      "date": "2026-09-16",
-      "category": "other",
-      "severity": "high"
     },
     {
       "id": "AIID-494",
@@ -3287,36 +3287,12 @@
       "date": "2026-06-22",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1467",
-      "incident_id": 1467,
-      "title": "South Africa Draft National AI Policy Reportedly Included Fictitious References Believed to Be AI Ha",
-      "date": "2026-06-19",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1480",
-      "incident_id": 1480,
-      "title": "Purportedly AI-Recreated Clips from Beastie Boys' 'Sabotage' Video Reportedly Appeared in FBI Promot",
-      "date": "2026-06-19",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1548",
-      "incident_id": 1548,
-      "title": "South African Home Affairs Revised White Paper Reportedly Included Fictitious References Believed to",
-      "date": "2026-06-19",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 414,
-    "last7Days": 15,
-    "last30Days": 324
+    "total": 411,
+    "last7Days": 12,
+    "last30Days": 320
   },
-  "lastUpdated": "2026-09-17T18:52:44.890152+05:30"
+  "lastUpdated": "2026-09-18T01:11:54.537525+05:30"
 }
