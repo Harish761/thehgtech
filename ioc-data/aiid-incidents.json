@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1695",
+      "incident_id": 1695,
+      "title": "AI Medical Scribe Reportedly Added False Psychedelic-Mushroom Use Claim to Australian Patient Rebecc",
+      "date": "2026-09-18",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1692",
       "incident_id": 1692,
       "title": "Parkview High School in Georgia Reportedly Received Series of Purportedly AI-Generated Bomb Threats ",
@@ -3298,9 +3306,9 @@
     }
   ],
   "stats": {
-    "total": 412,
-    "last7Days": 13,
-    "last30Days": 321
+    "total": 413,
+    "last7Days": 14,
+    "last30Days": 322
   },
-  "lastUpdated": "2026-09-18T10:02:36.278472+05:30"
+  "lastUpdated": "2026-09-18T18:25:52.479958+05:30"
 }
