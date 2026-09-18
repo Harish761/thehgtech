@@ -17,6 +17,14 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1694",
+      "incident_id": 1694,
+      "title": "Jackson Township Police in Stark County, Ohio Briefly Detained Driver After Flock Safety Alert Match",
+      "date": "2026-09-17",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1489",
       "incident_id": 1489,
       "title": "ChatGPT Was Reportedly Used in Planning School Stabbing in Pirkkala, Finland, That Injured Three Pup",
@@ -3290,9 +3298,9 @@
     }
   ],
   "stats": {
-    "total": 411,
-    "last7Days": 12,
-    "last30Days": 320
+    "total": 412,
+    "last7Days": 13,
+    "last30Days": 321
   },
-  "lastUpdated": "2026-09-18T04:19:23.412950+05:30"
+  "lastUpdated": "2026-09-18T10:02:36.278472+05:30"
 }
