@@ -9,6 +9,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1696",
+      "incident_id": 1696,
+      "title": "Vero Beach, Florida, Man Allegedly Used AI Nudification Tools to Create and Distribute Nonconsensual",
+      "date": "2026-09-18",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1692",
       "incident_id": 1692,
       "title": "Parkview High School in Georgia Reportedly Received Series of Purportedly AI-Generated Bomb Threats ",
@@ -3306,9 +3314,9 @@
     }
   ],
   "stats": {
-    "total": 413,
-    "last7Days": 13,
-    "last30Days": 321
+    "total": 414,
+    "last7Days": 14,
+    "last30Days": 322
   },
-  "lastUpdated": "2026-09-19T04:01:18.454918+05:30"
+  "lastUpdated": "2026-09-19T09:59:39.515464+05:30"
 }
