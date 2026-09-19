@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1697",
+      "incident_id": 1697,
+      "title": "Former Costa Mesa, California, Police Officer Reportedly Used Flock Safety License-Plate Reader Syst",
+      "date": "2026-09-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1698",
+      "incident_id": 1698,
+      "title": "Flock Safety License-Plate Reader Reportedly Misread Plate Digit, Prompting Gunpoint Stop of Two Sis",
+      "date": "2026-09-19",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1695",
       "incident_id": 1695,
       "title": "AI Medical Scribe Reportedly Added False Psychedelic-Mushroom Use Claim to Australian Patient Rebecc",
@@ -3314,9 +3330,9 @@
     }
   ],
   "stats": {
-    "total": 414,
-    "last7Days": 14,
-    "last30Days": 322
+    "total": 416,
+    "last7Days": 15,
+    "last30Days": 324
   },
-  "lastUpdated": "2026-09-19T17:57:30.187918+05:30"
+  "lastUpdated": "2026-09-20T00:04:03.388879+05:30"
 }
