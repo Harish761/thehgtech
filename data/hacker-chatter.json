@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-09-19T07:28:24.822708",
-  "total_incidents": 31381,
+  "last_updated": "2026-09-19T17:21:33.510296",
+  "total_incidents": 31384,
   "incidents": [
+    {
+      "id": "auditteam_td***up",
+      "victim_name": "td***up",
+      "threat_actor": "AuditTeam",
+      "date_discovered": "2026-09-19T10:50:28.792216+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "",
+      "screenshot": "https://images.ransomware.live/victims/e2ab796dd9bdbe1d5c1ca1256a8c96e7.png",
+      "url": "http://6tdqqaxftvradka5d2frzgwixis7fmro7rfh4ettzcx7jfapkebe6jad.onion/entity/32373FFB7AF7E725",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vexy_ransomware_quy_nhon_university",
+      "victim_name": "Quy Nhon University",
+      "threat_actor": "Vexy Ransomware",
+      "date_discovered": "2026-09-19T07:54:22.255428+00:00",
+      "industry": "Education",
+      "website": "",
+      "claim": "Quy Nhon University (QNU) is a public, multidisciplinary university located in Quy Nhon City, Binh Dinh Province, Vietnam. Established in 1977, the university has a long-standing tradition in teacher education and has developed into a comprehensive institution offering a wide range of academic programs.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_cassias_mg_government",
+      "victim_name": "Cassias MG Government",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-09-19T07:50:51.612488+00:00",
+      "industry": "Government & Defense",
+      "website": "",
+      "claim": "network commitment, from government credentials to justice panels, such as access to the financial sector, police, personal data, medical (SUS), RG(CIN), BIRTH CERTIFICATE, CPF (identity number in Brazil) among other data from CASSIAS.MG.GOV departments, we will give you a deadline to negotiate with us! [Size: 720.0 MB | Sector: Medical, Government, Finance]",
+      "screenshot": "https://images.ransomware.live/victims/c2021581f800c5b83882d43d78f29c6f.png",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/cassias-mg-government/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "anubis_quest_group",
       "victim_name": "Quest Group",
@@ -730,7 +766,7 @@
       "industry": "Education",
       "website": "",
       "claim": "Full Employee Information\nFull Students Information\nFull Guardians Information [Size: 102.0 MB | Sector: Education]",
-      "screenshot": "",
+      "screenshot": "https://images.ransomware.live/victims/7a5dc57b093bf01e6abf006f41a658bf.png",
       "url": "/post/westbridge-institute-of-technology-inc/",
       "source": "Ransomware.live OSINT API"
     },
@@ -790,7 +826,7 @@
       "industry": "Manufacturing",
       "website": "",
       "claim": "is an Italian company engaged in premium cars. There are many customer documents and employee data [Size: 7.3 GB | Sector: Technology, Other]",
-      "screenshot": "",
+      "screenshot": "https://images.ransomware.live/victims/50858e8ea313ad0692366423611f1031.png",
       "url": "/post/rda-motors-spa/",
       "source": "Ransomware.live OSINT API"
     },
@@ -814,7 +850,7 @@
       "industry": "Not Found",
       "website": "",
       "claim": "Sevenoaks, S.R.O. is an enterprise based in Czech Republic.\n Its main office is in Prague. \nThe company operates in the Computer Systems Design and Related Services industry. [Size: 3.3 GB | Sector: Technology, Other]",
-      "screenshot": "",
+      "screenshot": "https://images.ransomware.live/victims/89ddd071dc5042151a624e34d601e7c9.png",
       "url": "/post/sevenoaks-sro/",
       "source": "Ransomware.live OSINT API"
     },
