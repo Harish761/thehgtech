@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-09-20T07:51:56.431874",
-  "total_incidents": 31390,
+  "last_updated": "2026-09-20T17:34:04.059076",
+  "total_incidents": 31397,
   "incidents": [
+    {
+      "id": "qilin_zorlu_holding",
+      "victim_name": "Zorlu Holding",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-20T12:15:03.477485+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/66fa3f8451171985f225ef19823d1950.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=51f10216-38bf-4521-a65e-4d8e1cad8cd6",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_shopdunk",
+      "victim_name": "ShopDunk",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-20T12:14:25.639076+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/ae49679759af4524c3942c83a7847694.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=283a4d27-c413-4819-9937-3ea8ec6725c7",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_kmls",
+      "victim_name": "KMLS",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-20T12:13:43.083355+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/5bf3005d273367c48505fa654eee1e58.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=7daa7895-84f8-4fbd-8985-f6edc7e64dc5",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_touring_club_suisse",
+      "victim_name": "Touring Club Suisse",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-09-20T12:13:05.737287+00:00",
+      "industry": "Transportation",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/e7d6c3ee924cf48f643848368ab3d41a.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=e220ce0a-da54-4c3e-84ef-163069506fd3",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_studio_notarile_associato_salvatore_costantino_e_anna_favarato",
+      "victim_name": "Studio Notarile Associato Salvatore Costantino E Anna Favarato",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-09-20T09:35:30.781513+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Studio Notarile Associato Salvatore Costantino E Anna Favarato, Follina \n+39 0438 971778\nPiazza Iv Novembre, 20, 31051, Follina , Italia\nNotary's office\nseveral thousand documents\nThere are many customer documents and employee data. [Sector: Finance, Other]",
+      "screenshot": "https://images.ransomware.live/victims/1a7e115d59cc65f4b2feb6765fb96a0d.png",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/studio-notarile-associato-salvatore-costantino-e-anna-favarato/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_great_bay_bio",
+      "victim_name": "Great Bay Bio",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-09-20T06:40:26.051276+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Data is not available now.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "bravox_towill",
+      "victim_name": "TOWILL",
+      "threat_actor": "bravox",
+      "date_discovered": "2026-09-20T06:24:14.282329+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "A geomatics veteran since 1955, providing surveying, LiDAR, photogrammetry, and GIS services primarily for U.S. federal agencies, including the Army Corps of Engineers and the Department of Defense.",
+      "screenshot": "https://images.ransomware.live/victims/3d61640a78dcf448704ccd12bfcb47dc.png",
+      "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/0b9cd65a-d90a-4a98-9cb8-4f3289fecdb8",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "n0n_fanatics_(global_sports_commerce_platform)",
       "victim_name": "Fanatics (global sports commerce platform)",
