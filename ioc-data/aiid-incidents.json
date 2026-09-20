@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1702",
+      "incident_id": 1702,
+      "title": "Russia-Linked Matryoshka Influence Operation Reportedly Used AI-Cloned Celebrity Voices and Fabricat",
+      "date": "2026-09-20",
+      "category": "misinformation",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1697",
       "incident_id": 1697,
       "title": "Former Costa Mesa, California, Police Officer Reportedly Used Flock Safety License-Plate Reader Syst",
@@ -12,6 +20,30 @@
       "id": "AIID-1698",
       "incident_id": 1698,
       "title": "Flock Safety License-Plate Reader Reportedly Misread Plate Digit, Prompting Gunpoint Stop of Two Sis",
+      "date": "2026-09-19",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1699",
+      "incident_id": 1699,
+      "title": "AI-Generated Images Purporting to Show Donald Trump Kissing White House Aide Natalie Harp Went Viral",
+      "date": "2026-09-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1700",
+      "incident_id": 1700,
+      "title": "Google Gemini Reportedly Accessed Three Real Companies' Protected Systems During Cybersecurity Evalu",
+      "date": "2026-09-19",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1701",
+      "incident_id": 1701,
+      "title": "AI Chatbot Reportedly Misidentified Chinese Ship Cargo as Nuclear-Program Components, Prompting U.S.",
       "date": "2026-09-19",
       "category": "prompt_injection",
       "severity": "medium"
@@ -3319,20 +3351,12 @@
       "date": "2026-06-23",
       "category": "autonomous_vehicle",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1550",
-      "incident_id": 1550,
-      "title": "Purportedly AI-Generated Facebook Poster Falsely Declared Kannada Actor Doddanna Dead",
-      "date": "2026-06-22",
-      "category": "misinformation",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 416,
-    "last7Days": 15,
-    "last30Days": 324
+    "total": 419,
+    "last7Days": 19,
+    "last30Days": 328
   },
-  "lastUpdated": "2026-09-20T03:48:29.405788+05:30"
+  "lastUpdated": "2026-09-20T10:16:13.976809+05:30"
 }
