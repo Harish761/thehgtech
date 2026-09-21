@@ -3327,36 +3327,12 @@
       "date": "2026-06-24",
       "category": "fraud",
       "severity": "high"
-    },
-    {
-      "id": "AIID-1549",
-      "incident_id": 1549,
-      "title": "Purported Deepfake of Taoiseach Miche\u00e1l Martin Reportedly Promoted Quantum AI Investment Scam",
-      "date": "2026-06-23",
-      "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1551",
-      "incident_id": 1551,
-      "title": "Purported AI-Generated Advertisements Reportedly Falsely Depicted Lee Ji-hye Endorsing Food and Clot",
-      "date": "2026-06-23",
-      "category": "misinformation",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1552",
-      "incident_id": 1552,
-      "title": "Tesla Driver Reportedly Said Driver-Assistance Mode Was Engaged During Fatal Texas Home Crash",
-      "date": "2026-06-23",
-      "category": "autonomous_vehicle",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 419,
+    "total": 416,
     "last7Days": 19,
     "last30Days": 328
   },
-  "lastUpdated": "2026-09-21T03:52:56.587512+05:30"
+  "lastUpdated": "2026-09-21T10:16:13.015493+05:30"
 }
