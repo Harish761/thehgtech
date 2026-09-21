@@ -2821,6 +2821,26 @@
       "Description": "In July 2019, <a href=\"https://thenextweb.com/security/2019/07/16/bulgaria-tax-agency-data-leak-hack/\" target=\"_blank\" rel=\"noopener\">a massive data breach of the Bulgarian National Revenue Agency began circulating with data on 5 million people</a>. Allegedly obtained in June, the data was broadly shared online and included taxation information alongside names, phone numbers, physical addresses and 471 thousand unique email addresses. The breach is said to have affected \"nearly all adults in Bulgaria\"."
     }
   ],
+  "burgerkingrus.ru": [
+    {
+      "Name": "BurgerKingRussia",
+      "Title": "Burger King Russia",
+      "BreachDate": "2024-08-25",
+      "AddedDate": "2026-09-21T13:54:00Z",
+      "PwnCount": 3155792,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Genders",
+        "Geographic locations",
+        "Names",
+        "Phone numbers"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In October 2024, <a href=\"https://xakep.ru/2024/10/10/burger-king-leak/\" target=\"_blank\" rel=\"noopener\">news of a data breach exposing Burger King Russia customers broke</a> following an August attack on the Mindbox marketing automation platform. The breach exposed 3.2M unique email addresses along with names, genders, dates of birth, phone numbers and approximate geolocations, with the data spanning 2018 to August 2024. Burger King Russia acknowledged the incident and advised it did not include payment or passport details."
+    }
+  ],
   "businessacumen.biz": [
     {
       "Name": "BusinessAcumen",
