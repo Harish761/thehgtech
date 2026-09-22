@@ -9565,6 +9565,25 @@
       "Description": "In March 2021, the self-proclaimed \"kinder, smarter social network\" <a href=\"https://liker.com/\" target=\"_blank\" rel=\"noopener\">Liker</a> suffered a data breach, allegedly in retaliation for the Gab data breach and scraping of data from Parler. The site remained offline after the breach which exposed 465k email addresses in addition to names, dates of birth, education levels, private messages, security questions and answers in plain text, passwords stored as bcrypt hashes and other personal data attributes. Liker did not respond when contacted about the breach."
     }
   ],
+  "limeleads.com": [
+    {
+      "Name": "LimeLeads",
+      "Title": "LimeLeads",
+      "BreachDate": "2019-08-01",
+      "AddedDate": "2026-09-22T08:02:37Z",
+      "PwnCount": 17838396,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Geographic locations",
+        "Job titles",
+        "Phone numbers"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In 2019, the now-defunct B2B marketing leads database service <a href=\"https://www.zdnet.com/article/49-million-user-records-from-us-data-broker-limeleads-put-up-for-sale-online/\" target=\"_blank\" rel=\"noopener\">LimeLeads suffered a data breach</a> due to an exposed, unsecured Elasticsearch server. The incident exposed tens of millions of records of largely corporate contact data containing 17.8M unique email addresses, along with phone numbers, employers, job titles and geographic locations including state, city and postcode."
+    }
+  ],
   "limevpn.com": [
     {
       "Name": "LimeVPN",
