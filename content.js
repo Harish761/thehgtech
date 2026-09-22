@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Sep 19 2026",
+            "headline": "CrowdSec GitHub Breach—170 Repositories Exposed",
+            "title": "CrowdSec's GitHub Repositories Compromised in TanStack npm Attack",
+            "content": "CrowdSec, a French security firm, reported that an attacker accessed approximately 170 of its private GitHub repositories using the account of a former employee. The breach occurred on May 22, following a supply chain attack on TanStack npm, which compromised the employee's laptop. The incident highlights the risks associated with maintaining access for former employees. CrowdSec has since revoked the access and is conducting a thorough investigation. Organizations are advised to regularly audit access permissions and promptly revoke access for departing employees to mitigate such risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 22 2026",
+            "headline": "US-China AI Alert System Proposed Amid Development Race",
+            "title": "US Proposes AI Incident Alert System in Talks With China",
+            "content": "In ongoing discussions with China, the United States has proposed the establishment of an AI incident alert system. This initiative aims to enhance transparency and cooperation in the rapidly advancing field of artificial intelligence. Despite calls to slow AI development, former President Trump has emphasized the need to maintain U.S. leadership in AI to prevent China from catching up. The proposed system would facilitate the exchange of information on AI-related incidents, fostering global collaboration. Stakeholders in AI development should monitor these discussions closely as they could impact international AI governance.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-proposes-ai-incident-alert-system-in-talks-with-china-bessent-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Google Fined €403M for GDPR Breaches on Location Data",
+            "title": "Google Penalized €403 Million for GDPR Violations on Location Data",
+            "content": "Google has been fined €403 million by Ireland's Data Protection Commission for violating the General Data Protection Regulation (GDPR). The violations pertain to the handling of location data by three of Google's features from May 2018 to February 2020. The DPC has also mandated Google to revise its data processing practices to ensure compliance. This penalty underscores the importance of adhering to data protection laws, particularly for tech giants operating in the EU. Companies should review their data handling policies to avoid similar penalties and ensure user privacy.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Fake LastPass Installers Deploy EDR Killer, Stealer Malware",
+            "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer",
+            "content": "Cybercriminals are distributing fake LastPass installers that deploy a kernel-level Endpoint Detection and Response (EDR) killer and the 'Rapuncel' infostealer malware. These attackers impersonate over 40 companies and disable 145 security products to evade detection. The campaign highlights the growing sophistication of malware tactics targeting enterprise security solutions. Organizations should enhance their security posture by verifying software sources and employing robust endpoint protection measures. Security teams must remain vigilant against such deceptive tactics to protect sensitive data.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "RatHat Trojan Uses AI for Enhanced Evasion on Android",
+            "title": "RatHat Android Trojan Uses AI for Automation and Evasion",
+            "content": "The RatHat Android trojan is leveraging artificial intelligence to automate device navigation and control, significantly enhancing its adaptability and evasion capabilities. This malware can dynamically adjust its behavior based on real-time analysis of the infected device's environment. The use of AI in malware represents a concerning trend, as it increases the difficulty of detection and mitigation. Android users and security professionals should be aware of this threat and ensure that devices are protected with up-to-date security solutions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rathat-android-trojan-uses-ai-for-automation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Cyberattacks Disrupt Colorado Water Utilities' OT Systems",
+            "title": "Colorado Water Utilities Hit by Cyberattacks Targeting OT Systems",
+            "content": "Colorado's water utilities have been targeted by cyberattacks that disrupted operational technology (OT) systems. Attackers altered equipment settings, disabled remote access and alarms, and modified pumping cycles. This attack highlights the vulnerabilities in critical infrastructure and the potential for significant disruption. Water utilities and other critical infrastructure operators should prioritize securing their OT systems and implementing robust incident response plans. The incident underscores the need for increased investment in cybersecurity measures to protect essential services.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/colorado-water-utilities-hit-by-cyberattacks-targeting-ot-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Linux Kernel Flaws Exploited—Urgent Patch Required",
+            "title": "Organizations Warned of 3 Exploited Linux Kernel Vulnerabilities",
+            "content": "Three vulnerabilities in the Linux kernel are being actively exploited, posing risks of denial-of-service, memory disclosure, and memory modification. These flaws necessitate immediate attention from organizations using affected Linux systems. Administrators should prioritize applying the available patches to mitigate potential exploitation. The vulnerabilities highlight the ongoing need for vigilance in monitoring and updating open-source software components. Organizations should implement comprehensive patch management strategies to protect against such threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/organizations-warned-of-3-exploited-linux-kernel-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "ChainScript RAT Delivered via ClickFix Lures",
+            "title": "ClickFix Lures Deploy ChainScript RAT Using Polygon to Rotate C2 Infrastructure",
+            "content": "Threat actors are using ClickFix-like lures to distribute a new remote access trojan (RAT) called ChainScript. The malware, which masquerades as legitimate applications like Spotify and Zoom, utilizes Polygon to rotate its command-and-control (C2) infrastructure, enhancing its persistence. This tactic complicates detection and mitigation efforts. Security teams should be vigilant against such sophisticated lures and ensure robust defenses against RATs. Users are advised to verify application sources and maintain updated security software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 18 2026",
+            "headline": "Cisco Zero-Day CVE-2026-76460—Critical API Flaw Exposed",
+            "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
+            "content": "A critical zero-day vulnerability, CVE-2026-76460, has been identified in Cisco's Identity Services Engine (ISE), receiving a maximum CVSS score of 10. This authentication bypass flaw poses significant risks, allowing unauthorized access to sensitive systems. Cisco has acknowledged the issue and is working on a patch. Organizations using Cisco ISE should implement interim security measures and monitor for updates. This incident underscores the importance of securing API endpoints and regularly reviewing access controls.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 18 2026",
+            "headline": "AI Uncovers Widespread Software Decoder Vulnerability",
+            "title": "Researchers Use AI to Find Widespread Software Decoder Flaw",
+            "content": "Researchers have leveraged artificial intelligence to identify a widespread software decoder vulnerability that allowed remote code execution and unauthorized access to user accounts. The flaw affected major platforms, including Meta's core products and an OpenAI repository, but has since been patched. This discovery highlights the potential of AI in enhancing vulnerability detection and response. Organizations should consider integrating AI-driven tools into their security operations to improve threat detection capabilities.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/hacktron-ai-heif-heist-vulnerability/",
+            "relatedResources": []
+        },
+        {
             "date": "Sep 21 2026",
             "headline": "$10.71M in Crypto Stolen—30,000 Devices Compromised Globally",
             "title": "North Korean Contagious Interview Campaign Compromises 30,000 Devices",
@@ -28,15 +118,6 @@ const websiteContent = {
             "content": "CrowdSec has confirmed the theft of its source code following the May 2026 TanStack supply chain attack. The breach resulted in the unauthorized copying of 170 private GitHub repositories using the account of a former employee. This incident highlights the vulnerabilities inherent in supply chain attacks, where compromised dependencies can lead to significant data breaches. Organizations are urged to review their access controls and monitor for unauthorized access to prevent similar incidents. The attack underscores the critical need for comprehensive supply chain security strategies.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/crowdsec-confirms-source-code-stolen-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 16 2026",
-            "headline": "Radaris Loses Domains—Privacy Law Violation Consequences",
-            "title": "Data Broker Radaris Loses Domains in New Jersey Privacy Lawsuit",
-            "content": "Radaris.com, a consumer data broker, has lost its domains following a lawsuit alleging violations of New Jersey's privacy laws. Known for ignoring requests to remove personal information, Radaris faced legal action for its practices. The lawsuit highlights the increasing enforcement of privacy regulations and the consequences for companies that fail to comply. Organizations handling personal data should ensure adherence to privacy laws to avoid similar legal repercussions. This case serves as a reminder of the growing importance of data privacy in the digital age.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
             "relatedResources": []
         },
         {
@@ -92,63 +173,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/dragos-completes-netrise-and-runzero-acquisitions-following-accenture-deal/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "TigerByte Cyber Lands $3M Funding—Secures $7M in US Contracts",
-            "title": "TigerByte Cyber Secures $3 Million in Funding and US Government Contracts",
-            "content": "TigerByte Cyber has emerged from stealth mode with a $3 million funding boost, alongside securing over $7 million in contracts with US government agencies. These contracts include partnerships with the US Space Force, the US Navy, and DARPA, highlighting the company's strategic focus on defense and aerospace sectors. This development positions TigerByte Cyber as a significant player in the cybersecurity landscape, particularly in government sectors where robust security solutions are critical. The funding will likely accelerate their product development and expand their market reach. Security professionals should monitor TigerByte's offerings as potential solutions for high-security environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/tigerbyte-cyber-emerges-from-stealth-with-3-million-in-funding/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "SolarWinds Patches Critical ARM Flaw—RCE Risk Mitigated",
-            "title": "SolarWinds Addresses High-Severity ARM Vulnerability CVE-2026-28326",
-            "content": "SolarWinds has released a crucial security update for its Access Rights Manager (ARM) to fix a high-severity vulnerability, CVE-2026-28326, which could lead to unauthenticated remote code execution (RCE). Rated 8.8 on the CVSS scale, this flaw posed significant risks to organizations relying on ARM for access management. The vulnerability allowed attackers to execute arbitrary code remotely, potentially compromising sensitive data and systems. Users of ARM are urged to apply the patch immediately to mitigate potential exploitation. This incident underscores the importance of regular updates and vigilance in access management solutions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "Orkes Conductor RCE Exploit—Critical Flaw CVE-2026-58138",
-            "title": "Critical RCE Vulnerability in Orkes Conductor Actively Exploited",
-            "content": "A critical vulnerability, CVE-2026-58138, affecting Orkes Conductor has been reported as actively exploited in the wild. This pre-authentication remote code execution flaw, with a CVSS v3.1 score of 9.8, impacts versions 3.21.21 and earlier. Fortinet has identified the exploitation, which could allow attackers to execute arbitrary code without authentication, posing severe risks to affected systems. Organizations using Orkes Conductor should prioritize patching to prevent potential breaches. This incident highlights the ongoing threat of RCE vulnerabilities in widely used workflow platforms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "CISA Warns of 3 Linux Kernel Flaws—Active Exploitation Detected",
-            "title": "CISA Adds Three Linux Kernel Vulnerabilities to Exploited List",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has flagged three Linux kernel vulnerabilities as actively exploited, adding them to its Known Exploited Vulnerabilities catalog. Among these, CVE-2025-39682 stands out with a CVSS score of 9.8, indicating critical severity. These vulnerabilities could allow attackers to gain unauthorized access or execute arbitrary code on affected systems. Organizations using Linux should review CISA's advisories and apply necessary patches to secure their environments. This alert emphasizes the critical nature of maintaining up-to-date security measures in open-source software.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/cisa-flags-three-linux-kernel.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "Identity Visibility Crucial by 2026—Security's New Foundation",
-            "title": "Identity Visibility in 2026: The Foundation of Identity Security",
-            "content": "Identity visibility is set to become the cornerstone of modern identity security by 2026, as highlighted in recent breach research, including Verizon's Data Breach Investigations Report. The increasing prevalence of stolen and misused credentials as initial access vectors underscores the need for robust identity visibility. This approach involves ensuring comprehensive monitoring and management of identity data to prevent unauthorized access. Organizations are urged to prioritize identity visibility to mitigate risks associated with credential theft. As cyber threats evolve, identity security strategies must adapt to protect sensitive information effectively.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "Claude Opus 5 Exploited—OpenAI Staff Accounts Compromised",
-            "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
-            "content": "Security researchers from Hacktron leveraged Anthropic's Claude Opus 5 to exploit two chained vulnerabilities, compromising ChatGPT and Codex accounts of several OpenAI employees. The attack began with a flaw in OpenAI's public help forum software, leading to unauthorized access to an internal code repository. This incident underscores the risks associated with software vulnerabilities and the importance of securing internal systems. Organizations are advised to conduct regular security audits and patch management to prevent similar breaches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 17 2026",
+            "headline": "OpenAI Unveils Astra—Revolutionizing Legal Workflows",
+            "title": "OpenAI Introduces Astra for Law with Enhanced Legal Intelligence",
+            "content": "OpenAI has launched Astra for Law, a cutting-edge AI tool designed to streamline legal workflows and enhance data connectivity for law firms. This new platform integrates frontier intelligence with custom firm workflows and connects to various legal data sources, ensuring legal-grade controls for confidential client work. Astra aims to transform how legal professionals manage data, offering a robust solution for handling sensitive information securely. The introduction of Astra reflects a growing trend in AI-driven solutions tailored for specific industries, highlighting the increasing demand for specialized AI applications. Legal professionals should explore Astra to enhance their operational efficiency and data security.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/astra-for-law",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "California Curbs AI Data Center Utility Costs",
+            "title": "California Enacts Laws to Regulate AI Data Center Energy and Water Use",
+            "content": "California Governor Gavin Newsom has signed a series of seven bills aimed at regulating the energy and water consumption of AI data centers. These new laws mandate the California Public Utilities Commission to develop a distinct rate classification for data centers, preventing them from passing utility costs onto residents. This legislative move addresses growing concerns about the environmental impact of AI infrastructure and its associated costs. As AI data centers proliferate, this regulation sets a precedent for balancing technological advancement with environmental responsibility. Stakeholders in AI infrastructure should prepare for compliance with these new regulations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Meta’s Muse Surpasses ChatGPT in Mobile Launch Success",
+            "title": "Meta’s Muse AI Agent Outpaces ChatGPT in Early Mobile Adoption",
+            "content": "Meta's new AI agent, Muse, has achieved more downloads and daily active users in the U.S. and Canada than ChatGPT did during its initial mobile launch phase. According to Appfigures, Muse's rapid adoption highlights its appeal and effectiveness in engaging users. This success underscores the competitive landscape of AI-driven mobile applications, where user engagement and adoption rates are critical metrics. Developers and tech leaders should monitor Muse's growth as an indicator of shifting user preferences in AI tools.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "Amazon Blocks Meta’s Muse from Shopping Platform",
+            "title": "Amazon Restricts Meta’s Muse AI Agent from Shopping Access",
+            "content": "Amazon has blocked Meta's Muse AI agent from accessing its shopping platform, citing violations of its Conditions of Use. Users attempting to use Muse for shopping on Amazon now encounter a popup message indicating unauthorized AI agent access. This move reflects Amazon's strict enforcement of its platform policies and highlights the challenges AI agents face in integrating with established e-commerce systems. Companies developing AI agents should ensure compliance with platform terms to avoid similar restrictions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "GPT-6 Astra Powers Higgsfield AI’s Video Ad Innovation",
+            "title": "Higgsfield AI Leverages GPT-6 Astra for Rapid Video Feature Deployment",
+            "content": "Higgsfield AI has utilized GPT-6 Astra to swiftly introduce new video features, enhancing video ad creation for small businesses. This integration allows for faster market entry of creative tools, streamlining the ad production process. The use of GPT-6 Astra exemplifies the growing trend of leveraging advanced AI models to accelerate product development cycles. Small businesses stand to benefit significantly from these innovations, gaining access to sophisticated tools that were previously out of reach. Tech leaders should consider similar AI integrations to boost their product offerings.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "OpenAI Forms Math Advisory Group Amid AI Breakthroughs",
+            "title": "OpenAI Establishes Advisory Group on Mathematics and AI",
+            "content": "OpenAI has created an independent Advisory Group on Mathematics and Artificial Intelligence to oversee the review and communication of its AI research breakthroughs. This initiative follows OpenAI's recent success in resolving over 100 open mathematical problems. The advisory group aims to ensure the integrity and transparency of OpenAI's mathematical research efforts. As AI continues to advance, the establishment of such groups highlights the importance of interdisciplinary collaboration in guiding AI development. Researchers and developers should stay informed about the group's findings to align with emerging AI trends.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "OpenAI Academy Expands with New AI Learning Paths",
+            "title": "OpenAI Academy Introduces Diverse Learning Paths for AI Skills Development",
+            "content": "OpenAI Academy has expanded its offerings by introducing new learning paths tailored for employees, developers, leaders, educators, and students. These paths are designed to build and demonstrate practical AI skills, catering to a wide range of professional needs. The expansion reflects the growing demand for AI education and the need for specialized training in various sectors. By providing structured learning opportunities, OpenAI Academy aims to equip individuals with the necessary skills to thrive in an AI-driven world. Professionals should explore these paths to enhance their AI competencies.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "OpenAI Tackles 100+ Math Problems—Forms Advisory Group",
+            "title": "OpenAI Forms Math Advisory Group as AI Solves Over 100 Problems",
+            "content": "OpenAI has successfully resolved more than 100 open mathematical problems, leading to the formation of a dedicated math advisory group. This group will not have the authority to alter OpenAI's ongoing research but will guide the review and communication of its findings. The initiative underscores OpenAI's commitment to advancing mathematical research through AI, highlighting the potential of AI to contribute to complex problem-solving. Researchers and mathematicians should consider the implications of AI's role in mathematical discovery and its broader impact on scientific research.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/21/openai-forms-math-advisory-group-as-its-ai-resolves-more-than-100-open-problems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 21 2026",
+            "headline": "VCs to Judge Startup Battlefield at TechCrunch Disrupt",
+            "title": "New Wave of VCs to Judge Startup Battlefield 200 at Disrupt 2026",
+            "content": "TechCrunch Disrupt 2026 will feature a new cohort of venture capitalists (VCs) judging the Startup Battlefield 200 competition. This event, known for its intense startup pitch battles, offers a platform for emerging companies to showcase their innovations. The involvement of fresh VCs reflects the dynamic nature of the startup ecosystem and the continuous search for groundbreaking ideas. Entrepreneurs should seize this opportunity to present their ventures to influential investors and gain valuable exposure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/21/meet-the-next-wave-of-vcs-judging-startup-battlefield-200-at-techcrunch-disrupt-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 18 2026",
+            "headline": "Enforcing AI Slowdown—Challenges and Strategies",
+            "title": "How an AI Slowdown Could Be Enforced Amid Industry Growth",
+            "content": "As discussions around pausing AI development gain traction, enforcing such a slowdown presents significant challenges. Even if major AI companies agree to a pause, ensuring compliance and preventing others from advancing could prove difficult. This situation highlights the complexities of regulating rapidly evolving technologies and the need for robust oversight mechanisms. Policymakers and industry leaders must collaborate to develop strategies that balance innovation with ethical considerations. Stakeholders should remain informed about potential regulatory changes and their implications for AI development.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 21 2026",
             "headline": "Can John Ternus Lead Apple's Next Innovation Wave?",
@@ -165,15 +282,6 @@ const websiteContent = {
             "content": "V7 has implemented GPT-5.6 to convert disorganized company files into context-rich agents capable of executing complex, source-linked tasks. This advancement allows AI systems to access and utilize institutional memory, enhancing their ability to perform intricate operations with greater accuracy and efficiency. By leveraging the latest version of OpenAI's language model, V7 aims to streamline workflows and improve decision-making processes across various industries. The integration of such advanced AI capabilities is expected to significantly impact sectors reliant on data-driven insights, offering a competitive edge to organizations that adopt this technology.",
             "source": "OpenAI News",
             "sourceUrl": "https://openai.com/index/v7",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 18 2026",
-            "headline": "US Gov Site Used AI Model FBI Deemed Malicious",
-            "title": "Federal Register Briefly Utilized Controversial Chinese AI Tool",
-            "content": "The Federal Register website inadvertently employed an open-source Chinese AI search tool previously labeled \"malicious\" by the FBI. The tool's temporary usage raises concerns about the security protocols governing government websites and the potential risks of integrating foreign AI technologies. This incident underscores the importance of rigorous vetting processes for AI tools used in sensitive environments. The FBI's prior warning about the tool's potential for misuse highlights the need for heightened vigilance in AI adoption. Government agencies are advised to review their AI integration policies to prevent similar occurrences.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
             "relatedResources": []
         },
         {
@@ -246,87 +354,6 @@ const websiteContent = {
             "content": "Companies in the world-model AI space are maintaining tight secrecy around their projects, despite significant financial backing and industry buzz. These firms, including their founders and data suppliers, are reluctant to disclose details about their developments. This secrecy raises questions about the transparency and accountability of AI advancements. As these companies continue to innovate, the lack of information could pose challenges for stakeholders seeking to understand the implications of these technologies. Professionals in the AI field should remain vigilant and advocate for greater transparency in AI research and development.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 20 2026",
-            "headline": "Nvidia's Huang Dismisses AI Doomsday Fears",
-            "title": "Nvidia CEO Jensen Huang Downplays AI Catastrophe Concerns",
-            "content": "In a recent interview, Nvidia CEO Jensen Huang expressed skepticism about the potential catastrophic risks of AI, stating there is a \"0% chance\" of AI leading to human extinction. Huang, who stands to benefit significantly from the AI boom, challenges the concerns raised by long-time AI researchers. His stance highlights the ongoing debate within the tech community about the risks and benefits of AI development. As Nvidia continues to lead in AI hardware, professionals must weigh these perspectives while considering the ethical and societal impacts of AI technologies.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 20 2026",
-            "headline": "ScrollEd Transforms Textbooks into Interactive Feeds",
-            "title": "ScrollEd Revolutionizes Learning with TikTok-like Textbook Feeds",
-            "content": "ScrollEd, a Palo Alto-based startup, is transforming traditional textbooks into dynamic, scrollable feeds reminiscent of social media platforms like Instagram. Co-founded by Utsav Gupta and Rebecca Neff, the platform incorporates video, audio, and quizzes to enhance learning experiences. This innovative approach aims to engage students more effectively by leveraging familiar digital formats. As education technology evolves, ScrollEd's model could redefine how educational content is consumed and delivered, offering a fresh perspective on interactive learning.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "AI Regulation Debate Intensifies—Anthropic Proposes Plan",
-            "title": "Anthropic CEO Proposes Steps for AI Development Regulation",
-            "content": "Anthropic CEO Dario Amodei has proposed a three-step plan to regulate AI development, including embedding third-party evaluators in AI labs. This proposal comes amid growing calls for AI regulation from industry leaders. The plan aims to slow down AI advancements to ensure safety and ethical standards are met. As the debate over AI regulation continues, stakeholders must consider the balance between innovation and oversight. Professionals should stay informed about regulatory developments that could impact AI research and deployment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "AI Antitrust Exemption—A Safety Necessity?",
-            "title": "Exploring AI Antitrust Exemption to Prevent Catastrophic Outcomes",
-            "content": "In a discussion on the future of AI business, former US Department of Justice antitrust chief Jonathan Kanter explores the idea of an antitrust exemption for AI. This exemption could potentially prevent monopolistic practices that might lead to catastrophic AI outcomes. As AI technologies rapidly evolve, the conversation around antitrust exemptions underscores the need for balanced regulation that fosters innovation while safeguarding public interests. Industry leaders and policymakers must engage in dialogue to address these complex challenges and ensure responsible AI development.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/997382/openai-microsoft-anthropic-elon-musk-cartel-ai-competition",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 20 2026",
-            "headline": "Vocci's $249 Ring—Revolutionizing Meeting Notes",
-            "title": "Vocci Introduces Innovative Ring for Efficient Meeting Note-Taking",
-            "content": "Vocci has launched a lightweight ring priced at $249, designed to streamline meeting note-taking. The device raises potential privacy concerns, as it captures and processes audio data during meetings. This new form factor offers a hands-free solution for professionals seeking to enhance productivity and accuracy in note-taking. As wearable technology continues to evolve, Vocci's ring represents a novel approach to integrating AI into everyday business practices. Professionals should consider the privacy implications and evaluate the benefits of adopting such technologies in their workflows.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 20 2026",
-            "headline": "Trump Proposes 'AI Force' Amid Industry Concerns",
-            "title": "President Trump Suggests Creation of an 'AI Force' with AI Czar",
-            "content": "President Trump announced plans to establish an \"AI Force\" led by an appointed \"AI czar,\" as he posted on Truth Social. This move comes amid increasing calls from political and industry leaders to slow AI development due to potential risks. The proposal suggests a structured approach to managing AI advancements, although details on the AI Force's scope and authority remain unclear. The initiative could affect AI policy and regulation, impacting developers and tech companies. Stakeholders should monitor policy developments to understand future compliance and innovation landscapes.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "India Mandates Spam Data Sharing by Caller-ID Apps",
-            "title": "India Requires Caller-ID Apps to Share Spam Reports with Telcos",
-            "content": "India has enforced a new regulation requiring caller-ID applications like Truecaller to share spam report data with telecom operators. This mandate raises concerns about the transfer of commercially valuable proprietary data to telcos, potentially impacting app developers' business models. The policy aims to enhance spam management and improve consumer protection, but it may also lead to competitive disadvantages for app developers. Companies operating in this space should assess the implications on data privacy and competitive strategy.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/18/india-forces-caller-id-apps-to-feed-spam-reports-to-telcos/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 20 2026",
-            "headline": "Human Error Tops AI in Energy Cybersecurity Risks",
-            "title": "Human Factors Outweigh AI Threats in Energy System Cybersecurity",
-            "content": "Despite fears of AI-driven cyber threats, human error remains the primary cybersecurity risk in energy systems, according to experts like Joshua Corman. Recent high-profile hacks have spotlighted vulnerabilities, yet the industry's reliance on outdated systems and human oversight continues to pose significant risks. Energy companies must prioritize cybersecurity training and system upgrades to mitigate these threats. Understanding the human element in cybersecurity is crucial for developing robust defense strategies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 19 2026",
-            "headline": "Flock Offers Buyouts to Avoid Layoffs Amid Workforce Cuts",
-            "title": "Flock Proposes Employee Buyouts to Prevent Potential Layoffs",
-            "content": "Flock, a company specializing in AI-driven solutions, is reportedly offering employee buyouts as a strategic move to reduce its workforce without resorting to layoffs. The company has indicated that without these buyouts, layoffs would be almost inevitable. This decision reflects a broader trend in the tech industry where companies are seeking to manage costs amid economic uncertainties. Employees considering the buyout should evaluate their options carefully, as the tech job market remains volatile. This move highlights the ongoing challenges that tech firms face in balancing growth with financial sustainability.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/19/flock-reportedly-tries-to-shrink-workforce-with-employee-buyouts/",
             "relatedResources": []
         }
     ],
@@ -412,6 +439,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-7273",
+            "dateAdded": "Sep 21, 2026",
+            "vendor": "Zyxel GS1900 Series Switches",
+            "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7273",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2025-39964",
             "dateAdded": "Sep 18, 2026",
