@@ -3311,28 +3311,12 @@
       "date": "2026-06-25",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1454",
-      "incident_id": 1454,
-      "title": "Purported Deepfake Video Reportedly Portrayed Nirmala Sitharaman Endorsing Investment Scheme",
-      "date": "2026-06-24",
-      "category": "deepfake",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1553",
-      "incident_id": 1553,
-      "title": "Purported AI-Manipulated Video of Nirmala Sitharaman Reportedly Promoted High-Return Investment Scam",
-      "date": "2026-06-24",
-      "category": "fraud",
-      "severity": "high"
     }
   ],
   "stats": {
-    "total": 416,
+    "total": 414,
     "last7Days": 16,
     "last30Days": 328
   },
-  "lastUpdated": "2026-09-22T10:13:48.300184+05:30"
+  "lastUpdated": "2026-09-22T18:51:45.811684+05:30"
 }
