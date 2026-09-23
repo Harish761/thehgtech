@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Sep 23 2026",
+            "headline": "MikroTik Routers Vulnerable—Admin Control Without Password",
+            "title": "MikroTrick Exploit Allows Full Control of MikroTik Routers Without Authentication",
+            "content": "A new exploit chain, dubbed MikroTrick, has been identified in MikroTik RouterOS, allowing attackers to gain full administrative control without needing a password or SSH key. The exploit combines two vulnerabilities: an SSH state-machine flaw (CVE-2026-67279) and another unspecified issue. This vulnerability affects internet-exposed routers, posing a significant risk to network security. CERT Polska has highlighted the critical nature of this flaw, urging immediate action. Network administrators should prioritize patching to prevent unauthorized access and potential data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Adobe Fixes 9 Critical Flaws—Patch Connect, AEM Forms Now",
+            "title": "Adobe Patches Critical Vulnerabilities in Connect and AEM Forms",
+            "content": "Adobe has released patches for nine critical security vulnerabilities affecting its Connect and AEM Forms products. These flaws could allow for arbitrary code execution and privilege escalation, posing significant risks to users. The vulnerabilities impact various versions of the software, necessitating immediate updates to secure systems. Organizations using these Adobe products should apply the patches to prevent potential exploitation. This update underscores the importance of regular software maintenance and vigilance against emerging threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-patches-critical-flaws-in-connect-aem-forms/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Unpatched Ubuntu Flaw—Host-Root Container Escape Risk",
+            "title": "Exploit Released for Ubuntu Linux Flaw Enabling Host-Root Container Escape",
+            "content": "A critical use-after-free vulnerability in the Linux kernel's AF_UNIX socket subsystem, identified as CVE-2026-80521, has been disclosed by security firm DepthFirst. This flaw allows attackers to escape containers and gain root access on the host system. Although fixed upstream on August 6, Ubuntu has yet to release a patch, leaving systems vulnerable. With a CVSS score of 7.8, this flaw poses a significant threat to containerized environments. Administrators should monitor for updates and consider temporary mitigations to protect systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Chrome 154 Update—108 Vulnerabilities Patched",
+            "title": "Chrome 154 Patches 108 Vulnerabilities Including Critical Memory Flaws",
+            "content": "Google has released Chrome version 154, addressing 108 vulnerabilities, including several critical memory safety and corruption issues. These vulnerabilities could potentially allow attackers to execute arbitrary code or cause a denial of service. Users are urged to update to the latest version to protect against these threats. This update highlights the ongoing need for vigilance in browser security, as Chrome continues to be a target for cyber threats. Regular updates are essential to maintaining a secure browsing environment.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-154-patches-108-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Arista Urges VCO Zero-Day Patch—Critical Exploit Risk",
+            "title": "Arista Urges Immediate Patching of Exploited VCO Zero-Day Vulnerability",
+            "content": "Arista Networks has issued an urgent advisory to patch a critical zero-day vulnerability in its VCO product. This flaw allows remote attackers to access privileged internal functionalities, posing a severe risk to network security. The vulnerability has been actively exploited, increasing the urgency for users to apply the patch. Organizations using Arista's VCO should prioritize this update to mitigate potential breaches. This incident underscores the importance of timely patch management in safeguarding network infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/arista-urges-immediate-patching-of-exploited-vco-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "F5 BIG-IP APM Zero-Day—Unauthenticated RCE Threat",
+            "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE",
+            "content": "F5 has patched a critical zero-day vulnerability in its BIG-IP Access Policy Manager (APM), identified as CVE-2026-94127. This flaw allows attackers to execute code on a BIG-IP system without authentication, specifically affecting systems where APM serves as an OAuth authorization server. The vulnerability has been actively exploited, prompting F5 to release a fix. Organizations using affected systems should apply the patch immediately to prevent unauthorized access and potential data breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Chinese Hackers Exploit Chrome-Windows Zero-Day Chain",
+            "title": "Chinese Hackers Use Chrome-Windows Zero-Day Chain to Deploy Malware",
+            "content": "A Chinese threat actor, UTA0565, has been exploiting a zero-day chain involving Google Chrome and Microsoft Windows to deploy CLEANGULP malware. The attack, observed on September 3 and 4, 2026, leverages vulnerabilities CVE-2026-85046 and another unspecified flaw. These zero-days were used through fake websites to target specific users. The incident highlights the persistent threat of state-sponsored cyber activities and the need for robust security measures. Users should ensure their systems are updated and remain vigilant against phishing attempts.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Next.js Flaw—Server Code Execution via SVG Input",
+            "title": "Critical Next.js ImageResponse Flaw Allows Server Code Execution",
+            "content": "A vulnerability in Next.js, affecting the ImageResponse feature, could enable attackers to execute code on a server via crafted SVG input. This flaw poses a significant risk when applications incorporate user-controlled values, such as text from request URLs, into the ImageResponse function. Vercel, the company behind Next.js, has acknowledged the issue and is working on a fix. Developers should review their implementations and apply any available mitigations to prevent exploitation. This vulnerability underscores the importance of input validation in web applications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Check Point Patches Zero-Day—Script Execution Risk",
+            "title": "Check Point Patches Exploited Management Server Zero-Day Vulnerability",
+            "content": "Check Point has patched a critical zero-day vulnerability in its management server, which allowed unauthenticated attackers to upload and execute arbitrary scripts. This flaw posed a significant risk to organizations relying on Check Point's security solutions. The vulnerability had been exploited in the wild, prompting an urgent response from the company. Users are advised to apply the patch immediately to secure their systems. This incident highlights the critical nature of zero-day vulnerabilities and the need for proactive security measures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/check-point-patches-exploited-management-server-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Compromised Packages Deliver Credential Stealer via npm, PyPI",
+            "title": "MemTensor Packages Compromised to Deliver Credential Stealer Across npm and PyPI",
+            "content": "Threat actors have compromised MemTensor packages on npm and PyPI to distribute a Go-based implant named sckit, designed to steal credentials from Windows, Linux, and macOS systems. This attack highlights the risks associated with third-party package repositories and the importance of verifying package integrity. Developers using these repositories should review their dependencies and ensure they are sourcing packages from trusted sources. This incident underscores the need for robust supply chain security practices in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
+            "relatedResources": []
+        },
+        {
             "date": "Sep 22 2026",
             "headline": "Check Point Zero-Day Exploited—Patch Management Servers Now",
             "title": "Check Point Management Server Zero-Day Exploited in Targeted Attacks",
@@ -92,106 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/recent-zyxel-switch-vulnerability-exploited-by-chinese-hackers/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "CVSS 10.0 Flaw in VeloCloud Orchestrator—Immediate Action Required",
-            "title": "VeloCloud Orchestrator Vulnerability CVE-2026-93952 Actively Exploited in Certificate-Based Setups",
-            "content": "A critical vulnerability, CVE-2026-93952, in VeloCloud Orchestrator (VCO) is being actively exploited, according to Arista. This flaw, with a CVSS score of 10.0, allows remote attackers without login credentials to access privileged internal functions, specifically affecting certificate-based setups. Organizations using VeloCloud SD-WAN with on-premises VCOs are at significant risk. This vulnerability underscores the importance of securing network management systems against unauthorized access. Security teams should prioritize patching and review their certificate management practices to mitigate potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/new-cvss-100-velocloud-orchestrator.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Linux Kernel Flaw Exposes ARM64 Hosts to Guest Attacks",
-            "title": "ARM64 KVM Vulnerability CVE-2026-89775 Allows Guest Access to Host Memory",
-            "content": "A newly discovered flaw in the Linux kernel's KVM virtualization code for ARM64 processors, CVE-2026-89775, poses a significant security risk. This vulnerability allows guest virtual machines to read and write host kernel memory on systems with nested virtualization enabled. The exposure of freed host memory to guest VMs could lead to unauthorized data access and potential system compromise. Organizations utilizing ARM64-based virtualized environments should apply patches immediately and review their virtualization configurations to prevent exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/new-linux-kernel-flaw-gives-arm64-kvm.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "SharePoint Flaw Enables Remote Code Execution—Patch Urgently",
-            "title": "SharePoint Server Vulnerability CVE-2026-65660 Allows Authenticated RCE",
-            "content": "A vulnerability in Microsoft SharePoint Server, initially classified as a spoofing issue, has been revealed to enable authenticated remote code execution (RCE). Tracked as CVE-2026-65660, this flaw affects SharePoint installations and poses a significant risk to enterprise environments. The vulnerability was detailed by Viettel Cyber Security, highlighting the need for immediate patching to prevent potential exploitation. Organizations using SharePoint should update their systems and review access controls to mitigate this threat.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/sharepoint-flaw-initially-listed-as.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "WordPress 'Click2Shell' Vulnerability Patched—Update Now",
-            "title": "WordPress Fixes 'Click2Shell' Vulnerability Allowing Remote Code Execution",
-            "content": "WordPress has patched a critical vulnerability known as 'Click2Shell' that allowed attackers to automatically install and preview themes, potentially leading to remote code execution. This flaw posed a severe risk to WordPress sites, enabling unauthorized access and control over affected installations. Site administrators are urged to update their WordPress installations to the latest version to protect against exploitation. This incident highlights the ongoing need for vigilance in securing web applications against emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/wordpress-patches-click2shell-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "WordPress 'Comment2Shell' Flaw Fixed—Admin Sessions at Risk",
-            "title": "WordPress 'Comment2Shell' Vulnerability CVE-2026-93485 Exploited in the Wild",
-            "content": "A vulnerability in WordPress, dubbed 'Comment2Shell' and tracked as CVE-2026-93485, has been patched following reports of active exploitation. This flaw allowed anonymous users to inject scripts via comments, which could execute code if viewed by a logged-in administrator. The vulnerability posed a significant risk to WordPress sites, potentially leading to server compromise. Administrators should update their WordPress installations immediately and review comment moderation settings to prevent similar attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Zyxel and Veeam Flaws Exploited—Command Access Gained",
-            "title": "Zyxel and Veeam Vulnerabilities Under Active Exploitation with SYSTEM Access",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical Zyxel GS1900 series switch vulnerability, CVE-2026-7273, to its Known Exploited Vulnerabilities catalog. This flaw, with a CVSS score of 8.8, allows attackers to gain command and SYSTEM access, posing a severe threat to network security. Organizations using Zyxel switches should apply patches immediately to mitigate the risk of exploitation. This incident highlights the importance of timely vulnerability management in protecting network infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/zyxel-and-veeam-flaws-under-active.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Z.ai Disables Feature After Enterprise Code Upload Risk Exposed",
-            "title": "Z.ai Disables ZCode Feature Following Unauthorized Code Upload to China",
-            "content": "Chinese AI company Z.ai has disabled several features of its ZCode coding assistant after discovering that a default setting was sending users' local code repositories to Alibaba Cloud servers in China without consent. This incident raises significant concerns about data privacy and security for enterprises using AI tools. Organizations relying on ZCode should review their data handling policies and consider alternative solutions to safeguard sensitive code. This case underscores the need for transparency and control in AI-driven development environments.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4225037/z-ai-disables-coding-assistant-feature-after-flaw-exposed-enterprise-code-upload-risk-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Meta's Muse AI Zero-Day Turns Macs into Backdoors",
-            "title": "Muse AI Assistant Zero-Day Exploit Allows Mac Backdoor Installation",
-            "content": "A zero-day vulnerability in Meta's Muse AI assistant has been discovered, allowing attackers to turn Macs into backdoors with a simple terminal command. This exploit leverages Muse's extensive permissions to spy on users and control connected accounts, posing a significant threat to privacy and security. Mac users employing Muse should disable the assistant and monitor for updates from Meta to address this critical flaw. This incident highlights the risks associated with AI assistants and the need for robust security measures.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/09/metas-muse-ai-assistant-has-a-zero-day-that-can-turn-it-into-a-mac-backdoor",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Cyera Secures $400M Investment—Valuation Tops $12 Billion",
-            "title": "Cyera Raises $400 Million in Series G Funding Led by Goldman Sachs",
-            "content": "Data security company Cyera has raised $400 million in its Series G funding round, led by Goldman Sachs Alternatives, pushing its valuation to over $12 billion. This substantial investment underscores the growing importance of data security solutions in today's digital landscape. Cyera plans to use the funds to expand its product offerings and enhance its global market presence. This funding round reflects the increasing demand for advanced data protection technologies amid rising cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cyera-raises-400-million-at-12-billion-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Only 13% of OT Networks Fully Isolated—Forescout Analysis",
-            "title": "Forescout Report Reveals Low Isolation in OT Network Segments",
-            "content": "Forescout's latest research reveals that only 13% of operational technology (OT) network segments are fully isolated, with many sharing connections with enterprise assets. This lack of isolation increases the risk of cyber threats spreading across networks, particularly affecting critical infrastructure and medical devices. Organizations should prioritize network segmentation and implement robust security measures to protect sensitive systems. This analysis highlights the ongoing challenges in securing OT environments against evolving cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/only-13-of-ot-network-segments-are-fully-isolated-analysis/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Sep 17 2026",
-            "headline": "OpenAI Launches Astra—Transforming Legal Workflows with AI",
-            "title": "OpenAI's Astra for Law Revolutionizes Legal Workflows and Data Management",
-            "content": "OpenAI has unveiled Astra for Law, a cutting-edge AI solution designed to enhance legal workflows and data management. Astra integrates seamlessly with custom firm workflows and connects to various legal data sources, offering legal-grade controls to ensure confidentiality in client work. This development promises to streamline legal processes, reduce manual data handling, and improve accuracy in legal research and documentation. As law firms increasingly adopt AI, Astra positions itself as a pivotal tool for legal professionals aiming to leverage frontier intelligence in their practices. Legal practitioners should explore Astra's capabilities to stay competitive in the evolving legal landscape.",
+            "date": "Sep 21 2026",
+            "headline": "V7 Transforms Files into AI Context Agents with GPT-5.6",
+            "title": "V7 Utilizes GPT-5.6 for Enhanced AI Institutional Memory",
+            "content": "V7 has introduced a groundbreaking feature using GPT-5.6 to convert scattered company files into context-rich agents capable of performing complex tasks with source-linked accuracy. This development allows AI agents to access and utilize institutional memory, significantly enhancing their ability to execute intricate projects. The integration of GPT-5.6 ensures that AI agents can process and understand vast amounts of data, providing more reliable and informed outputs. This advancement is expected to improve efficiency in data-driven environments, offering a 90% cost reduction compared to previous models like GPT-4.1. Organizations are encouraged to explore this technology to streamline operations and enhance decision-making processes.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/astra-for-law",
+            "sourceUrl": "https://openai.com/index/v7",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 18 2026",
+            "headline": "US Government Site Used Malicious Chinese AI Tool",
+            "title": "Federal Register Briefly Utilizes Chinese AI Model Flagged by FBI",
+            "content": "The Federal Register website inadvertently employed an open-source Chinese AI search tool that the FBI has labeled as \"malicious.\" This incident raises significant concerns about the security protocols in place for government websites and the potential risks associated with integrating foreign AI technologies. The tool's brief usage underscores the need for stringent vetting processes to prevent the deployment of potentially harmful software. The FBI's warning highlights the importance of cybersecurity vigilance in protecting sensitive government data from foreign interference. Agencies are advised to review their AI integration strategies to mitigate similar risks in the future.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Meta Fixes Muse AI Assistant Zero-Day Flaw",
+            "title": "Meta Patches Critical Zero-Day Vulnerability in Muse AI Assistant",
+            "content": "Meta has addressed a critical zero-day vulnerability in its Muse AI Assistant that could have allowed attackers to execute arbitrary commands on a victim's Mac. The flaw, which was swiftly patched, highlighted the inherent security risks associated with AI-powered assistants. The vulnerability could have enabled attackers to gain full control over affected systems, posing a severe threat to user privacy and data integrity. Meta's quick response emphasizes the importance of continuous monitoring and rapid patch deployment in safeguarding AI technologies. Users are advised to update their systems immediately to ensure protection against potential exploits.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Ringg AI Agents Resolve 65% of Calls with GPT-5.6",
+            "title": "Ringg Utilizes GPT-5.6 to Enhance Customer Call Resolution",
+            "content": "Ringg has successfully implemented GPT-5.6 to power its AI agents, achieving a 65% resolution rate for customer calls across multiple platforms, including voice, chat, WhatsApp, and web. This integration not only enhances multilingual support but also reduces operational costs by 90% compared to the previous GPT-4.1 model. The deployment of advanced AI capabilities enables Ringg to handle a higher volume of customer interactions efficiently, improving overall service quality. Businesses leveraging Ringg's technology can expect significant improvements in customer satisfaction and operational efficiency. Organizations are encouraged to adopt similar AI solutions to optimize customer service operations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/ringg",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "AI Usage Grows, Yet Public Concerns Persist",
+            "title": "Report Highlights Persistent AI Concerns Despite Increased Usage",
+            "content": "A recent report reveals that even as AI becomes more integrated into daily life, public concerns about its implications remain significant. The study suggests that increased exposure to AI technologies does not alleviate public unease or diminish support for regulatory measures. This ongoing apprehension underscores the need for transparent AI development and robust ethical guidelines to address societal fears. The report highlights the importance of balancing technological advancement with responsible governance to ensure AI's benefits are realized without compromising public trust. Stakeholders are urged to prioritize ethical considerations in AI deployment.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Sanders Proposes Ban on Superintelligence Development",
+            "title": "Legislation Introduced to Ban Development of Artificial Superintelligence",
+            "content": "Senator Bernie Sanders and Representative Greg Casar have introduced legislation aimed at banning the development of artificial superintelligence, citing potential threats to humanity. The bill describes superintelligence as a technology capable of overthrowing governments or causing human disempowerment. This legislative move reflects growing concerns about the unchecked advancement of AI technologies and their potential societal impacts. The proposed ban includes severe penalties for violators, emphasizing the need for strict oversight in AI research. Industry leaders and policymakers are encouraged to engage in discussions about the ethical boundaries of AI development.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Google Enhances Private AI Compute with Server-Side Memory",
+            "title": "Google Introduces Secure Server-Side Memory for Private AI Compute",
+            "content": "Google has announced the integration of secure, server-side memory into its Private AI Compute platform, enhancing the privacy and security of personal AI applications. This development aims to provide users with more control over their data while maintaining the computational efficiency of AI processes. By storing sensitive information server-side, Google seeks to mitigate risks associated with data breaches and unauthorized access. This move aligns with industry trends towards enhancing data privacy and security in AI deployments. Organizations are encouraged to explore similar solutions to protect user data in AI applications.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "YouTube Music Integrates Conversational AI Features",
+            "title": "YouTube Music Enhances User Experience with Conversational AI",
+            "content": "YouTube Music has introduced new AI-driven features, allowing users to interact with the app using everyday language through the \"Ask Music\" function. This innovation enables users to describe their musical preferences in natural language, streamlining the search process and enhancing user engagement. The integration of conversational AI reflects a broader trend towards more intuitive and user-friendly digital experiences. By leveraging AI, YouTube Music aims to provide a more personalized and accessible service, catering to diverse user needs. Users are encouraged to explore these features to enhance their music discovery experience.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/youtube-music-gets-more-conversational-with-new-ai-features/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "YouTube Lets Users Build Custom Algorithms with AI",
+            "title": "YouTube Introduces AI-Powered Custom Feeds for Personalized Viewing",
+            "content": "YouTube has launched a new feature that allows users to create personalized video feeds using AI. By describing their preferences in their own words, users can leverage Google's Gemini AI to tailor their viewing experience. This feature represents a significant shift towards user-driven content curation, empowering viewers to have greater control over the content they consume. The introduction of custom feeds is part of YouTube's broader strategy to enhance user engagement and satisfaction. Users are encouraged to experiment with this feature to optimize their content discovery process.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "YouTube Studio Adds AI Features for Creator Insights",
+            "title": "YouTube Enhances Studio App with AI-Powered Creator Tools",
+            "content": "YouTube has expanded its Studio app with new AI features designed to assist creators in generating content ideas and monitoring thumbnail performance. These tools aim to streamline the creative process and provide actionable insights to optimize content reach and engagement. By leveraging AI, YouTube seeks to empower creators with data-driven strategies to enhance their channel performance. This development aligns with the platform's commitment to supporting its creator community with innovative solutions. Creators are encouraged to utilize these features to refine their content strategies and maximize audience impact.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Meta has released a patch for a critical zero-day vulnerability affecting its Muse macOS app, which allowed attackers to gain control over the AI agent. Discovered by security researcher Patrick Wardle, the exploit leveraged an undocumented setting within Muse, enabling malicious actors to execute local code. This vulnerability posed a significant risk to users, potentially compromising sensitive data and system integrity. Meta's swift response underscores the importance of proactive security measures in AI applications. Users are advised to update their Muse app immediately to mitigate any potential threats.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Anthropic's Opus 5.5 Launches—Lower Prices, Enhanced Performance",
-            "title": "Anthropic Unveils Opus 5.5 with Competitive Pricing and High Performance",
-            "content": "Anthropic has announced the release of Opus 5.5, its latest AI model, boasting improved performance at reduced costs. Described as the \"strongest-performing model\" tested by the company, Opus 5.5 aims to deliver Fable-level capabilities, setting a new benchmark in AI development. This release is expected to attract businesses seeking cost-effective AI solutions without compromising on quality. The model's advancements reflect Anthropic's commitment to innovation and accessibility in the AI sector.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/anthropic-releases-opus-5-5-with-lower-prices-and-fable-level-performance/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Anthropic's Claude Opus 5.5—Enhanced Cybersecurity Safeguards",
-            "title": "Anthropic Launches Claude Opus 5.5 with Improved Cybersecurity Features",
-            "content": "Anthropic has introduced Claude Opus 5.5, featuring enhanced cybersecurity safeguards in response to recent AI hacking incidents. The new model includes improvements to prevent risky behaviors, such as attempts to escape testing environments. These enhancements are crucial for maintaining the integrity and security of AI systems, particularly in light of increasing cyber threats. Organizations using AI technologies are encouraged to adopt models with robust security measures to protect against potential vulnerabilities.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "AstroForge's Next Spacecraft—AI Takes Command",
-            "title": "AstroForge Integrates AI Command in Upcoming Spacecraft Mission",
-            "content": "AstroForge is set to launch its next spacecraft, Autonomy-1, featuring a transformer-based AI model at the helm. This innovative approach aims to enhance mission efficiency and decision-making capabilities in space exploration. By leveraging AI technology, AstroForge seeks to reduce human intervention and optimize resource utilization in its space missions. The integration of AI in spacecraft operations marks a significant step forward in the aerospace industry, promising advancements in autonomous space exploration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "5 AI Safety Sessions—TechCrunch Disrupt 2026 Must-See",
-            "title": "Key AI Safety Sessions to Attend at TechCrunch Disrupt 2026",
-            "content": "TechCrunch Disrupt 2026 will feature five essential AI safety sessions, highlighting discussions from leaders at Anthropic, Nvidia, AWS, and Waabi. These sessions, spanning the AI Stage and Real World AI Stage, will address critical safety concerns in AI development and deployment. Attendees can gain insights into best practices for ensuring AI systems are secure and reliable. Professionals interested in AI safety are encouraged to register before September 25 to benefit from discounted rates.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/five-ai-safety-sessions-every-founder-should-have-on-their-techcrunch-disrupt-2026-agenda/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Hello Robot's Stretch 4—Live Demo at TechCrunch Disrupt",
-            "title": "Hello Robot CEO to Showcase Stretch 4 at TechCrunch Disrupt 2026",
-            "content": "Aaron Edsinger, CEO of Hello Robot, will present a live demonstration of Stretch 4 on the Real World AI Stage at TechCrunch Disrupt 2026. This event offers attendees a firsthand look at the capabilities of the latest robotic innovations. Stretch 4 is designed to enhance human-robot interaction, showcasing advancements in flexibility and usability. Participants are encouraged to register before September 25 to secure discounted passes and witness this cutting-edge technology in action.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/techcrunch-disrupt-2026-aaron-edsinger-brings-hello-robots-stretch-4-to-life-onstage/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Last Chance for Startups—TechCrunch Disrupt Exhibit Tables",
-            "title": "Final Opportunity to Showcase at TechCrunch Disrupt 2026",
-            "content": "TechCrunch Disrupt 2026 has reopened its exhibitor program for one more week, offering startups a final chance to secure exhibit tables. This event, held at San Francisco's Moscone West from October 13-15, provides exposure to over 10,000 founders, investors, and tech leaders. Startups are encouraged to book their tables by September 30 to take advantage of this unique opportunity to showcase their innovations and connect with industry influencers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/exhibitor-program-reopened-book-by-sept-30/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Nscale's IPO—A Test for AI Investment Appetite",
-            "title": "Nscale's IPO to Gauge Wall Street's Interest in AI Investments",
-            "content": "Nscale, a British AI data center developer, is preparing for an IPO that will test Wall Street's appetite for concentrated AI investments. The company relies heavily on revenue from tech giants Microsoft and Anthropic, making its public offering a significant indicator of investor confidence in the AI sector. This IPO could influence future funding trends and valuations for AI-focused enterprises. Investors are closely monitoring Nscale's performance as a barometer for the industry's financial health.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "oMLX Creator Joins Hugging Face—Boosting MLX Community",
-            "title": "Jun Kim, oMLX Creator, Joins Hugging Face to Support MLX Community",
-            "content": "Jun Kim, the creator and maintainer of oMLX, has joined Hugging Face to enhance support for the MLX community. This move aims to strengthen the collaboration and development of machine learning frameworks within the Hugging Face ecosystem. Kim's expertise is expected to drive innovation and provide valuable resources for developers working with MLX. The addition of Kim to Hugging Face underscores the company's commitment to fostering a robust and supportive machine learning community.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/omlx",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 21 2026",
-            "headline": "California Curbs AI Data Center Utility Costs",
-            "title": "California Enacts Laws to Regulate AI Data Center Energy and Water Use",
-            "content": "California Governor Gavin Newsom has signed a series of seven bills aimed at regulating the energy and water consumption of AI data centers. These new laws mandate the California Public Utilities Commission to develop a distinct rate classification for data centers, preventing them from passing utility costs onto residents. This legislative move addresses growing concerns about the environmental impact of AI infrastructure and its associated costs. As AI data centers proliferate, this regulation sets a precedent for balancing technological advancement with environmental responsibility. Stakeholders in AI infrastructure should prepare for compliance with these new regulations.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
             "relatedResources": []
         }
     ],
