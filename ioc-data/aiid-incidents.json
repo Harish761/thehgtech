@@ -17,6 +17,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1705",
+      "incident_id": 1705,
+      "title": "Sedgwick, Kansas, Police Chief Reportedly Used Flock Safety License-Plate Readers 228 Times to Track",
+      "date": "2026-09-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1702",
       "incident_id": 1702,
       "title": "Russia-Linked Matryoshka Influence Operation Reportedly Used AI-Cloned Celebrity Voices and Fabricat",
@@ -3295,20 +3303,12 @@
       "date": "2026-06-26",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1556",
-      "incident_id": 1556,
-      "title": "X User Reportedly Used Morse Code Prompt to Induce Grok-Linked Trading Bot to Transfer $200,000 in T",
-      "date": "2026-06-25",
-      "category": "prompt_injection",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 413,
-    "last7Days": 13,
-    "last30Days": 328
+    "last7Days": 14,
+    "last30Days": 329
   },
-  "lastUpdated": "2026-09-24T01:08:21.279266+05:30"
+  "lastUpdated": "2026-09-24T03:11:29.069196+05:30"
 }
