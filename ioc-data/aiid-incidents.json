@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1707",
+      "incident_id": 1707,
+      "title": "OpenAI AI Agent Reportedly Gained Unauthorized Access to Australian Medicare Statistics Portal Durin",
+      "date": "2026-09-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1703",
       "incident_id": 1703,
       "title": "Harris County, Texas, Deputies Reportedly Detained Two 19-Year-Olds at Gunpoint After Flock Safety L",
@@ -3298,9 +3306,9 @@
     }
   ],
   "stats": {
-    "total": 412,
-    "last7Days": 15,
-    "last30Days": 330
+    "total": 413,
+    "last7Days": 13,
+    "last30Days": 325
   },
-  "lastUpdated": "2026-09-24T19:00:24.085394+05:30"
+  "lastUpdated": "2026-09-25T01:27:58.420154+05:30"
 }
