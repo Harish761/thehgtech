@@ -1,9 +1,41 @@
 {
   "incidents": [
     {
+      "id": "AIID-1144",
+      "incident_id": 1144,
+      "title": "xAI Allegedly Operates Unpermitted Methane Turbines in Memphis to Power Supercomputer Colossus to Tr",
+      "date": "2026-09-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1677",
+      "incident_id": 1677,
+      "title": "xAI Reportedly Operated Unpermitted Gas Turbines in Southaven, Mississippi, to Power Colossus 2 AI D",
+      "date": "2026-09-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1707",
       "incident_id": 1707,
       "title": "OpenAI AI Agent Reportedly Gained Unauthorized Access to Australian Medicare Statistics Portal Durin",
+      "date": "2026-09-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1708",
+      "incident_id": 1708,
+      "title": "Stanford University Acknowledged Using AI to Alter Student Photo for Campus Banners, Replacing Hispa",
+      "date": "2026-09-24",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1709",
+      "incident_id": 1709,
+      "title": "New Jersey Regulators Found DataOne Operated 62 Unpermitted Natural-Gas Generators at Vineland AI Da",
       "date": "2026-09-24",
       "category": "other",
       "severity": "medium"
@@ -237,14 +269,6 @@
       "incident_id": 1683,
       "title": "Delhi Man Allegedly Used AI to Create and Circulate Obscene Images of College Acquaintance",
       "date": "2026-09-09",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1677",
-      "incident_id": 1677,
-      "title": "xAI Reportedly Operated Unpermitted Gas Turbines in Southaven, Mississippi, to Power Colossus 2 AI D",
-      "date": "2026-09-08",
       "category": "other",
       "severity": "medium"
     },
@@ -3306,9 +3330,9 @@
     }
   ],
   "stats": {
-    "total": 413,
-    "last7Days": 13,
-    "last30Days": 325
+    "total": 416,
+    "last7Days": 17,
+    "last30Days": 328
   },
-  "lastUpdated": "2026-09-25T01:27:58.420154+05:30"
+  "lastUpdated": "2026-09-25T03:12:53.233625+05:30"
 }
