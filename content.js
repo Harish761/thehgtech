@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 23 2026",
+            "headline": "F5 BIG-IP Zero-Day Exploited—Remote Code Execution Risk",
+            "title": "Critical F5 BIG-IP Vulnerability Exploited as Zero-Day",
+            "content": "A critical zero-day vulnerability in F5's BIG-IP platform has been actively exploited, allowing unauthenticated attackers to send malicious traffic and achieve remote code execution. This flaw affects systems configured with the BIG-IP Access Policy Manager (APM) as OAuth authorization servers. The vulnerability poses a significant risk to enterprises relying on BIG-IP for secure access management. Organizations using affected versions should apply the latest patch immediately to mitigate potential breaches. This incident underscores the growing trend of exploiting network infrastructure vulnerabilities for unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-f5-big-ip-vulnerability-exploited-as-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Check Point Firewall Vulnerabilities Exploited—Enterprise Networks at Risk",
+            "title": "Check Point Hacked: Security Software Becomes Attack Target",
+            "content": "Check Point has disclosed active exploitation of two vulnerabilities in its Security Gateway and Security Management products, turning its firewall solutions into tools for threat actors. These vulnerabilities compromise the fundamental security barrier meant to protect enterprise networks. Organizations using these products should prioritize patching to prevent unauthorized access and potential data breaches. This incident highlights the critical importance of maintaining up-to-date security measures even within trusted security products.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4225812/check-point-hacked-the-security-software-protecting-your-network-has-become-a-prime-attack-target.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "GitLab Email Vulnerability Enables Supply Chain Attacks",
+            "title": "GitLab Email Addresses Can Be Weaponized for Supply Chain Attacks",
+            "content": "A vulnerability in GitLab's platform allows attackers to exploit automatically assigned email addresses containing privileged access tokens. These tokens can be used to compromise supply chains by impersonating users and executing unauthorized actions. The flaw poses a significant threat to organizations relying on GitLab for software development and collaboration. Immediate action is recommended to secure email configurations and monitor for suspicious activities. This incident emphasizes the need for robust security practices in managing development environments.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "F5 Patches Exploited Zero-Day in BIG-IP APM",
+            "title": "F5 Fixes Actively Exploited Zero-Day Flaw in BIG-IP APM",
+            "content": "F5 has released a patch for a critical zero-day vulnerability in its BIG-IP Access Policy Manager (APM) platform, which was under active exploitation. The flaw, affecting systems configured as OAuth authorization servers, allowed remote code execution. Organizations using BIG-IP APM should apply the patch immediately to prevent potential breaches. This vulnerability highlights the ongoing challenges in securing complex network infrastructure against sophisticated attacks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4225721/f5-fixes-actively-exploited-zero-day-flaw-in-big-ip-apm.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Pentagon Cyber Operations Demand Outstrips Supply",
+            "title": "Pentagon Cyber Chief: The Demand Far Exceeds Supply",
+            "content": "At the recent DefenseTalks, Pentagon cyber chief Katie Sutton revealed that the demand for cyber operations has surpassed the available supply, eight years after the Pentagon gained authority over such operations. This imbalance highlights the increasing reliance on cyber capabilities in national defense strategies. The Pentagon faces challenges in scaling its cyber workforce to meet growing operational demands. This situation underscores the need for strategic investments in cyber talent and resources.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/pentagon-cyber-operations-demand-exceeds-supply-defensetalks-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Terraform Providers Misused to Spread Go Malware",
+            "title": "Attackers Use Malicious Terraform Providers to Deliver Go Malware",
+            "content": "Cybersecurity researchers have uncovered the use of malicious Terraform providers to distribute Go-based malware via the HashiCorp registry. This marks the first known instance of threat actors leveraging the centralized repository for malicious payload distribution. Organizations using Terraform should scrutinize provider sources and implement strict security controls to prevent malware infiltration. This development highlights the evolving tactics of threat actors in exploiting popular development tools for cyber attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Ryuk Ransomware Operator Sentenced in U.S. Court",
+            "title": "Ryuk Ransomware Operator Sentenced to 2 Years in Prison",
+            "content": "An Armenian national involved in the Ryuk ransomware operations has been sentenced to two years in prison after being extradited from Ukraine to the United States. The individual pleaded guilty to cybercrimes, marking a significant legal action against ransomware operators. This sentencing serves as a warning to cybercriminals and highlights international cooperation in combating ransomware threats. Organizations are reminded to bolster their defenses against ransomware attacks.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ryuk-ransomware-operator-karen-vardanyan-sentenced/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "AI-Driven Malware Uses Model Voting for Actions",
+            "title": "Windows Malware Uses AI Models to Decide Attack Moves",
+            "content": "CLOSEDQUORUM, a Windows malware, employs a novel approach by using up to four AI models to vote on its next actions, rather than relying on a command-and-control server. This setup allows the malware to autonomously decide whether to steal Windows credentials, browser passwords, or crypto wallet data. The use of AI in malware operations represents a concerning trend in cyber threats, requiring enhanced detection and response capabilities. Security teams should prioritize AI-driven threat intelligence to counteract such sophisticated attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "cPanel Flaw Allows Root Access—Full Server Control Risk",
+            "title": "New cPanel Flaw Lets a Hosting Account Run Code as Root",
+            "content": "A critical vulnerability in cPanel's CalDAV and CardDAV services allows users with a hosting account to execute code as root, potentially taking full control of the server. Additionally, a flaw in the WP Toolkit plugin enables unauthorized data manipulation. These vulnerabilities pose severe risks to web hosting environments, necessitating immediate patching and security audits. This incident underscores the importance of securing administrative interfaces and plugins in server management platforms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "XRanges for AI Evaluates Security Agent Effectiveness",
+            "title": "545 Hackers Tested It First. Now XRanges for AI Scores Your Security Agent",
+            "content": "XRanges for AI, a new tool, aims to evaluate the effectiveness of autonomous security agents by scoring their performance against realistic targets. This initiative addresses the challenge of measuring the accuracy and reliability of AI-driven security solutions. Organizations can leverage XRanges to assess and improve their security posture by identifying strengths and weaknesses in their AI deployments. This development reflects the growing need for standardized metrics in evaluating AI security technologies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/545-hackers-tested-it-first-now-xranges.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
             "headline": "MikroTik Routers Vulnerable—Admin Control Without Password",
             "title": "MikroTrick Exploit Allows Full Control of MikroTik Routers Without Authentication",
             "content": "A new exploit chain, dubbed MikroTrick, has been identified in MikroTik RouterOS, allowing attackers to gain full administrative control without needing a password or SSH key. The exploit combines two vulnerabilities: an SSH state-machine flaw (CVE-2026-67279) and another unspecified issue. This vulnerability affects internet-exposed routers, posing a significant risk to network security. CERT Polska has highlighted the critical nature of this flaw, urging immediate action. Network administrators should prioritize patching to prevent unauthorized access and potential data breaches.",
@@ -92,115 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Check Point Zero-Day Exploited—Patch Management Servers Now",
-            "title": "Check Point Management Server Zero-Day Exploited in Targeted Attacks",
-            "content": "Check Point has disclosed a zero-day vulnerability, CVE-2026-93616, affecting its Security Management Server, which was exploited in targeted attacks on July 23. The flaw allows attackers to execute scripts on the server's web service without authentication. This vulnerability poses a significant risk to organizations relying on Check Point for security management, as it could lead to unauthorized access and control. Check Point has released patches to address this issue, and users are urged to update their systems immediately to mitigate potential threats. This incident underscores the importance of timely patch management in maintaining cybersecurity defenses.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "WordPress 7.1.2 Fixes Critical Code Execution Flaw",
-            "title": "WordPress Patches Critical Flaw Allowing Remote Code Execution",
-            "content": "WordPress has released version 7.1.2 to patch a critical vulnerability that allows unauthenticated attackers to execute code on affected servers. The flaw enables attackers to load a PHP file from outside the theme folders, potentially leading to remote code execution. This vulnerability affects websites running on certain server configurations, posing a severe risk of compromise. Administrators are advised to update to the latest version immediately to protect their sites from potential exploitation. This update highlights the ongoing need for vigilance in maintaining website security through regular updates.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/wordpress-issues-patch-for-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "BigCommerce Data Breach via Ribon Apps Hack",
-            "title": "BigCommerce Customer Data Compromised Through Ribon Apps Hack",
-            "content": "A security breach involving BigCommerce has been traced back to a compromised application key held by Ribon, leading to unauthorized access to customer data. This incident highlights the vulnerabilities associated with third-party integrations and the potential risks they pose to data security. BigCommerce users are advised to review their security settings and monitor for any unusual activity. This breach underscores the importance of securing API keys and conducting regular security audits to prevent unauthorized access to sensitive information.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bigcommerce-data-stolen-via-ribon-apps-hack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Bifrost AI Gateway Flaw—Command Execution Without Credentials",
-            "title": "Critical Bifrost AI Gateway Vulnerability Allows Unauthorized Command Execution",
-            "content": "A critical vulnerability, CVE-2026-90898, has been identified in Bifrost, an open-source AI gateway, allowing unauthenticated attackers to execute arbitrary commands with a single HTTP request. This flaw affects all versions of Bifrost and poses a significant threat to systems using the gateway to route requests to over 20 large language model providers. Organizations using Bifrost are urged to apply available patches immediately to prevent potential exploitation. This vulnerability, with a CVSS score of 9.8, highlights the critical need for robust security measures in AI infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/critical-bifrost-ai-gateway-flaw-lets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "BigDiskBuster Zero-Day Blocks Microsoft Defender Updates",
-            "title": "Researcher Releases BigDiskBuster Zero-Day Blocking Defender Updates",
-            "content": "A zero-day tool named BigDiskBuster has been released, exploiting a flaw that prevents Microsoft Defender from installing updates by filling disk space. This tool, published by Abdelhamid Naceri on GitHub, currently lacks a patch or CVE designation, leaving systems vulnerable. Security professionals should monitor disk usage closely and consider alternative security measures until Microsoft addresses the issue. This development highlights the ongoing challenges in maintaining endpoint security and the need for proactive monitoring.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "$100M AI-Cyber Test Program Proposed by Capitol Hill",
-            "title": "Capitol Hill Proposes $100M AI-Cybersecurity Test Program for Infrastructure",
-            "content": "In response to recent cyberattacks on critical infrastructure, a bipartisan group in the U.S. House of Representatives has proposed a $100 million pilot program. This initiative, separate from an existing administration proposal, aims to enhance cybersecurity for infrastructure owners and operators using AI technologies. The program seeks to bolster defenses against sophisticated threats targeting essential services. Stakeholders in critical infrastructure sectors should stay informed about this proposal's progress and potential opportunities for participation. This move reflects growing recognition of AI's role in cybersecurity.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/gottheimer-ai-cyber-defense-act-cisa-pilot/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Shai-Hulud Attack Compromises CrowdSec's GitHub Repositories",
-            "title": "Shai-Hulud Attack Exposes CrowdSec's GitHub Data via OAuth Token",
-            "content": "The Shai-Hulud attack has resulted in the theft of 170 private repositories from CrowdSec's GitHub account. The breach was facilitated through an OAuth token stolen from a former employee's computer, linked to the TanStack npm supply chain attack. This incident highlights the risks associated with supply chain vulnerabilities and the importance of securing access tokens. Organizations are advised to review their access controls and implement robust monitoring to detect unauthorized access. This attack underscores the need for vigilance in protecting software development environments.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/shai-hulud-attack-cyber-firm-crowdsec-github-data",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Malicious npm Package Targets Twilio Developers—Exfiltrates Credentials",
-            "title": "Malicious npm Package Masquerades as Twilio Bug-Bounty Tool",
-            "content": "A malicious npm package named \"tw-pkgprobe-7731\" has been discovered, posing as a security tool for developers integrating Twilio. The package attempts to harvest sensitive data, including credentials, under the guise of a bug-bounty probe. Developers using Twilio are urged to verify their npm dependencies and remove any suspicious packages immediately. This incident highlights the ongoing threat of malicious packages in open-source ecosystems and the importance of scrutinizing third-party code. Vigilance in package management is crucial to safeguarding sensitive information.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/malicious-npm-package-poses-as-twilio.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Microsoft Dismantles EvilTokens Phishing Service—12,000 Inboxes Compromised",
-            "title": "Microsoft Takes Down EvilTokens Phishing Service Using AI",
-            "content": "Microsoft has successfully dismantled the EvilTokens phishing service, which compromised 12,000 inboxes using AI-driven tactics. The takedown, authorized by the U.S. District Court for the Eastern District of Virginia, involved disrupting the service's infrastructure. EvilTokens utilized AI at every stage of its attack chain, demonstrating the increasing sophistication of phishing operations. Organizations are encouraged to enhance their email security measures and remain vigilant against evolving threats. This action underscores the critical role of AI in both cyber offense and defense.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Chinese Hackers Exploit ZyXEL Switch Vulnerability",
-            "title": "Recent ZyXEL Switch Vulnerability Exploited by Chinese Threat Actor",
-            "content": "A vulnerability in ZyXEL switches has been exploited by a Chinese threat actor, leading to the exfiltration of sensitive information from nearly 1,000 devices. This exploitation underscores the ongoing targeting of network infrastructure by state-sponsored groups. Organizations using ZyXEL switches should apply available patches and enhance network monitoring to detect suspicious activities. This incident highlights the persistent threat posed by nation-state actors and the importance of securing network hardware against exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/recent-zyxel-switch-vulnerability-exploited-by-chinese-hackers/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Sep 21 2026",
-            "headline": "V7 Transforms Files into AI Context Agents with GPT-5.6",
-            "title": "V7 Utilizes GPT-5.6 for Enhanced AI Institutional Memory",
-            "content": "V7 has introduced a groundbreaking feature using GPT-5.6 to convert scattered company files into context-rich agents capable of performing complex tasks with source-linked accuracy. This development allows AI agents to access and utilize institutional memory, significantly enhancing their ability to execute intricate projects. The integration of GPT-5.6 ensures that AI agents can process and understand vast amounts of data, providing more reliable and informed outputs. This advancement is expected to improve efficiency in data-driven environments, offering a 90% cost reduction compared to previous models like GPT-4.1. Organizations are encouraged to explore this technology to streamline operations and enhance decision-making processes.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/v7",
+            "date": "Sep 24 2026",
+            "headline": "Meta's Muse AI Expands to Smart Glasses—Zuckerberg Announces",
+            "title": "Meta's AI Agent Muse to Feature on New Smart Glasses",
+            "content": "At Meta's annual Connect event, CEO Mark Zuckerberg announced the integration of the Muse AI agent into the company's smart glasses. This move signifies Meta's commitment to enhancing wearable technology with AI capabilities. Users will soon be able to activate Muse directly from their glasses, allowing for hands-free task management and guidance. This development is part of Meta's broader strategy to embed AI into everyday devices, aiming to create seamless user experiences. The integration promises to make smart glasses more functional and appealing to tech-savvy consumers. Professionals should anticipate increased demand for AI-enhanced wearables.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
             "relatedResources": []
         },
         {
-            "date": "Sep 18 2026",
-            "headline": "US Government Site Used Malicious Chinese AI Tool",
-            "title": "Federal Register Briefly Utilizes Chinese AI Model Flagged by FBI",
-            "content": "The Federal Register website inadvertently employed an open-source Chinese AI search tool that the FBI has labeled as \"malicious.\" This incident raises significant concerns about the security protocols in place for government websites and the potential risks associated with integrating foreign AI technologies. The tool's brief usage underscores the need for stringent vetting processes to prevent the deployment of potentially harmful software. The FBI's warning highlights the importance of cybersecurity vigilance in protecting sensitive government data from foreign interference. Agencies are advised to review their AI integration strategies to mitigate similar risks in the future.",
+            "date": "Sep 24 2026",
+            "headline": "Meta Launches Tamagotchi-Like Wearable for Muse AI",
+            "title": "Meta Introduces Wearable Device for Muse AI Interaction",
+            "content": "Meta has unveiled a new wearable device designed to house its Muse AI agent, reminiscent of the classic Tamagotchi. This compact gadget offers an innovative way for users to interact with Muse on the go, providing a mobile platform for AI engagement. The device aims to make AI more accessible and integrated into daily life, reflecting Meta's strategy to diversify AI applications. By creating a physical presence for Muse, Meta hopes to enhance user interaction and engagement. Developers and tech leaders should consider the implications for AI-driven consumer products.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Meta Unveils Muse Charm—Standalone AI Gadget",
+            "title": "Meta's Muse Charm: A Dedicated Device for AI Interaction",
+            "content": "Meta is set to release the Muse Charm, a standalone device for its Muse AI agent, as revealed by CEO Mark Zuckerberg at the Meta Connect event. The Muse Charm resembles a chunky smartwatch sans strap, featuring a large screen for direct AI interaction. This development underscores Meta's push to create dedicated hardware for its AI solutions, aiming to enhance user experience and accessibility. The device is expected to appeal to tech enthusiasts seeking a dedicated AI companion. Industry professionals should monitor this trend towards specialized AI hardware.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Meta Debuts Camera-Free AI Glasses—12-Hour Battery Life",
+            "title": "Meta Introduces Lightweight, Camera-Free AI Glasses",
+            "content": "Meta has announced a new line of smart glasses that forego cameras, focusing instead on AI integration and extended battery life. These glasses promise up to 12 hours of usage, addressing privacy concerns associated with wearable surveillance technology. The move aligns with Meta's strategy to prioritize user privacy while enhancing AI capabilities in wearables. This development could reshape public perception of smart glasses, making them more acceptable to privacy-conscious consumers. Security professionals should note the shift towards privacy-centric design in wearable tech.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Meta's Muse AI Gets Video Chat, Email Capabilities",
+            "title": "Meta Enhances Muse AI with Video Chat and Email Features",
+            "content": "Meta is enhancing its Muse AI agent with new capabilities, including video chat and email functionalities. These updates aim to make Muse more versatile and user-friendly, allowing for richer interactions and task management. The addition of email addresses for Muse agents signifies a step towards more autonomous AI systems capable of handling complex tasks. This evolution in AI functionality reflects Meta's commitment to advancing AI technology for everyday use. Developers should explore the potential for integrating similar features into their AI solutions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Anthropic's Biology Lab Yields Promising Discoveries",
+            "title": "Anthropic's Biology Lab Reports Significant Findings",
+            "content": "Anthropic's biology lab has reported promising discoveries, although the AI model Claude has not been fully unleashed in the lab. Human oversight remains crucial, ensuring that AI advancements align with ethical standards. This cautious approach highlights the importance of maintaining human involvement in AI-driven research, particularly in sensitive fields like biology. The findings underscore the potential for AI to contribute to scientific breakthroughs while adhering to safety protocols. Researchers and tech leaders should consider the balance between AI innovation and ethical responsibility.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Experts Warn: AI Race with China Risks US Security",
+            "title": "Trump's AI Race Focus May Jeopardize US-China Relations",
+            "content": "Experts caution that former President Trump's emphasis on winning the \"AI race\" could strain US-China relations, potentially hindering collaboration on AI safety. The competitive rhetoric may deter China from sharing critical safety intelligence, posing risks to global AI security. This development highlights the geopolitical complexities of AI advancement and the need for cooperative international frameworks. Security professionals should be aware of the potential ramifications on global tech collaboration and innovation.",
             "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious/",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "YouTube to Roll Out AI-Powered Custom Feeds",
+            "title": "YouTube Plans AI-Driven Content Customization for 2027",
+            "content": "YouTube has announced plans to enhance its platform with AI-driven custom feeds and expanded livestream capabilities. These updates aim to personalize user experiences by leveraging AI to curate content more effectively. The focus on AI underscores YouTube's strategy to stay competitive in the evolving digital landscape. This shift could significantly impact content creators and advertisers, who must adapt to new algorithms and user engagement models. Tech professionals should prepare for changes in digital content distribution and consumption.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Enveda Raises $311M for AI-Driven Drug Trials",
+            "title": "Enveda Secures Funding to Advance AI-Powered Drug Development",
+            "content": "Enveda has raised $311 million to further its AI-driven drug development efforts, valuing the biotech company at $2 billion. The funding will support clinical trials for nature-derived drugs targeting skin conditions and weight loss maintenance post-GLP-1 therapy. This investment highlights the growing confidence in AI's potential to revolutionize pharmaceutical research and development. Industry stakeholders should note the increasing role of AI in accelerating drug discovery and clinical processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "Meta's Muse AI: Convenient but Costly",
+            "title": "Meta's Muse AI Agent Simplifies Tasks but Raises Spending Concerns",
+            "content": "Meta's Muse AI agent is designed to streamline daily tasks, but users report increased spending as a side effect. The AI's efficiency in managing to-do lists may inadvertently lead to higher consumer expenditure. This development raises questions about the balance between convenience and financial oversight in AI applications. Users and developers should be mindful of the potential for AI to influence consumer behavior and spending habits. The trend underscores the need for responsible AI design that considers user financial well-being.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
             "relatedResources": []
         },
         {
@@ -291,78 +363,6 @@ const websiteContent = {
             "content": "OpenAI is enlisting the expertise of elite mathematicians to form an independent advisory panel aimed at guiding the company through complex mathematical challenges. This move follows a series of reputational setbacks linked to mathematical errors in AI model development. The panel will provide insights to help OpenAI and other AI companies avoid similar pitfalls in the future. This initiative reflects OpenAI's commitment to enhancing the accuracy and reliability of its AI models, ensuring they meet rigorous academic and industry standards.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Snorkel AI Hits $3.5B Valuation Amid Data Demand Surge",
-            "title": "Snorkel AI's Valuation Triples to $3.5B as Data Demand Soars",
-            "content": "Snorkel AI has secured a $350 million Series E funding round, tripling its valuation to $3.5 billion. The seven-year-old startup specializes in data-as-a-service, addressing the growing demand for AI training data. This funding will enable Snorkel AI to expand its offerings and enhance its platform's capabilities, positioning it as a leader in the AI data market. As organizations increasingly rely on AI, the need for high-quality training data continues to drive investment in companies like Snorkel AI.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "GPT-6 Enhances Prompt Caching—Boosts Efficiency and Reduces Costs",
-            "title": "GPT-6 Introduces Advanced Prompt Caching for Improved Performance",
-            "content": "OpenAI's GPT-6 model introduces significant improvements in prompt caching, achieving higher cache hit rates and reducing latency and costs. The new features include enhanced diagnostics, explicit breakpoints, and controls that optimize performance. These advancements are designed to streamline AI operations, making GPT-6 more efficient for developers and businesses. By minimizing computational overhead, GPT-6 offers a more cost-effective solution for deploying AI applications at scale. Users are encouraged to explore these new capabilities to maximize their AI infrastructure's efficiency.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Rabbit's AI Agent Operates Without Proprietary Hardware",
-            "title": "Rabbit Unveils Cloud-Based AI Agent Compatible with Multiple OS",
-            "content": "Rabbit has launched a new AI agent that operates independently of its previously required R1 hardware. The OS3 \"agentic operating system\" runs in the cloud while functioning locally across Windows, Mac, and Linux devices. This development allows users to leverage Rabbit's AI capabilities without investing in specific hardware, broadening accessibility and reducing costs. As AI integration becomes more prevalent, Rabbit's approach offers a flexible solution for users seeking versatile AI tools.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Qualcomm Unveils AI-Enhanced Smartphone Chips—30B Model Capacity",
-            "title": "Qualcomm Launches AI-Focused Smartphone Chips with Advanced Capabilities",
-            "content": "Qualcomm has introduced two new smartphone chips designed to enhance AI processing capabilities. The flagship chip can locally run a 30 billion parameter mixture-of-expert model, significantly boosting on-device AI performance. This advancement allows for more complex AI tasks to be executed directly on smartphones, reducing reliance on cloud computing and enhancing user privacy. As mobile AI applications expand, Qualcomm's chips provide a powerful platform for developers to innovate and optimize AI-driven experiences.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Meta's Muse Mirrors OpenClaw—Acknowledges Design Inspiration",
-            "title": "Meta Confirms Muse AI Assistant Inspired by OpenClaw",
-            "content": "Meta has acknowledged that its Muse AI assistant was heavily inspired by OpenClaw, despite being built from scratch. The similarities extend to workspace filenames and content, raising questions about originality in AI development. This admission highlights the challenges companies face in creating distinct AI products while drawing from existing technologies. As AI innovation accelerates, maintaining transparency and originality remains crucial for tech companies to build trust with users and stakeholders.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "OpenAI Debuts GPT-6 Sol and Luna—Cost-Effective, Fewer Errors",
-            "title": "OpenAI Launches GPT-6 Sol and Luna Models for Enhanced Efficiency",
-            "content": "OpenAI has released two new AI models, GPT-6 Sol and Luna, designed to deliver improved performance at a lower cost. These models are part of the Astra family, offering a balance between capability and affordability. By reducing errors and operational costs, Sol and Luna aim to make advanced AI accessible to a broader range of users. As organizations seek cost-effective AI solutions, these models provide an attractive option for enhancing productivity and innovation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Parallel Halves Research Costs with GPT-6 Astra",
-            "title": "GPT-6 Astra Enables Parallel to Slash Research Time and Costs",
-            "content": "Parallel has successfully leveraged OpenAI's GPT-6 Astra to cut its research and data synthesis costs by 50%. The AI model has significantly accelerated the processing of labor-market data, demonstrating its potential to enhance efficiency in data-intensive tasks. This development underscores the transformative impact of AI on research methodologies, offering organizations the ability to optimize operations and reduce expenses. Businesses should consider integrating advanced AI models like Astra to remain competitive in data-driven industries.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 22 2026",
-            "headline": "Meta Patches Muse Exploit—Zero-Day Threat Neutralized",
-            "title": "Meta Issues Patch for Muse App Zero-Day Vulnerability Exploit",
-            "content": "Meta has released a patch for a critical zero-day vulnerability affecting its Muse macOS app, which allowed attackers to gain control over the AI agent. Discovered by security researcher Patrick Wardle, the exploit leveraged an undocumented setting within Muse, enabling malicious actors to execute local code. This vulnerability posed a significant risk to users, potentially compromising sensitive data and system integrity. Meta's swift response underscores the importance of proactive security measures in AI applications. Users are advised to update their Muse app immediately to mitigate any potential threats.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
             "relatedResources": []
         }
     ],
