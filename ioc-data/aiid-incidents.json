@@ -25,6 +25,14 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1706",
+      "incident_id": 1706,
+      "title": "Milwaukee Police Detective Allegedly Used Flock Safety License-Plate Reader 20 Times to Track Two Pe",
+      "date": "2026-09-23",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1702",
       "incident_id": 1702,
       "title": "Russia-Linked Matryoshka Influence Operation Reportedly Used AI-Cloned Celebrity Voices and Fabricat",
@@ -3287,28 +3295,12 @@
       "date": "2026-06-29",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1558",
-      "incident_id": 1558,
-      "title": "Sullivan & Cromwell Reportedly Filed Emergency Bankruptcy Motion Containing AI-Generated Legal Error",
-      "date": "2026-06-26",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1559",
-      "incident_id": 1559,
-      "title": "Kalibrate Fuel Pricing Allegedly Enabled California Gas Station Operators to Coordinate Higher Pump ",
-      "date": "2026-06-26",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 413,
-    "last7Days": 14,
-    "last30Days": 329
+    "total": 412,
+    "last7Days": 15,
+    "last30Days": 330
   },
-  "lastUpdated": "2026-09-24T04:24:55.086751+05:30"
+  "lastUpdated": "2026-09-24T10:06:36.026461+05:30"
 }
