@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1604",
+      "incident_id": 1604,
+      "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
+      "date": "2026-09-25",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1144",
       "incident_id": 1144,
       "title": "xAI Allegedly Operates Unpermitted Methane Turbines in Memphis to Power Supercomputer Colossus to Tr",
@@ -3025,14 +3033,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1604",
-      "incident_id": 1604,
-      "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
-      "date": "2026-07-22",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1596",
       "incident_id": 1596,
       "title": "Purported Deepfake Impersonation of Starmangalsutra Director Reportedly Led to \u20b910.70 Crore (Approxi",
@@ -3331,8 +3331,8 @@
   ],
   "stats": {
     "total": 416,
-    "last7Days": 15,
-    "last30Days": 328
+    "last7Days": 16,
+    "last30Days": 329
   },
-  "lastUpdated": "2026-09-26T03:15:52.265774+05:30"
+  "lastUpdated": "2026-09-26T04:45:54.185073+05:30"
 }
