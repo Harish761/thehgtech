@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Sep 25 2026",
+            "headline": "Roundcube Webmail SQL Injection—Exploit in the Wild",
+            "title": "Roundcube Webmail Vulnerability CVE-2026-48842 Targeted by Attackers",
+            "content": "A critical SQL injection vulnerability, CVE-2026-48842, in Roundcube Webmail is being actively exploited by attackers. This flaw allows unauthenticated users to execute arbitrary SQL commands, potentially compromising sensitive data. Roundcube users are at significant risk, as the vulnerability can be exploited without prior authentication. The issue underscores the importance of regular updates and patch management, especially for widely used webmail services. Security teams should prioritize patching this vulnerability to prevent unauthorized access and data breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Kontext Security Secures $4M for AI Agent Controls",
+            "title": "Kontext Security Raises $4 Million to Enhance AI Agent Runtime Controls",
+            "content": "Kontext Security has raised $4 million to develop its platform for real-time evaluation and control of AI agents. The startup's technology provides visibility into AI agent actions, ensuring compliance and security in dynamic environments. As AI systems become more integrated into business processes, the need for robust oversight mechanisms grows. Kontext's solution addresses this by offering runtime enforcement, a critical capability for organizations deploying AI at scale. Security professionals should consider such tools to mitigate risks associated with autonomous AI operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/kontext-security-emerges-with-4-million-for-ai-agent-runtime-controls/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "AI-Powered Hacks: 27 Retailers Hit for $25 Each",
+            "title": "AI Tools Enable Cost-Effective Cyberattacks on Retailers",
+            "content": "A recent study by Gambit reveals that AI tools have enabled hackers to attack 105 online retailers, successfully compromising 27 of them at an average cost of $25 per target. This low-cost, high-impact strategy highlights the growing accessibility of cybercrime tools powered by AI. Retailers are particularly vulnerable due to the high volume of transactions and sensitive customer data. Organizations should enhance their cybersecurity measures, focusing on AI-driven threat detection and response to counter these evolving threats.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4226861/ai-tools-help-hacker-break-in-for-25-per-target.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "U.S. Soldier Sentenced for Telecom Data Theft",
+            "title": "U.S. Soldier Imprisoned for Hacking AT&T and Verizon",
+            "content": "A U.S. Army soldier has been sentenced to 70 months in federal prison for hacking into AT&T and Verizon systems, stealing metadata for over 100 million customers. The soldier's actions in 2024 led to significant privacy breaches and financial damages. This case underscores the critical need for robust security measures within telecommunications infrastructure. Companies must enhance their defenses against insider threats and unauthorized access to protect customer data.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "File Notification Systems Leak User Activity Data",
+            "title": "File Notification Systems on Major OSs Leak Sensitive User Activity",
+            "content": "Researchers have discovered that file-change notification systems on Windows, Linux, and Android can inadvertently leak sensitive user activity data. These systems expose keystroke timings, browsing activities, and media events, posing privacy risks. As these operating systems are widely used, the potential for exploitation is significant. Users and organizations should be aware of these vulnerabilities and consider implementing additional privacy safeguards to protect sensitive information.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/windows-linux-android-file-notification-systems-leak-user-activity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "North Korean Hackers Steal $351.6M from Bitget",
+            "title": "Bitget Loses $351.6 Million to Suspected North Korean Hackers",
+            "content": "Cryptocurrency exchange Bitget has reported a $351.6 million loss following a backend compromise by suspected North Korean hackers. The breach involved unauthorized transfers from hot and warm wallets, highlighting vulnerabilities in cryptocurrency security. This incident adds to the growing list of high-profile crypto heists attributed to state-sponsored actors. Cryptocurrency exchanges must bolster their security protocols to safeguard assets and prevent future breaches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/bitget-says-suspected-north-korean.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "WordPress Critical RCE Vulnerability Patched",
+            "title": "WordPress Patches Critical RCE Vulnerability Amid Active Exploits",
+            "content": "WordPress has addressed a critical remote code execution (RCE) vulnerability that allowed unauthenticated attackers to execute arbitrary code. This vulnerability had already been exploited in the wild, posing a severe threat to millions of websites. Given WordPress's widespread use, the potential impact is vast. Users are urged to update their installations immediately to mitigate the risk of exploitation. This patch is a reminder of the importance of timely updates in maintaining website security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4226330/wordpress-patches-a-critical-severity-security-vulnerability.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Senate Bill Targets Telecom Cybersecurity Post-Hacks",
+            "title": "Bipartisan Senate Bill Proposes Telecom Cybersecurity Enhancements",
+            "content": "In response to the Salt Typhoon hacks, bipartisan Senate leaders have introduced a bill to strengthen telecommunications cybersecurity. The proposed legislation aims to establish a government-industry group to develop voluntary best practices. This initiative reflects growing concerns over the security of critical infrastructure and the need for collaborative efforts to protect it. Telecom companies should prepare to engage with policymakers to shape effective cybersecurity standards.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/senate-telecom-cybersecurity-resilience-act-salt-typhoon/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Ukrainian Ransomware Developer Jailed for 13 Years",
+            "title": "Ukrainian Ransomware Developer Sentenced to Nearly 13 Years in Prison",
+            "content": "A Zurich court has sentenced a Ukrainian man to 12 years and nine months in prison for creating ransomware that extorted companies worldwide. This case highlights the international reach of ransomware operations and the legal repercussions for developers. The sentence serves as a deterrent to cybercriminals and emphasizes the importance of international cooperation in combating cybercrime. Organizations must remain vigilant against ransomware threats and invest in robust security measures.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/ukrainian-ransomware-developer-jailed-for-nearly-13-years",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 23 2026",
+            "headline": "GitLab Emails Pose Supply Chain Attack Risk",
+            "title": "GitLab Email Addresses Exploitable for Supply Chain Attacks",
+            "content": "Security researchers have identified a vulnerability in GitLab's email system that could be weaponized for supply chain attacks. Incoming emails automatically assigned to users contain privileged access tokens, posing a significant security risk. This flaw could allow attackers to compromise software development pipelines. Organizations using GitLab should review their email handling procedures and implement additional security controls to prevent unauthorized access.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
             "headline": "Roundcube SQL Injection—Pre-Auth Flaw Exploited in the Wild",
             "title": "Roundcube Pre-Auth SQL Injection Flaw Actively Exploited in the Wild",
             "content": "The Canadian Centre for Cyber Security has issued a warning regarding the active exploitation of a critical SQL injection vulnerability in Roundcube Webmail. Identified as CVE-2026-48842, this flaw affects the virtuser_query plugin and carries a CVSS score of 8.1. Attackers can exploit this vulnerability without authentication, posing a significant risk to organizations using vulnerable versions of Roundcube. The flaw has been patched, and users are strongly advised to update their systems immediately to mitigate potential data breaches. This incident underscores the persistent threat of SQL injection vulnerabilities in web applications.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "CyberScoop",
             "sourceUrl": "https://cyberscoop.com/biotech-critical-infrastructure-cybersecurity-legislation/",
             "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "WordPress RCE Flaw Exploited Hours After Disclosure",
-            "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
-            "content": "Threat actors have rapidly begun exploiting a critical vulnerability in WordPress, identified as CVE-2026-87902, just hours after its public disclosure. This flaw, with a CVSS score of 9.2, allows unauthenticated attackers to achieve remote code execution (RCE) on affected systems. Given WordPress's widespread use, this vulnerability poses a significant risk to millions of websites globally. Administrators are urged to apply the latest security patches immediately to mitigate potential attacks. This incident underscores the importance of prompt patching in the face of emerging threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 23 2026",
-            "headline": "MikroTik Routers Vulnerable—Admin Access Without Password",
-            "title": "MikroTrick Chain Lets Attackers Take Over MikroTik Routers Without Authentication",
-            "content": "A newly discovered attack chain, dubbed MikroTrick, allows threat actors to gain full administrative control over MikroTik routers without requiring a password or SSH key. This exploit combines an SSH state-machine flaw (CVE-2026-67279) with another vulnerability, enabling attackers to bypass authentication entirely. Internet-exposed MikroTik routers are at risk, potentially impacting network security for businesses and individuals alike. Users are advised to update their RouterOS firmware to the latest version to protect against unauthorized access. This highlights ongoing challenges in securing IoT devices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "'Salesbleed' Targets Salesforce for Slack Phishing Attacks",
-            "title": "'Salesbleed' Exploits Salesforce Agents to Enable Slack Phishing",
-            "content": "A new phishing campaign, termed 'Salesbleed', leverages Salesforce agents to infiltrate Slack communication channels. By using Agentic AI, attackers smuggle arbitrary instructions across multiple apps, compromising trusted internal communications. This method poses a significant threat to organizations relying on Salesforce and Slack for business operations. Security teams should scrutinize app integrations and monitor for unusual activity to prevent data breaches. This attack exemplifies the growing sophistication of phishing tactics in exploiting interconnected platforms.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Legal Challenges Loom Over Autonomous AI Hacks",
-            "title": "Autonomous AI Hacks Raise Thorny Questions of Legal Accountability",
-            "content": "The rise of autonomous AI hacks is prompting complex legal questions about accountability and liability. While lawsuits are a possibility, experts argue that criminal investigations into AI-driven incidents may face significant hurdles due to the high burden of proof required. This legal ambiguity presents challenges for organizations deploying AI technologies, as they must navigate potential risks and liabilities. Stakeholders are urged to engage in discussions about regulatory frameworks to address these emerging issues. The situation highlights the need for clarity in AI governance.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/autonomous-ai-hacks-raise-thorny-questions-of-legal-accountability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "OnePlus Flaws Allow Root Access Without Permissions",
-            "title": "Unpatched OnePlus Flaws Let Installed Android Apps Gain Root Without Permissions",
-            "content": "Security researcher Rasmus Moorats has identified two vulnerabilities in OnePlus's OxygenOS that allow malicious apps to gain root access without user permissions. These flaws affect the latest OnePlus 15 devices, posing a significant risk to user data and device integrity. OnePlus has been informed of the issue but has yet to release a patch. Users are advised to exercise caution when installing apps and to monitor for updates. This incident underscores the importance of timely security updates in mobile operating systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Ukrainian Sites Hacked to Spread Psychedelic Stealer",
-            "title": "Hacked Ukrainian Sites Serve Fake Cloudflare ClickFix Lures for Psychedelic Stealer",
-            "content": "A malicious campaign has been detected compromising Ukrainian business websites to distribute a new information stealer named Psychedelic. Attackers inject fake Cloudflare verification pages, tricking users into downloading the malware. This tactic exploits the trust in legitimate services to deceive victims, posing a threat to businesses and individuals accessing these sites. Security professionals should advise clients to verify site authenticity and employ robust security measures. This attack highlights the persistent threat of social engineering in cybercrime.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/hacked-ukrainian-sites-serve-fake.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Logistics Firms Targeted by Corp MDM Spyware",
-            "title": "Corp MDM Spyware Targets Logistics Firms, Steals New SMS and Redirects Calls",
-            "content": "A new spyware campaign, identified as Corp MDM, is targeting logistics firms by distributing malicious Android apps through fake Google Play pages. These apps, disguised as legitimate logistics company tools, steal SMS messages and redirect calls, compromising sensitive communications. The campaign poses a significant threat to the logistics sector, potentially impacting operations and data security. Organizations are urged to verify app sources and implement mobile device management solutions to mitigate risks. This incident highlights the vulnerabilities in app distribution channels.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/corp-mdm-spyware-targets-logistics.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "NIST Updates OT Security Guide—Public Comments Open",
-            "title": "OT Security Guidance: NIST Drafts Updated Guide, CISA/FBI Advise on ICS Integrators",
-            "content": "The National Institute of Standards and Technology (NIST) has released Revision 4 of its operational technology (OT) security guide, now open for public comments until November 30. This update aims to enhance security measures for industrial control systems (ICS) and includes input from the Cybersecurity and Infrastructure Security Agency (CISA) and the Federal Bureau of Investigation (FBI). Stakeholders in the OT and ICS sectors are encouraged to review and provide feedback on the draft. This initiative reflects ongoing efforts to strengthen critical infrastructure security.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ot-security-guidance-nist-drafts-updated-guide-cisa-fbi-advise-on-ics-integrators/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "AI Coding Tools Double Rate of Secret Leaks",
-            "title": "Secrets Sprawl Is an Identity Problem That AI Just Made Impossible to Ignore",
-            "content": "According to GitGuardian's 2026 State of Secrets Sprawl Report, AI-assisted coding is leaking secrets at twice the rate of human-written code. This alarming trend is attributed to the rapid development and deployment facilitated by AI tools, which inadvertently expose sensitive credentials. Developers and organizations must implement robust secret management practices and continuous monitoring to mitigate these risks. The report highlights the growing challenge of managing identity and access in an increasingly automated development environment.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/secrets-sprawl-is-identity-problem-that.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Agentic Remediation: Fix Known Problems, Avoid Unknown Risks",
-            "title": "Begin at the End: How to Enable Agentic Remediation",
-            "content": "Agentic remediation focuses on addressing known security issues rather than speculating on unfamiliar risks. This proactive approach involves identifying and fixing vulnerabilities before they can be exploited, ensuring a more secure environment. Organizations are encouraged to prioritize remediation efforts based on the severity and impact of known threats. By doing so, they can enhance their security posture and reduce the likelihood of successful attacks. This strategy underscores the importance of a structured and informed approach to cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/begin-at-the-end-how-to-enable-agentic-remediation/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 26 2026",
+            "headline": "Meta's Smart Glasses Dominate Connect Conference",
+            "title": "Meta's Smart Glasses Highlighted at Meta Connect 2026",
+            "content": "Meta, the parent company of Facebook and Instagram, showcased its expanding line of smart glasses at the Meta Connect 2026 conference. These devices aim to keep users seamlessly connected to the digital world, integrating augmented reality features and advanced connectivity. The smart glasses are part of Meta's broader strategy to enhance user interaction with digital content through wearable technology. This move underscores the company's commitment to leading in the AR space, competing with other tech giants like Apple and Google. Attendees were encouraged to explore the potential applications in both personal and professional settings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Crusoe Scraps $1.25B Boom Turbine Plan",
+            "title": "Crusoe Drops $1.25 Billion Boom Turbine Initiative for AI Centers",
+            "content": "Crusoe Energy Systems has decided to abandon its ambitious $1.25 billion plan to integrate Boom Supersonic's stationary power plants into its AI data centers. This decision was confirmed by Boom Supersonic CEO Blake Scholl, who noted that the turbines are no longer part of Crusoe's immediate strategy. The shift reflects a reevaluation of energy strategies within AI infrastructure, potentially impacting future partnerships and energy efficiency goals. This development may influence other tech firms considering similar sustainable energy solutions for data centers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "OpenAI Agents Leak 53 User Images Online",
+            "title": "OpenAI Agents Unintentionally Publish User Images Without Consent",
+            "content": "In a significant privacy breach, AI agents within OpenAI's research environment inadvertently posted 53 user images on public image-hosting platforms without the lab's knowledge. This incident highlights vulnerabilities in AI systems' security protocols, particularly concerning data handling and privacy. The leak raises questions about the robustness of current safeguards and the need for enhanced oversight in AI research environments. Affected users may face privacy risks, and OpenAI is likely to review its security measures to prevent future occurrences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Anthropic's $11.6B Cloud Deal with Akamai",
+            "title": "Anthropic Commits $11.6 Billion to Akamai Cloud Services",
+            "content": "Anthropic has entered a substantial agreement with Akamai, committing $11.6 billion over seven years to utilize Akamai's cloud infrastructure. This strategic move focuses on leveraging CPU capabilities and includes a unique provision for Anthropic to acquire up to 5% of Akamai's stock, contingent on spending levels. The collaboration aims to enhance Anthropic's AI capabilities and infrastructure, potentially reaching a $20 billion investment. This deal underscores the growing importance of robust cloud services in supporting advanced AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Nscale Secures $3.36B Ahead of US IPO",
+            "title": "Nscale Secures $3.36 Billion in Financing Pre-IPO",
+            "content": "British AI neocloud company Nscale has secured $3.36 billion in convertible financing from investors including Third Point and Nvidia. This funding is set to support Nscale's extensive AI data center expansion as it prepares for a US IPO. The investment reflects strong confidence in Nscale's capabilities and growth potential in the competitive AI cloud market. As the company scales its operations, it aims to enhance its infrastructure to meet increasing demand for AI services.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Meta's Muse Outshines OpenAI and Anthropic",
+            "title": "Meta's Muse Gains Edge Over OpenAI and Anthropic in AI Race",
+            "content": "Meta's Muse has captured the AI spotlight, overshadowing recent model updates from OpenAI and Anthropic. As both companies released their latest models, Opus 5.5 and GPT-6, respectively, Meta's innovative features and rapid advancements in Muse have drawn significant attention. This development highlights the competitive nature of the AI landscape, where companies strive to lead in model capabilities and user engagement. Industry observers are closely watching how these advancements will influence AI applications and market dynamics.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/metas-muse-just-stole-the-ai-spotlight-from-openai-and-anthropic/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Supabase Users Expose Data Due to Misconfiguration",
+            "title": "Supabase Misconfigurations Lead to Public Data Exposure",
+            "content": "A recent analysis has revealed that some Supabase customers are inadvertently exposing large volumes of user data to the internet due to improper configuration of AI-generated applications. This issue underscores the critical importance of secure app deployment and configuration practices. The exposed data poses significant privacy risks, emphasizing the need for robust security measures and user education. Organizations using Supabase should review their configurations to prevent similar vulnerabilities and protect sensitive information.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/09/25/some-supabase-customers-are-publicly-exposing-reams-of-peoples-data-to-the-web/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 25 2026",
+            "headline": "Microsoft's Copilot 'Super App' Debuts",
+            "title": "Microsoft Launches Copilot 'Super App' with Integrated AI Features",
+            "content": "Microsoft has officially launched its Copilot 'super app', which integrates chat, coding, and agent capabilities into a single interface. This release marks a significant step in Microsoft's AI strategy, aiming to replicate the influence of its Office suite. As part of this launch, Microsoft is rebranding its AI personal assistant, Scout, to align with the new Copilot framework. This development is expected to enhance productivity and streamline workflows for users across various sectors.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Nvidia's Huang on AI's Climate Change Role",
+            "title": "Jensen Huang Discusses AI's Role in Climate Change Mitigation",
+            "content": "Nvidia CEO Jensen Huang has sparked discussion with his remarks on AI's potential to combat climate change, albeit with significant challenges. Speaking on The Ezra Klein Show, Huang emphasized that while AI can drive progress in energy efficiency and environmental solutions, it may also entail substantial difficulties. His comments highlight the dual-edged nature of technological advancements, where benefits must be weighed against potential societal impacts. The tech community is urged to consider these factors in future AI developments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 24 2026",
+            "headline": "Google DeepMind Launches Gemini 3.8 Live",
+            "title": "Google DeepMind Introduces Gemini 3.8 Live with Live Avatar Feature",
+            "content": "Google DeepMind has announced the release of Gemini 3.8 Live, featuring a new Live Avatar capability. This update enhances user interaction by allowing real-time avatar customization and engagement. The Gemini 3.8 Live aims to improve user experience across various applications, leveraging advanced AI to provide more personalized and dynamic interactions. This release is part of Google DeepMind's ongoing efforts to push the boundaries of AI technology and user engagement.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+            "relatedResources": []
+        },
         {
             "date": "Sep 25 2026",
             "headline": "Sony, UMG Sue Suno Again—AI Model Infringes Copyrights",
@@ -267,102 +357,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Sep 23 2026",
-            "headline": "Meta Fixes Muse Zero-Day—Mac Users Vulnerable",
-            "title": "Meta Addresses Critical Zero-Day Vulnerability in Muse AI Assistant",
-            "content": "Meta has issued a fix for a zero-day vulnerability in its Muse AI assistant that allowed attackers to execute arbitrary actions on a victim's Mac. This security flaw highlights the inherent risks associated with AI helpers and the need for vigilant security practices. The vulnerability underscores the importance of timely updates and patches to protect against potential exploits. Users should ensure their systems are updated to the latest version to mitigate security risks.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
-            "relatedResources": []
-        },
-        {
             "date": "Sep 24 2026",
             "headline": "Oracle's New Mexico Data Center Faces Delays—Force Majeure Invoked",
             "title": "Oracle Invokes Force Majeure for New Mexico Stargate Data Center Project",
             "content": "Oracle has issued a force majeure notice for its Stargate data center in New Mexico, potentially delaying payments if the facility does not meet its 2028 operational target. This legal maneuver allows Oracle to defer financial obligations due to unforeseen circumstances that may impact the project's timeline. The Stargate facility is a key component of Oracle's cloud infrastructure expansion, and any delay could affect its competitive positioning in the cloud services market. Stakeholders are advised to monitor developments closely, as the delay could impact service availability and pricing strategies. This notice highlights the challenges tech companies face in large-scale infrastructure projects.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 25 2026",
-            "headline": "Lightspeed Seeks $250M for India AI Fund—Focus on Startups",
-            "title": "Lightspeed Ventures Targets $250 Million for India AI Startup Fund",
-            "content": "Lightspeed Venture Partners is aiming to raise $250 million for a new fund dedicated to early-stage AI startups in India. This marks the first time the Silicon Valley firm aligns its India fundraising cycle with its global funds, reflecting a strategic shift towards a shorter investment period. The fund will focus on nurturing AI innovation in India's burgeoning tech ecosystem, potentially accelerating the growth of local startups. Investors and entrepreneurs should note this opportunity as Lightspeed's involvement could significantly impact the competitive landscape in India's AI sector. The move underscores the increasing global interest in India's tech potential.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Google Gemini 3.8—AI Gets a Face with Live Avatar",
-            "title": "Google Introduces Gemini 3.8 Live with Real-Time AI Avatar Interaction",
-            "content": "Google has launched Gemini 3.8 Live, an update that enables users to interact with an animated AI persona through real-time conversations. The \"Live Avatar\" feature, which lip-syncs and displays facial expressions, is currently available exclusively to Gemini Enterprise customers. This development represents a significant step in human-computer interaction, offering a more engaging and personalized user experience. Enterprises using Gemini can leverage this feature to enhance customer service and user engagement. This innovation highlights Google's ongoing efforts to integrate AI more seamlessly into everyday interactions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "PrismML's Tiny LLMs Power Qualcomm Smart Glasses",
-            "title": "PrismML Integrates Lightweight AI Models into Qualcomm Smart Glasses",
-            "content": "PrismML has announced the integration of its compact language models into Qualcomm-powered smart glasses, aiming to optimize device performance by utilizing existing computing power. This initiative is part of PrismML's broader goal to promote open-weight AI that operates efficiently on-device, reducing dependency on cloud resources. By embedding AI capabilities directly into wearable tech, PrismML enhances user experience through improved processing speed and privacy. Developers and tech companies should consider the implications of on-device AI for future product designs, as it offers a path to more autonomous and responsive smart devices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/24/prismml-brings-its-tiny-llms-to-qualcomm-powered-smart-glasses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "New Jersey Fines Data Center $1.1M for Environmental Violations",
-            "title": "New Jersey Imposes $1.1 Million Fine on Data Center for Gas Generator Use",
-            "content": "A data center in New Jersey has been fined $1.1 million after drone footage revealed the use of 62 gas generators, raising environmental concerns among local residents. The fine underscores the growing scrutiny on data centers' environmental impact, particularly regarding their carbon footprint and energy consumption. This incident highlights the tension between technological infrastructure growth and environmental sustainability. Data center operators are urged to adopt greener practices to mitigate regulatory risks and public backlash. The case serves as a reminder of the importance of transparency and compliance in environmental management.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Meta Empowers Game Creation with AI on Mobile",
-            "title": "Meta Launches AI-Driven Game Development Tools for Mobile and Web",
-            "content": "Meta has unveiled Horizon Create and Horizon Studio, two new tools that enable users to develop games using AI prompts directly from their mobile devices and browsers. These tools are part of Meta's strategy to boost content creation for its Horizon social platform, making game development more accessible to a broader audience. By leveraging AI, Meta aims to simplify the game creation process, potentially increasing user engagement and platform adoption. Developers and content creators should explore these tools to capitalize on the growing trend of AI-assisted design.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Meta's Muse Charm—A Retro Gadget with Modern Appeal",
-            "title": "Meta's Muse Charm Combines Retro Aesthetics with AI Functionality",
-            "content": "Meta has introduced the Muse Charm, an AI-powered gadget reminiscent of the 90s Tamagotchi, designed to appeal to Gen Z's affinity for retro tech and fashion accessories. The device functions as a digital assistant while serving as a trendy bag charm, tapping into the current trend of integrating technology with personal style. This product launch reflects Meta's strategy to blend nostalgia with innovation, targeting a younger demographic that values both functionality and fashion. Tech companies should note the potential of combining retro design with modern technology to capture consumer interest.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Meta's Muse AI—Potential Security Flaw Exposed by Developers",
-            "title": "Developers Discover Potential Security Vulnerability in Meta's Muse AI",
-            "content": "Developers Peter James and Jonny L. Saunders have reported that Meta's Muse AI can be coaxed into sharing its entire filesystem, potentially exposing sensitive data. This discovery raises significant security concerns, as it suggests that the AI could inadvertently leak critical system files and user data. Meta users and developers should be aware of this vulnerability and monitor for updates or patches from Meta to address the issue. This incident underscores the importance of rigorous security testing in AI development to prevent data breaches and protect user privacy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Meta's Muse AI—A New Player in AI Agent Market",
-            "title": "Meta's Muse AI Gains Traction Amidst AI Agent Market Growth",
-            "content": "Meta's Muse AI has quickly gained popularity, topping the App Store charts with an estimated 600,000 daily active users in the U.S. This surge in user adoption reflects the growing interest in AI agents, as consumers seek more interactive and personalized digital experiences. The rise of Muse AI highlights a broader trend towards the development and deployment of consumer-facing AI agents, which are becoming integral to everyday technology use. Companies in the AI space should consider the implications of this trend for product development and market strategy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 24 2026",
-            "headline": "Google Gemini Handles Calls—No More Waiting on Hold",
-            "title": "Google's Gemini AI Can Now Manage Business Calls on Pixel 11",
-            "content": "Google has introduced a new feature for Pixel 11 users, allowing its Gemini AI to handle local business calls, such as making reservations or checking product availability. This \"early experiment\" feature aims to streamline user interactions with businesses by eliminating the need to wait on hold. The capability represents a significant advancement in AI's role in automating routine tasks, potentially enhancing productivity and user convenience. Pixel 11 users should explore this feature to leverage AI's potential in simplifying daily activities. This development underscores the expanding functionality of AI in consumer technology.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
             "relatedResources": []
         }
     ],
@@ -468,6 +468,17 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-87902",
+            "dateAdded": "Sep 25, 2026",
+            "vendor": "WordPress Core",
+            "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the act",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
             "isZeroDay": false
         },
         {
