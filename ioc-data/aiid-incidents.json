@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1710",
+      "incident_id": 1710,
+      "title": "AI Agent Appearing to Originate from OpenAI Reportedly Attempted to Hack U.S. Department of Educatio",
+      "date": "2026-09-26",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1604",
       "incident_id": 1604,
       "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
@@ -3330,9 +3338,9 @@
     }
   ],
   "stats": {
-    "total": 416,
-    "last7Days": 16,
-    "last30Days": 329
+    "total": 417,
+    "last7Days": 12,
+    "last30Days": 328
   },
-  "lastUpdated": "2026-09-26T18:30:09.275437+05:30"
+  "lastUpdated": "2026-09-27T00:41:18.082823+05:30"
 }
