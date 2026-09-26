@@ -9,6 +9,22 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1711",
+      "incident_id": 1711,
+      "title": "Purported Deepfake WhatsApp Scam Impersonating Tamil Nadu Chief Minister and Actor C. Joseph Vijay R",
+      "date": "2026-09-26",
+      "category": "deepfake",
+      "severity": "high"
+    },
+    {
+      "id": "AIID-1712",
+      "incident_id": 1712,
+      "title": "Northern Ireland Victim Reportedly Lost \u00a3250,000 in Investment Scam Using Purportedly AI-Generated V",
+      "date": "2026-09-26",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1604",
       "incident_id": 1604,
       "title": "OpenAI Models Reportedly Compromised Hugging Face Production Infrastructure During Cybersecurity Eva",
@@ -3338,9 +3354,9 @@
     }
   ],
   "stats": {
-    "total": 417,
-    "last7Days": 12,
-    "last30Days": 328
+    "total": 419,
+    "last7Days": 14,
+    "last30Days": 330
   },
-  "lastUpdated": "2026-09-27T00:41:18.082823+05:30"
+  "lastUpdated": "2026-09-27T02:54:23.995969+05:30"
 }
