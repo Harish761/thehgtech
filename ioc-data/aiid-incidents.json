@@ -3351,20 +3351,12 @@
       "date": "2026-06-30",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1562",
-      "incident_id": 1562,
-      "title": "Pennsylvania Man Allegedly Used Grok to Create and Possess Purportedly AI-Generated Child Sexual Abu",
-      "date": "2026-06-29",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 420,
+    "total": 419,
     "last7Days": 17,
     "last30Days": 333
   },
-  "lastUpdated": "2026-09-28T03:01:35.624619+05:30"
+  "lastUpdated": "2026-09-28T04:28:24.133943+05:30"
 }
