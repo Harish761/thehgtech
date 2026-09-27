@@ -1,9 +1,41 @@
 {
   "incidents": [
     {
+      "id": "AIID-1171",
+      "incident_id": 1171,
+      "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
+      "date": "2026-09-27",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1186",
+      "incident_id": 1186,
+      "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines",
+      "date": "2026-09-27",
+      "category": "data_leak",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1712",
+      "incident_id": 1712,
+      "title": "Northern Ireland Victim Reportedly Lost \u00a3250,000 in Investment Scam Using Purportedly AI-Generated V",
+      "date": "2026-09-27",
+      "category": "fraud",
+      "severity": "high"
+    },
+    {
       "id": "AIID-1713",
       "incident_id": 1713,
       "title": "York County, South Carolina, Deputies Reportedly Held Local Motorist at Gunpoint After Flock Safety ",
+      "date": "2026-09-27",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1714",
+      "incident_id": 1714,
+      "title": "Z.ai's ZCode AI Coding Assistant Reportedly Uploaded Developers' Local Code Repositories to Alibaba ",
       "date": "2026-09-27",
       "category": "other",
       "severity": "medium"
@@ -22,14 +54,6 @@
       "title": "Purported Deepfake WhatsApp Scam Impersonating Tamil Nadu Chief Minister and Actor C. Joseph Vijay R",
       "date": "2026-09-26",
       "category": "deepfake",
-      "severity": "high"
-    },
-    {
-      "id": "AIID-1712",
-      "incident_id": 1712,
-      "title": "Northern Ireland Victim Reportedly Lost \u00a3250,000 in Investment Scam Using Purportedly AI-Generated V",
-      "date": "2026-09-26",
-      "category": "fraud",
       "severity": "high"
     },
     {
@@ -461,14 +485,6 @@
       "incident_id": 1643,
       "title": "Wyoming Woman's Childhood Photograph Reportedly Used to Generate Thousands of Explicit Images with G",
       "date": "2026-09-07",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1171",
-      "incident_id": 1171,
-      "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
-      "date": "2026-09-06",
       "category": "other",
       "severity": "medium"
     },
@@ -2905,14 +2921,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1186",
-      "incident_id": 1186,
-      "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines",
-      "date": "2026-08-06",
-      "category": "data_leak",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1329",
       "incident_id": 1329,
       "title": "Grok Reportedly Generated and Distributed Nonconsensual Sexualized Images of Adults and Minors in X ",
@@ -3345,14 +3353,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1561",
-      "incident_id": 1561,
-      "title": "U.S. Navy Unmanned Vessel Reportedly Capsized Support Boat After Receiving Inadvertent Command",
-      "date": "2026-06-29",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1562",
       "incident_id": 1562,
       "title": "Pennsylvania Man Allegedly Used Grok to Create and Possess Purportedly AI-Generated Child Sexual Abu",
@@ -3363,8 +3363,8 @@
   ],
   "stats": {
     "total": 420,
-    "last7Days": 15,
-    "last30Days": 331
+    "last7Days": 17,
+    "last30Days": 333
   },
-  "lastUpdated": "2026-09-27T19:22:17.157302+05:30"
+  "lastUpdated": "2026-09-28T01:13:34.639445+05:30"
 }
