@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-09-26T17:53:28.033744",
-  "total_incidents": 31537,
+  "last_updated": "2026-09-27T08:27:14.693065",
+  "total_incidents": 31539,
   "incidents": [
+    {
+      "id": "m3rx_cipher.systems",
+      "victim_name": "cipher.systems",
+      "threat_actor": "m3rx",
+      "date_discovered": "2026-09-26T17:02:51.145975+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "+1 703-672-0051 , At Cipher Systems, we specialize in delivering enterprise-grade IT solutions designed to help businesses evolve, secure, and scale in a rapidly changing digital world. From future-proof cloud infrastructures to next-gen cybersecurity and AI-powered intelligence, our solutions are engineered for performance and built for growth. With deep expertise in software engineering, IT consulting, and data science, we turn complex challenges into streamlined outcomes—ensuring that your systems are secure, your data is insightful, and your technology is always a step ahead. Stolen: --",
+      "screenshot": "https://images.ransomware.live/victims/ce4ca133ec9184214e7f3fb88f7ad83d.png",
+      "url": "http://4k6plf4h2cm2nco6ae3inrsxnmqgl6lllmwefydhnlcq4tuhwbj4qpad.onion#cipher.systems",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "barracuda_international_chemical_co.",
+      "victim_name": "International Chemical Co.",
+      "threat_actor": "Barracuda",
+      "date_discovered": "2026-09-26T15:51:01.584677+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "International Chemical Company (ICC) manufactures specialty metalworking fluids, industrial cleaners, rust preventatives, and custom chemical formulations.\nWe have extracted the most important files from their main file server and possess data on their sales, formulas, patents, manufacturing, contracts, and partners.\nFor example, we possess the full formulation and manufacturing instructions for I.C.C.’s patented Biodraulic hydraulic oil. And even more than that. It is available for sale to competitors.\nVictim website: https://e-icc.com | Severity: HIGH | Size: 90 GB | Status: selling | $50,000",
+      "screenshot": "https://images.ransomware.live/victims/0189c8e1c75d6904bc4236ef6d4c57a4.png",
+      "url": "http://uvm6hk4wwstfddja5z5htgtlehmfyflffijz6iozsuqyacyibzxefkqd.onion/leaks",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "payoutsking_m****n",
       "victim_name": "M****n",
