@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1713",
+      "incident_id": 1713,
+      "title": "York County, South Carolina, Deputies Reportedly Held Local Motorist at Gunpoint After Flock Safety ",
+      "date": "2026-09-27",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1710",
       "incident_id": 1710,
       "title": "AI Agent Appearing to Originate from OpenAI Reportedly Attempted to Hack U.S. Department of Educatio",
@@ -3354,9 +3362,9 @@
     }
   ],
   "stats": {
-    "total": 419,
-    "last7Days": 14,
-    "last30Days": 330
+    "total": 420,
+    "last7Days": 15,
+    "last30Days": 331
   },
-  "lastUpdated": "2026-09-27T10:40:12.775726+05:30"
+  "lastUpdated": "2026-09-27T19:22:17.157302+05:30"
 }
