@@ -3343,20 +3343,12 @@
       "date": "2026-07-02",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1563",
-      "incident_id": 1563,
-      "title": "KPMG Report Allegedly Included Hallucinated Citations and Inaccurate Agentic AI Case Studies",
-      "date": "2026-06-30",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 419,
+    "total": 418,
     "last7Days": 17,
-    "last30Days": 333
+    "last30Days": 294
   },
-  "lastUpdated": "2026-09-28T22:13:08.501011+05:30"
+  "lastUpdated": "2026-09-29T04:56:53.554371+05:30"
 }
