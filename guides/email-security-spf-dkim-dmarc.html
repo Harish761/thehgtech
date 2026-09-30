@@ -107,7 +107,7 @@
         }
       },
       "datePublished": "2026-01-17",
-      "dateModified": "2026-01-17",
+      "dateModified": "2026-09-30",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"
@@ -488,83 +488,22 @@
     <link rel="stylesheet" href="../mobile-nav.css">
 
     <script src="/theme-toggle.js" defer></script>
+    <!-- SEO: HowTo Schema -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Email Security: SPF, DKIM & DMARC Complete Guide 2026 | TheHGTech [2026]",
-  "description": "Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing. Complete setup guide with DNS records and troubleshooting.",
-  "image": "https://thehgtech.com/images/og-image.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Harish G"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/images/logo-dark.png"
-    }
-  },
-  "datePublished": "2025-01-01",
-  "dateModified": "2026-06-26"
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://thehgtech.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Guides",
-      "item": "https://thehgtech.com/guides.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Email Security: SPF, DKIM & DMARC Complete Guide 2026 | TheHGTech [2026]",
-      "item": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"
-    }
-  ]
-}
-    </script>
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Email Security: SPF, DKIM & DMARC Complete Guide 2026",
-        "description": "Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing. Complete setup guide with DNS records and troubleshooting.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "1. Why Email Authentication Matters", "text": "Refer to the section '1. Why Email Authentication Matters' in the guide."},
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Email Security: SPF, DKIM & DMARC Complete Guide 2026",
+      "description": "Learn to configure SPF, DKIM, and DMARC to protect your domain from email spoofing and phishing. Complete setup guide with DNS records and troubleshooting.",
+      "totalTime": "PT30M",
+      "step": [
+        {"@type": "HowToStep", "name": "1. Why Email Authentication Matters", "text": "Refer to the section '1. Why Email Authentication Matters' in the guide."},
         {"@type": "HowToStep", "name": "2. SPF: Sender Policy Framework", "text": "Refer to the section '2. SPF: Sender Policy Framework' in the guide."},
         {"@type": "HowToStep", "name": "3. DKIM: DomainKeys Identified Mail", "text": "Refer to the section '3. DKIM: DomainKeys Identified Mail' in the guide."},
         {"@type": "HowToStep", "name": "4. DMARC: Tying It All Together", "text": "Refer to the section '4. DMARC: Tying It All Together' in the guide."},
         {"@type": "HowToStep", "name": "5. Implementation Roadmap", "text": "Refer to the section '5. Implementation Roadmap' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "Email Security: SPF, DKIM & DMARC Complete Gu\u2026", "item": "https://thehgtech.com/guides/email-security-spf-dkim-dmarc.html"}
-        ]
-      }
-    ]
+      ]
+    }
     </script>
 </head>
 
@@ -925,16 +864,6 @@
                         <td>BEC attacks using CEO spoofing</td>
                         <td>$2.9 billion in losses (FBI IC3)</td>
                     </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td>Vendor email compromise</td>
-                        <td>Supply chain phishing campaigns</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>Domain spoofing attacks</td>
-                        <td>Brand reputation damage to major companies</td>
-                    </tr>
                 </tbody>
             </table>
 
@@ -986,23 +915,23 @@
                 <tbody>
                     <tr>
                         <td><code>+</code> (Pass)</td>
-                        <td>Authorized (default)</td>
-                        <td>Accept</td>
+                        <td>Authorized</td>
+                        <td>SPF Pass</td>
                     </tr>
                     <tr>
                         <td><code>-</code> (Fail)</td>
-                        <td>NOT authorized</td>
-                        <td>Reject</td>
+                        <td>Source is not authorized by the SPF record</td>
+                        <td>SPF Fail</td>
                     </tr>
                     <tr>
                         <td><code>~</code> (SoftFail)</td>
-                        <td>Probably not authorized</td>
-                        <td>Accept but mark</td>
+                        <td>Source is probably not authorized</td>
+                        <td>SPF SoftFail</td>
                     </tr>
                     <tr>
                         <td><code>?</code> (Neutral)</td>
-                        <td>No assertion</td>
-                        <td>Accept</td>
+                        <td>No assertion about authorization</td>
+                        <td>SPF Neutral</td>
                     </tr>
                 </tbody>
             </table>
@@ -1016,8 +945,7 @@
 
             <h2 id="dkim">3. DKIM: DomainKeys Identified Mail</h2>
 
-            <p>DKIM adds a cryptographic signature to emails, proving they weren't altered in transit and came from an
-                authorized sender.</p>
+            <p>DKIM adds a cryptographic signature that allows receiving systems to verify that selected message content has not been altered and that the message was signed by the domain identified in the DKIM signature.</p>
 
             <h3>How DKIM Works</h3>
             <ol>
@@ -1056,8 +984,7 @@
 
             <h2 id="dmarc">4. DMARC: Tying It All Together</h2>
 
-            <p>DMARC tells receiving servers what to do when SPF or DKIM fails, and provides reports on email
-                authentication.</p>
+            <p>DMARC allows domain owners to publish a policy for messages that fail DMARC authentication and domain alignment, while also providing reporting about email authentication results.</p>
 
             <h3>DMARC Record Structure</h3>
 
@@ -1089,18 +1016,18 @@
                 <tbody>
                     <tr>
                         <td><code>p=none</code></td>
-                        <td>Monitor only, deliver all</td>
-                        <td>Initial setup, learning phase</td>
+                        <td>No DMARC enforcement; collect reporting</td>
+                        <td>Monitoring / initial deployment</td>
                     </tr>
                     <tr>
                         <td><code>p=quarantine</code></td>
-                        <td>Send failures to spam</td>
-                        <td>After fixing SPF/DKIM issues</td>
+                        <td>Request that DMARC-failing messages be treated as suspicious</td>
+                        <td>Progressive enforcement</td>
                     </tr>
                     <tr>
                         <td><code>p=reject</code></td>
-                        <td>Reject failures outright</td>
-                        <td>Full protection mode</td>
+                        <td>Request rejection of DMARC-failing messages</td>
+                        <td>Strongest enforcement</td>
                     </tr>
                 </tbody>
             </table>
@@ -1110,11 +1037,13 @@
             <ul>
                 <li><strong>SPF Alignment:</strong> Return-Path domain matches From domain</li>
                 <li><strong>DKIM Alignment:</strong> DKIM signature domain (d=) matches From domain</li>
-                <li><strong>Strict (s):</strong> Exact domain match required</li>
-                <li><strong>Relaxed (r):</strong> Subdomains allowed (default)</li>
+                <li><strong>Strict (s):</strong> The authenticated domain must exactly match the domain used in the visible From address.</li>
+                <li><strong>Relaxed (r):</strong> The authenticated domain can be a subdomain of the organizational domain used in the visible From address.</li>
             </ul>
 
             <h2 id="implementation">5. Implementation Roadmap</h2>
+
+            <p>The timeline below is an example rollout sequence. Actual progression should be based on DMARC report analysis and confidence that legitimate sending sources are authenticated and aligned.</p>
 
             <div class="success-box">
                 <strong><i class="fas fa-check-circle"></i> Recommended Rollout</strong>
@@ -1123,8 +1052,8 @@
                     <li><strong>Week 2:</strong> Enable DKIM for all sending sources</li>
                     <li><strong>Week 3:</strong> Add DMARC with <code>p=none</code> (monitor only)</li>
                     <li><strong>Week 5-8:</strong> Analyze DMARC reports, fix issues</li>
-                    <li><strong>Week 9:</strong> Move to <code>p=quarantine</code></li>
-                    <li><strong>Week 13:</strong> Move to <code>p=reject</code> (full protection)</li>
+                    <li><strong>Week 9+:</strong> Evaluate <code>p=quarantine</code> after reviewing reports and resolving legitimate-source failures.</li>
+                    <li><strong>Week 13+:</strong> Evaluate <code>p=reject</code> once legitimate sending sources consistently authenticate and align.</li>
                 </ol>
             </div>
 
@@ -1132,6 +1061,7 @@
 
             <h3>Free Testing Tools</h3>
             <ul>
+                <li><strong><a href="https://www.palisade.email/tools/dmarc" style="color: var(--accent-cyan);">Palisade DMARC Checker</a></strong> - Free, no-signup DMARC record checker</li>
                 <li><strong><a href="https://mxtoolbox.com/spf.aspx"
                             style="color: var(--accent-cyan);">MXToolbox</a></strong> - SPF, DKIM, DMARC lookup and
                     validation</li>
@@ -1209,11 +1139,12 @@ dig TXT _dmarc.yourdomain.com</code></pre>
 
             <h3>What to Monitor</h3>
             <ul>
-                <li><strong>SPF pass rate</strong> - Should be > 99%</li>
-                <li><strong>DKIM pass rate</strong> - Should be > 99%</li>
-                <li><strong>DMARC alignment</strong> - Must pass for full protection</li>
-                <li><strong>Unknown senders</strong> - Investigate unrecognized IPs in reports</li>
-                <li><strong>Spoofing attempts</strong> - Failed authentications from unauthorized sources</li>
+                <li><strong>DMARC pass rate</strong> - Track legitimate sending sources that successfully authenticate and align; investigate persistent failures.</li>
+                <li><strong>SPF results</strong> - Monitor legitimate senders for unexpected SPF failures.</li>
+                <li><strong>DKIM results</strong> - Monitor legitimate senders for DKIM failures and signing issues.</li>
+                <li><strong>DMARC alignment</strong> - Investigate sources that authenticate but fail alignment.</li>
+                <li><strong>Unknown senders</strong> - Investigate previously unseen or unauthorized sources.</li>
+                <li><strong>Spoofing attempts</strong> - Review repeated authentication failures from unauthorized sources.</li>
             </ul>
 
             <div class="info-box">
@@ -1226,7 +1157,7 @@ dig TXT _dmarc.yourdomain.com</code></pre>
             <p
                 style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
                 <strong>Author:</strong> TheHGTech Security Team<br>
-                <strong>Last Updated:</strong> January 2026<br>
+                <strong>Last Updated:</strong> September 2026<br>
                 <strong>Reading Time:</strong> 15 minutes
             </p>
         </article>
