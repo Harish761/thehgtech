@@ -10536,6 +10536,28 @@
       "Description": "In October 2013, the (now defunct) downloads website \"Mecho Download\" suffered a data breach that exposed 438k records. Data from the vBulletin based website included email and IP addresses, usernames and passwords stored as salted MD5 hashes."
     }
   ],
+  "medela.com": [
+    {
+      "Name": "Medela",
+      "Title": "Medela",
+      "BreachDate": "2026-09-07",
+      "AddedDate": "2026-09-30T11:48:28Z",
+      "PwnCount": 423947,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Salutations",
+        "Support tickets"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In September 2026, Swiss medical device company <a href=\"https://undercodenews.com/medela-targeted-by-shinyhunters-a-ransomware-warning-puts-swiss-healthcare-data-under-pressure-video/\" target=\"_blank\" rel=\"noopener\">Medela was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The data allegedly obtained in the breach was later published publicly and included 424k unique email addresses belonging predominantly to healthcare professionals, Medela staff and leads. The exposed data consisted primarily of corporate contact information, including names, physical addresses and phone numbers, with some records also containing associated support tickets."
+    }
+  ],
   "mediaworks.co.nz": [
     {
       "Name": "MediaWorks",
