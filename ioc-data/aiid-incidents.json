@@ -9,6 +9,14 @@
       "severity": "critical"
     },
     {
+      "id": "AIID-1716",
+      "incident_id": 1716,
+      "title": "Former Coffee County, Georgia, Deputy Allegedly Used Flock Safety License-Plate Reader System to Tra",
+      "date": "2026-09-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1171",
       "incident_id": 1171,
       "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
@@ -3346,9 +3354,9 @@
     }
   ],
   "stats": {
-    "total": 418,
-    "last7Days": 18,
-    "last30Days": 293
+    "total": 419,
+    "last7Days": 15,
+    "last30Days": 267
   },
-  "lastUpdated": "2026-09-30T20:22:49.522222+05:30"
+  "lastUpdated": "2026-10-01T02:15:29.738933+05:30"
 }
