@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1715",
+      "incident_id": 1715,
+      "title": "Russia-Linked Matryoshka Operators Reportedly Circulated Deepfake Mother Jones Video Impersonating E",
+      "date": "2026-09-30",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1171",
       "incident_id": 1171,
       "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
@@ -3335,20 +3343,12 @@
       "date": "2026-07-04",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1564",
-      "incident_id": 1564,
-      "title": "Purported Deepfakes of Public Figures and Celebrities Reportedly Used to Market Honey-Based Suppleme",
-      "date": "2026-07-02",
-      "category": "deepfake",
-      "severity": "medium"
     }
   ],
   "stats": {
     "total": 418,
-    "last7Days": 17,
-    "last30Days": 292
+    "last7Days": 18,
+    "last30Days": 293
   },
-  "lastUpdated": "2026-09-30T05:09:02.545902+05:30"
+  "lastUpdated": "2026-09-30T10:53:53.904071+05:30"
 }
