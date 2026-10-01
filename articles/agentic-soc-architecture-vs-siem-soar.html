@@ -825,11 +825,7 @@
             <i class="fas fa-arrow-left"></i> Back to Articles
         </a>
         <article>
-            <!-- Mobile Back Button -->
-            <a href="/" class="mobile-back-btn">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Home</span>
-            </a>
+            
 
             <header class="article-header">
                 <div class="article-meta">
@@ -1403,44 +1399,35 @@ Log Sources → Data Layer (SIEM Functions)
                 </div>
             </div>
 
-            <div class="interaction-bar">
-                <div class="interaction-stats">
-                    <span class="stat-item"><i class="far fa-eye"></i> 15.2K Views</span>
-                    <span class="stat-item"><i class="far fa-bookmark"></i> 842 Saves</span>
-                </div>
-                <div class="interaction-actions">
-                    <button class="action-btn like-btn" onclick="toggleLike(this)">
-                        <i class="far fa-thumbs-up"></i> <span class="like-count">315</span>
-                    </button>
-                    <button class="action-btn share-btn" onclick="openShareModal()">
-                        <i class="far fa-share-square"></i> Share
-                    </button>
-                    <button class="action-btn print-btn" onclick="window.print()">
-                        <i class="fas fa-print"></i> Print
-                    </button>
-                </div>
-            </div>
+            <!-- ========== RELATED ARTICLES ========== -->
+            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Articles</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    
+                    <a href="/articles/ai-soc-analyst-future-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI SOC</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">The AI SOC Analyst Problem: Who Watches the Watchers?</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Feb 27, 2026</p>
+                        </div>
+                    </a>
 
-            <div class="related-articles-section">
-                <h3>Related Articles</h3>
-                <div class="related-grid">
-                    <a href="/articles/ai-soc-analyst-future-2026.html" class="related-card">
-                        <div class="related-category">AI SOC</div>
-                        <h4 class="related-title">The AI SOC Analyst Problem: Who Watches the Watchers?</h4>
-                        <div class="related-meta">Feb 27, 2026</div>
+                    <a href="/articles/agentic-ai-insider-threat-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Agentic AI as an Insider Threat</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Nov 15, 2025</p>
+                        </div>
                     </a>
-                    
-                    <a href="/articles/agentic-ai-insider-threat-2026.html" class="related-card">
-                        <div class="related-category">AI Security</div>
-                        <h4 class="related-title">Agentic AI as an Insider Threat</h4>
-                        <div class="related-meta">Nov 15, 2025</div>
+
+                    <a href="/articles/vendor-added-ai-risk-2026.html" style="text-decoration: none;">
+                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
+                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
+                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Vendor-Added AI Risk</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Sep 04, 2025</p>
+                        </div>
                     </a>
-                    
-                    <a href="/articles/vendor-added-ai-risk-2026.html" class="related-card">
-                        <div class="related-category">AI Security</div>
-                        <h4 class="related-title">Vendor-Added AI Risk</h4>
-                        <div class="related-meta">Sep 04, 2025</div>
-                    </a>
+
                 </div>
             </div>
 </article>
