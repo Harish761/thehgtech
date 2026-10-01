@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deconstructing the Agentic SOC: What Actually Changes When AI Agents Enter Security Operations | TheHGTech</title>
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deconstructing the Agentic SOC: What Actually Changes When AI Agents Enter Security Operations | TheHGTech">
+    <meta name="twitter:description" content="A technical architectural analysis of the Agentic SOC. What happens to SIEM and SOAR functions when AI agents take over reasoning, and what new governance risks emerge.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/agentic-soc-hero.png">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="TheHGTech">
+    <meta name="description" content="A technical architectural analysis of the Agentic SOC. What happens to SIEM and SOAR functions when AI agents take over reasoning, and what new governance risks emerge.">
+    <meta name="keywords" content="Agentic SOC, SIEM evolution, SOAR evolution, AI security operations, agentic security, Model Context Protocol MCP, Non-Human Identity NHI, AI agent governance, security operations architecture">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Harish G">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/agentic-soc-architecture-vs-siem-soar.html">
+    <meta property="og:title" content="Deconstructing the Agentic SOC: What Actually Changes When AI Agents Enter Security Operations | TheHGTech">
+    <meta property="og:description" content="A technical architectural analysis of the Agentic SOC. What happens to SIEM and SOAR functions when AI agents take over reasoning, and what new governance risks emerge.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/agentic-soc-hero.png">
+
+    <link rel="canonical" href="https://thehgtech.com/articles/agentic-soc-architecture-vs-siem-soar.html">
+
+    <!-- Schema.org Article JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Deconstructing the Agentic SOC: What Actually Changes When AI Agents Enter Security Operations | TheHGTech",
+      "image": [
+        "https://thehgtech.com/images/articles/agentic-soc-hero.png"
+       ],
+      "datePublished": "2026-10-01T13:20:29+00:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://thehgtech.com/about.html"
+        }]
+    }
+    </script>
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is an Agentic SOC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An Agentic SOC uses AI agents that can autonomously reason, plan, and execute security workflows, replacing rigid playbook logic with dynamic, model-driven decision-making while maintaining human oversight."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Agentic SOC replace SIEM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not functionally. The SIEM's core functions—telemetry ingestion, normalization, storage, compliance logging, and deterministic detection—remain foundational. What changes is that the reasoning and investigation layer moves to AI agents."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Agentic SOC replace SOAR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standalone SOAR product category is converging into broader platforms, but the underlying SOAR functions—deterministic execution, credential vaulting, approval gates, rollback, and audit logging—remain critical."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is indirect prompt injection in an Agentic SOC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indirect prompt injection is when an attacker embeds hidden instructions inside data that an AI agent processes—such as a log file, email body, or web page—causing the agent to unknowingly execute the attacker's commands using its legitimate tool access."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Human-on-the-Loop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Human-on-the-Loop means the AI agent operates autonomously within defined guardrails, with a human analyst acting as a supervisor who reviews outputs and intervenes only for high-risk or high-blast-radius decisions."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- Google Fonts -->
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --border: rgba(255, 255, 255, 0.1);
+            --code-bg: #111;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            padding-top: 100px;
+        }
+
+        .article-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .article-image {
+            width: 100%;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .article-content h2 {
+            font-size: 2.2rem;
+            color: var(--accent-cyan);
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.6rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article-content h4 {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+        }
+
+        .article-content strong {
+            color: var(--text-primary);
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        .article-content a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .technical-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent-cyan);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .technical-box h3 {
+            margin-top: 0;
+            color: var(--accent-cyan);
+            font-size: 1.3rem;
+        }
+
+        .technical-box p,
+        .warning-box p,
+        .success-box p,
+        .editorial-box p {
+            color: var(--text-secondary);
+        }
+
+        .success-box {
+            background: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-left: 5px solid #22c55e;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .success-box h3 {
+            margin-top: 0;
+            color: #22c55e;
+            font-size: 1.3rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-left: 5px solid var(--accent-red);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .warning-box h3 {
+            margin-top: 0;
+            color: var(--accent-red);
+            font-size: 1.3rem;
+        }
+
+        .editorial-box {
+            background: rgba(255, 165, 0, 0.05);
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            border-left: 5px solid #ffa500;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2.5rem 0;
+        }
+
+        .editorial-box h3 {
+            margin-top: 0;
+            color: #ffa500;
+            font-size: 1.3rem;
+        }
+
+        blockquote {
+            border-left: 5px solid var(--accent-cyan);
+            margin: 3rem 0;
+            padding: 1.5rem 2.5rem;
+            background: rgba(0, 217, 255, 0.05);
+            font-style: italic;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+
+        pre {
+            background: var(--code-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            overflow-x: auto;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        code {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            color: var(--accent-cyan);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 1rem;
+        }
+
+        th,
+        td {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        th {
+            background: var(--bg-secondary);
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .article-footer p {
+            color: var(--text-secondary);
+        }
+
+        .article-footer strong {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2rem;
+            }
+
+            .article-excerpt {
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 1rem;
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function () {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
+    </script>
+        <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <!-- Advanced Rich Snippet Injection -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the latest threat intelligence on this topic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TheHGTech provides real-time, verified threat intelligence and mitigation strategies for critical CVEs and ransomware incidents. Analysts should reference the specific indicators of compromise (IOCs) and apply zero-trust architecture principles to secure their environments."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can SOC Analysts mitigate this cybersecurity risk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SOC teams must implement defense-in-depth strategies, including advanced SIEM log analysis, enforcing MFA, and utilizing updated YARA rules for malware detection. Regular gap analysis against frameworks like ISO 27001 or NIST CSF is crucial."
+        }
+      }]
+    }
+    </script>
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <script src="/theme-toggle.js" defer></script>
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The AI SOC Analyst Problem: Who Watches the Watchers in 2026?",
+  "description": "AI is replacing Tier 1 SOC analysts, but what happens when a hallucination misses a disguised APT? The hidden dangers of automated triage and how to protect your network.",
+  "image": "https://thehgtech.com/images/og-image.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Harish G"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/images/logo-dark.png"
+    }
+  },
+  "datePublished": "2026-06-30T17:12:27+05:30",
+  "dateModified": "2026-06-30T17:12:27+05:30"
+}
+
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://thehgtech.com/articles.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The AI SOC Analyst Problem: Who Watches the Watchers in 2026?",
+      "item": "https://thehgtech.com/articles/ai-soc-analyst-future-2026.html"
+    }
+  ]
+}
+    </script>
+
+    <!-- SEO: NewsArticle Schema -->
+    <script type="application/ld+json">
+    
+
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "The AI SOC Analyst Problem: Who Watches the Watchers in 2026?",
+  "description": "AI is replacing Tier 1 SOC analysts, but what happens when a hallucination misses a disguised APT? The hidden dangers of automated triage and how to protect your network.",
+  "image": [
+    "https://thehgtech.com/images/articles/ai-soc-analyst-future-2026.webp"
+  ],
+  "datePublished": "2026-06-30T17:12:27+05:30",
+  "dateModified": "2026-06-30T17:12:27+05:30",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Harish G",
+      "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "url": "https://thehgtech.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/images/logo-dark.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thehgtech.com/articles/ai-soc-analyst-future-2026.html"
+  },
+  "articleSection": "AI Security"
+}
+
+
+    </script>
+</head>
+
+<body>
+    <!-- SEO Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
+      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
+        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li style="color:#ffffff;" aria-current="page">The AI SOC Analyst Problem: Who Watches the Watche…</li>
+      </ol>
+    </nav>
+    <!-- Desktop Header -->
+    
+
+</div>
+
+    
+
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+        <!-- Search triggers Command Palette -->
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- Hamburger Menu Toggle -->
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
+
+<header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                        <a href="/hacker-chatter.html" class="dropdown-item">
+                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">
+                                    n8n Workflows
+                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    GRC Assessment
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tools Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 250px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    ISO 27001 GRC Tool
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- About Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
+                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 230px;">
+                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
+                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                            </div>
+                        </a>
+                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
+                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Contact</div>
+                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Follow Links -->
+                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <!-- Search Button -->
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+        <article>
+            <!-- Mobile Back Button -->
+            <a href="/" class="mobile-back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+
+            <header class="article-header">
+                <div class="article-meta">
+                    <span><i class="far fa-calendar"></i> Oct 1, 2026</span>
+                    <span><i class="far fa-user"></i> Harish G</span>
+                    <span><i class="far fa-clock"></i> 18 min read</span>
+                    <span class="category"><i class="fas fa-folder"></i> ARCHITECTURE & STRATEGY</span>
+                </div>
+                <h1 class="article-title">Deconstructing the Agentic SOC: What Actually Changes When AI Agents Enter Security Operations</h1>
+                <p class="article-excerpt">The Agentic SOC is not simply the replacement of SIEM and SOAR with AI agents. It is a shift in where security operations reasoning occurs and how decisions are translated into action. This guide separates architectural reality from vendor marketing.</p>
+                <img src="/images/articles/agentic-soc-hero.png" alt="Deconstructing the Agentic SOC" class="article-image" loading="lazy" onerror="this.onerror=null; this.src='/favicon-32x32.png'">
+            </header>
+
+            <div class="article-content">
+                <div class="success-box">
+                    <h4>Quick Summary</h4>
+                    <ul>
+                        <li><strong>What this guide covers:</strong> How AI agents change the SOC architecture — and what they don't.</li>
+                        <li><strong>Why it matters:</strong> Vendors are converging SIEM, SOAR, and AI into unified platforms, but the underlying functions have different requirements.</li>
+                        <li><strong>Who should read this:</strong> Security architects, SOC managers, and detection engineers evaluating agentic platforms.</li>
+                        <li><strong>Key takeaway:</strong> Product categories are blurring, but the boundaries between data, reasoning, and deterministic execution remain architecturally essential.</li>
+                    </ul>
+                </div>
+
+                <div class="technical-box">
+                    <h4>Executive Summary (Architectural Analysis)</h4>
+                    <ul>
+                        <li><strong>Confidence Level:</strong> High — based on primary vendor documentation from Microsoft, Google, Palo Alto Networks, CrowdStrike, Cisco/Splunk, SentinelOne, and Elastic; OWASP Top 10 for LLM Applications; and independent security research.</li>
+                        <li><strong>TLP:</strong> CLEAR</li>
+                        <li>This is an architectural analysis. Vendor claims are clearly separated from documented capabilities. Editorial interpretations are labeled.</li>
+                    </ul>
+                </div>
+
+                <div class="toc-container">
+                    <h4>Table of Contents</h4>
+                    <ol>
+                        <li><a href="#section-1">The Agentic Shift: What Actually Changed</a></li>
+                        <li><a href="#section-2">Data Gravity: Why SIEM Functions Persist</a></li>
+                        <li><a href="#section-3">The Execution Layer: SOAR's Functional Evolution</a></li>
+                        <li><a href="#section-4">The Reasoning Layer: What AI Agents Actually Add</a></li>
+                        <li><a href="#section-5">Three Architectures Compared</a></li>
+                        <li><a href="#section-6">Product vs. Function: The Convergence Matrix</a></li>
+                        <li><a href="#section-7">Vendor Approaches: Documented Capabilities</a></li>
+                        <li><a href="#section-8">Operational Reality: Administering the Agentic SOC</a></li>
+                        <li><a href="#section-9">Agent Risks: The New Threat Surface</a></li>
+                        <li><a href="#section-10">Governance: Bounding the Blast Radius</a></li>
+                        <li><a href="#section-11">Market Claims vs. Technical Reality</a></li>
+                        <li><a href="#section-12">The Counterargument</a></li>
+                        <li><a href="#section-13">Conclusion</a></li>
+                    </ol>
+                </div>
+
+                <h2 id="section-1">1. The Agentic Shift: What Actually Changed</h2>
+                <p>The Agentic SOC represents the most significant architectural shift in security operations since the introduction of SOAR in the mid-2010s. But the nature of that shift is widely misunderstood — by vendors, by analysts, and often by the security teams evaluating these platforms.</p>
+
+                <p>The confusion stems from a failure to distinguish between two different things:</p>
+                <ul>
+                    <li><strong>Product replacement</strong>: the commercial obsolescence of standalone SIEM and SOAR products.</li>
+                    <li><strong>Functional continuity</strong>: the persistence of the underlying capabilities those products provided.</li>
+                </ul>
+
+                <p>These are not the same thing. A vendor can retire a standalone SOAR product while every function that product performed — credential vaulting, deterministic execution, approval workflows, API integration, audit logging — remains essential inside the new unified platform.</p>
+
+                <p>The central question for any security team evaluating an Agentic SOC is not "Does this replace our SIEM?" or "Does this replace our SOAR?" The question is: <strong>When a vendor says 'Agentic SOC,' what actually disappeared, what merely moved, and what new risks did we inherit?</strong></p>
+
+                <blockquote>"The product categories are dying. The functions they performed are not."</blockquote>
+
+                <h2 id="section-2">2. Data Gravity: Why SIEM Functions Persist</h2>
+                <p>The prediction that "SIEM is dead" fundamentally ignores the problem of data gravity. Security telemetry in a mid-to-large enterprise is measured in terabytes per day and petabytes cumulatively. Moving data at this scale is expensive, slow, and creates compliance complications.</p>
+
+                <p>AI agents cannot reason over data they do not have access to. Every agentic platform — without exception — requires a structured data layer underneath it. That data layer performs the functions that SIEMs have always performed:</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SIEM Function</th>
+                                <th>Status in an Agentic Architecture</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Telemetry Ingestion</td>
+                                <td>Remains foundational</td>
+                                <td>Agents need data to reason over. The ingestion pipeline does not change.</td>
+                            </tr>
+                            <tr>
+                                <td>Normalization</td>
+                                <td>Remains foundational</td>
+                                <td>LLMs perform better on structured, schema-consistent data. Poor normalization leads to hallucination-driven errors.</td>
+                            </tr>
+                            <tr>
+                                <td>Storage & Retention</td>
+                                <td>Remains foundational</td>
+                                <td>Compliance frameworks (SOC 2, HIPAA, PCI-DSS) require long-term deterministic storage.</td>
+                            </tr>
+                            <tr>
+                                <td>Deterministic Detection</td>
+                                <td>Remains foundational</td>
+                                <td>Known-bad signatures, threshold alerts, and YARA rules do not benefit from probabilistic reasoning.</td>
+                            </tr>
+                            <tr>
+                                <td>Search</td>
+                                <td>Evolves — agent-assisted</td>
+                                <td>Natural language queries may replace SPL/KQL for some users, but structured search remains for precision work.</td>
+                            </tr>
+                            <tr>
+                                <td>Correlation</td>
+                                <td>Evolves — agent-assisted</td>
+                                <td>Moving from rigid threshold rules to behavioral and contextual models, but deterministic correlations persist for known attack patterns.</td>
+                            </tr>
+                            <tr>
+                                <td>Investigation</td>
+                                <td>Moves to agentic layer</td>
+                                <td>This is the primary capability that AI agents absorb.</td>
+                            </tr>
+                            <tr>
+                                <td>Evidence & Compliance Logging</td>
+                                <td>Remains foundational</td>
+                                <td>Immutable, cryptographically verifiable logs cannot be replaced by probabilistic model outputs.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-box">
+                    <strong>Architectural Note:</strong> The distinction between "SIEM product" and "SIEM functions" matters. A vendor may retire a standalone SIEM product while embedding every SIEM function inside a unified platform. The commercial category dies; the technical requirements persist.
+                </div>
+
+                <h2 id="section-3">3. The Execution Layer: SOAR's Functional Evolution</h2>
+                <p>Traditional SOAR platforms are built around three core components: a visual playbook engine (node-based flowcharts), an integration framework (hundreds of hardcoded API plugins), and a credential/execution engine.</p>
+
+                <p>The playbook authoring model — where security engineers manually build deterministic branching logic for every conceivable alert scenario — is widely acknowledged to be unsustainable. Most enterprise SOCs report that the majority of their SOAR playbooks are broken, outdated, or unmaintained.</p>
+
+                <p>However, the <em>functions</em> underneath those playbooks are non-negotiable:</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SOAR Function</th>
+                                <th>Status in an Agentic Architecture</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Playbook Authoring</td>
+                                <td>Converging into agent instructions</td>
+                                <td>Rigid flowcharts are replaced by goal-oriented prompts and agent reasoning.</td>
+                            </tr>
+                            <tr>
+                                <td>Deterministic Execution</td>
+                                <td>Remains foundational</td>
+                                <td>The final API call to block an IP, isolate a host, or revoke a token must execute exactly as specified.</td>
+                            </tr>
+                            <tr>
+                                <td>Credential Vaulting</td>
+                                <td>Remains foundational</td>
+                                <td>AI models cannot and should not hold API keys directly.</td>
+                            </tr>
+                            <tr>
+                                <td>Approval Gates</td>
+                                <td>Remains foundational</td>
+                                <td>High-risk actions require human authorization before execution.</td>
+                            </tr>
+                            <tr>
+                                <td>Audit Logging</td>
+                                <td>Remains foundational</td>
+                                <td>Every action must be logged with who (or what agent) initiated it, when, and the outcome.</td>
+                            </tr>
+                            <tr>
+                                <td>Rollback / Error Handling</td>
+                                <td>Remains foundational</td>
+                                <td>If an agent makes an incorrect containment decision, the platform must be able to reverse the action safely.</td>
+                            </tr>
+                            <tr>
+                                <td>Integrations</td>
+                                <td>Evolving — MCP and dynamic tools</td>
+                                <td>Moving from hardcoded API plugins toward standardized protocols like MCP, but the integration layer itself remains.</td>
+                            </tr>
+                            <tr>
+                                <td>Case Management</td>
+                                <td>Moves to agentic layer</td>
+                                <td>Agents can create, update, and escalate cases autonomously.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="editorial-box">
+                    <strong>Editorial Note:</strong> The phrase "SOAR is dead" appears frequently in vendor marketing. What vendors typically mean is that the <em>playbook authoring model</em> is dead. The execution, governance, and integration functions of SOAR are alive, critical, and being absorbed into the same vendors' newer platforms.
+                </div>
+
+                <h2 id="section-4">4. The Reasoning Layer: What AI Agents Actually Add</h2>
+                <p>This is the genuinely novel capability introduced by the Agentic SOC. An AI security agent is not a chatbot and not a smarter playbook. It is a system that can:</p>
+
+                <ul>
+                    <li><strong>Perceive</strong>: Monitor alert queues and interpret incoming telemetry.</li>
+                    <li><strong>Retrieve context</strong>: Dynamically query asset inventories, identity providers, historical logs, and threat intelligence.</li>
+                    <li><strong>Reason and hypothesize</strong>: Formulate multiple theories about what an alert might represent ("Is this a compromised credential, a misconfigured service account, or a red team exercise?").</li>
+                    <li><strong>Plan</strong>: Decide which investigative steps to take next and in what order.</li>
+                    <li><strong>Select tools dynamically</strong>: Choose the appropriate API or tool for each step, rather than following a preset path.</li>
+                    <li><strong>Evaluate results</strong>: Interpret the output of each tool call to confirm or deny hypotheses.</li>
+                    <li><strong>Summarize and escalate</strong>: Translate the investigation into a human-readable summary and determine whether human intervention is required.</li>
+                </ul>
+
+                <p>The critical architectural difference from SOAR is this:</p>
+                <ul>
+                    <li><strong>Deterministic automation (SOAR)</strong>: Predefined decision paths. The system does exactly what was programmed, nothing more.</li>
+                    <li><strong>Agentic operation</strong>: Model-driven selection and sequencing of actions based on available evidence and tools. The system can adapt mid-investigation.</li>
+                </ul>
+
+                <p>This is achieved through frameworks like ReAct (Reason + Act) and protocols like the <strong>Model Context Protocol (MCP)</strong>, which standardize how agents discover and invoke tools without requiring step-by-step programming.</p>
+
+                <div class="warning-box">
+                    <strong>Where the distinction blurs:</strong> Some vendors label advanced SOAR playbooks with conditional branching as "agentic." If the system cannot generate a novel investigation path that was not pre-programmed, it is automation — not agency. The market is experiencing significant "agent washing."
+                </div>
+
+                <h2 id="section-5">5. Three Architectures Compared</h2>
+                
+                <pre style="background: var(--code-bg); padding: 1.5rem; border-radius: 8px; overflow-x: auto; font-family: monospace; line-height: 1.4; color: var(--text-primary); border: 1px solid var(--border);"><code>TRADITIONAL SOC
+══════════════════════════════════
+Log Sources → SIEM (Detection Engine) → Alert Queue
+                                           ↓
+                                    Analyst (Manual)
+                                           ↓
+                                    SOAR (Playbook) → Security Tools
+
+
+AI-ASSISTED SOC (Current Transition)
+══════════════════════════════════
+Log Sources → SIEM (Detection Engine) → Alert Queue
+                                           ↓
+                         ┌─── AI Copilot (Sidecar) ───┐
+                         │  Suggests queries          │
+                         │  Summarizes alerts         │
+                         │  Drafts playbooks          │
+                         └────────────────────────────┘
+                                           ↓
+                                    Analyst (Still Driver)
+                                           ↓
+                                    SOAR (Playbook) → Security Tools
+
+
+AGENTIC SOC
+══════════════════════════════════
+Log Sources → Data Layer (SIEM Functions)
+                     ↕ (bidirectional queries)
+              Reasoning Layer (AI Agent Ecosystem)
+              │ ← MCP/Tool Access → │
+              │ ← Policy Engine →   │
+              │ ← Threat Intel →    │
+              │ ← Identity/RBAC →   │
+                     ↕
+              Execution Layer (SOAR Functions)
+              │ Credential Vault │
+              │ Approval Gates   │
+              │ Audit Logging    │
+                     ↓
+              Security Tools (EDR, Firewall, IAM, etc.)
+                     ↓
+              Human (On-the-Loop Oversight)</code></pre>
+
+                <p>The key architectural difference: In the traditional SOC, the human is the reasoning layer. In the AI-assisted SOC, the AI advises the human. In the Agentic SOC, the AI agent is the reasoning layer, and the human moves to oversight.</p>
+
+                <h2 id="section-6">6. Product vs. Function: The Convergence Matrix</h2>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Capability</th>
+                                <th>Traditional Product</th>
+                                <th>Agentic Architecture</th>
+                                <th>What Changes / What Remains</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Telemetry & Storage</td>
+                                <td>SIEM</td>
+                                <td>Data Platform / Unified SIEM</td>
+                                <td>Abstracted from the reasoning UI, but ingestion, normalization, and retention remain.</td>
+                            </tr>
+                            <tr>
+                                <td>Detection</td>
+                                <td>SIEM / EDR Rules</td>
+                                <td>Unified Platform + Agent Hypotheses</td>
+                                <td>Supplemented by AI-generated hypotheses; deterministic signature and threshold detection remain.</td>
+                            </tr>
+                            <tr>
+                                <td>Investigation</td>
+                                <td>Human Analyst + SIEM Queries</td>
+                                <td>AI Agent Reasoning Layer</td>
+                                <td>Becomes automated and non-linear. The need for deep forensic data access remains.</td>
+                            </tr>
+                            <tr>
+                                <td>Playbooks</td>
+                                <td>SOAR Visual Editor</td>
+                                <td>Agent Instructions / Prompts</td>
+                                <td>Visual flowcharts replaced by goal-oriented instructions. Need for standardized operating procedures remains.</td>
+                            </tr>
+                            <tr>
+                                <td>Tool Invocation</td>
+                                <td>SOAR Plugins (Hardcoded)</td>
+                                <td>Agent Tool Selection via MCP</td>
+                                <td>Dynamic selection by the model; secure credential management remains.</td>
+                            </tr>
+                            <tr>
+                                <td>Response Execution</td>
+                                <td>SOAR + Analyst</td>
+                                <td>Agent Proposal → Deterministic Execution</td>
+                                <td>Agents propose; execution remains deterministic. The API call to the firewall/EDR must be exact.</td>
+                            </tr>
+                            <tr>
+                                <td>Audit & Evidence</td>
+                                <td>SIEM + SOAR Logs</td>
+                                <td>Platform Governance Layer</td>
+                                <td>Must log agent decisions alongside actions; cryptographic, immutable action logging remains.</td>
+                            </tr>
+                            <tr>
+                                <td>Approvals</td>
+                                <td>SOAR Workflow Nodes</td>
+                                <td>Policy Engine + Human Gates</td>
+                                <td>May shift from per-action to risk-based approval. Requirement for human authority on high-risk actions remains.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="section-7">7. Vendor Approaches: Documented Capabilities</h2>
+                <p>Major vendors are implementing agentic capabilities within unified platforms. The following table separates documented architectural capabilities from marketing positioning. Where a specific claim cannot be independently verified from primary documentation, it is noted.</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Vendor</th>
+                                <th>Platform</th>
+                                <th>Documented Capability</th>
+                                <th>Architectural Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Microsoft</td>
+                                <td>Security Copilot + Sentinel</td>
+                                <td>Multi-step reasoning using security plugins. Backed by Entra ID for identity. Custom agents via Agent Builder. Consumption via Security Compute Units (SCUs). Uses MCP server for data access.</td>
+                                <td>Sentinel remains the data plane. Copilot orchestrates reasoning. Execution relies on deterministic Logic Apps and plugin actions.</td>
+                            </tr>
+                            <tr>
+                                <td>Google</td>
+                                <td>Google SecOps</td>
+                                <td>Integrates Gemini with TINA (Triage & Investigation Agent). Uses MCP to interact with Unified Data Model (UDM). Assists with YARA-L rule authoring via natural language.</td>
+                                <td>Replaces brittle playbook logic with AI reasoning. Heavily depends on UDM consistency for data quality.</td>
+                            </tr>
+                            <tr>
+                                <td>Palo Alto Networks</td>
+                                <td>Cortex XSIAM</td>
+                                <td>Cortex AgentiX provides agentic AI capabilities. Agentic Response for non-linear investigation. Emphasizes governance-by-design with RBAC for agents.</td>
+                                <td>XSIAM functionally converges SIEM and SOAR. AgentiX replaces manual playbook authoring with AI-driven orchestration.</td>
+                            </tr>
+                            <tr>
+                                <td>CrowdStrike</td>
+                                <td>Falcon Platform / Charlotte AI</td>
+                                <td>Multi-model architecture (LLMs + SLMs). Charlotte AI AgentWorks for custom agent creation. Agentic SOAR for governed orchestration.</td>
+                                <td>Endpoint-first approach. Uses agents to automate triage, but relies on Agentic SOAR as a distinct governed execution layer.</td>
+                            </tr>
+                            <tr>
+                                <td>Cisco / Splunk</td>
+                                <td>Splunk ES + AI Canvas</td>
+                                <td>Splunk AI Assistant with agentic mode. Specialized agents for triage and malware analysis. Integrated with Splunk SOAR for execution. Cisco AI Canvas for cross-portfolio visibility.</td>
+                                <td>Positions AI as orchestration on top of their traditional SIEM/SOAR footprint. Strongly emphasizes human oversight.</td>
+                            </tr>
+                            <tr>
+                                <td>SentinelOne</td>
+                                <td>Singularity / Purple AI</td>
+                                <td>Zero-click autonomous investigations. Closed-loop response via Singularity Hyperautomation. Governed by human-defined policies.</td>
+                                <td>Aims to fully automate Tier 1 investigation. Retains hyperautomation (SOAR function) for response execution.</td>
+                            </tr>
+                            <tr>
+                                <td>Elastic</td>
+                                <td>Elastic Security</td>
+                                <td>Native AI agent capabilities with LLM-driven detections. Self-describes as "human-in-the-lead" architecture.</td>
+                                <td>Strongly defends the SIEM data layer while pushing reasoning to agents.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="editorial-box">
+                    <strong>Source Precision:</strong> The capabilities listed above are drawn from vendor documentation and technical blogs. Vendor claims of specific accuracy percentages (such as triage accuracy rates) are not included because they have not been independently verified. Marketing language has been translated into architectural descriptions.
+                </div>
+
+                <h2 id="section-8">8. Operational Reality: Administering the Agentic SOC</h2>
+                <p>The shift to agentic operations does not eliminate administration — it moves it.</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Function</th>
+                                <th>Traditional Admin</th>
+                                <th>Agentic Admin</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Detection Engineering</td>
+                                <td>Writing correlation rules in SPL/KQL/Sigma</td>
+                                <td>Writing rules + managing AI-generated hypotheses + validating agent outputs</td>
+                                <td>Complexity increases: you now manage both deterministic rules and probabilistic reasoning.</td>
+                            </tr>
+                            <tr>
+                                <td>Automation</td>
+                                <td>Building and maintaining Python scripts and visual playbooks</td>
+                                <td>Prompt engineering, defining agent goals and boundaries, managing tool descriptions</td>
+                                <td>Playbook maintenance decreases; prompt version control and model evaluation increases.</td>
+                            </tr>
+                            <tr>
+                                <td>Identity & Access</td>
+                                <td>Managing service accounts for the SOAR platform</td>
+                                <td>Managing Non-Human Identities (NHI) for individual agents with dynamic, scoped credentials</td>
+                                <td>Significantly increased identity governance complexity. Every agent needs a unique identity tied to a human owner.</td>
+                            </tr>
+                            <tr>
+                                <td>Quality Assurance</td>
+                                <td>Unit-testing playbooks deterministically</td>
+                                <td>Evaluating non-deterministic agent behavior, grading reasoning quality, testing edge cases with adversarial inputs</td>
+                                <td>Fundamental shift. Evaluating systems that may solve the same problem differently each time is an unsolved challenge for many SOCs.</td>
+                            </tr>
+                            <tr>
+                                <td>Cost Management</td>
+                                <td>Per-GB ingestion pricing (relatively predictable)</td>
+                                <td>Token-based inference costs, per-SCU pricing, per-investigation fees</td>
+                                <td>Less predictable. A complex investigation may consume significantly more compute than a simple one.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <blockquote>"The Agentic SOC does not eliminate complexity. It moves complexity from the playbook layer to the prompt-and-policy layer."</blockquote>
+
+                <h2 id="section-9">9. Agent Risks: The New Threat Surface</h2>
+                <p>Autonomy introduces attack vectors that traditional SOCs did not face. These risks are not theoretical — they are documented in security research and acknowledged by vendors.</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risk</th>
+                                <th>Attack/Failure Mechanism</th>
+                                <th>Potential SOC Impact</th>
+                                <th>Required Control</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Indirect Prompt Injection</td>
+                                <td>Attacker embeds hidden instructions in a log file, email, or web page that the agent processes during investigation.</td>
+                                <td>Agent is hijacked. Uses its legitimate tool access to exfiltrate data, suppress alerts, or create persistence.</td>
+                                <td>Tool allowlists; sandboxing reasoning from execution; human approval for destructive actions.</td>
+                            </tr>
+                            <tr>
+                                <td>Cascading Actions</td>
+                                <td>Agent misinterprets context and initiates a rapid chain of automated responses.</td>
+                                <td>Broad operational outage — e.g., isolating an entire subnet or disabling a critical service.</td>
+                                <td>Blast-radius limits; rate limiting on response actions; deterministic policy overrides.</td>
+                            </tr>
+                            <tr>
+                                <td>Tool Misuse / Excessive Privilege</td>
+                                <td>Agent is granted broad API access rather than least-privilege scoped credentials.</td>
+                                <td>Compromised agent creates backdoor accounts, modifies firewall rules, or deletes evidence.</td>
+                                <td>Granular NHI permissions; scoped credentials per task; tool-level allowlists.</td>
+                            </tr>
+                            <tr>
+                                <td>Memory / Context Poisoning</td>
+                                <td>Attacker repeatedly triggers carefully crafted alerts to corrupt the agent's learned baseline.</td>
+                                <td>Agent learns to ignore the attacker's behavior patterns.</td>
+                                <td>Immutable baseline configurations; regular memory auditing; separation of learning from production reasoning.</td>
+                            </tr>
+                            <tr>
+                                <td>Incorrect Model Output</td>
+                                <td>Model fabricates correlations or invents evidence to support a plausible but incorrect hypothesis.</td>
+                                <td>Wasted analyst time investigating phantom threats; or worse, incorrect containment of legitimate assets.</td>
+                                <td>Enforced evidence citation grounded in SIEM telemetry; human review of high-impact verdicts.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="warning-box">
+                    <strong>Critical distinction:</strong> "Hallucination" is often used as a catch-all, but the real risk is not that the model produces incorrect text — it is that incorrect model output is connected to real-world security actions. A model that incorrectly classifies a production server as compromised and triggers automated isolation causes a business outage. The risk is not the hallucination itself; it is the coupling of probabilistic reasoning to deterministic action.
+                </div>
+                
+                <p>See also our analysis of <a href="/articles/openclaw-ai-log-poisoning-cve-2026.html">indirect prompt injection in log data</a> and <a href="/articles/agentic-ai-insider-threat-2026.html">agentic AI as an insider threat vector</a>.</p>
+
+                <h2 id="section-10">10. Governance: Bounding the Blast Radius</h2>
+                <p>To safely deploy an Agentic SOC, governance must be enforced <em>outside</em> the language model. The model cannot govern itself.</p>
+
+                <p>Key governance requirements:</p>
+
+                <ol>
+                    <li><strong>Agent Identity (NHI)</strong>: Every agent must have a unique, auditable identity tied to a human owner. Agents cannot share generic service accounts.</li>
+                    <li><strong>Tool Allowlists & Least Privilege</strong>: Agents must only access tools required for their current task. A triage agent should not have write access to firewall rules.</li>
+                    <li><strong>Deterministic Policy Overrides</strong>: Hardcoded rules that the LLM cannot override, regardless of its reasoning. Example: "Never isolate an asset tagged <code>tier-0-critical</code>." These rules live in a policy engine outside the model, not in the prompt.</li>
+                    <li><strong>Risk-Based Human Oversight</strong>: The shift from Human-in-the-Loop to Human-on-the-Loop should be graduated:
+                        <ul>
+                            <li><strong>Low-Risk (Autonomous)</strong>: Alert enrichment, threat intel lookups, summarizing case timelines.</li>
+                            <li><strong>Medium-Risk (Autonomous with Controls)</strong>: Standard user password resets, isolating non-critical workstations (constrained by rate limits and VIP exclusion lists).</li>
+                            <li><strong>High-Risk (Human Approval)</strong>: Modifying firewall rules, disabling executive accounts, deleting files.</li>
+                            <li><strong>Critical (Mandatory Human Decision)</strong>: Isolating domain controllers, altering root-level IAM policies, engaging with active adversaries.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Auditable Decisions</strong>: Log the agent's final verdict, the tool calls made, and the evidence referenced. Focus on auditable decisions, inputs/outputs, and outcomes — not raw chain-of-thought dumps, which are noisy and expensive to store.</li>
+                </ol>
+
+                <div class="info-box">
+                    The governance model must be enforced by infrastructure, not by prompts. A prompt that says "do not delete production data" is a request. A policy engine that blocks the delete API call is a control.
+                </div>
+
+                <h2 id="section-11">11. Market Claims vs. Technical Reality</h2>
+                <p>The Agentic SOC market is experiencing what some analysts have called "agent washing" — the rebranding of basic automation as agentic AI. The following common claims require qualification:</p>
+
+                <h3>"AI replaces SOAR"</h3>
+                <p>AI replaces the playbook authoring model. The deterministic execution, credential management, and governance functions of SOAR remain essential and are being absorbed into the same platforms.</p>
+
+                <h3>"AI eliminates Tier 1 analysts"</h3>
+                <p>AI automates the data-gathering and initial triage tasks historically assigned to Tier 1. Human analysts shift to a supervisory and exception-handling role. The headcount impact depends heavily on alert volume, data quality, and organizational risk tolerance.</p>
+
+                <h3>"The Agentic SOC is fully autonomous"</h3>
+                <p>No production Agentic SOC currently operates without human oversight for high-risk actions. Every major vendor documents some form of human-in-the-loop or human-on-the-loop governance.</p>
+
+                <h3>"Agents are just smarter playbooks"</h3>
+                <p>This conflates deterministic automation with probabilistic reasoning. Playbooks execute predefined paths. Agents dynamically select and sequence actions based on evidence. The distinction has profound implications for evaluation, testing, and governance.</p>
+
+                <h2 id="section-12">12. The Counterargument</h2>
+                <p>The strongest argument against this article's thesis deserves serious examination:</p>
+
+                <p>"If a single platform can query the data lake, investigate alerts, create detections, invoke APIs, manage cases, and execute response actions — then SIEM and SOAR are simply legacy product categories. Arguing that their functions survive is technically true but commercially irrelevant. No one buys 'SIEM functions' or 'SOAR functions.' They buy platforms."</p>
+
+                <p>This argument has merit. The commercial categories are genuinely blurring, and within three to five years, standalone SIEM and standalone SOAR products may be uncommon outside of specific compliance or air-gapped environments.</p>
+
+                <p>However, the architectural distinction matters even when the commercial distinction does not. If an organization deploys a unified platform but treats the probabilistic reasoning layer and the deterministic execution layer as a single undifferentiated system — if it allows the AI agent to directly hold API keys, if it does not enforce policy outside the model, if it does not maintain immutable evidence logs separate from model outputs — then it has traded one set of operational risks for a more opaque one.</p>
+
+                <p>The terms may die. The architectural boundaries must not.</p>
+
+                <h2 id="section-13">13. Conclusion</h2>
+                <p>The Agentic SOC is not the death of SIEM and SOAR. It is their functional evolution into a new architectural model where AI provides the reasoning layer, SIEM-derived functions provide the data layer, and SOAR-derived functions provide the governed execution layer.</p>
+
+                <p>For security teams evaluating these platforms, the recommendations are:</p>
+
+                <ol>
+                    <li><strong>Evaluate functions, not product labels.</strong> When a vendor retires a SOAR product, ask where credential vaulting, approval gates, rollback, and audit logging now live.</li>
+                    <li><strong>Govern the reasoning layer independently.</strong> Deterministic policy enforcement must live outside the model, in infrastructure that the model cannot override.</li>
+                    <li><strong>Manage agent identity rigorously.</strong> Non-Human Identities require the same — or greater — governance as human identities.</li>
+                    <li><strong>Scope the blast radius.</strong> Risk-based human oversight is not a weakness of the agentic model; it is a prerequisite.</li>
+                    <li><strong>Test adversarially.</strong> If you cannot test whether your AI agent is vulnerable to indirect prompt injection via crafted log data, you are not ready to deploy it in production.</li>
+                </ol>
+
+                <div class="info-box">
+                    <strong>Related Resources:</strong><br>
+                    • <a href="/articles/ai-soc-analyst-future-2026.html">The AI SOC Analyst Problem: Who Watches the Watchers?</a><br>
+                    • <a href="/articles/openclaw-ai-log-poisoning-cve-2026.html">OpenClaw: AI Log Poisoning (CVE-2026)</a><br>
+                    • <a href="/articles/agentic-ai-insider-threat-2026.html">Agentic AI as an Insider Threat</a><br>
+                    • <a href="/articles/vendor-added-ai-risk-2026.html">Vendor-Added AI Risk</a><br>
+                    • <a href="/articles/ai-agents-attack-vectors-2026.html">AI Agents Attack Vectors</a>
+                </div>
+            </div>
+
+            <div class="interaction-bar">
+                <div class="interaction-stats">
+                    <span class="stat-item"><i class="far fa-eye"></i> 15.2K Views</span>
+                    <span class="stat-item"><i class="far fa-bookmark"></i> 842 Saves</span>
+                </div>
+                <div class="interaction-actions">
+                    <button class="action-btn like-btn" onclick="toggleLike(this)">
+                        <i class="far fa-thumbs-up"></i> <span class="like-count">315</span>
+                    </button>
+                    <button class="action-btn share-btn" onclick="openShareModal()">
+                        <i class="far fa-share-square"></i> Share
+                    </button>
+                    <button class="action-btn print-btn" onclick="window.print()">
+                        <i class="fas fa-print"></i> Print
+                    </button>
+                </div>
+            </div>
+
+            <div class="related-articles-section">
+                <h3>Related Articles</h3>
+                <div class="related-grid">
+                    <a href="/articles/ai-soc-analyst-future-2026.html" class="related-card">
+                        <div class="related-category">AI SOC</div>
+                        <h4 class="related-title">The AI SOC Analyst Problem: Who Watches the Watchers?</h4>
+                        <div class="related-meta">Feb 27, 2026</div>
+                    </a>
+                    
+                    <a href="/articles/agentic-ai-insider-threat-2026.html" class="related-card">
+                        <div class="related-category">AI Security</div>
+                        <h4 class="related-title">Agentic AI as an Insider Threat</h4>
+                        <div class="related-meta">Nov 15, 2025</div>
+                    </a>
+                    
+                    <a href="/articles/vendor-added-ai-risk-2026.html" class="related-card">
+                        <div class="related-category">AI Security</div>
+                        <h4 class="related-title">Vendor-Added AI Risk</h4>
+                        <div class="related-meta">Sep 04, 2025</div>
+                    </a>
+                </div>
+            </div>
+</article>
+
+        <div class="interaction-bar">
+            <div class="like-section">
+                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <div class="share-buttons">
+                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i
+                            class="fas fa-link"></i></button>
+                </div>
+                <div class="button-separator"></div>
+                <button onclick="window.print()" class="print-btn" title="Print Article"><i
+                        class="fas fa-print"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights
+            reserved.</p>
+    </footer>
+
+    <script src="/interaction-bar.min.js?v=20260623"></script>
+
+    <script src="../ui-enhancements.js?v=20260517" defer></script>
+
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+</body>
+
+</html>
