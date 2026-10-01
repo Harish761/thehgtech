@@ -17,6 +17,30 @@
       "severity": "medium"
     },
     {
+      "id": "AIID-1717",
+      "incident_id": 1717,
+      "title": "Flock Safety License-Plate Reader Reportedly Misread Plate, Leading Toledo, Ohio, Police to Stop Mot",
+      "date": "2026-09-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1718",
+      "incident_id": 1718,
+      "title": "Purportedly AI-Generated Image Reportedly Prompted Police Alert and Search for Nonexistent Venomous ",
+      "date": "2026-09-30",
+      "category": "prompt_injection",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1719",
+      "incident_id": 1719,
+      "title": "Anthropic's Claude Code AI Agent Reportedly Deleted About 48,000 Live Project Files and Version-Cont",
+      "date": "2026-09-30",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1171",
       "incident_id": 1171,
       "title": "Reported Hack of Tea Dating App Compromises Data from Purportedly AI-Supported Identity and Image Ch",
@@ -3354,9 +3378,9 @@
     }
   ],
   "stats": {
-    "total": 419,
-    "last7Days": 15,
-    "last30Days": 267
+    "total": 422,
+    "last7Days": 18,
+    "last30Days": 270
   },
-  "lastUpdated": "2026-10-01T04:00:10.042229+05:30"
+  "lastUpdated": "2026-10-01T11:10:39.612177+05:30"
 }
