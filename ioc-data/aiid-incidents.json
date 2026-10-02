@@ -3353,14 +3353,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1566",
-      "incident_id": 1566,
-      "title": "Indore Resident Reportedly Lost \u20b91.83 Lakh (~$2,000) After AI-Generated Voice Impersonated Relative",
-      "date": "2026-07-04",
-      "category": "fraud",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1567",
       "incident_id": 1567,
       "title": "Serve Robotics Delivery Robot Reportedly Crashed into Chicago Bus Shelter After Failing to Detect Gl",
@@ -3370,9 +3362,9 @@
     }
   ],
   "stats": {
-    "total": 421,
+    "total": 420,
     "last7Days": 15,
     "last30Days": 272
   },
-  "lastUpdated": "2026-10-02T10:55:36.973731+05:30"
+  "lastUpdated": "2026-10-02T20:11:41.220969+05:30"
 }
