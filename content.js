@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 02 2026",
+            "headline": "GitLab AI Gateway Flaw—Critical 9.9 CVE Allows Command Execution",
+            "title": "GitLab Patches Critical AI Gateway Flaw Allowing Command Execution",
+            "content": "GitLab has issued a patch for a critical vulnerability in its AI Gateway, tracked as CVE-2026-104286, which could enable command execution on self-hosted servers. This flaw, with a CVSS score of 9.9, affects organizations using the Duo Agent Platform to connect GitLab instances to AI models. The vulnerability allows logged-in users to execute commands under specific conditions, posing a significant risk to affected systems. Organizations hosting their own AI Gateway are advised to apply the patch immediately to mitigate potential exploitation. This incident underscores the importance of securing AI integrations in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Dell CSM Vulnerabilities—Critical Flaws Allow Root Access",
+            "title": "Dell Patches Critical Flaws in Container Storage Modules",
+            "content": "Dell has released security updates to address multiple critical vulnerabilities in its Container Storage Modules (CSM), including CVE-2026-63688 with a perfect CVSS score of 10.0. These flaws could be exploited by attackers to gain unauthenticated admin access and root control over Kubernetes nodes. The vulnerabilities stem from missing authentication mechanisms for critical operations. Organizations using Dell CSM are urged to update their systems immediately to prevent potential breaches. This highlights the ongoing challenges in securing containerized environments against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Warlock Group Targets SharePoint in Infrastructure Attacks",
+            "title": "Warlock Expands SharePoint Exploitation in Critical Infrastructure Attacks",
+            "content": "The China-based hacking group Warlock has intensified its exploitation of SharePoint vulnerabilities, targeting critical infrastructure since July 2025. These attacks focus on exploiting unpatched systems to gain unauthorized access and disrupt operations. The group's activities highlight the persistent threat posed by state-sponsored actors targeting enterprise collaboration tools. Organizations using SharePoint are advised to apply security patches promptly and monitor for unusual activity. This trend underscores the importance of securing collaboration platforms against advanced persistent threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/warlock-expands-sharepoint-exploitation-in-critical-infrastructure-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Fortinet FortiMail Zero-Day—Urgent Action Required",
+            "title": "Exploited Fortinet FortiMail Zero-Day Calls for Urgent Action",
+            "content": "A critical path traversal vulnerability, CVE-2026-104286, has been identified in Fortinet's FortiMail, allowing attackers to write arbitrary files to the system. This zero-day flaw is actively exploited, prompting urgent calls for action from security professionals. Fortinet users are advised to apply available patches and review system logs for signs of compromise. The vulnerability's exploitation highlights the need for robust security measures in email security solutions. This incident adds to the growing list of zero-day vulnerabilities affecting enterprise security products.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploited-fortinet-fortimail-zero-day-calls-for-urgent-action/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Zero-Day Response Challenges—Kiteworks & Citrix Cases",
+            "title": "Kiteworks & Citrix Incidents Show Challenges of Zero-Day Response",
+            "content": "Recent incidents involving Kiteworks and Citrix highlight the difficulties organizations face in responding to zero-day vulnerabilities. Kiteworks advised customers to power down its data-protection platform for nine hours, while Citrix remained silent on attacks until a patch was released. These cases illustrate the complex balance between transparency and security in zero-day management. Organizations are encouraged to develop robust incident response plans and maintain open communication with stakeholders. The incidents underscore the critical need for timely patching and proactive threat management.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "SWIFT Middleware Vulnerabilities—Patch Now to Prevent RCE",
+            "title": "SWIFT Banking & Government Middleware Enables Remote Code Execution",
+            "content": "Critical vulnerabilities in SWIFT banking and government middleware have been identified, enabling remote code execution (RCE) exploits. These flaws could be leveraged to bypass hardware-based multi-factor authentication (MFA) in highly sensitive environments. Organizations using this middleware are urged to apply patches immediately to prevent potential security breaches. The vulnerabilities highlight the importance of securing middleware components that serve as critical infrastructure in financial and governmental operations. This incident serves as a reminder of the persistent threats facing legacy systems.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "EU Cyber Resilience Act—Manual Vulnerability Triage Obsolete",
+            "title": "EU Cyber Resilience Act ‘Completely Kills’ Manual Vulnerability Triage",
+            "content": "The EU Cyber Resilience Act (CRA) is set to transform international technology markets by mandating cyber resilience from the ground up. This legislation requires mandatory reporting and automated vulnerability management, rendering manual triage obsolete. Technology vendors must adapt to these stringent requirements to remain competitive in the EU market. The CRA aims to enhance cybersecurity standards and operational capacities across the industry. Organizations are advised to review their vulnerability management processes to align with the new regulatory landscape.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4229824/eu-cyber-resilience-act-completely-kills-manual-vulnerability-triage.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Antino Backdoor Uses Outlook for Espionage in Asia",
+            "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in Espionage Campaign",
+            "content": "A China-nexus threat actor has launched a new espionage campaign targeting government and policy organizations across Asia, deploying the Antino backdoor. This malware leverages Microsoft Outlook and OneDrive for command-and-control (C2) communications, affecting countries like Taiwan, India, and the Philippines. The campaign underscores the sophisticated tactics used by state-sponsored groups to infiltrate sensitive networks. Organizations in the region are urged to enhance their email security measures and monitor for signs of compromise. This development highlights the ongoing cyber threats facing geopolitical entities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Fake Zoom Installer Targets macOS with CloudSyncD Backdoor",
+            "title": "macOS Users Targeted by Fake Zoom Installer Carrying CloudSyncD Backdoor",
+            "content": "A fake Zoom installer is targeting macOS users, deploying the CloudSyncD backdoor to compromise systems. The dropper, containing a universal Mach-O file, extracts malicious payloads at runtime. This attack vector highlights the risks of downloading software from untrusted sources, particularly for macOS users. Security professionals are advised to educate users on verifying software authenticity and to implement robust endpoint protection measures. This incident underscores the need for vigilance against social engineering tactics in software distribution.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/macos-users-targeted-by-fake-zoom-installer-carrying-cloudsyncd-backdoor/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "OpenAI Dismisses Researchers for Data Mishandling",
+            "title": "OpenAI Parts Ways With Three Safety Researchers Over Data Mishandling",
+            "content": "OpenAI has terminated three members of its safety team following the unauthorized disclosure of sensitive company information. This breach of policy underscores the critical importance of data handling protocols within AI research organizations. OpenAI's swift action reflects its commitment to maintaining data security and integrity. The incident serves as a reminder for organizations to enforce strict access controls and employee training on data protection. This development highlights the challenges in balancing transparency and confidentiality in AI research.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 01 2026",
             "headline": "AI-Powered Zero-Day Chain Exposes 543K Secrets",
             "title": "AI-Powered Zero-Day Chain and 543K Live Secrets Uncovered",
@@ -85,15 +175,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Sep 29 2026",
-            "headline": "Apple Zero-Day Exploited in Sophisticated Attacks",
-            "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
-            "content": "Attackers are exploiting a zero-day vulnerability in Apple systems, identified as CVE-2026-86950, which involves an out-of-bounds write flaw. This sophisticated exploitation method poses a significant threat to Apple users, potentially allowing unauthorized access and data breaches. The vulnerability highlights the ongoing challenges in securing widely-used platforms against advanced threat actors. Apple users are advised to apply security updates promptly and remain vigilant against potential exploits. This incident underscores the critical need for timely patch management in safeguarding digital assets.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
-            "relatedResources": []
-        },
-        {
             "date": "Oct 01 2026",
             "headline": "Teen Arrested for Running KillSec—110TB Data Seized",
             "title": "Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
@@ -101,97 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Zimbra Flaw Exploited Before Disclosure—Patch Now",
-            "title": "Zimbra Vulnerability CVE-2026-73570 Exploited in the Wild Before Public Disclosure",
-            "content": "A critical vulnerability in Zimbra, identified as CVE-2026-73570, was exploited in the wild before its public disclosure. The flaw allows attackers to execute malicious code via specially crafted emails without any user interaction. This vulnerability poses a significant risk to organizations using Zimbra, as it could lead to unauthorized access and data breaches. Security experts recommend immediate patching and reviewing email security protocols to mitigate potential exploitation. This incident underscores the importance of proactive vulnerability management in safeguarding email systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Cisco SD-WAN Flaw Added to Exploited List—Act Now",
-            "title": "CISA Adds Cisco Catalyst SD-WAN Manager Auth Bypass to Known Exploited Vulnerabilities",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical authentication bypass vulnerability in Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities list. Tracked as CVE-2026-76504, this flaw allows attackers to bypass authentication mechanisms, posing a severe risk to organizations using the platform. Cisco has released patches to address the issue, and users are urged to update their systems immediately. This addition to the KEV list highlights the ongoing threat of vulnerabilities in widely used network management tools.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Apple CoreGraphics Flaw Exploited via Malicious PDFs",
-            "title": "Apple CoreGraphics Vulnerability CVE-2026-86950 Exploited with Malicious PDFs",
-            "content": "Security researchers have released a proof-of-concept for CVE-2026-86950, a vulnerability in Apple's CoreGraphics that can be exploited using malicious PDFs. This flaw affects unpatched iPhones and Macs, potentially allowing attackers to execute arbitrary code. Apple has acknowledged that the vulnerability may have been used in targeted attacks against specific individuals. Users are advised to update their devices to the latest software versions to protect against potential exploitation. This incident highlights the ongoing risks associated with document-based attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Dutch Police Arrest Hacker in ShinyHunters Probe",
-            "title": "Dutch Police Arrest ‘Reformed’ Hacker in ShinyHunters Investigation",
-            "content": "Dutch authorities have arrested a 23-year-old hacker linked to the ShinyHunters group, known for data thefts and extortion campaigns. The arrest follows a series of attacks attributed to ShinyHunters, which escalated after the suspect's detention. This development is part of a broader effort to dismantle cybercrime networks operating globally. Organizations are encouraged to remain vigilant and enhance their cybersecurity measures to protect against data breaches and extortion attempts. The arrest underscores the ongoing threat posed by organized cybercriminal groups.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Cisco SD-WAN Zero-Day Exploited—Patch Released",
-            "title": "Cisco SD-WAN Manager Hit by Zero-Day Admin Access Attack",
-            "content": "Cisco has addressed a zero-day vulnerability in its SD-WAN management software that allowed attackers to bypass authentication checks. The flaw, affecting Cisco Catalyst SD-WAN Manager, enabled unauthorized access to administrative functions. Cisco has released a patch to fix the issue and advises users to update their systems promptly. This vulnerability highlights the critical need for robust security measures in network management solutions to prevent unauthorized access and potential data breaches.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4229603/cisco-sd-wan-manager-hit-by-zero-day-admin-access-attack-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Warlock Ransomware Targets Iberian Organizations",
-            "title": "Warlock Ransomware Hits Large Spanish, Portuguese Organizations",
-            "content": "The Warlock ransomware group, suspected to have ties to Chinese cybercrime gangs, has launched attacks on major organizations in Spain and Portugal. Despite appearing as a cybercrime gang, Warlock exhibits characteristics of state-sponsored advanced persistent threats (APTs). The attacks have disrupted operations and led to significant data breaches. Organizations in the region are advised to enhance their cybersecurity defenses and prepare for potential ransomware incidents. This development highlights the evolving tactics of ransomware groups and their impact on critical infrastructure.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Zero Trust Model Resilient Against AI Threats",
-            "title": "Zero Trust Creator Says Model Holds Firm Against AI-Assisted Attacks",
-            "content": "John Kindervag, the creator of the Zero Trust security model, reaffirms its effectiveness against AI-assisted cyberattacks. Despite the rise of AI in cybersecurity, Kindervag emphasizes that proper implementation of Zero Trust principles can mitigate risks associated with AI-driven threats. The model focuses on verifying every user and device, regardless of their location, before granting access to resources. Organizations are encouraged to adopt and correctly implement Zero Trust strategies to enhance their security posture in the AI era.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/zero-trust-creator-says-model-holds-firm-against-ai-assisted-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Osavul Secures $10M for Hybrid Risk Intelligence",
-            "title": "Osavul Lands $10 Million to Spot Hostile Intent Across Cyber, Physical Domains",
-            "content": "Osavul, a hybrid risk intelligence company, has raised $10 million in a Series A funding round led by 33N Ventures. The company specializes in detecting hostile intent across both cyber and physical domains, providing comprehensive security solutions. This funding will enable Osavul to expand its capabilities and enhance its threat detection technologies. The investment reflects the growing demand for integrated security solutions that address the complex landscape of modern threats. Organizations are increasingly seeking advanced tools to identify and mitigate risks across multiple domains.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/osavul-lands-10-million-to-spot-hostile-intent-across-cyber-physical-domains/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Enterprises Lag in AI, Quantum Threat Preparedness",
-            "title": "Enterprises Struggle to Prepare for AI and Quantum Threats, PwC Says",
-            "content": "A recent PwC survey reveals that only 22% of business leaders are willing to use fully autonomous AI for cyber defense, and a mere 21% are implementing quantum-resistant security measures. This indicates a significant gap in preparedness for emerging AI and quantum computing threats. The survey highlights the need for organizations to invest in advanced security technologies and strategies to protect against future risks. As AI and quantum computing continue to evolve, enterprises must prioritize their cybersecurity efforts to stay ahead of potential threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Sep 29 2026",
-            "headline": "Source-Aware Verification Boosts MCP Agent Reliability",
-            "title": "Enhancing MCP Agents with Source-Aware Verification for Accurate Information",
-            "content": "Hugging Face has introduced a source-aware verification system for Multi-Channel Processing (MCP) agents, aiming to improve the reliability of information these agents provide. This system emphasizes the importance of not just verifying facts but also ensuring the credibility of their sources. By integrating this verification layer, MCP agents can better assess the trustworthiness of data, which is crucial for applications in sensitive sectors like finance and healthcare. This development addresses growing concerns about misinformation in AI outputs. Professionals using MCP agents should consider implementing this verification to enhance data integrity.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+            "date": "Oct 02 2026",
+            "headline": "Tech Giants Sign AI Safety Pledge at White House",
+            "title": "White House Gathers Tech Leaders for AI Safety Commitment",
+            "content": "In a significant move towards AI regulation, the White House convened major tech CEOs, including Mark Zuckerberg, Jeff Bezos, Elon Musk, and Anthropic's Dario Amodei, to sign a \"morally binding\" AI safety pledge. President Donald Trump also signed an executive order rebranding artificial intelligence as \"super intelligence.\" This initiative aims to address growing concerns about AI's potential risks and ethical implications. The pledge underscores the importance of developing AI technologies responsibly and with transparency. Tech companies are urged to prioritize safety measures in their AI development processes to mitigate potential harms.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Elon Musk and Shivon Zilis Split Announced on X",
+            "title": "Shivon Zilis Announces Breakup with Elon Musk via Social Media",
+            "content": "Shivon Zilis, known for her work in AI, publicly announced her breakup with Elon Musk, the father of four of her children, on the social media platform X. The announcement was made through a quote-tweet from \"Big Tech Alert,\" an account that tracks tech industry figures' social media activity. This personal development comes amidst Musk's ongoing high-profile ventures in AI and space exploration. The breakup highlights the intersection of personal and professional lives in the tech industry, where social media platforms often serve as the stage for significant announcements.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Blackstone's Jas Khaira at TechCrunch Disrupt 2026",
+            "title": "Jas Khaira Discusses Building Next-Gen AI at TechCrunch Disrupt",
+            "content": "Jas Khaira from Blackstone is set to speak at TechCrunch Disrupt 2026, focusing on strategies for building the next generation of AI giants. The event, known for showcasing cutting-edge technology and innovation, provides a platform for industry leaders to share insights and strategies. Khaira's session will likely cover investment trends, technological advancements, and the future landscape of AI development. Attendees are encouraged to register early to secure their passes and benefit from promotional offers. This session is crucial for professionals looking to understand the evolving AI ecosystem.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Circuit Breaker Labs Develops AI Safety \"Crash-Test Dummies\"",
+            "title": "Circuit Breaker Labs Innovates AI Safety with New Testing Tools",
+            "content": "Circuit Breaker Labs has introduced innovative \"crash-test dummies\" designed to enhance AI safety, particularly for children and vulnerable users. These tools aim to address the psychological harm AI technologies can cause, a concern often overshadowed by existential AI risks. By simulating user interactions, the dummies help developers identify and mitigate potential negative impacts of AI systems. This initiative is part of a broader effort to ensure AI technologies are safe and user-friendly, emphasizing the importance of ethical AI development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "GPT-6 Model Guide Released for Startups",
+            "title": "Comprehensive Guide for GPT-6 Model Utilization by Startups",
+            "content": "OpenAI has released a detailed guide to assist startups in leveraging the capabilities of the GPT-6 family of models. The guide covers essential aspects such as model selection, tuning reasoning efforts, improving prompts, and coordinating tools for production workflows. This resource aims to streamline the integration of GPT-6 models into business operations, enhancing efficiency and performance. Startups are encouraged to utilize this guide to maximize the potential of AI technologies in their operations, ensuring competitive advantage and innovation.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/practical-guide-building-gpt-6",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Rise of GTM Engineers Discussed at TechCrunch Disrupt",
+            "title": "Kareem Amin Highlights GTM Engineer Role at TechCrunch Disrupt",
+            "content": "Kareem Amin, Co-founder and CEO of Clay, addressed the increasing significance of the Go-To-Market (GTM) engineer role during his session at TechCrunch Disrupt 2026. Amin emphasized the strategic importance of GTM engineers in bridging the gap between product development and market execution. This emerging role is crucial for startups aiming to optimize their market entry strategies and enhance product adoption. Attendees are encouraged to explore this evolving career path, which combines technical expertise with business acumen.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "AI Hallucinations Impacting Customer Interactions in NYC",
+            "title": "AI Hallucinations Lead to Customer Service Challenges in NYC",
+            "content": "AI hallucinations, where AI systems generate incorrect or misleading information, are complicating customer interactions in New York City restaurants. Servers like Madison report increased incidents of customers relying on AI for dietary information, leading to potential safety risks. This trend highlights the need for improved AI accuracy and reliability, especially in contexts where misinformation can have serious consequences. Businesses are advised to educate staff on AI limitations and encourage direct communication with customers to mitigate risks.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Camouflaged Data Centers: A New Trend in San Antonio",
+            "title": "San Antonio Embraces Camouflaged Data Centers Amid Expansion",
+            "content": "San Antonio is witnessing a shift in data center design, with new facilities being camouflaged to blend into their surroundings. This trend responds to public concerns about the environmental and aesthetic impact of large hyperscale data centers. Councilmember Ric Galvan recalls the city's early data centers as modest structures, contrasting with today's expansive facilities. The camouflaging approach aims to reduce community pushback and integrate data centers more harmoniously into urban landscapes.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Amazon Warns Against Blocking AI Data Centers",
+            "title": "Amazon Advocates for AI Data Center Projects Amid Public Concerns",
+            "content": "Amazon has issued a strong warning against blocking AI data center projects, citing potential economic and national security repercussions. In a detailed blog post, AWS CEO Matt Garman addressed public apprehensions about the environmental and social impacts of data centers. Amazon argues that these facilities are crucial for supporting AI advancements and maintaining the U.S.'s competitive edge. The company urges communities to consider the broader benefits of AI infrastructure, emphasizing its role in driving innovation and economic growth.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Suno Expands AI Music to Include Spoken Word Generation",
+            "title": "Suno Launches AI-Generated Spoken Word Feature in Public Beta",
+            "content": "Suno, an AI music creation platform, has introduced a new feature that generates spoken words from scripts or prompted descriptions. This capability, now in public beta, allows users to create voiceovers and background music simultaneously on Suno's web and mobile platforms. The expansion into spoken word generation marks a significant enhancement of Suno's offerings, catering to a broader range of creative and commercial applications. Users are encouraged to explore this feature to enhance multimedia projects with AI-generated content.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "OpenAI has terminated three safety researchers following an internal investigation that revealed improper handling of sensitive company information. The decision underscores OpenAI's commitment to safeguarding proprietary data, especially as it continues to develop advanced AI models like GPT-6. The breach involved unauthorized sharing of internal documents, raising concerns about data security protocols within AI firms. This incident highlights the ongoing challenges tech companies face in balancing openness with the need to protect intellectual property. Organizations are advised to review their data handling and security measures to prevent similar breaches.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Google Wins Dismissal of Antitrust Lawsuits Over AI Search",
-            "title": "Judge Dismisses Antitrust Cases Against Google's AI Search Features",
-            "content": "A federal judge has dismissed antitrust lawsuits filed by Chegg and Penske Media Corporation against Google, which accused the tech giant of monopolistic practices with its AI-powered search features. The lawsuits claimed Google's AI Overviews unfairly diverted web traffic from competitors. US District Judge Amit Mehta ruled in favor of Google, citing insufficient evidence of anticompetitive conduct. This decision may set a precedent for future legal challenges involving AI technologies and market competition. Companies should monitor this evolving legal landscape as AI continues to reshape digital markets.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Amazon's Strands Decider 2B Joins AI Decision Model Race",
-            "title": "AWS Releases Strands Decider 2B Amid AI Model Surge",
-            "content": "Amazon Web Services' Strand Labs has launched Strands Decider 2B, a new Jevalike decision model, as the market for AI decision models becomes increasingly competitive. This release aims to enhance decision-making capabilities in cloud environments, leveraging AWS's robust infrastructure. The model is designed to process complex datasets and provide actionable insights, appealing to enterprises seeking to optimize operations. As decision models flood the market, businesses must evaluate these tools' scalability and integration capabilities to maintain a competitive edge.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Shopify Unveils AI-Powered Canvas for Store Creation",
-            "title": "Shopify Launches Canvas for AI-Driven Online Store Building",
-            "content": "Shopify has introduced Canvas, a new tool that allows merchants to build and customize online stores through conversational interactions with its AI agent, Sidekick. This innovative approach enables real-time modifications, enhancing user experience and streamlining the store setup process. Canvas leverages AI to simplify e-commerce, making it accessible to users with varying technical expertise. As AI continues to transform digital commerce, businesses should explore integrating such technologies to improve customer engagement and operational efficiency.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Airbnb's Chesky Calls for AI-Native Operating System",
-            "title": "Brian Chesky Advocates for Dedicated AI Operating Systems",
-            "content": "In a recent interview, Airbnb CEO Brian Chesky emphasized the need for a dedicated AI-native operating system to optimize the functionality of AI agents. Chesky highlighted the limitations of current systems in supporting advanced AI applications, advocating for a platform designed specifically for AI integration. This vision aligns with the growing trend of AI specialization in tech infrastructure. As AI agents become more prevalent, companies should consider the implications of integrating AI-native systems to enhance performance and user experience.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "OpenAI's Dots Agent Targets Meta's Muse AI Platform",
-            "title": "OpenAI Unveils Dots Agent to Compete with Meta's Muse AI",
-            "content": "At its annual DevDay conference, OpenAI introduced Dots, a new AI agent powered by GPT-6 Astra, aiming to rival Meta's successful Muse AI platform. Dots promises enhanced capabilities and integration options, positioning OpenAI as a formidable competitor in the AI agent market. This move reflects the intensifying competition among tech giants to dominate AI-driven services. Organizations should assess the potential of these emerging platforms to enhance their AI strategies and maintain competitive advantage.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Photon Secures $4.5M to Replace Apps with AI Agents",
-            "title": "Photon Raises $4.5M to Develop AI Agents for Messaging Platforms",
-            "content": "Photon has raised $4.5 million to support its mission of replacing traditional mobile apps with AI agents that operate across messaging platforms like iMessage, SMS/RCS, and email. This funding will accelerate the development of versatile agents capable of performing tasks traditionally handled by standalone apps. As consumer preferences shift towards seamless, integrated digital experiences, businesses should consider the potential of AI agents to enhance user engagement and streamline service delivery.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Legato Launches AI Hearing Glasses to Revolutionize Hearing Care",
-            "title": "Legato Introduces AI-Powered Hearing Glasses for Enhanced Accessibility",
-            "content": "Legato, a hearing tech startup, has launched AI-powered hearing glasses designed to improve accessibility and address the limitations of traditional hearing aids. These glasses aim to reduce the cost, discomfort, and stigma associated with conventional devices, offering a discreet alternative for users. By integrating AI technology, Legato enhances sound quality and user experience, potentially transforming the hearing care industry. Professionals in the field should explore the implications of such innovations on patient care and market dynamics.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Satlyt Secures $8M to Pioneer AI on Satellites",
-            "title": "Satlyt Raises $8M to Develop Open Software for Satellite AI",
-            "content": "Satlyt, founded by a former Google and SpaceX product manager, has raised $8 million to advance its vision of running AI on satellites. The company aims to create an open software platform that can operate on various satellite systems, contrasting with SpaceX's closed approach. This initiative seeks to democratize access to orbital computing, enabling diverse applications in earth observation and telecommunications. Industry stakeholders should consider the potential impact of open satellite AI on data accessibility and innovation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Olmo-core 3: Scalable Training for Large AI Models",
-            "title": "Hugging Face Introduces Olmo-core 3 for Scalable AI Model Training",
-            "content": "Hugging Face has launched Olmo-core 3, an open and scalable training infrastructure designed for large mixtures of experts (MoEs) models. This platform aims to streamline the training process for complex AI systems, enhancing efficiency and reducing computational costs. Olmo-core 3 supports diverse AI applications, from natural language processing to computer vision, by optimizing resource allocation and model performance. Organizations developing large-scale AI models should explore Olmo-core 3's capabilities to improve training workflows and scalability.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/olmocore3",
             "relatedResources": []
         }
     ],
@@ -490,6 +490,28 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-88771",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-102490",
+            "dateAdded": "Oct 02, 2026",
+            "vendor": "Zammad GmbH Zammad",
+            "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-102489",
+            "dateAdded": "Oct 02, 2026",
+            "vendor": "Zammad GmbH Zammad",
+            "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489",
             "isZeroDay": false
         },
         {
