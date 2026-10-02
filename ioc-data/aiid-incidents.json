@@ -1,6 +1,22 @@
 {
   "incidents": [
     {
+      "id": "AIID-1720",
+      "incident_id": 1720,
+      "title": "Stow, Massachusetts, Police Officer Allegedly Used Flock License-Plate Reader System to Track Former",
+      "date": "2026-10-01",
+      "category": "other",
+      "severity": "medium"
+    },
+    {
+      "id": "AIID-1721",
+      "incident_id": 1721,
+      "title": "Wisconsin U.S. Rep. Derrick Van Orden Reportedly Posted Grok Imagine Deepfakes Depicting Opponent Re",
+      "date": "2026-10-01",
+      "category": "deepfake",
+      "severity": "medium"
+    },
+    {
       "id": "AIID-1715",
       "incident_id": 1715,
       "title": "Russia-Linked Matryoshka Operators Reportedly Circulated Deepfake Mother Jones Video Impersonating E",
@@ -3337,14 +3353,6 @@
       "severity": "medium"
     },
     {
-      "id": "AIID-1565",
-      "incident_id": 1565,
-      "title": "Spokane-Area Fred's Appliance and Victory Media Allegedly Used AI-Assisted Voice Editing Without Spo",
-      "date": "2026-07-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
       "id": "AIID-1566",
       "incident_id": 1566,
       "title": "Indore Resident Reportedly Lost \u20b91.83 Lakh (~$2,000) After AI-Generated Voice Impersonated Relative",
@@ -3359,28 +3367,12 @@
       "date": "2026-07-04",
       "category": "other",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1568",
-      "incident_id": 1568,
-      "title": "Coco Delivery Robot Reportedly Crashed into Chicago Bus Shelter",
-      "date": "2026-07-04",
-      "category": "other",
-      "severity": "medium"
-    },
-    {
-      "id": "AIID-1569",
-      "incident_id": 1569,
-      "title": "GPT-4o Allegedly Reinforced California Man Michael Lines's Delusions Before Suicide Attempt",
-      "date": "2026-07-04",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 422,
-    "last7Days": 13,
-    "last30Days": 270
+    "total": 421,
+    "last7Days": 15,
+    "last30Days": 272
   },
-  "lastUpdated": "2026-10-02T04:20:51.235653+05:30"
+  "lastUpdated": "2026-10-02T10:55:36.973731+05:30"
 }
