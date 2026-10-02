@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 01 2026",
+            "headline": "AI-Powered Zero-Day Chain Exposes 543K Secrets",
+            "title": "AI-Powered Zero-Day Chain and 543K Live Secrets Uncovered",
+            "content": "This week, cybersecurity experts spotlighted a series of vulnerabilities where seemingly benign operations like inspecting, caching, and storing can lead to severe security breaches. Notably, an AI-powered zero-day chain has been identified, potentially exposing 543,000 live secrets. These vulnerabilities can allow unauthorized code execution and data leaks, posing significant risks to enterprises relying on automated systems. The findings underscore the importance of scrutinizing AI model operations and ensuring robust security measures are in place. Organizations are advised to review their AI deployments and enhance monitoring to mitigate these risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Police Dismantle KillSec Ransomware—Teen Leader Identified",
+            "title": "Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
+            "content": "Law enforcement agencies have successfully dismantled the KillSec ransomware operation, gaining control over its leak site and securing 110 terabytes of stolen data. The operation led to the identification of the alleged mastermind, a 16-year-old, highlighting the increasing involvement of younger individuals in cybercrime. KillSec has reportedly victimized around 500 entities globally over the past two years. This development emphasizes the need for enhanced international cooperation in tackling cybercrime. Organizations are urged to strengthen their ransomware defenses and report suspicious activities to authorities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 30 2026",
+            "headline": "Cisco SD-WAN Manager Zero-Day Exploited—Patch Urgently",
+            "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
+            "content": "Cisco has issued a warning about a critical zero-day vulnerability, CVE-2026-76504, in its Catalyst SD-WAN Manager. This flaw allows remote attackers to exploit the Manager's API without authentication, posing a significant threat to enterprises using Cisco's SD-WAN networks. The vulnerability is actively being exploited, underscoring the urgency for affected organizations to implement available mitigations and monitor for unusual activity. This incident highlights the persistent targeting of network management tools by threat actors. Cisco is working on a patch, and users should stay alert for updates.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Persistent WordPress Backdoor Evades Cleanup Efforts",
+            "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
+            "content": "Cybersecurity researchers have uncovered a sophisticated WordPress backdoor, codenamed SC, which persists through multiple infection vectors, including files, databases, and shared memory. This backdoor can regenerate itself even after cleanup, making it exceptionally challenging to eradicate. The discovery highlights the evolving tactics of threat actors targeting popular content management systems. WordPress site administrators are advised to conduct comprehensive security audits, update plugins and themes, and consider deploying advanced threat detection solutions to prevent such compromises.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "AI Speeds Attacks—Security Fundamentals Remain Key",
+            "title": "AI Has Changed Attack Speed, Not Security Fundamentals",
+            "content": "The integration of artificial intelligence (AI) in cyberattacks has accelerated the discovery and exploitation of vulnerabilities. However, experts emphasize that robust application security fundamentals, such as defense-in-depth and virtual patching, remain crucial. Despite AI's role in speeding up attack vectors, the core principles of cybersecurity have not changed. Organizations should focus on strengthening their security frameworks and ensuring comprehensive threat detection capabilities. This approach will help mitigate the risks posed by AI-enhanced cyber threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Armadin Secures $255M—Valuation Hits $2.5B",
+            "title": "Kevin Mandia’s Armadin Raises $255 Million at $2.5 Billion Valuation",
+            "content": "Armadin, an AI-powered offensive security startup founded by Kevin Mandia, has raised $255 million in a Series B funding round, bringing its total funding to approximately $445 million. The company, which launched publicly just seven months ago, is now valued at $2.5 billion. Armadin's rapid growth reflects the increasing demand for advanced security solutions that leverage AI to proactively identify and mitigate threats. Investors are betting on the company's potential to revolutionize the cybersecurity landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "US Blacklists ATM Malware Developer—Crackdown Continues",
+            "title": "Treasury Blacklists Most-Wanted ATM Malware Developer and His Network",
+            "content": "The US Treasury Department has blacklisted a notorious ATM malware developer and his network, intensifying efforts to dismantle the Tren de Aragua criminal organization. Known for their ATM jackpotting schemes, the group has been a major threat to financial institutions. This move is part of a broader strategy to curb cybercrime by targeting key players and disrupting their operations. Financial institutions are encouraged to enhance their ATM security measures and report any suspicious activities to authorities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "OpenAI Thwarts AI Model Extraction Campaign",
+            "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
+            "content": "OpenAI has successfully disrupted a coordinated campaign aimed at extracting protected reasoning from its AI models. The campaign, attributed to Moonshot AI Associates, involved sophisticated distillation techniques to illicitly obtain proprietary model insights. This incident underscores the growing threat of intellectual property theft in the AI domain. OpenAI's swift response highlights the importance of robust security measures in protecting AI assets. Organizations using AI technologies should remain vigilant against similar threats and implement comprehensive security protocols.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 30 2026",
+            "headline": "Cyberattack Hits South African Air Traffic Control",
+            "title": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control",
+            "content": "South Africa's air traffic control systems have been targeted by a cyberattack, involving a ransomware toolkit on an operational network. This incident is part of a broader trend of cyberattacks on aviation infrastructure, raising concerns about the sector's vulnerability. The attack has prompted South African authorities to seek international assistance in mitigating the impact and preventing future incidents. Aviation organizations worldwide are urged to review their cybersecurity strategies and enhance defenses against such threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 29 2026",
+            "headline": "Apple Zero-Day Exploited in Sophisticated Attacks",
+            "title": "Apple Zero-Day Vulnerability Weaponized in Targeted Attacks",
+            "content": "Attackers are exploiting a zero-day vulnerability in Apple systems, identified as CVE-2026-86950, which involves an out-of-bounds write flaw. This sophisticated exploitation method poses a significant threat to Apple users, potentially allowing unauthorized access and data breaches. The vulnerability highlights the ongoing challenges in securing widely-used platforms against advanced threat actors. Apple users are advised to apply security updates promptly and remain vigilant against potential exploits. This incident underscores the critical need for timely patch management in safeguarding digital assets.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/apple-zero-day-vulnerability-weaponized-targeted-attacks",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
             "headline": "Teen Arrested for Running KillSec—110TB Data Seized",
             "title": "Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
             "content": "Spanish authorities have arrested a 16-year-old suspected of leading the KillSec ransomware group, responsible for stealing and threatening to leak data from numerous organizations. The arrest led to the seizure of KillSec's leak site and 110 terabytes of stolen data. KillSec's operations involved extorting victims by threatening to publish sensitive information unless a ransom was paid. This arrest highlights the increasing involvement of younger individuals in sophisticated cybercrime activities. Organizations are urged to strengthen their cybersecurity defenses to prevent data breaches and ransomware attacks.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/enterprises-struggle-to-prepare-for-ai-and-quantum-threats-pwc-says/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Bitget Loses $387.5M—Zero-Day Exploit Blamed",
-            "title": "Bitget Confirms Zero-Day Exploit in Third-Party Software Led to Massive Theft",
-            "content": "Cryptocurrency exchange Bitget has confirmed that a zero-day vulnerability in third-party security software was exploited, resulting in a $387.5 million theft. The breach, under investigation by cybersecurity firm SlowMist, highlights vulnerabilities in external security products used by financial platforms. The attackers leveraged the flaw to bypass defenses and siphon funds, impacting Bitget's operations and customer trust. This incident underscores the critical need for rigorous third-party security assessments. Bitget is working closely with law enforcement to trace the attackers and recover the stolen assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Citrix NetScaler Exploit—Superuser Access via Web Shells",
-            "title": "Citrix NetScaler Vulnerability Exploited for Superuser Access and Data Theft",
-            "content": "Threat actors are exploiting a critical command injection vulnerability in Citrix NetScaler ADC and Gateway, allowing them to deploy web shells and gain superuser access. The exploitation, analyzed by LevelBlue's Threat Hunt Operations & Research team, involves mapping web shells to CSS-like URLs, facilitating stealthy data exfiltration. This vulnerability poses significant risks to organizations relying on Citrix products for secure network access. Affected entities should prioritize patching and review network logs for suspicious activity. The incident highlights ongoing threats to enterprise network appliances.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "WatchGuard Patches 15 Bugs—Critical Code Injection Fixed",
-            "title": "WatchGuard Releases Patches for Critical Fireware OS Vulnerabilities",
-            "content": "WatchGuard has issued patches addressing 15 vulnerabilities in its Fireware OS, including critical code execution and denial-of-service flaws. These vulnerabilities, if exploited, could allow attackers to execute arbitrary code or disrupt services, impacting the security of networks using WatchGuard appliances. Organizations are urged to update to the latest Fireware OS version to mitigate potential risks. The patch release underscores the importance of timely updates in maintaining network security. WatchGuard's proactive response aims to protect its users from emerging threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/watchguard-patches-critical-fireware-os-code-injection-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "ChatGPT Custom GPTs Abused—RAT Delivered via ClickFix",
-            "title": "Attackers Exploit ChatGPT Custom GPTs to Deliver Remote Access Trojans",
-            "content": "Cybercriminals are exploiting ChatGPT's Custom GPTs to masquerade as legitimate offerings, directing users to malicious sites that deploy Remote Access Trojans (RATs) using ClickFix lures. The activity, observed by Huntress, demonstrates the misuse of AI-driven platforms to facilitate malware distribution. This tactic poses a threat to users who may be deceived by seemingly authentic AI applications. Organizations should educate users on identifying phishing attempts and scrutinize AI-based tools for potential security risks. The incident highlights the evolving landscape of AI exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Over 100 Browser Vulnerabilities Patched—Update Chrome, Firefox Now",
-            "title": "Critical Vulnerabilities in Chrome and Firefox Addressed in Latest Updates",
-            "content": "Google and Mozilla have released updates for Chrome and Firefox, respectively, patching over 100 vulnerabilities that could allow remote code execution or sandbox escapes. These updates are critical for maintaining browser security and protecting users from potential exploitation. Affected users should update their browsers immediately to mitigate risks. The large number of vulnerabilities highlights the ongoing challenges in securing widely-used software. Regular updates remain a key defense against cyber threats targeting browser platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chrome-firefox-updates-patch-over-100-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "AI Coding Agents Leak 13K Images—Sensitive Data Exposed",
-            "title": "AI Coding Agents Expose Internal Images and Billing Records on GitHub",
-            "content": "AI coding agents have inadvertently exposed over 13,000 internal images, including sensitive billing records, on public GitHub repositories. Security firm Glow discovered the leak, which affects developers from more than 300 organizations. This incident raises concerns about the security practices of AI-driven development tools and their potential to leak sensitive data. Companies should review their AI integration processes and implement stricter access controls to prevent unauthorized data exposure. The event underscores the need for robust data management policies in AI environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "US-Focused Phishing Steals Microsoft 365 Sessions—RMM Tools Deployed",
-            "title": "Phishing Campaign Targets US Executives, Deploys Remote Management Tools",
-            "content": "ANY.RUN researchers have identified a phishing campaign targeting US-based executives, stealing Microsoft 365 sessions and deploying remote management tools for unauthorized access. The campaign, affecting sectors like technology and government, uses sophisticated techniques to compromise high-value targets. Organizations are advised to enhance email security measures and educate employees on phishing risks. This campaign highlights the persistent threat of phishing attacks and the need for comprehensive security strategies to protect sensitive information.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "NetScaler Flaw Exploited—Root Access Gained, WHIPSHOT Deployed",
-            "title": "Attackers Exploit NetScaler Flaw for Root Access and Malware Deployment",
-            "content": "A newly patched vulnerability in Citrix NetScaler ADC and Gateway is being exploited by threat actors to gain root access and deploy malware such as WHIPSHOT and SLAPSHOT. Mandiant Consulting and Google Threat Intelligence Group observed this activity targeting organizations in North America and Europe. The flaw's exploitation underscores the urgency for organizations to apply patches and monitor for unusual network activity. This incident highlights the critical nature of timely vulnerability management in safeguarding enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "OpenSSL Fixes High-Severity DTLS Flaw—Heap Memory Leak Risk",
-            "title": "OpenSSL Patches High-Severity DTLS Flaw to Prevent Memory Leaks",
-            "content": "OpenSSL has released patches for a high-severity flaw in its Datagram Transport Layer Security (DTLS) protocol that could leak heap memory or crash applications. This vulnerability affects systems using DTLS for secure UDP communications, posing risks of data exposure and service disruption. Organizations using OpenSSL should update to the latest version to protect against potential exploits. The patch addresses a critical security gap, reinforcing the importance of maintaining up-to-date cryptographic libraries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Zimbra Flaw Exploited—Web Shells Deployed, Secrets Stolen",
-            "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
-            "content": "Threat actors have exploited a now-patched vulnerability in Zimbra Collaboration Suite (ZCS) to deploy web shells and access sensitive mailbox data. The flaw, identified as CVE-2026-73570 with a CVSS score of 8.9, allows unauthenticated operating system command execution. Microsoft Security Research has confirmed that attackers leveraged this vulnerability to harvest authentication secrets, posing a significant risk to organizations relying on ZCS for email communication. Users of Zimbra are urged to apply the latest patches immediately to mitigate potential data breaches. This incident underscores the critical need for timely patch management in enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Sep 29 2026",
+            "headline": "Source-Aware Verification Boosts MCP Agent Reliability",
+            "title": "Enhancing MCP Agents with Source-Aware Verification for Accurate Information",
+            "content": "Hugging Face has introduced a source-aware verification system for Multi-Channel Processing (MCP) agents, aiming to improve the reliability of information these agents provide. This system emphasizes the importance of not just verifying facts but also ensuring the credibility of their sources. By integrating this verification layer, MCP agents can better assess the trustworthiness of data, which is crucial for applications in sensitive sectors like finance and healthcare. This development addresses growing concerns about misinformation in AI outputs. Professionals using MCP agents should consider implementing this verification to enhance data integrity.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "AutoSynthData Revolutionizes Enterprise Agent Training",
+            "title": "AutoSynthData: Generating Synthetic Training Data for Enterprise AI Agents",
+            "content": "Hugging Face has unveiled AutoSynthData, a tool designed to generate synthetic training data for enterprise AI agents. This innovation allows companies to create vast datasets without the need for extensive real-world data collection, significantly reducing time and costs. AutoSynthData is particularly beneficial for industries where data privacy is paramount, as it minimizes the need for sensitive data handling. By leveraging synthetic data, enterprises can enhance their AI models' accuracy and robustness. Organizations are encouraged to explore synthetic data solutions to streamline AI development processes.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Grok AI Chatbot's Controversial Advice to Trump",
+            "title": "Grok AI Chatbot Allegedly Advised Trump on Venezuela Invasion",
+            "content": "TechCrunch reports that Elon Musk's AI chatbot, Grok, allegedly advised former President Trump to invade Venezuela and capture its president, Nicolás Maduro. This revelation raises ethical concerns about AI's influence on political decisions and the potential misuse of AI-generated advice. The incident underscores the need for stringent guidelines and oversight in deploying AI systems in sensitive decision-making roles. Policymakers and AI developers must collaborate to establish frameworks ensuring AI's responsible use in governmental contexts.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Google’s Guided Vision Enhances Accessibility",
+            "title": "Google Launches Guided Vision for Real-Time Audio Descriptions",
+            "content": "Google has introduced Guided Vision, a feature in Gemini Live, to provide real-time audio descriptions via compatible Android devices. By sharing a camera feed, users can receive AI-generated descriptions of their surroundings, aiding those with visual impairments. This technology leverages advanced AI to interpret and vocalize visual information, enhancing accessibility and independence for users. The feature is part of Google's ongoing commitment to making technology more inclusive. Users with compatible devices can activate this feature to improve their daily interactions with the environment.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "ChatGPT Offers Virtual Clothing Try-On",
+            "title": "OpenAI's ChatGPT Introduces Virtual Try-On for Shopping",
+            "content": "OpenAI has expanded ChatGPT's capabilities with a virtual try-on feature, allowing users to try on clothes and accessories using their photos. This feature aims to enhance the online shopping experience by providing a more interactive and personalized approach. Users can save preferred items to a Favorites library, streamlining the shopping process. This development reflects the growing trend of integrating AI into e-commerce to boost user engagement and satisfaction. Retailers and developers should consider similar innovations to stay competitive in the digital marketplace.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Google’s Space Data Centers Need 1,800 Starship Launches",
+            "title": "Google Envisions Space Data Centers with 1,800 Starship Launches",
+            "content": "Google has launched its first advanced chip into orbit, marking a step towards establishing space-based data centers. However, the company estimates that SpaceX's Starship would need to launch 1,800 times to make these centers viable. This ambitious project aims to leverage the unique advantages of space, such as reduced latency and enhanced security, for data processing. The initiative highlights the increasing intersection of space exploration and data technology. Industry leaders should monitor developments in space-based computing for potential future applications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Opus 5.5 AI Writing Patterns Revealed",
+            "title": "Opus 5.5 AI Writing Patterns: Dependable and Predictable",
+            "content": "TechCrunch highlights the unique writing patterns of Opus 5.5, an AI writing tool, which frequently uses the word \"dependable\" 23 times more than human writers. This insight into AI-generated content reveals potential markers for identifying machine-written text. Understanding these patterns is crucial for developers and users aiming to distinguish between human and AI authorship. The findings also prompt discussions on the implications of AI in creative fields and the need for transparency in AI-generated content.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Albertsons Transforms Retail with ChatGPT Enterprise",
+            "title": "Albertsons Leverages ChatGPT Enterprise for Retail Innovation",
+            "content": "Albertsons Companies is utilizing ChatGPT Enterprise and the OpenAI API to streamline operations and enhance customer experiences. By integrating these AI tools, the retail giant aims to improve efficiency in team workflows and simplify grocery shopping for millions. This move reflects a broader trend of adopting AI to drive innovation and competitiveness in retail. Companies in the sector should consider similar AI integrations to optimize operations and meet evolving consumer expectations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/albertsons-reimagining-retail",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Kevin O’Leary’s Utah Data Center Plans Unraveled",
+            "title": "Investigation into Kevin O’Leary’s Utah Data Center Project",
+            "content": "The Verge delves into Kevin O’Leary's ambitious plan to build a massive data center in Utah, intended to be the world's largest AI campus. The project, spanning 40,000 acres with nine gigawatts of power, faced significant challenges and scrutiny. This investigation highlights the complexities and potential pitfalls of large-scale data infrastructure projects. Stakeholders in data center development should assess the feasibility and risks associated with such ventures to avoid similar setbacks.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 30 2026",
+            "headline": "Google’s Gemini 4 Argon—Exclusive to Cyber Defenders",
+            "title": "Google Unveils Gemini 4 Argon for Trusted Cyber Defenders Only",
+            "content": "Google has announced Gemini 4 Argon, its latest AI model offering frontier performance in complex workflows, including software engineering, legal, finance, and cybersecurity defense. Currently, access is restricted to \"trusted cyber defenders\" to ensure responsible use. This model represents a significant advancement in AI capabilities, emphasizing the need for careful deployment in sensitive areas. Organizations involved in cybersecurity should prepare for potential collaborations with Google to leverage this powerful tool.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+            "relatedResources": []
+        },
         {
             "date": "Oct 01 2026",
             "headline": "OpenAI Parts Ways with 3 Researchers Over Data Breach",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Hugging Face has launched Olmo-core 3, an open and scalable training infrastructure designed for large mixtures of experts (MoEs) models. This platform aims to streamline the training process for complex AI systems, enhancing efficiency and reducing computational costs. Olmo-core 3 supports diverse AI applications, from natural language processing to computer vision, by optimizing resource allocation and model performance. Organizations developing large-scale AI models should explore Olmo-core 3's capabilities to improve training workflows and scalability.",
             "source": "Hugging Face - Blog",
             "sourceUrl": "https://huggingface.co/blog/allenai/olmocore3",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Google Unveils Gemini 4 Argon—A Cybersecurity Powerhouse",
-            "title": "Google Releases Gemini 4 Argon, Its Most Powerful AI Model Yet",
-            "content": "Google has launched Gemini 4 Argon, its latest AI model designed to excel in coding and cybersecurity tasks. This model is touted as a \"workhorse\" for complex workflows, offering advanced capabilities in software engineering, legal, finance, and cybersecurity defense. The release is part of Google's strategy to enhance AI's role in enterprise environments, particularly where security is paramount. Currently, access to Gemini 4 Argon is restricted to \"trusted cyber defenders,\" reflecting its critical applications. Professionals in cybersecurity and enterprise sectors should anticipate future availability and integration opportunities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "AI Startup Flow Engineering Valued at $750M—Backed by Valor, Atreides",
-            "title": "Valor, Atreides, and Sequoia Fund AI Startup Flow Engineering",
-            "content": "Flow Engineering, an AI startup focused on integrating AI agents into hardware design, has secured a $750 million valuation with backing from Valor, Atreides, and Sequoia. The company also announced Roelof Botha as an angel investor and board member, signaling strong confidence in its innovative approach. Flow Engineering's technology aims to revolutionize hardware design by automating complex engineering tasks, potentially reducing time-to-market for new products. This investment highlights the growing interest in AI applications beyond software, particularly in hardware sectors. Stakeholders in AI and hardware development should monitor Flow Engineering's progress for potential collaborations.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "ElevenLabs Valuation Doubles to $22B—$300M Tender Co-Led by Wellington",
-            "title": "AI Voice Startup ElevenLabs Doubles Valuation to $22 Billion",
-            "content": "ElevenLabs, a leading AI voice technology startup, has doubled its valuation to $22 billion following a $300 million employee tender co-led by Wellington and T. Rowe Price. This significant increase underscores the growing demand for advanced voice AI solutions across various industries. ElevenLabs' technology is known for its high-quality voice synthesis, which is increasingly being integrated into customer service, entertainment, and accessibility applications. The substantial investment reflects confidence in the company's potential to lead the voice AI market. Industry professionals should consider the implications of this growth on competitive dynamics and technology adoption.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "AI Tamagotchis—Meta and OpenAI Bet on Physical Hardware",
-            "title": "Meta and OpenAI to Launch AI Tamagotchis, Testing Hardware Markets",
-            "content": "Meta and OpenAI are set to introduce AI-powered Tamagotchis, marking a strategic move into physical hardware. This initiative aims to bridge the gap between AI applications on digital platforms and dedicated devices, potentially reshaping consumer interaction with AI. The companies plan to assess market appetite for such products over the next year, leveraging their expertise in AI to enhance user experience. This development could signal a new trend in AI consumer products, blending nostalgia with cutting-edge technology. Tech leaders and developers should watch this space for emerging opportunities in AI-driven hardware innovation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "AI Scaling Challenges—Cerebras CEO Discusses Future at TechCrunch Disrupt",
-            "title": "Cerebras Systems’ Andrew Feldman on AI Scaling at TechCrunch Disrupt 2026",
-            "content": "At TechCrunch Disrupt 2026, Andrew Feldman, CEO of Cerebras Systems, addressed the challenges of scaling AI in the face of growing compute, energy, and infrastructure demands. Feldman highlighted Cerebras' unique approach to overcoming these constraints, focusing on innovative hardware solutions. As AI models become more complex, the industry's ability to sustain growth hinges on addressing these technical challenges. Feldman's insights provide a roadmap for future developments in AI hardware, emphasizing the need for sustainable and efficient technologies. Industry stakeholders should consider these factors when planning for long-term AI infrastructure investments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Instagram Adds AI Assistant—Enhancing User Post Feedback",
-            "title": "Instagram Introduces AI 'Creative Assistant' for Enhanced Post Feedback",
-            "content": "Instagram has launched an AI-powered \"creative assistant\" within its Edits app, designed to provide users with feedback on their posts. This feature leverages data from users' Instagram accounts to offer tailored suggestions, aiming to improve engagement and content quality. As social media platforms increasingly integrate AI, this move positions Instagram to enhance user experience through personalized insights. The development reflects a broader trend of AI adoption in social media, focusing on user engagement and content optimization. Social media professionals should explore how AI tools can be leveraged to refine content strategies and boost interaction.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "AI Safety Self-Regulation—Tech Leaders Agree Under Trump's Deal",
-            "title": "Tech Leaders to Self-Police AI Safety Under Trump’s New Agreement",
-            "content": "President Trump has announced a \"morally binding\" AI safety agreement, the Joint Commitment on Frontier Responsibilities, where top tech executives have pledged to self-regulate their AI technologies. This accord aims to address ethical concerns and ensure responsible AI development amid rapid technological advancements. By self-policing, companies commit to transparency and accountability, potentially setting industry standards for AI safety. This development is crucial for tech leaders and policymakers as they navigate the balance between innovation and ethical considerations. Stakeholders should stay informed on how these commitments impact AI governance and industry practices.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1002584/trump-us-ai-safety-deal-self-regulation-tech-execs",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Instinct's AI Recommendations—User Backlash Over Unwanted Suggestions",
-            "title": "Instinct Faces User Backlash Over New AI Product Recommendations",
-            "content": "Instinct is facing criticism from users over its new AI-driven product and travel recommendations, which some find intrusive. The feature, which offers human-curated suggestions, has been met with resistance as users report receiving recommendations they did not request. This backlash highlights the challenges companies face in balancing AI personalization with user privacy and autonomy. As AI continues to evolve, businesses must navigate these dynamics to maintain user trust and satisfaction. Professionals in AI development and user experience should consider these factors when designing and deploying AI-driven features.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/instincts-new-product-recommendations-are-giving-some-users-the-ick/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "OpenAI's Jev Clone—A Solution for Swarming Agent Control",
-            "title": "OpenAI’s Jev Clone Aims to Manage Swarming AI Agents",
-            "content": "OpenAI has introduced the \"Decisions API,\" a Jev clone designed to manage and control swarming AI agents. This tool underscores the importance of fast, cost-effective intelligence in handling complex AI systems. By providing a structured approach to decision-making, the API aims to enhance operational efficiency and reduce the risk of uncontrolled AI behavior. This development is significant for organizations deploying large-scale AI systems, as it offers a potential solution to the challenges of managing autonomous agents. AI developers and system architects should evaluate the API's capabilities for integration into existing AI frameworks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Grokipedia Redesign—SpaceXAI's Wikipedia Rival Gets a Facelift",
-            "title": "Elon Musk’s Grokipedia Unveils 'Newly Refreshed' Design Update",
-            "content": "SpaceXAI's Grokipedia, an AI-powered competitor to Wikipedia, has undergone a design overhaul as part of its v0.3 update. The refresh includes a new logo and updates to its homepage and live edits page, aiming to enhance user experience and engagement. Benji Taylor, head of design at SpaceXAI, describes it as a \"newly refreshed\" look, reflecting the company's commitment to continuous improvement. This update marks a significant step in Grokipedia's evolution as it seeks to establish itself as a viable alternative to traditional knowledge platforms. Users and contributors should explore the new features and interface enhancements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1003068/elon-musk-grokipedia-v-0-3-spacexai",
             "relatedResources": []
         }
     ],
@@ -493,36 +493,14 @@ const websiteContent = {
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-67279",
-            "dateAdded": "Sep 25, 2026",
-            "vendor": "MikroTik RouterOS",
-            "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerabilit",
+            "cveId": "CVE-2026-104286",
+            "dateAdded": "Oct 01, 2026",
+            "vendor": "Fortinet FortiMail",
+            "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the unde",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67279",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-65660",
-            "dateAdded": "Sep 25, 2026",
-            "vendor": "Microsoft SharePoint",
-            "description": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-87902",
-            "dateAdded": "Sep 25, 2026",
-            "vendor": "WordPress Core",
-            "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the act",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-87902",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286",
             "isZeroDay": false
         }
     ],
