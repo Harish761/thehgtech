@@ -3351,20 +3351,12 @@
       "date": "2026-07-06",
       "category": "misinformation",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1567",
-      "incident_id": 1567,
-      "title": "Serve Robotics Delivery Robot Reportedly Crashed into Chicago Bus Shelter After Failing to Detect Gl",
-      "date": "2026-07-04",
-      "category": "other",
-      "severity": "medium"
     }
   ],
   "stats": {
-    "total": 420,
-    "last7Days": 15,
+    "total": 419,
+    "last7Days": 14,
     "last30Days": 272
   },
-  "lastUpdated": "2026-10-02T20:11:41.220969+05:30"
+  "lastUpdated": "2026-10-03T02:09:23.404412+05:30"
 }
