@@ -1,6 +1,14 @@
 {
   "incidents": [
     {
+      "id": "AIID-1715",
+      "incident_id": 1715,
+      "title": "Russia-Linked Matryoshka Operators Reportedly Circulated Deepfake of Mother Jones Editor Claiming DN",
+      "date": "2026-10-03",
+      "category": "deepfake",
+      "severity": "critical"
+    },
+    {
       "id": "AIID-1720",
       "incident_id": 1720,
       "title": "Stow, Massachusetts, Police Officer Allegedly Used Flock License-Plate Reader System to Track Former",
@@ -15,14 +23,6 @@
       "date": "2026-10-01",
       "category": "deepfake",
       "severity": "medium"
-    },
-    {
-      "id": "AIID-1715",
-      "incident_id": 1715,
-      "title": "Russia-Linked Matryoshka Operators Reportedly Circulated Deepfake Mother Jones Video Impersonating E",
-      "date": "2026-09-30",
-      "category": "deepfake",
-      "severity": "critical"
     },
     {
       "id": "AIID-1716",
@@ -3355,8 +3355,8 @@
   ],
   "stats": {
     "total": 419,
-    "last7Days": 14,
-    "last30Days": 272
+    "last7Days": 12,
+    "last30Days": 212
   },
-  "lastUpdated": "2026-10-03T18:48:20.434865+05:30"
+  "lastUpdated": "2026-10-04T00:40:50.477426+05:30"
 }
