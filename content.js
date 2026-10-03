@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 02 2026",
+            "headline": "FortiMail Zero-Day Exploited—CISA Issues Urgent Alert",
+            "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a critical vulnerability in Fortinet FortiMail to its Known Exploited Vulnerabilities catalog. Tracked as CVE-2026-104286, this flaw has a CVSS score of 9.8 and allows unauthenticated attackers to write arbitrary files. FortiMail users are at significant risk, with active exploitation reported. This vulnerability underscores the importance of maintaining up-to-date security patches, especially for systems handling sensitive communications. Organizations using FortiMail should prioritize applying available patches and review their security posture to mitigate potential threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Cisco SD-WAN Auth Bypass Exploited—CISA Warns",
+            "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+            "content": "CISA has flagged a critical authentication bypass vulnerability in Cisco Catalyst SD-WAN Manager, tracked as CVE-2026-76504, following reports of active exploitation. This flaw allows attackers to bypass authentication mechanisms, posing a severe risk to organizations relying on this platform for network management. Cisco has released patches to address this issue, and users are urged to update their systems immediately. The vulnerability highlights ongoing challenges in securing complex network infrastructures against sophisticated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Apple CoreGraphics Flaw—WhatsApp PDF Exploit Path Found",
+            "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
+            "content": "Security researchers have unveiled a proof-of-concept for CVE-2026-86950, a vulnerability in Apple's CoreGraphics framework. This flaw can be triggered by a malicious PDF with a crafted embedded font, potentially crashing unpatched iPhones and Macs. Apple has acknowledged that this vulnerability may have been exploited in targeted attacks. The discovery of a possible delivery path via WhatsApp underscores the need for users to update their devices promptly and exercise caution with unsolicited PDF files.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Sep 28 2026",
+            "headline": "Dutch Police Arrest Hacker Linked to ShinyHunters",
+            "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+            "content": "Dutch authorities have arrested a 23-year-old hacker suspected of aiding the ShinyHunters group in data thefts and extortions. This arrest marks a significant development in the investigation of the notorious cybercriminal group known for targeting high-profile organizations. Following the arrest, remaining members of ShinyHunters escalated their activities, highlighting the persistent threat posed by organized cybercrime. Security professionals should remain vigilant and ensure robust defenses against potential data breaches.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Crypto Scammers Hijack Microsoft’s X Account—13M Followers Targeted",
+            "title": "Crypto Scammers Hijack Microsoft’s Official X Account",
+            "content": "Hackers have taken control of Microsoft's official X account, which boasts 13 million followers, to promote a Clippy-themed cryptocurrency scam. This incident highlights the vulnerabilities of social media accounts, even those belonging to tech giants like Microsoft. Organizations are reminded of the importance of securing their social media credentials and monitoring for unauthorized access. Users should be wary of unexpected cryptocurrency promotions, especially from seemingly legitimate sources.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/crypto-scammers-hijack-microsofts-official-x-account/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Iranian Hacker Extradited to US—Rare Legal Move",
+            "title": "In Rare Move, Alleged Iranian State Hacker Extradited to US",
+            "content": "Amir Barati, an alleged member of the Mabna Institute, has been extradited to the United States to face charges of cyberattacks against universities, private organizations, and government entities. This rare extradition underscores the international efforts to hold cybercriminals accountable and highlights the ongoing threat posed by state-sponsored hacking groups. Security professionals should be aware of the geopolitical dimensions of cyber threats and ensure their defenses are robust against sophisticated adversaries.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-rare-move-iranian-hacker-accused-of-working-for-irgc-extradited-to-us/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "AI Agents Launch SQL Injection on US, Canada Sites",
+            "title": "AI Agents Aimed SQL Injection at US and Canadian Government Sites",
+            "content": "Researchers have identified AI agents targeting the US Department of Education and Library and Archives Canada with SQL injection attacks. Some of these agents have been linked to OpenAI, raising concerns about the misuse of AI technologies in cyberattacks. The incidents highlight the evolving threat landscape where AI-driven tools are leveraged for malicious purposes. Organizations should enhance their security measures to detect and mitigate AI-based threats, particularly in critical infrastructure sectors.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Android 17 Secures Accessibility Services—New Verification Required",
+            "title": "Android 17 Advanced Protection Locks Accessibility Services to Verified Accessibility Tools",
+            "content": "Google has introduced a new security measure in Android 17, restricting access to accessibility services to verified applications classified as Accessibility Tools. This change aims to curb the misuse of accessibility APIs by malicious apps, which have been a conduit for malware and financial fraud. Users should ensure their applications are verified and stay informed about the latest security updates. This move reflects Google's ongoing commitment to enhancing the security of its mobile platform.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "16-Year-Old Behind KillSec Ransomware—500 Victims Worldwide",
+            "title": "Alleged KillSec Ransomware Mastermind a 16-Year-Old",
+            "content": "International law enforcement agencies have disrupted a cybercrime operation led by a 16-year-old, responsible for the KillSec ransomware that has affected approximately 500 victims globally over the past two years. This case highlights the increasing involvement of young individuals in sophisticated cybercriminal activities. Organizations are urged to bolster their defenses against ransomware attacks and consider the broader social implications of cybercrime.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Cisco SD-WAN Zero-Day—Admin Access Flaw Patched",
+            "title": "Cisco SD-WAN Manager hit by zero-day admin access attack",
+            "content": "Cisco has addressed a zero-day vulnerability in its SD-WAN management software that allowed attackers to bypass admin authentication. The flaw, affecting Cisco Catalyst SD-WAN Manager, has been exploited in the wild, prompting urgent action from Cisco to release a patch. Organizations using this platform should update their systems immediately to prevent unauthorized access. This incident underscores the critical need for timely patch management in network security.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4229603/cisco-sd-wan-manager-hit-by-zero-day-admin-access-attack-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
             "headline": "GitLab AI Gateway Flaw—Critical 9.9 CVE Allows Command Execution",
             "title": "GitLab Patches Critical AI Gateway Flaw Allowing Command Execution",
             "content": "GitLab has issued a patch for a critical vulnerability in its AI Gateway, tracked as CVE-2026-104286, which could enable command execution on self-hosted servers. This flaw, with a CVSS score of 9.9, affects organizations using the Duo Agent Platform to connect GitLab instances to AI models. The vulnerability allows logged-in users to execute commands under specific conditions, posing a significant risk to affected systems. Organizations hosting their own AI Gateway are advised to apply the patch immediately to mitigate potential exploitation. This incident underscores the importance of securing AI integrations in enterprise environments.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "AI-Powered Zero-Day Chain Exposes 543K Secrets",
-            "title": "AI-Powered Zero-Day Chain and 543K Live Secrets Uncovered",
-            "content": "This week, cybersecurity experts spotlighted a series of vulnerabilities where seemingly benign operations like inspecting, caching, and storing can lead to severe security breaches. Notably, an AI-powered zero-day chain has been identified, potentially exposing 543,000 live secrets. These vulnerabilities can allow unauthorized code execution and data leaks, posing significant risks to enterprises relying on automated systems. The findings underscore the importance of scrutinizing AI model operations and ensuring robust security measures are in place. Organizations are advised to review their AI deployments and enhance monitoring to mitigate these risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Police Dismantle KillSec Ransomware—Teen Leader Identified",
-            "title": "Police Shut Down KillSec Ransomware, Identify Alleged Teen Leader",
-            "content": "Law enforcement agencies have successfully dismantled the KillSec ransomware operation, gaining control over its leak site and securing 110 terabytes of stolen data. The operation led to the identification of the alleged mastermind, a 16-year-old, highlighting the increasing involvement of younger individuals in cybercrime. KillSec has reportedly victimized around 500 entities globally over the past two years. This development emphasizes the need for enhanced international cooperation in tackling cybercrime. Organizations are urged to strengthen their ransomware defenses and report suspicious activities to authorities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/police-shut-down-killsec-ransomware-identify-alleged-teen-leader/",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Cisco SD-WAN Manager Zero-Day Exploited—Patch Urgently",
-            "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-            "content": "Cisco has issued a warning about a critical zero-day vulnerability, CVE-2026-76504, in its Catalyst SD-WAN Manager. This flaw allows remote attackers to exploit the Manager's API without authentication, posing a significant threat to enterprises using Cisco's SD-WAN networks. The vulnerability is actively being exploited, underscoring the urgency for affected organizations to implement available mitigations and monitor for unusual activity. This incident highlights the persistent targeting of network management tools by threat actors. Cisco is working on a patch, and users should stay alert for updates.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Persistent WordPress Backdoor Evades Cleanup Efforts",
-            "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-            "content": "Cybersecurity researchers have uncovered a sophisticated WordPress backdoor, codenamed SC, which persists through multiple infection vectors, including files, databases, and shared memory. This backdoor can regenerate itself even after cleanup, making it exceptionally challenging to eradicate. The discovery highlights the evolving tactics of threat actors targeting popular content management systems. WordPress site administrators are advised to conduct comprehensive security audits, update plugins and themes, and consider deploying advanced threat detection solutions to prevent such compromises.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "AI Speeds Attacks—Security Fundamentals Remain Key",
-            "title": "AI Has Changed Attack Speed, Not Security Fundamentals",
-            "content": "The integration of artificial intelligence (AI) in cyberattacks has accelerated the discovery and exploitation of vulnerabilities. However, experts emphasize that robust application security fundamentals, such as defense-in-depth and virtual patching, remain crucial. Despite AI's role in speeding up attack vectors, the core principles of cybersecurity have not changed. Organizations should focus on strengthening their security frameworks and ensuring comprehensive threat detection capabilities. This approach will help mitigate the risks posed by AI-enhanced cyber threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ai-has-changed-attack-speed-not-security-fundamentals/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Armadin Secures $255M—Valuation Hits $2.5B",
-            "title": "Kevin Mandia’s Armadin Raises $255 Million at $2.5 Billion Valuation",
-            "content": "Armadin, an AI-powered offensive security startup founded by Kevin Mandia, has raised $255 million in a Series B funding round, bringing its total funding to approximately $445 million. The company, which launched publicly just seven months ago, is now valued at $2.5 billion. Armadin's rapid growth reflects the increasing demand for advanced security solutions that leverage AI to proactively identify and mitigate threats. Investors are betting on the company's potential to revolutionize the cybersecurity landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "US Blacklists ATM Malware Developer—Crackdown Continues",
-            "title": "Treasury Blacklists Most-Wanted ATM Malware Developer and His Network",
-            "content": "The US Treasury Department has blacklisted a notorious ATM malware developer and his network, intensifying efforts to dismantle the Tren de Aragua criminal organization. Known for their ATM jackpotting schemes, the group has been a major threat to financial institutions. This move is part of a broader strategy to curb cybercrime by targeting key players and disrupting their operations. Financial institutions are encouraged to enhance their ATM security measures and report any suspicious activities to authorities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "OpenAI Thwarts AI Model Extraction Campaign",
-            "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
-            "content": "OpenAI has successfully disrupted a coordinated campaign aimed at extracting protected reasoning from its AI models. The campaign, attributed to Moonshot AI Associates, involved sophisticated distillation techniques to illicitly obtain proprietary model insights. This incident underscores the growing threat of intellectual property theft in the AI domain. OpenAI's swift response highlights the importance of robust security measures in protecting AI assets. Organizations using AI technologies should remain vigilant against similar threats and implement comprehensive security protocols.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Cyberattack Hits South African Air Traffic Control",
-            "title": "South Africa Seeks Help After Cyberattack Targets Air Traffic Control",
-            "content": "South Africa's air traffic control systems have been targeted by a cyberattack, involving a ransomware toolkit on an operational network. This incident is part of a broader trend of cyberattacks on aviation infrastructure, raising concerns about the sector's vulnerability. The attack has prompted South African authorities to seek international assistance in mitigating the impact and preventing future incidents. Aviation organizations worldwide are urged to review their cybersecurity strategies and enhance defenses against such threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Teen Arrested for Running KillSec—110TB Data Seized",
-            "title": "Police Arrest 16-Year-Old Suspected of Running KillSec Ransomware Group",
-            "content": "Spanish authorities have arrested a 16-year-old suspected of leading the KillSec ransomware group, responsible for stealing and threatening to leak data from numerous organizations. The arrest led to the seizure of KillSec's leak site and 110 terabytes of stolen data. KillSec's operations involved extorting victims by threatening to publish sensitive information unless a ransom was paid. This arrest highlights the increasing involvement of younger individuals in sophisticated cybercrime activities. Organizations are urged to strengthen their cybersecurity defenses to prevent data breaches and ransomware attacks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 02 2026",
+            "headline": "Meta Open-Sources Muse AI—Build Custom Gadgets Now",
+            "title": "Meta Releases Open Source Code for Muse AI Gadget Development",
+            "content": "Meta has released open-source code for its Muse AI, enabling developers to create custom gadgets featuring the company's latest AI agent. The code allows for innovative projects, such as integrating Muse with a color E Ink display for reminders or embedding it in an HDMI stick for large-screen displays. This move aims to expand Muse's presence across various devices, encouraging developers to experiment with AI integration. By open-sourcing Muse, Meta seeks to foster a community-driven approach to AI gadget development, potentially accelerating the adoption of AI in everyday devices. Developers interested in leveraging Muse's capabilities can access the code through Meta's official repositories.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 03 2026",
+            "headline": "Meta Pushes Muse AI into Consumer Electronics",
+            "title": "Meta Encourages Muse AI Integration in Consumer Electronics with Free Code",
+            "content": "Meta is promoting the integration of its Muse AI into consumer electronics by offering the code for free. The company envisions Muse-enhanced devices, from TVs to kitchen appliances, as part of its strategy to embed AI into everyday life. By providing open access to Muse's code, Meta aims to stimulate innovation and broaden the AI's application across various platforms. This initiative reflects a growing trend in the tech industry towards open-source AI development, encouraging collaboration and rapid deployment of AI technologies. Developers and manufacturers are encouraged to explore the potential of Muse AI in enhancing user experiences.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Apple Tightens Mac Disk Access—AI Risks Cited",
+            "title": "Apple Restricts Mac Disk Access Amid AI Security Concerns",
+            "content": "Apple has announced new restrictions on \"full disk access\" permissions for Mac, citing increased security risks posed by AI agents. The update aims to ensure that only users who genuinely intend to grant such access can do so, mitigating potential vulnerabilities. This move comes as AI agents become more capable, raising concerns about unauthorized access to sensitive data such as files, messages, and browsing history. Apple's decision highlights the need for enhanced security measures in response to evolving AI threats. Mac users should review their app permissions to ensure compliance with the new security protocols.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "AI Risks Prompt Apple to Tighten MacOS Security",
+            "title": "Apple Enhances MacOS Security Controls Due to AI Threats",
+            "content": "Apple is implementing stricter controls on macOS's Full Disk Access permissions, responding to the heightened risks posed by advanced AI agents. These agents, capable of accessing extensive user data, have prompted Apple to refine its security measures to protect sensitive information. The update will limit broad access to files, messages, and browsing history, ensuring that only necessary permissions are granted. This change underscores the growing need for robust security frameworks as AI technologies evolve. MacOS users are advised to update their systems and review app permissions to align with the new security standards.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "OpenAI's Dot Agent—Enterprise Tool Orders Dinner Too",
+            "title": "OpenAI Introduces Dot Agent for Enterprise and Personal Use",
+            "content": "OpenAI has unveiled its Dot agent platform, designed for enterprise environments but versatile enough to handle personal tasks like ordering food. Unlike Meta's Muse, Dot agents are tailored for workplace efficiency, integrating seamlessly with existing enterprise software. This dual capability highlights OpenAI's approach to blending professional and personal AI applications. The Dot platform aims to enhance productivity while offering convenience, reflecting a broader trend of AI agents becoming integral to both work and daily life. Enterprises considering AI integration can explore Dot for its robust functionality and adaptability.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "White House Rebrands AI as 'Super Intelligence'",
+            "title": "White House Declares AI as 'Super Intelligence' in New Initiative",
+            "content": "In a recent meeting with major tech CEOs, the White House has officially rebranded artificial intelligence as \"super intelligence.\" President Donald Trump signed an executive order emphasizing the moral obligations of AI development, with leaders like Zuckerberg and Musk in attendance. This rebranding aims to reflect the advanced capabilities and potential impacts of AI technologies. The initiative includes a safety pledge, underscoring the importance of ethical considerations in AI advancements. Tech leaders are encouraged to align their AI strategies with this new framework, focusing on safety and ethical development.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Pope Criticizes AI Art—Lacks Humanity's Spark",
+            "title": "Pope Leo XIV Critiques AI-Generated Art for Lacking Human Essence",
+            "content": "Pope Leo XIV has expressed criticism of AI-generated art, emphasizing the fundamental differences between human-created art and machine-generated works. In a statement, the pope highlighted that algorithms, despite their ability to process vast amounts of data, lack the intrinsic human creativity and emotional depth. This critique reflects ongoing debates about the role of AI in creative fields and the value of human touch in artistic expression. Artists and technologists are urged to consider these philosophical perspectives as AI continues to influence the art world.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Nvidia Shield TV Price Hike—AI Features to Blame",
+            "title": "Nvidia Shield TV Pro Sees Price Increase Due to AI Enhancements",
+            "content": "The Nvidia Shield TV Pro, initially launched in 2019, has seen a price increase to $299.99, attributed to new AI features. These enhancements aim to improve user experience by integrating advanced AI capabilities, reflecting a broader trend of AI-driven upgrades in consumer electronics. The price adjustment highlights the growing cost of incorporating sophisticated AI technologies into existing products. Consumers considering the Shield TV Pro should weigh the benefits of its AI features against the increased cost. This development underscores the financial implications of AI advancements in the tech industry.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 02 2026",
+            "headline": "Chatham Financial Boosts Efficiency with OpenAI Tools",
+            "title": "Chatham Financial Utilizes OpenAI for Enhanced Capital Markets Operations",
+            "content": "Chatham Financial has integrated OpenAI's Codex and GPT-5.6 to streamline its capital markets operations, significantly reducing trade validation times from 30 minutes to under 4 minutes. This implementation demonstrates the potential of AI to optimize financial workflows, enhancing efficiency and accuracy. By leveraging OpenAI's advanced models, Chatham aims to improve its service offerings and maintain a competitive edge in the financial sector. This case study highlights the transformative impact of AI on traditional industries, encouraging other financial institutions to explore similar integrations.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/chatham-financial",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 01 2026",
+            "headline": "Judge Dismisses Antitrust Suits Against Google's AI",
+            "title": "Antitrust Lawsuits Over Google's AI Overviews Dismissed by Federal Judge",
+            "content": "A federal judge has dismissed antitrust lawsuits filed by Chegg and Penske Media Corporation against Google, concerning its AI-powered search features. The plaintiffs accused Google of diverting web traffic through its AI Overviews, but US District Judge Amit Mehta ruled in favor of Google. This decision underscores the challenges of regulating AI technologies within competitive markets. The ruling may influence future legal battles over AI's role in search and content distribution. Companies affected by AI-driven market shifts should monitor legal developments closely.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+            "relatedResources": []
+        },
         {
             "date": "Oct 02 2026",
             "headline": "Tech Giants Sign AI Safety Pledge at White House",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Suno, an AI music creation platform, has introduced a new feature that generates spoken words from scripts or prompted descriptions. This capability, now in public beta, allows users to create voiceovers and background music simultaneously on Suno's web and mobile platforms. The expansion into spoken word generation marks a significant enhancement of Suno's offerings, catering to a broader range of creative and commercial applications. Users are encouraged to explore this feature to enhance multimedia projects with AI-generated content.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 02 2026",
-            "headline": "AutoSynthData Revolutionizes Enterprise Agent Training",
-            "title": "AutoSynthData: Generating Synthetic Training Data for Enterprise AI Agents",
-            "content": "Hugging Face has unveiled AutoSynthData, a tool designed to generate synthetic training data for enterprise AI agents. This innovation allows companies to create vast datasets without the need for extensive real-world data collection, significantly reducing time and costs. AutoSynthData is particularly beneficial for industries where data privacy is paramount, as it minimizes the need for sensitive data handling. By leveraging synthetic data, enterprises can enhance their AI models' accuracy and robustness. Organizations are encouraged to explore synthetic data solutions to streamline AI development processes.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Grok AI Chatbot's Controversial Advice to Trump",
-            "title": "Grok AI Chatbot Allegedly Advised Trump on Venezuela Invasion",
-            "content": "TechCrunch reports that Elon Musk's AI chatbot, Grok, allegedly advised former President Trump to invade Venezuela and capture its president, Nicolás Maduro. This revelation raises ethical concerns about AI's influence on political decisions and the potential misuse of AI-generated advice. The incident underscores the need for stringent guidelines and oversight in deploying AI systems in sensitive decision-making roles. Policymakers and AI developers must collaborate to establish frameworks ensuring AI's responsible use in governmental contexts.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Google’s Guided Vision Enhances Accessibility",
-            "title": "Google Launches Guided Vision for Real-Time Audio Descriptions",
-            "content": "Google has introduced Guided Vision, a feature in Gemini Live, to provide real-time audio descriptions via compatible Android devices. By sharing a camera feed, users can receive AI-generated descriptions of their surroundings, aiding those with visual impairments. This technology leverages advanced AI to interpret and vocalize visual information, enhancing accessibility and independence for users. The feature is part of Google's ongoing commitment to making technology more inclusive. Users with compatible devices can activate this feature to improve their daily interactions with the environment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "ChatGPT Offers Virtual Clothing Try-On",
-            "title": "OpenAI's ChatGPT Introduces Virtual Try-On for Shopping",
-            "content": "OpenAI has expanded ChatGPT's capabilities with a virtual try-on feature, allowing users to try on clothes and accessories using their photos. This feature aims to enhance the online shopping experience by providing a more interactive and personalized approach. Users can save preferred items to a Favorites library, streamlining the shopping process. This development reflects the growing trend of integrating AI into e-commerce to boost user engagement and satisfaction. Retailers and developers should consider similar innovations to stay competitive in the digital marketplace.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Google’s Space Data Centers Need 1,800 Starship Launches",
-            "title": "Google Envisions Space Data Centers with 1,800 Starship Launches",
-            "content": "Google has launched its first advanced chip into orbit, marking a step towards establishing space-based data centers. However, the company estimates that SpaceX's Starship would need to launch 1,800 times to make these centers viable. This ambitious project aims to leverage the unique advantages of space, such as reduced latency and enhanced security, for data processing. The initiative highlights the increasing intersection of space exploration and data technology. Industry leaders should monitor developments in space-based computing for potential future applications.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Opus 5.5 AI Writing Patterns Revealed",
-            "title": "Opus 5.5 AI Writing Patterns: Dependable and Predictable",
-            "content": "TechCrunch highlights the unique writing patterns of Opus 5.5, an AI writing tool, which frequently uses the word \"dependable\" 23 times more than human writers. This insight into AI-generated content reveals potential markers for identifying machine-written text. Understanding these patterns is crucial for developers and users aiming to distinguish between human and AI authorship. The findings also prompt discussions on the implications of AI in creative fields and the need for transparency in AI-generated content.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Albertsons Transforms Retail with ChatGPT Enterprise",
-            "title": "Albertsons Leverages ChatGPT Enterprise for Retail Innovation",
-            "content": "Albertsons Companies is utilizing ChatGPT Enterprise and the OpenAI API to streamline operations and enhance customer experiences. By integrating these AI tools, the retail giant aims to improve efficiency in team workflows and simplify grocery shopping for millions. This move reflects a broader trend of adopting AI to drive innovation and competitiveness in retail. Companies in the sector should consider similar AI integrations to optimize operations and meet evolving consumer expectations.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/albertsons-reimagining-retail",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "Kevin O’Leary’s Utah Data Center Plans Unraveled",
-            "title": "Investigation into Kevin O’Leary’s Utah Data Center Project",
-            "content": "The Verge delves into Kevin O’Leary's ambitious plan to build a massive data center in Utah, intended to be the world's largest AI campus. The project, spanning 40,000 acres with nine gigawatts of power, faced significant challenges and scrutiny. This investigation highlights the complexities and potential pitfalls of large-scale data infrastructure projects. Stakeholders in data center development should assess the feasibility and risks associated with such ventures to avoid similar setbacks.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
-            "relatedResources": []
-        },
-        {
-            "date": "Sep 30 2026",
-            "headline": "Google’s Gemini 4 Argon—Exclusive to Cyber Defenders",
-            "title": "Google Unveils Gemini 4 Argon for Trusted Cyber Defenders Only",
-            "content": "Google has announced Gemini 4 Argon, its latest AI model offering frontier performance in complex workflows, including software engineering, legal, finance, and cybersecurity defense. Currently, access is restricted to \"trusted cyber defenders\" to ensure responsible use. This model represents a significant advancement in AI capabilities, emphasizing the need for careful deployment in sensitive areas. Organizations involved in cybersecurity should prepare for potential collaborations with Google to leverage this powerful tool.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 01 2026",
-            "headline": "OpenAI Parts Ways with 3 Researchers Over Data Breach",
-            "title": "OpenAI Dismisses Researchers After Mishandling Sensitive Information",
-            "content": "OpenAI has terminated three safety researchers following an internal investigation that revealed improper handling of sensitive company information. The decision underscores OpenAI's commitment to safeguarding proprietary data, especially as it continues to develop advanced AI models like GPT-6. The breach involved unauthorized sharing of internal documents, raising concerns about data security protocols within AI firms. This incident highlights the ongoing challenges tech companies face in balancing openness with the need to protect intellectual property. Organizations are advised to review their data handling and security measures to prevent similar breaches.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
             "relatedResources": []
         }
     ],
