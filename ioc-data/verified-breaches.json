@@ -1025,6 +1025,28 @@
       "Description": "In July 2021, the Android applications and games review site <a href=\"https://www.androidlista.com/\" target=\"_blank\" rel=\"noopener\">AndroidLista</a> suffered a data breach. The incident exposed 6.6M user records containing email addresses, names, usernames and passwords stored as salted SHA-1 hashes, all of which were subsequently posted to a popular hacking forum. AndroidLista did not respond when contacted about the breach."
     }
   ],
+  "angelone.in": [
+    {
+      "Name": "AngelOne",
+      "Title": "Angel One",
+      "BreachDate": "2023-04-01",
+      "AddedDate": "2026-10-07T03:45:31Z",
+      "PwnCount": 6765054,
+      "DataClasses": [
+        "Bank account numbers",
+        "Dates of birth",
+        "Email addresses",
+        "Financial investments",
+        "Government issued IDs",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In July 2024, the Indian stock brokerage firm <a href=\"https://www.teiss.co.uk/news/angel-one-data-breach-affects-79-million-customers-14308\" target=\"_blank\" rel=\"noopener\">Angel One confirmed that data leaked online related to a breach that occurred in April 2023</a>. The leaked data included 7.9M user records containing 6.8M unique email addresses, along with names, physical addresses, phone numbers, bank account numbers, Permanent Account Numbers (PANs) and portfolio holdings. Angel One emphasised that the breach \"has no impact on client securities, funds, or credentials\"."
+    }
+  ],
   "animaljam.com": [
     {
       "Name": "AnimalJam",
@@ -4840,6 +4862,24 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In July 2016, <a href=\"https://news.softpedia.com/news/data-of-nearly-2-million-users-exposed-in-dota2-forum-hack-507162.shtml\" target=\"_blank\" rel=\"noopener\">the Dota2 official developers forum suffered a data breach that exposed almost 2 million users</a>. The hack of the vBulletin forum led to the disclosure of email and IP addresses, usernames and passwords stored as salted MD5 hashes."
+    }
+  ],
+  "doublecounter.gg": [
+    {
+      "Name": "DoubleCounter",
+      "Title": "Double Counter",
+      "BreachDate": "2026-10-04",
+      "AddedDate": "2026-10-07T05:42:24Z",
+      "PwnCount": 274922,
+      "DataClasses": [
+        "Email addresses",
+        "Geographic locations",
+        "Names",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In October 2026, the Discord server protection service <a href=\"https://doublecounter.gg/blog/security-incident-october-2026\" target=\"_blank\" rel=\"noopener\">Double Counter suffered a data breach attributed to a vulnerability in the Metabase analytics tool</a>. In its disclosure notice, Double Counter advised that attackers gained access to a subset of its data. A corpus of data was subsequently published publicly and contained 275k unique email addresses and Discord usernames. A small number of records belonging to paying subscribers whose purchases were processed via Stripe were also present and included names, countries and postcodes."
     }
   ],
   "doxbin.com": [
