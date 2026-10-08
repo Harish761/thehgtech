@@ -4190,6 +4190,27 @@
       "Description": "In October 2021, the Israeli hosting provider <a href=\"https://www.timesofisrael.com/black-shadow-hackers-leak-medical-records-of-290000-israeli-patients/\" target=\"_blank\" rel=\"noopener\">CyberServe was breached and ransomed before having a substantial amount of their customer data leaked publicly by a group known as \"Black Shadow\"</a>. Amongst the data was the LGBTQ dating site Atraf and the Machon Mor medical institute. Due to multiple different sites being compromised, the impacted data is broad and ranges from relationship information to medical data to email addresses and passwords stored in plain text. The data was made available to HIBP with support from May Brooks-Kempler, founder of <a href=\"https://www.facebook.com/groups/Think.Safe.Cyber/\" target=\"_blank\" rel=\"noopener\">the Think Safe Cyber community in Israel</a>."
     }
   ],
+  "cyrusone.com": [
+    {
+      "Name": "CyrusOne",
+      "Title": "CyrusOne",
+      "BreachDate": "2026-08-05",
+      "AddedDate": "2026-10-07T23:19:16Z",
+      "PwnCount": 373460,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Support tickets"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, <a href=\"https://cybernews.com/security/shinyhunters-cyrusone-breach-data-center/\" target=\"_blank\" rel=\"noopener\">data centre operator CyrusOne was the target of a ShinyHunters \"pay or leak\" extortion attempt</a>. The group subsequently published data allegedly obtained from the company, which included 373k unique email addresses across records relating to users, sales leads and CyrusOne employees. The data largely consisted of corporate contact information, including names, physical addresses, phone numbers and job titles. It also included support tickets and other information related to the organisation's operations."
+    }
+  ],
   "d3scene.com": [
     {
       "Name": "D3scene",
