@@ -16,7 +16,8 @@ permissions:
 jobs:
   send-newsletter:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    # Only send newsletter automatically on scheduled runs, or on direct manual dispatch of this newsletter workflow
+    if: ${{ (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'schedule') || github.event_name == 'workflow_dispatch' }}
     
     steps:
       - name: Checkout repository

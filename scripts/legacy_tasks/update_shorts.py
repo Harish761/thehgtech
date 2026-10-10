@@ -612,7 +612,7 @@ def filter_existing_urls(articles, existing_shorts):
 
 
 def format_with_gpt(articles, content_type):
-    """Use Groq to format articles into professional shorts"""
+    """Use Sarvam AI to format articles into professional shorts"""
     if not articles:
         return None
     
@@ -626,7 +626,7 @@ def format_with_gpt(articles, content_type):
     articles.sort(key=lambda x: x['relevance_score'], reverse=True)
     top_articles = articles[:15]  # Increased to 15 to ensure enough material
     
-    print(f"   🏆 Selected top {len(top_articles)} articles for Groq based on relevance scores")
+    print(f"   🏆 Selected top {len(top_articles)} articles for Sarvam AI based on relevance scores")
     
     articles_text = ""
     for i, article in enumerate(top_articles, 1):
@@ -740,26 +740,12 @@ At the end of each short's Content, add an Entities line with comma-separated va
 
 Create EXACTLY 10 shorts from the {len(top_articles)} articles above. It is critical that you output exactly 10 shorts."""
     
-    # Check for Dry Run mode (no API key)
-    api_key = os.environ.get('OPENAI_API_KEY')
-    dry_run = api_key is None or api_key == ""
-    
-    if dry_run:
-        print(f"   🧪 [DRY RUN] Simulating AI Summarization for {len(top_articles)} articles...")
-        fake_content = ""
-        for i, article in enumerate(top_articles, 1):
-            date_str = article['published'].strftime('%b %d %Y') if hasattr(article['published'], 'strftime') else str(article['published'])
-            fake_content += f"""
-Date: {date_str}
-Source Name: {article['source']}
-Source URL: {article['link']}
-Headline: [DRY RUN] {article['title'][:60]}...
-Title: {article['title']}
-Content:
-This is a simulated professional summary for '{article['title']}'. In a real run, Groq would generate a 5-7 sentence insight here. This article was selected for processing because it achieved a quality score of {article.get('relevance_score', 0)} based on your new ranking algorithm. Key entities like {article['source']} would be extracted for internal linking.
-Entities: {article['source']}, security-intel, dry-run
-"""
-        return fake_content
+    # Verify SARVAM_API_KEY presence before invoking AI summarization
+    sarvam_key = os.environ.get('SARVAM_API_KEY', '').strip()
+    if not sarvam_key:
+        print(f"   ❌ SARVAM_API_KEY is not set. Cannot perform AI summarization for {len(top_articles)} articles.")
+        print("   ❌ Aborting summarization to prevent generating fake or placeholder content.")
+        return None
 
     # Real AI Router Run sequence
     system_prompt = "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."
@@ -1128,7 +1114,7 @@ def update_shorts():
     print(f"\n{'='*60}")
     print(f"🚀 TheHGTech Content Automation - FINAL VERSION v2.1")
     print(f"⏰ Time: {ist_time.strftime('%Y-%m-%d %I:%M %p IST')}")
-    print(f"📡 Mode: Real RSS Feed Aggregation + Groq Formatting")
+    print(f"📡 Mode: Real RSS Feed Aggregation + Sarvam AI Formatting")
     print(f"📊 Sources: 19 RSS feeds (10 cyber + 9 AI)")
     print(f"🔗 URL Preservation: ENABLED")
     print(f"🔄 Duplicate Detection: ENABLED")
@@ -1300,7 +1286,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: Cybersecurity")
         print(f"   - Total Fetched: {len(cyber_articles)}")
         print(f"   - Unique (New): {len(cyber_articles_new)}")
-        print(f"   - Groq AI Summary Limit: 10")
+        print(f"   - Sarvam AI Summary Limit: 10")
         print(f"   🏆 Top 3 Scored Articles:")
         # Show top 3 in logs based on score
         scored_cyber = sorted(cyber_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
@@ -1311,7 +1297,7 @@ def update_shorts():
         print(f"\n📊 Selection Stats: AI")
         print(f"   - Total Fetched: {len(ai_articles)}")
         print(f"   - Unique (New): {len(ai_articles_new)}")
-        print(f"   - Groq AI Summary Limit: 10")
+        print(f"   - Sarvam AI Summary Limit: 10")
         print(f"   🏆 Top 3 Scored Articles:")
         scored_ai = sorted(ai_articles_new, key=lambda x: x.get('relevance_score', 0), reverse=True)
         for i, a in enumerate(scored_ai[:3], 1):
@@ -1323,7 +1309,7 @@ def update_shorts():
     # Abort if we had new articles but failed to parse/generate any shorts
     if (cyber_articles_new and not new_cyber_shorts) or (ai_articles_new and not new_ai_shorts):
         print("\n❌ CRITICAL ERROR: AI failed to generate shorts from new articles!")
-        print("❌ This usually means the OPENAI_API_KEY is invalid, expired, or out of quota.")
+        print("❌ This usually means the configured SARVAM_API_KEY is invalid, expired, or out of quota.")
         print("❌ Aborting update to prevent deleting old content without replacing it.")
         sys.exit(1)
     
