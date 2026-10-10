@@ -776,6 +776,217 @@ class TestSarvamIntegration(unittest.TestCase):
                     saved_state = json.load(sf)
                 self.assertEqual(saved_state["lastCampaignId"], 8888)
 
+    # -------------------------------------------------------------------------
+    # TEST 16: HTTP 200 Diagnostic Logging & Robust Defensive Handling
+    # -------------------------------------------------------------------------
+    @patch("requests.post")
+    def test_16_sarvam_http_200_diagnostic_logging_and_safety(self, mock_post):
+        import io
+        from contextlib import redirect_stdout
+
+        secret_key = "sk-test-secret-sarvam-key-9999"
+        os.environ["SARVAM_API_KEY"] = secret_key
+        router = AIRouter()
+
+        # ---------------------------------------------------------------------
+        # 1. Normal non-empty message.content: parses properly and NO diagnostics warning
+        # ---------------------------------------------------------------------
+        mock_normal = MagicMock()
+        mock_normal.status_code = 200
+        mock_normal.json.return_value = {
+            "id": "cmpl-normal",
+            "choices": [{"message": {"role": "assistant", "content": "Valid generated news short."}}],
+            "usage": {"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150}
+        }
+        mock_post.return_value = mock_normal
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertEqual(result, "Valid generated news short.")
+        self.assertIn("✅ Sarvam API Response: HTTP 200 OK", logs)
+        self.assertNotIn("⚠️ Sarvam response missing valid 'choices' or content.", logs)
+        self.assertNotIn("🔍 Diagnostics:", logs)
+
+        # ---------------------------------------------------------------------
+        # 2. Empty or null message.content (e.g. truncated at max_tokens with reasoning)
+        # ---------------------------------------------------------------------
+        # 2A: Empty string "" with finish_reason "length", usage, and reasoning_content
+        mock_empty_content = MagicMock()
+        mock_empty_content.status_code = 200
+        mock_empty_content.json.return_value = {
+            "id": "cmpl-truncated",
+            "choices": [
+                {
+                    "message": {
+                        "role": "assistant",
+                        "content": "",
+                        "reasoning_content": "Internal model thought steps that should never be published"
+                    },
+                    "finish_reason": "length"
+                }
+            ],
+            "usage": {"prompt_tokens": 3200, "completion_tokens": 4000, "total_tokens": 7200}
+        }
+        mock_post.return_value = mock_empty_content
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result, "Empty content must return None (reasoning_content must NOT be substituted)")
+        self.assertIn("⚠️ Sarvam response missing valid 'choices' or content.", logs)
+        self.assertIn("finish_reason=length", logs)
+        self.assertIn("prompt=3200, completion=4000, total=7200", logs)
+        self.assertIn("reasoning_content=present (len=59)", logs)
+        self.assertIn("provider_error=none", logs)
+        self.assertNotIn("Internal model thought steps", logs, "Reasoning content text must NOT be leaked in logs")
+
+        # 2B: Null (None) content
+        mock_null_content = MagicMock()
+        mock_null_content.status_code = 200
+        mock_null_content.json.return_value = {
+            "id": "cmpl-null",
+            "choices": [{"message": {"role": "assistant", "content": None}, "finish_reason": "stop"}]
+        }
+        mock_post.return_value = mock_null_content
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertIn("finish_reason=stop", logs)
+        self.assertIn("reasoning_content=none", logs)
+
+        # 2C: Whitespace-only content
+        mock_ws_content = MagicMock()
+        mock_ws_content.status_code = 200
+        mock_ws_content.json.return_value = {
+            "id": "cmpl-ws",
+            "choices": [{"message": {"role": "assistant", "content": "   \n\t  "}}]
+        }
+        mock_post.return_value = mock_ws_content
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        self.assertIsNone(result)
+
+        # ---------------------------------------------------------------------
+        # 3. Missing choices
+        # ---------------------------------------------------------------------
+        # 3A: Empty choices list []
+        mock_empty_choices = MagicMock()
+        mock_empty_choices.status_code = 200
+        mock_empty_choices.json.return_value = {"id": "cmpl-empty-choices", "choices": []}
+        mock_post.return_value = mock_empty_choices
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertIn("finish_reason=None", logs)
+        self.assertIn("reasoning_content=none", logs)
+
+        # 3B: Missing "choices" key entirely
+        mock_no_choices_key = MagicMock()
+        mock_no_choices_key.status_code = 200
+        mock_no_choices_key.json.return_value = {"id": "cmpl-no-key", "status": "processing"}
+        mock_post.return_value = mock_no_choices_key
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertIn("response_keys=['id', 'status']", logs)
+        self.assertIn("finish_reason=None", logs)
+
+        # ---------------------------------------------------------------------
+        # 4. Provider errors returned in HTTP 200 responses
+        # ---------------------------------------------------------------------
+        # 4A: Structured error dictionary
+        mock_err_200 = MagicMock()
+        mock_err_200.status_code = 200
+        mock_err_200.json.return_value = {
+            "id": "cmpl-err",
+            "error": {"code": "model_overloaded", "message": "Cluster is currently saturated."}
+        }
+        mock_post.return_value = mock_err_200
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertIn("provider_error=code=model_overloaded, message=Cluster is currently saturated.", logs)
+
+        # 4B: Error message containing secret token must be sanitized
+        mock_err_secret = MagicMock()
+        mock_err_secret.status_code = 200
+        mock_err_secret.json.return_value = {
+            "id": "cmpl-leak-attempt",
+            "error": {"code": "auth_warning", "message": f"Token {secret_key} reached monthly soft cap"}
+        }
+        mock_post.return_value = mock_err_secret
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertNotIn(secret_key, logs, "Secret API key must NEVER be printed in diagnostic logs")
+        self.assertIn("[REDACTED_API_KEY]", logs)
+
+        # ---------------------------------------------------------------------
+        # 5. Missing optional diagnostic fields (defensive against malformed types)
+        # ---------------------------------------------------------------------
+        # 5A: Minimal response dictionary (no choices, no usage, no error, no finish_reason)
+        mock_minimal = MagicMock()
+        mock_minimal.status_code = 200
+        mock_minimal.json.return_value = {"id": "cmpl-minimal"}
+        mock_post.return_value = mock_minimal
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(result)
+        self.assertIn("usage=none", logs)
+        self.assertIn("reasoning_content=none", logs)
+        self.assertIn("provider_error=none", logs)
+
+        # 5B: Choices list contains non-dict elements
+        mock_malformed_choice = MagicMock()
+        mock_malformed_choice.status_code = 200
+        mock_malformed_choice.json.return_value = {"id": "cmpl-malformed", "choices": [None, "invalid"]}
+        mock_post.return_value = mock_malformed_choice
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            result = router.call_sarvam("test prompt")
+        self.assertIsNone(result)
+
+        # ---------------------------------------------------------------------
+        # 6. Verify update_shorts.py error message does not blame quota or API key
+        # ---------------------------------------------------------------------
+        update_shorts_path = os.path.join(LEGACY_TASKS_DIR, "update_shorts.py")
+        with open(update_shorts_path, "r") as f:
+            update_shorts_code = f.read()
+        self.assertNotIn("out of quota", update_shorts_code)
+        self.assertIn("check router logs for status codes, token limits, or response diagnostics", update_shorts_code)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1309,7 +1309,7 @@ def update_shorts():
     # Abort if we had new articles but failed to parse/generate any shorts
     if (cyber_articles_new and not new_cyber_shorts) or (ai_articles_new and not new_ai_shorts):
         print("\n❌ CRITICAL ERROR: AI failed to generate shorts from new articles!")
-        print("❌ This usually means the configured SARVAM_API_KEY is invalid, expired, or out of quota.")
+        print("❌ Generation failed or returned empty content across attempts (check router logs for status codes, token limits, or response diagnostics).")
         print("❌ Aborting update to prevent deleting old content without replacing it.")
         sys.exit(1)
     

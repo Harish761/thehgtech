@@ -45,6 +45,25 @@ class AIRouter:
 
         return cleaned
 
+    def sanitize_diagnostic_text(self, text: str) -> str:
+        """
+        Sanitize diagnostic text to ensure no API keys, tokens, or credentials
+        leak into logs.
+        """
+        if not text:
+            return ""
+        clean = str(text)
+        if self.sarvam_key:
+            clean = clean.replace(self.sarvam_key, "[REDACTED_API_KEY]")
+        # Redact Bearer tokens
+        clean = re.sub(r'Bearer\s+[a-zA-Z0-9_\-\.]+', 'Bearer [REDACTED]', clean, flags=re.IGNORECASE)
+        # Redact potential keys or long credential tokens (20+ chars)
+        clean = re.sub(r'[a-zA-Z0-9_\-]{20,}', '[REDACTED]', clean)
+        # Truncate length
+        if len(clean) > 200:
+            clean = clean[:197] + "..."
+        return clean
+
     def get_sarvam_endpoint(self, model: str) -> str:
         """Determine whether to use v1 or v2 chat completions endpoint based on model identifier."""
         v2_models = {"deepseekv4-flash", "deepseekv4.1-flash", "gemma4", "glm5.2", "glm5.3"}
@@ -110,15 +129,18 @@ class AIRouter:
 
                 if status_code == 200:
                     data = response.json()
-                    choices = data.get("choices", [])
-                    if choices and "message" in choices[0] and choices[0]["message"].get("content"):
-                        raw_content = choices[0]["message"]["content"]
-                        returned_model = data.get("model", target_model)
-                        usage = data.get("usage", {})
+                    choices = data.get("choices", []) if isinstance(data, dict) else []
+                    first_choice = choices[0] if (isinstance(choices, list) and len(choices) > 0 and isinstance(choices[0], dict)) else {}
+                    msg = first_choice.get("message") if isinstance(first_choice, dict) else {}
+                    raw_content = msg.get("content") if isinstance(msg, dict) else None
+
+                    if isinstance(raw_content, str) and raw_content.strip():
+                        returned_model = data.get("model", target_model) if isinstance(data, dict) else target_model
+                        usage = data.get("usage", {}) if isinstance(data, dict) else {}
                         
-                        prompt_tok = usage.get("prompt_tokens", 0)
-                        comp_tok = usage.get("completion_tokens", 0)
-                        tot_tok = usage.get("total_tokens", 0)
+                        prompt_tok = usage.get("prompt_tokens", 0) if isinstance(usage, dict) else 0
+                        comp_tok = usage.get("completion_tokens", 0) if isinstance(usage, dict) else 0
+                        tot_tok = usage.get("total_tokens", 0) if isinstance(usage, dict) else 0
                         
                         # Sarvam 105B pricing: ₹29.28/1M in, ₹73.20/1M out
                         in_cost = (prompt_tok / 1_000_000) * 29.28
@@ -135,6 +157,56 @@ class AIRouter:
                         return self.clean_markdown_labels(raw_content)
                     else:
                         print("    [Router] ⚠️ Sarvam response missing valid 'choices' or content.")
+                        
+                        # Extract diagnostic metadata defensively without exposing sensitive payloads
+                        resp_keys = list(data.keys()) if isinstance(data, dict) else []
+                        finish_reason = first_choice.get("finish_reason") if isinstance(first_choice, dict) else None
+                        
+                        # Usage diagnostics
+                        usage_obj = data.get("usage") if isinstance(data, dict) else None
+                        if isinstance(usage_obj, dict) and usage_obj:
+                            usage_repr = (
+                                f"prompt={usage_obj.get('prompt_tokens')}, "
+                                f"completion={usage_obj.get('completion_tokens')}, "
+                                f"total={usage_obj.get('total_tokens')}"
+                            )
+                        else:
+                            usage_repr = "none"
+                        
+                        # Reasoning content detection (never used as substitute for content)
+                        has_reasoning = False
+                        reasoning_len = 0
+                        if isinstance(msg, dict) and "reasoning_content" in msg and msg["reasoning_content"] is not None:
+                            has_reasoning = True
+                            r_val = msg["reasoning_content"]
+                            reasoning_len = len(r_val) if isinstance(r_val, (str, list, dict)) else len(str(r_val))
+                        reasoning_repr = f"present (len={reasoning_len})" if has_reasoning else "none"
+
+                        # Provider error detection under HTTP 200
+                        provider_err_repr = "none"
+                        if isinstance(data, dict):
+                            err_val = data.get("error") or data.get("error_code")
+                            if err_val:
+                                if isinstance(err_val, dict):
+                                    e_code = err_val.get("code") or err_val.get("type") or ""
+                                    e_msg = err_val.get("message") or err_val.get("error") or ""
+                                    parts = []
+                                    if e_code:
+                                        parts.append(f"code={e_code}")
+                                    if e_msg:
+                                        parts.append(f"message={e_msg}")
+                                    raw_err = ", ".join(parts) if parts else str(err_val)
+                                else:
+                                    raw_err = str(err_val)
+                                provider_err_repr = self.sanitize_diagnostic_text(raw_err)
+
+                        print(
+                            f"    [Router] 🔍 Diagnostics: response_keys={resp_keys} | "
+                            f"finish_reason={finish_reason} | "
+                            f"usage={usage_repr} | "
+                            f"reasoning_content={reasoning_repr} | "
+                            f"provider_error={provider_err_repr}"
+                        )
                         return None
 
                 # Extract sanitized error message without leaking sensitive data
@@ -145,11 +217,7 @@ class AIRouter:
                 except Exception:
                     err_msg = response.text[:200]
                 
-                # Sanitize any accidental credential string
-                err_clean = str(err_msg)
-                if self.sarvam_key and self.sarvam_key in err_clean:
-                    err_clean = err_clean.replace(self.sarvam_key, "[REDACTED_API_KEY]")
-                err_clean = re.sub(r'[a-zA-Z0-9_\-]{20,}', '[REDACTED]', err_clean)
+                err_clean = self.sanitize_diagnostic_text(err_msg)
 
                 # Permanent failure status codes: Fast-fail without retry
                 if status_code in (400, 401, 402, 403, 404, 422):
