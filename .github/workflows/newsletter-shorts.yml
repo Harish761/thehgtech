@@ -6,18 +6,29 @@ on:
     types:
       - completed
   
-  # Allow manual trigger
+  # Allow manual trigger with verification
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force re-send even if content hash was already delivered'
+        required: false
+        default: false
+        type: boolean
 
-# Required to commit the CVE daily-lock state file back to the repo
+# Prevent concurrent newsletter delivery runs
+concurrency:
+  group: newsletter-shorts
+  cancel-in-progress: false
+
+# Required to commit the state files back to the repo
 permissions:
   contents: write
 
 jobs:
   send-newsletter:
     runs-on: ubuntu-latest
-    # Only send newsletter automatically on scheduled runs, or on direct manual dispatch of this newsletter workflow
-    if: ${{ (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'schedule') || github.event_name == 'workflow_dispatch' }}
+    # Send newsletter when Update TheHGTech Shorts completes successfully (schedule or manual), or on direct manual dispatch with verification
+    if: ${{ (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch' }}
     
     steps:
       - name: Checkout repository
@@ -39,20 +50,43 @@ jobs:
       - name: Send Shorts Newsletter via Brevo
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          UPSTREAM_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+          UPSTREAM_RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion || '' }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: |
-          python scripts/send_newsletter.py --type shorts
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python scripts/send_newsletter.py --type shorts --force
+          else
+            python scripts/send_newsletter.py --type shorts
+          fi
       
-      - name: Commit CVE daily-lock state
+      - name: Commit and push newsletter state
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add data/newsletter-cve-state.json || true
-          git diff --staged --quiet || \
-            git commit -m "chore: update newsletter CVE lock [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git pull --rebase origin main && git push || true
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/newsletter-cve-state.json data/newsletter-shorts-state.json || true
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update newsletter state [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            pushed=false
+            for i in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push; then
+                pushed=true
+                echo "✅ Successfully pushed newsletter state to main"
+                break
+              fi
+              echo "⚠️ Push failed (attempt $i/5), retrying in 3s..."
+              sleep 3
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "❌ CRITICAL: Failed to push newsletter state to main after 5 attempts."
+              exit 1
+            fi
+          else
+            echo "ℹ️ No changes in newsletter state to commit."
+          fi
       
       - name: Summary
         if: always()
         run: |
-          echo "### Newsletter Sent: Daily Digest" >> $GITHUB_STEP_SUMMARY
-          echo "Dispatched shorts digest (with CVE section) to Brevo API." >> $GITHUB_STEP_SUMMARY
+          echo "### Newsletter Execution: Daily Digest" >> $GITHUB_STEP_SUMMARY
+          echo "Dispatched shorts digest (with CVE section) to Brevo API or handled idempotently." >> $GITHUB_STEP_SUMMARY

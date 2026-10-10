@@ -10,6 +10,11 @@ on:
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
 
+# Prevent concurrent runs from overlapping
+concurrency:
+  group: update-shorts
+  cancel-in-progress: false
+
 # ⚠️ CRITICAL: This grants the workflow permission to push changes
 permissions:
   contents: write

@@ -6,11 +6,20 @@ import datetime
 import urllib.request
 from bs4 import BeautifulSoup
 import argparse
+import hashlib
 
-BREVO_API_KEY = os.environ.get("BREVO_API_KEY")
-if not BREVO_API_KEY:
-    print("Error: BREVO_API_KEY environment variable not set.")
-    sys.exit(1)
+BREVO_API_KEY = os.environ.get("BREVO_API_KEY", "")
+
+def get_brevo_headers():
+    key = os.environ.get("BREVO_API_KEY")
+    if not key:
+        print("Error: BREVO_API_KEY environment variable not set.")
+        sys.exit(1)
+    return {
+        "accept": "application/json",
+        "api-key": key,
+        "content-type": "application/json"
+    }
 
 HEADERS = {
     "accept": "application/json",
@@ -18,9 +27,9 @@ HEADERS = {
     "content-type": "application/json"
 }
 
-def call_brevo_api(endpoint, method="GET", data=None):
+def call_brevo_api(endpoint, method="GET", data=None, exit_on_error=True):
     url = f"https://api.brevo.com/v3/{endpoint}"
-    req = urllib.request.Request(url, method=method, headers=HEADERS)
+    req = urllib.request.Request(url, method=method, headers=get_brevo_headers())
     if data:
         req.data = json.dumps(data).encode("utf-8")
     try:
@@ -29,7 +38,9 @@ def call_brevo_api(endpoint, method="GET", data=None):
             return json.loads(response_text) if response_text else {}
     except urllib.error.HTTPError as e:
         print(f"Brevo API Error: {e.read().decode()}")
-        sys.exit(1)
+        if exit_on_error:
+            sys.exit(1)
+        raise
 
 def get_newsletter_list_id():
     response = call_brevo_api("contacts/lists")
@@ -47,12 +58,15 @@ def get_newsletter_list_id():
     print(f"Warning: 'Newsletter' list not found. Falling back to list ID {lists[0]['id']}")
     return lists[0]["id"]
 
-def create_and_send_campaign(subject, html_content):
+def create_and_send_campaign(subject, html_content, campaign_name=None):
     list_id = get_newsletter_list_id()
     
+    if not campaign_name:
+        campaign_name = f"Automated Campaign - {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}"
+        
     # Create the campaign
     campaign_data = {
-        "name": f"Automated Campaign - {datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+        "name": campaign_name,
         "sender": {
             "name": "TheHGTech",
             "email": "harish@thehgtech.com" # Updated to match your verified Brevo sender
@@ -73,6 +87,168 @@ def create_and_send_campaign(subject, html_content):
     print(f"Sending campaign ID {campaign_id}...")
     call_brevo_api(f"emailCampaigns/{campaign_id}/sendNow", method="POST")
     print("Campaign sent successfully!")
+    return campaign_id
+
+# ---------------------------------------------------------------------------
+# Shorts Deduplication & Safety State Helpers
+# ---------------------------------------------------------------------------
+
+SHORTS_STATE_PATH = "data/newsletter-shorts-state.json"
+
+
+def get_shorts_content_digest(content_file="content.js"):
+    """
+    Calculate SHA-256 fingerprint of the top shorts in content.js for deduplication.
+    Returns (digest, cyber_shorts, ai_shorts).
+    """
+    if not os.path.exists(content_file):
+        return None, [], []
+    try:
+        with open(content_file, "r", encoding="utf-8") as f:
+            content = f.read()
+        match = re.search(r'const\s+websiteContent\s*=\s*(\{.*?\});\s*$', content, re.DOTALL)
+        if not match:
+            return None, [], []
+        data = json.loads(match.group(1))
+        cyber_shorts = data.get("cyberShorts", [])[:10]
+        ai_shorts = data.get("aiShorts", [])[:10]
+        if not cyber_shorts and not ai_shorts:
+            return None, [], []
+
+        normalized = []
+        for s in cyber_shorts + ai_shorts:
+            normalized.append({
+                "title": s.get("title", ""),
+                "headline": s.get("headline", ""),
+                "url": s.get("sourceUrl", ""),
+                "date": s.get("date", "")
+            })
+        raw = json.dumps(normalized, sort_keys=True).encode("utf-8")
+        digest = hashlib.sha256(raw).hexdigest()
+        return digest, cyber_shorts, ai_shorts
+    except Exception as e:
+        print(f"Warning: Could not compute shorts fingerprint: {e}")
+        return None, [], []
+
+
+def check_shorts_newsletter_eligibility(
+    force=False,
+    upstream_run_id=None,
+    upstream_conclusion=None,
+    event_name=None,
+    state_file=SHORTS_STATE_PATH,
+    content_file="content.js"
+):
+    """
+    Verify whether the shorts newsletter should be dispatched.
+    
+    Guarantees:
+    1. Upstream safety: If triggered by workflow_run, upstream run conclusion must be 'success'.
+       Failed, cancelled, or timed-out runs are aborted immediately.
+    2. Direct manual safety: If triggered directly by workflow_dispatch, verifies that un-sent
+       successful shorts content exists. If content was already delivered, direct dispatch is rejected.
+    3. Idempotency & Deduplication: Upstream run IDs or content digests already recorded as sent
+       are skipped to prevent duplicate subscriber emails.
+    """
+    # 1. Upstream conclusion check
+    if event_name == "workflow_run":
+        if upstream_conclusion != "success":
+            print(f"❌ Safety Abort: Upstream shorts run concluded with '{upstream_conclusion}'. Newsletter will NOT be sent.")
+            return False, "upstream_not_successful"
+
+    # 2. Content validity check
+    digest, cyber, ai = get_shorts_content_digest(content_file)
+    if not digest or (not cyber and not ai):
+        print("❌ Safety Abort: content.js does not contain valid shorts to deliver.")
+        return False, "no_content"
+
+    # 3. State-based deduplication check
+    state = {}
+    if os.path.exists(state_file):
+        try:
+            with open(state_file, "r", encoding="utf-8") as f:
+                state = json.load(f)
+        except Exception:
+            state = {}
+
+    last_digest = state.get("lastSentDigest")
+    last_run_id = state.get("lastSentRunId")
+
+    if not force:
+        # Upstream run ID deduplication
+        if upstream_run_id and str(last_run_id) == str(upstream_run_id):
+            print(f"ℹ️ Deduplication: Upstream run ID {upstream_run_id} was already delivered at {state.get('lastSentTime')}. Skipping duplicate.")
+            return False, "duplicate_run"
+
+        # Content digest deduplication
+        if last_digest == digest:
+            if event_name == "workflow_dispatch":
+                print(f"❌ Manual Dispatch Rejected: No new successful shorts run since last newsletter. Content digest ({digest[:12]}) was already delivered at {state.get('lastSentTime')}.")
+                return False, "no_new_shorts_for_dispatch"
+            else:
+                print(f"ℹ️ Deduplication: Content digest ({digest[:12]}) was already delivered at {state.get('lastSentTime')}. Skipping duplicate.")
+                return False, "duplicate_content"
+
+    return True, digest
+
+
+def record_shorts_newsletter_sent(digest, campaign_id, upstream_run_id=None, state_file=SHORTS_STATE_PATH):
+    """Record state of successfully sent shorts newsletter for idempotency."""
+    os.makedirs(os.path.dirname(state_file) or ".", exist_ok=True)
+    state = {
+        "lastSentDigest": digest,
+        "lastSentTime": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "lastCampaignId": campaign_id,
+        "lastSentRunId": str(upstream_run_id) if upstream_run_id else None
+    }
+    with open(state_file, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
+    print(f"✅ Recorded newsletter delivery state (Digest: {digest[:12]}, Run ID: {upstream_run_id})")
+
+
+def check_brevo_campaign_duplicate(digest, limit=50, max_pages=3):
+    """
+    Check Brevo API to see if a campaign with this content digest was already created.
+    Acts as a defense-in-depth safeguard in case git push of state failed.
+
+    Paginates through recent campaigns (newest first) up to max_pages * limit campaigns.
+    Fails closed: returns ("error", error_message) on any failure.
+    Returns:
+      - ("duplicate", campaign_dict) if matching sent/queued/inProcess campaign exists
+      - ("clear", None) if Brevo was checked and no matching campaign exists
+      - ("error", str) if Brevo API call failed
+    """
+    if not digest:
+        return "clear", None
+
+    needle = f"[{digest[:12]}]"
+    offset = 0
+
+    try:
+        for _ in range(max_pages):
+            endpoint = f"emailCampaigns?limit={limit}&offset={offset}&sort=desc"
+            response = call_brevo_api(endpoint, exit_on_error=False)
+            campaigns = response.get("campaigns", [])
+            if not campaigns:
+                break
+
+            for c in campaigns:
+                name = c.get("name", "")
+                status = c.get("status", "")
+                if needle in name and status in ("sent", "queued", "inProcess"):
+                    return "duplicate", c
+
+            total_count = response.get("count", 0)
+            offset += len(campaigns)
+            if offset >= total_count or len(campaigns) < limit:
+                break
+
+        return "clear", None
+    except Exception as e:
+        error_msg = f"Brevo API error during duplicate check: {e}"
+        print(f"❌ {error_msg}")
+        return "error", error_msg
+
 
 # ---------------------------------------------------------------------------
 # CVE Section Helpers
@@ -503,17 +679,76 @@ def generate_article_html(file_path):
     
     return title, html
 
+
+def process_shorts_newsletter(
+    force=False,
+    upstream_run_id=None,
+    upstream_conclusion=None,
+    event_name=None,
+    state_file=SHORTS_STATE_PATH,
+    content_file="content.js"
+):
+    """
+    Execute end-to-end shorts newsletter processing with multi-tiered safeguards.
+    Returns (success: bool, info: str, exit_code: int).
+    """
+    eligible, info = check_shorts_newsletter_eligibility(
+        force=force,
+        upstream_run_id=upstream_run_id,
+        upstream_conclusion=upstream_conclusion,
+        event_name=event_name,
+        state_file=state_file,
+        content_file=content_file
+    )
+
+    if not eligible:
+        print(f"⏹️ Newsletter dispatch halted: {info}")
+        if info == "no_new_shorts_for_dispatch":
+            return False, info, 1
+        return False, info, 0
+
+    digest = info
+
+    # Defense-in-depth: Check Brevo API directly if not forced
+    if not force:
+        status, result = check_brevo_campaign_duplicate(digest)
+        if status == "duplicate":
+            print(f"ℹ️ Brevo Deduplication: Campaign '{result.get('name')}' (ID: {result.get('id')}) with digest {digest[:12]} was already created in Brevo. Skipping duplicate send.")
+            record_shorts_newsletter_sent(digest=digest, campaign_id=result.get("id"), upstream_run_id=upstream_run_id, state_file=state_file)
+            return False, "brevo_duplicate_synchronized", 0
+        elif status == "error":
+            print(f"❌ Safety Abort: Failed to verify duplicate status against Brevo API ({result}). Failing closed to prevent accidental duplicate email delivery.")
+            return False, f"brevo_check_failed: {result}", 1
+
+    subject, html = generate_shorts_html()
+    now_str = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    campaign_name = f"TheHGTech Shorts [{digest[:12]}] - {now_str}"
+    campaign_id = create_and_send_campaign(subject, html, campaign_name=campaign_name)
+    record_shorts_newsletter_sent(digest=digest, campaign_id=campaign_id, upstream_run_id=upstream_run_id, state_file=state_file)
+    return True, str(campaign_id), 0
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Send TheHGTech Newsletter via Brevo API")
     parser.add_argument("--type", choices=["shorts", "article"], required=True, help="Type of newsletter to send")
     parser.add_argument("--path", help="Path to the HTML file (required if type is article)")
-    
+    parser.add_argument("--force", action="store_true", help="Force send even if content digest matches previous delivery")
+
     args = parser.parse_args()
-    
+
     if args.type == "shorts":
-        subject, html = generate_shorts_html()
-        create_and_send_campaign(subject, html)
-        
+        upstream_run_id = os.environ.get("UPSTREAM_RUN_ID")
+        upstream_conclusion = os.environ.get("UPSTREAM_RUN_CONCLUSION")
+        event_name = os.environ.get("GITHUB_EVENT_NAME")
+
+        success, info, code = process_shorts_newsletter(
+            force=args.force,
+            upstream_run_id=upstream_run_id,
+            upstream_conclusion=upstream_conclusion,
+            event_name=event_name
+        )
+        sys.exit(code)
+
     elif args.type == "article":
         if not args.path:
             print("Error: --path is required when type is article")

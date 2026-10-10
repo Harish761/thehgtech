@@ -342,8 +342,50 @@ class TestSarvamIntegration(unittest.TestCase):
         # 3. Shorts workflow must not have OPENAI_API_KEY
         self.assertNotIn("OPENAI_API_KEY", shorts_content)
 
-        # 4. Newsletter workflow must gate automatic sends strictly on scheduled runs
-        self.assertIn("github.event.workflow_run.event == 'schedule'", newsletter_content)
+        # 4. Newsletter workflow must gate automatic sends on upstream success
+        self.assertIn("github.event.workflow_run.conclusion == 'success'", newsletter_content)
+        self.assertIn("github.event_name == 'workflow_dispatch'", newsletter_content)
+        self.assertNotIn("github.event.workflow_run.event == 'schedule'", newsletter_content)
+
+        # 5. Concurrency protections must be present to prevent duplicate sends
+        self.assertIn("group: newsletter-shorts", newsletter_content)
+        self.assertIn("group: update-shorts", shorts_content)
+
+        # 6. Git state push must NOT silently swallow failures with '|| true'
+        self.assertNotIn("git push || true", newsletter_content)
+        self.assertIn("git pull --rebase origin main && git push", newsletter_content)
+
+    # -------------------------------------------------------------------------
+    # TEST 13: Newsletter Trigger Matrix (Success vs Failure/Cancellation)
+    # -------------------------------------------------------------------------
+    def test_13_newsletter_trigger_condition_matrix(self):
+        """
+        Evaluate:
+        (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'
+        """
+        def evaluate_condition(event_name: str, upstream_conclusion: str = None) -> bool:
+            return (event_name == 'workflow_run' and upstream_conclusion == 'success') or (event_name == 'workflow_dispatch')
+
+        # 1. Scheduled run completing successfully -> MUST SEND
+        self.assertTrue(evaluate_condition(event_name='workflow_run', upstream_conclusion='success'))
+
+        # 2. Manual run (workflow_dispatch) completing successfully -> MUST SEND
+        self.assertTrue(evaluate_condition(event_name='workflow_run', upstream_conclusion='success'))
+
+        # 3. Scheduled or manual run that FAILED -> MUST NOT SEND
+        self.assertFalse(evaluate_condition(event_name='workflow_run', upstream_conclusion='failure'))
+
+        # 4. Scheduled or manual run that was CANCELLED -> MUST NOT SEND
+        self.assertFalse(evaluate_condition(event_name='workflow_run', upstream_conclusion='cancelled'))
+
+        # 5. Scheduled or manual run that TIMED OUT -> MUST NOT SEND
+        self.assertFalse(evaluate_condition(event_name='workflow_run', upstream_conclusion='timed_out'))
+
+        # 6. Direct manual trigger of newsletter workflow -> MUST SEND
+        self.assertTrue(evaluate_condition(event_name='workflow_dispatch'))
+
+        # 7. Arbitrary other events -> MUST NOT SEND
+        self.assertFalse(evaluate_condition(event_name='push', upstream_conclusion='success'))
 
     # -------------------------------------------------------------------------
     # TEST 12: SARVAM_MODEL Fallback & Non-Empty Model Logging
@@ -413,5 +455,329 @@ class TestSarvamIntegration(unittest.TestCase):
             self.assertIn("Model: sarvam-105b", logs)
 
 
+    # -------------------------------------------------------------------------
+    # TEST 14: Newsletter Eligibility, Deduplication & Manual Dispatch Safety
+    # -------------------------------------------------------------------------
+    @patch("urllib.request.urlopen")
+    def test_14_newsletter_eligibility_and_deduplication(self, mock_urlopen):
+        import tempfile
+        from send_newsletter import (
+            check_shorts_newsletter_eligibility,
+            record_shorts_newsletter_sent,
+            get_shorts_content_digest,
+        )
+
+        sample_content_template = """const websiteContent = {{
+  "cyberShorts": [
+    {{
+      "headline": "Test Cyber Headline {suffix}",
+      "title": "Test Cyber Title {suffix}",
+      "sourceUrl": "https://example.com/cyber-{suffix}",
+      "date": "Oct 10, 2026",
+      "sourceName": "Test Source",
+      "content": "Test cyber content {suffix}"
+    }}
+  ],
+  "aiShorts": [
+    {{
+      "headline": "Test AI Headline {suffix}",
+      "title": "Test AI Title {suffix}",
+      "sourceUrl": "https://example.com/ai-{suffix}",
+      "date": "Oct 10, 2026",
+      "sourceName": "Test Source",
+      "content": "Test AI content {suffix}"
+    }}
+  ]
+}};"""
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            content_file = os.path.join(tmpdir, "content.js")
+            state_file = os.path.join(tmpdir, "newsletter-shorts-state.json")
+
+            with open(content_file, "w", encoding="utf-8") as f:
+                f.write(sample_content_template.format(suffix="v1"))
+
+            # 1. Successful scheduled run (workflow_run, conclusion=success)
+            ok, digest1 = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-101",
+                upstream_conclusion="success",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertTrue(ok)
+            self.assertIsNotNone(digest1)
+
+            # Record sending run-101
+            record_shorts_newsletter_sent(digest1, campaign_id=9001, upstream_run_id="run-101", state_file=state_file)
+            self.assertTrue(os.path.exists(state_file))
+
+            # 2. Duplicate trigger with same upstream run ID -> suppressed
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-101",
+                upstream_conclusion="success",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "duplicate_run")
+
+            # 3. Subsequent trigger with different run ID but identical content digest -> suppressed
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-102",
+                upstream_conclusion="success",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "duplicate_content")
+
+            # 4. Failed upstream run -> rejected
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-103",
+                upstream_conclusion="failure",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "upstream_not_successful")
+
+            # 5. Cancelled upstream run -> rejected
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-104",
+                upstream_conclusion="cancelled",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "upstream_not_successful")
+
+            # 6. Direct manual dispatch WITHOUT new shorts (already sent) -> rejected
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                event_name="workflow_dispatch",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "no_new_shorts_for_dispatch")
+
+            # 7. Update content (simulating successful shorts update v2)
+            with open(content_file, "w", encoding="utf-8") as f:
+                f.write(sample_content_template.format(suffix="v2"))
+
+            # 8. Direct manual dispatch WITH new un-sent shorts -> accepted
+            ok, digest2 = check_shorts_newsletter_eligibility(
+                force=False,
+                event_name="workflow_dispatch",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertTrue(ok)
+            self.assertNotEqual(digest1, digest2)
+
+            # 9. Successful manual shorts run (workflow_run, manual dispatch upstream) -> accepted
+            ok, digest_manual = check_shorts_newsletter_eligibility(
+                force=False,
+                upstream_run_id="run-manual-200",
+                upstream_conclusion="success",
+                event_name="workflow_run",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertTrue(ok)
+            self.assertEqual(digest_manual, digest2)
+
+            # 10. Force override bypasses deduplication
+            record_shorts_newsletter_sent(digest2, campaign_id=9002, upstream_run_id="run-manual-200", state_file=state_file)
+            ok, digest_forced = check_shorts_newsletter_eligibility(
+                force=True,
+                upstream_run_id="run-manual-200",
+                upstream_conclusion="success",
+                event_name="workflow_dispatch",
+                state_file=state_file,
+                content_file=content_file,
+            )
+            self.assertTrue(ok)
+            self.assertEqual(digest_forced, digest2)
+
+            # 11. Empty or missing content -> rejected
+            empty_content_file = os.path.join(tmpdir, "empty_content.js")
+            with open(empty_content_file, "w") as f:
+                f.write("const websiteContent = {};")
+            ok, reason = check_shorts_newsletter_eligibility(
+                force=False,
+                event_name="workflow_dispatch",
+                state_file=state_file,
+                content_file=empty_content_file,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "no_content")
+
+            # 12. Confirm zero external Brevo API calls / real emails were dispatched
+            self.assertEqual(mock_urlopen.call_count, 0, "Zero Brevo API calls or real emails must be sent during eligibility checks")
+
+    # -------------------------------------------------------------------------
+    # TEST 15: Brevo API Pre-Send Campaign Duplicate Detection & Fail-Closed Behavior
+    # -------------------------------------------------------------------------
+    @patch("urllib.request.urlopen")
+    def test_15_brevo_api_campaign_deduplication(self, mock_urlopen):
+        import io
+        import tempfile
+        import urllib.error
+        from send_newsletter import (
+            check_brevo_campaign_duplicate,
+            process_shorts_newsletter,
+            create_and_send_campaign,
+        )
+
+        os.environ["BREVO_API_KEY"] = "mock-brevo-key-xyz"
+
+        # ---------------------------------------------------------------------
+        # 1. Brevo API success with an existing matching campaign
+        # ---------------------------------------------------------------------
+        mock_response = MagicMock()
+        mock_response.read.return_value = json.dumps({
+            "campaigns": [
+                {
+                    "id": 1050,
+                    "name": "TheHGTech Shorts [14339dee50b1] - 2026-10-10 06:12 UTC",
+                    "status": "sent"
+                },
+                {
+                    "id": 1049,
+                    "name": "Old Campaign",
+                    "status": "sent"
+                }
+            ],
+            "count": 2
+        }).encode("utf-8")
+        mock_urlopen.return_value.__enter__.return_value = mock_response
+
+        status, campaign = check_brevo_campaign_duplicate("14339dee50b1a2b3c4d5")
+        self.assertEqual(status, "duplicate")
+        self.assertIsNotNone(campaign)
+        self.assertEqual(campaign["id"], 1050)
+
+        # ---------------------------------------------------------------------
+        # 2. Brevo API pagination (found on page 2)
+        # ---------------------------------------------------------------------
+        page1_campaigns = [{"id": i, "name": f"Unrelated {i}", "status": "sent"} for i in range(50)]
+        page2_campaigns = [
+            {"id": 9999, "name": "TheHGTech Shorts [a1b2c3d4e5f6] - 2026-10-10 12:00 UTC", "status": "sent"}
+        ]
+
+        def pagination_side_effect(req, *args, **kwargs):
+            url = req.full_url if hasattr(req, "full_url") else req.get_full_url()
+            resp = MagicMock()
+            if "offset=0" in url:
+                resp.read.return_value = json.dumps({"campaigns": page1_campaigns, "count": 51}).encode("utf-8")
+            elif "offset=50" in url:
+                resp.read.return_value = json.dumps({"campaigns": page2_campaigns, "count": 51}).encode("utf-8")
+            else:
+                resp.read.return_value = json.dumps({"campaigns": [], "count": 51}).encode("utf-8")
+            mock_ctx = MagicMock()
+            mock_ctx.__enter__.return_value = resp
+            return mock_ctx
+
+        mock_urlopen.side_effect = pagination_side_effect
+        status, campaign = check_brevo_campaign_duplicate("a1b2c3d4e5f69999", limit=50, max_pages=3)
+        self.assertEqual(status, "duplicate")
+        self.assertEqual(campaign["id"], 9999)
+
+        # ---------------------------------------------------------------------
+        # 3. Brevo API success with NO matching campaign
+        # ---------------------------------------------------------------------
+        mock_urlopen.side_effect = None
+        mock_response = MagicMock()
+        mock_response.read.return_value = json.dumps({
+            "campaigns": [
+                {"id": 101, "name": "Different Digest [000000000000]", "status": "sent"}
+            ],
+            "count": 1
+        }).encode("utf-8")
+        mock_urlopen.return_value.__enter__.return_value = mock_response
+
+        status, campaign = check_brevo_campaign_duplicate("999999999999a2b3c4d5")
+        self.assertEqual(status, "clear")
+        self.assertIsNone(campaign)
+
+        # ---------------------------------------------------------------------
+        # 4. Brevo API failure returns 'error' status (fail-closed)
+        # ---------------------------------------------------------------------
+        mock_urlopen.side_effect = urllib.error.HTTPError(
+            url="https://api.brevo.com/v3/emailCampaigns",
+            code=500,
+            msg="Internal Server Error",
+            hdrs={},
+            fp=io.BytesIO(b'{"error": "Internal Server Error"}')
+        )
+        status, error_msg = check_brevo_campaign_duplicate("14339dee50b1a2b3c4d5")
+        self.assertEqual(status, "error")
+        self.assertIn("500", error_msg)
+
+        # ---------------------------------------------------------------------
+        # 5. Integration: Brevo API failure blocks send (Fail-Closed, Exit Code 1)
+        # ---------------------------------------------------------------------
+        sample_content = """const websiteContent = {
+  "cyberShorts": [{"headline": "H1", "title": "T1", "sourceUrl": "https://example.com/1", "date": "Oct 10, 2026", "sourceName": "S1", "content": "C1"}],
+  "aiShorts": [{"headline": "H2", "title": "T2", "sourceUrl": "https://example.com/2", "date": "Oct 10, 2026", "sourceName": "S2", "content": "C2"}]
+};"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            content_path = os.path.join(tmpdir, "content.js")
+            state_path = os.path.join(tmpdir, "newsletter-shorts-state.json")
+            with open(content_path, "w") as f:
+                f.write(sample_content)
+
+            with patch("send_newsletter.check_brevo_campaign_duplicate") as mock_dup_check, \
+                 patch("send_newsletter.create_and_send_campaign") as mock_create_send:
+
+                # When Brevo check errors out:
+                mock_dup_check.return_value = ("error", "HTTP 500 Brevo Service Unavailable")
+                success, info, exit_code = process_shorts_newsletter(
+                    force=False,
+                    upstream_run_id="run-fail-closed",
+                    upstream_conclusion="success",
+                    event_name="workflow_run",
+                    state_file=state_path,
+                    content_file=content_path
+                )
+                self.assertFalse(success)
+                self.assertEqual(exit_code, 1, "Must exit with code 1 when Brevo duplicate verification fails")
+                self.assertIn("brevo_check_failed", info)
+                self.assertEqual(mock_create_send.call_count, 0, "Must NEVER create or send campaign when Brevo check fails")
+
+                # When Brevo check confirms duplicate:
+                mock_dup_check.return_value = ("duplicate", {"id": 8888, "name": "Existing [digest]"})
+                success, info, exit_code = process_shorts_newsletter(
+                    force=False,
+                    upstream_run_id="run-dup",
+                    upstream_conclusion="success",
+                    event_name="workflow_run",
+                    state_file=state_path,
+                    content_file=content_path
+                )
+                self.assertFalse(success)
+                self.assertEqual(exit_code, 0, "Duplicate should exit cleanly with code 0")
+                self.assertEqual(info, "brevo_duplicate_synchronized")
+                self.assertEqual(mock_create_send.call_count, 0, "Must NEVER send campaign on confirmed duplicate")
+                # Confirm local state was synchronized
+                self.assertTrue(os.path.exists(state_path))
+                with open(state_path) as sf:
+                    saved_state = json.load(sf)
+                self.assertEqual(saved_state["lastCampaignId"], 8888)
+
+
 if __name__ == "__main__":
     unittest.main()
+
+
