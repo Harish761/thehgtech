@@ -37,7 +37,7 @@ jobs:
       - name: Run content update script
         env:
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
-          SARVAM_MODEL: ${{ vars.SARVAM_MODEL || '' }}
+          SARVAM_MODEL: ${{ vars.SARVAM_MODEL || 'sarvam-105b' }}
         run: |
           python scripts/legacy_tasks/update_shorts.py
       

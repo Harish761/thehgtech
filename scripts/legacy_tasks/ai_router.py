@@ -17,9 +17,9 @@ class AIRouter:
     """
 
     def __init__(self):
-        # Read Sarvam AI configuration from environment
-        self.sarvam_key = os.getenv("SARVAM_API_KEY", "").strip()
-        self.sarvam_model = os.getenv("SARVAM_MODEL", "sarvam-105b").strip()
+        # Read Sarvam AI configuration from environment with robust default fallback
+        self.sarvam_key = (os.getenv("SARVAM_API_KEY") or "").strip()
+        self.sarvam_model = (os.getenv("SARVAM_MODEL") or "").strip() or "sarvam-105b"
         self.last_provider = "None"
 
     @staticmethod
@@ -76,7 +76,7 @@ class AIRouter:
             print("    [Router] ❌ Python 'requests' package not available for Sarvam API.")
             return None
 
-        target_model = model or self.sarvam_model
+        target_model = (model or "").strip() or self.sarvam_model or "sarvam-105b"
         endpoint = self.get_sarvam_endpoint(target_model)
 
         messages = []

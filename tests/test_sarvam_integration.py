@@ -345,6 +345,73 @@ class TestSarvamIntegration(unittest.TestCase):
         # 4. Newsletter workflow must gate automatic sends strictly on scheduled runs
         self.assertIn("github.event.workflow_run.event == 'schedule'", newsletter_content)
 
+    # -------------------------------------------------------------------------
+    # TEST 12: SARVAM_MODEL Fallback & Non-Empty Model Logging
+    # -------------------------------------------------------------------------
+    @patch("requests.post")
+    def test_12_sarvam_model_fallback_and_logging(self, mock_post):
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = {
+            "choices": [{"message": {"role": "assistant", "content": "Date: Oct 10 2026\nHeadline: Test\nTitle: Test\nSource Name: Test\nSource URL: https://example.com\nContent: Test content.\nEntities: test"}}],
+            "usage": {"prompt_tokens": 10, "completion_tokens": 10, "total_tokens": 20}
+        }
+        mock_post.return_value = mock_response
+
+        test_cases = [
+            ("unset", None),
+            ("empty_string", ""),
+            ("whitespace", "   \t \n  "),
+            ("explicit_default", "sarvam-105b"),
+        ]
+
+        import io
+        from contextlib import redirect_stdout
+
+        for label, env_value in test_cases:
+            with self.subTest(case=label):
+                if env_value is None:
+                    os.environ.pop("SARVAM_MODEL", None)
+                else:
+                    os.environ["SARVAM_MODEL"] = env_value
+
+                os.environ["SARVAM_API_KEY"] = "sk-test-model-key"
+                router = AIRouter()
+
+                # Verify router initialized model attribute
+                self.assertEqual(router.sarvam_model, "sarvam-105b", f"Failed for case: {label}")
+
+                # Verify execution payload and diagnostic logging
+                mock_post.reset_mock()
+                log_stream = io.StringIO()
+                with redirect_stdout(log_stream):
+                    router.call_sarvam("test prompt")
+
+                logs = log_stream.getvalue()
+
+                # Model sent to API must be "sarvam-105b"
+                called_payload = mock_post.call_args[1]["json"]
+                self.assertEqual(called_payload["model"], "sarvam-105b")
+
+                # Diagnostic logging must never show empty model name
+                self.assertIn("Model: sarvam-105b", logs)
+                self.assertNotIn("Model:  |", logs)
+                self.assertNotIn("Model: |", logs)
+
+        # Also verify when call_sarvam is called with empty/whitespace model argument
+        with self.subTest(case="empty_argument"):
+            os.environ.pop("SARVAM_MODEL", None)
+            router = AIRouter()
+            mock_post.reset_mock()
+            log_stream = io.StringIO()
+            with redirect_stdout(log_stream):
+                router.call_sarvam("test prompt", model="   ")
+
+            logs = log_stream.getvalue()
+            called_payload = mock_post.call_args[1]["json"]
+            self.assertEqual(called_payload["model"], "sarvam-105b")
+            self.assertIn("Model: sarvam-105b", logs)
+
 
 if __name__ == "__main__":
     unittest.main()
