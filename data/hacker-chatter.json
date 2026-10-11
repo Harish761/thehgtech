@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-10-10T18:46:01.565569",
-  "total_incidents": 31925,
+  "last_updated": "2026-10-11T09:09:21.083129",
+  "total_incidents": 31931,
   "incidents": [
+    {
+      "id": "qilin_confipetrol",
+      "victim_name": "Confipetrol",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-10-11T02:58:30.613472+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/2f7da1a4cacf5a5c6b29e654e7e45a39.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=61008869-2520-4a34-a5a4-654c531f819c",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "dragonforce_texma_international_co.,_ltd",
+      "victim_name": "TEXMA International Co., Ltd",
+      "threat_actor": "dragonforce",
+      "date_discovered": "2026-10-10T20:31:45.583913+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "TEXMA International Co., Ltd. is a leading Taiwanese apparel manufacturer specializing in high-quality women's woven apparel, activewear, and sportswear. Founded in 1975, the company operates under a \"Taiwan orders, global production\" business model, supplying some of the world's most recognizable fashion brands.",
+      "screenshot": "https://images.ransomware.live/victims/af703a7360550825c7e5d59814fdb673.png",
+      "url": "http://xjhmtitnrdrgzw4vmsghirdoo2fk35a3tzj4enlmah4pvehdspydsiyd.onion/blog/?post_uuid=b895683d-2b2c-48ae-89b1-31aea880f383",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "thegentlemen_royal_thai_air_force",
+      "victim_name": "Royal Thai Air Force",
+      "threat_actor": "thegentlemen",
+      "date_discovered": "2026-10-10T20:30:08.186003+00:00",
+      "industry": "Government & Defense",
+      "website": "",
+      "claim": "rtaf.mi.th is the official portal of the Royal Thai Air Force, one of Asia's oldest air forces (founded November 2, 1913; independent since 1937), with ~46,000 personnel and 11 combat wings, now running a modern Odoo-based portal publishing financial reports, procurement plans, and White Papers on its \"Unbeatable Air Force\" roadmap to 2037. Its fleet spans 46 F-16s, 11 Gripen C/D, 13 F-5TH Super Tigris, Saab 340 Erieye AEW&C, C-130s, and a VIP fleet including an ex-Thai Airways A340-500. In July 2025 the RTAF fought its first combat since 1988 in the Thai-Cambodian border conflict, with its Gripens achieving the type's first-ever combat weapons launch. The centerpiece modernization is the Gripen E/F program: Thailand signed the $550M \"Peace Burapha 1\" contract in August 2025 — first in APAC — with deliveries from 2029 and 8 more jets sought toward a 12-aircraft squadron by 2037. Air Chief Marshal Seksan Kantha, the 31st commander since October 2025",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "umbra_helwan_university_(hitu)",
+      "victim_name": "Helwan University (HITU)",
+      "threat_actor": "UmBra",
+      "date_discovered": "2026-10-10T16:54:23.654958+00:00",
+      "industry": "Education",
+      "website": "",
+      "claim": "Helwan International Technological University — a pioneering Egyptian institution offering cutting-edge programs in Cybersecurity, Data Science, Artificial Intelligence, and Mechatronics, equipped with advanced labs and strong industry partnerships to prepare students for the digital future.",
+      "screenshot": "https://images.ransomware.live/victims/d05c021893576e0ade86ab4a66fdbf28.png",
+      "url": "http://umbra7isogjsgdcndz3uu6qvl5zftjptt6s3iiuecjlwbt4yqyvrhcid.onion",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "redact_dexcom",
+      "victim_name": "DexCom",
+      "threat_actor": "Redact",
+      "date_discovered": "2026-10-10T16:53:38.697114+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Sector: Medical Equipment | Revenue: $4.97B USD",
+      "screenshot": "https://images.ransomware.live/victims/dde43211c986889efac13449e9a1813d.png",
+      "url": "http://neclc36yt4yaa5lv54kh4qbhvjcvuv6nnaurqowkellytpvj3afh4aid.onion",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_aci_proyectos_sas",
+      "victim_name": "ACI Proyectos SAS",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-10-10T16:06:32.517468+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/268643db4927c9f66b176d5c49e755cf.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=6e8bbd6e-69b7-4987-bf25-f6957818db17",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "exitium_koike_sanso_kogoyo_co._ltd.",
       "victim_name": "KOIKE Sanso Kogoyo Co. Ltd.",
