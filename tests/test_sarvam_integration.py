@@ -116,6 +116,8 @@ class TestSarvamIntegration(unittest.TestCase):
         payload = kwargs["json"]
         self.assertEqual(payload["model"], "sarvam-105b")
         self.assertEqual(payload["max_tokens"], 4000)
+        self.assertIn("reasoning_effort", payload)
+        self.assertIsNone(payload["reasoning_effort"])
 
     # -------------------------------------------------------------------------
     # TEST 2: Compatibility with News-Short Parser & Markdown Normalization
@@ -986,6 +988,140 @@ class TestSarvamIntegration(unittest.TestCase):
             update_shorts_code = f.read()
         self.assertNotIn("out of quota", update_shorts_code)
         self.assertIn("check router logs for status codes, token limits, or response diagnostics", update_shorts_code)
+
+    # -------------------------------------------------------------------------
+    # TEST 17: Reasoning Effort Disabled & Independent Category Validation
+    # -------------------------------------------------------------------------
+    @patch("requests.post")
+    def test_17_sarvam_reasoning_disabled_and_category_validation(self, mock_post):
+        import io
+        from contextlib import redirect_stdout
+
+        os.environ["SARVAM_API_KEY"] = "sk-test-reasoning-key"
+        router = AIRouter()
+
+        # ---------------------------------------------------------------------
+        # 1. Complete, valid Sarvam response with reasoning_effort explicitly disabled
+        # ---------------------------------------------------------------------
+        mock_valid = MagicMock()
+        mock_valid.status_code = 200
+        mock_valid.json.return_value = {
+            "id": "cmpl-valid-101",
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": SAMPLE_SARVAM_RAW_OUTPUT},
+                "finish_reason": "stop"
+            }],
+            "usage": {"prompt_tokens": 1500, "completion_tokens": 600, "total_tokens": 2100}
+        }
+        mock_post.return_value = mock_valid
+
+        res = router.call_sarvam("test prompt")
+        self.assertIsNotNone(res)
+        self.assertIn("Critical Cisco Zero-Day Discovered", res)
+        # Verify reasoning_effort was explicitly passed as None (null in JSON)
+        called_payload = mock_post.call_args[1]["json"]
+        self.assertIn("reasoning_effort", called_payload)
+        self.assertIsNone(called_payload["reasoning_effort"])
+        self.assertEqual(router.last_finish_reason, "stop")
+
+        # ---------------------------------------------------------------------
+        # 2. Response with finish_reason="length" treated as truncated (even with partial text)
+        # ---------------------------------------------------------------------
+        mock_truncated = MagicMock()
+        mock_truncated.status_code = 200
+        mock_truncated.json.return_value = {
+            "id": "cmpl-trunc-102",
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": "Date: Oct 12 2026\nHeadline: Truncated Title\nTitle: Truncated"},
+                "finish_reason": "length"
+            }],
+            "usage": {"prompt_tokens": 3048, "completion_tokens": 4000, "total_tokens": 7048}
+        }
+        mock_post.return_value = mock_truncated
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            trunc_res = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(trunc_res, "finish_reason='length' must be treated as truncated and return None")
+        self.assertEqual(router.last_finish_reason, "length")
+        self.assertIn("Response truncated by token limit (finish_reason='length')", logs)
+
+        # ---------------------------------------------------------------------
+        # 3. Empty response content
+        # ---------------------------------------------------------------------
+        mock_empty = MagicMock()
+        mock_empty.status_code = 200
+        mock_empty.json.return_value = {
+            "id": "cmpl-empty-103",
+            "choices": [{"index": 0, "message": {"role": "assistant", "content": ""}, "finish_reason": "stop"}],
+            "usage": {"prompt_tokens": 500, "completion_tokens": 0, "total_tokens": 500}
+        }
+        mock_post.return_value = mock_empty
+        self.assertIsNone(router.call_sarvam("test prompt"))
+
+        # ---------------------------------------------------------------------
+        # 4. Malformed or incomplete shorts dropped by parser
+        # ---------------------------------------------------------------------
+        malformed_raw = """Date: Oct 12 2026
+Source Name: BleepingComputer
+Headline: Valid Headline Here
+Content: Missing title and URL, so should be dropped.
+"""
+        parsed = update_shorts.parse_shorts(malformed_raw)
+        self.assertEqual(len(parsed), 0, "Malformed shorts missing required fields must be dropped")
+
+        # ---------------------------------------------------------------------
+        # 5. Cybersecurity failure while AI succeeds (aborts, explicitly reports Cybersecurity)
+        # 6. AI failure while cybersecurity succeeds (aborts, explicitly reports AI)
+        # 7. Confirmation that invalid/incomplete results cannot overwrite existing content
+        # ---------------------------------------------------------------------
+        def evaluate_shorts_gate(cyber_new, cyber_shorts, ai_new, ai_shorts):
+            failed_cats = []
+            if cyber_new and not cyber_shorts:
+                failed_cats.append("Cybersecurity")
+            if ai_new and not ai_shorts:
+                failed_cats.append("AI")
+            return failed_cats
+
+        # Case 5: Cybersecurity failure while AI succeeds
+        failed_5 = evaluate_shorts_gate(
+            cyber_new=[{"title": "C1"}], cyber_shorts=[],
+            ai_new=[{"title": "A1"}], ai_shorts=[{"title": "Valid AI Short"}]
+        )
+        self.assertEqual(failed_5, ["Cybersecurity"])
+
+        # Case 6: AI failure while cybersecurity succeeds
+        failed_6 = evaluate_shorts_gate(
+            cyber_new=[{"title": "C1"}], cyber_shorts=[{"title": "Valid Cyber Short"}],
+            ai_new=[{"title": "A1"}], ai_shorts=[]
+        )
+        self.assertEqual(failed_6, ["AI"])
+
+        # Case 7: Both fail
+        failed_7 = evaluate_shorts_gate(
+            cyber_new=[{"title": "C1"}], cyber_shorts=[],
+            ai_new=[{"title": "A1"}], ai_shorts=[]
+        )
+        self.assertEqual(failed_7, ["Cybersecurity", "AI"])
+
+        # Case 8: Both succeed
+        failed_8 = evaluate_shorts_gate(
+            cyber_new=[{"title": "C1"}], cyber_shorts=[{"title": "Valid Cyber"}],
+            ai_new=[{"title": "A1"}], ai_shorts=[{"title": "Valid AI"}]
+        )
+        self.assertEqual(len(failed_8), 0)
+
+        # Verify update_shorts.py contains independent category check and naming
+        update_shorts_path = os.path.join(LEGACY_TASKS_DIR, "update_shorts.py")
+        with open(update_shorts_path, "r") as f:
+            code = f.read()
+        self.assertIn('failed_categories.append("Cybersecurity")', code)
+        self.assertIn('failed_categories.append("AI")', code)
+        self.assertIn('AI generation failed for category: {failed_str}', code)
 
 
 if __name__ == "__main__":

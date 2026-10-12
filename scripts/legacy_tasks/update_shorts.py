@@ -1307,8 +1307,16 @@ def update_shorts():
     print(f"📊 Parsed {len(new_ai_shorts)} new AI shorts")
     
     # Abort if we had new articles but failed to parse/generate any shorts
-    if (cyber_articles_new and not new_cyber_shorts) or (ai_articles_new and not new_ai_shorts):
-        print("\n❌ CRITICAL ERROR: AI failed to generate shorts from new articles!")
+    failed_categories = []
+    if cyber_articles_new and not new_cyber_shorts:
+        failed_categories.append("Cybersecurity")
+    if ai_articles_new and not new_ai_shorts:
+        failed_categories.append("AI")
+
+    if failed_categories:
+        failed_str = ", ".join(failed_categories)
+        print(f"\n❌ CRITICAL ERROR: AI generation failed for category: {failed_str}!")
+        print(f"❌ Failed category: {failed_str} produced 0 valid shorts.")
         print("❌ Generation failed or returned empty content across attempts (check router logs for status codes, token limits, or response diagnostics).")
         print("❌ Aborting update to prevent deleting old content without replacing it.")
         sys.exit(1)

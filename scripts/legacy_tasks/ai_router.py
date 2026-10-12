@@ -21,6 +21,7 @@ class AIRouter:
         self.sarvam_key = (os.getenv("SARVAM_API_KEY") or "").strip()
         self.sarvam_model = (os.getenv("SARVAM_MODEL") or "").strip() or "sarvam-105b"
         self.last_provider = "None"
+        self.last_finish_reason = None
 
     @staticmethod
     def clean_markdown_labels(text: str) -> str:
@@ -80,7 +81,8 @@ class AIRouter:
         system_prompt: str = "",
         max_tokens: int = 4000,
         model: Optional[str] = None,
-        temperature: float = 0.3
+        temperature: float = 0.3,
+        reasoning_effort: Optional[str] = None,
     ) -> Optional[str]:
         """
         Direct chat completion call to Sarvam AI with bounded retries for transient errors
@@ -109,11 +111,17 @@ class AIRouter:
             "Authorization": f"Bearer {self.sarvam_key}",
         }
 
+        # Resolve reasoning_effort: explicit argument or SARVAM_REASONING_EFFORT env var, defaulting to None (disabled)
+        effort = reasoning_effort if reasoning_effort is not None else os.getenv("SARVAM_REASONING_EFFORT")
+        if effort is not None and not str(effort).strip():
+            effort = None
+
         payload = {
             "model": target_model,
             "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens,
+            "reasoning_effort": effort,
         }
 
         # Bounded retries for transient errors only (429, 5xx, network timeouts)
@@ -133,8 +141,11 @@ class AIRouter:
                     first_choice = choices[0] if (isinstance(choices, list) and len(choices) > 0 and isinstance(choices[0], dict)) else {}
                     msg = first_choice.get("message") if isinstance(first_choice, dict) else {}
                     raw_content = msg.get("content") if isinstance(msg, dict) else None
+                    finish_reason = first_choice.get("finish_reason") if isinstance(first_choice, dict) else None
+                    self.last_finish_reason = finish_reason
 
-                    if isinstance(raw_content, str) and raw_content.strip():
+                    # Responses truncated by token limit (finish_reason='length') must not be accepted as complete
+                    if finish_reason != "length" and isinstance(raw_content, str) and raw_content.strip():
                         returned_model = data.get("model", target_model) if isinstance(data, dict) else target_model
                         usage = data.get("usage", {}) if isinstance(data, dict) else {}
                         
@@ -157,6 +168,8 @@ class AIRouter:
                         return self.clean_markdown_labels(raw_content)
                     else:
                         print("    [Router] ⚠️ Sarvam response missing valid 'choices' or content.")
+                        if finish_reason == "length":
+                            print("    [Router] ⚠️ Response truncated by token limit (finish_reason='length').")
                         
                         # Extract diagnostic metadata defensively without exposing sensitive payloads
                         resp_keys = list(data.keys()) if isinstance(data, dict) else []
@@ -265,7 +278,8 @@ class AIRouter:
         task_type: str = "general",
         system_prompt: str = "",
         max_tokens: int = 4000,
-        temperature: float = 0.3
+        temperature: float = 0.3,
+        reasoning_effort: Optional[str] = None,
     ) -> Optional[str]:
         """
         Unified generation router.
@@ -279,7 +293,8 @@ class AIRouter:
             prompt=prompt,
             system_prompt=system_prompt,
             max_tokens=max_tokens,
-            temperature=temperature
+            temperature=temperature,
+            reasoning_effort=reasoning_effort,
         )
 
 
