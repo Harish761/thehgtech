@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 13 2026",
+            "headline": "Docker Hub Flaw Lets Users Hijack Accounts",
+            "title": "Docker Fixes Critical Hub Flaw Allowing Cross-User Image Manipulation",
+            "content": "Docker fixed a critical two-year-old vulnerability in Docker Hub that allowed one user to push, pull, or delete images on behalf of another user. The flaw resided in the platform's account conversion feature, which was designed to migrate personal accounts to organization accounts. Docker released a patch on September 30 and confirmed it has no evidence of active exploitation. Users should update their Docker Hub configurations to the latest versions to mitigate the risk of unauthorized image repository access. This incident highlights the ongoing security risks associated with container image registries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Ivanti VPN Zero-Days Chain to Root Access",
+            "title": "Attacker Chains Three Ivanti Zero-Days for Unauthenticated Root Access",
+            "content": "A threat actor successfully chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to execute commands as root without authentication, according to Volexity. Ivanti has released patches for two of the flaws, while a third zero-day remains unpatched. Affected customers on vulnerable versions are urged to apply the available fixes immediately and isolate their systems until all patches are deployed. This attack demonstrates a severe, unauthenticated path to full system compromise on network perimeter devices. Organizations should audit their VPN logs for signs of unauthorized access and prioritize these patches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "SAP Cloud SDK Flaw Allows OAuth2 Credential Theft",
+            "title": "SAP Discloses Critical Flaw Exposing OAuth2 Credentials in Python SDK",
+            "content": "SAP disclosed a critical flaw in its Cloud SDK for Python that allows an attacker to steal an application's OAuth2 client credentials by redirecting them to a malicious server. The vulnerability affects multi-tenant applications running on the SAP Business Technology Platform (BTP). SAP issued a security advisory on October 13 and released a patched version of the SDK to block the credential redirection. Developers integrating SAP services should update the SDK immediately and review their OAuth2 client configurations for unauthorized redirects. This flaw poses a severe risk of account takeover and unauthorized API access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "MarkLogic Flaws Grant Persistent Admin Control",
+            "title": "Progress MarkLogic Flaws Allow Privilege Escalation to Admin",
+            "content": "Two critical flaws in Progress Software's MarkLogic Server database allow delegated managers to escalate their privileges to full administrator control. The vulnerabilities were disclosed alongside 31 other flaws, five of which were scored as critical. Fixes have been available for these specific privilege escalation issues, but unpatched instances remain at high risk of persistent compromise. Administrators should apply the latest MarkLogic Server patches immediately and audit user roles to ensure least-privilege access. This flaw could allow an insider or compromised low-privilege account to maintain persistent, high-level server control.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "GitLab Patches Max-Severity Regex Flaw",
+            "title": "GitLab Patches Max-Severity Regex Flaw Enabling RCE",
+            "content": "GitLab released a patch for a maximum-severity vulnerability that could allow unauthenticated attackers to execute arbitrary code on its servers. The flaw is a regular expression denial of service (ReDoS) vulnerability that can be chained with other high-severity bugs to achieve remote code execution (RCE). The company also patched five other high-severity flaws affecting its source code management and continuous integration/delivery (CI/CD) pipelines. All GitLab users should update their instances immediately to prevent potential server compromise and unauthorized code execution. This highlights the critical risk of ReDoS vulnerabilities in complex software platforms.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4234306/gitlab-patches-a-max-severity-regex-flaw-alongside-five-high-severity-bugs.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Anthropic Warns AI Worms Targeting IoT Devices",
+            "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
+            "content": "Anthropic has warned that small AI models could soon develop the ability to self-replicate and propagate autonomously across Internet of Things (IoT) devices. The frontier AI lab predicts this capability is only months away, potentially targeting consumer hardware like smart ovens and off-brand Android TV boxes. Such self-propagating worm bots would operate without human intervention, creating a large-scale, autonomous botnet. This development signals a critical emerging threat vector in the cybersecurity landscape, requiring immediate defensive strategies for IoT ecosystems. Organizations and developers must begin implementing robust network segmentation and strict access controls on all connected devices.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "GitHub Expires npm Publishing to Block Hijacking",
+            "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+            "content": "GitHub has implemented a security fix for its npm package publishing platform after researchers exposed a flaw allowing attackers to hijack packages. The vulnerability allowed malicious actors to push new versions of a different user's package without stealing credentials, affecting over 1,500 packages. GitHub's response was to expire all unvalidated npm trusted publishing configurations within 48 hours of their creation. This mitigation prevents unauthorized access during the vulnerable initial setup window. All npm package maintainers must re-validate their trusted publishing configurations to restore legitimate publishing access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Xandr Fined €8.6M for Grindr Data Relay",
+            "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
+            "content": "The Norwegian Data Protection Authority (DPA) has imposed a record fine of €8.6 million ($9.62 million) on Xandr, a Microsoft-owned advertising unit. The penalty stems from Xandr illegally relaying highly sensitive data from Grindr users to advertisers without proper consent. The DPA ruled that this practice constituted a severe violation of data protection laws regarding the processing of sexual orientation. This administrative penalty is the largest ever issued by the Norwegian data protection watchdog in its history. The ruling sets a strict precedent for how advertising networks must handle highly sensitive personal data.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover",
+            "title": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network",
+            "content": "Three chained vulnerabilities in LG's webOS platform allow attackers on the same local network to gain root access to certain smart TVs without any user interaction or PIN. The critical pre-authentication remote code execution (RCE) chain was disclosed by SSD Secure Disclosure on October 12, 2026. An attacker could exploit this to install persistent malware or access the TV's internal network. LG has already issued a software patch to address the webOS security flaws. Users are urged to update their LG smart TVs immediately through the device's settings menu.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Bitdefender AI Visibility and Control Walkthrough",
+            "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
+            "content": "Bitdefender has introduced a new product feature designed to provide comprehensive visibility and control over artificial intelligence (AI) applications. The tool addresses the security blind spot created by AI assistants, coding extensions, and local model runtimes that do not install traditional programs. Security professionals can now monitor and manage these AI processes directly from the Bitdefender interface. This visibility is critical for preventing data leakage from corporate networks to unauthorized AI platforms. Organizations must deploy this control layer to maintain strict data governance over their AI-driven workflows.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 12 2026",
             "headline": "0-Days, Rogue Certs—Cybersecurity Week in Review",
             "title": "The Hacker News Weekly Recap: 0-Days, Rogue Certs, ShinyHunters Arrest and AI-Fooling Malware",
@@ -74,27 +164,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 10 2026",
-            "headline": "FBI Arrests Ransomware Negotiation Firm Executive",
-            "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-            "content": "The FBI arrested the co-founder of a Canadian cybersecurity firm for his alleged involvement with the ShinyHunters hacking group. The group recently compromised the FBI's own systems and leaked sensitive data on thousands of agents. This arrest signals a renewed focus by law enforcement on the infrastructure supporting ransomware operations. Organizations must review their third-party vendor security postures and ensure robust data handling protocols.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 09 2026",
-            "headline": "Credential-Stealing GitHub Actions in 340+ Repositories",
-            "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
-            "content": "Researchers uncovered an ongoing credential-theft campaign that compromised two high-profile open-source maintainer accounts to inject malicious GitHub Actions workflows into over 340 repositories. The malicious workflows, pushed by the compromised account of pyxel author Takashi Kitao, were designed to steal credentials from CI/CD pipelines. This attack vector exploits the inherent trust placed in popular open-source projects. Developers should immediately audit their repository permissions and rotate any exposed secrets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 13 2026",
+            "headline": "AI-Powered Edge Devices Deter Wildlife",
+            "title": "Flox Intelligence Uses Species-Specific AI to Protect Critical Infrastructure",
+            "content": "Flox Intelligence has deployed edge devices that use AI to identify wildlife and emit species-specific sounds to deter animals from approaching trains, airports, and roads. These devices operate offline at the edge, ensuring real-time response without relying on cloud connectivity. The system targets specific species to minimize environmental disruption and prevent costly infrastructure damage. This deployment addresses the growing challenge of human-wildlife conflicts in critical transport corridors. Operators should evaluate integrating these edge AI systems to enhance perimeter security and reduce wildlife-related incidents.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Verified AI Image of Mia Goth Spreads",
+            "title": "Actress Mia Goth Condemns Instagram Verified AI Post",
+            "content": "Actress Mia Goth publicly condemned Instagram for allowing a verified AI-generated image of her to spread across the platform. The post, which appeared on the miagoth_ account and featured a fabricated T-shirt slogan, circulated rapidly before being removed. Goth stated she found the platform's inaction \"incomprehensible,\" highlighting a critical gap in content moderation. This incident underscores the risks of deepfakes and synthetic media on social platforms with blue verification badges. Users should report synthetic media immediately and verify account authenticity before engaging with viral content.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Gemini 4 Argon API Rates Cut 50 Percent",
+            "title": "Gemini 4 Argon Begins Rollout with Discounted Developer API Rates",
+            "content": "Google has begun rolling out Gemini 4 Argon to its Gemini app and the Antigravity platform, but access is currently restricted to paid subscribers. Developers utilizing the API can access this new model at a 50 percent discount through November 2026. This pricing strategy aims to drive adoption and gather performance data from a controlled user base. The rollout follows previous iterations of the Gemini model series, which have faced scrutiny over benchmark performance. Developers should review the new API documentation and update their integration code to leverage the latest model capabilities.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Meta's \"Your Algorithm\" Feature Expands",
+            "title": "Meta Expands AI-Powered \"Your Algorithm\" Feature to Facebook",
+            "content": "Meta has expanded its AI-powered \"Your Algorithm\" feature from Instagram to Facebook, giving users more granular control over their content feeds. This tool uses machine learning to allow users to adjust the ranking of specific content types, such as posts from friends or groups. The feature addresses widespread user complaints about opaque and often frustrating algorithmic curation. By increasing transparency and user agency, Meta aims to improve user retention and trust on its platforms. Users should navigate to their settings to explore the new controls and customize their content experience.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Laplace Intelligence Stress-Tests Autonomous Systems",
+            "title": "Laplace Intelligence Uses AI to Red-Team Autonomous Vehicles",
+            "content": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to red-team robots and self-driving cars before they are deployed in the real world. The startup competes in the TechCrunch Disrupt Startup Battlefield to commercialize its safety verification platform. By stress-testing autonomous systems in virtual environments, Laplace aims to identify critical failure modes and edge cases. This approach reduces the risk of costly accidents and accelerates the safe deployment of autonomous technology. Automotive and robotics firms should consider integrating these red-teaming simulations into their pre-deployment validation pipelines.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Pluto Security Raises $42M Amid AI Tool Security Risks",
+            "title": "Pluto Security Raises $42M as Unmanaged AI Tools Create Enterprise Security Holes",
+            "content": "Pluto Security raised $42 million to address the security risks posed by unmanaged AI tool usage within enterprise environments. The influx of capital targets the unexpected ways employees use consumer-grade AI, which often creates unmonitored data flows and access points. This trend leaves security teams struggling to enforce policies across disparate AI applications. Organizations must implement strict AI governance and zero-trust architectures to mitigate these emerging vulnerabilities.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "LFM2.5-24B-A2B Enables On-Device AI Agents",
+            "title": "Hugging Face Releases LFM2.5-24B-A2B for On-Device, Private AI Agents",
+            "content": "Hugging Face released the LFM2.5-24B-A2B large language model (LLM) designed for running AI agents directly on local devices. This architecture utilizes a 2.4 billion parameter active-state transformer to process tasks without transmitting data to cloud servers. It enables developers to build private, responsive applications with significantly reduced latency and enhanced data privacy. The model is optimized for edge computing and runs efficiently on consumer-grade hardware.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Facebook Lets Users Customize AI Feed Algorithm",
+            "title": "Meta's \"Your Algorithm\" Feature Allows Direct AI Feed Customization",
+            "content": "Meta is rolling out a \"Your Algorithm\" feature on Facebook that allows users to directly manage topics driving their content feed and Reels recommendations. Users can manually add topics or hit \"interested\" or \"not interested\" to immediately adjust the AI's recommendation engine. This feature shifts control from opaque automated systems to user-driven parameters. It responds to widespread user demand for greater transparency and control over social media content curation.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Google Play Launches Private Vibe-Coded Android Apps",
+            "title": "Google Play Now Allows Private, AI-Generated Android Apps",
+            "content": "Google is expanding the Android ecosystem by allowing users to build and install private apps generated via AI on their devices. These applications, created using AI tools like Google's AI Studio, no longer require publication on the public Google Play Store. This move democratizes app development while keeping personal tools and data isolated from public distribution channels. It targets developers and power users looking to prototype or secure personal utilities without public exposure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Google Streamlines Launching Vibe-Coded Apps",
+            "title": "Google Streamlines Vibe-Coded App Deployment Through Play Store",
+            "content": "Google is introducing a new feature in the US that allows users to launch AI-generated personal apps directly through the Play Store. This update removes the previous requirement of connecting an Android device to a computer for installation via AI Studio. The streamlined deployment process significantly lowers the barrier for non-technical users to distribute their custom applications. It marks a major step in making low-code AI development accessible to the general consumer market.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+            "relatedResources": []
+        },
         {
             "date": "Oct 12 2026",
             "headline": "$50M US Air Force Contract for Balloon AI",
@@ -102,15 +264,6 @@ const websiteContent = {
             "content": "Silicon Valley startup WindBorne won a $50 million U.S. Air Force contract to deploy its AI-powered weather prediction system. The company utilizes a network of high-altitude weather balloons to collect atmospheric data, which is then processed by proprietary algorithms to forecast severe weather events. This contract validates the military's interest in alternative data collection methods beyond traditional satellites. The system will provide critical meteorological intelligence for flight operations, directly impacting defense readiness and strategic planning. Security professionals should evaluate the data integrity protocols for this novel sensor network.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 06 2026",
-            "headline": "Jump Trading Scales Quant Research with ChatGPT",
-            "title": "Jump Trading Expands Quantitative Research Using OpenAI",
-            "content": "Jump Trading, a global proprietary trading firm, is scaling its quantitative research by integrating OpenAI's models into its workflows. The firm combines multiple data sources, including market feeds and alternative datasets, into longer-running AI workflows that end with human expert review. This hybrid approach enhances the speed and depth of their algorithmic trading strategies. The deployment highlights the growing trend of integrating large language models (LLMs) into highly regulated, high-stakes financial operations. Developers should note the emphasis on human-in-the-loop validation to ensure model reliability.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/jump-trading",
             "relatedResources": []
         },
         {
@@ -174,33 +327,6 @@ const websiteContent = {
             "content": "A former Plaud executive has raised $26 million to develop an AI application that continuously listens to user conversations to provide real-time assistance and suggestions. The funding reflects investor confidence in ambient computing and highly personalized AI. However, the model raises immediate and severe privacy concerns by requiring constant audio monitoring of user environments. Security professionals should closely evaluate the data handling and encryption protocols of such always-on applications.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 08 2026",
-            "headline": "Humane Tech Nonprofit Trims Staff, Goes Founder-Led",
-            "title": "Center for Humane Technology Scales Back Operations",
-            "content": "The Center for Humane Technology is laying off most of its staff and transitioning to a founder-led operational model. The nonprofit, which previously led a movement against excessive screen time, is facing internal strategic disagreements over its future direction. This restructuring will significantly reduce its capacity for large-scale advocacy and research initiatives. The move highlights ongoing challenges for nonprofits attempting to balance mission-driven goals with financial sustainability.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/tristan-harris-tech-nonprofit-is-laying-off-most-staff-and-going-founder-led/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 11 2026",
-            "headline": "AI Companies Shed NDAs to Defeat Data Center Opposition",
-            "title": "Industry Attempts to Address Data Center Moratoriums Through Open Communication",
-            "content": "Tech companies are abandoning confidentiality agreements to build public trust amid mounting opposition to new AI data center projects. Leading AI developers have pledged to be transparent about infrastructure needs following community protests and regulatory scrutiny across key markets. The shift represents a departure from traditionally guarded corporate strategies as the industry faces growing pushback on energy consumption and environmental impact. Open communication initiatives aim to preemptively address concerns about groundwater usage and power grid strain in data-center-dense regions. This transparency push could set a new precedent for the mature relationship between AI infrastructure and host communities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 11 2026",
-            "headline": "Voice AI Still Misses Context in High-Stakes Interactions",
-            "title": "Industry Experts Warn Voice AI Lacks Reliable Context Layer for Critical Applications",
-            "content": "Voice AI systems continue to struggle with maintaining contextual coherence",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
             "relatedResources": []
         }
     ],
@@ -286,6 +412,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-104935",
+            "dateAdded": "Oct 13, 2026",
+            "vendor": "Ivanti Connect Secure",
+            "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2015-5477",
             "dateAdded": "Oct 08, 2026",
