@@ -14438,6 +14438,30 @@
       "Description": "In September 2023, the cloud gaming provider <a href=\"https://www.bleepingcomputer.com/news/security/shadow-pc-warns-of-data-breach-as-hacker-tries-to-sell-gamers-info/\" target=\"_blank\" rel=\"noopener\">Shadow suffered a data breach that exposed over half a million customer records</a>. The data included email and physical addresses, names and dates of birth."
     }
   ],
+  "sharecare.com": [
+    {
+      "Name": "Sharecare",
+      "Title": "Sharecare",
+      "BreachDate": "2026-08-12",
+      "AddedDate": "2026-10-12T23:28:32Z",
+      "PwnCount": 318185,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Employers",
+        "Genders",
+        "Government issued IDs",
+        "Job titles",
+        "Marital statuses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In August 2026, the digital health company <a href=\"https://breachnews.com/breaches/shinyhunters-claims-baxter-breach-publishes-cook-medical-carhartt-and-sharecare-data/\" target=\"_blank\" rel=\"noopener\">Sharecare was the target of a ShinyHunters \"pay or leak\" extortion campaign</a>. The group subsequently published data it claimed was taken from Sharecare's systems, containing 318k unique email addresses. Most of the data consisted of B2B sales and marketing records with names, physical addresses, phone numbers, job titles and employers. The data also included a small number of Brazilian health insurance plan members, including dates of birth, genders, marital statuses and CPF numbers (Brazilian taxpayer identification numbers)."
+    }
+  ],
   "sharethis.com": [
     {
       "Name": "ShareThis",
