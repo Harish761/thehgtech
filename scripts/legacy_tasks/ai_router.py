@@ -22,26 +22,73 @@ class AIRouter:
         self.sarvam_model = (os.getenv("SARVAM_MODEL") or "").strip() or "sarvam-105b"
         self.last_provider = "None"
         self.last_finish_reason = None
+        self.last_status_code = None
+        self.last_usage = {}
+        self.last_content_length = 0
+        self.last_reasoning_tokens = None
 
     @staticmethod
     def clean_markdown_labels(text: str) -> str:
         """
-        Normalize markdown-styled keys (e.g., **Date:** -> Date:)
+        Normalize markdown-styled keys (e.g., **Date:** -> Date:), optional numbering
+        (e.g., 1. Date: -> Date:), and harmless label aliases (e.g., Source: -> Source Name:),
         and strip code fence wrappers so downstream regex parsers match reliably.
         """
         if not text:
             return ""
 
         # Remove outer code block wrappers if present (e.g. ```text ... ```)
-        cleaned = re.sub(r'^```(?:text|markdown)?\s*\n', '', text.strip(), flags=re.IGNORECASE)
-        cleaned = re.sub(r'\n```\s*$', '', cleaned).strip()
+        cleaned = re.sub(r'^```(?:text|markdown)?[ \t]*\n', '', text.strip(), flags=re.IGNORECASE)
+        cleaned = re.sub(r'\n```[ \t]*$', '', cleaned).strip()
 
-        # Normalize known headers if formatted with markdown bold or leading symbols
+        # Remove standalone short/article numbering headers on their own line (e.g. "Short 1:", "1.")
         cleaned = re.sub(
-            r'^\s*(?:\*{1,2}|#+\s*|[-*]\s*)?(Date|Source Name|Source URL|Headline|Title|Content|Entities)(?:\*{1,2})?:(?:\*{1,2})?\s*',
-            r'\1: ',
+            r'^[ \t]*(?:#+\s*)?(?:\*{1,2}|_{1,2})?(?:(?:Short|Article|Item)\s+\d+|\d+)(?:[\.\)\-:])?(?:\*{1,2}|_{1,2})?[ \t]*$',
+            '',
             cleaned,
-            flags=re.MULTILINE
+            flags=re.MULTILINE | re.IGNORECASE
+        )
+
+        canonical_map = {
+            "date": "Date",
+            "source name": "Source Name",
+            "source url": "Source URL",
+            "url": "Source URL",
+            "source link": "Source URL",
+            "article url": "Source URL",
+            "article id": "Source URL",
+            "headline": "Headline",
+            "title": "Title",
+            "content": "Content",
+            "entities": "Entities",
+        }
+
+        # Normalize known headers if formatted with optional numbering, bullets, or markdown bold
+        def _replace_canonical(match: re.Match) -> str:
+            raw_label = re.sub(r'\s+', ' ', match.group(1).strip().lower())
+            canonical = canonical_map.get(raw_label, match.group(1).strip())
+            return f"{canonical}: "
+
+        cleaned = re.sub(
+            r'^[ \t]*(?:#+\s*|[-*•]\s*)?(?:\*{1,2}|_{1,2})?(?:(?:Short|Article|Item)\s+\d+[\.\)\-:]?\s*|\d+[\.\)\-]\s*)?(?:\*{1,2}|_{1,2})?(Date|Source\s+Name|Source\s+URL|Source\s+Link|Article\s+URL|Article\s+ID|URL|Headline|Title|Content|Entities)(?:\*{1,2}|_{1,2})?[ \t]*:(?:\*{1,2}|_{1,2})?[ \t]*',
+            _replace_canonical,
+            cleaned,
+            flags=re.MULTILINE | re.IGNORECASE
+        )
+
+        # Normalize harmless "Source: <value>" variation to "Source Name: <value>"
+        # when the value is a publication name rather than a URL/placeholder
+        def _replace_source_alias(match: re.Match) -> str:
+            val = match.group(1).strip()
+            if re.match(r'^(?:https?://|ARTICLE_\d+_URL_PLACEHOLDER)', val, flags=re.IGNORECASE):
+                return f"Source URL: {val}"
+            return f"Source Name: {val}"
+
+        cleaned = re.sub(
+            r'^[ \t]*(?:#+\s*|[-*•]\s*)?(?:\*{1,2}|_{1,2})?(?:(?:Short|Article|Item)\s+\d+[\.\)\-:]?\s*|\d+[\.\)\-]\s*)?(?:\*{1,2}|_{1,2})?Source(?:\*{1,2}|_{1,2})?[ \t]*:(?:\*{1,2}|_{1,2})?[ \t]*(.+)$',
+            _replace_source_alias,
+            cleaned,
+            flags=re.MULTILINE | re.IGNORECASE
         )
 
         return cleaned
@@ -89,6 +136,12 @@ class AIRouter:
         and fast-fail for permanent auth/billing/client errors.
         Never logs API keys or authorization headers.
         """
+        self.last_finish_reason = None
+        self.last_status_code = None
+        self.last_usage = {}
+        self.last_content_length = 0
+        self.last_reasoning_tokens = None
+
         if not self.sarvam_key:
             print("    [Router] ❌ Sarvam client not available: SARVAM_API_KEY is not set.")
             return None
@@ -134,6 +187,7 @@ class AIRouter:
             try:
                 response = requests.post(endpoint, headers=headers, json=payload, timeout=90)
                 status_code = response.status_code
+                self.last_status_code = status_code
 
                 if status_code == 200:
                     data = response.json()
@@ -141,13 +195,24 @@ class AIRouter:
                     first_choice = choices[0] if (isinstance(choices, list) and len(choices) > 0 and isinstance(choices[0], dict)) else {}
                     msg = first_choice.get("message") if isinstance(first_choice, dict) else {}
                     raw_content = msg.get("content") if isinstance(msg, dict) else None
+                    content_len = len(raw_content) if isinstance(raw_content, str) else 0
                     finish_reason = first_choice.get("finish_reason") if isinstance(first_choice, dict) else None
+                    usage_obj = data.get("usage") if isinstance(data, dict) else None
+                    reasoning_tokens = None
+                    if isinstance(usage_obj, dict):
+                        comp_details = usage_obj.get("completion_tokens_details")
+                        if isinstance(comp_details, dict) and "reasoning_tokens" in comp_details:
+                            reasoning_tokens = comp_details.get("reasoning_tokens")
+
                     self.last_finish_reason = finish_reason
+                    self.last_content_length = content_len
+                    self.last_usage = usage_obj if isinstance(usage_obj, dict) else {}
+                    self.last_reasoning_tokens = reasoning_tokens
 
                     # Responses truncated by token limit (finish_reason='length') must not be accepted as complete
                     if finish_reason != "length" and isinstance(raw_content, str) and raw_content.strip():
                         returned_model = data.get("model", target_model) if isinstance(data, dict) else target_model
-                        usage = data.get("usage", {}) if isinstance(data, dict) else {}
+                        usage = self.last_usage
                         
                         prompt_tok = usage.get("prompt_tokens", 0) if isinstance(usage, dict) else 0
                         comp_tok = usage.get("completion_tokens", 0) if isinstance(usage, dict) else 0
@@ -173,10 +238,8 @@ class AIRouter:
                         
                         # Extract diagnostic metadata defensively without exposing sensitive payloads
                         resp_keys = list(data.keys()) if isinstance(data, dict) else []
-                        finish_reason = first_choice.get("finish_reason") if isinstance(first_choice, dict) else None
                         
                         # Usage diagnostics
-                        usage_obj = data.get("usage") if isinstance(data, dict) else None
                         if isinstance(usage_obj, dict) and usage_obj:
                             usage_repr = (
                                 f"prompt={usage_obj.get('prompt_tokens')}, "
@@ -185,6 +248,8 @@ class AIRouter:
                             )
                         else:
                             usage_repr = "none"
+
+                        reasoning_tok_repr = str(reasoning_tokens) if reasoning_tokens is not None else "none"
                         
                         # Reasoning content detection (never used as substitute for content)
                         has_reasoning = False
@@ -214,9 +279,12 @@ class AIRouter:
                                 provider_err_repr = self.sanitize_diagnostic_text(raw_err)
 
                         print(
-                            f"    [Router] 🔍 Diagnostics: response_keys={resp_keys} | "
+                            f"    [Router] 🔍 Diagnostics: status={status_code} | "
+                            f"response_keys={resp_keys} | "
                             f"finish_reason={finish_reason} | "
+                            f"content_len={content_len} | "
                             f"usage={usage_repr} | "
+                            f"reasoning_tokens={reasoning_tok_repr} | "
                             f"reasoning_content={reasoning_repr} | "
                             f"provider_error={provider_err_repr}"
                         )

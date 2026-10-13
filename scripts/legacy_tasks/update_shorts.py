@@ -611,51 +611,49 @@ def filter_existing_urls(articles, existing_shorts):
     return filtered
 
 
-def format_with_gpt(articles, content_type):
-    """Use Sarvam AI to format articles into professional shorts"""
-    if not articles:
-        return None
-    
-    # Deduplicate before scoring
-    articles = better_deduplicate(articles)
-    
-    # Score and select top 6 for GPT (Cost Optimization)
-    for a in articles:
-        a['relevance_score'] = score_article(a)
-    
-    articles.sort(key=lambda x: x['relevance_score'], reverse=True)
-    top_articles = articles[:15]  # Increased to 15 to ensure enough material
-    
-    print(f"   🏆 Selected top {len(top_articles)} articles for Sarvam AI based on relevance scores")
-    
+MAX_ARTICLES_PER_CATEGORY = 10
+BATCH_SIZE = 5
+
+
+def normalize_short_title(title):
+    """Normalize a short title for duplicate detection across shorts and batches."""
+    if not title:
+        return ""
+    return re.sub(r'[^a-z0-9]', '', title.lower())
+
+
+def build_batch_prompt(batch_articles, content_type):
+    """Build a non-contradictory prompt for a single batch of articles (up to BATCH_SIZE)."""
+    batch_count = len(batch_articles)
     articles_text = ""
-    for i, article in enumerate(top_articles, 1):
+    for i, article in enumerate(batch_articles, 1):
+        pub_date = article.get('published')
+        date_str = pub_date.strftime('%b %d %Y') if hasattr(pub_date, 'strftime') else str(pub_date or 'Recent')
         articles_text += f"""
 Article {i}:
 Title: {article['title']}
 Source: {article['source']}
 Article ID: ARTICLE_{i}_URL_PLACEHOLDER
-Date: {article['published'].strftime('%b %d %Y')}
-Summary: {article['summary'][:300]}
-
+Date: {date_str}
+Summary: {article.get('summary', '')[:300]}
 """
-    
+
     prompt = f"""You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders.
 
-I have fetched {len(top_articles)} REAL recent {content_type} news articles from trusted sources. Your task is to transform each article into a high-quality, professional news short.
+I have provided {batch_count} REAL recent {content_type} news article(s) from trusted sources. Your task is to transform EACH provided article into a high-quality, professional news short (generate EXACTLY {batch_count} news short(s), 1 per input article, in the same order).
 
 Here are the articles:
 {articles_text}
 
-For EACH article, create a compelling news short in this EXACT format:
+For EACH of the {batch_count} article(s), create a compelling news short in this EXACT format:
 
 Date: [Use the actual date from the article]
 Source Name: [Use the actual source from the article]
-Source URL: [Use exactly: ARTICLE_X_URL_PLACEHOLDER where X is the article number]
+Source URL: [Use exactly: ARTICLE_X_URL_PLACEHOLDER where X is the article number 1 to {batch_count}]
 Headline: [Create a PUNCHY, eye-catching headline - max 12 words - see guidelines below]
 Title: [Create a clear, descriptive headline that captures the full context]
 Content:
-[Write 5-7 well-crafted sentences that:
+[Write 4-6 concise, focused sentences that:
 
 MUST INCLUDE:
 1. What happened: Lead with the most newsworthy development
@@ -670,7 +668,7 @@ QUALITY STANDARDS:
 - Include numbers, percentages, or metrics when available
 - Explain acronyms on first use
 - Maintain an authoritative, informative tone
-- Make every sentence add value
+- Make every sentence concise and high-value
 
 AVOID:
 - Marketing language or hype
@@ -678,6 +676,7 @@ AVOID:
 - Redundant information
 - Passive voice where active is clearer
 - Jargon without explanation]
+Entities: [Comma-separated entities - see rules below]
 
 HEADLINE GENERATION RULES (for the "Headline" field):
 The Headline is a SHORT, punchy hook (max 12 words) for the news timeline. It should:
@@ -693,14 +692,22 @@ Headline Examples:
 - BAD: "AI Has Security Issues" → GOOD: "Claude Used to Hack Itself: 2 Critical CVEs"
 - BAD: "Data Breach Reported" → GOOD: "ESA Breach: 200GB Space Data Stolen"
 
+ENTITY EXTRACTION (Important for internal linking):
+At the end of each short's Content, add an Entities line with comma-separated values for:
+- Any CVE IDs mentioned (e.g., CVE-2024-12345)
+- Any ransomware group names (e.g., LockBit, ALPHV, Qilin)
+- Any APT/threat actor names (e.g., Lazarus, APT28)
+- Key product names affected (e.g., Chrome, Windows, Fortinet)
+- Attack type keywords (e.g., zero-day, RCE, phishing, ransomware)
+
 CRITICAL FORMATTING RULES:
-1. Use PLAIN TEXT only - absolutely NO markdown, NO asterisks, NO formatting
+1. Use PLAIN TEXT only - absolutely NO markdown (no **, no __, no # headers, no * bullets)
 2. Write "Source URL:" not "Source:" for the URL line
-3. Keep URLs as ARTICLE_X_URL_PLACEHOLDER - do not modify
-4. Separate each short with exactly one blank line
-5. Do not number the shorts
-6. Do not add section headers or extra formatting
-7. The Headline comes BEFORE the Title
+3. Keep URLs as ARTICLE_X_URL_PLACEHOLDER (where X is 1 to {batch_count}) - do not modify
+4. Separate each short with a blank line
+5. Do not number the shorts or field labels
+6. Do not add section headers, introductory text, or extra formatting
+7. Always include both Headline (before Title) and Title
 
 EXAMPLE OF CORRECT OUTPUT:
 Date: Nov 23 2024
@@ -712,33 +719,26 @@ Content:
 Google has patched CVE-2024-12345, a critical use-after-free vulnerability in Chrome's V8 JavaScript engine that was actively exploited in targeted attacks. The flaw affects all Chrome versions prior to 120.0.6099.129 and allows remote code execution through specially crafted web pages. Security researchers at Kaspersky discovered the exploit being used against financial institutions and government agencies in Eastern Europe. Users should update immediately through Chrome's built-in updater or download version 120.0.6099.129 or later. This marks the eighth zero-day vulnerability patched in Chrome this year, highlighting the browser's continued targeting by sophisticated threat actors.
 Entities: CVE-2024-12345, Chrome, zero-day, Google
 
-Now generate EXACTLY 10 professional news shorts following these guidelines exactly (select the best 10 from the {len(top_articles)} articles provided):
-- Write in a professional, journalistic style
-- Focus on facts and implications, not sensationalism
-- Each short should be self-contained and informative
-- Use clear, direct language
-- Include relevant technical details where appropriate
-- Explain significance for professionals in the field
-- ALWAYS include both Headline (punchy) and Title (descriptive)
+Generate EXACTLY {batch_count} professional news short(s), one for each of the {batch_count} article(s) above."""
+    return prompt
 
-CRITICAL FORMATTING RULES:
-- DO NOT use any markdown formatting (no **, no __, no # headers, no * bullets)
-- Write in plain text only
-- Do not add bold, italic, or any other formatting
-- Keep the exact format shown above with labeled sections
-- The Source URL must be EXACTLY "ARTICLE_X_URL_PLACEHOLDER" - do not modify it
-- Headline must be max 12 words, punchy and specific
-- Title should be descriptive and complete
 
-ENTITY EXTRACTION (Important for internal linking):
-At the end of each short's Content, add an Entities line with comma-separated values for:
-- Any CVE IDs mentioned (e.g., CVE-2024-12345)
-- Any ransomware group names (e.g., LockBit, ALPHV, Qilin)
-- Any APT/threat actor names (e.g., Lazarus, APT28)
-- Key product names affected (e.g., Chrome, Windows, Fortinet)
-- Attack type keywords (e.g., zero-day, RCE, phishing, ransomware)
-
-Create EXACTLY 10 shorts from the {len(top_articles)} articles above. It is critical that you output exactly 10 shorts."""
+def format_with_gpt(articles, content_type):
+    """Use Sarvam AI to format up to 10 articles into professional shorts in batches of at most 5."""
+    if not articles:
+        return None
+    
+    # Deduplicate before scoring
+    articles = better_deduplicate(articles)
+    
+    # Score and select up to top 10 eligible articles for Sarvam AI
+    for a in articles:
+        a['relevance_score'] = score_article(a)
+    
+    articles.sort(key=lambda x: x['relevance_score'], reverse=True)
+    top_articles = articles[:MAX_ARTICLES_PER_CATEGORY]
+    
+    print(f"   🏆 Selected top {len(top_articles)} {content_type} articles for Sarvam AI based on relevance scores")
     
     # Verify SARVAM_API_KEY presence before invoking AI summarization
     sarvam_key = os.environ.get('SARVAM_API_KEY', '').strip()
@@ -747,113 +747,347 @@ Create EXACTLY 10 shorts from the {len(top_articles)} articles above. It is crit
         print("   ❌ Aborting summarization to prevent generating fake or placeholder content.")
         return None
 
-    # Real AI Router Run sequence
-    system_prompt = "You are a senior cybersecurity and AI news editor for TheHGTech.com, a professional publication read by security professionals, developers, and tech leaders."
-    
-    # Retry logic handled partially by router, but we add an outer loop just in case
+    system_prompt = (
+        "You are a senior cybersecurity and AI news editor for TheHGTech.com, "
+        "a professional publication read by security professionals, developers, and tech leaders."
+    )
+
+    batches = [top_articles[i:i + BATCH_SIZE] for i in range(0, len(top_articles), BATCH_SIZE)]
+    total_batches = len(batches)
     max_retries = 3
-    for attempt in range(max_retries):
-        try:
-            print(f"   🤖 AI Router Request (Attempt {attempt + 1}/{max_retries})...")
-            
-            content = ai_router.generate_content(
-                prompt=prompt,
-                task_type="shorts",
-                system_prompt=system_prompt,
-                max_tokens=4000,
-                temperature=0.3
+
+    seen_category_urls = set()
+    seen_category_titles = set()
+    validated_batch_outputs = []
+
+    for batch_idx, batch_articles in enumerate(batches, 1):
+        batch_size = len(batch_articles)
+        prompt = build_batch_prompt(batch_articles, content_type)
+        allowed_batch_urls = {
+            validate_url(a.get('link', '')).rstrip('/').lower()
+            for a in batch_articles
+            if validate_url(a.get('link', ''))
+        }
+
+        batch_succeeded = False
+        for attempt in range(max_retries):
+            try:
+                print(
+                    f"   🤖 [{content_type} | Batch {batch_idx}/{total_batches}] "
+                    f"AI Router Request (Attempt {attempt + 1}/{max_retries}) for {batch_size} article(s)..."
+                )
+
+                raw_batch_content = ai_router.generate_content(
+                    prompt=prompt,
+                    task_type="shorts",
+                    system_prompt=system_prompt,
+                    max_tokens=4000,
+                    temperature=0.3
+                )
+
+                if not raw_batch_content or getattr(ai_router, "last_finish_reason", None) == "length":
+                    raise ValueError("AI Router returned empty or truncated response.")
+
+                # Decode HTML entities (fix &#x27; → ')
+                batch_content = unescape(raw_batch_content)
+
+                # Replace placeholders with actual URLs for THIS batch only
+                for i, article in enumerate(batch_articles, 1):
+                    placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
+                    actual_url = article['link']
+                    batch_content = batch_content.replace(placeholder, actual_url)
+                    print(
+                        f"   🔗 [{content_type} | Batch {batch_idx}/{total_batches}] "
+                        f"Replaced {placeholder} with {actual_url[:60]}..."
+                    )
+
+                # Reject any unresolved ARTICLE_..._URL_PLACEHOLDER in the batch output
+                unresolved_placeholders = re.findall(
+                    r'ARTICLE_[^\s\n]*URL_PLACEHOLDER', batch_content, flags=re.IGNORECASE
+                )
+                if unresolved_placeholders:
+                    raise ValueError(
+                        f"Unresolved URL placeholder(s) in batch output: {sorted(set(unresolved_placeholders))}"
+                    )
+
+                # Normalize labels and strip any preamble before the first Date: line
+                batch_content = ai_router.clean_markdown_labels(batch_content)
+                first_date_match = re.search(r'^Date:', batch_content, flags=re.MULTILINE)
+                if first_date_match:
+                    batch_content = batch_content[first_date_match.start():]
+
+                # Immediately parse and validate the batch output
+                batch_shorts = parse_shorts(batch_content)
+                if len(batch_shorts) != batch_size:
+                    raise ValueError(
+                        f"Batch short count mismatch: expected {batch_size} valid short(s), parsed {len(batch_shorts)}."
+                    )
+
+                batch_urls = set()
+                batch_titles = set()
+                for short in batch_shorts:
+                    s_url = (short.get("sourceUrl") or "").strip()
+                    norm_url = s_url.rstrip('/').lower()
+                    norm_title = normalize_short_title(short.get("title", ""))
+
+                    if not all([
+                        short.get("date"),
+                        short.get("source"),
+                        s_url,
+                        short.get("headline"),
+                        short.get("title"),
+                        short.get("content"),
+                    ]):
+                        raise ValueError("Parsed short is missing one or more required fields.")
+
+                    if "placeholder" in s_url.lower() or not validate_url(s_url):
+                        raise ValueError(f"Parsed short contains invalid or placeholder URL: {s_url[:60]}")
+
+                    if allowed_batch_urls and norm_url not in allowed_batch_urls:
+                        raise ValueError(
+                            f"Parsed short URL does not belong to batch {batch_idx} input articles: {s_url[:60]}"
+                        )
+
+                    if norm_url in seen_category_urls or norm_url in batch_urls:
+                        raise ValueError(f"Duplicate source URL detected across batches: {s_url[:60]}")
+
+                    if norm_title and (norm_title in seen_category_titles or norm_title in batch_titles):
+                        raise ValueError(
+                            f"Duplicate normalized title detected across batches: {short.get('title', '')[:60]}"
+                        )
+
+                    batch_urls.add(norm_url)
+                    if norm_title:
+                        batch_titles.add(norm_title)
+
+                # Batch passed all validations
+                seen_category_urls.update(batch_urls)
+                seen_category_titles.update(batch_titles)
+                validated_batch_outputs.append(batch_content.strip())
+                batch_succeeded = True
+                print(
+                    f"   ✅ [{content_type} | Batch {batch_idx}/{total_batches}] "
+                    f"Validated {len(batch_shorts)}/{batch_size} short(s)"
+                )
+                break
+
+            except Exception as e:
+                usage = getattr(ai_router, "last_usage", {}) or {}
+                status_code = getattr(ai_router, "last_status_code", None)
+                finish_reason = getattr(ai_router, "last_finish_reason", None)
+                content_len = getattr(ai_router, "last_content_length", 0)
+                reasoning_tokens = getattr(ai_router, "last_reasoning_tokens", None)
+                reason_clean = ai_router.sanitize_diagnostic_text(str(e))
+                print(
+                    f"⚠️  [{content_type} | Batch {batch_idx}/{total_batches}] "
+                    f"AI Request Attempt {attempt + 1}/{max_retries} failed: {reason_clean} | "
+                    f"category={content_type} | batch={batch_idx}/{total_batches} | "
+                    f"status={status_code} | finish_reason={finish_reason} | "
+                    f"prompt_tokens={usage.get('prompt_tokens')} | completion_tokens={usage.get('completion_tokens')} | "
+                    f"content_len={content_len} | reasoning_tokens={reasoning_tokens}"
+                )
+                if attempt < max_retries - 1:
+                    time.sleep(2 * (attempt + 1))  # Exponential backoff
+
+        if not batch_succeeded:
+            print(
+                f"❌ Error formatting {content_type} articles: "
+                f"Batch {batch_idx}/{total_batches} failed after {max_retries} attempts."
             )
-            
-            if not content:
-                raise Exception("AI Router returned empty content or exhausted all fallbacks.")
-            
-            # Decode HTML entities (fix &#x27; → ')
-            content = unescape(content)
-            
-            # Replace placeholders with actual URLs
-            for i, article in enumerate(top_articles, 1):
-                placeholder = f"ARTICLE_{i}_URL_PLACEHOLDER"
-                actual_url = article['link']
-                content = content.replace(placeholder, actual_url)
-                print(f"   🔗 Replaced {placeholder} with {actual_url[:60]}...")
-            
-            print(f"✅ Successfully formatted {content_type} articles with real URLs")
-            return content
-            
-        except Exception as e:
-            print(f"⚠️  AI Request Attempt {attempt + 1} failed: {e}")
-            if attempt < max_retries - 1:
-                time.sleep(2 * (attempt + 1)) # Exponential backoff
-            else:
-                print(f"❌ Error formatting {content_type} articles after {max_retries} attempts")
-                return None
+            return None
+
+    print(f"✅ Successfully formatted {content_type} articles with real URLs across {total_batches} batch(es)")
+    return "\n\n".join(validated_batch_outputs)
+
+
+def _split_short_blocks(cleaned_content):
+    """
+    Split normalized text into isolated candidate short blocks so that a malformed block
+    (e.g., missing Date: or missing Content:) can never merge two adjacent shorts together.
+    """
+    field_prefixes = (
+        "Date:",
+        "Source Name:",
+        "Source URL:",
+        "Headline:",
+        "Title:",
+        "Content:",
+        "Entities:",
+    )
+    header_only_prefixes = (
+        "Source Name:",
+        "Source URL:",
+        "Headline:",
+        "Title:",
+    )
+
+    blocks = []
+    current_lines = []
+    seen_fields = set()
+
+    for line in cleaned_content.splitlines():
+        stripped = line.lstrip()
+        matched_prefix = None
+        for prefix in field_prefixes:
+            if stripped.startswith(prefix):
+                matched_prefix = prefix
+                break
+
+        if matched_prefix:
+            should_split = False
+            if matched_prefix == "Date:" and seen_fields:
+                should_split = True
+            elif matched_prefix in header_only_prefixes and (
+                matched_prefix in seen_fields
+                or "Content:" in seen_fields
+                or "Entities:" in seen_fields
+            ):
+                should_split = True
+            elif matched_prefix == "Content:" and (
+                "Content:" in seen_fields or "Entities:" in seen_fields
+            ):
+                should_split = True
+
+            if should_split and current_lines:
+                blocks.append("\n".join(current_lines).strip())
+                current_lines = []
+                seen_fields = set()
+
+            seen_fields.add(matched_prefix)
+            current_lines.append(stripped)
+        else:
+            if seen_fields:
+                current_lines.append(line)
+
+    if current_lines:
+        blocks.append("\n".join(current_lines).strip())
+
+    return [b for b in blocks if b]
 
 
 def parse_shorts(content):
-    """Parse the formatted content into structured shorts"""
+    """Parse the formatted content into structured shorts with resilient label handling and strict validation."""
     if not content:
         return []
     
+    cleaned_content = ai_router.clean_markdown_labels(content)
+    if not cleaned_content:
+        return []
+
     shorts = []
-    items = re.split(r'\n(?=Date:)', content)
+    seen_urls = set()
+    seen_titles = set()
+    items = _split_short_blocks(cleaned_content)
     
-    for item in items:
-        if not item.strip() or 'Date:' not in item:
+    for idx, item in enumerate(items, 1):
+        if not item.strip():
             continue
             
-        date_match = re.search(r'Date:\s*(.+?)(?:\n|$)', item)
-        source_match = re.search(r'Source Name:\s*(.+?)(?:\n|$)', item)
-        url_match = re.search(r'Source URL:\s*(.+?)(?:\n|$)', item)
-        headline_match = re.search(r'Headline:\s*(.+?)(?:\n|$)', item)
-        title_match = re.search(r'Title:\s*(.+?)(?:\n|$)', item)
-        content_match = re.search(r'Content:\s*(.+)', item, re.DOTALL)
-        
-        if all([date_match, source_match, url_match, title_match, content_match]):
-            source_url = validate_url(url_match.group(1).strip())
-            
-            if not source_url:
-                print(f"   ⚠️ Skipping short with invalid URL: {title_match.group(1)[:50]}")
-                continue
-            
-            # Extract entities if present
-            entities_match = re.search(r'Entities:\s*(.+?)(?:\n|$)', item)
-            extracted_entities = []
-            if entities_match:
-                entities_text = entities_match.group(1).strip()
-                extracted_entities = [e.strip() for e in entities_text.split(',') if e.strip()]
-            
-            # Get content without the Entities line
-            content_text = content_match.group(1).strip()
-            content_text = re.sub(r'\nEntities:.*$', '', content_text, flags=re.MULTILINE).strip()
-            
-            title_text = sanitize_content(title_match.group(1).strip())
-            content_sanitized = sanitize_content(content_text)
-            
-            # Extract headline (fallback to title if not present)
-            headline_text = ''
-            if headline_match:
-                headline_text = sanitize_content(headline_match.group(1).strip())
-            if not headline_text:
-                # Fallback: create headline from title (first 60 chars)
-                headline_text = title_text[:60] + ('...' if len(title_text) > 60 else '')
-            
-            # Match entities to internal content
-            related_resources = match_entities_to_internal_content(
-                title_text,
-                content_sanitized,
-                extracted_entities
+        date_match = re.search(r'^Date:[ \t]*(.+?)$', item, re.MULTILINE)
+        source_match = re.search(r'^Source Name:[ \t]*(.+?)$', item, re.MULTILINE)
+        url_match = re.search(r'^Source URL:[ \t]*(.+?)$', item, re.MULTILINE)
+        headline_match = re.search(r'^Headline:[ \t]*(.+?)$', item, re.MULTILINE)
+        title_match = re.search(r'^Title:[ \t]*(.+?)$', item, re.MULTILINE)
+        content_match = re.search(
+            r'^Content:[ \t]*\n?([\s\S]+?)(?=\n(?:Entities|Date|Source Name|Source URL|Headline|Title):|\Z)',
+            item,
+            re.MULTILINE
+        )
+
+        raw_title_preview = (
+            sanitize_content(title_match.group(1).strip())[:50]
+            if title_match and title_match.group(1).strip()
+            else f"block #{idx}"
+        )
+
+        missing_fields = []
+        if not date_match or not sanitize_content(date_match.group(1).strip()):
+            missing_fields.append("Date")
+        if not source_match or not sanitize_content(source_match.group(1).strip()):
+            missing_fields.append("Source Name")
+        if not url_match or not url_match.group(1).strip():
+            missing_fields.append("Source URL")
+        if not title_match or not sanitize_content(title_match.group(1).strip()):
+            missing_fields.append("Title")
+        if not content_match:
+            missing_fields.append("Content")
+
+        if missing_fields:
+            print(
+                f"   ⚠️ Skipping malformed short ({raw_title_preview}): "
+                f"missing required field(s): {', '.join(missing_fields)}"
             )
-            
-            short = {
-                "date": sanitize_content(date_match.group(1).strip()),
-                "headline": headline_text,
-                "title": title_text,
-                "content": content_sanitized,
-                "source": sanitize_content(source_match.group(1).strip()),
-                "sourceUrl": source_url,
-                "relatedResources": related_resources
-            }
-            shorts.append(short)
+            continue
+
+        raw_url = url_match.group(1).strip()
+        if 'placeholder' in raw_url.lower() or re.search(r'ARTICLE_\d+_URL', raw_url, re.IGNORECASE):
+            print(f"   ⚠️ Skipping short with unresolved placeholder URL: {raw_title_preview}")
+            continue
+
+        source_url = validate_url(raw_url)
+        if not source_url:
+            print(f"   ⚠️ Skipping short with invalid URL: {raw_title_preview}")
+            continue
+        
+        # Extract entities if present
+        entities_match = re.search(r'^Entities:[ \t]*(.+?)$', item, re.MULTILINE)
+        extracted_entities = []
+        if entities_match:
+            entities_text = entities_match.group(1).strip()
+            extracted_entities = [e.strip() for e in entities_text.split(',') if e.strip()]
+        
+        # Get content without the Entities line or anything trailing after Entities
+        content_text = content_match.group(1).strip()
+        content_text = re.sub(r'\nEntities:[\s\S]*$', '', content_text).strip()
+        
+        title_text = sanitize_content(title_match.group(1).strip())
+        content_sanitized = sanitize_content(content_text)
+        date_sanitized = sanitize_content(date_match.group(1).strip())
+        source_sanitized = sanitize_content(source_match.group(1).strip())
+
+        if not content_sanitized:
+            print(f"   ⚠️ Skipping malformed short ({raw_title_preview}): missing required field(s): Content")
+            continue
+
+        norm_url = source_url.rstrip('/').lower()
+        norm_title = normalize_short_title(title_text)
+
+        if norm_url in seen_urls:
+            print(f"   ⚠️ Skipping short with duplicate URL: {raw_title_preview}")
+            continue
+        if norm_title and norm_title in seen_titles:
+            print(f"   ⚠️ Skipping short with duplicate title: {raw_title_preview}")
+            continue
+
+        seen_urls.add(norm_url)
+        if norm_title:
+            seen_titles.add(norm_title)
+        
+        # Extract headline (fallback to title if not present)
+        headline_text = ''
+        if headline_match:
+            headline_text = sanitize_content(headline_match.group(1).strip())
+        if not headline_text:
+            # Fallback: create headline from title (first 60 chars)
+            headline_text = title_text[:60] + ('...' if len(title_text) > 60 else '')
+        
+        # Match entities to internal content
+        related_resources = match_entities_to_internal_content(
+            title_text,
+            content_sanitized,
+            extracted_entities
+        )
+        
+        short = {
+            "date": date_sanitized,
+            "headline": headline_text,
+            "title": title_text,
+            "content": content_sanitized,
+            "source": source_sanitized,
+            "sourceUrl": source_url,
+            "relatedResources": related_resources
+        }
+        shorts.append(short)
     
     return shorts
 

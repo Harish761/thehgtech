@@ -1123,8 +1123,356 @@ Content: Missing title and URL, so should be dropped.
         self.assertIn('failed_categories.append("AI")', code)
         self.assertIn('AI generation failed for category: {failed_str}', code)
 
+    # -------------------------------------------------------------------------
+    # TEST 18: Two Batches of 5 Articles Produce 10 Valid Shorts & Per-Batch URL Replacement
+    # -------------------------------------------------------------------------
+    @patch("urllib.request.urlopen")
+    @patch("time.sleep")
+    def test_18_batching_two_batches_of_five_produces_ten_shorts(self, mock_sleep, mock_urlopen):
+        from datetime import datetime, timedelta
+        import pytz
+
+        os.environ["SARVAM_API_KEY"] = "sk-test-batching-key"
+        now = datetime.now(pytz.UTC)
+
+        # Create 15 distinct eligible articles; format_with_gpt must select top 10 and split into 2 batches of 5
+        articles = []
+        for idx in range(1, 16):
+            articles.append({
+                "title": f"Critical Zero-Day Vulnerability #{idx} Discovered in Enterprise Gateway",
+                "source": "BleepingComputer" if idx <= 10 else "Unknown Blog",
+                "link": f"https://www.bleepingcomputer.com/news/security/article-{idx}/",
+                "published": now - timedelta(hours=idx),
+                "summary": f"Security researchers disclosed zero-day flaw #{idx} affecting enterprise systems."
+            })
+
+        def make_batch_output(batch_num, count=5):
+            blocks = []
+            for i in range(1, count + 1):
+                global_idx = (batch_num - 1) * 5 + i
+                blocks.append(
+                    f"Date: Oct 13 2026\n"
+                    f"Source Name: BleepingComputer\n"
+                    f"Source URL: ARTICLE_{i}_URL_PLACEHOLDER\n"
+                    f"Headline: Enterprise Gateway Zero-Day #{global_idx}—Patch Immediately\n"
+                    f"Title: Critical Enterprise Gateway Zero-Day Flaw #{global_idx} Exploited in Wild\n"
+                    f"Content:\n"
+                    f"Vendor has released emergency patches for vulnerability #{global_idx} in its enterprise gateway appliance. "
+                    f"Tracked as CVE-2026-100{global_idx}, the flaw allows unauthenticated remote code execution. "
+                    f"Enterprise networks globally are exposed if management interfaces are internet-accessible. "
+                    f"Administrators should upgrade to the latest firmware build immediately.\n"
+                    f"Entities: CVE-2026-100{global_idx}, zero-day, RCE"
+                )
+            return "\n\n".join(blocks)
+
+        batch_1_resp = make_batch_output(1, 5)
+        batch_2_resp = make_batch_output(2, 5)
+
+        with patch.object(update_shorts.ai_router, "generate_content", side_effect=[batch_1_resp, batch_2_resp]) as mock_gen:
+            update_shorts.ai_router.last_finish_reason = "stop"
+            update_shorts.ai_router.last_status_code = 200
+            formatted = update_shorts.format_with_gpt(articles, "AI")
+
+            # Must invoke generate_content exactly twice (2 batches of 5)
+            self.assertEqual(mock_gen.call_count, 2)
+
+            # Verify prompts for both batches have no contradictory 15-vs-10 instruction and only 1 CRITICAL FORMATTING RULES section
+            for b_call in mock_gen.call_args_list:
+                sent_prompt = b_call.kwargs.get("prompt") or b_call.args[0]
+                self.assertIn("generate EXACTLY 5 news short(s)", sent_prompt)
+                self.assertNotIn("select the best 10", sent_prompt)
+                self.assertEqual(sent_prompt.count("CRITICAL FORMATTING RULES:"), 1)
+                self.assertIn("ARTICLE_5_URL_PLACEHOLDER", sent_prompt)
+                self.assertNotIn("ARTICLE_6_URL_PLACEHOLDER", sent_prompt)
+
+        self.assertIsNotNone(formatted)
+        self.assertNotIn("PLACEHOLDER", formatted)
+
+        parsed_shorts = update_shorts.parse_shorts(formatted)
+        self.assertEqual(len(parsed_shorts), 10)
+
+        # Verify Batch 1 and Batch 2 placeholders were replaced using each batch's own URLs
+        expected_urls = [f"https://www.bleepingcomputer.com/news/security/article-{idx}/" for idx in range(1, 11)]
+        actual_urls = [s["sourceUrl"] for s in parsed_shorts]
+        self.assertEqual(actual_urls, expected_urls)
+        self.assertEqual(mock_urlopen.call_count, 0)
+
+    # -------------------------------------------------------------------------
+    # TEST 19: Per-Batch Retry Without Regenerating Valid Batch & Partial Batch Failure Aborts Category
+    # -------------------------------------------------------------------------
+    @patch("time.sleep")
+    def test_19_per_batch_retry_and_partial_batch_failure_safety(self, mock_sleep):
+        from datetime import datetime, timedelta
+        import pytz
+
+        os.environ["SARVAM_API_KEY"] = "sk-test-retry-key"
+        now = datetime.now(pytz.UTC)
+
+        articles = [
+            {
+                "title": f"AI Security Advisory #{idx} Impacts Model Inference Servers",
+                "source": "TechCrunch",
+                "link": f"https://techcrunch.com/2026/10/13/ai-advisory-{idx}/",
+                "published": now - timedelta(hours=idx),
+                "summary": f"Summary for AI security advisory #{idx}."
+            }
+            for idx in range(1, 11)
+        ]
+
+        def make_batch_response(batch_num, count=5):
+            blocks = []
+            for i in range(1, count + 1):
+                global_idx = (batch_num - 1) * 5 + i
+                blocks.append(
+                    f"Date: Oct 13 2026\n"
+                    f"Source Name: TechCrunch\n"
+                    f"Source URL: ARTICLE_{i}_URL_PLACEHOLDER\n"
+                    f"Headline: AI Inference Advisory #{global_idx} Released\n"
+                    f"Title: Critical AI Inference Server Vulnerability #{global_idx} Patched\n"
+                    f"Content:\n"
+                    f"Researchers patched flaw #{global_idx} in AI inference servers. "
+                    f"The issue affects deployment pipelines and requires immediate patching.\n"
+                    f"Entities: AI, CVE-2026-200{global_idx}"
+                )
+            return "\n\n".join(blocks)
+
+        valid_batch_1 = make_batch_response(1, 5)
+        # Incomplete batch 2 (only 4 shorts instead of 5)
+        incomplete_batch_2 = make_batch_response(2, 4)
+        valid_batch_2 = make_batch_response(2, 5)
+
+        # Scenario A: Batch 1 succeeds on attempt 1; Batch 2 fails attempt 1 (incomplete count) then succeeds on attempt 2
+        with patch.object(
+            update_shorts.ai_router,
+            "generate_content",
+            side_effect=[valid_batch_1, incomplete_batch_2, valid_batch_2]
+        ) as mock_gen:
+            update_shorts.ai_router.last_finish_reason = "stop"
+            update_shorts.ai_router.last_status_code = 200
+            result = update_shorts.format_with_gpt(articles, "AI")
+
+            # Batch 1 called once, Batch 2 called twice = 3 total calls (Batch 1 was NOT regenerated!)
+            self.assertEqual(mock_gen.call_count, 3)
+            self.assertIsNotNone(result)
+            shorts = update_shorts.parse_shorts(result)
+            self.assertEqual(len(shorts), 10)
+
+        # Scenario B: Batch 1 succeeds on attempt 1 (5 shorts), but Batch 2 fails all 3 attempts -> category MUST fail (return None)
+        with patch.object(
+            update_shorts.ai_router,
+            "generate_content",
+            side_effect=[valid_batch_1, None, incomplete_batch_2, None]
+        ) as mock_gen_fail:
+            update_shorts.ai_router.last_finish_reason = "stop"
+            update_shorts.ai_router.last_status_code = 200
+            result_fail = update_shorts.format_with_gpt(articles, "AI")
+
+            # 1 call for Batch 1 + 3 failed attempts for Batch 2 = 4 calls total
+            self.assertEqual(mock_gen_fail.call_count, 4)
+            self.assertIsNone(
+                result_fail,
+                "When Batch 2 fails after retries, format_with_gpt must return None and never publish partial 5 shorts"
+            )
+
+    # -------------------------------------------------------------------------
+    # TEST 20: Resilient Parser — Numbered Labels, Source Alias, and Malformed Block Isolation
+    # -------------------------------------------------------------------------
+    def test_20_resilient_parser_numbered_labels_aliases_and_no_merging(self):
+        import io
+        from contextlib import redirect_stdout
+
+        # 1. Numbered labels ("1. Date:", "2. Date:") and "Source:" alias for "Source Name:"
+        numbered_and_aliased_input = """1. Date: Oct 13 2026
+Source: The Hacker News
+Source URL: https://thehackernews.com/2026/10/numbered-short-1.html
+Headline: Numbered Short One—Critical Patch
+Title: First Short Uses Numbered Date Label and Source Alias
+Content:
+This first short uses a numbered Date prefix and Source instead of Source Name. The parser normalizes both fields cleanly without losing validation strictness.
+Entities: CVE-2026-3001, Linux
+
+2. **Date:** Oct 13 2026
+**Source Name:** BleepingComputer
+**URL:** https://www.bleepingcomputer.com/news/security/numbered-short-2/
+**Headline:** Numbered Short Two—Ransomware Alert
+**Title:** Second Short Uses Bold Numbered Date Label and URL Alias
+**Content:**
+This second short uses bolded numbered labels and URL alias. It parses as a distinct second short.
+**Entities:** LockBit, ransomware
+"""
+        shorts = update_shorts.parse_shorts(numbered_and_aliased_input)
+        self.assertEqual(len(shorts), 2)
+        self.assertEqual(shorts[0]["source"], "The Hacker News")
+        self.assertEqual(shorts[0]["sourceUrl"], "https://thehackernews.com/2026/10/numbered-short-1.html")
+        self.assertEqual(shorts[1]["source"], "BleepingComputer")
+        self.assertEqual(shorts[1]["sourceUrl"], "https://www.bleepingcomputer.com/news/security/numbered-short-2/")
+
+        # 2. Malformed block missing Date: after a valid short MUST NOT merge into the first short's Content
+        valid_followed_by_dateless = """Date: Oct 13 2026
+Source Name: SecurityWeek
+Source URL: https://www.securityweek.com/valid-short-1
+Headline: Valid First Short—Clean Content
+Title: Valid First Short Must Not Absorb Adjacent Dateless Block
+Content:
+Clean content for short number one. This should end right here before Entities.
+Entities: Fortinet, CVE-2026-4001
+
+Source Name: Dark Reading
+Source URL: https://www.darkreading.com/malformed-dateless-short-2
+Headline: Malformed Dateless Short Two
+Title: Malformed Second Short Missing Date Line
+Content:
+CONTAMINATED TEXT FROM MALFORMED SHORT TWO THAT FORGOT DATE LINE.
+Entities: malware
+
+Date: Oct 13 2026
+Source Name: CISA
+Source URL: https://www.cisa.gov/valid-short-3
+Headline: Valid Third Short After Malformed Block
+Title: Valid Third Short Parses Cleanly After Rejected Block
+Content:
+Clean content for short number three.
+Entities: CISA, KEV
+"""
+        f = io.StringIO()
+        with redirect_stdout(f):
+            isolated_shorts = update_shorts.parse_shorts(valid_followed_by_dateless)
+        logs = f.getvalue()
+
+        self.assertEqual(len(isolated_shorts), 2)
+        self.assertEqual(isolated_shorts[0]["sourceUrl"], "https://www.securityweek.com/valid-short-1")
+        self.assertNotIn("CONTAMINATED TEXT", isolated_shorts[0]["content"])
+        self.assertNotIn("Dark Reading", isolated_shorts[0]["content"])
+        self.assertEqual(isolated_shorts[1]["sourceUrl"], "https://www.cisa.gov/valid-short-3")
+        self.assertIn("missing required field(s): Date", logs)
+
+    # -------------------------------------------------------------------------
+    # TEST 21: Unresolved Placeholders & Duplicate URLs/Titles Rejected Across Batches
+    # -------------------------------------------------------------------------
+    @patch("time.sleep")
+    def test_21_unresolved_placeholder_and_cross_batch_duplicate_rejection(self, mock_sleep):
+        from datetime import datetime, timedelta
+        import pytz
+
+        os.environ["SARVAM_API_KEY"] = "sk-test-dup-key"
+        now = datetime.now(pytz.UTC)
+
+        # 1. Unresolved placeholder in parse_shorts is rejected
+        unresolved_raw = """Date: Oct 13 2026
+Source Name: TechCrunch
+Source URL: https://techcrunch.com/ARTICLE_9_URL_PLACEHOLDER
+Headline: Unresolved Placeholder Test
+Title: Short With Unresolved Placeholder Must Be Rejected
+Content:
+Body text for unresolved placeholder test.
+Entities: AI
+"""
+        self.assertEqual(len(update_shorts.parse_shorts(unresolved_raw)), 0)
+
+        # 2. Cross-batch duplicate title or URL triggers batch failure and retry
+        articles = [
+            {
+                "title": f"Unique Security Event #{idx} Reported",
+                "source": "SecurityWeek",
+                "link": f"https://www.securityweek.com/event-{idx}",
+                "published": now - timedelta(hours=idx),
+                "summary": f"Summary #{idx}"
+            }
+            for idx in range(1, 11)
+        ]
+
+        def build_batch(batch_num, duplicate_first_title=False):
+            blocks = []
+            for i in range(1, 6):
+                g_idx = (batch_num - 1) * 5 + i
+                title_str = (
+                    "Detailed Title For Security Event #1"
+                    if (duplicate_first_title and i == 1)
+                    else f"Detailed Title For Security Event #{g_idx}"
+                )
+                blocks.append(
+                    f"Date: Oct 13 2026\n"
+                    f"Source Name: SecurityWeek\n"
+                    f"Source URL: ARTICLE_{i}_URL_PLACEHOLDER\n"
+                    f"Headline: Security Event #{g_idx} Headline\n"
+                    f"Title: {title_str}\n"
+                    f"Content:\n"
+                    f"Detailed analysis for security event #{g_idx}.\n"
+                    f"Entities: security"
+                )
+            return "\n\n".join(blocks)
+
+        batch1_ok = build_batch(1, duplicate_first_title=False)
+        batch2_dup_title = build_batch(2, duplicate_first_title=True)
+        batch2_ok = build_batch(2, duplicate_first_title=False)
+
+        with patch.object(
+            update_shorts.ai_router,
+            "generate_content",
+            side_effect=[batch1_ok, batch2_dup_title, batch2_ok]
+        ) as mock_gen:
+            update_shorts.ai_router.last_finish_reason = "stop"
+            update_shorts.ai_router.last_status_code = 200
+            combined = update_shorts.format_with_gpt(articles, "Cybersecurity")
+            self.assertEqual(mock_gen.call_count, 3, "Batch 2 with cross-batch duplicate title must be rejected and retried")
+            self.assertIsNotNone(combined)
+            parsed = update_shorts.parse_shorts(combined)
+            self.assertEqual(len(parsed), 10)
+
+    # -------------------------------------------------------------------------
+    # TEST 22: Enhanced Diagnostics (status, content_len, reasoning_tokens) & Secret Safety
+    # -------------------------------------------------------------------------
+    @patch("requests.post")
+    def test_22_enhanced_diagnostics_reasoning_tokens_and_secret_redaction(self, mock_post):
+        import io
+        from contextlib import redirect_stdout
+
+        secret_key = "sk-sarvam-live-secret-token-abcdef123456"
+        os.environ["SARVAM_API_KEY"] = secret_key
+        router = AIRouter()
+
+        mock_trunc = MagicMock()
+        mock_trunc.status_code = 200
+        mock_trunc.json.return_value = {
+            "id": "cmpl-diag-test",
+            "choices": [{
+                "index": 0,
+                "message": {"role": "assistant", "content": ""},
+                "finish_reason": "length"
+            }],
+            "usage": {
+                "prompt_tokens": 2969,
+                "completion_tokens": 4000,
+                "total_tokens": 6969,
+                "completion_tokens_details": {
+                    "reasoning_tokens": 3850
+                }
+            },
+            "error": {"code": "token_limit", "message": f"Key {secret_key} hit length"}
+        }
+        mock_post.return_value = mock_trunc
+
+        f = io.StringIO()
+        with redirect_stdout(f):
+            res = router.call_sarvam("test prompt")
+        logs = f.getvalue()
+
+        self.assertIsNone(res)
+        self.assertEqual(router.last_status_code, 200)
+        self.assertEqual(router.last_finish_reason, "length")
+        self.assertEqual(router.last_content_length, 0)
+        self.assertEqual(router.last_reasoning_tokens, 3850)
+        self.assertIn("status=200", logs)
+        self.assertIn("finish_reason=length", logs)
+        self.assertIn("content_len=0", logs)
+        self.assertIn("prompt=2969, completion=4000, total=6969", logs)
+        self.assertIn("reasoning_tokens=3850", logs)
+        self.assertNotIn(secret_key, logs)
+        self.assertIn("[REDACTED_API_KEY]", logs)
+
 
 if __name__ == "__main__":
     unittest.main()
+
 
 
