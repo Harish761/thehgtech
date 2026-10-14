@@ -4027,6 +4027,27 @@
       "Description": "In August 2016, <a href=\"http://www.zdnet.com/article/over-25-million-accounts-stolen-after-mail-ru-forums-raided-by-hackers/\" target=\"_blank\" rel=\"noopener\">the Russian gaming forum known as Cross Fire (or cfire.mail.ru) was hacked</a> along with a number of other forums on the Russian mail provider, mail.ru. The vBulletin forum contained 12.8 million accounts including usernames, email addresses and passwords stored as salted MD5 hashes."
     }
   ],
+  "crunchbase.com": [
+    {
+      "Name": "Crunchbase",
+      "Title": "Crunchbase",
+      "BreachDate": "2026-01-22",
+      "AddedDate": "2026-10-14T06:01:26Z",
+      "PwnCount": 559908,
+      "DataClasses": [
+        "Email addresses",
+        "Employers",
+        "Job titles",
+        "Names",
+        "Phone numbers",
+        "Physical addresses",
+        "Social media profiles"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In January 2026, the private company intelligence platform <a href=\"https://www.securityweek.com/crunchbase-confirms-data-breach-after-hacking-claims/\" target=\"_blank\" rel=\"noopener\">Crunchbase was targeted in a ShinyHunters \"pay or leak\" extortion attempt</a>. Data allegedly obtained from the company was subsequently published publicly and included 560k unique email addresses, largely belonging to leads and business contacts. Other data included names, physical addresses, phone numbers, job titles, employers and LinkedIn profiles. Crunchbase later confirmed that a threat actor had exfiltrated documents from its corporate network."
+    }
+  ],
   "crunchyroll.com": [
     {
       "Name": "Crunchyroll",
