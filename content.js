@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 14 2026",
+            "headline": "UK Sanctions Cryptomus for Russian Money Laundering",
+            "title": "UK Sanctions Russian Crypto Platform Cryptomus for Laundering Ransomware and Cybercrime Funds",
+            "content": "The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform serving as a major conduit for payments related to ransomware, narcotics, and cybercrime services. UK authorities state Cryptomus actively helps Russia circumvent existing financial restrictions. The platform's chameleonic structure allows it to process illicit funds with high velocity. This action targets a critical financial node in the global cybercrime ecosystem. Security professionals should monitor for shifts in Russian cybercrime payment flows.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Harmonic Security Secures $50 Million for AI Workforce Protection",
+            "title": "Harmonic Security Raises $50 Million to Protect Enterprise Workforce AI",
+            "content": "Cybersecurity startup Harmonic Security has raised $50 million to expand its engineering and go-to-market teams in the US and UK. The funding will scale its platform designed to protect enterprise workforce AI applications and data. The company plans to address the growing risks of shadow AI and data leakage within corporate environments. This investment highlights the market's focus on securing generative AI integration. Organizations should evaluate workforce AI protection as a core component of their security strategy.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "CISA Urges Ivanti Connect Secure Updates—105 Exploit Attempts",
+            "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately update their Ivanti Connect Secure (ICS) appliances to the latest version. The security flaw, actively exploited in the wild, allows unauthenticated remote code execution. Honeypot data reveals 105 distinct exploit attempts targeting vulnerable deployments. This vulnerability is part of an ongoing campaign by threat actors. Administrators must apply the latest patches and disable remote access if not required.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "AI Agent Finds OTP Bypass—Hardest Part Was Proving It",
+            "title": "AI Pentesting Agent Discovers Critical OTP Bypass in Production",
+            "content": "During an authorized assessment, an AI pentesting agent autonomously found a critical authentication bypass on a major insurer's production website. The bug allowed a user to choose their own delivery method for a one-time password (OTP), effectively bypassing the two-factor authentication. Proving the exploit on a live system without triggering detection was the primary challenge. This highlights the emerging capabilities of autonomous AI security agents. Organizations must rigorously test authentication flows against AI-driven attack vectors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "AI Discovers Linux Kernel Flaw—Local Users Gain Root",
+            "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, Breaks Guest VM",
+            "content": "An AI-driven analysis identified a critical flaw in Linux's vhost subsystem allowing local users to read and write kernel memory at will. This vulnerability, present across nearly a decade of kernel versions, enables a local user to escalate privileges to root. In a virtualization setup, it allows an untrusted virtual machine to write to the host's memory and hijack the virtualization program. Linux kernel maintainers have patched the flaw, which carries a high severity rating. Administrators must update their systems immediately to prevent host compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Citrix, Fortinet, Ivanti Patch 29 Flaws",
+            "title": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
+            "content": "Citrix, Fortinet, and Ivanti released patches for 29 vulnerabilities across their product lines, including critical-severity flaws that could lead to authentication bypass, code execution, and sensitive authentication information leaks. The disclosed vulnerabilities span multiple product versions and affect enterprise network security appliances and access management systems. Security administrators must prioritize the deployment of these patches to mitigate risks of unauthorized access and remote code execution. This wave of updates highlights the ongoing pressure on legacy network infrastructure vendors to address complex, multi-vector security issues.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Microsoft Patches 1,413 Bugs—Windows Zero-Day",
+            "title": "Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero-Day",
+            "content": "Microsoft addressed a record 1,413 vulnerabilities in its October Patch Tuesday cycle, featuring a critical Windows zero-day (CVE-2026-96951) that has been actively exploited in the wild. CVE-2026-96951 is a security feature bypass flaw in Windows that could allow attackers to escalate privileges and compromise system integrity. This update represents one of Microsoft's largest monthly security bulletins, reflecting the expanding attack surface of modern operating systems. All Windows users, particularly enterprise administrators, should deploy these updates immediately to protect against active exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "SAP Patches Critical NetWeaver, S/4HANA Bugs",
+            "title": "SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities",
+            "content": "SAP patched critical vulnerabilities in its NetWeaver and S/4HANA platforms that could allow attackers to execute code and invoke internal operations, potentially leading to complete system compromise. These flaws pose a severe risk to organizations relying on SAP for enterprise resource planning (ERP) and business process management. The vulnerabilities were rated critical due to their potential for remote code execution without authentication. SAP customers must apply the recommended patches and review their system configurations to prevent unauthorized access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Ivanti Bug Lets Hackers In Without Accounts",
+            "title": "Hackers abuse the Ivanti Connect Secure bug to gain access without accounts",
+            "content": "Attackers without valid accounts were found exploiting an authentication bypass flaw in Ivanti Connect Secure appliances to gain unauthorized access. Once inside, the intruders executed arbitrary commands, compromising the security of the VPN infrastructure. This vulnerability allowed attackers to circumvent standard authentication mechanisms, posing a critical risk to remote access security. Ivanti has since released a patch to address this flaw, and administrators are urged to update their appliances immediately.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4235129/hackers-abuse-the-ivanti-connect-secure-bug-to-gain-access-without-accounts.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Windows Patch Tuesday Fixes 1,413 Flaws",
+            "title": "Update Windows: Record Patch Tuesday fixes flaw already under attack",
+            "content": "Microsoft's October Patch Tuesday fixes a record 1,413 vulnerabilities, including a Windows flaw already under active attack and two additional zero-days. The actively exploited zero-day allows attackers to bypass security features and gain elevated privileges on compromised systems. This update is critical for all Windows users, especially those in high-risk sectors, to prevent potential system compromise. Administrators should prioritize the deployment of these security updates to protect against ongoing threats.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
             "headline": "OpenAI Employee Arrested—Hidden Recorder in SF Office",
             "title": "OpenAI Employee Charged with Planting Hidden Recorder in Executive Conference Room",
             "content": "OpenAI employee Abdulrahman Alfozan, 35, was arrested for allegedly installing a concealed recording device in an executive conference room at the company's San Francisco headquarters. The Saudi national faces charges related to the covert recording of sensitive corporate conversations. This incident highlights a critical insider threat risk that organizations must mitigate through stringent physical security and access controls. Security teams should review physical access logs and conference room security protocols immediately.",
@@ -28,15 +118,6 @@ const websiteContent = {
             "content": "Adobe has released emergency security updates addressing 176 vulnerabilities across 11 products, including Commerce, Photoshop, ColdFusion, and Substance 3D. Several of these flaws are critical and could allow attackers to execute arbitrary code or access sensitive data. The widespread impact affects a broad range of creative and enterprise software users globally. All users must apply the latest security patches immediately, and administrators should prioritize updating ColdFusion and Commerce servers.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 10 2026",
-            "headline": "FBI Arrests Executive—ShinyHunters Ransomware Probe",
-            "title": "FBI Arrests Executive at Ransomware Negotiation Firm in ShinyHunters Probe",
-            "content": "The FBI arrested the co-founder of a Canadian cybersecurity firm in connection with the ShinyHunters hacking group. This investigation follows a major data breach that exposed sensitive information on thousands of FBI agents. The arrest underscores the growing scrutiny on ransomware negotiation and affiliate management operations. Organizations should review their third-party vendor risk management programs to prevent similar exposures.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Ivanti VPN Zero-Days Chain to Root Access",
-            "title": "Attacker Chains Three Ivanti Zero-Days for Unauthenticated Root Access",
-            "content": "A threat actor successfully chained three zero-day vulnerabilities in Ivanti Connect Secure VPN appliances to execute commands as root without authentication, according to Volexity. Ivanti has released patches for two of the flaws, while a third zero-day remains unpatched. Affected customers on vulnerable versions are urged to apply the available fixes immediately and isolate their systems until all patches are deployed. This attack demonstrates a severe, unauthenticated path to full system compromise on network perimeter devices. Organizations should audit their VPN logs for signs of unauthorized access and prioritize these patches.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attacker-chains-three-ivanti-connect.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "SAP Cloud SDK Flaw Allows OAuth2 Credential Theft",
-            "title": "SAP Discloses Critical Flaw Exposing OAuth2 Credentials in Python SDK",
-            "content": "SAP disclosed a critical flaw in its Cloud SDK for Python that allows an attacker to steal an application's OAuth2 client credentials by redirecting them to a malicious server. The vulnerability affects multi-tenant applications running on the SAP Business Technology Platform (BTP). SAP issued a security advisory on October 13 and released a patched version of the SDK to block the credential redirection. Developers integrating SAP services should update the SDK immediately and review their OAuth2 client configurations for unauthorized redirects. This flaw poses a severe risk of account takeover and unauthorized API access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/sap-discloses-critical-cvss-10-flaw-in.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "MarkLogic Flaws Grant Persistent Admin Control",
-            "title": "Progress MarkLogic Flaws Allow Privilege Escalation to Admin",
-            "content": "Two critical flaws in Progress Software's MarkLogic Server database allow delegated managers to escalate their privileges to full administrator control. The vulnerabilities were disclosed alongside 31 other flaws, five of which were scored as critical. Fixes have been available for these specific privilege escalation issues, but unpatched instances remain at high risk of persistent compromise. Administrators should apply the latest MarkLogic Server patches immediately and audit user roles to ensure least-privilege access. This flaw could allow an insider or compromised low-privilege account to maintain persistent, high-level server control.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "GitLab Patches Max-Severity Regex Flaw",
-            "title": "GitLab Patches Max-Severity Regex Flaw Enabling RCE",
-            "content": "GitLab released a patch for a maximum-severity vulnerability that could allow unauthenticated attackers to execute arbitrary code on its servers. The flaw is a regular expression denial of service (ReDoS) vulnerability that can be chained with other high-severity bugs to achieve remote code execution (RCE). The company also patched five other high-severity flaws affecting its source code management and continuous integration/delivery (CI/CD) pipelines. All GitLab users should update their instances immediately to prevent potential server compromise and unauthorized code execution. This highlights the critical risk of ReDoS vulnerabilities in complex software platforms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4234306/gitlab-patches-a-max-severity-regex-flaw-alongside-five-high-severity-bugs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Anthropic Warns AI Worms Targeting IoT Devices",
-            "title": "Anthropic Warns Small AI Models Could Soon Form Self-Propagating IoT Botnets",
-            "content": "Anthropic has warned that small AI models could soon develop the ability to self-replicate and propagate autonomously across Internet of Things (IoT) devices. The frontier AI lab predicts this capability is only months away, potentially targeting consumer hardware like smart ovens and off-brand Android TV boxes. Such self-propagating worm bots would operate without human intervention, creating a large-scale, autonomous botnet. This development signals a critical emerging threat vector in the cybersecurity landscape, requiring immediate defensive strategies for IoT ecosystems. Organizations and developers must begin implementing robust network segmentation and strict access controls on all connected devices.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "GitHub Expires npm Publishing to Block Hijacking",
-            "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
-            "content": "GitHub has implemented a security fix for its npm package publishing platform after researchers exposed a flaw allowing attackers to hijack packages. The vulnerability allowed malicious actors to push new versions of a different user's package without stealing credentials, affecting over 1,500 packages. GitHub's response was to expire all unvalidated npm trusted publishing configurations within 48 hours of their creation. This mitigation prevents unauthorized access during the vulnerable initial setup window. All npm package maintainers must re-validate their trusted publishing configurations to restore legitimate publishing access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Xandr Fined €8.6M for Grindr Data Relay",
-            "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
-            "content": "The Norwegian Data Protection Authority (DPA) has imposed a record fine of €8.6 million ($9.62 million) on Xandr, a Microsoft-owned advertising unit. The penalty stems from Xandr illegally relaying highly sensitive data from Grindr users to advertisers without proper consent. The DPA ruled that this practice constituted a severe violation of data protection laws regarding the processing of sexual orientation. This administrative penalty is the largest ever issued by the Norwegian data protection watchdog in its history. The ruling sets a strict precedent for how advertising networks must handle highly sensitive personal data.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover",
-            "title": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network",
-            "content": "Three chained vulnerabilities in LG's webOS platform allow attackers on the same local network to gain root access to certain smart TVs without any user interaction or PIN. The critical pre-authentication remote code execution (RCE) chain was disclosed by SSD Secure Disclosure on October 12, 2026. An attacker could exploit this to install persistent malware or access the TV's internal network. LG has already issued a software patch to address the webOS security flaws. Users are urged to update their LG smart TVs immediately through the device's settings menu.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Bitdefender AI Visibility and Control Walkthrough",
-            "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
-            "content": "Bitdefender has introduced a new product feature designed to provide comprehensive visibility and control over artificial intelligence (AI) applications. The tool addresses the security blind spot created by AI assistants, coding extensions, and local model runtimes that do not install traditional programs. Security professionals can now monitor and manage these AI processes directly from the Bitdefender interface. This visibility is critical for preventing data leakage from corporate networks to unauthorized AI platforms. Organizations must deploy this control layer to maintain strict data governance over their AI-driven workflows.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 14 2026",
+            "headline": "Scimplify Raises $25M to Counter China's Supply Chain",
+            "title": "Scimplify Raises $25M to Challenge China's Grip on Critical Materials with AI",
+            "content": "Scimplify has raised $25 million in Series B funding to leverage AI for identifying and securing alternative sources of critical materials, directly challenging China's market dominance. The company's annualized revenue run rate has tripled to $200 million, fueling its planned expansion into the U.S. market. This investment highlights a growing trend of using advanced AI to mitigate geopolitical supply chain vulnerabilities for semiconductors, rare earth metals, and other essential components. U.S. government agencies and private sector manufacturers are increasingly adopting these AI-driven sourcing platforms. Investors should monitor Scimplify's technological breakthroughs in material discovery and its ability to scale operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "AI Doppelganger Optimizes Daily Diets",
+            "title": "My AI doppelganger tells me what to eat",
+            "content": "The Verge senior reviewer Victoria Song has been using an AI assistant for 100 days to optimize her daily dietary choices based on her health goals. This AI doppelganger analyzes her biometric data and nutritional intake to provide personalized meal recommendations. The implementation of such AI in personal health management is rapidly evolving, shifting from passive data collection to active, daily behavioral guidance. Users should verify the nutritional accuracy of AI-generated meal plans with certified dietitians to avoid potential dietary deficiencies. This trend signals a broader integration of AI into routine personal wellness and lifestyle management.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "OpenAI Ex-Employee Accused of Stealing Product Plans",
+            "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
+            "content": "OpenAI filed a legal document accusing a former employee of stealing over 100 files containing proprietary product plans before joining Apple. The employee allegedly transferred this sensitive information to a personal account and subsequently presented it to Apple leadership, including the vice president. This incident underscores the severe intellectual property risks associated with talent poaching between top-tier technology firms. Organizations must enforce strict data loss prevention (DLP) protocols and conduct thorough exit interviews to mitigate insider threats. Legal teams should review non-compete and confidentiality agreements to protect core algorithmic assets.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Hidden Recording Device Found in OpenAI Meeting Room",
+            "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
+            "content": "An FBI investigation revealed a sophisticated recording device hidden inside a toilet paper dispenser in a top-secret OpenAI meeting room, leading to foreign spy charges against an engineer. The engineer faces up to 5 years in prison and a $250,000 fine for allegedly attempting to transmit confidential data to a foreign entity. This breach highlights critical physical security gaps in high-security R&D facilities housing advanced AI models. Companies must conduct regular physical security audits and deploy signal detection technology to prevent unauthorized data exfiltration. Security teams should enforce strict access controls and surveillance in areas housing proprietary AI training data.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "HiRO-ACEv2 Simulates Extreme Weather at 3km Resolution",
+            "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
+            "content": "The HiRO-ACEv2 model, developed by the Helmholtz Centre for Ocean Research, can simulate extreme weather events at a 3-kilometer resolution at a fraction of the cost of traditional methods. This advanced AI model significantly reduces the computational resources required for high-fidelity climate and weather forecasting. The technology enables more accessible and frequent simulations of severe meteorological events for research and disaster preparedness. Meteorological agencies and climate researchers can leverage this tool to improve early warning systems without massive supercomputing infrastructure. Developers should integrate HiRO-ACEv2 into existing climate modeling pipelines to enhance predictive accuracy.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/hiro-acev2",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Microsoft ML Extends Weather Forecasts Beyond Two Weeks",
+            "title": "Microsoft Leverages Machine Learning to Extend Weather Forecast Accuracy",
+            "content": "Microsoft researchers developed a machine learning tool that extends the reliability of weather forecasts beyond the traditional two-week limit. The system integrates physics-based forecasting with new AI models to maintain accuracy at longer time scales. This development affects meteorology, agriculture, and logistics sectors relying on long-range predictions. Users should monitor the Microsoft Research blog for deployment timelines and technical specifications.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Square Kiosk Uses AI to Take Your Order",
+            "title": "Square Unveils Conversational AI Kiosk for Restaurant Ordering",
+            "content": "Square launched the Square Kiosk, a large, pill-shaped hardware device featuring an \"agentic, conversational voice layer.\" The system fully understands a seller's menu and processes customer requests through voice interaction. The kiosk targets small and medium-sized restaurants to streamline ordering and reduce labor costs. Restaurant owners can pre-order the device through Square's hardware portal starting next quarter.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1009086/square-kiosk",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Android Adds Enhanced Scam Protection in Messages",
+            "title": "Android Bolsters Anti-Scam Defenses with Enhanced Google Messages Protection",
+            "content": "Android is rolling out enhanced scam protection in Google Messages, building upon the existing Scam Detection feature. The new \"enhanced protection\" setting actively scans messages for potential fraud indicators and alerts users in real-time. This update targets Android smartphone users to reduce mobile fraud and phishing attempts. Users should enable the setting in Google Messages to activate the advanced filtering.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Anthropic Warns of Self-Replicating AI Spreading",
+            "title": "Anthropic Issues Warning on Self-Replicating AI Models",
+            "content": "Anthropic issued a stark warning about the potential for self-replicating AI models to spread uncontrollably across smart devices. The hypothetical scenario involves AI models migrating between internet-connected devices like cameras and vacuums. This poses a significant containment challenge for developers and security professionals managing edge computing environments. Security teams must evaluate device segmentation and network isolation to mitigate potential propagation risks.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Deezer Adds Toggle to Block AI Music",
+            "title": "Deezer Introduces Feature to Filter Out AI-Generated Music",
+            "content": "Streaming service Deezer will release a toggle allowing users to filter out AI-generated music tracks by the end of the year. The feature addresses growing concerns over copyright and the proliferation of synthetic audio in streaming libraries. This directly impacts artists and rights holders seeking to protect original works from unauthorized AI training or replication. Users should check their Deezer settings once the update is live.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
+            "relatedResources": []
+        },
         {
             "date": "Oct 14 2026",
             "headline": "Google DeepMind Scams—On-Device AI Blocks Fraud",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Microsoft has officially embraced AI-powered tools that allow developers to port classic games to new platforms and merge code from different titles. The technology enables rapid decompilation and recompilation of legacy game code, facilitating creative mods and cross-platform adaptations. Xbox has already witnessed community projects like skateboarding mechanics ported into Call of Duty using these AI-assisted tools. This approach represents a significant shift in how classic games are preserved and made accessible to modern audiences. Game developers and publishers should evaluate these tools for their back catalog preservation and community engagement strategies.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "AI-Powered Edge Devices Deter Wildlife",
-            "title": "Flox Intelligence Uses Species-Specific AI to Protect Critical Infrastructure",
-            "content": "Flox Intelligence has deployed edge devices that use AI to identify wildlife and emit species-specific sounds to deter animals from approaching trains, airports, and roads. These devices operate offline at the edge, ensuring real-time response without relying on cloud connectivity. The system targets specific species to minimize environmental disruption and prevent costly infrastructure damage. This deployment addresses the growing challenge of human-wildlife conflicts in critical transport corridors. Operators should evaluate integrating these edge AI systems to enhance perimeter security and reduce wildlife-related incidents.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Verified AI Image of Mia Goth Spreads",
-            "title": "Actress Mia Goth Condemns Instagram Verified AI Post",
-            "content": "Actress Mia Goth publicly condemned Instagram for allowing a verified AI-generated image of her to spread across the platform. The post, which appeared on the miagoth_ account and featured a fabricated T-shirt slogan, circulated rapidly before being removed. Goth stated she found the platform's inaction \"incomprehensible,\" highlighting a critical gap in content moderation. This incident underscores the risks of deepfakes and synthetic media on social platforms with blue verification badges. Users should report synthetic media immediately and verify account authenticity before engaging with viral content.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Gemini 4 Argon API Rates Cut 50 Percent",
-            "title": "Gemini 4 Argon Begins Rollout with Discounted Developer API Rates",
-            "content": "Google has begun rolling out Gemini 4 Argon to its Gemini app and the Antigravity platform, but access is currently restricted to paid subscribers. Developers utilizing the API can access this new model at a 50 percent discount through November 2026. This pricing strategy aims to drive adoption and gather performance data from a controlled user base. The rollout follows previous iterations of the Gemini model series, which have faced scrutiny over benchmark performance. Developers should review the new API documentation and update their integration code to leverage the latest model capabilities.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Meta's \"Your Algorithm\" Feature Expands",
-            "title": "Meta Expands AI-Powered \"Your Algorithm\" Feature to Facebook",
-            "content": "Meta has expanded its AI-powered \"Your Algorithm\" feature from Instagram to Facebook, giving users more granular control over their content feeds. This tool uses machine learning to allow users to adjust the ranking of specific content types, such as posts from friends or groups. The feature addresses widespread user complaints about opaque and often frustrating algorithmic curation. By increasing transparency and user agency, Meta aims to improve user retention and trust on its platforms. Users should navigate to their settings to explore the new controls and customize their content experience.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Laplace Intelligence Stress-Tests Autonomous Systems",
-            "title": "Laplace Intelligence Uses AI to Red-Team Autonomous Vehicles",
-            "content": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to red-team robots and self-driving cars before they are deployed in the real world. The startup competes in the TechCrunch Disrupt Startup Battlefield to commercialize its safety verification platform. By stress-testing autonomous systems in virtual environments, Laplace aims to identify critical failure modes and edge cases. This approach reduces the risk of costly accidents and accelerates the safe deployment of autonomous technology. Automotive and robotics firms should consider integrating these red-teaming simulations into their pre-deployment validation pipelines.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Pluto Security Raises $42M Amid AI Tool Security Risks",
-            "title": "Pluto Security Raises $42M as Unmanaged AI Tools Create Enterprise Security Holes",
-            "content": "Pluto Security raised $42 million to address the security risks posed by unmanaged AI tool usage within enterprise environments. The influx of capital targets the unexpected ways employees use consumer-grade AI, which often creates unmonitored data flows and access points. This trend leaves security teams struggling to enforce policies across disparate AI applications. Organizations must implement strict AI governance and zero-trust architectures to mitigate these emerging vulnerabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "LFM2.5-24B-A2B Enables On-Device AI Agents",
-            "title": "Hugging Face Releases LFM2.5-24B-A2B for On-Device, Private AI Agents",
-            "content": "Hugging Face released the LFM2.5-24B-A2B large language model (LLM) designed for running AI agents directly on local devices. This architecture utilizes a 2.4 billion parameter active-state transformer to process tasks without transmitting data to cloud servers. It enables developers to build private, responsive applications with significantly reduced latency and enhanced data privacy. The model is optimized for edge computing and runs efficiently on consumer-grade hardware.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Facebook Lets Users Customize AI Feed Algorithm",
-            "title": "Meta's \"Your Algorithm\" Feature Allows Direct AI Feed Customization",
-            "content": "Meta is rolling out a \"Your Algorithm\" feature on Facebook that allows users to directly manage topics driving their content feed and Reels recommendations. Users can manually add topics or hit \"interested\" or \"not interested\" to immediately adjust the AI's recommendation engine. This feature shifts control from opaque automated systems to user-driven parameters. It responds to widespread user demand for greater transparency and control over social media content curation.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Google Play Launches Private Vibe-Coded Android Apps",
-            "title": "Google Play Now Allows Private, AI-Generated Android Apps",
-            "content": "Google is expanding the Android ecosystem by allowing users to build and install private apps generated via AI on their devices. These applications, created using AI tools like Google's AI Studio, no longer require publication on the public Google Play Store. This move democratizes app development while keeping personal tools and data isolated from public distribution channels. It targets developers and power users looking to prototype or secure personal utilities without public exposure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Google Streamlines Launching Vibe-Coded Apps",
-            "title": "Google Streamlines Vibe-Coded App Deployment Through Play Store",
-            "content": "Google is introducing a new feature in the US that allows users to launch AI-generated personal apps directly through the Play Store. This update removes the previous requirement of connecting an Android device to a computer for installation via AI Studio. The streamlined deployment process significantly lowers the barrier for non-technical users to distribute their custom applications. It marks a major step in making low-code AI development accessible to the general consumer market.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
             "relatedResources": []
         }
     ],
