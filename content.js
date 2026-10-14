@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 14 2026",
+            "headline": "OpenAI Employee Arrested—Hidden Recorder in SF Office",
+            "title": "OpenAI Employee Charged with Planting Hidden Recorder in Executive Conference Room",
+            "content": "OpenAI employee Abdulrahman Alfozan, 35, was arrested for allegedly installing a concealed recording device in an executive conference room at the company's San Francisco headquarters. The Saudi national faces charges related to the covert recording of sensitive corporate conversations. This incident highlights a critical insider threat risk that organizations must mitigate through stringent physical security and access controls. Security teams should review physical access logs and conference room security protocols immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Ivanti Zero-Day Chain—Root Access to Patched VPN",
+            "title": "Ivanti Zero-Day Chain Gives Attackers Root Access to Fully Patched VPN",
+            "content": "A critical zero-day chain, tracked as CVE-2026-104935, allows unauthenticated remote code execution with root privileges on Ivanti Connect Secure VPN appliances. Attackers can exploit this vulnerability even on systems that have received the latest security patches, rendering standard update protocols ineffective. The flaw poses a severe risk to organizations relying on these VPNs for secure remote access. Administrators must immediately apply Ivanti's emergency patches and review network access logs for signs of compromise.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Adobe Patches 176 Vulnerabilities Across 11 Products",
+            "title": "Adobe Patches 176 Vulnerabilities in Commerce, Photoshop, ColdFusion and More",
+            "content": "Adobe has released emergency security updates addressing 176 vulnerabilities across 11 products, including Commerce, Photoshop, ColdFusion, and Substance 3D. Several of these flaws are critical and could allow attackers to execute arbitrary code or access sensitive data. The widespread impact affects a broad range of creative and enterprise software users globally. All users must apply the latest security patches immediately, and administrators should prioritize updating ColdFusion and Commerce servers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 10 2026",
+            "headline": "FBI Arrests Executive—ShinyHunters Ransomware Probe",
+            "title": "FBI Arrests Executive at Ransomware Negotiation Firm in ShinyHunters Probe",
+            "content": "The FBI arrested the co-founder of a Canadian cybersecurity firm in connection with the ShinyHunters hacking group. This investigation follows a major data breach that exposed sensitive information on thousands of FBI agents. The arrest underscores the growing scrutiny on ransomware negotiation and affiliate management operations. Organizations should review their third-party vendor risk management programs to prevent similar exposures.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Ransomware Gangs—Physical Threats, Family Stalking",
+            "title": "Ransomware Gangs Embrace Physical Threats and Family Stalking",
+            "content": "Cybersecurity organizations report an alarming trend of ransomware gangs escalating to physical threats, including stalking and violence against employees' families. These extreme tactics are designed to increase psychological pressure on victims to pay ransoms. However, independent verification of these specific claims remains challenging for security researchers. Organizations must enhance employee safety protocols and provide support resources for staff facing targeted threats.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Microsoft Shatters Patch Tuesday Record—1,407 CVEs Patched",
+            "title": "Microsoft Releases Record 1,407 CVEs, Breaking 2020 High, Including Three Zero-Days",
+            "content": "Microsoft released 1,407 Common Vulnerabilities and Exposures (CVEs) on October 14, 2026, breaking its previous record of 1,261 patches from 2020. The unusually large release delayed the standard 1 p.m. Eastern drop by several hours. The list includes three zero-day vulnerabilities, with two unauthenticated remote code execution (RCE) flaws and a security bypass. System administrators should prioritize applying these security updates to mitigate active exploitation risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4234759/october-patch-tuesday-roundup-over-1400-microsoft-holes-to-be-plugged-including-three-zero-days.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Microsoft's Record Patch Tuesday Includes Unauthenticated RCEs",
+            "title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday, Including Unauthenticated RCEs",
+            "content": "Microsoft's October 2026 Patch Tuesday introduced three zero-day vulnerabilities, including unauthenticated remote code execution (RCE) flaws and security bypasses. These critical flaws pose a severe threat as they allow attackers to execute arbitrary code without authentication. The vulnerabilities affect multiple Windows and Microsoft product lines, demanding immediate prioritization by IT security teams. The sheer volume of patches highlights the escalating complexity of the Microsoft software attack surface.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Ivanti Misses Window, Zero-Day Exploited in the Wild",
+            "title": "Ivanti Misses Opportunity to Fix Vulnerability Before Attackers Made It a Zero-Day",
+            "content": "Security vendor Ivanti failed to patch a vulnerability before threat actors began exploiting it, elevating it to a zero-day. The company initially detected the defect during internal security checks in June 2026 but determined it did not meet the threshold for an out-of-band release. This oversight allowed attackers to weaponize the flaw before a public patch was available, leaving unpatched systems exposed. Ivanti has since released a security advisory and an emergency patch for the affected products.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/ivanti-connect-secure-zero-day-actively-exploited/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Microsoft Patches 1,417 Flaws—76 Critical",
+            "title": "Microsoft Patch Tuesday for October 2026 Addresses 1,417 Vulnerabilities",
+            "content": "Microsoft released patches for 1,417 vulnerabilities on October 13, 2026, with 76 rated critical. Notably, 7 of these critical vulnerabilities require no customer action to mitigate, and one was disclosed before today's patch cycle. Additionally, one vulnerability is already under active exploitation in the wild, posing an immediate risk. Administrators must apply these updates to Windows, Office, and other affected Microsoft products to protect against potential attacks.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33422",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "Microsoft Patches 1,413 Flaws, Including Actively Exploited Shell Bug",
+            "title": "Microsoft Patches Record 1,413 Flaws, Including Actively Exploited Windows Shell Bug",
+            "content": "Microsoft patched a record 1,413 vulnerabilities on October 14, 2026, including a Windows Shell bug already under active exploitation. The flaws span 1,102 issues in Windows, 134 in Office, and 61 in Developer Tools, among other products. The actively exploited Windows Shell vulnerability allows for remote code execution, making it a top priority for security teams. Administrators should deploy these critical updates immediately to close the attack vectors used by threat actors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 13 2026",
             "headline": "Docker Hub Flaw Lets Users Hijack Accounts",
             "title": "Docker Fixes Critical Hub Flaw Allowing Cross-User Image Manipulation",
@@ -92,81 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "0-Days, Rogue Certs—Cybersecurity Week in Review",
-            "title": "The Hacker News Weekly Recap: 0-Days, Rogue Certs, ShinyHunters Arrest and AI-Fooling Malware",
-            "content": "Attackers exploited newly disclosed helpdesk 0-day vulnerabilities within hours of disclosure this week, highlighting the critical need for rapid response. Threat actors also leveraged rogue certificates and compromised AI models to deploy sophisticated malware. The weekly roundup also covers the arrest of a ransomware response expert tied to the ShinyHunters FBI probe. Security teams must prioritize immediate patching and continuous monitoring to mitigate these rapid-response threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "Bricksforge Plugin Hacked in Active Attacks",
-            "title": "Bricksforge WordPress Plugin Vulnerability Exploited in the Wild",
-            "content": "Threat actors are actively exploiting CVE-2026-85097 in the Bricksforge WordPress plugin to take full control of targeted websites. The vulnerability allows unauthenticated remote code execution, enabling attackers to deploy ransomware or steal data. WordPress administrators using the plugin must apply the vendor's security patch immediately. This incident underscores the persistent risk of compromised third-party plugins in the WordPress ecosystem.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "iRhythm Breach Exposes 360,000 Patient Records",
-            "title": "iRhythm Data Breach Impacts at Least 360,000 People",
-            "content": "Hackers breached iRhythm, compromising the personal data of at least 360,000 patients. Stolen information includes names, addresses, dates of birth, and phone numbers. The breach exposes a critical vulnerability in the healthcare sector's data protection protocols. Affected individuals should monitor their accounts for signs of identity theft and phishing. iRhythm has not yet disclosed the specific attack vector used to compromise its systems.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "SonicWall SMA 1000 Flaw Targeted in 135 Attempts",
-            "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
-            "content": "Threat actors exploited CVE-2026-102255, a critical pre-authenticated server-side request forgery in SonicWall Secure Mobile Access (SMA) 1000 appliances. The flaw, with a CVSS score of 10.0, allowed unauthenticated attackers to execute arbitrary commands. Security researchers observed 135 exploitation attempts against unpatched systems within days of the vendor's disclosure. Administrators must update their SMA 1000 appliances to the latest firmware immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "ShinyHunters FBI Probe: Ransomware Expert Arrested",
-            "title": "Ransomware Response Expert Arrested in ShinyHunters FBI Hack Probe",
-            "content": "Canadian cybersecurity executive Edward Dubrovsky was arrested in connection with the ShinyHunters FBI hack probe. Dubrovsky, a ransomware response expert, is believed to have assisted the notorious threat actor group. The arrest highlights the FBI's expanding efforts to dismantle international cybercrime networks. Security professionals should remain vigilant against insider threats and social engineering tactics used by groups like ShinyHunters.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "CVSS 10.0 Flaw Bricksforge Plugin—Unauthenticated RCE",
-            "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-            "content": "Patchstack reports active exploitation of CVE-2026-85097, a critical vulnerability in the Bricksforge WordPress plugin. The flaw, rated CVSS 10.0, allows unauthenticated attackers to upload and execute arbitrary code on affected systems. WordPress site administrators must immediately update the plugin to the latest patched version to prevent remote code execution. This incident highlights the persistent risk of unpatched components within the WordPress ecosystem.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "SonicWall SSRF Flaw Exploited—Days After Disclosure",
-            "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
-            "content": "Attackers are actively exploiting CVE-2026-102255, a pre-authenticated Server-Side Request Forgery (SSRF) flaw in SonicWall products. This vulnerability allows unauthorized operations, potentially leading to information disclosure and internal network reconnaissance. The rapid exploitation following disclosure underscores the critical need for immediate patching of network security appliances. Administrators should apply SonicWall's security advisory immediately and verify all access controls.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "628,000 Ukrainian Records Stolen via AI-Augmented Hack",
-            "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-            "content": "Cybersecurity researchers identified a two-pronged AI-augmented campaign by the CyberXero threat actor targeting Ukrainian WordPress sites and critical infrastructure. The attackers leveraged a compromised GitHub repository to distribute malicious payloads and exfiltrate over 628,000 records. The use of Claude Code demonstrates a growing trend of integrating advanced AI tools into commodity offensive security toolchains. Ukrainian entities must scrutinize their GitHub Actions workflows and implement rigorous code review processes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 14 2026",
+            "headline": "Google DeepMind Scams—On-Device AI Blocks Fraud",
+            "title": "Google DeepMind and Singapore Deploy On-Device Gemma Models to Intercept Conversational Scams",
+            "content": "Google DeepMind and Singapore's GovTech launched an AI tool using lightweight on-device Gemma models to intercept conversational scams in private chats. The system operates with zero cloud data egress, processing text locally on user devices to detect fraudulent intent. This deployment directly targets the growing threat of AI-generated voice and text scams targeting citizens. The tool represents a shift toward localized AI privacy and security for consumer protection. Users should enable the feature through their messaging applications to benefit from this real-time protection.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "OpenAI Employee Arrested—Bug Found in Conference Room",
+            "title": "OpenAI Engineer Arrested After Discovery of Hidden Recording Device",
+            "content": "An OpenAI engineer, Abdulrahman Alfozan, was arrested after the company discovered a sophisticated recording device hidden in a conference room. The device was designed to intercept oral communications, constituting a serious internal security breach. Alfozan, a 35-year-old Saudi national, is charged with using or endeavoring to use a device to intercept oral communications. This incident highlights critical vulnerabilities in physical security protocols within high-tech corporate environments. Organizations must audit physical spaces and access logs to prevent insider threats.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Shopify Opens Catalog—AI Agents Can Now Purchase",
+            "title": "Shopify Expands Agentic Commerce by Allowing AI Agents to Browse and Purchase",
+            "content": "Shopify announced it will allow AI agents to browse and purchase from its catalog of over a billion products. This expansion of agentic commerce enables shoppers to configure AI assistants to complete transactions on their behalf. The move marks a significant integration of autonomous software agents into mainstream retail infrastructure. This trend could accelerate automated purchasing and change consumer behavior. Developers should prepare for new API requirements to support agent-to-agent commerce.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Science Corp Implanted PRIMA Chip—Stargardt Disease Patient",
+            "title": "Science Corporation Successfully Implants PRIMA Vision-Restoring Chip",
+            "content": "Science Corporation, founded by former Neuralink president Max Hodak, implanted its PRIMA vision-restoring chip in its first Stargardt disease patient. The implant is part of the company's path toward a novel brain-computer interface (BCI) for treating degenerative eye conditions. The PRIMA system uses photovoltaic pixels to stimulate the retina, restoring partial vision. This represents a major milestone in medical BCI technology for ophthalmology. Patients with Stargardt disease should consult clinical trials to evaluate eligibility.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Cerebras CEO Predicts—Personal AI Assistants at Home",
+            "title": "Cerebras CEO Predicts Ubiquitous Personal AI Assistants",
+            "content": "Cerebras CEO Andrew Feldman predicts a future where personal AI assistants become as commonplace as household appliances. These assistants will operate partly on local devices and partly in the cloud to balance performance and privacy. This vision aligns with the industry's push toward edge AI and hybrid cloud architectures. The trend will likely drive demand for specialized AI hardware and localized processing. Consumers should expect increased integration of AI into everyday home devices.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Factory Robots Switch Tasks in Minutes",
+            "title": "Industrial Next Aims to Automate Complex Manufacturing Tasks",
+            "content": "Industrial Next is developing AI systems to automate complex manufacturing tasks that traditionally required human intervention. The platform enables factory robots to switch tasks in minutes rather than weeks, addressing a major bottleneck in industrial automation. This capability targets delicate assembly and quality control operations where human dexterity and adaptability remain essential. The company is currently deploying its technology with several mid-sized automotive component manufacturers. Industrial professionals should monitor this development as it represents a shift toward more agile, software-defined factory floors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Cerebras CEO Pushes Back on AI Doomsday",
+            "title": "Cerebras CEO Andrew Feldman Challenges AI Doomsday Narratives",
+            "content": "Cerebras Systems CEO Andrew Feldman argued at TechCrunch Disrupt that excessive focus on AI risks is overshadowing its benefits. Feldman stated that industry leaders warning of AI doomsday scenarios should \"stop talking\" about existential threats. He emphasized that Cerebras' wafer-scale AI processors are designed to deliver tangible productivity gains for enterprise customers. The debate highlights a growing divide between AI safety advocates and commercial technology developers. Security and tech leaders should balance risk assessment with practical implementation of AI infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Judge Orders OpenAI to Turn Over Hiring Records",
+            "title": "Federal Judge Orders OpenAI to Provide Hiring Records to Apple",
+            "content": "A federal judge ruled that OpenAI must turn over hiring records, interview materials, and private messages involving former Apple employees to Apple. The disclosure order includes testimony from key figures in Apple's alleged recruitment of OpenAI personnel. This ruling is part of Apple's broader trade secrets lawsuit against OpenAI and Microsoft. The case centers on allegations that OpenAI improperly hired away Apple's AI team to compete with its former partner. Legal teams on both sides should prepare for extensive discovery as the case progresses toward trial.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Google DeepMind Developing Gemini 4 Argon",
+            "title": "Google DeepMind Focuses on Responsible Development of Gemini 4 Argon",
+            "content": "Google DeepMind is focusing on the responsible and safe development of Gemini 4 Argon, its next-generation large language model. The company is implementing enhanced safety protocols and evaluation frameworks to mitigate potential misuse of the model's capabilities. DeepMind researchers are conducting extensive red-teaming exercises to identify and address potential vulnerabilities before deployment. The development process includes collaboration with external safety researchers and policymakers to establish industry best practices. Organizations planning to integrate advanced AI should prioritize similar safety-by-design approaches in their own procurement and deployment strategies.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Xbox Embraces AI Game Port Chaos",
+            "title": "Microsoft Xbox Officializes AI-Powered Game Porting Tools",
+            "content": "Microsoft has officially embraced AI-powered tools that allow developers to port classic games to new platforms and merge code from different titles. The technology enables rapid decompilation and recompilation of legacy game code, facilitating creative mods and cross-platform adaptations. Xbox has already witnessed community projects like skateboarding mechanics ported into Call of Duty using these AI-assisted tools. This approach represents a significant shift in how classic games are preserved and made accessible to modern audiences. Game developers and publishers should evaluate these tools for their back catalog preservation and community engagement strategies.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+            "relatedResources": []
+        },
         {
             "date": "Oct 13 2026",
             "headline": "AI-Powered Edge Devices Deter Wildlife",
@@ -255,78 +363,6 @@ const websiteContent = {
             "content": "Google is introducing a new feature in the US that allows users to launch AI-generated personal apps directly through the Play Store. This update removes the previous requirement of connecting an Android device to a computer for installation via AI Studio. The streamlined deployment process significantly lowers the barrier for non-technical users to distribute their custom applications. It marks a major step in making low-code AI development accessible to the general consumer market.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "$50M US Air Force Contract for Balloon AI",
-            "title": "WindBorne Secures $50M Contract for AI-Powered Weather Prediction",
-            "content": "Silicon Valley startup WindBorne won a $50 million U.S. Air Force contract to deploy its AI-powered weather prediction system. The company utilizes a network of high-altitude weather balloons to collect atmospheric data, which is then processed by proprietary algorithms to forecast severe weather events. This contract validates the military's interest in alternative data collection methods beyond traditional satellites. The system will provide critical meteorological intelligence for flight operations, directly impacting defense readiness and strategic planning. Security professionals should evaluate the data integrity protocols for this novel sensor network.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "Meta Unveils Frontier Muse Wonder Models",
-            "title": "Meta Releases Frontier Muse Wonder Models for Complex Tasks",
-            "content": "Meta has released its first frontier models, the Muse Wonder series, to compete with industry leaders like OpenAI. These models are larger and more capable than the lightweight Muse Spark, achieving higher benchmark scores on complex tasks such as coding. The release is part of Meta's strategy to make up for lost time in the generative AI race through its revamped Superintelligence Labs division. The Muse Wonder models are designed for higher-latency applications where maximum performance is required. Security professionals should monitor their deployment for potential data leakage risks.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "Meta Races to Catch Up with New Wonder Models",
-            "title": "Meta Launches Wonder Models to Compete with Industry Leaders",
-            "content": "Meta is accelerating its AI development by launching the Muse Wonder models, following its earlier release of the Muse Spark lightweight model. These new frontier models are designed to go toe-to-toe with the industry's best, offering advanced capabilities for complex tasks and coding. The launch is a direct response to competitive pressure from other major tech companies in the generative AI space. The models are part of Meta's broader strategy to establish its Superintelligence Labs as a key player. The rapid rollout underscores the intense race for AI dominance and the significant investments required to maintain parity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009479/meta-muse-wonder-full-ai-model",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "UK Best Placed for AI Regulation, Says Microsoft",
-            "title": "Microsoft President Calls for Urgent AI Regulation",
-            "content": "Microsoft President Brad Smith stated that the UK is best positioned to lead global AI regulation. He called for urgent oversight, arguing that current AI companies face less scrutiny than industries like food safety, where milk and washing machines have more regulatory frameworks. Smith emphasized the need for proactive governance to mitigate risks associated with advanced AI systems. This position aligns with broader industry calls for standardized safety testing and transparency requirements. The UK's regulatory approach will likely influence other global jurisdictions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "AI Startup Blueprints Construction Plans in Minutes",
-            "title": "Blueprints AI Generates Permit-Ready Construction Blueprints from Photos",
-            "content": "Blueprints AI, a Santa Monica-based startup, has developed software that generates code-compliant construction blueprints from a photo, PDF, or sketch. The system automates the traditionally manual drafting process, significantly reducing project planning timelines. This tool targets construction firms and architects seeking to accelerate project initiation. The platform's ability to instantly translate visual inputs into formal plans represents a major step in applying generative AI to the architecture, engineering, and construction (AEC) industry.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "TechCrunch Disrupt 2026 Starts Tomorrow—Last Chance for $100 Savings",
-            "title": "TechCrunch Disrupt 2026 Kicks Off Tomorrow with 10,000+ Founders",
-            "content": "TechCrunch Disrupt 2026 begins tomorrow at 8 a.m. PT at San Francisco's Moscone West, bringing together over 10,000 founders, investors, and tech operators for three days. The event focuses on emerging startups and the technologies shaping future industries. This is the final 24 hours to secure ticket savings of up to $100 before prices increase. Industry leaders will present new concepts and forge critical partnerships.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/techcrunch-disrupt-2026-starts-tomorrow-your-final-chance-to-secure-up-to-100-ticket-savings/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "Microsoft Maia 300 AI Chip Cuts Cloud Costs",
-            "title": "Microsoft Unveils Maia 300 AI Chip to Reduce GPU Dependency",
-            "content": "Microsoft has announced the third-generation Maia 300 in-house AI chip, designed to serve as the primary inference system for its cloud products and services. The custom silicon improves the cost and efficiency of running large AI workloads. The Maia 300 is specifically optimized to handle the latest large language models (LLMs), reducing Microsoft's reliance on Nvidia GPUs. This strategic hardware development signals a broader industry trend of tech giants building custom silicon to control infrastructure costs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/news/1009465/microsoft-maia-300-chip-improvements-rollout",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 12 2026",
-            "headline": "Former Plaud Exec Raises $26M for Background AI App",
-            "title": "Former Plaud Executive Secures $26M for Always-On AI Assistant",
-            "content": "A former Plaud executive has raised $26 million to develop an AI application that continuously listens to user conversations to provide real-time assistance and suggestions. The funding reflects investor confidence in ambient computing and highly personalized AI. However, the model raises immediate and severe privacy concerns by requiring constant audio monitoring of user environments. Security professionals should closely evaluate the data handling and encryption protocols of such always-on applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/",
             "relatedResources": []
         }
     ],
@@ -421,6 +457,17 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-96951",
+            "dateAdded": "Oct 13, 2026",
+            "vendor": "Microsoft Windows",
+            "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
             "isZeroDay": false
         },
         {
