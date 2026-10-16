@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 15 2026",
+            "headline": "Linux Kernel Flaw Leaks Host Memory to Guest VMs",
+            "title": "Critical PwnEscape Linux Kernel Vulnerability Allows Guest VMs to Read Host Memory",
+            "content": "A critical flaw in the Linux kernel, tracked as CVE-2026-99999 and nicknamed PwnEscape, allows code inside a virtual machine (VM) to read memory on the host computer. A security researcher demonstrated this leak against Vercel's live cloud sandboxes, and Vercel confirmed the vulnerability. This flaw severely impacts cloud environments and virtualization platforms by compromising the isolation between guest and host systems. Users running affected Linux kernels should apply the latest security patches to mitigate unauthorized memory access. The discovery highlights the persistent risks of container and VM escape vulnerabilities in modern cloud infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape",
+            "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor",
+            "content": "ThreatsDay security roundup highlights a critical Adobe Reader Remote Code Execution (RCE) vulnerability, DNS-based cryptocurrency wallet theft, and an NVIDIA container escape flaw. A notable attack involved a tool that exfiltrated data and then actively scared victims with pop-ups for malicious entertainment. Another incident demonstrated how a small permission flaw can lead to massive data theft, while a trusted login mechanism was abused to hide malicious activity. Security professionals must prioritize patching Adobe products, secure DNS configurations, and review container permissions immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 10 2026",
+            "headline": "FBI Arrests Executive at Ransomware Negotiation Firm",
+            "title": "FBI Arrests Executive at Ransomware Negotiation Firm Over ShinyHunters Investigation",
+            "content": "The FBI arrested the co-founder of a Canadian cybersecurity firm for his alleged ties to the ShinyHunters hacking group. The group recently stole sensitive data on thousands of FBI agents, compromising internal law enforcement operations. This arrest marks a significant development in the ongoing investigation into data brokers who facilitate ransomware operations. Organizations should scrutinize their third-party vendors and partners for potential security risks and data exposure.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 16 2026",
+            "headline": "Ad Industry Becomes Pipeline for Mercenary Spyware",
+            "title": "No Click Required: How the Ad Industry Became a Pipeline for Mercenary Spyware",
+            "content": "\"AdFection\" is a zero-click mercenary spyware campaign exploiting the online advertising ecosystem to track user movements and collect data without any interaction. This threat actor leverages the sprawling ad tech supply chain to deliver malicious payloads to mobile devices. The attack bypasses traditional security by hiding within legitimate ad traffic, making detection extremely difficult. Users should be cautious about the permissions granted to apps and consider using ad-blockers to reduce their attack surface.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4236143/no-click-required-how-the-ad-industry-became-a-pipeline-for-mercenary-spyware.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 16 2026",
+            "headline": "TypeSafe's Jev AI Model More Susceptible to Attack",
+            "title": "TypeSafe's Jev 'Even More Susceptible to Attack' Than LLMs, Says Security Vendor",
+            "content": "A new security report argues that TypeSafe's Jev AI model, despite claiming advantages over traditional Large Language Models (LLMs), is actually more vulnerable to certain attacks. The model's streamlined architecture, designed for efficiency, reportedly lacks the robust defenses found in larger, more complex LLMs. This vulnerability could expose users to prompt injection and data leakage attacks. Developers integrating Jev should implement strict input validation and output filtering to mitigate these specific risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4236132/typesafes-jev-even-more-susceptible-to-attack-than-llms-says-security-vendor-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "SecTor 2026 Shows 22% Growth in Emerging Threats",
+            "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
+            "content": "SecTor 2026 concluded in Toronto with record attendance, highlighting a 22% growth year-over-year as security professionals confront rapidly evolving risks. Industry experts shared critical insights into emerging threat vectors, emphasizing the need for proactive defense strategies. The event underscored a significant shift in the cybersecurity landscape, driven by new attack methodologies and increasing sophistication. Attendees engaged in deep-dive sessions on threat intelligence and modern security architectures to mitigate these evolving challenges. Organizations must prioritize continuous learning and adaptive security postures to address the dynamic threat environment presented at the summit.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "F-Secure Releases 50+ Scam Encyclopedia",
+            "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
+            "content": "F-Secure has launched a comprehensive Victim-First Scam Encyclopedia, cataloging over 50 distinct types of consumer fraud based on decades of threat intelligence research. The resource details emerging forms of cybercrime, explaining the mechanics and psychological tactics used by scammers. This initiative aims to educate consumers by framing the information from the victim's perspective, providing practical identification and prevention guidance. By tracking the evolution of these scams, the encyclopedia serves as a critical tool for public awareness and fraud prevention. Security professionals can leverage this data to develop more effective consumer education campaigns and protective measures against social engineering.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Contextual Defense Stops Threats Before Escalation",
+            "title": "Context Is King in the Fight Against Modern Cyberattacks",
+            "content": "Modern cybersecurity defense requires contextual awareness to connect disparate signals and anticipate adversary actions before threats escalate. Security teams leveraging contextual defense can correlate events across the attack surface, moving beyond isolated alerts to a unified operational view. This approach enables proactive threat hunting, allowing defenders to disrupt campaigns at earlier stages of the kill chain. The shift toward contextual defense is driven by the increasing complexity and speed of modern cyberattacks, which render traditional, siloed security tools ineffective. Organizations must invest in integrated security platforms that provide holistic context for faster, more accurate incident response.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Zero Trust Strategies Summit: All Sessions on Demand",
+            "title": "Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand",
+            "content": "The Zero Trust Strategies Summit has released all sessions on demand, focusing on actionable Identity and Zero Trust (ZT) security implementations. The content moves beyond theoretical frameworks, providing concrete strategies for organizations to enforce strict identity verification and least-privilege access. This summit addresses the practical challenges of deploying Zero Trust architectures in complex, hybrid IT environments. It offers insights into integrating identity governance with network security to mitigate lateral movement risks. Security leaders can access these resources to accelerate their Zero Trust transformation and strengthen their overall security posture.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/virtual-event-today-zero-trust-strategies-summit-2/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Google Patches 37 Chrome Flaws—7 Critical",
+            "title": "Update Chrome: Google fixes 37 security flaws, including seven critical bugs",
+            "content": "Google has released a security update for Chrome, patching 37 vulnerabilities, including seven rated critical that could allow remote code execution (RCE). The most severe flaws, tracked as CVE-2023-634 and CVE-2023-635, were found in the V8 JavaScript engine and could be exploited via a crafted webpage. These vulnerabilities pose a high risk to all users, as successful exploitation could lead to complete system compromise without user interaction. The update, Chrome 119.0.6045.111, addresses these issues and over 35 other bugs, including memory corruption and use-after-free flaws. Users should update their browsers immediately to protect against potential exploitation by threat actors.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
             "headline": "NGINX Fixes 5 Flaws—Including 20-Year-Old TLS Bug",
             "title": "NGINX Patches 5 Vulnerabilities, Including 20-Year-Old TLS Bug and RCE Flaws",
             "content": "NGINX released versions 1.30.6 and 1.31.7 on October 14 to fix five vulnerabilities. Three of these are memory bugs that could crash a worker process or allow an attacker to run code remotely. A fifth flaw is a TLS bug present in every release since May 2005 that may skip client-certificate checks. The remaining issue is a denial-of-service vulnerability in the mod_http_substitutions module. Organizations must update immediately to mitigate potential remote code execution and authentication bypass risks.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "UK Sanctions Cryptomus for Russian Money Laundering",
-            "title": "UK Sanctions Russian Crypto Platform Cryptomus for Laundering Ransomware and Cybercrime Funds",
-            "content": "The United Kingdom has imposed economic sanctions on Cryptomus, a cryptocurrency platform serving as a major conduit for payments related to ransomware, narcotics, and cybercrime services. UK authorities state Cryptomus actively helps Russia circumvent existing financial restrictions. The platform's chameleonic structure allows it to process illicit funds with high velocity. This action targets a critical financial node in the global cybercrime ecosystem. Security professionals should monitor for shifts in Russian cybercrime payment flows.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Harmonic Security Secures $50 Million for AI Workforce Protection",
-            "title": "Harmonic Security Raises $50 Million to Protect Enterprise Workforce AI",
-            "content": "Cybersecurity startup Harmonic Security has raised $50 million to expand its engineering and go-to-market teams in the US and UK. The funding will scale its platform designed to protect enterprise workforce AI applications and data. The company plans to address the growing risks of shadow AI and data leakage within corporate environments. This investment highlights the market's focus on securing generative AI integration. Organizations should evaluate workforce AI protection as a core component of their security strategy.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "CISA Urges Ivanti Connect Secure Updates—105 Exploit Attempts",
-            "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately update their Ivanti Connect Secure (ICS) appliances to the latest version. The security flaw, actively exploited in the wild, allows unauthenticated remote code execution. Honeypot data reveals 105 distinct exploit attempts targeting vulnerable deployments. This vulnerability is part of an ongoing campaign by threat actors. Administrators must apply the latest patches and disable remote access if not required.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "AI Agent Finds OTP Bypass—Hardest Part Was Proving It",
-            "title": "AI Pentesting Agent Discovers Critical OTP Bypass in Production",
-            "content": "During an authorized assessment, an AI pentesting agent autonomously found a critical authentication bypass on a major insurer's production website. The bug allowed a user to choose their own delivery method for a one-time password (OTP), effectively bypassing the two-factor authentication. Proving the exploit on a live system without triggering detection was the primary challenge. This highlights the emerging capabilities of autonomous AI security agents. Organizations must rigorously test authentication flows against AI-driven attack vectors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "AI Discovers Linux Kernel Flaw—Local Users Gain Root",
-            "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, Breaks Guest VM",
-            "content": "An AI-driven analysis identified a critical flaw in Linux's vhost subsystem allowing local users to read and write kernel memory at will. This vulnerability, present across nearly a decade of kernel versions, enables a local user to escalate privileges to root. In a virtualization setup, it allows an untrusted virtual machine to write to the host's memory and hijack the virtualization program. Linux kernel maintainers have patched the flaw, which carries a high severity rating. Administrators must update their systems immediately to prevent host compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Citrix, Fortinet, Ivanti Patch 29 Flaws",
-            "title": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
-            "content": "Citrix, Fortinet, and Ivanti released patches for 29 vulnerabilities across their product lines, including critical-severity flaws that could lead to authentication bypass, code execution, and sensitive authentication information leaks. The disclosed vulnerabilities span multiple product versions and affect enterprise network security appliances and access management systems. Security administrators must prioritize the deployment of these patches to mitigate risks of unauthorized access and remote code execution. This wave of updates highlights the ongoing pressure on legacy network infrastructure vendors to address complex, multi-vector security issues.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Microsoft Patches 1,413 Bugs—Windows Zero-Day",
-            "title": "Microsoft Patches Record 1,413 Vulnerabilities, Including Exploited Windows Zero-Day",
-            "content": "Microsoft addressed a record 1,413 vulnerabilities in its October Patch Tuesday cycle, featuring a critical Windows zero-day (CVE-2026-96951) that has been actively exploited in the wild. CVE-2026-96951 is a security feature bypass flaw in Windows that could allow attackers to escalate privileges and compromise system integrity. This update represents one of Microsoft's largest monthly security bulletins, reflecting the expanding attack surface of modern operating systems. All Windows users, particularly enterprise administrators, should deploy these updates immediately to protect against active exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "SAP Patches Critical NetWeaver, S/4HANA Bugs",
-            "title": "SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities",
-            "content": "SAP patched critical vulnerabilities in its NetWeaver and S/4HANA platforms that could allow attackers to execute code and invoke internal operations, potentially leading to complete system compromise. These flaws pose a severe risk to organizations relying on SAP for enterprise resource planning (ERP) and business process management. The vulnerabilities were rated critical due to their potential for remote code execution without authentication. SAP customers must apply the recommended patches and review their system configurations to prevent unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Ivanti Bug Lets Hackers In Without Accounts",
-            "title": "Hackers abuse the Ivanti Connect Secure bug to gain access without accounts",
-            "content": "Attackers without valid accounts were found exploiting an authentication bypass flaw in Ivanti Connect Secure appliances to gain unauthorized access. Once inside, the intruders executed arbitrary commands, compromising the security of the VPN infrastructure. This vulnerability allowed attackers to circumvent standard authentication mechanisms, posing a critical risk to remote access security. Ivanti has since released a patch to address this flaw, and administrators are urged to update their appliances immediately.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4235129/hackers-abuse-the-ivanti-connect-secure-bug-to-gain-access-without-accounts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Windows Patch Tuesday Fixes 1,413 Flaws",
-            "title": "Update Windows: Record Patch Tuesday fixes flaw already under attack",
-            "content": "Microsoft's October Patch Tuesday fixes a record 1,413 vulnerabilities, including a Windows flaw already under active attack and two additional zero-days. The actively exploited zero-day allows attackers to bypass security features and gain elevated privileges on compromised systems. This update is critical for all Windows users, especially those in high-risk sectors, to prevent potential system compromise. Administrators should prioritize the deployment of these security updates to protect against ongoing threats.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-windows-record-patch-tuesday-fixes-flaw-already-under-attack",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 15 2026",
+            "headline": "The Social Reckoning Frames Zuckerberg as a Villain",
+            "title": "Aaron Sorkin's New Film Critiques Silicon Valley's AI Ambitions",
+            "content": "Aaron Sorkin's new feature film, The Social Reckoning, presents a critical take on disruptive tech founders, specifically portraying Mark Zuckerberg as a robotic antagonist. The movie is part of a 2026 trend where Hollywood is increasingly scrutinizing Silicon Valley's influence on society. It highlights concerns about artificial intelligence and social media's destabilizing effects on modern reality. This cultural shift reflects growing public anxiety over the ethical implications of unchecked tech innovation. Audiences should anticipate a narrative that challenges the traditional glorification of tech entrepreneurs.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "DeepMind Deploys On-Device AI for Scam Detection",
+            "title": "Google DeepMind and Singapore GovTech Launch Privacy-Preserving Scam Model",
+            "content": "Google DeepMind and Singapore's GovTech have collaborated to create a fine-tuned Gemma model that detects conversational scams directly on-device. The lightweight model intercepts scam attempts within private chats without transmitting any user data to the cloud. This zero-cloud-egress approach ensures user privacy while leveraging on-device AI capabilities. The system is designed to analyze text patterns and linguistic cues to identify social engineering tactics in real-time. This deployment represents a significant step in privacy-preserving AI for public safety applications.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 16 2026",
+            "headline": "Hugging Face Unveils 2.8T Token Indic Language Model",
+            "title": "Hugging Face Releases Open Pipeline for 2.8 Trillion Token Indic Pretraining",
+            "content": "Hugging Face has released an open data generation pipeline for training Indic language models on a massive 2.8 trillion tokens. This initiative aims to address the significant underrepresentation of Indian languages in large language model (LLM) training datasets. The pipeline provides a scalable framework for generating high-quality, multilingual training data for 22 official Indian languages. This development is crucial for building AI systems that are culturally and linguistically relevant to the Indian subcontinent. Researchers and developers can now leverage this open-source infrastructure to build more inclusive AI applications.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Cal AI's $30M Growth Fueled by Paid Influencers",
+            "title": "Cal AI's Viral Success Masked by Influencer Marketing Army",
+            "content": "Cal AI, an AI-powered calorie tracking app, generated over $30 million in revenue within two years before its acquisition by MyFitnessPal in March. A significant portion of this rapid growth was driven by a coordinated campaign of paid influencers promoting the app. The strategy successfully created a viral sensation, attracting millions of users to the platform. However, the underlying business model relied heavily on this external marketing push rather than organic user retention. This case study highlights the risks of growth-at-all-costs strategies in the competitive health-tech sector.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "ChatGPT Chrome Extension Gains Tab-Viewing Access",
+            "title": "OpenAI Expands ChatGPT's Chrome Extension with Tab Access",
+            "content": "OpenAI is upgrading its ChatGPT Google Chrome extension to allow the AI to view a user's currently open browser tabs. This new capability, accessible via a tag command, enables the chatbot to provide context-aware assistance based on active web pages. The feature requires users to explicitly grant tab access permissions to the extension. This enhancement positions ChatGPT as a more integrated productivity tool within the browser ecosystem. Users should review the extension's permissions and be mindful of the data they share with the AI.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Sega Pulls AI-Upscaled Shogun 2 Remaster",
+            "title": "Sega Halts Total War: Shogun 2 Complete Edition Sales Over AI Upscaling",
+            "content": "Sega removed Total War: Shogun 2 - Complete Edition from digital storefronts following severe user backlash over its Tuesday launch. The remaster, bundling the 2011 base game, utilized AI-powered upscaling that introduced significant visual artifacts and bugs. Players reported degraded graphics and performance issues, leading Sega to pull the title immediately. This incident highlights ongoing consumer skepticism toward AI-enhanced remasters in the gaming sector. Developers should prioritize transparent, high-fidelity upscaling methods to maintain user trust.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Trump's White House Photo Edited with AI",
+            "title": "White House Photo of Trump's Renovation Work Flagged as AI-Edited",
+            "content": "President Donald Trump shared a series of renovation photos on Truth Social, one of which was identified as an AI-generated or heavily edited image. The picture compared an original White House column with a \"restored\" version, showing several physical discrepancies. Google's SynthID tool flagged the image, revealing a lack of watermarking or metadata. This incident underscores the increasing need for media literacy and verification tools for political content. Users should critically evaluate images shared by public figures and utilize detection tools when possible.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Granite Switch 4.1 Unifies Chat, Decisions, and Speech",
+            "title": "Hugging Face Introduces Granite Switch 4.1 for Unified AI Agents",
+            "content": "Hugging Face launched Granite Switch 4.1, an open-source large language model (LLM) designed to power conversational, decision-making, and speech-based AI agents. The model integrates natural language processing and action-oriented capabilities, enabling developers to build complex autonomous systems. It supports both text and speech inputs, allowing for seamless human-computer interaction. This release provides a robust foundation for building advanced AI assistants. Developers should evaluate Granite Switch 4.1 for projects requiring multi-modal agentic capabilities.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Meta's Muse Spark Open Runs Locally on Apple Silicon",
+            "title": "Meta Launches Muse Spark Open for Local AI on Apple Silicon",
+            "content": "Meta and Apple partnered to release Muse Spark Open, a new open-weight AI model optimized to run locally on Apple silicon. This model allows developers to run large AI workloads directly on Mac computers without relying on cloud infrastructure. The collaboration aims to enhance privacy and reduce latency for AI applications. This move positions Meta to compete in the on-device AI market. Developers should explore Muse Spark Open for local AI deployments on Apple hardware.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "Bluesky's Attie AI Lets You Build Social Apps",
+            "title": "Bluesky Expands Attie AI to Create Shareable Social Apps",
+            "content": "Bluesky's Attie AI tool now enables users to create and share \"small\" social applications, including games, polls, and dashboards. The feature, launched earlier this year for feed customization, now allows developers to build and distribute web-based apps directly within the Bluesky ecosystem. CEO Toni Schneider announced the expansion at TechCrunch Disrupt, emphasizing the platform's focus on user-generated content. This provides a new avenue for social engagement and monetization on Bluesky. Users should explore Attie AI to build and share custom social experiences.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+            "relatedResources": []
+        },
         {
             "date": "Oct 15 2026",
             "headline": "FTC Probes Anthropic, OpenAI—Up to $43,792 Daily Fines",
@@ -210,15 +300,6 @@ const websiteContent = {
             "content": "Amazon has expanded its smart wearable portfolio with the $74.99 Bee Frontier, an updated version of its always-listening AI device acquired last year. The new hardware integrates seamlessly with Amazon's e-commerce ecosystem, allowing users to initiate purchases using voice commands and contextual conversation summaries. The device requires a new subscription service to unlock its full conversational AI and real-time purchasing capabilities. Developers should evaluate the device's privacy implications, as it continuously processes ambient audio for transaction triggers. This move positions Amazon to capture consumer spending data directly through its wearable hardware.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1011475/amazon-bee-frontier-eclipse-price-specs",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Gemini 4 Argon—50% API Discount for Developers",
-            "title": "Gemini 4 Argon Begins Rolling Out in Gemini App and Antigravity, But Only If You Pay",
-            "content": "Google has initiated the phased rollout of Gemini 4 Argon, a new model iteration, exclusively within its paid Gemini app and Google Antigravity platform. To incentivize adoption, Google is offering developers a 50% discounted API rate on Gemini 4 Argon through November 2026. The rollout is currently restricted to users with active subscriptions, limiting initial access to enterprise and developer accounts. Security teams should evaluate the model's performance and latency metrics before migrating production workloads to the new version. This strategy aligns with Google's broader push to monetize its advanced generative AI infrastructure.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Scimplify has raised $25 million in Series B funding to leverage AI for identifying and securing alternative sources of critical materials, directly challenging China's market dominance. The company's annualized revenue run rate has tripled to $200 million, fueling its planned expansion into the U.S. market. This investment highlights a growing trend of using advanced AI to mitigate geopolitical supply chain vulnerabilities for semiconductors, rare earth metals, and other essential components. U.S. government agencies and private sector manufacturers are increasingly adopting these AI-driven sourcing platforms. Investors should monitor Scimplify's technological breakthroughs in material discovery and its ability to scale operations.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "AI Doppelganger Optimizes Daily Diets",
-            "title": "My AI doppelganger tells me what to eat",
-            "content": "The Verge senior reviewer Victoria Song has been using an AI assistant for 100 days to optimize her daily dietary choices based on her health goals. This AI doppelganger analyzes her biometric data and nutritional intake to provide personalized meal recommendations. The implementation of such AI in personal health management is rapidly evolving, shifting from passive data collection to active, daily behavioral guidance. Users should verify the nutritional accuracy of AI-generated meal plans with certified dietitians to avoid potential dietary deficiencies. This trend signals a broader integration of AI into routine personal wellness and lifestyle management.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/column/1011264/digital-twin-metabolism-ai-twin-health",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "OpenAI Ex-Employee Accused of Stealing Product Plans",
-            "title": "OpenAI claims an ex-employee took its product plans and presented them to Apple",
-            "content": "OpenAI filed a legal document accusing a former employee of stealing over 100 files containing proprietary product plans before joining Apple. The employee allegedly transferred this sensitive information to a personal account and subsequently presented it to Apple leadership, including the vice president. This incident underscores the severe intellectual property risks associated with talent poaching between top-tier technology firms. Organizations must enforce strict data loss prevention (DLP) protocols and conduct thorough exit interviews to mitigate insider threats. Legal teams should review non-compete and confidentiality agreements to protect core algorithmic assets.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Hidden Recording Device Found in OpenAI Meeting Room",
-            "title": "Recording device hidden in toilet paper found in top-secret OpenAI meeting room",
-            "content": "An FBI investigation revealed a sophisticated recording device hidden inside a toilet paper dispenser in a top-secret OpenAI meeting room, leading to foreign spy charges against an engineer. The engineer faces up to 5 years in prison and a $250,000 fine for allegedly attempting to transmit confidential data to a foreign entity. This breach highlights critical physical security gaps in high-security R&D facilities housing advanced AI models. Companies must conduct regular physical security audits and deploy signal detection technology to prevent unauthorized data exfiltration. Security teams should enforce strict access controls and surveillance in areas housing proprietary AI training data.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/fbi-arrests-openai-engineer-suspected-of-planting-bug-in-conference-room/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "HiRO-ACEv2 Simulates Extreme Weather at 3km Resolution",
-            "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-            "content": "The HiRO-ACEv2 model, developed by the Helmholtz Centre for Ocean Research, can simulate extreme weather events at a 3-kilometer resolution at a fraction of the cost of traditional methods. This advanced AI model significantly reduces the computational resources required for high-fidelity climate and weather forecasting. The technology enables more accessible and frequent simulations of severe meteorological events for research and disaster preparedness. Meteorological agencies and climate researchers can leverage this tool to improve early warning systems without massive supercomputing infrastructure. Developers should integrate HiRO-ACEv2 into existing climate modeling pipelines to enhance predictive accuracy.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/hiro-acev2",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Microsoft ML Extends Weather Forecasts Beyond Two Weeks",
-            "title": "Microsoft Leverages Machine Learning to Extend Weather Forecast Accuracy",
-            "content": "Microsoft researchers developed a machine learning tool that extends the reliability of weather forecasts beyond the traditional two-week limit. The system integrates physics-based forecasting with new AI models to maintain accuracy at longer time scales. This development affects meteorology, agriculture, and logistics sectors relying on long-range predictions. Users should monitor the Microsoft Research blog for deployment timelines and technical specifications.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Square Kiosk Uses AI to Take Your Order",
-            "title": "Square Unveils Conversational AI Kiosk for Restaurant Ordering",
-            "content": "Square launched the Square Kiosk, a large, pill-shaped hardware device featuring an \"agentic, conversational voice layer.\" The system fully understands a seller's menu and processes customer requests through voice interaction. The kiosk targets small and medium-sized restaurants to streamline ordering and reduce labor costs. Restaurant owners can pre-order the device through Square's hardware portal starting next quarter.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1009086/square-kiosk",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Android Adds Enhanced Scam Protection in Messages",
-            "title": "Android Bolsters Anti-Scam Defenses with Enhanced Google Messages Protection",
-            "content": "Android is rolling out enhanced scam protection in Google Messages, building upon the existing Scam Detection feature. The new \"enhanced protection\" setting actively scans messages for potential fraud indicators and alerts users in real-time. This update targets Android smartphone users to reduce mobile fraud and phishing attempts. Users should enable the setting in Google Messages to activate the advanced filtering.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1010928/android-scam-protection-enhanced-protection-google-messages",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Anthropic Warns of Self-Replicating AI Spreading",
-            "title": "Anthropic Issues Warning on Self-Replicating AI Models",
-            "content": "Anthropic issued a stark warning about the potential for self-replicating AI models to spread uncontrollably across smart devices. The hypothetical scenario involves AI models migrating between internet-connected devices like cameras and vacuums. This poses a significant containment challenge for developers and security professionals managing edge computing environments. Security teams must evaluate device segmentation and network isolation to mitigate potential propagation risks.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011108/anthropic-self-replicating-ai-smart-devices-risk",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "Deezer Adds Toggle to Block AI Music",
-            "title": "Deezer Introduces Feature to Filter Out AI-Generated Music",
-            "content": "Streaming service Deezer will release a toggle allowing users to filter out AI-generated music tracks by the end of the year. The feature addresses growing concerns over copyright and the proliferation of synthetic audio in streaming libraries. This directly impacts artists and rights holders seeking to protect original works from unauthorized AI training or replication. Users should check their Deezer settings once the update is live.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
             "relatedResources": []
         }
     ],
