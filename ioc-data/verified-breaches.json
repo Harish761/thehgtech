@@ -7149,6 +7149,25 @@
       "Description": "In August 2025, over 1M unique email addresses appeared in a breach allegedly obtained from Italian fashion designer Giglio. The data also included names, phone numbers and physical addresses. Giglio did not respond to repeated attempts to disclose the incident."
     }
   ],
+  "gites-de-france.com": [
+    {
+      "Name": "GitesDeFrance",
+      "Title": "Gîtes de France",
+      "BreachDate": "2026-05-16",
+      "AddedDate": "2026-10-18T04:50:13Z",
+      "PwnCount": 117574,
+      "DataClasses": [
+        "Booking details",
+        "Email addresses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2026, the French holiday rental network <a href=\"https://www.cyberattaque.org/gites-de-france-les-reservations-de-389-000-clients-dans-une-fuite-de-donnees/\" target=\"_blank\" rel=\"noopener\">Gîtes de France suffered a data breach</a> affecting some of its departmental branches. The incident exposed hundreds of thousands of customer records, including 118k unique email addresses alongside names, phone numbers, postal addresses and booking details."
+    }
+  ],
   "givesendgo.com": [
     {
       "Name": "GiveSendGo",
