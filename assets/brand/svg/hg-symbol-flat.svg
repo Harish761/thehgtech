@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 99" width="82" height="99" fill="none">
+  <g id="hg-symbol-flat">
+
+    <!-- Pure 2D Flat vector without 3D bevels -->
+    <polygon points="0,24 15,16 15,82 0,74" fill="#FFFFFF"/>
+    <polygon points="28,7 41,0 41,25 28,32" fill="#FFFFFF"/>
+    <polygon points="28,62 41,55 41,98 28,91" fill="#FFFFFF"/>
+    <polygon points="20,44 41,32 81,10 81,24 41,46 20,52" fill="#DA2228"/>
+    <path d="M 56,55 L 81,42 L 81,75 L 48,93 L 48,80 L 68,70 L 68,62 L 56,69 Z" fill="#DA2228"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="redAppGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5242A"/>
+      <stop offset="50%" stop-color="#D72228"/>
+      <stop offset="100%" stop-color="#8A1418"/>
+    </linearGradient>
+  </defs>
+  <!-- Red squircle background -->
+  <rect width="512" height="512" rx="115" fill="url(#redAppGrad)"/>
+  <rect width="512" height="512" rx="115" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <!-- Monochrome white monogram -->
+  <g transform="translate(133, 107.5) scale(3.0)">
+
+    <polygon points="0,24 2,23 2,76 0,75" fill="#CBD5E1"/>
+    <polygon points="2,23 15,16 15,82 2,76" fill="#FFFFFF"/>
+
+    <polygon points="28,7 30,6 30,31 28,32" fill="#CBD5E1"/>
+    <polygon points="30,6 41,0 41,25 30,31" fill="#FFFFFF"/>
+
+    <polygon points="28,62 30,61 30,92 28,93" fill="#CBD5E1"/>
+    <polygon points="30,61 41,55 41,98 30,92" fill="#FFFFFF"/>
+
+    <polygon points="41,32 81,10 81,13 41,35" fill="#CBD5E1"/>
+    <polygon points="20,44 41,32 81,10 81,24 41,46 20,52" fill="#FFFFFF"/>
+
+    <polygon points="56,53 81,39 81,42 56,56" fill="#CBD5E1"/>
+    <path d="M 56,55 
+             L 81,42 
+             L 81,75 
+             L 48,93 
+             L 48,80 
+             L 68,70 
+             L 68,62 
+             L 56,69 
+             Z" 
+          fill="#FFFFFF"/>
+  </g>
+</svg>

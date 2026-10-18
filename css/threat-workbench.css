@@ -1382,15 +1382,58 @@ body.threat-intel-page .header .m-theme-toggle {
     margin-bottom: 3.5rem;
 }
 
-.footer-brand {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, var(--ti-accent-blue), #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.85rem;
+.footer-brand-logo-link {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1.25rem;
+    line-height: 1;
+    transition: opacity 0.2s ease;
+}
+
+.footer-brand-logo-link:hover {
+    opacity: 0.88;
+}
+
+.footer-logo-img {
+    height: 48px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    border: none !important;
+    background: transparent !important;
+}
+
+.header .logo-img,
+.m-header .logo-img,
+.ti-brand-badge-icon {
+    border: none !important;
+}
+
+.footer-logo-img.logo-dark {
+    display: block;
+}
+
+.footer-logo-img.logo-light {
+    display: none;
+}
+
+[data-theme="light"] .footer-logo-img.logo-dark,
+body.light-mode .footer-logo-img.logo-dark {
+    display: none;
+}
+
+[data-theme="light"] .footer-logo-img.logo-light,
+body.light-mode .footer-logo-img.logo-light {
+    display: block;
+}
+
+.ti-brand-badge-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    height: 15px;
+    width: auto;
 }
 
 .footer-desc {
@@ -1487,5 +1530,32 @@ body.threat-intel-page .header .m-theme-toggle {
         max-width: none;
     }
 }
+
+/* HG-BRAND-IDENTITY-V1: Header Wordmark Brand Hierarchy */
+.header .logo-text,
+.m-header .logo-text {
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    display: inline-flex;
+    align-items: center;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+}
+
+.logo-text-base {
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.logo-text-red {
+    color: #DA2228;
+}
+
+[data-theme="light"] .logo-text-base,
+body.light-mode .logo-text-base {
+    color: #0F172A;
+}
 /* /HG-THREAT-INTEL-V1 */
+
 

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TheHGTech — Brand Identity &amp; Asset Validation Sheet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090B;
+      --card-bg: #121216;
+      --border: #222228;
+      --border-subtle: #1A1A20;
+      --text: #F4F4F5;
+      --text-muted: #8E8E93;
+      --brand-red: #DA2228;
+      --brand-red-bright: #E5242A;
+      --brand-red-dark: #7A1418;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      padding: 40px 24px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+
+    header.doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      background: rgba(218, 34, 40, 0.15);
+      color: #FF5A5F;
+      border: 1px solid rgba(218, 34, 40, 0.35);
+    }
+
+    .meta-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    section.brand-section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      padding: 12px 18px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .card-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.05);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .preview-stage {
+      padding: 36px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      position: relative;
+    }
+
+    .preview-stage.dark-bg {
+      background: #0A0A0C;
+    }
+
+    .preview-stage.light-bg {
+      background: #FFFFFF;
+      color: #0F172A;
+    }
+
+    .preview-stage.grid-bg-dark {
+      background: #0A0A0C;
+      background-image: 
+        radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+
+    .preview-stage.grid-bg-light {
+      background: #FAFAFB;
+      background-image: 
+        radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+
+    .card-footer {
+      padding: 12px 18px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 12px;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.01);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-footer code {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: #93C5FD;
+    }
+
+    .ref-comparison {
+      border: 1px dashed rgba(218, 34, 40, 0.4);
+      background: rgba(218, 34, 40, 0.04);
+    }
+
+    /* Simulation Styles */
+    .browser-bar {
+      width: 100%;
+      background: #18181C;
+      border-radius: 8px 8px 0 0;
+      border: 1px solid #282830;
+      border-bottom: none;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .browser-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .browser-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-red { background: #FF5F56; }
+    .dot-yellow { background: #FFBD2E; }
+    .dot-green { background: #27C93F; }
+
+    .browser-tab {
+      background: #0A0A0C;
+      padding: 6px 14px;
+      border-radius: 6px 6px 0 0;
+      font-size: 12px;
+      color: #E4E4E7;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-top: 1px solid #33333E;
+    }
+
+    .browser-tab img {
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+    }
+
+    .browser-window {
+      background: #0A0A0C;
+      border: 1px solid #282830;
+      border-radius: 0 0 8px 8px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mock-nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #A1A1AA;
+    }
+
+    .mock-nav-links span.active {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .swatch {
+      background: #18181E;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px;
+    }
+
+    .swatch-color {
+      height: 48px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .swatch-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .swatch-hex {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    img.fluid {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header class="doc-header">
+    <div>
+      <div style="margin-bottom: 8px;"><span class="badge">Production Brand Specification</span></div>
+      <h1>TheHGTech Identity System</h1>
+      <p style="color: var(--text-muted); font-size: 14px; margin-top: 4px;">Fidelity validation and vector asset inspection for approved master brand identity.</p>
+    </div>
+    <div class="meta-tag">
+      Target: thehgtech.com<br>
+      Worktree: thehgtech-branding<br>
+      Branch: feature/brand-identity-v1
+    </div>
+  </header>
+
+  <!-- SECTION 1: REFERENCE MASTER & HORIZONTAL REPRODUCTION -->
+  <section class="brand-section">
+    <div class="section-title">01. Master Reference vs. Vector Reproduction</div>
+    <div class="section-desc">Side-by-side comparison between approved reference crop and reconstructed vector SVG.</div>
+    <div class="grid-2">
+      <div class="card ref-comparison">
+        <div class="card-header">
+          <span class="card-title">Approved Reference (Master Screenshot Crop)</span>
+          <span class="card-badge">Raster Source</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="ref/full_horiz_crop.png" alt="Reference Horizontal Logo" style="max-height: 80px; object-fit: contain;">
+        </div>
+        <div class="card-footer">
+          <span>Source: <code>media_1792337002809_ef3759f6.png</code></span>
+          <span>Original Dimensions</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Primary Horizontal Logo (Vector SVG)</span>
+          <span class="card-badge">Vector Asset</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/logo-horizontal-dark.svg" alt="Recreated Horizontal Logo" style="max-height: 80px; width: auto;">
+        </div>
+        <div class="card-footer">
+          <span>Path: <code>assets/brand/svg/logo-horizontal-dark.svg</code></span>
+          <span>Scalable Vector</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PRIMARY HORIZONTAL LOCKUPS (DARK & LIGHT) -->
+  <section class="brand-section">
+    <div class="section-title">02. Primary Horizontal Logo Variants</div>
+    <div class="section-desc">The primary horizontal lockup with 3D isometric HG monogram, thin vertical divider, and bold sans-serif wordmark.</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Dark Theme Variant</span>
+          <span class="card-badge">Transparent SVG</span>
+        </div>
+        <div class="preview-stage grid-bg-dark">
+          <img src="svg/logo-horizontal-dark.svg" alt="Horizontal Dark" style="max-width: 320px; height: auto;">
+        </div>
+        <div class="card-footer">
+          <span>Dark Surface: <code>#0A0A0C</code></span>
+          <code>svg/logo-horizontal-dark.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Light Theme Variant</span>
+          <span class="card-badge">Transparent SVG</span>
+        </div>
+        <div class="preview-stage grid-bg-light">
+          <img src="svg/logo-horizontal-light.svg" alt="Horizontal Light" style="max-width: 320px; height: auto;">
+        </div>
+        <div class="card-footer">
+          <span>Light Surface: <code>#FFFFFF</code></span>
+          <code>svg/logo-horizontal-light.svg</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STACKED / VERTICAL LOGO LOCKUPS -->
+  <section class="brand-section">
+    <div class="section-title">03. Stacked / Vertical Logo Variants</div>
+    <div class="section-desc">Centered HG monogram above the wordmark with the official tagline: <code>CYBERSECURITY INSIGHTS | TOOLS | INTELLIGENCE</code>.</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Stacked Logo — Dark Theme</span>
+          <span class="card-badge">Hero / Card Use</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/logo-stacked-dark.svg" alt="Stacked Dark" style="max-height: 140px; width: auto;">
+        </div>
+        <div class="card-footer">
+          <span>Tagline: <code>#94A3B8</code></span>
+          <code>svg/logo-stacked-dark.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Stacked Logo — Light Theme</span>
+          <span class="card-badge">Print / Light Surface</span>
+        </div>
+        <div class="preview-stage light-bg">
+          <img src="svg/logo-stacked-light.svg" alt="Stacked Light" style="max-height: 140px; width: auto;">
+        </div>
+        <div class="card-footer">
+          <span>Tagline: <code>#64748B</code></span>
+          <code>svg/logo-stacked-light.svg</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: THE FOUR APPROVED ICON TREATMENTS -->
+  <section class="brand-section">
+    <div class="section-title">04. The Four Approved Icon Treatments</div>
+    <div class="section-desc">Exact reproduction of the four distinct squircle app icon and favicon styles from the master design.</div>
+    <div class="grid-4">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">App Icon (Dark)</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/app-icon-dark.svg" alt="App Icon Dark" style="width: 100px; height: 100px; border-radius: 22px;">
+        </div>
+        <div class="card-footer" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span style="font-size: 11px;">Dark squircle, 3D monogram</span>
+          <code>svg/app-icon-dark.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">App Icon (Red)</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/app-icon-red.svg" alt="App Icon Red" style="width: 100px; height: 100px; border-radius: 22px;">
+        </div>
+        <div class="card-footer" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span style="font-size: 11px;">Red gradient, monochrome white</span>
+          <code>svg/app-icon-red.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Favicon (Dark)</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/favicon-dark.svg" alt="Favicon Dark" style="width: 100px; height: 100px; border-radius: 22px;">
+        </div>
+        <div class="card-footer" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span style="font-size: 11px;">Dark squircle, high-contrast symbol</span>
+          <code>svg/favicon-dark.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Favicon (Light)</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/favicon-light.svg" alt="Favicon Light" style="width: 100px; height: 100px; border-radius: 22px;">
+        </div>
+        <div class="card-footer" style="flex-direction: column; align-items: flex-start; gap: 4px;">
+          <span style="font-size: 11px;">White squircle, dark/red symbol</span>
+          <code>svg/favicon-light.svg</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FAVICON SIZES & BROWSER TAB SIMULATION -->
+  <section class="brand-section">
+    <div class="section-title">05. Favicon Small-Size Legibility Verification</div>
+    <div class="section-desc">Testing 16x16, 32x32, and 48x48 icon clarity and rendering in simulated browser tab chrome.</div>
+    
+    <div class="card" style="margin-bottom: 20px;">
+      <div class="browser-bar">
+        <div class="browser-dots">
+          <div class="browser-dot dot-red"></div>
+          <div class="browser-dot dot-yellow"></div>
+          <div class="browser-dot dot-green"></div>
+        </div>
+        <div class="browser-tab">
+          <img src="favicon/favicon-16x16.png" alt="16px Favicon">
+          <span>TheHGTech — Threat Intelligence &amp; CVE Intelligence</span>
+        </div>
+      </div>
+      <div class="browser-window">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <img src="svg/logo-horizontal-dark.svg" alt="Nav Logo" style="height: 30px;">
+        </div>
+        <div class="mock-nav-links">
+          <span class="active">Threat Intel</span>
+          <span>CVE Tracker</span>
+          <span>Articles</span>
+          <span>Tools</span>
+          <span>Guides</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">16x16 px (Browser Tabs)</span>
+        </div>
+        <div class="preview-stage dark-bg" style="gap: 24px; min-height: 120px;">
+          <div style="text-align: center;">
+            <img src="favicon/favicon-16x16.png" style="width: 16px; height: 16px; image-rendering: -webkit-optimize-contrast;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">1x</div>
+          </div>
+          <div style="text-align: center;">
+            <img src="favicon/favicon-16x16.png" style="width: 32px; height: 32px; image-rendering: pixelated;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">2x Zoom</div>
+          </div>
+          <div style="text-align: center;">
+            <img src="favicon/favicon-16x16.png" style="width: 64px; height: 64px; image-rendering: pixelated;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">4x Zoom</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <code>favicon/favicon-16x16.png</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">32x32 px (Retina Tabs &amp; Bookmarks)</span>
+        </div>
+        <div class="preview-stage dark-bg" style="gap: 24px; min-height: 120px;">
+          <div style="text-align: center;">
+            <img src="favicon/favicon-32x32.png" style="width: 32px; height: 32px;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">1x</div>
+          </div>
+          <div style="text-align: center;">
+            <img src="favicon/favicon-32x32.png" style="width: 64px; height: 64px; image-rendering: pixelated;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">2x Zoom</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <code>favicon/favicon-32x32.png</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">48x48 px (Windows Shortcuts &amp; PWA)</span>
+        </div>
+        <div class="preview-stage dark-bg" style="gap: 24px; min-height: 120px;">
+          <div style="text-align: center;">
+            <img src="favicon/favicon-48x48.png" style="width: 48px; height: 48px;">
+            <div style="font-size: 10px; color: var(--text-muted); margin-top: 6px;">1x</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <code>favicon/favicon-48x48.png</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: STANDALONE HG MONOGRAMS -->
+  <section class="brand-section">
+    <div class="section-title">06. Standalone HG Monogram Variants</div>
+    <div class="section-desc">Versatile standalone symbol for avatars, micro-interactions, watermarks, and footers.</div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">3D Faceted Monogram (Dark)</span>
+          <span class="card-badge">Default</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/hg-symbol.svg" alt="3D Monogram Dark" style="width: 70px; height: auto;">
+        </div>
+        <div class="card-footer">
+          <code>svg/hg-symbol.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Flat 2D Vector Monogram</span>
+          <span class="card-badge">Micro / Print</span>
+        </div>
+        <div class="preview-stage dark-bg">
+          <img src="svg/hg-symbol-flat.svg" alt="Flat Monogram" style="width: 70px; height: auto;">
+        </div>
+        <div class="card-footer">
+          <code>svg/hg-symbol-flat.svg</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">3D Faceted Monogram (Light)</span>
+          <span class="card-badge">Light Surface</span>
+        </div>
+        <div class="preview-stage light-bg">
+          <img src="svg/hg-symbol-light.svg" alt="3D Monogram Light" style="width: 70px; height: auto;">
+        </div>
+        <div class="card-footer">
+          <code>svg/hg-symbol-light.svg</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: SPECIFICATIONS & PALETTE -->
+  <section class="brand-section">
+    <div class="section-title">07. Color Palette &amp; Mathematical Geometry</div>
+    <div class="section-desc">Exact color values and isometric 30° projection rules governing all brand geometry.</div>
+    
+    <div class="swatches">
+      <div class="swatch">
+        <div class="swatch-color" style="background: #DA2228;"></div>
+        <div class="swatch-name">Brand Red</div>
+        <div class="swatch-hex">#DA2228</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #E5242A;"></div>
+        <div class="swatch-name">Red Bright</div>
+        <div class="swatch-hex">#E5242A</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #7A1418;"></div>
+        <div class="swatch-name">Red 3D Facet</div>
+        <div class="swatch-hex">#7A1418</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #FFFFFF;"></div>
+        <div class="swatch-name">Pure White</div>
+        <div class="swatch-hex">#FFFFFF</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #9E9EA4;"></div>
+        <div class="swatch-name">Silver 3D Facet</div>
+        <div class="swatch-hex">#9E9EA4</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #0A0A0C;"></div>
+        <div class="swatch-name">Canvas Dark</div>
+        <div class="swatch-hex">#0A0A0C</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: #0F172A;"></div>
+        <div class="swatch-name">Pillar Light Mode</div>
+        <div class="swatch-hex">#0F172A</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
