@@ -1199,25 +1199,31 @@ def generate_js(data):
                 break
     
     # Sort all IOCs by recency and take the top 100 for the immediate live investigation table
-    all_iocs.sort(key=lambda x: x.get('addedAt', ''), reverse=True)
-    overview_100 = all_iocs[:100]
-    
+    if all_iocs:
+        all_iocs.sort(key=lambda x: x.get('addedAt', ''), reverse=True)
+        overview_100 = all_iocs[:100]
+    else:
+        overview_100 = data.get('overview', [])
+
+    existing_stats = data.get('stats', {})
+    computed_stats = {
+        'totalIOCs': len(all_iocs) if all_iocs else existing_stats.get('totalIOCs', 0),
+        'byType': type_counts if all_iocs else existing_stats.get('byType', type_counts),
+        'byVendor': {v: len(vd.get('iocs', [])) for v, vd in data['vendors'].items()} if all_iocs else existing_stats.get('byVendor', {}),
+        'topMalware': top_malware if all_iocs else existing_stats.get('topMalware', []),
+        'recentIOCs': overview_100[:20],
+        'lastUpdated': data['lastUpdated'],
+        'lastUpdatedFormatted': data['lastUpdatedFormatted'],
+        'lastUpdatedUtc': now_utc.strftime('%Y-%m-%d %H:%M UTC')
+    }
+
     # Assemble comprehensive lightweight payload (< 50 KB)
     lightweight_data = {
         'lastUpdated': data['lastUpdated'],
         'lastUpdatedFormatted': data['lastUpdatedFormatted'],
         'lastUpdatedUtc': now_utc.strftime('%Y-%m-%d %H:%M UTC'),
         'comparisonPeriod': data.get('comparisonPeriod', ''),
-        'stats': {
-            'totalIOCs': len(all_iocs),
-            'byType': type_counts,
-            'byVendor': {v: len(vd.get('iocs', [])) for v, vd in data['vendors'].items()},
-            'topMalware': top_malware,
-            'recentIOCs': overview_100[:20],
-            'lastUpdated': data['lastUpdated'],
-            'lastUpdatedFormatted': data['lastUpdatedFormatted'],
-            'lastUpdatedUtc': now_utc.strftime('%Y-%m-%d %H:%M UTC')
-        },
+        'stats': computed_stats,
         'vendors': {},
         'overview': overview_100,
         'dailySummary': data.get('dailySummary', {}),
@@ -1730,7 +1736,8 @@ def run_daily():
     # Calculate daily summary with loaded IOC data
     summary = generate_daily_summary(vendors_with_iocs, load_history())
     
-    # Update existing data with new summary
+    # Update existing data with new summary and retain loaded IOCs for server-side aggregation
+    existing['vendors'] = vendors_with_iocs
     existing['dailySummary'] = summary
     existing['comparisonPeriod'] = f"{(get_ist_now() - timedelta(days=1)).strftime('%b %d')} – {get_ist_now().strftime('%b %d, %Y')}"
     
