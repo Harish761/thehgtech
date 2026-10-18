@@ -250,9 +250,19 @@ def fetch_vendor_iocs(vendor_name, config):
         print(f"    ✓ Got {len(iocs)} IOCs from {vendor_name}")
         time.sleep(1)  # Rate limiting
         
+    # HG-THREAT-INTEL-V1: RESILIENCE | FALLBACK_TO_LKG_ON_FETCH_ERROR | 2026-10-18
     except Exception as e:
         print(f"    ✗ Failed {vendor_name}: {e}")
+        if previous_iocs:
+            print(f"    ↳ Retaining {len(previous_iocs)} previous IOCs for {vendor_name}")
+            iocs = list(previous_iocs)
     
+    # If the fetch succeeded but returned 0 IOCs (e.g. temporary upstream dropout), keep previous
+    if not iocs and previous_iocs:
+        print(f"    ⚠️ Warning: {vendor_name} returned 0 IOCs; preserving {len(previous_iocs)} previous IOCs")
+        iocs = list(previous_iocs)
+    # /HG-THREAT-INTEL-V1
+
     # Prune IOCs older than 7 days before returning
     iocs = prune_old_iocs(iocs, retention_days=7)
     print(f"    ✓ Returning {len(iocs)} IOCs after 7-day retention pruning")
@@ -262,186 +272,187 @@ def fetch_vendor_iocs(vendor_name, config):
 # ──────────────────────────────────────────────────────────────
 # Existing Parsing Functions
 # ──────────────────────────────────────────────────────────────
+# HG-THREAT-INTEL-V1: FIX | SANITIZE_PARSERS_AND_REMOVE_DEAD_CODE | 2026-10-18
 def parse_phishing_url(url, now, config, vendor, ioc_history):
     """Parse phishing URL (OpenPhish)"""
+    clean_url = url.strip(' "\'\t\r\n')
     return {
         'type': 'url',
-        'indicator': defang_indicator(url, 'url'),
+        'indicator': defang_indicator(clean_url, 'url'),
         'description': 'Active phishing URL',
-        'timestamp': format_timestamp(now),
+        'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['phishing', 'live'],
-        'addedAt': ioc_history.get(url, now.isoformat()),
-        'campaign': detect_campaign(url, 'phishing')
+        'addedAt': ioc_history.get(clean_url, now.isoformat()),
+        'campaign': detect_campaign(clean_url, 'phishing'),
+        'confidence': 'High (Active Feed)'
     }
 
 def parse_malware_bazaar(csv_line, now, config, vendor, ioc_history):
-    """Parse Malware Bazaar CSV line"""
+    """Parse Malware Bazaar CSV line with robust field sanitization"""
     try:
-        parts = csv_line.split(',')
-        if len(parts) < 8:
+        reader = csv.reader([csv_line], skipinitialspace=True)
+        parts = next(reader)
+        if len(parts) < 9:
             return None
         
-        # CSV format: timestamp,sha256_hash,md5_hash,sha1_hash,reporter,file_name,file_type,mime_type,signature,clamav,vtpercent,imphash,ssdeep,tlsh
-        sha256 = parts[1].strip('"') if len(parts) > 1 else ''
-        file_type = parts[6].strip('"') if len(parts) > 6 else 'unknown'
-        signature = parts[8].strip('"') if len(parts) > 8 else 'Unknown malware'
+        # CSV format: first_seen_utc,sha256_hash,md5_hash,sha1_hash,reporter,file_name,file_type,mime_type,signature,...
+        first_seen_src = parts[0].strip(' "\'\t\r\n')
+        sha256 = parts[1].strip(' "\'\t\r\n')
+        file_type = parts[6].strip(' "\'\t\r\n') if len(parts) > 6 else 'unknown'
+        signature = parts[8].strip(' "\'\t\r\n') if len(parts) > 8 else 'Unknown malware'
         
-        if not sha256:
+        if not sha256 or len(sha256) < 32:
             return None
             
+        campaign_name = signature if signature.lower() not in ('n/a', '', 'unknown', 'none', 'unknown malware') else 'Unassigned Malware'
+        
         return {
             'type': 'hash',
-            'indicator': sha256,  # Full hash for VirusTotal/analysis
-            'description': f'{signature} ({file_type})',
-            'timestamp': format_timestamp(now),
+            'indicator': sha256,  # Pristine SHA256 without quotes or spaces
+            'description': f'{campaign_name} ({file_type})' if file_type != 'unknown' else campaign_name,
+            'timestamp': first_seen_src or now.strftime('%Y-%m-%d %H:%M UTC'),
             'source': vendor,
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-            'tags': ['malware', 'hash'],
+            'tags': ['malware', 'hash'] + ([file_type] if file_type not in ('unknown', 'none', '') else []),
             'addedAt': ioc_history.get(sha256, now.isoformat()),
-            'campaign': signature
+            'campaign': campaign_name,
+            'confidence': 'High (Community Verified)'
         }
-    except Exception as e:
+    except Exception:
         return None
 
 def parse_spamhaus(ip_range, now, config, vendor, ioc_history):
     """Parse Spamhaus DROP CIDR range"""
+    clean_range = ip_range.strip(' "\'\t\r\n')
     return {
         'type': 'ip-range',
-        'indicator': ip_range,
+        'indicator': clean_range,
         'description': 'Hijacked/leased IP range (criminal control)',
-        'timestamp': format_timestamp(now),
+        'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['hijacked', 'criminal-network'],
-        'addedAt': ioc_history.get(ip_range, now.isoformat()),
-        'campaign': 'Spamhaus DROP List'
+        'addedAt': ioc_history.get(clean_range, now.isoformat()),
+        'campaign': 'Spamhaus DROP List',
+        'confidence': 'High (Authoritative)'
     }
 
 def parse_cins_army(ip, now, config, vendor, ioc_history):
     """Parse CINS Army malicious IP"""
+    clean_ip = ip.strip(' "\'\t\r\n')
     return {
         'type': 'ip',
-        'indicator': defang_indicator(ip, 'ip'),
+        'indicator': defang_indicator(clean_ip, 'ip'),
         'description': 'Confirmed malicious IP',
-        'timestamp': format_timestamp(now),
+        'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['malicious-ip', 'attacker'],
-        'addedAt': ioc_history.get(ip, now.isoformat()),
-        'campaign': 'CINS Threat List'
+        'addedAt': ioc_history.get(clean_ip, now.isoformat()),
+        'campaign': 'CINS Threat List',
+        'confidence': 'High'
     }
 
 def parse_blocklist(ip, now, config, vendor, ioc_history):
     """Parse Blocklist.de IP"""
+    clean_ip = ip.strip(' "\'\t\r\n')
     return {
         'type': 'ip',
-        'indicator': defang_indicator(ip, 'ip'),
+        'indicator': defang_indicator(clean_ip, 'ip'),
         'description': 'SSH brute-force attacker',
-        'timestamp': format_timestamp(now),
+        'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['ssh', 'brute-force'],
-        'addedAt': ioc_history.get(ip, now.isoformat()),
-        'campaign': 'SSH Attacks'
+        'addedAt': ioc_history.get(clean_ip, now.isoformat()),
+        'campaign': 'SSH Attacks',
+        'confidence': 'Medium (Automated Report)'
     }
-
 
 def parse_feodo_tracker(ip, now, config, vendor, ioc_history):
     """Parse Feodo Tracker botnet C2 IP"""
+    clean_ip = ip.strip(' "\'\t\r\n')
     return {
         'type': 'ip',
-        'indicator': defang_indicator(ip, 'ip'),
+        'indicator': defang_indicator(clean_ip, 'ip'),
         'description': 'Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)',
-        'timestamp': format_timestamp(now),
+        'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
         'tags': ['botnet', 'c2', 'banking-trojan'],
-        'addedAt': ioc_history.get(ip, now.isoformat()),
-        'campaign': 'Banking Malware C2'
+        'addedAt': ioc_history.get(clean_ip, now.isoformat()),
+        'campaign': 'Banking Malware C2',
+        'confidence': 'High (Active C2)'
     }
 
 def parse_ssl_blacklist(csv_line, now, config, vendor, ioc_history):
     """Parse SSL Blacklist CSV line"""
     try:
-        parts = csv_line.split(',')
+        reader = csv.reader([csv_line], skipinitialspace=True)
+        parts = next(reader)
         if len(parts) < 3:
             return None
         
-        listing_date = parts[0].strip()
-        sha1_fingerprint = parts[1].strip()
-        reason = parts[2].strip() if len(parts) > 2 else 'Malicious SSL certificate'
+        listing_date = parts[0].strip(' "\'\t\r\n')
+        sha1_fingerprint = parts[1].strip(' "\'\t\r\n')
+        reason = parts[2].strip(' "\'\t\r\n') if len(parts) > 2 else 'Malicious SSL certificate'
         
-        if not sha1_fingerprint:
+        if not sha1_fingerprint or len(sha1_fingerprint) < 30:
             return None
             
         return {
             'type': 'ssl-cert',
-            'indicator': sha1_fingerprint,  # Don't defang SSL fingerprints
+            'indicator': sha1_fingerprint,
             'description': f'Malicious SSL certificate - {reason}',
-            'timestamp': format_timestamp(now),
+            'timestamp': listing_date or now.strftime('%Y-%m-%d %H:%M UTC'),
             'source': vendor,
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': ['ssl', 'certificate', 'c2'],
             'addedAt': ioc_history.get(sha1_fingerprint, now.isoformat()),
-            'campaign': reason.split()[0] if reason else 'Unknown'  # Extract malware family
+            'campaign': reason.split()[0].strip(' "\'\t\r\n') if reason else 'SSL C2 Infrastructure',
+            'confidence': 'High'
         }
-
-
-    
-    except Exception as e:
-        # print(f"Error parsing SSL Blacklist line: {e}")
+    except Exception:
         return None
-
-    return {
-        'type': 'ip',
-        'indicator': defang_indicator(ip, 'ip'),
-        'description': f'Malicious SSL cert (port {port})' if port else 'Malicious SSL certificate',
-        'timestamp': format_timestamp(now),
-        'source': vendor,
-        'sourceUrl': config['website'],
-        'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': ['ssl', 'c2'],
-        'addedAt': get_added_at(url),
-        'campaign': 'SSL C2 Infrastructure'
-    }
 
 def parse_urlhaus_csv(csv_line, now, config, vendor, ioc_history):
     """Parse URLhaus CSV line"""
     try:
-        # CSV: id,dateadded,url,url_status,last_online,threat,tags,urlhaus_link,reporter
-        reader = csv.reader([csv_line])
+        reader = csv.reader([csv_line], skipinitialspace=True)
         parts = next(reader)
-        
-        if len(parts) < 3:
+        if len(parts) < 6:
             return None
             
-        url = parts[2]
+        dateadded = parts[1].strip(' "\'\t\r\n') if len(parts) > 1 else ''
+        url = parts[2].strip(' "\'\t\r\n')
         if not url.startswith('http'):
             return None
             
-        tags = parts[6].split(',') if len(parts) > 6 and parts[6] else []
-        threat = parts[5] if len(parts) > 5 else 'malware_download'
+        threat = parts[5].strip(' "\'\t\r\n') if len(parts) > 5 else 'malware_download'
+        tags_raw = parts[6].strip(' "\'\t\r\n') if len(parts) > 6 else ''
+        tags = [t.strip(' "\'\t\r\n') for t in tags_raw.split(',') if t.strip(' "\'\t\r\n') and t.strip().lower() != 'none']
         
         return {
             'type': 'url',
             'indicator': defang_indicator(url, 'url'),
             'description': f'Malicious URL - {threat}',
-            'timestamp': format_timestamp(now),
+            'timestamp': dateadded or now.strftime('%Y-%m-%d %H:%M UTC'),
             'source': vendor,
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': ['malware', 'url'] + [t for t in tags if t],
             'addedAt': ioc_history.get(url, now.isoformat()),
-            'campaign': threat
+            'campaign': threat if threat.lower() not in ('none', 'unknown') else 'Malware Delivery',
+            'confidence': 'High'
         }
     except Exception:
         return None
@@ -449,21 +460,21 @@ def parse_urlhaus_csv(csv_line, now, config, vendor, ioc_history):
 def parse_threatfox_csv(csv_line, now, config, vendor, ioc_history):
     """Parse ThreatFox CSV line"""
     try:
-        # CSV: first_seen_utc,ioc_id,ioc_value,ioc_type,threat_type,fk_malware,malware_alias,malware_printable,last_seen_utc,confidence_level,reference,tags,anonymous,reporter
-        reader = csv.reader([csv_line])
+        reader = csv.reader([csv_line], skipinitialspace=True)
         parts = next(reader)
-        
-        if len(parts) < 4:
+        if len(parts) < 5:
             return None
             
-        ioc_value = parts[2]
-        ioc_type_raw = parts[3]
-        threat_type = parts[4]
-        malware = parts[5]
-        malware_printable = parts[7] if len(parts) > 7 else malware
-        tags = parts[11].split(',') if len(parts) > 11 and parts[11] else []
+        first_seen_utc = parts[0].strip(' "\'\t\r\n')
+        ioc_value = parts[2].strip(' "\'\t\r\n')
+        ioc_type_raw = parts[3].strip(' "\'\t\r\n')
+        threat_type = parts[4].strip(' "\'\t\r\n')
+        malware = parts[5].strip(' "\'\t\r\n') if len(parts) > 5 else 'Unknown'
+        malware_printable = parts[7].strip(' "\'\t\r\n') if len(parts) > 7 and parts[7].strip(' "\'\t\r\n') else malware
+        confidence_level = parts[9].strip(' "\'\t\r\n') if len(parts) > 9 else '100'
+        tags_raw = parts[11].strip(' "\'\t\r\n') if len(parts) > 11 else ''
+        tags = [t.strip(' "\'\t\r\n') for t in tags_raw.split(',') if t.strip(' "\'\t\r\n') and t.strip().lower() != 'none']
         
-        # Map ThreatFox types
         type_map = {
             'url': 'url',
             'domain': 'domain',
@@ -473,34 +484,35 @@ def parse_threatfox_csv(csv_line, now, config, vendor, ioc_history):
         }
         ioc_type = type_map.get(ioc_type_raw, 'url')
         
-        # For IP:port, extract just the IP
         if ':' in ioc_value and ioc_type == 'ip':
             ioc_value = ioc_value.split(':')[0]
             
+        clean_campaign = malware_printable if malware_printable.lower() not in ('unknown', 'none', '') else detect_campaign(ioc_value, threat_type)
+        
         return {
             'type': ioc_type,
             'indicator': defang_indicator(ioc_value, ioc_type),
-            'description': f"{malware} - {threat_type}" if threat_type else malware,
-            'timestamp': format_timestamp(now),
+            'description': f"{clean_campaign} ({threat_type})" if threat_type else clean_campaign,
+            'timestamp': first_seen_utc or now.strftime('%Y-%m-%d %H:%M UTC'),
             'source': vendor,
             'sourceUrl': config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-            'tags': generate_tags(ioc_type, malware + ' ' + threat_type, vendor),
+            'tags': generate_tags(ioc_type, clean_campaign + ' ' + threat_type, vendor) + [t for t in tags if t not in ('live', 'malware', 'url')],
             'addedAt': ioc_history.get(ioc_value, now.isoformat()),
-            'campaign': malware if malware != 'Unknown' else detect_campaign(ioc_value, threat_type)
+            'campaign': clean_campaign,
+            'confidence': f"{confidence_level}%" if confidence_level else "High"
         }
     except Exception:
         return None
 
-def parse_threatfox(item, now, config, vendor):
+def parse_threatfox(item, now, config, vendor, ioc_history=None):
     """Parse ThreatFox JSON entry"""
     if not item:
         return None
     
-    ioc_value = item.get('ioc', '')
-    ioc_type_raw = item.get('ioc_type', 'url')
+    ioc_value = item.get('ioc', '').strip(' "\'\t\r\n')
+    ioc_type_raw = item.get('ioc_type', 'url').strip(' "\'\t\r\n')
     
-    # Map ThreatFox types to our types
     type_map = {
         'url': 'url',
         'domain': 'domain',
@@ -510,69 +522,85 @@ def parse_threatfox(item, now, config, vendor):
     }
     ioc_type = type_map.get(ioc_type_raw, 'url')
     
-    malware = item.get('malware', 'Unknown')
-    threat_type = item.get('threat_type', '')
+    malware = item.get('malware', 'Unknown').strip(' "\'\t\r\n')
+    threat_type = item.get('threat_type', '').strip(' "\'\t\r\n')
     
-    # For IP:port, extract just the IP
     if ':' in ioc_value and ioc_type == 'ip':
         ioc_value = ioc_value.split(':')[0]
+    
+    added_time = ioc_history.get(ioc_value, now.isoformat()) if ioc_history else now.isoformat()
+    clean_campaign = malware if malware.lower() != 'unknown' else detect_campaign(ioc_value, threat_type)
     
     return {
         'type': ioc_type,
         'indicator': defang_indicator(ioc_value, ioc_type),
-        'description': f"{malware} - {threat_type}" if threat_type else malware,
-        'timestamp': format_timestamp(now),
+        'description': f"{clean_campaign} - {threat_type}" if threat_type else clean_campaign,
+        'timestamp': item.get('first_seen_utc') or now.strftime('%Y-%m-%d %H:%M UTC'),
         'source': vendor,
         'sourceUrl': config['website'],
         'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
-        'tags': generate_tags(ioc_type, malware + ' ' + threat_type, vendor),
-        'addedAt': get_added_at(url),
-        'campaign': malware if malware != 'Unknown' else detect_campaign(ioc_value, threat_type)
+        'tags': generate_tags(ioc_type, clean_campaign + ' ' + threat_type, vendor),
+        'addedAt': added_time,
+        'campaign': clean_campaign,
+        'confidence': f"{item.get('confidence_level', '100')}%"
     }
 
-def extract_ioc_from_entry(entry, feed_name, now, config):
-    """Extract IOC from RSS entry (URLhaus)"""
+def extract_ioc_from_entry(entry, feed_name, now, config, ioc_history=None):
+    """Extract IOC from RSS entry"""
     title = entry.get('title', '').strip()
     link = entry.get('link', '')
     desc = entry.get('description', '') or entry.get('summary', '')
     
     all_text = title + ' ' + desc
     
-    # URLhaus RSS typically has the malicious URL directly
     url_match = re.search(r'https?://[^\s<>"\']+', all_text)
     if url_match:
-        indicator = url_match.group(0).rstrip('.,;:)')
+        indicator = url_match.group(0).rstrip('.,;:)').strip(' "\'\t\r\n')
         clean_desc = clean_html(desc)[:150] if desc else "Malicious URL"
+        added_time = ioc_history.get(indicator, now.isoformat()) if ioc_history else now.isoformat()
         
         return {
             'type': 'url',
             'indicator': defang_indicator(indicator, 'url'),
             'description': clean_desc,
-            'timestamp': format_timestamp(now),
+            'timestamp': now.strftime('%Y-%m-%d %H:%M UTC'),
             'source': feed_name,
             'sourceUrl': link or config['website'],
             'analysisTime': now.strftime('%Y-%m-%d %H:%M IST'),
             'tags': generate_tags('url', clean_desc, feed_name),
-            'addedAt': get_added_at(url),
-            'campaign': detect_campaign(indicator, clean_desc)
+            'addedAt': added_time,
+            'campaign': detect_campaign(indicator, clean_desc),
+            'confidence': 'High'
         }
     return None
+# /HG-THREAT-INTEL-V1
 
 # ──────────────────────────────────────────────────────────────
 # IOC Persistence Functions (7-Day Retention)
 # ──────────────────────────────────────────────────────────────
 
+# HG-THREAT-INTEL-V1: FIX | VENDOR_SLUG_NORMALIZATION | 2026-10-18
 def load_previous_ioc_data(vendor_name):
     """Load previous IOC data for persistence tracking"""
-    filename = f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json"
-    if os.path.exists(filename):
-        try:
-            with open(filename, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data.get('iocs', [])
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"Warning: Could not load previous data for {vendor_name}: {e}")
+    slug = vendor_name.lower().replace(' ', '-').replace('.', '-')
+    candidates = [
+        f"ioc-data/{slug}.json",
+        f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json",
+        f"{slug}.json",
+        f"{vendor_name.lower().replace(' ', '-')}.json"
+    ]
+    for filename in candidates:
+        if os.path.exists(filename):
+            try:
+                with open(filename, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    iocs = data.get('iocs', [])
+                    if iocs:
+                        return iocs
+            except (json.JSONDecodeError, IOError) as e:
+                print(f"Warning: Could not load previous data for {vendor_name} from {filename}: {e}")
     return []
+# /HG-THREAT-INTEL-V1
 
 def build_ioc_history(previous_iocs):
     """Build lookup of indicator → first_seen timestamp for persistence"""
@@ -614,31 +642,45 @@ def prune_old_iocs(iocs, retention_days=7):
 # ──────────────────────────────────────────────────────────────
 # Helper Functions
 # ──────────────────────────────────────────────────────────────
+# HG-THREAT-INTEL-V1: FIX | REFINED_HELPERS_AND_CAMPAIGN_DETECTION | 2026-10-18
 def format_timestamp(dt):
-    """Format timestamp relative to now"""
-    return 'just now'  # JavaScript will handle relative time display
+    """Format timestamp in UTC ISO format"""
+    if not dt:
+        return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    try:
+        return dt.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    except Exception:
+        return datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
 
 def defang_indicator(indicator, ioc_type):
-    """Defang IOC to prevent accidental clicks"""
+    """Defang IOC to prevent accidental clicks while preserving indicator integrity"""
+    if not indicator:
+        return ''
+    clean = str(indicator).strip(' "\'\t\r\n')
     if ioc_type == 'url':
-        return indicator.replace('http://', 'hxxp://').replace('https://', 'hxxps://').replace('.', '[.]')
-    elif ioc_type == 'ip':
-        return indicator.replace('.', '[.]')
-    elif ioc_type == 'domain':
-        return indicator.replace('.', '[.]')
-    return indicator
+        return clean.replace('http://', 'hxxp://').replace('https://', 'hxxps://').replace('.', '[.]')
+    elif ioc_type in ('ip', 'domain'):
+        return clean.replace('.', '[.]')
+    return clean
+
+def refang_indicator(indicator, ioc_type=None):
+    """Refang IOC for external analysis (VirusTotal, AbuseIPDB, URLhaus)"""
+    if not indicator:
+        return ''
+    clean = str(indicator).strip(' "\'\t\r\n')
+    return clean.replace('hxxps://', 'https://').replace('hxxp://', 'http://').replace('[.]', '.')
 
 def clean_html(text):
     """Remove HTML tags from text"""
-    import re
-    return re.sub(r'<[^>]+>', '', text).strip()
+    if not text:
+        return ''
+    return re.sub(r'<[^>]+>', '', str(text)).strip(' "\'\t\r\n')
 
 def generate_tags(ioc_type, description, source):
-    """Generate relevant tags for IOC"""
+    """Generate relevant tags for IOC, omitting literal 'None' and generic noise"""
     tags = []
-    desc_lower = description.lower()
+    desc_lower = str(description).lower()
     
-    # Type-based tags
     if ioc_type in ['url', 'domain']:
         if 'phish' in desc_lower:
             tags.append('phishing')
@@ -649,42 +691,49 @@ def generate_tags(ioc_type, description, source):
             tags.append('c2')
         if 'bot' in desc_lower:
             tags.append('botnet')
+    elif ioc_type == 'hash':
+        tags.append('malware')
+        tags.append('hash')
     
-    # Add live tag
-    tags.append('live')
-    
-    return tags[:4]  # Max 4 tags
+    tags.append('verified')
+    return tags[:4]
 
 def detect_campaign(indicator, description):
-    """Detect campaign/malware family"""
-    desc_lower = (indicator + ' ' + description).lower()
+    """Detect campaign/malware family using word-boundary matching to prevent false positives"""
+    text = (str(indicator) + ' ' + str(description)).lower()
     
-    # Known malware families
+    # Filter out MIME types and generic text artifacts
+    if any(m in text for m in ('text/plain', 'application/octet-stream', 'text/html', 'application/x-dosexec')) or text.strip() in ('n/a', 'none', 'unknown'):
+        return 'Unassigned Malware'
+    
+    # Known malware families with word boundary checking
     malware_families = [
         'emotet', 'trickbot', 'qakbot', 'cobalt strike', 'dridex',
         'icedid', 'hancitor', 'ursnif', 'formbook', 'agenttesla',
-        'remcos', 'njrat', 'asyncrat', 'redline', 'vidar', 'raccoon'
+        'remcos', 'njrat', 'asyncrat', 'redline', 'vidar', 'raccoon',
+        'mirai', 'gafgyt', 'mozi', 'nanocore', 'quasar', 'lumma'
     ]
     
     for family in malware_families:
-        if family in desc_lower:
+        if re.search(r'\b' + re.escape(family) + r'\b', text):
             return family.title()
     
     # Generic categorization
-    if 'phish' in desc_lower:
-        if 'booking' in desc_lower:
+    if 'phish' in text:
+        if 'booking' in text:
             return 'Booking.com Phishing'
-        elif 'bank' in desc_lower or 'paypal' in desc_lower:
+        elif 'bank' in text or 'paypal' in text:
             return 'Financial Phishing'
         return 'Generic Phishing'
-    elif 'bot' in desc_lower:
-        return 'Botnet Activity'
-    elif 'ssh' in desc_lower:
+    elif 'botnet' in text or 'c2' in text:
+        return 'Botnet C2'
+    elif 'ssh' in text:
         return 'SSH Attacks'
-    elif 'ssl' in desc_lower or 'cert' in desc_lower:
+    elif 'ssl' in text or 'cert' in text:
         return 'SSL C2 Infrastructure'
     
-    return 'Unknown Campaign'
+    return 'General Threat'
+# /HG-THREAT-INTEL-V1
 
 # ──────────────────────────────────────────────────────────────
 # File Management
@@ -905,7 +954,8 @@ def generate_daily_ai_summary(vendors_data, snapshot_metrics):
 
 Focus on: Key trends, notable threats, severity distribution, and actionable insights. Be specific and technical."""
     
-    summary = call_groq_api(prompt, model="llama-3.3-70b-versatile")
+# HG-THREAT-INTEL-V1: FIX | SAFELY_ROUTE_AI_CALLS | 2026-10-18
+    summary = call_ai_router(prompt)
     if summary:
         return {
             'date': get_ist_now().strftime('%Y-%m-%d'),
@@ -922,8 +972,8 @@ Focus on: Key trends, notable threats, severity distribution, and actionable ins
     return None
 
 def generate_weekly_ai_analysis(history):
-    """Generate weekly AI analysis using Gemini"""
-    if not GROQ_AVAILABLE:
+    """Generate weekly AI analysis using AI Router"""
+    if not AI_AVAILABLE:
         return None
     
     snapshots = history.get('dailySnapshots', [])
@@ -953,7 +1003,8 @@ Provide a JSON response with:
 
 Be specific, technical, and focus on cybersecurity implications."""
     
-    response = call_groq_api(prompt, model="llama-3.3-70b-versatile")
+    response = call_ai_router(prompt)
+# /HG-THREAT-INTEL-V1
     if response:
         try:
             # Try to parse JSON response
@@ -1110,49 +1161,90 @@ def save_vendor_json_files(vendors_data):
     
     return saved_files
 
+# HG-THREAT-INTEL-V1: PERF | PRECOMPUTE_SERVER_SIDE_METRICS | 2026-10-18
 def generate_js(data):
-    """Generate lightweight JavaScript file with metadata only (full IOCs in GitHub Releases)"""
+    """Generate lightweight JavaScript file with server-side aggregated metrics and top 100 recent IOCs"""
+    now = get_ist_now()
+    now_utc = datetime.now(timezone.utc)
     
-    # Create lightweight version with metadata only
+    # Collect all retained IOCs across vendors for server-side aggregation
+    all_iocs = []
+    for vendor_data in data['vendors'].values():
+        all_iocs.extend(vendor_data.get('iocs', []))
+    
+    # Pre-calculate IOC type distribution
+    type_counts = {'url': 0, 'ip': 0, 'hash': 0, 'domain': 0, 'ssl-cert': 0, 'ip-range': 0}
+    for ioc in all_iocs:
+        ioc_type = ioc.get('type', 'unknown')
+        type_counts[ioc_type] = type_counts.get(ioc_type, 0) + 1
+    
+    # Pre-calculate clean top malware families
+    campaigns = detect_campaigns(all_iocs)
+    top_malware = []
+    ignored_campaign_names = {
+        'unknown', 'unknown malware', 'n/a', 'none', 'generic phishing', 
+        'malware_download', 'cins threat list', 'spamhaus drop list', 
+        'ssh attacks', 'banking malware c2', 'ssl c2 infrastructure', 
+        'text/plain', 'general threat', 'unassigned malware'
+    }
+    for camp_name, camp_data in sorted(campaigns.items(), key=lambda x: x[1]['count'], reverse=True):
+        clean_name = str(camp_name).strip(' "\'\t\r\n')
+        if clean_name and clean_name.lower() not in ignored_campaign_names:
+            top_malware.append({
+                'name': clean_name,
+                'count': camp_data['count'],
+                'types': camp_data.get('types', [])
+            })
+            if len(top_malware) >= 15:
+                break
+    
+    # Sort all IOCs by recency and take the top 100 for the immediate live investigation table
+    all_iocs.sort(key=lambda x: x.get('addedAt', ''), reverse=True)
+    overview_100 = all_iocs[:100]
+    
+    # Assemble comprehensive lightweight payload (< 50 KB)
     lightweight_data = {
         'lastUpdated': data['lastUpdated'],
         'lastUpdatedFormatted': data['lastUpdatedFormatted'],
+        'lastUpdatedUtc': now_utc.strftime('%Y-%m-%d %H:%M UTC'),
         'comparisonPeriod': data.get('comparisonPeriod', ''),
-        'vendors': {}
+        'stats': {
+            'totalIOCs': len(all_iocs),
+            'byType': type_counts,
+            'byVendor': {v: len(vd.get('iocs', [])) for v, vd in data['vendors'].items()},
+            'topMalware': top_malware,
+            'recentIOCs': overview_100[:20],
+            'lastUpdated': data['lastUpdated'],
+            'lastUpdatedFormatted': data['lastUpdatedFormatted'],
+            'lastUpdatedUtc': now_utc.strftime('%Y-%m-%d %H:%M UTC')
+        },
+        'vendors': {},
+        'overview': overview_100,
+        'dailySummary': data.get('dailySummary', {}),
+        'snapshotMetrics': data.get('snapshotMetrics', {})
     }
     
-    # For each vendor, include metadata but NOT full IOC list
     for vendor_name, vendor_data in data['vendors'].items():
         lightweight_data['vendors'][vendor_name] = {
             'description': vendor_data['description'],
             'website': vendor_data['website'],
             'updateFrequency': vendor_data['updateFrequency'],
-            'iocCount': vendor_data.get('stats', {}).get('total', 0),  # Use stats.total instead of len(iocs)
+            'iocCount': vendor_data.get('stats', {}).get('total', len(vendor_data.get('iocs', []))),
             'iocDataUrl': vendor_data.get('iocDataUrl'),
             'stats': vendor_data.get('stats', {}),
             'types': vendor_data.get('types', []),
             'sampleIndicators': vendor_data.get('sampleIndicators', [])
         }
     
-    # Add overview with top 20 most recent IOCs (for homepage)
-    all_iocs = []
-    for vendor_data in data['vendors'].values():
-        all_iocs.extend(vendor_data.get('iocs', []))
-    all_iocs.sort(key=lambda x: x.get('addedAt', ''), reverse=True)
-    lightweight_data['overview'] = all_iocs[:20]
-    
-    # Add daily summary and snapshot metrics
-    lightweight_data['dailySummary'] = data.get('dailySummary', {})
-    lightweight_data['snapshotMetrics'] = data.get('snapshotMetrics', {})
-    
     js_content = f"""// Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: {get_ist_now().isoformat()} IST
+// Updated: {now.isoformat()} IST ({now_utc.strftime('%Y-%m-%d %H:%M UTC')})
 // Sources: {', '.join(data['vendors'].keys())}
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {json.dumps(lightweight_data, indent=4)};
 """
     return js_content
+# /HG-THREAT-INTEL-V1
 
 # ──────────────────────────────────────────────────────────────
 # Data Processing
@@ -1509,15 +1601,19 @@ def run_hourly():
     
     # Fetch from each vendor
     for vendor_name, config in VENDORS.items():
-        # Load existing IOCs for this vendor
-        existing_vendor = existing.get('vendors', {}).get(vendor_name, {})
-        current_iocs = remove_expired_iocs(existing_vendor.get('iocs', []))
+        # HG-THREAT-INTEL-V1: LKG | PERSIST_FROM_IOC_DATA_STORAGE | 2026-10-18
+        previous_iocs = load_previous_ioc_data(vendor_name)
+        if not previous_iocs:
+            existing_vendor = existing.get('vendors', {}).get(vendor_name, {})
+            previous_iocs = existing_vendor.get('iocs', [])
+        current_iocs = remove_expired_iocs(previous_iocs)
         
         # Fetch new IOCs
         new_iocs = fetch_vendor_iocs(vendor_name, config)
         
         # Combine and deduplicate (NO CAP - store unlimited IOCs!)
         all_iocs = deduplicate_iocs(new_iocs + current_iocs)
+        # /HG-THREAT-INTEL-V1
         
         # Store vendor data
         vendors_data[vendor_name] = {
@@ -1605,9 +1701,16 @@ def run_daily():
         return
     
     # Load IOC data from ioc-data files
+    # HG-THREAT-INTEL-V1: FIX | VENDOR_SLUG_NORMALIZATION_DAILY | 2026-10-18
     vendors_with_iocs = {}
     for vendor_name in existing['vendors'].keys():
-        ioc_file = f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json"
+        slug = vendor_name.lower().replace(' ', '-').replace('.', '-')
+        candidates = [
+            f"ioc-data/{slug}.json",
+            f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json",
+            f"{slug}.json"
+        ]
+        ioc_file = next((f for f in candidates if os.path.exists(f)), candidates[0])
         if os.path.exists(ioc_file):
             try:
                 with open(ioc_file, 'r') as f:
@@ -1622,6 +1725,7 @@ def run_daily():
                 vendors_with_iocs[vendor_name] = existing['vendors'][vendor_name]
         else:
             vendors_with_iocs[vendor_name] = existing['vendors'][vendor_name]
+    # /HG-THREAT-INTEL-V1
     
     # Calculate daily summary with loaded IOC data
     summary = generate_daily_summary(vendors_with_iocs, load_history())
