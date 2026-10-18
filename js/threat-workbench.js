@@ -76,6 +76,11 @@
 
         renderLedgerTable();
         renderFeedDirectory(rawData.vendors);
+
+        // Defensive Client Recovery: If overview is empty, auto-fetch an initial batch from primary online feeds
+        if (state.allOverviewIOCs.length === 0 && rawData.vendors) {
+            autoRecoverLiveLedger(rawData.vendors);
+        }
     }
 
     function calculateTotalFromVendors(vendors) {
@@ -418,6 +423,40 @@
         }).join('');
     }
 
+    function resolveFeedUrl(url) {
+        if (!url) return '';
+        if (window.location.hostname !== 'thehgtech.com' && url.startsWith('http')) {
+            return `/ioc-data/${url.split('/').pop()}`;
+        }
+        return url;
+    }
+
+    // Defensive fallback: asynchronous recovery if overview array was empty
+    async function autoRecoverLiveLedger(vendors) {
+        const priorityFeeds = ['OpenPhish', 'Malware Bazaar', 'ThreatFox', 'URLhaus'];
+        const targetVendorName = priorityFeeds.find((name) => vendors[name] && vendors[name].iocDataUrl) || Object.keys(vendors)[0];
+        if (!targetVendorName) return;
+
+        const vendor = vendors[targetVendorName];
+        const statusEl = document.getElementById('tiLedgerCount');
+        if (statusEl) statusEl.textContent = 'Synchronizing live threat indicators...';
+
+        try {
+            const fetchUrl = resolveFeedUrl(vendor.iocDataUrl);
+            const res = await fetch(fetchUrl);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            const iocs = (data.iocs || []).slice(0, 100).map(normalizeIOCRecord);
+            if (iocs.length > 0 && state.allOverviewIOCs.length === 0) {
+                state.allOverviewIOCs = iocs;
+                state.filteredIOCs = [...iocs];
+                renderLedgerTable();
+            }
+        } catch (e) {
+            console.warn('[ThreatWorkbench] Auto-recovery fetch error:', e);
+        }
+    }
+
     // Exposed on-demand feed explorer
     window.exploreFeedOnDemand = async function (vendorName) {
         const rawData = window.threatIntelData;
@@ -434,7 +473,8 @@
         }
 
         try {
-            const res = await fetch(vendor.iocDataUrl);
+            const fetchUrl = resolveFeedUrl(vendor.iocDataUrl);
+            const res = await fetch(fetchUrl);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const data = await res.json();
             const iocs = (data.iocs || []).map(normalizeIOCRecord);
