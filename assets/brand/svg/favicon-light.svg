@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+
+  <defs>
+    <linearGradient id="darkPillarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B0F19"/>
+    </linearGradient>
+    <linearGradient id="redDiagGradLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C91B21"/>
+      <stop offset="60%" stop-color="#DA2228"/>
+      <stop offset="100%" stop-color="#E5242A"/>
+    </linearGradient>
+    <linearGradient id="redGGradLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C91B21"/>
+      <stop offset="100%" stop-color="#DA2228"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#FFFFFF"/>
+  <rect width="128" height="128" rx="28" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+  <g transform="translate(31.2, 24.4) scale(0.8)">
+
+    <!-- 1. Left Pillar of H -->
+    <polygon points="0,24 2,23 2,76 0,75" fill="#475569"/>
+    <polygon points="2,23 15,16 15,82 2,76" fill="url(#darkPillarGrad)"/>
+
+    <!-- 2. Middle Pillar Upper -->
+    <polygon points="28,7 30,6 30,31 28,32" fill="#475569"/>
+    <polygon points="30,6 41,0 41,25 30,31" fill="url(#darkPillarGrad)"/>
+
+    <!-- 3. Middle Pillar Lower -->
+    <polygon points="28,62 30,61 30,92 28,93" fill="#475569"/>
+    <polygon points="30,61 41,55 41,98 30,92" fill="url(#darkPillarGrad)"/>
+
+    <!-- 4. Red Diagonal Crossbar -->
+    <polygon points="41,32 81,10 81,13 41,35" fill="#7A1418"/>
+    <polygon points="20,44 41,32 81,10 81,24 41,46 20,52" fill="url(#redDiagGradLight)"/>
+
+    <!-- 5. Red G -->
+    <polygon points="56,53 81,39 81,42 56,56" fill="#711217"/>
+    <path d="M 56,55 
+             L 81,42 
+             L 81,75 
+             L 48,93 
+             L 48,80 
+             L 68,70 
+             L 68,62 
+             L 56,69 
+             Z" 
+          fill="url(#redGGradLight)"/>
+  </g>
+</svg>

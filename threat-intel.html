@@ -136,9 +136,11 @@
     }
     </script>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
 
     <!-- Fonts -->
     <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -212,9 +214,9 @@
 <header class="m-header m-only">
     <div class="m-header__logo">
         <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
@@ -280,9 +282,9 @@
     <div class="header-content">
         <div class="logo">
             <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                <span class="logo-text">TheHGTech</span>
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
             </a>
         </div>
 
@@ -724,6 +726,7 @@
                 </div>
                 <div class="ti-hero__content">
                     <div class="ti-hero__pill">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" class="ti-brand-badge-icon" width="13" height="16">
                         <span class="ti-hero__pill-dot"></span>
                         Live Autonomous Ingestion
                     </div>
@@ -1071,7 +1074,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">TheHGTech</div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
                     <p class="footer-desc">Your trusted source for cutting-edge insights at the intersection of
                         cybersecurity and artificial intelligence.</p>
                     <div class="social-links">
