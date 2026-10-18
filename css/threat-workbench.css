@@ -1,0 +1,1491 @@
+/* ==========================================================================
+   THEHGTECH THREAT INTELLIGENCE WORKBENCH — APPLE DESIGN SYSTEM
+   HG-THREAT-INTEL-V1: UI | APPLE_DESIGN_SYSTEM_STYLESHEET | 2026-10-18
+   Calm, minimal, authoritative threat intelligence design language.
+   Inspired by Apple Human Interface Guidelines and CVE Tracker benchmark.
+   ========================================================================== */
+
+:root {
+    /* Apple Typography Stack */
+    --ti-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, sans-serif;
+    --ti-font-mono: "SF Mono", ui-monospace, "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+
+    /* Apple Pro Dark Studio Palette (Default Dark Mode) */
+    --ti-bg-base: #0a0a0c;
+    --ti-bg-surface: #141416;
+    --ti-bg-elevated: #1c1c1e;
+    --ti-bg-glass: rgba(20, 20, 22, 0.82);
+    --ti-bg-hover: rgba(255, 255, 255, 0.04);
+    --ti-bg-selected: rgba(10, 132, 255, 0.12);
+
+    /* Apple System Fills & Separators */
+    --ti-fill-tertiary: rgba(118, 118, 128, 0.22);
+    --ti-fill-secondary: rgba(120, 120, 128, 0.32);
+    --ti-fill-quaternary: rgba(116, 116, 128, 0.12);
+    --ti-separator: rgba(255, 255, 255, 0.08);
+    --ti-separator-subtle: rgba(255, 255, 255, 0.045);
+    --ti-border-strong: rgba(255, 255, 255, 0.14);
+
+    /* Shadows & Glows */
+    --ti-card-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06), 0 4px 20px rgba(0, 0, 0, 0.35);
+    --ti-drawer-shadow: -12px 0 40px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+    /* Apple Ink Hierarchy */
+    --ti-text-primary: #f5f5f7;
+    --ti-text-secondary: #86868b;
+    --ti-text-muted: #6e6e73;
+    --ti-text-dim: #515156;
+
+    /* Semantic Status Accents */
+    --ti-accent-blue: #0a84ff;
+    --ti-accent-blue-soft: rgba(10, 132, 255, 0.14);
+    --ti-accent-crimson: #ff453a;
+    --ti-accent-crimson-soft: rgba(255, 69, 58, 0.14);
+    --ti-accent-amber: #ff9f0a;
+    --ti-accent-amber-soft: rgba(255, 159, 10, 0.14);
+    --ti-accent-emerald: #30d158;
+    --ti-accent-emerald-soft: rgba(48, 209, 88, 0.14);
+    --ti-accent-indigo: #5e5ce6;
+    --ti-accent-indigo-soft: rgba(94, 92, 230, 0.16);
+
+    /* Geometry & Timing */
+    --ti-radius-xs: 6px;
+    --ti-radius-sm: 8px;
+    --ti-radius-md: 12px;
+    --ti-radius-lg: 16px;
+    --ti-radius-pill: 980px;
+    --ti-ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Apple Daylight Mode (Light Theme) */
+html[data-theme="light"],
+body.light-mode {
+    --ti-bg-base: #f5f5f7;
+    --ti-bg-surface: #ffffff;
+    --ti-bg-elevated: #fafafa;
+    --ti-bg-glass: rgba(255, 255, 255, 0.86);
+    --ti-bg-hover: rgba(0, 0, 0, 0.028);
+    --ti-bg-selected: rgba(0, 113, 227, 0.08);
+
+    --ti-fill-tertiary: rgba(118, 118, 128, 0.12);
+    --ti-fill-secondary: rgba(118, 118, 128, 0.18);
+    --ti-fill-quaternary: rgba(116, 116, 128, 0.06);
+    --ti-separator: rgba(0, 0, 0, 0.08);
+    --ti-separator-subtle: rgba(0, 0, 0, 0.04);
+    --ti-border-strong: rgba(0, 0, 0, 0.14);
+
+    --ti-card-shadow: 0 1px 3px rgba(0, 0, 0, 0.03), 0 6px 18px rgba(0, 0, 0, 0.04);
+    --ti-drawer-shadow: -8px 0 32px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+    --ti-text-primary: #1d1d1f;
+    --ti-text-secondary: #515154;
+    --ti-text-muted: #86868b;
+    --ti-text-dim: #a1a1a6;
+
+    --ti-accent-blue: #0071e3;
+    --ti-accent-blue-soft: rgba(0, 113, 227, 0.10);
+    --ti-accent-crimson: #e11d48;
+    --ti-accent-crimson-soft: rgba(225, 29, 72, 0.09);
+    --ti-accent-amber: #d97706;
+    --ti-accent-amber-soft: rgba(217, 119, 6, 0.10);
+    --ti-accent-emerald: #16a34a;
+    --ti-accent-emerald-soft: rgba(22, 163, 74, 0.09);
+    --ti-accent-indigo: #4f46e5;
+    --ti-accent-indigo-soft: rgba(79, 70, 229, 0.10);
+}
+
+/* ==========================================================================
+   PAGE BASE & LAYOUT WRAPPER
+   ========================================================================== */
+
+body.threat-intel-page {
+    background-color: var(--ti-bg-base) !important;
+    background-image: radial-gradient(ellipse 80% 40% at 50% -5%, rgba(10, 132, 255, 0.04), transparent 70%) !important;
+    color: var(--ti-text-primary) !important;
+    font-family: var(--ti-font-sans) !important;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scoped Apple Translucent Navigation Bar (Desktop & Mobile) */
+body.threat-intel-page .header,
+body.threat-intel-page .m-header {
+    background: rgba(14, 14, 16, 0.78) !important;
+    backdrop-filter: saturate(180%) blur(20px) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    border-bottom: 1px solid var(--ti-separator) !important;
+    box-shadow: none !important;
+}
+
+body.threat-intel-page.light-mode .header,
+html[data-theme="light"] body.threat-intel-page .header,
+body.threat-intel-page.light-mode .m-header,
+html[data-theme="light"] body.threat-intel-page .m-header {
+    background: rgba(251, 251, 253, 0.82) !important;
+}
+
+body.threat-intel-page .header .header-content,
+body.threat-intel-page .header .nav-container {
+    max-width: 1320px !important;
+    height: 52px !important;
+    margin: 0 auto !important;
+    padding: 0 clamp(1.25rem, 3.5vw, 2.5rem) !important;
+}
+
+body.threat-intel-page .header .logo,
+body.threat-intel-page .header .logo-text,
+body.threat-intel-page .m-header__logo span {
+    background: none !important;
+    -webkit-text-fill-color: var(--ti-text-primary) !important;
+    color: var(--ti-text-primary) !important;
+    font-family: var(--ti-font-sans) !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.022em !important;
+    text-shadow: none !important;
+}
+
+body.threat-intel-page .header .logo-icon {
+    display: none !important;
+}
+
+body.threat-intel-page .header .nav a,
+body.threat-intel-page .header .nav-dropdown-trigger {
+    font-family: var(--ti-font-sans) !important;
+    font-size: 0.8125rem !important;
+    font-weight: 400 !important;
+    color: var(--ti-text-secondary) !important;
+    letter-spacing: -0.008em !important;
+    transition: color 0.15s ease !important;
+}
+
+body.threat-intel-page .header .nav a:hover,
+body.threat-intel-page .header .nav-dropdown-trigger:hover {
+    color: var(--ti-text-primary) !important;
+    text-shadow: none !important;
+}
+
+body.threat-intel-page .header .nav-live-badge,
+body.threat-intel-page .header .nav-new-badge {
+    background: var(--ti-fill-tertiary) !important;
+    color: var(--ti-text-secondary) !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 0.625rem !important;
+    font-weight: 600 !important;
+    padding: 0.1rem 0.42rem !important;
+    border-radius: var(--ti-radius-pill) !important;
+}
+
+body.threat-intel-page .header .m-theme-toggle {
+    background: var(--ti-fill-tertiary) !important;
+    border: 1px solid var(--ti-separator) !important;
+    box-shadow: none !important;
+}
+
+.ti-workbench {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 72px 1.5rem 5rem;
+    position: relative;
+}
+
+/* ==========================================================================
+   HERO SECTION — RESTRAINED AMBIENT CANVAS & METRICS BAR
+   ========================================================================== */
+
+.ti-hero-workbench {
+    position: relative;
+    padding: 6.5rem 1.5rem 3.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: var(--ti-radius-lg);
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    box-shadow: var(--ti-card-shadow);
+    overflow: hidden;
+}
+
+/* Full-Bleed Architectural Background Visual: Multi-Sensor Infrastructure Graph & Campaign Attribution Matrix */
+.ti-hero-visual {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+}
+
+.ti-signal-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-mask-image: radial-gradient(ellipse 98% 92% at 54% 50%, #000 68%, transparent 100%);
+    mask-image: radial-gradient(ellipse 98% 92% at 54% 50%, #000 68%, transparent 100%);
+}
+
+/* 1. Orthographic Telemetry Grid & Zone Framing Brackets */
+.ti-sig-grid line {
+    stroke: var(--ti-separator);
+    stroke-width: 1;
+    opacity: 0.62;
+}
+
+.ti-sig-brackets path {
+    stroke: var(--ti-text-dim);
+    stroke-width: 1.25;
+    fill: none;
+    opacity: 0.82;
+}
+
+.ti-sig-labels text {
+    font-family: var(--ti-font-mono);
+    font-size: 8.5px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    fill: var(--ti-text-muted);
+    opacity: 0.72;
+}
+
+/* 2. Stepped Digital Sensor Waveform Tracks (x=0..620) */
+.ti-sig-tracks path {
+    stroke: var(--ti-border-strong);
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+    fill: none;
+    opacity: 0.85;
+}
+
+.ti-sig-tag {
+    font-family: var(--ti-font-mono);
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    fill: var(--ti-text-secondary);
+}
+
+.ti-sig-dot-muted {
+    fill: var(--ti-text-dim);
+}
+
+.ti-sig-dot--blue {
+    fill: var(--ti-accent-blue);
+}
+
+.ti-sig-dot--amber {
+    fill: var(--ti-accent-amber);
+}
+
+.ti-sig-dot--crimson {
+    fill: var(--ti-accent-crimson);
+}
+
+.ti-sig-reg-bar--indigo {
+    fill: var(--ti-accent-indigo);
+}
+
+/* 3. Multi-Cluster Infrastructure Correlation Lattice Edges (x=620..972) */
+.ti-sig-lattice-edges path,
+.ti-sig-lattice-edges line {
+    stroke: var(--ti-border-strong);
+    stroke-width: 1.15;
+    stroke-linejoin: round;
+    fill: none;
+    opacity: 0.76;
+}
+
+.ti-sig-node-sat {
+    stroke: var(--ti-bg-surface);
+    stroke-width: 1.2;
+}
+
+/* 4. Animated Stepped Waveform & Synaptic Correlation Pulses */
+.ti-sig-pulse {
+    fill: none;
+    stroke-width: 1.85;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.ti-sig-pulse--wave-1,
+.ti-sig-pulse--wave-2,
+.ti-sig-pulse--wave-3,
+.ti-sig-pulse--wave-4 {
+    stroke: var(--ti-text-secondary);
+    opacity: 0.62;
+    stroke-dasharray: 38 400;
+    stroke-dashoffset: 400;
+    animation: tiWaveIn 6.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.ti-sig-pulse--wave-1 {
+    stroke: var(--ti-accent-blue);
+    animation-delay: 0s;
+}
+
+.ti-sig-pulse--wave-2 {
+    stroke: var(--ti-accent-amber);
+    animation-delay: 1.7s;
+}
+
+.ti-sig-pulse--wave-3 {
+    stroke: var(--ti-accent-crimson);
+    animation-delay: 3.4s;
+}
+
+.ti-sig-pulse--wave-4 {
+    stroke: var(--ti-text-secondary);
+    animation-delay: 5.1s;
+}
+
+.ti-sig-pulse--synapse-blue {
+    stroke: var(--ti-accent-blue);
+    stroke-dasharray: 44 300;
+    stroke-dashoffset: 300;
+    animation: tiSynapseTrace 6.8s cubic-bezier(0.4, 0, 0.2, 1) 0.9s infinite;
+}
+
+.ti-sig-pulse--synapse-crimson {
+    stroke: var(--ti-accent-crimson);
+    stroke-dasharray: 44 300;
+    stroke-dashoffset: 300;
+    animation: tiSynapseTrace 6.8s cubic-bezier(0.4, 0, 0.2, 1) 2.9s infinite;
+}
+
+.ti-sig-pulse--synapse-amber {
+    stroke: var(--ti-accent-amber);
+    stroke-dasharray: 44 300;
+    stroke-dashoffset: 300;
+    animation: tiSynapseTrace 6.8s cubic-bezier(0.4, 0, 0.2, 1) 4.8s infinite;
+}
+
+/* 5. Horizontal Matrix Phase Sweep Bar (x=645..945) */
+.ti-sig-matrix-sweep {
+    translate: 0px 0px;
+    animation: tiMatrixHorizontalSweep 10.5s ease-in-out infinite;
+}
+
+.ti-sig-sweep-line {
+    stroke: var(--ti-accent-blue);
+    stroke-width: 1;
+    stroke-dasharray: 3 4;
+    opacity: 0.42;
+}
+
+.ti-sig-sweep-marker {
+    fill: var(--ti-accent-blue);
+    opacity: 0.78;
+}
+
+/* 6. Hexagonal & Octagonal Attribution Topology Nodes */
+.ti-sig-hex-outer {
+    fill: var(--ti-bg-elevated);
+    stroke-width: 1.25;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: tiClusterPulse 6.4s ease-in-out infinite;
+}
+
+.ti-sig-hex--amber {
+    stroke: rgba(255, 159, 10, 0.45);
+}
+
+.ti-sig-hex--crimson {
+    stroke: rgba(255, 69, 58, 0.45);
+    animation-delay: 2.2s;
+}
+
+.ti-sig-hex-inner {
+    fill: var(--ti-fill-quaternary);
+    stroke: var(--ti-border-strong);
+    stroke-width: 1;
+}
+
+.ti-sig-oct-halo {
+    fill: none;
+    stroke: var(--ti-accent-blue);
+    stroke-width: 1.15;
+    stroke-dasharray: 4 4;
+    opacity: 0.42;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: tiClusterPulse 5.6s ease-in-out 1.1s infinite;
+}
+
+.ti-sig-diamond-mid {
+    fill: var(--ti-accent-blue-soft);
+    stroke: rgba(10, 132, 255, 0.4);
+    stroke-width: 1.2;
+}
+
+.ti-sig-hub-core {
+    fill: var(--ti-bg-elevated);
+    stroke: var(--ti-border-strong);
+    stroke-width: 1.3;
+}
+
+/* 7. Defanged IOC Telemetry Register Cards (x=1000..1182) */
+.ti-sig-reg-card {
+    fill: var(--ti-bg-elevated);
+    stroke: var(--ti-border-strong);
+    stroke-width: 1.1;
+    opacity: 0.92;
+}
+
+.ti-sig-reg-title {
+    font-family: var(--ti-font-mono);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    fill: var(--ti-text-primary);
+}
+
+.ti-sig-reg-sub {
+    font-family: var(--ti-font-mono);
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    fill: var(--ti-text-muted);
+}
+
+/* Keyframes for Stepped Waveforms, Synaptic Lattice, and Horizontal Matrix Sweep */
+@keyframes tiWaveIn {
+    0% {
+        stroke-dashoffset: 400;
+        opacity: 0;
+    }
+    14% {
+        opacity: 0.72;
+    }
+    46% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes tiSynapseTrace {
+    0% {
+        stroke-dashoffset: 300;
+        opacity: 0;
+    }
+    16% {
+        opacity: 0.92;
+    }
+    54% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes tiMatrixHorizontalSweep {
+    0%, 100% {
+        translate: -145px 0px;
+    }
+    50% {
+        translate: 145px 0px;
+    }
+}
+
+@keyframes tiClusterPulse {
+    0%, 100% {
+        scale: 1;
+        opacity: 0.85;
+    }
+    50% {
+        scale: 1.12;
+        opacity: 0.42;
+    }
+}
+
+@supports not (translate: 0px) {
+    @keyframes tiMatrixHorizontalSweep {
+        0%, 100% { transform: translateX(-145px); }
+        50% { transform: translateX(145px); }
+    }
+    @keyframes tiClusterPulse {
+        0%, 100% { transform: scale(1); opacity: 0.85; }
+        50% { transform: scale(1.12); opacity: 0.42; }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ti-sig-pulse,
+    .ti-sig-matrix-sweep,
+    .ti-sig-hex-outer,
+    .ti-sig-oct-halo {
+        animation: none !important;
+    }
+}
+
+
+.ti-hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 860px;
+}
+
+.ti-hero__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--ti-radius-pill);
+    background: var(--ti-fill-quaternary);
+    border: 1px solid var(--ti-separator);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--ti-accent-blue);
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+}
+
+.ti-hero__pill-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--ti-accent-emerald);
+    box-shadow: 0 0 8px rgba(48, 209, 88, 0.5);
+    animation: tiPulseDot 2.5s infinite ease-in-out;
+}
+
+@keyframes tiPulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.ti-hero__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: var(--ti-text-primary);
+    margin: 0 0 0.85rem;
+}
+
+.ti-hero__subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    line-height: 1.6;
+    color: var(--ti-text-secondary);
+    margin: 0 0 2rem;
+    max-width: 760px;
+}
+
+/* Metric Chips Strip */
+.ti-metrics-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.ti-metric-chip {
+    background: var(--ti-bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-md);
+    padding: 1rem 1.25rem;
+    transition: transform 0.2s var(--ti-ease-spring), border-color 0.2s ease;
+}
+
+.ti-metric-chip:hover {
+    transform: translateY(-2px);
+    border-color: var(--ti-border-strong);
+}
+
+.ti-metric-chip__label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    color: var(--ti-text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.ti-metric-chip__value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ti-text-primary);
+    font-feature-settings: "tnum" 1;
+}
+
+.ti-metric-chip__sub {
+    font-size: 0.75rem;
+    color: var(--ti-text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   SEGMENTED TOP NAVIGATION TABS
+   ========================================================================== */
+
+.ti-tabs-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--ti-fill-quaternary);
+    padding: 0.35rem;
+    border-radius: var(--ti-radius-pill);
+    border: 1px solid var(--ti-separator);
+    width: fit-content;
+    margin: 0 auto 2.5rem;
+    position: relative;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.ti-tabs-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.ti-tab-btn {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--ti-text-secondary);
+    font-family: var(--ti-font-sans);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.6rem 1.25rem;
+    border-radius: var(--ti-radius-pill);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s var(--ti-ease-spring);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ti-tab-btn:hover {
+    color: var(--ti-text-primary);
+}
+
+.ti-tab-btn.active {
+    background: var(--ti-bg-surface);
+    color: var(--ti-text-primary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    font-weight: 600;
+}
+
+.ti-tab-badge {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--ti-radius-pill);
+    background: var(--ti-fill-secondary);
+    color: var(--ti-text-secondary);
+    font-weight: 600;
+}
+
+.ti-tab-btn.active .ti-tab-badge {
+    background: var(--ti-accent-blue-soft);
+    color: var(--ti-accent-blue);
+}
+
+/* ==========================================================================
+   INTELLIGENCE LEDGER (TAB 1) — SEARCH, FILTERS & TABLE
+   ========================================================================== */
+
+.ti-panel {
+    display: none;
+}
+
+.ti-panel.active {
+    display: block;
+    animation: tiFadeIn 0.3s var(--ti-ease-spring);
+}
+
+@keyframes tiFadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ti-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-md);
+    padding: 0.85rem 1.25rem;
+    box-shadow: var(--ti-card-shadow);
+}
+
+.ti-search-box {
+    position: relative;
+    flex: 1;
+    min-width: 260px;
+}
+
+.ti-search-box input {
+    width: 100%;
+    padding: 0.65rem 1rem 0.65rem 2.4rem;
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-sm);
+    color: var(--ti-text-primary);
+    font-family: var(--ti-font-sans);
+    font-size: 0.9rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.ti-search-box input:focus {
+    outline: none;
+    border-color: var(--ti-accent-blue);
+    box-shadow: 0 0 0 3px var(--ti-accent-blue-soft);
+}
+
+.ti-search-box svg {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: var(--ti-text-muted);
+    stroke-width: 2;
+}
+
+.ti-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ti-filter-chip {
+    appearance: none;
+    border: 1px solid var(--ti-separator);
+    background: transparent;
+    color: var(--ti-text-secondary);
+    font-family: var(--ti-font-sans);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--ti-radius-pill);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.ti-filter-chip:hover {
+    border-color: var(--ti-border-strong);
+    color: var(--ti-text-primary);
+}
+
+.ti-filter-chip.active {
+    background: var(--ti-accent-blue);
+    border-color: var(--ti-accent-blue);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.ti-status-indicator {
+    font-size: 0.85rem;
+    color: var(--ti-text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Ledger Data Table */
+.ti-table-container {
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-lg);
+    box-shadow: var(--ti-card-shadow);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.ti-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.ti-table th {
+    background: var(--ti-fill-quaternary);
+    padding: 0.85rem 1.25rem;
+    color: var(--ti-text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--ti-separator);
+}
+
+.ti-table td {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--ti-separator-subtle);
+    color: var(--ti-text-primary);
+    vertical-align: middle;
+}
+
+.ti-table tr:last-child td {
+    border-bottom: none;
+}
+
+.ti-table tr.ti-row-clickable {
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.ti-table tr.ti-row-clickable:hover {
+    background: var(--ti-bg-hover);
+}
+
+.ti-indicator-cell {
+    font-family: var(--ti-font-mono);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ti-accent-blue);
+    word-break: break-all;
+    max-width: 320px;
+}
+
+.ti-type-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--ti-radius-pill);
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.ti-type-pill--url { background: rgba(10, 132, 255, 0.12); color: var(--ti-accent-blue); }
+.ti-type-pill--ip, .ti-type-pill--ip-range { background: rgba(255, 159, 10, 0.12); color: var(--ti-accent-amber); }
+.ti-type-pill--hash { background: rgba(255, 69, 58, 0.12); color: var(--ti-accent-crimson); }
+.ti-type-pill--domain { background: rgba(94, 92, 230, 0.12); color: var(--ti-accent-indigo); }
+.ti-type-pill--ssl-cert { background: rgba(48, 209, 88, 0.12); color: var(--ti-accent-emerald); }
+
+.ti-source-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.82rem;
+    color: var(--ti-text-secondary);
+    font-weight: 500;
+}
+
+.ti-confidence-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--ti-radius-pill);
+    background: var(--ti-fill-quaternary);
+    color: var(--ti-text-muted);
+}
+
+/* ==========================================================================
+   FEED DIRECTORY (TAB 2)
+   ========================================================================== */
+
+.ti-directory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ti-feed-card {
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--ti-card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s var(--ti-ease-spring), border-color 0.2s ease;
+}
+
+.ti-feed-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--ti-border-strong);
+}
+
+.ti-feed-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.ti-feed-card__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    margin: 0;
+}
+
+.ti-feed-card__status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--ti-radius-pill);
+    background: var(--ti-accent-emerald-soft);
+    color: var(--ti-accent-emerald);
+}
+
+.ti-feed-card__desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--ti-text-secondary);
+    margin: 0 0 1.25rem;
+    flex-grow: 1;
+}
+
+.ti-feed-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--ti-separator-subtle);
+    padding-top: 1rem;
+    font-size: 0.82rem;
+}
+
+.ti-feed-card__count {
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    font-feature-settings: "tnum" 1;
+}
+
+.ti-btn-subtle {
+    appearance: none;
+    border: 1px solid var(--ti-separator);
+    background: var(--ti-fill-quaternary);
+    color: var(--ti-text-primary);
+    font-family: var(--ti-font-sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.45rem 0.9rem;
+    border-radius: var(--ti-radius-sm);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.ti-btn-subtle:hover {
+    background: var(--ti-accent-blue);
+    border-color: var(--ti-accent-blue);
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   AI SECURITY INTELLIGENCE (TAB 3)
+   ========================================================================== */
+
+.ti-ai-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ti-ai-box {
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-lg);
+    padding: 1.75rem;
+    box-shadow: var(--ti-card-shadow);
+}
+
+.ti-ai-box__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    margin: 0 0 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ti-ai-box__desc {
+    font-size: 0.88rem;
+    color: var(--ti-text-secondary);
+    margin: 0 0 1.25rem;
+    line-height: 1.5;
+}
+
+.ti-ai-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.ti-ai-item {
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator-subtle);
+    border-radius: var(--ti-radius-md);
+    padding: 0.85rem 1rem;
+    transition: border-color 0.15s ease;
+}
+
+.ti-ai-item:hover {
+    border-color: var(--ti-border-strong);
+}
+
+.ti-ai-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.ti-ai-item__id {
+    font-family: var(--ti-font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--ti-accent-indigo);
+}
+
+.ti-ai-item__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--ti-text-primary);
+}
+
+.ti-ai-item__sub {
+    font-size: 0.8rem;
+    color: var(--ti-text-secondary);
+    margin-top: 0.2rem;
+}
+
+/* ==========================================================================
+   RANSOMWARE INTELLIGENCE (TAB 4)
+   ========================================================================== */
+
+.ti-ransom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.ti-ransom-card {
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-md);
+    padding: 1.25rem;
+    box-shadow: var(--ti-card-shadow);
+    transition: transform 0.2s var(--ti-ease-spring);
+}
+
+.ti-ransom-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--ti-border-strong);
+}
+
+.ti-ransom-card__group {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--ti-accent-crimson);
+    margin: 0 0 0.5rem;
+}
+
+.ti-ransom-card__victims {
+    font-size: 0.85rem;
+    color: var(--ti-text-secondary);
+}
+
+.ti-ransom-card__victims strong {
+    color: var(--ti-text-primary);
+    font-feature-settings: "tnum" 1;
+}
+
+/* ==========================================================================
+   DETAIL DOSSIER DRAWER (SLIDE-OUT)
+   ========================================================================== */
+
+.ti-drawer-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ti-drawer-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ti-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: clamp(340px, 90vw, 560px);
+    background: var(--ti-bg-surface);
+    border-left: 1px solid var(--ti-separator);
+    box-shadow: var(--ti-drawer-shadow);
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: transform 0.35s var(--ti-ease-spring);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ti-drawer.active {
+    transform: translateX(0);
+}
+
+.ti-drawer__header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--ti-separator);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--ti-bg-elevated);
+}
+
+.ti-drawer__close {
+    appearance: none;
+    border: none;
+    background: var(--ti-fill-quaternary);
+    color: var(--ti-text-secondary);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.ti-drawer__close:hover {
+    background: var(--ti-fill-secondary);
+    color: var(--ti-text-primary);
+}
+
+.ti-drawer__body {
+    padding: 1.75rem 1.5rem;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ti-drawer__indicator-box {
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-md);
+    padding: 1rem 1.25rem;
+    position: relative;
+}
+
+.ti-drawer__indicator-text {
+    font-family: var(--ti-font-mono);
+    font-size: 0.95rem;
+    color: var(--ti-accent-blue);
+    word-break: break-all;
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+}
+
+.ti-drawer__copy-btn {
+    appearance: none;
+    border: 1px solid var(--ti-separator);
+    background: var(--ti-fill-quaternary);
+    color: var(--ti-text-secondary);
+    font-family: var(--ti-font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--ti-radius-sm);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.ti-drawer__copy-btn:hover {
+    color: var(--ti-text-primary);
+    border-color: var(--ti-border-strong);
+}
+
+.ti-drawer__props {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.ti-drawer__prop-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--ti-text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.ti-drawer__prop-value {
+    font-size: 0.9rem;
+    color: var(--ti-text-primary);
+    font-weight: 500;
+}
+
+.ti-drawer__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--ti-separator);
+}
+
+.ti-btn-external {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--ti-radius-sm);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s var(--ti-ease-spring);
+}
+
+.ti-btn-external--primary {
+    background: var(--ti-accent-blue);
+    color: #ffffff;
+}
+
+.ti-btn-external--primary:hover {
+    background: #0077ed;
+    transform: translateY(-1px);
+}
+
+.ti-btn-external--secondary {
+    background: var(--ti-fill-quaternary);
+    border: 1px solid var(--ti-separator);
+    color: var(--ti-text-primary);
+}
+
+.ti-btn-external--secondary:hover {
+    background: var(--ti-fill-secondary);
+    border-color: var(--ti-border-strong);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MOBILE ADAPTATION)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .ti-workbench {
+        padding: 0 1rem 3rem;
+    }
+
+    .ti-hero-workbench {
+        padding: 5rem 1.25rem 2.5rem;
+    }
+
+    .ti-metrics-bar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ti-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ti-search-box {
+        min-width: 100%;
+    }
+
+    .ti-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ti-drawer {
+        width: 100vw;
+    }
+
+    .ti-hero-visual {
+        opacity: 0.35;
+    }
+
+    .ti-sig-labels,
+    .ti-sig-tag {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .ti-hero-visual {
+        opacity: 0.65;
+    }
+}
+
+@media (max-width: 480px) {
+    .ti-metrics-bar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   GLOBAL FOOTER STYLING (Apple Design Language & Site Consistency)
+   ========================================================================== */
+
+.footer {
+    background: var(--ti-bg-surface);
+    border-top: 1px solid var(--ti-separator);
+    padding: 4.5rem 1.5rem 2.5rem;
+    margin-top: 5rem;
+    color: var(--ti-text-secondary);
+    font-family: var(--ti-font-sans);
+}
+
+.footer .container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+.footer-brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--ti-accent-blue), #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.85rem;
+}
+
+.footer-desc {
+    color: var(--ti-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 320px;
+    margin-bottom: 1.5rem;
+}
+
+.footer h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ti-text-primary);
+    margin: 0 0 1.25rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.65rem;
+}
+
+.footer-links a {
+    color: var(--ti-text-secondary);
+    text-decoration: none;
+    font-size: 0.88rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--ti-accent-blue);
+}
+
+.social-links {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--ti-radius-sm);
+    background: var(--ti-fill-quaternary);
+    border: 1px solid var(--ti-separator);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ti-text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s var(--ti-ease-spring);
+}
+
+.social-link:hover {
+    background: var(--ti-fill-secondary);
+    border-color: var(--ti-border-strong);
+    color: var(--ti-text-primary);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--ti-separator-subtle);
+    color: var(--ti-text-muted);
+    font-size: 0.82rem;
+}
+
+@media (max-width: 980px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-desc {
+        max-width: none;
+    }
+}
+/* /HG-THREAT-INTEL-V1 */
+
