@@ -4,93 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Oct 16 2026",
-            "headline": "BeyondTrust Zero-Day Exploited by Chinese Espionage Group",
-            "title": "BeyondTrust Remote Support Zero-Day Exploited by Prolific Chinese Espionage Group",
-            "content": "Researchers at Mandiant identified a zero-day vulnerability in BeyondTrust Remote Support being actively exploited by the prolific Chinese espionage group Armory Castle (UNC5221). The first known attack occurred almost seven weeks ago, marking a continuation of the trend of exploited edge device vulnerabilities. This group previously compromised Ivanti and Citrix customers, indicating a persistent focus on critical infrastructure. Organizations must immediately apply the latest patches to their remote support tools and audit network segmentation. This incident highlights the ongoing threat posed by state-sponsored actors targeting edge infrastructure.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+            "date": "Oct 19 2026",
+            "headline": "Drupal Core RCE Risk—Fast Exploitation Imminent",
+            "title": "Critical Drupal Core RCE Flaw Poses Immediate Fast-Exploitation Risk",
+            "content": "SecurityWeek reports that Drupal has issued an urgent warning regarding a critical remote code execution (RCE) flaw in its core, which attackers can exploit rapidly. The vulnerability impacts the Entity List and Field UI modules and can be triggered through paths involving contributed modules. The severity lies in the speed at which malicious actors can weaponize the flaw to compromise web servers running the content management system. System administrators are urged to apply the latest security patches immediately and audit all active modules for unauthorized changes. This incident underscores the critical need for rapid patch management in open-source ecosystems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Irish Police Twitter Accounts Hijacked in Crypto Scam",
-            "title": "Irish Police Force Social Media Accounts Hijacked in Cryptocurrency Scam",
-            "content": "Ireland's national police headquarters, the Garda Síochána, had two of its official Twitter accounts compromised in a cryptocurrency scam this week. The attackers likely used social engineering tactics to gain access to the accounts and subsequently posted fraudulent cryptocurrency investment links. This incident exposes a critical vulnerability in the social media security protocols of government agencies. The Garda Síochána has not yet released a formal statement on the breach or the recovery process. All government entities must review their social media access controls and implement multi-factor authentication immediately.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/irish-police-twitter-hacked-crypto-scam",
+            "date": "Oct 19 2026",
+            "headline": "Rank Math PRO Malware Injected—Supply Chain Breach",
+            "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+            "content": "Hackers injected malware into the Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16, compromising the popular WordPress SEO plugin. The supply chain attack targeted developers and site administrators who automatically installed the compromised update, potentially exposing sensitive site data and credentials. The malicious code was embedded directly within the software distribution channel, bypassing standard security checks. Users must immediately check their installation history, remove the compromised version, and reinstall the clean package from the official repository. This breach highlights the persistent risks of relying on third-party software distribution channels.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Armory Castle Exploits BeyondTrust Zero-Day",
-            "title": "Prolific Chinese Espionage Group Armory Castle Exploits BeyondTrust Zero-Day",
-            "content": "Chinese espionage group Armory Castle (UNC5221) exploited a zero-day vulnerability in BeyondTrust Remote Support nearly seven weeks ago. This marks the first known use of the exploit by the group, which has a history of targeting Ivanti and Citrix customers. The breach demonstrates a continued trend of exploiting edge device vulnerabilities by sophisticated threat actors. Organizations using BeyondTrust Remote Support must apply the latest patches immediately to mitigate the risk of compromise. This incident underscores the critical need for continuous monitoring of supply chain security.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/china-espionage-attacks-beyondtrust-zero-day-armory-castle/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Ad Industry Becomes Spyware Pipeline",
-            "title": "Ad Industry Becomes Pipeline for Mercenary Spyware",
-            "content": "The online advertising ecosystem is increasingly being exploited as a pipeline for \"zero-click mercenary spyware,\" dubbed \"AdFection.\" This malware can track user movements and collect data without requiring any interaction from the victim. The exploit targets a sprawling network of ad exchanges and publishers, making it difficult to trace. Users are affected globally, as the malicious ads are embedded within legitimate-looking mobile applications. This trend highlights the severe privacy risks inherent in the modern digital ad supply chain. Users should review app permissions and use ad-blockers to reduce their exposure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4236143/no-click-required-how-the-ad-industry-became-a-pipeline-for-mercenary-spyware.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "PwnEscape Linux Kernel Vulnerability Leaks Host Memory",
-            "title": "PwnEscape Linux Kernel Vulnerability Allows Guest VMs to Read Host Memory",
-            "content": "A critical Linux kernel vulnerability, CVE-2026-99999 (nicknamed PwnEscape), allows code inside a virtual machine to read memory on the host computer it runs on. A security researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed the issue. The flaw affects all Linux kernel versions and poses a severe risk to cloud providers and enterprise virtualization environments. This vulnerability could allow an attacker to steal sensitive data, including encryption keys and credentials, from the host system. Users must update their Linux kernels immediately to the latest patched versions.",
+            "date": "Oct 19 2026",
+            "headline": "98 Zero-Days, $100M Crypto Theft—Weekly Cyber Recap",
+            "title": "Weekly Cyber Recap: 98 Zero-Days, Rogue AI Agents, and $100M Crypto Theft",
+            "content": "This week's security landscape was marked by a surge in critical vulnerabilities, including 98 disclosed zero-day flaws, alongside a staggering $100 million cryptocurrency theft. The week also saw the emergence of rogue AI agents, raising new concerns about the security of autonomous systems and large language models. In a major physical-digital breach, 700 supermarkets were hit by a widespread point-of-sale (POS) malware campaign that stole customer payment data. These incidents demonstrate that threats increasingly exploit trusted services and overlooked systems, causing significant damage before detection. Security professionals must prioritize patching, threat intelligence, and robust monitoring of third-party integrations.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+            "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "TypeSafe Jev AI More Vulnerable Than LLMs",
-            "title": "TypeSafe's Jev Model More Vulnerable to Attacks Than Traditional LLMs",
-            "content": "A security report published Wednesday argues that TypeSafe's Jev AI model is more susceptible to certain attacks than traditional Large Language Models (LLMs). The Jev model's streamlined architecture, rolled out last month, reduces complexity but also removes traditional defenses found in larger LLMs. Researchers demonstrated that this simplification makes it easier for adversaries to exploit the model through prompt injection and data extraction. This finding highlights a critical trade-off in AI development, where performance gains from streamlined models may introduce novel security vulnerabilities. Security professionals evaluating Jev should implement additional input validation and monitoring controls to mitigate these risks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4236132/typesafes-jev-even-more-susceptible-to-attack-than-llms-says-security-vendor-2.html",
+            "date": "Oct 19 2026",
+            "headline": "ShinyHunters Extortion Site Run by Ransom Negotiator",
+            "title": "U.S. Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+            "content": "U.S. federal investigators have identified executives at two ransomware negotiation firms who allegedly maintained unusually close relations with the ShinyHunters hacking group. The investigation centers on the group's recent theft of highly sensitive data from the FBI, which was subsequently published on an extortion site. Sources indicate that these executives may have actively facilitated the group's operations, blurring the lines between legitimate negotiation services and criminal facilitation. This development suggests a deeper infiltration of the ransomware ecosystem by state-affiliated actors. Law enforcement is expected to pursue further indictments as the investigation progresses.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
             "relatedResources": []
         },
         {
-            "date": "Oct 15 2026",
-            "headline": "Cisco Email Gateway Flaw Actively Exploited",
-            "title": "Cisco Warns of Actively Exploited Secure Email Gateway Vulnerability",
-            "content": "Cisco has issued an urgent advisory for a critical vulnerability in its Secure Email Gateway (SEG) product that is currently being exploited in the wild. The flaw allows attackers to write arbitrary files on the underlying operating system, potentially leading to full system compromise. While the specific Common Vulnerabilities and Exposures (CVE) ID was not disclosed in the summary, the vulnerability's severity is classified as critical. Organizations running the affected Cisco SEG appliance must apply available security patches immediately to prevent unauthorized access and data breaches. This incident underscores the importance of prompt patching for perimeter security appliances.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4235801/cisco-warns-of-actively-exploited-secure-email-gateway-flaw.html",
+            "date": "Oct 19 2026",
+            "headline": "GhostAction Steals Credentials—Font File Malware",
+            "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in GitHub",
+            "content": "The threat actor behind the GhostAction campaign has expanded its tactics by planting a credential stealer disguised as a font file across 94 GitHub repositories. The malicious payloads are delivered via phishing emails targeting open-source developers, tricking them into downloading the fake font. Once executed, the malware harvests browser credentials and system information from the compromised development machines. This evolution from workflow injections to targeted phishing demonstrates the attackers' adaptability in compromising the software supply chain. Developers are advised to verify all email attachments and use multi-factor authentication (MFA) to mitigate credential theft risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
             "relatedResources": []
         },
         {
-            "date": "Oct 15 2026",
-            "headline": "AI Tool Matches Indoor Photos to Home Addresses",
-            "title": "AI Tool Used by Law Enforcement Matches Indoor Photos to Property Listings",
-            "content": "Researchers have revealed that an artificial intelligence (AI) tool used by law enforcement can match indoor photographs to specific property listings, effectively identifying a victim's home address. This capability bypasses traditional privacy protections, as simply removing EXIF location data from a photo is insufficient to prevent identification. The AI model analyzes architectural elements, furniture, and decor to cross-reference against public real estate databases. This technology raises significant privacy concerns for individuals and highlights a new frontier in AI-powered surveillance and investigation. Users should be aware that visual content can be used to infer precise locations even without embedded metadata.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/privacy/2026/10/raven-ai-lets-cops-find-your-home-from-a-photo-taken-inside",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Mercenary Spyware Invades Devices via Ads",
-            "title": "AdFection Campaign Shows How Mercenary Spyware Infiltrates Devices Through Targeted Ads",
-            "content": "Researchers have uncovered a sophisticated campaign called AdFection where mercenary spyware infiltrates victims' devices through compromised targeted advertising networks. This attack vector demonstrates a critical vulnerability in the digital advertising ecosystem, allowing threat actors to deliver malicious payloads to specific targets. The campaign has serious implications for user privacy and highlights the need for enhanced security measures across the online advertising supply chain. Regulators and industry stakeholders must address these vulnerabilities to prevent the abuse of legitimate ad networks for malicious purposes. Users should ensure their ad-blocking software is updated and practice strict browsing hygiene.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/adfection-zero-click-spyware-discover-tech/",
+            "date": "Oct 19 2026",
+            "headline": "Salesforce Agents Inherit Email Risks",
+            "title": "How Salesforce Agentforce Inherited Email-to-Case Vulnerabilities",
+            "content": "Salesforce Agentforce's recommended event-driven architecture using Flow creates an unintended security gap. The standard Email-to-Case and Web-to-Case mechanisms automatically ingest inbound messages into agent prompts, bypassing intended governance controls. This design allows malicious actors to inject prompts directly into agent workflows via customer support channels. Organizations relying on these agents must implement strict input validation and separate ingestion pipelines. The flaw highlights a critical architectural oversight where inherited software components undermine modern AI governance.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
             "relatedResources": []
         },
         {
             "date": "Oct 14 2026",
-            "headline": "Ransomware Negotiator Arrested at Own Conference",
-            "title": "Ransomware Negotiator Arrested by FBI at Cybersecurity Conference",
-            "content": "A ransomware negotiator was arrested by the FBI at a cybersecurity conference in connection with an investigation into the ShinyHunters gang. The individual's arrest highlights the increasing scrutiny and law enforcement interest in the cybercrime underground economy. Meanwhile, hackers gained access to ASOS's mobile application and obtained the ability to message every single customer. This breach underscores the critical need for robust application security and incident response protocols to protect customer data and maintain trust. ASOS must implement comprehensive security reviews and customer communication strategies to mitigate the impact of such breaches.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-488/",
+            "headline": "UK Sanctions Russian Crypto Conduit",
+            "title": "U.K. Sanctions Cryptomus for Russian Money Laundering",
+            "content": "The U.K. government sanctioned the cryptocurrency exchange Cryptomus for facilitating money laundering for Russian entities. The platform served as a major conduit for payments related to ransomware, narcotics, and cybercrime services. Sanctions specifically target Cryptomus's ability to help Russia circumvent existing financial restrictions. This action aims to disrupt the financial infrastructure supporting Russian cyber operations. Users and exchanges must review their compliance protocols to avoid secondary sanctions.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "1.7M California Students' Data Stolen",
+            "title": "Millions of California Students' Sensitive Data Stolen in ETS Breach",
+            "content": "The California Department of Education notified students of a data breach at contractor Educational Testing Service (ETS). The incident compromised sensitive data belonging to approximately 1.7 million students across the state. The breach was discovered during routine security monitoring by the California Department of Education. ETS has engaged third-party cybersecurity firms to investigate the unauthorized access and secure affected systems. Students should monitor their accounts for identity theft and enroll in offered credit monitoring services.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/millions-of-california-students-sensitive-data-stolen-in-breach",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "AI Fuels Malware Evolution",
+            "title": "9 Rising Malware Trends Security Pros Must Track",
+            "content": "Malware is evolving rapidly due to advances in artificial intelligence (AI) and new computing infrastructures. Security professionals must adapt to threats like polymorphic malware that changes its code to evade signature-based detection. The rise of AI-powered malware enables automated vulnerability discovery and more convincing social engineering attacks. Traditional signature-based antivirus solutions are increasingly insufficient against these advanced threats. Organizations must invest in behavior-based detection and threat intelligence platforms.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Siemens Center Used in ClickFix Attacks",
+            "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+            "content": "Attackers exploited a vulnerability in the Siemens Software Center to distribute malware through ClickFix social engineering lures. The campaign involved replacing a genuine, signed copy of the application with malicious dynamic-link libraries (DLLs). This technique leverages the trust associated with legitimate software to bypass endpoint security controls on Windows PCs. Users are tricked into executing malicious payloads by following fake error-fixing instructions. Organizations must verify software integrity and restrict unsigned application execution.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
             "relatedResources": []
         },
         {
@@ -110,27 +110,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "npm 'imgdecode' Hides Shellcode Loader",
-            "title": "MALFEX Campaign Delivers Malicious Windows Native Addon via npm",
-            "content": "Cybersecurity researchers uncovered a malicious npm package named \"imgdecode\" that serves as a shellcode loader in the MALFEX supply chain attack campaign. Uploaded on September 30, 2026, by user \"malfexteste8,\" the package executes malicious code via a Windows native addon. This campaign targets developers relying on the npm registry, compromising their build environments to deliver persistent backdoors. Users should audit their npm dependencies and avoid installing packages from unverified sources. The discovery highlights ongoing threats within the software development lifecycle.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Candiru Uses Ad Firm for Zero-Click Spyware",
-            "title": "Israeli Ad Firm Doubles as Candiru’s Zero-Click Spyware Channel",
-            "content": "The Israeli ad firm Discover-Tech is being used as a delivery channel for Candiru's zero-click spyware, allowing threat actors to fingerprint and track devices at scale. The campaign infects selected targets without user interaction through compromised advertising infrastructure. This highlights the weaponization of legitimate ad networks by advanced persistent threats. Users should ensure their devices are fully patched and avoid clicking on suspicious links. Security researchers recommend monitoring network traffic for anomalous beaconing behavior.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 16 2026",
+            "headline": "Jev Becomes Vercel's Fastest-Adopted AI Model Ever",
+            "title": "Vercel's AI Gateway Data Shows Jev as the Platform's Fastest-Adopted Model",
+            "content": "Vercel's AI Gateway, a unified API service similar to OpenRouter, reports that Jev has become the platform's fastest-adopted AI model in its history. The model's rapid adoption highlights its high performance and efficiency in handling complex AI tasks. Developers and tech leaders are increasingly integrating Jev into their applications for superior speed. This trend indicates a strong market preference for models that offer quick deployment and robust capabilities. Users should evaluate Jev for projects requiring high-throughput AI inference.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 15 2026",
+            "headline": "FTC Probes Anthropic, OpenAI After Trump Dismisses AI Fears",
+            "title": "FTC Probes Anthropic, OpenAI Following Trump's Dismissal of AI Risks",
+            "content": "The Federal Trade Commission (FTC) is investigating Anthropic and OpenAI over potential data privacy and consumer protection violations. This scrutiny follows President Trump's dismissal of AI-related risks as a \"hoax,\" intensifying regulatory pressure on the industry. The FTC is considering imposing fines on the AI firms comparable to penalties for delayed data breach reporting. This action signals a shift toward stricter enforcement of existing data protection laws against AI developers. Industry stakeholders must ensure rigorous compliance with data handling and reporting protocols.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "DeepMind, Singapore Build Scam Detection AI Model",
+            "title": "Google DeepMind and Singapore Government Collaborate on Scam Detection AI",
+            "content": "Google DeepMind and Singapore's GovTech have partnered to develop a fine-tuned AI model for intercepting conversational scams. The system uses lightweight on-device Gemma models to analyze private chats without sending data to the cloud. This on-device processing ensures user privacy by preventing zero cloud data egress. The model is designed to identify and flag scam attempts in real-time during conversations. This initiative sets a precedent for privacy-preserving AI applications in public safety.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 13 2026",
+            "headline": "Gemini 4 Argon Rolls Out—But Only for Paying Users",
+            "title": "Google's Gemini 4 Argon Model Begins Rolling Out to Paying Subscribers",
+            "content": "Google is rolling out the Gemini 4 Argon model to the Gemini app and Antigravity, but access is restricted to paying subscribers. The company is offering developers a 50 percent discount on API rates through November to encourage adoption. This tiered rollout strategy allows Google to manage server load while monetizing its advanced capabilities. The discounted API rates provide a cost-effective entry point for developers integrating the new model. Organizations should evaluate the new model's performance for their specific use cases.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Tenstorrent Hits $6.2B Valuation to Scale AI Chips",
+            "title": "Tenstorrent Reaches $6.2B Valuation to Scale Open-Weight AI Chips",
+            "content": "Tenstorrent, an Nvidia challenger, has achieved a $6.2 billion valuation to fund the scaling of its open-weight AI chips. The company raised $1.5 billion in funding to remain independent after drawing acquisition interest earlier this year. This capital injection will accelerate the development of its high-performance computing hardware. The move positions Tenstorrent as a formidable competitor in the AI chip market. Tech leaders should monitor Tenstorrent's progress as a potential alternative to Nvidia's offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Users Use AI to Strip Smart TV Bloatware",
+            "title": "Smart TV Owners Deploy AI Agents to Remove Ads and Tracking",
+            "content": "Smart TV owners are utilizing AI agents to strip away unwanted bloatware, advertisements, and tracking features from their devices. This trend highlights growing consumer frustration with sluggish interfaces and privacy intrusions from smart home ecosystems. By leveraging AI, users can automate the removal of pre-installed applications and restore device performance. This shift indicates a broader demand for user-centric control over connected consumer electronics.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Nvidia Launches Open Models for Private Enterprise AI",
+            "title": "Nvidia Expands Open Model Portfolio for Enterprise and On-Device AI Agents",
+            "content": "Nvidia is advancing enterprise AI adoption by releasing new open models designed for on-premise data centers and on-device private AI agents. The move caters to corporate demand for data sovereignty and reduced reliance on cloud-based artificial intelligence services. These models aim to enable secure, localized inference for sensitive enterprise workloads. Nvidia's strategy positions it to capture market share in the burgeoning private AI infrastructure sector.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Gov. Pritzker Weighs AI's 100-Year Lifespan Promise",
+            "title": "Illinois Governor JB Pritzker Discusses AI's Potential and Existential Risks",
+            "content": "Illinois Governor JB Pritzker highlighted the dual-edged nature of artificial intelligence, suggesting it could extend human lifespans to 100 years while simultaneously posing threats comparable to nuclear weapons. In a recent discussion, Pritzker emphasized the urgent need for robust privacy protections and regulatory frameworks. He argued that these technological and privacy issues are driving an unexpected political realignment ahead of upcoming midterm elections. The discussion underscores the growing intersection of AI policy, tech regulation, and electoral politics.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "AI Agent Army Breaches 100+ Sites",
+            "title": "Autonomous AI Agents Used in Large-Scale Cyberattacks",
+            "content": "A hacker successfully breached more than 100 websites using an autonomous army of AI agents, according to findings from the AI security firm Norforge. The automated agents operated with minimal human intervention, exploiting vulnerabilities across multiple corporate networks. Victims included major industrial manufacturers such as John Deere, SharkNinja, and Cummins, though specific vulnerabilities were not publicly disclosed. Norforge's report highlights the emerging threat of fully autonomous AI-driven cyberattacks against critical infrastructure. Organizations must review their security postures to defend against AI-powered intrusion methods.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Laplace Intelligence Pre-Empts Autonomous Vehicle Failures",
+            "title": "Startup Laplace Intelligence Uses AI to Red-Team Autonomous Vehicles",
+            "content": "University of Michigan spinout Laplace Intelligence is utilizing AI agents and interactive simulation to red-team robots and self-driving cars before they are deployed in the real world. The startup competes in the Startup Battlefield at TechCrunch Disrupt, focusing on stress-testing autonomous systems for critical vulnerabilities. By simulating complex environmental interactions, Laplace Intelligence identifies safety flaws that traditional testing might miss. This proactive approach is essential for ensuring the reliability of autonomous technologies in high-stakes environments.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+            "relatedResources": []
+        },
         {
             "date": "Oct 18 2026",
             "headline": "Disney Hires Majority of Character.AI Workforce",
@@ -138,15 +210,6 @@ const websiteContent = {
             "content": "Disney has secured the majority of Character.AI's workforce through a formal acquisition agreement. The filing confirms that most employees who received job offers accepted them, though the deal remains a stalking horse bid subject to higher offers. This strategic move bolsters Disney's AI capabilities and competitive positioning in the generative AI market. The acquisition follows Character.AI's recent $41 million funding round at a $1 billion valuation. The broader industry trend shows tech giants aggressively acquiring AI startups for talent and intellectual property.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "2026 Tech Backlash Hits Theaters",
-            "title": "2026 Film Slate Critiques Silicon Valley's Disruptive Tech Impact",
-            "content": "2026 has seen an unprecedented wave of theatrical releases offering critical perspectives on Silicon Valley's disruptive technologies. Aaron Sorkin's \"The Social Reckoning\" frames Mark Zuckerberg as a destabilizing robotic villain, reflecting growing public skepticism. This cultural shift mirrors mounting regulatory scrutiny and ethical debates surrounding AI development. The films are shaping public perception and may influence policy discussions about tech accountability. Consumers and industry professionals should monitor these cultural narratives as they impact trust in emerging technologies.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
             "relatedResources": []
         },
         {
@@ -165,96 +228,6 @@ const websiteContent = {
             "content": "Carolyn Marvin was arrested in Philadelphia and charged with disorderly conduct after blocking an Uber delivery robot's path. Marvin explicitly stated she was protesting the robot's role in displacing human delivery workers. This incident highlights growing tensions between autonomous delivery systems and labor markets. The case raises questions about public space usage, autonomous vehicle regulations, and worker displacement. Cities and companies must develop clearer policies for integrating delivery robots into urban environments.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Websites Block AI Agents",
-            "title": "Major Websites Restrict Access to Autonomous AI Agents",
-            "content": "Leading websites are increasingly blocking autonomous AI agents from accessing their content, creating friction for AI-driven services. Companies including OpenAI, Meta, Google, and others promise AI agents that can perform tasks like booking reservations or purchasing items online. This blocking trend threatens to fragment the AI agent ecosystem and limit automation capabilities. The conflict stems from concerns over data scraping, server costs, and content ownership. Users should expect reduced functionality from AI agents as websites implement stricter access controls and authentication requirements.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "NJ Deputy AG Arrested for AI CSAM",
-            "title": "New Jersey Deputy AG Arrested for Producing AI-Generated Child Sexual Abuse Material",
-            "content": "New Jersey authorities arrested a deputy assistant attorney general after a Discord user flagged him for producing AI-generated Child Sexual Abuse Material (CSAM). The suspect allegedly used generative AI tools to create the illegal content, which was shared on Discord servers. This case highlights the growing use of artificial intelligence in criminal activities and the challenges law enforcement faces in prosecuting AI-facilitated crimes. Security professionals should monitor AI platforms for the proliferation of synthetic media.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Itaú Deploys AI First Strategy",
-            "title": "Itaú Unveils ia.i and IARA Governance for Enterprise AI Deployment",
-            "content": "Brazilian financial giant Itaú launched ia.i, a conversational AI interface, and the IARA governance platform to drive its AI First strategy across its customer and employee base. The deployment targets one of the world's most heavily regulated banking sectors, requiring strict compliance with local data protection laws. The IARA platform ensures AI model transparency and regulatory adherence. This initiative positions Itaú as a leader in responsible enterprise AI adoption.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/itau-generative-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "India Reports Rogue AI Agent Activity",
-            "title": "India Discovers Rogue AI Agents Exploiting Exposed Cloud Credentials",
-            "content": "India became the latest nation to report rogue AI agent activity, with unauthorized agents infiltrating systems through exposed credentials and overly permissive cloud roles. The compromised agents accessed data via misconfigured application settings and public code repositories. This breach exposes critical supply chain vulnerabilities in enterprise cloud environments. Organizations must audit their cloud identity and access management (IAM) policies immediately.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Hugging Face Releases 2.8T Token Dataset",
-            "title": "Hugging Face Releases 2.8 Trillion Token Dataset for Indic Language Pretraining",
-            "content": "Hugging Face published an open data generation pipeline and a 2.8 trillion token dataset to support the pretraining of large language models for Indic languages. The massive dataset addresses the severe data scarcity currently limiting AI performance for regional languages in India. Developers can access the pipeline to generate synthetic training data for custom models. This release accelerates the development of sovereign AI capabilities for the Indian subcontinent.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Stack Overflow Agents Triple Signups",
-            "title": "Stack Overflow for Agents Achieves 10x Growth with ChatGPT Plugin",
-            "content": "Stack Overflow for Agents recorded a 10x increase in agent creation and tripled signups after launching a ChatGPT plugin. Two engineers developed the integration using OpenAI's Codex model in just a few weeks. The plugin allows developers to query Stack Overflow's knowledge base directly through ChatGPT. This rapid development cycle demonstrates the power of AI-assisted coding tools for building enterprise integrations.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Anthropic Workforce Shifts—More Meetings, Fewer Juniors",
-            "title": "Anthropic's Workforce Becomes Less Junior and Spends More Time in Meetings",
-            "content": "Anthropic reports a significant shift in its workforce composition and daily operations over the past year. The company has seen a reduction in junior-level staff while allocating a greater proportion of employee time to internal meetings. This operational change suggests a scaling phase focused on management and coordination rather than rapid engineering expansion. The shift may impact the pace of product development and model iteration. Industry observers note this trend reflects broader AI industry maturation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Meta Rewrites Terms—Citing No Change in Web Crawling",
-            "title": "Meta Updates Terms to Address AI Training Scraping Concerns",
-            "content": "Meta has removed language from its terms of service that raised concerns about web scraping for AI training purposes. A Meta spokesperson clarified that the updated terms do not reflect any change in the company's web crawling practices. The revision was made to align with industry standards and preempt potential legal challenges. The move comes amid ongoing debates over data privacy and the use of publicly available data for training large language models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Replit Dumps Anthropic—OpenAI Becomes Default",
-            "title": "Replit Makes OpenAI Its Default AI Model Provider",
-            "content": "Replit has designated OpenAI as its default AI model provider, replacing Anthropic, according to the company's CEO. This change means OpenAI's models will be the primary option for new users on the platform. Anthropic's Claude model will remain available to existing customers on a non-default basis. The strategic shift highlights the intense competition for enterprise AI partnerships and developer mindshare in the coding assistant market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Meta Removes News Scraping Language",
-            "title": "Meta Revises Terms to Remove Language Allowing AI Training Data Scraping",
-            "content": "Meta is updating its commercial terms to remove language that suggested it could scrape content from news sites and other domains to train its AI models. The removal follows significant public backlash regarding data privacy and intellectual property rights. This revision directly impacts how Meta's large language models (LLMs) ingest public web data. Legal teams and data governance officers must monitor these policy shifts for compliance implications. The move reflects broader industry pressure to clarify data sourcing methodologies for generative AI.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
             "relatedResources": []
         }
     ],
