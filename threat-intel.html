@@ -763,7 +763,12 @@
 
             <!-- 2. SEGMENTED NAVIGATION TABS -->
             <nav class="ti-tabs-nav" aria-label="Workbench Sections">
-                <button class="ti-tab-btn active" data-tab="ledger">
+                <button class="ti-tab-btn active" data-tab="overview">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>SOC Overview</span>
+                    <span class="ti-tab-badge" id="tabOverviewBadge">Posture</span>
+                </button>
+                <button class="ti-tab-btn" data-tab="ledger">
                     <i class="fas fa-list-ul"></i>
                     <span>Live Ledger</span>
                     <span class="ti-tab-badge" id="tabLedgerBadge">—</span>
@@ -787,8 +792,137 @@
 
             <!-- 3. TAB PANELS -->
 
+            <!-- PANEL 0: SOC OVERVIEW DASHBOARD -->
+            <div class="ti-panel active" id="tiPanel-overview" data-panel="overview">
+                <!-- SOC Posture Alert / Banner -->
+                <div class="ti-soc-posture-bar">
+                    <div class="ti-soc-posture-info">
+                        <div class="ti-status-pulsar ti-status-pulsar--emerald" id="tiPosturePulsar"></div>
+                        <div>
+                            <div class="ti-soc-posture-title" id="tiPostureTitle">Global Threat Perimeter: Active Monitoring</div>
+                            <div class="ti-soc-posture-sub" id="tiPostureSub">Ingesting 9 authoritative open feeds &bull; Continuous automated normalization</div>
+                        </div>
+                    </div>
+                    <div class="ti-soc-action-group">
+                        <button class="ti-soc-action-btn" onclick="window.switchWorkbenchTab('ledger')">
+                            <i class="fas fa-database"></i> Explore Full Ledger
+                        </button>
+                        <button class="ti-soc-action-btn" onclick="window.switchWorkbenchTab('directory')">
+                            <i class="fas fa-satellite-dish"></i> View Feeds
+                        </button>
+                        <button class="ti-soc-action-btn" onclick="window.switchWorkbenchTab('ransomware')">
+                            <i class="fas fa-skull-crossbones"></i> Ransomware Watch
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2-Column Grid of SOC Widgets -->
+                <div class="ti-soc-grid-2col" style="margin-top: 1.5rem;">
+                    <!-- Widget 1: Vector Threat Distribution -->
+                    <div class="ti-soc-card">
+                        <div>
+                            <div class="ti-soc-card__header">
+                                <div>
+                                    <h3 class="ti-soc-card__title">
+                                        <i class="fas fa-chart-pie" style="color: var(--ti-accent-blue);"></i> Threat Vector Distribution
+                                    </h3>
+                                    <p class="ti-soc-card__desc">Current attack surface allocation across ingested indicators. Click any vector to drill into the live ledger.</p>
+                                </div>
+                            </div>
+                            <div class="ti-vector-bars" id="tiVectorBarsContainer">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget 2: Dominant Malware Nexus -->
+                    <div class="ti-soc-card">
+                        <div>
+                            <div class="ti-soc-card__header">
+                                <div>
+                                    <h3 class="ti-soc-card__title">
+                                        <i class="fas fa-virus" style="color: var(--ti-accent-crimson);"></i> Dominant Malware Nexus
+                                    </h3>
+                                    <p class="ti-soc-card__desc">Top adversary tools and botnet infrastructure active in today's feeds. Click to filter ledger.</p>
+                                </div>
+                            </div>
+                            <div class="ti-malware-nexus-grid" id="tiMalwareNexusContainer">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget 3: Extortion & Ransomware Watch -->
+                    <div class="ti-soc-card">
+                        <div>
+                            <div class="ti-soc-card__header">
+                                <div>
+                                    <h3 class="ti-soc-card__title">
+                                        <i class="fas fa-biohazard" style="color: var(--ti-accent-amber);"></i> Active Ransomware Groups
+                                    </h3>
+                                    <p class="ti-soc-card__desc">High-activity syndicates with recent victims. Click to view full group dossier and attack history.</p>
+                                </div>
+                                <button class="ti-btn-subtle" onclick="window.switchWorkbenchTab('ransomware')">All Groups &rarr;</button>
+                            </div>
+                            <div class="ti-soc-ransom-stream" id="tiSocRansomContainer">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Widget 4: AI & Frontier Attack Surface -->
+                    <div class="ti-soc-card">
+                        <div>
+                            <div class="ti-soc-card__header">
+                                <div>
+                                    <h3 class="ti-soc-card__title">
+                                        <i class="fas fa-microchip" style="color: var(--ti-accent-indigo);"></i> Emerging AI Attack Vectors
+                                    </h3>
+                                    <p class="ti-soc-card__desc">Adversarial ML, prompt injection, and model evasion techniques tracked in MITRE ATLAS and AIID.</p>
+                                </div>
+                                <button class="ti-btn-subtle" onclick="window.switchWorkbenchTab('ai')">All Vectors &rarr;</button>
+                            </div>
+                            <div class="ti-soc-ai-stream" id="tiSocAIContainer">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Live Threat Stream (Top 6 fresh indicators) -->
+                <div class="ti-soc-card" style="margin-top: 1.5rem;">
+                    <div>
+                        <div class="ti-soc-card__header">
+                            <div>
+                                <h3 class="ti-soc-card__title">
+                                    <i class="fas fa-wave-square" style="color: var(--ti-accent-emerald);"></i> Live High-Confidence Threat Stream
+                                </h3>
+                                <p class="ti-soc-card__desc">Sample of latest verified malicious indicators. Click any indicator to inspect forensic details in the drawer.</p>
+                            </div>
+                            <button class="ti-btn-subtle" onclick="window.switchWorkbenchTab('ledger')">Open Full 88k+ Ledger &rarr;</button>
+                        </div>
+                        <div class="ti-table-container">
+                            <table class="ti-table" aria-label="Recent High Confidence Indicators">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 110px;">Type</th>
+                                        <th>Indicator (Defanged)</th>
+                                        <th>Threat Context</th>
+                                        <th style="width: 140px;">Source</th>
+                                        <th style="width: 130px;">Confidence</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tiSocRecentBody">
+                                    <!-- Populated dynamically -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- PANEL 1: LIVE LEDGER -->
-            <div class="ti-panel active" id="tiPanel-ledger" data-panel="ledger">
+            <div class="ti-panel" id="tiPanel-ledger" data-panel="ledger">
                 <div class="ti-toolbar">
                     <div class="ti-search-box">
                         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -1011,61 +1145,67 @@
     <aside class="ti-drawer" id="tiDrawer" role="dialog" aria-modal="true" aria-labelledby="tiDrawerIndicator">
         <div class="ti-drawer__header">
             <div>
-                <div style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; color: var(--ti-accent-blue); letter-spacing: 0.06em;">Threat Dossier</div>
-                <div style="font-size: 0.85rem; color: var(--ti-text-muted); margin-top: 0.15rem;">Indicator Profile &amp; Outbound Telemetry</div>
+                <div id="tiDrawerCategoryLabel" style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; color: var(--ti-accent-blue); letter-spacing: 0.06em;">Threat Dossier</div>
+                <div id="tiDrawerSubLabel" style="font-size: 0.85rem; color: var(--ti-text-muted); margin-top: 0.15rem;">Indicator Profile &amp; Outbound Telemetry</div>
             </div>
             <button class="ti-drawer__close" id="tiDrawerClose" aria-label="Close dossier">&times;</button>
         </div>
         <div class="ti-drawer__body">
-            <div class="ti-drawer__indicator-box">
-                <div class="ti-drawer__indicator-text" id="tiDrawerIndicator">—</div>
-                <button class="ti-drawer__copy-btn" id="tiDrawerCopyBtn">
-                    <i class="far fa-copy"></i> Copy Defanged Indicator
-                </button>
-            </div>
-
-            <div class="ti-drawer__props">
-                <div>
-                    <div class="ti-drawer__prop-label">Indicator Type</div>
-                    <div class="ti-drawer__prop-value" id="tiDrawerType">—</div>
+            <!-- View 1: Default Threat Indicator Dossier -->
+            <div id="tiDrawerIndicatorView">
+                <div class="ti-drawer__indicator-box">
+                    <div class="ti-drawer__indicator-text" id="tiDrawerIndicator">—</div>
+                    <button class="ti-drawer__copy-btn" id="tiDrawerCopyBtn">
+                        <i class="far fa-copy"></i> Copy Defanged Indicator
+                    </button>
                 </div>
-                <div>
-                    <div class="ti-drawer__prop-label">Assessment Confidence</div>
-                    <div class="ti-drawer__prop-value" id="tiDrawerConfidence">—</div>
+
+                <div class="ti-drawer__props">
+                    <div>
+                        <div class="ti-drawer__prop-label">Indicator Type</div>
+                        <div class="ti-drawer__prop-value" id="tiDrawerType">—</div>
+                    </div>
+                    <div>
+                        <div class="ti-drawer__prop-label">Assessment Confidence</div>
+                        <div class="ti-drawer__prop-value" id="tiDrawerConfidence">—</div>
+                    </div>
+                    <div>
+                        <div class="ti-drawer__prop-label">Ingestion Source</div>
+                        <div class="ti-drawer__prop-value" id="tiDrawerSource">—</div>
+                    </div>
+                    <div>
+                        <div class="ti-drawer__prop-label">First Seen (UTC)</div>
+                        <div class="ti-drawer__prop-value" id="tiDrawerTimestamp">—</div>
+                    </div>
                 </div>
+
                 <div>
-                    <div class="ti-drawer__prop-label">Ingestion Source</div>
-                    <div class="ti-drawer__prop-value" id="tiDrawerSource">—</div>
+                    <div class="ti-drawer__prop-label">Campaign / Malware Family</div>
+                    <div class="ti-drawer__prop-value" id="tiDrawerCampaign" style="font-size: 1.05rem; font-weight: 600; color: var(--ti-accent-blue);">—</div>
                 </div>
+
                 <div>
-                    <div class="ti-drawer__prop-label">First Seen (UTC)</div>
-                    <div class="ti-drawer__prop-value" id="tiDrawerTimestamp">—</div>
+                    <div class="ti-drawer__prop-label">Description &amp; Context</div>
+                    <div class="ti-drawer__prop-value" id="tiDrawerDescription" style="line-height: 1.6; color: var(--ti-text-secondary);">—</div>
+                </div>
+
+                <div>
+                    <div class="ti-drawer__prop-label">Tags</div>
+                    <div id="tiDrawerTags" style="margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.35rem;">—</div>
+                </div>
+
+                <div class="ti-drawer__actions">
+                    <a class="ti-btn-external ti-btn-external--primary" id="tiLinkVirusTotal" target="_blank" rel="noopener noreferrer">
+                        Inspect on VirusTotal ↗
+                    </a>
+                    <a class="ti-btn-external ti-btn-external--secondary" id="tiLinkAbuseIPDB" target="_blank" rel="noopener noreferrer">
+                        Lookup on AbuseIPDB ↗
+                    </a>
                 </div>
             </div>
 
-            <div>
-                <div class="ti-drawer__prop-label">Campaign / Malware Family</div>
-                <div class="ti-drawer__prop-value" id="tiDrawerCampaign" style="font-size: 1.05rem; font-weight: 600; color: var(--ti-accent-blue);">—</div>
-            </div>
-
-            <div>
-                <div class="ti-drawer__prop-label">Description &amp; Context</div>
-                <div class="ti-drawer__prop-value" id="tiDrawerDescription" style="line-height: 1.6; color: var(--ti-text-secondary);">—</div>
-            </div>
-
-            <div>
-                <div class="ti-drawer__prop-label">Tags</div>
-                <div id="tiDrawerTags" style="margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.35rem;">—</div>
-            </div>
-
-            <div class="ti-drawer__actions">
-                <a class="ti-btn-external ti-btn-external--primary" id="tiLinkVirusTotal" target="_blank" rel="noopener noreferrer">
-                    Inspect on VirusTotal ↗
-                </a>
-                <a class="ti-btn-external ti-btn-external--secondary" id="tiLinkAbuseIPDB" target="_blank" rel="noopener noreferrer">
-                    Lookup on AbuseIPDB ↗
-                </a>
-            </div>
+            <!-- View 2: Custom Multi-Domain Dossier (Ransomware Syndicates, AI Security, etc.) -->
+            <div id="tiDrawerCustomView" style="display: none;"></div>
         </div>
     </aside>
 
