@@ -114,6 +114,8 @@ async function runTests() {
         await delay(200);
 
         // Screenshot: Desktop Dark Mode
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await delay(250);
         await page.screenshot({ path: path.join(ARTIFACT_DIR, 'verified_ransomware_desktop_dark.png'), fullPage: false });
         console.log('   📸 Captured verified_ransomware_desktop_dark.png');
 
@@ -177,6 +179,8 @@ async function runTests() {
         console.log('1️⃣1️⃣ Testing Light Mode Theme...');
         await page.click('#themeToggle');
         await delay(300);
+        await page.evaluate(() => window.scrollTo(0, 0));
+        await delay(250);
         await page.screenshot({ path: path.join(ARTIFACT_DIR, 'verified_ransomware_desktop_light.png'), fullPage: false });
         console.log('   📸 Captured verified_ransomware_desktop_light.png');
 
