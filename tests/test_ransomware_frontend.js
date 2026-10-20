@@ -53,16 +53,84 @@ async function runTests() {
             throw new Error('Footer copyright text missing');
         }
 
-        // 3. Hero & SVG Lattice Animation
-        console.log('3️⃣ Verifying Hero Section & SVG Lattice Animation...');
+        // 3. Hero & SVG Lattice Animation Verification (Factual Claims Remediation)
+        console.log('3️⃣ Verifying Hero Section & SVG Lattice Animation (Factual Accuracy)...');
         const svgLattice = await page.$('.rw-lattice-svg');
         if (!svgLattice) throw new Error('Cryptographic Syndicate Lattice SVG missing');
 
+        // Check Hero Editorial Text & Badge
+        const heroBadgeText = await page.$eval('.rw-hero-badge', el => el.innerText.trim());
+        if (!heroBadgeText.toUpperCase().includes('DARK WEB EXTORTION TELEMETRY')) {
+            throw new Error(`Hero badge still has misleading wording: ${heroBadgeText}`);
+        }
+
+        const heroTitleText = await page.$eval('.rw-hero-title', el => el.innerText.trim());
+        if (!heroTitleText.includes('Ransomware Extortion Intelligence Workbench')) {
+            throw new Error(`Hero title mismatch: ${heroTitleText}`);
+        }
+
+        const heroDescText = await page.$eval('.rw-hero-desc', el => el.innerText.trim());
+        if (!heroDescText.includes('not independently verified breaches')) {
+            throw new Error(`Hero description missing unverified disclaimer: ${heroDescText}`);
+        }
+
+        const heroMetaText = await page.$eval('.rw-hero-meta-bar', el => el.innerText.trim());
+        if (heroMetaText.includes('OSINT Corroborated')) {
+            throw new Error('Hero meta bar still contains unsupported "OSINT Corroborated" badge!');
+        }
+        if (!heroMetaText.includes('Dark Web Extortion Notices')) {
+            throw new Error(`Hero meta bar missing accurate "Dark Web Extortion Notices" badge: ${heroMetaText}`);
+        }
+
+        // Check SVG Lattice labels (no false cipher claims or contradictory velocity)
+        const svgContent = await page.$eval('.rw-lattice-svg', el => el.innerHTML);
+        if (svgContent.includes('RSA-4096 / AES-GCM')) {
+            throw new Error('SVG still contains unsupported cipher claim "RSA-4096 / AES-GCM"!');
+        }
+        if (!svgContent.includes('EXTORTION CAMPAIGN SIGNALS')) {
+            throw new Error('SVG missing neutral architecture label "EXTORTION CAMPAIGN SIGNALS"');
+        }
+        if (svgContent.includes('ACTIVE BURST')) {
+            throw new Error('SVG still contains contradictory "ACTIVE BURST" label for Akira!');
+        }
+        if (!svgContent.includes('DOUBLE EXTORTION')) {
+            throw new Error('SVG missing architectural "DOUBLE EXTORTION" label for Akira');
+        }
+        if (svgContent.includes('STEADY EXPOS')) {
+            throw new Error('SVG still contains contradictory "STEADY EXPOS" label for N0n!');
+        }
+        if (!svgContent.includes('ACTIVE DISCLOSURES')) {
+            throw new Error('SVG missing architectural "ACTIVE DISCLOSURES" label for N0n');
+        }
+
+        // Check KPI Tiles
         const totalGroupsText = await page.$eval('#metricTotalGroups', el => el.innerText.trim());
         const totalVictimsText = await page.$eval('#metricTotalVictims', el => el.innerText.trim());
+        const velocity24hText = await page.$eval('#metricTodayCount', el => el.innerText.trim());
+        const velocity24hSub = await page.$eval('#metricTodaySub', el => el.innerText.trim());
+        const topSectorText = await page.$eval('#metricTopSector', el => el.innerText.trim());
+        const topSectorSub = await page.$eval('#metricSectorSub', el => el.innerText.trim());
+        const retainedHeroCount = await page.$eval('#heroRetainedCount', el => el.innerText.trim());
+
         console.log(`   - Hero KPI: ${totalGroupsText} Syndicates | ${totalVictimsText} Disclosures`);
+        console.log(`   - 24h Velocity KPI: ${velocity24hText} (${velocity24hSub})`);
+        console.log(`   - Top Sector KPI: ${topSectorText} (${topSectorSub})`);
+        console.log(`   - Dynamic Hero Retained Count: ${retainedHeroCount}`);
+
         if (parseInt(totalGroupsText, 10) <= 0 || parseInt(totalVictimsText, 10) <= 0) {
             throw new Error('Hero KPI metrics not populated with valid counts');
+        }
+        if (velocity24hText !== '28') {
+            throw new Error(`Expected rolling 24h count to be 28, but got: ${velocity24hText}`);
+        }
+        if (topSectorText !== 'Multiple / Unclassified') {
+            throw new Error(`Expected Top Sector to be 'Multiple / Unclassified', but got: ${topSectorText}`);
+        }
+        if (!topSectorSub.includes('unclassified')) {
+            throw new Error(`Expected Top Sector Sub to report unclassified coverage, but got: ${topSectorSub}`);
+        }
+        if (retainedHeroCount !== totalVictimsText) {
+            throw new Error(`Dynamic retained hero count mismatch: ${retainedHeroCount} vs ${totalVictimsText}`);
         }
 
         // 4. Default View: Victim Activity Ledger

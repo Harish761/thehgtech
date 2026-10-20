@@ -96,21 +96,53 @@
     function populateMetrics(data) {
         const totalGroups = data.total_groups || state.allGroups.length;
         const totalVictims = data.total_victims || state.allVictims.length;
-        const disclosuresToday = data.disclosures_today !== undefined ? data.disclosures_today : calculateTodayCount(state.allVictims);
+        
+        // True rolling 24-hour velocity metric (fallback computes against snapshot reference timestamp)
+        const disclosures24h = data.disclosures_24h !== undefined
+            ? data.disclosures_24h
+            : calculateRolling24h(state.allVictims, data.last_updated);
+            
         const topActor = data.top_threat_actor || (state.allGroups[0]?.name || 'N/A');
-        const topSector = data.top_target_sector || 'Technology';
+        const topSector = data.top_target_sector || 'Multiple / Unclassified';
+        const topSectorSub = data.top_target_sector_sub || calculateSectorSub(state.allVictims);
         const lastUpdated = data.last_updated_formatted || (data.last_updated ? new Date(data.last_updated).toLocaleString() : 'Recently');
 
         setText('metricTotalGroups', totalGroups.toLocaleString());
         setText('metricTotalVictims', totalVictims.toLocaleString());
-        setText('metricTodayCount', disclosuresToday.toLocaleString());
+        setText('metricTodayCount', disclosures24h.toLocaleString());
+        setText('metricTodaySub', 'Past 24 Hours Velocity');
         setText('metricTopActor', topActor);
         setText('metricTopSector', topSector);
+        setText('metricSectorSub', `Coverage: ${topSectorSub}`);
         setText('metricLastUpdated', lastUpdated);
+        setText('heroRetainedCount', totalVictims.toLocaleString());
+        setText('ledgerLastUpdated', `Sync: ${lastUpdated}`);
 
         // Update tab badges
         setText('badgeLedgerCount', totalVictims.toLocaleString());
         setText('badgeSyndicatesCount', totalGroups.toLocaleString());
+    }
+
+    function calculateRolling24h(victims, refTimeStr) {
+        if (!Array.isArray(victims) || victims.length === 0) return 0;
+        const refTime = refTimeStr ? new Date(refTimeStr).getTime() : Date.now();
+        if (isNaN(refTime)) return 0;
+        const h24Ago = refTime - (24 * 60 * 60 * 1000);
+        const graceMax = refTime + (5 * 60 * 1000); // 5 min clock skew tolerance
+
+        return victims.filter(v => {
+            if (!v || !v.discovered) return false;
+            const t = new Date(v.discovered).getTime();
+            if (isNaN(t) || t > graceMax) return false;
+            return t >= h24Ago;
+        }).length;
+    }
+
+    function calculateSectorSub(victims) {
+        if (!Array.isArray(victims) || victims.length === 0) return '0% unclassified';
+        const unclassified = victims.filter(v => !v || !v.sector).length;
+        const pct = Math.round((unclassified / victims.length) * 100);
+        return `${pct}% unclassified`;
     }
 
     function calculateTodayCount(victims) {

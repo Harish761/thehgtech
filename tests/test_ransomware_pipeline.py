@@ -287,6 +287,147 @@ class TestRansomwarePipeline(unittest.TestCase):
         res = fetch_ransomware.fetch_api_feed()
         self.assertEqual(res, [])
 
+    def test_source_attribution_and_disclaimer_wording(self):
+        """Verify source attribution and disclaimer accurately reflect unverified dark web notices."""
+        fixed_now = datetime(2026, 10, 20, 12, 0, 0, tzinfo=timezone.utc)
+        victims = [
+            {
+                'id': f'v_{i}',
+                'group_name': f'Group{i % 5}',
+                'victim_name': f'Victim {i}',
+                'discovered': fixed_now.isoformat(),
+                'dt_obj': fixed_now,
+                'sector': 'Technology'
+            }
+            for i in range(25)
+        ]
+        output = fetch_ransomware.aggregate_and_enrich(victims, window_days=7, now_dt=fixed_now)
+        self.assertIn("dark web extortion notices", output['provenance'].lower())
+        self.assertIn("not independently verified", output['verification_note'].lower())
+        self.assertNotIn("osint corroborated", output['provenance'].lower())
+
+    def test_rolling_24h_vs_calendar_day_fixed_timestamps(self):
+        """Verify rolling 24h count separates from calendar day with fixed timestamps."""
+        ref_now = datetime(2026, 10, 20, 12, 0, 0, tzinfo=timezone.utc) # Oct 20 12:00 UTC
+        victims = [
+            # Event 1: Today Oct 20 at 10:00 UTC (in 24h, today)
+            {
+                'id': 'v1', 'group_name': 'G1', 'victim_name': 'Vic1',
+                'discovered': '2026-10-20T10:00:00+00:00',
+                'discovered_date': '2026-10-20',
+                'dt_obj': datetime(2026, 10, 20, 10, 0, 0, tzinfo=timezone.utc)
+            },
+            # Event 2: Yesterday Oct 19 at 14:00 UTC (in 24h, yesterday calendar date)
+            {
+                'id': 'v2', 'group_name': 'G1', 'victim_name': 'Vic2',
+                'discovered': '2026-10-19T14:00:00+00:00',
+                'discovered_date': '2026-10-19',
+                'dt_obj': datetime(2026, 10, 19, 14, 0, 0, tzinfo=timezone.utc)
+            },
+            # Event 3: Yesterday Oct 19 at 08:00 UTC (outside 24h window: 28 hours ago)
+            {
+                'id': 'v3', 'group_name': 'G1', 'victim_name': 'Vic3',
+                'discovered': '2026-10-19T08:00:00+00:00',
+                'discovered_date': '2026-10-19',
+                'dt_obj': datetime(2026, 10, 19, 8, 0, 0, tzinfo=timezone.utc)
+            }
+        ]
+        output = fetch_ransomware.aggregate_and_enrich(victims, window_days=7, now_dt=ref_now)
+        # Rolling 24h must include v1 and v2 = 2
+        self.assertEqual(output['disclosures_24h'], 2)
+        # Calendar today must only include v1 = 1
+        self.assertEqual(output['disclosures_today'], 1)
+
+    def test_invalid_missing_future_timestamps(self):
+        """Verify pipeline safely handles invalid, null, and far-future timestamps."""
+        ref_now = datetime(2026, 10, 20, 12, 0, 0, tzinfo=timezone.utc)
+        victims = [
+            {'id': 'v1', 'group_name': 'G1', 'victim_name': 'Valid', 'discovered': '2026-10-20T11:00:00+00:00', 'discovered_date': '2026-10-20'},
+            {'id': 'v2', 'group_name': 'G1', 'victim_name': 'GarbageDate', 'discovered': 'not-a-valid-date', 'discovered_date': 'invalid'},
+            {'id': 'v3', 'group_name': 'G1', 'victim_name': 'NullDate', 'discovered': None, 'discovered_date': None},
+            {'id': 'v4', 'group_name': 'G1', 'victim_name': 'FarFuture', 'discovered': '2027-10-20T12:00:00+00:00', 'discovered_date': '2027-10-20'}
+        ]
+        output = fetch_ransomware.aggregate_and_enrich(victims, window_days=7, now_dt=ref_now)
+        # Only v1 is valid and within the rolling 24h window
+        self.assertEqual(output['disclosures_24h'], 1)
+
+    def test_sector_coverage_ties_and_unclassified_fallback(self):
+        """Verify unclassified >= 50% or ties default to Multiple / Unclassified."""
+        ref_now = datetime(2026, 10, 20, 12, 0, 0, tzinfo=timezone.utc)
+        # 20 victims, only 4 classified (20% coverage -> 80% unclassified)
+        # 2 Hospitality, 2 Fintech
+        victims = []
+        for i in range(16):
+            victims.append({'id': f'v_u_{i}', 'group_name': 'G1', 'victim_name': f'Unclass {i}', 'discovered': ref_now.isoformat(), 'sector': None})
+        victims.append({'id': 'v_h1', 'group_name': 'G1', 'victim_name': 'Hosp 1', 'discovered': ref_now.isoformat(), 'sector': 'Hospitality'})
+        victims.append({'id': 'v_h2', 'group_name': 'G1', 'victim_name': 'Hosp 2', 'discovered': ref_now.isoformat(), 'sector': 'Hospitality'})
+        victims.append({'id': 'v_f1', 'group_name': 'G1', 'victim_name': 'Fin 1', 'discovered': ref_now.isoformat(), 'sector': 'Fintech Payments'})
+        victims.append({'id': 'v_f2', 'group_name': 'G1', 'victim_name': 'Fin 2', 'discovered': ref_now.isoformat(), 'sector': 'Fintech Payments'})
+
+        output = fetch_ransomware.aggregate_and_enrich(victims, window_days=7, now_dt=ref_now)
+        self.assertEqual(output['top_target_sector'], 'Multiple / Unclassified')
+        self.assertIn("unclassified", output['top_target_sector_sub'])
+        self.assertEqual(output['sector_coverage']['unclassified_percent'], 80.0)
+
+    def test_status_parsing_filtering_noise(self):
+        """Verify status extraction accepts valid statuses and rejects non-status tags."""
+        # Valid statuses
+        _, _, stat1, _ = fetch_ransomware.extract_metadata_from_description("Sector · Country | [PENDING EXPOSURE]")
+        self.assertEqual(stat1, "PENDING EXPOSURE")
+
+        _, _, stat2, _ = fetch_ransomware.extract_metadata_from_description("Sector · Country | [NOT PAID — EXPOSED]")
+        self.assertEqual(stat2, "NOT PAID — EXPOSED")
+
+        # Non-status noise bracket tags must be rejected
+        _, _, stat3, _ = fetch_ransomware.extract_metadata_from_description("[AI generated] Company description text here.")
+        self.assertIsNone(stat3)
+
+        _, _, stat4, _ = fetch_ransomware.extract_metadata_from_description("Profile info [Sector: Manufacturing, Finance]")
+        self.assertIsNone(stat4)
+
+        _, _, stat5, _ = fetch_ransomware.extract_metadata_from_description("Automotive components [manufacturer] in Berlin.")
+        self.assertIsNone(stat5)
+
+    def test_country_normalization_iso_coverage(self):
+        """Verify expanded ISO codes resolve cleanly and prevent titlecased 2-letter codes."""
+        test_cases = [
+            ('CN', 'China', 'CN'),
+            ('EE', 'Estonia', 'EE'),
+            ('KZ', 'Kazakhstan', 'KZ'),
+            ('PK', 'Pakistan', 'PK'),
+            ('AD', 'Andorra', 'AD'),
+            ('RE', 'Réunion', 'RE'),
+            ('Texas, US', 'United States', 'US'),
+            ('Texas, USA', 'United States', 'US'),
+            ('London, UK', 'United Kingdom', 'GB'),
+        ]
+        for raw, expected_name, expected_code in test_cases:
+            name, code = fetch_ransomware.normalize_country(raw)
+            self.assertEqual(name, expected_name, f"Failed resolving name for {raw}")
+            self.assertEqual(code, expected_code, f"Failed resolving code for {raw}")
+
+    def test_domain_extraction_positive_and_negative(self):
+        """Verify domain extraction patterns work without false positives."""
+        # Pattern: Website:
+        _, _, _, dom1 = fetch_ransomware.extract_metadata_from_description("Name: Firm | Website: https://rpllplaw.com | City: NY")
+        self.assertEqual(dom1, "rpllplaw.com")
+
+        # Pattern: Domain:
+        _, _, _, dom2 = fetch_ransomware.extract_metadata_from_description("Organization: County | Domain: internal.seminole.org")
+        self.assertEqual(dom2, "internal.seminole.org")
+
+        # Pattern: Parenthetical (domain.com)
+        _, _, _, dom3 = fetch_ransomware.extract_metadata_from_description("BW Office World (bw-officeworld.de) is a German retailer")
+        self.assertEqual(dom3, "bw-officeworld.de")
+
+        # Pattern: Initial domain
+        _, _, _, dom4 = fetch_ransomware.extract_metadata_from_description("otsuka.com.tw Enterprise Cloud Services")
+        self.assertEqual(dom4, "otsuka.com.tw")
+
+        # Negative: File extension
+        _, _, _, dom5 = fetch_ransomware.extract_metadata_from_description("Financial statement download financial_report.pdf")
+        self.assertIsNone(dom5)
+
 
 if __name__ == '__main__':
     unittest.main()
