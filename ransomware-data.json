@@ -2,13 +2,21 @@
   "last_updated": "2026-10-20T12:13:29.969293+00:00",
   "last_updated_formatted": "Oct 20, 2026 12:13 UTC",
   "period": "Last 7 days",
-  "provenance": "Extortion leak site disclosure monitoring via Ransomware.live OSINT feed",
-  "verification_note": "Victim notices reflect claims published by extortion groups on dark web leak sites and do not constitute independent forensics or incident confirmation.",
+  "provenance": "Aggregated dark web extortion notices via Ransomware.live telemetry",
+  "verification_note": "Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.",
   "total_groups": 34,
   "total_victims": 205,
+  "disclosures_24h": 28,
   "disclosures_today": 7,
   "top_threat_actor": "N0N",
-  "top_target_sector": "Hospitality",
+  "top_target_sector": "Multiple / Unclassified",
+  "top_target_sector_sub": "77% unclassified",
+  "sector_coverage": {
+    "total_records": 205,
+    "classified_count": 48,
+    "unclassified_count": 157,
+    "unclassified_percent": 76.6
+  },
   "groups": [
     {
       "name": "N0N",
@@ -85,7 +93,7 @@
           "country_code": "US",
           "sector": "Erp Software And Hosting Company",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "ERP software and hosting company · USA | Internal network configurations and security credentials of an ERP hosting company; Administrator and remote access credentials; Network topology of corporate ",
           "source": "ransomware.live/rss"
         },
@@ -100,7 +108,7 @@
           "country_code": "US",
           "sector": "Special-Effects Fog Fluid Manufacturer And Distributor (Order Management And Shipping Operations)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "special-effects fog fluid manufacturer and distributor (order management and shipping operations) · Tennessee, USA | The complete shipping and order management database of a specialty fluid manufactur",
           "source": "ransomware.live/rss"
         },
@@ -115,7 +123,7 @@
           "country_code": "US",
           "sector": "Hospitality",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "hospitality · United States | Network and phone system configurations for a hospitality property, including access credentials; Complete phone fleet and voice equipment inventory | [NOT PAID — EXPOSED",
           "source": "ransomware.live/rss"
         },
@@ -130,7 +138,7 @@
           "country_code": "US",
           "sector": "Healthcare - Ambulatory Surgery Center (Us)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "Healthcare - Ambulatory Surgery Center (US) · Texas, US | The complete network configuration of an outpatient endoscopy surgery center: every account, password and access path; Proof of total control ",
           "source": "ransomware.live/rss"
         },
@@ -145,7 +153,7 @@
           "country_code": "US",
           "sector": "Investigations And Due Diligence",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "investigations and due diligence · USA | Client investigation reports on named individuals, with dates of birth, aliases, phone numbers and addresses; Comprehensive background reports on investigation",
           "source": "ransomware.live/rss"
         },
@@ -235,7 +243,7 @@
           "country_code": "EG",
           "sector": "Computer Training Academy",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "computer training academy · Egypt | Course materials and programming projects; Exam preparation materials; Student account folders and work; A complete copy of the course database | [NOT PAID — EXPOSE",
           "source": "ransomware.live/rss"
         },
@@ -250,7 +258,7 @@
           "country_code": "US",
           "sector": "Accounting & Tax Preparation (Us)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "Accounting & Tax Preparation (US) · Massachusetts, USA | Books and tax records of a Massachusetts bookkeeping and tax practice: live accounting company files of more than 60 client companies with all ",
           "source": "ransomware.live/rss"
         },
@@ -265,7 +273,7 @@
           "country_code": "US",
           "sector": "Semiconductor Manufacturing",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "Semiconductor manufacturing · California, USA | Corporate business records and working files from the company's file servers; Employee and payroll related records; Financial and accounting documents |",
           "source": "ransomware.live/rss"
         },
@@ -325,7 +333,7 @@
           "country_code": "NL",
           "sector": "Fx Liquidity And Trading Technology",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "FX liquidity and trading technology · Netherlands | Live client trading records: order and execution data for the banks and institutions trading through this firm, with amounts and account identifiers",
           "source": "ransomware.live/rss"
         },
@@ -340,7 +348,7 @@
           "country_code": "US",
           "sector": "Manufacturing",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "manufacturing · USA | 217,186 production and check records from the plant production system; 33 company and partner accounts with plain text passwords; vendor and item master data with part numbers; b",
           "source": "ransomware.live/rss"
         },
@@ -355,7 +363,7 @@
           "country_code": "US",
           "sector": "Software Quality Assurance (Wolters Kluwer/Cch Axcess Test Lab)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "software quality assurance (Wolters Kluwer/CCH Axcess test lab) · California, USA | VPN access credentials for all 64 employee accounts; Domain controller configuration: group policies, DNS zones, net",
           "source": "ransomware.live/rss"
         },
@@ -430,7 +438,7 @@
           "country_code": "BR",
           "sector": "Packaging Manufacturing (Extrusion)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "packaging manufacturing (extrusion) · Brazil | Senior Sapiens ERP and Vetorh HR payroll platform; eSocial government payroll filings September and October 2026; Thousands of electronic invoices with c",
           "source": "ransomware.live/rss"
         },
@@ -471,8 +479,8 @@
           "discovered": "2026-10-16T15:56:36+00:00",
           "discovered_date": "2026-10-16",
           "post_url": "https://www.ransomware.live/id/Q29tcGFueSAjNzhATjBu",
-          "country": "Texas, Us",
-          "country_code": null,
+          "country": "United States",
+          "country_code": "US",
           "sector": "Healthcare - Ambulatory Surgery Center (Us)",
           "domain": null,
           "status": "PENDING EXPOSURE",
@@ -561,8 +569,8 @@
           "discovered": "2026-10-16T14:56:59+00:00",
           "discovered_date": "2026-10-16",
           "post_url": "https://www.ransomware.live/id/Q29tcGFueSAjODFATjBu",
-          "country": "Texas, Us",
-          "country_code": null,
+          "country": "United States",
+          "country_code": "US",
           "sector": "Healthcare - Ambulatory Surgery Center (Us)",
           "domain": null,
           "status": "PENDING EXPOSURE",
@@ -595,7 +603,7 @@
           "country_code": "US",
           "sector": "Construction And Accounting (Us)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "construction and accounting (US) · New York, USA | Employee W-2 forms with Social Security numbers and quarterly payroll tax filings of a New York construction group; 2024 partnership tax returns with",
           "source": "ransomware.live/rss"
         },
@@ -610,7 +618,7 @@
           "country_code": "US",
           "sector": "Dental Laboratory (Cad/Cam Manufacturing)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "dental laboratory (CAD/CAM manufacturing) · Missouri, USA | Patient case designs of a dental laboratory with full patient names, tooth numbers and material/shade codes; CNC milling toolpaths and MillB",
           "source": "ransomware.live/rss"
         },
@@ -625,7 +633,7 @@
           "country_code": "US",
           "sector": "Healthcare - Ophthalmology (Us)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "Healthcare - Ophthalmology (US) · Mississippi, USA | Patient records of a Mississippi ophthalmology practice: 13,308 patient records with names and dates of birth, taken from the patient database back",
           "source": "ransomware.live/rss"
         },
@@ -670,7 +678,7 @@
           "country_code": "US",
           "sector": "Medical Device Manufacturing (Us)",
           "domain": null,
-          "status": "NOT PAID — EXPOSED",
+          "status": null,
           "description_snippet": "Medical device manufacturing (US) · Texas, USA | FDA quality system records of a Texas spinal implant manufacturer: CAPAs, device history records for implant lots, management reviews, design drawings ",
           "source": "ransomware.live/rss"
         },
@@ -747,7 +755,6 @@
         "Netherlands",
         "South Korea",
         "Switzerland",
-        "Texas, Us",
         "Trinidad and Tobago",
         "Tunisia",
         "United States"
@@ -819,7 +826,7 @@
           "country": "Italy",
           "country_code": "IT",
           "sector": null,
-          "domain": null,
+          "domain": "giodentalspa.com",
           "status": null,
           "description_snippet": "giodentalspa.com Gio Dental & Med Spa  private dental and aesthetic clinic founded around 2006 in Ciudad Juárez, Mexico, targeting patients from the US border region of El Paso and Las Cruces. The pra",
           "source": "ransomware.live/rss"
@@ -834,7 +841,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "firstdentalhealth.com",
           "status": null,
           "description_snippet": "firstdentalhealth.com First Dental Health, Inc. dental consulting company founded in 1995 and based in Sacramento, California. It is led by Chairman and CEO Michael Zhang together with founder Dr. Ric",
           "source": "ransomware.live/rss"
@@ -846,10 +853,10 @@
           "discovered": "2026-10-17T16:51:56+00:00",
           "discovered_date": "2026-10-17",
           "post_url": "https://www.ransomware.live/id/QWlyUUB0aGVnZW50bGVtZW4",
-          "country": "Ad",
-          "country_code": null,
+          "country": "Andorra",
+          "country_code": "AD",
           "sector": null,
-          "domain": null,
+          "domain": "airq-ad.com",
           "status": null,
           "description_snippet": "airq-ad.com AirQ UAE drone manufacturer founded in 2021 in Masdar City, Abu Dhabi, producing unmanned aerial systems fully in-house. It was started by Croatian entrepreneurs Dino Dedić as CEO and Igor",
           "source": "ransomware.live/rss"
@@ -864,7 +871,7 @@
           "country": "United Kingdom",
           "country_code": "GB",
           "sector": null,
-          "domain": null,
+          "domain": "martinllp.net",
           "status": null,
           "description_snippet": "martinllp.net Martin LLP Martin LLP is a boutique business law firm founded in 1996, with offices in Stamford and New York. It focuses on middle-market companies, private equity sponsors, lenders, and",
           "source": "ransomware.live/rss"
@@ -879,7 +886,7 @@
           "country": "Switzerland",
           "country_code": "CH",
           "sector": null,
-          "domain": null,
+          "domain": "map.ch",
           "status": null,
           "description_snippet": "map.ch MAP SA Swiss communications agency in Cossonay, Vaud (UID CHE-106.859.955), operating since 1968 as a business; the current legal entity was registered in 1981. It's a ~13-person full-service s",
           "source": "ransomware.live/rss"
@@ -909,7 +916,7 @@
           "country": "Spain",
           "country_code": "ES",
           "sector": null,
-          "domain": null,
+          "domain": "sbiav.com",
           "status": null,
           "description_snippet": "sbiav.com SBI Audiovisuel is a Quebec AV company founded in 1991 (HQ in Saint-Bruno-de-Montarville, ~11 staff), doing corporate event production — sound, lighting, video, webcasting — plus its signatu",
           "source": "ransomware.live/rss"
@@ -939,7 +946,7 @@
           "country": "India",
           "country_code": "IN",
           "sector": null,
-          "domain": null,
+          "domain": "netcoreunbxd.com",
           "status": null,
           "description_snippet": "netcoreunbxd.com Netcore Unbxd AI product-discovery platform for enterprise e-commerce: smart site search, 1:1 personalization, recommendations, visual intelligence (\"Complete the Look\"), catalog enri",
           "source": "ransomware.live/rss"
@@ -954,7 +961,7 @@
           "country": "Germany",
           "country_code": "DE",
           "sector": null,
-          "domain": null,
+          "domain": "regio-nord.com",
           "status": null,
           "description_snippet": "regio-nord.com REGiO-Nord mbH (HRB 1203, Amtsgericht Neuruppin) is a municipal regional-development company in Gransee, Brandenburg, founded 2008–2009 to run the shared \"Mittelzentrum\" of Gransee–Zehd",
           "source": "ransomware.live/rss"
@@ -969,7 +976,7 @@
           "country": "Thailand",
           "country_code": "TH",
           "sector": null,
-          "domain": null,
+          "domain": "museumsiam.org",
           "status": null,
           "description_snippet": "museumsiam.org Museum Siam museum in Bangkok run by NDMI under the public organization OKMD — the .org domain is real, but it's a government institute, not a private company. It occupies the former Mi",
           "source": "ransomware.live/rss"
@@ -984,7 +991,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "skincenter.com",
           "status": null,
           "description_snippet": "skincenter.com Skin Center dermatology clinic in Fort Lauderdale, FL (6550 N Federal Hwy, Suite 320) with 40+ years of practice roots (formerly Dr. Roger Stewart's clinic, led by Dr. Barry Galitzer si",
           "source": "ransomware.live/rss"
@@ -1014,7 +1021,7 @@
           "country": "Australia",
           "country_code": "AU",
           "sector": null,
-          "domain": null,
+          "domain": "inovarpackaging.com",
           "status": null,
           "description_snippet": "inovarpackaging.com Inovar Packaging Group (Irving, TX) is a PE-backed buy-and-build platform producing pressure-sensitive labels, shrink sleeves, flexible packaging, and RFID — 14 US plants, 12+ acqu",
           "source": "ransomware.live/rss"
@@ -1029,7 +1036,7 @@
           "country": "Ireland",
           "country_code": "IE",
           "sector": null,
-          "domain": null,
+          "domain": "engineersireland.ie",
           "status": null,
           "description_snippet": "engineersireland.ie Engineers Ireland Ireland's national professional body for engineers, founded 1835 with a Royal Charter (1877) and statutory authority under a 1969 Act to award the \"Chartered Engi",
           "source": "ransomware.live/rss"
@@ -1044,7 +1051,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "northbridge.com",
           "status": null,
           "description_snippet": "northbridge.com North Bridge Venture Partners one of Boston's most storied venture capital firms, founded in 1994 by Bill Geary, Doug Kingsley, Ed Anderson, Mike Pehl, and Richard D'Amore — ~$3.5B und",
           "source": "ransomware.live/rss"
@@ -1071,10 +1078,10 @@
           "discovered": "2026-10-16T09:34:38+00:00",
           "discovered_date": "2026-10-16",
           "post_url": "https://www.ransomware.live/id/UGV0cm9sZXVtIFRlbGNvbSBDb21tdW5pY2F0aW9uc0B0aGVnZW50bGVtZW4",
-          "country": "Pk",
-          "country_code": null,
+          "country": "Pakistan",
+          "country_code": "PK",
           "sector": null,
-          "domain": null,
+          "domain": "ptelcom.com",
           "status": null,
           "description_snippet": "ptelcom.com Petroleum Telcom, Inc. (dba Telcom, Inc. / Telcom Communications) Southern California communications integrator founded in 1978 in Oxnard, CA — specializing in two-way radio for police/fir",
           "source": "ransomware.live/rss"
@@ -1089,7 +1096,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "axlelogistics.com",
           "status": null,
           "description_snippet": "axlelogistics.com Axle Logistics non-asset freight brokerage founded in 2012 in Knoxville, Tennessee, by Drew Johnson and Jon Clay — two University of Tennessee grads who started with two people and o",
           "source": "ransomware.live/rss"
@@ -1104,7 +1111,7 @@
           "country": "Canada",
           "country_code": "CA",
           "sector": null,
-          "domain": null,
+          "domain": "caspapermill.com",
           "status": null,
           "description_snippet": "caspapermill.com C.A.S. Paper Mill Co., Ltd. is a Thai paper manufacturer in Singburi (est. 1990, operating since 1994), part of the Charoen Aksorn Group — Thailand's largest paper distributor, backed",
           "source": "ransomware.live/rss"
@@ -1164,7 +1171,7 @@
           "country": "United Kingdom",
           "country_code": "GB",
           "sector": null,
-          "domain": null,
+          "domain": "jjsjustice.com",
           "status": null,
           "description_snippet": "jjsjustice.com JJS Justice (Janet, Janet & Suggs, LLC) is a national plaintiff-side firm based in Baltimore/Pikesville, MD, founded 1996 (practice since 1978) — specializing in birth injuries/CP, medi",
           "source": "ransomware.live/rss"
@@ -1179,7 +1186,7 @@
           "country": "Canada",
           "country_code": "CA",
           "sector": null,
-          "domain": null,
+          "domain": "svmottawa.ca",
           "status": null,
           "description_snippet": "svmottawa.ca  ServiceMaster of Ottawa Canadian property restoration and commercial cleaning company (legal entity 1351120 Ontario Inc.), a ServiceMaster franchise since 1969 — owned since 2006 by John",
           "source": "ransomware.live/rss"
@@ -1194,7 +1201,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "entrysystems.com",
           "status": null,
           "description_snippet": "entrysystems.com Entry Systems Garage Doors & Gates 3rd-generation family business in Laguna Hills, CA (with a second design center in Tustin, opened 2024) — servicing garage doors and automated gates",
           "source": "ransomware.live/rss"
@@ -1254,7 +1261,7 @@
           "country": "Brazil",
           "country_code": "BR",
           "sector": null,
-          "domain": null,
+          "domain": "upf.br",
           "status": null,
           "description_snippet": "upf.br Universidade de Passo Fundo private community philanthropic university in Passo Fundo, Rio Grande do Sul, Brazil — founded 1968 (Decree 62.835), run by the FUPF foundation, with 7 campuses, ~10",
           "source": "ransomware.live/rss"
@@ -1269,7 +1276,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "campbellrhea.com",
           "status": null,
           "description_snippet": "campbellrhea.com Campbell Rhea US manufacturer of laboratory and educational casework — legal entity Institutional Casework, Inc. (ICI) — with roots to 1951 in Paris, TN. The brand survived a 2005 tor",
           "source": "ransomware.live/rss"
@@ -1284,7 +1291,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "dentistryofnewportbeach.com",
           "status": null,
           "description_snippet": "dentistryofnewportbeach.com Newport Beach Dentistry family dental practice in Newport Beach, CA (1401 Avocado Ave, Ste 209), founded 30+ years ago and currently run by brothers Dr. F. Frank Foroutan (",
           "source": "ransomware.live/rss"
@@ -1296,10 +1303,10 @@
           "discovered": "2026-10-16T09:29:27+00:00",
           "discovered_date": "2026-10-16",
           "post_url": "https://www.ransomware.live/id/VHVsc2F0QHRoZWdlbnRsZW1lbg",
-          "country": "Kz",
-          "country_code": null,
+          "country": "Kazakhstan",
+          "country_code": "KZ",
           "sector": null,
-          "domain": null,
+          "domain": "tulsat.com",
           "status": null,
           "description_snippet": "tulsat.com TULSAT leading US distributor and repair center for cable TV (CATV) equipment — headend gear, fiber nodes, amplifiers, taps, power supplies — founded 1985 by brothers David and Ken Chymiak ",
           "source": "ransomware.live/rss"
@@ -1314,7 +1321,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "sharedmedtech.com",
           "status": null,
           "description_snippet": "sharedmedtech.com Shared Medical Technology, Inc. US medical equipment rental and service company founded in 2004, HQ in Schenectady, NY — 7 offices (NY, MA, VA), ~40–50 staff, no external funding rai",
           "source": "ransomware.live/rss"
@@ -1329,7 +1336,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "sbendo.com",
           "status": null,
           "description_snippet": "sbendo.com Santa Barbara Endodontics solo specialty practice of Dr. Terrell F. Pannkuk, DDS, MScD — one of the most credentialed endodontists in the US — at 9 E Pedregosa St, Santa Barbara, CA, operat",
           "source": "ransomware.live/rss"
@@ -1352,7 +1359,7 @@
       ],
       "industries": [],
       "countries": [
-        "Ad",
+        "Andorra",
         "Australia",
         "Brazil",
         "Canada",
@@ -1363,8 +1370,8 @@
         "Ireland",
         "Italy",
         "Japan",
-        "Kz",
-        "Pk",
+        "Kazakhstan",
+        "Pakistan",
         "South Africa",
         "South Korea",
         "Spain",
@@ -1375,6 +1382,7 @@
         "United States"
       ],
       "country_codes": [
+        "AD",
         "AU",
         "BR",
         "CA",
@@ -1389,6 +1397,8 @@
         "IT",
         "JP",
         "KR",
+        "KZ",
+        "PK",
         "TH",
         "TW",
         "US",
@@ -1837,8 +1847,8 @@
           "discovered": "2026-10-15T12:07:45+00:00",
           "discovered_date": "2026-10-15",
           "post_url": "https://www.ransomware.live/id/Q29tbXVuZSBEdSBUYW1wb25AcWlsaW4",
-          "country": "Re",
-          "country_code": null,
+          "country": "Réunion",
+          "country_code": "RE",
           "sector": null,
           "domain": null,
           "status": null,
@@ -1876,7 +1886,7 @@
         "Nigeria",
         "Peru",
         "Portugal",
-        "Re",
+        "Réunion",
         "South Korea",
         "Spain",
         "Thailand",
@@ -1902,6 +1912,7 @@
         "NL",
         "PE",
         "PT",
+        "RE",
         "TH",
         "US"
       ],
@@ -1946,7 +1957,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "www.marvinpac.com",
           "status": null,
           "description_snippet": "Marvinpac CZ, s.r.o. — the Czech subsidiary of Swiss group Marvinpac SA — specialises in contract packaging and co-packing for some of the world's leading brands: Nespresso, L'Oréal, COTY (Gucci, Hugo",
           "source": "ransomware.live/rss"
@@ -1958,10 +1969,10 @@
           "discovered": "2026-10-18T07:27:55+00:00",
           "discovered_date": "2026-10-18",
           "post_url": "https://www.ransomware.live/id/cGFzc2F2YW50LWVlLmNvbUBzZXR0cmE",
-          "country": "Ee",
-          "country_code": null,
+          "country": "Estonia",
+          "country_code": "EE",
           "sector": null,
-          "domain": null,
+          "domain": "passavant-ee.com",
           "status": null,
           "description_snippet": "German engineering company Passavant Energy &amp; Environment GmbH, which builds wastewater treatment plants with German and Swiss taxpayer money (KfW, SECO), is in reality controlled by Dubai-based c",
           "source": "ransomware.live/rss"
@@ -1976,7 +1987,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "acclaimcompanies.com",
           "status": null,
           "description_snippet": "The Social Security Numbers of both group executives — Gerald C. Johnson Jr. and Mark C. Johnson — are fully exposed in corporate documents (IRS Form SS-4). The Johnson Family Trust holds an investmen",
           "source": "ransomware.live/rss"
@@ -1991,7 +2002,7 @@
           "country": null,
           "country_code": null,
           "sector": null,
-          "domain": null,
+          "domain": "binsky.com",
           "status": null,
           "description_snippet": "Piscataway, New Jersey. Binsky &amp; Snyder, LLC has been servicing piping, HVAC, and mechanical systems since 1938. Its website tells a story of \"family values\" and \"trust from day one.\" The actual c",
           "source": "ransomware.live/rss"
@@ -2006,7 +2017,7 @@
           "country": "Norway",
           "country_code": "NO",
           "sector": null,
-          "domain": null,
+          "domain": "konsis.no",
           "status": null,
           "description_snippet": "We hold a large volume of data from Konsis Grafisk AS — a Norwegian design, marketing and print agency with annual revenue of approximately NOK 100 million.",
           "source": "ransomware.live/rss"
@@ -2021,7 +2032,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "monroeroadways.com",
           "status": null,
           "description_snippet": "Rochester, New York. A construction company that goes by Monroe Roadways in bid documents but appears as MRI Contractors of New York, Inc. in banking records. One address: 300 Hogan Road, Fairport. On",
           "source": "ransomware.live/rss"
@@ -2036,7 +2047,7 @@
           "country": null,
           "country_code": null,
           "sector": null,
-          "domain": null,
+          "domain": "adapt-global.com",
           "status": null,
           "description_snippet": "The company sells to federal customers under a GSA MAS contract and calls its products \"U.S.-made / Made in the USA,\" yet its own documents reveal Taiwanese and Chinese suppliers, Hong Kong-based deve",
           "source": "ransomware.live/rss"
@@ -2051,7 +2062,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "exo.inc",
           "status": null,
           "description_snippet": "This article is based on a portion of the company's documents to which we gained access. Patient names, internal identifiers of employees as research subjects, specific diagnoses, serial numbers of pr",
           "source": "ransomware.live/rss"
@@ -2059,11 +2070,12 @@
       ],
       "industries": [],
       "countries": [
-        "Ee",
+        "Estonia",
         "Norway",
         "United States"
       ],
       "country_codes": [
+        "EE",
         "NO",
         "US"
       ],
@@ -2271,7 +2283,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "chooseultimate.com",
           "status": null,
           "description_snippet": "Ultimate Health Plans is a local Medicare Advantage Plan based in Spring Hill, Florida, serving vari...",
           "source": "ransomware.live/rss"
@@ -2286,7 +2298,7 @@
           "country": "Malaysia",
           "country_code": "MY",
           "sector": null,
-          "domain": null,
+          "domain": "ock.com.my",
           "status": null,
           "description_snippet": "OCK Group Berhad specializes in telco network services and infrastructure in Malaysia, offering solu...",
           "source": "ransomware.live/rss"
@@ -2301,7 +2313,7 @@
           "country": "Italy",
           "country_code": "IT",
           "sector": null,
-          "domain": null,
+          "domain": "torcivialaw.com",
           "status": null,
           "description_snippet": "Torcivia, Donlon, Goddeau & Rubin, P.A. continues to provide high quality, personalized, and practic...",
           "source": "ransomware.live/rss"
@@ -2316,7 +2328,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "kidzrkooldental.com",
           "status": null,
           "description_snippet": "Kidz R Kool Pediatric Dentistry is a dental practice located in Peoria, AZ, specializing in pediatri...",
           "source": "ransomware.live/rss"
@@ -2331,7 +2343,7 @@
           "country": "Egypt",
           "country_code": "EG",
           "sector": null,
-          "domain": null,
+          "domain": "lcww.com.eg",
           "status": null,
           "description_snippet": "تم إنشاء شركة مياه الشرب والصرف الصحي بالأقصر بقرار السيد المهندس وزير الإسكان والمرافق والتنمية ا...",
           "source": "ransomware.live/rss"
@@ -2346,7 +2358,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "neweramachines.com",
           "status": null,
           "description_snippet": "New Era Machines is a leading manufacturer of biscuit and cookie production lines, recognized for it...",
           "source": "ransomware.live/rss"
@@ -2361,7 +2373,7 @@
           "country": "Mexico",
           "country_code": "MX",
           "sector": null,
-          "domain": null,
+          "domain": "grupoabg.com",
           "status": null,
           "description_snippet": "Grupo ABG specializes in providing comprehensive solutions for organizations, focusing on business p...",
           "source": "ransomware.live/rss"
@@ -2598,7 +2610,7 @@
           "country_code": "US",
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] Middleby Corporation is a U.S.-based manufacturer of commercial and residential kitchen equipment, food processing machinery, and related technology solutions. It operates in the indust",
           "source": "ransomware.live/rss"
         },
@@ -2613,7 +2625,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] Sunshine Mills, Inc. is a United States-based company operating in the pet food manufacturing industry. Headquartered in Red Bay, Alabama, it produces dry pet food products, including d",
           "source": "ransomware.live/rss"
         },
@@ -2628,7 +2640,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] N/A\n\nThe name \"Hensley\" alone is not sufficient to identify a specific company with verifiable details, as multiple businesses operate under this name across different industries and co",
           "source": "ransomware.live/rss"
         },
@@ -2643,7 +2655,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] Buckle, Inc. is a United States-based specialty retailer operating in the apparel and fashion industry. Founded in 1948 and headquartered in Kearney, Nebraska, the company sells clothin",
           "source": "ransomware.live/rss"
         },
@@ -2658,7 +2670,7 @@
           "country_code": "GB",
           "sector": "Professional Services",
           "domain": null,
-          "status": "DISCLOSED",
+          "status": null,
           "description_snippet": "camden-living disclosed by Iah6477",
           "source": "ransomware.live/legacy"
         }
@@ -2715,7 +2727,7 @@
           "country": "Germany",
           "country_code": "DE",
           "sector": null,
-          "domain": null,
+          "domain": "seetelhotels.de",
           "status": null,
           "description_snippet": "Seetel Hotels (SEETEL Hotel GmbH & Co. Betriebs KG) has been notified that a substantial volume of confidential and internal corporate data has been compromised.\n \n The affected data includes, but is ",
           "source": "ransomware.live/rss"
@@ -2730,7 +2742,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "fairfeelegalservices.com",
           "status": null,
           "description_snippet": "proof",
           "source": "ransomware.live/rss"
@@ -2760,7 +2772,7 @@
           "country": "Costa Rica",
           "country_code": "CR",
           "sector": null,
-          "domain": null,
+          "domain": "www.coopecaja.fi.cr",
           "status": null,
           "description_snippet": "/",
           "source": "ransomware.live/rss"
@@ -2775,7 +2787,7 @@
           "country": "Poland",
           "country_code": "PL",
           "sector": null,
-          "domain": null,
+          "domain": "nowaszkola.com",
           "status": null,
           "description_snippet": "/",
           "source": "ransomware.live/rss"
@@ -2950,7 +2962,7 @@
           "country_code": "JP",
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] N/A\n\nI don't have reliable, verified information about a specific company called \"Kissei Shoji\" to provide an accurate factual description of its operations, industry, and country. Prov",
           "source": "ransomware.live/rss"
         },
@@ -2965,7 +2977,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] N/A\n\nI don't have reliable, verifiable information about a company specifically named \"Chugoku Bend.\" This does not correspond to a company I can confidently identify in my knowledge ba",
           "source": "ransomware.live/rss"
         },
@@ -2980,7 +2992,7 @@
           "country_code": "KR",
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] N/A",
           "source": "ransomware.live/rss"
         },
@@ -2995,7 +3007,7 @@
           "country_code": "AT",
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] The Brenner Base Tunnel (Brennerbasistunnel, BBT) is a major railway infrastructure project, not a company in the traditional sense, though it is managed by Brenner Base Tunnel BBT SE, ",
           "source": "ransomware.live/rss"
         }
@@ -3238,7 +3250,7 @@
           "country_code": "BR",
           "sector": null,
           "domain": null,
-          "status": "Sector: Manufacturing, Finance, Transportation",
+          "status": null,
           "description_snippet": "Production and preparation of ready-mixed concrete \nand mortars. Production of cement products for \nconstruction. Construction of buildings and other \nconstruction works. Rental of vehicles and indust",
           "source": "ransomware.live/rss"
         },
@@ -3253,7 +3265,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "Sector: Manufacturing, Finance",
+          "status": null,
           "description_snippet": "Spanish company that specializes in professional \nlighting for shops and commercial spaces.\nThere are many customer documents and employee data. [Sector: Manufacturing, Finance]",
           "source": "ransomware.live/rss"
         },
@@ -3268,7 +3280,7 @@
           "country_code": "BR",
           "sector": "Energy & Utilities",
           "domain": null,
-          "status": "DISCLOSED",
+          "status": null,
           "description_snippet": "MPI LTDA disclosed by Emperador",
           "source": "ransomware.live/legacy"
         }
@@ -3353,7 +3365,7 @@
           "country": "India",
           "country_code": "IN",
           "sector": null,
-          "domain": null,
+          "domain": "enchantedfinejewellery.in",
           "status": null,
           "description_snippet": "enchantedfinejewellery.in",
           "source": "ransomware.live/rss"
@@ -3579,7 +3591,7 @@
           "country": null,
           "country_code": null,
           "sector": null,
-          "domain": null,
+          "domain": "bw-officeworld.de",
           "status": null,
           "description_snippet": "BW Office World (bw-officeworld.de) is a German specialized online retailer providing comprehensive workspace and office supply solutions. Their catalog features office furniture, ergonomic chairs, pr",
           "source": "ransomware.live/rss"
@@ -3594,7 +3606,7 @@
           "country": "Germany",
           "country_code": "DE",
           "sector": null,
-          "domain": null,
+          "domain": "brueninghoff.de",
           "status": null,
           "description_snippet": "Brüninghoff Group (brueninghoff.de) is a German construction and manufacturing company headquartered in Heiden, founded in 1974. The company specializes in turnkey project development, engineering, an",
           "source": "ransomware.live/rss"
@@ -3648,7 +3660,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "rpllplaw.com",
           "status": null,
           "description_snippet": "NameCompany: Rosenberg & Pittinsky, LLP |\nCountry: New York, NY 10016 |\nWebsite: rpllplaw.com |\nRevenue: $5 Million |\nIndustry: Legal Services, Law Firm, Real Estate & Commercial Litigation |\nEmployee",
           "source": "ransomware.live/rss"
@@ -3663,7 +3675,7 @@
           "country": "United States",
           "country_code": "US",
           "sector": null,
-          "domain": null,
+          "domain": "internal.seminole.org",
           "status": null,
           "description_snippet": "NameCompany: Seminole Schools |\nDomain: internal.seminole.org |\nCountry: Seminole,Florida,US |\nWebsite: sps.k12.ok.us |\nRevenue: $15.5 Million |\nIndustry: Education General, Education |\nEmployees: 50-",
           "source": "ransomware.live/rss"
@@ -3718,7 +3730,7 @@
           "country_code": "US",
           "sector": null,
           "domain": null,
-          "status": "manufacturer",
+          "status": null,
           "description_snippet": "[manufacturer] POWERsonic Industries Inc. — a privately held wire harness and cable assembly contract manufacturer founded in 1998 with ~100-150 employees across 7 locations.\n\nThe exposed material spa",
           "source": "ransomware.live/rss"
         },
@@ -3873,7 +3885,7 @@
           "country_code": null,
           "sector": null,
           "domain": null,
-          "status": "DISCLOSED",
+          "status": null,
           "description_snippet": "S*o**n* Public Schools disclosed by Nightspire",
           "source": "ransomware.live/legacy"
         }
@@ -4092,20 +4104,22 @@
           "discovered": "2026-10-19T13:50:46+00:00",
           "discovered_date": "2026-10-19",
           "post_url": "https://www.ransomware.live/id/UGluZ0NBUCAvIFRpREIgQ2xvdWRAZnVsY3J1bXNlYw",
-          "country": "Cn",
-          "country_code": null,
+          "country": "China",
+          "country_code": "CN",
           "sector": null,
           "domain": null,
-          "status": "AI generated",
+          "status": null,
           "description_snippet": "[AI generated] PingCAP is a technology company founded in 2015 in Beijing, China, specializing in distributed database software. It develops TiDB, an open-source, MySQL-compatible distributed SQL data",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [],
       "countries": [
-        "Cn"
+        "China"
       ],
-      "country_codes": [],
+      "country_codes": [
+        "CN"
+      ],
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
@@ -4417,7 +4431,7 @@
           "country": "Mexico",
           "country_code": "MX",
           "sector": null,
-          "domain": null,
+          "domain": "bienestarempresarial.mx",
           "status": null,
           "description_snippet": "bienestarempresarial.mx",
           "source": "ransomware.live/rss"
@@ -4472,7 +4486,7 @@
           "country_code": "AE",
           "sector": null,
           "domain": null,
-          "status": "DISCLOSED",
+          "status": null,
           "description_snippet": "Amity University Dubai disclosed by Blacknevas",
           "source": "ransomware.live/legacy"
         }
@@ -4526,7 +4540,7 @@
           "country_code": "IT",
           "sector": null,
           "domain": null,
-          "status": "DISCLOSED",
+          "status": null,
           "description_snippet": "Alma Center Servizi Medicali S.r.l. disclosed by Spacebears",
           "source": "ransomware.live/legacy"
         }
@@ -4652,7 +4666,7 @@
       "country": null,
       "country_code": null,
       "sector": null,
-      "domain": null,
+      "domain": "bw-officeworld.de",
       "status": null,
       "description_snippet": "BW Office World (bw-officeworld.de) is a German specialized online retailer providing comprehensive workspace and office supply solutions. Their catalog features office furniture, ergonomic chairs, pr",
       "source": "ransomware.live/rss"
@@ -4667,7 +4681,7 @@
       "country": "Germany",
       "country_code": "DE",
       "sector": null,
-      "domain": null,
+      "domain": "brueninghoff.de",
       "status": null,
       "description_snippet": "Brüninghoff Group (brueninghoff.de) is a German construction and manufacturing company headquartered in Heiden, founded in 1974. The company specializes in turnkey project development, engineering, an",
       "source": "ransomware.live/rss"
@@ -4697,7 +4711,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "rpllplaw.com",
       "status": null,
       "description_snippet": "NameCompany: Rosenberg & Pittinsky, LLP |\nCountry: New York, NY 10016 |\nWebsite: rpllplaw.com |\nRevenue: $5 Million |\nIndustry: Legal Services, Law Firm, Real Estate & Commercial Litigation |\nEmployee",
       "source": "ransomware.live/rss"
@@ -4727,7 +4741,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "chooseultimate.com",
       "status": null,
       "description_snippet": "Ultimate Health Plans is a local Medicare Advantage Plan based in Spring Hill, Florida, serving vari...",
       "source": "ransomware.live/rss"
@@ -4758,7 +4772,7 @@
       "country_code": "US",
       "sector": "Erp Software And Hosting Company",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "ERP software and hosting company · USA | Internal network configurations and security credentials of an ERP hosting company; Administrator and remote access credentials; Network topology of corporate ",
       "source": "ransomware.live/rss"
     },
@@ -4772,7 +4786,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "internal.seminole.org",
       "status": null,
       "description_snippet": "NameCompany: Seminole Schools |\nDomain: internal.seminole.org |\nCountry: Seminole,Florida,US |\nWebsite: sps.k12.ok.us |\nRevenue: $15.5 Million |\nIndustry: Education General, Education |\nEmployees: 50-",
       "source": "ransomware.live/rss"
@@ -4788,7 +4802,7 @@
       "country_code": "US",
       "sector": "Special-Effects Fog Fluid Manufacturer And Distributor (Order Management And Shipping Operations)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "special-effects fog fluid manufacturer and distributor (order management and shipping operations) · Tennessee, USA | The complete shipping and order management database of a specialty fluid manufactur",
       "source": "ransomware.live/rss"
     },
@@ -4802,7 +4816,7 @@
       "country": "Germany",
       "country_code": "DE",
       "sector": null,
-      "domain": null,
+      "domain": "seetelhotels.de",
       "status": null,
       "description_snippet": "Seetel Hotels (SEETEL Hotel GmbH & Co. Betriebs KG) has been notified that a substantial volume of confidential and internal corporate data has been compromised.\n \n The affected data includes, but is ",
       "source": "ransomware.live/rss"
@@ -4934,11 +4948,11 @@
       "discovered": "2026-10-19T13:50:46+00:00",
       "discovered_date": "2026-10-19",
       "post_url": "https://www.ransomware.live/id/UGluZ0NBUCAvIFRpREIgQ2xvdWRAZnVsY3J1bXNlYw",
-      "country": "Cn",
-      "country_code": null,
+      "country": "China",
+      "country_code": "CN",
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] PingCAP is a technology company founded in 2015 in Beijing, China, specializing in distributed database software. It develops TiDB, an open-source, MySQL-compatible distributed SQL data",
       "source": "ransomware.live/rss"
     },
@@ -4968,7 +4982,7 @@
       "country_code": "US",
       "sector": "Hospitality",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "hospitality · United States | Network and phone system configurations for a hospitality property, including access credentials; Complete phone fleet and voice equipment inventory | [NOT PAID — EXPOSED",
       "source": "ransomware.live/rss"
     },
@@ -4983,7 +4997,7 @@
       "country_code": "US",
       "sector": "Healthcare - Ambulatory Surgery Center (Us)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "Healthcare - Ambulatory Surgery Center (US) · Texas, US | The complete network configuration of an outpatient endoscopy surgery center: every account, password and access path; Proof of total control ",
       "source": "ransomware.live/rss"
     },
@@ -4998,7 +5012,7 @@
       "country_code": "US",
       "sector": "Investigations And Due Diligence",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "investigations and due diligence · USA | Client investigation reports on named individuals, with dates of birth, aliases, phone numbers and addresses; Comprehensive background reports on investigation",
       "source": "ransomware.live/rss"
     },
@@ -5013,7 +5027,7 @@
       "country_code": "BR",
       "sector": null,
       "domain": null,
-      "status": "Sector: Manufacturing, Finance, Transportation",
+      "status": null,
       "description_snippet": "Production and preparation of ready-mixed concrete \nand mortars. Production of cement products for \nconstruction. Construction of buildings and other \nconstruction works. Rental of vehicles and indust",
       "source": "ransomware.live/rss"
     },
@@ -5043,7 +5057,7 @@
       "country_code": "US",
       "sector": null,
       "domain": null,
-      "status": "manufacturer",
+      "status": null,
       "description_snippet": "[manufacturer] POWERsonic Industries Inc. — a privately held wire harness and cable assembly contract manufacturer founded in 1998 with ~100-150 employees across 7 locations.\n\nThe exposed material spa",
       "source": "ransomware.live/rss"
     },
@@ -5223,7 +5237,7 @@
       "country_code": "EG",
       "sector": "Computer Training Academy",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "computer training academy · Egypt | Course materials and programming projects; Exam preparation materials; Student account folders and work; A complete copy of the course database | [NOT PAID — EXPOSE",
       "source": "ransomware.live/rss"
     },
@@ -5238,7 +5252,7 @@
       "country_code": "US",
       "sector": "Accounting & Tax Preparation (Us)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "Accounting & Tax Preparation (US) · Massachusetts, USA | Books and tax records of a Massachusetts bookkeeping and tax practice: live accounting company files of more than 60 client companies with all ",
       "source": "ransomware.live/rss"
     },
@@ -5253,7 +5267,7 @@
       "country_code": "US",
       "sector": "Semiconductor Manufacturing",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "Semiconductor manufacturing · California, USA | Corporate business records and working files from the company's file servers; Employee and payroll related records; Financial and accounting documents |",
       "source": "ransomware.live/rss"
     },
@@ -5387,7 +5401,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "www.marvinpac.com",
       "status": null,
       "description_snippet": "Marvinpac CZ, s.r.o. — the Czech subsidiary of Swiss group Marvinpac SA — specialises in contract packaging and co-packing for some of the world's leading brands: Nespresso, L'Oréal, COTY (Gucci, Hugo",
       "source": "ransomware.live/rss"
@@ -5399,10 +5413,10 @@
       "discovered": "2026-10-18T07:27:55+00:00",
       "discovered_date": "2026-10-18",
       "post_url": "https://www.ransomware.live/id/cGFzc2F2YW50LWVlLmNvbUBzZXR0cmE",
-      "country": "Ee",
-      "country_code": null,
+      "country": "Estonia",
+      "country_code": "EE",
       "sector": null,
-      "domain": null,
+      "domain": "passavant-ee.com",
       "status": null,
       "description_snippet": "German engineering company Passavant Energy &amp; Environment GmbH, which builds wastewater treatment plants with German and Swiss taxpayer money (KfW, SECO), is in reality controlled by Dubai-based c",
       "source": "ransomware.live/rss"
@@ -5417,7 +5431,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "acclaimcompanies.com",
       "status": null,
       "description_snippet": "The Social Security Numbers of both group executives — Gerald C. Johnson Jr. and Mark C. Johnson — are fully exposed in corporate documents (IRS Form SS-4). The Johnson Family Trust holds an investmen",
       "source": "ransomware.live/rss"
@@ -5432,7 +5446,7 @@
       "country": null,
       "country_code": null,
       "sector": null,
-      "domain": null,
+      "domain": "binsky.com",
       "status": null,
       "description_snippet": "Piscataway, New Jersey. Binsky &amp; Snyder, LLC has been servicing piping, HVAC, and mechanical systems since 1938. Its website tells a story of \"family values\" and \"trust from day one.\" The actual c",
       "source": "ransomware.live/rss"
@@ -5447,7 +5461,7 @@
       "country": "Norway",
       "country_code": "NO",
       "sector": null,
-      "domain": null,
+      "domain": "konsis.no",
       "status": null,
       "description_snippet": "We hold a large volume of data from Konsis Grafisk AS — a Norwegian design, marketing and print agency with annual revenue of approximately NOK 100 million.",
       "source": "ransomware.live/rss"
@@ -5462,7 +5476,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "monroeroadways.com",
       "status": null,
       "description_snippet": "Rochester, New York. A construction company that goes by Monroe Roadways in bid documents but appears as MRI Contractors of New York, Inc. in banking records. One address: 300 Hogan Road, Fairport. On",
       "source": "ransomware.live/rss"
@@ -5477,7 +5491,7 @@
       "country": null,
       "country_code": null,
       "sector": null,
-      "domain": null,
+      "domain": "adapt-global.com",
       "status": null,
       "description_snippet": "The company sells to federal customers under a GSA MAS contract and calls its products \"U.S.-made / Made in the USA,\" yet its own documents reveal Taiwanese and Chinese suppliers, Hong Kong-based deve",
       "source": "ransomware.live/rss"
@@ -5492,7 +5506,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "exo.inc",
       "status": null,
       "description_snippet": "This article is based on a portion of the company's documents to which we gained access. Patient names, internal identifiers of employees as research subjects, specific diagnoses, serial numbers of pr",
       "source": "ransomware.live/rss"
@@ -5508,7 +5522,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "Sector: Manufacturing, Finance",
+      "status": null,
       "description_snippet": "Spanish company that specializes in professional \nlighting for shops and commercial spaces.\nThere are many customer documents and employee data. [Sector: Manufacturing, Finance]",
       "source": "ransomware.live/rss"
     },
@@ -5583,7 +5597,7 @@
       "country_code": "NL",
       "sector": "Fx Liquidity And Trading Technology",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "FX liquidity and trading technology · Netherlands | Live client trading records: order and execution data for the banks and institutions trading through this firm, with amounts and account identifiers",
       "source": "ransomware.live/rss"
     },
@@ -5598,7 +5612,7 @@
       "country_code": "US",
       "sector": "Manufacturing",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "manufacturing · USA | 217,186 production and check records from the plant production system; 33 company and partner accounts with plain text passwords; vendor and item master data with part numbers; b",
       "source": "ransomware.live/rss"
     },
@@ -5613,7 +5627,7 @@
       "country_code": "US",
       "sector": "Software Quality Assurance (Wolters Kluwer/Cch Axcess Test Lab)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "software quality assurance (Wolters Kluwer/CCH Axcess test lab) · California, USA | VPN access credentials for all 64 employee accounts; Domain controller configuration: group policies, DNS zones, net",
       "source": "ransomware.live/rss"
     },
@@ -5792,7 +5806,7 @@
       "country": "Italy",
       "country_code": "IT",
       "sector": null,
-      "domain": null,
+      "domain": "giodentalspa.com",
       "status": null,
       "description_snippet": "giodentalspa.com Gio Dental & Med Spa  private dental and aesthetic clinic founded around 2006 in Ciudad Juárez, Mexico, targeting patients from the US border region of El Paso and Las Cruces. The pra",
       "source": "ransomware.live/rss"
@@ -5807,7 +5821,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "firstdentalhealth.com",
       "status": null,
       "description_snippet": "firstdentalhealth.com First Dental Health, Inc. dental consulting company founded in 1995 and based in Sacramento, California. It is led by Chairman and CEO Michael Zhang together with founder Dr. Ric",
       "source": "ransomware.live/rss"
@@ -5819,10 +5833,10 @@
       "discovered": "2026-10-17T16:51:56+00:00",
       "discovered_date": "2026-10-17",
       "post_url": "https://www.ransomware.live/id/QWlyUUB0aGVnZW50bGVtZW4",
-      "country": "Ad",
-      "country_code": null,
+      "country": "Andorra",
+      "country_code": "AD",
       "sector": null,
-      "domain": null,
+      "domain": "airq-ad.com",
       "status": null,
       "description_snippet": "airq-ad.com AirQ UAE drone manufacturer founded in 2021 in Masdar City, Abu Dhabi, producing unmanned aerial systems fully in-house. It was started by Croatian entrepreneurs Dino Dedić as CEO and Igor",
       "source": "ransomware.live/rss"
@@ -5837,7 +5851,7 @@
       "country": "Malaysia",
       "country_code": "MY",
       "sector": null,
-      "domain": null,
+      "domain": "ock.com.my",
       "status": null,
       "description_snippet": "OCK Group Berhad specializes in telco network services and infrastructure in Malaysia, offering solu...",
       "source": "ransomware.live/rss"
@@ -5898,7 +5912,7 @@
       "country_code": "JP",
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] N/A\n\nI don't have reliable, verified information about a specific company called \"Kissei Shoji\" to provide an accurate factual description of its operations, industry, and country. Prov",
       "source": "ransomware.live/rss"
     },
@@ -5913,7 +5927,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] N/A\n\nI don't have reliable, verifiable information about a company specifically named \"Chugoku Bend.\" This does not correspond to a company I can confidently identify in my knowledge ba",
       "source": "ransomware.live/rss"
     },
@@ -5928,7 +5942,7 @@
       "country_code": "KR",
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] N/A",
       "source": "ransomware.live/rss"
     },
@@ -5943,7 +5957,7 @@
       "country_code": "AT",
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] The Brenner Base Tunnel (Brennerbasistunnel, BBT) is a major railway infrastructure project, not a company in the traditional sense, though it is managed by Brenner Base Tunnel BBT SE, ",
       "source": "ransomware.live/rss"
     },
@@ -5958,7 +5972,7 @@
       "country_code": "BR",
       "sector": "Packaging Manufacturing (Extrusion)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "packaging manufacturing (extrusion) · Brazil | Senior Sapiens ERP and Vetorh HR payroll platform; eSocial government payroll filings September and October 2026; Thousands of electronic invoices with c",
       "source": "ransomware.live/rss"
     },
@@ -6104,8 +6118,8 @@
       "discovered": "2026-10-16T15:56:36+00:00",
       "discovered_date": "2026-10-16",
       "post_url": "https://www.ransomware.live/id/Q29tcGFueSAjNzhATjBu",
-      "country": "Texas, Us",
-      "country_code": null,
+      "country": "United States",
+      "country_code": "US",
       "sector": "Healthcare - Ambulatory Surgery Center (Us)",
       "domain": null,
       "status": "PENDING EXPOSURE",
@@ -6209,8 +6223,8 @@
       "discovered": "2026-10-16T14:56:59+00:00",
       "discovered_date": "2026-10-16",
       "post_url": "https://www.ransomware.live/id/Q29tcGFueSAjODFATjBu",
-      "country": "Texas, Us",
-      "country_code": null,
+      "country": "United States",
+      "country_code": "US",
       "sector": "Healthcare - Ambulatory Surgery Center (Us)",
       "domain": null,
       "status": "PENDING EXPOSURE",
@@ -6243,7 +6257,7 @@
       "country_code": "US",
       "sector": "Construction And Accounting (Us)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "construction and accounting (US) · New York, USA | Employee W-2 forms with Social Security numbers and quarterly payroll tax filings of a New York construction group; 2024 partnership tax returns with",
       "source": "ransomware.live/rss"
     },
@@ -6258,7 +6272,7 @@
       "country_code": "US",
       "sector": "Dental Laboratory (Cad/Cam Manufacturing)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "dental laboratory (CAD/CAM manufacturing) · Missouri, USA | Patient case designs of a dental laboratory with full patient names, tooth numbers and material/shade codes; CNC milling toolpaths and MillB",
       "source": "ransomware.live/rss"
     },
@@ -6273,7 +6287,7 @@
       "country_code": "US",
       "sector": "Healthcare - Ophthalmology (Us)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "Healthcare - Ophthalmology (US) · Mississippi, USA | Patient records of a Mississippi ophthalmology practice: 13,308 patient records with names and dates of birth, taken from the patient database back",
       "source": "ransomware.live/rss"
     },
@@ -6362,7 +6376,7 @@
       "country": "United Kingdom",
       "country_code": "GB",
       "sector": null,
-      "domain": null,
+      "domain": "martinllp.net",
       "status": null,
       "description_snippet": "martinllp.net Martin LLP Martin LLP is a boutique business law firm founded in 1996, with offices in Stamford and New York. It focuses on middle-market companies, private equity sponsors, lenders, and",
       "source": "ransomware.live/rss"
@@ -6377,7 +6391,7 @@
       "country": "Switzerland",
       "country_code": "CH",
       "sector": null,
-      "domain": null,
+      "domain": "map.ch",
       "status": null,
       "description_snippet": "map.ch MAP SA Swiss communications agency in Cossonay, Vaud (UID CHE-106.859.955), operating since 1968 as a business; the current legal entity was registered in 1981. It's a ~13-person full-service s",
       "source": "ransomware.live/rss"
@@ -6407,7 +6421,7 @@
       "country": "Spain",
       "country_code": "ES",
       "sector": null,
-      "domain": null,
+      "domain": "sbiav.com",
       "status": null,
       "description_snippet": "sbiav.com SBI Audiovisuel is a Quebec AV company founded in 1991 (HQ in Saint-Bruno-de-Montarville, ~11 staff), doing corporate event production — sound, lighting, video, webcasting — plus its signatu",
       "source": "ransomware.live/rss"
@@ -6437,7 +6451,7 @@
       "country": "India",
       "country_code": "IN",
       "sector": null,
-      "domain": null,
+      "domain": "netcoreunbxd.com",
       "status": null,
       "description_snippet": "netcoreunbxd.com Netcore Unbxd AI product-discovery platform for enterprise e-commerce: smart site search, 1:1 personalization, recommendations, visual intelligence (\"Complete the Look\"), catalog enri",
       "source": "ransomware.live/rss"
@@ -6452,7 +6466,7 @@
       "country": "Germany",
       "country_code": "DE",
       "sector": null,
-      "domain": null,
+      "domain": "regio-nord.com",
       "status": null,
       "description_snippet": "regio-nord.com REGiO-Nord mbH (HRB 1203, Amtsgericht Neuruppin) is a municipal regional-development company in Gransee, Brandenburg, founded 2008–2009 to run the shared \"Mittelzentrum\" of Gransee–Zehd",
       "source": "ransomware.live/rss"
@@ -6467,7 +6481,7 @@
       "country": "Thailand",
       "country_code": "TH",
       "sector": null,
-      "domain": null,
+      "domain": "museumsiam.org",
       "status": null,
       "description_snippet": "museumsiam.org Museum Siam museum in Bangkok run by NDMI under the public organization OKMD — the .org domain is real, but it's a government institute, not a private company. It occupies the former Mi",
       "source": "ransomware.live/rss"
@@ -6482,7 +6496,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "skincenter.com",
       "status": null,
       "description_snippet": "skincenter.com Skin Center dermatology clinic in Fort Lauderdale, FL (6550 N Federal Hwy, Suite 320) with 40+ years of practice roots (formerly Dr. Roger Stewart's clinic, led by Dr. Barry Galitzer si",
       "source": "ransomware.live/rss"
@@ -6512,7 +6526,7 @@
       "country": "Australia",
       "country_code": "AU",
       "sector": null,
-      "domain": null,
+      "domain": "inovarpackaging.com",
       "status": null,
       "description_snippet": "inovarpackaging.com Inovar Packaging Group (Irving, TX) is a PE-backed buy-and-build platform producing pressure-sensitive labels, shrink sleeves, flexible packaging, and RFID — 14 US plants, 12+ acqu",
       "source": "ransomware.live/rss"
@@ -6527,7 +6541,7 @@
       "country": "Ireland",
       "country_code": "IE",
       "sector": null,
-      "domain": null,
+      "domain": "engineersireland.ie",
       "status": null,
       "description_snippet": "engineersireland.ie Engineers Ireland Ireland's national professional body for engineers, founded 1835 with a Royal Charter (1877) and statutory authority under a 1969 Act to award the \"Chartered Engi",
       "source": "ransomware.live/rss"
@@ -6542,7 +6556,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "northbridge.com",
       "status": null,
       "description_snippet": "northbridge.com North Bridge Venture Partners one of Boston's most storied venture capital firms, founded in 1994 by Bill Geary, Doug Kingsley, Ed Anderson, Mike Pehl, and Richard D'Amore — ~$3.5B und",
       "source": "ransomware.live/rss"
@@ -6569,10 +6583,10 @@
       "discovered": "2026-10-16T09:34:38+00:00",
       "discovered_date": "2026-10-16",
       "post_url": "https://www.ransomware.live/id/UGV0cm9sZXVtIFRlbGNvbSBDb21tdW5pY2F0aW9uc0B0aGVnZW50bGVtZW4",
-      "country": "Pk",
-      "country_code": null,
+      "country": "Pakistan",
+      "country_code": "PK",
       "sector": null,
-      "domain": null,
+      "domain": "ptelcom.com",
       "status": null,
       "description_snippet": "ptelcom.com Petroleum Telcom, Inc. (dba Telcom, Inc. / Telcom Communications) Southern California communications integrator founded in 1978 in Oxnard, CA — specializing in two-way radio for police/fir",
       "source": "ransomware.live/rss"
@@ -6587,7 +6601,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "axlelogistics.com",
       "status": null,
       "description_snippet": "axlelogistics.com Axle Logistics non-asset freight brokerage founded in 2012 in Knoxville, Tennessee, by Drew Johnson and Jon Clay — two University of Tennessee grads who started with two people and o",
       "source": "ransomware.live/rss"
@@ -6617,7 +6631,7 @@
       "country": "Canada",
       "country_code": "CA",
       "sector": null,
-      "domain": null,
+      "domain": "caspapermill.com",
       "status": null,
       "description_snippet": "caspapermill.com C.A.S. Paper Mill Co., Ltd. is a Thai paper manufacturer in Singburi (est. 1990, operating since 1994), part of the Charoen Aksorn Group — Thailand's largest paper distributor, backed",
       "source": "ransomware.live/rss"
@@ -6707,7 +6721,7 @@
       "country": "United Kingdom",
       "country_code": "GB",
       "sector": null,
-      "domain": null,
+      "domain": "jjsjustice.com",
       "status": null,
       "description_snippet": "jjsjustice.com JJS Justice (Janet, Janet & Suggs, LLC) is a national plaintiff-side firm based in Baltimore/Pikesville, MD, founded 1996 (practice since 1978) — specializing in birth injuries/CP, medi",
       "source": "ransomware.live/rss"
@@ -6737,7 +6751,7 @@
       "country": "Canada",
       "country_code": "CA",
       "sector": null,
-      "domain": null,
+      "domain": "svmottawa.ca",
       "status": null,
       "description_snippet": "svmottawa.ca  ServiceMaster of Ottawa Canadian property restoration and commercial cleaning company (legal entity 1351120 Ontario Inc.), a ServiceMaster franchise since 1969 — owned since 2006 by John",
       "source": "ransomware.live/rss"
@@ -6767,7 +6781,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "entrysystems.com",
       "status": null,
       "description_snippet": "entrysystems.com Entry Systems Garage Doors & Gates 3rd-generation family business in Laguna Hills, CA (with a second design center in Tustin, opened 2024) — servicing garage doors and automated gates",
       "source": "ransomware.live/rss"
@@ -6857,7 +6871,7 @@
       "country": "Brazil",
       "country_code": "BR",
       "sector": null,
-      "domain": null,
+      "domain": "upf.br",
       "status": null,
       "description_snippet": "upf.br Universidade de Passo Fundo private community philanthropic university in Passo Fundo, Rio Grande do Sul, Brazil — founded 1968 (Decree 62.835), run by the FUPF foundation, with 7 campuses, ~10",
       "source": "ransomware.live/rss"
@@ -6872,7 +6886,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "campbellrhea.com",
       "status": null,
       "description_snippet": "campbellrhea.com Campbell Rhea US manufacturer of laboratory and educational casework — legal entity Institutional Casework, Inc. (ICI) — with roots to 1951 in Paris, TN. The brand survived a 2005 tor",
       "source": "ransomware.live/rss"
@@ -6887,7 +6901,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "dentistryofnewportbeach.com",
       "status": null,
       "description_snippet": "dentistryofnewportbeach.com Newport Beach Dentistry family dental practice in Newport Beach, CA (1401 Avocado Ave, Ste 209), founded 30+ years ago and currently run by brothers Dr. F. Frank Foroutan (",
       "source": "ransomware.live/rss"
@@ -6899,10 +6913,10 @@
       "discovered": "2026-10-16T09:29:27+00:00",
       "discovered_date": "2026-10-16",
       "post_url": "https://www.ransomware.live/id/VHVsc2F0QHRoZWdlbnRsZW1lbg",
-      "country": "Kz",
-      "country_code": null,
+      "country": "Kazakhstan",
+      "country_code": "KZ",
       "sector": null,
-      "domain": null,
+      "domain": "tulsat.com",
       "status": null,
       "description_snippet": "tulsat.com TULSAT leading US distributor and repair center for cable TV (CATV) equipment — headend gear, fiber nodes, amplifiers, taps, power supplies — founded 1985 by brothers David and Ken Chymiak ",
       "source": "ransomware.live/rss"
@@ -6917,7 +6931,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "sharedmedtech.com",
       "status": null,
       "description_snippet": "sharedmedtech.com Shared Medical Technology, Inc. US medical equipment rental and service company founded in 2004, HQ in Schenectady, NY — 7 offices (NY, MA, VA), ~40–50 staff, no external funding rai",
       "source": "ransomware.live/rss"
@@ -6932,7 +6946,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "sbendo.com",
       "status": null,
       "description_snippet": "sbendo.com Santa Barbara Endodontics solo specialty practice of Dr. Terrell F. Pannkuk, DDS, MScD — one of the most credentialed endodontists in the US — at 9 E Pedregosa St, Santa Barbara, CA, operat",
       "source": "ransomware.live/rss"
@@ -7038,7 +7052,7 @@
       "country_code": "US",
       "sector": "Medical Device Manufacturing (Us)",
       "domain": null,
-      "status": "NOT PAID — EXPOSED",
+      "status": null,
       "description_snippet": "Medical device manufacturing (US) · Texas, USA | FDA quality system records of a Texas spinal implant manufacturer: CAPAs, device history records for implant lots, management reviews, design drawings ",
       "source": "ransomware.live/rss"
     },
@@ -7067,7 +7081,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "fairfeelegalservices.com",
       "status": null,
       "description_snippet": "proof",
       "source": "ransomware.live/rss"
@@ -7097,7 +7111,7 @@
       "country": "Costa Rica",
       "country_code": "CR",
       "sector": null,
-      "domain": null,
+      "domain": "www.coopecaja.fi.cr",
       "status": null,
       "description_snippet": "/",
       "source": "ransomware.live/rss"
@@ -7112,7 +7126,7 @@
       "country": "Poland",
       "country_code": "PL",
       "sector": null,
-      "domain": null,
+      "domain": "nowaszkola.com",
       "status": null,
       "description_snippet": "/",
       "source": "ransomware.live/rss"
@@ -7277,7 +7291,7 @@
       "country": "Italy",
       "country_code": "IT",
       "sector": null,
-      "domain": null,
+      "domain": "torcivialaw.com",
       "status": null,
       "description_snippet": "Torcivia, Donlon, Goddeau & Rubin, P.A. continues to provide high quality, personalized, and practic...",
       "source": "ransomware.live/rss"
@@ -7292,7 +7306,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "kidzrkooldental.com",
       "status": null,
       "description_snippet": "Kidz R Kool Pediatric Dentistry is a dental practice located in Peoria, AZ, specializing in pediatri...",
       "source": "ransomware.live/rss"
@@ -7307,7 +7321,7 @@
       "country": "Egypt",
       "country_code": "EG",
       "sector": null,
-      "domain": null,
+      "domain": "lcww.com.eg",
       "status": null,
       "description_snippet": "تم إنشاء شركة مياه الشرب والصرف الصحي بالأقصر بقرار السيد المهندس وزير الإسكان والمرافق والتنمية ا...",
       "source": "ransomware.live/rss"
@@ -7322,7 +7336,7 @@
       "country": "United States",
       "country_code": "US",
       "sector": null,
-      "domain": null,
+      "domain": "neweramachines.com",
       "status": null,
       "description_snippet": "New Era Machines is a leading manufacturer of biscuit and cookie production lines, recognized for it...",
       "source": "ransomware.live/rss"
@@ -7337,7 +7351,7 @@
       "country": "Mexico",
       "country_code": "MX",
       "sector": null,
-      "domain": null,
+      "domain": "grupoabg.com",
       "status": null,
       "description_snippet": "Grupo ABG specializes in providing comprehensive solutions for organizations, focusing on business p...",
       "source": "ransomware.live/rss"
@@ -7397,7 +7411,7 @@
       "country": "Mexico",
       "country_code": "MX",
       "sector": null,
-      "domain": null,
+      "domain": "bienestarempresarial.mx",
       "status": null,
       "description_snippet": "bienestarempresarial.mx",
       "source": "ransomware.live/rss"
@@ -7413,7 +7427,7 @@
       "country_code": "US",
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] Middleby Corporation is a U.S.-based manufacturer of commercial and residential kitchen equipment, food processing machinery, and related technology solutions. It operates in the indust",
       "source": "ransomware.live/rss"
     },
@@ -7428,7 +7442,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] Sunshine Mills, Inc. is a United States-based company operating in the pet food manufacturing industry. Headquartered in Red Bay, Alabama, it produces dry pet food products, including d",
       "source": "ransomware.live/rss"
     },
@@ -7499,8 +7513,8 @@
       "discovered": "2026-10-15T12:07:45+00:00",
       "discovered_date": "2026-10-15",
       "post_url": "https://www.ransomware.live/id/Q29tbXVuZSBEdSBUYW1wb25AcWlsaW4",
-      "country": "Re",
-      "country_code": null,
+      "country": "Réunion",
+      "country_code": "RE",
       "sector": null,
       "domain": null,
       "status": null,
@@ -7533,7 +7547,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] N/A\n\nThe name \"Hensley\" alone is not sufficient to identify a specific company with verifiable details, as multiple businesses operate under this name across different industries and co",
       "source": "ransomware.live/rss"
     },
@@ -7547,7 +7561,7 @@
       "country": "India",
       "country_code": "IN",
       "sector": null,
-      "domain": null,
+      "domain": "enchantedfinejewellery.in",
       "status": null,
       "description_snippet": "enchantedfinejewellery.in",
       "source": "ransomware.live/rss"
@@ -7563,7 +7577,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "AI generated",
+      "status": null,
       "description_snippet": "[AI generated] Buckle, Inc. is a United States-based specialty retailer operating in the apparel and fashion industry. Founded in 1948 and headquartered in Kearney, Nebraska, the company sells clothin",
       "source": "ransomware.live/rss"
     },
@@ -7578,7 +7592,7 @@
       "country_code": "GB",
       "sector": "Professional Services",
       "domain": null,
-      "status": "DISCLOSED",
+      "status": null,
       "description_snippet": "camden-living disclosed by Iah6477",
       "source": "ransomware.live/legacy"
     },
@@ -7593,7 +7607,7 @@
       "country_code": null,
       "sector": null,
       "domain": null,
-      "status": "DISCLOSED",
+      "status": null,
       "description_snippet": "S*o**n* Public Schools disclosed by Nightspire",
       "source": "ransomware.live/legacy"
     },
@@ -7608,7 +7622,7 @@
       "country_code": "BR",
       "sector": "Energy & Utilities",
       "domain": null,
-      "status": "DISCLOSED",
+      "status": null,
       "description_snippet": "MPI LTDA disclosed by Emperador",
       "source": "ransomware.live/legacy"
     },
@@ -7623,7 +7637,7 @@
       "country_code": "AE",
       "sector": null,
       "domain": null,
-      "status": "DISCLOSED",
+      "status": null,
       "description_snippet": "Amity University Dubai disclosed by Blacknevas",
       "source": "ransomware.live/legacy"
     },
@@ -7638,7 +7652,7 @@
       "country_code": "IT",
       "sector": null,
       "domain": null,
-      "status": "DISCLOSED",
+      "status": null,
       "description_snippet": "Alma Center Servizi Medicali S.r.l. disclosed by Spacebears",
       "source": "ransomware.live/legacy"
     }

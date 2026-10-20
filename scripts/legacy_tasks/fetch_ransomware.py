@@ -85,7 +85,91 @@ COUNTRY_MAP = {
     'EC': 'Ecuador',
     'PE': 'Peru',
     'CR': 'Costa Rica',
-    'PA': 'Panama'
+    'PA': 'Panama',
+    'CN': 'China',
+    'EE': 'Estonia',
+    'KZ': 'Kazakhstan',
+    'PK': 'Pakistan',
+    'AD': 'Andorra',
+    'RE': 'Réunion',
+    'IS': 'Iceland',
+    'LU': 'Luxembourg',
+    'QA': 'Qatar',
+    'KW': 'Kuwait',
+    'OM': 'Oman',
+    'BH': 'Bahrain',
+    'CY': 'Cyprus',
+    'MT': 'Malta',
+    'SI': 'Slovenia',
+    'SK': 'Slovakia',
+    'BG': 'Bulgaria',
+    'HR': 'Croatia',
+    'LT': 'Lithuania',
+    'LV': 'Latvia',
+    'UA': 'Ukraine',
+    'UY': 'Uruguay',
+    'PY': 'Paraguay',
+    'BO': 'Bolivia',
+    'DO': 'Dominican Republic',
+    'GT': 'Guatemala',
+    'HN': 'Honduras',
+    'SV': 'El Salvador',
+    'NI': 'Nicaragua',
+    'JM': 'Jamaica',
+    'BS': 'Bahamas',
+    'BB': 'Barbados',
+    'MO': 'Macao',
+    'MN': 'Mongolia',
+    'LK': 'Sri Lanka',
+    'BD': 'Bangladesh',
+    'NP': 'Nepal',
+    'UZ': 'Uzbekistan',
+    'AZ': 'Azerbaijan',
+    'GE': 'Georgia',
+    'AM': 'Armenia',
+    'MD': 'Moldova',
+    'AL': 'Albania',
+    'MK': 'North Macedonia',
+    'BA': 'Bosnia and Herzegovina',
+    'ME': 'Montenegro',
+    'RS': 'Serbia',
+    'GH': 'Ghana',
+    'CI': 'Ivory Coast',
+    'SN': 'Senegal',
+    'CM': 'Cameroon',
+    'UG': 'Uganda',
+    'TZ': 'Tanzania',
+    'ZM': 'Zambia',
+    'ZW': 'Zimbabwe',
+    'MU': 'Mauritius',
+    'MA': 'Morocco',
+    'DZ': 'Algeria',
+    'JO': 'Jordan',
+    'LB': 'Lebanon',
+    'IQ': 'Iraq',
+    'IR': 'Iran'
+}
+
+# Recognized legitimate extortion status tokens from upstream dark web feeds
+RECOGNIZED_STATUS_TOKENS = {
+    'PENDING EXPOSURE',
+    'NOT PAID — EXPOSED',
+    'NOT PAID - EXPOSED',
+    'NOT PAID',
+    'EXPOSED',
+    'DISCLOSED',
+    'AUCTION',
+    'NEGOTIATING',
+    'NEGOTIATION',
+    'DATA LEAKED',
+    'DATA PUBLISHED',
+    'PAYMENT PENDING',
+    'SOLD',
+    'PAID',
+    'LEAKED',
+    'CONFIRMED EXPOSURE',
+    'PARTIAL EXPOSURE',
+    'FULL EXPOSURE'
 }
 
 def clean_text(text):
@@ -122,20 +206,25 @@ def normalize_country(raw_country):
         if raw.lower() == name.lower():
             return name, code
 
-    # Match substrings e.g. "Tennessee, USA" -> United States
-    if 'USA' in raw.upper() or 'UNITED STATES' in raw.upper():
+    # Match US state blurbs e.g. "Texas, US", "Tennessee, USA" -> United States, US
+    if re.search(r'\b(?:USA|US|U\.S\.|UNITED STATES)\b', raw, re.IGNORECASE):
         return 'United States', 'US'
-    if 'UNITED KINGDOM' in raw.upper():
+    if re.search(r'\b(?:UNITED KINGDOM|UK|GB|ENGLAND|SCOTLAND|WALES)\b', raw, re.IGNORECASE):
         return 'United Kingdom', 'GB'
+
+    # Fallback: if raw is 2 characters and still not in COUNTRY_MAP, do not titlecase as a fake country name
+    if len(raw) == 2 and raw.isalpha():
+        return None, raw.upper()
 
     # Fallback to sanitized raw title
     return raw.title(), None
 
-def extract_metadata_from_description(desc_text):
+def extract_metadata_from_description(desc_text, victim_name=None):
     """
     Extract sector, country, status, and domain from the RSS description.
     Pattern A: 'Sector · Country | [STATUS]'
     Pattern B: Domain-prefixed corporate profile
+    Pattern C: 'Website: <url>' or '(domain.com)'
     """
     if not desc_text:
         return None, None, None, None
@@ -146,15 +235,39 @@ def extract_metadata_from_description(desc_text):
     status = None
     domain = None
 
-    # Check for domain at the beginning (e.g. otsuka.com.tw, policia.gob.ec, alpinetec.ch)
-    domain_match = re.search(r'^(?:https?://)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})(?:\s|/|$)', desc)
-    if domain_match:
-        domain = domain_match.group(1).lower().rstrip('.')
+    # 1. Domain extraction using multiple supported patterns
+    pref_match = re.search(r'(?:Website|Domain):\s*(?:https?://)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})', desc, re.IGNORECASE)
+    paren_match = re.search(r'\(([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})\)', desc)
+    init_match = re.search(r'^(?:https?://)?([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})(?:\s|/|$|·)', desc)
+    name_match = re.search(r'^([a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,})$', victim_name.strip()) if victim_name else None
 
-    # Check for status tag like [PENDING EXPOSURE], [NOT PAID — EXPOSED]
-    status_match = re.search(r'\[(.*?)\]', desc)
-    if status_match:
-        status = status_match.group(1).strip()
+    cand_domain = None
+    if pref_match:
+        cand_domain = pref_match.group(1)
+    elif paren_match:
+        cand_domain = paren_match.group(1)
+    elif init_match:
+        cand_domain = init_match.group(1)
+    elif name_match:
+        cand_domain = name_match.group(1)
+
+    if cand_domain:
+        cand_lower = cand_domain.lower().rstrip('.')
+        # Exclude false positives like document filenames, image extensions, or common binary files
+        if not cand_lower.endswith(('.png', '.jpg', '.jpeg', '.gif', '.pdf', '.docx', '.xlsx', '.exe', '.zip', '.tar', '.gz')):
+            domain = cand_lower
+
+    # 2. Status tag extraction - accept only recognized extortion status tokens
+    for bracket_content in re.findall(r'\[(.*?)\]', desc):
+        cleaned_tag = bracket_content.strip()
+        norm = re.sub(r'\s+', ' ', cleaned_tag.upper().replace('—', '-'))
+        if norm in {t.replace('—', '-') for t in RECOGNIZED_STATUS_TOKENS}:
+            status = cleaned_tag
+            break
+        if any(norm.startswith(p) for p in ('PENDING', 'NOT PAID', 'AUCTION', 'DISCLOSED', 'DATA LEAKED', 'DATA PUBLISHED')):
+            if not norm.startswith('SECTOR:') and 'AI GENERATED' not in norm and 'MANUFACTURER' not in norm:
+                status = cleaned_tag
+                break
 
     # Pattern A: middle dot ' · ' separating sector and country/status
     if ' · ' in desc:
@@ -259,7 +372,7 @@ def fetch_rss_feed():
             # Description Metadata
             desc_el = item.find('description')
             desc_text = desc_el.text if desc_el is not None else ''
-            sector, desc_country, status, domain = extract_metadata_from_description(desc_text)
+            sector, desc_country, status, domain = extract_metadata_from_description(desc_text, victim_name)
 
             # Country Resolution (Category code takes precedence, then parsed name)
             country_name, country_code = normalize_country(cat_text)
@@ -335,12 +448,17 @@ def deduplicate_victims(victims_list):
 
     return list(unique_map.values())
 
-def aggregate_and_enrich(victims, window_days=7):
+def aggregate_and_enrich(victims, window_days=7, now_dt=None):
     """
     Aggregate victims into group dossiers and compute genuine, evidence-based metrics.
     No fabricated trends or percentages.
+    Supports deterministic fixed timestamps for unit testing via now_dt.
     """
-    now = datetime.now(timezone.utc)
+    now = now_dt if now_dt is not None else datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+    else:
+        now = now.astimezone(timezone.utc)
     window_cutoff = now - timedelta(days=window_days)
     mid_cutoff = now - timedelta(days=window_days / 2.0) # Split window for trend velocity
 
@@ -425,7 +543,7 @@ def aggregate_and_enrich(victims, window_days=7):
     formatted_groups = []
     for group_key, g in groups_data.items():
         # Sort victims descending by date
-        g['victims'].sort(key=lambda x: x.get('discovered', ''), reverse=True)
+        g['victims'].sort(key=lambda x: x.get('discovered') or '', reverse=True)
 
         recent = g['recent_half_count']
         earlier = g['earlier_half_count']
@@ -471,18 +589,84 @@ def aggregate_and_enrich(victims, window_days=7):
 
     # Master list of all victims sorted by discovery date descending
     master_victims = [{k: val for k, val in v.items() if k != 'dt_obj'} for v in active_victims]
-    master_victims.sort(key=lambda x: x.get('discovered', ''), reverse=True)
+    master_victims.sort(key=lambda x: x.get('discovered') or '', reverse=True)
 
     # Calculate global metrics
     today_iso = now.date().isoformat()
     today_count = sum(1 for v in master_victims if v.get('discovered_date') == today_iso)
 
-    # Top target sector
+    # Genuine rolling 24-hour window from snapshot timestamp
+    h24_cutoff = now - timedelta(hours=24)
+    future_grace = now + timedelta(minutes=5)
+
+    def parse_victim_dt(v):
+        try:
+            d = datetime.fromisoformat(v.get('discovered', ''))
+            if d.tzinfo is None:
+                d = d.replace(tzinfo=timezone.utc)
+            else:
+                d = d.astimezone(timezone.utc)
+            return d
+        except Exception:
+            return None
+
+    rolling_24h_count = sum(
+        1 for v in master_victims
+        if (pdt := parse_victim_dt(v)) and h24_cutoff <= pdt <= future_grace
+    )
+
+    # Calculate sector coverage and unclassified proportion
+    total_active = len(master_victims)
+    classified_sectors = [v['sector'] for v in master_victims if v.get('sector')]
+    classified_count = len(classified_sectors)
+    unclassified_count = total_active - classified_count
+    unclassified_pct = round((unclassified_count / total_active * 100.0), 1) if total_active > 0 else 0.0
+
+    # Defensible broad industry vertical mapping
+    def categorize_sector(s):
+        if not s:
+            return None
+        low = s.lower()
+        if any(k in low for k in ('health', 'hospital', 'medical', 'surgery', 'diagnostic', 'dental', 'ophthalmology', 'biotech')):
+            return 'Healthcare & Medical'
+        if any(k in low for k in ('it service', 'software', 'semiconductor', 'computer', 'hosting', 'cloud', 'technology', 'broadcast')):
+            return 'Technology & IT'
+        if any(k in low for k in ('manufacturing', 'manufacturer', 'packaging', 'textile', 'concrete', 'automotive')):
+            return 'Manufacturing & Industrial'
+        if any(k in low for k in ('fintech', 'finance', 'payment', 'accounting', 'trading', 'investigation', 'due diligence', 'law firm', 'legal', 'professional services')):
+            return 'Finance & Professional Services'
+        if any(k in low for k in ('hospitality', 'hotel', 'restaurant', 'resort')):
+            return 'Hospitality & Tourism'
+        if any(k in low for k in ('construction', 'real estate', 'architect')):
+            return 'Construction & Real Estate'
+        if any(k in low for k in ('energy', 'solar', 'oil', 'gas', 'utility', 'utilities')):
+            return 'Energy & Utilities'
+        if any(k in low for k in ('education', 'school', 'academy', 'ngo', 'charity')):
+            return 'Education & Public Sector'
+        return s.title()
+
     sector_counts = defaultdict(int)
-    for v in master_victims:
-        if v.get('sector'):
-            sector_counts[v['sector']] += 1
-    top_sector = max(sector_counts.items(), key=lambda x: x[1])[0] if sector_counts else 'Technology'
+    for s in classified_sectors:
+        sector_counts[s] += 1
+
+    category_counts = defaultdict(int)
+    for s in classified_sectors:
+        cat = categorize_sector(s)
+        if cat:
+            category_counts[cat] += 1
+
+    # Deterministic top sector evaluation:
+    # Rule: If unclassified percentage is >= 50.0%, or the leading category has fewer than 5 disclosures,
+    # or there is a tie for the top spot, do not present an arbitrary winner. Show 'Multiple / Unclassified'.
+    top_sector = 'Multiple / Unclassified'
+    top_sector_sub = f"{int(round(unclassified_pct))}% unclassified"
+
+    if unclassified_pct < 50.0 and sector_counts:
+        sorted_raw = sorted(sector_counts.items(), key=lambda x: (-x[1], x[0]))
+        if len(sorted_raw) == 1 or sorted_raw[0][1] > sorted_raw[1][1]:
+            if sorted_raw[0][1] >= 5:
+                top_sector = sorted_raw[0][0]
+                top_sector_sub = f"{sorted_raw[0][1]} disclosures ({int(round(unclassified_pct))}% unclassified)"
 
     top_actor = formatted_groups[0]['name'] if formatted_groups else 'Unknown'
 
@@ -490,13 +674,21 @@ def aggregate_and_enrich(victims, window_days=7):
         'last_updated': now.isoformat(),
         'last_updated_formatted': now.strftime('%b %d, %Y %H:%M UTC'),
         'period': f'Last {window_days} days',
-        'provenance': 'Extortion leak site disclosure monitoring via Ransomware.live OSINT feed',
-        'verification_note': 'Victim notices reflect claims published by extortion groups on dark web leak sites and do not constitute independent forensics or incident confirmation.',
+        'provenance': 'Aggregated dark web extortion notices via Ransomware.live telemetry',
+        'verification_note': 'Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.',
         'total_groups': len(formatted_groups),
         'total_victims': len(master_victims),
+        'disclosures_24h': rolling_24h_count,
         'disclosures_today': today_count,
         'top_threat_actor': top_actor,
         'top_target_sector': top_sector,
+        'top_target_sector_sub': top_sector_sub,
+        'sector_coverage': {
+            'total_records': total_active,
+            'classified_count': classified_count,
+            'unclassified_count': unclassified_count,
+            'unclassified_percent': unclassified_pct
+        },
         'groups': formatted_groups,
         'victims': master_victims
     }
