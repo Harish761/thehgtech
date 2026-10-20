@@ -128,27 +128,9 @@ html[data-theme="light"] body.threat-intel-page .m-header {
 
 body.threat-intel-page .header .header-content,
 body.threat-intel-page .header .nav-container {
-    max-width: 1320px !important;
-    height: 52px !important;
+    max-width: 1400px !important;
     margin: 0 auto !important;
-    padding: 0 clamp(1.25rem, 3.5vw, 2.5rem) !important;
-}
-
-body.threat-intel-page .header .logo,
-body.threat-intel-page .header .logo-text,
-body.threat-intel-page .m-header__logo span {
-    background: none !important;
-    -webkit-text-fill-color: var(--ti-text-primary) !important;
-    color: var(--ti-text-primary) !important;
-    font-family: var(--ti-font-sans) !important;
-    font-size: 1.05rem !important;
-    font-weight: 600 !important;
-    letter-spacing: -0.022em !important;
-    text-shadow: none !important;
-}
-
-body.threat-intel-page .header .logo-icon {
-    display: none !important;
+    padding: 1rem clamp(1.25rem, 3.5vw, 2.5rem) !important;
 }
 
 body.threat-intel-page .header .nav a,
@@ -1535,32 +1517,6 @@ body.light-mode .footer-logo-img.logo-light {
     }
 }
 
-/* HG-BRAND-IDENTITY-V1: Header Wordmark Brand Hierarchy */
-.header .logo-text,
-.m-header .logo-text {
-    font-size: 1.7rem;
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    display: inline-flex;
-    align-items: center;
-    background: none !important;
-    -webkit-text-fill-color: initial !important;
-}
-
-.logo-text-base {
-    color: #ffffff;
-    transition: color 0.2s ease;
-}
-
-.logo-text-red {
-    color: #DA2228;
-}
-
-[data-theme="light"] .logo-text-base,
-body.light-mode .logo-text-base {
-    color: #0F172A;
-}
-/* /HG-THREAT-INTEL-V1 */
 
 /* ==========================================================================
    11. SOC ANALYST OVERVIEW DASHBOARD & DOSSIER SYSTEM
