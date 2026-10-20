@@ -111,7 +111,7 @@
     <link rel="stylesheet" href="m-components.min.css?v=3.0">
     <link rel="stylesheet" href="mobile-nav.css">
     <link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
-    <link rel="stylesheet" href="css/ransomware-workbench.css?v=20261020">
+    <link rel="stylesheet" href="css/ransomware-workbench.css?v=20261020_v5">
 </head>
 
 <body class="rw-workbench">
@@ -374,227 +374,169 @@
          ========================================================================== -->
     <section class="rw-hero">
         <div class="rw-container">
-            <div class="rw-title-block">
-                <!-- Integrated Full-Bleed Background Visual: Cryptographic Syndicate Lattice -->
-                <div class="rw-hero-visual" aria-hidden="true">
-                    <svg class="rw-lattice-svg" viewBox="0 0 1200 320" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
-                <defs>
-                    <!-- Background Lattice Grid Pattern -->
-                    <pattern id="rwLatticeGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <line x1="0" y1="40" x2="40" y2="40" class="rw-lattice-grid" />
-                        <line x1="40" y1="0" x2="40" y2="40" class="rw-lattice-grid" />
-                    </pattern>
+            <!-- Merged Hero Split: Title & Telemetry on Left, Syndicate Lattice Animation on Right -->
+            <div class="rw-hero-split">
+                <!-- Left Column: Editorial Information & Provenance -->
+                <div class="rw-hero-left">
+                    <div class="rw-hero-badge">
+                        <span class="rw-live-dot"></span>
+                        Live Extortion Telemetry · Updated Twice Daily
+                    </div>
+                    <h1 class="rw-hero-title">
+                        Live <span>Ransomware Intelligence</span> Workbench
+                    </h1>
+                    <p class="rw-hero-desc">
+                        Search 200+ victim disclosures, track extortion syndicate velocity, and monitor active double-extortion campaigns across dark web leak sites. Disclosures reflect claimed postings and are verified via OSINT feeds.
+                    </p>
+                    <div class="rw-hero-meta-bar">
+                        <span class="rw-hero-meta-item"><i class="fas fa-satellite-dish" style="color: var(--rw-accent-crimson);"></i> Ransomware.live OSINT</span>
+                        <span class="rw-hero-meta-sep" aria-hidden="true">&middot;</span>
+                        <span class="rw-hero-meta-item"><i class="fas fa-database" style="color: var(--rw-accent-amber);"></i> Retained 200 Records</span>
+                        <span class="rw-hero-meta-sep" aria-hidden="true">&middot;</span>
+                        <span class="rw-hero-meta-item"><i class="fas fa-shield-alt" style="color: var(--rw-accent-green);"></i> OSINT Corroborated</span>
+                    </div>
+                </div>
 
-                    <!-- Atmospheric Cluster Glow Gradients -->
-                    <radialGradient id="rwCoreGlow" cx="720" cy="160" r="175" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#ff3b30" stop-opacity="0.18" />
-                        <stop offset="60%" stop-color="#b91c1c" stop-opacity="0.06" />
-                        <stop offset="100%" stop-color="#ff3b30" stop-opacity="0" />
-                    </radialGradient>
+                <!-- Right Column: Interactive Cryptographic Syndicate Lattice Animation -->
+                <div class="rw-hero-right" aria-hidden="true">
+                    <svg class="rw-lattice-svg" viewBox="0 0 620 280" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                        <defs>
+                            <!-- Background Grid Pattern -->
+                            <pattern id="rwLatticeGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+                                <line x1="0" y1="36" x2="36" y2="36" class="rw-lattice-grid" />
+                                <line x1="36" y1="0" x2="36" y2="36" class="rw-lattice-grid" />
+                            </pattern>
 
-                    <radialGradient id="rwVectorGlow" cx="530" cy="160" r="130" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.10" />
-                        <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
-                    </radialGradient>
+                            <!-- Radial Glows -->
+                            <radialGradient id="rwCoreGlow" cx="130" cy="140" r="140" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#ff3b30" stop-opacity="0.22" />
+                                <stop offset="60%" stop-color="#b91c1c" stop-opacity="0.08" />
+                                <stop offset="100%" stop-color="#ff3b30" stop-opacity="0" />
+                            </radialGradient>
 
-                    <radialGradient id="rwSyndicateGlow" cx="1040" cy="160" r="160" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.12" />
-                        <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
-                    </radialGradient>
+                            <radialGradient id="rwSyndicateGlow" cx="460" cy="140" r="150" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.14" />
+                                <stop offset="100%" stop-color="#06b6d4" stop-opacity="0" />
+                            </radialGradient>
 
-                    <!-- Linear Gradients for Structural Elements -->
-                    <linearGradient id="rwGradCore" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#ff3b30" stop-opacity="0.9" />
-                        <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.95" />
-                    </linearGradient>
+                            <!-- Gradients -->
+                            <linearGradient id="rwGradCore" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ff3b30" stop-opacity="0.95" />
+                                <stop offset="100%" stop-color="#b91c1c" stop-opacity="0.95" />
+                            </linearGradient>
 
-                    <linearGradient id="rwGradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.85" />
-                        <stop offset="100%" stop-color="#d97706" stop-opacity="0.95" />
-                    </linearGradient>
+                            <linearGradient id="rwGradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.85" />
+                                <stop offset="100%" stop-color="#d97706" stop-opacity="0.95" />
+                            </linearGradient>
 
-                    <linearGradient id="rwGradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85" />
-                        <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95" />
-                    </linearGradient>
+                            <linearGradient id="rwGradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.85" />
+                                <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95" />
+                            </linearGradient>
 
-                    <!-- Horizontal Blend Mask: subtle behind left text (0-42%), high clarity on right (55-100%) -->
-                    <linearGradient id="rwHeroBlendMaskGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-                        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10" />
-                        <stop offset="42%" stop-color="#ffffff" stop-opacity="0.15" />
-                        <stop offset="55%" stop-color="#ffffff" stop-opacity="0.85" />
-                        <stop offset="94%" stop-color="#ffffff" stop-opacity="1" />
-                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.90" />
-                    </linearGradient>
-                    <mask id="rwHeroBlendMask">
-                        <rect x="0" y="0" width="1200" height="320" fill="url(#rwHeroBlendMaskGrad)" />
-                    </mask>
-                </defs>
+                            <linearGradient id="rwGradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#10b981" stop-opacity="0.85" />
+                                <stop offset="100%" stop-color="#059669" stop-opacity="0.95" />
+                            </linearGradient>
+                        </defs>
 
-                <!-- Subtle Atmospheric Glows -->
-                <circle cx="720" cy="160" r="175" fill="url(#rwCoreGlow)" />
-                <circle cx="530" cy="160" r="130" fill="url(#rwVectorGlow)" />
-                <circle cx="1040" cy="160" r="160" fill="url(#rwSyndicateGlow)" />
+                        <!-- Background Grid Surface -->
+                        <rect width="620" height="280" rx="12" fill="rgba(12, 16, 23, 0.45)" />
+                        <rect width="620" height="280" rx="12" fill="url(#rwLatticeGrid)" opacity="0.6" />
 
-                <!-- Full Hero Masked Schematic Layer -->
-                <g mask="url(#rwHeroBlendMask)">
-                    <!-- Background Grid -->
-                    <rect width="1200" height="320" fill="url(#rwLatticeGrid)" />
+                        <!-- Atmospheric Glows -->
+                        <circle cx="130" cy="140" r="140" fill="url(#rwCoreGlow)" />
+                        <circle cx="460" cy="140" r="150" fill="url(#rwSyndicateGlow)" />
 
-                    <!-- Architectural Zone Framing Brackets [ ] -->
-                    <g class="rw-sig-brackets">
-                        <path d="M490 22 H480 V34" />
-                        <path d="M490 298 H480 V286" />
-                        <path d="M1170 22 H1180 V34" />
-                        <path d="M1170 298 H1180 V286" />
-                    </g>
+                        <!-- Frame Border -->
+                        <rect width="620" height="280" rx="12" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
-                    <!-- Horizontal Sensor Horizon Channels across full hero -->
-                    <g class="rw-sig-channels">
-                        <line x1="0" y1="56" x2="520" y2="56" stroke-dasharray="2 6" />
-                        <line x1="0" y1="108" x2="520" y2="108" stroke-dasharray="2 6" />
-                        <line x1="0" y1="160" x2="520" y2="160" stroke-dasharray="2 6" />
-                        <line x1="0" y1="212" x2="520" y2="212" stroke-dasharray="2 6" />
-                        <line x1="0" y1="264" x2="520" y2="264" stroke-dasharray="2 6" />
-                    </g>
+                        <!-- Vector Links (Core x=130 to Registers x=360) -->
+                        <g class="rw-lattice-vectors">
+                            <path d="M 180 115 L 255 58 L 360 58" class="rw-lattice-link" />
+                            <path d="M 188 132 L 255 112 L 360 112" class="rw-lattice-link" />
+                            <path d="M 188 148 L 255 168 L 360 168" class="rw-lattice-link" />
+                            <path d="M 180 165 L 255 222 L 360 222" class="rw-lattice-link" />
 
-                    <!-- Sector Zone Labels -->
-                    <g class="rw-sig-labels">
-                        <text x="500" y="30">KILLCHAIN STREAM</text>
-                        <text x="720" y="30" text-anchor="middle">EXTORTION CORE NEXUS</text>
-                        <text x="1035" y="30" text-anchor="middle">ACTIVE SYNDICATE REGISTERS</text>
-                    </g>
+                            <!-- Checkpoint Tags -->
+                            <rect x="230" y="48" width="50" height="20" rx="4" fill="#0f172a" stroke="rgba(255,255,255,0.18)" />
+                            <text x="255" y="62" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7.5" fill="#94a3b8">ACCESS</text>
 
-                    <!-- Inbound Telemetry Streams from Left into Center (0 -> 520) -->
-                    <g class="rw-sig-inbound">
-                        <path d="M 0 56 H 220 L 235 70 H 340 L 355 56 H 520" class="rw-lattice-link" />
-                        <path d="M 0 108 H 160 L 175 96 H 380 L 395 108 H 520" class="rw-lattice-link" />
-                        <path d="M 0 160 H 280 L 295 146 H 420 L 435 160 H 520" class="rw-lattice-link" />
-                        <path d="M 0 212 H 190 L 205 224 H 440 L 455 212 H 520" class="rw-lattice-link" />
-                        <path d="M 0 264 H 310 L 325 250 H 460 L 475 264 H 520" class="rw-lattice-link" />
+                            <rect x="230" y="102" width="50" height="20" rx="4" fill="#0f172a" stroke="rgba(255,255,255,0.18)" />
+                            <text x="255" y="116" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7.5" fill="#f59e0b">EXFIL</text>
 
-                        <!-- Animated Stream Pulses (subtle behind left text) -->
-                        <path d="M 0 56 H 220 L 235 70 H 340 L 355 56 H 520" class="rw-exfil-beam rw-exfil-beam--crimson" pathLength="300" />
-                        <path d="M 0 108 H 160 L 175 96 H 380 L 395 108 H 520" class="rw-exfil-beam rw-exfil-beam--amber" pathLength="300" />
-                        <path d="M 0 160 H 280 L 295 146 H 420 L 435 160 H 520" class="rw-exfil-beam rw-exfil-beam--cyan" pathLength="300" />
-                        <path d="M 0 212 H 190 L 205 224 H 440 L 455 212 H 520" class="rw-exfil-beam rw-exfil-beam--amber" pathLength="300" />
-                    </g>
+                            <rect x="230" y="158" width="50" height="20" rx="4" fill="#0f172a" stroke="rgba(255,255,255,0.18)" />
+                            <text x="255" y="172" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7.5" fill="#06b6d4">LEAK</text>
 
-                    <!-- Vectors connecting Inbound Streams to Core (520 -> 720) -->
-                    <g class="rw-lattice-vectors">
-                        <path d="M 520 108 L 575 88 L 640 120" class="rw-lattice-link" />
-                        <path d="M 520 160 L 638 160" class="rw-lattice-link" />
-                        <path d="M 520 212 L 575 232 L 640 200" class="rw-lattice-link" />
+                            <rect x="230" y="212" width="50" height="20" rx="4" fill="#0f172a" stroke="rgba(255,255,255,0.18)" />
+                            <text x="255" y="226" text-anchor="middle" font-family="ui-monospace, monospace" font-size="7.5" fill="#10b981">DEMAND</text>
 
-                        <!-- Cross-lattice connector -->
-                        <line x1="575" y1="88" x2="575" y2="232" class="rw-lattice-link" stroke-dasharray="3 3" />
-
-                        <!-- Stage Checkpoints -->
-                        <rect x="545" y="76" width="56" height="24" rx="4" fill="#121824" stroke="rgba(255,255,255,0.18)" />
-                        <text x="573" y="92" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#94a3b8">INITIAL</text>
-
-                        <rect x="545" y="220" width="56" height="24" rx="4" fill="#121824" stroke="rgba(255,255,255,0.18)" />
-                        <text x="573" y="236" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#f59e0b">EXFIL</text>
-
-                        <!-- Animated Inflow Beams -->
-                        <path d="M 520 108 L 575 88 L 640 120" class="rw-exfil-beam rw-exfil-beam--crimson" pathLength="200" />
-                        <path d="M 520 160 L 638 160" class="rw-exfil-beam rw-exfil-beam--amber" pathLength="200" />
-                        <path d="M 520 212 L 575 232 L 640 200" class="rw-exfil-beam rw-exfil-beam--cyan" pathLength="200" />
-                    </g>
-
-                    <!-- Extortion Core Nexus (centered at 720, 160) -->
-                    <g transform="translate(720, 160)">
-                        <!-- Outer Hash Cipher Ring -->
-                        <circle cx="0" cy="0" r="80" class="rw-lattice-core-ring" />
-                        <circle cx="0" cy="0" r="56" stroke="rgba(255, 59, 48, 0.3)" stroke-width="1" stroke-dasharray="3 6" />
-
-                        <!-- Core Hexagon Container -->
-                        <polygon points="0,-42 36,-21 36,21 0,42 -36,21 -36,-21" fill="url(#rwGradCore)" filter="drop-shadow(0 0 16px rgba(255,59,48,0.45))" />
-                        <polygon points="0,-32 27,-16 27,16 0,32 -27,16 -27,-16" fill="#0c1017" stroke="rgba(255,255,255,0.22)" stroke-width="1" />
-
-                        <!-- Center Skull / Lock Icon Indicator -->
-                        <path d="M-10,-8 h20 v16 h-20 z M-6,-8 v-6 a6,6 0 0,1 12,0 v6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
-                        <circle cx="0" cy="0" r="2.5" fill="#ff3b30" />
-
-                        <!-- Core Label -->
-                        <text x="0" y="108" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8.5" fill="#f8fafc" letter-spacing="1">ENCRYPTION ENGINE: RSA-4096 / AES-GCM</text>
-                    </g>
-
-                    <!-- Vectors Outflow: from Core to Syndicate Registers (720 -> 910) -->
-                    <g class="rw-lattice-vectors">
-                        <path d="M 802 138 L 855 78 L 910 78" class="rw-lattice-link" />
-                        <path d="M 802 150 L 855 130 L 910 130" class="rw-lattice-link" />
-                        <path d="M 802 170 L 855 182 L 910 182" class="rw-lattice-link" />
-                        <path d="M 802 182 L 855 234 L 910 234" class="rw-lattice-link" />
-
-                        <!-- Checkpoint -->
-                        <rect x="832" y="148" width="50" height="24" rx="4" fill="#121824" stroke="rgba(255,255,255,0.18)" />
-                        <text x="857" y="164" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#ff3b30">LEAK</text>
-
-                        <!-- Animated Outflow Beams -->
-                        <path d="M 802 138 L 855 78 L 910 78" class="rw-exfil-beam rw-exfil-beam--crimson" pathLength="200" />
-                        <path d="M 802 150 L 855 130 L 910 130" class="rw-exfil-beam rw-exfil-beam--amber" pathLength="200" />
-                        <path d="M 802 170 L 855 182 L 910 182" class="rw-exfil-beam rw-exfil-beam--cyan" pathLength="200" />
-                        <path d="M 802 182 L 855 234 L 910 234" class="rw-exfil-beam rw-exfil-beam--crimson" pathLength="200" />
-                    </g>
-
-                    <!-- 3. Active Syndicate Block Registers (x=910..1160) -->
-                    <g transform="translate(910, 0)">
-                        <!-- Block 1: LockBit 5.0 -->
-                        <g transform="translate(0, 60)">
-                            <rect width="250" height="36" rx="8" fill="#121824" stroke="rgba(255,59,48,0.35)" />
-                            <circle cx="18" cy="18" r="4" fill="#ff3b30" />
-                            <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">LOCKBIT 5.0</text>
-                            <text x="160" y="22" font-family="ui-monospace, monospace" font-size="9" fill="#ef4444">LEAK SITE 2.0</text>
+                            <!-- Animated Stream Pulses -->
+                            <path d="M 180 115 L 255 58 L 360 58" class="rw-exfil-beam rw-exfil-beam--crimson" pathLength="240" />
+                            <path d="M 188 132 L 255 112 L 360 112" class="rw-exfil-beam rw-exfil-beam--amber" pathLength="240" />
+                            <path d="M 188 148 L 255 168 L 360 168" class="rw-exfil-beam rw-exfil-beam--cyan" pathLength="240" />
+                            <path d="M 180 165 L 255 222 L 360 222" class="rw-exfil-beam rw-exfil-beam--green" pathLength="240" />
                         </g>
 
-                        <!-- Block 2: Akira Syndicate -->
-                        <g transform="translate(0, 112)">
-                            <rect width="250" height="36" rx="8" fill="#121824" stroke="rgba(245,158,11,0.35)" />
-                            <circle cx="18" cy="18" r="4" fill="#f59e0b" />
-                            <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">AKIRA SYNDICATE</text>
-                            <text x="160" y="22" font-family="ui-monospace, monospace" font-size="9" fill="#f59e0b">ACTIVE BURST</text>
+                        <!-- Extortion Core Nexus (centered at 130, 140) -->
+                        <g transform="translate(130, 140)">
+                            <!-- Outer Hash Cipher Ring -->
+                            <circle cx="0" cy="0" r="66" class="rw-lattice-core-ring" />
+                            <circle cx="0" cy="0" r="48" stroke="rgba(255, 59, 48, 0.35)" stroke-width="1" stroke-dasharray="3 5" />
+
+                            <!-- Core Hexagon Container -->
+                            <polygon points="0,-36 31,-18 31,18 0,36 -31,18 -31,-18" fill="url(#rwGradCore)" filter="drop-shadow(0 0 14px rgba(255,59,48,0.5))" />
+                            <polygon points="0,-27 23,-13 23,13 0,27 -23,13 -23,-13" fill="#0c1017" stroke="rgba(255,255,255,0.25)" stroke-width="1" />
+
+                            <!-- Center Lock Icon -->
+                            <path d="M-8,-6 h16 v13 h-16 z M-5,-6 v-5 a5,5 0 0,1 10,0 v5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" />
+                            <circle cx="0" cy="1" r="2" fill="#ff3b30" />
+
+                            <!-- Core Label -->
+                            <text x="0" y="88" text-anchor="middle" font-family="ui-monospace, monospace" font-size="8" fill="#cbd5e1" letter-spacing="0.5">RSA-4096 / AES-GCM</text>
                         </g>
 
-                        <!-- Block 3: Qilin Extortion -->
-                        <g transform="translate(0, 164)">
-                            <rect width="250" height="36" rx="8" fill="#121824" stroke="rgba(6,182,212,0.35)" />
-                            <circle cx="18" cy="18" r="4" fill="#06b6d4" />
-                            <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">QILIN EXTORTION</text>
-                            <text x="160" y="22" font-family="ui-monospace, monospace" font-size="9" fill="#06b6d4">DOUBLE EXT</text>
+                        <!-- Active Syndicate Block Registers (x=360..595) -->
+                        <g transform="translate(360, 0)">
+                            <!-- Block 1: LockBit 5.0 -->
+                            <g transform="translate(0, 40)">
+                                <rect width="235" height="34" rx="7" fill="#121824" stroke="rgba(255,59,48,0.4)" stroke-width="1" />
+                                <circle cx="16" cy="17" r="3.5" fill="#ff3b30" />
+                                <text x="28" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">LOCKBIT 5.0</text>
+                                <text x="150" y="21" font-family="ui-monospace, monospace" font-size="8.5" fill="#ef4444">LEAK SITE 2.0</text>
+                            </g>
+
+                            <!-- Block 2: Akira Syndicate -->
+                            <g transform="translate(0, 94)">
+                                <rect width="235" height="34" rx="7" fill="#121824" stroke="rgba(245,158,11,0.4)" stroke-width="1" />
+                                <circle cx="16" cy="17" r="3.5" fill="#f59e0b" />
+                                <text x="28" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">AKIRA SYNDICATE</text>
+                                <text x="150" y="21" font-family="ui-monospace, monospace" font-size="8.5" fill="#f59e0b">ACTIVE BURST</text>
+                            </g>
+
+                            <!-- Block 3: Qilin Extortion -->
+                            <g transform="translate(0, 150)">
+                                <rect width="235" height="34" rx="7" fill="#121824" stroke="rgba(6,182,212,0.4)" stroke-width="1" />
+                                <circle cx="16" cy="17" r="3.5" fill="#06b6d4" />
+                                <text x="28" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">QILIN EXTORTION</text>
+                                <text x="150" y="21" font-family="ui-monospace, monospace" font-size="8.5" fill="#06b6d4">DOUBLE EXT</text>
+                            </g>
+
+                            <!-- Block 4: N0n Campaign -->
+                            <g transform="translate(0, 204)">
+                                <rect width="235" height="34" rx="7" fill="#121824" stroke="rgba(16,185,129,0.4)" stroke-width="1" />
+                                <circle cx="16" cy="17" r="3.5" fill="#10b981" />
+                                <text x="28" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#f8fafc">N0N CAMPAIGN</text>
+                                <text x="150" y="21" font-family="ui-monospace, monospace" font-size="8.5" fill="#10b981">STEADY EXPOS</text>
+                            </g>
                         </g>
 
-                        <!-- Block 4: N0n Campaign -->
-                        <g transform="translate(0, 216)">
-                            <rect width="250" height="36" rx="8" fill="#121824" stroke="rgba(16,185,129,0.35)" />
-                            <circle cx="18" cy="18" r="4" fill="#10b981" />
-                            <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">N0N CAMPAIGN</text>
-                            <text x="160" y="22" font-family="ui-monospace, monospace" font-size="9" fill="#10b981">STEADY EXPOS</text>
-                        </g>
-                    </g>
-
-                    <!-- Horizontal Matrix Phase Sweep Bar -->
-                    <g transform="translate(720, 0)">
-                        <line x1="0" y1="36" x2="0" y2="284" class="rw-matrix-sweep-bar" />
-                    </g>
-                </g>
-            </svg>
-        </div>
-
-        <div class="rw-hero-header">
-            <div class="rw-hero-badge">
-                <span class="rw-live-dot"></span>
-                Live Extortion Telemetry · Updated Twice Daily
+                        <!-- Horizontal Matrix Sweep Bar -->
+                        <line x1="255" y1="20" x2="255" y2="260" class="rw-matrix-sweep-bar" />
+                    </svg>
+                </div>
             </div>
-            <h1 class="rw-hero-title">
-                Live <span>Ransomware Intelligence</span> Workbench
-            </h1>
-            <p class="rw-hero-desc">
-                Search 200+ victim disclosures, track extortion syndicate velocity, and monitor active double-extortion campaigns across dark web leak sites. Disclosures reflect claimed postings and are verified via OSINT feeds.
-            </p>
-        </div>
-    </div>
-
 
             <!-- KPI Metrics Strip -->
             <div class="rw-metrics-grid">
