@@ -1,61 +1,61 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2026-10-21T01:28:20.475709+05:30 IST (2026-10-20 19:58 UTC)
+// Updated: 2026-10-21T03:18:20.878459+05:30 IST (2026-10-20 21:48 UTC)
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2026-10-21T01:28:19.759358+05:30",
-    "lastUpdatedFormatted": "Oct 21, 2026 at 01:28 AM IST",
-    "lastUpdatedUtc": "2026-10-20 19:58 UTC",
+    "lastUpdated": "2026-10-21T03:18:20.087067+05:30",
+    "lastUpdatedFormatted": "Oct 21, 2026 at 03:18 AM IST",
+    "lastUpdatedUtc": "2026-10-20 21:48 UTC",
     "comparisonPeriod": "Oct 20 \u2013 Oct 21, 2026",
     "stats": {
-        "totalIOCs": 103083,
+        "totalIOCs": 105079,
         "byType": {
-            "url": 44986,
-            "ip": 38144,
-            "hash": 4977,
-            "domain": 2299,
-            "ssl-cert": 10990,
-            "ip-range": 1687
+            "url": 45298,
+            "ip": 39472,
+            "hash": 5477,
+            "domain": 2615,
+            "ssl-cert": 10584,
+            "ip-range": 1633
         },
         "byVendor": {
             "OpenPhish": 1240,
-            "Malware Bazaar": 3137,
-            "Spamhaus DROP": 1687,
-            "CINS Army": 28040,
-            "Blocklist.de": 7235,
-            "URLhaus": 34600,
-            "ThreatFox": 16149,
+            "Malware Bazaar": 3272,
+            "Spamhaus DROP": 1633,
+            "CINS Army": 29121,
+            "Blocklist.de": 7455,
+            "URLhaus": 34712,
+            "ThreatFox": 17057,
             "Feodo Tracker": 5,
-            "SSL Blacklist": 10990
+            "SSL Blacklist": 10584
         },
         "topMalware": [
             {
                 "name": "Vidar",
-                "count": 2014,
+                "count": 2035,
                 "types": [
-                    "ip",
                     "ssl-cert",
                     "hash",
+                    "ip",
+                    "domain",
+                    "url"
+                ]
+            },
+            {
+                "name": "Mirai",
+                "count": 1759,
+                "types": [
+                    "ip",
                     "url",
+                    "hash",
                     "domain"
                 ]
             },
             {
                 "name": "AsyncRAT",
-                "count": 1657,
+                "count": 1649,
                 "types": [
-                    "ip",
                     "ssl-cert",
-                    "hash",
-                    "url",
-                    "domain"
-                ]
-            },
-            {
-                "name": "Mirai",
-                "count": 1558,
-                "types": [
                     "hash",
                     "ip",
                     "domain",
@@ -71,7 +71,7 @@ window.threatIntelData = {
             },
             {
                 "name": "Cobalt Strike",
-                "count": 1208,
+                "count": 1211,
                 "types": [
                     "ip",
                     "domain"
@@ -86,10 +86,10 @@ window.threatIntelData = {
             },
             {
                 "name": "QuasarRAT",
-                "count": 733,
+                "count": 714,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
@@ -108,7 +108,7 @@ window.threatIntelData = {
             },
             {
                 "name": "IClickFix",
-                "count": 630,
+                "count": 637,
                 "types": [
                     "domain"
                 ]
@@ -121,383 +121,380 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": "LummaStealer",
-                "count": 563,
+                "name": "AMOS",
+                "count": 569,
                 "types": [
+                    "domain",
                     "hash",
-                    "ssl-cert"
+                    "url"
+                ]
+            },
+            {
+                "name": "LummaStealer",
+                "count": 557,
+                "types": [
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
                 "name": "OffLoader",
-                "count": 547,
+                "count": 490,
                 "types": [
                     "ssl-cert"
                 ]
             },
             {
                 "name": "ConnectWise",
-                "count": 512,
+                "count": 457,
                 "types": [
-                    "hash",
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "AMOS",
-                "count": 508,
-                "types": [
-                    "hash",
-                    "domain",
-                    "url"
+                    "ssl-cert",
+                    "hash"
                 ]
             }
         ],
         "recentIOCs": [
             {
                 "type": "ssl-cert",
-                "indicator": "59fb8a90649cac57e345fbd3af9f76d6a73fac12",
-                "description": "Malicious SSL certificate - OffLoader C&C",
-                "timestamp": "2026-10-20 06:27:30",
+                "indicator": "e10fe9007408391e4c3a808ae4b7c4cb6e7df1a3",
+                "description": "Malicious SSL certificate - OnyxC2 C&C",
+                "timestamp": "2026-10-20 16:02:55",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "OffLoader",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "OnyxC2",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "9a2205a15c886d6278d9e0d60747e8ad287b6c7b",
+                "indicator": "e6c0468f46efe40f3127d33641bfc3df8b2e5c7d",
                 "description": "Malicious SSL certificate - PureLogsStealer C&C",
-                "timestamp": "2026-10-20 06:27:07",
+                "timestamp": "2026-10-13 07:58:17",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "PureLogsStealer",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "9061737b3e3cb6dae0a02abe33346d72ccd27af4",
-                "description": "Malicious SSL certificate - RatonRAT C&C",
-                "timestamp": "2026-10-20 06:25:33",
+                "indicator": "4664c47d412c00bf067a325ffa9790db75efbe75",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-10-13 06:59:39",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "RatonRAT",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "PureLogsStealer",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "75964711a6e10849d232b5df09f428a4eaa48a68",
+                "indicator": "b3c1e060a727e4db1cf6131f1eb6e9bcca2ffb5d",
                 "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-20 06:25:14",
+                "timestamp": "2026-10-13 06:17:05",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "PureRAT",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "9001ac2344ddd1b2e32f5d25b5e56b323e6fc862",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-20 05:22:47",
+                "indicator": "9b798f7d87edcf42680454660f593afd696ef8ca",
+                "description": "Malicious SSL certificate - QuasarRAT C&C",
+                "timestamp": "2026-09-21 13:21:04",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "QuasarRAT",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "11cfb1e85c316e9b9785c6778bc077bb04093dfd",
+                "indicator": "e20ecba521fd923644d154963d32d5cd29f4c0b1",
                 "description": "Malicious SSL certificate - PureLogsStealer C&C",
-                "timestamp": "2026-10-12 18:59:42",
+                "timestamp": "2026-09-21 07:57:31",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "PureLogsStealer",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "c389945d4fc75250b291953e0abad0662dd9ce7d",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-12 18:14:36",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "24ec954313877b212b522682aef606180ff6f343",
+                "indicator": "9028baa7a4f17d812e2c497cdc6dbe5594780325",
                 "description": "Malicious SSL certificate - OffLoader C&C",
-                "timestamp": "2026-10-12 18:14:12",
+                "timestamp": "2026-09-21 07:53:24",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "OffLoader",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "515574d4dc4957fbd0043d3a4269485384e504e7",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-12 18:12:34",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "51f9d6339bfdb9321630392913941e04d921cf7d",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-12 18:11:48",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "9d4574e66ed485ca617fe78078a7dba674937bb3",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-12 18:10:31",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "6def2654b3b68fb89142113e6c5ad1b9e866134c",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-05 13:04:04",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "920de17c5bfce79df2950dacfb6a1f473e918edc",
-                "description": "Malicious SSL certificate - AokigaharaStealer C&C",
-                "timestamp": "2026-10-05 12:57:51",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "AokigaharaStealer",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "184e5ede55f2eaf584182989d8a41411b6d34ae0",
-                "description": "Malicious SSL certificate - PureLogsStealer C&C",
-                "timestamp": "2026-10-05 08:51:24",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "PureLogsStealer",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "77c620cd80ac90a263808350b4133b607d973373",
-                "description": "Malicious SSL certificate - PureLogsStealer C&C",
-                "timestamp": "2026-10-05 08:42:42",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "PureLogsStealer",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "4e01833ef19ddbe7747012a4b08e54601bc318ae",
-                "description": "Malicious SSL certificate - PureLogsStealer C&C",
-                "timestamp": "2026-10-05 08:17:27",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "PureLogsStealer",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "9df78fcc97d1d3ee0d6a49ad2f2ac31559d77e8b",
-                "description": "Malicious SSL certificate - Malware C&C",
-                "timestamp": "2026-10-05 08:13:44",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
-                "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
-                ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
-                "campaign": "Malware",
-                "confidence": "High"
-            },
-            {
-                "type": "ssl-cert",
-                "indicator": "4bacdd95bace5a7e29064123c1326e2035f617c6",
+                "indicator": "31ce37e696cdff32d3042b1f9be493c1e43b4b6e",
                 "description": "Malicious SSL certificate - OffLoader C&C",
-                "timestamp": "2026-10-05 08:13:13",
+                "timestamp": "2026-09-21 07:53:19",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "OffLoader",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "f8f56c66c440df5666400e34a532c04d6ca4e5b0",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-05 08:12:45",
+                "indicator": "ea74c0bba5834a0445661f91c3a220811eb965a3",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-09-21 07:53:12",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "4385dfcee56c1ede34b61cbc84666afe4946cf2a",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-09-21 07:52:50",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "0bf61cf448206d51a0b7a0cdece647df3ea1196f",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-09-21 07:52:03",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "Vidar",
                 "confidence": "High"
             },
             {
                 "type": "ssl-cert",
-                "indicator": "a06e3d9da60d6d6b57b1ef0bc4bf4a5187196fef",
+                "indicator": "a7bc5bdb50a33449b1f9c6037a703e58caa406bf",
                 "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-05 08:12:29",
+                "timestamp": "2026-09-21 07:50:23",
                 "source": "SSL Blacklist",
                 "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-10-20 19:01 IST",
+                "analysisTime": "2026-10-21 01:28 IST",
                 "tags": [
                     "ssl",
                     "certificate",
                     "c2"
                 ],
-                "addedAt": "2026-10-20T19:01:07.884448+05:30",
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
                 "campaign": "Vidar",
                 "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "198fea94392f134f8578e6057c3b6679243e58c3",
+                "description": "Malicious SSL certificate - OffLoader C&C",
+                "timestamp": "2026-09-21 07:50:00",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T01:28:16.891113+05:30",
+                "campaign": "OffLoader",
+                "confidence": "High"
+            },
+            {
+                "type": "ip",
+                "indicator": "162[.]243[.]103[.]246",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-10-21 01:28 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
+                ],
+                "addedAt": "2026-10-21T01:28:15.443023+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
+            },
+            {
+                "type": "ip",
+                "indicator": "178[.]62[.]3[.]223",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-10-21 01:28 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
+                ],
+                "addedAt": "2026-10-21T01:28:15.443023+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
+            },
+            {
+                "type": "ip",
+                "indicator": "27[.]133[.]154[.]218",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-10-21 01:28 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
+                ],
+                "addedAt": "2026-10-21T01:28:15.443023+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
+            },
+            {
+                "type": "ip",
+                "indicator": "34[.]204[.]119[.]63",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-10-21 01:28 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
+                ],
+                "addedAt": "2026-10-21T01:28:15.443023+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
+            },
+            {
+                "type": "ip",
+                "indicator": "50[.]16[.]16[.]211",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-10-21 01:28 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
+                ],
+                "addedAt": "2026-10-21T01:28:15.443023+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
+            },
+            {
+                "type": "domain",
+                "indicator": "enywb85427[.]workers[.]dev",
+                "description": "php.shin_webshell (payload_delivery)",
+                "timestamp": "2026-10-20 19:46:41",
+                "source": "ThreatFox",
+                "sourceUrl": "https://threatfox.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "verified"
+                ],
+                "addedAt": "2026-10-21T01:28:13.921467+05:30",
+                "campaign": "php.shin_webshell",
+                "confidence": "50%"
+            },
+            {
+                "type": "ip",
+                "indicator": "1[.]92[.]135[.]168",
+                "description": "Cobalt Strike (botnet_cc)",
+                "timestamp": "2026-10-20 19:46:36",
+                "source": "ThreatFox",
+                "sourceUrl": "https://threatfox.abuse.ch/",
+                "analysisTime": "2026-10-21 01:28 IST",
+                "tags": [
+                    "botnet",
+                    "verified"
+                ],
+                "addedAt": "2026-10-21T01:28:13.921467+05:30",
+                "campaign": "Cobalt Strike",
+                "confidence": "75%"
             }
         ],
-        "lastUpdated": "2026-10-21T01:28:19.759358+05:30",
-        "lastUpdatedFormatted": "Oct 21, 2026 at 01:28 AM IST",
-        "lastUpdatedUtc": "2026-10-20 19:58 UTC"
+        "lastUpdated": "2026-10-21T03:18:20.087067+05:30",
+        "lastUpdatedFormatted": "Oct 21, 2026 at 03:18 AM IST",
+        "lastUpdatedUtc": "2026-10-20 21:48 UTC"
     },
     "vendors": {
         "OpenPhish": {
@@ -509,7 +506,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 1240,
                 "newInLastHour": 300,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "url"
@@ -526,34 +523,34 @@ window.threatIntelData = {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 3272,
+            "iocCount": 3298,
             "iocDataUrl": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 3272,
-                "newInLastHour": 135,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 3298,
+                "newInLastHour": 26,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                "7b65cf3949733eb0f815b4296e690f0e4c83d202875ba54c6325373df99cacf6",
-                "ce043a0bb3d7bdbee49705b04faec928fc75c99c9290b0afd1c1ec388b815534",
-                "af0696cbbc292a295be2929668f034b18b6ffae295464842d8cd0193668b6981",
-                "ffe615cf5607d1fc36d694ab6419d7babc9c0b164ef8848bea077da734b98d92",
-                "71984854ab6628930ed2d823f183687e3a4e5d1feaa44f2ebf94a49fc05d656e"
+                "693ac9c894b9e9def660ecb851db81f6f0f3ed94bf75ce2807ee18d6e38b2f98",
+                "704f4e68b3dfb5b0a47e98b029e31695bebee202de88f843f5e33d05170b03ab",
+                "7ec08e79a1a3d27ebb54f9eceb16401720c148ebdbec0a917c2a4885e0102f31",
+                "f890d8b65815729c4b621d34babbf86ad8691ac5ce10cb53351ff2abd43f4ff9",
+                "99f64eff67c3c742e8677c7e844610e7be93d8ee1ac666910675af651b7e968d"
             ]
         },
         "Spamhaus DROP": {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1633,
+            "iocCount": 1691,
             "iocDataUrl": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "stats": {
-                "total": 1633,
-                "newInLastHour": 5,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 1691,
+                "newInLastHour": 58,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ip-range"
@@ -570,12 +567,12 @@ window.threatIntelData = {
             "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
             "website": "http://cinsscore.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 29121,
+            "iocCount": 29651,
             "iocDataUrl": "https://thehgtech.com/ioc-data/cins-army.json",
             "stats": {
-                "total": 29121,
+                "total": 29651,
                 "newInLastHour": 15000,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ip"
@@ -584,20 +581,20 @@ window.threatIntelData = {
                 "1[.]117[.]68[.]141",
                 "1[.]12[.]229[.]231",
                 "1[.]14[.]149[.]30",
-                "1[.]145[.]89[.]105",
-                "1[.]15[.]14[.]29"
+                "1[.]15[.]14[.]29",
+                "1[.]177[.]162[.]4"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 7455,
+            "iocCount": 7512,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 7455,
-                "newInLastHour": 5251,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 7512,
+                "newInLastHour": 5269,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ip"
@@ -614,47 +611,47 @@ window.threatIntelData = {
             "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
             "website": "https://urlhaus.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 34712,
+            "iocCount": 34728,
             "iocDataUrl": "https://thehgtech.com/ioc-data/urlhaus.json",
             "stats": {
-                "total": 34712,
-                "newInLastHour": 33906,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 34728,
+                "newInLastHour": 33922,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "url"
             ],
             "sampleIndicators": [
-                "hxxp://42[.]6[.]201[.]210:34289/i",
-                "hxxp://cloud-browse[.]codes/9de40b36c2a8aaaad7e727a14d4f68f24afd8b3c311d92ecbcc7ac171368b0d8",
-                "hxxp://cloud-browse[.]codes/5c078b74c600e17cc635a453359d1d6292e0d502c21c5e95f813c11cad6e871b",
-                "hxxp://182[.]127[.]167[.]206:45709/i",
-                "hxxp://105[.]224[.]36[.]188:34011/bin[.]sh"
+                "hxxp://27[.]204[.]199[.]169:48669/i",
+                "hxxp://222[.]141[.]63[.]159:57872/bin[.]sh",
+                "hxxp://115[.]48[.]146[.]56:37418/i",
+                "hxxp://175[.]174[.]105[.]195:51017/i",
+                "hxxp://115[.]55[.]197[.]99:59631/bin[.]sh"
             ]
         },
         "ThreatFox": {
             "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
             "website": "https://threatfox.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 17057,
+            "iocCount": 17164,
             "iocDataUrl": "https://thehgtech.com/ioc-data/threatfox.json",
             "stats": {
-                "total": 17057,
-                "newInLastHour": 5129,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 17164,
+                "newInLastHour": 4834,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ip",
-                "domain",
                 "hash",
+                "domain",
                 "url"
             ],
             "sampleIndicators": [
-                "enywb85427[.]workers[.]dev",
-                "1[.]92[.]135[.]168",
-                "88[.]119[.]168[.]238",
-                "hxxps://ok[.]abbastoto[.]org/gd/",
-                "38[.]60[.]202[.]196"
+                "hxxps://s7[.]abbc123[.]org/ty/",
+                "hxxp://ventuxe[.]biz:6929",
+                "hxxps://q[.]9winn[.]org/d",
+                "d2bbbd9a8aa85ca603c52867e04c4f910466c0764d4a27d6bb338316860de0d1",
+                "hxxps://s7[.]abbc123[.]org/bas/"
             ]
         },
         "Feodo Tracker": {
@@ -666,7 +663,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 5,
                 "newInLastHour": 5,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ip"
@@ -683,12 +680,12 @@ window.threatIntelData = {
             "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
             "website": "https://sslbl.abuse.ch/",
             "updateFrequency": "Daily",
-            "iocCount": 10584,
+            "iocCount": 11003,
             "iocDataUrl": "https://thehgtech.com/ioc-data/ssl-blacklist.json",
             "stats": {
-                "total": 10584,
-                "newInLastHour": 13,
-                "lastUpdate": "2026-10-20 19:58 UTC"
+                "total": 11003,
+                "newInLastHour": 419,
+                "lastUpdate": "2026-10-20 21:48 UTC"
             },
             "types": [
                 "ssl-cert"
@@ -705,1736 +702,1657 @@ window.threatIntelData = {
     "overview": [
         {
             "type": "ssl-cert",
-            "indicator": "59fb8a90649cac57e345fbd3af9f76d6a73fac12",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-10-20 06:27:30",
+            "indicator": "e10fe9007408391e4c3a808ae4b7c4cb6e7df1a3",
+            "description": "Malicious SSL certificate - OnyxC2 C&C",
+            "timestamp": "2026-10-20 16:02:55",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
+            "campaign": "OnyxC2",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "9a2205a15c886d6278d9e0d60747e8ad287b6c7b",
+            "indicator": "e6c0468f46efe40f3127d33641bfc3df8b2e5c7d",
             "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-10-20 06:27:07",
+            "timestamp": "2026-10-13 07:58:17",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureLogsStealer",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "9061737b3e3cb6dae0a02abe33346d72ccd27af4",
-            "description": "Malicious SSL certificate - RatonRAT C&C",
-            "timestamp": "2026-10-20 06:25:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "RatonRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "75964711a6e10849d232b5df09f428a4eaa48a68",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-20 06:25:14",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9001ac2344ddd1b2e32f5d25b5e56b323e6fc862",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-20 05:22:47",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "11cfb1e85c316e9b9785c6778bc077bb04093dfd",
+            "indicator": "4664c47d412c00bf067a325ffa9790db75efbe75",
             "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-10-12 18:59:42",
+            "timestamp": "2026-10-13 06:59:39",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureLogsStealer",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "c389945d4fc75250b291953e0abad0662dd9ce7d",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-12 18:14:36",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "24ec954313877b212b522682aef606180ff6f343",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-10-12 18:14:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "515574d4dc4957fbd0043d3a4269485384e504e7",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-12 18:12:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "51f9d6339bfdb9321630392913941e04d921cf7d",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-12 18:11:48",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9d4574e66ed485ca617fe78078a7dba674937bb3",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-12 18:10:31",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "6def2654b3b68fb89142113e6c5ad1b9e866134c",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-05 13:04:04",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "920de17c5bfce79df2950dacfb6a1f473e918edc",
-            "description": "Malicious SSL certificate - AokigaharaStealer C&C",
-            "timestamp": "2026-10-05 12:57:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "AokigaharaStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "184e5ede55f2eaf584182989d8a41411b6d34ae0",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-10-05 08:51:24",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "77c620cd80ac90a263808350b4133b607d973373",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-10-05 08:42:42",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4e01833ef19ddbe7747012a4b08e54601bc318ae",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-10-05 08:17:27",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9df78fcc97d1d3ee0d6a49ad2f2ac31559d77e8b",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-10-05 08:13:44",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4bacdd95bace5a7e29064123c1326e2035f617c6",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-10-05 08:13:13",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "f8f56c66c440df5666400e34a532c04d6ca4e5b0",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-05 08:12:45",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a06e3d9da60d6d6b57b1ef0bc4bf4a5187196fef",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-05 08:12:29",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9d97ad9422a82188bb315281c6a5afdc851a04c1",
+            "indicator": "b3c1e060a727e4db1cf6131f1eb6e9bcca2ffb5d",
             "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-05 08:11:17",
+            "timestamp": "2026-10-13 06:17:05",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureRAT",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "3ab97a242ba3d2cfb46ca928f9941131f0849b59",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-05 08:08:58",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ff19b149ab6b98a3051ae96de6c0942ab0444fa0",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-05 08:08:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a600c01abd88a26bd9187ec2805992644f98ae8f",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-05 08:04:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "0ef7a55ce8aea56c72d1486b2a42d43c85ae1ff0",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-05 06:26:03",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "009a05eaf082d20ae13a65abda12afd959cd76de",
-            "description": "Malicious SSL certificate - VenomRAT C&C",
-            "timestamp": "2026-09-13 19:23:01",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "VenomRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e129189e0ed0545baad30c054b5f51301d766516",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-09-13 19:21:19",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "fcfc3b257b12e4c699e343f4c415b60f642d88f6",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-13 19:01:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b1709ae370ca3fb7ddb3fb49b6c1fca1303a4a97",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 18:14:32",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a66308a1fb09c8345228ca00335e633b2dabde53",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-09-06 13:49:38",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "7fa3afaafe3b7c5eab63712e58c9414a86d559ec",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-09-06 07:52:59",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1baea4f8295715f075d3c0510b61017840047ae3",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:49:17",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "5efdc565e73e10756c6962ebadd15cf4b1075ea9",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-09-06 07:44:05",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e649d5c0e33423531f5404ed8f985a3fc42fb934",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-09-06 07:43:05",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4454daf3ef7f7d71cf8e4ce8067c880f9976c952",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:26:53",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "de0a287fb9997f0ffbd36df79b13cfda63f0bfcd",
+            "indicator": "9b798f7d87edcf42680454660f593afd696ef8ca",
             "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-09-06 07:26:11",
+            "timestamp": "2026-09-21 13:21:04",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "QuasarRAT",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "d538bd18d7e63dfe3a67c02c253cc277e2b9733a",
-            "description": "Malicious SSL certificate - DCAgentRMM C&C",
-            "timestamp": "2026-09-06 07:25:43",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "DCAgentRMM",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "7d5d941b4a1e4732fad44cce2a4ded87a20d5508",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:25:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "78527fc92bcf8d188b3bcab1b35ac5881e2aaa43",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-09-06 07:24:56",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b3cbb7925cba0c91ef00f0208b35cfffc96614c7",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-09-06 07:20:14",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a1f081f8dbb13e90a644017441c648053495a708",
-            "description": "Malicious SSL certificate - VenomRAT C&C",
-            "timestamp": "2026-09-06 07:19:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "VenomRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "070aa492d4afcb841457f33f366206805947160f",
-            "description": "Malicious SSL certificate - Socks5Systemz C&C",
-            "timestamp": "2026-09-06 07:19:24",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Socks5Systemz",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "22d945ac6c7c00fb7bb5d0dc3618a82d46cfd1e2",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-09-06 07:19:03",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "05fb6a6fa12c1638063b36498703b24fbbc2df43",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-09-06 07:18:47",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b637337f25fe0290aaa04de866605bd70748c263",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:18:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "5750697f5e734c9105b89e13cc68fa51ae35e726",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:17:59",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e61c15649184bdcdb39ae1fee964f8681677da35",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:17:35",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b2b4ba87b84f146bbd2f8baa34ea5d555945af28",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:17:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a5b119da03c543fa703dcf1f1470b547c88bc0ef",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-06 07:15:41",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ca8a5bbb1e6b22fa9ad9757c50f1bdaf2c22011d",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-30 09:18:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "bfbcd2802186b6c5707f7ff6341b87c12b97f4a4",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-30 08:30:35",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a7fa6117a38135c4d9c26ec7e37f15b361535edf",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-30 08:29:49",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "711c3a7bd15ae5377f4c395e23b3d8b8f1327ced",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-30 07:34:17",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a0d553e2a130766628359bea489166c63b9892d7",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-30 07:33:36",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1f494cd829ce4d2c465b8e981a0c7f9288354328",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-30 07:33:16",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "057b2084f877c8737e60de6c07ad829ea411b9c6",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-15 15:52:47",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "f3ba11a6cb8be921ee0fbd326de9a66220bcc82f",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-15 15:52:36",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b5b8bebd73d8e8aec88ccc17b1e27c34921667ae",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-08 17:20:14",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "508ab3696a27249abc7ea437ee1b8bcb8a999d65",
-            "description": "Malicious SSL certificate - OverlordRAT C&C",
-            "timestamp": "2026-08-08 17:16:45",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OverlordRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "02df529de5d2da5b01c0b557b02b289b060f344b",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-08 17:14:54",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "26d708c6ce4554e9fed0ae35556501faf8d0b01c",
-            "description": "Malicious SSL certificate - ZigClipper C&C",
-            "timestamp": "2026-08-08 17:14:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ZigClipper",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "3b0855807c94981dca90ba6eb15e94087c91fb52",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-08 17:12:48",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "16237ea9476a99f34c740649ccb7119db3af5df0",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-08 17:10:49",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "aaaa57850472f7c23d75d9470b1f98655d5c3655",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-08 17:10:10",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9aba7caceb4b84b49aaa4285d73183a94f4a50d5",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-08 17:09:27",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "cbde10c2baa3d573791b7e6044ba4e8f15094cd2",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-08 17:08:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "714c56e9e207d5c8e08e1ca28cd9ba85f079d061",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-08-08 17:08:25",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e6b44935f6416b11d4ec5d51bbcae9e6f2ab5ce7",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-08 17:07:50",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "2d410f6e2daaf4665a958610ce94242145c714e3",
+            "indicator": "e20ecba521fd923644d154963d32d5cd29f4c0b1",
             "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-08-08 17:07:31",
+            "timestamp": "2026-09-21 07:57:31",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureLogsStealer",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "cfe6dcd7527099d525ffa8cec0bd1ab5020d47a7",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-08 17:00:10",
+            "indicator": "9028baa7a4f17d812e2c497cdc6dbe5594780325",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-21 07:53:24",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Vidar",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
+            "campaign": "OffLoader",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "988bb7e571418b2800a0cc2d33a794ecf1eb42a7",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-07-03 12:22:09",
+            "indicator": "31ce37e696cdff32d3042b1f9be493c1e43b4b6e",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-21 07:53:19",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Malware",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
+            "campaign": "OffLoader",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "a37d8c8b3e427201148b485e4b23a59067fd3812",
+            "indicator": "ea74c0bba5834a0445661f91c3a220811eb965a3",
             "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-07-03 09:24:03",
+            "timestamp": "2026-09-21 07:53:12",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureLogsStealer",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "fa925f013a4c8ed98cda12d1d8f06ef638b11301",
+            "indicator": "4385dfcee56c1ede34b61cbc84666afe4946cf2a",
             "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-07-03 07:17:53",
+            "timestamp": "2026-09-21 07:52:50",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "PureRAT",
             "confidence": "High"
         },
         {
             "type": "ssl-cert",
-            "indicator": "6617b3218632fe78cd223bfae98ae55ef69c13c2",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-07-03 07:17:37",
+            "indicator": "0bf61cf448206d51a0b7a0cdece647df3ea1196f",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-09-21 07:52:03",
             "source": "SSL Blacklist",
             "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
                 "ssl",
                 "certificate",
                 "c2"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "a7bc5bdb50a33449b1f9c6037a703e58caa406bf",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-09-21 07:50:23",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "198fea94392f134f8578e6057c3b6679243e58c3",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-21 07:50:00",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T01:28:16.891113+05:30",
             "campaign": "OffLoader",
             "confidence": "High"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "0d9b7493086b8a7b2687ee21026ed1cb8eac55e5",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-03 07:16:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "162[.]243[.]103[.]246",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-10-21 01:28 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "c2",
+                "banking-trojan"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:15.443023+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "178[.]62[.]3[.]223",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-10-21 01:28 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-10-21T01:28:15.443023+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "27[.]133[.]154[.]218",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-10-21 01:28 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-10-21T01:28:15.443023+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "34[.]204[.]119[.]63",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-10-21 01:28 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-10-21T01:28:15.443023+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "50[.]16[.]16[.]211",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-10-21 01:28 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-10-21T01:28:15.443023+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "domain",
+            "indicator": "enywb85427[.]workers[.]dev",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-20 19:46:41",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]92[.]135[.]168",
+            "description": "Cobalt Strike (botnet_cc)",
+            "timestamp": "2026-10-20 19:46:36",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Cobalt Strike",
+            "confidence": "75%"
+        },
+        {
+            "type": "ip",
+            "indicator": "88[.]119[.]168[.]238",
+            "description": "Evilginx (botnet_cc)",
+            "timestamp": "2026-10-20 19:46:20",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Evilginx",
+            "confidence": "75%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/gd/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:45:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "adee7459752a33ec85d89a1837d84e9e75f8ac6e",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-07-03 07:16:38",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "38[.]60[.]202[.]196",
+            "description": "Unknown malware (botnet_cc)",
+            "timestamp": "2026-10-20 19:45:38",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Unknown malware",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "ac563907d31a21443760cee92a98b50bba6152aa",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-07-03 07:15:08",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "27[.]124[.]17[.]194",
+            "description": "PureRAT (botnet_cc)",
+            "timestamp": "2026-10-20 19:45:21",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "PureRAT",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "c7e0ca50174d919b1026d232418e208969a4d818",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-03 07:15:06",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "23[.]22[.]55[.]91",
+            "description": "AdaptixC2 (botnet_cc)",
+            "timestamp": "2026-10-20 19:45:19",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "c2",
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AdaptixC2",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "cdccad6e6ef6dc82ff5cfb3cb15d71bfb4df7d1a",
-            "description": "Malicious SSL certificate - RatonRAT C&C",
-            "timestamp": "2026-07-03 07:14:21",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "193[.]222[.]99[.]152",
+            "description": "PureRAT (botnet_cc)",
+            "timestamp": "2026-10-20 19:44:28",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "RatonRAT",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "PureRAT",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "a3f065adb1d37aa01e6632753e8db17fb392d558",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-03 06:41:59",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "170[.]62[.]130[.]140",
+            "description": "PureRAT (botnet_cc)",
+            "timestamp": "2026-10-20 19:44:03",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "PureRAT",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "48cf152a0f547ca2ee9668e57c7136e157ec96f5",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-06-11 08:10:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "167[.]148[.]41[.]45",
+            "description": "PureRAT (botnet_cc)",
+            "timestamp": "2026-10-20 19:44:01",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "PureRAT",
+            "confidence": "75%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "78e36aa21e77cf60799204d1fb0bac1f063aec42",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-06-11 06:09:38",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxp://finter28[.]help:5621/products",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-20 19:43:41",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "e3c434a1fc0269f0ad0fb43cdf93494e726d2f68",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-06-11 06:08:47",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "ip",
+            "indicator": "103[.]54[.]153[.]17",
+            "description": "PureRAT (botnet_cc)",
+            "timestamp": "2026-10-20 19:43:09",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "botnet",
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "PureRAT",
+            "confidence": "75%"
+        },
+        {
+            "type": "ip",
+            "indicator": "103[.]117[.]136[.]32",
+            "description": "AdaptixC2 (botnet_cc)",
+            "timestamp": "2026-10-20 19:43:08",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "c2",
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AdaptixC2",
+            "confidence": "75%"
+        },
+        {
+            "type": "ip",
+            "indicator": "100[.]62[.]151[.]79",
+            "description": "AdaptixC2 (botnet_cc)",
+            "timestamp": "2026-10-20 19:43:02",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "c2",
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AdaptixC2",
+            "confidence": "75%"
+        },
+        {
+            "type": "domain",
+            "indicator": "zotamejy[.]workers[.]dev",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-20 19:41:16",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/xm4/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:40:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "a4f368e4e4c305b60212c016a4f1fa3a3a96a3de",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-06-11 06:08:17",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/nc/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:35:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "0505fd5b451911f764cd457d591ec4d355e609c8",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-06-11 06:07:56",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "a8f5e9a021f8df5a11743cc4ad447ccf81e7c300",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-06-11 06:06:32",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://q[.]9winn[.]org/p",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:31:59",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "16400ecdd4f566aa796c3c06c7698b1966d07cc6",
-            "description": "Malicious SSL certificate - PureHVNC C&C",
-            "timestamp": "2026-06-11 06:06:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://q[.]9winn[.]org/p/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureHVNC",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "50e95582f4719b4eb6c316e332813b41adf449ed",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-05-20 08:04:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "08715a9d4e9ce7466225ad56845853f652053ab9",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-04-14 09:29:45",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "62db81002bfaa1cbb0142baf9bac6651fb627aee",
-            "description": "Malicious SSL certificate - STXRAT C&C",
-            "timestamp": "2026-04-14 09:00:30",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "STXRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "8ef1132c5f69f71c7a9cd95eae9da41763238767",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-04-14 08:46:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "9f1acf378f9d9cbefe0cfd1968c5193a6a804237",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-04-14 08:40:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/yi/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
             "campaign": "Vidar",
-            "confidence": "High"
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "e2f5ea85358623b750f6d5bab64b2ad3ae085123",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-04-14 07:41:53",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://injurylawsocal[.]com/curl/b3433043648ae2e6cae272bd911ef1d0e66baf4dd0a8cd43e271793bd6465144",
+            "description": "MacSync (payload_delivery)",
+            "timestamp": "2026-10-20 19:26:47",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified",
+                "https://www.virustotal.com/gui/file/bef7f2a722bf846bc291fc68257e74e0a54384305d259160c607a9cd8daac958"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "MacSync",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "d06a26078f89783a6ed1c48a4add84247615a0ae",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-04-14 07:40:43",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "domain",
+            "indicator": "injurylawsocal[.]com",
+            "description": "MacSync (payload_delivery)",
+            "timestamp": "2026-10-20 19:26:47",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified",
+                "https://www.virustotal.com/gui/file/bef7f2a722bf846bc291fc68257e74e0a54384305d259160c607a9cd8daac958"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "MacSync",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "1598b0902f425d5a4895a58e5c48ebe96f9df1b5",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-04-14 06:14:57",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "hash",
+            "indicator": "bef7f2a722bf846bc291fc68257e74e0a54384305d259160c607a9cd8daac958",
+            "description": "MacSync (payload)",
+            "timestamp": "2026-10-20 19:26:46",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/bef7f2a722bf846bc291fc68257e74e0a54384305d259160c607a9cd8daac958"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "MacSync",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "174efb22d3859570e513fd87b17af9cbf106c980",
-            "description": "Malicious SSL certificate - RatonRAT C&C",
-            "timestamp": "2026-04-14 06:14:08",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "hash",
+            "indicator": "706ab620d6321ed35a6adb84e41be3e63ae495e4d32b865f78589a593a17a67f",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 19:26:44",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "malware",
+                "hash",
+                "verified",
+                "https://bazaar.abuse.ch/sample/706ab620d6321ed35a6adb84e41be3e63ae495e4d32b865f78589a593a17a67f/"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "RatonRAT",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "0e54a9ea48587f39773ad27d4a8238ee19240408",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-04-14 06:05:36",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/hm/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:25:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "fc60a49594bb081973d6856eebaabbc30730c446",
-            "description": "Malicious SSL certificate - RatonRAT C&C",
-            "timestamp": "2026-04-14 06:05:06",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "hash",
+            "indicator": "8b01511a3869c136edae8f195232d79c35bbe13592f0a020534892f933c0df41",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 19:25:38",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "malware",
+                "hash",
+                "verified",
+                "https://bazaar.abuse.ch/sample/8b01511a3869c136edae8f195232d79c35bbe13592f0a020534892f933c0df41/"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "RatonRAT",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "23943a58946c0e85ada934588e3cdd70909e9d0f",
-            "description": "Malicious SSL certificate - SantaStealer C&C",
-            "timestamp": "2026-03-09 13:34:15",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "hash",
+            "indicator": "d36d5a65f34f39ca8092530979730dd125672653011e5e34f8d943add3729e0a",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 19:24:32",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/d36d5a65f34f39ca8092530979730dd125672653011e5e34f8d943add3729e0a"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "SantaStealer",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
         },
         {
-            "type": "ssl-cert",
-            "indicator": "0d967feb37696cc0d8efe72998132dac504a2091",
-            "description": "Malicious SSL certificate - PureHVNC C&C",
-            "timestamp": "2026-03-09 12:57:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-10-20 19:01 IST",
+            "type": "domain",
+            "indicator": "light-zip[.]com",
+            "description": "ClearFake (payload_delivery)",
+            "timestamp": "2026-10-20 19:24:10",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
             "tags": [
-                "ssl",
-                "certificate",
-                "c2"
+                "verified"
             ],
-            "addedAt": "2026-10-20T19:01:07.884448+05:30",
-            "campaign": "PureHVNC",
-            "confidence": "High"
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "ClearFake",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "a3cd0cc73e8dfd41e855e61fe57727b45468edecb8e13472dc11926157d5e5ec",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 19:23:26",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://bazaar.abuse.ch/sample/a3cd0cc73e8dfd41e855e61fe57727b45468edecb8e13472dc11926157d5e5ec/"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/ba/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/mg/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:15:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "iq-capital[.]eu",
+            "description": "ClearFake (payload_delivery)",
+            "timestamp": "2026-10-20 19:14:11",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "ClearFake",
+            "confidence": "90%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/ce/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:10:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://darcy19[.]my:8312/customers",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-20 19:10:39",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://finter28[.]help:5621/invoices",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-20 19:07:23",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://darcy19[.]my:8312/payments",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-20 19:06:31",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "q[.]9winn[.]org",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://q[.]9winn[.]org/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://ok[.]abbastoto[.]org/qj/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]126",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:06",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "47[.]236[.]70[.]111",
+            "description": "Unknown malware (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Unknown malware",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]118",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]123",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-20 19:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://q[.]9winn[.]org",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:03:17",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://e[.]abbastoto[.]org/yl",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:01:17",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://h[.]9winn[.]org",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:00:52",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://h[.]9winn[.]org/m/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:00:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/up/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 19:00:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/vm/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:55:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "c2af8f6db2b945f4719e21a9322f5fac0c83f741b7fc41ee4bc1a00e5fc7eb1c",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:37",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "dbdc57560c6d082e886885adff7cc970482707ff8850a0a1c51fe49b5f9c214c",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:36",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "cf03a302bc83b550dba8930747734363d7193429e3a4eda2fda4c0f878d4568b",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:35",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "1fbb5d8c24f8b39ba2176b40806c8c1276202dedae74cdce559c99c529c28b3f",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:34",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "3691d3e45d288500e19250166ff256edcc273e2531ebee392312fc3a6ed52e8d",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:33",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "51c3b15ffa86a7a83fa0029c4c257be09ed5ce17c075937f03e3500f8ac858e5",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:31",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "eb2e0b6edf878e51c9f8895ed7502f9718b076f410607ce0c939d8feeffca60d",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:31",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "53051bb6f0bc9a3f41d350624318df04cd6ec298477f9368cd16100de085abbf",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:29",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "de7aacafae309f6d492c6782868ea7c7a4243c9c9e87aaed49ffbcc4696dde4c",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:29",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "0ac60e87e97270103a1b3d6bc8b359c106284decb8e2087d09adb8a768791a81",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:27",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "1a28663d0e7b7e29d47fb3a77c100b4225bce827275a8d54458f0e504f678467",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:26",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "152199ad31615934d73c235feb0722e8985767184d11cb8f2765bd17b1c997f0",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:25",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "b9d41f8aace627c5590a0fd0ddeac4afdaf6efc2a7e4d4c294595a779ba57820",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:24",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "hash",
+            "indicator": "71984854ab6628930ed2d823f183687e3a4e5d1feaa44f2ebf94a49fc05d656e",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-20 18:54:23",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/u/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:50:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/b/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:45:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "24dd6209e53b5f8f13dbda7e45eac6be4efc39cdf3d9d139e6e2bfc087a085d0",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:41:30",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/24dd6209e53b5f8f13dbda7e45eac6be4efc39cdf3d9d139e6e2bfc087a085d0"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/hi/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:40:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:40:27",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/2e5bb8cc0558dfed95e93207bdcc39dfd3ed21851d7ba1e8d56dee83088c5e66"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "f009c4149fca83e788f0efcc50df259c025ab490d912916f540839989bdfe018",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:38:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/f009c4149fca83e788f0efcc50df259c025ab490d912916f540839989bdfe018"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "fdcca8f446359cca1589b6f942d8552cbb905d0d9b2fae0da4efe566dd0f8f99",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:35:56",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/fdcca8f446359cca1589b6f942d8552cbb905d0d9b2fae0da4efe566dd0f8f99"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/gb/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:35:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://darcy19[.]my:8312/subscriptions",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-20 18:33:32",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://h[.]9winn[.]org/e/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/xm/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "519e6b2213d0c6868108cf47ef5990fc0bac02fd4397da58cd5468f6e9d5c52e",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:28:46",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/519e6b2213d0c6868108cf47ef5990fc0bac02fd4397da58cd5468f6e9d5c52e"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://h[.]9winn[.]org/o",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:27:17",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/lvg/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:25:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "b43704c7b3626b2bd6a385fa53cca430efc1ccc6e52a24b8f6a24a6cab1ced7a",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:25:45",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/b43704c7b3626b2bd6a385fa53cca430efc1ccc6e52a24b8f6a24a6cab1ced7a"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "eba977ecf26df22ad57d469bd51d64fddd1a8f86078f808f17a8f639c1270ba9",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-20 18:23:02",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/eba977ecf26df22ad57d469bd51d64fddd1a8f86078f808f17a8f639c1270ba9"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yk[.]abbastoto[.]org/p/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-20 18:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "45[.]88[.]186[.]191",
+            "description": "Remcos (botnet_cc)",
+            "timestamp": "2026-10-20 18:20:19",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "Remcos",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "vonujava[.]workers[.]dev",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-20 18:19:45",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 01:28 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T01:28:13.921467+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
         }
     ],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 103083,
+            "totalIndicators": 105079,
             "activeSources": 9,
-            "criticalAlerts": 51210,
-            "activeCampaigns": 393
+            "criticalAlerts": 51441,
+            "activeCampaigns": 391
         },
         "topThreats": [
             {
                 "category": "Malware",
-                "count": 39970,
-                "trend": "stable",
-                "percentage": 2
-            },
-            {
-                "category": "C2",
-                "count": 11240,
+                "count": 40605,
                 "trend": "stable",
                 "percentage": 1
             },
             {
-                "category": "Botnet",
-                "count": 9557,
+                "category": "C2",
+                "count": 10836,
                 "trend": "stable",
-                "percentage": 2
+                "percentage": -3
+            },
+            {
+                "category": "Botnet",
+                "count": 10034,
+                "trend": "stable",
+                "percentage": 4
             },
             {
                 "category": "Phishing",
                 "count": 1242,
-                "trend": "up",
-                "percentage": 25
+                "trend": "stable",
+                "percentage": 0
             }
         ],
         "targetedSectors": [
@@ -2458,31 +2376,31 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "malware_download",
-                "count": 34600,
+                "count": 34712,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "hxxp://124[.]161[.]116[.]14:51225/bin[.]sh",
-                    "hxxp://cloud-browse[.]codes/03b8d2bf77f41a58f41dc6bba89e72bf272e4ec517793ee42d5444b9a8f59693",
-                    "hxxp://200[.]115[.]102[.]246:39366/i"
+                    "hxxp://42[.]6[.]201[.]210:34289/i",
+                    "hxxp://cloud-browse[.]codes/9de40b36c2a8aaaad7e727a14d4f68f24afd8b3c311d92ecbcc7ac171368b0d8",
+                    "hxxp://cloud-browse[.]codes/5c078b74c600e17cc635a453359d1d6292e0d502c21c5e95f813c11cad6e871b"
                 ]
             },
             {
                 "name": "CINS Threat List",
-                "count": 28040,
+                "count": 29121,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
                     "1[.]117[.]68[.]141",
-                    "1[.]14[.]149[.]30",
-                    "1[.]145[.]89[.]105"
+                    "1[.]12[.]229[.]231",
+                    "1[.]14[.]149[.]30"
                 ]
             },
             {
                 "name": "SSH Attacks",
-                "count": 7235,
+                "count": 7455,
                 "types": [
                     "ip"
                 ],
@@ -2494,13 +2412,13 @@ window.threatIntelData = {
             },
             {
                 "name": "Vidar",
-                "count": 2014,
+                "count": 2035,
                 "types": [
-                    "ip",
                     "ssl-cert",
                     "hash",
-                    "url",
-                    "domain"
+                    "ip",
+                    "domain",
+                    "url"
                 ],
                 "sampleIndicators": [
                     "038cc0421ef5641c0565b39f51a4ce2bb768fa8190da3971c785e292c2f704d2",
@@ -2509,8 +2427,39 @@ window.threatIntelData = {
                 ]
             },
             {
+                "name": "Mirai",
+                "count": 1759,
+                "types": [
+                    "ip",
+                    "url",
+                    "hash",
+                    "domain"
+                ],
+                "sampleIndicators": [
+                    "71984854ab6628930ed2d823f183687e3a4e5d1feaa44f2ebf94a49fc05d656e",
+                    "608c54828bfc8ce5cd0df31a5144caec555365ce10f94b79e2a0e55f57f64f8a",
+                    "79dcf5f7965ecd1b596b78ba58e26ea56f93ca718fa55bc08247ac2d547f11b9"
+                ]
+            },
+            {
+                "name": "AsyncRAT",
+                "count": 1649,
+                "types": [
+                    "ssl-cert",
+                    "hash",
+                    "ip",
+                    "domain",
+                    "url"
+                ],
+                "sampleIndicators": [
+                    "c2b10b8c0d346d3e1201daea39713fbfaeb410e8b7fee94b0546a3fcdc91573f",
+                    "1e98a36b2c40441a1bf33060bad8b52bf74ee659472aa15d3463bd51b118725f",
+                    "fc255863ceab40f2510ddf29801e583015505861777f1c5d7e72ec164920f075"
+                ]
+            },
+            {
                 "name": "Spamhaus DROP List",
-                "count": 1687,
+                "count": 1633,
                 "types": [
                     "ip-range"
                 ],
@@ -2518,37 +2467,6 @@ window.threatIntelData = {
                     "1.10.16.0/20",
                     "1.19.0.0/16",
                     "1.32.128.0/18"
-                ]
-            },
-            {
-                "name": "AsyncRAT",
-                "count": 1657,
-                "types": [
-                    "ip",
-                    "ssl-cert",
-                    "hash",
-                    "url",
-                    "domain"
-                ],
-                "sampleIndicators": [
-                    "1e98a36b2c40441a1bf33060bad8b52bf74ee659472aa15d3463bd51b118725f",
-                    "fc255863ceab40f2510ddf29801e583015505861777f1c5d7e72ec164920f075",
-                    "ca647b807e361ae45b779254dc17251364552d77ab354c90fdd73803ac5bca80"
-                ]
-            },
-            {
-                "name": "Mirai",
-                "count": 1558,
-                "types": [
-                    "hash",
-                    "ip",
-                    "domain",
-                    "url"
-                ],
-                "sampleIndicators": [
-                    "c11d57472a70943367581b31d8732b29885470741b8aed1c7692956d9666eb91",
-                    "e1e88c55bf8c1729f4c837565971fbeb0ea01440c2acf04cdcc8633dce7be88f",
-                    "5f8f3d29de1ba59a484e984ea8f3e3d013c5aa903229a7a3aa121b506d64a6b8"
                 ]
             },
             {
@@ -2577,15 +2495,15 @@ window.threatIntelData = {
             },
             {
                 "name": "Cobalt Strike",
-                "count": 1208,
+                "count": 1211,
                 "types": [
                     "ip",
                     "domain"
                 ],
                 "sampleIndicators": [
-                    "49[.]233[.]175[.]166",
-                    "1[.]94[.]100[.]198",
-                    "119[.]28[.]160[.]161"
+                    "1[.]92[.]135[.]168",
+                    "49[.]232[.]42[.]116",
+                    "217[.]154[.]212[.]25"
                 ]
             }
         ]
@@ -2594,7 +2512,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "CINS Threat List",
-        "totalAttacksThisHour": 59744,
-        "lastCalculated": "2026-10-21 01:28 IST"
+        "totalAttacksThisHour": 59833,
+        "lastCalculated": "2026-10-21 03:18 IST"
     }
 };
