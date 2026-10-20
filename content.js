@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 17 2026",
+            "headline": "Malicious npm Package Imgdecode Hides Shellcode",
+            "title": "MALFEX Campaign Uses Imgdecode to Deploy Windows Shellcode Loader",
+            "content": "Cybersecurity researchers uncovered a malicious npm package named \"imgdecode\" uploaded on September 30, 2026, as part of the MALFEX supply chain attack campaign. The package masquerades as an image processing tool but contains a Windows native addon that downloads and executes shellcode. Developers using the package in their Node.js projects are at risk of system compromise through this supply chain attack. Users must audit their npm dependencies and remove the malicious \"imgdecode\" package immediately. This incident highlights the persistent threat of typosquatting and malicious packages within open-source registries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "F5 Issues Emergency Patches for NGINX Critical Flaws",
+            "title": "F5 Rushes Out-of-Band Patches for Three Critical NGINX Vulnerabilities",
+            "content": "F5 has released out-of-band (OOB) security patches addressing three critical vulnerabilities in NGINX, its high-performance application delivery controller. These flaws, tracked as CVE-2024-XXXX, CVE-2024-YYYY, and CVE-2024-ZZZZ, could allow unauthenticated remote code execution (RCE) and denial of service (DoS) attacks. The vulnerabilities affect NGINX versions prior to 1.24.0, impacting millions of web servers and reverse proxies globally. Administrators must apply the patches immediately to prevent potential system takeovers. F5's rapid response underscores the critical role NGINX plays in modern internet infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Hackers Use ROMULUS ClickFix to Deliver LegionLoader",
+            "title": "ROMULUS ClickFix Platform Distributes LegionLoader and Other Malware",
+            "content": "Threat actors are leveraging a new ClickFix delivery platform called ROMULUS to distribute malware, including the LegionLoader information stealer. According to Forescout Research - Vedere Labs, ROMULUS employs social engineering lures on bogus landing pages to trick users into enabling browser settings. Once enabled, the platform deploys malicious scripts that download and execute payloads without traditional file downloads. This method bypasses many endpoint detection and response (EDR) solutions by abusing legitimate browser configurations. Security teams should monitor for suspicious browser activity and restrict unauthorized script execution in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Plex2Shell Flaws Enable Crypto Miners and Proxy Backdoors",
+            "title": "Threat Actors Exploit Plex Media Server Vulnerabilities for Crypto Miners",
+            "content": "Threat actors are actively exploiting a chain of vulnerabilities in Plex Media Server, identified as Plex2Shell, to deploy cryptocurrency miners and reverse proxy backdoors. The exploitation began immediately after a proof-of-concept (PoC) was publicly released on October 18, 2026. Attackers chain multiple flaws to gain initial access, escalate privileges, and install persistent backdoors on compromised Linux systems. The primary goal is to mine Monero cryptocurrency and use the servers as proxies for further malicious activities. Plex users must update to the latest patched version to mitigate this active exploitation campaign.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+            "title": "Rank Math PRO WordPress Plugin Hijacked to Deliver Self-Restoring Backdoor",
+            "content": "Copies of the Rank Math PRO WordPress plugin were compromised between October 15, 20:02 UTC, and October 16, 07:12 UTC, to deliver a self-restoring backdoor. The malicious code was injected into the plugin's update mechanism, allowing it to automatically reinstall after manual removal attempts. The backdoor provides attackers with persistent remote access to the affected WordPress sites, enabling data exfiltration and further malware deployment. Rank Math has revoked the compromised plugin version and issued a security notice to all users. Site administrators must immediately remove the plugin and reset all credentials to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "ConnectWise Halts Cloud Services After Major Breach",
+            "title": "ConnectWise Suspends Cloud Services Following a Devastating Cyberattack",
+            "content": "ConnectWise has suspended all its cloud services to contain and remediate a major cyberattack. The outage affects thousands of Managed Service Providers (MSPs) and their downstream clients globally. The company is currently conducting security validation to eradicate the threat actor's presence completely. MSPs relying on ConnectWise are advised to activate their local disaster recovery protocols immediately. This incident underscores the critical need for robust supply chain security within the managed services ecosystem.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/connectwise-suspends-cloud-services-in-response-to-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Plex2Shell Chain Weaponized Within Hours",
+            "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
+            "content": "Threat actors rapidly weaponized the Plex2Shell exploit chain within hours of its public disclosure, targeting unpatched Plex Media Server instances. The attacks specifically leverage CVE-2025-27197 to deliver cryptocurrency miners and proxy software. This rapid weaponization highlights the severe risk of unpatched internet-facing applications. System administrators must immediately apply the latest security patches to their Plex servers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Single Login Exposes 10M California Student Records",
+            "title": "One Compromised Login Exposed Millions of California Students' Records",
+            "content": "Intruders exploited a single compromised login to breach an ETS SFTP (Secure File Transfer Protocol) server, exfiltrating millions of California student records dating back to 2006. The breach impacts a vast historical dataset containing sensitive personal and academic information. The exposed records include names, addresses, and academic transcripts for numerous minors and young adults. Educational institutions must review their SFTP access controls and implement multi-factor authentication (MFA) immediately. This breach highlights the persistent risks of legacy data storage and weak credential management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "FortiGate Implant Deployed in Telecom Hack",
+            "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+            "content": "A persistent, stealthy implant was deployed against a telecommunications organization after threat actors exploited a vulnerability in Fortinet's FortiGate devices. The implant allowed the adversary to maintain long-term, covert access to the victim's internal network. The breach demonstrates the effectiveness of stealthy persistence mechanisms in critical infrastructure environments. Telecom providers must audit their FortiGate deployments for unauthorized firmware modifications.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Fake Web3 Accelerator Spreads AI Agent Malware",
+            "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware",
+            "content": "A fraudulent Web3 accelerator is distributing malicious npm (Node Package Manager) packages that deliver information stealers and backdoors to Windows and macOS systems. The campaign lures developers with offers of free AI credits for Anthropic Claude and Google Gemini, along with fake coding tools. The malicious packages also hijack traffic from AI coding agents to intercept sensitive API keys and credentials. Developers must verify the integrity of npm packages and avoid downloading tools from unverified, third-party accelerators.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 19 2026",
             "headline": "Drupal Core RCE Risk—Fast Exploitation Imminent",
             "title": "Critical Drupal Core RCE Flaw Poses Immediate Fast-Exploitation Risk",
@@ -58,15 +148,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Oct 14 2026",
-            "headline": "UK Sanctions Russian Crypto Conduit",
-            "title": "U.K. Sanctions Cryptomus for Russian Money Laundering",
-            "content": "The U.K. government sanctioned the cryptocurrency exchange Cryptomus for facilitating money laundering for Russian entities. The platform served as a major conduit for payments related to ransomware, narcotics, and cybercrime services. Sanctions specifically target Cryptomus's ability to help Russia circumvent existing financial restrictions. This action aims to disrupt the financial infrastructure supporting Russian cyber operations. Users and exchanges must review their compliance protocols to avoid secondary sanctions.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-            "relatedResources": []
-        },
-        {
             "date": "Oct 19 2026",
             "headline": "1.7M California Students' Data Stolen",
             "title": "Millions of California Students' Sensitive Data Stolen in ETS Breach",
@@ -101,52 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "ConnectWise Suspends Cloud Backup After M365 Breach",
-            "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
-            "content": "ConnectWise has temporarily suspended its cloud backup services after threat actors compromised seven application identities and gained unauthorized access to Microsoft 365 tenants. The company is actively investigating the incident to determine the full scope of the unauthorized access and potential data exposure. This breach highlights the risks associated with third-party application permissions and identity management. Customers should verify their current backup status and review recent access logs for anomalous activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Oct 16 2026",
-            "headline": "Jev Becomes Vercel's Fastest-Adopted AI Model Ever",
-            "title": "Vercel's AI Gateway Data Shows Jev as the Platform's Fastest-Adopted Model",
-            "content": "Vercel's AI Gateway, a unified API service similar to OpenRouter, reports that Jev has become the platform's fastest-adopted AI model in its history. The model's rapid adoption highlights its high performance and efficiency in handling complex AI tasks. Developers and tech leaders are increasingly integrating Jev into their applications for superior speed. This trend indicates a strong market preference for models that offer quick deployment and robust capabilities. Users should evaluate Jev for projects requiring high-throughput AI inference.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
+            "date": "Oct 20 2026",
+            "headline": "Hackers Hijack OpenCode—Steal API Keys",
+            "title": "OpenCode Hackers Steal API Keys While AI Refuses Malicious Code",
+            "content": "Hackers breached the online platform of OpenCode, a popular open-source AI coding agent, and stole user API keys. The stolen credentials allowed attackers to run up charges on victims' AI accounts. Notably, the AI coding tools OpenCode utilized for remediation refused to analyze the malicious code, highlighting a critical blind spot. This incident exposes the security risks of AI-driven development tools. Developers must rotate their API keys immediately and monitor their AI cloud spending.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
             "relatedResources": []
         },
         {
-            "date": "Oct 15 2026",
-            "headline": "FTC Probes Anthropic, OpenAI After Trump Dismisses AI Fears",
-            "title": "FTC Probes Anthropic, OpenAI Following Trump's Dismissal of AI Risks",
-            "content": "The Federal Trade Commission (FTC) is investigating Anthropic and OpenAI over potential data privacy and consumer protection violations. This scrutiny follows President Trump's dismissal of AI-related risks as a \"hoax,\" intensifying regulatory pressure on the industry. The FTC is considering imposing fines on the AI firms comparable to penalties for delayed data breach reporting. This action signals a shift toward stricter enforcement of existing data protection laws against AI developers. Industry stakeholders must ensure rigorous compliance with data handling and reporting protocols.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+            "date": "Oct 19 2026",
+            "headline": "OpenAI Expands ChatGPT to Low-Resource Languages",
+            "title": "OpenAI Expands ChatGPT to Low-Resource Programming Languages",
+            "content": "OpenAI is enhancing ChatGPT's capabilities for low-resource programming languages through targeted software engineering evaluations. The update includes specific testing for SQLite database management and COBOL migration tasks. This expansion aims to improve code generation accuracy for languages with limited training data. Developers working in niche or legacy languages will benefit from more reliable AI assistance. The new evaluation frameworks are currently being integrated into ChatGPT's backend.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
             "relatedResources": []
         },
         {
-            "date": "Oct 14 2026",
-            "headline": "DeepMind, Singapore Build Scam Detection AI Model",
-            "title": "Google DeepMind and Singapore Government Collaborate on Scam Detection AI",
-            "content": "Google DeepMind and Singapore's GovTech have partnered to develop a fine-tuned AI model for intercepting conversational scams. The system uses lightweight on-device Gemma models to analyze private chats without sending data to the cloud. This on-device processing ensures user privacy by preventing zero cloud data egress. The model is designed to identify and flag scam attempts in real-time during conversations. This initiative sets a precedent for privacy-preserving AI applications in public safety.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+            "date": "Oct 20 2026",
+            "headline": "NYC Mayor: Resist Inevitable AI Takeover",
+            "title": "NYC Mayor Urges Public to Resist Inevitable AI Takeover",
+            "content": "New York City Mayor Zohran Mamdani stated that New Yorkers must actively resist the narrative that an AI takeover is inevitable. He urged the public to demand regulations that protect citizens and redistribute power away from Big Tech. Mamdani's comments highlight growing political pushback against unchecked AI deployment. The mayor's stance signals a potential shift in urban policy regarding AI governance. Residents are encouraged to advocate for stricter local tech regulations.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
             "relatedResources": []
         },
         {
-            "date": "Oct 13 2026",
-            "headline": "Gemini 4 Argon Rolls Out—But Only for Paying Users",
-            "title": "Google's Gemini 4 Argon Model Begins Rolling Out to Paying Subscribers",
-            "content": "Google is rolling out the Gemini 4 Argon model to the Gemini app and Antigravity, but access is restricted to paying subscribers. The company is offering developers a 50 percent discount on API rates through November to encourage adoption. This tiered rollout strategy allows Google to manage server load while monetizing its advanced capabilities. The discounted API rates provide a cost-effective entry point for developers integrating the new model. Organizations should evaluate the new model's performance for their specific use cases.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
+            "date": "Oct 19 2026",
+            "headline": "Anthropic and Nscale Eye $45B Compute Deal",
+            "title": "Anthropic and Nscale in Talks for $45B Compute Agreement",
+            "content": "Anthropic and AI infrastructure provider Nscale are reportedly negotiating a massive $45 billion compute deal. If finalized, this agreement would represent one of the largest infrastructure investments in the AI sector. The deal underscores the escalating demand for high-performance computing power required to train advanced AI models. Such massive compute agreements are becoming increasingly common among leading AI labs. This move could significantly accelerate Anthropic's model development timelines.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Hugging Face Warns on Embedded AI Evaluators",
+            "title": "Hugging Face Warns Embedded AI Evaluators Won't Be Easy",
+            "content": "Hugging Face's policy chief cautioned that embedding independent AI evaluators within tech organizations will not be a simple solution. This proposal has gained traction as AI labs face increasing pressure following recent safety incidents. The chief emphasized that true independence is difficult to guarantee when evaluators are embedded within the corporate structure. The warning comes as regulators worldwide debate the best methods for AI safety oversight. Organizations should focus on transparent, external auditing instead.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Microsoft Flags AI Agents as Insider Threats",
+            "title": "Microsoft Warns AI Agents Pose Insider Threats as Frontier Models Cannot Be Trusted",
+            "content": "Microsoft warns that AI agents deployed by enterprises pose a significant insider threat, as frontier models from labs like OpenAI and Anthropic cannot be fully trusted. The company advises IT leaders to monitor agent interactions with internal systems that fall outside the direct control of the AI provider. This risk escalates as autonomous agents gain the ability to execute multi-step tasks and access sensitive corporate data. Organizations must implement strict access controls, continuous monitoring, and robust auditing protocols to mitigate potential data exfiltration or unauthorized system modifications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "US Fossil Fuel Infrastructure Surges—Renewable Growth Slows",
+            "title": "US Fossil Fuel Infrastructure Surges as Renewable Energy Growth Slows",
+            "content": "The United States is constructing more fossil fuel infrastructure than it has in a decade, while the growth of renewable energy capacity is simultaneously slowing down. This trend coincides with a rapid increase in electricity demand, driven by the expansion of data centers, manufacturing facilities, and the adoption of electric vehicles. The report indicates that this surge in fossil fuel reliance threatens to undermine recent progress toward decarbonization goals. Grid operators and policymakers must address this demand-supply mismatch to prevent increased carbon emissions and potential grid instability.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "CoreWeave Debt Crisis Threatens Entire AI Industry",
+            "title": "CoreWeave's Distressed Debt Poses Systemic Risk to the AI Industry",
+            "content": "CoreWeave's bonds recently slipped into distressed territory, defined by a 1,000 basis point yield spread over government bonds, raising systemic concerns for the AI sector. The cloud infrastructure provider's financial instability threatens its ability to meet the massive capital demands of AI training and inference workloads. Industry observers warn that a CoreWeave default could disrupt the supply of critical GPU resources, impacting startups and large enterprises alike. Investors and AI developers should closely monitor CoreWeave's liquidity and assess their dependency on its infrastructure.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Ex-OpenAI Engineer Faces Spying Charges—Saudi Docs Found",
+            "title": "Accused OpenAI Spy Had \"Saudi Gov Docs\" Folder, FBI Claims",
+            "content": "US authorities fear the Saudi government may facilitate the flight of a former OpenAI engineer facing espionage charges, according to the FBI. Investigators discovered a folder named \"Saudi Gov Docs\" on the engineer's devices, suggesting potential ties to foreign state intelligence. The case highlights the ongoing risk of insider threats and intellectual property theft within the highly competitive AI sector. Companies must enforce strict data loss prevention (DLP) policies and monitor for anomalous data transfers to foreign jurisdictions.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Amazon Challenges Nvidia with TorchNeuron Dev Tool",
+            "title": "Amazon Launches TorchNeuron to Break Nvidia's Hold on PyTorch",
+            "content": "Amazon has introduced TorchNeuron, a new development tool designed to break Nvidia's dominance over the PyTorch ecosystem. The tool aims to optimize AI applications to run on alternative chips, including Amazon's own Trainium and Inferentia silicon. By decoupling developers from proprietary Nvidia hardware, Amazon seeks to lower the barrier to entry for AI model training and deployment on AWS. Developers should evaluate TorchNeuron for workloads requiring cost-effective inference on AWS-native hardware.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
             "relatedResources": []
         },
         {
@@ -388,28 +514,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-104935",
-            "dateAdded": "Oct 13, 2026",
-            "vendor": "Ivanti Connect Secure",
-            "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-96951",
-            "dateAdded": "Oct 13, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
             "isZeroDay": false
         }
     ],
