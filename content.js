@@ -4,12 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Oct 17 2026",
-            "headline": "Malicious npm Package Imgdecode Hides Shellcode",
-            "title": "MALFEX Campaign Uses Imgdecode to Deploy Windows Shellcode Loader",
-            "content": "Cybersecurity researchers uncovered a malicious npm package named \"imgdecode\" uploaded on September 30, 2026, as part of the MALFEX supply chain attack campaign. The package masquerades as an image processing tool but contains a Windows native addon that downloads and executes shellcode. Developers using the package in their Node.js projects are at risk of system compromise through this supply chain attack. Users must audit their npm dependencies and remove the malicious \"imgdecode\" package immediately. This incident highlights the persistent threat of typosquatting and malicious packages within open-source registries.",
+            "date": "Oct 20 2026",
+            "headline": "FortiSIEM RCE PoC Leaked—CVSS 9.4",
+            "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+            "content": "Cybersecurity researchers have released a public proof-of-concept (PoC) exploit for a critical path traversal vulnerability in Fortinet FortiSIEM. The flaw, tracked as CVE-2026-106173, carries a CVSS score of 9.4 and allows unauthenticated remote code execution (RCE). Threat actors can leverage this vulnerability to compromise SIEM instances, exfiltrate sensitive security logs, and pivot into internal networks. Users must immediately update to the latest patched version of FortiSIEM to mitigate this severe risk.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Qilin Ransomware Bypasses MFA—PAN-OS",
+            "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+            "content": "Ransomware groups Qilin and INC are actively exploiting a now-patched authentication bypass vulnerability in Palo Alto Networks PAN-OS. The flaw, identified as CVE-2026-0257 with a CVSS score of 7.8, allows attackers to bypass Multi-Factor Authentication (MFA) and establish persistent access. By compromising Prisma Access and PAN-OS firewalls, these threat actors gain a foothold to deploy ransomware and exfiltrate sensitive data. Organizations should verify they have applied the latest security patches for PAN-OS and Prisma Access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Ahold Delhaize Restores Services After Cyberattack",
+            "title": "Ahold Delhaize Restoring Services Disrupted by Cyberattack",
+            "content": "Retail giant Ahold Delhaize is restoring its digital services following a disruptive cyberattack that affected its European and US operations. The company has successfully reinstated many of its websites and mobile applications across Europe while working to restore e-commerce services for its US brands. The specific threat actor behind the attack has not been publicly disclosed, though the incident highlights the increasing targeting of critical retail infrastructure. Consumers and business partners should monitor official channels for updates on full service restoration.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Paradigm Healthcare Breach Exposes 970,000",
+            "title": "970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach",
+            "content": "Paradigm Healthcare Services has disclosed a massive data breach affecting approximately 970,000 Medi-Cal members. The intrusion was initially detected in October 2025, but the company delayed notifying affected individuals for nearly a year, raising serious concerns about its incident response protocols. The breach exposes sensitive patient information, including names, dates of birth, and medical records, to potential misuse and identity theft. Regulators and affected members are scrutinizing the company's delayed disclosure and data protection practices.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/970000-medi-cal-members-affected-by-paradigm-healthcare-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "ClickFix Trojan Targets Siemens Software Center",
+            "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+            "content": "Threat actors are exploiting a high-severity DLL sideloading vulnerability in the Siemens Software Center to deploy a Remote Access Trojan (RAT) as part of ClickFix campaigns. The vulnerability, tracked as CVE-2026-110936 with a CVSS v4 score of 8.4, allows attackers to execute malicious code through a specially-crafted DLL. This attack vector enables unauthorized access, data exfiltration, and further system compromise. Users must update the Siemens Software Center to the latest patched version to prevent malicious DLL execution.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "U.K. Sanctions Crypto Platform for Russia Money Laundering",
+            "title": "United Kingdom Imposes Economic Sanctions on Cryptomus for Facilitating Russian Cybercrime",
+            "content": "The United Kingdom has sanctioned Cryptomus, a cryptocurrency platform, for acting as a primary financial conduit for ransomware, narcotics, and darknet market payments linked to Russian cybercrime. The platform enabled Russia to circumvent existing financial restrictions and launder illicit proceeds through a network of over 1,000 wallets. This action targets the specific infrastructure that allows threat actors to monetize their operations and move funds globally. Security professionals should monitor for potential shifts in money laundering tactics following this disruption.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Qilin Suspect Arrested—Synnovis Hack Linked to Patient Death",
+            "title": "German Police Arrest Suspected Qilin Ransomware Operator Tied to Synnovis Attack",
+            "content": "German police arrested a 28-year-old Russian man suspected of being a key operator for the Qilin ransomware gang. Detectives linked the suspect to the attack against Synnovis, a blood-testing firm whose outage disrupted London hospitals and directly contributed to a patient's death. The investigation highlights the severe, real-world consequences of healthcare ransomware operations. Security leaders in the healthcare sector must prioritize network segmentation and rapid backup restoration to prevent similar critical service failures.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/qilin-ransomware-arrested-synnovis-patient-death",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "U.S. Agencies Issue AI Incident Response Guidelines",
+            "title": "NIST, CISA, and NSA Release Voluntary Practices for Responding to Rogue AI Agents",
+            "content": "The National Institute of Standards and Technology (NIST), Cybersecurity and Infrastructure Security Agency (CISA), and National Security Agency (NSA) published ten voluntary practices for incident response related to rogue AI agents. The guidelines outline specific steps for preparing for, detecting, responding to, and reporting incidents involving AI systems acting outside their intended parameters. This initiative addresses the emerging risk of autonomous AI agents being manipulated or malfunctioning in critical infrastructure environments. Organizations should integrate these voluntary frameworks into their existing AI governance and cybersecurity incident response plans.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Autonomous AI Agents Breach 1,200+ Websites",
+            "title": "Chinese-Speaking Hacker Deploys Autonomous AI Agents to Compromise Over 1,200 Sites",
+            "content": "A Chinese-speaking threat actor deployed autonomous AI agents to breach over 1,200 company websites with minimal manual intervention. The attack was observed by a security researcher after the operators left their control panels exposed on the internet. The AI agents demonstrated the ability to autonomously identify vulnerabilities and exploit them, significantly lowering the barrier to entry for cybercriminals. Organizations must enforce strict network segmentation, secure remote management interfaces, and implement web application firewalls (WAFs) to mitigate automated threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "AOMEI Backupper Compromised in Supply Chain Attack",
+            "title": "AOMEI Backupper Hit by Short-Burst Supply Chain Campaign Serving ShinyRoad",
+            "content": "AOMEI Backupper was compromised during a short-burst supply chain campaign that served users a malicious downloader for the ShinyRoad modular backdoor framework. The attackers exploited brief windows of compromise to inject the payload into legitimate software update mechanisms. This attack demonstrates the ongoing threat to software distribution channels and the need for robust code signing and update integrity verification. Users and administrators should verify software hashes and enforce strict application whitelisting to detect unauthorized modifications.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Rank Math PRO Malware Injected—Supply Chain Breach",
-            "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
-            "content": "Hackers injected malware into the Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16, compromising the popular WordPress SEO plugin. The supply chain attack targeted developers and site administrators who automatically installed the compromised update, potentially exposing sensitive site data and credentials. The malicious code was embedded directly within the software distribution channel, bypassing standard security checks. Users must immediately check their installation history, remove the compromised version, and reinstall the clean package from the official repository. This breach highlights the persistent risks of relying on third-party software distribution channels.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "98 Zero-Days, $100M Crypto Theft—Weekly Cyber Recap",
-            "title": "Weekly Cyber Recap: 98 Zero-Days, Rogue AI Agents, and $100M Crypto Theft",
-            "content": "This week's security landscape was marked by a surge in critical vulnerabilities, including 98 disclosed zero-day flaws, alongside a staggering $100 million cryptocurrency theft. The week also saw the emergence of rogue AI agents, raising new concerns about the security of autonomous systems and large language models. In a major physical-digital breach, 700 supermarkets were hit by a widespread point-of-sale (POS) malware campaign that stole customer payment data. These incidents demonstrate that threats increasingly exploit trusted services and overlooked systems, causing significant damage before detection. Security professionals must prioritize patching, threat intelligence, and robust monitoring of third-party integrations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "ShinyHunters Extortion Site Run by Ransom Negotiator",
-            "title": "U.S. Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
-            "content": "U.S. federal investigators have identified executives at two ransomware negotiation firms who allegedly maintained unusually close relations with the ShinyHunters hacking group. The investigation centers on the group's recent theft of highly sensitive data from the FBI, which was subsequently published on an extortion site. Sources indicate that these executives may have actively facilitated the group's operations, blurring the lines between legitimate negotiation services and criminal facilitation. This development suggests a deeper infiltration of the ransomware ecosystem by state-affiliated actors. Law enforcement is expected to pursue further indictments as the investigation progresses.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "GhostAction Steals Credentials—Font File Malware",
-            "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in GitHub",
-            "content": "The threat actor behind the GhostAction campaign has expanded its tactics by planting a credential stealer disguised as a font file across 94 GitHub repositories. The malicious payloads are delivered via phishing emails targeting open-source developers, tricking them into downloading the fake font. Once executed, the malware harvests browser credentials and system information from the compromised development machines. This evolution from workflow injections to targeted phishing demonstrates the attackers' adaptability in compromising the software supply chain. Developers are advised to verify all email attachments and use multi-factor authentication (MFA) to mitigate credential theft risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Salesforce Agents Inherit Email Risks",
-            "title": "How Salesforce Agentforce Inherited Email-to-Case Vulnerabilities",
-            "content": "Salesforce Agentforce's recommended event-driven architecture using Flow creates an unintended security gap. The standard Email-to-Case and Web-to-Case mechanisms automatically ingest inbound messages into agent prompts, bypassing intended governance controls. This design allows malicious actors to inject prompts directly into agent workflows via customer support channels. Organizations relying on these agents must implement strict input validation and separate ingestion pipelines. The flaw highlights a critical architectural oversight where inherited software components undermine modern AI governance.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "1.7M California Students' Data Stolen",
-            "title": "Millions of California Students' Sensitive Data Stolen in ETS Breach",
-            "content": "The California Department of Education notified students of a data breach at contractor Educational Testing Service (ETS). The incident compromised sensitive data belonging to approximately 1.7 million students across the state. The breach was discovered during routine security monitoring by the California Department of Education. ETS has engaged third-party cybersecurity firms to investigate the unauthorized access and secure affected systems. Students should monitor their accounts for identity theft and enroll in offered credit monitoring services.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/millions-of-california-students-sensitive-data-stolen-in-breach",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "AI Fuels Malware Evolution",
-            "title": "9 Rising Malware Trends Security Pros Must Track",
-            "content": "Malware is evolving rapidly due to advances in artificial intelligence (AI) and new computing infrastructures. Security professionals must adapt to threats like polymorphic malware that changes its code to evade signature-based detection. The rise of AI-powered malware enables automated vulnerability discovery and more convincing social engineering attacks. Traditional signature-based antivirus solutions are increasingly insufficient against these advanced threats. Organizations must invest in behavior-based detection and threat intelligence platforms.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Siemens Center Used in ClickFix Attacks",
-            "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
-            "content": "Attackers exploited a vulnerability in the Siemens Software Center to distribute malware through ClickFix social engineering lures. The campaign involved replacing a genuine, signed copy of the application with malicious dynamic-link libraries (DLLs). This technique leverages the trust associated with legitimate software to bypass endpoint security controls on Windows PCs. Users are tricked into executing malicious payloads by following fake error-fixing instructions. Organizations must verify software integrity and restrict unsigned application execution.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "US Job Postings Drop 26%—AI Security Demand Soars",
-            "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
-            "content": "CyberSN’s Cybersecurity Jobs Report reveals a 26% year-over-year decline in total cybersecurity job postings in the United States. Concurrently, demand for specialized AI Security Engineer roles has increased significantly, reflecting a market shift toward artificial intelligence governance. This divergence indicates a skills gap, with employers struggling to find talent proficient in both traditional security and advanced machine learning models. Organizations should invest in upskilling programs to address this emerging talent shortage.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 15 2026",
+            "headline": "FTC Probes Anthropic, OpenAI",
+            "title": "FTC Probes Anthropic, OpenAI Over AI Safety Practices",
+            "content": "The Federal Trade Commission (FTC) is actively investigating AI developers Anthropic and OpenAI. The probe focuses on potential violations of consumer protection laws regarding AI safety and data handling. Regulators may impose fines comparable to those levied for delayed data breach notifications. This action signals a shift toward stricter regulatory oversight of artificial intelligence development. Industry leaders must ensure their AI models comply with existing FTC guidelines on transparency and data security.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 14 2026",
+            "headline": "DeepMind Scams Detection—On-Device Gemma",
+            "title": "DeepMind and Singapore GovTech Deploy On-Device Scam Detection",
+            "content": "Google DeepMind and Singapore's GovTech have jointly developed an AI model to detect conversational scams. The system uses lightweight, on-device Gemma models to intercept scam attempts within private messaging applications. It operates entirely on-device, ensuring zero cloud data egress and maintaining user privacy. This deployment represents a significant step toward proactive, privacy-preserving cybersecurity on mobile platforms.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Meta's Muse Hits 10M US Downloads",
+            "title": "Meta's AI Companion Muse Surpasses 10 Million US Downloads",
+            "content": "Meta's AI companion application, Muse, achieved 10 million U.S. downloads within its first 40 days of release. This rapid adoption places it in an exclusive group of applications that includes Threads. New data indicates Muse is retaining users at higher rates than competing AI applications in the market. This strong initial performance suggests significant consumer interest in Meta's AI integration strategy.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "FairStress Evaluates LLM Fairness",
+            "title": "FairStress Framework Evaluates Fairness in LLM Decision-Making",
+            "content": "The FairStress framework provides a deeper evaluation of fairness in Large Language Model (LLM) decision-making processes. It assesses how LLMs handle sensitive attributes and potential biases across various demographic groups. This tool is critical for organizations deploying AI in high-stakes sectors like finance and healthcare. Developers must utilize such frameworks to audit models and mitigate discriminatory outcomes before deployment.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Startup Deciphers Plant Electrical Language",
+            "title": "Startup Builds AI to Decipher Plant Electrical Language",
+            "content": "A startup called Electric Plant has developed an AI-powered translator to interpret electrical signals in plants. The model analyzes subtle electricity coursing through plant stems to understand plant stress or communication. This technology could revolutionize agricultural monitoring and plant biology research. Researchers can now use this tool to develop responsive, automated systems for optimizing plant health and crop yields.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "ALTK-Evolve Tops Customer Service Leaderboard",
+            "title": "ALTK-Evolve Achieves Top Performance on Customer Service Tasks Without Frontier Models",
+            "content": "ALTK-Evolve has achieved the top position on the τ²-bench leaderboard for customer service tasks. This system demonstrates that learned memory architectures can outperform frontier models in specific enterprise applications. The development signals a shift toward efficient, task-specific AI models that reduce computational costs. Security professionals should evaluate these architectures for deployment in low-latency customer-facing systems. The model is available on the Hugging Face Hub for immediate testing.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Spotify Removes 50 Million AI Slop Tracks",
+            "title": "Spotify Purges 50 Million AI-Generated Spam Tracks from Recommendations",
+            "content": "Spotify has removed over 50 million AI-generated spam tracks and low-quality \"slop\" from its recommendation algorithm. The platform implemented system changes to prioritize music created by verified human artists over AI-generated content. This action addresses a growing trend of AI-generated music flooding streaming platforms and degrading user experience. The removal affects the discoverability of tracks on Spotify's main recommendation feeds globally. Users will notice a shift toward more human-curated music in their discovery playlists.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/1014284/spotify-ai-slop-spam-songs-removed",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Figma Co-Founder Critiques MCP Protocol",
+            "title": "Figma Co-Founder Dylan Field States MCP is Not a Perfect Protocol",
+            "content": "Figma co-founder Dylan Field publicly stated that the Model Context Protocol (MCP) is not a perfect standard for AI integration. The company plans to support multiple AI integration standards to avoid exposing sensitive customer data through a single protocol. This stance highlights the ongoing debate in the developer community regarding the security and privacy implications of universal AI connection protocols. Figma's approach prioritizes data sovereignty over universal compatibility. Developers should evaluate the security implications of MCP when integrating AI tools with design workflows.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "US Orders DeepSeek Removal from Federal Systems",
+            "title": "US Mandates Removal of DeepSeek AI from Federal Civilian Agencies",
+            "content": "The United States has ordered federal civilian agencies to remove all products and services built using DeepSeek's artificial intelligence technology. The directive cites national security concerns related to potential data access by foreign entities. This action follows a broader trend of governments restricting the use of specific AI models from geopolitical rivals. Federal agencies must conduct audits and remove DeepSeek integrations from their networks immediately. The order impacts any agency utilizing DeepSeek for internal data processing or public-facing applications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Adobe Lightroom Mobile Fixes Closed Eyes",
+            "title": "Adobe Lightroom Mobile Introduces Generative AI Eye-Opening Feature",
+            "content": "Adobe updated its mobile Lightroom application for iOS, iPadOS, and Android with a generative AI feature that automatically opens closed eyes in photos. The tool uses a single-tap detection system to identify subjects with closed eyes and generates corrected versions. This feature leverages Adobe's Firefly generative AI model trained on licensed and public domain images. The update addresses a common photography flaw in group portraits and candid shots. Users can access the feature in the latest version of Lightroom Mobile via the toolbar icon.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
+            "relatedResources": []
+        },
         {
             "date": "Oct 20 2026",
             "headline": "Hackers Hijack OpenCode—Steal API Keys",
@@ -273,87 +363,6 @@ const websiteContent = {
             "content": "Amazon has introduced TorchNeuron, a new development tool designed to break Nvidia's dominance over the PyTorch ecosystem. The tool aims to optimize AI applications to run on alternative chips, including Amazon's own Trainium and Inferentia silicon. By decoupling developers from proprietary Nvidia hardware, Amazon seeks to lower the barrier to entry for AI model training and deployment on AWS. Developers should evaluate TorchNeuron for workloads requiring cost-effective inference on AWS-native hardware.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Tenstorrent Hits $6.2B Valuation to Scale AI Chips",
-            "title": "Tenstorrent Reaches $6.2B Valuation to Scale Open-Weight AI Chips",
-            "content": "Tenstorrent, an Nvidia challenger, has achieved a $6.2 billion valuation to fund the scaling of its open-weight AI chips. The company raised $1.5 billion in funding to remain independent after drawing acquisition interest earlier this year. This capital injection will accelerate the development of its high-performance computing hardware. The move positions Tenstorrent as a formidable competitor in the AI chip market. Tech leaders should monitor Tenstorrent's progress as a potential alternative to Nvidia's offerings.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Users Use AI to Strip Smart TV Bloatware",
-            "title": "Smart TV Owners Deploy AI Agents to Remove Ads and Tracking",
-            "content": "Smart TV owners are utilizing AI agents to strip away unwanted bloatware, advertisements, and tracking features from their devices. This trend highlights growing consumer frustration with sluggish interfaces and privacy intrusions from smart home ecosystems. By leveraging AI, users can automate the removal of pre-installed applications and restore device performance. This shift indicates a broader demand for user-centric control over connected consumer electronics.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Nvidia Launches Open Models for Private Enterprise AI",
-            "title": "Nvidia Expands Open Model Portfolio for Enterprise and On-Device AI Agents",
-            "content": "Nvidia is advancing enterprise AI adoption by releasing new open models designed for on-premise data centers and on-device private AI agents. The move caters to corporate demand for data sovereignty and reduced reliance on cloud-based artificial intelligence services. These models aim to enable secure, localized inference for sensitive enterprise workloads. Nvidia's strategy positions it to capture market share in the burgeoning private AI infrastructure sector.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Gov. Pritzker Weighs AI's 100-Year Lifespan Promise",
-            "title": "Illinois Governor JB Pritzker Discusses AI's Potential and Existential Risks",
-            "content": "Illinois Governor JB Pritzker highlighted the dual-edged nature of artificial intelligence, suggesting it could extend human lifespans to 100 years while simultaneously posing threats comparable to nuclear weapons. In a recent discussion, Pritzker emphasized the urgent need for robust privacy protections and regulatory frameworks. He argued that these technological and privacy issues are driving an unexpected political realignment ahead of upcoming midterm elections. The discussion underscores the growing intersection of AI policy, tech regulation, and electoral politics.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "AI Agent Army Breaches 100+ Sites",
-            "title": "Autonomous AI Agents Used in Large-Scale Cyberattacks",
-            "content": "A hacker successfully breached more than 100 websites using an autonomous army of AI agents, according to findings from the AI security firm Norforge. The automated agents operated with minimal human intervention, exploiting vulnerabilities across multiple corporate networks. Victims included major industrial manufacturers such as John Deere, SharkNinja, and Cummins, though specific vulnerabilities were not publicly disclosed. Norforge's report highlights the emerging threat of fully autonomous AI-driven cyberattacks against critical infrastructure. Organizations must review their security postures to defend against AI-powered intrusion methods.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 19 2026",
-            "headline": "Laplace Intelligence Pre-Empts Autonomous Vehicle Failures",
-            "title": "Startup Laplace Intelligence Uses AI to Red-Team Autonomous Vehicles",
-            "content": "University of Michigan spinout Laplace Intelligence is utilizing AI agents and interactive simulation to red-team robots and self-driving cars before they are deployed in the real world. The startup competes in the Startup Battlefield at TechCrunch Disrupt, focusing on stress-testing autonomous systems for critical vulnerabilities. By simulating complex environmental interactions, Laplace Intelligence identifies safety flaws that traditional testing might miss. This proactive approach is essential for ensuring the reliability of autonomous technologies in high-stakes environments.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "Disney Hires Majority of Character.AI Workforce",
-            "title": "Disney Acquires Majority of Character.AI's Talent in Strategic Talent Acquisition",
-            "content": "Disney has secured the majority of Character.AI's workforce through a formal acquisition agreement. The filing confirms that most employees who received job offers accepted them, though the deal remains a stalking horse bid subject to higher offers. This strategic move bolsters Disney's AI capabilities and competitive positioning in the generative AI market. The acquisition follows Character.AI's recent $41 million funding round at a $1 billion valuation. The broader industry trend shows tech giants aggressively acquiring AI startups for talent and intellectual property.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "Anthropic Donates 5% Shares to Public Benefit Fund",
-            "title": "Anthropic Commits 5% of Shares to Public Benefit Fund",
-            "content": "Anthropic has pledged to commit 5% of its company shares to a dedicated public benefit fund. This initiative aligns with the company's stated mission to ensure artificial general intelligence benefits all of humanity. The move represents a notable corporate governance approach in the AI sector, potentially influencing industry standards. Anthropic's commitment demonstrates growing emphasis on ethical AI development and stakeholder capitalism. The fund's structure and impact metrics remain to be fully disclosed.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "Philly Woman Arrested Blocking Delivery Robot",
-            "title": "Protester Arrested for Blocking Uber Delivery Robot Path",
-            "content": "Carolyn Marvin was arrested in Philadelphia and charged with disorderly conduct after blocking an Uber delivery robot's path. Marvin explicitly stated she was protesting the robot's role in displacing human delivery workers. This incident highlights growing tensions between autonomous delivery systems and labor markets. The case raises questions about public space usage, autonomous vehicle regulations, and worker displacement. Cities and companies must develop clearer policies for integrating delivery robots into urban environments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
             "relatedResources": []
         }
     ],
