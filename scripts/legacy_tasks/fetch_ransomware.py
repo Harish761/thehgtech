@@ -407,6 +407,86 @@ def fetch_rss_feed():
         print(f"❌ RSS Error: {e}")
         return []
 
+def normalize_api_victim(item):
+    """Normalize a raw victim item from Ransomware.live API v2 into the canonical pipeline schema."""
+    if not isinstance(item, dict):
+        return None
+
+    # Resolve group name across multiple API schema variations (group_name vs group)
+    group_name = clean_text(item.get('group_name') or item.get('group') or item.get('actor') or '')
+    # Resolve victim name across multiple API schema variations (victim vs victim_name vs post_title)
+    victim_name = clean_text(item.get('victim_name') or item.get('victim') or item.get('post_title') or item.get('title') or '')
+    if not group_name or not victim_name:
+        return None
+
+    # Parse publication / discovery date
+    raw_date = item.get('discovered') or item.get('published') or item.get('attackdate') or item.get('date') or ''
+    now_utc = datetime.now(timezone.utc)
+    try:
+        cleaned_date_str = str(raw_date).replace('Z', '+00:00')
+        if ' ' in cleaned_date_str and 'T' not in cleaned_date_str:
+            cleaned_date_str = cleaned_date_str.replace(' ', 'T')
+        dt = datetime.fromisoformat(cleaned_date_str)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+        discovered = dt.isoformat()
+    except Exception:
+        dt = now_utc
+        discovered = now_utc.isoformat()
+
+    # Domain / Website
+    domain = clean_text(item.get('website') or item.get('domain') or '') or None
+    if domain:
+        domain = re.sub(r'^https?://', '', domain).rstrip('/').lower()
+        if not re.search(r'\.[a-zA-Z]{2,}$', domain):
+            domain = None
+
+    # Country
+    raw_country = item.get('country')
+    country_name, country_code = normalize_country(raw_country)
+
+    # Sector / Activity
+    sector = clean_text(item.get('sector') or item.get('activity') or '') or None
+    if sector and sector.lower() in ('n/a', 'none', 'unknown', 'null'):
+        sector = None
+    elif sector:
+        sector = sector.title()
+
+    # Description & Status parsing
+    desc_text = clean_text(item.get('description') or '')
+    parsed_sec, parsed_ctry, parsed_status, parsed_domain = extract_metadata_from_description(desc_text, victim_name)
+    if not sector and parsed_sec:
+        sector = parsed_sec
+    if not country_name and parsed_ctry:
+        country_name, country_code = normalize_country(parsed_ctry)
+    if not domain and parsed_domain:
+        domain = parsed_domain
+
+    status = clean_text(item.get('status') or '') or parsed_status
+
+    # Stable ID
+    unique_key = f"{group_name.lower().strip()}|{victim_name.lower().strip()}|{dt.strftime('%Y%m%d')}"
+    rec_id = hashlib.sha1(unique_key.encode('utf-8')).hexdigest()[:12]
+
+    return {
+        'id': rec_id,
+        'group_name': group_name,
+        'victim_name': victim_name,
+        'discovered': discovered,
+        'discovered_date': dt.strftime('%Y-%m-%d'),
+        'dt_obj': dt,
+        'post_url': clean_text(item.get('post_url') or item.get('url') or 'https://www.ransomware.live/'),
+        'country': country_name,
+        'country_code': country_code,
+        'sector': sector,
+        'domain': domain,
+        'status': status,
+        'description_snippet': desc_text[:200] if desc_text else '',
+        'source': 'ransomware.live/api'
+    }
+
 def fetch_api_feed():
     """Optional attempt to fetch from Ransomware.live API v2 if available."""
     url = 'https://api.ransomware.live/v2/recentvictims'
@@ -420,8 +500,13 @@ def fetch_api_feed():
         if response.status_code == 200 and 'application/json' in response.headers.get('content-type', ''):
             data = response.json()
             if isinstance(data, list):
-                print(f"✅ API v2: Fetched {len(data)} items.")
-                return data
+                normalized = []
+                for item in data:
+                    norm = normalize_api_victim(item)
+                    if norm:
+                        normalized.append(norm)
+                print(f"✅ API v2: Fetched {len(data)} items ({len(normalized)} valid after normalization).")
+                return normalized
         print(f"ℹ️ API v2 returned status {response.status_code} ({response.headers.get('content-type', '')}). Using RSS fallback.")
         return []
     except Exception as e:
@@ -429,10 +514,16 @@ def fetch_api_feed():
         return []
 
 def deduplicate_victims(victims_list):
-    """Deduplicate records by group + victim title."""
+    """Deduplicate records by group + victim title defensively."""
     unique_map = {}
     for v in victims_list:
-        key = f"{v['group_name'].lower().strip()}|{v['victim_name'].lower().strip()}"
+        if not isinstance(v, dict):
+            continue
+        g_name = (v.get('group_name') or v.get('group') or '').lower().strip()
+        v_name = (v.get('victim_name') or v.get('victim') or '').lower().strip()
+        if not g_name or not v_name:
+            continue
+        key = f"{g_name}|{v_name}"
         if key not in unique_map:
             unique_map[key] = v
         else:
