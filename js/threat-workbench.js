@@ -459,6 +459,20 @@
             }, 180));
         }
 
+        // Support outbound search pivots via URL query param (e.g., ?search=<group> or ?q=<term>)
+        try {
+            const urlParams = new URLSearchParams(window.location.search);
+            const queryParam = urlParams.get('search') || urlParams.get('q');
+            if (queryParam && searchInput) {
+                searchInput.value = queryParam;
+                state.currentSearch = queryParam.trim().toLowerCase();
+                state.currentPage = 1;
+                applyFilters();
+            }
+        } catch (e) {
+            console.warn('[ThreatWorkbench] Unable to parse URL search params:', e);
+        }
+
         const filterChips = document.querySelectorAll('.ti-filter-chip');
         filterChips.forEach((chip) => {
             chip.addEventListener('click', () => {
