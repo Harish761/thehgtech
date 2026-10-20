@@ -1432,6 +1432,29 @@
       "Description": "In January 2026, <a href=\"https://x.com/justabreach/status/2017260468448981108/\" target=\"_blank\" rel=\"noopener\">a data breach impacting the French non-profit Association Nationale des Premiers Secours (ANPS) was posted to a hacking forum</a>. The breach exposed 5.6k unique email addresses along with names, dates of birth and places of birth. ANPS self-submitted the data to HIBP and advised the incident was traced back to a legacy system and did not impact health data, financial information or passwords."
     }
   ],
+  "lassuranceretraite.fr": [
+    {
+      "Name": "AssuranceRetraite",
+      "Title": "Assurance Retraite",
+      "BreachDate": "2024-09-01",
+      "AddedDate": "2026-10-20T02:29:36Z",
+      "PwnCount": 70372,
+      "DataClasses": [
+        "Dates of birth",
+        "Email addresses",
+        "Family members' names",
+        "Government issued IDs",
+        "Income levels",
+        "Marital statuses",
+        "Names",
+        "Phone numbers",
+        "Physical addresses"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In September 2024, the French national pension fund <a href=\"https://www.tf1info.fr/justice-faits-divers/l-assurance-retraite-s-est-fait-voler-les-donnees-de-pres-de-370-000-personnes-2319431.html\" target=\"_blank\" rel=\"noopener\">Assurance Retraite suffered a data breach affecting approximately 370k assistance beneficiaries</a>. The data included 70k unique email addresses along with names, dates of birth, physical addresses, phone numbers, income levels, marital statuses, French social security numbers (NIR) and contact details of relatives or other nominated contacts. In its disclosure notice, <a href=\"https://web.archive.org/web/20241001202009/lassuranceretraite.fr/portail-info/hors-menu/annexe/fuite-donnees-suis-je-concerne.html\" target=\"_blank\" rel=\"noopener\">Assurance Retraite attributed the breach to a compromised partner account</a>."
+    }
+  ],
   "astropid.com": [
     {
       "Name": "AstroPID",
