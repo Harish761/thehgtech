@@ -287,6 +287,51 @@ class TestRansomwarePipeline(unittest.TestCase):
         res = fetch_ransomware.fetch_api_feed()
         self.assertEqual(res, [])
 
+    @patch('requests.get')
+    def test_fetch_api_feed_success_normalization(self, mock_get):
+        """Verify API v2 items with raw schema ('group', 'victim', 'website') are normalized without KeyError."""
+        raw_api_data = [
+            {
+                'group': 'akira',
+                'victim': 'Acme Global Corp',
+                'website': 'https://acmeglobal.com/',
+                'discovered': '2026-10-20T10:00:00Z',
+                'country': 'US',
+                'activity': 'Technology'
+            },
+            {
+                'group_name': 'qilin',
+                'victim_name': 'Beta Logistics',
+                'domain': 'betalogistics.de',
+                'published': '2026-10-20T09:00:00Z',
+                'country': 'Germany'
+            },
+            # Malformed item missing required fields
+            {
+                'country': 'FR'
+            }
+        ]
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.headers = {'content-type': 'application/json'}
+        mock_resp.json.return_value = raw_api_data
+        mock_get.return_value = mock_resp
+
+        res = fetch_ransomware.fetch_api_feed()
+        # Must extract the 2 valid items and discard the malformed one
+        self.assertEqual(len(res), 2)
+        v1 = res[0]
+        self.assertEqual(v1['group_name'], 'akira')
+        self.assertEqual(v1['victim_name'], 'Acme Global Corp')
+        self.assertEqual(v1['domain'], 'acmeglobal.com')
+        self.assertEqual(v1['country'], 'United States')
+        self.assertEqual(v1['country_code'], 'US')
+        self.assertEqual(v1['sector'], 'Technology')
+
+        # Must deduplicate safely without KeyError
+        deduped = fetch_ransomware.deduplicate_victims(res)
+        self.assertEqual(len(deduped), 2)
+
     def test_source_attribution_and_disclaimer_wording(self):
         """Verify source attribution and disclaimer accurately reflect unverified dark web notices."""
         fixed_now = datetime(2026, 10, 20, 12, 0, 0, tzinfo=timezone.utc)
