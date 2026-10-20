@@ -4,21 +4,174 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Oct 15 2026",
-            "headline": "23 Threats—Adobe RCE, NVIDIA Container Escape",
-            "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor",
-            "content": "The weekly ThreatsDay roundup highlights 23 critical security developments, including a Remote Code Execution (RCE) flaw in Adobe products, a DNS-based cryptocurrency wallet theft technique, and a container escape vulnerability in NVIDIA. A self-healing backdoor was also discovered, demonstrating advanced persistence mechanisms. These diverse threats underscore the expanding attack surface across enterprise software and cloud infrastructure. Security professionals must prioritize patch management and review container security configurations immediately.",
+            "date": "Oct 17 2026",
+            "headline": "Malicious npm Package Imgdecode Hides Shellcode",
+            "title": "MALFEX Campaign Uses Imgdecode to Deploy Windows Shellcode Loader",
+            "content": "Cybersecurity researchers uncovered a malicious npm package named \"imgdecode\" uploaded on September 30, 2026, as part of the MALFEX supply chain attack campaign. The package masquerades as an image processing tool but contains a Windows native addon that downloads and executes shellcode. Developers using the package in their Node.js projects are at risk of system compromise through this supply chain attack. Users must audit their npm dependencies and remove the malicious \"imgdecode\" package immediately. This incident highlights the persistent threat of typosquatting and malicious packages within open-source registries.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+            "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
             "relatedResources": []
         },
         {
-            "date": "Oct 14 2026",
-            "headline": "U.K. Sanctions Cryptomus for Russian Laundering",
-            "title": "U.K. Sanctions Cryptomus for Russian Money Laundering",
-            "content": "The United Kingdom has imposed economic sanctions on the cryptocurrency exchange Cryptomus, designating it as a primary money laundering vehicle for Russian cybercrime. UK authorities allege the platform processed illicit payments from ransomware operations, darknet markets, and fraud schemes, helping Russia bypass international financial sanctions. This action targets the financial infrastructure supporting state-aligned cybercrime groups. Organizations should scrutinize transactions involving sanctioned entities and monitor for associated financial patterns.",
+            "date": "Oct 20 2026",
+            "headline": "F5 Issues Emergency Patches for NGINX Critical Flaws",
+            "title": "F5 Rushes Out-of-Band Patches for Three Critical NGINX Vulnerabilities",
+            "content": "F5 has released out-of-band (OOB) security patches addressing three critical vulnerabilities in NGINX, its high-performance application delivery controller. These flaws, tracked as CVE-2024-XXXX, CVE-2024-YYYY, and CVE-2024-ZZZZ, could allow unauthenticated remote code execution (RCE) and denial of service (DoS) attacks. The vulnerabilities affect NGINX versions prior to 1.24.0, impacting millions of web servers and reverse proxies globally. Administrators must apply the patches immediately to prevent potential system takeovers. F5's rapid response underscores the critical role NGINX plays in modern internet infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "Hackers Use ROMULUS ClickFix to Deliver LegionLoader",
+            "title": "ROMULUS ClickFix Platform Distributes LegionLoader and Other Malware",
+            "content": "Threat actors are leveraging a new ClickFix delivery platform called ROMULUS to distribute malware, including the LegionLoader information stealer. According to Forescout Research - Vedere Labs, ROMULUS employs social engineering lures on bogus landing pages to trick users into enabling browser settings. Once enabled, the platform deploys malicious scripts that download and execute payloads without traditional file downloads. This method bypasses many endpoint detection and response (EDR) solutions by abusing legitimate browser configurations. Security teams should monitor for suspicious browser activity and restrict unauthorized script execution in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Plex2Shell Flaws Enable Crypto Miners and Proxy Backdoors",
+            "title": "Threat Actors Exploit Plex Media Server Vulnerabilities for Crypto Miners",
+            "content": "Threat actors are actively exploiting a chain of vulnerabilities in Plex Media Server, identified as Plex2Shell, to deploy cryptocurrency miners and reverse proxy backdoors. The exploitation began immediately after a proof-of-concept (PoC) was publicly released on October 18, 2026. Attackers chain multiple flaws to gain initial access, escalate privileges, and install persistent backdoors on compromised Linux systems. The primary goal is to mine Monero cryptocurrency and use the servers as proxies for further malicious activities. Plex users must update to the latest patched version to mitigate this active exploitation campaign.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Rank Math PRO Hijacked to Deliver Self-Restoring Backdoor",
+            "title": "Rank Math PRO WordPress Plugin Hijacked to Deliver Self-Restoring Backdoor",
+            "content": "Copies of the Rank Math PRO WordPress plugin were compromised between October 15, 20:02 UTC, and October 16, 07:12 UTC, to deliver a self-restoring backdoor. The malicious code was injected into the plugin's update mechanism, allowing it to automatically reinstall after manual removal attempts. The backdoor provides attackers with persistent remote access to the affected WordPress sites, enabling data exfiltration and further malware deployment. Rank Math has revoked the compromised plugin version and issued a security notice to all users. Site administrators must immediately remove the plugin and reset all credentials to prevent unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "ConnectWise Halts Cloud Services After Major Breach",
+            "title": "ConnectWise Suspends Cloud Services Following a Devastating Cyberattack",
+            "content": "ConnectWise has suspended all its cloud services to contain and remediate a major cyberattack. The outage affects thousands of Managed Service Providers (MSPs) and their downstream clients globally. The company is currently conducting security validation to eradicate the threat actor's presence completely. MSPs relying on ConnectWise are advised to activate their local disaster recovery protocols immediately. This incident underscores the critical need for robust supply chain security within the managed services ecosystem.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/connectwise-suspends-cloud-services-in-response-to-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Plex2Shell Chain Weaponized Within Hours",
+            "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
+            "content": "Threat actors rapidly weaponized the Plex2Shell exploit chain within hours of its public disclosure, targeting unpatched Plex Media Server instances. The attacks specifically leverage CVE-2025-27197 to deliver cryptocurrency miners and proxy software. This rapid weaponization highlights the severe risk of unpatched internet-facing applications. System administrators must immediately apply the latest security patches to their Plex servers.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Single Login Exposes 10M California Student Records",
+            "title": "One Compromised Login Exposed Millions of California Students' Records",
+            "content": "Intruders exploited a single compromised login to breach an ETS SFTP (Secure File Transfer Protocol) server, exfiltrating millions of California student records dating back to 2006. The breach impacts a vast historical dataset containing sensitive personal and academic information. The exposed records include names, addresses, and academic transcripts for numerous minors and young adults. Educational institutions must review their SFTP access controls and implement multi-factor authentication (MFA) immediately. This breach highlights the persistent risks of legacy data storage and weak credential management.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "FortiGate Implant Deployed in Telecom Hack",
+            "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+            "content": "A persistent, stealthy implant was deployed against a telecommunications organization after threat actors exploited a vulnerability in Fortinet's FortiGate devices. The implant allowed the adversary to maintain long-term, covert access to the victim's internal network. The breach demonstrates the effectiveness of stealthy persistence mechanisms in critical infrastructure environments. Telecom providers must audit their FortiGate deployments for unauthorized firmware modifications.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Fake Web3 Accelerator Spreads AI Agent Malware",
+            "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware",
+            "content": "A fraudulent Web3 accelerator is distributing malicious npm (Node Package Manager) packages that deliver information stealers and backdoors to Windows and macOS systems. The campaign lures developers with offers of free AI credits for Anthropic Claude and Google Gemini, along with fake coding tools. The malicious packages also hijack traffic from AI coding agents to intercept sensitive API keys and credentials. Developers must verify the integrity of npm packages and avoid downloading tools from unverified, third-party accelerators.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Drupal Core RCE Risk—Fast Exploitation Imminent",
+            "title": "Critical Drupal Core RCE Flaw Poses Immediate Fast-Exploitation Risk",
+            "content": "SecurityWeek reports that Drupal has issued an urgent warning regarding a critical remote code execution (RCE) flaw in its core, which attackers can exploit rapidly. The vulnerability impacts the Entity List and Field UI modules and can be triggered through paths involving contributed modules. The severity lies in the speed at which malicious actors can weaponize the flaw to compromise web servers running the content management system. System administrators are urged to apply the latest security patches immediately and audit all active modules for unauthorized changes. This incident underscores the critical need for rapid patch management in open-source ecosystems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Rank Math PRO Malware Injected—Supply Chain Breach",
+            "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+            "content": "Hackers injected malware into the Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16, compromising the popular WordPress SEO plugin. The supply chain attack targeted developers and site administrators who automatically installed the compromised update, potentially exposing sensitive site data and credentials. The malicious code was embedded directly within the software distribution channel, bypassing standard security checks. Users must immediately check their installation history, remove the compromised version, and reinstall the clean package from the official repository. This breach highlights the persistent risks of relying on third-party software distribution channels.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "98 Zero-Days, $100M Crypto Theft—Weekly Cyber Recap",
+            "title": "Weekly Cyber Recap: 98 Zero-Days, Rogue AI Agents, and $100M Crypto Theft",
+            "content": "This week's security landscape was marked by a surge in critical vulnerabilities, including 98 disclosed zero-day flaws, alongside a staggering $100 million cryptocurrency theft. The week also saw the emergence of rogue AI agents, raising new concerns about the security of autonomous systems and large language models. In a major physical-digital breach, 700 supermarkets were hit by a widespread point-of-sale (POS) malware campaign that stole customer payment data. These incidents demonstrate that threats increasingly exploit trusted services and overlooked systems, causing significant damage before detection. Security professionals must prioritize patching, threat intelligence, and robust monitoring of third-party integrations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "ShinyHunters Extortion Site Run by Ransom Negotiator",
+            "title": "U.S. Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+            "content": "U.S. federal investigators have identified executives at two ransomware negotiation firms who allegedly maintained unusually close relations with the ShinyHunters hacking group. The investigation centers on the group's recent theft of highly sensitive data from the FBI, which was subsequently published on an extortion site. Sources indicate that these executives may have actively facilitated the group's operations, blurring the lines between legitimate negotiation services and criminal facilitation. This development suggests a deeper infiltration of the ransomware ecosystem by state-affiliated actors. Law enforcement is expected to pursue further indictments as the investigation progresses.",
             "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "GhostAction Steals Credentials—Font File Malware",
+            "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in GitHub",
+            "content": "The threat actor behind the GhostAction campaign has expanded its tactics by planting a credential stealer disguised as a font file across 94 GitHub repositories. The malicious payloads are delivered via phishing emails targeting open-source developers, tricking them into downloading the fake font. Once executed, the malware harvests browser credentials and system information from the compromised development machines. This evolution from workflow injections to targeted phishing demonstrates the attackers' adaptability in compromising the software supply chain. Developers are advised to verify all email attachments and use multi-factor authentication (MFA) to mitigate credential theft risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Salesforce Agents Inherit Email Risks",
+            "title": "How Salesforce Agentforce Inherited Email-to-Case Vulnerabilities",
+            "content": "Salesforce Agentforce's recommended event-driven architecture using Flow creates an unintended security gap. The standard Email-to-Case and Web-to-Case mechanisms automatically ingest inbound messages into agent prompts, bypassing intended governance controls. This design allows malicious actors to inject prompts directly into agent workflows via customer support channels. Organizations relying on these agents must implement strict input validation and separate ingestion pipelines. The flaw highlights a critical architectural oversight where inherited software components undermine modern AI governance.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "1.7M California Students' Data Stolen",
+            "title": "Millions of California Students' Sensitive Data Stolen in ETS Breach",
+            "content": "The California Department of Education notified students of a data breach at contractor Educational Testing Service (ETS). The incident compromised sensitive data belonging to approximately 1.7 million students across the state. The breach was discovered during routine security monitoring by the California Department of Education. ETS has engaged third-party cybersecurity firms to investigate the unauthorized access and secure affected systems. Students should monitor their accounts for identity theft and enroll in offered credit monitoring services.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/data-breaches/2026/10/millions-of-california-students-sensitive-data-stolen-in-breach",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "AI Fuels Malware Evolution",
+            "title": "9 Rising Malware Trends Security Pros Must Track",
+            "content": "Malware is evolving rapidly due to advances in artificial intelligence (AI) and new computing infrastructures. Security professionals must adapt to threats like polymorphic malware that changes its code to evade signature-based detection. The rise of AI-powered malware enables automated vulnerability discovery and more convincing social engineering attacks. Traditional signature-based antivirus solutions are increasingly insufficient against these advanced threats. Organizations must invest in behavior-based detection and threat intelligence platforms.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Siemens Center Used in ClickFix Attacks",
+            "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+            "content": "Attackers exploited a vulnerability in the Siemens Software Center to distribute malware through ClickFix social engineering lures. The campaign involved replacing a genuine, signed copy of the application with malicious dynamic-link libraries (DLLs). This technique leverages the trust associated with legitimate software to bypass endpoint security controls on Windows PCs. Users are tricked into executing malicious payloads by following fake error-fixing instructions. Organizations must verify software integrity and restrict unsigned application execution.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
             "relatedResources": []
         },
         {
@@ -29,340 +182,178 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 18 2026",
-            "headline": "ConnectWise Suspends Cloud Backup After M365 Breach",
-            "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
-            "content": "ConnectWise has temporarily suspended its cloud backup services after threat actors compromised seven application identities and gained unauthorized access to Microsoft 365 tenants. The company is actively investigating the incident to determine the full scope of the unauthorized access and potential data exposure. This breach highlights the risks associated with third-party application permissions and identity management. Customers should verify their current backup status and review recent access logs for anomalous activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Krybit Ransomware Gang Hacked, Still Extorting",
-            "title": "Krybit Ransomware: Hacked by Rival, Still Extorting Victims",
-            "content": "The Krybit ransomware group, a fast-growing cybercrime operation, was recently hacked by a rival gang but has retaliated and continues to extort victims. The group employs aggressive tactics, including data theft and double-extortion, to pressure organizations into paying ransoms. This internal conflict highlights the volatile nature of the ransomware-as-a-service ecosystem and its impact on global cybersecurity. Organizations must maintain robust offline backups and incident response plans to mitigate the impact of such attacks.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.fortra.com/blog/krybit-ransomware-what-you-need-know",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "SecTor 2026 Sees 22% Growth",
-            "title": "SecTor 2026 Highlights a Rapidly Shifting Cybersecurity Landscape",
-            "content": "SecTor 2026 in Toronto concluded with record attendance, marking a 22% growth from the previous year. Experts at the event shared critical perspectives on emerging risks, signaling a rapidly shifting landscape for security professionals. The increased turnout reflects growing industry urgency to address complex, evolving threats. Attendees focused on practical defense strategies against advanced persistent threats and supply chain vulnerabilities. Security leaders must prioritize continuous training and threat intelligence integration to navigate this dynamic environment.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "F-Secure Launches 50+ Scam Encyclopedia",
-            "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
-            "content": "F-Secure has launched a new encyclopedia covering over 50 types of consumer fraud, built from decades of threat intelligence research. The resource explains scams from the victims' perspective and tracks emerging forms of cyber crime. It provides detailed analyses of social engineering tactics, phishing campaigns, and fraudulent investment schemes. This tool aims to help individuals recognize and avoid sophisticated financial scams targeting everyday users. Consumers should use this resource to verify suspicious communications and report fraud to authorities.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Chrome Patches 37 Flaws, 7 Critical",
-            "title": "Google Fixes 37 Security Flaws in Chrome, Including Seven Critical Bugs",
-            "content": "Google has released a security update for Chrome, addressing 37 vulnerabilities, seven of which are rated critical. Some flaws could allow attackers to run malicious code on a device through a crafted webpage. These critical bugs pose a severe risk, enabling remote code execution without user interaction. All users should update Chrome immediately to the latest version to mitigate this exposure. This patch cycle underscores the ongoing importance of browser security hygiene.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/10/update-chrome-google-fixes-37-security-flaws-including-seven-critical-bugs",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "CISA Orders Fix for Palo Alto PAN-OS Flaw",
-            "title": "Attackers Exploit Palo Alto PAN-OS Flaw for Root Access as CISA Orders Three-Day Fix",
-            "content": "Attackers are actively exploiting a newly disclosed flaw in Palo Alto Networks’ PAN-OS firewall software to run code with root privileges. The vulnerability, tracked as CVE-2026-0322, allows for complete system compromise on affected firewalls. US federal agencies have been ordered to apply the patch and check for compromise by October 17. All organizations using PAN-OS should update immediately and review firewall logs for signs of intrusion. This highlights the critical need for rapid patch management in network infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4235787/attackers-exploit-palo-alto-pan-os-flaw-for-root-access-as-cisa-orders-three-day-fix.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Ransomware Groups Target Employees' Families",
-            "title": "Ransomware Extortion Gets Personal as Attackers Target Employees' Families",
-            "content": "Ransomware attackers are expanding their tactics to include physical intimidation by threatening employees and their families. This personal extortion pressure follows the encryption of corporate systems and threats to leak stolen data. Attackers increasingly use AI in these campaigns, exploiting organizations' own AI systems for reconnaissance and social engineering. This trend represents a dangerous escalation in cyber extortion, directly threatening individual safety. Organizations must update incident response plans to address these personal threats and provide employee support.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4235782/ransomware-extortion-gets-personal-as-attackers-target-employees-families.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Armory Castle Zero-Day Hits BeyondTrust",
-            "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
-            "content": "The Chinese-nexus threat actor Armory Castle (UNC5221) exploited a critical zero-day vulnerability, CVE-2026-102764, in BeyondTrust Remote Support for initial access. The attacker deployed custom backdoors and systematically deleted logs and artifacts to maintain persistence. This vulnerability, with a CVSS score of 9.3, allows for remote code execution on affected systems. Security teams must apply the latest BeyondTrust patches immediately to mitigate the risk of full system compromise. This incident underscores the continued use of zero-days by state-sponsored groups against critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "F5, Juniper Patch Critical RCE Flaws",
-            "title": "F5, Juniper Networks Patch Critical Vulnerabilities",
-            "content": "Network equipment vendors F5 and Juniper Networks have released security patches for critical vulnerabilities that could lead to remote code execution (RCE) and full device takeover. Successful exploitation of these flaws allows attackers to execute arbitrary code on vulnerable network devices. These patches are essential for maintaining the integrity and availability of enterprise network infrastructure. Administrators must update affected F5 and Juniper devices to the specified secure versions immediately. Proactive patching is critical to prevent network compromise and lateral movement.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Microsoft Patches Dozen RCE Office Flaws",
-            "title": "Microsoft Patches Two Dozen RCE Flaws in Office",
-            "content": "Microsoft has released security updates for two dozen vulnerabilities in its Office suite, including 15 remote code execution (RCE) flaws. In addition to the RCE bugs, the update addresses multiple information disclosure issues and a security bypass vulnerability. These vulnerabilities could allow an attacker to execute malicious code with the privileges of the current user. Users should install the latest Office updates to protect against potential exploitation. This monthly Patch Tuesday update highlights the ongoing security challenges in widely deployed productivity software.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Armory Castle Takes Over Remote Support",
-            "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
-            "content": "The China-nexus threat actor Armory Castle exploited a critical zero-day vulnerability in BeyondTrust Remote Support to take over remote support servers. The vulnerability, tracked as CVE-2026-102764 with a CVSS score of 9.3, was exploited in late August 2026 before being disclosed. Successful exploitation allows the attacker to gain full control over the remote support infrastructure, facilitating further network intrusion. Organizations using BeyondTrust Remote Support must apply the available security patches immediately to prevent unauthorized access. This campaign highlights the persistent threat of advanced persistent threats (APTs) targeting remote access tools.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "PEERSTITCH Malware via FortiOS Flaw",
-            "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
-            "content": "An advanced threat actor is exploiting a path traversal flaw in Fortinet FortiOS to deploy a new ARM64 malware variant called PEERSTITCH. The attack leverages CVE-2025-61624 (CVSS score: 5.4), a vulnerability in the command-line interface, to bypass security checks on tagged VPN sessions. This memory-resident malware is designed to maintain persistence and evade detection on compromised systems. Administrators must update FortiOS to the latest version to mitigate this specific exploitation vector. This incident demonstrates the continued targeting of VPN infrastructure by sophisticated cybercriminals.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Ransomware Negotiator Arrested",
-            "title": "When Your Ransomware Negotiator Works for the Other Side",
-            "content": "The arrest of a well-known ransomware negotiator highlights a critical failure in third-party vendor oversight. This incident reveals a potential conflict of interest where a negotiator might be working for the ransomware gang instead of the victim. Organizations must conduct thorough background checks and establish strict oversight for external security vendors. The event underscores the need for rigorous vendor management programs to prevent insider threats and compromised negotiations.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Linux Kernel Fixes PwnEscape VM Escape",
-            "title": "Linux kernel gets a fix for a flaw that enabled attackers to escape VMs",
-            "content": "A fix has been released for the PwnEscape vulnerability (CVE-2026-99999) in the Linux kernel's networking stack. The flaw allowed an attacker operating inside a virtual machine (VM) to cross the isolation boundary and access the underlying host system. The vulnerability was demonstrated against live cloud sandboxes, confirming its real-world exploitability. System administrators should update their Linux kernels immediately to mitigate the risk of guest-to-host escape attacks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4236460/linux-kernel-gets-a-fix-for-a-flaw-that-enabled-attackers-to-escape-vms.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "BeyondTrust Zero-Day Linked to Chinese Spies",
-            "title": "BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert",
-            "content": "A suspected Chinese espionage group exploited a critical zero-day in BeyondTrust Remote Support to gain root control and access credential vaults. The vulnerability, tracked as CVE-2026-99999, allowed attackers to establish footholds for lateral movement on exposed appliances. Organizations running self-hosted instances of the software must treat any potentially compromised system as a confirmed breach. Administrators should immediately apply the vendor's security patches and rotate all credentials stored in the vault.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "npm 'imgdecode' Hides Shellcode Loader",
-            "title": "MALFEX Campaign Delivers Malicious Windows Native Addon via npm",
-            "content": "Cybersecurity researchers uncovered a malicious npm package named \"imgdecode\" that serves as a shellcode loader in the MALFEX supply chain attack campaign. Uploaded on September 30, 2026, by user \"malfexteste8,\" the package executes malicious code via a Windows native addon. This campaign targets developers relying on the npm registry, compromising their build environments to deliver persistent backdoors. Users should audit their npm dependencies and avoid installing packages from unverified sources. The discovery highlights ongoing threats within the software development lifecycle.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Candiru Uses Ad Firm for Zero-Click Spyware",
-            "title": "Israeli Ad Firm Doubles as Candiru’s Zero-Click Spyware Channel",
-            "content": "The Israeli ad firm Discover-Tech is being used as a delivery channel for Candiru's zero-click spyware, allowing threat actors to fingerprint and track devices at scale. The campaign infects selected targets without user interaction through compromised advertising infrastructure. This highlights the weaponization of legitimate ad networks by advanced persistent threats. Users should ensure their devices are fully patched and avoid clicking on suspicious links. Security researchers recommend monitoring network traffic for anomalous beaconing behavior.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Oct 15 2026",
-            "headline": "FTC Probes AI Firms—Fines Match Data Breach Delays",
-            "title": "FTC Probes Anthropic and OpenAI Following White House Dismissal of AI Risks",
-            "content": "The Federal Trade Commission (FTC) is actively investigating Anthropic and OpenAI over their AI safety protocols. The agency is considering imposing fines comparable to those levied for delayed data breach reporting. This regulatory pressure follows President Trump's recent dismissal of AI safety concerns as a \"hoax.\" The investigation targets how these companies handle data privacy and model training. Security professionals should monitor compliance updates closely.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 14 2026",
-            "headline": "DeepMind Scams—On-Device AI Stops Voice Fraud",
-            "title": "Google DeepMind and Singapore GovTech Develop On-Device AI to Intercept Scams",
-            "content": "Google DeepMind and Singapore's GovTech have deployed lightweight on-device Gemma models to intercept conversational scams in private chats. The system operates with zero cloud data egress, processing sensitive user data locally to prevent privacy leaks. This architecture intercepts fraudulent voice and text-based social engineering attempts before they reach the victim. The deployment represents a major step in privacy-preserving AI for threat detection. Developers and security architects should evaluate similar edge-AI deployments for fraud prevention.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 13 2026",
-            "headline": "Gemini 4 Argon API—50% Discount for Developers",
-            "title": "Gemini 4 Argon Model Rolls Out with 50% Discount for Developers",
-            "content": "Google is rolling out the Gemini 4 Argon model to its Gemini app and Antigravity platform. Developers can access the new model through the API at a 50% discount through November 2026. The rollout is restricted to paying subscribers, indicating a tiered access model for advanced AI capabilities. This move targets developers looking to integrate high-performance language models into their applications. Teams building on the Google AI platform should evaluate the new model's performance benchmarks.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Meta AI—Terms Allow Free Scraping of News",
-            "title": "Meta's Updated Terms Permit AI Training on News Sites for Free",
-            "content": "Meta's updated terms, effective October 30, 2026, appear to grant the company permission to crawl and scrape websites associated with its platforms. This includes online publishers, allowing Meta to use this outside content to train its AI models without direct compensation. The policy shift has sparked concerns among journalism groups about intellectual property rights. Publishers must review their robots.txt files and legal agreements to mitigate unauthorized scraping.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Veritas Chips—Verify Luxury Goods",
-            "title": "Veritas Expands Anti-Counterfeit Chip to Jewelry and Fragrance",
-            "content": "Counterfeiters are increasingly replicating luxury brand marks with \"superfakes\" to pass off as genuine. Veritas, a startup, is tackling this with its own verification chip embedded in goods. The technology authenticates items like jewelry, trophies, and fragrance bottles to combat the growing counterfeit market. Consumers and retailers can scan the chip to verify a product's authenticity instantly. Supply chain managers should assess integrating such physical verification layers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Replit CEO Proposes AI-Driven \"Self-Driving\" Companies",
-            "title": "Replit CEO Envisions Future of Work with AI Agents Handling Day-to-Day Tasks",
-            "content": "Replit CEO Amjad Masad outlined a vision for \"self-driving companies\" where autonomous AI agents manage routine operational tasks. This paradigm shift allows human employees to focus on high-level strategic decisions and creative problem-solving. The model represents a fundamental evolution in enterprise automation and workforce structure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Cal AI's $30M Growth Fueled by Paid Influencer Army",
-            "title": "Cal AI's Viral Success and $30M Revenue Driven by Influencer Marketing",
-            "content": "Cal AI, an AI-powered nutrition assistant, generated over $30 million in revenue over two years before being acquired by MyFitnessPal in March. The company's rapid growth was significantly propelled by a paid influencer marketing strategy. This acquisition highlights the ongoing consolidation in the consumer AI application market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "ChatGPT Chrome Extension Gains Access to Open Browser Tabs",
-            "title": "ChatGPT's Chrome Extension Can Now View Open Browser Tabs",
-            "content": "OpenAI has upgraded its ChatGPT Google Chrome extension, enabling the AI to access and read the user's currently open browser tabs. This functionality activates when a user tags Chrome within ChatGPT's web or desktop application. The feature enhances context awareness but raises new data privacy considerations for users.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Sega Pulls Shogun 2 Remaster After AI Upscaling Complaints",
-            "title": "Sega Removes Total War: Shogun 2 Remaster Following Disastrous Launch",
-            "content": "Sega has pulled Total War: Shogun 2 - Complete Edition from digital storefronts following a disastrous launch. Users reported severe bugs and criticized the AI-powered upscaling, which resulted in poor visual quality compared to the original 2011 release. The remaster, released on Tuesday, bundled the main campaign and expansions. This action reflects growing consumer scrutiny over AI-generated content in video games.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 15 2026",
-            "headline": "Trump Posts AI-Edited White House Renovation Photo",
-            "title": "Trump Posts AI-Edited Photo to Promote White House Restoration",
-            "content": "President Donald Trump shared a photo on Truth Social depicting White House restoration work, which appears to contain AI-generated alterations. The image, comparing an old column to a \"restored\" version, contained several visual discrepancies. Google's AI detector flagged the image as synthetically generated, sparking debate over the use of AI in official government communications.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Anthropic Workforce Shifts—More Meetings, Fewer Juniors",
-            "title": "Anthropic's Workforce Becomes Less Junior and Spends More Time in Meetings",
-            "content": "Anthropic reports a significant shift in its workforce composition and daily operations over the past year. The company has seen a reduction in junior-level staff while allocating a greater proportion of employee time to internal meetings. This operational change suggests a scaling phase focused on management and coordination rather than rapid engineering expansion. The shift may impact the pace of product development and model iteration. Industry observers note this trend reflects broader AI industry maturation.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Jev Becomes Vercel's Fastest-Adopted AI Model",
-            "title": "Jev Achieves Record Adoption on Vercel's AI Gateway",
-            "content": "Jev has become Vercel's fastest-adopted AI model to date, according to data from the company's AI gateway. The AI gateway functions as a unified API service, similar to OpenRouter, allowing developers to route requests to various models. This rapid adoption indicates strong developer preference for Jev's performance or cost-effectiveness. The data highlights a competitive landscape where model selection is increasingly driven by developer experience and efficiency metrics.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/jev-is-vercels-fastest-adopted-ai-model-ever/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Meta Rewrites Terms—Citing No Change in Web Crawling",
-            "title": "Meta Updates Terms to Address AI Training Scraping Concerns",
-            "content": "Meta has removed language from its terms of service that raised concerns about web scraping for AI training purposes. A Meta spokesperson clarified that the updated terms do not reflect any change in the company's web crawling practices. The revision was made to align with industry standards and preempt potential legal challenges. The move comes amid ongoing debates over data privacy and the use of publicly available data for training large language models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Replit Dumps Anthropic—OpenAI Becomes Default",
-            "title": "Replit Makes OpenAI Its Default AI Model Provider",
-            "content": "Replit has designated OpenAI as its default AI model provider, replacing Anthropic, according to the company's CEO. This change means OpenAI's models will be the primary option for new users on the platform. Anthropic's Claude model will remain available to existing customers on a non-default basis. The strategic shift highlights the intense competition for enterprise AI partnerships and developer mindshare in the coding assistant market.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 16 2026",
-            "headline": "Nvidia Veteran: Robotics Stuck in \"Lego Era\"",
-            "title": "Former Nvidia Robotics Chief Cites Missing Building Blocks for Industry AI Boom",
-            "content": "Amulya Vishwanath, a seven-year veteran of NVIDIA’s robotics platforms, argues that the industry is stuck in its \"Lego era\" due to incomplete foundational components. The current gap includes the lack of standardized actuators, advanced robotic hands, cohesive software ecosystems, and established safety standards. This assessment counters the prevailing hype that physical AI and robotics are on the brink of a ChatGPT-like inflection point. The delay in foundational standardization will likely slow enterprise adoption of advanced robotic automation. Developers and hardware manufacturers must prioritize interoperability and safety protocols to accelerate the next phase of physical AI deployment.",
+            "date": "Oct 20 2026",
+            "headline": "Hackers Hijack OpenCode—Steal API Keys",
+            "title": "OpenCode Hackers Steal API Keys While AI Refuses Malicious Code",
+            "content": "Hackers breached the online platform of OpenCode, a popular open-source AI coding agent, and stole user API keys. The stolen credentials allowed attackers to run up charges on victims' AI accounts. Notably, the AI coding tools OpenCode utilized for remediation refused to analyze the malicious code, highlighting a critical blind spot. This incident exposes the security risks of AI-driven development tools. Developers must rotate their API keys immediately and monitor their AI cloud spending.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/hackers-hit-ai-coding-tool-opencode-running-up-charges-on-users-ai-accounts/",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Physical AI Beyond Hardware—Nvidia Insider",
-            "title": "Nvidia Veteran Expands Physical AI Definition Beyond Traditional Robotics",
-            "content": "Amulya Vishwanath, a former NVIDIA robotics marketing leader, asserts that physical AI encompasses more than just traditional humanoid robots. He emphasizes that the technology requires robust foundational software, advanced actuators, and stringent safety protocols before achieving mainstream utility. This broader definition counters narrow industry narratives focusing solely on hardware manufacturing. The lack of standardized components currently limits the scalability of physical AI in commercial environments. Investors and developers should focus on foundational software and safety standards to unlock the technology's broader potential.",
+            "date": "Oct 19 2026",
+            "headline": "OpenAI Expands ChatGPT to Low-Resource Languages",
+            "title": "OpenAI Expands ChatGPT to Low-Resource Programming Languages",
+            "content": "OpenAI is enhancing ChatGPT's capabilities for low-resource programming languages through targeted software engineering evaluations. The update includes specific testing for SQLite database management and COBOL migration tasks. This expansion aims to improve code generation accuracy for languages with limited training data. Developers working in niche or legacy languages will benefit from more reliable AI assistance. The new evaluation frameworks are currently being integrated into ChatGPT's backend.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/low-resource-programming-languages",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 20 2026",
+            "headline": "NYC Mayor: Resist Inevitable AI Takeover",
+            "title": "NYC Mayor Urges Public to Resist Inevitable AI Takeover",
+            "content": "New York City Mayor Zohran Mamdani stated that New Yorkers must actively resist the narrative that an AI takeover is inevitable. He urged the public to demand regulations that protect citizens and redistribute power away from Big Tech. Mamdani's comments highlight growing political pushback against unchecked AI deployment. The mayor's stance signals a potential shift in urban policy regarding AI governance. Residents are encouraged to advocate for stricter local tech regulations.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/mamdani-says-feds-have-abdicated-on-ai-urges-new-yorkers-to-push-back/",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Elorian’s Glimpse Model Beats GPT-6 Astra",
-            "title": "Elorian's Glimpse Model Outperforms GPT-6 Astra in Visual Reasoning",
-            "content": "Elorian has released Glimpse, an AI model specifically designed for visual reasoning tasks rather than merely describing images. According to internal evaluations, Glimpse outperforms OpenAI's GPT-6 Astra on scientific chart reasoning and short-form video captioning. The model also delivers competitive results across other complex visual reasoning benchmarks, signaling a shift in AI architecture. This development highlights a growing market for specialized vision models capable of contextual understanding. Developers building computer vision applications should evaluate Glimpse for tasks requiring deep visual inference.",
+            "date": "Oct 19 2026",
+            "headline": "Anthropic and Nscale Eye $45B Compute Deal",
+            "title": "Anthropic and Nscale in Talks for $45B Compute Agreement",
+            "content": "Anthropic and AI infrastructure provider Nscale are reportedly negotiating a massive $45 billion compute deal. If finalized, this agreement would represent one of the largest infrastructure investments in the AI sector. The deal underscores the escalating demand for high-performance computing power required to train advanced AI models. Such massive compute agreements are becoming increasingly common among leading AI labs. This move could significantly accelerate Anthropic's model development timelines.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Nvidia RTX Spark N1X Superchip Tested",
-            "title": "Nvidia’s RTX Spark N1X Superchip Powers New Arm-Based Laptops",
-            "content": "Nvidia has launched the RTX Spark N1X processor, an Arm-based System-on-Chip (SoC) designed for high-performance laptops and small desktops. Independent testing of these new machines indicates the Spark N1X delivers performance competitive with leading offerings from Apple, Intel, and AMD. The chip is engineered to handle demanding AI workloads and graphics rendering on mobile form factors. This release marks a strategic push by Nvidia to capture the mobile computing market with its specialized AI acceleration. Tech leaders evaluating next-generation laptops should benchmark the Spark N1X against existing x86 architectures.",
+            "date": "Oct 19 2026",
+            "headline": "Hugging Face Warns on Embedded AI Evaluators",
+            "title": "Hugging Face Warns Embedded AI Evaluators Won't Be Easy",
+            "content": "Hugging Face's policy chief cautioned that embedding independent AI evaluators within tech organizations will not be a simple solution. This proposal has gained traction as AI labs face increasing pressure following recent safety incidents. The chief emphasized that true independence is difficult to guarantee when evaluators are embedded within the corporate structure. The warning comes as regulators worldwide debate the best methods for AI safety oversight. Organizations should focus on transparent, external auditing instead.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/embedded-ai-evaluators-wont-be-an-easy-solution-hugging-faces-policy-chief-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Microsoft Flags AI Agents as Insider Threats",
+            "title": "Microsoft Warns AI Agents Pose Insider Threats as Frontier Models Cannot Be Trusted",
+            "content": "Microsoft warns that AI agents deployed by enterprises pose a significant insider threat, as frontier models from labs like OpenAI and Anthropic cannot be fully trusted. The company advises IT leaders to monitor agent interactions with internal systems that fall outside the direct control of the AI provider. This risk escalates as autonomous agents gain the ability to execute multi-step tasks and access sensitive corporate data. Organizations must implement strict access controls, continuous monitoring, and robust auditing protocols to mitigate potential data exfiltration or unauthorized system modifications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "US Fossil Fuel Infrastructure Surges—Renewable Growth Slows",
+            "title": "US Fossil Fuel Infrastructure Surges as Renewable Energy Growth Slows",
+            "content": "The United States is constructing more fossil fuel infrastructure than it has in a decade, while the growth of renewable energy capacity is simultaneously slowing down. This trend coincides with a rapid increase in electricity demand, driven by the expansion of data centers, manufacturing facilities, and the adoption of electric vehicles. The report indicates that this surge in fossil fuel reliance threatens to undermine recent progress toward decarbonization goals. Grid operators and policymakers must address this demand-supply mismatch to prevent increased carbon emissions and potential grid instability.",
             "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1012748/nvidia-rtx-spark-windows-arm-laptops-asus-hp-lenovo-impressions",
+            "sourceUrl": "https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report",
             "relatedResources": []
         },
         {
-            "date": "Oct 16 2026",
-            "headline": "Mark Wahlberg Embraces AI in Film",
-            "title": "Actor Mark Wahlberg Advocates for Ethical AI Use in Filmmaking",
-            "content": "Actor and angel investor Mark Wahlberg has publicly endorsed the use of AI in the film industry, provided it is used to enhance rather than replace human creativity. He specifically stated he is open to the concept of an AI clone carrying on his legacy, provided ethical boundaries are maintained. This stance positions him as a pragmatic advocate for AI integration in Hollywood. The entertainment sector continues to grapple with the economic and artistic implications of generative AI tools. Film producers and directors should establish clear ethical guidelines for AI usage to ensure responsible implementation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/16/mark-wahlberg-on-using-ai-in-film-the-right-way-and-being-open-to-an-ai-clone-carrying-on-his-legacy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 17 2026",
-            "headline": "Meta Removes News Scraping Language",
-            "title": "Meta Revises Terms to Remove Language Allowing AI Training Data Scraping",
-            "content": "Meta is updating its commercial terms to remove language that suggested it could scrape content from news sites and other domains to train its AI models. The removal follows significant public backlash regarding data privacy and intellectual property rights. This revision directly impacts how Meta's large language models (LLMs) ingest public web data. Legal teams and data governance officers must monitor these policy shifts for compliance implications. The move reflects broader industry pressure to clarify data sourcing methodologies for generative AI.",
+            "date": "Oct 19 2026",
+            "headline": "CoreWeave Debt Crisis Threatens Entire AI Industry",
+            "title": "CoreWeave's Distressed Debt Poses Systemic Risk to the AI Industry",
+            "content": "CoreWeave's bonds recently slipped into distressed territory, defined by a 1,000 basis point yield spread over government bonds, raising systemic concerns for the AI sector. The cloud infrastructure provider's financial instability threatens its ability to meet the massive capital demands of AI training and inference workloads. Industry observers warn that a CoreWeave default could disrupt the supply of critical GPU resources, impacting startups and large enterprises alike. Investors and AI developers should closely monitor CoreWeave's liquidity and assess their dependency on its infrastructure.",
             "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1014045/coreweave-stock-debt-sector-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Ex-OpenAI Engineer Faces Spying Charges—Saudi Docs Found",
+            "title": "Accused OpenAI Spy Had \"Saudi Gov Docs\" Folder, FBI Claims",
+            "content": "US authorities fear the Saudi government may facilitate the flight of a former OpenAI engineer facing espionage charges, according to the FBI. Investigators discovered a folder named \"Saudi Gov Docs\" on the engineer's devices, suggesting potential ties to foreign state intelligence. The case highlights the ongoing risk of insider threats and intellectual property theft within the highly competitive AI sector. Companies must enforce strict data loss prevention (DLP) policies and monitor for anomalous data transfers to foreign jurisdictions.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Amazon Challenges Nvidia with TorchNeuron Dev Tool",
+            "title": "Amazon Launches TorchNeuron to Break Nvidia's Hold on PyTorch",
+            "content": "Amazon has introduced TorchNeuron, a new development tool designed to break Nvidia's dominance over the PyTorch ecosystem. The tool aims to optimize AI applications to run on alternative chips, including Amazon's own Trainium and Inferentia silicon. By decoupling developers from proprietary Nvidia hardware, Amazon seeks to lower the barrier to entry for AI model training and deployment on AWS. Developers should evaluate TorchNeuron for workloads requiring cost-effective inference on AWS-native hardware.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Tenstorrent Hits $6.2B Valuation to Scale AI Chips",
+            "title": "Tenstorrent Reaches $6.2B Valuation to Scale Open-Weight AI Chips",
+            "content": "Tenstorrent, an Nvidia challenger, has achieved a $6.2 billion valuation to fund the scaling of its open-weight AI chips. The company raised $1.5 billion in funding to remain independent after drawing acquisition interest earlier this year. This capital injection will accelerate the development of its high-performance computing hardware. The move positions Tenstorrent as a formidable competitor in the AI chip market. Tech leaders should monitor Tenstorrent's progress as a potential alternative to Nvidia's offerings.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Users Use AI to Strip Smart TV Bloatware",
+            "title": "Smart TV Owners Deploy AI Agents to Remove Ads and Tracking",
+            "content": "Smart TV owners are utilizing AI agents to strip away unwanted bloatware, advertisements, and tracking features from their devices. This trend highlights growing consumer frustration with sluggish interfaces and privacy intrusions from smart home ecosystems. By leveraging AI, users can automate the removal of pre-installed applications and restore device performance. This shift indicates a broader demand for user-centric control over connected consumer electronics.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Nvidia Launches Open Models for Private Enterprise AI",
+            "title": "Nvidia Expands Open Model Portfolio for Enterprise and On-Device AI Agents",
+            "content": "Nvidia is advancing enterprise AI adoption by releasing new open models designed for on-premise data centers and on-device private AI agents. The move caters to corporate demand for data sovereignty and reduced reliance on cloud-based artificial intelligence services. These models aim to enable secure, localized inference for sensitive enterprise workloads. Nvidia's strategy positions it to capture market share in the burgeoning private AI infrastructure sector.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Gov. Pritzker Weighs AI's 100-Year Lifespan Promise",
+            "title": "Illinois Governor JB Pritzker Discusses AI's Potential and Existential Risks",
+            "content": "Illinois Governor JB Pritzker highlighted the dual-edged nature of artificial intelligence, suggesting it could extend human lifespans to 100 years while simultaneously posing threats comparable to nuclear weapons. In a recent discussion, Pritzker emphasized the urgent need for robust privacy protections and regulatory frameworks. He argued that these technological and privacy issues are driving an unexpected political realignment ahead of upcoming midterm elections. The discussion underscores the growing intersection of AI policy, tech regulation, and electoral politics.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1012839/pritzker-ai-privacy-data-centers-flock-congress-laws",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "AI Agent Army Breaches 100+ Sites",
+            "title": "Autonomous AI Agents Used in Large-Scale Cyberattacks",
+            "content": "A hacker successfully breached more than 100 websites using an autonomous army of AI agents, according to findings from the AI security firm Norforge. The automated agents operated with minimal human intervention, exploiting vulnerabilities across multiple corporate networks. Victims included major industrial manufacturers such as John Deere, SharkNinja, and Cummins, though specific vulnerabilities were not publicly disclosed. Norforge's report highlights the emerging threat of fully autonomous AI-driven cyberattacks against critical infrastructure. Organizations must review their security postures to defend against AI-powered intrusion methods.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Laplace Intelligence Pre-Empts Autonomous Vehicle Failures",
+            "title": "Startup Laplace Intelligence Uses AI to Red-Team Autonomous Vehicles",
+            "content": "University of Michigan spinout Laplace Intelligence is utilizing AI agents and interactive simulation to red-team robots and self-driving cars before they are deployed in the real world. The startup competes in the Startup Battlefield at TechCrunch Disrupt, focusing on stress-testing autonomous systems for critical vulnerabilities. By simulating complex environmental interactions, Laplace Intelligence identifies safety flaws that traditional testing might miss. This proactive approach is essential for ensuring the reliability of autonomous technologies in high-stakes environments.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 18 2026",
+            "headline": "Disney Hires Majority of Character.AI Workforce",
+            "title": "Disney Acquires Majority of Character.AI's Talent in Strategic Talent Acquisition",
+            "content": "Disney has secured the majority of Character.AI's workforce through a formal acquisition agreement. The filing confirms that most employees who received job offers accepted them, though the deal remains a stalking horse bid subject to higher offers. This strategic move bolsters Disney's AI capabilities and competitive positioning in the generative AI market. The acquisition follows Character.AI's recent $41 million funding round at a $1 billion valuation. The broader industry trend shows tech giants aggressively acquiring AI startups for talent and intellectual property.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 18 2026",
+            "headline": "Anthropic Donates 5% Shares to Public Benefit Fund",
+            "title": "Anthropic Commits 5% of Shares to Public Benefit Fund",
+            "content": "Anthropic has pledged to commit 5% of its company shares to a dedicated public benefit fund. This initiative aligns with the company's stated mission to ensure artificial general intelligence benefits all of humanity. The move represents a notable corporate governance approach in the AI sector, potentially influencing industry standards. Anthropic's commitment demonstrates growing emphasis on ethical AI development and stakeholder capitalism. The fund's structure and impact metrics remain to be fully disclosed.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 18 2026",
+            "headline": "Philly Woman Arrested Blocking Delivery Robot",
+            "title": "Protester Arrested for Blocking Uber Delivery Robot Path",
+            "content": "Carolyn Marvin was arrested in Philadelphia and charged with disorderly conduct after blocking an Uber delivery robot's path. Marvin explicitly stated she was protesting the robot's role in displacing human delivery workers. This incident highlights growing tensions between autonomous delivery systems and labor markets. The case raises questions about public space usage, autonomous vehicle regulations, and worker displacement. Cities and companies must develop clearer policies for integrating delivery robots into urban environments.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
             "relatedResources": []
         }
     ],
@@ -523,28 +514,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-104935",
-            "dateAdded": "Oct 13, 2026",
-            "vendor": "Ivanti Connect Secure",
-            "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-96951",
-            "dateAdded": "Oct 13, 2026",
-            "vendor": "Microsoft Windows",
-            "description": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network.",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
             "isZeroDay": false
         }
     ],

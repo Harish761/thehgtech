@@ -920,7 +920,8 @@ body.threat-intel-page .header .m-theme-toggle {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.2s var(--ti-ease-spring), border-color 0.2s ease;
+    cursor: pointer;
+    transition: transform 0.2s var(--ti-ease-spring), border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .ti-feed-card:hover {
@@ -1044,11 +1045,13 @@ body.threat-intel-page .header .m-theme-toggle {
     border: 1px solid var(--ti-separator-subtle);
     border-radius: var(--ti-radius-md);
     padding: 0.85rem 1rem;
-    transition: border-color 0.15s ease;
+    cursor: pointer;
+    transition: border-color 0.15s ease, transform 0.2s var(--ti-ease-spring);
 }
 
 .ti-ai-item:hover {
     border-color: var(--ti-border-strong);
+    transform: translateY(-2px);
 }
 
 .ti-ai-item__header {
@@ -1094,7 +1097,8 @@ body.threat-intel-page .header .m-theme-toggle {
     border-radius: var(--ti-radius-md);
     padding: 1.25rem;
     box-shadow: var(--ti-card-shadow);
-    transition: transform 0.2s var(--ti-ease-spring);
+    cursor: pointer;
+    transition: transform 0.2s var(--ti-ease-spring), border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .ti-ransom-card:hover {
@@ -1557,5 +1561,384 @@ body.light-mode .logo-text-base {
     color: #0F172A;
 }
 /* /HG-THREAT-INTEL-V1 */
+
+/* ==========================================================================
+   11. SOC ANALYST OVERVIEW DASHBOARD & DOSSIER SYSTEM
+   ========================================================================== */
+
+.ti-soc-posture-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-lg);
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 1.75rem;
+    box-shadow: var(--ti-card-shadow);
+}
+
+.ti-soc-posture-status {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ti-status-pulsar {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--ti-accent-emerald);
+    box-shadow: 0 0 0 0 rgba(46, 213, 115, 0.7);
+    animation: tiPulse 2s infinite;
+    flex-shrink: 0;
+}
+
+.ti-status-pulsar--elevated {
+    background: var(--ti-accent-amber);
+    box-shadow: 0 0 0 0 rgba(255, 171, 0, 0.7);
+    animation: tiPulseAmber 2s infinite;
+}
+
+@keyframes tiPulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 213, 115, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(46, 213, 115, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 213, 115, 0); }
+}
+
+@keyframes tiPulseAmber {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 171, 0, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255, 171, 0, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 171, 0, 0); }
+}
+
+.ti-soc-posture-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+}
+
+.ti-soc-posture-sub {
+    font-size: 0.82rem;
+    color: var(--ti-text-secondary);
+    margin-top: 0.15rem;
+}
+
+.ti-soc-action-group {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.ti-soc-action-btn {
+    appearance: none;
+    background: var(--ti-fill-quaternary);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-pill);
+    color: var(--ti-text-secondary);
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    transition: all 0.2s var(--ti-ease-spring);
+    font-family: inherit;
+}
+
+.ti-soc-action-btn:hover {
+    background: var(--ti-fill-secondary);
+    border-color: var(--ti-border-strong);
+    color: var(--ti-text-primary);
+    transform: translateY(-1px);
+}
+
+.ti-soc-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.ti-soc-card {
+    background: var(--ti-bg-surface);
+    border: 1px solid var(--ti-separator);
+    border-radius: var(--ti-radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--ti-card-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ti-soc-card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.ti-soc-card__title {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    margin: 0 0 0.3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.ti-soc-card__desc {
+    font-size: 0.82rem;
+    color: var(--ti-text-secondary);
+    margin: 0;
+    line-height: 1.45;
+}
+
+/* Vector Breakdown Bars */
+.ti-vector-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.ti-vector-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--ti-radius-sm);
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator-subtle);
+    transition: all 0.2s var(--ti-ease-spring);
+}
+
+.ti-vector-row:hover {
+    border-color: var(--ti-border-strong);
+    transform: translateX(3px);
+}
+
+.ti-vector-row__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.ti-vector-row__label {
+    font-weight: 600;
+    color: var(--ti-text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ti-vector-row__counts {
+    font-feature-settings: "tnum" 1;
+    color: var(--ti-text-muted);
+    font-size: 0.8rem;
+}
+
+.ti-vector-row__counts strong {
+    color: var(--ti-text-primary);
+    margin-right: 0.35rem;
+}
+
+.ti-vector-track {
+    height: 7px;
+    background: var(--ti-fill-quaternary);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ti-vector-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ti-vector-fill--url { background: var(--ti-accent-blue); }
+.ti-vector-fill--ip { background: var(--ti-accent-amber); }
+.ti-vector-fill--ssl-cert { background: var(--ti-accent-indigo); }
+.ti-vector-fill--hash { background: var(--ti-accent-crimson); }
+.ti-vector-fill--ip-range { background: var(--ti-accent-emerald); }
+
+/* Malware Nexus Grid */
+.ti-malware-nexus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 0.75rem;
+}
+
+.ti-malware-chip {
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator-subtle);
+    border-radius: var(--ti-radius-md);
+    padding: 0.85rem 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transition: all 0.2s var(--ti-ease-spring);
+}
+
+.ti-malware-chip:hover {
+    transform: translateY(-2px);
+    border-color: var(--ti-border-strong);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ti-malware-chip__name {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ti-malware-chip__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.78rem;
+}
+
+.ti-malware-chip__count {
+    font-weight: 700;
+    color: var(--ti-accent-crimson);
+    font-feature-settings: "tnum" 1;
+}
+
+/* Streams (Ransomware & AI) */
+.ti-soc-ransom-stream,
+.ti-soc-ai-stream {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.ti-soc-stream-item {
+    background: var(--ti-bg-base);
+    border: 1px solid var(--ti-separator-subtle);
+    border-radius: var(--ti-radius-md);
+    padding: 0.85rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: all 0.2s var(--ti-ease-spring);
+}
+
+.ti-soc-stream-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--ti-border-strong);
+}
+
+.ti-soc-stream-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.ti-soc-stream-item__title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--ti-text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ti-soc-stream-item__sub {
+    font-size: 0.78rem;
+    color: var(--ti-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ti-soc-stream-item__badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: var(--ti-radius-pill);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Dynamic Dossier Drawer Styles */
+.ti-dossier-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.ti-dossier-section {
+    margin-bottom: 1.25rem;
+}
+
+.ti-dossier-section__title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ti-text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.ti-dossier-victim-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--ti-separator-subtle);
+    border-radius: var(--ti-radius-md);
+    padding: 0.5rem;
+    background: var(--ti-bg-base);
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.ti-dossier-victim-item {
+    font-size: 0.82rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: var(--ti-radius-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ti-text-primary);
+}
+
+.ti-dossier-victim-item:hover {
+    background: var(--ti-fill-quaternary);
+}
+
+@media (max-width: 980px) {
+    .ti-soc-grid-2col {
+        grid-template-columns: 1fr;
+    }
+
+    .ti-soc-posture-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .ti-soc-action-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
 
 

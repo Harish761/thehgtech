@@ -4,8 +4,8 @@
   "period": "Last 7 days",
   "provenance": "Extortion leak site disclosure monitoring via Ransomware.live OSINT feed",
   "verification_note": "Victim notices reflect claims published by extortion groups on dark web leak sites and do not constitute independent forensics or incident confirmation.",
-  "total_groups": 32,
-  "total_victims": 200,
+  "total_groups": 34,
+  "total_victims": 205,
   "disclosures_today": 7,
   "top_threat_actor": "N0N",
   "top_target_sector": "Hospitality",
@@ -2555,7 +2555,7 @@
     },
     {
       "name": "Iah6477",
-      "count": 6,
+      "count": 7,
       "victims": [
         {
           "id": "912fa03e4042",
@@ -2646,24 +2646,43 @@
           "status": "AI generated",
           "description_snippet": "[AI generated] Buckle, Inc. is a United States-based specialty retailer operating in the apparel and fashion industry. Founded in 1948 and headquartered in Kearney, Nebraska, the company sells clothin",
           "source": "ransomware.live/rss"
+        },
+        {
+          "id": "bc5a308f4891",
+          "group_name": "Iah6477",
+          "victim_name": "camden-living",
+          "discovered": "2026-10-15T11:04:08+00:00",
+          "discovered_date": "2026-10-15",
+          "post_url": "https://www.ransomware.live/id/Y2FtZGVuLWxpdmluZ0BpYWg2NDc3",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "sector": "Professional Services",
+          "domain": null,
+          "status": "DISCLOSED",
+          "description_snippet": "camden-living disclosed by Iah6477",
+          "source": "ransomware.live/legacy"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Professional Services"
+      ],
       "countries": [
+        "United Kingdom",
         "United States"
       ],
       "country_codes": [
+        "GB",
         "US"
       ],
       "trend": "down",
       "trend_label": "Decelerating",
       "recent_velocity": {
         "last_3_days": 1,
-        "prior_3_days": 5
+        "prior_3_days": 6
       },
       "daily_counts": [
         0,
-        5,
+        6,
         0,
         0,
         1,
@@ -2679,7 +2698,7 @@
         "2026-10-19",
         "2026-10-20"
       ],
-      "first_seen": "2026-10-15T11:04:44+00:00",
+      "first_seen": "2026-10-15T11:04:08+00:00",
       "last_seen": "2026-10-18T12:37:04+00:00"
     },
     {
@@ -3205,6 +3224,92 @@
       "last_seen": "2026-10-19T20:55:00+00:00"
     },
     {
+      "name": "Emperador",
+      "count": 3,
+      "victims": [
+        {
+          "id": "debaf2bd0c69",
+          "group_name": "Emperador",
+          "victim_name": "GTL Concreto e Logística LTDA",
+          "discovered": "2026-10-19T10:22:09+00:00",
+          "discovered_date": "2026-10-19",
+          "post_url": "https://www.ransomware.live/id/R1RMIENvbmNyZXRvIGUgTG9nw61zdGljYSBMVERBQGVtcGVyYWRvcg",
+          "country": "Brazil",
+          "country_code": "BR",
+          "sector": null,
+          "domain": null,
+          "status": "Sector: Manufacturing, Finance, Transportation",
+          "description_snippet": "Production and preparation of ready-mixed concrete \nand mortars. Production of cement products for \nconstruction. Construction of buildings and other \nconstruction works. Rental of vehicles and indust",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "7811fd2f8dbe",
+          "group_name": "Emperador",
+          "victim_name": "Luzco Ilumination",
+          "discovered": "2026-10-18T06:52:23+00:00",
+          "discovered_date": "2026-10-18",
+          "post_url": "https://www.ransomware.live/id/THV6Y28gSWx1bWluYXRpb25AZW1wZXJhZG9y",
+          "country": null,
+          "country_code": null,
+          "sector": null,
+          "domain": null,
+          "status": "Sector: Manufacturing, Finance",
+          "description_snippet": "Spanish company that specializes in professional \nlighting for shops and commercial spaces.\nThere are many customer documents and employee data. [Sector: Manufacturing, Finance]",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "5769171a00b6",
+          "group_name": "Emperador",
+          "victim_name": "MPI LTDA",
+          "discovered": "2026-10-15T08:51:31+00:00",
+          "discovered_date": "2026-10-15",
+          "post_url": "https://www.ransomware.live/id/TVBJIExUREFAZW1wZXJhZG9y",
+          "country": "Brazil",
+          "country_code": "BR",
+          "sector": "Energy & Utilities",
+          "domain": null,
+          "status": "DISCLOSED",
+          "description_snippet": "MPI LTDA disclosed by Emperador",
+          "source": "ransomware.live/legacy"
+        }
+      ],
+      "industries": [
+        "Energy & Utilities"
+      ],
+      "countries": [
+        "Brazil"
+      ],
+      "country_codes": [
+        "BR"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "first_seen": "2026-10-15T08:51:31+00:00",
+      "last_seen": "2026-10-19T10:22:09+00:00"
+    },
+    {
       "name": "Vexy Ransomware",
       "count": 3,
       "victims": [
@@ -3599,75 +3704,6 @@
       "last_seen": "2026-10-19T22:23:20+00:00"
     },
     {
-      "name": "Emperador",
-      "count": 2,
-      "victims": [
-        {
-          "id": "debaf2bd0c69",
-          "group_name": "Emperador",
-          "victim_name": "GTL Concreto e Logística LTDA",
-          "discovered": "2026-10-19T10:22:09+00:00",
-          "discovered_date": "2026-10-19",
-          "post_url": "https://www.ransomware.live/id/R1RMIENvbmNyZXRvIGUgTG9nw61zdGljYSBMVERBQGVtcGVyYWRvcg",
-          "country": "Brazil",
-          "country_code": "BR",
-          "sector": null,
-          "domain": null,
-          "status": "Sector: Manufacturing, Finance, Transportation",
-          "description_snippet": "Production and preparation of ready-mixed concrete \nand mortars. Production of cement products for \nconstruction. Construction of buildings and other \nconstruction works. Rental of vehicles and indust",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "7811fd2f8dbe",
-          "group_name": "Emperador",
-          "victim_name": "Luzco Ilumination",
-          "discovered": "2026-10-18T06:52:23+00:00",
-          "discovered_date": "2026-10-18",
-          "post_url": "https://www.ransomware.live/id/THV6Y28gSWx1bWluYXRpb25AZW1wZXJhZG9y",
-          "country": null,
-          "country_code": null,
-          "sector": null,
-          "domain": null,
-          "status": "Sector: Manufacturing, Finance",
-          "description_snippet": "Spanish company that specializes in professional \nlighting for shops and commercial spaces.\nThere are many customer documents and employee data. [Sector: Manufacturing, Finance]",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "Brazil"
-      ],
-      "country_codes": [
-        "BR"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "daily_labels": [
-        "2026-10-14",
-        "2026-10-15",
-        "2026-10-16",
-        "2026-10-17",
-        "2026-10-18",
-        "2026-10-19",
-        "2026-10-20"
-      ],
-      "first_seen": "2026-10-18T06:52:23+00:00",
-      "last_seen": "2026-10-19T10:22:09+00:00"
-    },
-    {
       "name": "Aurora",
       "count": 2,
       "victims": [
@@ -3806,6 +3842,71 @@
       ],
       "first_seen": "2026-10-18T19:06:17+00:00",
       "last_seen": "2026-10-18T19:06:57+00:00"
+    },
+    {
+      "name": "Nightspire",
+      "count": 2,
+      "victims": [
+        {
+          "id": "2629e166e393",
+          "group_name": "Nightspire",
+          "victim_name": "U**IN* Group",
+          "discovered": "2026-10-18T05:20:20+00:00",
+          "discovered_date": "2026-10-18",
+          "post_url": "https://www.ransomware.live/id/VSoqSU4qIEdyb3VwQG5pZ2h0c3BpcmU",
+          "country": null,
+          "country_code": null,
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Data is not available now.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "2db6de339027",
+          "group_name": "Nightspire",
+          "victim_name": "S*o**n* Public Schools",
+          "discovered": "2026-10-15T10:05:25+00:00",
+          "discovered_date": "2026-10-15",
+          "post_url": "https://www.ransomware.live/id/UypvKipuKiBQdWJsaWMgU2Nob29sc0BuaWdodHNwaXJl",
+          "country": null,
+          "country_code": null,
+          "sector": null,
+          "domain": null,
+          "status": "DISCLOSED",
+          "description_snippet": "S*o**n* Public Schools disclosed by Nightspire",
+          "source": "ransomware.live/legacy"
+        }
+      ],
+      "industries": [],
+      "countries": [],
+      "country_codes": [],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "first_seen": "2026-10-15T10:05:25+00:00",
+      "last_seen": "2026-10-18T05:20:20+00:00"
     },
     {
       "name": "Wallstreet",
@@ -4087,56 +4188,6 @@
       "last_seen": "2026-10-19T13:25:56+00:00"
     },
     {
-      "name": "Nightspire",
-      "count": 1,
-      "victims": [
-        {
-          "id": "2629e166e393",
-          "group_name": "Nightspire",
-          "victim_name": "U**IN* Group",
-          "discovered": "2026-10-18T05:20:20+00:00",
-          "discovered_date": "2026-10-18",
-          "post_url": "https://www.ransomware.live/id/VSoqSU4qIEdyb3VwQG5pZ2h0c3BpcmU",
-          "country": null,
-          "country_code": null,
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Data is not available now.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [],
-      "country_codes": [],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-10-14",
-        "2026-10-15",
-        "2026-10-16",
-        "2026-10-17",
-        "2026-10-18",
-        "2026-10-19",
-        "2026-10-20"
-      ],
-      "first_seen": "2026-10-18T05:20:20+00:00",
-      "last_seen": "2026-10-18T05:20:20+00:00"
-    },
-    {
       "name": "Eclipse",
       "count": 1,
       "victims": [
@@ -4405,6 +4456,114 @@
       ],
       "first_seen": "2026-10-15T13:20:22+00:00",
       "last_seen": "2026-10-15T13:20:22+00:00"
+    },
+    {
+      "name": "Blacknevas",
+      "count": 1,
+      "victims": [
+        {
+          "id": "3693085d18fd",
+          "group_name": "Blacknevas",
+          "victim_name": "Amity University Dubai",
+          "discovered": "2026-10-15T07:54:12+00:00",
+          "discovered_date": "2026-10-15",
+          "post_url": "https://www.ransomware.live/id/QW1pdHkgVW5pdmVyc2l0eSBEdWJhaUBibGFja25ldmFz",
+          "country": "United Arab Emirates",
+          "country_code": "AE",
+          "sector": null,
+          "domain": null,
+          "status": "DISCLOSED",
+          "description_snippet": "Amity University Dubai disclosed by Blacknevas",
+          "source": "ransomware.live/legacy"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "United Arab Emirates"
+      ],
+      "country_codes": [
+        "AE"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 0,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "first_seen": "2026-10-15T07:54:12+00:00",
+      "last_seen": "2026-10-15T07:54:12+00:00"
+    },
+    {
+      "name": "Spacebears",
+      "count": 1,
+      "victims": [
+        {
+          "id": "68ad16a2cf83",
+          "group_name": "Spacebears",
+          "victim_name": "Alma Center Servizi Medicali S.r.l.",
+          "discovered": "2026-10-15T06:05:43+00:00",
+          "discovered_date": "2026-10-15",
+          "post_url": "https://www.ransomware.live/id/QWxtYSBDZW50ZXIgU2Vydml6aSBNZWRpY2FsaSBTLnIubC5Ac3BhY2ViZWFycw",
+          "country": "Italy",
+          "country_code": "IT",
+          "sector": null,
+          "domain": null,
+          "status": "DISCLOSED",
+          "description_snippet": "Alma Center Servizi Medicali S.r.l. disclosed by Spacebears",
+          "source": "ransomware.live/legacy"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "Italy"
+      ],
+      "country_codes": [
+        "IT"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 0,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-14",
+        "2026-10-15",
+        "2026-10-16",
+        "2026-10-17",
+        "2026-10-18",
+        "2026-10-19",
+        "2026-10-20"
+      ],
+      "first_seen": "2026-10-15T06:05:43+00:00",
+      "last_seen": "2026-10-15T06:05:43+00:00"
     }
   ],
   "victims": [
@@ -7407,6 +7566,81 @@
       "status": "AI generated",
       "description_snippet": "[AI generated] Buckle, Inc. is a United States-based specialty retailer operating in the apparel and fashion industry. Founded in 1948 and headquartered in Kearney, Nebraska, the company sells clothin",
       "source": "ransomware.live/rss"
+    },
+    {
+      "id": "bc5a308f4891",
+      "group_name": "Iah6477",
+      "victim_name": "camden-living",
+      "discovered": "2026-10-15T11:04:08+00:00",
+      "discovered_date": "2026-10-15",
+      "post_url": "https://www.ransomware.live/id/Y2FtZGVuLWxpdmluZ0BpYWg2NDc3",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "sector": "Professional Services",
+      "domain": null,
+      "status": "DISCLOSED",
+      "description_snippet": "camden-living disclosed by Iah6477",
+      "source": "ransomware.live/legacy"
+    },
+    {
+      "id": "2db6de339027",
+      "group_name": "Nightspire",
+      "victim_name": "S*o**n* Public Schools",
+      "discovered": "2026-10-15T10:05:25+00:00",
+      "discovered_date": "2026-10-15",
+      "post_url": "https://www.ransomware.live/id/UypvKipuKiBQdWJsaWMgU2Nob29sc0BuaWdodHNwaXJl",
+      "country": null,
+      "country_code": null,
+      "sector": null,
+      "domain": null,
+      "status": "DISCLOSED",
+      "description_snippet": "S*o**n* Public Schools disclosed by Nightspire",
+      "source": "ransomware.live/legacy"
+    },
+    {
+      "id": "5769171a00b6",
+      "group_name": "Emperador",
+      "victim_name": "MPI LTDA",
+      "discovered": "2026-10-15T08:51:31+00:00",
+      "discovered_date": "2026-10-15",
+      "post_url": "https://www.ransomware.live/id/TVBJIExUREFAZW1wZXJhZG9y",
+      "country": "Brazil",
+      "country_code": "BR",
+      "sector": "Energy & Utilities",
+      "domain": null,
+      "status": "DISCLOSED",
+      "description_snippet": "MPI LTDA disclosed by Emperador",
+      "source": "ransomware.live/legacy"
+    },
+    {
+      "id": "3693085d18fd",
+      "group_name": "Blacknevas",
+      "victim_name": "Amity University Dubai",
+      "discovered": "2026-10-15T07:54:12+00:00",
+      "discovered_date": "2026-10-15",
+      "post_url": "https://www.ransomware.live/id/QW1pdHkgVW5pdmVyc2l0eSBEdWJhaUBibGFja25ldmFz",
+      "country": "United Arab Emirates",
+      "country_code": "AE",
+      "sector": null,
+      "domain": null,
+      "status": "DISCLOSED",
+      "description_snippet": "Amity University Dubai disclosed by Blacknevas",
+      "source": "ransomware.live/legacy"
+    },
+    {
+      "id": "68ad16a2cf83",
+      "group_name": "Spacebears",
+      "victim_name": "Alma Center Servizi Medicali S.r.l.",
+      "discovered": "2026-10-15T06:05:43+00:00",
+      "discovered_date": "2026-10-15",
+      "post_url": "https://www.ransomware.live/id/QWxtYSBDZW50ZXIgU2Vydml6aSBNZWRpY2FsaSBTLnIubC5Ac3BhY2ViZWFycw",
+      "country": "Italy",
+      "country_code": "IT",
+      "sector": null,
+      "domain": null,
+      "status": "DISCLOSED",
+      "description_snippet": "Alma Center Servizi Medicali S.r.l. disclosed by Spacebears",
+      "source": "ransomware.live/legacy"
     }
   ]
 }

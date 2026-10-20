@@ -268,6 +268,44 @@ class TestThreatIntelPipeline(unittest.TestCase):
         self.assertIn('window.threatIntelData = {', content)
         self.assertIn('overview', content)
         self.assertIn('vendors', content)
+        import re
+        import json
+        match = re.search(r'window\.threatIntelData = ({.*?});', content, re.DOTALL)
+        self.assertIsNotNone(match, "threat-intel.js must define window.threatIntelData")
+        payload = json.loads(match.group(1))
+        overview = payload.get('overview', [])
+        total_iocs = payload.get('stats', {}).get('totalIOCs', 0)
+        self.assertGreater(len(overview), 0, "threat-intel.js overview must not be empty")
+        self.assertGreater(total_iocs, 0, "threat-intel.js stats.totalIOCs must be greater than 0")
+
+    def test_run_daily_preserves_overview_and_iocs(self):
+        """Regression test: verify run_daily does not zero out overview or stats"""
+        import re
+        import json
+        from fetch_threat_intel import generate_js
+        dummy_state = {
+            'lastUpdated': '2026-10-18T12:00:00+05:30',
+            'lastUpdatedFormatted': 'Oct 18, 2026',
+            'stats': {'totalIOCs': 500, 'byType': {'url': 500}, 'byVendor': {'OpenPhish': 500}},
+            'overview': [{'indicator': 'hxxps://test[.]com', 'type': 'url', 'campaign': 'Test'}],
+            'vendors': {
+                'OpenPhish': {
+                    'description': 'Test',
+                    'website': 'https://openphish.com',
+                    'updateFrequency': '15m',
+                    'stats': {'total': 500},
+                    'types': ['url'],
+                    'sampleIndicators': ['hxxps://test[.]com']
+                }
+            }
+        }
+        # Calling generate_js with bare metadata should not clobber existing overview and stats
+        res = generate_js(dummy_state)
+        match = re.search(r'window\.threatIntelData = ({.*?});', res, re.DOTALL)
+        self.assertIsNotNone(match)
+        data = json.loads(match.group(1))
+        self.assertEqual(len(data.get('overview', [])), 1)
+        self.assertEqual(data.get('stats', {}).get('totalIOCs'), 500)
 
 if __name__ == '__main__':
     unittest.main()
