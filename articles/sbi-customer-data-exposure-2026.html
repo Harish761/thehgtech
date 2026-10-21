@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>The SBI Data Exposure: What 3,897 PII Records Reveal | TheHGTech</title>
+    <meta name="description"
+        content="SBI disclosed that 3,897 customer records with PII were found in ~375,000 records on the dark web. Analysis of what is confirmed, what is alleged, what the counts mean, and what defenders should investigate.">
+    <meta name="keywords"
+        content="SBI data exposure, State Bank of India, dark web, customer data, PII, CIF, CERT-In, Defence Cyber Agency, Regulation 30, incident response, vishing, DPDP Act">
+    <meta name="author" content="TheHGTech Security Research">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html">
+    <meta property="og:title" content="The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response">
+    <meta property="og:description"
+        content="SBI found 3,897 customer records with PII in ~375,000 records on the dark web. Source and scope are still under investigation. What is confirmed, alleged, and unknown.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/sbi-customer-data-exposure-2026.jpg">
+    <meta property="og:site_name" content="TheHGTech">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response">
+    <meta name="twitter:description"
+        content="3,897 PII records in ~375,000 examined, per SBI's filing. No attack vector or source confirmed. A defender's guide to the evidence.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/sbi-customer-data-exposure-2026.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response",
+  "description": "SBI disclosed that 3,897 customer records with PII were found in ~375,000 records on the dark web. Analysis of what is confirmed, what is alleged, what the counts mean, and what defenders should investigate.",
+  "author": {
+    "@type": "Person",
+    "@id": "https://thehgtech.com/about.html#harish-g",
+    "name": "Harish G",
+    "url": "https://thehgtech.com/about.html",
+    "sameAs": [
+      "https://www.linkedin.com/in/harish-g-2216955b/",
+      "https://twitter.com/thehgtech"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "url": "https://thehgtech.com"
+  },
+  "datePublished": "2026-10-22",
+  "dateModified": "2026-10-22",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html"
+  },
+  "image": "https://thehgtech.com/images/articles/sbi-customer-data-exposure-2026.jpg",
+  "articleSection": "Data Breach",
+  "keywords": [
+    "SBI",
+    "State Bank of India",
+    "Data Exposure",
+    "Dark Web",
+    "PII",
+    "CERT-In",
+    "Incident Response",
+    "Social Engineering",
+    "Data Protection",
+    "DPDP Act"
+  ]
+}
+    </script>
+
+    <!-- BreadcrumbList -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://thehgtech.com/articles.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The SBI Data Exposure",
+      "item": "https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html"
+    }
+  ]
+}
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Style System - FULL SET REQUIRED -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #0f1419;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent-cyan: #00D9FF;
+            --accent-red: #FF3D3D;
+            --accent-green: #10b981;
+            --accent-orange: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --accent-blue: #3b82f6;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 1.5rem 120px;
+        }
+
+        .article-header {
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .article-header h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .meta-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-critical {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        .badge-apple {
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            color: white;
+        }
+
+        .badge-zeroday {
+            background: var(--accent-orange);
+            color: white;
+        }
+
+        .featured-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            margin: 2.5rem 0 1rem;
+            font-size: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        h3 {
+            color: var(--text-primary);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box {
+            background: rgba(255, 61, 61, 0.08);
+            border-left: 4px solid var(--accent-red);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .info-box {
+            background: rgba(0, 217, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .success-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--accent-green);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .technical-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .technical-box h3 {
+            color: var(--accent-cyan);
+            margin-top: 0;
+        }
+
+        pre {
+            background: #0d1117;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: rgba(255, 61, 61, 0.15);
+            color: var(--accent-red);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        .ascii-diagram {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(255, 61, 61, 0.1));
+            border: 1px solid var(--accent-red);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .cvss-box {
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.2), rgba(245, 158, 11, 0.1));
+            border: 2px solid var(--accent-red);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cvss-score {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent-red);
+        }
+
+        .chain-callout {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(255, 61, 61, 0.05));
+            border: 1px solid var(--accent-purple);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .chain-callout .emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .chain-callout h3 {
+            color: var(--accent-purple);
+            margin-top: 0;
+        }
+
+        .device-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .device-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .device-card.vulnerable {
+            border-color: var(--accent-red);
+        }
+
+        .device-card.patched {
+            border-color: var(--accent-green);
+        }
+
+        .device-card h4 {
+            margin: 0 0 0.5rem;
+        }
+
+        .device-card.vulnerable h4 {
+            color: var(--accent-red);
+        }
+
+        .device-card.patched h4 {
+            color: var(--accent-green);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 1rem 100px;
+            }
+
+            .article-header h1 {
+                font-size: 1.6rem;
+            }
+
+            .device-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Light Mode Overrides */
+        [data-theme="light"] body {
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        [data-theme="light"] .container {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] p,
+        [data-theme="light"] li,
+        [data-theme="light"] td {
+            color: #475569;
+        }
+
+        [data-theme="light"] strong {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] h2 {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] h3 {
+            color: #1e293b;
+        }
+
+        [data-theme="light"] pre {
+            background: #f1f5f9;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] code {
+            color: #059669;
+        }
+
+        [data-theme="light"] .technical-box {
+            background: #f8fafc;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] .technical-box h3 {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] .warning-box {
+            background: rgba(255, 61, 61, 0.05);
+        }
+
+        [data-theme="light"] .info-box {
+            background: rgba(0, 217, 255, 0.05);
+        }
+
+        [data-theme="light"] .success-box {
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        [data-theme="light"] table {
+            background: #f8fafc;
+        }
+
+        [data-theme="light"] th {
+            background: rgba(255, 61, 61, 0.08);
+            color: #dc2626;
+        }
+
+        [data-theme="light"] th,
+        [data-theme="light"] td {
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] .ascii-diagram {
+            background: linear-gradient(135deg, rgba(241, 245, 249, 0.9), rgba(255, 61, 61, 0.05));
+            border-color: #ef4444;
+        }
+
+        [data-theme="light"] .ascii-diagram pre {
+            color: #dc2626;
+            background: transparent;
+            border: none;
+        }
+
+        [data-theme="light"] .cvss-box {
+            background: linear-gradient(135deg, rgba(255, 61, 61, 0.08), rgba(245, 158, 11, 0.04));
+        }
+
+        [data-theme="light"] .chain-callout {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(255, 61, 61, 0.03));
+            border-color: #a78bfa;
+        }
+
+        [data-theme="light"] .device-card {
+            background: #f8fafc;
+            border-color: #e2e8f0;
+        }
+
+        [data-theme="light"] .device-card.vulnerable {
+            border-color: #ef4444;
+        }
+
+        [data-theme="light"] .device-card.patched {
+            border-color: #10b981;
+        }
+
+        [data-theme="light"] a {
+            color: #0891b2;
+        }
+
+        [data-theme="light"] .article-header h1 {
+            background: linear-gradient(135deg, #dc2626, #ea580c);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        [data-theme="light"] footer {
+            background: #f1f5f9 !important;
+            border-color: #e2e8f0 !important;
+        }
+
+        [data-theme="light"] footer p {
+            color: #64748b !important;
+        }
+    </style>
+<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
+
+    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <script>
+        // Inline theme set to avoid FOUC
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.body.classList.add("light-mode");
+            }
+        })();
+    </script>
+    <!-- Google Analytics 4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XL6RCXZJE2');
+    </script>
+        <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement('script');
+            fullres.async = true;
+            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <!-- Advanced Rich Snippet Injection -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What did SBI disclose about the data exposure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In a Regulation 30 filing dated 21 October 2026, SBI said it had experienced an incident involving the loss of certain data. After alerts on 16 October 2026 from its Threat Intelligence Service Provider, the Defence Cyber Agency, and CERT-In, a preliminary analysis of approximately 375,000 records on the dark web identified 3,897 customer records containing personally identifiable information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What information was exposed in the SBI incident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to SBI's filing, the exposed information reportedly included registered mobile numbers, dates of birth, names, gender, email addresses, residential addresses, branch and CIF identifiers, lead IDs, and metadata associated with loan/lead records. Account numbers, balances, passwords, OTPs, card details, PAN, and Aadhaar are not among the listed categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does 3,897 records mean 3,897 customers were affected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. SBI has not said whether the 3,897 records belong to 3,897 different people. The figure is preliminary and counts records containing customer PII, not unique individuals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How did the data reach the dark web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This has not been established. SBI has engaged an independent CERT-In-empanelled agency to determine the source and extent of the exposure. A threat actor using the name Siriusim claimed the leak on BreachForums, but SBI's filing does not name any actor, forum, system, or attack technique."
+      }
+    }
+  ]
+}
+    </script>
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <script src="/theme-toggle.js" defer></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response",
+  "description": "SBI disclosed that 3,897 customer records with PII were found in ~375,000 records on the dark web. Analysis of what is confirmed, what is alleged, what the counts mean, and what defenders should investigate.",
+  "image": "https://thehgtech.com/images/articles/sbi-customer-data-exposure-2026.jpg",
+  "author": {
+    "@type": "Person",
+    "@id": "https://thehgtech.com/about.html#harish-g",
+    "name": "Harish G",
+    "url": "https://thehgtech.com/about.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/images/logo-dark.png"
+    }
+  },
+  "datePublished": "2026-10-22",
+  "dateModified": "2026-10-22",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Articles",
+      "item": "https://thehgtech.com/articles.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The SBI Data Exposure",
+      "item": "https://thehgtech.com/articles/sbi-customer-data-exposure-2026.html"
+    }
+  ]
+}
+    </script>
+</head>
+
+<body>
+    <!-- SEO Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
+      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
+        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
+        <li style="color:#6b7084;" aria-hidden="true">›</li>
+        <li style="color:#ffffff;" aria-current="page">The SBI Data Exposure: What 3,897 PII Records on the Dark…</li>
+      </ol>
+    </nav>
+    <!-- Mobile Header -->
+
+
+
+</div>
+
+    <!-- Desktop Header -->
+    
+
+</div>
+
+    
+
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+        <!-- Search triggers Command Palette -->
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </button>
+        <!-- Hamburger Menu Toggle -->
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</header>
+
+<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <!-- Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
+
+<header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
+                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
+                    <span class="logo-text">TheHGTech</span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation">
+                <a href="/index.html#news">News</a>
+
+                <!-- Intelligence Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span
+                                        class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                        <a href="/hacker-chatter.html" class="dropdown-item">
+                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Resources Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
+                                    <span class="dropdown-badge popular">40+</span>
+                                </div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                            </div>
+                        </a>
+                        
+                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FF6B35;">
+                                    n8n Workflows
+                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    GRC Assessment
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tools Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 250px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">
+                                    ISO 27001 GRC Tool
+                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
+                                </div>
+                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- About Dropdown -->
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
+                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 230px;">
+                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
+                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                            </div>
+                        </a>
+                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
+                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Contact</div>
+                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Follow Links -->
+                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+                <!-- Search Button -->
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/articles.html" class="back-link"
+            style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
+            <i class="fas fa-arrow-left"></i> Back to Articles
+        </a>
+
+        
+
+        <article>
+            <!-- Mobile Back Button -->
+            <a href="/articles.html" class="back-link" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent-cyan, #00D9FF); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.95rem; background: rgba(0, 217, 255, 0.1); padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(0, 217, 255, 0.2);">
+                <i class="fas fa-arrow-left"></i> Back to Articles
+            </a>
+
+            <!-- Article Header -->
+            <header class="article-header">
+                <div style="margin-bottom: 1rem;">
+                    <span class="badge" style="background: rgba(245, 158, 11, 0.12); color: var(--accent-amber); border: 1px solid rgba(245, 158, 11, 0.3);"><i class="fas fa-database"></i> DATA EXPOSURE</span>
+                    <span class="badge" style="background: rgba(0, 217, 255, 0.1); color: var(--accent-cyan); border: 1px solid rgba(0, 217, 255, 0.3);"><i class="fas fa-university"></i> BANKING SECTOR</span>
+                    <span class="badge" style="background: rgba(168, 85, 247, 0.1); color: var(--accent-purple); border: 1px solid rgba(168, 85, 247, 0.3);"><i class="fas fa-search"></i> INVESTIGATION ONGOING</span>
+                </div>
+                <h1 style="font-size: 2.3rem; line-height: 1.25; margin-bottom: 1rem;">The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response</h1>
+                <p style="font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                    State Bank of India has disclosed that a preliminary analysis of roughly 375,000 records on the dark web found 3,897 customer records containing personal information. The source, authenticity, and full extent of the data are still under investigation. This analysis separates what SBI has confirmed from what has been claimed, and sets out what defenders should examine.
+                </p>
+                <div class="meta-info" style="display: flex; gap: 1.5rem; justify-content: center; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <span><i class="far fa-calendar-alt"></i> October 22, 2026</span>
+                    <span><i class="fas fa-clock"></i> 19 min read</span>
+                    <span><i class="fas fa-user-shield"></i> <a href="/about.html#harish" rel="author" style="color:inherit; text-decoration:none;">Harish G</a> · TheHGTech Security Research</span>
+                </div>
+            </header>
+
+            <!-- Featured Image -->
+            <img src="/images/articles/sbi-customer-data-exposure-2026.jpg"
+                 alt="The SBI Data Exposure: What the Reported Customer Records Reveal About Data Security and Breach Response"
+                 class="featured-image"
+                 style="width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--glass-border); margin-bottom: 2rem;"
+                 loading="eager">
+
+            <!-- Status Callout -->
+            <div class="cvss-box" style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; text-align: center;">
+                <div class="cvss-score" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-amber);">CONFIRMED DATA LOSS · SOURCE UNDETERMINED</div>
+                <p style="margin: 0.5rem 0 0; color: var(--text-primary); font-weight: 600; font-size: 1.05rem;">
+                    3,897 customer records with PII identified in ~375,000 records examined (preliminary, per SBI)
+                </p>
+                <p style="margin: 0.5rem 0 0; color: var(--text-secondary); font-size: 0.9rem;">
+                    Status last checked: 22 October 2026, 00:05 IST · No attack vector, attacker, or affected system has been named by SBI
+                </p>
+            </div>
+
+            <!-- BLUF / Executive Takeaways Box -->
+            <div class="bluf-box" style="background: rgba(0, 217, 255, 0.05); border: 1px solid rgba(0, 217, 255, 0.25); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                <h3 style="color: var(--accent-cyan); margin-top: 0; font-size: 1.25rem;"><i class="fas fa-bolt" style="margin-right: 8px;"></i>Key Takeaways</h3>
+                <ul style="margin-bottom: 0; padding-left: 1.2rem; line-height: 1.7; color: var(--text-primary);">
+                    <li><strong>What SBI confirmed:</strong> In a <a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">Regulation 30 filing dated 21 October 2026</a>, SBI said it "has experienced an incident involving the loss of certain data" and that 3,897 customer records containing PII were identified during preliminary analysis of approximately 375,000 records on the dark web.</li>
+                    <li><strong>What the data reportedly contains:</strong> Registered mobile numbers, dates of birth, names, gender, email addresses, residential addresses, branch and CIF identifiers, lead IDs, and metadata associated with loan/lead records. SBI itself uses the word "reportedly".</li>
+                    <li><strong>What is not established:</strong> How the data left SBI's control, whether any SBI system was breached, whether a vendor or subsidiary was involved, how many unique customers are affected, and what the remaining ~371,000 records contain.</li>
+                    <li><strong>What is alleged, not confirmed:</strong> A threat actor using the name "Siriusim" claimed on BreachForums to have released 375,000 CSV rows and 2,722 PDF documents, including loan applications and account-opening forms. SBI's filing does not name the actor, the forum, or the PDFs.</li>
+                    <li><strong>Realistic risk:</strong> The listed fields are well suited to targeted impersonation of the bank. No fraud, fund loss, or credential compromise has been reported.</li>
+                </ul>
+            </div>
+
+            <!-- What Security Teams Should Do Now -->
+            <div class="info-box" style="background: rgba(16, 185, 129, 0.05); border-left: 4px solid #10b981; padding: 1.25rem; margin: 0 0 2.5rem; border-radius: 0 8px 8px 0;">
+                <strong style="color: #10b981; font-size: 1.1rem;"><i class="fas fa-clipboard-check"></i> What Security Teams Should Do Now</strong>
+                <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.2rem; line-height: 1.7;">
+                    <li><strong>Fraud and contact-centre teams (any Indian bank or NBFC):</strong> brief agents that callers may hold accurate customer names, dates of birth, addresses, branch and CIF details. Possession of these details must not be treated as proof of identity.</li>
+                    <li><strong>SOC teams:</strong> review access and export activity on CRM, lead-management, and loan-origination platforms, including vendor and direct-selling-agent accounts, for bulk reads and unusual export volumes.</li>
+                    <li><strong>Data-protection teams:</strong> inventory where internal customer identifiers (such as CIF numbers) and lead data are replicated outside core systems, and who can access them.</li>
+                    <li><strong>Incident responders handling a similar claim:</strong> obtain and hash the published dataset under legal guidance, match it against internal records without redistributing PII, and fingerprint the schema to identify the source system before drawing conclusions.</li>
+                </ul>
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="toc-container" style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem;">
+                <h4 style="color: var(--accent-cyan); margin-top: 0; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;"><i class="fas fa-list-ul" style="margin-right: 8px;"></i>Table of Contents</h4>
+                <ol style="padding-left: 1.4rem; line-height: 1.8; margin-bottom: 0;">
+                    <li><a href="#sec-1" style="color: var(--text-secondary); text-decoration: none;">Executive Summary</a></li>
+                    <li><a href="#sec-2" style="color: var(--text-secondary); text-decoration: none;">What Happened</a></li>
+                    <li><a href="#sec-3" style="color: var(--text-secondary); text-decoration: none;">Incident Timeline</a></li>
+                    <li><a href="#sec-4" style="color: var(--text-secondary); text-decoration: none;">What the Record Counts Actually Mean</a></li>
+                    <li><a href="#sec-5" style="color: var(--text-secondary); text-decoration: none;">Data Potentially Exposed: Field-by-Field</a></li>
+                    <li><a href="#sec-6" style="color: var(--text-secondary); text-decoration: none;">Confirmed Facts vs. Unresolved Questions</a></li>
+                    <li><a href="#sec-7" style="color: var(--text-secondary); text-decoration: none;">Realistic Threat Scenarios</a></li>
+                    <li><a href="#sec-8" style="color: var(--text-secondary); text-decoration: none;">Technical Investigation: What Defenders Should Examine</a></li>
+                    <li><a href="#sec-9" style="color: var(--text-secondary); text-decoration: none;">Detection and Response Guidance</a></li>
+                    <li><a href="#sec-10" style="color: var(--text-secondary); text-decoration: none;">Data Protection and Security Control Lessons</a></li>
+                    <li><a href="#sec-11" style="color: var(--text-secondary); text-decoration: none;">Remediation Checklist</a></li>
+                    <li><a href="#sec-12" style="color: var(--text-secondary); text-decoration: none;">Conclusion</a></li>
+                    <li><a href="#sec-13" style="color: var(--text-secondary); text-decoration: none;">Primary Sources and References</a></li>
+                </ol>
+            </div>
+
+            <!-- ARTICLE CONTENT BODY -->
+            <div class="article-content" style="line-height: 1.8; font-size: 1.05rem;">
+
+                <!-- SECTION 1 -->
+                <h2 id="sec-1" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    1. Executive Summary
+                </h2>
+                <p>
+                    On 21 October 2026, State Bank of India (SBI), India's largest commercial bank, told the BSE and NSE that it had "experienced an incident involving the loss of certain data." According to the <a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">filing</a>, the bank received alerts on 16 October 2026 from its Threat Intelligence Service Provider, the Defence Cyber Agency, and CERT-In about the suspected exposure of its customer data on the dark web. A preliminary analysis of approximately 375,000 records identified 3,897 customer records containing personally identifiable information (PII).
+                </p>
+                <p>
+                    The filing is careful in its language, and the analysis should be too. SBI states that a detailed investigation is required "to establish the authenticity and completeness of the exposed data, determine the potential source and extent of the exposure, and assess the associated risks to customers and the Bank." It refers to "the alleged compromise" and has engaged an independent CERT-In-empanelled cybersecurity agency to investigate. It does not name an attacker, a forum, a compromised system, a vendor, or an attack technique.
+                </p>
+                <p>
+                    In practical terms, the incident is best described as a <strong>confirmed loss of a limited set of customer PII whose origin is still undetermined</strong>. It is not, on current evidence, a confirmed compromise of SBI's core banking platform, customer credentials, or funds. The SBI filing says the incident has no material impact on the bank's core business operations, financial performance, or business continuity. As <a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">The Hacker News</a> pointed out, that statement covers the bank's business, not its customers.
+                </p>
+                <p>
+                    The exposed fields matter because they are exactly what a fraudster needs to sound like a bank employee: name, mobile number, date of birth, address, home branch, and an internal customer identifier. That is the most important practical takeaway for defenders, and it does not depend on how the investigation into the source turns out.
+                </p>
+
+                <!-- SECTION 2 -->
+                <h2 id="sec-2" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    2. What Happened
+                </h2>
+                <h3>The threat actor claim (16–17 October)</h3>
+                <p>
+                    On 16 October 2026, the threat-monitoring account CyberPulse56 flagged a claim on X that a threat actor using the name "Siriusim" had leaked customer documents and personal data linked to SBI. As reported by <a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">The Hacker News</a> and <a href="https://www.freepressjournal.in/business/sbi-subsidiaries-customer-data-allegedly-on-dark-web-375-lakh-records-2722-documents-claimed-in-data-breach" target="_blank" rel="noopener">The Free Press Journal</a>, the claim described 375,000 rows in CSV format and 2,722 PDF documents, said to include loan applications and supporting documents, KYC records, account-opening forms, and addresses. The listing was posted on BreachForums.
+                </p>
+                <p>
+                    The Free Press Journal examined four sample records published with the listing and reported that the phone numbers were valid, and that a WhatsApp profile picture on one number matched the photograph on that person's KYC document, which the actor had also posted. Its report was headlined as concerning SBI <em>and its subsidiaries</em>, and noted that SBI had not responded at the time of publication. As The Hacker News observed, a check of four records cannot establish that the whole dataset is genuine, nor whether the data came from SBI itself, a subsidiary, or a third party that processes banking applications.
+                </p>
+                <h3>SBI's disclosure (21 October)</h3>
+                <p>
+                    Five days after the alerts, SBI filed its disclosure under Regulation 30 of the SEBI (Listing Obligations and Disclosure Requirements) Regulations, 2015. The filing, signed by the bank's DGM (Compliance &amp; Company Secretary), makes the following points:
+                </p>
+                <ul>
+                    <li>Alerts were received on 16 October 2026 from three parties: SBI's Threat Intelligence Service Provider, the Defence Cyber Agency, and CERT-In.</li>
+                    <li>Approximately 375,000 records "available on the dark web" were analysed; 3,897 customer records containing PII were identified.</li>
+                    <li>The exposed information "reportedly included" registered mobile numbers, dates of birth, names, gender, email addresses, residential addresses, branch and CIF identifiers, lead IDs, and metadata associated with loan/lead records "and other related files".</li>
+                    <li>SBI activated its cyber incident response and containment protocols and engaged an independent CERT-In-empanelled agency.</li>
+                    <li>Remedial and preventive measures are "being implemented as required".</li>
+                </ul>
+                <p>
+                    Importantly, nothing in the filing explicitly links SBI's analysis to the Siriusim listing. The match between the two figures (about 375,000) is strong circumstantial evidence that they describe the same dataset, but it is reporters and the Internet Freedom Foundation, not SBI, who have drawn that link. The filing does not mention the 2,722 PDF documents.
+                </p>
+                <div class="warning-box" style="background: rgba(255, 61, 61, 0.05); border-left: 4px solid var(--accent-red); padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+                    <strong style="color: var(--accent-red); font-size: 1.05rem;"><i class="fas fa-exclamation-triangle"></i> A note on headline language</strong>
+                    <p style="margin-top: 0.5rem; margin-bottom: 0;">
+                        Some coverage has described the incident as a "cyberattack" or a "hack". SBI's filing uses neither word. It describes a "loss of certain data" and an "alleged compromise". Data can reach the dark web through an external intrusion, but also through a vendor, an intermediary such as a direct selling agent, a misconfigured storage location, or an insider. Until the investigation reports, all of these remain possibilities.
+                    </p>
+                </div>
+
+                <!-- SECTION 3 -->
+                <h2 id="sec-3" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    3. Incident Timeline
+                </h2>
+                <p>All dates are in Indian Standard Time. Dates that have not been publicly disclosed are marked as unknown.</p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">SBI data exposure: dated events and their sources</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 16%;">Date</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 54%;">Event</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 15%;">Status</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 15%;">Source</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">Unknown</td>
+                                <td style="padding: 10px 14px;">The data is collected, copied, or extracted from its original location. No date, system, or method has been disclosed.</td>
+                                <td style="padding: 10px 14px;">Unknown</td>
+                                <td style="padding: 10px 14px;">—</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">Unknown</td>
+                                <td style="padding: 10px 14px;">The data first appears on the dark web. The SBI filing does not say when.</td>
+                                <td style="padding: 10px 14px;">Unknown</td>
+                                <td style="padding: 10px 14px;"><a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">THN</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-16</td>
+                                <td style="padding: 10px 14px;">CyberPulse56 flags on X a claim by "Siriusim" that 375,000 CSV rows and 2,722 PDFs linked to SBI have been leaked on BreachForums.</td>
+                                <td style="padding: 10px 14px;">Attributed claim</td>
+                                <td style="padding: 10px 14px;"><a href="https://www.freepressjournal.in/business/sbi-subsidiaries-customer-data-allegedly-on-dark-web-375-lakh-records-2722-documents-claimed-in-data-breach" target="_blank" rel="noopener">FPJ</a>, <a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">THN</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-16</td>
+                                <td style="padding: 10px 14px;">SBI receives communications from its Threat Intelligence Service Provider, the Defence Cyber Agency, and CERT-In about suspected exposure of customer data on the dark web.</td>
+                                <td style="padding: 10px 14px;">Confirmed by SBI</td>
+                                <td style="padding: 10px 14px;"><a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">SBI filing</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-17</td>
+                                <td style="padding: 10px 14px;">The Free Press Journal reports its checks on four sample records (valid phone numbers; one KYC photo matching a WhatsApp profile). SBI had not responded at publication.</td>
+                                <td style="padding: 10px 14px;">Independent media check (limited)</td>
+                                <td style="padding: 10px 14px;"><a href="https://www.freepressjournal.in/business/sbi-subsidiaries-customer-data-allegedly-on-dark-web-375-lakh-records-2722-documents-claimed-in-data-breach" target="_blank" rel="noopener">FPJ</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-16 to 21</td>
+                                <td style="padding: 10px 14px;">SBI activates incident response and containment protocols and engages a CERT-In-empanelled agency. Exact dates of these steps are not given.</td>
+                                <td style="padding: 10px 14px;">Confirmed by SBI (undated)</td>
+                                <td style="padding: 10px 14px;"><a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">SBI filing</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-21</td>
+                                <td style="padding: 10px 14px;">SBI files its Regulation 30 disclosure with BSE and NSE.</td>
+                                <td style="padding: 10px 14px;">Confirmed (primary)</td>
+                                <td style="padding: 10px 14px;"><a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">SBI filing</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-21</td>
+                                <td style="padding: 10px 14px;">The Internet Freedom Foundation (IFF) publicly calls on SBI to notify each affected customer directly and to disclose what the full dataset and the PDFs contain.</td>
+                                <td style="padding: 10px 14px;">Attributed statement</td>
+                                <td style="padding: 10px 14px;"><a href="https://www.thehindu.com/business/Economy/state-bank-of-india-investigates-exposure-customer-records-dark-web-october-21/article71606599.ece" target="_blank" rel="noopener">The Hindu</a></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2026-10-22</td>
+                                <td style="padding: 10px 14px;">At the time of writing (00:05 IST), we found no further SBI update, regulator statement, or law-enforcement finding.</td>
+                                <td style="padding: 10px 14px;">Investigation ongoing</td>
+                                <td style="padding: 10px 14px;">TheHGTech check</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SECTION 4 -->
+                <h2 id="sec-4" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    4. What the Record Counts Actually Mean
+                </h2>
+                <p>
+                    Two figures dominate the coverage, and they are easy to misread. Neither is a count of affected people.
+                </p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Interpreting the published figures</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Figure</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">What it measures</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">What it does <em>not</em> establish</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">~375,000</td>
+                                <td style="padding: 10px 14px;">Records "available on the dark web" that SBI examined in its preliminary analysis. The same figure appears in the actor's claim of 375,000 CSV rows.</td>
+                                <td style="padding: 10px 14px;">That all are SBI data, that all are customer records, or that they are unique. Rows may include duplicates, lead entries for non-customers, or non-personal records.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">3,897</td>
+                                <td style="padding: 10px 14px;">Records identified as "customer records containing PII" in the preliminary analysis. That is about 1.04% of the records examined (3,897 ÷ 375,000).</td>
+                                <td style="padding: 10px 14px;">The number of unique customers, compromised accounts, or confirmed victims. SBI has not said whether the 3,897 records belong to 3,897 different people.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">2,722</td>
+                                <td style="padding: 10px 14px;">PDF documents claimed by the threat actor.</td>
+                                <td style="padding: 10px 14px;">Not mentioned in SBI's filing. Whether SBI examined them, and what they contain, is unknown.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px; font-family: monospace;">~371,100</td>
+                                <td style="padding: 10px 14px;">The remainder of the examined set (375,000 − 3,897 = 371,103) that was not identified as customer PII in the preliminary pass.</td>
+                                <td style="padding: 10px 14px;">That these records are harmless. SBI has not said what they contain. The count is explicitly preliminary.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Several explanations could fit the gap between 375,000 and 3,897, and the evidence does not yet favour any of them. The larger set may be mostly lead records, which by definition can relate to prospects who never became customers. It may contain operational or metadata rows with no personal fields. It may include records SBI could not match to its own customers, which would be consistent with data originating from a subsidiary or intermediary. Or the preliminary analysis may simply be incomplete. The filing describes the figure as preliminary, and readers should expect it to change.
+                </p>
+                <div class="info-box" style="background: rgba(0, 217, 255, 0.05); border-left: 4px solid var(--accent-cyan); padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+                    <strong style="color: var(--accent-cyan);"><i class="fas fa-info-circle"></i> Why "records" are not "people"</strong>
+                    <p style="margin-top: 0.5rem; margin-bottom: 0;">
+                        In lead- and loan-management systems, one person commonly appears in several rows: one per application, product enquiry, co-applicant role, or status update. Equally, one row can describe more than one person (a joint applicant or guarantor). Until a dataset is de-duplicated against a master customer key, a record count is an upper or lower bound on affected individuals, not a measure of them.
+                    </p>
+                </div>
+
+                <!-- SECTION 5 -->
+                <h2 id="sec-5" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    5. Data Potentially Exposed: Field-by-Field
+                </h2>
+                <p>
+                    The table below lists only fields named in SBI's filing, plus the additional categories claimed by the threat actor, which are clearly marked. "Listed by SBI" means the field appears in the filing, which itself says the exposed information "reportedly included" these items. It does not mean that each field is present in all 3,897 records.
+                </p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Exposed fields, evidence status, and realistic implications</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 22%;">Field</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 20%;">Evidence status</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Realistic implication</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Name, gender</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Personalises scam calls and messages. Low sensitivity on its own.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Registered mobile number</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Gives fraudsters a direct contact channel by call, SMS, and WhatsApp. Because it is the number registered with the bank, the bank's genuine OTPs and alerts go to it as well, which makes OTP-harvesting pretexts more convincing.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Email address</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Enables targeted phishing that references real account context.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Date of birth</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Commonly used as a knowledge-based verification factor by contact centres and some service providers. Weakens any process that still relies on it.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Residential address</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Adds credibility to impersonation. Could support postal fraud or physical targeting in rare cases.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Branch identifier</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">Lets a caller claim to be "from your home branch", a strong trust signal.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">CIF identifier</td>
+                                <td style="padding: 10px 14px;">Listed by SBI</td>
+                                <td style="padding: 10px 14px;">The Customer Information File number is the bank's internal customer ID. It is not a credential and does not on its own give access to an account, but quoting it makes an impersonator sound like an insider.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Lead IDs, loan/lead metadata, "other related files"</td>
+                                <td style="padding: 10px 14px;">Listed by SBI (contents unspecified)</td>
+                                <td style="padding: 10px 14px;">Indicates the data relates to sales or loan workflows. Supports loan-themed pretexts, such as fake approvals, fake processing fees, or "pending document" requests. Also a strong forensic clue to the source system.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border); background: rgba(245, 158, 11, 0.04);">
+                                <td style="padding: 10px 14px;">KYC documents, loan applications, account-opening forms (2,722 PDFs)</td>
+                                <td style="padding: 10px 14px;"><strong>Claimed by threat actor only</strong>; one KYC sample described by FPJ</td>
+                                <td style="padding: 10px 14px;">If genuine, materially more serious, because identity documents can support synthetic-identity or account-opening fraud. Not confirmed by SBI.</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);">
+                                <td style="padding: 10px 14px;">Account numbers, balances, passwords, OTPs, card details, PAN, Aadhaar</td>
+                                <td style="padding: 10px 14px;"><strong>Not listed</strong> by SBI</td>
+                                <td style="padding: 10px 14px;">Absence from the list is not confirmation of absence, but there is no evidence these were exposed. Claims that credentials or balances were leaked are unsupported.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SECTION 6 -->
+                <h2 id="sec-6" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    6. Confirmed Facts vs. Unresolved Questions
+                </h2>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Verification matrix (status as of 22 October 2026)</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 30%;">Question</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 18%;">Status</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Evidence</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Did a data-loss incident occur?</td><td style="padding: 10px 14px; color: #10b981;">Confirmed</td><td style="padding: 10px 14px;">SBI: "the Bank has experienced an incident involving the loss of certain data."</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">How many records were examined, and how many contain customer PII?</td><td style="padding: 10px 14px; color: #10b981;">Confirmed (preliminary)</td><td style="padding: 10px 14px;">~375,000 examined; 3,897 customer records with PII, per SBI filing.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Which fields were exposed?</td><td style="padding: 10px 14px; color: var(--accent-amber);">Listed by SBI as "reportedly" included</td><td style="padding: 10px 14px;">See Section 5. Authenticity and completeness still under investigation.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Who alerted SBI, and when?</td><td style="padding: 10px 14px; color: #10b981;">Confirmed</td><td style="padding: 10px 14px;">Threat Intelligence Service Provider, Defence Cyber Agency, CERT-In; 16 October 2026.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Is the data authentic and complete?</td><td style="padding: 10px 14px; color: var(--accent-amber);">Under investigation</td><td style="padding: 10px 14px;">SBI says investigation is required to establish this. FPJ's check of four samples is consistent with real individuals but not conclusive.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Who is responsible?</td><td style="padding: 10px 14px; color: var(--accent-amber);">Alleged</td><td style="padding: 10px 14px;">"Siriusim" claimed the leak. SBI names no actor. Attribution is unverified.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">What was the initial access vector?</td><td style="padding: 10px 14px; color: var(--accent-red);">Unknown</td><td style="padding: 10px 14px;">Not disclosed. Nothing in the record supports a specific technique.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Was an SBI system breached?</td><td style="padding: 10px 14px; color: var(--accent-red);">Unknown</td><td style="padding: 10px 14px;">The source is left to the investigation. Subsidiary or third-party origin has not been ruled in or out.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Was the data published?</td><td style="padding: 10px 14px; color: var(--accent-amber);">Confirmed available; publication details attributed</td><td style="padding: 10px 14px;">SBI: records "available on the dark web". Forum listing and samples are reported by FPJ and THN.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Was ransomware involved?</td><td style="padding: 10px 14px; color: var(--accent-red);">No evidence</td><td style="padding: 10px 14px;">Not mentioned by any source reviewed. SBI reports no operational disruption.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Has fraud or loss of funds occurred?</td><td style="padding: 10px 14px; color: var(--accent-red);">None reported</td><td style="padding: 10px 14px;">No source reports fraud linked to this data.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Have affected customers been notified?</td><td style="padding: 10px 14px; color: var(--accent-red);">Not stated</td><td style="padding: 10px 14px;">The filing is silent on customer notification, per THN and IFF.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Have RBI, CERT-In, or law enforcement published findings?</td><td style="padding: 10px 14px; color: var(--accent-red);">None found</td><td style="padding: 10px 14px;">CERT-In's role is limited to the alert described in SBI's filing. No regulator finding located as of this check.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SECTION 7 -->
+                <h2 id="sec-7" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    7. Realistic Threat Scenarios
+                </h2>
+                <p>
+                    The scenarios below are <strong>possibilities derived from the listed fields</strong>. None has been reported as occurring in connection with this incident. They are included because they define what defenders and customer-facing teams should prepare for.
+                </p>
+                <h3>7.1 Bank-impersonation calls (vishing)</h3>
+                <p>
+                    A caller recites the customer's name, date of birth, address, home branch, and CIF number, then claims there is a problem with a loan or KYC record that needs "verification". The goal is to obtain an OTP, UPI PIN, card details, or to persuade the customer to install a remote-access app. The exposed fields do not let an attacker into an account. They make the customer more likely to help. As the IFF put it, in a <a href="https://www.thehindu.com/business/Economy/state-bank-of-india-investigates-exposure-customer-records-dark-web-october-21/article71606599.ece" target="_blank" rel="noopener">statement reported by The Hindu</a>, affected customers are "the most likely to receive calls from persons posing as SBI officials who can recite their account details back to them."
+                </p>
+                <h3>7.2 Loan-themed fraud</h3>
+                <p>
+                    Because the data reportedly includes loan and lead metadata, the obvious lure is a loan: a "pre-approved" offer requiring an upfront processing fee, a fake disbursement that needs "confirmation", or a request to re-submit documents through a lookalike portal. Customers with a genuine pending application are especially vulnerable, because the lure matches what they expect to hear.
+                </p>
+                <h3>7.3 Targeted phishing and smishing</h3>
+                <p>
+                    Email addresses and mobile numbers paired with real context support phishing that links to credential-harvesting pages imitating SBI's internet banking or YONO login. Accurate personal detail in the message reduces the usual warning signs.
+                </p>
+                <h3>7.4 Weakened knowledge-based verification</h3>
+                <p>
+                    Any organisation, not only SBI, that verifies callers using name, date of birth, address, and mobile number should treat those factors as weaker for the affected population. This matters for telecom providers' SIM-replacement processes and for other financial institutions.
+                </p>
+                <h3>7.5 Identity fraud (conditional)</h3>
+                <p>
+                    <em>Only if</em> the claimed KYC documents and account-opening forms are genuine and contain identity-document images, the risk would extend to synthetic-identity and fraudulent account-opening attempts. That condition is unconfirmed.
+                </p>
+                <div class="warning-box" style="background: rgba(255, 61, 61, 0.05); border-left: 4px solid var(--accent-red); padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">
+                    <strong style="color: var(--accent-red);"><i class="fas fa-ban"></i> What cannot be concluded from the evidence</strong>
+                    <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.2rem;">
+                        <li>That SBI's core banking system, internet banking, or YONO was compromised.</li>
+                        <li>That passwords, OTPs, card data, account numbers, or balances were exposed.</li>
+                        <li>That 3,897, or 375,000, people are affected.</li>
+                        <li>That the data came from SBI's own systems rather than a subsidiary, vendor, or intermediary.</li>
+                        <li>Any specific attack technique, malware family, or threat-actor capability.</li>
+                    </ul>
+                    <p style="margin-top: 0.75rem; margin-bottom: 0;">On current evidence, a blanket password reset for all SBI customers has no specific justification. The listed data contains no credentials. Vigilance against impersonation is the proportionate response.</p>
+                </div>
+
+                <!-- SECTION 8 -->
+                <h2 id="sec-8" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    8. Technical Investigation: What Defenders Should Examine
+                </h2>
+                <p>
+                    This section describes how an investigation into an exposure like this is typically scoped. It does not describe SBI's environment, which has not been disclosed. It applies to any organisation that finds its customer data offered on a criminal forum.
+                </p>
+                <h3>8.1 Establish what the dataset is before asking how it left</h3>
+                <p>
+                    The fastest route to the source is usually the data itself. Under legal guidance and with evidence handling in place, responders should:
+                </p>
+                <ol>
+                    <li><strong>Acquire and preserve the dataset</strong> as published, with cryptographic hashes and acquisition notes (URL, time, method), so that later analysis can be reproduced.</li>
+                    <li><strong>Fingerprint the schema.</strong> Column names, column order, internal codes, date formats, enumerations, and identifier formats (lead ID patterns, branch code formats) often match exactly one internal system or export template.</li>
+                    <li><strong>Establish the time window.</strong> The latest record creation or update timestamp gives an earliest possible extraction date. Records missing a known recent change give a latest possible one.</li>
+                    <li><strong>Match against the system of record</strong> to measure authenticity: what fraction of rows correspond to real customers, real leads, or nothing at all. Use keyed hashes rather than raw PII where possible (see Section 9.1).</li>
+                    <li><strong>De-duplicate on a stable customer key</strong> to convert "records" into "affected individuals", and separate customers from non-customer leads.</li>
+                    <li><strong>Check for distribution artefacts.</strong> Fields only present in a vendor's copy, a specific report, or a particular channel partner's export narrow the source considerably.</li>
+                </ol>
+                <h3>8.2 Candidate sources to evaluate</h3>
+                <p>
+                    Data described as lead IDs and loan/lead metadata typically lives in CRM, lead-management, and loan-origination platforms, and in the systems of the partners that feed them. Without assuming any of these is the source in SBI's case, a defensible investigation would cover:
+                </p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Investigation scope: candidate sources, telemetry, and key questions</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 22%;">Candidate source</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 33%;">Telemetry to collect</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Investigation questions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">CRM / lead-management platform</td><td style="padding: 10px 14px;">Application audit logs, report and export logs, API access logs, admin configuration changes</td><td style="padding: 10px 14px;">Who ran bulk reads or exports matching the dataset's schema and time window? Were any reports newly created or modified?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Loan-origination and document-management systems</td><td style="padding: 10px 14px;">Document access and download logs, storage access logs</td><td style="padding: 10px 14px;">Could the claimed PDFs have come from here? Were documents bulk-downloaded?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Third parties: vendors, DSAs, BPOs, subsidiaries</td><td style="padding: 10px 14px;">Partner-portal logs, SFTP and file-transfer logs, data-sharing agreements, partner attestations</td><td style="padding: 10px 14px;">Which partners received data with these fields? Does the leaked schema match a file shared with a partner?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Cloud and object storage</td><td style="padding: 10px 14px;">Bucket/blob access policies, storage access logs, public-exposure scans</td><td style="padding: 10px 14px;">Were exports or backups ever stored with public or overly broad access?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Identity layer</td><td style="padding: 10px 14px;">IdP sign-in logs, MFA events, privileged-access session records, service-account activity</td><td style="padding: 10px 14px;">Any anomalous sign-ins, MFA fatigue, impossible travel, or service-account use outside its normal pattern?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Endpoints and email</td><td style="padding: 10px 14px;">EDR telemetry, DLP alerts, mail-gateway logs</td><td style="padding: 10px 14px;">Were exported files staged, compressed, emailed externally, or copied to removable media?</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;">Network egress</td><td style="padding: 10px 14px;">Proxy/SWG logs, firewall flow logs, DNS logs, CASB</td><td style="padding: 10px 14px;">Any outbound transfers to file-sharing or paste services, or unusual upload volumes from systems holding this data?</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>8.3 Evidence preservation</h3>
+                <ul>
+                    <li>Extend log retention immediately on all candidate systems. Application audit logs in SaaS platforms often have short default retention.</li>
+                    <li>Snapshot relevant configurations (sharing rules, report definitions, API client registrations) before remediation changes them.</li>
+                    <li>Request preservation of logs from third parties in writing, referencing contractual audit rights.</li>
+                    <li>Maintain a chain of custody for the acquired dataset and restrict access to it, because it contains live PII.</li>
+                </ul>
+
+                <!-- SECTION 9 -->
+                <h2 id="sec-9" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    9. Detection and Response Guidance
+                </h2>
+                <h3>9.1 Matching a leaked dataset without spreading PII</h3>
+                <p>
+                    Analysts frequently need to compare a leaked file against internal records, sometimes with external parties involved. Comparing keyed hashes (HMAC) of normalised identifiers rather than raw values limits further exposure. The following Python uses only the standard library. It is an <strong>illustrative example</strong>: column names such as <code>mobile</code> are placeholders that must be mapped to the actual schema, and the key must be generated and held by the data owner.
+                </p>
+                <pre><code class="language-python"># Illustrative: keyed-hash matching of a leaked CSV against an internal extract.
+# Prerequisites: Python 3.8+, both files available locally under legal authorisation,
+# and a secret key held by the data owner (never shared with third parties).
+import csv, hmac, hashlib, re
+
+KEY = b"replace-with-a-32-byte-secret-from-your-kms"
+
+def norm_mobile(value: str) -&gt; str:
+    digits = re.sub(r"\D", "", value or "")
+    return digits[-10:]  # Indian mobile numbers: compare on the last 10 digits
+
+def token(value: str) -&gt; str:
+    return hmac.new(KEY, value.encode(), hashlib.sha256).hexdigest()
+
+def tokens(path: str, column: str) -&gt; set:
+    with open(path, newline="", encoding="utf-8") as f:
+        return {token(norm_mobile(row[column])) for row in csv.DictReader(f)
+                if norm_mobile(row.get(column, ""))}
+
+leaked = tokens("leaked.csv", "mobile")            # placeholder column name
+internal = tokens("internal_extract.csv", "mobile")  # placeholder column name
+print(f"unique leaked identifiers: {len(leaked)}")
+print(f"matched to internal records: {len(leaked &amp; internal)}")</code></pre>
+                <p>
+                    The ratio of matched to unique identifiers is a direct, reportable measure of authenticity, and the count of unique matches is a better estimate of affected individuals than a raw row count.
+                </p>
+
+                <h3>9.2 Monitoring for bulk access to customer data (template)</h3>
+                <p>
+                    Every CRM and loan platform logs differently, so the following is <strong>pseudocode, not a working query</strong>. Field names in angle brackets must be replaced with those in your own audit log schema. The logic flags identities whose volume of customer-record reads or exports is far above their own baseline.
+                </p>
+                <pre><code class="language-text">// TEMPLATE / PSEUDOCODE: adapt field and table names to your audit log schema
+source  = &lt;crm_or_los_audit_log&gt;
+window  = last 1 day
+baseline_window = previous 30 days
+
+events  = source where &lt;action&gt; in ("export", "report_run", "bulk_api_read", "download")
+                    and &lt;object_type&gt; in ("customer", "lead", "loan_application")
+
+today    = events in window          group by &lt;actor_id&gt; sum(&lt;record_count&gt;) as today_rows
+baseline = events in baseline_window group by &lt;actor_id&gt; daily p95(&lt;record_count&gt;) as p95_rows
+
+alert where today_rows &gt; max(5 * p95_rows, &lt;absolute_floor&gt;)
+       or (&lt;actor_type&gt; == "service_account" and &lt;source_ip&gt; not in &lt;approved_ranges&gt;)
+       or (&lt;actor_org&gt; is third_party and today_rows &gt; &lt;partner_threshold&gt;)</code></pre>
+                <p>Practical notes for implementing this logic:</p>
+                <ul>
+                    <li>Many SaaS CRMs only record report exports or API events when an additional event-monitoring or audit licence is enabled. Confirm the events exist before relying on the detection.</li>
+                    <li>Per-identity baselines work better than global thresholds, because legitimate bulk users (marketing, analytics, partner integrations) will otherwise dominate the alerts.</li>
+                    <li>Third-party and service-account access deserves separate, tighter thresholds.</li>
+                </ul>
+
+                <h3>9.3 DLP and egress monitoring ideas</h3>
+                <ul>
+                    <li>Create DLP fingerprints or exact-data-match profiles for internal identifier formats (CIF numbers, lead IDs) combined with mobile numbers. A file containing many of both leaving the network is a high-fidelity signal.</li>
+                    <li>Seed canary (honeytoken) customer and lead records in CRM and partner feeds, with monitored contact details. Contact attempts to a canary identify both a leak and the feed it came from.</li>
+                    <li>Alert on uploads above a size threshold from data-holding systems to file-sharing, paste, or messaging services.</li>
+                </ul>
+
+                <h3>9.4 Customer-facing response</h3>
+                <ul>
+                    <li>Brief contact-centre and branch staff that knowledge of DOB, address, branch, and CIF is not proof of identity for the affected population.</li>
+                    <li>Watch for spikes in SIM-swap requests, mobile-number change requests, and new-device registrations among affected customers, and apply step-up verification.</li>
+                    <li>Send customers specific, actionable advice: the bank will not ask for OTPs or PINs; report suspicious contacts to <code>report.phishing@sbi.co.in</code> (per SBI's general guidance as reported by <a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">THN</a>) or to India's cybercrime helpline, 1930.</li>
+                </ul>
+
+                <!-- SECTION 10 -->
+                <h2 id="sec-10" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    10. Data Protection and Security Control Lessons
+                </h2>
+                <p>
+                    The investigation has not identified which control, if any, failed at SBI, and this section does not suggest otherwise. These are the controls that most directly reduce the likelihood and impact of this class of exposure, organised by function.
+                </p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Controls by function for lead and loan data</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 18%;">Function</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Controls</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;"><strong>Prevention</strong></td><td style="padding: 10px 14px;">Data minimisation in lead and partner feeds (do partners need DOB and CIF?); field-level masking of internal identifiers; least-privilege roles and export restrictions; contractual and technical controls on DSAs and vendors; retention limits that purge stale leads.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;"><strong>Detection</strong></td><td style="padding: 10px 14px;">Audit logging of reads and exports (not only writes); per-identity volume baselines; exact-data-match DLP; canary records; external threat-intelligence monitoring of criminal forums. In this case, external parties detected the exposure first.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;"><strong>Containment</strong></td><td style="padding: 10px 14px;">Ability to revoke partner and service-account access quickly; pre-approved playbooks for disabling bulk export; takedown requests where feasible.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px;"><strong>Recovery</strong></td><td style="padding: 10px 14px;">Customer notification and support processes; step-up verification for affected customers; post-incident review of data flows; publication of findings.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>The notification gap</h3>
+                <p>
+                    The incident highlights a structural issue in Indian breach response that is separate from technical security. According to the <a href="https://www.thehindu.com/business/Economy/state-bank-of-india-investigates-exposure-customer-records-dark-web-october-21/article71606599.ece" target="_blank" rel="noopener">IFF statement reported by The Hindu</a>, Section 8(6) of the Digital Personal Data Protection Act, 2023, and Rule 7 of the DPDP Rules, 2025, would require notification to the Data Protection Board and to each affected individual. The IFF says these provisions take effect only on 13 May 2027. It also says the obligations in force today, under the <a href="https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf" target="_blank" rel="noopener">CERT-In Directions of 28 April 2022</a> and the RBI's cyber security framework for banks, are owed to regulators rather than to customers. This is the IFF's legal characterisation, and we have not independently assessed it. If it is accurate, customer notification in this case depends on the bank's discretion rather than a legal requirement.
+                </p>
+                <p>
+                    Organisations do not need to wait for that deadline. Affected people can only guard against targeted impersonation if they know they are targets.
+                </p>
+
+                <!-- SECTION 11 -->
+                <h2 id="sec-11" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    11. Remediation Checklist
+                </h2>
+                <p>A prioritised checklist for an organisation responding to a comparable exposure, with an observable outcome for each item.</p>
+                <div style="overflow-x: auto; margin: 1.5rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem;">
+                        <caption style="text-align: left; padding-bottom: 0.5rem; color: var(--text-secondary); font-size: 0.85rem;">Prioritised remediation actions</caption>
+                        <thead>
+                            <tr style="background: rgba(255, 255, 255, 0.05); text-align: left; border-bottom: 2px solid var(--glass-border);">
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 10%;">Priority</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 38%;">Action</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan); width: 17%;">Owner</th>
+                                <th scope="col" style="padding: 10px 14px; color: var(--accent-cyan);">Validation outcome</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-red);">P0</td><td style="padding: 10px 14px;">Preserve the published dataset and extend log retention on candidate systems and partners.</td><td style="padding: 10px 14px;">IR lead</td><td style="padding: 10px 14px;">Hashed evidence copy; written retention confirmations.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-red);">P0</td><td style="padding: 10px 14px;">Brief fraud, contact-centre, and branch teams on impersonation risk.</td><td style="padding: 10px 14px;">Fraud ops</td><td style="padding: 10px 14px;">Briefing issued; verification script updated so DOB/CIF are not sufficient.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-red);">P0</td><td style="padding: 10px 14px;">Fingerprint the dataset schema and match it to a source system.</td><td style="padding: 10px 14px;">IR / data owners</td><td style="padding: 10px 14px;">Named candidate system(s) with supporting field-level evidence.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-amber);">P1</td><td style="padding: 10px 14px;">Measure authenticity and de-duplicate to unique affected individuals.</td><td style="padding: 10px 14px;">Data protection</td><td style="padding: 10px 14px;">Match rate and unique-individual count, documented with method.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-amber);">P1</td><td style="padding: 10px 14px;">Review bulk exports and partner access for the dataset's time window.</td><td style="padding: 10px 14px;">SOC</td><td style="padding: 10px 14px;">List of identities with anomalous volume, each dispositioned.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-amber);">P1</td><td style="padding: 10px 14px;">Notify affected individuals with specific guidance.</td><td style="padding: 10px 14px;">DPO / comms</td><td style="padding: 10px 14px;">Notifications sent; helpline or lookup available.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-amber);">P1</td><td style="padding: 10px 14px;">Apply step-up verification on SIM-swap, mobile-change, and new-device events for affected customers.</td><td style="padding: 10px 14px;">Fraud ops</td><td style="padding: 10px 14px;">Rule live; triggered events reviewed.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-cyan);">P2</td><td style="padding: 10px 14px;">Minimise fields shared with partners; mask internal identifiers.</td><td style="padding: 10px 14px;">Data governance</td><td style="padding: 10px 14px;">Updated data-sharing specifications; field inventory signed off.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-cyan);">P2</td><td style="padding: 10px 14px;">Deploy export-volume detections, EDM DLP, and canary records.</td><td style="padding: 10px 14px;">Security engineering</td><td style="padding: 10px 14px;">Detections tested with a controlled export; canary alert verified end-to-end.</td></tr>
+                            <tr style="border-bottom: 1px solid var(--glass-border);"><td style="padding: 10px 14px; color: var(--accent-cyan);">P2</td><td style="padding: 10px 14px;">Publish a summary of investigation findings.</td><td style="padding: 10px 14px;">CISO / leadership</td><td style="padding: 10px 14px;">Public statement covering source, scope, and corrective actions.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- SECTION 12 -->
+                <h2 id="sec-12" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    12. Conclusion
+                </h2>
+                <p>
+                    On the evidence available as of 22 October 2026, SBI has confirmed a loss of customer data, sized at 3,897 PII-bearing records in a preliminary review of roughly 375,000. The listed fields are contact and profile data, internal identifiers, and loan/lead metadata. No credentials or financial data are listed. The source, the attack vector if there was one, the number of unique people affected, and the contents of the rest of the dataset and the claimed PDFs remain unknown. SBI reports no impact on its operations, and no fraud has been reported.
+                </p>
+                <p>
+                    Two lessons apply regardless of how the investigation concludes. First, the bank learned of the exposure from external parties after the data was already available. That is an argument for monitoring reads and exports of customer data, including by partners, with the same rigour applied to logins. Second, the most likely harm here is social engineering, which customers can only defend against if they are told.
+                </p>
+                <p>The questions that will determine how serious this incident is:</p>
+                <ul>
+                    <li>Did the data come from SBI, a subsidiary, a vendor, or an intermediary?</li>
+                    <li>How many unique individuals are affected, and what do the remaining records contain?</li>
+                    <li>Were the 2,722 claimed PDFs examined, and do they contain identity documents?</li>
+                    <li>Will affected customers be notified, and will the investigation's findings be published?</li>
+                </ul>
+                <p>TheHGTech will update this analysis if SBI, a regulator, or the investigating agency publishes new findings.</p>
+
+                <!-- SECTION 13 -->
+                <h2 id="sec-13" style="color: var(--text-primary); border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem; margin-top: 3rem;">
+                    13. Primary Sources and References
+                </h2>
+                <p>All sources were accessed on 21–22 October 2026.</p>
+                <ol style="line-height: 1.8; color: var(--text-secondary);">
+                    <li><strong>State Bank of India (primary):</strong> <a href="https://nsearchives.nseindia.com/corporate/SBIN_21102026084938_BSE_NSE_21102026.pdf" target="_blank" rel="noopener">Disclosure under Regulation 30 of SEBI (LODR) Regulations, 2015 – Incident involving Data Loss</a>, filed with BSE and NSE (21 October 2026).</li>
+                    <li><strong>The Hacker News:</strong> <a href="https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html" target="_blank" rel="noopener">State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web</a> (21 October 2026).</li>
+                    <li><strong>The Free Press Journal:</strong> <a href="https://www.freepressjournal.in/business/sbi-subsidiaries-customer-data-allegedly-on-dark-web-375-lakh-records-2722-documents-claimed-in-data-breach" target="_blank" rel="noopener">SBI, Subsidiaries' Customer Data Allegedly On Dark Web: 3.75 Lakh Records, 2,722 Documents Claimed In Data Breach</a> (17 October 2026).</li>
+                    <li><strong>The Hindu:</strong> <a href="https://www.thehindu.com/business/Economy/state-bank-of-india-investigates-exposure-customer-records-dark-web-october-21/article71606599.ece" target="_blank" rel="noopener">Data breach: SBI admits exposure of its customer data on the Dark Web</a>, including the Internet Freedom Foundation's statement (21 October 2026).</li>
+                    <li><strong>The New Indian Express:</strong> <a href="https://www.newindianexpress.com/business/2026/Oct/21/sbi-reports-data-loss-incident-3897-customer-records-found-exposed-on-dark-web" target="_blank" rel="noopener">SBI reports data loss incident, 3,897 customer records found exposed on dark web</a> (21 October 2026).</li>
+                    <li><strong>Gulf News:</strong> <a href="https://gulfnews.com/business/banking/sbi-data-leak-what-we-know-so-far-and-what-it-means-for-indian-residents-in-uae-1.500718083" target="_blank" rel="noopener">SBI data leak: What we know so far, and what it means for Indian residents in UAE</a> (21 October 2026).</li>
+                    <li><strong>Bank of Baroda (comparison):</strong> <a href="https://nsearchives.nseindia.com/corporate/BANKBARODA_27072026203752_SEINTIMATION1.pdf" target="_blank" rel="noopener">Regulation 30 disclosure of a cyber-security incident</a> (27 July 2026), cited by THN for its similar wording.</li>
+                    <li><strong>CERT-In:</strong> <a href="https://www.cert-in.org.in/PDF/CERT-In_Directions_70B_28.04.2022.pdf" target="_blank" rel="noopener">Directions under sub-section (6) of section 70B of the IT Act, 2000</a> (28 April 2022).</li>
+                </ol>
+
+                <!-- Internal Resource Links Box -->
+                <div class="info-box" style="background: rgba(0, 217, 255, 0.05); border-left: 4px solid var(--accent-cyan); padding: 1.25rem; margin: 2rem 0; border-radius: 0 8px 8px 0;">
+                    <strong style="color: var(--accent-cyan);"><i class="fas fa-link"></i> Related Research from TheHGTech</strong>
+                    <ul style="margin-top: 0.5rem; margin-bottom: 0; padding-left: 1.2rem;">
+                        <li><a href="/articles/booking-com-breach-2026.html" style="color: var(--accent-cyan);">Booking.com Breach 2026: Protecting Against Reservation-Data Attacks</a></li>
+                        <li><a href="/articles/harvard-phone-phishing-breach-2025.html" style="color: var(--accent-cyan);">How Attackers Breached Harvard With One Call: A Vishing Guide</a></li>
+                        <li><a href="/articles/accenture-breach-env-file-2026.html" style="color: var(--accent-cyan);">The Accenture Breach Claim Isn't About Source Code: It's About .env Files</a></li>
+                        <li><a href="/hacker-chatter.html" style="color: var(--accent-cyan);">Live Hacker Chatter: Search Data Breaches &amp; Incidents</a></li>
+                        <li><a href="/threat-intel.html" style="color: var(--accent-cyan);">Live Threat Intelligence: IOC Feeds and Malicious Infrastructure Monitor</a></li>
+                    </ul>
+                </div>
+
+                <!-- Interaction Bar -->
+                <div class="interaction-bar" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border); margin: 3rem 0;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()" style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); color: var(--text-primary); padding: 8px 16px; border-radius: 20px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem;">
+                            <i class="far fa-heart"></i> <span id="likeText">Like this research</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons" style="display: flex; gap: 10px; align-items: center;">
+                        <div class="share-buttons" style="display: flex; gap: 8px;">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" style="color: var(--text-secondary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); text-decoration: none;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" style="color: var(--text-secondary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); text-decoration: none;"><i class="fab fa-linkedin-in"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" style="color: var(--text-secondary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border: none; cursor: pointer;"><i class="fas fa-link"></i></button>
+                        </div>
+                        <div class="button-separator" style="width: 1px; height: 20px; background: var(--glass-border);"></div>
+                        <button onclick="printArticle()" class="print-btn" title="Print Article" style="color: var(--text-secondary); width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.05); border: none; cursor: pointer;"><i class="fas fa-print"></i></button>
+                    </div>
+                </div>
+
+                <!-- Related Articles Section -->
+                <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                    <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis &amp; Intelligence</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                        <a href="/articles/booking-com-breach-2026.html" style="text-decoration: none;">
+                            <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; height: 100%; transition: all 0.3s ease;">
+                                <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Data Breach</div>
+                                <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Booking.com Breach 2026</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How leaked reservation context enables convincing, targeted fraud.</p>
+                            </div>
+                        </a>
+
+                        <a href="/articles/harvard-phone-phishing-breach-2025.html" style="text-decoration: none;">
+                            <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; height: 100%; transition: all 0.3s ease;">
+                                <div style="font-size: 0.75rem; color: var(--accent-amber); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Social Engineering</div>
+                                <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">How Attackers Breached Harvard With One Call</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Voice phishing tradecraft and the defences that interrupt it.</p>
+                            </div>
+                        </a>
+
+                        <a href="/articles/accenture-breach-env-file-2026.html" style="text-decoration: none;">
+                            <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; height: 100%; transition: all 0.3s ease;">
+                                <div style="font-size: 0.75rem; color: var(--accent-purple); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Breach Analysis</div>
+                                <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">The Accenture Breach Claim</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">What a threat actor's data-theft claim actually exposed, and why configuration files matter.</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="m-footer m-only">
+        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
+    </footer>
+<script src="../ui-enhancements.js?v=20260517" defer></script>
+
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+</body>
+
+</html>

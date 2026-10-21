@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "sbi-customer-data-exposure-2026",
+      "date": "October 22, 2026",
+      "category": "Data Breach",
+      "badge": "BREACH",
+      "title": "The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response",
+      "excerpt": "SBI disclosed that a preliminary review of ~375,000 dark-web records found 3,897 customer records with PII. What is confirmed, what is alleged, what the counts mean, and what defenders should investigate.",
+      "tags": [
+        "SBI",
+        "Data Exposure",
+        "Dark Web",
+        "PII",
+        "Incident Response",
+        "Social Engineering"
+      ],
+      "author": "Harish G",
+      "featured": false,
+      "image": "/images/articles/sbi-customer-data-exposure-2026.jpg",
+      "externalUrl": "/articles/sbi-customer-data-exposure-2026.html"
+    },
+    {
       "id": "emudhra-ca-weak-key-incident-2026",
       "date": "October 21, 2026",
       "category": "PKI & Cryptography",
@@ -3725,5 +3745,5 @@
     }
   ],
   "version": "20251207-2353",
-  "lastUpdated": "2026-10-21T16:00:00Z"
+  "lastUpdated": "2026-10-21T18:45:00Z"
 }
