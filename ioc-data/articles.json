@@ -1,6 +1,26 @@
 {
   "articles": [
     {
+      "id": "emudhra-ca-weak-key-incident-2026",
+      "date": "October 21, 2026",
+      "category": "PKI & Cryptography",
+      "badge": "CRITICAL",
+      "title": "The eMudhra CA Key Failure: How Weak Cryptographic Entropy Threatened HTTPS Trust",
+      "excerpt": "Technical analysis of the eMudhra Certificate Authority weak private-key incident. Eight P-384 intermediate CAs possessed single-byte scalar keys. Details on CRLSets, OneCRL, cross-signing chains, CT limitations, and server remediation.",
+      "tags": [
+        "eMudhra",
+        "Certificate Authority",
+        "WebPKI",
+        "Weak Entropy",
+        "Cryptography",
+        "TLS"
+      ],
+      "author": "Harish G",
+      "featured": true,
+      "image": "/images/articles/emudhra-ca-weak-key-incident-2026.png",
+      "externalUrl": "/articles/emudhra-ca-weak-key-incident-2026.html"
+    },
+    {
       "id": "report-20261019",
       "title": "Weekly Threat Report: October 19, 2026",
       "date": "October 19, 2026",
@@ -3705,5 +3725,5 @@
     }
   ],
   "version": "20251207-2353",
-  "lastUpdated": "2026-09-04T08:23:16Z"
+  "lastUpdated": "2026-10-21T16:00:00Z"
 }
