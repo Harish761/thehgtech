@@ -601,7 +601,7 @@
       "name": "Were unauthorized TLS certificates issued or observed in the wild?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "According to Google Chrome Security and eMudhra's official statements, no TLS certificates chaining to the six affected web intermediate CAs were logged to Certificate Transparency (CT) logs prior to ecosystem revocation. While this proves that CT-enforcing browsers like Chrome and Firefox could not be targeted with fraudulent certificates, non-CT clients such as command-line tools, Python runtimes, and background servers remained theoretically exposed until local trust stores were updated."
+        "text": "According to Google Chrome Security and eMudhra's official statements, no TLS certificates chaining to the six affected web intermediate CAs were logged to Certificate Transparency (CT) logs prior to ecosystem revocation. While this proves that CT-mandating browsers like Chrome, Safari, and Edge (and Firefox via OneCRL/CRLite real-time blocklists) could not be targeted with unlogged fraudulent certificates, non-CT clients such as command-line tools, Python runtimes, and background servers remained theoretically exposed until local trust stores were updated."
       }
     },
     {
@@ -1028,7 +1028,7 @@
                     <li><strong>The Cryptographic Flaw:</strong> Eight intermediate Certification Authority (CA) certificates created by Indian trust service provider eMudhra during an April 30, 2025 Key Generation Ceremony possessed private keys with near-zero cryptographic entropy. Instead of 384-bit random integers, the private scalars were single-to-triple digit integers: <code>4, 56, 66, 115, 155, 156, 230, 237</code>.</li>
                     <li><strong>Trivial Recovery:</strong> Anyone in possession of the public certificates could recover the corresponding private signing keys on a commodity laptop in less than five milliseconds by computing standard elliptic curve point multiplications.</li>
                     <li><strong>Theoretical Blast Radius:</strong> Possession of a subordinate CA private key empowers an attacker to forge trusted X.509 end-entity certificates for any domain on the internet (e.g., banking, corporate VPNs, cloud providers) or sign malicious code.</li>
-                    <li><strong>The Mitigation Shield (Certificate Transparency):</strong> Google Chrome, Safari, Edge, and modern Firefox enforce Certificate Transparency (CT). Because no unauthorized certificates issued by these intermediates were logged to CT, attackers could not use forged certificates against modern CT-enforcing browsers without triggering immediate hard failures.</li>
+                    <li><strong>The Mitigation Shield (Certificate Transparency & Ecosystem Revocation):</strong> Google Chrome, Apple Safari, and Microsoft Edge strictly enforce Certificate Transparency (CT). Because no unauthorized certificates issued by these intermediates were logged to CT, attackers could not use forged certificates against CT-enforcing browsers without triggering immediate hard failures. Mozilla Firefox, which does not enforce blanket mandatory CT, protected users via immediate real-time OneCRL push revocation.</li>
                     <li><strong>The Non-Browser Danger Zone:</strong> Automated server-to-server TLS connections, microservices, <code>curl</code>, Python (<code>urllib</code>/<code>requests</code>), Go, Java runtimes, Docker containers, and legacy embedded systems do <em>not</em> enforce CT or perform active CRL/OCSP checking by default. These systems remained exposed until local trust stores were explicitly patched.</li>
                     <li><strong>Coordinated Ecosystem Revocation:</strong> Following responsible disclosure on October 17, 2026, Chrome landed an emergency CRLSet update in under two hours; Mozilla deployed a OneCRL background push within hours; Sectigo revoked its cross-signatures; eMudhra revoked all eight intermediates; and Mozilla and Google scheduled the complete removal of <code>emSign ECC Root CA - G3</code> from their root stores.</li>
                 </ul>
@@ -1230,7 +1230,7 @@
                 <ol>
                     <li>A cryptographically secure true random number generator (TRNG) inside a FIPS 140-2 Level 3 HSM generates an unpredictable secret scalar $d$, such that $1 \le d < n$ (where $n$ is the prime group order of base point $G$).</li>
                     <li>The public key $Q = (x_Q, y_Q)$ is computed via elliptic curve point multiplication: $Q = d \cdot G$.</li>
-                    <li>Because $d$ has 384 bits of entropy, finding $d$ given only $Q$ and $G$ requires solving the Elliptic Curve Discrete Logarithm Problem. The best known generic algorithm, Pollard's rho, requires $pprox \sqrt{\pi n / 2} pprox 2^{192}$ point operations—a task that exceeds the collective computational energy of humanity.</li>
+                    <li>Because $d$ has 384 bits of entropy, finding $d$ given only $Q$ and $G$ requires solving the Elliptic Curve Discrete Logarithm Problem. The best known generic algorithm, Pollard's rho, requires $\approx \sqrt{\pi n / 2} \approx 2^{192}$ point operations—a task that exceeds the collective computational energy of humanity.</li>
                 </ol>
 
                 <h3 style="color: var(--accent-red); margin-top: 2rem;"><i class="fas fa-bug"></i> The Key-Wrapping Ceremony Defect</h3>
@@ -1238,7 +1238,7 @@
                     According to eMudhra's official statement and technical filings in Mozilla Bugzilla (#2083449), the failure occurred during an operational automation script execution in the April 30, 2025 Key Generation Ceremony. While executing a routine key-wrapping and unwrapping test on their HSM clusters, an unvetted script malfunctioned. Rather than exporting the securely generated 384-bit random scalar, the script generated and stored an unintended, secondary set of test key pairs whose scalar values were trivially small integers.
                 </p>
                 <p>
-                    Because the key identifiers and labels in the HSM environment were nearly identical, operators accidentally selected the weak test keys when generating the formal Certificate Signing Requests (CSRs). These CSRs were then signed by eMudhra's internal root and submitted to external root programs for inclusion.
+                    Because the key identifiers and labels in the HSM environment were nearly identical, operators accidentally selected the weak test keys when generating the formal Certificate Signing Requests (CSRs). These CSRs were then signed by eMudhra's internal root and submitted to external root programs for inclusion. <em>Note that while eMudhra's initial statement cited this HSM wrap/unwrap test script error as the root cause, a comprehensive independent audit and formal post-mortem detailing the exact HSM firmware parameters remain ongoing.</em>
                 </p>
 
                 <!-- SVG DIAGRAM 1: Cryptographic Entropy Breakdown -->
@@ -1356,7 +1356,7 @@
                 </p>
                 <ol>
                     <li><strong>Network Position Requirement:</strong> A forged certificate does not grant remote code execution or bypass perimeter firewalls. To use a forged certificate, the attacker must intercept the victim's network traffic via an Adversary-in-the-Middle (AitM) vantage point—such as DNS cache poisoning, BGP route hijacking, local ARP spoofing, rogue Wi-Fi access points, or control of an upstream internet gateway.</li>
-                    <li><strong>The Certificate Transparency (CT) Defense:</strong> For web browser traffic, modern browsers enforce <a href="https://www.rfc-editor.org/rfc/rfc6962" target="_blank" rel="noopener">RFC 6962</a> Certificate Transparency. When Google Chrome or Apple Safari connects to an HTTPS server, they mandate that the leaf certificate be accompanied by Signed Certificate Timestamps (SCTs) proving the certificate was logged publicly in at least two independent, append-only CT logs. If an attacker created a forged leaf certificate without logging it, Chrome and Safari would instantly reject the connection with a fatal <code>NET::ERR_CERTIFICATE_TRANSPARENCY_REQUIRED</code> error. If the attacker <em>did</em> submit the forged certificate to a public CT log, automated monitors (like crt.sh or Certstream) would notify the domain owner within seconds.</li>
+                    <li><strong>The Certificate Transparency (CT) Defense:</strong> For web browser traffic, modern browsers enforce <a href="https://www.rfc-editor.org/rfc/rfc6962" target="_blank" rel="noopener">RFC 6962</a> Certificate Transparency. When Google Chrome or Apple Safari connects to an HTTPS server, they mandate that the leaf certificate be accompanied by Signed Certificate Timestamps (SCTs) proving the certificate was logged publicly in at least two independent, append-only CT logs. If an attacker created a forged leaf certificate without logging it, Chrome and Safari would instantly reject the connection with a fatal <code>NET::ERR_CERTIFICATE_TRANSPARENCY_REQUIRED</code> error. Microsoft Edge enforces identical Chromium CT requirements. Mozilla Firefox does not enforce blanket mandatory CT for all connections, but instead relies on its high-speed OneCRL push database and CRLite to revoke fraudulent intermediate and leaf certificates without incurring CT log network overhead. If the attacker <em>did</em> submit the forged certificate to a public CT log, automated monitors (like crt.sh or Certstream) would notify the domain owner within seconds.</li>
                 </ol>
 
                 <!-- SVG DIAGRAM 2: The Attack Surface & Asymmetric Validation Path -->
@@ -1613,10 +1613,10 @@
                     <li><strong>Ubuntu:</strong> Published updated <code>ca-certificates</code> across 22.04 LTS, 24.04 LTS, and 26.04 (Launchpad Bug #2171507).</li>
                     <li><strong>Alpine Linux:</strong> Released <code>ca-certificates 20261020-r0</code>.</li>
                     <li><strong>Arch Linux:</strong> Pushed <code>ca-certificates-mozilla 3.131.1-1</code>.</li>
-                    <li><strong>Python:</strong> Published <code>certifi 2026.10.19</code>, <code>pip 26.2.2</code>, and <code>uv 0.13.4</code>.</li>
-                    <li><strong>Go:</strong> Released Go 1.27.3 and 1.26.10 updating embedded root bundles in <code>crypto/x509</code>.</li>
-                    <li><strong>Rust:</strong> Released <code>webpki-roots 1.0.10</code>.</li>
-                    <li><strong>Electron:</strong> Shipped releases 44.9.1, 43.8.1, and 42.11.16.</li>
+                    <li><strong>Python Ecosystem:</strong> Updated <code>certifi</code> packages syncing Mozilla’s NSS root removal, protecting libraries such as <code>requests</code> and <code>httpx</code> from validating eMudhra chains.</li>
+                    <li><strong>Go Ecosystem:</strong> Standard Go services dynamically consume the updated host OS trust store; containerized Go microservices built <code>FROM scratch</code> require rebuilding with updated CA certificates.</li>
+                    <li><strong>Rust Ecosystem:</strong> Crates relying on Mozilla root stores (such as <code>webpki-roots</code>) released refreshed certificate tables.</li>
+                    <li><strong>Desktop Frameworks:</strong> Downstream frameworks including Electron and Chromium-based embedded runtimes scheduled engine point releases ingesting Chrome's SPKI blocklists.</li>
                 </ul>
 
                 <!-- SECTION 8 -->
@@ -1690,7 +1690,7 @@
                 </p>
                 <ul>
                     <li>Certificates issued directly by the eight revoked intermediates are virtually non-existent based on CT telemetry.</li>
-                    <li>However, if your servers present certificates chaining up to <strong>emSign ECC Root CA - G3</strong>, those certificates <strong>will cease to function in Chrome, Firefox, and curl</strong> as root removals take effect across late October 2026. An estimated 30,000 subscriber certificates require immediate migration to an alternate CA hierarchy (such as Let's Encrypt, DigiCert, or eMudhra's unaffected G1 RSA root).</li>
+                    <li>However, if your servers present certificates chaining up to <strong>emSign ECC Root CA - G3</strong>, those certificates <strong>will cease to function in Chrome, Firefox, and curl</strong> as root removals take effect across late October 2026. While eMudhra's statement characterized production issuance as limited to a single US enterprise ecosystem, internet-wide CT telemetry (analyzed by Generator Labs and independent researchers) identified approximately 30,000 active public certificates chaining to the wider G3 ECC root hierarchy that require migration to an alternate CA hierarchy (such as Let's Encrypt, DigiCert, or eMudhra's unaffected G1 RSA root).</li>
                 </ul>
 
                 <h3 style="color: var(--accent-cyan);">Vector 2: Outbound Egress and API Clients</h3>
@@ -1748,7 +1748,7 @@
                         <li>[ ] Update runtime language bundles:
                             <ul>
                                 <li>Python environments: <code>pip install --upgrade certifi pip</code></li>
-                                <li>Go microservices: Recompile binaries against Go 1.27.3 or 1.26.10.</li>
+                                <li>Go microservices: Rebuild minimal container images (especially <code>scratch</code> or <code>alpine</code>) with updated CA bundles and recompile if embedding custom root tables.</li>
                             </ul>
                         </li>
                         <li>[ ] Test local client rejection against the disclosure verification host (see Section 11).</li>
@@ -1805,29 +1805,30 @@ python3 -c "import urllib.request; print(urllib.request.urlopen('https://dv-g3b-
 
                 <div class="technical-box" style="background: var(--code-bg); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; margin: 1rem 0;">
                     <pre><code class="language-bash"># Inspect whether system OpenSSL default store trusts the chain:
-openssl verify -show_chain -untrusted chain.pem chain.pem
+# (Pass intermediate certificates via -untrusted, and the target certificate as the final parameter)
+openssl verify -show_chain -untrusted intermediate.pem leaf.pem
 
 # Inspect against a specific bundle (e.g. custom corporate CA bundle):
-openssl verify -show_chain -CAfile /etc/ssl/certs/ca-certificates.crt -untrusted chain.pem chain.pem
+openssl verify -show_chain -CAfile /etc/ssl/certs/ca-certificates.crt -untrusted intermediate.pem leaf.pem
 
-# Expected secure output:
-# error 20 at 0 depth lookup: unable to get local issuer certificate
-# error chain.pem: verification failed</code></pre>
+# Expected secure output when root anchor is absent or distrusted:
+# error 20 at 2 depth lookup: unable to get local issuer certificate
+# error leaf.pem: verification failed</code></pre>
                 </div>
 
                 <h3 style="color: var(--accent-cyan);">Testing Revocation via CRL Checking</h3>
                 <p>
-                    If you maintain a local copy of eMudhra’s root CRL (<code>http://crl.emsign.com/?roottlscag3.crl</code>), you can force OpenSSL to evaluate CRL revocation:
+                    If you maintain a local copy of eMudhra’s root CRL (<code>http://crl.emsign.com/?roottlscag3.crl</code>), you can evaluate CRL revocation with OpenSSL. Note that <code>-CAfile</code> supplies the root anchor that issued and signed the CRL, while <code>-crl_check</code> validates the target certificate (or <code>-crl_check_all</code> for the entire chain):
                 </p>
 
                 <div class="technical-box" style="background: var(--code-bg); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; margin: 1rem 0;">
-                    <pre><code class="language-bash"># Download and convert eMudhra's root CRL
+                    <pre><code class="language-bash"># Step 1: Download and convert eMudhra's root CRL from DER to PEM
 curl -s "http://crl.emsign.com/?roottlscag3.crl" | openssl crl -inform DER -out root_crl.pem
 
-# Verify the intermediate certificate against the root CRL:
-openssl verify -crl_check -CRLfile root_crl.pem -untrusted root.pem intermediate.pem
+# Step 2: Verify the intermediate certificate directly against the root anchor and root CRL:
+openssl verify -crl_check -CRLfile root_crl.pem -CAfile root.pem intermediate.pem
 
-# Verified terminal output:
+# Verified terminal output (confirming revocation):
 # intermediate.pem: verification failed
 # error 23 at 0 depth lookup: certificate revoked</code></pre>
                 </div>
@@ -1875,10 +1876,11 @@ awk '/^(###|===) /{skip=0}
                     Java Virtual Machines (JVMs) do not consume the host operating system’s certificate store. Java applications (Spring Boot, Tomcat, Kafka, Elasticsearch) validate external TLS connections against an internal keystore located at <code>$JAVA_HOME/lib/security/cacerts</code>.
                 </p>
                 <div class="technical-box" style="background: var(--code-bg); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; margin: 1rem 0;">
-                    <pre><code class="language-bash"># Check if emSign ECC Root CA - G3 is present in the Java keystore:
-keytool -list -keystore "$JAVA_HOME/lib/security/cacerts" -storepass changeit -alias emsigneccrootcag3
+                    <pre><code class="language-bash"># Step 1: Query the keystore and grep to identify the exact alias used by your OpenJDK distribution:
+keytool -list -keystore "$JAVA_HOME/lib/security/cacerts" -storepass changeit | grep -iE 'emsign|emudhra'
+# Example output: emsigneccrootcag3, Oct 19, 2026, trustedCertEntry,
 
-# Remove the root from the keystore if present:
+# Step 2: Remove the identified root alias from the keystore:
 sudo keytool -delete -alias emsigneccrootcag3 -keystore "$JAVA_HOME/lib/security/cacerts" -storepass changeit</code></pre>
                 </div>
 
@@ -1893,7 +1895,7 @@ sudo keytool -delete -alias emsigneccrootcag3 -keystore "$JAVA_HOME/lib/security
 
                 <h3 style="color: var(--accent-cyan);">Statically Compiled Go Binaries</h3>
                 <p>
-                    Go programs compiled with <code>CGO_ENABLED=0</code> bundle their own root store logic or parse system bundles at runtime via Go’s <code>crypto/x509</code> package. Go maintainers released emergency versions <strong>1.27.3</strong> and <strong>1.26.10</strong>. Security teams must ensure proprietary Go services and commercial CLI binaries (such as HashiCorp Vault or Kubernetes tooling) are recompiled against these updated Go versions.
+                    On Linux and Unix platforms, Go’s standard library <code>crypto/x509</code> package dynamically reads system bundles (such as <code>/etc/ssl/certs/ca-certificates.crt</code>) at runtime. However, in container environments built <code>FROM scratch</code> or minimal images where system bundles are absent or frozen, statically linked Go binaries rely on whatever CA bundle was copied during build time, or use embedded trust libraries (such as <code>golang.org/x/crypto/x509roots</code>). If your Go services run inside stripped container images, updating the host OS does not remediate the application—the container images must be rebuilt with an updated CA bundle, and any statically embedded root tables refreshed.
                 </p>
 
                 <!-- SECTION 13 -->
@@ -1911,27 +1913,28 @@ sudo keytool -delete -alias emsigneccrootcag3 -keystore "$JAVA_HOME/lib/security
 
                 <div class="technical-box" style="background: var(--code-bg); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1.25rem; margin: 1rem 0;">
                     <pre><code class="language-zeek"># Zeek detection signature for eMudhra weak intermediate CAs
-event ssl_established(c: connection) {
-    if (!c$ssl?$cert_chain || |c$ssl$cert_chain| &lt; 2)
-        return;
+@load base/frameworks/notice
+@load base/files/x509
 
-    # Known compromised intermediate SPKI SHA-256 prefixes
-    local weak_spki_prefixes = set(
-        "ebed6475", # EM DV TLS CA - G3B
-        "49dd353d", # EM DV TLS CA - G3C
-        "43bffa19", # EM OV TLS CA - G3B
-        "63ecefee", # EM OV TLS CA - G3C
-        "e0254c7f", # EM EV TLS CA - G3B
-        "5c0660a2"  # EM EV TLS CA - G3C
-    );
+module PKI_Audit;
 
-    for (i in c$ssl$cert_chain) {
-        local cert = c$ssl$cert_chain[i];
-        if (cert?$issuer &amp;&amp; /O=eMudhra/ in cert$issuer) {
-            NOTICE([$note=Notice::Action,
-                    $msg=fmt("Detected TLS session presenting eMudhra intermediate: %s", cert$subject),
-                    $conn=c]);
-        }
+export {
+    redef enum Notice::Type += {
+        Weak_eMudhra_Intermediate_Observed
+    };
+
+    # Compromised intermediate Subject Key Identifier / SPKI prefixes
+    const monitored_ca_issuers = /O=eMudhra/ &amp;redef;
+}
+
+event x509_certificate(f: fa_file, cert_ref: opaque of x509, cert: X509::Certificate) {
+    if (cert?$issuer &amp;&amp; monitored_ca_issuers in cert$issuer) {
+        NOTICE([
+            $note=Weak_eMudhra_Intermediate_Observed,
+            $msg=fmt("Detected potentially compromised eMudhra intermediate certificate in transit: CN=%s", cert$subject),
+            $sub=cert$issuer,
+            $f=f
+        ]);
     }
 }</code></pre>
                 </div>
