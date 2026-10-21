@@ -1,65 +1,65 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2026-10-21T10:02:34.432941+05:30 IST (2026-10-21 04:32 UTC)
+// Updated: 2026-10-21T19:12:05.058593+05:30 IST (2026-10-21 13:42 UTC)
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2026-10-21T10:02:33.905999+05:30",
-    "lastUpdatedFormatted": "Oct 21, 2026 at 10:02 AM IST",
-    "lastUpdatedUtc": "2026-10-21 04:32 UTC",
+    "lastUpdated": "2026-10-21T19:12:04.112638+05:30",
+    "lastUpdatedFormatted": "Oct 21, 2026 at 07:12 PM IST",
+    "lastUpdatedUtc": "2026-10-21 13:42 UTC",
     "comparisonPeriod": "Oct 20 \u2013 Oct 21, 2026",
     "stats": {
-        "totalIOCs": 106990,
+        "totalIOCs": 108399,
         "byType": {
-            "url": 45418,
-            "ip": 40552,
-            "hash": 5625,
-            "domain": 2720,
-            "ssl-cert": 10985,
+            "url": 45844,
+            "ip": 41227,
+            "hash": 5896,
+            "domain": 2742,
+            "ssl-cert": 11000,
             "ip-range": 1690
         },
         "byVendor": {
-            "OpenPhish": 1240,
-            "Malware Bazaar": 3365,
+            "OpenPhish": 1540,
+            "Malware Bazaar": 3533,
             "Spamhaus DROP": 1690,
-            "CINS Army": 30014,
-            "Blocklist.de": 7618,
-            "URLhaus": 34747,
-            "ThreatFox": 17326,
+            "CINS Army": 30496,
+            "Blocklist.de": 7788,
+            "URLhaus": 34772,
+            "ThreatFox": 17575,
             "Feodo Tracker": 5,
-            "SSL Blacklist": 10985
+            "SSL Blacklist": 11000
         },
         "topMalware": [
             {
                 "name": "Vidar",
-                "count": 2189,
+                "count": 2279,
                 "types": [
-                    "ip",
+                    "ssl-cert",
+                    "domain",
                     "hash",
                     "url",
-                    "ssl-cert",
-                    "domain"
+                    "ip"
                 ]
             },
             {
                 "name": "Mirai",
-                "count": 1807,
+                "count": 1870,
                 "types": [
-                    "hash",
                     "url",
+                    "domain",
                     "ip",
-                    "domain"
+                    "hash"
                 ]
             },
             {
                 "name": "AsyncRAT",
-                "count": 1655,
+                "count": 1661,
                 "types": [
-                    "ip",
+                    "ssl-cert",
+                    "domain",
                     "hash",
                     "url",
-                    "ssl-cert",
-                    "domain"
+                    "ip"
                 ]
             },
             {
@@ -79,10 +79,10 @@ window.threatIntelData = {
             },
             {
                 "name": "QuasarRAT",
-                "count": 737,
+                "count": 738,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
@@ -94,7 +94,7 @@ window.threatIntelData = {
             },
             {
                 "name": "IClickFix",
-                "count": 715,
+                "count": 716,
                 "types": [
                     "domain"
                 ]
@@ -107,18 +107,18 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": "win.pure_rat",
-                "count": 650,
+                "name": "AMOS",
+                "count": 666,
                 "types": [
-                    "url"
+                    "url",
+                    "domain",
+                    "hash"
                 ]
             },
             {
-                "name": "AMOS",
-                "count": 609,
+                "name": "win.pure_rat",
+                "count": 650,
                 "types": [
-                    "hash",
-                    "domain",
                     "url"
                 ]
             },
@@ -133,41 +133,347 @@ window.threatIntelData = {
                 "name": "LummaStealer",
                 "count": 563,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
                 "name": "OffLoader",
-                "count": 547,
+                "count": 550,
                 "types": [
                     "ssl-cert"
                 ]
             },
             {
                 "name": "ConnectWise",
-                "count": 513,
+                "count": 516,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             }
         ],
         "recentIOCs": [
             {
+                "type": "ssl-cert",
+                "indicator": "a2e76af14703e85cc8a27f108e0ee93ce2d9afb4",
+                "description": "Malicious SSL certificate - Malware C&C",
+                "timestamp": "2026-09-29 08:26:19",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "Malware",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "c234496c7b0abcd873bb6bb5a54288b6d340b6ff",
+                "description": "Malicious SSL certificate - QuasarRAT C&C",
+                "timestamp": "2026-09-29 08:13:53",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "QuasarRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "6aa91683111e7ecf0bc61912fecc00b294754b4e",
+                "description": "Malicious SSL certificate - ConnectWise C&C",
+                "timestamp": "2026-09-29 08:13:12",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "ConnectWise",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "51616539837604afac222acc6e7a1cd2933f9b38",
+                "description": "Malicious SSL certificate - OffLoader C&C",
+                "timestamp": "2026-09-29 08:07:50",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "OffLoader",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "557d7dfc6cc7127dfa30f7b31aa6462b21017d0a",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-09-29 07:56:03",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "7cbe2790fbebfc1e6cd0d4a1ec6e75562c96328d",
+                "description": "Malicious SSL certificate - Malware C&C",
+                "timestamp": "2026-09-29 07:53:57",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "Malware",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "89fd8b9884e947aeeed70793c9eed1e42248bf0f",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-09-29 07:23:00",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "205d49b6c7313e16e931e1b5873cc20be0dee85b",
+                "description": "Malicious SSL certificate - AsyncRAT C&C",
+                "timestamp": "2026-09-29 07:22:26",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "AsyncRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "8c2815dd9c294efb082c90739f0ede4823a4724d",
+                "description": "Malicious SSL certificate - OrcusRAT C&C",
+                "timestamp": "2026-09-29 07:22:05",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "OrcusRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "94c4ec66b6f57c29ac935890d7796decea67af37",
+                "description": "Malicious SSL certificate - AsyncRAT C&C",
+                "timestamp": "2026-09-29 07:21:07",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "AsyncRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "38cc7377529ac88a847e31466948df2de25008f4",
+                "description": "Malicious SSL certificate - OffLoader C&C",
+                "timestamp": "2026-09-29 07:20:53",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "OffLoader",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "81c9eddccea61f8fa9788208189d79b82e3443a4",
+                "description": "Malicious SSL certificate - AsyncRAT C&C",
+                "timestamp": "2026-09-29 07:20:46",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "AsyncRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "c5fad8ac582663e331f0a5bea7a2c0b919b1b275",
+                "description": "Malicious SSL certificate - Malware C&C",
+                "timestamp": "2026-09-29 07:19:54",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "Malware",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "b9a4c53e64dd5dd4e23e24d4f525bd30e58a875a",
+                "description": "Malicious SSL certificate - Havoc C&C",
+                "timestamp": "2026-09-29 07:19:17",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "Havoc",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "1a0f195729623afdd81c23edb2b2fbbc6675bce7",
+                "description": "Malicious SSL certificate - OffLoader C&C",
+                "timestamp": "2026-09-29 07:15:17",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "OffLoader",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "ac9d756502ee8def404c880dc79c4b607fa91e1e",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-09-29 07:07:57",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "2be66749a6e32a9c93985853c2baffa660357354",
+                "description": "Malicious SSL certificate - AsyncRAT C&C",
+                "timestamp": "2026-09-29 07:06:42",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "AsyncRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "f871be6da75524aa3438fe29e8efdb3adf8e854e",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-09-29 06:34:43",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-10-21 10:02 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-10-21T10:02:31.498916+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
                 "type": "ip",
                 "indicator": "162[.]243[.]103[.]246",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-10-21 04:38 UTC",
+                "timestamp": "2026-10-21 10:02 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
+                "analysisTime": "2026-10-21 10:02 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-10-21T04:38:21.298637+05:30",
+                "addedAt": "2026-10-21T10:02:30.246718+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
@@ -175,364 +481,79 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "178[.]62[.]3[.]223",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-10-21 04:38 UTC",
+                "timestamp": "2026-10-21 10:02 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
+                "analysisTime": "2026-10-21 10:02 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-10-21T04:38:21.298637+05:30",
+                "addedAt": "2026-10-21T10:02:30.246718+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
-            },
-            {
-                "type": "ip",
-                "indicator": "27[.]133[.]154[.]218",
-                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-10-21 04:38 UTC",
-                "source": "Feodo Tracker",
-                "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "c2",
-                    "banking-trojan"
-                ],
-                "addedAt": "2026-10-21T04:38:21.298637+05:30",
-                "campaign": "Banking Malware C2",
-                "confidence": "High (Active C2)"
-            },
-            {
-                "type": "ip",
-                "indicator": "34[.]204[.]119[.]63",
-                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-10-21 04:38 UTC",
-                "source": "Feodo Tracker",
-                "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "c2",
-                    "banking-trojan"
-                ],
-                "addedAt": "2026-10-21T04:38:21.298637+05:30",
-                "campaign": "Banking Malware C2",
-                "confidence": "High (Active C2)"
-            },
-            {
-                "type": "ip",
-                "indicator": "50[.]16[.]16[.]211",
-                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-10-21 04:38 UTC",
-                "source": "Feodo Tracker",
-                "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "c2",
-                    "banking-trojan"
-                ],
-                "addedAt": "2026-10-21T04:38:21.298637+05:30",
-                "campaign": "Banking Malware C2",
-                "confidence": "High (Active C2)"
-            },
-            {
-                "type": "ip",
-                "indicator": "156[.]240[.]41[.]55",
-                "description": "VShell (botnet_cc)",
-                "timestamp": "2026-10-20 23:05:06",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "VShell",
-                "confidence": "100%"
-            },
-            {
-                "type": "ip",
-                "indicator": "156[.]240[.]41[.]48",
-                "description": "VShell (botnet_cc)",
-                "timestamp": "2026-10-20 23:05:05",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "VShell",
-                "confidence": "100%"
-            },
-            {
-                "type": "ip",
-                "indicator": "156[.]240[.]41[.]49",
-                "description": "VShell (botnet_cc)",
-                "timestamp": "2026-10-20 23:05:05",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "VShell",
-                "confidence": "100%"
-            },
-            {
-                "type": "ip",
-                "indicator": "156[.]240[.]41[.]51",
-                "description": "VShell (botnet_cc)",
-                "timestamp": "2026-10-20 23:05:05",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "VShell",
-                "confidence": "100%"
-            },
-            {
-                "type": "ip",
-                "indicator": "156[.]240[.]41[.]36",
-                "description": "VShell (botnet_cc)",
-                "timestamp": "2026-10-20 23:05:04",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "botnet",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "VShell",
-                "confidence": "100%"
-            },
-            {
-                "type": "url",
-                "indicator": "hxxps://k1[.]abbc123[.]org/fs/",
-                "description": "Vidar (botnet_cc)",
-                "timestamp": "2026-10-20 23:00:49",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "Vidar",
-                "confidence": "100%"
-            },
-            {
-                "type": "url",
-                "indicator": "hxxps://aragoniteforum[.]info/logout/oauth-dom[.]js",
-                "description": "SmartApeSG (payload_delivery)",
-                "timestamp": "2026-10-20 22:58:29",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "SmartApeSG",
-                "confidence": "100%"
-            },
-            {
-                "type": "url",
-                "indicator": "hxxps://k1[.]abbc123[.]org/e/",
-                "description": "Vidar (botnet_cc)",
-                "timestamp": "2026-10-20 22:55:48",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "Vidar",
-                "confidence": "100%"
-            },
-            {
-                "type": "domain",
-                "indicator": "indigo-flicker-zephyr-truior[.]pro",
-                "description": "IClickFix (payload_delivery)",
-                "timestamp": "2026-10-20 22:55:07",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "IClickFix",
-                "confidence": "100%"
-            },
-            {
-                "type": "hash",
-                "indicator": "ffea3070af4b850efe2136558323c5a249664774f1d3b9e5b2bfb7233c5ed554",
-                "description": "Mirai (payload)",
-                "timestamp": "2026-10-20 22:54:26",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "malware",
-                    "hash",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "Mirai",
-                "confidence": "90%"
-            },
-            {
-                "type": "hash",
-                "indicator": "34f29ee4bc4af44fd195172378359088cd8ea4d7d39a66713a87f7087acaf933",
-                "description": "SalatStealer (payload)",
-                "timestamp": "2026-10-20 22:54:25",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "malware",
-                    "hash",
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "SalatStealer",
-                "confidence": "100%"
-            },
-            {
-                "type": "domain",
-                "indicator": "naamtravel[.]com[.]sg",
-                "description": "Unknown Loader (payload_delivery)",
-                "timestamp": "2026-10-20 22:53:34",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "Unknown Loader",
-                "confidence": "75%"
-            },
-            {
-                "type": "domain",
-                "indicator": "holistixwellness[.]co[.]uk",
-                "description": "IClickFix (payload_delivery)",
-                "timestamp": "2026-10-20 22:52:46",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "IClickFix",
-                "confidence": "75%"
-            },
-            {
-                "type": "domain",
-                "indicator": "jannymod[.]com",
-                "description": "IClickFix (payload_delivery)",
-                "timestamp": "2026-10-20 22:52:46",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "IClickFix",
-                "confidence": "75%"
-            },
-            {
-                "type": "url",
-                "indicator": "hxxps://k1[.]abbc123[.]org/msq/",
-                "description": "Vidar (botnet_cc)",
-                "timestamp": "2026-10-20 22:50:48",
-                "source": "ThreatFox",
-                "sourceUrl": "https://threatfox.abuse.ch/",
-                "analysisTime": "2026-10-21 04:38 IST",
-                "tags": [
-                    "verified"
-                ],
-                "addedAt": "2026-10-21T04:38:19.937435+05:30",
-                "campaign": "Vidar",
-                "confidence": "100%"
             }
         ],
-        "lastUpdated": "2026-10-21T10:02:33.905999+05:30",
-        "lastUpdatedFormatted": "Oct 21, 2026 at 10:02 AM IST",
-        "lastUpdatedUtc": "2026-10-21 04:32 UTC"
+        "lastUpdated": "2026-10-21T19:12:04.112638+05:30",
+        "lastUpdatedFormatted": "Oct 21, 2026 at 07:12 PM IST",
+        "lastUpdatedUtc": "2026-10-21 13:42 UTC"
     },
     "vendors": {
         "OpenPhish": {
             "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
             "website": "https://openphish.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 1540,
+            "iocCount": 1840,
             "iocDataUrl": "https://thehgtech.com/ioc-data/openphish.json",
             "stats": {
-                "total": 1540,
+                "total": 1840,
                 "newInLastHour": 300,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://nus[.]nbt[.]mybluehost[.]me/website_9f694753/055/Newcorreos%20(1)/cc/login[.]php?clckid=4e6f526c",
-                "hxxps://www[.]roblox[.]com[.]ml/users/346612762043/profile",
-                "hxxps://sp20ct10-davrelo-biz-kunima[.]pages[.]dev/send_appeal_request",
-                "hxxps://sp18ct10-nurlek-biz-zavuno[.]pages[.]dev/send_appeal_request",
-                "hxxps://cont17ct-suneri-biz-mavok-telra[.]pages[.]dev/send_appeal_request"
+                "hxxp://info-ledgr-live[.]pages[.]dev/",
+                "hxxp://41hyh-fgg-6s73-70oib-14-09-2026-hh[.]pages[.]dev/",
+                "hxxps://phmacentral[.]info/dashboard-eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9[.]eyJjYW1wYWlnbklkIjoiNWFiYmY2MjQtOTc3ZC0xMWVmLWJhZWItMjk2ZWI2NWZmZDY2IiwiZW1haWwiOiJicnlhbkBtY2tl-gg/",
+                "hxxps://www[.]zqwxw[.]com/news/1174[.]html",
+                "hxxps://sp26ct10-norvake-biz-zulimo[.]pages[.]dev/"
             ]
         },
         "Malware Bazaar": {
             "description": "Recent malware samples with hashes and URLs. Tracks active malware distribution from abuse.ch community.",
             "website": "https://bazaar.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 3533,
+            "iocCount": 4009,
             "iocDataUrl": "https://thehgtech.com/ioc-data/malware-bazaar.json",
             "stats": {
-                "total": 3533,
-                "newInLastHour": 168,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "total": 4009,
+                "newInLastHour": 476,
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "hash"
             ],
             "sampleIndicators": [
-                "212015fd97692d8399b59cff4e63685fc957b7ec3fd0eb281701d2bd20206a08",
-                "7b02604f513665f853473c4705305702d56842498215f9c8f9f474598a58d44d",
-                "8b1482b4867096e9b74c35599c17e68a3b3b7d748dad8dfb299db32ade6c60df",
-                "d094501301dd80dfa8c14e28f56149342dd89e44d7a416030730f107c5973df3",
-                "b28e77c5130ee1d1663b459589648e75ae4732adf93c0401d0bff41acba59ce8"
+                "02414b05a19c9ff826c3cfca15849c0a32a26dd5593ce6165f01e883a6fc6ae2",
+                "f3e50b8e9f28213c52ad0001a3fd251075bc79583d80d433b4e47d95a238bebd",
+                "d73112757c5e01bf2fb84dfb69f5d51bba8e63e72d4eb862266665a93a76be0a",
+                "4504dca6f7874b8c561ec4af241fcce472cf760e9b66cafe2aa09fe09116a28c",
+                "1c1e6ff2befc51e413c37961e0cfc2e4bca62043560964e9df56abd477568b77"
             ]
         },
         "Spamhaus DROP": {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1690,
+            "iocCount": 1691,
             "iocDataUrl": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "stats": {
-                "total": 1690,
+                "total": 1691,
                 "newInLastHour": 1,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "ip-range"
@@ -549,34 +570,34 @@ window.threatIntelData = {
             "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
             "website": "http://cinsscore.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 30496,
+            "iocCount": 31480,
             "iocDataUrl": "https://thehgtech.com/ioc-data/cins-army.json",
             "stats": {
-                "total": 30496,
+                "total": 31480,
                 "newInLastHour": 15000,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "ip"
             ],
             "sampleIndicators": [
+                "1[.]12[.]229[.]231",
                 "1[.]14[.]149[.]30",
-                "1[.]192[.]129[.]106",
-                "1[.]193[.]57[.]156",
-                "1[.]24[.]16[.]169",
-                "1[.]24[.]16[.]170"
+                "1[.]168[.]172[.]140",
+                "1[.]177[.]162[.]4",
+                "1[.]193[.]57[.]156"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 7788,
+            "iocCount": 8142,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "stats": {
-                "total": 7788,
-                "newInLastHour": 5384,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "total": 8142,
+                "newInLastHour": 5266,
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "ip"
@@ -593,47 +614,47 @@ window.threatIntelData = {
             "description": "Malware distribution URLs from URLhaus. Tracks active malware hosting sites and payload delivery infrastructure.",
             "website": "https://urlhaus.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 34772,
+            "iocCount": 35628,
             "iocDataUrl": "https://thehgtech.com/ioc-data/urlhaus.json",
             "stats": {
-                "total": 34772,
-                "newInLastHour": 33672,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "total": 35628,
+                "newInLastHour": 34528,
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
                 "url"
             ],
             "sampleIndicators": [
-                "hxxp://123[.]14[.]233[.]91:52224/bin[.]sh",
-                "hxxp://123[.]4[.]235[.]65:55563/bin[.]sh",
-                "hxxp://112[.]248[.]190[.]135:55046/i",
-                "hxxp://112[.]248[.]190[.]135:55046/bin[.]sh",
-                "hxxp://36[.]88[.]136[.]194:50193/i"
+                "hxxps://raw[.]githubusercontent[.]com/rcrishabh/Loud-No-More/refs/heads/master/endotys/No-More-Loud-v1[.]0[.]zip",
+                "hxxps://raw[.]githubusercontent[.]com/Shishir-Singh-666/nodepay2nd/refs/heads/main/src/nd_nodepay_v1[.]9[.]zip",
+                "hxxps://raw[.]githubusercontent[.]com/Kurvaan/ptx-tutorial-by-aislop/refs/heads/main/sections/by_ptx_tutorial_aislop_3[.]2[.]zip",
+                "hxxps://raw[.]githubusercontent[.]com/Gajaa-Azhura/MERN-application/refs/heads/master/src/assets/application_MER_2[.]1[.]zip",
+                "hxxps://raw[.]githubusercontent[.]com/Gourdja/sonic-skills/refs/heads/main/skills/audio-numerics-review/skills-sonic-v3[.]4[.]zip"
             ]
         },
         "ThreatFox": {
             "description": "Multi-type IOC feed from ThreatFox. Includes IPs, domains, URLs, and hashes with malware family attribution.",
             "website": "https://threatfox.abuse.ch/",
             "updateFrequency": "Real-time",
-            "iocCount": 17575,
+            "iocCount": 18876,
             "iocDataUrl": "https://thehgtech.com/ioc-data/threatfox.json",
             "stats": {
-                "total": 17575,
-                "newInLastHour": 5052,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "total": 18876,
+                "newInLastHour": 6027,
+                "lastUpdate": "2026-10-21 13:41 UTC"
             },
             "types": [
-                "hash",
-                "ip",
+                "url",
                 "domain",
-                "url"
+                "ip",
+                "hash"
             ],
             "sampleIndicators": [
-                "c5bd449668102c0e01da1394d924d61e71b8e166a03c98b22d26c10cdf9b98ed",
-                "hxxps://yb[.]abblbet[.]org/o5/",
-                "8c503247e0851e81980e1205ad7578b2b39a0d87c6acefb8d2b876206f71d68b",
-                "d9a13c77484e0f62d7db9f224bc87acaa0bb8a8bbccbaaaf96738a9b8f022ecb",
-                "c[.]9winn[.]org"
+                "b4ec1ea1528a1cf690b1067a214751cfee1ef0eca037c7989b4bef17fbf6b53b",
+                "89[.]32[.]41[.]109",
+                "89[.]32[.]41[.]111",
+                "89[.]32[.]41[.]117",
+                "202cd87d43a3908174e7b219c61ad3728cc6d46469a54f86861470c19677a6da"
             ]
         },
         "Feodo Tracker": {
@@ -645,7 +666,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 5,
                 "newInLastHour": 5,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "lastUpdate": "2026-10-21 13:42 UTC"
             },
             "types": [
                 "ip"
@@ -662,40 +683,346 @@ window.threatIntelData = {
             "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
             "website": "https://sslbl.abuse.ch/",
             "updateFrequency": "Daily",
-            "iocCount": 11000,
+            "iocCount": 11011,
             "iocDataUrl": "https://thehgtech.com/ioc-data/ssl-blacklist.json",
             "stats": {
-                "total": 11000,
-                "newInLastHour": 18,
-                "lastUpdate": "2026-10-21 04:32 UTC"
+                "total": 11011,
+                "newInLastHour": 16,
+                "lastUpdate": "2026-10-21 13:42 UTC"
             },
             "types": [
                 "ssl-cert"
             ],
             "sampleIndicators": [
-                "e10fe9007408391e4c3a808ae4b7c4cb6e7df1a3",
-                "9061737b3e3cb6dae0a02abe33346d72ccd27af4",
-                "59fb8a90649cac57e345fbd3af9f76d6a73fac12",
-                "9a2205a15c886d6278d9e0d60747e8ad287b6c7b",
-                "75964711a6e10849d232b5df09f428a4eaa48a68"
+                "c2cc28a75ec95c7f4109d6af0e02b9c1273fb774",
+                "ee44c0aa609918ca30691fe0f49b87945d450bcd",
+                "3f00a128af6109bb4ba928f2a73caeb1820f561d",
+                "e86dd566921f2733639879ecd1a3be715644cec6",
+                "5c5c6ce618ac3209dcb239bafd6151d86ca490b4"
             ]
         }
     },
     "overview": [
         {
+            "type": "ssl-cert",
+            "indicator": "a2e76af14703e85cc8a27f108e0ee93ce2d9afb4",
+            "description": "Malicious SSL certificate - Malware C&C",
+            "timestamp": "2026-09-29 08:26:19",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "Malware",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "c234496c7b0abcd873bb6bb5a54288b6d340b6ff",
+            "description": "Malicious SSL certificate - QuasarRAT C&C",
+            "timestamp": "2026-09-29 08:13:53",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "QuasarRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "6aa91683111e7ecf0bc61912fecc00b294754b4e",
+            "description": "Malicious SSL certificate - ConnectWise C&C",
+            "timestamp": "2026-09-29 08:13:12",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "ConnectWise",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "51616539837604afac222acc6e7a1cd2933f9b38",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-29 08:07:50",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "OffLoader",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "557d7dfc6cc7127dfa30f7b31aa6462b21017d0a",
+            "description": "Malicious SSL certificate - PureRAT C&C",
+            "timestamp": "2026-09-29 07:56:03",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "PureRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "7cbe2790fbebfc1e6cd0d4a1ec6e75562c96328d",
+            "description": "Malicious SSL certificate - Malware C&C",
+            "timestamp": "2026-09-29 07:53:57",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "Malware",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "89fd8b9884e947aeeed70793c9eed1e42248bf0f",
+            "description": "Malicious SSL certificate - PureRAT C&C",
+            "timestamp": "2026-09-29 07:23:00",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "PureRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "205d49b6c7313e16e931e1b5873cc20be0dee85b",
+            "description": "Malicious SSL certificate - AsyncRAT C&C",
+            "timestamp": "2026-09-29 07:22:26",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "AsyncRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "8c2815dd9c294efb082c90739f0ede4823a4724d",
+            "description": "Malicious SSL certificate - OrcusRAT C&C",
+            "timestamp": "2026-09-29 07:22:05",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "OrcusRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "94c4ec66b6f57c29ac935890d7796decea67af37",
+            "description": "Malicious SSL certificate - AsyncRAT C&C",
+            "timestamp": "2026-09-29 07:21:07",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "AsyncRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "38cc7377529ac88a847e31466948df2de25008f4",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-29 07:20:53",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "OffLoader",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "81c9eddccea61f8fa9788208189d79b82e3443a4",
+            "description": "Malicious SSL certificate - AsyncRAT C&C",
+            "timestamp": "2026-09-29 07:20:46",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "AsyncRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "c5fad8ac582663e331f0a5bea7a2c0b919b1b275",
+            "description": "Malicious SSL certificate - Malware C&C",
+            "timestamp": "2026-09-29 07:19:54",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "Malware",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "b9a4c53e64dd5dd4e23e24d4f525bd30e58a875a",
+            "description": "Malicious SSL certificate - Havoc C&C",
+            "timestamp": "2026-09-29 07:19:17",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "Havoc",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "1a0f195729623afdd81c23edb2b2fbbc6675bce7",
+            "description": "Malicious SSL certificate - OffLoader C&C",
+            "timestamp": "2026-09-29 07:15:17",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "OffLoader",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "ac9d756502ee8def404c880dc79c4b607fa91e1e",
+            "description": "Malicious SSL certificate - PureRAT C&C",
+            "timestamp": "2026-09-29 07:07:57",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "PureRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "2be66749a6e32a9c93985853c2baffa660357354",
+            "description": "Malicious SSL certificate - AsyncRAT C&C",
+            "timestamp": "2026-09-29 07:06:42",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "AsyncRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "f871be6da75524aa3438fe29e8efdb3adf8e854e",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-09-29 06:34:43",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-10-21T10:02:31.498916+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
             "type": "ip",
             "indicator": "162[.]243[.]103[.]246",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-10-21 04:38 UTC",
+            "timestamp": "2026-10-21 10:02 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-10-21T04:38:21.298637+05:30",
+            "addedAt": "2026-10-21T10:02:30.246718+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -703,16 +1030,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "178[.]62[.]3[.]223",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-10-21 04:38 UTC",
+            "timestamp": "2026-10-21 10:02 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-10-21T04:38:21.298637+05:30",
+            "addedAt": "2026-10-21T10:02:30.246718+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -720,16 +1047,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "27[.]133[.]154[.]218",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-10-21 04:38 UTC",
+            "timestamp": "2026-10-21 10:02 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-10-21T04:38:21.298637+05:30",
+            "addedAt": "2026-10-21T10:02:30.246718+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -737,16 +1064,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "34[.]204[.]119[.]63",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-10-21 04:38 UTC",
+            "timestamp": "2026-10-21 10:02 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-10-21T04:38:21.298637+05:30",
+            "addedAt": "2026-10-21T10:02:30.246718+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -754,1485 +1081,1288 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "50[.]16[.]16[.]211",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-10-21 04:38 UTC",
+            "timestamp": "2026-10-21 10:02 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-10-21T04:38:21.298637+05:30",
+            "addedAt": "2026-10-21T10:02:30.246718+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
         {
-            "type": "ip",
-            "indicator": "156[.]240[.]41[.]55",
-            "description": "VShell (botnet_cc)",
-            "timestamp": "2026-10-20 23:05:06",
+            "type": "hash",
+            "indicator": "c5bd449668102c0e01da1394d924d61e71b8e166a03c98b22d26c10cdf9b98ed",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 04:28:22",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
-                "botnet",
-                "verified"
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/c5bd449668102c0e01da1394d924d61e71b8e166a03c98b22d26c10cdf9b98ed"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "VShell",
-            "confidence": "100%"
-        },
-        {
-            "type": "ip",
-            "indicator": "156[.]240[.]41[.]48",
-            "description": "VShell (botnet_cc)",
-            "timestamp": "2026-10-20 23:05:05",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "botnet",
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "VShell",
-            "confidence": "100%"
-        },
-        {
-            "type": "ip",
-            "indicator": "156[.]240[.]41[.]49",
-            "description": "VShell (botnet_cc)",
-            "timestamp": "2026-10-20 23:05:05",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "botnet",
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "VShell",
-            "confidence": "100%"
-        },
-        {
-            "type": "ip",
-            "indicator": "156[.]240[.]41[.]51",
-            "description": "VShell (botnet_cc)",
-            "timestamp": "2026-10-20 23:05:05",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "botnet",
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "VShell",
-            "confidence": "100%"
-        },
-        {
-            "type": "ip",
-            "indicator": "156[.]240[.]41[.]36",
-            "description": "VShell (botnet_cc)",
-            "timestamp": "2026-10-20 23:05:04",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "botnet",
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "VShell",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
             "confidence": "100%"
         },
         {
             "type": "url",
-            "indicator": "hxxps://k1[.]abbc123[.]org/fs/",
+            "indicator": "hxxps://yb[.]abblbet[.]org/o5/",
             "description": "Vidar (botnet_cc)",
-            "timestamp": "2026-10-20 23:00:49",
+            "timestamp": "2026-10-21 04:25:48",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Vidar",
-            "confidence": "100%"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxps://aragoniteforum[.]info/logout/oauth-dom[.]js",
-            "description": "SmartApeSG (payload_delivery)",
-            "timestamp": "2026-10-20 22:58:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "SmartApeSG",
-            "confidence": "100%"
-        },
-        {
-            "type": "url",
-            "indicator": "hxxps://k1[.]abbc123[.]org/e/",
-            "description": "Vidar (botnet_cc)",
-            "timestamp": "2026-10-20 22:55:48",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Vidar",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "indigo-flicker-zephyr-truior[.]pro",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:55:07",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
             "confidence": "100%"
         },
         {
             "type": "hash",
-            "indicator": "ffea3070af4b850efe2136558323c5a249664774f1d3b9e5b2bfb7233c5ed554",
-            "description": "Mirai (payload)",
-            "timestamp": "2026-10-20 22:54:26",
+            "indicator": "8c503247e0851e81980e1205ad7578b2b39a0d87c6acefb8d2b876206f71d68b",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 04:24:27",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/8c503247e0851e81980e1205ad7578b2b39a0d87c6acefb8d2b876206f71d68b"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "d9a13c77484e0f62d7db9f224bc87acaa0bb8a8bbccbaaaf96738a9b8f022ecb",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 04:20:52",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/d9a13c77484e0f62d7db9f224bc87acaa0bb8a8bbccbaaaf96738a9b8f022ecb"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "c[.]9winn[.]org",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://c[.]9winn[.]org/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yb[.]abblbet[.]org/kyr/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "612b706f54d148111f20e393792fda57f73590b6bc6865a4e49656e670f9eefd",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 04:16:20",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/612b706f54d148111f20e393792fda57f73590b6bc6865a4e49656e670f9eefd"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yb[.]abblbet[.]org/nc/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:15:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yb[.]abblbet[.]org/wb/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:10:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://yb[.]abblbet[.]org/hq0/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:47",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]110",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:10",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]11",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:09",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]109",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:07",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]107",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]108",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 04:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://c[.]9winn[.]org",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:03:39",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/yq/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 04:00:47",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/gb/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:55:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "2261c63c17c6ae904a419f98f51a8fd7607a3a0a952d87c4e85c36aaea158387",
+            "description": "Unknown Loader (payload)",
+            "timestamp": "2026-10-21 03:54:34",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "malware",
                 "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Unknown Loader",
+            "confidence": "85%"
+        },
+        {
+            "type": "hash",
+            "indicator": "878c7206ad7699a6d1db1422b83de0b8cc1fb5d9cb0a76c7eded858e9808638b",
+            "description": "Unknown Loader (payload)",
+            "timestamp": "2026-10-21 03:54:32",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Unknown Loader",
+            "confidence": "85%"
+        },
+        {
+            "type": "hash",
+            "indicator": "47f831411856e1523ff9ad36f02e16ac5ac57682002ff54ad917877e4601ce3a",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 03:54:31",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "7a65172b9a59f8d7e958871a5e55f215f32bb17d8ec4e167c891373f83669973",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 03:54:30",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "6a80656ba9750f7999eb71786bd9c38017022f5fdc8810572678863692a335b1",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 03:54:29",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Mirai",
             "confidence": "90%"
         },
         {
             "type": "hash",
-            "indicator": "34f29ee4bc4af44fd195172378359088cd8ea4d7d39a66713a87f7087acaf933",
-            "description": "SalatStealer (payload)",
-            "timestamp": "2026-10-20 22:54:25",
+            "indicator": "a3ffb06d9250492d20f6e3b72508d3a305908607198790cdd75f7ab1b1acab35",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 03:54:27",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "malware",
                 "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "SalatStealer",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "naamtravel[.]com[.]sg",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:53:34",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "holistixwellness[.]co[.]uk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:52:46",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "jannymod[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:52:46",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "75%"
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
         },
         {
             "type": "url",
-            "indicator": "hxxps://k1[.]abbc123[.]org/msq/",
+            "indicator": "hxxps://a7[.]abbc123[.]org/rf/",
             "description": "Vidar (botnet_cc)",
-            "timestamp": "2026-10-20 22:50:48",
+            "timestamp": "2026-10-21 03:50:48",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "6b7b2ec7b07f39e78c899fa934e6250a5d50b9cf52b32156e5dcdd9ec3952bd8",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:48:57",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/6b7b2ec7b07f39e78c899fa934e6250a5d50b9cf52b32156e5dcdd9ec3952bd8"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/pi/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:45:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Vidar",
             "confidence": "100%"
         },
         {
             "type": "domain",
-            "indicator": "xojeme[.]workers[.]dev",
+            "indicator": "proxy-us-east007-cip3[.]ahrefs[.]net",
             "description": "php.shin_webshell (payload_delivery)",
-            "timestamp": "2026-10-20 22:49:48",
+            "timestamp": "2026-10-21 03:45:07",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "php.shin_webshell",
             "confidence": "50%"
         },
         {
             "type": "domain",
-            "indicator": "moversgs[.]co[.]ke",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "indicator": "rodcq94758[.]workers[.]dev",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:44:48",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "hash",
+            "indicator": "bba5d18a8648bb4fbfa156e21d49fb8c9993032dfd57d56a22645f608283e105",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:44:26",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/bba5d18a8648bb4fbfa156e21d49fb8c9993032dfd57d56a22645f608283e105"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/fb/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:40:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "fb0721fa5d76d41995cb60b11099964d37bc15a9fdd6e5379ac6c6614481990f",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:39:23",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/fb0721fa5d76d41995cb60b11099964d37bc15a9fdd6e5379ac6c6614481990f"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/to/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:35:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "03cbd76b6c3aea11ca539ae2bee8f73f194da17410aed505c3a5c13cfa1f2351",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:34:53",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/03cbd76b6c3aea11ca539ae2bee8f73f194da17410aed505c3a5c13cfa1f2351"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://n[.]9winn[.]org/u/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/f/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:30:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "9b6f929c97407341e0f71276e0a243da3e4d152c8e6e0f078e398d421da9a47e",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:28:46",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/9b6f929c97407341e0f71276e0a243da3e4d152c8e6e0f078e398d421da9a47e"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://n[.]9winn[.]org/s",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:27:19",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/kn6/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:25:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "64d9ba25063f6c1b6f3e2c931a63b519a1366f8094765dde6e6da3f5f8d45594",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:24:08",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/64d9ba25063f6c1b6f3e2c931a63b519a1366f8094765dde6e6da3f5f8d45594"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxp://retas3[.]help:7713/profiles",
+            "description": "Remus (botnet_cc)",
+            "timestamp": "2026-10-21 03:22:37",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Remus",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/gq/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:20:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "bdc543dd2998636ff7c5fd82ae1dd87a704dbed64f3b583f59d67b6b7bf4584e",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:20:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/bdc543dd2998636ff7c5fd82ae1dd87a704dbed64f3b583f59d67b6b7bf4584e"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "201-0-236-74[.]dial-up[.]telesp[.]net[.]br",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:18:12",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "domain",
+            "indicator": "google-proxy-66-249-93-35[.]google[.]com",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:18:03",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "domain",
+            "indicator": "google-proxy-66-249-93-41[.]google[.]com",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:17:46",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "domain",
+            "indicator": "google-proxy-66-249-93-225[.]google[.]com",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:17:21",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "domain",
+            "indicator": "google-proxy-66-249-93-224[.]google[.]com",
+            "description": "php.shin_webshell (payload_delivery)",
+            "timestamp": "2026-10-21 03:17:06",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "php.shin_webshell",
+            "confidence": "50%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/sq/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:15:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "fa5a12657457684283559ee563d93bc689ce36fe013cc4da9912a6a525a3f5c6",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:13:44",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/fa5a12657457684283559ee563d93bc689ce36fe013cc4da9912a6a525a3f5c6"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/i0/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:10:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "154[.]64[.]250[.]38",
+            "description": "ValleyRAT (botnet_cc)",
+            "timestamp": "2026-10-21 03:10:10",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "ValleyRAT",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "d8bf8c21d883816c4686d577a0cfaaf9399695d3bd1d80c10e70be069682c089",
+            "description": "AMOS (payload)",
+            "timestamp": "2026-10-21 03:07:40",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified",
+                "https://www.virustotal.com/gui/file/d8bf8c21d883816c4686d577a0cfaaf9399695d3bd1d80c10e70be069682c089"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "AMOS",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://n[.]9winn[.]org/s/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://a7[.]abbc123[.]org/ruc/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]104",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:08",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]105",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:08",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]102",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:07",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]101",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:05",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "ip",
+            "indicator": "156[.]240[.]41[.]100",
+            "description": "VShell (botnet_cc)",
+            "timestamp": "2026-10-21 03:05:04",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "botnet",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "VShell",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://oa[.]abbc123[.]org/i/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:00:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://n[.]9winn[.]org/w",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 03:00:27",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "1djyax1p[.]minterest[.]org",
+            "description": "ClearFake (payload_delivery)",
+            "timestamp": "2026-10-21 02:57:33",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "ClearFake",
+            "confidence": "100%"
+        },
+        {
+            "type": "url",
+            "indicator": "hxxps://oa[.]abbc123[.]org/dc/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 02:55:48",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
+            "confidence": "100%"
+        },
+        {
+            "type": "domain",
+            "indicator": "minterest[.]org",
+            "description": "ClearFake (payload_delivery)",
+            "timestamp": "2026-10-21 02:55:21",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "ClearFake",
+            "confidence": "100%"
+        },
+        {
+            "type": "hash",
+            "indicator": "509e9f420cf7afd64a56ddf53f9276916037b7a0e35e4b24f881e11d086f3777",
+            "description": "Unknown Loader (payload)",
+            "timestamp": "2026-10-21 02:54:37",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "confidence": "85%"
         },
         {
-            "type": "domain",
-            "indicator": "myelearningyard[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "06340f4194e60554bb71db5e50067307f41494e2e3e70c548bf85ebd38a6e62d",
+            "description": "Unknown Loader (payload)",
+            "timestamp": "2026-10-21 02:54:36",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "confidence": "85%"
         },
         {
-            "type": "domain",
-            "indicator": "pixelxbd[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "20d5b6679943bfeeaf8bc6ad71ab726c795b04c8c218dc6fd13c92a058fc5bfb",
+            "description": "Unknown Loader (payload)",
+            "timestamp": "2026-10-21 02:54:35",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
             "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "confidence": "85%"
         },
         {
-            "type": "domain",
-            "indicator": "qiozko[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "c99f4b61d0e5c2c8b80910244a58eaa80bc62bf9a12c81209170a1ee428e4a77",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:34",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
         },
         {
-            "type": "domain",
-            "indicator": "teambuildingpros[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "e1a4d414cb857b1535f0b3f7306492153e5d4726b2dae796937fa1cf106e535c",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:33",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "90%"
         },
         {
-            "type": "domain",
-            "indicator": "ventureconsultingpartners[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "3f49aa5fe7183942af44585355ddab790050cc581ae83875f5152fcaa98f2f28",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:32",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
+            "confidence": "95%"
         },
         {
-            "type": "domain",
-            "indicator": "waho-apps[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:30",
+            "type": "hash",
+            "indicator": "c869584f3e17fdde01a26bdf58d92837d8f396aad9944dffb08627c1f7e1323f",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:31",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "abuhamadtourism[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "anantagl[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "bausch[.]com[.]au",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "candmamusement[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "clausula-abusiva[.]com",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "cwin[.]boo",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "deow[.]edu[.]vn",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "dralisonfreeman[.]net",
-            "description": "Unknown Loader (payload_delivery)",
-            "timestamp": "2026-10-20 22:48:29",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "Unknown Loader",
-            "confidence": "75%"
-        },
-        {
-            "type": "domain",
-            "indicator": "machiningusinagem[.]com[.]br",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
             "confidence": "100%"
         },
         {
-            "type": "domain",
-            "indicator": "maxjevon[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
+            "type": "hash",
+            "indicator": "4e3700db45af47ab456f788e85815aec8855f27f02c20d6112aab69dcbbfd770",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:29",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
             "confidence": "100%"
         },
         {
-            "type": "domain",
-            "indicator": "meyveliofis[.]com[.]tr",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
+            "type": "hash",
+            "indicator": "f5e89953bf910c1f03b146ad886c7d132987a234c8844eeeab732aaf88032271",
+            "description": "SNOWLIGHT (payload)",
+            "timestamp": "2026-10-21 02:54:28",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
+                "malware",
+                "hash",
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "SNOWLIGHT",
+            "confidence": "95%"
+        },
+        {
+            "type": "hash",
+            "indicator": "f315faf21a2971d025d51e520c668b19f34adbc3ebd4dda4a7ba21c8fe986b20",
+            "description": "Mirai (payload)",
+            "timestamp": "2026-10-21 02:54:27",
+            "source": "ThreatFox",
+            "sourceUrl": "https://threatfox.abuse.ch/",
+            "analysisTime": "2026-10-21 10:02 IST",
+            "tags": [
+                "malware",
+                "hash",
+                "verified"
+            ],
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Mirai",
             "confidence": "100%"
         },
         {
-            "type": "domain",
-            "indicator": "moniveroni[.]sk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
+            "type": "url",
+            "indicator": "hxxps://oa[.]abbc123[.]org/pca/",
+            "description": "Vidar (botnet_cc)",
+            "timestamp": "2026-10-21 02:50:48",
             "source": "ThreatFox",
             "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
+            "analysisTime": "2026-10-21 10:02 IST",
             "tags": [
                 "verified"
             ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "myhandymansite[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "navidadconelhermano[.]cl",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "net-informatica[.]com[.]ar",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "novelopportunities[.]org",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "odontosistemica[.]com[.]br",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "onyenezilawfirm[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "ozcetintelcit[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "paperexim[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "premiummekatronik[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "prevcerta[.]com[.]br",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "qmh[.]nu",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "resiliencegonewild[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "sadekarfahrettin[.]com[.]tr",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "safevaultdepository[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "serviciotecnicojasa[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "shopcasitablanca[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "softex[.]shop",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "sussexglassman[.]co[.]uk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "techwhirl[.]io",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "thammyquangtuan[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "theathletesapp[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "thermogelcolombia[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "transback[.]org",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "vada[.]se",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "veintimilla[.]it",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "veritaslabltd[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "wedge[.]vip",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "xn--80akaao3asar6d[.]xn--p1ai",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "zaraproperties[.]net",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "zdravysposob[.]sk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:39",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "bar15[.]co[.]uk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "battleavenuecollective[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "branchezvous[.]org",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "careresidence[.]net",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "ceramictilesinfo[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "chiltern[.]co[.]za",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "conviviumolei[.]it",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "dailymoon[.]news",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "denniscrosby[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "digitalhasanah[.]co[.]id",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "divyesh[.]online",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "dreamlover[.]com[.]au",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "dronesolutions[.]sk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "drquangtuan[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "dubai24x7[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "e-nastava[.]ba",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "ejcw[.]org",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "eleedit[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "emtacademy[.]world",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "freefireadvanceserver[.]cc",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "gadgtecs[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "glamskinclinicug[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "gluco-up[.]pl",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "gownsonline[.]co[.]za",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "greatergoodrecycling[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "growebhub[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "haktrade[.]sk",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "healix-care[.]com",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "hndz[.]com[.]br",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
-            "confidence": "100%"
-        },
-        {
-            "type": "domain",
-            "indicator": "inatboxplus[.]com[.]tr",
-            "description": "IClickFix (payload_delivery)",
-            "timestamp": "2026-10-20 22:46:38",
-            "source": "ThreatFox",
-            "sourceUrl": "https://threatfox.abuse.ch/",
-            "analysisTime": "2026-10-21 04:38 IST",
-            "tags": [
-                "verified"
-            ],
-            "addedAt": "2026-10-21T04:38:19.937435+05:30",
-            "campaign": "IClickFix",
+            "addedAt": "2026-10-21T10:02:28.982756+05:30",
+            "campaign": "Vidar",
             "confidence": "100%"
         }
     ],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 106990,
+            "totalIndicators": 108399,
             "activeSources": 9,
-            "criticalAlerts": 52025,
-            "activeCampaigns": 394
+            "criticalAlerts": 52341,
+            "activeCampaigns": 395
         },
         "topThreats": [
             {
                 "category": "Malware",
-                "count": 40788,
+                "count": 41089,
                 "trend": "stable",
                 "percentage": 0
             },
             {
                 "category": "C2",
-                "count": 11237,
+                "count": 11252,
                 "trend": "stable",
                 "percentage": 0
             },
             {
                 "category": "Botnet",
-                "count": 10144,
+                "count": 10263,
                 "trend": "stable",
-                "percentage": 0
+                "percentage": 1
             },
             {
                 "category": "Phishing",
-                "count": 1242,
-                "trend": "stable",
-                "percentage": 0
+                "count": 1542,
+                "trend": "up",
+                "percentage": 24
             }
         ],
         "targetedSectors": [
@@ -2256,31 +2386,31 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "malware_download",
-                "count": 34747,
+                "count": 34772,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "hxxp://27[.]215[.]183[.]88:47775/i",
-                    "hxxp://175[.]151[.]226[.]239:55244/i",
-                    "hxxp://106[.]125[.]211[.]232:36465/i"
+                    "hxxp://123[.]14[.]233[.]91:52224/bin[.]sh",
+                    "hxxp://123[.]4[.]235[.]65:55563/bin[.]sh",
+                    "hxxp://112[.]248[.]190[.]135:55046/i"
                 ]
             },
             {
                 "name": "CINS Threat List",
-                "count": 30014,
+                "count": 30496,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
-                    "1[.]117[.]58[.]215",
-                    "1[.]117[.]68[.]141",
-                    "1[.]12[.]229[.]231"
+                    "1[.]14[.]149[.]30",
+                    "1[.]192[.]129[.]106",
+                    "1[.]193[.]57[.]156"
                 ]
             },
             {
                 "name": "SSH Attacks",
-                "count": 7618,
+                "count": 7788,
                 "types": [
                     "ip"
                 ],
@@ -2292,13 +2422,13 @@ window.threatIntelData = {
             },
             {
                 "name": "Vidar",
-                "count": 2189,
+                "count": 2279,
                 "types": [
-                    "ip",
+                    "ssl-cert",
+                    "domain",
                     "hash",
                     "url",
-                    "ssl-cert",
-                    "domain"
+                    "ip"
                 ],
                 "sampleIndicators": [
                     "038cc0421ef5641c0565b39f51a4ce2bb768fa8190da3971c785e292c2f704d2",
@@ -2308,17 +2438,17 @@ window.threatIntelData = {
             },
             {
                 "name": "Mirai",
-                "count": 1807,
+                "count": 1870,
                 "types": [
-                    "hash",
                     "url",
+                    "domain",
                     "ip",
-                    "domain"
+                    "hash"
                 ],
                 "sampleIndicators": [
-                    "a367e7c92f579948345cb8cb91ed5bbce9a905b9ad225fc3bf9f85d8fc57735f",
-                    "bf8dea8f2a21fbf1748ef8fb66f580e63a3bb786d284e55ce73dc6534d57a571",
-                    "a77a227fc9bb9b30ee13d6582b06ddf8b4e24caa6926930c7725ef15f9d7ca73"
+                    "a3ffb06d9250492d20f6e3b72508d3a305908607198790cdd75f7ab1b1acab35",
+                    "6a80656ba9750f7999eb71786bd9c38017022f5fdc8810572678863692a335b1",
+                    "93c1e4abbfea104915121466b5f1ad6b02a5cc44b567043259a8791ff56cb100"
                 ]
             },
             {
@@ -2335,18 +2465,30 @@ window.threatIntelData = {
             },
             {
                 "name": "AsyncRAT",
-                "count": 1655,
+                "count": 1661,
                 "types": [
-                    "ip",
+                    "ssl-cert",
+                    "domain",
                     "hash",
                     "url",
-                    "ssl-cert",
-                    "domain"
+                    "ip"
                 ],
                 "sampleIndicators": [
+                    "5ae300101bef874b2d8e9dc927571074d7cd6c706903f4a23d91bf0c2943e256",
                     "c2b10b8c0d346d3e1201daea39713fbfaeb410e8b7fee94b0546a3fcdc91573f",
-                    "1e98a36b2c40441a1bf33060bad8b52bf74ee659472aa15d3463bd51b118725f",
-                    "fc255863ceab40f2510ddf29801e583015505861777f1c5d7e72ec164920f075"
+                    "1e98a36b2c40441a1bf33060bad8b52bf74ee659472aa15d3463bd51b118725f"
+                ]
+            },
+            {
+                "name": "Generic Phishing",
+                "count": 1537,
+                "types": [
+                    "url"
+                ],
+                "sampleIndicators": [
+                    "hxxps://nus[.]nbt[.]mybluehost[.]me/website_9f694753/055/Newcorreos%20(1)/cc/login[.]php?clckid=4e6f526c",
+                    "hxxps://www[.]roblox[.]com[.]ml/users/346612762043/profile",
+                    "hxxps://sp20ct10-davrelo-biz-kunima[.]pages[.]dev/send_appeal_request"
                 ]
             },
             {
@@ -2359,18 +2501,6 @@ window.threatIntelData = {
                     " \"140[.]143[.]193[.]143:443\"",
                     " \"118[.]26[.]111[.]141:80\"",
                     " \"118[.]26[.]111[.]141:8080\""
-                ]
-            },
-            {
-                "name": "Generic Phishing",
-                "count": 1238,
-                "types": [
-                    "url"
-                ],
-                "sampleIndicators": [
-                    "hxxps://sundram786[.]github[.]io/Spotify-Clone/",
-                    "hxxps://cj333471[.]tw1[.]ru/",
-                    "hxxps://kukoinjlogn[.]webflow[.]io/"
                 ]
             },
             {
@@ -2392,7 +2522,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious URLs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "CINS Threat List",
-        "totalAttacksThisHour": 59600,
-        "lastCalculated": "2026-10-21 10:02 IST"
+        "totalAttacksThisHour": 61619,
+        "lastCalculated": "2026-10-21 19:12 IST"
     }
 };
