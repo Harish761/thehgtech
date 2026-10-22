@@ -1,8 +1,8 @@
 {
   "vendor": "ThreatFox",
-  "lastUpdated": "2026-10-22T19:13:17.700140+05:30",
-  "totalCount": 18847,
-  "displayedCount": 18847,
+  "lastUpdated": "2026-10-23T01:29:21.097514+05:30",
+  "totalCount": 18841,
+  "displayedCount": 18841,
   "isCapped": false,
   "cappingStrategy": null,
   "iocs": [
@@ -225957,90 +225957,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"elf.aisuru\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"71058edd6a2d93d0992a4ce10736a99070e28345dc14c66d7383ea9b5da9923b\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"d82620df6807e1d65461d7a6b3a2e58aafda51b3c50c41ed1c84e8de9111c29e\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"750bfe4f7e55736d9c0489d0462db13375c034f7cdb8e33f1cea6363a014e3df\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"e1cc2db2413b52d2eb32452d55d72ad52b2c1c4fb12ab57478a51a70344e3043\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"3f02b386e3e5048ba3ea0ca195362bddbac7cee3c466292df256a917b83062d0\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"7f14767fdb38ced9ddc50b55d0d9d23d48aeac103e68c6c9c34c70fe6da18202\"",
-      "description": " \"win.ravenstealer\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-16T01:20:06.776268+05:30",
-      "campaign": " \"win.ravenstealer\""
     },
     {
       "type": "url",
