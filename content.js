@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 23 2026",
+            "headline": "Tor Exit Relays Hijacked, Rogue AI Agents Spotted",
+            "title": "Security Roundup: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware",
+            "content": "SecurityWeek highlights three significant developments: Tor exit relays were hijacked, banks detected rogue AI agents, and a new self-rebuilding macOS ransomware was discovered. APT28, a Russian state-sponsored threat actor, targeted NATO defense firms, while PingCAP source code was stolen. The ShinyHunters threat group is under investigation for its negotiator activities. These events underscore the evolving threat landscape targeting critical infrastructure and open-source supply chains. Security professionals should monitor for anomalous Tor traffic, verify AI agent integrity, and ensure macOS systems are patched against emerging ransomware strains.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "PHP Warns of New Unpatched RCE Risk",
+            "title": "PHP Issues Warning for New Unpatched RCE Risk CVE-2026-115560",
+            "content": "PHP has issued a warning for a new remote code execution (RCE) risk, CVE-2026-115560, just two days after releasing emergency patches for the PHP2Shell flaws. This new vulnerability affects only web applications configured in an unusual manner, which PHP considers an unlikely risk. The flaw allows an attacker to execute arbitrary code on a vulnerable web server. Organizations should review their PHP application configurations for any non-standard setups and apply the latest security updates to mitigate potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Arista VCO Hit by Third Zero-Day in Four Months",
+            "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
+            "content": "SecurityWeek reports that attackers are actively exploiting a critical-severity SQL injection zero-day in Arista Virtual Cloud Onboarder (VCO) devices. This flaw, which has been targeted in the wild, allows attackers to access privileged internal functionality and gain operator privileges. The exploitation of a third zero-day in this product within four months highlights a persistent vulnerability in network management tools. Organizations using Arista VCO should apply the available security patches immediately and restrict network access to the management interface.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Python Pillow Library Flaw Enables Code Execution",
+            "title": "Critical Pillow Flaw CVE-2026-112900 Allows OS Command Execution",
+            "content": "The Pillow image library for Python contains a critical vulnerability, CVE-2026-112900, that allows an attacker to execute operating system commands on a server. The flaw is triggered when processing a maliciously crafted EPS image file, which causes Pillow to pass the file's name to Ghostscript. This can lead to arbitrary code execution in the context of the server process. Developers should update Pillow to the latest patched version and validate all incoming image files to prevent exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Node2Shell RCE Exploits Official Node.js Builds",
+            "title": "Node2Shell RCE Exploit Targets Official Node.js 24.22.0",
+            "content": "Imperva security researchers demonstrated a proof-of-concept exploit, \"Node2Shell,\" that achieves remote code execution (RCE) on official Node.js builds. The attack leverages malicious Brotli data to make an application on Node.js 24.22.0 run attacker-supplied code without requiring a custom build or debugger. This vulnerability affects the official Node.js 24.22.0 image for Linux arm64 and highlights a risk in the Brotli data decompression process. Users should update to a patched version of Node.js and validate all Brotli-compressed data inputs.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Malicious APIs Drain AI Agents' Token Balances",
+            "title": "Critical x402 SDK Flaw Allows Malicious APIs to Drain AI Agent Token Balances",
+            "content": "Security firm V12 revealed that a flaw in x402 SDKs allows malicious APIs to drain the full token balance of AI agents. The vulnerability stems from the SDK's default client, which lacked a spending limit until an update on August 18 introduced one. This flaw poses a severe financial risk to developers deploying autonomous AI agents that rely on these payment protocols. Organizations should immediately update to the latest x402 SDK version to enforce spending limits. This incident highlights the growing security challenges of integrating financial transactions directly into AI workflows.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Capcom Breach Exposes 11 Million Email Addresses",
+            "title": "Capcom Data Breach Exposes 11 Million Email Addresses and Alters 196 Passwords",
+            "content": "Hackers breached Capcom's CAPCOM ID system, stealing 11 million email addresses and changing login passwords for 196 accounts. The attackers gained unauthorized access to user credentials, prompting the gaming giant to force password resets for the affected accounts. This breach exposes millions of gamers to credential stuffing and targeted phishing campaigns. Affected users should enable multi-factor authentication (MFA) on their accounts and monitor for suspicious activity. The incident underscores the persistent threat to user data within the gaming industry.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Quest Diagnostics Exposes Certain Patient Records",
+            "title": "Quest Diagnostics Data Breach Exposes Certain Patient Records via Lab Platform",
+            "content": "Quest Diagnostics reported unauthorized access to its Quanum Lab Services Manager, a platform used by clients to place test orders. The breach exposed certain patient records, though the company did not specify the exact number of affected individuals. This incident highlights the vulnerability of healthcare supply chain management systems to cyberattacks. Healthcare providers and patients should remain vigilant for potential identity theft or insurance fraud. Organizations must secure third-party lab platforms with strict access controls and continuous monitoring.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/quest-diagnostics-reports-cyber-breach-affecting-certain-patient-records/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "LiteLLM Compromised in Supply Chain Attack",
+            "title": "LiteLLM Compromised in Supply Chain Attack Using Stolen GitHub OAuth Tokens",
+            "content": "Hackers executed a supply chain attack by compromising LiteLLM, pushing malicious packages to PyPI and Docker. The attackers leveraged stolen GitHub CLI OAuth tokens to approve and publish the malicious code. This attack specifically targets the Python and container ecosystems, posing a severe risk to developers integrating AI models. Developers must audit their dependencies and verify package signatures before installation. This incident highlights the critical need for robust identity and access management (IAM) in open-source development.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Atlassian Patches 75 Flaws in Data Center and Server",
+            "title": "Atlassian Patches 75 Flaws in Data Center and Server Products",
+            "content": "Atlassian released its October security bulletin, addressing 75 vulnerabilities across its Data Center and Server products. The update includes 14 critical-severity issues, all originating from third-party components. These flaws could allow unauthenticated attackers to execute remote code or gain administrative control over Atlassian instances. System administrators must apply the patches immediately to prevent potential exploitation. This release emphasizes the importance of rigorous third-party code auditing in enterprise software development.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 22 2026",
             "headline": "Arista VCO Zero-Day Exploited in Attacks",
             "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4239255/security-teams-urged-to-center-defense-on-the-single-profile-attackers-target-most.html",
             "relatedResources": []
-        },
+        }
+    ],
+    "aiShorts": [
         {
-            "date": "Oct 22 2026",
-            "headline": "INTERPOL Disrupts 10,909 Networks, Arrests 1,462 Suspects",
-            "title": "Global Operation Serengeti III Disrupts 10,909 Cybercrime Networks and Recovers $105M",
-            "content": "INTERPOL announced a coordinated global law enforcement action, Operation Serengeti III, that disrupted 10,909 malicious networks and recovered over $105 million in illicit funds. The operation resulted in the arrest of 1,462 suspects across 21 countries, targeting a wide range of cybercrime activities. The massive scale of the operation highlights the ongoing international effort to dismantle sophisticated criminal infrastructure. Security professionals should remain vigilant, as these disrupted networks may attempt to migrate to alternative channels or develop new evasion techniques.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Signal Flaw Prevents Call Hang-Ups",
-            "title": "Signal Vulnerability in RingRTC Lets Malicious Callers Block Hang-Ups",
-            "content": "A vulnerability in Signal's open-source calling library RingRTC allows malicious callers to prevent calls from terminating properly. The bug, which impacts the core calling functionality, could be exploited to disrupt communication or potentially hold a user in a call against their will. This flaw underscores the security risks inherent in real-time communication protocols and their underlying libraries. Users are advised to update their Signal applications to the latest version to mitigate this risk and ensure proper call termination.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Cisco Patches 34 Critical Vulnerabilities",
-            "title": "Cisco Patches 34 Critical Vulnerabilities Across Multiple Products",
-            "content": "Cisco has released security updates for 34 vulnerabilities across its product portfolio, including critical-severity flaws that could lead to remote code execution and authentication bypass. The most severe issues affect various Cisco products, allowing unauthenticated attackers to compromise systems and execute arbitrary commands. This large volume of patches highlights the complexity and attack surface of Cisco's enterprise networking infrastructure. Administrators must prioritize applying these updates to vulnerable systems to prevent potential exploitation and maintain network integrity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Node.js Brotli Bug Enables Remote Code Execution",
-            "title": "Node.js Brotli Decoder Bug Allows Remote Code Execution",
-            "content": "Node.js released security updates for versions 22.x, 24.x, and 26.x, fixing 10 flaws, including a critical bug in the Brotli decompression code. The most severe vulnerability allows remote code execution, enabling an attacker to run arbitrary code on a target system. This flaw affects all supported Node.js versions, posing a significant risk to applications relying on Brotli for compression. Developers must immediately update to the patched versions to protect their applications from potential compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Oracle Patches 1,200+ Vulnerabilities",
-            "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
-            "content": "Oracle released its October 2026 Critical Patch Update, addressing over 1,200 vulnerabilities, with nearly 100 assigned a critical severity rating. The most heavily affected product was Oracle Fusion Middleware, which received the largest number of patches. These vulnerabilities could allow attackers to compromise systems, steal sensitive data, or disrupt business operations. Organizations running Oracle products must prioritize testing and deploying these patches to mitigate the risk of exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "QPACK Flaw Crashes HTTP/3 Servers",
-            "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Triggering 4,000-Fold Memory Amplification",
-            "content": "Security firm FoxIO disclosed critical QPACK flaws that allow unauthenticated remote attackers to crash HTTP/3 servers with a single connection. By sending a small batch of compressed HTTP headers, the attacker can trigger a 4,000-fold memory amplification, causing severe denial-of-service (DoS) conditions. The proof-of-concept code demonstrates the vulnerability's impact on server stability and resource consumption. Web administrators must apply the latest security patches to prevent memory exhaustion and server crashes. This vulnerability underscores the evolving risks associated with the HTTP/3 protocol's compression mechanisms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "ARTEX AI Agents Used in ConnectWise Attack",
-            "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
-            "content": "Microsoft attributed the ConnectWise Cloud Backup supply chain compromise to a China state-aligned actor, Storm-0940, who deployed ARTEX. ARTEX is a closed-source, Go-based agentic AI framework designed for penetration testing and automated exploitation. The actor used this tool to leverage stolen credentials and compromise over 2,250 Microsoft 365 tenants. This incident highlights the emerging threat of AI-driven tools in advanced persistent threat (APT) campaigns. Organizations must review their cloud backup configurations and monitor for anomalous AI agent activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "LiteLLM Pipeline Hacked for Cred-Stealing Malware",
-            "title": "LiteLLM Release Pipeline Hacked to Distribute Credential-Stealing Malware",
-            "content": "Hackers compromised the software release pipeline of LiteLLM, a popular open-source AI gateway, to distribute credential-stealing malware. The compromised version 1.107.0 was downloaded over 10,000 times before detection, marking the project's second supply chain attack this year. The malware specifically targets API keys and environment variables used by large language model (LLM) applications. This incident highlights the critical risks associated with open-source software supply chains. Users must immediately verify their installed LiteLLM version and rotate any potentially exposed credentials.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4239033/litellm-release-pipeline-hacked-to-distribute-credential-stealing-malware.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "AI Agent AI Compromises 2,250 M365 Tenants",
-            "title": "China-Linked Hackers Used Agentic AI in Attack on 2,250 Microsoft 365 Tenants",
-            "content": "A China-state-aligned threat actor compromised a ConnectWise cloud backup application and used an open-source agentic AI framework to target over 2,250 Microsoft 365 tenants. Microsoft Threat Intelligence attributed this activity to Storm-0940, demonstrating the use of AI for credential abuse and lateral movement. The agentic AI framework automated the exploitation of stolen credentials across multiple cloud environments. This attack highlights the growing sophistication of state-sponsored threat actors leveraging AI for large-scale intrusions. Organizations must implement multi-factor authentication (MFA) and continuous access evaluation to mitigate credential-based attacks.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4239028/china-linked-hackers-used-agentic-ai-in-attack-on-2250-microsoft-365-tenants.html",
+            "date": "Oct 23 2026",
+            "headline": "Meta Delays AI Scraping Terms After Publisher Pushback",
+            "title": "Meta Delays Enforcement of Business Terms Amid Publisher Concerns Over AI Scraping",
+            "content": "Meta has delayed enforcing its new business terms following publisher complaints that the updated policies could permit the company to scrape news websites for artificial intelligence (AI) training. The revised terms, which were scheduled to take effect immediately, now face a review period to address concerns from major media organizations. This move highlights the escalating tension between AI developers and content creators over data usage rights and compensation. Publishers fear unauthorized data extraction could undermine their business models and copyright protections. Stakeholders are closely monitoring Meta's revised policy to ensure compliance with data protection regulations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
             "relatedResources": []
         },
         {
             "date": "Oct 21 2026",
-            "headline": "GitLab Flaw Allows Unauthenticated RCE",
-            "title": "Critical GitLab Flaw (CVSS 10.0) Enables Unauthenticated Remote Code Execution",
-            "content": "GitLab patched a critical vulnerability allowing unauthenticated remote code execution (RCE) on self-managed instances. The flaw impacts all versions of the software from 7.0, released in 2014, through the latest release. The October 12 patch was insufficient, as it failed to fully mitigate the vulnerability, necessitating a second fix on October 21. Administrators must apply the updated security patches immediately to prevent attackers from executing arbitrary code on their servers. The 12-year attack surface underscores the importance of rigorous, ongoing patch management for enterprise platforms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+            "headline": "Patch The Planet Connects Researchers for Open Source Vulnerabilities",
+            "title": "OpenAI's Patch the Planet Initiative Coordinates Global Response to Open Source Flaws",
+            "content": "OpenAI launched Patch the Planet to connect security researchers, maintainers, and incident responders for addressing critical vulnerabilities across open source software. The initiative aims to streamline communication and resource sharing to mitigate risks in widely used codebases. By fostering a collaborative ecosystem, Patch the Planet helps organizations identify and patch flaws before they are exploited in production environments. The program targets critical vulnerabilities that could impact enterprise infrastructure and developer tools. Participation is open to researchers and maintainers to strengthen the overall security posture of the open source community.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
             "relatedResources": []
-        }
-    ],
-    "aiShorts": [
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "OpenAI Scales ChatGPT Storage 12× Faster with Azure Cosmos DB",
+            "title": "OpenAI Deploys Habitat and Azure Cosmos DB to Scale ChatGPT Storage",
+            "content": "OpenAI scaled its Habitat platform to support over 1 billion ChatGPT users by implementing reliable multi-tenancy and global caching. The architecture leverages Azure Cosmos DB to deliver 12× faster read speeds, significantly improving response times for global users. The system handles massive volumes of user data and conversation histories with high availability and low latency. This infrastructure upgrade ensures seamless performance as ChatGPT's user base continues to grow exponentially. Developers and IT professionals can expect enhanced reliability and faster data retrieval for AI-powered applications.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Hugging Face Introduces LitPivot for AI Research Contextualization",
+            "title": "Hugging Face Launches LitPivot to Accelerate Research Idea Development",
+            "content": "Hugging Face introduced LitPivot, a tool designed to help researchers develop ideas by dynamically contextualizing information within the broader literature landscape. The platform analyzes vast datasets of academic papers to identify trends, gaps, and emerging topics in machine learning. By providing real-time insights, LitPivot enables researchers to refine hypotheses and discover novel applications more efficiently. The tool integrates with existing research workflows to streamline literature reviews and collaboration. This innovation aims to accelerate the pace of scientific discovery in artificial intelligence.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/litpivot",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Retro Gaming Overrun With AI-Powered Projects",
+            "title": "AI Overruns Retro Gaming with Viral Projects and Unauthorized Recreations",
+            "content": "Retro video games are experiencing a surge in AI-powered projects, with classic titles like Halo and Super Smash Bros. being recreated in unexpected formats such as web browsers and mixed reality. These viral projects, often developed without official licensing, leverage advanced generative AI models to reimagine nostalgic gameplay. The trend highlights the growing accessibility of AI tools for rapid prototyping and creative experimentation. However, it also raises concerns about intellectual property rights and the potential for unauthorized distribution of copyrighted content. Game developers and publishers are increasingly scrutinizing these AI-driven recreations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015430/ai-retro-games-decomp-recomp-port",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "AWS Trainium Model Usage Now Public",
+            "title": "Hugging Face Introduces Search to Reveal AWS Trainium Model Usage",
+            "content": "Hugging Face has launched a search feature that allows users to verify if a model runs on AWS Trainium. This tool addresses transparency concerns by revealing the specific hardware infrastructure powering various AI models. The feature is critical for developers and security professionals tracking supply chain dependencies on specialized AI chips. Users can now cross-reference model cards to identify AWS Trainium-based deployments. This move increases accountability for cloud providers and hardware vendors in the AI supply chain.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/torch-neuronx-model-support",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 22 2026",
+            "headline": "Canva Launches First Image Generation Model",
+            "title": "Canva Releases First Image Generation Model for All Users",
+            "content": "Canva has released its first proprietary image generation model to all users, promising improved performance and lower costs. The new model offers more customizable outputs compared to previous third-party integrations. This move positions Canva to compete directly with established AI image generators like Midjourney and DALL-E. Security professionals should evaluate the model's data handling policies and content moderation frameworks. Developers integrating the API must review the updated terms of service for commercial usage.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 22 2026",
+            "headline": "OpenAI Launches Decision Model vs. Jev",
+            "title": "OpenAI Makes Decision Model Widely Available as Competition Heats Up",
+            "content": "OpenAI has launched its decision model to the public, entering the market dominated by Jev. The model is designed to provide fast, focused, and low-cost decisions for various applications. This release signals a shift toward more specialized AI models that handle specific tasks efficiently. Security professionals should assess the model's reliability and potential for misuse in automated decision-making systems. Developers integrating the model must implement robust monitoring for bias and accuracy.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 22 2026",
+            "headline": "OpenAI Releases Decisions API for Apps",
+            "title": "OpenAI Introduces Decisions API for Responsive Application Logic",
+            "content": "OpenAI has announced the Decisions API, enabling developers to build more responsive applications. The API provides fast, focused, and low-cost decisions for any application. This tool allows applications to integrate AI-driven logic without the overhead of full large language model (LLM) calls. Security professionals should review the API's authentication and rate-limiting policies. Developers must ensure proper input validation to prevent prompt injection attacks.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/decisions-api",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 22 2026",
+            "headline": "Discord Fixes Markdown Preview Symbols",
+            "title": "Discord Correctly Renders Markdown Previews in Latest Update",
+            "content": "Discord has released an update that fixes Markdown previews, which previously rendered as \"a bunch of symbols.\" The fix ensures that Markdown files render correctly, improving the user experience for code sharing and documentation. This is particularly important as LLMs and AI agents often rely on Markdown files for instructions and context. Security professionals should verify that the update does not introduce new parsing vulnerabilities. Users should update to the latest version to benefit from the corrected previews.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/news/1017012/discord-markdown-previews-organize-servers-channels",
+            "relatedResources": []
+        },
         {
             "date": "Oct 22 2026",
             "headline": "AI Tool Hacks Nintendo Switch 2 with Old Game",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "PHP Flaws Endanger 70% of Web—Patch Urgently",
-            "title": "Critical PHP Vulnerabilities Put 70% of Internet Infrastructure at Risk",
-            "content": "Two newly discovered vulnerabilities in the PHP programming language threaten a vast majority of the internet, with estimates indicating up to 70% of all websites rely on PHP. The flaws impact popular platforms including WordPress, Drupal, Wikipedia, DeviantArt, and 4Chan. The affected systems are widely deployed across shared hosting environments, leaving millions of websites vulnerable to remote code execution and data breaches. Developers and system administrators must immediately apply the latest security patches provided by the PHP development team. This discovery highlights the ongoing risk of legacy web technologies facing modern exploitation techniques.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1016574/php2shell-security-vulnerability-websites-down",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Hugging Face AI Model Lets You Chat With DNA",
-            "title": "Hugging Face Unveils Open-Source AI Model for DNA Interaction",
-            "content": "Hugging Face has released an open-source artificial intelligence (AI) model designed to interpret and interact with DNA sequences. The model enables researchers to analyze the effects of specific genetic mutations on gene activity, protein synthesis, and overall human health. By processing complex genomic data, the AI tool accelerates the identification of potential therapeutic targets and biomarkers. Researchers can utilize the model to simulate the biological consequences of genetic modifications without immediate physical lab testing. This development represents a significant step toward democratizing genomic research and advancing personalized medicine.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "China-Aligned Hackers Breach ConnectWise—17K Companies Hit",
-            "title": "Chinese APT Breaches ConnectWise, Exposing 17,000 Customers",
-            "content": "A China-aligned advanced persistent threat (APT) group successfully breached IT automation provider ConnectWise, compromising the systems of approximately 17,000 of its customers. Microsoft attributed the intrusion to the threat actor, noting the attackers utilized AI agents to automate and accelerate their exploitation of ConnectWise's IT management platform. The breach highlights the growing danger of AI-driven attacks targeting managed service providers (MSPs) and their extensive client networks. Affected organizations must immediately rotate credentials, audit access logs, and review network traffic for anomalous activity. This incident underscores the critical need for MSPs to implement zero-trust architectures and advanced threat detection.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "OlmoEarth v1.3 Maps Planet for AI Agents",
-            "title": "Hugging Face Releases OlmoEarth v1.3 for Global Geospatial Embeddings",
-            "content": "Hugging Face has launched OlmoEarth v1.3, a state-of-the-art open-source model designed to generate high-quality geospatial embeddings for the entire planet. The model processes satellite imagery and terrain data to create detailed vector representations of Earth's surface, enabling precise spatial reasoning. OlmoEarth v1.3 allows developers to build AI applications capable of understanding geographic context, such as disaster response systems and autonomous navigation. The embeddings cover global resolutions, making the model accessible for both large-scale commercial deployments and localized research projects. This release expands the open-source geospatial AI ecosystem, providing a robust alternative to proprietary mapping APIs.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Uber Deploys ChatGPT Work to All 30,000 Employees",
-            "title": "Uber Expands ChatGPT Work Enterprise License to Entire Workforce",
-            "content": "Ride-share giant Uber has officially deployed OpenAI's ChatGPT Work enterprise license to all 30,000 of its employees, scaling up from a previous pilot program. The company-wide rollout provides its workforce with access to advanced AI agents for automating tasks, analyzing data, and enhancing productivity across operations. The integration of ChatGPT Work allows Uber to streamline internal workflows and accelerate software development cycles. This massive deployment signals a major shift toward AI-driven enterprise automation in the gig economy sector. Employees must complete mandatory security training to ensure the responsible use of the AI platform.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Spotify Bets on AI Agents for Music Selection",
-            "title": "Spotify Co-CEO Söderström Highlights AI Agents as Strategic Advantage",
-            "content": "Spotify's co-CEO Gustav Söderström outlined the company's strategic pivot to becoming the preferred music streaming service for AI agents. He explained that as AI agents gain prominence, their ability to select and play music will drive significant user adoption. The company is developing the infrastructure to allow these autonomous systems to seamlessly integrate Spotify's vast music catalog. This positions Spotify to capture a new market segment as AI-driven music discovery becomes mainstream. Industry analysts note this shift could redefine music consumption patterns over the next decade.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "DeepMind Maps Global Forests in 10-Meter Detail",
-            "title": "Google DeepMind Releases Global Map Categorizing Every 10-Meter Forest Patch",
-            "content": "Google DeepMind has released a comprehensive global map that categorizes every 10-meter patch of land on Earth into distinct forest types. This high-resolution mapping technology uses advanced machine learning algorithms to analyze satellite imagery and ground-truth data. The project provides unprecedented detail for ecological monitoring, carbon offset verification, and biodiversity conservation efforts. Researchers and environmental agencies can now access granular data to track deforestation, measure carbon sequestration, and protect endangered ecosystems. The map represents a significant leap forward in applying AI to large-scale environmental science.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Gates Predicts 20 Years of Tumultuous AI Disruption",
-            "title": "Bill Gates Warns of 20-Year 'Tumultuous' AI Disruption Era",
-            "content": "Bill Gates has issued a stark warning that society should brace for two decades of \"tumultuous\" disruption driven by artificial intelligence. In a recent interview and essay, the Microsoft cofounder outlined how AI will fundamentally transform industries, labor markets, and daily life. Gates emphasized the need for proactive governance, robust safety protocols, and strategic workforce retraining programs. He highlighted the dual nature of AI as both a powerful economic engine and a source of significant social upheaval. The prediction underscores the urgency for policymakers and business leaders to prepare for rapid, systemic change.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1015408/bill-gates-ai-interview-microsoft-openai-anthropic-risk-policy-regulation",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Anthropic Launches Claude Duet for AI Agents",
-            "title": "Anthropic's Claude Duet App Signals Strategic Bet on AI Agent Ecosystem",
-            "content": "Anthropic has launched Claude Duet, a new application designed to function as an autonomous AI agent for Pro and Max plan subscribers. The app is currently available through a waitlist, with broader access expected in the coming months. Claude Duet leverages Anthropic's Claude 3.5 Sonnet model to perform complex, multi-step tasks across various digital environments. This release marks Anthropic's most direct challenge to competitors like OpenAI's Operator and Google's Project Astra. The move signals a major industry shift from conversational AI to proactive, task-executing agents.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Nirva AI Pendant Ships for $249 This Year",
-            "title": "Nirva Raises $33M for Ambient AI Pendant with Privacy-First Design",
-            "content": "Nirva has secured $33 million in funding to develop and ship a $249 ambient AI pendant designed for private, on-demand interactions. The device, set to ship by the end of 2026, uses a custom microphone array and on-device processing to minimize data transmission. Users can activate the AI assistant via a subtle tap gesture, ensuring discreet usage in public or professional settings. The funding round, led by prominent venture capital firms, reflects strong investor confidence in privacy-centric AI hardware. This launch adds to the growing market of always-listening AI wearables from companies like Humane and Rabbit.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,17 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-114625",
+            "dateAdded": "Oct 23, 2026",
+            "vendor": "Arista VeloCloud Orchestrator",
+            "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitati",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-106931",
             "dateAdded": "Oct 20, 2026",
