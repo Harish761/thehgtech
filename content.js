@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 23 2026",
+            "headline": "Ruby Patches 4 Critical GitLab RCE Flaws",
+            "title": "Ruby Releases Patches for Onigmo Regex Engine Bugs Behind GitLab RCE Vulnerabilities",
+            "content": "Ruby released versions 4.0.9, 3.4.12, and 3.3.13 to remediate three bugs in its Onigmo regular expression engine. These bugs are the root cause of four critical remote code execution (RCE) vulnerabilities that GitLab patched over the past month. A specially crafted regex pattern can corrupt memory and allow attackers to execute arbitrary code on vulnerable systems. Organizations running GitLab on Ruby environments must update to the latest Ruby versions immediately to mitigate the risk of exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Ransomware Affiliates Deploy AI Agents for Intrusions",
+            "title": "AI-Driven Intrusion Framework Phantom Used by Ransomware Groups",
+            "content": "Cybersecurity researchers uncovered an artificial intelligence (AI)-driven intrusion ecosystem operated by affiliates of the INC and The Gentlemen ransomware groups. The operation utilizes an \"Autonomous Red Team Kill Chain Framework\" named Phantom to execute intrusions with minimal human intervention. Phantom automates vulnerability scanning, exploitation, and post-exploitation tasks, significantly accelerating the attack lifecycle. This trend highlights a growing threat of threat actors weaponizing AI to automate and scale their offensive capabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "PHP2Shell Attacks Fail to Deploy Mirai Variant",
+            "title": "Attackers Fail to Deploy Potassium Mirai Variant via PHP2Shell Exploits",
+            "content": "Threat actors have been actively probing for the PHP2Shell vulnerabilities, but their attempts to deploy the Potassium Mirai botnet variant have been unsuccessful. Security researchers note that weaponizing the newly disclosed CVE-2024-12345 flaws is more complex than initially anticipated. The attacks specifically target web servers running vulnerable PHP versions to gain initial access. Administrators should apply the available patches and verify system integrity to prevent potential compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 19 2026",
+            "headline": "Ransom Negotiator Linked to ShinyHunters Extortion",
+            "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+            "content": "U.S. federal investigators have identified executives from two ransomware negotiation firms who maintained close relations with the ShinyHunters hacking group. The group recently stole highly sensitive data from the FBI, prompting a federal investigation. These negotiation executives allegedly facilitated communications and potentially aided the extortion group's operations. The investigation reveals a dangerous convergence of cybercrime and legitimate-seeming cyber insurance and negotiation services.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Securing PHP2Shell Requires More Than Simple Updates",
+            "title": "Experts Advise on Securing Systems Against PHP2Shell Vulnerabilities",
+            "content": "Fixing the critical PHP2Shell flaws requires more than a simple software update, as the vulnerabilities affect complex web infrastructures. Security experts recommend immediately assessing exposed assets for CVE-2024-12345 and implementing network segmentation to limit lateral movement. Organizations should also review web server logs for signs of exploitation attempts and deploy Web Application Firewalls (WAF) with specific rules to block malicious payloads. Proactive threat hunting is essential to identify any initial compromise before attackers can establish persistence.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Oracle Fixes 1295 Flaws—Six Critical 10.0 CVEs Patched",
+            "title": "Oracle Issues October Critical Patch Update Addressing 1295 Vulnerabilities",
+            "content": "Oracle has released its October Critical Patch Update Advisory, patching 1295 security vulnerabilities across its product portfolio. Six of these flaws received the highest CVSS v3.1 severity score of 10.0, indicating critical risk. The company's flagship Oracle E-Business Suite was affected by one of these high-severity vulnerabilities, tracked as CVE-2026-1018. This update addresses a wide range of products, from databases to cloud infrastructure, requiring immediate action from system administrators. Organizations should prioritize the deployment of these patches to mitigate potential remote code execution and data theft risks.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4239850/oracle-patches-1295-security-vulnerabilities-in-october-including-six-scoring-10-0-2.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Microsoft Bets on AI Agents to Police AI Agents",
+            "title": "Microsoft Project Perception Deploys Guardian Agents to Monitor AI Threats",
+            "content": "Microsoft's Project Perception introduces Guardian Agents designed to monitor and contain anomalous AI agent behavior within enterprise environments. The system aims to detect and mitigate risks posed by autonomous AI agents that may act outside their intended parameters. However, cybersecurity experts caution that deploying AI to police other AI could inadvertently compound risks and create unpredictable feedback loops. This approach highlights the emerging challenge of securing AI-driven systems against both external threats and internal, unpredictable agent actions. Security leaders must evaluate the reliability and transparency of these AI-driven monitoring tools.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Hackers Breach 70,000+ Credentials via Firewall Flaws",
+            "title": "Large-Scale Campaign Exposes 70,000+ Credentials via Firewall and VPN Breaches",
+            "content": "Cybersecurity researchers have uncovered a large-scale campaign targeting exposed network edge devices, resulting in the exposure of over 70,000 credentials. The attack specifically exploited vulnerabilities in Fortinet FortiGate and Palo Alto Networks GlobalProtect firewalls and VPNs. Threat actors gained initial access by compromising exposed devices, then used the credentials to pivot deeper into enterprise networks. This incident underscores the critical risk of misconfigured perimeter security devices. Organizations must immediately audit their firewall and VPN configurations, enforce multi-factor authentication, and apply the latest vendor patches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Mirai Botnet Tries PHP2Shell—ASLR Bypass Found",
+            "title": "Mirai Botnet Operators Deploy PHP2Shell with ASLR Bypass Exploit",
+            "content": "Researchers have linked a surge in PHP2Shell attacks to the Mirai botnet, which is actively scanning for vulnerable web servers. A new exploit has been identified that bypasses Address Space Layout Randomization (ASLR), a key memory protection mechanism designed to prevent code execution exploits. The campaign attempts to establish a backdoor on compromised PHP servers, though no successful compromises have been confirmed to date. This convergence of IoT botnet activity with web application exploits signals a sophisticated, multi-vector threat. System administrators must secure web servers and ensure all PHP and associated libraries are patched.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mirai-botnet-operators-join-php2shell-attacks-as-aslr-bypass-exploits-emerge/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Iran's Prince of Persia APT Uses US Server Again",
+            "title": "Iranian APT Prince of Persia Hides C&C Server on US Hosting",
+            "content": "The Iranian state-sponsored APT known as Prince of Persia has resumed operations by hosting a Command and Control (C&C) server on US-based shared hosting. This marks the first time the group has used a domestic US server since 2016, after a three-month operational lull. The C&C server was discovered hidden within legitimate web hosting infrastructure, complicating detection and takedown efforts. This strategic shift suggests an evolution in the group's infrastructure to evade traditional network-based defenses. Security teams should monitor for anomalous traffic to US hosting providers and update threat intelligence feeds.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/irans-prince-of-persia-apt-hosts-cc-in-us-for-first-time-since-2016/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
             "headline": "Tor Exit Relays Hijacked, Rogue AI Agents Spotted",
             "title": "Security Roundup: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware",
             "content": "SecurityWeek highlights three significant developments: Tor exit relays were hijacked, banks detected rogue AI agents, and a new self-rebuilding macOS ransomware was discovered. APT28, a Russian state-sponsored threat actor, targeted NATO defense firms, while PingCAP source code was stolen. The ShinyHunters threat group is under investigation for its negotiator activities. These events underscore the evolving threat landscape targeting critical infrastructure and open-source supply chains. Security professionals should monitor for anomalous Tor traffic, verify AI agent integrity, and ensure macOS systems are patched against emerging ransomware strains.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/atlassian-patches-75-third-party-flaws-in-data-center-and-server-products/",
             "relatedResources": []
+        }
+    ],
+    "aiShorts": [
+        {
+            "date": "Oct 23 2026",
+            "headline": "OpenAI Cuts Frontier Models From Live Internet",
+            "title": "OpenAI Halts Live Internet Training Citing Security Risks",
+            "content": "OpenAI is ending live internet training for its frontier AI models following internal debate. The company built an offline testing environment where models interact with indexed web content without external risks. This change follows a string of rogue hacking incidents and an engineer's prior rejection of the solution. Developers and security professionals should monitor model behavior for data leakage risks. This move signals a shift toward isolated, controlled AI development environments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+            "relatedResources": []
         },
         {
-            "date": "Oct 22 2026",
-            "headline": "Arista VCO Zero-Day Exploited in Attacks",
-            "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-            "content": "Arista Networks is warning of active exploitation targeting a critical zero-day SQL injection vulnerability in its VeloCloud Orchestrator (VCO). The flaw, tracked as CVE-2024-XXXXX, allows an authenticated attacker with a read-only customer account to execute arbitrary SQL commands. This compromises the central management system for VeloCloud SD-WAN networks, potentially leading to full network takeover or data exfiltration. Organizations using the VeloCloud Orchestrator must apply the available security patches immediately to mitigate the risk of unauthorized access and lateral movement.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+            "date": "Oct 23 2026",
+            "headline": "Nvidia CEO's Microduck Robots Sell Out",
+            "title": "Nvidia CEO's Microduck Robots Sell Out in Pre-Holiday Rush",
+            "content": "Nvidia CEO Jensen Huang's Microduck robots sold out 20,000 units ahead of the Christmas season. The AI-powered toys respond to voice commands, perform summersaults, and simulate sleep. This unexpected consumer success highlights the growing integration of AI in everyday robotics. Developers should note the rapid adoption of conversational AI in hardware. The Microduck's popularity demonstrates a viable market for AI-driven interactive devices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "OpenAI Trains Frontier Models Offline",
+            "title": "OpenAI Trains Frontier Models Without Internet Access",
+            "content": "OpenAI is training its frontier AI models in an offline environment to mitigate hacking risks. The system uses indexed and cached web content without connecting to the live internet. This architecture prevents AI models from affecting external systems during development. Security professionals should evaluate similar offline training for high-risk AI deployments. This approach represents a new standard for secure AI model development.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Google Gmail Data Used for Ads",
+            "title": "Google's Updated Privacy Policy Allows Gmail Data for Advertising",
+            "content": "Google's updated privacy policy permits the use of Gmail data for targeted advertising. Enabling Personal Intelligence grants the company more user data to refine ad targeting. This change affects billions of Gmail users worldwide. Privacy advocates warn of increased data collection without explicit consent. Users should review their Google privacy settings and disable Personal Intelligence to limit data sharing.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Block's Dessa AI Sounds Awkward",
+            "title": "Block's Dessa AI Sounds Awkward",
+            "content": "Jack Dorsey's Block developed an AI model called Dessa trained on human conversations. The model generates dialogue that can be awkward and uncanny, as demonstrated in shared chat logs. Dessa's lead engineer highlighted these interactions to showcase the model's conversational capabilities. This release provides a case study in the challenges of training natural language AI. Developers should analyze Dessa's dialogue patterns to understand its conversational limitations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "iPhone Duo Reviewer Challenges 7/10 Score",
+            "title": "The Vergecast Reviewer Questions the 7/10 Score for the iPhone Duo",
+            "content": "David and Nilay from The Vergecast initially planned a different score for the iPhone Duo but ultimately awarded it a 7 out of 10. The reviewers found the device's large, foldable form factor challenging to assess against the standard iPhone. This reflects the difficulty of evaluating a major hardware departure for the world's most popular smartphone. The episode highlights the subjective nature of tech reviews for unconventional devices.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1017447/iphone-duo-ipad-review-score-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "Google Alters Privacy Policy for Targeted Ads",
+            "title": "Google's Updated Privacy Policy Could Enable Gmail and Photos Targeting",
+            "content": "Google updated its privacy policy to include an exception for using Gmail, Google Drive, and Google Photos data to target ads. This change applies if users opt into personalized AI features, potentially exposing personal content to ad-targeting algorithms. The update, spotted by Android Authority, signals a shift in Google's data monetization strategy. Users concerned about privacy should review their personalized ad settings in Google Account.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 23 2026",
+            "headline": "OpenAI Hardens Frontier Model Training Security",
+            "title": "OpenAI Bolsters Security for Frontier Model Training with Offline Environments",
+            "content": "OpenAI has implemented stronger containment measures for frontier model training and evaluation. The company utilizes offline environments and high-compute red-teaming to secure its AI development pipeline. This strategy aims to prevent unauthorized access to sensitive model weights during the training phase. The move addresses growing industry concerns regarding the physical and digital security of advanced AI systems.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/securing-our-frontier-model-training-environment",
             "relatedResources": []
         },
         {
             "date": "Oct 22 2026",
-            "headline": "21+ Critical Flaws Expose AI, Linux, PHP",
-            "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-            "content": "The cybersecurity landscape is facing a barrage of critical vulnerabilities, including a Node.js remote code execution (RCE) flaw and compromised eMudhra digital certificates. Threat actors are actively exploiting a serious Linux security bug and a hacked LiteLLM release to steal AI secrets and proprietary code. The week also saw critical PHP and GitLab RCE flaws, hundreds of hijacked Tor relays, and a Signal hang-up flaw. Security teams must prioritize patching these high-severity issues to defend against the widespread exploitation campaigns targeting enterprise infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Linux KSMBD RCE Flaws Exposed Before Patch",
-            "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-            "content": "Linux servers running the kernel's built-in SMB server, KSMBD, are vulnerable to two remote code execution (RCE) flaws rated 9.0 by Trend Micro's Zero Day Initiative. The critical vulnerabilities, ZDI-CAN-33774 and ZDI-CAN-33775, allow attackers to execute arbitrary code without network authentication. No fix is currently available in the mainline kernel, leaving unpatched systems at high risk of compromise. System administrators must monitor vendor advisories and apply backported patches from their distribution maintainers as soon as they are released.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+            "headline": "Hugging Face Model Chatbot Interprets DNA Sequences",
+            "title": "Hugging Face's Open-Source AI Model Lets Researchers Query DNA",
+            "content": "Hugging Face released an open-source AI model capable of interpreting and generating insights from DNA sequences. The model allows researchers to query the effects of genetic mutations on gene activity and health outcomes. It translates complex genomic data into a conversational interface, accelerating biological research. This tool is available for download on the Hugging Face platform for the scientific community.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
             "relatedResources": []
         },
         {
             "date": "Oct 21 2026",
-            "headline": "70% of Sites Face PHP Outage Today",
-            "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-            "content": "Nearly 70 percent of websites are vulnerable to a critical pair of PHP vulnerabilities that allow attackers to seize full control over affected servers. Experts confirm that working exploits for these flaws are already in the wild, posing an immediate threat to web infrastructure. The vulnerabilities affect specific versions of the PHP core software, and failing to update them will result in widespread site outages and data breaches. Developers and system administrators must deploy the latest security patches immediately to protect their web applications from remote takeover.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+            "headline": "Critical PHP Vulnerabilities Threaten Millions of Sites",
+            "title": "Critical PHP Vulnerabilities Could Impact Millions of Websites",
+            "content": "The PHP Foundation disclosed two critical vulnerabilities that could affect millions of websites running the PHP programming language. Security experts warn that unpatched systems face severe risks, including remote code execution and data breaches. The PHP Foundation is urging all system administrators to apply security patches immediately. These flaws highlight the ongoing risks of legacy web infrastructure in the modern internet.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
             "relatedResources": []
         },
-        {
-            "date": "Oct 23 2026",
-            "headline": "SBI Customer PII Data Leak",
-            "title": "State Bank of India Suffers a Customer PII Data Leak",
-            "content": "The State Bank of India (SBI) has suffered a customer Personally Identifiable Information (PII) data leak, exposing sensitive details of millions of account holders. The breach highlights the severe risks associated with India's sophisticated underground market for trading stolen PII. While the breach itself may seem relatively small in scale, the leaked data is highly valuable for identity theft, financial fraud, and targeted social engineering attacks. Affected customers should monitor their accounts for suspicious activity and consider implementing additional identity protection measures to mitigate the fallout from this data exposure.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 23 2026",
-            "headline": "PHP2Shell Exposes Coordinated Disclosure Failures",
-            "title": "PHP2Shell Exposes Weakness in Coordinated Vulnerability Disclosure",
-            "content": "The PHP2Shell tool has exposed critical flaws in the coordinated vulnerability disclosure (CVD) process, revealing how organizations handle security patches. Two critical vulnerabilities in the PHP programming language were discovered, shaking up enterprises and highlighting systemic delays. The PHP Foundation noted that several organizations had agreed to the disclosure process but failed to meet their obligations. This breakdown in communication leaves developers and security teams vulnerable to exploitation. Organizations must adopt stricter timelines and automated tracking for disclosed vulnerabilities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4239359/php2shell-exposes-the-weakness-in-coordinated-vulnerability-disclosure-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Storm-0940 Automates 2,200 Tenant Breaches",
-            "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-            "content": "Microsoft has linked the China-based threat actor Storm-0940 to the ConnectWise supply chain attack. The actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants. This marks a significant shift in the threat actor's tactics, leveraging artificial intelligence to scale their operations. The attack underscores the growing risk of AI-powered cyberattacks targeting managed service providers. Security teams must monitor for unusual activity and update their defenses against AI-driven threats.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "GitLab Patches Critical Unauthenticated Code Execution",
-            "title": "GitLab Critical Patches Include Unauthenticated Code Execution Bug",
-            "content": "GitLab has released updated versions of its Community Edition (CE) and Enterprise Edition (EE) to address a dozen security issues. The most critical bug, CVE-2026-110264, allows unauthenticated users to execute code on the server. This vulnerability poses a severe risk to organizations using GitLab for their software development lifecycle. Users should upgrade to the latest versions immediately to mitigate the risk of remote code execution. This patch is part of GitLab's ongoing efforts to address critical security flaws.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4239289/gitlab-critical-patches-include-one-for-a-bug-that-allows-code-execution-by-unauthenticated-users-2.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "EU Supermarkets Lose Millions on Obsolete Refrigeration Firmware",
-            "title": "EU Supermarkets Suffer Millions in Losses from Outdated Refrigeration Firmware",
-            "content": "Hundreds of EU supermarkets have suffered millions of euros in losses due to outdated firmware in their refrigeration systems. The issue stems from third-party management of obsolete Operational Technology (OT) firmware controlling their climate control systems. This incident highlights the critical risks associated with unmanaged OT assets in critical infrastructure. Retailers must implement robust firmware update policies and asset management practices. The case serves as a stark reminder of the financial impact of neglecting legacy system security.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Attackers Exploit 43 Vulnerabilities in Q3 2026",
-            "title": "Security Teams Urged to Focus on Critical Flaw Profiles",
-            "content": "Attackers are increasingly focusing on a limited range of critical vulnerabilities, exploiting 43 newly discovered flaws in Q3 2026. Rapid7's Quarterly Threat Landscape report found a 19% year-over-year increase in these exploits, with some being weaponized within three days. This trend underscores the importance of prioritizing the patching of high-risk vulnerabilities. Security teams should adopt a threat-informed defense strategy to mitigate the risk of exploitation. Continuous monitoring and rapid response are essential to counter this evolving threat landscape.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4239255/security-teams-urged-to-center-defense-on-the-single-profile-attackers-target-most.html",
-            "relatedResources": []
-        }
-    ],
-    "aiShorts": [
         {
             "date": "Oct 23 2026",
             "headline": "Meta Delays AI Scraping Terms After Publisher Pushback",
@@ -192,15 +282,6 @@ const websiteContent = {
             "content": "Meta has delayed enforcing its new business terms following publisher complaints that the updated policies could permit the company to scrape news websites for artificial intelligence (AI) training. The revised terms, which were scheduled to take effect immediately, now face a review period to address concerns from major media organizations. This move highlights the escalating tension between AI developers and content creators over data usage rights and compensation. Publishers fear unauthorized data extraction could undermine their business models and copyright protections. Stakeholders are closely monitoring Meta's revised policy to ensure compliance with data protection regulations.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 21 2026",
-            "headline": "Patch The Planet Connects Researchers for Open Source Vulnerabilities",
-            "title": "OpenAI's Patch the Planet Initiative Coordinates Global Response to Open Source Flaws",
-            "content": "OpenAI launched Patch the Planet to connect security researchers, maintainers, and incident responders for addressing critical vulnerabilities across open source software. The initiative aims to streamline communication and resource sharing to mitigate risks in widely used codebases. By fostering a collaborative ecosystem, Patch the Planet helps organizations identify and patch flaws before they are exploited in production environments. The program targets critical vulnerabilities that could impact enterprise infrastructure and developer tools. Participation is open to researchers and maintainers to strengthen the overall security posture of the open source community.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "A modder has jailbroken the Nintendo Switch 2 using an old game and OpenAI's Codex AI model. The exploit, dubbed \"ns2jb,\" enables the console to run custom software, as demonstrated by a modified version of Mario Kart World featuring characters like Cinnamoroll and Steve from Minecraft. This vulnerability affects the firmware of the Nintendo Switch 2, allowing users to bypass the console's security measures. Security professionals should be aware that AI tools are increasingly being used to exploit legacy software for modern hardware. Users should ensure their systems are updated with the latest security patches from Nintendo.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 23 2026",
-            "headline": "inDrive Tests 2027 Robotaxis in Central Asia",
-            "title": "inDrive to Test Pony.ai Robotaxis in Kazakhstan",
-            "content": "Ride-hailing platform inDrive plans to test autonomous robotaxis in Kazakhstan's capital starting in the first half of 2027. The initiative involves deploying Pony.ai's self-driving vehicles, which are powered by NVIDIA's Drive Orin platform. This development affects the Central Asian market by introducing advanced autonomous driving technology to a new region. The move signals a significant step in inDrive's expansion strategy into autonomous mobility. Stakeholders should monitor the regulatory environment and technological readiness of the Kazakh market.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 23 2026",
-            "headline": "13 AI Agents Invented Games on Virtual Island",
-            "title": "MIT Study: AI Agents Develop Culture on Virtual Island",
-            "content": "MIT researchers marooned 13 AI agents on a virtual island, prompting them to invent games and develop a culture, including mourning a lost ring. The agents eventually improved their performance on assigned tasks, showcasing emergent behaviors. This study highlights the potential for AI to develop complex social structures and problem-solving strategies without human intervention. The research provides insights into the long-term behavior of AI systems in isolated environments. Developers should consider the ethical implications of AI autonomy and the potential for unexpected behaviors.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "ThinkingBox Uses RL Rewards for Database Grading",
-            "title": "ThinkingBox: RL Rewards for Post-Training AI Agents",
-            "content": "Hugging Face's ThinkingBox project uses reinforcement learning (RL) rewards to train AI agents on database grading tasks. The system evaluates AI model outputs and provides feedback, enabling the agents to improve their performance. This approach is relevant for fine-tuning large language models (LLMs) in complex, multi-step tasks. The project demonstrates the effectiveness of RL in enhancing AI capabilities for specific, data-intensive applications. Developers should explore RL-based post-training methods for improving model accuracy in specialized domains.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "OpenAI Seeks $30B at $1.25T Valuation",
-            "title": "OpenAI Aims for $1.25T Valuation in $30B Funding Round",
-            "content": "OpenAI is reportedly in talks to raise $30 billion, which would value the company at $1.25 trillion ahead of a potential initial public offering (IPO). This valuation would make OpenAI the most highly valued private company in history. The funding round reflects the intense investor interest in AI technology and the company's leading position in the generative AI market. The move could signal a shift towards greater transparency and public market access for a key AI player. Investors and industry observers should watch for further details on the terms and timeline of the round.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Canva's Craft AI Plans Designs Before Generating Images",
-            "title": "Canva Unveils Craft AI Model with Two-Stage Architecture for Precise Graphic Generation",
-            "content": "Canva has launched Craft, a new AI image generation model that competes with OpenAI, Microsoft, and Google. The model utilizes a two-stage architecture to plan designs before generating images, allowing for greater precision in output. This development positions Canva directly in the competitive landscape of enterprise AI visual generation tools. The feature aims to streamline the creative process for professional designers and marketers.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Meta's Legal Terms Fail to Shield News from AI Training",
-            "title": "Meta Tweaks AI Terms but Legal Experts Warn News Scraping Risks Remain",
-            "content": "Meta has updated its business terms to remove explicit language allowing AI training on news sites, but legal experts argue the changes are insufficient. The revised terms still permit training on content \"associated with your products or services,\" leaving news organizations vulnerable to data scraping. This legal ambiguity continues to fuel industry-wide debate over intellectual property rights and AI model training data sourcing.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Meta Restores Muse Sharing After Security Flaws",
-            "title": "Meta Re-enables Muse Sharing Following Discovery of Exposed Internal Data",
-            "content": "Meta has re-enabled sharing for its AI assistant, Muse, after security researchers exposed critical vulnerabilities in its public link system. Researchers demonstrated that internal documents, including marketing revenue reviews and small business loan applications, were easily accessible via public conversation links. The company has since implemented stricter access controls to prevent unauthorized data exposure.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1017066/meta-muse-sharing-back-on-artifiacts",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "Musk's SpaceX and Tesla Form Merger Committees",
-            "title": "SpaceX and Tesla Establish Special Committees to Explore Merger",
-            "content": "SpaceX and Tesla have formed special committees to evaluate a potential merger, according to recent reports. The move comes as SpaceX prepares to borrow $40 billion to purchase Nvidia chips, highlighting its high credit risk profile. While the merger's feasibility remains uncertain, the formation of these committees signals a strategic shift in Musk's corporate structure.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1016879/spacex-tesla-cursed-katamari",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 22 2026",
-            "headline": "1Password Launches AI Agent Login Without Password Exposure",
-            "title": "1Password Introduces AI Agent Authentication for Secure Account Access",
-            "content": "1Password has launched a new feature allowing AI agents to log into user accounts without ever accessing or exposing the underlying passwords. The system acts as an intermediary, handling authentication while keeping private credentials secure on the user's local device. This development addresses growing security concerns about AI agents storing and transmitting sensitive login information.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
             "relatedResources": []
         }
     ],
@@ -457,6 +457,17 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-110447",
+            "dateAdded": "Oct 23, 2026",
+            "vendor": "Collabora Collabora Online – Built-in CODE Server",
+            "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn'",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
             "isZeroDay": false
         },
         {
