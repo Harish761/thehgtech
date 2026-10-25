@@ -1,8 +1,8 @@
 {
   "vendor": "ThreatFox",
-  "lastUpdated": "2026-10-25T03:55:01.033835+05:30",
-  "totalCount": 17622,
-  "displayedCount": 17622,
+  "lastUpdated": "2026-10-25T10:00:06.773879+05:30",
+  "totalCount": 17582,
+  "displayedCount": 17582,
   "isCapped": false,
   "cappingStrategy": null,
   "iocs": [
@@ -189056,48 +189056,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"9bc7fd6c0f392b367d76e1f617e60978760b54acc14e40a54ef0d39f7d067a61\"",
-      "description": " \"unknown_loader\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"unknown_loader\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c3f27fa88aada79400d7a0ad373347b9b4c0493f2734d68f950019a389cd5123\"",
-      "description": " \"unknown_loader\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"unknown_loader\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c24ae3aef86d4ce54942f811bbc9bc2620131f340a4de4bf3fd1eb00f57341c9\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://igb[.]9nawin[.]org/uy/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -189291,48 +189249,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"3f5af066d85830b838143fabc577221c93db3b5abc2c2057901463cbed6936cc\"",
-      "description": " \"unknown_loader\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"unknown_loader\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"0b8b6f4f90506e651044cd2e4d953c313b4eab187865c6b6b8d51b03e72c4339\"",
-      "description": " \"unknown_loader\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"unknown_loader\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"43ee067ed40abe2c65ff03138d986cdd43d7ba4ba66b1316f8009795096eba04\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
     },
     {
       "type": "url",
@@ -189602,76 +189518,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"e8a45b3a78823d0eeb103920adaccb419152218dfa121117c3b542a2ba8fac20\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"d8ab84932dddce52c1c83d848e42173c21869a7306f34f2f391b0c2caf78b373\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"df603be289eb6d3075f67ef1b03ecd2cb353c2cef42683226b2d479eef2b4608\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"8dcd02094df461a66a0f15ef26b58bb5cad6a2e4dcf30783eb7e43a422f7c5bc\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"d78b3ebdd20cca13b26987baf2d5304987228ad56e48e440bf3ed6f423179923\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://k3[.]9nawin[.]org/be6/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -189728,20 +189574,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"de8aa6662b900225eed2e0727924a62b0b02171129c009e03d23068c7d828c16\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://k3[.]9nawin[.]org/u/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -189753,48 +189585,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c84ec5f635645672d1d5dd6a0c43aca1e11fa6aa0903396a14af0a21a472437c\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"001bdee1b3ea49c4cf6ae5e117e2093d3d0119ba0d4688b76bf70e1497882692\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"190d1a5cc7289a6665339693cad778a8ae62525b612b5ce396eb3e40b7fedc1d\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
@@ -189952,146 +189742,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"12cc08c6601591c376125268c78cab8ddb34287e2f40c503b172fc3d132da619\"",
-      "description": " \"unknown_loader\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"unknown_loader\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"dcdfb5866c594ee0f92149fed4efcc2b243bf4da1f747a3b2e0b680fdd483df8\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"bdc2a10fae2c2e4cc5df94d03249793eda74fa348a7dea723adb8ef253840d4e\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"ead455a4fd224d9c345f505facece94ba51128ae32cfa4e59f771957d20b35fa\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"d9eed73e0f21826133e4327ca906b67630ddc011770e52a24a98fd951a085bdd\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"7dc728e4b3a8333935be5cbdd83334afc45d4c689645a5951247d9c65e6ffae1\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"ff5925625e64f3923bd14035e9e5e41111857a041564662d0d7c1b4304037b22\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"646d11f69c230d2cf348561b6426d6c69382cc9c36715a87a4dbcdf6ed79b291\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"f5b1cd0523a28117759fa2eed0e8666843febb4dd77ba85de544dac96d9c60b4\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"e6faa9b088f4bf2425faebe05b1fce1e3ec3178ebf4d889b655d087a913dd4c9\"",
-      "description": " \"elf.mirai\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"elf.mirai\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://tp[.]988boss[.]org/nw/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -190103,34 +189753,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"6c118d4bd1a56f56756b78134474c2a5becd3f138803d3297155691a427f6524\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"510c4b3b85201eada32ff69b46e605f384ba5ff4bbcfb5399e42b31a7de37f63\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
@@ -190148,20 +189770,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"813bb6f2bc378364b4a0ed1405fe6ccd34a1510c4c94fe98f5908e6514999c1a\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://tp[.]988boss[.]org/nd/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -190176,20 +189784,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"aa2fe64a8b365f79ba99c5cae660602063d6b555b3dd2e40d05f5293ca2c2a96\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://tp[.]988boss[.]org/w/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -190201,34 +189795,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"f2c7af231a3dc1a9291a2421d2b67e3c6ed829073fdcbd7aeec3c33a933d2f6e\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"d64921058e03078b75565d5aeea126e75698f39be3c6387d17c5d9fa8536d0ac\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
@@ -190260,34 +189826,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"e6490a700b965a6dcf264eb1e8291217d9e52f167470d70bc24806697fabeeaa\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"4d0750c28f12107bc0e795b52895e27bede181fd42ac61ab634049e029950a78\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://tp[.]988boss[.]org/k/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -190299,20 +189837,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c55acd844b65a035da6a617931c6e27876d80193e1f2e449179480715c54af8d\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
@@ -190358,20 +189882,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"c566ff69df0f4e054dfb1c7339b66edb4ea24fba96a4d84f03e8d8f333364df6\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"6cnxgj35[.]cyclingjordan[.]co\"",
       "description": " \"js.clearfake\" -  \"payload_delivery\"",
       "timestamp": "just now",
@@ -190400,20 +189910,6 @@
     },
     {
       "type": "url",
-      "indicator": " \"b5b2baef7c88e06f741c677d117bcef5b97ed48c2367c7995710e2778106a753\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
       "indicator": " \"hxxps://tp[.]988boss[.]org/c8/\"",
       "description": " \"win.vidar\" -  \"botnet_cc\"",
       "timestamp": "just now",
@@ -190425,34 +189921,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c548947ab99bcf73a57d4872479d8cab3a1014f4e64106524e75cfda6ad19488\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"7bca72b4fbce423150db21ae8af95afec607fa84445fe664dc40d8564465e1e5\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
@@ -190495,20 +189963,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"c11c781c7051b68fb5b9a9daad209f9ac57711a3f4888bbdf6c64f3fc0239ef9\"",
-      "description": " \"win.gravity_rat\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"win.gravity_rat\""
     },
     {
       "type": "url",
@@ -190621,20 +190075,6 @@
       ],
       "addedAt": "2026-10-18T18:04:26.762657+05:30",
       "campaign": " \"win.vidar\""
-    },
-    {
-      "type": "url",
-      "indicator": " \"324de8b19e5be5f6e86b5b0d594f9209ffde06f55e79997cb7260183fc6e3367\"",
-      "description": " \"osx.amos\" -  \"payload\"",
-      "timestamp": "just now",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-18 18:04 IST",
-      "tags": [
-        "live"
-      ],
-      "addedAt": "2026-10-18T09:49:46.134818+05:30",
-      "campaign": " \"osx.amos\""
     },
     {
       "type": "url",
