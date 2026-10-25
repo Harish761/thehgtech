@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-10-24T17:31:03.955318",
-  "total_incidents": 32418,
+  "last_updated": "2026-10-25T07:44:13.986910",
+  "total_incidents": 32425,
   "incidents": [
+    {
+      "id": "emperador_ab_inbev",
+      "victim_name": "AB InBev",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-10-25T03:22:10.246426+00:00",
+      "industry": "Agriculture and Food Production",
+      "website": "",
+      "claim": "AB InBev is the world's largest brewer, headquartered in Belgium, known for Budweiser, Corona, and Stella Artois .\n\nWe hold 329,244 AB InBev social-listening alerts, 2,510 corporate emails across all subsidiaries, 19K access logs, GBS portal records, internal PKI certificates, and 3.2GB of Azure blob assets.\n\nOur demand is $1,000,000 in BTC. [Sector: Retail, Manufacturing]",
+      "screenshot": "https://images.ransomware.live/victims/9a03b3b2d337d84ad93adfa2036aa4ae.png",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/ab-inbev/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "whitearmor_hisense",
+      "victim_name": "Hisense",
+      "threat_actor": "Whitearmor",
+      "date_discovered": "2026-10-25T01:24:13.562658+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Hisense is a Chinese multinational electronics and appliance manufacturer, founded in 1969, known globally for televisions and home appliances.\n\nWe hold Hisense's entire GCRM production document store, the full warranty-claims archive for Malaysia/Singapore: customer names, phones, emails, ID numbers, 2,549 suppliers, hundreds of invoices, payments, contracts, RMA forms, claim evidence, plus their internal CRM app binary.\n\nOur demand is $500,000 in BTC. Good luck.\n\nContact: whitearmorrxd@proton.me\nSession: 0547b7f96d469ecb332e89d0108e71c92df5bacff6c4ed5b9801ab5fffe872ee67",
+      "screenshot": "https://images.ransomware.live/victims/716108c3c9ba2b1421f15ec8afef3956.png",
+      "url": "http://whitearz6uvtfdefgsc4r3mzmyswtte65k5umcmv6cu6zhi4l5k4irad.onion",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "anubis_newcomer_cremations,_funerals_&_receptions",
+      "victim_name": "Newcomer Cremations, Funerals & Receptions",
+      "threat_actor": "anubis",
+      "date_discovered": "2026-10-25T00:31:56.643577+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "Customers' personal documents and the company's internal documents.",
+      "screenshot": "https://images.ransomware.live/victims/d572cbd1b2d58f9aba6d3f524da02f5f.png",
+      "url": "http://om6q4a6cyipxvt7ioudxt24cw4oqu4yodmqzl25mqd2hgllymrgu4aqd.onion/r/cADQ8Jkbtn5C1uHUgOSy7MhG4AZEsyOS7U7m4RtAci7a+ZH1yzDdeAFPMZHJshlsPYVEYyCkU1bJSlIhA1NBFlxNkIxTzRW",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_castle_howard_estate",
+      "victim_name": "Castle Howard Estate",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-10-24T16:34:49.360176+00:00",
+      "industry": "Hospitality",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/42de8a59b5f01a4d3f1d9bd2ba55f35f.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=65926679-0b3a-43f2-9283-4ac16718f881",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lamashtu_vins_viallet",
+      "victim_name": "Vins Viallet",
+      "threat_actor": "lamashtu",
+      "date_discovered": "2026-10-24T16:30:40.843615+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Vins Viallet is a French family-owned wine producer and distributor based in the Savoie region. Founded in 1966, the company produces and markets a range of wines, including white, red, rosé and sparkling varieties, serving retail and wholesale",
+      "screenshot": "https://images.ransomware.live/victims/8444f7bf7221107dec866c6f7ecd62e0.png",
+      "url": "http://lamashtux5j74mcm7lwwgn5yrvuwtrpxjoyendif3v3hrztjesfoyayd.onion/post/ad10729196bfae1e58eb75aa8ae7536f",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_phoenix_s&s_gmbh",
+      "victim_name": "Phoenix S&S GmbH",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-10-24T14:53:32.619361+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "German company from Frankfurt am Main, \nwhich deals with building maintenance, construction services, \nlogistics and security.\nArchived personal and corporate data of employees and customers.\nHere are the most important documents. [Sector: Manufacturing, Finance, Transportation]",
+      "screenshot": "",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/phoenix-ss-gmbh/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_frommann_energie_gmbh",
+      "victim_name": "Frommann Energie GmbH",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-10-24T14:52:41.604608+00:00",
+      "industry": "Energy & Utilities",
+      "website": "",
+      "claim": "German company that sells and delivers fuels, \nprimarily heating oil (Heizöl), \nbut also motor fuels and lubricants.\nArchived personal and corporate data of employees and customers.\nHere are the most important documents. [Sector: Manufacturing, Finance, Technology]",
+      "screenshot": "",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/frommann-energie-gmbh/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "qilin_sltn_inter_access",
       "victim_name": "SLTN Inter Access",
