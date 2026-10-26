@@ -2,15 +2,15 @@
   "previous_day": {
     "date": "2026-10-26",
     "categories": {
-      "Phishing": 3745,
-      "Malware": 39260,
-      "C2": 11300,
-      "Botnet": 5583
+      "Phishing": 3648,
+      "Malware": 39074,
+      "C2": 10952,
+      "Botnet": 5291
     }
   },
   "previous_hour_campaigns": {
-    "Generic Phishing": 3626,
-    "Financial Phishing": 18,
+    "Generic Phishing": 3838,
+    "Financial Phishing": 27,
     "Booking.com Phishing": 1,
     "Unassigned Malware": 712,
     "CoinMiner": 131,
@@ -103,8 +103,8 @@
     "Ramsay": 4,
     "NetSupport": 9,
     "Spamhaus DROP List": 1688,
-    "CINS Threat List": 38932,
-    "SSH Attacks": 10712,
+    "CINS Threat List": 39508,
+    "SSH Attacks": 10964,
     "malware_download": 35227,
     "Potassium": 25,
     "StrelaStealer": 3,
