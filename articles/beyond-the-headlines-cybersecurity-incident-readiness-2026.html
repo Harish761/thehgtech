@@ -102,7 +102,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "Beyond the Headlines: Incident Readiness",
+      "name": "Beyond the Headlines: Incident Readiness Playbook",
       "item": "https://thehgtech.com/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html"
     }
   ]
@@ -648,7 +648,7 @@
         <li style="color:#6b7084;" aria-hidden="true">›</li>
         <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
         <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li style="color:#ffffff;" aria-current="page">The SBI Data Exposure: What 3,897 PII Records on the Dark…</li>
+        <li style="color:#ffffff;" aria-current="page">Beyond the Headlines: Incident Readiness Playbook</li>
       </ol>
     </nav>
     <!-- Mobile Header -->
@@ -959,7 +959,8 @@
                 </p>
 
                 <div class="article-meta" style="display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; padding-bottom: 1.5rem; border-bottom: 1px solid var(--glass-border); margin-bottom: 2rem; font-size: 0.95rem; color: var(--text-secondary);">
-                    <span><i class="fas fa-user-edit" style="color: var(--accent-cyan); margin-right: 6px;"></i> Harish G</span>
+                    <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
+                <span><i class="fas fa-user-edit" style="color: var(--accent-cyan); margin-right: 6px;"></i> Harish G</span>
                     <span><i class="far fa-calendar-alt" style="color: var(--accent-cyan); margin-right: 6px;"></i> October 22, 2026</span>
                     <span><i class="far fa-clock" style="color: var(--accent-cyan); margin-right: 6px;"></i> 18 min read</span>
                     <span><i class="fas fa-code-branch" style="color: var(--accent-cyan); margin-right: 6px;"></i> Technical Playbook</span>
@@ -1297,11 +1298,13 @@
                     </h3>
                     <p><strong>Context & Threat Mechanics:</strong> Both PHP2Shell (<code>CVE-2026-109618</code>/<code>19</code>) and GitLab's regex engine flaw (<code>CVE-2026-110264</code>) allow unauthenticated remote code execution within web worker processes. Once memory corruption succeeds, attackers break out of the runtime by spawning interactive command shells (<code>sh</code>, <code>bash</code>, <code>cmd.exe</code>) under service accounts (<code>www-data</code>, <code>git</code>, <code>nginx</code>).</p>
                     <p><strong>Required Telemetry:</strong> Endpoint Detection and Response (EDR) process creation events (e.g., Microsoft Defender for Endpoint, CrowdStrike Falcon, Linux <code>auditd</code>).</p>
-                    <p><strong>KQL Detection Rule (Microsoft Sentinel / Defender for Endpoint):</strong></p>
+                    <p><strong>KQL Detection Rule (Microsoft Defender XDR Advanced Hunting):</strong></p>
                     <pre style="background: rgba(0, 0, 0, 0.6); padding: 1.2rem; border-radius: 6px; border: 1px solid var(--glass-border); overflow-x: auto; font-family: monospace; font-size: 0.88rem; color: #a5f3fc; line-height: 1.5;"><code>// KQL: Detect anomalous shell execution spawned by web application and CI/CD processes
-// Platform Assumption: Microsoft Defender for Endpoint (DeviceProcessEvents schema)
+// Platform: Microsoft Defender XDR (Advanced Hunting / DeviceProcessEvents schema)
+// Schema Note: Microsoft Defender XDR native tables use 'Timestamp'. In Microsoft Sentinel Log Analytics workspaces, substitute 'TimeGenerated'.
 DeviceProcessEvents
-| where TimeGenerated &gt;= ago(24h)
+| where Timestamp &gt;= ago(24h)
+| where ActionType == "ProcessCreated"
 // Match web servers, PHP-FPM runtimes, and GitLab service processes
 | where InitiatingProcessFileName in~ ("php-fpm", "php-fpm.exe", "httpd", "apache2", "nginx", "gitlab-workhorse", "gitaly")
     or InitiatingProcessAccountName in~ ("www-data", "nginx", "apache", "git", "gitlab-www")
@@ -1309,8 +1312,8 @@ DeviceProcessEvents
 | where FileName in~ ("sh", "bash", "dash", "zsh", "python", "python3", "perl", "ruby", "curl", "wget", "nc", "netcat", "socat", "cmd.exe", "powershell.exe")
 // Exclude known legitimate administrative automation scripts if strictly validated
 | where not(ProcessCommandLine has "/opt/gitlab/embedded/bin/gitlab-rake")
-| project TimeGenerated, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, AccountName
-| order by TimeGenerated desc</code></pre>
+| project Timestamp, DeviceName, ActionType, InitiatingProcessAccountName, InitiatingProcessFileName, InitiatingProcessCommandLine, FileName, ProcessCommandLine, AccountName
+| order by Timestamp desc</code></pre>
                     <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 0.75rem;">
                         <strong>Investigation Steps:</strong> Immediately isolate the host. Inspect <code>InitiatingProcessCommandLine</code> and examine web server access logs around the exact timestamp for abnormal POST requests (such as multipart upload spikes or GitLab API regex submissions). Check network connections initiated by the spawned process for C2 callbacks.
                     </p>
@@ -1537,15 +1540,22 @@ AzureDiagnostics
                     <li><strong>180-Day Secure Log Retention:</strong> System and application logs must be maintained securely within Indian jurisdiction for a rolling period of at least <strong>180 consecutive days</strong>.</li>
                 </ul>
 
-                <h4>2. Digital Personal Data Protection (DPDP) Act, 2023 & DPDP Rules, 2025</h4>
+                <h4>2. Digital Personal Data Protection (DPDP) Act, 2023 & DPDP Rules Framework</h4>
                 <p>
-                    The legal status of India's privacy framework requires precise analysis:
+                    The operational and legal status of India's personal data governance regime demands strict statutory accuracy:
                 </p>
                 <ul>
-                    <li><strong>Regulatory Status:</strong> The DPDP Act was enacted in August 2023. The Ministry of Electronics and Information Technology (MeitY) officially notified the comprehensive <strong>Digital Personal Data Protection Rules in November 2025</strong>. This established an 18-month phased compliance transition glidepath running through <strong>mid-May 2027</strong>. In October 2026, the central government issued the <em>DPDP (Removal of Difficulties) Order, 2026</em> to provide procedural clarity on audit terminology for Significant Data Fiduciaries (SDFs).</li>
-                    <li><strong>Active Enforcement Authority:</strong> The <strong>Data Protection Board of India (DPBI)</strong> has been formally established as the quasi-judicial adjudicatory body empowered to hear citizen complaints, investigate security safeguards, and adjudicate breaches.</li>
-                    <li><strong>Mandatory Breach Notification:</strong> Under Section 8(6) of the Act, a Data Fiduciary must notify the Data Protection Board of India and each affected Data Principal of any personal data breach in the prescribed form and manner.</li>
-                    <li><strong>Severe Financial Penalties:</strong> Schedule 1 of the Act establishes penalties of up to <strong>₹250 crore</strong> for failure to implement reasonable security safeguards resulting in a personal data breach, and up to <strong>₹200 crore</strong> for failing to notify the Board and affected individuals.</li>
+                    <li><strong>Statutory Foundation:</strong> The DPDP Act, 2023 was enacted in August 2023. Operational implementation is governed by the comprehensive <strong>DPDP Rules</strong> notified by the Ministry of Electronics and Information Technology (MeitY), which establish the regulatory mechanics for Data Fiduciaries and Significant Data Fiduciaries (SDFs) across a phased transition runway concluding in <strong>mid-May 2027</strong>.</li>
+                    <li><strong>Removal of Difficulties Order, 2026 (S.O. 5458(E)):</strong> In October 2026, the central government exercised powers under Section 43(1) of the DPDP Act to notify the <em>Digital Personal Data Protection (Removal of Difficulties) Order, 2026</em>. This statutory instrument served strictly as an <strong>editorial and legal housekeeping correction</strong>: it amended Section 9(1) to <em>"child or of a person with disability"</em> (clarifying that guardian consent applies independently to both categories) and replaced <em>"audit"</em> with <em>"data audit"</em> in Section 10(2)(c)(ii) to harmonize with Section 10(2)(b) data auditor requirements. <em>It did not alter statutory deadlines, create new compliance mandates, or shift enforcement timelines.</em></li>
+                    <li><strong>Active Enforcement Authority:</strong> The <strong>Data Protection Board of India (DPBI)</strong> serves as the quasi-judicial adjudicatory authority empowered to inquire into data security safeguards, investigate non-compliance, and adjudicate complaints.</li>
+                    <li><strong>Dual-Track Breach Notification (Section 8(6) & Rule 7):</strong> When a Data Fiduciary becomes aware of a personal data breach, it is subject to a dual reporting mandate without any materiality or harm threshold filter:
+                        <ul style="margin-top: 0.25rem;">
+                            <li><strong>To the Data Protection Board of India:</strong> An initial intimation must be submitted <em>without delay</em>, followed by a comprehensive detailed breach report within <strong>72 hours</strong>.</li>
+                            <li><strong>To Affected Data Principals:</strong> Clear, plain-language notification must be sent <em>without delay</em> detailing the nature of the breach, likely consequences, mitigating measures taken, and the grievance officer's contact details.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Concurrent CERT-In Overlap:</strong> The 72-hour DPBI reporting timeline does <em>not</em> supersede CERT-In's 6-hour cybersecurity reporting mandate under Section 70B of the IT Act. Regulated organizations processing Indian data must operate parallel notification workflows.</li>
+                    <li><strong>Statutory Penalties (Schedule 1):</strong> Failure to take reasonable security safeguards to prevent a personal data breach attracts financial penalties of up to <strong>₹250 crore</strong>, while failure to notify the Board and affected Data Principals carries penalties of up to <strong>₹200 crore</strong>.</li>
                 </ul>
 
                 <div class="info-box" style="background: rgba(0, 217, 255, 0.04); border-left: 4px solid var(--accent-cyan); padding: 1.25rem; margin: 1.5rem 0; border-radius: 0 8px 8px 0;">

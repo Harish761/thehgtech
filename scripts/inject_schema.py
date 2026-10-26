@@ -1,3 +1,10 @@
+"""RETIRED / DEPRECATED SCRIPT
+DO NOT EXECUTE. This legacy script injected duplicate schemas and hardcoded placeholder dates.
+Schema is now maintained deterministically per article and validated by CI.
+"""
+import sys
+# sys.exit(0)
+
 import os
 import json
 import re

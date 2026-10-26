@@ -1,3 +1,10 @@
+"""RETIRED / DEPRECATED SCRIPT
+DO NOT EXECUTE. This legacy script injected duplicate truncated descriptions due to single-line regex.
+Meta descriptions are maintained directly in HTML and validated by CI.
+"""
+import sys
+# sys.exit(0)
+
 import os
 import re
 

@@ -17,96 +17,102 @@
     
     <!-- Schema.org: TechArticle + FAQPage -->
     <script type="application/ld+json">
-    [
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
+    "author": {
+      "@type": "Person",
+      "@id": "https://thehgtech.com/about.html#harish-g",
+      "name": "Harish G",
+      "url": "https://thehgtech.com/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/harish-g-2216955b/",
+        "https://github.com/Harish761"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "TheHGTech",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/logo-dark.png"
+      }
+    },
+    "datePublished": "2026-06-22",
+    "dateModified": "2026-06-22",
+    "keywords": [
+      "Fortinet",
+      "FortiGate",
+      "VPN Security",
+      "Edge Security",
+      "Credential Theft",
+      "Session Hijacking",
+      "Incident Response",
+      "Threat Hunting",
+      "Detection Engineering",
+      "Snowflake Breach"
+    ],
+    "image": "https://thehgtech.com/images/articles/hidden-debt-vpn-breaches-2026.png",
+    "description": "An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence post-remediation."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
       {
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "headline": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
-        "author": {
-          "@type": "Person",
-          "name": "Harish G"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "TheHGTech",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://thehgtech.com/logo-dark.png"
-          }
-        },
-        "datePublished": "2026-06-22",
-        "dateModified": "2026-06-22",
-        "keywords": [
-          "Fortinet",
-          "FortiGate",
-          "VPN Security",
-          "Edge Security",
-          "Credential Theft",
-          "Session Hijacking",
-          "Incident Response",
-          "Threat Hunting",
-          "Detection Engineering",
-          "Snowflake Breach"
-        ],
-        "image": "https://thehgtech.com/images/articles/hidden-debt-vpn-breaches-2026.png",
-        "description": "An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence post-remediation."
+        "@type": "Question",
+        "name": "Why do attackers still have access after a vulnerability is patched?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Patching only closes the initial entry vector. If an attacker successfully exploited the vulnerability before the patch was applied, they may have stolen valid credentials, captured active session tokens, or planted backdoors. These artifacts allow them to re-enter the network using legitimate authentication mechanisms, bypassing the patched vulnerability entirely."
+        }
       },
       {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Why do attackers still have access after a vulnerability is patched?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Patching only closes the initial entry vector. If an attacker successfully exploited the vulnerability before the patch was applied, they may have stolen valid credentials, captured active session tokens, or planted backdoors. These artifacts allow them to re-enter the network using legitimate authentication mechanisms, bypassing the patched vulnerability entirely."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between vulnerability remediation and incident recovery?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Remediation focuses on fixing the software flaw (e.g., applying a vendor patch). Recovery focuses on eradicating the attacker from the environment. Recovery involves rotating compromised credentials, invalidating active sessions, hunting for persistence mechanisms, and verifying that the attacker can no longer access the network."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How did the Snowflake incidents highlight identity-based exposure?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Snowflake incidents demonstrated that massive breaches can occur without any software vulnerabilities. Attackers used valid credentials stolen via info-stealer malware to access customer environments that lacked Multi-Factor Authentication (MFA). It proved that focusing solely on CVEs while ignoring credential hygiene leaves organizations highly exposed."
-            }
-          }
-        ]
+        "@type": "Question",
+        "name": "What is the difference between vulnerability remediation and incident recovery?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Remediation focuses on fixing the software flaw (e.g., applying a vendor patch). Recovery focuses on eradicating the attacker from the environment. Recovery involves rotating compromised credentials, invalidating active sessions, hunting for persistence mechanisms, and verifying that the attacker can no longer access the network."
+        }
       },
       {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://thehgtech.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Articles",
-            "item": "https://thehgtech.com/articles.html"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "The Patch Was Installed. The Risk Wasn’t Removed",
-            "item": "https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html"
-          }
-        ]
+        "@type": "Question",
+        "name": "How did the Snowflake incidents highlight identity-based exposure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Snowflake incidents demonstrated that massive breaches can occur without any software vulnerabilities. Attackers used valid credentials stolen via info-stealer malware to access customer environments that lacked Multi-Factor Authentication (MFA). It proved that focusing solely on CVEs while ignoring credential hygiene leaves organizations highly exposed."
+        }
       }
     ]
-    </script>
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://thehgtech.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Articles",
+        "item": "https://thehgtech.com/articles.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Patch Was Installed. The Risk Wasn’t Removed",
+        "item": "https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html"
+      }
+    ]
+  }
+]
+</script>
 
     <!-- Style System - FULL SET REQUIRED -->
     <link rel="stylesheet" href="/header.css">
@@ -371,30 +377,34 @@
 
     <script src="/theme-toggle.js" defer></script>
     <script type="application/ld+json">
-
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "The Patch Was Installed. The Risk Wasn\u2019t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches | TheHGTech",
+  "headline": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches | TheHGTech",
   "description": "An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence.",
   "image": "https://thehgtech.com/images/og-image.jpg",
   "author": {
     "@type": "Person",
-    "name": "Harish G"
+    "name": "Harish G",
+    "@id": "https://thehgtech.com/about.html#harish-g",
+    "url": "https://thehgtech.com/about.html",
+    "sameAs": [
+      "https://www.linkedin.com/in/harish-g-2216955b/"
+    ]
   },
   "publisher": {
     "@type": "Organization",
     "name": "TheHGTech",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://thehgtech.com/images/logo-dark.png"
-    }
+      "url": "https://thehgtech.com/logo-dark.png"
+    },
+    "@id": "https://thehgtech.com/#organization"
   },
   "datePublished": "2026-06-28T19:48:26+05:30",
   "dateModified": "2026-06-28T19:48:26+05:30"
 }
-
-    </script>
+</script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -721,7 +731,7 @@
             <h1>The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches</h1>
             
             <div class="article-meta">
-                <span><i class="fas fa-user-circle"></i> Harish G</span>
+                <span><i class="fas fa-user-circle"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
                 <span><i class="far fa-calendar-alt"></i> June 22, 2026</span>
                 <span><i class="fas fa-folder"></i> Security Operations</span>
                 <span><i class="far fa-clock"></i> 18 min read</span>
@@ -1003,7 +1013,7 @@ level: medium</code></pre>
         </div>
 
         <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-            <p><strong>Author:</strong> Harish G, TheHGTech Security Team</p>
+            <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a>, TheHGTech Security Team</p>
             <p><strong>Published:</strong> June 22, 2026</p>
             <p><strong>Last Updated:</strong> June 22, 2026</p>
         </div>

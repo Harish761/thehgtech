@@ -19,20 +19,7 @@
     <meta property="og:description" content="From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp">
     <link rel="canonical" href="https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-      "image": ["https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp"],
-      "datePublished": "2026-05-10T12:00:00+00:00",
-      "dateModified": "2026-05-10T12:00:00+00:00",
-      "author": [{"@type": "Person", "name": "Harish G", "url": "https://www.linkedin.com/in/harish-g-03704815a/"}],
-      "publisher": {"@type": "Organization", "name": "TheHGTech", "logo": {"@type": "ImageObject", "url": "https://thehgtech.com/logo-dark.png"}},
-      "articleSection": "Vulnerability Research",
-      "keywords": "Dirty Frag, Linux Kernel, Page Cache, Privilege Escalation, Kernel Hardening"
-    }
-    </script>
+    
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
@@ -126,31 +113,7 @@
       ]
     }
     </script>
-    <script type="application/ld+json">
-
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-  "description": "From Dirty COW to Dirty Frag \u2014 four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.",
-  "image": "https://thehgtech.com/images/og-image.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Harish G"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/images/logo-dark.png"
-    }
-  },
-  "datePublished": "2026-06-30T17:12:27+05:30",
-  "dateModified": "2026-06-30T17:12:27+05:30"
-}
-
-    </script>
+    
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -180,13 +143,11 @@
 
     <!-- SEO: NewsArticle Schema -->
     <script type="application/ld+json">
-    
-
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
   "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-  "description": "From Dirty COW to Dirty Frag \u2014 four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.",
+  "description": "From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.",
   "image": [
     "https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp"
   ],
@@ -196,7 +157,11 @@
     {
       "@type": "Person",
       "name": "Harish G",
-      "url": "https://www.linkedin.com/in/harish-g-03704815a/"
+      "url": "https://thehgtech.com/about.html",
+      "@id": "https://thehgtech.com/about.html#harish-g",
+      "sameAs": [
+        "https://www.linkedin.com/in/harish-g-2216955b/"
+      ]
     }
   ],
   "publisher": {
@@ -205,8 +170,9 @@
     "url": "https://thehgtech.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://thehgtech.com/images/logo-dark.png"
-    }
+      "url": "https://thehgtech.com/logo-dark.png"
+    },
+    "@id": "https://thehgtech.com/#organization"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -214,9 +180,7 @@
   },
   "articleSection": "Vulnerability"
 }
-
-
-    </script>
+</script>
 </head>
 
 <body>
@@ -825,7 +789,7 @@ auditctl -a always,exit -F arch=b64 -S socket -F a0=33 -k rxrpc_socket</code></p
             </div>
 
             <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-                <p><strong>Author:</strong> Harish G</p>
+                <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
                 <p><strong>Published:</strong> May 10, 2026</p>
                 <p><strong>Last Updated:</strong> May 10, 2026</p>
             </div>

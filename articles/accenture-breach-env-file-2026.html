@@ -27,31 +27,40 @@
 
     <!-- Schema.org: NewsArticle -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "The Accenture Breach Claim Isn't About Source Code — It's About .env Files",
+  "image": [
+    "https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg"
+  ],
+  "datePublished": "2026-07-10T11:00:00+05:30",
+  "dateModified": "2026-07-10T11:00:00+05:30",
+  "author": [
     {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "The Accenture Breach Claim Isn't About Source Code — It's About .env Files",
-      "image": ["https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg"],
-      "datePublished": "2026-07-10T11:00:00+05:30",
-      "dateModified": "2026-07-10T11:00:00+05:30",
-      "author": [{
-        "@type": "Person",
-        "name": "Harish G",
-        "url": "https://www.linkedin.com/in/harish-g-2216955b/"
-      }],
-      "publisher": {
-        "@type": "Organization",
-        "name": "TheHGTech",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://thehgtech.com/logo-dark.png"
-        }
-      },
-      "description": "Technical dissection of the July 2026 Accenture breach claim. Why .env file presence in the alleged stolen set signals dev-workstation compromise rather than repository access failure, and why this changes every control priority for defenders.",
-      "articleSection": "Threat Analysis",
-      "keywords": "Accenture, breach, 888, Azure DevOps, .env files, developer workstation, secrets management, DLP, ISO 27001"
+      "@type": "Person",
+      "name": "Harish G",
+      "url": "https://thehgtech.com/about.html",
+      "@id": "https://thehgtech.com/about.html#harish-g",
+      "sameAs": [
+        "https://www.linkedin.com/in/harish-g-2216955b/"
+      ]
     }
-    </script>
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/logo-dark.png"
+    },
+    "@id": "https://thehgtech.com/#organization"
+  },
+  "description": "Technical dissection of the July 2026 Accenture breach claim. Why .env file presence in the alleged stolen set signals dev-workstation compromise rather than repository access failure, and why this changes every control priority for defenders.",
+  "articleSection": "Threat Analysis",
+  "keywords": "Accenture, breach, 888, Azure DevOps, .env files, developer workstation, secrets management, DLP, ISO 27001"
+}
+</script>
 
     <!-- Schema.org: FAQPage -->
     <script type="application/ld+json">
@@ -706,7 +715,7 @@
                 <div class="category-badge">THREAT ANALYSIS</div>
                 <h1>The Accenture Breach Claim Isn't About Source Code — It's About .env Files</h1>
                 <div class="article-meta">
-                    <span><i class="fas fa-user"></i> Harish G</span>
+                    <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
                     <span><i class="fas fa-calendar"></i> July 10, 2026</span>
                     <span><i class="fas fa-clock"></i> 18 min read</span>
                     <span><span class="tlp-clear">TLP: CLEAR</span></span>
@@ -1118,7 +1127,7 @@ tags:
                 </div>
 
                 <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-                    <p><strong>Author:</strong> Harish G</p>
+                    <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
                     <p><strong>Published:</strong> July 10, 2026</p>
                     <p><strong>Last Updated:</strong> July 10, 2026</p>
                 </div>

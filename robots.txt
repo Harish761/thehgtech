@@ -9,6 +9,11 @@ Disallow: /__pycache__/
 Disallow: /*.backup
 Disallow: /mobile_backup/
 Disallow: /.git/
+Disallow: /dist/
+Disallow: /templates/
+Disallow: /components/
+Disallow: /scripts/
+Disallow: /*.sh$
 # Block dev-only JSON data files (not the live data feeds)
 Disallow: /geo_analysis_results.json
 Disallow: /extracted_articles.json

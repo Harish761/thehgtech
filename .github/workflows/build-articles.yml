@@ -6,9 +6,17 @@ on:
       - main
     paths:
       - 'articles/**'
+      - '!articles/page/**'
+      - 'guides/**'
+      - 'comparisons/**'
       - 'ioc-data/articles.json'
       - 'scripts/generate_pagination.py'
       - 'scripts/generate_cve_map.py'
+      - 'scripts/generate_sitemaps_and_rss.py'
+  schedule:
+    # Run daily at 03:00 UTC to prune Google News sitemap entries older than 48h
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -31,10 +39,17 @@ jobs:
       - name: Generate CVE Cross-Link Map
         run: python scripts/generate_cve_map.py
 
+      - name: Generate Sitemaps and RSS
+        run: python scripts/generate_sitemaps_and_rss.py
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add articles.html index.html articles/page/ data/cve-mentions.json
-          git commit -m "chore: auto-build static articles and CVE map" || echo "No changes to commit"
-          git push
+          git add articles.html index.html articles/page/ data/cve-mentions.json sitemap.xml news-sitemap.xml rss.xml
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-build static articles and CVE map"
+            git pull --rebase origin main && git push
+          fi

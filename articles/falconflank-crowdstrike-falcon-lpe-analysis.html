@@ -8,8 +8,7 @@
 
     <!-- SEO Meta Tags -->
     <title>FalconFlank: Technical Analysis of CrowdStrike Falcon Sensor Local Privilege Escalation PoC | TheHGTech</title>
-    <meta name="description"
-        content="Deep technical analysis of FalconFlank, a proof-of-concept local privilege escalation exploit targeting CrowdStrike Falcon Sensor's Office macro remediation feature. Attack chain, detection, and enterprise mitigation guidance.">
+    
     <meta name="keywords"
         content="FalconFlank, FalconFlank PoC, FalconFlank GitHub, CrowdStrike Falcon vulnerability, CrowdStrike Falcon privilege escalation, CrowdStrike Falcon exploit, CrowdStrike Falcon Sensor, EDR privilege escalation, endpoint detection response vulnerability, CrowdStrike mitigation, local privilege escalation, LPE Windows, named pipe exploit, reparse point exploit">
     <meta name="author" content="TheHGTech Security Research">
@@ -44,9 +43,9 @@
     "name": "Harish G",
     "url": "https://thehgtech.com/about.html",
     "sameAs": [
-      "https://www.linkedin.com/in/harish-g-03704815a/",
-      "https://twitter.com/thehgtech"
-    ]
+      "https://www.linkedin.com/in/harish-g-2216955b/"
+    ],
+    "@id": "https://thehgtech.com/about.html#harish-g"
   },
   "publisher": {
     "@type": "Organization",
@@ -54,8 +53,9 @@
     "url": "https://thehgtech.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://thehgtech.com/favicon-32x32.png"
-    }
+      "url": "https://thehgtech.com/logo-dark.png"
+    },
+    "@id": "https://thehgtech.com/#organization"
   },
   "datePublished": "2026-09-04",
   "dateModified": "2026-09-04",
@@ -79,7 +79,7 @@
   ],
   "proficiencyLevel": "Expert"
 }
-    </script>
+</script>
 
     <!-- Structured Data: FAQ -->
     <script type="application/ld+json">
@@ -647,60 +647,8 @@
     <link rel="stylesheet" href="/mobile-nav.css">
 
     <script src="/theme-toggle.js" defer></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "",
-  "description": "Deep technical analysis of FalconFlank, a proof-of-concept local privilege escalation exploit targeting CrowdStrike Falcon Sensor's Office macro remediation feature on Windows 11 25H2 and Windows Server 2025.",
-  "image": "https://thehgtech.com/images/articles/falconflank-poc-demo.png",
-  "author": {
-    "@type": "Person",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-03704815a/",
-      "https://twitter.com/thehgtech"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/images/logo-dark.png"
-    }
-  },
-  "datePublished": "2026-09-04",
-  "dateModified": "2026-09-04"
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://thehgtech.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Articles",
-      "item": "https://thehgtech.com/articles.html"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "FalconFlank: CrowdStrike Falcon Sensor LPE Analysis",
-      "item": "https://thehgtech.com/articles/falconflank-crowdstrike-falcon-lpe-analysis.html"
-    }
-  ]
-}
-    </script>
+    
+    
 </head>
 
 <body>
@@ -1013,7 +961,7 @@
                 <div class="meta-info">
                     <span><i class="far fa-calendar-alt"></i> September 4, 2026</span>
                     <span><i class="fas fa-clock"></i> 38 min read</span>
-                    <span><i class="fas fa-user"></i> TheHGTech Security Research</span>
+                    <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
                 </div>
                 <p style="font-size: 1.1rem; color: var(--text-primary);">
                     A security researcher known as <strong>Chaotic Eclipse</strong> (also identified by the aliases <strong>MSNightmare</strong> and <strong>Nightmare-Eclipse</strong>) published a proof-of-concept exploit on September 3, 2026, claiming a local privilege escalation vulnerability in the <strong>CrowdStrike Falcon Sensor</strong>. Dubbed <strong>FalconFlank</strong>, the PoC targets the sensor's <em>Microsoft Office malicious macro removal</em> feature — a remediation capability that runs with <code>SYSTEM</code> privileges. CrowdStrike has acknowledged the reports and issued a temporary mitigation advisory. No CVE has been assigned. No formal patch has been released. This analysis reviews the evidence, reconstructs the attack chain, and provides enterprise detection and mitigation guidance.
