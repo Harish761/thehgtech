@@ -662,12 +662,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/comparisons/splunk-vs-elastic-security-vs-logrhythm.html</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/cve-tracker.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -1047,7 +1047,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/tools/grc-assessment/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>
