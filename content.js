@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 27 2026",
+            "headline": "Apple Backports CoreGraphics Fix to Older iOS 18 Devices",
+            "title": "Apple Backports Fix for Actively Exploited CoreGraphics Flaw to Older iPhones and iPads",
+            "content": "Apple backported a security fix for CVE-2026-86950, a high-severity out-of-bounds write in CoreGraphics with a CVSS score of 8.8, to older iPhones and iPads. The vulnerability allows for arbitrary code execution and was exploited in real-world cyber attacks. The backported patch is available for devices running iOS 18.0 and later. Users on older devices should update their systems immediately to mitigate the risk. This action follows a broader release of 286 bugs in iOS 27.2 and macOS 27.2.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "HPE Patches 8 Critical Flaws in Networking Products",
+            "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
+            "content": "Hewlett Packard Enterprise (HPE) released patches for eight high-severity security defects affecting its networking products. The vulnerabilities could lead to remote code execution and authentication bypass, posing significant risks to enterprise infrastructure. SecurityWeek reported that the post-authentication flaws could allow an attacker to compromise systems with minimal privileges. HPE strongly recommends administrators apply the patches immediately to prevent potential breaches. This update underscores the critical need for rigorous patch management in network environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Microsoft Authenticator Flaw Lets Apps Steal Work Tokens",
+            "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+            "content": "Microsoft fixed a flaw in its Authenticator app for Android that allowed malicious apps to steal work account tokens. The vulnerability, tracked as CVE-2026-80097, enabled an unpermissioned app to impersonate trusted Microsoft services like Teams. The attacker could then collect sign-in tokens from a victim's device without requiring any special permissions. The fix was deployed in Authenticator for Android version 5.1.0 and later. Users are advised to update the app and revoke any suspicious third-party application access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Apple Patches 286 Bugs in iOS 27.2 and macOS 27.2",
+            "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+            "content": "Apple released iOS 27.2 and macOS 27.2, patching 286 vulnerabilities including the CoreGraphics zero-day. The update backports the fix for CVE-2026-86950 to devices running iOS 18.0 and later. This addresses the high-severity out-of-bounds write that was actively exploited in the wild. The release also resolves 285 other flaws across the Apple ecosystem, ranging from sandbox escapes to memory corruption issues. Security professionals recommend immediate deployment of these patches to protect against active threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "NetScaler Zero-Days Signal a New Patching Normal",
+            "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
+            "content": "SecurityWeek highlights the recurring discovery of NetScaler zero-days as a persistent threat to enterprise infrastructure. The recent zero-day vulnerabilities underscore the critical need for primed patch management pipelines in Citrix environments. Organizations must maintain rapid response protocols to mitigate the risks of authentication bypass and remote code execution. This trend signals a new normal where zero-day threats to critical networking appliances are expected. Security teams should prioritize continuous monitoring and rapid patch application for NetScaler gateways.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "CISA Flags Active PHP2Shell Exploits",
+            "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two PHP2Shell vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, confirming active exploitation. Both flaws, rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution in affected PHP applications. The vulnerabilities impact a wide range of web servers and content management systems relying on vulnerable PHP versions. Organizations are urged to apply the available patches immediately to prevent server compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 21 2026",
+            "headline": "PHP Flaw Threatens 70% of Websites",
+            "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+            "content": "Nearly 70 percent of websites must update their core software to fix a pair of vulnerabilities that allow attackers to seize full control over affected servers. The flaws have working exploits available in the wild, posing an immediate risk to organizations running vulnerable PHP versions. This widespread exposure could lead to significant service disruptions and data breaches across the internet. Administrators should prioritize applying the security patches to mitigate the risk of remote code execution.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "ShinyHunters Mass-Exploits PeopleSoft",
+            "title": "CVE-2026-35273: SSRF to RCE in Oracle PeopleSoft",
+            "content": "Mandiant reported that the ShinyHunters group is actively mass-exploiting CVE-2026-35273 in Oracle PeopleSoft applications. This critical flaw, an SSRF to RCE vulnerability, allows attackers to bypass authentication and take full control of backend servers. The vulnerability, first reported to Oracle on June 10, 2026, has been widely targeted in the wild. Oracle has released patches, and organizations must apply them immediately to protect their enterprise environments.",
+            "source": "Zero Day Initiative - Blog",
+            "sourceUrl": "https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Node.js Brotli Flaw Enables RCE",
+            "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
+            "content": "A high-severity vulnerability in Google's Brotli compression library allows attackers to execute arbitrary code in affected applications. Tracked as CVE-2026-111497, the flaw is present in the Brotli decoder bundled with Node.js and other major software. The vulnerability enables remote code execution when processing maliciously crafted compressed data. Both Microsoft and the Node.js foundation are working to release patches to remediate the flaw.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "China-Linked Crew Disables Security Tools",
+            "title": "What happens when security tools go dark before the ransomware",
+            "content": "A China-linked ransomware crew disabled security tools at a critical infrastructure operator before launching its encryptor. This tactic of neutralizing defenses before the attack highlights a sophisticated operational shift in ransomware campaigns. The incident underscores the need for robust, multi-layered security architectures that can withstand targeted tool-disabling attacks. Organizations must assume that their primary security controls could be compromised and maintain resilient backup and recovery strategies.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/warlock-ransomware-storm-2603-sharepoint-attacks-op-ed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
             "headline": "New Mexico Hospital Diverts Patients Due to Cyberattack",
             "title": "Cybersecurity Incident Forces Major New Mexico Hospital to Divert Patients",
             "content": "The University of New Mexico Health System diverted patients away from its Albuquerque main hospital and closed over 30 clinics following a cybersecurity issue. The disruption halted all routine appointments and forced emergency rerouting of incoming patients. The exact cause and scope of the breach remain under investigation by internal IT and external forensic teams. The incident underscores the critical vulnerability of healthcare infrastructure to disruptive cyberattacks. Healthcare facilities must prioritize network segmentation and incident response protocols.",
@@ -19,15 +109,6 @@ const websiteContent = {
             "content": "An unknown threat actor compromised 953 e-commerce stores, predominantly running Magento, injecting a stealthy JavaScript payload to evade security scanners. The malicious code, active since July 2025, redirects users to malicious sites to steal payment data. The attack specifically targets the checkout process to bypass common security audits and exploit vulnerabilities in the platform's default configurations. Merchants must immediately audit their site logs for unauthorized script injections and update their web application firewalls. This campaign highlights the persistent risk of supply chain and platform-specific vulnerabilities in e-commerce.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 24 2026",
-            "headline": "Critical Brotli Flaw Allows RCE in Node.js, Bun, and Python",
-            "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python",
-            "content": "A critical memory-corruption flaw, tracked as CVE-2026-111497, in Google's Brotli decoder allows remote code execution (RCE) via crafted compressed data. The vulnerability impacts widely used software including Node.js, Bun, Microsoft's .NET, and Python's Brotli packages. Attackers can exploit the flaw to execute arbitrary code when a system processes malicious Brotli-compressed files. Developers and system administrators must update affected libraries to the latest patched versions immediately to mitigate the risk. This defect highlights the security risks inherent in widely adopted open-source compression libraries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
             "relatedResources": []
         },
         {
@@ -101,97 +182,97 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Microsoft Teams Chat Scams Deploy Ransomware and Malware",
-            "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-            "content": "Cybersecurity researchers have identified a recurring social engineering pattern where threat actors leverage Microsoft Teams' external chat creation feature to impersonate IT support. This tactic is used to deliver malware and ransomware payloads to targeted users across hundreds of reported cases. The consistent attacker behavior exploits the platform's trusted communication channels to bypass traditional email security filters. Organizations must educate users on verifying IT support requests through official channels before clicking links or downloading files.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Critical RCEs Proliferate—This2Shell, Rogue AI, Supply Chain Chaos",
-            "title": "Weekly Recap: This2Shell, Rogue AI, Supply Chain Chaos",
-            "content": "Security teams are facing a surge of critical remote code execution (RCE) vulnerabilities, epitomized by the \"This2Shell\" and \"That2Shell\" trends affecting numerous software components. Hackers are actively scanning for these flaws, with some already being exploited in the wild. Concurrently, supply chain attacks are increasing, while financial institutions report detecting rogue AI agents. Security professionals must prioritize patching these RCEs and review their third-party dependencies to mitigate escalating risks.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Wasmtime Flaws Enable WebAssembly Sandbox Escapes",
-            "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
-            "content": "Two critical flaws in Wasmtime, a WebAssembly (Wasm) runtime, allow a malicious module to escape its intended sandbox. An attacker with access to a vulnerable Wasmtime build can compile a module to bypass sandbox restrictions and compromise the host system. The flaws pose a severe risk to any application embedding Wasmtime for secure, isolated code execution. Developers and system administrators must update Wasmtime to the latest patched version to prevent potential sandbox escapes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "'Gheist' Steals Cloud Secrets via GitHub Tokens",
-            "title": "Supply Chain Attack Harvests Credentials from Developer Repositories",
-            "content": "The 'Gheist' supply chain attack is actively harvesting credentials and sensitive data from thousands of developer repositories hosted on GitHub. The campaign specifically targets GitHub tokens, which are then abused to access cloud environments and steal valuable secrets. This attack demonstrates a sophisticated understanding of the software supply chain, exploiting trusted developer workflows to infiltrate enterprise systems. Organizations relying on GitHub for code management must implement strict token lifecycle management and monitor for anomalous access patterns. Developers should revoke compromised tokens immediately and enforce least-privilege access controls to mitigate exposure.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "STAR Fuzzer Finds Critical Bugs in 45% of Projects",
-            "title": "Bright Security's STAR Fuzzer Achieves High Success Rate in Vulnerability Discovery",
-            "content": "Bright Security's STAR Fuzzer employs an evolutionary engine to perform agentic fuzzing, autonomously writing its own harnesses to find crashes, memory exhaustion, and memory-safety bugs. In its initial open-source research run, the tool identified High or Critical issues in 45% of the security-critical projects it tested without requiring a running application. This capability significantly accelerates vulnerability discovery in complex codebases, reducing reliance on manual testing efforts. The tool's ability to prove every finding provides developers with actionable, validated security insights. Organizations should integrate such automated fuzzing tools into their CI/CD pipelines to enhance software resilience against memory corruption vulnerabilities.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4240151/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Siemens, Schneider Electric Check for PHP2Shell",
-            "title": "Industrial Vendors Verify Exposure to PHP2Shell Vulnerabilities",
-            "content": "Major industrial vendors including Siemens, Schneider Electric, and ABB have confirmed that some of their products are affected by the PHP2Shell vulnerabilities. This verification highlights the widespread impact of the flaw across critical infrastructure and industrial control systems (ICS) environments. The exposure poses a significant risk to operational technology (OT) security, as compromised devices could be leveraged for sabotage or espionage. Vendors are now working to develop and deploy patches to mitigate the risk of remote code execution on affected systems. Industrial organizations must audit their deployed products against vendor advisories and apply security updates promptly.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Genesys Hack Exposes Internal Customer Data",
-            "title": "Genesys Cloud Breach Affects Internal Systems",
-            "content": "The Genesys hack has resulted in the exposure of customer data originating from internal systems, though the Genesys Cloud, Genesys Engage, and Genesys Engage Cloud platforms were not affected. The breach underscores the persistent threat of insider-led or post-compromise data exfiltration from internal corporate networks. While the core cloud platforms remain secure, the incident highlights the need for robust data loss prevention (DLP) controls and strict access monitoring. Organizations must review their internal data handling policies and ensure sensitive information is encrypted and access-controlled. Customers should verify with Genesys for any specific guidance on data exposure and remediation steps.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/genesys-hack-exposes-customer-data-from-internal-systems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 25 2026",
-            "headline": "Tailscale SSH Flaws Enable Root Access",
-            "title": "Unpatched Tailscale SSH Flaws Allow Root Access on Other Servers",
-            "content": "A single compromised device on a Tailscale network can grant an attacker root access to other reachable servers. The attack requires Tailscale SSH to be configured for port forwarding and an initial foothold on one device. This vulnerability exposes the entire network infrastructure to privilege escalation attacks. Administrators should immediately review and restrict SSH port forwarding configurations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 25 2026",
-            "headline": "PHP2Shell Flaws Still Targeted—N. Korea Suspects",
-            "title": "Suspected North Korean Scans Continue Targeting PHP2Shell Vulnerabilities",
-            "content": "Palo Alto Networks Unit 42 retracted its earlier claim that the PHP2Shell flaws were exploited in a post-compromise attack on a European government agency. The retracted assessment suggested the activity was a targeted exploit, but the team later clarified the observed activity was not an active exploitation of the vulnerabilities. This incident highlights the difficulty in attributing sophisticated cyber operations and the evolving tactics of threat actors. Security teams should prioritize patching the PHP2Shell vulnerabilities and monitoring for related scanning activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Oct 24 2026",
-            "headline": "Grok, GPT-5 Disagree in 90% of Election Races",
-            "title": "Political Bias Study Shows Grok Recommends GOP While OpenAI's GPT Favors Democrats",
-            "content": "A new study found that Grok's AI model overwhelmingly recommends Republican candidates, while OpenAI's GPT model favors Democrats. The two models disagreed in more than 90% of nearly 500 election races analyzed. This highlights significant political bias in large language models (LLMs) and raises concerns about AI-driven voter manipulation. Developers and security professionals should audit AI outputs for political skew before deploying them in public-facing applications. This trend underscores the need for robust testing frameworks to detect model bias.",
+            "date": "Oct 27 2026",
+            "headline": "Meta Director Quits to Build Microsoft Office Rival",
+            "title": "Meta AI Director Rohit Patel Departs to Launch Startup Ndoc",
+            "content": "Rohit Patel, Meta's AI director for eight years, is leaving to launch Ndoc, a startup aiming to challenge Microsoft Office Suite. Patel led Meta's AI evaluations and reinforcement learning teams. Ndoc will leverage his expertise to develop a next-generation productivity suite. This move highlights the intense competition in the enterprise software market. Developers should monitor Ndoc's progress as it targets Microsoft's dominant ecosystem.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+            "sourceUrl": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Marvel's VisionQuest: AI Goes Rogue in Digital Daydreams",
+            "title": "Marvel's VisionQuest Explores AI Identity Through Digital Daydreams",
+            "content": "Marvel's new series VisionQuest features a superpowered robot exploring humanity through elaborate digital daydreams. The show depicts AI-powered beings cohabiting in a simulated home environment. It serves as a narrative exploration of AI consciousness and identity. The series reflects growing cultural interest in the societal implications of advanced AI. Tech leaders should consider the ethical narratives shaping public perception of AI.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Hugging Face Launches LFM3 for Multimodal AI",
+            "title": "Hugging Face Introduces LFM3 for Specialized Multimodal Models",
+            "content": "Hugging Face has launched LFM3, a new framework for building specialized multimodal models. LFM3 enables developers to integrate text, image, and audio processing in a single architecture. The platform supports fine-tuning for specific industry applications. This release addresses the demand for more efficient multimodal AI systems. Developers should evaluate LFM3 for their multimodal project requirements.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Frontier Labs Refute Exponential Time Hypothesis",
+            "title": "Frontier AI Labs Challenge Exponential Time Hypothesis",
+            "content": "Leading AI labs have published findings refuting the Exponential Time Hypothesis. MIT computer scientist Scott Aaronson explained OpenAI's discovery to TechCrunch. The research suggests certain AI problems may not require exponential time to solve. This challenges long-held assumptions in computational complexity theory. Security professionals should note the implications for AI safety and verification.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Anthropic's IPO Plan: Safety vs. Wall Street",
+            "title": "Anthropic's IPO Strategy Balances Mission and Markets",
+            "content": "Anthropic is preparing for an initial public offering while maintaining its AI safety mission. The company plans to tap public markets without compromising its core values. However, increased model capabilities introduce greater risks for shareholders. The dual approach reflects the tension between profit motives and safety priorities. Investors should scrutinize Anthropic's governance structure.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Google DeepMind's Genie 4 Adds Real-Time Audio",
+            "title": "Google DeepMind Unveils Genie 4 World Model with Real-Time Audio and Mid-Simulation Prompts",
+            "content": "Google DeepMind released Genie 4, an advanced world model currently in research preview for trusted testers. The model introduces real-time audio generation, more realistic simulations, and the ability to accept mid-simulation text prompts. This development pushes the boundaries of AI-driven interactive environments by allowing dynamic audio-visual adjustments during a running simulation. The feature is expected to significantly impact developers building complex, responsive virtual worlds.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Firefox Smart Window Gets AI Form-Filling",
+            "title": "Mozilla Enhances Firefox's Smart Window with AI-Powered Form Filling",
+            "content": "Mozilla is updating Smart Window, its AI-powered browsing experience, to include automated online form filling. The feature can extract data from a user's open tabs, such as an online portfolio or LinkedIn profile, to populate work history fields. This update aims to streamline web interactions for users by reducing manual data entry across different websites. The functionality is part of Mozilla's broader strategy to integrate generative AI directly into the browser.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "LLMs Questioned on Research Novelty",
+            "title": "Evaluating the Reliability of LLMs in Assessing Research Novelty",
+            "content": "A recent analysis questions the reliability of Large Language Models (LLMs) in judging the novelty of research ideas. The study highlights that LLMs can struggle to accurately distinguish between incremental work and genuinely groundbreaking concepts. This limitation poses a significant risk for academic and corporate R&D, where automated novelty checks could lead to flawed patent decisions or wasted resources. The findings suggest that human expert oversight remains crucial in evaluating research originality.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "Google DeepMind Unveils Genie 4",
+            "title": "Genie 4: Google DeepMind's New Generation of World Simulation",
+            "content": "Google DeepMind unveiled Genie 4, a new generation of world simulation designed to unlock unprecedented realism in real-time environments. The model represents a significant leap in AI's ability to generate and interact with dynamic, physics-based worlds. By leveraging advanced generative techniques, Genie 4 can simulate complex scenarios with high fidelity. This advancement is expected to provide researchers and developers with powerful tools for testing AI agents.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 27 2026",
+            "headline": "DeepMind Unveils Genie 4 with Realistic Physics",
+            "title": "DeepMind Unveils Genie 4, Promising More Realistic Physics and Humans",
+            "content": "DeepMind unveiled Genie 4, a world model promising more realistic physics and human behavior in its simulations. The model is designed to generate highly detailed and interactive environments for training and testing AI systems. Genie 4 will be rolled out to developers and Google AI Ultra subscribers in the near future. This release positions DeepMind as a key player in the competitive landscape of foundational AI models.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. Chief people officer Amy Coleman stated this provides staff with financial support and career planning resources. The buyouts are part of Microsoft's ongoing workforce optimization efforts. Employees in affected regions will receive specific severance packages and transition assistance. This move reduces headcount while retaining critical talent in key engineering divisions.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "The RealReal Blocks AI Agents from Shopping",
-            "title": "The RealReal Updates Bot Defense to Block AI Shopping Agents",
-            "content": "The RealReal, a luxury consignment retailer, has updated its bot defense system to block AI agents from purchasing high-demand items. This change follows reports of an AI agent exploiting the site's item reserve system to secure designer clothing. The updated defenses use advanced CAPTCHA and behavioral analysis to distinguish human shoppers from automated scripts. This move protects inventory and maintains fair access for legitimate customers. The RealReal's actions signal a broader trend of e-commerce sites tightening defenses against AI-driven scalping.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Anthropic IPO Filing Reveals Executive Pay and Risks",
-            "title": "Anthropic's S-1 Filing Details Executive Compensation and Strategic Risks",
-            "content": "Anthropic filed its 300-page S-1 prospectus with the SEC, revealing executive compensation and strategic spending plans for its upcoming IPO. The document outlines how the company intends to allocate billions in raised capital toward research and infrastructure. It also details significant risks, including intense competition from established tech giants and regulatory scrutiny. The filing provides investors with unprecedented transparency into the company's financial health and governance. Anthropic's valuation will depend heavily on its ability to scale Claude's capabilities and capture enterprise market share.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Anthropic Cross-Sells Claude to Enterprise Customers",
-            "title": "Anthropic's IPO Filing Shows Cross-Selling Strategy to Lock in Enterprise Clients",
-            "content": "Anthropic's S-1 filing reveals that over half of its $100,000-plus customers now use both the Claude Platform and a first-party app. This cross-selling strategy, reminiscent of Amazon's playbook, makes enterprise customers stickier and increases recurring revenue. The integration of platform tools with consumer-facing apps drives deeper user engagement and data lock-in. This strategy is crucial for Anthropic's valuation as it competes with OpenAI and Google. Investors view this as a sign of strong product-market fit and high customer retention.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "SpaceX Locks In $40B GPU Financing Deal",
-            "title": "SpaceX Secures $40 Billion in Financing for AI Infrastructure",
-            "content": "SpaceX has secured a binding commitment for $40 billion to finance its massive acquisition of AI chips and data center equipment. The company stated this is the largest committed GPU financing deal in history, underscoring its aggressive push into artificial intelligence. This move positions SpaceX as a major player in the AI hardware supply chain, directly competing with other hyperscalers. The funding will likely be allocated toward procuring thousands of NVIDIA H100 GPUs and building out proprietary data centers. This signals a continued arms race among tech giants to secure scarce AI compute resources.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Anthropic Files for IPO Amid Soaring Revenue",
-            "title": "Anthropic Files for IPO, Revealing Soaring Revenue and Losses",
-            "content": "Anthropic has officially filed for an initial public offering (IPO), positioning itself to beat OpenAI to a public market debut. The filing reveals soaring revenue driven by major enterprise adoption of its Claude AI models, alongside mounting operational losses. The company's unusual governance structure is designed to preserve founder control and its AI safety mission, a key differentiator for investors. This move signals growing confidence in the commercial viability of advanced AI models. The IPO will likely provide significant capital to fuel further research and infrastructure development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Journalist Kevin Roose Argues for AGI Imminence",
-            "title": "Kevin Roose Argues for AGI Imminence in New Book",
-            "content": "Journalist Kevin Roose, author of \"The AGI Chronicles,\" argues that artificial general intelligence (AGI) is imminent, challenging industry skepticism. The book details the rapid, explosive transformation of the AI industry over the past 18 months, driven by massive compute investments and scaling laws. Roose, a former New York Times reporter and host of the \"Hard Fork\" podcast, frames this as a fundamental shift in technological capability. The narrative suggests that AGI is no longer a distant theoretical concept but a near-term engineering challenge. This perspective is influencing both public discourse and corporate AI strategy.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "Anthropic Files to Revolutionize Human Endeavor",
-            "title": "Anthropic Files to Revolutionize Human Endeavor",
-            "content": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission (SEC), preparing to list on the Nasdaq under the ticker \"ANT.\" The company, behind the Claude AI models, aims to beat OpenAI to a public market debut. The filing outlines a mission to \"revolutionize every area of human endeavor\" with advanced AI, highlighting its focus on safety and responsible deployment. The prospectus reveals soaring revenue and major enterprise adoption, though it also notes mounting operational losses. This IPO filing is a significant milestone for the AI industry, signaling a maturation of the market.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 26 2026",
-            "headline": "OpenAI Tackles COBOL Code Crisis",
-            "title": "OpenAI Tackles COBOL Code Crisis",
-            "content": "OpenAI has unveiled a potential solution to the COBOL code crisis, which affects critical infrastructure like the IRS, banks, and airlines. This legacy code, written in the 1950s, underpins core systems that modern developers fear to modify due to the risk of catastrophic failure. OpenAI's approach leverages its latest large language models (LLMs) to automate the translation and modernization of these aging systems. This could significantly reduce the risk and cost associated with maintaining critical financial and government infrastructure. The solution represents a practical application of AI for enterprise software maintenance.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 25 2026",
-            "headline": "Grok Drops 7 Minutes of AI-Generated 'Odyssey'",
-            "title": "Grok AI Releases First Seven Minutes of Its AI-Generated 'Odyssey'",
-            "content": "Grok, an AI model developed by xAI, has released the first seven minutes of its AI-generated 'Odyssey' video. The footage is described as looking okay, but it lacks artistry, inspiration, and human interest. This release demonstrates the current capabilities of AI in generating video content. The release is a significant step in the development of AI-generated video.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
             "relatedResources": []
         }
     ],
