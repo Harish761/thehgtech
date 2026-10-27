@@ -24,7 +24,8 @@ from fetch_threat_intel import (
     fetch_vendor_iocs,
     load_previous_ioc_data,
     deduplicate_iocs,
-    remove_expired_iocs
+    remove_expired_iocs,
+    generate_html_snapshot
 )
 from unittest.mock import patch, MagicMock
 
@@ -306,6 +307,57 @@ class TestThreatIntelPipeline(unittest.TestCase):
         data = json.loads(match.group(1))
         self.assertEqual(len(data.get('overview', [])), 1)
         self.assertEqual(data.get('stats', {}).get('totalIOCs'), 500)
+
+    def test_generate_html_snapshot_structure_and_noindex(self):
+        """Verify generate_html_snapshot produces valid HTML document with exactly one noindex tag in head"""
+        import tempfile
+        dummy_state = {
+            'lastUpdatedFormatted': 'Oct 27, 2026 at 09:00 AM IST',
+            'vendors': {
+                'OpenPhish': {
+                    'description': 'Real-time phishing URL feed',
+                    'iocs': [{'indicator': 'hxxps://phish[.]test', 'type': 'url', 'timestamp': '2026-10-27 09:00:00', 'tags': ['NEW']}]
+                }
+            }
+        }
+        with tempfile.NamedTemporaryFile(suffix='.html', delete=False) as tf:
+            temp_path = tf.name
+
+        try:
+            # 1. First run: generate snapshot
+            result_html = generate_html_snapshot(dummy_state, snapshot_file=temp_path)
+            with open(temp_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            self.assertIn('<!DOCTYPE html>', content)
+            self.assertIn('<html lang="en">', content)
+            self.assertIn('<head>', content)
+            self.assertIn('</head>', content)
+            self.assertIn('<body>', content)
+            self.assertIn('</body>', content)
+            self.assertIn('<meta name="robots" content="noindex, follow">', content)
+            self.assertEqual(content.count('<meta name="robots" content="noindex, follow">'), 1)
+            # Verify noindex is strictly located inside <head>
+            head_content = content.split('<head>')[1].split('</head>')[0]
+            self.assertIn('noindex', head_content)
+
+            # 2. Content preservation
+            self.assertIn('<div id="ti-static-snapshot"', content)
+            self.assertIn('Oct 27, 2026 at 09:00 AM IST', content)
+            self.assertIn('hxxps://phish[.]test', content)
+            self.assertIn('OpenPhish', content)
+
+            # 3. Idempotence: Repeated generation on same file produces exact single tag
+            result_html_2 = generate_html_snapshot(dummy_state, snapshot_file=temp_path)
+            with open(temp_path, 'r', encoding='utf-8') as f:
+                content_2 = f.read()
+
+            self.assertEqual(content_2.count('<meta name="robots" content="noindex, follow">'), 1)
+            self.assertEqual(content_2.count('<head>'), 1)
+            self.assertEqual(content_2.count('</head>'), 1)
+        finally:
+            if os.path.exists(temp_path):
+                os.remove(temp_path)
 
 if __name__ == '__main__':
     unittest.main()

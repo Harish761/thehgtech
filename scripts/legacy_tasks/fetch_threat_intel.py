@@ -1521,12 +1521,22 @@ def generate_daily_summary(all_vendors_data, history):
 # Static HTML Snapshot Generation (for SEO)
 # ──────────────────────────────────────────────────────────────
 
-def generate_html_snapshot(threat_data):
+def generate_html_snapshot(threat_data, snapshot_file='ti-snapshot.html'):
     """
     Generate static HTML snapshot for search engine indexing.
-    This allows Google to see actual threat intelligence data.
+    This allows Google to see actual threat intelligence data while
+    enforcing noindex to prevent indexing of automated raw snapshots.
     """
     html = []
+    html.append('<!DOCTYPE html>')
+    html.append('<html lang="en">')
+    html.append('<head>')
+    html.append('    <meta charset="UTF-8">')
+    html.append('    <meta name="viewport" content="width=device-width, initial-scale=1.0">')
+    html.append('    <title>Threat Intelligence Snapshot | TheHGTech</title>')
+    html.append('    <meta name="robots" content="noindex, follow">')
+    html.append('</head>')
+    html.append('<body>')
     html.append('<!-- Static Threat Intelligence Snapshot for SEO -->')
     html.append('<div id="ti-static-snapshot" style="display: block;">')
     
@@ -1580,11 +1590,12 @@ def generate_html_snapshot(threat_data):
     
     html.append('</div>')
     html.append('<!-- End Static Snapshot -->')
+    html.append('</body>')
+    html.append('</html>')
     
     snapshot_html = '\n'.join(html)
     
     # Save to file
-    snapshot_file = 'ti-snapshot.html'
     try:
         with open(snapshot_file, 'w', encoding='utf-8') as f:
             f.write(snapshot_html)

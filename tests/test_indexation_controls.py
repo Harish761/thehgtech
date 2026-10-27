@@ -27,6 +27,13 @@ class TestIndexationControls(unittest.TestCase):
             if p.exists():
                 content = p.read_text(encoding='utf-8')
                 self.assertIn('noindex', content, f"Utility page {u} missing noindex")
+                self.assertIn('<head>', content, f"Utility page {u} missing <head> tag")
+                self.assertIn('</head>', content, f"Utility page {u} missing </head> tag")
+                head_content = content.split('<head>')[1].split('</head>')[0]
+                self.assertIn('noindex', head_content, f"Utility page {u} noindex directive must be located inside <head>")
+                # Ensure exactly one robots noindex meta tag exists
+                noindex_matches = re.findall(r'<meta[^>]*robots[^>]*noindex', content, re.IGNORECASE)
+                self.assertEqual(len(noindex_matches), 1, f"Utility page {u} must contain exactly one robots noindex tag, found {len(noindex_matches)}")
 
     def test_03_robots_txt_rules(self):
         content = self.robots_txt.read_text(encoding='utf-8')
