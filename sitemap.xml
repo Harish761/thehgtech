@@ -707,7 +707,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/api-security-best-practices.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -727,7 +727,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/cisa-kev-tracker.html</loc>
-    <lastmod>2025-11-25</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -737,7 +737,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/cloud-security-hardening.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -747,12 +747,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/container-security.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/cve-prioritization-patch-management.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -792,12 +792,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/incident-response-automation.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/insider-threat-detection.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -837,7 +837,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/malware-hash-analysis.html</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -847,12 +847,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/mitre-attack-mapping.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/network-segmentation-zero-trust.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -867,12 +867,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/openphish-integration.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/owasp-llm-top-10.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -882,17 +882,17 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/penetration-testing-methodology.html</loc>
-    <lastmod>2025-12-13</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/phishing-simulation-security-awareness.html</loc>
-    <lastmod>2025-12-08</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/ransomware-ecosystem-hijack-2026.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -912,12 +912,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/security-metrics-kpis-dashboard.html</loc>
-    <lastmod>2025-12-08</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/siem-log-analysis.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -932,17 +932,17 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/soc-analyst-fundamentals.html</loc>
-    <lastmod>2025-12-13</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/soc2-compliance-checklist.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/splunk-spl-guide.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -952,27 +952,27 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/third-party-risk-management.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2025-12-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/threat-hunting-techniques.html</loc>
-    <lastmod>2025-12-13</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-feeds-comparison.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-feeds-integration.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/threat-intelligence-soc.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -987,7 +987,7 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/vscode-supply-chain-hardening-2026.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -1017,12 +1017,12 @@
   </url>
   <url>
     <loc>https://thehgtech.com/guides/zero-day-detection.html</loc>
-    <lastmod>2025-11-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thehgtech.com/guides/ztna-deployment.html</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
