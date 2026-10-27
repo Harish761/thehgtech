@@ -1,8 +1,8 @@
 {
   "vendor": "ThreatFox",
-  "lastUpdated": "2026-10-28T02:08:01.361440+05:30",
-  "totalCount": 6607,
-  "displayedCount": 6607,
+  "lastUpdated": "2026-10-28T04:00:59.671201+05:30",
+  "totalCount": 6546,
+  "displayedCount": 6546,
   "isCapped": false,
   "cappingStrategy": null,
   "iocs": [
@@ -26639,24 +26639,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "d2bbbd9a8aa85ca603c52867e04c4f910466c0764d4a27d6bb338316860de0d1",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:39:01",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/d2bbbd9a8aa85ca603c52867e04c4f910466c0764d4a27d6bb338316860de0d1"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://s7[.]abbc123[.]org/bas/",
       "description": "Vidar (botnet_cc)",
@@ -26669,42 +26651,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "19459527965033538912c33d6d83f90502b807b8374c2ce08d929f07821bd214",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:35:21",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/19459527965033538912c33d6d83f90502b807b8374c2ce08d929f07821bd214"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "558b6752b1d1afffac1f20c970ffb1148eb860e9d92be2221354238b0755f9da",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:32:22",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/558b6752b1d1afffac1f20c970ffb1148eb860e9d92be2221354238b0755f9da"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -26735,24 +26681,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "64d36fbccffa093c8975265608b7fc21036edd05d0185e27f37b373499169ee4",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:28:56",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/64d36fbccffa093c8975265608b7fc21036edd05d0185e27f37b373499169ee4"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -26801,42 +26729,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "302e2722d8f679e32e7760e922ae46b887a769ed4975283946308a701f5e6748",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:24:50",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/302e2722d8f679e32e7760e922ae46b887a769ed4975283946308a701f5e6748"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "1c45e83f214fc193d3c643fdd08bac440e1c25cec08f5e9abb0b113390a8afb2",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:22:21",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/1c45e83f214fc193d3c643fdd08bac440e1c25cec08f5e9abb0b113390a8afb2"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxp://tool01[.]art:7713/transactions",
       "description": "Remus (botnet_cc)",
@@ -26879,24 +26771,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "9c3551bc157cb2a038915ba6708b8a41e7188c6ff96cb120d5fcd8218b160ea5",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:19:25",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/9c3551bc157cb2a038915ba6708b8a41e7188c6ff96cb120d5fcd8218b160ea5"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27066,24 +26940,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "16c5de0c7338a14c602fb413aabd4ff2587c2a1d28dc57468b86e6327d48569b",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:10:34",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/16c5de0c7338a14c602fb413aabd4ff2587c2a1d28dc57468b86e6327d48569b"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxp://tpujse7[.]click:9583/events",
       "description": "Remus (botnet_cc)",
@@ -27111,24 +26967,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Remus",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "a50fbb8f1ed4181e9763d473644bd7e391cb15300c738d7ec22168c493366c5f",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 21:07:53",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/a50fbb8f1ed4181e9763d473644bd7e391cb15300c738d7ec22168c493366c5f"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27287,58 +27125,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "2d29b6ca233a505d01e7d48bd0055a7cd2fd8c590d7e9bd132b8e9b55891c826",
-      "description": "Unknown Loader (payload)",
-      "timestamp": "2026-10-20 20:54:25",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Unknown Loader",
-      "confidence": "85%"
-    },
-    {
-      "type": "hash",
-      "indicator": "fd5418a9e34037f9b64da8cc72650c12cf303f2e39f783b76f7dd2e7f576aac2",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 20:54:24",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "270b70291a291866225357beb0f7d202fb083d2682d5013a81efd38fd99c565f",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:51:55",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/270b70291a291866225357beb0f7d202fb083d2682d5013a81efd38fd99c565f"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://km[.]abbc123[.]org/ce/",
       "description": "Vidar (botnet_cc)",
@@ -27351,24 +27137,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "cda6df0d2759965121426d1444204fd1b14d7636a9f13c1a95d2834777b55daf",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:49:27",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/cda6df0d2759965121426d1444204fd1b14d7636a9f13c1a95d2834777b55daf"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27385,24 +27153,6 @@
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "php.shin_webshell",
       "confidence": "50%"
-    },
-    {
-      "type": "hash",
-      "indicator": "c34f0d39f8ab06a257087ac6272acfc14dac30029aa58f1609ed9f5c7bd08f22",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:46:04",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/c34f0d39f8ab06a257087ac6272acfc14dac30029aa58f1609ed9f5c7bd08f22"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
     },
     {
       "type": "url",
@@ -27432,24 +27182,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "6a020fce2db85df4cc7df30b87f060a8f9314c7f8999b3da38dd2c7a4efbc215",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:41:27",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/6a020fce2db85df4cc7df30b87f060a8f9314c7f8999b3da38dd2c7a4efbc215"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27483,24 +27215,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "bbcf84c99deff29f0aa7f18cf64d73667d6b0f31b2228915fb014f6725929abc",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:38:41",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/bbcf84c99deff29f0aa7f18cf64d73667d6b0f31b2228915fb014f6725929abc"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://km[.]abbc123[.]org/wm/",
       "description": "Vidar (botnet_cc)",
@@ -27513,24 +27227,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "7fc348439fce7a0d6288edb1d60299b060011a49539ef955d57fd0fc2e0085cc",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:35:32",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/7fc348439fce7a0d6288edb1d60299b060011a49539ef955d57fd0fc2e0085cc"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27549,24 +27245,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "6e0f00fa6bccdd4f4fa4de10bda01e9a8616516782ef04e4a3de469f4064f57d",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:31:10",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/6e0f00fa6bccdd4f4fa4de10bda01e9a8616516782ef04e4a3de469f4064f57d"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://km[.]abbc123[.]org/u/",
       "description": "Vidar (botnet_cc)",
@@ -27579,24 +27257,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "ae745245d909dd732457c05d7e41dd5f6ec7730eac3e2fd1720a67c391b46597",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:27:08",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/ae745245d909dd732457c05d7e41dd5f6ec7730eac3e2fd1720a67c391b46597"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27630,42 +27290,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "1ef16ba1e1c454624530be3b43ce390ca7bff65a476cb2a48c3d94f701d35f0e",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:24:18",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/1ef16ba1e1c454624530be3b43ce390ca7bff65a476cb2a48c3d94f701d35f0e"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "a42cd1718ddd7014c0e42cc4afe55580ca4172418dc53540b9ff27baceed7667",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:23:36",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/a42cd1718ddd7014c0e42cc4afe55580ca4172418dc53540b9ff27baceed7667"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://km[.]abbc123[.]org/a6/",
       "description": "Vidar (botnet_cc)",
@@ -27696,24 +27320,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "c15ae6b8299f175ca577a68239b01f73c506d054709fdfd1ae3bfef7382aa394",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:18:00",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/c15ae6b8299f175ca577a68239b01f73c506d054709fdfd1ae3bfef7382aa394"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxp://retas3[.]help:7713/addresses",
       "description": "Remus (botnet_cc)",
@@ -27741,24 +27347,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "dc2336cdba7fa3c808049d7b7efbd0775cbf0691d4ac96c2fa9ab37740b536d3",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:14:44",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/dc2336cdba7fa3c808049d7b7efbd0775cbf0691d4ac96c2fa9ab37740b536d3"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -27807,24 +27395,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "3adc58de646efb487121248f127e51777ba433ba487fb859aba7997b9548b843",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:11:14",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/3adc58de646efb487121248f127e51777ba433ba487fb859aba7997b9548b843"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxp://slink4u[.]click:9692/permissions",
       "description": "Remus (botnet_cc)",
@@ -27852,24 +27422,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "d317aeb78d4abc042dca288e0bf83e9817df15e1cdaf02a4fcaada68ced7208b",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:07:15",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/d317aeb78d4abc042dca288e0bf83e9817df15e1cdaf02a4fcaada68ced7208b"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -28013,24 +27565,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "45bc39419cbc26b84830655657741a489bf112e76b96a03b8c94be3b442fc7a4",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 20:01:52",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/45bc39419cbc26b84830655657741a489bf112e76b96a03b8c94be3b442fc7a4"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://ok[.]abbastoto[.]org/q/",
       "description": "Vidar (botnet_cc)",
@@ -28077,178 +27611,6 @@
       "confidence": "100%"
     },
     {
-      "type": "hash",
-      "indicator": "6fdaa358053b5e7468f277afbf8e651ec33d8435c78601f477ee79e6a1513ac0",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 19:59:04",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/6fdaa358053b5e7468f277afbf8e651ec33d8435c78601f477ee79e6a1513ac0"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "28e9b638250dfabc2a7fb71ce76c00d5c015b63f470620555c375ed75bf93cc7",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 19:56:13",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/28e9b638250dfabc2a7fb71ce76c00d5c015b63f470620555c375ed75bf93cc7"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "163f65318251c1dfdf1739171518c84a744f0f5e56d08cfcf67f4c48c466c1aa",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:32",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "79dcf5f7965ecd1b596b78ba58e26ea56f93ca718fa55bc08247ac2d547f11b9",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:30",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "ad7dcaef3f3e81d884a22ff0d126aabb0671e69a3dad111997940ec1d21285db",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:29",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "98554cbcdc531b5ea20ba121191b57be2f6b8ce726e259655de426ee92011821",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:28",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "23b2bee6d808e7d3caf0e3e6f51e10d470f4cf298766c87f2062a4121dfb0d19",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:27",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "591358a73cd343f79a9efd2d592bdcb56fa54bb9096b786624aebc0d3fc5b3ba",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:26",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "0ad07ef254e4aa14d108354f84fc4dfc27754b5e6f7de54ecd877466b4978bd5",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:25",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
-      "type": "hash",
-      "indicator": "a1be6349f9d69bd157c292e7c3533f17222d799f187eab8b51de1900bb83d4d4",
-      "description": "Mirai (payload)",
-      "timestamp": "2026-10-20 19:54:23",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Mirai",
-      "confidence": "90%"
-    },
-    {
       "type": "url",
       "indicator": "hxxps://w[.]abanda88[.]org/i0",
       "description": "Vidar (botnet_cc)",
@@ -28276,24 +27638,6 @@
       ],
       "addedAt": "2026-10-21T19:11:57.899572+05:30",
       "campaign": "ClearFake",
-      "confidence": "100%"
-    },
-    {
-      "type": "hash",
-      "indicator": "01115ac784159dc46c5d383112a9bb9ac67135c681aab30661dba8c1431f7281",
-      "description": "AMOS (payload)",
-      "timestamp": "2026-10-20 19:51:17",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 19:11 IST",
-      "tags": [
-        "malware",
-        "hash",
-        "verified",
-        "https://www.virustotal.com/gui/file/01115ac784159dc46c5d383112a9bb9ac67135c681aab30661dba8c1431f7281"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "AMOS",
       "confidence": "100%"
     },
     {
@@ -103635,367 +102979,6 @@
       ],
       "addedAt": "2026-10-21T04:38:19.937435+05:30",
       "campaign": "Quasar RAT",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/sd0/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 23:00:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/zq/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:55:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "domain",
-      "indicator": "wolibo[.]workers[.]dev",
-      "description": "php.shin_webshell (payload_delivery)",
-      "timestamp": "2026-10-18 22:51:17",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "php.shin_webshell",
-      "confidence": "50%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/uh2/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:50:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/i5/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:45:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "domain",
-      "indicator": "xx5m70m0[.]beyonce[.]id",
-      "description": "ClearFake (payload_delivery)",
-      "timestamp": "2026-10-18 22:43:14",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "ClearFake",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/nh7/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:40:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/rx/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:35:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/eb/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:30:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://bankruptcyrhodeisland[.]com/curl/28a0700d864a15f5bc551accd41342c59d881f7051555f3ca3a3a5403301628b",
-      "description": "MacSync (payload_delivery)",
-      "timestamp": "2026-10-18 22:27:13",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified",
-        "https://www.virustotal.com/gui/file/61f8e4e3e263934a04d18e29fd5edaa0840b1a8137b649e8241e5bae013f200d"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "MacSync",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/ik/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:25:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/s6/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:20:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/sk/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:15:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/x/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:10:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "domain",
-      "indicator": "caveresorts[.]com",
-      "description": "ClearFake (payload_delivery)",
-      "timestamp": "2026-10-18 22:08:45",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "ClearFake",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://z[.]9wing[.]org/eo/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:05:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "domain",
-      "indicator": "e[.]88idr[.]org",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:05:47",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://e[.]88idr[.]org/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:05:47",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://lo[.]9wing[.]org/otp/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 22:00:47",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "domain",
-      "indicator": "hefewafa[.]workers[.]dev",
-      "description": "php.shin_webshell (payload_delivery)",
-      "timestamp": "2026-10-18 21:59:39",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "php.shin_webshell",
-      "confidence": "50%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://lo[.]9wing[.]org/ax/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 21:55:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://lo[.]9wing[.]org/cv/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 21:50:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://lo[.]9wing[.]org/j9/",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 21:45:48",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
-      "confidence": "100%"
-    },
-    {
-      "type": "url",
-      "indicator": "hxxps://t7[.]88idn[.]net",
-      "description": "Vidar (botnet_cc)",
-      "timestamp": "2026-10-18 18:01:37",
-      "source": "ThreatFox",
-      "sourceUrl": "https://threatfox.abuse.ch/",
-      "analysisTime": "2026-10-21 03:18 IST",
-      "tags": [
-        "verified"
-      ],
-      "addedAt": "2026-10-21T03:18:14.513081+05:30",
-      "campaign": "Vidar",
       "confidence": "100%"
     }
   ]
