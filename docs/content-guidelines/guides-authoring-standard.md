@@ -23,18 +23,24 @@ TheHGTech separates interactive security tools (such as the CVE Tracker and Thre
 
 Every guide must be registered in the central datastore: `/guides/guides.json`.
 
+The datastore file uses a top-level JSON object containing a `guides` array: `{"guides": [...]}`. New entries must always be appended to this existing `guides` array rather than replacing the file with a standalone object or bare array.
+
 ```json
 {
-  "id": "windows-vs-macos-endpoint-security-2026",
-  "title": "Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management & Real-World Effectiveness",
-  "category": "Endpoint Security",
-  "excerpt": "The definitive 2026 guide from 18+ years of enterprise fleet management: EDR/XDR tools, Intune vs Jamf Pro, OS architecture, detection effectiveness, hardening playbooks, and who should choose what.",
-  "readTime": "25 min",
-  "level": "Intermediate to Advanced",
-  "date": "May 22, 2026",
-  "badge": "New",
-  "featured": true,
-  "image": "/images/guides/windows-vs-macos-endpoint-security-2026.png"
+  "guides": [
+    {
+      "id": "windows-vs-macos-endpoint-security-2026",
+      "title": "Windows vs macOS Endpoint Security 2026: Architecture, Tools, Management & Real-World Effectiveness",
+      "category": "Endpoint Security",
+      "excerpt": "The definitive 2026 guide from 18+ years of enterprise fleet management: EDR/XDR tools, Intune vs Jamf Pro, OS architecture, detection effectiveness, hardening playbooks, and who should choose what.",
+      "readTime": "25 min",
+      "level": "Intermediate to Advanced",
+      "date": "May 22, 2026",
+      "badge": "New",
+      "featured": true,
+      "image": "/images/guides/windows-vs-macos-endpoint-security-2026.png"
+    }
+  ]
 }
 ```
 
