@@ -1,73 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <title>DevSecOps Pipeline Security Guide 2026 | SAST, DAST, SCA Integration | TheHGTech [2026]</title>
-
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="title" content="DevSecOps Pipeline Security Guide 2026 | Shift-Left Security">
-    
-    <meta name="description"
-        content="Integrate security into CI/CD pipelines with this DevSecOps guide. Learn SAST, DAST, SCA tools, secrets management, and shift-left security practices.">
-    <meta name="keywords"
-        content="DevSecOps, CI/CD security, SAST, DAST, SCA, shift-left, pipeline security, secure DevOps, application security, code scanning">
-    <meta name="author" content="TheHGTech">
-    <meta name="robots" content="index, follow">
+    <title>DevSecOps Pipeline Security | TheHGTech</title>
+    <meta name="description" content="Integrate security into CI/CD with SAST, DAST, SCA, and secrets scanning. Shift-left practices with complete GitHub Actions examples.">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://thehgtech.com/guides/devsecops-pipeline-security.html">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/devsecops-pipeline-security.html">
-    <meta property="og:title" content="DevSecOps Pipeline Security Guide 2026">
-    <meta property="og:description" content="Integrate security into CI/CD - SAST, DAST, SCA, and secrets scanning.">
+    <meta property="og:title" content="DevSecOps Pipeline Security">
+    <meta property="og:description" content="Integrate security into CI/CD with SAST, DAST, SCA, and secrets scanning. Shift-left practices with complete GitHub Actions examples.">
     <meta property="og:image" content="https://thehgtech.com/images/guides/devsecops-pipeline-security.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-01T00:00:00+00:00">
+    <meta property="article:author" content="https://thehgtech.com/about.html#harish">
+    <meta property="article:section" content="DevSecOps">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DevSecOps Pipeline Security [2026]">
-    <meta name="twitter:description" content="Complete guide to securing your CI/CD pipelines.">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:creator" content="@TheHGTech">
+    <meta name="twitter:title" content="DevSecOps Pipeline Security">
+    <meta name="twitter:description" content="Integrate security into CI/CD with SAST, DAST, SCA, and secrets scanning. Shift-left practices with complete GitHub Actions examples.">
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/devsecops-pipeline-security.png">
 
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is DevSecOps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "DevSecOps integrates security practices into DevOps workflows, making security a shared responsibility throughout the software development lifecycle. Instead of security being a final gate, it's embedded at every stage - from code commit to production deployment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between SAST and DAST?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SAST (Static Application Security Testing) analyzes source code without running the application, finding vulnerabilities early in development. DAST (Dynamic Application Security Testing) tests running applications, simulating real attacks to find runtime vulnerabilities. Use both for comprehensive coverage."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What tools should I use for DevSecOps?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Key DevSecOps tools include: SAST (Semgrep, SonarQube, Checkmarx), DAST (OWASP ZAP, Burp Suite), SCA (Snyk, Dependabot, OWASP Dependency-Check), Secrets scanning (GitLeaks, TruffleHog), Container scanning (Trivy, Grype), and IaC scanning (Checkov, tfsec)."
-          }
-        }
-      ]
-    }
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Site Chrome & Navigation Stylesheets -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <!-- Isolated Guides Editorial Design System (Technical Monograph & Field Manuals) -->
+    <link rel="stylesheet" href="/css/guides-editorial.css?v=1.0">
+
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- Global Theme Script -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
     </script>
 
-    <!-- Structured Data -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement("script");
+            fullres.async = true;
+            fullres.src = "https://t.fullres.net/thehgtech.js?" + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is DevSecOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DevSecOps integrates security practices into DevOps workflows, making security a shared responsibility throughout the software development lifecycle. Instead of security being a final gate, it's embedded at every stage - from code commit to production deployment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between SAST and DAST?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SAST (Static Application Security Testing) analyzes source code without running the application, finding vulnerabilities early in development. DAST (Dynamic Application Security Testing) tests running applications, simulating real attacks to find runtime vulnerabilities. Use both for comprehensive coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools should I use for DevSecOps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Key DevSecOps tools include: SAST (Semgrep, SonarQube, Checkmarx), DAST (OWASP ZAP, Burp Suite), SCA (Snyk, Dependabot, OWASP Dependency-Check), Secrets scanning (GitLeaks, TruffleHog), Container scanning (Trivy, Grype), and IaC scanning (Checkov, tfsec)."
+      }
+    }
+  ]
+}
+    </script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -109,690 +163,465 @@
   "articleSection": "Security Guides",
   "proficiencyLevel": "Intermediate"
 }
-</script>
-
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #22C55E;
-            --accent-purple: #8b5cf6;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            /* font-size removed for fluid typography */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            /* padding removed for fluid typography */
-            padding-top: 100px;
-        }
-
-        .new-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--accent-purple), #a78bfa);
-            color: #fff;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            margin-left: 1rem;
-        }
-
-        .guide-header {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .breadcrumb {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .breadcrumb a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #fff, #a0a0a0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-        }
-
-        .meta {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            flex-wrap: wrap;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .featured-image {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 2rem 0;
-            box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
-            border: 1px solid var(--border);
-        }
-
-        .content h2 {
-            font-size: 1.8rem;
-            color: var(--accent-purple);
-            margin: 3rem 0 1.5rem;
-        }
-
-        .content h3 {
-            font-size: 1.4rem;
-            color: #fff;
-            margin: 2rem 0 1rem;
-        }
-
-        .content h4 {
-            font-size: 1.2rem;
-            color: var(--accent-purple);
-            margin: 1.5rem 0 1rem;
-        }
-
-        .content p {
-            margin-bottom: 1.5rem;
-            color: #d0d0d0;
-        }
-
-        .content ul,
-        .content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            color: #d0d0d0;
-        }
-
-        .content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .content strong {
-            color: #fff;
-        }
-
-        .content code {
-            background: var(--bg-card);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-cyan);
-            font-size: 0.9em;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .success-box {
-            background: rgba(34, 197, 94, 0.1);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        pre {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
-            color: #d0d0d0;
-        }
-
-        .yaml-key {
-            color: var(--accent-purple);
-        }
-
-        .yaml-value {
-            color: var(--accent-green);
-        }
-
-        .yaml-comment {
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th,
-        td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background: rgba(139, 92, 246, 0.1);
-            color: var(--accent-purple);
-            font-weight: 600;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
-        .toc {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .toc h3 {
-            color: var(--accent-purple);
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .toc li {
-            margin-bottom: 0.5rem;
-        }
-
-        .toc a {
-            color: var(--text-secondary);
-            text-decoration: none;
-        }
-
-        .toc a:hover {
-            color: var(--accent-purple);
-        }
-
-        .pipeline-box {
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05));
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "DevSecOps Pipeline Security Guide 2026",
+  "description": "Integrate security into CI/CD pipelines with this DevSecOps guide. Learn SAST, DAST, SCA tools, secrets management, and shift-left security practices.",
+  "totalTime": "PT30M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "1. DevSecOps Overview",
+      "text": "Refer to the section '1. DevSecOps Overview' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "2. SAST - Static Application Security Testing",
+      "text": "Refer to the section '2. SAST - Static Application Security Testing' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "3. SCA - Software Composition Analysis",
+      "text": "Refer to the section '3. SCA - Software Composition Analysis' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "4. Secrets Detection",
+      "text": "Refer to the section '4. Secrets Detection' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "5. DAST - Dynamic Application Security Testing",
+      "text": "Refer to the section '5. DAST - Dynamic Application Security Testing' in the guide."
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://thehgtech.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "DevSecOps Pipeline Security",
+      "item": "https://thehgtech.com/guides/devsecops-pipeline-security.html"
+    }
+  ]
+}
+    </script>
+    <style>
+.yaml-key { color: var(--accent-purple); }
+        .yaml-value { color: var(--accent-green); }
+        .yaml-comment { color: var(--text-muted);
+            font-style: italic; }
+        .pipeline-box { background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(167, 139, 250, 0.05));
             border: 1px solid var(--accent-purple);
             border-radius: 12px;
             padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .pipeline-box h5 {
-            color: var(--accent-purple);
+            margin: 1.5rem 0; }
+        .pipeline-box h5 { color: var(--accent-purple);
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 1.5rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .btn-back:hover {
-            border-color: var(--accent-purple);
-            color: var(--accent-purple);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .content h2 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding-top: 80px;
-            }
-        }
+            gap: 0.5rem; }
     </style>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-
-    <script type="application/ld+json">
-    {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "DevSecOps Pipeline Security", "item": "https://thehgtech.com/guides/devsecops-pipeline-security.html"}]}
-    </script>
-<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-    <link rel="stylesheet" href="../mobile-nav.css">
-
-    <script src="/theme-toggle.js" defer></script>
-    
-    
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "DevSecOps Pipeline Security Guide 2026",
-        "description": "Integrate security into CI/CD pipelines with this DevSecOps guide. Learn SAST, DAST, SCA tools, secrets management, and shift-left security practices.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "1. DevSecOps Overview", "text": "Refer to the section '1. DevSecOps Overview' in the guide."},
-        {"@type": "HowToStep", "name": "2. SAST - Static Application Security Testing", "text": "Refer to the section '2. SAST - Static Application Security Testing' in the guide."},
-        {"@type": "HowToStep", "name": "3. SCA - Software Composition Analysis", "text": "Refer to the section '3. SCA - Software Composition Analysis' in the guide."},
-        {"@type": "HowToStep", "name": "4. Secrets Detection", "text": "Refer to the section '4. Secrets Detection' in the guide."},
-        {"@type": "HowToStep", "name": "5. DAST - Dynamic Application Security Testing", "text": "Refer to the section '5. DAST - Dynamic Application Security Testing' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "DevSecOps Pipeline Security Guide 2026", "item": "https://thehgtech.com/guides/devsecops-pipeline-security.html"}
-        ]
-      }
-    ]
-    </script>
 </head>
 
-<body>
-    <!-- Mobile Header -->
+<body class="guides-editorial guide-monograph-page">
+    <script>
+        if (document.documentElement.getAttribute("data-theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    </script>
 
+    <!-- Accessible Skip Link -->
+    <a href="#edMonographArticle" class="ed-skip-link">Skip to guide content</a>
 
+    <!-- Top Reading Progress Hairline -->
+    <div class="ed-progress-track" aria-hidden="true">
+        <div class="ed-progress-bar" id="edReadingProgress"></div>
+    </div>
 
-</div>
+<!-- SITE-HEADER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL SITE HEADER COMPONENT
+     Single Source of Truth for Mobile Header, Mobile Menu Overlay,
+     Search Overlay, and Desktop Header Navigation.
+     Reference Standard: CVE Tracker / Apple HIG Modern Standard
+     Project Marker: HG-THREAT-INTEL-V1
+     ========================================================================== -->
 
-    
-
-    <!-- Desktop Header -->
-    
-
-</div>
-
-    
-
+<!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
         <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <!-- Search triggers Command Palette -->
         <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" aria-hidden="true"></i>
         </button>
-        <!-- Hamburger Menu Toggle -->
         <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
     </div>
 </header>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<!-- Fullscreen Mobile Menu Overlay -->
 <div class="m-menu-overlay m-only" id="m-menu-overlay">
     <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
         <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
     </div>
     <div class="m-menu-content">
         <div class="m-menu-section">
             <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Settings</div>
             <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
             </button>
         </div>
     </div>
 </div>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
     </div>
+    <div class="m-search-overlay__results"></div>
+</div>
 
+<!-- Desktop Header -->
 <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Security automation templates</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tools Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </button>
-        </div>
-    </header>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
 
-    <div class="container">
-        <div class="guide-header">
-            <div class="breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / DevSecOps</div>
-            <h1>DevSecOps Pipeline Security</h1>
-            <span class="new-badge"><i class="fas fa-infinity"></i> DevOps</span>
-            <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 1rem;">Integrate security into CI/CD
-                pipelines with SAST, DAST, SCA, and shift-left practices.</p>
-            <div class="meta" style="margin-top: 1rem;">
-                <div class="meta-item"><i class="fas fa-book-open"></i> 20 min read</div>
-                <div class="meta-item"><i class="fas fa-crosshairs"></i> Intermediate</div>
-                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 17, 2026</div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
+
+    <main class="ed-shell">
+        <!-- MONOGRAPH HEADER & READER COMFORT CONTROLS -->
+        <header class="ed-monograph-header">
+            <div class="ed-breadcrumb-nav">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ed-breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li aria-current="page">DevSecOps</li>
+                    </ol>
+                </nav>
+
+                <div class="ed-reader-controls" role="group" aria-label="Reading comfort settings">
+                    <button type="button" class="ed-reader-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();" title="Switch Paper / Obsidian Theme" aria-label="Switch reading theme">
+                        <i class="fas fa-adjust" aria-hidden="true"></i> <span>Surface</span>
+                    </button>
+                    <span class="ed-reader-divider" aria-hidden="true"></span>
+                    <button type="button" class="ed-reader-btn" data-scale="compact" onclick="setReaderScale('compact')" title="Compact type size" aria-label="Compact font size">A-</button>
+                    <button type="button" class="ed-reader-btn active" data-scale="default" onclick="setReaderScale('default')" title="Standard type size" aria-label="Default font size">A</button>
+                    <button type="button" class="ed-reader-btn" data-scale="large" onclick="setReaderScale('large')" title="Large type size" aria-label="Large font size">A+</button>
+                </div>
             </div>
-        </div>
 
-        <article class="content">
-            <img src="/images/guides/devsecops-pipeline-security.png" alt="DevSecOps Pipeline Security Guide"
-                class="featured-image" loading="lazy">
+            <div class="ed-monograph-kicker-row">
+                <span class="ed-domain-tag">DevSecOps</span>
+                <span class="ed-doc-id">MONOGRAPH // FIELD MANUAL · TLP:CLEAR · RESEARCH-GRADE</span>
+            </div>
+
+            <h1 class="ed-monograph-title">DevSecOps Pipeline Security</h1>
+            <p class="ed-monograph-standfirst">Integrate security into CI/CD with SAST, DAST, SCA, and secrets scanning. Shift-left practices with complete GitHub Actions examples.</p>
+
+            <div class="ed-byline-ledger" role="region" aria-label="Document Metadata">
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Author</span>
+                    <span class="ed-byline-val"><a href="/about.html#harish" rel="author">Harish G</a> · Principal Architect</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Published / Updated</span>
+                    <span class="ed-byline-val"><time datetime="2026-05-01">Jan 17, 2026</time></span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Reading Time</span>
+                    <span class="ed-byline-val">20 min</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Audience &amp; Depth</span>
+                    <span class="ed-byline-val">Intermediate · Practice Playbook</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURED TECHNICAL FIGURE -->
+        <figure class="ed-monograph-figure">
+            <img src="/images/guides/devsecops-pipeline-security.png"
+                 alt="DevSecOps Pipeline Security — Enterprise Security Architecture &amp; Implementation"
+                 width="1200" height="630" loading="eager">
+            <figcaption class="ed-monograph-figcaption">
+                <span><strong>FIG. 01</strong> // Technical architecture &amp; security implementation: DevSecOps Pipeline Security.</span>
+                <span>SOURCE: THEHGTECH ARCHITECTURE LAB</span>
+            </figcaption>
+        </figure>
+
+        <!-- MOBILE COLLAPSIBLE TABLE OF CONTENTS -->
+        <details class="ed-mobile-toc">
+            <summary>
+                <span><i class="fas fa-list-ul" aria-hidden="true"></i> Monograph Contents (8 Sections)</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </summary>
+            <div class="ed-mobile-toc-body">
+                <ul class="ed-toc-list">
+                    <li><a href="#overview">1. DevSecOps Overview</a></li>
+                    <li><a href="#sast">2. SAST - Static Application Security Testing</a></li>
+                    <li><a href="#sca">3. SCA - Software Composition Analysis</a></li>
+                    <li><a href="#secrets">4. Secrets Detection</a></li>
+                    <li><a href="#dast">5. DAST - Dynamic Application Security Testing</a></li>
+                    <li><a href="#container">6. Container Security</a></li>
+                    <li><a href="#iac">7. Infrastructure as Code Security</a></li>
+                    <li><a href="#pipeline">8. Complete Pipeline Example</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 3-ZONE EDITORIAL MONOGRAPH WORKSPACE -->
+        <div class="ed-monograph-grid">
+            <!-- ZONE 1: STICKY TABLE OF CONTENTS RAIL -->
+            <aside class="ed-toc-rail" aria-label="Table of Contents">
+                <div class="ed-toc-heading">
+                    <span>Contents</span>
+                    <span id="edTocPercent">0%</span>
+                </div>
+                <nav aria-label="Guide sections">
+                    <ul class="ed-toc-list" id="edDesktopToc">
+                        <li><a href="#overview">1. DevSecOps Overview</a></li>
+                        <li><a href="#sast">2. SAST - Static Application Security Testing</a></li>
+                        <li><a href="#sca">3. SCA - Software Composition Analysis</a></li>
+                        <li><a href="#secrets">4. Secrets Detection</a></li>
+                        <li><a href="#dast">5. DAST - Dynamic Application Security Testing</a></li>
+                        <li><a href="#container">6. Container Security</a></li>
+                        <li><a href="#iac">7. Infrastructure as Code Security</a></li>
+                        <li><a href="#pipeline">8. Complete Pipeline Example</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ZONE 2: OPTIMAL 68ch LONG-FORM TECHNICAL PROSE -->
+            <article id="edMonographArticle" class="ed-prose-column">
+<article class="content">
+            
 
             <p>Traditional security testing at the end of development is too slow and too expensive. DevSecOps shifts
                 security left - integrating automated security testing throughout the CI/CD pipeline so vulnerabilities
@@ -806,21 +635,9 @@
                     Institute)</p>
             </div>
 
-            <div class="toc">
-                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
-                <ul>
-                    <li><a href="#overview">1. DevSecOps Overview</a></li>
-                    <li><a href="#sast">2. SAST - Static Application Security Testing</a></li>
-                    <li><a href="#sca">3. SCA - Software Composition Analysis</a></li>
-                    <li><a href="#secrets">4. Secrets Detection</a></li>
-                    <li><a href="#dast">5. DAST - Dynamic Application Security Testing</a></li>
-                    <li><a href="#container">6. Container Security</a></li>
-                    <li><a href="#iac">7. Infrastructure as Code Security</a></li>
-                    <li><a href="#pipeline">8. Complete Pipeline Example</a></li>
-                </ul>
-            </div>
+            
 
-            <h2 id="overview">1. DevSecOps Overview</h2>
+            <h2  id="overview">1. DevSecOps Overview</h2>
 
             <h3>The DevSecOps Pipeline</h3>
             <p>Security checks at every stage:</p>
@@ -862,7 +679,7 @@
                 </tbody>
             </table>
 
-            <h2 id="sast">2. SAST - Static Application Security Testing</h2>
+            <h2  id="sast">2. SAST - Static Application Security Testing</h2>
 
             <p>SAST analyzes source code to find vulnerabilities without running the application.</p>
 
@@ -920,7 +737,7 @@
           <span class="yaml-key">SEMGREP_APP_TOKEN:</span> <span class="yaml-value">${{ secrets.SEMGREP_APP_TOKEN }}</span></code></pre>
             </div>
 
-            <h2 id="sca">3. SCA - Software Composition Analysis</h2>
+            <h2  id="sca">3. SCA - Software Composition Analysis</h2>
 
             <p>SCA scans dependencies for known vulnerabilities (CVEs) and license issues.</p>
 
@@ -975,7 +792,7 @@
     <span class="yaml-key">args:</span> <span class="yaml-value">--severity-threshold=high</span></code></pre>
             </div>
 
-            <h2 id="secrets">4. Secrets Detection</h2>
+            <h2  id="secrets">4. Secrets Detection</h2>
 
             <p>Prevent API keys, passwords, and tokens from reaching your repository.</p>
 
@@ -1003,7 +820,7 @@
   <span class="yaml-key">env:</span>
     <span class="yaml-key">GITHUB_TOKEN:</span> <span class="yaml-value">${{ secrets.GITHUB_TOKEN }}</span></code></pre>
 
-            <h2 id="dast">5. DAST - Dynamic Application Security Testing</h2>
+            <h2  id="dast">5. DAST - Dynamic Application Security Testing</h2>
 
             <p>DAST tests running applications by simulating real attacks.</p>
 
@@ -1026,7 +843,7 @@
                 <li><strong>Pre-release</strong> - Before production deployment</li>
             </ul>
 
-            <h2 id="container">6. Container Security</h2>
+            <h2  id="container">6. Container Security</h2>
 
             <p>Scan container images for vulnerabilities before deployment.</p>
 
@@ -1046,7 +863,7 @@
     <span class="yaml-key">severity:</span> <span class="yaml-value">'CRITICAL,HIGH'</span></code></pre>
             </div>
 
-            <h2 id="iac">7. Infrastructure as Code Security</h2>
+            <h2  id="iac">7. Infrastructure as Code Security</h2>
 
             <p>Scan Terraform, CloudFormation, and Kubernetes manifests for misconfigurations.</p>
 
@@ -1063,7 +880,7 @@
     <span class="yaml-key">skip_check:</span> <span class="yaml-value">CKV_AWS_18,CKV_AWS_21</span></code></pre>
             </div>
 
-            <h2 id="pipeline">8. Complete Pipeline Example</h2>
+            <h2  id="pipeline">8. Complete Pipeline Example</h2>
 
             <div class="success-box">
                 <strong><i class="fas fa-check-circle"></i> Full DevSecOps Pipeline</strong>
@@ -1132,40 +949,200 @@
                     <li>DAST on staging/pre-prod - not every commit (too slow)</li>
                     <li>Don't fail builds on every finding - prioritize critical/high first</li>
                 </ul>
-            </div>
 
-            <p
-                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
-                <strong>Author:</strong> TheHGTech Security Team<br>
-                <strong>Last Updated:</strong> January 2026<br>
-                <strong>Reading Time:</strong> 20 minutes
-            </p>
-        </article>
+                <aside class="ed-author-card" aria-label="Author Profile">
+                    <img src="/images/about-harish-hero.webp" alt="Harish G" class="ed-author-avatar" width="72" height="72" loading="lazy">
+                    <div class="ed-author-details">
+                        <h3><a href="/about.html#harish">Harish G</a></h3>
+                        <span class="ed-author-role">Founder &amp; Principal Security Architect · TheHGTech</span>
+                        <p>Security practitioner specializing in enterprise architecture, detection engineering, endpoint telemetry optimization, and AI-driven security operations.</p>
+                    </div>
+                </aside>
 
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()"><i class="far fa-heart"></i> <span
-                        id="likeText">Like this guide</span></button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                <div class="interaction-bar" style="margin-top: 2rem;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                            <i class="far fa-heart" aria-hidden="true"></i> <span id="likeText">Like this guide</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <div class="share-buttons">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on X/Twitter" aria-label="Share on X/Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="button-separator"></div>
+                        <button onclick="window.print()" class="print-btn" title="Print Guide" aria-label="Print Guide"><i class="fas fa-print" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
+            </article>
+
+            <!-- ZONE 3: RIGHT MARGINALIA & CONTEXT RAIL -->
+            <aside class="ed-marginalia-rail" aria-label="Key Takeaways and Related Resources">
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Practitioner Dossier</h2>
+                    <ul class="ed-rail-list">
+                        <li><strong>Key Finding:</strong> Why Shift-Left Security? A vulnerability found in development costs $80 to fix.</li>
+                        <li><strong>Core Challenge:</strong> Found in testing: $240.</li>
+                        <li><strong>Architecture Focus:</strong> Hardened enterprise baseline implementation for devsecops workflows.</li>
+                    </ul>
+                </div>
+
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Related Monographs &amp; Tools</h2>
+                    <nav aria-label="Related resources">
+                        <a href="/guides/vscode-supply-chain-hardening-2026.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Companion Guide // DevSecOps</span>
+                            <span class="ed-rail-link-name">Securing the AI-Powered IDE: Hardening VS Code, Cursor & Windsurf</span>
+                        </a>
+                        <a href="/guides/kubernetes-ai-security.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Technical Guide // DevSecOps</span>
+                            <span class="ed-rail-link-name">Kubernetes AI Security: Protecting the ML Pipeline</span>
+                        </a>
+                        <a href="/comparisons/" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Head-to-Head Matrix // Comparisons</span>
+                            <span class="ed-rail-link-name">Enterprise EDR, SIEM & Identity Platform Comparisons</span>
+                        </a>
+                        <a href="/cve-tracker.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Live Workbench // Intelligence</span>
+                            <span class="ed-rail-link-name">CISA KEV & Zero-Day Vulnerability Tracker</span>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+<!-- ========== APPROVED BRAND FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
+                    <p class="footer-desc">Independent security research, practitioner field manuals, and live vulnerability intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/articles.html">Articles</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html#harish">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="mailto:harish@thehgtech.com">Contact Editorial</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.
             </div>
         </div>
+    </footer>
 
-        <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to All Guides</a>
-    </div>
+    <script>
+        // Reader Font Size Comfort Controls
+        function setReaderScale(scale) {
+            if (scale === "default") {
+                document.body.removeAttribute("data-reader-scale");
+                localStorage.removeItem("hg_reader_scale");
+            } else {
+                document.body.setAttribute("data-reader-scale", scale);
+                localStorage.setItem("hg_reader_scale", scale);
+            }
+            document.querySelectorAll(".ed-reader-btn[data-scale]").forEach(function(btn) {
+                btn.classList.toggle("active", btn.getAttribute("data-scale") === scale);
+            });
+        }
 
+        (function initMonographReader() {
+            var savedScale = localStorage.getItem("hg_reader_scale");
+            if (savedScale === "compact" || savedScale === "large") {
+                setReaderScale(savedScale);
+            }
+
+            var article = document.getElementById("edMonographArticle");
+            var progressBar = document.getElementById("edReadingProgress");
+            var tocPercent = document.getElementById("edTocPercent");
+            var tocLinks = Array.from(document.querySelectorAll("#edDesktopToc a"));
+            var headings = tocLinks.map(function(link) {
+                var id = link.getAttribute("href").replace("#", "");
+                return document.getElementById(id);
+            }).filter(Boolean);
+
+            function updateReadingProgress() {
+                if (!article) return;
+                var rect = article.getBoundingClientRect();
+                var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                var totalScrollable = Math.max(1, article.offsetHeight - viewportHeight * 0.5);
+                var scrolled = Math.min(Math.max(0, -rect.top + viewportHeight * 0.2), totalScrollable);
+                var pct = Math.round((scrolled / totalScrollable) * 100);
+                if (progressBar) progressBar.style.width = pct + "%";
+                if (tocPercent) tocPercent.textContent = pct + "%";
+
+                var activeHeading = headings[0];
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= 140) {
+                        activeHeading = headings[i];
+                    }
+                }
+                if (activeHeading) {
+                    var activeId = "#" + activeHeading.id;
+                    tocLinks.forEach(function(link) {
+                        if (link.getAttribute("href") === activeId) {
+                            link.setAttribute("aria-current", "true");
+                        } else {
+                            link.removeAttribute("aria-current");
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+        })();
+    </script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
-<script src="../ui-enhancements.js?v=20260517" defer></script>
-
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
-    <script src="../mobile-nav.js" defer></script>
-</body>
+    <script src="/mobile-nav.js" defer></script>
 
+</body>
 </html>

@@ -1,82 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <title>Advanced YARA Techniques: Expert Malware Detection Guide [2026] | TheHGTech</title>
-
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="title" content="Advanced YARA Techniques: Expert Malware Detection Guide [2026]">
-    <meta name="description" content="Master advanced YARA techniques: memory scanning, YARA-X, yarGen, APT detection rules, PE analysis, performance optimization, and DFIR integration.">
-    
-    <meta name="keywords"
-        content="advanced YARA, YARA-X, memory scanning YARA, APT detection rules, yarGen, YARA performance, DFIR YARA, Velociraptor YARA, malware hunting">
-    <meta name="author" content="TheHGTech">
-    <meta name="robots" content="index, follow">
+    <title>Advanced YARA Techniques | TheHGTech</title>
+    <meta name="description" content="Expert-level YARA: memory scanning, YARA-X, yarGen automation, performance optimization, APT detection rules.">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://thehgtech.com/guides/yara-rules-advanced.html">
 
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/yara-rules-advanced.html">
-    <meta property="og:title" content="Advanced YARA Techniques: Expert Malware Detection Guide [2026]">
-    <meta property="og:description"
-        content="Master advanced YARA: memory scanning, YARA-X, APT rules, and DFIR integration.">
+    <meta property="og:title" content="Advanced YARA Techniques">
+    <meta property="og:description" content="Expert-level YARA: memory scanning, YARA-X, yarGen automation, performance optimization, APT detection rules.">
     <meta property="og:image" content="https://thehgtech.com/images/guides/yara-rules-advanced.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-01T00:00:00+00:00">
+    <meta property="article:author" content="https://thehgtech.com/about.html#harish">
+    <meta property="article:section" content="Detection Engineering">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://thehgtech.com/guides/yara-rules-advanced.html">
-    <meta name="twitter:title" content="Advanced YARA Techniques [2026]">
-    <meta name="twitter:description"
-        content="Expert YARA guide: memory scanning, APT detection, YARA-X, and performance optimization.">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:creator" content="@TheHGTech">
+    <meta name="twitter:title" content="Advanced YARA Techniques">
+    <meta name="twitter:description" content="Expert-level YARA: memory scanning, YARA-X, yarGen automation, performance optimization, APT detection rules.">
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/yara-rules-advanced.png">
 
-    <!-- FAQ Schema for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is YARA and what is it used for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "YARA is a pattern matching tool designed to help malware researchers identify and classify malware samples. It allows you to create rules that describe patterns found in malicious files, enabling automated detection across large file sets."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do YARA rules work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "YARA rules work by defining patterns (strings, hex sequences, regular expressions) and conditions. When a file matches all specified conditions, the rule triggers. Rules can match text strings, hexadecimal patterns, file size, entry points, and more."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the main components of a YARA rule?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A YARA rule has three main sections: 1) Meta - descriptive information like author and description, 2) Strings - patterns to search for (text, hex, regex), 3) Condition - logic that determines when the rule matches (e.g., 'any of them', 'all of them', file size checks)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I use YARA with VirusTotal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, VirusTotal supports YARA rules through its Hunting feature (requires premium subscription). You can upload YARA rules to automatically scan new submissions and retroactively search the VirusTotal database for matching samples."
-          }
-        }
-      ]
-    }
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Site Chrome & Navigation Stylesheets -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <!-- Isolated Guides Editorial Design System (Technical Monograph & Field Manuals) -->
+    <link rel="stylesheet" href="/css/guides-editorial.css?v=1.0">
+
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- Global Theme Script -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
     </script>
 
-    <!-- Structured Data -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement("script");
+            fullres.async = true;
+            fullres.src = "https://t.fullres.net/thehgtech.js?" + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is YARA and what is it used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YARA is a pattern matching tool designed to help malware researchers identify and classify malware samples. It allows you to create rules that describe patterns found in malicious files, enabling automated detection across large file sets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do YARA rules work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "YARA rules work by defining patterns (strings, hex sequences, regular expressions) and conditions. When a file matches all specified conditions, the rule triggers. Rules can match text strings, hexadecimal patterns, file size, entry points, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the main components of a YARA rule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A YARA rule has three main sections: 1) Meta - descriptive information like author and description, 2) Strings - patterns to search for (text, hex, regex), 3) Condition - logic that determines when the rule matches (e.g., 'any of them', 'all of them', file size checks)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use YARA with VirusTotal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, VirusTotal supports YARA rules through its Hunting feature (requires premium subscription). You can upload YARA rules to automatically scan new submissions and retroactively search the VirusTotal database for matching samples."
+      }
+    }
+  ]
+}
+    </script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -120,763 +173,491 @@
   "proficiencyLevel": "Advanced",
   "wordCount": 8000
 }
-</script>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-    <!-- Fonts -->
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #22C55E;
-            --accent-orange: #FF9500;
-            --accent-purple: #A855F7;
-            --glow-cyan: rgba(0, 217, 255, 0.5);
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-            --glass: rgba(255, 255, 255, 0.05);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            /* font-size removed for fluid typography */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            /* padding removed for fluid typography */
-            padding-top: 100px;
-        }
-
-        .new-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--accent-red), var(--accent-cyan));
-            color: #000;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            margin-left: 1rem;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.8;
-                transform: scale(1.05);
-            }
-        }
-
-        .guide-header {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-        }
-
-        .breadcrumb {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .breadcrumb a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, #fff, #a0a0a0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            display: inline-block;
-        }
-
-        .meta {
-            display: flex;
-            gap: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            flex-wrap: wrap;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .featured-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 12px;
-            margin: 2rem 0;
-            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
-            border: 1px solid var(--border);
-        }
-
-        .content h2 {
-            font-size: 1.8rem;
-            color: var(--accent-cyan);
-            margin: 3rem 0 1.5rem;
-        }
-
-        .content h3 {
-            font-size: 1.4rem;
-            color: #fff;
-            margin: 2rem 0 1rem;
-        }
-
-        .content h4 {
-            font-size: 1.2rem;
-            color: var(--accent-cyan);
-            margin: 1.5rem 0 1rem;
-        }
-
-        .content p {
-            margin-bottom: 1.5rem;
-            color: #d0d0d0;
-        }
-
-        .content ul,
-        .content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            color: #d0d0d0;
-        }
-
-        .content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .content strong {
-            color: #fff;
-        }
-
-        .content code {
-            background: var(--bg-card);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            color: var(--accent-cyan);
-            font-size: 0.9em;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .success-box {
-            background: rgba(34, 197, 94, 0.1);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        pre {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
-            color: #d0d0d0;
-        }
-
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Advanced YARA Techniques: Expert Malware Detection Guide [2026]",
+  "description": "Master advanced YARA techniques: memory scanning, YARA-X, yarGen, APT detection rules, PE analysis, performance optimization, and DFIR integration.",
+  "totalTime": "PT30M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "1. Memory Scanning Techniques",
+      "text": "Refer to the section '1. Memory Scanning Techniques' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "2. YARA-X: The Next Generation",
+      "text": "Refer to the section '2. YARA-X: The Next Generation' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "3. Automated Rule Generation with yarGen",
+      "text": "Refer to the section '3. Automated Rule Generation with yarGen' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "4. Performance Optimization",
+      "text": "Refer to the section '4. Performance Optimization' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "5. Advanced PE Analysis",
+      "text": "Refer to the section '5. Advanced PE Analysis' in the guide."
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://thehgtech.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Advanced YARA Techniques",
+      "item": "https://thehgtech.com/guides/yara-rules-advanced.html"
+    }
+  ]
+}
+    </script>
+    <style>
+50% { opacity: 0.8;
+                transform: scale(1.05); }
         /* YARA-specific syntax highlighting */
-        .yara-keyword {
-            color: var(--accent-purple);
-            font-weight: 600;
-        }
-
-        .yara-string {
-            color: var(--accent-green);
-        }
-
-        .yara-comment {
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
-        .yara-operator {
-            color: var(--accent-orange);
-        }
-
-        .yara-hex {
-            color: var(--accent-cyan);
-        }
-
+        .yara-keyword { color: var(--accent-purple);
+            font-weight: 600; }
+        .yara-string { color: var(--accent-green); }
+        .yara-comment { color: var(--text-muted);
+            font-style: italic; }
+        .yara-operator { color: var(--accent-orange); }
+        .yara-hex { color: var(--accent-cyan); }
         /* Rule Box */
-        .rule-box {
-            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
+        .rule-box { background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(168, 85, 247, 0.05));
             border: 1px solid var(--accent-cyan);
             border-radius: 12px;
             padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .rule-box h5 {
-            color: var(--accent-cyan);
+            margin: 1.5rem 0; }
+        .rule-box h5 { color: var(--accent-cyan);
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-
+            gap: 0.5rem; }
         /* Table styles */
-        table {
-            width: 100%;
+        table { width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
             background: var(--bg-card);
             border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th,
-        td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
+            overflow: hidden; }
         /* TOC */
-        .toc {
-            background: var(--bg-card);
+        .toc { background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .toc h3 {
-            color: var(--accent-cyan);
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .toc ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .toc li {
-            margin-bottom: 0.5rem;
-        }
-
-        .toc a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .toc a:hover {
-            color: var(--accent-cyan);
-        }
-
-        footer {
-            margin-top: 5rem;
-            padding-top: 3rem;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-top: 2rem;
-            padding: 0.8rem 1.5rem;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-back:hover {
-            border-color: var(--accent-cyan);
-            color: var(--accent-cyan);
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .content h2 {
-                font-size: 1.5rem;
-            }
-
-            .content h3 {
-                font-size: 1.2rem;
-            }
-
-            .container {
-                padding-top: 80px;
-            }
-        }
+            margin: 2rem 0; }
     </style>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-
-    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://thehgtech.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://thehgtech.com/guides/"
-      }, {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Advanced YARA Techniques: Expert Malware Detection Guide ...",
-        "item": "https://thehgtech.com/guides/yara-rules-advanced.html"
-      }]
-    }
-    </script>
-<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-    <link rel="stylesheet" href="../mobile-nav.css">
-
-    <script src="/theme-toggle.js" defer></script>
-    
-    
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Advanced YARA Techniques: Expert Malware Detection Guide [2026]",
-        "description": "Master advanced YARA techniques: memory scanning, YARA-X, yarGen, APT detection rules, PE analysis, performance optimization, and DFIR integration.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "1. Memory Scanning Techniques", "text": "Refer to the section '1. Memory Scanning Techniques' in the guide."},
-        {"@type": "HowToStep", "name": "2. YARA-X: The Next Generation", "text": "Refer to the section '2. YARA-X: The Next Generation' in the guide."},
-        {"@type": "HowToStep", "name": "3. Automated Rule Generation with yarGen", "text": "Refer to the section '3. Automated Rule Generation with yarGen' in the guide."},
-        {"@type": "HowToStep", "name": "4. Performance Optimization", "text": "Refer to the section '4. Performance Optimization' in the guide."},
-        {"@type": "HowToStep", "name": "5. Advanced PE Analysis", "text": "Refer to the section '5. Advanced PE Analysis' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "Advanced YARA Techniques: Expert Malware Dete\u2026", "item": "https://thehgtech.com/guides/yara-rules-advanced.html"}
-        ]
-      }
-    ]
-    </script>
 </head>
 
-<body>
-    <!-- Mobile Header -->
+<body class="guides-editorial guide-monograph-page">
+    <script>
+        if (document.documentElement.getAttribute("data-theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    </script>
 
+    <!-- Accessible Skip Link -->
+    <a href="#edMonographArticle" class="ed-skip-link">Skip to guide content</a>
 
+    <!-- Top Reading Progress Hairline -->
+    <div class="ed-progress-track" aria-hidden="true">
+        <div class="ed-progress-bar" id="edReadingProgress"></div>
+    </div>
 
-</div>
+<!-- SITE-HEADER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL SITE HEADER COMPONENT
+     Single Source of Truth for Mobile Header, Mobile Menu Overlay,
+     Search Overlay, and Desktop Header Navigation.
+     Reference Standard: CVE Tracker / Apple HIG Modern Standard
+     Project Marker: HG-THREAT-INTEL-V1
+     ========================================================================== -->
 
-    
-
-    <!-- Desktop Header -->
-    
-
-</div>
-
-    
-
+<!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
         <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <!-- Search triggers Command Palette -->
         <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" aria-hidden="true"></i>
         </button>
-        <!-- Hamburger Menu Toggle -->
         <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
     </div>
 </header>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<!-- Fullscreen Mobile Menu Overlay -->
 <div class="m-menu-overlay m-only" id="m-menu-overlay">
     <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
         <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
     </div>
     <div class="m-menu-content">
         <div class="m-menu-section">
             <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Settings</div>
             <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
             </button>
         </div>
     </div>
 </div>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
     </div>
+    <div class="m-search-overlay__results"></div>
+</div>
 
+<!-- Desktop Header -->
 <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Security automation templates</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tools Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </button>
-        </div>
-    </header>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
 
-    <div class="container">
-        <div class="guide-header">
-            <div class="breadcrumb">
-                <a href="/">Home</a> / <a href="/guides/">Guides</a> / Advanced YARA Techniques
-            </div>
-            <h1>Advanced YARA Techniques<span class="new-badge">NEW</span></h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">Expert-level YARA for malware hunters — memory
-                scanning, YARA-X, APT detection rules, performance tuning, and DFIR workflows.</p>
-            <div class="meta">
-                <div class="meta-item"><i class="fas fa-book-open"></i> 35 min read</div>
-                <div class="meta-item"><i class="fas fa-crosshairs"></i> Advanced</div>
-                <div class="meta-item"><i class="far fa-calendar-alt"></i> Jan 12, 2026</div>
-            </div>
-        </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
 
-        <article class="content">
-            <img src="/images/guides/yara-rules-advanced.png" alt="Advanced YARA Techniques Guide"
-                class="featured-image" loading="lazy">
+    <main class="ed-shell">
+        <!-- MONOGRAPH HEADER & READER COMFORT CONTROLS -->
+        <header class="ed-monograph-header">
+            <div class="ed-breadcrumb-nav">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ed-breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li aria-current="page">Detection Engineering</li>
+                    </ol>
+                </nav>
+
+                <div class="ed-reader-controls" role="group" aria-label="Reading comfort settings">
+                    <button type="button" class="ed-reader-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();" title="Switch Paper / Obsidian Theme" aria-label="Switch reading theme">
+                        <i class="fas fa-adjust" aria-hidden="true"></i> <span>Surface</span>
+                    </button>
+                    <span class="ed-reader-divider" aria-hidden="true"></span>
+                    <button type="button" class="ed-reader-btn" data-scale="compact" onclick="setReaderScale('compact')" title="Compact type size" aria-label="Compact font size">A-</button>
+                    <button type="button" class="ed-reader-btn active" data-scale="default" onclick="setReaderScale('default')" title="Standard type size" aria-label="Default font size">A</button>
+                    <button type="button" class="ed-reader-btn" data-scale="large" onclick="setReaderScale('large')" title="Large type size" aria-label="Large font size">A+</button>
+                </div>
+            </div>
+
+            <div class="ed-monograph-kicker-row">
+                <span class="ed-domain-tag">Detection Engineering</span>
+                <span class="ed-doc-id">MONOGRAPH // FIELD MANUAL · TLP:CLEAR · RESEARCH-GRADE</span>
+            </div>
+
+            <h1 class="ed-monograph-title">Advanced YARA Techniques</h1>
+            <p class="ed-monograph-standfirst">Expert-level YARA: memory scanning, YARA-X, yarGen automation, performance optimization, APT detection rules.</p>
+
+            <div class="ed-byline-ledger" role="region" aria-label="Document Metadata">
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Author</span>
+                    <span class="ed-byline-val"><a href="/about.html#harish" rel="author">Harish G</a> · Principal Architect</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Published / Updated</span>
+                    <span class="ed-byline-val"><time datetime="2026-05-01">Jan 12, 2026</time></span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Reading Time</span>
+                    <span class="ed-byline-val">35 min</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Audience &amp; Depth</span>
+                    <span class="ed-byline-val">Advanced · Practice Playbook</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURED TECHNICAL FIGURE -->
+        <figure class="ed-monograph-figure">
+            <img src="/images/guides/yara-rules-advanced.png"
+                 alt="Advanced YARA Techniques — Enterprise Security Architecture &amp; Implementation"
+                 width="1200" height="630" loading="eager">
+            <figcaption class="ed-monograph-figcaption">
+                <span><strong>FIG. 01</strong> // Technical architecture &amp; security implementation: Advanced YARA Techniques.</span>
+                <span>SOURCE: THEHGTECH ARCHITECTURE LAB</span>
+            </figcaption>
+        </figure>
+
+        <!-- MOBILE COLLAPSIBLE TABLE OF CONTENTS -->
+        <details class="ed-mobile-toc">
+            <summary>
+                <span><i class="fas fa-list-ul" aria-hidden="true"></i> Monograph Contents (11 Sections)</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </summary>
+            <div class="ed-mobile-toc-body">
+                <ul class="ed-toc-list">
+                    <li><a href="#memory-scanning">1. Memory Scanning Techniques</a></li>
+                    <li><a href="#yara-x">2. YARA-X: The Next Generation</a></li>
+                    <li><a href="#yargen">3. Automated Rule Generation with yarGen</a></li>
+                    <li><a href="#performance">4. Performance Optimization</a></li>
+                    <li><a href="#pe-analysis">5. Advanced PE Analysis</a></li>
+                    <li><a href="#modifiers">4. String Modifiers</a></li>
+                    <li><a href="#modules">5. YARA Modules</a></li>
+                    <li><a href="#real-world">6. Real-World Rule Examples</a></li>
+                    <li><a href="#best-practices">7. Best Practices</a></li>
+                    <li><a href="#integration">8. Tools and Integration</a></li>
+                    <li><a href="#hunting">9. Threat Hunting with YARA</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 3-ZONE EDITORIAL MONOGRAPH WORKSPACE -->
+        <div class="ed-monograph-grid">
+            <!-- ZONE 1: STICKY TABLE OF CONTENTS RAIL -->
+            <aside class="ed-toc-rail" aria-label="Table of Contents">
+                <div class="ed-toc-heading">
+                    <span>Contents</span>
+                    <span id="edTocPercent">0%</span>
+                </div>
+                <nav aria-label="Guide sections">
+                    <ul class="ed-toc-list" id="edDesktopToc">
+                        <li><a href="#memory-scanning">1. Memory Scanning Techniques</a></li>
+                        <li><a href="#yara-x">2. YARA-X: The Next Generation</a></li>
+                        <li><a href="#yargen">3. Automated Rule Generation with yarGen</a></li>
+                        <li><a href="#performance">4. Performance Optimization</a></li>
+                        <li><a href="#pe-analysis">5. Advanced PE Analysis</a></li>
+                        <li><a href="#modifiers">4. String Modifiers</a></li>
+                        <li><a href="#modules">5. YARA Modules</a></li>
+                        <li><a href="#real-world">6. Real-World Rule Examples</a></li>
+                        <li><a href="#best-practices">7. Best Practices</a></li>
+                        <li><a href="#integration">8. Tools and Integration</a></li>
+                        <li><a href="#hunting">9. Threat Hunting with YARA</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ZONE 2: OPTIMAL 68ch LONG-FORM TECHNICAL PROSE -->
+            <article id="edMonographArticle" class="ed-prose-column">
+<article class="content">
+            
 
             <div class="warning-box">
                 <strong><i class="fas fa-exclamation-triangle"></i> Prerequisites Required</strong>
@@ -895,23 +676,9 @@
                 difference between catching commodity malware and hunting nation-state actors.</p>
 
             <!-- Table of Contents -->
-            <div class="toc">
-                <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
-                <ul>
-                    <li><a href="#memory-scanning">1. Memory Scanning Techniques</a></li>
-                    <li><a href="#yara-x">2. YARA-X: The Next Generation</a></li>
-                    <li><a href="#yargen">3. Automated Rule Generation with yarGen</a></li>
-                    <li><a href="#performance">4. Performance Optimization</a></li>
-                    <li><a href="#pe-analysis">5. Advanced PE Analysis</a></li>
-                    <li><a href="#complex-conditions">6. Complex Conditions and Iterators</a></li>
-                    <li><a href="#apt-rules">7. APT Detection Rules</a></li>
-                    <li><a href="#dfir">8. DFIR Integration (Velociraptor, KAPE)</a></li>
-                    <li><a href="#false-positives">9. Systematic False Positive Reduction</a></li>
-                    <li><a href="#evasion">10. Detection Evasion Techniques</a></li>
-                </ul>
-            </div>
+            
 
-            <h2 id="memory-scanning">1. Memory Scanning Techniques</h2>
+            <h2  id="memory-scanning">1. Memory Scanning Techniques</h2>
 
             <p>File scanning is just the beginning. Real advanced YARA usage involves scanning process memory, which
                 lets you catch malware that's unpacked, decrypted, or fileless. This is where you catch the malware that
@@ -1005,7 +772,7 @@ vol -f memdump.raw windows.yarascan --yara-file=cobalt.yar --pid=4532</code></pr
                 </tbody>
             </table>
 
-            <h2 id="yara-x">2. YARA-X: The Next Generation</h2>
+            <h2  id="yara-x">2. YARA-X: The Next Generation</h2>
 
             <p>YARA-X is a complete rewrite of YARA in Rust by VirusTotal. It's faster, more memory-efficient, and has
                 better error handling. If you're doing high-volume scanning, YARA-X is the future.</p>
@@ -1075,7 +842,7 @@ results = rules.scan(data)</code></pre>
                 </p>
             </div>
 
-            <h2 id="yargen">3. Automated Rule Generation with yarGen</h2>
+            <h2  id="yargen">3. Automated Rule Generation with yarGen</h2>
 
             <p>Writing every rule by hand is tedious. yarGen by Florian Roth automatically generates YARA rules from
                 malware samples by identifying unique strings and opcodes that don't appear in legitimate software.</p>
@@ -1134,7 +901,7 @@ python yarGen.py -m /samples/ -p "APTGROUP_"</code></pre>
                 Remove overly generic strings and add filesize limits.
             </div>
 
-            <h2 id="performance">4. Performance Optimization</h2>
+            <h2  id="performance">4. Performance Optimization</h2>
 
             <p>When you're scanning millions of files or processing terabytes of data, rule performance matters. A
                 poorly written rule can be 100x slower than an optimized one.</p>
@@ -1199,7 +966,7 @@ yr scan --print-stats rule.yar sample.exe</code></pre>
                 </ul>
             </div>
 
-            <h2 id="pe-analysis">5. Advanced PE Analysis</h2>
+            <h2  id="pe-analysis">5. Advanced PE Analysis</h2>
 
             <p>The PE module is where YARA really shines for Windows malware. Beyond basic imports, you can analyze rich
                 headers, section characteristics, timestamps, and more.</p>
@@ -1273,7 +1040,7 @@ yr scan --print-stats rule.yar sample.exe</code></pre>
                 @string1[2] - @string1[1] < 50 <span class="yara-comment">// Occurrences within 50 bytes</span></code>
                     </pre>
 
-                    <h2 id="modifiers">4. String Modifiers</h2>
+                    <h2  id="modifiers">4. String Modifiers</h2>
 
                     <table>
                         <thead>
@@ -1335,7 +1102,7 @@ yr scan --print-stats rule.yar sample.exe</code></pre>
     <span class="yara-comment">// Combined with wide</span>
     $xor3 = "CreateProcess" <span class="yara-keyword">wide xor</span></code></pre>
 
-                    <h2 id="modules">5. YARA Modules</h2>
+                    <h2  id="modules">5. YARA Modules</h2>
 
                     <p>YARA modules extend functionality for specific file types and analysis.</p>
 
@@ -1390,7 +1157,7 @@ pe.timestamp > 1609459200      <span class="yara-comment">// After 2021</span></
         math.entropy(0, filesize) > 7.5  <span class="yara-comment">// Likely packed</span>
 }</code></pre>
 
-                    <h2 id="real-world">6. Real-World Rule Examples</h2>
+                    <h2  id="real-world">6. Real-World Rule Examples</h2>
 
                     <h3>Example 1: Cobalt Strike Beacon Detection</h3>
 
@@ -1502,7 +1269,7 @@ pe.timestamp > 1609459200      <span class="yara-comment">// After 2021</span></
 }</code></pre>
                     </div>
 
-                    <h2 id="best-practices">7. Best Practices</h2>
+                    <h2  id="best-practices">7. Best Practices</h2>
 
                     <div class="success-box">
                         <strong><i class="fas fa-check-circle"></i> YARA Rule Writing Best Practices:</strong>
@@ -1547,7 +1314,7 @@ pe.timestamp > 1609459200      <span class="yara-comment">// After 2021</span></
         (2 of ($api*))       <span class="yara-comment">// Require multiple</span>
 }</code></pre>
 
-                    <h2 id="integration">8. Tools and Integration</h2>
+                    <h2  id="integration">8. Tools and Integration</h2>
 
                     <h3>Command-Line Usage</h3>
 
@@ -1606,7 +1373,7 @@ yara -p rule.yar 1234</code></pre>
                         <li><strong>ClamAV:</strong> YARA rules as custom signatures</li>
                     </ul>
 
-                    <h2 id="hunting">9. Threat Hunting with YARA</h2>
+                    <h2  id="hunting">9. Threat Hunting with YARA</h2>
 
                     <p>YARA excels at proactive threat hunting. Here's a workflow for hunting unknown threats:</p>
 
@@ -1694,48 +1461,199 @@ yara -p rule.yar 1234</code></pre>
                         <strong>Reading Time:</strong> 35 minutes
                     </p>
 
-                    <a href="/guides/" class="btn-back"><i class="fas fa-arrow-left"></i> Back to Guides</a>
-        </article>
+                <aside class="ed-author-card" aria-label="Author Profile">
+                    <img src="/images/about-harish-hero.webp" alt="Harish G" class="ed-author-avatar" width="72" height="72" loading="lazy">
+                    <div class="ed-author-details">
+                        <h3><a href="/about.html#harish">Harish G</a></h3>
+                        <span class="ed-author-role">Founder &amp; Principal Security Architect · TheHGTech</span>
+                        <p>Security practitioner specializing in enterprise architecture, detection engineering, endpoint telemetry optimization, and AI-driven security operations.</p>
+                    </div>
+                </aside>
 
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
-                        aria-label="Share on Twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
-                        aria-label="Share on LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                        <i class="fas fa-link"></i>
-                    </button>
+                <div class="interaction-bar" style="margin-top: 2rem;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                            <i class="far fa-heart" aria-hidden="true"></i> <span id="likeText">Like this guide</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <div class="share-buttons">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on X/Twitter" aria-label="Share on X/Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="button-separator"></div>
+                        <button onclick="window.print()" class="print-btn" title="Print Guide" aria-label="Print Guide"><i class="fas fa-print" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn" title="Print Guide" aria-label="Print Guide">
-                    <i class="fas fa-print"></i>
-                </button>
+            </article>
+
+            <!-- ZONE 3: RIGHT MARGINALIA & CONTEXT RAIL -->
+            <aside class="ed-marginalia-rail" aria-label="Key Takeaways and Related Resources">
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Practitioner Dossier</h2>
+                    <ul class="ed-rail-list">
+                        <li><strong>Key Finding:</strong> Prerequisites Required This is an advanced guide designed for experienced security professionals.</li>
+                        <li><strong>Core Challenge:</strong> If you're new to YARA or need a refresher on the fundamentals, start with our YARA Rules Fundamentals guide first, then return here to level up your skills.</li>
+                        <li><strong>Architecture Focus:</strong> Hardened enterprise baseline implementation for detection engineering workflows.</li>
+                    </ul>
+                </div>
+
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Related Monographs &amp; Tools</h2>
+                    <nav aria-label="Related resources">
+                        <a href="/guides/yara-rules-malware-detection.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Companion Guide // Detection Engineering</span>
+                            <span class="ed-rail-link-name">YARA Rules Fundamentals</span>
+                        </a>
+                        <a href="/guides/sigma-rules-siem-detection.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Technical Guide // Detection Engineering</span>
+                            <span class="ed-rail-link-name">Sigma Rules for SIEM Detection</span>
+                        </a>
+                        <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Head-to-Head Matrix // Comparisons</span>
+                            <span class="ed-rail-link-name">Splunk Enterprise vs. Elastic Security vs. LogRhythm</span>
+                        </a>
+                        <a href="/cve-tracker.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Live Workbench // Intelligence</span>
+                            <span class="ed-rail-link-name">CISA KEV & Zero-Day Vulnerability Tracker</span>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+<!-- ========== APPROVED BRAND FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
+                    <p class="footer-desc">Independent security research, practitioner field manuals, and live vulnerability intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/articles.html">Articles</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html#harish">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="mailto:harish@thehgtech.com">Contact Editorial</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.
             </div>
         </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 TheHGTech. All rights reserved.</p>
     </footer>
 
-    
+    <script>
+        // Reader Font Size Comfort Controls
+        function setReaderScale(scale) {
+            if (scale === "default") {
+                document.body.removeAttribute("data-reader-scale");
+                localStorage.removeItem("hg_reader_scale");
+            } else {
+                document.body.setAttribute("data-reader-scale", scale);
+                localStorage.setItem("hg_reader_scale", scale);
+            }
+            document.querySelectorAll(".ed-reader-btn[data-scale]").forEach(function(btn) {
+                btn.classList.toggle("active", btn.getAttribute("data-scale") === scale);
+            });
+        }
+
+        (function initMonographReader() {
+            var savedScale = localStorage.getItem("hg_reader_scale");
+            if (savedScale === "compact" || savedScale === "large") {
+                setReaderScale(savedScale);
+            }
+
+            var article = document.getElementById("edMonographArticle");
+            var progressBar = document.getElementById("edReadingProgress");
+            var tocPercent = document.getElementById("edTocPercent");
+            var tocLinks = Array.from(document.querySelectorAll("#edDesktopToc a"));
+            var headings = tocLinks.map(function(link) {
+                var id = link.getAttribute("href").replace("#", "");
+                return document.getElementById(id);
+            }).filter(Boolean);
+
+            function updateReadingProgress() {
+                if (!article) return;
+                var rect = article.getBoundingClientRect();
+                var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                var totalScrollable = Math.max(1, article.offsetHeight - viewportHeight * 0.5);
+                var scrolled = Math.min(Math.max(0, -rect.top + viewportHeight * 0.2), totalScrollable);
+                var pct = Math.round((scrolled / totalScrollable) * 100);
+                if (progressBar) progressBar.style.width = pct + "%";
+                if (tocPercent) tocPercent.textContent = pct + "%";
+
+                var activeHeading = headings[0];
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= 140) {
+                        activeHeading = headings[i];
+                    }
+                }
+                if (activeHeading) {
+                    var activeId = "#" + activeHeading.id;
+                    tocLinks.forEach(function(link) {
+                        if (link.getAttribute("href") === activeId) {
+                            link.setAttribute("aria-current", "true");
+                        } else {
+                            link.removeAttribute("aria-current");
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+        })();
+    </script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
-<script src="../ui-enhancements.js?v=20260517" defer></script>
-
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
-    <script src="../mobile-nav.js" defer></script>
-</body>
+    <script src="/mobile-nav.js" defer></script>
 
+</body>
 </html>

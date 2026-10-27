@@ -1,38 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="theme-color" content="#000000">
-    <title>Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift | TheHGTech</title>
-
-    <meta name="description" content="A deep-dive security engineer\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.">
-    <meta name="keywords" content="Active Directory vs Entra ID, Azure AD security 2026, Entra ID security hardening, GPO vs Conditional Access, identity security shift, Microsoft Entra ID migration, Kerberos vs OAuth, PIM Azure AD, zero trust identity 2026, Entra ID outage availability, break-glass accounts, KQL queries Entra ID, Microsoft Defender for Identity">
+    <title>Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift | TheHGTech</title>
+    <meta name="description" content="How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.">
     <meta name="author" content="Harish G">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html">
-    <meta property="og:title" content="Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift">
-    <meta property="og:description" content="A deep-dive security engineer\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.">
-    <meta property="og:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.webp">
+    <meta property="og:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift">
+    <meta property="og:description" content="How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="TheHGTech">
     <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-01T00:00:00+00:00">
+    <meta property="article:author" content="https://thehgtech.com/about.html#harish">
+    <meta property="article:section" content="Identity & Access Management">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@TheHGTech">
     <meta name="twitter:creator" content="@TheHGTech">
-    <meta name="twitter:title" content="Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift | TheHGTech">
-    <meta name="twitter:description" content="How security controls move from Enterprise Admin to Cloud Provider, the real risk of Entra ID as a SPOF, and the ultimate migration and upskilling playbook.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.webp">
+    <meta name="twitter:title" content="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift">
+    <meta name="twitter:description" content="How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/ad_vs_entra_architecture.png">
 
-    <!-- Structured Data -->
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Site Chrome & Navigation Stylesheets -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <!-- Isolated Guides Editorial Design System (Technical Monograph & Field Manuals) -->
+    <link rel="stylesheet" href="/css/guides-editorial.css?v=1.0">
+
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- Global Theme Script -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement("script");
+            fullres.async = true;
+            fullres.src = "https://t.fullres.net/thehgtech.js?" + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,287 +141,185 @@
   "wordCount": "11000",
   "timeRequired": "PT38M"
 }
-</script>
-
-    <!-- Breadcrumb Schema -->
+    </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift",
+  "description": "A deep-dive security engineer\\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.",
+  "totalTime": "PT30M",
+  "step": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-        {"@type": "ListItem", "position": 3, "name": "Active Directory vs Entra ID Security 2026", "item": "https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html"}
-      ]
+      "@type": "HowToStep",
+      "name": "1. Introduction: The Death of the Perimeter",
+      "text": "Refer to the section '1. Introduction: The Death of the Perimeter' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "2. Core Architecture &amp; Protocol Deep-Dive",
+      "text": "Refer to the section '2. Core Architecture &amp; Protocol Deep-Dive' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "3. Shared Responsibility &amp; Vendor Control",
+      "text": "Refer to the section '3. Shared Responsibility &amp; Vendor Control' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "4. What Entra ID Gets Right: The Security Wins",
+      "text": "Refer to the section '4. What Entra ID Gets Right: The Security Wins' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "5. Attack Surface Comparison: AD vs Entra ID",
+      "text": "Refer to the section '5. Attack Surface Comparison: AD vs Entra ID' in the guide."
     }
+  ]
+}
     </script>
-
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Style System -->
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/theme-toggle.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-    <script src="/theme-toggle.js" defer></script>
-
-    <!-- Global Theme Script -->
-    <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Azure AD the exact same thing as Microsoft Entra ID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In 2023, Microsoft officially renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. It is exactly the same product, codebase, and infrastructure. The rename was primarily a branding exercise to group Microsoft's expanding portfolio of identity products under a single umbrella."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Microsoft Entra ID completely replace on-premises Active Directory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For modern, cloud-first organizations, yes. If your infrastructure relies primarily on SaaS applications, Microsoft 365, and modern Windows 11 devices, Entra ID can completely replace AD. However, if you rely on legacy line-of-business applications requiring Kerberos/NTLM, you will likely need to maintain a Hybrid identity model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Entra ID use Group Policy Objects (GPOs)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Entra ID is a cloud-native identity provider and does not support traditional Group Policy Objects (GPOs). Device management in the cloud world is handled by Mobile Device Management (MDM) solutions like Microsoft Intune."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does an attacker bypass MFA in Azure AD environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attackers typically bypass MFA using Adversary-in-the-Middle (AiTM) phishing proxies (such as Evilginx2) to steal the active session token after the user successfully completes the MFA challenge. They may also use MFA Fatigue or exploit legacy authentication protocols."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a break-glass account in Entra ID and why is it necessary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A break-glass account is a highly privileged, cloud-only emergency access account configured to bypass typical Conditional Access policies. It ensures you can still access your tenant if an MFA outage or configuration error locks all normal administrators out."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Azure AD (Entra ID) vulnerable to Kerberoasting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Entra ID utilizes modern authentication protocols like OAuth 2.0, OpenID Connect, and SAML. Because it does not use Kerberos, attacks like Kerberoasting and Golden Ticket forgery are structurally impossible in a pure cloud-native Entra ID environment."
+      }
+    }
+  ]
+}
     </script>
-
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://thehgtech.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift",
+      "item": "https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html"
+    }
+  ]
+}
+    </script>
     <style>
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #10b981;
-            --accent-orange: #f59e0b;
-            --accent-purple: #8b5cf6;
-            --accent-pink: #ec4899;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            /* padding removed for fluid typography */
-        }
-
-        .guide-header {
-            padding: 3rem 0 2rem;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
-            margin-top: 60px;
-        }
-
-        .guide-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #00D9FF, #0099cc);
-            color: #000;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, #ffffff 0%, #00D9FF 60%, #FF3D3D 100%);
-            -webkit-background-clip: text;
-            color: #ffffff; -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.8rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-        }
-
-        h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            /* font-size removed for fluid typography */
-        }
-
-        h4 {
-            color: var(--accent-cyan);
-            margin: 1.25rem 0 0.75rem;
-            font-size: 1.1rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-        }
-
-        ul, ol {
-            margin-left: 2rem;
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            font-size: 1.02rem;
-        }
-
-        a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
-            transition: border-color 0.3s;
-        }
-
-        a:hover { border-color: var(--accent-cyan); }
-
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            border-bottom: none;
-            font-size: 0.95rem;
-        }
-
-        .back-link:hover { text-decoration: underline; border-bottom: none; }
-
-        /* Info boxes */
-        .info-box {
-            background: rgba(0, 217, 255, 0.05);
+/* Info boxes */
+        .info-box { background: rgba(0, 217, 255, 0.05);
             border-left: 4px solid var(--accent-cyan);
             padding: 1.5rem;
             margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .warning-box {
-            background: rgba(255, 76, 76, 0.05);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.05);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .opinion-box {
-            background: rgba(255, 165, 0, 0.05);
+            border-radius: 8px; }
+        .opinion-box { background: rgba(255, 165, 0, 0.05);
             border-left: 4px solid var(--accent-orange);
             padding: 1.5rem;
             margin: 2rem 0;
-            border-radius: 8px;
-        }
-
-        .technical-box {
-            background: rgba(0, 217, 255, 0.03);
+            border-radius: 8px; }
+        .technical-box { background: rgba(0, 217, 255, 0.03);
             border: 1px solid var(--border);
             border-left: 5px solid var(--accent-cyan);
             padding: 1.5rem 2rem;
             border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .exploit-box {
-            background: rgba(255, 61, 61, 0.08);
+            margin: 2.5rem 0; }
+        .exploit-box { background: rgba(255, 61, 61, 0.08);
             border: 1px solid rgba(255, 61, 61, 0.3);
             border-radius: 8px;
             padding: 1.5rem;
             margin: 1.5rem 0;
-            position: relative;
-        }
-
-        .exploit-label {
-            display: block;
+            position: relative; }
+        .exploit-label { display: block;
             color: var(--accent-red);
             font-weight: 700;
             font-size: 0.8rem;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            margin-bottom: 0.75rem;
-        }
-
-        .defense-box {
-            background: rgba(16, 185, 129, 0.08);
+            margin-bottom: 0.75rem; }
+        .defense-box { background: rgba(16, 185, 129, 0.08);
             border: 1px solid rgba(16, 185, 129, 0.3);
             border-radius: 8px;
             padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .defense-box::before {
-            content: "Defense Strategy";
+            margin: 1.5rem 0; }
+        .defense-box::before { content: "Defense Strategy";
             display: block;
             color: var(--accent-green);
             font-weight: 700;
             margin-bottom: 0.5rem;
             font-size: 0.85rem;
             letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-
+            text-transform: uppercase; }
         /* Code */
-        code {
-            background: rgba(255, 255, 255, 0.08);
+        code { background: rgba(255, 255, 255, 0.08);
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             color: var(--accent-cyan);
-            font-size: 0.9rem;
-        }
-
-        pre {
-            background: #000;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
-            color: var(--accent-green);
-        }
-
+            font-size: 0.9rem; }
         /* Tables */
-        .comparison-table-wrapper {
-            overflow-x: auto;
+        .comparison-table-wrapper { overflow-x: auto;
             margin: 2rem 0;
             border-radius: 10px;
-            border: 1px solid var(--border);
-        }
-
-        .comparison-table {
-            width: 100%;
+            border: 1px solid var(--border); }
+        .comparison-table { width: 100%;
             border-collapse: collapse;
-            font-size: 0.95rem;
-        }
-
-        .comparison-table th {
-            background: rgba(0, 217, 255, 0.08);
+            font-size: 0.95rem; }
+        .comparison-table th { background: rgba(0, 217, 255, 0.08);
             color: var(--accent-cyan);
             padding: 0.85rem 1.2rem;
             text-align: left;
@@ -373,530 +328,515 @@
             letter-spacing: 0.5px;
             text-transform: uppercase;
             border-bottom: 1px solid var(--border);
-            white-space: nowrap;
-        }
-
+            white-space: nowrap; }
         .comparison-table th.ad-col { background: rgba(0, 120, 215, 0.12); color: #4ca3ff; }
         .comparison-table th.entra-col { background: rgba(120, 80, 200, 0.12); color: #a78bfa; }
-
-        .comparison-table td {
-            padding: 0.8rem 1.2rem;
+        .comparison-table td { padding: 0.8rem 1.2rem;
             border-bottom: 1px solid rgba(255,255,255,0.05);
             color: var(--text-secondary);
-            vertical-align: top;
-        }
-
+            vertical-align: top; }
         .comparison-table tr:last-child td { border-bottom: none; }
         .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
         .comparison-table td.feature { color: var(--text-primary); font-weight: 600; font-size: 0.9rem; }
-
         .badge-ad { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(0,120,215,0.15); color: #4ca3ff; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
         .badge-entra { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(120,80,200,0.15); color: #a78bfa; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
         .badge-both { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(16,185,129,0.15); color: #10B981; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
         .badge-risk { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(255,61,61,0.15); color: #FF3D3D; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
         .badge-tie { display: inline-block; padding: 0.15rem 0.5rem; background: rgba(255,165,0,0.15); color: #FFA500; border-radius: 4px; font-size: 0.75rem; font-weight: 700; }
-
         /* Score cards */
-        .score-grid {
-            display: grid;
+        .score-grid { display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .score-card {
-            background: rgba(255,255,255,0.03);
+            margin: 2rem 0; }
+        .score-card { background: rgba(255,255,255,0.03);
             border: 1px solid var(--border);
             border-radius: 10px;
-            padding: 1.5rem;
-        }
-
+            padding: 1.5rem; }
         .score-card.ad-card { border-top: 3px solid #4ca3ff; }
         .score-card.entra-card { border-top: 3px solid #a78bfa; }
-
-        .score-card .os-label {
-            font-size: 0.8rem;
+        .score-card .os-label { font-size: 0.8rem;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin-bottom: 0.75rem;
-        }
-
+            margin-bottom: 0.75rem; }
         .score-card.ad-card .os-label { color: #4ca3ff; }
         .score-card.entra-card .os-label { color: #a78bfa; }
         .score-card h4 { color: var(--text-primary); font-size: 1.05rem; margin: 0 0 0.75rem; }
-
-        .score-metric {
-            display: flex;
+        .score-metric { display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0.4rem 0;
             border-bottom: 1px solid rgba(255,255,255,0.04);
-            font-size: 0.9rem;
-        }
-
+            font-size: 0.9rem; }
         .score-metric:last-child { border-bottom: none; }
         .score-metric .label { color: var(--text-secondary); }
         .score-metric .value { font-weight: 700; font-size: 0.85rem; padding: 0.15rem 0.5rem; border-radius: 4px; }
         .score-high { background: rgba(16,185,129,0.15); color: #10B981; }
         .score-medium { background: rgba(255,165,0,0.15); color: #FFA500; }
         .score-low { background: rgba(255,61,61,0.15); color: #FF3D3D; }
-
         /* TOC */
-        .toc {
-            background: var(--bg-card);
+        .toc { background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .toc h3 { margin-top: 0; color: var(--accent-cyan); }
-        .toc ul { list-style: none; margin-left: 0; }
-        .toc li { margin-bottom: 0.5rem; }
-        .toc a { color: var(--text-secondary); text-decoration: none; border-bottom: none; }
-        .toc a:hover { color: var(--accent-cyan); }
-
+            margin: 2rem 0; }
         /* Confidence/TLP badges */
-        .tlp-badge {
-            display: inline-flex; align-items: center; gap: 0.4rem;
+        .tlp-badge { display: inline-flex; align-items: center; gap: 0.4rem;
             padding: 0.3rem 0.8rem; border-radius: 4px; font-size: 0.75rem;
-            font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-        }
-
+            font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
         .tlp-clear { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
-
-        .confidence-badge {
-            display: inline-flex; align-items: center; gap: 0.4rem;
+        .confidence-badge { display: inline-flex; align-items: center; gap: 0.4rem;
             padding: 0.3rem 0.8rem; background: rgba(16,185,129,0.15);
             color: #10B981; border: 1px solid rgba(16,185,129,0.3);
             border-radius: 4px; font-size: 0.75rem; font-weight: 700;
-            letter-spacing: 1px; text-transform: uppercase;
-        }
-
+            letter-spacing: 1px; text-transform: uppercase; }
         /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(255,61,61,0.08));
+        .cta-section { background: linear-gradient(135deg, rgba(0,217,255,0.08), rgba(255,61,61,0.08));
             border: 1px solid rgba(0,217,255,0.2);
             border-radius: 16px;
             padding: 2.5rem;
             margin: 3rem 0;
-            text-align: center;
-        }
-
+            text-align: center; }
         .cta-section h2 { border-top: none !important; border-bottom: none !important; margin-bottom: 1rem !important; }
         .cta-buttons { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.5rem; }
-
-        .cta-btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
+        .cta-btn { display: inline-flex; align-items: center; gap: 0.5rem;
             padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.95rem;
             font-weight: 600; text-decoration: none !important;
-            border-bottom: none !important; transition: all 0.3s;
-        }
-
+            border-bottom: none !important; transition: all 0.3s; }
         .cta-btn-primary { background: var(--accent-cyan); color: #000; }
         .cta-btn-primary:hover { background: #00b8d9; transform: translateY(-2px); }
         .cta-btn-secondary { background: transparent; color: var(--accent-cyan); border: 1px solid var(--accent-cyan) !important; }
         .cta-btn-secondary:hover { background: rgba(0,217,255,0.1); transform: translateY(-2px); }
-
         /* Skill cards */
-        .skill-grid {
-            display: grid;
+        .skill-grid { display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .skill-card {
-            background: rgba(255,255,255,0.03);
+            margin: 2rem 0; }
+        .skill-card { background: rgba(255,255,255,0.03);
             border: 1px solid var(--border);
             border-radius: 10px;
             padding: 1.5rem;
-            transition: border-color 0.3s, transform 0.2s;
-        }
-
+            transition: border-color 0.3s, transform 0.2s; }
         .skill-card:hover { border-color: rgba(0,217,255,0.3); transform: translateY(-2px); }
         .skill-card .skill-icon { font-size: 1.8rem; margin-bottom: 0.75rem; }
         .skill-card h4 { color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1rem; }
         .skill-card p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
-
-        .phase-card {
-            background: rgba(255,255,255,0.03);
+        .phase-card { background: rgba(255,255,255,0.03);
             border: 1px solid var(--border);
             border-left: 4px solid var(--accent-cyan);
             border-radius: 8px;
             padding: 1.25rem 1.5rem;
-            margin-bottom: 1rem;
-        }
-
+            margin-bottom: 1rem; }
         .phase-card h4 { margin: 0 0 0.5rem; color: var(--accent-cyan); font-size: 1rem; }
         .phase-card p { margin: 0; font-size: 0.95rem; }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.8rem; }
-            .container { padding: 1rem; }
-            .score-grid { grid-template-columns: 1fr; }
-            .skill-grid { grid-template-columns: 1fr; }
-        }
+        .score-grid { grid-template-columns: 1fr; }
+        .skill-grid { grid-template-columns: 1fr; }
     </style>
-
-    <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-    <link rel="stylesheet" href="../mobile-nav.css">
-    
-    
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift",
-        "description": "A deep-dive security engineer\\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "1. Introduction: The Death of the Perimeter", "text": "Refer to the section '1. Introduction: The Death of the Perimeter' in the guide."},
-        {"@type": "HowToStep", "name": "2. Core Architecture &amp; Protocol Deep-Dive", "text": "Refer to the section '2. Core Architecture &amp; Protocol Deep-Dive' in the guide."},
-        {"@type": "HowToStep", "name": "3. Shared Responsibility &amp; Vendor Control", "text": "Refer to the section '3. Shared Responsibility &amp; Vendor Control' in the guide."},
-        {"@type": "HowToStep", "name": "4. What Entra ID Gets Right: The Security Wins", "text": "Refer to the section '4. What Entra ID Gets Right: The Security Wins' in the guide."},
-        {"@type": "HowToStep", "name": "5. Attack Surface Comparison: AD vs Entra ID", "text": "Refer to the section '5. Attack Surface Comparison: AD vs Entra ID' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "Active Directory vs Azure AD (Entra ID) Secur\u2026", "item": "https://thehgtech.com/guides/active-directory-vs-entra-id-security-2026.html"}
-        ]
-      }
-    ]
-    </script>
 </head>
 
-<body>
+<body class="guides-editorial guide-monograph-page">
+    <script>
+        if (document.documentElement.getAttribute("data-theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    </script>
 
+    <!-- Accessible Skip Link -->
+    <a href="#edMonographArticle" class="ed-skip-link">Skip to guide content</a>
 
-    <!-- Fullscreen Mobile Menu -->
-    
+    <!-- Top Reading Progress Hairline -->
+    <div class="ed-progress-track" aria-hidden="true">
+        <div class="ed-progress-bar" id="edReadingProgress"></div>
     </div>
 
-    <!-- Desktop Header -->
-    
+<!-- SITE-HEADER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL SITE HEADER COMPONENT
+     Single Source of Truth for Mobile Header, Mobile Menu Overlay,
+     Search Overlay, and Desktop Header Navigation.
+     Reference Standard: CVE Tracker / Apple HIG Modern Standard
+     Project Marker: HG-THREAT-INTEL-V1
+     ========================================================================== -->
 
-</div>
-
-    
-
+<!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
         <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <!-- Search triggers Command Palette -->
         <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" aria-hidden="true"></i>
         </button>
-        <!-- Hamburger Menu Toggle -->
         <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
     </div>
 </header>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<!-- Fullscreen Mobile Menu Overlay -->
 <div class="m-menu-overlay m-only" id="m-menu-overlay">
     <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
         <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
     </div>
     <div class="m-menu-content">
         <div class="m-menu-section">
             <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Settings</div>
             <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
             </button>
         </div>
     </div>
 </div>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
     </div>
+    <div class="m-search-overlay__results"></div>
+</div>
 
+<!-- Desktop Header -->
 <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Security automation templates</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tools Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </button>
-        </div>
-    </header>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
 
-    <div class="container">
-        <!-- Back Link -->
-        <a href="/guides/" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none; border-bottom: none;">
-            <i class="fas fa-arrow-left"></i> Back to Guides
-        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
 
-        <div class="guide-header">
-            <span class="guide-badge"><i class="fas fa-id-card"></i> Identity &amp; Access Management</span>
-            <h1>Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift</h1>
-            <div style="font-size: 0.9rem; color: var(--accent-cyan); margin-bottom: 1.5rem;"><i class="fas fa-calendar-check"></i> <strong>Last updated:</strong> May 2026</div>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">How security controls move from the Enterprise Admin to the Cloud Provider. A deep-dive into the architectural shift, new attack surfaces, Entra ID hardening, migration playbook, and the skills every Security Engineer needs now.</p>
-            <div style="margin-top: 1rem; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 1.5rem;">
-                <span><i class="fas fa-book-open"></i> 38 min read</span>
-                <span>|</span>
-                <span><i class="fas fa-crosshairs"></i> Intermediate to Advanced</span>
-                <span>|</span>
-                <span><i class="far fa-calendar-alt"></i> May 2026</span>
-                <span>|</span>
-                <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
+    <main class="ed-shell">
+        <!-- MONOGRAPH HEADER & READER COMFORT CONTROLS -->
+        <header class="ed-monograph-header">
+            <div class="ed-breadcrumb-nav">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ed-breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li aria-current="page">Identity & Access Management</li>
+                    </ol>
+                </nav>
+
+                <div class="ed-reader-controls" role="group" aria-label="Reading comfort settings">
+                    <button type="button" class="ed-reader-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();" title="Switch Paper / Obsidian Theme" aria-label="Switch reading theme">
+                        <i class="fas fa-adjust" aria-hidden="true"></i> <span>Surface</span>
+                    </button>
+                    <span class="ed-reader-divider" aria-hidden="true"></span>
+                    <button type="button" class="ed-reader-btn" data-scale="compact" onclick="setReaderScale('compact')" title="Compact type size" aria-label="Compact font size">A-</button>
+                    <button type="button" class="ed-reader-btn active" data-scale="default" onclick="setReaderScale('default')" title="Standard type size" aria-label="Default font size">A</button>
+                    <button type="button" class="ed-reader-btn" data-scale="large" onclick="setReaderScale('large')" title="Large type size" aria-label="Large font size">A+</button>
+                </div>
             </div>
-        </div>
+
+            <div class="ed-monograph-kicker-row">
+                <span class="ed-domain-tag">Identity & Access Management</span>
+                <span class="ed-doc-id">MONOGRAPH // FIELD MANUAL · TLP:CLEAR · RESEARCH-GRADE</span>
+            </div>
+
+            <h1 class="ed-monograph-title">Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift</h1>
+            <p class="ed-monograph-standfirst">How security controls move from the Enterprise Admin to the Cloud Provider, the real risk of single points of failure, and the ultimate migration playbook for 2026.</p>
+
+            <div class="ed-byline-ledger" role="region" aria-label="Document Metadata">
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Author</span>
+                    <span class="ed-byline-val"><a href="/about.html#harish" rel="author">Harish G</a> · Principal Architect</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Published / Updated</span>
+                    <span class="ed-byline-val"><time datetime="2026-05-01">May 27, 2026</time></span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Reading Time</span>
+                    <span class="ed-byline-val">35 min</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Audience &amp; Depth</span>
+                    <span class="ed-byline-val">Intermediate to Advanced · Practice Playbook</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURED TECHNICAL FIGURE -->
+        <figure class="ed-monograph-figure">
+            <img src="/images/guides/ad_vs_entra_architecture.png"
+                 alt="Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift — Enterprise Security Architecture &amp; Implementation"
+                 width="1200" height="630" loading="eager">
+            <figcaption class="ed-monograph-figcaption">
+                <span><strong>FIG. 01</strong> // Technical architecture &amp; security implementation: Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift.</span>
+                <span>SOURCE: THEHGTECH ARCHITECTURE LAB</span>
+            </figcaption>
+        </figure>
+
+        <!-- MOBILE COLLAPSIBLE TABLE OF CONTENTS -->
+        <details class="ed-mobile-toc">
+            <summary>
+                <span><i class="fas fa-list-ul" aria-hidden="true"></i> Monograph Contents (18 Sections)</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </summary>
+            <div class="ed-mobile-toc-body">
+                <ul class="ed-toc-list">
+                    <li><a href="#paradigm">1. Introduction: The Death of the Perimeter</a></li>
+                    <li><a href="#architecture">2. Core Architecture & Protocol Deep-Dive</a></li>
+                    <li><a href="#shared-responsibility">3. Shared Responsibility & Vendor Control</a></li>
+                    <li><a href="#entra-wins">4. What Entra ID Gets Right: The Security Wins</a></li>
+                    <li><a href="#attack-surface">5. Attack Surface Comparison: AD vs Entra ID</a></li>
+                    <li><a href="#controls">6. Granular Controls: From GPOs to Conditional Access (Deep Dive)</a></li>
+                    <li><a href="#cia-triad">7. The CIA Triad Impact & The Outage Problem</a></li>
+                    <li><a href="#attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</a></li>
+                    <li><a href="#breach-scenarios">9. Real-World Breach Scenarios</a></li>
+                    <li><a href="#monitoring">10. Security Tools & Monitoring Reality</a></li>
+                    <li><a href="#migration">11. Migration Security Playbook</a></li>
+                    <li><a href="#cis">12. CIS Benchmarks: Gap Analysis for AD & Entra ID</a></li>
+                    <li><a href="#hardening">13. Azure AD (Entra ID) Security Hardening Checklist</a></li>
+                    <li><a href="#upskill">14. How to Adapt & Upskill as a Security Engineer</a></li>
+                    <li><a href="#decision">15. Decision Framework: Stay with AD or Move to Azure AD (Entra ID)?</a></li>
+                    <li><a href="#future">16. Future Outlook 2027–2028</a></li>
+                    <li><a href="#faq">17. Frequently Asked Questions (FAQ)</a></li>
+                    <li><a href="#continue-your-identity-security-journey">Continue Your Identity Security Journey</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 3-ZONE EDITORIAL MONOGRAPH WORKSPACE -->
+        <div class="ed-monograph-grid">
+            <!-- ZONE 1: STICKY TABLE OF CONTENTS RAIL -->
+            <aside class="ed-toc-rail" aria-label="Table of Contents">
+                <div class="ed-toc-heading">
+                    <span>Contents</span>
+                    <span id="edTocPercent">0%</span>
+                </div>
+                <nav aria-label="Guide sections">
+                    <ul class="ed-toc-list" id="edDesktopToc">
+                        <li><a href="#paradigm">1. Introduction: The Death of the Perimeter</a></li>
+                        <li><a href="#architecture">2. Core Architecture & Protocol Deep-Dive</a></li>
+                        <li><a href="#shared-responsibility">3. Shared Responsibility & Vendor Control</a></li>
+                        <li><a href="#entra-wins">4. What Entra ID Gets Right: The Security Wins</a></li>
+                        <li><a href="#attack-surface">5. Attack Surface Comparison: AD vs Entra ID</a></li>
+                        <li><a href="#controls">6. Granular Controls: From GPOs to Conditional Access (Deep Dive)</a></li>
+                        <li><a href="#cia-triad">7. The CIA Triad Impact & The Outage Problem</a></li>
+                        <li><a href="#attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</a></li>
+                        <li><a href="#breach-scenarios">9. Real-World Breach Scenarios</a></li>
+                        <li><a href="#monitoring">10. Security Tools & Monitoring Reality</a></li>
+                        <li><a href="#migration">11. Migration Security Playbook</a></li>
+                        <li><a href="#cis">12. CIS Benchmarks: Gap Analysis for AD & Entra ID</a></li>
+                        <li><a href="#hardening">13. Azure AD (Entra ID) Security Hardening Checklist</a></li>
+                        <li><a href="#upskill">14. How to Adapt & Upskill as a Security Engineer</a></li>
+                        <li><a href="#decision">15. Decision Framework: Stay with AD or Move to Azure AD (Entra ID)?</a></li>
+                        <li><a href="#future">16. Future Outlook 2027–2028</a></li>
+                        <li><a href="#faq">17. Frequently Asked Questions (FAQ)</a></li>
+                        <li><a href="#continue-your-identity-security-journey">Continue Your Identity Security Journey</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ZONE 2: OPTIMAL 68ch LONG-FORM TECHNICAL PROSE -->
+            <article id="edMonographArticle" class="ed-prose-column">
+<!-- Back Link -->
+        
+
+        
 
         <!-- Hero Image -->
-        <img src="/images/guides/ad_vs_entra_architecture.webp"
-             alt="Architectural comparison illustration showing on-premises Active Directory infrastructure on the left versus Azure AD (now Microsoft Entra ID) cloud zero-trust architecture on the right"
-             class="featured-image"
-             style="width: 100%; object-fit: cover; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,217,255,0.2);"
-             loading="eager">
+        
 
         <!-- BLUF -->
         <div class="info-box">
@@ -911,37 +851,10 @@
         </div>
 
         <!-- Table of Contents -->
-                <div class="toc">
-            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
-            <ul>
-                <li><a href="#paradigm">1. Introduction: The Death of the Perimeter</a></li>
-                <li><a href="#architecture">2. Core Architecture &amp; Protocol Deep-Dive</a>
-                    <ul style="margin-top: 0.4rem;">
-                        <li><a href="#ad-arch">2.1 On-Premises Active Directory Architecture</a></li>
-                        <li><a href="#entra-arch">2.2 Microsoft Entra ID Architecture</a></li>
-                        <li><a href="#protocol-compare">2.3 Protocol Comparison Table</a></li>
-                    </ul>
-                </li>
-                <li><a href="#shared-responsibility">3. Shared Responsibility &amp; Vendor Control</a></li>
-                <li><a href="#entra-wins">4. What Entra ID Gets Right: The Security Wins</a></li>
-                <li><a href="#attack-surface">5. Attack Surface Comparison: AD vs Entra ID</a></li>
-                <li><a href="#controls">6. Granular Controls: GPOs to Conditional Access (Deep Dive)</a></li>
-                <li><a href="#cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</a></li>
-                <li><a href="#attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</a></li>
-                <li><a href="#breach-scenarios">9. Real-World Breach Scenarios</a></li>
-                <li><a href="#monitoring">10. Security Tools &amp; Monitoring Reality</a></li>
-                <li><a href="#migration">11. Migration Security Playbook</a></li>
-                <li><a href="#cis">12. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</a></li>
-                <li><a href="#hardening">13. Azure AD (Entra ID) Security Hardening Checklist</a></li>
-                <li><a href="#upskill">14. How to Adapt &amp; Upskill as a Security Engineer</a></li>
-                <li><a href="#decision">15. Decision Framework: Stay with AD or Move to Azure AD?</a></li>
-                <li><a href="#future">16. Future Outlook 2027–2028</a></li>
-                <li><a href="#faq">17. Frequently Asked Questions (FAQ)</a></li>
-            </ul>
-        </div>
+                
 
         <!-- ===== SECTION 1 ===== -->
-        <h2 id="paradigm">1. Introduction: The Death of the Perimeter</h2>
+        <h2  id="paradigm">1. Introduction: The Death of the Perimeter</h2>
 
         <img src="/images/guides/identity_perimeter_concept.webp"
              alt="Conceptual illustration showing a crumbling brick wall (the network perimeter) replaced by glowing zero-trust authentication nodes protecting a remote worker"
@@ -957,7 +870,7 @@
         </div>
 
         <!-- ===== SECTION 2 ===== -->
-        <h2 id="architecture">2. Core Architecture &amp; Protocol Deep-Dive</h2>
+        <h2  id="architecture">2. Core Architecture &amp; Protocol Deep-Dive</h2>
 
         <h3 id="ad-arch">2.1 On-Premises Active Directory Architecture</h3>
 
@@ -1065,7 +978,7 @@
         </div>
 
         <!-- ===== SECTION 3 ===== -->
-        <h2 id="shared-responsibility">3. Shared Responsibility &amp; Vendor Control</h2>
+        <h2  id="shared-responsibility">3. Shared Responsibility &amp; Vendor Control</h2>
 
         <p>This is where the mental model shift is most pronounced, and most dangerous if misunderstood. When you run on-premises AD, <strong>you own everything</strong>. Every patch, every server, every backup, every replication failure — the responsibility, and the control, is yours.</p>
 
@@ -1100,7 +1013,7 @@
         </div>
 
         <!-- ===== SECTION 4: What Entra ID Gets Right ===== -->
-        <h2 id="entra-wins">4. What Entra ID Gets Right: The Security Wins</h2>
+        <h2  id="entra-wins">4. What Entra ID Gets Right: The Security Wins</h2>
 
         <p>A balanced assessment requires acknowledging what Entra ID fundamentally solves that on-prem AD never could. For most enterprise environments, migrating to Entra ID <em>raises</em> the security baseline — but only if the transition is executed correctly.</p>
 
@@ -1118,7 +1031,7 @@
         </div>
 
         <!-- ===== SECTION 5: Attack Surface Comparison ===== -->
-        <h2 id="attack-surface">5. Attack Surface Comparison: AD vs Entra ID</h2>
+        <h2  id="attack-surface">5. Attack Surface Comparison: AD vs Entra ID</h2>
 
         <p>The attack surface does not disappear with Entra ID — it transforms. Understanding this transformation is the most critical mental model shift for any Security Engineer.</p>
 
@@ -1192,7 +1105,7 @@
         </div>
 
         <!-- ===== SECTION 6 ===== -->
-        <h2 id="controls">6. Granular Controls: From GPOs to Conditional Access (Deep Dive)</h2>
+        <h2  id="controls">6. Granular Controls: From GPOs to Conditional Access (Deep Dive)</h2>
 
         <p>Group Policy Objects gave administrators enormous, low-level control. A GPO can configure 4,000+ settings — from disabling USB ports to setting the NTP server. This granularity is gone in Entra ID's native cloud model.</p>
 
@@ -1306,7 +1219,7 @@
         </div>
 
         <!-- ===== SECTION 7 ===== -->
-        <h2 id="cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</h2>
+        <h2  id="cia-triad">7. The CIA Triad Impact &amp; The Outage Problem</h2>
 
         <p>The CIA Triad — Confidentiality, Integrity, and Availability — is the foundational security model. Moving to Entra ID shifts the threat profile for all three pillars dramatically.</p>
 
@@ -1369,7 +1282,7 @@
         <p>Attackers who have compromised a cloud identity no longer need to move laterally through networks. They move laterally through permissions. Compromising a user with SharePoint Admin grants immediate read/write access to every SharePoint site. Compromising an Application Administrator allows the attacker to add credentials to any App Registration, creating a persistent backdoor that survives password resets.</p>
 
         <!-- ===== SECTION 8 ===== -->
-        <h2 id="attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</h2>
+        <h2  id="attack-vectors">8. New Attack Vectors in the Cloud Identity Plane</h2>
 
         <div class="exploit-box">
             <span class="exploit-label"><i class="fas fa-exclamation-triangle"></i> Attack Vector 1: Consent Phishing</span>
@@ -1397,7 +1310,7 @@
 
         <!-- ===== SECTION 7 ===== -->
                 <!-- ===== SECTION 9 ===== -->
-        <h2 id="breach-scenarios">9. Real-World Breach Scenarios</h2>
+        <h2  id="breach-scenarios">9. Real-World Breach Scenarios</h2>
 
         <p>The theoretical attack vectors above are being executed daily by nation-states and ransomware syndicates. Here is how modern attackers operationalize these vectors against Azure AD (Microsoft Entra ID) environments, and how you must defend against them.</p>
 
@@ -1434,7 +1347,7 @@
         </div>
 
         <!-- ===== SECTION 10 ===== -->
-        <h2 id="monitoring">10. Security Tools &amp; Monitoring Reality</h2>
+        <h2  id="monitoring">10. Security Tools &amp; Monitoring Reality</h2>
 
         <img src="/images/guides/entra_id_cloud_dashboard.webp"
              alt="A SOC analyst at multiple monitors displaying Entra ID sign-in logs, identity threat detection graphs, and cloud security analytics"
@@ -1516,7 +1429,7 @@
 | where count_ > 3</code></pre>
 
         <!-- ===== SECTION 8 ===== -->
-        <h2 id="migration">11. Migration Security Playbook</h2>
+        <h2  id="migration">11. Migration Security Playbook</h2>
 
         <p>A secure migration is a phased migration. Organizations that attempt to cut over all at once consistently introduce critical misconfigurations that take months to identify. The following five-phase approach is designed to harden at each step before advancing. Each phase includes explicit <strong>security gate criteria</strong> — do not proceed to the next phase until all gates are passed.</p>
 
@@ -1594,7 +1507,7 @@
 
         <!-- ===== SECTION 9 ===== -->
         <!-- ===== CIS BENCHMARKS ===== -->
-        <h2 id="cis">12. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</h2>
+        <h2  id="cis">12. CIS Benchmarks: Gap Analysis for AD &amp; Entra ID</h2>
 
         <p>The Center for Internet Security (CIS) publishes authoritative benchmarks for both Active Directory environments and Microsoft 365 / Entra ID. Running these benchmarks against your environment gives you a scored, prioritized gap analysis.</p>
 
@@ -1725,7 +1638,7 @@
             <li><strong>For M365 posture scoring:</strong> Microsoft Secure Score in the Defender portal maps directly to many CIS M365 controls. Track your score trend over time as a management-level identity security metric.</li>
         </ul>
 
-        <h2 id="hardening">13. Azure AD (Entra ID) Security Hardening Checklist</h2>
+        <h2  id="hardening">13. Azure AD (Entra ID) Security Hardening Checklist</h2>
 
         <div class="success-box">
             <strong><i class="fas fa-check-double"></i> Entra ID Security Baseline — Priority Controls</strong>
@@ -1748,7 +1661,7 @@
         </div>
 
         <!-- ===== SECTION 10 ===== -->
-        <h2 id="upskill">14. How to Adapt &amp; Upskill as a Security Engineer</h2>
+        <h2  id="upskill">14. How to Adapt &amp; Upskill as a Security Engineer</h2>
 
         <p>The single most important career shift for any security professional working in an enterprise environment today is moving from <strong>infrastructure-centric skills</strong> to <strong>identity-centric skills</strong>. Here is the exact learning path and toolset you need to master.</p>
 
@@ -1845,7 +1758,7 @@
         </ul>
 
         <!-- ===== SECTION 11 ===== -->
-        <h2 id="decision">15. Decision Framework: Stay with AD or Move to Azure AD (Entra ID)?</h2>
+        <h2  id="decision">15. Decision Framework: Stay with AD or Move to Azure AD (Entra ID)?</h2>
 
         <div class="comparison-table-wrapper">
             <table class="comparison-table">
@@ -1887,7 +1800,7 @@
         </div>
 
         <!-- ===== SECTION 12 ===== -->
-        <h2 id="future">16. Future Outlook 2027–2028</h2>
+        <h2  id="future">16. Future Outlook 2027–2028</h2>
 
         <ul>
             <li><strong>NTLM End of Life:</strong> Microsoft has confirmed it is progressively retiring NTLM authentication. By 2027, expect NTLM to be disabled by default in Windows Server 2025+. All legacy NTLM dependencies must be migrated to Kerberos or OAuth before this deadline.</li>
@@ -1900,7 +1813,7 @@
         <!-- CTA -->
         <div class="cta-section">
                     <!-- ===== SECTION 17: FAQ ===== -->
-        <h2 id="faq">17. Frequently Asked Questions (FAQ)</h2>
+        <h2  id="faq">17. Frequently Asked Questions (FAQ)</h2>
 
         <div class="faq-container" style="margin-bottom: 2rem;">
             <div class="faq-item" style="background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem;">
@@ -1984,7 +1897,7 @@
         }
         </script>
 
-        <h2><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
+        <h2 id="continue-your-identity-security-journey"><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
             <p style="color: var(--text-secondary);">Now that you understand the architectural shift, dive into the practical tools and frameworks that will help you secure, monitor, and manage an Entra ID-first environment.</p>
             <div class="cta-buttons">
                 <a href="/guides/passkeys-fido2-passwordless-authentication.html" class="cta-btn cta-btn-primary"><i class="fas fa-key"></i> Passkeys &amp; FIDO2 Guide</a>
@@ -2011,22 +1924,199 @@
 
     <script src="../mobile-nav.js" defer></script>
 
-    <div class="interaction-bar">
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-            </button>
+                <aside class="ed-author-card" aria-label="Author Profile">
+                    <img src="/images/about-harish-hero.webp" alt="Harish G" class="ed-author-avatar" width="72" height="72" loading="lazy">
+                    <div class="ed-author-details">
+                        <h3><a href="/about.html#harish">Harish G</a></h3>
+                        <span class="ed-author-role">Founder &amp; Principal Security Architect · TheHGTech</span>
+                        <p>Security practitioner specializing in enterprise architecture, detection engineering, endpoint telemetry optimization, and AI-driven security operations.</p>
+                    </div>
+                </aside>
+
+                <div class="interaction-bar" style="margin-top: 2rem;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                            <i class="far fa-heart" aria-hidden="true"></i> <span id="likeText">Like this guide</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <div class="share-buttons">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on X/Twitter" aria-label="Share on X/Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="button-separator"></div>
+                        <button onclick="window.print()" class="print-btn" title="Print Guide" aria-label="Print Guide"><i class="fas fa-print" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ZONE 3: RIGHT MARGINALIA & CONTEXT RAIL -->
+            <aside class="ed-marginalia-rail" aria-label="Key Takeaways and Related Resources">
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Practitioner Dossier</h2>
+                    <ul class="ed-rail-list">
+                        <li><strong>Key Finding:</strong> BLUF (Bottom Line Up Front): Moving from on-premises Active Directory to Microsoft Entra ID is a fundamental inversion of the security responsibility model — and it is largely the right direction for most modern enterprises.</li>
+                        <li><strong>Core Challenge:</strong> Entra ID eliminates entire classes of on-prem attack vectors (Kerberoasting, Golden Ticket, DCSync), delivers Just-in-Time privileged access, and provides globally-distributed, always-updated authentication infrastructure you could never afford to build yourself.</li>
+                        <li><strong>Architecture Focus:</strong> Hardened enterprise baseline implementation for identity & access management workflows.</li>
+                    </ul>
+                </div>
+
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Related Monographs &amp; Tools</h2>
+                    <nav aria-label="Related resources">
+                        <a href="/guides/oauth-security-attacks-defense-2026.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Companion Guide // Identity & Access Management</span>
+                            <span class="ed-rail-link-name">OAuth Security in 2026: How Attackers Exploit the Protocol You Trust</span>
+                        </a>
+                        <a href="/guides/passkeys-fido2-passwordless-authentication.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Technical Guide // Identity & Access Management</span>
+                            <span class="ed-rail-link-name">Passkeys & FIDO2: The Enterprise Passwordless Authentication Guide</span>
+                        </a>
+                        <a href="/comparisons/okta-vs-microsoft-entra-id-vs-ping-identity.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Head-to-Head Matrix // Comparisons</span>
+                            <span class="ed-rail-link-name">Okta vs. Microsoft Entra ID vs. Ping Identity</span>
+                        </a>
+                        <a href="/cve-tracker.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Live Workbench // Intelligence</span>
+                            <span class="ed-rail-link-name">CISA KEV & Zero-Day Vulnerability Tracker</span>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
         </div>
-        <div class="action-buttons">
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+    </main>
+
+<!-- ========== APPROVED BRAND FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
+                    <p class="footer-desc">Independent security research, practitioner field manuals, and live vulnerability intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/articles.html">Articles</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html#harish">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="mailto:harish@thehgtech.com">Contact Editorial</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="button-separator"></div>
-            <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+
+            <div class="footer-bottom">
+                &copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        // Reader Font Size Comfort Controls
+        function setReaderScale(scale) {
+            if (scale === "default") {
+                document.body.removeAttribute("data-reader-scale");
+                localStorage.removeItem("hg_reader_scale");
+            } else {
+                document.body.setAttribute("data-reader-scale", scale);
+                localStorage.setItem("hg_reader_scale", scale);
+            }
+            document.querySelectorAll(".ed-reader-btn[data-scale]").forEach(function(btn) {
+                btn.classList.toggle("active", btn.getAttribute("data-scale") === scale);
+            });
+        }
+
+        (function initMonographReader() {
+            var savedScale = localStorage.getItem("hg_reader_scale");
+            if (savedScale === "compact" || savedScale === "large") {
+                setReaderScale(savedScale);
+            }
+
+            var article = document.getElementById("edMonographArticle");
+            var progressBar = document.getElementById("edReadingProgress");
+            var tocPercent = document.getElementById("edTocPercent");
+            var tocLinks = Array.from(document.querySelectorAll("#edDesktopToc a"));
+            var headings = tocLinks.map(function(link) {
+                var id = link.getAttribute("href").replace("#", "");
+                return document.getElementById(id);
+            }).filter(Boolean);
+
+            function updateReadingProgress() {
+                if (!article) return;
+                var rect = article.getBoundingClientRect();
+                var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                var totalScrollable = Math.max(1, article.offsetHeight - viewportHeight * 0.5);
+                var scrolled = Math.min(Math.max(0, -rect.top + viewportHeight * 0.2), totalScrollable);
+                var pct = Math.round((scrolled / totalScrollable) * 100);
+                if (progressBar) progressBar.style.width = pct + "%";
+                if (tocPercent) tocPercent.textContent = pct + "%";
+
+                var activeHeading = headings[0];
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= 140) {
+                        activeHeading = headings[i];
+                    }
+                }
+                if (activeHeading) {
+                    var activeId = "#" + activeHeading.id;
+                    tocLinks.forEach(function(link) {
+                        if (link.getAttribute("href") === activeId) {
+                            link.setAttribute("aria-current", "true");
+                        } else {
+                            link.removeAttribute("aria-current");
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+        })();
+    </script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+
 </body>
 </html>

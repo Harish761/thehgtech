@@ -1,380 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <title>Incident Response Automation: SOAR Playbook Templates [2025] | TheHGTech</title>
-
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="title" content="Incident Response Automation: SOAR Playbook Templates [2025]">
-    
-    <meta name="description"
-        content="⚡ Automate IR with SOAR playbooks. Phishing, malware & ransomware response automation. 10+ playbook templates + Python scripts included. Reduce MTTR by 80%.">
-    <meta name="keywords"
-        content="incident response automation, SOAR, security orchestration, automated response, incident automation, security automation, playbook automation, IR workflows">
-    <meta name="author" content="TheHGTech">
-    <meta name="robots" content="index, follow">
+    <title>Incident Response Automation | TheHGTech</title>
+    <meta name="description" content="Automate incident response with SOAR playbooks. Triage, enrichment, containment, and remediation workflows.">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://thehgtech.com/guides/incident-response-automation.html">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/guides/incident-response-automation.html">
-    <meta property="og:title" content="Incident Response Automation: SOAR Playbook Templates [2025]">
-    <meta property="og:description"
-        content="Automate IR with SOAR playbooks. Reduce response time from hours to minutes.">
-    <meta property="og:image" content="https://thehgtech.com/images/guides-og.jpg">
+    <meta property="og:title" content="Incident Response Automation">
+    <meta property="og:description" content="Automate incident response with SOAR playbooks. Triage, enrichment, containment, and remediation workflows.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/default-guide.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-01T00:00:00+00:00">
+    <meta property="article:author" content="https://thehgtech.com/about.html#harish">
+    <meta property="article:section" content="Security Operations">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://thehgtech.com/guides/incident-response-automation.html">
-    <meta name="twitter:title" content="Incident Response Automation: SOAR Playbooks [2025]">
-    <meta name="twitter:description" content="10+ SOAR playbook templates for phishing, malware & ransomware.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/automation-twitter.jpg">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:creator" content="@TheHGTech">
+    <meta name="twitter:title" content="Incident Response Automation">
+    <meta name="twitter:description" content="Automate incident response with SOAR playbooks. Triage, enrichment, containment, and remediation workflows.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/guides/default-guide.png">
 
-    <!-- FAQ Schema for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is SOAR in cybersecurity?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SOAR (Security Orchestration, Automation, and Response) platforms automate incident response workflows. They integrate with SIEM, EDR, firewalls, and threat intel to execute playbooks automatically. Leading SOAR platforms include Palo Alto Cortex XSOAR, Splunk SOAR, Microsoft Sentinel, and Swimlane."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I automate phishing response?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Automate phishing response by: extracting URLs and attachments from reported emails, querying VirusTotal/URLScan for reputation, blocking malicious URLs on firewall/proxy, quarantining emails from other recipients, and creating a ticket with enriched context. This reduces response from hours to minutes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should I automate first in incident response?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Start automating: 1) Alert enrichment (IOC lookups), 2) Phishing triage (most common alert), 3) User context gathering (who, where, what device), 4) Ticket creation with context, 5) Low-risk containment actions. Save high-risk actions for human approval initially."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does SOAR reduce response time?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "According to IBM, organizations with fully deployed security AI and automation reduced breach containment time by 108 days and saved $1.76 million per breach. Typical SOAR implementations reduce MTTR (Mean Time to Respond) by 80% for automated use cases."
-          }
-        }
-      ]
-    }
-    </script>
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-    <!-- Fonts -->
     <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Site Chrome & Navigation Stylesheets -->
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
     <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="/mobile-nav.css">
 
+    <!-- Isolated Guides Editorial Design System (Technical Monograph & Field Manuals) -->
+    <link rel="stylesheet" href="/css/guides-editorial.css?v=1.0">
+
+    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+
+    <!-- Global Theme Script -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+            }
+        })();
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
+    </script>
+    <!-- Fullres Analytics -->
+    <script>
+        (function () {
+            var fullres = document.createElement("script");
+            fullres.async = true;
+            fullres.src = "https://t.fullres.net/thehgtech.js?" + (new Date() - new Date() % 43200000);
+            document.head.appendChild(fullres);
+        })();
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "Incident Response Automation",
+  "description": "Automate incident response with SOAR playbooks. Triage, enrichment, containment, and remediation workflows.",
+  "image": [
+    "https://thehgtech.com/images/guides/default-guide.png"
+  ],
+  "datePublished": "2026-01-01T00:00:00+00:00",
+  "dateModified": "2026-05-01T00:00:00+00:00",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Harish G",
+      "url": "https://thehgtech.com/about.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/harish-g-2216955b/"
+      ],
+      "@id": "https://thehgtech.com/about.html#harish-g"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "TheHGTech",
+    "url": "https://thehgtech.com",
+    "@id": "https://thehgtech.com/#organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://thehgtech.com/logo-dark.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://thehgtech.com/guides/incident-response-automation.html"
+  },
+  "articleSection": "Security Operations",
+  "keywords": [
+    "Security Operations",
+    "Cybersecurity",
+    "Hardening Guide"
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SOAR in cybersecurity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOAR (Security Orchestration, Automation, and Response) platforms automate incident response workflows. They integrate with SIEM, EDR, firewalls, and threat intel to execute playbooks automatically. Leading SOAR platforms include Palo Alto Cortex XSOAR, Splunk SOAR, Microsoft Sentinel, and Swimlane."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I automate phishing response?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Automate phishing response by: extracting URLs and attachments from reported emails, querying VirusTotal/URLScan for reputation, blocking malicious URLs on firewall/proxy, quarantining emails from other recipients, and creating a ticket with enriched context. This reduces response from hours to minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I automate first in incident response?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start automating: 1) Alert enrichment (IOC lookups), 2) Phishing triage (most common alert), 3) User context gathering (who, where, what device), 4) Ticket creation with context, 5) Low-risk containment actions. Save high-risk actions for human approval initially."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does SOAR reduce response time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to IBM, organizations with fully deployed security AI and automation reduced breach containment time by 108 days and saved $1.76 million per breach. Typical SOAR implementations reduce MTTR (Mean Time to Respond) by 80% for automated use cases."
+      }
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Incident Response Automation: SOAR Playbook Templates [2025]",
+  "description": "\u26a1 Automate IR with SOAR playbooks. Phishing, malware & ransomware response automation. 10+ playbook templates + Python scripts included. Reduce MTTR by 80%.",
+  "totalTime": "PT30M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "The Case for Automation",
+      "text": "Refer to the section 'The Case for Automation' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Automation Workflow Architecture",
+      "text": "Refer to the section 'Automation Workflow Architecture' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "SOAR Platforms: The Enterprise Solution",
+      "text": "Refer to the section 'SOAR Platforms: The Enterprise Solution' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Building Custom Automation with Python",
+      "text": "Refer to the section 'Building Custom Automation with Python' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Advanced Automation Use Cases",
+      "text": "Refer to the section 'Advanced Automation Use Cases' in the guide."
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://thehgtech.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Incident Response Automation",
+      "item": "https://thehgtech.com/guides/incident-response-automation.html"
+    }
+  ]
+}
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-orange: #FF9500;
-            --accent-green: #30D158;
-            --accent-blue: #BF5AF2;
-            --glow-cyan: rgba(0, 217, 255, 0.5);
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666666;
-            --border: rgba(255, 255, 255, 0.1);
-            --glass: rgba(255, 255, 255, 0.05);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            /* font-size removed for fluid typography */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            /* padding removed for fluid typography */
-        }
-
-        /* Page Header */
-        .page-header {
-            padding: 3rem 0;
+/* Page Header */
+        .page-header { padding: 3rem 0;
             text-align: center;
             border-bottom: 1px solid var(--border);
             margin-bottom: 3rem;
-            margin-top: 60px;
-        }
-
-        .breadcrumb {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .breadcrumb a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .breadcrumb a:hover {
-            color: var(--text-primary);
-        }
-
-        .page-header h1 {
-            font-size: 2.5rem;
+            margin-top: 60px; }
+        .page-header h1 { font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 1rem;
             background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .page-meta {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
+            background-clip: text; }
         /* Content */
-        .content {
-            margin-bottom: 4rem;
-        }
-
-        .content h2 {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin: 2.5rem 0 1rem 0;
-            color: var(--accent-cyan);
-        }
-
-        .content h3 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            margin: 2rem 0 1rem 0;
-            color: var(--text-primary);
-        }
-
-        .content p {
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
-
-        .content ul,
-        .content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-            color: var(--text-secondary);
-        }
-
-        .content li {
-            margin-bottom: 0.75rem;
-        }
-
-        .content strong {
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        .content a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-        }
-
-        .content a:hover {
-            text-decoration: underline;
-        }
-
+        .content { margin-bottom: 4rem; }
         /* Alert Boxes */
-        .alert {
-            padding: 1.5rem;
+        .alert { padding: 1.5rem;
             border-radius: 12px;
             margin: 2rem 0;
-            border-left: 4px solid;
-        }
-
-        .alert-info {
-            background: rgba(0, 217, 255, 0.1);
-            border-color: var(--accent-cyan);
-        }
-
-        .alert-success {
-            background: rgba(48, 209, 88, 0.1);
-            border-color: var(--accent-green);
-        }
-
-        .alert-warning {
-            background: rgba(255, 149, 0, 0.1);
-            border-color: var(--accent-orange);
-        }
-
-        .alert-title {
-            font-weight: 700;
+            border-left: 4px solid; }
+        .alert-info { background: rgba(0, 217, 255, 0.1);
+            border-color: var(--accent-cyan); }
+        .alert-success { background: rgba(48, 209, 88, 0.1);
+            border-color: var(--accent-green); }
+        .alert-warning { background: rgba(255, 149, 0, 0.1);
+            border-color: var(--accent-orange); }
+        .alert-title { font-weight: 700;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-        }
-
+            gap: 0.5rem; }
         /* Code Blocks */
-        .code-block {
-            background: var(--bg-secondary);
+        .code-block { background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-radius: 8px;
             padding: 1.5rem;
             margin: 1.5rem 0;
             overflow-x: auto;
-            position: relative;
-        }
-
-        .code-header {
-            display: flex;
+            position: relative; }
+        .code-header { display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .code-lang {
-            color: var(--accent-cyan);
+            border-bottom: 1px solid var(--border); }
+        .code-lang { color: var(--accent-cyan);
             font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .code-block code {
-            font-family: 'Courier New', monospace;
+            font-weight: 600; }
+        .code-block code { font-family: 'Courier New', monospace;
             font-size: 0.9rem;
             color: var(--text-secondary);
             display: block;
-            white-space: pre;
-        }
-
-        .code-block .keyword {
-            color: var(--accent-blue);
-        }
-
-        .code-block .string {
-            color: var(--accent-green);
-        }
-
-        .code-block .comment {
-            color: var(--text-muted);
-            font-style: italic;
-        }
-
+            white-space: pre; }
+        .code-block .keyword { color: var(--accent-blue); }
+        .code-block .string { color: var(--accent-green); }
+        .code-block .comment { color: var(--text-muted);
+            font-style: italic; }
         /* Feature Cards */
-        .feature-grid {
-            display: grid;
+        .feature-grid { display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: var(--glass);
+            margin: 2rem 0; }
+        .feature-card { background: var(--glass);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        .feature-card:hover {
-            background: var(--bg-card);
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-title {
-            font-weight: 700;
+            transition: all 0.3s; }
+        .feature-card:hover { background: var(--bg-card);
+            transform: translateY(-5px); }
+        .feature-icon { font-size: 2rem;
+            margin-bottom: 1rem; }
+        .feature-title { font-weight: 700;
             margin-bottom: 0.5rem;
-            color: var(--accent-cyan);
-        }
-
+            color: var(--accent-cyan); }
         /* Table */
-        table {
-            width: 100%;
+        table { width: 100%;
             border-collapse: collapse;
-            margin: 2rem 0;
-        }
-
-        th,
-        td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background: var(--glass);
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
+            margin: 2rem 0; }
         /* Workflow Diagram */
-        .workflow {
-            display: flex;
+        .workflow { display: flex;
             align-items: center;
             justify-content: space-between;
             margin: 2rem 0;
             /* padding removed for fluid typography */
             background: var(--glass);
             border-radius: 12px;
-            overflow-x: auto;
-        }
-
-        .workflow-step {
-            text-align: center;
+            overflow-x: auto; }
+        .workflow-step { text-align: center;
             flex: 1;
-            min-width: 150px;
-        }
-
-        .workflow-icon {
-            width: 60px;
+            min-width: 150px; }
+        .workflow-icon { width: 60px;
             height: 60px;
             border-radius: 50%;
             background: var(--accent-cyan);
@@ -382,26 +335,17 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto 0.5rem;
+            font-size: 1.5rem; }
+        .workflow-arrow { color: var(--accent-cyan);
             font-size: 1.5rem;
-        }
-
-        .workflow-arrow {
-            color: var(--accent-cyan);
-            font-size: 1.5rem;
-            margin: 0 1rem;
-        }
-
+            margin: 0 1rem; }
         /* Navigation */
-        .guide-nav {
-            display: flex;
+        .guide-nav { display: flex;
             justify-content: space-between;
             padding: 2rem 0;
             border-top: 1px solid var(--border);
-            margin-top: 4rem;
-        }
-
-        .nav-link {
-            display: flex;
+            margin-top: 4rem; }
+        .nav-link { display: flex;
             align-items: center;
             gap: 0.5rem;
             color: var(--accent-cyan);
@@ -409,452 +353,401 @@
             transition: all 0.3s;
             padding: 1rem;
             border-radius: 8px;
-            background: var(--glass);
-        }
-
-        .nav-link:hover {
-            background: var(--bg-card);
-            transform: translateX(5px);
-        }
-
-        .nav-link.prev:hover {
-            transform: translateX(-5px);
-        }
-
-        @media (max-width: 768px) {
-            .page-header h1 {
-                font-size: 2rem;
-            }
-
-            .page-meta {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .content h2 {
-                font-size: 1.5rem;
-            }
-
-            .content h3 {
-                font-size: 1.2rem;
-            }
-
-            .workflow {
-                flex-direction: column;
-            }
-
-            .workflow-arrow {
-                transform: rotate(90deg);
-                margin: 1rem 0;
-            }
-        }
+            background: var(--glass); }
+        .nav-link:hover { background: var(--bg-card);
+            transform: translateX(5px); }
+        .nav-link.prev:hover { transform: translateX(-5px); }
+        .workflow { flex-direction: column; }
+        .workflow-arrow { transform: rotate(90deg);
+                margin: 1rem 0; }
     </style>
-
-    <!-- Mobile Navigation CSS -->
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-
-    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://thehgtech.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://thehgtech.com/guides/"
-      }, {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Incident Response Automation: SOAR Playbook Templates [2025]",
-        "item": "https://thehgtech.com/guides/incident-response-automation.html"
-      }]
-    }
-    </script>
-<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-    <link rel="stylesheet" href="../mobile-nav.css">
-
-    <script src="/theme-toggle.js" defer></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Incident Response Automation: SOAR Playbook Templates [2025] | TheHGTech",
-  "description": "⚡ Automate IR with SOAR playbooks. Phishing, malware & ransomware response automation. 10+ playbook templates + Python scripts included. Reduce MTTR by 80%.",
-  "image": "https://thehgtech.com/images/og-image.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Harish G",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    },
-    "@id": "https://thehgtech.com/#organization"
-  },
-  "datePublished": "2025-01-01",
-  "dateModified": "2026-06-26"
-}
-</script>
-    
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
-    <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Incident Response Automation: SOAR Playbook Templates [2025]",
-        "description": "\u26a1 Automate IR with SOAR playbooks. Phishing, malware & ransomware response automation. 10+ playbook templates + Python scripts included. Reduce MTTR by 80%.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "The Case for Automation", "text": "Refer to the section 'The Case for Automation' in the guide."},
-        {"@type": "HowToStep", "name": "Automation Workflow Architecture", "text": "Refer to the section 'Automation Workflow Architecture' in the guide."},
-        {"@type": "HowToStep", "name": "SOAR Platforms: The Enterprise Solution", "text": "Refer to the section 'SOAR Platforms: The Enterprise Solution' in the guide."},
-        {"@type": "HowToStep", "name": "Building Custom Automation with Python", "text": "Refer to the section 'Building Custom Automation with Python' in the guide."},
-        {"@type": "HowToStep", "name": "Advanced Automation Use Cases", "text": "Refer to the section 'Advanced Automation Use Cases' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "Incident Response Automation: SOAR Playbook T\u2026", "item": "https://thehgtech.com/guides/incident-response-automation.html"}
-        ]
-      }
-    ]
-    </script>
 </head>
 
-<body>
-    <!-- Mobile Header -->
-    <!-- Mobile Header -->
+<body class="guides-editorial guide-monograph-page">
+    <script>
+        if (document.documentElement.getAttribute("data-theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    </script>
 
+    <!-- Accessible Skip Link -->
+    <a href="#edMonographArticle" class="ed-skip-link">Skip to guide content</a>
 
+    <!-- Top Reading Progress Hairline -->
+    <div class="ed-progress-track" aria-hidden="true">
+        <div class="ed-progress-bar" id="edReadingProgress"></div>
+    </div>
 
-</div>
+<!-- SITE-HEADER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL SITE HEADER COMPONENT
+     Single Source of Truth for Mobile Header, Mobile Menu Overlay,
+     Search Overlay, and Desktop Header Navigation.
+     Reference Standard: CVE Tracker / Apple HIG Modern Standard
+     Project Marker: HG-THREAT-INTEL-V1
+     ========================================================================== -->
 
-    
-
-    <!-- Desktop Header -->
-    
-
-</div>
-
-    
-
+<!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
         <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <!-- Search triggers Command Palette -->
         <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" aria-hidden="true"></i>
         </button>
-        <!-- Hamburger Menu Toggle -->
         <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
     </div>
 </header>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<!-- Fullscreen Mobile Menu Overlay -->
 <div class="m-menu-overlay m-only" id="m-menu-overlay">
     <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
         <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
     </div>
     <div class="m-menu-content">
         <div class="m-menu-section">
             <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Settings</div>
             <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
             </button>
         </div>
     </div>
 </div>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
     </div>
+    <div class="m-search-overlay__results"></div>
+</div>
 
+<!-- Desktop Header -->
 <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Security automation templates</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tools Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </button>
-        </div>
-    </header>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
 
-    <!-- Header (from header.js) -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
+
+    <main class="ed-shell">
+        <!-- MONOGRAPH HEADER & READER COMFORT CONTROLS -->
+        <header class="ed-monograph-header">
+            <div class="ed-breadcrumb-nav">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ed-breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li aria-current="page">Security Operations</li>
+                    </ol>
+                </nav>
+
+                <div class="ed-reader-controls" role="group" aria-label="Reading comfort settings">
+                    <button type="button" class="ed-reader-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();" title="Switch Paper / Obsidian Theme" aria-label="Switch reading theme">
+                        <i class="fas fa-adjust" aria-hidden="true"></i> <span>Surface</span>
+                    </button>
+                    <span class="ed-reader-divider" aria-hidden="true"></span>
+                    <button type="button" class="ed-reader-btn" data-scale="compact" onclick="setReaderScale('compact')" title="Compact type size" aria-label="Compact font size">A-</button>
+                    <button type="button" class="ed-reader-btn active" data-scale="default" onclick="setReaderScale('default')" title="Standard type size" aria-label="Default font size">A</button>
+                    <button type="button" class="ed-reader-btn" data-scale="large" onclick="setReaderScale('large')" title="Large type size" aria-label="Large font size">A+</button>
+                </div>
+            </div>
+
+            <div class="ed-monograph-kicker-row">
+                <span class="ed-domain-tag">Security Operations</span>
+                <span class="ed-doc-id">MONOGRAPH // FIELD MANUAL · TLP:CLEAR · RESEARCH-GRADE</span>
+            </div>
+
+            <h1 class="ed-monograph-title">Incident Response Automation</h1>
+            <p class="ed-monograph-standfirst">Automate incident response with SOAR playbooks. Triage, enrichment, containment, and remediation workflows.</p>
+
+            <div class="ed-byline-ledger" role="region" aria-label="Document Metadata">
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Author</span>
+                    <span class="ed-byline-val"><a href="/about.html#harish" rel="author">Harish G</a> · Principal Architect</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Published / Updated</span>
+                    <span class="ed-byline-val"><time datetime="2026-05-01">Dec 1, 2025</time></span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Reading Time</span>
+                    <span class="ed-byline-val">20 min</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Audience &amp; Depth</span>
+                    <span class="ed-byline-val">Intermediate · Practice Playbook</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURED TECHNICAL FIGURE -->
+        <figure class="ed-monograph-figure">
+            <img src="/images/guides/default-guide.png"
+                 alt="Incident Response Automation — Enterprise Security Architecture &amp; Implementation"
+                 width="1200" height="630" loading="eager">
+            <figcaption class="ed-monograph-figcaption">
+                <span><strong>FIG. 01</strong> // Technical architecture &amp; security implementation: Incident Response Automation.</span>
+                <span>SOURCE: THEHGTECH ARCHITECTURE LAB</span>
+            </figcaption>
+        </figure>
+
+        <!-- MOBILE COLLAPSIBLE TABLE OF CONTENTS -->
+        <details class="ed-mobile-toc">
+            <summary>
+                <span><i class="fas fa-list-ul" aria-hidden="true"></i> Monograph Contents (12 Sections)</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </summary>
+            <div class="ed-mobile-toc-body">
+                <ul class="ed-toc-list">
+                    <li><a href="#the-case-for-automation">The Case for Automation</a></li>
+                    <li><a href="#automation-workflow-architecture">Automation Workflow Architecture</a></li>
+                    <li><a href="#soar-platforms-the-enterprise-solution">SOAR Platforms: The Enterprise Solution</a></li>
+                    <li><a href="#building-custom-automation-with-python">Building Custom Automation with Python</a></li>
+                    <li><a href="#advanced-automation-use-cases">Advanced Automation Use Cases</a></li>
+                    <li><a href="#integration-patterns">Integration Patterns</a></li>
+                    <li><a href="#playbook-design-best-practices">Playbook Design Best Practices</a></li>
+                    <li><a href="#measuring-automation-success">Measuring Automation Success</a></li>
+                    <li><a href="#common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</a></li>
+                    <li><a href="#open-source-automation-tools">Open-Source Automation Tools</a></li>
+                    <li><a href="#future-of-ir-automation-ai-and-machine-learning">Future of IR Automation: AI and Machine Learning</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 3-ZONE EDITORIAL MONOGRAPH WORKSPACE -->
+        <div class="ed-monograph-grid">
+            <!-- ZONE 1: STICKY TABLE OF CONTENTS RAIL -->
+            <aside class="ed-toc-rail" aria-label="Table of Contents">
+                <div class="ed-toc-heading">
+                    <span>Contents</span>
+                    <span id="edTocPercent">0%</span>
+                </div>
+                <nav aria-label="Guide sections">
+                    <ul class="ed-toc-list" id="edDesktopToc">
+                        <li><a href="#the-case-for-automation">The Case for Automation</a></li>
+                        <li><a href="#automation-workflow-architecture">Automation Workflow Architecture</a></li>
+                        <li><a href="#soar-platforms-the-enterprise-solution">SOAR Platforms: The Enterprise Solution</a></li>
+                        <li><a href="#building-custom-automation-with-python">Building Custom Automation with Python</a></li>
+                        <li><a href="#advanced-automation-use-cases">Advanced Automation Use Cases</a></li>
+                        <li><a href="#integration-patterns">Integration Patterns</a></li>
+                        <li><a href="#playbook-design-best-practices">Playbook Design Best Practices</a></li>
+                        <li><a href="#measuring-automation-success">Measuring Automation Success</a></li>
+                        <li><a href="#common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</a></li>
+                        <li><a href="#open-source-automation-tools">Open-Source Automation Tools</a></li>
+                        <li><a href="#future-of-ir-automation-ai-and-machine-learning">Future of IR Automation: AI and Machine Learning</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ZONE 2: OPTIMAL 68ch LONG-FORM TECHNICAL PROSE -->
+            <article id="edMonographArticle" class="ed-prose-column">
+<!-- Header (from header.js) -->
     <div id="header-placeholder"></div>
 
     <div class="container">
@@ -862,7 +755,7 @@
             <div class="breadcrumb">
                 <a href="/">Home</a> / <a href="/guides/">Guides</a> / Incident Response Automation
             </div>
-            <h1>⚡ Incident Response Automation</h1>
+            
             <div class="page-meta">
                 <span>📖 18 min read</span>
                 <span><i class="fas fa-crosshairs"></i> Advanced</span>
@@ -884,7 +777,7 @@
                 </p>
             </div>
 
-            <h2>The Case for Automation</h2>
+            <h2 id="the-case-for-automation">The Case for Automation</h2>
             <p>
                 According to IBM's 2024 Cost of a Data Breach Report, organizations with fully deployed security AI and
                 automation saved an average of <strong>$1.76 million</strong> compared to those without. The mean time
@@ -915,7 +808,7 @@
                 </div>
             </div>
 
-            <h2>Automation Workflow Architecture</h2>
+            <h2 id="automation-workflow-architecture">Automation Workflow Architecture</h2>
             <p>
                 A typical automated incident response workflow follows this pattern:
             </p>
@@ -952,7 +845,7 @@
                 </div>
             </div>
 
-            <h2>SOAR Platforms: The Enterprise Solution</h2>
+            <h2 id="soar-platforms-the-enterprise-solution">SOAR Platforms: The Enterprise Solution</h2>
             <p>
                 <strong>Security Orchestration, Automation, and Response (SOAR)</strong> platforms provide a centralized
                 framework for automating incident response workflows. Leading platforms include:
@@ -1005,7 +898,7 @@
                 <li><strong>Reporting:</strong> Generate compliance reports and metrics dashboards</li>
             </ul>
 
-            <h2>Building Custom Automation with Python</h2>
+            <h2 id="building-custom-automation-with-python">Building Custom Automation with Python</h2>
             <p>
                 For organizations without SOAR budgets, Python provides a powerful alternative for building custom
                 automation workflows. Below is a practical example of an automated phishing response script.
@@ -1096,7 +989,7 @@ FIREWALL_API = <span class="string">"https://firewall.company.com/api"</span>
                 <li><strong>Notification:</strong> Alert SOC team via Slack</li>
             </ol>
 
-            <h2>Advanced Automation Use Cases</h2>
+            <h2 id="advanced-automation-use-cases">Advanced Automation Use Cases</h2>
 
             <h3>1. Automated User Account Lockdown</h3>
             <p>
@@ -1164,7 +1057,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <li>Generate compliance report</li>
             </ul>
 
-            <h2>Integration Patterns</h2>
+            <h2 id="integration-patterns">Integration Patterns</h2>
 
             <h3>SIEM → SOAR Integration</h3>
             <p>
@@ -1204,7 +1097,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <li>Credential dumping</li>
             </ul>
 
-            <h2>Playbook Design Best Practices</h2>
+            <h2 id="playbook-design-best-practices">Playbook Design Best Practices</h2>
 
             <div class="alert alert-warning">
                 <div class="alert-title">
@@ -1232,7 +1125,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <li><strong>Logging:</strong> Record all actions for audit trail</li>
             </ol>
 
-            <h2>Measuring Automation Success</h2>
+            <h2 id="measuring-automation-success">Measuring Automation Success</h2>
 
             <h3>Key Metrics</h3>
             <table>
@@ -1272,7 +1165,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 </tbody>
             </table>
 
-            <h2>Common Pitfalls and How to Avoid Them</h2>
+            <h2 id="common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</h2>
 
             <h3>1. Over-Automation</h3>
             <p>
@@ -1301,7 +1194,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <strong>Solution:</strong> Maintain a dedicated test environment and conduct regular playbook drills.
             </p>
 
-            <h2>Open-Source Automation Tools</h2>
+            <h2 id="open-source-automation-tools">Open-Source Automation Tools</h2>
 
             <h3>TheHive + Cortex</h3>
             <p>
@@ -1333,7 +1226,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <li>Extensible via Python plugins</li>
             </ul>
 
-            <h2>Future of IR Automation: AI and Machine Learning</h2>
+            <h2 id="future-of-ir-automation-ai-and-machine-learning">Future of IR Automation: AI and Machine Learning</h2>
             <p>
                 The next generation of incident response automation leverages AI for:
             </p>
@@ -1360,7 +1253,7 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 </ul>
             </div>
 
-            <h2>Conclusion</h2>
+            <h2 id="conclusion">Conclusion</h2>
             <p>
                 Incident response automation is no longer optional — it's a survival requirement for modern SOCs.
                 Organizations that embrace automation can respond to threats faster, reduce analyst burnout, and improve
@@ -1377,49 +1270,205 @@ Invoke-RestMethod -Uri <span class="string">"https://servicenow.com/api/now/tabl
                 <i class="fas fa-arrow-left"></i>
                 Previous: Ransomware Response Playbook
             </a>
-            <a href="/guides/" class="nav-link">
-                Back to Guides
-                <i class="fas fa-arrow-right"></i>
-            </a>
+            
         </div>
     </div>
 
     <!-- Load Header -->
-    
 
-    <!-- Interaction Bar -->
-    <div class="interaction-bar">
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                <i class="far fa-heart"></i> <span id="likeText">Like this guide</span>
-            </button>
+                <aside class="ed-author-card" aria-label="Author Profile">
+                    <img src="/images/about-harish-hero.webp" alt="Harish G" class="ed-author-avatar" width="72" height="72" loading="lazy">
+                    <div class="ed-author-details">
+                        <h3><a href="/about.html#harish">Harish G</a></h3>
+                        <span class="ed-author-role">Founder &amp; Principal Security Architect · TheHGTech</span>
+                        <p>Security practitioner specializing in enterprise architecture, detection engineering, endpoint telemetry optimization, and AI-driven security operations.</p>
+                    </div>
+                </aside>
+
+                <div class="interaction-bar" style="margin-top: 2rem;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                            <i class="far fa-heart" aria-hidden="true"></i> <span id="likeText">Like this guide</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <div class="share-buttons">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on X/Twitter" aria-label="Share on X/Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="button-separator"></div>
+                        <button onclick="window.print()" class="print-btn" title="Print Guide" aria-label="Print Guide"><i class="fas fa-print" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ZONE 3: RIGHT MARGINALIA & CONTEXT RAIL -->
+            <aside class="ed-marginalia-rail" aria-label="Key Takeaways and Related Resources">
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Practitioner Dossier</h2>
+                    <ul class="ed-rail-list">
+                        <li><strong>Architecture Focus:</strong> Hardened enterprise baseline implementation for security operations workflows.</li>
+                        <li><strong>Implementation:</strong> Apply phased rollouts, automated policy enforcement, and continuous telemetry monitoring.</li>
+                        <li><strong>Governance &amp; Audit:</strong> Align configurations with CIS benchmarks, NIST CSF 2.0, and continuous compliance audits.</li>
+                    </ul>
+                </div>
+
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Related Monographs &amp; Tools</h2>
+                    <nav aria-label="Related resources">
+                        <a href="/guides/edr-vs-xdr.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Companion Guide // Security Operations</span>
+                            <span class="ed-rail-link-name">EDR vs XDR: Complete Security Guide</span>
+                        </a>
+                        <a href="/guides/splunk-spl-guide.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Technical Guide // Security Operations</span>
+                            <span class="ed-rail-link-name">Splunk SPL Query Guide</span>
+                        </a>
+                        <a href="/comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Head-to-Head Matrix // Comparisons</span>
+                            <span class="ed-rail-link-name">Splunk Enterprise vs. Elastic Security vs. LogRhythm</span>
+                        </a>
+                        <a href="/cve-tracker.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Live Workbench // Intelligence</span>
+                            <span class="ed-rail-link-name">CISA KEV & Zero-Day Vulnerability Tracker</span>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
         </div>
-        <div class="action-buttons">
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"
-                    aria-label="Share on Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"
-                    aria-label="Share on LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
-                    <i class="fas fa-link"></i>
-                </button>
+    </main>
+
+<!-- ========== APPROVED BRAND FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
+                    <p class="footer-desc">Independent security research, practitioner field manuals, and live vulnerability intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/articles.html">Articles</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html#harish">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="mailto:harish@thehgtech.com">Contact Editorial</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="button-separator"></div>
-            <button onclick="printArticle()" class="print-btn" title="Print" aria-label="Print">
-                <i class="fas fa-print"></i>
-            </button>
+
+            <div class="footer-bottom">
+                &copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.
+            </div>
         </div>
-    </div>
+    </footer>
 
+    <script>
+        // Reader Font Size Comfort Controls
+        function setReaderScale(scale) {
+            if (scale === "default") {
+                document.body.removeAttribute("data-reader-scale");
+                localStorage.removeItem("hg_reader_scale");
+            } else {
+                document.body.setAttribute("data-reader-scale", scale);
+                localStorage.setItem("hg_reader_scale", scale);
+            }
+            document.querySelectorAll(".ed-reader-btn[data-scale]").forEach(function(btn) {
+                btn.classList.toggle("active", btn.getAttribute("data-scale") === scale);
+            });
+        }
+
+        (function initMonographReader() {
+            var savedScale = localStorage.getItem("hg_reader_scale");
+            if (savedScale === "compact" || savedScale === "large") {
+                setReaderScale(savedScale);
+            }
+
+            var article = document.getElementById("edMonographArticle");
+            var progressBar = document.getElementById("edReadingProgress");
+            var tocPercent = document.getElementById("edTocPercent");
+            var tocLinks = Array.from(document.querySelectorAll("#edDesktopToc a"));
+            var headings = tocLinks.map(function(link) {
+                var id = link.getAttribute("href").replace("#", "");
+                return document.getElementById(id);
+            }).filter(Boolean);
+
+            function updateReadingProgress() {
+                if (!article) return;
+                var rect = article.getBoundingClientRect();
+                var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                var totalScrollable = Math.max(1, article.offsetHeight - viewportHeight * 0.5);
+                var scrolled = Math.min(Math.max(0, -rect.top + viewportHeight * 0.2), totalScrollable);
+                var pct = Math.round((scrolled / totalScrollable) * 100);
+                if (progressBar) progressBar.style.width = pct + "%";
+                if (tocPercent) tocPercent.textContent = pct + "%";
+
+                var activeHeading = headings[0];
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= 140) {
+                        activeHeading = headings[i];
+                    }
+                }
+                if (activeHeading) {
+                    var activeId = "#" + activeHeading.id;
+                    tocLinks.forEach(function(link) {
+                        if (link.getAttribute("href") === activeId) {
+                            link.setAttribute("aria-current", "true");
+                        } else {
+                            link.removeAttribute("aria-current");
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+        })();
+    </script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
-<script src="../ui-enhancements.js?v=20260517" defer></script>
-
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
-    <script src="../mobile-nav.js" defer></script>
-</body>
+    <script src="/mobile-nav.js" defer></script>
 
+</body>
 </html>

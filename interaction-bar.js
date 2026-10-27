@@ -117,6 +117,7 @@ function injectGraphComment() {
     
     // Add Privacy Note
     const privacyNote = document.createElement('p');
+    privacyNote.className = 'graphcomment-privacy-note';
     privacyNote.style.fontSize = '0.85rem';
     privacyNote.style.color = 'var(--text-muted, #888)';
     privacyNote.style.textAlign = 'center';
@@ -125,6 +126,7 @@ function injectGraphComment() {
 
     // Create wrapper to hold both note and widget
     const wrapper = document.createElement('div');
+    wrapper.className = 'graphcomment-wrapper';
     wrapper.style.marginTop = '4rem';
     wrapper.appendChild(privacyNote);
     wrapper.appendChild(gcContainer);
@@ -132,11 +134,16 @@ function injectGraphComment() {
     // Insert immediately after interaction bar
     interactionBar.parentNode.insertBefore(wrapper, interactionBar.nextSibling);
 
+    const isLightInitial = document.documentElement.getAttribute('data-theme') === 'light' || document.body.classList.contains('light-mode');
+
     // Initialize GraphComment Configuration
     window.__semio__params = {
         graphcommentId: "thehgtech", // User's GraphComment Site ID
         behaviour: {
             uid: getPageId() // Unique page identifier
+        },
+        integration: {
+            theme: isLightInitial ? 'light' : 'dark'
         }
     };
     
@@ -152,6 +159,20 @@ function injectGraphComment() {
     gc.defer = true; 
     gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
     (document.getElementsByTagName('head')[0] || document.body).appendChild(gc);
+
+    // Dynamic Theme Synchronization for GraphComment
+    window.addEventListener('themeChanged', function (e) {
+        const theme = (e.detail && e.detail.theme) || (document.body.classList.contains('light-mode') ? 'light' : 'dark');
+        if (theme === 'light') {
+            if (typeof window.__semio__gcLightTheme === 'function') {
+                window.__semio__gcLightTheme();
+            }
+        } else {
+            if (typeof window.__semio__gcDarkTheme === 'function') {
+                window.__semio__gcDarkTheme();
+            }
+        }
+    });
 }
 
 
@@ -343,6 +364,59 @@ function injectNewsletterForm() {
                     #hg-newsletter-global .hg-form-msg.success { color: #13ce66; background: rgba(19,206,102,0.12); border: 1px solid rgba(19,206,102,0.3); }
                     #hg-newsletter-global .hg-form-msg.error   { color: #ff4949; background: rgba(255,73,73,0.1);   border: 1px solid rgba(255,73,73,0.3); }
                     #hg-newsletter-global .hg-field-error { color: #ff6b6b; font-size: 0.82rem; margin-top: 0.5rem; min-height: 1.2em; display: block; text-align: center; }
+
+                    /* Light mode support across all sections */
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-wrapper,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-wrapper {
+                        background: #FFFFFF !important;
+                        border: 1px solid rgba(20, 21, 24, 0.12) !important;
+                        box-shadow: 0 4px 20px rgba(20, 21, 24, 0.06), 0 1px 3px rgba(20, 21, 24, 0.04) !important;
+                        backdrop-filter: none !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-title,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-title {
+                        color: #141518 !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-desc,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-desc {
+                        color: #373A42 !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-input,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-input {
+                        background: #FFFFFF !important;
+                        color: #141518 !important;
+                        border: 1px solid rgba(20, 21, 24, 0.22) !important;
+                        box-shadow: inset 0 1px 2px rgba(20, 21, 24, 0.04) !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-input::placeholder,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-input::placeholder {
+                        color: #7D8290 !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-input:focus,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-input:focus {
+                        border-color: #C8191F !important;
+                        box-shadow: 0 0 0 3px rgba(200, 25, 31, 0.15) !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-btn,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-btn {
+                        background: linear-gradient(135deg, #141518, #2A2D35) !important;
+                        color: #FFFFFF !important;
+                        box-shadow: 0 2px 8px rgba(20, 21, 24, 0.15) !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-newsletter-btn:hover,
+                    body.light-mode #hg-newsletter-global .hg-newsletter-btn:hover {
+                        background: linear-gradient(135deg, #C8191F, #A01217) !important;
+                        box-shadow: 0 6px 18px rgba(200, 25, 31, 0.25) !important;
+                    }
+                    [data-theme="light"] #hg-newsletter-global .hg-captcha-wrap,
+                    body.light-mode #hg-newsletter-global .hg-captcha-wrap {
+                        background: #F3F1EC;
+                        padding: 0.6rem 0.8rem;
+                        border-radius: 8px;
+                        border: 1px solid rgba(20, 21, 24, 0.08);
+                        display: inline-flex;
+                        margin: 1.25rem auto 0;
+                    }
                     @media (max-width: 560px) {
                         #hg-newsletter-global .hg-newsletter-input { max-width: 100%; width: 100%; }
                         #hg-newsletter-global .hg-newsletter-btn { width: 100%; }
@@ -461,9 +535,10 @@ function injectNewsletterScripts() {
     function renderCaptcha() {
         const el = document.getElementById('sib-captcha');
         if (!el || typeof grecaptcha === 'undefined' || el.childElementCount > 0) return;
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light' || document.body.classList.contains('light-mode');
         window._hgCaptchaWidgetId = grecaptcha.render(el, {
             sitekey: '6Lc84CstAAAAANsXefkpCbb-Jyq-JD6PSck4F9l0',
-            theme: 'dark',
+            theme: isLight ? 'light' : 'dark',
             callback: 'handleCaptchaResponse'
         });
     }

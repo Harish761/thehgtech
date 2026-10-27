@@ -1,721 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Third-Party Risk Management (TPRM): Complete Guide [2025] | TheHGTech</title>
+    <title>Third-Party Risk Management (TPRM) | TheHGTech</title>
+    <meta name="description" content="Complete TPRM guide for vendor security assessment and supply chain risk management. Prevent supply chain attacks.">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://thehgtech.com/guides/third-party-risk-management.html">
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thehgtech.com/guides/third-party-risk-management.html">
+    <meta property="og:title" content="Third-Party Risk Management (TPRM)">
+    <meta property="og:description" content="Complete TPRM guide for vendor security assessment and supply chain risk management. Prevent supply chain attacks.">
+    <meta property="og:image" content="https://thehgtech.com/images/guides/third-party-risk-management.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-01T00:00:00+00:00">
+    <meta property="article:author" content="https://thehgtech.com/about.html#harish">
+    <meta property="article:section" content="Risk Management">
 
     <!-- Twitter Card -->
-    <meta name="twitter:title" content="Third-Party Risk Management (TPRM): Complete Guide [2025] | TheHGTech">
-    <meta name="twitter:description" content="Complete Third-Party Risk Management guide. Assess vendor security, manage supply chain risk, contractual requirements, and ongoing monitoring. Prevent supply chain attacks.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:creator" content="@TheHGTech">
+    <meta name="twitter:title" content="Third-Party Risk Management (TPRM)">
+    <meta name="twitter:description" content="Complete TPRM guide for vendor security assessment and supply chain risk management. Prevent supply chain attacks.">
     <meta name="twitter:image" content="https://thehgtech.com/images/guides/third-party-risk-management.png">
 
-    <!-- Open Graph -->
-    <meta property="og:url" content="https://thehgtech.com/guides/third-party-risk-management.html">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="description"
-        content="Complete Third-Party Risk Management guide. Assess vendor security, manage supply chain risk, contractual requirements, and ongoing monitoring. Prevent supply chain attacks.">
-    <meta name="keywords"
-        content="third-party risk management, TPRM, vendor security, supply chain security, vendor assessment, third-party security, vendor risk, supplier security">
-    <link rel="canonical" href="https://thehgtech.com/guides/third-party-risk-management.html">
-    <meta property="og:title" content="Third-Party Risk Management (TPRM) Guide 2025">
-    <meta property="og:description" content="Complete guide to managing third-party and vendor security risks.">
-    <meta property="og:image" content="https://thehgtech.com/images/guides/third-party-risk-management.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <script
-        type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Third-Party Risk Management Guide 2025","author":{"@type":"Organization","name":"TheHGTech"},"datePublished":"2025-12-23"}</script>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
+
     <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Core Site Chrome & Navigation Stylesheets -->
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/light-mode.css">
     <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251217">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
     <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
     <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <link rel="stylesheet" href="/ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="/mobile-nav.css">
+
+    <!-- Isolated Guides Editorial Design System (Technical Monograph & Field Manuals) -->
+    <link rel="stylesheet" href="/css/guides-editorial.css?v=1.0">
+
     <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <script src="/theme-toggle.js" defer></script>
 
-        :root {
-            --bg-primary: #000;
-            --bg-secondary: #0a0a0a;
-            --bg-card: rgba(255, 255, 255, 0.03);
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #10b981;
-            --accent-orange: #f59e0b;
-            --text-primary: #fff;
-            --text-secondary: #a0a0a0;
-            --text-muted: #666;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            /* font-size removed for fluid typography */
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 80px auto 0;
-            /* padding removed for fluid typography */
-        }
-
-        .guide-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .guide-header h1 {
-            font-size: 2.5rem;
-            background: linear-gradient(135deg, var(--accent-orange), var(--accent-red));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-        }
-
-        .new-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            margin-left: 1rem;
-        }
-
-        .guide-meta {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            box-shadow: 0 10px 40px rgba(245, 158, 11, 0.2);
-            border: 1px solid var(--border);
-        }
-
-        .content {
-            margin-top: 3rem;
-        }
-
-        .content h2 {
-            color: var(--accent-orange);
-            font-size: 1.8rem;
-            margin: 2.5rem 0 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-orange);
-        }
-
-        .content h3 {
-            color: var(--text-primary);
-            /* font-size removed for fluid typography */
-            margin: 1.5rem 0 1rem;
-        }
-
-        .content p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
-
-        .content ul,
-        .content ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
-
-        .content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .toc {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .toc h3 {
-            color: var(--accent-cyan);
-            margin-bottom: 1rem;
-        }
-
-        .toc ul {
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .toc a {
-            color: var(--text-secondary);
-            text-decoration: none;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.1);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 76, 76, 0.1);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.1);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: var(--bg-card);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th,
-        td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background: rgba(245, 158, 11, 0.1);
-            color: var(--accent-orange);
-            font-weight: 600;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
-        footer {
-            margin-top: 5rem;
-            padding-top: 3rem;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-                margin-top: 60px;
-            }
-
-            .guide-header h1 {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
-
-    <!-- ========== STRUCTURED DATA - BREADCRUMB ========== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://thehgtech.com"
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://thehgtech.com/guides/"
-      }, {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Third-Party Risk Management (TPRM): Complete Guide [2025]",
-        "item": "https://thehgtech.com/guides/third-party-risk-management.html"
-      }]
-    }
-    </script>
-
-    <!-- ========== STRUCTURED DATA - FAQPAGE ========== -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is Third-Party Risk Management (TPRM) and why is it important?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Third-Party Risk Management (TPRM) is a critical aspect of cybersecurity that helps organizations protect their assets, detect threats, and respond to incidents effectively."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can organizations implement Third-Party Risk Management (TPRM)?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Implementation involves assessing current capabilities, defining requirements, selecting appropriate tools, training staff, and establishing ongoing processes for continuous improvement."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What are the best practices for Third-Party Risk Management (TPRM)?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Best practices include following industry frameworks, regular testing and validation, continuous monitoring, documentation, and keeping up with evolving threats and technologies."
-        }
-      }]
-    }
-    </script>
-<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <!-- Global Theme Script -->
     <script>
-        // Inline theme set to avoid FOUC
         (function() {
             var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+            if (savedTheme === "light") {
                 document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
             }
         })();
     </script>
+
     <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
+        gtag("js", new Date());
+        gtag("config", "G-XL6RCXZJE2");
     </script>
-        <!-- Fullres Analytics -->
+    <!-- Fullres Analytics -->
     <script>
         (function () {
-            var fullres = document.createElement('script');
+            var fullres = document.createElement("script");
             fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
+            fullres.src = "https://t.fullres.net/thehgtech.js?" + (new Date() - new Date() % 43200000);
             document.head.appendChild(fullres);
         })();
     </script>
-    <link rel="stylesheet" href="../mobile-nav.css">
 
-    <script src="/theme-toggle.js" defer></script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Third-Party Risk Management (TPRM): Complete Guide [2025] | TheHGTech",
-  "description": "Complete Third-Party Risk Management guide. Assess vendor security, manage supply chain risk, contractual requirements, and ongoing monitoring. Prevent supply chain attacks.",
-  "image": "https://thehgtech.com/images/og-image.jpg",
+  "@type": "TechArticle",
+  "headline": "Third-Party Risk Management Guide 2025",
   "author": {
-    "@type": "Person",
-    "name": "Harish G",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/"
-    ]
-  },
-  "publisher": {
     "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    },
-    "@id": "https://thehgtech.com/#organization"
+    "name": "TheHGTech"
   },
-  "datePublished": "2025-01-01",
-  "dateModified": "2026-06-26"
+  "datePublished": "2025-12-23"
 }
-</script>
-    
-
-    <!-- SEO: HowTo & Breadcrumb Schema -->
+    </script>
     <script type="application/ld+json">
-    [
-      {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Third-Party Risk Management (TPRM): Complete Guide [2025]",
-        "description": "Complete Third-Party Risk Management guide. Assess vendor security, manage supply chain risk, contractual requirements, and ongoing monitoring. Prevent supply chain attacks.",
-        "totalTime": "PT30M",
-        "step": [
-          {"@type": "HowToStep", "name": "1. What is Third-Party Risk Management?", "text": "Refer to the section '1. What is Third-Party Risk Management?' in the guide."},
-        {"@type": "HowToStep", "name": "2. Building a TPRM Program", "text": "Refer to the section '2. Building a TPRM Program' in the guide."},
-        {"@type": "HowToStep", "name": "3. Vendor Risk Tiering", "text": "Refer to the section '3. Vendor Risk Tiering' in the guide."},
-        {"@type": "HowToStep", "name": "4. Security Assessment Methods", "text": "Refer to the section '4. Security Assessment Methods' in the guide."},
-        {"@type": "HowToStep", "name": "5. Contractual Requirements", "text": "Refer to the section '5. Contractual Requirements' in the guide."}
-        ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com"},
-          {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://thehgtech.com/guides/"},
-          {"@type": "ListItem", "position": 3, "name": "Third-Party Risk Management (TPRM): Complete \u2026", "item": "https://thehgtech.com/guides/third-party-risk-management.html"}
-        ]
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Third-Party Risk Management (TPRM) and why is it important?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Third-Party Risk Management (TPRM) is a critical aspect of cybersecurity that helps organizations protect their assets, detect threats, and respond to incidents effectively."
       }
-    ]
+    },
+    {
+      "@type": "Question",
+      "name": "How can organizations implement Third-Party Risk Management (TPRM)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Implementation involves assessing current capabilities, defining requirements, selecting appropriate tools, training staff, and establishing ongoing processes for continuous improvement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best practices for Third-Party Risk Management (TPRM)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Best practices include following industry frameworks, regular testing and validation, continuous monitoring, documentation, and keeping up with evolving threats and technologies."
+      }
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Third-Party Risk Management (TPRM): Complete Guide [2025]",
+  "description": "Complete Third-Party Risk Management guide. Assess vendor security, manage supply chain risk, contractual requirements, and ongoing monitoring. Prevent supply chain attacks.",
+  "totalTime": "PT30M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "1. What is Third-Party Risk Management?",
+      "text": "Refer to the section '1. What is Third-Party Risk Management?' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "2. Building a TPRM Program",
+      "text": "Refer to the section '2. Building a TPRM Program' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "3. Vendor Risk Tiering",
+      "text": "Refer to the section '3. Vendor Risk Tiering' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "4. Security Assessment Methods",
+      "text": "Refer to the section '4. Security Assessment Methods' in the guide."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "5. Contractual Requirements",
+      "text": "Refer to the section '5. Contractual Requirements' in the guide."
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thehgtech.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://thehgtech.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Third-Party Risk Management (TPRM)",
+      "item": "https://thehgtech.com/guides/third-party-risk-management.html"
+    }
+  ]
+}
     </script>
 </head>
 
-<body>
-    <!-- Mobile Header -->
+<body class="guides-editorial guide-monograph-page">
+    <script>
+        if (document.documentElement.getAttribute("data-theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    </script>
 
+    <!-- Accessible Skip Link -->
+    <a href="#edMonographArticle" class="ed-skip-link">Skip to guide content</a>
 
+    <!-- Top Reading Progress Hairline -->
+    <div class="ed-progress-track" aria-hidden="true">
+        <div class="ed-progress-bar" id="edReadingProgress"></div>
+    </div>
 
-</div>
+<!-- SITE-HEADER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL SITE HEADER COMPONENT
+     Single Source of Truth for Mobile Header, Mobile Menu Overlay,
+     Search Overlay, and Desktop Header Navigation.
+     Reference Standard: CVE Tracker / Apple HIG Modern Standard
+     Project Marker: HG-THREAT-INTEL-V1
+     ========================================================================== -->
 
-    
-    <!-- Desktop Header -->
-    
-
-</div>
-
-    
-
+<!-- Mobile Header -->
 <header class="m-header m-only">
     <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
         </a>
     </div>
     <div class="m-header__actions">
         <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
-        <!-- Search triggers Command Palette -->
         <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" aria-hidden="true"></i>
         </button>
-        <!-- Hamburger Menu Toggle -->
         <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i>
         </button>
     </div>
 </header>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
+<!-- Fullscreen Mobile Menu Overlay -->
 <div class="m-menu-overlay m-only" id="m-menu-overlay">
     <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
         <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" aria-hidden="true"></i>
         </button>
     </div>
     <div class="m-menu-content">
         <div class="m-menu-section">
             <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
         </div>
         <div class="m-menu-section">
             <div class="m-menu-title">Settings</div>
             <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
             </button>
         </div>
     </div>
 </div>
 
-    <!-- Search Overlay -->
-    <div class="m-search-overlay m-only">
-        <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
-            <button class="m-search-overlay__cancel">Cancel</button>
-        </div>
-        <div class="m-search-overlay__results"></div>
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
     </div>
+    <div class="m-search-overlay__results"></div>
+</div>
 
+<!-- Desktop Header -->
 <header class="header" role="banner">
-        <div class="header-content">
-            <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
-
-                <!-- Intelligence Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Intelligence
-                        <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Ransomware Tracker</div>
-                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
-                            </div>
-                        </a>
-                        <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Resources Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">
-                        Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
-                            </div>
-                        </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Security automation templates</div>
-                            </div>
-                        </a>
-                        <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Tool Comparisons</div>
-                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
-                            </div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Tools Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
-                </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
-                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
-                </button>
-            </nav>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
             </button>
-        </div>
-    </header>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
 
-    <main class="container">
-        <a href="/guides/"
-            style="color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem;"><i
-                class="fas fa-arrow-left"></i> Back to Guides</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
 
-        <div class="guide-header">
-            <h1><i class="fas fa-handshake"></i> Third-Party Risk Management <span class="new-badge"><i
-                        class="fas fa-fire"></i> NEW</span></h1>
-            <p style="color: var(--text-muted); font-size: 1.1rem;">Complete TPRM guide for vendor security assessment
-                and supply chain risk management</p>
-            <div class="guide-meta">
-                <span><i class="fas fa-book-open"></i> 20 min read</span>
-                <span><i class="fas fa-crosshairs"></i> Intermediate</span>
-                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+    <main class="ed-shell">
+        <!-- MONOGRAPH HEADER & READER COMFORT CONTROLS -->
+        <header class="ed-monograph-header">
+            <div class="ed-breadcrumb-nav">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ed-breadcrumbs">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li class="ed-bc-sep" aria-hidden="true">/</li>
+                        <li aria-current="page">Risk Management</li>
+                    </ol>
+                </nav>
+
+                <div class="ed-reader-controls" role="group" aria-label="Reading comfort settings">
+                    <button type="button" class="ed-reader-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();" title="Switch Paper / Obsidian Theme" aria-label="Switch reading theme">
+                        <i class="fas fa-adjust" aria-hidden="true"></i> <span>Surface</span>
+                    </button>
+                    <span class="ed-reader-divider" aria-hidden="true"></span>
+                    <button type="button" class="ed-reader-btn" data-scale="compact" onclick="setReaderScale('compact')" title="Compact type size" aria-label="Compact font size">A-</button>
+                    <button type="button" class="ed-reader-btn active" data-scale="default" onclick="setReaderScale('default')" title="Standard type size" aria-label="Default font size">A</button>
+                    <button type="button" class="ed-reader-btn" data-scale="large" onclick="setReaderScale('large')" title="Large type size" aria-label="Large font size">A+</button>
+                </div>
             </div>
-        </div>
 
-        <img src="/images/guides/third-party-risk-management.png" alt="Third-Party Risk Management Guide"
-            class="featured-image" loading="lazy">
+            <div class="ed-monograph-kicker-row">
+                <span class="ed-domain-tag">Risk Management</span>
+                <span class="ed-doc-id">MONOGRAPH // FIELD MANUAL · TLP:CLEAR · RESEARCH-GRADE</span>
+            </div>
 
-        <div class="warning-box">
+            <h1 class="ed-monograph-title">Third-Party Risk Management (TPRM)</h1>
+            <p class="ed-monograph-standfirst">Complete TPRM guide for vendor security assessment and supply chain risk management. Prevent supply chain attacks.</p>
+
+            <div class="ed-byline-ledger" role="region" aria-label="Document Metadata">
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Author</span>
+                    <span class="ed-byline-val"><a href="/about.html#harish" rel="author">Harish G</a> · Principal Architect</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Published / Updated</span>
+                    <span class="ed-byline-val"><time datetime="2026-05-01">Dec 23, 2025</time></span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Reading Time</span>
+                    <span class="ed-byline-val">20 min</span>
+                </div>
+                <div class="ed-byline-cell">
+                    <span class="ed-byline-label">Audience &amp; Depth</span>
+                    <span class="ed-byline-val">Intermediate · Practice Playbook</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- FEATURED TECHNICAL FIGURE -->
+        <figure class="ed-monograph-figure">
+            <img src="/images/guides/third-party-risk-management.png"
+                 alt="Third-Party Risk Management (TPRM) — Enterprise Security Architecture &amp; Implementation"
+                 width="1200" height="630" loading="eager">
+            <figcaption class="ed-monograph-figcaption">
+                <span><strong>FIG. 01</strong> // Technical architecture &amp; security implementation: Third-Party Risk Management (TPRM).</span>
+                <span>SOURCE: THEHGTECH ARCHITECTURE LAB</span>
+            </figcaption>
+        </figure>
+
+        <!-- MOBILE COLLAPSIBLE TABLE OF CONTENTS -->
+        <details class="ed-mobile-toc">
+            <summary>
+                <span><i class="fas fa-list-ul" aria-hidden="true"></i> Monograph Contents (10 Sections)</span>
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </summary>
+            <div class="ed-mobile-toc-body">
+                <ul class="ed-toc-list">
+                    <li><a href="#overview">1. What is Third-Party Risk Management?</a></li>
+                    <li><a href="#program">2. Building a TPRM Program</a></li>
+                    <li><a href="#tiering">3. Vendor Risk Tiering</a></li>
+                    <li><a href="#assessment">4. Security Assessment Methods</a></li>
+                    <li><a href="#contracts">5. Contractual Requirements</a></li>
+                    <li><a href="#monitoring">6. Ongoing Monitoring</a></li>
+                    <li><a href="#incidents">7. Third-Party Incident Response</a></li>
+                    <li><a href="#exit">8. Exit Strategies</a></li>
+                    <li><a href="#checklist">9. TPRM Checklist</a></li>
+                    <li><a href="#related-content">Related Content</a></li>
+                </ul>
+            </div>
+        </details>
+
+        <!-- 3-ZONE EDITORIAL MONOGRAPH WORKSPACE -->
+        <div class="ed-monograph-grid">
+            <!-- ZONE 1: STICKY TABLE OF CONTENTS RAIL -->
+            <aside class="ed-toc-rail" aria-label="Table of Contents">
+                <div class="ed-toc-heading">
+                    <span>Contents</span>
+                    <span id="edTocPercent">0%</span>
+                </div>
+                <nav aria-label="Guide sections">
+                    <ul class="ed-toc-list" id="edDesktopToc">
+                        <li><a href="#overview">1. What is Third-Party Risk Management?</a></li>
+                        <li><a href="#program">2. Building a TPRM Program</a></li>
+                        <li><a href="#tiering">3. Vendor Risk Tiering</a></li>
+                        <li><a href="#assessment">4. Security Assessment Methods</a></li>
+                        <li><a href="#contracts">5. Contractual Requirements</a></li>
+                        <li><a href="#monitoring">6. Ongoing Monitoring</a></li>
+                        <li><a href="#incidents">7. Third-Party Incident Response</a></li>
+                        <li><a href="#exit">8. Exit Strategies</a></li>
+                        <li><a href="#checklist">9. TPRM Checklist</a></li>
+                        <li><a href="#related-content">Related Content</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- ZONE 2: OPTIMAL 68ch LONG-FORM TECHNICAL PROSE -->
+            <article id="edMonographArticle" class="ed-prose-column">
+<div class="warning-box">
             <strong><i class="fas fa-exclamation-triangle"></i> Supply Chain Reality:</strong> In 2024-2025, supply
             chain attacks have affected millions of customers through breaches at SolarWinds, MOVEit, Okta, Red Hat, and
             700Credit. Your security is only as strong as your weakest vendor.
         </div>
 
-        <div class="toc">
-            <h3><i class="fas fa-list-ul"></i> Table of Contents</h3>
-            <ul>
-                <li><a href="#overview">1. What is Third-Party Risk Management?</a></li>
-                <li><a href="#program">2. Building a TPRM Program</a></li>
-                <li><a href="#tiering">3. Vendor Risk Tiering</a></li>
-                <li><a href="#assessment">4. Security Assessment Methods</a></li>
-                <li><a href="#contracts">5. Contractual Requirements</a></li>
-                <li><a href="#monitoring">6. Ongoing Monitoring</a></li>
-                <li><a href="#incidents">7. Third-Party Incident Response</a></li>
-                <li><a href="#exit">8. Exit Strategies</a></li>
-                <li><a href="#checklist">9. TPRM Checklist</a></li>
-            </ul>
-        </div>
+        
 
         <div class="content">
-            <h2 id="overview"><i class="fas fa-network-wired"></i> 1. What is Third-Party Risk Management?</h2>
+            <h2  id="overview"><i class="fas fa-network-wired"></i> 1. What is Third-Party Risk Management?</h2>
 
             <h3>Understanding the Basics</h3>
             <p>Imagine you have the most secure house in the neighborhood - alarm systems, cameras, reinforced doors.
@@ -833,7 +705,7 @@
                 fails, regardless of whose fault it technically was.
             </div>
 
-            <h2 id="program"><i class="fas fa-building"></i> 2. Building a TPRM Program</h2>
+            <h2  id="program"><i class="fas fa-building"></i> 2. Building a TPRM Program</h2>
             <h3>Program Components</h3>
             <ul>
                 <li><strong>Governance:</strong> Policies, roles, and executive oversight</li>
@@ -846,7 +718,7 @@
                 <li><strong>Exit Planning:</strong> Strategies for terminating relationships</li>
             </ul>
 
-            <h2 id="tiering"><i class="fas fa-layer-group"></i> 3. Vendor Risk Tiering</h2>
+            <h2  id="tiering"><i class="fas fa-layer-group"></i> 3. Vendor Risk Tiering</h2>
             <p>Not all vendors require the same level of scrutiny. Tier vendors based on risk factors:</p>
 
             <table>
@@ -896,7 +768,7 @@
                 <li>Geographic and jurisdictional considerations</li>
             </ul>
 
-            <h2 id="assessment"><i class="fas fa-clipboard-check"></i> 4. Security Assessment Methods</h2>
+            <h2  id="assessment"><i class="fas fa-clipboard-check"></i> 4. Security Assessment Methods</h2>
 
             <h3>Assessment Techniques</h3>
             <ul>
@@ -928,7 +800,7 @@
                 <li>Subcontractor/fourth-party management</li>
             </ul>
 
-            <h2 id="contracts"><i class="fas fa-file-contract"></i> 5. Contractual Requirements</h2>
+            <h2  id="contracts"><i class="fas fa-file-contract"></i> 5. Contractual Requirements</h2>
             <p>Every vendor contract handling sensitive data should include:</p>
 
             <h3>Essential Contract Clauses</h3>
@@ -945,7 +817,7 @@
                 <li><strong>Compliance:</strong> Obligation to maintain regulatory compliance</li>
             </ul>
 
-            <h2 id="monitoring"><i class="fas fa-eye"></i> 6. Ongoing Monitoring</h2>
+            <h2  id="monitoring"><i class="fas fa-eye"></i> 6. Ongoing Monitoring</h2>
             <h3>Continuous Monitoring Methods</h3>
             <ul>
                 <li><strong>Security Ratings:</strong> Subscribe to services that continuously monitor vendor security
@@ -966,7 +838,7 @@
                 <li>Failure to renew certifications</li>
             </ul>
 
-            <h2 id="incidents"><i class="fas fa-bell"></i> 7. Third-Party Incident Response</h2>
+            <h2  id="incidents"><i class="fas fa-bell"></i> 7. Third-Party Incident Response</h2>
             <p>When a vendor experiences a security incident:</p>
 
             <h3>Immediate Actions</h3>
@@ -987,7 +859,7 @@
                 <li>Consider relationship continuation or exit</li>
             </ul>
 
-            <h2 id="exit"><i class="fas fa-door-open"></i> 8. Exit Strategies</h2>
+            <h2  id="exit"><i class="fas fa-door-open"></i> 8. Exit Strategies</h2>
             <p>Plan for vendor transitions before you need them:</p>
             <ul>
                 <li>Document data formats and migration procedures</li>
@@ -997,7 +869,7 @@
                 <li>Verify data destruction after transition</li>
             </ul>
 
-            <h2 id="checklist"><i class="fas fa-tasks"></i> 9. TPRM Checklist</h2>
+            <h2  id="checklist"><i class="fas fa-tasks"></i> 9. TPRM Checklist</h2>
             <div class="success-box">
                 <strong><i class="fas fa-check-circle"></i> TPRM Implementation Checklist:</strong>
                 <ul style="margin-top: 0.5rem; margin-bottom: 0;">
@@ -1014,7 +886,7 @@
                 </ul>
             </div>
 
-            <h2><i class="fas fa-link"></i> Related Content</h2>
+            <h2 id="related-content"><i class="fas fa-link"></i> Related Content</h2>
             <ul>
                 <li><a href="/articles/nissan-redhat-breach-2025.html" style="color: var(--accent-cyan);">Nissan Data
                         Breach via Red Hat Consulting</a></li>
@@ -1024,12 +896,7 @@
                         (Third-Party Requirements)</a></li>
             </ul>
 
-            <p
-                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); color: var(--text-muted);">
-                <strong>Author:</strong> TheHGTech Security Team<br>
-                <strong>Last Updated:</strong> December 2025<br>
-                <strong>Reading Time:</strong> 20 minutes
-            </p>
+            
         </div>
 
         
@@ -1050,38 +917,200 @@
 
     <!-- Related Resources -->
     <div style="margin: 2rem 0 3rem; /* padding removed for fluid typography */ background: var(--glass, rgba(255,255,255,0.03)); border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: 12px;">
-        <h3 style="margin: 0 0 1rem 0; color: var(--accent-cyan, #00D9FF); font-size: 1.1rem;"><i class="fas fa-compass"></i> Related Resources</h3>
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li style="margin-bottom: 0.75rem;"><a href="/guides/iso-27001-certification-roadmap.html" style="color: var(--text-secondary, #a0a0a0); text-decoration: none;"><i class="fas fa-route" style="color: #FFD700;"></i> ISO 27001 Certification Roadmap — 12-month implementation timeline</a></li>
-            <li style="margin-bottom: 0.75rem;"><a href="/guides/iso-27001-gap-analysis.html" style="color: var(--text-secondary, #a0a0a0); text-decoration: none;"><i class="fas fa-clipboard-list" style="color: #00D9FF;"></i> ISO 27001 Gap Analysis — Assessment framework for compliance readiness</a></li>
-            <li style="margin-bottom: 0.75rem;"><a href="/guides/compliance-checklist-2026.html" style="color: var(--text-secondary, #a0a0a0); text-decoration: none;"><i class="fas fa-check-circle" style="color: #30D158;"></i> Compliance Checklist 2026 — Full regulatory compliance requirements</a></li>
-            <li style="margin-bottom: 0.75rem;"><a href="/guides/soc2-compliance-checklist.html" style="color: var(--text-secondary, #a0a0a0); text-decoration: none;"><i class="fas fa-lock" style="color: #3B82F6;"></i> SOC 2 Compliance Checklist — Trust Services Criteria breakdown</a></li>
-        </ul>
-    </div>
 
-        <div class="interaction-bar">
-            <div class="like-section"><button class="like-btn" id="likeBtn" onclick="toggleLike()"><i
-                        class="far fa-heart"></i> <span id="likeText">Like this guide</span></button></div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+                <aside class="ed-author-card" aria-label="Author Profile">
+                    <img src="/images/about-harish-hero.webp" alt="Harish G" class="ed-author-avatar" width="72" height="72" loading="lazy">
+                    <div class="ed-author-details">
+                        <h3><a href="/about.html#harish">Harish G</a></h3>
+                        <span class="ed-author-role">Founder &amp; Principal Security Architect · TheHGTech</span>
+                        <p>Security practitioner specializing in enterprise architecture, detection engineering, endpoint telemetry optimization, and AI-driven security operations.</p>
+                    </div>
+                </aside>
+
+                <div class="interaction-bar" style="margin-top: 2rem;">
+                    <div class="like-section">
+                        <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                            <i class="far fa-heart" aria-hidden="true"></i> <span id="likeText">Like this guide</span>
+                        </button>
+                    </div>
+                    <div class="action-buttons">
+                        <div class="share-buttons">
+                            <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on X/Twitter" aria-label="Share on X/Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link"><i class="fas fa-link" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="button-separator"></div>
+                        <button onclick="window.print()" class="print-btn" title="Print Guide" aria-label="Print Guide"><i class="fas fa-print" aria-hidden="true"></i></button>
+                    </div>
                 </div>
-                <div class="button-separator"></div>
-                <button onclick="printArticle()" class="print-btn"><i class="fas fa-print"></i></button>
-            </div>
+            </article>
+
+            <!-- ZONE 3: RIGHT MARGINALIA & CONTEXT RAIL -->
+            <aside class="ed-marginalia-rail" aria-label="Key Takeaways and Related Resources">
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Practitioner Dossier</h2>
+                    <ul class="ed-rail-list">
+                        <li><strong>Key Finding:</strong> Supply Chain Reality: In 2024-2025, supply chain attacks have affected millions of customers through breaches at SolarWinds, MOVEit, Okta, Red Hat, and 700Credit.</li>
+                        <li><strong>Core Challenge:</strong> Your security is only as strong as your weakest vendor.</li>
+                        <li><strong>Architecture Focus:</strong> Hardened enterprise baseline implementation for risk management workflows.</li>
+                    </ul>
+                </div>
+
+                <div class="ed-rail-card">
+                    <h2 class="ed-rail-title">Related Monographs &amp; Tools</h2>
+                    <nav aria-label="Related resources">
+                        <a href="/guides/the-agent-tax-corporate-laptop-performance-2026.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Companion Guide // Endpoint Security</span>
+                            <span class="ed-rail-link-name">The Agent Tax: Why Corporate Laptops Are Slow (And How to Fix It in 2026)</span>
+                        </a>
+                        <a href="/guides/active-directory-vs-entra-id-security-2026.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Technical Guide // Identity & Access Management</span>
+                            <span class="ed-rail-link-name">Active Directory vs Entra ID Security 2026: The Great Identity Paradigm Shift</span>
+                        </a>
+                        <a href="/comparisons/" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Head-to-Head Matrix // Comparisons</span>
+                            <span class="ed-rail-link-name">Enterprise EDR, SIEM & Identity Platform Comparisons</span>
+                        </a>
+                        <a href="/cve-tracker.html" class="ed-rail-link">
+                            <span class="ed-rail-link-type">Live Workbench // Intelligence</span>
+                            <span class="ed-rail-link-name">CISA KEV & Zero-Day Vulnerability Tracker</span>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
         </div>
     </main>
-    <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> TheHGTech. All rights reserved.</p>
+
+<!-- ========== APPROVED BRAND FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="/index.html" class="footer-brand-logo-link" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-dark.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-dark" width="280" height="55" loading="lazy">
+                        <img src="/assets/brand/svg/logo-horizontal-tagline-light.svg" alt="TheHGTech — Cybersecurity Insights | Tools | Intelligence" class="footer-logo-img logo-light" width="280" height="55" loading="lazy">
+                    </a>
+                    <p class="footer-desc">Independent security research, practitioner field manuals, and live vulnerability intelligence.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harish-g-2216955b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61582408623186" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe on YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/articles.html">Articles</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html#harish">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/newsletter.html">Newsletter</a></li>
+                        <li><a href="mailto:harish@thehgtech.com">Contact Editorial</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.
+            </div>
+        </div>
     </footer>
-    
+
+    <script>
+        // Reader Font Size Comfort Controls
+        function setReaderScale(scale) {
+            if (scale === "default") {
+                document.body.removeAttribute("data-reader-scale");
+                localStorage.removeItem("hg_reader_scale");
+            } else {
+                document.body.setAttribute("data-reader-scale", scale);
+                localStorage.setItem("hg_reader_scale", scale);
+            }
+            document.querySelectorAll(".ed-reader-btn[data-scale]").forEach(function(btn) {
+                btn.classList.toggle("active", btn.getAttribute("data-scale") === scale);
+            });
+        }
+
+        (function initMonographReader() {
+            var savedScale = localStorage.getItem("hg_reader_scale");
+            if (savedScale === "compact" || savedScale === "large") {
+                setReaderScale(savedScale);
+            }
+
+            var article = document.getElementById("edMonographArticle");
+            var progressBar = document.getElementById("edReadingProgress");
+            var tocPercent = document.getElementById("edTocPercent");
+            var tocLinks = Array.from(document.querySelectorAll("#edDesktopToc a"));
+            var headings = tocLinks.map(function(link) {
+                var id = link.getAttribute("href").replace("#", "");
+                return document.getElementById(id);
+            }).filter(Boolean);
+
+            function updateReadingProgress() {
+                if (!article) return;
+                var rect = article.getBoundingClientRect();
+                var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+                var totalScrollable = Math.max(1, article.offsetHeight - viewportHeight * 0.5);
+                var scrolled = Math.min(Math.max(0, -rect.top + viewportHeight * 0.2), totalScrollable);
+                var pct = Math.round((scrolled / totalScrollable) * 100);
+                if (progressBar) progressBar.style.width = pct + "%";
+                if (tocPercent) tocPercent.textContent = pct + "%";
+
+                var activeHeading = headings[0];
+                for (var i = 0; i < headings.length; i++) {
+                    if (headings[i].getBoundingClientRect().top <= 140) {
+                        activeHeading = headings[i];
+                    }
+                }
+                if (activeHeading) {
+                    var activeId = "#" + activeHeading.id;
+                    tocLinks.forEach(function(link) {
+                        if (link.getAttribute("href") === activeId) {
+                            link.setAttribute("aria-current", "true");
+                        } else {
+                            link.removeAttribute("aria-current");
+                        }
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", updateReadingProgress, { passive: true });
+            updateReadingProgress();
+        })();
+    </script>
     <script src="/interaction-bar.min.js?v=20260623"></script>
-<script src="../ui-enhancements.js?v=20260517" defer></script>
-
+    <script src="/ui-enhancements.js?v=20260517" defer></script>
     <script src="/command-palette.js" defer></script>
-    <script src="../mobile-nav.js" defer></script>
-</body>
+    <script src="/mobile-nav.js" defer></script>
 
+</body>
 </html>
