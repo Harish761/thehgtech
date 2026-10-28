@@ -1,14 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
-    <loc>https://thehgtech.com/articles/bat-bms-security-design-failure-2026.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>TheHGTech</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-25T11:00:00+00:00</news:publication_date>
-      <news:title>Deep Dive: The BAT-BMS Controversy Isn&#x27;t a Bluetooth Hack — It&#x27;s an IoT Security Design Failure</news:title>
-    </news:news>
-  </url>
 </urlset>
