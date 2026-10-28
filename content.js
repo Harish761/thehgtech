@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 28 2026",
+            "headline": "Ukrainian Hive Operator Gets 70 Months",
+            "title": "Artem Stryzhak Sentenced to 70 Months for Nefilim Ransomware Attacks",
+            "content": "A Ukrainian national, Artem Stryzhak, has been sentenced to 70 months in federal prison after pleading guilty to deploying the Nefilim ransomware in attacks against U.S. victims. Stryzhak operated as an affiliate of the Ukrainian Hive ransomware group, engaging in destructive activities against critical infrastructure and private sector organizations. The Department of Justice highlighted the severe financial and operational impact of these attacks on the targeted businesses and the broader cybersecurity landscape. This case underscores the ongoing threat posed by international ransomware affiliates and the effectiveness of U.S. law enforcement in disrupting these criminal operations. Organizations are urged to maintain robust backup strategies and implement network segmentation to mitigate the impact of potential ransomware incidents.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Oracle EBS Zero-Day Exploited—Patch Now",
+            "title": "Hackers Probe Critical Oracle E-Business Suite RCE Flaw",
+            "content": "Threat actors are actively scanning for CVE-2026-101767, a critical unauthenticated SQL injection vulnerability in Oracle E-Business Suite (EBS) with a CVSS score of 9.8. The flaw resides in the Oracle Application Object Library and allows for remote code execution (RCE) without requiring valid user credentials. Defused Cyber reports that exploitation attempts have commenced within days of Oracle releasing the corresponding security patch. This rapid exploitation cycle highlights the persistent threat landscape for enterprise resource planning (ERP) systems and the need for immediate remediation. Administrators must apply Oracle's latest EBS patches immediately and restrict network access to the application to prevent unauthorized exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "16-Year-Old UEFI Flaw Enables Pre-Boot RCE",
+            "title": "Critical 16-Year-Old EDK II Flaw Allows Pre-Boot Code Execution",
+            "content": "A 16-year-old vulnerability in EDK II, the open-source code used to build UEFI firmware, enables attackers to execute arbitrary code before the operating system loads. The flaw is only exploitable when a server is booting over a network, such as via PXE boot, allowing an attacker to intercept the boot process. This pre-boot code execution can bypass Secure Boot protections, potentially compromising the entire system's integrity before any OS-level security controls are active. The discovery highlights the long-term risks associated with foundational hardware firmware components that are often overlooked in traditional vulnerability management programs. IT administrators must ensure their network boot configurations are secure and that firmware updates are applied promptly to mitigate this risk.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "8 Critical Flaws in Adobe Campaign Classic",
+            "title": "Adobe Patches 8 Critical Vulnerabilities in Campaign Classic",
+            "content": "Adobe has released security updates to address eight critical flaws in Campaign Classic, including a 9.9 CVSS score vulnerability that permits arbitrary code execution. The patched vulnerabilities also encompass security feature bypasses and privilege escalation vectors, which could allow an attacker to compromise the application's administrative functions. Successful exploitation could lead to the complete takeover of the Campaign Classic instance, exposing sensitive customer data and campaign assets to unauthorized access. This update is critical for marketing teams and agencies relying on the platform for large-scale customer engagement. Administrators should update to the latest version of Campaign Classic immediately to prevent potential system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Hackers Probe Oracle EBS SQL Injection",
+            "title": "Threat Actors Begin Exploiting CVE-2026-101767 in Oracle EBS",
+            "content": "Security researchers have detected active probing for CVE-2026-101767, a critical unauthenticated SQL injection vulnerability in Oracle E-Business Suite (EBS). This flaw can be exploited for remote code execution, allowing attackers to compromise systems without any user credentials. The rapid emergence of exploitation attempts following the patch release demonstrates the agility of modern threat actors in targeting newly disclosed vulnerabilities. The impact of a successful exploit could be severe, potentially leading to unauthorized access, data exfiltration, and full system compromise of enterprise ERP environments. Organizations are advised to prioritize patching this vulnerability and review their network logs for any signs of unauthorized scanning or exploitation attempts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "ShinyHunters Exploited 3 Chained PeopleSoft Flaws",
+            "title": "Oracle PeopleSoft Zero-Day Was Actually Three Chained Flaws",
+            "content": "Researchers disclosed that the critical Oracle PeopleSoft vulnerability (CVE-2026-35273) exploited by ShinyHunters since May is actually a chain of three distinct flaws. The root cause is a server-side request forgery (SSRF), which allowed attackers to pivot into other weaknesses. Oracle consolidated these issues under a single CVE identifier, patching them in June 2026. This discovery highlights the complexity of modern zero-day attacks and the risks of chained vulnerabilities in enterprise applications. Organizations using PeopleSoft should verify they have applied the latest patches and monitor for any anomalous activity.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "CISA Adds Adobe Commerce, Brotli Flaws to KEV",
+            "title": "Active Adobe Commerce and Brotli Vulnerabilities Added to CISA Catalog",
+            "content": "CISA added two vulnerabilities affecting Adobe Commerce, Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog on Tuesday. The agency cited active exploitation evidence, prompting immediate remediation for affected systems. The flaws impact e-commerce platforms and the Brotli compression library used in web servers. Security teams must prioritize patching these vulnerabilities to prevent unauthorized access and potential data breaches. This action underscores the ongoing threat to web application infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Volt Typhoon Uses \"Silent Train\" Framework",
+            "title": "Researchers Uncover Volt Typhoon's Covert, Ephemeral Network",
+            "content": "Researchers uncovered Volt Typhoon's \"Silent Train\" framework, which uses rapidly rotating compromised devices to infiltrate hundreds of critical infrastructure networks. This covert, ephemeral network allows the China-linked threat group to maintain persistent access while evading detection. The framework highlights the advanced tactics used to target essential services globally. Security analysts recommend enhanced network segmentation and continuous monitoring of infrastructure devices. Understanding these tactics is crucial for defending against sophisticated state-sponsored cyber operations.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/volt-typhoon-silent-train-covert-ephemeral-network-black-lotus-labs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Hive Affiliate Sentenced to 70 Months",
+            "title": "Hive Ransomware Affiliate Sentenced in US Prison",
+            "content": "A Ukrainian man who conducted ransomware attacks for the Nefilim and Hive gangs has been sentenced to 70 months in a US prison. The affiliate targeted law firms and a healthcare provider during the COVID-19 pandemic. The FBI infiltrated the Hive gang's systems, which led to the disruption of their operations. This sentencing demonstrates the effectiveness of international law enforcement cooperation in dismantling ransomware networks. Organizations should review their incident response plans and maintain robust backup strategies.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Unsloth's Trust Setting Enables Malicious Code",
+            "title": "Unsloth's Trust Setting Could Allow Malicious Code Execution",
+            "content": "Pillar Security disclosed a high-severity vulnerability in Unsloth's model loader, allowing arbitrary Python code execution via a maliciously crafted model configuration. The \"trust\" setting, intended for convenience, could be exploited to run attacker-controlled code during model loading. This flaw affects AI developers using Unsloth to load large language models. Users should disable the trust setting and validate model configurations from untrusted sources. This incident underscores the security risks of AI development tools.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4241619/trusting-unsloths-trust-setting-could-mean-executing-malicious-code.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 26 2026",
             "headline": "Teams IT Support Scams Deploy Ransomware",
             "title": "Microsoft Teams External Chat Feature Used for Social Engineering and Malware Delivery",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Apple Backports CoreGraphics Fix to Older iOS 18 Devices",
-            "title": "Apple Backports Fix for Actively Exploited CoreGraphics Flaw to Older iPhones and iPads",
-            "content": "Apple backported a security fix for CVE-2026-86950, a high-severity out-of-bounds write in CoreGraphics with a CVSS score of 8.8, to older iPhones and iPads. The vulnerability allows for arbitrary code execution and was exploited in real-world cyber attacks. The backported patch is available for devices running iOS 18.0 and later. Users on older devices should update their systems immediately to mitigate the risk. This action follows a broader release of 286 bugs in iOS 27.2 and macOS 27.2.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "HPE Patches 8 Critical Flaws in Networking Products",
-            "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
-            "content": "Hewlett Packard Enterprise (HPE) released patches for eight high-severity security defects affecting its networking products. The vulnerabilities could lead to remote code execution and authentication bypass, posing significant risks to enterprise infrastructure. SecurityWeek reported that the post-authentication flaws could allow an attacker to compromise systems with minimal privileges. HPE strongly recommends administrators apply the patches immediately to prevent potential breaches. This update underscores the critical need for rigorous patch management in network environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Microsoft Authenticator Flaw Lets Apps Steal Work Tokens",
-            "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-            "content": "Microsoft fixed a flaw in its Authenticator app for Android that allowed malicious apps to steal work account tokens. The vulnerability, tracked as CVE-2026-80097, enabled an unpermissioned app to impersonate trusted Microsoft services like Teams. The attacker could then collect sign-in tokens from a victim's device without requiring any special permissions. The fix was deployed in Authenticator for Android version 5.1.0 and later. Users are advised to update the app and revoke any suspicious third-party application access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Apple Patches 286 Bugs in iOS 27.2 and macOS 27.2",
-            "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-            "content": "Apple released iOS 27.2 and macOS 27.2, patching 286 vulnerabilities including the CoreGraphics zero-day. The update backports the fix for CVE-2026-86950 to devices running iOS 18.0 and later. This addresses the high-severity out-of-bounds write that was actively exploited in the wild. The release also resolves 285 other flaws across the Apple ecosystem, ranging from sandbox escapes to memory corruption issues. Security professionals recommend immediate deployment of these patches to protect against active threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "NetScaler Zero-Days Signal a New Patching Normal",
-            "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
-            "content": "SecurityWeek highlights the recurring discovery of NetScaler zero-days as a persistent threat to enterprise infrastructure. The recent zero-day vulnerabilities underscore the critical need for primed patch management pipelines in Citrix environments. Organizations must maintain rapid response protocols to mitigate the risks of authentication bypass and remote code execution. This trend signals a new normal where zero-day threats to critical networking appliances are expected. Security teams should prioritize continuous monitoring and rapid patch application for NetScaler gateways.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "CISA Flags Active PHP2Shell Exploits",
-            "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two PHP2Shell vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, confirming active exploitation. Both flaws, rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution in affected PHP applications. The vulnerabilities impact a wide range of web servers and content management systems relying on vulnerable PHP versions. Organizations are urged to apply the available patches immediately to prevent server compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "ShinyHunters Mass-Exploits PeopleSoft",
-            "title": "CVE-2026-35273: SSRF to RCE in Oracle PeopleSoft",
-            "content": "Mandiant reported that the ShinyHunters group is actively mass-exploiting CVE-2026-35273 in Oracle PeopleSoft applications. This critical flaw, an SSRF to RCE vulnerability, allows attackers to bypass authentication and take full control of backend servers. The vulnerability, first reported to Oracle on June 10, 2026, has been widely targeted in the wild. Oracle has released patches, and organizations must apply them immediately to protect their enterprise environments.",
-            "source": "Zero Day Initiative - Blog",
-            "sourceUrl": "https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Node.js Brotli Flaw Enables RCE",
-            "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
-            "content": "A high-severity vulnerability in Google's Brotli compression library allows attackers to execute arbitrary code in affected applications. Tracked as CVE-2026-111497, the flaw is present in the Brotli decoder bundled with Node.js and other major software. The vulnerability enables remote code execution when processing maliciously crafted compressed data. Both Microsoft and the Node.js foundation are working to release patches to remediate the flaw.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "China-Linked Crew Disables Security Tools",
-            "title": "What happens when security tools go dark before the ransomware",
-            "content": "A China-linked ransomware crew disabled security tools at a critical infrastructure operator before launching its encryptor. This tactic of neutralizing defenses before the attack highlights a sophisticated operational shift in ransomware campaigns. The incident underscores the need for robust, multi-layered security architectures that can withstand targeted tool-disabling attacks. Organizations must assume that their primary security controls could be compromised and maintain resilient backup and recovery strategies.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/warlock-ransomware-storm-2603-sharepoint-attacks-op-ed/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "New Mexico Hospital Diverts Patients Due to Cyberattack",
-            "title": "Cybersecurity Incident Forces Major New Mexico Hospital to Divert Patients",
-            "content": "The University of New Mexico Health System diverted patients away from its Albuquerque main hospital and closed over 30 clinics following a cybersecurity issue. The disruption halted all routine appointments and forced emergency rerouting of incoming patients. The exact cause and scope of the breach remain under investigation by internal IT and external forensic teams. The incident underscores the critical vulnerability of healthcare infrastructure to disruptive cyberattacks. Healthcare facilities must prioritize network segmentation and incident response protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-issue-forces-a-major-new-mexico-hospital-to-divert-patients-and-close-clinics/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 28 2026",
+            "headline": "Chrome Autofill Now Pulls Gmail Data",
+            "title": "Chrome's Enhanced Autofill Expands to Extract Data from Gmail",
+            "content": "Google is expanding its enhanced autofill feature in Chrome to extract data directly from a user's Gmail inbox, starting today. This update allows the browser to automatically populate web forms with flight confirmations, package tracking numbers, and order details. Users must grant explicit permission for Chrome to access their inbox data. The feature builds on last year's autofill improvements that integrated Google Wallet and account details. This move significantly reduces manual data entry but raises new privacy considerations regarding browser-stored personal information.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Google DeepMind Introduces Gemini 4 Carbon",
+            "title": "Google DeepMind Announces Gemini 4 Carbon as Its Next Frontier Model",
+            "content": "Google DeepMind has unveiled Gemini 4 Carbon, positioning it as the next frontier model in its AI development pipeline. The model represents a significant architectural advancement, utilizing a carbon-based neural network design to improve processing efficiency. This development indicates Google's continued investment in large language model (LLM) technology to compete with other major AI providers. The company has not yet released specific performance benchmarks or availability details for Gemini 4 Carbon.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Chrome Autofill Scans Your Gmail Inbox",
+            "title": "Chrome's AI Autofill Scans Gmail for Form Data",
+            "content": "Chrome's updated AI-powered autofill can now scan a user's Gmail inbox to automatically fill out web forms with specific information. The feature extracts flight confirmations, package tracking numbers, and order details to streamline the user experience. Users must explicitly grant permission for this functionality to access their email data. The update builds upon previous autofill capabilities that sourced basic account information. This integration of email parsing into the browser highlights the growing convergence of web services and local applications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Google Opens Gemini to More Apps",
+            "title": "Google Opens Gemini and Search to Third-Party Apps",
+            "content": "Google has launched a new developer platform to allow businesses to integrate their services with Gemini and Search. This move aims to change how consumers discover and interact with third-party applications through Google's AI experiences. The platform will enable companies to embed their services directly into Google's AI-powered interfaces. This strategic shift could disrupt traditional app discovery models and increase Google's control over the digital ecosystem. The platform is currently available to select developers for initial testing.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Meta Delays Controversial AI Terms",
+            "title": "Meta Delays Implementation of Controversial AI Training Terms",
+            "content": "Meta is delaying the implementation of its new business terms related to AI training, potentially pushing the date past November 20th. The delay comes after significant backlash from publishers concerned about how their content will be used to train Meta's AI models. The company's communications head, Andy Stone, stated that Meta does not plan to make policy changes without full consultation with industry stakeholders. This postponement reflects the ongoing tension between tech companies and content creators over AI data usage rights.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "AI Leaders' Family Chat Claims Expose Disconnect",
+            "title": "Tech Leaders' AI Family Chat Claims Expose Disconnect from General Public",
+            "content": "Tech executives' boasts about using AI to connect with their families highlight a growing disconnect from the general public. This trend reflects a broader gap between AI developers' daily lives and the experiences of everyday users. The perception of AI as a tool for elite personal convenience rather than broad societal utility risks widening the digital divide and eroding public trust. Developers must prioritize user-centric design to bridge this chasm.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "South Korea Financial Sector Hit by New Cyberwave",
+            "title": "South Korea's Financial Sector Hit by New Cyberwave Highlighting AI-Driven Risks",
+            "content": "South Korean financial institutions are experiencing a fresh wave of cyberattacks targeting their core systems. The incidents underscore the escalating threat of AI-driven hacking tactics across the Asian financial technology sector. These attacks demonstrate the vulnerability of legacy banking infrastructure to sophisticated, automated exploitation. Financial institutions must accelerate the deployment of AI-powered threat detection and robust incident response protocols.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Nvidia's New Speech-to-Text Model Targets 40 Languages",
+            "title": "Nvidia's New Speech-to-Text Model Targets 40 Languages",
+            "content": "Nvidia has released a free speech-to-text (STT) model capable of transcribing up to 40 languages. The model is designed for offline audio processing, making it ideal for meeting and medical transcription applications. It does not support live audio, leaving the real-time transcription market to competitors like ElevenLabs. This release provides a powerful, open-source tool for organizations needing to process large volumes of recorded audio.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "Hugging Face Releases Nemotron 3.5 and Granary v2",
+            "title": "Hugging Face Releases Nemotron 3.5 and Granary v2 for Multilingual Transcription",
+            "content": "Hugging Face has introduced Nemotron 3.5 and Granary v2, an intelligent multilingual transcription suite. These models offer advanced prompting and adaptation capabilities for users processing text in multiple languages. The suite is designed to improve accuracy and context handling in complex transcription tasks. Developers can access these tools through Hugging Face's API to enhance their natural language processing (NLP) workflows.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 28 2026",
+            "headline": "xAI Buys Homes to Block Data Center Lawsuit",
+            "title": "xAI Buys Homes to Block Data Center Lawsuit",
+            "content": "A subsidiary of xAI is offering to purchase homes in a Mississippi neighborhood, contingent on residents dropping a lawsuit. The legal action targets a nearby data center and power plant over noise pollution complaints. This strategy aims to preemptively silence local opposition and secure the project's operational timeline. Community organizers are advised to review the terms of any buyout offers and consult with legal counsel.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+            "relatedResources": []
+        },
         {
             "date": "Oct 28 2026",
             "headline": "Amazon Set to Profit Billions From Anthropic IPO",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Apple is integrating an AI assistant into its iWork suite, including Pages, Keynote, and Numbers, built on its own models and OpenAI's technology. The assistant can analyze document context to automate tasks like slide design, animation, and content refinement. This move directly competes with Microsoft Copilot in the enterprise productivity space. Users must be aware of the hybrid data processing, as some tasks may route through external servers. IT administrators should review the new data handling policies before deploying these features.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Meta Director Quits to Build Microsoft Office Rival",
-            "title": "Meta AI Director Rohit Patel Departs to Launch Startup Ndoc",
-            "content": "Rohit Patel, Meta's AI director for eight years, is leaving to launch Ndoc, a startup aiming to challenge Microsoft Office Suite. Patel led Meta's AI evaluations and reinforcement learning teams. Ndoc will leverage his expertise to develop a next-generation productivity suite. This move highlights the intense competition in the enterprise software market. Developers should monitor Ndoc's progress as it targets Microsoft's dominant ecosystem.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Marvel's VisionQuest: AI Goes Rogue in Digital Daydreams",
-            "title": "Marvel's VisionQuest Explores AI Identity Through Digital Daydreams",
-            "content": "Marvel's new series VisionQuest features a superpowered robot exploring humanity through elaborate digital daydreams. The show depicts AI-powered beings cohabiting in a simulated home environment. It serves as a narrative exploration of AI consciousness and identity. The series reflects growing cultural interest in the societal implications of advanced AI. Tech leaders should consider the ethical narratives shaping public perception of AI.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Hugging Face Launches LFM3 for Multimodal AI",
-            "title": "Hugging Face Introduces LFM3 for Specialized Multimodal Models",
-            "content": "Hugging Face has launched LFM3, a new framework for building specialized multimodal models. LFM3 enables developers to integrate text, image, and audio processing in a single architecture. The platform supports fine-tuning for specific industry applications. This release addresses the demand for more efficient multimodal AI systems. Developers should evaluate LFM3 for their multimodal project requirements.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm3",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Frontier Labs Refute Exponential Time Hypothesis",
-            "title": "Frontier AI Labs Challenge Exponential Time Hypothesis",
-            "content": "Leading AI labs have published findings refuting the Exponential Time Hypothesis. MIT computer scientist Scott Aaronson explained OpenAI's discovery to TechCrunch. The research suggests certain AI problems may not require exponential time to solve. This challenges long-held assumptions in computational complexity theory. Security professionals should note the implications for AI safety and verification.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Anthropic's IPO Plan: Safety vs. Wall Street",
-            "title": "Anthropic's IPO Strategy Balances Mission and Markets",
-            "content": "Anthropic is preparing for an initial public offering while maintaining its AI safety mission. The company plans to tap public markets without compromising its core values. However, increased model capabilities introduce greater risks for shareholders. The dual approach reflects the tension between profit motives and safety priorities. Investors should scrutinize Anthropic's governance structure.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019470/anthropic-ipo-resist-investor-pressure-cut-corners-safety",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Google DeepMind's Genie 4 Adds Real-Time Audio",
-            "title": "Google DeepMind Unveils Genie 4 World Model with Real-Time Audio and Mid-Simulation Prompts",
-            "content": "Google DeepMind released Genie 4, an advanced world model currently in research preview for trusted testers. The model introduces real-time audio generation, more realistic simulations, and the ability to accept mid-simulation text prompts. This development pushes the boundaries of AI-driven interactive environments by allowing dynamic audio-visual adjustments during a running simulation. The feature is expected to significantly impact developers building complex, responsive virtual worlds.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Firefox Smart Window Gets AI Form-Filling",
-            "title": "Mozilla Enhances Firefox's Smart Window with AI-Powered Form Filling",
-            "content": "Mozilla is updating Smart Window, its AI-powered browsing experience, to include automated online form filling. The feature can extract data from a user's open tabs, such as an online portfolio or LinkedIn profile, to populate work history fields. This update aims to streamline web interactions for users by reducing manual data entry across different websites. The functionality is part of Mozilla's broader strategy to integrate generative AI directly into the browser.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "LLMs Questioned on Research Novelty",
-            "title": "Evaluating the Reliability of LLMs in Assessing Research Novelty",
-            "content": "A recent analysis questions the reliability of Large Language Models (LLMs) in judging the novelty of research ideas. The study highlights that LLMs can struggle to accurately distinguish between incremental work and genuinely groundbreaking concepts. This limitation poses a significant risk for academic and corporate R&D, where automated novelty checks could lead to flawed patent decisions or wasted resources. The findings suggest that human expert oversight remains crucial in evaluating research originality.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "Google DeepMind Unveils Genie 4",
-            "title": "Genie 4: Google DeepMind's New Generation of World Simulation",
-            "content": "Google DeepMind unveiled Genie 4, a new generation of world simulation designed to unlock unprecedented realism in real-time environments. The model represents a significant leap in AI's ability to generate and interact with dynamic, physics-based worlds. By leveraging advanced generative techniques, Genie 4 can simulate complex scenarios with high fidelity. This advancement is expected to provide researchers and developers with powerful tools for testing AI agents.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "DeepMind Unveils Genie 4 with Realistic Physics",
-            "title": "DeepMind Unveils Genie 4, Promising More Realistic Physics and Humans",
-            "content": "DeepMind unveiled Genie 4, a world model promising more realistic physics and human behavior in its simulations. The model is designed to generate highly detailed and interactive environments for training and testing AI systems. Genie 4 will be rolled out to developers and Google AI Ultra subscribers in the near future. This release positions DeepMind as a key player in the competitive landscape of foundational AI models.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/",
             "relatedResources": []
         }
     ],
