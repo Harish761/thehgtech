@@ -141,9 +141,61 @@ VENDORS = {
 def get_ist_now():
     return datetime.now(IST)
 
+def parse_flexible_timestamp(ts):
+    """Safely parse various ISO, UTC, and custom timestamp formats into timezone-aware datetime"""
+    if not ts or not isinstance(ts, str):
+        return None
+    cleaned = ts.strip()
+    if cleaned.lower() in ('just now', 'now', 'today'):
+        return datetime.now(timezone.utc)
+    cleaned = cleaned.replace('Z', '+00:00')
+    if cleaned.endswith(' UTC'):
+        cleaned = cleaned[:-4].strip() + '+00:00'
+    try:
+        dt = datetime.fromisoformat(cleaned)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
+    except Exception:
+        for fmt in ('%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M', '%Y-%m-%d'):
+            try:
+                dt = datetime.strptime(cleaned, fmt)
+                return dt.replace(tzinfo=timezone.utc)
+            except Exception:
+                pass
+    return None
+
 # ──────────────────────────────────────────────────────────────
 # IOC Fetching & Parsing
 # ──────────────────────────────────────────────────────────────
+class IOCList(list):
+    """List of IOC indicators carrying feed health/staleness metadata"""
+    def __init__(self, items=(), is_stale=False, feed_status='active'):
+        super().__init__(items)
+        self.is_stale = is_stale
+        self.feed_status = feed_status
+
+    def __copy__(self):
+        return IOCList(self, is_stale=self.is_stale, feed_status=self.feed_status)
+
+    def __getitem__(self, item):
+        res = super().__getitem__(item)
+        if isinstance(item, slice):
+            return IOCList(res, is_stale=self.is_stale, feed_status=self.feed_status)
+        return res
+
+    def __add__(self, other):
+        combined = super().__add__(other)
+        is_stale = getattr(self, 'is_stale', False) or getattr(other, 'is_stale', False)
+        feed_status = 'stale' if is_stale else 'active'
+        return IOCList(combined, is_stale=is_stale, feed_status=feed_status)
+
+    def __radd__(self, other):
+        combined = list(other) + list(self)
+        is_stale = getattr(self, 'is_stale', False) or getattr(other, 'is_stale', False)
+        feed_status = 'stale' if is_stale else 'active'
+        return IOCList(combined, is_stale=is_stale, feed_status=feed_status)
+
 def fetch_vendor_iocs(vendor_name, config):
     """Fetch IOCs from a single vendor"""
     iocs = []
@@ -160,10 +212,12 @@ def fetch_vendor_iocs(vendor_name, config):
         return ioc_history.get(indicator, now.isoformat())
     
     print(f"  - Fetching {vendor_name}...")
+    fetch_success = False
     try:
         if config["type"] == "text":
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
+            resp.raise_for_status()
             lines = resp.text.strip().split('\n')
             
             # Skip header lines (comments, CSV headers, etc)
@@ -201,6 +255,7 @@ def fetch_vendor_iocs(vendor_name, config):
             # Malware Bazaar CSV format
             import requests
             resp = requests.get(config["url"], timeout=15, headers={'User-Agent': 'TheHGTech-ThreatIntel/2.0'})
+            resp.raise_for_status()
             lines = resp.text.strip().split('\n')
             # No cap - store all IOCs
             if vendor_name == "SSL Blacklist":
@@ -241,6 +296,8 @@ def fetch_vendor_iocs(vendor_name, config):
         
         else:  # RSS type (if any remain)
             feed = feedparser.parse(config["url"])
+            if getattr(feed, 'bozo', False) and not getattr(feed, 'entries', []):
+                raise Exception(f"RSS feed parse error: {getattr(feed, 'bozo_exception', 'unknown')}")
             # No cap - store all IOCs
             for entry in feed.entries:
                 ioc = extract_ioc_from_entry(entry, vendor_name, now, config)
@@ -249,25 +306,54 @@ def fetch_vendor_iocs(vendor_name, config):
         
         print(f"    ✓ Got {len(iocs)} IOCs from {vendor_name}")
         time.sleep(1)  # Rate limiting
+        fetch_success = True
         
     # HG-THREAT-INTEL-V1: RESILIENCE | FALLBACK_TO_LKG_ON_FETCH_ERROR | 2026-10-18
     except Exception as e:
         print(f"    ✗ Failed {vendor_name}: {e}")
+        fetch_success = False
+
+    # Check whether the fetch outcome yielded usable fresh data
+    valid_fresh_count = len(iocs)
+    cutoff_utc = (now - timedelta(hours=IOC_EXPIRY_HOURS)).astimezone(timezone.utc)
+
+    def is_usable_recent_indicator(item):
+        ts = item.get('addedAt') or item.get('timestamp')
+        if not ts:
+            return False
+        dt = parse_flexible_timestamp(ts)
+        if not dt:
+            return False
+        return dt.astimezone(timezone.utc) > cutoff_utc
+
+    has_usable_fresh_data = fetch_success and valid_fresh_count > 0 and any(is_usable_recent_indicator(i) for i in iocs)
+
+    if not has_usable_fresh_data:
+        is_stale = True
+        feed_status = 'stale'
         if previous_iocs:
-            print(f"    ↳ Retaining {len(previous_iocs)} previous IOCs for {vendor_name}")
-            iocs = list(previous_iocs)
-    
-    # If the fetch succeeded but returned 0 IOCs (e.g. temporary upstream dropout), keep previous
-    if not iocs and previous_iocs:
-        print(f"    ⚠️ Warning: {vendor_name} returned 0 IOCs; preserving {len(previous_iocs)} previous IOCs")
-        iocs = list(previous_iocs)
+            print(f"    ↳ Upstream failure/outage for {vendor_name}; retaining Last-Known-Good data")
+            # First attempt to prune expired indicators within the LKG data
+            pruned_previous = prune_old_iocs(previous_iocs, retention_days=7)
+            if pruned_previous:
+                iocs = pruned_previous
+                print(f"    ✓ Preserving {len(iocs)} unexpired Last-Known-Good IOCs for {vendor_name}")
+            else:
+                # All previous IOCs are > 7 days old, but upstream feed is down/unavailable.
+                # Preserve Last-Known-Good IOCs to avoid zeroing out the dataset during an upstream outage.
+                iocs = list(previous_iocs)
+                print(f"    ⚠️ Warning: All {len(previous_iocs)} previous IOCs for {vendor_name} exceed 7 days; preserving Last-Known-Good data due to upstream outage")
+        else:
+            iocs = []
+    else:
+        is_stale = False
+        feed_status = 'active'
+        # Successful fetch with fresh data: apply standard 7-day retention pruning
+        iocs = prune_old_iocs(iocs, retention_days=7)
+        print(f"    ✓ Returning {len(iocs)} IOCs after 7-day retention pruning")
     # /HG-THREAT-INTEL-V1
 
-    # Prune IOCs older than 7 days before returning
-    iocs = prune_old_iocs(iocs, retention_days=7)
-    print(f"    ✓ Returning {len(iocs)} IOCs after 7-day retention pruning")
-    
-    return iocs
+    return IOCList(iocs, is_stale=is_stale, feed_status=feed_status)
 
 # ──────────────────────────────────────────────────────────────
 # Existing Parsing Functions
@@ -621,10 +707,8 @@ def prune_old_iocs(iocs, retention_days=7):
         try:
             added_at = ioc.get('addedAt', '')
             if added_at and added_at != '':
-                # Parse ISO format timestamp
-                ioc_date = datetime.fromisoformat(added_at.replace('Z', '+00:00'))
-                # Only remove if timestamp is valid AND old
-                if ioc_date <= cutoff:
+                ioc_date = parse_flexible_timestamp(added_at)
+                if ioc_date and ioc_date.astimezone(timezone.utc) <= cutoff:
                     keep = False
         except (ValueError, AttributeError, TypeError) as e:
             # If parsing fails, keep the IOC (better safe than sorry)
@@ -637,6 +721,8 @@ def prune_old_iocs(iocs, retention_days=7):
     if removed_count > 0:
         print(f"  Pruned {removed_count} IOCs older than {retention_days} days")
     
+    if hasattr(iocs, 'is_stale'):
+        return IOCList(pruned, is_stale=iocs.is_stale, feed_status=getattr(iocs, 'feed_status', 'active'))
     return pruned
 
 # ──────────────────────────────────────────────────────────────
@@ -1132,6 +1218,14 @@ def save_vendor_json_files(vendors_data):
         filename = f"{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         iocs = vendor_data.get('iocs', [])
         
+        # Safety guard: Never replace a populated vendor dataset with an empty dataset solely because upstream feed failed
+        if not iocs:
+            previous_disk_iocs = load_previous_ioc_data(vendor_name)
+            if previous_disk_iocs:
+                print(f"    ⚠️ Warning: Refusing to overwrite populated {filename} ({len(previous_disk_iocs)} IOCs) with empty dataset")
+                saved_files.append(filename)
+                continue
+        
         # Smart filtering for large datasets
         cap = IOC_DISPLAY_CAPS.get(vendor_name)
         if cap and len(iocs) > cap:
@@ -1141,6 +1235,26 @@ def save_vendor_json_files(vendors_data):
             filtered_iocs = iocs
             total_count = displayed_count = len(iocs)
         
+        # Stale-data semantics: Honor fetch outcome if provided, otherwise check indicator ages
+        fetch_is_stale = vendor_data.get('isStale', getattr(iocs, 'is_stale', False))
+        feed_status = vendor_data.get('feedStatus', getattr(iocs, 'feed_status', 'stale' if fetch_is_stale else 'active'))
+
+        all_expired = False
+        if iocs and not fetch_is_stale:
+            cutoff_utc = (get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)).astimezone(timezone.utc)
+            try:
+                all_expired = all(
+                    (parse_flexible_timestamp(ioc.get('addedAt') or ioc.get('timestamp')) or datetime.min.replace(tzinfo=timezone.utc)).astimezone(timezone.utc) <= cutoff_utc
+                    for ioc in iocs
+                    if ioc.get('addedAt') or ioc.get('timestamp')
+                )
+            except Exception:
+                all_expired = False
+
+        is_stale = fetch_is_stale or all_expired
+        if is_stale:
+            feed_status = 'stale'
+
         data = {
             'vendor': vendor_name,
             'lastUpdated': get_ist_now().isoformat(),
@@ -1148,6 +1262,8 @@ def save_vendor_json_files(vendors_data):
             'displayedCount': displayed_count,  # Filtered count
             'isCapped': total_count > displayed_count,
             'cappingStrategy': 'Recent threats + High-profile targets' if total_count > displayed_count else None,
+            'isStale': is_stale,
+            'feedStatus': feed_status,
             'iocs': filtered_iocs
         }
         
@@ -1237,6 +1353,8 @@ def generate_js(data):
             'updateFrequency': vendor_data['updateFrequency'],
             'iocCount': vendor_data.get('stats', {}).get('total', len(vendor_data.get('iocs', []))),
             'iocDataUrl': vendor_data.get('iocDataUrl'),
+            'isStale': vendor_data.get('isStale', False),
+            'feedStatus': vendor_data.get('feedStatus', 'active'),
             'stats': vendor_data.get('stats', {}),
             'types': vendor_data.get('types', []),
             'sampleIndicators': vendor_data.get('sampleIndicators', [])
@@ -1285,7 +1403,10 @@ def deduplicate_iocs(iocs):
             if new_time > existing_time:
                 seen[indicator] = ioc
     
-    return list(seen.values())
+    result = list(seen.values())
+    if hasattr(iocs, 'is_stale'):
+        return IOCList(result, is_stale=iocs.is_stale, feed_status=getattr(iocs, 'feed_status', 'active'))
+    return result
 
 def categorize_iocs(iocs):
     """Categorize IOCs by type"""
@@ -1630,18 +1751,45 @@ def run_hourly():
         
         # Combine and deduplicate (NO CAP - store unlimited IOCs!)
         all_iocs = deduplicate_iocs(new_iocs + current_iocs)
+        if not all_iocs and previous_iocs:
+            print(f"  ⚠️ Preserving {len(previous_iocs)} previous IOCs for {vendor_name} (outage fallback)")
+            all_iocs = list(previous_iocs)
         # /HG-THREAT-INTEL-V1
         
+        # Determine stale feed status from fetch outcome AND indicator ages
+        fetch_is_stale = getattr(new_iocs, 'is_stale', False)
+        feed_status = getattr(new_iocs, 'feed_status', 'stale' if fetch_is_stale else 'active')
+
+        all_expired = False
+        if all_iocs and not fetch_is_stale:
+            cutoff_utc = (get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)).astimezone(timezone.utc)
+            try:
+                all_expired = all(
+                    (parse_flexible_timestamp(ioc.get('addedAt') or ioc.get('timestamp')) or datetime.min.replace(tzinfo=timezone.utc)).astimezone(timezone.utc) <= cutoff_utc
+                    for ioc in all_iocs
+                    if ioc.get('addedAt') or ioc.get('timestamp')
+                )
+            except Exception:
+                all_expired = False
+
+        is_stale = fetch_is_stale or all_expired
+        if is_stale:
+            feed_status = 'stale'
+
         # Store vendor data
         vendors_data[vendor_name] = {
             'description': config['description'],
             'website': config['website'],
             'updateFrequency': config['updateFrequency'],
-            'iocs': all_iocs,
+            'iocs': IOCList(all_iocs, is_stale=is_stale, feed_status=feed_status),
+            'isStale': is_stale,
+            'feedStatus': feed_status,
             'stats': {
                 'total': len(all_iocs),
                 'newInLastHour': len([i for i in all_iocs if is_new(i['addedAt'])]),
-                'lastUpdate': format_timestamp(get_ist_now())
+                'lastUpdate': format_timestamp(get_ist_now()),
+                'isStale': is_stale,
+                'feedStatus': feed_status
             },
             'types': list(set(ioc.get('type', 'unknown') for ioc in all_iocs)),
             'sampleIndicators': [ioc['indicator'] for ioc in all_iocs[:5]],
@@ -1765,10 +1913,12 @@ def run_daily():
 def is_new(added_at_str):
     """Check if IOC was added in the last hour"""
     try:
-        added = datetime.fromisoformat(added_at_str.replace('Z', '+00:00'))
-        now = get_ist_now()
-        return (now - added).total_seconds() < 3600
-    except:
+        dt = parse_flexible_timestamp(added_at_str)
+        if not dt:
+            return False
+        now_utc = get_ist_now().astimezone(timezone.utc)
+        return (now_utc - dt.astimezone(timezone.utc)).total_seconds() < 3600
+    except Exception:
         return False
 
 # ──────────────────────────────────────────────────────────────

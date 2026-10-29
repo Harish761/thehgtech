@@ -25,6 +25,9 @@ from fetch_threat_intel import (
     load_previous_ioc_data,
     deduplicate_iocs,
     remove_expired_iocs,
+    prune_old_iocs,
+    save_vendor_json_files,
+    is_new,
     generate_html_snapshot
 )
 from unittest.mock import patch, MagicMock
@@ -207,14 +210,249 @@ class TestThreatIntelPipeline(unittest.TestCase):
         self.assertIsNone(parse_ssl_blacklist("short", self.now, self.dummy_config, 'SSL Blacklist', self.dummy_history))
 
     def test_load_previous_ioc_data_slug_normalization(self):
-        """Verify vendor slug resolution correctly handles dots and hyphens (e.g. Blocklist.de)"""
-        blocklist_iocs = load_previous_ioc_data("Blocklist.de")
-        self.assertIsInstance(blocklist_iocs, list)
-        self.assertGreater(len(blocklist_iocs), 0, "Blocklist.de IOCs must be found in ioc-data/blocklist-de.json")
+        """Verify vendor slug resolution correctly handles dots and hyphens (e.g. Blocklist.de) using isolated fixtures"""
+        import tempfile
+        import json
 
-        bazaar_iocs = load_previous_ioc_data("Malware Bazaar")
-        self.assertIsInstance(bazaar_iocs, list)
-        self.assertGreater(len(bazaar_iocs), 0, "Malware Bazaar IOCs must be found in ioc-data/malware-bazaar.json")
+        with tempfile.TemporaryDirectory() as tmpdir:
+            ioc_dir = os.path.join(tmpdir, 'ioc-data')
+            os.makedirs(ioc_dir, exist_ok=True)
+
+            # Isolated fixture data for testing filename resolution independently of live feed data
+            blocklist_fixture = {
+                'vendor': 'Blocklist.de',
+                'iocs': [{'indicator': '198.51.100.1', 'type': 'ip', 'addedAt': '2026-10-18T12:00:00Z'}]
+            }
+            bazaar_fixture = {
+                'vendor': 'Malware Bazaar',
+                'iocs': [{'indicator': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'type': 'hash', 'addedAt': '2026-10-18T12:00:00Z'}]
+            }
+
+            with open(os.path.join(ioc_dir, 'blocklist-de.json'), 'w', encoding='utf-8') as f:
+                json.dump(blocklist_fixture, f)
+            with open(os.path.join(ioc_dir, 'malware-bazaar.json'), 'w', encoding='utf-8') as f:
+                json.dump(bazaar_fixture, f)
+
+            orig_cwd = os.getcwd()
+            try:
+                os.chdir(tmpdir)
+                blocklist_iocs = load_previous_ioc_data("Blocklist.de")
+                self.assertIsInstance(blocklist_iocs, list)
+                self.assertGreater(len(blocklist_iocs), 0, "Blocklist.de IOCs must be found in ioc-data/blocklist-de.json")
+                self.assertEqual(blocklist_iocs[0]['indicator'], '198.51.100.1')
+
+                bazaar_iocs = load_previous_ioc_data("Malware Bazaar")
+                self.assertIsInstance(bazaar_iocs, list)
+                self.assertGreater(len(bazaar_iocs), 0, "Malware Bazaar IOCs must be found in ioc-data/malware-bazaar.json")
+                self.assertEqual(bazaar_iocs[0]['indicator'], 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+            finally:
+                os.chdir(orig_cwd)
+
+    @patch('requests.get')
+    def test_fetch_vendor_iocs_http_410_falls_back_to_lkg(self, mock_get):
+        """Verify HTTP 410 raises HTTPError and safely falls back to Last-Known-Good data"""
+        import requests
+        mock_resp = MagicMock()
+        mock_resp.status_code = 410
+        mock_resp.raise_for_status.side_effect = requests.exceptions.HTTPError("410 Client Error: Gone")
+        mock_get.return_value = mock_resp
+
+        test_config = {
+            'url': 'https://bazaar.abuse.ch/export/csv/recent/',
+            'type': 'csv',
+            'website': 'https://bazaar.abuse.ch/'
+        }
+        with patch('fetch_threat_intel.load_previous_ioc_data') as mock_load:
+            mock_load.return_value = [
+                {'type': 'hash', 'indicator': 'abc123hash', 'addedAt': '2026-10-21T12:00:00Z', 'campaign': 'Test'}
+            ]
+            result_iocs = fetch_vendor_iocs('Malware Bazaar', test_config)
+            self.assertIsInstance(result_iocs, list)
+            self.assertGreater(len(result_iocs), 0, "HTTP 410 must retain Last-Known-Good IOCs from storage")
+            self.assertEqual(result_iocs[0]['indicator'], 'abc123hash')
+            self.assertTrue(getattr(result_iocs, 'is_stale', False), "HTTP 410 outage must flag dataset as stale")
+            self.assertEqual(getattr(result_iocs, 'feed_status', ''), 'stale')
+
+    @patch('requests.get')
+    def test_seven_day_boundary_preserves_lkg_during_upstream_outage(self, mock_get):
+        """Verify all IOCs older than 7 days are preserved (not pruned to 0) when upstream feed is down"""
+        import requests
+        mock_resp = MagicMock()
+        mock_resp.status_code = 410
+        mock_resp.raise_for_status.side_effect = requests.exceptions.HTTPError("410 Client Error: Gone")
+        mock_get.return_value = mock_resp
+
+        test_config = {
+            'url': 'https://bazaar.abuse.ch/export/csv/recent/',
+            'type': 'csv',
+            'website': 'https://bazaar.abuse.ch/'
+        }
+        old_iocs = [
+            {'type': 'hash', 'indicator': f'old_hash_{i}', 'addedAt': '2026-10-15T00:00:00Z', 'timestamp': '2026-10-15 00:00 UTC', 'campaign': 'Legacy'}
+            for i in range(5)
+        ]
+        with patch('fetch_threat_intel.load_previous_ioc_data') as mock_load:
+            mock_load.return_value = old_iocs
+            result_iocs = fetch_vendor_iocs('Malware Bazaar', test_config)
+            self.assertIsInstance(result_iocs, list)
+            self.assertEqual(len(result_iocs), 5, "Upstream outage must preserve LKG even if older than 7 days")
+            # Verify original timestamps are strictly retained and indicators are not relabeled as new
+            self.assertEqual(result_iocs[0]['addedAt'], '2026-10-15T00:00:00Z')
+            self.assertEqual(result_iocs[0]['timestamp'], '2026-10-15 00:00 UTC')
+            self.assertFalse(is_new(result_iocs[0]['addedAt']), "Stale indicators must not be treated as new in last hour")
+            self.assertTrue(getattr(result_iocs, 'is_stale', False), "Preserved LKG on outage must be marked is_stale=True")
+            self.assertEqual(getattr(result_iocs, 'feed_status', ''), 'stale')
+
+    @patch('requests.get')
+    def test_seven_day_boundary_prunes_during_successful_fetch(self, mock_get):
+        """Verify ordinary retention pruning is applied when upstream fetch succeeds with fresh data"""
+        from datetime import datetime, timezone, timedelta
+        fresh_hash = "a" * 64
+        expired_hash = "b" * 64
+
+        fresh_time = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+        expired_time = (datetime.now(timezone.utc) - timedelta(days=10)).isoformat()
+
+        csv_lines = ["# header"] * 9 + [
+            f'"{fresh_time}","{fresh_hash}","md5","sha1","rep","sample.exe","exe","mime","Mirai"',
+            f'"{expired_time}","{expired_hash}","md5","sha1","rep","sample.exe","exe","mime","Mirai"'
+        ]
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.raise_for_status.return_value = None
+        mock_resp.text = "\n".join(csv_lines)
+        mock_get.return_value = mock_resp
+
+        test_config = {
+            'url': 'https://bazaar.abuse.ch/export/csv/recent/',
+            'type': 'csv',
+            'website': 'https://bazaar.abuse.ch/'
+        }
+        with patch('fetch_threat_intel.load_previous_ioc_data') as mock_load:
+            mock_load.return_value = [
+                {'type': 'hash', 'indicator': expired_hash, 'addedAt': expired_time, 'campaign': 'Mirai'}
+            ]
+            result_iocs = fetch_vendor_iocs('Malware Bazaar', test_config)
+            self.assertIsInstance(result_iocs, list)
+            self.assertEqual(len(result_iocs), 1, "Successful fetch must prune IOCs older than 7 days")
+            self.assertEqual(result_iocs[0]['indicator'], fresh_hash)
+            self.assertFalse(getattr(result_iocs, 'is_stale', True), "Successful fresh fetch must have is_stale=False")
+            self.assertEqual(getattr(result_iocs, 'feed_status', ''), 'active')
+
+    @patch('requests.get')
+    def test_successful_fetch_without_usable_indicators_or_timestamps_marked_stale(self, mock_get):
+        """Verify successful HTTP 200 with 0 indicators or expired/unusable timestamps is marked stale, never active"""
+        from datetime import datetime, timezone, timedelta
+
+        # Case A: HTTP 200 with empty body (0 valid indicators)
+        mock_resp_empty = MagicMock()
+        mock_resp_empty.status_code = 200
+        mock_resp_empty.raise_for_status.return_value = None
+        mock_resp_empty.text = "# comment only\n"
+        mock_get.return_value = mock_resp_empty
+
+        test_config = {
+            'url': 'https://openphish.com/feed.txt',
+            'type': 'text',
+            'website': 'https://openphish.com/'
+        }
+        with patch('fetch_threat_intel.load_previous_ioc_data') as mock_load:
+            mock_load.return_value = [
+                {'type': 'url', 'indicator': 'hxxps://saved[.]com', 'addedAt': '2026-10-28T00:00:00Z', 'campaign': 'LKG'}
+            ]
+            res_empty = fetch_vendor_iocs('OpenPhish', test_config)
+            self.assertTrue(getattr(res_empty, 'is_stale', False), "Empty feed must be marked is_stale=True")
+            self.assertEqual(getattr(res_empty, 'feed_status', ''), 'stale')
+            self.assertEqual(len(res_empty), 1, "Must retain LKG on empty response")
+
+        # Case B: HTTP 200 with indicators whose timestamps are all expired (> 7 days)
+        expired_time = (datetime.now(timezone.utc) - timedelta(days=12)).isoformat()
+        expired_hash = "c" * 64
+        csv_lines = ["# header"] * 9 + [
+            f'"{expired_time}","{expired_hash}","md5","sha1","rep","sample.exe","exe","mime","Mirai"'
+        ]
+        mock_resp_expired = MagicMock()
+        mock_resp_expired.status_code = 200
+        mock_resp_expired.raise_for_status.return_value = None
+        mock_resp_expired.text = "\n".join(csv_lines)
+        mock_get.return_value = mock_resp_expired
+
+        bazaar_config = {
+            'url': 'https://bazaar.abuse.ch/export/csv/recent/',
+            'type': 'csv',
+            'website': 'https://bazaar.abuse.ch/'
+        }
+        with patch('fetch_threat_intel.load_previous_ioc_data') as mock_load:
+            mock_load.return_value = [
+                {'type': 'hash', 'indicator': expired_hash, 'addedAt': expired_time, 'campaign': 'Mirai'}
+            ]
+            res_expired = fetch_vendor_iocs('Malware Bazaar', bazaar_config)
+            self.assertTrue(getattr(res_expired, 'is_stale', False), "Feed with all expired timestamps must be marked is_stale=True")
+            self.assertEqual(getattr(res_expired, 'feed_status', ''), 'stale')
+
+    def test_save_vendor_json_files_never_replaces_populated_with_empty(self):
+        """Verify save_vendor_json_files refuses to overwrite populated file with empty dataset on feed failure"""
+        import tempfile
+        import json
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            orig_cwd = os.getcwd()
+            try:
+                os.chdir(tmpdir)
+                with open('malware-bazaar.json', 'w', encoding='utf-8') as f:
+                    json.dump({'vendor': 'Malware Bazaar', 'iocs': [{'indicator': 'existing_hash'}]}, f)
+
+                vendors_data = {
+                    'Malware Bazaar': {
+                        'description': 'Malware samples',
+                        'website': 'https://bazaar.abuse.ch',
+                        'updateFrequency': 'Real-time',
+                        'iocs': [],
+                        'stats': {'total': 0, 'newInLastHour': 0, 'lastUpdate': 'now'},
+                        'types': [],
+                        'sampleIndicators': [],
+                        'iocDataUrl': 'https://example.com/malware-bazaar.json'
+                    }
+                }
+                save_vendor_json_files(vendors_data)
+
+                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                self.assertGreater(len(data.get('iocs', [])), 0, "Populated file must not be replaced with empty dataset")
+
+                # Test stale indicators output semantics
+                stale_iocs = [{'indicator': 'stale_hash', 'addedAt': '2026-10-15T00:00:00Z'}]
+                vendors_data['Malware Bazaar']['iocs'] = stale_iocs
+                save_vendor_json_files(vendors_data)
+                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
+                    stale_data = json.load(f)
+                self.assertTrue(stale_data.get('isStale'), "Preserved LKG with indicators > 7 days must be marked isStale=True")
+                self.assertEqual(stale_data.get('feedStatus'), 'stale', "Stale feed must have feedStatus='stale'")
+
+                # Test fresh indicators output semantics
+                from datetime import datetime, timezone
+                fresh_iocs = [{'indicator': 'fresh_hash', 'addedAt': datetime.now(timezone.utc).isoformat()}]
+                vendors_data['Malware Bazaar']['iocs'] = fresh_iocs
+                vendors_data['Malware Bazaar']['isStale'] = False
+                vendors_data['Malware Bazaar']['feedStatus'] = 'active'
+                save_vendor_json_files(vendors_data)
+                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
+                    fresh_data = json.load(f)
+                self.assertFalse(fresh_data.get('isStale'), "Fresh feed must have isStale=False")
+                self.assertEqual(fresh_data.get('feedStatus'), 'active', "Fresh feed must have feedStatus='active'")
+
+                # Test fetch-level stale outcome with retained unexpired LKG indicators
+                unexpired_lkg = [{'indicator': 'lkg_hash', 'addedAt': datetime.now(timezone.utc).isoformat()}]
+                vendors_data['Malware Bazaar']['iocs'] = unexpired_lkg
+                vendors_data['Malware Bazaar']['isStale'] = True
+                vendors_data['Malware Bazaar']['feedStatus'] = 'stale'
+                save_vendor_json_files(vendors_data)
+                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
+                    outage_lkg_data = json.load(f)
+                self.assertTrue(outage_lkg_data.get('isStale'), "Fetch-level stale outcome must be honored even if LKG indicators have recent timestamps")
+                self.assertEqual(outage_lkg_data.get('feedStatus'), 'stale')
+            finally:
+                os.chdir(orig_cwd)
 
     @patch('requests.get')
     def test_fetch_vendor_iocs_network_failure_resilience(self, mock_get):
