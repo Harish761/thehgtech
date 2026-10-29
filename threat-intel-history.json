@@ -4,7 +4,7 @@
     "categories": {
       "Phishing": 3441,
       "Malware": 35350,
-      "C2": 10938,
+      "C2": 10920,
       "Botnet": 4297
     }
   },
@@ -47,9 +47,9 @@
     "Adware.OfferCore": 1,
     "SalatStealer": 7,
     "GodPotato": 1,
-    "Spamhaus DROP List": 1761,
-    "CINS Threat List": 38153,
-    "SSH Attacks": 10873,
+    "Spamhaus DROP List": 618,
+    "CINS Threat List": 37985,
+    "SSH Attacks": 10826,
     "malware_download": 34528,
     "Potassium": 25,
     "StrelaStealer": 3,
