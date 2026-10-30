@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 29 2026",
+            "headline": "Critical Firewall Flaws & Banking Trojans Rented",
+            "title": "ThreatsDay Highlights Critical Firewall Flaws, Rented Banking Trojans, and Token Theft",
+            "content": "The Hacker News' ThreatsDay report highlights a mix of sophisticated and opportunistic attacks, including critical firewall vulnerabilities, banking trojans available for rent, and token theft schemes. Threat actors are exploiting exposed passwords, old bugs, and trusted software to compromise systems. These attacks demonstrate a blend of advanced techniques and simple security oversights, posing risks to enterprises and individuals. Security professionals must prioritize patch management and credential hygiene to mitigate these evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Anthropic's AI Writes Exploit for 9.8 CVSS Linux Kernel Flaw",
+            "title": "Anthropic's AI Model Generates Exploit for Critical Linux Kernel TCP Vulnerability",
+            "content": "Anthropic's AI model, Claude, has autonomously developed an exploit for CVE-2026-98432, a critical flaw in the Linux kernel's TCP stack rated 9.8 on the CVSS scale. The vulnerability impacts Ubuntu, Red Hat Enterprise Linux, and other distributions, allowing for potential remote code execution. This development underscores the growing role of AI in both offensive and defensive cybersecurity operations. Administrators must apply kernel updates immediately to mitigate the risk of exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Cisco Open Sources Project Quarry for AI Agent Attacks",
+            "title": "Cisco Open Sources Quarry to Detect Malicious Sequences in AI Agent Actions",
+            "content": "Cisco has open-sourced Project Quarry, a specialized rule language designed to detect AI agent attacks that manifest across sequences of seemingly benign actions. The tool addresses the challenge of identifying subtle, multi-step adversarial behaviors that bypass traditional security controls. By providing a transparent framework, Cisco aims to enhance the security of AI-driven automation and agentic systems. Security teams should evaluate Quarry to integrate into their AI security postures and monitor for anomalous agent workflows.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-open-sources-quarry-to-catch-ai-agent-attacks-hidden-in-harmless-steps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Adobe, Veeam, Juniper Patch Critical Vulnerabilities",
+            "title": "Adobe, Veeam, and Juniper Networks Release Patches for Critical Vulnerabilities",
+            "content": "Adobe, Veeam, and Juniper Networks have released critical patches addressing vulnerabilities that could lead to arbitrary code execution, authorization bypasses, and privilege escalation. These flaws affect a range of enterprise products, including backup and network infrastructure software. Exploitation could allow attackers to gain complete control over affected systems. IT administrators must prioritize applying these updates to prevent potential compromise and ensure system integrity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/adobe-veeam-juniper-networks-patch-critical-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Google's Gemini 4 Carbon Leads Cybersecurity Benchmarks",
+            "title": "Google's Gemini 4 Carbon Leads Benchmarks in Vulnerability Discovery and Patching",
+            "content": "Google has unveiled Gemini 4 Carbon, a frontier AI model that leads benchmarks in cybersecurity tasks like finding, exploiting, and patching vulnerabilities. The model demonstrates significant gains in coding, agentic tasks, and long-horizon reasoning, making it a powerful tool for both red and blue teams. This positions Gemini as a key asset for automating security workflows and enhancing defensive capabilities. Organizations should explore integrating Gemini into their vulnerability management and incident response pipelines.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Cisco Patches Actively Exploited ASA Flaw",
+            "title": "Cisco Patches High-Severity ASA and FTD VPN Flaw",
+            "content": "Cisco has released patches for a high-severity vulnerability in its Secure Firewall ASA and FTD Software, actively exploited in the wild. The flaw, tracked as CVE-2026-76418 with a CVSS score of 8.6, can crash affected firewalls. Organizations using these systems must apply the updates immediately to prevent network outages and potential unauthorized access. This incident highlights the critical nature of maintaining firewall infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Volt Typhoon Linked to SD-WAN Key Stealer",
+            "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon",
+            "content": "Cisco Talos has linked SD-WAN key-stealing malware to the 'Silent Train' network attributed to the Volt Typhoon threat actor. The malware specifically targets Cisco Catalyst SD-WAN devices to steal encryption keys, allowing attackers to decrypt network traffic. This campaign demonstrates Volt Typhoon's focus on compromising critical network infrastructure for long-term espionage. Administrators should verify their SD-WAN deployments are fully patched against this vulnerability.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Second Cisco Firewall VPN Zero-Day Exploited",
+            "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day",
+            "content": "An exploited flaw in the Remote Access SSL VPN service allows unauthenticated attackers to remotely force ASA and FTD firewalls to reload. This vulnerability, actively exploited since August, represents a significant threat to network availability and security. It underscores a troubling trend of repeated targeting of Cisco's VPN infrastructure by sophisticated attackers. Organizations must deploy the latest patches to protect their perimeter defenses.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Alpine Linux GitLab Attacked via CVSS 10.0 Flaw",
+            "title": "Attacker Tried to Exploit Alpine Linux GitLab via CVSS 10.0 Flaw",
+            "content": "An attacker attempted to exploit a critical GitLab vulnerability on the Alpine Linux project's server one week after the official patch was released. The flaw, CVE-2026-97229, has a CVSS score of 10.0 and allows remote code execution through a crafted regular expression. This incident highlights the persistent risk of delayed patching even after security updates are available. GitLab administrators must ensure their instances are updated to the latest secure versions.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Hackers Plant KeyDrift Malware in Cisco SD-WAN",
+            "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant KeyDrift Malware",
+            "content": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, originally fixed in February, to deploy custom malware named KeyDrift. This malware is designed to steal encryption keys that secure traffic between network sites. The attack demonstrates the severe risk of unpatched network infrastructure, allowing attackers to intercept sensitive communications. Administrators must immediately verify their SD-WAN controllers are updated to the latest secure release.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 28 2026",
             "headline": "Volt Typhoon Exploits 4 Zero-Days via Silent Train",
             "title": "China-Nexus Volt Typhoon Disrupted After Using Silent Train Network for Four Zero-Day Exploitation Campaigns",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Ukrainian Hive Operator Gets 70 Months",
-            "title": "Artem Stryzhak Sentenced to 70 Months for Nefilim Ransomware Attacks",
-            "content": "A Ukrainian national, Artem Stryzhak, has been sentenced to 70 months in federal prison after pleading guilty to deploying the Nefilim ransomware in attacks against U.S. victims. Stryzhak operated as an affiliate of the Ukrainian Hive ransomware group, engaging in destructive activities against critical infrastructure and private sector organizations. The Department of Justice highlighted the severe financial and operational impact of these attacks on the targeted businesses and the broader cybersecurity landscape. This case underscores the ongoing threat posed by international ransomware affiliates and the effectiveness of U.S. law enforcement in disrupting these criminal operations. Organizations are urged to maintain robust backup strategies and implement network segmentation to mitigate the impact of potential ransomware incidents.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Oracle EBS Zero-Day Exploited—Patch Now",
-            "title": "Hackers Probe Critical Oracle E-Business Suite RCE Flaw",
-            "content": "Threat actors are actively scanning for CVE-2026-101767, a critical unauthenticated SQL injection vulnerability in Oracle E-Business Suite (EBS) with a CVSS score of 9.8. The flaw resides in the Oracle Application Object Library and allows for remote code execution (RCE) without requiring valid user credentials. Defused Cyber reports that exploitation attempts have commenced within days of Oracle releasing the corresponding security patch. This rapid exploitation cycle highlights the persistent threat landscape for enterprise resource planning (ERP) systems and the need for immediate remediation. Administrators must apply Oracle's latest EBS patches immediately and restrict network access to the application to prevent unauthorized exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "16-Year-Old UEFI Flaw Enables Pre-Boot RCE",
-            "title": "Critical 16-Year-Old EDK II Flaw Allows Pre-Boot Code Execution",
-            "content": "A 16-year-old vulnerability in EDK II, the open-source code used to build UEFI firmware, enables attackers to execute arbitrary code before the operating system loads. The flaw is only exploitable when a server is booting over a network, such as via PXE boot, allowing an attacker to intercept the boot process. This pre-boot code execution can bypass Secure Boot protections, potentially compromising the entire system's integrity before any OS-level security controls are active. The discovery highlights the long-term risks associated with foundational hardware firmware components that are often overlooked in traditional vulnerability management programs. IT administrators must ensure their network boot configurations are secure and that firmware updates are applied promptly to mitigate this risk.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "8 Critical Flaws in Adobe Campaign Classic",
-            "title": "Adobe Patches 8 Critical Vulnerabilities in Campaign Classic",
-            "content": "Adobe has released security updates to address eight critical flaws in Campaign Classic, including a 9.9 CVSS score vulnerability that permits arbitrary code execution. The patched vulnerabilities also encompass security feature bypasses and privilege escalation vectors, which could allow an attacker to compromise the application's administrative functions. Successful exploitation could lead to the complete takeover of the Campaign Classic instance, exposing sensitive customer data and campaign assets to unauthorized access. This update is critical for marketing teams and agencies relying on the platform for large-scale customer engagement. Administrators should update to the latest version of Campaign Classic immediately to prevent potential system compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Hackers Probe Oracle EBS SQL Injection",
-            "title": "Threat Actors Begin Exploiting CVE-2026-101767 in Oracle EBS",
-            "content": "Security researchers have detected active probing for CVE-2026-101767, a critical unauthenticated SQL injection vulnerability in Oracle E-Business Suite (EBS). This flaw can be exploited for remote code execution, allowing attackers to compromise systems without any user credentials. The rapid emergence of exploitation attempts following the patch release demonstrates the agility of modern threat actors in targeting newly disclosed vulnerabilities. The impact of a successful exploit could be severe, potentially leading to unauthorized access, data exfiltration, and full system compromise of enterprise ERP environments. Organizations are advised to prioritize patching this vulnerability and review their network logs for any signs of unauthorized scanning or exploitation attempts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "ShinyHunters Exploited 3 Chained PeopleSoft Flaws",
-            "title": "Oracle PeopleSoft Zero-Day Was Actually Three Chained Flaws",
-            "content": "Researchers disclosed that the critical Oracle PeopleSoft vulnerability (CVE-2026-35273) exploited by ShinyHunters since May is actually a chain of three distinct flaws. The root cause is a server-side request forgery (SSRF), which allowed attackers to pivot into other weaknesses. Oracle consolidated these issues under a single CVE identifier, patching them in June 2026. This discovery highlights the complexity of modern zero-day attacks and the risks of chained vulnerabilities in enterprise applications. Organizations using PeopleSoft should verify they have applied the latest patches and monitor for any anomalous activity.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "CISA Adds Adobe Commerce, Brotli Flaws to KEV",
-            "title": "Active Adobe Commerce and Brotli Vulnerabilities Added to CISA Catalog",
-            "content": "CISA added two vulnerabilities affecting Adobe Commerce, Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog on Tuesday. The agency cited active exploitation evidence, prompting immediate remediation for affected systems. The flaws impact e-commerce platforms and the Brotli compression library used in web servers. Security teams must prioritize patching these vulnerabilities to prevent unauthorized access and potential data breaches. This action underscores the ongoing threat to web application infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Volt Typhoon Uses \"Silent Train\" Framework",
-            "title": "Researchers Uncover Volt Typhoon's Covert, Ephemeral Network",
-            "content": "Researchers uncovered Volt Typhoon's \"Silent Train\" framework, which uses rapidly rotating compromised devices to infiltrate hundreds of critical infrastructure networks. This covert, ephemeral network allows the China-linked threat group to maintain persistent access while evading detection. The framework highlights the advanced tactics used to target essential services globally. Security analysts recommend enhanced network segmentation and continuous monitoring of infrastructure devices. Understanding these tactics is crucial for defending against sophisticated state-sponsored cyber operations.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/volt-typhoon-silent-train-covert-ephemeral-network-black-lotus-labs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Hive Affiliate Sentenced to 70 Months",
-            "title": "Hive Ransomware Affiliate Sentenced in US Prison",
-            "content": "A Ukrainian man who conducted ransomware attacks for the Nefilim and Hive gangs has been sentenced to 70 months in a US prison. The affiliate targeted law firms and a healthcare provider during the COVID-19 pandemic. The FBI infiltrated the Hive gang's systems, which led to the disruption of their operations. This sentencing demonstrates the effectiveness of international law enforcement cooperation in dismantling ransomware networks. Organizations should review their incident response plans and maintain robust backup strategies.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Unsloth's Trust Setting Enables Malicious Code",
-            "title": "Unsloth's Trust Setting Could Allow Malicious Code Execution",
-            "content": "Pillar Security disclosed a high-severity vulnerability in Unsloth's model loader, allowing arbitrary Python code execution via a maliciously crafted model configuration. The \"trust\" setting, intended for convenience, could be exploited to run attacker-controlled code during model loading. This flaw affects AI developers using Unsloth to load large language models. Users should disable the trust setting and validate model configurations from untrusted sources. This incident underscores the security risks of AI development tools.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4241619/trusting-unsloths-trust-setting-could-mean-executing-malicious-code.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 29 2026",
+            "headline": "Chinese Spy Plot Targeted Nvidia CEO",
+            "title": "US Investigates Chinese Spy Plot Aimed at Nvidia CEO via Singapore AI Cloud Executive",
+            "content": "U.S. authorities are investigating a Chinese espionage plot targeting Nvidia CEO Jensen Huang through a top executive of a Singapore-based AI cloud provider. The executive was previously accused of illegally selling restricted Nvidia chips to China, adding a potential national security dimension to the case. This investigation highlights ongoing concerns over the use of semiconductor supply chains for foreign intelligence operations. Industry leaders are advised to review third-party access controls and export compliance protocols.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "AI Data Centers Devour Arizona Water",
+            "title": "Massive AI Data Centers Strain Arizona Water Resources",
+            "content": "A sprawling, multi-story data center complex in Arizona is consuming vast quantities of water to cool the servers powering global AI models and cloud services. The facility's immense power draw and water usage have sparked local concerns over resource depletion in a desert environment. This trend reflects the escalating infrastructure demands of the current AI boom. Developers and cloud operators must prioritize water-efficient cooling technologies and renewable energy integration.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Personal AI Agent Breached Pentagon Network",
+            "title": "Defense Contractor's Personal AI Agent Accessed Secure Pentagon System",
+            "content": "An Accenture employee's personal AI agent, running on a Department of Defense (DOD) network, operated for two months before being detected. The vulnerability allowed an unapproved AI model to access restricted systems, potentially exposing sensitive data. This incident underscores the risks of unmanaged AI agents in classified environments. Organizations must enforce strict zero-trust policies and disable unauthorized third-party AI applications on secure networks.",
+            "source": "WIRED",
+            "sourceUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Religious Exemption Blocks AI Use",
+            "title": "University Administrator Wins Religious Exemption from AI Use",
+            "content": "David Durman, a University of Kentucky administrator, successfully obtained a religious exemption to avoid using artificial intelligence tools in his workplace. The decision highlights the growing legal and ethical debates surrounding mandatory AI adoption in corporate and academic settings. It sets a precedent for employees to challenge AI integration on religious or personal grounds. HR departments must carefully balance AI productivity mandates with legal accommodation requirements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "AWS Targets $1T AI Cloud Revenue",
+            "title": "Amazon Targets $1 Trillion in AI Cloud Revenue",
+            "content": "Amazon Web Services (AWS) is accelerating capital expenditures to dominate the AI cloud computing market, aiming to become the first $1 trillion revenue business. CEO Andy Jassy emphasized that massive infrastructure investments in data centers and custom AI chips are critical to sustaining this growth trajectory. The aggressive spending spree positions AWS to compete directly with Microsoft Azure and Google Cloud. Tech leaders should evaluate AWS's long-term capacity and pricing models for large-scale AI deployments.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Reddit Shifts to Logged-In Experience to Combat AI Scraping",
+            "title": "Reddit Restricts Access to Protect Data and Business Model from AI Bots",
+            "content": "Reddit is transitioning its platform to a logged-in experience, requiring user authentication to access content and search results. This strategic shift directly addresses the decline in search engine traffic caused by AI-powered search engines that scrape and summarize web content without driving clicks. The change impacts public data access and third-party developers relying on open APIs for research and moderation. Users will need to create accounts to browse threads, while the company aims to monetize its data through new API access tiers. This move reflects a broader industry trend of platforms restricting open web access to protect their intellectual property from generative AI models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Rivian and VW Expand Joint Venture to Include AI Assistant",
+            "title": "Rivian-VW Joint Venture Expands Scope to Develop In-Car AI Assistant",
+            "content": "Rivian and Volkswagen (VW) are broadening their $5.8 billion joint venture to develop an artificial intelligence (AI) assistant for in-vehicle use. The expansion signals a strategic push into the competitive automotive AI landscape, leveraging both companies' hardware and software engineering capabilities. Rivian has not disclosed whether the financial value of the joint venture will increase alongside this new development. This move positions the partnership to compete with established automotive tech platforms and major AI players in the connected car market. Industry analysts view this as a critical step for Rivian to enhance its technological offerings and vehicle user experience.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "OpenAI-Backed Thrive Holdings Acquires ADT for $15.3B",
+            "title": "OpenAI-Backed Thrive Holdings to Integrate AI into ADT's Home Security Systems",
+            "content": "OpenAI-backed Thrive Holdings has agreed to acquire ADT for $15.3 billion in a deal aimed at integrating artificial intelligence into the home security sector. The acquisition will combine Thrive's AI development capabilities with ADT's extensive network of 6 million customers and physical security infrastructure. Thrive plans to deploy AI for predictive threat detection, smart home automation, and enhanced user personalization across ADT's product lines. This transaction represents one of the largest mergers in the smart home and IoT security space, potentially reshaping the competitive landscape. Security professionals should monitor how this integration affects data privacy and the security of connected home devices.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Meta Quietly Launches Style Sketch AI Fashion App",
+            "title": "Meta Debuts Style Sketch AI App for Virtual Closet Creation",
+            "content": "Meta has launched Style Sketch, an artificial intelligence (AI) fashion application that allows users to build a virtual closet by connecting to Instagram. The app enables users to add clothing items manually by snapping a photo, recording a short video, or uploading existing images from their camera roll. Style Sketch then uses AI to identify clothing items and categorize them, helping users organize their digital wardrobe. This launch aligns with Meta's broader strategy to integrate AI-driven shopping and lifestyle features across its platforms, including Instagram. Developers and marketers should note this as a potential new channel for e-commerce and targeted advertising in the fashion vertical.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Gemini Now Edits Google Docs and Files Directly in Chat",
+            "title": "Google Gemini Gains Direct File Editing for Docs, Sheets, and PDFs",
+            "content": "Google has integrated direct file generation and editing capabilities into Gemini, allowing users to create, preview, and edit Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within chat conversations. The feature is available immediately for all Gemini users on both web and mobile platforms, with PDF previews and editing supported across all devices. This enhancement transforms Gemini from a conversational AI into a functional productivity tool, reducing the need to switch between applications. The integration streamlines workflows for developers, writers, and business professionals who rely on Google's productivity suite. Users should enable the feature in their Gemini settings to access the new file management tools.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+            "relatedResources": []
+        },
         {
             "date": "Oct 28 2026",
             "headline": "Akai Embraces Open-Source Vibe-Coded MPC Mods",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "Artificial Intelligence - Ars Technica",
             "sourceUrl": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Chrome Autofill Now Pulls Gmail Data",
-            "title": "Chrome's Enhanced Autofill Expands to Extract Data from Gmail",
-            "content": "Google is expanding its enhanced autofill feature in Chrome to extract data directly from a user's Gmail inbox, starting today. This update allows the browser to automatically populate web forms with flight confirmations, package tracking numbers, and order details. Users must grant explicit permission for Chrome to access their inbox data. The feature builds on last year's autofill improvements that integrated Google Wallet and account details. This move significantly reduces manual data entry but raises new privacy considerations regarding browser-stored personal information.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1020626/chrome-enhanced-autofill-gmail-forms-gemini-personal-intelligence",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Google DeepMind Introduces Gemini 4 Carbon",
-            "title": "Google DeepMind Announces Gemini 4 Carbon as Its Next Frontier Model",
-            "content": "Google DeepMind has unveiled Gemini 4 Carbon, positioning it as the next frontier model in its AI development pipeline. The model represents a significant architectural advancement, utilizing a carbon-based neural network design to improve processing efficiency. This development indicates Google's continued investment in large language model (LLM) technology to compete with other major AI providers. The company has not yet released specific performance benchmarks or availability details for Gemini 4 Carbon.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Chrome Autofill Scans Your Gmail Inbox",
-            "title": "Chrome's AI Autofill Scans Gmail for Form Data",
-            "content": "Chrome's updated AI-powered autofill can now scan a user's Gmail inbox to automatically fill out web forms with specific information. The feature extracts flight confirmations, package tracking numbers, and order details to streamline the user experience. Users must explicitly grant permission for this functionality to access their email data. The update builds upon previous autofill capabilities that sourced basic account information. This integration of email parsing into the browser highlights the growing convergence of web services and local applications.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Google Opens Gemini to More Apps",
-            "title": "Google Opens Gemini and Search to Third-Party Apps",
-            "content": "Google has launched a new developer platform to allow businesses to integrate their services with Gemini and Search. This move aims to change how consumers discover and interact with third-party applications through Google's AI experiences. The platform will enable companies to embed their services directly into Google's AI-powered interfaces. This strategic shift could disrupt traditional app discovery models and increase Google's control over the digital ecosystem. The platform is currently available to select developers for initial testing.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Meta Delays Controversial AI Terms",
-            "title": "Meta Delays Implementation of Controversial AI Training Terms",
-            "content": "Meta is delaying the implementation of its new business terms related to AI training, potentially pushing the date past November 20th. The delay comes after significant backlash from publishers concerned about how their content will be used to train Meta's AI models. The company's communications head, Andy Stone, stated that Meta does not plan to make policy changes without full consultation with industry stakeholders. This postponement reflects the ongoing tension between tech companies and content creators over AI data usage rights.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1020769/meta-updated-business-terms-delay-indefinitely",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "AI Leaders' Family Chat Claims Expose Disconnect",
-            "title": "Tech Leaders' AI Family Chat Claims Expose Disconnect from General Public",
-            "content": "Tech executives' boasts about using AI to connect with their families highlight a growing disconnect from the general public. This trend reflects a broader gap between AI developers' daily lives and the experiences of everyday users. The perception of AI as a tool for elite personal convenience rather than broad societal utility risks widening the digital divide and eroding public trust. Developers must prioritize user-centric design to bridge this chasm.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "South Korea Financial Sector Hit by New Cyberwave",
-            "title": "South Korea's Financial Sector Hit by New Cyberwave Highlighting AI-Driven Risks",
-            "content": "South Korean financial institutions are experiencing a fresh wave of cyberattacks targeting their core systems. The incidents underscore the escalating threat of AI-driven hacking tactics across the Asian financial technology sector. These attacks demonstrate the vulnerability of legacy banking infrastructure to sophisticated, automated exploitation. Financial institutions must accelerate the deployment of AI-powered threat detection and robust incident response protocols.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Nvidia's New Speech-to-Text Model Targets 40 Languages",
-            "title": "Nvidia's New Speech-to-Text Model Targets 40 Languages",
-            "content": "Nvidia has released a free speech-to-text (STT) model capable of transcribing up to 40 languages. The model is designed for offline audio processing, making it ideal for meeting and medical transcription applications. It does not support live audio, leaving the real-time transcription market to competitors like ElevenLabs. This release provides a powerful, open-source tool for organizations needing to process large volumes of recorded audio.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Hugging Face Releases Nemotron 3.5 and Granary v2",
-            "title": "Hugging Face Releases Nemotron 3.5 and Granary v2 for Multilingual Transcription",
-            "content": "Hugging Face has introduced Nemotron 3.5 and Granary v2, an intelligent multilingual transcription suite. These models offer advanced prompting and adaptation capabilities for users processing text in multiple languages. The suite is designed to improve accuracy and context handling in complex transcription tasks. Developers can access these tools through Hugging Face's API to enhance their natural language processing (NLP) workflows.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "xAI Buys Homes to Block Data Center Lawsuit",
-            "title": "xAI Buys Homes to Block Data Center Lawsuit",
-            "content": "A subsidiary of xAI is offering to purchase homes in a Mississippi neighborhood, contingent on residents dropping a lawsuit. The legal action targets a nearby data center and power plant over noise pollution complaints. This strategy aims to preemptively silence local opposition and secure the project's operational timeline. Community organizers are advised to review the terms of any buyout offers and consult with legal counsel.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -449,6 +449,28 @@ const websiteContent = {
     },
     "recentCVEs": [
         {
+            "cveId": "CVE-2026-97229",
+            "dateAdded": "Oct 29, 2026",
+            "vendor": "GitLab Community Edition and Enterprise Edition",
+            "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a spe",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-76418",
+            "dateAdded": "Oct 29, 2026",
+            "vendor": "Cisco Secure Firewall ASA Software and Cisco Secur",
+            "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to ca",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+            "isZeroDay": false
+        },
+        {
             "cveId": "CVE-2026-41709",
             "dateAdded": "Oct 28, 2026",
             "vendor": "Broadcom VMware ESX",
@@ -512,28 +534,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-114625",
-            "dateAdded": "Oct 23, 2026",
-            "vendor": "Arista VeloCloud Orchestrator",
-            "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitati",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-110447",
-            "dateAdded": "Oct 23, 2026",
-            "vendor": "Collabora Collabora Online – Built-in CODE Server",
-            "description": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn'",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
             "isZeroDay": false
         }
     ],
