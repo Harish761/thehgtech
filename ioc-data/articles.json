@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "enterprise-vulnerability-management-exposure-blind-spot-2026",
+      "date": "October 30, 2026",
+      "category": "Cybersecurity",
+      "badge": "DEEP DIVE",
+      "title": "The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era",
+      "excerpt": "Enterprise security isn't just struggling to patch. It's struggling to understand its own environment. This analysis examines how gaps in asset, identity and dependency visibility slow both vulnerability remediation and incident response, and how one shared context foundation supports both.",
+      "tags": [
+        "Vulnerability Management",
+        "Incident Response",
+        "CMDB",
+        "Asset Visibility",
+        "Detection Engineering",
+        "Attack Surface Management",
+        "CAASM",
+        "SBOM",
+        "Identity Security",
+        "AI Security",
+        "SOC",
+        "NIST SP 800-61",
+        "ISO 27001"
+      ],
+      "author": "Harish G",
+      "featured": true,
+      "readTime": "14 min read",
+      "image": "/images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png",
+      "externalUrl": "/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html"
+    },
+    {
       "id": "report-20261026",
       "title": "Weekly Threat Report: October 26, 2026",
       "date": "October 26, 2026",
