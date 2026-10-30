@@ -5,8 +5,16 @@
     <link>https://thehgtech.com</link>
     <description>Expert cybersecurity analysis, threat intelligence briefings, ransomware forensics, and zero-day research.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2026 09:40:35 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 14:22:14 GMT</lastBuildDate>
     <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Exposure Blind Spot in Enterprise Security</title>
+      <link>https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html</link>
+      <guid isPermaLink="true">https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <description>The visibility gaps that slow vulnerability remediation also weaken incident response. How CMDB, identity and dependency context support both in the AI era.</description>
+      <content:encoded><![CDATA[<p>The visibility gaps that slow vulnerability remediation also weaken incident response. How CMDB, identity and dependency context support both in the AI era.</p><p><a href="https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>Deep Dive: The BAT-BMS Controversy Isn&#x27;t a Bluetooth Hack — It&#x27;s an IoT Security Design Failure</title>
       <link>https://thehgtech.com/articles/bat-bms-security-design-failure-2026.html</link>
@@ -239,14 +247,6 @@
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
       <description>Palo Alto Networks releases 2026 cybersecurity predictions. From autonomous AI attacks to quantum threats, here</description>
       <content:encoded><![CDATA[<p>Palo Alto Networks releases 2026 cybersecurity predictions. From autonomous AI attacks to quantum threats, here</p><p><a href="https://thehgtech.com/articles/cybersecurity-predictions-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
-    </item>
-    <item>
-      <title>Delve AI Scandal: Why Fabricated Audits Just Killed &quot;Checkbox Security&quot; [2026]</title>
-      <link>https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</link>
-      <guid isPermaLink="true">https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html</guid>
-      <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
-      <description>493 fabricated audit reports. One AI startup. The Delve scandal exposes the dangerous reality of automated compliance. Here is what it means for your GRC strategy.</description>
-      <content:encoded><![CDATA[<p>493 fabricated audit reports. One AI startup. The Delve scandal exposes the dangerous reality of automated compliance. Here is what it means for your GRC strategy.</p><p><a href="https://thehgtech.com/articles/delve-ai-compliance-scandal-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
   </channel>
 </rss>
