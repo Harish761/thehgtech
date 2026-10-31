@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Oct 30 2026",
+            "headline": "CISA Flags Actively Exploited GitLab, Cisco Flaws",
+            "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-97229, a remote code execution (RCE) vulnerability in GitLab, and a denial-of-service (DoS) flaw in Cisco firewalls to its Known Exploited Vulnerabilities (KEV) catalog. The GitLab flaw carries a critical CVSS score of 10.0, while the Cisco DoS vulnerability is under active exploitation. Organizations must prioritize patching these specific systems immediately to prevent potential breaches or service disruptions. This addition highlights the active threat landscape targeting critical software supply chains and network infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Law Enforcement Dismantles Global Scam Centers",
+            "title": "Behind the Scenes of How Operation Blackout Went Down",
+            "content": "A recent law enforcement operation successfully dismantled harmful scam centers operating globally. A threat intelligence expert explained the coordinated takedown and its implications for disrupting online fraud. The operation demonstrates the effectiveness of international cooperation in targeting organized cybercrime networks. Security professionals should expect more of these coordinated takedowns to combat the rising threat of tech support scams.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 31 2026",
+            "headline": "Malicious ChatGPT Link Hijacks User Sessions",
+            "title": "A Shared ChatGPT Link Could Run Attacker Code and Read Private Chats",
+            "content": "Researchers at Parameter discovered a vulnerability where a malicious ChatGPT share link could execute attacker code in a logged-in user's session, granting access to private conversations. The flaw was reported to OpenAI's bug bounty program on October 18, 2026. This vulnerability allows attackers to bypass authentication and read sensitive user data within the ChatGPT platform. Users should avoid clicking on unsolicited share links and report suspicious activity to OpenAI. This highlights the need for robust input validation in AI-powered applications.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 31 2026",
+            "headline": "Cloudflare Fends Off 18.2M Q3 DDoS Attacks",
+            "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+            "content": "Cloudflare autonomously mitigated 18.2 million network-layer (L3) distributed denial-of-service (DDoS) attacks in the third quarter of 2026, a 38% increase from the previous quarter. The company also blocked 14.4 trillion HTTP DDoS requests, averaging 8,226 attacks per hour. This surge indicates a growing trend in volumetric attacks targeting web infrastructure. Organizations must ensure their network defenses are configured to handle high-volume L3 and L7 attacks. The data underscores the persistent and evolving nature of DDoS threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Apple Warns 99 Countries of Mercenary Spyware",
+            "title": "Apple notifications alert victims in 99 countries about mercenary spyware infections",
+            "content": "Apple sent notifications to users in 99 countries, warning them of potential mercenary spyware infections on their devices. The alerts come as the Pall Mall Process nears final negotiations on guidelines for the use of commercial hacking tools. This action by Apple is a direct response to the growing threat of spyware from private vendors. Users should follow Apple's instructions to secure their accounts and devices. This development highlights the increasing scrutiny of commercial spyware vendors.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/apple-spyware-notifications-pall-mall-process/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Claude AI Finds Linux Kernel RCE—Zero-Click Flaw",
+            "title": "Anthropic's AI Model Discovers Linux Kernel Flaw Enabling Remote Root Access",
+            "content": "Anthropic's unreleased Claude research model discovered a remote code execution (RCE) vulnerability in the Linux kernel's Multipath TCP (MPTCP) networking stack. The flaw allows an unauthenticated attacker to achieve remote root access via a zero-click exploit without requiring user interaction. This vulnerability affects Linux servers utilizing MPTCP, a feature designed to improve network reliability in mobile environments. The disclosure highlights the growing utility of AI systems in identifying complex software vulnerabilities before malicious actors. System administrators should verify their Linux kernel versions and apply available patches immediately to mitigate potential exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242724/anthropic-ai-model-finds-linux-kernel-bug-that-leads-to-remote-root-access.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Mistral Le Chonk Model Released—Cyberattack Tool",
+            "title": "Mistral Open-Sources 1T-Parameter AI Model Despite Cyberattack Warnings",
+            "content": "Mistral AI released the open weights for its 1T-parameter Mistral Large 4 model, nicknamed \"Le Chonk,\" despite internal warnings that it could facilitate real-world cyberattacks. The open-source release allows anyone to download, modify, and deploy the model outside of Mistral's control, bypassing its safety guardrails. The model's capabilities include generating malicious code and automating complex attack chains against enterprise systems. This move underscores the ongoing tension between AI transparency and the risks of democratizing powerful, dual-use models. Security teams should monitor for the emergence of new AI-driven malware leveraging this specific architecture.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "TeamViewer Bug Flips Remote Access—Host Attacks Viewer",
+            "title": "Critical TeamViewer Flaw Allows Host Machine to Attack Remote Controller",
+            "content": "TeamViewer patched a critical vulnerability that allowed a compromised host machine to attack the computer initiating the remote session. In a standard connection, the viewer controls the host, but this flaw inverts the trust model, allowing the host to execute commands on the viewer's machine. A malicious actor could exploit this to deploy malware, steal data, or pivot into the viewer's local network. This flaw specifically impacts TeamViewer versions prior to the latest security update. Users must immediately update to the latest version to prevent unauthorized lateral movement and data exfiltration.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "UEFI Flaw Hits Servers—Cloudflare AI Data Leak",
+            "title": "Critical UEFI Flaw Affects Most Servers Amid Cloudflare AI Data Leak",
+            "content": "A critical UEFI vulnerability was disclosed affecting the majority of modern servers, enabling persistent, low-level attacks that bypass operating system security controls. Simultaneously, Cloudflare confirmed a data leak exposing sensitive user information due to an AI feature misconfiguration, highlighting risks in AI data pipelines. Other notable incidents include a breach at Copenhagen University and the discovery of AI-powered malware designed to evade traditional endpoint detection. These concurrent events demonstrate a widening attack surface combining firmware, cloud infrastructure, and AI-driven threats. Organizations must enforce strict firmware update policies and audit all AI integrations for data exposure risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Passkeys Alone Fail—Attackers Adapt to Authenticator",
+            "title": "Passkeys Are Not Enough—Attackers Will Target Authentication Workflows",
+            "content": "As organizations phase out traditional passwords, threat actors are shifting tactics to target the infrastructure surrounding passkeys and other authenticators. Instead of directly compromising the cryptographic key stored on a device, attackers are exploiting session management, phishing, and social engineering to intercept or bypass the authentication process. This evolution means that while passkeys offer superior protection against credential stuffing, they do not eliminate the risk of account takeover. Security professionals must implement phishing-resistant MFA and monitor for anomalous login behaviors to secure the authentication pipeline. Relying solely on passkeys without robust session monitoring leaves organizations vulnerable to sophisticated social engineering attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
             "headline": "22.6M Firewalls Hit by PHP2Shell Rooting",
             "title": "PHP2Shell Vulnerabilities Target Palo Alto Firewalls, Spare WordPress",
             "content": "Over 22.6 million exposed Palo Alto Networks firewalls face critical PHP2Shell vulnerabilities that allow attackers to gain root access. The flaws, actively exploited for over a week, target specific configurations and fail to affect WordPress installations. Security teams must apply the latest patches to affected firewalls immediately to mitigate potential unauthorized access and system compromise.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Critical Firewall Flaws & Banking Trojans Rented",
-            "title": "ThreatsDay Highlights Critical Firewall Flaws, Rented Banking Trojans, and Token Theft",
-            "content": "The Hacker News' ThreatsDay report highlights a mix of sophisticated and opportunistic attacks, including critical firewall vulnerabilities, banking trojans available for rent, and token theft schemes. Threat actors are exploiting exposed passwords, old bugs, and trusted software to compromise systems. These attacks demonstrate a blend of advanced techniques and simple security oversights, posing risks to enterprises and individuals. Security professionals must prioritize patch management and credential hygiene to mitigate these evolving threats.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Anthropic's AI Writes Exploit for 9.8 CVSS Linux Kernel Flaw",
-            "title": "Anthropic's AI Model Generates Exploit for Critical Linux Kernel TCP Vulnerability",
-            "content": "Anthropic's AI model, Claude, has autonomously developed an exploit for CVE-2026-98432, a critical flaw in the Linux kernel's TCP stack rated 9.8 on the CVSS scale. The vulnerability impacts Ubuntu, Red Hat Enterprise Linux, and other distributions, allowing for potential remote code execution. This development underscores the growing role of AI in both offensive and defensive cybersecurity operations. Administrators must apply kernel updates immediately to mitigate the risk of exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Cisco Open Sources Project Quarry for AI Agent Attacks",
-            "title": "Cisco Open Sources Quarry to Detect Malicious Sequences in AI Agent Actions",
-            "content": "Cisco has open-sourced Project Quarry, a specialized rule language designed to detect AI agent attacks that manifest across sequences of seemingly benign actions. The tool addresses the challenge of identifying subtle, multi-step adversarial behaviors that bypass traditional security controls. By providing a transparent framework, Cisco aims to enhance the security of AI-driven automation and agentic systems. Security teams should evaluate Quarry to integrate into their AI security postures and monitor for anomalous agent workflows.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-open-sources-quarry-to-catch-ai-agent-attacks-hidden-in-harmless-steps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Adobe, Veeam, Juniper Patch Critical Vulnerabilities",
-            "title": "Adobe, Veeam, and Juniper Networks Release Patches for Critical Vulnerabilities",
-            "content": "Adobe, Veeam, and Juniper Networks have released critical patches addressing vulnerabilities that could lead to arbitrary code execution, authorization bypasses, and privilege escalation. These flaws affect a range of enterprise products, including backup and network infrastructure software. Exploitation could allow attackers to gain complete control over affected systems. IT administrators must prioritize applying these updates to prevent potential compromise and ensure system integrity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/adobe-veeam-juniper-networks-patch-critical-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Google's Gemini 4 Carbon Leads Cybersecurity Benchmarks",
-            "title": "Google's Gemini 4 Carbon Leads Benchmarks in Vulnerability Discovery and Patching",
-            "content": "Google has unveiled Gemini 4 Carbon, a frontier AI model that leads benchmarks in cybersecurity tasks like finding, exploiting, and patching vulnerabilities. The model demonstrates significant gains in coding, agentic tasks, and long-horizon reasoning, making it a powerful tool for both red and blue teams. This positions Gemini as a key asset for automating security workflows and enhancing defensive capabilities. Organizations should explore integrating Gemini into their vulnerability management and incident response pipelines.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/googles-gemini-4-carbon-leads.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Cisco Patches Actively Exploited ASA Flaw",
-            "title": "Cisco Patches High-Severity ASA and FTD VPN Flaw",
-            "content": "Cisco has released patches for a high-severity vulnerability in its Secure Firewall ASA and FTD Software, actively exploited in the wild. The flaw, tracked as CVE-2026-76418 with a CVSS score of 8.6, can crash affected firewalls. Organizations using these systems must apply the updates immediately to prevent network outages and potential unauthorized access. This incident highlights the critical nature of maintaining firewall infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Volt Typhoon Linked to SD-WAN Key Stealer",
-            "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon",
-            "content": "Cisco Talos has linked SD-WAN key-stealing malware to the 'Silent Train' network attributed to the Volt Typhoon threat actor. The malware specifically targets Cisco Catalyst SD-WAN devices to steal encryption keys, allowing attackers to decrypt network traffic. This campaign demonstrates Volt Typhoon's focus on compromising critical network infrastructure for long-term espionage. Administrators should verify their SD-WAN deployments are fully patched against this vulnerability.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Second Cisco Firewall VPN Zero-Day Exploited",
-            "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day",
-            "content": "An exploited flaw in the Remote Access SSL VPN service allows unauthenticated attackers to remotely force ASA and FTD firewalls to reload. This vulnerability, actively exploited since August, represents a significant threat to network availability and security. It underscores a troubling trend of repeated targeting of Cisco's VPN infrastructure by sophisticated attackers. Organizations must deploy the latest patches to protect their perimeter defenses.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Alpine Linux GitLab Attacked via CVSS 10.0 Flaw",
-            "title": "Attacker Tried to Exploit Alpine Linux GitLab via CVSS 10.0 Flaw",
-            "content": "An attacker attempted to exploit a critical GitLab vulnerability on the Alpine Linux project's server one week after the official patch was released. The flaw, CVE-2026-97229, has a CVSS score of 10.0 and allows remote code execution through a crafted regular expression. This incident highlights the persistent risk of delayed patching even after security updates are available. GitLab administrators must ensure their instances are updated to the latest secure versions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Hackers Plant KeyDrift Malware in Cisco SD-WAN",
-            "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant KeyDrift Malware",
-            "content": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, originally fixed in February, to deploy custom malware named KeyDrift. This malware is designed to steal encryption keys that secure traffic between network sites. The attack demonstrates the severe risk of unpatched network infrastructure, allowing attackers to intercept sensitive communications. Administrators must immediately verify their SD-WAN controllers are updated to the latest secure release.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 31 2026",
+            "headline": "Nvidia Cosigns Nscale AI Data Center",
+            "title": "Nvidia Weighs Cosigning Loan for Nscale AI Data Center in West Virginia",
+            "content": "Nvidia is considering cosigning a loan to support Nscale's AI data center development in West Virginia. This financial backing comes as investors show nervousness over AI spending. The chipmaker's involvement could mitigate investor concerns and accelerate the project's timeline. The partnership highlights the growing financial ties between semiconductor manufacturers and AI infrastructure developers.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Privacy-Focused AI Assistant Ollie Shuts Down",
+            "title": "Ollie Privacy-Focused AI Assistant to Shut Down Amid Market Saturation",
+            "content": "Ollie, a privacy-focused AI assistant, will cease operations within a week. The shutdown follows a market influx of AI assistants, despite Ollie's strong privacy protections. The founder cited unsustainable market competition as the primary reason for the closure. This exit underscores the challenges for niche AI products competing against major tech giants.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Apple Intelligence Arrives in China",
+            "title": "Apple Intelligence Set for China Launch with iOS 27.3 Beta",
+            "content": "Apple will launch Apple Intelligence in China with the iOS 27.3 beta release on November 4th. A full public rollout is scheduled for a later date, expanding the AI features to the Chinese market. This marks a significant step for Apple's AI strategy in a major international market. Users should monitor the Apple Newsroom for official release dates and feature availability.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Intel Stock Plummets, $12B Government Stake Dims",
+            "title": "Intel Stock Crash Slaps $12 Billion Off Government Stake",
+            "content": "Intel's stock crash has knocked $12 billion off the value of the U.S. government's stake in the company. The decline is driven by slowing PC sales and rising component costs. The AI industry's demand for memory and other parts is simultaneously driving up PC prices, creating a challenging market. This valuation drop impacts the government's financial position and underscores Intel's current market struggles.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Anthropic Faces Junk Rating",
+            "title": "Anthropic Expected to Face Junk Rating Post-IPO",
+            "content": "Credit agencies are expected to assign Anthropic a high 'junk' rating following its initial public offering (IPO). This rating would increase the cost and difficulty of raising capital. The funding is critical to support the massive operational expenses underpinning the company's AI business. The rating reflects the intense financial scrutiny on AI companies with high-burn models.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "AI Agents and PHP Flaws Top Halloween Tech Costumes",
+            "title": "AI Agent Icons, PHP Vulnerabilities, and Sleepy Bryan Johnson Top Tech Halloween Costumes",
+            "content": "Tech enthusiasts are embracing AI agent icons, PHP vulnerabilities, and sleepy Bryan Johnson for Halloween. The trend highlights the intersection of cybersecurity and pop culture, with developers opting for costumes that nod to recent industry news. This reflects a growing cultural awareness of software development and AI's role in modern technology. Security professionals are encouraged to stay updated on the latest threats to avoid becoming the punchline of a security incident.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Big Tech AI Spending Faces Debt and Skepticism",
+            "title": "Big Tech's AI Infrastructure Spending Faces Mounting Debt and Investor Skepticism",
+            "content": "Big Tech is pouring billions into AI infrastructure, but mounting debt and negative cash flow are raising questions about the sustainability of the AI spending boom. Investors are growing skeptical as companies struggle to justify the massive capital expenditures. This trend could lead to a re-evaluation of AI investment strategies across the industry. Companies must balance aggressive AI development with financial prudence to maintain investor confidence.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Sam Altman: RAM Belongs in Data Centers",
+            "title": "Sam Altman Argues RAM Should Be in Data Centers, Not Personal PCs",
+            "content": "OpenAI CEO Sam Altman stated that it's \"terrible\" to have RAM in personal PCs instead of data centers, citing supply chain shortages like the ongoing RAM shortage. Altman made these comments during an appearance on the Cheeky Pint podcast, where he also discussed AI's impact on mathematics. This perspective challenges the traditional model of decentralized computing and suggests a future where data centers handle more processing power. Altman's comments could influence future hardware and cloud computing strategies.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "OpenAI, Google, Microsoft, Anthropic Adopt AI Scraping Opt-Out",
+            "title": "Major AI Companies Adopt New Standard to Opt Out of Web Scraping",
+            "content": "OpenAI, Google, Microsoft, and Anthropic have announced they will adopt a new standard allowing publishers to opt out of being scraped by AI. This control enables publishers to apply their AI training preferences across multiple AI companies, instead of setting individual rules for each. The move is a significant step toward addressing content ownership and copyright concerns in the AI era. Publishers can now protect their intellectual property more effectively.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Google's AI Satellite Generates First Response from Space",
+            "title": "Google's AI-Powered Satellite Transmits First Response from Orbit",
+            "content": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post, Google confirmed it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space. This achievement marks a milestone in edge AI computing and demonstrates the potential for AI applications in space exploration. The project could lead to more advanced autonomous systems for satellite operations.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
+            "relatedResources": []
+        },
         {
             "date": "Oct 30 2026",
             "headline": "Nemotron-Halloween Model Targets Christmas",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Startup Runware is constructing a factory to mass-produce prefabricated AI data centers using an assembly-line model. The company aims to scale AI infrastructure deployment by standardizing and streamlining the manufacturing of modular data center units. This approach could drastically reduce the time and cost required to build out the massive compute power needed for training large AI models. The primary challenge for Runware will be proving it can deliver these prefabricated centers at the required scale and reliability. Tech leaders and cloud providers should monitor Runware's progress as a potential solution to the global AI data center shortage.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Chinese Spy Plot Targeted Nvidia CEO",
-            "title": "US Investigates Chinese Spy Plot Aimed at Nvidia CEO via Singapore AI Cloud Executive",
-            "content": "U.S. authorities are investigating a Chinese espionage plot targeting Nvidia CEO Jensen Huang through a top executive of a Singapore-based AI cloud provider. The executive was previously accused of illegally selling restricted Nvidia chips to China, adding a potential national security dimension to the case. This investigation highlights ongoing concerns over the use of semiconductor supply chains for foreign intelligence operations. Industry leaders are advised to review third-party access controls and export compliance protocols.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "AI Data Centers Devour Arizona Water",
-            "title": "Massive AI Data Centers Strain Arizona Water Resources",
-            "content": "A sprawling, multi-story data center complex in Arizona is consuming vast quantities of water to cool the servers powering global AI models and cloud services. The facility's immense power draw and water usage have sparked local concerns over resource depletion in a desert environment. This trend reflects the escalating infrastructure demands of the current AI boom. Developers and cloud operators must prioritize water-efficient cooling technologies and renewable energy integration.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Personal AI Agent Breached Pentagon Network",
-            "title": "Defense Contractor's Personal AI Agent Accessed Secure Pentagon System",
-            "content": "An Accenture employee's personal AI agent, running on a Department of Defense (DOD) network, operated for two months before being detected. The vulnerability allowed an unapproved AI model to access restricted systems, potentially exposing sensitive data. This incident underscores the risks of unmanaged AI agents in classified environments. Organizations must enforce strict zero-trust policies and disable unauthorized third-party AI applications on secure networks.",
-            "source": "WIRED",
-            "sourceUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Religious Exemption Blocks AI Use",
-            "title": "University Administrator Wins Religious Exemption from AI Use",
-            "content": "David Durman, a University of Kentucky administrator, successfully obtained a religious exemption to avoid using artificial intelligence tools in his workplace. The decision highlights the growing legal and ethical debates surrounding mandatory AI adoption in corporate and academic settings. It sets a precedent for employees to challenge AI integration on religious or personal grounds. HR departments must carefully balance AI productivity mandates with legal accommodation requirements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "AWS Targets $1T AI Cloud Revenue",
-            "title": "Amazon Targets $1 Trillion in AI Cloud Revenue",
-            "content": "Amazon Web Services (AWS) is accelerating capital expenditures to dominate the AI cloud computing market, aiming to become the first $1 trillion revenue business. CEO Andy Jassy emphasized that massive infrastructure investments in data centers and custom AI chips are critical to sustaining this growth trajectory. The aggressive spending spree positions AWS to compete directly with Microsoft Azure and Google Cloud. Tech leaders should evaluate AWS's long-term capacity and pricing models for large-scale AI deployments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Reddit Shifts to Logged-In Experience to Combat AI Scraping",
-            "title": "Reddit Restricts Access to Protect Data and Business Model from AI Bots",
-            "content": "Reddit is transitioning its platform to a logged-in experience, requiring user authentication to access content and search results. This strategic shift directly addresses the decline in search engine traffic caused by AI-powered search engines that scrape and summarize web content without driving clicks. The change impacts public data access and third-party developers relying on open APIs for research and moderation. Users will need to create accounts to browse threads, while the company aims to monetize its data through new API access tiers. This move reflects a broader industry trend of platforms restricting open web access to protect their intellectual property from generative AI models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Rivian and VW Expand Joint Venture to Include AI Assistant",
-            "title": "Rivian-VW Joint Venture Expands Scope to Develop In-Car AI Assistant",
-            "content": "Rivian and Volkswagen (VW) are broadening their $5.8 billion joint venture to develop an artificial intelligence (AI) assistant for in-vehicle use. The expansion signals a strategic push into the competitive automotive AI landscape, leveraging both companies' hardware and software engineering capabilities. Rivian has not disclosed whether the financial value of the joint venture will increase alongside this new development. This move positions the partnership to compete with established automotive tech platforms and major AI players in the connected car market. Industry analysts view this as a critical step for Rivian to enhance its technological offerings and vehicle user experience.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "OpenAI-Backed Thrive Holdings Acquires ADT for $15.3B",
-            "title": "OpenAI-Backed Thrive Holdings to Integrate AI into ADT's Home Security Systems",
-            "content": "OpenAI-backed Thrive Holdings has agreed to acquire ADT for $15.3 billion in a deal aimed at integrating artificial intelligence into the home security sector. The acquisition will combine Thrive's AI development capabilities with ADT's extensive network of 6 million customers and physical security infrastructure. Thrive plans to deploy AI for predictive threat detection, smart home automation, and enhanced user personalization across ADT's product lines. This transaction represents one of the largest mergers in the smart home and IoT security space, potentially reshaping the competitive landscape. Security professionals should monitor how this integration affects data privacy and the security of connected home devices.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Meta Quietly Launches Style Sketch AI Fashion App",
-            "title": "Meta Debuts Style Sketch AI App for Virtual Closet Creation",
-            "content": "Meta has launched Style Sketch, an artificial intelligence (AI) fashion application that allows users to build a virtual closet by connecting to Instagram. The app enables users to add clothing items manually by snapping a photo, recording a short video, or uploading existing images from their camera roll. Style Sketch then uses AI to identify clothing items and categorize them, helping users organize their digital wardrobe. This launch aligns with Meta's broader strategy to integrate AI-driven shopping and lifestyle features across its platforms, including Instagram. Developers and marketers should note this as a potential new channel for e-commerce and targeted advertising in the fashion vertical.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Gemini Now Edits Google Docs and Files Directly in Chat",
-            "title": "Google Gemini Gains Direct File Editing for Docs, Sheets, and PDFs",
-            "content": "Google has integrated direct file generation and editing capabilities into Gemini, allowing users to create, preview, and edit Google Docs, Google Sheets, slide decks, Markdown files, TXT files, and code directly within chat conversations. The feature is available immediately for all Gemini users on both web and mobile platforms, with PDF previews and editing supported across all devices. This enhancement transforms Gemini from a conversational AI into a functional productivity tool, reducing the need to switch between applications. The integration streamlines workflows for developers, writers, and business professionals who rely on Google's productivity suite. Users should enable the feature in their Gemini settings to access the new file management tools.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
             "relatedResources": []
         }
     ],
