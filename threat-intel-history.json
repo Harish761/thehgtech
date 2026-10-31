@@ -4,7 +4,7 @@
     "categories": {
       "Phishing": 3454,
       "Malware": 35350,
-      "C2": 11345,
+      "C2": 11323,
       "Botnet": 4297
     }
   },
@@ -30,7 +30,7 @@
     "ValleyRAT": 12,
     "RevStealer": 5,
     "RustyStealer": 10,
-    "Vidar": 1691,
+    "Vidar": 1690,
     "WannaCry": 1,
     "AsyncRAT": 1628,
     "AMOS": 95,
@@ -48,8 +48,8 @@
     "SalatStealer": 7,
     "GodPotato": 1,
     "Spamhaus DROP List": 1756,
-    "CINS Threat List": 36492,
-    "SSH Attacks": 10726,
+    "CINS Threat List": 36376,
+    "SSH Attacks": 10725,
     "malware_download": 34528,
     "Potassium": 25,
     "StrelaStealer": 3,
@@ -128,7 +128,7 @@
     "QakBot": 1,
     "Banking Malware C2": 5,
     "ACRStealer": 219,
-    "OffLoader": 555,
+    "OffLoader": 553,
     "AokigaharaStealer": 2,
     "Malware": 420,
     "ArvionRAT": 1,

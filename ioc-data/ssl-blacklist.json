@@ -1,8 +1,8 @@
 {
   "vendor": "SSL Blacklist",
-  "lastUpdated": "2026-11-01T01:24:26.193962+05:30",
-  "totalCount": 11078,
-  "displayedCount": 11078,
+  "lastUpdated": "2026-11-01T03:18:06.231684+05:30",
+  "totalCount": 11075,
+  "displayedCount": 11075,
   "isCapped": false,
   "cappingStrategy": null,
   "isStale": true,
@@ -6007,57 +6007,6 @@
       ],
       "addedAt": "2026-10-25T10:00:04.300816+05:30",
       "campaign": "Malware",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "c8f25096d3b14521a804d30fb8d618f4f0b33950",
-      "description": "Malicious SSL certificate - OffLoader C&C",
-      "timestamp": "2026-09-18 05:54:25",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-10-31 19:58 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-10-25T02:35:45.659165+05:30",
-      "campaign": "OffLoader",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "d260d414670f40733184875b60bb353632e73fcc",
-      "description": "Malicious SSL certificate - OffLoader C&C",
-      "timestamp": "2026-09-18 05:54:05",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-10-31 19:58 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-10-25T02:35:45.659165+05:30",
-      "campaign": "OffLoader",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "6e35a76a571969f0e27a8c8c1c11c8aa21330887",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-09-18 05:48:23",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-10-31 19:58 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-10-25T02:35:45.659165+05:30",
-      "campaign": "Vidar",
       "confidence": "High"
     },
     {
