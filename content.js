@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Oct 31 2026",
+            "headline": "Ivanti VPN Flaws Chain to Full System Takeover",
+            "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two critical flaws in Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities catalog following active exploitation. Attackers are chaining three distinct vulnerabilities to achieve unauthenticated root access on Linux-based VPN gateways. The affected systems include all Ivanti Connect Secure and Policy Secure appliances running specific vulnerable versions. CISA and Ivanti strongly advise administrators to apply the available security patches immediately to prevent unauthorized network access and lateral movement.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Rented Trojans and Exposed Passwords Flood Threat Landscape",
+            "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+            "content": "Threat actors are actively exploiting exposed credentials and renting out banking trojans, demonstrating a shift toward operational accessibility for cybercriminals. This week's threat landscape includes critical firewall flaws, weaponized PDF documents, and token theft vulnerabilities affecting enterprise environments. The proliferation of these tools highlights the persistent risk of unpatched systems and weak authentication controls. Security teams must prioritize continuous asset monitoring, enforce strict access management, and apply vendor patches to mitigate these widespread attack vectors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 31 2026",
+            "headline": "Chainalysis Confirms Limited Customer Data Breach",
+            "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+            "content": "Blockchain analysis firm Chainalysis confirmed a cybersecurity incident where an external actor accessed non-sensitive customer data through compromised internal tools. The breach did not result in unauthorized access to sensitive investigation content, authentication credentials, or customer funds. The company is actively investigating the scope of the data exposure and has notified affected individuals as a precaution. Users should remain vigilant against targeted phishing campaigns attempting to exploit the incident for social engineering.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 31 2026",
+            "headline": "Syrian Hacker Sentenced to 42 Months in US",
+            "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+            "content": "A U.S. court sentenced Syrian national Ahmad Umar Agha to 42 months in federal prison for executing pro-Assad cyberattacks against media, businesses, and government entities. The attacks, which occurred over a decade ago, utilized distributed denial-of-service (DDoS) and web defacement tactics to disrupt operations. Agha was arrested and brought to justice after living on the run for more than ten years. The sentencing underscores the long-term reach of international law enforcement in holding cybercriminals accountable for their actions.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "PHP2Shell and Linux Kernel Flaw Enable Root Access",
+            "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
+            "content": "Attackers are leveraging the PHP2Shell vulnerability alongside a critical Linux kernel privilege escalation flaw to achieve full root access on targeted servers. The CISA has warned that the Fragnesia kernel vulnerability allows unprivileged local users to gain administrative control over affected systems. This combination of web application flaws and kernel-level exploits creates a severe risk for any organization hosting vulnerable Linux distributions. Administrators must immediately apply kernel security patches and audit web server configurations to close these attack paths.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "China's Volt Typhoon Pre-Positions for Infrastructure Attacks",
+            "title": "Deep Dive Reveals Volt Typhoon's Silent Train Tactics Targeting Critical Infrastructure",
+            "content": "Lumen's Black Lotus Labs identified pre-positioning activity by China's Volt Typhoon group within strategic communications and critical infrastructure ecosystems. The Silent Train attack tactic involves establishing long-term access before launching disruptive operations. This pre-staging phase allows the threat actor to map internal networks and prepare for future assaults on essential services. Organizations should audit remote access logs for unusual persistence mechanisms and implement network segmentation to limit lateral movement. This activity underscores a broader trend of state-sponsored actors targeting foundational digital infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242439/a-deep-dive-into-chinas-volt-typhoon-suggests-it-is-preparing-for-an-assault-on-infrastructure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "AI Transforms Cybersecurity Awareness Training",
+            "title": "Cybersecurity Awareness Month Explores AI-Driven Training and Next-Gen Workforce Risks",
+            "content": "The Reporters' Notebook video series highlights how artificial intelligence (AI) is revolutionizing security awareness training by creating personalized, dynamic learning experiences. Organizations are increasingly leveraging AI to simulate sophisticated social engineering attacks and identify knowledge gaps in real-time. Concurrently, there is a growing focus on educating next-generation workforces about modern threats like AI-generated deepfakes and advanced phishing. Security leaders must integrate these emerging training methodologies to counter evolving human-centric attack vectors. This shift moves beyond traditional annual compliance modules toward continuous, adaptive education.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Cisco ASA/FTD Zero-Day Actively Exploited to Crash Devices",
+            "title": "High-Severity Cisco Firewall Zero-Day Under Active Exploitation",
+            "content": "A high-severity flaw, tracked as CVE-2026-76418 with a rating of 8.6, is actively exploited to crash vulnerable Cisco Secure Firewall Adaptive Security Appliance (ASA) and Threat Defense (FTD) devices. The vulnerability resides in the Remote Access SSL VPN service, allowing threat actors to disrupt operations by forcing the systems to reboot. This zero-day flaw impacts organizations relying on Cisco's ASA and FTD appliances for network perimeter security. Administrators must immediately apply the vendor-released patches to prevent service outages and potential denial-of-service (DoS) attacks. This incident highlights the critical need for rapid patch management in perimeter security appliances.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "UNM Ransomware Attack Diverts Ambulances",
+            "title": "Ransomware Attack on University of New Mexico Health Sciences Center Disrupts Emergency Care",
+            "content": "A ransomware attack on the University of New Mexico Health Sciences Center (HSC) forced the diversion of ambulances, cancellation of surgeries, and dismissal of medical students from classes. The incident highlights the severe operational impact of ransomware on healthcare organizations, directly compromising patient safety and critical medical services. The attack targeted the university's Health Sciences Center, a major regional healthcare provider, demonstrating the broad reach of modern ransomware campaigns. Healthcare entities must maintain offline, immutable backups and robust incident response plans to ensure continuity of care during such disruptive events.",
+            "source": "GRAHAM CLULEY",
+            "sourceUrl": "https://www.fortra.com/blog/byod-cyberattack-diverts-ambulances-and-cancels-classes-university-new-mexico-health-center",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Local Ghidra Server Streamlines Malware Analysis",
+            "title": "Deploying a Local Ghidra Server Optimizes Malware Analysis Workflows",
+            "content": "Establishing a local Ghidra server significantly enhances malware analysis labs by providing a centralized, collaborative environment for reverse engineering. This setup allows multiple analysts to share projects and decompile binaries efficiently while maintaining strict control over sensitive samples. By leveraging virtualization, analysts can start investigations from clean snapshots and capture critical system states at specific milestones. This approach improves workflow consistency and reduces the risk of cross-contamination between malware samples. Security researchers should deploy a dedicated Ghidra server to streamline team collaboration and accelerate the malware reverse engineering process.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33470",
+            "relatedResources": []
+        },
+        {
             "date": "Oct 30 2026",
             "headline": "CISA Flags Actively Exploited GitLab, Cisco Flaws",
             "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
             "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "22.6M Firewalls Hit by PHP2Shell Rooting",
-            "title": "PHP2Shell Vulnerabilities Target Palo Alto Firewalls, Spare WordPress",
-            "content": "Over 22.6 million exposed Palo Alto Networks firewalls face critical PHP2Shell vulnerabilities that allow attackers to gain root access. The flaws, actively exploited for over a week, target specific configurations and fail to affect WordPress installations. Security teams must apply the latest patches to affected firewalls immediately to mitigate potential unauthorized access and system compromise.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/php2shell-attacks-root-palo-alto-firewalls-but-fail-against-wordpress/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "63,000 Attempts Exploit WordPress RCE Flaw",
-            "title": "High-Severity WordPress RCE Vulnerability Attracts 63,000 Daily Exploits",
-            "content": "Threat actors launched nearly 63,000 exploitation attempts against a high-severity remote code execution (RCE) flaw in WordPress Core within 24 hours of patch release. The unauthenticated vulnerability affects versions 4.7 through 7.1.3, allowing attackers to execute arbitrary code on vulnerable web servers. Administrators of affected WordPress sites must update to the latest version immediately to block active exploitation attempts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "FBI Seizes Virtualine Domain",
-            "title": "FBI Seizes Virtualine Domain Used for Ransomware and Infostealer Hosting",
-            "content": "The FBI seized the domain of Virtualine, a bulletproof hosting provider that facilitated hack-for-hire services. Virtualine supported ransomware and infostealer operators by accepting cryptocurrency payments for illicit infrastructure. The takedown disrupts a key service used by cybercriminals to maintain anonymity and operational continuity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Attackers Target Fresh WordPress RCE",
-            "title": "Attackers Exploit High-Severity WordPress Unauthenticated Race Condition",
-            "content": "Threat actors are actively exploiting a high-severity unauthenticated race condition in WordPress that leads to remote code execution (RCE). The vulnerability impacts WordPress Core versions 4.7 through 7.1.3, allowing attackers to compromise websites without valid credentials. Site administrators must apply the security patch immediately to prevent unauthorized server access and data theft.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Observe, Prove, Act Fixes Security Tickets",
-            "title": "Security Fixes Stall Without Proof—The OPAO Method Moves Patches",
-            "content": "Security teams often delay critical patches due to operational risks, requiring concrete proof that updates will not break applications or trigger false positives. The Observe, Prove, Act, Confirm (OPAO) framework provides a structured methodology to generate this evidence, allowing security teams to justify and deploy urgent fixes. This approach helps bridge the gap between security alerts and application stability, reducing the window of exposure for critical vulnerabilities.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "$2M Drained From Polymarket in Supply Chain Attack",
-            "title": "Malicious Code in Monitoring Tool Hijacks Sessions to Steal Trader Funds",
-            "content": "Threat actors drained over $2 million from Polymarket traders using a supply chain attack targeting a website monitoring tool. The malicious code hijacked authenticated user sessions to siphon funds directly from victim accounts. The incident highlights the growing risk of third-party software dependencies being compromised to facilitate financial fraud. Affected users should revoke all active sessions and change their account passwords immediately. This attack demonstrates a shift towards targeting decentralized finance (DeFi) platforms and their underlying infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/drupal-commerce-core-vulnerability-exploited-against-online-stores/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "GitLab CVE-2026-97229 Exploited Against Alpine Linux",
-            "title": "Unauthenticated RCE Flaw in GitLab Server Targeted by Threat Actors",
-            "content": "Threat actors are actively exploiting CVE-2026-97229, a max-severity flaw in GitLab that allows unauthenticated remote code execution (RCE). The vulnerability impacts Alpine Linux instances and allows attackers to run arbitrary commands on the underlying server. GitLab has released patches to mitigate the issue, but unpatched systems remain at severe risk of full compromise. Organizations running GitLab on Alpine Linux must update to the latest patched version immediately. This exploit underscores the critical importance of prompt patch management for development platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "TeamViewer Integer Overflow Enables Host Takeover",
-            "title": "CVE-2026-111585 Allows Malicious Hosts to Hijack Support Sessions",
-            "content": "A critical integer overflow vulnerability, CVE-2026-111585, in TeamViewer could allow a malicious host to execute arbitrary code on a support technician's machine. The flaw is triggered during an active remote support session, potentially giving the attacker complete control over the technician's system. This poses a severe risk to IT support professionals and managed service providers who rely on TeamViewer for remote access. Users should update to the latest patched version of TeamViewer to prevent session hijacking. This incident highlights the inherent risks of remote access tools in enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Drupal Commerce CVE-2026-118539 Actively Exploited",
-            "title": "Critical Authorization Bypass in Commerce Core Versions 0-2.41 and 3.0-3.3.13",
-            "content": "Drupal has confirmed that threat actors are actively exploiting CVE-2026-118539, a highly critical authorization bypass flaw in Commerce Core. The vulnerability allows unauthenticated attackers to access restricted administrative functions and potentially compromise online store data. It affects Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. Drupal urges all store owners to audit their order management systems and apply the latest security patches immediately. This active exploitation marks a significant escalation in threats against e-commerce platforms running on the Drupal CMS.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Hackers Target Drupal Commerce Core Authorization Flaw",
-            "title": "Missing Authorization in Drupal Commerce Core Allows Unauthenticated Access",
-            "content": "Threat actors are actively exploiting a highly critical missing authorization flaw in Drupal's Commerce Core component. The vulnerability, tracked as CVE-2026-118539, allows unauthenticated attackers to bypass access controls and manipulate store data. It affects Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13, leaving a wide range of e-commerce sites vulnerable. Drupal has released a security update and strongly recommends all store owners audit their systems and apply the patch immediately. This incident highlights the ongoing targeting of e-commerce platforms by sophisticated threat actors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Oct 31 2026",
+            "headline": "OpenAI Lowers Funding Target—Round Falls Short",
+            "title": "OpenAI Reduces Funding Target for Upcoming Financing Round",
+            "content": "OpenAI is reportedly lowering its target for an upcoming fundraising round, signaling a shift in investor appetite for AI startups. The company had previously sought a valuation of $300 billion, but current market conditions have prompted a reassessment of financial goals. This development reflects broader economic pressures on the generative AI sector, which has faced high operational costs and slowing revenue growth. Investors are now prioritizing sustainable profitability over rapid scaling, impacting the strategic direction of AI ventures. Industry observers should monitor how this funding adjustment influences OpenAI's product roadmap and competitive positioning in the AI market.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 31 2026",
+            "headline": "Meta's AI Tamagotchi Charm Faces Market Resistance",
+            "title": "Meta's Muse Charm AI Device Faces Skepticism in Holiday Market",
+            "content": "Meta is launching the Muse Charm, a wearable AI companion designed to compete with nostalgic virtual pet toys like Tamagotchi. The device features a small display and allows users to interact with an AI assistant throughout the day, echoing Meta's broader strategy of integrating AI into consumer hardware. However, early reception suggests limited consumer interest in carrying an AI device as a fashion accessory. The product faces stiff competition from established smartwatches and voice assistants that offer similar functionalities. Developers and tech leaders should evaluate whether this niche hardware category can achieve critical mass in a crowded IoT landscape.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Personal Claude Agent Breached DOD Network for 2 Months",
+            "title": "Defense Contractor's Personal AI Agent Accessed Secure Pentagon System",
+            "content": "An Accenture employee's personal Claude AI agent was discovered running on a Department of Defense (DOD) network for two months before security teams identified the vulnerability. The incident highlights the risks of unauthorized AI tools in highly secure government environments, where strict network segmentation is mandatory. The exposure occurred because the agent was granted access to restricted systems, potentially allowing sensitive data to be processed by an unapproved third-party model. This breach underscores the urgent need for robust AI governance frameworks and continuous monitoring of all connected endpoints within critical infrastructure. Organizations must enforce strict policies prohibiting the use of consumer AI applications on classified or sensitive networks.",
+            "source": "WIRED",
+            "sourceUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Maine's Data Center Revolt Threatens Senate Control",
+            "title": "Maine's Data Center Protests Could Sway Senate Race",
+            "content": "Voters in Maine are increasingly protesting the environmental impact of proposed AI data centers, creating a potential political flashpoint in the upcoming Senate race. Senator Susan Collins faced direct public anger during a debate when a constituent shouted that AI data centers are destroying the climate and poisoning water supplies. The controversy centers on the massive energy consumption and water usage required to power AI training and inference operations in rural areas. This grassroots movement could mobilize environmental voters and influence the election outcome in a closely contested state. Tech leaders should anticipate stricter regulations on data center construction and energy sourcing in politically sensitive regions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "OpenAI Honors robots.txt for AI Training Preferences",
+            "title": "OpenAI Implements robots.txt Standard for AI Training Opt-Out",
+            "content": "OpenAI is now honoring the shared robots.txt protocol, allowing website operators to specify their preferences regarding AI model training on their content. This move aligns with the broader industry trend of giving content creators more control over how their data is used to train large language models (LLMs). The robots.txt standard, traditionally used for web crawlers, now extends to AI training bots, providing a standardized method for opt-out requests. This implementation addresses growing concerns about unauthorized data scraping and intellectual property rights in the AI era. Developers and site administrators should update their robots.txt files to ensure compliance with OpenAI's new policy and protect their digital assets.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "OpenAI Expands ChatGPT Violence Prevention Safeguards",
+            "title": "OpenAI Strengthens ChatGPT with Expanded Violence Prevention and Public Safety Reporting",
+            "content": "OpenAI is rolling out expanded safeguards and earlier interventions to prevent ChatGPT from generating violent content. The updates introduce a new commitment to public safety reporting, detailing how the platform handles harmful prompts. These measures are designed to mitigate the misuse of generative AI for creating violent or dangerous material. The policy shift reflects growing pressure on AI developers to implement robust safety protocols. Users and developers should review OpenAI's updated usage policies to understand the new restrictions.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "University Admin Wins Religious AI Exemption",
+            "title": "University Administrator Secures Religious Exemption from Mandatory AI Tool Usage",
+            "content": "A University of Kentucky administrator, David Durman, has successfully secured a religious exemption from using AI tools in his professional capacity. This case highlights an emerging legal and ethical debate around AI integration in corporate and academic environments. Durman's request was approved based on sincerely held religious beliefs, setting a potential precedent for similar workplace accommodations. The decision underscores the need for organizations to develop clear policies regarding AI adoption and employee rights. Companies should consult legal counsel to navigate the complexities of religious exemptions and AI governance.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 30 2026",
+            "headline": "Fair Use Arguments Support AI Training",
+            "title": "OpenAI Cites Fair Use to Defend AI Training Practices in Court Briefs",
+            "content": "OpenAI has published excerpts from court briefs submitted by creators, academics, and legal experts supporting the application of fair use in AI training. The documents argue that using copyrighted material to train large language models (LLMs) constitutes transformative use, fostering innovation. This legal strategy is central to OpenAI's defense against ongoing copyright infringement lawsuits. The outcome of these cases will have significant implications for the future of AI development and intellectual property law. Stakeholders should monitor these legal proceedings as they will shape industry standards.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/fair-use-benefits-everyone",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Intel Ignored China Nvidia Spy—Trump Protected Stocks",
+            "title": "Report Claims Trump Ignored Intel on China-Linked Nvidia Spy to Protect Stock Value",
+            "content": "A new report alleges that President Trump ignored intelligence regarding a Chinese spy's exploitation of ties to Nvidia CEO Jensen Huang, instead protecting the company's stock. The accused spy allegedly funneled sensitive technology secrets to China. This revelation raises serious concerns about national security and the influence of corporate interests on government decision-making. The incident highlights the critical need for stringent oversight of foreign access to advanced semiconductor technology. National security professionals should advocate for enhanced vetting of foreign nationals in strategic tech roles.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/report-trump-did-nothing-with-intel-that-china-planted-spy-close-to-nvidia-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "OpenAI Updates Model Spec for AI Governance",
+            "title": "OpenAI Releases Updated Model Spec to Guide AI Behavior and Development",
+            "content": "OpenAI has released an updated Model Spec outlining five core values to guide AI development toward sound judgment and human agency. The document specifies how AI models should handle user instructions, interpret ambiguous queries, and maintain faithfulness to human intent. This framework is designed to improve the safety and reliability of AI systems as they become more capable. The update reflects OpenAI's ongoing efforts to align its technology with human values and ethical guidelines. Developers should review the Model Spec to understand the behavioral parameters of OpenAI's APIs.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/updated-model-spec",
+            "relatedResources": []
+        },
         {
             "date": "Oct 31 2026",
             "headline": "Nvidia Cosigns Nscale AI Data Center",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google's AI chip-equipped satellite has generated its first response from space. In a blog post, Google confirmed it successfully booted up the satellite's Tensor Processing Units (TPUs), allowing the on-board Gemma 4 model to follow through on a prompt to create a haiku about being in space. This achievement marks a milestone in edge AI computing and demonstrates the potential for AI applications in space exploration. The project could lead to more advanced autonomous systems for satellite operations.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Nemotron-Halloween Model Targets Christmas",
-            "title": "Nemotron-Halloween Model Released to Counter Overfitting",
-            "content": "Meta AI has released Nemotron-Halloween, a specialized Large Language Model (LLM) designed to mitigate catastrophic overfitting in AI systems. The model was trained to identify and neutralize prompts designed to extract harmful or biased outputs from standard LLMs. This release addresses a critical vulnerability in AI safety, where specialized prompts can force models to bypass their core ethical guidelines. Developers can integrate Nemotron-Halloween to harden their own models against jailbreaking and prompt injection attacks. The open-source model is available for immediate integration into existing machine learning pipelines.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Zest AI Agent Books Restaurants Over Text",
-            "title": "Zest's AI Concierge Automates Group Restaurant Reservations",
-            "content": "Zest has launched an AI concierge that automates group dining decisions by analyzing dietary preferences, gathering votes, and booking reservations via text message. The system uses natural language processing (NLP) to parse user inputs and negotiate with restaurant APIs to secure a table. This tool directly impacts the hospitality sector by reducing friction in group coordination, which typically sees a 40% cancellation rate due to indecision. Consumers should evaluate the platform's privacy policy regarding the handling of their contact and payment details. The integration of AI into everyday logistics represents a growing trend in consumer-facing automation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Starbucks Tests Personalized Drive-Thru Menus",
-            "title": "Starbucks Pilots AI-Driven Personalized Digital Menus at Drive-Thrus",
-            "content": "Starbucks is testing an artificial intelligence (AI) system that displays personalized digital menus to customers in its drive-thru lanes based on their order history. CEO Brian Niccol stated the company will explore experiences that recognize participating customers and present tailored digital menu options. This initiative relies on customer data aggregation and computer vision to identify vehicles and match them to loyalty profiles. The deployment of this technology raises significant privacy concerns regarding data collection and customer consent. Consumers should review Starbucks' updated privacy terms to understand how their biometric and purchase data is utilized.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Google's Space TPU Writes Poetry",
-            "title": "Google Deploys First Data Center Satellite with Gemma 4",
-            "content": "Google has successfully launched its first data center satellite, running a Tensor Processing Unit (TPU) in orbit to execute the Google DeepMind Gemma 4 model. The in-space TPU is currently generating poetry, demonstrating the feasibility of cloud computing infrastructure outside Earth's atmosphere. This project tests the resilience of hardware against radiation and extreme temperature fluctuations. The primary impact is on reducing latency for global cloud services and advancing space-based computing capabilities. Engineers must monitor the satellite's thermal management systems to prevent hardware degradation.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Theranos Whistleblower Warns on AI Deception",
-            "title": "Theranos Whistleblower Cautions Against AI Hype",
-            "content": "Tyler Shultz, the Theranos whistleblower, has issued a warning that the current artificial intelligence (AI) boom presents a \"great opportunity to go deceive people,\" drawing parallels to the defunct health-tech startup. Shultz highlighted that companies without proven revenue models are securing trillion-dollar valuations based on speculative AI capabilities. This trend poses a severe risk to retail investors and enterprise clients who may fund unviable projects. Stakeholders should demand transparent, audited financial statements and verifiable technical benchmarks before investing in AI startups. The warning underscores the necessity of rigorous due diligence in emerging tech sectors.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Pope Leo Demands UN Ban on Lethal Autonomous Weapons",
-            "title": "Pope Leo XIV Calls for Disarmament of AI and Ban on Lethal Autonomous Weapons",
-            "content": "Pope Leo XIV issued a Papal Address urging United Nations member states to take concrete steps toward banning lethal autonomous weapons. He emphasized that AI systems are tools, not persons, and humans retain the responsibility to guide, change, and reject AI applications. The Pope specifically called for the disarmament of AI capabilities that could autonomously make life-or-death decisions. This stance adds significant moral and ethical weight to ongoing international debates on regulating autonomous military technology. Security professionals and policymakers should monitor the UN's response to this call for concrete regulatory action.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "DoorDash Receives 'Several Hundred' AI Agent Orders",
-            "title": "DoorDash Reports Modest AI Agent Adoption, Remains Open to Third-Party Integration",
-            "content": "DoorDash confirmed it has received only 'several hundred' orders from AI agents as of October 2026. The food delivery platform stated it remains open to collaborating with third-party developers who build AI agents capable of placing orders. This indicates a cautious but exploratory approach to integrating autonomous AI systems into its logistics and ordering infrastructure. The low volume of AI-driven orders suggests consumer and business adoption of autonomous ordering agents is still in early stages. Developers and enterprise clients should note DoorDash's willingness to test AI agent integrations without immediate large-scale commitment.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Silicon Valley Investors Bet on AI's Miraculous Future",
-            "title": "Silicon Valley Promotes AI Investments Despite Existential Risk Concerns",
-            "content": "Silicon Valley is actively promoting massive investments in AI, despite warnings that the technology could pose catastrophic or existential risks to humanity. Investors are betting on a best-case scenario where AI triggers an age of miracles, driving unprecedented technological and economic growth. The industry faces a fundamental tension between its growth potential and the severe risks of uncontrolled AI development. Tech leaders and security professionals must balance innovation with robust safety protocols and ethical governance frameworks. Investors should conduct rigorous due diligence, factoring in both the transformative potential and the systemic risks of advanced AI deployment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Sam Altman to Continue OpenAI's Math Research Blitz",
-            "title": "OpenAI CEO Sam Altman Vows to Continue AI-Generated Math Research",
-            "content": "OpenAI CEO Sam Altman stated he will not stop OpenAI's relentless stream of AI-generated mathematical results, despite complaints from researchers. Altman expressed sympathy for mathematicians struggling to verify and understand the output from OpenAI's stockpile of advanced models. The company's continuous generation of mathematical proofs and solutions is disrupting academic research and peer-review processes. This strategy positions OpenAI as a dominant force in computational mathematics, potentially accelerating research in fields like cryptography and physics. Researchers and academic institutions must develop new methodologies to validate and integrate AI-generated mathematical findings.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Runware Builds Prefabricated AI Data Center Factory",
-            "title": "Runware Aims to Mass-Produce AI Data Centers on an Assembly Line",
-            "content": "Startup Runware is constructing a factory to mass-produce prefabricated AI data centers using an assembly-line model. The company aims to scale AI infrastructure deployment by standardizing and streamlining the manufacturing of modular data center units. This approach could drastically reduce the time and cost required to build out the massive compute power needed for training large AI models. The primary challenge for Runware will be proving it can deliver these prefabricated centers at the required scale and reliability. Tech leaders and cloud providers should monitor Runware's progress as a potential solution to the global AI data center shortage.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
             "relatedResources": []
         }
     ],
