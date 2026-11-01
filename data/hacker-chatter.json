@@ -1,7 +1,79 @@
 {
-  "last_updated": "2026-10-31T18:40:45.284944",
-  "total_incidents": 32639,
+  "last_updated": "2026-11-01T09:30:33.636462",
+  "total_incidents": 32645,
   "incidents": [
+    {
+      "id": "barracuda_evinoks",
+      "victim_name": "EVINOKS",
+      "threat_actor": "Barracuda",
+      "date_discovered": "2026-11-01T01:50:47.238640+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Evinoks is a Turkish company that produces and sells various products for hotel and restaurant service, such as trolleys, chairs, tables, buffet units, furniture and hygiene equipment. It has a wide range of customers and partners around the world and aims to provide innovative, aesthetic and quality.\n\nWe are beginning to release unsold data for free; it will remain available for one month, so be sure to download all the files to your own storage.\nOur storage: http://qr6uopkqxmq254osyct3oibil32xp3qsimkkbqdscsrsb4zqbagnifad.onion/ | Status: free | FREE",
+      "screenshot": "https://images.ransomware.live/victims/1e9adca030d68f11c5bc7ab43e6bca7c.png",
+      "url": "http://qr6uopkqxmq254osyct3oibil32xp3qsimkkbqdscsrsb4zqbagnifad.onion/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "qilin_danser",
+      "victim_name": "Danser",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-11-01T00:39:08.118503+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=5f1b3909-c068-4289-a191-3312e3b3938a",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vexy_ransomware_system_soft",
+      "victim_name": "System Soft",
+      "threat_actor": "Vexy Ransomware",
+      "date_discovered": "2026-10-31T19:04:42.079141+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "systemsoft.info",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "vexy_ransomware_jhamf_group",
+      "victim_name": "JHAMF Group",
+      "threat_actor": "Vexy Ransomware",
+      "date_discovered": "2026-10-31T19:04:20.888985+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "JHAMF Group is a Colombian IT services company specializing in IT infrastructure, telecommunications, software licensing and implementation, network installation and certification, technical support outsourcing, and cloud infrastructure solutions, including Microsoft Azure.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_punta_shopping",
+      "victim_name": "Punta Shopping",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-10-31T18:51:54.564529+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Commercial organization in Uruguay, located in the city of Punta del Este\r\nField of activity: shopping center management, rental of commercial space, retail trade and services.\r\nThe archive contains the most important personal data and customer data. [Sector: Finance]",
+      "screenshot": "https://images.ransomware.live/victims/c2b252ea310415bd82ecd327cee50db1.png",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/punta-shopping/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "nightspire_**f*a_*.a",
+      "victim_name": "**F*A *.A",
+      "threat_actor": "nightspire",
+      "date_discovered": "2026-10-31T18:29:04.429922+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "Data is not available now.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "payload_straze_garden_center",
       "victim_name": "Straze Garden Center",
