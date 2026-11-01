@@ -3,38 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data | TheHGTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- Primary Meta -->
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
+    <title>Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data | TheHGTech</title>
     <meta name="description" content="An enterprise security analysis of how Windows (TPM, Secure Boot, Pluton, Windows Hello, BitLocker) and macOS (Secure Enclave, T2, Apple Silicon, FileVault, Touch ID) establish hardware-backed trust to protect identity, credentials, and corporate data.">
     <meta name="keywords" content="hardware-backed trust, TPM, Secure Enclave, BitLocker, FileVault, Windows Hello, Touch ID, Passkeys, FIDO2, Secure Boot, Measured Boot, Pluton, enterprise endpoint security, Conditional Access, Zero Trust, device compliance, enterprise identity, Microsoft Entra ID, Jamf, Intune">
-    <meta name="robots" content="index, follow">
     <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/hardware-backed-trust-enterprise-2026.html">
 
     <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/hardware-backed-trust-enterprise-2026.html">
     <meta property="og:title" content="Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data">
-    <meta property="og:description" content="An enterprise security analysis of how Windows and macOS use hardware-backed trust—TPM, Secure Enclave, BitLocker, FileVault, Windows Hello, Touch ID, and Passkeys—to protect enterprise identities, credentials, and access decisions.">
+    <meta property="og:description" content="An enterprise security analysis of how Windows (TPM, Secure Boot, Pluton, Windows Hello, BitLocker) and macOS (Secure Enclave, T2, Apple Silicon, FileVault, Touch ID) establish hardware-backed trust to protect identity, credentials, and corporate data.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/hardware-backed-trust-enterprise-2026.png">
+    <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@thehgtech">
-    <meta name="twitter:url" content="https://thehgtech.com/articles/hardware-backed-trust-enterprise-2026.html">
-    <meta name="twitter:title" content="Hardware-Backed Trust in the Enterprise: TPM, Secure Enclave, and the Future of Zero Trust">
-    <meta name="twitter:description" content="How Windows and macOS use hardware-backed trust—TPM, Secure Boot, Pluton, Secure Enclave—to protect enterprise identity, credentials, and Conditional Access decisions. An independent security analysis.">
+    <meta name="twitter:title" content="Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data">
+    <meta name="twitter:description" content="An enterprise security analysis of how Windows (TPM, Secure Boot, Pluton, Windows Hello, BitLocker) and macOS (Secure Enclave, T2, Apple Silicon, FileVault, Touch ID) establish hardware-backed trust to protect identity, credentials, and corporate data.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/hardware-backed-trust-enterprise-2026.png">
 
-    <link rel="canonical" href="https://thehgtech.com/articles/hardware-backed-trust-enterprise-2026.html">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-
-    <!-- Schema: Article -->
-    
-
-    <!-- Schema: NewsArticle -->
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -74,8 +67,6 @@
   "articleSection": "Enterprise Security"
 }
 </script>
-
-    <!-- Schema: BreadcrumbList -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -87,8 +78,6 @@
       ]
     }
     </script>
-
-    <!-- Schema: FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -130,757 +119,400 @@
     }
     </script>
 
-    <!-- Fonts -->
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
-    <!-- Style System -->
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
     <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
     <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
     <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
 
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
-    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
-    <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-purple: #a855f7;
-            --accent-amber: #f59e0b;
-            --border: rgba(255, 255, 255, 0.1);
-            --glass-border: rgba(255, 255, 255, 0.08);
-            --code-bg: #0d0d0d;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2rem;
-            padding-top: 100px;
-        }
-
-        .article-header {
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-
-        .article-category-badge {
-            display: inline-block;
-            padding: 0.35rem 1rem;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
-            border: 1px solid rgba(0, 217, 255, 0.3);
-            margin-bottom: 1.5rem;
-        }
-
-        .article-meta {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-        }
-
-        .article-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .article-title {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .article-subtitle {
-            font-size: 1.35rem;
-            color: var(--text-secondary);
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
-        }
-
-        .article-excerpt {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            line-height: 1.7;
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            margin-bottom: 3rem;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-        }
-
-        /* Key Takeaways / BLUF Box */
-        .bluf-box {
-            background: rgba(0, 217, 255, 0.04);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-left: 5px solid var(--accent-cyan);
-            border-radius: 8px;
-            padding: 1.75rem 2rem;
-            margin: 2.5rem 0;
-        }
-
-        .bluf-box h3 {
-            margin: 0 0 1rem;
-            color: var(--accent-cyan);
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .bluf-box ul {
-            margin: 0;
-            padding-left: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-        }
-
-        .bluf-box ul li {
-            margin-bottom: 0.6rem;
-        }
-
-        .bluf-box ul li strong {
-            color: var(--text-primary);
-        }
-
-        /* Article Body */
-        .article-content h2 {
-            font-size: 2rem;
-            color: var(--accent-cyan);
-            margin-top: 4rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .article-content h3 {
-            font-size: 1.45rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .article-content h4 {
-            font-size: 1.15rem;
-            margin-top: 1.75rem;
-            margin-bottom: 0.75rem;
-            color: var(--text-secondary);
-            font-weight: 600;
-        }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.12rem;
-            color: var(--text-secondary);
-            line-height: 1.85;
-        }
-
-        .article-content strong {
-            color: var(--text-primary);
-        }
-
-        .article-content ul,
-        .article-content ol {
-            margin-bottom: 2rem;
-            padding-left: 2rem;
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .article-content li {
-            margin-bottom: 0.75rem;
-        }
-
-        .article-content a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .article-content a:hover {
-            text-decoration: underline;
-        }
-
-        blockquote {
-            border-left: 5px solid var(--accent-cyan);
-            margin: 3rem 0;
-            padding: 1.5rem 2.5rem;
-            background: rgba(0, 217, 255, 0.04);
-            font-style: italic;
-            font-size: 1.3rem;
-            line-height: 1.6;
-            color: var(--text-primary);
-            border-radius: 0 8px 8px 0;
-        }
-
-        blockquote cite {
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            font-style: normal;
-        }
-
-        /* Callout Boxes */
-        .technical-box {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .technical-box h3 {
-            margin-top: 0;
-            color: var(--accent-cyan);
-            font-size: 1.2rem;
-        }
-
-        .technical-box p,
-        .warning-box p,
-        .success-box p,
-        .editorial-box p,
-        .neutral-box p {
-            color: var(--text-secondary);
-            font-size: 1.05rem;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.04);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            border-left: 5px solid var(--accent-red);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .warning-box h3 {
-            margin-top: 0;
-            color: var(--accent-red);
-            font-size: 1.2rem;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.04);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-left: 5px solid #10B981;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .success-box h3 {
-            margin-top: 0;
-            color: #10B981;
-            font-size: 1.2rem;
-        }
-
-        .editorial-box {
-            background: rgba(245, 158, 11, 0.04);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            border-left: 5px solid var(--accent-amber);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .editorial-box h3 {
-            margin-top: 0;
-            color: var(--accent-amber);
-            font-size: 1.2rem;
-        }
-
-        .neutral-box {
-            background: rgba(168, 85, 247, 0.04);
-            border: 1px solid rgba(168, 85, 247, 0.2);
-            border-left: 5px solid var(--accent-purple);
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .neutral-box h3 {
-            margin-top: 0;
-            color: var(--accent-purple);
-            font-size: 1.2rem;
-        }
-
-        /* Diagram Placeholder */
-        .diagram-placeholder {
-            background: rgba(255, 255, 255, 0.02);
-            border: 2px dashed rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin: 2.5rem 0;
-            text-align: center;
-        }
-
-        .diagram-placeholder .diagram-icon {
-            font-size: 2rem;
-            color: var(--accent-cyan);
-            opacity: 0.5;
-            margin-bottom: 0.75rem;
-        }
-
-        .diagram-placeholder .diagram-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-        }
-
-        .diagram-placeholder .diagram-desc {
-            font-size: 0.9rem;
-            color: rgba(160, 160, 160, 0.6);
-        }
-
-        /* Flow diagram (text-based) */
-        .flow-box {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 2.5rem 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .flow-box h4 {
-            color: var(--accent-cyan);
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .flow-step {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .flow-step-num {
-            min-width: 28px;
-            height: 28px;
-            background: rgba(0, 217, 255, 0.15);
-            color: var(--accent-cyan);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-
-        .flow-step-content {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.6;
-            padding-top: 3px;
-        }
-
-        .flow-step-content strong {
-            color: var(--text-primary);
-        }
-
-        .flow-arrow {
-            color: var(--accent-cyan);
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 0.25rem 0 0.25rem 2.5rem;
-            opacity: 0.5;
-        }
-
-        /* Comparison Table */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2.5rem 0;
-            font-size: 1rem;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 0.85rem 1.25rem;
-            border: 1px solid var(--border);
-            text-align: left;
-        }
-
-        th {
-            background: rgba(0, 217, 255, 0.08);
-            color: var(--accent-cyan);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
-        tr:hover td {
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        .badge-windows {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            background: rgba(0, 120, 215, 0.15);
-            color: #60a5fa;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 4px;
-        }
-
-        .badge-macos {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            background: rgba(255, 255, 255, 0.08);
-            color: #e5e7eb;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 4px;
-        }
-
-        .badge-both {
-            display: inline-block;
-            padding: 0.15rem 0.5rem;
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 4px;
-        }
-
-        /* Article footer */
-        .article-footer p {
-            color: var(--text-secondary);
-        }
-
-        .article-footer strong {
-            color: var(--text-primary);
-        }
-
-        /* Related cards hover */
-        .related-card:hover {
-            background: rgba(255, 255, 255, 0.05) !important;
-            border-color: rgba(0, 217, 255, 0.3) !important;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .article-title {
-                font-size: 2rem;
-            }
-            .article-subtitle {
-                font-size: 1.1rem;
-            }
-            .container {
-                padding: 1rem;
-                padding-top: 80px;
-            }
-            .flow-box {
-                padding: 1.25rem;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- Theme Script (FOUC prevention) -->
+    <!-- Pre-render Theme Initialization -->
     <script>
         (function () {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-
-    <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
         })();
     </script>
 </head>
 
-<body>
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
-    <!-- SEO Breadcrumb -->
-    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
-        <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
-            <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
-            <li style="color:#6b7084;" aria-hidden="true">›</li>
-            <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
-            <li style="color:#6b7084;" aria-hidden="true">›</li>
-            <li style="color:#ffffff;" aria-current="page">Hardware-Backed Trust in the Enterprise</li>
-        </ol>
-    </nav>
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
 
-    <!-- Mobile Header -->
+    <!-- Mobile Canonical Header -->
     <header class="m-header m-only">
         <div class="m-header__logo">
             <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-                <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-                <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-                <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
             </a>
         </div>
         <div class="m-header__actions">
-            <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-                <i class="fas fa-moon"></i>
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </button>
             <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-                <i class="fas fa-search"></i>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
             </button>
             <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-                <i class="fas fa-bars"></i>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
     </header>
 
-    <!-- Mobile Menu Overlay -->
+    <!-- Fullscreen Mobile Menu Overlay -->
     <div class="m-menu-overlay m-only" id="m-menu-overlay">
         <div class="m-menu-header">
-            <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu"><i class="fas fa-times"></i></button>
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
         </div>
         <div class="m-menu-content">
             <div class="m-menu-section">
                 <div class="m-menu-title">Intelligence</div>
-                <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-                <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-                <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-                <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
             </div>
             <div class="m-menu-section">
                 <div class="m-menu-title">Resources</div>
-                <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-                <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles &amp; News</a>
-                <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
             </div>
             <div class="m-menu-section">
                 <div class="m-menu-title">Tools</div>
-                <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-                <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
             </div>
             <div class="m-menu-section">
                 <div class="m-menu-title">Settings</div>
-                <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                    <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Mobile Search -->
+    <!-- Mobile Search Overlay -->
     <div class="m-search-overlay m-only">
         <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
             <button class="m-search-overlay__cancel">Cancel</button>
         </div>
         <div class="m-search-overlay__results"></div>
     </div>
 
-    <!-- Desktop Header -->
+    <!-- Desktop Canonical Header -->
     <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
+
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">Intelligence <span class="nav-live-badge">LIVE</span><i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div><div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title">CVE Tracker</div><div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title">Ransomware Tracker</div><div class="dropdown-item-desc">Track active ransomware groups and victims</div></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div><div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                            </div>
                         </a>
                     </div>
                 </div>
+
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger">Resources <i class="fas fa-chevron-down dropdown-arrow"></i></span>
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div><div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div></div>
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
+                            </div>
                         </a>
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div><div class="dropdown-item-desc">Security automation templates</div></div>
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title">Tool Comparisons</div><div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div></div>
-                        </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div><div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div></div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #FFD93D;">Articles</div><div class="dropdown-item-desc">Latest cybersecurity news and analysis</div></div>
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
                         </a>
                     </div>
                 </div>
+
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;"><i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span><i class="fas fa-chevron-down dropdown-arrow"></i></span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div><div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div></div>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);"><i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About <i class="fas fa-chevron-down dropdown-arrow"></i></span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div><div class="dropdown-item-desc">Our mission, tools and data sources</div></div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div><div class="dropdown-item-desc">Security professional &amp; site founder</div></div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content"><div class="dropdown-item-title">Contact</div><div class="dropdown-item-desc">harish@thehgtech.com</div></div>
-                        </a>
-                    </div>
+
+                <a href="/about.html">About</a>
+
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
                 </div>
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';"><i class="fas fa-search"></i></button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="container" role="main">
-        <a href="/articles.html" class="back-link" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 2rem; color: var(--accent-cyan); text-decoration: none; font-size: 0.9rem; transition: color 0.3s;">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-        <article>
-            <!-- Article Header -->
-            <header class="article-header">
-                <div class="article-category-badge">
-                    <i class="fas fa-shield-halved" style="margin-right: 6px;"></i> Enterprise Security Analysis
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Enterprise Security</li>
+                    </ol>
+                </nav>
+
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Enterprise Security</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
                 </div>
-                <h1 class="article-title">Hardware-Backed Trust in the Enterprise</h1>
-                <p class="article-subtitle">How Windows and macOS Protect Identity, Credentials, and Corporate Data</p>
-                <div class="article-meta">
-                    <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                    <span><i class="fas fa-calendar"></i> July 19, 2026</span>
-                    <span><i class="fas fa-clock"></i> 25 min read</span>
-                    <span><i class="fas fa-tag"></i> Enterprise Security · Zero Trust · Endpoint</span>
-                </div>
-                <p class="article-excerpt">
-                    For nearly two decades, both Microsoft and Apple have been quietly shifting the ground beneath enterprise security—moving trust out of software and into silicon. This is the story of why that shift happened, what it means for your organization today, and where it is taking enterprise identity and access management next.
+
+                <h1 class="ap-title" itemprop="headline">Hardware-Backed Trust in the Enterprise</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    How Windows and macOS Protect Identity, Credentials, and Corporate Data
                 </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="July 19, 2026" itemprop="datePublished">July 19, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">8 min read</span>
+                        <span class="ap-byline-sub">1 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
             </header>
 
-            <!-- Hero Image -->
-            <img src="/images/articles/hardware-backed-trust-enterprise-2026.png"
-                 alt="Hardware-Backed Trust in the Enterprise: Windows TPM, Secure Boot, Pluton vs macOS Secure Enclave, Secure Boot, FileVault — Enterprise Identity and Access"
-                 class="featured-image"
-                 width="1200" height="630"
-                 loading="eager">
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/hardware-backed-trust-enterprise-2026.png"
+                         alt="Hardware-Backed Trust in the Enterprise: How Windows and macOS Protect Identity, Credentials, and Corporate Data"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
 
-            <!-- Key Takeaways (GEO / BLUF) -->
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (1 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-overview">1. Detailed Analysis</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-overview">1. Detailed Analysis</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+<section id="sec-overview">
+
+            
+            
+
+            
+            
+
+            
             <div class="bluf-box">
-                <h3><i class="fas fa-bolt" style="margin-right: 8px;"></i>Key Takeaways</h3>
+                <h3>Key Takeaways</h3>
                 <ul>
                     <li><strong>Software trust can be forged.</strong> Hardware-backed trust—rooted in a TPM, Secure Enclave, or Microsoft Pluton—cannot be easily replicated by malware, even kernel-level malware.</li>
                     <li><strong>Both platforms converged on the same goal.</strong> Windows and macOS took architecturally different paths—open ecosystem vs. vertical integration—but arrived at the same enterprise security objective: hardware-attested device identity.</li>
@@ -891,10 +523,10 @@
                 </ul>
             </div>
 
-            <!-- Article Body -->
+            
             <div class="article-content">
 
-                <!-- SECTION 1: Introduction -->
+                
                 <h2>1. A Perspective Built Over Fifteen Years</h2>
 
                 <p>There is a particular kind of frustration that comes from managing endpoints at scale. You enforce complex password policies. You deploy antivirus, then next-generation antivirus, then EDR. You implement multi-factor authentication. You audit logs. You run vulnerability scans. And yet, incidents still happen—credentials get stolen, laptops get lost, ransomware finds a foothold through a compromised user session.</p>
@@ -907,14 +539,20 @@
 
                 <p>This article is an attempt to explain what that shift actually looks like inside enterprise environments—why it happened, how each platform implements it differently, and what it means for the security decisions your organization makes every day.</p>
 
-                <!-- SECTION 2: Evolution Timeline -->
+                
                 <h2>2. The Evolution: From Passwords to Silicon</h2>
 
                 <p>To understand why hardware-backed trust matters, it helps to understand what came before it—and why each era's defenses fell short.</p>
 
-                <figure style="margin: 2rem 0;">
-                    <img src="/images/articles/timeline_evolution.jpg" alt="Timeline: Evolution of Enterprise Hardware Trust" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
-                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Evolution of Enterprise Hardware Trust: 2003–2026</figcaption>
+                <figure>
+                    <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram Timeline: Evolution of Enterprise Hardware Trust">
+                    <img src="/images/articles/timeline_evolution.jpg" alt="Timeline: Evolution of Enterprise Hardware Trust" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>Timeline: Evolution of Enterprise Hardware Trust</figcaption>
+            </figure>
+                    <figcaption>Evolution of Enterprise Hardware Trust: 2003–2026</figcaption>
                 </figure>
 
                 <h3>The Software-Only Era (Pre-2004)</h3>
@@ -942,7 +580,8 @@
 
                 <p>Simultaneously, the FIDO Alliance's FIDO2 standard—with WebAuthn and CTAP2—created the interoperable framework for <strong>Passkeys</strong>: hardware-bound, phishing-resistant credentials that both Apple and Microsoft adopted natively in their platforms. Passkeys represent the convergence of both ecosystems toward the same credential model: private key never leaves hardware, authentication cannot be phished.</p>
 
-                <table>
+                <div class="table-wrapper ap-stackable">
+<table>
                     <thead>
                         <tr>
                             <th>Era</th>
@@ -953,39 +592,40 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>2003–2006</td>
+                            <th>2003–2006</th>
                             <td><span class="badge-windows">Windows</span> TPM 1.2 + BitLocker</td>
                             <td><span class="badge-macos">macOS</span> FileVault 1 (software only)</td>
                             <td>First hardware-bound disk encryption on Windows</td>
                         </tr>
                         <tr>
-                            <td>2012–2013</td>
+                            <th>2012–2013</th>
                             <td><span class="badge-windows">Windows</span> Secure Boot (Win 8)</td>
                             <td><span class="badge-macos">macOS</span> FileVault 2 + Touch ID / Secure Enclave (iOS)</td>
                             <td>Boot integrity enforcement; biometric hardware roots</td>
                         </tr>
                         <tr>
-                            <td>2015–2018</td>
+                            <th>2015–2018</th>
                             <td><span class="badge-windows">Windows</span> Windows Hello + Credential Guard</td>
                             <td><span class="badge-macos">macOS</span> T1/T2 chip; Touch ID on Mac</td>
                             <td>Hardware-bound enterprise identity; credential isolation</td>
                         </tr>
                         <tr>
-                            <td>2020–2021</td>
+                            <th>2020–2021</th>
                             <td><span class="badge-windows">Windows</span> Pluton announced; Windows 11 TPM 2.0 mandate</td>
                             <td><span class="badge-macos">macOS</span> Apple Silicon (M1); integrated Secure Enclave</td>
                             <td>CPU-integrated security; on-die key storage</td>
                         </tr>
                         <tr>
-                            <td>2022–present</td>
+                            <th>2022–present</th>
                             <td><span class="badge-both">Both</span> FIDO2 Passkeys (platform passkeys)</td>
                             <td><span class="badge-both">Both</span> Passkeys natively in keychain / Windows Hello</td>
                             <td>Phishing-resistant, hardware-bound authentication as default</td>
                         </tr>
                     </tbody>
                 </table>
+</div>
 
-                <!-- SECTION 3: The Enterprise Problem -->
+                
                 <h2>3. Why Software Alone Can No Longer Establish Trust</h2>
 
                 <p>To understand why any of this matters, consider what enterprise security teams actually deal with day-to-day.</p>
@@ -1006,14 +646,14 @@
                 <p>Hardware attestation breaks this. When a TPM generates a signed attestation report—a measurement of the device's boot state, configuration, and identity—that signature is tied to a key that was generated inside the TPM at manufacturing time and cannot be extracted. No software can forge that signature. An MDM platform evaluating compliance can verify it against the TPM's endorsement key certificate, which chains back to the manufacturer's certificate authority.</p>
 
                 <div class="warning-box">
-                    <h3><i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>The Compliance Theater Problem</h3>
+                    <h3>The Compliance Theater Problem</h3>
                     <p>Many organizations believe they have Zero Trust because they have Conditional Access policies. But Conditional Access is only as trustworthy as the signals it receives. If device compliance is reported by an MDM agent running in software—without hardware attestation—it can be spoofed. Hardware-backed attestation, where the TPM or Secure Enclave generates cryptographically signed compliance evidence, is what closes this gap. Software compliance reporting alone is compliance theater.</p>
                 </div>
 
                 <h3>Malware and Firmware Tampering</h3>
                 <p>Advanced persistent threats (APTs) have long understood that firmware-level compromise is the holy grail of persistence. A bootkit embedded in UEFI firmware survives operating system reinstallation, disk replacement, and most enterprise incident response procedures. Measured Boot and the TPM's Platform Configuration Registers (PCRs) exist specifically to detect this—recording cryptographic measurements of every component in the boot chain, from firmware through the bootloader to the OS kernel, and alerting or refusing to release encryption keys if those measurements deviate from a known-good baseline.</p>
 
-                <!-- SECTION 4: Different Design Philosophies -->
+                
                 <h2>4. Two Philosophies, One Destination</h2>
 
                 <p>Before going deeper into what each platform actually does, it is worth understanding <em>why</em> Windows and macOS arrived at different implementations of the same security idea.</p>
@@ -1035,18 +675,24 @@
                 <p>The trade-off is that Apple's security architecture is only available on Apple hardware. An organization running a mixed fleet of Windows laptops and Macs cannot standardize on one attestation model, one compliance framework, or one MDM platform without some degree of dual-stack management overhead.</p>
 
                 <div class="neutral-box">
-                    <h3><i class="fas fa-balance-scale" style="margin-right: 8px;"></i>The Core Design Trade-off</h3>
+                    <h3>The Core Design Trade-off</h3>
                     <p>Microsoft's open-ecosystem approach means broader hardware support and interoperability, at the cost of implementation variance across OEMs. Apple's vertical integration means extreme consistency and tighter hardware-software coupling, at the cost of vendor lock-in and the requirement that enterprise devices be Apple devices. Both trade-offs are rational given each company's market position. Neither is inherently superior for all enterprise contexts.</p>
                 </div>
 
-                <!-- SECTION 5: Establishing Trust at Boot -->
+                
                 <h2>5. What Happens When an Employee Presses the Power Button</h2>
 
                 <p>This is the question that enterprise security architects should be able to answer. Not in theory—but specifically, for the devices their organization deploys.</p>
 
-                <figure style="margin: 2rem 0;">
-                    <img src="/images/articles/windows_trust_flow.jpg" alt="Windows Enterprise Trust Flow — Boot to Cloud" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
-                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Windows Enterprise Trust Flow: From UEFI Firmware to Entra ID Token Issuance</figcaption>
+                <figure>
+                    <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram Windows Enterprise Trust Flow — Boot to Cloud">
+                    <img src="/images/articles/windows_trust_flow.jpg" alt="Windows Enterprise Trust Flow — Boot to Cloud" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>Windows Enterprise Trust Flow — Boot to Cloud</figcaption>
+            </figure>
+                    <figcaption>Windows Enterprise Trust Flow: From UEFI Firmware to Entra ID Token Issuance</figcaption>
                 </figure>
 
                 <h3>Windows: The Measured Boot Chain</h3>
@@ -1065,9 +711,15 @@
 
                 <h3>macOS: The Apple Silicon Secure Boot</h3>
 
-                <figure style="margin: 2rem 0;">
-                    <img src="/images/articles/macos_trust_flow.jpg" alt="macOS Enterprise Trust Flow — Boot to Cloud" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
-                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">macOS Apple Silicon Boot Trust Flow: From Boot ROM to Managed Apple ID / SSO</figcaption>
+                <figure>
+                    <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram macOS Enterprise Trust Flow — Boot to Cloud">
+                    <img src="/images/articles/macos_trust_flow.jpg" alt="macOS Enterprise Trust Flow — Boot to Cloud" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>macOS Enterprise Trust Flow — Boot to Cloud</figcaption>
+            </figure>
+                    <figcaption>macOS Apple Silicon Boot Trust Flow: From Boot ROM to Managed Apple ID / SSO</figcaption>
                 </figure>
 
                 <p>On Apple Silicon Macs, the boot process is fundamentally different from anything on x86 hardware—and the differences have direct enterprise security implications.</p>
@@ -1082,7 +734,7 @@
 
                 <p>On Intel-based Macs with the T2 chip, the architecture is similar but implemented with the T2 as a companion chip rather than being integrated into the main CPU die. The security properties are largely equivalent for enterprise purposes, but Apple Silicon provides stronger integration and additional protections like PAC (Pointer Authentication Codes) at the hardware level.</p>
 
-                <!-- SECTION 6: Protecting Enterprise Secrets -->
+                
                 <h2>6. How Hardware Trust Protects What Attackers Want Most</h2>
 
                 <p>The boot process establishes that the device can be trusted. But the more pressing enterprise question is: what happens to credentials, encryption keys, and sensitive corporate data after the device is up and running?</p>
@@ -1096,7 +748,7 @@
                 <p><strong>FileVault on Apple Silicon</strong> takes this further. The encryption keys are not just sealed to the Secure Enclave—they are entangled with hardware-unique keys derived from the Secure Enclave's UID (unique identifier), which is fused into the chip at manufacturing and cannot be read by any software, including Apple's own operating system. Decryption requires both the correct user authentication credential <em>and</em> the specific physical Secure Enclave that holds the UID. Remove the SSD. Move it to another machine. The data is permanently inaccessible—not just difficult to access, but mathematically inaccessible without the specific chip.</p>
 
                 <div class="success-box">
-                    <h3><i class="fas fa-shield-alt" style="margin-right: 8px;"></i>Enterprise Risk Reduction: Disk Encryption</h3>
+                    <h3>Enterprise Risk Reduction: Disk Encryption</h3>
                     <p><strong>Attack defeated:</strong> Physical theft of a laptop, forensic disk imaging, cold boot attacks against encryption keys.</p>
                     <p><strong>Requirement:</strong> BitLocker must be configured with TPM-only or TPM+PIN key protection. FileVault must be enabled with Secure Enclave (T2 or Apple Silicon required). Recovery keys must be escrowed to Microsoft Entra ID or Jamf—not stored locally or in user-controlled locations.</p>
                     <p><strong>Residual risk:</strong> If an attacker gains authenticated access to a logged-in device (e.g., shoulder surfing, unlocked screen), encryption provides no protection. Encryption protects data at rest; it does not protect data in use.</p>
@@ -1124,14 +776,20 @@
 
                 <p>For enterprise environments that are progressively eliminating passwords, passkeys represent the natural destination: a credential that is hardware-bound, phishing-resistant, non-exportable, and user-verifiable via biometrics.</p>
 
-                <!-- SECTION 7: Enterprise Decisions -->
+                
                 <h2>7. Turning Hardware Trust into Enterprise Access Decisions</h2>
 
                 <p>Hardware trust is not valuable in isolation. Its value to the enterprise is in how that trust gets translated into access decisions—which resources a user can reach, from which devices, under which conditions.</p>
 
-                <figure style="margin: 2rem 0;">
-                    <img src="/images/articles/enterprise_device_lifecycle.jpg" alt="Enterprise Device Lifecycle — Hardware Trust to Cloud Access" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" loading="lazy">
-                    <figcaption style="text-align: center; font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; font-style: italic;">Enterprise Device Lifecycle: Provisioning, Runtime Trust, Authentication, and Conditional Access</figcaption>
+                <figure>
+                    <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram Enterprise Device Lifecycle — Hardware Trust to Cloud Access">
+                    <img src="/images/articles/enterprise_device_lifecycle.jpg" alt="Enterprise Device Lifecycle — Hardware Trust to Cloud Access" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>Enterprise Device Lifecycle — Hardware Trust to Cloud Access</figcaption>
+            </figure>
+                    <figcaption>Enterprise Device Lifecycle: Provisioning, Runtime Trust, Authentication, and Conditional Access</figcaption>
                 </figure>
 
                 <h3>The MDM Layer: Intune and Jamf</h3>
@@ -1141,7 +799,7 @@
                 <p><strong>Jamf Pro</strong> provides the equivalent for Apple devices. Jamf integrates with Apple's Device Enrollment Program (DEP) for zero-touch provisioning, and with Apple Business Manager for organizational Apple ID management. Jamf collects compliance signals—FileVault encryption status, Gatekeeper configuration, OS version, Secure Boot settings—and relays them to integrated identity providers. With Jamf's integration to Microsoft Entra ID and other IdPs, macOS compliance state can participate in the same Conditional Access policies that govern Windows devices.</p>
 
                 <div class="flow-box">
-                    <h4><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>Enterprise Trust Flow: From Power-On to Application Access</h4>
+                    <h4>Enterprise Trust Flow: From Power-On to Application Access</h4>
                     <div class="flow-step">
                         <div class="flow-step-num">1</div>
                         <div class="flow-step-content"><strong>Device powers on.</strong> UEFI Secure Boot verifies the bootloader signature. TPM (or Secure Enclave) records boot measurements. Tampered boot chain = device halts.</div>
@@ -1201,7 +859,8 @@
 
                 <p>Hardware-backed trust makes the device signal reliable. When an Intune compliance policy checks "Is BitLocker enabled?" or "Is Secure Boot active?"—and those checks are backed by hardware attestation rather than a software agent's self-report—the compliance signal is meaningful. An MDM-reported compliant device that provides no hardware attestation provides a much weaker guarantee: a sophisticated attacker who has compromised the MDM agent can manipulate what it reports.</p>
 
-                <table>
+                <div class="table-wrapper ap-stackable">
+<table>
                     <thead>
                         <tr>
                             <th>Compliance Signal</th>
@@ -1212,45 +871,46 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Device Identity</td>
+                            <th>Device Identity</th>
                             <td>Device certificate (TPM-held private key)</td>
                             <td>MDM enrollment identity (Secure Enclave)</td>
                             <td>Yes — hardware bound</td>
                         </tr>
                         <tr>
-                            <td>Disk Encryption</td>
+                            <th>Disk Encryption</th>
                             <td>BitLocker via TPM attestation</td>
                             <td>FileVault via Secure Enclave</td>
                             <td>Yes — hardware enforced</td>
                         </tr>
                         <tr>
-                            <td>Secure Boot Status</td>
+                            <th>Secure Boot Status</th>
                             <td>Measured Boot via TPM PCRs</td>
                             <td>Secure Boot via Secure Enclave attestation</td>
                             <td>Yes — hardware attested</td>
                         </tr>
                         <tr>
-                            <td>OS Version</td>
+                            <th>OS Version</th>
                             <td>MDM agent report</td>
                             <td>MDM agent report</td>
                             <td>No — software reported</td>
                         </tr>
                         <tr>
-                            <td>Antivirus Status</td>
+                            <th>Antivirus Status</th>
                             <td>MDM agent / Defender report</td>
                             <td>MDM agent report</td>
                             <td>No — software reported</td>
                         </tr>
                         <tr>
-                            <td>Authentication Strength</td>
+                            <th>Authentication Strength</th>
                             <td>Windows Hello (TPM-backed FIDO2)</td>
                             <td>Touch ID (Secure Enclave)</td>
                             <td>Yes — hardware bound</td>
                         </tr>
                     </tbody>
                 </table>
+</div>
 
-                <!-- SECTION 8: What It Stops (and Doesn't) -->
+                
                 <h2>8. What Hardware Trust Actually Stops—and What It Doesn't</h2>
 
                 <p>Experienced security architects are skeptical of any control that claims to stop everything. Hardware-backed trust is powerful, but it is not a complete defense. Understanding precisely what it stops—and what it does not—is essential for realistic threat modeling.</p>
@@ -1270,7 +930,7 @@
                 <p><strong>Cold boot and DMA attacks against encryption keys.</strong> When disk encryption keys are sealed inside the TPM or Secure Enclave—rather than cached in OS memory—cold boot attacks (rapidly removing memory modules to read contents before encryption keys are cleared) and DMA (direct memory access) attacks cannot recover the primary disk encryption key.</p>
 
                 <div class="warning-box">
-                    <h3><i class="fas fa-exclamation-circle" style="margin-right: 8px;"></i>What Hardware Trust Does NOT Stop</h3>
+                    <h3>What Hardware Trust Does NOT Stop</h3>
                     <p><strong>Insider threats.</strong> An authenticated employee with legitimate access to a properly enrolled, compliant device can still exfiltrate data. Hardware trust verifies the device and the authentication event—it does not constrain what a legitimately authenticated user does afterward. DLP, behavioral analytics, and access controls are the relevant controls here.</p>
                     <p><strong>Compromised cloud identities.</strong> If an attacker compromises a user's Entra ID or Managed Apple ID through a non-device-bound credential (e.g., an application password, a legacy protocol, a compromised recovery email), they may be able to access cloud resources regardless of device compliance—depending on how Conditional Access is configured. Hardware trust on the endpoint does not protect cloud identity stores.</p>
                     <p><strong>Authenticated attackers with physical access.</strong> If an attacker coerces a user into unlocking their device—or accesses a device that is already unlocked and unattended—hardware trust provides no protection. The attacker is authenticated; the hardware did its job. Access controls and screen lock policies are the relevant controls.</p>
@@ -1278,7 +938,7 @@
                     <p><strong>Supply chain attacks against hardware itself.</strong> A TPM or Secure Enclave that is compromised during manufacturing—an extraordinarily difficult attack—would undermine the entire trust chain. Nation-state-level adversaries operating at hardware supply chain depth are outside the threat model for most enterprise security programs.</p>
                 </div>
 
-                <!-- SECTION 9: Enterprise Trade-offs -->
+                
                 <h2>9. The Trade-offs Enterprise Teams Actually Face</h2>
 
                 <p>No enterprise security architecture exists in a vacuum. Implementing hardware-backed trust creates operational realities that security teams and IT administrators deal with every day.</p>
@@ -1313,7 +973,7 @@
 
                 <p>Organizations planning multi-year hardware lifecycle strategies should account for the reality that both Apple and Microsoft will progressively raise hardware security baselines. Devices that do not meet future requirements will be progressively excluded from security feature support.</p>
 
-                <!-- SECTION 10: Conclusion -->
+                
                 <h2>10. Building Trust That Cannot Be Forged in Software</h2>
 
                 <p>When I think about the trajectory of enterprise endpoint security over the past fifteen years, the most striking thing is not any single technology milestone. It is the consistency of the direction. Independently—through very different design philosophies—both Microsoft and Apple have been building toward the same destination: a world where the enterprise security properties that matter most cannot be undermined by software alone.</p>
@@ -1331,7 +991,7 @@
 
                 <p>The adversaries have moved on. The hardware has caught up. The question is whether the enterprise security program has, too.</p>
 
-                <!-- FAQ Section -->
+                
                 <h2>Frequently Asked Questions</h2>
 
                 <h3 id="faq-hardware-backed-trust">What is hardware-backed trust in enterprise security?</h3>
@@ -1346,7 +1006,7 @@
                 <h3 id="faq-bitlocker-filevault-theft">Do BitLocker and FileVault actually protect data if a laptop is stolen?</h3>
                 <p>Yes—when properly configured with hardware binding. BitLocker with TPM-backed key protection means the encryption key is only released when the measured boot sequence matches the expected baseline and the user authenticates. If the drive is removed and placed in another machine, the TPM is absent and the key is never released. FileVault on Apple Silicon uses Secure Enclave-held keys that are entangled with the chip's hardware-unique UID—moving the SSD to another machine makes the data permanently inaccessible. The critical caveat: these protections require correct configuration and recovery key escrow to an enterprise system. BitLocker with software-only key protection or with recovery keys stored insecurely does not provide equivalent protection.</p>
 
-                <!-- Sources -->
+                
                 <h2>Sources and References</h2>
                 <ul>
                     <li><a href="https://learn.microsoft.com/en-us/windows/security/hardware-security/tpm/trusted-platform-module-overview" target="_blank" rel="noopener noreferrer">Microsoft Learn: Trusted Platform Module (TPM) Overview</a></li>
@@ -1364,7 +1024,7 @@
                 </ul>
 
                 <div class="success-box">
-                    <h3><i class="fas fa-compass" style="margin-right: 8px;"></i>Continue Exploring Enterprise Security on TheHGTech</h3>
+                    <h3>Continue Exploring Enterprise Security on TheHGTech</h3>
                     <ul>
                         <li><strong>Understand insider threats:</strong> Read our analysis of <a href="/articles/agentic-ai-insider-threat-2026.html">Agentic AI and the Insider Threat Problem</a>.</li>
                         <li><strong>Track active threats:</strong> Monitor ransomware groups and threat actors in real-time using our <a href="/ransomware-tracker.html">Ransomware Tracker</a>.</li>
@@ -1374,84 +1034,334 @@
                 </div>
 
                 <div class="editorial-box">
-                    <h3><i class="fas fa-exclamation" style="margin-right: 8px;"></i>Editorial Analysis Disclosure</h3>
+                    <h3>Editorial Analysis Disclosure</h3>
                     <p>This article represents independent analysis based on publicly available documentation from Microsoft, Apple, the Trusted Computing Group, FIDO Alliance, and NIST. Where specific architectural behavior is described, it is sourced from official platform security documentation. Analysis and enterprise implications represent the author's independent assessment based on operational experience. This article does not represent the views of any hardware or software vendor.</p>
                 </div>
 
             </div>
-            <!-- End article-content -->
+            
 
-            <!-- Article Footer -->
-            <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+            
+            <div class="article-footer">
                 <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
                 <p><strong>Published:</strong> July 19, 2026</p>
                 <p><strong>Last Updated:</strong> July 19, 2026</p>
             </div>
 
-            <!-- Related Articles -->
-            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
-                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            
+            <div class="related-articles-section">
+                <h3>Related Analysis</h3>
+                <div>
 
-                    <a href="/articles/copilot-vs-apple-intelligence-security-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Copilot vs Apple Intelligence: Enterprise Security Analysis</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How Microsoft and Apple's AI assistants handle enterprise data privacy and security.</p>
+                    <a href="/articles/copilot-vs-apple-intelligence-security-2026.html">
+                        <div class="related-card">
+                            <div>AI Security</div>
+                            <h4>Copilot vs Apple Intelligence: Enterprise Security Analysis</h4>
+                            <p>How Microsoft and Apple's AI assistants handle enterprise data privacy and security.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/entra-id-ghost-takeover-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Identity Security</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Entra ID Ghost Takeover: When Cloud Identity Fails</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Analysis of Entra ID compromise techniques that bypass device-level controls.</p>
+                    <a href="/articles/entra-id-ghost-takeover-2026.html">
+                        <div class="related-card">
+                            <div>Identity Security</div>
+                            <h4>Entra ID Ghost Takeover: When Cloud Identity Fails</h4>
+                            <p>Analysis of Entra ID compromise techniques that bypass device-level controls.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/infostealer-mfa-bypass-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #f59e0b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Credential Theft</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Infostealer MFA Bypass: How Session Tokens Are Stolen</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Why hardware-bound credentials—not session cookies—are the answer to infostealer attacks.</p>
+                    <a href="/articles/infostealer-mfa-bypass-2026.html">
+                        <div class="related-card">
+                            <div>Credential Theft</div>
+                            <h4>Infostealer MFA Bypass: How Session Tokens Are Stolen</h4>
+                            <p>Why hardware-bound credentials—not session cookies—are the answer to infostealer attacks.</p>
                         </div>
                     </a>
 
                 </div>
             </div>
 
+        
+</section>
+</section>
+
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/hardware-backed-trust-enterprise-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="hardware-backed-trust-enterprise-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Enterprise Security</dd></div>
+                            <div><dt>Publication</dt><dd>July 19, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>1 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </article>
-
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
-                </div>
-                <div class="button-separator"></div>
-                <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
-            </div>
-        </div>
-
     </main>
 
-    <footer>
-        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
+            </div>
+            <div class="ap-related-grid">
+            <a href="/articles/tcs-digital-experience-monitoring-controversy.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/tcs-dem-controversy.jpg" alt="TCS Digital Tracking Controversy: DEM vs Employee Surveillance" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Enterprise Security</span>
+                        <span>August 24, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">TCS Digital Tracking Controversy: DEM vs Employee Surveillance</h3>
+                    <p class="ap-related-excerpt">Explore the TCS digital tracking controversy. What is Digital Experience Monitoring (DEM), why enterprises use it, and where security crosses into surveillance.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/ibm-api-connect-cve-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/ibm-api-connect-cve-2026.png" alt="IBM API Connect CVE-2025-13915: Critical Enterprise Gateway Flaw" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Enterprise Security</span>
+                        <span>January 2, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">IBM API Connect CVE-2025-13915: Critical Enterprise Gateway Flaw</h3>
+                    <p class="ap-related-excerpt">CVSS 9.8 vulnerability in IBM API Connect allows unauthenticated remote code execution on enterprise API gateways. Fortune 500 companies affected. Patch immediately.</p>
+                    <div class="ap-related-footer">
+                        <span>By TheHGTech</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png" alt="The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 30, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era</h3>
+                    <p class="ap-related-excerpt">Enterprise security isn&#x27;t just struggling to patch. It&#x27;s struggling to understand its own environment. This analysis examines how gaps in asset, identity and dependency visibility slow both vulnerability remediation and incident response, and how one shared context foundation supports both.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>14 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
+
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="/interaction-bar.min.js?v=20260623"></script>
-    <script src="../ui-enhancements.js?v=20260517" defer></script>
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>
-
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
 
 </html>

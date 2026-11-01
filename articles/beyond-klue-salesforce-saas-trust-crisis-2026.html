@@ -1,261 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis | TheHGTech</title>
     <meta name="description" content="A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, OAuth attack surfaces, and third-party application vulnerabilities.">
     <meta name="keywords" content="Salesforce data theft, Klue breach, SaaS security, OAuth governance, trust inheritance, third-party risk management, API security, identity security, SSPM, cyber architecture, supply chain attack">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html">
-    
-    <!-- Open Graph / Facebook -->
+
+    <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html">
     <meta property="og:title" content="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis">
-    <meta property="og:description" content="A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, and third-party application vulnerabilities.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/beyond-klue-salesforce-saas-trust-crisis-2026.png">
+    <meta property="og:description" content="A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, OAuth attack surfaces, and third-party application vulnerabilities.">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/beyond-klue-hero-new.jpg">
+    <meta property="og:site_name" content="TheHGTech">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://thehgtech.com/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html">
-    <meta property="twitter:title" content="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis">
-    <meta property="twitter:description" content="A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, and third-party application vulnerabilities.">
-    <meta property="twitter:image" content="https://thehgtech.com/images/articles/beyond-klue-salesforce-saas-trust-crisis-2026.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis">
+    <meta name="twitter:description" content="A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, OAuth attack surfaces, and third-party application vulnerabilities.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/beyond-klue-hero-new.jpg">
 
-    <!-- Style System - FULL SET REQUIRED -->
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-
-    <!-- Google Fonts and Font Awesome -->
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-
-    <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
-            --code-bg: #111;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 18px;
-        }
-
-        .article-container {
-            max-width: 800px;
-            margin: 80px auto 0;
-            padding: 2rem;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .back-link:hover {
-            color: var(--text-primary);
-        }
-
-        .article-header {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            text-align: left;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .article-content h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.6rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .article-content h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-        }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-        }
-        
-        .article-image {
-            width: 100%;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border);
-        }
-
-        .technical-box {
-            background: rgba(0, 217, 255, 0.03);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .technical-box > *:first-child,
-        .warning-box > *:first-child,
-        .info-box > *:first-child {
-            margin-top: 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.05);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            border-left: 5px solid var(--accent-red);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-        
-        .success-box {
-            background: rgba(16, 185, 129, 0.05);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-left: 5px solid #10B981;
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .info-box {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--text-secondary);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        pre {
-            background: #000;
-            border: 1px solid var(--border);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-
-        code {
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 0.95rem;
-            color: #fff;
-            line-height: 1.5;
-        }
-
-        .article-content p code, .article-content li code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            color: var(--accent-cyan);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-            color: var(--text-secondary);
-        }
-
-        th {
-            background: rgba(0, 217, 255, 0.05);
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-        
-        blockquote {
-            font-size: 1.4rem;
-            font-style: italic;
-            border-left: 4px solid var(--accent-cyan);
-            margin: 2rem 0;
-            padding: 1rem 2rem;
-            background: rgba(255, 255, 255, 0.02);
-            color: var(--text-primary);
-        }
-    </style>
-
-    <!-- Schema.org JSON-LD -->
-    
-
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -320,10 +92,6 @@
       ]
     }
     </script>
-    <script src="/theme-toggle.js" defer></script>
-    <link rel="stylesheet" href="/theme-toggle.css">
-    <script src="/m-app.min.js" defer></script>
-    
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -350,8 +118,6 @@
   ]
 }
     </script>
-
-    <!-- SEO: NewsArticle Schema -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -391,212 +157,243 @@
   "articleSection": "AI Security"
 }
 </script>
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
+
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <!-- Pre-render Theme Initialization -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
+        (function () {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
+        })();
     </script>
 </head>
-<body class="light-mode">
-    <!-- SEO Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
-      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
-        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li style="color:#ffffff;" aria-current="page">Beyond Klue: The Salesforce Data Theft Campaign an…</li>
-      </ol>
-    </nav>
-    
-<!-- Desktop Header -->
-<header class="header" role="banner">
+
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
+
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
+
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
+
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
 
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
                         <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <a href="/articles.html" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
                             </div>
                         </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
+                        <a href="/guides/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <a href="/about.html">About</a>
 
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
 
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
@@ -609,35 +406,177 @@
         </div>
     </header>
 
-<main class="article-container">
-    <a href="/articles.html" class="back-link">
-        <i class="fas fa-arrow-left"></i> Back to Articles
-    </a>
-
-    <header class="article-header">
-        <h1>Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h1>
-        <div class="article-meta">
-            <span><i class="far fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-            <span><i class="far fa-calendar-alt"></i> June 25, 2026</span>
-            <span><i class="far fa-clock"></i> 18 min read</span>
-            <span><i class="fas fa-tags"></i> SaaS Security, Threat Intel, Cloud Architecture</span>
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <article class="article-content">
-        <img src="/images/articles/beyond-klue-hero-new.jpg" alt="A central cloud connected to dozens of SaaS applications through glowing trust pathways" class="featured-image">
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Threat Analysis</li>
+                    </ol>
+                </nav>
+
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, OAuth attack surfaces, and third-party application vulnerabilities.
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="June 25, 2026" itemprop="datePublished">June 25, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">18 min read</span>
+                        <span class="ap-byline-sub">12 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/beyond-klue-hero-new.jpg"
+                         alt="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (12 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-1">1. Section 1: What Happened?</a></li>
+                    <li><a href="#sec-2">2. Section 2: Why This Incident Matters</a></li>
+                    <li><a href="#sec-3">3. Section 3: One Platform, Many Victims</a></li>
+                    <li><a href="#sec-4">4. Section 4: The Hidden Attack Surface of SaaS Integrations</a></li>
+                    <li><a href="#sec-5">5. Section 5: The Inherited Trust Problem</a></li>
+                    <li><a href="#sec-6">6. Section 6: The SaaS Security Blind Spot</a></li>
+                    <li><a href="#sec-7">7. Section 7: Lessons from LastPass, Snowflake, MOVEit and Salesforce</a></li>
+                    <li><a href="#sec-8">8. Section 8: What Security Teams Often Miss</a></li>
+                    <li><a href="#sec-9">9. Section 9: Practical Recommendations for Security Leaders</a></li>
+                    <li><a href="#sec-10">10. Section 10: The Future: AI Agents, MCP Servers and Expanding Trust Chains</a></li>
+                    <li><a href="#sec-11">11. Conclusion</a></li>
+                    <li><a href="#sec-12">12. Frequently Asked Questions (FAQ)</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-1">1. Section 1: What Happened?</a>
+                            <a href="#sec-2">2. Section 2: Why This Incident Matters</a>
+                            <a href="#sec-3">3. Section 3: One Platform, Many Victims</a>
+                            <a href="#sec-4">4. Section 4: The Hidden Attack Surface of SaaS Integrations</a>
+                            <a href="#sec-5">5. Section 5: The Inherited Trust Problem</a>
+                            <a href="#sec-6">6. Section 6: The SaaS Security Blind Spot</a>
+                            <a href="#sec-7">7. Section 7: Lessons from LastPass, Snowflake, MOVEit and Salesforce</a>
+                            <a href="#sec-8">8. Section 8: What Security Teams Often Miss</a>
+                            <a href="#sec-9">9. Section 9: Practical Recommendations for Security Leaders</a>
+                            <a href="#sec-10">10. Section 10: The Future: AI Agents, MCP Servers and Expanding Trust Chains</a>
+                            <a href="#sec-11">11. Conclusion</a>
+                            <a href="#sec-12">12. Frequently Asked Questions (FAQ)</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+
+        
 
         <div class="technical-box">
-            <h3><i class="fas fa-crosshairs"></i> Executive Summary</h3>
+            <h3> Executive Summary</h3>
             <p><strong>BLUF:</strong> The recent widespread data theft campaign impacting organizations connected to Salesforce, facilitated heavily through the compromise of third-party integration platforms like Klue, exposes a structural vulnerability in enterprise architecture: the weaponization of trust inheritance. Attackers are pivoting from exploiting core platforms to compromising the downstream applications that possess highly privileged OAuth tokens.</p>
             <p><strong>Confidence Level:</strong> Confirmed</p>
             <p><strong>TLP:</strong> CLEAR</p>
             <p><strong>Key Security Takeaway:</strong> Security architectures must evolve from perimeter defense of core platforms to continuous validation of the entire SaaS integration ecosystem. Trusting a platform means inherently trusting everything that platform trusts.</p>
-            <p style="font-size: 0.9rem; margin-top: 1rem; color: var(--text-muted);"><em>This analysis is based on publicly available incident reports, vendor disclosures, and threat intelligence as of June 2026; details may evolve.</em></p>
+            <p><em>This analysis is based on publicly available incident reports, vendor disclosures, and threat intelligence as of June 2026; details may evolve.</em></p>
         </div>
 
         <div class="info-box">
-            <h3><i class="fas fa-key"></i> Key Takeaways</h3>
+            <h3> Key Takeaways</h3>
             <ul>
                 <li><strong>It's Not a Salesforce Vulnerability:</strong> The data thefts occurred via legitimate API pathways using authorized tokens acquired from compromised third-party vendors, not a zero-day in Salesforce.</li>
                 <li><strong>Trust Inheritance is the New Attack Vector:</strong> When you authorize a third-party application via OAuth, it inherits your identity's trust. Compromising that application grants the attacker the same trust level.</li>
@@ -648,11 +587,16 @@
             </ul>
         </div>
 
-        <h2>Section 1: What Happened?</h2>
+        
+</section>
+
+<section id="sec-1">
+<h2>1. Section 1: What Happened?</h2>
         
         <p>The security community has recently tracked a coordinated, high-volume data exfiltration campaign affecting multiple enterprise organizations. While the common denominator appeared to be Salesforce data, the core compromise occurred downstream. Klue, a competitive enablement platform deeply integrated with customer CRM instances, was identified as a primary vector, though investigations point toward a broader targeting of similar third-party integrators.</p>
 
-        <table>
+        <div class="table-wrapper ap-stackable">
+<table>
             <thead>
                 <tr>
                     <th>Event Category</th>
@@ -661,7 +605,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Confirmed Facts</strong></td>
+                    <th><strong>Confirmed Facts</strong></th>
                     <td>
                         • Data was exfiltrated using legitimate, authenticated API calls.<br>
                         • The access was achieved via abused OAuth tokens and API keys belonging to third-party applications.<br>
@@ -670,14 +614,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Reported Claims</strong></td>
+                    <th><strong>Reported Claims</strong></th>
                     <td>
                         • Threat intelligence firms suggest this is part of a larger, financially motivated extortion campaign targeting interconnected SaaS ecosystems.<br>
                         • Similar patterns of API scraping have been observed involving other revenue intelligence and marketing automation platforms.
                     </td>
                 </tr>
                 <tr>
-                    <td><strong>Unknowns</strong></td>
+                    <th><strong>Unknowns</strong></th>
                     <td>
                         • The exact mechanism used to initially breach the third-party vendors (e.g., Klue).<br>
                         • The full scope of other third-party integrations that may have been compromised in parallel operations.<br>
@@ -686,8 +630,13 @@
                 </tr>
             </tbody>
         </table>
+</div>
 
-        <h2>Section 2: Why This Incident Matters</h2>
+        
+</section>
+
+<section id="sec-2">
+<h2>2. Section 2: Why This Incident Matters</h2>
 
         <p>This is not a Salesforce problem. This is an ecosystem problem.</p>
 
@@ -699,7 +648,11 @@
 
         <p>Threat actors have realized that assaulting a heavily defended fortress like Salesforce directly is inefficient. Instead, they are targeting the lightly defended supply wagons that have guaranteed, unhindered access through the front gate. They are targeting trust relationships.</p>
 
-        <h2>Section 3: One Platform, Many Victims</h2>
+        
+</section>
+
+<section id="sec-3">
+<h2>3. Section 3: One Platform, Many Victims</h2>
 
         <p>The architecture of a modern SaaS attack differs fundamentally from traditional models.</p>
 
@@ -707,42 +660,78 @@
 
         <p>In the <strong>Modern SaaS Attack Model</strong>, the relationship is a hub-and-spoke geometry (Attacker → Trusted Platform → Multiple Victims). By compromising a single trusted identity or integration provider, the attacker achieves an exponential blast radius.</p>
 
-<pre><code class="language-plaintext">Traditional vs. Modern SaaS Attack Geometry
+<div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>Traditional vs. Modern SaaS Attack Geometry
 
 [ Traditional ]
-Attacker ----> Perimeter Firewall ----> Internal Database (Victim 1)
+Attacker ----&gt; Perimeter Firewall ----&gt; Internal Database (Victim 1)
 
 [ Modern SaaS ]
-                                  +--> Salesforce Tenant A (Victim 1)
+                                  +--&gt; Salesforce Tenant A (Victim 1)
                                   |
-Attacker ----> Compromised Third  +--> Salesforce Tenant B (Victim 2)
+Attacker ----&gt; Compromised Third  +--&gt; Salesforce Tenant B (Victim 2)
                Party (e.g. Klue)  |
-               [Holds valid Oauth]+--> Salesforce Tenant C (Victim 3)
+               [Holds valid Oauth]+--&gt; Salesforce Tenant C (Victim 3)
                [tokens for all]   |
-                                  +--> Salesforce Tenant n (Victim n)
-</code></pre>
+                                  +--&gt; Salesforce Tenant n (Victim n)</code></pre>
+</div>
 
         <p>This shared trust model creates shared attack paths. When a vendor holds valid OAuth tokens for hundreds of different enterprise tenants, that vendor becomes a highly lucrative, concentrated target. A single successful breach yields the "keys to the kingdom" for numerous downstream organizations simultaneously.</p>
 
-        <h2>Section 4: The Hidden Attack Surface of SaaS Integrations</h2>
+        
+</section>
+
+<section id="sec-4">
+<h2>4. Section 4: The Hidden Attack Surface of SaaS Integrations</h2>
 
         <p>The complexity of SaaS environments is difficult to overstate. A typical enterprise Salesforce instance might be connected to dozens of applications. Every integration expands the attack surface, often introducing permissions that bypass standard user controls.</p>
 
-<pre><code class="language-plaintext">The Integration Attack Surface
+<div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>The Integration Attack Surface
 
 Salesforce (Core Hub)
-├── Klue (Competitive Intel) --------> [OAuth: Read/Write All Data]
-├── Analytics Platform --------------> [API Key: Read All Data]
-├── AI Assistant --------------------> [OAuth: Impersonate User]
-├── Marketing Platform --------------> [Service Account: Modify Leads]
-├── CRM Extensions ------------------> [Browser Plugin: Session Access]
-├── Revenue Intelligence ------------> [OAuth: Sync Mail/CRM Data]
-└── External APIs -------------------> [Webhook: Data Exfiltration]
-</code></pre>
+├── Klue (Competitive Intel) --------&gt; [OAuth: Read/Write All Data]
+├── Analytics Platform --------------&gt; [API Key: Read All Data]
+├── AI Assistant --------------------&gt; [OAuth: Impersonate User]
+├── Marketing Platform --------------&gt; [Service Account: Modify Leads]
+├── CRM Extensions ------------------&gt; [Browser Plugin: Session Access]
+├── Revenue Intelligence ------------&gt; [OAuth: Sync Mail/CRM Data]
+└── External APIs -------------------&gt; [Webhook: Data Exfiltration]</code></pre>
+</div>
 
         <p>These connections are established via OAuth permissions, API tokens, and service accounts. Once granted, these tokens often remain active indefinitely. Security teams frequently lose visibility into these connections, leading to <strong>integration debt</strong>. A business unit might test an AI automation tool for a month, abandon it, but never revoke the OAuth grant. That stale token remains a valid attack vector.</p>
 
-        <h2>Section 5: The Inherited Trust Problem</h2>
+        
+</section>
+
+<section id="sec-5">
+<h2>5. Section 5: The Inherited Trust Problem</h2>
 
         <p>The core thesis of this crisis is simple: <strong>When Salesforce is trusted, everything connected to Salesforce inherits some degree of trust.</strong></p>
 
@@ -759,7 +748,11 @@ Salesforce (Core Hub)
             <li><strong>Overprivileged Applications:</strong> Vendors frequently request `read/write` access when only `read` is necessary, maximizing the potential damage if compromised.</li>
         </ul>
 
-        <h2>Section 6: The SaaS Security Blind Spot</h2>
+        
+</section>
+
+<section id="sec-6">
+<h2>6. Section 6: The SaaS Security Blind Spot</h2>
 
         <p>If you ask a modern CISO or Security Architect questions about their physical or cloud infrastructure, they usually have immediate answers. They know exactly how many laptops are deployed, how many AWS EC2 instances are running, and what rules are on the perimeter firewalls.</p>
 
@@ -773,11 +766,16 @@ Salesforce (Core Hub)
 
         <p>This blind spot is a direct result of <strong>SaaS sprawl</strong> and decentralized procurement. Line-of-business users can adopt and integrate tools seamlessly, entirely bypassing IT security reviews. The resulting "permission creep" leaves organizations deeply vulnerable to supply chain attacks orchestrated through APIs.</p>
 
-        <h2>Section 7: Lessons from LastPass, Snowflake, MOVEit and Salesforce</h2>
+        
+</section>
+
+<section id="sec-7">
+<h2>7. Section 7: Lessons from LastPass, Snowflake, MOVEit and Salesforce</h2>
 
         <p>The Klue/Salesforce incident is part of a distinct evolutionary trend in cyberattacks. By comparing it to other recent major incidents, the pattern of targeting "trust chains" becomes clear.</p>
 
-        <table>
+        <div class="table-wrapper ap-stackable">
+<table>
             <thead>
                 <tr>
                     <th>Incident</th>
@@ -788,37 +786,48 @@ Salesforce (Core Hub)
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>LastPass</strong></td>
+                    <th><strong>LastPass</strong></th>
                     <td>Password Vaults</td>
                     <td>Compromised DevOps Engineer → Cloud Storage Access</td>
                     <td>Securing the application is moot if the backup infrastructure holding the encrypted data is accessible via compromised secondary identities.</td>
                 </tr>
                 <tr>
-                    <td><strong>MOVEit</strong></td>
+                    <th><strong>MOVEit</strong></th>
                     <td>Managed File Transfer</td>
                     <td>Zero-Day SQL Injection in specialized transfer appliance</td>
                     <td>Centralized data exchange platforms are single points of failure. Supply chain vulnerabilities allow automated, mass exfiltration.</td>
                 </tr>
                 <tr>
-                    <td><strong>Snowflake</strong></td>
+                    <th><strong>Snowflake</strong></th>
                     <td>Data Warehouse</td>
                     <td>Stolen credentials lacking MFA on external facing service accounts</td>
                     <td>Identity is the perimeter. Highly privileged service accounts without strict conditional access or MFA are easily abused via infostealer malware.</td>
                 </tr>
                 <tr>
-                    <td><strong>Salesforce / Klue</strong></td>
+                    <th><strong>Salesforce / Klue</strong></th>
                     <td>CRM Ecosystem</td>
                     <td>Compromised third-party integration → Stolen OAuth/API tokens</td>
                     <td>Trust is transitive. You must defend your trusted integrations with the same rigor you defend your core platform.</td>
                 </tr>
             </tbody>
         </table>
+</div>
 
-        <h2>Section 8: What Security Teams Often Miss</h2>
+        
+</section>
+
+<section id="sec-8">
+<h2>8. Section 8: What Security Teams Often Miss</h2>
 
         <p>Traditional security programs are heavily weighted toward protecting endpoints and infrastructure. Budgets are dominated by EDR, vulnerability management, and patching cadences. While these are essential, they offer absolutely zero protection against a threat actor using a stolen API token to scrape data from a SaaS platform.</p>
         
-        <img src="/images/articles/saas-trust-chain.png" alt="A glowing chain illustrating the transfer of trust from primary platforms to third-party integrations" class="featured-image" style="max-height: 400px; width: auto; display: block; margin: 2rem auto;">
+        <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram A glowing chain illustrating the transfer of trust from primary platforms to third-party integrations">
+                    <img src="/images/articles/saas-trust-chain.png" alt="A glowing chain illustrating the transfer of trust from primary platforms to third-party integrations" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>A glowing chain illustrating the transfer of trust from primary platforms to third-party integrations</figcaption>
+            </figure>
 
         <p>Security teams frequently underinvest in:</p>
         <ul>
@@ -832,12 +841,16 @@ Salesforce (Core Hub)
         
         <p>Unlike traditional Cloud Security Posture Management (CSPM) tools that focus on AWS or Azure infrastructure, SSPMs specialize in the application layer. By deploying tools like <strong>AppOmni</strong>, <strong>Adaptive Shield</strong>, <strong>Obsidian Security</strong>, or <strong>Valence Security</strong>, teams gain the necessary visibility to automatically audit configurations, detect overly permissive OAuth grants, and enforce least privilege across their entire SaaS mesh.</p>
 
-        <h2>Section 9: Practical Recommendations for Security Leaders</h2>
+        
+</section>
+
+<section id="sec-9">
+<h2>9. Section 9: Practical Recommendations for Security Leaders</h2>
 
         <p>To defend against the weaponization of trust inheritance, security architectures must pivot. Here are actionable steps organizations must take:</p>
 
         <div class="technical-box">
-            <h3>Identity & OAuth Governance</h3>
+            <h3>Identity &amp; OAuth Governance</h3>
             <ul>
                 <li><strong>Enforce Strict Conditional Access:</strong> Even for service accounts and API integrations, restrict access based on IP space, geographic location, and behavioral baselines.</li>
                 <li><strong>Implement an OAuth Application Review Process:</strong> End-users should not be able to grant tenant-wide consent to unvetted applications. Block user consent for apps requesting high-risk permissions.</li>
@@ -847,7 +860,7 @@ Salesforce (Core Hub)
         </div>
 
         <div class="technical-box">
-            <h3>SaaS Security & Third-Party Risk</h3>
+            <h3>SaaS Security &amp; Third-Party Risk</h3>
             <ul>
                 <li><strong>Deploy Continuous SSPM:</strong> Move away from annual audits. Use SaaS Security Posture Management tools to continuously monitor configurations, permissions, and external sharing settings.</li>
                 <li><strong>Revamp Vendor Assessments:</strong> Ensure third-party risk assessments specifically interrogate how vendors handle, encrypt, and store API tokens and OAuth refresh tokens.</li>
@@ -856,7 +869,7 @@ Salesforce (Core Hub)
         </div>
 
         <div class="technical-box">
-            <h3>Detection & Response</h3>
+            <h3>Detection &amp; Response</h3>
             <ul>
                 <li><strong>Baseline API Activity:</strong> Monitor API call volumes. A sudden spike in `READ` or `EXPORT` API calls from an otherwise quiet service account is a high-fidelity indicator of compromise.</li>
                 <li><strong>Hunt for Anomalous User Agents:</strong> Threat actors often use automated scripts for exfiltration. Look for API connections originating from unusual ASNs, cloud providers, or lacking expected user-agent strings.</li>
@@ -864,7 +877,11 @@ Salesforce (Core Hub)
             </ul>
         </div>
 
-        <h2>Section 10: The Future: AI Agents, MCP Servers and Expanding Trust Chains</h2>
+        
+</section>
+
+<section id="sec-10">
+<h2>10. Section 10: The Future: AI Agents, MCP Servers and Expanding Trust Chains</h2>
 
         <p>If the Klue incident seems complex, the near future will be exponentially more difficult to defend.</p>
 
@@ -874,80 +891,344 @@ Salesforce (Core Hub)
 
         <p>Future breaches will increasingly rely on exploiting these expansive trust chains. An attacker won't need to breach ten different systems; they will simply compromise the MCP server or the AI agent's service account, inheriting access to everything at once.</p>
 
-        <h2>Conclusion</h2>
+        
+</section>
+
+<section id="sec-11">
+<h2>11. Conclusion</h2>
 
         <p>The Salesforce data theft campaign is not merely a story about a specific CRM or a specific integration vendor like Klue. It is a harsh reminder that modern enterprises are not monolithic castles; they are highly interconnected ecosystems bound together by invisible strings of API keys and OAuth tokens.</p>
 
         <p>As long as organizations treat third-party integrations as an afterthought rather than an extension of their own perimeter, threat actors will continue to exploit trust inheritance. Security teams must evolve their perspective: you must understand not only what your organization trusts, but what your trusted platforms trust.</p>
 
-        <!-- FAQ Section for GEO/SEO -->
-        <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
         
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">What was the core mechanism of the Salesforce data theft campaign involving Klue?</h4>
+        
+</section>
+
+<section id="sec-12">
+<h2>12. Frequently Asked Questions (FAQ)</h2>
+        
+        <div class="faq-item">
+            <h4>What was the core mechanism of the Salesforce data theft campaign involving Klue?</h4>
             <p>The campaign did not exploit a zero-day in Salesforce itself. Instead, attackers compromised trusted third-party integrations, such as Klue, which held legitimate, highly privileged OAuth tokens or API keys to access Salesforce data. Attackers used these inherited permissions to exfiltrate data from multiple downstream victims.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Why are attackers targeting SaaS integrations instead of the core platforms directly?</h4>
+        <div class="faq-item">
+            <h4>Why are attackers targeting SaaS integrations instead of the core platforms directly?</h4>
             <p>Core platforms like Salesforce and Microsoft 365 have massive security investments. Third-party integrations often have weaker security controls but possess the exact same data access privileges. By compromising one integration, an attacker can leapfrog into dozens or hundreds of tenant environments using established trust chains.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">What is "trust inheritance" in a SaaS ecosystem?</h4>
+        <div class="faq-item">
+            <h4>What is "trust inheritance" in a SaaS ecosystem?</h4>
             <p>Trust inheritance occurs when an organization authenticates and authorizes an external application to act on its behalf within a core SaaS platform. The third-party application "inherits" the organization's trust. If that application is breached, the attacker effectively wields the organization's own trusted identity.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">How does SaaS sprawl contribute to this security blind spot?</h4>
+        <div class="faq-item">
+            <h4>How does SaaS sprawl contribute to this security blind spot?</h4>
             <p>As business units adopt dozens of productivity, AI, and analytics tools, they continually authorize new OAuth integrations. Security teams often lack visibility into these decentralized connections. Over time, "integration debt" builds up, leaving active tokens for forgotten or deprecated applications that attackers can abuse.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">What is SaaS Security Posture Management (SSPM)?</h4>
+        <div class="faq-item">
+            <h4>What is SaaS Security Posture Management (SSPM)?</h4>
             <p>SSPM refers to tools and practices that provide continuous visibility and automated remediation for SaaS environments. SSPM helps identify misconfigurations, excessive permissions, rogue OAuth grants, and risky third-party integrations across complex SaaS ecosystems.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">How can organizations protect themselves against OAuth and API token abuse?</h4>
+        <div class="faq-item">
+            <h4>How can organizations protect themselves against OAuth and API token abuse?</h4>
             <p>Organizations should enforce least-privilege for API access, conduct regular application and consent reviews, rotate tokens frequently, monitor API usage for anomalous exfiltration patterns, and implement strict conditional access policies even for machine-to-machine communications.</p>
         </div>
 
-        <div class="faq-item" style="margin-bottom: 1.5rem;">
-            <h4 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">How will AI agents impact the SaaS attack surface in the future?</h4>
+        <div class="faq-item">
+            <h4>How will AI agents impact the SaaS attack surface in the future?</h4>
             <p>AI agents and Copilots require massive data access across multiple platforms to function effectively. They rely on protocols like the Model Context Protocol (MCP) to bridge data silos. This expands trust chains significantly, turning AI integrations into prime targets for threat actors seeking broad data access.</p>
         </div>
 
-        <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+        <div class="article-footer">
             <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
             <p><strong>Published:</strong> June 25, 2026</p>
             <p><strong>Last Updated:</strong> June 25, 2026</p>
         </div>
-    </article>
+    
+</section>
 
-    <div class="interaction-bar">
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-            </button>
-        </div>
-        <div class="action-buttons">
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="beyond-klue-salesforce-saas-trust-crisis-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Threat Analysis</dd></div>
+                            <div><dt>Publication</dt><dd>June 25, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>12 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <div class="button-separator"></div>
-            <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
-        </div>
-    </div>
+        </article>
+    </main>
 
-    <footer>
-        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
+            </div>
+            <div class="ap-related-grid">
+            <a href="/articles/accenture-breach-env-file-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/accenture-breach-env-file-2026.jpg" alt="The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>July 10, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files</h3>
+                    <p class="ap-related-excerpt">The July 2026 Accenture breach claim by threat actor &#x27;888&#x27; contains one architecturally decisive signal: .env files in the stolen set. If verified, this points to dev-workstation exfiltration, not a DevOps pipeline or repository access compromise — and changes every control priority.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/tata-electronics-ransomware-analysis-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/tata-electronics-ransomware-analysis-2026.png" alt="Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>June 23, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn</h3>
+                    <p class="ap-related-excerpt">A technical analysis of the 2026 Tata Electronics ransomware incident by World Leaks. Explore the impact on manufacturing supply chains and key security lessons.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>25 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/claude-fable-ai-governance-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/claude-fable-ai-governance-2026.png" alt="Deep Dive: The Fable Era - Why AI Governance Replaced the Model" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>June 10, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Deep Dive: The Fable Era - Why AI Governance Replaced the Model</h3>
+                    <p class="ap-related-excerpt">Anthropic&#x27;s Claude Fable release represents a paradigm shift from capability restriction to control-based access. The real product is the control layer around the model.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>20 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
+
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
     </footer>
 
-</main>
-
-<script src="/interaction-bar.min.js?v=20260623"></script>
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
+
 </html>

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- SEO Meta Tags -->
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints | TheHGTech</title>
-
     <meta name="description" content="An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.">
     <meta name="keywords" content="Microsoft Copilot Security, Apple Intelligence Security, Enterprise AI Security, Endpoint AI Security, Copilot vs Apple Intelligence, AI Endpoint Management, Enterprise AI Governance, Intune, Jamf, Microsoft Graph, Private Cloud Compute">
     <meta name="author" content="Harish G">
@@ -15,26 +14,20 @@
     <link rel="canonical" href="https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html">
 
     <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
-    <meta property="og:title" content="Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026): Security, Privacy & Architecture">
-    <meta property="og:description" content="An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.">
     <meta property="og:type" content="article">
-    <meta property="article:published_time" content="2026-06-11T12:00:00Z">
-    <meta property="article:author" content="Harish G">
-    <meta property="article:section" content="Cybersecurity">
-    <meta property="article:tag" content="Endpoint Security">
-    <meta property="article:tag" content="Microsoft Copilot">
-    <meta property="article:tag" content="Apple Intelligence">
     <meta property="og:url" content="https://thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html">
+    <meta property="og:title" content="Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints">
+    <meta property="og:description" content="An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/copilot-vs-apple-intelligence-security-2026.jpg">
+    <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026)">
-    <meta name="twitter:description" content="An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints.">
+    <meta name="twitter:title" content="Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints">
+    <meta name="twitter:description" content="An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/copilot-vs-apple-intelligence-security-2026.jpg">
 
-    <!-- Structured Data -->
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -94,259 +87,6 @@
       ]
     }
     </script>
-
-    <!-- Style System - FULL SET REQUIRED -->
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
-    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <link rel="stylesheet" href="/mobile-nav.css">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-
-    <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
-            --code-bg: #111;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 18px;
-        }
-
-        .article-container {
-            max-width: 800px;
-            margin: 80px auto 0;
-            padding: 2rem;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .back-link:hover {
-            color: var(--text-primary);
-        }
-
-        .article-header {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            text-align: left;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .article-content h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.6rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .article-content h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-        }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-        }
-        
-        .article-content ul, .article-content ol {
-            margin-bottom: 1.5rem;
-            margin-left: 1.5rem;
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-        }
-        
-        .article-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-        }
-        
-        .article-image {
-            width: 100%;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border);
-        }
-
-        .technical-box {
-            background: rgba(0, 217, 255, 0.03);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .technical-box > *:first-child,
-        .warning-box > *:first-child,
-        .info-box > *:first-child {
-            margin-top: 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.05);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            border-left: 5px solid var(--accent-red);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-        
-        .success-box {
-            background: rgba(16, 185, 129, 0.05);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-left: 5px solid #10B981;
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        pre {
-            background: #000;
-            border: 1px solid var(--border);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-
-        code {
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 0.95rem;
-            color: #fff;
-            line-height: 1.5;
-        }
-
-        .article-content p code, .article-content li code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            color: var(--accent-cyan);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 8px;
-            overflow: hidden;
-            font-size: 1rem;
-        }
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-            color: var(--text-secondary);
-        }
-        th {
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        .mermaid {
-            background: rgba(255, 255, 255, 0.03);
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            margin: 2rem 0;
-            text-align: center;
-        }
-    </style>
-
-    <!-- Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-
-    <script src="/theme-toggle.js" defer></script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -402,286 +142,244 @@
   ]
 }
     </script>
+
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js" defer></script>
+
+    <!-- Pre-render Theme Initialization -->
+    <script>
+        (function () {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
-<body>
-    <!-- SEO Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
-      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
-        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li style="color:#ffffff;" aria-current="page">Microsoft Copilot vs Apple Intelligence Security o…</li>
-      </ol>
-    </nav>
-    <!-- ========== SMART MOBILE HEADER ========== -->
-    
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
-    
-    </div>
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
 
-    
-
-    <!-- Desktop Header -->
-    
-
-</div>
-
-    
-
-<header class="m-header m-only">
-    <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </a>
-    </div>
-    <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-        </button>
-        <!-- Search triggers Command Palette -->
-        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-        <!-- Hamburger Menu Toggle -->
-        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
-
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
-<div class="m-menu-overlay m-only" id="m-menu-overlay">
-    <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="m-menu-content">
-        <div class="m-menu-section">
-            <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
         </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Settings</div>
-            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
-    </div>
-</div>
+    </header>
 
-    <!-- Search Overlay -->
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Overlay -->
     <div class="m-search-overlay m-only">
         <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
             <button class="m-search-overlay__cancel">Cancel</button>
         </div>
         <div class="m-search-overlay__results"></div>
     </div>
 
-<header class="header" role="banner">
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
 
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
                         <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <a href="/articles.html" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
                             </div>
                         </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
+                        <a href="/guides/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <a href="/about.html">About</a>
 
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
 
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
@@ -694,35 +392,171 @@
         </div>
     </header>
 
-    <main class="article-container">
-        <!-- Mobile Back Button -->
-        <a href="/articles.html" class="back-link" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent-cyan, #00D9FF); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.95rem; background: rgba(0, 217, 255, 0.1); padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(0, 217, 255, 0.2);">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
-
-        <a href="/articles.html" class="back-link">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
-
-        <div class="article-header">
-            <h1>Microsoft Copilot vs Apple Intelligence on Enterprise Endpoints (2026): Security, Privacy, Architecture & Enterprise Reality</h1>
-            <div class="article-meta">
-                <span><i class="fas fa-user-edit"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                <span><i class="far fa-calendar-alt"></i> June 11, 2026</span>
-                <span><i class="fas fa-clock"></i> 20 min read</span>
-                <span style="color: var(--accent-cyan); border: 1px solid var(--accent-cyan); padding: 0 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Research-Grade Intel</span>
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
             </div>
-            <p style="font-size: 0.9rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem;">
-                This analysis is based on official architectural documentation, SEC filings, and enterprise deployment scenarios as of June 2026.
-            </p>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
         </div>
+    </div>
 
-        <img loading="lazy" src="/images/articles/copilot-vs-apple-intelligence-security-2026.jpg" class="featured-image" alt="Harish G analyzing a holographic representation of Microsoft Copilot and Apple Intelligence enterprise architectures">
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Architecture &amp; Security</li>
+                    </ol>
+                </nav>
 
-        <div class="article-content">
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Architecture &amp; Security</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    An architectural and cybersecurity analysis comparing Microsoft Copilot and Apple Intelligence on enterprise endpoints. Explore AI data flows, EDR visibility, and governance.
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="June 11, 2026" itemprop="datePublished">June 11, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">20 min read</span>
+                        <span class="ap-byline-sub">14 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/copilot-vs-apple-intelligence-security-2026.jpg"
+                         alt="Microsoft Copilot vs Apple Intelligence Security on Enterprise Endpoints"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (14 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-1">1. Executive Summary</a></li>
+                    <li><a href="#sec-2">2. Why This Comparison Matters in 2026</a></li>
+                    <li><a href="#sec-3">3. The Two Philosophies</a></li>
+                    <li><a href="#sec-4">4. Architecture Deep Dive</a></li>
+                    <li><a href="#sec-5">5. Security &amp; Privacy Analysis</a></li>
+                    <li><a href="#sec-6">6. Endpoint Visibility &amp; Security Monitoring</a></li>
+                    <li><a href="#sec-7">7. Enterprise Management &amp; Governance</a></li>
+                    <li><a href="#sec-8">8. Performance Impact on Endpoints</a></li>
+                    <li><a href="#sec-9">9. Threat Models &amp; Risks</a></li>
+                    <li><a href="#sec-10">10. The Future: When Endpoint AI Becomes Agentic</a></li>
+                    <li><a href="#sec-11">11. Decision Framework</a></li>
+                    <li><a href="#sec-12">12. Recommendations for Security Teams</a></li>
+                    <li><a href="#sec-13">13. Final Verdict &amp; Strategic Decision Matrix</a></li>
+                    <li><a href="#sec-14">14. Frequently Asked Questions (FAQ)</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-1">1. Executive Summary</a>
+                            <a href="#sec-2">2. Why This Comparison Matters in 2026</a>
+                            <a href="#sec-3">3. The Two Philosophies</a>
+                            <a href="#sec-4">4. Architecture Deep Dive</a>
+                            <a href="#sec-5">5. Security &amp; Privacy Analysis</a>
+                            <a href="#sec-6">6. Endpoint Visibility &amp; Security Monitoring</a>
+                            <a href="#sec-7">7. Enterprise Management &amp; Governance</a>
+                            <a href="#sec-8">8. Performance Impact on Endpoints</a>
+                            <a href="#sec-9">9. Threat Models &amp; Risks</a>
+                            <a href="#sec-10">10. The Future: When Endpoint AI Becomes Agentic</a>
+                            <a href="#sec-11">11. Decision Framework</a>
+                            <a href="#sec-12">12. Recommendations for Security Teams</a>
+                            <a href="#sec-13">13. Final Verdict &amp; Strategic Decision Matrix</a>
+                            <a href="#sec-14">14. Frequently Asked Questions (FAQ)</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+
 
             <div class="info-box">
-                <h3 style="margin-top: 0; color: var(--accent-cyan);"><i class="fas fa-bolt"></i> Key Takeaways (BLUF)</h3>
+                <h3> Key Takeaways (BLUF)</h3>
                 <ul>
                     <li><strong>The Core Differentiator:</strong> The debate between Microsoft Copilot and Apple Intelligence on the endpoint is fundamentally a clash of architectural philosophies. Microsoft builds AI designed to connect deeply into your enterprise data graph. Apple builds AI designed to minimize data egress through on-device processing.</li>
                     <li><strong>Target Audience:</strong> Security Architects, CISOs, SOC Managers, and Endpoint Mobility Teams must understand these differences before mass-deploying AI at the OS level.</li>
@@ -730,23 +564,35 @@
                 </ul>
             </div>
 
-            <h2>1. Executive Summary</h2>
+            
+</section>
+
+<section id="sec-1">
+<h2>1. Executive Summary</h2>
             <p>As we navigate 2026, Artificial Intelligence is no longer just a web application accessed via a browser; it is deeply embedded into the operating system of enterprise endpoints. Microsoft Copilot and Apple Intelligence have fundamentally altered the relationship between the user, the operating system, and corporate data.</p>
             <p>Most industry comparisons evaluate these tools based on consumer features: which AI drafts better emails, creates better images, or summarizes meetings more accurately. <strong>This is a dangerous distraction for cybersecurity professionals.</strong></p>
             <p>For CISOs, Security Architects, and SOC teams, the real differentiator is architecture. Microsoft’s approach—"AI connected to enterprise knowledge"—relies on the Microsoft Graph to pull vast amounts of corporate context into cloud-based LLMs. Apple’s approach—"AI that minimizes knowledge leaving the device"—relies on Apple Silicon for local inference and a cryptographically blind Private Cloud Compute (PCC) infrastructure.</p>
             <p>These architectural differences dictate your data governance strategy, determine what your SOC can and cannot see, and fundamentally reshape the endpoint threat model. This article provides a deep, technical analysis of what happens when AI becomes native to your endpoints, and how to architect your defenses accordingly.</p>
 
-            <h2>2. Why This Comparison Matters in 2026</h2>
+            
+</section>
+
+<section id="sec-2">
+<h2>2. Why This Comparison Matters in 2026</h2>
             <p>In recent years, the rapid maturation of generative AI has transitioned the technology from experimental chatbots to integrated operating system agents. By 2026, enterprise endpoints are shipping with dedicated Neural Processing Units (NPUs), and OS vendors are tightly binding LLMs to the local file system, memory, and application layers.</p>
             <p>This evolution presents an unprecedented challenge for enterprise security:</p>
             <ul>
                 <li><strong>AI is Native:</strong> Users no longer need to navigate to ChatGPT or Claude. The AI sits on the desktop, eagerly reading the screen, monitoring the clipboard, and parsing the local file index.</li>
                 <li><strong>Regulatory Scrutiny:</strong> Regulations like the EU AI Act and updated SEC cybersecurity rules demand strict accounting of how AI processes sensitive data.</li>
-                <li><strong>The Visibility Gap:</strong> Traditional EDR (Endpoint Detection and Response) tools were built to detect malicious binaries and suspicious memory injections. They were <em>not</em> built to determine if an AI agent is quietly summarizing a highly classified M&A document and leaking it via a maliciously crafted prompt.</li>
+                <li><strong>The Visibility Gap:</strong> Traditional EDR (Endpoint Detection and Response) tools were built to detect malicious binaries and suspicious memory injections. They were <em>not</em> built to determine if an AI agent is quietly summarizing a highly classified M&amp;A document and leaking it via a maliciously crafted prompt.</li>
                 <li><strong>Agentic Capabilities:</strong> We are moving from AI that <em>recommends</em> to AI that <em>acts</em>. AI agents now have the permissions to read emails, draft responses, modify files, and change system configurations.</li>
             </ul>
 
-            <h2>3. The Two Philosophies</h2>
+            
+</section>
+
+<section id="sec-3">
+<h2>3. The Two Philosophies</h2>
             <p>To secure these systems, you must first understand the fundamental philosophy driving their design.</p>
             
             <h3>Microsoft: AI Connected to Enterprise Data</h3>
@@ -763,7 +609,11 @@
                 <li><strong>The Trade-off:</strong> The AI lacks the "God's eye view" of the broader corporate network. When local processing isn't enough, it uses Private Cloud Compute—a system designed to immediately destroy data post-inference, making centralized enterprise auditing impossible.</li>
             </ul>
 
-            <h2>4. Architecture Deep Dive</h2>
+            
+</section>
+
+<section id="sec-4">
+<h2>4. Architecture Deep Dive</h2>
             <p>Understanding the data flow is critical for threat modeling. Here is how both systems operate under the hood.</p>
 
             <h3>Microsoft Copilot Data Flow</h3>
@@ -771,15 +621,15 @@
 
             <div class="mermaid">
 graph TD
-    User[Windows Endpoint User] -->|1. Prompt + Local Context| CopilotOS[Copilot in Windows]
-    CopilotOS -->|2. Request via TLS| M365[Microsoft 365 Copilot Services]
-    M365 -->|3. Grounding Request| Graph[Microsoft Graph API]
-    Graph -->|4. Checks Entra ID ACLs| EntraID[Entra ID & Purview Labels]
-    Graph -->|5. Retrieves SharePoint/Teams Data| M365
-    M365 -->|6. Prompt + Enterprise Data| LLM[Azure OpenAI Services]
-    LLM -->|7. Generated Response| M365
-    M365 -->|8. Delivers Response| CopilotOS
-    CopilotOS --> User
+    User[Windows Endpoint User] --&gt;|1. Prompt + Local Context| CopilotOS[Copilot in Windows]
+    CopilotOS --&gt;|2. Request via TLS| M365[Microsoft 365 Copilot Services]
+    M365 --&gt;|3. Grounding Request| Graph[Microsoft Graph API]
+    Graph --&gt;|4. Checks Entra ID ACLs| EntraID[Entra ID &amp; Purview Labels]
+    Graph --&gt;|5. Retrieves SharePoint/Teams Data| M365
+    M365 --&gt;|6. Prompt + Enterprise Data| LLM[Azure OpenAI Services]
+    LLM --&gt;|7. Generated Response| M365
+    M365 --&gt;|8. Delivers Response| CopilotOS
+    CopilotOS --&gt; User
     
     style User fill:#111,stroke:#00D9FF,stroke-width:2px,color:#fff
     style M365 fill:#1a1a1a,stroke:#00D9FF,stroke-width:2px,color:#fff
@@ -798,16 +648,16 @@ graph TD
 
             <div class="mermaid">
 graph TD
-    User[macOS/iOS Endpoint User] -->|1. Prompt| App[App / Siri]
-    App -->|2. Queries| Index[Local Semantic Index]
-    Index -->|3. Local Context| Engine[Apple Neural Engine / Local LLM]
-    Engine -->|4a. Local Response| App
-    Engine -->|4b. If request is complex| PCC[Private Cloud Compute]
-    PCC -->|5. Cryptographic Attestation| Enclave[Secure Enclave]
-    Enclave -->|6. Inference Request| PCC_Node[Stateless PCC Server]
-    PCC_Node -->|7. Encrypted Response| Engine
-    Engine --> App
-    App --> User
+    User[macOS/iOS Endpoint User] --&gt;|1. Prompt| App[App / Siri]
+    App --&gt;|2. Queries| Index[Local Semantic Index]
+    Index --&gt;|3. Local Context| Engine[Apple Neural Engine / Local LLM]
+    Engine --&gt;|4a. Local Response| App
+    Engine --&gt;|4b. If request is complex| PCC[Private Cloud Compute]
+    PCC --&gt;|5. Cryptographic Attestation| Enclave[Secure Enclave]
+    Enclave --&gt;|6. Inference Request| PCC_Node[Stateless PCC Server]
+    PCC_Node --&gt;|7. Encrypted Response| Engine
+    Engine --&gt; App
+    App --&gt; User
 
     style User fill:#111,stroke:#00D9FF,stroke-width:2px,color:#fff
     style Engine fill:#1a1a1a,stroke:#00D9FF,stroke-width:2px,color:#fff
@@ -822,7 +672,8 @@ graph TD
             </ul>
 
             <h3>Architecture Comparison</h3>
-            <table>
+            <div class="table-wrapper ap-stackable">
+<table>
                 <thead>
                     <tr>
                         <th>Feature</th>
@@ -832,40 +683,45 @@ graph TD
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Primary Inference Location</strong></td>
+                        <th><strong>Primary Inference Location</strong></th>
                         <td>Cloud (Azure OpenAI)</td>
                         <td>On-Device (Apple Silicon)</td>
                     </tr>
                     <tr>
-                        <td><strong>Enterprise Data Source</strong></td>
+                        <th><strong>Enterprise Data Source</strong></th>
                         <td>Microsoft Graph (M365 Cloud)</td>
                         <td>Local Semantic Index (On-Device)</td>
                     </tr>
                     <tr>
-                        <td><strong>Tenant Boundary</strong></td>
+                        <th><strong>Tenant Boundary</strong></th>
                         <td>Entra ID Tenant Isolation</td>
                         <td>Individual Device Hardware</td>
                     </tr>
                     <tr>
-                        <td><strong>Cloud Offload Mechanism</strong></td>
+                        <th><strong>Cloud Offload Mechanism</strong></th>
                         <td>Standard TLS to Azure</td>
                         <td>Private Cloud Compute (PCC)</td>
                     </tr>
                     <tr>
-                        <td><strong>Data Retention</strong></td>
+                        <th><strong>Data Retention</strong></th>
                         <td>Configurable via Purview (Audit logs retained)</td>
                         <td>Ephemeral (Zero retention on PCC)</td>
                     </tr>
                 </tbody>
             </table>
+</div>
 
-            <h2>5. Security & Privacy Analysis</h2>
+            
+</section>
+
+<section id="sec-5">
+<h2>5. Security &amp; Privacy Analysis</h2>
             <p>To evaluate these platforms, we must bifurcate our analysis: Privacy (protecting data from the vendor and outsiders) and Security/Governance (protecting data from internal misuse and policy violations).</p>
 
             <h3>Microsoft Copilot: The Governance Heavyweight</h3>
             <p>Microsoft’s architecture inherently centralizes data, which makes it an absolute powerhouse for enterprise security controls, provided you have configured them correctly.</p>
             <ul>
-                <li><strong>Sensitivity Labels & Purview:</strong> This is Copilot’s greatest security strength. If a document is labeled "Highly Confidential" via Microsoft Purview Information Protection, Copilot respects that label. If the user asks Copilot to summarize the document and paste it into an external email, Endpoint DLP can intercept and block the action.</li>
+                <li><strong>Sensitivity Labels &amp; Purview:</strong> This is Copilot’s greatest security strength. If a document is labeled "Highly Confidential" via Microsoft Purview Information Protection, Copilot respects that label. If the user asks Copilot to summarize the document and paste it into an external email, Endpoint DLP can intercept and block the action.</li>
                 <li><strong>Conditional Access:</strong> Copilot access is deeply tied to Entra ID Conditional Access. You can block Copilot functionality if the endpoint fails a Defender health check or is logging in from an untrusted IP.</li>
                 <li><strong>The "Over-Sharing" Risk:</strong> Copilot acts as a ruthless searchlight for bad permissions. If an HR folder is accidentally shared with "Everyone," traditional search required users to stumble upon it. Copilot will proactively pull that HR data into its answers if it deems it relevant. <strong>Copilot does not create permission issues; it weaponizes existing ones.</strong></li>
             </ul>
@@ -878,8 +734,9 @@ graph TD
                 <li><strong>The Governance Trade-off:</strong> Because Apple actively prevents data retention in the cloud, you cannot retroactively audit what a user asked Apple Intelligence to do. There is no centralized Purview equivalent to see if an employee asked the AI to "Find all credit card numbers in my local database and format them as CSV."</li>
             </ul>
 
-            <h3>Security & Privacy Head-to-Head</h3>
-            <table>
+            <h3>Security &amp; Privacy Head-to-Head</h3>
+            <div class="table-wrapper ap-stackable">
+<table>
                 <thead>
                     <tr>
                         <th>Security Domain</th>
@@ -889,32 +746,37 @@ graph TD
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Data Leakage Prevention (DLP)</strong></td>
-                        <td>Native integration with Purview & Defender.</td>
+                        <th><strong>Data Leakage Prevention (DLP)</strong></th>
+                        <td>Native integration with Purview &amp; Defender.</td>
                         <td>Relies heavily on MDM containerization.</td>
                     </tr>
                     <tr>
-                        <td><strong>Permission Enforcement</strong></td>
+                        <th><strong>Permission Enforcement</strong></th>
                         <td>Entra ID ACLs applied dynamically.</td>
                         <td>File system POSIX/Sandbox permissions.</td>
                     </tr>
                     <tr>
-                        <td><strong>Cryptographic Verifiability</strong></td>
-                        <td>Standard Enterprise TLS & SOC2 compliance.</td>
+                        <th><strong>Cryptographic Verifiability</strong></th>
+                        <td>Standard Enterprise TLS &amp; SOC2 compliance.</td>
                         <td>Hardened PCC nodes, public transparency logs.</td>
                     </tr>
                     <tr>
-                        <td><strong>Vendor Blindness</strong></td>
+                        <th><strong>Vendor Blindness</strong></th>
                         <td>Microsoft can theoretically access tenant data under subpoena.</td>
                         <td>Apple cannot technically access PCC inference data.</td>
                     </tr>
                 </tbody>
             </table>
+</div>
 
-            <h2>6. Endpoint Visibility & Security Monitoring</h2>
+            
+</section>
+
+<section id="sec-6">
+<h2>6. Endpoint Visibility &amp; Security Monitoring</h2>
             
             <div class="warning-box">
-                <strong><i class="fas fa-exclamation-triangle"></i> CRITICAL FOCUS:</strong> For SOC Analysts and Incident Responders, Endpoint Visibility is the most consequential difference between these two platforms. You cannot defend against what you cannot see.
+                <strong> CRITICAL FOCUS:</strong> For SOC Analysts and Incident Responders, Endpoint Visibility is the most consequential difference between these two platforms. You cannot defend against what you cannot see.
             </div>
 
             <p>When AI acts on behalf of a user, attribution becomes a nightmare. If a file is deleted, was it the user, or was it the AI hallucinating an instruction?</p>
@@ -936,7 +798,8 @@ graph TD
             </ul>
 
             <h3>Endpoint Visibility Comparison</h3>
-            <table>
+            <div class="table-wrapper ap-stackable">
+<table>
                 <thead>
                     <tr>
                         <th>Visibility Metric</th>
@@ -946,46 +809,59 @@ graph TD
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Prompt Logging</strong></td>
+                        <th><strong>Prompt Logging</strong></th>
                         <td>Centralized via Purview / M365 Audit.</td>
                         <td>None. Prompts are kept on-device.</td>
                     </tr>
                     <tr>
-                        <td><strong>Source Grounding Logs</strong></td>
+                        <th><strong>Source Grounding Logs</strong></th>
                         <td>Full visibility into which files the AI accessed.</td>
                         <td>Zero enterprise visibility.</td>
                     </tr>
                     <tr>
-                        <td><strong>EDR Process Tracking</strong></td>
+                        <th><strong>EDR Process Tracking</strong></th>
                         <td>High correlation via Defender for Endpoint.</td>
                         <td>Low. AI operates below traditional EDR hooking.</td>
                     </tr>
                     <tr>
-                        <td><strong>Network Telemetry</strong></td>
+                        <th><strong>Network Telemetry</strong></th>
                         <td>Clear API calls to Microsoft endpoints.</td>
                         <td>Opaque encrypted traffic to Apple PCC.</td>
                     </tr>
                 </tbody>
             </table>
+</div>
 
-            <h2>7. Enterprise Management & Governance</h2>
+            
+</section>
+
+<section id="sec-7">
+<h2>7. Enterprise Management &amp; Governance</h2>
             <p>Deploying AI to 50,000 endpoints requires robust management frameworks.</p>
 
-            <h3>Microsoft Intune & Entra</h3>
+            <h3>Microsoft Intune &amp; Entra</h3>
             <p>Microsoft treats Copilot as an extension of its existing management plane. Via Intune, administrators have granular control over Copilot features on Windows. You can disable Windows Copilot entirely, restrict web search grounding, or enforce commercial data protection policies. Entra ID provides the identity backbone, ensuring that only users with specific licenses and passing MFA challenges can utilize the engine.</p>
 
-            <h3>Apple Business Manager & MDM</h3>
+            <h3>Apple Business Manager &amp; MDM</h3>
             <p>Apple’s approach relies on its established Mobile Device Management (MDM) protocols. Through Jamf, Kandji, or Intune, administrators can manage Apple Intelligence payloads. Apple provides configuration profiles to completely disable Apple Intelligence, restrict PCC usage, or limit its integration into specific managed apps (Managed Open In).</p>
             <p>However, Apple lacks the granular data-level governance of Purview. You can turn Apple Intelligence off, but if it is on, you cannot easily say, "Apple Intelligence can read the Mail app, but it cannot read emails tagged as 'Project X'."</p>
 
-            <h2>8. Performance Impact on Endpoints</h2>
+            
+</section>
+
+<section id="sec-8">
+<h2>8. Performance Impact on Endpoints</h2>
             <p>AI is highly resource-intensive. How these architectures handle the load impacts device lifecycles and user experience.</p>
             <ul>
                 <li><strong>Windows Endpoints (Microsoft):</strong> Because heavy lifting is sent to the cloud, Copilot runs relatively well on standard enterprise hardware, provided they have an internet connection. However, the introduction of Local Copilot features requires specific "Copilot+ PCs" equipped with NPUs (Neural Processing Units) capable of 40+ TOPS. On older hardware, local OS interactions suffer, and battery drain is a noted issue during heavy background indexing.</li>
                 <li><strong>macOS Endpoints (Apple):</strong> Apple has a massive advantage via vertical integration. Apple Silicon (M-series chips) features highly optimized Neural Engines tightly coupled with unified memory. Apple Intelligence runs exceptionally well locally, with minimal battery impact. However, devices older than the M1 chip (or A17 Pro for iPhones) are entirely locked out of the ecosystem, forcing a hard hardware refresh cycle for enterprises wanting to utilize it.</li>
             </ul>
 
-            <h2>9. Threat Models & Risks</h2>
+            
+</section>
+
+<section id="sec-9">
+<h2>9. Threat Models &amp; Risks</h2>
             <p>The introduction of native endpoint AI creates entirely new threat vectors.</p>
 
             <h3>1. The Local Prompt Injection</h3>
@@ -1009,7 +885,11 @@ graph TD
                 <li><strong>Apple:</strong> Apple's App Intents API allows AI to control applications. A hallucination could result in the AI misinterpreting an intent, potentially deleting calendars or sending messages to the wrong contacts.</li>
             </ul>
 
-            <h2>10. The Future: When Endpoint AI Becomes Agentic</h2>
+            
+</section>
+
+<section id="sec-10">
+<h2>10. The Future: When Endpoint AI Becomes Agentic</h2>
             <p>By late 2026, we are crossing the threshold from "Generative AI" to "Agentic AI." AI is no longer just drafting text; it is executing workflows autonomously.</p>
             <p>When an AI can read an email, decide an action is required, open an application, manipulate data, and send a response without user intervention, the security paradigm breaks.</p>
             <ul>
@@ -1018,10 +898,15 @@ graph TD
                 <li><strong>Apple's Approach:</strong> Apple is gating agentic actions through explicit user confirmation (screen-aware actions require permission). However, as users experience "permission fatigue," they will blindly approve AI actions, negating the security control.</li>
             </ul>
 
-            <h2>11. Decision Framework</h2>
+            
+</section>
+
+<section id="sec-11">
+<h2>11. Decision Framework</h2>
             <p>How should an enterprise choose between these ecosystems? It depends entirely on your regulatory environment and existing technology stack.</p>
 
-            <table>
+            <div class="table-wrapper ap-stackable">
+<table>
                 <thead>
                     <tr>
                         <th>Organization Profile</th>
@@ -1031,31 +916,36 @@ graph TD
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Highly Regulated (Gov/Defense)</strong></td>
+                        <th><strong>Highly Regulated (Gov/Defense)</strong></th>
                         <td><strong>Preferred.</strong> Extensive audit logs, Purview integration, and data residency controls satisfy strict compliance requirements.</td>
                         <td><strong>Caution.</strong> Lack of auditability for PCC processing may fail compliance audits requiring full chain-of-custody logging.</td>
                     </tr>
                     <tr>
-                        <td><strong>Privacy-Centric / IP Heavy</strong></td>
+                        <th><strong>Privacy-Centric / IP Heavy</strong></th>
                         <td><strong>Caution.</strong> Storing highly sensitive IP in the Graph for AI processing expands the blast radius if the tenant is compromised.</td>
                         <td><strong>Preferred.</strong> On-device processing guarantees IP never leaves the endpoint, satisfying extreme privacy demands.</td>
                     </tr>
                     <tr>
-                        <td><strong>Heavy M365 Users</strong></td>
+                        <th><strong>Heavy M365 Users</strong></th>
                         <td><strong>Preferred.</strong> Deep integration with Teams, SharePoint, and Word makes this an immediate productivity multiplier.</td>
                         <td><strong>Limited Value.</strong> Apple Intelligence cannot natively read deep into enterprise SharePoint repositories without complex API bridges.</td>
                     </tr>
                     <tr>
-                        <td><strong>Zero-Trust / BYOD Environments</strong></td>
+                        <th><strong>Zero-Trust / BYOD Environments</strong></th>
                         <td><strong>Neutral.</strong> Requires heavily managed Entra ID Conditional Access.</td>
                         <td><strong>Preferred.</strong> Apple's strict containerization and local inference work well in BYOD where corporate and personal data mix.</td>
                     </tr>
                 </tbody>
             </table>
+</div>
 
-            <h2>12. Recommendations for Security Teams</h2>
+            
+</section>
+
+<section id="sec-12">
+<h2>12. Recommendations for Security Teams</h2>
             <div class="success-box">
-                <strong><i class="fas fa-shield-alt"></i> IMMEDIATE ACTION PLAN:</strong>
+                <strong> IMMEDIATE ACTION PLAN:</strong>
                 <ul>
                     <li><strong>Conduct a Permissions Bankruptcy (Microsoft):</strong> Before deploying Copilot, you MUST run a permission audit on your Microsoft 365 tenant. Remove "Everyone" access from SharePoint sites. If you skip this, Copilot will expose your organization's secrets to its own employees on day one.</li>
                     <li><strong>Implement Data Sensitivity Labels:</strong> Relying on ACLs is no longer enough. You must implement Purview Information Protection (or an equivalent data tagging tool) to ensure the AI knows what it is <em>not</em> allowed to read or summarize.</li>
@@ -1064,15 +954,23 @@ graph TD
                 </ul>
             </div>
 
-            <h2>13. Final Verdict & Strategic Decision Matrix</h2>
+            
+</section>
+
+<section id="sec-13">
+<h2>13. Final Verdict &amp; Strategic Decision Matrix</h2>
             <p>There is no definitive "winner" between Microsoft Copilot and Apple Intelligence; there are only architectural choices and their resulting security trade-offs. <strong>Your decision should be dictated by your organization's risk tolerance regarding data governance vs. data privacy.</strong></p>
             <p><strong>Choose Microsoft Copilot if:</strong> Your enterprise thrives on interconnected data and you have the budget, staffing, and discipline to maintain an impeccable Entra ID / Purview classification scheme. You will gain unmatched visibility and control, but your threat boundary expands directly into Azure.</p>
             <p><strong>Choose Apple Intelligence if:</strong> You operate a zero-trust BYOD environment, or if your regulatory mandate requires that highly sensitive IP never leaves the hardware boundary. You sacrifice centralized SOC auditability in exchange for cryptographic guarantees that even Apple cannot access your local AI inferences.</p>
             <p>The future of endpoint security is no longer just about stopping malware; it is about governing the intelligent agents that live alongside our users. Make your architectural choices deliberately, and build your monitoring strategies around the blind spots each vendor leaves behind.</p>
 
-            <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+            
+</section>
+
+<section id="sec-14">
+<h2>14. Frequently Asked Questions (FAQ)</h2>
             <div class="technical-box">
-                <h3 style="margin-top:0;">What is the main architectural difference between Microsoft Copilot and Apple Intelligence?</h3>
+                <h3>What is the main architectural difference between Microsoft Copilot and Apple Intelligence?</h3>
                 <p>Microsoft Copilot is architected to connect deeply with enterprise knowledge via the Microsoft Graph, relying on cloud processing to synthesize vast amounts of organizational data. Apple Intelligence is designed around data minimization, performing most inferences on-device via Apple Silicon, and only utilizing its Private Cloud Compute (PCC) for complex requests without retaining user data.</p>
                 
                 <h3>How does EDR visibility differ between Copilot and Apple Intelligence?</h3>
@@ -1082,44 +980,287 @@ graph TD
                 <p>Yes, Apple Intelligence creates a local Semantic Index of data available on the device (emails, messages, files). However, it does not aggregate this data into a central enterprise graph. It accesses corporate data that the user has synced to their local device, bounded by local MDM containerization policies.</p>
             </div>
 
-        </div> <!-- /article-content -->
         
-        <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-            <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
-            <p><strong>Published:</strong> June 11, 2026</p>
-            <p><strong>Last Updated:</strong> June 11, 2026</p>
-        </div>
+</section>
+
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/copilot-vs-apple-intelligence-security-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="copilot-vs-apple-intelligence-security-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Architecture &amp; Security</dd></div>
+                            <div><dt>Publication</dt><dd>June 11, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>14 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
     </main>
 
-    <div class="interaction-bar">
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-            </button>
-        </div>
-        <div class="action-buttons">
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
             </div>
-            <div class="button-separator"></div>
-            <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+            <div class="ap-related-grid">
+            <a href="/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png" alt="The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 30, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era</h3>
+                    <p class="ap-related-excerpt">Enterprise security isn&#x27;t just struggling to patch. It&#x27;s struggling to understand its own environment. This analysis examines how gaps in asset, identity and dependency visibility slow both vulnerability remediation and incident response, and how one shared context foundation supports both.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>14 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.png" alt="Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident</h3>
+                    <p class="ap-related-excerpt">A news-driven technical security analysis and defensive readiness playbook. Deconstructing the October 22 vulnerability surge across PHP, Node.js, NGINX, Go, GitLab, and eMudhra alongside the SBI data exposure into actionable detection, exposure management, and compliance controls.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/sbi-customer-data-exposure-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/sbi-customer-data-exposure-2026.jpg" alt="The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Data Breach</span>
+                        <span>October 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response</h3>
+                    <p class="ap-related-excerpt">SBI disclosed that a preliminary review of ~375,000 dark-web records found 3,897 customer records with PII. What is confirmed, what is alleged, what the counts mean, and what defenders should investigate.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
+
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.8.0/dist/mermaid.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            mermaid.initialize({ startOnLoad: true, theme: 'dark' });
-        });
-    </script>
-    
-    <script src="/m-app.min.js?v=4.3" defer></script>
-    <script src="/interaction-bar.min.js" defer></script>
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
+
 </html>

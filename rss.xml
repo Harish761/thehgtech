@@ -5,8 +5,32 @@
     <link>https://thehgtech.com</link>
     <description>Expert cybersecurity analysis, threat intelligence briefings, ransomware forensics, and zero-day research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Oct 2026 09:20:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 08:51:28 GMT</lastBuildDate>
     <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redirecting...</title>
+      <link>https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html</link>
+      <guid isPermaLink="true">https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html</guid>
+      <pubDate>Sun, 01 Nov 2026 08:51:23 +0000</pubDate>
+      <description>In-depth cybersecurity analysis: Redirecting.... Expert insights from TheHGTech.</description>
+      <content:encoded><![CDATA[<p>In-depth cybersecurity analysis: Redirecting.... Expert insights from TheHGTech.</p><p><a href="https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident</title>
+      <link>https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</link>
+      <guid isPermaLink="true">https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</guid>
+      <pubDate>Sun, 01 Nov 2026 08:51:23 +0000</pubDate>
+      <description>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</description>
+      <content:encoded><![CDATA[<p>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</p><p><a href="https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>When the Test Does Not Know It Is a Test: AI Evaluation Containment Failures</title>
+      <link>https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</link>
+      <guid isPermaLink="true">https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</guid>
+      <pubDate>Sun, 01 Nov 2026 08:51:23 +0000</pubDate>
+      <description>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</description>
+      <content:encoded><![CDATA[<p>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</p><p><a href="https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
+    </item>
     <item>
       <title>The Exposure Blind Spot in Enterprise Security</title>
       <link>https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html</link>
@@ -16,7 +40,7 @@
       <content:encoded><![CDATA[<p>The visibility gaps that slow vulnerability remediation also weaken incident response. How CMDB, identity and dependency context support both in the AI era.</p><p><a href="https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Deep Dive: The BAT-BMS Controversy Isn&#x27;t a Bluetooth Hack — It&#x27;s an IoT Security Design Failure</title>
+      <title>Deep Dive: The BAT-BMS Controversy Isn&amp;#x27;t a Bluetooth Hack — It&amp;#x27;s an IoT Security Design Failure</title>
       <link>https://thehgtech.com/articles/bat-bms-security-design-failure-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/bat-bms-security-design-failure-2026.html</guid>
       <pubDate>Sun, 25 Oct 2026 11:00:00 +0000</pubDate>
@@ -64,7 +88,7 @@
       <content:encoded><![CDATA[<p>FalconFlank technical analysis: local privilege escalation PoC targeting CrowdStrike Falcon Sensor macro remediation feature. Enterprise mitigation, detection, and architectural review.</p><p><a href="https://thehgtech.com/articles/falconflank-crowdstrike-falcon-lpe-analysis.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Apple&#x27;s Engineering Legacy: Tim Cook, Privacy-First Philosophy, and What John Ternus Means for the Future</title>
+      <title>Apple&amp;#x27;s Engineering Legacy: Tim Cook, Privacy-First Philosophy, and What John Ternus Means for the Future</title>
       <link>https://thehgtech.com/articles/apple-tim-cook-john-ternus-leadership-legacy-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/apple-tim-cook-john-ternus-leadership-legacy-2026.html</guid>
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
@@ -86,22 +110,6 @@
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
       <description>CVE-2026-69836 is a CVSS 10.0 remote code execution vulnerability in Microsoft Entra ID caused by deserialization of untrusted data (CWE-502). Microsoft fully mitigated it server-side. An initial exploitation claim was later corrected. No customer action required.</description>
       <content:encoded><![CDATA[<p>CVE-2026-69836 is a CVSS 10.0 remote code execution vulnerability in Microsoft Entra ID caused by deserialization of untrusted data (CWE-502). Microsoft fully mitigated it server-side. An initial exploitation claim was later corrected. No customer action required.</p><p><a href="https://thehgtech.com/articles/microsoft-entra-id-rce-cve-2026-69836.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
-    </item>
-    <item>
-      <title>When the Test Does Not Know It Is a Test: AI Evaluation Containment Failures</title>
-      <link>https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</link>
-      <guid isPermaLink="true">https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</guid>
-      <pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
-      <description>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</description>
-      <content:encoded><![CDATA[<p>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</p><p><a href="https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
-    </item>
-    <item>
-      <title>When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident</title>
-      <link>https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</link>
-      <guid isPermaLink="true">https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</guid>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <description>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</description>
-      <content:encoded><![CDATA[<p>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</p><p><a href="https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
       <title>Which AI Race Are We Actually Measuring?</title>
@@ -136,7 +144,7 @@
       <content:encoded><![CDATA[<p>A baseline comparison of a CVP-approved Claude account against a standard Claude account across three common defensive cybersecurity scenarios — the first in a planned series targeting increasingly high-risk dual-use prompts.</p><p><a href="https://thehgtech.com/articles/claude-cvp-evaluation-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files</title>
+      <title>Deep Dive: The Accenture Breach Claim Isn&amp;#x27;t About Source Code — It&amp;#x27;s About .env Files</title>
       <link>https://thehgtech.com/articles/accenture-breach-env-file-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/accenture-breach-env-file-2026.html</guid>
       <pubDate>Fri, 10 Jul 2026 11:00:00 +0530</pubDate>
@@ -176,7 +184,7 @@
       <content:encoded><![CDATA[<p>AI is replacing Tier 1 SOC analysts, but what happens when a hallucination misses a disguised APT? The hidden dangers of automated triage and how to protect your network.</p><p><a href="https://thehgtech.com/articles/ai-soc-analyst-future-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Anthropic&#x27;s Claude Code Security: What It Actually Does and Why Cybersecurity Stocks Dropped</title>
+      <title>Anthropic&amp;#x27;s Claude Code Security: What It Actually Does and Why Cybersecurity Stocks Dropped</title>
       <link>https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html</guid>
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
@@ -184,8 +192,7 @@
       <content:encoded><![CDATA[<p>Technical analysis of Anthropic</p><p><a href="https://thehgtech.com/articles/anthropic-claude-code-security-launch-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>The Pentagon&#x27;s AI Ultimatum: Why Anthropic Was Blacklisted While OpenAI Secured Classified Networks |
-        TheHGTech</title>
+      <title>The Pentagon&amp;#x27;s AI Ultimatum: Why Anthropic Was Blacklisted While OpenAI Secured Classified Networks</title>
       <link>https://thehgtech.com/articles/anthropic-openai-privacy-ultimatum-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/anthropic-openai-privacy-ultimatum-2026.html</guid>
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
@@ -193,7 +200,7 @@
       <content:encoded><![CDATA[<p>The U.S. Pentagon blacklisted Anthropic after it refused to allow Claude to be used for mass surveillance. OpenAI signed the deal instead. We analyze the privacy and enterprise security implications.</p><p><a href="https://thehgtech.com/articles/anthropic-openai-privacy-ultimatum-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Coupang&#x27;s 33.7 Million User Breach: When Insider Threats Meet Inadequate Access Controls</title>
+      <title>Coupang&amp;#x27;s 33.7 Million User Breach: When Insider Threats Meet Inadequate Access Controls</title>
       <link>https://thehgtech.com/articles/article-coupang-breach-2025.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/article-coupang-breach-2025.html</guid>
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
@@ -201,7 +208,7 @@
       <content:encoded><![CDATA[<p>Analysis of South Korea</p><p><a href="https://thehgtech.com/articles/article-coupang-breach-2025.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA&#x27;s Exposed Secrets</title>
+      <title>The May 2026 Git Leaks: From Malicious VS Code Extensions to CISA&amp;#x27;s Exposed Secrets</title>
       <link>https://thehgtech.com/articles/article-github-cisa-leaks-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/article-github-cisa-leaks-2026.html</guid>
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
@@ -225,7 +232,7 @@
       <content:encoded><![CDATA[<p>A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, OAuth attack surfaces, and third-party application vulnerabilities.</p><p><a href="https://thehgtech.com/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
     <item>
-      <title>Booking.com Breach 2026: What Happened, Why It Matters &amp;amp; How to Protect Against Reservation-Data Attacks</title>
+      <title>Booking.com Breach 2026: What Happened, Why It Matters &amp;amp;amp; How to Protect Against Reservation-Data Attacks</title>
       <link>https://thehgtech.com/articles/booking-com-breach-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/booking-com-breach-2026.html</guid>
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
@@ -239,14 +246,6 @@
       <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
       <description>Anthropic</description>
       <content:encoded><![CDATA[<p>Anthropic</p><p><a href="https://thehgtech.com/articles/claude-mythos-security-analysis-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
-    </item>
-    <item>
-      <title>6 Cybersecurity Predictions for 2026: The AI Economy&#x27;s New Rules</title>
-      <link>https://thehgtech.com/articles/cybersecurity-predictions-2026.html</link>
-      <guid isPermaLink="true">https://thehgtech.com/articles/cybersecurity-predictions-2026.html</guid>
-      <pubDate>Tue, 30 Jun 2026 17:12:27 +0530</pubDate>
-      <description>Palo Alto Networks releases 2026 cybersecurity predictions. From autonomous AI attacks to quantum threats, here</description>
-      <content:encoded><![CDATA[<p>Palo Alto Networks releases 2026 cybersecurity predictions. From autonomous AI attacks to quantum threats, here</p><p><a href="https://thehgtech.com/articles/cybersecurity-predictions-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
   </channel>
 </rss>

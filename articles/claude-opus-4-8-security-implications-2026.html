@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- SEO Meta Tags -->
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>The Trajectory of Agentic AI: Security Implications of Next-Generation Models | TheHGTech</title>
-    <meta name="description" content="Verifiable benchmark analysis of Anthropic's next-generation agentic AI models: what performance gains in autonomous coding mean for dual-use cybersecurity risk and enterprise defenders.">
+    <meta name="description" content="Verifiable benchmark analysis of Anthropic">
     <meta name="keywords" content="The Trajectory of Agentic AI: Security Implications of Next-Generation Models">
     <meta name="author" content="Harish G">
     <meta name="robots" content="index, follow">
@@ -16,17 +17,17 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/claude-opus-4-8-security-implications-2026.html">
     <meta property="og:title" content="The Trajectory of Agentic AI: Security Implications of Next-Generation Models">
-    <meta property="og:description" content="An analysis of how emerging agentic AI models may impact both threat actors and enterprise defenders. Discover what this means for both threat actors and enterprise defenders.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/claude-opus-4-8-security-implications-2026.webp">
+    <meta property="og:description" content="Verifiable benchmark analysis of Anthropic">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/claude-opus-4-8-security-implications-2026.png">
     <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Trajectory of Agentic AI: Security Implications of Next-Generation Models">
-    <meta name="twitter:description" content="An analysis of how emerging agentic AI models may impact both threat actors and enterprise defenders. Discover what this means for both threat actors and enterprise defenders.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/claude-opus-4-8-security-implications-2026.webp">
+    <meta name="twitter:description" content="Verifiable benchmark analysis of Anthropic">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/claude-opus-4-8-security-implications-2026.png">
 
-    <!-- Structured Data -->
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -68,8 +69,6 @@
   ]
 }
 </script>
-
-    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -94,8 +93,6 @@
       ]
     }
     </script>
-
-    <!-- BreadcrumbList -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -108,676 +105,243 @@
     }
     </script>
 
-    
-    <link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- Style System -->
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.min.css?v=4.2">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
     <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
     <link rel="stylesheet" href="/m-components.min.css?v=3.0">
-    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    <script src="/interaction-bar.min.js?v=20260623" defer></script>
-    <script src="/m-app.min.js?v=20260528_coffee" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js" defer></script>
 
-    <style>
-        :root {
-            --bg-primary: #0a0a0f;
-            --bg-secondary: #0f1419;
-            --text-primary: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --accent-green: #10b981;
-            --accent-orange: #f59e0b;
-            --accent-purple: #8b5cf6;
-            --accent-blue: #3b82f6;
-            --accent-lime: #84cc16;
-            --border: rgba(255, 255, 255, 0.1);
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 80px 1.5rem 120px;
-        }
-
-        .article-header {
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 2rem;
-        }
-
-        .article-header h1 {
-            font-size: 2.2rem;
-            background: linear-gradient(135deg, var(--accent-lime), var(--accent-cyan));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
-
-        .meta-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .meta-info span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .badge-ai {
-            background: linear-gradient(135deg, #84cc16, #10b981);
-            color: white;
-        }
-
-        .badge-critical {
-            background: var(--accent-red);
-            color: white;
-        }
-
-        .badge-injection {
-            background: linear-gradient(135deg, #f59e0b, #ef4444);
-            color: white;
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid var(--border);
-        }
-
-        h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.5rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-        }
-
-        h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.2rem;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-secondary);
-        }
-
-        a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul,
-        ol {
-            margin-left: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        strong {
-            color: var(--text-primary);
-        }
-
-        code {
-            background: rgba(0, 217, 255, 0.1);
-            padding: 0.15rem 0.4rem;
-            border-radius: 4px;
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--accent-cyan);
-            font-size: 0.85rem;
-        }
-
-        pre {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            overflow-x: auto;
-            margin: 1.5rem 0;
-        }
-
-        pre code {
-            background: none;
-            padding: 0;
-            color: var(--accent-green);
-            font-size: 0.85rem;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.06);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.06);
-            border-left: 4px solid var(--accent-red);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.06);
-            border-left: 4px solid var(--accent-green);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .technical-box {
-            background: rgba(59, 130, 246, 0.06);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        .technical-box h3 {
-            margin-top: 0;
-            color: var(--accent-cyan);
-        }
-
-        .exploit-box {
-            background: rgba(255, 61, 61, 0.08);
-            border: 1px solid rgba(255, 61, 61, 0.3);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            background: rgba(255, 255, 255, 0.02);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th,
-        td {
-            padding: 0.75rem 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-
-        th {
-            background: rgba(0, 217, 255, 0.08);
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-
-        td {
-            color: var(--text-secondary);
-        }
-
-        .attack-flow {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(132, 204, 22, 0.05));
-            border: 1px solid var(--accent-lime);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
-            overflow-x: auto;
-        }
-
-        .severity-critical {
-            color: var(--accent-red);
-            font-weight: 700;
-        }
-
-        .severity-high {
-            color: var(--accent-orange);
-            font-weight: 700;
-        }
-
-        .cve-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            transition: border-color 0.3s;
-        }
-
-        .cve-card:hover {
-            border-color: var(--accent-cyan);
-        }
-
-        .cve-card .cve-id {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--accent-red);
-            margin-bottom: 0.5rem;
-        }
-
-        .cve-card .cve-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .related-guides {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .guide-link {
-            background: rgba(0, 217, 255, 0.05);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 8px;
-            padding: 1rem;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .guide-link:hover {
-            border-color: var(--accent-cyan);
-            background: rgba(0, 217, 255, 0.1);
-            text-decoration: none;
-        }
-
-        .guide-link .guide-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            color: var(--accent-cyan);
-            font-weight: 600;
-            letter-spacing: 1px;
-        }
-
-        .guide-link .guide-title {
-            color: var(--text-primary);
-            font-weight: 600;
-            font-size: 0.95rem;
-            margin-top: 0.25rem;
-        }
-
-        @media (max-width: 768px) {
-            .article-header h1 {
-                font-size: 1.5rem;
-            }
-
-            .container {
-                padding: 20px 1rem 100px;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            .meta-info {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-    </style>
-    
-    <!-- Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-
-        <!-- Fullres Analytics -->
+    <!-- Pre-render Theme Initialization -->
     <script>
         (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
         })();
     </script>
-
-    <!-- Mermaid.js -->
-    <script type="module">
-      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-      mermaid.initialize({ startOnLoad: true, theme: 'dark' });
-    </script>
-
-    <script src="/theme-toggle.js" defer></script>
-    
-    
 </head>
-<body>
-    <!-- SEO Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
-      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
-        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li style="color:#ffffff;" aria-current="page">The Trajectory of Agentic AI: Security Implication…</li>
-      </ol>
-    </nav>
-    
 
-<!-- Fullscreen Mobile Menu -->
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
-</div>
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
 
-
-
-</div>
-
-    
-
-<header class="m-header m-only">
-    <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </a>
-    </div>
-    <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-        </button>
-        <!-- Search triggers Command Palette -->
-        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-        <!-- Hamburger Menu Toggle -->
-        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
-
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
-<div class="m-menu-overlay m-only" id="m-menu-overlay">
-    <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="m-menu-content">
-        <div class="m-menu-section">
-            <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
         </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Settings</div>
-            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
-    </div>
-</div>
+    </header>
 
-    <!-- Search Overlay -->
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Overlay -->
     <div class="m-search-overlay m-only">
         <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
             <button class="m-search-overlay__cancel">Cancel</button>
         </div>
         <div class="m-search-overlay__results"></div>
     </div>
 
-<header class="header" role="banner">
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
 
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
                         <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <a href="/articles.html" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
                             </div>
                         </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
+                        <a href="/guides/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <a href="/about.html">About</a>
 
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
 
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
@@ -790,45 +354,164 @@
         </div>
     </header>
 
-<div class="container">
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
-        <i class="fas fa-arrow-left"></i> Back to Articles
-    </a>
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">AI Security</li>
+                    </ol>
+                </nav>
 
-    <article>
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">AI Security</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">The Trajectory of Agentic AI: Security Implications of Next-Generation Frontier Models</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    Verifiable benchmark analysis of Anthropic
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="May 30, 2026" itemprop="datePublished">May 30, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">20 min read</span>
+                        <span class="ap-byline-sub">4 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/claude-opus-4-8-security-implications-2026.png"
+                         alt="The Trajectory of Agentic AI: Security Implications of Next-Generation Models"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (4 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-1">1. Analyzing the Shift: From Retrieval to Agency</a></li>
+                    <li><a href="#sec-2">2. Defensive Opportunities and Triage</a></li>
+                    <li><a href="#sec-3">3. Illustrative Detection Logic (Pseudo-Sigma)</a></li>
+                    <li><a href="#sec-4">4. Methodology &amp; References</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-1">1. Analyzing the Shift: From Retrieval to Agency</a>
+                            <a href="#sec-2">2. Defensive Opportunities and Triage</a>
+                            <a href="#sec-3">3. Illustrative Detection Logic (Pseudo-Sigma)</a>
+                            <a href="#sec-4">4. Methodology &amp; References</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+
         
-        <!-- Mobile Back Button -->
-        <a href="/articles.html" class="back-link" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent-cyan, #00D9FF); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.95rem; background: rgba(0, 217, 255, 0.1); padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(0, 217, 255, 0.2);">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
-<header class="article-header">
-            <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                <span style="background: linear-gradient(135deg, #84cc16, #10b981); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">AI SECURITY</span>
-                <span style="background: var(--accent-cyan); color: #000; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600;">INDUSTRY ANALYSIS</span>
-            </div>
-            <h1>The Trajectory of Agentic AI: Security Implications of Next-Generation Frontier Models</h1>
-            <div class="meta-info">
-                <span><i class="far fa-calendar-alt"></i> May 30, 2026</span>
-                <span><i class="far fa-clock"></i> 20 min read</span>
-                <span><i class="fas fa-user-shield"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                <span><i class="fas fa-crosshairs"></i> Advanced Level</span>
-            </div>
-        </header>
+        
+        
 
-        <img src="/images/articles/claude-opus-4-8-security-implications-2026.webp"
-             alt="Harish G analyzing a holographic projection of network nodes" class="featured-image"
-             loading="eager">
 
-        <!-- DISCLAIMER -->
-        <div class="warning-box" style="margin-top: 0; padding: 1rem; margin-bottom: 2rem;">
-            <p style="margin: 0; font-size: 0.9rem;"><strong><i class="fas fa-exclamation-triangle"></i> Editorial Disclaimer:</strong> This article contains forward-looking analysis and projections regarding the anticipated capabilities of future AI models (e.g., hypothetical next-generation models from Anthropic, OpenAI, or Google). The capabilities discussed are extrapolations based on current industry trends, such as performance curves on SWE-bench, and do not represent verified features of any unreleased commercial product.</p>
+        
+
+        
+        <div class="warning-box">
+            <p><strong> Editorial Disclaimer:</strong> This article contains forward-looking analysis and projections regarding the anticipated capabilities of future AI models (e.g., hypothetical next-generation models from Anthropic, OpenAI, or Google). The capabilities discussed are extrapolations based on current industry trends, such as performance curves on SWE-bench, and do not represent verified features of any unreleased commercial product.</p>
         </div>
 
-        <!-- EXECUTIVE SUMMARY / KEY TAKEAWAYS -->
+        
         <div class="alert-box">
-            <h3 style="color: var(--accent-cyan); margin-top: 0; margin-bottom: 1rem;"><i class="fas fa-key"></i> Key Takeaways (BLUF)</h3>
-            <ul style="margin-bottom: 0;">
+            <h3> Key Takeaways (BLUF)</h3>
+            <ul>
                 <li><strong>The Trajectory:</strong> The AI industry is rapidly transitioning from knowledge retrieval to multi-step reasoning. Future models are expected to excel at autonomous, agentic workflows.</li>
                 <li><strong>The Metrics:</strong> Industry benchmarks, such as SWE-bench, are increasingly focusing on a model's ability to parse code dependencies and patch environments without human supervision.</li>
                 <li><strong>The Offensive Risk:</strong> In our assessment, the barrier to entry for crafting multi-stage supply chain attacks could be significantly reduced as threat actors leverage these agents for automated reconnaissance.</li>
@@ -836,32 +519,54 @@
             </ul>
         </div>
 
-        <h2><i class="fas fa-chart-line"></i> 1. Analyzing the Shift: From Retrieval to Agency</h2>
         
-        <p><strong style="font-size: 1.1rem; color: var(--accent-cyan);">The era of static LLM chat windows is evolving.</strong> The industry has largely saturated traditional knowledge-retrieval benchmarks (like MMLU). The new focus for frontier AI development is <strong>agentic reliability</strong> — the theoretical ability for a model to receive a high-level goal, utilize tools, and recover from errors autonomously.</p>
+</section>
+
+<section id="sec-1">
+<h2>1. Analyzing the Shift: From Retrieval to Agency</h2>
+        
+        <p><strong>The era of static LLM chat windows is evolving.</strong> The industry has largely saturated traditional knowledge-retrieval benchmarks (like MMLU). The new focus for frontier AI development is <strong>agentic reliability</strong> — the theoretical ability for a model to receive a high-level goal, utilize tools, and recover from errors autonomously.</p>
 
         <p>While current generations (such as Claude 3.5 Sonnet or GPT-4o) demonstrate impressive coding capabilities, industry observers expect the next major iterations to push boundaries further. For example, performance on complex evaluations like SWE-bench (which tests autonomous GitHub issue resolution) is projected to climb steadily, indicating models may soon reliably handle deeply nested logic and multi-file dependencies.</p>
 
         <h3>The Democratization of Multi-Stage Exploitation</h3>
         <p>Historically, chaining separate vulnerabilities (e.g., an SSRF to reach an internal network, followed by directory traversal) required experienced human operators. In our assessment, highly capable autonomous agents could potentially lower this barrier to entry.</p>
 
-        <div style="margin: 2rem 0; overflow-x: auto; display: flex; justify-content: center;">
-            <pre class="mermaid" style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--accent-cyan); border-radius: 8px; padding: 1rem;">
-graph TD
-    A[Hypothetical Offensive Agent] -->|Reads Goal| B(Clone Target Repo)
-    B --> C{Identify Injection Point}
-    C -->|Static Analysis| D[Map Dependencies]
-    C -->|Dynamic| E[Fuzz Endpoints]
-    D --> F[Draft Malicious Patch]
-    E --> F
-    F --> G[Submit PR / PoC]
+        <div>
+            <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>graph TD
+    A[Hypothetical Offensive Agent] --&gt;|Reads Goal| B(Clone Target Repo)
+    B --&gt; C{Identify Injection Point}
+    C --&gt;|Static Analysis| D[Map Dependencies]
+    C --&gt;|Dynamic| E[Fuzz Endpoints]
+    D --&gt; F[Draft Malicious Patch]
+    E --&gt; F
+    F --&gt; G[Submit PR / PoC]
     style A fill:#FF3D3D,stroke:#333,stroke-width:2px,color:#fff
-            </pre>
+            </code></pre>
+</div>
         </div>
 
         <p>A threat actor might provide an agent with a high-level goal, allowing the model to autonomously parse logs, decide to run directory bruteforcing, and analyze the HTTP responses. If realized, this could enable reconnaissance and pivoting at unprecedented speeds.</p>
 
-        <h2><i class="fas fa-shield-alt"></i> 2. Defensive Opportunities and Triage</h2>
+        
+</section>
+
+<section id="sec-2">
+<h2>2. Defensive Opportunities and Triage</h2>
         
         <p>While offensive capabilities are a concern, the defensive applications of next-generation models appear equally promising. Organizations may soon deploy internal agentic teams to continually audit infrastructure.</p>
 
@@ -871,28 +576,60 @@ graph TD
         <h3>Continuous Purple Teaming</h3>
         <p>Defenders could leverage these models for continuous, automated red teaming. Instead of periodic penetration tests, sandboxed agents could continually test internal defenses, generating telemetry that Blue teams can feed into their SIEM to validate detection rules.</p>
 
-        <div style="margin: 2rem 0; overflow-x: auto; display: flex; justify-content: center;">
-            <pre class="mermaid" style="background: rgba(0, 0, 0, 0.3); border: 1px solid var(--accent-green); border-radius: 8px; padding: 1rem;">
-graph TD
-    A[EDR Alert Fires] --> B(Defensive AI Agent)
-    B --> C[Pull Process Tree]
-    B --> D[Query Threat Intel]
-    C --> E{Context Engine}
-    D --> E
-    E --> F[Deobfuscate Payloads]
-    F --> G[Generate Human-Readable Summary & Remediation]
+        <div>
+            <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>graph TD
+    A[EDR Alert Fires] --&gt; B(Defensive AI Agent)
+    B --&gt; C[Pull Process Tree]
+    B --&gt; D[Query Threat Intel]
+    C --&gt; E{Context Engine}
+    D --&gt; E
+    E --&gt; F[Deobfuscate Payloads]
+    F --&gt; G[Generate Human-Readable Summary &amp; Remediation]
     style B fill:#10b981,stroke:#333,stroke-width:2px,color:#fff
-            </pre>
+            </code></pre>
+</div>
         </div>
 
-        <h2><i class="fas fa-code"></i> 3. Illustrative Detection Logic (Pseudo-Sigma)</h2>
+        
+</section>
+
+<section id="sec-3">
+<h2>3. Illustrative Detection Logic (Pseudo-Sigma)</h2>
         <p>To detect hypothetical automated API abuse driven by AI agents, defenders must look for behavioral anomalies. Below is an <strong>illustrative</strong> detection concept (using Sigma syntax) that focuses on identifying metronomic API polling often associated with poorly tuned automation wrappers.</p>
         
         <p><strong>Real-World Context:</strong> A common script utilizing libraries like <code>langchain</code> might iterate through cloud endpoints. Because the model must wait for HTTP responses before formulating its next step, the timing delta between requests can sometimes align closely with LLM token generation latency. SIEMs can use standard deviation thresholding to flag this behavior.</p>
 
         <div class="technical-box">
-            <h3><i class="fas fa-search-plus"></i> Concept: Agentic API Enumeration</h3>
-            <pre><code class="language-yaml">title: Illustrative Logic - Rapid Sequential API Discovery via Python Wrapper
+            <h3> Concept: Agentic API Enumeration</h3>
+            <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="sigma">SIGMA</span>
+            <span class="ap-code-title">SIGMA Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>title: Illustrative Logic - Rapid Sequential API Discovery via Python Wrapper
 id: 00000000-0000-0000-0000-000000000000 # Placeholder ID
 status: experimental
 description: |
@@ -903,93 +640,362 @@ logsource:
 detection:
     selection_ua:
         c-useragent|contains: 
-            - 'python-requests/'
-            - 'aiohttp/'
-            - 'httpx/'
+            - &#x27;python-requests/&#x27;
+            - &#x27;aiohttp/&#x27;
+            - &#x27;httpx/&#x27;
     selection_uri:
         cs-uri-stem|startswith:
-            - '/api/v1/users'
-            - '/api/v2/config'
-            - '/.git/'
-    condition: selection_ua and selection_uri | count() > 50
+            - &#x27;/api/v1/users&#x27;
+            - &#x27;/api/v2/config&#x27;
+            - &#x27;/.git/&#x27;
+    condition: selection_ua and selection_uri | count() &gt; 50
 timeframe: 1m
 falsepositives:
     - Legitimate internal automation scripts (requires tuning)
 level: high</code></pre>
+</div>
         </div>
 
-        <hr style="border: none; border-top: 1px solid var(--border); margin: 3rem 0;">
+        <hr>
 
-        <h2><i class="fas fa-book-open"></i> Methodology & References</h2>
-        <p style="font-size: 0.9rem;"><strong>Methodology:</strong> This analysis was constructed by examining current performance trajectories on public benchmarks (like SWE-bench), reviewing recent vendor publications on tool-use capabilities, and extrapolating how these trends may manifest in offensive and defensive cybersecurity operations over the next 1-2 years.</p>
         
-        <ul style="font-size: 0.9rem;">
+</section>
+
+<section id="sec-4">
+<h2>4. Methodology &amp; References</h2>
+        <p><strong>Methodology:</strong> This analysis was constructed by examining current performance trajectories on public benchmarks (like SWE-bench), reviewing recent vendor publications on tool-use capabilities, and extrapolating how these trends may manifest in offensive and defensive cybersecurity operations over the next 1-2 years.</p>
+        
+        <ul>
             <li><a href="https://www.swebench.com/" target="_blank">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</a> (Princeton University)</li>
             <li><a href="https://www.anthropic.com/research" target="_blank">Anthropic Research on Tool Use and Agency</a></li>
             <li><a href="https://sigmahq.io/" target="_blank">SigmaHQ: Generic Signature Format for SIEM Systems</a></li>
         </ul>
 
     
-        <!-- FAQ SECTION -->
-        <div class="faq-section" style="margin-top: 4rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+        
+        <div class="faq-section">
             <h2>Frequently Asked Questions (FAQ)</h2>
             
-            <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">What is Agentic AI?</h3>
-            <p style="margin-bottom: 1.5rem;">Agentic AI refers to artificial intelligence models capable of receiving a high-level goal, autonomously utilizing tools (like APIs and terminals), and executing multi-step workflows without constant human prompting.</p>
+            <h3>What is Agentic AI?</h3>
+            <p>Agentic AI refers to artificial intelligence models capable of receiving a high-level goal, autonomously utilizing tools (like APIs and terminals), and executing multi-step workflows without constant human prompting.</p>
             
-            <h3 style="font-size: 1.3rem; margin-top: 1.5rem; color: var(--accent-cyan);">How might threat actors use Agentic AI?</h3>
-            <p style="margin-bottom: 1.5rem;">In theory, threat actors could leverage agentic models to automate vulnerability discovery and craft multi-stage supply chain attacks by autonomously navigating corporate codebases.</p>
+            <h3>How might threat actors use Agentic AI?</h3>
+            <p>In theory, threat actors could leverage agentic models to automate vulnerability discovery and craft multi-stage supply chain attacks by autonomously navigating corporate codebases.</p>
         </div>
     
-            <!-- ========== RELATED ARTICLES ========== -->
-            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
-                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            
+            <div class="related-articles-section">
+                <h3>Related Analysis</h3>
+                <div>
                     
-                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                    <a href="/articles/anthropic-project-glasswing-2026.html">
+                        <div class="related-card">
+                            <div>AI Security</div>
+                            <h4>Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p>How autonomous agents are transforming incident response.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                    <a href="/articles/axios-supply-chain-attack-2026.html">
+                        <div class="related-card">
+                            <div>Supply Chain</div>
+                            <h4>Axios npm Package Compromise</h4>
+                            <p>Inside the 2026 supply chain attack affecting millions of builds.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">
+                        <div class="related-card">
+                            <div>Zero-Day</div>
+                            <h4>FortiClient EMS Critical Vulnerability</h4>
+                            <p>CVE-2026-35616 analysis and immediate mitigation steps.</p>
                         </div>
                     </a>
 
                 </div>
             </div>
 
+        
+</section>
+
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/claude-opus-4-8-security-implications-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="claude-opus-4-8-security-implications-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>AI Security</dd></div>
+                            <div><dt>Publication</dt><dd>May 30, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>4 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </article>
+    </main>
 
-    <!-- Interaction Bar -->
-    <div class="interaction-bar"></div>
-</div>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
+            </div>
+            <div class="ap-related-grid">
+            <a href="/articles/ai-eval-containment-boundary-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/ai-eval-containment-boundary-2026.jpg" alt="When the Test Does Not Know It Is a Test: Why AI Evaluation Containment Cannot Rely on Model Belief" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">AI Security</span>
+                        <span>August 1, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">When the Test Does Not Know It Is a Test: Why AI Evaluation Containment Cannot Rely on Model Belief</h3>
+                    <p class="ap-related-excerpt">Two AI lab incidents in July 2026 share one architectural lesson: containment of agentic AI evaluations cannot depend on the model correctly identifying whether it is still inside a test environment. A technical analysis of the OpenAI/Hugging Face and Anthropic/Irregular incidents, the recognition-vs-cessation split, and the Evaluation Runtime Containment Assurance (ERCA) control family.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/openai-huggingface-agent-escape-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/openai-huggingface-agent-escape-2026.png" alt="When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">AI Security</span>
+                        <span>July 31, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident</h3>
+                    <p class="ap-related-excerpt">The first publicly documented autonomous AI agent breach. An OpenAI agent escaped its evaluation sandbox via a zero-day in a JFrog Artifactory proxy, then independently attacked Hugging Face&#x27;s production Kubernetes infrastructure — exploiting HDF5 injection and Jinja2 template injection, harvesting credentials, and executing over 17,000 autonomous actions. A flagship technical analysis for CISOs, detection engineers, architects, and purple teams.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/claude-cvp-evaluation-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/claude-cvp-evaluation-2026.jpg" alt="Does Anthropic&#x27;s Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">AI Security</span>
+                        <span>July 12, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Does Anthropic&#x27;s Cyber Verification Program (CVP) Actually Change Claude? A Hands-on Evaluation</h3>
+                    <p class="ap-related-excerpt">A hands-on comparison between a CVP-approved Claude account and a standard Claude account across four cybersecurity scenarios — PowerShell incident response, advanced recon script analysis, purple team planning, and Microsoft Graph automation. What actually changes, and what doesn&#x27;t.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="main-footer desktop-only"
-    style="background: #0a0a0f; border-top: 1px solid var(--border); padding: 2rem; text-align: center; color: var(--text-secondary); font-size: 0.85rem;">
-    <p>&copy; 2026 TheHGTech. All rights reserved. | <a href="/privacy.html"
-            style="color: var(--accent-cyan);">Privacy</a> | <a data-removed-broken-link="true"
-            style="color: var(--accent-cyan);">Disclaimer</a></p>
-</footer>
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
 
-<script src="../ui-enhancements.js?v=20260517" defer></script>
-<script src="/command-palette.js" defer></script>
-<script src="/mobile-nav.js" defer></script>
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
-</html>
 
+</html>

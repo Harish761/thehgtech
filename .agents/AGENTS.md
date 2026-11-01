@@ -10,6 +10,7 @@ NEVER manually edit `articles.html`, `index.html`, or `articles/page/*/index.htm
 3. **HTML Structure & Boilerplate (CRITICAL RULE)**: 
    - **DO NOT** generate new article HTML from scratch using scripts, f-strings, or basic templates. 
    - Because the site is statically structured without a server-side include system, the top navigation mega-menu, search overlays, stylesheets, and bottom interaction bars are **massive and hardcoded**.
-   - **YOU MUST** create new articles by completely cloning a recent, fully-featured article (e.g., `cp articles/apple-dyld-zero-day-cve-2026-20700.html articles/new-article.html`).
-   - After cloning, use targeted replacements to overwrite ONLY the `<title>`, SEO `<meta>` tags, JSON-LD `<script>` blocks, and the inner `<article> ... </article>` content. Leave the `<body>` wrapper, `<header>`, and `<nav>` entirely untouched.
+   - **YOU MUST** create new articles by completely cloning a recent, fully-featured modern monograph (e.g., `cp articles/apple-dyld-zero-day-cve-2026-20700.html articles/new-article.html`).
+   - The modern monograph uses `/css/article-editorial.css`, `/js/article-editorial.js`, and `/interaction-bar.min.js`.
+   - After cloning, use targeted replacements to overwrite ONLY the `<title>`, SEO `<meta>` tags, JSON-LD `<script>` blocks, the hero header (`.ap-hero-header`), the Table of Contents links, the inner monograph body (`#articleBody`), and set `data-article-id` on `.interaction-bar`. Leave the `<body>` wrapper, `<header id="site-header">`, and `<nav>` entirely untouched.
 4. **Documentation**: Always consult `docs/ARTICLE_CREATION_GUIDE.md` and `docs/ARTICLES-PAGE-IMPLEMENTATION.md` before attempting structural changes to the publishing pipeline.

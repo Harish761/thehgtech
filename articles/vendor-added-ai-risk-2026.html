@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>Deep Dive: Your Vendor Added AI. Does Your Security Assessment Still Apply? | TheHGTech</title>
-    <meta name="description" content="A structured, risk-based decision model to determine if a vendor's new AI capabilities require a security reassessment.">
+    <meta name="description" content="A structured, risk-based decision model to determine if a vendor">
+    <meta name="keywords" content="Vendor Risk Management, AI Risk Assessment, Third-Party Risk, TPRM, Enterprise AI, Compliance">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/articles/vendor-added-ai-risk-2026.html">
-    
-    <!-- Open Graph / Twitter Cards -->
-    <meta property="og:title" content="Your Vendor Added AI. Does Your Security Assessment Still Apply?">
-    <meta property="og:description" content="A structured, risk-based decision model to determine if a vendor's new AI capabilities require a security reassessment.">
-    <meta property="og:image" content="https://thehgtech.com/images/articles/vendor-added-ai-risk-2026.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/vendor-added-ai-risk-2026.html">
+    <meta property="og:title" content="Deep Dive: Your Vendor Added AI. Does Your Security Assessment Still Apply?">
+    <meta property="og:description" content="A structured, risk-based decision model to determine if a vendor">
+    <meta property="og:image" content="https://thehgtech.com/images/articles/vendor-added-ai-risk-2026.jpg">
+    <meta property="og:site_name" content="TheHGTech">
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Schema.org JSON-LD -->
+    <meta name="twitter:title" content="Deep Dive: Your Vendor Added AI. Does Your Security Assessment Still Apply?">
+    <meta name="twitter:description" content="A structured, risk-based decision model to determine if a vendor">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/vendor-added-ai-risk-2026.jpg">
+
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -130,521 +143,244 @@
       ]
     }
     </script>
-    
-    <!-- Style System - FULL SET REQUIRED -->
+
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
-    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
-    
-    <!-- Google Fonts and Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js" defer></script>
+
+    <!-- Pre-render Theme Initialization -->
     <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
+        (function () {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
         })();
     </script>
-    
-    <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
-            --code-bg: #111;
-        }
-    
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 18px;
-        }
-    
-        .article-container {
-            max-width: 800px;
-            margin: 80px auto 0;
-            padding: 2rem;
-        }
-    
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-    
-        .back-link:hover {
-            color: var(--text-primary);
-        }
-    
-        .article-header {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            text-align: left;
-        }
-    
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-    
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-    
-        .article-content h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.6rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-    
-        .article-content h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-        }
-    
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-        }
-    
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-        }
-        
-        .article-image {
-            width: 100%;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border);
-        }
-    
-        .technical-box {
-            background: rgba(0, 217, 255, 0.03);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-    
-        .technical-box > *:first-child,
-        .warning-box > *:first-child {
-            margin-top: 0;
-        }
-    
-        .warning-box {
-            background: rgba(255, 61, 61, 0.05);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            border-left: 5px solid var(--accent-red);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-        
-        .success-box {
-            background: rgba(16, 185, 129, 0.05);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-left: 5px solid #10B981;
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-    
-        pre {
-            background: #000;
-            border: 1px solid var(--border);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-    
-        code {
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 0.95rem;
-            color: #fff;
-            line-height: 1.5;
-        }
-    
-        .article-content p code, .article-content li code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            color: var(--accent-cyan);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        th {
-            background: rgba(0, 217, 255, 0.1);
-            color: var(--text-primary);
-            font-weight: 600;
-        }
-        
-        td {
-            color: var(--text-secondary);
-        }
-        
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        .mermaid {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-            margin: 2rem 0;
-            display: flex;
-            justify-content: center;
-        }
-
-    </style>
-    
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
-    </script>
-    <script src="/m-app.js?v=4.3" defer></script>
-    <script src="/interaction-bar.js" defer></script>
-    
-    <!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
-    <!-- GA4 -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
-    </script>
-    <!-- Fullres -->
-    <script>
-        window.addEventListener('load', function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        });
-    </script>
 </head>
-<body>
 
-<header class="m-header m-only">
-    <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </a>
-    </div>
-    <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-        </button>
-        <!-- Search triggers Command Palette -->
-        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-        <!-- Hamburger Menu Toggle -->
-        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
-<div class="m-menu-overlay m-only" id="m-menu-overlay">
-    <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="m-menu-content">
-        <div class="m-menu-section">
-            <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
+
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
         </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles & News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Settings</div>
-            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
-    </div>
-</div>
+    </header>
 
-    <!-- Search Overlay -->
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Overlay -->
     <div class="m-search-overlay m-only">
         <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
             <button class="m-search-overlay__cancel">Cancel</button>
         </div>
         <div class="m-search-overlay__results"></div>
     </div>
 
-<header class="header" role="banner">
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
 
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
 
-                <!-- Intelligence Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
                         <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Threat Intelligence <span
-                                        class="dropdown-badge live">LIVE</span></div>
-                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours
-                                </div>
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
-                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores
-                                </div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
-                                <div class="dropdown-item-desc">Searchable data breach & cyber incident database</div>
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <a href="/articles.html" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides
-                                    <span class="dropdown-badge popular">40+</span>
-                                </div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response & more</div>
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
                             </div>
                         </a>
-                        
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;">
-                                <i class="fas fa-cogs"></i>
-                            </div>
+                        <a href="/guides/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">
-                                    n8n Workflows
-                                    <span class="dropdown-badge" style="background: #FF6B35;">NEW</span>
-                                </div>
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-shield-halved"></i>
-                            </div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    GRC Assessment
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">
-                                <i class="fas fa-clipboard-check"></i>
-                            </div>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">
-                                    ISO 27001 GRC Tool
-                                    <span class="dropdown-badge" style="background: #10B981;">NEW</span>
-                                </div>
-                                <div class="dropdown-item-desc">Interactive scope builder & Gap assessment</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <a href="/about.html">About</a>
 
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
 
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
@@ -657,33 +393,178 @@
         </div>
     </header>
 
-<main class="article-container">
-    <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
-        <i class="fas fa-arrow-left"></i> Back to Articles
-    </a>
-    
-    <article class="article-content">
-        <div class="article-header">
-            <h1>Your Vendor Added AI. Does Your Security Assessment Still Apply?</h1>
-            <div class="article-meta">
-                <span><i class="far fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                <span><i class="far fa-calendar"></i> July 4, 2026</span>
-                <span><i class="far fa-clock"></i> 18 min read</span>
-                <span><i class="fas fa-shield-alt"></i> Vendor Risk Management</span>
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
             </div>
         </div>
+    </div>
+
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Vendor Risk Management</li>
+                    </ol>
+                </nav>
+
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Vendor Risk Management</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">Your Vendor Added AI. Does Your Security Assessment Still Apply?</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    A structured, risk-based decision model to determine if a vendor
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="July 4, 2026" itemprop="datePublished">July 4, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">18 min read</span>
+                        <span class="ap-byline-sub">11 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/vendor-added-ai-risk-2026.jpg"
+                         alt="Deep Dive: Your Vendor Added AI. Does Your Security Assessment Still Apply?"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (11 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-1">1. Traditional TPRM Still Works</a></li>
+                    <li><a href="#sec-2">2. What Has Changed?</a></li>
+                    <li><a href="#sec-3">3. Existing Governance Already Exists</a></li>
+                    <li><a href="#sec-4">4. Detection: Identifying the Change</a></li>
+                    <li><a href="#sec-5">5. Material Change Decision Model</a></li>
+                    <li><a href="#sec-6">6. Material AI Change Matrix</a></li>
+                    <li><a href="#sec-7">7. Practical Examples</a></li>
+                    <li><a href="#sec-8">8. Best Practices for the Enterprise</a></li>
+                    <li><a href="#sec-9">9. Recommendations for CISOs</a></li>
+                    <li><a href="#sec-10">10. Conclusion</a></li>
+                    <li><a href="#sec-11">11. Frequently Asked Questions (FAQ)</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-1">1. Traditional TPRM Still Works</a>
+                            <a href="#sec-2">2. What Has Changed?</a>
+                            <a href="#sec-3">3. Existing Governance Already Exists</a>
+                            <a href="#sec-4">4. Detection: Identifying the Change</a>
+                            <a href="#sec-5">5. Material Change Decision Model</a>
+                            <a href="#sec-6">6. Material AI Change Matrix</a>
+                            <a href="#sec-7">7. Practical Examples</a>
+                            <a href="#sec-8">8. Best Practices for the Enterprise</a>
+                            <a href="#sec-9">9. Recommendations for CISOs</a>
+                            <a href="#sec-10">10. Conclusion</a>
+                            <a href="#sec-11">11. Frequently Asked Questions (FAQ)</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+
+        <div class="article-header">
+            
+            
+        </div>
         
-        <img src="/images/articles/vendor-added-ai-risk-2026.jpg" alt="Vendor AI Risk Analysis" class="featured-image">
+        
 
         <div class="technical-box">
-            <h3><i class="fas fa-bolt"></i> Executive Summary</h3>
+            <h3> Executive Summary</h3>
             <ul>
                 <li><strong>BLUF:</strong> AI has accelerated vendor product evolution, but it has not broken traditional Third-Party Risk Management (TPRM). The challenge is operationally triaging which AI updates represent material changes to your risk profile.</li>
                 <li><strong>Confidence Level:</strong> Confirmed. Based on established enterprise TPRM standards (ISO 27001, SOC 2, GDPR).</li>
                 <li><strong>TLP:</strong> CLEAR</li>
                 <li><strong>Key Takeaway:</strong> Security teams should prioritize tracking trust boundary shifts—such as new AI processing pipelines or subprocessors—rather than broadly reassessing every newly announced AI feature.</li>
             </ul>
-            <p style="font-size: 0.9rem; margin-top: 1rem; color: var(--text-secondary);"><em>This analysis is based on standard enterprise risk management practices as of July 2026; regulatory details may evolve.</em></p>
+            <p><em>This analysis is based on standard enterprise risk management practices as of July 2026; regulatory details may evolve.</em></p>
         </div>
 
         <p>A vendor announced a new AI capability today. How should a security team decide whether this change requires additional review?</p>
@@ -692,13 +573,21 @@
 
         <p>Instead, the reality is that traditional Third-Party Risk Management already contains the mechanisms needed to handle vendor changes through contracts, regulatory requirements, subprocessor notifications, and periodic reviews. The real missing piece is a practical decision-making framework to filter the noise.</p>
 
-        <h2>1. Traditional TPRM Still Works</h2>
+        
+</section>
 
-        <p>There is a prevailing narrative in many <a href="/articles.html" style="color: var(--accent-cyan); text-decoration: underline;">AI Security articles</a> that AI requires a completely novel approach to security. While the technology is new, the governance mechanisms required to control it are not.</p>
+<section id="sec-1">
+<h2>1. Traditional TPRM Still Works</h2>
+
+        <p>There is a prevailing narrative in many <a href="/articles.html">AI Security articles</a> that AI requires a completely novel approach to security. While the technology is new, the governance mechanisms required to control it are not.</p>
 
         <p>When you onboard a vendor, you employ security questionnaires, review ISO and SOC 2 certifications, negotiate contracts, and formally document risk acceptance. These mechanisms remain valid. A vendor fundamentally processing data on your behalf remains bound by the strictures of your initial risk assessment until a material deviation occurs.</p>
 
-        <h2>2. What Has Changed?</h2>
+        
+</section>
+
+<section id="sec-2">
+<h2>2. What Has Changed?</h2>
 
         <p>AI has profoundly accelerated the pace of product evolution. Many vendors now continuously introduce AI Assistants, AI Copilots, AI Search, AI Agents, Retrieval-Augmented Generation (RAG) pipelines, and AI-powered workflow automation.</p>
 
@@ -714,22 +603,26 @@
         <div class="mermaid">
         graph TD
             subgraph Traditional Vendor Architecture
-                A[User Input] --> B[Vendor Application Layer]
-                B --> C[Database]
-                C --> B
+                A[User Input] --&gt; B[Vendor Application Layer]
+                B --&gt; C[Database]
+                C --&gt; B
             end
             
             subgraph AI-Enhanced Vendor Architecture
-                D[User Input] --> E[Vendor Application Layer]
-                E --> F[Vector Database]
-                E --> G[LLM API / Subprocessor]
-                G -.->|Prompt Processing| H[External AI Model]
-                H -.-> G
+                D[User Input] --&gt; E[Vendor Application Layer]
+                E --&gt; F[Vector Database]
+                E --&gt; G[LLM API / Subprocessor]
+                G -.-&gt;|Prompt Processing| H[External AI Model]
+                H -.-&gt; G
             end
         </div>
-        <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);"><em>Figure 1: Evolution of Vendor Architecture indicating shifting trust boundaries.</em></p>
+        <p><em>Figure 1: Evolution of Vendor Architecture indicating shifting trust boundaries.</em></p>
 
-        <h2>3. Existing Governance Already Exists</h2>
+        
+</section>
+
+<section id="sec-3">
+<h2>3. Existing Governance Already Exists</h2>
 
         <p>Organizations are not defenseless against these rapid changes. Existing governance frameworks are well-equipped to handle them:</p>
         
@@ -737,17 +630,22 @@
             <li><strong>GDPR Article 28:</strong> Requires vendors to notify data controllers of intended changes concerning the addition or replacement of other processors.</li>
             <li><strong>Subprocessor Notifications:</strong> Contractual obligations stipulate notification periods before new vendors (such as AI API providers) touch your data.</li>
             <li><strong>DORA:</strong> In the financial sector, stringent rules apply to ICT third-party risk.</li>
-            <li><strong>ISO 42001 & <a href="/tools/grc-assessment/iso27001-grc-guide.html" style="color: var(--accent-cyan); text-decoration: underline;">ISO 27001</a>:</strong> Certifications indicating structured AI and information security management.</li>
+            <li><strong>ISO 42001 &amp; <a href="/tools/grc-assessment/iso27001-grc-guide.html">ISO 27001</a>:</strong> Certifications indicating structured AI and information security management.</li>
             <li><strong>SOC 2:</strong> Audits verifying security controls, including those around new features if scoped correctly.</li>
         </ul>
 
         <p>The issue is not missing governance. The issue is operational triage.</p>
 
-        <h2>4. Detection: Identifying the Change</h2>
+        
+</section>
+
+<section id="sec-4">
+<h2>4. Detection: Identifying the Change</h2>
 
         <p>How does a security team even know a change happened? Relying solely on the annual assessment is no longer sufficient. Organizations must build lightweight monitoring around the following sources:</p>
 
-        <table class="table-modern">
+        <div class="table-wrapper ap-stackable">
+<table class="table-modern">
             <thead>
                 <tr>
                     <th>Data Source</th>
@@ -757,41 +655,52 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Vendor Trust Centers</td>
+                    <th>Vendor Trust Centers</th>
                     <td>New AI principles, SOC 2 bridge letters, updated certifications.</td>
                     <td>High</td>
                 </tr>
                 <tr>
-                    <td>Release Notes / Product Roadmaps</td>
+                    <th>Release Notes / Product Roadmaps</th>
                     <td>Announcements of "Copilot", "AI Agent", or RAG implementations.</td>
                     <td>Medium</td>
                 </tr>
                 <tr>
-                    <td>Subprocessor Updates</td>
+                    <th>Subprocessor Updates</th>
                     <td>Addition of OpenAI, Anthropic, Pinecone, or specialized AI APIs.</td>
                     <td>Critical</td>
                 </tr>
                 <tr>
-                    <td>Updated DPA / Privacy Policies</td>
+                    <th>Updated DPA / Privacy Policies</th>
                     <td>Changes to data retention or explicit model training clauses.</td>
                     <td>Critical</td>
                 </tr>
                 <tr>
-                    <td>Quarterly Business Reviews (QBRs)</td>
+                    <th>Quarterly Business Reviews (QBRs)</th>
                     <td>Direct confirmation of roadmap items affecting data flows.</td>
                     <td>High</td>
                 </tr>
             </tbody>
         </table>
+</div>
 
-        <h2>5. Material Change Decision Model</h2>
+        
+</section>
+
+<section id="sec-5">
+<h2>5. Material Change Decision Model</h2>
 
         <p>Do not attempt to apply a generic, heavy-handed checklist to every minor feature update. Instead, use a practical decision model.</p>
         
         <p><strong>The first question should always be:</strong> <em>"Has the vendor's trust boundary changed?"</em></p>
 
-        <img src="/images/articles/ai_decision_model_flowchart.jpg" alt="Material AI Change Decision Model" class="article-image">
-        <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary);"><em>Figure 2: Material AI Change Decision Model.</em></p>
+        <figure class="ap-diagram-figure">
+                <button type="button" class="ap-tech-img-btn" aria-label="Expand diagram Material AI Change Decision Model">
+                    <img src="/images/articles/ai_decision_model_flowchart.jpg" alt="Material AI Change Decision Model" loading="lazy">
+                    <span class="ap-diagram-badge">Click to Inspect &rarr;</span>
+                </button>
+                <figcaption>Material AI Change Decision Model</figcaption>
+            </figure>
+        <p><em>Figure 2: Material AI Change Decision Model.</em></p>
 
         <p>Evaluate these critical factors:</p>
         <ul>
@@ -804,11 +713,16 @@
             <li>Has the scope of data accessible to AI materially expanded?</li>
         </ul>
 
-        <h2>6. Material AI Change Matrix</h2>
+        
+</section>
+
+<section id="sec-6">
+<h2>6. Material AI Change Matrix</h2>
 
         <p>To scale this process across hundreds of vendors, implement a multi-dimensional scoring matrix.</p>
 
-        <table class="table-modern">
+        <div class="table-wrapper ap-stackable">
+<table class="table-modern">
             <thead>
                 <tr>
                     <th>Dimension</th>
@@ -819,34 +733,35 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Vendor Criticality</strong></td>
+                    <th><strong>Vendor Criticality</strong></th>
                     <td>Non-essential SaaS</td>
                     <td>Core Business Tool</td>
                     <td>Mission-Critical Infrastructure</td>
                 </tr>
                 <tr>
-                    <td><strong>Data Sensitivity</strong></td>
+                    <th><strong>Data Sensitivity</strong></th>
                     <td>Public/Marketing Data</td>
                     <td>Internal Confidential</td>
                     <td>PII, PHI, Financial Data</td>
                 </tr>
                 <tr>
-                    <td><strong>Type of AI Change</strong></td>
+                    <th><strong>Type of AI Change</strong></th>
                     <td>Read-only AI Search</td>
                     <td>RAG/Generative Drafts</td>
                     <td>Autonomous Agents / Model Training</td>
                 </tr>
                 <tr>
-                    <td><strong>Trust Boundary Impact</strong></td>
+                    <th><strong>Trust Boundary Impact</strong></th>
                     <td>No external APIs used</td>
                     <td>Existing approved subprocessor</td>
                     <td>New subprocessor / Data leaves region</td>
                 </tr>
             </tbody>
         </table>
+</div>
 
         <div class="success-box">
-            <strong><i class="fas fa-calculator"></i> Thresholds:</strong>
+            <strong> Thresholds:</strong>
             <ul>
                 <li><strong>0–4 Points:</strong> Document only. Proceed with standard annual review.</li>
                 <li><strong>5–8 Points:</strong> Security review. Require updated SOC 2 and technical architecture diagram.</li>
@@ -855,7 +770,11 @@
         </div>
         <p>This prioritizes effort instead of universally increasing workload, ensuring your team focuses only on genuine shifts in risk posture.</p>
 
-        <h2>7. Practical Examples</h2>
+        
+</section>
+
+<section id="sec-7">
+<h2>7. Practical Examples</h2>
 
         <p><strong>Example 1: Microsoft Copilot for Microsoft 365.</strong><br>
         If your organization already uses Microsoft 365, and they introduce Copilot using existing data boundaries and Azure OpenAI (an approved subprocessor), the core trust boundary has not materially shifted externally. A formal full-vendor reassessment is likely unnecessary, though an internal configuration review (to ensure proper RBAC and data governance) is highly recommended.</p>
@@ -869,20 +788,28 @@
         <p><strong>Example 4: Vendor introduces an on-device AI grammar assistant.</strong><br>
         A marketing tool introduces an on-device grammar checker that does not transmit content externally and never processes sensitive customer databases. <strong>Action: Document only.</strong></p>
 
-        <h2>8. Best Practices for the Enterprise</h2>
+        
+</section>
+
+<section id="sec-8">
+<h2>8. Best Practices for the Enterprise</h2>
         
         <p>Operationalizing AI risk management requires embedding checks into existing workflows rather than creating entirely new bottlenecks.</p>
 
         <ul class="checklist">
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Mandate "Zero Retention" Agreements:</strong> Ensure procurement playbooks require vendors to confirm that third-party LLMs do not retain prompts or use customer data for model training.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Monitor vendor Trust Centers</strong> and subscribe to their release notes (or integrate with <a href="/threat-intel.html" style="color: var(--accent-cyan); text-decoration: underline;">Threat Intelligence</a> feeds) to catch AI feature announcements early.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Track subprocessor updates</strong> meticulously. Set up automated alerts for changes to DPAs or subprocessor lists.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Review AI architecture changes</strong> specifically looking for shifts in trust boundaries, such as the introduction of new vector databases.</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Include AI-specific questions during QBRs.</strong> Ask directly: "Are you planning to introduce any external LLMs in the next 6-12 months?"</li>
-            <li><i class="fas fa-check-circle" style="color: #10B981;"></i> <strong>Default to Off:</strong> Configure enterprise tenant settings to disable new AI capabilities by default until a security review is completed.</li>
+            <li> <strong>Mandate "Zero Retention" Agreements:</strong> Ensure procurement playbooks require vendors to confirm that third-party LLMs do not retain prompts or use customer data for model training.</li>
+            <li> <strong>Monitor vendor Trust Centers</strong> and subscribe to their release notes (or integrate with <a href="/threat-intel.html">Threat Intelligence</a> feeds) to catch AI feature announcements early.</li>
+            <li> <strong>Track subprocessor updates</strong> meticulously. Set up automated alerts for changes to DPAs or subprocessor lists.</li>
+            <li> <strong>Review AI architecture changes</strong> specifically looking for shifts in trust boundaries, such as the introduction of new vector databases.</li>
+            <li> <strong>Include AI-specific questions during QBRs.</strong> Ask directly: "Are you planning to introduce any external LLMs in the next 6-12 months?"</li>
+            <li> <strong>Default to Off:</strong> Configure enterprise tenant settings to disable new AI capabilities by default until a security review is completed.</li>
         </ul>
 
-        <h2>9. Recommendations for CISOs</h2>
+        
+</section>
+
+<section id="sec-9">
+<h2>9. Recommendations for CISOs</h2>
 
         <p>Focus on governance, not panic. Instead of mandating "Assess more vendors," the directive should be "Improve reassessment quality by prioritizing material AI changes."</p>
         
@@ -890,11 +817,19 @@
         
         <p>Furthermore, establish a cross-functional AI Governance Council to review borderline cases. This prevents the security team from becoming a bottleneck while ensuring business units understand the shared responsibility of adopting vendor AI safely.</p>
 
-        <h2>10. Conclusion</h2>
+        
+</section>
 
-        <p>The objective is not to reassess every AI feature a vendor rolls out. The objective is to consistently identify the relatively small number of AI-driven product changes that genuinely alter the organization's risk profile. By relying on established <a href="/articles.html" style="color: var(--accent-cyan); text-decoration: underline;">Third-Party Risk Management</a> principles and a structured decision model—and utilizing tools like our <a href="/tools/grc-assessment/" style="color: var(--accent-cyan); text-decoration: underline;">GRC Assessment Tool</a>—security teams can confidently navigate the rapid pace of AI innovation.</p>
+<section id="sec-10">
+<h2>10. Conclusion</h2>
 
-        <h2>Frequently Asked Questions (FAQ)</h2>
+        <p>The objective is not to reassess every AI feature a vendor rolls out. The objective is to consistently identify the relatively small number of AI-driven product changes that genuinely alter the organization's risk profile. By relying on established <a href="/articles.html">Third-Party Risk Management</a> principles and a structured decision model—and utilizing tools like our <a href="/tools/grc-assessment/">GRC Assessment Tool</a>—security teams can confidently navigate the rapid pace of AI innovation.</p>
+
+        
+</section>
+
+<section id="sec-11">
+<h2>11. Frequently Asked Questions (FAQ)</h2>
         
         <h3>Does every new vendor AI feature require a full security reassessment?</h3>
         <p>No. You should only reassess if the AI feature introduces a material change to the risk profile, such as crossing a new trust boundary or using a new subprocessor.</p>
@@ -911,35 +846,292 @@
         <h3>How should we treat an AI feature that does not process customer data?</h3>
         <p>If the AI capability operates strictly on public data or metadata without processing sensitive customer content, it typically does not require a formal reassessment.</p>
 
-        <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+        <div class="article-footer">
             <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
             <p><strong>Published:</strong> July 4, 2026</p>
             <p><strong>Last Updated:</strong> July 4, 2026</p>
         </div>
-    </article>
+    
+</section>
 
-    <div class="interaction-bar">
-        <div class="like-section">
-            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-            </button>
-        </div>
-        <div class="action-buttons">
-            <div class="share-buttons">
-                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/vendor-added-ai-risk-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="vendor-added-ai-risk-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Vendor Risk Management</dd></div>
+                            <div><dt>Publication</dt><dd>July 4, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>11 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <div class="button-separator"></div>
-            <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
+        </article>
+    </main>
+
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
+            </div>
+            <div class="ap-related-grid">
+            <a href="/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png" alt="The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 30, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era</h3>
+                    <p class="ap-related-excerpt">Enterprise security isn&#x27;t just struggling to patch. It&#x27;s struggling to understand its own environment. This analysis examines how gaps in asset, identity and dependency visibility slow both vulnerability remediation and incident response, and how one shared context foundation supports both.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>14 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.png" alt="Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident</h3>
+                    <p class="ap-related-excerpt">A news-driven technical security analysis and defensive readiness playbook. Deconstructing the October 22 vulnerability surge across PHP, Node.js, NGINX, Go, GitLab, and eMudhra alongside the SBI data exposure into actionable detection, exposure management, and compliance controls.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/sbi-customer-data-exposure-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/sbi-customer-data-exposure-2026.jpg" alt="The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Data Breach</span>
+                        <span>October 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The SBI Data Exposure: What 3,897 PII Records on the Dark Web Reveal About Data Security and Breach Response</h3>
+                    <p class="ap-related-excerpt">SBI disclosed that a preliminary review of ~375,000 dark-web records found 3,897 customer records with PII. What is confirmed, what is alleged, what the counts mean, and what defenders should investigate.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
         </div>
-    </div>
-</main>
+    </section>
 
-<footer>
-    <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
-</footer>
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
 
-<script src="/interaction-bar.min.js?v=20260623"></script>
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
+
 </html>

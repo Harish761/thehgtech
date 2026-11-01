@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://thehgtech.com/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html</loc>
+    <loc>https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</loc>
     <news:news>
       <news:publication>
         <news:name>TheHGTech</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-30T00:00:00+00:00</news:publication_date>
-      <news:title>The Exposure Blind Spot in Enterprise Security</news:title>
+      <news:publication_date>2026-11-01T08:51:23.505500+00:00</news:publication_date>
+      <news:title>When the Test Does Not Know It Is a Test: AI Evaluation Containment Failures</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T08:51:23.525974+00:00</news:publication_date>
+      <news:title>When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>TheHGTech</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-01T08:51:23.539484+00:00</news:publication_date>
+      <news:title>Redirecting...</news:title>
     </news:news>
   </url>
 </urlset>

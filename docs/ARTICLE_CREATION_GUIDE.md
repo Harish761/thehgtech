@@ -1,177 +1,241 @@
-# Quick Article Creation Guide
+# TheHGTech Article Creation & Publishing Guide
 
-## Super Easy Method: Use the Interactive Script
-
-### 1. Run the Article Creator
-```bash
-cd /Volumes/Data-Personal/Webpage/thehgtech
-python3 create_article.py
-```
-
-### 2. Follow the Prompts
-The script will ask you for:
-- **Title**: Your article title
-- **Category**: Cybersecurity, AI, Policy, etc.
-- **Excerpt**: Short 1-2 sentence summary
-- **Tags**: Comma-separated keywords
-- **Author**: Your name (defaults to "Harish G")
-- **Content**: Paste HTML or provide file path
-
-### 3. Publish
-```bash
-git add articles.json
-git commit -m "Add new article: [Your Title]"
-git push
-```
-
-**Done!** Article is live in ~1 minute.
+This guide describes the standard publishing workflow and technical architecture for publishing new cybersecurity research, vulnerability analyses, and threat intelligence monographs on TheHGTech.
 
 ---
 
-## Alternative: Write in Your Favorite Editor
+## The Standard Publishing Workflow (3 Steps)
 
-### Option A: Use AI to Generate Draft
-
-**1. Get AI to write the article** (ChatGPT, Claude, Gemini):
-```
-Write a 1500-1700 word cybersecurity analysis article about [TOPIC].
-
-Style: Technical but accessible, analytical, first-person when sharing experience.
-Include: Specific technical details, citations to sources, actionable recommendations.
-Format: HTML with <article>, <h2>, <h3>, <p>, <ul>, <ol> tags.
-Tone: Professional security analyst sharing insights.
-```
-
-**2. Save the HTML output** to a file (e.g., `my-article.html`)
-
-**3. Run the script**:
-```bash
-python3 create_article.py
-```
-Choose option "b" and provide the file path.
+1. **Register Metadata in Datastore**: Add article metadata to `ioc-data/articles.json`.
+2. **Author the Monograph HTML**: Clone a recent modern article template to `articles/{slug}.html` and populate the editorial content.
+3. **Re-generate Pagination & Feeds**: Run `python3 scripts/generate_pagination.py`.
 
 ---
 
-### Option B: Write Directly in HTML
+## Step 1: Add Metadata to `ioc-data/articles.json`
 
-**1. Create a new file** (e.g., `article-draft.html`):
+Append your article object to the array in `ioc-data/articles.json`. Ensure the fields match the schema:
+
+```json
+{
+  "id": "enterprise-vulnerability-management-exposure-blind-spot-2026",
+  "title": "The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era",
+  "description": "Enterprise vulnerability management is broken. Threat actors exploit AI-accelerated zero-day pipelines while defenders drown in CVSS 9+ noise. Here is how modern SecOps teams are pivoting to Continuous Threat Exposure Management (CTEM).",
+  "category": "Cybersecurity",
+  "author": "TheHGTech Security Research",
+  "authorRole": "Principal Vulnerability Researcher",
+  "date": "2026-10-26",
+  "readTime": "11 min read",
+  "image": "images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png",
+  "url": "articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html",
+  "featured": true,
+  "trending": true
+}
+```
+
+---
+
+## Step 2: Author the Article HTML (`articles/{slug}.html`)
+
+Always clone from a fully featured modern article to preserve the header, mobile hamburger drawer, search overlay, and theme toggle:
+
+```bash
+cp articles/apple-dyld-zero-day-cve-2026-20700.html articles/{your-new-slug}.html
+```
+
+### Essential Page Architecture
+
+Each article must include the following structural components:
+
+#### 1. Head Stylesheets & Metadata
 ```html
-<article>
-  <header>
-    <h1>Your Article Title</h1>
-    <p><strong>Author:</strong> Harish G</p>
-    <p><strong>Published:</strong> November 27, 2025</p>
-  </header>
+<title>[Article Title] | TheHGTech</title>
+<meta name="description" content="[Short summary]">
+<link rel="canonical" href="https://thehgtech.com/articles/[slug].html">
 
-  <p>Your introduction paragraph...</p>
-
-  <h2>First Section</h2>
-  <p>Content here...</p>
-
-  <h2>Second Section</h2>
-  <p>More content...</p>
-
-  <h2>Conclusion</h2>
-  <p>Final thoughts...</p>
-</article>
+<!-- Core Editorial Design System Stylesheets -->
+<link rel="stylesheet" href="/header.css">
+<link rel="stylesheet" href="/css/article-editorial.css">
+<link rel="stylesheet" href="/footer.css">
+<link rel="stylesheet" href="/interaction-bar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 ```
 
-**2. Run the script** and point to your file.
-
----
-
-## Even Easier: Markdown to HTML Converter
-
-If you prefer writing in Markdown, I can create a converter that:
-1. You write article in Markdown (easier than HTML)
-2. Script converts to HTML automatically
-3. Adds to articles.json
-
-**Want this?** Let me know and I'll build it in 5 minutes.
-
----
-
-## Workflow Comparison
-
-| Method | Time | Difficulty | Best For |
-|--------|------|------------|----------|
-| **Interactive Script** | 5 mins | ⭐ Easy | Quick articles |
-| **AI + Script** | 10 mins | ⭐⭐ Medium | Long-form analysis |
-| **HTML Editor** | 30+ mins | ⭐⭐⭐ Hard | Full control |
-| **Markdown** | 15 mins | ⭐ Easy | Writers who prefer MD |
-
----
-
-## Tips for Faster Article Creation
-
-### 1. Use AI for Research
-Ask AI to:
-- Summarize 5-10 sources on a topic
-- Extract key facts and statistics
-- Generate outline with main points
-
-### 2. Keep a Template
-Save a template HTML file with your standard structure:
+#### 2. Breadcrumbs & Hero Header
 ```html
-<article>
-  <header>
-    <h1>[TITLE]</h1>
-    <p><strong>Author:</strong> Harish G</p>
-    <p><strong>Published:</strong> [DATE]</p>
-  </header>
+<main id="main-content" class="ap-main">
+  <article itemscope itemtype="https://schema.org/NewsArticle">
+    <header class="ap-article-header">
+      <nav aria-label="Breadcrumb">
+        <ol class="ap-breadcrumbs">
+          <li><a href="/">Home</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a href="/articles.html">Research Library</a></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page">[Category]</li>
+        </ol>
+      </nav>
 
-  <p>[INTRO]</p>
+      <div class="ap-kicker-row">
+        <span class="ap-pill ap-pill-category">[CATEGORY]</span>
+        <span class="ap-pill">Independent Research</span>
+        <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+      </div>
 
-  <h2>Background</h2>
-  <p>[CONTEXT]</p>
+      <h1 class="ap-title" itemprop="headline">[Main Article Headline]</h1>
+      <p class="ap-standfirst" itemprop="description">[Executive summary]</p>
 
-  <h2>Technical Analysis</h2>
-  <p>[DETAILS]</p>
+      <div class="ap-byline-ledger">
+        <div class="ap-byline-author">
+          <div class="ap-author-avatar" aria-hidden="true">TS</div>
+          <div class="ap-byline-cell">
+            <span class="ap-byline-label">Lead Author</span>
+            <span class="ap-byline-val"><a href="/about.html" rel="author">TheHGTech Security Research</a></span>
+            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+          </div>
+        </div>
+        <div class="ap-byline-cell">
+          <span class="ap-byline-label">Published</span>
+          <time class="ap-byline-val" datetime="2026-10-26" itemprop="datePublished">October 26, 2026</time>
+          <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+        </div>
+        <div class="ap-byline-cell">
+          <span class="ap-byline-label">Reading Scope</span>
+          <span class="ap-byline-val">8 min read</span>
+          <span class="ap-byline-sub">8 Technical Sections</span>
+        </div>
+      </div>
+    </header>
 
-  <h2>Implications</h2>
-  <p>[IMPACT]</p>
-
-  <h2>Recommendations</h2>
-  <ol>
-    <li>[ACTION 1]</li>
-    <li>[ACTION 2]</li>
-  </ol>
-
-  <h2>Conclusion</h2>
-  <p>[SUMMARY]</p>
-</article>
+    <!-- 16:9 Featured Hero Media -->
+    <figure class="ap-hero-figure">
+      <div class="ap-hero-img-wrap">
+        <img src="/images/articles/[image-name].png" alt="[Image description]" width="1200" height="675" fetchpriority="high" decoding="async">
+      </div>
+    </figure>
 ```
 
-### 3. Batch Your Writing
-- Write 2-3 articles in one sitting
-- Use the script to add them all at once
-- Publish together
+#### 3. 3-Zone Monograph Grid & Prose Body
+```html
+    <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose) -->
+    <div class="ap-workspace">
+      <!-- Left Rail: Sticky Table of Contents -->
+      <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+        <div class="ap-toc-header">
+          <span>On This Page</span>
+          <span id="apTocPct" class="ap-toc-pct">0%</span>
+        </div>
+        <div class="ap-toc-scroller">
+          <nav class="ap-toc-nav" aria-label="Section links">
+            <a href="#sec-1">1. Executive Summary</a>
+            <a href="#sec-2">2. Technical Analysis</a>
+            <a href="#sec-3">3. Immediate Mitigations</a>
+          </nav>
+        </div>
+      </aside>
 
-### 4. Use Voice-to-Text
-- Dictate your article
-- Clean up the text
-- Convert to HTML
-- Add via script
+      <!-- Center: Long-Form Technical Monograph -->
+      <div class="ap-prose" itemprop="articleBody">
+        <section id="sec-1">
+          <h2>1. Executive Summary</h2>
+          <p>Analysis text...</p>
+        </section>
+
+        <!-- Code Block Example with Copy Button -->
+        <div class="ap-code-block" data-lang="kql">
+          <div class="ap-code-header">
+            <span class="ap-code-lang">KQL</span>
+            <button class="ap-code-btn" data-action="copy-code">Copy</button>
+          </div>
+          <pre><code>DeviceProcessEvents
+| where ProcessCommandLine has_any ("suspicious_flag", "injection")</code></pre>
+        </div>
+
+        <!-- Responsive Stackable Table Example -->
+        <div class="table-wrapper ap-stackable">
+          <table class="ap-editorial-table">
+            <thead>
+              <tr>
+                <th>Attack Vector</th>
+                <th>MITRE Technique</th>
+                <th>Detection Difficulty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dyld Environment Poisoning</td>
+                <td>T1574.006</td>
+                <td>High</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+```
+
+#### 4. Interaction Bar, Comments & Newsletter
+Place the `.interaction-bar` immediately after the article content. The JavaScript (`interaction-bar.min.js`) automatically initializes the Brevo newsletter form, GraphComment discussions, social sharing, and print functionality:
+
+```html
+    <div class="interaction-bar" data-article-id="[slug]">
+        <div class="like-section">
+            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                <i class="far fa-heart"></i> <span id="likeText">Join Discussion</span>
+            </button>
+        </div>
+        <div class="action-buttons">
+            <div class="share-buttons">
+                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+            <div class="button-separator"></div>
+            <button onclick="printArticle()" class="print-btn" title="Print Article" aria-label="Print Article">
+                <i class="fas fa-print"></i>
+            </button>
+        </div>
+    </div>
+  </article>
+</main>
+```
+
+#### 5. Footer & Scripts
+```html
+<footer class="footer">...</footer>
+
+<script src="/header.js"></script>
+<script src="/footer.js"></script>
+<script src="/interaction-bar.min.js"></script>
+<script src="/js/article-editorial.js"></script>
+```
 
 ---
 
-## Example: Full Workflow (10 minutes)
+## Step 3: Run the Pagination Generator
 
-**Minute 1-2**: Pick a topic from recent news
-**Minute 3-7**: Ask AI to write 1500-word analysis
-**Minute 8**: Copy HTML to file
-**Minute 9**: Run `python3 create_article.py`, provide file path
-**Minute 10**: Git commit and push
+Whenever metadata in `ioc-data/articles.json` is modified or a new article is added:
 
-**Total**: 10 minutes from idea to published article!
-
----
-
-## Need Help?
-
-Run the script and it will guide you through everything:
 ```bash
-python3 create_article.py
+python3 scripts/generate_pagination.py
 ```
 
-Or create a Markdown converter if you prefer that format.
+This updates the Research Library grids (`articles.html`), static fallback pagination directories (`articles/page/*/index.html`), and RSS feeds.
+
+---
+
+## Testing & Quality Assurance Checklist
+
+- [ ] Dark Mode and Light Mode contrast verified.
+- [ ] Table of Contents links properly to numbered sections (`#sec-1`, `#sec-2`, etc.).
+- [ ] Code snippets have copy functionality.
+- [ ] Tables stack cleanly on mobile (`.ap-stackable`).
+- [ ] Newsletter subscription form and comments are initialized by `.interaction-bar`.
+- [ ] No broken relative paths (all CSS and JS assets use `/` prefix).
+- [ ] Git commit and push to production.

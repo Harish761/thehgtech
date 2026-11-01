@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <!-- Primary Meta Tags -->
-    <title>Deep Dive: The Accenture Breach Claim Isn't About Source Code — It's About .env Files | TheHGTech</title>
-    <meta name="description" content="A senior security architect's technical dissection of the July 2026 Accenture breach claim by threat actor 888. Why .env files in the stolen set signal dev-workstation compromise, not a repository access failure — and why that distinction changes every control priority.">
+    <!-- Preserved Production SEO Meta Tags & Canonical URL -->
+    <title>Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files | TheHGTech</title>
+    <meta name="description" content="A senior security architect">
+    <meta name="keywords" content="Accenture, Data Breach, Azure DevOps, Secrets Management, Developer Workstation, DLP, ISO 27001, Threat Actor 888">
     <meta name="author" content="Harish G">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Accenture Breach Claim Isn't About Source Code — It's About .env Files">
-    <meta name="twitter:description" content="Technical analysis of the July 2026 Accenture breach claim. Why .env files in stolen data signal endpoint compromise, not a repo access failure — and what defenders must do differently.">
-    <meta name="twitter:image" content="https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/articles/accenture-breach-env-file-2026.html">
 
     <!-- Open Graph -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/accenture-breach-env-file-2026.html">
-    <meta property="og:title" content="The Accenture Breach Claim Isn't About Source Code — It's About .env Files">
-    <meta property="og:description" content="Technical analysis of the July 2026 Accenture breach claim. Why .env files in stolen data signal endpoint compromise, not a repo access failure — and what defenders must do differently.">
+    <meta property="og:title" content="Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files">
+    <meta property="og:description" content="A senior security architect">
     <meta property="og:image" content="https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg">
     <meta property="og:site_name" content="TheHGTech">
 
-    <link rel="canonical" href="https://thehgtech.com/articles/accenture-breach-env-file-2026.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files">
+    <meta name="twitter:description" content="A senior security architect">
+    <meta name="twitter:image" content="https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg">
 
-    <!-- Schema.org: NewsArticle -->
+    <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,8 +63,6 @@
   "keywords": "Accenture, breach, 888, Azure DevOps, .env files, developer workstation, secrets management, DLP, ISO 27001"
 }
 </script>
-
-    <!-- Schema.org: FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -99,600 +99,242 @@
     }
     </script>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
-    <!-- Style System - FULL SET REQUIRED -->
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+
+    <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
     <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/header-dropdown.css?v=1">
-    <link rel="stylesheet" href="/print.css">
-    <link rel="stylesheet" href="/m-core.css?v=4.2">
-    <link rel="stylesheet" href="/m-layout.css?v=3.2">
-    <link rel="stylesheet" href="/m-components.css?v=3.0">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
     <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/print.css">
+    <link rel="stylesheet" href="/css/article-editorial.css?v=1.0">
+
+    <!-- Non-blocking FontAwesome & Interaction Bar Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/interaction-bar.css?v=20251207-0041">
 
-    <!-- Google Fonts and Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-    <!-- ========== GLOBAL THEME SCRIPT ========== -->
+    <!-- Pre-render Theme Initialization -->
     <script>
-        (function() {
-            var savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "light" || (!savedTheme && window.matchMedia("(prefers-color-scheme: light)").matches)) {
-                document.documentElement.setAttribute("data-theme", "light");
-                document.body.classList.add("light-mode");
-            }
+        (function () {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var forced = params.get("theme");
+                var saved = localStorage.getItem("theme");
+                var mode = (forced === "light" || forced === "dark") ? forced : saved;
+                if (mode === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else if (forced === "dark") {
+                    document.documentElement.removeAttribute("data-theme");
+                }
+            } catch (e) {}
         })();
-    </script>
-    <script src="/theme-toggle.js" defer></script>
-
-
-    <style>
-        :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --accent-cyan: #00D9FF;
-            --accent-red: #FF3D3D;
-            --border: rgba(255, 255, 255, 0.1);
-            --code-bg: #111;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 18px;
-        }
-
-        .article-container {
-            max-width: 800px;
-            margin: 80px auto 0;
-            padding: 2rem;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--accent-cyan);
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .back-link:hover { color: var(--text-primary); }
-
-        .article-header {
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border);
-            text-align: left;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-cyan) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .article-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .article-content h2 {
-            color: var(--accent-cyan);
-            margin: 2.5rem 0 1rem;
-            font-size: 1.6rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-
-        .article-content h3 {
-            color: var(--text-primary);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-        }
-
-        .article-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-        }
-
-        .featured-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 2rem 0;
-            border: 1px solid var(--border);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        .article-image {
-            width: 100%;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            border: 1px solid var(--border);
-        }
-
-        .technical-box {
-            background: rgba(0, 217, 255, 0.03);
-            border: 1px solid var(--border);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .technical-box > *:first-child,
-        .warning-box > *:first-child {
-            margin-top: 0;
-        }
-
-        .warning-box {
-            background: rgba(255, 61, 61, 0.05);
-            border: 1px solid rgba(255, 61, 61, 0.2);
-            border-left: 5px solid var(--accent-red);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .success-box {
-            background: rgba(16, 185, 129, 0.05);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            border-left: 5px solid #10B981;
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2.5rem 0;
-        }
-
-        .info-box {
-            background: rgba(0, 217, 255, 0.04);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-left: 5px solid var(--accent-cyan);
-            padding: 1.5rem 2rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-
-        .info-box h3 {
-            margin-top: 0;
-            color: var(--accent-cyan);
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .info-box ul {
-            margin: 0.5rem 0 0;
-            padding-left: 1.2rem;
-        }
-
-        .info-box li {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            margin-bottom: 0.4rem;
-        }
-
-        pre {
-            background: #000;
-            border: 1px solid var(--border);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-
-        code {
-            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-            font-size: 0.9rem;
-            color: #fff;
-            line-height: 1.5;
-        }
-
-        .article-content p code,
-        .article-content li code {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 0.2rem 0.4rem;
-            border-radius: 4px;
-            color: var(--accent-cyan);
-        }
-
-        .article-content ul,
-        .article-content ol {
-            color: var(--text-secondary);
-            padding-left: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .article-content li {
-            margin-bottom: 0.5rem;
-            font-size: 1.05rem;
-        }
-
-        .category-badge {
-            display: inline-block;
-            background: rgba(255, 61, 61, 0.1);
-            color: var(--accent-red);
-            border: 1px solid rgba(255, 61, 61, 0.3);
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 1rem;
-        }
-
-        .status-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-
-        .status-table th {
-            background: rgba(0, 217, 255, 0.08);
-            color: var(--accent-cyan);
-            padding: 0.75rem 1rem;
-            text-align: left;
-            border: 1px solid var(--border);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .status-table td {
-            padding: 0.75rem 1rem;
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            vertical-align: top;
-        }
-
-        .status-table tr:nth-child(even) td {
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        .confirmed {
-            color: #10B981;
-            font-weight: 600;
-        }
-
-        .unconfirmed {
-            color: var(--accent-red);
-            font-weight: 600;
-        }
-
-        .partial {
-            color: #F59E0B;
-            font-weight: 600;
-        }
-
-        .tlp-clear {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.1);
-            color: #10B981;
-            border: 1px solid rgba(16, 185, 129, 0.3);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        .faq-section h3 {
-            color: var(--accent-cyan);
-            margin-top: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .article-content blockquote {
-            border-left: 4px solid var(--accent-cyan);
-            margin: 1.5rem 0;
-            padding: 0.5rem 1.5rem;
-            background: rgba(0, 217, 255, 0.03);
-            border-radius: 0 8px 8px 0;
-        }
-
-        .article-content blockquote p {
-            color: var(--text-primary);
-            font-style: italic;
-            margin: 0;
-        }
-
-        .sigma-rule {
-            background: #000;
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
-            overflow-x: auto;
-        }
-
-        .sigma-rule code {
-            color: #00D9FF;
-        }
-    </style>
-
-    <script src="/m-app.js?v=4.3" defer></script>
-    <script src="/interaction-bar.js" defer></script>
-
-    <!-- ========== ANALYTICS (MANDATORY on every page) ========== -->
-    <!-- GA4 -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 100);
-        });
-    </script>
-    <!-- Fullres -->
-    <script>
-        window.addEventListener('load', function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        });
     </script>
 </head>
 
-<body>
+<body class="article-pilot">
+    <a href="#main-content" class="ap-skip-link">Skip to Article Content</a>
 
-<header class="m-header m-only">
-    <div class="m-header__logo">
-        <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
-            <img src="/logo-dark.png" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
-            <img src="/logo-light.png" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
-            <span style="font-size: 1.2rem; font-weight: 700; background: linear-gradient(135deg, #FF3D3D, #ff8c8c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">TheHGTech</span>
-        </a>
-    </div>
-    <div class="m-header__actions">
-        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
-            <i class="fas fa-moon"></i>
-        </button>
-        <!-- Search triggers Command Palette -->
-        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
-            <i class="fas fa-search"></i>
-        </button>
-        <!-- Hamburger Menu Toggle -->
-        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-    </div>
-</header>
+    <!-- Native CSS Scroll-Driven Reading Progress Indicator -->
+    <div id="progress" class="ap-reading-progress" aria-hidden="true"></div>
 
-<!-- ========== FULLSCREEN MOBILE MENU OBSERVER ========== -->
-<div class="m-menu-overlay m-only" id="m-menu-overlay">
-    <div class="m-menu-header">
-        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Navigation</span>
-        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-    <div class="m-menu-content">
-        <div class="m-menu-section">
-            <div class="m-menu-title">Intelligence</div>
-            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt"></i> Threat Intel</a>
-            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug"></i> CVE Tracker</a>
-            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search"></i> Hacker Chatter</a>
-            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones"></i> Ransomware</a>
+    <!-- Mobile Canonical Header -->
+    <header class="m-header m-only">
+        <div class="m-header__logo">
+            <a href="/" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+                <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
         </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Resources</div>
-            <a href="/guides/" class="m-menu-link"><i class="fas fa-book"></i> Security Guides</a>
-            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper"></i> Articles &amp; News</a>
-            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale"></i> Tool Comparisons</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Tools</div>
-            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check"></i> GRC Assessment</a>
-            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs"></i> n8n Workflows</a>
-        </div>
-        <div class="m-menu-section">
-            <div class="m-menu-title">Settings</div>
-            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
-                <i class="fas fa-moon" id="m-menu-theme-icon"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+        <div class="m-header__actions">
+            <button class="m-header__btn" id="m-theme-toggle-top" onclick="window.togglePilotTheme();" aria-label="Toggle Theme">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </button>
+            <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
-    </div>
-</div>
+    </header>
 
-    <!-- Search Overlay -->
+    <!-- Fullscreen Mobile Menu Overlay -->
+    <div class="m-menu-overlay m-only" id="m-menu-overlay">
+        <div class="m-menu-header">
+            <span style="font-size: 1.15rem; font-weight: 700;">Navigation</span>
+            <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="m-menu-content">
+            <div class="m-menu-section">
+                <div class="m-menu-title">Intelligence</div>
+                <a href="/threat-intel.html" class="m-menu-link">Threat Intel</a>
+                <a href="/cve-tracker.html" class="m-menu-link">CVE Tracker</a>
+                <a href="/hacker-chatter.html" class="m-menu-link">Hacker Chatter</a>
+                <a href="/ransomware-tracker.html" class="m-menu-link">Ransomware</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Resources</div>
+                <a href="/articles.html" class="m-menu-link">Research Library (Articles)</a>
+                <a href="/guides/" class="m-menu-link">Security Guides</a>
+                <a href="/comparisons/" class="m-menu-link">Tool Comparisons</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Tools</div>
+                <a href="/tools/grc-assessment/" class="m-menu-link">GRC Assessment</a>
+                <a href="/workflows/" class="m-menu-link">n8n Workflows</a>
+            </div>
+            <div class="m-menu-section">
+                <div class="m-menu-title">Settings</div>
+                <button class="m-menu-theme-btn" onclick="window.togglePilotTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                    <span id="m-menu-theme-text">Toggle Reading Theme</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Overlay -->
     <div class="m-search-overlay m-only">
         <div class="m-search-overlay__header">
-            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides...">
+            <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
             <button class="m-search-overlay__cancel">Cancel</button>
         </div>
         <div class="m-search-overlay__results"></div>
     </div>
 
-<header class="header" role="banner">
+    <!-- Desktop Canonical Header -->
+    <header class="header" role="banner">
         <div class="header-content">
             <div class="logo">
-                <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
-                    <img src="/logo-dark.png" alt="TheHGTech Logo" class="logo-img logo-dark">
-                    <img src="/logo-light.png" alt="TheHGTech Logo" class="logo-img logo-light">
-                    <span class="logo-text">TheHGTech</span>
+                <a href="/" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                    <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
                 </a>
             </div>
-            <nav class="nav nav-modern" role="navigation">
-                <a href="/index.html#news">News</a>
 
-                <!-- Intelligence Dropdown -->
+            <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+                <a href="/">Home</a>
+
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Intelligence
                         <span class="nav-live-badge">LIVE</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
                         <a href="/threat-intel.html" class="dropdown-item">
-                            <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
                                 <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
                             </div>
                         </a>
                         <a href="/cve-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon cve"><i class="fas fa-bug"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">CVE Tracker</div>
                                 <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
                             </div>
                         </a>
                         <a href="/ransomware-tracker.html" class="dropdown-item">
-                            <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Ransomware Tracker</div>
                                 <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
                             </div>
                         </a>
                         <a href="/hacker-chatter.html" class="dropdown-item">
-                            <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search"></i></div>
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                                <div class="dropdown-item-title">Hacker Chatter <span class="dropdown-badge">NEW</span></div>
                                 <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- Resources Dropdown -->
                 <div class="nav-dropdown">
                     <span class="nav-dropdown-trigger">
                         Resources
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
                     <div class="nav-dropdown-panel">
-                        <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon guides"><i class="fas fa-book"></i></div>
+                        <a href="/articles.html" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">40+</span></div>
-                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                                <div class="dropdown-item-title">Research Library <span class="dropdown-badge popular">197+</span></div>
+                                <div class="dropdown-item-desc">Security research, vulnerability investigations &amp; threat reports</div>
                             </div>
                         </a>
-                        <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs"></i></div>
+                        <a href="/guides/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                                <div class="dropdown-item-title">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                                <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; detection manuals</div>
+                            </div>
+                        </a>
+                        <a href="/workflows/" class="dropdown-item">
+                            <div class="dropdown-item-content">
+                                <div class="dropdown-item-title">n8n Workflows</div>
                                 <div class="dropdown-item-desc">Security automation templates</div>
                             </div>
                         </a>
                         <a href="/comparisons/" class="dropdown-item">
-                            <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale"></i></div>
                             <div class="dropdown-item-content">
                                 <div class="dropdown-item-title">Tool Comparisons</div>
                                 <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
                             </div>
                         </a>
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
-                                <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
-                            <div class="dropdown-item-icon articles"><i class="fas fa-newspaper"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
-                                <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
-                <!-- Tools Dropdown -->
                 <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="cursor:pointer;">
-                        <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;"></i> Tools
-                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    <span class="nav-dropdown-trigger">
+                        Tools
+                        <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; margin-left:4px;">NEW</span>
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-left:3px;" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                    <div class="nav-dropdown-panel" style="min-width: 250px;">
-                        <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
-                            <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check"></i></div>
+                    <div class="nav-dropdown-panel" style="min-width: 240px;">
+                        <a href="/tools/grc-assessment/" class="dropdown-item">
                             <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
-                                <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                                <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool</div>
+                                <div class="dropdown-item-desc">Interactive scope builder &amp; gap assessment</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <!-- About Dropdown -->
-                <div class="nav-dropdown">
-                    <span class="nav-dropdown-trigger" style="color: var(--accent-cyan);">
-                        <i class="fas fa-user-shield" style="color: var(--accent-cyan); margin-right: 4px; font-size: 0.8rem;"></i> About
-                        <i class="fas fa-chevron-down dropdown-arrow"></i>
-                    </span>
-                    <div class="nav-dropdown-panel" style="min-width: 230px;">
-                        <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
-                                <div class="dropdown-item-desc">Our mission, tools and data sources</div>
-                            </div>
-                        </a>
-                        <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
-                            <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
-                                <div class="dropdown-item-desc">Security professional &amp; site founder</div>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="mailto:harish@thehgtech.com" class="dropdown-item">
-                            <div class="dropdown-item-icon contact"><i class="fas fa-envelope"></i></div>
-                            <div class="dropdown-item-content">
-                                <div class="dropdown-item-title">Contact</div>
-                                <div class="dropdown-item-desc">harish@thehgtech.com</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <a href="/about.html">About</a>
 
-                <!-- Social Follow Links -->
-                <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
-                    <a href="https://x.com/thehgtech" target="_blank" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#fff';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-x-twitter"></i>
+                <div style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(148,163,184,0.25); padding-left: 14px; align-items: center;">
+                    <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
-                    <a href="https://linkedin.com/company/thehgtech" target="_blank" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1.1rem; transition: color 0.3s ease;" onmouseover="this.style.color='#0a66c2';" onmouseout="this.style.color='var(--text-muted)';">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--ap-ink-secondary); display:inline-flex;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                     </a>
                 </div>
 
-                <!-- Search Button -->
-                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;" onmouseover="this.style.background='rgba(255,255,255,0.1)';" onmouseout="this.style.background='rgba(255,255,255,0.05)';">
-                    <i class="fas fa-search"></i>
+                <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 50%; color: inherit; cursor: pointer;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
                 </button>
-                <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <button class="m-theme-toggle" id="themeToggle" onclick="window.togglePilotTheme()" aria-label="Toggle Theme" style="margin-left: 12px; display: inline-flex; position: relative; width: 54px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer;">
                     <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
                 </button>
             </nav>
@@ -705,31 +347,157 @@
         </div>
     </header>
 
-    <main class="article-container">
-        <a href="/articles.html" class="back-link" style="display: inline-block; margin-bottom: 1.5rem; color: var(--accent-cyan); text-decoration: none;">
-            <i class="fas fa-arrow-left"></i> Back to Articles
-        </a>
+    <!-- Sticky Secondary Editorial Sub-Navigation & Reading Comfort Bar -->
+    <div class="ap-subnav-shell" role="region" aria-label="Article Navigation and Reading Controls">
+        <div class="ap-subnav-bar">
+            <div class="ap-subnav-left">
+                <a href="/articles.html" class="ap-back-library">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    <span>Research Library</span>
+                </a>
+                <span class="ap-series-tag">
+                    <span class="ap-series-dot" aria-hidden="true"></span>
+                    <span>THEHGTECH // SECURITY RESEARCH MONOGRAPH</span>
+                </span>
+            </div>
+            <div class="ap-reader-toolbar" role="group" aria-label="Reading comfort controls">
+                <button type="button" class="ap-reader-btn" data-scale="compact" onclick="window.setArticleReaderScale('compact')" aria-pressed="false" title="Compact font size">A-</button>
+                <button type="button" class="ap-reader-btn active" data-scale="default" onclick="window.setArticleReaderScale('default')" aria-pressed="true" title="Default font size">A</button>
+                <button type="button" class="ap-reader-btn" data-scale="large" onclick="window.setArticleReaderScale('large')" aria-pressed="false" title="Large font size">A+</button>
+                <span class="ap-toolbar-sep" aria-hidden="true"></span>
+                <button type="button" class="ap-reader-btn" onclick="window.togglePilotTheme()" aria-label="Switch reading surface theme">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg>
+                    <span id="apThemeLabel">Paper</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-        <article>
+    <main id="main-content" class="ap-main">
+        <article itemscope itemtype="https://schema.org/NewsArticle">
+            <!-- Article Header & Metadata Ledger -->
+            <header class="ap-article-header">
+                <nav aria-label="Breadcrumb">
+                    <ol class="ap-breadcrumbs">
+                        <li><a href="/">Home</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li aria-hidden="true">/</li>
+                        <li aria-current="page">Threat Analysis</li>
+                    </ol>
+                </nav>
+
+                <div class="ap-kicker-row">
+                    <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                    <span class="ap-pill">Independent Research</span>
+                    <span class="ap-pill ap-pill-emerald">Verified Analysis</span>
+                </div>
+
+                <h1 class="ap-title" itemprop="headline">The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files</h1>
+
+                <p class="ap-standfirst" itemprop="description">
+                    A senior security architect
+                </p>
+
+                <div class="ap-byline-ledger">
+                    <div class="ap-byline-author">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div class="ap-byline-cell">
+                            <span class="ap-byline-label">Lead Author</span>
+                            <span class="ap-byline-val"><a href="/about.html" rel="author">Harish G</a></span>
+                            <span class="ap-byline-sub">TheHGTech Security Research Team</span>
+                        </div>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Published</span>
+                        <time class="ap-byline-val" datetime="July 10, 2026" itemprop="datePublished">July 10, 2026</time>
+                        <span class="ap-byline-sub">Peer Reviewed &amp; Field Verified</span>
+                    </div>
+                    <div class="ap-byline-cell">
+                        <span class="ap-byline-label">Reading Scope</span>
+                        <span class="ap-byline-val">8 min read</span>
+                        <span class="ap-byline-sub">1 Technical Sections</span>
+                    </div>
+                    <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- LCP-Optimized 16:9 Featured Hero Figure -->
+            <figure class="ap-hero-figure">
+                <div class="ap-hero-img-wrap">
+                    <img src="/images/articles/accenture-breach-env-file-2026.jpg"
+                         alt="Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async">
+                </div>
+                <figcaption class="ap-hero-caption">
+                    <span>FIG // Technical investigation &amp; adversary telemetry breakdown.</span>
+                    <span>THEHGTECH RESEARCH ARCHIVE</span>
+                </figcaption>
+            </figure>
+
+            <!-- Mobile & Tablet Collapsible Table of Contents -->
+            <details class="ap-mobile-toc">
+                <summary>
+                    <span>On This Page (1 Sections)</span>
+                    <svg class="ap-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </summary>
+                <ol class="ap-mobile-toc-list">
+                    <li><a href="#sec-overview">1. Detailed Analysis</a></li>
+                </ol>
+            </details>
+
+            <!-- 3-Zone Monograph Workspace (Sticky TOC + 70ch Prose + Dossier Rail) -->
+            <div class="ap-workspace">
+                <aside class="ap-toc-rail" aria-label="Article Table of Contents">
+                    <div class="ap-toc-header">
+                        <span>On This Page</span>
+                        <span id="apTocPct" class="ap-toc-pct">0%</span>
+                    </div>
+                    <div class="ap-toc-scroller">
+                        <div class="ap-sentinel-top" aria-hidden="true"></div>
+                        <div class="ap-scroll-hint-top" aria-hidden="true"></div>
+                        <nav class="ap-toc-nav" aria-label="Section links">
+                            <a href="#sec-overview">1. Detailed Analysis</a>
+                        </nav>
+                        <div class="ap-scroll-hint-bottom" aria-hidden="true"></div>
+                        <div class="ap-sentinel-bottom" aria-hidden="true"></div>
+                    </div>
+                </aside>
+
+                <div class="ap-prose" itemprop="articleBody">
+<section id="sec-overview">
+<section id="sec-overview">
+
             <div class="article-header">
                 <div class="category-badge">THREAT ANALYSIS</div>
-                <h1>The Accenture Breach Claim Isn't About Source Code — It's About .env Files</h1>
-                <div class="article-meta">
-                    <span><i class="fas fa-user"></i> <a href="/about.html#harish-g" rel="author" style="color:inherit; text-decoration:none;">Harish G</a></span>
-                    <span><i class="fas fa-calendar"></i> July 10, 2026</span>
-                    <span><i class="fas fa-clock"></i> 18 min read</span>
-                    <span><span class="tlp-clear">TLP: CLEAR</span></span>
-                </div>
-                <p style="color: var(--text-secondary); font-size: 0.95rem; font-style: italic;">
+                
+                
+                <p>
                     This analysis is based on reporting from BleepingComputer, The Register, and Cybernews as of July 10, 2026. The incident is developing; details may evolve. Claims by threat actor "888" have not been independently verified at full scope. Accenture's public statements are quoted directly and distinguished from threat-actor claims throughout.
                 </p>
             </div>
 
-            <img src="/images/articles/accenture-breach-env-file-2026.jpg" alt="Accenture breach claim analysis — the .env file as the real signal" class="featured-image">
+            
 
-            <!-- Key Takeaways -->
+            
             <div class="info-box">
-                <h3><i class="fas fa-bullseye"></i> Key Takeaways (BLUF)</h3>
+                <h3> Key Takeaways (BLUF)</h3>
                 <ul>
                     <li><strong>Unverified claim:</strong> Threat actor "888" posted on PwnForums on July 6, 2026, claiming to have exfiltrated 35GB+ of Accenture source code, RSA/SSH keys, Azure PATs, and configuration files.</li>
                     <li><strong>Partial confirmation:</strong> Accenture confirmed awareness of an "isolated matter" and says it has "remediated its source." It has not confirmed scope, data type, or exfiltration extent.</li>
@@ -741,7 +509,7 @@
 
             <div class="article-content">
 
-                <!-- SECTION 1 -->
+                
                 <h2>1. What Actually Happened: The Record, Stripped of Hype</h2>
 
                 <p>On July 6, 2026, a threat actor operating under the handle "888" posted a breach claim on PwnForums, a cybercrime forum with a documented history of hosting data sale listings. The claim: Accenture, the $64B consulting and managed services giant, had been breached, with the actor alleging theft of "just over 35gb of source codes" dated to July 2026.</p>
@@ -752,7 +520,8 @@
 
                 <p>This is the confirmed record. Everything else, as of this writing, is either threat-actor assertion or analytical inference.</p>
 
-                <table class="status-table">
+                <div class="table-wrapper ap-stackable">
+<table class="status-table">
                     <thead>
                         <tr>
                             <th>Claim / Event</th>
@@ -762,46 +531,47 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Post on PwnForums by "888" claiming 35GB+ stolen</td>
+                            <th>Post on PwnForums by "888" claiming 35GB+ stolen</th>
                             <td><span class="confirmed">CONFIRMED</span> (post exists)</td>
                             <td>BleepingComputer, The Register</td>
                         </tr>
                         <tr>
-                            <td>Accenture awareness of an "isolated matter"</td>
+                            <th>Accenture awareness of an "isolated matter"</th>
                             <td><span class="confirmed">CONFIRMED</span> (Accenture statement)</td>
                             <td>Accenture public statement</td>
                         </tr>
                         <tr>
-                            <td>Remediation of "its source" per Accenture</td>
+                            <th>Remediation of "its source" per Accenture</th>
                             <td><span class="confirmed">CONFIRMED</span> (Accenture statement)</td>
                             <td>Accenture public statement</td>
                         </tr>
                         <tr>
-                            <td>35GB+ exfiltration occurred</td>
+                            <th>35GB+ exfiltration occurred</th>
                             <td><span class="unconfirmed">UNVERIFIED</span></td>
                             <td>Threat actor claim only</td>
                         </tr>
                         <tr>
-                            <td>RSA keys, SSH keys, Azure PATs stolen</td>
+                            <th>RSA keys, SSH keys, Azure PATs stolen</th>
                             <td><span class="unconfirmed">UNVERIFIED</span></td>
                             <td>Threat actor claim only</td>
                         </tr>
                         <tr>
-                            <td>.env file references in leaked sample tree</td>
+                            <th>.env file references in leaked sample tree</th>
                             <td><span class="partial">PARTIALLY VERIFIED</span></td>
                             <td>Cybernews researcher review of sample</td>
                         </tr>
                         <tr>
-                            <td>Scope of affected systems or clients</td>
+                            <th>Scope of affected systems or clients</th>
                             <td><span class="unconfirmed">UNCONFIRMED</span></td>
                             <td>Not disclosed by Accenture</td>
                         </tr>
                     </tbody>
                 </table>
+</div>
 
                 <p>With that factual baseline established, let's move to what actually matters.</p>
 
-                <!-- SECTION 2 -->
+                
                 <h2>2. The Reframe: The .env File Is the Real Signal</h2>
 
                 <p>The framing dominating coverage of this incident focuses on the stolen source code, the Azure DevOps repository clone, and the cloud credential types listed in the claim. That framing is understandable and not wrong — but it misses the architecturally decisive detail that Cybernews researchers surfaced when reviewing the leaked file tree sample.</p>
@@ -817,8 +587,22 @@
                 <p>This is not an obscure convention. It is foundational developer hygiene, documented in virtually every onboarding guide, enforced by default in create-react-app, create-next-app, Django's project scaffold, and most enterprise CI/CD pipeline standards. The files are gitignored. They do not get pushed to remote repositories. They should not appear in a legitimate git clone from Azure DevOps or any other remote origin.</p>
 
                 <div class="technical-box">
-                    <h3><i class="fas fa-code"></i> Standard .gitignore Pattern (Node.js reference)</h3>
-                    <pre><code># Environment variables — NEVER commit these
+                    <h3> Standard .gitignore Pattern (Node.js reference)</h3>
+                    <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="code">CODE</span>
+            <span class="ap-code-title">CODE Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code># Environment variables — NEVER commit these
 .env
 .env.local
 .env.development.local
@@ -832,6 +616,7 @@
 # workstations and in secure secrets management systems (e.g.,
 # Azure Key Vault, HashiCorp Vault, AWS Secrets Manager).
 # A repository clone should never contain them.</code></pre>
+</div>
                 </div>
 
                 <h3>What .env Presence Actually Implies About the Exfiltration Path</h3>
@@ -847,7 +632,7 @@
                 <p>Option A carries the most explanatory weight. A repository clone from Azure DevOps — the attack path implied by the proof-of-possession screenshot — should not produce <code>.env</code> files unless they were committed. The presence of these files in what appears to be a bulk directory dump is more consistent with a compromised developer endpoint than with an IAM access token abuse or Azure DevOps permission escalation.</p>
 
                 <div class="warning-box">
-                    <h3><i class="fas fa-exclamation-triangle"></i> Why This Distinction Is Operationally Material</h3>
+                    <h3> Why This Distinction Is Operationally Material</h3>
                     <p>The control response to a <strong>repository access compromise</strong> is: rotate PATs, audit Azure DevOps permissions, review service principal scopes, check audit logs for anomalous clone operations, and sweep for over-privileged identities in the DevOps organization.</p>
                     <p>The control response to a <strong>developer workstation compromise</strong> is: isolate and forensically image the endpoint, determine what else was resident on that machine (other project directories, credential stores, browser-saved passwords, VPN certificates), trigger credential rotation for every secret that existed in plaintext on disk, audit MDM/EDR coverage gaps for developer machines, and examine whether the DLP policy covers local development directories.</p>
                     <p>These are not the same IR playbook. Executing the wrong one wastes response time and misses the actual dwell path.</p>
@@ -855,7 +640,7 @@
 
                 <p>It must be stated clearly: independent verification of the full stolen data set has not been established. The <code>.env</code> finding is based on researcher review of a sample file tree provided by the threat actor — which is itself a subset of the alleged full exfiltration. That said, the architectural implication is significant enough that it should shape the hypotheses being investigated in parallel with the repository-access investigation, not after it.</p>
 
-                <!-- SECTION 3 -->
+                
                 <h2>3. Threat Actor Credibility Calibration: How to Read "888"</h2>
 
                 <p>Security teams that have worked breach response for any length of time develop a working heuristic for forum-posted breach claims: the claim is not evidence of breach, and denial is not evidence of safety. The question is always how to calibrate confidence before committing resources to a full-scale response.</p>
@@ -870,7 +655,8 @@
 
                 <p>For security architects advising CISOs or threat intelligence teams on how to respond to unverified forum claims, the evaluation should proceed along these dimensions:</p>
 
-                <table class="status-table">
+                <div class="table-wrapper ap-stackable">
+<table class="status-table">
                     <thead>
                         <tr>
                             <th>Evaluation Dimension</th>
@@ -879,37 +665,38 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Actor track record</strong></td>
+                            <th><strong>Actor track record</strong></th>
                             <td>Repeated breach claims across multiple enterprises; 2024 Accenture claim significantly disputed — indicates scope inflation tendency</td>
                         </tr>
                         <tr>
-                            <td><strong>Quality of proof-of-possession</strong></td>
+                            <th><strong>Quality of proof-of-possession</strong></th>
                             <td>Screenshot of a repository tree structure under a redacted accenture.com domain — substantive but not conclusive. Redaction prevents verification of whether domain is production, staging, or contractor environment.</td>
                         </tr>
                         <tr>
-                            <td><strong>Target confirmation</strong></td>
+                            <th><strong>Target confirmation</strong></th>
                             <td>Accenture confirmed "awareness of this isolated matter" — partial corroboration that something happened</td>
                         </tr>
                         <tr>
-                            <td><strong>Data type specificity</strong></td>
+                            <th><strong>Data type specificity</strong></th>
                             <td>Claim is specific about data types (RSA keys, SSH keys, Azure PATs, Storage access keys, config files) — specificity adds credibility vs. generic "data stolen" claims</td>
                         </tr>
                         <tr>
-                            <td><strong>Architectural coherence</strong></td>
+                            <th><strong>Architectural coherence</strong></th>
                             <td>.env file presence in sample is architecturally coherent with workstation-level access — not a post-hoc fabrication of a data type, but a forensically meaningful artifact</td>
                         </tr>
                         <tr>
-                            <td><strong>Monetization intent</strong></td>
+                            <th><strong>Monetization intent</strong></th>
                             <td>Not immediately apparent from reporting — if data is listed for sale with pricing, escalates urgency; if posted as notoriety, may indicate partial or recycled data</td>
                         </tr>
                     </tbody>
                 </table>
+</div>
 
                 <p>The practical output of this calibration: treat the claim as warranting a structured internal investigation — not a full-scale incident declaration — until corroborating technical evidence (anomalous DevOps audit log entries, EDR telemetry on developer machines, unusual cloud storage egress) confirms or refutes the hypothesis. Reflexive escalation based on a forum post, from an actor with a documented pattern of overstatement, is operationally wasteful and can generate false urgency that exhausts response teams on phantom incidents.</p>
 
                 <p>Conversely, reflexive dismissal because the actor "overstated before" is a failure mode that real threat actors exploit deliberately. Accenture's own response sequence — initial denial, followed by partial confirmation — is a reminder that internally unknown incidents are not the same as non-incidents.</p>
 
-                <!-- SECTION 4 -->
+                
                 <h2>4. ISO 27001:2022 Annex A Control Mapping</h2>
 
                 <p>The ISO 27001:2022 framework is often discussed in breach coverage as a compliance checkbox. For practitioners who work with it as an architectural tool — not a certification artifact — the Annex A controls map directly onto the structural failures this incident exposes, depending on which exfiltration path is ultimately confirmed.</p>
@@ -951,8 +738,9 @@
                 <p>A.8.9 in a modern software development organization must extend to developer workstation configuration baselines, including: mandatory EDR coverage, mandatory disk encryption, mandatory DLP policy coverage that includes development project directories, and prohibitions on development work on non-domain-joined or non-MDM-managed devices. Without this, the secrets that developers pull into local <code>.env</code> files exist in an effectively uncontrolled configuration space.</p>
 
                 <div class="technical-box">
-                    <h3><i class="fas fa-shield-alt"></i> ISO 27001:2022 Control Gap Summary</h3>
-                    <table class="status-table" style="margin: 0.5rem 0 0;">
+                    <h3> ISO 27001:2022 Control Gap Summary</h3>
+                    <div class="table-wrapper ap-stackable">
+<table class="status-table">
                         <thead>
                             <tr>
                                 <th>Control</th>
@@ -962,30 +750,31 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>A.8.24</strong> — Cryptography / Secrets Mgmt</td>
+                                <th><strong>A.8.24</strong> — Cryptography / Secrets Mgmt</th>
                                 <td>No governance over production-scoped secrets stored in local developer .env files</td>
                                 <td>Critical</td>
                             </tr>
                             <tr>
-                                <td><strong>A.8.28</strong> — Secure Coding</td>
+                                <th><strong>A.8.28</strong> — Secure Coding</th>
                                 <td>Secrets scanning limited to CI/CD; local dev filesystem unscanned</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td><strong>A.5.10</strong> — Acceptable Use</td>
+                                <th><strong>A.5.10</strong> — Acceptable Use</th>
                                 <td>AUP does not specify credential handling standards for development environments</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td><strong>A.8.9</strong> — Configuration Mgmt</td>
+                                <th><strong>A.8.9</strong> — Configuration Mgmt</th>
                                 <td>No enforced developer workstation baseline; DLP may exclude dev directories</td>
                                 <td>High</td>
                             </tr>
                         </tbody>
                     </table>
+</div>
                 </div>
 
-                <!-- SECTION 5 -->
+                
                 <h2>5. Practical Takeaways for Defenders</h2>
 
                 <p>This section is structured for direct operational use. The recommendations below apply regardless of whether the Accenture claim is ultimately verified at full scope — the structural exposures they address exist in virtually every enterprise development environment.</p>
@@ -1011,11 +800,25 @@
                 </ul>
 
                 <div class="technical-box">
-                    <h3><i class="fas fa-code"></i> Example Detection: Sigma Rule for .env File Bulk Access</h3>
-                    <pre><code class="language-yaml">title: Bulk .env File Access by Non-Development Process
+                    <h3> Example Detection: Sigma Rule for .env File Bulk Access</h3>
+                    <div class="ap-code-block">
+    <div class="ap-code-header">
+        <div class="ap-code-meta">
+            <span class="ap-code-lang" data-lang="sigma">SIGMA</span>
+            <span class="ap-code-title">SIGMA Artifact</span>
+        </div>
+        <div class="ap-code-actions">
+            <button type="button" class="ap-code-btn" data-action="wrap-code" aria-pressed="false">Wrap</button>
+            <button type="button" class="ap-code-btn" data-action="copy-code" aria-label="Copy code block">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy</span>
+            </button>
+        </div>
+    </div>
+    <pre><code>title: Bulk .env File Access by Non-Development Process
 id: env-file-bulk-access-non-dev
 status: experimental
-description: >
+description: &gt;
     Detects bulk access to .env files in developer project directories
     by processes other than known IDE/development tooling. May indicate
     credential harvesting from compromised developer workstation.
@@ -1027,22 +830,22 @@ logsource:
     product: windows
 detection:
     selection:
-        TargetFilename|contains: '.env'
+        TargetFilename|contains: &#x27;.env&#x27;
         TargetFilename|contains:
-            - '\projects\'
-            - '\repos\'
-            - '\src\'
-            - '\workspace\'
+            - &#x27;\projects\&#x27;
+            - &#x27;\repos\&#x27;
+            - &#x27;\src\&#x27;
+            - &#x27;\workspace\&#x27;
     filter_allowed_processes:
         Image|endswith:
-            - '\code.exe'
-            - '\devenv.exe'
-            - '\node.exe'
-            - '\python.exe'
-            - '\git.exe'
-            - '\idea64.exe'
+            - &#x27;\code.exe&#x27;
+            - &#x27;\devenv.exe&#x27;
+            - &#x27;\node.exe&#x27;
+            - &#x27;\python.exe&#x27;
+            - &#x27;\git.exe&#x27;
+            - &#x27;\idea64.exe&#x27;
     timeframe: 60s
-    condition: selection and not filter_allowed_processes | count() > 5
+    condition: selection and not filter_allowed_processes | count() &gt; 5
 falsepositives:
     - Backup agents that traverse full filesystem
     - Security scanners performing on-access scans
@@ -1051,7 +854,8 @@ level: high
 tags:
     - attack.collection
     - attack.t1552.001</code></pre>
-                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;"><em>Note: This is an illustrative example detection rule engineered from the described TTP. It is not Accenture's actual tooling or a vendor-supplied rule. Requires environment-specific tuning before production deployment.</em></p>
+</div>
+                    <p><em>Note: This is an illustrative example detection rule engineered from the described TTP. It is not Accenture's actual tooling or a vendor-supplied rule. Requires environment-specific tuning before production deployment.</em></p>
                 </div>
 
                 <h3>5.3 Credential Rotation Cadence for Cloud PATs and Access Keys</h3>
@@ -1086,7 +890,7 @@ tags:
                 <p>The vendor risk implication of this incident is not that Accenture is definitely compromised — the confirmation is too partial to establish that — but that it is a forcing function for enterprise clients to audit the access surface they have extended to managed service providers. This audit is valuable independent of the incident's ultimate verification status, because most enterprises have not performed it recently.</p>
 
                 <div class="success-box">
-                    <h3><i class="fas fa-check-circle"></i> Immediate Action Checklist for Defenders</h3>
+                    <h3> Immediate Action Checklist for Defenders</h3>
                     <ul>
                         <li><strong>If you use Accenture managed services:</strong> Audit all Accenture-issued identities in your IdP, review current VPN and access path configurations, and initiate a review of any service credentials issued to or by Accenture that exist in your environment.</li>
                         <li><strong>Dev workstation DLP audit:</strong> Confirm that your DLP policy explicitly covers development project directories on developer endpoints — not just email and removable media.</li>
@@ -1097,7 +901,7 @@ tags:
                     </ul>
                 </div>
 
-                <!-- SECTION 6: Conclusion -->
+                
                 <h2>6. The Practitioner Verdict</h2>
 
                 <p>The Accenture forum claim, stripped of vendor-breach fatigue and reflexive skepticism, contains one technically precise signal that demands attention: the presence of <code>.env</code> files in the alleged stolen data set. That signal points away from a clean DevOps pipeline compromise and toward an endpoint-level exfiltration event. The distinction matters because the control portfolio required to detect, contain, and prevent endpoint exfiltration of developer-local secrets is substantially different from — and largely absent in — most enterprise security programs that have focused secrets management investment on vault systems and pipeline scanning.</p>
@@ -1110,7 +914,7 @@ tags:
 
                 <p>Fix the endpoint. Fix the secrets hygiene. Then audit the repo access controls. In that order.</p>
 
-                <!-- FAQ -->
+                
                 <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
                 <div class="faq-section">
                     <h3>Was the July 2026 Accenture breach confirmed?</h3>
@@ -1126,36 +930,294 @@ tags:
                     <p>The most directly relevant ISO 27001:2022 Annex A controls for a developer workstation secrets leak scenario are: A.8.24 (Use of Cryptography / Secrets Management — local .env files represent a secrets storage gap), A.8.28 (Secure Coding — secrets scanning must extend beyond CI/CD to local dev environments), A.5.10 (Acceptable Use — developer AUPs rarely govern local credential handling), and A.8.9 (Configuration Management — dev workstation baselines rarely include DLP or secrets hygiene enforcement).</p>
                 </div>
 
-                <div class="article-footer" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+                <div class="article-footer">
                     <p><strong>Author:</strong> <a href="/about.html#harish-g" rel="author">Harish G</a></p>
                     <p><strong>Published:</strong> July 10, 2026</p>
                     <p><strong>Last Updated:</strong> July 10, 2026</p>
                 </div>
             </div>
-        </article>
+        
+</section>
+</section>
 
-        <div class="interaction-bar">
-            <div class="like-section">
-                <button class="like-btn" id="likeBtn" onclick="toggleLike()">
-                    <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
-                </button>
-            </div>
-            <div class="action-buttons">
-                <div class="share-buttons">
-                    <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <button onclick="copyLink()" class="share-btn" title="Copy Link"><i class="fas fa-link"></i></button>
+                    <div class="ap-article-footer-bar">
+                        <div>
+                            <div class="ap-byline-label">Canonical Reference</div>
+                            <div class="ap-byline-sub">thehgtech.com/articles/accenture-breach-env-file-2026.html</div>
+                        </div>
+                        <div class="ap-share-cluster" role="group" aria-label="Share or print article">
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotX(event)" aria-label="Share on X" title="Share on X">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.sharePilotLinkedIn(event)" aria-label="Share on LinkedIn" title="Share on LinkedIn">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.copyPilotCanonicalLink(this)" aria-label="Copy canonical link" title="Copy canonical link">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </button>
+                        <button type="button" class="ap-icon-btn" onclick="window.print()" aria-label="Print article" title="Print article">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="ap-author-card">
+                        <div class="ap-author-avatar" aria-hidden="true">HG</div>
+                        <div>
+                            <div class="ap-byline-label">About the Author</div>
+                            <div class="ap-byline-val" style="margin:0.15rem 0 0.35rem;"><a href="/about.html">Harish G</a> — Independent Security Researcher</div>
+                            <p style="margin:0;font-size:0.88rem;line-height:1.6;color:var(--ap-ink-secondary);">
+                                Independent vulnerability researcher and defensive architect focusing on enterprise detection engineering, WebPKI trust infrastructure, CISA KEV triage, and practitioner field manuals at TheHGTech.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interaction Bar (Triggers Newsletter & GraphComment Discussion) -->
+                    <div class="interaction-bar" data-article-id="accenture-breach-env-file-2026">
+                        <div class="like-section">
+                            <button class="like-btn" id="likeBtn" onclick="toggleLike()">
+                                <i class="far fa-heart"></i> <span id="likeText">Like this article</span>
+                            </button>
+                        </div>
+                        <div class="action-buttons">
+                            <div class="share-buttons">
+                                <a href="#" onclick="shareTwitter(event)" class="share-btn" title="Share on Twitter" aria-label="Share on Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" onclick="shareLinkedIn(event)" class="share-btn" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <button onclick="copyLink()" class="share-btn" title="Copy Link" aria-label="Copy Link">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                            <div class="button-separator"></div>
+                            <button onclick="window.print()" class="print-btn" title="Print Article" aria-label="Print Article">
+                                <i class="fas fa-print"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="button-separator"></div>
-                <button onclick="window.print()" class="print-btn" title="Print Article"><i class="fas fa-print"></i></button>
-            </div>
-        </div>
 
-        <footer>
-            <p style="text-align: center; color: var(--text-muted); padding: 2rem;">&copy; 2026 TheHGTech. All rights reserved.</p>
-        </footer>
+                <!-- Right Sticky Technical Dossier Rail -->
+                <aside class="ap-dossier-rail" aria-label="Technical Dossier and Research Navigation">
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Research Dossier</h2>
+                        <dl class="ap-rail-kv">
+                            <div><dt>Category</dt><dd>Threat Analysis</dd></div>
+                            <div><dt>Publication</dt><dd>July 10, 2026</dd></div>
+                            <div><dt>Sections</dt><dd>1 Technical Parts</dd></div>
+                            <div><dt>Verification</dt><dd>Primary Sources</dd></div>
+                            <div><dt>TLP Classification</dt><dd>TLP:CLEAR</dd></div>
+                        </dl>
+                    </div>
+
+                    <div class="ap-rail-card">
+                        <h2 class="ap-rail-title">Live Security Tools</h2>
+                        <div class="ap-rail-links">
+                            <a href="/threat-intel.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Live Feed</span>
+                                <span class="ap-rail-link-title">Threat Intelligence Platform (4h Updates)</span>
+                            </a>
+                            <a href="/cve-tracker.html" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Advisory Feed</span>
+                                <span class="ap-rail-link-title">CISA KEV + EPSS Exploited Vulnerabilities</span>
+                            </a>
+                            <a href="/tools/grc-assessment/" class="ap-rail-link">
+                                <span class="ap-rail-link-kicker">Compliance</span>
+                                <span class="ap-rail-link-title">ISO 27001 GRC Assessment Tool</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </article>
     </main>
 
-    <script src="/interaction-bar.min.js?v=20260623"></script>
+    <!-- Contextual Related Research Section -->
+    <section class="ap-related-section" aria-label="Related Research & Field Manuals">
+        <div class="ap-related-inner">
+            <div class="ap-related-header">
+                <div class="ap-related-kicker">Peer Analysis &amp; Investigation Manuals</div>
+                <h2 class="ap-related-heading">Related Security Research</h2>
+            </div>
+            <div class="ap-related-grid">
+            <a href="/articles/beyond-klue-salesforce-saas-trust-crisis-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/beyond-klue-hero-new.jpg" alt="Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>June 25, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Beyond Klue: The Salesforce Data Theft Campaign and the Growing SaaS Trust Crisis</h3>
+                    <p class="ap-related-excerpt">A deep security architecture analysis of the Salesforce and Klue data theft campaign. Explore SaaS ecosystem risk, trust inheritance, and third-party application vulnerabilities.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>18 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/tata-electronics-ransomware-analysis-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/tata-electronics-ransomware-analysis-2026.png" alt="Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>June 23, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Tata Electronics Ransomware Attack 2026: What Happened, What We Know, and the Security Lessons Every Enterprise Should Learn</h3>
+                    <p class="ap-related-excerpt">A technical analysis of the 2026 Tata Electronics ransomware incident by World Leaks. Explore the impact on manufacturing supply chains and key security lessons.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>25 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/articles/claude-fable-ai-governance-2026.html" class="ap-related-card">
+                <div class="ap-related-thumb">
+                    <img src="/images/articles/claude-fable-ai-governance-2026.png" alt="Deep Dive: The Fable Era - Why AI Governance Replaced the Model" loading="lazy">
+                </div>
+                <div class="ap-related-content">
+                    <div class="ap-related-meta">
+                        <span class="ap-pill ap-pill-category">Threat Analysis</span>
+                        <span>June 10, 2026</span>
+                    </div>
+                    <h3 class="ap-related-title">Deep Dive: The Fable Era - Why AI Governance Replaced the Model</h3>
+                    <p class="ap-related-excerpt">Anthropic&#x27;s Claude Fable release represents a paradigm shift from capability restriction to control-based access. The real product is the control layer around the model.</p>
+                    <div class="ap-related-footer">
+                        <span>By Harish G</span>
+                        <span>20 min read &rarr;</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Quick-Jump TOC Pill -->
+    <button type="button" id="apMobileJumpPill" class="ap-mobile-jump-pill" onclick="window.jumpToMobileToc()" aria-label="Jump to Table of Contents">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        <span>Contents</span>
+    </button>
+
+    <!-- Native Light-Dismiss Technical Diagram Lightbox -->
+    <dialog id="apLightbox" class="ap-lightbox" closedby="any" aria-label="Technical diagram viewer">
+        <div class="ap-lightbox-inner">
+            <div class="ap-lightbox-bar">
+                <span id="apLightboxCaption">Technical Architecture Diagram</span>
+                <form method="dialog" style="margin:0;">
+                    <button type="submit" class="ap-lightbox-close" aria-label="Close diagram viewer">ESC · Close</button>
+                </form>
+            </div>
+            <div class="ap-lightbox-body">
+                <img id="apLightboxImg" alt="">
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Screen Reader Live Status Region -->
+    <div id="apLiveStatus" role="status" aria-live="polite" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);"></div>
+
+    <!-- Canonical Multi-Column Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                        </span>
+                    </a>
+                    <p class="footer-tagline">
+                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                    </p>
+                    <div class="footer-social-row">
+                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Homepage</a></li>
+                        <li><a href="/articles.html">Research Library</a></li>
+                        <li><a href="/cve-tracker.html">CVE Alerts</a></li>
+                        <li><a href="/guides/">Security Guides</a></li>
+                        <li><a href="/comparisons/">Tool Comparisons</a></li>
+                        <li><a href="/about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Security Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                        <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                        <li><a href="/workflows/">n8n Workflows</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Publication</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/rss.xml">RSS Feed</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/contact.html">Contact Editorial</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Recent Research</h4>
+                    <ul class="footer-links">
+                        <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
+                        <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
+                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-live-intel">
+                <div class="footer-live-intel-info">
+                    <span class="footer-live-badge">Live</span>
+                    <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+                </div>
+                <a href="/threat-intel.html" class="footer-live-link">View Live Dashboard &rarr;</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Site & Article Reader Scripts -->
+    <script src="/header-dropdown.min.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/interaction-bar.min.js?v=20260623" defer></script>
+    <script src="/js/article-editorial.js?v=1.0" defer></script>
 </body>
+
 </html>

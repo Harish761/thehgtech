@@ -482,10 +482,10 @@ function injectNewsletterScripts() {
         form._hgWired = true;
 
         const btn = form.querySelector('[type="submit"]');
-        const successDiv = document.getElementById('success-message');
-        const errorDiv = document.getElementById('error-message');
+        const successDiv = document.getElementById('hg-success') || document.getElementById('success-message');
+        const errorDiv = document.getElementById('hg-error') || document.getElementById('error-message');
         const emailInput = document.getElementById('EMAIL');
-        const errorLabel = form.querySelector('.entry__error--primary');
+        const errorLabel = document.getElementById('hg-field-err') || form.querySelector('.entry__error--primary');
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
