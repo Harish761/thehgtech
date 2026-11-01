@@ -1,0 +1,284 @@
+/* ==========================================================================
+   THEHGTECH CANONICAL FOOTER STYLESHEET
+   Supports Obsidian Dark (#090B10 / #0B0D13) and Daylight Paper Light (#F8FAFC)
+   CrowdStrike Red Accents (#DA2228) and High-Contrast Typography
+   ========================================================================== */
+
+.footer {
+    background: #0B0D13;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94A3B8;
+    padding: 4.5rem 1.5rem 2.5rem;
+    position: relative;
+    z-index: 10;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+[data-theme="light"] .footer,
+body.light-mode .footer {
+    background: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    color: #475569;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr) 1fr;
+    gap: 2.75rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+}
+
+.footer-brand-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.footer-brand-logo .logo-dark {
+    display: block;
+}
+
+.footer-brand-logo .logo-light {
+    display: none;
+}
+
+[data-theme="light"] .footer-brand-logo .logo-dark,
+body.light-mode .footer-brand-logo .logo-dark {
+    display: none;
+}
+
+[data-theme="light"] .footer-brand-logo .logo-light,
+body.light-mode .footer-brand-logo .logo-light {
+    display: block;
+}
+
+.footer-brand-logo .logo-text {
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.footer-brand-logo .logo-text-base {
+    color: #FFFFFF;
+}
+
+[data-theme="light"] .footer-brand-logo .logo-text-base,
+body.light-mode .footer-brand-logo .logo-text-base {
+    color: #0F172A;
+}
+
+.footer-brand-logo .logo-text-red {
+    color: #DA2228;
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: #64748B;
+    margin: 0;
+    max-width: 320px;
+}
+
+[data-theme="light"] .footer-tagline,
+body.light-mode .footer-tagline {
+    color: #64748B;
+}
+
+.footer-social-row {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.footer-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-social-icon svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+}
+
+[data-theme="light"] .footer-social-icon,
+body.light-mode .footer-social-icon {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #475569;
+}
+
+.footer-social-icon:hover {
+    color: #DA2228;
+    border-color: #DA2228;
+    transform: translateY(-2px);
+}
+
+.footer-col h4 {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #F8FAFC;
+    margin: 0 0 1.25rem 0;
+}
+
+[data-theme="light"] .footer-col h4,
+body.light-mode .footer-col h4 {
+    color: #0F172A !important;
+}
+
+.footer-links {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.footer-links li {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.footer-links a {
+    color: #94A3B8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.84rem;
+    display: inline-block;
+}
+
+[data-theme="light"] .footer-links a,
+body.light-mode .footer-links a {
+    color: #475569;
+}
+
+.footer-links a:hover {
+    color: #DA2228 !important;
+}
+
+.footer-live-intel {
+    margin-top: 2rem;
+    padding: 1.15rem 1.35rem;
+    border-radius: 8px;
+    background: rgba(218, 34, 40, 0.04);
+    border: 1px solid rgba(218, 34, 40, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-live-intel-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    background: #DA2228;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+}
+
+.footer-live-badge .glass-pulse-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    display: inline-block;
+}
+
+.footer-live-text {
+    font-size: 0.82rem;
+    color: #94A3B8;
+}
+
+[data-theme="light"] .footer-live-text,
+body.light-mode .footer-live-text {
+    color: #475569;
+}
+
+.footer-live-link {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #DA2228;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-live-link:hover {
+    color: #FF4D4D;
+    transform: translateX(3px);
+}
+
+.footer-bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    text-align: center;
+    font-size: 0.76rem;
+    color: #64748B;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+[data-theme="light"] .footer-bottom,
+body.light-mode .footer-bottom {
+    border-top: 1px solid #E2E8F0;
+    color: #64748B;
+}

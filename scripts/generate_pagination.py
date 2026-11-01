@@ -12,6 +12,8 @@ repo_root = script_dir.parent if script_dir.name == 'scripts' else Path.cwd()
 
 articles_json_path = repo_root / 'ioc-data' / 'articles.json'
 articles_html_path = repo_root / 'articles.html'
+article_list_html_path = repo_root / 'article-list.html'
+articles_list_html_path = repo_root / 'articles-list.html'
 index_html_path = repo_root / 'index.html'
 guides_json_path = repo_root / 'guides' / 'guides.json'
 guides_html_path = repo_root / 'guides' / 'index.html'
@@ -132,7 +134,7 @@ def generate_article_html(article):
     </article>
     """
 
-with open(articles_html_path, 'r', encoding='utf-8') as f:
+with open(article_list_html_path, 'r', encoding='utf-8') as f:
     raw_articles_html = f.read()
 
 clean_template = clean_articles_template(raw_articles_html)
@@ -155,11 +157,11 @@ for page in range(1, total_pages + 1):
         
     pagination_html = '<div class="pagination" style="display:flex; justify-content:center; gap:10px; margin-top:2rem; width:100%;">'
     if page > 1:
-        prev_url = f"/articles/page/{page-1}/" if page > 2 else "/articles.html"
+        prev_url = f"/articles/page/{page-1}/" if page > 2 else "/article-list.html"
         pagination_html += f'<a href="{prev_url}" style="padding:10px 20px; background:var(--glass-border); border-radius:5px; color:#fff; text-decoration:none;">Previous</a>'
     
     for p in range(max(1, page-2), min(total_pages + 1, page+3)):
-        url = f"/articles/page/{p}/" if p > 1 else "/articles.html"
+        url = f"/articles/page/{p}/" if p > 1 else "/article-list.html"
         active = 'background:var(--accent-cyan); color:#000;' if p == page else 'background:var(--glass-border); color:#fff;'
         pagination_html += f'<a href="{url}" style="padding:10px 15px; border-radius:5px; text-decoration:none; {active}">{p}</a>'
         
@@ -173,10 +175,10 @@ for page in range(1, total_pages + 1):
     
     # Metadata adjustments for paginated pages
     if page == 1:
-        # Page 1 canonical points to articles.html
+        # Page 1 canonical points to article-list.html
         page_content = re.sub(
             r'<link\s+rel="canonical"\s+href="[^"]*"[^>]*>',
-            '<link rel="canonical" href="https://thehgtech.com/articles.html">',
+            '<link rel="canonical" href="https://thehgtech.com/article-list.html">',
             page_content
         )
     else:
@@ -224,13 +226,16 @@ for entry in pages_dir.iterdir():
             shutil.rmtree(entry)
             print(f"Removed obsolete page directory: {entry}")
 
-# 2. Inject static fallback into articles.html
+# 2. Inject static fallback into article-list.html and articles-list.html
 articles_html_block = "".join(generate_article_html(a) for a in standalone_articles[:ITEMS_PER_PAGE])
 articles_fallback = f"\n{MARKER_ARTICLES_START}\n<noscript>\n<div style='display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:2rem;'>{articles_html_block}</div><div style='text-align:center; margin-top:2rem;'><a href='/articles/page/2/' style='color:#fff;'>Next Page</a></div>\n</noscript>\n{MARKER_ARTICLES_END}"
 
 final_articles_html = clean_template.replace(loading_html_articles, loading_html_articles + articles_fallback)
 
-with open(articles_html_path, 'w', encoding='utf-8') as f:
+with open(article_list_html_path, 'w', encoding='utf-8') as f:
+    f.write(final_articles_html)
+
+with open(articles_list_html_path, 'w', encoding='utf-8') as f:
     f.write(final_articles_html)
 
 # 3. Inject static fallback into index.html

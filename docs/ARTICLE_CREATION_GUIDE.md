@@ -226,7 +226,7 @@ Whenever metadata in `ioc-data/articles.json` is modified or a new article is ad
 python3 scripts/generate_pagination.py
 ```
 
-This updates the Research Library grids (`articles.html`), static fallback pagination directories (`articles/page/*/index.html`), and RSS feeds.
+This updates the Research Library grids (`article-list.html` and `articles-list.html`), static fallback pagination directories (`articles/page/*/index.html`), and RSS feeds.
 
 ---
 

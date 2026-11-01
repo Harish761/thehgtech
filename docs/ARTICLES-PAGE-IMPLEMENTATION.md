@@ -1,54 +1,55 @@
-# TheHGTech Research Library & Editorial Architecture Implementation
+# TheHGTech Research & Publishing Architecture Implementation
 
 ## Overview
 
-TheHGTech publishing architecture has been upgraded to a unified, production-grade cybersecurity research library and editorial monograph reading system.
+TheHGTech article and publishing architecture follows a clear 3-tier user discovery and reading workflow:
 
-### Key Architectural Changes
-
-1. **Homepage (`index.html`)**:
-   - Modernized editorial hero with live threat research spotlight.
-   - Glass rail featuring the top 10 recent research investigations.
-   - Direct CTAs into the Research Library (`/articles.html`) and Security Guides (`/guides/`).
-   - Clean, light/dark responsive theme switching (Obsidian Dark `#090B10` & Daylight Paper Light `#F8FAFC`).
-
-2. **Research Library (`articles.html`)**:
-   - Central discovery hub for 128+ technical monographs, investigations, and threat analyses.
-   - Live research statistics dynamically calculated from `ioc-data/articles.json` (total monographs, research topics, latest publication date).
-   - Fast client-side faceted filtering: instant keyword search, topic tag selection, and sort ordering (newest, oldest, title).
-   - Pre-rendered static HTML fallback grid for search crawlers (Googlebot, Bingbot) and JavaScript-disabled browsers.
-   - Direct deep-linking to dedicated standalone articles in `articles/{slug}.html`.
-
-3. **Unified Monograph Format (`articles/*.html`)**:
-   - Monograph layout governed by `/css/article-editorial.css` and `/js/article-editorial.js`.
-   - **3-Zone Monograph Grid**:
-     - *Left Rail*: Sticky Table of Contents auto-mapped to article sections (`#sec-1`, `#sec-2`), with live scroll tracking and a dynamic 3-stop font size scaler (`A-`, `A`, `A+`).
-     - *Center Editorial Stream*: High-contrast typographic hierarchy (Crimson Pro & JetBrains Mono), responsive `@container` stacked technical tables (`.table-wrapper.ap-stackable`), styled code blocks with one-click copy buttons, MITRE ATT&CK callouts, and key takeaway boxes.
-     - *Right Rail*: Researcher credentials card and reading progress indicator.
-   - **Discussion & Newsletter (`.interaction-bar`)**:
-     - Embedded Brevo newsletter subscription ("The Daily Intel").
-     - GraphComment integration for threat research peer discussions.
-     - Social sharing (Twitter, LinkedIn, Copy Link) and clean print formatting.
-   - **Related Intelligence Feed**:
-     - Automatically suggests 3 related monographs based on shared category and keyword tags from `ioc-data/articles.json`.
+```
+[ Root Homepage: https://thehgtech.com/ ]
+   │
+   ▼ (Click "Articles" in header)
+[ Articles Editorial Portal: /articles.html ]
+   │   - Featured story with dynamic 10-story rail hover switcher
+   │   - "Go beyond the headlines." call to action
+   │   - Research standards & methodology charter
+   │   - Fully styled canonical 5-column footer
+   │
+   ├─► (Click "Explore All Articles" or "Browse All Articles (197+)")
+   │     ▼
+   │   [ Full Research Library / Article Archive: /article-list.html ]
+   │      - Live statistics (197 analyses, 73 research domains, latest date)
+   │      - Instant client-side search across all articles
+   │      - Dynamic topic & category filter pills
+   │      - Responsive article grid with static SEO fallbacks (/articles/page/*/)
+   │
+   └─► (Click "Read Full Analysis" or any story card)
+         ▼
+       [ Monograph Technical Monograph: /articles/{slug}.html ]
+          - 3-zone reading workspace (Sticky TOC + 70ch prose + author credentials)
+          - Syntax-highlighted code blocks with copy buttons
+          - Stackable responsive tables (.table-wrapper.ap-stackable)
+          - Interaction bar (.interaction-bar) with Daily Intel newsletter & GraphComment
+```
 
 ---
 
 ## Technical Specifications
 
-| Asset | Location | Description |
+| Asset | URL / Path | Description |
 |---|---|---|
-| Central Dataset | `ioc-data/articles.json` | Master JSON datastore containing metadata for all 128+ articles. |
-| Editorial Stylesheet | `css/article-editorial.css` | 2,224-line modern CSS system implementing the monograph layout, responsive tables, light/dark themes, and print rules. |
-| Editorial Script | `js/article-editorial.js` | TOC tracking, font sizing, code block copy, and related article injection. |
-| Interaction Bar | `interaction-bar.min.js` | Newsletter subscription wiring, GraphComment initialization, and social share handling. |
-| Pagination Engine | `scripts/generate_pagination.py` | Python script that regenerates static SEO fallback pages (`articles/page/*/index.html`) and updates feed indices. |
-| Migration Script | `scripts/migrate_all_articles.py` | Automated migration pipeline that converted all 128 legacy articles into the unified monograph format. |
+| Root Homepage | `/index.html` (`/`) | Live Cyber Threat Intelligence Platform, SOC Analyst Tools, live IOCs, and ransomware tracking. |
+| Articles Portal | `/articles.html` | The primary entry point for articles, featuring the dynamic 10-story research rail, featured hero, and editorial CTA. |
+| Research Library | `/article-list.html` | Complete searchable archive of all 197+ articles, category filters, and static pagination. |
+| Monograph System | `/css/article-editorial.css`<br>`/js/article-editorial.js` | 3-zone monograph grid, responsive code blocks, and reading progress. |
+| Canonical Footer | `/css/footer.css`<br>`/footer.css` | Universal 5-column responsive footer supporting Obsidian Dark (`#0B0D13`) and Daylight Paper (`#F8FAFC`). |
+| Central Datastore | `ioc-data/articles.json` | Master JSON datastore containing metadata for all published articles. |
+| Pagination Engine | `scripts/generate_pagination.py` | Automatically builds static HTML fallback pages (`articles/page/*/index.html`) and syncs `article-list.html`. |
 
 ---
 
 ## Verification & Quality Assurance
 
-- **Zero Layout Shifts**: Tested across 1440px desktop, 768px tablet, and 375px mobile viewports.
-- **Theme Fidelity**: Checked contrast ratios in both Obsidian Dark and Daylight Paper modes according to WCAG AA guidelines.
-- **Email & Newsletter Security**: Brevo API endpoints and validation error containers (`#hg-success`, `#hg-error`, `#hg-field-err`) strictly verified in headless browsers with zero runtime exceptions.
+- **Zero Layout Shifts**: Tested across 1440px desktop and 375px mobile viewports.
+- **Dynamic Switcher**: Interactive hovering over rail items smoothly updates the hero backdrop, title, and deck.
+- **Canonical Footer**: All bullet lists removed, grid responsive columns verified, and high contrast maintained across both dark and light modes.
+- **Automated Verification**: End-to-end user journey test executed via headless Chrome CDP with 100% assertions passing.
