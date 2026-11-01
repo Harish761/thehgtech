@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-10-31T16:54:07.672701+00:00",
-  "last_updated_formatted": "Oct 31, 2026 16:54 UTC",
+  "last_updated": "2026-11-01T04:42:44.520711+00:00",
+  "last_updated_formatted": "Nov 01, 2026 04:42 UTC",
   "period": "Last 7 days",
   "provenance": "Aggregated dark web extortion notices via Ransomware.live telemetry",
   "verification_note": "Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.",
-  "total_groups": 35,
+  "total_groups": 37,
   "total_victims": 200,
-  "disclosures_24h": 101,
-  "disclosures_today": 79,
+  "disclosures_24h": 84,
+  "disclosures_today": 2,
   "top_threat_actor": "Thegentlemen",
   "top_target_sector": "Not Found",
-  "top_target_sector_sub": "19 disclosures (50% unclassified)",
+  "top_target_sector_sub": "18 disclosures (50% unclassified)",
   "sector_coverage": {
     "total_records": 200,
     "classified_count": 101,
@@ -835,330 +835,55 @@
         0,
         0,
         0,
-        0,
-        50
+        50,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T07:18:47+00:00",
       "last_seen": "2026-10-31T07:35:53+00:00"
     },
     {
-      "name": "Booba Project",
+      "name": "Qilin",
       "count": 17,
       "victims": [
         {
-          "id": "8aa9d2738a17",
-          "group_name": "Booba project",
-          "victim_name": "LifeFone",
-          "discovered": "2026-10-29T13:23:18+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/TGlmZUZvbmVAQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Healthcare",
-          "domain": "www.lifefone.com",
-          "status": null,
-          "description_snippet": "Medical Equipment Manufacturing Stolen data: Less than 1 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "b24b532ff0b2",
-          "group_name": "Booba project",
-          "victim_name": "National Association of Credit Management",
-          "discovered": "2026-10-29T13:22:58+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/TmF0aW9uYWwgQXNzb2NpYXRpb24gb2YgQ3JlZGl0IE1hbmFnZW1lbnRAQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Financial Services",
-          "domain": "www.nacm.org",
-          "status": null,
-          "description_snippet": "Financial Services Stolen data: 38 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "cd4ffa7d2bcf",
-          "group_name": "Booba project",
-          "victim_name": "California School Boards Association",
-          "discovered": "2026-10-29T13:22:37+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/Q2FsaWZvcm5pYSBTY2hvb2wgQm9hcmRzIEFzc29jaWF0aW9uQEJvb2JhIFByb2plY3Q",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Education",
-          "domain": "www.csba.org",
-          "status": null,
-          "description_snippet": "Education Management Stolen data: 80 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "6181213ae34d",
-          "group_name": "Booba project",
-          "victim_name": "South Weber City",
-          "discovered": "2026-10-29T13:22:16+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/U291dGggV2ViZXIgQ2l0eUBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Government & Defense",
-          "domain": "www.southwebercity.gov",
-          "status": null,
-          "description_snippet": "Government Administration Stolen data: 295 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "b8bf44616d83",
-          "group_name": "Booba project",
-          "victim_name": "Programs for Parents, Inc.",
-          "discovered": "2026-10-29T13:21:55+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/UHJvZ3JhbXMgZm9yIFBhcmVudHMsIEluYy5AQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Education",
-          "domain": "www.programsforparents.org",
-          "status": null,
-          "description_snippet": "Non-profit Organizations Stolen data: 95 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "2595d9659a0f",
-          "group_name": "Booba project",
-          "victim_name": "Circleville Police Department",
-          "discovered": "2026-10-29T13:21:34+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/Q2lyY2xldmlsbGUgUG9saWNlIERlcGFydG1lbnRAQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Government & Defense",
-          "domain": "www.circlevillepolice.com",
-          "status": null,
-          "description_snippet": "Government Administration Stolen data: 15 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "e0ccb702f233",
-          "group_name": "Booba project",
-          "victim_name": "Terrebonne Parish Government",
-          "discovered": "2026-10-29T13:21:13+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/VGVycmVib25uZSBQYXJpc2ggR292ZXJubWVudEBCb29iYSBQcm9qZWN0",
+          "id": "eeeeeab34eda",
+          "group_name": "Qilin",
+          "victim_name": "Danser",
+          "discovered": "2026-11-01T00:39:08+00:00",
+          "discovered_date": "2026-11-01",
+          "post_url": "https://www.ransomware.live/id/RGFuc2VyQHFpbGlu",
           "country": "United States",
           "country_code": "US",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Government Relations Services Stolen data: 105 GB.",
+          "description_snippet": "N/A",
           "source": "ransomware.live/rss"
         },
         {
-          "id": "36f71bc50bd5",
-          "group_name": "Booba project",
-          "victim_name": "RCOA- Regent Christian Online Academy",
-          "discovered": "2026-10-27T13:52:40+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/UkNPQS0gUmVnZW50IENocmlzdGlhbiBPbmxpbmUgQWNhZGVteUBCb29iYSBQcm9qZWN0",
-          "country": "Canada",
-          "country_code": "CA",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 1 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "419d17625adb",
-          "group_name": "Booba project",
-          "victim_name": "Kerckstede vzw",
-          "discovered": "2026-10-27T13:52:20+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/S2VyY2tzdGVkZSB2endAQm9vYmEgUHJvamVjdA",
-          "country": "Belgium",
-          "country_code": "BE",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 10 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "a7a0ee8d6227",
-          "group_name": "Booba project",
-          "victim_name": "BASS Medical Group",
-          "discovered": "2026-10-27T13:51:59+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/QkFTUyBNZWRpY2FsIEdyb3VwQEJvb2JhIFByb2plY3Q",
+          "id": "d40f6947560d",
+          "group_name": "Qilin",
+          "victim_name": "Community Medical Center, Falls City Nebraska",
+          "discovered": "2026-10-31T17:23:59+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/Q29tbXVuaXR5IE1lZGljYWwgQ2VudGVyLCBGYWxscyBDaXR5IE5lYnJhc2thQHFpbGlu",
           "country": "United States",
           "country_code": "US",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Medical Practices Stolen data: 100 GB.",
+          "description_snippet": "N/A",
           "source": "ransomware.live/rss"
         },
-        {
-          "id": "46b40a8b76d4",
-          "group_name": "Booba project",
-          "victim_name": "Hudson River Museum",
-          "discovered": "2026-10-27T13:51:38+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/SHVkc29uIFJpdmVyIE11c2V1bUBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Museums, Historical Sites, and Zoos Stolen data: 115 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "40b68b07726f",
-          "group_name": "Booba project",
-          "victim_name": "Horizon Eye Specialists & LASIK Center",
-          "discovered": "2026-10-27T13:51:17+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/SG9yaXpvbiBFeWUgU3BlY2lhbGlzdHMgJiBMQVNJSyBDZW50ZXJAQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Medical Practices Stolen data: 121 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "00b590e9786b",
-          "group_name": "Booba project",
-          "victim_name": "Aesthetic Specialty Centre",
-          "discovered": "2026-10-27T12:51:50+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/QWVzdGhldGljIFNwZWNpYWx0eSBDZW50cmVAQm9vYmEgUHJvamVjdA",
-          "country": "Pakistan",
-          "country_code": "PK",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Medical Practices Stolen data: 22GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "db0526d28c25",
-          "group_name": "Booba project",
-          "victim_name": "City of Big Spring",
-          "discovered": "2026-10-27T12:51:29+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/Q2l0eSBvZiBCaWcgU3ByaW5nQEJvb2JhIFByb2plY3Q",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Government Administration Stolen data: 151 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "428e9abfa62a",
-          "group_name": "Booba project",
-          "victim_name": "KING FAMILY MEDICAL",
-          "discovered": "2026-10-27T12:51:09+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/S0lORyBGQU1JTFkgTUVESUNBTEBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 67 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "8b01e0771357",
-          "group_name": "Booba project",
-          "victim_name": "Charter Township of Commerce",
-          "discovered": "2026-10-27T12:50:48+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/Q2hhcnRlciBUb3duc2hpcCBvZiBDb21tZXJjZUBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Government Administration Stolen data: 155 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "7384c6714935",
-          "group_name": "Booba project",
-          "victim_name": "Regent Christian Online Academy",
-          "discovered": "2026-10-27T12:50:26+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/UmVnZW50IENocmlzdGlhbiBPbmxpbmUgQWNhZGVteUBCb29iYSBQcm9qZWN0",
-          "country": "Canada",
-          "country_code": "CA",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 26 GB.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Financial Services",
-        "Government & Defense",
-        "Healthcare"
-      ],
-      "countries": [
-        "Belgium",
-        "Canada",
-        "Pakistan",
-        "United States"
-      ],
-      "country_codes": [
-        "BE",
-        "CA",
-        "PK",
-        "US"
-      ],
-      "trend": "down",
-      "trend_label": "Decelerating",
-      "recent_velocity": {
-        "last_3_days": 7,
-        "prior_3_days": 10
-      },
-      "daily_counts": [
-        0,
-        0,
-        10,
-        0,
-        7,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-10-25",
-        "2026-10-26",
-        "2026-10-27",
-        "2026-10-28",
-        "2026-10-29",
-        "2026-10-30",
-        "2026-10-31"
-      ],
-      "first_seen": "2026-10-27T12:50:26+00:00",
-      "last_seen": "2026-10-29T13:23:18+00:00"
-    },
-    {
-      "name": "Qilin",
-      "count": 16,
-      "victims": [
         {
           "id": "89ed89ddc768",
           "group_name": "Qilin",
@@ -1383,21 +1108,6 @@
           "status": null,
           "description_snippet": "N/A",
           "source": "ransomware.live/rss"
-        },
-        {
-          "id": "9659b6806a85",
-          "group_name": "Qilin",
-          "victim_name": "NuVista Federal Credit Union",
-          "discovered": "2026-10-27T10:38:24+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/TnVWaXN0YSBGZWRlcmFsIENyZWRpdCBVbmlvbkBxaWxpbg",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
         }
       ],
       "industries": [
@@ -1436,29 +1146,274 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 15,
-        "prior_3_days": 1
+        "last_3_days": 17,
+        "prior_3_days": 0
       },
       "daily_counts": [
         0,
         0,
-        1,
         0,
         4,
         11,
-        0
+        1,
+        1
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
-      "first_seen": "2026-10-27T10:38:24+00:00",
-      "last_seen": "2026-10-30T20:59:51+00:00"
+      "first_seen": "2026-10-29T15:09:33+00:00",
+      "last_seen": "2026-11-01T00:39:08+00:00"
+    },
+    {
+      "name": "Booba Project",
+      "count": 13,
+      "victims": [
+        {
+          "id": "8aa9d2738a17",
+          "group_name": "Booba project",
+          "victim_name": "LifeFone",
+          "discovered": "2026-10-29T13:23:18+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/TGlmZUZvbmVAQm9vYmEgUHJvamVjdA",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Healthcare",
+          "domain": "www.lifefone.com",
+          "status": null,
+          "description_snippet": "Medical Equipment Manufacturing Stolen data: Less than 1 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "b24b532ff0b2",
+          "group_name": "Booba project",
+          "victim_name": "National Association of Credit Management",
+          "discovered": "2026-10-29T13:22:58+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/TmF0aW9uYWwgQXNzb2NpYXRpb24gb2YgQ3JlZGl0IE1hbmFnZW1lbnRAQm9vYmEgUHJvamVjdA",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Financial Services",
+          "domain": "www.nacm.org",
+          "status": null,
+          "description_snippet": "Financial Services Stolen data: 38 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "cd4ffa7d2bcf",
+          "group_name": "Booba project",
+          "victim_name": "California School Boards Association",
+          "discovered": "2026-10-29T13:22:37+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/Q2FsaWZvcm5pYSBTY2hvb2wgQm9hcmRzIEFzc29jaWF0aW9uQEJvb2JhIFByb2plY3Q",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Education",
+          "domain": "www.csba.org",
+          "status": null,
+          "description_snippet": "Education Management Stolen data: 80 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "6181213ae34d",
+          "group_name": "Booba project",
+          "victim_name": "South Weber City",
+          "discovered": "2026-10-29T13:22:16+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/U291dGggV2ViZXIgQ2l0eUBCb29iYSBQcm9qZWN0",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Government & Defense",
+          "domain": "www.southwebercity.gov",
+          "status": null,
+          "description_snippet": "Government Administration Stolen data: 295 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "b8bf44616d83",
+          "group_name": "Booba project",
+          "victim_name": "Programs for Parents, Inc.",
+          "discovered": "2026-10-29T13:21:55+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/UHJvZ3JhbXMgZm9yIFBhcmVudHMsIEluYy5AQm9vYmEgUHJvamVjdA",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Education",
+          "domain": "www.programsforparents.org",
+          "status": null,
+          "description_snippet": "Non-profit Organizations Stolen data: 95 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "2595d9659a0f",
+          "group_name": "Booba project",
+          "victim_name": "Circleville Police Department",
+          "discovered": "2026-10-29T13:21:34+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/Q2lyY2xldmlsbGUgUG9saWNlIERlcGFydG1lbnRAQm9vYmEgUHJvamVjdA",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Government & Defense",
+          "domain": "www.circlevillepolice.com",
+          "status": null,
+          "description_snippet": "Government Administration Stolen data: 15 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "e0ccb702f233",
+          "group_name": "Booba project",
+          "victim_name": "Terrebonne Parish Government",
+          "discovered": "2026-10-29T13:21:13+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/VGVycmVib25uZSBQYXJpc2ggR292ZXJubWVudEBCb29iYSBQcm9qZWN0",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Government Relations Services Stolen data: 105 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "36f71bc50bd5",
+          "group_name": "Booba project",
+          "victim_name": "RCOA- Regent Christian Online Academy",
+          "discovered": "2026-10-27T13:52:40+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/UkNPQS0gUmVnZW50IENocmlzdGlhbiBPbmxpbmUgQWNhZGVteUBCb29iYSBQcm9qZWN0",
+          "country": "Canada",
+          "country_code": "CA",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Hospitals and Health Care Stolen data: 1 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "419d17625adb",
+          "group_name": "Booba project",
+          "victim_name": "Kerckstede vzw",
+          "discovered": "2026-10-27T13:52:20+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/S2VyY2tzdGVkZSB2endAQm9vYmEgUHJvamVjdA",
+          "country": "Belgium",
+          "country_code": "BE",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Hospitals and Health Care Stolen data: 10 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "a7a0ee8d6227",
+          "group_name": "Booba project",
+          "victim_name": "BASS Medical Group",
+          "discovered": "2026-10-27T13:51:59+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/QkFTUyBNZWRpY2FsIEdyb3VwQEJvb2JhIFByb2plY3Q",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Medical Practices Stolen data: 100 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "46b40a8b76d4",
+          "group_name": "Booba project",
+          "victim_name": "Hudson River Museum",
+          "discovered": "2026-10-27T13:51:38+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/SHVkc29uIFJpdmVyIE11c2V1bUBCb29iYSBQcm9qZWN0",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Museums, Historical Sites, and Zoos Stolen data: 115 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "40b68b07726f",
+          "group_name": "Booba project",
+          "victim_name": "Horizon Eye Specialists & LASIK Center",
+          "discovered": "2026-10-27T13:51:17+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/SG9yaXpvbiBFeWUgU3BlY2lhbGlzdHMgJiBMQVNJSyBDZW50ZXJAQm9vYmEgUHJvamVjdA",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Medical Practices Stolen data: 121 GB.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "00b590e9786b",
+          "group_name": "Booba project",
+          "victim_name": "Aesthetic Specialty Centre",
+          "discovered": "2026-10-27T12:51:50+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/QWVzdGhldGljIFNwZWNpYWx0eSBDZW50cmVAQm9vYmEgUHJvamVjdA",
+          "country": "Pakistan",
+          "country_code": "PK",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Medical Practices Stolen data: 22GB.",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Financial Services",
+        "Government & Defense",
+        "Healthcare"
+      ],
+      "countries": [
+        "Belgium",
+        "Canada",
+        "Pakistan",
+        "United States"
+      ],
+      "country_codes": [
+        "BE",
+        "CA",
+        "PK",
+        "US"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 7,
+        "prior_3_days": 6
+      },
+      "daily_counts": [
+        0,
+        6,
+        0,
+        7,
+        0,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-27T12:51:50+00:00",
+      "last_seen": "2026-10-29T13:23:18+00:00"
     },
     {
       "name": "Silentransomgroup",
@@ -1593,7 +1548,7 @@
           "post_url": "https://www.ransomware.live/id/VC4uLiBFLi4uQFNpbGVudFJhbnNvbUdyb3Vw",
           "country": null,
           "country_code": null,
-          "sector": "Not Found",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -1608,7 +1563,7 @@
           "post_url": "https://www.ransomware.live/id/Uy4uLiBILi4uQFNpbGVudFJhbnNvbUdyb3Vw",
           "country": null,
           "country_code": null,
-          "sector": "Not Found",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -1623,7 +1578,7 @@
           "post_url": "https://www.ransomware.live/id/TC4uLkBTaWxlbnRSYW5zb21Hcm91cA",
           "country": null,
           "country_code": null,
-          "sector": "Not Found",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -1649,20 +1604,20 @@
       "daily_counts": [
         0,
         0,
-        0,
         5,
         0,
         6,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T17:34:09+00:00",
       "last_seen": "2026-10-30T23:39:46+00:00"
@@ -1846,20 +1801,20 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
         0,
         9,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T20:53:55+00:00",
       "last_seen": "2026-10-30T22:02:08+00:00"
@@ -2044,17 +1999,17 @@
         0,
         0,
         0,
-        0,
-        9
+        9,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T07:59:35+00:00",
       "last_seen": "2026-10-31T08:04:05+00:00"
@@ -2147,8 +2102,8 @@
           "post_url": "https://www.ransomware.live/id/Tm9lbGtlciBhbmQgSHVsbEByaHlzaWRh",
           "country": "United States",
           "country_code": "US",
-          "sector": "Professional Services",
-          "domain": "noelkerhull.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Noelker and Hull NHA-FULL � US ARCHITECTURE FIRM (est. 1971) - HEALTHCARE / SENIOR-LIVING DESIGN - COMPLETE INTERNAL FILE-SERVER - FRESH TO 2026No credentials in this lot (excluded by decision). Focus",
           "source": "ransomware.live/rss"
@@ -2172,8 +2127,7 @@
       "industries": [
         "Education",
         "Financial Services",
-        "Manufacturing",
-        "Professional Services"
+        "Manufacturing"
       ],
       "countries": [
         "Belgium",
@@ -2195,21 +2149,21 @@
       },
       "daily_counts": [
         0,
-        0,
         1,
         1,
         2,
         2,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-27T22:25:47+00:00",
       "last_seen": "2026-10-31T12:35:39+00:00"
@@ -2347,21 +2301,21 @@
       },
       "daily_counts": [
         0,
-        0,
         1,
         3,
         1,
         1,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-27T15:06:27+00:00",
       "last_seen": "2026-10-31T10:30:39+00:00"
@@ -2493,24 +2447,161 @@
       },
       "daily_counts": [
         0,
-        0,
         7,
+        0,
         0,
         0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-27T17:29:53+00:00",
       "last_seen": "2026-10-27T19:51:56+00:00"
+    },
+    {
+      "name": "Emperador",
+      "count": 6,
+      "victims": [
+        {
+          "id": "2aeca0851eca",
+          "group_name": "Emperador",
+          "victim_name": "Punta Shopping",
+          "discovered": "2026-10-31T18:51:54+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y",
+          "country": "Brazil",
+          "country_code": "BR",
+          "sector": "Retail & E-Commerce",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Commercial organization in Uruguay, located in the city of Punta del Este\nField of activity: shopping center management, rental of commercial space, retail trade and services.\nThe archive contains the",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "d12b6c14ffcc",
+          "group_name": "Emperador",
+          "victim_name": "Holcim",
+          "discovered": "2026-10-31T09:53:09+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/SG9sY2ltQGVtcGVyYWRvcg",
+          "country": "Switzerland",
+          "country_code": "CH",
+          "sector": "Manufacturing",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Holcim is a global building-materials and building-solutions company founded in Switzerland in 1912. It provides cement, aggregates, ready-mix concrete and high-value building solutions for infrastruc",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "bfbb460ccdc7",
+          "group_name": "Emperador",
+          "victim_name": "Studio Stelitano e Associati",
+          "discovered": "2026-10-30T23:27:04+00:00",
+          "discovered_date": "2026-10-30",
+          "post_url": "https://www.ransomware.live/id/U3R1ZGlvIFN0ZWxpdGFubyBlIEFzc29jaWF0aUBlbXBlcmFkb3I",
+          "country": "Italy",
+          "country_code": "IT",
+          "sector": "Professional Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Studio Stelitano e Associati\nItalian professional consulting firm based in Bologna (Italy)\nLabor Law and HR Administration\nThe archive contains the most important personal data and customer data [Sect",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "735d11c54c8b",
+          "group_name": "Emperador",
+          "victim_name": "LA PROFUMERIA SRL",
+          "discovered": "2026-10-29T16:53:34+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/TEEgUFJPRlVNRVJJQSBTUkxAZW1wZXJhZG9y",
+          "country": "Italy",
+          "country_code": "IT",
+          "sector": "Retail & E-Commerce",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Italian company working with perfumes and cosmetics.\nArchived personal and corporate data of employees and customers. [Sector: Manufacturing]",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "42f0a972ec50",
+          "group_name": "Emperador",
+          "victim_name": "MAA Group Consulting Engineers",
+          "discovered": "2026-10-29T10:21:43+00:00",
+          "discovered_date": "2026-10-29",
+          "post_url": "https://www.ransomware.live/id/TUFBIEdyb3VwIENvbnN1bHRpbmcgRW5naW5lZXJzQGVtcGVyYWRvcg",
+          "country": null,
+          "country_code": null,
+          "sector": "Professional Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "MAA Group Consulting Engineers is a leading regional engineering and consulting service provider founded in 1975, with over 1,000 professionals operating across East and Southeast Asia. The group prov",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "208a1601eb36",
+          "group_name": "Emperador",
+          "victim_name": "TWICE SRL",
+          "discovered": "2026-10-27T21:22:05+00:00",
+          "discovered_date": "2026-10-27",
+          "post_url": "https://www.ransomware.live/id/VFdJQ0UgU1JMQGVtcGVyYWRvcg",
+          "country": null,
+          "country_code": null,
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Сompany from the Republic of San Marino,\nassociated with the production and sale of fashion clothing and accessories.\nArchived personal and corporate data of employees and customers. [Sector: Manufact",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Manufacturing",
+        "Professional Services",
+        "Retail & E-Commerce"
+      ],
+      "countries": [
+        "Brazil",
+        "Italy",
+        "Switzerland"
+      ],
+      "country_codes": [
+        "BR",
+        "CH",
+        "IT"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 5,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        1,
+        0,
+        2,
+        1,
+        2,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-27T21:22:05+00:00",
+      "last_seen": "2026-10-31T18:51:54+00:00"
     },
     {
       "name": "Akira",
@@ -2618,29 +2709,29 @@
       "country_codes": [
         "US"
       ],
-      "trend": "up",
-      "trend_label": "Accelerating",
+      "trend": "stable",
+      "trend_label": "Steady",
       "recent_velocity": {
-        "last_3_days": 6,
-        "prior_3_days": 0
+        "last_3_days": 3,
+        "prior_3_days": 3
       },
       "daily_counts": [
         0,
         0,
-        0,
         3,
         0,
         3,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T12:58:43+00:00",
       "last_seen": "2026-10-30T15:01:56+00:00"
@@ -2658,7 +2749,7 @@
           "post_url": "https://www.ransomware.live/id/U3RyYXplIEdhcmRlbiBDZW50ZXJAcGF5bG9hZA",
           "country": null,
           "country_code": null,
-          "sector": null,
+          "sector": "Retail & E-Commerce",
           "domain": null,
           "status": null,
           "description_snippet": "Straze Garden Center is a German company operating a garden center and an online store for gardening supplies. The business specializes in selling indoor and outdoor plants, planting materials, soils,",
@@ -2673,7 +2764,7 @@
           "post_url": "https://www.ransomware.live/id/S3JhZnQgTGVybmVuQHBheWxvYWQ",
           "country": "Germany",
           "country_code": "DE",
-          "sector": null,
+          "sector": "Education",
           "domain": null,
           "status": null,
           "description_snippet": "Kraft Lernen is a German company that specializes in supplying didactic and developmental materials for kindergartens, schools, and therapeutic institutions. Its product catalog includes educational a",
@@ -2688,7 +2779,7 @@
           "post_url": "https://www.ransomware.live/id/U0FMRUcgKFNhY2hzZW4tQW5oYWx0aXNjaGUgTGFuZGVzZW50d2lja2x1bmdzZ2VzZWxsc2NoYWZ0IG1iSClAcGF5bG9hZA",
           "country": "Germany",
           "country_code": "DE",
-          "sector": null,
+          "sector": "Government & Defense",
           "domain": null,
           "status": null,
           "description_snippet": "SALEG (Sachsen-Anhaltische Landesentwicklungsgesellschaft mbH) is a state-owned land development company belonging to the German federal state of Saxony-Anhalt. The organization specializes in urban a",
@@ -2703,8 +2794,8 @@
           "post_url": "https://www.ransomware.live/id/SGF1aGluY29AcGF5bG9hZA",
           "country": "Germany",
           "country_code": "DE",
-          "sector": "Manufacturing",
-          "domain": "hauhinco.de",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Hauhinco is a German manufacturer of high-pressure water hydraulics. The company produces plunger pumps, valves, and pump stations for mining and industry. It also develops rail-bound shunting systems",
           "source": "ransomware.live/rss"
@@ -2726,7 +2817,9 @@
         }
       ],
       "industries": [
-        "Manufacturing"
+        "Education",
+        "Government & Defense",
+        "Retail & E-Commerce"
       ],
       "countries": [
         "France",
@@ -2739,26 +2832,26 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 5,
-        "prior_3_days": 0
+        "last_3_days": 3,
+        "prior_3_days": 2
       },
       "daily_counts": [
-        0,
         0,
         0,
         2,
         0,
         0,
-        3
+        3,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T14:48:35+00:00",
       "last_seen": "2026-10-31T14:31:26+00:00"
@@ -2868,140 +2961,20 @@
         0,
         0,
         0,
-        0,
-        5
+        5,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T10:51:15+00:00",
       "last_seen": "2026-10-31T10:54:11+00:00"
-    },
-    {
-      "name": "Emperador",
-      "count": 5,
-      "victims": [
-        {
-          "id": "d12b6c14ffcc",
-          "group_name": "Emperador",
-          "victim_name": "Holcim",
-          "discovered": "2026-10-31T09:53:09+00:00",
-          "discovered_date": "2026-10-31",
-          "post_url": "https://www.ransomware.live/id/SG9sY2ltQGVtcGVyYWRvcg",
-          "country": "Switzerland",
-          "country_code": "CH",
-          "sector": "Manufacturing",
-          "domain": null,
-          "status": null,
-          "description_snippet": "Holcim is a global building-materials and building-solutions company founded in Switzerland in 1912. It provides cement, aggregates, ready-mix concrete and high-value building solutions for infrastruc",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "bfbb460ccdc7",
-          "group_name": "Emperador",
-          "victim_name": "Studio Stelitano e Associati",
-          "discovered": "2026-10-30T23:27:04+00:00",
-          "discovered_date": "2026-10-30",
-          "post_url": "https://www.ransomware.live/id/U3R1ZGlvIFN0ZWxpdGFubyBlIEFzc29jaWF0aUBlbXBlcmFkb3I",
-          "country": "Italy",
-          "country_code": "IT",
-          "sector": "Professional Services",
-          "domain": null,
-          "status": null,
-          "description_snippet": "Studio Stelitano e Associati\nItalian professional consulting firm based in Bologna (Italy)\nLabor Law and HR Administration\nThe archive contains the most important personal data and customer data [Sect",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "735d11c54c8b",
-          "group_name": "Emperador",
-          "victim_name": "LA PROFUMERIA SRL",
-          "discovered": "2026-10-29T16:53:34+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/TEEgUFJPRlVNRVJJQSBTUkxAZW1wZXJhZG9y",
-          "country": "Italy",
-          "country_code": "IT",
-          "sector": "Retail & E-Commerce",
-          "domain": null,
-          "status": null,
-          "description_snippet": "Italian company working with perfumes and cosmetics.\nArchived personal and corporate data of employees and customers. [Sector: Manufacturing]",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "42f0a972ec50",
-          "group_name": "Emperador",
-          "victim_name": "MAA Group Consulting Engineers",
-          "discovered": "2026-10-29T10:21:43+00:00",
-          "discovered_date": "2026-10-29",
-          "post_url": "https://www.ransomware.live/id/TUFBIEdyb3VwIENvbnN1bHRpbmcgRW5naW5lZXJzQGVtcGVyYWRvcg",
-          "country": null,
-          "country_code": null,
-          "sector": "Professional Services",
-          "domain": null,
-          "status": null,
-          "description_snippet": "MAA Group Consulting Engineers is a leading regional engineering and consulting service provider founded in 1975, with over 1,000 professionals operating across East and Southeast Asia. The group prov",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "208a1601eb36",
-          "group_name": "Emperador",
-          "victim_name": "TWICE SRL",
-          "discovered": "2026-10-27T21:22:05+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/VFdJQ0UgU1JMQGVtcGVyYWRvcg",
-          "country": null,
-          "country_code": null,
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Сompany from the Republic of San Marino,\nassociated with the production and sale of fashion clothing and accessories.\nArchived personal and corporate data of employees and customers. [Sector: Manufact",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Manufacturing",
-        "Professional Services",
-        "Retail & E-Commerce"
-      ],
-      "countries": [
-        "Italy",
-        "Switzerland"
-      ],
-      "country_codes": [
-        "CH",
-        "IT"
-      ],
-      "trend": "up",
-      "trend_label": "Accelerating",
-      "recent_velocity": {
-        "last_3_days": 4,
-        "prior_3_days": 1
-      },
-      "daily_counts": [
-        0,
-        0,
-        1,
-        0,
-        2,
-        1,
-        1
-      ],
-      "daily_labels": [
-        "2026-10-25",
-        "2026-10-26",
-        "2026-10-27",
-        "2026-10-28",
-        "2026-10-29",
-        "2026-10-30",
-        "2026-10-31"
-      ],
-      "first_seen": "2026-10-27T21:22:05+00:00",
-      "last_seen": "2026-10-31T09:53:09+00:00"
     },
     {
       "name": "Everstake",
@@ -3099,142 +3072,22 @@
         0,
         0,
         0,
-        0,
         4,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-29T20:23:13+00:00",
       "last_seen": "2026-10-30T23:55:36+00:00"
-    },
-    {
-      "name": "Aurora",
-      "count": 5,
-      "victims": [
-        {
-          "id": "dd3900767fe1",
-          "group_name": "Aurora",
-          "victim_name": "Rapid Manufacturing",
-          "discovered": "2026-10-30T15:03:11+00:00",
-          "discovered_date": "2026-10-30",
-          "post_url": "https://www.ransomware.live/id/UmFwaWQgTWFudWZhY3R1cmluZ0BhdXJvcmE",
-          "country": null,
-          "country_code": null,
-          "sector": "Manufacturing",
-          "domain": null,
-          "status": null,
-          "description_snippet": "[manufacturer] Rapid Manufacturing — a 50-year-old electronics contract manufacturer in Anaheim, California with operations in Ensenada, Mexico.\nRapid Manufacturing is not a household name. But it is ",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "8b594bf37b0f",
-          "group_name": "Aurora",
-          "victim_name": "CP Manufacturing, Inc.",
-          "discovered": "2026-10-30T13:08:15+00:00",
-          "discovered_date": "2026-10-30",
-          "post_url": "https://www.ransomware.live/id/Q1AgTWFudWZhY3R1cmluZywgSW5jLkBhdXJvcmE",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Manufacturing",
-          "domain": null,
-          "status": null,
-          "description_snippet": "[manufacturer] CP Manufacturing, Inc. — a San Diego-based industrial manufacturer of waste sorting and recycling equipment (MRF systems) operating since the 1970s under\nthe CP Group / CPG Sorting Tech",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "bd367fd33c70",
-          "group_name": "Aurora",
-          "victim_name": "EWM Group",
-          "discovered": "2026-10-28T13:00:09+00:00",
-          "discovered_date": "2026-10-28",
-          "post_url": "https://www.ransomware.live/id/RVdNIEdyb3VwQGF1cm9yYQ",
-          "country": "United Kingdom",
-          "country_code": "GB",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "[fashion] EWM Group — the parent group behind Bonmarché, Edinburgh Woollen Mill, and Peacocks, three of the UK's best-known value fashion chains.\n\nThe exposed material includes:\n\n503,878 loyalty progr",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "e657ee7bd8c9",
-          "group_name": "Aurora",
-          "victim_name": "Meleghy Automotive & Cie. GmbH",
-          "discovered": "2026-10-28T10:05:41+00:00",
-          "discovered_date": "2026-10-28",
-          "post_url": "https://www.ransomware.live/id/TWVsZWdoeSBBdXRvbW90aXZlICYgQ2llLiBHbWJIQGF1cm9yYQ",
-          "country": "Germany",
-          "country_code": "DE",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "[automotive] The exposed material includes:\n\nPassport/visa/student-admission dossiers\nTesla Model Y/Opal tooling, CAD and DFM tree\nEmployee contract and HR folders\n<redacted>\nMEB/BMW NCAR metrology an",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "bb13d47d9f7f",
-          "group_name": "Aurora",
-          "victim_name": "GreenbergFarrow",
-          "discovered": "2026-10-27T12:11:30+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/R3JlZW5iZXJnRmFycm93QGF1cm9yYQ",
-          "country": null,
-          "country_code": null,
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "[architecture] GreenbergFarrow — a respected ESOP-owned architecture firm headquartered in Atlanta, Georgia with offices in Charlotte, Dallas, Los Angeles, New York, Myrtle Beach, and international op",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Manufacturing"
-      ],
-      "countries": [
-        "Germany",
-        "United Kingdom",
-        "United States"
-      ],
-      "country_codes": [
-        "DE",
-        "GB",
-        "US"
-      ],
-      "trend": "up",
-      "trend_label": "Accelerating",
-      "recent_velocity": {
-        "last_3_days": 4,
-        "prior_3_days": 1
-      },
-      "daily_counts": [
-        0,
-        0,
-        1,
-        2,
-        0,
-        2,
-        0
-      ],
-      "daily_labels": [
-        "2026-10-25",
-        "2026-10-26",
-        "2026-10-27",
-        "2026-10-28",
-        "2026-10-29",
-        "2026-10-30",
-        "2026-10-31"
-      ],
-      "first_seen": "2026-10-27T12:11:30+00:00",
-      "last_seen": "2026-10-30T15:03:11+00:00"
     },
     {
       "name": "Settra",
@@ -3322,20 +3175,125 @@
         0,
         0,
         0,
-        0,
-        4
+        4,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T07:55:41+00:00",
       "last_seen": "2026-10-31T07:57:13+00:00"
+    },
+    {
+      "name": "Aurora",
+      "count": 4,
+      "victims": [
+        {
+          "id": "dd3900767fe1",
+          "group_name": "Aurora",
+          "victim_name": "Rapid Manufacturing",
+          "discovered": "2026-10-30T15:03:11+00:00",
+          "discovered_date": "2026-10-30",
+          "post_url": "https://www.ransomware.live/id/UmFwaWQgTWFudWZhY3R1cmluZ0BhdXJvcmE",
+          "country": null,
+          "country_code": null,
+          "sector": "Manufacturing",
+          "domain": null,
+          "status": null,
+          "description_snippet": "[manufacturer] Rapid Manufacturing — a 50-year-old electronics contract manufacturer in Anaheim, California with operations in Ensenada, Mexico.\nRapid Manufacturing is not a household name. But it is ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "8b594bf37b0f",
+          "group_name": "Aurora",
+          "victim_name": "CP Manufacturing, Inc.",
+          "discovered": "2026-10-30T13:08:15+00:00",
+          "discovered_date": "2026-10-30",
+          "post_url": "https://www.ransomware.live/id/Q1AgTWFudWZhY3R1cmluZywgSW5jLkBhdXJvcmE",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Manufacturing",
+          "domain": null,
+          "status": null,
+          "description_snippet": "[manufacturer] CP Manufacturing, Inc. — a San Diego-based industrial manufacturer of waste sorting and recycling equipment (MRF systems) operating since the 1970s under\nthe CP Group / CPG Sorting Tech",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "bd367fd33c70",
+          "group_name": "Aurora",
+          "victim_name": "EWM Group",
+          "discovered": "2026-10-28T13:00:09+00:00",
+          "discovered_date": "2026-10-28",
+          "post_url": "https://www.ransomware.live/id/RVdNIEdyb3VwQGF1cm9yYQ",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "[fashion] EWM Group — the parent group behind Bonmarché, Edinburgh Woollen Mill, and Peacocks, three of the UK's best-known value fashion chains.\n\nThe exposed material includes:\n\n503,878 loyalty progr",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "e657ee7bd8c9",
+          "group_name": "Aurora",
+          "victim_name": "Meleghy Automotive & Cie. GmbH",
+          "discovered": "2026-10-28T10:05:41+00:00",
+          "discovered_date": "2026-10-28",
+          "post_url": "https://www.ransomware.live/id/TWVsZWdoeSBBdXRvbW90aXZlICYgQ2llLiBHbWJIQGF1cm9yYQ",
+          "country": "Germany",
+          "country_code": "DE",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "[automotive] The exposed material includes:\n\nPassport/visa/student-admission dossiers\nTesla Model Y/Opal tooling, CAD and DFM tree\nEmployee contract and HR folders\n<redacted>\nMEB/BMW NCAR metrology an",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "Germany",
+        "United Kingdom",
+        "United States"
+      ],
+      "country_codes": [
+        "DE",
+        "GB",
+        "US"
+      ],
+      "trend": "stable",
+      "trend_label": "Steady",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 2
+      },
+      "daily_counts": [
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-28T10:05:41+00:00",
+      "last_seen": "2026-10-30T15:03:11+00:00"
     },
     {
       "name": "Shiba",
@@ -3423,19 +3381,19 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-29T20:35:57+00:00",
       "last_seen": "2026-10-29T20:36:55+00:00"
@@ -3505,26 +3463,26 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 3,
-        "prior_3_days": 0
+        "last_3_days": 2,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
         0,
-        0,
         1,
         0,
         1,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T07:53:44+00:00",
       "last_seen": "2026-10-31T07:58:16+00:00"
@@ -3604,26 +3562,171 @@
         0,
         0,
         0,
-        0,
         2,
         0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-29T15:45:17+00:00",
       "last_seen": "2026-10-31T03:34:17+00:00"
     },
     {
+      "name": "Barracuda",
+      "count": 2,
+      "victims": [
+        {
+          "id": "5f2928d62874",
+          "group_name": "Barracuda",
+          "victim_name": "EVINOKS",
+          "discovered": "2026-11-01T01:50:47+00:00",
+          "discovered_date": "2026-11-01",
+          "post_url": "https://www.ransomware.live/id/RVZJTk9LU0BCYXJyYWN1ZGE",
+          "country": "Turkey",
+          "country_code": "TR",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Evinoks is a Turkish company that produces and sells various products for hotel and restaurant service, such as trolleys, chairs, tables, buffet units, furniture and hygiene equipment. It has a wide r",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "ec82d4f6f336",
+          "group_name": "Barracuda",
+          "victim_name": "Femern Link Contractors",
+          "discovered": "2026-10-28T12:50:39+00:00",
+          "discovered_date": "2026-10-28",
+          "post_url": "https://www.ransomware.live/id/RmVtZXJuIExpbmsgQ29udHJhY3RvcnNAQmFycmFjdWRh",
+          "country": "Denmark",
+          "country_code": "DK",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Femern Link Contractors (FLC) is an international joint venture responsible for designing and building the Fehmarnbelt tunnel between Denmark and Germany. Its work includes the immersed tunnel, tunnel",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "Denmark",
+        "Turkey"
+      ],
+      "country_codes": [
+        "DK",
+        "TR"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-28T12:50:39+00:00",
+      "last_seen": "2026-11-01T01:50:47+00:00"
+    },
+    {
+      "name": "Vexy Ransomware",
+      "count": 2,
+      "victims": [
+        {
+          "id": "4eb694626c44",
+          "group_name": "Vexy ransomware",
+          "victim_name": "System Soft",
+          "discovered": "2026-10-31T19:04:42+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/U3lzdGVtIFNvZnRAVmV4eSBSYW5zb213YXJl",
+          "country": "Bulgaria",
+          "country_code": "BG",
+          "sector": "Technology",
+          "domain": "systemsoft.info",
+          "status": null,
+          "description_snippet": "systemsoft.info",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "5fe393f9e666",
+          "group_name": "Vexy ransomware",
+          "victim_name": "JHAMF Group",
+          "discovered": "2026-10-31T19:04:20+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/SkhBTUYgR3JvdXBAVmV4eSBSYW5zb213YXJl",
+          "country": "Bangladesh",
+          "country_code": "BD",
+          "sector": "Not Found",
+          "domain": "www.jhamf.com",
+          "status": null,
+          "description_snippet": "JHAMF Group is a Colombian IT services company specializing in IT infrastructure, telecommunications, software licensing and implementation, network installation and certification, technical support o",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Not Found",
+        "Technology"
+      ],
+      "countries": [
+        "Bangladesh",
+        "Bulgaria"
+      ],
+      "country_codes": [
+        "BD",
+        "BG"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-31T19:04:20+00:00",
+      "last_seen": "2026-10-31T19:04:42+00:00"
+    },
+    {
       "name": "Wallstreet",
-      "count": 3,
+      "count": 2,
       "victims": [
         {
           "id": "c1fac70bcdd4",
@@ -3649,65 +3752,47 @@
           "post_url": "https://www.ransomware.live/id/Rm9ydHJleEBXYWxsc3RyZWV0",
           "country": "United States",
           "country_code": "US",
-          "sector": "Manufacturing",
-          "domain": "fortrexsolutions.com",
-          "status": null,
-          "description_snippet": "Fortrex is the premier provider of food safety solutions in North America, offering comprehensive sanitation services, chemical products and intervention solutions for food processing facilities. Our ",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "6c639e63971a",
-          "group_name": "Wallstreet",
-          "victim_name": "Bristol City Council",
-          "discovered": "2026-10-27T12:08:39+00:00",
-          "discovered_date": "2026-10-27",
-          "post_url": "https://www.ransomware.live/id/QnJpc3RvbCBDaXR5IENvdW5jaWxAV2FsbHN0cmVldA",
-          "country": "United Kingdom",
-          "country_code": "GB",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Bristol City Council is the local authority for Bristol, England. It provides public services for residents, businesses, and visitors, including council tax and benefits, housing, schools, social care",
+          "description_snippet": "Fortrex is the premier provider of food safety solutions in North America, offering comprehensive sanitation services, chemical products and intervention solutions for food processing facilities. Our ",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [
-        "Healthcare",
-        "Manufacturing"
+        "Healthcare"
       ],
       "countries": [
-        "United Kingdom",
         "United States"
       ],
       "country_codes": [
-        "GB",
         "US"
       ],
-      "trend": "up",
-      "trend_label": "Accelerating",
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
       "recent_velocity": {
         "last_3_days": 2,
-        "prior_3_days": 1
+        "prior_3_days": 0
       },
       "daily_counts": [
         0,
         0,
         1,
-        1,
         0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
-      "first_seen": "2026-10-27T12:08:39+00:00",
+      "first_seen": "2026-10-28T21:31:10+00:00",
       "last_seen": "2026-10-30T20:31:26+00:00"
     },
     {
@@ -3761,20 +3846,20 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
         0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T21:53:55+00:00",
       "last_seen": "2026-10-30T11:17:15+00:00"
@@ -3807,7 +3892,7 @@
           "post_url": "https://www.ransomware.live/id/VGhlIEFuZ2xpY2FuIEludGVybmF0aW9uYWwgU2Nob29sQEdsb2JhbCBTZWNyZXQgR3JvdXA",
           "country": "Israel",
           "country_code": "IL",
-          "sector": "Education",
+          "sector": null,
           "domain": "aisj.co.il",
           "status": null,
           "description_snippet": "Country: Grenada.Spain |\nWebsite: aisj.co.il |\nRevenue: $11.1 Million |\nIndustry: Primary and Secondary Education |\nEmployees: 50-100 |\nProperties: 218 GB (257,960 Files, 28,378 Folders)",
@@ -3815,7 +3900,6 @@
         }
       ],
       "industries": [
-        "Education",
         "Energy & Utilities"
       ],
       "countries": [
@@ -3835,20 +3919,20 @@
       "daily_counts": [
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T20:24:06+00:00",
       "last_seen": "2026-10-29T21:54:07+00:00"
@@ -3910,22 +3994,74 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-29T04:03:09+00:00",
       "last_seen": "2026-10-29T04:03:54+00:00"
+    },
+    {
+      "name": "Nightspire",
+      "count": 1,
+      "victims": [
+        {
+          "id": "8928a5aae843",
+          "group_name": "Nightspire",
+          "victim_name": "**F*A *.A",
+          "discovered": "2026-10-31T18:29:04+00:00",
+          "discovered_date": "2026-10-31",
+          "post_url": "https://www.ransomware.live/id/KipGKkEgKi5BQG5pZ2h0c3BpcmU",
+          "country": null,
+          "country_code": null,
+          "sector": "Not Found",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Data is not available now.",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [],
+      "country_codes": [],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "daily_labels": [
+        "2026-10-26",
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-29",
+        "2026-10-30",
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "first_seen": "2026-10-31T18:29:04+00:00",
+      "last_seen": "2026-10-31T18:29:04+00:00"
     },
     {
       "name": "Sarcoma",
@@ -3968,17 +4104,17 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T10:31:38+00:00",
       "last_seen": "2026-10-31T10:31:38+00:00"
@@ -4022,17 +4158,17 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T07:47:49+00:00",
       "last_seen": "2026-10-31T07:47:49+00:00"
@@ -4078,17 +4214,17 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-31T00:01:20+00:00",
       "last_seen": "2026-10-31T00:01:20+00:00"
@@ -4131,18 +4267,18 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-30T14:36:29+00:00",
       "last_seen": "2026-10-30T14:36:29+00:00"
@@ -4183,18 +4319,18 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-30T10:43:50+00:00",
       "last_seen": "2026-10-30T10:43:50+00:00"
@@ -4235,18 +4371,18 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-30T09:22:24+00:00",
       "last_seen": "2026-10-30T09:22:24+00:00"
@@ -4290,19 +4426,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-29T14:06:43+00:00",
       "last_seen": "2026-10-29T14:06:43+00:00"
@@ -4345,20 +4481,20 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T23:32:38+00:00",
       "last_seen": "2026-10-28T23:32:38+00:00"
@@ -4399,77 +4535,23 @@
       "daily_counts": [
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-28T18:26:50+00:00",
       "last_seen": "2026-10-28T18:26:50+00:00"
-    },
-    {
-      "name": "Barracuda",
-      "count": 1,
-      "victims": [
-        {
-          "id": "ec82d4f6f336",
-          "group_name": "Barracuda",
-          "victim_name": "Femern Link Contractors",
-          "discovered": "2026-10-28T12:50:39+00:00",
-          "discovered_date": "2026-10-28",
-          "post_url": "https://www.ransomware.live/id/RmVtZXJuIExpbmsgQ29udHJhY3RvcnNAQmFycmFjdWRh",
-          "country": "Denmark",
-          "country_code": "DK",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Femern Link Contractors (FLC) is an international joint venture responsible for designing and building the Fehmarnbelt tunnel between Denmark and Germany. Its work includes the immersed tunnel, tunnel",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "Denmark"
-      ],
-      "country_codes": [
-        "DK"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-10-25",
-        "2026-10-26",
-        "2026-10-27",
-        "2026-10-28",
-        "2026-10-29",
-        "2026-10-30",
-        "2026-10-31"
-      ],
-      "first_seen": "2026-10-28T12:50:39+00:00",
-      "last_seen": "2026-10-28T12:50:39+00:00"
     },
     {
       "name": "Byod",
@@ -4502,21 +4584,21 @@
       },
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-27T18:50:58+00:00",
       "last_seen": "2026-10-27T18:50:58+00:00"
@@ -4556,27 +4638,132 @@
       },
       "daily_counts": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-10-25",
         "2026-10-26",
         "2026-10-27",
         "2026-10-28",
         "2026-10-29",
         "2026-10-30",
-        "2026-10-31"
+        "2026-10-31",
+        "2026-11-01"
       ],
       "first_seen": "2026-10-27T14:11:50+00:00",
       "last_seen": "2026-10-27T14:11:50+00:00"
     }
   ],
   "victims": [
+    {
+      "id": "5f2928d62874",
+      "group_name": "Barracuda",
+      "victim_name": "EVINOKS",
+      "discovered": "2026-11-01T01:50:47+00:00",
+      "discovered_date": "2026-11-01",
+      "post_url": "https://www.ransomware.live/id/RVZJTk9LU0BCYXJyYWN1ZGE",
+      "country": "Turkey",
+      "country_code": "TR",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "Evinoks is a Turkish company that produces and sells various products for hotel and restaurant service, such as trolleys, chairs, tables, buffet units, furniture and hygiene equipment. It has a wide r",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "eeeeeab34eda",
+      "group_name": "Qilin",
+      "victim_name": "Danser",
+      "discovered": "2026-11-01T00:39:08+00:00",
+      "discovered_date": "2026-11-01",
+      "post_url": "https://www.ransomware.live/id/RGFuc2VyQHFpbGlu",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "N/A",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "4eb694626c44",
+      "group_name": "Vexy ransomware",
+      "victim_name": "System Soft",
+      "discovered": "2026-10-31T19:04:42+00:00",
+      "discovered_date": "2026-10-31",
+      "post_url": "https://www.ransomware.live/id/U3lzdGVtIFNvZnRAVmV4eSBSYW5zb213YXJl",
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "sector": "Technology",
+      "domain": "systemsoft.info",
+      "status": null,
+      "description_snippet": "systemsoft.info",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "5fe393f9e666",
+      "group_name": "Vexy ransomware",
+      "victim_name": "JHAMF Group",
+      "discovered": "2026-10-31T19:04:20+00:00",
+      "discovered_date": "2026-10-31",
+      "post_url": "https://www.ransomware.live/id/SkhBTUYgR3JvdXBAVmV4eSBSYW5zb213YXJl",
+      "country": "Bangladesh",
+      "country_code": "BD",
+      "sector": "Not Found",
+      "domain": "www.jhamf.com",
+      "status": null,
+      "description_snippet": "JHAMF Group is a Colombian IT services company specializing in IT infrastructure, telecommunications, software licensing and implementation, network installation and certification, technical support o",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "2aeca0851eca",
+      "group_name": "Emperador",
+      "victim_name": "Punta Shopping",
+      "discovered": "2026-10-31T18:51:54+00:00",
+      "discovered_date": "2026-10-31",
+      "post_url": "https://www.ransomware.live/id/UHVudGEgU2hvcHBpbmdAZW1wZXJhZG9y",
+      "country": "Brazil",
+      "country_code": "BR",
+      "sector": "Retail & E-Commerce",
+      "domain": null,
+      "status": null,
+      "description_snippet": "Commercial organization in Uruguay, located in the city of Punta del Este\nField of activity: shopping center management, rental of commercial space, retail trade and services.\nThe archive contains the",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "8928a5aae843",
+      "group_name": "Nightspire",
+      "victim_name": "**F*A *.A",
+      "discovered": "2026-10-31T18:29:04+00:00",
+      "discovered_date": "2026-10-31",
+      "post_url": "https://www.ransomware.live/id/KipGKkEgKi5BQG5pZ2h0c3BpcmU",
+      "country": null,
+      "country_code": null,
+      "sector": "Not Found",
+      "domain": null,
+      "status": null,
+      "description_snippet": "Data is not available now.",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "d40f6947560d",
+      "group_name": "Qilin",
+      "victim_name": "Community Medical Center, Falls City Nebraska",
+      "discovered": "2026-10-31T17:23:59+00:00",
+      "discovered_date": "2026-10-31",
+      "post_url": "https://www.ransomware.live/id/Q29tbXVuaXR5IE1lZGljYWwgQ2VudGVyLCBGYWxscyBDaXR5IE5lYnJhc2thQHFpbGlu",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "N/A",
+      "source": "ransomware.live/rss"
+    },
     {
       "id": "438a3646f0c9",
       "group_name": "Payload",
@@ -4586,7 +4773,7 @@
       "post_url": "https://www.ransomware.live/id/U3RyYXplIEdhcmRlbiBDZW50ZXJAcGF5bG9hZA",
       "country": null,
       "country_code": null,
-      "sector": null,
+      "sector": "Retail & E-Commerce",
       "domain": null,
       "status": null,
       "description_snippet": "Straze Garden Center is a German company operating a garden center and an online store for gardening supplies. The business specializes in selling indoor and outdoor plants, planting materials, soils,",
@@ -4601,7 +4788,7 @@
       "post_url": "https://www.ransomware.live/id/S3JhZnQgTGVybmVuQHBheWxvYWQ",
       "country": "Germany",
       "country_code": "DE",
-      "sector": null,
+      "sector": "Education",
       "domain": null,
       "status": null,
       "description_snippet": "Kraft Lernen is a German company that specializes in supplying didactic and developmental materials for kindergartens, schools, and therapeutic institutions. Its product catalog includes educational a",
@@ -4616,7 +4803,7 @@
       "post_url": "https://www.ransomware.live/id/U0FMRUcgKFNhY2hzZW4tQW5oYWx0aXNjaGUgTGFuZGVzZW50d2lja2x1bmdzZ2VzZWxsc2NoYWZ0IG1iSClAcGF5bG9hZA",
       "country": "Germany",
       "country_code": "DE",
-      "sector": null,
+      "sector": "Government & Defense",
       "domain": null,
       "status": null,
       "description_snippet": "SALEG (Sachsen-Anhaltische Landesentwicklungsgesellschaft mbH) is a state-owned land development company belonging to the German federal state of Saxony-Anhalt. The organization specializes in urban a",
@@ -6896,8 +7083,8 @@
       "post_url": "https://www.ransomware.live/id/Rm9ydHJleEBXYWxsc3RyZWV0",
       "country": "United States",
       "country_code": "US",
-      "sector": "Manufacturing",
-      "domain": "fortrexsolutions.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Fortrex is the premier provider of food safety solutions in North America, offering comprehensive sanitation services, chemical products and intervention solutions for food processing facilities. Our ",
       "source": "ransomware.live/rss"
@@ -6926,7 +7113,7 @@
       "post_url": "https://www.ransomware.live/id/VC4uLiBFLi4uQFNpbGVudFJhbnNvbUdyb3Vw",
       "country": null,
       "country_code": null,
-      "sector": "Not Found",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -6941,7 +7128,7 @@
       "post_url": "https://www.ransomware.live/id/Uy4uLiBILi4uQFNpbGVudFJhbnNvbUdyb3Vw",
       "country": null,
       "country_code": null,
-      "sector": "Not Found",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -6971,7 +7158,7 @@
       "post_url": "https://www.ransomware.live/id/VGhlIEFuZ2xpY2FuIEludGVybmF0aW9uYWwgU2Nob29sQEdsb2JhbCBTZWNyZXQgR3JvdXA",
       "country": "Israel",
       "country_code": "IL",
-      "sector": "Education",
+      "sector": null,
       "domain": "aisj.co.il",
       "status": null,
       "description_snippet": "Country: Grenada.Spain |\nWebsite: aisj.co.il |\nRevenue: $11.1 Million |\nIndustry: Primary and Secondary Education |\nEmployees: 50-100 |\nProperties: 218 GB (257,960 Files, 28,378 Folders)",
@@ -7001,7 +7188,7 @@
       "post_url": "https://www.ransomware.live/id/TC4uLkBTaWxlbnRSYW5zb21Hcm91cA",
       "country": null,
       "country_code": null,
-      "sector": "Not Found",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
@@ -7016,8 +7203,8 @@
       "post_url": "https://www.ransomware.live/id/Tm9lbGtlciBhbmQgSHVsbEByaHlzaWRh",
       "country": "United States",
       "country_code": "US",
-      "sector": "Professional Services",
-      "domain": "noelkerhull.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Noelker and Hull NHA-FULL � US ARCHITECTURE FIRM (est. 1971) - HEALTHCARE / SENIOR-LIVING DESIGN - COMPLETE INTERNAL FILE-SERVER - FRESH TO 2026No credentials in this lot (excluded by decision). Focus",
       "source": "ransomware.live/rss"
@@ -7031,8 +7218,8 @@
       "post_url": "https://www.ransomware.live/id/SGF1aGluY29AcGF5bG9hZA",
       "country": "Germany",
       "country_code": "DE",
-      "sector": "Manufacturing",
-      "domain": "hauhinco.de",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Hauhinco is a German manufacturer of high-pressure water hydraulics. The company produces plunger pumps, valves, and pump stations for mining and industry. It also develops rail-bound shunting systems",
       "source": "ransomware.live/rss"
@@ -7470,111 +7657,6 @@
       "domain": null,
       "status": null,
       "description_snippet": "Medical Practices Stolen data: 22GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "db0526d28c25",
-      "group_name": "Booba project",
-      "victim_name": "City of Big Spring",
-      "discovered": "2026-10-27T12:51:29+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/Q2l0eSBvZiBCaWcgU3ByaW5nQEJvb2JhIFByb2plY3Q",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Government Administration Stolen data: 151 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "428e9abfa62a",
-      "group_name": "Booba project",
-      "victim_name": "KING FAMILY MEDICAL",
-      "discovered": "2026-10-27T12:51:09+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/S0lORyBGQU1JTFkgTUVESUNBTEBCb29iYSBQcm9qZWN0",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Hospitals and Health Care Stolen data: 67 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "8b01e0771357",
-      "group_name": "Booba project",
-      "victim_name": "Charter Township of Commerce",
-      "discovered": "2026-10-27T12:50:48+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/Q2hhcnRlciBUb3duc2hpcCBvZiBDb21tZXJjZUBCb29iYSBQcm9qZWN0",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Government Administration Stolen data: 155 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "7384c6714935",
-      "group_name": "Booba project",
-      "victim_name": "Regent Christian Online Academy",
-      "discovered": "2026-10-27T12:50:26+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/UmVnZW50IENocmlzdGlhbiBPbmxpbmUgQWNhZGVteUBCb29iYSBQcm9qZWN0",
-      "country": "Canada",
-      "country_code": "CA",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Hospitals and Health Care Stolen data: 26 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "bb13d47d9f7f",
-      "group_name": "Aurora",
-      "victim_name": "GreenbergFarrow",
-      "discovered": "2026-10-27T12:11:30+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/R3JlZW5iZXJnRmFycm93QGF1cm9yYQ",
-      "country": null,
-      "country_code": null,
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "[architecture] GreenbergFarrow — a respected ESOP-owned architecture firm headquartered in Atlanta, Georgia with offices in Charlotte, Dallas, Los Angeles, New York, Myrtle Beach, and international op",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "6c639e63971a",
-      "group_name": "Wallstreet",
-      "victim_name": "Bristol City Council",
-      "discovered": "2026-10-27T12:08:39+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/QnJpc3RvbCBDaXR5IENvdW5jaWxAV2FsbHN0cmVldA",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Bristol City Council is the local authority for Bristol, England. It provides public services for residents, businesses, and visitors, including council tax and benefits, housing, schools, social care",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "9659b6806a85",
-      "group_name": "Qilin",
-      "victim_name": "NuVista Federal Credit Union",
-      "discovered": "2026-10-27T10:38:24+00:00",
-      "discovered_date": "2026-10-27",
-      "post_url": "https://www.ransomware.live/id/TnVWaXN0YSBGZWRlcmFsIENyZWRpdCBVbmlvbkBxaWxpbg",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "N/A",
       "source": "ransomware.live/rss"
     }
   ]
