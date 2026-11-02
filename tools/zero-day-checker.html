@@ -14,9 +14,22 @@
 
     <!-- Open Graph -->
     <meta property="og:image" content="https://thehgtech.com/logo-dark.png">
-    <meta property="og:url" content="https://thehgtech.com/tools/zero-day-checker.html">
+    <meta property="og:url" content="https://thehgtech.com/cve-tracker.html?filter=zeroday">
     <meta property="og:site_name" content="TheHGTech">
-    <link rel="canonical" href="https://thehgtech.com/tools/zero-day-checker.html">
+    <link rel="canonical" href="https://thehgtech.com/cve-tracker.html?filter=zeroday">
+    <meta http-equiv="refresh" content="0; url=/cve-tracker.html?filter=zeroday">
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var target = '/cve-tracker.html';
+            if (params.get('q')) {
+                target += '?q=' + encodeURIComponent(params.get('q')) + '&filter=zeroday';
+            } else {
+                target += '?filter=zeroday';
+            }
+            window.location.replace(target);
+        })();
+    </script>
 
     <meta name="description"
         content="Instantly check your US enterprise tech stack (Fortinet, Windows, Cisco, etc) against the latest critical CVEs and active Zero-Days. Updated daily for SOC Analysts.">

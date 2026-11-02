@@ -40,13 +40,39 @@ header.header.hidden {
 }
 
 .logo-text {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #FF3D3D, #ff8c8c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.5px;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: currentColor !important;
+    color: #FFFFFF;
+    letter-spacing: -0.03em;
+    line-height: 1;
+}
+
+.logo-text .logo-text-base {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+.logo-text .logo-text-red {
+    color: #DA2228 !important;
+    -webkit-text-fill-color: #DA2228 !important;
+}
+
+html[data-theme="light"] .logo-text,
+body.light-mode .logo-text,
+html[data-theme="light"] .logo-text .logo-text-base,
+body.light-mode .logo-text .logo-text-base {
+    color: #1D1D1F !important;
+    -webkit-text-fill-color: #1D1D1F !important;
+}
+
+html[data-theme="light"] .logo-text .logo-text-red,
+body.light-mode .logo-text .logo-text-red {
+    color: #DA2228 !important;
+    -webkit-text-fill-color: #DA2228 !important;
 }
 
 /* Show dark logo by default (dark mode) */
@@ -245,7 +271,11 @@ body.light-mode .theme-toggle .star {
     transform: scale(0.95);
 }
 
-/* Mobile Menu Button */
+/* Mobile Menu Button (superseded by .m-header on <=768px; hidden on desktop so legacy markup never renders stray button chrome) */
+.mobile-menu-btn {
+    display: none !important;
+}
+
 .mobile-sidebar-btn {
     display: none;
     background: none;

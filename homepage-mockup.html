@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="dark light">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- ========== PRIMARY META TAGS (SEO OPTIMIZED) ========== -->
+    <title>TheHGTech — Cybersecurity Research, Daily News Shorts &amp; Live Threat Intelligence</title>
+    <meta name="title" content="TheHGTech — Cybersecurity Research, Daily News Shorts &amp; Live Threat Intelligence">
+    <meta name="description"
+        content="Independent cybersecurity research monographs, twice-daily executive security news shorts, practitioner field guides, and live CVE, IOC, ransomware, OSINT, and GRC workbenches.">
+    <meta name="keywords"
+        content="threat intelligence dashboard, cybersecurity research, daily news shorts, live IOCs, CISA KEV, zero-day exploits, CVE triage, ISO 27001 GRC, ransomware leak monitor, dark web chatter, SOAR playbooks">
+    <meta name="author" content="TheHGTech Editorial Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+
+    <!-- Canonical & Alternate Locales (Streamlined Global English) -->
+    <link rel="canonical" href="https://thehgtech.com/">
+    <link rel="alternate" hreflang="en" href="https://thehgtech.com/">
+    <link rel="alternate" hreflang="x-default" href="https://thehgtech.com/">
+
+    <!-- ========== OPEN GRAPH / FACEBOOK ========== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehgtech.com/">
+    <meta property="og:title" content="TheHGTech — Cybersecurity Research, Daily News Shorts &amp; Live Threat Intelligence">
+    <meta property="og:description"
+        content="Independent cybersecurity research monographs, twice-daily executive security news shorts, practitioner field guides, and live CVE, IOC, ransomware, OSINT, and GRC workbenches.">
+    <meta property="og:image" content="https://thehgtech.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="TheHGTech">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ========== TWITTER CARD ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://thehgtech.com/">
+    <meta name="twitter:title" content="TheHGTech — Cybersecurity Research, Daily News Shorts &amp; Live Threat Intelligence">
+    <meta name="twitter:description"
+        content="Independent cybersecurity research monographs, twice-daily executive security news shorts, practitioner field guides, and live CVE, IOC, ransomware, OSINT, and GRC workbenches.">
+    <meta name="twitter:image" content="https://thehgtech.com/images/twitter-card.jpg">
+    <meta name="twitter:site" content="@thehgtech">
+    <meta name="twitter:creator" content="@thehgtech">
+
+    <!-- ========== SITEMAP & RSS ========== -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="TheHGTech RSS Feed" href="/rss.xml">
+
+    <!-- Approved Brand Identity Favicon & App Icons -->
+    <link rel="icon" href="assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/brand/favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#0a0a0c">
+    <meta name="msapplication-TileColor" content="#0a0a0c">
+
+    <!-- ========== STRUCTURED DATA (JSON-LD) ========== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "@id": "https://thehgtech.com/#organization",
+      "name": "TheHGTech",
+      "url": "https://thehgtech.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/logo-dark.png",
+        "width": 600,
+        "height": 60
+      },
+      "sameAs": [
+        "https://x.com/thehgtech",
+        "https://linkedin.com/company/thehgtech"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TheHGTech",
+      "url": "https://thehgtech.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://thehgtech.com/article-list.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Local Variable Font -->
+    <link rel="stylesheet" href="fonts.css">
+
+    <!-- Font Awesome (for shared global navigation header icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Shared Site Navigation & Chrome Stylesheets -->
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="light-mode.css">
+    <link rel="stylesheet" href="theme-toggle.css?v=20261102">
+    <link rel="stylesheet" href="command-palette.css">
+    <link rel="stylesheet" href="m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
+    <link rel="stylesheet" href="mobile-nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Apple Liquid Glass Hybrid Homepage Architecture -->
+    <link rel="stylesheet" href="css/homepage-liquid-glass.css?v=20261102">
+
+    <!-- Synchronous Pre-Paint Theme Initialization (Prevents Flash of Wrong Theme) -->
+    <script>
+        (function () {
+            try {
+                var savedTheme = localStorage.getItem("theme");
+                var meta = document.querySelector('meta[name="color-scheme"]');
+                if (savedTheme === "light") {
+                    document.documentElement.setAttribute("data-theme", "light");
+                    if (meta) meta.content = "light";
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.body.classList.add("light-mode");
+                    });
+                } else {
+                    document.documentElement.setAttribute("data-theme", "dark");
+                    if (meta) meta.content = "dark";
+                }
+            } catch (_) { /* ignore storage restrictions */ }
+        })();
+    </script>
+</head>
+
+<body class="lg-home">
+<script>
+    if (document.documentElement.getAttribute("data-theme") === "light") {
+        document.body.classList.add("light-mode");
+    }
+</script>
+
+<!-- Subtle Ambient Refractive Caustic Backdrop -->
+<div class="lg-ambient-canvas" aria-hidden="true"></div>
+
+<!-- ==========================================================================
+     UNIFIED CANONICAL MOBILE HEADER (MATCHES CVE TRACKER + NEW THEME SWITCH)
+     ========================================================================== -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="homepage-mockup.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button type="button" class="lg-theme-switch lg-theme-switch--mobile" id="m-theme-toggle-top" aria-label="Toggle Dark and Light Theme" title="Toggle Theme">
+            <span class="lg-theme-switch__knob" aria-hidden="true"></span>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+            </svg>
+        </button>
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Fullscreen Mobile Menu Overlay (Matches CVE Tracker Canonical Structure) -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--lg-ink-1);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="#news" class="m-menu-link" onclick="document.getElementById('m-menu-overlay').classList.remove('active');document.body.style.overflow='';"><i class="fas fa-bolt" aria-hidden="true"></i> Daily News Shorts</a>
+            <a href="guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; Research</a>
+            <a href="comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="cve-tracker.html?filter=zeroday" class="m-menu-link"><i class="fas fa-crosshairs" aria-hidden="true"></i> Zero-Day Risk Checker</a>
+            <a href="workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="if(typeof toggleTheme === 'function') toggleTheme();">
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Switch to Light Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only" id="m-search-overlay">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel" id="m-search-cancel">Cancel</button>
+    </div>
+    <div class="m-search-overlay__results"></div>
+</div>
+
+<!-- ==========================================================================
+     UNIFIED CANONICAL DESKTOP HEADER (EXACT CVE TRACKER REFERENCE + NEW SWITCH)
+     ========================================================================== -->
+<header class="header" role="banner" id="site-header">
+    <div class="header-content">
+        <div class="logo">
+            <a href="homepage-mockup.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="#news">News</a>
+
+            <!-- Intelligence Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan);">Security Guides <span class="dropdown-badge popular">70+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity research and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 260px;">
+                    <a href="tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                    <a href="cve-tracker.html?filter=zeroday" class="dropdown-item">
+                        <div class="dropdown-item-icon" style="background: rgba(218, 34, 40, 0.14); color: #E1252B;"><i class="fas fa-crosshairs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Zero-Day Risk Checker</div>
+                            <div class="dropdown-item-desc">Triage active Zero-Days in the CVE Workbench</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Dropdown -->
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Follow Links -->
+            <div class="nav-social-group" style="display: flex; gap: 10px; margin-left: 12px; border-left: 1px solid rgba(128,128,128,0.22); padding-left: 14px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted); font-size: 1rem; transition: color 0.2s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted); font-size: 1rem; transition: color 0.2s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <!-- Search Button -->
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search (Cmd+K)" title="Search (Cmd+K)" style="margin-left: 14px; display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: rgba(128, 128, 128, 0.12); border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 50%; color: inherit; cursor: pointer; transition: all 0.2s ease; font-size: 0.88rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+
+            <!-- Unified Apple Liquid Glass Theme Switch -->
+            <button type="button" class="lg-theme-switch" id="themeToggle" aria-label="Toggle Dark and Light Theme" title="Toggle Theme">
+                <span class="lg-theme-switch__knob" aria-hidden="true"></span>
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                </svg>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content">
+
+    <!-- ======================================================================
+         TOP LIVE TELEMETRY CAPSULE RIBBON
+         ====================================================================== -->
+    <div class="lg-top-ribbon-wrap">
+        <div class="lg-shell">
+            <div class="lg-telemetry-ribbon" role="region" aria-label="Live Platform Telemetry">
+                <div class="lg-ribbon-status">
+                    <span class="lg-live-dot" aria-hidden="true"></span>
+                    <span>Live Intelligence Pulse</span>
+                    <span class="lg-ribbon-sub" style="color:var(--lg-ink-3);font-weight:400;">&middot; 4-hr IOC &amp; 2&times; Daily Briefing Sync</span>
+                </div>
+                <div class="lg-ribbon-metrics">
+                    <a href="#news" class="lg-metric-pill" title="Twice-Daily Executive News Shorts">
+                        <strong id="metricShortsCount">40</strong>
+                        <span>News Shorts</span>
+                    </a>
+                    <a href="threat-intel.html" class="lg-metric-pill" title="24-Hour Aggregated Feed Ingestion Volume (URLhaus, ThreatFox, Feodo &amp; OpenPhish)">
+                        <strong id="metricIocCount">54.3K</strong>
+                        <span>24h Ingested</span>
+                    </a>
+                    <a href="cve-tracker.html" class="lg-metric-pill" title="Priority CISA KEV &amp; Critical NVD Vulnerabilities">
+                        <strong id="metricCveCount">100</strong>
+                        <span>Tracked CVEs</span>
+                    </a>
+                    <a href="ransomware-tracker.html" class="lg-metric-pill" title="Tracked Ransomware Extortion Groups">
+                        <strong id="metricRansomwareCount">37</strong>
+                        <span>Extortion Groups</span>
+                    </a>
+                    <a href="article-list.html" class="lg-metric-pill" title="Published Research Monographs &amp; Reports">
+                        <strong id="metricArticlesCount">197+</strong>
+                        <span>Monographs</span>
+                    </a>
+                    <a href="guides/" class="lg-metric-pill" title="Practitioner Security Engineering Guides">
+                        <strong id="metricGuidesCount">70</strong>
+                        <span>Field Guides</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         STAGE 1: FULL-WIDTH EDITORIAL & INTELLIGENCE COMMAND HERO
+         (RESEARCH | GUIDES | WEEKLY DOSSIER — LEAD FEATURE + 4 RECENT ITEMS)
+         ====================================================================== -->
+    <section class="lg-hero-stage" aria-label="Featured Research, Security Guides, and Weekly Dossiers">
+        <div class="lg-shell">
+            <article class="lg-glass lg-hero-full">
+                <div class="lg-cover-topbar">
+                    <span class="lg-cover-eyebrow">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span>Latest Published Spotlight &middot; Auto-Synced Archive</span>
+                    </span>
+                    <div class="lg-cover-topbar-controls">
+                        <div class="lg-segmented" role="tablist" aria-label="Spotlight Content Type">
+                            <button type="button" class="lg-seg-btn is-active" data-hero-tab="research">Research<span class="lg-hide-xs">&nbsp;Monographs</span></button>
+                            <button type="button" class="lg-seg-btn" data-hero-tab="guides"><span class="lg-hide-xs">Security&nbsp;</span>Guides</button>
+                            <button type="button" class="lg-seg-btn" data-hero-tab="dossier">Weekly<span class="lg-hide-xs">&nbsp;Dossier</span></button>
+                        </div>
+                        <a id="heroTopArchiveLink" href="article-list.html" class="lg-btn-glass" style="padding:0.42rem 0.9rem;font-size:0.78rem;">Research Library (197+) &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="lg-hero-split">
+                    <!-- Left: Lead Flagship Publication -->
+                    <div class="lg-hero-lead">
+                        <div style="display:flex;flex-direction:column;gap:0.9rem;">
+                            <a id="heroCoverMediaLink" href="articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="lg-cover-media-link">
+                                <img id="heroCoverImg"
+                                    class="lg-cover-img"
+                                    src="images/articles/enterprise-vulnerability-management-exposure-blind-spot-2026.png"
+                                    alt="The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era"
+                                    fetchpriority="high"
+                                    width="880"
+                                    height="484">
+                            </a>
+
+                            <div class="lg-cover-body">
+                                <div class="lg-meta-row">
+                                    <span id="heroCoverBadge" class="lg-badge">Vulnerability Management</span>
+                                    <span id="heroCoverDate">2026-10-30</span>
+                                    <span aria-hidden="true">&bull;</span>
+                                    <span id="heroCoverReadTime">11 min read</span>
+                                </div>
+
+                                <h1 class="lg-cover-title">
+                                    <a id="heroCoverTitleLink" href="articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html">
+                                        The Exposure Blind Spot: Why Enterprise Vulnerability Management Is Struggling in the AI Era
+                                    </a>
+                                </h1>
+
+                                <p id="heroCoverExcerpt" class="lg-cover-excerpt">
+                                    Why legacy CVSS-first patching collapses against autonomous exploit generation—and how security teams are re-architecting continuous exposure management around EPSS, CISA KEV, and runtime reachability.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lg-cover-footer">
+                            <div class="lg-cover-actions">
+                                <a id="heroPrimaryCta" href="articles/enterprise-vulnerability-management-exposure-blind-spot-2026.html" class="lg-btn-primary">
+                                    <span>Read Monograph</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                                </a>
+                                <a id="heroSecondaryCta" href="articles.html" class="lg-btn-glass">Articles Portal</a>
+                            </div>
+                            <span id="heroLeadMetaFoot" style="font-family:var(--lg-font-mono);font-size:0.72rem;color:var(--lg-ink-3);">Lead Publication &bull; #1 of Latest</span>
+                        </div>
+                    </div>
+
+                    <!-- Right: 4 Newest Items in Active Tab -->
+                    <div class="lg-hero-recent-col">
+                        <div class="lg-hero-recent-head">
+                            <span id="heroRecentHeading">Recent Research Monographs</span>
+                            <span id="heroRecentCountLabel">Newest Releases</span>
+                        </div>
+
+                        <div id="heroRecentList" class="lg-hero-recent-list"></div>
+
+                        <div class="lg-hero-recent-foot">
+                            <span id="heroRecentSubNote" style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Original Technical Investigations</span>
+                            <a id="heroRecentArchiveLink" href="article-list.html" class="lg-link-arrow">Browse Full Archive &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         STAGE 2: #news — SINGLE AUTHORITATIVE TWICE-DAILY NEWS SHORTS STUDIO
+         ====================================================================== -->
+    <section id="news" class="lg-section" aria-labelledby="newsStudioHeading">
+        <div class="lg-shell">
+            <div class="lg-section-head">
+                <div class="lg-section-heading-group">
+                    <span class="lg-eyebrow">Homepage Exclusive &bull; Updated Twice Daily</span>
+                    <h2 id="newsStudioHeading" class="lg-section-title">Executive Security &amp; AI News Shorts</h2>
+                    <p class="lg-section-desc">
+                        Curated morning and evening intelligence dispatches distilled for practitioners and security leaders. Browse all 40 active briefings and read full technical summaries inline.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg-glass lg-newsroom-studio">
+                <div class="lg-newsroom-toolbar">
+                    <div class="lg-segmented" role="tablist" aria-label="Filter News Shorts">
+                        <button type="button" class="lg-seg-btn is-active" data-shorts-filter="all">
+                            <span>All Briefings</span>
+                            <span id="shortsCountAll" class="lg-seg-count">40</span>
+                        </button>
+                        <button type="button" class="lg-seg-btn" data-shorts-filter="cyber">
+                            <span>Cyber Security</span>
+                            <span id="shortsCountCyber" class="lg-seg-count">20</span>
+                        </button>
+                        <button type="button" class="lg-seg-btn" data-shorts-filter="ai">
+                            <span>AI &amp; Governance</span>
+                            <span id="shortsCountAi" class="lg-seg-count">20</span>
+                        </button>
+                    </div>
+
+                    <div class="lg-search-box">
+                        <svg class="lg-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                        <input id="shortsSearchInput" type="search" class="lg-search-input" placeholder="Filter briefings by CVE, vendor, threat..." aria-label="Search Daily News Shorts">
+                    </div>
+                </div>
+
+                <div class="lg-newsroom-split">
+                    <!-- Left Scrollable Feed List -->
+                    <div id="shortsStreamList" class="lg-shorts-stream" aria-label="Daily Briefings List"></div>
+
+                    <!-- Right Inline Reader Stage (Desktop) -->
+                    <article id="shortsReaderStage" class="lg-short-reader lg-short-reader-desktop" aria-live="polite"></article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         STAGE 3: #intelligence — LIVE THREAT INTELLIGENCE TRACKERS (2x2 BENTO)
+         1. CVE Triage Workbench | 2. Threat Intel & SIEM Feeds
+         3. Ransomware Leak Monitor | 4. Hacker Chatter OSINT & Breach DB
+         ====================================================================== -->
+    <section id="intelligence" class="lg-section lg-deferred-section" aria-labelledby="intelRadarHeading">
+        <div class="lg-shell">
+            <div class="lg-section-head">
+                <div class="lg-section-heading-group">
+                    <span class="lg-eyebrow">Continuous Telemetry &bull; 4 Live Operational Trackers</span>
+                    <h2 id="intelRadarHeading" class="lg-section-title">Live Vulnerability, IOC, Extortion &amp; OSINT Radar</h2>
+                    <p class="lg-section-desc">
+                        Real-time data streams from our four live intelligence dashboards—aggregating CISA KEV &amp; EPSS, 9 open threat feeds, dark-web ransomware disclosures, and HIBP-verified incident chatter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg-bento-2x2">
+
+                <!-- Tool 1: CVE Triage Workbench (cve-tracker.html) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-accent)" stroke-width="1.75" aria-hidden="true">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/>
+                                    </svg>
+                                    <a href="cve-tracker.html">CVE Triage Workbench</a>
+                                </h3>
+                                <p class="lg-module-sub">Actively exploited CISA KEV, Zero-Days &amp; FIRST.org EPSS</p>
+                            </div>
+                            <div class="lg-segmented" aria-label="CVE Feed Filter">
+                                <button type="button" class="lg-seg-btn is-active" data-cve-mode="CISA_KEV" style="padding:0.24rem 0.62rem;font-size:0.71rem;">KEV</button>
+                                <button type="button" class="lg-seg-btn" data-cve-mode="NVD" style="padding:0.24rem 0.62rem;font-size:0.71rem;">NVD 9+</button>
+                            </div>
+                        </div>
+
+                        <div class="lg-kpi-trio">
+                            <div class="lg-kpi-cell">
+                                <span id="cveKpiTotal" class="lg-kpi-val">100</span>
+                                <span class="lg-kpi-lbl">Tracked CVEs</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span id="cveKpiKev" class="lg-kpi-val">50</span>
+                                <span class="lg-kpi-lbl">Priority KEV</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span id="cveKpiZero" class="lg-kpi-val">10</span>
+                                <span class="lg-kpi-lbl">Zero-Days</span>
+                            </div>
+                        </div>
+
+                        <div id="liveCveRows" class="lg-feed-rows"></div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">CISA KEV + NVD + EPSS</span>
+                        <a href="cve-tracker.html" class="lg-link-arrow">Open CVE Workbench &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 2: Threat Intel & SIEM Feeds (threat-intel.html) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:1rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-signal-blue)" stroke-width="1.75" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><path d="M12 3v3M21 12h-3"/>
+                                    </svg>
+                                    <a href="threat-intel.html">Threat Intel &amp; SIEM Feeds</a>
+                                </h3>
+                                <p class="lg-module-sub">24-hour indicator breakdown across 9 open IOC feeds</p>
+                            </div>
+                            <span class="lg-badge lg-badge-blue"><span id="tiKpiTotal">54.3K</span>&nbsp;Ingested</span>
+                        </div>
+
+                        <div id="tiDistBars" class="lg-dist-list"></div>
+
+                        <div style="display:flex;flex-direction:column;gap:0.48rem;padding-top:0.25rem;">
+                            <span style="font-family:var(--lg-font-mono);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--lg-ink-3);">
+                                Hourly Active Malware &amp; C2 Campaigns
+                            </span>
+                            <div id="tiCampaignCloud" class="lg-campaign-cloud"></div>
+                        </div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">URLhaus &middot; ThreatFox &middot; Feodo</span>
+                        <a href="threat-intel.html" class="lg-link-arrow">Open SIEM Dashboard &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 3: Ransomware Leak Monitor (ransomware-tracker.html) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-signal-amber)" stroke-width="1.75" aria-hidden="true">
+                                        <rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+                                    </svg>
+                                    <a href="ransomware-tracker.html">Ransomware Leak Monitor</a>
+                                </h3>
+                                <p class="lg-module-sub">Active RaaS extortion groups &amp; claimed victim disclosures</p>
+                            </div>
+                            <span class="lg-badge lg-badge-amber">DLS Live</span>
+                        </div>
+
+                        <div class="lg-kpi-trio">
+                            <div class="lg-kpi-cell">
+                                <span id="rwKpiGroups" class="lg-kpi-val">37</span>
+                                <span class="lg-kpi-lbl">Active Groups</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span id="rwKpi24h" class="lg-kpi-val">84</span>
+                                <span class="lg-kpi-lbl">Last 24h</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span id="rwKpi7d" class="lg-kpi-val">200</span>
+                                <span class="lg-kpi-lbl">7-Day Window</span>
+                            </div>
+                        </div>
+
+                        <div id="liveRansomwareRows" class="lg-feed-rows"></div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Onion DLS Telemetry</span>
+                        <a href="ransomware-tracker.html" class="lg-link-arrow">Open Ransomware Tracker &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 4: Hacker Chatter OSINT & Breach DB (hacker-chatter.html) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C084FC" stroke-width="1.75" aria-hidden="true">
+                                        <polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/>
+                                    </svg>
+                                    <a href="hacker-chatter.html">Hacker Chatter OSINT DB</a>
+                                </h3>
+                                <p class="lg-module-sub">Sanitized dark-web incident claims cross-referenced with HIBP</p>
+                            </div>
+                            <span class="lg-badge lg-badge-purple">OSINT Engine</span>
+                        </div>
+
+                        <div class="lg-kpi-trio">
+                            <div class="lg-kpi-cell">
+                                <span id="hcKpiTotal" class="lg-kpi-val">32.6K+</span>
+                                <span class="lg-kpi-lbl">Indexed Claims</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">HIBP</span>
+                                <span class="lg-kpi-lbl">Breach Cross-Ref</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">12-Hr</span>
+                                <span class="lg-kpi-lbl">Tor-Safe Sync</span>
+                            </div>
+                        </div>
+
+                        <div id="liveChatterRows" class="lg-feed-rows"></div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Zero Tor Exposure &middot; HIBP Verified</span>
+                        <a href="hacker-chatter.html" class="lg-link-arrow">Search Hacker Chatter &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================================================
+         STAGE 4: #tools — INTERACTIVE ENGINEERING, GRC & AUTOMATION WORKBENCHES
+         5. Zero-Day Stack Exposure Checker | 6. ISO 27001:2022 GRC Engine
+         7. n8n Security & SOAR Workflows   | 8. Security Platform Comparisons
+         ====================================================================== -->
+    <section id="tools" class="lg-section lg-deferred-section" aria-labelledby="toolsHeading" style="padding-bottom:3.75rem;">
+        <div class="lg-shell">
+            <div class="lg-section-head">
+                <div class="lg-section-heading-group">
+                    <span class="lg-eyebrow">Browser-Native Workbenches &bull; Live Tool Data &amp; Direct Launch</span>
+                    <h2 id="toolsHeading" class="lg-section-title">Engineering, GRC &amp; Automation Tooling</h2>
+                    <p class="lg-section-desc">
+                        Audit your enterprise vendor stack against active zero-days, run offline ISO 27001:2022 gap assessments across all 93 controls, deploy n8n SOAR playbooks, and compare security platforms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg-bento-2x2">
+
+                <!-- Tool 5: Zero-Day Stack Exposure Checker (mapped directly to cve-tracker.html) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-accent)" stroke-width="1.75" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="9"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/>
+                                    </svg>
+                                    <a href="cve-tracker.html?filter=zeroday">Zero-Day Stack Exposure Checker</a>
+                                </h3>
+                                <p class="lg-module-sub">Instant enterprise vendor lookup against live CISA KEV &amp; Zero-Days in CVE Tracker</p>
+                            </div>
+                            <span class="lg-badge">CVE Triage</span>
+                        </div>
+
+                        <form id="inlineZeroDayForm" class="lg-tool-inline-form" action="cve-tracker.html" method="get">
+                            <input id="inlineZeroDayInput" type="search" name="q" class="lg-tool-inline-input" placeholder="Test vendor stack (e.g., Ivanti, Cisco, Fortinet, Microsoft)..." aria-label="Check vendor exposure in CVE Tracker">
+                            <button type="submit" class="lg-btn-glass" style="padding:0.48rem 0.9rem;font-size:0.78rem;">Scan &rarr;</button>
+                        </form>
+
+                        <div id="inlineZeroDayResult" class="lg-tool-inline-result">
+                            <span>Select or type any vendor below to preview active KEV &amp; critical CVE exposure.</span>
+                            <span class="lg-chip">100 CVEs Indexed</span>
+                        </div>
+
+                        <div style="display:flex;flex-direction:column;gap:0.45rem;">
+                            <span style="font-family:var(--lg-font-mono);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--lg-ink-3);">
+                                Top Exposed Enterprise Vendors (Live KEV + NVD)
+                            </span>
+                            <div id="zeroDayVendorCloud" class="lg-campaign-cloud"></div>
+                        </div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Live CISA KEV &amp; Zero-Day Telemetry</span>
+                        <a href="cve-tracker.html?filter=zeroday" class="lg-link-arrow">Open in CVE Tracker &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 6: ISO 27001:2022 GRC Readiness Engine (tools/grc-assessment/) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-signal-emerald)" stroke-width="1.75" aria-hidden="true">
+                                        <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                                    </svg>
+                                    <a href="tools/grc-assessment/">ISO 27001:2022 GRC Readiness Engine</a>
+                                </h3>
+                                <p class="lg-module-sub">Offline-first Statement of Applicability &amp; 93 Annex A control gap assessment</p>
+                            </div>
+                            <span class="lg-badge lg-badge-emerald">93 Controls</span>
+                        </div>
+
+                        <div class="lg-grc-domains">
+                            <a href="tools/grc-assessment/" class="lg-grc-domain-card">
+                                <div class="lg-grc-domain-top">
+                                    <span class="lg-grc-clause">ANNEX A.5</span>
+                                    <span class="lg-grc-count">37 Controls</span>
+                                </div>
+                                <span class="lg-grc-name">Organizational Controls</span>
+                                <div class="lg-dist-track"><div class="lg-dist-fill is-emerald" style="width:100%"></div></div>
+                            </a>
+                            <a href="tools/grc-assessment/" class="lg-grc-domain-card">
+                                <div class="lg-grc-domain-top">
+                                    <span class="lg-grc-clause">ANNEX A.8</span>
+                                    <span class="lg-grc-count">34 Controls</span>
+                                </div>
+                                <span class="lg-grc-name">Technological Controls</span>
+                                <div class="lg-dist-track"><div class="lg-dist-fill is-emerald" style="width:92%"></div></div>
+                            </a>
+                            <a href="tools/grc-assessment/" class="lg-grc-domain-card">
+                                <div class="lg-grc-domain-top">
+                                    <span class="lg-grc-clause">ANNEX A.7</span>
+                                    <span class="lg-grc-count">14 Controls</span>
+                                </div>
+                                <span class="lg-grc-name">Physical &amp; Environmental</span>
+                                <div class="lg-dist-track"><div class="lg-dist-fill is-emerald" style="width:38%"></div></div>
+                            </a>
+                            <a href="tools/grc-assessment/" class="lg-grc-domain-card">
+                                <div class="lg-grc-domain-top">
+                                    <span class="lg-grc-clause">ANNEX A.6</span>
+                                    <span class="lg-grc-count">8 Controls</span>
+                                </div>
+                                <span class="lg-grc-name">People &amp; Screening</span>
+                                <div class="lg-dist-track"><div class="lg-dist-fill is-emerald" style="width:24%"></div></div>
+                            </a>
+                        </div>
+
+                        <div class="lg-campaign-cloud">
+                            <a href="tools/grc-assessment/" class="lg-chip"><strong style="color:var(--lg-ink-1);">Scope Builder</strong></a>
+                            <a href="tools/grc-assessment/" class="lg-chip"><strong style="color:var(--lg-ink-1);">SoA Matrix Generator</strong></a>
+                            <a href="tools/grc-assessment/" class="lg-chip"><strong style="color:var(--lg-ink-1);">PDF &amp; CSV Audit Export</strong></a>
+                            <a href="tools/grc-assessment/iso27001-grc-guide.html" class="lg-chip">Implementation Guide &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">100% Client-Side &middot; Zero Data Uploaded</span>
+                        <a href="tools/grc-assessment/" class="lg-link-arrow">Start ISO 27001 Assessment &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 7: n8n Security & SOAR Workflows (workflows/) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-signal-amber)" stroke-width="1.75" aria-hidden="true">
+                                        <rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="15" y="3" width="6" height="6" rx="1.5"/><rect x="9" y="15" width="6" height="6" rx="1.5"/><path d="M6 9v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V9"/>
+                                    </svg>
+                                    <a href="workflows/">n8n Security &amp; SOAR Workflows</a>
+                                </h3>
+                                <p class="lg-module-sub">Ready-to-import JSON automation playbooks for SOC alerting &amp; triage</p>
+                            </div>
+                            <span class="lg-badge lg-badge-amber">SOAR JSON</span>
+                        </div>
+
+                        <div class="lg-kpi-trio">
+                            <div class="lg-kpi-cell">
+                                <span id="wfKpiPlaybooks" class="lg-kpi-val">6</span>
+                                <span class="lg-kpi-lbl">SOAR Playbooks</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span id="wfKpiNodes" class="lg-kpi-val">55</span>
+                                <span class="lg-kpi-lbl">Total Nodes</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">10–35m</span>
+                                <span class="lg-kpi-lbl">Deploy Time</span>
+                            </div>
+                        </div>
+
+                        <div id="liveWorkflowRows" class="lg-feed-rows"></div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Self-Hosted &amp; Cloud n8n Compatible</span>
+                        <a href="workflows/" class="lg-link-arrow">Browse SOAR Playbooks &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Tool 8: Security Platform Comparisons (comparisons/) -->
+                <article class="lg-glass-card lg-intel-module">
+                    <div style="display:flex;flex-direction:column;gap:0.95rem;">
+                        <div class="lg-module-head">
+                            <div class="lg-module-title-wrap">
+                                <h3 class="lg-module-title">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--lg-signal-blue)" stroke-width="1.75" aria-hidden="true">
+                                        <path d="M16 3h5v5M8 3H3v5M3 16v5h5M21 16v5h-5"/><line x1="12" y1="3" x2="12" y2="21"/>
+                                    </svg>
+                                    <a href="comparisons/">Security Platform Comparisons</a>
+                                </h3>
+                                <p class="lg-module-sub">Vendor-neutral head-to-head architecture, TCO &amp; practitioner scorecards</p>
+                            </div>
+                            <span class="lg-badge lg-badge-blue">Unbiased</span>
+                        </div>
+
+                        <div class="lg-kpi-trio">
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">9</span>
+                                <span class="lg-kpi-lbl">Platforms Audited</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">1,300+</span>
+                                <span class="lg-kpi-lbl">User Reviews</span>
+                            </div>
+                            <div class="lg-kpi-cell">
+                                <span class="lg-kpi-val">0%</span>
+                                <span class="lg-kpi-lbl">Sponsored Bias</span>
+                            </div>
+                        </div>
+
+                        <div class="lg-feed-rows">
+                            <a href="comparisons/crowdstrike-vs-microsoft-defender-vs-cortex-xdr.html" class="lg-feed-row">
+                                <div class="lg-feed-row-main">
+                                    <span class="lg-feed-row-id">CrowdStrike vs Microsoft Defender vs Cortex XDR</span>
+                                    <span class="lg-feed-row-sub">Enterprise EDR / XDR &bull; Telemetry depth, MITRE ATT&amp;CK &amp; licensing</span>
+                                </div>
+                                <span class="lg-chip" style="flex-shrink:0;">EDR / XDR</span>
+                            </a>
+                            <a href="comparisons/splunk-vs-elastic-security-vs-logrhythm.html" class="lg-feed-row">
+                                <div class="lg-feed-row-main">
+                                    <span class="lg-feed-row-id">Splunk (4.3★) vs Elastic Security (4.4★) vs LogRhythm</span>
+                                    <span class="lg-feed-row-sub">Enterprise SIEM &bull; Ingest TCO, Gartner MQ &amp; detection speed</span>
+                                </div>
+                                <span class="lg-chip" style="flex-shrink:0;">SIEM</span>
+                            </a>
+                            <a href="comparisons/proofpoint-vs-mimecast-vs-microsoft-defender-o365.html" class="lg-feed-row">
+                                <div class="lg-feed-row-main">
+                                    <span class="lg-feed-row-id">Proofpoint vs Mimecast vs Defender for Office 365</span>
+                                    <span class="lg-feed-row-sub">Email Security &bull; BEC detection, API vs SEG &amp; DMARC controls</span>
+                                </div>
+                                <span class="lg-chip" style="flex-shrink:0;">Email Sec</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg-module-foot">
+                        <span style="color:var(--lg-ink-3);font-family:var(--lg-font-mono);font-size:0.71rem;">Gartner MQ + G2 Practitioner Data</span>
+                        <a href="comparisons/" class="lg-link-arrow">Open Tool Comparisons &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ==========================================================================
+     NATIVE LIGHT-DISMISS LIQUID GLASS BRIEFING & DOSSIER DIALOG
+     ========================================================================== -->
+<dialog id="shortReaderDialog" class="lg-dialog" closedby="any" aria-label="Intelligence Briefing Reader">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding-bottom:0.85rem;margin-bottom:0.95rem;border-bottom:1px solid var(--lg-border-subtle);">
+        <span style="font-family:var(--lg-font-mono);font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--lg-ink-3);">
+            TheHGTech Intelligence Reader
+        </span>
+        <form method="dialog" style="margin:0;">
+            <button type="submit" class="lg-btn-glass" style="padding:0.32rem 0.78rem;font-size:0.76rem;" aria-label="Close Reader">
+                Close &times;
+            </button>
+        </form>
+    </div>
+    <div id="shortDialogBody" style="display:flex;flex-direction:column;gap:1.1rem;"></div>
+</dialog>
+
+<!-- ==========================================================================
+     UNIFIED 5-COLUMN FOOTER
+     ========================================================================== -->
+<footer class="footer" role="contentinfo">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Col 1: Brand & Social -->
+            <div class="footer-brand">
+                <a href="homepage-mockup.html" class="footer-brand-logo" aria-label="TheHGTech Home">
+                    <img src="assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                    <img src="assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light" style="display: none;">
+                    <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                        <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">
+                    Independent security research, twice-daily executive briefings, practitioner field manuals, and live threat intelligence.
+                </p>
+                <div class="footer-social-row">
+                    <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#news">Daily News Shorts</a></li>
+                    <li><a href="articles.html">Articles Portal</a></li>
+                    <li><a href="article-list.html">Research Library</a></li>
+                    <li><a href="guides/">Security Guides</a></li>
+                    <li><a href="comparisons/">Tool Comparisons</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Security Tools -->
+            <div class="footer-col">
+                <h4>Security Tools</h4>
+                <ul class="footer-links">
+                    <li><a href="threat-intel.html">Threat Intelligence</a></li>
+                    <li><a href="cve-tracker.html">CVE Triage Workbench</a></li>
+                    <li><a href="ransomware-tracker.html">Ransomware Tracker</a></li>
+                    <li><a href="hacker-chatter.html">Hacker Chatter</a></li>
+                    <li><a href="tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                    <li><a href="cve-tracker.html?filter=zeroday">Zero-Day Checker</a></li>
+                    <li><a href="workflows/">n8n Workflows</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Publication -->
+            <div class="footer-col">
+                <h4>Publication</h4>
+                <ul class="footer-links">
+                    <li><a href="editorial-standards.html">Editorial Standards</a></li>
+                    <li><a href="rss.xml">RSS Feed</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="contact.html">Contact Editorial</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Developers -->
+            <div class="footer-col">
+                <h4>Developers</h4>
+                <ul class="footer-links">
+                    <li><a href="embed-cve-widget.html">Embed CVE Widget</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Threat Intel Live Bar -->
+        <div class="footer-live-intel">
+            <div class="footer-live-intel-info">
+                <span class="footer-live-badge"><span class="glass-pulse-dot"></span> Live</span>
+                <strong style="color:var(--lg-ink-1);font-size:0.84rem;">CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+            </div>
+            <a href="threat-intel.html" class="footer-live-link">
+                <span>View Live Dashboard</span> &rarr;
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Live Twice-Daily News Shorts Data Source -->
+<script src="content.js"></script>
+
+<!-- Dynamic Liquid Glass Homepage Engine -->
+<script src="js/homepage-dynamic.js?v=20261102" defer></script>
+
+<!-- Shared Unified Theme Switch, Command Center, Command Palette & Mobile Navigation -->
+<script src="theme-toggle.js?v=20261102" defer></script>
+<script src="ui-enhancements.js?v=20260517" defer></script>
+<script src="command-palette.js" defer></script>
+<script src="mobile-nav.js" defer></script>
+
+</body>
+</html>
