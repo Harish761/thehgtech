@@ -4,12 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Oct 31 2026",
-            "headline": "Ivanti Chain Flaws Grant Root Access",
-            "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two critical Ivanti Connect Secure (ICS) vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog after active exploitation. Attackers are chaining CVE-2026-111357 and another unpatched flaw to achieve unauthenticated root access on compromised Linux systems. The exploit chain allows threat actors to bypass authentication, escalate privileges, and maintain persistence on vulnerable VPN gateways. Organizations running Ivanti ICS must immediately apply the latest security patches to mitigate the risk of complete system compromise. This incident underscores the persistent targeting of remote access infrastructure by advanced threat groups.",
+            "date": "Nov 02 2026",
+            "headline": "Linux DDoS Botnet Exploits Unpatched Systems",
+            "title": "Weekly Recap Highlights Critical CVEs, Linux DDoS Botnet, and Device-Code Phishing",
+            "content": "This week's cybersecurity landscape featured a diverse array of threats, from low-effort social engineering to sophisticated botnets. A Linux-based botnet is actively targeting unpatched systems for distributed denial-of-service (DDoS) attacks. Concurrently, attackers are exploiting device-code phishing schemes and leveraging trusted browser extensions for unauthorized access. These incidents underscore the critical need for robust patch management and user education. Organizations must enforce strict endpoint security and continuously monitor for anomalous network traffic.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+            "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Revolve Breach Exposes 180,000 Customers",
+            "title": "Revolve Data Breach Impacts at Least 180,000 People",
+            "content": "Hackers successfully infiltrated Revolve's online shopping platform, compromising the personal and payment card information of at least 180,000 customers. The breach highlights the ongoing risks associated with third-party e-commerce integrations and cloud infrastructure. Affected individuals are at high risk of financial fraud and targeted phishing campaigns. Revolve has initiated a forensic investigation and is notifying impacted users directly. Consumers should monitor their financial statements and enable two-factor authentication (2FA) on all accounts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Langflow Flaws Enable Unauthenticated RCE",
+            "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+            "content": "IBM identified two critical vulnerabilities in Langflow, an open-source AI workflow tool, that allow unauthenticated remote code execution (RCE) on servers. The flaws, tracked as CVE-2024-21213 and CVE-2024-21214, affect all versions from 1.0.0 through 1.12.8. A remote attacker can exploit these weaknesses to bypass authentication and execute arbitrary commands. Organizations using Langflow must upgrade to version 1.12.9 or later immediately. This incident highlights the growing security challenges within the AI development ecosystem.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "40% of SOCs Use AI—Are They Ready?",
+            "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+            "content": "A new survey reveals that 40% of security operations centers (SOCs) now use artificial intelligence (AI) daily, while 56% are actively testing it. With such rapid adoption, only 4% of surveyed organizations have no plans to implement AI-driven security tools. However, many teams lack the maturity to secure these new AI agents effectively. Security leaders must prioritize developing robust AI governance and threat modeling frameworks. Proactive security measures are essential to prevent AI agents from becoming attack vectors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Cursor Attack Deploys Malicious Claude Extension",
+            "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
+            "content": "Attackers compromised the popular Cursor code editor to distribute a malicious extension impersonating Claude Code. The extension performed host reconnaissance and attempted to establish a reverse SSH tunnel to exfiltrate data. This supply chain attack highlights the risks of relying on third-party extensions and package repositories. Developers using Cursor must verify the integrity of their installed tools and review extension permissions. Organizations should enforce strict software supply chain security policies and monitor for unauthorized network connections.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "AI Agents Breach Chainalysis—Data Leaked",
+            "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
+            "content": "Chainalysis disclosed a data breach after attackers utilized offensive agentic AI techniques to compromise the company's internal systems and tools. The attackers successfully exfiltrated sensitive data, including customer information and proprietary blockchain analytics. The incident highlights a growing trend where threat actors leverage autonomous AI systems to bypass traditional security controls. Organizations relying on advanced analytics platforms must review their access controls and monitoring protocols to mitigate similar risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Ivanti Patches 2 Zero-Days—CISA Adds to KEV",
+            "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
+            "content": "Ivanti has released security patches for two additional zero-day vulnerabilities, CVE-2026-111357 and CVE-2026-118527, which were chained in attacks targeting its Connect Secure VPN appliances. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added these flaws to its Known Exploited Vulnerabilities (KEV) catalog due to active exploitation. Attackers chain these flaws to achieve remote code execution, allowing them to compromise VPN infrastructure and pivot into internal networks. System administrators must immediately apply the latest Ivanti patches and audit their VPN logs for signs of intrusion.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Linux TCP Option Bug Enables 1-Byte DoS",
+            "title": "Mutipath TCP: Use and Detection",
+            "content": "A vulnerability in the Linux implementation of Multipath TCP (RFC 8684, CVE-2026-98432) allows an attacker to crash network connections using a single malformed byte. The flaw targets an often-ignored TCP option introduced in 2020, enabling a denial-of-service (DoS) attack that disrupts data transmission. This vulnerability affects all modern Linux distributions and can be exploited remotely without authentication. Network defenders should deploy detection signatures for anomalous TCP options and update their Linux kernels to mitigate the risk of connection-flooding attacks.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Cursor Removes Malicious Claude Code Extension",
+            "title": "Cursor removes malicious Claude Code extension after SSH backdoor attempt",
+            "content": "Cursor, a popular AI-powered code editor, removed a malicious version of Anthropic’s Claude Code extension distributed via its marketplace. The compromised extension attempted to install a persistent Secure Shell (SSH) backdoor on developers' machines, granting attackers remote access to source code and credentials. This attack demonstrates how supply chain compromises in developer tools can directly threaten intellectual property and corporate networks. Developers must verify the integrity of all marketplace extensions and monitor for unauthorized SSH connections on their systems.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4243210/cursor-removes-malicious-claude-code-extension-after-ssh-backdoor-attempt.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Google Takedowns 1.3M Device Android Botnet",
+            "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+            "content": "Google dismantled a massive Android botnet comprising over 1.3 million devices, primarily TV set-top boxes, by seizing its command-and-control servers. The company alleges that device manufacturer Videostrong intentionally embedded a backdoor in its hardware and sold remote access to criminal affiliates. This takedown prevented the botnet from executing large-scale distributed denial-of-service (DDoS) attacks and data theft operations. Users of Videostrong devices should immediately update their firmware to revoke any unauthorized remote access and disable remote management features.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
             "relatedResources": []
         },
         {
@@ -19,78 +100,6 @@ const websiteContent = {
             "content": "Cybersecurity researchers identified VOLTA-AUTODOXER (VOLTA), a new Windows infostealer that leverages large language models (LLMs) like Claude, Gemini, and Kimi to prioritize stolen data. The malware harvests credentials and browser data, then uses AI to calculate a victim's monetization value based on financial information. This AI integration allows threat actors to focus their efforts on high-value targets, increasing the return on investment for cybercrime operations. Users should maintain strict password hygiene and deploy endpoint detection and response (EDR) solutions to mitigate the risk of data theft. The emergence of AI-driven crimeware signals a dangerous evolution in the cybercrime economy.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Operation Blackout Dismantles Scam Centers",
-            "title": "Behind the Scenes of How Operation Blackout Went Down",
-            "content": "A recent law enforcement operation successfully dismantled a network of harmful scam centers, marking a major victory against organized cybercrime. Threat intelligence experts revealed that the coordinated takedown targeted call centers responsible for large-scale financial fraud and social engineering attacks. The operation highlights the growing effectiveness of international cooperation in combating transnational cybercrime syndicates. Security professionals should monitor dark web forums for indicators of compromise (IoCs) associated with these specific threat actors. Continued investment in threat intelligence sharing is critical to sustaining these successes and preventing the rapid re-emergence of these criminal enterprises.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Apple Warns 99 Countries of Spyware",
-            "title": "Apple notifications alert victims in 99 countries about mercenary spyware infections",
-            "content": "Apple has sent security notifications to users in 99 countries, warning them of potential mercenary spyware infections on their devices. The alerts target users of iPhones and iPads, indicating that sophisticated threat actors may have deployed commercial spyware to compromise their privacy and communications. This move comes ahead of the Pall Mall Process, an international initiative negotiating guidelines for the use of commercial hacking tools. The notifications empower victims to take immediate steps to secure their accounts, including enabling two-factor authentication (2FA) and changing passwords. This highlights the growing threat of state-sponsored and commercial surveillance tools targeting a global user base.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/apple-spyware-notifications-pall-mall-process/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "PHP2Shell Enables Linux Root Access",
-            "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
-            "content": "Attackers are exploiting the PHP2Shell vulnerability alongside a new Fragnesia Linux kernel flaw to achieve remote code execution and root access on compromised web servers. The Fragnesia vulnerability is a high-severity privilege escalation flaw that allows unprivileged users to gain system-level control. CISA has issued a warning, urging organizations to patch their Linux systems immediately to prevent attackers from compromising critical infrastructure. This attack chain targets the initial web server compromise to pivot into the underlying operating system, bypassing standard security controls. System administrators must verify that all Linux kernels are updated to the latest stable versions to mitigate this critical risk.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Volt Typhoon Pre-Positions for Infrastructure Attacks",
-            "title": "China's Volt Typhoon Group Pre-Positions Access for Potential Infrastructure Assaults",
-            "content": "Lumen's Black Lotus Labs identified pre-positioning activities by China's Volt Typhoon group within strategic communications and critical infrastructure ecosystems. The group utilized the \"Silent Train\" attack tactic to establish persistent access without immediate detection. These efforts indicate a potential shift toward large-scale disruptive operations against essential services. Security teams must audit for anomalous access patterns and strengthen network segmentation.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4242439/a-deep-dive-into-chinas-volt-typhoon-suggests-it-is-preparing-for-an-assault-on-infrastructure.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 29 2026",
-            "headline": "Local Ghidra Server Boosts Malware Lab Efficiency",
-            "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab",
-            "content": "A local Ghidra server streamlines malware analysis workflows by enabling persistent, collaborative reverse engineering. Administrators can deploy it to manage shared disassembly projects and custom scripts across a team. The setup supports snapshot-based virtualization, allowing analysts to revert to clean states after executing malicious payloads. This architecture significantly reduces tool latency compared to cloud-based alternatives.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33470",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "GhostAction Shifts to Cloud and Developer Endpoints",
-            "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
-            "content": "The GhostAction supply chain attack campaign has pivoted from initial targets to focus on developer endpoints and cloud access. This shift suggests the threat actors are targeting software development environments to compromise build pipelines. Security teams should enforce strict access controls and monitor for unauthorized cloud credential usage. The campaign highlights the ongoing risk of insider threats within DevOps workflows.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 28 2026",
-            "headline": "Hive Affiliate Sentenced to 70 Months for Ransomware",
-            "title": "Hive ransomware affiliate jailed, years after FBI infiltrated the gang's systems",
-            "content": "A Ukrainian national received a 70-month prison sentence for executing ransomware attacks as an affiliate for the Hive and Nefilim gangs. The individual targeted law firms and a healthcare provider, encrypting sensitive data and demanding payment during the COVID-19 pandemic. The conviction follows a multi-year FBI operation that successfully infiltrated the Hive gang's infrastructure. Organizations should maintain offline backups and test incident response plans regularly.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hive-ransomware-jailed-fbi-infiltrated",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 27 2026",
-            "headline": "ShinyHunters Exploits PeopleSoft SSRF to RCE",
-            "title": "CVE-2026-35273: SSRF to RCE in Oracle PeopleSoft",
-            "content": "The ShinyHunters group is actively exploiting CVE-2026-35273, a Server-Side Request Forgery (SSRF) vulnerability in Oracle PeopleSoft, to achieve Remote Code Execution (RCE). Mandiant reported continued mass exploitation of this flaw, which was initially disclosed to Oracle on June 10, 2026. The vulnerability allows attackers to bypass authentication and execute arbitrary code on affected servers. Administrators must apply Oracle's latest security patches to mitigate the risk.",
-            "source": "Zero Day Initiative - Blog",
-            "sourceUrl": "https://www.thezdi.com/blog/2026/10/20/cve-2026-35273-ssrf-to-rce-in-oracle-peoplesoft",
             "relatedResources": []
         },
         {
@@ -141,6 +150,96 @@ const websiteContent = {
     ],
     "aiShorts": [
         {
+            "date": "Nov 02 2026",
+            "headline": "$16M Deal: Omen AI Buys Aquatic Labs",
+            "title": "Omen AI Acquires Aquatic Labs for $16 Million to Solve Data Center Water Crisis",
+            "content": "Omen AI has acquired Aquatic Labs in a $16 million deal to consolidate expertise in liquid cooling for hyperscale data centers. The combined entity will integrate Aquatic Labs' thermal management algorithms with Omen AI's AI-driven predictive modeling to optimize water usage and prevent leaks. This move directly addresses the escalating water consumption of modern AI training clusters, which can use millions of gallons annually. The integration is expected to reduce water waste by up to 30% in partner facilities. Data center operators should evaluate Omen AI's combined platform for their next-generation cooling infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Squarespace Cuts 19% of Workforce",
+            "title": "Squarespace Restructures, Laying Off 19% of Employees",
+            "content": "Website builder Squarespace is eliminating 19% of its workforce as part of a broader corporate restructuring. The layoffs impact approximately 400 employees across engineering, marketing, and support divisions globally. The company stated the cuts are designed to streamline operations and accelerate its pivot toward an AI-driven website builder platform. This represents one of the largest tech workforce reductions of 2026. Developers and marketers should monitor Squarespace's API stability and feature roadmap for potential service interruptions during this transition.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "NYT Sues Brave Over Content Scraping",
+            "title": "New York Times Sues Brave Browser Over Alleged AI Content Scraping",
+            "content": "The New York Times and other major publishers have filed a lawsuit against the privacy-focused Brave browser. The complaint alleges Brave unlawfully scraped copyrighted news content to train its AI models and distribute it to customers like Anthropic and Perplexity. This legal action highlights the growing friction between legacy media and AI companies over data usage rights. The outcome of this case will set a critical precedent for AI training data sourcing. Publishers and developers must closely track the litigation's impact on web scraping ethics and AI data acquisition strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Anthropic Bans Claude AI for Video Game Clones",
+            "title": "Anthropic Updates Claude Code to Block Video Game Recreation",
+            "content": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from generating clones or decompilations of existing video games. The policy change targets the current surge in AI-made game ports and recompilations that violate intellectual property rights. While users can still discuss game mechanics, Claude Code will now refuse to write code that replicates proprietary game engines or assets. Retro gaming communities and developers should note this restriction, which aligns Claude Code with stricter IP enforcement. This shift reflects growing pressure on AI vendors to prevent copyright infringement in creative coding.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Pilots Grid Protectors in Georgia",
+            "title": "OpenAI Launches Grid Protectors Program in Georgia",
+            "content": "OpenAI will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, to enhance local grid resilience. The program promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners for approximately 700,000 homes. This initiative addresses the massive energy demands of AI infrastructure, which is straining regional power grids. Local municipalities and utility providers should engage with OpenAI's grid integration plans to prevent brownouts. The pilot will serve as a blueprint for future AI facility deployments in high-demand regions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "NYT Sues Brave—AI Scraping, Paywall Bypass",
+            "title": "The New York Times and Other Publications File Lawsuit Against Brave Browser for AI Scraping and Paywall Bypass",
+            "content": "The New York Times and other publishers have filed a lawsuit against Brave, alleging the browser unlawfully scrapes content to train AI models and allows users to bypass digital paywalls. The complaint specifically targets Brave's automated web scraping and its \"Brave Search\" AI summarization features. This legal action highlights the escalating conflict between traditional media and AI companies over intellectual property rights. Publishers face revenue erosion as AI systems replicate their content without compensation. Users should be aware that AI-driven browsers may operate in legally ambiguous gray areas regarding content access.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "42AI's $62.5M World Model Predicts Human Behavior",
+            "title": "42AI Secures $62.5M to Launch a World Model That Predicts Human Behavior",
+            "content": "French AI startup 42AI has emerged from stealth mode, raising $62.5 million to develop a world model capable of predicting human behavior in novel situations. The company's proprietary model aims to simulate complex decision-making processes, moving beyond traditional language prediction. This development signals a shift toward more advanced, reasoning-based AI architectures. The technology could impact sectors from autonomous driving to personalized healthcare. Developers and security professionals should monitor 42AI's progress for potential integration into enterprise systems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Musk Throttles Grok—Unsustainably High Costs",
+            "title": "Elon Musk Imposes Grok Bot Limits Citing Unsustainably High Infrastructure Costs",
+            "content": "Elon Musk has implemented usage throttling on xAI's Grok Bot, citing \"unsustainably high\" computational costs associated with its rapid user growth. The move directly impacts Grok's availability on X, limiting the number of prompts users can send. This decision underscores the significant financial burden of running large language models (LLMs) at scale. xAI must balance user demand with the high expenses of GPU clusters and data centers. Users should expect intermittent access to Grok features until xAI secures more efficient infrastructure.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Launches Grid Protectors Program",
+            "title": "OpenAI Launches Grid Protectors Program to Support Utility Grid Reliability",
+            "content": "OpenAI has introduced the Grid Protectors Program, a new initiative to collaborate with utility companies on supporting grid reliability for future AI compute campuses. The program aims to mitigate the strain that massive data centers place on local power grids, protecting consumer electricity costs from volatile demand spikes. As AI training requires immense power, this proactive approach addresses a growing infrastructure bottleneck. The initiative will likely involve advanced grid monitoring and load-balancing technologies. Stakeholders in the energy and tech sectors should monitor this program for potential partnerships.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/grid-protectors-program",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "ChatGPT Merges Chat and Work Tabs",
+            "title": "OpenAI Merges ChatGPT's Chat and Work Tabs into Unified Allocation Pool",
+            "content": "OpenAI has announced the merging of ChatGPT's Chat and Work tabs, drawing usage from the same allocation pool under a new subscription tier. This change means that interactions with the standard ChatGPT and the advanced Codex coding assistant will share a common usage limit. The move aims to simplify the user interface and streamline resource management across OpenAI's platform. It may affect developers and power users who previously relied on separate, higher limits for Codex. Users should review their new usage metrics to avoid unexpected service interruptions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 01 2026",
             "headline": "OpenAI Renames Data Centers to AI Compute Campuses",
             "title": "OpenAI Considers Rebranding Data Centers as 'AI Compute Campuses' to Improve Public Perception",
@@ -159,111 +258,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Oct 31 2026",
-            "headline": "OpenAI Lowers Funding Target Amid Investor Hesitation",
-            "title": "OpenAI Lowers Funding Target for New Round Amid Investor Skepticism",
-            "content": "OpenAI has reportedly reduced its target valuation for a new funding round, signaling a shift in investor sentiment regarding the company's long-term revenue potential. The adjustment comes after initial discussions reportedly failed to generate the expected level of capital commitment. This development impacts OpenAI's ability to finance the massive computational costs of training and deploying its large language models. Investors are now demanding clearer paths to profitability before committing to the previously anticipated funding levels.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 31 2026",
-            "headline": "Meta's AI Tamagotchi vs. Independent Developer",
-            "title": "Meta's AI Tamagotchi vs. Independent Developer: The Holiday Charm War",
-            "content": "Meta is preparing to sell its AI-powered \"Muse Charm,\" a physical Tamagotchi-style device designed to carry an AI companion, just ahead of the holiday season. The product follows a trend of making AI interfaces more tangible and emotionally engaging through physical hardware. Independent developers, however, are already creating similar AI pet experiences, indicating a rapidly growing market for interactive AI toys. Consumers are now faced with a choice between Meta's polished, integrated ecosystem and more experimental, independent alternatives.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/gadgets/1013375/muse-charm-gadgets-preview-waveshare-esp32-claude-vibe-code",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 31 2026",
-            "headline": "Nvidia Cosigns Nscale's $1B AI Data Center Loan",
-            "title": "Nvidia Weighs Cosigning Nscale's $1B AI Data Center Loan in West Virginia",
-            "content": "Nvidia is considering acting as a cosigner for a massive loan backing Nscale's new AI data center in West Virginia, a move designed to reassure nervous investors about the project's financial viability. This arrangement directly addresses recent market concerns regarding the return on investment for massive AI infrastructure spending. The partnership underscores the critical role of chip suppliers in stabilizing the broader AI hardware supply chain. Nscale's West Virginia facility is expected to house thousands of Nvidia GPUs to support enterprise AI workloads.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Privacy-Focused AI Assistant Ollie Shuts Down",
-            "title": "Ollie AI Assistant Shuts Down After Privacy-Focused Model Fails to Compete",
-            "content": "Ollie, an AI assistant designed to respect user privacy, is shutting down in one week as its founder concedes the market is flooded with less-private competitors. The assistant differentiated itself by processing user data locally, avoiding cloud-based data harvesting common in the industry. The closure signals a tough market for privacy-first AI startups facing pressure from larger, resource-rich tech giants. Developers and security professionals should note the end of this niche project as a consolidation trend in the consumer AI space.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Apple Intelligence Launches in China",
-            "title": "Apple Intelligence Arrives in China with iOS 27.3 Beta",
-            "content": "Apple will launch its Apple Intelligence suite in China with iOS 27.3, the company announced on its Chinese newsroom website. The AI features will be available first in an iOS 27.3 beta launching November 4th, followed by a full public release. This move expands Apple's on-device AI capabilities to one of its largest smartphone markets, though specific regional limitations remain. Users should update to the beta to test the new AI features, but wait for the stable release for critical functions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "OpenAI CEO Defends AI Math Output",
-            "title": "OpenAI CEO Defends AI Math Results, Vows to Continue",
-            "content": "OpenAI CEO Sam Altman expressed sympathy for mathematicians struggling with an influx of AI-generated research results, but stated the company will not halt its AI development. He hinted that OpenAI's stockpile of advanced models could yield even more significant mathematical breakthroughs in the future. This aggressive push into academic research is disrupting traditional peer-review processes and challenging human researchers. Security professionals should monitor for potential data poisoning or model manipulation in these automated outputs.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "Maine Data Center Protests Target AI",
-            "title": "Maine Data Center Protests Highlight AI's Political Impact",
-            "content": "Maine Sen. Susan Collins faced public backlash during a midterm debate over AI data centers' environmental impact, with a constituent shouting about climate and water poisoning. The protests reflect growing public concern over the massive energy and water consumption required to power large-scale AI infrastructure. This local political issue could influence national policy on data center construction and AI regulation. Voters and tech leaders should engage with local zoning and environmental policies regarding data center development.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 30 2026",
-            "headline": "OpenAI Adopts robots.txt for AI Training",
-            "title": "OpenAI Adopts robots.txt for Website AI Training Preferences",
-            "content": "OpenAI will now honor the shared robots.txt standard, allowing website operators to communicate their AI training preferences directly to participating providers. This standard enables site owners to specify which parts of their content AI crawlers can access and use for training data. The move provides a technical mechanism for content creators to control how their data is used by large language models. Webmasters should update their robots.txt files to opt out of AI training if they wish to protect their content.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-            "relatedResources": []
-        },
-        {
             "date": "Nov 01 2026",
             "headline": "AI Hiker Bots Cause Deadly Backcountry Misadventures",
             "title": "Critical Thinking Erosion by AI Planning Tools Leads to Dangerous Hiking Outcomes",
             "content": "Outsourcing trip planning to AI chatbots has led hikers to surrender their critical thinking, resulting in potentially fatal consequences in remote backcountry areas. These AI systems often generate inaccurate trail maps and unsafe route suggestions without real-time verification. The lack of human judgment in assessing weather, terrain, and personal physical limits creates a severe safety risk for users. Hikers must verify all AI-generated plans against authoritative local park services and weather reports before departure. This trend highlights a growing vulnerability as AI adoption increases in high-stakes, real-world navigation scenarios.",
             "source": "Artificial Intelligence Latest",
             "sourceUrl": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 31 2026",
-            "headline": "Apple CEO: We Don't Ship AI for AI's Sake",
-            "title": "Apple CEO Defends Strategic AI Focus, Rejecting Unnecessary Feature Integration",
-            "content": "Apple's new CEO defended the company's deliberate and measured approach to integrating artificial intelligence (AI) into its product ecosystem. He emphasized that Apple prioritizes practical utility and user benefit over deploying AI features solely for market competition. This stance reflects a strategic decision to avoid shipping AI functionalities that do not enhance core user experiences or solve tangible problems. The company is expected to continue focusing on on-device processing and privacy-centric AI models.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 31 2026",
-            "headline": "TechCrunch Summit: 4 Days Left for Early Bird Rates",
-            "title": "TechCrunch Founder Summit in Boston Offers Networking and Startup Insights",
-            "content": "TechCrunch's annual Founder Summit is scheduled for November 4 at Boston's SoWa Power Station, offering a full day of actionable insights and meaningful networking. The event is designed to help founders scale their ideas by connecting them with industry leaders and potential investors. Early bird registration is currently open, with prices set to increase at the door. Prospective attendees are advised to secure their spots immediately to take advantage of the current rates.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
-            "relatedResources": []
-        },
-        {
-            "date": "Oct 31 2026",
-            "headline": "NAACP Clears Path for xAI Clean Air Act Lawsuit",
-            "title": "NAACP Lawsuit Against xAI for Clean Air Act Violations Proceeds",
-            "content": "A federal judge has allowed an NAACP lawsuit against xAI to move forward, rejecting the company's motion to dismiss. The lawsuit accuses the SpaceX-owned AI company of violating the Clean Air Act by contributing to air pollution at its massive data center. The legal action highlights growing environmental scrutiny of the AI industry's energy-intensive infrastructure. This ruling sets the stage for a trial to determine if xAI's data center operations have caused measurable environmental harm.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
             "relatedResources": []
         }
     ],
