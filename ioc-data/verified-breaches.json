@@ -3227,7 +3227,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In approximately March 2020, the Brazilian recruitment website <a href=\"https://www.binarydefense.com/threat_watch/shinyhunters-serving-up-21-new-compromised-databases/\" target=\"_blank\" rel=\"noopener\">Catho was compromised and subsequently appeared alongside 20 other breached websites</a> listed for sale on a dark web marketplace. The breach included almost 11 million records with 1.2 million unique email addresses. Names, usernames and plain text passwords were also exposed. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In approximately March 2020, the Brazilian recruitment website <a href=\"https://www.binarydefense.com/threat_watch/shinyhunters-serving-up-21-new-compromised-databases/\" target=\"_blank\" rel=\"noopener\">Catho was compromised and subsequently appeared alongside 20 other breached websites</a> listed for sale on a dark web marketplace. The breach included almost 11 million records with 1.2 million unique email addresses. Names, usernames and plain text passwords were also exposed."
     }
   ],
   "catwatchful.com": [
@@ -7652,6 +7652,38 @@
       "Description": "In March 2026, <a href=\"https://cybernews.com/security/hallmark-data-breach-shinyhunters/\" target=\"_blank\" rel=\"noopener\">Hallmark suffered an alleged breach and subsequent extortion</a> after attackers gained access to data stored within Salesforce. The data was later published after the extortion deadline passed, exposing 1.7M unique email addresses across both Hallmark and the Hallmark+ streaming service, along with names, phone numbers, physical addresses and support tickets."
     }
   ],
+  "harvard.edu": [
+    {
+      "Name": "Harvard",
+      "Title": "Harvard",
+      "BreachDate": "2025-11-18",
+      "AddedDate": "2026-11-03T07:24:50Z",
+      "PwnCount": 850537,
+      "DataClasses": [
+        "Charitable donations",
+        "Citizenship statuses",
+        "Dates of birth",
+        "Education levels",
+        "Email addresses",
+        "Employers",
+        "Ethnicities",
+        "Family members' names",
+        "Genders",
+        "Job titles",
+        "Marital statuses",
+        "Names",
+        "Occupations",
+        "Phone numbers",
+        "Physical addresses",
+        "Places of birth",
+        "Salutations",
+        "Social media profiles"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In November 2025, <a href=\"https://techcrunch.com/2026/02/04/hackers-publish-personal-information-stolen-during-harvard-upenn-data-breaches/\" target=\"_blank\" rel=\"noopener\">Harvard University suffered a data breach later linked to a ShinyHunters \"pay or leak\" extortion attempt</a>. The data contained 851k unique email addresses relating to the university's alumni and fundraising systems, along with extensive profile information for donors, alumni, parents and some faculty, staff and students. In <a href=\"https://www.huit.harvard.edu/news/2025/11/recent-cybersecurity-incident-information-and-faq\" target=\"_blank\" rel=\"noopener\">Harvard's disclosure notice</a>, the university stated that the breach impacted \"personal information such as email addresses, telephone numbers, home and business addresses, event attendance, details of donations to the University, and other biographical information pertaining to University fundraising and alumni engagement activities\"."
+    }
+  ],
   "hathway.com": [
     {
       "Name": "Hathway",
@@ -9250,7 +9282,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2020, the Indonesian credit service <a href=\"https://nakedsecurity.sophos.com/2020/07/02/133m-records-for-sale-as-fruits-of-data-breach-spree-keep-raining-down/\" target=\"_blank\" rel=\"noopener\">Kreditplus suffered a data breach</a> which exposed 896k records containing 769k unique email addresses. The breach exposed extensive personal information including names, family makeup, information on spouses, income and expenses, religions and employment information. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In June 2020, the Indonesian credit service <a href=\"https://nakedsecurity.sophos.com/2020/07/02/133m-records-for-sale-as-fruits-of-data-breach-spree-keep-raining-down/\" target=\"_blank\" rel=\"noopener\">Kreditplus suffered a data breach</a> which exposed 896k records containing 769k unique email addresses. The breach exposed extensive personal information including names, family makeup, information on spouses, income and expenses, religions and employment information."
     }
   ],
   "lapostemobile.fr": [
@@ -9875,7 +9907,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2020, the online antiques marketplace <a href=\"https://portswigger.net/daily-swig/liveauctioneers-data-breach-millions-of-cracked-passwords-for-sale-say-researchers\" target=\"_blank\" rel=\"noopener\">LiveAuctioneers suffered a data breach</a> which was subsequently sold online then extensively redistributed in the hacking community. The data contained 3.4 million records including names, email and IP addresses, physical addresses, phones numbers and passwords stored as unsalted MD5 hashes. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In June 2020, the online antiques marketplace <a href=\"https://portswigger.net/daily-swig/liveauctioneers-data-breach-millions-of-cracked-passwords-for-sale-say-researchers\" target=\"_blank\" rel=\"noopener\">LiveAuctioneers suffered a data breach</a> which was subsequently sold online then extensively redistributed in the hacking community. The data contained 3.4 million records including names, email and IP addresses, physical addresses, phones numbers and passwords stored as unsalted MD5 hashes."
     }
   ],
   "livejournal.com": [
@@ -13200,7 +13232,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2020, the online exam service <a href=\"https://www.smh.com.au/national/hackers-hit-university-online-exam-tool-20200806-p55j6h.html\" target=\"_blank\" rel=\"noopener\">ProctorU suffered a data breach</a> which was subsequently shared extensively across online hacking communities. The breach contained 444k user records including names, email and physical addresses, phones numbers and passwords stored as bcrypt hashes. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In June 2020, the online exam service <a href=\"https://www.smh.com.au/national/hackers-hit-university-online-exam-tool-20200806-p55j6h.html\" target=\"_blank\" rel=\"noopener\">ProctorU suffered a data breach</a> which was subsequently shared extensively across online hacking communities. The breach contained 444k user records including names, email and physical addresses, phones numbers and passwords stored as bcrypt hashes."
     }
   ],
   "programmingforums.org": [
@@ -14309,7 +14341,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2020, the online fragrance service <a href=\"https://www.bleepingcomputer.com/news/security/hacker-leaks-386-million-user-records-from-18-companies-for-free/\" target=\"_blank\" rel=\"noopener\">Scentbird suffered a data breach</a> that exposed the personal information of over 5.8 million customers. Personal information including names, email addresses, genders, dates of birth, passwords stored as bcrypt hashes and indicators of password strength were all exposed. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In June 2020, the online fragrance service <a href=\"https://www.bleepingcomputer.com/news/security/hacker-leaks-386-million-user-records-from-18-companies-for-free/\" target=\"_blank\" rel=\"noopener\">Scentbird suffered a data breach</a> that exposed the personal information of over 5.8 million customers. Personal information including names, email addresses, genders, dates of birth, passwords stored as bcrypt hashes and indicators of password strength were all exposed."
     }
   ],
   "schenkyou.de": [
@@ -14951,7 +14983,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In December 2019, the booking website <a href=\"https://oag.ca.gov/system/files/Sonicbids%20-%20%20CA.pdf\" target=\"_blank\" rel=\"noopener\">Sonicbids suffered a data breach</a> which they attributed to \"a data privacy event involving our third-party cloud hosting services\". The breach contained 752k user records including names and usernames, email addresses and passwords stored as PBKDF2 hashes. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In December 2019, the booking website <a href=\"https://oag.ca.gov/system/files/Sonicbids%20-%20%20CA.pdf\" target=\"_blank\" rel=\"noopener\">Sonicbids suffered a data breach</a> which they attributed to \"a data privacy event involving our third-party cloud hosting services\". The breach contained 752k user records including names and usernames, email addresses and passwords stored as PBKDF2 hashes."
     }
   ],
   "sony.com": [
@@ -15780,7 +15812,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In June 2020, the Egyptian bus operator <a href=\"https://portswigger.net/daily-swig/egyptian-bus-operator-swvl-hit-by-data-breach\" target=\"_blank\" rel=\"noopener\">Swvl suffered a data breach</a> which impacted over 4 million members of the service. The exposed data included names, email addresses, phone numbers, profile photos, partial credit card data (type and last 4 digits) and passwords stored as bcrypt hashes, all of which was subsequently shared extensively throughout online hacking communities. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In June 2020, the Egyptian bus operator <a href=\"https://portswigger.net/daily-swig/egyptian-bus-operator-swvl-hit-by-data-breach\" target=\"_blank\" rel=\"noopener\">Swvl suffered a data breach</a> which impacted over 4 million members of the service. The exposed data included names, email addresses, phone numbers, profile photos, partial credit card data (type and last 4 digits) and passwords stored as bcrypt hashes, all of which was subsequently shared extensively throughout online hacking communities."
     }
   ],
   "sysco.com": [
@@ -17368,7 +17400,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In July 2020, <a href=\"https://www.forbes.com/sites/daveywinder/2020/08/15/gun-owners-beware-hacker-offers-240000-stolen-records-on-dark-web-report-utah-gun-exchange-amazon-cloud/\" target=\"_blank\" rel=\"noopener\">the Utah Gun Exchange website suffered a data breach</a> which included several other associated websites. In total, 235k unique email addresses were exposed before being traded online alongside names, usernames, genders, IP addresses and password hashes. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In July 2020, <a href=\"https://www.forbes.com/sites/daveywinder/2020/08/15/gun-owners-beware-hacker-offers-240000-stolen-records-on-dark-web-report-utah-gun-exchange-amazon-cloud/\" target=\"_blank\" rel=\"noopener\">the Utah Gun Exchange website suffered a data breach</a> which included several other associated websites. In total, 235k unique email addresses were exposed before being traded online alongside names, usernames, genders, IP addresses and password hashes."
     }
   ],
   "utair.ru": [
@@ -19081,7 +19113,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In January 2020, the online dating service <a href=\"https://grahamcluley.com/zoosk-hacking/\" target=\"_blank\" rel=\"noopener\">Zoosk suffered a data breach</a> which was subsequently shared extensively across online hacking communities. The breach contained 24 million unique email addresses alongside extensive personal information including genders, sexualities, dates of birth, physical attributes such as height and weight, religions, ethnicities and political views. The breach also allegedly exposed MD5 password hashes, although the data circulating in hacking circles had this field nulled out. The breach was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In January 2020, the online dating service <a href=\"https://grahamcluley.com/zoosk-hacking/\" target=\"_blank\" rel=\"noopener\">Zoosk suffered a data breach</a> which was subsequently shared extensively across online hacking communities. The breach contained 24 million unique email addresses alongside extensive personal information including genders, sexualities, dates of birth, physical attributes such as height and weight, religions, ethnicities and political views. The breach also allegedly exposed MD5 password hashes, although the data circulating in hacking circles had this field nulled out."
     }
   ],
   "zooville.org": [
@@ -19215,7 +19247,7 @@
       ],
       "IsVerified": true,
       "IsFabricated": false,
-      "Description": "In March 2020, the Korean interior decoration website <a href=\"https://www.bleepingcomputer.com/news/security/hacker-leaks-386-million-user-records-from-18-companies-for-free/\" target=\"_blank\" rel=\"noopener\">???? (Decorating the House) suffered a data breach</a> which impacted almost 1.3 million members. Served via the URL <a href=\"https://www.ggumim.co.kr/\" target=\"_blank\" rel=\"noopener\">ggumim.co.kr</a>, the exposed data included email addresses, names, usernames and phone numbers, all of which was subsequently shared extensively throughout online hacking communities. The data was provided to HIBP by <a href=\"https://breachbase.pw/\" target=\"_blank\" rel=\"noopener\">breachbase.pw</a>."
+      "Description": "In March 2020, the Korean interior decoration website <a href=\"https://www.bleepingcomputer.com/news/security/hacker-leaks-386-million-user-records-from-18-companies-for-free/\" target=\"_blank\" rel=\"noopener\">???? (Decorating the House) suffered a data breach</a> which impacted almost 1.3 million members. Served via the URL <a href=\"https://www.ggumim.co.kr/\" target=\"_blank\" rel=\"noopener\">ggumim.co.kr</a>, the exposed data included email addresses, names, usernames and phone numbers, all of which was subsequently shared extensively throughout online hacking communities."
     }
   ]
 }
