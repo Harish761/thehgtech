@@ -1,169 +1,395 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2026-11-04T01:01:31.179287+05:30 IST (2026-11-03 19:31 UTC)
+// Updated: 2026-11-04T05:05:06.785650+05:30 IST (2026-11-03 23:35 UTC)
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2026-11-04T01:01:30.379966+05:30",
-    "lastUpdatedFormatted": "Nov 04, 2026 at 01:01 AM IST",
-    "lastUpdatedUtc": "2026-11-03 19:31 UTC",
+    "lastUpdated": "2026-11-04T05:05:06.245272+05:30",
+    "lastUpdatedFormatted": "Nov 04, 2026 at 05:05 AM IST",
+    "lastUpdatedUtc": "2026-11-03 23:35 UTC",
     "comparisonPeriod": "Nov 03 \u2013 Nov 04, 2026",
     "stats": {
-        "totalIOCs": 104151,
+        "totalIOCs": 96577,
         "byType": {
-            "url": 39028,
-            "ip": 49494,
+            "url": 39218,
+            "ip": 50336,
             "hash": 641,
             "domain": 2158,
-            "ssl-cert": 11125,
-            "ip-range": 1705
+            "ssl-cert": 2501,
+            "ip-range": 1723
         },
         "byVendor": {
-            "OpenPhish": 3341,
+            "OpenPhish": 3531,
             "Malware Bazaar": 476,
-            "Spamhaus DROP": 1705,
-            "CINS Army": 36119,
-            "Blocklist.de": 10825,
+            "Spamhaus DROP": 1723,
+            "CINS Army": 36834,
+            "Blocklist.de": 10952,
             "URLhaus": 34528,
             "ThreatFox": 6027,
             "Feodo Tracker": 5,
-            "SSL Blacklist": 11125
+            "SSL Blacklist": 2501
         },
         "topMalware": [
             {
                 "name": "Vidar",
-                "count": 1706,
+                "count": 1495,
                 "types": [
-                    "domain",
                     "url",
+                    "hash",
                     "ssl-cert",
-                    "hash"
-                ]
-            },
-            {
-                "name": "AsyncRAT",
-                "count": 1628,
-                "types": [
-                    "domain",
-                    "ip",
-                    "ssl-cert",
-                    "hash"
+                    "domain"
                 ]
             },
             {
                 "name": "Cobalt Strike",
                 "count": 1183,
                 "types": [
+                    "hash",
                     "domain",
-                    "ip",
-                    "hash"
-                ]
-            },
-            {
-                "name": "Dridex",
-                "count": 737,
-                "types": [
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "QuasarRAT",
-                "count": 729,
-                "types": [
-                    "ssl-cert",
-                    "hash"
+                    "ip"
                 ]
             },
             {
                 "name": "IClickFix",
                 "count": 708,
                 "types": [
-                    "domain",
-                    "url"
+                    "url",
+                    "domain"
+                ]
+            },
+            {
+                "name": "PureRAT",
+                "count": 443,
+                "types": [
+                    "ssl-cert",
+                    "ip"
                 ]
             },
             {
                 "name": "OffLoader",
-                "count": 560,
+                "count": 304,
                 "types": [
                     "ssl-cert"
                 ]
             },
             {
                 "name": "ConnectWise",
-                "count": 559,
+                "count": 284,
+                "types": [
+                    "hash",
+                    "ssl-cert"
+                ]
+            },
+            {
+                "name": "AsyncRAT",
+                "count": 269,
+                "types": [
+                    "hash",
+                    "ssl-cert",
+                    "domain",
+                    "ip"
+                ]
+            },
+            {
+                "name": "Unknown Loader",
+                "count": 258,
+                "types": [
+                    "url",
+                    "hash",
+                    "domain"
+                ]
+            },
+            {
+                "name": "AdaptixC2",
+                "count": 244,
                 "types": [
                     "ssl-cert",
-                    "hash"
+                    "ip"
                 ]
             },
             {
-                "name": "LummaStealer",
-                "count": 558,
+                "name": "MacSync",
+                "count": 244,
+                "types": [
+                    "url",
+                    "domain"
+                ]
+            },
+            {
+                "name": "Remus",
+                "count": 199,
+                "types": [
+                    "url",
+                    "ip"
+                ]
+            },
+            {
+                "name": "PureLogsStealer",
+                "count": 186,
+                "types": [
+                    "hash",
+                    "ssl-cert"
+                ]
+            },
+            {
+                "name": "DanaBot",
+                "count": 177,
+                "types": [
+                    "ip"
+                ]
+            },
+            {
+                "name": "ACRStealer",
+                "count": 161,
                 "types": [
                     "ssl-cert"
                 ]
             },
             {
-                "name": "PureRAT",
-                "count": 448,
+                "name": "Remcos",
+                "count": 141,
                 "types": [
-                    "ip",
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "Malware",
-                "count": 424,
-                "types": [
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "Rhadamanthys",
-                "count": 355,
-                "types": [
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "DCRat",
-                "count": 349,
-                "types": [
-                    "ip",
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "Gozi",
-                "count": 349,
-                "types": [
-                    "ssl-cert"
-                ]
-            },
-            {
-                "name": "Quakbot",
-                "count": 292,
-                "types": [
-                    "ssl-cert"
+                    "domain",
+                    "ip"
                 ]
             }
         ],
         "recentIOCs": [
             {
+                "type": "ssl-cert",
+                "indicator": "34caba1bef1d1006199db86c6e2d5bf1d67c884e",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-11-03 17:43:08",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "277a06bc0dfdd0da5455bdb3d5b92f7cd5fc9520",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-11-03 16:33:57",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "b04b85ac36b0501fad420e3bc7976c3d31409b4e",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-11-03 16:33:46",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "70e5be14909fe413ceb33179b521e33253b23b25",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-11-03 16:32:56",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "aba67183b38e7af2ffbd3cde35fcaeb1ae838a6c",
+                "description": "Malicious SSL certificate - PureLogsStealer C&C",
+                "timestamp": "2026-11-03 16:30:45",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureLogsStealer",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "cb99d5384d603d6553a543c657cdd10245327790",
+                "description": "Malicious SSL certificate - AzaleaAgent C&C",
+                "timestamp": "2026-11-03 16:19:43",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "AzaleaAgent",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "071723a919a59de8e12007a28efe58cdce47582f",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-11-03 16:13:59",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "Vidar",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "51355dd769baf664063ba8e548fba4edbb43d30c",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-11-03 16:12:07",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "d17c1ce0af678753b38a651d6739399aa8e1a9dd",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-11-03 16:12:00",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "Vidar",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "14124f6716dafc9943ff7de4b0146934c488b6aa",
+                "description": "Malicious SSL certificate - PureRAT C&C",
+                "timestamp": "2026-11-03 16:10:37",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "PureRAT",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "c9ef1afcd9bedbf2dc024330895598c74da7cf1a",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-11-03 16:06:40",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "Vidar",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "d5374668b952d61a5b52d0f414ecf19c87302df7",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-11-03 16:05:27",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "Vidar",
+                "confidence": "High"
+            },
+            {
+                "type": "ssl-cert",
+                "indicator": "2264e0945e0afa792cdde7b564a6fb1d1e286618",
+                "description": "Malicious SSL certificate - Vidar C&C",
+                "timestamp": "2026-11-03 12:23:24",
+                "source": "SSL Blacklist",
+                "sourceUrl": "https://sslbl.abuse.ch/",
+                "analysisTime": "2026-11-04 01:01 IST",
+                "tags": [
+                    "ssl",
+                    "certificate",
+                    "c2"
+                ],
+                "addedAt": "2026-11-04T01:01:27.387010+05:30",
+                "campaign": "Vidar",
+                "confidence": "High"
+            },
+            {
                 "type": "ip",
                 "indicator": "162[.]243[.]103[.]246",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "addedAt": "2026-11-04T01:01:26.241413+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
@@ -171,16 +397,16 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "178[.]62[.]3[.]223",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "addedAt": "2026-11-04T01:01:26.241413+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
@@ -188,16 +414,16 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "27[.]133[.]154[.]218",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "addedAt": "2026-11-04T01:01:26.241413+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
@@ -205,16 +431,16 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "34[.]204[.]119[.]63",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "addedAt": "2026-11-04T01:01:26.241413+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
@@ -222,64 +448,32 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "50[.]16[.]16[.]211",
                 "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Feodo Tracker",
                 "sourceUrl": "https://feodotracker.abuse.ch/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "botnet",
                     "c2",
                     "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "addedAt": "2026-11-04T01:01:26.241413+05:30",
                 "campaign": "Banking Malware C2",
                 "confidence": "High (Active C2)"
             },
             {
                 "type": "ip",
-                "indicator": "1[.]117[.]73[.]220",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]12[.]55[.]80",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
                 "indicator": "1[.]14[.]192[.]95",
                 "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Blocklist.de",
                 "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "ssh",
                     "brute-force"
                 ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "addedAt": "2026-11-04T01:01:24.210382+05:30",
                 "campaign": "SSH Attacks",
                 "confidence": "Medium (Automated Report)"
             },
@@ -287,212 +481,36 @@ window.threatIntelData = {
                 "type": "ip",
                 "indicator": "1[.]14[.]240[.]247",
                 "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
+                "timestamp": "2026-11-04 01:01 UTC",
                 "source": "Blocklist.de",
                 "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
+                "analysisTime": "2026-11-04 01:01 IST",
                 "tags": [
                     "ssh",
                     "brute-force"
                 ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]162[.]226[.]183",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]214[.]214[.]114",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]222[.]42[.]237",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]234[.]80[.]94",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]238[.]106[.]229",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]245[.]161[.]206",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "1[.]95[.]133[.]61",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "100[.]26[.]98[.]21",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "101[.]100[.]194[.]181",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "101[.]126[.]11[.]137",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
-                "campaign": "SSH Attacks",
-                "confidence": "Medium (Automated Report)"
-            },
-            {
-                "type": "ip",
-                "indicator": "101[.]126[.]141[.]163",
-                "description": "SSH brute-force attacker",
-                "timestamp": "2026-11-03 17:20 UTC",
-                "source": "Blocklist.de",
-                "sourceUrl": "https://www.blocklist.de/",
-                "analysisTime": "2026-11-03 17:20 IST",
-                "tags": [
-                    "ssh",
-                    "brute-force"
-                ],
-                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "addedAt": "2026-11-04T01:01:24.210382+05:30",
                 "campaign": "SSH Attacks",
                 "confidence": "Medium (Automated Report)"
             }
         ],
-        "lastUpdated": "2026-11-04T01:01:30.379966+05:30",
-        "lastUpdatedFormatted": "Nov 04, 2026 at 01:01 AM IST",
-        "lastUpdatedUtc": "2026-11-03 19:31 UTC"
+        "lastUpdated": "2026-11-04T05:05:06.245272+05:30",
+        "lastUpdatedFormatted": "Nov 04, 2026 at 05:05 AM IST",
+        "lastUpdatedUtc": "2026-11-03 23:35 UTC"
     },
     "vendors": {
         "OpenPhish": {
             "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
             "website": "https://openphish.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 3531,
+            "iocCount": 3231,
             "iocDataUrl": "https://thehgtech.com/ioc-data/openphish.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 3531,
+                "total": 3231,
                 "newInLastHour": 300,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:34 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -518,7 +536,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 476,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:34 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
@@ -537,14 +555,14 @@ window.threatIntelData = {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1723,
+            "iocCount": 1645,
             "iocDataUrl": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 1723,
-                "newInLastHour": 55,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "total": 1645,
+                "newInLastHour": 41,
+                "lastUpdate": "2026-11-03 23:34 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -563,14 +581,14 @@ window.threatIntelData = {
             "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
             "website": "http://cinsscore.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 36834,
+            "iocCount": 34620,
             "iocDataUrl": "https://thehgtech.com/ioc-data/cins-army.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 36834,
+                "total": 34620,
                 "newInLastHour": 15000,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -589,14 +607,14 @@ window.threatIntelData = {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 10952,
+            "iocCount": 10609,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 10952,
-                "newInLastHour": 4824,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "total": 10609,
+                "newInLastHour": 4872,
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -622,7 +640,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 34528,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
@@ -648,15 +666,15 @@ window.threatIntelData = {
             "stats": {
                 "total": 6027,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
             "types": [
-                "domain",
-                "ip",
                 "url",
-                "hash"
+                "hash",
+                "domain",
+                "ip"
             ],
             "sampleIndicators": [
                 "b4ec1ea1528a1cf690b1067a214751cfee1ef0eca037c7989b4bef17fbf6b53b",
@@ -677,7 +695,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 5,
                 "newInLastHour": 5,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -696,14 +714,14 @@ window.threatIntelData = {
             "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
             "website": "https://sslbl.abuse.ch/",
             "updateFrequency": "Daily",
-            "iocCount": 2501,
+            "iocCount": 10985,
             "iocDataUrl": "https://thehgtech.com/ioc-data/ssl-blacklist.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 2501,
-                "newInLastHour": 13,
-                "lastUpdate": "2026-11-03 19:31 UTC",
+                "total": 10985,
+                "newInLastHour": 8637,
+                "lastUpdate": "2026-11-03 23:35 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -721,19 +739,240 @@ window.threatIntelData = {
     },
     "overview": [
         {
+            "type": "ssl-cert",
+            "indicator": "34caba1bef1d1006199db86c6e2d5bf1d67c884e",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-11-03 17:43:08",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "277a06bc0dfdd0da5455bdb3d5b92f7cd5fc9520",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-11-03 16:33:57",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "b04b85ac36b0501fad420e3bc7976c3d31409b4e",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-11-03 16:33:46",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "70e5be14909fe413ceb33179b521e33253b23b25",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-11-03 16:32:56",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "aba67183b38e7af2ffbd3cde35fcaeb1ae838a6c",
+            "description": "Malicious SSL certificate - PureLogsStealer C&C",
+            "timestamp": "2026-11-03 16:30:45",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureLogsStealer",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "cb99d5384d603d6553a543c657cdd10245327790",
+            "description": "Malicious SSL certificate - AzaleaAgent C&C",
+            "timestamp": "2026-11-03 16:19:43",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "AzaleaAgent",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "071723a919a59de8e12007a28efe58cdce47582f",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-11-03 16:13:59",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "51355dd769baf664063ba8e548fba4edbb43d30c",
+            "description": "Malicious SSL certificate - PureRAT C&C",
+            "timestamp": "2026-11-03 16:12:07",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "d17c1ce0af678753b38a651d6739399aa8e1a9dd",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-11-03 16:12:00",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "14124f6716dafc9943ff7de4b0146934c488b6aa",
+            "description": "Malicious SSL certificate - PureRAT C&C",
+            "timestamp": "2026-11-03 16:10:37",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "PureRAT",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "c9ef1afcd9bedbf2dc024330895598c74da7cf1a",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-11-03 16:06:40",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "d5374668b952d61a5b52d0f414ecf19c87302df7",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-11-03 16:05:27",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
+            "type": "ssl-cert",
+            "indicator": "2264e0945e0afa792cdde7b564a6fb1d1e286618",
+            "description": "Malicious SSL certificate - Vidar C&C",
+            "timestamp": "2026-11-03 12:23:24",
+            "source": "SSL Blacklist",
+            "sourceUrl": "https://sslbl.abuse.ch/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssl",
+                "certificate",
+                "c2"
+            ],
+            "addedAt": "2026-11-04T01:01:27.387010+05:30",
+            "campaign": "Vidar",
+            "confidence": "High"
+        },
+        {
             "type": "ip",
             "indicator": "162[.]243[.]103[.]246",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "addedAt": "2026-11-04T01:01:26.241413+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -741,16 +980,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "178[.]62[.]3[.]223",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "addedAt": "2026-11-04T01:01:26.241413+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -758,16 +997,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "27[.]133[.]154[.]218",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "addedAt": "2026-11-04T01:01:26.241413+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -775,16 +1014,16 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "34[.]204[.]119[.]63",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "addedAt": "2026-11-04T01:01:26.241413+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
@@ -792,64 +1031,32 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "50[.]16[.]16[.]211",
             "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Feodo Tracker",
             "sourceUrl": "https://feodotracker.abuse.ch/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "botnet",
                 "c2",
                 "banking-trojan"
             ],
-            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "addedAt": "2026-11-04T01:01:26.241413+05:30",
             "campaign": "Banking Malware C2",
             "confidence": "High (Active C2)"
         },
         {
             "type": "ip",
-            "indicator": "1[.]117[.]73[.]220",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]12[.]55[.]80",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
             "indicator": "1[.]14[.]192[.]95",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -857,15 +1064,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]14[.]240[.]247",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -873,15 +1080,31 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]162[.]226[.]183",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]20[.]191[.]150",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-04 01:01 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -889,15 +1112,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]214[.]214[.]114",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -905,15 +1128,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]222[.]42[.]237",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -921,15 +1144,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]234[.]80[.]94",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -937,47 +1160,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "1[.]238[.]106[.]229",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]245[.]161[.]206",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "1[.]95[.]133[.]61",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -985,15 +1176,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "100[.]26[.]98[.]21",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1001,15 +1192,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]100[.]194[.]181",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1017,15 +1208,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]11[.]137",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1033,15 +1224,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]141[.]163",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1049,15 +1240,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]153[.]162",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1065,15 +1256,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]24[.]71",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1081,31 +1272,31 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]26[.]93",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
         {
             "type": "ip",
-            "indicator": "101[.]126[.]4[.]240",
+            "indicator": "101[.]126[.]34[.]17",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1113,15 +1304,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]53[.]14",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1129,15 +1320,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]64[.]76",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1145,15 +1336,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]66[.]30",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1161,15 +1352,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]67[.]70",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1177,15 +1368,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]69[.]201",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1193,31 +1384,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]126[.]70[.]177",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]200[.]236[.]207",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1225,15 +1400,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]200[.]243[.]197",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1241,31 +1416,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]201[.]234[.]37",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]201[.]38[.]226",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1273,31 +1432,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]227[.]203[.]162",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]254[.]159[.]210",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1305,15 +1448,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]32[.]240[.]31",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1321,47 +1464,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]33[.]208[.]231",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]34[.]59[.]249",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]35[.]227[.]48",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1369,15 +1480,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]36[.]104[.]46",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1385,15 +1496,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]36[.]108[.]160",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1401,15 +1512,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]36[.]108[.]72",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1417,15 +1528,31 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]36[.]116[.]216",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]36[.]228[.]201",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-04 01:01 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1433,31 +1560,31 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]42[.]158[.]179",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
         {
             "type": "ip",
-            "indicator": "101[.]47[.]134[.]74",
+            "indicator": "101[.]46[.]137[.]189",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1465,15 +1592,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]134[.]75",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1481,15 +1608,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]152[.]216",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1497,15 +1624,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]158[.]56",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1513,15 +1640,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]20[.]56",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1529,15 +1656,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]28[.]226",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1545,15 +1672,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]8[.]113",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1561,31 +1688,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]47[.]8[.]188",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]66[.]165[.]103",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1593,31 +1704,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]76[.]244[.]135",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]78[.]192[.]14",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1625,15 +1720,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]79[.]165[.]43",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1641,15 +1736,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]79[.]167[.]183",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1657,15 +1752,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]89[.]109[.]241",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1673,15 +1768,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]89[.]141[.]184",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1689,15 +1784,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]89[.]76[.]249",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1705,15 +1800,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]91[.]114[.]194",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1721,15 +1816,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]91[.]126[.]150",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1737,15 +1832,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]192[.]45",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1753,15 +1848,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]192[.]88",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1769,15 +1864,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]193[.]131",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1785,15 +1880,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]193[.]183",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1801,15 +1896,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]195[.]17",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1817,15 +1912,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]195[.]253",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1833,15 +1928,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]195[.]62",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1849,15 +1944,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]196[.]243",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1865,15 +1960,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]197[.]182",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1881,15 +1976,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]199[.]69",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1897,15 +1992,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]202[.]144",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1913,15 +2008,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]202[.]177",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1929,15 +2024,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]202[.]48",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1945,15 +2040,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]202[.]87",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1961,15 +2056,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]205[.]145",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1977,15 +2072,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]206[.]202",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -1993,15 +2088,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]209[.]234",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2009,15 +2104,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]212[.]62",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2025,15 +2120,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]214[.]116",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2041,15 +2136,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]214[.]98",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2057,15 +2152,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]221[.]200",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2073,15 +2168,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]225[.]252",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2089,31 +2184,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]96[.]229[.]2",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "101[.]96[.]230[.]56",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2121,15 +2200,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "101[.]99[.]37[.]80",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2137,15 +2216,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]0[.]42[.]34",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2153,15 +2232,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]140[.]97[.]134",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2169,15 +2248,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]177[.]101[.]53",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2185,15 +2264,31 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]179[.]205[.]86",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]202[.]75[.]187",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-04 01:01 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-04 01:01 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2201,15 +2296,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]209[.]76[.]136",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2217,15 +2312,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]209[.]76[.]137",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2233,15 +2328,15 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]210[.]146[.]231",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         },
@@ -2249,100 +2344,30 @@ window.threatIntelData = {
             "type": "ip",
             "indicator": "102[.]210[.]148[.]92",
             "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
+            "timestamp": "2026-11-04 01:01 UTC",
             "source": "Blocklist.de",
             "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
+            "analysisTime": "2026-11-04 01:01 IST",
             "tags": [
                 "ssh",
                 "brute-force"
             ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "102[.]210[.]149[.]105",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "102[.]210[.]149[.]38",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "102[.]211[.]186[.]88",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
-            "campaign": "SSH Attacks",
-            "confidence": "Medium (Automated Report)"
-        },
-        {
-            "type": "ip",
-            "indicator": "102[.]215[.]33[.]6",
-            "description": "SSH brute-force attacker",
-            "timestamp": "2026-11-03 17:20 UTC",
-            "source": "Blocklist.de",
-            "sourceUrl": "https://www.blocklist.de/",
-            "analysisTime": "2026-11-03 17:20 IST",
-            "tags": [
-                "ssh",
-                "brute-force"
-            ],
-            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "addedAt": "2026-11-04T01:01:24.210382+05:30",
             "campaign": "SSH Attacks",
             "confidence": "Medium (Automated Report)"
         }
     ],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 104151,
+            "totalIndicators": 96577,
             "activeSources": 9,
-            "criticalAlerts": 46720,
-            "activeCampaigns": 219
+            "criticalAlerts": 38096,
+            "activeCampaigns": 139
         },
         "topThreats": [
             {
                 "category": "Malware",
-                "count": 35350,
-                "trend": "stable",
-                "percentage": 0
-            },
-            {
-                "category": "C2",
-                "count": 11370,
+                "count": 35323,
                 "trend": "stable",
                 "percentage": 0
             },
@@ -2354,9 +2379,15 @@ window.threatIntelData = {
             },
             {
                 "category": "Phishing",
-                "count": 3344,
+                "count": 3534,
                 "trend": "stable",
-                "percentage": -8
+                "percentage": 5
+            },
+            {
+                "category": "C2",
+                "count": 2773,
+                "trend": "down",
+                "percentage": -75
             }
         ],
         "targetedSectors": [
@@ -2380,14 +2411,14 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "CINS Threat List",
-                "count": 36119,
+                "count": 36834,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
-                    "1[.]14[.]64[.]144",
-                    "1[.]15[.]14[.]29",
-                    "1[.]172[.]202[.]65"
+                    "1[.]0[.]235[.]78",
+                    "1[.]12[.]229[.]231",
+                    "1[.]14[.]64[.]144"
                 ]
             },
             {
@@ -2404,46 +2435,31 @@ window.threatIntelData = {
             },
             {
                 "name": "SSH Attacks",
-                "count": 10825,
+                "count": 10952,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
-                    "1[.]117[.]73[.]220",
-                    "1[.]12[.]55[.]80",
-                    "1[.]14[.]192[.]95"
+                    "1[.]14[.]192[.]95",
+                    "1[.]14[.]240[.]247",
+                    "1[.]162[.]226[.]183"
                 ]
             },
             {
                 "name": "Generic Phishing",
-                "count": 3332,
+                "count": 3521,
                 "types": [
                     "url"
                 ],
                 "sampleIndicators": [
-                    "hxxps://www[.]roblox[.]com[.]et/users/7280036217/profile",
-                    "hxxps://s4w[.]in/recwU",
-                    "hxxps://www[.]roblox[.]com[.]et/users/2977314015/profile"
-                ]
-            },
-            {
-                "name": "Vidar",
-                "count": 1706,
-                "types": [
-                    "domain",
-                    "url",
-                    "ssl-cert",
-                    "hash"
-                ],
-                "sampleIndicators": [
-                    "963c8d952db068f9cd6b76e2313e69296ca6124f57755eeaa8c008ee05d349be",
-                    "99b335ac5caf5249edc3223b100517d72f4fec0c6012955e3efc8d56c96880ef",
-                    "6f38c0aedf5d1163cca3bf5721acb71cb54bf387a69827c8ccdc59064a19d6ed"
+                    "hxxp://explorer[.]beta[.]bip300[.]xyz/",
+                    "hxxp://net-hub-gxqg[.]p-pso2at2d[.]workers[.]dev/",
+                    "hxxps://portuil[.]my/11/#YW50amUuc2NobGl0emt1c0BiZXJsaW4tYWlycG9ydC5kZQ=="
                 ]
             },
             {
                 "name": "Spamhaus DROP List",
-                "count": 1705,
+                "count": 1723,
                 "types": [
                     "ip-range"
                 ],
@@ -2454,27 +2470,27 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": "AsyncRAT",
-                "count": 1628,
+                "name": "Vidar",
+                "count": 1495,
                 "types": [
-                    "domain",
-                    "ip",
+                    "url",
+                    "hash",
                     "ssl-cert",
-                    "hash"
+                    "domain"
                 ],
                 "sampleIndicators": [
-                    "195fec1204186bb02fde9ac09f5a45add84dde09533400a354a2d97fd6b20acd",
-                    "46[.]246[.]4[.]16",
-                    "34[.]51[.]206[.]15"
+                    "963c8d952db068f9cd6b76e2313e69296ca6124f57755eeaa8c008ee05d349be",
+                    "99b335ac5caf5249edc3223b100517d72f4fec0c6012955e3efc8d56c96880ef",
+                    "6f38c0aedf5d1163cca3bf5721acb71cb54bf387a69827c8ccdc59064a19d6ed"
                 ]
             },
             {
                 "name": "Cobalt Strike",
                 "count": 1183,
                 "types": [
+                    "hash",
                     "domain",
-                    "ip",
-                    "hash"
+                    "ip"
                 ],
                 "sampleIndicators": [
                     "4d12d57d6db212de40d9b28811b1e19b",
@@ -2483,28 +2499,44 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": "Dridex",
-                "count": 737,
+                "name": "IClickFix",
+                "count": 708,
                 "types": [
-                    "ssl-cert"
+                    "url",
+                    "domain"
                 ],
                 "sampleIndicators": [
-                    "550e1cde5c59d03b6f3b9bd3ebfc4af6c7dbec48",
-                    "38ecc7c543c90d25571eae05fbd1948a310761b7",
-                    "6c1cd5f3b4f1a6da97a199397b1bae8226aac7bc"
+                    "kaizentekacademy[.]com",
+                    "locandaskansen[.]it",
+                    "polymathconsultant[.]com"
                 ]
             },
             {
-                "name": "QuasarRAT",
-                "count": 729,
+                "name": "Unknown malware",
+                "count": 450,
                 "types": [
-                    "ssl-cert",
-                    "hash"
+                    "url",
+                    "hash",
+                    "domain",
+                    "ip"
                 ],
                 "sampleIndicators": [
-                    "898a138ef42c7846cd641bd8406a9ec940991b26113389bbc847648a76cf104c",
-                    "937b0696c1b45add349c0bb80ccb2c5bf1b45e8d",
-                    "875a92bb886a52699413fb2e4370adc03c1eda37"
+                    "hxxps://washinweb[.]com/",
+                    "198[.]44[.]46[.]58",
+                    "130[.]94[.]3[.]67"
+                ]
+            },
+            {
+                "name": "PureRAT",
+                "count": 443,
+                "types": [
+                    "ssl-cert",
+                    "ip"
+                ],
+                "sampleIndicators": [
+                    "80[.]76[.]49[.]242",
+                    "70[.]36[.]127[.]16",
+                    "197[.]147[.]53[.]146"
                 ]
             }
         ]
@@ -2512,8 +2544,8 @@ window.threatIntelData = {
     "snapshotMetrics": {
         "topAttackVector": "Malicious IPs",
         "mostTargetedRegion": "North America",
-        "fastestRisingThreat": "CINS Threat List",
-        "totalAttacksThisHour": 20197,
-        "lastCalculated": "2026-11-04 01:01 IST"
+        "fastestRisingThreat": "AsyncRAT",
+        "totalAttacksThisHour": 28855,
+        "lastCalculated": "2026-11-04 05:05 IST"
     }
 };
