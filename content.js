@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 03 2026",
+            "headline": "Barracuda Flaws Chain to Root Access",
+            "title": "Barracuda Vulnerabilities Chained to Bypass Authorization and Gain Root",
+            "content": "Barracuda disclosed two vulnerabilities in its products that, when chained together, allow an attacker to bypass authorization controls and gain root access. The first is a pre-authentication authorization bypass vulnerability, while the second is a command injection flaw. This combination poses a severe risk to any organization running vulnerable Barracuda appliances, potentially allowing complete system compromise. Users must apply the latest security patches provided by Barracuda to mitigate this risk.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "LLMjacking Drains $1M from Enterprise Cloud",
+            "title": "Google Warns LLMjacking Attacks Costing Enterprises Up to $1 Million",
+            "content": "Google warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources in a tactic called LLMjacking. Attackers obtain API keys to run unauthorized AI model training or inference, leading to massive cloud bills. This new threat is specifically targeting enterprises with heavy AI workloads, potentially costing them up to $1 million per incident. Organizations must enforce strict API key management and monitor cloud usage for anomalies.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Frontline Education Breach Hits 1.3 Million",
+            "title": "Frontline Education Data Breach Exposes 1.3 Million Records",
+            "content": "Hackers exploited a flaw in third-party software to steal the personal information of over 1.3 million school district staff and students. The breach highlights the risks associated with third-party integrations in educational technology platforms. The exposed data includes sensitive personal and educational records, putting students and staff at risk of identity theft. Frontline Education is working with cybersecurity firms to investigate the incident and notify affected individuals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Android November Patch Fixes 200+ Flaws",
+            "title": "Android November 2026 Updates Patch Over 200 Vulnerabilities",
+            "content": "Google released its November 2026 Android security updates, patching over 200 vulnerabilities across the platform. The most severe is a critical flaw in the Android Framework that allows remote code execution without any user interaction. This flaw could be exploited to take full control of a device simply by processing a malicious media file. Users are strongly advised to install the latest updates immediately to protect against these threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Node-RED Flaw Actively Exploited",
+            "title": "Critical Node-RED Flaw Actively Exploited in Live Attacks",
+            "content": "Multiple attacks from the same IP address have attempted to exploit a critical vulnerability in Node-RED, a popular open-source tool for wiring together hardware devices and APIs. Attackers are deploying various payloads, including a Linux bot and webshells, to compromised systems. This indicates active exploitation of the flaw in the wild, posing a significant risk to any organization using Node-RED. Users must update to the latest patched version immediately to secure their deployments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Linux TCP RCE Flaw Patched",
+            "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Fixes Remain in Testing",
+            "content": "Red Hat released fixed kernels for a critical use-after-free vulnerability in the Linux kernel's IPv4 TCP code, rated 9.8 on the CVSS scale. The flaw affects Red Hat Enterprise Linux (RHEL) versions 8, 9, and 10, while Ubuntu's corresponding fixes for its three newest long-term-support (LTS) releases remain in an opt-in testing channel. This vulnerability allows remote code execution (RCE) and poses a severe risk to any exposed systems running affected Linux distributions. Organizations should apply the available patches immediately and monitor Ubuntu's testing channels for the upcoming stable release.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Gorbag Hackers Target Ukraine",
+            "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+            "content": "The Russia-aligned threat actor Gorbag has been observed using simple information stealer malware to target Ukrainian organizations, with a clear preference for law enforcement and justice sector entities. Active since at least February 2025, the group has exclusively focused on Ukrainian targets to harvest sensitive data. The attacks leverage a flaw in WinRAR, a popular file archiving utility, to gain initial access and deploy the malware. Ukrainian organizations, particularly those in law enforcement and justice, should update WinRAR and implement endpoint detection and response (EDR) tools to mitigate this threat.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "UK Critical Infrastructure Faces AI Cyberattacks by 2028",
+            "title": "UK Cyber Chief Warns Critical Infrastructure Will Face AI Cyberattacks by 2028",
+            "content": "The U.K. cyber chief has warned that the nation's critical infrastructure will likely face AI-powered cyberattacks by 2028. This threat is driven by the increasing use of artificial intelligence (AI) by both criminal syndicates and state-sponsored groups, including China and Russia. AI is being integrated into offensive cyber operations to automate vulnerability discovery, generate convincing phishing content, and accelerate attack lifecycles. Sectors such as energy, transportation, and finance must prioritize AI-driven security measures and threat intelligence to defend against these emerging capabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "BTCPay Server Flaw Steals Bitcoin",
+            "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+            "content": "Hackers have successfully stolen Bitcoin and Litecoin from hot wallets on instances of BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, running older versions of the software. The attacks specifically target a vulnerability that allows unauthorized access to wallet data, leading to the complete loss of funds for affected merchants. BTCPay Server has urged all users to immediately install the latest version of its software to patch the flaw and secure their wallets. Merchants using BTCPay Server must verify their instance versions and apply the security update without delay.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Synology NAS Devices Hit by Ransomware",
+            "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
+            "content": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following active ransomware attacks. Threat actors are exploiting a vulnerability that was patched in December 2024, specifically targeting devices that have not applied the update. The exploitation of this flaw allows attackers to deploy ransomware and encrypt critical data stored on the NAS devices. Synology users must immediately update their DSM software to the latest version to close this security gap and prevent data encryption.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
             "headline": "Siemens IoT2050 Flaw Actively Exploited—CVSS 10.0",
             "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
             "content": "VulnCheck has revealed that threat actors are actively exploiting a maximum-severity vulnerability in Siemens SIMATIC IoT2050 Advanced devices. The flaw, tracked as CVE-2026-58115, stems from missing authentication on a critical function, allowing remote command execution. This vulnerability carries a CVSS score of 10.0, indicating complete compromise of the affected IoT devices. Siemens has released patches to address the authentication bypass, and administrators must update firmware immediately to prevent unauthorized backdoor installations. This incident underscores the persistent risk to industrial IoT endpoints from unpatched authentication flaws.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Linux DDoS Botnet Exploits Unpatched Systems",
-            "title": "Weekly Recap Highlights Critical CVEs, Linux DDoS Botnet, and Device-Code Phishing",
-            "content": "This week's cybersecurity landscape featured a diverse array of threats, from low-effort social engineering to sophisticated botnets. A Linux-based botnet is actively targeting unpatched systems for distributed denial-of-service (DDoS) attacks. Concurrently, attackers are exploiting device-code phishing schemes and leveraging trusted browser extensions for unauthorized access. These incidents underscore the critical need for robust patch management and user education. Organizations must enforce strict endpoint security and continuously monitor for anomalous network traffic.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Revolve Breach Exposes 180,000 Customers",
-            "title": "Revolve Data Breach Impacts at Least 180,000 People",
-            "content": "Hackers successfully infiltrated Revolve's online shopping platform, compromising the personal and payment card information of at least 180,000 customers. The breach highlights the ongoing risks associated with third-party e-commerce integrations and cloud infrastructure. Affected individuals are at high risk of financial fraud and targeted phishing campaigns. Revolve has initiated a forensic investigation and is notifying impacted users directly. Consumers should monitor their financial statements and enable two-factor authentication (2FA) on all accounts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Langflow Flaws Enable Unauthenticated RCE",
-            "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-            "content": "IBM identified two critical vulnerabilities in Langflow, an open-source AI workflow tool, that allow unauthenticated remote code execution (RCE) on servers. The flaws, tracked as CVE-2024-21213 and CVE-2024-21214, affect all versions from 1.0.0 through 1.12.8. A remote attacker can exploit these weaknesses to bypass authentication and execute arbitrary commands. Organizations using Langflow must upgrade to version 1.12.9 or later immediately. This incident highlights the growing security challenges within the AI development ecosystem.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "40% of SOCs Use AI—Are They Ready?",
-            "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-            "content": "A new survey reveals that 40% of security operations centers (SOCs) now use artificial intelligence (AI) daily, while 56% are actively testing it. With such rapid adoption, only 4% of surveyed organizations have no plans to implement AI-driven security tools. However, many teams lack the maturity to secure these new AI agents effectively. Security leaders must prioritize developing robust AI governance and threat modeling frameworks. Proactive security measures are essential to prevent AI agents from becoming attack vectors.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Cursor Attack Deploys Malicious Claude Extension",
-            "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
-            "content": "Attackers compromised the popular Cursor code editor to distribute a malicious extension impersonating Claude Code. The extension performed host reconnaissance and attempted to establish a reverse SSH tunnel to exfiltrate data. This supply chain attack highlights the risks of relying on third-party extensions and package repositories. Developers using Cursor must verify the integrity of their installed tools and review extension permissions. Organizations should enforce strict software supply chain security policies and monitor for unauthorized network connections.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "AI Agents Breach Chainalysis—Data Leaked",
-            "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
-            "content": "Chainalysis disclosed a data breach after attackers utilized offensive agentic AI techniques to compromise the company's internal systems and tools. The attackers successfully exfiltrated sensitive data, including customer information and proprietary blockchain analytics. The incident highlights a growing trend where threat actors leverage autonomous AI systems to bypass traditional security controls. Organizations relying on advanced analytics platforms must review their access controls and monitoring protocols to mitigate similar risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Ivanti Patches 2 Zero-Days—CISA Adds to KEV",
-            "title": "Ivanti Patches Two More Zero-Days Exploited in Connect Secure Attack Chain",
-            "content": "Ivanti has released security patches for two additional zero-day vulnerabilities, CVE-2026-111357 and CVE-2026-118527, which were chained in attacks targeting its Connect Secure VPN appliances. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added these flaws to its Known Exploited Vulnerabilities (KEV) catalog due to active exploitation. Attackers chain these flaws to achieve remote code execution, allowing them to compromise VPN infrastructure and pivot into internal networks. System administrators must immediately apply the latest Ivanti patches and audit their VPN logs for signs of intrusion.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Linux TCP Option Bug Enables 1-Byte DoS",
-            "title": "Mutipath TCP: Use and Detection",
-            "content": "A vulnerability in the Linux implementation of Multipath TCP (RFC 8684, CVE-2026-98432) allows an attacker to crash network connections using a single malformed byte. The flaw targets an often-ignored TCP option introduced in 2020, enabling a denial-of-service (DoS) attack that disrupts data transmission. This vulnerability affects all modern Linux distributions and can be exploited remotely without authentication. Network defenders should deploy detection signatures for anomalous TCP options and update their Linux kernels to mitigate the risk of connection-flooding attacks.",
-            "source": "SANS Internet Storm Center",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33482",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Cursor Removes Malicious Claude Code Extension",
-            "title": "Cursor removes malicious Claude Code extension after SSH backdoor attempt",
-            "content": "Cursor, a popular AI-powered code editor, removed a malicious version of Anthropic’s Claude Code extension distributed via its marketplace. The compromised extension attempted to install a persistent Secure Shell (SSH) backdoor on developers' machines, granting attackers remote access to source code and credentials. This attack demonstrates how supply chain compromises in developer tools can directly threaten intellectual property and corporate networks. Developers must verify the integrity of all marketplace extensions and monitor for unauthorized SSH connections on their systems.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4243210/cursor-removes-malicious-claude-code-extension-after-ssh-backdoor-attempt.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Google Takedowns 1.3M Device Android Botnet",
-            "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-            "content": "Google dismantled a massive Android botnet comprising over 1.3 million devices, primarily TV set-top boxes, by seizing its command-and-control servers. The company alleges that device manufacturer Videostrong intentionally embedded a backdoor in its hardware and sold remote access to criminal affiliates. This takedown prevented the botnet from executing large-scale distributed denial-of-service (DDoS) attacks and data theft operations. Users of Videostrong devices should immediately update their firmware to revoke any unauthorized remote access and disable remote management features.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 03 2026",
+            "headline": "ChatGPT Search Hits 20% of Google's Volume",
+            "title": "OpenAI Reports ChatGPT Search Queries Now Equal 20 Percent of Google's Volume",
+            "content": "OpenAI announced that ChatGPT's search volume now equals 20 percent of Google's, signaling a major shift in user behavior. Adam Fry, OpenAI's consumer product lead, revealed this milestone at a press event, highlighting ChatGPT's growing role in information retrieval. This trend reflects a broader migration of search queries from traditional engines to conversational AI platforms. The shift poses a direct competitive threat to Google's core search business and its advertising revenue model. Users should evaluate the accuracy and citation practices of AI-generated search results compared to traditional search engines.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "OpenAI Renames Data Centers 'Compute Campuses'",
+            "title": "OpenAI Rebrands Data Centers as 'Compute Campuses' to Mitigate Public Opposition",
+            "content": "OpenAI is quietly rebranding its data centers as 'compute campuses' to counter public backlash and political opposition. The term 'compute campus' is designed to sound less industrial and more environmentally harmonious to local communities. This linguistic shift is a strategic response to the bipartisan opposition faced by data center construction projects nationwide. The rebranding reflects a broader industry trend of using softer language to manage the social and political impact of AI infrastructure.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "AI Startup Fal Doubles Valuation to $16B",
+            "title": "AI Inference Startup Fal Doubles Valuation to $16B on Bessemer-Led $1.3B Round",
+            "content": "AI inference startup Fal has doubled its valuation to $16 billion following a $1.3 billion funding round led by Bessemer Venture Partners. The five-year-old company specializes in providing high-performance inference services for large language models (LLMs), addressing the growing computational demands of generative AI. This massive capital injection underscores the intense investor interest in AI infrastructure and the critical bottleneck of model inference. The funding will likely accelerate Fal's expansion and capacity building to meet surging global demand for AI compute.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Netflix Launches AI Mood-Based Discovery Tab",
+            "title": "Netflix Introduces AI-Powered 'Discover' Tab for Mood-Based Content Recommendations",
+            "content": "Netflix is testing a new AI-powered 'Discover' tab that recommends content based on a user's current mood. The experimental feature moves beyond traditional genre and actor-based recommendations to analyze contextual inputs. Users can select from various moods to receive tailored suggestions for movies or TV shows. This feature leverages advanced AI algorithms to enhance user engagement and reduce decision fatigue. The rollout is currently limited to a select group of users as part of Netflix's ongoing experimentation with AI.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "watchOS 27.3 Beta Adds Siri Audio Intelligence",
+            "title": "Apple Watch's watchOS 27.3 Beta Introduces Siri Audio Intelligence Features",
+            "content": "The Apple Watch's watchOS 27.3 developer beta introduces two new Siri Audio Intelligence features: Siri Recap and Live Rewind. Siri Recap uses ambient listening to generate summaries of conversations, while Live Rewind provides real-time transcription of audio. These features leverage on-device processing to analyze audio streams locally, raising potential privacy considerations. The functionality requires the watchOS 27.3 beta and is available to developers testing the latest software. Users should review Apple's privacy policies regarding on-device data processing before enabling these features.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Steam Backlog Delays Indie Game Launches",
+            "title": "Valve's Steam Backlog Forces Indie Developers to Miss Planned Launch Dates",
+            "content": "Valve's Steam platform is experiencing a significant submission backlog, causing indie game developers to miss their planned launch dates. Studio Daimon, developer of the upcoming title Food, reported an unexpectedly long approval wait time for their game submission. The delay highlights a bottleneck in Steam's review pipeline, which directly impacts indie developers' revenue timelines. This trend is affecting numerous small studios relying on fixed launch windows for their marketing campaigns. Developers are advised to monitor their submission queue status and communicate directly with Valve's support for expedited processing.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Netflix Tests AI-Powered Themed Discoveries",
+            "title": "Netflix Introduces 'AI Discover' Tab for Themed Content Recommendations",
+            "content": "Netflix is testing an experimental \"AI Discover\" tab within its TV application to provide AI-powered recommendations. The initial feature surfaces content based on specific themes such as \"Something Light,\" \"Family Movie Night,\" and \"Quick Watches.\" This feature utilizes natural language processing (NLP) to categorize and match user preferences with thematic content. It represents a shift from traditional genre-based browsing to a more nuanced, mood-driven discovery model. Users in testing regions should expect to see this feature integrated into their home screen layout.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Google Demands Search Surrender for AI Education Tools",
+            "title": "Google's AI Education Tools Require Schools to Surrender Search Access",
+            "content": "Google is offering AI educational tools to schools on the condition that they also use Google Search. The initiative aims to provide AI capabilities that do not simply give away direct answers to students. Schools wishing to opt out of the AI features must also forgo access to the Google Search engine. This policy ties access to advanced AI learning tools directly to the use of Google's search infrastructure. Educational institutions must evaluate this trade-off between AI integration and search independence for their curricula.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "StateBench Evaluates LLM Document Tracking",
+            "title": "Hugging Face Releases StateBench to Test Language Model State Change Tracking",
+            "content": "Hugging Face has introduced StateBench, a new benchmark designed to test how large language models (LLMs) track state changes across long documents. The benchmark evaluates a model's ability to maintain context and accurately recall specific details as a document's narrative or data evolves. This tool is critical for assessing the reliability of LLMs in applications requiring high-fidelity data extraction from lengthy texts. It provides a standardized metric for developers to benchmark their models against industry standards.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/statebench",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Anthropic's Compute Margins Continue to Worsen",
+            "title": "Anthropic Faces Worsening Economics of Compute Despite AI Demand",
+            "content": "Anthropic is experiencing a decline in its compute margins at a time when demand for artificial intelligence (AI) infrastructure is expected to increase. The company is grappling with the high costs of running massive AI models, which are consuming a larger portion of its operational budget. This economic pressure highlights the intense capital expenditure required to train and deploy cutting-edge frontier models. The financial strain underscores the challenge of scaling AI operations profitably without significant revenue growth. Investors and partners should monitor Anthropic's infrastructure spending and potential cost-cutting measures.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 03 2026",
             "headline": "Google Dreambeans Expands to 13 Indian Languages",
@@ -267,102 +357,12 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Oct 29 2026",
-            "headline": "Pentagon AI Agent Access Flaw Patched",
-            "title": "Defense Contractor's Personal Claude Agent Accessed Secure DOD Network",
-            "content": "An Accenture employee's personal Claude AI agent gained unauthorized access to a secure Department of Defense (DOD) network for two months before detection. The vulnerability was identified and subsequently patched to prevent further unauthorized access to the protected system. This incident highlights the risks of using personal AI tools in sensitive, secure government environments. Organizations must enforce strict policies regarding the use of external AI applications on classified networks.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-            "relatedResources": []
-        },
-        {
             "date": "Nov 02 2026",
             "headline": "$16M Deal: Omen AI Buys Aquatic Labs",
             "title": "Omen AI Acquires Aquatic Labs for $16 Million to Solve Data Center Water Crisis",
             "content": "Omen AI has acquired Aquatic Labs in a $16 million deal to consolidate expertise in liquid cooling for hyperscale data centers. The combined entity will integrate Aquatic Labs' thermal management algorithms with Omen AI's AI-driven predictive modeling to optimize water usage and prevent leaks. This move directly addresses the escalating water consumption of modern AI training clusters, which can use millions of gallons annually. The integration is expected to reduce water waste by up to 30% in partner facilities. Data center operators should evaluate Omen AI's combined platform for their next-generation cooling infrastructure.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Squarespace Cuts 19% of Workforce",
-            "title": "Squarespace Restructures, Laying Off 19% of Employees",
-            "content": "Website builder Squarespace is eliminating 19% of its workforce as part of a broader corporate restructuring. The layoffs impact approximately 400 employees across engineering, marketing, and support divisions globally. The company stated the cuts are designed to streamline operations and accelerate its pivot toward an AI-driven website builder platform. This represents one of the largest tech workforce reductions of 2026. Developers and marketers should monitor Squarespace's API stability and feature roadmap for potential service interruptions during this transition.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "NYT Sues Brave Over Content Scraping",
-            "title": "New York Times Sues Brave Browser Over Alleged AI Content Scraping",
-            "content": "The New York Times and other major publishers have filed a lawsuit against the privacy-focused Brave browser. The complaint alleges Brave unlawfully scraped copyrighted news content to train its AI models and distribute it to customers like Anthropic and Perplexity. This legal action highlights the growing friction between legacy media and AI companies over data usage rights. The outcome of this case will set a critical precedent for AI training data sourcing. Publishers and developers must closely track the litigation's impact on web scraping ethics and AI data acquisition strategies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Anthropic Bans Claude AI for Video Game Clones",
-            "title": "Anthropic Updates Claude Code to Block Video Game Recreation",
-            "content": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from generating clones or decompilations of existing video games. The policy change targets the current surge in AI-made game ports and recompilations that violate intellectual property rights. While users can still discuss game mechanics, Claude Code will now refuse to write code that replicates proprietary game engines or assets. Retro gaming communities and developers should note this restriction, which aligns Claude Code with stricter IP enforcement. This shift reflects growing pressure on AI vendors to prevent copyright infringement in creative coding.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Pilots Grid Protectors in Georgia",
-            "title": "OpenAI Launches Grid Protectors Program in Georgia",
-            "content": "OpenAI will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, to enhance local grid resilience. The program promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners for approximately 700,000 homes. This initiative addresses the massive energy demands of AI infrastructure, which is straining regional power grids. Local municipalities and utility providers should engage with OpenAI's grid integration plans to prevent brownouts. The pilot will serve as a blueprint for future AI facility deployments in high-demand regions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "NYT Sues Brave—AI Scraping, Paywall Bypass",
-            "title": "The New York Times and Other Publications File Lawsuit Against Brave Browser for AI Scraping and Paywall Bypass",
-            "content": "The New York Times and other publishers have filed a lawsuit against Brave, alleging the browser unlawfully scrapes content to train AI models and allows users to bypass digital paywalls. The complaint specifically targets Brave's automated web scraping and its \"Brave Search\" AI summarization features. This legal action highlights the escalating conflict between traditional media and AI companies over intellectual property rights. Publishers face revenue erosion as AI systems replicate their content without compensation. Users should be aware that AI-driven browsers may operate in legally ambiguous gray areas regarding content access.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "42AI's $62.5M World Model Predicts Human Behavior",
-            "title": "42AI Secures $62.5M to Launch a World Model That Predicts Human Behavior",
-            "content": "French AI startup 42AI has emerged from stealth mode, raising $62.5 million to develop a world model capable of predicting human behavior in novel situations. The company's proprietary model aims to simulate complex decision-making processes, moving beyond traditional language prediction. This development signals a shift toward more advanced, reasoning-based AI architectures. The technology could impact sectors from autonomous driving to personalized healthcare. Developers and security professionals should monitor 42AI's progress for potential integration into enterprise systems.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Musk Throttles Grok—Unsustainably High Costs",
-            "title": "Elon Musk Imposes Grok Bot Limits Citing Unsustainably High Infrastructure Costs",
-            "content": "Elon Musk has implemented usage throttling on xAI's Grok Bot, citing \"unsustainably high\" computational costs associated with its rapid user growth. The move directly impacts Grok's availability on X, limiting the number of prompts users can send. This decision underscores the significant financial burden of running large language models (LLMs) at scale. xAI must balance user demand with the high expenses of GPU clusters and data centers. Users should expect intermittent access to Grok features until xAI secures more efficient infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Launches Grid Protectors Program",
-            "title": "OpenAI Launches Grid Protectors Program to Support Utility Grid Reliability",
-            "content": "OpenAI has introduced the Grid Protectors Program, a new initiative to collaborate with utility companies on supporting grid reliability for future AI compute campuses. The program aims to mitigate the strain that massive data centers place on local power grids, protecting consumer electricity costs from volatile demand spikes. As AI training requires immense power, this proactive approach addresses a growing infrastructure bottleneck. The initiative will likely involve advanced grid monitoring and load-balancing technologies. Stakeholders in the energy and tech sectors should monitor this program for potential partnerships.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/grid-protectors-program",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "ChatGPT Merges Chat and Work Tabs",
-            "title": "OpenAI Merges ChatGPT's Chat and Work Tabs into Unified Allocation Pool",
-            "content": "OpenAI has announced the merging of ChatGPT's Chat and Work tabs, drawing usage from the same allocation pool under a new subscription tier. This change means that interactions with the standard ChatGPT and the advanced Codex coding assistant will share a common usage limit. The move aims to simplify the user interface and streamline resource management across OpenAI's platform. It may affect developers and power users who previously relied on separate, higher limits for Codex. Users should review their new usage metrics to avoid unexpected service interruptions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
             "relatedResources": []
         }
     ],
