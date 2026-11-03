@@ -1,29 +1,29 @@
 // Auto-Generated Threat Intel (Multi-Vendor Dashboard)
-// Updated: 2026-11-03T17:20:27.312009+05:30 IST (2026-11-03 11:50 UTC)
+// Updated: 2026-11-04T01:01:31.179287+05:30 IST (2026-11-03 19:31 UTC)
 // Sources: OpenPhish, Malware Bazaar, Spamhaus DROP, CINS Army, Blocklist.de, URLhaus, ThreatFox, Feodo Tracker, SSL Blacklist
 // NOTE: Full IOC lists are stored in GitHub Pages (ioc-data/) and loaded on-demand
 
 window.threatIntelData = {
-    "lastUpdated": "2026-11-03T17:20:26.371554+05:30",
-    "lastUpdatedFormatted": "Nov 03, 2026 at 05:20 PM IST",
-    "lastUpdatedUtc": "2026-11-03 11:50 UTC",
-    "comparisonPeriod": "Nov 02 \u2013 Nov 03, 2026",
+    "lastUpdated": "2026-11-04T01:01:30.379966+05:30",
+    "lastUpdatedFormatted": "Nov 04, 2026 at 01:01 AM IST",
+    "lastUpdatedUtc": "2026-11-03 19:31 UTC",
+    "comparisonPeriod": "Nov 03 \u2013 Nov 04, 2026",
     "stats": {
-        "totalIOCs": 103583,
+        "totalIOCs": 104151,
         "byType": {
-            "url": 39328,
-            "ip": 48571,
+            "url": 39028,
+            "ip": 49494,
             "hash": 641,
             "domain": 2158,
             "ssl-cert": 11125,
-            "ip-range": 1760
+            "ip-range": 1705
         },
         "byVendor": {
-            "OpenPhish": 3641,
+            "OpenPhish": 3341,
             "Malware Bazaar": 476,
-            "Spamhaus DROP": 1760,
-            "CINS Army": 35261,
-            "Blocklist.de": 10760,
+            "Spamhaus DROP": 1705,
+            "CINS Army": 36119,
+            "Blocklist.de": 10825,
             "URLhaus": 34528,
             "ThreatFox": 6027,
             "Feodo Tracker": 5,
@@ -34,29 +34,29 @@ window.threatIntelData = {
                 "name": "Vidar",
                 "count": 1706,
                 "types": [
-                    "hash",
-                    "url",
                     "domain",
-                    "ssl-cert"
+                    "url",
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
                 "name": "AsyncRAT",
                 "count": 1628,
                 "types": [
-                    "hash",
-                    "ip",
                     "domain",
-                    "ssl-cert"
+                    "ip",
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
                 "name": "Cobalt Strike",
                 "count": 1183,
                 "types": [
-                    "hash",
+                    "domain",
                     "ip",
-                    "domain"
+                    "hash"
                 ]
             },
             {
@@ -70,8 +70,8 @@ window.threatIntelData = {
                 "name": "QuasarRAT",
                 "count": 729,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
@@ -93,8 +93,8 @@ window.threatIntelData = {
                 "name": "ConnectWise",
                 "count": 559,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ]
             },
             {
@@ -151,363 +151,348 @@ window.threatIntelData = {
         ],
         "recentIOCs": [
             {
-                "type": "ssl-cert",
-                "indicator": "b59fc9b78f8adfb12404d606d32f189309dcffdb",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-26 15:23:13",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "162[.]243[.]103[.]246",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "92ebef95bba7efc76f713e8b4aa8d40d45478645",
-                "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-26 12:56:12",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "178[.]62[.]3[.]223",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "PureRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "72551f187ace5de0909186afdfea0756e9e3cd6d",
-                "description": "Malicious SSL certificate - XoriumStealer C&C",
-                "timestamp": "2026-10-26 09:43:57",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "27[.]133[.]154[.]218",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "XoriumStealer",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "bd8eb13b5f944ac4c4a03a22d8c1b574bd02ee4f",
-                "description": "Malicious SSL certificate - QuasarRAT C&C",
-                "timestamp": "2026-10-26 07:31:08",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "34[.]204[.]119[.]63",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "QuasarRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "a41e8528d9b464b9620f4cc5900c444f291366e7",
-                "description": "Malicious SSL certificate - BridgeAgent C&C",
-                "timestamp": "2026-10-26 07:28:10",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "50[.]16[.]16[.]211",
+                "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Feodo Tracker",
+                "sourceUrl": "https://feodotracker.abuse.ch/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "botnet",
+                    "c2",
+                    "banking-trojan"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "BridgeAgent",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:22.103946+05:30",
+                "campaign": "Banking Malware C2",
+                "confidence": "High (Active C2)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "e6500b535b03160f06f2ca5c663ae180275dbb3b",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-26 07:24:40",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]117[.]73[.]220",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "52c7bf8fd5f6312e161c6fe20c68edfa90e137eb",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-26 07:24:04",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]12[.]55[.]80",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "9769dce57ee77a6da94da9c824cd923cb9599892",
-                "description": "Malicious SSL certificate - Vidar C&C",
-                "timestamp": "2026-10-11 15:39:00",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]14[.]192[.]95",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Vidar",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "d621cfc19f287afe3b53ee95f4463732d2de342f",
-                "description": "Malicious SSL certificate - Malware C&C",
-                "timestamp": "2026-10-11 15:26:17",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]14[.]240[.]247",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Malware",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "1c14689e58ebc09098f7c23eec08a314eb17ec76",
-                "description": "Malicious SSL certificate - OffLoader C&C",
-                "timestamp": "2026-10-11 14:58:59",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]162[.]226[.]183",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "OffLoader",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "4a0c5885230b991333569023a767f7cc3a773baf",
-                "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-11 14:53:57",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]214[.]214[.]114",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "PureRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "650f90b14ecb5dc0160ea61d0620402c075c2f3d",
-                "description": "Malicious SSL certificate - QuasarRAT C&C",
-                "timestamp": "2026-10-11 14:53:50",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]222[.]42[.]237",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "QuasarRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "64d01c8e86e0a3b51c270743879a1fe966af0db4",
-                "description": "Malicious SSL certificate - QuasarRAT C&C",
-                "timestamp": "2026-10-11 14:53:42",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]234[.]80[.]94",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "QuasarRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "06fc4c98539ff52b4e4db8c2a69ba0b755d96bf9",
-                "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-11 14:51:28",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]238[.]106[.]229",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "PureRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "0f0a58e91f1c0f21ec7934e2f5e6b54187ed54be",
-                "description": "Malicious SSL certificate - QuasarRAT C&C",
-                "timestamp": "2026-10-11 14:51:15",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]245[.]161[.]206",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "QuasarRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "b90f2ec81722662f2f7650e521c362cfe29f8f57",
-                "description": "Malicious SSL certificate - DCAgentRMM C&C",
-                "timestamp": "2026-10-11 14:51:15",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "1[.]95[.]133[.]61",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "DCAgentRMM",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "2d22783f272d8fb12ff94ac13466fcd9a9a2ccc2",
-                "description": "Malicious SSL certificate - Malware C&C",
-                "timestamp": "2026-10-04 08:00:22",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "100[.]26[.]98[.]21",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "Malware",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "fec72b31ad1f9e2e080c83f3964b34fe81e4a8e4",
-                "description": "Malicious SSL certificate - NyxarStealer C&C",
-                "timestamp": "2026-10-04 07:55:56",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "101[.]100[.]194[.]181",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "NyxarStealer",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "bfc3decb728fc2becb887cc23c6cf46a2fdcbb8d",
-                "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-04 07:48:05",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "101[.]126[.]11[.]137",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "PureRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             },
             {
-                "type": "ssl-cert",
-                "indicator": "1c04120f29c25a1e06b4f48651fc9eaaecd45eaa",
-                "description": "Malicious SSL certificate - PureRAT C&C",
-                "timestamp": "2026-10-04 07:47:53",
-                "source": "SSL Blacklist",
-                "sourceUrl": "https://sslbl.abuse.ch/",
-                "analysisTime": "2026-11-03 07:41 IST",
+                "type": "ip",
+                "indicator": "101[.]126[.]141[.]163",
+                "description": "SSH brute-force attacker",
+                "timestamp": "2026-11-03 17:20 UTC",
+                "source": "Blocklist.de",
+                "sourceUrl": "https://www.blocklist.de/",
+                "analysisTime": "2026-11-03 17:20 IST",
                 "tags": [
-                    "ssl",
-                    "certificate",
-                    "c2"
+                    "ssh",
+                    "brute-force"
                 ],
-                "addedAt": "2026-11-03T07:41:38.869177+05:30",
-                "campaign": "PureRAT",
-                "confidence": "High"
+                "addedAt": "2026-11-03T17:20:20.059501+05:30",
+                "campaign": "SSH Attacks",
+                "confidence": "Medium (Automated Report)"
             }
         ],
-        "lastUpdated": "2026-11-03T17:20:26.371554+05:30",
-        "lastUpdatedFormatted": "Nov 03, 2026 at 05:20 PM IST",
-        "lastUpdatedUtc": "2026-11-03 11:50 UTC"
+        "lastUpdated": "2026-11-04T01:01:30.379966+05:30",
+        "lastUpdatedFormatted": "Nov 04, 2026 at 01:01 AM IST",
+        "lastUpdatedUtc": "2026-11-03 19:31 UTC"
     },
     "vendors": {
         "OpenPhish": {
             "description": "Real-time phishing URL feed updated every 15 minutes. Tracks active phishing sites targeting major brands and financial institutions.",
             "website": "https://openphish.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 3341,
+            "iocCount": 3531,
             "iocDataUrl": "https://thehgtech.com/ioc-data/openphish.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 3341,
+                "total": 3531,
                 "newInLastHour": 300,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -515,11 +500,11 @@ window.threatIntelData = {
                 "url"
             ],
             "sampleIndicators": [
-                "hxxps://www[.]roblox[.]com[.]et/users/7280036217/profile",
-                "hxxps://s4w[.]in/recwU",
-                "hxxps://www[.]roblox[.]com[.]et/users/2977314015/profile",
-                "hxxps://s4w[.]in/gHboQ",
-                "hxxps://www[.]robiox[.]com[.]gr/users/8070655915/profile"
+                "hxxp://explorer[.]beta[.]bip300[.]xyz/",
+                "hxxp://net-hub-gxqg[.]p-pso2at2d[.]workers[.]dev/",
+                "hxxps://portuil[.]my/11/#YW50amUuc2NobGl0emt1c0BiZXJsaW4tYWlycG9ydC5kZQ==",
+                "hxxps://s[.]team-qs[.]com/p/kma-mhc/bwjejeij",
+                "hxxps://webasdhf[.]com/"
             ]
         },
         "Malware Bazaar": {
@@ -533,7 +518,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 476,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
@@ -552,14 +537,14 @@ window.threatIntelData = {
             "description": "Don't Route Or Peer - hijacked/leased IP ranges controlled by criminals. Industry-standard malicious IP blocklist.",
             "website": "https://www.spamhaus.org/",
             "updateFrequency": "Daily",
-            "iocCount": 1705,
+            "iocCount": 1723,
             "iocDataUrl": "https://thehgtech.com/ioc-data/spamhaus-drop.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 1705,
-                "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "total": 1723,
+                "newInLastHour": 55,
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -578,14 +563,14 @@ window.threatIntelData = {
             "description": "Malicious IPs from CINS Army threat intelligence. Fast-updating list of confirmed attackers.",
             "website": "http://cinsscore.com/",
             "updateFrequency": "Every 15 minutes",
-            "iocCount": 36119,
+            "iocCount": 36834,
             "iocDataUrl": "https://thehgtech.com/ioc-data/cins-army.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 36119,
+                "total": 36834,
                 "newInLastHour": 15000,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -593,25 +578,25 @@ window.threatIntelData = {
                 "ip"
             ],
             "sampleIndicators": [
+                "1[.]0[.]235[.]78",
+                "1[.]12[.]229[.]231",
                 "1[.]14[.]64[.]144",
-                "1[.]15[.]14[.]29",
-                "1[.]172[.]202[.]65",
-                "1[.]192[.]129[.]106",
-                "1[.]193[.]63[.]167"
+                "1[.]145[.]89[.]105",
+                "1[.]15[.]14[.]29"
             ]
         },
         "Blocklist.de": {
             "description": "IPs conducting SSH brute-force attacks. Community-reported attackers targeting SSH services.",
             "website": "https://www.blocklist.de/",
             "updateFrequency": "Hourly",
-            "iocCount": 10825,
+            "iocCount": 10952,
             "iocDataUrl": "https://thehgtech.com/ioc-data/blocklist-de.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 10825,
-                "newInLastHour": 4825,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "total": 10952,
+                "newInLastHour": 4824,
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -619,11 +604,11 @@ window.threatIntelData = {
                 "ip"
             ],
             "sampleIndicators": [
-                "1[.]117[.]73[.]220",
-                "1[.]12[.]55[.]80",
                 "1[.]14[.]192[.]95",
                 "1[.]14[.]240[.]247",
-                "1[.]162[.]226[.]183"
+                "1[.]162[.]226[.]183",
+                "1[.]20[.]191[.]150",
+                "1[.]214[.]214[.]114"
             ]
         },
         "URLhaus": {
@@ -637,7 +622,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 34528,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
@@ -663,15 +648,15 @@ window.threatIntelData = {
             "stats": {
                 "total": 6027,
                 "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": true,
                 "feedStatus": "stale"
             },
             "types": [
-                "hash",
-                "url",
+                "domain",
                 "ip",
-                "domain"
+                "url",
+                "hash"
             ],
             "sampleIndicators": [
                 "b4ec1ea1528a1cf690b1067a214751cfee1ef0eca037c7989b4bef17fbf6b53b",
@@ -692,7 +677,7 @@ window.threatIntelData = {
             "stats": {
                 "total": 5,
                 "newInLastHour": 5,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -711,14 +696,14 @@ window.threatIntelData = {
             "description": "Malicious SSL certificates used by botnet C2 servers. Helps detect encrypted malware communications.",
             "website": "https://sslbl.abuse.ch/",
             "updateFrequency": "Daily",
-            "iocCount": 11125,
+            "iocCount": 2501,
             "iocDataUrl": "https://thehgtech.com/ioc-data/ssl-blacklist.json",
             "isStale": false,
             "feedStatus": "active",
             "stats": {
-                "total": 11125,
-                "newInLastHour": 0,
-                "lastUpdate": "2026-11-03 11:50 UTC",
+                "total": 2501,
+                "newInLastHour": 13,
+                "lastUpdate": "2026-11-03 19:31 UTC",
                 "isStale": false,
                 "feedStatus": "active"
             },
@@ -726,1719 +711,1624 @@ window.threatIntelData = {
                 "ssl-cert"
             ],
             "sampleIndicators": [
-                "66c657533cb5d25c1cef98a173f26b69536b67d6",
-                "1b2f2ca48067d909791338a6c32cf2e0104f6a7f",
-                "2c8903399677fe6022cab030e0049bcfff538bdd",
-                "589654a4ecbbc484056cc1bfeea1fcdc7ecc7d81",
-                "4f63e391bda319474161cb4a2506c40acc8fca7a"
+                "34caba1bef1d1006199db86c6e2d5bf1d67c884e",
+                "277a06bc0dfdd0da5455bdb3d5b92f7cd5fc9520",
+                "b04b85ac36b0501fad420e3bc7976c3d31409b4e",
+                "70e5be14909fe413ceb33179b521e33253b23b25",
+                "aba67183b38e7af2ffbd3cde35fcaeb1ae838a6c"
             ]
         }
     },
     "overview": [
         {
-            "type": "ssl-cert",
-            "indicator": "b59fc9b78f8adfb12404d606d32f189309dcffdb",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-26 15:23:13",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "92ebef95bba7efc76f713e8b4aa8d40d45478645",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-26 12:56:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "72551f187ace5de0909186afdfea0756e9e3cd6d",
-            "description": "Malicious SSL certificate - XoriumStealer C&C",
-            "timestamp": "2026-10-26 09:43:57",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "XoriumStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "bd8eb13b5f944ac4c4a03a22d8c1b574bd02ee4f",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-26 07:31:08",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a41e8528d9b464b9620f4cc5900c444f291366e7",
-            "description": "Malicious SSL certificate - BridgeAgent C&C",
-            "timestamp": "2026-10-26 07:28:10",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "BridgeAgent",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e6500b535b03160f06f2ca5c663ae180275dbb3b",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-26 07:24:40",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
+            "type": "ip",
+            "indicator": "162[.]243[.]103[.]246",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "178[.]62[.]3[.]223",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "27[.]133[.]154[.]218",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "34[.]204[.]119[.]63",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "50[.]16[.]16[.]211",
+            "description": "Botnet C2 server (Dridex/Emotet/TrickBot/QakBot/BazarLoader)",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Feodo Tracker",
+            "sourceUrl": "https://feodotracker.abuse.ch/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "botnet",
+                "c2",
+                "banking-trojan"
+            ],
+            "addedAt": "2026-11-03T17:20:22.103946+05:30",
+            "campaign": "Banking Malware C2",
+            "confidence": "High (Active C2)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]117[.]73[.]220",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]12[.]55[.]80",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]14[.]192[.]95",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]14[.]240[.]247",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]162[.]226[.]183",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]214[.]214[.]114",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]222[.]42[.]237",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]234[.]80[.]94",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]238[.]106[.]229",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]245[.]161[.]206",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "1[.]95[.]133[.]61",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "100[.]26[.]98[.]21",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]100[.]194[.]181",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]11[.]137",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]141[.]163",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]153[.]162",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]24[.]71",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]26[.]93",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]4[.]240",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]53[.]14",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]64[.]76",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]66[.]30",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]67[.]70",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]69[.]201",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]126[.]70[.]177",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]200[.]236[.]207",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]200[.]243[.]197",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]201[.]234[.]37",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]201[.]38[.]226",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]227[.]203[.]162",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]254[.]159[.]210",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]32[.]240[.]31",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]33[.]208[.]231",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]34[.]59[.]249",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]35[.]227[.]48",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]36[.]104[.]46",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]36[.]108[.]160",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]36[.]108[.]72",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]36[.]116[.]216",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]42[.]158[.]179",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]134[.]74",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]134[.]75",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]152[.]216",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]158[.]56",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]20[.]56",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]28[.]226",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]8[.]113",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]47[.]8[.]188",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]66[.]165[.]103",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]76[.]244[.]135",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]78[.]192[.]14",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]79[.]165[.]43",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]79[.]167[.]183",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]89[.]109[.]241",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]89[.]141[.]184",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]89[.]76[.]249",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]91[.]114[.]194",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]91[.]126[.]150",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]192[.]45",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]192[.]88",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]193[.]131",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]193[.]183",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]195[.]17",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]195[.]253",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]195[.]62",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]196[.]243",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]197[.]182",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]199[.]69",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]202[.]144",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]202[.]177",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]202[.]48",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]202[.]87",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]205[.]145",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]206[.]202",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]209[.]234",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]212[.]62",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]214[.]116",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]214[.]98",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]221[.]200",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]225[.]252",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]229[.]2",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]96[.]230[.]56",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "101[.]99[.]37[.]80",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]0[.]42[.]34",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]140[.]97[.]134",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]177[.]101[.]53",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]179[.]205[.]86",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]209[.]76[.]136",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
         {
-            "type": "ssl-cert",
-            "indicator": "52c7bf8fd5f6312e161c6fe20c68edfa90e137eb",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-26 07:24:04",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "9769dce57ee77a6da94da9c824cd923cb9599892",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-11 15:39:00",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d621cfc19f287afe3b53ee95f4463732d2de342f",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-10-11 15:26:17",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1c14689e58ebc09098f7c23eec08a314eb17ec76",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-10-11 14:58:59",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4a0c5885230b991333569023a767f7cc3a773baf",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-11 14:53:57",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "650f90b14ecb5dc0160ea61d0620402c075c2f3d",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-11 14:53:50",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "64d01c8e86e0a3b51c270743879a1fe966af0db4",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-11 14:53:42",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "06fc4c98539ff52b4e4db8c2a69ba0b755d96bf9",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-11 14:51:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "0f0a58e91f1c0f21ec7934e2f5e6b54187ed54be",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-11 14:51:15",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b90f2ec81722662f2f7650e521c362cfe29f8f57",
-            "description": "Malicious SSL certificate - DCAgentRMM C&C",
-            "timestamp": "2026-10-11 14:51:15",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "DCAgentRMM",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "2d22783f272d8fb12ff94ac13466fcd9a9a2ccc2",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-10-04 08:00:22",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "fec72b31ad1f9e2e080c83f3964b34fe81e4a8e4",
-            "description": "Malicious SSL certificate - NyxarStealer C&C",
-            "timestamp": "2026-10-04 07:55:56",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "NyxarStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "bfc3decb728fc2becb887cc23c6cf46a2fdcbb8d",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-04 07:48:05",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1c04120f29c25a1e06b4f48651fc9eaaecd45eaa",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-04 07:47:53",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "07fa3f9a48cdbe0d045c16a741f09237aacf2c3d",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-10-04 07:43:00",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "eceadbc9a65119bf8542ba54648dbfd4c46d86ff",
-            "description": "Malicious SSL certificate - ParallaxRAT C&C",
-            "timestamp": "2026-10-04 07:41:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ParallaxRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "80a11d8978c116516b3e6e0dabdcd381bc3511a1",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-04 07:37:50",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "465359e97babc5c4e5729e628664281dbc8f1297",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-10-04 07:23:17",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "30cc75ff5ee466fba938458513d89d8270a5b882",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-04 07:22:27",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b292d5884328be709c0c79ffd7c82c3fe9846417",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-04 07:22:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "60fd7f114b0a4015ad7f634223491259bc50ab7d",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-10-04 07:22:00",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "eabc77465bebeb1b8b4980dbaa185cfcf64b4f92",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-10-04 07:21:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "db7000ad8c148580941840ce41d8efb95f478854",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-09-12 15:04:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "60d55d4ff506bc654814ba6b26308f999766054a",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-12 15:03:11",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "93edc2f5b2504b5700af766157b2aa96d1edd20f",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-09-12 15:02:11",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "c78af78d930e82506823c8ececf1140c7035d8ef",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-09-12 15:01:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "74afa65e38769e7e58835fd799e353c2fea3a209",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-09-12 14:35:46",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "f567b9fc86b00e059bdfea261466360804fbdb38",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-09-12 13:18:16",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "be12aa485facf3375cc2416e1f8fb28541136b83",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-29 10:34:43",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d43c9f366658adf98f67c12dd8fcb3bca52db900",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-29 10:34:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b34240912bc1f09b2e2342363647616b1088a1b0",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-29 06:37:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a6e6aa58bac84e56b868f5f618ef227b75d7208e",
-            "description": "Malicious SSL certificate - QuasarRAT C&C",
-            "timestamp": "2026-08-29 06:37:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "QuasarRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ddfdf0aa1923b91144b9886e63430e063ad115a8",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-29 06:27:15",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e481c58f5012d5d8a5177bf84b055fc93c06e32e",
-            "description": "Malicious SSL certificate - NetSupport C&C",
-            "timestamp": "2026-08-29 06:26:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "NetSupport",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ef5c2a4999763064e2213dbe1c8ed696c0e8914b",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-29 06:25:51",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "de7567aa2ce367cb0915ffd8eb55b1e320e726c9",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-08-21 08:57:04",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "b95285b6b061fd0acf6a5ae95433d703f52d1872",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-08-21 08:55:40",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "dfde6725130631a83b3d0dc221736bad3db16918",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-14 07:36:25",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "a45080c92a0b2314966517a4643ebf280e88a11b",
-            "description": "Malicious SSL certificate - LummaStealer C&C",
-            "timestamp": "2026-08-14 07:35:32",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "LummaStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "3141245c066d71ef08936296ffea7ea15082f7fd",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-14 07:34:46",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "46a2a90c5813eda22263c058742902faf1def5a6",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-14 07:33:54",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "183d02c077142b8701d1a719cc8cee3f8fb76072",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-14 07:33:36",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d18f8b968bd5981971d6699bdc4ed7b96a3e7248",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-14 07:29:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "95a5eea4198c93663802a9ea047164b5497ea27f",
-            "description": "Malicious SSL certificate - Malware C&C",
-            "timestamp": "2026-08-14 07:27:13",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d0944e5765a9b5767d3cf02e3bdd9f466c5391b7",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-14 07:25:32",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4ee6cf96fce286a8e41faa52626ccf484c72a772",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-14 07:25:31",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "2b05666e08e41d03ae03a5f282434e36229ea962",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-14 07:24:45",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "14333675b09013c7299af764816b152b90d29952",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-14 07:24:02",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "f50e245dc1e4a89d6cf5e07e31ae1392a3f9ad20",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-08-14 07:23:49",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "94c2c17d919e1560dca7d4980e7f9c6eb5a402a0",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-08-14 06:53:47",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "8bdf129211692888e48d0970e49a8559450974dc",
-            "description": "Malicious SSL certificate - AdaptixC2 C&C",
-            "timestamp": "2026-08-07 11:00:37",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AdaptixC2",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d7d3f678f9b63334375db11eecc81be2db4db6f0",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:36:54",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "cede10451532b072c7017c49ef4fcd273301a826",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:35:54",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "769a6310d3d9533c1b3e0ddee3c1b6ebbda60891",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-08-07 09:35:20",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e63b53c2c26b9bff8f20e018efe7c166ec3c4acd",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:33:12",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "131e6cb931dd908cdf9fc5bdd6f8245c9b399ea9",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:32:21",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "971af46c861e6f88e60b7c07a4850e76423c5c4a",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:31:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "7bdeed30f5501a30f6aecc3f3cc372f7e52d6ce0",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:30:57",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "441b920d869b1e83fe18a2d86d4b6be20099c145",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:29:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "c7abcfeba6d01d0b78b8c690ab1d8d06078ddf11",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-08-07 09:29:09",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "147ca23505c924119036d7e4942ddc0737f39adf",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-08-07 09:04:48",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ad3cd2a04112f9ffec395649d537dc68bceb3754",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-08-07 07:56:03",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "014d51d79c5a5c80042abedb35231581ff07c2e7",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-30 19:52:58",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "ed0d4b2a9c090b6af6c99fd5b899831da206d835",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-30 19:50:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "7767913e33fac1ed9c448460267ca0e6cbe627b4",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-30 19:36:27",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "fe50e363165e3e8d789daf4dc378f50a70f35a8a",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-30 19:36:25",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "16fbb45457a2d8e67c556db46e051893917e2104",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-30 16:35:07",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1727143583fd38bc4b6b5986f5c7b2c919f885af",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-30 16:34:07",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "7b5604ee44715ba0b4e92c2281f30c5a3416ca41",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-07-24 06:41:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d08e16884011f6910fe8087a74dac507ff7d2a6a",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-07-24 06:40:18",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "8f0de55e89d97b4f3581f77805955a2b719563b8",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-07-23 19:10:41",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d447d27a879fe80420dc54244870f3f7d25993bb",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-07-23 18:53:31",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "472239fd43cdfe3b960245672b183c4be200ed7a",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-23 18:53:10",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "cd07a2a4c9a93703dc8d1d4e72a12e1cec7f41c7",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-07-23 18:53:03",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "73202d8d2ac9a9e04c2bdefa6ea8db2860d779a9",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-23 18:52:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "80c36e681125d92c8edfbf7adce71d3bda48d1f9",
-            "description": "Malicious SSL certificate - Malware distribution",
-            "timestamp": "2026-07-23 18:52:07",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "12b3a868314cd43aa8d304a7e529bbd498ee74ee",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-23 18:50:13",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "742d693a2a83e70088711c99db5db56b1aa4b9da",
-            "description": "Malicious SSL certificate - Malware distribution",
-            "timestamp": "2026-07-23 18:50:00",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Malware",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "67044f9079f804d4a6217093c679897fec1f90e2",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-07-23 18:46:14",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "bdf0b04d7bb20782260ab2c2340da6b85e9f63c0",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-07-23 18:43:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "c0cd4ac67f8a4febf1c340eb0c914252e8ebf881",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-07-23 18:43:05",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "820cd09994b3e76f6e89926a4b94ec0ccacd888c",
-            "description": "Malicious SSL certificate - OffLoader C&C",
-            "timestamp": "2026-07-23 18:42:41",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "OffLoader",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "c7ec4c2fa1678702ae684a069cf37a4eef16ef27",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-07-23 18:36:04",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "096f890e1d8d4220a1c0501a50fd6037804412c4",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-23 17:32:55",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "de7a6af567763e1b73a97ed52a1b2166807d8ffc",
-            "description": "Malicious SSL certificate - ConnectWise C&C",
-            "timestamp": "2026-07-23 14:36:39",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ConnectWise",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "16508580f31edaaf4cbe08f9c417840fa4f918d0",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-07-23 09:01:34",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "544c1e86e02e5ac18fabe17fff152e4c7e370990",
-            "description": "Malicious SSL certificate - ACRStealer C&C",
-            "timestamp": "2026-07-23 08:58:26",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "ACRStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "6ca71f241dad148aaee6ea4a345e1ef1adaa0ffb",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-23 05:31:41",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "d490abc2eba705abb1b6391b9be0a12f1e75331b",
-            "description": "Malicious SSL certificate - PureLogsStealer C&C",
-            "timestamp": "2026-07-16 07:15:54",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureLogsStealer",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "e86cb30b97c8af13b305fa5cdc7357e23f633447",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-07-16 06:49:28",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "c4e9396a3a0543fa79cc0a8f23395f90a15e03b0",
-            "description": "Malicious SSL certificate - AsyncRAT C&C",
-            "timestamp": "2026-07-16 06:46:02",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "AsyncRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "83424f01b8b7262f3a3cd61048d3337afdcca58a",
-            "description": "Malicious SSL certificate - KongTuke C&C",
-            "timestamp": "2026-07-16 06:45:48",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "KongTuke",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "1db0412338ca7c2407e54aeb6791beeedd146c4c",
-            "description": "Malicious SSL certificate - PureRAT C&C",
-            "timestamp": "2026-07-16 06:43:46",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "PureRAT",
-            "confidence": "High"
-        },
-        {
-            "type": "ssl-cert",
-            "indicator": "4264b1c47eac055ce604ef3509d23cd7e3bd584b",
-            "description": "Malicious SSL certificate - Vidar C&C",
-            "timestamp": "2026-07-16 06:42:33",
-            "source": "SSL Blacklist",
-            "sourceUrl": "https://sslbl.abuse.ch/",
-            "analysisTime": "2026-11-03 07:41 IST",
-            "tags": [
-                "ssl",
-                "certificate",
-                "c2"
-            ],
-            "addedAt": "2026-11-03T07:41:38.869177+05:30",
-            "campaign": "Vidar",
-            "confidence": "High"
+            "type": "ip",
+            "indicator": "102[.]209[.]76[.]137",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]210[.]146[.]231",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]210[.]148[.]92",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]210[.]149[.]105",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]210[.]149[.]38",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]211[.]186[.]88",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
+        },
+        {
+            "type": "ip",
+            "indicator": "102[.]215[.]33[.]6",
+            "description": "SSH brute-force attacker",
+            "timestamp": "2026-11-03 17:20 UTC",
+            "source": "Blocklist.de",
+            "sourceUrl": "https://www.blocklist.de/",
+            "analysisTime": "2026-11-03 17:20 IST",
+            "tags": [
+                "ssh",
+                "brute-force"
+            ],
+            "addedAt": "2026-11-03T17:20:20.059501+05:30",
+            "campaign": "SSH Attacks",
+            "confidence": "Medium (Automated Report)"
         }
     ],
     "dailySummary": {
         "stats": {
-            "totalIndicators": 103583,
+            "totalIndicators": 104151,
             "activeSources": 9,
             "criticalAlerts": 46720,
             "activeCampaigns": 219
@@ -2454,7 +2344,7 @@ window.threatIntelData = {
                 "category": "C2",
                 "count": 11370,
                 "trend": "stable",
-                "percentage": 3
+                "percentage": 0
             },
             {
                 "category": "Botnet",
@@ -2464,9 +2354,9 @@ window.threatIntelData = {
             },
             {
                 "category": "Phishing",
-                "count": 3644,
+                "count": 3344,
                 "trend": "stable",
-                "percentage": 0
+                "percentage": -8
             }
         ],
         "targetedSectors": [
@@ -2490,14 +2380,14 @@ window.threatIntelData = {
         "campaigns": [
             {
                 "name": "CINS Threat List",
-                "count": 35261,
+                "count": 36119,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
                     "1[.]14[.]64[.]144",
-                    "1[.]170[.]196[.]186",
-                    "1[.]197[.]255[.]180"
+                    "1[.]15[.]14[.]29",
+                    "1[.]172[.]202[.]65"
                 ]
             },
             {
@@ -2514,19 +2404,19 @@ window.threatIntelData = {
             },
             {
                 "name": "SSH Attacks",
-                "count": 10760,
+                "count": 10825,
                 "types": [
                     "ip"
                 ],
                 "sampleIndicators": [
-                    "1[.]10[.]160[.]127",
                     "1[.]117[.]73[.]220",
-                    "1[.]12[.]55[.]80"
+                    "1[.]12[.]55[.]80",
+                    "1[.]14[.]192[.]95"
                 ]
             },
             {
                 "name": "Generic Phishing",
-                "count": 3630,
+                "count": 3332,
                 "types": [
                     "url"
                 ],
@@ -2537,8 +2427,23 @@ window.threatIntelData = {
                 ]
             },
             {
+                "name": "Vidar",
+                "count": 1706,
+                "types": [
+                    "domain",
+                    "url",
+                    "ssl-cert",
+                    "hash"
+                ],
+                "sampleIndicators": [
+                    "963c8d952db068f9cd6b76e2313e69296ca6124f57755eeaa8c008ee05d349be",
+                    "99b335ac5caf5249edc3223b100517d72f4fec0c6012955e3efc8d56c96880ef",
+                    "6f38c0aedf5d1163cca3bf5721acb71cb54bf387a69827c8ccdc59064a19d6ed"
+                ]
+            },
+            {
                 "name": "Spamhaus DROP List",
-                "count": 1760,
+                "count": 1705,
                 "types": [
                     "ip-range"
                 ],
@@ -2549,28 +2454,13 @@ window.threatIntelData = {
                 ]
             },
             {
-                "name": "Vidar",
-                "count": 1706,
-                "types": [
-                    "hash",
-                    "url",
-                    "domain",
-                    "ssl-cert"
-                ],
-                "sampleIndicators": [
-                    "963c8d952db068f9cd6b76e2313e69296ca6124f57755eeaa8c008ee05d349be",
-                    "99b335ac5caf5249edc3223b100517d72f4fec0c6012955e3efc8d56c96880ef",
-                    "6f38c0aedf5d1163cca3bf5721acb71cb54bf387a69827c8ccdc59064a19d6ed"
-                ]
-            },
-            {
                 "name": "AsyncRAT",
                 "count": 1628,
                 "types": [
-                    "hash",
-                    "ip",
                     "domain",
-                    "ssl-cert"
+                    "ip",
+                    "ssl-cert",
+                    "hash"
                 ],
                 "sampleIndicators": [
                     "195fec1204186bb02fde9ac09f5a45add84dde09533400a354a2d97fd6b20acd",
@@ -2582,9 +2472,9 @@ window.threatIntelData = {
                 "name": "Cobalt Strike",
                 "count": 1183,
                 "types": [
-                    "hash",
+                    "domain",
                     "ip",
-                    "domain"
+                    "hash"
                 ],
                 "sampleIndicators": [
                     "4d12d57d6db212de40d9b28811b1e19b",
@@ -2608,8 +2498,8 @@ window.threatIntelData = {
                 "name": "QuasarRAT",
                 "count": 729,
                 "types": [
-                    "hash",
-                    "ssl-cert"
+                    "ssl-cert",
+                    "hash"
                 ],
                 "sampleIndicators": [
                     "898a138ef42c7846cd641bd8406a9ec940991b26113389bbc847648a76cf104c",
@@ -2623,7 +2513,7 @@ window.threatIntelData = {
         "topAttackVector": "Malicious IPs",
         "mostTargetedRegion": "North America",
         "fastestRisingThreat": "CINS Threat List",
-        "totalAttacksThisHour": 20130,
-        "lastCalculated": "2026-11-03 17:20 IST"
+        "totalAttacksThisHour": 20197,
+        "lastCalculated": "2026-11-04 01:01 IST"
     }
 };
