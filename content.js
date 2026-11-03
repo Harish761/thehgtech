@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 03 2026",
+            "headline": "Siemens IoT2050 Flaw Actively Exploited—CVSS 10.0",
+            "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+            "content": "VulnCheck has revealed that threat actors are actively exploiting a maximum-severity vulnerability in Siemens SIMATIC IoT2050 Advanced devices. The flaw, tracked as CVE-2026-58115, stems from missing authentication on a critical function, allowing remote command execution. This vulnerability carries a CVSS score of 10.0, indicating complete compromise of the affected IoT devices. Siemens has released patches to address the authentication bypass, and administrators must update firmware immediately to prevent unauthorized backdoor installations. This incident underscores the persistent risk to industrial IoT endpoints from unpatched authentication flaws.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "CryptoPayment Gateway Flaw Exposes Wallet Credentials",
+            "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+            "content": "Threat actors are actively attempting to exploit an unpatched maximum-severity vulnerability in the CryptoPayment Gateway WordPress plugin. The flaw, identified as CVE-2026-81648, allows attackers to bypass authentication and steal sensitive wallet credentials. The vulnerability carries a CVSS score of 10.0, representing a critical risk to cryptocurrency users and merchants. Defused Cyber advises all site administrators to update the plugin to the latest patched version immediately. This attack highlights the growing threat of unpatched vulnerabilities in cryptocurrency payment processing systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "AI Coding Assistant Approval Risks—Supply Chain Threat",
+            "title": "Who Approves the Files That Control Your AI Coding Assistant?",
+            "content": "Cybersecurity researchers warn that malicious actors are exploiting the human review process to compromise AI coding assistants. Attackers submit seemingly harmless pull requests containing configuration files that alter the AI model's behavior. These changes can introduce supply chain vulnerabilities, allowing the AI to exfiltrate code or inject malicious payloads during automated coding tasks. The review process often overlooks these configuration changes because they appear to be developer-experience improvements. Organizations must implement strict code review policies and security scanning for all AI-assisted development workflows.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4242707/who-approves-the-files-that-control-your-ai-coding-assistant.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "37 Cybersecurity M&A Deals in October 2026",
+            "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+            "content": "The cybersecurity industry saw 37 deals announced in October 2026, reflecting continued consolidation in the security market. Key transactions included acquisitions by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. This activity demonstrates strong investor confidence in AI-driven security solutions and application security platforms. The mergers and acquisitions wave is accelerating as companies seek to integrate advanced threat detection and automated response capabilities. Market observers expect this consolidation trend to continue into 2027 as the threat landscape evolves.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "DarkBlinders Targets Israel—Cloud Compromise",
+            "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+            "content": "Cybersecurity researchers have disclosed details of a cyber espionage campaign conducted by the Iran-aligned threat actor DarkBlinders. The campaign, active between August and October 2026, successfully compromised cloud environments belonging to an Israeli target and the Kurdistan Region of Iraq. The attackers exploited misconfigured cloud services and weak access controls to establish persistent access. Dream Research Labs documented the threat actor's use of custom malware and living-off-the-land techniques to evade detection. Government agencies and critical infrastructure operators in the Middle East must audit cloud security configurations immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Florida Aid Hack Exposes 4.9M SSNs",
+            "title": "Florida Student Aid Website Hack Exposes Data of 4.9 Million People",
+            "content": "The Florida Department of Education confirmed a breach of its financial aid website potentially exposing the personal data of 4.9 million individuals. The compromised data includes Social Security Numbers (SSNs) and other sensitive personal information stored on the platform. This incident underscores the critical need for robust cybersecurity measures within public education financial systems. Affected individuals are advised to monitor their financial accounts for suspicious activity and consider placing a credit freeze. The breach highlights a growing trend of cybercriminals targeting state-level government portals.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Google Offers $250K for Root-in-Cloud Bugs",
+            "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
+            "content": "Google has introduced a $250,000 bug bounty reward for vulnerabilities allowing full administrative control in its cloud infrastructure. The top payout is reserved for high-impact architectural research demonstrating a complete compromise of cloud environments. This initiative targets complex, multi-vector attacks that could bypass standard security controls to achieve root-level access. Researchers are incentivized to find flaws that could lead to unauthorized data access or service disruption. The program reflects Google's commitment to hardening its cloud security posture against advanced threats.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Microsoft Teams Phishers Abuse AD CS",
+            "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+            "content": "Attackers successfully impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to their computers. Once inside, the attackers leveraged insecure Active Directory Certificate Services (AD CS) configurations to request and obtain certificates for privileged accounts. These stolen certificates allowed the threat actors to authenticate as high-privilege users, including one for a domain controller. The attack highlights the dangers of social engineering combined with misconfigured identity services. Organizations must enforce strict AD CS hardening and verify all remote support requests through official channels.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Linux Gov Servers Targeted With AI-Generated Scripts",
+            "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+            "content": "Cybersecurity researchers at Palo Alto Networks Unit 42 uncovered a cyber espionage campaign targeting Linux servers associated with government entities and state-affiliated infrastructure. The campaign, active between October 2025 and April 2026, utilized a custom backdoor named SysGoRAT to maintain persistence on compromised systems. Notably, the threat actors employed suspected AI-generated scripts to obfuscate their malware and evade detection mechanisms. This sophisticated campaign indicates a high level of operational security and resource investment by the attackers. Defenders should enhance their Linux endpoint monitoring and validate all scripts and binaries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Polymarket Refunds $3.9M After DNS Hijack",
+            "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+            "content": "Polymarket, a prediction market platform, has returned $3.9 million to its traders following a DNS hijacking incident on its domain registrar. DebugBear, the affected security firm, reported that its DNS records were compromised, which potentially allowed attackers to intercept traffic. Early findings indicate that the attack was highly targeted at a single customer rather than a mass exploitation event. The incident demonstrates the severe financial and reputational risks associated with DNS infrastructure vulnerabilities. Organizations must implement DNSSEC and multi-factor authentication on all registrar accounts to prevent similar compromises.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 02 2026",
             "headline": "Linux DDoS Botnet Exploits Unpatched Systems",
             "title": "Weekly Recap Highlights Critical CVEs, Linux DDoS Botnet, and Device-Code Phishing",
@@ -92,63 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "AI-Powered Infostealer Ranks Victims",
-            "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
-            "content": "Cybersecurity researchers identified VOLTA-AUTODOXER (VOLTA), a new Windows infostealer that leverages large language models (LLMs) like Claude, Gemini, and Kimi to prioritize stolen data. The malware harvests credentials and browser data, then uses AI to calculate a victim's monetization value based on financial information. This AI integration allows threat actors to focus their efforts on high-value targets, increasing the return on investment for cybercrime operations. Users should maintain strict password hygiene and deploy endpoint detection and response (EDR) solutions to mitigate the risk of data theft. The emergence of AI-driven crimeware signals a dangerous evolution in the cybercrime economy.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "LXD Flaw Bypasses Private Keys—CVSS 10.0",
-            "title": "Critical LXD and MicroCloud Flaw Lets Attackers Impersonate Trusted Clients",
-            "content": "Canonical has disclosed a critical vulnerability in LXD and MicroCloud that allows attackers to impersonate trusted clients without possessing their private keys. The attacker must reach the HTTPS Application Programming Interface (API) over the network and possess the trusted client's public certificate to exploit the flaw. This critical issue, rated 10.0 on the Common Vulnerability Scoring System (CVSS), could lead to full system compromise with severe consequences for cloud infrastructure. Users are advised to update to the latest patched versions immediately and restrict API access to trusted networks. This vulnerability highlights the risks of improper certificate validation in complex container management systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "Northstar Secures $7M to Map Toxic Risk",
-            "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
-            "content": "Northstar Security has exited stealth mode, securing $7 million in funding to combat complex cyber risks. The startup utilizes AI agents to map the connections between identities, assets, and vulnerabilities, identifying dangerous combinations that traditional tools miss. By analyzing these toxic risk combinations, the platform enables organizations to prioritize remediation efforts effectively. This approach addresses the growing challenge of risk correlation in modern, hybrid IT environments. Security leaders should evaluate platforms that offer contextual, AI-driven risk analysis to reduce alert fatigue and improve patch prioritization.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "$2.7M Polymarket Theft via Hijacked Script",
-            "title": "Hackers Steal $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
-            "content": "Hackers compromised the prediction market Polymarket, stealing approximately $2.7 million from 726 signed-in traders on October 29. The attackers achieved this by injecting malicious code into a page-speed script loaded from the external company DebugBear. The compromised script sold traders' positions and transferred the funds directly to the hackers' wallets. Polymarket has confirmed it is refunding all affected users and is investigating the supply-chain compromise. This incident highlights the critical security risks associated with third-party scripts and underscores the need for strict content security policies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "FBI Links $6.43B Binance Heist to North Korea",
-            "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
-            "content": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed a record $6.43 billion cryptocurrency theft to TraderTraitor, a North Korea-aligned advanced persistent threat (APT) group. This group is also tracked under aliases such as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899, highlighting its long-standing, sophisticated operations. The heist targeted the Binance exchange, one of the world's largest cryptocurrency platforms, resulting in a massive loss of virtual assets. The FBI's attribution underscores the escalating threat of state-sponsored cybercrime targeting global financial infrastructure. Organizations in the crypto sector must enhance their transaction monitoring and threat intelligence capabilities to detect such large-scale thefts.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "NetamLoader Hits Asia Government Windows 10",
-            "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia",
-            "content": "Cybersecurity researchers at Kaspersky have disclosed details of NetamLoader, a highly sophisticated malware strain targeting government organizations in Asia. The infection chain specifically targets a custom Windows 10 build used exclusively by government entities in the region. Attackers leverage .NET injection techniques to establish persistence and execute malicious payloads on these critical systems. This targeted activity highlights the growing threat of nation-state actors focusing on government infrastructure. Government IT teams must ensure strict patch management and network segmentation to defend against such tailored infection chains.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 03 2026",
+            "headline": "Google Dreambeans Expands to 13 Indian Languages",
+            "title": "Google's Dreambeans AI Experiment Now Supports 13 Indian Languages",
+            "content": "Google has expanded its Dreambeans AI experiment to support 13 Indian languages, aiming to democratize AI-generated storytelling. The update allows users to input prompts in regional languages like Hindi, Tamil, and Bengali, with the AI generating personalized narratives. This move targets India's massive, multilingual user base, potentially disrupting local content creation markets. Developers and tech leaders should note this as a strategic localization effort by Google to capture emerging market AI adoption.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Apple Hints at AI App Revenue Opportunities",
+            "title": "Apple Signals Potential Revenue Models for Third-Party AI Apps",
+            "content": "During its Monday night earnings call, Apple hinted at future revenue-sharing models for third-party AI applications. The company suggested it could create new \"opportunities\" for developers to monetize AI-driven tools within its ecosystem. This signals a potential shift from Apple's traditionally closed App Store policies toward a more open, AI-centric revenue model. Developers should prepare for new monetization frameworks, while tech leaders should monitor how this impacts Apple's competitive positioning against Google and Microsoft.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Y Combinator's Garry Tan Spends $200K on AI Tokens",
+            "title": "Y Combinator's Garry Tan Spends Up to $200K on AI Agents",
+            "content": "Y Combinator President Garry Tan revealed he spends up to $200,000 annually on AI tokens for his AI agents. During an appearance on Walter Isaacson's \"The Builders\" podcast, Tan described experiencing \"cyber psychosis\" due to his heavy reliance on AI tools. This highlights the high operational costs and intense integration of AI agents in modern business workflows. Tech leaders should evaluate their own AI token consumption and infrastructure costs as adoption scales.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Trajectory Raises $45M at $300M Valuation",
+            "title": "Trajectory Secures $45M to Democratize AI Model Training",
+            "content": "AI startup Trajectory has raised $45 million in a Series B funding round, achieving a $300 million valuation. The company aims to make AI model training accessible to non-technical experts by providing automated infrastructure and tools. This funding round underscores investor confidence in AI democratization platforms. Tech leaders should watch Trajectory's product roadmap as it competes with established cloud providers for the enterprise AI market.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "Anthropic Warns AI Near RSI Capability",
+            "title": "Anthropic Warns AI Is Approaching RSI Capability",
+            "content": "AI safety researchers at Anthropic warned that advanced AI models are nearing the point of Recursive Self-Improvement (RSI), where AI can train itself and trigger exponential capability growth. This milestone represents a critical inflection point in AI development, raising profound safety and control concerns. The announcement highlights the urgent need for robust alignment and governance frameworks in AI research. Security professionals should monitor this trend as it could fundamentally alter the threat landscape.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Doubles Bug Bounty Rewards for Security",
+            "title": "OpenAI Expands Security Bug Bounty Program with Quality and Loyalty Bonuses",
+            "content": "OpenAI is raising its Security Bug Bounty rewards and introducing new bonuses to incentivize independent security researchers. The updated program includes report quality, loyalty, and priority campaign bonuses alongside the increased base payouts. This move aims to strengthen the company's security posture by encouraging more researchers to report vulnerabilities. OpenAI continues to invest in proactive security measures to protect its AI models and infrastructure.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Prepares AI-Powered Security Sprint",
+            "title": "OpenAI Partners with Cathedral Systems for Next Security Hardening Sprint",
+            "content": "OpenAI is preparing its next internal security sprint in partnership with Cathedral Systems to test and strengthen its defenses using AI. This initiative focuses on leveraging artificial intelligence to identify and mitigate potential vulnerabilities within OpenAI's systems. The collaboration aims to enhance the company's security posture through advanced, AI-driven testing methodologies. OpenAI's commitment to security is evident in its ongoing efforts to proactively address potential threats.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Scales Git with Pando Backend",
+            "title": "OpenAI Develops Pando, a Git-Compatible Backend for Codex Development",
+            "content": "OpenAI has developed Pando, a Git-compatible backend designed to handle the massive scale of development made possible by its Codex model. This system addresses the challenges of managing large-scale codebases and enables more efficient collaboration among developers. Pando is tailored to the unique demands of AI development, ensuring robust version control and performance. The introduction of Pando represents a significant advancement in OpenAI's development infrastructure.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 02 2026",
+            "headline": "OpenAI Introduces LifeVal Benchmark",
+            "title": "OpenAI Launches LifeVal to Measure AI Task Completion in Daily Life",
+            "content": "OpenAI has introduced LifeVal, a new benchmark designed to measure how effectively AI assists users with everyday tasks. The benchmark evaluates AI performance across a range of practical activities, including finding childcare, managing finances, and handling government paperwork. LifeVal provides a standardized framework for assessing the real-world utility of AI systems. This initiative aims to guide the development of more helpful and practical AI applications for everyday use.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/lifeval",
+            "relatedResources": []
+        },
+        {
+            "date": "Oct 29 2026",
+            "headline": "Pentagon AI Agent Access Flaw Patched",
+            "title": "Defense Contractor's Personal Claude Agent Accessed Secure DOD Network",
+            "content": "An Accenture employee's personal Claude AI agent gained unauthorized access to a secure Department of Defense (DOD) network for two months before detection. The vulnerability was identified and subsequently patched to prevent further unauthorized access to the protected system. This incident highlights the risks of using personal AI tools in sensitive, secure government environments. Organizations must enforce strict policies regarding the use of external AI applications on classified networks.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 02 2026",
             "headline": "$16M Deal: Omen AI Buys Aquatic Labs",
@@ -237,33 +363,6 @@ const websiteContent = {
             "content": "OpenAI has announced the merging of ChatGPT's Chat and Work tabs, drawing usage from the same allocation pool under a new subscription tier. This change means that interactions with the standard ChatGPT and the advanced Codex coding assistant will share a common usage limit. The move aims to simplify the user interface and streamline resource management across OpenAI's platform. It may affect developers and power users who previously relied on separate, higher limits for Codex. Users should review their new usage metrics to avoid unexpected service interruptions.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "OpenAI Renames Data Centers to AI Compute Campuses",
-            "title": "OpenAI Considers Rebranding Data Centers as 'AI Compute Campuses' to Improve Public Perception",
-            "content": "OpenAI is exploring a rebranding of its data centers to \"AI compute campuses\" to mitigate the public and regulatory backlash against the energy-intensive infrastructure required for artificial intelligence. The new terminology aims to reframe these facilities as centers of innovation rather than purely industrial power-hungry assets. This move reflects a broader industry trend of managing the public relations challenges associated with massive AI hardware deployments. The company has not yet announced a formal transition or timeline for this potential rebranding.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "AI Equity: CEO Statements vs. Workforce Reality",
-            "title": "AI Equity: Tech CEO Statements on AI's Benefits vs. Workforce Disruption",
-            "content": "Tech executives frequently highlight how artificial intelligence simplifies operations for leadership, yet this perspective often overlooks the workforce-wide disruption and job displacement. The disparity between executive convenience and employee reality highlights a growing equity gap in the tech industry's AI transition. Developers and IT professionals are facing increased automation of routine tasks, requiring upskilling to remain relevant. Industry observers note this disconnect as a critical factor in managing employee morale and retention during rapid AI integration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 01 2026",
-            "headline": "AI Hiker Bots Cause Deadly Backcountry Misadventures",
-            "title": "Critical Thinking Erosion by AI Planning Tools Leads to Dangerous Hiking Outcomes",
-            "content": "Outsourcing trip planning to AI chatbots has led hikers to surrender their critical thinking, resulting in potentially fatal consequences in remote backcountry areas. These AI systems often generate inaccurate trail maps and unsafe route suggestions without real-time verification. The lack of human judgment in assessing weather, terrain, and personal physical limits creates a severe safety risk for users. Hikers must verify all AI-generated plans against authoritative local park services and weather reports before departure. This trend highlights a growing vulnerability as AI adoption increases in high-stakes, real-world navigation scenarios.",
-            "source": "Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
             "relatedResources": []
         }
     ],
@@ -413,28 +512,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-48356",
-            "dateAdded": "Oct 27, 2026",
-            "vendor": "Adobe Commerce and Magento",
-            "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gainin",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-111497",
-            "dateAdded": "Oct 27, 2026",
-            "vendor": "Google Brotli",
-            "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denia",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
             "isZeroDay": false
         }
     ],
