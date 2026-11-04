@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 02 2026",
+            "headline": "Cheap Tricks—$1M LLM Hijacking—Ransomware Threats",
+            "title": "Low-Effort Phishing, $1M LLMjacking, and AI-Powered Ransomware Threats",
+            "content": "Cybercriminals are leveraging low-effort social engineering, such as fake support calls and trusted browser extensions, to execute successful attacks. Simultaneously, a thriving enterprise for LLMjacking has emerged, with victims paying up to $1 million in resource consumption before access was revoked. Security leaders must prioritize user training and implement robust access controls to mitigate these evolving threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Node-RED Flaw Exploited—Critical Infrastructure at Risk",
+            "title": "Node-RED Authentication Hole Actively Exploited in the Wild",
+            "content": "Attackers are actively exploiting an unpatched authentication hole in Node-RED, a flow-based programming tool, despite Siemens releasing security fixes months ago. The vulnerability affects open-source IoT (Internet of Things) and IIoT (Industrial IoT) systems, including those embedded in critical infrastructure. Many users have failed to apply the patches, leaving these networks exposed to unauthorized access. Organizations must immediately update their Node-RED instances to mitigate the risk of compromise.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4244307/node-red-authentication-hole-being-exploited-in-the-wild.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "European Fridge Hacks Expose Cold-Chain Security Gaps",
+            "title": "European Refrigerator Attacks Expose Cold-Chain Security Vulnerabilities",
+            "content": "Recent attacks on connected European refrigerators have exposed severe security vulnerabilities in cold-chain infrastructure. These incidents highlight how inadequate security practices in temperature-controlled systems pose risks across critical sectors, not just food storage. The attacks demonstrate that remote access and poor network segmentation can lead to widespread operational disruptions. Security professionals must audit IoT devices and enforce strict access controls to protect these environments.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "UK Braces for AI-Powered Ransomware Attacks",
+            "title": "UK Warned to Brace for AI-Powered Ransomware Attacks",
+            "content": "The head of GCHQ's National Cyber Security Centre (NCSC) has warned that AI-powered malware is \"highly likely\" to be used in ransomware attacks on Britain's critical national infrastructure within the next two years. The abuse of AI technologies is making it easier for attackers to rapidly develop and deploy sophisticated malware. This emerging threat requires organizations to enhance their detection capabilities and adopt advanced defensive measures.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4244138/uk-organisations-warned-to-brace-for-ai-powered-ransomware-attacks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "LLMjacking Enterprise—Victims Pay $1M",
+            "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
+            "content": "Cybercriminals have turned the reselling of cloud access to Large Language Models (LLMs) into a lucrative business model known as LLMjacking. Some victims have paid as much as $1 million in resource consumption before the attackers revoked access. This business model exploits the high computational costs associated with LLM inference. Organizations must monitor their cloud usage and implement strict API key management to prevent unauthorized LLM access.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "mSecure Users Urged to Reset Passwords",
+            "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+            "content": "mSecure, a password manager, sent an email on November 3 warning customers of suspicious activity and urging them to change passwords, reset two-factor authentication (2FA), and remove passkeys. The developer, mS, did not specify the nature of the activity, but the warning indicates a potential compromise of user credentials. Users are advised to immediately revoke all active sessions, change their master passwords, and re-register their 2FA keys with their new credentials. This incident highlights the critical need for password managers to maintain transparent communication during security incidents.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Chainstack Breach Exposes Customer Data",
+            "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+            "content": "Blockchain infrastructure provider Chainstack disclosed on November 3 that a cyber attack allowed an unauthorized party to access parts of its production infrastructure. The incident is part of a large-scale, artificial intelligence (AI)-powered attack campaign targeting the industry. The breach exposed customer data and password hashes, requiring affected clients to rotate their credentials immediately. Chainstack has engaged third-party forensic investigators to assess the full scope of the data exfiltration.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Binance Theft Reached $6.43 Billion",
+            "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+            "content": "Binance revealed on November 3 that a record $6.43 billion theft resulted from a sophisticated, multi-stage campaign. The attack utilized a tampered Homebrew installation and recruitment-themed social engineering to compromise internal systems. Threat actors abused AI tools to automate the attack and generate fake identities for the social engineering phase. This breach represents one of the largest cryptocurrency heists in history and underscores the growing risk of AI-driven social engineering.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "cPGuard Update Hijacked to Backdoor Linux Servers",
+            "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+            "content": "An attacker compromised the update system of the cPGuard security tool on November 2, using it to push a malicious script to Linux servers. The script installed a backdoor and harvested password hashes and other sensitive files from compromised machines. OPSSHIELD, the maker of cPGuard, advised all users to immediately audit their server logs for unauthorized script execution. This supply chain attack demonstrates the severe risk of compromising software update mechanisms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "CrowdStrike Acquires Fiddler and Dreadnode",
+            "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode",
+            "content": "CrowdStrike is reportedly acquiring AI security firms Fiddler and Dreadnode for $495 million, as reported on November 3. The acquisitions will integrate AI agent observability and automated AI security testing capabilities into the CrowdStrike Falcon platform. This strategic move aims to bolster Falcon's defenses against AI-specific threats, including prompt injection and model inversion attacks. The deal highlights the growing corporate focus on securing artificial intelligence infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 03 2026",
             "headline": "Barracuda Flaws Chain to Root Access",
             "title": "Barracuda Vulnerabilities Chained to Bypass Authorization and Gain Root",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Siemens IoT2050 Flaw Actively Exploited—CVSS 10.0",
-            "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-            "content": "VulnCheck has revealed that threat actors are actively exploiting a maximum-severity vulnerability in Siemens SIMATIC IoT2050 Advanced devices. The flaw, tracked as CVE-2026-58115, stems from missing authentication on a critical function, allowing remote command execution. This vulnerability carries a CVSS score of 10.0, indicating complete compromise of the affected IoT devices. Siemens has released patches to address the authentication bypass, and administrators must update firmware immediately to prevent unauthorized backdoor installations. This incident underscores the persistent risk to industrial IoT endpoints from unpatched authentication flaws.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "CryptoPayment Gateway Flaw Exposes Wallet Credentials",
-            "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-            "content": "Threat actors are actively attempting to exploit an unpatched maximum-severity vulnerability in the CryptoPayment Gateway WordPress plugin. The flaw, identified as CVE-2026-81648, allows attackers to bypass authentication and steal sensitive wallet credentials. The vulnerability carries a CVSS score of 10.0, representing a critical risk to cryptocurrency users and merchants. Defused Cyber advises all site administrators to update the plugin to the latest patched version immediately. This attack highlights the growing threat of unpatched vulnerabilities in cryptocurrency payment processing systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "AI Coding Assistant Approval Risks—Supply Chain Threat",
-            "title": "Who Approves the Files That Control Your AI Coding Assistant?",
-            "content": "Cybersecurity researchers warn that malicious actors are exploiting the human review process to compromise AI coding assistants. Attackers submit seemingly harmless pull requests containing configuration files that alter the AI model's behavior. These changes can introduce supply chain vulnerabilities, allowing the AI to exfiltrate code or inject malicious payloads during automated coding tasks. The review process often overlooks these configuration changes because they appear to be developer-experience improvements. Organizations must implement strict code review policies and security scanning for all AI-assisted development workflows.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4242707/who-approves-the-files-that-control-your-ai-coding-assistant.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "37 Cybersecurity M&A Deals in October 2026",
-            "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
-            "content": "The cybersecurity industry saw 37 deals announced in October 2026, reflecting continued consolidation in the security market. Key transactions included acquisitions by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. This activity demonstrates strong investor confidence in AI-driven security solutions and application security platforms. The mergers and acquisitions wave is accelerating as companies seek to integrate advanced threat detection and automated response capabilities. Market observers expect this consolidation trend to continue into 2027 as the threat landscape evolves.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "DarkBlinders Targets Israel—Cloud Compromise",
-            "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-            "content": "Cybersecurity researchers have disclosed details of a cyber espionage campaign conducted by the Iran-aligned threat actor DarkBlinders. The campaign, active between August and October 2026, successfully compromised cloud environments belonging to an Israeli target and the Kurdistan Region of Iraq. The attackers exploited misconfigured cloud services and weak access controls to establish persistent access. Dream Research Labs documented the threat actor's use of custom malware and living-off-the-land techniques to evade detection. Government agencies and critical infrastructure operators in the Middle East must audit cloud security configurations immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Florida Aid Hack Exposes 4.9M SSNs",
-            "title": "Florida Student Aid Website Hack Exposes Data of 4.9 Million People",
-            "content": "The Florida Department of Education confirmed a breach of its financial aid website potentially exposing the personal data of 4.9 million individuals. The compromised data includes Social Security Numbers (SSNs) and other sensitive personal information stored on the platform. This incident underscores the critical need for robust cybersecurity measures within public education financial systems. Affected individuals are advised to monitor their financial accounts for suspicious activity and consider placing a credit freeze. The breach highlights a growing trend of cybercriminals targeting state-level government portals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Google Offers $250K for Root-in-Cloud Bugs",
-            "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
-            "content": "Google has introduced a $250,000 bug bounty reward for vulnerabilities allowing full administrative control in its cloud infrastructure. The top payout is reserved for high-impact architectural research demonstrating a complete compromise of cloud environments. This initiative targets complex, multi-vector attacks that could bypass standard security controls to achieve root-level access. Researchers are incentivized to find flaws that could lead to unauthorized data access or service disruption. The program reflects Google's commitment to hardening its cloud security posture against advanced threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Microsoft Teams Phishers Abuse AD CS",
-            "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-            "content": "Attackers successfully impersonated IT support personnel on Microsoft Teams to trick employees into granting remote access to their computers. Once inside, the attackers leveraged insecure Active Directory Certificate Services (AD CS) configurations to request and obtain certificates for privileged accounts. These stolen certificates allowed the threat actors to authenticate as high-privilege users, including one for a domain controller. The attack highlights the dangers of social engineering combined with misconfigured identity services. Organizations must enforce strict AD CS hardening and verify all remote support requests through official channels.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Linux Gov Servers Targeted With AI-Generated Scripts",
-            "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-            "content": "Cybersecurity researchers at Palo Alto Networks Unit 42 uncovered a cyber espionage campaign targeting Linux servers associated with government entities and state-affiliated infrastructure. The campaign, active between October 2025 and April 2026, utilized a custom backdoor named SysGoRAT to maintain persistence on compromised systems. Notably, the threat actors employed suspected AI-generated scripts to obfuscate their malware and evade detection mechanisms. This sophisticated campaign indicates a high level of operational security and resource investment by the attackers. Defenders should enhance their Linux endpoint monitoring and validate all scripts and binaries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Polymarket Refunds $3.9M After DNS Hijack",
-            "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
-            "content": "Polymarket, a prediction market platform, has returned $3.9 million to its traders following a DNS hijacking incident on its domain registrar. DebugBear, the affected security firm, reported that its DNS records were compromised, which potentially allowed attackers to intercept traffic. Early findings indicate that the attack was highly targeted at a single customer rather than a mass exploitation event. The incident demonstrates the severe financial and reputational risks associated with DNS infrastructure vulnerabilities. Organizations must implement DNSSEC and multi-factor authentication on all registrar accounts to prevent similar compromises.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 04 2026",
+            "headline": "Nexus Mods Mandates AI Disclosures",
+            "title": "Nexus Mods Requires AI Content Disclosures for New Uploads",
+            "content": "Nexus Mods, the largest PC gaming modding repository, has implemented mandatory disclosures for all new mod uploads. Mod authors must now declare whether AI was used in their work, marking a significant policy shift for the platform. This change aims to increase transparency as AI-generated content becomes more prevalent in the gaming community. The policy affects millions of users and mod creators who rely on the platform's ecosystem.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "AI Bubble Timing Remains Uncertain",
+            "title": "Experts Dismiss Predictions on AI Bubble Burst",
+            "content": "Industry analysts are pushing back against frequent speculation regarding an imminent AI market crash. Experts argue that the technology's integration into enterprise infrastructure makes a sudden collapse highly unlikely. The ongoing investment cycle continues to support the development of foundational models and enterprise applications. Stakeholders should focus on long-term integration strategies rather than short-term market volatility.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1025826/ai-bubble-pimco-apollo-bonds",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Anthropic Develops AI Identity Verification",
+            "title": "Anthropic Introduces FlashProve for AI Model Authentication",
+            "content": "Anthropic is developing a system called FlashProve to verify the identity of AI models. The technology will allow users to confirm that an AI response genuinely originated from the claimed model. This development addresses growing concerns about AI model impersonation and response authenticity. The tool is expected to enhance trust in AI-generated outputs for enterprise and consumer applications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Data Centers Use Discarded Jet Engines",
+            "title": "Data Centers Deploy Discarded Jet Engines to Address Power Shortages",
+            "content": "Data center operators are turning to decommissioned jet engines to meet surging power demands. This unconventional approach bypasses lengthy grid connection waits and new turbine procurement delays. The solution is less efficient and has a higher carbon footprint than traditional power sources. The trend highlights the severe infrastructure bottlenecks facing the AI industry's rapid expansion.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Ballistic Ventures Seeks $490M for AI Cybersecurity",
+            "title": "Ballistic Ventures Raises $490M for AI-Driven Cybersecurity Funds",
+            "content": "Cybersecurity-focused venture firm Ballistic Ventures is raising $490 million across two new funds. The firm is targeting $360 million for a flagship fund and an additional $130 million for a separate investment vehicle. This fundraising round targets the booming market for AI-driven cybersecurity solutions. The capital will be deployed to support early-stage companies developing autonomous defense mechanisms.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Palantir Commercial Revenue Overtakes Government—First Time Ever",
+            "title": "Palantir's U.S. Commercial Revenue Surpasses U.S. Government Revenue for First Time",
+            "content": "Palantir Technologies reported that its U.S. commercial revenue surpassed U.S. government revenue for the first time in the company's history during its recent quarterly earnings. This shift indicates a broader enterprise adoption of its AI-driven data integration platforms outside of the defense and intelligence sectors. The commercial pivot reflects increasing demand for its AI-powered operational tools in sectors like finance and logistics. Investors and analysts are closely monitoring this transition as a marker of the company's maturation into a mainstream enterprise software vendor.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/03/hiding-inside-palantirs-skyrocketing-quarter-is-a-foreboding-signal/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Bezos, Statham Deepfakes Circulate Online",
+            "title": "Deepfakes of Jeff Bezos and Jason Statham Circulate on Social Media",
+            "content": "AI-generated images falsely depicting Amazon founder Jeff Bezos and actor Jason Statham with hair are circulating across social media platforms including X, Threads, and Bluesky. The synthetic media leverages generative AI to alter the subjects' well-known bald appearances, raising concerns about the proliferation of realistic but fabricated content. Users are advised to verify the authenticity of viral images before sharing or reacting to them. This incident highlights the ongoing challenge of detecting and mitigating deepfakes targeting public figures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1025745/fake-jeff-bezos-hair-replacement-photos-debunk",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Siri Gains Cross-App Control in iOS 27.3",
+            "title": "Apple Expands Siri's Capabilities to Third-Party Apps in iOS 27.3",
+            "content": "Apple is rolling out iOS 27.3, enabling developers to integrate Siri's AI features directly into third-party applications. This update allows the voice assistant to process natural language requests and perform actions across a user's personal app ecosystem. The move positions Siri as a more proactive agent rather than a passive search tool, directly competing with standalone AI assistants. Developers must update their apps to utilize the new SiriKit APIs to enable these cross-application functionalities for their users.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Google Antigravity Accelerates Drug Discovery",
+            "title": "Google Antigravity and Cheminformatics Skills Streamline Drug Discovery",
+            "content": "Google DeepMind's Antigravity project is accelerating drug discovery workflows by leveraging cheminformatics skills to search chemical compounds and propose novel rigidified macrocycles. The AI model analyzes molecular structures to identify potential drug candidates with improved stability and bioavailability. This application of AI in chemistry aims to reduce the time and cost associated with traditional laboratory testing. Researchers can use Antigravity to generate and evaluate complex molecular architectures for pharmaceutical development.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 03 2026",
+            "headline": "Google Disables Search in Schools Rejecting AI",
+            "title": "Google Disables Search in Schools Rejecting AI Features",
+            "content": "Google is completely disabling its core Search functionality in schools that reject its AI-powered educational tools, according to an internal company memo. Districts opting out of Google's AI suite, including Gemini and Gemini in Classroom, will lose access to standard Google Search entirely. This policy change forces a hard choice on educational institutions regarding the adoption of Google's AI ecosystem. School administrators must now decide whether to implement Google's AI features or forfeit standard search access for their students and staff.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+            "relatedResources": []
+        },
         {
             "date": "Nov 03 2026",
             "headline": "ChatGPT Search Hits 20% of Google's Volume",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Anthropic is experiencing a decline in its compute margins at a time when demand for artificial intelligence (AI) infrastructure is expected to increase. The company is grappling with the high costs of running massive AI models, which are consuming a larger portion of its operational budget. This economic pressure highlights the intense capital expenditure required to train and deploy cutting-edge frontier models. The financial strain underscores the challenge of scaling AI operations profitably without significant revenue growth. Investors and partners should monitor Anthropic's infrastructure spending and potential cost-cutting measures.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Google Dreambeans Expands to 13 Indian Languages",
-            "title": "Google's Dreambeans AI Experiment Now Supports 13 Indian Languages",
-            "content": "Google has expanded its Dreambeans AI experiment to support 13 Indian languages, aiming to democratize AI-generated storytelling. The update allows users to input prompts in regional languages like Hindi, Tamil, and Bengali, with the AI generating personalized narratives. This move targets India's massive, multilingual user base, potentially disrupting local content creation markets. Developers and tech leaders should note this as a strategic localization effort by Google to capture emerging market AI adoption.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Apple Hints at AI App Revenue Opportunities",
-            "title": "Apple Signals Potential Revenue Models for Third-Party AI Apps",
-            "content": "During its Monday night earnings call, Apple hinted at future revenue-sharing models for third-party AI applications. The company suggested it could create new \"opportunities\" for developers to monetize AI-driven tools within its ecosystem. This signals a potential shift from Apple's traditionally closed App Store policies toward a more open, AI-centric revenue model. Developers should prepare for new monetization frameworks, while tech leaders should monitor how this impacts Apple's competitive positioning against Google and Microsoft.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Y Combinator's Garry Tan Spends $200K on AI Tokens",
-            "title": "Y Combinator's Garry Tan Spends Up to $200K on AI Agents",
-            "content": "Y Combinator President Garry Tan revealed he spends up to $200,000 annually on AI tokens for his AI agents. During an appearance on Walter Isaacson's \"The Builders\" podcast, Tan described experiencing \"cyber psychosis\" due to his heavy reliance on AI tools. This highlights the high operational costs and intense integration of AI agents in modern business workflows. Tech leaders should evaluate their own AI token consumption and infrastructure costs as adoption scales.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Trajectory Raises $45M at $300M Valuation",
-            "title": "Trajectory Secures $45M to Democratize AI Model Training",
-            "content": "AI startup Trajectory has raised $45 million in a Series B funding round, achieving a $300 million valuation. The company aims to make AI model training accessible to non-technical experts by providing automated infrastructure and tools. This funding round underscores investor confidence in AI democratization platforms. Tech leaders should watch Trajectory's product roadmap as it competes with established cloud providers for the enterprise AI market.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "Anthropic Warns AI Near RSI Capability",
-            "title": "Anthropic Warns AI Is Approaching RSI Capability",
-            "content": "AI safety researchers at Anthropic warned that advanced AI models are nearing the point of Recursive Self-Improvement (RSI), where AI can train itself and trigger exponential capability growth. This milestone represents a critical inflection point in AI development, raising profound safety and control concerns. The announcement highlights the urgent need for robust alignment and governance frameworks in AI research. Security professionals should monitor this trend as it could fundamentally alter the threat landscape.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Doubles Bug Bounty Rewards for Security",
-            "title": "OpenAI Expands Security Bug Bounty Program with Quality and Loyalty Bonuses",
-            "content": "OpenAI is raising its Security Bug Bounty rewards and introducing new bonuses to incentivize independent security researchers. The updated program includes report quality, loyalty, and priority campaign bonuses alongside the increased base payouts. This move aims to strengthen the company's security posture by encouraging more researchers to report vulnerabilities. OpenAI continues to invest in proactive security measures to protect its AI models and infrastructure.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Prepares AI-Powered Security Sprint",
-            "title": "OpenAI Partners with Cathedral Systems for Next Security Hardening Sprint",
-            "content": "OpenAI is preparing its next internal security sprint in partnership with Cathedral Systems to test and strengthen its defenses using AI. This initiative focuses on leveraging artificial intelligence to identify and mitigate potential vulnerabilities within OpenAI's systems. The collaboration aims to enhance the company's security posture through advanced, AI-driven testing methodologies. OpenAI's commitment to security is evident in its ongoing efforts to proactively address potential threats.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Scales Git with Pando Backend",
-            "title": "OpenAI Develops Pando, a Git-Compatible Backend for Codex Development",
-            "content": "OpenAI has developed Pando, a Git-compatible backend designed to handle the massive scale of development made possible by its Codex model. This system addresses the challenges of managing large-scale codebases and enables more efficient collaboration among developers. Pando is tailored to the unique demands of AI development, ensuring robust version control and performance. The introduction of Pando represents a significant advancement in OpenAI's development infrastructure.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/scaling-git-at-openai",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "OpenAI Introduces LifeVal Benchmark",
-            "title": "OpenAI Launches LifeVal to Measure AI Task Completion in Daily Life",
-            "content": "OpenAI has introduced LifeVal, a new benchmark designed to measure how effectively AI assists users with everyday tasks. The benchmark evaluates AI performance across a range of practical activities, including finding childcare, managing finances, and handling government paperwork. LifeVal provides a standardized framework for assessing the real-world utility of AI systems. This initiative aims to guide the development of more helpful and practical AI applications for everyday use.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/lifeval",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 02 2026",
-            "headline": "$16M Deal: Omen AI Buys Aquatic Labs",
-            "title": "Omen AI Acquires Aquatic Labs for $16 Million to Solve Data Center Water Crisis",
-            "content": "Omen AI has acquired Aquatic Labs in a $16 million deal to consolidate expertise in liquid cooling for hyperscale data centers. The combined entity will integrate Aquatic Labs' thermal management algorithms with Omen AI's AI-driven predictive modeling to optimize water usage and prevent leaks. This move directly addresses the escalating water consumption of modern AI training clusters, which can use millions of gallons annually. The integration is expected to reduce water waste by up to 30% in partner facilities. Data center operators should evaluate Omen AI's combined platform for their next-generation cooling infrastructure.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
             "relatedResources": []
         }
     ],
@@ -493,25 +493,14 @@ const websiteContent = {
             "isZeroDay": false
         },
         {
-            "cveId": "CVE-2026-41709",
-            "dateAdded": "Oct 28, 2026",
-            "vendor": "Broadcom VMware ESX",
-            "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+            "cveId": "CVE-2026-119977",
+            "dateAdded": "Nov 03, 2026",
+            "vendor": "WordPress WordPress Core",
+            "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window.",
             "score": "HIGH",
             "status": "Confirmed",
             "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-46300",
-            "dateAdded": "Oct 28, 2026",
-            "vendor": "Linux Kernel",
-            "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker dur",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
             "isZeroDay": false
         }
     ],
