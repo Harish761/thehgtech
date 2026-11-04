@@ -4,12 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 02 2026",
-            "headline": "Cheap Tricks—$1M LLM Hijacking—Ransomware Threats",
-            "title": "Low-Effort Phishing, $1M LLMjacking, and AI-Powered Ransomware Threats",
-            "content": "Cybercriminals are leveraging low-effort social engineering, such as fake support calls and trusted browser extensions, to execute successful attacks. Simultaneously, a thriving enterprise for LLMjacking has emerged, with victims paying up to $1 million in resource consumption before access was revoked. Security leaders must prioritize user training and implement robust access controls to mitigate these evolving threats.",
+            "date": "Nov 04 2026",
+            "headline": "SonicWall GMS Flaws Unpatched—9.1 CVSS Score",
+            "title": "SonicWall Warns of Two Unpatched EoL GMS Flaws",
+            "content": "SonicWall will not patch two critical vulnerabilities in its end-of-life Global Management System (GMS) 9.5.2 and earlier versions. The flaws include CVE-2026-109593, a 9.1 CVSS score unauthenticated file read vulnerability, and a second flaw allowing unauthenticated database record alterations. This leaves organizations running GMS on unsupported software exposed to potential data exfiltration and unauthorized system modifications. Security teams must migrate to supported SonicWall platforms or implement compensating network segmentation and monitoring to mitigate the risk of exploitation.",
             "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+            "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Prompt Adware Injects Ads into AI Agents",
+            "title": "Check Point Research Uncovers Prompt Adware in OpenAI Codex Toolkit",
+            "content": "Check Point Research disclosed \"prompt adware,\" a novel attack where a jailbreak toolkit modifies an AI agent's trusted instructions to inject third-party advertisements. The malicious OpenAI Codex bundle alters the agent's system prompts, redirecting user queries to a specific AI gateway. This technique compromises the integrity of AI-driven applications, potentially misleading users and violating platform usage policies. Developers must vet third-party AI models and implement output validation to prevent unauthorized instruction injection.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "APT29 Hijacks Web Analytics to Deliver Mobile Exploits",
+            "title": "APT29 Hijacks Web Analytics Script for Mobile Exploit Delivery",
+            "content": "The Russia-linked APT29 threat actor compromised a Ukrainian web analytics service, Plerdy SEO Tracker, to deliver iOS and Android exploits. The watering hole campaign used compromised websites and fake domains to inject malicious JavaScript into legitimate web pages. This supply chain attack targeted users visiting compromised sites, attempting to exploit mobile browser vulnerabilities to deploy remote access tools. Users should avoid visiting unfamiliar websites and apply all pending operating system security patches immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Rails Flaw Lets Attackers Write Server Files",
+            "title": "Critical Rails Flaw Allows Arbitrary Server File Writing",
+            "content": "A critical vulnerability in Ruby on Rails allows unauthenticated attackers to write arbitrary files on a server through crafted ImageMagick uploads. The flaw is fixed in versions 8.1.4.1 and 8.0.5.2, and affects applications processing user-uploaded images. Successful exploitation could lead to remote code execution, allowing an attacker to gain full control of the underlying server infrastructure. Developers must upgrade to the patched Rails versions or disable the ImageMagick integration to mitigate this risk.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Malicious cPGuard Updates in OpsShield Supply Chain",
+            "title": "Malicious cPGuard Updates Served in OpsShield Supply Chain Attack",
+            "content": "Attackers compromised OpsShield's update servers using stolen credentials to distribute malicious cPGuard updates. The supply chain attack poisoned multiple versions of the cPGuard control panel, potentially delivering malware to downstream customers. This highlights the critical risk of third-party update infrastructure being targeted by threat actors. Organizations must verify the integrity of software updates, monitor for anomalous network traffic, and review logs for unauthorized update server access.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Chrome 157 Patches 213 Flaws—7 Critical",
+            "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
+            "content": "Google has released Chrome 157, addressing 213 security vulnerabilities, of which seven are rated critical. The update resolves memory safety bugs and incorrect authorization issues that could lead to remote code execution. All users are urged to update to version 157.0.8035.x or later to mitigate these active threats. This release underscores the continuous pressure on browser vendors to patch complex vulnerabilities.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Google Patches Critical Android RCE Flaw",
+            "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+            "content": "Google has patched a critical Android flaw, CVE-2026-58868, that allows remote code execution (RCE) without any user interaction. The vulnerability affects Android 14 through 17 and is resolved in the November 1, 2026, security patch. Threat actors could exploit this to execute malicious code on devices remotely. Users should ensure their devices are updated to the latest security patch level immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "CISA Adds WordPress Core Flaw to KEV Catalog",
+            "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+            "content": "CISA has added CVE-2026-119977 to its Known Exploited Vulnerabilities (KEV) catalog, confirming active exploitation of a WordPress Core flaw. The high-severity vulnerability, with a CVSS score of 8.1, is a time-based SQL injection issue triggered during software upgrades. Attackers are leveraging this to compromise WordPress installations and gain unauthorized database access. Site administrators must update their WordPress core to the latest version immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Trojanized Installers Hijack PCs for Profit",
+            "title": "Fake software installers are turning your PCs into profit centers for hackers",
+            "content": "Cybercriminals are distributing trojanized software installers to transform Windows PCs into profitable botnets. These malicious packages, often for cracked software or games, deploy cryptocurrency miners and information stealers. Microsoft has observed this evolving campaign, which consumes system resources and compromises user data. Users must download software exclusively from official vendor websites or trusted repositories.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4244528/fake-software-installers-are-turning-your-pcs-into-profit-centers-for-hackers.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Chrome 157 Fixes 213 Security Issues—Update Now",
+            "title": "Chrome 157 fixes 213 security issues, including 7 critical flaws",
+            "content": "Google has issued Chrome 157, which resolves 213 security issues, including seven rated critical. The update fixes memory safety bugs and incorrect authorization flaws that could be exploited by threat actors. Users should verify their browser version and update to 157.0.8035.x or later to protect against potential remote code execution. Manual updates may be required if automatic updates are disabled.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/chrome-157-fixes-213-security-issues-including-7-critical-flaws",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "LLMjacking Drains $1M from Enterprise Cloud",
-            "title": "Google Warns LLMjacking Attacks Costing Enterprises Up to $1 Million",
-            "content": "Google warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources in a tactic called LLMjacking. Attackers obtain API keys to run unauthorized AI model training or inference, leading to massive cloud bills. This new threat is specifically targeting enterprises with heavy AI workloads, potentially costing them up to $1 million per incident. Organizations must enforce strict API key management and monitor cloud usage for anomalies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Frontline Education Breach Hits 1.3 Million",
-            "title": "Frontline Education Data Breach Exposes 1.3 Million Records",
-            "content": "Hackers exploited a flaw in third-party software to steal the personal information of over 1.3 million school district staff and students. The breach highlights the risks associated with third-party integrations in educational technology platforms. The exposed data includes sensitive personal and educational records, putting students and staff at risk of identity theft. Frontline Education is working with cybersecurity firms to investigate the incident and notify affected individuals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Android November Patch Fixes 200+ Flaws",
-            "title": "Android November 2026 Updates Patch Over 200 Vulnerabilities",
-            "content": "Google released its November 2026 Android security updates, patching over 200 vulnerabilities across the platform. The most severe is a critical flaw in the Android Framework that allows remote code execution without any user interaction. This flaw could be exploited to take full control of a device simply by processing a malicious media file. Users are strongly advised to install the latest updates immediately to protect against these threats.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Node-RED Flaw Actively Exploited",
-            "title": "Critical Node-RED Flaw Actively Exploited in Live Attacks",
-            "content": "Multiple attacks from the same IP address have attempted to exploit a critical vulnerability in Node-RED, a popular open-source tool for wiring together hardware devices and APIs. Attackers are deploying various payloads, including a Linux bot and webshells, to compromised systems. This indicates active exploitation of the flaw in the wild, posing a significant risk to any organization using Node-RED. Users must update to the latest patched version immediately to secure their deployments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Linux TCP RCE Flaw Patched",
-            "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Fixes Remain in Testing",
-            "content": "Red Hat released fixed kernels for a critical use-after-free vulnerability in the Linux kernel's IPv4 TCP code, rated 9.8 on the CVSS scale. The flaw affects Red Hat Enterprise Linux (RHEL) versions 8, 9, and 10, while Ubuntu's corresponding fixes for its three newest long-term-support (LTS) releases remain in an opt-in testing channel. This vulnerability allows remote code execution (RCE) and poses a severe risk to any exposed systems running affected Linux distributions. Organizations should apply the available patches immediately and monitor Ubuntu's testing channels for the upcoming stable release.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Gorbag Hackers Target Ukraine",
-            "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-            "content": "The Russia-aligned threat actor Gorbag has been observed using simple information stealer malware to target Ukrainian organizations, with a clear preference for law enforcement and justice sector entities. Active since at least February 2025, the group has exclusively focused on Ukrainian targets to harvest sensitive data. The attacks leverage a flaw in WinRAR, a popular file archiving utility, to gain initial access and deploy the malware. Ukrainian organizations, particularly those in law enforcement and justice, should update WinRAR and implement endpoint detection and response (EDR) tools to mitigate this threat.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "UK Critical Infrastructure Faces AI Cyberattacks by 2028",
-            "title": "UK Cyber Chief Warns Critical Infrastructure Will Face AI Cyberattacks by 2028",
-            "content": "The U.K. cyber chief has warned that the nation's critical infrastructure will likely face AI-powered cyberattacks by 2028. This threat is driven by the increasing use of artificial intelligence (AI) by both criminal syndicates and state-sponsored groups, including China and Russia. AI is being integrated into offensive cyber operations to automate vulnerability discovery, generate convincing phishing content, and accelerate attack lifecycles. Sectors such as energy, transportation, and finance must prioritize AI-driven security measures and threat intelligence to defend against these emerging capabilities.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "BTCPay Server Flaw Steals Bitcoin",
-            "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-            "content": "Hackers have successfully stolen Bitcoin and Litecoin from hot wallets on instances of BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, running older versions of the software. The attacks specifically target a vulnerability that allows unauthorized access to wallet data, leading to the complete loss of funds for affected merchants. BTCPay Server has urged all users to immediately install the latest version of its software to patch the flaw and secure their wallets. Merchants using BTCPay Server must verify their instance versions and apply the security update without delay.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Synology NAS Devices Hit by Ransomware",
-            "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-            "content": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following active ransomware attacks. Threat actors are exploiting a vulnerability that was patched in December 2024, specifically targeting devices that have not applied the update. The exploitation of this flaw allows attackers to deploy ransomware and encrypt critical data stored on the NAS devices. Synology users must immediately update their DSM software to the latest version to close this security gap and prevent data encryption.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 04 2026",
+            "headline": "Open Source AI Boom—Who Profits?",
+            "title": "Hugging Face Details How Enterprises Capture Value from Open Source AI",
+            "content": "Hugging Face's policy chief outlines the economic and security trade-offs of the open-source AI boom. Enterprises and governments are adopting these models for lower costs and greater control, but monetization remains a challenge. The rise of Chinese open models intensifies the competitive landscape. Companies must balance rapid innovation with robust security protocols and clear data governance policies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Open Source AI: Costs, Risks, Trade-offs",
+            "title": "Hugging Face Policy Chief on the Risks of Building on Open Source AI",
+            "content": "As open-source AI models become mainstream, Hugging Face's policy chief warns of hidden costs and security risks. Enterprises must navigate complex licensing and potential data exposure when fine-tuning models. The shift towards open-source architecture challenges traditional closed-source AI providers. Organizations should conduct thorough risk assessments and establish clear internal policies before deploying these systems.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Google Search Revenue Growth Slows",
+            "title": "Google Struggles to Monetize AI as Search Growth Decelerates",
+            "content": "Alphabet reported that Google Search revenue growth slowed to 12% year-over-year in the third quarter, down from 17% the previous quarter. This deceleration highlights the difficulty of translating AI integration into direct financial gains comparable to its legacy search engine. Investors are scrutinizing Alphabet's ability to leverage generative AI to sustain high-margin revenue streams.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Hugging Face CEO P(Doom) Is 'Close to Zero'",
+            "title": "Hugging Face CEO Downplays AI Doomsday Scenarios",
+            "content": "Hugging Face CEO Clément Delangue stated his personal probability of AI-induced human extinction, or P(Doom), is \"close to zero.\" He attributes most AI risk to a few large players developing closed-source models without public scrutiny. Delangue argues that open-source AI allows for broader oversight and safer development practices. The industry continues to debate the balance between rapid AI advancement and existential safety.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/wired-world-fair-2026-clement-delangue-hugging-face/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Securing Agentic Enterprises with Data Lineage",
+            "title": "Data Lineage Crucial for Securing Agentic AI Enterprises",
+            "content": "MIT Technology Review emphasizes that data lineage is essential for securing agentic AI in enterprise environments. As AI agents autonomously pull and process data from multiple sources, tracking data provenance becomes critical for security and compliance. Organizations must implement robust data governance to prevent agents from accessing restricted information or generating inaccurate outputs. This approach mitigates risks associated with autonomous decision-making systems.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "DuckDuckGo Targets Schools—Google AI Policy Backlash",
+            "title": "DuckDuckGo Courts Schools Frustrated by Google's AI Restrictions",
+            "content": "DuckDuckGo is actively courting schools frustrated by Google's restrictive AI policies for educational technology. The privacy-focused search engine offers educators a viable alternative that allows them to disable AI-powered features entirely. This strategic move targets an increasingly vocal demographic of educators concerned about student data privacy and AI-driven surveillance. DuckDuckGo's pitch emphasizes its strict privacy policies, which prevent the tracking of student search histories. Schools looking to maintain strict data governance without sacrificing search functionality are encouraged to evaluate DuckDuckGo's education-specific configurations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Nothing Teases Screen-Free AI Device—Launch Next Month",
+            "title": "Nothing Teases First Screen-Free AI Device for December Launch",
+            "content": "Nothing CEO Carl Pei announced on X that the company's first screen-free AI device will launch in December, just over a year after outlining plans for an \"AI-native\" ecosystem. The company is developing a dedicated AI operating system to power its new hardware, signaling a shift away from traditional smartphone-centric models. While specific technical specifications remain undisclosed, Pei's announcement confirms the company's commitment to hardware-driven AI integration. Developers and tech enthusiasts should monitor Nothing's upcoming announcements for API access and developer kits.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Amazon Bee Frontier Review: A Flawed Smart Home Hub",
+            "title": "Amazon Bee Frontier Review: A Flawed Smart Home Hub",
+            "content": "Senior reviewer Victoria Song's critical analysis of the Amazon Bee Frontier concludes the device is fundamentally flawed and not worth purchasing. The smart home hub suffers from inconsistent performance and a lack of core functionality, failing to deliver on its promised automated convenience. Despite its sleek design and integration with Amazon's broader ecosystem, the Bee Frontier's software bugs and unreliable sensor array render it impractical. Consumers seeking a reliable smart home hub should look towards established alternatives like Google Nest or Apple HomePod.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "ChatGPT Adds GIF Creation—Images 2.6 Model Update",
+            "title": "ChatGPT Gains Native GIF Creation via Images 2.6 Model",
+            "content": "OpenAI updated ChatGPT to natively generate animated GIFs using text prompts or uploaded photos, rolling out alongside the new Images 2.6 model. Users can now adjust animation speeds, edit individual frames, and share the resulting GIFs directly within the chat interface. This update removes the previous need for third-party tools to create short-form animated content from AI-generated or uploaded imagery. The feature is available to all ChatGPT Plus, Team, and Enterprise subscribers immediately upon the model's deployment.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Dharma Field Extractor: JSON Structuring Tool",
+            "title": "Dharma Field Extractor: Extracting Structured Fields from Documents",
+            "content": "The Dharma Field Extractor is an open-source tool designed to parse unstructured documents and output structured JSON fields. It leverages large language models (LLMs) to identify and extract specific data points, such as names, dates, or custom metadata, from PDF, DOCX, and TXT files. Developers can integrate the tool via a REST API to automate data entry and reduce manual processing times in enterprise workflows. The project is available on Hugging Face under an Apache 2.0 license for immediate community use and contribution.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/Dharma-AI/dharma-field-extractor",
+            "relatedResources": []
+        },
         {
             "date": "Nov 04 2026",
             "headline": "Nexus Mods Mandates AI Disclosures",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google is completely disabling its core Search functionality in schools that reject its AI-powered educational tools, according to an internal company memo. Districts opting out of Google's AI suite, including Gemini and Gemini in Classroom, will lose access to standard Google Search entirely. This policy change forces a hard choice on educational institutions regarding the adoption of Google's AI ecosystem. School administrators must now decide whether to implement Google's AI features or forfeit standard search access for their students and staff.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "ChatGPT Search Hits 20% of Google's Volume",
-            "title": "OpenAI Reports ChatGPT Search Queries Now Equal 20 Percent of Google's Volume",
-            "content": "OpenAI announced that ChatGPT's search volume now equals 20 percent of Google's, signaling a major shift in user behavior. Adam Fry, OpenAI's consumer product lead, revealed this milestone at a press event, highlighting ChatGPT's growing role in information retrieval. This trend reflects a broader migration of search queries from traditional engines to conversational AI platforms. The shift poses a direct competitive threat to Google's core search business and its advertising revenue model. Users should evaluate the accuracy and citation practices of AI-generated search results compared to traditional search engines.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "OpenAI Renames Data Centers 'Compute Campuses'",
-            "title": "OpenAI Rebrands Data Centers as 'Compute Campuses' to Mitigate Public Opposition",
-            "content": "OpenAI is quietly rebranding its data centers as 'compute campuses' to counter public backlash and political opposition. The term 'compute campus' is designed to sound less industrial and more environmentally harmonious to local communities. This linguistic shift is a strategic response to the bipartisan opposition faced by data center construction projects nationwide. The rebranding reflects a broader industry trend of using softer language to manage the social and political impact of AI infrastructure.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "AI Startup Fal Doubles Valuation to $16B",
-            "title": "AI Inference Startup Fal Doubles Valuation to $16B on Bessemer-Led $1.3B Round",
-            "content": "AI inference startup Fal has doubled its valuation to $16 billion following a $1.3 billion funding round led by Bessemer Venture Partners. The five-year-old company specializes in providing high-performance inference services for large language models (LLMs), addressing the growing computational demands of generative AI. This massive capital injection underscores the intense investor interest in AI infrastructure and the critical bottleneck of model inference. The funding will likely accelerate Fal's expansion and capacity building to meet surging global demand for AI compute.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Netflix Launches AI Mood-Based Discovery Tab",
-            "title": "Netflix Introduces AI-Powered 'Discover' Tab for Mood-Based Content Recommendations",
-            "content": "Netflix is testing a new AI-powered 'Discover' tab that recommends content based on a user's current mood. The experimental feature moves beyond traditional genre and actor-based recommendations to analyze contextual inputs. Users can select from various moods to receive tailored suggestions for movies or TV shows. This feature leverages advanced AI algorithms to enhance user engagement and reduce decision fatigue. The rollout is currently limited to a select group of users as part of Netflix's ongoing experimentation with AI.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "watchOS 27.3 Beta Adds Siri Audio Intelligence",
-            "title": "Apple Watch's watchOS 27.3 Beta Introduces Siri Audio Intelligence Features",
-            "content": "The Apple Watch's watchOS 27.3 developer beta introduces two new Siri Audio Intelligence features: Siri Recap and Live Rewind. Siri Recap uses ambient listening to generate summaries of conversations, while Live Rewind provides real-time transcription of audio. These features leverage on-device processing to analyze audio streams locally, raising potential privacy considerations. The functionality requires the watchOS 27.3 beta and is available to developers testing the latest software. Users should review Apple's privacy policies regarding on-device data processing before enabling these features.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Steam Backlog Delays Indie Game Launches",
-            "title": "Valve's Steam Backlog Forces Indie Developers to Miss Planned Launch Dates",
-            "content": "Valve's Steam platform is experiencing a significant submission backlog, causing indie game developers to miss their planned launch dates. Studio Daimon, developer of the upcoming title Food, reported an unexpectedly long approval wait time for their game submission. The delay highlights a bottleneck in Steam's review pipeline, which directly impacts indie developers' revenue timelines. This trend is affecting numerous small studios relying on fixed launch windows for their marketing campaigns. Developers are advised to monitor their submission queue status and communicate directly with Valve's support for expedited processing.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Netflix Tests AI-Powered Themed Discoveries",
-            "title": "Netflix Introduces 'AI Discover' Tab for Themed Content Recommendations",
-            "content": "Netflix is testing an experimental \"AI Discover\" tab within its TV application to provide AI-powered recommendations. The initial feature surfaces content based on specific themes such as \"Something Light,\" \"Family Movie Night,\" and \"Quick Watches.\" This feature utilizes natural language processing (NLP) to categorize and match user preferences with thematic content. It represents a shift from traditional genre-based browsing to a more nuanced, mood-driven discovery model. Users in testing regions should expect to see this feature integrated into their home screen layout.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Google Demands Search Surrender for AI Education Tools",
-            "title": "Google's AI Education Tools Require Schools to Surrender Search Access",
-            "content": "Google is offering AI educational tools to schools on the condition that they also use Google Search. The initiative aims to provide AI capabilities that do not simply give away direct answers to students. Schools wishing to opt out of the AI features must also forgo access to the Google Search engine. This policy ties access to advanced AI learning tools directly to the use of Google's search infrastructure. Educational institutions must evaluate this trade-off between AI integration and search independence for their curricula.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "StateBench Evaluates LLM Document Tracking",
-            "title": "Hugging Face Releases StateBench to Test Language Model State Change Tracking",
-            "content": "Hugging Face has introduced StateBench, a new benchmark designed to test how large language models (LLMs) track state changes across long documents. The benchmark evaluates a model's ability to maintain context and accurately recall specific details as a document's narrative or data evolves. This tool is critical for assessing the reliability of LLMs in applications requiring high-fidelity data extraction from lengthy texts. It provides a standardized metric for developers to benchmark their models against industry standards.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/statebench",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 03 2026",
-            "headline": "Anthropic's Compute Margins Continue to Worsen",
-            "title": "Anthropic Faces Worsening Economics of Compute Despite AI Demand",
-            "content": "Anthropic is experiencing a decline in its compute margins at a time when demand for artificial intelligence (AI) infrastructure is expected to increase. The company is grappling with the high costs of running massive AI models, which are consuming a larger portion of its operational budget. This economic pressure highlights the intense capital expenditure required to train and deploy cutting-edge frontier models. The financial strain underscores the challenge of scaling AI operations profitably without significant revenue growth. Investors and partners should monitor Anthropic's infrastructure spending and potential cost-cutting measures.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
             "relatedResources": []
         }
     ],
