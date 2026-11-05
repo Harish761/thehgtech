@@ -4,13 +4,13 @@
     "categories": {
       "Phishing": 3438,
       "Malware": 35350,
-      "C2": 10953,
+      "C2": 11396,
       "Botnet": 4297
     }
   },
   "previous_hour_campaigns": {
-    "Generic Phishing": 3422,
-    "Financial Phishing": 10,
+    "Generic Phishing": 3670,
+    "Financial Phishing": 12,
     "Booking.com Phishing": 3,
     "Unassigned Malware": 208,
     "CoinMiner": 76,
@@ -48,8 +48,8 @@
     "SalatStealer": 7,
     "GodPotato": 1,
     "Spamhaus DROP List": 1767,
-    "CINS Threat List": 36321,
-    "SSH Attacks": 10205,
+    "CINS Threat List": 36369,
+    "SSH Attacks": 10228,
     "malware_download": 34528,
     "Potassium": 25,
     "StrelaStealer": 3,
