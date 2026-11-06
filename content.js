@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 06 2026",
+            "headline": "Barracuda Email Gateway RCE—No Login Required",
+            "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+            "content": "Researchers demonstrated a chain of two flaws in Barracuda's Email Security Gateway that enables unauthenticated root-level command execution. The security firm watchTowr detailed the attack chain, which allows an attacker to run arbitrary commands on the appliance. The company released patches on Monday to address the critical vulnerabilities. Organizations using Barracuda Email Security Gateway appliances must apply these updates immediately. This discovery highlights the severe risk of unauthenticated remote code execution on network-facing email infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "OpenSSH Flaw Lets 1KB Passwords Bypass Alpine Auth",
+            "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+            "content": "OpenSSH issued an emergency patch for a critical authentication flaw affecting Alpine Linux servers running the standard openssh-server package. Attackers can bypass SSH key-only authentication by supplying a password between 257 and 1,024 bytes long. The vulnerability allows unauthorized remote access to accounts without valid credentials. Users on Alpine Linux must update their OpenSSH packages to the latest version immediately. This flaw underscores the importance of strict input validation in core security protocols.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "ChatGPT Lockdown Mode Bypassed—Data Exfiltration Risk",
+            "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+            "content": "Cybersecurity researchers disclosed a vulnerability that could bypass Lockdown Mode in OpenAI's ChatGPT, allowing silent data exfiltration. Lockdown Mode, an optional setting introduced in June 2026, was designed to minimize data exfiltration risks by blocking downloads, link previews, and file uploads. The now-patched flaw could be exploited to exfiltrate user chat data without their interaction. OpenAI has released updates to mitigate this threat vector. Users should ensure their ChatGPT client is updated to the latest version to maintain protection.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "SonicWall Won't Patch EoL GMS—Critical Flaws Exposed",
+            "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+            "content": "SonicWall warned that two critical vulnerabilities in end-of-life (EoL) Global Management System (GMS) systems will not be patched. The flaws, CVE-2026-109593 (CVSS 9.1) and CVE-2026-109594, allow unauthenticated file reading and database record alteration on SonicWall GMS 9.5.2 and earlier. The company has officially ended support for these systems, leaving them permanently exposed to active exploitation. Organizations still running EoL GMS must migrate to a supported platform immediately. This highlights the severe security risks of operating unpatched, end-of-life software.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "OpenAI Codex Jailbreak—Hidden Prompt Adware Found",
+            "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+            "content": "Check Point Research uncovered a malicious jailbreak toolkit for OpenAI Codex that secretly inserts prompt adware into AI agents. The bundle modifies the agent's trusted instructions to inject advertisements for a third-party AI gateway. This prompt adware operates without the user's knowledge, potentially compromising the integrity of AI-driven applications. Organizations integrating AI models must vet third-party jailbreak tools and LLM prompts for hidden instructions. This discovery reveals a new threat vector for monetizing and compromising AI systems.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "OpenSSH Bug Bypasses Passwords on Alpine Linux",
+            "title": "Critical OpenSSH Flaw Lets Attackers Access Password-Disabled Accounts on Alpine Linux",
+            "content": "A critical vulnerability in OpenSSH servers allows remote attackers to bypass authentication on Linux systems built with the musl C library, such as Alpine Linux. The flaw enables unauthorized access to accounts that have password authentication explicitly disabled, undermining standard security configurations. Researchers confirmed the issue is specific to musl-based environments, which are increasingly popular for containerized and lightweight deployments. System administrators must apply the latest security patches and audit authentication logs for anomalous access attempts. This discovery highlights the risks of relying on default security settings in modern, lightweight Linux distributions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Linux Backdoor in CWP Server Executes Silent Commands",
+            "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+            "content": "Researchers discovered a sophisticated backdoor embedded in the web server component of Control Web Panel (CWP), a popular free Linux hosting management tool. The malicious code executes attacker-controlled commands via web requests, which are deliberately omitted from system logs to evade detection. This stealth mechanism allows persistent, unauthorized access to compromised hosting servers without triggering standard security alerts. CWP users should immediately update to the latest patched version and review web server access logs for suspicious activity. The incident underscores the growing risk of supply chain compromises in open-source infrastructure tools.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "3 Charged in $129M AI Impersonation Scheme",
+            "title": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
+            "content": "U.S. authorities have charged three individuals for orchestrating a $129 million wire fraud scheme utilizing artificial intelligence to impersonate corporate executives and attorneys. The trio, operating under aliases including \"Rocky Balboa\" and \"Fat Boy,\" targeted corporate accounting departments to authorize fraudulent wire transfers. The investigation revealed the use of deepfake technology and AI-generated voice clones to convincingly replicate the voices and mannerisms of high-level executives. Organizations must enhance their financial verification protocols and implement multi-factor authentication for all wire transfer requests. This case highlights the emerging threat of AI-powered social engineering targeting corporate treasury operations.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "APT Flaw Lets Attackers Install Root Software",
+            "title": "Debian, Ubuntu Patch APT Flaw that Could Hand Attackers Root",
+            "content": "Linux administrators should immediately update their systems after Debian and Ubuntu patched a critical vulnerability in the Advanced Package Tool (APT). Tracked as CVE-2026-109518, the flaw allows attackers to install unverified, malicious software packages with root privileges. This vulnerability effectively compromises the core trust model of Debian and Ubuntu-based distributions, which rely on signed repositories to ensure software integrity. The flaw could allow a remote attacker to gain full system control by substituting legitimate packages with compromised ones. All users of Debian, Ubuntu, and their derivatives must apply the security updates to mitigate the risk of a complete system takeover.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245109/debian-ubuntu-patch-apt-flaw-that-could-hand-attackers-root.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Zyxel Patches Zero-Day Hiding Behind Old Fix",
+            "title": "Zyxel Patches a Zero-Day Hiding Behind an Old Fix",
+            "content": "Zyxel has released security patches for a zero-day vulnerability that attackers actively exploited to compromise 996 GS1900 network switches across 48 countries. The flaw, which began being exploited around August 17, allowed attackers to extract device configurations, network information, and hashed root credentials. Cybersecurity firm GreyNoise tracked the campaign, which targeted unpatched devices running older firmware versions. Network administrators must update all Zyxel GS1900 switches to the latest firmware immediately to close this critical security gap. This incident demonstrates the persistent threat of unpatched network infrastructure and the importance of rigorous patch management.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245028/zyxel-patches-a-zero-day-hiding-behind-an-old-fix.html",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 05 2026",
             "headline": "Apache OFBiz RCE—17 More Threats Highlight Supply Chain Risks",
             "title": "The Hacker News' ThreatsDay Report Uncovers Critical RCEs, DreamHost Breach, and DeFi Hijacks",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SANS Internet Storm Center, InfoCON: green",
             "sourceUrl": "https://isc.sans.edu/diary/rss/33492",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "Hackers Exploit Patched Apple Flaw—CISA Adds to KEV Catalog",
-            "title": "CISA Adds Apple Flaw CVE-2024-278 to KEV Catalog Following Active Exploitation",
-            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2024-278 to its Known Exploited Vulnerabilities (KEV) catalog on November 5, 2026, after reports of active exploitation. This medium-severity flaw impacts multiple Apple operating systems and was exploited to deliver info-stealing malware. CISA's addition to the KEV catalog mandates federal agencies to patch the vulnerability immediately. All organizations running affected Apple versions should apply the latest security updates to mitigate the risk of compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "AI Agents Spook Banks—Users Bear Liability for Errors",
-            "title": "Banks Warn Customers Against Using AI Assistants for Passwords",
-            "content": "Bank of America has warned customers against entering banking credentials into AI assistants, explicitly stating that users are solely liable for any financial errors. This warning highlights the growing trend of AI agents interacting with critical financial systems and the lack of clear liability frameworks. Banks are not responsible for unauthorized transactions resulting from AI-driven actions or hallucinations. Consumers must exercise extreme caution when using AI for sensitive operations to avoid personal financial liability.",
-            "source": "GRAHAM CLULEY",
-            "sourceUrl": "https://grahamcluley.com/smashing-security-podcast-491/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Critical Rails Bug Enables File Access via Image Uploads",
-            "title": "Rails Active Storage Bug Allows Arbitrary File Write and Read",
-            "content": "A critical vulnerability in the Ruby on Rails Active Storage ImageMagick integration allows attackers to write arbitrary files and read sensitive data. The flaw is triggered by uploading specially crafted images, potentially enabling lateral movement within a network. Attackers can exploit this to gain unauthorized access to server files and escalate privileges. Organizations using the affected integration must patch their systems immediately to prevent data breaches and system compromise.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "White House Staffers Exposed via Residential Proxies",
-            "title": "White House Staff Using Residential Proxies Exposes IP Addresses",
-            "content": "Security experts discovered that several White House staffers are using computers and mobile devices configured with residential proxy services. This configuration exposes their IP addresses, allowing third parties to rent their internet addresses. One identified proxy service is a Russian company linked to a founder with a history in web hosting. This practice creates a severe security and privacy risk for the White House and potentially exposes sensitive government operations.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "OpenAI AI Finds 948 Linux Kernel Flaws for $1.2M",
-            "title": "OpenAI AI Pipeline Discovers 948 Linux Root Escalation Flaws",
-            "content": "OpenAI detailed a cyber-focused AI model that identified and patched 948 local privilege escalation vulnerabilities in the Linux kernel during a 30-hour run. The prototype analyzed 2,308 candidate findings and validated them for a cost of $1.2 million in API expenses. This demonstrates the potential of AI to automate large-scale vulnerability discovery and remediation in complex systems. The findings highlight the critical need for rigorous kernel security audits to prevent system-wide compromises.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "CrowdStrike Buys Fiddler, Dreadnode for AI Security",
-            "title": "CrowdStrike to Acquire Fiddler and Dreadnode to Extend AI Security Across the Agent Lifecycle",
-            "content": "CrowdStrike is acquiring AI security firms Fiddler AI and Dreadnode in separate deals to extend its Falcon platform. The acquisitions will introduce automated testing of AI systems and monitoring of AI agent behavior. This move addresses growing security risks from increasingly autonomous applications. Enterprises deploying AI agents will gain enhanced visibility into agent actions. The integration aims to secure the entire lifecycle of AI agents.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4244500/crowdstrike-to-acquire-fiddler-dreadnode-to-extend-ai-security-across-agent-lifecycle.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "CrowdStrike Warns of Agentic AI Dangers",
-            "title": "CrowdStrike's AI SOC Vision Evolves as Agentic Uncertainty Adds New Twist",
-            "content": "CrowdStrike President Michael Sentonas warned that AI software is now an \"actor\" with its own agency. This shift represents a new paradigm for cybersecurity operations and threat modeling. The company's Fal.Con conference highlighted the dangers and opportunities of agentic AI. Security teams must adapt to a landscape where AI systems can act autonomously. The focus is on managing uncertainty and securing autonomous software.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4244299/crowdstrikes-ai-soc-vision-evolves-as-agentic-uncertainty-adds-new-twist.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "APT Flaw Lets Attackers Swap Packages",
-            "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
-            "content": "A critical flaw in APT, the package manager for Debian and Ubuntu, allows man-in-the-middle (MitM) attackers to swap verified packages. Attackers can replace legitimate packages with malicious ones, which then execute with root privileges. Debian, Ubuntu, and APT developers published advisories on November 4. The vulnerability requires the attacker to control the network path during package downloads. Users must verify package integrity and use secure channels for downloads.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Sysdig Adds AI Agent Runtime Security",
-            "title": "Sysdig Adds Runtime Security and Governance for AI Agents",
-            "content": "Sysdig has added runtime security and governance features for AI agents to its platform. The new capabilities provide visibility into AI agent actions in real-time. The platform can detect and block risky behaviors before they impact production systems. This addresses the growing need to secure AI deployments in enterprise environments. The feature set includes policy enforcement and anomaly detection.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Barracuda ESG Flaw Allows Root Access",
-            "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
-            "content": "Barracuda Networks has disclosed an authentication bypass and command injection vulnerability in its Email Security Gateway (ESG) appliances. An attacker can chain these flaws to gain root access to the system. The vulnerability affects multiple versions of the ESG platform. Barracuda has released patches to address the issue. Administrators should apply the updates immediately to prevent unauthorized access.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 06 2026",
+            "headline": "Palo Alto Networks Targets AI Agent Security",
+            "title": "Palo Alto Networks in Talks to Acquire AI Agent Security Startup Clutch for $500 Million",
+            "content": "Palo Alto Networks is in advanced talks to acquire AI agent security startup Clutch for $500 million, according to reports. This strategic acquisition targets the rapidly expanding market for securing AI agents, which are increasingly integrated into enterprise workflows. The move positions Palo Alto Networks to capitalize on the projected growth in AI security, addressing the emerging vulnerabilities of agentic AI systems. Industry analysts view this as a calculated effort to secure a foothold in the next wave of cybersecurity spending.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Australia Trains AI-Native Graduates",
+            "title": "Australian Universities Expanding Access to ChatGPT to Build AI-Native Workforce",
+            "content": "Australian universities are expanding access to ChatGPT and integrating artificial intelligence (AI) into their curricula to prepare students for an AI-enabled workforce. This initiative addresses a critical skills gap by ensuring graduates possess the technical proficiency required for modern industries. The expansion of AI tools in education signals a fundamental shift in how technical skills are developed and validated. Stakeholders should monitor these programs as they may serve as a blueprint for global AI literacy standards.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "OpenAI Ditching NDAs for Data Center Projects",
+            "title": "OpenAI Abandons NDAs for Public Officials in Response to Data Center Backlash",
+            "content": "OpenAI announced it will no longer use non-disclosure agreements (NDAs) with public officials regarding its data center projects, following significant voter opposition to expansion. The company also committed to new community engagement frameworks, including local hiring quotas and environmental impact assessments. This policy shift directly responds to grassroots resistance that has stalled infrastructure development in key regions. Developers and local planners should track OpenAI's updated community commitments for future site selections.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Airbnb Rolls Out AI Travel Agent",
+            "title": "Airbnb to Deploy AI Travel Agent in First Half of 2027",
+            "content": "Airbnb plans to launch an AI agent in the first half of 2027 to assist users with travel planning and booking, as detailed in its Q3 2026 earnings report. The AI agent will handle complex, multi-step tasks such as comparing options, managing bookings, and providing trip assistance. This deployment represents a major shift from a passive marketplace to an active travel concierge model. Developers should prepare for increased API integration and data sharing requirements within the platform.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Airbnb AI Agent Launches Early 2027",
+            "title": "Airbnb Announces AI Travel Agent Launch for First Half of 2027",
+            "content": "Airbnb confirmed its upcoming AI travel agent will launch in the first half of 2027, offering end-to-end trip planning and booking assistance. The AI agent is designed to manage complex travel logistics, including comparing options, managing bookings, and providing support throughout a user's stay. This initiative targets the growing trend of autonomous AI agents in consumer services, moving beyond simple task automation. Users can expect a beta rollout through Airbnb's existing application interfaces.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Perplexity Launches Work-Focused AI Agents",
+            "title": "Perplexity Introduces 'Teammates' to Compete with OpenAI and Anthropic in Enterprise AI",
+            "content": "Perplexity has launched \"Teammates,\" a new suite of always-on AI agents designed for enterprise workspaces, directly challenging offerings from OpenAI and Anthropic. These agents integrate with existing Perplexity tools to pull project data, skills, and memory, enabling multi-role automation within a single workspace. The launch positions Perplexity as a direct competitor in the corporate AI agent market, targeting organizations seeking to automate complex, multi-step workflows. Teams should evaluate Perplexity's new API for potential integration into their existing operational stacks. This move signals a shift toward specialized, persistent AI agents tailored for professional environments over general-purpose models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Google Mandates AI Search for Schools",
+            "title": "Google Requires AI Search in Education, Limiting Schools' Ability to Opt Out of Gemini",
+            "content": "Google is enforcing a policy that makes its AI-powered search, driven by the Gemini model, non-negotiable for educational institutions, despite offering a superficial choice to retain standard search. The mandate effectively forces schools to adopt Google's AI tools, limiting administrative autonomy over student data and search interfaces. This policy impacts millions of K-12 students and educators who will now interact with generative AI search results by default. School IT administrators must review new data privacy and content filtering protocols to ensure compliance with district policies and student safety regulations. This represents a broader trend of tech giants integrating generative AI directly into core enterprise and educational software.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Cult.fit Uses OpenAI Codex for Operations",
+            "title": "Cult.fit Leverages OpenAI Codex to Accelerate Internal Tool Development",
+            "content": "Fitness and wellness company Cult.fit is utilizing OpenAI's Codex to build internal tools and streamline workflows across its organizational functions. The deployment of Codex allows development teams to generate code faster, reducing the time-to-market for new internal applications and operational dashboards. This integration marks a significant step in automating software development tasks, allowing human developers to focus on higher-level architecture and strategy. IT leaders should consider how AI coding assistants like Codex can be securely integrated into their CI/CD pipelines to boost developer velocity. The move highlights a growing trend of enterprises adopting specialized AI models to enhance operational efficiency and reduce technical debt.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/cultfit-builds-with-codex",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Blue Wave Sweeps AI Policy",
+            "title": "Democratic Control of Congress Shifts AI Regulatory Focus",
+            "content": "Following the Democratic sweep of the House and Senate, AI policy is poised for a significant shift in the United States. The incoming administration is expected to prioritize stricter AI safety regulations, data privacy standards, and increased government oversight of large language models. This political transition directly impacts tech companies, who will face new compliance requirements and potential antitrust actions regarding AI development and deployment. Security professionals should monitor upcoming legislative drafts for new mandates on algorithmic transparency and bias auditing. The change in congressional control signals a move away from the previous administration's hands-off approach to artificial intelligence governance.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026927/total-repudiation-the-blue-wave-is-about-to-hit-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Gemini 1.2 Flash Supports Longer Clips",
+            "title": "Google DeepMind Unveils Gemini 1.2 Flash with Extended Context Window",
+            "content": "Google DeepMind has updated its Gemini 1.2 Flash model to support longer input clips and extended context windows, enhancing its capabilities for processing video and audio data. This update allows developers to analyze up to 30 minutes of continuous video or 2 hours of audio in a single prompt, significantly expanding the model's utility for content moderation and transcription services. The improved context handling reduces the need for complex chunking and retrieval-augmented generation (RAG) architectures, simplifying application development. Developers should update their API calls to utilize the new context parameters for more efficient multimodal processing. This enhancement positions Gemini 1.2 Flash as a more competitive, cost-effective alternative for large-scale media analysis tasks.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 05 2026",
             "headline": "GPT-6 Cyber Hacking Rate Under 1%",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Musk's $446M Twitter Buy—Better Spent Elsewhere",
-            "title": "Analysis Highlights Better Uses for the $446 Million Acquisition of Twitter",
-            "content": "A critical analysis outlines 17 alternative investments for the $446 million acquisition of Twitter, arguing the funds could have advanced global infrastructure or climate initiatives. The report highlights the risks of concentrating influence on a single, algorithmically curated social platform. The analysis suggests that such massive capital injections into social media monopolies often exacerbate information silos and societal polarization rather than fostering a healthy digital public square.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Qualcomm Pivots to AI Data Centers—Smartphone Sales Sink",
-            "title": "Qualcomm Shifts Focus to Data Centers as Smartphone Sales Drop 20 Percent",
-            "content": "Facing a 20 percent year-over-year decline in smartphone sales, Qualcomm is aggressively pivoting its strategy toward AI data center processors. The company plans to leverage partnerships with cloud providers like Amazon Web Services to scale its custom AI accelerator offerings. This strategic shift aims to offset stagnating mobile revenue by capitalizing on the surging demand for specialized AI hardware in enterprise environments.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "Apple Cuts Internal AI Budgets for Engineering Teams",
-            "title": "Apple Significantly Reduces Spending on Internal AI Development",
-            "content": "Apple has initiated a significant budget reduction for its internal artificial intelligence (AI) initiatives, specifically targeting its engineering teams. This strategic pullback indicates a shift away from broad, internal AI research toward more focused, product-specific AI features. The move suggests Apple is prioritizing capital efficiency and tangible product integration over large-scale internal AI model development.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "Data Center Opposition Crosses Party Lines",
-            "title": "Bipartisan Resistance to AI Data Centers Grows Post-Midterms",
-            "content": "Opposition to new data center construction has crossed traditional party lines in the recent midterm elections, signaling a unified political front against local environmental and infrastructure impacts. This bipartisan resistance threatens to delay critical infrastructure projects required to support the expanding AI industry. Developers and tech leaders must now navigate a complex regulatory landscape that increasingly prioritizes local zoning and environmental concerns.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "AI PACs Spent Millions—Mixed Election Results",
-            "title": "AI Political Action Committees Spend Millions in 2026 Midterms",
-            "content": "Artificial intelligence (AI) industry Political Action Committees (PACs) spent millions of dollars influencing the 2026 midterm elections with mixed success. The significant financial outlay highlights the industry's urgent push to shape upcoming federal AI regulations and data privacy laws. With the results in, political groups are already strategizing for the next election cycle to secure favorable legislative outcomes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Nothing's AI Device Drops Next Month",
-            "title": "Nothing CEO Announces AI-First Device Launch for Productivity",
-            "content": "Nothing's CEO announced the company's mysterious AI-first device will launch next month, designed to leverage artificial intelligence for productivity gains. The smartphone startup, founded by former OnePlus executives, has kept the product's specifications under wraps, fueling speculation about its hardware capabilities and AI integration. This move positions Nothing to compete in the emerging category of AI-native consumer electronics. Consumers should monitor Nothing's official channels for technical specifications and pre-order details. The launch reflects the broader industry trend of embedding large language models directly into mobile hardware.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "AI Agents Fail to Book Uber Rides",
-            "title": "Uber Reports Near-Zero Adoption of AI Agents for Booking",
-            "content": "Uber reported that only four people booked a ride using an AI agent during its busiest week last quarter, highlighting the technology's limited real-world adoption. The low usage figures underscore significant consumer trust and reliability gaps in current AI agent architectures. This failure to scale suggests that autonomous booking agents are not yet mature enough to handle critical tasks like transportation. Developers and AI companies should focus on improving agent reliability and user trust before targeting transactional use cases. The data indicates a significant lag between AI hype and practical utility in everyday consumer applications.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "OpenAI Targets 2028 Election",
-            "title": "OpenAI's Chris Lehane Proposes AI Role in 2028 US Election",
-            "content": "OpenAI's Chris Lehane is actively trying to shape the 2028 US election, proposing a new social contract for AI's role in politics. Lehane's initiative aims to define how AI can benefit Americans while simultaneously advancing OpenAI's own business interests in the political sphere. This move places OpenAI at the center of a growing debate about the influence of artificial intelligence on democratic processes. The company must navigate complex ethical and regulatory landscapes to implement such a framework. Stakeholders should monitor OpenAI's policy proposals and their potential impact on election integrity.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Meta Acquires AI Coding Startup Conductor",
-            "title": "Meta Acquires Conductor to Deploy AI Coding Agents",
-            "content": "Meta has acquired AI coding startup Conductor, which allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously. The acquisition signals Meta's aggressive push to integrate multi-agent systems into its software development lifecycle. Conductor's technology will likely enhance Meta's internal developer tools and potentially its open-source offerings. This strategic move positions Meta to compete with other tech giants investing heavily in generative AI for code generation. Developers should watch for new Meta tools leveraging Conductor's agent orchestration capabilities.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 04 2026",
-            "headline": "Big Tech Denies AI Backlash",
-            "title": "Big Tech Dismisses AI Backlash as Anti-Trump",
-            "content": "Big Tech is claiming the overwhelming voter backlash against AI and data centers is \"anti-Trump\" rather than \"anti-tech,\" according to industry statements. This narrative deflects from the genuine public concerns over the environmental and economic impacts of massive AI infrastructure projects. The tech industry's denial is increasingly out of step with the reality of restrictive ballot measures passed by US voters. This disconnect between corporate messaging and public sentiment threatens to fuel further regulatory and political backlash. Industry leaders must engage with legitimate public concerns rather than dismiss them as partisan.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/11/big-tech-claims-voters-ai-backlash-is-anti-trump-not-anti-tech/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,28 +448,6 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
-        {
-            "cveId": "CVE-2026-118527",
-            "dateAdded": "Oct 30, 2026",
-            "vendor": "Ivanti Connect Secure",
-            "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-111357",
-            "dateAdded": "Oct 30, 2026",
-            "vendor": "Ivanti Connect Secure",
-            "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chai",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
-            "isZeroDay": false
-        },
         {
             "cveId": "CVE-2024-27834",
             "dateAdded": "Nov 04, 2026",
