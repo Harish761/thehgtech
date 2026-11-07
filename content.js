@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 07 2026",
+            "headline": "SonicWall Flaw Weakens VPN Logins",
+            "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+            "content": "SonicWall has patched CVE-2026-19868, a vulnerability that allows attackers to bypass Single Sign-On (SSO) and Multi-Factor Authentication (MFA) on its VPN solutions. The flaw affects SonicOS and enables credential-stuffing attacks to bypass SAML-enforced security checks. This vulnerability severely impacts organizations relying on SonicWall firewalls for remote access, potentially allowing unauthorized network entry. Administrators should update their SonicOS firmware to version 7.1.0.13 or later immediately to mitigate the risk. This incident highlights the critical need for rigorous input validation in enterprise authentication gateways.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Barracuda Email Gateway Allows Root Access",
+            "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+            "content": "Security researchers have demonstrated a critical vulnerability chain in Barracuda's Email Security Gateway, allowing unauthenticated remote root access. The attack combines two distinct flaws to execute arbitrary commands at the highest privilege level without requiring valid credentials. Barracuda released emergency patches on Monday, while the firm watchTowr detailed the exploit chain on Thursday. This vulnerability exposes email infrastructure to complete compromise, data theft, and lateral movement within corporate networks. System administrators must apply the latest firmware updates to all Barracuda Email Security Gateways immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "OpenSSH Bug Lets Long Passwords Bypass Alpine",
+            "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+            "content": "OpenSSH has issued an emergency patch for a critical authentication bypass vulnerability affecting Alpine Linux systems. The flaw allows attackers with network access to log into passwordless accounts, including SSH key-only accounts, using passwords between 257 and 1,024 bytes long. This bypass completely undermines the server's password-based authentication controls and affects the standard openssh-server package. The vulnerability has been assigned a critical severity rating by the OpenSSH project. Administrators must update to the latest patched version of OpenSSH to protect their Alpine Linux infrastructure from unauthorized access.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Researchers Bypass ChatGPT Lockdown Mode",
+            "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+            "content": "Cybersecurity researchers have disclosed a vulnerability that bypasses ChatGPT's Lockdown Mode, an optional security setting designed to prevent data exfiltration. The now-patched flaw allowed attackers to extract user conversations without requiring any interaction from the account holder. OpenAI introduced Lockdown Mode in June 2026 to enhance privacy and security for users handling sensitive information. This discovery highlights the ongoing challenges of securing large language models against sophisticated prompt injection and data leakage techniques. Users should ensure they are running the latest version of ChatGPT to benefit from the implemented security patches.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Apache OFBiz RCE, DreamHost Breach, DeFi Hijacks",
+            "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+            "content": "A diverse range of critical vulnerabilities and breaches were highlighted in a recent security roundup, including a remote code execution (RCE) flaw in Apache OFBiz. Attackers successfully breached DreamHost, compromising customer data and exposing sensitive account information. Additionally, multiple decentralized finance (DeFi) sites were hijacked to facilitate cryptocurrency theft. The aggregation of these incidents demonstrates how attackers leverage diverse entry points, from software vulnerabilities to stolen credentials, to cause widespread damage. Security professionals must prioritize patch management, identity verification, and continuous monitoring to defend against these multifaceted threats.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 07 2026",
+            "headline": "Anthropic AI Leaks 1,122 Secrets via \"Don't Ask Again\"",
+            "title": "Claude Code's \"Don't Ask Again\" File Exposes 1,122 Passwords and Keys on GitHub",
+            "content": "Developers using Anthropic's Claude Code are accidentally exposing secrets in public GitHub repositories. Selecting \"Yes, and don't ask again\" saves the entire command, including passwords and API keys, to a local file. This file was found in 1,122 public GitHub repositories, making credentials easily accessible to anyone. The flaw affects anyone using the \"don't ask again\" feature, creating a severe risk of credential theft and unauthorized system access. Users must immediately audit their repositories for exposed .claude/settings.json files and rotate all potentially compromised credentials.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "OpenSSH Flaw Bypasses Password Authentication",
+            "title": "Critical OpenSSH Flaw Lets Attackers Access Password-Disabled Accounts",
+            "content": "A critical vulnerability in OpenSSH servers allows attackers to bypass authentication on Linux systems using the musl C library. The flaw specifically impacts Alpine Linux, which relies on musl instead of the standard glibc, enabling remote attackers to log in without valid credentials. This bypass affects accounts that have password authentication disabled, forcing a reliance on key-based authentication alone. The vulnerability underscores the risks of using lightweight, alternative C libraries in production environments. Administrators of affected systems must apply the latest security patches to OpenSSH immediately.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "October 2026 Sees 82 High-Impact Vulnerabilities",
+            "title": "October 2026 CVE Landscape Shows 82 High-Impact Vulnerabilities",
+            "content": "Recorded Future's Insikt Group identified 82 high-impact vulnerabilities in October 2026, with 52 scoring a Very Critical risk. This represents a 13% decrease in high-impact flaws compared to the previous month. The data highlights a continued high volume of critical software flaws requiring immediate attention from security teams. Organizations should prioritize patching these vulnerabilities based on their risk scores and asset exposure. The trend indicates a persistent challenge in software supply chain security.",
+            "source": "Recorded Future",
+            "sourceUrl": "https://www.recordedfuture.com/blog/october-2026-cve-landscape",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Air Force Cyber Official Calls for Digital Forensics Investment",
+            "title": "Air Force Cyber Official Urges Investment in Digital Forensics",
+            "content": "A top Air Force cyber official emphasized the need for increased investment in digital forensics capabilities. Wanda Jones-Heath stated that advancing digital forensics is essential to keeping pace with evolving cyber threats and incident response. Speaking at a Datadog event, she highlighted how improved forensic tools are critical for investigating breaches and understanding attacker tactics. The call to action targets government and private sector leaders responsible for national security infrastructure.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/air-force-digital-forensics-cyber-investment/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "New Resource Explains Security Data Pipelines",
+            "title": "SecurityDataPipeline.com Launches as an Educational Resource for AI-Driven Security",
+            "content": "SecurityDataPipeline.com launched an ungated resource explaining how security data pipelines reduce SIEM ingestion costs. The platform details how optimized pipelines preserve detection coverage while preparing data layers for AI-driven security operations. This educational initiative targets security professionals looking to modernize their data infrastructure. The resource provides actionable guidance on building efficient pipelines without sacrificing visibility.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 05 2026",
             "headline": "Exposure Management Platforms Leave Critical Gaps",
             "title": "Five Tests to Evaluate if Your Exposure Management Platform is Actually Reducing Risk",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "WordPress Fix Exposes Sites—Last Chance Attack",
-            "title": "WordPress Fix Unpacking Flaw Lets Attackers Strike During Patching",
-            "content": "A researcher at Picus Security found that installing the fix for an actively exploited WordPress flaw can expose sites to a final attack. The update unpacks its files using the site's old, unpatched code, leaving a window of vulnerability. This affects any WordPress site running the vulnerable version at the exact moment of updating. Site administrators should ensure their hosting environment is isolated during the update process. This highlights the inherent risks in automated update mechanisms for critical content management systems.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenSSH SSHole—Hackers Gain Root Within Hours",
-            "title": "OpenSSH SSHole Flaw Actively Exploited, Grants Root Access",
-            "content": "Threat actors exploited the recently disclosed OpenSSH SSHole flaw within hours of its public disclosure. The vulnerability, tracked as CVE-2026-123158 with a CVSS score of 8.1, allows sign-ins to accounts with no password set. This impacts Linux systems and can lead to full root access. Security teams must immediately update OpenSSH to the latest patched version to mitigate this risk. The rapid weaponization underscores the critical need for rapid patch deployment in enterprise environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "$1M LLMJacking—Trezor Implant & SAP Flaws",
-            "title": "LLMJacking Costs Top $1M—Trezor Implant, SAP Flaws, Synology Ransomware",
-            "content": "A surge of sophisticated attacks includes a new Trezor hardware wallet implant, LLMJacking campaigns reaching $1 million in costs, and SAP flaws weaponized within days. Synology also issued a warning regarding a specific NAS ransomware attack vector. These incidents demonstrate the expanding attack surface across hardware, AI, and enterprise infrastructure. Security professionals should prioritize patching SAP systems and reviewing hardware wallet security protocols. The rapid weaponization of these flaws highlights the need for continuous vulnerability management.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "DigiCert Breach Exposes Customer Data",
-            "title": "DigiCert Data Breach Exposes Names, Emails, Phone Numbers",
-            "content": "Hackers accessed business customer information by creating an account on an internal system. The exposed data includes names, email addresses, phone numbers, and business addresses. This breach impacts DigiCert's business customers and undermines trust in the certificate authority's security posture. Affected businesses should monitor for phishing attempts using the compromised contact information. DigiCert has not yet disclosed the root cause or the number of affected accounts, indicating an ongoing investigation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenAI GPT-6 Cyber Model—Flaw Hunting in Scope",
-            "title": "OpenAI's GPT-6 Cyber Model Hunts Vulnerabilities Within Safe Bounds",
-            "content": "OpenAI has released a new GPT-6 Cyber model rated as critical for cybersecurity, designed to hunt for vulnerabilities without crossing ethical lines. The model outperforms GPT-5.6 Cyber at exploitation while maintaining a more reliable scope of operation. This advancement offers a powerful tool for red team exercises and proactive vulnerability discovery. Security teams can leverage the model to identify flaws before attackers exploit them. However, organizations must implement strict access controls to prevent misuse of this powerful AI capability.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-says-new-gpt-6-cyber-model-hunts-flaws-without-crossing-the-line/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Paint RCE Fix Available—But Not via Windows Update",
-            "title": "Microsoft Paint CVE-2026-83844 Fix Reaches Microsoft Store, Not Windows Update",
-            "content": "Microsoft has released a patch for CVE-2026-83844, a critical remote code execution vulnerability in the Windows Paint application. The fixed build, version 11.2609.401.0, is currently available exclusively through the Microsoft Store, not through standard Windows Update channels. This distribution method means standard enterprise patch management tools cannot automatically deploy the fix to all affected endpoints. Users and administrators must manually check the Microsoft Store or initiate a Store update to secure their systems against potential exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Chainalysis Breach Exposes Live Tokens for All Users",
-            "title": "Chainalysis Breach Exposes User Credentials, Forces Reactor Shutdown",
-            "content": "Blockchain analysis firm Chainalysis confirmed that a sophisticated agentic cyber attack compromised its systems, exposing live authentication tokens and password hashes for all users. In response, the company immediately removed access to its Reactor and Data Solutions platforms to mitigate further unauthorized access. The breach highlights the critical risk of agentic AI-driven attacks targeting specialized security infrastructure. Organizations should audit their third-party API credentials and enforce strict token rotation policies immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "White House IP Masked—Residential Proxy Threat",
-            "title": "Residential Proxy Threat Actor Compromises White House IP",
-            "content": "The Layer3 Intel Residential Proxy Observatory identified an unauthorized residential proxy operating from a White House IP address, demonstrating how threat actors use anonymized networks to mask their origins. This discovery underscores the growing sophistication of proxy-based infrastructure used to bypass security controls and conduct espionage. Security professionals must implement advanced traffic analysis and anomaly detection to identify such proxy-based intrusions. Organizations should review their network logs for anomalous residential proxy traffic originating from high-profile IP ranges.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "UK Critical Infrastructure Faces Grave AI Risks",
-            "title": "UK Warns Critical Infrastructure Faces Grave AI Risks",
-            "content": "The UK government has issued a stark warning that artificial intelligence (AI) poses grave risks to its national critical infrastructure and industrial systems. The new Labour-led administration is prioritizing a proactive strategy to mitigate AI-driven threats to national networks. This initiative reflects a growing global consensus on the need to secure AI models and their deployment pipelines against adversarial manipulation. Stakeholders must integrate AI risk assessments into their existing cybersecurity frameworks immediately.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Japan Emergency Cybersecurity Package After Data Leaks",
-            "title": "Japan Announces Emergency Cybersecurity Package Following Data Leaks",
-            "content": "Japan has announced an emergency cybersecurity package to address a wave of unauthorized system access and client data leaks affecting dozens of companies and government agencies. The unprecedented breaches have triggered widespread public concern and prompted a rapid government response. The new package is expected to include enhanced incident response protocols and stricter data protection mandates for critical sectors. Organizations operating in Japan must immediately review their access controls and data handling procedures to align with the new regulatory expectations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 07 2026",
+            "headline": "Empty Chinese Office Cleared for Nvidia H200 Chips",
+            "title": "US Vetting Lapses Allow Nvidia H200 Chips to Reach Unverified Chinese Firms",
+            "content": "The US Commerce Department and Nvidia failed to conduct proper due diligence, approving the Chinese firm New Matrix to handle Nvidia's H200 AI chips despite its physical office being vacant. The New York Times investigation revealed that neither party verified the company's operational status before granting the export license. This oversight exposes a critical vulnerability in the US export control system designed to prevent advanced semiconductor technology from reaching unauthorized Chinese entities. The lapse risks undermining US national security objectives and could trigger stricter compliance audits for all future chip export licenses. Security professionals must monitor these policy enforcement gaps as they set dangerous precedents for AI hardware supply chain integrity.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Palo Alto Networks Pursues $500M AI Security Startup",
+            "title": "Palo Alto Networks in Advanced Talks to Acquire AI Agent Security Startup Clutch",
+            "content": "Palo Alto Networks is in advanced acquisition negotiations to buy Clutch, an artificial intelligence (AI) agent security startup, for $500 million. Clutch, which was last valued at $85 million in 2024, is backed by venture capital firms Lightspeed and SignalFire. The acquisition signals a strategic push by legacy network security vendors to integrate specialized AI agent security capabilities into their product portfolios. This trend reflects the growing enterprise concern over securing autonomous AI agents operating within corporate environments. The deal is expected to close by Q1 2027, pending standard regulatory approvals and shareholder agreements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Australian Universities Drive AI-Native Graduate Workforce",
+            "title": "Australian Universities Integrate ChatGPT and AI into Core Curriculum",
+            "content": "Australian universities are expanding access to OpenAI's ChatGPT and embedding AI tools directly into teaching and learning modules to prepare students for an automated workforce. This initiative aims to bridge the digital skills gap by ensuring graduates possess practical AI literacy upon entering the tech industry. The Department of Education is funding pilot programs at 15 major universities to integrate generative AI into STEM and humanities coursework. This educational shift is part of a broader global trend where institutions are rapidly updating syllabi to include AI ethics and prompt engineering. The transition requires significant IT infrastructure upgrades and faculty training to maintain academic integrity.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 07 2026",
+            "headline": "NYT Cooking AI Saves Dinner, Ruins Cake",
+            "title": "NYT Cooking's AI Assistant Fixes Weeknight Chicken but Sabotages Cake",
+            "content": "The New York Times Cooking AI assistant successfully generated a weeknight chicken recipe but failed to correctly execute baking instructions, resulting in a ruined cake. The AI's culinary model demonstrated strong capabilities in protein-based meal planning but lacked the precision required for complex baking chemistry. Users reported that the AI failed to account for critical variables like oven calibration and ingredient temperature, leading to undercooked poultry or collapsed pastry structures. This highlights the current limitations of large language models (LLMs) in high-stakes, precise physical tasks. Home cooks should verify all AI-generated recipes against trusted culinary sources for critical baking instructions.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 07 2026",
+            "headline": "Alex Stamos: AI Has Broken Cybersecurity",
+            "title": "AI Has Shattered Cybersecurity, Says Alex Stamos",
+            "content": "Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, stated that artificial intelligence (AI) has fundamentally broken the cybersecurity industry. Stamos highlighted that AI is drastically lowering the barrier to entry for cybercriminals while simultaneously overwhelming traditional defense mechanisms. The industry is currently in a reactive state, struggling to adapt to AI-driven attack vectors that bypass legacy signature-based detection. Stamos emphasized that the current security model is unsustainable and requires a complete architectural overhaul. Organizations must pivot immediately to zero-trust architectures and AI-driven autonomous defense systems to survive the evolving threat landscape.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 07 2026",
+            "headline": "Anthropic AI Self-Development Accelerates 2x",
+            "title": "Anthropic's AI-to-AI Development Pipeline Sparks Safety Concerns",
+            "content": "Anthropic is leveraging AI to autonomously develop more powerful AI models, resulting in a doubling of model improvement rates compared to the previous year. This self-reinforcing development cycle raises critical questions about long-term control and alignment within frontier AI labs. Security researchers warn that this rapid, opaque iteration could outpace existing safety protocols and regulatory oversight. The trend signals a fundamental shift in AI R&D, where human oversight is increasingly supplemented by automated systems. Organizations must begin evaluating their risk frameworks for AI-generated code and model architectures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "AI Agent Data Lineage—Critical for Enterprise Security",
+            "title": "Securing Multi-Source AI Agents Requires Rigorous Data Lineage",
+            "content": "An AI agent successfully synthesized restricted customer pricing from multiple internal systems to draft a sales proposal. This capability exposes enterprises to significant data leakage risks as agents bypass traditional network segmentation. Security teams must implement strict data lineage tracking to audit which sources an agent accessed and how it combined disparate data points. Without this visibility, organizations cannot enforce data handling policies or trace the origin of AI-generated outputs. Proactive data governance is now a mandatory requirement for deploying agentic AI in corporate environments.",
+            "source": "MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "OpenAI BioBasicsBench Tests AI Wet-Lab Science",
+            "title": "OpenAI BioBasicsBench Evaluates AI Agents in Wet-Lab Environments",
+            "content": "OpenAI has released BioBasicsBench, a standardized 100-task benchmark designed to evaluate AI agents' capabilities in interpreting raw experimental data. The benchmark specifically targets \"wet-lab\" scientific tasks, testing the agent's ability to process and analyze physical laboratory results. This tool provides researchers with a standardized metric to measure progress in automating scientific discovery and experimental workflows. It highlights a growing trend of deploying AI agents to accelerate research in biology and chemistry. The benchmark will help identify critical failure points in AI-driven scientific automation before deployment in high-stakes environments.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Open ASR Leaderboard Adds African English Dialects",
+            "title": "Hugging Face Expands Open ASR Leaderboard to African English",
+            "content": "Hugging Face has updated the Open Automatic Speech Recognition (ASR) Leaderboard to include Egyptian and Nigerian English dialects. This expansion addresses a critical gap in speech recognition models, which historically underperform on non-standard English accents. The addition will drive the development of more robust, globally accessible voice interfaces and transcription tools. Security and accessibility professionals should leverage this updated benchmark to stress-test their voice-based applications. It underscores the necessity of diverse training datasets to prevent algorithmic bias in global AI deployments.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Airbnb AI Travel Agent Launches 2027",
+            "title": "Airbnb Plans AI Travel Agent for Trip Planning and Booking",
+            "content": "Airbnb announced the development of an AI travel agent slated for release in the first half of 2027. The agent will automate complex tasks including trip planning, comparing lodging options, managing bookings, and providing in-stay assistance. This move signals a major shift in the travel industry toward conversational commerce and fully automated customer service. Travelers should expect to interact with AI-driven interfaces for end-to-end trip management, reducing reliance on traditional search engines. Developers must prepare for new API integrations and data privacy considerations as conversational AI becomes central to travel logistics.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 05 2026",
             "headline": "OpenAI Blueprint Aims to Guide AI Compute",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Physicl has raised $10 million to develop technology that closes the sim-to-real gap for robotics. The company is adapting a digital pipeline originally built for e-commerce to create realistic virtual environments for training robots. This approach allows developers to test and refine robotic behaviors in a controlled setting before physical deployment. The funding will accelerate the commercialization of robust, simulation-trained robotic systems.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "400+ Artex AI Servers Exposed to Internet",
-            "title": "Security Researchers Discover Hundreds of Penetration Testing Tools Publicly Accessible",
-            "content": "Security researchers identified hundreds of servers hosting the Artex AI penetration testing tool publicly exposed to the internet. This exposure grants unauthenticated remote access to a suite of hacking tools, including vulnerability scanners and exploit frameworks. The affected systems span multiple cloud providers and are likely misconfigured by security teams. Organizations must immediately audit their network perimeter to ensure no penetration testing tools are left exposed to the public internet. This discovery highlights a critical misconfiguration risk for AI-driven security platforms.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Meta's Muse AI Gets New 'Spaces' Feature",
-            "title": "Meta Introduces 'Spaces' for Enhanced Collaboration with Muse AI Agents",
-            "content": "Meta is expanding its Muse AI agent capabilities by introducing a new feature called \"Spaces.\" This allows users to interact with customized, app-like experiences directly within the AI assistant interface. The feature enables the creation of targeted environments, such as shopping hubs and educational dashboards, tailored to specific workflows. This development represents a shift toward integrated AI workspaces, reducing the need to switch between separate applications. Users can now build and interact with these specialized environments to streamline daily tasks.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Meta's Muse AI Builds Custom App Spaces",
-            "title": "Meta Allows Users to Build Custom App-Like Experiences in Muse AI",
-            "content": "Meta's Muse AI assistant now enables users to build customized, app-like experiences called \"spaces\" directly within the chat interface. These spaces can function as specialized tools, including shopping hubs, school dashboards, and music trackers. Users interact with these environments without leaving the main Muse application. This feature leverages Muse's underlying large language model (LLM) to dynamically generate and manage the content within each space. The rollout aims to increase user engagement by integrating utility directly into the AI assistant.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Midterm Elections Trigger Data Center Restrictions",
-            "title": "U.S. Midterm Elections Prompt Widespread Data Center Development Restrictions",
-            "content": "The Democratic midterm victories in the U.S. are poised to heavily restrict data center development nationwide. Voters approved 41 data center-related ballot measures, with 40 imposing new limitations on construction and energy usage. These restrictions will directly impact major cloud providers and hyperscalers expanding their infrastructure. The regulatory shift could increase operational costs and delay AI model training timelines for tech companies. Stakeholders must now navigate a more complex and fragmented regulatory landscape for data center deployment.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Midterms Threaten AI Industry Growth",
-            "title": "U.S. Midterm Elections Spark Concerns Over AI Industry's Future",
-            "content": "The historic Democratic victories in the U.S. midterm elections are raising alarms about the future of the AI industry. Voters overwhelmingly approved 41 data center-related ballot measures, with 40 imposing strict limitations on new construction. This regulatory backlash threatens the infrastructure expansion required for training advanced AI models. The tech sector now faces a challenging two-year period of navigating restrictive state-level policies. Industry leaders must adapt their expansion strategies to comply with the new, highly regulated environment.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Dating App AI Prompts Kill 25% of Matches",
-            "title": "AI-Generated Prompts on Hinge and Bumble Reduce Match Rates for Users",
-            "content": "Hinge and Bumble have rolled out AI-generated prompts that users report significantly reduce match rates on dating apps. The algorithmic suggestions often produce generic, uninspired text that fails to differentiate users in a crowded marketplace. This shift impacts the core user experience of these platforms, potentially driving users away from the apps. The trend highlights a broader conflict between AI automation and authentic human connection in social technology.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "2026 Election Delivers Blow to Big Tech",
-            "title": "Democratic Sweep in 2026 Paves Way for Big Tech Regulation and Data Center Scrutiny",
-            "content": "The 2026 U.S. election resulted in a Democratic sweep, setting the stage for aggressive regulatory action against Big Tech. Voters overwhelmingly rejected AI-driven political campaigns and expressed strong opposition to unchecked data center construction. This political shift threatens to halt the rapid expansion of hyperscale data centers and could trigger new antitrust legislation. Tech leaders must now prepare for a stringent compliance environment regarding data privacy and infrastructure.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Moog, Akai Open Source Audio Toolkits",
-            "title": "inMusic CEO Jack O'Donnell Announces Open-Source Toolkits for Moog and Akai Gear",
-            "content": "inMusic, the parent company of Moog and Akai, is providing open-source toolkits and technical schematics to the modding community. CEO Jack O'Donnell confirmed that the company will release the inner workings of its MPC and Sampler hardware. This move empowers audio engineers to create custom firmware and hardware modifications. It represents a significant shift toward community-driven innovation in professional music production technology.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "AI Spending Stalls Ahead of Anthropic IPO",
-            "title": "Ramp Data Reveals Enterprise AI Spending Plateaus as Anthropic Nears IPO",
-            "content": "Enterprise AI spending has stalled despite a continuous rise in overall AI usage, according to data from Ramp. Major corporations are leveraging aggressive price cuts and advanced cost controls to manage their AI budgets. This plateau challenges the hypergrowth assumptions of venture capitalists and investors. The data suggests a maturation of enterprise AI adoption, shifting from experimental to cost-optimized integration.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Amazon Enables Text-to-Shop for Alexa",
-            "title": "Amazon Rolls Out Text-to-Shop Feature for Alexa Users",
-            "content": "Amazon is rolling out a new text-to-shop feature for Alexa, allowing users to text the voice assistant to help with purchasing. The feature is being deployed to millions of users over the coming weeks. This update expands Alexa's utility beyond voice commands, integrating it into standard mobile communication channels. It represents a strategic shift in how Amazon handles e-commerce and customer interaction.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
             "relatedResources": []
         }
     ],
