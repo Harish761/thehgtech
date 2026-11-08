@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 05 2026",
+            "headline": "OpenSSH Bug Bypasses Keys—Long Passwords Grant Access",
+            "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+            "content": "OpenSSH issued an emergency patch for a critical authentication bypass vulnerability on Alpine Linux. Attackers can exploit this flaw to log into passwordless accounts by providing a password between 257 and 1,024 bytes long. The vulnerability affects the standard openssh-server package and requires network access and a valid account name. OpenSSH has rated the flaw as critical and urges immediate system updates.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "ChatGPT Lockdown Mode Bypassed—Chat Exfiltration Risk",
+            "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+            "content": "Researchers demonstrated a now-patched vulnerability that bypassed ChatGPT's Lockdown Mode. The flaw allowed unauthorized data exfiltration without requiring any user interaction. OpenAI introduced Lockdown Mode in June 2026 to minimize these specific data leakage risks. Users are advised to ensure their ChatGPT client is updated to the latest version to mitigate any residual risks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Apache OFBiz RCE and 17 Other Active Threat Reports",
+            "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+            "content": "ThreatDay highlights 18 active security incidents, including a critical Remote Code Execution (RCE) in Apache OFBiz. A separate breach at DreamHost compromised customer data, while DeFi sites suffered hijacks via compromised credentials. These events demonstrate how minor misconfigurations or stolen logins can lead to significant system-wide compromises. Security teams are urged to review their exposure management platforms to identify and patch these vulnerabilities.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Exposure Management Platforms Leave Critical Gaps",
+            "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
+            "content": "Exposure management platforms often fail to correlate vulnerability findings with real-world risk factors. A critical finding can remain unpatched if the platform lacks context on system ownership and network reachability. The five tests outlined help security professionals validate if their platforms provide actionable intelligence. Organizations must integrate asset management to ensure vulnerabilities are prioritized based on actual exploitability.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 08 2026",
+            "headline": "Scans for Sshole Flaw Spike—Attackers Targeting 256+ Char Passwords",
+            "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+            "content": "Security researchers report a significant increase in scanning activity for the \"sshole\" vulnerability, tracked as CVE-2026-123158. Honeypot data indicates threat actors are specifically targeting SSH passwords exceeding 255 characters. The vulnerability allows attackers to bypass authentication on vulnerable servers. Administrators must apply the latest OpenSSH patches and monitor server logs for anomalous login attempts.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33498",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 08 2026",
+            "headline": "Brava Security Raises $15M for AI Defense",
+            "title": "Brava Security Secures $15 Million to Launch Multi-Agent AI Defense Platform",
+            "content": "Brava Security has raised $15 million to emerge from stealth, launching an AI platform that generates synthetic telemetry to identify gaps in enterprise defenses. The multi-agent system simulates attack vectors to test and harden security postures before real adversaries exploit vulnerabilities. The platform is designed to integrate with existing Security Information and Event Management (SIEM) and Extended Detection and Response (XDR) tools. This approach addresses the critical shortage of red team personnel and the high cost of traditional penetration testing. Early adopters include Fortune 500 companies seeking to automate their vulnerability management lifecycle.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Air Force Urges Digital Forensics Investment",
+            "title": "Air Force Cyber Official Calls for Increased Digital Forensics Investment",
+            "content": "Wanda Jones-Heath, a cyber official from the U.S. Air Force, stated that investing in digital forensics is essential to keeping pace with evolving incidents and threats. She made these remarks during a Datadog event, highlighting the need for advanced capabilities to analyze and attribute cyberattacks rapidly. The focus on forensics aims to shorten the dwell time of adversaries within critical defense networks. This push aligns with broader government initiatives to bolster national cyber resilience against state-sponsored actors.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/air-force-digital-forensics-cyber-investment/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "New Resource Explains AI Security Data Pipelines",
+            "title": "SecurityDataPipeline.com Launches as Educational Resource for AI Security Operations",
+            "content": "SecurityDataPipeline.com has launched as an ungated educational resource to help security professionals navigate the AI era of operations. The platform explains how security data pipelines reduce Security Information and Event Management (SIEM) ingestion costs while preserving detection coverage. It also provides guidance on preparing the underlying data layer to support AI-driven security operations and machine learning models. The resource targets security engineers and developers responsible for managing the data infrastructure of modern security stacks.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Debian, Ubuntu Patch APT Root Flaw",
+            "title": "Debian, Ubuntu Patch APT Critical Vulnerability Allowing Root Access",
+            "content": "Linux administrators must patch a critical vulnerability in APT, the Advanced Package Tool used by Debian, Ubuntu, and derivatives, which could allow attackers to install unverified software with root privileges. Tracked as CVE-2026-109518, the flaw undermines the fundamental trust model of package managers. The vulnerability could lead to complete system compromise and persistent access for threat actors. Users should update their APT packages immediately to the latest patched versions provided by their respective distributions.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245109/debian-ubuntu-patch-apt-flaw-that-could-hand-attackers-root.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "Zyxel Patches Zero-Day Hiding Behind Old Fix",
+            "title": "Zyxel Patches Zero-Day Vulnerability Exploited in 996 Switches",
+            "content": "Zyxel has patched a zero-day vulnerability that attackers exploited to compromise 996 GS1900 network switches across 48 countries. The attack, discovered by GreyNoise, exposed device configurations, network information, and hashed root credentials, with activity beginning around August 17. The flaw highlights the risk of attackers abusing unpatched or improperly fixed vulnerabilities in network infrastructure. Administrators are urged to update all Zyxel firmware to the latest patched release immediately.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4245028/zyxel-patches-a-zero-day-hiding-behind-an-old-fix.html",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 06 2026",
             "headline": "WordPress Fix Unveils Final Attack Window",
             "title": "WordPress Vulnerability Allows Attacks During Patching",
@@ -85,15 +175,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Nov 05 2026",
-            "headline": "Cisco IOS—Old Vulnerability Still Being Scanned",
-            "title": "Cisco IOS Vulnerability Scanned—Old CVE Still Targeted",
-            "content": "Security researchers observed ongoing exploitation attempts targeting CVE-2023-20198, a vulnerability in Cisco IOS software. The attacks, detected via honeypot data, specifically targeted older Cisco IOS versions lacking recent patches. Threat actors continue to probe legacy network infrastructure for this known RCE flaw. Network administrators must immediately inventory their Cisco IOS deployments and apply the relevant security patches to prevent compromise.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33492",
-            "relatedResources": []
-        },
-        {
             "date": "Nov 07 2026",
             "headline": "SonicWall Flaw Weakens VPN Logins",
             "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Barracuda Email Gateway Allows Root Access",
-            "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
-            "content": "Security researchers have demonstrated a critical vulnerability chain in Barracuda's Email Security Gateway, allowing unauthenticated remote root access. The attack combines two distinct flaws to execute arbitrary commands at the highest privilege level without requiring valid credentials. Barracuda released emergency patches on Monday, while the firm watchTowr detailed the exploit chain on Thursday. This vulnerability exposes email infrastructure to complete compromise, data theft, and lateral movement within corporate networks. System administrators must apply the latest firmware updates to all Barracuda Email Security Gateways immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "Anthropic AI Leaks 1,122 Secrets via \"Don't Ask Again\"",
-            "title": "Claude Code's \"Don't Ask Again\" File Exposes 1,122 Passwords and Keys on GitHub",
-            "content": "Developers using Anthropic's Claude Code are accidentally exposing secrets in public GitHub repositories. Selecting \"Yes, and don't ask again\" saves the entire command, including passwords and API keys, to a local file. This file was found in 1,122 public GitHub repositories, making credentials easily accessible to anyone. The flaw affects anyone using the \"don't ask again\" feature, creating a severe risk of credential theft and unauthorized system access. Users must immediately audit their repositories for exposed .claude/settings.json files and rotate all potentially compromised credentials.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenSSH Flaw Bypasses Password Authentication",
-            "title": "Critical OpenSSH Flaw Lets Attackers Access Password-Disabled Accounts",
-            "content": "A critical vulnerability in OpenSSH servers allows attackers to bypass authentication on Linux systems using the musl C library. The flaw specifically impacts Alpine Linux, which relies on musl instead of the standard glibc, enabling remote attackers to log in without valid credentials. This bypass affects accounts that have password authentication disabled, forcing a reliance on key-based authentication alone. The vulnerability underscores the risks of using lightweight, alternative C libraries in production environments. Administrators of affected systems must apply the latest security patches to OpenSSH immediately.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "October 2026 Sees 82 High-Impact Vulnerabilities",
-            "title": "October 2026 CVE Landscape Shows 82 High-Impact Vulnerabilities",
-            "content": "Recorded Future's Insikt Group identified 82 high-impact vulnerabilities in October 2026, with 52 scoring a Very Critical risk. This represents a 13% decrease in high-impact flaws compared to the previous month. The data highlights a continued high volume of critical software flaws requiring immediate attention from security teams. Organizations should prioritize patching these vulnerabilities based on their risk scores and asset exposure. The trend indicates a persistent challenge in software supply chain security.",
-            "source": "Recorded Future",
-            "sourceUrl": "https://www.recordedfuture.com/blog/october-2026-cve-landscape",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenAI Unveils GPT-6 Cyber for Vulnerability Discovery",
-            "title": "OpenAI Launches GPT-6 Cyber After AI Uncovers 81 Firefox and 948 Linux Flaws",
-            "content": "OpenAI launched GPT-6 Cyber, a new model designed to significantly improve security research and vulnerability discovery. The model demonstrated its capabilities by finding 81 flaws in Firefox and 948 exploits in Linux, showcasing its advanced alignment and reasoning. This development marks a step-change in automated cybersecurity capabilities, allowing researchers to identify and fix vulnerabilities faster. The tool is expected to be highly effective at finding complex software flaws across open-source projects. Security teams should evaluate integrating this AI into their vulnerability management and penetration testing workflows.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "US Agencies Warn of Refrigeration Controller Attacks",
-            "title": "US Agencies Urge Organizations to Harden Refrigeration Controllers",
-            "content": "US government agencies are urging organizations to harden Internet-connected refrigeration controllers following active attacks. The threats specifically target supermarket and blood bank freezers in Europe, potentially compromising temperature-sensitive goods. These attacks highlight the expanding attack surface of operational technology (OT) in critical supply chains. Organizations must immediately review and secure their IoT and OT devices against unauthorized access. Security professionals should segment OT networks and enforce strict access controls to mitigate these emerging physical security risks.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Ahold Delhaize Cyberattack Cuts Q4 Sales by €250M",
-            "title": "Grocery Giant Ahold Delhaize Estimates €250M Financial Toll from October Cyberattack",
-            "content": "Grocery retailer Ahold Delhaize estimates its October cyberattack will reduce fourth-quarter sales by up to €250 million and force a downward revision of its 2026 outlook. The incident underscores the severe financial impact of ransomware and data breaches on critical retail infrastructure. The company is currently working to restore systems and recover customer data following the attack. Security leaders in the retail sector must prioritize resilience planning and incident response testing. Organizations should invest in robust backup strategies and comprehensive cyber insurance to mitigate financial exposure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/grocery-giant-ahold-delhaize-estimates-financial-toll-of-october-cyberattack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "28 Proxies Infiltrate White House Network",
-            "title": "Researchers Find Residential Proxies on White House Network",
-            "content": "Researchers detected 28 residential proxy services operating on six IP addresses within the White House network over a single month. The suspicious traffic primarily occurred between 5 p.m. and midnight Eastern Time, suggesting potential state-sponsored or advanced persistent threat (APT) activity. This discovery highlights the evolving tactics of sophisticated actors who leverage residential IPs to blend into legitimate network traffic. Government agencies must enhance network segmentation and anomaly detection to mitigate such stealthy infiltration attempts.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/researchers-find-residential-proxies-on-white-house-network/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenSSH Patches 'SSHole' Authentication Bypass",
-            "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
-            "content": "OpenSSH released emergency patches for the 'SSHole' vulnerability, which allows unauthorized access on specific Linux systems. The flaw affects Linux distributions using musl libc without Pluggable Authentication Modules (PAM), allowing any account to accept a password between 257 and 1024 characters long. This authentication bypass grants remote attackers full root-level access to vulnerable servers. System administrators must immediately update their OpenSSH packages and audit their libc and PAM configurations.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openssh-rushes-patches-for-sshole-authentication-bypass/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 05 2026",
+            "headline": "Australian Universities Build AI-Native Graduates",
+            "title": "Australian Universities Expand AI Integration to Prepare Students for the Future Workforce",
+            "content": "Australian universities are expanding access to ChatGPT and integrating AI into teaching and learning to prepare students for an AI-enabled workforce. This initiative focuses on developing AI literacy and technical skills across various disciplines. The shift aims to bridge the gap between traditional education and the rapidly evolving demands of the modern job market. Students will gain hands-on experience with AI tools, enhancing their employability. This move positions Australia as a leader in AI education.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 05 2026",
+            "headline": "OpenAI Unveils Blueprint for Responsible AI Infrastructure",
+            "title": "OpenAI Introduces National Community Compact and Compute Campus Policy Blueprint",
+            "content": "OpenAI has introduced its National Community Compact and Compute Campus Policy Blueprint to guide responsible AI infrastructure development. The blueprint aims to protect local resources, create jobs, and ensure sustainable AI growth. It provides a framework for balancing AI innovation with community and environmental needs. This initiative addresses growing concerns about the resource-intensive nature of large-scale AI models. It sets a new standard for corporate responsibility in the AI sector.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 08 2026",
+            "headline": "Elvis and Eminem Rights Holders Sue Suno",
+            "title": "Suno Faces Lawsuits from Elvis and Eminem Rights Holders Over AI-Generated Music",
+            "content": "Suno is facing lawsuits from rights holders of Elvis Presley's music and the publisher of Eminem's records, alleging illegal generation of music and lyrics that mimic those artists. The Presley suit claims Suno's AI model was trained on copyrighted material without permission. This legal action highlights the ongoing copyright challenges in the AI music generation space. It raises questions about the legality of training AI models on existing artist catalogs. The outcome could set a precedent for the AI music industry.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 04 2026",
+            "headline": "Securing Agentic Enterprises Requires Data Lineage",
+            "title": "Data Lineage is Critical for Securing AI Agent Workflows",
+            "content": "Securing agentic enterprises requires robust data lineage to track AI agent decisions across multiple data sources. A sales representative's agent pulls data from restricted pricing systems, internal communications, and archived quotes, creating a complex data trail. Another agent uses this output to draft a proposal, amplifying any potential errors or biases. This lack of transparency makes it difficult to audit and secure AI-driven business processes. Organizations must implement data lineage tools to ensure AI agent reliability and security.",
+            "source": "Artificial intelligence – MIT Technology Review",
+            "sourceUrl": "https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "OpenAI Raises $11B at $1.25T Valuation",
+            "title": "OpenAI Reportedly Raises $11 Billion in Funding Round",
+            "content": "OpenAI has reportedly raised an additional $11 billion in a funding round that is expected to close in the coming weeks. This brings the company's valuation to $1.25 trillion, making it one of the most valuable private companies in the world. The funding will likely fuel further research and development in large language models and other AI technologies. It also strengthens OpenAI's position in the competitive AI landscape. This investment signals strong confidence in the future of AI.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "AI Data Center Expansion Sparks Global Grid Fights",
+            "title": "Massive AI Data Center Expansion Triggers Global Power Grid and Environmental Conflicts",
+            "content": "Tech companies are aggressively building energy-hungry data centers to support AI infrastructure, triggering international conflicts over power grid capacity, utility bills, and environmental impact. The rapid construction of these facilities strains local electrical grids and significantly increases regional energy consumption, forcing communities and governments to negotiate complex regulatory frameworks. This infrastructure boom directly impacts energy markets and environmental policies, demanding a shift toward sustainable power solutions. Industry stakeholders must collaborate on advanced grid management and renewable energy integration to mitigate these systemic risks.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Amazon Rolls Out Text-to-Shop Feature for Alexa",
+            "title": "Amazon Enables Text-Based Shopping via Alexa Messaging",
+            "content": "Amazon is rolling out a new feature that allows millions of users to text Alexa for shopping assistance, expanding the voice assistant's utility beyond voice commands. This messaging integration aims to streamline the retail process by enabling users to send queries and receive product recommendations directly through text. The feature represents a significant shift in Amazon's AI strategy, leveraging asynchronous communication to enhance user engagement and convenience. Users can expect the rollout to begin within the coming weeks across supported devices.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "ToyBlocks Launches Safe Robot Learning Sandbox",
+            "title": "Hugging Face Introduces ToyBlocks for Secure Robot AI Training",
+            "content": "Hugging Face has released ToyBlocks, a controlled simulation environment designed to evaluate and train robotic AI models in a safe, virtual setting. This platform provides a standardized benchmark for testing robotic capabilities, addressing the critical sim-to-real gap in autonomous systems development. By offering a controlled world, ToyBlocks allows developers to validate algorithms and safety protocols without the risks and costs associated with physical hardware. The tool is aimed at researchers and engineers focused on advancing robust and reliable AI-driven robotics.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/toyblocks",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Underdog's 32MB Speech Model Generates Music",
+            "title": "Underdog Debuts 32MB Model Capable of Speech and Music Synthesis",
+            "content": "Underdog has unveiled a highly compact 32MB speech generation model that can synthesize both human speech and music, challenging the industry's reliance on massive, resource-intensive AI architectures. Despite its small footprint, the model demonstrates impressive capabilities, indicating a significant advancement in efficient machine learning. This development democratizes access to high-quality generative audio by reducing the computational and hardware requirements for deployment. Developers can leverage this model for edge computing and low-latency applications where traditional large language models (LLMs) are impractical.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 06 2026",
+            "headline": "Physicl Raises $10M to Bridge Sim-to-Real Gap",
+            "title": "Physicl Secures $10M to Advance Robot Simulation Pipelines",
+            "content": "Physicl has raised $10 million to develop a simulation-to-reality pipeline originally built for e-commerce, now tailored to close the sim-to-real gap in robotics. The company's approach leverages highly realistic digital twins of physical environments, allowing developers to train and test robotic systems with unprecedented accuracy before real-world deployment. This funding will accelerate the creation of advanced 3D environments and physics engines, directly addressing the high costs and risks of physical prototyping. The technology aims to significantly reduce the time and resources required to train robust autonomous systems.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 07 2026",
             "headline": "Midterm Shifts Threaten Musk Data Center Expansion",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Enterprise AI spending has stalled despite continued growth in usage, according to Ramp's latest data. Price cuts and improved cost controls among major adopters are challenging investor assumptions about AI hypergrowth. This spending slowdown occurs as Anthropic nears its initial public offering (IPO), raising questions about valuation expectations. The trend suggests that while AI adoption accelerates, organizations are optimizing costs rather than expanding budgets. Investors should temper expectations for unlimited AI infrastructure growth.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "Empty Chinese Office Cleared for Nvidia H200 Chips",
-            "title": "US Vetting Lapses Allow Nvidia H200 Chips to Reach Unverified Chinese Firms",
-            "content": "The US Commerce Department and Nvidia failed to conduct proper due diligence, approving the Chinese firm New Matrix to handle Nvidia's H200 AI chips despite its physical office being vacant. The New York Times investigation revealed that neither party verified the company's operational status before granting the export license. This oversight exposes a critical vulnerability in the US export control system designed to prevent advanced semiconductor technology from reaching unauthorized Chinese entities. The lapse risks undermining US national security objectives and could trigger stricter compliance audits for all future chip export licenses. Security professionals must monitor these policy enforcement gaps as they set dangerous precedents for AI hardware supply chain integrity.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Palo Alto Networks Pursues $500M AI Security Startup",
-            "title": "Palo Alto Networks in Advanced Talks to Acquire AI Agent Security Startup Clutch",
-            "content": "Palo Alto Networks is in advanced acquisition negotiations to buy Clutch, an artificial intelligence (AI) agent security startup, for $500 million. Clutch, which was last valued at $85 million in 2024, is backed by venture capital firms Lightspeed and SignalFire. The acquisition signals a strategic push by legacy network security vendors to integrate specialized AI agent security capabilities into their product portfolios. This trend reflects the growing enterprise concern over securing autonomous AI agents operating within corporate environments. The deal is expected to close by Q1 2027, pending standard regulatory approvals and shareholder agreements.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "NYT Cooking AI Saves Dinner, Ruins Cake",
-            "title": "NYT Cooking's AI Assistant Fixes Weeknight Chicken but Sabotages Cake",
-            "content": "The New York Times Cooking AI assistant successfully generated a weeknight chicken recipe but failed to correctly execute baking instructions, resulting in a ruined cake. The AI's culinary model demonstrated strong capabilities in protein-based meal planning but lacked the precision required for complex baking chemistry. Users reported that the AI failed to account for critical variables like oven calibration and ingredient temperature, leading to undercooked poultry or collapsed pastry structures. This highlights the current limitations of large language models (LLMs) in high-stakes, precise physical tasks. Home cooks should verify all AI-generated recipes against trusted culinary sources for critical baking instructions.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "Alex Stamos: AI Has Broken Cybersecurity",
-            "title": "AI Has Shattered Cybersecurity, Says Alex Stamos",
-            "content": "Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, stated that artificial intelligence (AI) has fundamentally broken the cybersecurity industry. Stamos highlighted that AI is drastically lowering the barrier to entry for cybercriminals while simultaneously overwhelming traditional defense mechanisms. The industry is currently in a reactive state, struggling to adapt to AI-driven attack vectors that bypass legacy signature-based detection. Stamos emphasized that the current security model is unsustainable and requires a complete architectural overhaul. Organizations must pivot immediately to zero-trust architectures and AI-driven autonomous defense systems to survive the evolving threat landscape.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "Anthropic AI Self-Development Accelerates 2x",
-            "title": "Anthropic's AI-to-AI Development Pipeline Sparks Safety Concerns",
-            "content": "Anthropic is leveraging AI to autonomously develop more powerful AI models, resulting in a doubling of model improvement rates compared to the previous year. This self-reinforcing development cycle raises critical questions about long-term control and alignment within frontier AI labs. Security researchers warn that this rapid, opaque iteration could outpace existing safety protocols and regulatory oversight. The trend signals a fundamental shift in AI R&D, where human oversight is increasingly supplemented by automated systems. Organizations must begin evaluating their risk frameworks for AI-generated code and model architectures.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenAI BioBasicsBench Tests AI Wet-Lab Science",
-            "title": "OpenAI BioBasicsBench Evaluates AI Agents in Wet-Lab Environments",
-            "content": "OpenAI has released BioBasicsBench, a standardized 100-task benchmark designed to evaluate AI agents' capabilities in interpreting raw experimental data. The benchmark specifically targets \"wet-lab\" scientific tasks, testing the agent's ability to process and analyze physical laboratory results. This tool provides researchers with a standardized metric to measure progress in automating scientific discovery and experimental workflows. It highlights a growing trend of deploying AI agents to accelerate research in biology and chemistry. The benchmark will help identify critical failure points in AI-driven scientific automation before deployment in high-stakes environments.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "Open ASR Leaderboard Adds African English Dialects",
-            "title": "Hugging Face Expands Open ASR Leaderboard to African English",
-            "content": "Hugging Face has updated the Open Automatic Speech Recognition (ASR) Leaderboard to include Egyptian and Nigerian English dialects. This expansion addresses a critical gap in speech recognition models, which historically underperform on non-standard English accents. The addition will drive the development of more robust, globally accessible voice interfaces and transcription tools. Security and accessibility professionals should leverage this updated benchmark to stress-test their voice-based applications. It underscores the necessity of diverse training datasets to prevent algorithmic bias in global AI deployments.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 07 2026",
-            "headline": "Google Buys Troubled Wyoming Data Center",
-            "title": "Crusoe Sells Troubled Wyoming Data Center Project to Google",
-            "content": "Crusoe sold its troubled Wyoming data center project to Google, highlighting the extreme challenges of developing massive AI facilities. The transaction underscores the immense capital, regulatory, and logistical hurdles facing AI infrastructure builders. Google's acquisition provides a resolution to Crusoe's stalled expansion plans in the region. This deal reflects the consolidation of AI compute capacity among a few major tech giants.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "OpenAI Valued at $1.25 Trillion",
-            "title": "OpenAI Valued at $1.25 Trillion as Rival Anthropic Nears IPO",
-            "content": "OpenAI reached a $1.25 trillion valuation in a new funding round that raised $11 billion, according to Bloomberg. This nearly 50% increase follows a previous March valuation of $852 billion. The massive funding round solidifies OpenAI's position as one of the world's most valuable private companies. The valuation surge comes as its primary competitor, Anthropic, is reportedly preparing for an initial public offering (IPO).",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 06 2026",
-            "headline": "China Recruits AI Exec to Spy on Huang",
-            "title": "China Recruits AI Exec to Spy on Nvidia CEO Jensen Huang",
-            "content": "China's Ministry of State Security (MSS) recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The intelligence agency enlisted Huang to gather intelligence on American AI chips and potentially influence the company. This operation highlights the intense geopolitical competition over advanced semiconductor technology. The recruitment of corporate executives for corporate espionage is a growing concern for Western tech leaders.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
             "relatedResources": []
         }
     ],
