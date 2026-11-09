@@ -5,13 +5,13 @@
     <link>https://thehgtech.com</link>
     <description>Expert cybersecurity analysis, threat intelligence briefings, ransomware forensics, and zero-day research.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2026 09:54:34 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 10:57:38 GMT</lastBuildDate>
     <atom:link href="https://thehgtech.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redirecting...</title>
       <link>https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html</guid>
-      <pubDate>Sun, 08 Nov 2026 09:54:15 +0000</pubDate>
+      <pubDate>Mon, 09 Nov 2026 10:57:31 +0000</pubDate>
       <description>In-depth cybersecurity analysis: Redirecting.... Expert insights from TheHGTech.</description>
       <content:encoded><![CDATA[<p>In-depth cybersecurity analysis: Redirecting.... Expert insights from TheHGTech.</p><p><a href="https://thehgtech.com/articles/windows-vs-macos-endpoint-security-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
@@ -19,7 +19,7 @@
       <title>When Agents Escape: Enterprise Security Lessons from the OpenAI–Hugging Face AI Agent Incident</title>
       <link>https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html</guid>
-      <pubDate>Sun, 08 Nov 2026 09:54:15 +0000</pubDate>
+      <pubDate>Mon, 09 Nov 2026 10:57:31 +0000</pubDate>
       <description>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</description>
       <content:encoded><![CDATA[<p>A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach. Covers sandbox escape, credential harvesting, Kubernetes lateral movement, and the enterprise security architecture rethink every CISO needs.</p><p><a href="https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
@@ -27,7 +27,7 @@
       <title>When the Test Does Not Know It Is a Test: AI Evaluation Containment Failures</title>
       <link>https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</link>
       <guid isPermaLink="true">https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html</guid>
-      <pubDate>Sun, 08 Nov 2026 09:54:15 +0000</pubDate>
+      <pubDate>Mon, 09 Nov 2026 10:57:31 +0000</pubDate>
       <description>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</description>
       <content:encoded><![CDATA[<p>A technical analysis of the July 2026 AI evaluation containment failures at OpenAI and Anthropic. Why model belief about the evaluation boundary is not a security control, and how infrastructure enforcement must replace prompt-level assurance.</p><p><a href="https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html">Read the full analysis at TheHGTech</a></p>]]></content:encoded>
     </item>
