@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 10 2026",
+            "headline": "Git Flaw Allows Malicious Code During Recursive Clones",
+            "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+            "content": "The Git project has patched a critical vulnerability in Git 2.56.1 that allows a malicious repository to execute arbitrary code during a recursive clone. The flaw specifically affects the handling of submodules, enabling attackers to run code on the victim's machine. Patches are also available for the 2.50 through 2.55 series, including versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, and 2.55.1. Developers should update their Git clients immediately to prevent supply chain attacks. This vulnerability highlights the risks associated with automated dependency management in software development.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Microsoft Patches 1,094 Flaws—Outlook Zero-Day Actively Exploited",
+            "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+            "content": "Microsoft released security updates for 1,094 vulnerabilities, including an actively exploited zero-day in Outlook identified as CVE-2026-124194. The company confirmed that threat actors were leveraging this critical flaw in targeted attacks before the patch was available. The update addressed a range of issues across Windows, Edge, and Office products. Organizations are urged to deploy the patches immediately to mitigate the risk of compromise. This release underscores the persistent threat of email client vulnerabilities in enterprise environments.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "SGLang RCE Breach Exposes NEAR AI User Data",
+            "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
+            "content": "An attacker exploited a remote code execution (RCE) vulnerability in SGLang, an open-source inference engine, to breach NEAR AI's infrastructure. The attacker gained access to an inference server and potentially viewed confidential user requests processed on that day. The incident affected data from 18 agents and approximately 100 users. NEAR AI has not yet released a patch for the SGLang vulnerability, but users are advised to monitor their accounts for suspicious activity. This incident highlights the security risks of using open-source AI inference tools.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Xen Orchestra Auth Bypass Lets Hackers Gain Admin Access",
+            "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+            "content": "French company Vates VMS warned of a critical authentication bypass vulnerability in Xen Orchestra, tracked as VSA-2026-062, which is being actively exploited in the wild. The flaw allows attackers to gain administrative access by manipulating REST cookie parsing. The vulnerability does not yet have a CVE identifier, but a patch is expected soon. Organizations using Xen Orchestra should monitor for unauthorized access and apply updates as soon as they are available. This flaw poses a significant risk to virtualization management platforms.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "China-Nexus Espionage Targets Global Telecom, Gov't",
+            "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+            "content": "Researchers have linked three distinct espionage campaigns to a China-nexus threat actor using a shared Sparrow malware ecosystem. The campaigns targeted telecommunications providers, government organizations, military entities, and critical infrastructure across Latin America, Asia, and Europe. The attacks employed a variety of malware and shared infrastructure, suggesting a coordinated effort. Organizations in these sectors should enhance their threat detection capabilities and review their network logs for indicators of compromise. This campaign demonstrates the global reach of state-sponsored cyber espionage operations.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Python Backdoor Evades Sandbox in AhsayCBS Attack",
+            "title": "AhsayCBS Flaws Deliver Sandbox-Evading Python Implant",
+            "content": "Cybersecurity researchers disclosed that attackers exploited two now-patched vulnerabilities in AhsayCBS to deploy a Python-based implant. The attack chain, observed by Huntress in early October 2026, leverages CVE-2026-105133 and CVE-2026-105134 to compromise the backup and disaster recovery platform. The implant is designed to evade sandbox analysis, allowing threat actors to maintain persistence on victim networks. Organizations using AhsayCBS must apply the latest security patches to mitigate this active exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "SAP Patches 9 Critical Vulnerabilities",
+            "title": "SAP Addresses Critical ICM2SHELL, ProxyGate Vulnerabilities",
+            "content": "SAP published 42 new and updated security advisories, including nine addressing critical-severity vulnerabilities. Among the patched flaws are issues in the ICM2SHELL and ProxyGate components that could allow attackers to execute arbitrary code or escalate privileges. These updates are part of SAP's monthly Security Patch Day, which is crucial for maintaining the integrity of enterprise environments running SAP systems. Administrators should prioritize the deployment of these patches to prevent potential exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Qubole Supply Chain Attack Exposes Secrets",
+            "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
+            "content": "Hackers compromised Qubole's Identity and Access Management (IAM) credentials to execute a supply chain attack, affecting over a dozen organizations. The attackers exfiltrated customer files, secrets, keys, environment variables, and credentials from the cloud-based data platform. This breach highlights the risks associated with compromised cloud provider credentials, which can serve as a gateway to multiple downstream clients. Customers must rotate all exposed secrets and audit their Qubole access logs for unauthorized activity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "iOS Sandbox Escape Exposes Crypto Wallet Keys",
+            "title": "iOS Sandbox Escape Puts Crypto Wallet Keys at Risk",
+            "content": "Binance warned of an iOS sandbox escape published on GitHub that allows malicious apps to read files from other applications on iPhones running iOS 26 and 27. The vulnerability exposes sensitive data such as seed phrases, private keys, and login credentials stored by other apps. Although Apple released security updates for iOS 26 and 27 yesterday, the fixes do not yet address this specific sandbox escape. Users should update their devices immediately and avoid installing apps from untrusted sources to protect their digital assets.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "SAP Patches Four CVSS 10.0 Flaws",
+            "title": "SAP Patches Four CVSS 10.0 Flaws Enabling RCE",
+            "content": "SAP addressed four vulnerabilities, all rated CVSS 10.0, during its monthly Security Patch Day. Three of the flaws are in the SAP NetWeaver application server, and one is in the Web Dispatcher, all of which allow remote code execution without authentication. These maximum-severity flaws pose a critical risk to enterprise environments, as they can be exploited by unauthenticated attackers to gain full control of SAP systems. Administrators must apply the latest patches to all affected NetWeaver and Web Dispatcher instances immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
             "headline": "Chrome Patches 8th Zero-Day—Use-After-Free Actively Exploited",
             "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
             "content": "Google released a critical security update for Google Chrome to patch a high-severity use-after-free vulnerability in its XML component. The actively exploited flaw, tracked as CVE-2026-125350, allows attackers to execute arbitrary code remotely by processing malicious XML data. All Chrome users are urged to update their browsers immediately to mitigate the risk of system compromise. This vulnerability marks the eighth zero-day flaw actively exploited in Chrome during 2026.",
@@ -92,115 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/iris-plaza-breach-may-have-exposed-data-of-7-7-million-customers/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Revolve Breach Hits 1.5 Million Customers",
-            "title": "Revolve Confirms September Cyberattack Affected 1.5 Million Individuals",
-            "content": "Online fashion retailer Revolve has officially notified regulators that its September data breach impacted 1.5 million individuals. The incident, which occurred earlier this year, exposed sensitive personal information belonging to a significant portion of the company's customer base. While the exact data types were not specified in the initial summary, such breaches typically involve names, addresses, and payment details. Revolve is now working with cybersecurity firms and law enforcement to investigate the root cause of the intrusion. Affected users should monitor their financial statements and credit reports for any suspicious activity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/revolve-puts-data-breach-victim-count-at-1-5-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "SSHole Exploited—APT RCE and 15K Hacked Sites",
-            "title": "Weekly Recap: Critical Vulnerabilities and Massive Attacks Uncovered",
-            "content": "A critical vulnerability known as SSHole was exploited in the wild this week, allowing attackers to bypass authentication on OpenSSH servers. Simultaneously, an advanced persistent threat (APT) group achieved remote code execution (RCE) by exploiting a zero-day vulnerability in a popular network management system. In other developments, threat actors compromised over 15,000 websites by exploiting a critical flaw in the WP Remote plugin. Security teams are urged to patch all affected systems immediately and review their web application firewalls for signs of compromise. The trend of exploiting default credentials and vulnerable third-party plugins continues to dominate the threat landscape.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Amplifon Americas Breach Exposes 1.3 Million Records",
-            "title": "Amplifon Americas Data Breach Impacts 1.3 Million Individuals",
-            "content": "Hackers successfully breached Amplifon Americas' internal systems, stealing personal, health, and insurance information from 1.3 million individuals. The stolen data includes highly sensitive details such as Social Security numbers and medical records. This breach highlights the severe risks faced by healthcare and insurance providers, who are prime targets for data theft. Amplifon Americas has initiated a notification process for affected individuals and is offering complimentary credit monitoring services. The company is also conducting a thorough forensic investigation to determine the attack vector and the full scope of the data exfiltrated.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/amplifon-americas-data-breach-impacts-1-3-million/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Frontline Education Breach Hits 3 Million Users",
-            "title": "Frontline Education Data Breach Affects Over 3 Million Staff and Students",
-            "content": "Frontline Education, a provider of school management software, disclosed that its August data breach affected over 3 million school district staff and students. The compromised data includes names, addresses, and in some cases, Social Security numbers and health information. This breach underscores the critical need for robust cybersecurity in the education sector, which often faces resource constraints. The company has notified affected school districts and is providing support for remediation efforts. Parents, students, and educators should remain vigilant for phishing attempts and identity theft in the wake of this incident.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "LNbits Urges Shutdown—Lightning Wallet Servers Under Attack",
-            "title": "LNbits Urges Operators to Shut Down Servers Amid Active Attacks",
-            "content": "The LNbits project, a free and open-source Bitcoin Lightning wallet system, has issued an emergency directive urging all operators to shut down their servers immediately. The project is facing a wave of attacks targeting its infrastructure, which it attributes to a vulnerability in the system's account creation process. LNbits is preparing to release several security fixes to address the issue and mitigate the risk of further compromise. Operators are advised to wait for these patches before bringing their services back online. This incident highlights the ongoing security challenges facing decentralized cryptocurrency applications.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Refrigeration Hacks Ignite Fires—U.S. Agencies Warn",
-            "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
-            "content": "U.S. government agencies warn threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally. The attacks aim to cause service disruptions, fire hazards, and inventory losses, potentially exploiting unpatched vulnerabilities in control systems. Affected industries include food storage, pharmaceuticals, and logistics, with physical safety risks to personnel. Agencies advise immediate patching of all industrial controllers and continuous monitoring for anomalous system behavior.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "CISA Flags SonicWall MFA Bypass—Exploited in Wild",
-            "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-            "content": "CISA added CVE-2026-XXXX, a high-severity vulnerability in SonicWall SonicOS, to its Known Exploited Vulnerabilities catalog due to active exploitation reports. The flaw allows threat actors to bypass Multi-Factor Authentication (MFA) on affected devices, potentially enabling unauthorized access to network infrastructure. This vulnerability impacts SonicOS versions prior to the latest release, exposing organizations to credential-based attacks. Administrators must update SonicOS immediately and enforce strict network segmentation to mitigate risk.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "CISA Launches Enhanced Cyber Incident Reporting Form",
-            "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-            "content": "CISA introduced an enhanced cyber incident reporting form designed to capture critical data for better threat assessment and response prioritization. The new questionnaire collects granular technical details, including initial access vectors, malware families, and victim impact metrics. This updated framework aims to improve trend analysis across federal agencies and private sector partners. Organizations are urged to adopt the new form for all reported incidents to ensure consistent and actionable intelligence.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Microsoft Paint RCE Bug—Patch Clarified After Weeks",
-            "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
-            "content": "Microsoft has resolved a remote code execution (RCE) vulnerability in Microsoft Paint (MSPaint) that caused weeks of confusion over patch availability. The flaw, tracked as CVE-2026-YYYY, allowed arbitrary code execution through malicious image files, posing a risk to all Windows users. Initial disclosure lacked clear mitigation guidance, leading to widespread user uncertainty. Users should ensure their Windows operating system is fully updated to apply the latest security patches.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Qubole Breach: AWS Keys Stolen—Customer Data Exposed",
-            "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
-            "content": "Threat actors exploited Qubole's trusted AWS credentials to breach multiple customer accounts between October 14 and October 26, stealing sensitive data and secrets. Cloud security firm Wiz reported the attacker leveraged Qubole's platform access to pivot into customer environments, compromising stored credentials and data. This supply-chain attack highlights the risks of over-privileged third-party integrations in cloud architectures. Organizations must review third-party access policies and implement strict credential rotation and least-privilege controls.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 05 2026",
-            "headline": "30+ Languages Now Supported—Otter AI Breaks Language Barriers",
-            "title": "Otter AI Expands Multilingual Capabilities to 30+ Languages with Code-Switching",
-            "content": "Otter AI expanded its transcription support to 30 languages, including 27 new additions. The platform now features an upcoming capability to seamlessly follow conversations when speakers switch between languages. This expansion targets global business professionals and multilingual teams who require accurate, real-time transcriptions. Users should update their Otter applications to access the latest language packs. This development aligns with the growing demand for AI-powered tools that operate effectively across diverse linguistic environments.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates",
+            "date": "Nov 10 2026",
+            "headline": "ChatGPT Launches Verified Business Agents",
+            "title": "OpenAI Expands ChatGPT with Verified Business Agents for E-commerce",
+            "content": "OpenAI is rolling out a new \"Business Agents\" feature in ChatGPT, enabling verified brand representatives to assist users with comparison shopping and online services. The feature is initially available to eligible e-commerce and online service businesses in the US as part of a broader suite of business-focused tools. This development signals a strategic push to integrate AI directly into commercial workflows, moving beyond general consumer queries to specialized, transactional support. Businesses must apply to be verified to leverage the agent, while users should verify the agent's credentials before making purchases or sharing personal data.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
             "relatedResources": []
         },
         {
-            "date": "Nov 05 2026",
-            "headline": "OpenAI Releases AI Infrastructure Blueprint for National Security",
-            "title": "OpenAI Introduces National Community Compact and Compute Campus Policy Blueprint",
-            "content": "OpenAI unveiled the National Community Compact and Compute Campus Policy Blueprint to guide the development of responsible AI infrastructure. The framework aims to protect local resources while creating jobs in host communities. It establishes guidelines for the construction and operation of large-scale AI compute facilities. This policy addresses growing concerns about the environmental and economic impact of data center expansions. Industry stakeholders should review these guidelines to align future AI infrastructure investments with national and community interests.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+            "date": "Nov 10 2026",
+            "headline": "Cyberattacks Threaten Open Source AI Security",
+            "title": "Hugging Face Exec Warns Cyberattacks Could Restrict Open AI Access",
+            "content": "Hugging Face executive Irene Solaiman issued a warning that escalating cyberattacks on open-source AI platforms could necessitate stricter security protocols. These potential restrictions threaten the open accessibility that underpins the global developer community's ability to build and share models. The trend highlights a growing tension between the open-source ethos and the operational security required to protect against supply-chain attacks and model poisoning. Developers and platform maintainers should audit their model repositories and implement robust access controls to mitigate these emerging threats.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Oura Acquires Counsel Health for $625 Million",
+            "title": "Oura Acquires AI-Native Primary Care Startup Counsel Health for $625M",
+            "content": "Wearable health company Oura has agreed to acquire AI-native primary care startup Counsel Health for $625 million. The acquisition follows Oura's indefinite postponement of its planned up to $2.2 billion IPO, citing uncertainty in the current market. This strategic move allows Oura to integrate AI-driven diagnostic and primary care services directly into its consumer health ecosystem. The deal underscores a broader industry trend of health tech firms pivoting from hardware-centric models to software and services-based revenue streams.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "US AI Lead Is Fragile—Jensen Huang Is a Target",
+            "title": "US AI Dominance Hangs in the Balance as Nvidia CEO Becomes Espionage Target",
+            "content": "The United States' leadership in the global artificial intelligence race is vulnerable to geopolitical espionage, with Nvidia CEO Jensen Huang emerging as a prime target. As the head of the world's most valuable company, Huang controls the critical hardware fueling the AI industry and maintains close ties with global political and corporate leaders. His prominence makes him a high-value target for nation-state intelligence agencies seeking to acquire advanced semiconductor and AI technology. US policymakers and tech leaders must bolster counter-espionage measures around key executives to protect the nation's strategic AI advantage.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "PSI Solves Quantum Question Using Unreleased Claude Model",
+            "title": "PSI Uses Unreleased Anthropic Model to Solve Decades-Old Quantum Computing Question",
+            "content": "PSI, a startup specializing in AI-driven scientific discovery, utilized an unreleased Anthropic model to answer a fundamental quantum computing question that has eluded scientists for nearly two decades. The breakthrough demonstrates the accelerating potential of frontier AI models to solve complex, domain-specific problems that require synthesizing vast, disparate datasets. This success highlights a new paradigm where AI is not just a tool for computation but a primary driver of scientific innovation and hypothesis generation. Researchers in other fields should explore partnerships with AI labs to leverage pre-release models for accelerating their own discovery processes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "OpenAI Business Profiles Turn ChatGPT Into Discovery Engine",
+            "title": "OpenAI Introduces Business Profiles to Enhance ChatGPT's Consumer Discovery Capabilities",
+            "content": "OpenAI is rolling out business profiles for ChatGPT to transform it into a robust consumer discovery engine. The new feature allows businesses to create detailed profiles, making their offerings more visible and accessible to users. This move positions ChatGPT as a direct competitor to traditional search engines like Google. The update aims to empower businesses to reach customers more effectively while increasing user engagement. Developers and business leaders should monitor how this impacts digital marketing strategies.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "IGF Jurors Reject AI-Generated Games",
+            "title": "Indie Game Community Fractures Over AI Usage at IGF",
+            "content": "Several Independent Games Festival (IGF) jurors publicly declared they will not vote for any games using generative AI. This stance sparked immediate backlash from developers, including the creator of indie hit Big Walk. The developer of Big Walk issued a statement clarifying they used AI \"sparingly\" only in the final stretch of development. The controversy highlights growing tensions between traditional game development and AI integration. The indie community remains deeply divided over the ethical implications of generative AI in game creation.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Anthropic's Claude Meetings Automates Workplace Planning",
+            "title": "Anthropic Launches Claude Meetings for Real-Time Plan Generation",
+            "content": "Anthropic has launched Claude Meetings, an AI-powered tool that converts workplace discussions into structured plans and tasks. As participants talk, Claude drafts plans, maps timelines on a whiteboard, and answers questions in the meeting chat. The tool also integrates with connected work apps to retrieve historical data, such as last year's figures. This feature targets enterprise clients looking to streamline project management and reduce administrative overhead. Security professionals should evaluate data handling policies before deploying such AI in corporate environments.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Anthropic Builds AI-Powered Office Suite",
+            "title": "Anthropic Expands Portfolio With Claude Code and New Office Suite",
+            "content": "Anthropic, known for enterprise and coding tools, is expanding into productivity with its own AI-powered office suite. This move follows the hype cycle surrounding Claude Code earlier this year. Competing frontier labs like OpenAI, SpaceXSI, and Meta are now adopting similar strategies to capture high-value corporate clients. The new suite aims to integrate AI directly into daily workflows, competing with established players like Microsoft and Google. Developers should assess the security implications of integrating frontier models into sensitive corporate data.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 10 2026",
+            "headline": "Nvidia CEO's Affair Sparks National Security Fears",
+            "title": "Nvidia CEO's Affair With Chinese Spy Raises National Security Concerns",
+            "content": "A reported affair between Nvidia CEO Jensen Huang and an alleged Chinese spy is raising significant national security concerns. The relationship could provide Beijing with inside access to the U.S. semiconductor supply chain, which is critical for AI infrastructure. As the U.S. and China race to develop advanced AI, such vulnerabilities pose severe risks to technological dominance. This incident underscores the need for rigorous background checks for executives in strategic industries. Security agencies are likely reviewing their protocols to mitigate similar threats in the future.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
             "relatedResources": []
         },
         {
@@ -292,78 +364,6 @@ const websiteContent = {
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/09/jensen-huang-pulls-out-of-elevenlabs-summit-amid-nvidia-controversy/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Anthropic Unveils Mythos, Fable 5.2 Models",
-            "title": "Anthropic Releases New Mythos and Fable Models Amid RSI Concerns",
-            "content": "Anthropic has released two new models, Claude Fable 5.2 and Claude Mythos 5.2, designed to tackle complex technical challenges. The company states these models demonstrate improved coding, reasoning, and vision capabilities. They also offer faster output generation compared to the 5.1 versions. Developers and enterprise users should evaluate these models for integration into their technical workflows. This release positions Anthropic as a direct competitor in the advanced AI model space.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Apple Sells $50 Intelligence Usage Packs",
-            "title": "Apple's $50 Intelligence Usage Packs Extend Access to Some AI Features",
-            "content": "Apple has introduced a $49.99 one-time purchase option for users to buy additional usage for certain Apple Intelligence features. This follows the company's publication of support articles in September outlining strict usage limits for these features. The update is available directly within Logic Pro, allowing users to bypass the default constraints. This move suggests Apple is monetizing its AI features beyond the initial hardware purchase. Developers and power users should be aware of these new paid tiers to manage their Apple Intelligence usage.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Claude Fable 5.2, Mythos 5.2 Launch",
-            "title": "Anthropic Launches Claude Fable and Mythos 5.2 Models",
-            "content": "Anthropic has launched Claude Fable 5.2 and Claude Mythos 5.2, claiming the models are built to handle daunting technical challenges. The new versions show improvements in coding, reasoning, and vision capabilities over the 5.1 predecessors. They are also capable of generating outputs faster than the previous iterations. Technical professionals and developers should benchmark these models against existing alternatives. This release demonstrates Anthropic's commitment to iterative model improvement and performance optimization.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "ChatGPT Enterprise Now Available on AWS",
-            "title": "OpenAI Expands ChatGPT Enterprise Distribution Through AWS Marketplace",
-            "content": "OpenAI has launched ChatGPT Enterprise directly on the Amazon Web Services (AWS) Marketplace, enabling organizations to procure and manage the AI assistant using existing AWS billing and purchasing agreements. This integration simplifies the procurement process for enterprise clients, allowing them to leverage their current AWS contracts for AI services. The move targets large-scale corporate deployments requiring robust security, data privacy, and administrative controls. This distribution strategy aims to accelerate enterprise adoption by reducing administrative friction for IT departments.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Nvidia CEO Affair Threatens China Chip Access",
-            "title": "Alleged Affair with Chinese Spy Threatens Nvidia's China Market Access",
-            "content": "Nvidia CEO Jensen Huang's alleged affair with a suspected Chinese spy is jeopardizing the company's strategic lobbying efforts to relax U.S. chip export restrictions. The incident threatens to derail ongoing negotiations with the U.S. government regarding Nvidia's access to China's lucrative artificial intelligence (AI) hardware market. This geopolitical risk complicates Nvidia's efforts to maintain its supply chain and market share against local Chinese competitors. The situation highlights the intersection of personal conduct and national security in the global semiconductor industry.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Instagram Launches AI-Powered Effect Builder",
-            "title": "Instagram Introduces AI-Generated Filters for Stories via Effect Builder",
-            "content": "Meta has launched the Effect Builder for Instagram, an artificial intelligence (AI) tool that allows users to generate custom filters for Stories through text prompts. The feature, currently available to US residents over 18, provides a prompt box where users describe their desired filter effects to an integrated chatbot. This follows Meta's recent expansion of its Edits app to macOS. The tool represents a shift toward generative AI integration within social media creative tools.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Meta Releases 10-Cent-Per-Token AI Model",
-            "title": "Meta Unveils Muse Ember, a Cost-Effective AI Model for Agent Execution",
-            "content": "Meta has released Muse Ember, a lightweight artificial intelligence (AI) model specifically optimized for agent execution tasks. The model is priced at 10 cents per million input tokens, positioning it as a highly cost-effective alternative to frontier competitors like Amazon's Haiku and Moonshot AI's Kimi. This pricing strategy is designed to drive adoption among developers and enterprises building autonomous AI agents. The release underscores Meta's focus on open-sourcing efficient models to compete in the enterprise AI market.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 09 2026",
-            "headline": "Jensen Huang Scandal Threatens U.S. AI Chip Sales",
-            "title": "Personal Scandal Threatens Nvidia CEO's Influence on U.S. Chip Export Policy",
-            "content": "A personal scandal involving Nvidia CEO Jensen Huang and a suspected Chinese national is threatening his influence over U.S. policy regarding chip export restrictions to China. The incident jeopardizes Nvidia's access to the Chinese AI market and complicates the company's lobbying efforts to loosen these restrictions. This situation highlights the critical role of executive leadership and personal conduct in global technology geopolitics. The outcome will significantly impact the competitive landscape between U.S. and Chinese AI hardware.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,72 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-124194",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Microsoft Office",
+            "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-111793",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Openwave Messaging Limited Webtop Media Transcoder",
+            "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-20320",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Cisco BroadWorks",
+            "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-111560",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Barracuda Networks Multiple Products",
+            "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Securit",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-116606",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Barracuda Networks Barracuda Email Security Gatewa",
+            "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-impor",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-125350",
+            "dateAdded": "Nov 10, 2026",
+            "vendor": "Google Chromium",
+            "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulne",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-102895",
             "dateAdded": "Nov 09, 2026",
