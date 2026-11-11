@@ -18774,6 +18774,24 @@
       "Description": "In June 2020, the Mexican lending platform <a href=\"https://newsbeezer.com/mexicoeng/yotepresto-has-disclosed-the-emails-and-passwords-of-all-1-4-million-customers/\" target=\"_blank\" rel=\"noopener\">yotepresto.com suffered a data breach</a>. Over 1.4 million customers were impacted by the breach which disclosed email and IP addresses, usernames and passwords stored as bcrypt hashes. The data was provided to HIBP by <a href=\"https://dehashed.com/\" target=\"_blank\" rel=\"noopener\">dehashed.com</a>."
     }
   ],
+  "youhack.ru": [
+    {
+      "Name": "YouHack",
+      "Title": "YouHack",
+      "BreachDate": "2013-05-29",
+      "AddedDate": "2026-11-11T07:29:19Z",
+      "PwnCount": 7160849,
+      "DataClasses": [
+        "Email addresses",
+        "IP addresses",
+        "Passwords",
+        "Usernames"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In May 2013, the Russian-language hacking forum YouHack suffered a data breach <a href=\"https://cybernews.com/security/billions-passwords-credentials-leaked-mother-of-all-breaches/\" target=\"_blank\" rel=\"noopener\">that was later redistributed as part of a larger corpus of data</a>. The breach exposed 107k forum members' email addresses, usernames, IP addresses and MD5 password hashes, most of which were unsalted. Forum posts also contained email address and password pairs belonging to other victims, bringing the total to 7.2M unique email addresses."
+    }
+  ],
   "youku.com": [
     {
       "Name": "Youku",
@@ -19209,6 +19227,25 @@
       "IsVerified": true,
       "IsFabricated": false,
       "Description": "In August 2016, <a href=\"http://www.zdnet.com/article/over-25-million-accounts-stolen-after-mail-ru-forums-raided-by-hackers/\" target=\"_blank\" rel=\"noopener\">the Russian gaming site known as Пара Па (or parapa.mail.ru) was hacked</a> along with a number of other forums on the Russian mail provider, mail.ru. The vBulletin forum contained 4.9 million accounts including usernames, email addresses and passwords stored as salted MD5 hashes."
+    }
+  ],
+  "spasibosberbank.ru": [
+    {
+      "Name": "SberSpasibo",
+      "Title": "СберСпасибо (SberSpasibo)",
+      "BreachDate": "2023-03-09",
+      "AddedDate": "2026-11-11T01:44:58Z",
+      "PwnCount": 3288711,
+      "DataClasses": [
+        "Bank card numbers",
+        "Dates of birth",
+        "Email addresses",
+        "Loyalty program details",
+        "Phone numbers"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In March 2023, <a href=\"https://habr.com/ru/articles/721368/\" target=\"_blank\" rel=\"noopener\">data allegedly taken from СберСпасибо (SberSpasibo), the loyalty program of Russian bank Сбербанк (Sberbank), was published online</a>. The data contained records relating to 48M users, including 3.3M unique email addresses alongside phone numbers and dates of birth. Data also included bank card numbers stored as unsalted SHA-1 hashes, plus loyalty program details such as membership dates and the redemption of bonus points for partner offers."
     }
   ],
   "sprashivai.ru": [
