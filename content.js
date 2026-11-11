@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 11 2026",
+            "headline": "Qilin Ransomware Claims 365 Victims",
+            "title": "Qilin Ransomware Group Emerges as Most Active Affiliate Program",
+            "content": "The Qilin ransomware affiliate program has claimed at least 365 victim organizations in the past three months. Despite its operational success, the group's administrator has made critical operational security mistakes. These missteps provide a rare glimpse into the internal workings of a highly active cybercrime organization. Security professionals should monitor Qilin's tactics and techniques for potential defensive insights.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Critical Zoom Workplace Flaw—CVSS 9.6",
+            "title": "Zoom Workplace Critical Flaw Allows Unauthenticated Remote Privilege Escalation",
+            "content": "Zoom has released updates to address two security flaws in Zoom Workplace for Windows. The critical flaw, CVE-2026-108186, carries a CVSS score of 9.6 and could allow unauthenticated remote privilege escalation. An improper input validation vulnerability enables attackers to gain elevated system privileges on affected endpoints. Users must apply the latest software updates immediately to mitigate the risk of system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Xen Orchestra Authentication Bypass",
+            "title": "Critical Xen Orchestra Flaws Exploited in Active Attacks",
+            "content": "Attackers are actively exploiting critical authentication bypass flaws in Xen Orchestra. The vulnerability allows arbitrary code execution with administrative privileges and full control over XCP-ng nodes. This flaw enables threat actors to take over virtualized environments and deploy ransomware or exfiltrate data. System administrators must update Xen Orchestra to the latest patched version immediately.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Citrix, Ivanti Patch Critical Flaws",
+            "title": "Citrix and Ivanti Patch Critical Vulnerabilities",
+            "content": "Citrix and Ivanti have released patches for critical and high-severity vulnerabilities. Attackers can exploit these bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The flaws pose a severe risk to enterprise environments relying on these management platforms. Administrators must apply the security updates immediately to prevent active exploitation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Openwave, Cisco Exploited—Info Leaks",
+            "title": "Threat Actors Exploit Openwave and Cisco BroadWorks Vulnerabilities",
+            "content": "Threat actors are exploiting vulnerabilities in Openwave and Cisco BroadWorks to leak sensitive information. The flaws, CVE-2026-111793 and CVE-2026-20320, allow attackers to extract configuration data. This exposure enables further reconnaissance and targeted attacks against telecommunications and enterprise networks. Administrators must update affected systems to prevent data leakage.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Outlook Vulnerability Actively Exploited",
+            "title": "Microsoft Patches Actively Exploited Outlook Vulnerability",
+            "content": "Microsoft has patched an actively exploited vulnerability in Microsoft Outlook during its November 2026 Patch Tuesday cycle. The security update addresses a critical flaw that threat actors are leveraging to compromise enterprise environments. Security professionals must ensure their Office suites are updated separately from the main Windows updates. This incident underscores the persistent threat of targeted attacks against widely used communication software.",
+            "source": "Malwarebytes",
+            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "CISO Forum Virtual Summit Day 2",
+            "title": "Join CISO Forum Virtual Summit 2026 Day 2",
+            "content": "The CISO Forum Virtual Summit 2026 Day 2 is now live, offering an immersive experience for cybersecurity leaders. The event focuses on innovative risk management and defense strategies for the modern enterprise. Participants can discuss and share insights with industry peers to strengthen their organizational security postures. This two-day virtual summit remains a premier destination for advancing enterprise cybersecurity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "AntiFox AI Pentesting Tool Abused",
+            "title": "AntiFox AI Pentesting Platform Linked to AWS Credential Theft",
+            "content": "Cybersecurity researchers disclosed a campaign where the agentic penetration testing platform AntiFox was abused to steal Amazon Web Services (AWS) credentials. Threat actors leveraged the tool to pivot laterally within compromised cloud environments. This highlights the dual-use risk of emerging AI-powered security tools when in the hands of malicious actors. Organizations must audit their cloud access controls and monitor for unusual lateral movement.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Qlik Servers Targeted With Reverse Shells",
+            "title": "Hackers Target Qlik Sense Servers With Reverse Shells",
+            "content": "Threat actors targeted Qlik Sense servers to deliver PowerShell reverse shell commands against multiple European Union-based environments in October 2026. The attackers also attempted to exploit vulnerabilities in ActiveMQ and Veeam backup systems. Cynet's CyOps and Research teams identified the suspicious activity during routine monitoring. Organizations running Qlik Sense, ActiveMQ, or Veeam must apply the latest security patches immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Asus and Zoom Patch Critical Flaws",
+            "title": "Asus and Zoom Release Security Patches",
+            "content": "Asus and Zoom have released security patches to address critical vulnerabilities in their respective products. Attackers could exploit these flaws to achieve command execution, memory overwrites, and privilege escalation on affected systems. Users of both platforms are strongly advised to install the updates immediately to mitigate the risk of compromise. These patches close significant security gaps that could otherwise lead to severe system breaches.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/asus-zoom-release-security-patches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
             "headline": "CISA Adds 2 Actively Exploited Flaws to KEV Catalog",
             "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
             "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities impact Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder, and patches are already available. Organizations using these systems must apply the updates immediately to mitigate the risk of unauthorized access and potential system compromise. This action highlights the critical need for prompt patch management in enterprise communication infrastructure.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "Malwarebytes",
             "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/update-chrome-now-to-fix-a-flaw-attackers-are-exploiting",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Git Flaw Allows Malicious Code During Recursive Clones",
-            "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-            "content": "The Git project has patched a critical vulnerability in Git 2.56.1 that allows a malicious repository to execute arbitrary code during a recursive clone. The flaw specifically affects the handling of submodules, enabling attackers to run code on the victim's machine. Patches are also available for the 2.50 through 2.55 series, including versions 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, and 2.55.1. Developers should update their Git clients immediately to prevent supply chain attacks. This vulnerability highlights the risks associated with automated dependency management in software development.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Microsoft Patches 1,094 Flaws—Outlook Zero-Day Actively Exploited",
-            "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-            "content": "Microsoft released security updates for 1,094 vulnerabilities, including an actively exploited zero-day in Outlook identified as CVE-2026-124194. The company confirmed that threat actors were leveraging this critical flaw in targeted attacks before the patch was available. The update addressed a range of issues across Windows, Edge, and Office products. Organizations are urged to deploy the patches immediately to mitigate the risk of compromise. This release underscores the persistent threat of email client vulnerabilities in enterprise environments.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "SGLang RCE Breach Exposes NEAR AI User Data",
-            "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
-            "content": "An attacker exploited a remote code execution (RCE) vulnerability in SGLang, an open-source inference engine, to breach NEAR AI's infrastructure. The attacker gained access to an inference server and potentially viewed confidential user requests processed on that day. The incident affected data from 18 agents and approximately 100 users. NEAR AI has not yet released a patch for the SGLang vulnerability, but users are advised to monitor their accounts for suspicious activity. This incident highlights the security risks of using open-source AI inference tools.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Xen Orchestra Auth Bypass Lets Hackers Gain Admin Access",
-            "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-            "content": "French company Vates VMS warned of a critical authentication bypass vulnerability in Xen Orchestra, tracked as VSA-2026-062, which is being actively exploited in the wild. The flaw allows attackers to gain administrative access by manipulating REST cookie parsing. The vulnerability does not yet have a CVE identifier, but a patch is expected soon. Organizations using Xen Orchestra should monitor for unauthorized access and apply updates as soon as they are available. This flaw poses a significant risk to virtualization management platforms.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "China-Nexus Espionage Targets Global Telecom, Gov't",
-            "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
-            "content": "Researchers have linked three distinct espionage campaigns to a China-nexus threat actor using a shared Sparrow malware ecosystem. The campaigns targeted telecommunications providers, government organizations, military entities, and critical infrastructure across Latin America, Asia, and Europe. The attacks employed a variety of malware and shared infrastructure, suggesting a coordinated effort. Organizations in these sectors should enhance their threat detection capabilities and review their network logs for indicators of compromise. This campaign demonstrates the global reach of state-sponsored cyber espionage operations.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Python Backdoor Evades Sandbox in AhsayCBS Attack",
-            "title": "AhsayCBS Flaws Deliver Sandbox-Evading Python Implant",
-            "content": "Cybersecurity researchers disclosed that attackers exploited two now-patched vulnerabilities in AhsayCBS to deploy a Python-based implant. The attack chain, observed by Huntress in early October 2026, leverages CVE-2026-105133 and CVE-2026-105134 to compromise the backup and disaster recovery platform. The implant is designed to evade sandbox analysis, allowing threat actors to maintain persistence on victim networks. Organizations using AhsayCBS must apply the latest security patches to mitigate this active exploitation.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "SAP Patches 9 Critical Vulnerabilities",
-            "title": "SAP Addresses Critical ICM2SHELL, ProxyGate Vulnerabilities",
-            "content": "SAP published 42 new and updated security advisories, including nine addressing critical-severity vulnerabilities. Among the patched flaws are issues in the ICM2SHELL and ProxyGate components that could allow attackers to execute arbitrary code or escalate privileges. These updates are part of SAP's monthly Security Patch Day, which is crucial for maintaining the integrity of enterprise environments running SAP systems. Administrators should prioritize the deployment of these patches to prevent potential exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/sap-patches-critical-icm2shell-proxygate-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Qubole Supply Chain Attack Exposes Secrets",
-            "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
-            "content": "Hackers compromised Qubole's Identity and Access Management (IAM) credentials to execute a supply chain attack, affecting over a dozen organizations. The attackers exfiltrated customer files, secrets, keys, environment variables, and credentials from the cloud-based data platform. This breach highlights the risks associated with compromised cloud provider credentials, which can serve as a gateway to multiple downstream clients. Customers must rotate all exposed secrets and audit their Qubole access logs for unauthorized activity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "iOS Sandbox Escape Exposes Crypto Wallet Keys",
-            "title": "iOS Sandbox Escape Puts Crypto Wallet Keys at Risk",
-            "content": "Binance warned of an iOS sandbox escape published on GitHub that allows malicious apps to read files from other applications on iPhones running iOS 26 and 27. The vulnerability exposes sensitive data such as seed phrases, private keys, and login credentials stored by other apps. Although Apple released security updates for iOS 26 and 27 yesterday, the fixes do not yet address this specific sandbox escape. Users should update their devices immediately and avoid installing apps from untrusted sources to protect their digital assets.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "SAP Patches Four CVSS 10.0 Flaws",
-            "title": "SAP Patches Four CVSS 10.0 Flaws Enabling RCE",
-            "content": "SAP addressed four vulnerabilities, all rated CVSS 10.0, during its monthly Security Patch Day. Three of the flaws are in the SAP NetWeaver application server, and one is in the Web Dispatcher, all of which allow remote code execution without authentication. These maximum-severity flaws pose a critical risk to enterprise environments, as they can be exploited by unauthenticated attackers to gain full control of SAP systems. Administrators must apply the latest patches to all affected NetWeaver and Web Dispatcher instances immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 11 2026",
+            "headline": "Fractile Raises $720M for Purpose-Built AI Chips",
+            "title": "Britain's Fractile Secures $720M Funding to Accelerate Development of Purpose-Built AI Chips",
+            "content": "UK-based AI chip startup Fractile has raised $720 million in a funding round, positioning itself as a top-funded player in the competitive race for specialized AI hardware. The capital injection will accelerate the design and deployment of Fractile's custom silicon, which is engineered to optimize performance for large language models and generative AI workloads. This funding surge highlights the intensifying global demand for high-performance computing infrastructure to support advanced AI models. Investors and tech leaders should monitor Fractile's progress as it challenges established chipmakers like Nvidia and AMD.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Congress Demands Nvidia CEO Jensen Huang Answer Spy Allegations",
+            "title": "House Republicans Summon Nvidia CEO Jensen Huang for Closed-Door Briefing on Chinese Spy Allegations",
+            "content": "House Republicans have summoned Nvidia CEO Jensen Huang to a closed-door briefing by the end of Wednesday to address allegations of an affair with a Chinese spy. The investigation centers on potential national security risks stemming from Huang's personal relationships and their impact on Nvidia's business dealings with Chinese entities. This development adds significant political pressure on the AI industry's most prominent leader amid escalating US-China tech tensions. Security professionals and policymakers should track the outcome of this briefing for potential regulatory or compliance implications.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Industry Condones Huang's Bad Behavior",
+            "title": "Industry Condones Jensen Huang's Bad Behavior, Insider Claims",
+            "content": "An investment intelligence consultant claims that senior figures across the AI industry are aware of and effectively condoning Jensen Huang's alleged bad behavior. The consultant's statement suggests a systemic tolerance for misconduct at the highest levels of tech leadership, potentially undermining corporate governance and ethical standards. This revelation could trigger reputational damage for Nvidia and prompt calls for stricter accountability measures within the AI sector. Developers and security professionals should advocate for transparent and robust HR policies to address toxic leadership.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "OpenAI Crosses $10B Quarterly Revenue",
+            "title": "OpenAI's Quarterly Revenue Crosses $10B for First Time, Marking 50% Growth",
+            "content": "OpenAI has reportedly crossed $10 billion in quarterly revenue for the first time, representing an almost 50% jump from $6.7 billion recorded in the second quarter. This financial milestone underscores the massive commercial demand for OpenAI's generative AI products, including ChatGPT and enterprise APIs. The company's rapid revenue growth highlights the intense competition in the AI market and its potential for high profitability. Tech leaders and investors should evaluate OpenAI's scaling strategies and market expansion plans.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Google's Tabletop AI Generates Custom Collaboration Apps",
+            "title": "Google's Tabletop AI Experiment Lets Users Build Custom Collaboration Apps",
+            "content": "Google has unveiled an experimental AI tool called Tabletop that generates customized collaborative hubs for coordinating with family and friends. The platform shares visual similarities with workplace management apps like Asana and Monday, but integrates built-in AI features to automate task creation and scheduling. This experiment signals Google's push into consumer-facing AI applications that blend personal organization with generative AI capabilities. Developers and users interested in early access should monitor Google's experimental features program for updates.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Google DeepMind Unveils AlphaGenome 2 for Disease Research",
+            "title": "AlphaGenome 2 Predicts How DNA Variations Impact Human Cell Types",
+            "content": "Google DeepMind has unveiled AlphaGenome 2, an advanced AI model designed to predict how DNA sequences and their variations impact specific human cell types. The model analyzes genetic changes to provide a detailed view of cellular behavior, which is a notoriously difficult problem in biomedical research. This technology could hold critical clues to the causes of various diseases and point the way to new, targeted treatments. Researchers can access the model through the AlphaGenome API to accelerate genomic analysis. This development builds on Google's ongoing investment in using AI to decode the complexities of human biology.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Databricks AI Agent Gives CEO Unfiltered Company Feedback",
+            "title": "Databricks Deploys Genie Agent to Report Internal Issues",
+            "content": "Databricks has deployed a revised AI agent named Genie to provide its CEO, Ali Ghodsi, with unfiltered operational feedback. The agent is designed to identify and report internal issues at the company's 12,000-employee scale, where manual oversight is impossible. This system addresses the common challenge of employees withholding negative information from leadership during rapid organizational growth. The deployment of Genie highlights a growing trend of using internal AI agents for corporate intelligence and risk management.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Google DeepMind's AlphaGenome 2 Maps Cellular Disease Roots",
+            "title": "AlphaGenome 2 Unravels How DNA Changes Affect Human Cells",
+            "content": "Google DeepMind's AlphaGenome 2 is a new AI model that unravels how DNA variations affect specific human cells and disease pathways. The system provides researchers with a granular view of cellular responses to genetic changes, a critical step in understanding disease etiology. By modeling these complex biological interactions, the tool could identify novel therapeutic targets for conditions with unclear genetic origins. The model is now available to the research community to accelerate genomic studies. This represents a significant leap in applying large-scale AI to cellular biology.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Plurai Adapts Self-Driving Tech for AI Agents",
+            "title": "Plurai Uses Probabilistic Models to Improve AI Agent Performance",
+            "content": "AI startup Plurai is applying end-to-end probabilistic models, originally developed for self-driving cars, to improve AI agent performance in unpredictable environments. The approach treats AI agents as systems that must operate effectively despite environmental uncertainty. This methodology aims to increase the reliability and adaptability of AI agents deployed in complex, real-world scenarios. Plurai's technology is positioned to enhance the decision-making capabilities of autonomous systems. This development reflects a broader industry shift toward robust, probabilistic AI architectures.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "Adobe's AI Tools Turn Photos Into 3D Worlds",
+            "title": "Adobe Experiments With 3D Image Exploration and AI Characters",
+            "content": "Adobe is showcasing experimental AI tools at its annual Max conference that transform static images into explorable 3D scenes and interactive characters. The new features allow users to \"walk around\" in photographs and design AI characters by conversing with them directly. These tools represent a significant leap in creative AI, moving beyond text generation to immersive visual and interactive experiences. The experimental features are currently available for testing by developers and creative professionals. This release underscores Adobe's commitment to integrating generative AI into its core creative workflows.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+            "relatedResources": []
+        },
         {
             "date": "Nov 10 2026",
             "headline": "NY AI Law Targets OpenAI, Anthropic—Register or Pay",
@@ -192,15 +282,6 @@ const websiteContent = {
             "content": "New York's sweeping AI safety law is now in effect, requiring major developers like OpenAI and Anthropic to register with the state and disclose their safety practices. These companies must also report critical incidents, such as AI-driven security breaches or system failures, or face substantial fines. The regulation marks a significant step in AI governance, placing direct compliance burdens on the largest AI labs operating in the state. Developers are advised to review the registration requirements immediately to ensure compliance and avoid penalties. This trend signals a growing global push for strict AI accountability and transparency measures.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 05 2026",
-            "headline": "Australian Universities Launch AI-Native Curricula",
-            "title": "Australian Universities Expand AI Integration to Prepare Students for Workforce",
-            "content": "Australian universities are rapidly expanding access to ChatGPT and integrating artificial intelligence (AI) directly into teaching and learning curricula. This initiative aims to prepare students for an increasingly AI-enabled workforce by teaching them how to effectively use AI tools. The focus is on practical application, ensuring graduates are not just consumers but also creators of AI-driven solutions. Education leaders believe this hands-on approach is critical for maintaining Australia's competitive edge in the global tech economy. Institutions are advised to develop clear AI usage policies to balance innovation with academic integrity.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/australian-universities-ai-native-graduates",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "OpenAI is rolling out a new \"Business Agents\" feature in ChatGPT, enabling verified brand representatives to assist users with comparison shopping and online services. The feature is initially available to eligible e-commerce and online service businesses in the US as part of a broader suite of business-focused tools. This development signals a strategic push to integrate AI directly into commercial workflows, moving beyond general consumer queries to specialized, transactional support. Businesses must apply to be verified to leverage the agent, while users should verify the agent's credentials before making purchases or sharing personal data.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Cyberattacks Threaten Open Source AI Security",
-            "title": "Hugging Face Exec Warns Cyberattacks Could Restrict Open AI Access",
-            "content": "Hugging Face executive Irene Solaiman issued a warning that escalating cyberattacks on open-source AI platforms could necessitate stricter security protocols. These potential restrictions threaten the open accessibility that underpins the global developer community's ability to build and share models. The trend highlights a growing tension between the open-source ethos and the operational security required to protect against supply-chain attacks and model poisoning. Developers and platform maintainers should audit their model repositories and implement robust access controls to mitigate these emerging threats.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Oura Acquires Counsel Health for $625 Million",
-            "title": "Oura Acquires AI-Native Primary Care Startup Counsel Health for $625M",
-            "content": "Wearable health company Oura has agreed to acquire AI-native primary care startup Counsel Health for $625 million. The acquisition follows Oura's indefinite postponement of its planned up to $2.2 billion IPO, citing uncertainty in the current market. This strategic move allows Oura to integrate AI-driven diagnostic and primary care services directly into its consumer health ecosystem. The deal underscores a broader industry trend of health tech firms pivoting from hardware-centric models to software and services-based revenue streams.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "US AI Lead Is Fragile—Jensen Huang Is a Target",
-            "title": "US AI Dominance Hangs in the Balance as Nvidia CEO Becomes Espionage Target",
-            "content": "The United States' leadership in the global artificial intelligence race is vulnerable to geopolitical espionage, with Nvidia CEO Jensen Huang emerging as a prime target. As the head of the world's most valuable company, Huang controls the critical hardware fueling the AI industry and maintains close ties with global political and corporate leaders. His prominence makes him a high-value target for nation-state intelligence agencies seeking to acquire advanced semiconductor and AI technology. US policymakers and tech leaders must bolster counter-espionage measures around key executives to protect the nation's strategic AI advantage.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "PSI Solves Quantum Question Using Unreleased Claude Model",
-            "title": "PSI Uses Unreleased Anthropic Model to Solve Decades-Old Quantum Computing Question",
-            "content": "PSI, a startup specializing in AI-driven scientific discovery, utilized an unreleased Anthropic model to answer a fundamental quantum computing question that has eluded scientists for nearly two decades. The breakthrough demonstrates the accelerating potential of frontier AI models to solve complex, domain-specific problems that require synthesizing vast, disparate datasets. This success highlights a new paradigm where AI is not just a tool for computation but a primary driver of scientific innovation and hypothesis generation. Researchers in other fields should explore partnerships with AI labs to leverage pre-release models for accelerating their own discovery processes.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "OpenAI Business Profiles Turn ChatGPT Into Discovery Engine",
-            "title": "OpenAI Introduces Business Profiles to Enhance ChatGPT's Consumer Discovery Capabilities",
-            "content": "OpenAI is rolling out business profiles for ChatGPT to transform it into a robust consumer discovery engine. The new feature allows businesses to create detailed profiles, making their offerings more visible and accessible to users. This move positions ChatGPT as a direct competitor to traditional search engines like Google. The update aims to empower businesses to reach customers more effectively while increasing user engagement. Developers and business leaders should monitor how this impacts digital marketing strategies.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "IGF Jurors Reject AI-Generated Games",
-            "title": "Indie Game Community Fractures Over AI Usage at IGF",
-            "content": "Several Independent Games Festival (IGF) jurors publicly declared they will not vote for any games using generative AI. This stance sparked immediate backlash from developers, including the creator of indie hit Big Walk. The developer of Big Walk issued a statement clarifying they used AI \"sparingly\" only in the final stretch of development. The controversy highlights growing tensions between traditional game development and AI integration. The indie community remains deeply divided over the ethical implications of generative AI in game creation.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Anthropic's Claude Meetings Automates Workplace Planning",
-            "title": "Anthropic Launches Claude Meetings for Real-Time Plan Generation",
-            "content": "Anthropic has launched Claude Meetings, an AI-powered tool that converts workplace discussions into structured plans and tasks. As participants talk, Claude drafts plans, maps timelines on a whiteboard, and answers questions in the meeting chat. The tool also integrates with connected work apps to retrieve historical data, such as last year's figures. This feature targets enterprise clients looking to streamline project management and reduce administrative overhead. Security professionals should evaluate data handling policies before deploying such AI in corporate environments.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Anthropic Builds AI-Powered Office Suite",
-            "title": "Anthropic Expands Portfolio With Claude Code and New Office Suite",
-            "content": "Anthropic, known for enterprise and coding tools, is expanding into productivity with its own AI-powered office suite. This move follows the hype cycle surrounding Claude Code earlier this year. Competing frontier labs like OpenAI, SpaceXSI, and Meta are now adopting similar strategies to capture high-value corporate clients. The new suite aims to integrate AI directly into daily workflows, competing with established players like Microsoft and Google. Developers should assess the security implications of integrating frontier models into sensitive corporate data.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Nvidia CEO's Affair Sparks National Security Fears",
-            "title": "Nvidia CEO's Affair With Chinese Spy Raises National Security Concerns",
-            "content": "A reported affair between Nvidia CEO Jensen Huang and an alleged Chinese spy is raising significant national security concerns. The relationship could provide Beijing with inside access to the U.S. semiconductor supply chain, which is critical for AI infrastructure. As the U.S. and China race to develop advanced AI, such vulnerabilities pose severe risks to technological dominance. This incident underscores the need for rigorous background checks for executives in strategic industries. Security agencies are likely reviewing their protocols to mitigate similar threats in the future.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
             "relatedResources": []
         }
     ],
