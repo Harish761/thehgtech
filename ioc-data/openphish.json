@@ -1,13 +1,4813 @@
 {
   "vendor": "OpenPhish",
-  "lastUpdated": "2026-11-12T12:30:03.306429+05:30",
-  "totalCount": 3382,
-  "displayedCount": 3382,
+  "lastUpdated": "2026-11-12T22:15:10.423527+05:30",
+  "totalCount": 3682,
+  "displayedCount": 3682,
   "isCapped": false,
   "cappingStrategy": null,
   "isStale": false,
   "feedStatus": "active",
   "iocs": [
+    {
+      "type": "url",
+      "indicator": "hxxp://support-center-apple[.]wasmer[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://netflix-ui-clone-vikas[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mystorage-admin-signreview[.]b-cdn[.]net/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://s4w[.]in/lPLAP",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://rentzimmer2[.]de/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]attmail8566575[.]weebly[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]biz[.]id/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]web[.]id/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://adspageactiveaccount[.]pages[.]dev/creators/appeals/submit-appeal-form/return",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://ralka-devon-biz-qenmar-soltek-sp9ct12[.]pages[.]dev/appeals/submit-appeal-form/return",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://ralka-devon-biz-qenmar-soltek-sp9ct12[.]pages[.]dev/form_submit_appeal/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://eristalon[.]pro/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://helquisto[.]pro/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://dropvault[.]top/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]eu[.]cc/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://flonaceri[.]pro/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]shop/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]qpon/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]supendsvalidmai1oul1[.]xo[.]je/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mining-auth[.]cfd/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]buzz/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://qrc[.]sh/30SlA",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pl-payu-paczka[.]bond/viewer/bWlsbGVubml1bQ/Ml8w/2eDiihr9zO",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://smarto[.]agency/privacy-policy/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://smarto[.]agency/privacy",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://facebook-sa[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://dhlsd[.]operations[.]staging[.]transporeon[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://cavnsvsb[.]xi-id[.]web[.]id/12/ue/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sprl[.]me/Aktivasi-pemulihan-akun-gopay",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://googleurlnew[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sharemyhtml[.]com/p/-9VewNTT1x",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://colorkemgroup[.]sbs/d/DOCU[.]html",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]ly/users/6287860234/profile",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://fedex[.]apple-cl0ud[.]com/delivery/failure/index?rid=wtqLXrZ",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://healthlicense-blond[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://phantom-cash[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://kucoinapp[.]pages[.]dev/index[.]html/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://pproces0-seguridax2026[.]zya[.]me/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://twh081[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://security-server-stat-e97k[.]bolt[.]host/?naps",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bcfzw4158lk-vnxldpli-8nq51d-bcf92c[.]pages[.]dev/appeals/submit-appeal-form/return/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://dawn-cherry-b805[.]rmsycheiq[.]workers[.]dev/meta-management-center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://long-term-a2dc[.]vvwueqvxdfoaxdi-566[.]workers[.]dev/meta-management-center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://billowing-frog-13b6[.]nluxsbwez[.]workers[.]dev/meta-management-center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp18ct10-lavrok-biz-zunari[.]pages[.]dev/appeals/submit-appeal-form/return/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazone-clone-eosin-two[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://spotify-clone-demo1[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://ledger-live-people[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://floral-tree-3e43[.]ljwrergshqvigle[.]workers[.]dev/meta-management-center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://carlosjosez1981-collab[.]github[.]io/verify-google/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-kavzelo-biz-vemrani[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-korvemi-biz-lazruni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-nuvlako-biz-zarkumi[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-zarkelo-biz-lumvani[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd91nwp-mtvljqwe-2j6k9g-bgr573-hwcps47vhr[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://or7hr-uan-n1gm-evgxl-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://ganm9-nne-ki87-h5e8m-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-ravmuki-biz-kelzaro[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://x4k9m2-v7q1n8-z5w3j6-p8l2[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://dhfgy5hkqlo-tjrmllos-6w9s0b-dhf27w[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd73nkw-hwcpsqwe-5i7j1d-bgr486-mtvlj82wdo-zlkyt35[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://msv97owi-yrpkw669yr-1v7t9g-fgh58p[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://bgrfd52mwp-zlkytqwe-5i3j9g-bgr286-qnkxz64nlo-hwcps78[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps81klo-qnkxz728-6j2k9d-hwc314[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://g8p7x-eey-e09h-z6jan-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://blunp-pdrif-skrop-3e92ac-kthn-flomax[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mtvlj13vzt-qnkxzfyn-7k2j5g-mtv908-hwcps39whr-zlkyt62[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-norkumi-biz-lavzelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mtvlj84qwp-xkz7n29-5v3j8l-qn61[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps82nlo-vkrpz71-mtvlj93-qnkxz46[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://bgrfd49klo-mtvljfyn-8j1k6g-bgr713[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps42xdo-mtvlj728-8i1j5d-hwc693[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps91nlo-mtvljfyn-8j3k6b-hwc527-qnkxz42vzt[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-dormeko-biz-lavzuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://bgrfd41xzt-mtvlj72nh-4i2g8k-bgr936-qnkxz85mwp[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-nuvzari-biz-dormelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://qnkxz76klo-hwcps728-3j9k5d-qnk412-mtvlj89nwp-zlkyt63[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://trzkq8c60qt-pxvbmnnx-6p1n7e-pxv800a[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-vemlori-biz-zarkuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://bgrfd71mwp-hwcpsfyn-5i9j3g-bgr826-mtvlj58xlo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://wtqpl39hwu-axcnh81fyn-8u1t7g-zm922c[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-kelravi-biz-dormako[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj58vwp-hwcpsqwe-6i2j7g-mtv934-qnkxz41[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps84xnp-mtvljfyn-1j7k5d-hwc362-qnkxz57vdo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://beefmaster-germany[.]com/bank/citi/login",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Financial Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://standardsverificationcenter[.]onrender[.]com/help",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://aplic[.]lat/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]jampack[.]it/jampack[.]it/ST27/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://echalla[.]men/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://netflix-clone-gamma[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]com[.]ss/users/3330747117/profile",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hkdiscord[.]antsoon[.]com/blog/discord-update-june-25-2026-changelog",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]ly/games/108533757090220/Garden-Tower-Defense?privateServerLinkCode=61667330459255715763832055356073",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://rss2[.]rasmes[.]at/go/y2d4v214/z274x264?label=qq",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://7p55p-oko-b9ka-52q6y-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://j0ce0-ig2-fl91-mwzfu-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://wkktg-29y-qgvc-68cxv-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://1p9ga-3kq-v46y-lcf89-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://aht8v-y0i-8772-peqcv-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj31xdo-zlkyt728-7k3j5g-mtv962[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-nuvrilo-biz-dazmelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mwkk1-3xd-v121-36mj9-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj63wdo-hwcpsqwe-5k9j2d-mtv817-qnkxz74nwp[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-norvaki-biz-dazmelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-rumzavi-biz-davkelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-rumvori-biz-davkelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-melrako-biz-nuvzari[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-kavzari-biz-rumlevo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-dormuni-biz-lavzaro[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-vemzako-biz-rulvani[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://g70p3-jxj-u68i-whk5s-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-melzavi-biz-korleko[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-kavleko-biz-zemravi[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-vazmuki-biz-ravzelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-davzuni-biz-rulmeko[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-zarkaro-biz-melvuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-kelrako-biz-nuvzuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-korvani-biz-dazruko[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-vemkaro-biz-rulzuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://meta-furaki-biz-vemaro-zununo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://qnkxz46vdo-mtvlj728-9i3g5k-qnk218-hwcps83xwp[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://fynta-zgron-xplorq-3b82fc-mskp-krulax[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://epmsi-ozd-3jj0-qtac7-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps41nwp-zlkytfyn-3j7k1d-hwc568-qnkxz85mdo-mtvlj43[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://u0dmg-gam-l1fp-f181y-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://zp5yl-w80-u3ns-pf2vy-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps53nlo-zlkytfyn-5j2k7g-hwc824-mtvlj28whr-qnkxz75[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://z0fqc-rxl-w3ej-5ea4l-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mobilelegendsdailyupdates[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://app-exdusweb[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://nav-exoodus--web3--io-com[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp25ct-qanori-biz-vemula-korzek[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://attmail8566575[.]weebly[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://couriersplease[.]addliqt[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://coinbase-advanced-trial[.]pages[.]dev/en-ca/price/ethereum",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://actualizacion-live-265--ralic40535[.]replit[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hotm[.]io/SHETZn1",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://astrosantoshji[.]com/hospital/clinic/themes/index[.]html",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mydpd[.]jwqyz[.]top/track-ch/#%252Findex",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://battery-870117[.]apple-support[.]today/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://instagram-baittouts-login[.]blogspot[.]com/?m=1",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]instagram-baittouts-login[.]blogspot[.]com/?m=1",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://jy3886[.]craftum[.]io/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://capital[.]tokenizeae[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sunrise-chdea[.]jimdofree[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://site-s2b9uctk5[.]godaddysites[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://pbu8z[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://lokk-dp8wrqsaiii2[.]edgeone[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]ahmad-netflix-portfolio-ujir[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://t44nkv[.]top/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]netflixdigital[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]superiors1electric[.]com/sharedDir/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]ly/users/7385711144/profile",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://proto-123[.]github[.]io/roblox-login/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://unison-signet-924b[.]s2506017[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://chronos-reprieve-658a[.]s2506015[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://chronos-testament-4cc2[.]s2506014[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://unison-bulwark-1f95[.]s2506018[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp10ct10-zurnek-biz-lumavi[.]pages[.]dev/send_appeal_request",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://chronos-exonerate-3ebd[.]s2506016[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://chronos-vindicate-2e31[.]s2506016[.]workers[.]dev/analysis_center/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/loans/flexipay/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/investments/existing-customers/investment-support/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/help/security-centre/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://made-ln-china[.]netlify[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/investments/existing-customers/self-invested-personal-pension/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://plata-rapida[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]coinbasedeauth[.]com/welcome[.]php",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]coinbasedeauth[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://roblox[.]com[.]et/communities/769052881/Entitle-Tight",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/financial-fitness/everyday-budgeting/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/loans/products/debt-consolidation/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://assamghnnb[.]blogspot[.]com/?m=1",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://cerralais[.]help/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]nkbihfbeogaeaoehlefnkodbefgpgkn-reset[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/credit-cards/instalment-plans/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/help/card-support/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://shopee8957[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp30ct-qavik-biz-zumer-ladex[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]netflix-help[.]syracusehousepainters[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]instagram-landing-page-clone[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]whatsapas-chat[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://boa[.]pagekite[.]me/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]clone-project-hazel[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hc[.]gosdezos[.]uk/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]hc[.]gosdezos[.]uk/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]naciomverificar-7mqh[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]facebook-landing-page-clone[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sharemyhtml[.]com/p/vC-MaudL8-?eta=phinsecurity[.]com",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sharemyhtml[.]com/p/vC-MaudL8-?eta=orix@ebaecbf41685467550ef6a684538d4423931[.]org",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://losmaterilles045254[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://netflixseoul2[.]com/join",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://netflixseoul2[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://amazon-gb-01-iont[.]std[.]epremo-akam[.]com/help/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://s4w[.]in/roblox-com-users-2352443525-profile",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://ahmad-netflix-portfolio-ujir[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://undianresmi229[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]undianresmi229[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://geocampos[.]eng[.]br/jp[.]php?uid=salor@5bf26533ef69e9ad56fe96580608a6b3277d[.]org",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://chronos-ratify-4b35[.]s2506014[.]workers[.]dev/confirm_identity_assurance/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sharemyhtml[.]com/p/J6CKy7aeKv",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]latam-online[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]nkbihfbeogaeaoehpilihpnmkls[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]poshmark-prepay[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://policy-compliance-principles[.]onrender[.]com/help",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://d33wubrfki0l68[.]cloudfront[.]net/f3acd132-152a-4ae9-8cef-761df4c3ae1f/all2krr[.]html",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd95whr-qnkxzfyn-5k1j6d-bgr673-mtvlj42xlo-hwcps85[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://u680i-y62-350w-b851j-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj76mnp-qnkxzplx-4k8j2d-mtv591-hwcps47wdo-zlkyt93[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://19mxw-tmf-w1wt-ej5ap-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://fm8lr-j17-3yeh-eus1b-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj71qdo-hwcpslpw-9i2j4g-mtv386-qnkxz53nhr-zlkyt81[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mtvlj67kdo-zlkytv84-6i3j9g-mtv328-qnkxz51whr[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://7dzlb-2bs-g5cm-erelh-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://qnkxz82nhr-zlkytlpw-7j2k6d-qnk531-mtvlj49xlo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-zemkori-biz-davluko[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-kelzumi-biz-dormavi[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp20ct-varek-biz-zunex-kemad[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://r8gj6-au1-9ab3-ki9yf-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-zemlori-biz-kavzaro[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-lumrevi-biz-nuvkalo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd54vdo-mtvljqwe-1i8j6g-bgr937[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-lavzelo-biz-korvuni[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://zsd6s-407-2o8q-ftbxe-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://oodkh-zk8-nwv7-peh9w-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://4qmix-1q7-9w46-kcyzj-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://cnxle-dey-q4ks-c0f7r-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://05bul-mut-2liu-kz5y7-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://qnkxz87kdo-hwcps728-5i9j2g-qnk341-mtvlj62xhr-zlkyt79[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-davreko-biz-zumrani[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj91mnp-qnkxzplx-5i7j3g-mtv382[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj21qwe-zlkytplx-8k1j7g-mtv635-hwcps94vdo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://gzjsm-1id-kmpb-a7g88-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp20ct-zamur-biz-kavel-vonik[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps94kzt-mtvlj728-1i4j9g-hwc356-qnkxz62vhr[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj28nhr-hwcpsqwe-4k8j1f-mtv963-qnkxz75kdo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp29ct-felvi-biz-zorun-vemra[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps52vdo-zlkyt728-6i1j8g-hwc943-qnkxz87mhr[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://wxo1m-nh3-g674-hgjx0-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://z4vsy-nu9-nxd6-elicp-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://sp12ct10-kavzuni-biz-dormelo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://4n4hr-tb8-2qnk-qo01w-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://mtvlj32qzt-qnkxzplx-6i8j3g-mtv795-hwcps48nwp[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://sp12ct10-ravzaro-biz-vemkeli[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://qnkxz28mwp-mtvljplx-4k9j2d-qnk571-hwcps63vdo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://7v6he-1mg-3ecp-lybih-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps93klo-qnkxzfyn-5j2k8d-hwc614-mtvlj37vwp[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps37mzt-qnkxz728-8j3k6d-hwc675-mtvlj91nhr-zlkyt43[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps16khr-zlkyt728-3j6k8d-hwc529-mtvlj72vdo-qnkxz64[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hwcps72nlo-mtvljfyn-8j3k5b-hwc731-qnkxz46vzt-zlkyt28[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://hwcps71mzt-qnkxz728-8j3k7d-hwc592-mtvlj84nhr[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd84nwp-mtvljqwe-2j6k8g-bgr519-hwcps93xlo-qnkxz57[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://qnkxz27mzt-zlkytfyn-6i2j8d-qnk594-hwcps83wlo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://www[.]hadiah-shopee329[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://theccguydevli[.]netlify[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://ptshopeeid88[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://webproxy[.]goku8[.]workers[.]dev/hxxps://www[.]wellsfargo[.]com/?cid=WF2200032863",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://allegrolokalnie[.]kkupteraz[.]cfd/oferta/id-3cfw6oqry5-nowa-pamiec-ram-corsair-vengeance-rgb-ddr5-32gb-ram-6000mhz/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]com[.]ml/games/1537690962/Bee-Swarm-Simulator?privateServerLinkCode=423679165514480412338637492428",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]urlvanish[.]com/7912f440",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://emkezoea[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://ptshopee2777[.]blogspot[.]com/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://cerobaioe[.]help/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://musical-youtiao-ebd643[.]netlify[.]app/p/sst-cgj/lctwghft/index[.]html",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://musical-youtiao-ebd643[.]netlify[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://io--start--tezor[.]pages[.]dev/robots[.]txt/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://43-hyper-votes[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://hyper-votes[.]xyz/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://menjadikayavip[.]org/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://rfjjsh[.]cyou/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]mondryandmondrylaw[.]com/fingh/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://www[.]roblox[.]com[.]ml/users/438557596480/profile",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://demontavi[.]pro/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://can11[.]cn/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://si[.]team-cs[.]com/lp/kma-mhc/lginusqj/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd58xzt-mtvlj63nh-4i2g7k-bgr715-qnkxz27mwp-hwcps91[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://bfqd9-mtt-vss0-hvvft-13-10-2026-aa[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj74xwp-hwcpsfyn-8k2j6g-mtv459[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://mtvlj87wkp-hwcpsfyn-5i8j3g-mtv694-qnkxz72vhr-zlkyt46[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://bgrfd51qwe-hwcpsfyn-9i3j6g-bgr824-mtvlj82nzt-qnkxz65[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://qnkxz89nlo-hwcpsfyn-1j9k5d-qnk643-mtvlj52xdo[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://flhealthlicense[.]vercel[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://astroboy0905[.]github[.]io/netflix-replica[.]/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://request-labelt-135342[.]pages[.]dev/help/contact/230523991941474",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://roblox[.]et/communities/7480665072/steezys-studios%23!/about",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://secure-server-hub--mudarhakkaniii[.]replit[.]app/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://1chronos-keystone-e127[.]s2506016[.]workers[.]dev/review_access_delegation/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://poshmark[.]86262838[.]com/261305874",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://webproxy[.]goku8[.]workers[.]dev/hxxp://www[.]wellsfargo[.]com/checking/premier/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://webproxy[.]goku8[.]workers[.]dev/hxxp://www[.]wellsfargo[.]com/mobile-online-banking/transfer-pay/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Financial Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://webproxy[.]goku8[.]workers[.]dev/hxxp://www[.]wellsfargo[.]com/auto-loans/vehicle-financing-101/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://2m29d-6lf-7gqk-56luf-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://7phra-s7s-osbq-ve3e6-14-09-2026-hh[.]pages[.]dev/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://roblox[.]com[.]ss/communities/4024941391/CaramelPanda420",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://security-server-website--ukbuildersandco[.]replit[.]app/#toron2@3bea5016886edefe310f3191bbbeadd89e01[.]net",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://metacoinlogin[.]gitbook[.]io/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxp://zd[.]lc/I0SnL",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://io-trezor-start[.]zapier[.]app/start-io",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://login[.]wazto[.]autos/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
+    {
+      "type": "url",
+      "indicator": "hxxps://de[.]answers[.]quantarchive[.]com/question/index/",
+      "description": "Active phishing URL",
+      "timestamp": "2026-11-12 22:15 UTC",
+      "source": "OpenPhish",
+      "sourceUrl": "https://openphish.com/",
+      "analysisTime": "2026-11-12 22:15 IST",
+      "tags": [
+        "phishing",
+        "live"
+      ],
+      "addedAt": "2026-11-12T22:15:01.037233+05:30",
+      "campaign": "Generic Phishing",
+      "confidence": "High (Active Feed)"
+    },
     {
       "type": "url",
       "indicator": "hxxp://6oktsarv[.]kcppg[.]com/",
