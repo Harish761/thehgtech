@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-11-11T19:17:43.627035+00:00",
-  "last_updated_formatted": "Nov 11, 2026 19:17 UTC",
+  "last_updated": "2026-11-12T05:59:18.934360+00:00",
+  "last_updated_formatted": "Nov 12, 2026 05:59 UTC",
   "period": "Last 7 days",
   "provenance": "Aggregated dark web extortion notices via Ransomware.live telemetry",
   "verification_note": "Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.",
   "total_groups": 37,
   "total_victims": 200,
-  "disclosures_24h": 41,
-  "disclosures_today": 34,
+  "disclosures_24h": 31,
+  "disclosures_today": 0,
   "top_threat_actor": "N0N",
   "top_target_sector": "Healthcare",
-  "top_target_sector_sub": "14 disclosures (34% unclassified)",
+  "top_target_sector_sub": "18 disclosures (28% unclassified)",
   "sector_coverage": {
     "total_records": 200,
-    "classified_count": 132,
-    "unclassified_count": 68,
-    "unclassified_percent": 34.0
+    "classified_count": 144,
+    "unclassified_count": 56,
+    "unclassified_percent": 28.0
   },
   "groups": [
     {
       "name": "N0N",
-      "count": 72,
+      "count": 71,
       "victims": [
         {
           "id": "820a89a3b1ce",
@@ -1086,21 +1086,6 @@
           "status": "PENDING EXPOSURE",
           "description_snippet": "payment card network and services · United States | [PENDING EXPOSURE]",
           "source": "ransomware.live/rss"
-        },
-        {
-          "id": "0136612d7c1f",
-          "group_name": "N0n",
-          "victim_name": "Expedia Group, Inc.",
-          "discovered": "2026-11-09T00:52:31+00:00",
-          "discovered_date": "2026-11-09",
-          "post_url": "https://www.ransomware.live/id/RXhwZWRpYSBHcm91cCwgSW5jLkBOMG4",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Online Travel And Consumer Loyalty",
-          "domain": null,
-          "status": "NOT PAID — EXPOSED",
-          "description_snippet": "online travel and consumer loyalty · United States | Loyalty program account tables: 830,069,282 rows across 800 files, holding consumer email addresses, member identifiers, point balances in 21 curre",
-          "source": "ransomware.live/rss"
         }
       ],
       "industries": [
@@ -1153,7 +1138,6 @@
         "Online Fashion And Lifestyle Marketplace Retail",
         "Online Grocery Delivery",
         "Online Health And Wellness Retail",
-        "Online Travel And Consumer Loyalty",
         "Outdoor Apparel Retail",
         "Payment Card Network And Services",
         "Pharmaceutical",
@@ -1205,28 +1189,28 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 72,
+        "last_3_days": 71,
         "prior_3_days": 0
       },
       "daily_counts": [
         0,
         0,
         0,
-        0,
-        67,
+        66,
         1,
-        4
+        4,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
-      "first_seen": "2026-11-09T00:52:31+00:00",
+      "first_seen": "2026-11-09T09:26:16+00:00",
       "last_seen": "2026-11-11T18:00:30+00:00"
     },
     {
@@ -1529,18 +1513,18 @@
         0,
         0,
         0,
-        0,
         17,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T04:43:53+00:00",
       "last_seen": "2026-11-10T12:54:38+00:00"
@@ -1784,18 +1768,18 @@
         0,
         0,
         0,
-        0,
         14,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T04:49:12+00:00",
       "last_seen": "2026-11-10T04:57:08+00:00"
@@ -2010,18 +1994,18 @@
         0,
         0,
         0,
-        0,
         11,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T07:05:39+00:00",
       "last_seen": "2026-11-11T00:43:34+00:00"
@@ -2039,7 +2023,7 @@
           "post_url": "https://www.ransomware.live/id/c2FjaGVtaW5jLmNvbUBDdXJpb3VzIFdvcm0",
           "country": "Canada",
           "country_code": "CA",
-          "sector": null,
+          "sector": "Manufacturing",
           "domain": "sacheminc.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $225M | SACHEM, Inc. is a global leader in high-purity chemical solutions, specializing in the production of precise and pure products for various applications. The company o",
@@ -2054,7 +2038,7 @@
           "post_url": "https://www.ransomware.live/id/c2Jobnkub3JnQEN1cmlvdXMgV29ybQ",
           "country": "United States",
           "country_code": "US",
-          "sector": null,
+          "sector": "Not Found",
           "domain": "sbhny.org",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $356M | SBH Health System provides nonsectarian, and acute care, and community hospital care services. SBH Health System is based in the Bronx",
@@ -2069,7 +2053,7 @@
           "post_url": "https://www.ransomware.live/id/c2hhbm5vbmhlYWx0aC5jb21AQ3VyaW91cyBXb3Jt",
           "country": "Ireland",
           "country_code": "IE",
-          "sector": null,
+          "sector": "Healthcare",
           "domain": "shannonhealth.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $157M | Shannon Medical Center is a community-owned health system in West Texas, dedicated to providing exceptional healthcare services to residents.",
@@ -2084,7 +2068,7 @@
           "post_url": "https://www.ransomware.live/id/YmFyb25hbmRidWRkLmNvbUBDdXJpb3VzIFdvcm0",
           "country": "United Kingdom",
           "country_code": "GB",
-          "sector": null,
+          "sector": "Professional Services",
           "domain": "baronandbudd.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $31M | Baron & Budd is a prominent plaintiffs law firm specializing in mesothelioma cases, class actions, and drug injury claims. With over four decades of experience, they a",
@@ -2099,7 +2083,7 @@
           "post_url": "https://www.ransomware.live/id/cmFsZWlnaG9ydGhvLmNvbUBDdXJpb3VzIFdvcm0",
           "country": "United States",
           "country_code": "US",
-          "sector": null,
+          "sector": "Healthcare",
           "domain": "raleighortho.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $30M | Raleigh Orthopaedic is a leading provider of comprehensive orthopedic care in Wake County, NC, offering both conservative and surgical treatment options. With over 100",
@@ -2114,7 +2098,7 @@
           "post_url": "https://www.ransomware.live/id/bGlmZWxpbmVzY3JlZW5pbmcuY29tQEN1cmlvdXMgV29ybQ",
           "country": "United States",
           "country_code": "US",
-          "sector": null,
+          "sector": "Healthcare",
           "domain": "lifelinescreening.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $30M | Since 1993, Life Line Screening has brought clinical-grade preventive testing to communities across America. More than 11 million people have trusted us with their hea",
@@ -2129,7 +2113,7 @@
           "post_url": "https://www.ransomware.live/id/c2FmY29kZW50YWwuY29tQEN1cmlvdXMgV29ybQ",
           "country": "Saudi Arabia",
           "country_code": "SA",
-          "sector": null,
+          "sector": "Healthcare",
           "domain": "safcodental.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $47M | Safco Dental Supply LLC specializes in providing a wide range of dental supplies, products, and equipment, including restorative and cosmetic dentistry supplies, endod",
@@ -2144,7 +2128,7 @@
           "post_url": "https://www.ransomware.live/id/bWFycXVpc2NvbXBhbmllcy5jb21AQ3VyaW91cyBXb3Jt",
           "country": "United States",
           "country_code": "US",
-          "sector": null,
+          "sector": "Professional Services",
           "domain": "marquiscompanies.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $590M | Marquis Companies is a family-owned provider of senior living and care solutions, offering a range of services including assisted living, memory care, post hospital c",
@@ -2159,14 +2143,20 @@
           "post_url": "https://www.ransomware.live/id/YXRsYXNocC5jb21AQ3VyaW91cyBXb3Jt",
           "country": null,
           "country_code": null,
-          "sector": null,
+          "sector": "Technology",
           "domain": "atlashp.com",
           "status": null,
           "description_snippet": "Status: Leaked | Revenue: $19M | Atlas Healthcare Partners specializes in partnering with health systems and physicians to develop, manage, and invest in Ambulatory Surgery Centers (ASCs). They are re",
           "source": "ransomware.live/rss"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Healthcare",
+        "Manufacturing",
+        "Not Found",
+        "Professional Services",
+        "Technology"
+      ],
       "countries": [
         "Canada",
         "Ireland",
@@ -2193,17 +2183,17 @@
         0,
         0,
         0,
-        0,
-        9
+        9,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T17:06:34+00:00",
       "last_seen": "2026-11-11T17:13:08+00:00"
@@ -2359,17 +2349,17 @@
         0,
         0,
         0,
-        0,
-        8
+        8,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T08:15:49+00:00",
       "last_seen": "2026-11-11T10:57:35+00:00"
@@ -2493,19 +2483,19 @@
         0,
         0,
         0,
-        0,
         5,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T09:05:17+00:00",
       "last_seen": "2026-11-10T13:34:23+00:00"
@@ -2631,21 +2621,127 @@
         0,
         0,
         0,
-        0,
         6,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T12:50:49+00:00",
       "last_seen": "2026-11-10T12:52:35+00:00"
+    },
+    {
+      "name": "Play",
+      "count": 4,
+      "victims": [
+        {
+          "id": "19b1e27c8a25",
+          "group_name": "Play",
+          "victim_name": "Minor League Baseball",
+          "discovered": "2026-11-11T20:19:30+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/TWlub3IgTGVhZ3VlIEJhc2ViYWxsQHBsYXk",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Hospitality",
+          "domain": "www.milb.com",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "9c42885906db",
+          "group_name": "Play",
+          "victim_name": "NY Snacks",
+          "discovered": "2026-11-10T19:41:23+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/TlkgU25hY2tzQHBsYXk",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Retail & E-Commerce",
+          "domain": "www.nysnacks.com",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "ac53964e2290",
+          "group_name": "Play",
+          "victim_name": "BROTHERS EXPRESS LLC",
+          "discovered": "2026-11-10T19:40:48+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/QlJPVEhFUlMgRVhQUkVTUyBMTENAcGxheQ",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Transportation",
+          "domain": "www.broexp.com",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "eff883da17b6",
+          "group_name": "Play",
+          "victim_name": "Signworx",
+          "discovered": "2026-11-10T19:39:54+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/U2lnbndvcnhAcGxheQ",
+          "country": "United Kingdom",
+          "country_code": "GB",
+          "sector": "Other",
+          "domain": "www.signworx.net",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Hospitality",
+        "Other",
+        "Retail & E-Commerce",
+        "Transportation"
+      ],
+      "countries": [
+        "United Kingdom",
+        "United States"
+      ],
+      "country_codes": [
+        "GB",
+        "US"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 4,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-06",
+        "2026-11-07",
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12"
+      ],
+      "first_seen": "2026-11-10T19:39:54+00:00",
+      "last_seen": "2026-11-11T20:19:30+00:00"
     },
     {
       "name": "Silentransomgroup",
@@ -2732,19 +2828,19 @@
         0,
         0,
         0,
+        2,
+        2,
         0,
-        2,
-        2,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T19:06:39+00:00",
       "last_seen": "2026-11-10T18:52:11+00:00"
@@ -2837,19 +2933,19 @@
         0,
         0,
         0,
+        2,
+        2,
         0,
-        2,
-        2,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T15:50:50+00:00",
       "last_seen": "2026-11-10T18:21:10+00:00"
@@ -2942,19 +3038,19 @@
         0,
         0,
         0,
-        0,
         4,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T09:21:01+00:00",
       "last_seen": "2026-11-09T09:22:49+00:00"
@@ -3032,17 +3128,17 @@
         0,
         0,
         0,
-        0,
-        3
+        3,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T12:39:29+00:00",
       "last_seen": "2026-11-11T18:38:42+00:00"
@@ -3119,17 +3215,17 @@
         0,
         0,
         0,
-        0,
-        3
+        3,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T13:41:37+00:00",
       "last_seen": "2026-11-11T13:42:18+00:00"
@@ -3206,112 +3302,22 @@
         0,
         0,
         0,
-        0,
         2,
         0,
-        1
-      ],
-      "daily_labels": [
-        "2026-11-05",
-        "2026-11-06",
-        "2026-11-07",
-        "2026-11-08",
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11"
-      ],
-      "first_seen": "2026-11-09T12:20:40+00:00",
-      "last_seen": "2026-11-11T09:51:11+00:00"
-    },
-    {
-      "name": "Play",
-      "count": 3,
-      "victims": [
-        {
-          "id": "9c42885906db",
-          "group_name": "Play",
-          "victim_name": "NY Snacks",
-          "discovered": "2026-11-10T19:41:23+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TlkgU25hY2tzQHBsYXk",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Retail & E-Commerce",
-          "domain": "www.nysnacks.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "ac53964e2290",
-          "group_name": "Play",
-          "victim_name": "BROTHERS EXPRESS LLC",
-          "discovered": "2026-11-10T19:40:48+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QlJPVEhFUlMgRVhQUkVTUyBMTENAcGxheQ",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Transportation",
-          "domain": "www.broexp.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "eff883da17b6",
-          "group_name": "Play",
-          "victim_name": "Signworx",
-          "discovered": "2026-11-10T19:39:54+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U2lnbndvcnhAcGxheQ",
-          "country": "United Kingdom",
-          "country_code": "GB",
-          "sector": "Other",
-          "domain": "www.signworx.net",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Other",
-        "Retail & E-Commerce",
-        "Transportation"
-      ],
-      "countries": [
-        "United Kingdom",
-        "United States"
-      ],
-      "country_codes": [
-        "GB",
-        "US"
-      ],
-      "trend": "up",
-      "trend_label": "Accelerating",
-      "recent_velocity": {
-        "last_3_days": 3,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        3,
+        1,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
-      "first_seen": "2026-11-10T19:39:54+00:00",
-      "last_seen": "2026-11-10T19:41:23+00:00"
+      "first_seen": "2026-11-09T12:20:40+00:00",
+      "last_seen": "2026-11-11T09:51:11+00:00"
     },
     {
       "name": "Black X",
@@ -3386,21 +3392,88 @@
         0,
         0,
         0,
-        0,
         3,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T04:56:53+00:00",
       "last_seen": "2026-11-10T04:58:13+00:00"
+    },
+    {
+      "name": "Medusalocker",
+      "count": 2,
+      "victims": [
+        {
+          "id": "529b7bf954ce",
+          "group_name": "Medusalocker",
+          "victim_name": "Dep",
+          "discovered": "2026-11-11T22:01:37+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/RGVwQG1lZHVzYWxvY2tlcg",
+          "country": null,
+          "country_code": null,
+          "sector": "Not Found",
+          "domain": null,
+          "status": null,
+          "description_snippet": "THERMO GROUP, C.A. wholesales pharmaceutical products and medical supplies, as evidenced by its financial transactions with FarmaTodo, C.A., including sales commission reports and income tax withholdi",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "879e48761cba",
+          "group_name": "Medusalocker",
+          "victim_name": "Capetown",
+          "discovered": "2026-11-10T22:57:49+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/Q2FwZXRvd25AbWVkdXNhbG9ja2Vy",
+          "country": null,
+          "country_code": null,
+          "sector": "Not Found",
+          "domain": null,
+          "status": null,
+          "description_snippet": "DSV provides logistics, transportation, and supply chain services, including sea, air, and road freight as well as warehousing and customs services.",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [],
+      "country_codes": [],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-06",
+        "2026-11-07",
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12"
+      ],
+      "first_seen": "2026-11-10T22:57:49+00:00",
+      "last_seen": "2026-11-11T22:01:37+00:00"
     },
     {
       "name": "Everstake",
@@ -3415,7 +3488,7 @@
           "post_url": "https://www.ransomware.live/id/a2kqKioqKm8uY29tQGV2ZXJzdGFrZQ",
           "country": null,
           "country_code": null,
-          "sector": null,
+          "sector": "Not Found",
           "domain": null,
           "status": null,
           "description_snippet": "Industrial Machinery & Equipment",
@@ -3438,6 +3511,7 @@
         }
       ],
       "industries": [
+        "Not Found",
         "Retail & E-Commerce"
       ],
       "countries": [
@@ -3456,19 +3530,19 @@
         0,
         0,
         0,
-        0,
         1,
         0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T15:16:03+00:00",
       "last_seen": "2026-11-11T17:10:25+00:00"
@@ -3529,19 +3603,19 @@
         0,
         0,
         0,
-        0,
         1,
         0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T00:55:15+00:00",
       "last_seen": "2026-11-11T01:32:33+00:00"
@@ -3604,18 +3678,18 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T19:51:31+00:00",
       "last_seen": "2026-11-10T19:52:18+00:00"
@@ -3677,95 +3751,22 @@
         0,
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T16:52:56+00:00",
       "last_seen": "2026-11-10T18:24:14+00:00"
-    },
-    {
-      "name": "Orova",
-      "count": 2,
-      "victims": [
-        {
-          "id": "65a1f8d85e16",
-          "group_name": "Orova",
-          "victim_name": "Herminio India Precision Technology",
-          "discovered": "2026-11-10T16:58:23+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/SGVybWluaW8gSW5kaWEgUHJlY2lzaW9uIFRlY2hub2xvZ3lAT3JvdmE",
-          "country": "India",
-          "country_code": "IN",
-          "sector": "Manufacturing",
-          "domain": "herminiogroup.com",
-          "status": null,
-          "description_snippet": "HERMINIO is a leading manufacturer of precision components catering to different segments including Automobiles, Refrigeration, Air Conditioning, Brake, Air & Gas.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "e5817da2d714",
-          "group_name": "Orova",
-          "victim_name": "IE & E Industries",
-          "discovered": "2026-11-09T00:53:07+00:00",
-          "discovered_date": "2026-11-09",
-          "post_url": "https://www.ransomware.live/id/SUUgJiBFIEluZHVzdHJpZXNAT3JvdmE",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "At IE & E, we are committed to providing our customers with the best mechanical and electromechanical engineering services, advanced metrology services for all industries, and standard optical compara",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Manufacturing"
-      ],
-      "countries": [
-        "India",
-        "United States"
-      ],
-      "country_codes": [
-        "IN",
-        "US"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        1,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-05",
-        "2026-11-06",
-        "2026-11-07",
-        "2026-11-08",
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11"
-      ],
-      "first_seen": "2026-11-09T00:53:07+00:00",
-      "last_seen": "2026-11-10T16:58:23+00:00"
     },
     {
       "name": "Vexy Ransomware",
@@ -3819,19 +3820,19 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T19:08:05+00:00",
       "last_seen": "2026-11-09T19:08:25+00:00"
@@ -3893,19 +3894,19 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T18:53:36+00:00",
       "last_seen": "2026-11-09T18:54:40+00:00"
@@ -3967,19 +3968,19 @@
         0,
         0,
         0,
-        0,
         2,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T11:44:59+00:00",
       "last_seen": "2026-11-09T11:45:38+00:00"
@@ -4023,17 +4024,17 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T18:39:40+00:00",
       "last_seen": "2026-11-11T18:39:40+00:00"
@@ -4051,14 +4052,16 @@
           "post_url": "https://www.ransomware.live/id/SyoqKiogVCoqKiogSCoqKiogQioqKipARG9vbW1hZ2VkZG9u",
           "country": null,
           "country_code": null,
-          "sector": null,
+          "sector": "Not Found",
           "domain": null,
           "status": null,
           "description_snippet": "Status: upcoming | Deadline: 2026-11-20T00:00:00Z",
           "source": "ransomware.live/rss"
         }
       ],
-      "industries": [],
+      "industries": [
+        "Not Found"
+      ],
       "countries": [],
       "country_codes": [],
       "trend": "insufficient_data",
@@ -4073,17 +4076,17 @@
         0,
         0,
         0,
-        0,
-        1
+        1,
+        0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-11T17:52:05+00:00",
       "last_seen": "2026-11-11T17:52:05+00:00"
@@ -4127,72 +4130,20 @@
         0,
         0,
         0,
-        0,
-        1
-      ],
-      "daily_labels": [
-        "2026-11-05",
-        "2026-11-06",
-        "2026-11-07",
-        "2026-11-08",
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11"
-      ],
-      "first_seen": "2026-11-11T00:42:48+00:00",
-      "last_seen": "2026-11-11T00:42:48+00:00"
-    },
-    {
-      "name": "Medusalocker",
-      "count": 1,
-      "victims": [
-        {
-          "id": "879e48761cba",
-          "group_name": "Medusalocker",
-          "victim_name": "Capetown",
-          "discovered": "2026-11-10T22:57:49+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/Q2FwZXRvd25AbWVkdXNhbG9ja2Vy",
-          "country": null,
-          "country_code": null,
-          "sector": "Not Found",
-          "domain": null,
-          "status": null,
-          "description_snippet": "DSV provides logistics, transportation, and supply chain services, including sea, air, and road freight as well as warehousing and customs services.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Not Found"
-      ],
-      "countries": [],
-      "country_codes": [],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
         1,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
-      "first_seen": "2026-11-10T22:57:49+00:00",
-      "last_seen": "2026-11-10T22:57:49+00:00"
+      "first_seen": "2026-11-11T00:42:48+00:00",
+      "last_seen": "2026-11-11T00:42:48+00:00"
     },
     {
       "name": "Bravox",
@@ -4234,21 +4185,77 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-10T20:19:10+00:00",
       "last_seen": "2026-11-10T20:19:10+00:00"
+    },
+    {
+      "name": "Orova",
+      "count": 1,
+      "victims": [
+        {
+          "id": "65a1f8d85e16",
+          "group_name": "Orova",
+          "victim_name": "Herminio India Precision Technology",
+          "discovered": "2026-11-10T16:58:23+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/SGVybWluaW8gSW5kaWEgUHJlY2lzaW9uIFRlY2hub2xvZ3lAT3JvdmE",
+          "country": "India",
+          "country_code": "IN",
+          "sector": "Manufacturing",
+          "domain": "herminiogroup.com",
+          "status": null,
+          "description_snippet": "HERMINIO is a leading manufacturer of precision components catering to different segments including Automobiles, Refrigeration, Air Conditioning, Brake, Air & Gas.",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Manufacturing"
+      ],
+      "countries": [
+        "India"
+      ],
+      "country_codes": [
+        "IN"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-06",
+        "2026-11-07",
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12"
+      ],
+      "first_seen": "2026-11-10T16:58:23+00:00",
+      "last_seen": "2026-11-10T16:58:23+00:00"
     },
     {
       "name": "Iah6477",
@@ -4285,19 +4292,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T23:22:45+00:00",
       "last_seen": "2026-11-09T23:22:45+00:00"
@@ -4337,19 +4344,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T19:05:21+00:00",
       "last_seen": "2026-11-09T19:05:21+00:00"
@@ -4391,19 +4398,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T18:52:16+00:00",
       "last_seen": "2026-11-09T18:52:16+00:00"
@@ -4447,19 +4454,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T17:27:39+00:00",
       "last_seen": "2026-11-09T17:27:39+00:00"
@@ -4497,19 +4504,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T12:44:03+00:00",
       "last_seen": "2026-11-09T12:44:03+00:00"
@@ -4551,19 +4558,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T11:46:57+00:00",
       "last_seen": "2026-11-09T11:46:57+00:00"
@@ -4601,19 +4608,19 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T11:08:38+00:00",
       "last_seen": "2026-11-09T11:08:38+00:00"
@@ -4651,25 +4658,55 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0
       ],
       "daily_labels": [
-        "2026-11-05",
         "2026-11-06",
         "2026-11-07",
         "2026-11-08",
         "2026-11-09",
         "2026-11-10",
-        "2026-11-11"
+        "2026-11-11",
+        "2026-11-12"
       ],
       "first_seen": "2026-11-09T03:59:31+00:00",
       "last_seen": "2026-11-09T03:59:31+00:00"
     }
   ],
   "victims": [
+    {
+      "id": "529b7bf954ce",
+      "group_name": "Medusalocker",
+      "victim_name": "Dep",
+      "discovered": "2026-11-11T22:01:37+00:00",
+      "discovered_date": "2026-11-11",
+      "post_url": "https://www.ransomware.live/id/RGVwQG1lZHVzYWxvY2tlcg",
+      "country": null,
+      "country_code": null,
+      "sector": "Not Found",
+      "domain": null,
+      "status": null,
+      "description_snippet": "THERMO GROUP, C.A. wholesales pharmaceutical products and medical supplies, as evidenced by its financial transactions with FarmaTodo, C.A., including sales commission reports and income tax withholdi",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "19b1e27c8a25",
+      "group_name": "Play",
+      "victim_name": "Minor League Baseball",
+      "discovered": "2026-11-11T20:19:30+00:00",
+      "discovered_date": "2026-11-11",
+      "post_url": "https://www.ransomware.live/id/TWlub3IgTGVhZ3VlIEJhc2ViYWxsQHBsYXk",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Hospitality",
+      "domain": "www.milb.com",
+      "status": null,
+      "description_snippet": "United States",
+      "source": "ransomware.live/rss"
+    },
     {
       "id": "2064f1d7f58b",
       "group_name": "Settra",
@@ -4739,7 +4776,7 @@
       "post_url": "https://www.ransomware.live/id/SyoqKiogVCoqKiogSCoqKiogQioqKipARG9vbW1hZ2VkZG9u",
       "country": null,
       "country_code": null,
-      "sector": null,
+      "sector": "Not Found",
       "domain": null,
       "status": null,
       "description_snippet": "Status: upcoming | Deadline: 2026-11-20T00:00:00Z",
@@ -4754,7 +4791,7 @@
       "post_url": "https://www.ransomware.live/id/c2FjaGVtaW5jLmNvbUBDdXJpb3VzIFdvcm0",
       "country": "Canada",
       "country_code": "CA",
-      "sector": null,
+      "sector": "Manufacturing",
       "domain": "sacheminc.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $225M | SACHEM, Inc. is a global leader in high-purity chemical solutions, specializing in the production of precise and pure products for various applications. The company o",
@@ -4769,7 +4806,7 @@
       "post_url": "https://www.ransomware.live/id/c2Jobnkub3JnQEN1cmlvdXMgV29ybQ",
       "country": "United States",
       "country_code": "US",
-      "sector": null,
+      "sector": "Not Found",
       "domain": "sbhny.org",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $356M | SBH Health System provides nonsectarian, and acute care, and community hospital care services. SBH Health System is based in the Bronx",
@@ -4784,7 +4821,7 @@
       "post_url": "https://www.ransomware.live/id/c2hhbm5vbmhlYWx0aC5jb21AQ3VyaW91cyBXb3Jt",
       "country": "Ireland",
       "country_code": "IE",
-      "sector": null,
+      "sector": "Healthcare",
       "domain": "shannonhealth.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $157M | Shannon Medical Center is a community-owned health system in West Texas, dedicated to providing exceptional healthcare services to residents.",
@@ -4799,7 +4836,7 @@
       "post_url": "https://www.ransomware.live/id/YmFyb25hbmRidWRkLmNvbUBDdXJpb3VzIFdvcm0",
       "country": "United Kingdom",
       "country_code": "GB",
-      "sector": null,
+      "sector": "Professional Services",
       "domain": "baronandbudd.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $31M | Baron & Budd is a prominent plaintiffs law firm specializing in mesothelioma cases, class actions, and drug injury claims. With over four decades of experience, they a",
@@ -4814,7 +4851,7 @@
       "post_url": "https://www.ransomware.live/id/a2kqKioqKm8uY29tQGV2ZXJzdGFrZQ",
       "country": null,
       "country_code": null,
-      "sector": null,
+      "sector": "Not Found",
       "domain": null,
       "status": null,
       "description_snippet": "Industrial Machinery & Equipment",
@@ -4829,7 +4866,7 @@
       "post_url": "https://www.ransomware.live/id/cmFsZWlnaG9ydGhvLmNvbUBDdXJpb3VzIFdvcm0",
       "country": "United States",
       "country_code": "US",
-      "sector": null,
+      "sector": "Healthcare",
       "domain": "raleighortho.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $30M | Raleigh Orthopaedic is a leading provider of comprehensive orthopedic care in Wake County, NC, offering both conservative and surgical treatment options. With over 100",
@@ -4844,7 +4881,7 @@
       "post_url": "https://www.ransomware.live/id/bGlmZWxpbmVzY3JlZW5pbmcuY29tQEN1cmlvdXMgV29ybQ",
       "country": "United States",
       "country_code": "US",
-      "sector": null,
+      "sector": "Healthcare",
       "domain": "lifelinescreening.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $30M | Since 1993, Life Line Screening has brought clinical-grade preventive testing to communities across America. More than 11 million people have trusted us with their hea",
@@ -4859,7 +4896,7 @@
       "post_url": "https://www.ransomware.live/id/c2FmY29kZW50YWwuY29tQEN1cmlvdXMgV29ybQ",
       "country": "Saudi Arabia",
       "country_code": "SA",
-      "sector": null,
+      "sector": "Healthcare",
       "domain": "safcodental.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $47M | Safco Dental Supply LLC specializes in providing a wide range of dental supplies, products, and equipment, including restorative and cosmetic dentistry supplies, endod",
@@ -4874,7 +4911,7 @@
       "post_url": "https://www.ransomware.live/id/bWFycXVpc2NvbXBhbmllcy5jb21AQ3VyaW91cyBXb3Jt",
       "country": "United States",
       "country_code": "US",
-      "sector": null,
+      "sector": "Professional Services",
       "domain": "marquiscompanies.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $590M | Marquis Companies is a family-owned provider of senior living and care solutions, offering a range of services including assisted living, memory care, post hospital c",
@@ -4889,7 +4926,7 @@
       "post_url": "https://www.ransomware.live/id/YXRsYXNocC5jb21AQ3VyaW91cyBXb3Jt",
       "country": null,
       "country_code": null,
-      "sector": null,
+      "sector": "Technology",
       "domain": "atlashp.com",
       "status": null,
       "description_snippet": "Status: Leaked | Revenue: $19M | Atlas Healthcare Partners specializes in partnering with health systems and physicians to develop, manage, and invest in Ambulatory Surgery Centers (ASCs). They are re",
@@ -7638,36 +7675,6 @@
       "domain": null,
       "status": null,
       "description_snippet": "Grupa ABS is a company that operates in the Environmental Services industry. It employs 6-10 people and has $1M-$5M of revenue. The company is headquartered in Czestochowa, Silesian Voivodeship, Polan",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "e5817da2d714",
-      "group_name": "Orova",
-      "victim_name": "IE & E Industries",
-      "discovered": "2026-11-09T00:53:07+00:00",
-      "discovered_date": "2026-11-09",
-      "post_url": "https://www.ransomware.live/id/SUUgJiBFIEluZHVzdHJpZXNAT3JvdmE",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "At IE & E, we are committed to providing our customers with the best mechanical and electromechanical engineering services, advanced metrology services for all industries, and standard optical compara",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "0136612d7c1f",
-      "group_name": "N0n",
-      "victim_name": "Expedia Group, Inc.",
-      "discovered": "2026-11-09T00:52:31+00:00",
-      "discovered_date": "2026-11-09",
-      "post_url": "https://www.ransomware.live/id/RXhwZWRpYSBHcm91cCwgSW5jLkBOMG4",
-      "country": "United States",
-      "country_code": "US",
-      "sector": "Online Travel And Consumer Loyalty",
-      "domain": null,
-      "status": "NOT PAID — EXPOSED",
-      "description_snippet": "online travel and consumer loyalty · United States | Loyalty program account tables: 830,069,282 rows across 800 files, holding consumer email addresses, member identifiers, point balances in 21 curre",
       "source": "ransomware.live/rss"
     }
   ]
