@@ -1,12 +1,12 @@
 {
   "vendor": "SSL Blacklist",
-  "lastUpdated": "2026-11-12T22:15:11.045128+05:30",
-  "totalCount": 11240,
-  "displayedCount": 11240,
+  "lastUpdated": "2026-11-13T05:17:20.309425+05:30",
+  "totalCount": 11239,
+  "displayedCount": 11239,
   "isCapped": false,
   "cappingStrategy": null,
-  "isStale": false,
-  "feedStatus": "active",
+  "isStale": true,
+  "feedStatus": "stale",
   "iocs": [
     {
       "type": "ssl-cert",
@@ -1502,23 +1502,6 @@
       ],
       "addedAt": "2026-11-06T21:22:06.914714+05:30",
       "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "788de1386a4226d0993c1434a2d820bc1259b88e",
-      "description": "Malicious SSL certificate - PureLogsStealer C&C",
-      "timestamp": "2026-11-05 16:25:51",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-12 22:15 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-06T03:25:40.759743+05:30",
-      "campaign": "PureLogsStealer",
       "confidence": "High"
     },
     {
