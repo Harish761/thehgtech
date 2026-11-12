@@ -5,29 +5,101 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 12 2026",
+            "headline": "Windows Zero-Day Grants SYSTEM Access via CLFS",
+            "title": "Public SignDrop Exploit Targets Windows CLFS Driver for SYSTEM Privileges",
+            "content": "Public exploit code called SignDrop allows local Windows users to escalate privileges to SYSTEM by abusing a log-authentication feature in the Common Log File System (CLFS) driver, clfs.sys. The proof of concept targets a feature added to the driver last year, demonstrating how companion file creation can be abused for local privilege escalation. This vulnerability poses a critical risk to enterprise Windows environments, as SYSTEM-level access enables complete system compromise. Security professionals must ensure all Windows systems are patched to the latest versions to mitigate this threat.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Red Hat Quay Flaw Exposes All Private Container Images",
+            "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images",
+            "content": "A critical flaw in Red Hat Quay allows attackers to read and overwrite private container images across all repositories, even without a valid account when anonymous access is enabled. When anonymous access is disabled, any authenticated user can exploit the vulnerability to compromise the entire registry. This flaw exposes sensitive proprietary software and data to unauthorized modification or theft, severely impacting CI/CD pipelines and supply chain security. Organizations using Red Hat Quay should immediately update to the patched version and review access controls.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Citrix Patches 12 NetScaler and Secure Access Client Flaws",
+            "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+            "content": "Citrix has released patches for 12 critical security flaws impacting NetScaler ADC, NetScaler Gateway, and NetScaler Console, including an authentication bypass. These vulnerabilities could allow unauthenticated attackers to execute arbitrary code or cause denial-of-service (DoS) conditions on affected systems. The authentication bypass specifically enables threat actors to gain unauthorized access to sensitive network resources and administrative interfaces. Security teams must apply the available patches immediately to prevent potential exploitation and network compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Apache Patches Critical RCE in HTTP Server",
+            "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+            "content": "The Apache HTTP Server has patched a critical remote code execution (RCE) vulnerability, CVE-2026-119618, found by researchers at Anthropic and Google. The mod_http2 race condition could allow unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. This vulnerability poses a severe risk to web infrastructure, as it allows complete server compromise without requiring valid credentials. Administrators must update to the latest patched version of Apache to mitigate this critical threat.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "SCKit Malware Exploits ScreenConnect for MSP Attacks",
+            "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+            "content": "The ongoing SCKit malware campaign targets ConnectWise ScreenConnect deployments by exploiting a now-patched critical vulnerability in the remote access software. Blackpoint Cyber's Adversary Pursuit Group (APG) identified that threat actors are leveraging the flaw to gain initial access to Managed Service Provider (MSP) environments. This attack path allows adversaries to compromise multiple client networks through a single vulnerable entry point. MSPs must ensure ScreenConnect is fully patched and implement strict network segmentation to prevent lateral movement.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "N-central Exploits Bypass Patches—Root RCE Found",
+            "title": "N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+            "content": "N-able is investigating claims of additional vulnerabilities in N-central on-premise versions running 2026.4.1 HF2. The server issue requires a non-default configuration using the Legacy API to trigger a root Remote Code Execution (RCE). This allows attackers to gain Windows SYSTEM-level access on the underlying host server. N-able has not yet confirmed the full technical details but is actively reviewing the public disclosure. Administrators must ensure their Legacy API is disabled or apply any forthcoming security patches immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "PTC Patches Critical Windchill Flaw",
+            "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+            "content": "PTC has released patches for a critical vulnerability impacting Windchill and FlexPLM software. Tracked as CVE-2026-126325, the flaw carries a CVSS v4 score of 9.2 out of 10.0. Successful exploitation could result in unauthenticated remote code execution (RCE) on affected systems. This vulnerability poses a severe risk to engineering and product lifecycle management environments. Customers must apply the provided patches immediately to mitigate the risk of a full system compromise.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "N-central Zero-Days Trigger Active Exploitation",
+            "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
+            "content": "Malicious actors began targeting N-central zero-days immediately after a researcher disclosed over 30 vulnerabilities. N-able has since patched the unauthenticated flaws to prevent widespread exploitation. The rapid disclosure and subsequent attacks highlight the high value of N-central in managed service provider (MSP) environments. Security teams must prioritize deploying the latest patches to secure their remote monitoring and management (RMM) infrastructure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "MongoDB Flaw Crashes Servers on Failover",
+            "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+            "content": "A critical pre-authentication flaw in MongoDB Server allows an unauthenticated attacker to trigger a crash. The attacker sends two specific requests that cause a denial of service (DoS) during a database failover. The crash only occurs if the lagging server is selected to become the primary node before applying recent changes. MongoDB has released a patch to address the vulnerability. Database administrators should update their MongoDB instances to prevent unexpected outages.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Red Hat Quay Flaw Exposes Container Images",
+            "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
+            "content": "A critical flaw in Red Hat Quay could allow attackers to steal private container images. Exploitation also enables repository overwrites and establishes persistent unauthorized access to the platform. This vulnerability severely impacts organizations relying on Quay for secure software supply chain management. Administrators must apply the available security updates immediately to protect their containerized assets.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
             "headline": "Apache HTTP/2 Flaw Allows Unauthenticated RCE",
             "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
             "content": "A critical vulnerability in Apache HTTP Server's mod_http2 module, tracked as CVE-2026-119618, allows unauthenticated remote code execution on affected servers. The flaw impacts Apache versions 2.4.55 through 2.4.70, with a fix available in version 2.4.71. Only servers with HTTP/2 enabled are vulnerable, but successful exploitation could lead to full system compromise. Administrators should immediately update to Apache 2.4.71 or later to mitigate this critical risk.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Git Patches Code Execution Flaw in Recursive Clones",
-            "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-            "content": "The Git project has patched a vulnerability that allows malicious repositories to execute arbitrary code during recursive cloning operations. The flaw, fixed in Git 2.56.1, affects the 2.50 through 2.55 series with corresponding updates released. Attackers could exploit this to run code on a developer's machine by simply cloning a compromised repository and its submodules. Users are advised to update to Git 2.56.1 or apply the relevant patches for their installed versions immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "SGLang RCE Flaw Breaches NEAR AI",
-            "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
-            "content": "An attacker exploited a remote code execution (RCE) vulnerability in SGLang, an open-source inference engine, to compromise NEAR AI's infrastructure. The breach exposed data from 18 inference agents and approximately 100 users, including confidential requests processed on the affected server. The attacker gained code execution on a production inference server last Sunday, highlighting the risks of deploying open-source AI frameworks. NEAR AI has not disclosed the specific CVE but recommends users patch to the latest SGLang version and audit server logs.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
             "relatedResources": []
         },
         {
@@ -110,81 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Xen Orchestra Authentication Bypass",
-            "title": "Critical Xen Orchestra Flaws Exploited in Active Attacks",
-            "content": "Attackers are actively exploiting critical authentication bypass flaws in Xen Orchestra. The vulnerability allows arbitrary code execution with administrative privileges and full control over XCP-ng nodes. This flaw enables threat actors to take over virtualized environments and deploy ransomware or exfiltrate data. System administrators must update Xen Orchestra to the latest patched version immediately.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Citrix, Ivanti Patch Critical Flaws",
-            "title": "Citrix and Ivanti Patch Critical Vulnerabilities",
-            "content": "Citrix and Ivanti have released patches for critical and high-severity vulnerabilities. Attackers can exploit these bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The flaws pose a severe risk to enterprise environments relying on these management platforms. Administrators must apply the security updates immediately to prevent active exploitation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Openwave, Cisco Exploited—Info Leaks",
-            "title": "Threat Actors Exploit Openwave and Cisco BroadWorks Vulnerabilities",
-            "content": "Threat actors are exploiting vulnerabilities in Openwave and Cisco BroadWorks to leak sensitive information. The flaws, CVE-2026-111793 and CVE-2026-20320, allow attackers to extract configuration data. This exposure enables further reconnaissance and targeted attacks against telecommunications and enterprise networks. Administrators must update affected systems to prevent data leakage.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/threat-actors-exploit-openwave-cisco-broadworks-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Outlook Vulnerability Actively Exploited",
-            "title": "Microsoft Patches Actively Exploited Outlook Vulnerability",
-            "content": "Microsoft has patched an actively exploited vulnerability in Microsoft Outlook during its November 2026 Patch Tuesday cycle. The security update addresses a critical flaw that threat actors are leveraging to compromise enterprise environments. Security professionals must ensure their Office suites are updated separately from the main Windows updates. This incident underscores the persistent threat of targeted attacks against widely used communication software.",
-            "source": "Malwarebytes",
-            "sourceUrl": "https://www.malwarebytes.com/blog/bugs/2026/11/microsoft-patch-tuesday-fixes-outlook-flaw-already-under-attack",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "CISO Forum Virtual Summit Day 2",
-            "title": "Join CISO Forum Virtual Summit 2026 Day 2",
-            "content": "The CISO Forum Virtual Summit 2026 Day 2 is now live, offering an immersive experience for cybersecurity leaders. The event focuses on innovative risk management and defense strategies for the modern enterprise. Participants can discuss and share insights with industry peers to strengthen their organizational security postures. This two-day virtual summit remains a premier destination for advancing enterprise cybersecurity.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "AntiFox AI Pentesting Tool Abused",
-            "title": "AntiFox AI Pentesting Platform Linked to AWS Credential Theft",
-            "content": "Cybersecurity researchers disclosed a campaign where the agentic penetration testing platform AntiFox was abused to steal Amazon Web Services (AWS) credentials. Threat actors leveraged the tool to pivot laterally within compromised cloud environments. This highlights the dual-use risk of emerging AI-powered security tools when in the hands of malicious actors. Organizations must audit their cloud access controls and monitor for unusual lateral movement.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Qlik Servers Targeted With Reverse Shells",
-            "title": "Hackers Target Qlik Sense Servers With Reverse Shells",
-            "content": "Threat actors targeted Qlik Sense servers to deliver PowerShell reverse shell commands against multiple European Union-based environments in October 2026. The attackers also attempted to exploit vulnerabilities in ActiveMQ and Veeam backup systems. Cynet's CyOps and Research teams identified the suspicious activity during routine monitoring. Organizations running Qlik Sense, ActiveMQ, or Veeam must apply the latest security patches immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Asus and Zoom Patch Critical Flaws",
-            "title": "Asus and Zoom Release Security Patches",
-            "content": "Asus and Zoom have released security patches to address critical vulnerabilities in their respective products. Attackers could exploit these flaws to achieve command execution, memory overwrites, and privilege escalation on affected systems. Users of both platforms are strongly advised to install the updates immediately to mitigate the risk of compromise. These patches close significant security gaps that could otherwise lead to severe system breaches.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/asus-zoom-release-security-patches/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 12 2026",
+            "headline": "Jensen Huang Exit—Nvidia Open Source AI Future Questioned",
+            "title": "Jensen Huang's Exit Puts Nvidia's Support for Open Source AI in Question",
+            "content": "Nvidia CEO Jensen Huang's resignation raises questions about the company's commitment to open source AI, particularly following its $12.9 billion acquisition of Hugging Face. The leadership transition casts uncertainty over Nvidia's advocacy against AI restrictions and its support for open-weight models. Hugging Face's CEO has pledged to continue fighting for open source AI, but the future direction of Nvidia's open source strategy remains unclear. Developers and the broader AI community will be watching closely to see how Nvidia navigates this transition.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Hugging Face CEO Vows to Protect Open Source AI",
+            "title": "Hugging Face CEO Vows to Keep Fighting for Open Source AI After Jensen Huang's Exit",
+            "content": "Hugging Face CEO Clement Delangue has pledged to continue fighting for open source AI following Jensen Huang's exit from Nvidia. Delangue's commitment comes amid uncertainty about Nvidia's $12.9 billion acquisition of Hugging Face and its future support for open source initiatives. The CEO emphasized the importance of open source AI for innovation and transparency in the field. The tech community is watching closely to see how Nvidia's leadership transition will impact its open source strategy.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "40% of Game Developers Now Use Generative AI",
+            "title": "More Game Developers Are Starting to Use Generative AI",
+            "content": "A recent GDC Festival of Gaming survey reveals that 40% of video game developers now use generative AI tools as part of their job, up from 36% in 2025. This marks a significant increase in AI adoption within the gaming industry over the past year. The growing use of generative AI in game development reflects broader industry trends toward automation and AI-assisted creative processes. Developers are increasingly integrating these tools into their workflows for tasks like asset generation and procedural content creation.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Fireworks AI Breach Exposes Notion Chat Data",
+            "title": "Cyberattack on Fireworks AI Allowed Hackers to Access Notion Customers' Chat Transcripts",
+            "content": "Fireworks AI, an AI inference platform, suffered a cyberattack that allowed hackers to access customer data, including chat transcripts from Notion. This marks Fireworks' second data breach in as many months, raising serious concerns about the security of AI platforms and their data handling practices. The breach potentially affects numerous customers who used Fireworks' services for AI inference tasks. Users should review their data exposure and consider migrating to more secure AI platforms.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "AI Agents Didn't Discover New Maya Site",
+            "title": "No, AI Agents Did Not Discover a Previously Unknown Maya Site",
+            "content": "Google researcher Pietro Miotti claimed AI agents discovered a previously unmapped Maya site in Mexico, but the site had already been documented in an academic journal last year. The incident highlights the risks of AI hallucinations and the need for rigorous verification of AI-generated claims. Miotti's team used AI agents to analyze satellite imagery, but failed to cross-reference existing academic literature. The episode serves as a cautionary tale for the AI community about the importance of validating AI outputs against established knowledge bases.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Google Gemini 4 Hydrogen Powers Smarter Search",
+            "title": "Google Upgrades Search with Gemini 4 Hydrogen for Complex Queries",
+            "content": "Google is rolling out Gemini 4 Hydrogen to enhance its AI Mode in Search, improving the handling of complex user queries. The new model delivers richer visual responses and surfaces more relevant links. This upgrade directly impacts users seeking detailed, multi-faceted information directly from the search engine. The shift from previous models like 3.8 Flash aims to provide deeper, more accurate answers to intricate questions.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Google Dumps 3.8 Flash for Gemini 4 Hydrogen",
+            "title": "Google Replaces 3.8 Flash with Gemini 4 Hydrogen",
+            "content": "Google is replacing its 3.8 Flash model with Gemini 4 Hydrogen, marking a significant shift in its AI deployment strategy. Unlike the cautious rollouts of previous models, Gemini 4 Hydrogen is being pushed out without a slow, security-conscious release. This change affects developers and enterprises integrating Google's AI into their workflows. The rapid deployment of this new model suggests increased confidence in its stability and performance.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Hugging Face Introduces LLMON in Granite 4.1",
+            "title": "Hugging Face Integrates LLMON into Granite 4.1 Models",
+            "content": "Hugging Face has integrated LLMON, a new LLM-native markup language, into its Granite 4.1 3B and 8B models. This integration allows the models to natively process structured, hierarchical data formats without external parsing. Developers can now leverage this capability for more complex data extraction and formatting tasks. The update is available for immediate download on the Hugging Face platform.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Google Faces AI Moratorium Calls in Schools",
+            "title": "Google Faces AI Moratorium Demands After Gemini Backlash",
+            "content": "Google is facing demands for AI moratoriums in schools following a backlash over its Gemini pilot program. A lawsuit filed by a family labels the AI as a \"suicide coach\" after a teen's interaction with the model. This incident has sparked outrage among parents and educators, raising serious concerns about AI safety and oversight in educational settings. The backlash highlights the urgent need for stricter AI guardrails in sensitive environments.",
+            "source": "Ars Technica",
+            "sourceUrl": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Palantir CEO Alex Karp Faces Political Scrutiny",
+            "title": "Palantir's Political Pivot Under Fire",
+            "content": "Palantir CEO Alex Karp is facing intense political scrutiny following his attempt to pivot the company back to the left. The move comes after a poor election showing for the right, which threatens the political alignment of \"fash founders.\" This controversy highlights the growing tensions between tech leadership and shifting political landscapes. The situation underscores the risks of tying corporate success to volatile political trends.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
+            "relatedResources": []
+        },
         {
             "date": "Nov 12 2026",
             "headline": "Nvidia Lacks Succession Plan Amid CEO Crisis",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "CoreWeave is increasingly relying on customer prepayments and shorter contracts to fund its rapid AI infrastructure expansion. The cloud computing provider disclosed during its third-quarter earnings that it is borrowing against specific contracts to manage cash flow. This strategy allows CoreWeave to secure upfront capital for purchasing expensive AI hardware. However, it also exposes the company to higher price volatility if customers do not renew short-term deals. Cloud architects evaluating CoreWeave should factor in the potential for pricing fluctuations.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Fractile Raises $720M for Purpose-Built AI Chips",
-            "title": "Britain's Fractile Secures $720M Funding to Accelerate Development of Purpose-Built AI Chips",
-            "content": "UK-based AI chip startup Fractile has raised $720 million in a funding round, positioning itself as a top-funded player in the competitive race for specialized AI hardware. The capital injection will accelerate the design and deployment of Fractile's custom silicon, which is engineered to optimize performance for large language models and generative AI workloads. This funding surge highlights the intensifying global demand for high-performance computing infrastructure to support advanced AI models. Investors and tech leaders should monitor Fractile's progress as it challenges established chipmakers like Nvidia and AMD.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Congress Demands Nvidia CEO Jensen Huang Answer Spy Allegations",
-            "title": "House Republicans Summon Nvidia CEO Jensen Huang for Closed-Door Briefing on Chinese Spy Allegations",
-            "content": "House Republicans have summoned Nvidia CEO Jensen Huang to a closed-door briefing by the end of Wednesday to address allegations of an affair with a Chinese spy. The investigation centers on potential national security risks stemming from Huang's personal relationships and their impact on Nvidia's business dealings with Chinese entities. This development adds significant political pressure on the AI industry's most prominent leader amid escalating US-China tech tensions. Security professionals and policymakers should track the outcome of this briefing for potential regulatory or compliance implications.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Industry Condones Huang's Bad Behavior",
-            "title": "Industry Condones Jensen Huang's Bad Behavior, Insider Claims",
-            "content": "An investment intelligence consultant claims that senior figures across the AI industry are aware of and effectively condoning Jensen Huang's alleged bad behavior. The consultant's statement suggests a systemic tolerance for misconduct at the highest levels of tech leadership, potentially undermining corporate governance and ethical standards. This revelation could trigger reputational damage for Nvidia and prompt calls for stricter accountability measures within the AI sector. Developers and security professionals should advocate for transparent and robust HR policies to address toxic leadership.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "OpenAI Crosses $10B Quarterly Revenue",
-            "title": "OpenAI's Quarterly Revenue Crosses $10B for First Time, Marking 50% Growth",
-            "content": "OpenAI has reportedly crossed $10 billion in quarterly revenue for the first time, representing an almost 50% jump from $6.7 billion recorded in the second quarter. This financial milestone underscores the massive commercial demand for OpenAI's generative AI products, including ChatGPT and enterprise APIs. The company's rapid revenue growth highlights the intense competition in the AI market and its potential for high profitability. Tech leaders and investors should evaluate OpenAI's scaling strategies and market expansion plans.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Google's Tabletop AI Generates Custom Collaboration Apps",
-            "title": "Google's Tabletop AI Experiment Lets Users Build Custom Collaboration Apps",
-            "content": "Google has unveiled an experimental AI tool called Tabletop that generates customized collaborative hubs for coordinating with family and friends. The platform shares visual similarities with workplace management apps like Asana and Monday, but integrates built-in AI features to automate task creation and scheduling. This experiment signals Google's push into consumer-facing AI applications that blend personal organization with generative AI capabilities. Developers and users interested in early access should monitor Google's experimental features program for updates.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Google DeepMind Unveils AlphaGenome 2 for Disease Research",
-            "title": "AlphaGenome 2 Predicts How DNA Variations Impact Human Cell Types",
-            "content": "Google DeepMind has unveiled AlphaGenome 2, an advanced AI model designed to predict how DNA sequences and their variations impact specific human cell types. The model analyzes genetic changes to provide a detailed view of cellular behavior, which is a notoriously difficult problem in biomedical research. This technology could hold critical clues to the causes of various diseases and point the way to new, targeted treatments. Researchers can access the model through the AlphaGenome API to accelerate genomic analysis. This development builds on Google's ongoing investment in using AI to decode the complexities of human biology.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Databricks AI Agent Gives CEO Unfiltered Company Feedback",
-            "title": "Databricks Deploys Genie Agent to Report Internal Issues",
-            "content": "Databricks has deployed a revised AI agent named Genie to provide its CEO, Ali Ghodsi, with unfiltered operational feedback. The agent is designed to identify and report internal issues at the company's 12,000-employee scale, where manual oversight is impossible. This system addresses the common challenge of employees withholding negative information from leadership during rapid organizational growth. The deployment of Genie highlights a growing trend of using internal AI agents for corporate intelligence and risk management.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Google DeepMind's AlphaGenome 2 Maps Cellular Disease Roots",
-            "title": "AlphaGenome 2 Unravels How DNA Changes Affect Human Cells",
-            "content": "Google DeepMind's AlphaGenome 2 is a new AI model that unravels how DNA variations affect specific human cells and disease pathways. The system provides researchers with a granular view of cellular responses to genetic changes, a critical step in understanding disease etiology. By modeling these complex biological interactions, the tool could identify novel therapeutic targets for conditions with unclear genetic origins. The model is now available to the research community to accelerate genomic studies. This represents a significant leap in applying large-scale AI to cellular biology.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Plurai Adapts Self-Driving Tech for AI Agents",
-            "title": "Plurai Uses Probabilistic Models to Improve AI Agent Performance",
-            "content": "AI startup Plurai is applying end-to-end probabilistic models, originally developed for self-driving cars, to improve AI agent performance in unpredictable environments. The approach treats AI agents as systems that must operate effectively despite environmental uncertainty. This methodology aims to increase the reliability and adaptability of AI agents deployed in complex, real-world scenarios. Plurai's technology is positioned to enhance the decision-making capabilities of autonomous systems. This development reflects a broader industry shift toward robust, probabilistic AI architectures.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Adobe's AI Tools Turn Photos Into 3D Worlds",
-            "title": "Adobe Experiments With 3D Image Exploration and AI Characters",
-            "content": "Adobe is showcasing experimental AI tools at its annual Max conference that transform static images into explorable 3D scenes and interactive characters. The new features allow users to \"walk around\" in photographs and design AI characters by conversing with them directly. These tools represent a significant leap in creative AI, moving beyond text generation to immersive visual and interactive experiences. The experimental features are currently available for testing by developers and creative professionals. This release underscores Adobe's commitment to integrating generative AI into its core creative workflows.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
             "relatedResources": []
         }
     ],
