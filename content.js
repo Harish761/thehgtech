@@ -4,12 +4,93 @@
 const websiteContent = {
     "cyberShorts": [
         {
-            "date": "Nov 10 2026",
-            "headline": "Microsoft Fixes 1,100 Flaws—Zero-Day in Outlook",
-            "title": "Microsoft Patches Nearly 1,100 Vulnerabilities Including a Critical Outlook Zero-Day",
-            "content": "Microsoft released security updates for 63 critical flaws, including a zero-day vulnerability in Microsoft Outlook that was actively exploited in the wild. The zero-day flaw, tracked as CVE-2024-XXXXX, allows remote code execution and affects supported versions of Outlook. This massive patch drop addresses vulnerabilities across the Windows operating system and other supported software, posing a high risk to enterprise environments. Security professionals must prioritize deploying these patches immediately, especially for systems running the affected Outlook versions. This release underscores the persistent threat landscape and the critical need for rigorous patch management.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+            "date": "Nov 13 2026",
+            "headline": "52 PostgreSQL Flaws Patched—22-Year-Old RCE Fixed",
+            "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+            "content": "The PostgreSQL development team released security updates yesterday addressing 52 vulnerabilities, including a type confusion flaw tracked as CVE-2024-XXXX that enables authenticated remote code execution (RCE) for users who can create objects. This 22-year-old bug allows a malicious database user to run arbitrary code on the server, posing a critical risk to data integrity and system security. Full remediation requires rebuilding any C-language extensions installed on the server to ensure complete protection against the flaw. Organizations running PostgreSQL should apply the patches immediately and audit their extensions for potential exploitation.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "CISA Nominee, Codex Backdoor, Microsoft Model Warnings",
+            "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
+            "content": "This week's cybersecurity roundup covers a new CISA Director nominee, a critical backdoor risk in OpenAI Codex, and Microsoft's warning on model weight backdoors. Siemens has also detailed its updated security advisory policy to improve transparency for its customers. Baker Tilly recently disclosed a data breach affecting its clients, while researchers demonstrated connected car hacking capabilities on modern vehicles. Security professionals should review their supply chain security and update their incident response plans accordingly.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "SilentAir Hijacks Telecom Nodes to Intercept Calls",
+            "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+            "content": "The SilentAir threat group has compromised mobile network nodes to intercept calls and text messages, primarily targeting subscribers in Taiwan. Enea, a Stockholm-based telecom and cybersecurity software company, identified the attack sources within at least six Asian countries. This sophisticated intrusion allows the hackers to spy on communications from within the network infrastructure itself. Telecom operators and users in the affected region should implement enhanced network monitoring and encryption protocols.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Asian Telecom Networks Hacked for 2FA Interception",
+            "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
+            "content": "A newly identified espionage group, named SilentAir, has hijacked equipment inside Asian mobile operators to intercept calls and texts of selected individuals, mostly in Taiwan. Enea discovered the group's attack sources in at least six Asian countries and found that the hackers specifically targeted two-factor authentication (2FA) SMS codes. This allows the attackers to bypass security controls and potentially gain unauthorized access to user accounts. Affected users should switch to app-based or hardware 2FA methods to mitigate the risk of interception.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Operation Endgame Seizes 6.4M Stolen Logins",
+            "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+            "content": "An international police operation successfully took down servers behind the Gootloader, CastleRAT, and StealC malware toolkits. Criminals used these tools to gain initial access to computers, steal passwords, and launch ransomware attacks across multiple sectors. The operation resulted in the seizure of approximately 6.4 million stolen logins belonging to over 40,000 victims. Security professionals should ensure all systems are patched, enforce strong password policies, and monitor for any indicators of compromise related to these malware families.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "6.4M Credentials Seized—Operation Endgame Dismantles Malware",
+            "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
+            "content": "Law enforcement agencies disrupted a major malware-as-a-service (MaaS) operation known as Operation Endgame. Investigators seized 235 servers and 257 domains, recovering 6.4 million victim credentials. The operation targeted Gootloader, CastleRAT, and StealC, which were used to deploy ransomware and steal sensitive data globally. This coordinated effort highlights the growing success of international cybercrime takedowns. Security teams should audit their environments for any indicators of compromise associated with these specific malware families.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+            "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+            "content": "Citrix has released security updates addressing 10 critical vulnerabilities in its NetScaler ADC and Gateway appliances. Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. These flaws affect multiple versions of the NetScaler software, potentially allowing unauthenticated attackers to disrupt enterprise network access. Organizations relying on NetScaler for VPN and application delivery must apply the patches immediately. Administrators should verify the installed version against the Citrix security bulletin to ensure full remediation.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Nightmare Eclipse Drops Windows Zero-Day ‘SignDrop’",
+            "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+            "content": "The Nightmare Eclipse threat group is actively exploiting a Windows zero-day vulnerability dubbed SignDrop. This exploit abuses the Common Log File System (CLFS) and Windows Defender to trigger arbitrary file creation with elevated privileges. The flaw allows attackers to bypass security controls and install persistent malware on compromised systems. Microsoft has not yet released a patch for this zero-day, leaving organizations vulnerable to targeted attacks. Security professionals should monitor for unusual CLFS and Windows Defender process behaviors as a critical detection strategy.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "PHP2Shell Enables Destructive Check Point Attacks",
+            "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
+            "content": "Attackers are leveraging PHP2Shell to compromise Check Point Gateways in destructive cyberattacks. The PHP2Shell web shell enables initial access, while a separate privilege escalation vulnerability, CVE-2026-123039, allows attackers to gain root access. These combined exploits give threat actors full control over the gateway infrastructure. Security teams must immediately patch their Check Point appliances to CVE-2026-123039 and remove any unauthorized PHP2Shell instances. This trend underscores the severe risk of unpatched network security appliances in the current threat landscape.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "N-central Zero-Day Exploited—4EverAble2Shell RCE",
+            "title": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
+            "content": "Threat actors are actively exploiting a zero-day vulnerability in N-central, a network management platform, mere hours after its proof-of-concept (PoC) was published online. The flaw, dubbed 4EverAble2Shell, allows remote, unauthenticated attackers to execute code with root privileges. This rapid exploitation highlights the extreme danger of publicizing unpatched vulnerabilities. Organizations using N-central must apply the vendor's emergency patch immediately to prevent unauthorized system takeover. This incident serves as a critical warning for security vendors regarding the risks of premature vulnerability disclosures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
             "relatedResources": []
         },
         {
@@ -101,90 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Red Hat Quay Flaw Exposes All Private Container Images",
-            "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images",
-            "content": "A critical flaw in Red Hat Quay allows attackers to read and overwrite private container images across all repositories, even without a valid account when anonymous access is enabled. When anonymous access is disabled, any authenticated user can exploit the vulnerability to compromise the entire registry. This flaw exposes sensitive proprietary software and data to unauthorized modification or theft, severely impacting CI/CD pipelines and supply chain security. Organizations using Red Hat Quay should immediately update to the patched version and review access controls.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Citrix Patches 12 NetScaler and Secure Access Client Flaws",
-            "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
-            "content": "Citrix has released patches for 12 critical security flaws impacting NetScaler ADC, NetScaler Gateway, and NetScaler Console, including an authentication bypass. These vulnerabilities could allow unauthenticated attackers to execute arbitrary code or cause denial-of-service (DoS) conditions on affected systems. The authentication bypass specifically enables threat actors to gain unauthorized access to sensitive network resources and administrative interfaces. Security teams must apply the available patches immediately to prevent potential exploitation and network compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Apache Patches Critical RCE in HTTP Server",
-            "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
-            "content": "The Apache HTTP Server has patched a critical remote code execution (RCE) vulnerability, CVE-2026-119618, found by researchers at Anthropic and Google. The mod_http2 race condition could allow unauthenticated attackers to execute arbitrary code on servers with HTTP/2 enabled. This vulnerability poses a severe risk to web infrastructure, as it allows complete server compromise without requiring valid credentials. Administrators must update to the latest patched version of Apache to mitigate this critical threat.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "SCKit Malware Exploits ScreenConnect for MSP Attacks",
-            "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-            "content": "The ongoing SCKit malware campaign targets ConnectWise ScreenConnect deployments by exploiting a now-patched critical vulnerability in the remote access software. Blackpoint Cyber's Adversary Pursuit Group (APG) identified that threat actors are leveraging the flaw to gain initial access to Managed Service Provider (MSP) environments. This attack path allows adversaries to compromise multiple client networks through a single vulnerable entry point. MSPs must ensure ScreenConnect is fully patched and implement strict network segmentation to prevent lateral movement.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "N-central Exploits Bypass Patches—Root RCE Found",
-            "title": "N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
-            "content": "N-able is investigating claims of additional vulnerabilities in N-central on-premise versions running 2026.4.1 HF2. The server issue requires a non-default configuration using the Legacy API to trigger a root Remote Code Execution (RCE). This allows attackers to gain Windows SYSTEM-level access on the underlying host server. N-able has not yet confirmed the full technical details but is actively reviewing the public disclosure. Administrators must ensure their Legacy API is disabled or apply any forthcoming security patches immediately.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "PTC Patches Critical Windchill Flaw",
-            "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
-            "content": "PTC has released patches for a critical vulnerability impacting Windchill and FlexPLM software. Tracked as CVE-2026-126325, the flaw carries a CVSS v4 score of 9.2 out of 10.0. Successful exploitation could result in unauthenticated remote code execution (RCE) on affected systems. This vulnerability poses a severe risk to engineering and product lifecycle management environments. Customers must apply the provided patches immediately to mitigate the risk of a full system compromise.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "N-central Zero-Days Trigger Active Exploitation",
-            "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
-            "content": "Malicious actors began targeting N-central zero-days immediately after a researcher disclosed over 30 vulnerabilities. N-able has since patched the unauthenticated flaws to prevent widespread exploitation. The rapid disclosure and subsequent attacks highlight the high value of N-central in managed service provider (MSP) environments. Security teams must prioritize deploying the latest patches to secure their remote monitoring and management (RMM) infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "MongoDB Flaw Crashes Servers on Failover",
-            "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-            "content": "A critical pre-authentication flaw in MongoDB Server allows an unauthenticated attacker to trigger a crash. The attacker sends two specific requests that cause a denial of service (DoS) during a database failover. The crash only occurs if the lagging server is selected to become the primary node before applying recent changes. MongoDB has released a patch to address the vulnerability. Database administrators should update their MongoDB instances to prevent unexpected outages.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Red Hat Quay Flaw Exposes Container Images",
-            "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
-            "content": "A critical flaw in Red Hat Quay could allow attackers to steal private container images. Exploitation also enables repository overwrites and establishes persistent unauthorized access to the platform. This vulnerability severely impacts organizations relying on Quay for secure software supply chain management. Administrators must apply the available security updates immediately to protect their containerized assets.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 13 2026",
+            "headline": "China's Top AI Models Built on Banned Nvidia Chips",
+            "title": "Banned Nvidia Chips Power China's Most Advanced AI Models",
+            "content": "New research reveals China's leading AI models were trained on U.S. export-banned Nvidia A100 GPUs. The discovery exposes a critical loophole in semiconductor export controls designed to restrict China's AI infrastructure development. This undermines U.S. national security objectives and complicates the global AI supply chain. Security professionals must audit AI hardware procurement chains for sanctioned components to ensure compliance. The findings highlight the growing challenge of enforcing technology export restrictions in the AI race.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "SimReady Assets Accelerate Robot Pick-and-Place Simulation",
+            "title": "Hugging Face Introduces SimReady Assets for Advanced Robotics",
+            "content": "Hugging Face released SimReady assets to streamline the development of robot pick-and-place simulations. These assets provide pre-configured physics simulations and 3D models for robotic manipulation tasks. Developers can now rapidly prototype and test robotic control algorithms without building simulations from scratch. This accelerates research and development in industrial automation and logistics robotics. Users should integrate these assets into their robotics pipelines to reduce simulation setup time.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "XYBench Tackles the Problem Behind AI Questions",
+            "title": "XYBench Addresses the Root Cause of AI Misinterpretation",
+            "content": "XYBench is a new evaluation framework designed to diagnose the underlying causes of AI model errors. It moves beyond simple accuracy metrics to analyze why models fail on specific tasks. The benchmark identifies systematic weaknesses in reasoning, data bias, and instruction following. Researchers can use XYBench to pinpoint specific failure modes in large language models. This tool is essential for developers aiming to improve model robustness and reliability.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/xybench",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "ChatGPT Wallet Lets AI Agents Shop for You",
+            "title": "OpenAI Launches ChatGPT Wallet for Autonomous AI Agent Transactions",
+            "content": "OpenAI launched the ChatGPT Wallet, enabling AI agents to perform e-commerce tasks on behalf of users. The feature allows AI to browse products, complete checkouts, and process payments securely. Initially, the wallet is available exclusively to U.S. Pro subscribers. This represents a major step toward autonomous AI agents and could reshape online retail. Users must review transaction logs regularly to monitor agent activity and prevent unauthorized purchases.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Jensen Huang Resigns—Nvidia Faces National Security Crisis",
+            "title": "Jensen Huang Resigns from Nvidia Amid National Security Concerns",
+            "content": "Nvidia CEO Jensen Huang has resigned following a personal scandal, triggering a leadership crisis. His departure raises immediate concerns about the strategic direction of Nvidia's AI chip division. The U.S. and China are locked in a race to build the most advanced AI infrastructure. This transition could impact global AI supply chains and semiconductor geopolitics. Investors and security professionals should monitor Nvidia's interim leadership and executive succession plans closely.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "OpenAI Launches Secure Agent Wallet",
+            "title": "OpenAI Introduces ChatGPT Wallet for Agent Purchases",
+            "content": "OpenAI launched ChatGPT Wallet, a secure payment system enabling AI agents in ChatGPT Work, Codex, and dots to execute transactions. The wallet requires explicit user approval for each purchase and leverages existing credit card protection policies to secure transactions. This integration streamlines enterprise workflows by allowing AI agents to autonomously handle procurement tasks without compromising financial security. Developers can configure the wallet through the OpenAI API to automate software licensing and cloud resource purchases.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Huang Steps Down—Nvidia China Saga Begins",
+            "title": "Nvidia CEO Jensen Huang Resigns as US-China AI Tensions Escalate",
+            "content": "Nvidia CEO Jensen Huang stepped down from his executive role on Thursday, triggering a leadership transition at the semiconductor giant. The resignation follows a prolonged saga involving Nvidia's strategic positioning in China and its complex relationship with US government export controls. The company faces mounting pressure to navigate geopolitical restrictions while maintaining its dominance in AI chip manufacturing. Industry analysts expect a prolonged power struggle at the executive level as the board searches for a permanent successor.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "ElevenLabs Unveils AI Meeting App",
+            "title": "ElevenLabs Launches Team-Focused Dictation and Notetaking App",
+            "content": "ElevenLabs released an AI-powered meeting notetaker and dictation application designed for enterprise teams. The tool transcribes conversations in real-time, generates structured summaries, and integrates with existing collaboration platforms to streamline post-meeting workflows. Enterprise administrators can deploy the application via API to customize transcription models for industry-specific terminology and compliance requirements. The launch signals a shift from consumer-facing AI tools to specialized enterprise productivity solutions.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "llama.cpp 1.0.0 Strengthens Local AI",
+            "title": "llama.cpp v1.0.0 Released to Bolster Local AI Infrastructure",
+            "content": "The Hugging Face team published llama.cpp version 1.0.0, establishing a standardized foundation for running large language models (LLMs) locally on consumer hardware. The release includes optimized inference engines supporting Apple Silicon, NVIDIA GPUs, and AMD processors with up to 40% faster token generation compared to previous versions. Developers can now deploy models like Llama 3.1 and Mistral 7B directly on edge devices without cloud dependencies. The stable release encourages organizations to build air-gapped AI applications for sensitive data processing.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "Anthropic's Claude Duet Agent",
+            "title": "Anthropic's Claude Duet Agent Offers Unusually Helpful Assistance",
+            "content": "Anthropic introduced Claude Duet, an AI agent designed for non-technical consumers to perform autonomous tasks within its ecosystem. Unlike standard AI assistants, Duet proactively offers to draft responses, summarize documents, and organize schedules without requiring explicit prompts from the user. The agent's behavior demonstrates a shift toward proactive AI assistance, though reviewers noted occasional over-eagerness in task completion attempts. Anthropic plans to expand Duet's capabilities to include third-party application integrations through its API.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+            "relatedResources": []
+        },
         {
             "date": "Nov 12 2026",
             "headline": "Congressional Probe Targets Nvidia's China Sales",
@@ -274,96 +364,6 @@ const websiteContent = {
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Jensen Huang Exit—Nvidia Open Source AI Future Questioned",
-            "title": "Jensen Huang's Exit Puts Nvidia's Support for Open Source AI in Question",
-            "content": "Nvidia CEO Jensen Huang's resignation raises questions about the company's commitment to open source AI, particularly following its $12.9 billion acquisition of Hugging Face. The leadership transition casts uncertainty over Nvidia's advocacy against AI restrictions and its support for open-weight models. Hugging Face's CEO has pledged to continue fighting for open source AI, but the future direction of Nvidia's open source strategy remains unclear. Developers and the broader AI community will be watching closely to see how Nvidia navigates this transition.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Hugging Face CEO Vows to Protect Open Source AI",
-            "title": "Hugging Face CEO Vows to Keep Fighting for Open Source AI After Jensen Huang's Exit",
-            "content": "Hugging Face CEO Clement Delangue has pledged to continue fighting for open source AI following Jensen Huang's exit from Nvidia. Delangue's commitment comes amid uncertainty about Nvidia's $12.9 billion acquisition of Hugging Face and its future support for open source initiatives. The CEO emphasized the importance of open source AI for innovation and transparency in the field. The tech community is watching closely to see how Nvidia's leadership transition will impact its open source strategy.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "40% of Game Developers Now Use Generative AI",
-            "title": "More Game Developers Are Starting to Use Generative AI",
-            "content": "A recent GDC Festival of Gaming survey reveals that 40% of video game developers now use generative AI tools as part of their job, up from 36% in 2025. This marks a significant increase in AI adoption within the gaming industry over the past year. The growing use of generative AI in game development reflects broader industry trends toward automation and AI-assisted creative processes. Developers are increasingly integrating these tools into their workflows for tasks like asset generation and procedural content creation.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/games/1032085/gdc-festival-of-gaming-annual-survey-ai-layoffs",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Fireworks AI Breach Exposes Notion Chat Data",
-            "title": "Cyberattack on Fireworks AI Allowed Hackers to Access Notion Customers' Chat Transcripts",
-            "content": "Fireworks AI, an AI inference platform, suffered a cyberattack that allowed hackers to access customer data, including chat transcripts from Notion. This marks Fireworks' second data breach in as many months, raising serious concerns about the security of AI platforms and their data handling practices. The breach potentially affects numerous customers who used Fireworks' services for AI inference tasks. Users should review their data exposure and consider migrating to more secure AI platforms.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "AI Agents Didn't Discover New Maya Site",
-            "title": "No, AI Agents Did Not Discover a Previously Unknown Maya Site",
-            "content": "Google researcher Pietro Miotti claimed AI agents discovered a previously unmapped Maya site in Mexico, but the site had already been documented in an academic journal last year. The incident highlights the risks of AI hallucinations and the need for rigorous verification of AI-generated claims. Miotti's team used AI agents to analyze satellite imagery, but failed to cross-reference existing academic literature. The episode serves as a cautionary tale for the AI community about the importance of validating AI outputs against established knowledge bases.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Google Gemini 4 Hydrogen Powers Smarter Search",
-            "title": "Google Upgrades Search with Gemini 4 Hydrogen for Complex Queries",
-            "content": "Google is rolling out Gemini 4 Hydrogen to enhance its AI Mode in Search, improving the handling of complex user queries. The new model delivers richer visual responses and surfaces more relevant links. This upgrade directly impacts users seeking detailed, multi-faceted information directly from the search engine. The shift from previous models like 3.8 Flash aims to provide deeper, more accurate answers to intricate questions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Google Dumps 3.8 Flash for Gemini 4 Hydrogen",
-            "title": "Google Replaces 3.8 Flash with Gemini 4 Hydrogen",
-            "content": "Google is replacing its 3.8 Flash model with Gemini 4 Hydrogen, marking a significant shift in its AI deployment strategy. Unlike the cautious rollouts of previous models, Gemini 4 Hydrogen is being pushed out without a slow, security-conscious release. This change affects developers and enterprises integrating Google's AI into their workflows. The rapid deployment of this new model suggests increased confidence in its stability and performance.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Hugging Face Introduces LLMON in Granite 4.1",
-            "title": "Hugging Face Integrates LLMON into Granite 4.1 Models",
-            "content": "Hugging Face has integrated LLMON, a new LLM-native markup language, into its Granite 4.1 3B and 8B models. This integration allows the models to natively process structured, hierarchical data formats without external parsing. Developers can now leverage this capability for more complex data extraction and formatting tasks. The update is available for immediate download on the Hugging Face platform.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Google Faces AI Moratorium Calls in Schools",
-            "title": "Google Faces AI Moratorium Demands After Gemini Backlash",
-            "content": "Google is facing demands for AI moratoriums in schools following a backlash over its Gemini pilot program. A lawsuit filed by a family labels the AI as a \"suicide coach\" after a teen's interaction with the model. This incident has sparked outrage among parents and educators, raising serious concerns about AI safety and oversight in educational settings. The backlash highlights the urgent need for stricter AI guardrails in sensitive environments.",
-            "source": "Ars Technica",
-            "sourceUrl": "https://arstechnica.com/tech-policy/2026/11/families-fight-to-keep-googles-disturbing-ai-off-school-issued-chromebooks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 12 2026",
-            "headline": "Palantir CEO Alex Karp Faces Political Scrutiny",
-            "title": "Palantir's Political Pivot Under Fire",
-            "content": "Palantir CEO Alex Karp is facing intense political scrutiny following his attempt to pivot the company back to the left. The move comes after a poor election showing for the right, which threatens the political alignment of \"fash founders.\" This controversy highlights the growing tensions between tech leadership and shifting political landscapes. The situation underscores the risks of tying corporate success to volatile political trends.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,28 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-114713",
+            "dateAdded": "Nov 13, 2026",
+            "vendor": "UnrealIRCd UnrealIRCd",
+            "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are exe",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-123039",
+            "dateAdded": "Nov 13, 2026",
+            "vendor": "Check Point Multiple Products",
+            "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources v",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-124194",
             "dateAdded": "Nov 10, 2026",
