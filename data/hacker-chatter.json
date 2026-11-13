@@ -1,7 +1,91 @@
 {
-  "last_updated": "2026-11-13T09:51:00.797524",
-  "total_incidents": 33090,
+  "last_updated": "2026-11-13T20:56:42.479164",
+  "total_incidents": 33097,
   "incidents": [
+    {
+      "id": "dark_project_the_ccmc",
+      "victim_name": "The CCMC",
+      "threat_actor": "Dark Project",
+      "date_discovered": "2026-11-13T15:55:12.125727+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "About The CCMC CCMC specializes in HOA community management for large-scale, master-planned communities across the U.S., offering tailored services that prioritize the unique vision and goals of each community. With over 50 years of experience, they provide financial oversight, governance guidance, and lifestyle-driven operations to enhance community living. Their innovative BUURT technology platform enhances communication and operational efficiency for residents and boards alike. CCMC partners with property developers and HOA boards to create vibrant communities that foster connection and belonging As a result of the attack on The CCMC, more than 25 GB of confidential data was stolen. This data includes more than 50,000 files containing property and maintenance documentation, documents related to owners and tenants—including personal data—financial reports, banking information, and other important company information.",
+      "screenshot": "https://images.ransomware.live/victims/b5a812074e509a3b27c7adf53563f74c.png",
+      "url": "http://darkprn3d3udnhpuxknsrhft3376lrz5tenhgkrxge5hxqe46pkbrwid.onion/article?slug=the-ccmc",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "bravox_world_wide_fittings",
+      "victim_name": "World Wide Fittings",
+      "threat_actor": "bravox",
+      "date_discovered": "2026-11-13T14:21:52.700230+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Global manufacturer of steel and stainless hydraulic tube and pipe fittings",
+      "screenshot": "",
+      "url": "http://bravoxxwcfz5qk43ychgveprpd5mw5hvxfs4a2uz2okx7mumiht4fzyd.onion/blog/ac25a6f5-cef6-4ae8-8d9c-8064a4c4dda4",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_galorath",
+      "victim_name": "Galorath",
+      "threat_actor": "akira",
+      "date_discovered": "2026-11-13T14:19:54.964178+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Galorath Incorporated has invested more than two decades developing solutions to help governmen\nt and commercial organizations plan and manage complex software, hardware, electronics, manufac\nturing and IT projects. Its suite of SEER productivity development applications is the most com\nprehensive estimation and management solution in the industry.\n\nWe will upload 12gb of corporate data soon. Employee personal information (passport, DLs and ot\nher HR files), payment details, contracts and agreements with NASA, Airbus, Lockheed Martin, Bo\neing and others,  financials, NDAs and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_replogle_globes",
+      "victim_name": "Replogle Globes",
+      "threat_actor": "akira",
+      "date_discovered": "2026-11-13T14:19:35.288814+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Founded in 1930, Replogle Globes is a manufacturer and retailer of handcrafted globes, of diffe\nrent colors, types, and custom globes with online ordering. The company is headquartered in Hil\nlside, Illinois.\n\nWe will upload 404gb of corporate data soon. Employee personal information (passport, DLs and o\nther HR files), contracts and agreements, customer data, financials, NDAs and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "akira_paragon_mechanical",
+      "victim_name": "Paragon Mechanical",
+      "threat_actor": "akira",
+      "date_discovered": "2026-11-13T14:19:15.669572+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Paragon Mechanical Inc. is a premier full-service mechanical contractor based in Silicon Valley\n, specializing in HVAC, piping, architectural sheet metal, and plumbing services. The company o\nffers a wide range of capabilities including design, fabrication, and installation for both sma\nll and large commercial projects.\n\nWe will upload 37gb of corporate data soon. Employee personal information (passport, medical in\nformation, DLs, DOB and so on), contracts and agreements, customer data, police reports, detail\ned and confidential financials, NDAs and so on.\n",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "emperador_carsem",
+      "victim_name": "Carsem",
+      "threat_actor": "emperador",
+      "date_discovered": "2026-11-13T11:23:06.967557+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "Carsem is a leading provider of turnkey packaging and test services to the semiconductor industry, and offers one of the largest package and test portfolios in the world.\n\nSome samples of the leaked data will be made public in three days. [Sector: Manufacturing]",
+      "screenshot": "",
+      "url": "http://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/carsem/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "doommageddon_koray_topaç_hukuk_bürosu",
+      "victim_name": "Koray Topaç Hukuk Bürosu",
+      "threat_actor": "Doommageddon",
+      "date_discovered": "2026-11-13T11:22:24.878217+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Status: negotiating | Deadline: 2026-11-20T00:00:00Z",
+      "screenshot": "https://images.ransomware.live/victims/7ab6624c3dd3cb5502c5debf53feccb2.png",
+      "url": "http://iacjvmxjb2ivqkxxzmde4w6g53gn6ym7c3g6mfifvejyhqtp4wrkypyd.onion/victim/k-t-h-b",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "n0n_company_#216",
       "victim_name": "Company #216",
