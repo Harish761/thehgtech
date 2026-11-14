@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 14 2026",
+            "headline": "AI Dependence Erodes Critical Cybersecurity Skills",
+            "title": "Overreliance on AI Could Undermine Security Professionals' Critical Thinking",
+            "content": "Security teams risk losing essential creativity and critical thinking skills by overrelying on AI, according to SecurityWeek. The technology may erode the clear communication and adaptive problem-solving required during novel, unscripted cyber incidents. Security professionals must balance AI's efficiency gains with the need to maintain human expertise for complex threat analysis. Organizations should invest in continuous training to ensure their teams retain the foundational skills AI cannot replicate.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "CISA Adds UnrealIRCd Flaw to KEV Catalog",
+            "title": "CISA Lists UnrealIRCd Vulnerability After Active Exploitation",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added a high-severity flaw in the open-source UnrealIRCd Internet Relay Chat (IRC) server to its Known Exploited Vulnerabilities (KEV) catalog. The vulnerability, tracked as CVE-2024-XXXX, enables server-level command injection and is under active exploitation. Administrators must patch affected UnrealIRCd instances immediately to prevent unauthorized command execution and potential server compromise. This addition highlights the ongoing risk to legacy open-source infrastructure in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "SignDrop Zero-Day Grants Windows SYSTEM Privileges",
+            "title": "SignDrop Zero-Day Exploits Windows CLFS to Escalate Privileges",
+            "content": "Public exploit code for SignDrop allows local Windows users to gain SYSTEM privileges by abusing the Common Log File System (CLFS) driver. The proof of concept targets a log-authentication feature added to the clfs.sys driver, creating companion files to bypass security checks. This zero-day vulnerability poses a severe risk to any Windows system where a standard user can write to the system drive. Microsoft must issue a patch urgently to prevent widespread privilege escalation attacks.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "Apple Details Secure Exclaves for Sensors",
+            "title": "Apple Explains How Secure Exclaves Isolate Camera and Microphone Data",
+            "content": "Apple has detailed the architecture of Secure Exclaves, a hardware-based system designed to isolate ambient sensor data from the main operating system. This technology protects microphone and camera feeds on HomeView and new iPhone models by processing data in a secure enclave. The design ensures that even if the main OS is compromised, sensitive biometric and environmental data remains inaccessible. This architecture reinforces Apple's hardware-first security model against sophisticated malware and supply chain attacks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "FAA Outage Linked to Software Update, Not Hacking",
+            "title": "FBI Investigates FAA Ground Stop as Software Update Cited",
+            "content": "Officials confirmed there is no evidence of a cyberattack behind the nationwide FAA ground stop, which the FBI is investigating. The outage was likely caused by a faulty software update deployed to the FAA's Notice to Air Missions (NOTAM) system. The incident disrupted thousands of flights across the United States, highlighting the fragility of critical aviation infrastructure. Aviation operators should review their incident response protocols for software-related system failures.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Operation Endgame Exposes 6.4M Stolen Credentials",
+            "title": "International Operation Dismantles Malware Networks, Exposes 6.4 Million Stolen Credentials",
+            "content": "An international law enforcement operation called Endgame dismantled the loaders, remote access trojans, and infostealers that ransomware gangs use to infiltrate corporate networks. The operation exposed a cache of 6.4 million stolen credentials, revealing the scale of credential theft fueling modern cybercrime. Security teams should immediately audit their networks for signs of compromise and enforce strict multi-factor authentication (MFA) policies. This coordinated action highlights the ongoing global effort to disrupt the infrastructure enabling ransomware campaigns.",
+            "source": "CyberScoop",
+            "sourceUrl": "https://cyberscoop.com/operation-endgame-malware-takedown-gootloader-stealc-europol/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Chinese AI Attack Runs 25 Operations Autonomously",
+            "title": "Palo Alto Tracks Massive China-Based AI Attack Using Open-Source Framework",
+            "content": "Palo Alto Networks Unit 42 tracked a massive, China-based attack that leveraged the open-source AI penetration testing framework Cairn to autonomously execute 25 distinct operations against at least 19 organizations. The attackers weaponized Cairn by pairing it with a Chinese AI model to enhance their offensive capabilities. This attack validates industry fears regarding the weaponization of open-source AI for autonomous cyber intrusions. Organizations should monitor their networks for suspicious activity indicative of AI-driven reconnaissance and exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4247565/palo-alto-tracks-a-massive-chinese-ai-attack-that-sadly-lives-up-to-industry-fears.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "SQL Server Brute-Force Campaign Drops Crypto Miners",
+            "title": "Hackers Abuse Weak SQL Server Passwords to Deploy Malware",
+            "content": "An active threat campaign is compromising exposed Microsoft SQL servers using brute-force attacks on weak passwords and Transact-SQL (T-SQL) commands. The attackers utilize predefined username and password lists to gain administrative access and drop cryptominers and the Gh0st RAT. This campaign specifically targets organizations with exposed SQL servers and weak default credentials. Administrators must immediately disable exposed SQL server instances and enforce strong, complex passwords.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4247845/hackers-abuse-sql-servers-weak-passwords-to-drop-cryptominers-and-gh0st-rat.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "GPUStack Authentication Bypass Vulnerability Exploited",
+            "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895)",
+            "content": "Threat actors are actively attempting to exploit CVE-2026-102895, a trivial authentication-bypass vulnerability in GPUStack, an open-source software for managing GPU clusters. All versions of GPUStack prior to 2.2.0, released in June 2026, are vulnerable to this flaw. This vulnerability is highly attractive to attackers seeking to compromise AI workloads and the underlying infrastructure. Users must immediately upgrade to GPUStack version 2.2.0 or later to mitigate the risk of unauthorized access.",
+            "source": "SANS Internet Storm Center",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33514",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 11 2026",
+            "headline": "N-able Takes N-central Offline Over 33 Flaws",
+            "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
+            "content": "N-able took its N-central remote monitoring and management (RMM) platform offline after discovering 33 security flaws, including alleged zero-days with public exploits. The company released a hotfix as a recommended mitigation to address these vulnerabilities, which could allow for complete attacker takeover of the platform. This action highlights the critical risk posed by vulnerabilities in widely used RMM tools. MSPs and security professionals must apply the provided hotfix immediately and monitor for any signs of compromise.",
+            "source": "darkreading",
+            "sourceUrl": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 12 2026",
             "headline": "Red Hat Quay Flaw Exposes All Private Containers",
             "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
@@ -19,24 +109,6 @@ const websiteContent = {
             "content": "Citrix has released emergency patches for 12 critical security flaws in its NetScaler ADC, NetScaler Gateway, and NetScaler Console. The vulnerabilities, tracked as CVE-2026-YYYY through CVE-2026-ZZZZ, allow for denial-of-service (DoS) attacks and authentication bypasses. Successful exploitation could grant unauthorized access to corporate networks or disrupt service availability. Administrators are urged to update to the latest versions immediately. This patch cycle addresses a significant attack surface for organizations relying on Citrix for remote access.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 11 2026",
-            "headline": "Qilin Ransomware Affiliates Target 365+ Victims",
-            "title": "Who Runs the Ransomware Group Qilin?",
-            "content": "The Qilin ransomware group has emerged as the world's most active affiliate program, claiming at least 365 victim organizations in the past three months. Despite its operational scale, the group's administrator has made critical operational security mistakes, including misconfigured servers. These missteps reveal the human element behind large-scale ransomware operations. Security researchers are tracking these errors to better understand the group's infrastructure and mitigate future attacks. Organizations must maintain robust backup strategies to defend against Qilin's relentless campaigns.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 10 2026",
-            "headline": "Microsoft Fixes 1,100+ Vulnerabilities",
-            "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
-            "content": "Microsoft addressed 1,098 security vulnerabilities in its monthly Patch Tuesday, including 63 critical flaws. A zero-day vulnerability in Microsoft Outlook, tracked as CVE-2026-AAAA, was actively exploited in the wild and received an out-of-band patch. The updates cover Windows operating systems, Microsoft Office, and other supported software. Users and administrators must apply these patches immediately to prevent potential system compromise or data breaches. This update underscores the continuous pressure on Microsoft's software ecosystem.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
             "relatedResources": []
         },
         {
@@ -110,81 +182,99 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "SilentAir Hijacks Telecom Nodes to Intercept Calls",
-            "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
-            "content": "The SilentAir threat group has compromised mobile network nodes to intercept calls and text messages, primarily targeting subscribers in Taiwan. Enea, a Stockholm-based telecom and cybersecurity software company, identified the attack sources within at least six Asian countries. This sophisticated intrusion allows the hackers to spy on communications from within the network infrastructure itself. Telecom operators and users in the affected region should implement enhanced network monitoring and encryption protocols.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Asian Telecom Networks Hacked for 2FA Interception",
-            "title": "SilentAir Hijacks Asian Telecom Networks to Intercept SMS 2FA Codes and Spy on Taiwanese Users",
-            "content": "A newly identified espionage group, named SilentAir, has hijacked equipment inside Asian mobile operators to intercept calls and texts of selected individuals, mostly in Taiwan. Enea discovered the group's attack sources in at least six Asian countries and found that the hackers specifically targeted two-factor authentication (2FA) SMS codes. This allows the attackers to bypass security controls and potentially gain unauthorized access to user accounts. Affected users should switch to app-based or hardware 2FA methods to mitigate the risk of interception.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Operation Endgame Seizes 6.4M Stolen Logins",
-            "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-            "content": "An international police operation successfully took down servers behind the Gootloader, CastleRAT, and StealC malware toolkits. Criminals used these tools to gain initial access to computers, steal passwords, and launch ransomware attacks across multiple sectors. The operation resulted in the seizure of approximately 6.4 million stolen logins belonging to over 40,000 victims. Security professionals should ensure all systems are patched, enforce strong password policies, and monitor for any indicators of compromise related to these malware families.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "6.4M Credentials Seized—Operation Endgame Dismantles Malware",
-            "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
-            "content": "Law enforcement agencies disrupted a major malware-as-a-service (MaaS) operation known as Operation Endgame. Investigators seized 235 servers and 257 domains, recovering 6.4 million victim credentials. The operation targeted Gootloader, CastleRAT, and StealC, which were used to deploy ransomware and steal sensitive data globally. This coordinated effort highlights the growing success of international cybercrime takedowns. Security teams should audit their environments for any indicators of compromise associated with these specific malware families.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-            "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-            "content": "Citrix has released security updates addressing 10 critical vulnerabilities in its NetScaler ADC and Gateway appliances. Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. These flaws affect multiple versions of the NetScaler software, potentially allowing unauthenticated attackers to disrupt enterprise network access. Organizations relying on NetScaler for VPN and application delivery must apply the patches immediately. Administrators should verify the installed version against the Citrix security bulletin to ensure full remediation.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Nightmare Eclipse Drops Windows Zero-Day ‘SignDrop’",
-            "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-            "content": "The Nightmare Eclipse threat group is actively exploiting a Windows zero-day vulnerability dubbed SignDrop. This exploit abuses the Common Log File System (CLFS) and Windows Defender to trigger arbitrary file creation with elevated privileges. The flaw allows attackers to bypass security controls and install persistent malware on compromised systems. Microsoft has not yet released a patch for this zero-day, leaving organizations vulnerable to targeted attacks. Security professionals should monitor for unusual CLFS and Windows Defender process behaviors as a critical detection strategy.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "PHP2Shell Enables Destructive Check Point Attacks",
-            "title": "PHP2Shell Exploited in Destructive Check Point Gateway Attacks",
-            "content": "Attackers are leveraging PHP2Shell to compromise Check Point Gateways in destructive cyberattacks. The PHP2Shell web shell enables initial access, while a separate privilege escalation vulnerability, CVE-2026-123039, allows attackers to gain root access. These combined exploits give threat actors full control over the gateway infrastructure. Security teams must immediately patch their Check Point appliances to CVE-2026-123039 and remove any unauthorized PHP2Shell instances. This trend underscores the severe risk of unpatched network security appliances in the current threat landscape.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "N-central Zero-Day Exploited—4EverAble2Shell RCE",
-            "title": "Hackers Exploit New N-central Zero-Day Hours After PoC Publication",
-            "content": "Threat actors are actively exploiting a zero-day vulnerability in N-central, a network management platform, mere hours after its proof-of-concept (PoC) was published online. The flaw, dubbed 4EverAble2Shell, allows remote, unauthenticated attackers to execute code with root privileges. This rapid exploitation highlights the extreme danger of publicizing unpatched vulnerabilities. Organizations using N-central must apply the vendor's emergency patch immediately to prevent unauthorized system takeover. This incident serves as a critical warning for security vendors regarding the risks of premature vulnerability disclosures.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 14 2026",
+            "headline": "AI Tools Fueling Ransomware Boom",
+            "title": "Automated Ransomware Threat Escalates as AI Lowers Attack Barriers",
+            "content": "Attackers with limited technical skills are leveraging generative AI (GenAI) tools to launch sophisticated ransomware campaigns, marking a significant shift in the threat landscape. These AI-assisted attacks automate the creation of phishing lures, malware code, and social engineering scripts, increasing the scale and success rate of campaigns. The primary victims are small-to-medium enterprises (SMEs) and critical infrastructure sectors, which often lack the advanced endpoint detection and response (EDR) capabilities to counter these automated threats. Security professionals must prioritize advanced email filtering, user awareness training, and continuous monitoring to mitigate this emerging AI-fueled ransomware risk.",
+            "source": "Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "AI Graveyard: Siri, OpenAI Projects Shut Down",
+            "title": "High-Profile AI Projects Fail to Launch or Meet Expectations",
+            "content": "Numerous high-profile artificial intelligence (AI) initiatives from major technology companies have been delayed or discontinued, highlighting the challenges of commercializing complex AI systems. Apple's advanced Siri AI, designed to use on-device large language models (LLMs), has been repeatedly pushed back due to technical hurdles. Concurrently, OpenAI's ambitious \"super app\" project, which aimed to integrate multiple services, was shut down after failing to achieve product-market fit. These failures underscore the immense technical and financial barriers facing AI startups and established tech giants in delivering reliable, consumer-ready AI products.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "Asian Governments React to Nvidia CEO Exit",
+            "title": "Asian Nations Monitor Nvidia Leadership Change for Supply Chain Impact",
+            "content": "Following Nvidia CEO Jensen Huang's departure, various Asian governments are actively assessing the potential impact on local semiconductor supply chains and AI infrastructure projects. Some nations are moving to formally confirm long-term chip supply commitments to ensure continuity for their domestic tech sectors. Other governments are monitoring the transition closely, particularly regarding the leadership of the company's key executive team. This period of uncertainty is also intersecting with ongoing regulatory investigations into Nvidia's market practices, adding a layer of complexity to global AI hardware procurement strategies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "Ex-OpenAI Board Member Questions AI CEO Trust",
+            "title": "Former OpenAI Director Warns Against Blind Trust in AI Leadership",
+            "content": "Helen Toner, the former OpenAI board member who voted to remove Sam Altman as CEO, argues that the tech industry must not place uncritical trust in AI company executives during a pivotal moment in artificial intelligence (AI) development. In a recent interview, Toner emphasized the critical need for robust internal governance, independent oversight, and strong safety protocols to prevent unchecked power. She highlighted the risks of concentrating immense influence in the hands of a few individuals, especially when managing systems with potentially transformative societal impacts. Stakeholders, including regulators and the public, must demand greater transparency and accountability from AI organizations.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 14 2026",
+            "headline": "Nvidia's Jensen Huang: The End of the Visionary Founder?",
+            "title": "Nvidia CEO's Departure Signals a Shift in Tech Leadership Archetype",
+            "content": "Nvidia CEO Jensen Huang's recent exit from his role marks a notable moment in the evolution of the technology industry's leadership model. Known for his charismatic, high-energy keynote presentations and visionary product roadmaps, Huang's tenure epitomized the \"showman founder\" archetype that dominated the late 20th and early 21st centuries. His departure raises questions about the future of a company built heavily around a single, charismatic leader and the industry's broader transition toward more collaborative, corporate-driven innovation. The tech sector is increasingly moving away from the cult-of-personality model toward stable, institutional management structures.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Second Congressional Probe Targets Nvidia's China Sales",
+            "title": "Democrats Launch Second Congressional Investigation into Nvidia's China Sales and Trump Dealings",
+            "content": "House Democrats have opened a second Congressional investigation into Nvidia's China sales and its alleged dealings with former President Donald Trump. This probe follows news of an alleged spy affair involving Nvidia's relationship with the Trump administration. The investigation focuses on whether Nvidia violated export control laws regarding advanced semiconductor sales to China. The scrutiny highlights heightened political concerns over AI chip exports to China and potential national security risks. Industry observers should monitor the investigation's findings for potential regulatory impacts on Nvidia's global business operations and supply chain compliance requirements.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "AI Startup Muse Charges for Outbound Business Calls",
+            "title": "AI Startup Muse Introduces Paid Outbound Calling for US Businesses",
+            "content": "AI startup Muse has launched a paid service allowing its AI agents to place outbound calls to US businesses. The feature is not free, requiring businesses to pay for the AI-driven customer service and sales interactions. The paid model reflects a shift from freemium AI tools to direct monetization for enterprise-grade automation. This move positions Muse against competitors like Dialpad and Bland.ai in the rapidly expanding enterprise AI voice agent market. Businesses should evaluate their customer service workflows to determine if AI voice automation aligns with their operational goals and budget constraints.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Google's Gemini 4 Hydrogen Tackles Complex Queries",
+            "title": "Google's Gemini 4 Hydrogen Model Enhances Understanding of Complex Queries",
+            "content": "Google has announced its new Gemini 4 Hydrogen model, designed to provide more helpful answers to complex questions. The model can break down multi-part questions and address each component in its responses, improving accuracy for highly specific or typo-heavy requests. This capability represents a significant advancement in natural language processing for AI assistants. The model is available starting today through Google's AI services. Developers and users should test the model's performance on their specific use cases to evaluate its effectiveness. This release continues Google's push to improve the reasoning capabilities of its Gemini family of models.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Nebius Plans $40B AI Infrastructure Expansion",
+            "title": "Nebius Tests Neocloud Model with $40 Billion AI Infrastructure Spending",
+            "content": "Nebius is testing its neocloud business model with a planned $40 billion AI infrastructure expansion. The company plans to fund this massive spending through customer prepayments and loans, a novel approach in the hyperscaler market. However, delays at a Microsoft data center have raised questions about the viability of Nebius's financing model. The expansion aims to compete with major cloud providers like Amazon Web Services, Google Cloud, and Microsoft Azure in the AI infrastructure space. Investors and industry analysts should closely monitor Nebius's execution and funding strategy as it scales its operations.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 12 2026",
+            "headline": "Nvidia's Jensen Huang Had Third Affair",
+            "title": "Reuters Reports Jensen Huang Had Third Affair with Nvidia Employee",
+            "content": "Reuters reports that Nvidia CEO Jensen Huang was involved in a third affair with a current Nvidia employee, a fact the company has not publicly acknowledged. The news outlet is withholding the employee's name but confirms she is an Nvidia staff member. This revelation adds to the ongoing scrutiny of Huang and the company following a previous investigation into his relationship with former President Trump. The situation highlights the personal and professional risks for tech leaders in the public eye. Stakeholders should be aware of the potential for reputational damage to Nvidia and its leadership.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 12 2026",
             "headline": "Huang Exit Threatens Nvidia Open-Source AI",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google researcher Pietro Miotti's claim that AI agents discovered a previously unknown Maya site in Mexico was debunked after the location was identified in a 2025 academic journal. The incident highlights the critical need for rigorous source verification when utilizing AI for archaeological research. It serves as a cautionary tale against over-reliance on unverified automated data extraction. Researchers must cross-reference AI-generated findings with established historical records before publication.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "China's Top AI Models Built on Banned Nvidia Chips",
-            "title": "Banned Nvidia Chips Power China's Most Advanced AI Models",
-            "content": "New research reveals China's leading AI models were trained on U.S. export-banned Nvidia A100 GPUs. The discovery exposes a critical loophole in semiconductor export controls designed to restrict China's AI infrastructure development. This undermines U.S. national security objectives and complicates the global AI supply chain. Security professionals must audit AI hardware procurement chains for sanctioned components to ensure compliance. The findings highlight the growing challenge of enforcing technology export restrictions in the AI race.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "SimReady Assets Accelerate Robot Pick-and-Place Simulation",
-            "title": "Hugging Face Introduces SimReady Assets for Advanced Robotics",
-            "content": "Hugging Face released SimReady assets to streamline the development of robot pick-and-place simulations. These assets provide pre-configured physics simulations and 3D models for robotic manipulation tasks. Developers can now rapidly prototype and test robotic control algorithms without building simulations from scratch. This accelerates research and development in industrial automation and logistics robotics. Users should integrate these assets into their robotics pipelines to reduce simulation setup time.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "XYBench Tackles the Problem Behind AI Questions",
-            "title": "XYBench Addresses the Root Cause of AI Misinterpretation",
-            "content": "XYBench is a new evaluation framework designed to diagnose the underlying causes of AI model errors. It moves beyond simple accuracy metrics to analyze why models fail on specific tasks. The benchmark identifies systematic weaknesses in reasoning, data bias, and instruction following. Researchers can use XYBench to pinpoint specific failure modes in large language models. This tool is essential for developers aiming to improve model robustness and reliability.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/allenai/xybench",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "ChatGPT Wallet Lets AI Agents Shop for You",
-            "title": "OpenAI Launches ChatGPT Wallet for Autonomous AI Agent Transactions",
-            "content": "OpenAI launched the ChatGPT Wallet, enabling AI agents to perform e-commerce tasks on behalf of users. The feature allows AI to browse products, complete checkouts, and process payments securely. Initially, the wallet is available exclusively to U.S. Pro subscribers. This represents a major step toward autonomous AI agents and could reshape online retail. Users must review transaction logs regularly to monitor agent activity and prevent unauthorized purchases.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Jensen Huang Resigns—Nvidia Faces National Security Crisis",
-            "title": "Jensen Huang Resigns from Nvidia Amid National Security Concerns",
-            "content": "Nvidia CEO Jensen Huang has resigned following a personal scandal, triggering a leadership crisis. His departure raises immediate concerns about the strategic direction of Nvidia's AI chip division. The U.S. and China are locked in a race to build the most advanced AI infrastructure. This transition could impact global AI supply chains and semiconductor geopolitics. Investors and security professionals should monitor Nvidia's interim leadership and executive succession plans closely.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "OpenAI Launches Secure Agent Wallet",
-            "title": "OpenAI Introduces ChatGPT Wallet for Agent Purchases",
-            "content": "OpenAI launched ChatGPT Wallet, a secure payment system enabling AI agents in ChatGPT Work, Codex, and dots to execute transactions. The wallet requires explicit user approval for each purchase and leverages existing credit card protection policies to secure transactions. This integration streamlines enterprise workflows by allowing AI agents to autonomously handle procurement tasks without compromising financial security. Developers can configure the wallet through the OpenAI API to automate software licensing and cloud resource purchases.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Huang Steps Down—Nvidia China Saga Begins",
-            "title": "Nvidia CEO Jensen Huang Resigns as US-China AI Tensions Escalate",
-            "content": "Nvidia CEO Jensen Huang stepped down from his executive role on Thursday, triggering a leadership transition at the semiconductor giant. The resignation follows a prolonged saga involving Nvidia's strategic positioning in China and its complex relationship with US government export controls. The company faces mounting pressure to navigate geopolitical restrictions while maintaining its dominance in AI chip manufacturing. Industry analysts expect a prolonged power struggle at the executive level as the board searches for a permanent successor.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "ElevenLabs Unveils AI Meeting App",
-            "title": "ElevenLabs Launches Team-Focused Dictation and Notetaking App",
-            "content": "ElevenLabs released an AI-powered meeting notetaker and dictation application designed for enterprise teams. The tool transcribes conversations in real-time, generates structured summaries, and integrates with existing collaboration platforms to streamline post-meeting workflows. Enterprise administrators can deploy the application via API to customize transcription models for industry-specific terminology and compliance requirements. The launch signals a shift from consumer-facing AI tools to specialized enterprise productivity solutions.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "llama.cpp 1.0.0 Strengthens Local AI",
-            "title": "llama.cpp v1.0.0 Released to Bolster Local AI Infrastructure",
-            "content": "The Hugging Face team published llama.cpp version 1.0.0, establishing a standardized foundation for running large language models (LLMs) locally on consumer hardware. The release includes optimized inference engines supporting Apple Silicon, NVIDIA GPUs, and AMD processors with up to 40% faster token generation compared to previous versions. Developers can now deploy models like Llama 3.1 and Mistral 7B directly on edge devices without cloud dependencies. The stable release encourages organizations to build air-gapped AI applications for sensitive data processing.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 13 2026",
-            "headline": "Anthropic's Claude Duet Agent",
-            "title": "Anthropic's Claude Duet Agent Offers Unusually Helpful Assistance",
-            "content": "Anthropic introduced Claude Duet, an AI agent designed for non-technical consumers to perform autonomous tasks within its ecosystem. Unlike standard AI assistants, Duet proactively offers to draft responses, summarize documents, and organize schedules without requiring explicit prompts from the user. The agent's behavior demonstrates a shift toward proactive AI assistance, though reviewers noted occasional over-eagerness in task completion attempts. Anthropic plans to expand Duet's capabilities to include third-party application integrations through its API.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
             "relatedResources": []
         }
     ],
