@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-14T05:13:08.846795+00:00",
-  "last_updated_formatted": "Nov 14, 2026 05:13 UTC",
+  "last_updated": "2026-11-14T17:42:43.669363+00:00",
+  "last_updated_formatted": "Nov 14, 2026 17:42 UTC",
   "period": "Last 7 days",
   "provenance": "Aggregated dark web extortion notices via Ransomware.live telemetry",
   "verification_note": "Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.",
-  "total_groups": 36,
+  "total_groups": 37,
   "total_victims": 200,
-  "disclosures_24h": 20,
-  "disclosures_today": 2,
+  "disclosures_24h": 16,
+  "disclosures_today": 5,
   "top_threat_actor": "Incransom",
-  "top_target_sector": "Professional Services",
-  "top_target_sector_sub": "14 disclosures (46% unclassified)",
+  "top_target_sector": "Multiple / Unclassified",
+  "top_target_sector_sub": "46% unclassified",
   "sector_coverage": {
     "total_records": 200,
     "classified_count": 107,
@@ -873,8 +873,8 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 53,
-        "prior_3_days": 0
+        "last_3_days": 52,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -1365,8 +1365,8 @@
           "post_url": "https://www.ransomware.live/id/Q3VzdG9tIEZsb29ycyBVbmxpbWl0ZWRAaW50ZXJsb2Nr",
           "country": "United States",
           "country_code": "US",
-          "sector": "Retail & E-Commerce",
-          "domain": "customfloorsunlimited.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Custom Floors Unlimited designs and installs high-quality, custom-made solid wood flooring. They specialize in creating unique designs. However, they do not specialize in ensuring their own security o",
           "source": "ransomware.live/rss"
@@ -1380,8 +1380,8 @@
           "post_url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw",
           "country": "United States",
           "country_code": "US",
-          "sector": "Education",
-          "domain": "mvsd11.org",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "The Meadows Valley School District strives to prepare all students for life's demands, adventures, and challenges. While the district offers educational services designed to foster student growth and ",
           "source": "ransomware.live/rss"
@@ -1395,8 +1395,8 @@
           "post_url": "https://www.ransomware.live/id/UmlkZ3dheSBIaWdoIFNjaG9vbEBpbnRlcmxvY2s",
           "country": "United States",
           "country_code": "US",
-          "sector": "Education",
-          "domain": "ridgway.k12.co.us",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Ridgeway R-2 School District states its commitment to providing a safe and inclusive learning environment for students, however, their failure to secure your data and their failure to address this iss",
           "source": "ransomware.live/rss"
@@ -1410,8 +1410,8 @@
           "post_url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s",
           "country": "United States",
           "country_code": "US",
-          "sector": "Healthcare",
-          "domain": "southwestortho.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Southwest Orthopedic & Reconstructive Specialists, a clinic located in Oklahoma, is required by law to maintain protected health information (PHI) as a healthcare facility. However, due to its neglige",
           "source": "ransomware.live/rss"
@@ -1509,7 +1509,6 @@
       ],
       "industries": [
         "Education",
-        "Healthcare",
         "Not Found",
         "Retail & E-Commerce"
       ],
@@ -1524,8 +1523,8 @@
       "trend": "down",
       "trend_label": "Decelerating",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 11
+        "last_3_days": 1,
+        "prior_3_days": 12
       },
       "daily_counts": [
         0,
@@ -1952,8 +1951,8 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 9,
-        "prior_3_days": 0
+        "last_3_days": 7,
+        "prior_3_days": 2
       },
       "daily_counts": [
         0,
@@ -2253,11 +2252,11 @@
         "GB",
         "US"
       ],
-      "trend": "up",
-      "trend_label": "Accelerating",
+      "trend": "stable",
+      "trend_label": "Steady",
       "recent_velocity": {
-        "last_3_days": 6,
-        "prior_3_days": 0
+        "last_3_days": 3,
+        "prior_3_days": 3
       },
       "daily_counts": [
         0,
@@ -2687,137 +2686,6 @@
       "last_seen": "2026-11-10T12:52:35+00:00"
     },
     {
-      "name": "Vortex",
-      "count": 6,
-      "victims": [
-        {
-          "id": "b7da5c1dfd2b",
-          "group_name": "Vortex",
-          "victim_name": "Scripps",
-          "discovered": "2026-11-10T04:57:08+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U2NyaXBwc0BWb3J0ZXg",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: FULL\nPatient clinical records and PHI, physician credentialing files, workforce timekeeping and leave records, emergency notification and contact data, legal-hold an...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "420812e4388e",
-          "group_name": "Vortex",
-          "victim_name": "Storage Mart",
-          "discovered": "2026-11-10T04:56:25+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U3RvcmFnZSBNYXJ0QFZvcnRleA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: FULL\nMassive tenant PII exposure at scale: tens of thousands of rental agreements containing names, addresses, ID and driver's-license copies and payment data, plus...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "d3d7cb460288",
-          "group_name": "Vortex",
-          "victim_name": "Air Communities",
-          "discovered": "2026-11-10T04:55:53+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QWlyIENvbW11bml0aWVzQFZvcnRleA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: DATA\naccounts payable/receivable, audited financials FY2006–FY2013, TRS restructuring, total ownership summaries, disposition closing CDs, debt documents, per-proper...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "350d6e44cb1c",
-          "group_name": "Vortex",
-          "victim_name": "Karlstorz",
-          "discovered": "2026-11-10T04:55:19+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/S2FybHN0b3J6QFZvcnRleA",
-          "country": "Germany",
-          "country_code": "DE",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: FULL\nSurgical-device R&D and product design files, regulatory and quality documentation, thousands of hospital and vendor contracts, tens of thousands of mail export...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "e91eb3e20f2a",
-          "group_name": "Vortex",
-          "victim_name": "Andersen Construction",
-          "discovered": "2026-11-10T04:54:46+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QW5kZXJzZW4gQ29uc3RydWN0aW9uQFZvcnRleA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: FULL\n════════════════════════════════════════════════════════════════\nANDERSEN CONSTRUCTION — CONSOLIDATED FINANCIALS\nSources: SLT Meeting Financial Update (07-08-...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "a051d19afb77",
-          "group_name": "Vortex",
-          "victim_name": "SimonMed",
-          "discovered": "2026-11-10T04:53:49+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U2ltb25NZWRAVm9ydGV4",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Type: FULL\nImaging-center operations: tens of thousands of mailbox exports, patient scheduling and imaging-adjacent documents, HR, insurance and vendor files.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "Germany",
-        "United States"
-      ],
-      "country_codes": [
-        "DE",
-        "US"
-      ],
-      "trend": "down",
-      "trend_label": "Decelerating",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 6
-      },
-      "daily_counts": [
-        0,
-        0,
-        6,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-08",
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14"
-      ],
-      "first_seen": "2026-11-10T04:53:49+00:00",
-      "last_seen": "2026-11-10T04:57:08+00:00"
-    },
-    {
       "name": "Qilin",
       "count": 5,
       "victims": [
@@ -3041,80 +2909,78 @@
       "last_seen": "2026-11-12T09:42:53+00:00"
     },
     {
-      "name": "Climax Inc",
+      "name": "Vortex",
       "count": 4,
       "victims": [
         {
-          "id": "0d5ed63f282b",
-          "group_name": "Climax inc",
-          "victim_name": "Redacted Redacted",
-          "discovered": "2026-11-10T12:54:38+00:00",
+          "id": "b7da5c1dfd2b",
+          "group_name": "Vortex",
+          "victim_name": "Scripps",
+          "discovered": "2026-11-10T04:57:08+00:00",
           "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/UmVkYWN0ZWQgUmVkYWN0ZWRAQ2xpbWF4IEluYw",
-          "country": null,
-          "country_code": null,
+          "post_url": "https://www.ransomware.live/id/U2NyaXBwc0BWb3J0ZXg",
+          "country": "United States",
+          "country_code": "US",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Sector: Medical",
+          "description_snippet": "Type: FULL\nPatient clinical records and PHI, physician credentialing files, workforce timekeeping and leave records, emergency notification and contact data, legal-hold an...",
           "source": "ransomware.live/rss"
         },
         {
-          "id": "1d7af2bbd18d",
-          "group_name": "Climax inc",
-          "victim_name": "Nepal Electricity Authority",
-          "discovered": "2026-11-10T12:54:04+00:00",
+          "id": "420812e4388e",
+          "group_name": "Vortex",
+          "victim_name": "Storage Mart",
+          "discovered": "2026-11-10T04:56:25+00:00",
           "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TmVwYWwgRWxlY3RyaWNpdHkgQXV0aG9yaXR5QENsaW1heCBJbmM",
-          "country": "Nepal",
-          "country_code": "NP",
+          "post_url": "https://www.ransomware.live/id/U3RvcmFnZSBNYXJ0QFZvcnRleA",
+          "country": "United States",
+          "country_code": "US",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Sector: Electricity supplier\nStatus: Published",
+          "description_snippet": "Type: FULL\nMassive tenant PII exposure at scale: tens of thousands of rental agreements containing names, addresses, ID and driver's-license copies and payment data, plus...",
           "source": "ransomware.live/rss"
         },
         {
-          "id": "aec13d24a961",
-          "group_name": "Climax inc",
-          "victim_name": "Frolina Home",
-          "discovered": "2026-11-10T12:53:22+00:00",
+          "id": "d3d7cb460288",
+          "group_name": "Vortex",
+          "victim_name": "Air Communities",
+          "discovered": "2026-11-10T04:55:53+00:00",
           "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM",
-          "country": "Brazil",
-          "country_code": "BR",
+          "post_url": "https://www.ransomware.live/id/QWlyIENvbW11bml0aWVzQFZvcnRleA",
+          "country": "United States",
+          "country_code": "US",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Sector: Manufacturer\nStatus: Published",
+          "description_snippet": "Type: DATA\naccounts payable/receivable, audited financials FY2006–FY2013, TRS restructuring, total ownership summaries, disposition closing CDs, debt documents, per-proper...",
           "source": "ransomware.live/rss"
         },
         {
-          "id": "adba73d71dd5",
-          "group_name": "Climax inc",
-          "victim_name": "Mayur Group",
-          "discovered": "2026-11-10T04:53:27+00:00",
+          "id": "350d6e44cb1c",
+          "group_name": "Vortex",
+          "victim_name": "Karlstorz",
+          "discovered": "2026-11-10T04:55:19+00:00",
           "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TWF5dXIgR3JvdXBAQ2xpbWF4IEluYw",
-          "country": "India",
-          "country_code": "IN",
+          "post_url": "https://www.ransomware.live/id/S2FybHN0b3J6QFZvcnRleA",
+          "country": "Germany",
+          "country_code": "DE",
           "sector": null,
           "domain": null,
           "status": null,
-          "description_snippet": "Sector: Food provider\nStatus: Published",
+          "description_snippet": "Type: FULL\nSurgical-device R&D and product design files, regulatory and quality documentation, thousands of hospital and vendor contracts, tens of thousands of mail export...",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [],
       "countries": [
-        "Brazil",
-        "India",
-        "Nepal"
+        "Germany",
+        "United States"
       ],
       "country_codes": [
-        "BR",
-        "IN",
-        "NP"
+        "DE",
+        "US"
       ],
       "trend": "down",
       "trend_label": "Decelerating",
@@ -3140,8 +3006,8 @@
         "2026-11-13",
         "2026-11-14"
       ],
-      "first_seen": "2026-11-10T04:53:27+00:00",
-      "last_seen": "2026-11-10T12:54:38+00:00"
+      "first_seen": "2026-11-10T04:55:19+00:00",
+      "last_seen": "2026-11-10T04:57:08+00:00"
     },
     {
       "name": "Panzer",
@@ -3211,8 +3077,8 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 3,
-        "prior_3_days": 0
+        "last_3_days": 2,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -3390,11 +3256,11 @@
         "CA",
         "US"
       ],
-      "trend": "up",
-      "trend_label": "Accelerating",
+      "trend": "down",
+      "trend_label": "Decelerating",
       "recent_velocity": {
-        "last_3_days": 3,
-        "prior_3_days": 0
+        "last_3_days": 1,
+        "prior_3_days": 2
       },
       "daily_counts": [
         0,
@@ -3509,6 +3375,92 @@
       "last_seen": "2026-11-12T23:19:34+00:00"
     },
     {
+      "name": "Climax Inc",
+      "count": 3,
+      "victims": [
+        {
+          "id": "0d5ed63f282b",
+          "group_name": "Climax inc",
+          "victim_name": "Redacted Redacted",
+          "discovered": "2026-11-10T12:54:38+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/UmVkYWN0ZWQgUmVkYWN0ZWRAQ2xpbWF4IEluYw",
+          "country": null,
+          "country_code": null,
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Sector: Medical",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "1d7af2bbd18d",
+          "group_name": "Climax inc",
+          "victim_name": "Nepal Electricity Authority",
+          "discovered": "2026-11-10T12:54:04+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/TmVwYWwgRWxlY3RyaWNpdHkgQXV0aG9yaXR5QENsaW1heCBJbmM",
+          "country": "Nepal",
+          "country_code": "NP",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Sector: Electricity supplier\nStatus: Published",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "aec13d24a961",
+          "group_name": "Climax inc",
+          "victim_name": "Frolina Home",
+          "discovered": "2026-11-10T12:53:22+00:00",
+          "discovered_date": "2026-11-10",
+          "post_url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM",
+          "country": "Brazil",
+          "country_code": "BR",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "Sector: Manufacturer\nStatus: Published",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [],
+      "countries": [
+        "Brazil",
+        "Nepal"
+      ],
+      "country_codes": [
+        "BR",
+        "NP"
+      ],
+      "trend": "down",
+      "trend_label": "Decelerating",
+      "recent_velocity": {
+        "last_3_days": 0,
+        "prior_3_days": 3
+      },
+      "daily_counts": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "first_seen": "2026-11-10T12:53:22+00:00",
+      "last_seen": "2026-11-10T12:54:38+00:00"
+    },
+    {
       "name": "Black X",
       "count": 3,
       "victims": [
@@ -3595,6 +3547,151 @@
       "last_seen": "2026-11-10T04:58:13+00:00"
     },
     {
+      "name": "Netrunner",
+      "count": 2,
+      "victims": [
+        {
+          "id": "4a3bb5975056",
+          "group_name": "Netrunner",
+          "victim_name": "F***** G****** C********** C***",
+          "discovered": "2026-11-14T17:27:01+00:00",
+          "discovered_date": "2026-11-14",
+          "post_url": "https://www.ransomware.live/id/RioqKioqIEcqKioqKiogQyoqKioqKioqKiogQyoqKkBuZXRydW5uZXI",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "65450749f2b1",
+          "group_name": "Netrunner",
+          "victim_name": "I****** A*****",
+          "discovered": "2026-11-14T01:30:50+00:00",
+          "discovered_date": "2026-11-14",
+          "post_url": "https://www.ransomware.live/id/SSoqKioqKiBBKioqKipAbmV0cnVubmVy",
+          "country": "Kuwait",
+          "country_code": "KW",
+          "sector": "Not Found",
+          "domain": null,
+          "status": null,
+          "description_snippet": "",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Not Found"
+      ],
+      "countries": [
+        "Kuwait",
+        "United States"
+      ],
+      "country_codes": [
+        "KW",
+        "US"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "daily_labels": [
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "first_seen": "2026-11-14T01:30:50+00:00",
+      "last_seen": "2026-11-14T17:27:01+00:00"
+    },
+    {
+      "name": "Endzone",
+      "count": 2,
+      "victims": [
+        {
+          "id": "d54a68da6385",
+          "group_name": "Endzone",
+          "victim_name": "Momentum Telecom",
+          "discovered": "2026-11-14T12:25:18+00:00",
+          "discovered_date": "2026-11-14",
+          "post_url": "https://www.ransomware.live/id/TW9tZW50dW0gVGVsZWNvbUBFbmRab25l",
+          "country": null,
+          "country_code": null,
+          "sector": "Technology",
+          "domain": "abc4.com",
+          "status": null,
+          "description_snippet": "Revenue: $221.7 million\n\nMomentum is a telecommunications company founded in 2001 that provides cloud-based communication solutions for businesses, specializing in cloud voice services, managed networ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "d74e730552b6",
+          "group_name": "Endzone",
+          "victim_name": "Absolute Bail Bonds",
+          "discovered": "2026-11-14T12:24:57+00:00",
+          "discovered_date": "2026-11-14",
+          "post_url": "https://www.ransomware.live/id/QWJzb2x1dGUgQmFpbCBCb25kc0BFbmRab25l",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Financial Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "Revenue: $15.1 million\n\nAbsolute Bail Bonds is a surety bail bond agency that has provided 24/7 pretrial release services across California since 1987. Founded in Lancaster and headquartered in Los An",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Financial Services",
+        "Technology"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "country_codes": [
+        "US"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "daily_labels": [
+        "2026-11-08",
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "first_seen": "2026-11-14T12:24:57+00:00",
+      "last_seen": "2026-11-14T12:25:18+00:00"
+    },
+    {
       "name": "Everest",
       "count": 2,
       "victims": [
@@ -3607,7 +3704,7 @@
           "post_url": "https://www.ransomware.live/id/R3J1bmRiYXVsYWJvciBUcmllciBHbWJIQGV2ZXJlc3Q",
           "country": "Germany",
           "country_code": "DE",
-          "sector": null,
+          "sector": "Manufacturing",
           "domain": null,
           "status": null,
           "description_snippet": "[AI generated] N/A\n\nI don't have verified, reliable information about a specific company called \"Grundbaulabor Trier GmbH.\" While the name suggests a geotechnical or soil mechanics testing laboratory ",
@@ -3630,6 +3727,7 @@
         }
       ],
       "industries": [
+        "Manufacturing",
         "Other"
       ],
       "countries": [
@@ -3715,8 +3813,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
+        "last_3_days": 1,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -3997,8 +4095,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
+        "last_3_days": 1,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -4069,8 +4167,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
+        "last_3_days": 0,
+        "prior_3_days": 2
       },
       "daily_counts": [
         0,
@@ -4138,8 +4236,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
+        "last_3_days": 0,
+        "prior_3_days": 2
       },
       "daily_counts": [
         0,
@@ -4161,60 +4259,6 @@
       ],
       "first_seen": "2026-11-10T18:20:50+00:00",
       "last_seen": "2026-11-10T18:21:10+00:00"
-    },
-    {
-      "name": "Netrunner",
-      "count": 1,
-      "victims": [
-        {
-          "id": "65450749f2b1",
-          "group_name": "Netrunner",
-          "victim_name": "I****** A*****",
-          "discovered": "2026-11-14T01:30:50+00:00",
-          "discovered_date": "2026-11-14",
-          "post_url": "https://www.ransomware.live/id/SSoqKioqKiBBKioqKipAbmV0cnVubmVy",
-          "country": "Kuwait",
-          "country_code": "KW",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "Kuwait"
-      ],
-      "country_codes": [
-        "KW"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
-      },
-      "daily_counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "daily_labels": [
-        "2026-11-08",
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14"
-      ],
-      "first_seen": "2026-11-14T01:30:50+00:00",
-      "last_seen": "2026-11-14T01:30:50+00:00"
     },
     {
       "name": "Wallstreet",
@@ -4580,8 +4624,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
+        "last_3_days": 0,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -4661,6 +4705,51 @@
   ],
   "victims": [
     {
+      "id": "4a3bb5975056",
+      "group_name": "Netrunner",
+      "victim_name": "F***** G****** C********** C***",
+      "discovered": "2026-11-14T17:27:01+00:00",
+      "discovered_date": "2026-11-14",
+      "post_url": "https://www.ransomware.live/id/RioqKioqIEcqKioqKiogQyoqKioqKioqKiogQyoqKkBuZXRydW5uZXI",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "d54a68da6385",
+      "group_name": "Endzone",
+      "victim_name": "Momentum Telecom",
+      "discovered": "2026-11-14T12:25:18+00:00",
+      "discovered_date": "2026-11-14",
+      "post_url": "https://www.ransomware.live/id/TW9tZW50dW0gVGVsZWNvbUBFbmRab25l",
+      "country": null,
+      "country_code": null,
+      "sector": "Technology",
+      "domain": "abc4.com",
+      "status": null,
+      "description_snippet": "Revenue: $221.7 million\n\nMomentum is a telecommunications company founded in 2001 that provides cloud-based communication solutions for businesses, specializing in cloud voice services, managed networ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "d74e730552b6",
+      "group_name": "Endzone",
+      "victim_name": "Absolute Bail Bonds",
+      "discovered": "2026-11-14T12:24:57+00:00",
+      "discovered_date": "2026-11-14",
+      "post_url": "https://www.ransomware.live/id/QWJzb2x1dGUgQmFpbCBCb25kc0BFbmRab25l",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Financial Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "Revenue: $15.1 million\n\nAbsolute Bail Bonds is a surety bail bond agency that has provided 24/7 pretrial release services across California since 1987. Founded in Lancaster and headquartered in Los An",
+      "source": "ransomware.live/rss"
+    },
+    {
       "id": "71b7bae06ed8",
       "group_name": "Everest",
       "victim_name": "Grundbaulabor Trier GmbH",
@@ -4669,7 +4758,7 @@
       "post_url": "https://www.ransomware.live/id/R3J1bmRiYXVsYWJvciBUcmllciBHbWJIQGV2ZXJlc3Q",
       "country": "Germany",
       "country_code": "DE",
-      "sector": null,
+      "sector": "Manufacturing",
       "domain": null,
       "status": null,
       "description_snippet": "[AI generated] N/A\n\nI don't have verified, reliable information about a specific company called \"Grundbaulabor Trier GmbH.\" While the name suggests a geotechnical or soil mechanics testing laboratory ",
@@ -4684,7 +4773,7 @@
       "post_url": "https://www.ransomware.live/id/SSoqKioqKiBBKioqKipAbmV0cnVubmVy",
       "country": "Kuwait",
       "country_code": "KW",
-      "sector": null,
+      "sector": "Not Found",
       "domain": null,
       "status": null,
       "description_snippet": "",
@@ -7369,8 +7458,8 @@
       "post_url": "https://www.ransomware.live/id/Q3VzdG9tIEZsb29ycyBVbmxpbWl0ZWRAaW50ZXJsb2Nr",
       "country": "United States",
       "country_code": "US",
-      "sector": "Retail & E-Commerce",
-      "domain": "customfloorsunlimited.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Custom Floors Unlimited designs and installs high-quality, custom-made solid wood flooring. They specialize in creating unique designs. However, they do not specialize in ensuring their own security o",
       "source": "ransomware.live/rss"
@@ -7384,8 +7473,8 @@
       "post_url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw",
       "country": "United States",
       "country_code": "US",
-      "sector": "Education",
-      "domain": "mvsd11.org",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "The Meadows Valley School District strives to prepare all students for life's demands, adventures, and challenges. While the district offers educational services designed to foster student growth and ",
       "source": "ransomware.live/rss"
@@ -7399,8 +7488,8 @@
       "post_url": "https://www.ransomware.live/id/UmlkZ3dheSBIaWdoIFNjaG9vbEBpbnRlcmxvY2s",
       "country": "United States",
       "country_code": "US",
-      "sector": "Education",
-      "domain": "ridgway.k12.co.us",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Ridgeway R-2 School District states its commitment to providing a safe and inclusive learning environment for students, however, their failure to secure your data and their failure to address this iss",
       "source": "ransomware.live/rss"
@@ -7414,8 +7503,8 @@
       "post_url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s",
       "country": "United States",
       "country_code": "US",
-      "sector": "Healthcare",
-      "domain": "southwestortho.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Southwest Orthopedic & Reconstructive Specialists, a clinic located in Oklahoma, is required by law to maintain protected health information (PHI) as a healthcare facility. However, due to its neglige",
       "source": "ransomware.live/rss"
@@ -7613,51 +7702,6 @@
       "domain": null,
       "status": null,
       "description_snippet": "Type: FULL\nSurgical-device R&D and product design files, regulatory and quality documentation, thousands of hospital and vendor contracts, tens of thousands of mail export...",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "e91eb3e20f2a",
-      "group_name": "Vortex",
-      "victim_name": "Andersen Construction",
-      "discovered": "2026-11-10T04:54:46+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/QW5kZXJzZW4gQ29uc3RydWN0aW9uQFZvcnRleA",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Type: FULL\n════════════════════════════════════════════════════════════════\nANDERSEN CONSTRUCTION — CONSOLIDATED FINANCIALS\nSources: SLT Meeting Financial Update (07-08-...",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "a051d19afb77",
-      "group_name": "Vortex",
-      "victim_name": "SimonMed",
-      "discovered": "2026-11-10T04:53:49+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/U2ltb25NZWRAVm9ydGV4",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Type: FULL\nImaging-center operations: tens of thousands of mailbox exports, patient scheduling and imaging-adjacent documents, HR, insurance and vendor files.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "adba73d71dd5",
-      "group_name": "Climax inc",
-      "victim_name": "Mayur Group",
-      "discovered": "2026-11-10T04:53:27+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/TWF5dXIgR3JvdXBAQ2xpbWF4IEluYw",
-      "country": "India",
-      "country_code": "IN",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Sector: Food provider\nStatus: Published",
       "source": "ransomware.live/rss"
     }
   ]
