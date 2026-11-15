@@ -1,12 +1,12 @@
 {
   "vendor": "SSL Blacklist",
-  "lastUpdated": "2026-11-16T02:29:06.970571+05:30",
+  "lastUpdated": "2026-11-16T04:34:53.715236+05:30",
   "totalCount": 10839,
   "displayedCount": 10839,
   "isCapped": false,
   "cappingStrategy": null,
-  "isStale": false,
-  "feedStatus": "active",
+  "isStale": true,
+  "feedStatus": "stale",
   "iocs": [
     {
       "type": "ssl-cert",
