@@ -1,7 +1,55 @@
 {
-  "last_updated": "2026-11-14T19:22:45.731422",
-  "total_incidents": 33112,
+  "last_updated": "2026-11-15T09:44:43.455836",
+  "total_incidents": 33116,
   "incidents": [
+    {
+      "id": "qilin_kayaku_safety_systems_malaysia_sdn_bhd",
+      "victim_name": "Kayaku Safety Systems Malaysia Sdn Bhd",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-11-14T21:36:07.809711+00:00",
+      "industry": "Manufacturing",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/7e52e37a0a0340893c311bb9ee541ed6.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=7495da1d-1723-4b5d-9f34-2215ac18fc71",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "scarlettgroup_fittleworth.com",
+      "victim_name": "fittleworth.com",
+      "threat_actor": "Scarlettgroup",
+      "date_discovered": "2026-11-14T18:16:18.167053+00:00",
+      "industry": "Retail & E-Commerce",
+      "website": "",
+      "claim": "Fittleworth is a UK healthcare company providing home delivery of medical supplies and support for people with stomas, continence needs, and wounds.",
+      "screenshot": "https://images.ransomware.live/victims/3842f7e6d866b0cfa72dd65bc92235e2.png",
+      "url": "http://scarlettgutttdlyxz6rdqfslpdvdqnnzuxvzfsqavys2hvtnd3aidyd.onion/?open=41012163b16bd81c4f",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "barracuda_finsa",
+      "victim_name": "FINSA",
+      "threat_actor": "Barracuda",
+      "date_discovered": "2026-11-14T17:50:40.941619+00:00",
+      "industry": "Financial Services",
+      "website": "",
+      "claim": "During an audit of FINSA—a multi-billion-dollar wood processing company—numerous violations in data storage and infrastructure security were identified.\nWe extracted all confidential and production files from their servers, totaling 800 GB. Following this, we completely halted operations by attacking the company’s virtualization.\n\nAmong the extracted data is now available:\n\n    Internal production information across FINSA’s facilities\n    Financial documents, databases, and reports\n    Full employee information\n    Wood processing materials and technologies\n    Contracts with partners and their terms\n    And much more.\n\nWe welcome anyone interested in purchasing all of this company’s data. Additionally, we are prepared to leak the files to the media, competitors, and legal firms for investigations and public lawsuits if you have any intentions toward this company. | Status: selling | $100,000",
+      "screenshot": "",
+      "url": "http://qr6uopkqxmq254osyct3oibil32xp3qsimkkbqdscsrsb4zqbagnifad.onion/FINSA.txt?download=1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "netrunner_f*****_g******_c**********_c***",
+      "victim_name": "F***** G****** C********** C***",
+      "threat_actor": "netrunner",
+      "date_discovered": "2026-11-14T17:27:01.418558+00:00",
+      "industry": "Not Found",
+      "website": "",
+      "claim": "",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "endzone_momentum_telecom",
       "victim_name": "Momentum Telecom",
