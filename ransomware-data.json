@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-15T05:06:33.051737+00:00",
-  "last_updated_formatted": "Nov 15, 2026 05:06 UTC",
+  "last_updated": "2026-11-15T18:31:29.102363+00:00",
+  "last_updated_formatted": "Nov 15, 2026 18:31 UTC",
   "period": "Last 7 days",
   "provenance": "Aggregated dark web extortion notices via Ransomware.live telemetry",
   "verification_note": "Disclosures reflect claimed victim notices published by ransomware groups on dark web leak sites and aggregated via Ransomware.live. These notices are not independently verified breaches.",
-  "total_groups": 36,
+  "total_groups": 32,
   "total_victims": 200,
-  "disclosures_24h": 16,
-  "disclosures_today": 0,
+  "disclosures_24h": 35,
+  "disclosures_today": 24,
   "top_threat_actor": "Incransom",
-  "top_target_sector": "Not Found",
-  "top_target_sector_sub": "15 disclosures (42% unclassified)",
+  "top_target_sector": "Technology",
+  "top_target_sector_sub": "17 disclosures (42% unclassified)",
   "sector_coverage": {
     "total_records": 200,
     "classified_count": 117,
@@ -736,7 +736,7 @@
           "post_url": "https://www.ransomware.live/id/Q0lNU0EgTE9HSVNUSUNTQGluY3JhbnNvbQ",
           "country": "United States",
           "country_code": "US",
-          "sector": "Transportation",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "In the warehousing logistics business for over 20 years, we provide best-in-class warehouse storage solutions for both manufacturing plants in northeast Mexico and their suppliers by allowing parts an",
@@ -821,8 +821,7 @@
       "industries": [
         "Manufacturing",
         "Professional Services",
-        "Retail & E-Commerce",
-        "Transportation"
+        "Retail & E-Commerce"
       ],
       "countries": [
         "Canada",
@@ -1308,6 +1307,366 @@
       "last_seen": "2026-11-12T09:57:13+00:00"
     },
     {
+      "name": "Pixelleaks",
+      "count": 20,
+      "victims": [
+        {
+          "id": "f1a52f87b77f",
+          "group_name": "Pixelleaks",
+          "victim_name": "PT. Fiber Networks Indonesia (AltosDLP surveillance platform, fiber.net.id)",
+          "discovered": "2026-11-15T09:06:32+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/UFQuIEZpYmVyIE5ldHdvcmtzIEluZG9uZXNpYSAoQWx0b3NETFAgc3VydmVpbGxhbmNlIHBsYXRmb3JtLCBmaWJlci5uZXQuaWQpQFBpeGVsTGVha3M",
+          "country": "Indonesia",
+          "country_code": "ID",
+          "sector": "Technology",
+          "domain": "fiber.net.id",
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the ISP / endpoint-surveillance services sector. The material scheduled for publication comprises a set of business records, ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "5a41bbe25d3c",
+          "group_name": "Pixelleaks",
+          "victim_name": "Huangshi Medical Laboratory (黄石医养医学检验) / Ezong Medical Group x Getein JV",
+          "discovered": "2026-11-15T09:06:11+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/SHVhbmdzaGkgTWVkaWNhbCBMYWJvcmF0b3J5ICjpu4Tnn7PljLvlhbvljLvlrabmo4DpqowpIC8gRXpvbmcgTWVkaWNhbCBHcm91cCB4IEdldGVpbiBKVkBQaXhlbExlYWtz",
+          "country": "China",
+          "country_code": "CN",
+          "sector": "Healthcare",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Medical laboratory / IVD supply chain (healthcare) sector. The material scheduled for publication comprises a set of busi",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "7fe2b392d546",
+          "group_name": "Pixelleaks",
+          "victim_name": "SPI Corp / SPI Energy group (spicorp-invest.com)",
+          "discovered": "2026-11-15T09:05:51+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/U1BJIENvcnAgLyBTUEkgRW5lcmd5IGdyb3VwIChzcGljb3JwLWludmVzdC5jb20pQFBpeGVsTGVha3M",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Energy & Utilities",
+          "domain": "spicorp-invest.com",
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Petroleum staffing & maintenance back-office (accounting services) sector. The material scheduled for publication compris",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "39a13c5ac3db",
+          "group_name": "Pixelleaks",
+          "victim_name": "BEAM Society (iBeam platform, www.ibeam.hk)",
+          "discovered": "2026-11-15T09:05:30+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/QkVBTSBTb2NpZXR5IChpQmVhbSBwbGF0Zm9ybSwgd3d3LmliZWFtLmhrKUBQaXhlbExlYWtz",
+          "country": "Hong Kong",
+          "country_code": "HK",
+          "sector": "Technology",
+          "domain": "www.ibeam.hk",
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Green-building certification (built environment) sector. The material scheduled for publication comprises a set of busine",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "4502c2263003",
+          "group_name": "Pixelleaks",
+          "victim_name": "King International Investment Ltd (HKEX: 00928, Lianhe Medical subsidiary)",
+          "discovered": "2026-11-15T09:05:09+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/S2luZyBJbnRlcm5hdGlvbmFsIEludmVzdG1lbnQgTHRkIChIS0VYOiAwMDkyOCwgTGlhbmhlIE1lZGljYWwgc3Vic2lkaWFyeSlAUGl4ZWxMZWFrcw",
+          "country": "Hong Kong",
+          "country_code": "HK",
+          "sector": "Healthcare",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Oncology genomics / genetic testing (healthcare) sector. The material scheduled for publication comprises a set of busine",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "def5f2f07d78",
+          "group_name": "Pixelleaks",
+          "victim_name": "International Utility Specialists Inc.",
+          "discovered": "2026-11-15T09:04:50+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/SW50ZXJuYXRpb25hbCBVdGlsaXR5IFNwZWNpYWxpc3RzIEluYy5AUGl4ZWxMZWFrcw",
+          "country": null,
+          "country_code": null,
+          "sector": "Energy & Utilities",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Utility bill auditing and energy cost consulting sector. The material scheduled for publication comprises a set of busine",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "6f4505acb05b",
+          "group_name": "Pixelleaks",
+          "victim_name": "Boston Institute of Finance (CRC designation, ex-InFRE, Colibri Group)",
+          "discovered": "2026-11-15T09:04:30+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/Qm9zdG9uIEluc3RpdHV0ZSBvZiBGaW5hbmNlIChDUkMgZGVzaWduYXRpb24sIGV4LUluRlJFLCBDb2xpYnJpIEdyb3VwKUBQaXhlbExlYWtz",
+          "country": null,
+          "country_code": null,
+          "sector": "Financial Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Nonprofit professional certification / retirement education sector. The material scheduled for publication comprises a se",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "c740fdb588bd",
+          "group_name": "Pixelleaks",
+          "victim_name": "Hofstetter Business Technologies",
+          "discovered": "2026-11-15T09:04:11+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/SG9mc3RldHRlciBCdXNpbmVzcyBUZWNobm9sb2dpZXNAUGl4ZWxMZWFrcw",
+          "country": null,
+          "country_code": null,
+          "sector": "Professional Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Medical speech recognition and digital dictation distribution sector. The material scheduled for publication comprises a ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "a0868b18824d",
+          "group_name": "Pixelleaks",
+          "victim_name": "Products Group International Inc",
+          "discovered": "2026-11-15T09:03:51+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/UHJvZHVjdHMgR3JvdXAgSW50ZXJuYXRpb25hbCBJbmNAUGl4ZWxMZWFrcw",
+          "country": null,
+          "country_code": null,
+          "sector": "Other",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Veterinary ultrasound equipment and supplies distribution sector. The material scheduled for publication comprises a set ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "e45178ee60e8",
+          "group_name": "Pixelleaks",
+          "victim_name": "Orion Communications Inc",
+          "discovered": "2026-11-15T09:03:32+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/T3Jpb24gQ29tbXVuaWNhdGlvbnMgSW5jQFBpeGVsTGVha3M",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Technology",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Telecommunications consulting and management agency sector. The material scheduled for publication comprises a set of bus",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "615d71e61ea0",
+          "group_name": "Pixelleaks",
+          "victim_name": "Missouri Welding Institute (missouriweldinginstitute.com)",
+          "discovered": "2026-11-15T09:03:12+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/TWlzc291cmkgV2VsZGluZyBJbnN0aXR1dGUgKG1pc3NvdXJpd2VsZGluZ2luc3RpdHV0ZS5jb20pQFBpeGVsTGVha3M",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Education",
+          "domain": "missouriweldinginstitute.com",
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Education (private welding trade school) sector. The material scheduled for publication comprises a set of business recor",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "671f1d6bf2d7",
+          "group_name": "Pixelleaks",
+          "victim_name": "Koehler Financial Group Inc",
+          "discovered": "2026-11-15T09:02:50+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/S29laGxlciBGaW5hbmNpYWwgR3JvdXAgSW5jQFBpeGVsTGVha3M",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Financial Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Financial services (insurance and investment advisory) sector. The material scheduled for publication comprises a set of ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "35e47189ab01",
+          "group_name": "Pixelleaks",
+          "victim_name": "Four Points Financial Solutions Inc.",
+          "discovered": "2026-11-15T09:02:31+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/Rm91ciBQb2ludHMgRmluYW5jaWFsIFNvbHV0aW9ucyBJbmMuQFBpeGVsTGVha3M",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Financial Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Financial advisory (insurance and investment planning) sector. The material scheduled for publication comprises a set of ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "091963dc5812",
+          "group_name": "Pixelleaks",
+          "victim_name": "Eagle Fire Extinguisher Company",
+          "discovered": "2026-11-15T09:02:11+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/RWFnbGUgRmlyZSBFeHRpbmd1aXNoZXIgQ29tcGFueUBQaXhlbExlYWtz",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Manufacturing",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Fire protection (extinguisher sales and service) sector. The material scheduled for publication comprises a set of busine",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "fc932df56eee",
+          "group_name": "Pixelleaks",
+          "victim_name": "AMD Capital",
+          "discovered": "2026-11-15T09:01:52+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/QU1EIENhcGl0YWxAUGl4ZWxMZWFrcw",
+          "country": null,
+          "country_code": null,
+          "sector": "Financial Services",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the Capital introduction and manager research (financial services) sector. The material scheduled for publication comprises a",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "526b0b7e84d4",
+          "group_name": "Pixelleaks",
+          "victim_name": "PC Express (Multimedia Informatica)",
+          "discovered": "2026-11-15T09:01:32+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/UEMgRXhwcmVzcyAoTXVsdGltZWRpYSBJbmZvcm1hdGljYSlAUGl4ZWxMZWFrcw",
+          "country": "Philippines",
+          "country_code": "PH",
+          "sector": "Technology",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from a hosted email and IT services provider in Italy. The material scheduled for publication comprises the hosted mail database, covering more than ",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "3970d648ed46",
+          "group_name": "Pixelleaks",
+          "victim_name": "Al Enaya General Trading (SERVERTALLY)",
+          "discovered": "2026-11-15T09:01:01+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/QWwgRW5heWEgR2VuZXJhbCBUcmFkaW5nIChTRVJWRVJUQUxMWSlAUGl4ZWxMZWFrcw",
+          "country": null,
+          "country_code": null,
+          "sector": "Other",
+          "domain": null,
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from an organization in the General trading / textiles sector. The material scheduled for publication comprises a set of business records.",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "4a3a1a020c14",
+          "group_name": "Pixelleaks",
+          "victim_name": "Clinica Suiza Lab",
+          "discovered": "2026-11-15T09:00:34+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/Q2xpbmljYSBTdWl6YSBMYWJAUGl4ZWxMZWFrcw",
+          "country": "Switzerland",
+          "country_code": "CH",
+          "sector": "Healthcare",
+          "domain": null,
+          "status": null,
+          "description_snippet": "A comprehensive healthcare data set was acquired from Clinica Suiza Lab, a Peruvian clinic and laboratory group. The material includes the full patient register with identity documentation, clinical h",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "bbb19d35e2ea",
+          "group_name": "Pixelleaks",
+          "victim_name": "TDS Tech (tdstech.com.vn)",
+          "discovered": "2026-11-15T09:00:05+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/VERTIFRlY2ggKHRkc3RlY2guY29tLnZuKUBQaXhlbExlYWtz",
+          "country": "Vietnam",
+          "country_code": "VN",
+          "sector": "Technology",
+          "domain": "tdstech.com.vn",
+          "status": null,
+          "description_snippet": "This disclosure concerns a verified set of records from a software and digitization services organization in Vietnam. The material scheduled for publication comprises personnel records including natio",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "c3fac5a32d01",
+          "group_name": "Pixelleaks",
+          "victim_name": "Jiangsu Hengsheng Information Technology (江苏恒盛信息技术 / hensun.com)",
+          "discovered": "2026-11-15T08:59:39+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/SmlhbmdzdSBIZW5nc2hlbmcgSW5mb3JtYXRpb24gVGVjaG5vbG9neSAo5rGf6IuP5oGS55ub5L-h5oGv5oqA5pyvIC8gaGVuc3VuLmNvbSlAUGl4ZWxMZWFrcw",
+          "country": "China",
+          "country_code": "CN",
+          "sector": "Technology",
+          "domain": "hensun.com",
+          "status": null,
+          "description_snippet": "A copy of the workforce management system of a Chinese information technology services company, including personnel records for 725 employees with national identity numbers, names, dates of birth, pho",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Energy & Utilities",
+        "Financial Services",
+        "Healthcare",
+        "Manufacturing",
+        "Other",
+        "Professional Services",
+        "Technology"
+      ],
+      "countries": [
+        "China",
+        "Hong Kong",
+        "Indonesia",
+        "Philippines",
+        "Switzerland",
+        "United States",
+        "Vietnam"
+      ],
+      "country_codes": [
+        "CH",
+        "CN",
+        "HK",
+        "ID",
+        "PH",
+        "US",
+        "VN"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 20,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20
+      ],
+      "daily_labels": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "first_seen": "2026-11-15T08:59:39+00:00",
+      "last_seen": "2026-11-15T09:06:32+00:00"
+    },
+    {
       "name": "N0N",
       "count": 19,
       "victims": [
@@ -1640,8 +1999,8 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 17,
-        "prior_3_days": 2
+        "last_3_days": 15,
+        "prior_3_days": 4
       },
       "daily_counts": [
         0,
@@ -1870,11 +2229,11 @@
         "SA",
         "US"
       ],
-      "trend": "up",
-      "trend_label": "Accelerating",
+      "trend": "down",
+      "trend_label": "Decelerating",
       "recent_velocity": {
-        "last_3_days": 12,
-        "prior_3_days": 0
+        "last_3_days": 3,
+        "prior_3_days": 9
       },
       "daily_counts": [
         0,
@@ -1898,6 +2257,189 @@
       "last_seen": "2026-11-13T20:53:46+00:00"
     },
     {
+      "name": "Qilin",
+      "count": 9,
+      "victims": [
+        {
+          "id": "6036bdce31a1",
+          "group_name": "Qilin",
+          "victim_name": "Oregon Linen",
+          "discovered": "2026-11-15T17:12:47+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/T3JlZ29uIExpbmVuQHFpbGlu",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "0598b088e10c",
+          "group_name": "Qilin",
+          "victim_name": "Cole Manufacturing",
+          "discovered": "2026-11-15T17:11:56+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/Q29sZSBNYW51ZmFjdHVyaW5nQHFpbGlu",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "c249ded2785d",
+          "group_name": "Qilin",
+          "victim_name": "Kessler Soils Engineering Products",
+          "discovered": "2026-11-15T17:11:09+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/S2Vzc2xlciBTb2lscyBFbmdpbmVlcmluZyBQcm9kdWN0c0BxaWxpbg",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "431115deca4d",
+          "group_name": "Qilin",
+          "victim_name": "Kayaku Safety Systems Malaysia Sdn Bhd",
+          "discovered": "2026-11-14T21:36:07+00:00",
+          "discovered_date": "2026-11-14",
+          "post_url": "https://www.ransomware.live/id/S2F5YWt1IFNhZmV0eSBTeXN0ZW1zIE1hbGF5c2lhIFNkbiBCaGRAcWlsaW4",
+          "country": "Malaysia",
+          "country_code": "MY",
+          "sector": "Manufacturing",
+          "domain": "www.kayaku.com.my",
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "7d7a3c16f22e",
+          "group_name": "Qilin",
+          "victim_name": "The University of Texas at Arlington",
+          "discovered": "2026-11-12T06:50:40+00:00",
+          "discovered_date": "2026-11-12",
+          "post_url": "https://www.ransomware.live/id/VGhlIFVuaXZlcnNpdHkgb2YgVGV4YXMgYXQgQXJsaW5ndG9uQHFpbGlu",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Education",
+          "domain": "www.library.uta.edu",
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "5b3c31f9ae12",
+          "group_name": "Qilin",
+          "victim_name": "York University",
+          "discovered": "2026-11-12T06:49:59+00:00",
+          "discovered_date": "2026-11-12",
+          "post_url": "https://www.ransomware.live/id/WW9yayBVbml2ZXJzaXR5QHFpbGlu",
+          "country": "Canada",
+          "country_code": "CA",
+          "sector": "Education",
+          "domain": "www.yorku.ca",
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "b402e87b9160",
+          "group_name": "Qilin",
+          "victim_name": "Professional baseball club Wisconsin Timber Rattlers",
+          "discovered": "2026-11-11T18:38:42+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/UHJvZmVzc2lvbmFsIGJhc2ViYWxsIGNsdWIgV2lzY29uc2luIFRpbWJlciBSYXR0bGVyc0BxaWxpbg",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "c58b5795cb90",
+          "group_name": "Qilin",
+          "victim_name": "Leonard's Express",
+          "discovered": "2026-11-11T15:58:03+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/TGVvbmFyZCdzIEV4cHJlc3NAcWlsaW4",
+          "country": "Australia",
+          "country_code": "AU",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "b41c1e285edb",
+          "group_name": "Qilin",
+          "victim_name": "Oral Roberts University",
+          "discovered": "2026-11-11T12:39:29+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/T3JhbCBSb2JlcnRzIFVuaXZlcnNpdHlAcWlsaW4",
+          "country": "United States",
+          "country_code": "US",
+          "sector": null,
+          "domain": null,
+          "status": null,
+          "description_snippet": "N/A",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Manufacturing"
+      ],
+      "countries": [
+        "Australia",
+        "Canada",
+        "Malaysia",
+        "United States"
+      ],
+      "country_codes": [
+        "AU",
+        "CA",
+        "MY",
+        "US"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 6,
+        "prior_3_days": 3
+      },
+      "daily_counts": [
+        0,
+        0,
+        3,
+        2,
+        0,
+        1,
+        3
+      ],
+      "daily_labels": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "first_seen": "2026-11-11T12:39:29+00:00",
+      "last_seen": "2026-11-15T17:12:47+00:00"
+    },
+    {
       "name": "Osiris",
       "count": 8,
       "victims": [
@@ -1910,7 +2452,7 @@
           "post_url": "https://www.ransomware.live/id/VGhlIFF1ZWVuYW4gTGF3IEZpcm1Ab3Npcmlz",
           "country": "United States",
           "country_code": "US",
-          "sector": "Professional Services",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "Status: Countdown (publication 2026-11-18T09:21:30+00:00) | Country: United States | Revenue: $5,000,000 | Employees: 2-10",
@@ -2022,9 +2564,7 @@
           "source": "ransomware.live/rss"
         }
       ],
-      "industries": [
-        "Professional Services"
-      ],
+      "industries": [],
       "countries": [
         "Germany",
         "United Kingdom",
@@ -2061,432 +2601,6 @@
       ],
       "first_seen": "2026-11-11T08:15:49+00:00",
       "last_seen": "2026-11-11T10:57:35+00:00"
-    },
-    {
-      "name": "Interlock",
-      "count": 7,
-      "victims": [
-        {
-          "id": "4827f472d3b9",
-          "group_name": "Interlock",
-          "victim_name": "K&A Industries",
-          "discovered": "2026-11-13T22:46:01+00:00",
-          "discovered_date": "2026-11-13",
-          "post_url": "https://www.ransomware.live/id/SyZBIEluZHVzdHJpZXNAaW50ZXJsb2Nr",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Not Found",
-          "domain": "kaindustries.com",
-          "status": null,
-          "description_snippet": "K&A Industries is a \"secure identity architecture\" company that manages the entire authentication lifecycle for government and enterprise clients. As a result, their own security weaknesses led to the",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "3ae1616575ce",
-          "group_name": "Interlock",
-          "victim_name": "Garden Valley School Division",
-          "discovered": "2026-11-11T00:43:34+00:00",
-          "discovered_date": "2026-11-11",
-          "post_url": "https://www.ransomware.live/id/R2FyZGVuIFZhbGxleSBTY2hvb2wgRGl2aXNpb25AaW50ZXJsb2Nr",
-          "country": "Canada",
-          "country_code": "CA",
-          "sector": "Education",
-          "domain": "gvsd.ca",
-          "status": null,
-          "description_snippet": "Garden Valley School District is a Manitoba public school district with a student population of approximately 4,300. Their negligent attitude toward their own and their students' safety has resulted i",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "a0f0d95b640f",
-          "group_name": "Interlock",
-          "victim_name": "Madison Honda",
-          "discovered": "2026-11-10T07:13:00+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TWFkaXNvbiBIb25kYUBpbnRlcmxvY2s",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Madison Honda, located in Madison, New Jersey, offers a wide selection of new and used vehicles, as well as flexible financing options.They are negligent when it comes to their own security and that o",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "2bed888c8fb5",
-          "group_name": "Interlock",
-          "victim_name": "Custom Floors Unlimited",
-          "discovered": "2026-11-10T07:12:27+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/Q3VzdG9tIEZsb29ycyBVbmxpbWl0ZWRAaW50ZXJsb2Nr",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Custom Floors Unlimited designs and installs high-quality, custom-made solid wood flooring. They specialize in creating unique designs. However, they do not specialize in ensuring their own security o",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "54219e359694",
-          "group_name": "Interlock",
-          "victim_name": "Meadows Valley School District",
-          "discovered": "2026-11-10T07:11:55+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "The Meadows Valley School District strives to prepare all students for life's demands, adventures, and challenges. While the district offers educational services designed to foster student growth and ",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "904be2330e4a",
-          "group_name": "Interlock",
-          "victim_name": "Ridgway High School",
-          "discovered": "2026-11-10T07:10:49+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/UmlkZ3dheSBIaWdoIFNjaG9vbEBpbnRlcmxvY2s",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Ridgeway R-2 School District states its commitment to providing a safe and inclusive learning environment for students, however, their failure to secure your data and their failure to address this iss",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "371c9fd854dc",
-          "group_name": "Interlock",
-          "victim_name": "Southwest Orthopedic & Reconstructive Specialists",
-          "discovered": "2026-11-10T07:09:08+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Southwest Orthopedic & Reconstructive Specialists, a clinic located in Oklahoma, is required by law to maintain protected health information (PHI) as a healthcare facility. However, due to its neglige",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Not Found"
-      ],
-      "countries": [
-        "Canada",
-        "United States"
-      ],
-      "country_codes": [
-        "CA",
-        "US"
-      ],
-      "trend": "down",
-      "trend_label": "Decelerating",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 6
-      },
-      "daily_counts": [
-        0,
-        5,
-        1,
-        0,
-        1,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T07:09:08+00:00",
-      "last_seen": "2026-11-13T22:46:01+00:00"
-    },
-    {
-      "name": "Qilin",
-      "count": 6,
-      "victims": [
-        {
-          "id": "431115deca4d",
-          "group_name": "Qilin",
-          "victim_name": "Kayaku Safety Systems Malaysia Sdn Bhd",
-          "discovered": "2026-11-14T21:36:07+00:00",
-          "discovered_date": "2026-11-14",
-          "post_url": "https://www.ransomware.live/id/S2F5YWt1IFNhZmV0eSBTeXN0ZW1zIE1hbGF5c2lhIFNkbiBCaGRAcWlsaW4",
-          "country": "Malaysia",
-          "country_code": "MY",
-          "sector": "Manufacturing",
-          "domain": "www.kayaku.com.my",
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "7d7a3c16f22e",
-          "group_name": "Qilin",
-          "victim_name": "The University of Texas at Arlington",
-          "discovered": "2026-11-12T06:50:40+00:00",
-          "discovered_date": "2026-11-12",
-          "post_url": "https://www.ransomware.live/id/VGhlIFVuaXZlcnNpdHkgb2YgVGV4YXMgYXQgQXJsaW5ndG9uQHFpbGlu",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Education",
-          "domain": "www.library.uta.edu",
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "5b3c31f9ae12",
-          "group_name": "Qilin",
-          "victim_name": "York University",
-          "discovered": "2026-11-12T06:49:59+00:00",
-          "discovered_date": "2026-11-12",
-          "post_url": "https://www.ransomware.live/id/WW9yayBVbml2ZXJzaXR5QHFpbGlu",
-          "country": "Canada",
-          "country_code": "CA",
-          "sector": "Education",
-          "domain": "www.yorku.ca",
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "b402e87b9160",
-          "group_name": "Qilin",
-          "victim_name": "Professional baseball club Wisconsin Timber Rattlers",
-          "discovered": "2026-11-11T18:38:42+00:00",
-          "discovered_date": "2026-11-11",
-          "post_url": "https://www.ransomware.live/id/UHJvZmVzc2lvbmFsIGJhc2ViYWxsIGNsdWIgV2lzY29uc2luIFRpbWJlciBSYXR0bGVyc0BxaWxpbg",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "c58b5795cb90",
-          "group_name": "Qilin",
-          "victim_name": "Leonard's Express",
-          "discovered": "2026-11-11T15:58:03+00:00",
-          "discovered_date": "2026-11-11",
-          "post_url": "https://www.ransomware.live/id/TGVvbmFyZCdzIEV4cHJlc3NAcWlsaW4",
-          "country": "Australia",
-          "country_code": "AU",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "b41c1e285edb",
-          "group_name": "Qilin",
-          "victim_name": "Oral Roberts University",
-          "discovered": "2026-11-11T12:39:29+00:00",
-          "discovered_date": "2026-11-11",
-          "post_url": "https://www.ransomware.live/id/T3JhbCBSb2JlcnRzIFVuaXZlcnNpdHlAcWlsaW4",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Education",
-          "domain": "www.oru.edu",
-          "status": null,
-          "description_snippet": "N/A",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Education",
-        "Manufacturing"
-      ],
-      "countries": [
-        "Australia",
-        "Canada",
-        "Malaysia",
-        "United States"
-      ],
-      "country_codes": [
-        "AU",
-        "CA",
-        "MY",
-        "US"
-      ],
-      "trend": "up",
-      "trend_label": "Accelerating",
-      "recent_velocity": {
-        "last_3_days": 4,
-        "prior_3_days": 2
-      },
-      "daily_counts": [
-        0,
-        0,
-        3,
-        2,
-        0,
-        1,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-11T12:39:29+00:00",
-      "last_seen": "2026-11-14T21:36:07+00:00"
-    },
-    {
-      "name": "Play",
-      "count": 6,
-      "victims": [
-        {
-          "id": "898cd53fafaa",
-          "group_name": "Play",
-          "victim_name": "Frey Properties of Highland LLC",
-          "discovered": "2026-11-13T20:29:46+00:00",
-          "discovered_date": "2026-11-13",
-          "post_url": "https://www.ransomware.live/id/RnJleSBQcm9wZXJ0aWVzIG9mIEhpZ2hsYW5kIExMQ0BwbGF5",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Retail & E-Commerce",
-          "domain": "www.frey-properties.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "d0f5381ebb51",
-          "group_name": "Play",
-          "victim_name": "ARRB Group",
-          "discovered": "2026-11-13T20:29:10+00:00",
-          "discovered_date": "2026-11-13",
-          "post_url": "https://www.ransomware.live/id/QVJSQiBHcm91cEBwbGF5",
-          "country": "Australia",
-          "country_code": "AU",
-          "sector": "Government & Defense",
-          "domain": "www.arrbgroup.net",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "19b1e27c8a25",
-          "group_name": "Play",
-          "victim_name": "Minor League Baseball",
-          "discovered": "2026-11-11T20:19:30+00:00",
-          "discovered_date": "2026-11-11",
-          "post_url": "https://www.ransomware.live/id/TWlub3IgTGVhZ3VlIEJhc2ViYWxsQHBsYXk",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Hospitality",
-          "domain": "www.milb.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "9c42885906db",
-          "group_name": "Play",
-          "victim_name": "NY Snacks",
-          "discovered": "2026-11-10T19:41:23+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TlkgU25hY2tzQHBsYXk",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Retail & E-Commerce",
-          "domain": "www.nysnacks.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "ac53964e2290",
-          "group_name": "Play",
-          "victim_name": "BROTHERS EXPRESS LLC",
-          "discovered": "2026-11-10T19:40:48+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QlJPVEhFUlMgRVhQUkVTUyBMTENAcGxheQ",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Transportation",
-          "domain": "www.broexp.com",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "eff883da17b6",
-          "group_name": "Play",
-          "victim_name": "Signworx",
-          "discovered": "2026-11-10T19:39:54+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/U2lnbndvcnhAcGxheQ",
-          "country": "United Kingdom",
-          "country_code": "GB",
-          "sector": "Other",
-          "domain": "www.signworx.net",
-          "status": null,
-          "description_snippet": "United States",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Government & Defense",
-        "Hospitality",
-        "Other",
-        "Retail & E-Commerce",
-        "Transportation"
-      ],
-      "countries": [
-        "Australia",
-        "United Kingdom",
-        "United States"
-      ],
-      "country_codes": [
-        "AU",
-        "GB",
-        "US"
-      ],
-      "trend": "stable",
-      "trend_label": "Steady",
-      "recent_velocity": {
-        "last_3_days": 3,
-        "prior_3_days": 3
-      },
-      "daily_counts": [
-        0,
-        3,
-        1,
-        0,
-        2,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T19:39:54+00:00",
-      "last_seen": "2026-11-13T20:29:46+00:00"
     },
     {
       "name": "Akira",
@@ -2561,7 +2675,7 @@
           "post_url": "https://www.ransomware.live/id/UjMgQ29tcG9zaXRlc0Bha2lyYQ",
           "country": null,
           "country_code": null,
-          "sector": "Manufacturing",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "R3 Composites Inc specializes in custom compression molding and SMC manufacturing, offering des\nign and part conversion services. They are known for their large mold size capabilities and cat\ner prima",
@@ -2576,7 +2690,7 @@
           "post_url": "https://www.ransomware.live/id/UXVhbGl0eSBBaXJAYWtpcmE",
           "country": null,
           "country_code": null,
-          "sector": "Transportation",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "At Quality Air, we know you want your HVAC system to keep you comfortable. When your system sta\nrts causing trouble, it can leave you feeling frustrated and at the mercy of a service company.\nWe belie",
@@ -2585,8 +2699,7 @@
       ],
       "industries": [
         "Manufacturing",
-        "Professional Services",
-        "Transportation"
+        "Professional Services"
       ],
       "countries": [
         "United States"
@@ -2733,8 +2846,8 @@
       "trend": "up",
       "trend_label": "Accelerating",
       "recent_velocity": {
-        "last_3_days": 6,
-        "prior_3_days": 0
+        "last_3_days": 5,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -2756,142 +2869,6 @@
       ],
       "first_seen": "2026-11-11T18:39:40+00:00",
       "last_seen": "2026-11-12T19:13:04+00:00"
-    },
-    {
-      "name": "Booba Project",
-      "count": 6,
-      "victims": [
-        {
-          "id": "9143d3725ae9",
-          "group_name": "Booba project",
-          "victim_name": "COMPUTER TASK GROUP, Inc.",
-          "discovered": "2026-11-10T12:52:35+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/Q09NUFVURVIgVEFTSyBHUk9VUCwgSW5jLkBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "IT Services and IT Consulting Stolen data: 50 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "2e63e4cccbb6",
-          "group_name": "Booba project",
-          "victim_name": "Georgetown Sleep Center",
-          "discovered": "2026-11-10T12:52:13+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/R2VvcmdldG93biBTbGVlcCBDZW50ZXJAQm9vYmEgUHJvamVjdA",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Medical Practices Stolen data: 105 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "97549af8c872",
-          "group_name": "Booba project",
-          "victim_name": "Collier Sports Medicine and Orthopedic Center",
-          "discovered": "2026-11-10T12:51:52+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/Q29sbGllciBTcG9ydHMgTWVkaWNpbmUgYW5kIE9ydGhvcGVkaWMgQ2VudGVyQEJvb2JhIFByb2plY3Q",
-          "country": "United States",
-          "country_code": "US",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 20 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "3d44e47c01e2",
-          "group_name": "Booba project",
-          "victim_name": "El Portal Imaging Center",
-          "discovered": "2026-11-10T12:51:31+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/RWwgUG9ydGFsIEltYWdpbmcgQ2VudGVyQEJvb2JhIFByb2plY3Q",
-          "country": "Mexico",
-          "country_code": "MX",
-          "sector": "Healthcare",
-          "domain": "www.elportalimaging.com",
-          "status": null,
-          "description_snippet": "Research Services Stolen data: 1 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "620b5711a1f4",
-          "group_name": "Booba project",
-          "victim_name": "Day One RI",
-          "discovered": "2026-11-10T12:51:10+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/RGF5IE9uZSBSSUBCb29iYSBQcm9qZWN0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Professional Services",
-          "domain": "www.dayoneri.org",
-          "status": null,
-          "description_snippet": "Non-profit Organizations Stolen data: 30 GB.",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "3c9cb0f57907",
-          "group_name": "Booba project",
-          "victim_name": "Acclaim Health",
-          "discovered": "2026-11-10T12:50:49+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QWNjbGFpbSBIZWFsdGhAQm9vYmEgUHJvamVjdA",
-          "country": "Canada",
-          "country_code": "CA",
-          "sector": "Healthcare",
-          "domain": "www.acclaimhealth.ca",
-          "status": null,
-          "description_snippet": "Hospitals and Health Care Stolen data: 51 GB.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Healthcare",
-        "Professional Services"
-      ],
-      "countries": [
-        "Canada",
-        "Mexico",
-        "United States"
-      ],
-      "country_codes": [
-        "CA",
-        "MX",
-        "US"
-      ],
-      "trend": "down",
-      "trend_label": "Decelerating",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 6
-      },
-      "daily_counts": [
-        0,
-        6,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T12:50:49+00:00",
-      "last_seen": "2026-11-10T12:52:35+00:00"
     },
     {
       "name": "Majinahanashi",
@@ -3039,8 +3016,8 @@
           "post_url": "https://www.ransomware.live/id/U1VOTklFUiBIT01FU0BQYW56ZXI",
           "country": "Spain",
           "country_code": "ES",
-          "sector": "Retail & E-Commerce",
-          "domain": "sunnierhomes.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Sunnier Homes es una inmobiliaria internacional con sede en Torrevieja (Alicante) que tiene como propósito cumplir el sueño de todas las personas que buscan un hogar para residir o invertir en el Medi",
           "source": "ransomware.live/rss"
@@ -3048,8 +3025,7 @@
       ],
       "industries": [
         "Government & Defense",
-        "Professional Services",
-        "Retail & E-Commerce"
+        "Professional Services"
       ],
       "countries": [
         "Germany",
@@ -3087,6 +3063,96 @@
       ],
       "first_seen": "2026-11-11T01:32:33+00:00",
       "last_seen": "2026-11-13T21:51:51+00:00"
+    },
+    {
+      "name": "Play",
+      "count": 3,
+      "victims": [
+        {
+          "id": "898cd53fafaa",
+          "group_name": "Play",
+          "victim_name": "Frey Properties of Highland LLC",
+          "discovered": "2026-11-13T20:29:46+00:00",
+          "discovered_date": "2026-11-13",
+          "post_url": "https://www.ransomware.live/id/RnJleSBQcm9wZXJ0aWVzIG9mIEhpZ2hsYW5kIExMQ0BwbGF5",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Retail & E-Commerce",
+          "domain": "www.frey-properties.com",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "d0f5381ebb51",
+          "group_name": "Play",
+          "victim_name": "ARRB Group",
+          "discovered": "2026-11-13T20:29:10+00:00",
+          "discovered_date": "2026-11-13",
+          "post_url": "https://www.ransomware.live/id/QVJSQiBHcm91cEBwbGF5",
+          "country": "Australia",
+          "country_code": "AU",
+          "sector": "Government & Defense",
+          "domain": "www.arrbgroup.net",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "19b1e27c8a25",
+          "group_name": "Play",
+          "victim_name": "Minor League Baseball",
+          "discovered": "2026-11-11T20:19:30+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/TWlub3IgTGVhZ3VlIEJhc2ViYWxsQHBsYXk",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Hospitality",
+          "domain": "www.milb.com",
+          "status": null,
+          "description_snippet": "United States",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Government & Defense",
+        "Hospitality",
+        "Retail & E-Commerce"
+      ],
+      "countries": [
+        "Australia",
+        "United States"
+      ],
+      "country_codes": [
+        "AU",
+        "US"
+      ],
+      "trend": "up",
+      "trend_label": "Accelerating",
+      "recent_velocity": {
+        "last_3_days": 2,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "first_seen": "2026-11-11T20:19:30+00:00",
+      "last_seen": "2026-11-13T20:29:46+00:00"
     },
     {
       "name": "Aoqin",
@@ -3206,8 +3272,8 @@
           "post_url": "https://www.ransomware.live/id/TVRNJk8gR29sZCBSZWZpbmVyeSBETUNDQERhcmsgUHJvamVjdA",
           "country": "United Arab Emirates",
           "country_code": "AE",
-          "sector": "Manufacturing",
-          "domain": "mtm-o.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "About MTM&O Gold Refinery DMCC MTM&O Gold Refinery DMCC is one of the largest refineries in the region and is a leader in terms of customer service, reliability, efficiency and quality. As a result of",
           "source": "ransomware.live/rss"
@@ -3221,16 +3287,14 @@
           "post_url": "https://www.ransomware.live/id/QmVhciBWYWxsZXkgQ29tbXVuaXR5IEhvc3BpdGFsQERhcmsgUHJvamVjdA",
           "country": "United States",
           "country_code": "US",
-          "sector": "Healthcare",
-          "domain": "www.bvchd.com",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "About Bear Valley Community Hospital Bear Valley Community Healthcare District offers a wide range of emergency medical and healthcare services in Big Bear Valley, including urgent care, family health",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [
-        "Healthcare",
-        "Manufacturing",
         "Not Found"
       ],
       "countries": [
@@ -3360,92 +3424,6 @@
       ],
       "first_seen": "2026-11-12T23:18:52+00:00",
       "last_seen": "2026-11-12T23:19:34+00:00"
-    },
-    {
-      "name": "Climax Inc",
-      "count": 3,
-      "victims": [
-        {
-          "id": "0d5ed63f282b",
-          "group_name": "Climax inc",
-          "victim_name": "Redacted Redacted",
-          "discovered": "2026-11-10T12:54:38+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/UmVkYWN0ZWQgUmVkYWN0ZWRAQ2xpbWF4IEluYw",
-          "country": null,
-          "country_code": null,
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Sector: Medical",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "1d7af2bbd18d",
-          "group_name": "Climax inc",
-          "victim_name": "Nepal Electricity Authority",
-          "discovered": "2026-11-10T12:54:04+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/TmVwYWwgRWxlY3RyaWNpdHkgQXV0aG9yaXR5QENsaW1heCBJbmM",
-          "country": "Nepal",
-          "country_code": "NP",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Sector: Electricity supplier\nStatus: Published",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "aec13d24a961",
-          "group_name": "Climax inc",
-          "victim_name": "Frolina Home",
-          "discovered": "2026-11-10T12:53:22+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM",
-          "country": "Brazil",
-          "country_code": "BR",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Sector: Manufacturer\nStatus: Published",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "Brazil",
-        "Nepal"
-      ],
-      "country_codes": [
-        "BR",
-        "NP"
-      ],
-      "trend": "down",
-      "trend_label": "Decelerating",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 3
-      },
-      "daily_counts": [
-        0,
-        3,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T12:53:22+00:00",
-      "last_seen": "2026-11-10T12:54:38+00:00"
     },
     {
       "name": "Barracuda",
@@ -3739,6 +3717,80 @@
       "last_seen": "2026-11-14T03:32:50+00:00"
     },
     {
+      "name": "Interlock",
+      "count": 2,
+      "victims": [
+        {
+          "id": "4827f472d3b9",
+          "group_name": "Interlock",
+          "victim_name": "K&A Industries",
+          "discovered": "2026-11-13T22:46:01+00:00",
+          "discovered_date": "2026-11-13",
+          "post_url": "https://www.ransomware.live/id/SyZBIEluZHVzdHJpZXNAaW50ZXJsb2Nr",
+          "country": "United States",
+          "country_code": "US",
+          "sector": "Not Found",
+          "domain": "kaindustries.com",
+          "status": null,
+          "description_snippet": "K&A Industries is a \"secure identity architecture\" company that manages the entire authentication lifecycle for government and enterprise clients. As a result, their own security weaknesses led to the",
+          "source": "ransomware.live/rss"
+        },
+        {
+          "id": "3ae1616575ce",
+          "group_name": "Interlock",
+          "victim_name": "Garden Valley School Division",
+          "discovered": "2026-11-11T00:43:34+00:00",
+          "discovered_date": "2026-11-11",
+          "post_url": "https://www.ransomware.live/id/R2FyZGVuIFZhbGxleSBTY2hvb2wgRGl2aXNpb25AaW50ZXJsb2Nr",
+          "country": "Canada",
+          "country_code": "CA",
+          "sector": "Education",
+          "domain": "gvsd.ca",
+          "status": null,
+          "description_snippet": "Garden Valley School District is a Manitoba public school district with a student population of approximately 4,300. Their negligent attitude toward their own and their students' safety has resulted i",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Education",
+        "Not Found"
+      ],
+      "countries": [
+        "Canada",
+        "United States"
+      ],
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 1
+      },
+      "daily_counts": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "first_seen": "2026-11-11T00:43:34+00:00",
+      "last_seen": "2026-11-13T22:46:01+00:00"
+    },
+    {
       "name": "Bravox",
       "count": 2,
       "victims": [
@@ -3766,16 +3818,15 @@
           "post_url": "https://www.ransomware.live/id/QVdPIEJ1bmRlc3ZlcmJhbmRAYnJhdm94",
           "country": "Germany",
           "country_code": "DE",
-          "sector": "Other",
-          "domain": "awo.org",
+          "sector": null,
+          "domain": null,
           "status": null,
           "description_snippet": "Workforce Development, Vocational Training and Employment Solutions.",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [
-        "Manufacturing",
-        "Other"
+        "Manufacturing"
       ],
       "countries": [
         "Germany",
@@ -3860,8 +3911,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 2,
-        "prior_3_days": 0
+        "last_3_days": 1,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -3883,80 +3934,6 @@
       ],
       "first_seen": "2026-11-11T17:52:05+00:00",
       "last_seen": "2026-11-13T11:22:24+00:00"
-    },
-    {
-      "name": "Krybit",
-      "count": 2,
-      "victims": [
-        {
-          "id": "12dcf0a66eba",
-          "group_name": "Krybit",
-          "victim_name": "cey-tech.com",
-          "discovered": "2026-11-12T13:56:09+00:00",
-          "discovered_date": "2026-11-12",
-          "post_url": "https://www.ransomware.live/id/Y2V5LXRlY2guY29tQGtyeWJpdA",
-          "country": "Cyprus",
-          "country_code": "CY",
-          "sector": "Technology",
-          "domain": "cey-tech.com",
-          "status": null,
-          "description_snippet": "Ceytech Makina Sanayi ve Ticaret A.Ş. is a Turkish manufacturer of industrial machinery and equipment, established on A...",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "a2b311bc1794",
-          "group_name": "Krybit",
-          "victim_name": "Actualize Consulting",
-          "discovered": "2026-11-10T13:34:23+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QWN0dWFsaXplIENvbnN1bHRpbmdAa3J5Yml0",
-          "country": "United States",
-          "country_code": "US",
-          "sector": "Professional Services",
-          "domain": null,
-          "status": null,
-          "description_snippet": "Actualize Consulting Engineers  Private Limited is an engineering and digital transformation services company based in I...",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Professional Services",
-        "Technology"
-      ],
-      "countries": [
-        "Cyprus",
-        "United States"
-      ],
-      "country_codes": [
-        "CY",
-        "US"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 1
-      },
-      "daily_counts": [
-        0,
-        1,
-        0,
-        1,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T13:34:23+00:00",
-      "last_seen": "2026-11-12T13:56:09+00:00"
     },
     {
       "name": "Payoutsking",
@@ -4055,7 +4032,7 @@
           "post_url": "https://www.ransomware.live/id/Q2FwZXRvd25AbWVkdXNhbG9ja2Vy",
           "country": null,
           "country_code": null,
-          "sector": "Not Found",
+          "sector": null,
           "domain": null,
           "status": null,
           "description_snippet": "DSV provides logistics, transportation, and supply chain services, including sea, air, and road freight as well as warehousing and customs services.",
@@ -4070,8 +4047,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 1
+        "last_3_days": 0,
+        "prior_3_days": 2
       },
       "daily_counts": [
         0,
@@ -4095,133 +4072,46 @@
       "last_seen": "2026-11-11T22:01:37+00:00"
     },
     {
-      "name": "Silentransomgroup",
-      "count": 2,
+      "name": "Lockbit5",
+      "count": 1,
       "victims": [
         {
-          "id": "968c898cf35b",
-          "group_name": "Silentransomgroup",
-          "victim_name": "A&O Shearman",
-          "discovered": "2026-11-10T18:52:11+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/QSZPIFNoZWFybWFuQFNpbGVudFJhbnNvbUdyb3Vw",
-          "country": "United Kingdom",
-          "country_code": "GB",
-          "sector": "Professional Services",
-          "domain": null,
-          "status": null,
-          "description_snippet": "A&O Shearman is a global law firm formed in 2024 through the merger of Allen & Overy and Shearman & St…",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "285f87cee8de",
-          "group_name": "Silentransomgroup",
-          "victim_name": "J...",
-          "discovered": "2026-11-10T18:51:52+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/Si4uLkBTaWxlbnRSYW5zb21Hcm91cA",
-          "country": null,
-          "country_code": null,
-          "sector": "Not Found",
-          "domain": null,
-          "status": null,
-          "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Not Found",
-        "Professional Services"
-      ],
-      "countries": [
-        "United Kingdom"
-      ],
-      "country_codes": [
-        "GB"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 2
-      },
-      "daily_counts": [
-        0,
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T18:51:52+00:00",
-      "last_seen": "2026-11-10T18:52:11+00:00"
-    },
-    {
-      "name": "Byod",
-      "count": 2,
-      "victims": [
-        {
-          "id": "21fd41efa766",
-          "group_name": "Byod",
-          "victim_name": "Providence",
-          "discovered": "2026-11-10T18:21:10+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/UHJvdmlkZW5jZUBCWU9E",
-          "country": null,
-          "country_code": null,
+          "id": "5e7cea080bcb",
+          "group_name": "Lockbit5",
+          "victim_name": "pah.com.my",
+          "discovered": "2026-11-15T15:03:34+00:00",
+          "discovered_date": "2026-11-15",
+          "post_url": "https://www.ransomware.live/id/cGFoLmNvbS5teUBsb2NrYml0NQ",
+          "country": "Malaysia",
+          "country_code": "MY",
           "sector": null,
-          "domain": null,
+          "domain": "pah.com.my",
           "status": null,
-          "description_snippet": "25GB Of PII, Full Names, Emails, Addresses, DOB, SSNs & much more. We did not lock your network, yet we have sufficient access to do so, this is to show how nested our access is alongside the severity",
-          "source": "ransomware.live/rss"
-        },
-        {
-          "id": "b07822cb5f14",
-          "group_name": "Byod",
-          "victim_name": "Toyota",
-          "discovered": "2026-11-10T18:20:50+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/VG95b3RhQEJZT0Q",
-          "country": "Japan",
-          "country_code": "JP",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "Full Names, Emails, Addresses, Phone Numbers DOB, & Kiosk Devices. A lot was actually isolated, good job, however there was a few cracks we managed to slip through. Anyways, you know where to find us ",
+          "description_snippet": "Penang Adventist Hospital (PAH), established in 1924 by American missionary Dr. J. Earl Gardner, is...",
           "source": "ransomware.live/rss"
         }
       ],
       "industries": [],
       "countries": [
-        "Japan"
+        "Malaysia"
       ],
       "country_codes": [
-        "JP"
+        "MY"
       ],
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 2
+        "last_3_days": 1,
+        "prior_3_days": 0
       },
       "daily_counts": [
         0,
-        2,
         0,
         0,
         0,
         0,
-        0
+        0,
+        1
       ],
       "daily_labels": [
         "2026-11-09",
@@ -4232,8 +4122,8 @@
         "2026-11-14",
         "2026-11-15"
       ],
-      "first_seen": "2026-11-10T18:20:50+00:00",
-      "last_seen": "2026-11-10T18:21:10+00:00"
+      "first_seen": "2026-11-15T15:03:34+00:00",
+      "last_seen": "2026-11-15T15:03:34+00:00"
     },
     {
       "name": "Scarlettgroup",
@@ -4460,6 +4350,62 @@
       "last_seen": "2026-11-12T22:02:03+00:00"
     },
     {
+      "name": "Krybit",
+      "count": 1,
+      "victims": [
+        {
+          "id": "12dcf0a66eba",
+          "group_name": "Krybit",
+          "victim_name": "cey-tech.com",
+          "discovered": "2026-11-12T13:56:09+00:00",
+          "discovered_date": "2026-11-12",
+          "post_url": "https://www.ransomware.live/id/Y2V5LXRlY2guY29tQGtyeWJpdA",
+          "country": "Cyprus",
+          "country_code": "CY",
+          "sector": "Technology",
+          "domain": "cey-tech.com",
+          "status": null,
+          "description_snippet": "Ceytech Makina Sanayi ve Ticaret A.Ş. is a Turkish manufacturer of industrial machinery and equipment, established on A...",
+          "source": "ransomware.live/rss"
+        }
+      ],
+      "industries": [
+        "Technology"
+      ],
+      "countries": [
+        "Cyprus"
+      ],
+      "country_codes": [
+        "CY"
+      ],
+      "trend": "insufficient_data",
+      "trend_label": "Limited Data",
+      "recent_velocity": {
+        "last_3_days": 1,
+        "prior_3_days": 0
+      },
+      "daily_counts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "daily_labels": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "first_seen": "2026-11-12T13:56:09+00:00",
+      "last_seen": "2026-11-12T13:56:09+00:00"
+    },
+    {
       "name": "Metaencryptor",
       "count": 1,
       "victims": [
@@ -4543,8 +4489,8 @@
       "trend": "insufficient_data",
       "trend_label": "Limited Data",
       "recent_velocity": {
-        "last_3_days": 1,
-        "prior_3_days": 0
+        "last_3_days": 0,
+        "prior_3_days": 1
       },
       "daily_counts": [
         0,
@@ -4566,119 +4512,369 @@
       ],
       "first_seen": "2026-11-11T17:10:25+00:00",
       "last_seen": "2026-11-11T17:10:25+00:00"
-    },
-    {
-      "name": "Hyflock",
-      "count": 1,
-      "victims": [
-        {
-          "id": "51c79248ce85",
-          "group_name": "Hyflock",
-          "victim_name": "tcadarwin",
-          "discovered": "2026-11-10T18:24:14+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/dGNhZGFyd2luQEhZRkxPQ0s",
-          "country": "Australia",
-          "country_code": "AU",
-          "sector": "Other",
-          "domain": "www.tcadarwin.com.au",
-          "status": null,
-          "description_snippet": "https://www.tcadarwin.com.au is the official website of TCA Accountants & Bookkeepers, a firm based in Darwin, Northern Territory, Australia. The company is a reputable and innovative professional acc",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [
-        "Other"
-      ],
-      "countries": [
-        "Australia"
-      ],
-      "country_codes": [
-        "AU"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 1
-      },
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T18:24:14+00:00",
-      "last_seen": "2026-11-10T18:24:14+00:00"
-    },
-    {
-      "name": "Orova",
-      "count": 1,
-      "victims": [
-        {
-          "id": "65a1f8d85e16",
-          "group_name": "Orova",
-          "victim_name": "Herminio India Precision Technology",
-          "discovered": "2026-11-10T16:58:23+00:00",
-          "discovered_date": "2026-11-10",
-          "post_url": "https://www.ransomware.live/id/SGVybWluaW8gSW5kaWEgUHJlY2lzaW9uIFRlY2hub2xvZ3lAT3JvdmE",
-          "country": "India",
-          "country_code": "IN",
-          "sector": null,
-          "domain": null,
-          "status": null,
-          "description_snippet": "HERMINIO is a leading manufacturer of precision components catering to different segments including Automobiles, Refrigeration, Air Conditioning, Brake, Air & Gas.",
-          "source": "ransomware.live/rss"
-        }
-      ],
-      "industries": [],
-      "countries": [
-        "India"
-      ],
-      "country_codes": [
-        "IN"
-      ],
-      "trend": "insufficient_data",
-      "trend_label": "Limited Data",
-      "recent_velocity": {
-        "last_3_days": 0,
-        "prior_3_days": 1
-      },
-      "daily_counts": [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "daily_labels": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-15"
-      ],
-      "first_seen": "2026-11-10T16:58:23+00:00",
-      "last_seen": "2026-11-10T16:58:23+00:00"
     }
   ],
   "victims": [
+    {
+      "id": "6036bdce31a1",
+      "group_name": "Qilin",
+      "victim_name": "Oregon Linen",
+      "discovered": "2026-11-15T17:12:47+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/T3JlZ29uIExpbmVuQHFpbGlu",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "N/A",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "0598b088e10c",
+      "group_name": "Qilin",
+      "victim_name": "Cole Manufacturing",
+      "discovered": "2026-11-15T17:11:56+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/Q29sZSBNYW51ZmFjdHVyaW5nQHFpbGlu",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "N/A",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "c249ded2785d",
+      "group_name": "Qilin",
+      "victim_name": "Kessler Soils Engineering Products",
+      "discovered": "2026-11-15T17:11:09+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/S2Vzc2xlciBTb2lscyBFbmdpbmVlcmluZyBQcm9kdWN0c0BxaWxpbg",
+      "country": "United States",
+      "country_code": "US",
+      "sector": null,
+      "domain": null,
+      "status": null,
+      "description_snippet": "N/A",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "5e7cea080bcb",
+      "group_name": "Lockbit5",
+      "victim_name": "pah.com.my",
+      "discovered": "2026-11-15T15:03:34+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/cGFoLmNvbS5teUBsb2NrYml0NQ",
+      "country": "Malaysia",
+      "country_code": "MY",
+      "sector": null,
+      "domain": "pah.com.my",
+      "status": null,
+      "description_snippet": "Penang Adventist Hospital (PAH), established in 1924 by American missionary Dr. J. Earl Gardner, is...",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "f1a52f87b77f",
+      "group_name": "Pixelleaks",
+      "victim_name": "PT. Fiber Networks Indonesia (AltosDLP surveillance platform, fiber.net.id)",
+      "discovered": "2026-11-15T09:06:32+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/UFQuIEZpYmVyIE5ldHdvcmtzIEluZG9uZXNpYSAoQWx0b3NETFAgc3VydmVpbGxhbmNlIHBsYXRmb3JtLCBmaWJlci5uZXQuaWQpQFBpeGVsTGVha3M",
+      "country": "Indonesia",
+      "country_code": "ID",
+      "sector": "Technology",
+      "domain": "fiber.net.id",
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the ISP / endpoint-surveillance services sector. The material scheduled for publication comprises a set of business records, ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "5a41bbe25d3c",
+      "group_name": "Pixelleaks",
+      "victim_name": "Huangshi Medical Laboratory (黄石医养医学检验) / Ezong Medical Group x Getein JV",
+      "discovered": "2026-11-15T09:06:11+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/SHVhbmdzaGkgTWVkaWNhbCBMYWJvcmF0b3J5ICjpu4Tnn7PljLvlhbvljLvlrabmo4DpqowpIC8gRXpvbmcgTWVkaWNhbCBHcm91cCB4IEdldGVpbiBKVkBQaXhlbExlYWtz",
+      "country": "China",
+      "country_code": "CN",
+      "sector": "Healthcare",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Medical laboratory / IVD supply chain (healthcare) sector. The material scheduled for publication comprises a set of busi",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "7fe2b392d546",
+      "group_name": "Pixelleaks",
+      "victim_name": "SPI Corp / SPI Energy group (spicorp-invest.com)",
+      "discovered": "2026-11-15T09:05:51+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/U1BJIENvcnAgLyBTUEkgRW5lcmd5IGdyb3VwIChzcGljb3JwLWludmVzdC5jb20pQFBpeGVsTGVha3M",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Energy & Utilities",
+      "domain": "spicorp-invest.com",
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Petroleum staffing & maintenance back-office (accounting services) sector. The material scheduled for publication compris",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "39a13c5ac3db",
+      "group_name": "Pixelleaks",
+      "victim_name": "BEAM Society (iBeam platform, www.ibeam.hk)",
+      "discovered": "2026-11-15T09:05:30+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/QkVBTSBTb2NpZXR5IChpQmVhbSBwbGF0Zm9ybSwgd3d3LmliZWFtLmhrKUBQaXhlbExlYWtz",
+      "country": "Hong Kong",
+      "country_code": "HK",
+      "sector": "Technology",
+      "domain": "www.ibeam.hk",
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Green-building certification (built environment) sector. The material scheduled for publication comprises a set of busine",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "4502c2263003",
+      "group_name": "Pixelleaks",
+      "victim_name": "King International Investment Ltd (HKEX: 00928, Lianhe Medical subsidiary)",
+      "discovered": "2026-11-15T09:05:09+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/S2luZyBJbnRlcm5hdGlvbmFsIEludmVzdG1lbnQgTHRkIChIS0VYOiAwMDkyOCwgTGlhbmhlIE1lZGljYWwgc3Vic2lkaWFyeSlAUGl4ZWxMZWFrcw",
+      "country": "Hong Kong",
+      "country_code": "HK",
+      "sector": "Healthcare",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Oncology genomics / genetic testing (healthcare) sector. The material scheduled for publication comprises a set of busine",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "def5f2f07d78",
+      "group_name": "Pixelleaks",
+      "victim_name": "International Utility Specialists Inc.",
+      "discovered": "2026-11-15T09:04:50+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/SW50ZXJuYXRpb25hbCBVdGlsaXR5IFNwZWNpYWxpc3RzIEluYy5AUGl4ZWxMZWFrcw",
+      "country": null,
+      "country_code": null,
+      "sector": "Energy & Utilities",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Utility bill auditing and energy cost consulting sector. The material scheduled for publication comprises a set of busine",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "6f4505acb05b",
+      "group_name": "Pixelleaks",
+      "victim_name": "Boston Institute of Finance (CRC designation, ex-InFRE, Colibri Group)",
+      "discovered": "2026-11-15T09:04:30+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/Qm9zdG9uIEluc3RpdHV0ZSBvZiBGaW5hbmNlIChDUkMgZGVzaWduYXRpb24sIGV4LUluRlJFLCBDb2xpYnJpIEdyb3VwKUBQaXhlbExlYWtz",
+      "country": null,
+      "country_code": null,
+      "sector": "Financial Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Nonprofit professional certification / retirement education sector. The material scheduled for publication comprises a se",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "c740fdb588bd",
+      "group_name": "Pixelleaks",
+      "victim_name": "Hofstetter Business Technologies",
+      "discovered": "2026-11-15T09:04:11+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/SG9mc3RldHRlciBCdXNpbmVzcyBUZWNobm9sb2dpZXNAUGl4ZWxMZWFrcw",
+      "country": null,
+      "country_code": null,
+      "sector": "Professional Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Medical speech recognition and digital dictation distribution sector. The material scheduled for publication comprises a ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "a0868b18824d",
+      "group_name": "Pixelleaks",
+      "victim_name": "Products Group International Inc",
+      "discovered": "2026-11-15T09:03:51+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/UHJvZHVjdHMgR3JvdXAgSW50ZXJuYXRpb25hbCBJbmNAUGl4ZWxMZWFrcw",
+      "country": null,
+      "country_code": null,
+      "sector": "Other",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Veterinary ultrasound equipment and supplies distribution sector. The material scheduled for publication comprises a set ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "e45178ee60e8",
+      "group_name": "Pixelleaks",
+      "victim_name": "Orion Communications Inc",
+      "discovered": "2026-11-15T09:03:32+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/T3Jpb24gQ29tbXVuaWNhdGlvbnMgSW5jQFBpeGVsTGVha3M",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Technology",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Telecommunications consulting and management agency sector. The material scheduled for publication comprises a set of bus",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "615d71e61ea0",
+      "group_name": "Pixelleaks",
+      "victim_name": "Missouri Welding Institute (missouriweldinginstitute.com)",
+      "discovered": "2026-11-15T09:03:12+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/TWlzc291cmkgV2VsZGluZyBJbnN0aXR1dGUgKG1pc3NvdXJpd2VsZGluZ2luc3RpdHV0ZS5jb20pQFBpeGVsTGVha3M",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Education",
+      "domain": "missouriweldinginstitute.com",
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Education (private welding trade school) sector. The material scheduled for publication comprises a set of business recor",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "671f1d6bf2d7",
+      "group_name": "Pixelleaks",
+      "victim_name": "Koehler Financial Group Inc",
+      "discovered": "2026-11-15T09:02:50+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/S29laGxlciBGaW5hbmNpYWwgR3JvdXAgSW5jQFBpeGVsTGVha3M",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Financial Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Financial services (insurance and investment advisory) sector. The material scheduled for publication comprises a set of ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "35e47189ab01",
+      "group_name": "Pixelleaks",
+      "victim_name": "Four Points Financial Solutions Inc.",
+      "discovered": "2026-11-15T09:02:31+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/Rm91ciBQb2ludHMgRmluYW5jaWFsIFNvbHV0aW9ucyBJbmMuQFBpeGVsTGVha3M",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Financial Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Financial advisory (insurance and investment planning) sector. The material scheduled for publication comprises a set of ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "091963dc5812",
+      "group_name": "Pixelleaks",
+      "victim_name": "Eagle Fire Extinguisher Company",
+      "discovered": "2026-11-15T09:02:11+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/RWFnbGUgRmlyZSBFeHRpbmd1aXNoZXIgQ29tcGFueUBQaXhlbExlYWtz",
+      "country": "United States",
+      "country_code": "US",
+      "sector": "Manufacturing",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Fire protection (extinguisher sales and service) sector. The material scheduled for publication comprises a set of busine",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "fc932df56eee",
+      "group_name": "Pixelleaks",
+      "victim_name": "AMD Capital",
+      "discovered": "2026-11-15T09:01:52+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/QU1EIENhcGl0YWxAUGl4ZWxMZWFrcw",
+      "country": null,
+      "country_code": null,
+      "sector": "Financial Services",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the Capital introduction and manager research (financial services) sector. The material scheduled for publication comprises a",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "526b0b7e84d4",
+      "group_name": "Pixelleaks",
+      "victim_name": "PC Express (Multimedia Informatica)",
+      "discovered": "2026-11-15T09:01:32+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/UEMgRXhwcmVzcyAoTXVsdGltZWRpYSBJbmZvcm1hdGljYSlAUGl4ZWxMZWFrcw",
+      "country": "Philippines",
+      "country_code": "PH",
+      "sector": "Technology",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from a hosted email and IT services provider in Italy. The material scheduled for publication comprises the hosted mail database, covering more than ",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "3970d648ed46",
+      "group_name": "Pixelleaks",
+      "victim_name": "Al Enaya General Trading (SERVERTALLY)",
+      "discovered": "2026-11-15T09:01:01+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/QWwgRW5heWEgR2VuZXJhbCBUcmFkaW5nIChTRVJWRVJUQUxMWSlAUGl4ZWxMZWFrcw",
+      "country": null,
+      "country_code": null,
+      "sector": "Other",
+      "domain": null,
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from an organization in the General trading / textiles sector. The material scheduled for publication comprises a set of business records.",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "4a3a1a020c14",
+      "group_name": "Pixelleaks",
+      "victim_name": "Clinica Suiza Lab",
+      "discovered": "2026-11-15T09:00:34+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/Q2xpbmljYSBTdWl6YSBMYWJAUGl4ZWxMZWFrcw",
+      "country": "Switzerland",
+      "country_code": "CH",
+      "sector": "Healthcare",
+      "domain": null,
+      "status": null,
+      "description_snippet": "A comprehensive healthcare data set was acquired from Clinica Suiza Lab, a Peruvian clinic and laboratory group. The material includes the full patient register with identity documentation, clinical h",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "bbb19d35e2ea",
+      "group_name": "Pixelleaks",
+      "victim_name": "TDS Tech (tdstech.com.vn)",
+      "discovered": "2026-11-15T09:00:05+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/VERTIFRlY2ggKHRkc3RlY2guY29tLnZuKUBQaXhlbExlYWtz",
+      "country": "Vietnam",
+      "country_code": "VN",
+      "sector": "Technology",
+      "domain": "tdstech.com.vn",
+      "status": null,
+      "description_snippet": "This disclosure concerns a verified set of records from a software and digitization services organization in Vietnam. The material scheduled for publication comprises personnel records including natio",
+      "source": "ransomware.live/rss"
+    },
+    {
+      "id": "c3fac5a32d01",
+      "group_name": "Pixelleaks",
+      "victim_name": "Jiangsu Hengsheng Information Technology (江苏恒盛信息技术 / hensun.com)",
+      "discovered": "2026-11-15T08:59:39+00:00",
+      "discovered_date": "2026-11-15",
+      "post_url": "https://www.ransomware.live/id/SmlhbmdzdSBIZW5nc2hlbmcgSW5mb3JtYXRpb24gVGVjaG5vbG9neSAo5rGf6IuP5oGS55ub5L-h5oGv5oqA5pyvIC8gaGVuc3VuLmNvbSlAUGl4ZWxMZWFrcw",
+      "country": "China",
+      "country_code": "CN",
+      "sector": "Technology",
+      "domain": "hensun.com",
+      "status": null,
+      "description_snippet": "A copy of the workforce management system of a Chinese information technology services company, including personnel records for 725 employees with national identity numbers, names, dates of birth, pho",
+      "source": "ransomware.live/rss"
+    },
     {
       "id": "a560fe3602d7",
       "group_name": "N0n",
@@ -6188,7 +6384,7 @@
       "post_url": "https://www.ransomware.live/id/Q0lNU0EgTE9HSVNUSUNTQGluY3JhbnNvbQ",
       "country": "United States",
       "country_code": "US",
-      "sector": "Transportation",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "In the warehousing logistics business for over 20 years, we provide best-in-class warehouse storage solutions for both manufacturing plants in northeast Mexico and their suppliers by allowing parts an",
@@ -7013,7 +7209,7 @@
       "post_url": "https://www.ransomware.live/id/UjMgQ29tcG9zaXRlc0Bha2lyYQ",
       "country": null,
       "country_code": null,
-      "sector": "Manufacturing",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "R3 Composites Inc specializes in custom compression molding and SMC manufacturing, offering des\nign and part conversion services. They are known for their large mold size capabilities and cat\ner prima",
@@ -7028,7 +7224,7 @@
       "post_url": "https://www.ransomware.live/id/UXVhbGl0eSBBaXJAYWtpcmE",
       "country": null,
       "country_code": null,
-      "sector": "Transportation",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "At Quality Air, we know you want your HVAC system to keep you comfortable. When your system sta\nrts causing trouble, it can leave you feeling frustrated and at the mercy of a service company.\nWe belie",
@@ -7043,8 +7239,8 @@
       "post_url": "https://www.ransomware.live/id/T3JhbCBSb2JlcnRzIFVuaXZlcnNpdHlAcWlsaW4",
       "country": "United States",
       "country_code": "US",
-      "sector": "Education",
-      "domain": "www.oru.edu",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "N/A",
       "source": "ransomware.live/rss"
@@ -7058,7 +7254,7 @@
       "post_url": "https://www.ransomware.live/id/VGhlIFF1ZWVuYW4gTGF3IEZpcm1Ab3Npcmlz",
       "country": "United States",
       "country_code": "US",
-      "sector": "Professional Services",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "Status: Countdown (publication 2026-11-18T09:21:30+00:00) | Country: United States | Revenue: $5,000,000 | Employees: 2-10",
@@ -7193,8 +7389,8 @@
       "post_url": "https://www.ransomware.live/id/U1VOTklFUiBIT01FU0BQYW56ZXI",
       "country": "Spain",
       "country_code": "ES",
-      "sector": "Retail & E-Commerce",
-      "domain": "sunnierhomes.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Sunnier Homes es una inmobiliaria internacional con sede en Torrevieja (Alicante) que tiene como propósito cumplir el sueño de todas las personas que buscan un hogar para residir o invertir en el Medi",
       "source": "ransomware.live/rss"
@@ -7268,7 +7464,7 @@
       "post_url": "https://www.ransomware.live/id/Q2FwZXRvd25AbWVkdXNhbG9ja2Vy",
       "country": null,
       "country_code": null,
-      "sector": "Not Found",
+      "sector": null,
       "domain": null,
       "status": null,
       "description_snippet": "DSV provides logistics, transportation, and supply chain services, including sea, air, and road freight as well as warehousing and customs services.",
@@ -7283,8 +7479,8 @@
       "post_url": "https://www.ransomware.live/id/QVdPIEJ1bmRlc3ZlcmJhbmRAYnJhdm94",
       "country": "Germany",
       "country_code": "DE",
-      "sector": "Other",
-      "domain": "awo.org",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "Workforce Development, Vocational Training and Employment Solutions.",
       "source": "ransomware.live/rss"
@@ -7298,8 +7494,8 @@
       "post_url": "https://www.ransomware.live/id/TVRNJk8gR29sZCBSZWZpbmVyeSBETUNDQERhcmsgUHJvamVjdA",
       "country": "United Arab Emirates",
       "country_code": "AE",
-      "sector": "Manufacturing",
-      "domain": "mtm-o.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "About MTM&O Gold Refinery DMCC MTM&O Gold Refinery DMCC is one of the largest refineries in the region and is a leader in terms of customer service, reliability, efficiency and quality. As a result of",
       "source": "ransomware.live/rss"
@@ -7313,370 +7509,10 @@
       "post_url": "https://www.ransomware.live/id/QmVhciBWYWxsZXkgQ29tbXVuaXR5IEhvc3BpdGFsQERhcmsgUHJvamVjdA",
       "country": "United States",
       "country_code": "US",
-      "sector": "Healthcare",
-      "domain": "www.bvchd.com",
+      "sector": null,
+      "domain": null,
       "status": null,
       "description_snippet": "About Bear Valley Community Hospital Bear Valley Community Healthcare District offers a wide range of emergency medical and healthcare services in Big Bear Valley, including urgent care, family health",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "9c42885906db",
-      "group_name": "Play",
-      "victim_name": "NY Snacks",
-      "discovered": "2026-11-10T19:41:23+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/TlkgU25hY2tzQHBsYXk",
-      "country": "United States",
-      "country_code": "US",
-      "sector": "Retail & E-Commerce",
-      "domain": "www.nysnacks.com",
-      "status": null,
-      "description_snippet": "United States",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "ac53964e2290",
-      "group_name": "Play",
-      "victim_name": "BROTHERS EXPRESS LLC",
-      "discovered": "2026-11-10T19:40:48+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/QlJPVEhFUlMgRVhQUkVTUyBMTENAcGxheQ",
-      "country": "United States",
-      "country_code": "US",
-      "sector": "Transportation",
-      "domain": "www.broexp.com",
-      "status": null,
-      "description_snippet": "United States",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "eff883da17b6",
-      "group_name": "Play",
-      "victim_name": "Signworx",
-      "discovered": "2026-11-10T19:39:54+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/U2lnbndvcnhAcGxheQ",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "sector": "Other",
-      "domain": "www.signworx.net",
-      "status": null,
-      "description_snippet": "United States",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "968c898cf35b",
-      "group_name": "Silentransomgroup",
-      "victim_name": "A&O Shearman",
-      "discovered": "2026-11-10T18:52:11+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/QSZPIFNoZWFybWFuQFNpbGVudFJhbnNvbUdyb3Vw",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "sector": "Professional Services",
-      "domain": null,
-      "status": null,
-      "description_snippet": "A&O Shearman is a global law firm formed in 2024 through the merger of Allen & Overy and Shearman & St…",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "285f87cee8de",
-      "group_name": "Silentransomgroup",
-      "victim_name": "J...",
-      "discovered": "2026-11-10T18:51:52+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/Si4uLkBTaWxlbnRSYW5zb21Hcm91cA",
-      "country": null,
-      "country_code": null,
-      "sector": "Not Found",
-      "domain": null,
-      "status": null,
-      "description_snippet": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active).",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "51c79248ce85",
-      "group_name": "Hyflock",
-      "victim_name": "tcadarwin",
-      "discovered": "2026-11-10T18:24:14+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/dGNhZGFyd2luQEhZRkxPQ0s",
-      "country": "Australia",
-      "country_code": "AU",
-      "sector": "Other",
-      "domain": "www.tcadarwin.com.au",
-      "status": null,
-      "description_snippet": "https://www.tcadarwin.com.au is the official website of TCA Accountants & Bookkeepers, a firm based in Darwin, Northern Territory, Australia. The company is a reputable and innovative professional acc",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "21fd41efa766",
-      "group_name": "Byod",
-      "victim_name": "Providence",
-      "discovered": "2026-11-10T18:21:10+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/UHJvdmlkZW5jZUBCWU9E",
-      "country": null,
-      "country_code": null,
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "25GB Of PII, Full Names, Emails, Addresses, DOB, SSNs & much more. We did not lock your network, yet we have sufficient access to do so, this is to show how nested our access is alongside the severity",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "b07822cb5f14",
-      "group_name": "Byod",
-      "victim_name": "Toyota",
-      "discovered": "2026-11-10T18:20:50+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/VG95b3RhQEJZT0Q",
-      "country": "Japan",
-      "country_code": "JP",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Full Names, Emails, Addresses, Phone Numbers DOB, & Kiosk Devices. A lot was actually isolated, good job, however there was a few cracks we managed to slip through. Anyways, you know where to find us ",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "65a1f8d85e16",
-      "group_name": "Orova",
-      "victim_name": "Herminio India Precision Technology",
-      "discovered": "2026-11-10T16:58:23+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/SGVybWluaW8gSW5kaWEgUHJlY2lzaW9uIFRlY2hub2xvZ3lAT3JvdmE",
-      "country": "India",
-      "country_code": "IN",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "HERMINIO is a leading manufacturer of precision components catering to different segments including Automobiles, Refrigeration, Air Conditioning, Brake, Air & Gas.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "a2b311bc1794",
-      "group_name": "Krybit",
-      "victim_name": "Actualize Consulting",
-      "discovered": "2026-11-10T13:34:23+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/QWN0dWFsaXplIENvbnN1bHRpbmdAa3J5Yml0",
-      "country": "United States",
-      "country_code": "US",
-      "sector": "Professional Services",
-      "domain": null,
-      "status": null,
-      "description_snippet": "Actualize Consulting Engineers  Private Limited is an engineering and digital transformation services company based in I...",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "0d5ed63f282b",
-      "group_name": "Climax inc",
-      "victim_name": "Redacted Redacted",
-      "discovered": "2026-11-10T12:54:38+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/UmVkYWN0ZWQgUmVkYWN0ZWRAQ2xpbWF4IEluYw",
-      "country": null,
-      "country_code": null,
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Sector: Medical",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "1d7af2bbd18d",
-      "group_name": "Climax inc",
-      "victim_name": "Nepal Electricity Authority",
-      "discovered": "2026-11-10T12:54:04+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/TmVwYWwgRWxlY3RyaWNpdHkgQXV0aG9yaXR5QENsaW1heCBJbmM",
-      "country": "Nepal",
-      "country_code": "NP",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Sector: Electricity supplier\nStatus: Published",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "aec13d24a961",
-      "group_name": "Climax inc",
-      "victim_name": "Frolina Home",
-      "discovered": "2026-11-10T12:53:22+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/RnJvbGluYSBIb21lQENsaW1heCBJbmM",
-      "country": "Brazil",
-      "country_code": "BR",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Sector: Manufacturer\nStatus: Published",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "9143d3725ae9",
-      "group_name": "Booba project",
-      "victim_name": "COMPUTER TASK GROUP, Inc.",
-      "discovered": "2026-11-10T12:52:35+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/Q09NUFVURVIgVEFTSyBHUk9VUCwgSW5jLkBCb29iYSBQcm9qZWN0",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "IT Services and IT Consulting Stolen data: 50 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "2e63e4cccbb6",
-      "group_name": "Booba project",
-      "victim_name": "Georgetown Sleep Center",
-      "discovered": "2026-11-10T12:52:13+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/R2VvcmdldG93biBTbGVlcCBDZW50ZXJAQm9vYmEgUHJvamVjdA",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Medical Practices Stolen data: 105 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "97549af8c872",
-      "group_name": "Booba project",
-      "victim_name": "Collier Sports Medicine and Orthopedic Center",
-      "discovered": "2026-11-10T12:51:52+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/Q29sbGllciBTcG9ydHMgTWVkaWNpbmUgYW5kIE9ydGhvcGVkaWMgQ2VudGVyQEJvb2JhIFByb2plY3Q",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Hospitals and Health Care Stolen data: 20 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "3d44e47c01e2",
-      "group_name": "Booba project",
-      "victim_name": "El Portal Imaging Center",
-      "discovered": "2026-11-10T12:51:31+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/RWwgUG9ydGFsIEltYWdpbmcgQ2VudGVyQEJvb2JhIFByb2plY3Q",
-      "country": "Mexico",
-      "country_code": "MX",
-      "sector": "Healthcare",
-      "domain": "www.elportalimaging.com",
-      "status": null,
-      "description_snippet": "Research Services Stolen data: 1 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "620b5711a1f4",
-      "group_name": "Booba project",
-      "victim_name": "Day One RI",
-      "discovered": "2026-11-10T12:51:10+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/RGF5IE9uZSBSSUBCb29iYSBQcm9qZWN0",
-      "country": "United States",
-      "country_code": "US",
-      "sector": "Professional Services",
-      "domain": "www.dayoneri.org",
-      "status": null,
-      "description_snippet": "Non-profit Organizations Stolen data: 30 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "3c9cb0f57907",
-      "group_name": "Booba project",
-      "victim_name": "Acclaim Health",
-      "discovered": "2026-11-10T12:50:49+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/QWNjbGFpbSBIZWFsdGhAQm9vYmEgUHJvamVjdA",
-      "country": "Canada",
-      "country_code": "CA",
-      "sector": "Healthcare",
-      "domain": "www.acclaimhealth.ca",
-      "status": null,
-      "description_snippet": "Hospitals and Health Care Stolen data: 51 GB.",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "a0f0d95b640f",
-      "group_name": "Interlock",
-      "victim_name": "Madison Honda",
-      "discovered": "2026-11-10T07:13:00+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/TWFkaXNvbiBIb25kYUBpbnRlcmxvY2s",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Madison Honda, located in Madison, New Jersey, offers a wide selection of new and used vehicles, as well as flexible financing options.They are negligent when it comes to their own security and that o",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "2bed888c8fb5",
-      "group_name": "Interlock",
-      "victim_name": "Custom Floors Unlimited",
-      "discovered": "2026-11-10T07:12:27+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/Q3VzdG9tIEZsb29ycyBVbmxpbWl0ZWRAaW50ZXJsb2Nr",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Custom Floors Unlimited designs and installs high-quality, custom-made solid wood flooring. They specialize in creating unique designs. However, they do not specialize in ensuring their own security o",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "54219e359694",
-      "group_name": "Interlock",
-      "victim_name": "Meadows Valley School District",
-      "discovered": "2026-11-10T07:11:55+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/TWVhZG93cyBWYWxsZXkgU2Nob29sIERpc3RyaWN0QGludGVybG9jaw",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "The Meadows Valley School District strives to prepare all students for life's demands, adventures, and challenges. While the district offers educational services designed to foster student growth and ",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "904be2330e4a",
-      "group_name": "Interlock",
-      "victim_name": "Ridgway High School",
-      "discovered": "2026-11-10T07:10:49+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/UmlkZ3dheSBIaWdoIFNjaG9vbEBpbnRlcmxvY2s",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Ridgeway R-2 School District states its commitment to providing a safe and inclusive learning environment for students, however, their failure to secure your data and their failure to address this iss",
-      "source": "ransomware.live/rss"
-    },
-    {
-      "id": "371c9fd854dc",
-      "group_name": "Interlock",
-      "victim_name": "Southwest Orthopedic & Reconstructive Specialists",
-      "discovered": "2026-11-10T07:09:08+00:00",
-      "discovered_date": "2026-11-10",
-      "post_url": "https://www.ransomware.live/id/U291dGh3ZXN0IE9ydGhvcGVkaWMgJiBSZWNvbnN0cnVjdGl2ZSBTcGVjaWFsaXN0c0BpbnRlcmxvY2s",
-      "country": "United States",
-      "country_code": "US",
-      "sector": null,
-      "domain": null,
-      "status": null,
-      "description_snippet": "Southwest Orthopedic & Reconstructive Specialists, a clinic located in Oklahoma, is required by law to maintain protected health information (PHI) as a healthcare facility. However, due to its neglige",
       "source": "ransomware.live/rss"
     }
   ]
