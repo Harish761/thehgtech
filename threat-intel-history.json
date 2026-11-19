@@ -2,9 +2,9 @@
   "previous_day": {
     "date": "2026-11-19",
     "categories": {
-      "Phishing": 4451,
+      "Phishing": 4456,
       "Malware": 35350,
-      "C2": 11383,
+      "C2": 11543,
       "Botnet": 4297
     }
   },
@@ -26,11 +26,11 @@
     "PhantomStealer": 3,
     "Mirai": 101,
     "MassLogger": 1,
-    "PureLogsStealer": 230,
+    "PureLogsStealer": 231,
     "ValleyRAT": 12,
     "RevStealer": 10,
     "RustyStealer": 10,
-    "Vidar": 1756,
+    "Vidar": 1757,
     "WannaCry": 1,
     "AsyncRAT": 1628,
     "AMOS": 95,
@@ -47,9 +47,9 @@
     "Adware.OfferCore": 1,
     "SalatStealer": 7,
     "GodPotato": 1,
-    "Spamhaus DROP List": 1767,
-    "CINS Threat List": 39456,
-    "SSH Attacks": 12112,
+    "Spamhaus DROP List": 1706,
+    "CINS Threat List": 38453,
+    "SSH Attacks": 12003,
     "malware_download": 34528,
     "Potassium": 25,
     "StrelaStealer": 3,
