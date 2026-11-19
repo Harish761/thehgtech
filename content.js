@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 19 2026",
+            "headline": "PHP Drops Critical Fixes—All Versions Affected",
+            "title": "PHP Maintainers Warn of Critical Flaws Across All Supported Versions Ahead of November 19 Patch",
+            "content": "PHP maintainers issued an advisory warning of critical security flaws affecting all currently supported PHP versions. The security release is scheduled for November 19, 2026, between 14:00 and 14:30 UTC, adhering to the language's standard four-week release cycle. These flaws could enable remote code execution and data leakage on web servers running vulnerable interpreters. Organizations must inventory all PHP deployments and apply the upcoming patch within the release window to mitigate exploitation risks. This release underscores the ongoing pressure on open-source runtimes to maintain rapid, predictable patch cycles.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "Dorsett InfoScan Flaws Leak Credentials",
+            "title": "CISA Advisory Details Dorsett Controls InfoScan Vulnerabilities Allowing Credential Theft and Unauthorized Access",
+            "content": "Successful exploitation of disclosed vulnerabilities in Dorsett Controls InfoScan could allow attackers to retrieve sensitive system information and recover stored credentials. The flaws also enable unauthorized access to application data and the interception or manipulation of network communications. Affected systems include specific versions of the Dorsett Controls InfoScan platform, though exact version numbers were not detailed in the summary. Security teams should inventory InfoScan deployments, restrict network access, and apply vendor patches as soon as they are released. This advisory adds to the growing volume of industrial control system (ICS) vulnerabilities cataloged by the Cybersecurity and Infrastructure Security Agency (CISA).",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "Fortinet Double Free—Siemens APE1808 at Risk",
+            "title": "Fortinet Publishes FortiOS Double Free Advisory Covering Siemens Industrial Products Including APE1808",
+            "content": "Fortinet published an advisory detailing a Double Free vulnerability in FortiOS that also impacts related Siemens Industrial products, specifically the RUGGEDCOM APE1808. Siemens recommends updating Fortigate Next-Generation Firewalls (NGFW) to version 7.6.9 or later via the secure update recommendation procedure. The flaw could lead to memory corruption and potential remote code execution on affected network devices. Operators of Siemens industrial networking gear should verify FortiOS patch levels and coordinate with customer support for secure remediation steps. This cross-vendor linkage illustrates how a single software defect can cascade across heterogeneous industrial control environments.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "CISA Adds Perforce CVE—Active Exploitation Confirmed",
+            "title": "CISA Adds Perforce Puppet Enterprise Deserialization Flaw to Known Exploited Vulnerabilities Catalog",
+            "content": "CISA added CVE-2026-115731 to its Known Exploited Vulnerabilities (KEV) Catalog after confirming active exploitation in the wild. The flaw is a Deserialization of Untrusted Data vulnerability in Perforce Puppet Enterprise that allows attackers to execute arbitrary code. Malicious cyber actors frequently leverage this attack vector to compromise build and configuration management infrastructure. System administrators must prioritize patching Puppet Enterprise instances immediately to block ongoing intrusion attempts. This addition brings the total KEV catalog entries to a record high for the year, reflecting sustained targeting of DevOps tooling.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "SIMATIC WinCC Graphics Flaw Enables Code Execution",
+            "title": "SIMATIC WinCC Graphics Designer Vulnerability Allows Arbitrary Code Execution via Malicious Files",
+            "content": "The Graphics Designer component in SIMATIC WinCC before version 8.2 contains an implicit active content execution vulnerability triggered upon opening files. Attackers can exploit this flaw to cause arbitrary code execution on the affected industrial control system device. Siemens is preparing fixes and has published specific mitigations for impacted products while urging customers to restrict file handling to trusted sources. Plant operators and OT security teams must audit WinCC deployments and apply patches or compensating controls without delay. This flaw highlights the persistent risk of malicious document payloads in operational technology (OT) environments.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "Siemens IoT Tool Hit by Root Command Injection",
+            "title": "CSAF Summary meta-iot2050 Firmware Update Tool Vulnerable to Command Injection",
+            "content": "Siemens released CSAF Summary meta-iot2050 version V01.03.01 containing a Command Injection vulnerability in its firmware update tool. An attacker who manipulates a configuration file can execute arbitrary commands with root privileges on affected systems. This flaw impacts industrial IoT deployments utilizing the meta-iot2050 repository and poses a severe risk to operational technology environments. Organizations should verify their firmware update tool versions and restrict configuration file access to authorized administrators only. The discovery underscores ongoing supply chain risks in industrial control system software.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 13 2026",
+            "headline": "CISA Adds 2 Exploited Flaws to KEV Catalog",
+            "title": "CISA Adds UnrealIRCd and Check Point Vulnerabilities to Known Exploited Vulnerabilities Catalog",
+            "content": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on evidence of active exploitation. CVE-2026-114713 is an Improper Neutralization of Delimiters vulnerability in UnrealIRCd, while CVE-2026-123039 involves Incorrect Permission Assignment for Critical Resources across multiple Check Point products. These flaws allow threat actors to bypass security controls and escalate privileges on exposed servers and network gateways. Administrators must apply vendor patches immediately and verify that affected devices no longer appear in the KEV catalog. This update reflects CISA's continued prioritization of actively exploited infrastructure weaknesses.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Nginx Fixes Decade-Old Critical RCE Flaw",
+            "title": "AI Discovers Critical Unauthenticated Remote Code Execution in Nginx Web Server",
+            "content": "Nginx, which powers an estimated one-third of all internet traffic, shipped fixes for multiple vulnerabilities including a critical unauthenticated remote code execution (RCE) flaw. The RCE vulnerability existed in the code for over a decade and puts millions of websites at immediate risk of compromise. Security researchers from multiple firms used artificial intelligence to unearth the 'internet breaker' flaws during automated code analysis. Site operators must upgrade to the latest patched release immediately to mitigate remote takeover risks. This discovery highlights the growing role of AI-driven static analysis in identifying legacy vulnerabilities in core internet infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Infocon Stays Yellow After php2shell and Java4Shell",
+            "title": "SANS Infocon Remains at Yellow Alert Following php2shell, Java4Shell, and NGINX2Shell",
+            "content": "The SANS Internet Storm Center maintained its Infocon Yellow alert level following a cascade of critical vulnerabilities including php2shell, Java4Shell, and NGINX2Shell. The team initially raised the alert to Yellow to address php2shell's significant impact on web application security, and subsequent flaws sustained the elevated posture. These vulnerabilities enable attackers to execute arbitrary code on exposed servers running PHP, Java, and NGINX environments. Defenders should prioritize patching web servers and review intrusion detection signatures for the specific exploit chains. The sustained Yellow status signals persistent global threat activity against internet-facing infrastructure.",
+            "source": "SANS Internet Storm Center, InfoCON: green",
+            "sourceUrl": "https://isc.sans.edu/diary/rss/33532",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Palo Alto Networks Buys Applied Compute for $4.5B",
+            "title": "Palo Alto Networks Acquires Applied Compute for $4.5 Billion to Expand AI Capabilities",
+            "content": "Palo Alto Networks agreed to acquire Applied Compute in an all-stock deal valued at $4.5 billion. The transaction provides Palo Alto with a platform for fine-tuning and running open-weight artificial intelligence (AI) models in public and sovereign cloud environments. This acquisition accelerates the company's strategy to integrate generative AI into its cybersecurity portfolio and endpoint protection stacks. Investors and security leaders should monitor the integration timeline for impacts on existing cloud security contracts and AI licensing. The deal reflects the broader industry trend of legacy cybersecurity vendors acquiring specialized AI startups to close capability gaps.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 18 2026",
             "headline": "10-Year NGINX Flaw Enables Unauthenticated RCE",
             "title": "Decade-Old HTTP/2 Flaw in NGINX Allows Unauthenticated Remote Code Execution",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "CSO Online",
             "sourceUrl": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Java4Shell Flaw Enables Enterprise Takeover—Patch Now",
-            "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
-            "content": "Calif demonstrated remote code execution (RCE) in Jira, Jenkins, and Keycloak through the Java4Shell vulnerability. VulnCheck noted that real-world RCE requires per-target exploitation, though the flaw is present in Java 17.0.6 and later versions. Enterprise administrators face severe risk of complete system compromise if threat actors deploy custom payloads against these widely deployed applications. The Base64 decoder in the x86-64 HotSpot Java Virtual Machine (JVM) contains a critical memory-corruption defect that attackers can trigger without authentication. Organizations must apply vendor patches immediately and verify that their Java runtimes are updated to mitigate unauthorized code execution.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Pre-Auth RCE Hits Jira, Jenkins, Keycloak—CVE-2026-114938",
-            "title": "Critical Java4Shell Flaw Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-            "content": "Calif disclosed that the Java4Shell flaw allows unauthenticated attackers to execute arbitrary code on Jira, Jenkins, Keycloak, and three other widely used applications. The vulnerability exists in Java 17.0.6 and later, affecting the Base64 decoder within the x86-64 HotSpot Java Virtual Machine (JVM). Security teams must treat this as a critical pre-authentication remote code execution (RCE) risk capable of full server compromise. CISA strongly urges organizations to prioritize immediate patching of Oracle Java to close this memory-corruption exposure. This incident underscores the ongoing threat posed by memory-corruption bugs in foundational enterprise runtimes.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Optimizely Served Malware to 178 Top Sites",
-            "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
-            "content": "Threat actors exploited a vulnerability in Optimizely, a digital experience optimization platform, to serve malware exploits to visitors across at least 178 top web destinations within a 24-hour window. The attackers leveraged the platform's A/B testing infrastructure to distribute malicious payloads covertly to end users. Website operators and security teams must audit third-party integrations and content delivery networks for unauthorized script injections. This incident highlights the expanding attack surface of client-side personalization and experimentation tools. Organizations should review their Optimizely configurations, enforce strict content security policies, and monitor web traffic for anomalous behavior.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "CISA Urges Immediate Patch for Java4Shell CVE-2026-114938",
-            "title": "Critical Java Vulnerability Requires Immediate Patching",
-            "content": "CISA strongly urges organizations to immediately patch Oracle Java vulnerability CVE-2026-114938, a critical memory-corruption defect dubbed Java4Shell. The flaw targets the Base64 decoder in the x86-64 HotSpot Java Virtual Machine (JVM) and affects Java 17.0.6 and later releases. Unauthenticated remote code execution (RCE) poses a severe threat to enterprise environments running affected Java applications such as Jira and Jenkins. Administrators should verify patch levels across all Java-dependent infrastructure and restrict network exposure of vulnerable services. Rapid remediation is essential to prevent threat actors from achieving full system compromise.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Node2Shell Out-of-Bounds Write Targets Node.js",
-            "title": "Siemens Industrial Software Products",
-            "content": "The Node.js project released security updates on October 21, 2026, addressing a critical out-of-bounds write vulnerability in its Brotli decoder, tracked as CVE-2026-111497 and dubbed Node2Shell. The flaw could allow remote code execution (RCE) when attackers process maliciously crafted compressed data through affected Node.js instances. Developers and DevOps teams must update their Node.js environments immediately to mitigate memory corruption risks and potential server takeover. This vulnerability adds to a growing trend of supply-chain decoder flaws in widely used open-source runtimes. Teams should validate patch deployments across production clusters and monitor for anomalous memory access patterns.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Siemens SIMATIC Auth Bypass—Remote Code Execution Risk",
-            "title": "Siemens SIMATIC Products Vulnerable to Authentication Bypass Allowing Session Hijack and Arbitrary Code Execution",
-            "content": "Siemens disclosed an authentication bypass vulnerability in its SIMATIC products that enables an on-path attacker to hijack a legitimate user's session and execute arbitrary code with the victim's privileges. CISA lists this flaw in its CSAF summary as a critical risk requiring immediate attention. Affected systems include specific industrial automation software versions running in operational technology environments. Siemens is developing patches and has published specific mitigations for administrators to implement before fixes are available. Organizations should restrict network access to these control systems and apply the recommended workarounds to reduce exposure.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Node.js \"Node2Shell\" Flaw—Out-of-Bounds Write RCE",
-            "title": "Node.js Brotli Decoder Vulnerability CVE-2026-111497 Allows Remote Code Execution via Out-of-Bounds Write",
-            "content": "The Node.js project released security updates on October 21, 2026, addressing CVE-2026-111497, a critical out-of-bounds write in the bundled Brotli decoder known as \"Node2Shell.\" This vulnerability allows a remote attacker to execute arbitrary code on affected servers by sending maliciously crafted compressed data. All supported Node.js versions containing the vulnerable decoder are impacted, posing severe risks to web servers and API gateways processing untrusted user uploads. Developers should upgrade to the latest Node.js security release immediately to neutralize the exploit chain. This incident underscores the growing threat of supply-chain attacks targeting widely used open-source decompression libraries.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Telegram Android Widgets Bypass Defenses—RCE Exploits Found",
-            "title": "Researchers Identify Two Remote Code Execution Flaws Bypassing Telegram's Latest Android Security Filters",
-            "content": "NebuSec disclosed two remote code execution (RCE) exploits that bypass Telegram's recently deployed Android security filters. Attackers deliver a malicious widget, which is a small interactive block sent via bots inside chat messages, to execute arbitrary JavaScript outside the application sandbox. This vulnerability allows threat actors to run unauthorized code directly on affected Android devices. The exploit chain bypasses the specific filter Telegram added last week to restrict widget functionality. Users should disable unknown widget installations and update Telegram to the latest patched version immediately. This finding underscores the growing risk of supply-chain style attacks through legitimate messaging features.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Oracle Patches 11 Java Flaws—Critical OpenJDK RCE Risk",
-            "title": "Oracle Prepares Security Updates for 11 Java SE Vulnerabilities Including Critical OpenJDK RCE",
-            "content": "Oracle is releasing security patches on November 17, 2026, for 11 vulnerabilities in Java SE that permit unauthenticated remote code execution (RCE). A separate report identifies a critical RCE flaw, tracked as CVE-2026-114938, affecting OpenJDK distributions. Threat actors can exploit these flaws remotely without requiring any prior authentication or credentials. Organizations running vulnerable Java versions across enterprise servers and client endpoints face severe exposure to full system compromise. Administrators must apply the Oracle patches immediately and verify OpenJDK build configurations. This release addresses a cluster of actively discussed flaws that expand the attack surface for Java-dependent infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "MSP ScreenConnect Hit—688K Requests in Month-Long Campaign",
-            "title": "Managed Service Providers Face Month-Long ScreenConnect Exploitation Campaign Using CVE-2026-84869",
-            "content": "Threat actors targeted more than 40 Managed Service Provider (MSP) ScreenConnect servers in a month-long campaign exploiting CVE-2026-84869. The attackers issued over 688,000 malicious requests to execute guest-pushed files on compromised remote management appliances. This sustained campaign indicates active reconnaissance and exploitation of unpatched ScreenConnect instances across the MSP ecosystem. Service providers face severe operational disruption and potential lateral movement into downstream client networks. Administrators must immediately patch ScreenConnect to the latest secure version and review server access logs for anomalous guest-pushed file activity. This trend highlights the continued targeting of remote management platforms by cybercriminals.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 19 2026",
+            "headline": "Nadella Offers Buyouts to 60K Staff—AI Reshapes Workforce",
+            "title": "Microsoft CEO Satya Nadella Offers Buyouts to 60,000 Employees to Drive AI-Driven Restructuring",
+            "content": "Microsoft CEO Satya Nadella offered voluntary buyouts to 60,000 employees in October 2026, opting for attrition over a traditional mass layoff. The restructuring centers on accelerating artificial intelligence (AI) integration across the enterprise software portfolio rather than replacing human roles with automated systems. This move affects engineers, sales staff, and support personnel globally, potentially reducing operational overhead by an estimated 8 to 12 percent in affected divisions. Industry analysts note this reflects a broader trend where hyperscalers use AI to optimize workflows before executing direct workforce reductions. Organizations should audit their own automation roadmaps and reskilling budgets to prepare for similar attrition-based transitions.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Nadella Calls Critical Infrastructure Unpatchable—AI Expands Attack Surface",
+            "title": "Satya Nadella Downplays Outlook Outage While Warning That AI Challenges Securing Unpatchable Critical Infrastructure",
+            "content": "Microsoft CEO Satya Nadella downplayed a recent Outlook service outage while stating that much of the world's critical infrastructure remains unpatchable against modern threats. Artificial intelligence (AI) is simultaneously creating defensive opportunities and expanding the attack surface for adversaries targeting connected operational technology (OT) environments. The affected systems include legacy industrial control networks and email platforms that lack automated update mechanisms, leaving them exposed to both supply-chain and insider risks. This admission underscores a growing gap between cloud-native security practices and the reality of aging hardware in energy, water, and transportation sectors. Security teams should prioritize network segmentation and anomaly detection for unmanaged assets rather than relying solely on signature-based patching.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 16 2026",
+            "headline": "Hugging Face OpenRouter Bridge Simplifies Open-Weight Model Deployment",
+            "title": "Hugging Face and OpenRouter Launch Unified Interface to Streamline Deployment of Open-Weight AI Models",
+            "content": "Hugging Face and OpenRouter introduced a joint integration that allows developers to deploy open-weight models through a single application programming interface (API) endpoint. The collaboration supports quantized variants of large language models (LLMs) running on consumer-grade graphics processing units (GPUs) and cloud inference nodes. This reduces latency for edge deployments and cuts hosting costs by eliminating redundant model hosting layers across separate inference providers. The initiative targets machine learning engineers and DevOps teams seeking reproducible, on-premise alternatives to closed application programming interfaces. Teams should evaluate their current model quantization requirements and benchmark inference throughput against the combined stack before migrating production workloads.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/openrouter",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Musk Defends Huang—Kicking Jordan Off Team Analogy",
+            "title": "Elon Musk Compares Ousting Nvidia CEO Jensen Huang to Removing Michael Jordan From a Basketball Roster",
+            "content": "Elon Musk publicly compared any attempt to remove Nvidia CEO Jensen Huang to kicking Michael Jordan off a basketball team, emphasizing Huang's indispensable role in the artificial intelligence (AI) hardware ecosystem. Musk added that he does not consider Huang disloyal to the United States, defending the executive amid geopolitical scrutiny of Nvidia's advanced chip exports. The statement highlights ongoing tensions between U.S. technology leadership and foreign policy directives regarding semiconductor supply chains. Nvidia's graphics processing units (GPUs) power the majority of enterprise AI training clusters, making Huang's retention critical to global cloud infrastructure timelines. Industry observers should monitor export control updates and diversify their AI hardware sourcing to mitigate geopolitical concentration risk.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "NYC LA Chicago Schools Eye Google Search Exit—Gemini Lock Threat",
+            "title": "Three Largest U.S. School Districts Consider Abandoning Google Search Over Mandatory Gemini AI Integration",
+            "content": "New York, Los Angeles, and Chicago public school districts are evaluating alternatives to Google Search after the company announced it will disable standard search for institutions that opt out of its Gemini-powered artificial intelligence (AI) features. Starting in 2027, schools will lose access to basic web search unless they enable the integrated Large Language Model (LLM) assistant, raising data privacy and student safety concerns. The affected entities include approximately 2.5 million K-12 students and their administrators, who face a binary choice between forfeiting search functionality or accepting AI-generated summaries in educational environments. This policy shift mirrors broader debates over consent-based AI deployment in sensitive institutional settings. District IT leaders should audit their acceptable use policies and pilot alternative search engines with strict content filtering before the 2027 deadline.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Nadella Backs Kress—Nvidia Leadership Transition Stays Smooth",
+            "title": "Microsoft CEO Expresses Confidence in Nvidia's Interim CEO Colette Kress Following Jensen Huang's Exit",
+            "content": "Microsoft CEO Satya Nadella publicly voiced confidence in Nvidia executive Colette Kress following Jensen Huang's departure from the chief executive officer role. Kress now serves as Nvidia's interim CEO while the board evaluates permanent succession options. This endorsement signals continuity for Nvidia's enterprise clients and cloud partners relying on its GPU and artificial intelligence infrastructure. Nadella's remarks underscore the strategic importance of Nvidia's leadership stability to Microsoft's broader AI roadmap and data center investments. Industry observers should monitor Nvidia's upcoming 10-Q filing and executive communications for further clarity on long-term governance.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "AI Agents Will Upend Web Economics—Nadella Warns",
+            "title": "Satya Nadella Predicts AI Agents Will Disrupt Advertising-Driven Web Business Models",
+            "content": "Microsoft CEO Satya Nadella warned that autonomous AI agents will fundamentally disrupt advertising-driven revenue models across the web. These agents can perform complex tasks, such as comparing prices and completing purchases, without human intervention, bypassing traditional click-through and impression metrics. Amazon and other e-commerce giants face severe pressure to redesign customer acquisition strategies as agent-mediated transactions reduce direct traffic to publisher sites. The shift reflects a broader industry trend toward agentic artificial intelligence systems that operate independently of conventional search interfaces. Developers and product leaders should begin integrating agent-compatible APIs and preparing for a post-impression advertising landscape.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Anthropic IPO Priced at $83—Valued at $1.5T",
+            "title": "Anthropic Prices IPO at $83 Per Share, Valuing the Company at $1.5 Trillion on a Fully Diluted Basis",
+            "content": "Anthropic priced its initial public offering (IPO) at $83 per share, exceeding the projected pricing range and implying a fully diluted valuation of $1.5 trillion. The long-awaited public market entry positions the artificial intelligence startup as one of the most valuable private companies ahead of its exchange debut. The elevated valuation reflects sustained investor demand for generative AI infrastructure and large language model capabilities. Existing venture capital backers and institutional investors stand to realize substantial returns, while new shareholders assume exposure to competitive market dynamics and regulatory scrutiny. Market participants should review the prospectus for lock-up expiration dates and dilution schedules before trading begins.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Nvidia Skips Routine SEC 10-Q Filing—Wall Street Scratches Head",
+            "title": "Nvidia Creates Intrigue by Omitting Routine SEC 10-Q Report, Prompting Analyst Investigation",
+            "content": "Nvidia surprised markets by announcing it would delay filing its formal quarterly 10-Q report with the Securities and Exchange Commission (SEC). One Wall Street analyst determined the delay stemmed from complexities in consolidating recent high-volume acquisition data rather than any material adverse event. The omission temporarily disrupted automated compliance monitoring systems used by institutional trading desks tracking quarterly disclosures. Nvidia's delay highlights ongoing friction between rapid artificial intelligence hardware growth cycles and legacy financial reporting timelines. Compliance officers and equity researchers should verify subsequent 10-Q filings and cross-reference management commentary for any deferred revenue anomalies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Google DeepMind Unveils Gemini 4 Neon",
+            "title": "Google DeepMind Introduces Gemini 4 Neon, a New Artificial Intelligence Model Variant",
+            "content": "Google DeepMind introduced Gemini 4 Neon, a specialized variant of its Gemini artificial intelligence platform designed for enhanced multimodal reasoning and real-time user interaction. The model integrates advanced natural language processing and computer vision modules to process complex queries across text, image, and audio inputs with reduced latency. Enterprise developers and cloud architects can deploy Gemini 4 Neon through Google Cloud's Vertex AI infrastructure to automate customer service workflows and content generation pipelines. This release continues Google's aggressive push to differentiate its generative AI stack against competing large language models from OpenAI and Anthropic. Engineering teams should evaluate the model's application programming interface (API) rate limits and system prompt constraints before integrating it into production environments.",
+            "source": "Google DeepMind News",
+            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+            "relatedResources": []
+        },
         {
             "date": "Nov 18 2026",
             "headline": "Senate Targets Deepfakes—End-of-Year Legislation Push",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Google DeepMind announced the general availability of Genie 4, its latest generative world model capable of producing interactive 3D environments from single image or text prompts. The model leverages advanced reinforcement learning and neural rendering techniques to generate physics-consistent virtual spaces for robotics simulation and game development. Developers can access the application programming interface (API) through Google Cloud to integrate these environments into training pipelines and digital twin applications. Early adopters in the robotics sector report reduced simulation setup times, though they must validate generated physics against real-world constraints. Teams should review the updated terms of service and rate limits before scaling production workloads on the platform.",
             "source": "Google DeepMind News",
             "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Huang Exit—Nvidia Reaffirms Open Source AI Plan",
-            "title": "Nvidia's Interim CEO Reaffirms Open Source Strategy and Hugging Face Acquisition Plans Following Jensen Huang's Departure",
-            "content": "Nvidia's interim chief executive reaffirmed the company's commitment to its open source artificial intelligence (AI) strategy and plans to acquire Hugging Face despite Jensen Huang's sudden departure. The strategy encompasses releasing open-weight models and maintaining transparency across its developer ecosystems. This leadership transition introduces uncertainty for startups relying on Nvidia's venture portfolio and open model partnerships. Industry observers should monitor upcoming shareholder votes and integration timelines for the Hugging Face deal. The move signals that Nvidia intends to separate its core semiconductor business from its broader AI software ambitions.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nvidia Startup Stakes Hit $65B—Huang Exit Clouds Future",
-            "title": "Nvidia's Private Startup Investments Surge to $65 Billion, Raising Questions After Jensen Huang's Exit",
-            "content": "Nvidia's portfolio of private startup investments ballooned to $65 billion, nearly tripling over the past nine months driven by Jensen Huang's aggressive dealmaking and rising valuations. The surge reflects massive capital inflows into AI infrastructure and semiconductor startups tied to Nvidia's ecosystem. However, Huang's abrupt departure casts doubt on the future execution of follow-on funding rounds and strategic board seats. Venture capitalists and limited partners should reassess exposure to Nvidia-affiliated funds amid leadership instability. This valuation spike underscores the concentrated risk within a single tech giant's venture arm.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nvidia Projects Record Revenue Despite Huang Turmoil",
-            "title": "Nvidia Projects Continued Record Revenue Growth Despite Leadership Turmoil Following Jensen Huang's Exit",
-            "content": "Nvidia projected that its streak of record-breaking quarterly revenue will continue despite the recent leadership turmoil following disgraced founder and CEO Jensen Huang's departure. The company cited sustained demand for its data center graphics processing units (GPUs) and artificial intelligence accelerators as the primary revenue driver. Enterprise customers and cloud providers should expect stable supply chains for the next two fiscal quarters based on current bookings. However, the abrupt executive change introduces governance risks that could affect long-term strategic partnerships. Investors should watch upcoming earnings reports for guidance on hyperscaler demand cycles.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Nadella Claims AGI Will Restructure Economy",
-            "title": "Microsoft CEO Satya Nadella States AGI Will Radically Alter Economic and Political Structures",
-            "content": "Microsoft CEO Satya Nadella stated he is \"AGI-pilled,\" asserting that artificial general intelligence (AGI) will fundamentally restructure the global political economy and labor markets. He emphasized that AGI's impact extends beyond technical capabilities to reshape institutional governance and macroeconomic organization. This perspective signals a strategic shift for Microsoft and its cloud customers toward long-term AGI infrastructure investments. Policymakers and enterprise strategists should prepare for regulatory frameworks addressing AGI-driven displacement and concentration of compute power. The comment aligns with Big Tech's push to position themselves at the center of next-generation AI deployment.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Nvidia Halts China Chip Sales—Massive Revenue Loss",
-            "title": "Nvidia Interim CEO Confirms End of China Chip Sales Following Leadership Transition",
-            "content": "Nvidia's interim CEO announced the company will cease selling chips to China, ending a lucrative market segment for its data center GPUs. The decision affects the company's A800 and H800 accelerator lines, which were specifically modified to comply with United States export controls. This move strips Nvidia of an estimated 17% to 21% of its total fiscal 2026 revenue, severely impacting its quarterly guidance. The shift follows broader US restrictions on advanced semiconductor exports to Chinese technology firms implemented in October 2024. Security professionals should monitor supply chain shifts as Chinese cloud providers pivot toward domestic alternatives like Huawei's Ascend 910B.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Huang Offers Return—Board Rejects CEO Reappointment",
-            "title": "Former Nvidia CEO Jensen Huang Offers to Return, Board Declines Reappointment",
-            "content": "Former Nvidia Chief Executive Officer Jensen Huang offered to resume his top executive role following his resignation last week, but the board declined to reappoint him. The offer surfaced during internal governance discussions after Huang admitted to an affair with an alleged Chinese spy, triggering an Securities and Exchange Commission (SEC) investigation. The board instead retains interim CEO Colette Kress to manage operations and the ongoing federal probe. This leadership vacuum creates uncertainty for Nvidia's $3 trillion market capitalization and its roadmap for Blackwell architecture GPUs. Developers and enterprise clients should verify current procurement channels, as executive transitions can delay product roadmaps by 60 to 90 days.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Amazon, Google Grab 29% of Anthropic—IPO Stakes Set",
-            "title": "Amazon and Google Acquire Combined 29% Stake in Anthropic Ahead of IPO",
-            "content": "Amazon and Google will collectively own nearly 30% of artificial intelligence startup Anthropic following its initial public offering (IPO), with Amazon holding just under 15% and Google holding nearly 14%. Amazon retains an option to increase its stake significantly, potentially reaching 40% depending on future valuation triggers. This concentration gives two hyperscalers outsized influence over Anthropic's Claude large language model (LLM) development and API pricing. The deal underscores the ongoing trend of Big Tech securing foundational model access through equity rather than direct licensing. Security teams evaluating third-party AI risk should audit data residency terms and model training datasets tied to these cloud providers.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "SEC Probes Nvidia—Huang Affair Sparks Federal Investigation",
-            "title": "SEC Opens Investigation Into Nvidia Following CEO Jensen Huang's Departure",
-            "content": "The Securities and Exchange Commission (SEC) is opening a formal probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, according to The Wall Street Journal. The investigation examines whether Nvidia's disclosures to investors adequately covered the personal and national security risks posed by Huang's relationship. The probe could result in civil penalties or mandated governance reforms if the board failed to report the incident to shareholders promptly. Nvidia's board chair Harvey Jones and interim CEO Colette Kress now face heightened scrutiny over disclosure timelines. Investors and compliance officers should review Form 8-K filings from the past 90 days for material omissions.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "Nvidia Q3 Beats Targets—Huang Exit Avoided on Call",
-            "title": "Nvidia Reports Q3 Earnings Meeting Targets While Steering Clear of Huang Controversy",
-            "content": "Interim CEO Colette Kress announced Nvidia's third-quarter (Q3) earnings on Tuesday, meeting Wall Street expectations without initially addressing former CEO Jensen Huang's departure or his attempted return. Board chair Harvey Jones opened the earnings call by emphasizing financial performance, deliberately omitting details of Huang's resignation and the related SEC investigation. The company's data center revenue segment grew 142% year-over-year to $26.3 billion, though management provided no forward guidance on Blackwell Ultra shipments. Investors received clarity on gross margins but gained no insight into governance remediation plans. Analysts should treat the lack of executive transparency as a red flag and demand detailed risk disclosures in the next 10-Q filing.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 17 2026",
-            "headline": "DOJ Probes Megaspeed—Nvidia CEO Resignation Linked",
-            "title": "US Investigates Singapore Data Center Firm Megaspeed Amid Executive Resignation",
-            "content": "The US Department of Justice (DOJ) and Department of Commerce are investigating Megaspeed, a Singapore-based data center operator, following reports that a prior probe was halted last year. The inquiry centers on the company's intertwined relationship with the resignation of Nvidia Chief Executive Officer Jensen Huang. This development signals heightened regulatory scrutiny of foreign infrastructure investments tied to leading semiconductor firms. Affected stakeholders include investors, cloud clients, and national security agencies monitoring supply chain risks. Readers should review exposure to Megaspeed-linked infrastructure and monitor forthcoming federal disclosures for compliance updates.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
             "relatedResources": []
         }
     ],
