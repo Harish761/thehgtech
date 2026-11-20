@@ -3118,6 +3118,26 @@
       "Description": "In March 2021, the Carding Mafia forum suffered a data breach that exposed almost 300k members' email addresses. Dedicated to the theft and trading of stolen credit cards, the forum breach also exposed usernames, IP addresses and passwords stored as salted MD5 hashes."
     }
   ],
+  "careers360.com": [
+    {
+      "Name": "Careers360",
+      "Title": "Careers360",
+      "BreachDate": "2026-11-14",
+      "AddedDate": "2026-11-20T03:44:54Z",
+      "PwnCount": 3609421,
+      "DataClasses": [
+        "Academic records",
+        "Castes",
+        "Email addresses",
+        "Genders",
+        "Names",
+        "Phone numbers"
+      ],
+      "IsVerified": true,
+      "IsFabricated": false,
+      "Description": "In November 2026, <a href=\"https://x.com/DailyDarkWeb/status/2121550256668131811\" target=\"_blank\" rel=\"noopener\">data allegedly taken from the Indian education and careers platform Careers360 appeared on a public hacking forum</a>. The 22M records included 3.6M unique email addresses alongside names, phone numbers, genders and caste categories, and most also contained students' entrance exam results, including ranks and marks."
+    }
+  ],
   "cargurus.com": [
     {
       "Name": "CarGurus",
