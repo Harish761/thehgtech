@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 20 2026",
+            "headline": "China Group Hacks VMware vCenter—CVSS 9.8 Zero-Day",
+            "title": "China-Linked Armory Castle Exploits Critical VMware vCenter Zero-Day to Steal Data",
+            "content": "The China-nexus threat actor Armory Castle (formerly UNC5221) exploited a critical vulnerability in VMware vCenter Server during early September 2026 to gain administrative access and exfiltrate data. The flaw, tracked as CVE-2026-123890, carries a CVSS score of 9.8 and stems from an authentication bypass mechanism. Organizations running affected vCenter Server deployments face severe risk of complete infrastructure compromise and unauthorized data theft. Security teams must apply VMware's emergency patches immediately and audit vCenter logs for indicators of compromise. This incident underscores the persistent targeting of enterprise virtualization platforms by state-sponsored espionage groups.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "FastUnlock Lets Attackers Run Programs—No Admin Rights",
+            "title": "Unpatched Windows FastUnlock Zero-Day Allows Program Execution on Locked PCs",
+            "content": "Researcher disclosed FastUnlock, an unpatched Windows zero-day that lets an attacker with physical access launch programs on a locked computer without signing in. The technique grants only a limited user account, preventing full administrator control of the host machine. Windows users remain vulnerable until Microsoft releases a security update, as the flaw bypasses the standard lock-screen authentication barrier. Organizations should enforce strict physical security policies and consider enabling Windows Defender Device Guard or BitLocker to mitigate local attack vectors. This discovery highlights ongoing risks in physical access scenarios even when network defenses remain intact.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "libumqtt Flaw Risks DoS—CVSS 8.6 Remote Exploit",
+            "title": "CISA Flags libumqtt Vulnerability Allowing Remote DoS and Memory Corruption",
+            "content": "CISA published an advisory for libumqtt, where successful exploitation could enable a remote attacker to trigger denial of service, memory corruption, or information disclosure. The vulnerability affects libumqtt version 1 and carries a CVSS score of 8.6 under the CSAF Vendor Equipment v3 scoring model. Remote code execution or data leakage poses critical risks to IoT and embedded systems utilizing the MQTT client library. Developers must update to a patched release or disable the affected service until a vendor fix is available. This flaw adds to a growing trend of critical vulnerabilities in lightweight messaging libraries.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "OpenPLC Runtime Flaw—Unauthenticated Admin Accounts Created",
+            "title": "Autonomy Logic OpenPLC Runtime Vulnerability Allows Unauthenticated Admin Creation",
+            "content": "CISA warned that the Autonomy Logic OpenPLC Runtime vulnerability could allow several unauthenticated attackers to create administrator accounts on affected systems. The flaw, tracked under CSAF with a CVSS score of 8.1, impacts specific versions of the OpenPLC Runtime industrial control software. Successful exploitation grants full administrative control, enabling attackers to modify runtime logic and disrupt operational technology (OT) environments. Plant operators and OT security teams should isolate exposed PLCs from the internet and apply vendor patches immediately. This incident reflects heightened targeting of industrial control systems by threat actors seeking operational disruption.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "PHP2Shell Targets Firewalls—PAN-OS Exploited Online",
+            "title": "Attackers Exploit PHP Flaws Against Internet-Facing Palo Alto PAN-OS Firewalls",
+            "content": "Palo Alto Networks confirmed that attackers exploited two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet starting October 28, 2026. The flaws, collectively dubbed PHP2Shell, allow unauthenticated remote actors to execute arbitrary commands on the firewall appliance. Organizations with externally reachable management portals face severe risk of full network perimeter compromise and lateral movement. Administrators must restrict PAN-OS management access to trusted IP ranges and apply the latest firmware updates immediately. This wave of exploitation demonstrates how web application flaws increasingly target core network infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Splunk Ships 140 Fixes—Auth Bypass to RCE Patched",
+            "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products, Resolving Auth Bypass, RCE, and Privilege Escalation",
+            "content": "Splunk released security updates addressing 140 flaws across three core products, resolving critical and high-severity issues including authentication bypass, remote code execution, and privilege escalation. The patches cover specific versions of Splunk Enterprise, Splunk Cloud Platform, and Splunk SOAR, though the source did not list individual CVE identifiers in this advisory. Organizations relying on Splunk for security information and event management face severe risk if attackers exploit these vulnerabilities to compromise internal networks or escalate administrative access. This broad remediation follows a trend of increased scrutiny on enterprise logging and SIEM platforms by both threat actors and security researchers. Administrators must apply the latest patches immediately and verify that all instances are running updated builds to mitigate active exploitation risks.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/splunk-patches-nearly-140-flaws-across-three-core-products/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "F5 Patches NGINX2Root—PoC Exploits Published",
+            "title": "F5 Patches Critical NGINX2Root Flaws as Proof-of-Concept Exploits Go Public",
+            "content": "F5 Networks patched five critical NGINX2Root vulnerabilities that allow remote, unauthenticated attackers to execute arbitrary code on affected systems. The flaws impact NGINX Plus and NGINX Open Source, enabling attackers to gain root privileges without valid credentials by exploiting memory corruption in the HTTP request handling pipeline. Threat actors can leverage publicly available proof-of-concept exploits to weaponize these bugs against exposed web servers and reverse proxies. Organizations should update to the latest patched releases immediately and restrict external access to NGINX management interfaces. This incident underscores the ongoing risk of supply-chain components in web infrastructure facing rapid public exploitation after disclosure.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/f5-patches-critical-nginx2root-flaws-as-poc-exploits-go-public/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Ruby Ships 7 Fixes—Critical Regex RCE Patched",
+            "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell Vulnerability Affecting Default Rails Applications",
+            "content": "The Ruby core team released fixes for seven memory-safety flaws in its regular expression engine and string case-conversion code, including the critical Ruby2Shell vulnerability. For five of these flaws, maintainers confirmed that proof-of-concept exploits demonstrate crafted input can execute arbitrary code on the host machine. The vulnerabilities affect default Ruby on Rails applications, allowing pre-authentication remote code execution before any user login occurs. Developers must upgrade to the latest Ruby and Rails versions to eliminate the attack surface in production environments. This release highlights the growing focus on memory-safety bugs in interpreted language runtimes and their downstream impact on the broader web application ecosystem.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Low-Priv DB Accounts Trigger RCE—PostgreSQL, MySQL, Oracle Hit",
+            "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL, and Oracle",
+            "content": "A security researcher demonstrated that low-privilege database accounts, which lack permissions to read a single application table, can still trigger memory-corruption bugs to run code on the database server itself. The exploits target the engine code behind ordinary SQL commands in PostgreSQL, MySQL, and Oracle, bypassing standard access controls through complex query parsing. This finding reveals that attackers with minimal valid credentials can achieve full server compromise and pivot to internal network resources. Database administrators should enforce strict network segmentation, disable unnecessary stored procedures, and apply vendor-specific patches without delay. The disclosure emphasizes that database isolation models require deeper hardening against logic flaws in query execution.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "CISA Adds 4 KEVs—Ransomware, LLMjacking, Cryptomining Flaws",
+            "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap). Threat actors actively exploit these flaws to deploy ransomware, cryptomining malware, and LLMjacking campaigns that hijack large language model inference endpoints. Synology DSM flaws expose network-attached storage devices to unauthenticated remote code execution, while LiteLLM weaknesses allow attackers to manipulate API routing and steal credentials. Administrators must prioritize patching these specific products and review access logs for anomalous LLM API traffic or unauthorized mining processes. This update reflects CISA's continued emphasis on cataloging vulnerabilities with confirmed in-the-wild exploitation across diverse infrastructure sectors.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 19 2026",
             "headline": "Chinese APT Zero-Days VMware vCenter Before Patch",
             "title": "China-Linked Group Exploited VMware vCenter Authentication Bypass Prior to Patch Release",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "All CISA Advisories",
             "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "PHP Drops Critical Fixes—All Versions Affected",
-            "title": "PHP Maintainers Warn of Critical Flaws Across All Supported Versions Ahead of November 19 Patch",
-            "content": "PHP maintainers issued an advisory warning of critical security flaws affecting all currently supported PHP versions. The security release is scheduled for November 19, 2026, between 14:00 and 14:30 UTC, adhering to the language's standard four-week release cycle. These flaws could enable remote code execution and data leakage on web servers running vulnerable interpreters. Organizations must inventory all PHP deployments and apply the upcoming patch within the release window to mitigate exploitation risks. This release underscores the ongoing pressure on open-source runtimes to maintain rapid, predictable patch cycles.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nginx Fixes Decade-Old Critical RCE Flaw",
-            "title": "AI Discovers Critical Unauthenticated Remote Code Execution in Nginx Web Server",
-            "content": "Nginx, which powers an estimated one-third of all internet traffic, shipped fixes for multiple vulnerabilities including a critical unauthenticated remote code execution (RCE) flaw. The RCE vulnerability existed in the code for over a decade and puts millions of websites at immediate risk of compromise. Security researchers from multiple firms used artificial intelligence to unearth the 'internet breaker' flaws during automated code analysis. Site operators must upgrade to the latest patched release immediately to mitigate remote takeover risks. This discovery highlights the growing role of AI-driven static analysis in identifying legacy vulnerabilities in core internet infrastructure.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Infocon Stays Yellow After php2shell and Java4Shell",
-            "title": "SANS Infocon Remains at Yellow Alert Following php2shell, Java4Shell, and NGINX2Shell",
-            "content": "The SANS Internet Storm Center maintained its Infocon Yellow alert level following a cascade of critical vulnerabilities including php2shell, Java4Shell, and NGINX2Shell. The team initially raised the alert to Yellow to address php2shell's significant impact on web application security, and subsequent flaws sustained the elevated posture. These vulnerabilities enable attackers to execute arbitrary code on exposed servers running PHP, Java, and NGINX environments. Defenders should prioritize patching web servers and review intrusion detection signatures for the specific exploit chains. The sustained Yellow status signals persistent global threat activity against internet-facing infrastructure.",
-            "source": "SANS Internet Storm Center, InfoCON: green",
-            "sourceUrl": "https://isc.sans.edu/diary/rss/33532",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "Palo Alto Networks Buys Applied Compute for $4.5B",
-            "title": "Palo Alto Networks Acquires Applied Compute for $4.5 Billion to Expand AI Capabilities",
-            "content": "Palo Alto Networks agreed to acquire Applied Compute in an all-stock deal valued at $4.5 billion. The transaction provides Palo Alto with a platform for fine-tuning and running open-weight artificial intelligence (AI) models in public and sovereign cloud environments. This acquisition accelerates the company's strategy to integrate generative AI into its cybersecurity portfolio and endpoint protection stacks. Investors and security leaders should monitor the integration timeline for impacts on existing cloud security contracts and AI licensing. The deal reflects the broader industry trend of legacy cybersecurity vendors acquiring specialized AI startups to close capability gaps.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "10-Year NGINX Flaw Enables Unauthenticated RCE",
-            "title": "Decade-Old HTTP/2 Flaw in NGINX Allows Unauthenticated Remote Code Execution",
-            "content": "Attackers can execute arbitrary code on servers running NGINX with HTTP/2 enabled without authentication. The decade-old vulnerability, tracked as CVE-2026-123007 and dubbed nginx2root, has persisted in the open-source codebase since version 1.9.5 released on September 22, 2015. Any organization deploying NGINX versions prior to the fixed release faces complete server compromise and potential lateral movement. Security teams should verify their HTTP/2 configurations and upgrade to the patched versions immediately to mitigate active exploitation. This incident underscores the risks of maintaining legacy protocol support in critical web infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "6 F5 BIG-IP Flaws Risk Traffic Crashes, RCE",
-            "title": "Six Critical F5 BIG-IP Vulnerabilities Can Crash TMM and Enable Remote Code Execution",
-            "content": "Six critical flaws in F5 BIG-IP systems allow unauthenticated attackers to crash the Traffic Management Microkernel (TMM) and potentially achieve remote code execution. Each vulnerability requires a specific virtual server configuration, such as an iRule utilizing a particular command or an Access Policy Manager (APM) policy including a targeted string. Organizations relying on these specific setups face denial-of-service conditions that disrupt traffic until the TMM automatically restarts. Administrators must audit their iRule and APM policy deployments and apply F5 security patches to eliminate the crash vector. These flaws highlight the dangers of complex configuration-dependent attack surfaces in enterprise traffic management appliances.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Apache Roller RCE Flaw Under Active Attack",
-            "title": "Critical Apache Roller Unauthenticated Deserialization Flaw Under Active Exploitation",
-            "content": "The Apache Software Foundation (ASF) reports that a critical unauthenticated deserialization vulnerability in Apache Roller is under active exploitation in the wild. Tracked as CVE-2026-129448, the flaw carries a CVSS score of 9.8 and targets the open-source, Java-based blogging platform. Attackers can leverage this vulnerability to achieve remote code execution without valid credentials, affecting all exposed instances. Administrators must immediately update Apache Roller to a patched release and restrict external access to the management interface. This active campaign against an open-source project reflects a broader trend of threat actors targeting low-profile infrastructure for initial access.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Microsoft Releases Perception Security Agents GA",
-            "title": "Microsoft Moves Perception Agentic Security Platform Out of Preview With GA Agents",
-            "content": "Microsoft has transitioned its Perception Agentic Security Platform out of preview, making four blue team agents and the Recon Agent generally available. Integrations and vulnerability shielding capabilities remain in preview, allowing organizations to gradually adopt the autonomous security workflows. Blue team agents automate incident response and threat hunting tasks, reducing mean time to detection for security operations centers. Security leaders should evaluate these generally available agents for deployment in environments with high-volume alert fatigue. This release signals Microsoft's push to embed generative AI and agentic automation directly into enterprise defense-in-depth strategies.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "CISA Adds 4 Exploited Vulnerabilities to KEV Catalog",
-            "title": "CISA Adds Four Actively Exploited Vulnerabilities to the Known Exploited Vulnerabilities Catalog",
-            "content": "CISA has added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on confirmed evidence of active exploitation. The catalog now includes CVE-2024-10441, a Synology DiskStation Manager (DSM) improper encoding or escaping of output flaw, and CVE-2026-40217, a BerriAI LiteLLM unprotected alternate channel vulnerability. Federal agencies and critical infrastructure operators must remediate these flaws within their respective deadlines to avoid procurement restrictions. Security teams should prioritize patching for Synology DSM and LiteLLM deployments to close the active attack vectors. Maintaining an up-to-date vulnerability management program remains essential for compliance with CISA binding operational directives.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Perforce Puppet RCE—CA Certificates Enable Server Takeover",
-            "title": "Critical Perforce Puppet RCE Exploited in Attacks via CA-Signed Certificates",
-            "content": "Attackers actively exploit a critical remote code execution (RCE) vulnerability in Perforce Puppet, tracked as CVE-2026-115731. Any client possessing a Certificate Authority (CA)-signed agent certificate can execute arbitrary code directly on the enterprise server. This flaw impacts organizations relying on the infrastructure-as-code (IaC) and configuration management platform for automated deployments. Administrators must revoke compromised certificates and apply vendor patches immediately to mitigate active exploitation. The incident underscores ongoing risks within enterprise automation pipelines handling sensitive infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 19 2026",
+            "headline": "Nvidia Stock Plummets 40%—Interim CEO Kress Defends Q3",
+            "title": "Nvidia Shares Drop Nearly 40% From October High as Interim CEO Closes Q3 Earnings Call",
+            "content": "Nvidia's stock closed near $150 per share on Thursday, marking a roughly 40 percent decline from its October 6 all-time high amid investor uncertainty. Interim Chief Executive Officer Colette Kress addressed these fluctuations during the company's third quarter earnings call, stating, \"We've got this.\" The semiconductor giant faces pressure from shifting market expectations and broader macroeconomic headwinds affecting high-performance computing demand. Investors should monitor upcoming guidance releases and data center revenue forecasts for directional clarity on recovery timelines. This volatility reflects a broader trend of AI chip valuations adjusting to post-hype supply chain normalization.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 16 2026",
+            "headline": "Hugging Face OpenRouter—One-Command Open-Weight Deployment",
+            "title": "Hugging Face and OpenRouter Partner to Simplify Deployment of Open-Weight AI Models",
+            "content": "Hugging Face and OpenRouter announced a strategic integration that allows developers to deploy open-weight models via a single command-line interface. The partnership routes inference requests through OpenRouter's backend infrastructure, abstracting away complex API configurations for models such as Llama 3.1 and Mistral Large. This reduces time-to-production for enterprises running local or hybrid cloud inference stacks while maintaining data residency controls. Security teams should audit outbound API traffic to OpenRouter endpoints to ensure compliance with internal data handling policies. The collaboration signals a maturing trend toward interoperable, self-hosted generative AI tooling in enterprise environments.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/openrouter",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "Apple Builds Mac AI Agent—Competes With Claude",
+            "title": "Apple Appears to Be Developing a Native AI Agent for macOS to Compete With Claude and OpenAI Dots",
+            "content": "Apple is reportedly developing an artificial intelligence (AI) agent capable of operating directly on macOS to automate multi-step workflows across applications. Internal roadmaps suggest the system will compete with existing agentic frameworks such as Meta Muse, Instinct, Claude, and OpenAI Dots. The agent would leverage on-device large language models (LLMs) to handle web browsing, cross-app task execution, and code generation without relying solely on cloud inference. macOS power users and enterprise IT departments should evaluate upcoming beta builds for privacy implications tied to local model execution. This initiative aligns with Apple's broader strategy to differentiate its silicon ecosystem through on-device AI autonomy.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "Anthropic Founders Cash $2B—Record $105B Valuation",
+            "title": "Anthropic's Seven Founders Pocket $280 Million Each in Record-Breaking IPO at $83 Per Share",
+            "content": "Anthropic's seven founders each realized $280 million after the artificial intelligence (AI) company priced its initial public offering (IPO) at $83 per share, raising nearly $105 billion in total valuation. The record-breaking offering underscores sustained institutional appetite for frontier AI model developers despite recent market volatility in the sector. Proceeds from the capital raise will likely fund continued training runs for next-generation foundation models and expanded cloud compute partnerships. Investors and enterprise customers should scrutinize the company's burn rate and safety research budgets to assess long-term sustainability. This event reflects a broader trend of generative AI startups achieving unicorn-plus valuations through strategic equity monetization.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Apple Hires Engineer—Agentic AI for Macs",
+            "title": "Apple Seeks Lead Engineer to Build an Agentic AI System for Web Browsing and Code Generation",
+            "content": "Apple posted a job listing seeking an engineer to lead development of an agentic artificial intelligence (AI) system capable of browsing the web, operating across multiple applications, writing code, and calling external services. The role, spotted by Bloomberg, indicates Apple is expanding its internal AI roadmap beyond on-device large language models (LLMs) to include autonomous multi-step task execution. The system would integrate tightly with macOS and potentially iOS to reduce latency and improve user privacy by keeping sensitive operations local. Developers and security professionals should anticipate tighter API sandboxing requirements when these agentic features enter public beta. This hiring push reinforces Apple's commitment to building proprietary AI infrastructure rather than licensing third-party models exclusively.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Meta AI Wearable Targets $300 Price Tag",
+            "title": "Meta Confirms Upcoming AI Wearable Following $300 Pricing Reports",
+            "content": "Meta has not denied The Information's reporting that its upcoming AI wearable, the Muse Charm, will cost $300. The company stated only that it will \"have more to share soon\" regarding the device's specifications and release timeline. The wearable competes directly with existing smart glasses and AI pin devices in the consumer hardware market. Security professionals should monitor Meta's developer briefings for early access details and firmware security architectures. This pricing positions the device in the premium segment, signaling Meta's aggressive push into ambient computing.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Coordinated Outages Hit Airlines—Banking—Productivity",
+            "title": "Recent Tech Outages Across Sectors Signal Deeper Systemic Issues",
+            "content": "Recent simultaneous outages in airline booking systems, banking platforms, and productivity suites are unlikely to be coincidental, according to cybersecurity experts. Analysts note that cascading failures in cloud-dependent infrastructure can amplify single points of failure across unrelated industries. The impact spans millions of end users, causing flight cancellations, transaction delays, and enterprise workflow disruptions. Organizations must review their third-party service-level agreements and implement redundant failover protocols immediately. This pattern mirrors historical systemic risks, prompting renewed scrutiny of centralized API dependencies.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Anthropic IPO Opens at $111.50—Valued at $1.5T",
+            "title": "Anthropic Begins Nasdaq Trading Under Ticker ANT at $111.50 Per Share",
+            "content": "Anthropic officially commenced trading on the Nasdaq under the ticker symbol ANT at $111.50 per share, up from its initial $83 per share price. This valuation places the artificial intelligence (AI) lab's market capitalization at approximately $1.5 trillion. The initial public offering (IPO) follows nearly one month after the company publicly announced its plans to go public. Investors and enterprise clients should assess the financial stability implications of this public listing on long-term model access and support contracts. The strong opening reflects sustained institutional demand for frontier AI infrastructure.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "Anthropic CEO Vows to Pace AI Development",
+            "title": "Anthropic CEO Dario Amodei Recommits to Pacing AI Development at Nasdaq Opening",
+            "content": "Anthropic Chief Executive Officer Dario Amodei reiterated the company's commitment to pacing artificial intelligence (AI) development during the Nasdaq opening bell speech. He emphasized that Anthropic will maintain this cautious trajectory regardless of business or political pressure from investors and regulators. The stance reinforces the company's previous safety-focused frameworks amid rapid industry competition. Security professionals should expect continued emphasis on constitutional AI guardrails and red-teaming protocols in upcoming model releases. This public recommitment signals a strategic differentiation from faster-moving commercial AI competitors.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "ChatGPT Live Dictation Transcribes in Real Time",
+            "title": "OpenAI Rolls Out ChatGPT Live Dictation for Instant Audio Transcription",
+            "content": "OpenAI has globally rolled out the Live Dictation feature for ChatGPT, enabling the model to transcribe audio prompts from a user's microphone in real time rather than waiting for recording completion. The capability is available across all ChatGPT subscription tiers on the web, desktop applications, and iOS and Android mobile apps. This reduces latency for voice-driven interactions and expands accessibility for users generating text via spoken input. Users should review microphone permissions and network configurations to ensure optimal low-latency performance. The deployment reflects OpenAI's broader push to integrate multimodal input across its consumer and enterprise platforms.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+            "relatedResources": []
+        },
         {
             "date": "Nov 19 2026",
             "headline": "Everful Raises $48.5M for Direct Sourcing",
@@ -273,96 +363,6 @@ const websiteContent = {
             "content": "Anthropic began trading on Nasdaq at $111 per share, representing a 33% premium over its $83 initial public offering (IPO) price and raising more than $80 billion in new capital. The frontier artificial intelligence lab's strong debut signals sustained investor confidence in high-compute model training despite tightening venture funding across the sector. The elevated valuation directly benefits the company's stakeholders and positions it to outspend competitors on infrastructure and safety research. Market analysts view this pricing as a benchmark for subsequent AI infrastructure initial offerings in the coming quarters. Investors should monitor the stock's post-IPO volatility and assess whether the capital raised translates into sustainable competitive advantages in model development.",
             "source": "TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "Nadella Offers Buyouts to 60K Staff—AI Reshapes Workforce",
-            "title": "Microsoft CEO Satya Nadella Offers Buyouts to 60,000 Employees to Drive AI-Driven Restructuring",
-            "content": "Microsoft CEO Satya Nadella offered voluntary buyouts to 60,000 employees in October 2026, opting for attrition over a traditional mass layoff. The restructuring centers on accelerating artificial intelligence (AI) integration across the enterprise software portfolio rather than replacing human roles with automated systems. This move affects engineers, sales staff, and support personnel globally, potentially reducing operational overhead by an estimated 8 to 12 percent in affected divisions. Industry analysts note this reflects a broader trend where hyperscalers use AI to optimize workflows before executing direct workforce reductions. Organizations should audit their own automation roadmaps and reskilling budgets to prepare for similar attrition-based transitions.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nadella Calls Critical Infrastructure Unpatchable—AI Expands Attack Surface",
-            "title": "Satya Nadella Downplays Outlook Outage While Warning That AI Challenges Securing Unpatchable Critical Infrastructure",
-            "content": "Microsoft CEO Satya Nadella downplayed a recent Outlook service outage while stating that much of the world's critical infrastructure remains unpatchable against modern threats. Artificial intelligence (AI) is simultaneously creating defensive opportunities and expanding the attack surface for adversaries targeting connected operational technology (OT) environments. The affected systems include legacy industrial control networks and email platforms that lack automated update mechanisms, leaving them exposed to both supply-chain and insider risks. This admission underscores a growing gap between cloud-native security practices and the reality of aging hardware in energy, water, and transportation sectors. Security teams should prioritize network segmentation and anomaly detection for unmanaged assets rather than relying solely on signature-based patching.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Musk Defends Huang—Kicking Jordan Off Team Analogy",
-            "title": "Elon Musk Compares Ousting Nvidia CEO Jensen Huang to Removing Michael Jordan From a Basketball Roster",
-            "content": "Elon Musk publicly compared any attempt to remove Nvidia CEO Jensen Huang to kicking Michael Jordan off a basketball team, emphasizing Huang's indispensable role in the artificial intelligence (AI) hardware ecosystem. Musk added that he does not consider Huang disloyal to the United States, defending the executive amid geopolitical scrutiny of Nvidia's advanced chip exports. The statement highlights ongoing tensions between U.S. technology leadership and foreign policy directives regarding semiconductor supply chains. Nvidia's graphics processing units (GPUs) power the majority of enterprise AI training clusters, making Huang's retention critical to global cloud infrastructure timelines. Industry observers should monitor export control updates and diversify their AI hardware sourcing to mitigate geopolitical concentration risk.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "NYC LA Chicago Schools Eye Google Search Exit—Gemini Lock Threat",
-            "title": "Three Largest U.S. School Districts Consider Abandoning Google Search Over Mandatory Gemini AI Integration",
-            "content": "New York, Los Angeles, and Chicago public school districts are evaluating alternatives to Google Search after the company announced it will disable standard search for institutions that opt out of its Gemini-powered artificial intelligence (AI) features. Starting in 2027, schools will lose access to basic web search unless they enable the integrated Large Language Model (LLM) assistant, raising data privacy and student safety concerns. The affected entities include approximately 2.5 million K-12 students and their administrators, who face a binary choice between forfeiting search functionality or accepting AI-generated summaries in educational environments. This policy shift mirrors broader debates over consent-based AI deployment in sensitive institutional settings. District IT leaders should audit their acceptable use policies and pilot alternative search engines with strict content filtering before the 2027 deadline.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nadella Backs Kress—Nvidia Leadership Transition Stays Smooth",
-            "title": "Microsoft CEO Expresses Confidence in Nvidia's Interim CEO Colette Kress Following Jensen Huang's Exit",
-            "content": "Microsoft CEO Satya Nadella publicly voiced confidence in Nvidia executive Colette Kress following Jensen Huang's departure from the chief executive officer role. Kress now serves as Nvidia's interim CEO while the board evaluates permanent succession options. This endorsement signals continuity for Nvidia's enterprise clients and cloud partners relying on its GPU and artificial intelligence infrastructure. Nadella's remarks underscore the strategic importance of Nvidia's leadership stability to Microsoft's broader AI roadmap and data center investments. Industry observers should monitor Nvidia's upcoming 10-Q filing and executive communications for further clarity on long-term governance.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "AI Agents Will Upend Web Economics—Nadella Warns",
-            "title": "Satya Nadella Predicts AI Agents Will Disrupt Advertising-Driven Web Business Models",
-            "content": "Microsoft CEO Satya Nadella warned that autonomous AI agents will fundamentally disrupt advertising-driven revenue models across the web. These agents can perform complex tasks, such as comparing prices and completing purchases, without human intervention, bypassing traditional click-through and impression metrics. Amazon and other e-commerce giants face severe pressure to redesign customer acquisition strategies as agent-mediated transactions reduce direct traffic to publisher sites. The shift reflects a broader industry trend toward agentic artificial intelligence systems that operate independently of conventional search interfaces. Developers and product leaders should begin integrating agent-compatible APIs and preparing for a post-impression advertising landscape.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Anthropic IPO Priced at $83—Valued at $1.5T",
-            "title": "Anthropic Prices IPO at $83 Per Share, Valuing the Company at $1.5 Trillion on a Fully Diluted Basis",
-            "content": "Anthropic priced its initial public offering (IPO) at $83 per share, exceeding the projected pricing range and implying a fully diluted valuation of $1.5 trillion. The long-awaited public market entry positions the artificial intelligence startup as one of the most valuable private companies ahead of its exchange debut. The elevated valuation reflects sustained investor demand for generative AI infrastructure and large language model capabilities. Existing venture capital backers and institutional investors stand to realize substantial returns, while new shareholders assume exposure to competitive market dynamics and regulatory scrutiny. Market participants should review the prospectus for lock-up expiration dates and dilution schedules before trading begins.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Nvidia Skips Routine SEC 10-Q Filing—Wall Street Scratches Head",
-            "title": "Nvidia Creates Intrigue by Omitting Routine SEC 10-Q Report, Prompting Analyst Investigation",
-            "content": "Nvidia surprised markets by announcing it would delay filing its formal quarterly 10-Q report with the Securities and Exchange Commission (SEC). One Wall Street analyst determined the delay stemmed from complexities in consolidating recent high-volume acquisition data rather than any material adverse event. The omission temporarily disrupted automated compliance monitoring systems used by institutional trading desks tracking quarterly disclosures. Nvidia's delay highlights ongoing friction between rapid artificial intelligence hardware growth cycles and legacy financial reporting timelines. Compliance officers and equity researchers should verify subsequent 10-Q filings and cross-reference management commentary for any deferred revenue anomalies.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Google DeepMind Unveils Gemini 4 Neon",
-            "title": "Google DeepMind Introduces Gemini 4 Neon, a New Artificial Intelligence Model Variant",
-            "content": "Google DeepMind introduced Gemini 4 Neon, a specialized variant of its Gemini artificial intelligence platform designed for enhanced multimodal reasoning and real-time user interaction. The model integrates advanced natural language processing and computer vision modules to process complex queries across text, image, and audio inputs with reduced latency. Enterprise developers and cloud architects can deploy Gemini 4 Neon through Google Cloud's Vertex AI infrastructure to automate customer service workflows and content generation pipelines. This release continues Google's aggressive push to differentiate its generative AI stack against competing large language models from OpenAI and Anthropic. Engineering teams should evaluate the model's application programming interface (API) rate limits and system prompt constraints before integrating it into production environments.",
-            "source": "Google DeepMind News",
-            "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 18 2026",
-            "headline": "Senate Targets Deepfakes—End-of-Year Legislation Push",
-            "title": "Lawmakers Race to Pass Protections Against Deepfakes and Platform Blocking Before 2026 Ends",
-            "content": "A Senate Judiciary subcommittee held a hearing on Tuesday to advance legislation protecting victims of online harm before the 2026 legislative session closes. The proposed measures target deepfake creators and mandate that online platforms cannot block users from filing civil lawsuits. These efforts reflect a broader trend of regulators responding to generative AI abuse and platform liability gaps. Security professionals and legal teams should review upcoming compliance frameworks and prepare for stricter content moderation mandates. Stakeholders must monitor the subcommittee's markup schedule to anticipate enforcement timelines.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
             "relatedResources": []
         }
     ],
@@ -501,28 +501,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-114713",
-            "dateAdded": "Nov 13, 2026",
-            "vendor": "UnrealIRCd UnrealIRCd",
-            "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are exe",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-123039",
-            "dateAdded": "Nov 13, 2026",
-            "vendor": "Check Point Multiple Products",
-            "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources v",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
             "isZeroDay": false
         }
     ],
