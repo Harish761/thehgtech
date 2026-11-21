@@ -1,7 +1,67 @@
 {
-  "last_updated": "2026-11-21T10:02:22.456961",
-  "total_incidents": 33413,
+  "last_updated": "2026-11-21T20:37:40.949656",
+  "total_incidents": 33418,
   "incidents": [
+    {
+      "id": "soulgroup_county_government_within_a_u.s._state",
+      "victim_name": "County government within a U.S. state",
+      "threat_actor": "SoulGroup",
+      "date_discovered": "2026-11-21T15:39:24.003787+00:00",
+      "industry": "Government & Defense",
+      "website": "",
+      "claim": "This government provides access to county government services, departmental information, public records, tax-related materials, and community news. Sector: Government Administration. Location: United States. Revenue: tax revenue: $44.85 million. Employees: unknown. Deadline: 2026-11-24 15:30 UTC.",
+      "screenshot": "https://images.ransomware.live/victims/f3fdbde05af8e004520d35d77f18b51d.png",
+      "url": "https://codice-ledger.io#County%20government%20within%20a%20U.S.%20state",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "lockbit5_genica.com.ve",
+      "victim_name": "genica.com.ve",
+      "threat_actor": "lockbit5",
+      "date_discovered": "2026-11-21T11:33:10.619514+00:00",
+      "industry": "Other",
+      "website": "",
+      "claim": "Genica is a leading company in Latin America that offers a robust portfolio of over 40 products, inc...",
+      "screenshot": "https://images.ransomware.live/victims/62c1617611bb63ede555e66b3f80fb4b.png",
+      "url": "http://lockbitapt67g6rwzjbcxnww5efpg4qok6vpfeth7wx3okj52ks4wtad.onion/post/173763f395b2808c3d77ea2730a56adc",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "barracuda_dallas_fort_worth_fertility_associates",
+      "victim_name": "Dallas Fort Worth Fertility Associates",
+      "threat_actor": "Barracuda",
+      "date_discovered": "2026-11-21T07:55:50.636176+00:00",
+      "industry": "Healthcare",
+      "website": "",
+      "claim": "An audit by Dallas Fort Worth Fertility Associates identified critical vulnerabilities in infrastructure and outdated systems that led to complete compromise of the infrastructure and leakage of all patient data - fertility data, analysis, databases and other confidential medical information.\n\nDALLASFERTILITY.txt - is complete list of files we have. | Status: selling | $300,000",
+      "screenshot": "https://images.ransomware.live/victims/1e9adca030d68f11c5bc7ab43e6bca7c.png",
+      "url": "http://qr6uopkqxmq254osyct3oibil32xp3qsimkkbqdscsrsb4zqbagnifad.onion/",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "pear_law_office_of_ronald_d._weiss,_p.c",
+      "victim_name": "Law Office of Ronald D. Weiss, P.C",
+      "threat_actor": "pear",
+      "date_discovered": "2026-11-21T07:26:34.082583+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Specializing in bankruptcy, foreclosure defense, and debt negotiation services",
+      "screenshot": "https://images.ransomware.live/victims/3fcc96aa554a78bddec407ba5638a118.png",
+      "url": "http://pearsmob5sn44ismokiusuld34pnfwi6ctgin3qbvonpoob4lh3rmtqd.onion/Companies/ny-bankruptcy",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "eclipse_realta_technologies",
+      "victim_name": "Realta Technologies",
+      "threat_actor": "Eclipse",
+      "date_discovered": "2026-11-21T06:51:14.122301+00:00",
+      "industry": "Technology",
+      "website": "",
+      "claim": "Réalta Technologies are a global Automation and Digital System Integrator",
+      "screenshot": "https://images.ransomware.live/victims/e5eccb986cf891cd9aa4a865c722ce89.png",
+      "url": "http://eclipse4g5kxfwsvpu4qx5sdcnrji6gxl5gt67bucjlgt35g7akvjoid.onion/place/94hzpk8ll562r5vr/",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "inception_lucid_motors",
       "victim_name": "Lucid Motors",
