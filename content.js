@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 24 2026",
+            "headline": "OpenAI Cisco Launch AI Shield for Linux",
+            "title": "OpenAI and Cisco Launch Shirudo to Block Linux Exploits via AI Agents",
+            "content": "OpenAI and Cisco unveiled Shirudo, an open-source Linux runtime that enables artificial intelligence (AI) agents to deploy dynamic eBPF (extended Berkeley Packet Filter) controls and block exploits before systems receive patches. The tool allows defenders to write runtime security policies that shield systems without requiring downtime, giving operators critical response time. Linux administrators and cloud infrastructure teams can integrate the runtime to automate intrusion prevention across containerized and server environments. This partnership signals a growing trend of merging large language models with kernel-level security to reduce mean-time-to-remediate. Organizations should evaluate Shirudo for their Linux fleets and monitor the project's open-source repository for integration guides.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 24 2026",
+            "headline": "CISA Adds 2 Flaws to KEV Catalog",
+            "title": "CISA Adds N-able MailAssure and MONAI Label Flaws After Active Exploitation",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-134624 impacting N-able MailAssure and a zero-day in MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog after confirming active exploitation. The critical flaws allow threat actors to compromise email infrastructure and manipulate medical imaging datasets used by machine learning pipelines. IT and DevOps teams must apply vendor-supplied patches immediately to prevent data exfiltration and model poisoning. This marks a broader pattern of attackers targeting both traditional IT management tools and AI development frameworks. Administrators should prioritize these updates in their vulnerability management queues and verify patch integrity before deployment.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 21 2026",
+            "headline": "GPGME Memory Bug Exposes App Data",
+            "title": "GnuPG Warns Critical GPGME Flaw Exposes Application Data via Malicious Keys",
+            "content": "The GnuPG project warned that a critical memory bug in GPGME, the standard library for GnuPG operations, exposes application data when processing a malicious OpenPGP key containing an unusually long user ID. The flaw triggers a buffer overflow that attackers can exploit to steal sensitive data from affected applications without user interaction. Developers using GPGME in software distribution and encryption workflows must upgrade to the fixed versions released by the project. This vulnerability underscores the risks of parsing untrusted cryptographic metadata in widely adopted open-source libraries. Maintainers should audit their dependencies for GPGME, validate key lengths, and deploy the patched releases immediately.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 21 2026",
+            "headline": "RansomwareHelp CTO Charged in $500K Fraud",
+            "title": "RansomwareHelp CTO Indicted for Wire Fraud After FBI Sting",
+            "content": "The chief technology officer and co-founder of ransomwarehelp.com was indicted for wire fraud following an FBI sting operation that revealed the Florida company paid ransomware attackers directly instead of restoring data with advanced cryptographic tools. The six-year-old business allegedly defrauded victims of substantial sums by promising secure decryption services it never provided. Law enforcement documented internal communications showing the firm transferred funds to known extortion gangs to maintain its fraudulent facade. Cybersecurity vendors and incident responders should treat similar data recovery brokers with heightened skepticism during breach negotiations. Organizations must verify vendor credentials independently and avoid upfront payments to unvetted recovery services.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "CISA Adds 4 Vulnerabilities to KEV Catalog",
+            "title": "CISA Adds Four Actively Exploited Vulnerabilities to KEV Catalog",
+            "content": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog based on evidence of active exploitation in enterprise networks. The entries include CVE-2025-42884, a SAP NetWeaver improper neutralization flaw, and CVE-2026-76466, a hard-coded credential issue in Cisco Expressway Series devices. These flaws enable remote code execution and unauthorized administrative access across critical business infrastructure and unified communications platforms. Security teams must inventory affected SAP and Cisco assets, apply vendor patches, and restrict network exposure to mitigate exploitation risk. This update reinforces CISA's zero-day and active threat prioritization framework for federal and private sector defenders.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "libumqtt Flaw Enables Remote DoS and Memory Corruption",
+            "title": "CISA Flags libumqtt Vulnerability Allowing Remote Denial of Service and Information Disclosure",
+            "content": "A critical vulnerability in libumqtt enables remote attackers to trigger denial of service, memory corruption, or information disclosure. The flaw affects libumqtt version 1 and carries a CVSS v3.8 severity score. Successful exploitation requires no authentication and could compromise system stability or leak sensitive data. CISA recommends verifying installed library versions and applying vendor-supplied patches immediately. This incident underscores the ongoing risk of unpatched open-source MQTT components in production environments.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 19 2026",
+            "headline": "OpenPLC Runtime Flaw Lets Attackers Create Admin Accounts",
+            "title": "Unauthenticated Admin Account Creation Vulnerability in Autonomy Logic OpenPLC Runtime",
+            "content": "Researchers disclosed a concurrency flaw in Autonomy Logic OpenPLC Runtime version 1 that permits unauthenticated attackers to create administrator accounts. The vulnerability carries a CVSS v3.8 severity rating and directly undermines access control in industrial control systems. Compromised runtime environments could allow threat actors to modify logic programs or disrupt operational technology processes. Organizations must audit OpenPLC Runtime deployments and enforce network segmentation for exposed devices. This flaw highlights the growing attack surface of internet-facing industrial software.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 18 2026",
+            "headline": "Optimizely A/B Test Bug Delivers Malware to 178 Sites",
+            "title": "Optimizely Misconfiguration Used to A/B Test Malware Across Top Web Destinations",
+            "content": "Threat actors exploited a security vulnerability in Optimizely to A/B test malware against visitors across at least 178 top web destinations within a 24-hour window. The incident leveraged Optimizely's feature-customization platform to serve malicious exploits to unsuspecting users at high-traffic properties. Security experts confirmed the campaign distributed varied malware payloads through compromised testing configurations. Website operators must review Optimizely integration scripts and restrict third-party A/B testing permissions immediately. This case illustrates how legitimate experimentation tools can become vectors for widespread malicious delivery.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "InfoScan Flaws Expose Credentials and Network Traffic",
+            "title": "Dorsett Controls InfoScan Vulnerabilities Permit Credential Theft and Traffic Interception",
+            "content": "Multiple vulnerabilities in Dorsett Controls InfoScan allow attackers to retrieve sensitive system information, access application data without authorization, recover stored credentials, and intercept network communications. The exact affected versions were not fully detailed in the advisory, but exploitation requires successful initial access to the target environment. Compromised InfoScan deployments expose critical infrastructure to data exfiltration and man-in-the-middle manipulation. Administrators should inventory InfoScan instances, apply vendor patches, and enforce strict network access controls. These flaws reflect persistent weaknesses in legacy industrial scanning tools.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 17 2026",
+            "headline": "Java4Shell Critical Flaw Demands Immediate Patching",
+            "title": "CISA Urges Immediate Patching of Critical Oracle Java Memory-Corruption Vulnerability",
+            "content": "CISA strongly urges organizations to immediately patch Oracle Java vulnerability CVE-2026-114938, dubbed Java4Shell, a critical memory-corruption flaw in the x86-64 HotSpot Java Virtual Machine Base64 decoder. Successful exploitation could allow remote attackers to execute arbitrary code or cause system instability without user interaction. The vulnerability affects enterprise Java deployments running vulnerable HotSpot JVM versions across Windows, Linux, and Unix platforms. Security teams must prioritize patch deployment through Oracle's Critical Patch Update channel and verify Base64 decoder configurations. This flaw continues a trend of high-severity Java supply-chain weaknesses in 2026.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 23 2026",
             "headline": "Webworm Modifies SoftEther VPN to Hide Remote Access",
             "title": "China-Aligned Webworm Suspects Custom SoftEther VPN to Evade Detection and Establish Covert Access",
@@ -85,15 +175,6 @@ const websiteContent = {
             "relatedResources": []
         },
         {
-            "date": "Nov 19 2026",
-            "headline": "Critical Elecbrakes Flaws Let Attackers Disable Brakes",
-            "title": "CISA Warns Elecbrakes EB2 and VM1 Flaws Allow Attacker Brake Control",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) warned that successful exploitation of vulnerabilities in Elecbrakes EB2, VM1, and ELBC2000 trailer brake systems could allow an attacker to gain full control of the brakes. Threat actors can use these flaws to modify firmware, disable brake lights, alter brake conditions, or deactivate other critical safety features remotely. The vulnerabilities pose severe physical safety risks to commercial transportation fleets and logistics operators relying on these electronic braking modules. Organizations must isolate brake control networks from public internet exposure and apply vendor-supplied firmware updates without delay. This advisory underscores the expanding attack surface of operational technology (OT) and Internet of Things (IoT) devices in critical infrastructure.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
-            "relatedResources": []
-        },
-        {
             "date": "Nov 22 2026",
             "headline": "3 AI Providers Lose Months of Prompts—Zero Data Retention Failed",
             "title": "Dragos Discovers Months-Long Prompt Theft Across 3 AI Hosting Firms Despite Zero Data Retention",
@@ -101,27 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "Ghostscript Sandbox Escape—RCE via Crafted Uploads",
-            "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-            "content": "Researchers demonstrated a now-patched sandbox escape in Ghostscript that allows crafted file uploads to execute commands on Linux servers. Ghostscript, an interpreter converting PDFs, PostScript files, and images, was vulnerable when processing malicious inputs without proper isolation. The flaw impacts any Linux server relying on Ghostscript for document rendering, posing a severe remote code execution risk to hosting providers and enterprise infrastructure. This incident underscores the ongoing danger of untrusted document processing in automated server environments. Administrators should verify that all Ghostscript instances run the latest patched versions and restrict file upload permissions.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "FBI Probes Apparent Hack of National Criminal Database",
-            "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
-            "content": "The Federal Bureau of Investigation (FBI) is investigating an apparent unauthorized intrusion into a national law enforcement database it maintains. The breach, reported by the Associated Press, threatens the confidentiality of sensitive criminal justice records managed by federal authorities. The incident exposes critical vulnerabilities in legacy government infrastructure handling classified law enforcement data. Agencies must immediately review access logs and enforce strict multi-factor authentication on all database endpoints. This breach adds to a growing trend of state-sponsored and criminal intrusions targeting U.S. critical infrastructure.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
+        {
+            "date": "Nov 20 2026",
+            "headline": "OpenAI Fights AI Theft—4-Layer Defense Deployed",
+            "title": "OpenAI Deploys Layered Adversarial Distillation to Block Capability Extraction",
+            "content": "OpenAI introduced a four-layer defense framework against adversarial distillation to prevent attackers from extracting proprietary capabilities from its large language models. The approach integrates model training protocols, automated safeguards, behavioral detection systems, and enforcement mechanisms to identify and halt extraction attempts. This initiative targets threat actors attempting to replicate high-capability models through query-based distillation and fine-tuning attacks. The framework addresses a growing trend of model theft that undermines vendor investments and distorts competitive market dynamics. Security teams should audit their API logs for anomalous query patterns and review their usage policies to mitigate unauthorized model replication risks.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "GPT-6 Astra Boosts Financial Research Metrics",
+            "title": "Hebbia Reports Gains in Financial Research After Testing GPT-6 Astra",
+            "content": "Hebbia evaluated the prerelease GPT-6 Astra model for financial research and documented improvements across source coverage, citation relevance, and presentation quality. The model demonstrated stronger retrieval accuracy when synthesizing data from dense regulatory filings and earnings transcripts. Financial analysts and quantitative researchers stand to benefit from reduced manual verification time and higher-fidelity report generation. This evaluation reflects the broader industry push toward integrating advanced generative AI into specialized domain workflows. Practitioners should validate AI-generated citations against primary sources before deploying outputs in compliance-sensitive environments.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Nvidia CEO Jensen Huang Returns—Hero's Welcome",
+            "title": "Nvidia Employees Greet Jensen Huang Like a Hero Upon His Return to HQ",
+            "content": "Jensen Huang returned to Nvidia's headquarters to a hero's welcome from employees after a brief absence from the chief executive officer role. During an internal address, Huang stated, \"I'm going to be a better CEO the second time around,\" signaling renewed focus on the company's AI chip roadmap. The reception underscores employee confidence in his leadership amid intense competition in the artificial intelligence hardware sector. This event highlights the stability Nvidia maintains at the executive level despite recent public scrutiny. Stakeholders should monitor upcoming product launch cycles and quarterly guidance for shifts in strategic direction under Huang's renewed tenure.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Claude Ship Auto-Reviews Pull Requests Now",
+            "title": "Anthropic Unveils Claude Ship to Auto-Review and Fix Code Pull Requests",
+            "content": "Anthropic launched Claude Ship, a new product enabling its Claude AI to autonomously review, fix, and approve software pull requests without human intervention. The system integrates directly into development workflows to identify syntax errors, logic flaws, and security misconfigurations before merge. Software engineers and DevOps teams can reduce code review latency and accelerate deployment pipelines by leveraging these automated capabilities. This release extends Anthropic's push to embed AI agents deeper into the software development lifecycle. Development teams should evaluate Claude Ship in isolated staging environments and enforce manual approval gates for production deployments.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Jensen Huang Resigns Then Returns—Nvidia CEO Era Restored",
+            "title": "Jensen Huang Resigned Over Scrutiny Then Reclaimed Nvidia CEO Role",
+            "content": "Jensen Huang resigned from the chief executive officer position at Nvidia on November 12, 2026, amid mounting scrutiny over alleged personal affairs, before subsequently returning to lead the company. The 30-year veteran cofounder admitted he had been \"unfair\" to his family and colleagues, triggering a brief leadership transition that alarmed investors. The episode exposed governance vulnerabilities at one of the most influential artificial intelligence firms globally. Nvidia board members and institutional investors must now reinforce executive conduct policies to prevent similar disruptions. Market participants should track Nvidia's Q4 earnings and leadership communications for signals of strategic continuity.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Google AI Mode—Drive Wallet Data Fuels Personalization",
+            "title": "Google Integrates Drive and Wallet into Search AI Mode for Personalized Responses",
+            "content": "Google expanded its AI Mode with Personal Intelligence, enabling the Gemini app and Search to access user data stored in Google Drive and Google Wallet. This integration allows the Large Language Model (LLM) to generate context-aware responses by leveraging files, payment histories, and identity documents within the ecosystem. End users gain streamlined automation for tasks such as expense tracking and document retrieval, though the expanded data access increases the attack surface for account compromise. The rollout follows broader industry trends of tightly coupling generative AI with proprietary cloud storage to differentiate search platforms. Security professionals should audit Google Workspace sharing policies and enforce multifactor authentication (MFA) on all linked accounts immediately.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Nothing Ear Note—AI Earbuds Record and Transcribe",
+            "title": "Nothing Unveils Ear Note Earbuds With AI Transcription and Case Storage",
+            "content": "Nothing announced the Ear Note, an AI-enabled audio device consisting of earbuds and a microphone-equipped charging case that records ambient conversations. The hardware streams audio to a companion mobile application that performs real-time transcription and generates AI-driven summaries of recorded dialogue. Consumers and enterprise users seeking automated meeting notes or personal memory aids may adopt the device, but the always-on microphone raises immediate privacy and eavesdropping concerns. The product competes directly with Apple's Dictation features on the Apple Watch and Amazon's transcription services. Users should review local privacy regulations regarding ambient recording and disable cloud syncing if the feature is not required.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Oregon Virginia Sue SpaceX—Grok Deepfakes Violated Laws",
+            "title": "Oregon and Virginia File Lawsuits Against SpaceX Over Grok-Generated Deepfakes",
+            "content": "Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones filed separate lawsuits against SpaceX, alleging violations of state consumer protection statutes. The complaints accuse X, the social media platform, and its Grok artificial intelligence (AI) assistant of ignoring industry-standard safeguards and falsely marketing the platform as safe. The lawsuits specifically cite the generation of non-consensual pornographic deepfakes as evidence of systemic negligence in content moderation and AI output filtering. State residents and content creators face ongoing exposure to synthetic media abuse, while SpaceX faces potential injunctions and civil penalties. Legal and security teams should monitor the rulings for precedent on platform liability for generative AI outputs.",
+            "source": "The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "Huang Testifies—Nvidia CEO Reinstated Amid Senate Probe",
+            "title": "Jensen Huang to Testify Before Senate After Reinstatement as Nvidia CEO",
+            "content": "Nvidia Chief Executive Officer (CEO) Jensen Huang is scheduled to testify at a public Senate hearing next week following his reinstatement after a corporate governance crisis. The bipartisan inquiry focuses on an affair involving a suspected Chinese intelligence operative and its implications for national security supply chains. The hearing will scrutinize Nvidia's role in the global semiconductor ecosystem and potential foreign influence over critical AI chip manufacturing. Investors, policymakers, and security analysts face heightened uncertainty regarding export controls and corporate oversight. Stakeholders should review Nvidia's latest Form 10-K disclosures and prepare for potential testimony transcripts regarding executive conduct.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "RoboTrack Enables Real-World Robotic Point Tracking",
+            "title": "RoboTrack Introduces Point Tracking for Real-World Robotic Manipulation",
+            "content": "Hugging Face released RoboTrack, an open-source computer vision framework designed to perform precise point tracking for robotic manipulation in unstructured physical environments. The system processes monocular or stereo camera feeds to estimate 6-degree-of-freedom (6DoF) pose updates for target objects at millisecond latency. Manufacturing and logistics operators can deploy the tool to improve pick-and-place accuracy for robotic arms handling variable geometries. Developers should integrate the framework into existing Robot Operating System (ROS) pipelines and validate calibration routines against their specific end-effector hardware. This release reflects the broader push toward vision-language-action models in industrial automation.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/robotrack",
+            "relatedResources": []
+        },
         {
             "date": "Nov 23 2026",
             "headline": "OpenAI-Cisco Shirudo Hardens Linux Systems—Patch Now",
@@ -210,69 +363,6 @@ const websiteContent = {
             "content": "Power-hungry AI data centers are surging just as the clean energy revolution requires electrifying the entire global economy, complicating United Nations climate negotiations at COP31. Delegates grappled with the mismatch between exponential compute demand and renewable grid capacity during the conference, which concluded in a chaotic and unsatisfying manner. The energy intensity of training and inference workloads is outpacing projected solar and wind deployment timelines in multiple regions. This tension threatens to delay net-zero targets unless utility-scale storage and nuclear capacity expand rapidly. Organizations should factor data center power consumption into their corporate sustainability reports and advocate for grid modernization policies.",
             "source": "The Verge",
             "sourceUrl": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 23 2026",
-            "headline": "3 VCs Back Anthropic—Billions Before IPO",
-            "title": "Notable Capital, GIC, and Baillie Gifford Invest Billions in Anthropic Ahead of IPO",
-            "content": "Notable Capital, GIC, and Baillie Gifford committed billions of dollars to Anthropic before its initial public offering, citing confidence in its constitutional AI safety framework. The backers shared that the company's technical moat, measured by its Claude 3.5 Sonnet benchmark scores and enterprise API adoption, drove their conviction. This influx of capital positions Anthropic to compete directly with OpenAI and Google DeepMind in the enterprise generative AI market. Investors and enterprise architects should monitor Anthropic's upcoming API pricing tiers and enterprise security certifications for integration planning. The funding round underscores sustained institutional appetite for frontier AI labs with strong safety governance.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "FAA, Outlook, JPMorgan Outages—More Coming",
-            "title": "Recent Nationwide FAA, Outlook, and JPMorgan Outages Signal Persistent Infrastructure Risk",
-            "content": "Over the past week, the Federal Aviation Administration (FAA) executed a nationwide ground stop, Microsoft Outlook suffered a multi-day outage that halted corporate email, and JPMorgan Chase experienced a banking outage affecting transaction processing. Director of National Intelligence Jay Clayton told CNN that these cascading failures indicate deeper systemic fragility in critical digital infrastructure. The incidents affected air traffic controllers, Fortune 500 enterprises, and retail banking customers, causing estimated operational losses in the hundreds of millions. Organizations should audit their business continuity plans, diversify cloud dependencies, and test failover protocols for single points of failure. The string of events suggests that supply chain and cloud provider concentration risks will drive increased regulatory scrutiny through 2027.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1039851/major-tech-outages",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "OpenAI Chief Scientist: Limit AI—Measure Speed",
-            "title": "OpenAI Chief Scientist Argues for Measurable Speed Limits on AI Development",
-            "content": "OpenAI's chief scientist stated that establishing a speed limit on artificial intelligence (AI) development requires consensus on standardized metrics for measuring progress. Without agreed-upon benchmarks for model capability, compute efficiency, and training throughput, regulators cannot enforce meaningful caps on frontier research. The proposal targets developers building general-purpose models and nation-state laboratories racing to deploy next-generation systems. Security professionals and policy makers should advocate for open benchmarking suites and transparent reporting of training compute to enable objective speed tracking. This debate is intensifying as global governments draft AI governance frameworks ahead of the 2027 international summit.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "Vibe-Coding Spreads to Consumer Gadgets",
-            "title": "The Stepback Newsletter Examines How Generative AI Interfaces Are Expanding Across Hardware Ecosystems",
-            "content": "David Pierce's The Stepback newsletter details how vibe-coding, an approach where developers generate code through intuitive prompts, is migrating from software environments to consumer gadgets. This shift enables non-programmers to configure Internet of Things (IoT) devices and smart home appliances using natural language commands rather than traditional scripting. The trend threatens to lower the barrier to entry for device configuration while simultaneously introducing new supply chain risks if vendors embed unvetted large language model (LLM) backends. Security professionals should audit vendor documentation for opaque AI processing pipelines and verify that local execution modes are available to prevent cloud-side data exfiltration. This evolution signals a broader industry pivot toward ambient computing interfaces driven by generative AI.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "TechCrunch Backlash Targets Data Center Expansion",
-            "title": "Paris Marx's Book Hyperscale Critiques Big Tech Infrastructure Growth and Environmental Costs",
-            "content": "Journalist Paris Marx released the book \"Hyperscale,\" critiquing the unchecked expansion of Big Tech data center infrastructure amid mounting public and regulatory backlash. The analysis highlights how hyperscale computing facilities consume massive power grids, strain municipal water resources, and concentrate geopolitical risk in a handful of regions. Developers and cloud architects face pressure to optimize workloads for energy efficiency as investors and policymakers scrutinize carbon footprints. Organizations should conduct lifecycle assessments of their colocation strategies and prioritize renewable energy procurement contracts. The work underscores a shifting narrative where infrastructure scale is increasingly viewed as a liability rather than a competitive advantage.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "Isaac Developer Strips AI Music",
-            "title": "Edmund McMillen Removes AI-Generated Audio From Repentance Plus Following Steam Review Bombing",
-            "content": "Edmund McMillen, developer of The Binding of Isaac: Repentance Plus, removed AI-generated music tracks from the Grand Theft Auto-themed section after Reddit user ShweetsStuff identified the synthetic audio files. The discovery triggered a review bombing campaign on Steam, prompting the studio to issue a patch that replaces the artificial compositions with original scores. The affected segment previously utilized undisclosed generative audio models, violating community expectations for human-crafted content in indie releases. Players should update to the latest patch to restore intended gameplay audio and avoid corrupted asset states. This incident adds to a growing list of consumer pushback against undisclosed AI integration in premium software products.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 22 2026",
-            "headline": "Perplexity Metrics Guide AI Evaluation",
-            "title": "OpenAI News Explores How Perplexity Measurements Can Standardize Capability Benchmarks for Emerging Models",
-            "content": "OpenAI News published an analysis explaining how perplexity, a statistical metric measuring a language model's prediction accuracy across token sequences, can standardize evaluations of emerging artificial intelligence capabilities. By quantifying the average surprise of a model when encountering new text, developers can establish reproducible benchmarks that reduce subjective variance in performance reporting. The approach enables engineering teams to compare transformer architectures objectively and identify overfitting before deployment to production APIs. Teams should integrate perplexity scoring into their continuous integration pipelines alongside task-specific metrics like F1 scores. Adopting shared statistical frameworks will help the industry mature beyond opaque leaderboard rankings toward transparent capability verification.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/perplexity-and-intelligence",
             "relatedResources": []
         }
     ],
