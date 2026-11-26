@@ -5,6 +5,96 @@ const websiteContent = {
     "cyberShorts": [
         {
             "date": "Nov 26 2026",
+            "headline": "Juniper Flaw Enables Root Command Execution",
+            "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Active Attacks",
+            "content": "Attackers are actively exploiting CVE-2026-103406, a critical vulnerability in Juniper Session Smart Conductor that permits remote command execution as the root user. The flaw impacts specific Session Smart Conductor deployments and allows unauthenticated attackers to run arbitrary operating system commands. This exploitation highlights ongoing targeting of network infrastructure management platforms by advanced threat actors. Organizations running the affected Juniper Session Smart Conductor versions must apply vendor-supplied patches immediately to mitigate the risk of full system compromise. Security teams should audit web-facing management interfaces for unauthorized access and review system logs for anomalous root-level activity.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "AI Aids Attackers Exploiting Mitel Zero-Days",
+            "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Extortion Campaign",
+            "content": "Hackers exploited previously undisclosed MiCollab vulnerabilities before Mitel released its security advisory, with Accenture suspecting artificial intelligence assisted the attack in a suspected extortion campaign. The zero-day flaws in Mitel MiCollab targeted the unified communications platform to facilitate unauthorized access and data exfiltration. The pre-disclosure exploitation demonstrates a concerning trend where threat actors leverage AI to accelerate vulnerability discovery and weaponization. Organizations relying on MiCollab for voice and video communications must update to the patched versions immediately and restrict external access to their tenant portals. IT administrators should verify their MiCollab deployment versions and monitor for any signs of unauthorized administrative access or configuration changes.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Hex.pm Flaw Compromises 6 Production Servers",
+            "title": "CVSS 10.0 Hex.pm RCE Flaw Used to Compromise 6 Package Registry Servers",
+            "content": "An attacker executed operating system commands on six production servers of Hex.pm, the Elixir and Erlang package registry, by exploiting a remote code execution (RCE) flaw tracked as having a CVSS score of 10.0. The vulnerability had existed in the registry's codebase since February 2016, leaving the service exposed for a decade before detection. This breach affects the entire Elixir and Erlang developer community that relies on Hex.pm to fetch and manage software dependencies. Developers must rotate any exposed API keys and review their project dependency logs for unauthorized package modifications or supply chain injections. The incident underscores the critical need for continuous dependency scanning and rapid patching of foundational open-source infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 24 2026",
+            "headline": "CISA Adds 3 Actively Exploited Vulnerabilities",
+            "title": "CISA Expands Known Exploited Vulnerabilities Catalog with Three New Flaws",
+            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) added three vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on confirmed active exploitation in the wild. The newly listed flaws include CVE-2026-131914 in Idunno AntiCsrf, CVE-2026-132165 in Drupal Core, and CVE-2026-132224 in Opt. These vulnerabilities enable critical impacts ranging from deserialization of untrusted data to remote code execution (RCE) across web application platforms. Federal agencies and private sector partners must prioritize patching these specific CVEs within their 14-day remediation windows to comply with binding operational directives. Security teams should inventory affected Drupal and Idunno deployments immediately and apply vendor patches or temporary workarounds to block potential attacker entry points.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 24 2026",
+            "headline": "Danfoss Webserver Vulnerability Allows Code Execution",
+            "title": "CISA Flags Danfoss AK-SM 8xxA Series Stack-Based Buffer Overflow",
+            "content": "CISA identified a stack-based buffer overflow in the Danfoss AK-SM 8xxA Series that allows an attacker to execute arbitrary code with webserver privileges. The vulnerability carries a CVSS v3 severity score of 9.8, indicating a critical risk of remote compromise for affected industrial control system equipment. Successful exploitation could enable threat actors to disrupt operations or pivot laterally within industrial networks relying on Danfoss monitoring hardware. Operators must update to the vendor-released patched firmware versions immediately and restrict network access to the device management interfaces. Security personnel should segment these industrial assets from enterprise IT networks and monitor for anomalous webserver process behavior or unauthorized configuration changes.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "CISA Catalog Grows—2 Active Exploits Added",
+            "title": "CISA Adds Two Known Exploited Vulnerabilities Based on Active Exploitation Evidence",
+            "content": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog due to confirmed active exploitation. The list includes CVE-2026-133968, a path traversal flaw in Project MONAI Label, and CVE-2026-134624, a server-side request forgery (SSRF) vulnerability in N-able Mail Assure (SpamExperts). Organizations running these specific software versions face elevated risks of data exposure and unauthorized internal network access. Federal agencies must patch these flaws by December 3, 2026, per binding operational directives. This update reflects ongoing threat actor targeting of open-source and mail server infrastructure.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 21 2026",
+            "headline": "RansomwareHelp CTO Indicted—FBI Sting Exposes Fraud",
+            "title": "CTO of RansomwareHelp Indicted for Wire Fraud After FBI Sting Reveals Deception",
+            "content": "The chief technology officer and co-founder of ransomwarehelp.com faced wire fraud charges after an FBI sting operation revealed the Florida-based company lied about its capabilities. The firm claimed to use advanced cryptographic tools to restore ransomware-locked data, but investigators found it simply paid the attackers to recover client files. This deception affected hundreds of victims over the company's six-year operational history. Security professionals should verify vendor claims independently and avoid relying on unvetted data recovery brokers. The indictment underscores the FBI's increasing focus on fraud within the ransomware response ecosystem.",
+            "source": "Krebs on Security",
+            "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 20 2026",
+            "headline": "CISA Adds 4 KEVs—SAP NetWeaver Flaw Included",
+            "title": "CISA Expands Known Exploited Vulnerabilities Catalog With Four Active Flaws",
+            "content": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on evidence of active exploitation. The entries include CVE-2025-42884, an improper neutralization of special elements in data query logic vulnerability in SAP NetWeaver, and CVE-2026-76466, a use of hard-coded credentials flaw in the Cisco Expressway Series. Attackers leverage these weaknesses to bypass authentication and execute unauthorized commands on enterprise networks. Administrators must apply vendor patches immediately to mitigate compromise risks. This addition continues the trend of threat actors rapidly exploiting complex enterprise software.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "GeoServer RCE Chain—Exploited Within 48 Hours",
+            "title": "Attackers Deploy GeoServer RCE Chain Just Two Days After Disclosure",
+            "content": "Attackers began probing an unauthenticated remote code execution (RCE) chain across five GeoServer vulnerabilities just 48 hours after the open-source project disclosed the flaws. Security firm watchTowr detected this activity through its global honeypot network, confirming rapid weaponization of the exploit chain. The vulnerabilities allow unauthenticated actors to execute arbitrary code on affected geospatial server instances. Organizations running exposed GeoServer deployments must apply emergency patches and restrict network access immediately. This incident highlights the shrinking window between public disclosure and active exploitation.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4253667/new-geoserver-rce-exploit-chain-seen-in-the-wild-two-days-after-disclosure.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Fragnesia Flaw—Palo Alto Confirms Firewall Root Access",
+            "title": "Palo Alto Confirms Fragnesia Exploitation Against Firewalls Via PHP2Shell",
+            "content": "Palo Alto Networks confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root access on PAN-OS firewalls through PHP2Shell vulnerabilities. The company shipped fixes six months after the underlying Linux bug was patched, leaving a critical window for compromise. The vulnerability requires a locally authenticated, low-privileged attacker to escalate privileges and execute arbitrary code. Administrators must update PAN-OS to the latest firmware release to close this exposure. This case illustrates the dangers of delayed vendor patching for third-party kernel components.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
             "headline": "1Password Breach Exposes Data—GitHub Account Hacked",
             "title": "Hacker Steals Customer Records and Internal Source Code via Compromised 1Password Employee GitHub Account",
             "content": "An attacker compromised a 1Password employee GitHub account and pushed malicious code to steal customer records and internal source code. The attacker did not access customer password vaults or stored secrets. SecurityWeek reported the incident on November 26, 2026. The company took immediate steps to revoke access and investigate the unauthorized activity. Organizations should enforce strict multifactor authentication and code-signing policies for all developer accounts.",
@@ -92,99 +182,99 @@ const websiteContent = {
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
             "relatedResources": []
-        },
+        }
+    ],
+    "aiShorts": [
         {
-            "date": "Nov 24 2026",
-            "headline": "Unclassified CIA System Breached in Cyberattack",
-            "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
-            "content": "An unclassified system operated by the Central Intelligence Agency (CIA) suffered a confirmed cyberattack, though the specific data compromised and the responsible threat actor remain unknown. The breach underscores ongoing targeting of U.S. government networks by advanced persistent threats. Security teams must review access logs and segment unclassified environments to limit lateral movement. This incident follows a broader trend of adversaries compromising lower-tier government infrastructure to establish persistence. Agencies should enforce strict multi-factor authentication and continuous monitoring across all unclassified assets.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+            "date": "Nov 20 2026",
+            "headline": "OpenAI Fights Model Extraction with Layered Defenses",
+            "title": "OpenAI Deploys Adversarial Distillation Safeguards Against Capability Extraction",
+            "content": "OpenAI introduced a layered defense strategy called adversarial distillation to protect its models from capability extraction attacks. The approach integrates specialized model training, automated safeguards, real-time detection, and strict enforcement protocols. This initiative directly targets threat actors attempting to distill proprietary capabilities from deployed large language models. Security professionals should audit their application programming interfaces (APIs) for anomalous query patterns that indicate distillation attempts. This development reflects the industry's shift toward proactive model hardening as adversarial techniques evolve.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation",
             "relatedResources": []
         },
         {
-            "date": "Nov 24 2026",
-            "headline": "Elecbrakes Flaws Let Attackers Force Trailer Braking",
-            "title": "Critical Bluetooth Flaws in Elecbrakes Controllers Expose Trailers to Forced Braking",
-            "content": "Critical Bluetooth vulnerabilities in Elecbrakes controllers allow nearby attackers to force trailer braking, creating severe collision and accident risks. The flaws affect specific Elecbrakes hardware models, including the EB2, VM1, and ELBC2000 units, enabling remote manipulation of brake states. Fleet operators and logistics companies face direct physical safety impacts because an attacker within wireless range can trigger sudden stops or disable critical safety features. CISA has documented these weaknesses, noting that successful exploitation could let an adversary gain full brake control or modify firmware. Operators should apply vendor patches immediately and restrict Bluetooth broadcast ranges in transit yards.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+            "date": "Nov 20 2026",
+            "headline": "Hebbia Tests GPT-6 Astra for Financial Research",
+            "title": "Hebbia Reports Gains in Source Coverage and Citation Quality Using GPT-6 Astra",
+            "content": "Hebbia evaluated the prerelease GPT-6 Astra model for financial research tasks and documented measurable improvements. Pre-release metrics showed gains in source coverage, citation relevance, and presentation quality compared to prior iterations. Financial analysts and compliance officers will benefit from more accurate document parsing and synthesized reporting. Developers integrating these models should validate output accuracy against internal ground-truth datasets before deployment. This evaluation signals a trend toward specialized benchmarking of next-generation models in high-stakes enterprise sectors.",
+            "source": "OpenAI News",
+            "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "UK Watchdog Warns on Meta Agent—Refusal Cited",
+            "title": "UK Financial Watchdog FCA Complains After Meta Refuses to Share Muse Agent for Joint Testing",
+            "content": "The UK Financial Conduct Authority (FCA) warned that autonomous agents pose \"another force of attack\" after Meta declined a request to participate in joint testing. The refusal occurred ahead of Meta's scheduled rollout of its personal agent in the UK market on Tuesday. Regulators and financial institutions face heightened systemic risk from unvetted agentic AI systems operating in sensitive sectors. Security teams must monitor agent behavior logs and enforce strict sandbox isolation for any third-party AI deployments. This incident underscores growing friction between Big Tech transparency demands and proactive regulatory oversight.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/meta-refused-to-share-muse-for-testing-uk-financial-watchdog-complains/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "GTA VI Launch Proves Efficiency Trade-offs",
+            "title": "Grand Theft Auto VI Launch Highlights Tension Between Human Craft and AI Efficiency",
+            "content": "Grand Theft Auto VI became one of the most successful entertainment launches of all time on the same day Anthropic entered the public market. The game relied on painstakingly human-crafted design and development rather than automated generative pipelines. This success challenges the prevailing industry narrative that AI-driven efficiency is the only viable path for large-scale software production. Developers and studios should balance automated tooling with human creative oversight to maintain quality and player engagement. The concurrent Anthropic public market event highlights the divergent paths between agentic AI valuation and traditional software craftsmanship.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "llama.cpp Dashboard Benchmarks AMD Ryzen",
+            "title": "Hugging Face Introduces llama.cpp Benchmark Dashboard for AMD Ryzen and Radeon",
+            "content": "Hugging Face launched a new llama.cpp benchmark dashboard optimized for AMD Ryzen and Radeon processors. The tool enables developers to measure local large language model inference performance and hardware utilization across specific AMD silicon architectures. Systems engineers can use these metrics to optimize quantization levels and batch sizes for on-device deployment. Organizations running local inference should benchmark their target hardware against the dashboard before scaling production workloads. This release supports the growing trend of edge AI deployment on consumer-grade workstation hardware.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "42 AGs Block Character.AI Data Sales",
+            "title": "Coalition of 42 State AGs Moves to Halt Character.AI Chat Data Auction During Chapter 11",
+            "content": "A coalition of 42 state attorneys general filed nearly identical press releases to block Character.AI from auctioning user chat histories as it navigates Chapter 11 bankruptcy proceedings. The attorneys general accuse the company of planning to sell private user data without explicit consent, violating state consumer protection statutes. This action directly impacts the platform's estimated 20 million active users who exchanged private conversations with AI-generated personas. The broader trend reflects increasing regulatory scrutiny of generative AI platforms handling sensitive user inputs during financial distress. Developers and security professionals should audit their platform's data retention policies and ensure compliance with evolving state-level privacy mandates.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Multi-Agent Systems Guide Released",
+            "title": "Hugging Face Publishes Framework for Building and Evaluating Multi-Agent AI Systems",
+            "content": "Hugging Face released a technical guide detailing methodologies for constructing, training, and evaluating multi-agent systems capable of collaborative task execution. The framework outlines specific architectures for agent communication, tool use, and error recovery across distributed language models. This development impacts AI researchers and developers designing autonomous workflows, offering standardized metrics to benchmark agent reliability. The guide contextualizes the rapid shift from single-model inference to orchestrated, multi-agent pipelines in enterprise automation. Practitioners should review the provided evaluation scripts to benchmark their own agent orchestration frameworks against the proposed metrics.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/training-swarms",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Nvidia Halts Southeast Asia Shipments—China Sanctions",
+            "title": "Nvidia Pauses Server Chip Shipments to Malaysia, Singapore, Thailand, and Indonesia",
+            "content": "Nvidia instructed manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand, and Indonesia to comply with tightened U.S. export controls restricting advanced AI chips from reaching China. The suspension specifically targets high-performance computing hardware, including the H100 and A800 Tensor Core GPU variants, which are critical for training large language models. This move severely impacts data center operators and cloud service providers in Southeast Asia who rely on Nvidia's hardware for localized AI infrastructure. The U.S. government's tightened push reflects escalating geopolitical tensions over semiconductor supply chains and national security risks. Organizations in the region should assess local inventory levels and explore alternative hardware suppliers to mitigate potential service disruptions.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
             "relatedResources": []
         },
         {
             "date": "Nov 25 2026",
-            "headline": "Cisco, OpenAI Deploy AI Agents to Shield Systems",
-            "title": "Shirudo Open Source Project Lets AI Agents Defend Systems Before Patches Arrive",
-            "content": "Cisco and OpenAI launched Shirudo, an open-source initiative deploying autonomous AI agents to protect vulnerable systems ahead of permanent software patches. The agents operate as machine-vs-machine defenders, automatically detecting and mitigating threats in real time. This approach targets the expanding attack surface created by rapid AI adoption across enterprise networks. Security leaders should evaluate Shirudo for integration into existing security operations workflows. The release signals a shift toward automated, preemptive cyber defense powered by large language models.",
-            "source": "CSO Online",
-            "sourceUrl": "https://www.csoonline.com/article/4252893/cisco-and-openai-dispatch-ai-agents-to-shield-vulnerable-systems-before-permanent-patches-arrive-2.html",
+            "headline": "Scientists Debate AI Agent Boundaries",
+            "title": "Researchers Outline Ethical and Safety Boundaries for Deploying Autonomous AI Agents",
+            "content": "Leading scientists published a consensus framework defining the ethical and safety boundaries for deploying autonomous AI agents in real-world environments. The document specifies strict constraints on agent autonomy, mandating human-in-the-loop verification for high-stakes decisions involving financial transactions or physical hardware control. This guidance directly impacts AI developers integrating agentic workflows into enterprise software and consumer applications. The publication reflects growing industry concern over unintended consequences, including prompt injection and goal misalignment in unsupervised agent loops. Security professionals should integrate these boundary protocols into their agent risk assessment frameworks before deploying autonomous systems.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
             "relatedResources": []
         },
         {
-            "date": "Nov 24 2026",
-            "headline": "Hackers Breach Unclassified Intel Systems",
-            "title": "Unclassified Intelligence Network Breached, Impacting CIA and ODNI",
-            "content": "Hackers compromised an unclassified intelligence system, affecting networks operated by the Central Intelligence Agency (CIA) and the Office of the Director of National Intelligence (ODNI). A confirmed source stated that no other systems are currently at risk, limiting the blast radius of the intrusion. The breach highlights persistent targeting of unclassified government infrastructure by sophisticated adversaries. Agencies must accelerate segmentation of classified and unclassified environments while reviewing access logs. This incident adds to a growing pattern of supply-chain and perimeter compromises within U.S. intelligence communities.",
-            "source": "CyberScoop",
-            "sourceUrl": "https://cyberscoop.com/cia-odni-osint-data-breach/",
+            "date": "Nov 25 2026",
+            "headline": "NY Bans AI Toys—5 Years",
+            "title": "New York Bans AI Chatbot Toys for Five Years Following Safety Failures",
+            "content": "New York enacted a five-year ban on AI chatbot toys after Common Sense Media research revealed critical safety failures, including exposure to inappropriate content and risks to child emotional development. The legislation targets consumer-grade AI devices equipped with natural language processing (NLP) models that lack robust content moderation filters. This ban affects manufacturers and retailers selling interactive toys to minors within the state's jurisdiction, carrying potential civil penalties. The move aligns with a broader trend of state-level regulators scrutinizing generative AI applications aimed at vulnerable demographics. Parents and developers should verify that any interactive AI toy complies with state-specific safety standards and implements strict age-gating protocols.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
             "relatedResources": []
         },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Webworm APT Rebuilds SoftEther VPN From Source",
-            "title": "Webworm Group Strips Artifacts From Custom SoftEther VPN to Evade Detection",
-            "content": "The China-aligned espionage group Webworm APT has rebuilt the open-source SoftEther VPN software from source code, removing artifacts that typically expose malicious tools to defenders. This custom-compiled version allows the group to establish covert command-and-control channels while bypassing standard signature-based detection. Organizations relying on SoftEther VPN should verify binary integrity and monitor for anomalous VPN traffic patterns. The tactic demonstrates a maturing tradecraft among state-sponsored actors who now customize open-source utilities to obscure their presence.",
-            "source": "darkreading",
-            "sourceUrl": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Iran Group Hides KuboShell Backdoor—IPFS C2 Detected",
-            "title": "Iran-Aligned Volant Manticore Deploys IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-            "content": "The previously undocumented Iran-aligned espionage group Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. The group operates KuboShell, a backdoor that leverages the InterPlanetary File System (IPFS) to receive commands and exfiltrate data covertly. These espionage campaigns demonstrate a shift toward decentralized infrastructure to evade traditional network monitoring. Security teams should inspect for anomalous IPFS traffic and update endpoint detection rules to mitigate further intrusions. This activity aligns with broader Iranian cyber operations focused on regional critical infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "VMware Patches Critical ESX and vCenter Flaws",
-            "title": "Broadcom Ships Patches for Critical ESX and vCenter Authentication and Code Execution Bugs",
-            "content": "Broadcom released patches addressing critical vulnerabilities in VMware ESX and vCenter, including an authentication bypass and code execution flaws. The authentication bypass in vCenter allows unauthenticated actors to access administrative interfaces, while ESX host flaws enable remote code execution. These bugs affect multiple products, including Workstation, Fusion, and Avi Load Balancer, requiring immediate remediation across enterprise virtualization environments. Administrators must apply the latest updates to prevent potential host compromise and lateral movement. This release follows a trend of escalating critical flaws in enterprise hypervisor management platforms.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "EU Commission Exposes Academy Data Breach",
-            "title": "European Commission Discloses Data Breach During October AI-Assisted Cyberattack Investigation",
-            "content": "The European Commission detected an AI-assisted cyberattack in October that exposed the names and email addresses of EU Academy users. The breach occurred during the Commission's own investigation into the malicious activity, revealing sensitive contact information. The incident underscores the risks of AI-driven attack techniques against public sector institutions and their investigative workflows. Affected users should monitor for phishing attempts and enable multi-factor authentication on associated accounts. This event highlights the growing threat of automated attacks targeting government digital services.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "VMware vCenter 9.8-Rated Auth Bypass Flaw Patched",
-            "title": "Broadcom Addresses Critical 9.8-Rated Authentication Bypass in VMware vCenter After Zero-Day Exploitation",
-            "content": "Broadcom patched 23 vulnerabilities across VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer following zero-day exploitation in the wild. The most severe bug, tracked as CVE-2026-123903, carries a 9.8 CVSS score and allows attackers to bypass authentication on vCenter. Successful exploitation grants full administrative control over virtualized environments, posing severe risks to cloud and on-premise deployments. Administrators must deploy the emergency patches immediately to close the authentication gap and prevent host takeover. This vulnerability marks the latest critical flaw in VMware's virtualization management stack.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "OpenAI-Cisco Tool Blocks Linux Exploits—Not Production-Ready",
-            "title": "OpenAI and Cisco Launch Shirudo to Generate AI Shields for Unpatched Linux Systems",
-            "content": "OpenAI and Cisco unveiled Shirudo, an open-source tool that uses AI-generated shields to block Linux exploits while organizations prepare patches. The tool analyzes vulnerability data to create temporary defensive layers against known attack vectors on unpatched systems. However, Shirudo is not yet production-ready, meaning enterprises should treat it as an interim mitigation rather than a permanent fix. Security teams can deploy it to buy time during active patching cycles for critical Linux infrastructure. This collaboration reflects a growing trend of integrating generative AI into defensive cybersecurity tooling.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
-            "relatedResources": []
-        }
-    ],
-    "aiShorts": [
         {
             "date": "Nov 25 2026",
             "headline": "Amazon Talks to End Muse AI Shopping Block",
@@ -201,15 +291,6 @@ const websiteContent = {
             "content": "Powerful vibe-coding agents and tools such as Reverse Engineer Anything have destabilized the music hardware sector, forcing manufacturers to respond to rapid community-driven modifications. Roland has remained silent on the trend, while other companies are increasingly embracing the modding community to maintain relevance. This shift indicates that open-source firmware and hardware schematics are becoming the default expectation for synthesizer development. Developers and audio engineers should audit third-party plugins and custom firmware for stability risks before deploying them in production environments. The industry is transitioning from closed proprietary systems to transparent, user-modifiable architectures.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 23 2026",
-            "headline": "OpenAI and Cisco Launch Shirudo Runtime",
-            "title": "OpenAI and Cisco Introduce Shirudo, an Open-Source Linux Runtime for Patch Protection",
-            "content": "OpenAI and Cisco introduced Shirudo, an open-source runtime for Linux designed to protect running systems while administrators deploy security patches. The tool isolates vulnerable processes during updates, reducing the window of exposure against active threats on enterprise servers. IT and DevOps teams can integrate Shirudo into existing Linux environments to harden critical infrastructure against patch-management attacks. Organizations should evaluate Shirudo for compatibility with current kernel versions and patch schedules. This release reflects a growing industry focus on secure, zero-downtime update strategies for cloud-native workloads.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/introducing-shirudo",
             "relatedResources": []
         },
         {
@@ -282,87 +363,6 @@ const websiteContent = {
             "content": "Yale professor Jeffrey Sonnenfeld warned that Nvidia's White House-backed return of CEO Jensen Huang and his board membership could prove a detriment to U.S. industrial might rather than a champion. The warning highlights mounting lawsuits against the company's directors amid scrutiny over governance and market concentration risks. Shareholders, policymakers, and corporate board members face heightened exposure to regulatory and reputational damage. This criticism emerges as semiconductor stocks rally on artificial intelligence infrastructure spending. Stakeholders should monitor evolving litigation and antitrust filings for material impacts on Nvidia's operational autonomy.",
             "source": "AI News & Artificial Intelligence | TechCrunch",
             "sourceUrl": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Tidal Bans 29 Million AI Tracks Starting December 9",
-            "title": "Tidal Bans AI-Generated Music, Deleting 29 Million Songs From December 9",
-            "content": "Tidal will ban AI-generated music starting December 9, deleting approximately 29 million AI-generated songs and rejecting 80,000 to 85,000 tracks daily. The streaming platform's music lead Robert Andersen announced the policy change, which targets synthetic audio uploads that lack human authorship verification. Independent artists, labels, and AI music generators face immediate delisting and potential account restrictions under the updated terms of service. This move follows earlier labeling initiatives and reflects growing pressure on streaming services to police synthetic content. Rights holders and distributors should review their upload pipelines and ensure human-authored documentation is attached to all submissions before the cutoff.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Meta Pushes Muse AI Into Instagram DMs",
-            "title": "Meta Integrates Muse AI Assistant Directly Into Instagram Direct Messages",
-            "content": "Meta is bringing its Muse artificial intelligence (AI) assistant directly into Instagram Direct Messages, eliminating the need for users to toggle between the Instagram application and the standalone Muse app. The integration allows users to query the AI agent within existing chat threads using natural language prompts. Instagram's 2 billion monthly active users and content creators gain streamlined access to generative assistance without context switching. This deployment reflects Meta's broader strategy of embedding conversational agents across its family of applications. Developers and privacy-conscious users should review updated Meta privacy policies and disable in-app AI features where permitted to limit data exposure.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Tidal Bans Millions of Fully AI-Generated Tracks",
-            "title": "Tidal to Remove Millions of AI-Generated Tracks While Permitting Assisted Content",
-            "content": "Tidal announced it will ban and remove millions of tracks that are fully generated by artificial intelligence (AI) to combat an influx of low-quality AI slop on its music streaming platform. The company clarified that it will still accept songs created with human input and AI assistance, but it will reject compositions entirely produced by generative models. This policy shift affects independent artists and labels flooding the platform with synthetic audio, potentially altering royalty distributions and discovery algorithms. The move reflects broader industry tension as streaming services struggle to balance innovation with content quality and copyright integrity. Listeners and creators should verify track metadata and production credits before uploading or consuming content on the platform.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Microduck Sim2Real Avoidance via Isaac Lab",
-            "title": "Microduck Obstacle Avoidance Workflow Integrates Isaac Lab and Newton for Robotics",
-            "content": "Microduck published a simulation-to-real (Sim2Real) workflow demonstrating obstacle avoidance for robotic systems using the Isaac Lab environment and the Newton physics engine. The pipeline leverages Isaac Lab's modular robotics simulation capabilities alongside Newton's rigid-body dynamics to train and transfer control policies from virtual environments to physical hardware. Developers can use this workflow to validate navigation algorithms and sensor fusion models before deploying them on real-world robotic platforms. The integration reduces the gap between simulated training and physical execution by standardizing joint state representations and collision geometries. Engineers should review the provided Isaac Lab configuration files and Newton contact parameters to ensure compatibility with their specific robot hardware.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/microduck-obstacle-avoidance",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Jensen Huang Deepfakes Flood Social Media",
-            "title": "Viral Deepfake Videos Depict Nvidia Founder Jensen Huang in Unverified Party Scenes",
-            "content": "A deepfake video depicting former Nvidia chief executive Jensen Huang partying in Ibiza has amassed nearly 6 million views on Instagram, illustrating the rapid spread of synthetic celebrity misinformation. The manipulated clip shows Huang wearing his signature black leather jacket while holding a champagne glass in a crowded nightclub, with a fabricated figure identified as Chinese technology executive Alice Huang appearing from behind him. Security researchers note that these generative video models require minimal source material and can produce convincing but entirely fabricated scenarios within minutes. The incident affects public trust in visual media and exposes viewers to potential misinformation campaigns targeting technology executives. Users should verify the authenticity of viral clips through official corporate channels and employ reverse image search tools before sharing.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Crusoe Investor Backs Solar for AI Data Centers",
-            "title": "Crusoe Investor Advocates Solar and Battery Storage for Next-Generation AI Data Centers",
-            "content": "A Crusoe investor is advocating for solar photovoltaic (PV) arrays and lithium-ion battery energy storage systems to power next-generation artificial intelligence (AI) data centers that will require tens of gigawatts of electricity annually. The proposal addresses the escalating power demands of large-scale GPU clusters used for training foundation models, which currently strain conventional grid infrastructure. By pairing on-site solar generation with multi-hour battery backups, operators can reduce reliance on fossil-fuel peaker plants and stabilize localized microgrids. This strategy impacts hyperscale cloud providers and colocation facilities facing rising operational expenditures and carbon compliance mandates. Decision-makers should evaluate site-specific solar irradiance data and battery round-trip efficiency metrics when planning future AI compute deployments.",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "NYT Warns Photographers on Photoshop AI",
-            "title": "The New York Times Advises Freelancers to Avoid Updated Photoshop Over Hidden AI Features",
-            "content": "The New York Times issued an internal warning asking freelance photographers to avoid updating to the 2027 version of Adobe Photoshop because its artificial intelligence (AI) features operate in ways that may not be apparent to users. Photography leaders Meaghan Looram and an unnamed colleague stated in an email seen by The Verge that the update introduces automated background removal and generative fill tools that could alter image provenance without clear metadata flags. This affects freelance contributors who must maintain strict editorial integrity and copyright documentation for news imagery. The warning highlights a growing trend where AI-driven automation in creative software introduces unintended transparency risks for professional workflows. Photographers should disable automatic cloud features and review the 2027 release notes for specific AI module toggles before installing the update.",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Tidal Purges 27 Million AI Tracks—Catalog Drops to Zero",
-            "title": "Tidal Announces Total Ban on AI-Generated Music, Deleting 27 Million Tracks",
-            "content": "Tidal is deleting all 27 million AI-generated tracks, which represent 6.3 percent of its total catalog, to enforce a zero-tolerance policy on synthetic audio. The streaming service did not specify detection algorithms or metadata filtering methods used to identify the generated content prior to removal. This purge affects independent artists and labels who relied on AI tools for production, potentially disrupting royalty distributions and listener playlists. The move follows broader industry scrutiny of generative AI in music and sets a precedent for other streaming platforms to audit their libraries. Subscribers should verify their saved playlists, as affected tracks will be permanently inaccessible unless restored by rights holders.",
-            "source": "Artificial Intelligence - Ars Technica",
-            "sourceUrl": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Agentic AI Spikes Enterprise Traffic 450%—Network Strain Worsens",
-            "title": "Enterprise Networks Face Severe Strain as Agentic AI Drives 450 Percent More Traffic",
-            "content": "Enterprise networks are experiencing severe congestion as artificial intelligence deployments rapidly become the dominant source of bandwidth demand. Agentic AI systems, which autonomously execute multi-step tasks, generate an estimated 450 percent more network traffic than traditional cloud applications. This surge strains Wide Area Network (WAN) links and data center interconnects, forcing IT teams to prioritize Quality of Service (QoS) policies and edge caching. Organizations must audit current bandwidth allocations and consider software-defined networking upgrades to prevent latency degradation. The trend signals that AI infrastructure will remain the primary load driver on corporate networks through 2027.",
-            "source": "Artificial intelligence – MIT Technology Review",
-            "sourceUrl": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
             "relatedResources": []
         }
     ],
