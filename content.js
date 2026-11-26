@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 26 2026",
+            "headline": "1Password Breach Exposes Data—GitHub Account Hacked",
+            "title": "Hacker Steals Customer Records and Internal Source Code via Compromised 1Password Employee GitHub Account",
+            "content": "An attacker compromised a 1Password employee GitHub account and pushed malicious code to steal customer records and internal source code. The attacker did not access customer password vaults or stored secrets. SecurityWeek reported the incident on November 26, 2026. The company took immediate steps to revoke access and investigate the unauthorized activity. Organizations should enforce strict multifactor authentication and code-signing policies for all developer accounts.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Drupal Core Flaw Under Active Attack—Site Takeover",
+            "title": "Drupal Warns of Highly Critical Site Takeover Vulnerability CVE-2026-136716 Under Active Exploitation",
+            "content": "Drupal warned of a highly critical security flaw in Drupal core that threat actors actively exploit in the wild. The vulnerability, tracked as CVE-2026-136716, stems from improper checking for unusual or exceptional conditions. Successful exploitation allows unauthenticated attackers to take over affected sites completely. Site administrators must apply the latest Drupal core patches immediately to block unauthorized access. This incident underscores the rising risk of actively exploited content management system flaws.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "CISA Adds 10 Flaws—Mitel MiCollab Hit by 5 Vulnerabilities",
+            "title": "CISA Catalog Expands with 10 Exploited Flaws Across Mitel, Juniper, Vates, and Danfoss Products",
+            "content": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog on November 26, 2026. Five of these flaws impact Mitel MiCollab, which were disclosed the previous week. Additional vulnerabilities affect Juniper, Vates, and Danfoss products, creating broad supply-chain exposure. Organizations running these systems face severe risk of remote compromise and lateral movement. Administrators should prioritize patching the listed Mitel MiCollab flaws and review CISA KEV directives without delay.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "1Password Hacked—Customer Data Stolen, Vaults Safe",
+            "title": "1Password Backend Breach Exposes Customer Information but Leaves Password Vaults Intact",
+            "content": "1Password disclosed a security incident involving its backend systems that led to unauthorized access to some customer information. The attacker did not access customer password vaults or other stored secrets. The company took immediate steps to contain the breach and secure the compromised employee GitHub account. This incident highlights the ongoing risk of credential theft against software vendors with cloud-hosted infrastructure. Users should enable additional account recovery options and monitor for anomalous login alerts.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "GeoServer Flaws Under Attack—Chained for RCE",
+            "title": "Attackers Probe GeoServer for Two High-Severity Flaws That Enable Chained Unauthenticated Remote Code Execution",
+            "content": "Attackers are actively probing GeoServer instances for two high-severity flaws that threat actors can chain with other bugs to achieve unauthenticated remote code execution (RCE). SecurityWeek reported the active scanning on November 25, 2026. Successful exploitation allows complete server takeover without valid credentials. GeoServer deployments exposed to the internet face the highest risk of compromise. Administrators should apply the latest security patches and restrict access through network firewalls immediately.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "GeoServer Flaws Enable Unauthenticated RCE Chains",
+            "title": "Threat Actors Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+            "content": "Threat actors are actively exploiting two patched vulnerabilities in GeoServer, according to watchTowr. The flaws, tracked as CVE-2026-120705 and CVE-2026-129243, include an arbitrary file read vulnerability with a CVSS score of 8.6 and a second critical flaw. Unauthenticated remote code execution (RCE) chains allow attackers to compromise systems without valid credentials, posing severe risks to organizations running the open-source geospatial server software. Security teams should apply the latest GeoServer patches immediately and audit exposed instances for unauthorized access. This incident underscores the persistent threat of actively exploited flaws in widely deployed geospatial infrastructure.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "FinCEN Takes Systems Offline After Cyber Intrusion",
+            "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+            "content": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) confirmed unauthorized access to a limited subset of its systems following a cybersecurity incident. As a precautionary measure, the bureau took specific systems offline to contain the breach and protect sensitive data. FinCEN collects suspicious financial transaction information to combat money laundering and terrorist financing, making any compromise a high-priority concern for federal and private-sector financial watchdogs. Affected agencies and partners should review access logs and enforce strict multi-factor authentication (MFA) policies immediately. This intrusion highlights the ongoing targeting of critical financial infrastructure by sophisticated cyber adversaries.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "CISA Adds 10 Vulnerabilities to KEV Catalog",
+            "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog Based on Active Exploitation Evidence",
+            "content": "CISA expanded its Known Exploited Vulnerabilities (KEV) Catalog by 10 entries after confirming active exploitation in the wild. The newly listed flaws include CVE-2023-25914, a Danfoss AK-SM 800A Series path traversal vulnerability, CVE-2023-25915, a Danfoss AK-SM 800A Series improper input validation flaw, and CVE-2025-41450. These vulnerabilities affect industrial control systems and network infrastructure, exposing organizations to remote compromise and operational disruption. Federal agencies must prioritize patching these flaws within 15 days, while private-sector operators should audit affected Danfoss devices and apply vendor-supplied mitigations. This update reflects CISA's continued focus on closing gaps exploited against critical infrastructure.",
+            "source": "All CISA Advisories",
+            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "64% of 2022 Secrets Still Valid in 2026",
+            "title": "Credential Remediation Is Slow When Teams Do Not Know What Will Break",
+            "content": "GitGuardian's State of Secrets Sprawl 2026 report found that more than 64% of valid secrets discovered in 2022 remained operational in January 2026 because teams delayed remediation to avoid breaking dependent systems. Validity-only triage missed 46% of critical secrets, indicating that organizations prioritizing impact over simple expiration checks can reduce exposure faster. Developers and security engineers should integrate automated impact analysis into secret-scanning pipelines to identify breaking changes before revoking credentials. This trend reveals a systemic gap in application dependency mapping that prolongs secret sprawl across cloud-native environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Drupal Fail2Install RCE Drives Federal Patch Deadline",
+            "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+            "content": "CISA added the critical Drupal flaw tracked as CVE-2026-132165, nicknamed Fail2Install, to its Known Exploited Vulnerabilities (KEV) catalog, mandating federal agencies to apply fixes by November 27, 2026. The vulnerability enables remote code execution (RCE) on unpatched Drupal installations, and threat actors are actively exploiting it in the wild. Any organization running vulnerable Drupal versions faces severe risks of full server compromise and data exfiltration. Administrators must update Drupal immediately and verify that web application firewalls block known exploit patterns. This addition to the KEV catalog signals that Fail2Install has moved from theoretical risk to active, widespread targeting.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 24 2026",
             "headline": "Unclassified CIA System Breached in Cyberattack",
             "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
@@ -19,51 +109,6 @@ const websiteContent = {
             "content": "Critical Bluetooth vulnerabilities in Elecbrakes controllers allow nearby attackers to force trailer braking, creating severe collision and accident risks. The flaws affect specific Elecbrakes hardware models, including the EB2, VM1, and ELBC2000 units, enabling remote manipulation of brake states. Fleet operators and logistics companies face direct physical safety impacts because an attacker within wireless range can trigger sudden stops or disable critical safety features. CISA has documented these weaknesses, noting that successful exploitation could let an adversary gain full brake control or modify firmware. Operators should apply vendor patches immediately and restrict Bluetooth broadcast ranges in transit yards.",
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 21 2026",
-            "headline": "RansomwareHelp CTO Charged With $1M Wire Fraud",
-            "title": "CTO of RansomwareHelp Indicted for Wire Fraud After FBI Sting",
-            "content": "The chief technology officer and co-founder of RansomwareHelp.com was indicted for wire fraud after an FBI sting revealed the Florida business did not restore ransomware-encrypted data. Instead, the company allegedly paid ransoms directly to the attackers while falsely marketing \"advanced cryptographic tools\" to victims. The 6-year-old operation targeted organizations seeking legitimate decryption assistance, exposing clients to repeated extortion. This case highlights the growing threat of fraudulent ransomware recovery services operating as legitimate consultancies. Victims should verify vendor credentials independently and report suspicious recovery claims to the FBI Internet Crime Complaint Center.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 20 2026",
-            "headline": "CISA Adds 4 Vulnerabilities to KEV Catalog",
-            "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on confirmed active exploitation. The entries include CVE-2025-42884, a SAP NetWeaver improper neutralization flaw, and CVE-2026-76466, a Cisco Expressway Series hard-coded credential issue. Organizations running these platforms face elevated risks of remote compromise and unauthorized access. Federal agencies and critical infrastructure operators must prioritize patching these flaws within mandated remediation windows. Administrators should review CISA KEV bulletins weekly to maintain compliance and reduce exposure to active threats.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "Elecbrakes Vulnerabilities Enable Trailer Brake Takeover",
-            "title": "Elecbrakes EB2, VM1, ELBC2000 Vulnerabilities Allow Brake Control",
-            "content": "CISA published a Common Security Advisory Framework (CSAF) summary for Elecbrakes models EB2, VM1, and ELBC2000, warning that exploitation could let an attacker control trailer brakes. Successful attacks may enable firmware modification, brake light disabling, and alteration of critical safety conditions. These vulnerabilities expose commercial fleet operators to physical harm and regulatory liability if exploited in transit. Security teams should inventory affected brake controllers, isolate them from untrusted networks, and apply vendor-supplied mitigations. Proactive asset management remains essential to prevent wireless intrusion into vehicle safety systems.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "3 Unauthenticated Admin Accounts Created in OpenPLC Runtime",
-            "title": "Autonomy Logic OpenPLC Runtime Vulnerability Enables Unauthenticated Admin Account Creation",
-            "content": "Attackers can exploit a flaw in Autonomy Logic OpenPLC Runtime to create unauthenticated administrator accounts. The vulnerability affects OpenPLC Runtime version 3.8.1 and carries a CVSS v3 score of 8.1. Successful exploitation grants full control over affected industrial control systems, exposing operational technology environments to remote takeover. Security teams should inventory all OpenPLC Runtime deployments immediately and apply vendor-supplied patches. This incident underscores ongoing risks in industrial control system software, where weak authentication mechanisms remain common.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 19 2026",
-            "headline": "libumqtt Flaw Enables DoS and Memory Corruption",
-            "title": "libumqtt Integer Vulnerability Allows Remote DoS, Memory Corruption, or Information Disclosure",
-            "content": "A remote attacker can exploit an integer flaw in libumqtt to trigger denial of service, memory corruption, or information disclosure. The affected version carries a CVSS v3 score of 8.6 and impacts libumqtt library installations globally. Exploitation requires no local access, making it a high-priority risk for any system integrating the MQTT client library. Administrators must upgrade to the patched release or restrict network exposure of affected services. This flaw reflects a broader trend of supply-chain weaknesses in open-source messaging components.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
             "relatedResources": []
         },
         {
@@ -137,70 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "1 Bit Bypasses Windows Code Integrity—VirtualBox Hit",
-            "title": "Google Project Zero Researcher Demonstrates .NET Loading Quirk Bypassing Windows Protections and VirtualBox",
-            "content": "Google Project Zero researcher James Forshaw demonstrated that a single-bit alteration in .NET Framework program files allows local attackers to execute untrusted code past Windows Code Integrity (WCI) and Hypervisor-protected Code Integrity (HVCI). This loading behavior affects the .NET Framework on Windows systems and also bypasses security controls in Oracle VirtualBox. The vulnerability exposes enterprise endpoints and virtualized development environments to privilege escalation and unauthorized code execution. Organizations should audit .NET application deployments and apply vendor patches to mitigate local attack vectors. This finding underscores ongoing risks in managed runtime environments that load external assemblies.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "SOC Teams Lose 450 Hours per 1,000 Alerts—Optimize Now",
-            "title": "2027 SOC Budget Reset Focuses on Cutting Costs and Reducing Cyber Risk Through Faster Threat Analysis",
-            "content": "ANY.RUN estimates that Security Operations Center (SOC) teams waste 450 analyst hours per 1,000 investigated alerts due to slow threat analysis and Indicators of Compromise (IOC) research. Manual investigation processes drive up operational costs and delay incident response across enterprise security stacks. Organizations can reduce cyber risk and reallocate budget by automating triage workflows and enriching alert data. Security leaders should prioritize tooling that accelerates containment timelines in the 2027 budget cycle. This shift reflects a broader industry trend toward efficiency-driven security operations amid tightening fiscal constraints.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "CISA Adds 3 Active Exploitation Flaws to KEV Catalog",
-            "title": "CISA Updates Known Exploited Vulnerabilities Catalog With Three Actively Exploited Flaws",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) added three vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog after confirming active exploitation in the wild. The catalog entries include CVE-2026-131914 in Idunno AntiCsrf, CVE-2026-132165 in Drupal Core, and CVE-2026-132224 in Opt. Successful exploitation of these flaws enables remote code execution and deserialization of untrusted data across affected web applications. System administrators must inventory affected Drupal and Idunno instances and apply vendor-supplied patches immediately. CISA's updated catalog aims to accelerate remediation timelines for federal agencies and critical infrastructure operators.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Danfoss Webserver Bug Scores 9.8—Patch Critical RCE",
-            "title": "CISA Flags Danfoss AK-SM 8xxA Series Vulnerability Allowing Arbitrary Code Execution",
-            "content": "CISA identified a stack-based buffer overflow in the Danfoss AK-SM 8xxA Series webserver that scores 9.8 on the Common Vulnerability Scoring System (CVSS) v3. Successful exploitation allows an attacker to execute arbitrary code with webserver privileges, leading to full system compromise. The affected product versions include the AK-SM8xxA CVSS Vendor Equipment line. Industrial control system operators and building automation administrators face severe disruption and lateral movement risks if the flaw remains unpatched. Vendors should deploy firmware updates and restrict webserver access through network segmentation. This advisory highlights the growing threat surface in operational technology environments.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "1.5 Million Records Stolen in KEPCO South Korean Breach",
-            "title": "South Korean Electric Company KEPCO Reports Data Breach Affecting 1.5 Million Customers",
-            "content": "Hackers compromised the customer portal and supplier relationship management platform at South Korea's KEPCO, exposing personal information belonging to 1.5 million individuals. The attackers exfiltrated data from internal web applications without encrypting or altering core grid infrastructure. South Korean energy sector operators and critical infrastructure providers must review access controls and multi-factor authentication (MFA) policies for supplier portals. Affected customers should monitor financial accounts for identity theft and enroll in credit monitoring services. This incident underscores the persistent targeting of utility customer data by cybercriminals seeking identity theft payloads.",
-            "source": "SecurityWeek",
-            "sourceUrl": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 20 2026",
-            "headline": "OpenAI Layers Defenses Against Model Extraction",
-            "title": "OpenAI Deploys Layered Adversarial Distillation to Block Capability Extraction",
-            "content": "OpenAI has unveiled a layered defense strategy against adversarial distillation, combining model training, safeguards, detection, and enforcement to protect against capability extraction. This approach hardens its large language models by identifying and throttling attempts to replicate proprietary reasoning behaviors. The framework affects developers and enterprise customers relying on OpenAI Application Programming Interfaces (APIs) for high-stakes workloads. Industry observers note this follows a broader trend of vendors embedding anti-extraction controls directly into inference pipelines. Security teams should audit their API usage logs for anomalous query patterns and enforce rate limits to mitigate extraction risks.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation",
+            "date": "Nov 25 2026",
+            "headline": "Amazon Talks to End Muse AI Shopping Block",
+            "title": "Amazon in Talks to Lift Block on Meta Muse AI Shopping Agent on Marketplace",
+            "content": "Amazon is reportedly negotiating with Meta to lift its existing block on the Muse AI agent, allowing automated product recommendations within the ecommerce platform, according to Fortune. The discussions center on restricting the types of goods the agent can suggest to protect marketplace integrity and seller relationships. This move signals a shift toward integrating third-party artificial intelligence (AI) agents directly into retail workflows. Sellers and developers should monitor policy updates, as expanded AI access could alter search rankings and commission structures. The outcome will establish a precedent for how large marketplaces govern autonomous purchasing bots.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
             "relatedResources": []
         },
         {
-            "date": "Nov 20 2026",
-            "headline": "GPT-6 Astra Boosts Financial Research Metrics",
-            "title": "Hebbia Reports Gains in Financial Research Using Pre-Release GPT-6 Astra",
-            "content": "Hebbia tested the pre-release GPT-6 Astra model for financial research and observed measurable improvements across source coverage, citation relevance, and presentation quality. The evaluation focused on complex due diligence tasks requiring synthesis of unstructured market data and regulatory filings. Financial analysts and investment researchers stand to benefit from higher-fidelity outputs that reduce manual verification time. This aligns with the industry trend of deploying next-generation multimodal agents for quantitative workflows before general availability. Practitioners should validate model outputs against primary sources and maintain human-in-the-loop review for compliance-sensitive reports.",
+            "date": "Nov 25 2026",
+            "headline": "Vibe Coding Agents Disrupt Music Gear Open Source",
+            "title": "Vibe-Coding Agents Trigger Chaos in Music Gear, Pushing Open Source Synth Norms",
+            "content": "Powerful vibe-coding agents and tools such as Reverse Engineer Anything have destabilized the music hardware sector, forcing manufacturers to respond to rapid community-driven modifications. Roland has remained silent on the trend, while other companies are increasingly embracing the modding community to maintain relevance. This shift indicates that open-source firmware and hardware schematics are becoming the default expectation for synthesizer development. Developers and audio engineers should audit third-party plugins and custom firmware for stability risks before deploying them in production environments. The industry is transitioning from closed proprietary systems to transparent, user-modifiable architectures.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 23 2026",
+            "headline": "OpenAI and Cisco Launch Shirudo Runtime",
+            "title": "OpenAI and Cisco Introduce Shirudo, an Open-Source Linux Runtime for Patch Protection",
+            "content": "OpenAI and Cisco introduced Shirudo, an open-source runtime for Linux designed to protect running systems while administrators deploy security patches. The tool isolates vulnerable processes during updates, reducing the window of exposure against active threats on enterprise servers. IT and DevOps teams can integrate Shirudo into existing Linux environments to harden critical infrastructure against patch-management attacks. Organizations should evaluate Shirudo for compatibility with current kernel versions and patch schedules. This release reflects a growing industry focus on secure, zero-downtime update strategies for cloud-native workloads.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+            "sourceUrl": "https://openai.com/index/introducing-shirudo",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Nemotron 3.5 Parse Boosts Inference Speed",
+            "title": "Hugging Face Details Nemotron 3.5 Parse Improvements in Open Data, Fine-Tuning, and Inference",
+            "content": "Hugging Face published technical details on Nemotron 3.5 Parse, highlighting optimizations in open data curation, fine-tuning pipelines, and faster inference throughput. The updates reduce latency for large language model (LLM) token generation and improve parsing accuracy across multilingual datasets. Developers integrating Nemotron 3.5 Parse into production APIs should benchmark latency against previous iterations to quantify performance gains. These refinements address growing demand for efficient, high-throughput natural language processing in enterprise applications. The release underscores the platform's push toward transparent, reproducible model training workflows.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "S&P Eyeing Nvidia AA- Credit Downgrade",
+            "title": "S&P Considers Downgrading Nvidia Credit Rating Over Governance and Key Man Risks",
+            "content": "Standard & Poor's (S&P) is evaluating a downgrade of Nvidia's credit rating to AA-, citing governance concerns and concentrated 'key man' executive risks. The potential cut reflects heightened scrutiny of leadership dependency and strategic decision-making within the semiconductor giant. Investors and enterprise procurement teams should review counterparty risk assessments and diversify supply chain dependencies accordingly. This move follows broader market volatility surrounding artificial intelligence (AI) chip demand fluctuations and executive turnover. The rating agency's review highlights how governance structures directly influence corporate creditworthiness in the technology sector.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Google My Channel Patent Rejected—AI Ads Loom",
+            "title": "Google's Rejected My Channel Patent Signals Automated Video and Ad Feeds Based on User Data",
+            "content": "Google filed a patent for My Channel, a system generating personalized AI videos and advertisements using user data, though the patent was recently rejected. The company may appeal or resubmit the application to secure intellectual property rights over automated entertainment feeds. This development threatens traditional content creators and advertisers by replacing human curation with algorithmic generation at scale. Industry observers note this aligns with broader tech trends toward hyper-personalized, synthetic media distribution. Security professionals should monitor Google's future filings for implications on data privacy and targeted advertising frameworks.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "ML Solves Classical Turbulence—Terabytes of Crowdsourced Data",
+            "title": "Machine Learning Tackles Classical Physics' Hardest Remaining Problem Using Crowdsourced Data",
+            "content": "Researchers applied machine learning (ML) and artificial intelligence (AI) to predict airplane turbulence, historically the hardest remaining problem in classical physics. The model ingested terabytes of crowdsourced atmospheric data to identify nonlinear patterns in airflow dynamics. This advancement threatens to reduce aviation delays and fuel consumption by enabling precise route adjustments for commercial carriers. The approach demonstrates how large-scale data aggregation can resolve previously intractable physical modeling challenges. Engineers should evaluate integrating similar ML pipelines into meteorological forecasting systems for operational flight planning.",
+            "source": "Feed: Artificial Intelligence Latest",
+            "sourceUrl": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "OpenAI Merges Chat and Work—Single Meter Triggers Limits",
+            "title": "OpenAI Unifies ChatGPT Chat and Work Experiences Under One Usage Meter, Prompting Earlier Caps",
+            "content": "OpenAI is merging the Chat and Work experiences within ChatGPT under a single usage meter, causing heavy users to encounter usage limits sooner than before. The unified system tracks token consumption across both consumer and enterprise workflows without distinguishing between casual queries and professional tasks. This change directly affects power users, developers, and enterprise subscribers who previously enjoyed separate quotas for each tier. The consolidation reflects OpenAI's strategy to streamline platform architecture as demand for generative AI services scales globally. Organizations should audit their current ChatGPT consumption patterns and budget for potential tier upgrades or API migration.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Jensen Huang Violated Nvidia Code—Employee Backlash Looms",
+            "title": "Nvidia CEO Jensen Huang Allegedly Broke Company Code of Conduct, Raising Internal Culture Concerns",
+            "content": "Nvidia CEO Jensen Huang reportedly violated the company's code of conduct, a breach that may erode trust among employees and impact corporate culture. Codes of conduct typically reflect organizational values, and violations at the executive level can trigger internal investigations or governance reviews. The incident arrives as Nvidia faces intense scrutiny over its market dominance and workplace practices across the semiconductor sector. Investors and engineering teams should monitor Nvidia's subsequent policy enforcement actions and any public disclosures regarding executive accountability. This event underscores the need for transparent leadership standards in high-stakes technology organizations.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Anthropic's Amodei Calls AI Control Accusations Absurd",
+            "title": "Anthropic CEO Dario Amodei Rejects Claims of Ceding Human Agency to AI Amid Industry Automation",
+            "content": "Anthropic CEO Dario Amodei dismissed accusations from rivals that he favors surrendering human agency to artificial intelligence (AI), even as leading labs automate internal research and model development. The pushback highlights an ongoing debate within the AI industry about the appropriate balance between autonomous systems and human oversight. Amodei's stance positions Anthropic against competitors pushing for greater machine autonomy in sensitive model training pipelines. The controversy may influence regulatory discussions on AI safety frameworks and human-in-the-loop requirements globally. Security leaders should track how automation trends affect model governance and the delegation of critical decision-making to AI systems.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
             "relatedResources": []
         },
         {
@@ -292,78 +364,6 @@ const websiteContent = {
             "source": "Artificial intelligence – MIT Technology Review",
             "sourceUrl": "https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Huang Rejects Succession Plan—Hierarchy Unnecessary, He Claims",
-            "title": "Jensen Huang Maintains That a Formal Succession Plan Creates Unnecessary Hierarchy at Nvidia",
-            "content": "Nvidia CEO Jensen Huang reiterated that establishing a formal succession plan creates unnecessary hierarchy within the company. This stance is notable given Nvidia's recent operational turbulence following a two-week period without its founder at the helm. The refusal to designate an immediate successor leaves the board with limited structural guidance for leadership transitions during Huang's tenure or eventual departure. Investors and enterprise clients should monitor Nvidia's governance disclosures for any shifts in this philosophy. The company's market position depends heavily on Huang's strategic direction, making succession planning a latent risk factor.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Huang Thanks White House—Apologizes to Staff, Enters Therapy",
-            "title": "Nvidia Founder Jensen Huang Thanks White House and Reveals He Is in Therapy",
-            "content": "Nvidia founder Jensen Huang addressed employees in an all-hands meeting, thanking the White House for support and disclosing that he is currently in therapy. He apologized to staff for recent leadership instability after a two-week absence tested the company's operational continuity. Huang stated he is grateful for a second chance to lead Nvidia through its current growth phase. Employees and partners should expect continued focus on AI chip supply chains and government relations following this public reassurance. The disclosure humanizes executive leadership but also underscores the psychological pressures facing founders of hyperscale AI vendors.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Top AI Agents Fail Everyday Tasks—Benchmark Exposes Reliability Gaps",
-            "title": "Even Leading AI Agents Struggle With Everyday Tasks, New Benchmark Reveals",
-            "content": "A new benchmark evaluating personal AI assistants shows that even the most advanced models fail to complete routine daily tasks reliably and safely. The assessment measured success rates across scheduling, home automation, and financial transactions, revealing high error rates and unintended side effects. Consumers and enterprise developers deploying these agents should implement strict human-in-the-loop validation and fallback protocols. The results indicate that current large language model (LLM) architectures lack the contextual grounding required for unsupervised real-world execution. As adoption grows, vendors must prioritize safety guardrails over raw capability expansion.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Maple Secures $5.3M for Encrypted AI Architecture",
-            "title": "Startup Maple Raises $5.3M to Build AI Products That Protect User Data From Internal Access",
-            "content": "Maple raised $5.3 million in funding to develop an encrypted artificial intelligence (AI) architecture that prevents the company itself from accessing private user data. The system employs client-side encryption and secure multi-party computation to ensure that even the platform's engineers cannot decrypt training inputs or inference outputs. This architecture targets enterprise clients handling sensitive personal information, offering a trust boundary that traditional cloud AI providers cannot match. The funding round underscores growing investor demand for privacy-preserving machine learning tools amid tightening global data protection regulations. Security teams should evaluate Maple's zero-knowledge proof protocols before integrating the platform into regulated workflows. Entities: Maple, encrypted AI, secure multi-party computation, zero-knowledge proof",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Huang Denies White House Role in His Nvidia Rehire",
-            "title": "Nvidia CEO Jensen Huang Tells Staff Trump Rehire Narrative Is False During All-Hands Meeting",
-            "content": "Nvidia Chief Executive Officer Jensen Huang addressed staff during his first all-hands meeting since returning to the company, stating that reports of White House intervention in his reappointment are untrue. Huang apologized for any confusion caused by his absence and sought to distance himself from narratives involving the Trump administration and fellow tech leaders. The remarks, reported by Bloomberg, The New York Times, and The Handbaske, aim to stabilize internal morale following leadership uncertainty. Nvidia employees and enterprise clients should monitor subsequent executive communications for strategic direction shifts. This episode reflects the heightened political scrutiny facing semiconductor executives in 2026. Entities: Nvidia, Jensen Huang, Trump, White House",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Anthropic Stock Slips Below IPO Pricing",
-            "title": "Anthropic Shares Fall Below Initial Public Offering Price, Signaling Startup Valuation Pressure",
-            "content": "Anthropic's shares traded below their initial public offering (IPO) price, marking a post-IPO valuation decline that raises concerns across the artificial intelligence startup sector. The slump indicates that public market investors are pricing in slower revenue growth or higher operational costs than previously projected. Competing AI startups and venture capital portfolios face renewed pressure to demonstrate clear monetization paths and sustainable unit economics. Analysts note this trend could trigger further down-rounds in late-stage private funding rounds throughout Q4 2026. Development teams should reassess infrastructure spending and prioritize cost-efficient model fine-tuning over speculative scaling. Entities: Anthropic, IPO, artificial intelligence startup",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Fincher Film Faces AI Use Backlash",
-            "title": "David Fincher Scrutinized for Suspected Generative AI Use in Brad Pitt Sequel",
-            "content": "Director David Fincher faces public backlash after early screenings of The Further Mis-Adventures of Cliff Booth raised suspicions that generative artificial intelligence (AI) produced visual effects or background elements. Audiences and industry observers noted inconsistencies in facial rendering and environmental textures that deviate from Fincher's established practical cinematography standards. The controversy threatens to erode trust among filmmakers and post-production vendors who oppose undisclosed AI integration in legacy studio workflows. Studios and VFX supervisors must implement transparent provenance tracking for all synthetic media assets to preempt similar disputes. Viewers and critics should demand clear disclosure of AI-assisted tools in future theatrical releases. Entities: David Fincher, The Further Mis-Adventures of Cliff Booth, Brad Pitt, generative AI, VFX",
-            "source": "The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/1041417/david-fincher-netflix-cliff-booth-ai-interpositive",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "UK Agency Warns AI Hacking Exploits Weak Security",
-            "title": "UK Cyber Agency Warns AI-Driven Attacks Expose Years of Weak Security Foundations",
-            "content": "The British cyber agency warned that artificial intelligence-driven attacks are exploiting years of weak security foundations across enterprise networks. The agency emphasized that \"building strong foundations has never mattered more\" as automated hacking tools systematically target unpatched vulnerabilities and misconfigured access controls. Threat actors leverage large language models (LLMs) to accelerate reconnaissance and craft highly convincing phishing campaigns against small and medium-sized businesses. Organizations with legacy infrastructure face the highest risk of rapid compromise and data exfiltration. Security teams must prioritize asset inventory, patch management, and multi-factor authentication (MFA) deployment immediately. Entities: UK cyber agency, artificial intelligence, large language models, phishing, multi-factor authentication",
-            "source": "TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/uk-warns-ai-driven-cyberattacks-are-exposing-years-of-weak-security/",
-            "relatedResources": []
         }
     ],
     "articles": {},
@@ -448,6 +448,116 @@ const websiteContent = {
         "terms": "<h2>Terms of Service</h2><p><em>Last Updated: November 2, 2025</em></p><h3>1. Acceptance of Terms</h3><p>By accessing and using TheHGTech website, you accept and agree to be bound by the terms and conditions of this agreement. If you do not agree to these terms, please do not use this website.</p><h3>2. Use License</h3><p>Permission is granted to temporarily access the materials (information or content) on TheHGTech for personal, non-commercial viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:</p><ul><li>Modify or copy the materials</li><li>Use the materials for any commercial purpose or for any public display</li><li>Attempt to reverse engineer any software contained on TheHGTech website</li><li>Remove any copyright or other proprietary notations from the materials</li><li>Transfer the materials to another person or mirror the materials on any other server</li></ul><h3>3. Content and Information</h3><p>The materials on TheHGTech are provided on an 'as is' basis. TheHGTech makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p><p>All content is sourced from third-party news publications and RSS feeds. We provide attribution and links to original sources. TheHGTech does not claim ownership of third-party content and respects all copyright holders.</p><h3>4. Limitations</h3><p>In no event shall TheHGTech or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on TheHGTech, even if TheHGTech or an authorized representative has been notified orally or in writing of the possibility of such damage.</p><h3>5. External Links</h3><p>TheHGTech has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by TheHGTech of the site. Use of any such linked website is at the user's own risk.</p><h3>6. Modifications</h3><p>TheHGTech may revise these terms of service at any time without notice. By using this website, you are agreeing to be bound by the current version of these terms of service.</p><h3>7. Governing Law</h3><p>These terms and conditions are governed by and construed in accordance with applicable laws, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p><p><em>If you have any questions about these Terms of Service, please contact us through our official channels.</em></p>"
     },
     "recentCVEs": [
+        {
+            "cveId": "CVE-2026-103406",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Hewlett Packard Enterprise (HPE) Juniper Session S",
+            "description": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133469",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Vates Xen Orchestra",
+            "description": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrati",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2025-41450",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Danfoss AK-SM 800A Series",
+            "description": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usern",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-25914",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Danfoss AK-SM 800A Series",
+            "description": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2023-25915",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Danfoss AK-SM 800A Series",
+            "description": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system.",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133324",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Mitel MiCollab",
+            "description": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133275",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Mitel MiCollab",
+            "description": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could al",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133311",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Mitel MiCollab",
+            "description": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133303",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Mitel MiCollab",
+            "description": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-st",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+            "isZeroDay": false
+        },
+        {
+            "cveId": "CVE-2026-133323",
+            "dateAdded": "Nov 25, 2026",
+            "vendor": "Mitel MiCollab",
+            "description": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could a",
+            "score": "HIGH",
+            "status": "Confirmed",
+            "source": "CISA KEV",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+            "isZeroDay": false
+        },
         {
             "cveId": "CVE-2026-132224",
             "dateAdded": "Nov 24, 2026",
