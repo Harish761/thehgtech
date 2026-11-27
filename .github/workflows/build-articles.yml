@@ -8,15 +8,20 @@ on:
       - 'articles/**'
       - '!articles/page/**'
       - 'guides/**'
+      - '!guides/index.html'
       - 'comparisons/**'
       - 'ioc-data/articles.json'
       - 'scripts/generate_pagination.py'
       - 'scripts/generate_cve_map.py'
       - 'scripts/generate_sitemaps_and_rss.py'
   schedule:
-    # Run daily at 03:00 UTC to prune Google News sitemap entries older than 48h
-    - cron: '0 3 * * *'
+    # Run daily at 03:17 UTC (jittered off top-of-hour; separated from hacker-chatter at 02:30)
+    - cron: '17 3 * * *'
   workflow_dispatch:
+
+concurrency:
+  group: main-repo-write
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -24,6 +29,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Loop-prevention guard: never re-trigger on build-articles' own commits
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, '[skip-articles-build]') }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,25 +39,56 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Generate Pagination
-        run: python scripts/generate_pagination.py
+        id: pagination
+        run: python3 scripts/generate_pagination.py
 
       - name: Generate CVE Cross-Link Map
-        run: python scripts/generate_cve_map.py
+        id: cve_map
+        run: python3 scripts/generate_cve_map.py
 
       - name: Generate Sitemaps and RSS
-        run: python scripts/generate_sitemaps_and_rss.py
+        id: sitemaps
+        run: python3 scripts/generate_sitemaps_and_rss.py
 
       - name: Commit and push changes
+        id: commit
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add articles.html index.html articles/page/ data/cve-mentions.json sitemap.xml news-sitemap.xml rss.xml
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
+          bash scripts/git_safe_commit.sh \
+            --name "github-actions[bot]" \
+            --email "41898282+github-actions[bot]@users.noreply.github.com" \
+            --message "chore: auto-build static articles and CVE map [skip-articles-build]" \
+            -- \
+            articles.html \
+            article-list.html \
+            articles-list.html \
+            index.html \
+            guides/index.html \
+            articles/page/ \
+            data/cve-mentions.json \
+            sitemap.xml \
+            news-sitemap.xml \
+            rss.xml
+
+      - name: Workflow Summary
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          PAGINATION_OUTCOME: ${{ steps.pagination.outcome }}
+          CVE_MAP_OUTCOME: ${{ steps.cve_map.outcome }}
+          SITEMAPS_OUTCOME: ${{ steps.sitemaps.outcome }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+        run: |
+          if [ "$JOB_STATUS" = "success" ]; then
+            echo "### ✅ Build Articles & CVE Map Succeeded" >> "$GITHUB_STEP_SUMMARY"
           else
-            git commit -m "chore: auto-build static articles and CVE map"
-            git pull --rebase origin main && git push
+            echo "### ❌ Build Articles & CVE Map Failed (status: $JOB_STATUS)" >> "$GITHUB_STEP_SUMMARY"
           fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Pagination:** \`$PAGINATION_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **CVE Cross-Link Map:** \`$CVE_MAP_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Sitemaps & RSS:** \`$SITEMAPS_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Commit & Push:** \`$COMMIT_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"

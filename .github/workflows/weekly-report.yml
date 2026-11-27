@@ -1,10 +1,13 @@
 name: Weekly Threat Report
 
+# Manual dispatch ONLY — scheduled Monday cron disabled to prevent automated
+# modal-only bot entries from bloating ioc-data/articles.json without review.
 on:
-  schedule:
-    # Run at 09:00 UTC every Monday
-    - cron: '0 9 * * 1'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
+
+concurrency:
+  group: main-repo-write
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -12,24 +15,43 @@ permissions:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        
-    - name: Run Report Generator
-      run: |
-        python3 scripts/legacy_tasks/generate_weekly_report.py
-        
-    - name: Commit and Push Report
-      run: |
-        git config --global user.name 'TheHGTech Bot'
-        git config --global user.email 'bot@thehgtech.com'
-        git add ioc-data/articles.json
-        git commit -m "content: Auto-generated weekly threat report" || exit 0
-        git pull --rebase origin main && git push
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Report Generator
+        id: generate
+        run: python3 scripts/legacy_tasks/generate_weekly_report.py
+
+      - name: Commit and Push Report
+        id: commit
+        run: |
+          bash scripts/git_safe_commit.sh \
+            --name "github-actions[bot]" \
+            --email "41898282+github-actions[bot]@users.noreply.github.com" \
+            --message "content: Generated weekly threat report" \
+            -- \
+            ioc-data/articles.json
+
+      - name: Workflow Summary
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          GENERATE_OUTCOME: ${{ steps.generate.outcome }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+        run: |
+          if [ "$JOB_STATUS" = "success" ]; then
+            echo "### ✅ Weekly Threat Report Succeeded" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ❌ Weekly Threat Report Failed (status: $JOB_STATUS)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Report Generator:** \`$GENERATE_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Commit & Push:** \`$COMMIT_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"

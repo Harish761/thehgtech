@@ -28,8 +28,9 @@ client = None
 # CISA Known Exploited Vulnerabilities Catalog
 CISA_KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
 
-# Content Index for Internal Linking
-CONTENT_INDEX_FILE = 'content-index.json'
+# Content Index for Internal Linking (canonical location under ioc-data/)
+CONTENT_INDEX_FILE = 'ioc-data/content-index.json'
+CONTENT_INDEX_FALLBACKS = ('ioc-data/content-index.json', 'content-index.json')
 
 def load_content_index():
     """
@@ -37,12 +38,13 @@ def load_content_index():
     Returns the content index dict or None if not found.
     """
     try:
-        if os.path.exists(CONTENT_INDEX_FILE):
-            with open(CONTENT_INDEX_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        else:
-            print(f"   ⚠️ Content index not found: {CONTENT_INDEX_FILE}")
-            return None
+        candidates = [CONTENT_INDEX_FILE] + [p for p in CONTENT_INDEX_FALLBACKS if p != CONTENT_INDEX_FILE]
+        for candidate in candidates:
+            if os.path.exists(candidate):
+                with open(candidate, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        print(f"   ⚠️ Content index not found in: {', '.join(candidates)}")
+        return None
     except Exception as e:
         print(f"   ⚠️ Error loading content index: {e}")
         return None

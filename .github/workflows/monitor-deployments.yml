@@ -1,0 +1,46 @@
+name: Monitor Deployments & Workflow Health
+
+on:
+  schedule:
+    # Read-only health check every 4 hours at :47 UTC (non-overlapping with all feed crons)
+    - cron: '47 */4 * * *'
+  workflow_dispatch:
+    inputs:
+      max_lag_minutes:
+        description: 'Maximum allowed Pages deployment lag in minutes'
+        required: false
+        default: '25'
+        type: string
+
+concurrency:
+  group: monitor-deployments
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  actions: read
+  deployments: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check Pages Deployment Freshness & Workflow Health
+        id: monitor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_LAG: ${{ github.event.inputs.max_lag_minutes || '25' }}
+        run: |
+          python3 scripts/check_deployment_freshness.py \
+            --repo "${{ github.repository }}" \
+            --max-lag-minutes "$MAX_LAG" \
+            --site-url "https://thehgtech.com"

@@ -195,69 +195,99 @@ def classify_technique_severity(name):
 # AI Incident Database Fetcher
 # ──────────────────────────────────────────────────────────────
 def fetch_aiid_incidents():
-    """Fetch AI incidents from AIID GraphQL API"""
+    """
+    Fetch AI incidents from AIID GraphQL API when credentials are available,
+    gracefully handling AIID's API_LOGIN_REQUIRED / HTTP 401/403 authentication gate
+    without attempting to bypass access controls.
+    """
     print("  - Fetching AI Incident Database...")
-    
-    # GraphQL query to get all incidents
+
     query = """
-    query {
+    query GetIncidents {
         incidents {
             incident_id
             title
+            date
             date_modified
         }
     }
     """
-    
+
+    headers = {
+        'Content-Type': 'application/json',
+        'User-Agent': 'TheHGTech-AISecurityTracker/1.0',
+        'Origin': 'https://incidentdatabase.ai',
+        'Referer': 'https://incidentdatabase.ai/'
+    }
+    aiid_token = os.environ.get('AIID_API_TOKEN', '').strip()
+    if aiid_token:
+        headers['Authorization'] = f'Bearer {aiid_token}'
+
     try:
         response = requests.post(
             AI_DATA_SOURCES["AI Incidents"]["url"],
             json={"query": query},
-            headers={
-                'Content-Type': 'application/json',
-                'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-                'Origin': 'https://incidentdatabase.ai',
-                'Referer': 'https://incidentdatabase.ai/'
-            },
+            headers=headers,
             timeout=60
         )
+
+        if response.status_code in (401, 403):
+            print(f"    ℹ️ AIID GraphQL endpoint requires authentication (HTTP {response.status_code}); preserving cached/degraded status.")
+            return {
+                'incidents': [],
+                'stats': {'total': 0, 'last7Days': 0, 'last30Days': 0},
+                'status': 'auth_required',
+                'sourceUrl': AI_DATA_SOURCES["AI Incidents"]["website"],
+                'lastUpdated': get_ist_now().isoformat()
+            }
+
         response.raise_for_status()
-        
         data = response.json()
-        
+
         if 'errors' in data:
-            print(f"    ⚠ GraphQL errors: {data['errors']}")
-            return None
-        
-        incidents = data.get('data', {}).get('incidents', [])
-        
-        # Filter to last 90 days
+            err_text = json.dumps(data['errors'])
+            status_label = 'auth_required' if 'API_LOGIN_REQUIRED' in err_text else 'upstream_error'
+            print(f"    ⚠ AIID GraphQL returned errors ({status_label}): {data['errors']}")
+            return {
+                'incidents': [],
+                'stats': {'total': 0, 'last7Days': 0, 'last30Days': 0},
+                'status': status_label,
+                'sourceUrl': AI_DATA_SOURCES["AI Incidents"]["website"],
+                'lastUpdated': get_ist_now().isoformat()
+            }
+
+        incidents = data.get('data', {}).get('incidents', []) or []
+
         now = get_ist_now()
         cutoff = now - timedelta(days=90)
-        
+
         recent_incidents = []
         for incident in incidents:
             try:
-                date_str = incident.get('date_modified', '')
-                if date_str:
+                date_str = incident.get('date_modified') or incident.get('date') or ''
+                if not date_str:
+                    continue
+                if len(date_str) == 10:
+                    incident_date = datetime.strptime(date_str, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+                else:
                     incident_date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
-                    if incident_date >= cutoff:
-                        recent_incidents.append({
-                            'id': f"AIID-{incident.get('incident_id', 0)}",
-                            'incident_id': incident.get('incident_id'),
-                            'title': incident.get('title', '')[:100],
-                            'date': incident_date.strftime('%Y-%m-%d'),
-                            'category': categorize_incident(incident.get('title', '')),
-                            'severity': classify_incident_severity(incident.get('title', ''))
-                        })
-            except Exception as e:
+                    if incident_date.tzinfo is None:
+                        incident_date = incident_date.replace(tzinfo=timezone.utc)
+                if incident_date >= cutoff:
+                    recent_incidents.append({
+                        'id': f"AIID-{incident.get('incident_id', 0)}",
+                        'incident_id': incident.get('incident_id'),
+                        'title': incident.get('title', '')[:100],
+                        'date': incident_date.strftime('%Y-%m-%d'),
+                        'category': categorize_incident(incident.get('title', '')),
+                        'severity': classify_incident_severity(incident.get('title', ''))
+                    })
+            except Exception:
                 continue
-        
-        # Sort by date (newest first)
+
         recent_incidents.sort(key=lambda x: x['date'], reverse=True)
-        
         print(f"    ✓ Got {len(recent_incidents)} incidents (last 90 days)")
-        
+
         return {
             'incidents': recent_incidents,
             'stats': {
@@ -265,9 +295,11 @@ def fetch_aiid_incidents():
                 'last7Days': len([i for i in recent_incidents if is_within_days(i['date'], 7)]),
                 'last30Days': len([i for i in recent_incidents if is_within_days(i['date'], 30)])
             },
+            'status': 'active',
+            'sourceUrl': AI_DATA_SOURCES["AI Incidents"]["website"],
             'lastUpdated': get_ist_now().isoformat()
         }
-        
+
     except Exception as e:
         print(f"    ✗ Failed to fetch AIID: {e}")
         return None
@@ -494,21 +526,33 @@ def fetch_all_ai_data():
     return ai_data
 
 def save_ai_data(ai_data, output_dir='ioc-data'):
-    """Save AI data to JSON files"""
+    """Save AI data to JSON files while preserving populated Last-Known-Good datasets."""
     os.makedirs(output_dir, exist_ok=True)
     
     if ai_data.get('atlas'):
-        with open(f'{output_dir}/mitre-atlas.json', 'w') as f:
+        with open(f'{output_dir}/mitre-atlas.json', 'w', encoding='utf-8') as f:
             json.dump(ai_data['atlas'], f, indent=2)
         print(f"  ✓ Saved {output_dir}/mitre-atlas.json")
     
     if ai_data.get('aiid'):
-        with open(f'{output_dir}/aiid-incidents.json', 'w') as f:
-            json.dump(ai_data['aiid'], f, indent=2)
-        print(f"  ✓ Saved {output_dir}/aiid-incidents.json")
+        aiid_path = f'{output_dir}/aiid-incidents.json'
+        aiid_payload = ai_data['aiid']
+        # Never overwrite a populated cached aiid-incidents.json with an empty auth_required stub
+        if not aiid_payload.get('incidents') and os.path.exists(aiid_path):
+            try:
+                existing = json.load(open(aiid_path, 'r', encoding='utf-8'))
+                if existing.get('incidents'):
+                    print(f"  ℹ️ Preserving populated {aiid_path} ({len(existing['incidents'])} incidents)")
+                    aiid_payload = None
+            except Exception:
+                pass
+        if aiid_payload is not None:
+            with open(aiid_path, 'w', encoding='utf-8') as f:
+                json.dump(aiid_payload, f, indent=2)
+            print(f"  ✓ Saved {aiid_path} (status={aiid_payload.get('status', 'active')})")
     
     if ai_data.get('owasp'):
-        with open(f'{output_dir}/owasp-llm-top10.json', 'w') as f:
+        with open(f'{output_dir}/owasp-llm-top10.json', 'w', encoding='utf-8') as f:
             json.dump(ai_data['owasp'], f, indent=2)
         print(f"  ✓ Saved {output_dir}/owasp-llm-top10.json")
 

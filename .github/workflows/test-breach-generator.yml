@@ -1,17 +1,31 @@
 name: Test Breach Article Generator
 
 on:
-  workflow_dispatch:  # Manual trigger only for testing
+  workflow_dispatch:  # Manual trigger only for local/artifact testing
+
+concurrency:
+  group: main-repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Verify Generator Script Dependency
+        id: check_script
+        run: |
+          if [ ! -f scripts/legacy_tasks/test_breach_generator.py ]; then
+            echo "❌ Dependency Missing: scripts/legacy_tasks/test_breach_generator.py does not exist in this repository."
+            echo "Restore the generator script before running this manual test workflow."
+            exit 1
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,29 +36,23 @@ jobs:
         run: pip install openai requests beautifulsoup4 lxml
 
       - name: Run Breach Generator
+        id: generate
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python scripts/legacy_tasks/test_breach_generator.py
-
-      - name: Commit Generated Article
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add test_breach_output.html || true
-          git diff --quiet && git diff --staged --quiet || \
-            git commit -m "🧪 Test: Generated breach article [$(date -u '+%Y-%m-%d %H:%M')] UTC"
-          git pull --rebase origin main && git push
+        run: python3 scripts/legacy_tasks/test_breach_generator.py
 
       - name: Summary
         if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          CHECK_OUTCOME: ${{ steps.check_script.outcome }}
+          GENERATE_OUTCOME: ${{ steps.generate.outcome }}
         run: |
-          echo "### 🧪 Breach Article Generator Test" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ -f test_breach_output.html ]; then
-            CHARS=$(wc -c < test_breach_output.html)
-            echo "✅ Article generated: $CHARS characters" >> $GITHUB_STEP_SUMMARY
-            echo "" >> $GITHUB_STEP_SUMMARY
-            echo "📄 View output: https://thehgtech.com/test_breach_output.html" >> $GITHUB_STEP_SUMMARY
+          if [ "$JOB_STATUS" = "success" ]; then
+            echo "### ✅ Breach Article Generator Test Succeeded" >> "$GITHUB_STEP_SUMMARY"
+            echo "Output generated locally in runner workspace (not committed to production main)." >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "❌ No output generated" >> $GITHUB_STEP_SUMMARY
+            echo "### ❌ Breach Article Generator Test Failed (status: $JOB_STATUS)" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Dependency Check:** \`$CHECK_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Generator Step:** \`$GENERATE_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
           fi

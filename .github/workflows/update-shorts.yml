@@ -6,7 +6,7 @@ on:
     - cron: '30 0 * * *'
     # Evening run: 6 PM IST = 12:30 UTC
     - cron: '30 12 * * *'
-  
+
   # Allow manual trigger from GitHub Actions tab
   workflow_dispatch:
 
@@ -22,51 +22,76 @@ permissions:
 jobs:
   update-content:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests openai beautifulsoup4 pytz
-      
+
       - name: Run content update script
+        id: update_shorts
         env:
           SARVAM_API_KEY: ${{ secrets.SARVAM_API_KEY }}
           SARVAM_MODEL: ${{ vars.SARVAM_MODEL || 'sarvam-105b' }}
         run: |
           python scripts/legacy_tasks/update_shorts.py
-      
+
       - name: Commit and push changes
+        id: commit
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # Check if there are changes
+
           if git diff --quiet content.js; then
             echo "No changes to commit"
             exit 0
           fi
-          
-          # Commit with timestamp
+
           git add content.js
           git commit -m "🤖 Auto-update: TheHGTech shorts + CVEs - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase origin main && git push
-      
+          pushed=false
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              pushed=true
+              echo "✅ Successfully pushed content.js to main"
+              break
+            fi
+            if [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; then
+              git rebase --abort || true
+            fi
+            echo "⚠️ Push failed (attempt $i/5), retrying in $((i * 3))s..."
+            sleep $((i * 3))
+          done
+          if [ "$pushed" != "true" ]; then
+            echo "❌ CRITICAL: Failed to push content.js after 5 attempts."
+            exit 1
+          fi
+
       - name: Summary
         if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          UPDATE_OUTCOME: ${{ steps.update_shorts.outcome }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
         run: |
-          echo "### 🎉 TheHGTech Content Update Complete" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Mode**: RSS + Sarvam AI API (sarvam-105b) + CISA CVE" >> $GITHUB_STEP_SUMMARY
-          echo "- **Time**: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "- **Status**: ✅ Success" >> $GITHUB_STEP_SUMMARY
+          if [ "$JOB_STATUS" = "success" ]; then
+            echo "### ✅ TheHGTech Shorts Update Succeeded" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ❌ TheHGTech Shorts Update Failed (status: $JOB_STATUS)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Mode:** RSS + Sarvam AI API (sarvam-105b) + CISA CVE" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Content Update:** \`$UPDATE_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Commit & Push:** \`$COMMIT_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
