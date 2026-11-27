@@ -1,12 +1,12 @@
 {
   "vendor": "SSL Blacklist",
-  "lastUpdated": "2026-11-27T06:00:03.688871+05:30",
-  "totalCount": 10928,
-  "displayedCount": 10928,
+  "lastUpdated": "2026-11-27T07:23:04.121198+05:30",
+  "totalCount": 10918,
+  "displayedCount": 10918,
   "isCapped": false,
   "cappingStrategy": null,
-  "isStale": false,
-  "feedStatus": "active",
+  "isStale": true,
+  "feedStatus": "stale",
   "iocs": [
     {
       "type": "ssl-cert",
@@ -2181,176 +2181,6 @@
         "c2"
       ],
       "addedAt": "2026-11-21T05:36:51.814753+05:30",
-      "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "c197cc60215219ca6d3781953e16ed060be8ed9a",
-      "description": "Malicious SSL certificate - ACRStealer C&C",
-      "timestamp": "2026-11-12 09:40:02",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "ACRStealer",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "5961621983c7a3175a43032505457983fd0422f5",
-      "description": "Malicious SSL certificate - ACRStealer C&C",
-      "timestamp": "2026-11-12 09:38:17",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "ACRStealer",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "206699fd6ec97741dcdfe7d8ff2a066f1788a3f7",
-      "description": "Malicious SSL certificate - ConnectWise C&C",
-      "timestamp": "2026-11-12 09:33:43",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "ConnectWise",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "0f01c1b3f102f81f42772aed3893c2c9e0f48fb7",
-      "description": "Malicious SSL certificate - ACRStealer C&C",
-      "timestamp": "2026-11-12 09:09:12",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "ACRStealer",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "8850bca458b507876f7d39297d44bdb1634ba915",
-      "description": "Malicious SSL certificate - PureLogsStealer C&C",
-      "timestamp": "2026-11-12 09:05:56",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "PureLogsStealer",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "2d5618f557611ad38b3addcb60b3e7424006b79b",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-11-12 09:05:33",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "7cf49de496a65869f8cf0c0b6a12c6fa5ab1c70f",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-11-12 09:04:22",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "d81ba5307163e9ab6460623840036fff7d856104",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-11-12 09:00:57",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "3c9cf61da071dea44abcb047a6290104588fb791",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-11-12 09:00:22",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
-      "campaign": "Vidar",
-      "confidence": "High"
-    },
-    {
-      "type": "ssl-cert",
-      "indicator": "dc26a2f39a41b1f6341aea0fb4cdbe57ff564917",
-      "description": "Malicious SSL certificate - Vidar C&C",
-      "timestamp": "2026-11-12 07:31:43",
-      "source": "SSL Blacklist",
-      "sourceUrl": "https://sslbl.abuse.ch/",
-      "analysisTime": "2026-11-27 06:00 IST",
-      "tags": [
-        "ssl",
-        "certificate",
-        "c2"
-      ],
-      "addedAt": "2026-11-20T06:19:15.828445+05:30",
       "campaign": "Vidar",
       "confidence": "High"
     },
