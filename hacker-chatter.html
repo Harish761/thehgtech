@@ -809,8 +809,8 @@
             <i class="fas fa-search"></i>
             <input type="text" id="searchInput" class="search-input" placeholder="Search by victim company, threat actor, or keyword...">
         </div>
-        <div style="display: flex; align-items: center; background: var(--bg-card); padding: 0 1rem; border-radius: 12px; border: 1px solid var(--border);">
-            <span style="font-size: 0.85rem; color: var(--text-muted);">Database Size: <span id="dbSize" style="color:var(--accent-chatter-light); font-weight:700;">Loading...</span> Incidents</span>
+        <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; background: var(--bg-card); padding: 0.4rem 1rem; border-radius: 12px; border: 1px solid var(--border);">
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Archive: <span id="dbSize" style="color:var(--accent-chatter-light); font-weight:700;">Loading...</span> Incidents <span id="previewMeta" style="font-size:0.78rem; color:var(--text-muted);"></span></span>
         </div>
     </div>
 
@@ -957,31 +957,57 @@
             const tableBody = document.getElementById('tableBody');
             const searchInput = document.getElementById('searchInput');
             const dbSize = document.getElementById('dbSize');
+            const previewMeta = document.getElementById('previewMeta');
             
             let incidentsData = [];
 
             try {
-                // Fetch both datasets concurrently
+                // Fetch lightweight <50KB recent preview alongside HIBP reference concurrently
                 const [incidentRes, hibpRes] = await Promise.all([
-                    fetch('data/hacker-chatter.json'),
-                    fetch('ioc-data/verified-breaches.json').catch(() => null)
+                    fetch('data/hacker-chatter-recent.json'),
+                    fetch('ioc-data/verified-breaches.json', { priority: 'low' }).catch(() => null)
                 ]);
                 
-                if (!incidentRes.ok) throw new Error('Data file not found');
+                if (!incidentRes.ok) throw new Error('Recent chatter preview unavailable (HTTP ' + incidentRes.status + ')');
                 const rawData = await incidentRes.json();
+                if (!rawData || typeof rawData !== 'object') throw new Error('Malformed chatter preview');
                 
                 if (hibpRes && hibpRes.ok) {
                     hibpData = await hibpRes.json();
                 }
                 
-                incidentsData = rawData.incidents || [];
-                dbSize.textContent = incidentsData.length;
-                
-                renderTable(incidentsData);
+                incidentsData = Array.isArray(rawData.incidents) ? rawData.incidents : [];
+                const totalArchive = Number(rawData.total_incidents || incidentsData.length);
+                dbSize.textContent = totalArchive.toLocaleString();
+
+                if (previewMeta) {
+                    let metaParts = [];
+                    if (totalArchive > incidentsData.length && incidentsData.length > 0) {
+                        metaParts.push(`showing ${incidentsData.length} most recent`);
+                    }
+                    if (rawData.last_updated) {
+                        const updatedDt = new Date(rawData.last_updated);
+                        if (!isNaN(updatedDt.getTime())) {
+                            const ageHours = (Date.now() - updatedDt.getTime()) / (1000 * 60 * 60);
+                            if (ageHours > 72) {
+                                metaParts.push('feed sync delayed');
+                            }
+                        }
+                    }
+                    previewMeta.textContent = metaParts.length ? `(${metaParts.join(' · ')})` : '';
+                }
+
+                if (incidentsData.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:3rem; color:var(--text-muted);">No recent incidents are currently available in the feed preview. Please check back after the next OSINT sync.</td></tr>`;
+                } else {
+                    renderTable(incidentsData);
+                }
                 
             } catch (error) {
                 console.error("Error loading data:", error);
-                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; color: var(--accent-danger);">Could not load breach database. Please try again later.</td></tr>`;
+                if (dbSize) dbSize.textContent = 'Unavailable';
+                if (previewMeta) previewMeta.textContent = '';
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:3rem; color: var(--accent-danger);">Recent breach chatter preview is temporarily unavailable. Please try again shortly.</td></tr>`;
             }
 
             // Search logic
@@ -990,6 +1016,7 @@
                 const filtered = incidentsData.filter(incident => {
                     return (incident.victim_name && incident.victim_name.toLowerCase().includes(query)) ||
                            (incident.threat_actor && incident.threat_actor.toLowerCase().includes(query)) ||
+                           (incident.industry && incident.industry.toLowerCase().includes(query)) ||
                            (incident.claim && incident.claim.toLowerCase().includes(query));
                 });
                 renderTable(filtered);

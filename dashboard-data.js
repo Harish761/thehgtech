@@ -80,13 +80,14 @@ class ThreatDashboard {
                 }
             });
         } else {
-            // Normal calculation from detailed IOC data
+            // Normal calculation from detailed IOC data (respecting full source totalCount on capped previews)
             Object.values(this.data).forEach(vendorData => {
                 const vendor = vendorData.vendor;
                 const iocs = vendorData.iocs || [];
+                const fullCount = Number(vendorData.totalCount || iocs.length);
 
-                byVendor[vendor] = iocs.length;
-                totalIOCs += iocs.length;
+                byVendor[vendor] = fullCount;
+                totalIOCs += fullCount;
 
                 // Process each IOC
                 iocs.forEach(ioc => {

@@ -34,6 +34,21 @@ jobs:
         id: fetch_hibp
         run: python3 scripts/fetch_hibp_data.py
 
+      - name: Validate Hacker Chatter Archive & Preview
+        id: validate_chatter
+        run: |
+          python3 -c "
+          import json, os
+          src = json.load(open('data/hacker-chatter.json', encoding='utf-8'))
+          prv_path = 'data/hacker-chatter-recent.json'
+          prv_size = os.path.getsize(prv_path)
+          prv = json.load(open(prv_path, encoding='utf-8'))
+          assert prv_size < 51200, f'Preview exceeds 50 KB: {prv_size} bytes'
+          assert len(src.get('incidents', [])) >= len(prv.get('incidents', [])) > 0
+          assert prv.get('total_incidents') == len(src.get('incidents', []))
+          print(f'✅ Validated archive ({len(src[\"incidents\"])} incidents) and preview ({len(prv[\"incidents\"])} incidents, {prv_size/1024:.1f} KB)')
+          "
+
       - name: Commit changes
         id: commit
         run: |
@@ -43,6 +58,7 @@ jobs:
             --message "🕵️ Update Hacker Chatter & HIBP DB - $(date -u '+%Y-%m-%d %H:%M UTC')" \
             -- \
             data/hacker-chatter.json \
+            data/hacker-chatter-recent.json \
             ioc-data/verified-breaches.json
 
       - name: Summary
@@ -51,6 +67,7 @@ jobs:
           JOB_STATUS: ${{ job.status }}
           CHATTER_OUTCOME: ${{ steps.fetch_chatter.outcome }}
           HIBP_OUTCOME: ${{ steps.fetch_hibp.outcome }}
+          VALIDATE_OUTCOME: ${{ steps.validate_chatter.outcome }}
           COMMIT_OUTCOME: ${{ steps.commit.outcome }}
         run: |
           if [ "$JOB_STATUS" = "success" ]; then
@@ -62,4 +79,5 @@ jobs:
           echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> "$GITHUB_STEP_SUMMARY"
           echo "- **OSINT Fetch:** \`$CHATTER_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **HIBP Fetch:** \`$HIBP_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Payload Validation:** \`$VALIDATE_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Commit & Push:** \`$COMMIT_OUTCOME\`" >> "$GITHUB_STEP_SUMMARY"

@@ -391,7 +391,7 @@ class TestThreatIntelPipeline(unittest.TestCase):
             self.assertEqual(getattr(res_expired, 'feed_status', ''), 'stale')
 
     def test_save_vendor_json_files_never_replaces_populated_with_empty(self):
-        """Verify save_vendor_json_files refuses to overwrite populated file with empty dataset on feed failure"""
+        """Verify save_vendor_json_files refuses to overwrite populated source/preview with empty dataset on feed failure"""
         import tempfile
         import json
 
@@ -399,7 +399,11 @@ class TestThreatIntelPipeline(unittest.TestCase):
             orig_cwd = os.getcwd()
             try:
                 os.chdir(tmpdir)
-                with open('malware-bazaar.json', 'w', encoding='utf-8') as f:
+                os.makedirs('data/ioc-source', exist_ok=True)
+                os.makedirs('ioc-data', exist_ok=True)
+                source_file = os.path.join('data', 'ioc-source', 'malware-bazaar.json')
+                preview_file = os.path.join('ioc-data', 'malware-bazaar.json')
+                with open(source_file, 'w', encoding='utf-8') as f:
                     json.dump({'vendor': 'Malware Bazaar', 'iocs': [{'indicator': 'existing_hash'}]}, f)
 
                 vendors_data = {
@@ -416,18 +420,19 @@ class TestThreatIntelPipeline(unittest.TestCase):
                 }
                 save_vendor_json_files(vendors_data)
 
-                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
+                with open(source_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
-                self.assertGreater(len(data.get('iocs', [])), 0, "Populated file must not be replaced with empty dataset")
+                self.assertGreater(len(data.get('iocs', [])), 0, "Populated source file must not be replaced with empty dataset")
 
                 # Test stale indicators output semantics
                 stale_iocs = [{'indicator': 'stale_hash', 'addedAt': '2026-10-15T00:00:00Z'}]
                 vendors_data['Malware Bazaar']['iocs'] = stale_iocs
                 save_vendor_json_files(vendors_data)
-                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
-                    stale_data = json.load(f)
-                self.assertTrue(stale_data.get('isStale'), "Preserved LKG with indicators > 7 days must be marked isStale=True")
-                self.assertEqual(stale_data.get('feedStatus'), 'stale', "Stale feed must have feedStatus='stale'")
+                for target in (source_file, preview_file):
+                    with open(target, 'r', encoding='utf-8') as f:
+                        stale_data = json.load(f)
+                    self.assertTrue(stale_data.get('isStale'), f"{target}: Preserved LKG with indicators > 7 days must be marked isStale=True")
+                    self.assertEqual(stale_data.get('feedStatus'), 'stale', f"{target}: Stale feed must have feedStatus='stale'")
 
                 # Test fresh indicators output semantics
                 from datetime import datetime, timezone
@@ -436,10 +441,11 @@ class TestThreatIntelPipeline(unittest.TestCase):
                 vendors_data['Malware Bazaar']['isStale'] = False
                 vendors_data['Malware Bazaar']['feedStatus'] = 'active'
                 save_vendor_json_files(vendors_data)
-                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
-                    fresh_data = json.load(f)
-                self.assertFalse(fresh_data.get('isStale'), "Fresh feed must have isStale=False")
-                self.assertEqual(fresh_data.get('feedStatus'), 'active', "Fresh feed must have feedStatus='active'")
+                for target in (source_file, preview_file):
+                    with open(target, 'r', encoding='utf-8') as f:
+                        fresh_data = json.load(f)
+                    self.assertFalse(fresh_data.get('isStale'), f"{target}: Fresh feed must have isStale=False")
+                    self.assertEqual(fresh_data.get('feedStatus'), 'active', f"{target}: Fresh feed must have feedStatus='active'")
 
                 # Test fetch-level stale outcome with retained unexpired LKG indicators
                 unexpired_lkg = [{'indicator': 'lkg_hash', 'addedAt': datetime.now(timezone.utc).isoformat()}]
@@ -447,10 +453,11 @@ class TestThreatIntelPipeline(unittest.TestCase):
                 vendors_data['Malware Bazaar']['isStale'] = True
                 vendors_data['Malware Bazaar']['feedStatus'] = 'stale'
                 save_vendor_json_files(vendors_data)
-                with open('malware-bazaar.json', 'r', encoding='utf-8') as f:
-                    outage_lkg_data = json.load(f)
-                self.assertTrue(outage_lkg_data.get('isStale'), "Fetch-level stale outcome must be honored even if LKG indicators have recent timestamps")
-                self.assertEqual(outage_lkg_data.get('feedStatus'), 'stale')
+                for target in (source_file, preview_file):
+                    with open(target, 'r', encoding='utf-8') as f:
+                        outage_lkg_data = json.load(f)
+                    self.assertTrue(outage_lkg_data.get('isStale'), f"{target}: Fetch-level stale outcome must be honored even if LKG indicators have recent timestamps")
+                    self.assertEqual(outage_lkg_data.get('feedStatus'), 'stale')
             finally:
                 os.chdir(orig_cwd)
 

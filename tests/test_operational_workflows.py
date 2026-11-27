@@ -93,10 +93,17 @@ class TestOperationalWorkflowsBatch2A(unittest.TestCase):
     def test_04_threat_intel_copy_order_and_monitor_import(self):
         ti_text = (self.wf_dir / "threat-intel.yml").read_text(encoding="utf-8")
         self.assertNotIn("cp *.json ioc-data/", ti_text, "Blind `cp *.json ioc-data/` must be removed")
+        self.assertNotIn('mv -f "$vendor_file" "ioc-data/$vendor_file"', ti_text, "Root mv sync must be removed in favor of separated source/preview writes")
         self.assertIn("sys.path.insert(0, 'scripts/legacy_tasks')", ti_text)
+        self.assertIn("--skip-previews", ti_text)
+        self.assertIn("--build-previews-only", ti_text)
         self.assertLess(
-            ti_text.index("Sync Vendor IOC Files"),
+            ti_text.index("--skip-previews"),
             ti_text.index("Enrich CVE Data (Dual Source"),
+        )
+        self.assertLess(
+            ti_text.index("Enrich CVE Data with EPSS Scores"),
+            ti_text.index("--build-previews-only"),
         )
 
     def test_05_git_safe_commit_script_handles_concurrent_push_and_unstaged_files(self):

@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.join(script_dir, 'legacy_tasks'))
 import fetch_threat_intel
 
 WORKTREE_ROOT = os.path.abspath(os.path.join(script_dir, '..'))
+IOC_SOURCE_DIR = os.path.join(WORKTREE_ROOT, 'data', 'ioc-source')
 IOC_DIR = os.path.join(WORKTREE_ROOT, 'ioc-data')
 OUTPUT_FILE = os.path.join(WORKTREE_ROOT, 'threat-intel.js')
 
@@ -68,7 +69,8 @@ def build_snapshot():
     vendors_data = {}
     
     for vendor_name, filename in VENDOR_FILE_MAP.items():
-        filepath = os.path.join(IOC_DIR, filename)
+        source_path = os.path.join(IOC_SOURCE_DIR, filename)
+        filepath = source_path if os.path.exists(source_path) else os.path.join(IOC_DIR, filename)
         config = fetch_threat_intel.VENDORS.get(vendor_name, {})
         if os.path.exists(filepath):
             with open(filepath, 'r', encoding='utf-8') as f:

@@ -8,7 +8,7 @@
      1. CVE Triage Workbench (cve-data.json)
      2. Threat Intel & SIEM Feeds (threat-intel-history.json)
      3. Ransomware Leak Monitor (ransomware-data.json)
-     4. Hacker Chatter OSINT DB (stream-head inspect of data/hacker-chatter.json + fallback)
+     4. Hacker Chatter OSINT DB (lightweight <50KB data/hacker-chatter-recent.json preview + fallback)
      5. Zero-Day Stack Exposure Checker (live vendor exposure index + inline stack check)
      6. ISO 27001:2022 GRC Readiness Engine (93 Annex A controls across 4 domains)
      7. n8n Security & SOAR Workflows (workflows/workflows.json)
@@ -817,47 +817,27 @@
         }
     }
 
-    // Tool 4: Lightweight <12KB Stream-Head Reader for data/hacker-chatter.json (avoids 21MB full download)
+    // Tool 4: Lightweight <50KB Preview Reader for data/hacker-chatter-recent.json (avoids 21MB archive download)
     async function hydrateHackerChatterHead() {
-        const controller = new AbortController();
         try {
-            const res = await fetch('data/hacker-chatter.json', { signal: controller.signal });
-            if (!res.ok || !res.body) return;
+            const res = await fetch('data/hacker-chatter-recent.json', { priority: 'low' });
+            if (!res.ok) return;
 
-            const reader = res.body.getReader();
-            const decoder = new TextDecoder();
-            let headChunk = '';
+            const payload = await res.json();
+            if (!payload || typeof payload !== 'object') return;
 
-            while (headChunk.length < 12000) {
-                const { value, done } = await reader.read();
-                if (value) headChunk += decoder.decode(value, { stream: true });
-                if (done) break;
-            }
-            try { await reader.cancel(); } catch (_) { /* ignore */ }
-            controller.abort();
-
-            const totalMatch = headChunk.match(/"total_incidents"\s*:\s*(\d+)/);
-            if (totalMatch) {
-                const total = Number(totalMatch[1]);
+            const total = Number(payload.total_incidents || (Array.isArray(payload.incidents) ? payload.incidents.length : 0));
+            if (total > 0) {
                 const hcKpi = document.getElementById('hcKpiTotal');
-                if (hcKpi && total > 0) hcKpi.textContent = `${formatCompact(total)}+`;
+                if (hcKpi) hcKpi.textContent = `${formatCompact(total)}+`;
             }
 
-            // Extract up to 5 incident objects cleanly from the opening JSON array
-            const incidents = [];
-            const objRegex = /\{\s*"id"\s*:\s*"[^"]*"[\s\S]*?"source"\s*:\s*"[^"]*"\s*\}/g;
-            let m;
-            while ((m = objRegex.exec(headChunk)) !== null && incidents.length < 5) {
-                try {
-                    incidents.push(JSON.parse(m[0]));
-                } catch (_) { /* ignore partial chunk */ }
-            }
-
+            const incidents = Array.isArray(payload.incidents) ? payload.incidents.slice(0, 5) : [];
             const chatterEl = document.getElementById('liveChatterRows');
             if (chatterEl && incidents.length > 0) {
                 state.chatter.loadedFromStream = true;
                 chatterEl.innerHTML = incidents.map(inc => {
-                    const datePart = (inc.date_discovered || '').split('T')[0];
+                    const datePart = (inc.date_discovered || '').split('T')[0].split(' ')[0];
                     const industry = (inc.industry && inc.industry !== 'Other') ? inc.industry : 'OSINT Claim';
                     return `
                         <a href="hacker-chatter.html" class="lg-feed-row">
@@ -871,7 +851,7 @@
                 }).join('');
             }
         } catch (_) {
-            /* AbortError after reading first 12KB is expected */
+            /* Graceful fallback: ransomware disclosures or static placeholder remains visible */
         }
     }
 

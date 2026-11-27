@@ -43,23 +43,23 @@ except ImportError:
 # ──────────────────────────────────────────────────────────────
 # GitHub Pages Configuration (CORS-friendly static file hosting)
 GITHUB_REPO = 'Harish761/thehgtech'
-GITHUB_PAGES_URL = 'https://thehgtech.com/ioc-data'  # Using subdirectory on main branch
+GITHUB_PAGES_URL = 'https://thehgtech.com/ioc-data'  # Browser-facing previews on main branch
 
-# IOC Display Caps (for file size management on GitHub Pages)
-IOC_DISPLAY_CAPS = {
-    # No caps - store all IOCs
-}
+# Separated Storage Paths (Batch 4 / REM-10):
+# - IOC_SOURCE_DIR holds the complete, uncapped 7-day rolling source datasets (excluded from Pages via _config.yml).
+# - IOC_PREVIEW_DIR holds capped browser-facing preview datasets published on GitHub Pages.
+IOC_SOURCE_DIR = 'data/ioc-source'
+IOC_PREVIEW_DIR = 'ioc-data'
+PREVIEW_MAX_IOCS = 1000
 
-# Vendor-specific caps - DISABLED (unlimited IOCs!)
-# We store ALL IOCs in GitHub Pages and load on-demand, so no caps needed
-# VENDOR_CAPS = {
-#     'Malware Bazaar': 500,
-#     'Phishing Database': 500,
-#     'Blocklist.de': 500,
-#     'CINS Army': 300,
-#     'OpenPhish': 200,
-#     'Spamhaus DROP': 100
-# }
+# Optional per-vendor preview caps (default: PREVIEW_MAX_IOCS = 1,000 for browser previews ONLY;
+# full 7-day source datasets under data/ioc-source/ are NEVER capped).
+IOC_DISPLAY_CAPS = {}
+
+
+def vendor_slug(vendor_name):
+    """Canonical filename slug for a threat-intel vendor."""
+    return vendor_name.lower().replace(' ', '-').replace('.', '-')
 
 IOC_EXPIRY_HOURS = 168  # 7 days retention
 OUTPUT_FILE = 'threat-intel.js'
@@ -666,16 +666,26 @@ def extract_ioc_from_entry(entry, feed_name, now, config, ioc_history=None):
 # ──────────────────────────────────────────────────────────────
 
 # HG-THREAT-INTEL-V1: FIX | VENDOR_SLUG_NORMALIZATION | 2026-10-18
-def load_previous_ioc_data(vendor_name):
-    """Load previous IOC data for persistence tracking"""
-    slug = vendor_name.lower().replace(' ', '-').replace('.', '-')
+def load_previous_ioc_data(vendor_name, source_dir=None, preview_dir=None):
+    """Load previous IOC data for 7-day persistence tracking.
+    Prefers full uncapped source datasets in data/ioc-source/ before falling back to ioc-data/."""
+    src_dir = source_dir or IOC_SOURCE_DIR
+    prv_dir = preview_dir or IOC_PREVIEW_DIR
+    slug = vendor_slug(vendor_name)
+    hyphen_name = vendor_name.lower().replace(' ', '-')
     candidates = [
-        f"ioc-data/{slug}.json",
-        f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json",
+        os.path.join(src_dir, f"{slug}.json"),
+        os.path.join(src_dir, f"{hyphen_name}.json"),
+        os.path.join(prv_dir, f"{slug}.json"),
+        os.path.join(prv_dir, f"{hyphen_name}.json"),
         f"{slug}.json",
-        f"{vendor_name.lower().replace(' ', '-')}.json"
+        f"{hyphen_name}.json",
     ]
+    seen = set()
     for filename in candidates:
+        if filename in seen:
+            continue
+        seen.add(filename)
         if os.path.exists(filename):
             try:
                 with open(filename, 'r', encoding='utf-8') as f:
@@ -1153,129 +1163,251 @@ def should_run_weekly_ai(history):
     except:
         return True
 
-def smart_filter_iocs(iocs, vendor_name, max_count=10000):
+def smart_filter_iocs(iocs, vendor_name, max_count=PREVIEW_MAX_IOCS):
     """
-    Intelligently filter IOCs to most critical subset
-    Priority: Recent threats + High-profile targets + Active status
-    
+    Intelligently filter IOCs to most critical subset for browser-facing previews.
+    Priority: Recent threats + High-profile targets + Active status.
+    Never modifies the caller's list or source records.
+
     Returns: (filtered_iocs, total_count, displayed_count)
     """
     if len(iocs) <= max_count:
-        return iocs, len(iocs), len(iocs)
-    
+        return list(iocs), len(iocs), len(iocs)
+
     # High-profile keywords for phishing/malware targets
     HIGH_PROFILE = [
-        'paypal', 'amazon', 'microsoft', 'apple', 'google', 
+        'paypal', 'amazon', 'microsoft', 'apple', 'google',
         'bank', 'chase', 'wellsfargo', 'citibank', 'bofa',
         'facebook', 'instagram', 'netflix', 'adobe', 'dropbox',
         'linkedin', 'twitter', 'coinbase', 'binance', 'metamask'
     ]
-    
+
     scored_iocs = []
-    now = get_ist_now()
-    
-    for ioc in iocs:
+    now_utc = datetime.now(timezone.utc)
+
+    for idx, ioc in enumerate(iocs):
         score = 0
-        indicator = ioc.get('indicator', '').lower()
-        added_at = ioc.get('addedAt', '')
-        
+        indicator = str(ioc.get('indicator', '')).lower()
+        added_at = ioc.get('addedAt', '') or ioc.get('timestamp', '')
+        sort_ts = 0.0
+
         # Recency score (0-100 points)
         if added_at:
-            try:
-                added_time = datetime.fromisoformat(added_at.replace('Z', '+00:00'))
-                hours_old = (now - added_time).total_seconds() / 3600
-                
+            dt = parse_flexible_timestamp(added_at)
+            if dt:
+                dt_utc = dt.astimezone(timezone.utc)
+                sort_ts = dt_utc.timestamp()
+                hours_old = (now_utc - dt_utc).total_seconds() / 3600.0
                 if hours_old < 24:
                     score += 100  # Last 24 hours - highest priority
                 elif hours_old < 168:  # 7 days
                     score += 50
                 elif hours_old < 720:  # 30 days
                     score += 25
-            except:
-                pass
-        
+
         # High-profile target score (0-100 points)
         if any(keyword in indicator for keyword in HIGH_PROFILE):
             score += 100
-        
+
         # Active status bonus
         if ioc.get('status') == 'active':
             score += 25
-        
-        scored_iocs.append((score, ioc))
-    
-    # Sort by score (highest first) and take top N
-    scored_iocs.sort(reverse=True, key=lambda x: x[0])
-    filtered = [ioc for score, ioc in scored_iocs[:max_count]]
-    
+
+        scored_iocs.append((score, sort_ts, -idx, ioc))
+
+    # Sort deterministically by priority score, then recency (newest first), then original order
+    scored_iocs.sort(reverse=True, key=lambda x: (x[0], x[1], x[2]))
+    filtered = [ioc for _, _, _, ioc in scored_iocs[:max_count]]
+
     return filtered, len(iocs), len(filtered)
 
-def save_vendor_json_files(vendors_data):
-    """Save each vendor's IOCs to separate JSON files for GitHub Pages"""
-    saved_files = []
-    
-    for vendor_name, vendor_data in vendors_data.items():
-        filename = f"{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
-        iocs = vendor_data.get('iocs', [])
-        
-        # Safety guard: Never replace a populated vendor dataset with an empty dataset solely because upstream feed failed
-        if not iocs:
-            previous_disk_iocs = load_previous_ioc_data(vendor_name)
-            if previous_disk_iocs:
-                print(f"    ⚠️ Warning: Refusing to overwrite populated {filename} ({len(previous_disk_iocs)} IOCs) with empty dataset")
-                saved_files.append(filename)
-                continue
-        
-        # Smart filtering for large datasets
-        cap = IOC_DISPLAY_CAPS.get(vendor_name)
-        if cap and len(iocs) > cap:
-            filtered_iocs, total_count, displayed_count = smart_filter_iocs(iocs, vendor_name, cap)
-            print(f"    ⚠️  {vendor_name}: Filtered {total_count:,} → {displayed_count:,} (most critical)")
-        else:
-            filtered_iocs = iocs
-            total_count = displayed_count = len(iocs)
-        
-        # Stale-data semantics: Honor fetch outcome if provided, otherwise check indicator ages
-        fetch_is_stale = vendor_data.get('isStale', getattr(iocs, 'is_stale', False))
-        feed_status = vendor_data.get('feedStatus', getattr(iocs, 'feed_status', 'stale' if fetch_is_stale else 'active'))
 
-        all_expired = False
-        if iocs and not fetch_is_stale:
-            cutoff_utc = (get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)).astimezone(timezone.utc)
-            try:
+def _compute_stale_metadata(iocs, vendor_data=None):
+    """Determine isStale and feedStatus from fetch outcome and indicator ages."""
+    vendor_data = vendor_data or {}
+    fetch_is_stale = vendor_data.get('isStale', getattr(iocs, 'is_stale', False))
+    feed_status = vendor_data.get(
+        'feedStatus',
+        getattr(iocs, 'feed_status', 'stale' if fetch_is_stale else 'active'),
+    )
+
+    all_expired = False
+    if iocs and not fetch_is_stale:
+        cutoff_utc = (get_ist_now() - timedelta(hours=IOC_EXPIRY_HOURS)).astimezone(timezone.utc)
+        try:
+            dated_iocs = [ioc for ioc in iocs if ioc.get('addedAt') or ioc.get('timestamp')]
+            if dated_iocs:
                 all_expired = all(
-                    (parse_flexible_timestamp(ioc.get('addedAt') or ioc.get('timestamp')) or datetime.min.replace(tzinfo=timezone.utc)).astimezone(timezone.utc) <= cutoff_utc
-                    for ioc in iocs
-                    if ioc.get('addedAt') or ioc.get('timestamp')
+                    (
+                        parse_flexible_timestamp(ioc.get('addedAt') or ioc.get('timestamp'))
+                        or datetime.min.replace(tzinfo=timezone.utc)
+                    ).astimezone(timezone.utc)
+                    <= cutoff_utc
+                    for ioc in dated_iocs
                 )
-            except Exception:
-                all_expired = False
+        except Exception:
+            all_expired = False
 
-        is_stale = fetch_is_stale or all_expired
-        if is_stale:
-            feed_status = 'stale'
+    is_stale = bool(fetch_is_stale or all_expired)
+    if is_stale:
+        feed_status = 'stale'
+    return is_stale, feed_status
 
-        data = {
+
+def _atomic_write_json(filepath, payload, compact=False):
+    """Atomically write JSON payload to filepath via temp file + os.replace."""
+    parent = os.path.dirname(filepath)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    tmp_path = f"{filepath}.tmp.{os.getpid()}"
+    try:
+        with open(tmp_path, 'w', encoding='utf-8') as f:
+            if compact:
+                json.dump(payload, f, ensure_ascii=False, separators=(',', ':'))
+            else:
+                json.dump(payload, f, indent=2, ensure_ascii=False)
+        os.replace(tmp_path, filepath)
+    finally:
+        if os.path.exists(tmp_path):
+            try:
+                os.remove(tmp_path)
+            except OSError:
+                pass
+
+
+def save_vendor_source_files(vendors_data, source_dir=IOC_SOURCE_DIR):
+    """Persist complete, uncapped 7-day rolling IOC source datasets to data/ioc-source/."""
+    os.makedirs(source_dir, exist_ok=True)
+    saved_files = []
+
+    for vendor_name, vendor_data in vendors_data.items():
+        filename = f"{vendor_slug(vendor_name)}.json"
+        filepath = os.path.join(source_dir, filename)
+        iocs = vendor_data.get('iocs', [])
+
+        # Safety guard: Never replace a populated source dataset with an empty dataset on upstream failure
+        if not iocs:
+            previous_disk_iocs = load_previous_ioc_data(vendor_name, source_dir=source_dir)
+            if previous_disk_iocs:
+                print(f"    ⚠️ Warning: Refusing to overwrite populated source {filepath} ({len(previous_disk_iocs)} IOCs) with empty dataset")
+                saved_files.append(filepath)
+                continue
+
+        is_stale, feed_status = _compute_stale_metadata(iocs, vendor_data)
+        total_count = len(iocs)
+
+        source_payload = {
             'vendor': vendor_name,
             'lastUpdated': get_ist_now().isoformat(),
-            'totalCount': total_count,  # Full count for transparency
-            'displayedCount': displayed_count,  # Filtered count
-            'isCapped': total_count > displayed_count,
-            'cappingStrategy': 'Recent threats + High-profile targets' if total_count > displayed_count else None,
+            'totalCount': total_count,
+            'displayedCount': total_count,
+            'isCapped': False,
+            'cappingStrategy': None,
             'isStale': is_stale,
             'feedStatus': feed_status,
-            'iocs': filtered_iocs
+            'iocs': list(iocs),
         }
-        
+
         try:
-            with open(filename, 'w') as f:
-                json.dump(data, f, indent=2)
-            print(f"    ✓ Saved {filename} ({displayed_count:,} IOCs)")
-            saved_files.append(filename)
+            _atomic_write_json(filepath, source_payload, compact=False)
+            print(f"    ✓ Saved full source {filepath} ({total_count:,} IOCs)")
+            saved_files.append(filepath)
         except Exception as e:
-            print(f"    ✗ Failed to save {filename}: {e}")
-    
+            print(f"    ✗ Failed to save source {filepath}: {e}")
+
     return saved_files
+
+
+def generate_vendor_preview_files(
+    source_dir=IOC_SOURCE_DIR,
+    preview_dir=IOC_PREVIEW_DIR,
+    max_preview=PREVIEW_MAX_IOCS,
+    vendors_filter=None,
+):
+    """Generate capped browser-facing preview JSON files under ioc-data/ from data/ioc-source/.
+    Never modifies or truncates source files."""
+    os.makedirs(preview_dir, exist_ok=True)
+    saved_files = []
+    target_vendors = list(vendors_filter) if vendors_filter is not None else list(VENDORS.keys())
+
+    for vendor_name in target_vendors:
+        filename = f"{vendor_slug(vendor_name)}.json"
+        source_path = os.path.join(source_dir, filename)
+        preview_path = os.path.join(preview_dir, filename)
+
+        if not os.path.exists(source_path):
+            print(f"    ⚠️ Skipping preview for {vendor_name}: source file missing ({source_path})")
+            continue
+
+        try:
+            with open(source_path, 'r', encoding='utf-8') as f:
+                source_data = json.load(f)
+        except Exception as e:
+            print(f"    ✗ Failed reading source {source_path}: {e}")
+            continue
+
+        full_iocs = source_data.get('iocs', [])
+        if not full_iocs:
+            if os.path.exists(preview_path):
+                try:
+                    with open(preview_path, 'r', encoding='utf-8') as pf:
+                        existing_prev = json.load(pf).get('iocs', [])
+                    if existing_prev:
+                        print(f"    ⚠️ Warning: Refusing to overwrite populated preview {preview_path} ({len(existing_prev)} IOCs) with empty dataset")
+                        saved_files.append(preview_path)
+                        continue
+                except Exception:
+                    pass
+
+        cap = IOC_DISPLAY_CAPS.get(vendor_name, max_preview)
+        if cap and len(full_iocs) > cap:
+            preview_iocs, total_count, displayed_count = smart_filter_iocs(full_iocs, vendor_name, cap)
+            print(f"    ✂️  {vendor_name} preview: {total_count:,} source → {displayed_count:,} browser preview")
+        else:
+            preview_iocs = list(full_iocs)
+            total_count = displayed_count = len(full_iocs)
+
+        is_capped = total_count > displayed_count
+        preview_payload = {
+            'vendor': source_data.get('vendor', vendor_name),
+            'lastUpdated': source_data.get('lastUpdated', get_ist_now().isoformat()),
+            'totalCount': total_count,
+            'displayedCount': displayed_count,
+            'isCapped': is_capped,
+            'cappingStrategy': 'Recent threats + High-profile targets' if is_capped else None,
+            'isStale': bool(source_data.get('isStale', False)),
+            'feedStatus': source_data.get('feedStatus', 'stale' if source_data.get('isStale') else 'active'),
+            'iocs': preview_iocs,
+        }
+
+        try:
+            _atomic_write_json(preview_path, preview_payload, compact=True)
+            size_kb = os.path.getsize(preview_path) / 1024.0
+            print(f"    ✓ Saved browser preview {preview_path} ({displayed_count:,}/{total_count:,} IOCs, {size_kb:.1f} KB)")
+            saved_files.append(preview_path)
+        except Exception as e:
+            print(f"    ✗ Failed to save preview {preview_path}: {e}")
+
+    return saved_files
+
+
+def save_vendor_json_files(
+    vendors_data,
+    source_dir=IOC_SOURCE_DIR,
+    preview_dir=IOC_PREVIEW_DIR,
+    max_preview=PREVIEW_MAX_IOCS,
+    generate_previews=True,
+):
+    """Save full uncapped 7-day source files to data/ioc-source/ and (optionally) capped browser previews to ioc-data/."""
+    source_files = save_vendor_source_files(vendors_data, source_dir=source_dir)
+    if generate_previews:
+        generate_vendor_preview_files(
+            source_dir=source_dir,
+            preview_dir=preview_dir,
+            max_preview=max_preview,
+            vendors_filter=list(vendors_data.keys()),
+        )
+    return source_files
 
 # HG-THREAT-INTEL-V1: PERF | PRECOMPUTE_SERVER_SIDE_METRICS | 2026-10-18
 def generate_js(data):
@@ -1729,7 +1861,7 @@ def generate_html_snapshot(threat_data, snapshot_file='ti-snapshot.html'):
 # ──────────────────────────────────────────────────────────────
 # Runners
 # ──────────────────────────────────────────────────────────────
-def run_hourly():
+def run_hourly(generate_previews=True):
     """Hourly update - fetch fresh IOCs from all vendors"""
     print(f"\n[{get_ist_now().isoformat()}] Hourly Multi-Vendor Update")
     print("="*60)
@@ -1797,10 +1929,10 @@ def run_hourly():
             'iocDataUrl': f"{GITHUB_PAGES_URL}/{vendor_name.lower().replace(' ', '-').replace('.', '-')}.json"
         }
     
-    # Save vendor JSON files for GitHub Actions to upload as release assets
-    print("\nSaving vendor JSON files:")
-    saved_files = save_vendor_json_files(vendors_data)
-    print(f"  ✓ Saved {len(saved_files)} vendor JSON files")
+    # Save full 7-day source files to data/ioc-source/ (and browser previews to ioc-data/ unless deferred)
+    print("\nSaving vendor IOC datasets:")
+    saved_files = save_vendor_json_files(vendors_data, generate_previews=generate_previews)
+    print(f"  ✓ Saved {len(saved_files)} vendor source datasets")
     
     # Generate overview (top 20 most recent across all vendors)
     all_iocs_for_overview = []
@@ -1865,26 +1997,29 @@ def run_daily():
         print("  ✗ No existing data to calculate analytics from")
         return
     
-    # Load IOC data from ioc-data files
+    # Load full 7-day IOC data from data/ioc-source/ first (falling back to ioc-data/)
     # HG-THREAT-INTEL-V1: FIX | VENDOR_SLUG_NORMALIZATION_DAILY | 2026-10-18
     vendors_with_iocs = {}
     for vendor_name in existing['vendors'].keys():
-        slug = vendor_name.lower().replace(' ', '-').replace('.', '-')
+        slug = vendor_slug(vendor_name)
+        hyphen_name = vendor_name.lower().replace(' ', '-')
         candidates = [
-            f"ioc-data/{slug}.json",
-            f"ioc-data/{vendor_name.lower().replace(' ', '-')}.json",
-            f"{slug}.json"
+            os.path.join(IOC_SOURCE_DIR, f"{slug}.json"),
+            os.path.join(IOC_SOURCE_DIR, f"{hyphen_name}.json"),
+            os.path.join(IOC_PREVIEW_DIR, f"{slug}.json"),
+            os.path.join(IOC_PREVIEW_DIR, f"{hyphen_name}.json"),
+            f"{slug}.json",
         ]
         ioc_file = next((f for f in candidates if os.path.exists(f)), candidates[0])
         if os.path.exists(ioc_file):
             try:
-                with open(ioc_file, 'r') as f:
+                with open(ioc_file, 'r', encoding='utf-8') as f:
                     ioc_data = json.load(f)
                     vendors_with_iocs[vendor_name] = {
                         **existing['vendors'][vendor_name],
                         'iocs': ioc_data.get('iocs', [])
                     }
-                    print(f"  ✓ Loaded {len(ioc_data.get('iocs', []))} IOCs from {vendor_name}")
+                    print(f"  ✓ Loaded {len(ioc_data.get('iocs', []))} IOCs from {ioc_file}")
             except Exception as e:
                 print(f"  ✗ Error loading {ioc_file}: {e}")
                 vendors_with_iocs[vendor_name] = existing['vendors'][vendor_name]
@@ -1930,16 +2065,25 @@ def main():
     parser.add_argument('--hourly', action='store_true', help='Run hourly data fetch')
     parser.add_argument('--daily', action='store_true', help='Run daily analytics calculation')
     parser.add_argument('--both', action='store_true', help='Run both hourly and daily')
+    parser.add_argument('--skip-previews', action='store_true', help='Write full 7-day source files only (defer browser preview generation)')
+    parser.add_argument('--build-previews-only', action='store_true', help='Regenerate capped browser previews in ioc-data/ from data/ioc-source/')
     args = parser.parse_args()
-    
+
+    if args.build_previews_only:
+        print(f"\n[{get_ist_now().isoformat()}] Generating Browser IOC Previews from {IOC_SOURCE_DIR}")
+        print("="*60)
+        preview_files = generate_vendor_preview_files()
+        print(f"✓ Generated {len(preview_files)} browser preview files in {IOC_PREVIEW_DIR}")
+        return
+
     if not (args.hourly or args.daily or args.both):
         args.both = True
-    
+
     if args.hourly or args.both:
-        run_hourly()
+        run_hourly(generate_previews=not args.skip_previews)
     if args.daily or args.both:
         run_daily()
-    
+
     print("\n✓ All done!")
 
 

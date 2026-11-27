@@ -545,6 +545,8 @@
         if (counterEl) {
             if (total === 0) {
                 counterEl.textContent = 'No indicators matched your filter criteria';
+            } else if (state.activeVendorMeta && state.activeVendorMeta.isCapped && !state.currentSearch && state.currentTypeFilter === 'all') {
+                counterEl.textContent = `Displaying ${formatNumber(startIdx + 1)}–${formatNumber(endIdx)} of ${formatNumber(total)} preview records (${formatNumber(state.activeVendorMeta.totalCount)} retained in 7-day ${state.activeVendorMeta.vendor} source)`;
             } else {
                 counterEl.textContent = `Displaying ${formatNumber(startIdx + 1)}–${formatNumber(endIdx)} of ${formatNumber(total)} records`;
             }
@@ -1076,7 +1078,8 @@
 
         // Check in-memory cache first
         if (state.vendorCache[vendorName]) {
-            displayVendorRecords(vendorName, state.vendorCache[vendorName]);
+            const cached = state.vendorCache[vendorName];
+            displayVendorRecords(vendorName, cached.iocs, cached);
             return;
         }
 
@@ -1086,8 +1089,15 @@
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const data = await res.json();
             const iocs = (data.iocs || []).map(normalizeIOCRecord);
-            state.vendorCache[vendorName] = iocs;
-            displayVendorRecords(vendorName, iocs);
+            const meta = {
+                vendor: data.vendor || vendorName,
+                totalCount: Number(data.totalCount || iocs.length),
+                displayedCount: Number(data.displayedCount || iocs.length),
+                isCapped: Boolean(data.isCapped && Number(data.totalCount || 0) > iocs.length),
+                iocs
+            };
+            state.vendorCache[vendorName] = meta;
+            displayVendorRecords(vendorName, iocs, meta);
         } catch (err) {
             console.error('Failed to load vendor records:', err);
             alert(`Unable to load detailed records for ${vendorName} at this time.`);
@@ -1095,9 +1105,10 @@
         }
     };
 
-    function displayVendorRecords(vendorName, iocs) {
+    function displayVendorRecords(vendorName, iocs, meta = null) {
         state.allOverviewIOCs = iocs;
         state.filteredIOCs = [...iocs];
+        state.activeVendorMeta = meta;
         state.currentPage = 1;
         state.currentTypeFilter = 'all';
 
