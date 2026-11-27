@@ -14,6 +14,11 @@ on:
         required: false
         default: false
         type: boolean
+      confirm_force:
+        description: 'Required ONLY when force=true: type exactly SEND to override duplicate-send protection'
+        required: false
+        default: ''
+        type: string
 
 # Prevent concurrent newsletter delivery runs
 concurrency:
@@ -48,13 +53,19 @@ jobs:
           pip install beautifulsoup4
       
       - name: Send Shorts Newsletter via Brevo
+        id: send_shorts
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           UPSTREAM_RUN_ID: ${{ github.event.workflow_run.id || '' }}
           UPSTREAM_RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion || '' }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
+          CONFIRM_FORCE: ${{ github.event.inputs.confirm_force || '' }}
         run: |
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            if [ "$CONFIRM_FORCE" != "SEND" ]; then
+              echo "❌ Safety Abort: force=true requires confirm_force='SEND' (received: '$CONFIRM_FORCE')."
+              exit 1
+            fi
             python scripts/send_newsletter.py --type shorts --force
           else
             python scripts/send_newsletter.py --type shorts
@@ -87,6 +98,13 @@ jobs:
       
       - name: Summary
         if: always()
+        env:
+          SEND_OUTCOME: ${{ steps.send_shorts.outcome }}
         run: |
-          echo "### Newsletter Execution: Daily Digest" >> $GITHUB_STEP_SUMMARY
-          echo "Dispatched shorts digest (with CVE section) to Brevo API or handled idempotently." >> $GITHUB_STEP_SUMMARY
+          if [ "$SEND_OUTCOME" = "success" ]; then
+            echo "### ✅ Newsletter Execution: Daily Digest" >> $GITHUB_STEP_SUMMARY
+            echo "Dispatched shorts digest (with CVE section) to Brevo API or skipped idempotently." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### ❌ Newsletter Execution Failed or Halted: Daily Digest" >> $GITHUB_STEP_SUMMARY
+            echo "Step outcome: \`$SEND_OUTCOME\`. Check job logs before retrying." >> $GITHUB_STEP_SUMMARY
+          fi

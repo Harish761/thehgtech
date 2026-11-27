@@ -3,10 +3,18 @@ import json
 import re
 import sys
 import datetime
+import html as html_lib
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urlparse
 import urllib.request
-from bs4 import BeautifulSoup
 import argparse
 import hashlib
+
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
 
 BREVO_API_KEY = os.environ.get("BREVO_API_KEY", "")
 
@@ -600,35 +608,284 @@ def generate_shorts_html():
     
     return f"TheHGTech Daily Digest: {today_str}", html
 
-def generate_article_html(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
-        soup = BeautifulSoup(f.read(), "html.parser")
-        
-    title = soup.find("h1").get_text(strip=True) if soup.find("h1") else "New Analysis Published"
-    
-    # Try to find a hero image
+REQUIRED_LIVE_CONFIRMATION = "SEND"
+ALLOWED_ARTICLE_DIRS = ("articles/", "guides/")
+DISALLOWED_ARTICLE_PREFIXES = ("articles/page/",)
+DISALLOWED_ARTICLE_FILES = {"articles/index.html", "guides/index.html"}
+
+
+class _ArticleHTMLInspector(HTMLParser):
+    """Deterministic stdlib HTML parser for newsletter eligibility & email extraction."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.title_parts = []
+        self.h1_parts = []
+        self.metas = []
+        self.canonical_href = ""
+        self.hero_img_src = ""
+        self.og_image = ""
+        self.article_paragraphs = []
+        self.fallback_paragraphs = []
+        self.scripts = []
+        self.body_text_parts = []
+
+        self._in_title = False
+        self._in_h1 = False
+        self._h1_done = False
+        self._in_script = False
+        self._script_buf = []
+        self._in_style = False
+        self._in_body = False
+        self._in_p = False
+        self._p_buf = []
+        self._skip_depth = 0
+        self._skip_stack = []
+        self._article_depth = 0
+        self._article_stack = []
+
+    def handle_starttag(self, tag, attrs):
+        tag_l = tag.lower()
+        attr_map = {k.lower(): (v or "") for k, v in attrs}
+
+        if tag_l == "body":
+            self._in_body = True
+        elif tag_l == "title":
+            self._in_title = True
+        elif tag_l == "script":
+            self._in_script = True
+            self._script_buf = []
+        elif tag_l == "style":
+            self._in_style = True
+        elif tag_l == "meta":
+            self.metas.append(attr_map)
+            if attr_map.get("property", "").lower() == "og:image" and attr_map.get("content"):
+                if not self.og_image:
+                    self.og_image = attr_map["content"].strip()
+        elif tag_l == "link":
+            rel_tokens = attr_map.get("rel", "").lower().split()
+            if "canonical" in rel_tokens and attr_map.get("href") and not self.canonical_href:
+                self.canonical_href = attr_map["href"].strip()
+
+        cls = attr_map.get("class", "").lower()
+        elem_id = attr_map.get("id", "").lower()
+
+        if tag_l in ("nav", "footer", "noscript") or "modal" in cls:
+            self._skip_depth += 1
+            self._skip_stack.append(tag_l)
+
+        if tag_l in ("article", "main") or elem_id in ("articlebody", "article-body"):
+            self._article_depth += 1
+            self._article_stack.append(tag_l)
+
+        if tag_l == "h1" and not self._h1_done and self._skip_depth == 0:
+            self._in_h1 = True
+        elif tag_l == "img" and not self.hero_img_src and self._skip_depth == 0:
+            if ("hero" in cls or "featured-image" in cls or "article-hero" in cls) and attr_map.get("src"):
+                self.hero_img_src = attr_map["src"].strip()
+        elif tag_l == "p" and self._skip_depth == 0 and not self._in_script and not self._in_style:
+            self._in_p = True
+            self._p_buf = []
+
+    def handle_endtag(self, tag):
+        tag_l = tag.lower()
+        if tag_l == "title":
+            self._in_title = False
+        elif tag_l == "script":
+            self._in_script = False
+            self.scripts.append("".join(self._script_buf))
+        elif tag_l == "style":
+            self._in_style = False
+        elif tag_l == "h1" and self._in_h1:
+            self._in_h1 = False
+            self._h1_done = True
+        elif tag_l == "p" and self._in_p:
+            self._in_p = False
+            text = re.sub(r"\s+", " ", "".join(self._p_buf)).strip()
+            if text:
+                if self._article_depth > 0:
+                    self.article_paragraphs.append(text)
+                else:
+                    self.fallback_paragraphs.append(text)
+
+        if self._skip_stack and self._skip_stack[-1] == tag_l:
+            self._skip_stack.pop()
+            self._skip_depth = max(0, self._skip_depth - 1)
+        if self._article_stack and self._article_stack[-1] == tag_l:
+            self._article_stack.pop()
+            self._article_depth = max(0, self._article_depth - 1)
+
+    def handle_data(self, data):
+        if self._in_title:
+            self.title_parts.append(data)
+        if self._in_script:
+            self._script_buf.append(data)
+            return
+        if self._in_style:
+            return
+        if self._in_h1:
+            self.h1_parts.append(data)
+        if self._in_p:
+            self._p_buf.append(data)
+        if self._in_body and self._skip_depth == 0:
+            self.body_text_parts.append(data)
+
+
+def _inspect_article_html(raw_html):
+    inspector = _ArticleHTMLInspector()
+    inspector.feed(raw_html)
+    inspector.close()
+    return inspector
+
+
+def validate_article_path(file_path, repo_root=None):
+    """
+    Validate that file_path points to an existing HTML article/guide inside the repo.
+    Returns (ok: bool, normalized_rel_path_or_reason: str, resolved_path_or_none: Path | None).
+    """
+    if not file_path or not str(file_path).strip():
+        return False, "missing_filepath", None
+
+    root = Path(repo_root).resolve() if repo_root else Path.cwd().resolve()
+    raw = str(file_path).strip().replace("\\", "/")
+
+    # Reject explicit traversal or absolute paths outside the repository root
+    candidate_input = Path(raw)
+    if candidate_input.is_absolute():
+        resolved = candidate_input.resolve()
+    else:
+        resolved = (root / raw).resolve()
+
+    try:
+        rel_path = resolved.relative_to(root).as_posix()
+    except ValueError:
+        return False, "path_outside_repo", None
+
+    if not resolved.exists() or not resolved.is_file():
+        return False, "file_not_found", None
+
+    if not rel_path.lower().endswith(".html"):
+        return False, "not_html_file", None
+
+    if not rel_path.startswith(ALLOWED_ARTICLE_DIRS):
+        return False, "path_not_in_articles_or_guides", None
+
+    if rel_path.startswith(DISALLOWED_ARTICLE_PREFIXES) or rel_path in DISALLOWED_ARTICLE_FILES:
+        return False, "disallowed_index_or_pagination_path", None
+
+    return True, rel_path, resolved
+
+
+def validate_article_for_newsletter(file_path, repo_root=None):
+    """
+    Validate an article/guide HTML file for newsletter eligibility.
+    Rejects invalid paths, noindex pages, meta-refresh/JS/canonical redirect stubs,
+    and incomplete pages missing a real title or body excerpt.
+
+    Returns (eligible: bool, reason_or_ok: str, metadata: dict).
+    """
+    path_ok, rel_or_reason, resolved = validate_article_path(file_path, repo_root=repo_root)
+    if not path_ok:
+        return False, rel_or_reason, {}
+
+    try:
+        raw_html = resolved.read_text(encoding="utf-8")
+    except Exception as e:
+        return False, f"read_error:{e}", {}
+
+    info = _inspect_article_html(raw_html)
+    title_tag = re.sub(r"\s+", " ", "".join(info.title_parts)).strip()
+    h1_text = re.sub(r"\s+", " ", "".join(info.h1_parts)).strip()
+
+    # 1. Reject noindex meta directives and meta-refresh redirect stubs
+    for meta in info.metas:
+        name = meta.get("name", "").lower()
+        http_equiv = meta.get("http-equiv", "").lower()
+        content_val = meta.get("content", "")
+        if name in ("robots", "googlebot") and re.search(r"\bnoindex\b", content_val, re.IGNORECASE):
+            return False, "noindex_page", {"rel_path": rel_or_reason}
+        if http_equiv == "refresh":
+            return False, "meta_refresh_redirect_stub", {"rel_path": rel_or_reason}
+
+    # 2. Reject "Redirecting..." titles/headings
+    if title_tag.lower().startswith("redirecting") or h1_text.lower().startswith("redirecting"):
+        return False, "redirect_title_stub", {"rel_path": rel_or_reason}
+
+    # 3. Reject cross-path canonical redirect stubs (e.g., /articles/foo.html -> /guides/foo.html)
+    if info.canonical_href:
+        parsed_canon = urlparse(info.canonical_href)
+        canon_path = parsed_canon.path.lstrip("/")
+        if parsed_canon.netloc and parsed_canon.netloc.lower() not in ("thehgtech.com", "www.thehgtech.com"):
+            return False, "external_canonical_redirect", {"rel_path": rel_or_reason, "canonical": info.canonical_href}
+        if canon_path and canon_path != rel_or_reason:
+            return False, "canonical_mismatch_redirect_stub", {"rel_path": rel_or_reason, "canonical": info.canonical_href}
+
+    # 4. Reject JS redirect stubs
+    joined_scripts = "\n".join(info.scripts)
+    body_text = re.sub(r"\s+", " ", "".join(info.body_text_parts)).strip()
+    body_words = body_text.split()
+    has_js_redirect = bool(
+        re.search(r"window\.location\.(replace|assign)\s*\(|window\.location\.href\s*=", joined_scripts)
+    )
+    if has_js_redirect and (len(body_words) < 150 or "page has moved" in body_text.lower()):
+        return False, "js_redirect_stub", {"rel_path": rel_or_reason}
+
+    # 5. Require real H1 title & substantive paragraph excerpt
+    if not h1_text:
+        return False, "missing_h1_title", {"rel_path": rel_or_reason}
+
+    candidate_paras = info.article_paragraphs or info.fallback_paragraphs
+    usable_paras = [p for p in candidate_paras if len(p) > 50 and "this page has moved" not in p.lower()]
+    if not usable_paras:
+        return False, "missing_article_excerpt", {"rel_path": rel_or_reason}
+
+    return True, "eligible", {
+        "rel_path": rel_or_reason,
+        "resolved_path": str(resolved),
+        "title": h1_text,
+        "hero_img_src": info.hero_img_src,
+        "og_image": info.og_image,
+        "paragraphs": usable_paras,
+    }
+
+
+def get_article_content_digest(rel_path):
+    """
+    Compute deterministic SHA-256 digest for an article/guide relative path so
+    Brevo [digest[:12]] campaign deduplication prevents duplicate sends of the same page.
+    """
+    normalized = str(rel_path).strip().replace("\\", "/").lstrip("/")
+    return hashlib.sha256(f"article:{normalized}".encode("utf-8")).hexdigest()
+
+
+def generate_article_html(file_path, repo_root=None):
+    eligible, reason, meta = validate_article_for_newsletter(file_path, repo_root=repo_root)
+    if not eligible:
+        raise ValueError(f"Article not eligible for newsletter ({reason}): {file_path}")
+
+    title = meta["title"]
+    rel_path = meta["rel_path"]
+
     image_url = "https://thehgtech.com/images/og-image.jpg"
-    img_tag = soup.find("img", class_=lambda x: x and ("hero" in x or "featured-image" in x))
-    if img_tag and img_tag.get("src"):
-        src = img_tag["src"]
-        if not src.startswith("http"):
-            src = "https://thehgtech.com" + (src if src.startswith("/") else "/" + src)
-        image_url = src
-        
-    # Get first couple of paragraphs
-    paragraphs = soup.find_all("p")
+    raw_img = meta.get("hero_img_src") or meta.get("og_image") or ""
+    if raw_img and raw_img not in ("https://thehgtech.com", "https://thehgtech.com/"):
+        if not raw_img.startswith("http"):
+            raw_img = "https://thehgtech.com" + (raw_img if raw_img.startswith("/") else "/" + raw_img)
+        image_url = raw_img
+
     excerpt = ""
-    for p in paragraphs[:3]:
-        text = p.get_text(strip=True)
-        if len(text) > 50:
-            excerpt += f"<p>{text}</p>"
-            if len(excerpt) > 300:
-                break
-                
-    article_url = "https://thehgtech.com/" + file_path
+    for text in meta["paragraphs"][:3]:
+        excerpt += f"<p>{html_lib.escape(text)}</p>"
+        if len(excerpt) > 300:
+            break
+
+    article_url = "https://thehgtech.com/" + rel_path.lstrip("/")
+    safe_title = html_lib.escape(title)
+    safe_image_url = html_lib.escape(image_url, quote=True)
+    safe_article_url = html_lib.escape(article_url, quote=True)
     # Brevo unsubscribe placeholder — must NOT be inside an f-string or Python will try to evaluate it
     unsubscribe_tag = "{{ unsubscribe }}"
-    
+
     html = f"""
     <!DOCTYPE html>
     <html>
@@ -654,19 +911,19 @@ def generate_article_html(file_path):
             <div class="header">
                 <h2>The<span>HG</span>Tech &#9889; New Analysis</h2>
             </div>
-            
-            <img class="hero" src="{image_url}" alt="Hero Image">
-            
+
+            <img class="hero" src="{safe_image_url}" alt="Hero Image">
+
             <div class="content">
-                <h1>{title}</h1>
+                <h1>{safe_title}</h1>
                 {excerpt}
-                
+
                 <div class="cta-container">
-                    <a href="{article_url}" class="cta-btn">Read Full Article &rarr;</a>
+                    <a href="{safe_article_url}" class="cta-btn">Read Full Article &rarr;</a>
                 </div>
-                
+
                 <div class="tagline">Stay secure. Stay informed. Stay ahead.</div>
-                
+
                 <div class="footer">
                     <p>You received this because you subscribed to TheHGTech intelligence feed.</p>
                     <p><a href="{unsubscribe_tag}" style="color: #8b949e; text-decoration: underline;">Unsubscribe</a></p>
@@ -676,8 +933,76 @@ def generate_article_html(file_path):
     </body>
     </html>
     """
-    
+
     return title, html
+
+
+def process_article_newsletter(
+    file_path,
+    confirm_send="",
+    dry_run=False,
+    force=False,
+    repo_root=None,
+):
+    """
+    Execute end-to-end article/guide newsletter processing with strict manual safeguards:
+      1. Requires exact live confirmation 'SEND' unless dry_run=True.
+      2. Validates path (must be an existing HTML file under articles/ or guides/, never pagination/index).
+      3. Rejects noindex pages and meta-refresh / canonical / title / JS redirect stubs.
+      4. Enforces Brevo [digest] duplicate-send protection (fail-closed on API error).
+      5. Never sends an actual Brevo campaign in dry_run mode.
+
+    Returns (success: bool, info: str, exit_code: int).
+    """
+    if not dry_run:
+        if confirm_send != REQUIRED_LIVE_CONFIRMATION:
+            print(
+                f"❌ Safety Abort: Live article newsletter dispatch requires exact confirmation "
+                f"'{REQUIRED_LIVE_CONFIRMATION}' (received: {confirm_send!r}). No campaign sent."
+            )
+            return False, "confirmation_rejected", 1
+
+    eligible, reason, meta = validate_article_for_newsletter(file_path, repo_root=repo_root)
+    if not eligible:
+        print(f"❌ Safety Abort: Article '{file_path}' rejected ({reason}). No campaign sent.")
+        return False, reason, 1
+
+    rel_path = meta["rel_path"]
+    digest = get_article_content_digest(rel_path)
+    subject, html = generate_article_html(file_path, repo_root=repo_root)
+
+    if "{{ unsubscribe }}" not in html:
+        print("❌ Safety Abort: Generated email HTML missing Brevo unsubscribe placeholder.")
+        return False, "missing_unsubscribe_placeholder", 1
+
+    now_str = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    campaign_name = f"TheHGTech Article [{digest[:12]}] - {subject[:60]} ({now_str})"
+
+    if dry_run:
+        print(f"✅ DRY-RUN VALIDATED (no Brevo campaign created or sent):")
+        print(f"   Path: {rel_path}")
+        print(f"   Subject: {subject}")
+        print(f"   Digest: [{digest[:12]}]")
+        print(f"   Planned Campaign Name: {campaign_name}")
+        return True, f"dry_run_validated:{digest[:12]}", 0
+
+    if not force:
+        status, result = check_brevo_campaign_duplicate(digest)
+        if status == "duplicate":
+            print(
+                f"ℹ️ Brevo Deduplication: Campaign '{result.get('name')}' (ID: {result.get('id')}) "
+                f"with digest [{digest[:12]}] already exists in Brevo. Skipping duplicate send."
+            )
+            return False, "brevo_duplicate", 0
+        elif status == "error":
+            print(
+                f"❌ Safety Abort: Failed to verify duplicate status against Brevo API ({result}). "
+                "Failing closed to prevent accidental duplicate email delivery."
+            )
+            return False, f"brevo_check_failed: {result}", 1
+
+    campaign_id = create_and_send_campaign(subject, html, campaign_name=campaign_name)
+    return True, str(campaign_id), 0
 
 
 def process_shorts_newsletter(
@@ -733,6 +1058,16 @@ if __name__ == "__main__":
     parser.add_argument("--type", choices=["shorts", "article"], required=True, help="Type of newsletter to send")
     parser.add_argument("--path", help="Path to the HTML file (required if type is article)")
     parser.add_argument("--force", action="store_true", help="Force send even if content digest matches previous delivery")
+    parser.add_argument(
+        "--confirm-send",
+        default=os.environ.get("NEWSLETTER_CONFIRM_SEND", ""),
+        help="Explicit live-send confirmation token (must be exactly 'SEND' for live article dispatch)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Run full pre-send validation and template rendering without sending any email via Brevo",
+    )
 
     args = parser.parse_args()
 
@@ -750,8 +1085,10 @@ if __name__ == "__main__":
         sys.exit(code)
 
     elif args.type == "article":
-        if not args.path:
-            print("Error: --path is required when type is article")
-            sys.exit(1)
-        subject, html = generate_article_html(args.path)
-        create_and_send_campaign(subject, html)
+        success, info, code = process_article_newsletter(
+            file_path=args.path,
+            confirm_send=args.confirm_send,
+            dry_run=args.dry_run,
+            force=args.force,
+        )
+        sys.exit(code)

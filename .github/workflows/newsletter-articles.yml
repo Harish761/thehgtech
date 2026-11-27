@@ -1,75 +1,105 @@
 name: Send Newsletter (New Analysis)
 
+# Manual dispatch ONLY — editing or pushing articles/guides must NEVER
+# automatically send a live newsletter campaign to subscribers.
 on:
-  push:
-    paths:
-      - 'articles/**/*.html'
-      - 'guides/**/*.html'
-  
-  # Allow manual trigger
   workflow_dispatch:
     inputs:
       filepath:
-        description: 'Path to the article/guide HTML file'
+        description: 'Repo-relative path to article or guide HTML file (e.g., articles/my-article.html)'
         required: true
         type: string
+      confirm_live_send:
+        description: 'Type exactly SEND to dispatch a live Brevo campaign (any other value aborts unless dry_run is enabled)'
+        required: true
+        default: 'DRY-RUN'
+        type: string
+      dry_run:
+        description: 'Validate eligibility, path, noindex/redirect guards, and email HTML without sending via Brevo'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: newsletter-articles
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   send-newsletter:
     runs-on: ubuntu-latest
-    # Don't run on branch pushes, only main (or if manually triggered)
-    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-    
+    if: github.event_name == 'workflow_dispatch'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 2 # We need this to get the diff of the push
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install beautifulsoup4
-      
-      - name: Determine New Files
-        id: files
+
+      - name: Validate Inputs & Live-Send Confirmation
+        id: gate
+        env:
+          INPUT_FILEPATH: ${{ github.event.inputs.filepath }}
+          INPUT_CONFIRM: ${{ github.event.inputs.confirm_live_send }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            echo "FILEPATH=${{ github.event.inputs.filepath }}" >> $GITHUB_ENV
-          else
-            # Get added HTML files in articles/ or guides/
-            ADDED_FILES=$(git diff --name-only --diff-filter=A HEAD^ HEAD | grep -E '^(articles|guides)/.*\.html$' || true)
-            # Take the first one (in case multiple were pushed, though usually just one)
-            FIRST_FILE=$(echo "$ADDED_FILES" | head -n 1)
-            
-            if [ -z "$FIRST_FILE" ]; then
-              echo "No new HTML files found in push."
-              echo "SKIP_SEND=true" >> $GITHUB_ENV
-            else
-              echo "FILEPATH=$FIRST_FILE" >> $GITHUB_ENV
-              echo "SKIP_SEND=false" >> $GITHUB_ENV
-            fi
+          if [ -z "$INPUT_FILEPATH" ]; then
+            echo "❌ Safety Abort: 'filepath' input is required."
+            exit 1
           fi
 
-      - name: Send Article Newsletter via Brevo
-        if: env.SKIP_SEND != 'true'
+          if [ "$INPUT_DRY_RUN" = "true" ]; then
+            echo "ℹ️ Dry-run mode enabled. No live email will be sent."
+          else
+            if [ "$INPUT_CONFIRM" != "SEND" ]; then
+              echo "❌ Safety Abort: Live send requires exact confirmation 'SEND' (received: '$INPUT_CONFIRM')."
+              exit 1
+            fi
+            echo "✅ Explicit live-send confirmation ('SEND') verified."
+          fi
+
+      - name: Validate & Dispatch Article Newsletter via Brevo
+        id: dispatch
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          INPUT_FILEPATH: ${{ github.event.inputs.filepath }}
+          INPUT_CONFIRM: ${{ github.event.inputs.confirm_live_send }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: |
-          echo "Sending newsletter for: $FILEPATH"
-          python scripts/send_newsletter.py --type article --path "$FILEPATH"
-      
+          if [ "$INPUT_DRY_RUN" = "true" ]; then
+            python scripts/send_newsletter.py --type article --path "$INPUT_FILEPATH" --dry-run
+          else
+            python scripts/send_newsletter.py --type article --path "$INPUT_FILEPATH" --confirm-send "$INPUT_CONFIRM"
+          fi
+
       - name: Summary
         if: always()
+        env:
+          INPUT_FILEPATH: ${{ github.event.inputs.filepath }}
+          INPUT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          GATE_OUTCOME: ${{ steps.gate.outcome }}
+          DISPATCH_OUTCOME: ${{ steps.dispatch.outcome }}
         run: |
-          if [ "${{ env.SKIP_SEND }}" == "true" ]; then
-            echo "### ℹ️ No new articles detected to send." >> $GITHUB_STEP_SUMMARY
+          if [ "$GATE_OUTCOME" != "success" ]; then
+            echo "### 🛑 Newsletter Blocked by Safety Gate" >> $GITHUB_STEP_SUMMARY
+            echo "Confirmation or input validation failed for \`$INPUT_FILEPATH\`. Zero emails sent." >> $GITHUB_STEP_SUMMARY
+          elif [ "$DISPATCH_OUTCOME" != "success" ]; then
+            echo "### ❌ Newsletter Validation or Dispatch Failed" >> $GITHUB_STEP_SUMMARY
+            echo "Article \`$INPUT_FILEPATH\` failed pre-send safety checks or Brevo dispatch. Check logs." >> $GITHUB_STEP_SUMMARY
+          elif [ "$INPUT_DRY_RUN" = "true" ]; then
+            echo "### ✅ Newsletter Dry-Run Validated" >> $GITHUB_STEP_SUMMARY
+            echo "Article \`$INPUT_FILEPATH\` passed all pre-send checks. Zero emails sent." >> $GITHUB_STEP_SUMMARY
           else
-            echo "### 📧 Newsletter Sent: New Analysis" >> $GITHUB_STEP_SUMMARY
-            echo "Dispatched article '$FILEPATH' to Brevo API." >> $GITHUB_STEP_SUMMARY
+            echo "### 📧 Newsletter Processed: New Analysis" >> $GITHUB_STEP_SUMMARY
+            echo "Manual dispatch completed for \`$INPUT_FILEPATH\` (sent or skipped idempotently via Brevo digest check)." >> $GITHUB_STEP_SUMMARY
           fi
