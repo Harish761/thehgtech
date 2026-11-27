@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>Free GRC Tool: ISO 27001 & NIST Gap Analysis Engine</title>
 
     <!-- Open Graph -->
@@ -11,7 +12,7 @@
 
     <!-- Meta Tags for SEO -->
     <meta name="description"
-        content="Find your compliance gaps instantly. A free, offline-first GRC engine for ISO 27001, NIST CSF 2.0, and CIS Controls v8 gap analysis.">
+        content="Free client-side GRC gap analysis engine for ISO 27001:2022, NIST CSF 2.0, and CIS Controls v8. Works offline after initial page load with zero analytics scripts.">
     <meta name="keywords"
         content="ISO 27001 readiness, NIST CSF 2.0 assessment, CIS Controls v8 gap analysis, free GRC tool, cyber risk assessment, compliance automation, Statement of Applicability generator">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -21,14 +22,14 @@
     <meta property="og:url" content="https://thehgtech.com/tools/grc-assessment/">
     <meta property="og:title" content="Free GRC Tool: ISO 27001 & NIST Gap Analysis Engine">
     <meta property="og:description"
-        content="Find your compliance gaps instantly. A free, offline-first GRC engine for ISO 27001, NIST CSF 2.0, and CIS Controls v8 gap analysis.">
+        content="Free client-side GRC gap analysis engine for ISO 27001:2022, NIST CSF 2.0, and CIS Controls v8. Works offline after initial page load with zero analytics scripts.">
     <meta property="og:image" content="https://thehgtech.com/images/grc-assessment-og.jpg">
 
     <!-- Twitter Details -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Free GRC Tool: ISO 27001 & NIST Gap Analysis Engine">
     <meta name="twitter:description"
-        content="Find your compliance gaps instantly. A free, offline-first GRC engine for ISO 27001, NIST CSF 2.0, and CIS Controls v8 gap analysis.">
+        content="Free client-side GRC gap analysis engine for ISO 27001:2022, NIST CSF 2.0, and CIS Controls v8. Works offline after initial page load with zero analytics scripts.">
     <meta name="twitter:image" content="https://thehgtech.com/images/grc-assessment-og.jpg">
 
     <!-- Canonical URL -->
@@ -47,23 +48,9 @@
         "price": "0",
         "priceCurrency": "USD"
       },
-      "description": "Free GRC engine for ISO 27001, NIST CSF 2.0, and CIS Controls v8. Conduct a complete 100% offline gap analysis securely in your browser with zero data exfiltration.",
+      "description": "Free client-side GRC gap analysis engine for ISO/IEC 27001:2022, NIST CSF 2.0, and CIS Controls v8. Runs locally in your browser with zero client-side analytics scripts and works offline after initial page load.",
       "url": "https://thehgtech.com/tools/grc-assessment/"
     }
-    </script>
-
-    <!-- ========== PERFORMANCE: Preconnect ========== -->
-    <link rel="preconnect" href="https://t.fullres.net" crossorigin>
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//t.fullres.net">
-
-    <!-- ========== GOOGLE ANALYTICS 4 (Deferred for Performance) ========== -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XL6RCXZJE2');
     </script>
 
     <!-- Design System CSS -->
@@ -76,12 +63,11 @@
     <link rel="stylesheet" href="../../ui-enhancements.css">
 
     <script src="../../m-app.js?v=20260528_coffee" defer></script>
-    <script src="../../theme-toggle.js" defer></script>
 
-    <!-- Base Assets -->
+    <!-- Base Assets (Self-Hosted) -->
     <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
 
     <!-- GRC Specific CSS -->
     <link rel="stylesheet" href="grc-engine.css?v=3">
@@ -605,7 +591,7 @@
                 </div>
                 <div class="strip-group">
                     <div class="strip-item"><i class="fas fa-stopwatch"></i> ~10-15 MIN DURATION</div>
-                    <div class="strip-item"><i class="fas fa-lock"></i> 100% PRIVATE / NO DATA SENT</div>
+                    <div class="strip-item"><i class="fas fa-lock"></i> CLIENT-SIDE / ZERO TELEMETRY</div>
                     <div id="prevPerformanceStrip" class="strip-item" style="color:var(--accent-cyan); display:none; border:1px solid rgba(0,217,255,0.3); padding:2px 8px; border-radius:4px; background:rgba(0,217,255,0.05);">
                         <i class="fas fa-history"></i> LAST SCORE: <span id="lastScoreVal">--%</span>
                     </div>
@@ -615,7 +601,7 @@
 
         <div class="hero-content" style="position: relative; z-index: 2;">
             <div class="hero-badge">
-                <i class="fas fa-microchip"></i> 100% LOCAL PROCESSING ENGINE
+                <i class="fas fa-microchip"></i> CLIENT-SIDE PROCESSING ENGINE
             </div>
             <h1 class="grc-hero-title">
                 Multi-Framework <span class="gradient-text">GRC Engine</span>
@@ -623,8 +609,8 @@
             <div class="success-box" style="margin-top: 1rem; margin-bottom: 2rem; max-width: 800px; text-align: left; background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2);">
                 <ul style="color: var(--text-secondary); margin-bottom: 0; padding-left: 1.25rem; line-height: 1.6; font-size: 0.95rem;">
                     <li><strong>What it is:</strong> A browser-native decision engine for <span style="color:var(--text-primary); font-weight:800; border-bottom: 2px solid var(--accent-cyan-glow);">ISO 27001:2022</span>, <span style="color:#0A84FF; font-weight:800;">NIST CSF 2.0</span>, <span style="color:#FF9F0A; font-weight:800;">CIS v8</span>, <span style="color:#8B5CF6; font-weight:800;">GDPR</span>, and <span style="color:#EC4899; font-weight:800;">SOC 2</span>.</li>
-                    <li><strong>Why it matters:</strong> Instantly map your compliance gaps and generate a Risk Register without sending your data anywhere.</li>
-                    <li><strong>What you get:</strong> Wizard Mode, JSON collaboration, and a 100% offline, deterministic assessment.</li>
+                    <li><strong>Privacy by design:</strong> Runs zero client-side analytics or ad scripts; control answers, scores, and PDF/Excel/JSON exports stay strictly in your browser (<code>localStorage</code>) and work offline once loaded.</li>
+                    <li><strong>Transparency note:</strong> Initial static asset delivery via GitHub Pages &amp; Cloudflare processes normal HTTPS request metadata (IP address &amp; requested file path). Optional shareable <code>#s=</code> URL fragments are not sent in HTTP requests, but are unencrypted and visible in browser history, copied URLs, and screenshots.</li>
                 </ul>
             </div>
         </div>
@@ -854,7 +840,7 @@
                     <button class="btn-nav" id="btnBackToEngine"><i class="fas fa-arrow-left"></i> Back to
                         Assessment</button>
                     <div class="dashboard-export-actions">
-                        <button class="btn-share-state" id="btnShareState">
+                        <button class="btn-share-state" id="btnShareState" title="Copies a #s= fragment URL. Not encrypted — visible in browser history, copied URLs, and screenshots.">
                             <i class="fas fa-link"></i> Get Shareable Link
                         </button>
                         <button class="btn-nav" id="btnGoToRiskRegister" style="background:rgba(139,92,246,0.1); color:#C4B5FD; border:1px solid rgba(139,92,246,0.3); padding:0.5rem 1rem; border-radius:8px; font-size:0.8rem; font-weight:700; cursor:pointer;">
@@ -869,6 +855,10 @@
                         </button>
                     </div>
                 </div>
+                <p id="shareFragmentNotice" style="margin:0 0 1.25rem; padding:0.65rem 1rem; border-radius:10px; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.28); color:var(--text-muted); font-size:0.78rem; line-height:1.5;">
+                    <i class="fas fa-triangle-exclamation" style="color:#F59E0B; margin-right:6px;"></i>
+                    <strong>Shareable Link Privacy Note:</strong> Assessment links store Base64-encoded state in the URL fragment (<code>#s=</code>), which is not sent in HTTP requests to servers, but is <strong>not encrypted or private</strong> — it remains visible in browser history, copied links, and screenshots. Use <strong>Export JSON</strong> when sharing sensitive assessments over encrypted channels.
+                </p>
 
                 <!-- Printable Area -->
                 <div id="printableDashboard" class="dashboard-printable">
@@ -1132,7 +1122,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p style="color:var(--text-muted); font-size:0.75rem; margin-top:1rem; text-align:center;"><i class="fas fa-lock"></i> All data stays in your browser. Nothing is sent to any server.</p>
+                <p style="color:var(--text-muted); font-size:0.75rem; margin-top:1rem; text-align:center;"><i class="fas fa-lock"></i> Assessment responses and risk register entries stay in your browser (<code>localStorage</code>) and are never submitted to a backend.</p>
             </div>
 
         </div>
@@ -1154,13 +1144,12 @@
                     <i class="fas fa-redo"></i> Start Fresh
                 </button>
             </div>
-            <p style="color:var(--text-muted); font-size:0.7rem; margin-top:1.5rem;"><i class="fas fa-lock"></i> All data is stored exclusively in your browser.</p>
+            <p style="color:var(--text-muted); font-size:0.7rem; margin-top:1.5rem;"><i class="fas fa-lock"></i> Assessment responses are stored locally in your browser.</p>
         </div>
     </div>
 
-    <!-- UX Enhancements -->
+    <!-- UX Enhancements (Single-Loaded, Zero Background Telemetry) -->
     <script src="../../command-palette.js" defer></script>
-    <script src="../../ui-enhancements.js" defer></script>
     <script src="../../toast.js" defer></script>
     <script src="../../keyboard-shortcuts.js" defer></script>
 
@@ -1177,30 +1166,20 @@
             <a href="#" onclick="openModal('contact'); return false;" style="color: #00d9ff; text-decoration: none; margin: 0 0.5rem;">Contact</a>
         </p>
         <p style="color: #666; font-size: 0.8rem; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.5;">
-            <strong>Disclaimer:</strong> This tool provides a deterministic gap analysis and does not constitute formal legal or compliance certification. All data remains exclusively within your local browser.<br><br>
+            <strong>Disclaimer &amp; Privacy Architecture:</strong> This tool provides a deterministic client-side gap analysis and does not constitute formal legal or compliance certification. Zero analytics or tracking scripts execute in this tool; assessment answers and exports remain in your browser and work offline after initial page load. Initial static file delivery via GitHub Pages &amp; Cloudflare processes ordinary HTTPS request metadata (IP address and requested file path). Optional shareable <code>#s=</code> URL fragments are not sent in HTTP requests but are unencrypted and visible in browser history, copied links, and screenshots.<br><br>
             <em>ISO and ISO 27001 are registered trademarks of the International Organization for Standardization. TheHGTech GRC Engine is an independent assessment aid mapping to generic governance concepts and is not affiliated with, endorsed by, or a substitute for the official ISO standard. Users must obtain the official standard directly from ISO or their national standards body.</em>
         </p>
     </footer>
 
-    <!-- External Libs -->
-    <!-- Data & Export Libraries (Already included later) -->
-
-    <!-- Carbon Ads via Fullres -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-
-    
     <!-- Modals -->
     <div class="modal" id="aboutModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('about')">&times;</button>
-            <div id="aboutContent"></div>
+            <div id="aboutContent">
+                <h2>About TheHGTech</h2>
+                <p style="color: var(--text-secondary); line-height: 1.7;">TheHGTech is an independent cybersecurity research and practitioner engineering platform providing threat intelligence, vulnerability tracking, security guides, and client-side assessment tools.</p>
+                <p style="color: var(--text-secondary); line-height: 1.7;">Learn more on our <a href="/about.html" style="color: #00d9ff;">About page</a> or explore the <a href="/tools/grc-assessment/iso27001-grc-guide.html" style="color: #00d9ff;">GRC Methodology &amp; User Guide</a>.</p>
+            </div>
         </div>
     </div>
 
@@ -1296,69 +1275,30 @@
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('privacy')">&times;</button>
             <div id="privacyContent">
-                <h2>Privacy Policy</h2>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last Updated: June 2026</p>
+                <h2>GRC Tool Privacy Architecture</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last Updated: November 2026</p>
 
-                <h3>Information We Collect</h3>
-                <p>TheHGTech is committed to protecting your privacy. We collect minimal information necessary to
-                    provide our services:</p>
+                <h3>1. Zero Client-Side Analytics or Third-Party Tracking</h3>
+                <p>TheHGTech GRC Assessment Engine (<code>/tools/grc-assessment/</code>) loads <strong>zero client-side analytics scripts, ad scripts, or third-party CDNs</strong>. All charting, spreadsheet, PDF export, and icon assets are self-hosted on TheHGTech.</p>
+
+                <h3>2. Local-Only Assessment Processing &amp; Offline Operation</h3>
                 <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                    <li>Usage data (pages visited, time spent, browser type) via Google Analytics</li>
-                    <li>Cookies for theme preferences and site functionality</li>
+                    <li>Control answers, justifications, risk register decisions, and session history are stored strictly in your browser&apos;s <code>localStorage</code>.</li>
+                    <li>JSON, Excel (<code>.xlsx</code>), and PDF reports are generated locally in memory and never uploaded to TheHGTech.</li>
+                    <li>After the page loads initially, assessment navigation, scoring, crosswalks, charts, JSON save/restore, and PDF/XLSX exports continue working without network connectivity. Cold-reloading the URL while disconnected requires network access (no service-worker offline cache is installed).</li>
                 </ul>
 
-                <h3>Third-Party Services</h3>
-                <p>We use the following third-party services that may collect data:</p>
-                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                    <li><strong>Google Analytics:</strong> For anonymous traffic analysis</li>
-                    <li><strong>Carbon Ads (via Fullres):</strong> For displaying privacy-friendly advertisements</li>
-                    <li><strong>GraphComment:</strong> For managing article comments and reactions. See the <a href="https://graphcomment.com/en/privacy-policy/" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">GraphComment Privacy Policy</a></li>
-                </ul>
+                <h3>3. Shareable URL Fragments (<code>#s=</code>)</h3>
+                <p>When you answer controls or click <strong>Get Shareable Link</strong>, your state is stored in the URL fragment (<code>#s=...</code>), never in HTTP query parameters (<code>?s=</code>). Although URL fragments are not transmitted in HTTP requests, <strong>shareable fragments are Base64-encoded and NOT encrypted or private</strong> — they can be seen in your browser address bar, browser history, copied URLs, and screenshots.</p>
 
-                <h3>Advertising</h3>
-                <p>We display advertisements through Carbon Ads, a privacy-focused ad network. Carbon Ads:</p>
-                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                    <li>Does NOT use cookies for tracking</li>
-                    <li>Does NOT collect personal information</li>
-                    <li>Only uses contextual targeting based on page content</li>
-                    <li>Serves ads from ethical, vetted technology companies</li>
-                </ul>
-                <p>Learn more: <a href="https://www.carbonads.net/privacy" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent);">Carbon Ads Privacy Policy</a></p>
+                <h3>4. Standard Hosting &amp; CDN Request Metadata</h3>
+                <p>Static application files (HTML, CSS, JavaScript, and fonts) are delivered over HTTPS via <strong>GitHub Pages</strong> and <strong>Cloudflare</strong>. As with any website, these infrastructure providers process standard network transport metadata (such as IP address, TLS metadata, User-Agent, and requested static asset path) to serve the files and protect against abuse. Neither provider receives your assessment answers or exported files.</p>
 
-                <h3>Cookies</h3>
-                <p>We use minimal cookies for:</p>
-                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                    <li>Remembering your dark/light theme preference</li>
-                    <li>Tracking cookie consent (if accepted)</li>
-                </ul>
+                <h3>5. Browser Preferences</h3>
+                <p>We use browser <code>localStorage</code> solely to remember your dark/light theme choice and local assessment progress. You can clear all assessment data anytime via the Reset button.</p>
 
-                <h3>Data Security</h3>
-                <p>We implement industry-standard security measures including HTTPS, Content Security Policy (CSP), and
-                    HSTS to protect your information.</p>
-
-                <h3>Your Rights</h3>
-                <p>You have the right to:</p>
-                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                    <li>Access any personal data we hold about you</li>
-                    <li>Request deletion of your data</li>
-                    <li>Opt-out of analytics by using browser privacy settings</li>
-                    <li>Use ad blockers to prevent ad display</li>
-                </ul>
-
-                <h3>External Links</h3>
-                <p>Our site contains links to external websites. We are not responsible for the privacy practices of
-                    these sites.</p>
-
-                <h3>Changes to Policy</h3>
-                <p>We may update this policy periodically. The "Last Updated" date will reflect any changes.</p>
-
-                <h3>Contact</h3>
-                <p>For privacy concerns, contact us at: <a href="#"
-                        onclick="this.href='mai'+'lto:'+'harish'+'@'+'thehgtech'+'.com'"
-                        style="color: var(--accent);"><span class="__cf_email__"
-                            data-cfemail="8ce4edfee5ffe4ccf8e4e9e4ebf8e9efe4a2efe3e1">[email&#160;protected]</span></a>
-                </p>
+                <h3>6. Contact</h3>
+                <p>For privacy concerns or site-wide policy details (<a href="/privacy.html" style="color: var(--accent);">Site Privacy Policy</a>), contact us at: <a href="mailto:harish@thehgtech.com" style="color: var(--accent);">harish@thehgtech.com</a>.</p>
             </div>
         </div>
     </div>
@@ -1411,13 +1351,10 @@
                 <li><strong>Flexible Options:</strong> Sponsored content, banner ads, newsletter features</li>
             </ul>
             <h3>Contact for Advertising</h3>
-            <p>Email: <a href="/cdn-cgi/l/email-protection#dab2bba8b3a9b29aaeb2bfb2bdaebfb9b2f4b9b5b7"
-                    style="color: var(--accent);"><span class="__cf_email__"
-                        data-cfemail="a9c1c8dbc0dac1e9ddc1ccc1ceddcccac187cac6c4">[email&#160;protected]</span></a></p>
+            <p>Email: <a href="mailto:harish@thehgtech.com" style="color: var(--accent);">harish@thehgtech.com</a></p>
             <p>Subject line: "Advertising Inquiry"</p>
         </div>
     </div>
-    <script src="../../content.js?v=20260311" defer></script>
     
     <script>
         function openModal(type) {
@@ -1452,54 +1389,12 @@
             }
         }
 
-        function loadModalContent() {
-            if (typeof websiteContent === 'undefined' || !websiteContent.modals) return;
-
-            const aboutEl = document.getElementById('aboutContent');
-            const privacyEl = document.getElementById('privacyContent');
-            const termsEl = document.getElementById('termsContent');
-
-            if (aboutEl && websiteContent.modals.about) {
-                aboutEl.innerHTML = websiteContent.modals.about;
-            }
-            if (privacyEl && websiteContent.modals.privacy) {
-                privacyEl.innerHTML = websiteContent.modals.privacy;
-            }
-            if (termsEl && websiteContent.modals.terms) {
-                termsEl.innerHTML = websiteContent.modals.terms;
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            // Give time for content.js to load
-            setTimeout(loadModalContent, 100);
-            
-            // Handle hash
             const hash = window.location.hash.substring(1);
             if (['about', 'privacy', 'terms', 'contact'].includes(hash)) {
                 openModal(hash);
             }
         });
-
-        // Search scripts lazy loader
-        function lazyLoadScript(src) {
-            var s = document.createElement('script');
-            s.src = src;
-            s.defer = true;
-            document.body.appendChild(s);
-        }
-        function loadEnhancementScripts() {
-            var scripts = [
-                '/command-palette.js',
-                '/ui-enhancements.js?v=20260517'
-            ];
-            scripts.forEach(function (src) { lazyLoadScript(src); });
-        }
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(loadEnhancementScripts, { timeout: 3000 });
-        } else {
-            setTimeout(loadEnhancementScripts, 2000);
-        }
     </script>
 
     <!-- Reset Confirmation Modal -->
@@ -1530,14 +1425,14 @@
         </div>
     </div>
 
-    <!-- Data & Export Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Data & Export Libraries (Self-Hosted for Offline Execution) -->
+    <script src="vendor/pdfmake.min.js"></script>
+    <script src="vendor/vfs_fonts.js"></script>
+    <script src="vendor/xlsx.full.min.js"></script>
+    <script src="vendor/chart.umd.min.js"></script>
 
     <script src="grc-data.js?v=2"></script>
-    <script src="grc-engine.js?v=2"></script>
+    <script src="grc-engine.js?v=3"></script>
     <script src="/mobile-nav.js" defer></script>
 </body>
 

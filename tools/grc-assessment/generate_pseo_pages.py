@@ -1,17 +1,13 @@
 import json
 import re
-import os
+from pathlib import Path
 
-def extract_json_from_js(js_path):
-    with open(js_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-        
-    # Extract the JSON part from const THEHGTECH_GRC_DATA = { ... };
-    match = re.search(r'const THEHGTECH_GRC_DATA = (\{.*?\});', content, re.DOTALL)
+
+def extract_json_from_js(js_path: Path):
+    content = js_path.read_text(encoding="utf-8")
+    match = re.search(r"const THEHGTECH_GRC_DATA = (\{.*?\});", content, re.DOTALL)
     if match:
         json_str = match.group(1)
-        # It's actually a JS object, but mostly valid JSON. We might need to handle trailing commas or comments.
-        # But looking at grc-data.js, it's strictly formatted. Let's try json.loads.
         try:
             return json.loads(json_str)
         except json.JSONDecodeError as e:
@@ -19,23 +15,29 @@ def extract_json_from_js(js_path):
             return None
     return None
 
+
+def make_safe_id(control_id: str) -> str:
+    return re.sub(r"[^a-z0-9\-]", "", control_id.replace(" ", "-").lower())
+
+
 def generate_html(control, domain):
-    control_id = control.get('control_id', '').replace(' ', '-').lower()
-    control_title = control.get('control_title', '')
-    
-    # Clean up the ID for the filename
-    safe_id = re.sub(r'[^a-z0-9\-]', '', control_id)
+    safe_id = make_safe_id(control.get("control_id", ""))
+    control_title = control.get("control_title", "")
     filename = f"iso-27001-{safe_id}-guide.html"
-    
+    canonical_url = f"https://thehgtech.com/tools/grc-assessment/controls/{filename}"
+    page_title = f"ISO 27001 {control_title} | Gap Analysis & Evidence Guide"
+
     template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="robots" content="noindex, follow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISO 27001 {control_title} | Gap Analysis & Evidence Guide</title>
+    <meta name="referrer" content="no-referrer">
+    <title>{page_title}</title>
     <meta name="description" content="Free expert guidance, evidence requirements, and remediation advice for ISO 27001 {control_title}. Part of TheHGTech's free GRC Engine.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/m-core.css">
     <link rel="stylesheet" href="/m-layout.css">
@@ -47,6 +49,11 @@ def generate_html(control, domain):
         .card h3 {{ color: #00d9ff; margin-top: 0; }}
         .cta-btn {{ display: inline-block; background: #00d9ff; color: #000; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 20px; }}
     </style>
+
+    <script src="/theme-toggle.js" defer></script>
+    <link rel="canonical" href="{canonical_url}">
+    <meta property="og:url" content="{canonical_url}">
+    <meta property="og:title" content="{page_title}">
 </head>
 <body>
     <div class="container">
@@ -85,72 +92,23 @@ def generate_html(control, domain):
             <a href="/tools/grc-assessment/" class="cta-btn">Start Free Gap Analysis</a>
         </div>
     </div>
-
-    <!-- Carbon Ads via Fullres -->
-    <script>
-        (function () {{
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        }})();
-    </script>
-
-    <!-- Google Analytics 4 -->
-    <script>
-        window.addEventListener('load', function () {{
-            setTimeout(function () {{
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-
-                gtmScript.onload = function () {{
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() {{ dataLayer.push(arguments); }}
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                }};
-            }}, 500); // Small delay to prioritize visual rendering
-        }});
-    </script>
 </body>
 </html>
 """
     return filename, template
 
-def main():
-    js_path = '/Volumes/Data-Personal/Webpage/thehgtech/tools/grc-assessment/grc-data.js'
-    data = extract_json_from_js(js_path)
-    
-    if not data:
-        print("Failed to load data")
-        return
-        
-    out_dir = '/Volumes/Data-Personal/Webpage/thehgtech/tools/grc-assessment/controls'
-    os.makedirs(out_dir, exist_ok=True)
-    
-    count = 0
-    for domain in data.get('domains', []):
-        for control in domain.get('controls', []):
-            filename, html = generate_html(control, domain)
-            filepath = os.path.join(out_dir, filename)
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(html)
-            count += 1
-            
-    print(f"Generated {count} PSEO pages in {out_dir}")
-            
-    # Generate Glossary Index
+
+def generate_glossary_index(data) -> str:
     glossary_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>ISO 27001 Controls & Clauses Glossary | TheHGTech</title>
     <meta name="description" content="Complete glossary and evidence guide for all ISO 27001 clauses and Annex A controls.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
     <link rel="stylesheet" href="/header.css">
     <link rel="stylesheet" href="/m-core.css">
     <link rel="stylesheet" href="/m-layout.css">
@@ -162,6 +120,11 @@ def main():
         .grid a { color: #00d9ff; text-decoration: none; padding: 10px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; }
         .grid a:hover { background: rgba(255,255,255,0.1); }
     </style>
+
+    <script src="/theme-toggle.js" defer></script>
+    <link rel="canonical" href="https://thehgtech.com/tools/grc-assessment/controls/">
+    <meta property="og:url" content="https://thehgtech.com/tools/grc-assessment/controls/">
+    <meta property="og:title" content="ISO 27001 Controls & Clauses Glossary | TheHGTech">
 </head>
 <body>
     <div class="container">
@@ -170,53 +133,47 @@ def main():
         <p>Expert rationale, evidence requirements, and remediation advice for every ISO 27001 requirement.</p>
         <div class="grid">
 """
-    for domain in data.get('domains', []):
+    for domain in data.get("domains", []):
         glossary_html += f"<h2 style='margin-top:30px; color:#fff;'>{domain.get('name', '')}</h2>\n"
-        for control in domain.get('controls', []):
-            control_id = control.get('control_id', '').replace(' ', '-').lower()
-            safe_id = re.sub(r'[^a-z0-9\-]', '', control_id)
+        for control in domain.get("controls", []):
+            safe_id = make_safe_id(control.get("control_id", ""))
             filename = f"iso-27001-{safe_id}-guide.html"
-            control_title = control.get('control_title', '')
-            glossary_html += f"            <a href='{filename}'>{control_title}</a>\n"
-            
+            control_title = control.get("control_title", "")
+            glossary_html += f'            <a href="{filename}">{control_title}</a>\n'
+
     glossary_html += """        </div>
     </div>
-
-    <!-- Carbon Ads via Fullres -->
-    <script>
-        (function () {
-            var fullres = document.createElement('script');
-            fullres.async = true;
-            fullres.src = 'https://t.fullres.net/thehgtech.js?' + (new Date() - new Date() % 43200000);
-            document.head.appendChild(fullres);
-        })();
-    </script>
-
-    <!-- Google Analytics 4 -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                var gtmScript = document.createElement('script');
-                gtmScript.async = true;
-                gtmScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XL6RCXZJE2';
-                document.head.appendChild(gtmScript);
-
-                gtmScript.onload = function () {
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag() { dataLayer.push(arguments); }
-                    window.gtag = gtag;
-                    gtag('js', new Date());
-                    gtag('config', 'G-XL6RCXZJE2');
-                };
-            }, 500);
-        });
-    </script>
 </body>
-</html>"""
-    
-    with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
-        f.write(glossary_html)
+</html>
+"""
+    return glossary_html
+
+
+def main():
+    base_dir = Path(__file__).resolve().parent
+    js_path = base_dir / "grc-data.js"
+    data = extract_json_from_js(js_path)
+
+    if not data:
+        print("Failed to load data")
+        return
+
+    out_dir = base_dir / "controls"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    count = 0
+    for domain in data.get("domains", []):
+        for control in domain.get("controls", []):
+            filename, html = generate_html(control, domain)
+            (out_dir / filename).write_text(html, encoding="utf-8")
+            count += 1
+
+    print(f"Generated {count} PSEO pages in {out_dir}")
+
+    glossary_html = generate_glossary_index(data)
+    (out_dir / "index.html").write_text(glossary_html, encoding="utf-8")
     print("Generated glossary index.html")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

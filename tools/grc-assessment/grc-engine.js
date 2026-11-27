@@ -305,23 +305,137 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
         document.getElementById('btnWBFresh').addEventListener('click', () => {
             if (confirm('This will permanently delete your saved session. Are you sure?')) {
-                localStorage.removeItem(STORAGE_KEY);
-                localStorage.removeItem(RISK_REGISTER_KEY);
-                localStorage.removeItem(REMEDIATION_KEY);
-                const url = new URL(window.location);
-                url.searchParams.delete('s');
-                window.history.replaceState({}, '', url);
-                location.reload();
+                resetSessionInPlace();
             }
         });
     })();
 
-    // --- NEW: URL Persistence Support ---
+    // Offline-safe session reset & UI resync (avoids page reload so offline sessions keep working)
+    function resetSessionInPlace() {
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(RISK_REGISTER_KEY);
+        localStorage.removeItem(REMEDIATION_KEY);
+        userState = {};
+        riskRegisterState = {};
+        remediationState = {};
+        activeDomainIndices = [];
+        currentNavIndex = 0;
+        currentControlIndex = 0;
+        clearURLState();
+
+        const wbModal = document.getElementById('welcomeBackModal');
+        if (wbModal) wbModal.style.display = 'none';
+        if (ui.resetModal) ui.resetModal.style.display = 'none';
+
+        const viewRisk = document.getElementById('viewRiskRegister');
+        if (viewRisk) {
+            viewRisk.style.display = 'none';
+            viewRisk.classList.remove('active');
+        }
+        if (ui.viewDashboard) {
+            ui.viewDashboard.style.display = 'none';
+            ui.viewDashboard.classList.remove('active');
+        }
+        if (ui.viewEngine) {
+            ui.viewEngine.style.display = 'none';
+            ui.viewEngine.classList.remove('active');
+        }
+        if (ui.viewScope) {
+            ui.viewScope.style.display = 'block';
+            ui.viewScope.classList.add('active');
+        }
+        if (grcData) {
+            initScopeSelection();
+            updateOverallScore();
+        }
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    }
+
+    function refreshUIFromState() {
+        if (!grcData) return;
+        activeDomainIndices = [];
+        grcData.domains.forEach((dom, index) => {
+            const hasAnswers = dom.controls.some(c => userState[c.control_id]);
+            const inSavedScope = Array.isArray(userState._activeDomains) && userState._activeDomains.includes(index);
+            if (dom.isMandatory || inSavedScope || hasAnswers) {
+                activeDomainIndices.push(index);
+            }
+        });
+        if (activeDomainIndices.length === 0) {
+            activeDomainIndices = grcData.domains.map((_, idx) => idx);
+        }
+        activeDomainIndices.sort((a, b) => a - b);
+        if (currentNavIndex >= activeDomainIndices.length) currentNavIndex = 0;
+
+        const isDashboardVisible = ui.viewDashboard && ui.viewDashboard.style.display !== 'none';
+        const isEngineVisible = ui.viewEngine && ui.viewEngine.style.display !== 'none';
+        if (isDashboardVisible) {
+            updateOverallScore();
+            generateDashboard();
+        } else if (isEngineVisible) {
+            renderSidebarNav();
+            renderDomain(activeDomainIndices[currentNavIndex]);
+            updateSidebarActiveState();
+            updateOverallScore();
+        } else {
+            initScopeSelection();
+            updateOverallScore();
+        }
+    }
+
+    // --- URL Fragment Persistence (#s=) with Legacy ?s= Migration ---
+    // Note: URL fragments (#s=) are never sent in HTTP requests to servers/CDNs,
+    // but Base64-encoded state is NOT encrypted or private: it remains visible in
+    // the browser address bar, browser history, copied links, and screenshots.
+    function encodeStateBase64(obj) {
+        const jsonStr = JSON.stringify(obj);
+        try {
+            const bytes = new TextEncoder().encode(jsonStr);
+            let binary = '';
+            bytes.forEach(b => { binary += String.fromCharCode(b); });
+            return btoa(binary);
+        } catch (e) {
+            return btoa(unescape(encodeURIComponent(jsonStr)));
+        }
+    }
+
+    function decodeStateBase64(rawStr) {
+        const cleaned = decodeURIComponent(rawStr);
+        const binary = atob(cleaned);
+        try {
+            const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
+            return JSON.parse(new TextDecoder().decode(bytes));
+        } catch (e) {
+            return JSON.parse(binary);
+        }
+    }
+
+    function extractHashState(hashStr) {
+        if (!hashStr) return null;
+        const trimmed = hashStr.startsWith('#') ? hashStr.slice(1) : hashStr;
+        if (trimmed.startsWith('s=')) {
+            return trimmed.slice(2);
+        }
+        const params = new URLSearchParams(trimmed);
+        return params.get('s');
+    }
+
+    function clearURLState() {
+        const url = new URL(window.location.href);
+        url.searchParams.delete('s');
+        if (extractHashState(url.hash) !== null) {
+            url.hash = '';
+        }
+        window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+    }
+
     function updateURLState() {
-        const stateStr = btoa(JSON.stringify(userState));
-        const url = new URL(window.location);
-        url.searchParams.set('s', stateStr);
-        window.history.replaceState({}, '', url);
+        const stateStr = encodeStateBase64(userState);
+        const url = new URL(window.location.href);
+        // Never keep assessment state in HTTP query parameters
+        url.searchParams.delete('s');
+        url.hash = 's=' + encodeURIComponent(stateStr);
+        window.history.replaceState({}, '', url.pathname + url.search + url.hash);
         // Persist timestamp for completion tracking
         if (!userState._started) {
             userState._started = Date.now();
@@ -330,15 +444,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function loadURLState() {
-        const params = new URLSearchParams(window.location.search);
-        const s = params.get('s');
-        if (s) {
+        const url = new URL(window.location.href);
+        const legacyQueryState = url.searchParams.get('s');
+        const hashState = extractHashState(url.hash);
+        const rawState = hashState || legacyQueryState;
+
+        if (rawState) {
             try {
-                const decoded = JSON.parse(atob(s));
-                userState = { ...userState, ...decoded };
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+                const decoded = decodeStateBase64(rawState);
+                if (decoded && typeof decoded === 'object') {
+                    userState = { ...userState, ...decoded };
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(userState));
+                }
+                // Migrate any legacy ?s= query parameter to #s= without reload
+                if (legacyQueryState) {
+                    url.searchParams.delete('s');
+                    url.hash = 's=' + encodeURIComponent(rawState);
+                    window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+                }
             } catch (e) {
                 console.error("Failed to load state from URL", e);
+                if (legacyQueryState) {
+                    url.searchParams.delete('s');
+                    window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+                }
             }
         }
     }
@@ -381,6 +510,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     // ==========================================
     function initScopeSelection() {
         ui.scopeGrid.innerHTML = '';
+        if (ui.scopeGrid.parentNode) {
+            ui.scopeGrid.parentNode.querySelectorAll('.selection-toolbar, .industry-preset-bar').forEach(el => el.remove());
+        }
 
         // Consultant logic for recommendations
         const recommendations = {
@@ -1408,14 +1540,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (ui.btnConfirmReset) {
         ui.btnConfirmReset.addEventListener('click', () => {
-            localStorage.removeItem(STORAGE_KEY);
-            // Also clear the URL state for a true clean start
-            const url = new URL(window.location);
-            url.searchParams.delete('s');
-            window.history.replaceState({}, '', url);
-            
-            // Reload to start fresh
-            location.reload();
+            resetSessionInPlace();
         });
     }
 
@@ -2882,18 +3007,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
-    // Share Link Handler
+    // Share Link Handler (uses #s= fragment; never HTTP query parameters)
     if (ui.btnShareState) {
         ui.btnShareState.addEventListener('click', () => {
             updateURLState();
             const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
+            const showCopied = () => {
                 const originalText = ui.btnShareState.innerHTML;
-                ui.btnShareState.innerHTML = '<i class="fas fa-check"></i> Link Copied!';
+                ui.btnShareState.innerHTML = '<i class="fas fa-check"></i> Fragment Link Copied';
+                const notice = document.getElementById('shareFragmentNotice');
+                if (notice) {
+                    notice.style.display = 'block';
+                }
+                if (window.toastSystem && typeof window.toastSystem.info === 'function') {
+                    window.toastSystem.info('Copied #s= fragment link (not encrypted — visible in browser history, copied URLs & screenshots).');
+                }
                 setTimeout(() => {
                     ui.btnShareState.innerHTML = originalText;
-                }, 2000);
-            });
+                }, 2500);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(showCopied).catch(showCopied);
+            } else {
+                showCopied();
+            }
         });
     }
 
@@ -3017,10 +3154,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     });
                     
                     persistState();
+                    updateURLState();
+                    refreshUIFromState();
                     alert("Assessment data imported successfully!");
-                    
-                    // Reload UI to reflect new state
-                    location.reload();
                     
                 } catch (error) {
                     alert("Error parsing JSON file. Please ensure it is a valid GRC export.");
