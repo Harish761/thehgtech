@@ -1,0 +1,59 @@
+# GitHub Pages (Jekyll 3.9) static build allow/exclude configuration
+# IMPORTANT: Do NOT add .nojekyll — Jekyll processing is intentionally preserved
+# so internal documentation, scripts, prototypes, and raw IOC source stores
+# are excluded from https://thehgtech.com/.
+
+include:
+  - ".well-known"
+
+exclude:
+  # Preserve Jekyll 3.9 built-in default exclusions (custom exclude overwrites defaults)
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+
+  # Internal root & nested directories
+  - "_internal"
+  - "data/ioc-source"
+  - "scripts"
+  - "tests"
+  - "docs"
+  - "templates"
+  - "components"
+  - "mobile_backup"
+  - "linkedin-carousels"
+  - "linkedin-posts"
+  - "social"
+  - "images/linkedin"
+  - "tools/grc-assessment/linkedin-carousel"
+
+  # Internal documentation & script wildcards (root and nested)
+  - "*.md"
+  - "*.py"
+  - "*.sh"
+  - "check_*.js"
+  - "**/check_*.js"
+  - "test-*.js"
+  - "**/test-*.js"
+
+  # Explicit internal root & nested files
+  - ".htaccess"
+  - "requirements.txt"
+  - "bounty_bot_requirements.txt"
+  - "anthropic-linkedin-viral-post.txt"
+  - "eval_scripts.js"
+  - "find_broken_script.js"
+  - "homepage-mockup.html"
+  - "homepage-experiment.html"
+  - "homepage-test.html"
+  - "ti-snapshot.html"
+  - "ti-hero-animation.html"
+  - "test_breach_output.html"
+  - "m-nav-template.html"
+  - "template-nav.html"
+  - "assets/brand/preview.html"
+  - "images/articles/fortigate-linkedin-card.png"
