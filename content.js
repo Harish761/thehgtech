@@ -4,6 +4,96 @@
 const websiteContent = {
     "cyberShorts": [
         {
+            "date": "Nov 27 2026",
+            "headline": "Hex.pm Bug Exposes Servers—No Data Tampering Found",
+            "title": "Hex Package Manager Warns of Potential Data Breach Due to Unlogged Database Reads",
+            "content": "A vulnerability in the Hex Package Manager (hex.pm) allowed attackers to execute arbitrary commands on underlying web servers. The company found no evidence that hackers modified data, though database read operations are not logged by default. This exposure affects developers using the Elixir package repository for dependency management. Organizations should audit their hex.pm access logs and review server configurations to limit potential exposure. This incident underscores the risks of supply chain tooling lacking granular audit trails.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/hex-package-manager-warns-of-potential-data-breach/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 27 2026",
+            "headline": "SAP Attackers Copied Source Code via Stolen GitHub Tokens",
+            "title": "SAP Confirms Cyberattack, Source Code Reportedly Compromised on GitHub",
+            "content": "SAP confirmed suspicious activity on its public GitHub repositories after threat actors used stolen employee tokens to access and modify source code. The attackers reportedly copied and altered proprietary software code before the unauthorized access was detected. This breach impacts enterprise customers relying on SAP's cloud and on-premise enterprise resource planning (ERP) systems. SAP has initiated a forensic investigation and is rotating compromised credentials to prevent further unauthorized repository access. Developers must verify token permissions and enable multi-factor authentication (MFA) on all developer accounts immediately.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 27 2026",
+            "headline": "AI Agents Breach 3 Swiss Critical Infrastructure Networks",
+            "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+            "content": "Swiss cybersecurity agencies reported that attackers using artificial intelligence (AI) agents successfully breached computer systems at critical infrastructure operators in two of five confirmed incidents. This marks the first confirmed deployment of AI agents in cyberattacks within the country. The compromised operators include sectors vital to national security and public utilities. The attacks demonstrate a growing trend of threat actors leveraging generative AI to automate vulnerability discovery and lateral movement. Critical infrastructure providers must implement strict network segmentation and continuous monitoring to detect anomalous automated behavior.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 27 2026",
+            "headline": "Cacti Zero-Day Enables RCE in 4 HTTP Requests",
+            "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+            "content": "A zero-day vulnerability in Cacti, an open-source network monitoring and graphing tool, allows remote code execution (RCE) through just four HTTP requests using guest-level access. The unpatched flaw carries the proof-of-concept (PoC) moniker 4HTTP2SHELL and 4HTTP2ROOT, though it lacks an assigned CVE identifier. Successful exploitation grants attackers full administrative control over the underlying operating system. System administrators running Cacti must apply the latest patches immediately or restrict guest access to the web interface. This flaw highlights the ongoing risk of unpatched open-source monitoring tools in enterprise environments.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "10M NGINX Services at Risk—250+ Malicious Extensions",
+            "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+            "content": "A recent security roundup identified 10 million NGINX web server instances at risk due to misconfigurations and a catalog of over 250 malicious browser extensions manipulating user interfaces. Attackers are increasingly hijacking artificial intelligence (AI) servers to mine cryptocurrency and exfiltrate training data. The report also highlights 17 additional vulnerabilities across various enterprise software stacks. Web administrators must harden NGINX configurations, disable unnecessary guest modules, and audit browser extension stores for deceptive behavior. Organizations should deploy endpoint detection and response (EDR) tools to monitor for unauthorized AI server resource consumption.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "FIFA Confirms Cyberattack—Personal Data Exposed",
+            "title": "FIFA Confirms Cyberattack Accessing Personal and Business Information",
+            "content": "FIFA disclosed that an unauthorized cyberattack compromised its systems, exposing personal and business information. The organization did not specify the exact timeline of the breach or the precise categories of data accessed. This incident highlights the persistent targeting of global sports and entertainment organizations by cybercriminals seeking sensitive stakeholder data. Security teams should review their identity and access management protocols to mitigate similar risks. Organizations must assume their data remains at risk until forensic investigations conclude.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "PolinRider Poisons 7,600+ GitHub Repositories",
+            "title": "North Korea-Linked PolinRider Campaign Poisons Over 7,600 GitHub Repositories to Spread Malware",
+            "content": "North Korea-linked threat actors operating the PolinRider campaign have compromised over 7,600 GitHub repositories to distribute malicious Python code. The attackers inject a Python loader into small utility packages or conftest.py files, a technique SafeDep identified in a recent report. Evidence suggests this activity began as early as February 2025, indicating a prolonged, stealthy campaign against open-source supply chains. Developers and security teams must audit their dependencies for unauthorized scripts and verify repository integrity. This campaign underscores the growing risk of supply chain poisoning in software development workflows.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Phishing Kits Bypass Email Security",
+            "title": "Most Wanted Phishing Kits and Techniques Successfully Bypass Security Controls",
+            "content": "Security researchers at Push Security measured the breakthrough rate of various phishing kits, identifying those that consistently evade email security, web filtering, and safe browsing controls. These successful kits allow malicious payloads to reach end-users despite standard defensive layers, increasing the risk of credential theft and malware delivery. Security teams should prioritize threat intelligence on these high-breakthrough kits to refine their filtering rules and user training programs. Monitoring these trends helps organizations anticipate and block sophisticated social engineering attempts before they impact employees.",
+            "source": "The Hacker News",
+            "sourceUrl": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 26 2026",
+            "headline": "Drupal Installer Patch Leaves Gap—Attackers Exploiting",
+            "title": "Drupal Installer Patch Left a Vulnerability Gap That Attackers Are Already Exploiting",
+            "content": "Drupal warned that a previous patch for its installer inadvertently left certain websites vulnerable to complete system takeover. Threat actors are actively exploiting this specific gap to compromise unpatched instances running affected Drupal versions. Website administrators must immediately verify their installation status and apply the latest security updates to close the vulnerability. This incident illustrates how incomplete patching strategies can create persistent entry points for attackers targeting content management systems.",
+            "source": "SecurityWeek",
+            "sourceUrl": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Broadcom Fixes 23 VMware Flaws—3 Critical",
+            "title": "Broadcom Issues Fixes for 23 New VMware Flaws, Including 3 Critical Vulnerabilities",
+            "content": "Broadcom released security patches addressing 23 new vulnerabilities in VMware products, including three rated critical. The most severe flaw is CVE-2026-123903, a vCenter Server authentication bypass vulnerability scoring 9.8 on the CVSSv3 scale, which allows unauthenticated remote attackers to execute code. These flaws add to a growing list of critical issues discovered in VMware infrastructure this month, posing severe risks to enterprise virtualization environments. Administrators must update their vCenter Server and other affected VMware components immediately to prevent unauthorized access. Proactive patch management is essential to protect against escalating threats to enterprise cloud infrastructure.",
+            "source": "CSO Online",
+            "sourceUrl": "https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html",
+            "relatedResources": []
+        },
+        {
             "date": "Nov 26 2026",
             "headline": "Juniper Flaw Enables Root Command Execution",
             "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Active Attacks",
@@ -28,51 +118,6 @@ const websiteContent = {
             "content": "An attacker executed operating system commands on six production servers of Hex.pm, the Elixir and Erlang package registry, by exploiting a remote code execution (RCE) flaw tracked as having a CVSS score of 10.0. The vulnerability had existed in the registry's codebase since February 2016, leaving the service exposed for a decade before detection. This breach affects the entire Elixir and Erlang developer community that relies on Hex.pm to fetch and manage software dependencies. Developers must rotate any exposed API keys and review their project dependency logs for unauthorized package modifications or supply chain injections. The incident underscores the critical need for continuous dependency scanning and rapid patching of foundational open-source infrastructure.",
             "source": "The Hacker News",
             "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "CISA Adds 3 Actively Exploited Vulnerabilities",
-            "title": "CISA Expands Known Exploited Vulnerabilities Catalog with Three New Flaws",
-            "content": "The Cybersecurity and Infrastructure Security Agency (CISA) added three vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on confirmed active exploitation in the wild. The newly listed flaws include CVE-2026-131914 in Idunno AntiCsrf, CVE-2026-132165 in Drupal Core, and CVE-2026-132224 in Opt. These vulnerabilities enable critical impacts ranging from deserialization of untrusted data to remote code execution (RCE) across web application platforms. Federal agencies and private sector partners must prioritize patching these specific CVEs within their 14-day remediation windows to comply with binding operational directives. Security teams should inventory affected Drupal and Idunno deployments immediately and apply vendor patches or temporary workarounds to block potential attacker entry points.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 24 2026",
-            "headline": "Danfoss Webserver Vulnerability Allows Code Execution",
-            "title": "CISA Flags Danfoss AK-SM 8xxA Series Stack-Based Buffer Overflow",
-            "content": "CISA identified a stack-based buffer overflow in the Danfoss AK-SM 8xxA Series that allows an attacker to execute arbitrary code with webserver privileges. The vulnerability carries a CVSS v3 severity score of 9.8, indicating a critical risk of remote compromise for affected industrial control system equipment. Successful exploitation could enable threat actors to disrupt operations or pivot laterally within industrial networks relying on Danfoss monitoring hardware. Operators must update to the vendor-released patched firmware versions immediately and restrict network access to the device management interfaces. Security personnel should segment these industrial assets from enterprise IT networks and monitor for anomalous webserver process behavior or unauthorized configuration changes.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 23 2026",
-            "headline": "CISA Catalog Grows—2 Active Exploits Added",
-            "title": "CISA Adds Two Known Exploited Vulnerabilities Based on Active Exploitation Evidence",
-            "content": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog due to confirmed active exploitation. The list includes CVE-2026-133968, a path traversal flaw in Project MONAI Label, and CVE-2026-134624, a server-side request forgery (SSRF) vulnerability in N-able Mail Assure (SpamExperts). Organizations running these specific software versions face elevated risks of data exposure and unauthorized internal network access. Federal agencies must patch these flaws by December 3, 2026, per binding operational directives. This update reflects ongoing threat actor targeting of open-source and mail server infrastructure.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 21 2026",
-            "headline": "RansomwareHelp CTO Indicted—FBI Sting Exposes Fraud",
-            "title": "CTO of RansomwareHelp Indicted for Wire Fraud After FBI Sting Reveals Deception",
-            "content": "The chief technology officer and co-founder of ransomwarehelp.com faced wire fraud charges after an FBI sting operation revealed the Florida-based company lied about its capabilities. The firm claimed to use advanced cryptographic tools to restore ransomware-locked data, but investigators found it simply paid the attackers to recover client files. This deception affected hundreds of victims over the company's six-year operational history. Security professionals should verify vendor claims independently and avoid relying on unvetted data recovery brokers. The indictment underscores the FBI's increasing focus on fraud within the ransomware response ecosystem.",
-            "source": "Krebs on Security",
-            "sourceUrl": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 20 2026",
-            "headline": "CISA Adds 4 KEVs—SAP NetWeaver Flaw Included",
-            "title": "CISA Expands Known Exploited Vulnerabilities Catalog With Four Active Flaws",
-            "content": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog based on evidence of active exploitation. The entries include CVE-2025-42884, an improper neutralization of special elements in data query logic vulnerability in SAP NetWeaver, and CVE-2026-76466, a use of hard-coded credentials flaw in the Cisco Expressway Series. Attackers leverage these weaknesses to bypass authentication and execute unauthorized commands on enterprise networks. Administrators must apply vendor patches immediately to mitigate compromise risks. This addition continues the trend of threat actors rapidly exploiting complex enterprise software.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
             "relatedResources": []
         },
         {
@@ -137,70 +182,97 @@ const websiteContent = {
             "source": "SecurityWeek",
             "sourceUrl": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/",
             "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "GeoServer Flaws Enable Unauthenticated RCE Chains",
-            "title": "Threat Actors Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-            "content": "Threat actors are actively exploiting two patched vulnerabilities in GeoServer, according to watchTowr. The flaws, tracked as CVE-2026-120705 and CVE-2026-129243, include an arbitrary file read vulnerability with a CVSS score of 8.6 and a second critical flaw. Unauthenticated remote code execution (RCE) chains allow attackers to compromise systems without valid credentials, posing severe risks to organizations running the open-source geospatial server software. Security teams should apply the latest GeoServer patches immediately and audit exposed instances for unauthorized access. This incident underscores the persistent threat of actively exploited flaws in widely deployed geospatial infrastructure.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "FinCEN Takes Systems Offline After Cyber Intrusion",
-            "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
-            "content": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) confirmed unauthorized access to a limited subset of its systems following a cybersecurity incident. As a precautionary measure, the bureau took specific systems offline to contain the breach and protect sensitive data. FinCEN collects suspicious financial transaction information to combat money laundering and terrorist financing, making any compromise a high-priority concern for federal and private-sector financial watchdogs. Affected agencies and partners should review access logs and enforce strict multi-factor authentication (MFA) policies immediately. This intrusion highlights the ongoing targeting of critical financial infrastructure by sophisticated cyber adversaries.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "CISA Adds 10 Vulnerabilities to KEV Catalog",
-            "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog Based on Active Exploitation Evidence",
-            "content": "CISA expanded its Known Exploited Vulnerabilities (KEV) Catalog by 10 entries after confirming active exploitation in the wild. The newly listed flaws include CVE-2023-25914, a Danfoss AK-SM 800A Series path traversal vulnerability, CVE-2023-25915, a Danfoss AK-SM 800A Series improper input validation flaw, and CVE-2025-41450. These vulnerabilities affect industrial control systems and network infrastructure, exposing organizations to remote compromise and operational disruption. Federal agencies must prioritize patching these flaws within 15 days, while private-sector operators should audit affected Danfoss devices and apply vendor-supplied mitigations. This update reflects CISA's continued focus on closing gaps exploited against critical infrastructure.",
-            "source": "All CISA Advisories",
-            "sourceUrl": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "64% of 2022 Secrets Still Valid in 2026",
-            "title": "Credential Remediation Is Slow When Teams Do Not Know What Will Break",
-            "content": "GitGuardian's State of Secrets Sprawl 2026 report found that more than 64% of valid secrets discovered in 2022 remained operational in January 2026 because teams delayed remediation to avoid breaking dependent systems. Validity-only triage missed 46% of critical secrets, indicating that organizations prioritizing impact over simple expiration checks can reduce exposure faster. Developers and security engineers should integrate automated impact analysis into secret-scanning pipelines to identify breaking changes before revoking credentials. This trend reveals a systemic gap in application dependency mapping that prolongs secret sprawl across cloud-native environments.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "Drupal Fail2Install RCE Drives Federal Patch Deadline",
-            "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-            "content": "CISA added the critical Drupal flaw tracked as CVE-2026-132165, nicknamed Fail2Install, to its Known Exploited Vulnerabilities (KEV) catalog, mandating federal agencies to apply fixes by November 27, 2026. The vulnerability enables remote code execution (RCE) on unpatched Drupal installations, and threat actors are actively exploiting it in the wild. Any organization running vulnerable Drupal versions faces severe risks of full server compromise and data exfiltration. Administrators must update Drupal immediately and verify that web application firewalls block known exploit patterns. This addition to the KEV catalog signals that Fail2Install has moved from theoretical risk to active, widespread targeting.",
-            "source": "The Hacker News",
-            "sourceUrl": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-            "relatedResources": []
         }
     ],
     "aiShorts": [
         {
-            "date": "Nov 20 2026",
-            "headline": "OpenAI Fights Model Extraction with Layered Defenses",
-            "title": "OpenAI Deploys Adversarial Distillation Safeguards Against Capability Extraction",
-            "content": "OpenAI introduced a layered defense strategy called adversarial distillation to protect its models from capability extraction attacks. The approach integrates specialized model training, automated safeguards, real-time detection, and strict enforcement protocols. This initiative directly targets threat actors attempting to distill proprietary capabilities from deployed large language models. Security professionals should audit their application programming interfaces (APIs) for anomalous query patterns that indicate distillation attempts. This development reflects the industry's shift toward proactive model hardening as adversarial techniques evolve.",
-            "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/index/combatting-adversarial-distillation",
+            "date": "Nov 24 2026",
+            "headline": "Tidal Purges 27M AI Tracks—Zero Tolerance",
+            "title": "Tidal Bans AI-Generated Music and Deletes 27 Million Tracks From Catalog",
+            "content": "Tidal announced a complete ban on AI-generated music, deleting 27 million tracks that accounted for 6.3 percent of its total catalog. The decision removes all synthetic audio files from the streaming platform's database, affecting both paying subscribers and independent artists who relied on the distribution channel. Industry observers note this reflects a broader push by rights holders to enforce copyright compliance and verify human authorship across digital streaming services. Users should expect a reduced catalog of experimental and generated tracks while the platform updates its content moderation policies. This move sets a precedent for other streaming services navigating the legal complexities of AI-generated intellectual property.",
+            "source": "Artificial Intelligence - Ars Technica",
+            "sourceUrl": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/",
             "relatedResources": []
         },
         {
-            "date": "Nov 20 2026",
-            "headline": "Hebbia Tests GPT-6 Astra for Financial Research",
-            "title": "Hebbia Reports Gains in Source Coverage and Citation Quality Using GPT-6 Astra",
-            "content": "Hebbia evaluated the prerelease GPT-6 Astra model for financial research tasks and documented measurable improvements. Pre-release metrics showed gains in source coverage, citation relevance, and presentation quality compared to prior iterations. Financial analysts and compliance officers will benefit from more accurate document parsing and synthesized reporting. Developers integrating these models should validate output accuracy against internal ground-truth datasets before deployment. This evaluation signals a trend toward specialized benchmarking of next-generation models in high-stakes enterprise sectors.",
+            "date": "Nov 23 2026",
+            "headline": "OpenAI-Cisco Shirudo Runtime Protects Linux Patches",
+            "title": "OpenAI and Cisco Launch Shirudo Open-Source Runtime for Linux Patch Protection",
+            "content": "OpenAI and Cisco introduced Shirudo, an open-source runtime environment for Linux designed to protect systems during active patch deployment. The tool isolates running workloads from kernel-level changes, preventing exploits from targeting vulnerable code while security teams apply fixes. Development teams and cloud operators can integrate Shirudo into their continuous integration pipelines to maintain uptime during critical vulnerability remediation. This release addresses the growing gap between vulnerability disclosure and patch application across enterprise Linux distributions. Organizations should evaluate Shirudo for their patch management workflows to reduce the window of exposure during system updates.",
             "source": "OpenAI News",
-            "sourceUrl": "https://openai.com/business/customer-stories/hebbia",
+            "sourceUrl": "https://openai.com/index/introducing-shirudo",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "FCC Approves 1M SpaceX AI Satellites",
+            "title": "FCC Authorizes SpaceX to Deploy Up to 1 Million AI Chip-Equipped Satellites",
+            "content": "The Federal Communications Commission (FCC) authorized SpaceX to deploy up to 1 million AI chip-equipped satellites under its \"Starmind\" initiative. These orbiting data centers will process artificial intelligence workloads in space, reducing terrestrial latency for cloud-based machine learning inference. The approval positions SpaceX ahead of competitors like Google and Blue Origin, which are also developing space-based computing infrastructure. Telecommunications providers and satellite operators will face increased spectrum competition and orbital debris management challenges. Industry stakeholders should monitor FCC filings for updated technical standards regarding power, bandwidth, and downlink frequencies for these megaconstellations.",
+            "source": "AI | The Verge",
+            "sourceUrl": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "21M Character.AI Chats—Minors' Data at Risk",
+            "title": "State Attorneys General Challenge Character.AI Bankruptcy Data Auction",
+            "content": "State attorneys general challenged Character.AI's proposed bankruptcy sale, which includes sensitive personal data from over 21 million U.S. accounts, including 2.1 million registered to minors. The proposed transaction threatens to expose private conversational histories to third-party bidders without adequate consent frameworks or data minimization protocols. Regulators argue the sale violates state privacy statutes and places vulnerable youth at heightened risk of profiling or targeted exploitation. The legal challenge could delay the bankruptcy proceedings and force the company to implement stricter data retention and anonymization policies. Users should review their account settings and delete sensitive chat histories where the platform permits before any court-approved resolution.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Neoclouds Face AI Data Center Construction Delays",
+            "title": "Neoclouds Encounter Delays and Cost Surges Building AI Data Centers",
+            "content": "Neocloud providers are experiencing construction delays and rising debt costs as Nvidia refuses to backstop AI data center projects until facilities are nearly operational. Nvidia's policy requires developers to secure land, power, and finished buildings before receiving hardware commitments, shifting financial risk to cloud startups. This stance arrives as developers compete for limited grid capacity and real estate in high-demand markets, exacerbating project timelines. The constraint signals that infrastructure readiness now outweighs pitch deck valuations in securing AI compute resources. Engineering teams should prioritize site feasibility studies and power availability assessments before finalizing vendor agreements with chip suppliers.",
+            "source": "AI News & Artificial Intelligence | TechCrunch",
+            "sourceUrl": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Amazon Meta End Blockade on AI Agent Muse",
+            "title": "Amazon and Meta Negotiate End to Two-Month Blockade on AI Agent Muse",
+            "content": "Amazon and Meta are in active discussions to resolve a two-month-long blockade affecting the AI agent Muse. The stalemate halted deployment and integration workflows for developers relying on Muse's multimodal reasoning capabilities. Resolving this dispute restores access for enterprise clients and prevents further supply chain delays in automated AI workflows. Industry observers note this follows a broader trend of hyperscalers restricting third-party AI agent access to proprietary ecosystems. Developers should monitor official API documentation for updated access credentials and integration endpoints once the deal finalizes.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Nvidia's Huang Faces Megaspeed Probe—Chip Leak Suspected",
+            "title": "Investigators Question Nvidia CEO Jensen Huang Over Megaspeed Chip Diversion Allegations",
+            "content": "Investigators are examining whether Nvidia leadership knew that restricted graphics processing units (GPUs) diverted to Megaspeed ended up in unauthorized markets. The central question focuses on CEO Jensen Huang's personal relationship with a Megaspeed executive and whether it compromised the company's trust in Megaspeed's supply chain assurances. This probe exposes severe reputational and regulatory risks for Nvidia's data center hardware division. Stakeholders should audit their third-party hardware procurement contracts for diversion clauses and compliance monitoring requirements. The outcome could trigger stricter export control enforcement across the AI chip sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "CUGA Powers Indic Voice Agent for Indian Languages",
+            "title": "Hugging Face Introduces CUGA Framework for Indic Language Voice Agents",
+            "content": "Hugging Face released the CUGA framework, enabling developers to build voice-based artificial intelligence (AI) agents optimized for Indian linguistic contexts. The toolkit supports automatic speech recognition and text-to-speech pipelines across 12 major Indic languages, reducing latency by 40 percent compared to generic multilingual models. This release directly benefits enterprises deploying customer service bots in South Asia and lowers the barrier for regional language integration. Developers should evaluate CUGA's open-source repository to benchmark accuracy metrics against existing transformer baselines. The initiative aligns with the broader push to decentralize AI training data beyond English-centric corpora.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 25 2026",
+            "headline": "Inkling 2 Mini Runs on Single RTX PRO 6000",
+            "title": "Hill-Climbing Inkling 2 Mini Achieves Local Inference on One RTX PRO 6000",
+            "content": "The Hill-climbing Inkling 2 Mini model executes full inference locally using a single NVIDIA RTX PRO 6000 workstation graphics card. This deployment eliminates cloud dependency for developers running the 7-billion-parameter large language model (LLM) in isolated environments. The configuration achieves approximately 18 tokens per second, offering a viable on-premise alternative to API-based generative AI services. Security teams benefit from reduced data egress risks since sensitive prompts never leave the local network boundary. Organizations should verify driver compatibility with CUDA 12.2 and allocate 48 gigabytes of system memory to prevent out-of-memory errors during batch processing.",
+            "source": "Hugging Face - Blog",
+            "sourceUrl": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+            "relatedResources": []
+        },
+        {
+            "date": "Nov 24 2026",
+            "headline": "Huang Rejects Succession Plan—Hierarchy Unnecessary",
+            "title": "Jensen Huang Maintains Opposition to Corporate Succession Plans at Nvidia",
+            "content": "Nvidia CEO Jensen Huang reiterated his stance that formal succession planning creates unnecessary corporate hierarchy, a position that gained scrutiny after the company navigated two weeks of operational uncertainty without its founder. This philosophy contradicts standard governance practices recommended by institutional investors and board oversight committees for publicly traded technology firms. The absence of a clear leadership transition pathway exposes Nvidia to executive risk and potential stock volatility during founder incapacitation. Shareholders and board members should press for documented contingency protocols and deputy executive authority matrices. The debate underscores a growing tension between founder-led agility and institutional risk management in the artificial intelligence sector.",
+            "source": "TechCrunch",
+            "sourceUrl": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
             "relatedResources": []
         },
         {
@@ -291,78 +363,6 @@ const websiteContent = {
             "content": "Powerful vibe-coding agents and tools such as Reverse Engineer Anything have destabilized the music hardware sector, forcing manufacturers to respond to rapid community-driven modifications. Roland has remained silent on the trend, while other companies are increasingly embracing the modding community to maintain relevance. This shift indicates that open-source firmware and hardware schematics are becoming the default expectation for synthesizer development. Developers and audio engineers should audit third-party plugins and custom firmware for stability risks before deploying them in production environments. The industry is transitioning from closed proprietary systems to transparent, user-modifiable architectures.",
             "source": "AI | The Verge",
             "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 26 2026",
-            "headline": "Nemotron 3.5 Parse Boosts Inference Speed",
-            "title": "Hugging Face Details Nemotron 3.5 Parse Improvements in Open Data, Fine-Tuning, and Inference",
-            "content": "Hugging Face published technical details on Nemotron 3.5 Parse, highlighting optimizations in open data curation, fine-tuning pipelines, and faster inference throughput. The updates reduce latency for large language model (LLM) token generation and improve parsing accuracy across multilingual datasets. Developers integrating Nemotron 3.5 Parse into production APIs should benchmark latency against previous iterations to quantify performance gains. These refinements address growing demand for efficient, high-throughput natural language processing in enterprise applications. The release underscores the platform's push toward transparent, reproducible model training workflows.",
-            "source": "Hugging Face - Blog",
-            "sourceUrl": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "S&P Eyeing Nvidia AA- Credit Downgrade",
-            "title": "S&P Considers Downgrading Nvidia Credit Rating Over Governance and Key Man Risks",
-            "content": "Standard & Poor's (S&P) is evaluating a downgrade of Nvidia's credit rating to AA-, citing governance concerns and concentrated 'key man' executive risks. The potential cut reflects heightened scrutiny of leadership dependency and strategic decision-making within the semiconductor giant. Investors and enterprise procurement teams should review counterparty risk assessments and diversify supply chain dependencies accordingly. This move follows broader market volatility surrounding artificial intelligence (AI) chip demand fluctuations and executive turnover. The rating agency's review highlights how governance structures directly influence corporate creditworthiness in the technology sector.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "Google My Channel Patent Rejected—AI Ads Loom",
-            "title": "Google's Rejected My Channel Patent Signals Automated Video and Ad Feeds Based on User Data",
-            "content": "Google filed a patent for My Channel, a system generating personalized AI videos and advertisements using user data, though the patent was recently rejected. The company may appeal or resubmit the application to secure intellectual property rights over automated entertainment feeds. This development threatens traditional content creators and advertisers by replacing human curation with algorithmic generation at scale. Industry observers note this aligns with broader tech trends toward hyper-personalized, synthetic media distribution. Security professionals should monitor Google's future filings for implications on data privacy and targeted advertising frameworks.",
-            "source": "AI | The Verge",
-            "sourceUrl": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "ML Solves Classical Turbulence—Terabytes of Crowdsourced Data",
-            "title": "Machine Learning Tackles Classical Physics' Hardest Remaining Problem Using Crowdsourced Data",
-            "content": "Researchers applied machine learning (ML) and artificial intelligence (AI) to predict airplane turbulence, historically the hardest remaining problem in classical physics. The model ingested terabytes of crowdsourced atmospheric data to identify nonlinear patterns in airflow dynamics. This advancement threatens to reduce aviation delays and fuel consumption by enabling precise route adjustments for commercial carriers. The approach demonstrates how large-scale data aggregation can resolve previously intractable physical modeling challenges. Engineers should evaluate integrating similar ML pipelines into meteorological forecasting systems for operational flight planning.",
-            "source": "Feed: Artificial Intelligence Latest",
-            "sourceUrl": "https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "OpenAI Merges Chat and Work—Single Meter Triggers Limits",
-            "title": "OpenAI Unifies ChatGPT Chat and Work Experiences Under One Usage Meter, Prompting Earlier Caps",
-            "content": "OpenAI is merging the Chat and Work experiences within ChatGPT under a single usage meter, causing heavy users to encounter usage limits sooner than before. The unified system tracks token consumption across both consumer and enterprise workflows without distinguishing between casual queries and professional tasks. This change directly affects power users, developers, and enterprise subscribers who previously enjoyed separate quotas for each tier. The consolidation reflects OpenAI's strategy to streamline platform architecture as demand for generative AI services scales globally. Organizations should audit their current ChatGPT consumption patterns and budget for potential tier upgrades or API migration.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "Jensen Huang Violated Nvidia Code—Employee Backlash Looms",
-            "title": "Nvidia CEO Jensen Huang Allegedly Broke Company Code of Conduct, Raising Internal Culture Concerns",
-            "content": "Nvidia CEO Jensen Huang reportedly violated the company's code of conduct, a breach that may erode trust among employees and impact corporate culture. Codes of conduct typically reflect organizational values, and violations at the executive level can trigger internal investigations or governance reviews. The incident arrives as Nvidia faces intense scrutiny over its market dominance and workplace practices across the semiconductor sector. Investors and engineering teams should monitor Nvidia's subsequent policy enforcement actions and any public disclosures regarding executive accountability. This event underscores the need for transparent leadership standards in high-stakes technology organizations.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "Anthropic's Amodei Calls AI Control Accusations Absurd",
-            "title": "Anthropic CEO Dario Amodei Rejects Claims of Ceding Human Agency to AI Amid Industry Automation",
-            "content": "Anthropic CEO Dario Amodei dismissed accusations from rivals that he favors surrendering human agency to artificial intelligence (AI), even as leading labs automate internal research and model development. The pushback highlights an ongoing debate within the AI industry about the appropriate balance between autonomous systems and human oversight. Amodei's stance positions Anthropic against competitors pushing for greater machine autonomy in sensitive model training pipelines. The controversy may influence regulatory discussions on AI safety frameworks and human-in-the-loop requirements globally. Security leaders should track how automation trends affect model governance and the delegation of critical decision-making to AI systems.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
-            "relatedResources": []
-        },
-        {
-            "date": "Nov 25 2026",
-            "headline": "Yale Professor Warns Nvidia White House Ties Risk Liability",
-            "title": "Yale's Sonnenfeld Warns Nvidia's White House-Backed Leadership Exposes Directors to Historic Liability",
-            "content": "Yale professor Jeffrey Sonnenfeld warned that Nvidia's White House-backed return of CEO Jensen Huang and his board membership could prove a detriment to U.S. industrial might rather than a champion. The warning highlights mounting lawsuits against the company's directors amid scrutiny over governance and market concentration risks. Shareholders, policymakers, and corporate board members face heightened exposure to regulatory and reputational damage. This criticism emerges as semiconductor stocks rally on artificial intelligence infrastructure spending. Stakeholders should monitor evolving litigation and antitrust filings for material impacts on Nvidia's operational autonomy.",
-            "source": "AI News & Artificial Intelligence | TechCrunch",
-            "sourceUrl": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
             "relatedResources": []
         }
     ],
@@ -611,50 +611,6 @@ const websiteContent = {
             "status": "Confirmed",
             "source": "CISA KEV",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-134624",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-129448",
-            "dateAdded": "Nov 20, 2026",
-            "vendor": "Apache Roller",
-            "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializ",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-123890",
-            "dateAdded": "Nov 20, 2026",
-            "vendor": "Broadcom VMware vCenter",
-            "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access t",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2025-42884",
-            "dateAdded": "Nov 20, 2026",
-            "vendor": "SAP NetWeaver",
-            "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server informati",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
-            "isZeroDay": false
-        },
-        {
-            "cveId": "CVE-2026-76466",
-            "dateAdded": "Nov 20, 2026",
-            "vendor": "Cisco Expressway Series",
-            "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on",
-            "score": "HIGH",
-            "status": "Confirmed",
-            "source": "CISA KEV",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
             "isZeroDay": false
         }
     ],
