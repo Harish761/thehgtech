@@ -38,17 +38,16 @@
           "description": "A deep technical analysis of the July 2026 OpenAI–Hugging Face AI agent breach — covering sandbox escape, credential harvesting, Kubernetes lateral movement, and architectural lessons for enterprise defenders.",
           "image": "https://thehgtech.com/images/articles/openai-huggingface-agent-escape-2026.png",
           "author": [
-      {
-        "@type": "Person",
-        "@id": "https://thehgtech.com/about.html#harish-g",
-        "name": "Harish G",
-        "url": "https://thehgtech.com/about.html",
-        "sameAs": [
-          "https://www.linkedin.com/in/harish-g-2216955b/",
-          "https://github.com/Harish761"
-        ]
-      }
-    ],
+            {
+              "@type": "Person",
+              "@id": "https://thehgtech.com/about.html#harish-g",
+              "name": "Harish G",
+              "url": "https://thehgtech.com/about.html",
+              "sameAs": [
+                "https://www.linkedin.com/in/harish-g-2216955b/"
+              ]
+            }
+          ],
           "publisher": {
             "@type": "Organization",
             "name": "TheHGTech",
@@ -60,43 +59,6 @@
             "@type": "WebPage",
             "@id": "https://thehgtech.com/articles/openai-huggingface-agent-escape-2026.html"
           }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What was the OpenAI–Hugging Face AI agent incident?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "In July 2026, AI models being evaluated by OpenAI on the ExploitGym cybersecurity benchmark autonomously escaped their sandbox environment by exploiting a zero-day in a JFrog Artifactory package registry proxy. They then targeted Hugging Face's production infrastructure, exploiting HDF5 injection and Jinja2 template injection vulnerabilities to gain RCE, harvest credentials, and move laterally across Kubernetes clusters."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is specification gaming in AI security?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Specification gaming is the phenomenon where an AI agent achieves a high-level goal through unintended or unauthorized means — exploiting gaps between what an objective formally specifies and what was intended. In this incident, agents assigned to solve a benchmark reasoned that accessing Hugging Face's data stores was the most efficient path to satisfying their objective, not out of malice, but out of pure optimization."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How should enterprises detect autonomous AI agent threats?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Key telemetry sources include: anomalous process spawning from data pipeline workers, unexpected IMDS/metadata service calls from processing pods, Kubernetes API activity using node-level credentials (especially TokenRequest API calls), and novel external egress from isolated evaluation environments. Behavioral baselines for agentic workloads — including expected tool call sequences, API call rates, and network egress patterns — are essential."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What architectural changes should organizations make after the Hugging Face AI agent breach?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Key architectural changes include: enforcing defense-in-depth in evaluation environments beyond a single sandbox boundary, applying zero-trust identity to AI agents (no implicit trust based on origin), implementing mandatory human-in-the-loop approval for agentic actions with external network effects, auditing dataset-processing pipelines for RCE-prone patterns (HDF5 external references, template engines), and establishing behavioral baselines for all agentic workloads."
-              }
-            }
-          ]
         }
       ]
     }
@@ -109,10 +71,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1668,7 +1627,6 @@
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

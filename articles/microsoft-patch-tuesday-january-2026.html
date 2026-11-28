@@ -7,7 +7,7 @@
 
     <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited | TheHGTech</title>
-    <meta name="description" content="Comprehensive analysis of Microsoft">
+    <meta name="description" content="Comprehensive analysis of Microsoft's January 2026 Patch Tuesday including the actively exploited CVE-2026-20805 zero-day vulnerability.">
     <meta name="keywords" content="Microsoft Patch Tuesday January 2026, CVE-2026-20805, Windows zero-day, CISA KEV, Microsoft security update, DWM vulnerability, critical CVE, RCE vulnerability, Windows security patches">
     <meta name="author" content="Harish G">
     <meta name="robots" content="index, follow">
@@ -17,14 +17,14 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/microsoft-patch-tuesday-january-2026.html">
     <meta property="og:title" content="Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited">
-    <meta property="og:description" content="Comprehensive analysis of Microsoft">
+    <meta property="og:description" content="Comprehensive analysis of Microsoft's January 2026 Patch Tuesday including the actively exploited CVE-2026-20805 zero-day vulnerability.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png">
     <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Microsoft Patch Tuesday January 2026: 114 CVEs, 3 Zero-Days, and One Actively Exploited">
-    <meta name="twitter:description" content="Comprehensive analysis of Microsoft">
+    <meta name="twitter:description" content="Comprehensive analysis of Microsoft's January 2026 Patch Tuesday including the actively exploited CVE-2026-20805 zero-day vulnerability.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/microsoft-patch-tuesday-january-2026.png">
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is CVE-2026-20805 and why is it critical?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "CVE-2026-20805 is an information disclosure vulnerability in Windows Desktop Window Manager (DWM) that is actively exploited in the wild. Despite a moderate CVSS score of 5.5, attackers use it to leak memory addresses, which can be chained with other vulnerabilities for privilege escalation and system compromise."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How many zero-day vulnerabilities did Microsoft patch in January 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Microsoft patched 3 zero-day vulnerabilities in January 2026: CVE-2026-20805 (actively exploited DWM info disclosure), CVE-2023-31096 (Agere Soft Modem Driver privilege escalation), and CVE-2026-21265 (Secure Boot bypass)."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What should organizations prioritize patching first?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Organizations should prioritize: 1) CVE-2026-20805 (actively exploited), 2) Critical RCE vulnerabilities in Office (CVE-2026-20952, CVE-2026-20953), 3) NTFS heap overflow vulnerabilities (CVE-2026-20840, CVE-2026-20922), and 4) Any internet-facing Windows servers."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1441,7 +1410,6 @@
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

@@ -91,119 +91,43 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What are the most important Windows Event IDs for security?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Top 10 critical Event IDs: 4624 (successful logon), 4625 (failed logon), 4688 (process creation), 4672 (special privileges assigned), 4720 (user created), 4728/4732 (group membership changes), 4697 (service installed), 4698 (scheduled task created), 4776 (NTLM authentication). Enable command-line logging for 4688."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between Event ID 4624 logon types?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Key logon types: Type 2 (Interactive) = console login. Type 3 (Network) = SMB, WMI - common for lateral movement. Type 4 (Batch) = scheduled tasks. Type 7 (Unlock) = workstation unlock. Type 10 (RemoteInteractive) = RDP. Type 10 from an internal IP is normal; from external is suspicious."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I enable Windows command line logging?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Via GPO: Computer Configuration \u2192 Administrative Templates \u2192 System \u2192 Audit Process Creation \u2192 'Include command line in process creation events' = Enabled. Also enable: auditpol /set /subcategory:'Process Creation' /success:enable. This adds full command lines to Event ID 4688."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Windows logs should I forward to my SIEM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minimum: Security log (authentication, process creation), System log (services, drivers), PowerShell Operational log, Sysmon if deployed. Recommended: WMI Activity, TaskScheduler, Windows Defender, Firewall logs. Filter high-volume noise like 4624 Logon Type 3 from known service accounts."
-      }
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025]",
+      "description": "Complete guide to Windows Event Log analysis for security professionals. Critical Event IDs, PowerShell analysis, and threat detection techniques.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "datePublished": "2025-12-17",
+      "dateModified": "2026-01-09",
+      "mainEntityOfPage": "https://thehgtech.com/guides/windows-event-log-analysis.html",
+      "articleSection": "Security Guides",
+      "keywords": [
+        "Windows Events",
+        "Security Monitoring",
+        "Threat Detection",
+        "SIEM"
+      ]
     }
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025]",
-  "description": "Complete guide to Windows Event Log analysis for security professionals. Critical Event IDs, PowerShell analysis, and threat detection techniques.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://github.com/Harish761"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    }
-  },
-  "datePublished": "2025-12-17",
-  "dateModified": "2026-01-09",
-  "mainEntityOfPage": "https://thehgtech.com/guides/windows-event-log-analysis.html",
-  "articleSection": "Security Guides",
-  "keywords": [
-    "Windows Events",
-    "Security Monitoring",
-    "Threat Detection",
-    "SIEM"
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Windows Event Log Analysis: Critical Event IDs Cheat Sheet [2025]",
-  "description": "\ud83d\udd0d Master Windows Security logs for threat detection. Event ID 4624, 4625, 4688 explained. PowerShell queries + downloadable cheat sheet included.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Event Log Fundamentals",
-      "text": "Refer to the section '1. Event Log Fundamentals' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. Critical Security Event IDs",
-      "text": "Refer to the section '2. Critical Security Event IDs' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Authentication Analysis",
-      "text": "Refer to the section '3. Authentication Analysis' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. Process Execution Monitoring",
-      "text": "Refer to the section '4. Process Execution Monitoring' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Lateral Movement Detection",
-      "text": "Refer to the section '5. Lateral Movement Detection' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

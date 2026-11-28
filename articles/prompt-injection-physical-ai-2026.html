@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is environmental indirect prompt injection?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Environmental indirect prompt injection is an attack where malicious instructions are placed in the physical environment (on signs, surfaces, or objects) to be captured by AI systems' cameras. When the AI processes this text, it can be tricked into executing unauthorized commands."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Can prompt injection attacks affect self-driving cars?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, UC Santa Cruz researchers demonstrated CHAI attacks that can hijack autonomous vehicle decision-making by placing malicious text in the environment. The AI's vision system reads the text, which manipulates the LLM controlling the vehicle's behavior."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can embodied AI systems be protected from prompt injection?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Defenses include: separating vision and language processing pipelines, implementing strict input validation before LLM processing, using safety classifiers on visual input, and designing systems that don't blindly trust environmental text."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1296,7 +1265,6 @@
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

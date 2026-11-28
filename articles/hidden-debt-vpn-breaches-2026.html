@@ -29,102 +29,101 @@
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
-    "author": {
-      "@type": "Person",
-      "@id": "https://thehgtech.com/about.html#harish-g",
-      "name": "Harish G",
-      "url": "https://thehgtech.com/about.html",
-      "sameAs": [
-        "https://www.linkedin.com/in/harish-g-2216955b/",
-        "https://github.com/Harish761"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "TheHGTech",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://thehgtech.com/logo-dark.png"
-      }
-    },
-    "datePublished": "2026-06-22",
-    "dateModified": "2026-06-22",
-    "keywords": [
-      "Fortinet",
-      "FortiGate",
-      "VPN Security",
-      "Edge Security",
-      "Credential Theft",
-      "Session Hijacking",
-      "Incident Response",
-      "Threat Hunting",
-      "Detection Engineering",
-      "Snowflake Breach"
-    ],
-    "image": "https://thehgtech.com/images/articles/hidden-debt-vpn-breaches-2026.png",
-    "description": "An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence post-remediation."
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    [
       {
-        "@type": "Question",
-        "name": "Why do attackers still have access after a vulnerability is patched?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Patching only closes the initial entry vector. If an attacker successfully exploited the vulnerability before the patch was applied, they may have stolen valid credentials, captured active session tokens, or planted backdoors. These artifacts allow them to re-enter the network using legitimate authentication mechanisms, bypassing the patched vulnerability entirely."
-        }
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "The Patch Was Installed. The Risk Wasn’t Removed: The Hidden Security Debt Behind VPN and Edge Device Breaches",
+        "author": {
+          "@type": "Person",
+          "@id": "https://thehgtech.com/about.html#harish-g",
+          "name": "Harish G",
+          "url": "https://thehgtech.com/about.html",
+          "sameAs": [
+            "https://www.linkedin.com/in/harish-g-2216955b/"
+          ]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "TheHGTech",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://thehgtech.com/logo-dark.png"
+          }
+        },
+        "datePublished": "2026-06-22",
+        "dateModified": "2026-06-22",
+        "keywords": [
+          "Fortinet",
+          "FortiGate",
+          "VPN Security",
+          "Edge Security",
+          "Credential Theft",
+          "Session Hijacking",
+          "Incident Response",
+          "Threat Hunting",
+          "Detection Engineering",
+          "Snowflake Breach"
+        ],
+        "image": "https://thehgtech.com/images/articles/hidden-debt-vpn-breaches-2026.png",
+        "description": "An operational security analysis on why patching is not the end of incident response, and how attackers leverage stolen credentials and session tokens to maintain persistence post-remediation."
       },
       {
-        "@type": "Question",
-        "name": "What is the difference between vulnerability remediation and incident recovery?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Remediation focuses on fixing the software flaw (e.g., applying a vendor patch). Recovery focuses on eradicating the attacker from the environment. Recovery involves rotating compromised credentials, invalidating active sessions, hunting for persistence mechanisms, and verifying that the attacker can no longer access the network."
-        }
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do attackers still have access after a vulnerability is patched?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Patching only closes the initial entry vector. If an attacker successfully exploited the vulnerability before the patch was applied, they may have stolen valid credentials, captured active session tokens, or planted backdoors. These artifacts allow them to re-enter the network using legitimate authentication mechanisms, bypassing the patched vulnerability entirely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between vulnerability remediation and incident recovery?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Remediation focuses on fixing the software flaw (e.g., applying a vendor patch). Recovery focuses on eradicating the attacker from the environment. Recovery involves rotating compromised credentials, invalidating active sessions, hunting for persistence mechanisms, and verifying that the attacker can no longer access the network."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How did the Snowflake incidents highlight identity-based exposure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Snowflake incidents demonstrated that massive breaches can occur without any software vulnerabilities. Attackers used valid credentials stolen via info-stealer malware to access customer environments that lacked Multi-Factor Authentication (MFA). It proved that focusing solely on CVEs while ignoring credential hygiene leaves organizations highly exposed."
+            }
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "How did the Snowflake incidents highlight identity-based exposure?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Snowflake incidents demonstrated that massive breaches can occur without any software vulnerabilities. Attackers used valid credentials stolen via info-stealer malware to access customer environments that lacked Multi-Factor Authentication (MFA). It proved that focusing solely on CVEs while ignoring credential hygiene leaves organizations highly exposed."
-        }
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thehgtech.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://thehgtech.com/articles.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "The Patch Was Installed. The Risk Wasn’t Removed",
+            "item": "https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html"
+          }
+        ]
       }
     ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://thehgtech.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Articles",
-        "item": "https://thehgtech.com/articles.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "The Patch Was Installed. The Risk Wasn’t Removed",
-        "item": "https://thehgtech.com/articles/hidden-debt-vpn-breaches-2026.html"
-      }
-    ]
-  }
-]
-</script>
+    </script>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -188,10 +187,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1225,7 +1221,6 @@ level: medium</code></pre>
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

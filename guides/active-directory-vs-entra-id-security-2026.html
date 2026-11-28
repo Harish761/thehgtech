@@ -142,42 +142,7 @@
   "timeRequired": "PT38M"
 }
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Active Directory vs Azure AD (Entra ID) Security 2026: Architecting the Zero Trust Shift",
-  "description": "A deep-dive security engineer\\'s guide to the shift from on-premises Active Directory to Azure AD (now Microsoft Entra ID). Defend against OAuth token abuse and master the identity trust chain.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Introduction: The Death of the Perimeter",
-      "text": "Refer to the section '1. Introduction: The Death of the Perimeter' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. Core Architecture &amp; Protocol Deep-Dive",
-      "text": "Refer to the section '2. Core Architecture &amp; Protocol Deep-Dive' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Shared Responsibility &amp; Vendor Control",
-      "text": "Refer to the section '3. Shared Responsibility &amp; Vendor Control' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. What Entra ID Gets Right: The Security Wins",
-      "text": "Refer to the section '4. What Entra ID Gets Right: The Security Wins' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Attack Surface Comparison: AD vs Entra ID",
-      "text": "Refer to the section '5. Attack Surface Comparison: AD vs Entra ID' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1848,55 +1813,7 @@
             </div>
         </div>
 
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Is Azure AD the exact same thing as Microsoft Entra ID?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. In 2023, Microsoft officially renamed Azure Active Directory (Azure AD) to Microsoft Entra ID. It is exactly the same product, codebase, and infrastructure. The rename was primarily a branding exercise to group Microsoft's expanding portfolio of identity products under a single umbrella."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Can Microsoft Entra ID completely replace on-premises Active Directory?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For modern, cloud-first organizations, yes. If your infrastructure relies primarily on SaaS applications, Microsoft 365, and modern Windows 11 devices, Entra ID can completely replace AD. However, if you rely on legacy line-of-business applications requiring Kerberos/NTLM, you will likely need to maintain a Hybrid identity model."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Does Entra ID use Group Policy Objects (GPOs)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Entra ID is a cloud-native identity provider and does not support traditional Group Policy Objects (GPOs). Device management in the cloud world is handled by Mobile Device Management (MDM) solutions like Microsoft Intune."
-            }
-          }, {
-            "@type": "Question",
-            "name": "How does an attacker bypass MFA in Azure AD environments?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Attackers typically bypass MFA using Adversary-in-the-Middle (AiTM) phishing proxies (such as Evilginx2) to steal the active session token after the user successfully completes the MFA challenge. They may also use MFA Fatigue or exploit legacy authentication protocols."
-            }
-          }, {
-            "@type": "Question",
-            "name": "What is a break-glass account in Entra ID and why is it necessary?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A break-glass account is a highly privileged, cloud-only emergency access account configured to bypass typical Conditional Access policies. It ensures you can still access your tenant if an MFA outage or configuration error locks all normal administrators out."
-            }
-          }, {
-            "@type": "Question",
-            "name": "Is Azure AD (Entra ID) vulnerable to Kerberoasting?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. Entra ID utilizes modern authentication protocols like OAuth 2.0, OpenID Connect, and SAML. Because it does not use Kerberos, attacks like Kerberoasting and Golden Ticket forgery are structurally impossible in a pure cloud-native Entra ID environment."
-            }
-          }]
-        }
-        </script>
+
 
         <h2 id="continue-your-identity-security-journey"><i class="fas fa-rocket"></i> Continue Your Identity Security Journey</h2>
             <p style="color: var(--text-secondary);">Now that you understand the architectural shift, dive into the practical tools and frameworks that will help you secure, monitor, and manage an Entra ID-first environment.</p>

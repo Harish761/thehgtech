@@ -29,91 +29,50 @@
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "The eMudhra CA Key Failure: How Weak Cryptographic Entropy Threatened HTTPS Trust",
-  "description": "Comprehensive technical analysis of the eMudhra Certificate Authority weak private-key incident. Eight P-384 subordinate CAs possessed single-byte scalar keys, triggering emergency browser revocation and ecosystem distrust.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://twitter.com/thehgtech"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "The eMudhra CA Key Failure: How Weak Cryptographic Entropy Threatened HTTPS Trust",
+      "description": "Comprehensive technical analysis of the eMudhra Certificate Authority weak private-key incident. Eight P-384 subordinate CAs possessed single-byte scalar keys, triggering emergency browser revocation and ecosystem distrust.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-21",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/articles/emudhra-ca-weak-key-incident-2026.html"
+      },
+      "image": "https://thehgtech.com/images/articles/emudhra-ca-weak-key-incident-2026.png",
+      "articleSection": "PKI & Cryptography",
+      "keywords": [
+        "eMudhra",
+        "Certificate Authority",
+        "WebPKI",
+        "Weak Cryptographic Entropy",
+        "P-384",
+        "CRLSets",
+        "OneCRL",
+        "Sectigo",
+        "X.509"
+      ]
     }
-  },
-  "datePublished": "2026-10-21",
-  "dateModified": "2026-10-21",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://thehgtech.com/articles/emudhra-ca-weak-key-incident-2026.html"
-  },
-  "image": "https://thehgtech.com/images/articles/emudhra-ca-weak-key-incident-2026.png",
-  "articleSection": "PKI & Cryptography",
-  "keywords": [
-    "eMudhra",
-    "Certificate Authority",
-    "WebPKI",
-    "Weak Cryptographic Entropy",
-    "P-384",
-    "CRLSets",
-    "OneCRL",
-    "Sectigo",
-    "X.509"
-  ]
-}
-</script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What was the technical cause of the eMudhra intermediate CA private key compromise?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "During an April 30, 2025 Key Generation Ceremony, a script flaw during a Hardware Security Module (HSM) key wrap/unwrap test generated an unintended, weak set of P-384 private keys alongside the intended keys. Due to label confusion, these weak keys\u2014having scalar integer values as small as single digits (e.g. 4, 56, 115, 155, 156, 230, 237)\u2014were submitted in Certificate Signing Requests and published to public root programs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Were unauthorized TLS certificates issued or observed in the wild?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "According to Google Chrome Security and eMudhra's official statements, no TLS certificates chaining to the six affected web intermediate CAs were logged to Certificate Transparency (CT) logs prior to ecosystem revocation. While this proves that CT-mandating browsers like Chrome, Safari, and Edge (and Firefox via OneCRL/CRLite real-time blocklists) could not be targeted with unlogged fraudulent certificates, non-CT clients such as command-line tools, Python runtimes, and background servers remained theoretically exposed until local trust stores were updated."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How did major browsers respond to the eMudhra weak key disclosure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google Chrome pushed an emergency CRLSet update within 100 minutes of corroborating the report on October 17, 2026, blocking the intermediate Subject Public Key Info (SPKI) hashes, and scheduled the removal of emSign ECC Root CA - G3. Mozilla pushed an emergency OneCRL update to Firefox within hours, followed by Firefox point releases and NSS 3.131.1 to untrust the root across non-browser NSS consumers. Apple and Microsoft deployed emergency blocklist updates."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can system administrators and security engineers test if their servers are vulnerable?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Administrators can test whether their local clients (curl, Python, Go) still trust the compromised chains by querying Dennis Jackson's verification testbed (e.g., curl https://dv-g3b-emudhra.we-have-a-problem.com/). A connection failure or certificate validation error confirms the client is protected. In addition, OpenSSL verify commands with -show_chain can inspect whether emSign ECC Root CA - G3 or Sectigo AAA Certificate Services are trusted in local trust stores."
-      }
-    }
-  ]
-}
     </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
@@ -123,10 +82,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1959,7 +1915,6 @@ event x509_certificate(f: fa_file, cert_ref: opaque of x509, cert: X509::Certifi
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

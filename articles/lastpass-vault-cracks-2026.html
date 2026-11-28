@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "Is the 2022 LastPass breach still affecting people in 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Attackers continue to crack encrypted vault backups stolen in 2022. Those with weak master passwords are most at risk, with cryptocurrency wallets being primary targets."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How are attackers cracking LastPass vaults?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Attackers use offline brute-force attacks against the encrypted vault files. Weak or reused master passwords can be cracked using GPU clusters and specialized tools, with unlimited time since the files are already in attackers' possession."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What should former LastPass users do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "If you used LastPass before December 2022: 1) Change ALL passwords stored in your vault, 2) Move any cryptocurrency to new wallets with fresh seed phrases, 3) Enable MFA everywhere, 4) Consider your old master password permanently compromised."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1273,7 +1242,6 @@
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

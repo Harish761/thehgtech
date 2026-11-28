@@ -91,125 +91,50 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Cloud Security Hardening: AWS, Azure & GCP",
-  "description": "Comprehensive guide to hardening cloud infrastructure. IAM best practices, network security, encryption, and compliance.",
-  "image": [
-    "https://thehgtech.com/images/guides/cloud-security-hardening.png"
-  ],
-  "datePublished": "2026-01-01T00:00:00+00:00",
-  "dateModified": "2026-05-01T00:00:00+00:00",
-  "author": [
     {
-      "@type": "Person",
-      "name": "Harish G",
-      "url": "https://thehgtech.com/about.html",
-      "sameAs": [
-        "https://www.linkedin.com/in/harish-g-2216955b/"
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Cloud Security Hardening: AWS, Azure & GCP",
+      "description": "Comprehensive guide to hardening cloud infrastructure. IAM best practices, network security, encryption, and compliance.",
+      "image": [
+        "https://thehgtech.com/images/guides/cloud-security-hardening.png"
       ],
-      "@id": "https://thehgtech.com/about.html#harish-g"
+      "datePublished": "2025-12-13",
+      "dateModified": "2026-05-01",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://thehgtech.com/about.html",
+          "sameAs": [
+            "https://www.linkedin.com/in/harish-g-2216955b/"
+          ],
+          "@id": "https://thehgtech.com/about.html#harish-g"
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/cloud-security-hardening.html"
+      },
+      "articleSection": "Cloud Security",
+      "keywords": [
+        "Cloud Security",
+        "Cybersecurity",
+        "Hardening Guide"
+      ]
     }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    }
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://thehgtech.com/guides/cloud-security-hardening.html"
-  },
-  "articleSection": "Cloud Security",
-  "keywords": [
-    "Cloud Security",
-    "Cybersecurity",
-    "Hardening Guide"
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the shared responsibility model in cloud security?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cloud providers secure the infrastructure OF the cloud (physical data centers, network, hypervisors). You secure everything IN the cloud - your data, applications, identities, IAM policies, network configurations, and encryption keys. Most cloud breaches occur in the customer's domain."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the top cloud security mistakes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Top cloud security mistakes: 1) Overly permissive IAM policies with wildcards, 2) Public S3 buckets or storage blobs, 3) Security groups open to 0.0.0.0/0, 4) No MFA on admin accounts, 5) Long-lived credentials instead of temporary tokens, 6) Disabled logging, 7) Unencrypted data at rest."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I secure IAM in AWS, Azure, and GCP?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Secure IAM by: enabling MFA for all users, using role-based access control (RBAC), implementing Just-In-Time access for privileged operations, rotating credentials every 90 days, using service accounts with scoped permissions, and eliminating long-lived access keys in favor of temporary credentials."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What logs should I enable in cloud environments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Essential cloud logs: AWS CloudTrail (API activity), VPC Flow Logs, GuardDuty findings. Azure Activity Log, NSG Flow Logs, Defender for Cloud alerts. GCP Cloud Audit Logs, VPC Flow Logs, Security Command Center findings. Store logs in a separate account with immutable retention."
-      }
-    }
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Cloud Security Hardening: AWS, Azure & GCP Checklist [2025]",
-  "description": "\u2601\ufe0f Multi-cloud security hardening for AWS, Azure & GCP. IAM, network security, encryption & logging. Comparison tables + CLI commands included.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Identity and Access Management (IAM)",
-      "text": "Refer to the section '1. Identity and Access Management (IAM)' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. Network Security",
-      "text": "Refer to the section '2. Network Security' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Data Encryption",
-      "text": "Refer to the section '3. Data Encryption' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. Logging, Monitoring & Detection",
-      "text": "Refer to the section '4. Logging, Monitoring & Detection' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Compliance & Security Posture Management",
-      "text": "Refer to the section '5. Compliance & Security Posture Management' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

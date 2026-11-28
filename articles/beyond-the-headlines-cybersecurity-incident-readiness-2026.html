@@ -29,51 +29,50 @@
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident",
-  "description": "A news-driven technical analysis and enterprise defensive readiness playbook. Deconstructing the October 22 vulnerability surge (PHP, Node.js, NGINX, Go, GitLab, eMudhra) and SBI data exposure into actionable detection, exposure management, and compliance controls.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://twitter.com/thehgtech"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://thehgtech.com/#organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com"
-  },
-  "datePublished": "2026-10-22",
-  "dateModified": "2026-10-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://thehgtech.com/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html"
-  },
-  "image": "https://thehgtech.com/images/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.png",
-  "articleSection": "Cybersecurity",
-  "keywords": [
-    "Cybersecurity Readiness",
-    "Vulnerability Management",
-    "PHP2Shell",
-    "Node.js",
-    "NGINX",
-    "Go",
-    "GitLab",
-    "eMudhra",
-    "SBI Data Exposure",
-    "CERT-In",
-    "DPDP Act",
-    "ISO 27001",
-    "Detection Engineering"
-  ]
-}
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "Beyond the Headlines: How Security Teams Can Prepare for the Next Cybersecurity Incident",
+      "description": "A news-driven technical analysis and enterprise defensive readiness playbook. Deconstructing the October 22 vulnerability surge (PHP, Node.js, NGINX, Go, GitLab, eMudhra) and SBI data exposure into actionable detection, exposure management, and compliance controls.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://thehgtech.com/#organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com"
+      },
+      "datePublished": "2026-10-22",
+      "dateModified": "2026-10-22",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html"
+      },
+      "image": "https://thehgtech.com/images/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.png",
+      "articleSection": "Cybersecurity",
+      "keywords": [
+        "Cybersecurity Readiness",
+        "Vulnerability Management",
+        "PHP2Shell",
+        "Node.js",
+        "NGINX",
+        "Go",
+        "GitLab",
+        "eMudhra",
+        "SBI Data Exposure",
+        "CERT-In",
+        "DPDP Act",
+        "ISO 27001",
+        "Detection Engineering"
+      ]
+    }
     </script>
     <script type="application/ld+json">
 {
@@ -101,54 +100,6 @@
   ]
 }
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do the October 22 disclosures across PHP, Node.js, NGINX, Go, and GitLab relate to each other?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "They do not share a common attacker, campaign, or root cause. The simultaneous disclosures reflect independent vendor release cadences, scheduled maintenance cycles, and bug bounty remediation. For example, NGINX disclosures occurred on October 14 and were bundled into an aggregate roundup, whereas Go issued an emergency mitigation specifically to block compromised intermediate certificates from the eMudhra incident."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is Go CVE-2026-111943 directly linked to the eMudhra CA key failure?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because Go binaries are often statically compiled and do not dynamically inherit operating system or browser revocation pushes like CRLSets or OneCRL, the Go security team updated crypto/x509 to embed a hardcoded denylist rejecting the eight compromised eMudhra P-384 intermediate CA public keys during certificate verification."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Did the eMudhra intermediate CA compromise result in a customer data breach?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The eMudhra incident was a cryptographic key generation failure where eight intermediate CAs were created with near-zero entropy scalar private keys. It was not a customer database breach. Mandatory Certificate Transparency (CT) enforcement in Chrome, Safari, and Edge prevented forged certificates from being accepted by major browsers."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What was confirmed in the SBI customer-data exposure filing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In a SEBI Regulation 30 filing on October 21, 2026, State Bank of India stated that after receiving threat intelligence alerts on October 16, a preliminary review of approximately 375,000 dark-web records identified 3,897 customer records containing PII (names, mobile numbers, DOB, branch/CIF IDs, and loan metadata). Core banking systems, financial ledgers, and customer credentials were not compromised."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the legal cybersecurity reporting requirements for enterprises in India?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Under CERT-In Directions 2022, organizations must report specified cyber incidents to CERT-In within 6 hours, synchronize system clocks with authorized NTP servers, and retain system logs for 180 days. Under the Digital Personal Data Protection (DPDP) Act 2023 and Rules 2025, personal data breaches must be reported to the Data Protection Board of India and affected individuals."
-      }
-    }
-  ]
-}
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -157,10 +108,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1656,7 +1604,6 @@ AzureDiagnostics
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

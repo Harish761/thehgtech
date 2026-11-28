@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is an OAuth worm?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An OAuth worm is a malicious application that spreads across cloud platforms by tricking users into granting OAuth permissions. Once authorized, it can access data, send messages on behalf of users, and propagate to their contacts through trusted invitations."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How do OAuth worms bypass MFA?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "OAuth worms bypass MFA because they don't steal passwords—they obtain legitimate access tokens through user consent. Once a user clicks 'Allow' on a consent prompt, the malicious app has persistent API access regardless of MFA settings."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can organizations protect against OAuth attacks?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Key protections include: restricting third-party app consent to admins only, implementing SaaS Security Posture Management (SSPM), auditing existing OAuth grants, blocking unverified publishers, and monitoring for suspicious app authorizations."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1326,7 +1295,6 @@ Set-MsolCompanySettings -UsersPermissionToUserConsentToAppEnabled $false
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

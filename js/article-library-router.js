@@ -803,7 +803,12 @@
                     }
                 }
 
-                allArticles = Array.isArray(data) ? data : [];
+                // Preserve pre-rendered static cards if network fetch fails and no embedded JSON exists
+                if (!Array.isArray(data) || data.length === 0) {
+                    return;
+                }
+
+                allArticles = data;
 
                 const statTotal = document.getElementById('statTotalArticles');
                 if (statTotal) statTotal.textContent = String(allArticles.length);

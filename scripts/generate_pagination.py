@@ -216,13 +216,18 @@ def generate_article_html(article):
 with open(article_list_html_path, 'r', encoding='utf-8') as f:
     raw_articles_html = f.read()
 
-# Update embeddedArticlesData with current articles (including repaired externalUrls)
-updated_articles_json_str = json.dumps(articles, indent=4)
+# Strip redundant ~693 KB inline embeddedArticlesData blob (router loads /ioc-data/articles.json directly)
 raw_articles_html = re.sub(
-    r'<script id="embeddedArticlesData" type="application/json">.*?</script>',
-    lambda m: f'<script id="embeddedArticlesData" type="application/json">\n{updated_articles_json_str}\n    </script>',
+    r'\s*<!--\s*Embedded Articles Fallback Data[^>]*-->\s*<script id="embeddedArticlesData" type="application/json">.*?</script>',
+    '',
     raw_articles_html,
-    flags=re.DOTALL
+    flags=re.DOTALL,
+)
+raw_articles_html = re.sub(
+    r'\s*<script id="embeddedArticlesData" type="application/json">.*?</script>',
+    '',
+    raw_articles_html,
+    flags=re.DOTALL,
 )
 
 clean_template = clean_articles_template(raw_articles_html)
@@ -363,6 +368,33 @@ with open(article_list_html_path, 'w', encoding='utf-8') as f:
 
 with open(articles_list_html_path, 'w', encoding='utf-8') as f:
     f.write(final_articles_html)
+
+# 2B. Populate static crawlable article cards inside articles.html #rlArticlesGrid (preserving existing robots/noindex directives)
+if articles_html_path.exists():
+    raw_portal_html = articles_html_path.read_text(encoding='utf-8')
+    all_static_cards = "\n".join(generate_rl_card_html(a) for a in standalone_articles)
+    portal_updated, n_portal = re.subn(
+        r'<section class="rl-grid" id="rlArticlesGrid"[^>]*>.*?</section>',
+        lambda m: (
+            f'<section class="rl-grid" id="rlArticlesGrid" aria-label="Articles Listing">\n'
+            f'{MARKER_ARTICLES_START}\n'
+            f'{all_static_cards}\n'
+            f'{MARKER_ARTICLES_END}\n'
+            f'            </section>'
+        ),
+        raw_portal_html,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if n_portal > 0:
+        portal_updated = re.sub(
+            r'<div id="rlResultsCounter">[^<]*</div>',
+            f'<div id="rlResultsCounter">Showing 1–{min(ITEMS_PER_PAGE, len(standalone_articles))} of {len(standalone_articles)} published analyses</div>',
+            portal_updated,
+            count=1,
+        )
+        articles_html_path.write_text(portal_updated, encoding='utf-8')
+        print(f"Populated {len(standalone_articles)} static crawlable article cards in articles.html")
 
 # 3. Inject static fallback into index.html
 with open(index_html_path, 'r', encoding='utf-8') as f:

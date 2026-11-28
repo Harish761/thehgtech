@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "How do infostealers bypass MFA?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Infostealers bypass MFA by stealing session cookies and authentication tokens after the user has already authenticated. Since the session is already established and verified, the attacker can import these tokens and gain immediate access without needing to authenticate again."
-        }
-      }, {
-        "@type": "Question",
-        "name": "What data do infostealers steal?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Modern infostealers steal browser cookies, saved passwords, autofill data, cryptocurrency wallet data, session tokens, authentication cookies, browser extension data, local files, and sometimes take screenshots and log keystrokes."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can organizations protect against infostealer attacks?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Key protections include: deploying hardware security keys (FIDO2), implementing device trust/certificate-based access, using session token binding, browser isolation technologies, endpoint detection focused on credential theft, and continuous session monitoring."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1313,7 +1282,6 @@ New-AzureADMSConditionalAccessPolicy -DisplayName &quot;Require token binding&qu
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

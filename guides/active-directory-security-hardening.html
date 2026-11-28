@@ -91,120 +91,44 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Active Directory Security Hardening Guide 2026",
-  "description": "Complete Active Directory security hardening guide covering tiered admin model, GPO security, Kerberos hardening, and detecting AD-based attacks.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://github.com/Harish761"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Active Directory Security Hardening Guide 2026",
+      "description": "Complete Active Directory security hardening guide covering tiered admin model, GPO security, Kerberos hardening, and detecting AD-based attacks.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "datePublished": "2026-01-14",
+      "dateModified": "2026-01-14",
+      "mainEntityOfPage": "https://thehgtech.com/guides/active-directory-security-hardening.html",
+      "articleSection": "Enterprise Security Guides",
+      "keywords": [
+        "Active Directory",
+        "AD Security",
+        "Kerberos",
+        "Windows Security",
+        "Enterprise Security"
+      ]
     }
-  },
-  "datePublished": "2026-01-14",
-  "dateModified": "2026-01-14",
-  "mainEntityOfPage": "https://thehgtech.com/guides/active-directory-security-hardening.html",
-  "articleSection": "Enterprise Security Guides",
-  "keywords": [
-    "Active Directory",
-    "AD Security",
-    "Kerberos",
-    "Windows Security",
-    "Enterprise Security"
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Why is Active Directory the #1 attack target?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Active Directory controls authentication and authorization for 95% of Fortune 500 companies. Compromising AD gives attackers the keys to the kingdom - access to every system, user, and resource in the organization."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the tiered admin model?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The tiered admin model separates privileged access into three tiers: Tier 0 (Domain Controllers and AD), Tier 1 (Enterprise servers and apps), and Tier 2 (Workstations). Admins in each tier cannot access resources in other tiers, limiting lateral movement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is Kerberoasting and how do I prevent it?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Kerberoasting extracts service account password hashes from Kerberos tickets for offline cracking. Prevent it by using long, complex passwords (25+ characters) for service accounts, implementing gMSAs, and monitoring for suspicious TGS requests."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I detect DCSync attacks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Monitor for Event ID 4662 with specific GUIDs related to replication rights, watch for non-DC computers requesting replication, and use tools like Microsoft ATA or Defender for Identity to detect DCSync behavior."
-      }
-    }
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Active Directory Security Hardening Guide 2026",
-  "description": "Complete Active Directory security hardening guide. Tiered admin model, GPO security, Kerberos hardening, detecting AD attacks like Kerberoasting and DCSync.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Why Active Directory is the Crown Jewel",
-      "text": "Refer to the section '1. Why Active Directory is the Crown Jewel' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. The Tiered Administrative Model",
-      "text": "Refer to the section '2. The Tiered Administrative Model' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Securing Privileged Accounts",
-      "text": "Refer to the section '3. Securing Privileged Accounts' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. Kerberos Hardening",
-      "text": "Refer to the section '4. Kerberos Hardening' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Group Policy Security",
-      "text": "Refer to the section '5. Group Policy Security' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

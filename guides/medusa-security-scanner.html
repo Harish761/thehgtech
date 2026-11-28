@@ -91,136 +91,44 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "MEDUSA Security Scanner Guide: AI-First SAST with 180+ AI Rules [2026]",
-  "description": "Complete guide to MEDUSA, the AI-first security scanner with 74 analyzers and 180+ AI agent security rules covering OWASP LLM Top 10 2025.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://github.com/Harish761"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "MEDUSA Security Scanner Guide: AI-First SAST with 180+ AI Rules [2026]",
+      "description": "Complete guide to MEDUSA, the AI-first security scanner with 74 analyzers and 180+ AI agent security rules covering OWASP LLM Top 10 2025.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "datePublished": "2026-01-27",
+      "dateModified": "2026-01-27",
+      "mainEntityOfPage": "https://thehgtech.com/guides/medusa-security-scanner.html",
+      "articleSection": "AI Security Guides",
+      "keywords": [
+        "MEDUSA",
+        "SAST",
+        "AI Security",
+        "Prompt Injection",
+        "OWASP LLM Top 10"
+      ]
     }
-  },
-  "datePublished": "2026-01-27",
-  "dateModified": "2026-01-27",
-  "mainEntityOfPage": "https://thehgtech.com/guides/medusa-security-scanner.html",
-  "articleSection": "AI Security Guides",
-  "keywords": [
-    "MEDUSA",
-    "SAST",
-    "AI Security",
-    "Prompt Injection",
-    "OWASP LLM Top 10"
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is MEDUSA security scanner?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MEDUSA is an AI-first Static Application Security Testing (SAST) tool with 74 specialized scanners covering all major languages and 180+ AI agent security rules. It features intelligent false positive reduction and is updated for OWASP LLM Top 10 2025."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What AI security vulnerabilities does MEDUSA detect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MEDUSA detects prompt injection, tool poisoning (including CVE-2025-6514), RAG/knowledge base attacks, memory poisoning, workflow hijacking, agent impersonation, and more. It covers all OWASP LLM Top 10 2025 vulnerabilities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I install MEDUSA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Install MEDUSA using pip: 'pip install medusa-security'. Then initialize with 'medusa init', install scanner tools with 'medusa install --all', and run your first scan with 'medusa scan .' It works on Windows, macOS, and Linux."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does MEDUSA work with AI coding assistants like Cursor and Claude Code?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, MEDUSA has built-in IDE integration for Claude Code, Cursor, VS Code, Gemini CLI, GitHub Copilot, and OpenAI Codex. It can scan AI configuration files like .cursorrules, CLAUDE.md, and mcp.json for security issues."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does MEDUSA compare to other SAST tools like Semgrep or SonarQube?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MEDUSA offers more language support (74 scanners vs ~30 in Semgrep), requires no server (unlike SonarQube), has built-in AI/LLM security focus, intelligent false positive filtering, and easier setup. It's free and open source."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can MEDUSA be integrated into CI/CD pipelines?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, MEDUSA is designed for CI/CD integration. It supports sandbox/restricted environments, outputs SARIF format for GitHub Security tab, and can fail builds on specified severity levels using '--fail-on high' flag."
-      }
-    }
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "MEDUSA Security Scanner Guide: AI-First SAST with 180+ AI Rules [2026]",
-  "description": "Complete guide to MEDUSA, the AI-first security scanner with 74 analyzers and 180+ AI agent security rules. Learn installation, OWASP LLM Top 10 coverage, and CI/CD integration.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. What is MEDUSA?",
-      "text": "Refer to the section '1. What is MEDUSA?' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. Installation & Quick Start",
-      "text": "Refer to the section '2. Installation & Quick Start' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Core Features Deep Dive",
-      "text": "Refer to the section '3. Core Features Deep Dive' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. AI Agent Security (180+ Rules)",
-      "text": "Refer to the section '4. AI Agent Security (180+ Rules)' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. OWASP LLM Top 10 2025 Coverage",
-      "text": "Refer to the section '5. OWASP LLM Top 10 2025 Coverage' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

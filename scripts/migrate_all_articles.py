@@ -189,10 +189,7 @@ def build_common_head_assets(use_mermaid: bool = False) -> str:
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -618,7 +615,6 @@ def build_lightbox_and_footer() -> str:
     </footer>
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>
@@ -747,9 +743,9 @@ def process_single_article(file_path: Path) -> dict:
     title_raw = title_match.group(1).strip() if title_match else meta_db.get("title", slug)
     clean_title = re.sub(r"\s*\|\s*TheHGTech.*$", "", title_raw).strip()
 
-    # Extract Meta Description
-    desc_match = re.search(r'<meta\s+name=["\']description["\']\s+content=["\'](.*?)["\']', raw_html, re.IGNORECASE)
-    meta_desc = desc_match.group(1).strip() if desc_match else meta_db.get("excerpt", "")
+    # Extract Meta Description (use quote backreference so apostrophes never truncate content)
+    desc_match = re.search(r'<meta\s+name=["\']description["\']\s+content=(["\'])(.*?)\1', raw_html, re.IGNORECASE | re.DOTALL)
+    meta_desc = html.unescape(desc_match.group(2)).strip() if desc_match else meta_db.get("excerpt", "")
 
     # Extract Keywords
     kw_match = re.search(r'<meta\s+name=["\']keywords["\']\s+content=["\'](.*?)["\']', raw_html, re.IGNORECASE)

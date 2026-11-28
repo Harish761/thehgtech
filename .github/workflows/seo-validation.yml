@@ -1,0 +1,44 @@
+name: Technical SEO Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    paths:
+      - '*.html'
+      - 'articles/**'
+      - 'guides/**'
+      - 'comparisons/**'
+      - 'workflows/**'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - '_config.yml'
+      - 'scripts/seo_validator.py'
+      - 'scripts/generate_sitemaps_and_rss.py'
+      - 'scripts/generate_pagination.py'
+      - 'tests/test_seo_validator.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seo-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Technical SEO Validator
+        run: python3 scripts/seo_validator.py
+
+      - name: Run SEO & Sitemap Regression Tests
+        run: python3 -m unittest -v tests/test_seo_validator.py tests/test_sitemap_generator.py tests/test_structured_data_and_metadata.py tests/test_indexation_controls.py

@@ -91,115 +91,47 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What are the most important AWS security settings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Priority AWS security settings: 1) Enable MFA on root account, 2) Enable CloudTrail in all regions, 3) Block public S3 bucket access, 4) Use IAM roles instead of access keys, 5) Enable GuardDuty for threat detection, 6) Configure Security Hub for compliance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I secure S3 buckets in AWS?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "To secure S3 buckets: Enable S3 Block Public Access at account level, use bucket policies with least privilege, enable default encryption (SSE-S3 or SSE-KMS), enable versioning, configure access logging, and use VPC endpoints for internal access."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the principle of least privilege in AWS IAM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Least privilege means granting only the minimum permissions necessary to perform a task. In AWS IAM, this means: using specific resource ARNs instead of wildcards, specifying exact actions needed, using conditions to restrict access, and regularly reviewing permissions with IAM Access Analyzer."
-      }
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "AWS Security Best Practices: Complete Hardening Guide",
+      "description": "Secure your AWS environment from day one with IAM, S3, VPC, and monitoring best practices.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://thehgtech.com/images/guides/aws-security-best-practices.png",
+        "width": 1200,
+        "height": 630
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        },
+        "@id": "https://thehgtech.com/#organization"
+      },
+      "datePublished": "2026-01-17",
+      "dateModified": "2026-01-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/guides/aws-security-best-practices.html"
+      },
+      "keywords": "AWS security, IAM, S3, VPC, CloudTrail, GuardDuty",
+      "articleSection": "Security Guides",
+      "proficiencyLevel": "Intermediate"
     }
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "AWS Security Best Practices: Complete Hardening Guide",
-  "description": "Secure your AWS environment from day one with IAM, S3, VPC, and monitoring best practices.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://thehgtech.com/images/guides/aws-security-best-practices.png",
-    "width": 1200,
-    "height": 630
-  },
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://github.com/Harish761"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    },
-    "@id": "https://thehgtech.com/#organization"
-  },
-  "datePublished": "2026-01-17",
-  "dateModified": "2026-01-17",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://thehgtech.com/guides/aws-security-best-practices.html"
-  },
-  "keywords": "AWS security, IAM, S3, VPC, CloudTrail, GuardDuty",
-  "articleSection": "Security Guides",
-  "proficiencyLevel": "Intermediate"
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "AWS Security Best Practices Guide 2026",
-  "description": "Secure your AWS environment with this comprehensive guide. Learn IAM policies, S3 bucket security, VPC configuration, CloudTrail logging, and GuardDuty setup.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Account Security Fundamentals",
-      "text": "Refer to the section '1. Account Security Fundamentals' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. IAM Best Practices",
-      "text": "Refer to the section '2. IAM Best Practices' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. S3 Bucket Security",
-      "text": "Refer to the section '3. S3 Bucket Security' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. VPC and Network Security",
-      "text": "Refer to the section '4. VPC and Network Security' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Logging and Monitoring",
-      "text": "Refer to the section '5. Logging and Monitoring' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

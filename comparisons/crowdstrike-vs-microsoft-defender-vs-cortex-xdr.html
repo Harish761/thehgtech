@@ -47,7 +47,9 @@
       "image": "https://thehgtech.com/images/comparisons/crowdstrike-vs-microsoft-vs-cortex-xdr.png",
       "author": {
         "@type": "Organization",
-        "name": "TheHGTech"
+        "@id": "https://thehgtech.com/#organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com/"
       },
       "publisher": {
         "@type": "Organization",
@@ -55,48 +57,6 @@
       },
       "datePublished": "2025-12-13",
       "dateModified": "2026-07-05"
-    }
-    </script>
-
-    <!-- FAQ Schema for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Which EDR is better: CrowdStrike vs Microsoft Defender?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Based on hands-on POC testing, CrowdStrike Falcon offers superior console experience, faster alert response, and better visibility. Microsoft Defender E5 provides good value if already bundled with your license, but has reliability concerns and scattered console experience."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Cortex XDR worth switching to from CrowdStrike?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "At the core EDR layer, Cortex XDR performed at rough parity with CrowdStrike Falcon in a 2025 POC evaluation — no meaningfully better detection, response speed, or analyst workflow. Cortex's genuine advantage is native cross-product correlation if you are already running Palo Alto NGFWs, Prisma Cloud, or Cortex Data Lake. Outside that ecosystem, CrowdStrike's Falcon XDR and third-party integrations cover comparable ground. The decision is conditional: choose Cortex over CrowdStrike primarily if already standardized on Palo Alto network or cloud security — otherwise Cortex did not offer capability that CrowdStrike does not already cover."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does CrowdStrike cost vs Microsoft Defender?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "CrowdStrike Falcon is premium-priced (highest of the three), while Microsoft Defender is often bundled with E5 licenses at no extra cost. Cortex XDR pricing is competitive but watch for renewal increases."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best EDR for enterprise in 2025?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For best-in-class EDR, choose CrowdStrike Falcon. For Microsoft-heavy environments on a budget, use Defender E5. For Palo Alto ecosystem customers, Cortex XDR offers tight integration. All three are Gartner Leaders."
-          }
-        }
-      ]
     }
     </script>
 

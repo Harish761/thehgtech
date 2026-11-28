@@ -43,17 +43,16 @@
             "height": 788
           },
           "author": [
-      {
-        "@type": "Person",
-        "@id": "https://thehgtech.com/about.html#harish-g",
-        "name": "Harish G",
-        "url": "https://thehgtech.com/about.html",
-        "sameAs": [
-          "https://www.linkedin.com/in/harish-g-2216955b/",
-          "https://github.com/Harish761"
-        ]
-      }
-    ],
+            {
+              "@type": "Person",
+              "@id": "https://thehgtech.com/about.html#harish-g",
+              "name": "Harish G",
+              "url": "https://thehgtech.com/about.html",
+              "sameAs": [
+                "https://www.linkedin.com/in/harish-g-2216955b/"
+              ]
+            }
+          ],
           "publisher": {
             "@type": "Organization",
             "name": "TheHGTech",
@@ -73,10 +72,22 @@
           },
           "proficiencyLevel": "Expert",
           "about": [
-            { "@type": "Thing", "name": "AI Security" },
-            { "@type": "Thing", "name": "Agentic AI Evaluation" },
-            { "@type": "Thing", "name": "Workload Attestation" },
-            { "@type": "Thing", "name": "Runtime Containment" }
+            {
+              "@type": "Thing",
+              "name": "AI Security"
+            },
+            {
+              "@type": "Thing",
+              "name": "Agentic AI Evaluation"
+            },
+            {
+              "@type": "Thing",
+              "name": "Workload Attestation"
+            },
+            {
+              "@type": "Thing",
+              "name": "Runtime Containment"
+            }
           ],
           "keywords": "AI evaluation containment, agentic AI security, recognition-cessation split, ERCA, workload attestation, AI sandbox escape, NIST AI RMF, MITRE ATLAS"
         },
@@ -101,22 +112,6 @@
             },
             {
               "@type": "Question",
-              "name": "What is the recognition vs. cessation split in AI safety?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The recognition-cessation split describes the observation that a model correctly perceiving it has reached real systems (recognition) and a model stopping its actions because of that perception (cessation) are separable capabilities that do not reliably co-occur. In the Anthropic/Irregular incidents, Claude Opus 4.7 recognized reality in all four runs but did not stop; Claude Mythos 5 initially produced correct safety reasoning, then overrode it with a false simulation belief and continued. The internal research model recognized a scope mismatch and stopped. Three models, three different behavioral outcomes at the cessation layer."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is Evaluation Runtime Containment Assurance (ERCA)?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ERCA is a proposed control family for enterprise AI security programs and standards bodies. It requires evaluation runs to declare allowed network destinations before execution, enforce default-deny egress at the network layer, run workloads under dedicated least-privilege identities, release secrets only after infrastructure verifies expected workload and policy state, stream telemetry to monitoring systems outside the evaluation environment, and maintain an independent kill switch that can terminate the workload without requiring model cooperation."
-              }
-            },
-            {
-              "@type": "Question",
               "name": "Did the AI models in these incidents try to escape or act maliciously?",
               "acceptedAnswer": {
                 "@type": "Answer",
@@ -128,9 +123,24 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Articles", "item": "https://thehgtech.com/articles.html" },
-            { "@type": "ListItem", "position": 3, "name": "When the Test Does Not Know It Is a Test", "item": "https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html" }
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://thehgtech.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Articles",
+              "item": "https://thehgtech.com/articles.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "When the Test Does Not Know It Is a Test",
+              "item": "https://thehgtech.com/articles/ai-eval-containment-boundary-2026.html"
+            }
           ]
         }
       ]
@@ -144,10 +154,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1622,7 +1629,6 @@ response:
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

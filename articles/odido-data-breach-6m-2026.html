@@ -70,46 +70,7 @@
   ]
 }
 </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What happened in the Odido data breach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In February 2026, Dutch telecom provider Odido (formerly T-Mobile Netherlands) suffered a major data breach exposing personal information of 6.2 million customers. Attackers gained unauthorized access to Odido's Salesforce-based customer management system through social engineering and phishing attacks targeting customer service employees."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What data was stolen in the Odido breach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The stolen data includes customer names, home addresses, email addresses, phone numbers, dates of birth, bank account numbers (IBANs), and identification documents (passport or driver's license numbers). Passwords, call records, and identification document scans were NOT compromised."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How did the Odido breach happen through Salesforce?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The breach was linked to a compromised Salesforce environment used for customer contact management. Attackers used a combination of phishing and social engineering tactics to obtain credentials from customer service employees, bypassing security controls to access the CRM database containing 6.2 million customer records."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the GDPR implications of the Odido breach?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Under GDPR Article 83, Odido faces potential fines of up to €20 million or 4% of annual global turnover—whichever is higher. The Dutch Data Protection Authority (Autoriteit Persoonsgegevens) has been notified and is investigating. The scale of the breach (6.2M records with sensitive financial data) could result in one of the largest GDPR penalties in Dutch history."
-          }
-        }
-      ]
-    }
-    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -129,10 +90,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1565,7 +1523,6 @@ level: high</code></pre>
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

@@ -28,18 +28,7 @@
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.png">
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "What is Dirty Frag?", "acceptedAnswer": {"@type": "Answer", "text": "Dirty Frag is a deterministic local privilege escalation vulnerability chain in the Linux kernel (CVE-2026-43284 and CVE-2026-43500) that corrupts the page cache through IPsec ESP and RxRPC fragment handling, allowing unprivileged users to gain root."}},
-        {"@type": "Question", "name": "Is Dirty Frag related to Copy Fail?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Both belong to the same page-cache corruption bug class but exploit different kernel subsystems. Patching Copy Fail does NOT protect against Dirty Frag. Both require separate kernel updates."}},
-        {"@type": "Question", "name": "Why does Linux keep having page cache vulnerabilities?", "acceptedAnswer": {"@type": "Answer", "text": "The Linux page cache is a massive shared resource touched by nearly every subsystem. The kernel trusts subsystem code to handle page ownership correctly, but this trust model has been violated four times in ten years (Dirty COW, Dirty Pipe, Copy Fail, Dirty Frag) across different subsystems."}},
-        {"@type": "Question", "name": "How do I harden Linux against future kernel exploits?", "acceptedAnswer": {"@type": "Answer", "text": "Deploy LKRG for runtime integrity checking, enable Kernel Lockdown Mode, use SELinux in enforcing mode, blacklist unnecessary kernel modules, implement live patching solutions, and monitor with eBPF-based tools like Falco."}}
-      ]
-    }
-    </script>
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,44 +56,44 @@
 }
     </script>
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "NewsArticle",
-  "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
-  "description": "From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.",
-  "image": [
-    "https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp"
-  ],
-  "datePublished": "2026-06-30T17:12:27+05:30",
-  "dateModified": "2026-06-30T17:12:27+05:30",
-  "author": [
     {
-      "@type": "Person",
-      "name": "Harish G",
-      "url": "https://thehgtech.com/about.html",
-      "@id": "https://thehgtech.com/about.html#harish-g",
-      "sameAs": [
-        "https://www.linkedin.com/in/harish-g-2216955b/"
-      ]
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "The Page Cache Curse: Why Linux Keeps Getting Rooted by the Same Bug Class [2026]",
+      "description": "From Dirty COW to Dirty Frag — four root-level exploits in the same vulnerability class in 10 years. Deep technical analysis plus a 7-point kernel hardening playbook.",
+      "image": [
+        "https://thehgtech.com/images/articles/dirty-frag-page-cache-curse-2026.webp"
+      ],
+      "datePublished": "2026-05-10",
+      "dateModified": "2026-05-10",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Harish G",
+          "url": "https://thehgtech.com/about.html",
+          "@id": "https://thehgtech.com/about.html#harish-g",
+          "sameAs": [
+            "https://www.linkedin.com/in/harish-g-2216955b/"
+          ]
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "TheHGTech",
+        "url": "https://thehgtech.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thehgtech.com/logo-dark.png"
+        },
+        "@id": "https://thehgtech.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html"
+      },
+      "articleSection": "Vulnerability"
     }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "TheHGTech",
-    "url": "https://thehgtech.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thehgtech.com/logo-dark.png"
-    },
-    "@id": "https://thehgtech.com/#organization"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://thehgtech.com/articles/dirty-frag-page-cache-curse-2026.html"
-  },
-  "articleSection": "Vulnerability"
-}
-</script>
+    </script>
 
     <!-- Approved Brand Identity Favicon & App Icons -->
     <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
@@ -113,10 +102,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1248,7 +1234,6 @@ auditctl -a always,exit -F arch=b64 -S socket -F a0=33 -k rxrpc_socket</code></p
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

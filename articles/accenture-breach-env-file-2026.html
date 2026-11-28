@@ -7,7 +7,7 @@
 
     <!-- Preserved Production SEO Meta Tags & Canonical URL -->
     <title>Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files | TheHGTech</title>
-    <meta name="description" content="A senior security architect">
+    <meta name="description" content="A senior security architect's technical dissection of the July 2026 Accenture breach claim by threat actor 888. Why .env files in the stolen set signal dev-workstation compromise, not a repository access failure — and why that distinction changes every control priority.">
     <meta name="keywords" content="Accenture, Data Breach, Azure DevOps, Secrets Management, Developer Workstation, DLP, ISO 27001, Threat Actor 888">
     <meta name="author" content="Harish G">
     <meta name="robots" content="index, follow">
@@ -17,14 +17,14 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://thehgtech.com/articles/accenture-breach-env-file-2026.html">
     <meta property="og:title" content="Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files">
-    <meta property="og:description" content="A senior security architect">
+    <meta property="og:description" content="A senior security architect's technical dissection of the July 2026 Accenture breach claim by threat actor 888. Why .env files in the stolen set signal dev-workstation compromise, not a repository access failure — and why that distinction changes every control priority.">
     <meta property="og:image" content="https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg">
     <meta property="og:site_name" content="TheHGTech">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Deep Dive: The Accenture Breach Claim Isn&#x27;t About Source Code — It&#x27;s About .env Files">
-    <meta name="twitter:description" content="A senior security architect">
+    <meta name="twitter:description" content="A senior security architect's technical dissection of the July 2026 Accenture breach claim by threat actor 888. Why .env files in the stolen set signal dev-workstation compromise, not a repository access failure — and why that distinction changes every control priority.">
     <meta name="twitter:image" content="https://thehgtech.com/images/articles/accenture-breach-env-file-2026.jpg">
 
     <!-- Preserved Structured Data (TechArticle, NewsArticle, Breadcrumbs, etc.) -->
@@ -106,10 +106,7 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/fonts.css">
 
     <!-- Canonical Site Chrome & Unified Editorial Article Stylesheet -->
@@ -1228,7 +1225,6 @@ tags:
 <!-- SITE-FOOTER-END -->
 
     <!-- Core Site & Article Reader Scripts -->
-    <script src="/header-dropdown.min.js" defer></script>
     <script src="/command-palette.js" defer></script>
     <script src="/mobile-nav.js" defer></script>
     <script src="/theme-toggle.js" defer></script>

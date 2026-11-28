@@ -1,5 +1,7 @@
-# TheHGTech Robots.txt - Optimized for Maximum Crawl Coverage
-# Last Updated: 2026-07-04
+# TheHGTech Robots.txt - Deterministic Crawl Configuration
+# Last Updated: 2026-11-28
+# Note: All search and AI crawlers inherit User-agent: * consistently under RFC 9309.
+# Only explicitly blocked scraper bots define separate User-agent groups.
 
 User-agent: *
 Allow: /
@@ -14,64 +16,18 @@ Disallow: /templates/
 Disallow: /components/
 Disallow: /scripts/
 Disallow: /*.sh$
-# Block dev-only JSON data files (not the live data feeds)
 Disallow: /geo_analysis_results.json
 Disallow: /extracted_articles.json
 
-# Block JS-generated modal/search query params (not real pages - cause canonical duplication)
-# articles.html?id=article1 etc. are created by history.pushState() on modal open
+# Block JS-generated modal and legacy search query parameters (not standalone pages)
 Disallow: /*?id=
-# ?search= leftover from old Google Ads {search_term_string} placeholder
 Disallow: /*?search=
-# Block any other query-parameterized versions of pages
 Disallow: /*?t=
 
-# Sitemaps
+# Canonical XML Sitemap
 Sitemap: https://thehgtech.com/sitemap.xml
-Sitemap: https://thehgtech.com/news-sitemap.xml
 
-# Priority pages - Hint to crawlers
-# Homepage, Trackers, and Guides are most important
-
-# Allow all major search engine bots with full access
-User-agent: Googlebot
-Allow: /
-# No crawl-delay for Google - let them index fast
-
-User-agent: Googlebot-Image
-Allow: /images/
-
-User-agent: Googlebot-News
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-# Block scraper bots that steal content
+# Block aggressive third-party SEO scraper bots
 User-agent: AhrefsBot
 Disallow: /
 
@@ -92,16 +48,3 @@ Disallow: /
 
 User-agent: serpstatbot
 Disallow: /
-
-# Allow AI training bots for visibility
-User-agent: GPTBot
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
