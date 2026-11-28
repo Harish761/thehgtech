@@ -1,7 +1,43 @@
 {
-  "last_updated": "2026-11-27T22:50:58.395049",
-  "total_incidents": 33649,
+  "last_updated": "2026-11-28T10:43:50.620580",
+  "total_incidents": 33652,
   "incidents": [
+    {
+      "id": "qilin_thomas_more_university_of_applied_sciences",
+      "victim_name": "Thomas More University of Applied Sciences",
+      "threat_actor": "qilin",
+      "date_discovered": "2026-11-28T03:44:02.468503+00:00",
+      "industry": "Education",
+      "website": "",
+      "claim": "N/A",
+      "screenshot": "https://images.ransomware.live/victims/b181cb0d0bfdacb9329840f5c7195a89.png",
+      "url": "http://ijzn3sicrcy7guixkzjkib4ukbiilwc3xhnmby4mcbccnsd7j2rekvqd.onion/site/blog?uuid=3789ad26-0881-435b-b6c2-2bae9e0008e1",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_samlut_and_company,_p.a.",
+      "victim_name": "Samlut and Company, P.A.",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-11-27T23:00:19.875313+00:00",
+      "industry": "Professional Services",
+      "website": "",
+      "claim": "Samlut & Company, PA is an American accounting and auditing firm founded in 1997.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
+    {
+      "id": "incransom_cinelandia_s.p.a",
+      "victim_name": "Cinelandia S.p.A",
+      "threat_actor": "incransom",
+      "date_discovered": "2026-11-27T21:46:09.068678+00:00",
+      "industry": "Hospitality",
+      "website": "",
+      "claim": "Cinelandia S.p.A. is an Italian company that owns a large chain of modern multiplex cinemas and entertainment centers.",
+      "screenshot": "",
+      "url": "",
+      "source": "Ransomware.live OSINT API"
+    },
     {
       "id": "incransom_brit_ltd_/_brit_insurance_(britinsurance.com)",
       "victim_name": "Brit Ltd / Brit Insurance (britinsurance.com)",
