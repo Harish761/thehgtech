@@ -16,10 +16,8 @@
     <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="/fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
 
     <!-- Exact Security Guides Core Site Chrome & Navigation Stylesheets -->
     <link rel="stylesheet" href="/header.css">
@@ -1203,6 +1201,35 @@
             }
         }
 
+        /* Route notice banner */
+        .rl-route-notice {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 0.85rem 1.15rem;
+            margin-bottom: 1.25rem;
+            border-radius: 8px;
+            background: rgba(218, 34, 40, 0.08);
+            border: 1px solid rgba(218, 34, 40, 0.3);
+            color: var(--cs-ink-primary);
+            font-size: 0.88rem;
+        }
+        .rl-route-notice.active {
+            display: flex;
+        }
+        .rl-route-notice-dismiss {
+            background: none;
+            border: 1px solid currentColor;
+            color: inherit;
+            border-radius: 4px;
+            padding: 0.25rem 0.6rem;
+            font-family: var(--ed-font-mono);
+            font-size: 0.75rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
         /* Subtle scroll anchor */
         #rlGridAnchor {
             scroll-margin-top: 100px;
@@ -1846,6 +1873,7 @@
 
         <!-- Results Counter & Status Bar -->
         <div id="rlGridAnchor"></div>
+        <div id="rlRouteNotice" class="rl-route-notice" role="status" aria-live="polite"></div>
         <div class="rl-status-bar">
             <div id="rlResultsCounter">Showing 121–126 of 126 published analyses</div>
             <button type="button" id="rlResetFiltersBtn" class="rl-reset-btn" onclick="resetAllFilters()">
@@ -2053,104 +2081,111 @@
         </div>
     </div>
 
-    <footer class="footer" role="contentinfo">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Col 1: Brand & Social -->
-                <div class="footer-brand">
-                    <a href="/index.html" class="footer-brand-logo" aria-label="TheHGTech Home">
-                        <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
-                        <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light" style="display: none;">
-                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
-                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
-                        </span>
-                    </a>
-                    <p class="footer-tagline">
-                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
-                    </p>
-                    <div class="footer-social-row">
-                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        </a>
-                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
-                        </a>
-                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Navigation -->
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="/news.html">News</a></li>
-                        <li><a href="/cve-alerts.html">CVE Alerts</a></li>
-                        <li><a href="/articles-experiment.html">Articles</a></li>
-                        <li><a href="/guides/">Security Guides</a></li>
-                        <li><a href="/tool-comparisons/">Tool Comparisons</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/newsletter.html">Newsletter</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Security Tools -->
-                <div class="footer-col">
-                    <h4>Security Tools</h4>
-                    <ul class="footer-links">
-                        <li><a href="/threat-intelligence.html">Threat Intelligence</a></li>
-                        <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
-                        <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
-                        <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
-                        <li><a href="/iso-27001-tool/">ISO 27001 GRC Tool</a></li>
-                        <li><a href="/n8n-workflows/">n8n Workflows</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Publication -->
-                <div class="footer-col">
-                    <h4>Publication</h4>
-                    <ul class="footer-links">
-                        <li><a href="/editorial-standards.html">Editorial Standards</a></li>
-                        <li><a href="/rss.xml">RSS Feed</a></li>
-                        <li><a href="/privacy.html">Privacy Policy</a></li>
-                        <li><a href="/contact.html">Contact Editorial</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 5: Developers -->
-                <div class="footer-col">
-                    <h4>Developers</h4>
-                    <ul class="footer-links">
-                        <li><a href="/embed-cve-widget.html">Embed CVE Widget</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Threat Intel Live Bar -->
-            <div class="footer-live-intel">
-                <div class="footer-live-intel-info">
-                    <span class="footer-live-badge"><span class="glass-pulse-dot" style="background:#FFF;box-shadow:none;"></span> Live</span>
-                    <strong style="color:var(--cs-ink-primary);font-size:0.86rem;">CYBER THREAT INTELLIGENCE PLATFORM</strong>
-                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
-                </div>
-                <a href="/threat-intelligence.html" class="footer-live-link">
-                    <span>View Live Dashboard</span> &rarr;
+    <!-- SITE-FOOTER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL 5-COLUMN SITE FOOTER COMPONENT
+     Single Source of Truth synced across pages via scripts/sync_site_footer.py
+     ========================================================================== -->
+<footer class="footer hg-canonical-footer" role="contentinfo">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Col 1: Brand & Social -->
+            <div class="footer-brand">
+                <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                    <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                        <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                    </span>
                 </a>
+                <p class="footer-tagline">
+                    Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                </p>
+                <div class="footer-social-row">
+                    <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            <!-- Col 2: Navigation -->
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#news">Daily News Shorts</a></li>
+                    <li><a href="/articles.html">Articles Portal</a></li>
+                    <li><a href="/article-list.html">Research Library</a></li>
+                    <li><a href="/guides/">Security Guides</a></li>
+                    <li><a href="/comparisons/">Tool Comparisons</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Security Tools -->
+            <div class="footer-col">
+                <h4>Security Tools</h4>
+                <ul class="footer-links">
+                    <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                    <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                    <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                    <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                    <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                    <li><a href="/cve-tracker.html?filter=zeroday">Zero-Day Checker</a></li>
+                    <li><a href="/workflows/">n8n Workflows</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Publication -->
+            <div class="footer-col">
+                <h4>Publication</h4>
+                <ul class="footer-links">
+                    <li><a href="/editorial-standards.html">Editorial Standards</a></li>
+                    <li><a href="/rss.xml">RSS Feed</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/about.html#connect">Contact Editorial</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Developers -->
+            <div class="footer-col">
+                <h4>Developers</h4>
+                <ul class="footer-links">
+                    <li><a href="/embed/cve-widget.html">Embed CVE Widget</a></li>
+                    <li><a href="/.well-known/security.txt">Security.txt</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+
+        <!-- Threat Intel Live Bar -->
+        <div class="footer-live-intel">
+            <div class="footer-live-intel-info">
+                <span class="footer-live-badge"><span class="glass-pulse-dot"></span> Live</span>
+                <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+            </div>
+            <a href="/threat-intel.html" class="footer-live-link">
+                <span>View Live Dashboard</span> &rarr;
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+        </div>
+    </div>
+</footer>
+<!-- SITE-FOOTER-END -->
 
     <!-- Core Interactive Scripts -->
-    <script src="/header-dropdown.min.js"></script>
     <script src="/command-palette.js"></script>
     <script src="/mobile-nav.js"></script>
     <script src="/theme-toggle.js"></script>
@@ -6016,470 +6051,26 @@
 ]
     </script>
 
-    <!-- Research Library Engine: Search, Dynamic Filter, 12/Page Pagination & Modal Reader -->
+    <!-- Shared Research Library Router: Unified ?q=, ?category=, ?id=, ?page= Routing & Modal Reader -->
+    <script src="/js/article-library-router.js"></script>
     <script>
-        (function() {
-            const PAGE_SIZE = 12;
-            let allArticles = [];
-            let filteredArticles = [];
-            let activeCategory = 'all';
-            let currentPage = 1;
+        window.toggleTheme = function() {
+            const current = document.documentElement.getAttribute('data-theme') || (document.body.classList.contains('light-mode') ? 'light' : 'dark');
+            const target = current === 'light' ? 'dark' : 'light';
 
-            const grid = document.getElementById('rlArticlesGrid');
-            const pagination = document.getElementById('rlPagination');
-            const searchInput = document.getElementById('rlSearchInput');
-            const searchClear = document.getElementById('rlSearchClear');
-            const sortSelect = document.getElementById('rlSortSelect');
-            const categoryStrip = document.getElementById('rlCategoryStrip');
-            const resultsCounter = document.getElementById('rlResultsCounter');
-            const resetFiltersBtn = document.getElementById('rlResetFiltersBtn');
-
-            // Modal elements
-            const modal = document.getElementById('rlModal');
-            const modalCategory = document.getElementById('modalCategory');
-            const modalTitle = document.getElementById('modalTitle');
-            const modalAuthor = document.getElementById('modalAuthor');
-            const modalDate = document.getElementById('modalDate');
-            const modalReadTime = document.getElementById('modalReadTime');
-            const modalBody = document.getElementById('modalBody');
-
-            function escapeHtml(str) {
-                if (!str) return '';
-                return String(str)
-                    .replace(/&/g, '&amp;')
-                    .replace(/</g, '&lt;')
-                    .replace(/>/g, '&gt;')
-                    .replace(/"/g, '&quot;')
-                    .replace(/'/g, '&#039;');
-            }
-
-            function parseReadTime(str) {
-                if (!str) return 5;
-                const match = String(str).match(/\d+/);
-                return match ? parseInt(match[0], 10) : 5;
-            }
-
-            function parseDate(str) {
-                if (!str) return 0;
-                const ts = Date.parse(str);
-                return isNaN(ts) ? 0 : ts;
-            }
-
-            window.getPlaceholderSvg = function(category) {
-                return `
-                <div class="rl-card-placeholder">
-                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" style="margin-bottom:0.5rem;color:var(--cs-brand-red);">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    </svg>
-                    <span style="font-family:var(--ed-font-mono);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">${escapeHtml(category || 'Threat Intelligence')}</span>
-                </div>
-                `;
-            };
-
-            async function initLibrary() {
-                try {
-                    let data = null;
-                    try {
-                        const res = await fetch('ioc-data/articles.json?v=' + Date.now());
-                        if (res.ok) {
-                            const json = await res.json();
-                            data = json.articles;
-                        }
-                    } catch (netErr) {
-                        // Network error or file:// CORS, fallback to embedded data
-                    }
-
-                    if (!data) {
-                        const embeddedEl = document.getElementById('embeddedArticlesData');
-                        if (embeddedEl) {
-                            data = JSON.parse(embeddedEl.textContent);
-                        }
-                    }
-
-                    allArticles = data || [];
-
-                    // Populate Live Stats
-                    const statTotal = document.getElementById('statTotalArticles');
-                    if (statTotal) statTotal.textContent = allArticles.length;
-                    
-                    const catMap = {};
-                    allArticles.forEach(a => {
-                        const c = (a.category || 'General').trim();
-                        catMap[c] = (catMap[c] || 0) + 1;
-                    });
-                    const uniqueCats = Object.keys(catMap);
-                    const statCats = document.getElementById('statCategories');
-                    if (statCats) statCats.textContent = uniqueCats.length;
-
-                    if (allArticles.length > 0 && allArticles[0].date) {
-                        const statLatest = document.getElementById('statLatestDate');
-                        if (statLatest) statLatest.textContent = allArticles[0].date.replace(/, \d{4}/, '');
-                    }
-
-                    // Rebuild category strip with exact counts if needed
-                    buildCategoryStrip(catMap);
-
-                    // Check URL params
-                    const params = new URLSearchParams(window.location.search);
-                    const qId = params.get('id');
-                    const qCat = params.get('category');
-                    const qSearch = params.get('q');
-                    const pathMatch = window.location.pathname.match(/\/articles\/page\/(\d+)/);
-                    if (pathMatch) {
-                        currentPage = parseInt(pathMatch[1], 10);
-                    }
-
-                    if (qCat && catMap[qCat]) {
-                        activeCategory = qCat;
-                    }
-                    if (qSearch) {
-                        searchInput.value = qSearch;
-                        searchClear.classList.add('active');
-                    }
-
-                    applyFilters();
-
-                    if (qId) {
-                        const target = allArticles.find(a => a.id === qId);
-                        if (target) {
-                            if (target.externalUrl) {
-                                window.location.href = target.externalUrl;
-                            } else if (target.content) {
-                                openArticleModal(target);
-                            }
-                        }
-                    }
-
-                } catch (e) {
-                    console.error('Failed to init library:', e);
-                }
-            }
-
-            function buildCategoryStrip(catMap) {
-                const sortedCats = Object.keys(catMap).sort((a, b) => catMap[b] - catMap[a]);
-
-                let stripHtml = `
-                    <button type="button" class="rl-chip active" data-cat="all" onclick="selectCategory('all', this)" role="tab" aria-selected="true">
-                        All Articles <span class="rl-chip-count">${allArticles.length}</span>
-                    </button>
-                `;
-
-                sortedCats.forEach(c => {
-                    stripHtml += `
-                        <button type="button" class="rl-chip" data-cat="${escapeHtml(c)}" onclick="selectCategory('${escapeHtml(c)}', this)" role="tab" aria-selected="false">
-                            ${escapeHtml(c)} <span class="rl-chip-count">${catMap[c]}</span>
-                        </button>
-                    `;
-                });
-
-                categoryStrip.innerHTML = stripHtml;
-            }
-
-            window.selectCategory = function(cat, btn) {
-                activeCategory = cat;
-                document.querySelectorAll('.rl-chip').forEach(c => {
-                    const isActive = c.getAttribute('data-cat') === cat;
-                    c.classList.toggle('active', isActive);
-                    c.setAttribute('aria-selected', isActive);
-                });
-                currentPage = 1;
-                applyFilters();
-            };
-
-            function applyFilters() {
-                const query = (searchInput.value || '').trim().toLowerCase();
-                const sortBy = sortSelect.value;
-
-                filteredArticles = allArticles.filter(a => {
-                    if (activeCategory !== 'all' && (a.category || '').trim() !== activeCategory) {
-                        return false;
-                    }
-                    if (query) {
-                        const titleMatch = (a.title || '').toLowerCase().includes(query);
-                        const excerptMatch = (a.excerpt || '').toLowerCase().includes(query);
-                        const catMatch = (a.category || '').toLowerCase().includes(query);
-                        const authorMatch = (a.author || '').toLowerCase().includes(query);
-                        let tagsMatch = false;
-                        if (Array.isArray(a.tags)) {
-                            tagsMatch = a.tags.some(t => t.toLowerCase().includes(query));
-                        } else if (typeof a.tags === 'string') {
-                            tagsMatch = a.tags.toLowerCase().includes(query);
-                        }
-                        if (!titleMatch && !excerptMatch && !catMatch && !authorMatch && !tagsMatch) {
-                            return false;
-                        }
-                    }
-                    return true;
-                });
-
-                filteredArticles.sort((a, b) => {
-                    if (sortBy === 'newest') {
-                        return parseDate(b.date) - parseDate(a.date);
-                    } else if (sortBy === 'oldest') {
-                        return parseDate(a.date) - parseDate(b.date);
-                    } else if (sortBy === 'title') {
-                        return (a.title || '').localeCompare(b.title || '');
-                    } else if (sortBy === 'readtime') {
-                        return parseReadTime(b.readTime) - parseReadTime(a.readTime);
-                    }
-                    return 0;
-                });
-
-                updateResultsCounter();
-                renderPage();
-            }
-
-            function updateResultsCounter() {
-                const matchCount = filteredArticles.length;
-                const query = (searchInput.value || '').trim();
-                const isFiltered = activeCategory !== 'all' || query.length > 0;
-
-                resetFiltersBtn.style.display = isFiltered ? 'inline-flex' : 'none';
-
-                if (matchCount === 0) {
-                    resultsCounter.textContent = 'No matching analyses found';
-                    return;
-                }
-
-                const start = (currentPage - 1) * PAGE_SIZE + 1;
-                const end = Math.min(currentPage * PAGE_SIZE, matchCount);
-
-                let text = `Showing ${start}–${end} of ${matchCount} published analyses`;
-                if (activeCategory !== 'all') {
-                    text += ` in "${activeCategory}"`;
-                }
-                if (query) {
-                    text += ` matching "${query}"`;
-                }
-                resultsCounter.textContent = text;
-            }
-
-            function renderPage() {
-                if (filteredArticles.length === 0) {
-                    const query = (searchInput.value || '').trim();
-                    grid.innerHTML = `
-                        <div class="rl-empty-state">
-                            <svg class="rl-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="m21 21-4.35-4.35M8 11h6"/>
-                            </svg>
-                            <h3 class="rl-empty-title">No Research Analyses Found</h3>
-                            <p class="rl-empty-desc">
-                                We couldn't find any articles matching your search "${escapeHtml(query)}"${activeCategory !== 'all' ? ` in ${escapeHtml(activeCategory)}` : ''}.
-                                Try adjusting your query or resetting filters.
-                            </p>
-                            <button type="button" class="rl-empty-action" onclick="resetAllFilters()">Reset All Filters</button>
-                        </div>
-                    `;
-                    pagination.innerHTML = '';
-                    return;
-                }
-
-                const startIndex = (currentPage - 1) * PAGE_SIZE;
-                const pageItems = filteredArticles.slice(startIndex, startIndex + PAGE_SIZE);
-
-                grid.innerHTML = pageItems.map(item => {
-                    const hasExtUrl = !!item.externalUrl;
-                    const cleanHref = hasExtUrl ? item.externalUrl.replace(/^\//, '') : `javascript:void(0);`;
-                    const clickAttr = hasExtUrl ? '' : `onclick="openModalById('${escapeHtml(item.id)}')"`;
-                    
-                    const readTime = item.readTime || '6 min read';
-                    const category = item.category || 'Threat Intelligence';
-                    const author = item.author || 'TheHGTech';
-                    const dateStr = item.date || 'Recent';
-
-                    let mediaHtml = '';
-                    if (item.image && !item.image.includes('default')) {
-                        const cleanImg = item.image.replace(/^\//, '');
-                        mediaHtml = `
-                            <img src="${cleanImg}" alt="${escapeHtml(item.title)}" class="rl-card-img" loading="lazy" onerror="this.outerHTML=getPlaceholderSvg('${escapeHtml(category)}');">
-                        `;
-                    } else {
-                        mediaHtml = getPlaceholderSvg(category);
-                    }
-
-                    const isModal = !hasExtUrl && !!item.content;
-                    const actionLabel = isModal ? 'Read In-Depth Brief' : 'Read Full Analysis';
-
-                    return `
-                        <a href="${cleanHref}" class="rl-card" ${clickAttr} data-id="${escapeHtml(item.id)}" aria-label="${escapeHtml(item.title)}">
-                            <div class="rl-card-media">
-                                ${mediaHtml}
-                                <span class="rl-card-category-pill">${escapeHtml(category)}</span>
-                                <span class="rl-card-read-badge">${escapeHtml(readTime)}</span>
-                            </div>
-                            <div class="rl-card-body">
-                                <div class="rl-card-meta">
-                                    <span class="rl-card-date">
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:3px;"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-                                        ${escapeHtml(dateStr)}
-                                    </span>
-                                </div>
-                                <h3 class="rl-card-title">${escapeHtml(item.title)}</h3>
-                                <p class="rl-card-excerpt">${escapeHtml(item.excerpt)}</p>
-                                <div class="rl-card-footer">
-                                    <span class="rl-card-author">By ${escapeHtml(author)}</span>
-                                    <span class="rl-card-action">
-                                        ${actionLabel}
-                                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    `;
-                }).join('');
-
-                renderPagination();
-            }
-
-            function renderPagination() {
-                const totalPages = Math.ceil(filteredArticles.length / PAGE_SIZE);
-                if (totalPages <= 1) {
-                    pagination.innerHTML = '';
-                    return;
-                }
-
-                let html = '';
-                
-                html += `
-                    <button type="button" class="rl-page-btn" onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''} aria-label="Previous Page">
-                        &larr; Prev
-                    </button>
-                `;
-
-                const pages = [];
-                for (let i = 1; i <= totalPages; i++) {
-                    if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
-                        pages.push(i);
-                    } else if (pages[pages.length - 1] !== '...') {
-                        pages.push('...');
-                    }
-                }
-
-                pages.forEach(p => {
-                    if (p === '...') {
-                        html += `<span class="rl-page-ellipsis">&hellip;</span>`;
-                    } else {
-                        html += `
-                            <button type="button" class="rl-page-btn ${p === currentPage ? 'active' : ''}" onclick="goToPage(${p})" aria-label="Page ${p}" ${p === currentPage ? 'aria-current="page"' : ''}>
-                                ${p}
-                            </button>
-                        `;
-                    }
-                });
-
-                html += `
-                    <button type="button" class="rl-page-btn" onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''} aria-label="Next Page">
-                        Next &rarr;
-                    </button>
-                `;
-
-                pagination.innerHTML = html;
-            }
-
-            window.goToPage = function(page) {
-                const totalPages = Math.ceil(filteredArticles.length / PAGE_SIZE);
-                if (page < 1 || page > totalPages) return;
-                currentPage = page;
-                renderPage();
-                updateResultsCounter();
-                
-                const anchor = document.getElementById('rlGridAnchor');
-                if (anchor) {
-                    anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            };
-
-            window.resetAllFilters = function() {
-                searchInput.value = '';
-                searchClear.classList.remove('active');
-                activeCategory = 'all';
-                sortSelect.value = 'newest';
-                document.querySelectorAll('.rl-chip').forEach(c => {
-                    const isAll = c.getAttribute('data-cat') === 'all';
-                    c.classList.toggle('active', isAll);
-                    c.setAttribute('aria-selected', isAll);
-                });
-                currentPage = 1;
-                applyFilters();
-            };
-
-            window.openModalById = function(id) {
-                const target = allArticles.find(a => a.id === id);
-                if (target) openArticleModal(target);
-            };
-
-            window.openArticleModal = function(article) {
-                if (!article) return;
-                modalCategory.textContent = article.category || 'Threat Intelligence';
-                modalTitle.textContent = article.title || 'Security Monograph';
-                modalAuthor.textContent = `By ${article.author || 'TheHGTech'}`;
-                modalDate.textContent = article.date || 'Published';
-                modalReadTime.textContent = article.readTime || '6 min read';
-                modalBody.innerHTML = article.content || `<p>${escapeHtml(article.excerpt)}</p>`;
-
-                modal.style.display = 'flex';
-                document.body.style.overflow = 'hidden';
-
-                history.pushState({ articleId: article.id }, '', `?id=${encodeURIComponent(article.id)}`);
-            };
-
-            window.closeArticleModal = function() {
-                modal.style.display = 'none';
-                document.body.style.overflow = '';
-                history.pushState({}, '', window.location.pathname);
-            };
-
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.style.display === 'flex') {
-                    closeArticleModal();
-                }
-            });
-
-            let searchTimeout = null;
-            searchInput.addEventListener('input', function() {
-                const val = searchInput.value;
-                searchClear.classList.toggle('active', val.length > 0);
-                clearTimeout(searchTimeout);
-                searchTimeout = setTimeout(() => {
-                    currentPage = 1;
-                    applyFilters();
-                }, 150);
-            });
-
-            searchClear.addEventListener('click', function() {
-                searchInput.value = '';
-                searchClear.classList.remove('active');
-                currentPage = 1;
-                applyFilters();
-                searchInput.focus();
-            });
-
-            sortSelect.addEventListener('change', function() {
-                currentPage = 1;
-                applyFilters();
-            });
-
-            window.toggleTheme = function() {
-                const current = document.documentElement.getAttribute('data-theme') || (document.body.classList.contains('light-mode') ? 'light' : 'dark');
-                const target = current === 'light' ? 'dark' : 'light';
-                
-                document.documentElement.setAttribute('data-theme', target);
-                if (target === 'light') {
-                    document.body.classList.add('light-mode');
-                } else {
-                    document.body.classList.remove('light-mode');
-                }
-                localStorage.setItem('theme', target);
-                if (typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();
-            };
-
-            if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initLibrary);
+            document.documentElement.setAttribute('data-theme', target);
+            if (target === 'light') {
+                document.body.classList.add('light-mode');
             } else {
-                initLibrary();
+                document.body.classList.remove('light-mode');
             }
-        })();
+            localStorage.setItem('theme', target);
+            if (typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();
+        };
+
+        window.initArticleLibraryRouter({
+            fetchArticles: () => fetch('/ioc-data/articles.json', { signal: AbortSignal.timeout(8000) })
+        });
     </script>
 </body>
 </html>

@@ -431,8 +431,8 @@ def get_related_resources(current_id, meta):
         "Security Operations": ("/comparisons/splunk-vs-elastic-security-vs-logrhythm.html", "Splunk Enterprise vs. Elastic Security vs. LogRhythm"),
         "Detection Engineering": ("/comparisons/splunk-vs-elastic-security-vs-logrhythm.html", "Splunk Enterprise vs. Elastic Security vs. LogRhythm"),
         "SIEM": ("/comparisons/splunk-vs-elastic-security-vs-logrhythm.html", "Splunk Enterprise vs. Elastic Security vs. LogRhythm"),
-        "Identity & Access Management": ("/comparisons/okta-vs-microsoft-entra-id-vs-ping-identity.html", "Okta vs. Microsoft Entra ID vs. Ping Identity"),
-        "Identity Security": ("/comparisons/okta-vs-microsoft-entra-id-vs-ping-identity.html", "Okta vs. Microsoft Entra ID vs. Ping Identity")
+        "Identity & Access Management": ("/comparisons/", "Security Tool Comparisons & Architecture Matrices"),
+        "Identity Security": ("/comparisons/", "Security Tool Comparisons & Architecture Matrices")
     }
     comp_url, comp_title = comp_map.get(cat, ("/comparisons/", "Enterprise EDR, SIEM & Identity Platform Comparisons"))
     

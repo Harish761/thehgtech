@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Standards &amp; Publishing Practices | TheHGTech</title>
+    <meta name="description" content="How TheHGTech authors, sources, updates, and corrects independent cybersecurity research, technical guides, and automated threat intelligence feeds.">
+    <meta name="author" content="Harish G">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thehgtech.com/editorial-standards.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thehgtech.com/editorial-standards.html">
+    <meta property="og:title" content="Editorial Standards &amp; Publishing Practices | TheHGTech">
+    <meta property="og:description" content="How TheHGTech authors, sources, updates, and corrects independent cybersecurity research, technical guides, and automated threat intelligence feeds.">
+    <meta property="og:image" content="https://thehgtech.com/logo-dark.png">
+    <meta property="og:site_name" content="TheHGTech">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TheHGTech">
+    <meta name="twitter:title" content="Editorial Standards &amp; Publishing Practices | TheHGTech">
+    <meta name="twitter:description" content="Authorship, sourcing, automated feed disclosures, and correction practices at TheHGTech.">
+    <meta name="twitter:image" content="https://thehgtech.com/logo-dark.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Editorial Standards & Publishing Practices",
+        "url": "https://thehgtech.com/editorial-standards.html",
+        "description": "How TheHGTech authors, sources, updates, and corrects independent cybersecurity research, technical guides, and automated threat intelligence feeds.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "TheHGTech",
+            "url": "https://thehgtech.com"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Harish G",
+            "url": "https://thehgtech.com/about.html#harish"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thehgtech.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Editorial Standards", "item": "https://thehgtech.com/editorial-standards.html" }
+        ]
+    }
+    </script>
+
+    <!-- Brand Identity Favicons -->
+    <link rel="icon" href="/assets/brand/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/png/apple-touch-icon.png">
+    <meta name="color-scheme" content="dark light">
+
+    <!-- Fonts & Styles -->
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/header-dropdown.min.css?v=1">
+    <link rel="stylesheet" href="/light-mode.css">
+    <link rel="stylesheet" href="/theme-toggle.css">
+    <link rel="stylesheet" href="/command-palette.css">
+    <link rel="stylesheet" href="/m-core.min.css?v=4.4">
+    <link rel="stylesheet" href="/m-layout.min.css?v=3.4">
+    <link rel="stylesheet" href="/m-components.min.css?v=3.0">
+    <link rel="stylesheet" href="/mobile-nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        (function () {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.body.classList.add("light-mode");
+                });
+            }
+        })();
+    </script>
+
+    <style>
+        :root {
+            --es-bg: #090B10;
+            --es-surface: rgba(15, 23, 42, 0.7);
+            --es-border: rgba(255, 255, 255, 0.08);
+            --es-ink-1: #F8FAFC;
+            --es-ink-2: #CBD5E1;
+            --es-ink-3: #94A3B8;
+            --es-red: #DA2228;
+            --es-cyan: #00D9FF;
+        }
+        [data-theme="light"], body.light-mode {
+            --es-bg: #F8FAFC;
+            --es-surface: #FFFFFF;
+            --es-border: #E2E8F0;
+            --es-ink-1: #0F172A;
+            --es-ink-2: #334155;
+            --es-ink-3: #64748B;
+            --es-red: #C8191F;
+            --es-cyan: #0284C7;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--es-bg);
+            color: var(--es-ink-1);
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+        }
+        .es-main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 7.5rem 1.5rem 5rem;
+        }
+        .es-kicker {
+            display: inline-block;
+            font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--es-red);
+            margin-bottom: 0.75rem;
+        }
+        .es-title {
+            font-size: clamp(2rem, 4vw, 2.85rem);
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            line-height: 1.15;
+            margin: 0 0 1rem;
+            color: var(--es-ink-1);
+        }
+        .es-lead {
+            font-size: 1.1rem;
+            color: var(--es-ink-2);
+            max-width: 760px;
+            margin: 0 0 2.5rem;
+        }
+        .es-card {
+            background: var(--es-surface);
+            border: 1px solid var(--es-border);
+            border-radius: 14px;
+            padding: 1.75rem 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .es-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0 0 0.85rem;
+            color: var(--es-ink-1);
+            display: flex;
+            align-items: center;
+            gap: 0.65rem;
+        }
+        .es-card h2 i {
+            color: var(--es-red);
+            font-size: 1rem;
+        }
+        .es-card p {
+            color: var(--es-ink-2);
+            margin: 0 0 0.9rem;
+        }
+        .es-card p:last-child, .es-card ul:last-child {
+            margin-bottom: 0;
+        }
+        .es-card ul {
+            margin: 0.5rem 0 0.9rem;
+            padding-left: 1.3rem;
+            color: var(--es-ink-2);
+        }
+        .es-card li {
+            margin-bottom: 0.45rem;
+        }
+        .es-card a {
+            color: var(--es-cyan);
+            text-decoration: none;
+        }
+        .es-card a:hover {
+            text-decoration: underline;
+        }
+        .es-meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            padding: 1rem 1.25rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            background: rgba(218, 34, 40, 0.06);
+            border: 1px solid rgba(218, 34, 40, 0.2);
+            font-size: 0.85rem;
+            color: var(--es-ink-2);
+        }
+        .es-meta-bar strong {
+            color: var(--es-ink-1);
+        }
+        @media (max-width: 640px) {
+            .es-main {
+                padding: 5.5rem 1rem 3.5rem;
+            }
+            .es-card {
+                padding: 1.35rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<!-- SITE-HEADER-START -->
+<!-- Mobile Header -->
+<header class="m-header m-only">
+    <div class="m-header__logo">
+        <a href="/index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+            <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech" class="m-logo-img logo-dark" style="height: 28px; width: auto; margin: 0;">
+            <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech" class="m-logo-img logo-light" style="height: 28px; width: auto; margin: 0; display: none;">
+            <span class="logo-text" style="font-size: 1.25rem;"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+        </a>
+    </div>
+    <div class="m-header__actions">
+        <button class="m-header__btn" id="m-theme-toggle-top" onclick="if(typeof toggleTheme === 'function') toggleTheme();" aria-label="Toggle Theme">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="m-header__btn" data-action="command-palette" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </button>
+        <button class="m-header__btn" id="m-hamburger-btn" aria-label="Menu">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Fullscreen Mobile Menu Overlay -->
+<div class="m-menu-overlay m-only" id="m-menu-overlay">
+    <div class="m-menu-header">
+        <span style="font-size: 1.2rem; font-weight: 700; color: var(--text-primary, #ffffff);">Navigation</span>
+        <button class="m-menu-close" id="m-menu-close-btn" aria-label="Close Menu">
+            <i class="fas fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="m-menu-content">
+        <div class="m-menu-section">
+            <div class="m-menu-title">Intelligence</div>
+            <a href="/threat-intel.html" class="m-menu-link"><i class="fas fa-shield-alt" aria-hidden="true"></i> Threat Intel</a>
+            <a href="/cve-tracker.html" class="m-menu-link"><i class="fas fa-bug" aria-hidden="true"></i> CVE Tracker</a>
+            <a href="/hacker-chatter.html" class="m-menu-link"><i class="fas fa-search" aria-hidden="true"></i> Hacker Chatter</a>
+            <a href="/ransomware-tracker.html" class="m-menu-link"><i class="fas fa-skull-crossbones" aria-hidden="true"></i> Ransomware</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Resources</div>
+            <a href="/guides/" class="m-menu-link"><i class="fas fa-book" aria-hidden="true"></i> Security Guides</a>
+            <a href="/articles.html" class="m-menu-link"><i class="fas fa-newspaper" aria-hidden="true"></i> Articles &amp; News</a>
+            <a href="/comparisons/" class="m-menu-link"><i class="fas fa-balance-scale" aria-hidden="true"></i> Tool Comparisons</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Tools</div>
+            <a href="/tools/grc-assessment/" class="m-menu-link"><i class="fas fa-clipboard-check" aria-hidden="true"></i> GRC Assessment</a>
+            <a href="/workflows/" class="m-menu-link"><i class="fas fa-cogs" aria-hidden="true"></i> n8n Workflows</a>
+        </div>
+        <div class="m-menu-section">
+            <div class="m-menu-title">Settings</div>
+            <button class="m-menu-theme-btn" onclick="toggleTheme(); if(typeof updateMenuThemeLabel === 'function') updateMenuThemeLabel();">
+                <i class="fas fa-moon" id="m-menu-theme-icon" aria-hidden="true"></i> <span id="m-menu-theme-text">Toggle Dark Mode</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Search Overlay -->
+<div class="m-search-overlay m-only">
+    <div class="m-search-overlay__header">
+        <input type="text" class="m-search-overlay__input" placeholder="Search news, CVEs, guides..." aria-label="Search site">
+        <button class="m-search-overlay__cancel">Cancel</button>
+    </div>
+    <div class="m-search-overlay__results"></div>
+</div>
+
+<!-- Desktop Header -->
+<header class="header" role="banner">
+    <div class="header-content">
+        <div class="logo">
+            <a href="/index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                <img src="/assets/brand/svg/hg-symbol.svg" alt="TheHGTech Logo" class="logo-img logo-dark" width="33" height="40">
+                <img src="/assets/brand/svg/hg-symbol-light.svg" alt="TheHGTech Logo" class="logo-img logo-light" width="33" height="40">
+                <span class="logo-text"><span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span></span>
+            </a>
+        </div>
+
+        <nav class="nav nav-modern" role="navigation" aria-label="Primary Navigation">
+            <a href="/index.html#news">News</a>
+
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Intelligence
+                    <span class="nav-live-badge">LIVE</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/threat-intel.html" class="dropdown-item">
+                        <div class="dropdown-item-icon intel"><i class="fas fa-satellite-dish" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Threat Intelligence <span class="dropdown-badge live">LIVE</span></div>
+                            <div class="dropdown-item-desc">Live IOCs from 9 trusted feeds, updated every 4 hours</div>
+                        </div>
+                    </a>
+                    <a href="/cve-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon cve"><i class="fas fa-bug" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">CVE Tracker</div>
+                            <div class="dropdown-item-desc">CISA KEV + NVD critical vulnerabilities with EPSS scores</div>
+                        </div>
+                    </a>
+                    <a href="/ransomware-tracker.html" class="dropdown-item">
+                        <div class="dropdown-item-icon ransomware"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Ransomware Tracker</div>
+                            <div class="dropdown-item-desc">Track active ransomware groups and victims</div>
+                        </div>
+                    </a>
+                    <a href="/hacker-chatter.html" class="dropdown-item">
+                        <div class="dropdown-item-icon chatter" style="background: rgba(138,43,226,0.15); color: #8a2be2;"><i class="fas fa-search" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #8a2be2;">Hacker Chatter <span class="dropdown-badge" style="background: #8a2be2;">NEW</span></div>
+                            <div class="dropdown-item-desc">Searchable data breach &amp; cyber incident database</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger">
+                    Resources
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel">
+                    <a href="/guides/" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon guides"><i class="fas fa-book" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">Security Guides <span class="dropdown-badge popular">40+</span></div>
+                            <div class="dropdown-item-desc">ISO 27001, NIST, SOC2, incident response &amp; more</div>
+                        </div>
+                    </a>
+                    <a href="/workflows/" class="dropdown-item" style="background: rgba(255, 107, 53, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 107, 53, 0.15); color: #FF6B35;"><i class="fas fa-cogs" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FF6B35;">n8n Workflows <span class="dropdown-badge" style="background: #FF6B35;">NEW</span></div>
+                            <div class="dropdown-item-desc">Security automation templates</div>
+                        </div>
+                    </a>
+                    <a href="/comparisons/" class="dropdown-item">
+                        <div class="dropdown-item-icon comparisons"><i class="fas fa-balance-scale" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Tool Comparisons</div>
+                            <div class="dropdown-item-desc">EDR, SIEM, and security tool head-to-head reviews</div>
+                        </div>
+                    </a>
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">GRC Assessment <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Free, offline-first ISO 27001 readiness engine</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/articles.html" class="dropdown-item" style="background: rgba(255, 217, 61, 0.08);">
+                        <div class="dropdown-item-icon articles"><i class="fas fa-newspaper" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #FFD93D;">Articles</div>
+                            <div class="dropdown-item-desc">Latest cybersecurity news and analysis</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="cursor:pointer;">
+                    <i class="fas fa-tools" style="color: #10B981; margin-right: 4px;" aria-hidden="true"></i> Tools
+                    <span class="nav-live-badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; letter-spacing: 0.5px; margin-left:6px;">NEW</span>
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 250px;">
+                    <a href="/tools/grc-assessment/" class="dropdown-item" style="background: rgba(16, 185, 129, 0.05);">
+                        <div class="dropdown-item-icon" style="background: rgba(16, 185, 129, 0.15); color: #10B981;"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: #10B981;">ISO 27001 GRC Tool <span class="dropdown-badge" style="background: #10B981;">NEW</span></div>
+                            <div class="dropdown-item-desc">Interactive scope builder &amp; Gap assessment</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <span class="nav-dropdown-trigger" style="color: var(--accent-cyan, #00d9ff);">
+                    <i class="fas fa-user-shield" style="color: var(--accent-cyan, #00d9ff); margin-right: 4px; font-size: 0.8rem;" aria-hidden="true"></i> About
+                    <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                </span>
+                <div class="nav-dropdown-panel" style="min-width: 230px;">
+                    <a href="/about.html" class="dropdown-item" style="background: rgba(0, 217, 255, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(0, 217, 255, 0.15); color: var(--accent-cyan, #00d9ff);"><i class="fas fa-info-circle" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-cyan, #00d9ff);">About TheHGTech</div>
+                            <div class="dropdown-item-desc">Our mission, tools and data sources</div>
+                        </div>
+                    </a>
+                    <a href="/about.html#harish" class="dropdown-item" style="background: rgba(255, 61, 61, 0.08);">
+                        <div class="dropdown-item-icon" style="background: rgba(255, 61, 61, 0.15); color: var(--accent-red, #ff3d3d);"><i class="fas fa-user-shield" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title" style="color: var(--accent-red, #ff3d3d);">Harish G</div>
+                            <div class="dropdown-item-desc">Security professional &amp; site founder</div>
+                        </div>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="mailto:harish@thehgtech.com" class="dropdown-item">
+                        <div class="dropdown-item-icon contact"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                        <div class="dropdown-item-content">
+                            <div class="dropdown-item-title">Contact</div>
+                            <div class="dropdown-item-desc">harish@thehgtech.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; margin-left: 15px; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 15px; align-items: center;">
+                <a href="https://x.com/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-x-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/company/thehgtech" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn" style="color: var(--text-muted, #a0a0a5); font-size: 1.1rem; transition: color 0.3s ease;">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <button class="desktop-search-btn" data-action="command-palette" aria-label="Search" title="Search (Cmd+K)" style="margin-left: 20px; display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; color: var(--text-primary, #ffffff); cursor: pointer; transition: all 0.3s ease; font-size: 0.95rem;">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <button class="m-theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Theme" style="margin-left: 20px; display: inline-flex; position: relative; width: 56px; height: 28px; background: linear-gradient(135deg, #1a1a2e, #16213e); border: 1.5px solid rgba(255, 255, 255, 0.15); border-radius: 50px; cursor: pointer; transform: scale(0.9);">
+                <span class="m-theme-toggle__thumb" style="position: absolute; top: 2px; left: 2px; width: 22px; height: 22px; background: linear-gradient(135deg, #c0c0c0, #e8e8e8); border-radius: 50%; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;"></span>
+            </button>
+        </nav>
+
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+<!-- SITE-HEADER-END -->
+
+    <main id="main-content" class="es-main">
+        <span class="es-kicker">Publication Policy &amp; Transparency</span>
+        <h1 class="es-title">Editorial Standards &amp; Publishing Practices</h1>
+        <p class="es-lead">
+            TheHGTech is an independent cybersecurity publication and threat-intelligence resource maintained by <a href="/about.html#harish">Harish G</a>. This page documents how articles, guides, and automated intelligence dashboards on this site are authored, sourced, updated, and corrected.
+        </p>
+
+        <div class="es-meta-bar">
+            <span><strong>Editorial Lead:</strong> Harish G</span>
+            <span><strong>Funding Model:</strong> Independent (no pay-to-play vendor rankings)</span>
+            <span><strong>Corrections &amp; Security Contact:</strong> <a href="mailto:harish@thehgtech.com">harish@thehgtech.com</a></span>
+        </div>
+
+        <section class="es-card" aria-labelledby="sec-independence">
+            <h2 id="sec-independence"><i class="fas fa-scale-balanced" aria-hidden="true"></i> 1. Editorial Independence</h2>
+            <p>
+                TheHGTech operates as an independent practitioner-run project. Tool comparisons, technical guides, and vulnerability analyses are written without vendor sponsorship, paid placement, or affiliate commissions.
+            </p>
+            <p>
+                When vendor products, CVEs, or security incidents are covered, technical details are anchored to publicly available advisories, vendor documentation, or primary security disclosures whenever available.
+            </p>
+        </section>
+
+        <section class="es-card" aria-labelledby="sec-content-types">
+            <h2 id="sec-content-types"><i class="fas fa-layer-group" aria-hidden="true"></i> 2. Human-Authored Content vs. Automated Feeds</h2>
+            <p>TheHGTech clearly separates editorial writing from automated telemetry:</p>
+            <ul>
+                <li><strong>Research Articles &amp; Security Guides:</strong> Authored and edited under bylines (such as <a href="/about.html#harish">Harish G</a>) to explain vulnerabilities, breach mechanics, defensive engineering controls, and compliance frameworks.</li>
+                <li><strong>Automated Intelligence Dashboards:</strong> Pages including <a href="/threat-intel.html">Threat Intelligence</a>, <a href="/cve-tracker.html">CVE Tracker</a>, <a href="/ransomware-tracker.html">Ransomware Tracker</a>, and <a href="/hacker-chatter.html">Hacker Chatter</a> are updated by scheduled GitHub Actions pipelines directly from public security feeds.</li>
+                <li><strong>Daily News Shorts &amp; Summaries:</strong> Short-form daily security summaries are generated with automated aggregation pipelines and clearly presented separately from long-form technical monographs.</li>
+            </ul>
+        </section>
+
+        <section class="es-card" aria-labelledby="sec-sourcing">
+            <h2 id="sec-sourcing"><i class="fas fa-database" aria-hidden="true"></i> 3. Intelligence Sources &amp; Verification Scope</h2>
+            <p>
+                Automated dashboards ingest data exclusively from public, documented sources rather than private or direct dark-web access:
+            </p>
+            <ul>
+                <li><strong>Vulnerability &amp; Exploit Data:</strong> CISA Known Exploited Vulnerabilities (KEV), NIST National Vulnerability Database (NVD), and FIRST EPSS probability scores.</li>
+                <li><strong>Indicator Feeds:</strong> OpenPhish, Spamhaus DROP, CINS Army, Blocklist.de, and the abuse.ch feed family (URLhaus, ThreatFox, MalwareBazaar, Feodo Tracker, SSL Blacklist).</li>
+                <li><strong>Ransomware &amp; OSINT Claims:</strong> Public OSINT trackers such as Ransomware.live cross-referenced against Have I Been Pwned (HIBP) public breach metadata. Threat actor leak-site claims are explicitly presented as unverified OSINT disclosures unless independently confirmed.</li>
+            </ul>
+        </section>
+
+        <section class="es-card" aria-labelledby="sec-safety">
+            <h2 id="sec-safety"><i class="fas fa-shield-halved" aria-hidden="true"></i> 4. Safe Indicator Handling &amp; Privacy</h2>
+            <ul>
+                <li><strong>Defanged Indicators:</strong> Malicious URLs and IP addresses displayed on Threat Intelligence views are defanged (for example, <code>hxxps://</code> and <code>[.]</code>) to reduce the risk of accidental clicks.</li>
+                <li><strong>No Tor Hosting or Stolen Data Mirrors:</strong> TheHGTech does not proxy <code>.onion</code> sites and never hosts or links to stolen breach datasets.</li>
+                <li><strong>Client-Side GRC Tooling:</strong> The <a href="/tools/grc-assessment/">ISO 27001 GRC Assessment</a> tool executes locally in the browser with zero client-side analytics scripts, self-hosted export libraries, and fragment-based (<code>#s=</code>) share links. See our <a href="/privacy.html">Privacy Policy</a> for site-wide details.</li>
+            </ul>
+        </section>
+
+        <section class="es-card" aria-labelledby="sec-corrections">
+            <h2 id="sec-corrections"><i class="fas fa-pen-to-square" aria-hidden="true"></i> 5. Corrections, Updates &amp; Security Disclosure</h2>
+            <p>
+                Cybersecurity disclosures evolve rapidly as vendors release patches, revise CVE scopes, or publish post-incident findings. When factual errors, broken citations, or outdated remediation guidance are identified, pages are updated directly in the public Git repository so changes remain inspectable.
+            </p>
+            <p>
+                To request a correction, flag an inaccurate source attribution, or report a security issue affecting <code>thehgtech.com</code>, please email <a href="mailto:harish@thehgtech.com">harish@thehgtech.com</a> or consult <a href="/.well-known/security.txt">/.well-known/security.txt</a>. You can also find background and contact links on our <a href="/about.html#connect">About &amp; Contact</a> page.
+            </p>
+        </section>
+    </main>
+
+<!-- SITE-FOOTER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL 5-COLUMN SITE FOOTER COMPONENT
+     Single Source of Truth synced across pages via scripts/sync_site_footer.py
+     ========================================================================== -->
+<footer class="footer hg-canonical-footer" role="contentinfo">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Col 1: Brand & Social -->
+            <div class="footer-brand">
+                <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                    <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                        <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                    </span>
+                </a>
+                <p class="footer-tagline">
+                    Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                </p>
+                <div class="footer-social-row">
+                    <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Navigation -->
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#news">Daily News Shorts</a></li>
+                    <li><a href="/articles.html">Articles Portal</a></li>
+                    <li><a href="/article-list.html">Research Library</a></li>
+                    <li><a href="/guides/">Security Guides</a></li>
+                    <li><a href="/comparisons/">Tool Comparisons</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Security Tools -->
+            <div class="footer-col">
+                <h4>Security Tools</h4>
+                <ul class="footer-links">
+                    <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                    <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                    <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                    <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                    <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                    <li><a href="/cve-tracker.html?filter=zeroday">Zero-Day Checker</a></li>
+                    <li><a href="/workflows/">n8n Workflows</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Publication -->
+            <div class="footer-col">
+                <h4>Publication</h4>
+                <ul class="footer-links">
+                    <li><a href="/editorial-standards.html">Editorial Standards</a></li>
+                    <li><a href="/rss.xml">RSS Feed</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/about.html#connect">Contact Editorial</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Developers -->
+            <div class="footer-col">
+                <h4>Developers</h4>
+                <ul class="footer-links">
+                    <li><a href="/embed/cve-widget.html">Embed CVE Widget</a></li>
+                    <li><a href="/.well-known/security.txt">Security.txt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Threat Intel Live Bar -->
+        <div class="footer-live-intel">
+            <div class="footer-live-intel-info">
+                <span class="footer-live-badge"><span class="glass-pulse-dot"></span> Live</span>
+                <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+            </div>
+            <a href="/threat-intel.html" class="footer-live-link">
+                <span>View Live Dashboard</span> &rarr;
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+        </div>
+    </div>
+</footer>
+<!-- SITE-FOOTER-END -->
+
+    <script src="/theme-toggle.js" defer></script>
+    <script src="/command-palette.js" defer></script>
+    <script src="/mobile-nav.js" defer></script>
+</body>
+
+</html>

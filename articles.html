@@ -17,10 +17,8 @@
     <link rel="apple-touch-icon" href="assets/brand/favicon/apple-touch-icon.png">
 
     <!-- Preload Critical Fonts -->
-    <link rel="preload" href="fonts/inter-v18-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/inter-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/inter-v18-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/jetbrains-mono-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/fonts.css">
 
     <!-- Exact Security Guides Core Site Chrome & Navigation Stylesheets -->
     <link rel="stylesheet" href="header.css">
@@ -34,7 +32,8 @@
     <link rel="stylesheet" href="ui-enhancements.css?v=3.5_newsletter">
     <link rel="stylesheet" href="mobile-nav.css">
     <link rel="stylesheet" href="css/guides-editorial.css?v=1.0">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/article-library.css">
+    <link rel="stylesheet" href="/css/footer.css">
 
     <!-- Pre-render theme initialization script to avoid FOUC -->
     <script>
@@ -2017,6 +2016,59 @@
         </section>
 
         <!-- ==========================================================================
+             SECTION 3B: FILTERABLE RESEARCH ARCHIVE (SHARED QUERY-PARAMETER ROUTING)
+             ========================================================================== -->
+        <section class="rl-embedded-archive" id="rlArchiveSection" aria-label="Filterable Security Research Archive">
+            <div class="rl-archive-heading">
+                <span class="rl-eyebrow-pill">SEARCHABLE ARCHIVE // FULL RESEARCH LIBRARY</span>
+                <h2 class="rl-archive-title">Browse &amp; Filter Published Research</h2>
+                <p class="rl-archive-desc">Search by keyword, CVE, or technique, filter by security domain, or link directly to any archive view.</p>
+            </div>
+
+            <div class="rl-console" aria-label="Search and Filter Research Library">
+                <div class="rl-search-row">
+                    <div class="rl-search-input-shell">
+                        <svg class="rl-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input type="text" id="rlSearchInput" class="rl-search-input" placeholder="Search by title, CVE, adversary technique, or summary..." aria-label="Search articles by title or keyword">
+                        <button type="button" id="rlSearchClear" class="rl-search-clear" aria-label="Clear search">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                        </button>
+                    </div>
+                    <div class="rl-sort-shell">
+                        <select id="rlSortSelect" class="rl-sort-select" aria-label="Sort research articles">
+                            <option value="newest">Sort: Newest First</option>
+                            <option value="oldest">Sort: Oldest First</option>
+                            <option value="title">Sort: Title (A–Z)</option>
+                            <option value="readtime">Sort: Reading Time</option>
+                        </select>
+                        <svg class="rl-sort-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="rl-filter-strip-container">
+                    <div class="rl-filter-strip" id="rlCategoryStrip" role="tablist" aria-label="Filter articles by category"></div>
+                </div>
+            </div>
+
+            <div id="rlGridAnchor"></div>
+            <div id="rlRouteNotice" class="rl-route-notice" role="status" aria-live="polite"></div>
+            <div class="rl-status-bar">
+                <div id="rlResultsCounter">Loading published analyses…</div>
+                <button type="button" id="rlResetFiltersBtn" class="rl-reset-btn" onclick="resetAllFilters()">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                    Clear all filters
+                </button>
+            </div>
+
+            <section class="rl-grid" id="rlArticlesGrid" aria-label="Articles Listing"></section>
+            <nav class="rl-pagination" id="rlPagination" aria-label="Research Library Pagination"></nav>
+        </section>
+
+        <!-- ==========================================================================
              SECTION 4: EDITORIAL METHODOLOGY & RESEARCH STANDARDS
              ========================================================================== -->
         <section class="hg-methodology-section" aria-label="Editorial Methodology and Standards">
@@ -2074,110 +2126,137 @@
         </section>
     </main>
 
+    <!-- Editorial Modal Reader for Content-Based Articles (Weekly Threat Reports) -->
+    <div id="rlModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="rl-modal-backdrop" onclick="closeArticleModal()"></div>
+        <div class="rl-modal-content">
+            <button type="button" class="rl-modal-close" onclick="closeArticleModal()" aria-label="Close article modal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+            <div class="rl-modal-header">
+                <span class="rl-modal-cat" id="modalCategory">Threat Intelligence</span>
+                <h2 class="rl-modal-title" id="modalTitle">Article Title</h2>
+                <div class="rl-modal-meta">
+                    <span id="modalAuthor">By TheHGTech</span>
+                    <span id="modalDate">Published</span>
+                    <span id="modalReadTime">6 min read</span>
+                </div>
+            </div>
+            <div class="rl-modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
     <!-- ==========================================================================
          SECTION 5: FOOTER (CANONICAL 4-COLUMN WITH CROWDSTRIKE RED LIVE ACCENTS)
          ========================================================================== -->
-    <footer class="footer" role="contentinfo">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Col 1: Brand & Social -->
-                <div class="footer-brand">
-                    <a href="index.html" class="footer-brand-logo" aria-label="TheHGTech Home">
-                        <img src="assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
-                        <img src="assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light" style="display: none;">
-                        <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
-                            <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
-                        </span>
-                    </a>
-                    <p class="footer-tagline">
-                        Independent security research, practitioner field manuals, and live vulnerability intelligence.
-                    </p>
-                    <div class="footer-social-row">
-                        <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        </a>
-                        <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                        <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
-                        </a>
-                        <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Col 2: Navigation -->
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="cve-alerts.html">CVE Alerts</a></li>
-                        <li><a href="/article-list.html">Articles</a></li>
-                        <li><a href="guides/">Security Guides</a></li>
-                        <li><a href="tool-comparisons/">Tool Comparisons</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="newsletter.html">Newsletter</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Security Tools -->
-                <div class="footer-col">
-                    <h4>Security Tools</h4>
-                    <ul class="footer-links">
-                        <li><a href="threat-intelligence.html">Threat Intelligence</a></li>
-                        <li><a href="cve-tracker.html">CVE Triage Workbench</a></li>
-                        <li><a href="ransomware-tracker.html">Ransomware Tracker</a></li>
-                        <li><a href="hacker-chatter.html">Hacker Chatter</a></li>
-                        <li><a href="iso-27001-tool/">ISO 27001 GRC Tool</a></li>
-                        <li><a href="n8n-workflows/">n8n Workflows</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Publication -->
-                <div class="footer-col">
-                    <h4>Publication</h4>
-                    <ul class="footer-links">
-                        <li><a href="editorial-standards.html">Editorial Standards</a></li>
-                        <li><a href="rss.xml">RSS Feed</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="contact.html">Contact Editorial</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 5: Developers -->
-                <div class="footer-col">
-                    <h4>Developers</h4>
-                    <ul class="footer-links">
-                        <li><a href="embed-cve-widget.html">Embed CVE Widget</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Threat Intel Live Bar -->
-            <div class="footer-live-intel">
-                <div class="footer-live-intel-info">
-                    <span class="footer-live-badge"><span class="glass-pulse-dot" style="background:#FFF;box-shadow:none;"></span> Live</span>
-                    <strong style="color:var(--cs-ink-primary);font-size:0.86rem;">CYBER THREAT INTELLIGENCE PLATFORM</strong>
-                    <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
-                </div>
-                <a href="threat-intelligence.html" class="footer-live-link">
-                    <span>View Live Dashboard</span> &rarr;
+    <!-- SITE-FOOTER-START -->
+<!-- ==========================================================================
+     THEHGTECH CANONICAL 5-COLUMN SITE FOOTER COMPONENT
+     Single Source of Truth synced across pages via scripts/sync_site_footer.py
+     ========================================================================== -->
+<footer class="footer hg-canonical-footer" role="contentinfo">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Col 1: Brand & Social -->
+            <div class="footer-brand">
+                <a href="/" class="footer-brand-logo" aria-label="TheHGTech Home">
+                    <img src="/assets/brand/svg/hg-symbol.svg" alt="" width="28" height="34" class="logo-dark">
+                    <img src="/assets/brand/svg/hg-symbol-light.svg" alt="" width="28" height="34" class="logo-light">
+                    <span class="logo-text" style="margin-left: 10px; font-weight: 800; font-size: 1.25rem;">
+                        <span class="logo-text-base">The</span><span class="logo-text-red">HG</span><span class="logo-text-base">Tech</span>
+                    </span>
                 </a>
+                <p class="footer-tagline">
+                    Independent security research, practitioner field manuals, and live vulnerability intelligence.
+                </p>
+                <div class="footer-social-row">
+                    <a href="https://x.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on X">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on LinkedIn">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://facebook.com/thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow TheHGTech on Facebook">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.595 0 9 1.583 9 4.615V8z"/></svg>
+                    </a>
+                    <a href="https://youtube.com/@thehgtech" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to TheHGTech on YouTube">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+            <!-- Col 2: Navigation -->
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="/index.html#news">Daily News Shorts</a></li>
+                    <li><a href="/articles.html">Articles Portal</a></li>
+                    <li><a href="/article-list.html">Research Library</a></li>
+                    <li><a href="/guides/">Security Guides</a></li>
+                    <li><a href="/comparisons/">Tool Comparisons</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/newsletter.html">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Security Tools -->
+            <div class="footer-col">
+                <h4>Security Tools</h4>
+                <ul class="footer-links">
+                    <li><a href="/threat-intel.html">Threat Intelligence</a></li>
+                    <li><a href="/cve-tracker.html">CVE Triage Workbench</a></li>
+                    <li><a href="/ransomware-tracker.html">Ransomware Tracker</a></li>
+                    <li><a href="/hacker-chatter.html">Hacker Chatter</a></li>
+                    <li><a href="/tools/grc-assessment/">ISO 27001 GRC Tool</a></li>
+                    <li><a href="/cve-tracker.html?filter=zeroday">Zero-Day Checker</a></li>
+                    <li><a href="/workflows/">n8n Workflows</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Publication -->
+            <div class="footer-col">
+                <h4>Publication</h4>
+                <ul class="footer-links">
+                    <li><a href="/editorial-standards.html">Editorial Standards</a></li>
+                    <li><a href="/rss.xml">RSS Feed</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/about.html#connect">Contact Editorial</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Developers -->
+            <div class="footer-col">
+                <h4>Developers</h4>
+                <ul class="footer-links">
+                    <li><a href="/embed/cve-widget.html">Embed CVE Widget</a></li>
+                    <li><a href="/.well-known/security.txt">Security.txt</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+
+        <!-- Threat Intel Live Bar -->
+        <div class="footer-live-intel">
+            <div class="footer-live-intel-info">
+                <span class="footer-live-badge"><span class="glass-pulse-dot"></span> Live</span>
+                <strong>CYBER THREAT INTELLIGENCE PLATFORM</strong>
+                <span class="footer-live-text">Automated IoC aggregation updated every 4 hours across ThreatFox, URLhaus, and Feodo Tracker.</span>
+            </div>
+            <a href="/threat-intel.html" class="footer-live-link">
+                <span>View Live Dashboard</span> &rarr;
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 TheHGTech. All rights reserved. Independent Cybersecurity Research &amp; Field Manuals.</p>
+        </div>
+    </div>
+</footer>
+<!-- SITE-FOOTER-END -->
 
     <!-- Core Interactive Scripts -->
-    <script src="header-dropdown.min.js"></script>
-    <script src="command-palette.js"></script>
-    <script src="mobile-nav.js"></script>
-    <script src="theme-toggle.js"></script>
+    <script src="/command-palette.js"></script>
+    <script src="/mobile-nav.js"></script>
+    <script src="/theme-toggle.js"></script>
 
     <!-- Dynamic Hero Switcher & Zero-Duplication Engine -->
     <script>
@@ -2202,7 +2281,7 @@
                 currentFeaturedArticle = article;
 
                 if (article.image) {
-                    const cleanImg = article.image.replace(/^\//, '');
+                    const cleanImg = '/' + article.image.replace(/^\/+/, '');
                     if (heroBackdrop) {
                         heroBackdrop.style.backgroundImage = 'url(' + cleanImg + ')';
                     }
@@ -2222,7 +2301,7 @@
                 heroDate.textContent = article.date || '';
                 heroReadTime.textContent = article.readTime || '8 min read';
                 
-                const cleanUrl = (article.externalUrl || '').replace(/^\//, '');
+                const cleanUrl = '/' + (article.externalUrl || '').replace(/^\/+/, '');
                 heroTitleLink.textContent = article.title || '';
                 heroTitleLink.href = cleanUrl;
                 heroCtaBtn.href = cleanUrl;
@@ -2246,8 +2325,8 @@
                     if (item.tags && item.tags.length > 0) cat = item.tags[0];
                     else if (item.category) cat = item.category;
 
-                    const cleanImg = (item.image || '').replace(/^\//, '');
-                    const cleanUrl = (item.externalUrl || '').replace(/^\//, '');
+                    const cleanImg = '/' + (item.image || '').replace(/^\/+/, '');
+                    const cleanUrl = '/' + (item.externalUrl || '').replace(/^\/+/, '');
 
                     const a = document.createElement('a');
                     a.href = cleanUrl;
@@ -2279,7 +2358,7 @@
 
             async function initDynamicHero() {
                 try {
-                    const response = await fetch('ioc-data/articles.json');
+                    const response = await fetch('/ioc-data/articles.json', { signal: AbortSignal.timeout(8000) });
                     if (!response.ok) return;
                     const data = await response.json();
                     allEditorialArticles = (data.articles || []).filter(a => a.author !== 'TheHGTech Bot' && a.externalUrl);
@@ -2299,6 +2378,13 @@
                 initDynamicHero();
             }
         })();
+    </script>
+    <script src="/js/article-library-router.js"></script>
+    <script>
+        window.initArticleLibraryRouter({
+            fetchArticles: () => fetch('/ioc-data/articles.json', { signal: AbortSignal.timeout(8000) }),
+            scrollOnQueryLoad: true
+        });
 
         // Theme Toggle: Keeps html[data-theme], body.light-mode, and logo icons perfectly in sync
         function toggleTheme() {

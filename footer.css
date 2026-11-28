@@ -282,3 +282,97 @@ body.light-mode .footer-bottom {
     border-top: 1px solid #E2E8F0;
     color: #64748B;
 }
+
+/* ==========================================================================
+   CANONICAL 5-COLUMN FOOTER SPECIFICITY SAFEGUARDS
+   Prevents legacy page stylesheets (e.g. body.guides-editorial 4-col rules)
+   from breaking the canonical 5-column layout or theme logo switching.
+   ========================================================================== */
+footer.footer.hg-canonical-footer {
+    background: #0B0D13;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94A3B8;
+    padding: 4.5rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: clip;
+}
+
+html[data-theme="light"] footer.footer.hg-canonical-footer,
+body.light-mode footer.footer.hg-canonical-footer {
+    background: #F8FAFC;
+    border-top: 1px solid #E2E8F0;
+    color: #475569;
+}
+
+footer.footer.hg-canonical-footer .footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer.footer.hg-canonical-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr) 1fr;
+    gap: 2.75rem;
+    margin-bottom: 3rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+    footer.footer.hg-canonical-footer .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    footer.footer.hg-canonical-footer {
+        padding: 3.25rem 1.25rem 2rem;
+    }
+    footer.footer.hg-canonical-footer .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.85rem;
+    }
+}
+
+footer.footer.hg-canonical-footer .footer-brand-logo .logo-dark {
+    display: block;
+}
+
+footer.footer.hg-canonical-footer .footer-brand-logo .logo-light {
+    display: none;
+}
+
+html[data-theme="light"] footer.footer.hg-canonical-footer .footer-brand-logo .logo-dark,
+body.light-mode footer.footer.hg-canonical-footer .footer-brand-logo .logo-dark {
+    display: none !important;
+}
+
+html[data-theme="light"] footer.footer.hg-canonical-footer .footer-brand-logo .logo-light,
+body.light-mode footer.footer.hg-canonical-footer .footer-brand-logo .logo-light {
+    display: block !important;
+}
+
+footer.footer.hg-canonical-footer .footer-live-intel-info {
+    flex-wrap: wrap;
+}
+
+footer.footer.hg-canonical-footer .footer-live-intel-info strong {
+    color: #F8FAFC;
+    font-size: 0.86rem;
+}
+
+html[data-theme="light"] footer.footer.hg-canonical-footer .footer-live-intel-info strong,
+body.light-mode footer.footer.hg-canonical-footer .footer-live-intel-info strong {
+    color: #0F172A;
+}
+
+footer.footer.hg-canonical-footer .footer-bottom p {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+}

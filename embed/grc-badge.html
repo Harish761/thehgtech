@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, follow">
+    <title>ISO 27001 Readiness Badge | TheHGTech</title>
+    <link rel="canonical" href="https://thehgtech.com/embed/grc-badge.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+        }
+        .badge-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            min-height: 168px;
+            padding: 14px 16px;
+            background: linear-gradient(145deg, #0c101a, #070910);
+            border: 1.5px solid var(--tier-border, rgba(16, 185, 129, 0.4));
+            border-radius: 14px;
+            color: #f8fafc;
+            text-decoration: none;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .badge-card:hover {
+            border-color: var(--tier-color, #10b981);
+        }
+        .badge-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        .badge-brand {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: #cbd5e1;
+        }
+        .badge-brand span {
+            color: #da2228;
+        }
+        .badge-pill {
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 2px 7px;
+            border-radius: 999px;
+            color: var(--tier-color, #10b981);
+            background: var(--tier-bg, rgba(16, 185, 129, 0.14));
+            border: 1px solid var(--tier-border, rgba(16, 185, 129, 0.35));
+        }
+        .badge-main {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin: 8px 0;
+        }
+        .ring-wrap {
+            position: relative;
+            width: 68px;
+            height: 68px;
+            flex-shrink: 0;
+        }
+        .ring-svg {
+            width: 68px;
+            height: 68px;
+            transform: rotate(-90deg);
+        }
+        .ring-track {
+            fill: none;
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 6;
+        }
+        .ring-progress {
+            fill: none;
+            stroke: var(--tier-color, #10b981);
+            stroke-width: 6;
+            stroke-linecap: round;
+            stroke-dasharray: 175.93;
+            stroke-dashoffset: 175.93;
+        }
+        .ring-score {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            font-size: 16px;
+            font-weight: 800;
+            color: #ffffff;
+        }
+        .badge-meta {
+            min-width: 0;
+        }
+        .badge-framework {
+            font-size: 13px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.25;
+        }
+        .badge-tier {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--tier-color, #10b981);
+            margin-top: 3px;
+        }
+        .badge-note {
+            font-size: 10px;
+            color: #94a3b8;
+            margin-top: 2px;
+        }
+        .badge-foot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 10px;
+            color: #94a3b8;
+        }
+        .badge-cta {
+            color: #00d9ff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="badge-card" id="badgeCard" href="https://thehgtech.com/tools/grc-assessment/" target="_blank" rel="noopener noreferrer" aria-label="ISO 27001:2022 Self-Assessed Readiness Badge on TheHGTech">
+        <div class="badge-top">
+            <div class="badge-brand">The<span>HG</span>Tech GRC</div>
+            <span class="badge-pill" id="badgePill">Self-Assessed</span>
+        </div>
+
+        <div class="badge-main">
+            <div class="ring-wrap" aria-hidden="true">
+                <svg class="ring-svg" viewBox="0 0 68 68">
+                    <circle class="ring-track" cx="34" cy="34" r="28"></circle>
+                    <circle class="ring-progress" id="ringProgress" cx="34" cy="34" r="28"></circle>
+                </svg>
+                <div class="ring-score" id="scoreValue">0%</div>
+            </div>
+            <div class="badge-meta">
+                <div class="badge-framework">ISO 27001:2022</div>
+                <div class="badge-tier" id="tierLabel">Initial / At Risk</div>
+                <div class="badge-note">Readiness Self-Assessment</div>
+            </div>
+        </div>
+
+        <div class="badge-foot">
+            <span>Browser-local GRC Engine</span>
+            <span class="badge-cta">Assess &rarr;</span>
+        </div>
+    </a>
+
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const raw = params.get('score');
+            const parsed = raw !== null ? Number.parseInt(raw, 10) : 0;
+            const score = Number.isFinite(parsed) ? Math.max(0, Math.min(100, parsed)) : 0;
+
+            let tierLabel = 'Initial / At Risk';
+            let tierColor = '#EF4444';
+            let tierBg = 'rgba(239, 68, 68, 0.14)';
+            let tierBorder = 'rgba(239, 68, 68, 0.4)';
+
+            if (score >= 75) {
+                tierLabel = 'Mature / Optimized';
+                tierColor = '#10B981';
+                tierBg = 'rgba(16, 185, 129, 0.14)';
+                tierBorder = 'rgba(16, 185, 129, 0.4)';
+            } else if (score >= 40) {
+                tierLabel = 'Developing / Moderate';
+                tierColor = '#F59E0B';
+                tierBg = 'rgba(245, 158, 11, 0.14)';
+                tierBorder = 'rgba(245, 158, 11, 0.4)';
+            }
+
+            const card = document.getElementById('badgeCard');
+            card.style.setProperty('--tier-color', tierColor);
+            card.style.setProperty('--tier-bg', tierBg);
+            card.style.setProperty('--tier-border', tierBorder);
+
+            document.getElementById('scoreValue').textContent = score + '%';
+            document.getElementById('tierLabel').textContent = tierLabel;
+
+            const circumference = 2 * Math.PI * 28;
+            const offset = circumference * (1 - score / 100);
+            const ring = document.getElementById('ringProgress');
+            ring.style.strokeDasharray = circumference.toFixed(2);
+            ring.style.strokeDashoffset = offset.toFixed(2);
+        })();
+    </script>
+</body>
+
+</html>

@@ -585,10 +585,10 @@ def build_lightbox_and_footer() -> str:
                 <div class="footer-col">
                     <h4>Publication</h4>
                     <ul class="footer-links">
-                        <li><a href="/about.html">Editorial Standards</a></li>
+                        <li><a href="/editorial-standards.html">Editorial Standards</a></li>
                         <li><a href="/rss.xml">RSS Feed</a></li>
                         <li><a href="/privacy.html">Privacy Policy</a></li>
-                        <li><a href="/contact.html">Contact Editorial</a></li>
+                        <li><a href="/about.html#connect">Contact Editorial</a></li>
                     </ul>
                 </div>
 
@@ -597,7 +597,7 @@ def build_lightbox_and_footer() -> str:
                     <ul class="footer-links">
                         <li><a href="/articles/beyond-the-headlines-cybersecurity-incident-readiness-2026.html">Incident Readiness Playbook</a></li>
                         <li><a href="/articles/forticlient-ems-zero-day-cve-2026-35616.html">FortiClient EMS Zero-Day CVE</a></li>
-                        <li><a href="/articles/emudhra-ca-key-entropy-failure-2026.html">eMudhra WebPKI Entropy Failure</a></li>
+                        <li><a href="/articles/emudhra-ca-weak-key-incident-2026.html">eMudhra WebPKI Entropy Failure</a></li>
                     </ul>
                 </div>
             </div>

@@ -400,49 +400,181 @@ final_index_html = clean_index.replace(loading_html_index, loading_html_index + 
 with open(index_html_path, 'w', encoding='utf-8') as f:
     f.write(final_index_html)
 
-# 4. Inject static fallback into guides/index.html
+# 4. Inject normal crawlable HTML guide cards into guides/index.html (no <noscript> wrapper)
+def format_guide_display_date(date_str):
+    if not date_str:
+        return ""
+    s = str(date_str).strip()
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})$', s)
+    if m:
+        from datetime import datetime
+        try:
+            dt = datetime.strptime(s, "%Y-%m-%d")
+            return f"{dt.strftime('%b')} {dt.day}, {dt.year}"
+        except ValueError:
+            return s
+    return s
+
+def render_crawlable_guide_card(g, issue_num):
+    gid = g.get('id', '').strip()
+    gurl = gid if gid.startswith('/guides/') else f"/guides/{gid}.html"
+    gurl_escaped = html.escape(gurl, quote=True)
+    gtitle = html.escape(g.get('title', ''), quote=True)
+    gcat = html.escape(g.get('category', 'Guide'), quote=True)
+    gexcerpt = html.escape(g.get('excerpt', ''), quote=True)
+    gread = html.escape(g.get('readTime', '15 min read'), quote=True)
+    glevel_short = html.escape((g.get('level') or 'All Levels').split(' ')[0], quote=True)
+    gdate = html.escape(format_guide_display_date(g.get('date', '')), quote=True)
+    gimg = g.get('image') or '/images/guides/default-guide.png'
+    if not gimg.startswith('/') and not gimg.startswith('http'):
+        gimg = '/' + gimg
+    gimg_escaped = html.escape(gimg, quote=True)
+    if g.get('badge'):
+        badge_html = f'<span class="guide-new-badge">{html.escape(str(g.get("badge")), quote=True)}</span>'
+    else:
+        badge_html = f'<span class="ed-issue-tag">#{issue_num:03d}</span>'
+
+    return (
+        f'                <a href="{gurl_escaped}" class="guide-card">\n'
+        f'                    <div class="guide-card-image-wrapper">\n'
+        f'                        <img src="{gimg_escaped}" alt="{gtitle}" class="guide-card-image" loading="lazy" onerror="this.src=\'/images/guides/default-guide.png\'">\n'
+        f'                    </div>\n'
+        f'                    <div class="guide-card-body">\n'
+        f'                        <div class="guide-card-header">\n'
+        f'                            <span class="guide-category-badge">{gcat}</span>\n'
+        f'                            {badge_html}\n'
+        f'                        </div>\n'
+        f'                        <h3 class="ed-card-title">{gtitle}</h3>\n'
+        f'                        <p>{gexcerpt}</p>\n'
+        f'                        <div class="guide-meta">\n'
+        f'                            <span><i class="fas fa-clock" aria-hidden="true"></i> {gread}</span>\n'
+        f'                            <span class="ed-level-indicator">{glevel_short}</span>\n'
+        f'                            <span>{gdate}</span>\n'
+        f'                        </div>\n'
+        f'                    </div>\n'
+        f'                </a>'
+    )
+
 if guides_json_path.exists() and guides_html_path.exists():
     with open(guides_json_path, 'r', encoding='utf-8') as f:
         gdata = json.load(f)
     guides_list = gdata.get('guides', gdata)
-    
+
     with open(guides_html_path, 'r', encoding='utf-8') as f:
         raw_guides_html = f.read()
-        
-    clean_guides = clean_guides_template(raw_guides_html)
-    
-    guides_cards_html = ""
-    for g in guides_list:
-        gid = g.get('id', '')
-        gurl = f"/guides/{gid}.html"
-        gtitle = html.escape(g.get('title', ''), quote=True)
-        gcat = html.escape(g.get('category', 'Guide'), quote=True)
-        gexcerpt = html.escape(g.get('excerpt', ''), quote=True)
-        gimg = g.get('image', '/images/guides/default-guide.png')
-        if not gimg.startswith('/') and not gimg.startswith('http'):
-            gimg = '/' + gimg
-        gimg_escaped = html.escape(gimg, quote=True)
-        
-        guides_cards_html += f"""
-        <article class="guide-card" style="display:block;">
-            <a href="{gurl}" style="text-decoration:none; color:inherit;">
-                <div class="guide-image">
-                    <img src="{gimg_escaped}" alt="{gtitle}" loading="lazy">
-                    <div class="guide-category">{gcat}</div>
-                </div>
-                <div class="guide-content">
-                    <h2 class="guide-title">{gtitle}</h2>
-                    <p class="guide-excerpt">{gexcerpt}</p>
-                </div>
-            </a>
-        </article>
-        """
-        
-    guides_fallback = f"\n{MARKER_GUIDES_START}\n<noscript>\n<div style='display:grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap:2rem;'>{guides_cards_html}</div>\n</noscript>\n{MARKER_GUIDES_END}"
-    
-    final_guides_html = clean_guides.replace(loading_html_guides, loading_html_guides + guides_fallback)
+
+    final_guides_html = raw_guides_html
+    total_guides = len(guides_list)
+    unique_guide_cats = sorted({(g.get('category') or 'Guide').strip() for g in guides_list})
+
+    # Keep static ledger & lead monograph synchronized with guides.json (zero duplicate of lead monograph in grid)
+    final_guides_html = re.sub(
+        r'(<span class="ed-ledger-value" id="totalGuides">)[^<]*(</span>)',
+        rf'\g<1>{total_guides}\g<2>',
+        final_guides_html,
+        count=1,
+    )
+    final_guides_html = re.sub(
+        r'(<span class="ed-ledger-value" id="totalCategories">)[^<]*(</span>)',
+        rf'\g<1>{len(unique_guide_cats)}\g<2>',
+        final_guides_html,
+        count=1,
+    )
+    final_guides_html = re.sub(
+        r'placeholder="Search \d+ technical guides',
+        f'placeholder="Search {total_guides} technical guides',
+        final_guides_html,
+        count=1,
+    )
+
+    if guides_list:
+        lead = guides_list[0]
+        lead_id = lead.get('id', '').strip()
+        lead_url = lead_id if lead_id.startswith('/guides/') else f"/guides/{lead_id}.html"
+        lead_img = lead.get('image') or '/images/guides/default-guide.png'
+        if not lead_img.startswith('/') and not lead_img.startswith('http'):
+            lead_img = '/' + lead_img
+        lead_date = format_guide_display_date(lead.get('date', ''))
+        latest_short = lead_date.split(',')[0] if lead_date else lead.get('date', '')
+
+        final_guides_html = re.sub(
+            r'(<span class="ed-ledger-value" id="latestDate">)[^<]*(</span>)',
+            lambda m: f'{m.group(1)}{html.escape(latest_short)}{m.group(2)}',
+            final_guides_html,
+            count=1,
+        )
+        final_guides_html = re.sub(
+            r'(<span id="featuredIssueCode">)[^<]*(</span>)',
+            rf'\g<1>ISSUE NO. {total_guides:03d}\g<2>',
+            final_guides_html,
+            count=1,
+        )
+        featured_card_html = (
+            f'<a href="{html.escape(lead_url, quote=True)}" class="ed-featured-card" id="featuredCard">\n'
+            f'                    <div class="ed-featured-media">\n'
+            f'                        <img src="{html.escape(lead_img, quote=True)}" alt="{html.escape(lead.get("title", ""), quote=True)}" id="featuredImage" width="800" height="430">\n'
+            f'                    </div>\n'
+            f'                    <div class="ed-featured-body">\n'
+            f'                        <div class="ed-featured-eyebrow">\n'
+            f'                            <span class="ed-domain-tag" id="featuredCategory">{html.escape(lead.get("category", "Guide"))}</span>\n'
+            f'                            <span class="ed-issue-tag">ARCHITECTURAL ANALYSIS</span>\n'
+            f'                        </div>\n'
+            f'                        <h2 class="ed-featured-title" id="featuredTitle">{html.escape(lead.get("title", ""))}</h2>\n'
+            f'                        <p class="ed-featured-excerpt" id="featuredExcerpt">\n'
+            f'                            {html.escape(lead.get("excerpt", ""))}\n'
+            f'                        </p>\n'
+            f'                        <div class="ed-featured-footer">\n'
+            f'                            <div class="ed-meta-cluster">\n'
+            f'                                <span id="featuredTime"><i class="fas fa-clock" aria-hidden="true"></i> {html.escape(lead.get("readTime", "15 min read"))}</span>\n'
+            f'                                <span id="featuredLevel"><i class="fas fa-layer-group" aria-hidden="true"></i> {html.escape(lead.get("level", "All Levels"))}</span>\n'
+            f'                                <span id="featuredDate"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {html.escape(lead_date)}</span>\n'
+            f'                            </div>\n'
+            f'                            <span class="ed-read-cta">Read Monograph <i class="fas fa-arrow-right" aria-hidden="true"></i></span>\n'
+            f'                        </div>\n'
+            f'                    </div>\n'
+            f'                </a>'
+        )
+        final_guides_html = re.sub(
+            r'<a href="[^"]*" class="ed-featured-card" id="featuredCard">.*?</a>',
+            lambda m: featured_card_html,
+            final_guides_html,
+            count=1,
+            flags=re.DOTALL,
+        )
+
+    grid_guides = guides_list[1:]
+    final_guides_html = re.sub(
+        r'(<span id="resultsCount">).*?(</span>)',
+        lambda m: f'{m.group(1)}Showing <strong>{len(grid_guides)}</strong> technical monographs across all security domains (plus 1 Lead Monograph above){m.group(2)}',
+        final_guides_html,
+        count=1,
+        flags=re.DOTALL,
+    )
+
+    guides_cards_html = "\n".join(
+        render_crawlable_guide_card(g, total_guides - (idx + 1))
+        for idx, g in enumerate(grid_guides)
+    )
+    guides_grid_replacement = (
+        f'<div id="guidesGrid" class="guides-grid">\n'
+        f'{MARKER_GUIDES_START}\n'
+        f'{guides_cards_html}\n'
+        f'{MARKER_GUIDES_END}\n'
+        f'            </div>'
+    )
+
+    final_guides_html, n_replaced = re.subn(
+        r'<div id="guidesGrid" class="guides-grid">.*?</div>(?=\s*<!-- GUIDES PAGINATION CONTROLS -->)',
+        lambda m: guides_grid_replacement,
+        final_guides_html,
+        count=1,
+        flags=re.DOTALL,
+    )
+    if n_replaced == 0:
+        raise RuntimeError("Could not locate #guidesGrid container in guides/index.html")
+
     with open(guides_html_path, 'w', encoding='utf-8') as f:
         f.write(final_guides_html)
-    print("Injected static fallback into guides/index.html")
+    print(f"Injected {len(grid_guides)} crawlable guide cards (+ 1 Lead Monograph = {total_guides} unique guides) into guides/index.html")
 
 print(f"Pagination and static fallbacks generated successfully! Total pages: {total_pages}")
